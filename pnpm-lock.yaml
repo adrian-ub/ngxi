@@ -165,6 +165,9 @@ importers:
       jsonc-eslint-parser:
         specifier: ^2.1.0
         version: 2.4.0
+      lucide:
+        specifier: latest
+        version: 0.485.0
       lucide-static:
         specifier: 0.485.0
         version: 0.485.0
@@ -5658,6 +5661,9 @@ packages:
 
   lucide-static@0.485.0:
     resolution: {integrity: sha512-9IU2xG3LK65tEAlJnxfL63Y8FyD7Le085fuXb0JEbEcGURoHCKLf8BBuSRcTEetQJWwt/38pjrEne7obTEAPuw==}
+
+  lucide@0.485.0:
+    resolution: {integrity: sha512-gHtED5mr/pFaw0shTgp80Cjgf6yp3Np0cVpL9aiken1XH0ZARcqU676ybDDqDJDJw4FETo0Kgs+5BMlFLu5vKw==}
 
   luxon@3.6.0:
     resolution: {integrity: sha512-WE7p0p7W1xji9qxkLYsvcIxZyfP48GuFrWIBQZIsbjCyf65dG1rv4n83HcOyEyhvzxJCrUoObCRNFgRNIQ5KNA==}
@@ -14981,6 +14987,8 @@ snapshots:
   lru-cache@7.18.3: {}
 
   lucide-static@0.485.0: {}
+
+  lucide@0.485.0: {}
 
   luxon@3.6.0: {}
 
