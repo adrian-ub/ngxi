@@ -8,7 +8,8 @@
   "dependencies": {
     "@nx/devkit": "20.6.4",
     "tslib": "^2.3.0",
-    "@nx/angular": "20.6.4"
+    "@nx/angular": "20.6.4",
+    "@nx/plugin": "20.6.4"
   },
   "generators": "./generators.json"
 }
