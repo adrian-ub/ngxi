@@ -165,6 +165,9 @@ importers:
       jsonc-eslint-parser:
         specifier: ^2.1.0
         version: 2.4.0
+      lucide-static:
+        specifier: 0.485.0
+        version: 0.485.0
       ng-packagr:
         specifier: ~19.2.0
         version: 19.2.0(@angular/compiler-cli@19.2.4(@angular/compiler@19.2.4)(typescript@5.7.3))(tslib@2.8.1)(typescript@5.7.3)
@@ -5652,6 +5655,9 @@ packages:
   lru-cache@7.18.3:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
+
+  lucide-static@0.485.0:
+    resolution: {integrity: sha512-9IU2xG3LK65tEAlJnxfL63Y8FyD7Le085fuXb0JEbEcGURoHCKLf8BBuSRcTEetQJWwt/38pjrEne7obTEAPuw==}
 
   luxon@3.6.0:
     resolution: {integrity: sha512-WE7p0p7W1xji9qxkLYsvcIxZyfP48GuFrWIBQZIsbjCyf65dG1rv4n83HcOyEyhvzxJCrUoObCRNFgRNIQ5KNA==}
@@ -14973,6 +14979,8 @@ snapshots:
       yallist: 3.1.1
 
   lru-cache@7.18.3: {}
+
+  lucide-static@0.485.0: {}
 
   luxon@3.6.0: {}
 

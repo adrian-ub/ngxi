@@ -1,0 +1,24 @@
+import { Component } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[lucideImageUp],svg[lucide-image-up]',
+  host: {
+    class: 'lucide lucide-image-up',
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: 'currentColor',
+    linecap: 'round',
+    linejoin: 'round',
+  },
+  template: `
+    <svg:path
+      d="M10.3 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10l-3.1-3.1a2 2 0 0 0-2.814.014L6 21"
+    />
+    <svg:path d="m14 19.5 3-3 3 3" />
+    <svg:path d="M17 22v-5.5" />
+    <svg:circle cx="9" cy="9" r="2" />
+  `,
+})
+export class LucideImageUp {}
