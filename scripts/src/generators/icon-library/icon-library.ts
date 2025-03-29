@@ -75,6 +75,19 @@ export async function iconLibraryGenerator(
   ngPackageJSON.lib.entryFile = ngPackageJSON.lib.entryFile.replace('src/', '');
   writeJson(tree, path.join(libraryRoot, 'ng-package.json'), ngPackageJSON);
 
+  const packageJSON = readJson(tree, path.join(libraryRoot, 'package.json'));
+  packageJSON.repository = {
+    type: 'git',
+    url: 'https://github.com/adrian-ub/ngxi',
+    directory: libraryRoot,
+  }
+  packageJSON.peerDependencies = {
+    ...packageJSON.peerDependencies,
+    '@angular/common': '^17.0.0 || ^18.0.0 || ^19.0.0',
+    '@angular/core': '^17.0.0 || ^18.0.0 || ^19.0.0',
+  }
+  writeJson(tree, path.join(libraryRoot, 'package.json'), packageJSON);
+
   generateFiles(tree, path.join(__dirname, './files/library'), libraryRoot, {
     fileName
   });
