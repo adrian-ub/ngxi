@@ -37,7 +37,7 @@ jobs:
           git config --global user.email "22903142+adrian-ub@users.noreply.github.com"
 
       - name: Release a new package
-        run: pnpm nx release
+        run: pnpm nx release -y
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
