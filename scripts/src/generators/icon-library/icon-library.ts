@@ -86,6 +86,9 @@ export async function iconLibraryGenerator(
     '@angular/common': '^17.0.0 || ^18.0.0 || ^19.0.0',
     '@angular/core': '^17.0.0 || ^18.0.0 || ^19.0.0',
   }
+  packageJSON.publishConfig = {
+    access: 'public',
+  };
   writeJson(tree, path.join(libraryRoot, 'package.json'), packageJSON);
 
   generateFiles(tree, path.join(__dirname, './files/library'), libraryRoot, {
