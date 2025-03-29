@@ -1,0 +1,24 @@
+import { Component } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[lucideScrollText],svg[lucide-scroll-text]',
+  host: {
+    class: 'lucide lucide-scroll-text',
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: 'currentColor',
+    linecap: 'round',
+    linejoin: 'round',
+  },
+  template: `
+    <svg:path d="M15 12h-5" />
+    <svg:path d="M15 8h-5" />
+    <svg:path d="M19 17V5a2 2 0 0 0-2-2H4" />
+    <svg:path
+      d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"
+    />
+  `,
+})
+export class LucideScrollText {}

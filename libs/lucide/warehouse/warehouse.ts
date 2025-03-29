@@ -1,0 +1,24 @@
+import { Component } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[lucideWarehouse],svg[lucide-warehouse]',
+  host: {
+    class: 'lucide lucide-warehouse',
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: 'currentColor',
+    linecap: 'round',
+    linejoin: 'round',
+  },
+  template: `
+    <svg:path
+      d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z"
+    />
+    <svg:path d="M6 18h12" />
+    <svg:path d="M6 14h12" />
+    <svg:rect width="12" height="12" x="6" y="10" />
+  `,
+})
+export class LucideWarehouse {}

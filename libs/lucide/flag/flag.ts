@@ -1,0 +1,20 @@
+import { Component } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[lucideFlag],svg[lucide-flag]',
+  host: {
+    class: 'lucide lucide-flag',
+    xmlns: 'http://www.w3.org/2000/svg',
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: 'currentColor',
+    linecap: 'round',
+    linejoin: 'round',
+  },
+  template: `
+    <svg:path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+    <svg:line x1="4" x2="4" y1="22" y2="15" />
+  `,
+})
+export class LucideFlag {}

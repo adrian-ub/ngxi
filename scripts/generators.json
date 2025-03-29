@@ -4,6 +4,11 @@
       "factory": "./src/generators/icon-library/icon-library",
       "schema": "./src/generators/icon-library/schema.json",
       "description": "icon-library generator"
+    },
+    "lucide": {
+      "factory": "./src/generators/lucide/lucide",
+      "schema": "./src/generators/lucide/schema.json",
+      "description": "lucide generator"
     }
   }
 }
