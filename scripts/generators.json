@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "icon-library": {
+      "factory": "./src/generators/icon-library/icon-library",
+      "schema": "./src/generators/icon-library/schema.json",
+      "description": "icon-library generator"
+    }
+  }
+}
