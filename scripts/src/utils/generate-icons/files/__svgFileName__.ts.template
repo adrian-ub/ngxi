@@ -1,0 +1,9 @@
+import { Component } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[<%= propertyName %>],svg[<%= name %>]',
+  host: <%- svgAttributes %>,
+  template: `<%- svgContent %>`
+})
+export class <%= className %> {}
