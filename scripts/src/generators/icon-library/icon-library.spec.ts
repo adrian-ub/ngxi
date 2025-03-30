@@ -6,7 +6,11 @@ import { IconLibraryGeneratorSchema } from './schema';
 
 describe('icon-library generator', () => {
   let tree: Tree;
-  const options: IconLibraryGeneratorSchema = { name: 'test' };
+  const options: IconLibraryGeneratorSchema = {
+    name: 'ub-icon',
+    prefix: 'ub',
+    iconsSourcePath: 'node_modules/ub-icon/icons'
+  };
 
   beforeEach(() => {
     tree = createTreeWithEmptyWorkspace();
@@ -14,7 +18,7 @@ describe('icon-library generator', () => {
 
   it('should run successfully', async () => {
     await iconLibraryGenerator(tree, options);
-    const config = readProjectConfiguration(tree, 'test');
+    const config = readProjectConfiguration(tree, 'ub-icon');
     expect(config).toBeDefined();
   });
 });
