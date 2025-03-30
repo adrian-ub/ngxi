@@ -84,7 +84,6 @@ export async function iconLibraryGenerator(
   }
   packageJSON.peerDependencies = {
     ...packageJSON.peerDependencies,
-    '@angular/common': '^17.0.0 || ^18.0.0 || ^19.0.0',
     '@angular/core': '^17.0.0 || ^18.0.0 || ^19.0.0',
   }
   packageJSON.publishConfig = {
