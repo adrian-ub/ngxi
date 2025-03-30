@@ -62,6 +62,7 @@ export async function iconLibraryGenerator(
     simpleName: true,
     flat: true,
     prefix: options.prefix,
+    skipTests: true,
   });
   tree.delete(path.join(libraryRoot, 'src/lib'));
   tree.delete(path.join(libraryRoot, 'src/index.ts'));
