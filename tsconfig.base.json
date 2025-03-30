@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@ngxi/lucide": ["libs/lucide/index.ts"],
-      "@ngxi/scripts": ["scripts/src/index.ts"]
+      "@ngxi/scripts": ["scripts/src/index.ts"],
+      "@ngxi/simple-icons": ["libs/simple-icons/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

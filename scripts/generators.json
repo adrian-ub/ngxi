@@ -9,6 +9,11 @@
       "factory": "./src/generators/lucide/lucide",
       "schema": "./src/generators/lucide/schema.json",
       "description": "lucide generator"
+    },
+    "simple-icons": {
+      "factory": "./src/generators/simple-icons/simple-icons",
+      "schema": "./src/generators/simple-icons/schema.json",
+      "description": "simple-icons generator"
     }
   }
 }
