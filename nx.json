@@ -88,6 +88,9 @@
     "changelog": {
       "projectChangelogs": {
         "createRelease": "github"
+      },
+      "workspaceChangelog": {
+        "createRelease": "github"
       }
     },
     "version": {
