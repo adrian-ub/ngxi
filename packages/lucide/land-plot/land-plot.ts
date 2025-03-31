@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideLandPlot],svg[lucide-land-plot]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m12 8 6-3-6-3v10" />
+  template: `<svg:path d="m12 8 6-3-6-3v10"></svg:path>
     <svg:path
       d="m8 11.99-5.5 3.14a1 1 0 0 0 0 1.74l8.5 4.86a2 2 0 0 0 2 0l8.5-4.86a1 1 0 0 0 0-1.74L16 12"
-    />
-    <svg:path d="m6.49 12.85 11.02 6.3" />
-    <svg:path d="M17.51 12.85 6.5 19.15" />
-  `,
+    ></svg:path>
+    <svg:path d="m6.49 12.85 11.02 6.3"></svg:path>
+    <svg:path d="M17.51 12.85 6.5 19.15"></svg:path>`,
 })
 export class LucideLandPlot {
-  readonly class = input('lucide lucide-land-plot');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

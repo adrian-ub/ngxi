@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideAArrowDown],svg[lucide-a-arrow-down]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M3.5 13h6" />
-    <svg:path d="m2 16 4.5-9 4.5 9" />
-    <svg:path d="M18 7v9" />
-    <svg:path d="m14 12 4 4 4-4" />
-  `,
+  template: `<svg:path d="M3.5 13h6"></svg:path>
+    <svg:path d="m2 16 4.5-9 4.5 9"></svg:path>
+    <svg:path d="M18 7v9"></svg:path>
+    <svg:path d="m14 12 4 4 4-4"></svg:path>`,
 })
 export class LucideAArrowDown {
-  readonly class = input('lucide lucide-a-arrow-down');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

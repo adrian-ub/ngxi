@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideWaypoints],svg[lucide-waypoints]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,21 +13,16 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="12" cy="4.5" r="2.5" />
-    <svg:path d="m10.2 6.3-3.9 3.9" />
-    <svg:circle cx="4.5" cy="12" r="2.5" />
-    <svg:path d="M7 12h10" />
-    <svg:circle cx="19.5" cy="12" r="2.5" />
-    <svg:path d="m13.8 17.7 3.9-3.9" />
-    <svg:circle cx="12" cy="19.5" r="2.5" />
-  `,
+  template: `<svg:circle cx="12" cy="4.5" r="2.5"></svg:circle>
+    <svg:path d="m10.2 6.3-3.9 3.9"></svg:path>
+    <svg:circle cx="4.5" cy="12" r="2.5"></svg:circle>
+    <svg:path d="M7 12h10"></svg:path>
+    <svg:circle cx="19.5" cy="12" r="2.5"></svg:circle>
+    <svg:path d="m13.8 17.7 3.9-3.9"></svg:path>
+    <svg:circle cx="12" cy="19.5" r="2.5"></svg:circle>`,
 })
 export class LucideWaypoints {
-  readonly class = input('lucide lucide-waypoints');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

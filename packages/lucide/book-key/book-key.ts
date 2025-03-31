@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideBookKey],svg[lucide-book-key]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m19 3 1 1" />
-    <svg:path d="m20 2-4.5 4.5" />
-    <svg:path d="M20 8v13a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
-    <svg:path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H14" />
-    <svg:circle cx="14" cy="8" r="2" />
-  `,
+  template: `<svg:path d="m19 3 1 1"></svg:path>
+    <svg:path d="m20 2-4.5 4.5"></svg:path>
+    <svg:path d="M20 8v13a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></svg:path>
+    <svg:path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H14"></svg:path>
+    <svg:circle cx="14" cy="8" r="2"></svg:circle>`,
 })
 export class LucideBookKey {
-  readonly class = input('lucide lucide-book-key');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

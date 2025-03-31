@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideGlasses],svg[lucide-glasses]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="6" cy="15" r="4" />
-    <svg:circle cx="18" cy="15" r="4" />
-    <svg:path d="M14 15a2 2 0 0 0-2-2 2 2 0 0 0-2 2" />
-    <svg:path d="M2.5 13 5 7c.7-1.3 1.4-2 3-2" />
-    <svg:path d="M21.5 13 19 7c-.7-1.3-1.5-2-3-2" />
-  `,
+  template: `<svg:circle cx="6" cy="15" r="4"></svg:circle>
+    <svg:circle cx="18" cy="15" r="4"></svg:circle>
+    <svg:path d="M14 15a2 2 0 0 0-2-2 2 2 0 0 0-2 2"></svg:path>
+    <svg:path d="M2.5 13 5 7c.7-1.3 1.4-2 3-2"></svg:path>
+    <svg:path d="M21.5 13 19 7c-.7-1.3-1.5-2-3-2"></svg:path>`,
 })
 export class LucideGlasses {
-  readonly class = input('lucide lucide-glasses');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

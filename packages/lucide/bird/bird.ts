@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideBird],svg[lucide-bird]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M16 7h.01" />
-    <svg:path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20" />
-    <svg:path d="m20 7 2 .5-2 .5" />
-    <svg:path d="M10 18v3" />
-    <svg:path d="M14 17.75V21" />
-    <svg:path d="M7 18a6 6 0 0 0 3.84-10.61" />
-  `,
+  template: `<svg:path d="M16 7h.01"></svg:path>
+    <svg:path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"></svg:path>
+    <svg:path d="m20 7 2 .5-2 .5"></svg:path>
+    <svg:path d="M10 18v3"></svg:path>
+    <svg:path d="M14 17.75V21"></svg:path>
+    <svg:path d="M7 18a6 6 0 0 0 3.84-10.61"></svg:path>`,
 })
 export class LucideBird {
-  readonly class = input('lucide lucide-bird');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

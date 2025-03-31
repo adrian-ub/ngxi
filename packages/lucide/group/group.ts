@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideGroup],svg[lucide-group]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M3 7V5c0-1.1.9-2 2-2h2" />
-    <svg:path d="M17 3h2c1.1 0 2 .9 2 2v2" />
-    <svg:path d="M21 17v2c0 1.1-.9 2-2 2h-2" />
-    <svg:path d="M7 21H5c-1.1 0-2-.9-2-2v-2" />
-    <svg:rect width="7" height="5" x="7" y="7" rx="1" />
-    <svg:rect width="7" height="5" x="10" y="12" rx="1" />
-  `,
+  template: `<svg:path d="M3 7V5c0-1.1.9-2 2-2h2"></svg:path>
+    <svg:path d="M17 3h2c1.1 0 2 .9 2 2v2"></svg:path>
+    <svg:path d="M21 17v2c0 1.1-.9 2-2 2h-2"></svg:path>
+    <svg:path d="M7 21H5c-1.1 0-2-.9-2-2v-2"></svg:path>
+    <svg:rect width="7" height="5" x="7" y="7" rx="1"></svg:rect>
+    <svg:rect width="7" height="5" x="10" y="12" rx="1"></svg:rect>`,
 })
 export class LucideGroup {
-  readonly class = input('lucide lucide-group');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideLampFloor],svg[lucide-lamp-floor]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M9 2h6l3 7H6l3-7Z" />
-    <svg:path d="M12 9v13" />
-    <svg:path d="M9 22h6" />
-  `,
+  template: `<svg:path d="M9 2h6l3 7H6l3-7Z"></svg:path>
+    <svg:path d="M12 9v13"></svg:path>
+    <svg:path d="M9 22h6"></svg:path>`,
 })
 export class LucideLampFloor {
-  readonly class = input('lucide lucide-lamp-floor');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

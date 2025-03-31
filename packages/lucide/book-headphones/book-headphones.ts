@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideBookHeadphones],svg[lucide-book-headphones]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path
+  template: `<svg:path
       d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"
-    />
-    <svg:path d="M8 12v-2a4 4 0 0 1 8 0v2" />
-    <svg:circle cx="15" cy="12" r="1" />
-    <svg:circle cx="9" cy="12" r="1" />
-  `,
+    ></svg:path>
+    <svg:path d="M8 12v-2a4 4 0 0 1 8 0v2"></svg:path>
+    <svg:circle cx="15" cy="12" r="1"></svg:circle>
+    <svg:circle cx="9" cy="12" r="1"></svg:circle>`,
 })
 export class LucideBookHeadphones {
-  readonly class = input('lucide lucide-book-headphones');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

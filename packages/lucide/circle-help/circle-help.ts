@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideCircleHelp],svg[lucide-circle-help]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="12" cy="12" r="10" />
-    <svg:path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-    <svg:path d="M12 17h.01" />
-  `,
+  template: `<svg:circle cx="12" cy="12" r="10"></svg:circle>
+    <svg:path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></svg:path>
+    <svg:path d="M12 17h.01"></svg:path>`,
 })
 export class LucideCircleHelp {
-  readonly class = input('lucide lucide-circle-help');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideMouseOff],svg[lucide-mouse-off]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M12 6v.343" />
-    <svg:path d="M18.218 18.218A7 7 0 0 1 5 15V9a7 7 0 0 1 .782-3.218" />
-    <svg:path d="M19 13.343V9A7 7 0 0 0 8.56 2.902" />
-    <svg:path d="M22 22 2 2" />
-  `,
+  template: `<svg:path d="M12 6v.343"></svg:path>
+    <svg:path
+      d="M18.218 18.218A7 7 0 0 1 5 15V9a7 7 0 0 1 .782-3.218"
+    ></svg:path>
+    <svg:path d="M19 13.343V9A7 7 0 0 0 8.56 2.902"></svg:path>
+    <svg:path d="M22 22 2 2"></svg:path>`,
 })
 export class LucideMouseOff {
-  readonly class = input('lucide lucide-mouse-off');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

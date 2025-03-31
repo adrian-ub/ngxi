@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideRockingChair],svg[lucide-rocking-chair]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:polyline points="3.5 2 6.5 12.5 18 12.5" />
-    <svg:line x1="9.5" x2="5.5" y1="12.5" y2="20" />
-    <svg:line x1="15" x2="18.5" y1="12.5" y2="20" />
-    <svg:path d="M2.75 18a13 13 0 0 0 18.5 0" />
-  `,
+  template: `<svg:polyline points="3.5 2 6.5 12.5 18 12.5"></svg:polyline>
+    <svg:line x1="9.5" x2="5.5" y1="12.5" y2="20"></svg:line>
+    <svg:line x1="15" x2="18.5" y1="12.5" y2="20"></svg:line>
+    <svg:path d="M2.75 18a13 13 0 0 0 18.5 0"></svg:path>`,
 })
 export class LucideRockingChair {
-  readonly class = input('lucide lucide-rocking-chair');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideHeading4],svg[lucide-heading-4]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M12 18V6" />
-    <svg:path d="M17 10v3a1 1 0 0 0 1 1h3" />
-    <svg:path d="M21 10v8" />
-    <svg:path d="M4 12h8" />
-    <svg:path d="M4 18V6" />
-  `,
+  template: `<svg:path d="M12 18V6"></svg:path>
+    <svg:path d="M17 10v3a1 1 0 0 0 1 1h3"></svg:path>
+    <svg:path d="M21 10v8"></svg:path>
+    <svg:path d="M4 12h8"></svg:path>
+    <svg:path d="M4 18V6"></svg:path>`,
 })
 export class LucideHeading4 {
-  readonly class = input('lucide lucide-heading-4');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

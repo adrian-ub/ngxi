@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucidePanelBottomClose],svg[lucide-panel-bottom-close]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="18" height="18" x="3" y="3" rx="2" />
-    <svg:path d="M3 15h18" />
-    <svg:path d="m15 8-3 3-3-3" />
-  `,
+  template: `<svg:rect width="18" height="18" x="3" y="3" rx="2"></svg:rect>
+    <svg:path d="M3 15h18"></svg:path>
+    <svg:path d="m15 8-3 3-3-3"></svg:path>`,
 })
 export class LucidePanelBottomClose {
-  readonly class = input('lucide lucide-panel-bottom-close');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

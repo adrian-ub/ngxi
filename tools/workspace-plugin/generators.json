@@ -14,6 +14,11 @@
       "factory": "./src/generators/simple-icons/simple-icons",
       "schema": "./src/generators/simple-icons/schema.json",
       "description": "simple-icons generator"
+    },
+    "svg-to-ts": {
+      "factory": "./src/generators/svg-to-ts/svg-to-ts",
+      "schema": "./src/generators/svg-to-ts/schema.json",
+      "description": "svg-to-ts generator"
     }
   }
 }

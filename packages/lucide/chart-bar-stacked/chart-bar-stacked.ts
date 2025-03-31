@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideChartBarStacked],svg[lucide-chart-bar-stacked]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M11 13v4" />
-    <svg:path d="M15 5v4" />
-    <svg:path d="M3 3v16a2 2 0 0 0 2 2h16" />
-    <svg:rect x="7" y="13" width="9" height="4" rx="1" />
-    <svg:rect x="7" y="5" width="12" height="4" rx="1" />
-  `,
+  template: `<svg:path d="M11 13v4"></svg:path>
+    <svg:path d="M15 5v4"></svg:path>
+    <svg:path d="M3 3v16a2 2 0 0 0 2 2h16"></svg:path>
+    <svg:rect x="7" y="13" width="9" height="4" rx="1"></svg:rect>
+    <svg:rect x="7" y="5" width="12" height="4" rx="1"></svg:rect>`,
 })
 export class LucideChartBarStacked {
-  readonly class = input('lucide lucide-chart-bar-stacked');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideRss],svg[lucide-rss]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M4 11a9 9 0 0 1 9 9" />
-    <svg:path d="M4 4a16 16 0 0 1 16 16" />
-    <svg:circle cx="5" cy="19" r="1" />
-  `,
+  template: `<svg:path d="M4 11a9 9 0 0 1 9 9"></svg:path>
+    <svg:path d="M4 4a16 16 0 0 1 16 16"></svg:path>
+    <svg:circle cx="5" cy="19" r="1"></svg:circle>`,
 })
 export class LucideRss {
-  readonly class = input('lucide lucide-rss');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

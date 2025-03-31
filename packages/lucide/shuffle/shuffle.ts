@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideShuffle],svg[lucide-shuffle]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,21 +13,16 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m18 14 4 4-4 4" />
-    <svg:path d="m18 2 4 4-4 4" />
+  template: `<svg:path d="m18 14 4 4-4 4"></svg:path>
+    <svg:path d="m18 2 4 4-4 4"></svg:path>
     <svg:path
       d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"
-    />
-    <svg:path d="M2 6h1.972a4 4 0 0 1 3.6 2.2" />
-    <svg:path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45" />
-  `,
+    ></svg:path>
+    <svg:path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"></svg:path>
+    <svg:path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"></svg:path>`,
 })
 export class LucideShuffle {
-  readonly class = input('lucide lucide-shuffle');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

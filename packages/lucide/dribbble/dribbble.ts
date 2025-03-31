@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideDribbble],svg[lucide-dribbble]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="12" cy="12" r="10" />
-    <svg:path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94" />
-    <svg:path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32" />
-    <svg:path d="M8.56 2.75c4.37 6 6 9.42 8 17.72" />
-  `,
+  template: `<svg:circle cx="12" cy="12" r="10"></svg:circle>
+    <svg:path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></svg:path>
+    <svg:path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"></svg:path>
+    <svg:path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"></svg:path>`,
 })
 export class LucideDribbble {
-  readonly class = input('lucide lucide-dribbble');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

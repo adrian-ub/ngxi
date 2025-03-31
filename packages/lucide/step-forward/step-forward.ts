@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideStepForward],svg[lucide-step-forward]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:line x1="6" x2="6" y1="4" y2="20" />
-    <svg:polygon points="10,4 20,12 10,20" />
-  `,
+  template: `<svg:line x1="6" x2="6" y1="4" y2="20"></svg:line>
+    <svg:polygon points="10,4 20,12 10,20"></svg:polygon>`,
 })
 export class LucideStepForward {
-  readonly class = input('lucide lucide-step-forward');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

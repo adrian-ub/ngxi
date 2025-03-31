@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideChartColumnBig],svg[lucide-chart-column-big]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M3 3v16a2 2 0 0 0 2 2h16" />
-    <svg:rect x="15" y="5" width="4" height="12" rx="1" />
-    <svg:rect x="7" y="8" width="4" height="9" rx="1" />
-  `,
+  template: `<svg:path d="M3 3v16a2 2 0 0 0 2 2h16"></svg:path>
+    <svg:rect x="15" y="5" width="4" height="12" rx="1"></svg:rect>
+    <svg:rect x="7" y="8" width="4" height="9" rx="1"></svg:rect>`,
 })
 export class LucideChartColumnBig {
-  readonly class = input('lucide lucide-chart-column-big');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideBed],svg[lucide-bed]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M2 4v16" />
-    <svg:path d="M2 8h18a2 2 0 0 1 2 2v10" />
-    <svg:path d="M2 17h20" />
-    <svg:path d="M6 8v9" />
-  `,
+  template: `<svg:path d="M2 4v16"></svg:path>
+    <svg:path d="M2 8h18a2 2 0 0 1 2 2v10"></svg:path>
+    <svg:path d="M2 17h20"></svg:path>
+    <svg:path d="M6 8v9"></svg:path>`,
 })
 export class LucideBed {
-  readonly class = input('lucide lucide-bed');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

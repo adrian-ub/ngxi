@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideServerCrash],svg[lucide-server-crash]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,23 +13,18 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path
+  template: `<svg:path
       d="M6 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2"
-    />
+    ></svg:path>
     <svg:path
       d="M6 14H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2"
-    />
-    <svg:path d="M6 6h.01" />
-    <svg:path d="M6 18h.01" />
-    <svg:path d="m13 6-4 6h6l-4 6" />
-  `,
+    ></svg:path>
+    <svg:path d="M6 6h.01"></svg:path>
+    <svg:path d="M6 18h.01"></svg:path>
+    <svg:path d="m13 6-4 6h6l-4 6"></svg:path>`,
 })
 export class LucideServerCrash {
-  readonly class = input('lucide lucide-server-crash');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

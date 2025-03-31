@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideHandCoins],svg[lucide-hand-coins]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,21 +13,18 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
+  template: `<svg:path
+      d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"
+    ></svg:path>
     <svg:path
       d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"
-    />
-    <svg:path d="m2 16 6 6" />
-    <svg:circle cx="16" cy="9" r="2.9" />
-    <svg:circle cx="6" cy="5" r="3" />
-  `,
+    ></svg:path>
+    <svg:path d="m2 16 6 6"></svg:path>
+    <svg:circle cx="16" cy="9" r="2.9"></svg:circle>
+    <svg:circle cx="6" cy="5" r="3"></svg:circle>`,
 })
 export class LucideHandCoins {
-  readonly class = input('lucide lucide-hand-coins');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

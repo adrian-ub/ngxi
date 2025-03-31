@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideTornado],svg[lucide-tornado]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M21 4H3" />
-    <svg:path d="M18 8H6" />
-    <svg:path d="M19 12H9" />
-    <svg:path d="M16 16h-6" />
-    <svg:path d="M11 20H9" />
-  `,
+  template: `<svg:path d="M21 4H3"></svg:path>
+    <svg:path d="M18 8H6"></svg:path>
+    <svg:path d="M19 12H9"></svg:path>
+    <svg:path d="M16 16h-6"></svg:path>
+    <svg:path d="M11 20H9"></svg:path>`,
 })
 export class LucideTornado {
-  readonly class = input('lucide lucide-tornado');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideGitMerge],svg[lucide-git-merge]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="18" cy="18" r="3" />
-    <svg:circle cx="6" cy="6" r="3" />
-    <svg:path d="M6 21V9a9 9 0 0 0 9 9" />
-  `,
+  template: `<svg:circle cx="18" cy="18" r="3"></svg:circle>
+    <svg:circle cx="6" cy="6" r="3"></svg:circle>
+    <svg:path d="M6 21V9a9 9 0 0 0 9 9"></svg:path>`,
 })
 export class LucideGitMerge {
-  readonly class = input('lucide lucide-git-merge');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

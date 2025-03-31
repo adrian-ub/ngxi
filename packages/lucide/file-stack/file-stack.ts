@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideFileStack],svg[lucide-file-stack]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M21 7h-3a2 2 0 0 1-2-2V2" />
+  template: `<svg:path d="M21 7h-3a2 2 0 0 1-2-2V2"></svg:path>
     <svg:path
       d="M21 6v6.5c0 .8-.7 1.5-1.5 1.5h-7c-.8 0-1.5-.7-1.5-1.5v-9c0-.8.7-1.5 1.5-1.5H17Z"
-    />
-    <svg:path d="M7 8v8.8c0 .3.2.6.4.8.2.2.5.4.8.4H15" />
-    <svg:path d="M3 12v8.8c0 .3.2.6.4.8.2.2.5.4.8.4H11" />
-  `,
+    ></svg:path>
+    <svg:path d="M7 8v8.8c0 .3.2.6.4.8.2.2.5.4.8.4H15"></svg:path>
+    <svg:path d="M3 12v8.8c0 .3.2.6.4.8.2.2.5.4.8.4H11"></svg:path>`,
 })
 export class LucideFileStack {
-  readonly class = input('lucide lucide-file-stack');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

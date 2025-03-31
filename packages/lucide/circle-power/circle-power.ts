@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideCirclePower],svg[lucide-circle-power]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M12 7v4" />
-    <svg:path d="M7.998 9.003a5 5 0 1 0 8-.005" />
-    <svg:circle cx="12" cy="12" r="10" />
-  `,
+  template: `<svg:path d="M12 7v4"></svg:path>
+    <svg:path d="M7.998 9.003a5 5 0 1 0 8-.005"></svg:path>
+    <svg:circle cx="12" cy="12" r="10"></svg:circle>`,
 })
 export class LucideCirclePower {
-  readonly class = input('lucide lucide-circle-power');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

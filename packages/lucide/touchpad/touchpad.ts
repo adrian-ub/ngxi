@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideTouchpad],svg[lucide-touchpad]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="20" height="16" x="2" y="4" rx="2" />
-    <svg:path d="M2 14h20" />
-    <svg:path d="M12 20v-6" />
-  `,
+  template: `<svg:rect width="20" height="16" x="2" y="4" rx="2"></svg:rect>
+    <svg:path d="M2 14h20"></svg:path>
+    <svg:path d="M12 20v-6"></svg:path>`,
 })
 export class LucideTouchpad {
-  readonly class = input('lucide lucide-touchpad');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

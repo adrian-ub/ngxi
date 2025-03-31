@@ -5,15 +5,17 @@ import { Component, input } from '@angular/core';
   selector: 'svg[siLightning],svg[si-lightning]',
   host: {
     role: 'img',
+    '[attr.role]': 'role()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.xmlns]': 'xmlns()',
   },
   template: `<svg:title>Lightning</svg:title>
     <svg:path
       d="M12 0L1.75 6v12L12 24l10.25-6V6zm-1.775 18l1.08-4.657-2.428-2.397L13.79 6l-1.082 4.665 2.414 2.384z"
-    />`,
+    ></svg:path>`,
 })
 export class SiLightning {
+  readonly role = input('img');
   readonly viewBox = input('0 0 24 24');
   readonly xmlns = input('http://www.w3.org/2000/svg');
 }

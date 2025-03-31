@@ -5,15 +5,17 @@ import { Component, input } from '@angular/core';
   selector: 'svg[siKick],svg[si-kick]',
   host: {
     role: 'img',
+    '[attr.role]': 'role()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.xmlns]': 'xmlns()',
   },
   template: `<svg:title>Kick</svg:title>
     <svg:path
       d="M1.333 0h8v5.333H12V2.667h2.667V0h8v8H20v2.667h-2.667v2.666H20V16h2.667v8h-8v-2.667H12v-2.666H9.333V24h-8Z"
-    />`,
+    ></svg:path>`,
 })
 export class SiKick {
+  readonly role = input('img');
   readonly viewBox = input('0 0 24 24');
   readonly xmlns = input('http://www.w3.org/2000/svg');
 }

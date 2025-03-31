@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideToggleLeft],svg[lucide-toggle-left]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,18 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="20" height="12" x="2" y="6" rx="6" ry="6" />
-    <svg:circle cx="8" cy="12" r="2" />
-  `,
+  template: `<svg:rect
+      width="20"
+      height="12"
+      x="2"
+      y="6"
+      rx="6"
+      ry="6"
+    ></svg:rect>
+    <svg:circle cx="8" cy="12" r="2"></svg:circle>`,
 })
 export class LucideToggleLeft {
-  readonly class = input('lucide lucide-toggle-left');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

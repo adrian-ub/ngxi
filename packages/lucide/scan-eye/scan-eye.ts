@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideScanEye],svg[lucide-scan-eye]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,22 +13,17 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M3 7V5a2 2 0 0 1 2-2h2" />
-    <svg:path d="M17 3h2a2 2 0 0 1 2 2v2" />
-    <svg:path d="M21 17v2a2 2 0 0 1-2 2h-2" />
-    <svg:path d="M7 21H5a2 2 0 0 1-2-2v-2" />
-    <svg:circle cx="12" cy="12" r="1" />
+  template: `<svg:path d="M3 7V5a2 2 0 0 1 2-2h2"></svg:path>
+    <svg:path d="M17 3h2a2 2 0 0 1 2 2v2"></svg:path>
+    <svg:path d="M21 17v2a2 2 0 0 1-2 2h-2"></svg:path>
+    <svg:path d="M7 21H5a2 2 0 0 1-2-2v-2"></svg:path>
+    <svg:circle cx="12" cy="12" r="1"></svg:circle>
     <svg:path
       d="M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0"
-    />
-  `,
+    ></svg:path>`,
 })
 export class LucideScanEye {
-  readonly class = input('lucide lucide-scan-eye');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

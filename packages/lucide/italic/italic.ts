@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideItalic],svg[lucide-italic]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:line x1="19" x2="10" y1="4" y2="4" />
-    <svg:line x1="14" x2="5" y1="20" y2="20" />
-    <svg:line x1="15" x2="9" y1="4" y2="20" />
-  `,
+  template: `<svg:line x1="19" x2="10" y1="4" y2="4"></svg:line>
+    <svg:line x1="14" x2="5" y1="20" y2="20"></svg:line>
+    <svg:line x1="15" x2="9" y1="4" y2="20"></svg:line>`,
 })
 export class LucideItalic {
-  readonly class = input('lucide lucide-italic');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

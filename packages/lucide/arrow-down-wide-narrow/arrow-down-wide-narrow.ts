@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideArrowDownWideNarrow],svg[lucide-arrow-down-wide-narrow]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m3 16 4 4 4-4" />
-    <svg:path d="M7 20V4" />
-    <svg:path d="M11 4h10" />
-    <svg:path d="M11 8h7" />
-    <svg:path d="M11 12h4" />
-  `,
+  template: `<svg:path d="m3 16 4 4 4-4"></svg:path>
+    <svg:path d="M7 20V4"></svg:path>
+    <svg:path d="M11 4h10"></svg:path>
+    <svg:path d="M11 8h7"></svg:path>
+    <svg:path d="M11 12h4"></svg:path>`,
 })
 export class LucideArrowDownWideNarrow {
-  readonly class = input('lucide lucide-arrow-down-wide-narrow');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideDrum],svg[lucide-drum]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,21 +13,16 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m2 2 8 8" />
-    <svg:path d="m22 2-8 8" />
-    <svg:ellipse cx="12" cy="9" rx="10" ry="5" />
-    <svg:path d="M7 13.4v7.9" />
-    <svg:path d="M12 14v8" />
-    <svg:path d="M17 13.4v7.9" />
-    <svg:path d="M2 9v8a10 5 0 0 0 20 0V9" />
-  `,
+  template: `<svg:path d="m2 2 8 8"></svg:path>
+    <svg:path d="m22 2-8 8"></svg:path>
+    <svg:ellipse cx="12" cy="9" rx="10" ry="5"></svg:ellipse>
+    <svg:path d="M7 13.4v7.9"></svg:path>
+    <svg:path d="M12 14v8"></svg:path>
+    <svg:path d="M17 13.4v7.9"></svg:path>
+    <svg:path d="M2 9v8a10 5 0 0 0 20 0V9"></svg:path>`,
 })
 export class LucideDrum {
-  readonly class = input('lucide lucide-drum');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

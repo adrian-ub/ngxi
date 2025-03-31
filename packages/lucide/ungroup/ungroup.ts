@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideUngroup],svg[lucide-ungroup]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="8" height="6" x="5" y="4" rx="1" />
-    <svg:rect width="8" height="6" x="11" y="14" rx="1" />
-  `,
+  template: `<svg:rect width="8" height="6" x="5" y="4" rx="1"></svg:rect>
+    <svg:rect width="8" height="6" x="11" y="14" rx="1"></svg:rect>`,
 })
 export class LucideUngroup {
-  readonly class = input('lucide lucide-ungroup');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

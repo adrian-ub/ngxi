@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideFastForward],svg[lucide-fast-forward]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:polygon points="13 19 22 12 13 5 13 19" />
-    <svg:polygon points="2 19 11 12 2 5 2 19" />
-  `,
+  template: `<svg:polygon points="13 19 22 12 13 5 13 19"></svg:polygon>
+    <svg:polygon points="2 19 11 12 2 5 2 19"></svg:polygon>`,
 })
 export class LucideFastForward {
-  readonly class = input('lucide lucide-fast-forward');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

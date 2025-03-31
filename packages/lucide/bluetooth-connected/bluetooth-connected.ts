@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideBluetoothConnected],svg[lucide-bluetooth-connected]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m7 7 10 10-5 5V2l5 5L7 17" />
-    <svg:line x1="18" x2="21" y1="12" y2="12" />
-    <svg:line x1="3" x2="6" y1="12" y2="12" />
-  `,
+  template: `<svg:path d="m7 7 10 10-5 5V2l5 5L7 17"></svg:path>
+    <svg:line x1="18" x2="21" y1="12" y2="12"></svg:line>
+    <svg:line x1="3" x2="6" y1="12" y2="12"></svg:line>`,
 })
 export class LucideBluetoothConnected {
-  readonly class = input('lucide lucide-bluetooth-connected');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

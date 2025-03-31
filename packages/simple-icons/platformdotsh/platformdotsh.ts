@@ -5,15 +5,17 @@ import { Component, input } from '@angular/core';
   selector: 'svg[siPlatformdotsh],svg[si-platformdotsh]',
   host: {
     role: 'img',
+    '[attr.role]': 'role()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.xmlns]': 'xmlns()',
   },
   template: `<svg:title>Platform.sh</svg:title>
     <svg:path
       d="M24 0H0v9.541h24V0zM24 20.755H0V24h24v-3.245zM0 12.618h24v4.892H0v-4.892z"
-    />`,
+    ></svg:path>`,
 })
 export class SiPlatformdotsh {
+  readonly role = input('img');
   readonly viewBox = input('0 0 24 24');
   readonly xmlns = input('http://www.w3.org/2000/svg');
 }

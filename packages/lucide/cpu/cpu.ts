@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideCpu],svg[lucide-cpu]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,24 +13,19 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="16" height="16" x="4" y="4" rx="2" />
-    <svg:rect width="6" height="6" x="9" y="9" rx="1" />
-    <svg:path d="M15 2v2" />
-    <svg:path d="M15 20v2" />
-    <svg:path d="M2 15h2" />
-    <svg:path d="M2 9h2" />
-    <svg:path d="M20 15h2" />
-    <svg:path d="M20 9h2" />
-    <svg:path d="M9 2v2" />
-    <svg:path d="M9 20v2" />
-  `,
+  template: `<svg:rect width="16" height="16" x="4" y="4" rx="2"></svg:rect>
+    <svg:rect width="6" height="6" x="9" y="9" rx="1"></svg:rect>
+    <svg:path d="M15 2v2"></svg:path>
+    <svg:path d="M15 20v2"></svg:path>
+    <svg:path d="M2 15h2"></svg:path>
+    <svg:path d="M2 9h2"></svg:path>
+    <svg:path d="M20 15h2"></svg:path>
+    <svg:path d="M20 9h2"></svg:path>
+    <svg:path d="M9 2v2"></svg:path>
+    <svg:path d="M9 20v2"></svg:path>`,
 })
 export class LucideCpu {
-  readonly class = input('lucide lucide-cpu');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

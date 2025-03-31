@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideJapaneseYen],svg[lucide-japanese-yen]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M12 9.5V21m0-11.5L6 3m6 6.5L18 3" />
-    <svg:path d="M6 15h12" />
-    <svg:path d="M6 11h12" />
-  `,
+  template: `<svg:path d="M12 9.5V21m0-11.5L6 3m6 6.5L18 3"></svg:path>
+    <svg:path d="M6 15h12"></svg:path>
+    <svg:path d="M6 11h12"></svg:path>`,
 })
 export class LucideJapaneseYen {
-  readonly class = input('lucide lucide-japanese-yen');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

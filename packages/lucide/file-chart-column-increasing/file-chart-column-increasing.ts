@@ -6,11 +6,7 @@ import { Component, input } from '@angular/core';
     'svg[lucideFileChartColumnIncreasing],svg[lucide-file-chart-column-increasing]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -18,19 +14,16 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-    <svg:path d="M14 2v4a2 2 0 0 0 2 2h4" />
-    <svg:path d="M8 18v-2" />
-    <svg:path d="M12 18v-4" />
-    <svg:path d="M16 18v-6" />
-  `,
+  template: `<svg:path
+      d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+    ></svg:path>
+    <svg:path d="M14 2v4a2 2 0 0 0 2 2h4"></svg:path>
+    <svg:path d="M8 18v-2"></svg:path>
+    <svg:path d="M12 18v-4"></svg:path>
+    <svg:path d="M16 18v-6"></svg:path>`,
 })
 export class LucideFileChartColumnIncreasing {
-  readonly class = input('lucide lucide-file-chart-column-increasing');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

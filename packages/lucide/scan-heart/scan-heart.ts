@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideScanHeart],svg[lucide-scan-heart]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,21 +13,16 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path
+  template: `<svg:path
       d="M11.246 16.657a1 1 0 0 0 1.508 0l3.57-4.101A2.75 2.75 0 1 0 12 9.168a2.75 2.75 0 1 0-4.324 3.388z"
-    />
-    <svg:path d="M17 3h2a2 2 0 0 1 2 2v2" />
-    <svg:path d="M21 17v2a2 2 0 0 1-2 2h-2" />
-    <svg:path d="M3 7V5a2 2 0 0 1 2-2h2" />
-    <svg:path d="M7 21H5a2 2 0 0 1-2-2v-2" />
-  `,
+    ></svg:path>
+    <svg:path d="M17 3h2a2 2 0 0 1 2 2v2"></svg:path>
+    <svg:path d="M21 17v2a2 2 0 0 1-2 2h-2"></svg:path>
+    <svg:path d="M3 7V5a2 2 0 0 1 2-2h2"></svg:path>
+    <svg:path d="M7 21H5a2 2 0 0 1-2-2v-2"></svg:path>`,
 })
 export class LucideScanHeart {
-  readonly class = input('lucide lucide-scan-heart');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

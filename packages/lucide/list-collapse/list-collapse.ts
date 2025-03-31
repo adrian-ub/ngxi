@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideListCollapse],svg[lucide-list-collapse]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m3 10 2.5-2.5L3 5" />
-    <svg:path d="m3 19 2.5-2.5L3 14" />
-    <svg:path d="M10 6h11" />
-    <svg:path d="M10 12h11" />
-    <svg:path d="M10 18h11" />
-  `,
+  template: `<svg:path d="m3 10 2.5-2.5L3 5"></svg:path>
+    <svg:path d="m3 19 2.5-2.5L3 14"></svg:path>
+    <svg:path d="M10 6h11"></svg:path>
+    <svg:path d="M10 12h11"></svg:path>
+    <svg:path d="M10 18h11"></svg:path>`,
 })
 export class LucideListCollapse {
-  readonly class = input('lucide lucide-list-collapse');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

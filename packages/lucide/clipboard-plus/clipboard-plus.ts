@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideClipboardPlus],svg[lucide-clipboard-plus]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,22 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  template: `<svg:rect
+      width="8"
+      height="4"
+      x="8"
+      y="2"
+      rx="1"
+      ry="1"
+    ></svg:rect>
     <svg:path
       d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
-    />
-    <svg:path d="M9 14h6" />
-    <svg:path d="M12 17v-6" />
-  `,
+    ></svg:path>
+    <svg:path d="M9 14h6"></svg:path>
+    <svg:path d="M12 17v-6"></svg:path>`,
 })
 export class LucideClipboardPlus {
-  readonly class = input('lucide lucide-clipboard-plus');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

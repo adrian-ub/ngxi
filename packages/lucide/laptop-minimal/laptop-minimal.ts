@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideLaptopMinimal],svg[lucide-laptop-minimal]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,18 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="18" height="12" x="3" y="4" rx="2" ry="2" />
-    <svg:line x1="2" x2="22" y1="20" y2="20" />
-  `,
+  template: `<svg:rect
+      width="18"
+      height="12"
+      x="3"
+      y="4"
+      rx="2"
+      ry="2"
+    ></svg:rect>
+    <svg:line x1="2" x2="22" y1="20" y2="20"></svg:line>`,
 })
 export class LucideLaptopMinimal {
-  readonly class = input('lucide lucide-laptop-minimal');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

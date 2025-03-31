@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideCornerLeftDown],svg[lucide-corner-left-down]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:polyline points="14 15 9 20 4 15" />
-    <svg:path d="M20 4h-7a4 4 0 0 0-4 4v12" />
-  `,
+  template: `<svg:polyline points="14 15 9 20 4 15"></svg:polyline>
+    <svg:path d="M20 4h-7a4 4 0 0 0-4 4v12"></svg:path>`,
 })
 export class LucideCornerLeftDown {
-  readonly class = input('lucide lucide-corner-left-down');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSunMedium],svg[lucide-sun-medium]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,23 +13,18 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="12" cy="12" r="4" />
-    <svg:path d="M12 3v1" />
-    <svg:path d="M12 20v1" />
-    <svg:path d="M3 12h1" />
-    <svg:path d="M20 12h1" />
-    <svg:path d="m18.364 5.636-.707.707" />
-    <svg:path d="m6.343 17.657-.707.707" />
-    <svg:path d="m5.636 5.636.707.707" />
-    <svg:path d="m17.657 17.657.707.707" />
-  `,
+  template: `<svg:circle cx="12" cy="12" r="4"></svg:circle>
+    <svg:path d="M12 3v1"></svg:path>
+    <svg:path d="M12 20v1"></svg:path>
+    <svg:path d="M3 12h1"></svg:path>
+    <svg:path d="M20 12h1"></svg:path>
+    <svg:path d="m18.364 5.636-.707.707"></svg:path>
+    <svg:path d="m6.343 17.657-.707.707"></svg:path>
+    <svg:path d="m5.636 5.636.707.707"></svg:path>
+    <svg:path d="m17.657 17.657.707.707"></svg:path>`,
 })
 export class LucideSunMedium {
-  readonly class = input('lucide lucide-sun-medium');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

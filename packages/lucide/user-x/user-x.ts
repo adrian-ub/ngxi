@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideUserX],svg[lucide-user-x]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-    <svg:circle cx="9" cy="7" r="4" />
-    <svg:line x1="17" x2="22" y1="8" y2="13" />
-    <svg:line x1="22" x2="17" y1="8" y2="13" />
-  `,
+  template: `<svg:path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></svg:path>
+    <svg:circle cx="9" cy="7" r="4"></svg:circle>
+    <svg:line x1="17" x2="22" y1="8" y2="13"></svg:line>
+    <svg:line x1="22" x2="17" y1="8" y2="13"></svg:line>`,
 })
 export class LucideUserX {
-  readonly class = input('lucide lucide-user-x');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

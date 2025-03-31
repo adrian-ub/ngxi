@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucidePercent],svg[lucide-percent]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:line x1="19" x2="5" y1="5" y2="19" />
-    <svg:circle cx="6.5" cy="6.5" r="2.5" />
-    <svg:circle cx="17.5" cy="17.5" r="2.5" />
-  `,
+  template: `<svg:line x1="19" x2="5" y1="5" y2="19"></svg:line>
+    <svg:circle cx="6.5" cy="6.5" r="2.5"></svg:circle>
+    <svg:circle cx="17.5" cy="17.5" r="2.5"></svg:circle>`,
 })
 export class LucidePercent {
-  readonly class = input('lucide lucide-percent');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

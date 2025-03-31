@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideBotOff],svg[lucide-bot-off]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,23 +13,18 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M13.67 8H18a2 2 0 0 1 2 2v4.33" />
-    <svg:path d="M2 14h2" />
-    <svg:path d="M20 14h2" />
-    <svg:path d="M22 22 2 2" />
+  template: `<svg:path d="M13.67 8H18a2 2 0 0 1 2 2v4.33"></svg:path>
+    <svg:path d="M2 14h2"></svg:path>
+    <svg:path d="M20 14h2"></svg:path>
+    <svg:path d="M22 22 2 2"></svg:path>
     <svg:path
       d="M8 8H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 1.414-.586"
-    />
-    <svg:path d="M9 13v2" />
-    <svg:path d="M9.67 4H12v2.33" />
-  `,
+    ></svg:path>
+    <svg:path d="M9 13v2"></svg:path>
+    <svg:path d="M9.67 4H12v2.33"></svg:path>`,
 })
 export class LucideBotOff {
-  readonly class = input('lucide lucide-bot-off');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

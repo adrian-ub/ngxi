@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideDock],svg[lucide-dock]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M2 8h20" />
-    <svg:rect width="20" height="16" x="2" y="4" rx="2" />
-    <svg:path d="M6 16h12" />
-  `,
+  template: `<svg:path d="M2 8h20"></svg:path>
+    <svg:rect width="20" height="16" x="2" y="4" rx="2"></svg:rect>
+    <svg:path d="M6 16h12"></svg:path>`,
 })
 export class LucideDock {
-  readonly class = input('lucide lucide-dock');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

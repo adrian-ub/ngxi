@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideReceiptIndianRupee],svg[lucide-receipt-indian-rupee]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path
+  template: `<svg:path
       d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"
-    />
-    <svg:path d="M8 7h8" />
-    <svg:path d="M12 17.5 8 15h1a4 4 0 0 0 0-8" />
-    <svg:path d="M8 11h8" />
-  `,
+    ></svg:path>
+    <svg:path d="M8 7h8"></svg:path>
+    <svg:path d="M12 17.5 8 15h1a4 4 0 0 0 0-8"></svg:path>
+    <svg:path d="M8 11h8"></svg:path>`,
 })
 export class LucideReceiptIndianRupee {
-  readonly class = input('lucide lucide-receipt-indian-rupee');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

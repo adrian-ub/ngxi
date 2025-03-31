@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideMerge],svg[lucide-merge]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m8 6 4-4 4 4" />
-    <svg:path d="M12 2v10.3a4 4 0 0 1-1.172 2.872L4 22" />
-    <svg:path d="m20 22-5-5" />
-  `,
+  template: `<svg:path d="m8 6 4-4 4 4"></svg:path>
+    <svg:path d="M12 2v10.3a4 4 0 0 1-1.172 2.872L4 22"></svg:path>
+    <svg:path d="m20 22-5-5"></svg:path>`,
 })
 export class LucideMerge {
-  readonly class = input('lucide lucide-merge');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSpellCheck],svg[lucide-spell-check]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m6 16 6-12 6 12" />
-    <svg:path d="M8 12h8" />
-    <svg:path d="m16 20 2 2 4-4" />
-  `,
+  template: `<svg:path d="m6 16 6-12 6 12"></svg:path>
+    <svg:path d="M8 12h8"></svg:path>
+    <svg:path d="m16 20 2 2 4-4"></svg:path>`,
 })
 export class LucideSpellCheck {
-  readonly class = input('lucide lucide-spell-check');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

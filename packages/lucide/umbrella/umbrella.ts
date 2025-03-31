@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideUmbrella],svg[lucide-umbrella]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M22 12a10.06 10.06 1 0 0-20 0Z" />
-    <svg:path d="M12 12v8a2 2 0 0 0 4 0" />
-    <svg:path d="M12 2v1" />
-  `,
+  template: `<svg:path d="M22 12a10.06 10.06 1 0 0-20 0Z"></svg:path>
+    <svg:path d="M12 12v8a2 2 0 0 0 4 0"></svg:path>
+    <svg:path d="M12 2v1"></svg:path>`,
 })
 export class LucideUmbrella {
-  readonly class = input('lucide lucide-umbrella');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

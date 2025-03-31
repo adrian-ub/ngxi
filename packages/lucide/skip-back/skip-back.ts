@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSkipBack],svg[lucide-skip-back]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:polygon points="19 20 9 12 19 4 19 20" />
-    <svg:line x1="5" x2="5" y1="19" y2="5" />
-  `,
+  template: `<svg:polygon points="19 20 9 12 19 4 19 20"></svg:polygon>
+    <svg:line x1="5" x2="5" y1="19" y2="5"></svg:line>`,
 })
 export class LucideSkipBack {
-  readonly class = input('lucide lucide-skip-back');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

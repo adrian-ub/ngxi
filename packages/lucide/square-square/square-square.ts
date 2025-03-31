@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSquareSquare],svg[lucide-square-square]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect x="3" y="3" width="18" height="18" rx="2" />
-    <svg:rect x="8" y="8" width="8" height="8" rx="1" />
-  `,
+  template: `<svg:rect x="3" y="3" width="18" height="18" rx="2"></svg:rect>
+    <svg:rect x="8" y="8" width="8" height="8" rx="1"></svg:rect>`,
 })
 export class LucideSquareSquare {
-  readonly class = input('lucide lucide-square-square');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

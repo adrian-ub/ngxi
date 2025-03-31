@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSiren],svg[lucide-siren]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,24 +13,19 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M7 18v-6a5 5 0 1 1 10 0v6" />
+  template: `<svg:path d="M7 18v-6a5 5 0 1 1 10 0v6"></svg:path>
     <svg:path
       d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"
-    />
-    <svg:path d="M21 12h1" />
-    <svg:path d="M18.5 4.5 18 5" />
-    <svg:path d="M2 12h1" />
-    <svg:path d="M12 2v1" />
-    <svg:path d="m4.929 4.929.707.707" />
-    <svg:path d="M12 12v6" />
-  `,
+    ></svg:path>
+    <svg:path d="M21 12h1"></svg:path>
+    <svg:path d="M18.5 4.5 18 5"></svg:path>
+    <svg:path d="M2 12h1"></svg:path>
+    <svg:path d="M12 2v1"></svg:path>
+    <svg:path d="m4.929 4.929.707.707"></svg:path>
+    <svg:path d="M12 12v6"></svg:path>`,
 })
 export class LucideSiren {
-  readonly class = input('lucide lucide-siren');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');
