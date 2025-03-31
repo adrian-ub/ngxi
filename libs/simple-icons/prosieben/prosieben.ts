@@ -1,16 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'svg[siProsieben],svg[si-prosieben]',
   host: {
     role: 'img',
-    viewBox: '0 0 24 24',
-    xmlns: 'http://www.w3.org/2000/svg',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.xmlns]': 'xmlns()',
   },
   template: `<svg:title>ProSieben</svg:title>
     <svg:path
       d="M.24 0H23.68V6.64H.24M23.76 7.92V24H.24s2.88-7.84 10.48-12.48c7.12-4.4 13.04-3.6 13.04-3.6Z"
     />`,
 })
-export class SiProsieben {}
+export class SiProsieben {
+  readonly viewBox = input('0 0 24 24');
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+}

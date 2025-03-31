@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'svg[lucideHandCoins],svg[lucide-hand-coins]',
   host: {
-    class: 'lucide lucide-hand-coins',
-    xmlns: 'http://www.w3.org/2000/svg',
-    viewBox: '0 0 24 24',
-    fill: 'none',
-    stroke: 'currentColor',
-    linecap: 'round',
-    linejoin: 'round',
+    role: 'img',
+
+    '[attr.class]': 'class()',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.stroke]': 'stroke()',
+    '[attr.stroke-width]': 'strokeWidth()',
+    '[attr.stroke-linecap]': 'strokeLinecap()',
+    '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
   template: `
     <svg:path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
@@ -22,4 +27,15 @@ import { Component } from '@angular/core';
     <svg:circle cx="6" cy="5" r="3" />
   `,
 })
-export class LucideHandCoins {}
+export class LucideHandCoins {
+  readonly class = input('lucide lucide-hand-coins');
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly width = input('24');
+  readonly height = input('24');
+  readonly viewBox = input('0 0 24 24');
+  readonly fill = input('none');
+  readonly stroke = input('currentColor');
+  readonly strokeWidth = input('2', { alias: 'stroke-width' });
+  readonly strokeLinecap = input('round', { alias: 'stroke-linecap' });
+  readonly strokeLinejoin = input('round', { alias: 'stroke-linejoin' });
+}

@@ -1,20 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'svg[lucideCircleStop],svg[lucide-circle-stop]',
   host: {
-    class: 'lucide lucide-circle-stop',
-    xmlns: 'http://www.w3.org/2000/svg',
-    viewBox: '0 0 24 24',
-    fill: 'none',
-    stroke: 'currentColor',
-    linecap: 'round',
-    linejoin: 'round',
+    role: 'img',
+
+    '[attr.class]': 'class()',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.stroke]': 'stroke()',
+    '[attr.stroke-width]': 'strokeWidth()',
+    '[attr.stroke-linecap]': 'strokeLinecap()',
+    '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
   template: `
     <svg:circle cx="12" cy="12" r="10" />
     <svg:rect x="9" y="9" width="6" height="6" rx="1" />
   `,
 })
-export class LucideCircleStop {}
+export class LucideCircleStop {
+  readonly class = input('lucide lucide-circle-stop');
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly width = input('24');
+  readonly height = input('24');
+  readonly viewBox = input('0 0 24 24');
+  readonly fill = input('none');
+  readonly stroke = input('currentColor');
+  readonly strokeWidth = input('2', { alias: 'stroke-width' });
+  readonly strokeLinecap = input('round', { alias: 'stroke-linecap' });
+  readonly strokeLinejoin = input('round', { alias: 'stroke-linejoin' });
+}

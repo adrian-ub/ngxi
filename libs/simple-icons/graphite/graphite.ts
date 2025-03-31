@@ -1,16 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'svg[siGraphite],svg[si-graphite]',
   host: {
     role: 'img',
-    viewBox: '0 0 24 24',
-    xmlns: 'http://www.w3.org/2000/svg',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.xmlns]': 'xmlns()',
   },
   template: `<svg:title>Graphite</svg:title>
     <svg:path
       d="m15.215 0-12 3.215-3.215 12L8.785 24l12-3.215 3.215-12L15.215 0Zm1.958 20.966H6.827L1.655 12l5.172-8.966h10.346L22.345 12l-5.172 8.966Zm.68-14.823L9.86 4 4.006 9.858l2.14 8 7.995 2.141 5.853-5.857-2.14-8Z"
     />`,
 })
-export class SiGraphite {}
+export class SiGraphite {
+  readonly viewBox = input('0 0 24 24');
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+}

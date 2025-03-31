@@ -1,16 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'svg[siOsano],svg[si-osano]',
   host: {
     role: 'img',
-    viewBox: '0 0 24 24',
-    xmlns: 'http://www.w3.org/2000/svg',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.xmlns]': 'xmlns()',
   },
   template: `<svg:title>Osano</svg:title>
     <svg:path
       d="M12 6.091A5.909 5.909 0 1017.909 12 5.91 5.91 0 0012 6.091M12 0A12 12 0 110 12 12 12 0 0112 0z"
     />`,
 })
-export class SiOsano {}
+export class SiOsano {
+  readonly viewBox = input('0 0 24 24');
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+}

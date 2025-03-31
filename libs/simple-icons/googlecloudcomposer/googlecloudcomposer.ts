@@ -1,16 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'svg[siGooglecloudcomposer],svg[si-googlecloudcomposer]',
   host: {
     role: 'img',
-    viewBox: '0 0 24 24',
-    xmlns: 'http://www.w3.org/2000/svg',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.xmlns]': 'xmlns()',
   },
   template: `<svg:title>Google Cloud Composer</svg:title>
     <svg:path
       d="M9.636 4.752h-6.42V0h17.556v4.728h-6.36v6.396H9.636V4.752zm-6.42 1.692h4.74v6.36h6.408V24H9.636v-6.42h-6.42V6.444zm12.84-.012h4.728V24h-4.728V6.432zM7.92 24H3.216v-4.728H7.92V24z"
     />`,
 })
-export class SiGooglecloudcomposer {}
+export class SiGooglecloudcomposer {
+  readonly viewBox = input('0 0 24 24');
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+}

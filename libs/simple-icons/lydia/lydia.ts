@@ -1,16 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'svg[siLydia],svg[si-lydia]',
   host: {
     role: 'img',
-    viewBox: '0 0 24 24',
-    xmlns: 'http://www.w3.org/2000/svg',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.xmlns]': 'xmlns()',
   },
   template: `<svg:title>Lydia</svg:title>
     <svg:path
       d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.895 17.611a.421.421 0 01-.168.035h-1.155a.608.608 0 01-.56-.377l-4-9.613-3.991 9.607a.61.61 0 01-.56.377H6.273a.42.42 0 01-.385-.59L10.91 5.575a.793.793 0 01.726-.475h.748a.792.792 0 01.726.48l5.003 11.482a.42.42 0 01-.218.549z"
     />`,
 })
-export class SiLydia {}
+export class SiLydia {
+  readonly viewBox = input('0 0 24 24');
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+}

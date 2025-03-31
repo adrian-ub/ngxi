@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'svg[lucideHandMetal],svg[lucide-hand-metal]',
   host: {
-    class: 'lucide lucide-hand-metal',
-    xmlns: 'http://www.w3.org/2000/svg',
-    viewBox: '0 0 24 24',
-    fill: 'none',
-    stroke: 'currentColor',
-    linecap: 'round',
-    linejoin: 'round',
+    role: 'img',
+
+    '[attr.class]': 'class()',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.stroke]': 'stroke()',
+    '[attr.stroke-width]': 'strokeWidth()',
+    '[attr.stroke-linecap]': 'strokeLinecap()',
+    '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
   template: `
     <svg:path d="M18 12.5V10a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4" />
@@ -21,4 +26,15 @@ import { Component } from '@angular/core';
     />
   `,
 })
-export class LucideHandMetal {}
+export class LucideHandMetal {
+  readonly class = input('lucide lucide-hand-metal');
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly width = input('24');
+  readonly height = input('24');
+  readonly viewBox = input('0 0 24 24');
+  readonly fill = input('none');
+  readonly stroke = input('currentColor');
+  readonly strokeWidth = input('2', { alias: 'stroke-width' });
+  readonly strokeLinecap = input('round', { alias: 'stroke-linecap' });
+  readonly strokeLinejoin = input('round', { alias: 'stroke-linejoin' });
+}

@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'svg[lucideSoup],svg[lucide-soup]',
   host: {
-    class: 'lucide lucide-soup',
-    xmlns: 'http://www.w3.org/2000/svg',
-    viewBox: '0 0 24 24',
-    fill: 'none',
-    stroke: 'currentColor',
-    linecap: 'round',
-    linejoin: 'round',
+    role: 'img',
+
+    '[attr.class]': 'class()',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.stroke]': 'stroke()',
+    '[attr.stroke-width]': 'strokeWidth()',
+    '[attr.stroke-linecap]': 'strokeLinecap()',
+    '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
   template: `
     <svg:path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z" />
@@ -27,4 +32,15 @@ import { Component } from '@angular/core';
     />
   `,
 })
-export class LucideSoup {}
+export class LucideSoup {
+  readonly class = input('lucide lucide-soup');
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly width = input('24');
+  readonly height = input('24');
+  readonly viewBox = input('0 0 24 24');
+  readonly fill = input('none');
+  readonly stroke = input('currentColor');
+  readonly strokeWidth = input('2', { alias: 'stroke-width' });
+  readonly strokeLinecap = input('round', { alias: 'stroke-linecap' });
+  readonly strokeLinejoin = input('round', { alias: 'stroke-linejoin' });
+}

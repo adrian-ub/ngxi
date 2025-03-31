@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'svg[lucideSmartphoneNfc],svg[lucide-smartphone-nfc]',
   host: {
-    class: 'lucide lucide-smartphone-nfc',
-    xmlns: 'http://www.w3.org/2000/svg',
-    viewBox: '0 0 24 24',
-    fill: 'none',
-    stroke: 'currentColor',
-    linecap: 'round',
-    linejoin: 'round',
+    role: 'img',
+
+    '[attr.class]': 'class()',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.stroke]': 'stroke()',
+    '[attr.stroke-width]': 'strokeWidth()',
+    '[attr.stroke-linecap]': 'strokeLinecap()',
+    '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
   template: `
     <svg:rect width="7" height="12" x="2" y="6" rx="1" />
@@ -19,4 +24,15 @@ import { Component } from '@angular/core';
     <svg:path d="M19.91 4.1a15.91 15.91 0 0 1 .01 15.8" />
   `,
 })
-export class LucideSmartphoneNfc {}
+export class LucideSmartphoneNfc {
+  readonly class = input('lucide lucide-smartphone-nfc');
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly width = input('24');
+  readonly height = input('24');
+  readonly viewBox = input('0 0 24 24');
+  readonly fill = input('none');
+  readonly stroke = input('currentColor');
+  readonly strokeWidth = input('2', { alias: 'stroke-width' });
+  readonly strokeLinecap = input('round', { alias: 'stroke-linecap' });
+  readonly strokeLinejoin = input('round', { alias: 'stroke-linejoin' });
+}
