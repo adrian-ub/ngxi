@@ -1,7 +1,7 @@
 import { generateFiles, logger, names, Tree } from "@nx/devkit";
 import * as fs from 'fs';
 import * as path from "path";
-
+import * as cheerio from 'cheerio';
 
 export interface GenerateIconsComponent {
   iconLibraryName: string;
@@ -35,9 +35,15 @@ function generateIcon(tree: Tree, options: GenerateIconsComponent, parentDir: st
 
     const iconName = path.basename(dirPath, '.svg');
     const svgContent = fs.readFileSync(dirPath, 'utf-8').toString();
-    const svgContentWithoutAttributes = getSvgContenInside(svgContent);
-    const svgAttributes = getSvgAttibutes(svgContent);
 
+    const $ = cheerio.load(svgContent);
+    const svgElement = $('svg');
+    const svgAttributes = Object.entries(svgElement[0].attribs).map(([name, value]) => {
+      const transformedName = names(name).propertyName;
+      return { originalName: name, transformedName, value };
+    }).filter(attr => attr.originalName !== 'role');
+
+    const svgContentWithoutAttributes = getSvgContenInside(svgContent);
     const newIconDir = path.relative(options.iconsSourcePath, path.join(path.dirname(dirPath), iconName));
 
     const { className, name, propertyName } = names(options.iconPrefix + '-' + iconName)
@@ -49,31 +55,11 @@ function generateIcon(tree: Tree, options: GenerateIconsComponent, parentDir: st
       className,
       name,
       propertyName,
-      svgAttributes: JSON.stringify(svgAttributes, null, 2)
+      svgAttributes
     });
 
     globalIndex.push(`export * from './${newIconDir}/${iconName}';`);
   });
-}
-
-function getSvgAttibutes(svgContent: string) {
-  const svgAttributesMatch = svgContent.match(/<svg[\s\S]*?>/);
-  const svgAttributes: Record<string, string> = {};
-
-  if (svgAttributesMatch) {
-    const attributesString = svgAttributesMatch[0];
-    const attributeRegex = /(\w+)=["']([^"']*)["']/g;
-    let match;
-
-    while ((match = attributeRegex.exec(attributesString)) !== null) {
-      // Skip width and height attributes
-      if (match[1] !== 'width' && match[1] !== 'height') {
-        svgAttributes[match[1]] = match[2];
-      }
-    }
-  }
-
-  return svgAttributes;
 }
 
 function removeOldIcons(options: GenerateIconsComponent) {
