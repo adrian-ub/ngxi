@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideTableColumnsSplit],svg[lucide-table-columns-split]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,25 +13,20 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M14 14v2" />
-    <svg:path d="M14 20v2" />
-    <svg:path d="M14 2v2" />
-    <svg:path d="M14 8v2" />
-    <svg:path d="M2 15h8" />
-    <svg:path d="M2 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2" />
-    <svg:path d="M2 9h8" />
-    <svg:path d="M22 15h-4" />
-    <svg:path d="M22 3h-2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h2" />
-    <svg:path d="M22 9h-4" />
-    <svg:path d="M5 3v18" />
-  `,
+  template: `<svg:path d="M14 14v2"></svg:path>
+    <svg:path d="M14 20v2"></svg:path>
+    <svg:path d="M14 2v2"></svg:path>
+    <svg:path d="M14 8v2"></svg:path>
+    <svg:path d="M2 15h8"></svg:path>
+    <svg:path d="M2 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2"></svg:path>
+    <svg:path d="M2 9h8"></svg:path>
+    <svg:path d="M22 15h-4"></svg:path>
+    <svg:path d="M22 3h-2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h2"></svg:path>
+    <svg:path d="M22 9h-4"></svg:path>
+    <svg:path d="M5 3v18"></svg:path>`,
 })
 export class LucideTableColumnsSplit {
-  readonly class = input('lucide lucide-table-columns-split');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

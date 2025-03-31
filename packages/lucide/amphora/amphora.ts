@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideAmphora],svg[lucide-amphora]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,24 +13,19 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path
+  template: `<svg:path
       d="M10 2v5.632c0 .424-.272.795-.653.982A6 6 0 0 0 6 14c.006 4 3 7 5 8"
-    />
-    <svg:path d="M10 5H8a2 2 0 0 0 0 4h.68" />
+    ></svg:path>
+    <svg:path d="M10 5H8a2 2 0 0 0 0 4h.68"></svg:path>
     <svg:path
       d="M14 2v5.632c0 .424.272.795.652.982A6 6 0 0 1 18 14c0 4-3 7-5 8"
-    />
-    <svg:path d="M14 5h2a2 2 0 0 1 0 4h-.68" />
-    <svg:path d="M18 22H6" />
-    <svg:path d="M9 2h6" />
-  `,
+    ></svg:path>
+    <svg:path d="M14 5h2a2 2 0 0 1 0 4h-.68"></svg:path>
+    <svg:path d="M18 22H6"></svg:path>
+    <svg:path d="M9 2h6"></svg:path>`,
 })
 export class LucideAmphora {
-  readonly class = input('lucide lucide-amphora');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

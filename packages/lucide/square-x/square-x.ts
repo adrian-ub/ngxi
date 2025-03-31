@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSquareX],svg[lucide-square-x]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,19 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-    <svg:path d="m15 9-6 6" />
-    <svg:path d="m9 9 6 6" />
-  `,
+  template: `<svg:rect
+      width="18"
+      height="18"
+      x="3"
+      y="3"
+      rx="2"
+      ry="2"
+    ></svg:rect>
+    <svg:path d="m15 9-6 6"></svg:path>
+    <svg:path d="m9 9 6 6"></svg:path>`,
 })
 export class LucideSquareX {
-  readonly class = input('lucide lucide-square-x');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideLifeBuoy],svg[lucide-life-buoy]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="12" cy="12" r="10" />
-    <svg:path d="m4.93 4.93 4.24 4.24" />
-    <svg:path d="m14.83 9.17 4.24-4.24" />
-    <svg:path d="m14.83 14.83 4.24 4.24" />
-    <svg:path d="m9.17 14.83-4.24 4.24" />
-    <svg:circle cx="12" cy="12" r="4" />
-  `,
+  template: `<svg:circle cx="12" cy="12" r="10"></svg:circle>
+    <svg:path d="m4.93 4.93 4.24 4.24"></svg:path>
+    <svg:path d="m14.83 9.17 4.24-4.24"></svg:path>
+    <svg:path d="m14.83 14.83 4.24 4.24"></svg:path>
+    <svg:path d="m9.17 14.83-4.24 4.24"></svg:path>
+    <svg:circle cx="12" cy="12" r="4"></svg:circle>`,
 })
 export class LucideLifeBuoy {
-  readonly class = input('lucide lucide-life-buoy');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

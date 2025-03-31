@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideBone],svg[lucide-bone]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path
-      d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"
-    />
-  `,
+  template: `<svg:path
+    d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"
+  ></svg:path>`,
 })
 export class LucideBone {
-  readonly class = input('lucide lucide-bone');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideIndentIncrease],svg[lucide-indent-increase]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M21 12H11" />
-    <svg:path d="M21 18H11" />
-    <svg:path d="M21 6H11" />
-    <svg:path d="m3 8 4 4-4 4" />
-  `,
+  template: `<svg:path d="M21 12H11"></svg:path>
+    <svg:path d="M21 18H11"></svg:path>
+    <svg:path d="M21 6H11"></svg:path>
+    <svg:path d="m3 8 4 4-4 4"></svg:path>`,
 })
 export class LucideIndentIncrease {
-  readonly class = input('lucide lucide-indent-increase');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

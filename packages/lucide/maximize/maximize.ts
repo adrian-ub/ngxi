@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideMaximize],svg[lucide-maximize]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M8 3H5a2 2 0 0 0-2 2v3" />
-    <svg:path d="M21 8V5a2 2 0 0 0-2-2h-3" />
-    <svg:path d="M3 16v3a2 2 0 0 0 2 2h3" />
-    <svg:path d="M16 21h3a2 2 0 0 0 2-2v-3" />
-  `,
+  template: `<svg:path d="M8 3H5a2 2 0 0 0-2 2v3"></svg:path>
+    <svg:path d="M21 8V5a2 2 0 0 0-2-2h-3"></svg:path>
+    <svg:path d="M3 16v3a2 2 0 0 0 2 2h3"></svg:path>
+    <svg:path d="M16 21h3a2 2 0 0 0 2-2v-3"></svg:path>`,
 })
 export class LucideMaximize {
-  readonly class = input('lucide lucide-maximize');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

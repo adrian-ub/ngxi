@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideUnderline],svg[lucide-underline]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M6 4v6a6 6 0 0 0 12 0V4" />
-    <svg:line x1="4" x2="20" y1="20" y2="20" />
-  `,
+  template: `<svg:path d="M6 4v6a6 6 0 0 0 12 0V4"></svg:path>
+    <svg:line x1="4" x2="20" y1="20" y2="20"></svg:line>`,
 })
 export class LucideUnderline {
-  readonly class = input('lucide lucide-underline');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

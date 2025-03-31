@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideJoystick],svg[lucide-joystick]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path
+  template: `<svg:path
       d="M21 17a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2Z"
-    />
-    <svg:path d="M6 15v-2" />
-    <svg:path d="M12 15V9" />
-    <svg:circle cx="12" cy="6" r="3" />
-  `,
+    ></svg:path>
+    <svg:path d="M6 15v-2"></svg:path>
+    <svg:path d="M12 15V9"></svg:path>
+    <svg:circle cx="12" cy="6" r="3"></svg:circle>`,
 })
 export class LucideJoystick {
-  readonly class = input('lucide lucide-joystick');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

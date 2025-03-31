@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideMenu],svg[lucide-menu]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:line x1="4" x2="20" y1="12" y2="12" />
-    <svg:line x1="4" x2="20" y1="6" y2="6" />
-    <svg:line x1="4" x2="20" y1="18" y2="18" />
-  `,
+  template: `<svg:line x1="4" x2="20" y1="12" y2="12"></svg:line>
+    <svg:line x1="4" x2="20" y1="6" y2="6"></svg:line>
+    <svg:line x1="4" x2="20" y1="18" y2="18"></svg:line>`,
 })
 export class LucideMenu {
-  readonly class = input('lucide lucide-menu');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

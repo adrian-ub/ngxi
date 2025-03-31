@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSquareKanban],svg[lucide-square-kanban]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="18" height="18" x="3" y="3" rx="2" />
-    <svg:path d="M8 7v7" />
-    <svg:path d="M12 7v4" />
-    <svg:path d="M16 7v9" />
-  `,
+  template: `<svg:rect width="18" height="18" x="3" y="3" rx="2"></svg:rect>
+    <svg:path d="M8 7v7"></svg:path>
+    <svg:path d="M12 7v4"></svg:path>
+    <svg:path d="M16 7v9"></svg:path>`,
 })
 export class LucideSquareKanban {
-  readonly class = input('lucide lucide-square-kanban');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

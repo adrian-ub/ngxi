@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideLocate],svg[lucide-locate]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:line x1="2" x2="5" y1="12" y2="12" />
-    <svg:line x1="19" x2="22" y1="12" y2="12" />
-    <svg:line x1="12" x2="12" y1="2" y2="5" />
-    <svg:line x1="12" x2="12" y1="19" y2="22" />
-    <svg:circle cx="12" cy="12" r="7" />
-  `,
+  template: `<svg:line x1="2" x2="5" y1="12" y2="12"></svg:line>
+    <svg:line x1="19" x2="22" y1="12" y2="12"></svg:line>
+    <svg:line x1="12" x2="12" y1="2" y2="5"></svg:line>
+    <svg:line x1="12" x2="12" y1="19" y2="22"></svg:line>
+    <svg:circle cx="12" cy="12" r="7"></svg:circle>`,
 })
 export class LucideLocate {
-  readonly class = input('lucide lucide-locate');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucidePencilRuler],svg[lucide-pencil-ruler]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,26 +13,21 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path
+  template: `<svg:path
       d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13"
-    />
-    <svg:path d="m8 6 2-2" />
-    <svg:path d="m18 16 2-2" />
+    ></svg:path>
+    <svg:path d="m8 6 2-2"></svg:path>
+    <svg:path d="m18 16 2-2"></svg:path>
     <svg:path
       d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17"
-    />
+    ></svg:path>
     <svg:path
       d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
-    />
-    <svg:path d="m15 5 4 4" />
-  `,
+    ></svg:path>
+    <svg:path d="m15 5 4 4"></svg:path>`,
 })
 export class LucidePencilRuler {
-  readonly class = input('lucide lucide-pencil-ruler');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

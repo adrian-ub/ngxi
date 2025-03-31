@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucidePiano],svg[lucide-piano]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,22 +13,17 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path
+  template: `<svg:path
       d="M18.5 8c-1.4 0-2.6-.8-3.2-2A6.87 6.87 0 0 0 2 9v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8.5C22 9.6 20.4 8 18.5 8"
-    />
-    <svg:path d="M2 14h20" />
-    <svg:path d="M6 14v4" />
-    <svg:path d="M10 14v4" />
-    <svg:path d="M14 14v4" />
-    <svg:path d="M18 14v4" />
-  `,
+    ></svg:path>
+    <svg:path d="M2 14h20"></svg:path>
+    <svg:path d="M6 14v4"></svg:path>
+    <svg:path d="M10 14v4"></svg:path>
+    <svg:path d="M14 14v4"></svg:path>
+    <svg:path d="M18 14v4"></svg:path>`,
 })
 export class LucidePiano {
-  readonly class = input('lucide lucide-piano');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

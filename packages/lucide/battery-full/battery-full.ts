@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideBatteryFull],svg[lucide-battery-full]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,21 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="16" height="10" x="2" y="7" rx="2" ry="2" />
-    <svg:line x1="22" x2="22" y1="11" y2="13" />
-    <svg:line x1="6" x2="6" y1="11" y2="13" />
-    <svg:line x1="10" x2="10" y1="11" y2="13" />
-    <svg:line x1="14" x2="14" y1="11" y2="13" />
-  `,
+  template: `<svg:rect
+      width="16"
+      height="10"
+      x="2"
+      y="7"
+      rx="2"
+      ry="2"
+    ></svg:rect>
+    <svg:line x1="22" x2="22" y1="11" y2="13"></svg:line>
+    <svg:line x1="6" x2="6" y1="11" y2="13"></svg:line>
+    <svg:line x1="10" x2="10" y1="11" y2="13"></svg:line>
+    <svg:line x1="14" x2="14" y1="11" y2="13"></svg:line>`,
 })
 export class LucideBatteryFull {
-  readonly class = input('lucide lucide-battery-full');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideScale3d],svg[lucide-scale-3d]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M5 7v11a1 1 0 0 0 1 1h11" />
-    <svg:path d="M5.293 18.707 11 13" />
-    <svg:circle cx="19" cy="19" r="2" />
-    <svg:circle cx="5" cy="5" r="2" />
-  `,
+  template: `<svg:path d="M5 7v11a1 1 0 0 0 1 1h11"></svg:path>
+    <svg:path d="M5.293 18.707 11 13"></svg:path>
+    <svg:circle cx="19" cy="19" r="2"></svg:circle>
+    <svg:circle cx="5" cy="5" r="2"></svg:circle>`,
 })
 export class LucideScale3d {
-  readonly class = input('lucide lucide-scale-3d');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

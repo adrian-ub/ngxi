@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideMessageSquareOff],svg[lucide-message-square-off]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M21 15V5a2 2 0 0 0-2-2H9" />
-    <svg:path d="m2 2 20 20" />
-    <svg:path d="M3.6 3.6c-.4.3-.6.8-.6 1.4v16l4-4h10" />
-  `,
+  template: `<svg:path d="M21 15V5a2 2 0 0 0-2-2H9"></svg:path>
+    <svg:path d="m2 2 20 20"></svg:path>
+    <svg:path d="M3.6 3.6c-.4.3-.6.8-.6 1.4v16l4-4h10"></svg:path>`,
 })
 export class LucideMessageSquareOff {
-  readonly class = input('lucide lucide-message-square-off');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

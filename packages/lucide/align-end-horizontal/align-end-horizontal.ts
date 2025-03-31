@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideAlignEndHorizontal],svg[lucide-align-end-horizontal]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="6" height="16" x="4" y="2" rx="2" />
-    <svg:rect width="6" height="9" x="14" y="9" rx="2" />
-    <svg:path d="M22 22H2" />
-  `,
+  template: `<svg:rect width="6" height="16" x="4" y="2" rx="2"></svg:rect>
+    <svg:rect width="6" height="9" x="14" y="9" rx="2"></svg:rect>
+    <svg:path d="M22 22H2"></svg:path>`,
 })
 export class LucideAlignEndHorizontal {
-  readonly class = input('lucide lucide-align-end-horizontal');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

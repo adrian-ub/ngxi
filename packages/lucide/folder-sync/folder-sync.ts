@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideFolderSync],svg[lucide-folder-sync]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,21 +13,16 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path
+  template: `<svg:path
       d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v.5"
-    />
-    <svg:path d="M12 10v4h4" />
-    <svg:path d="m12 14 1.535-1.605a5 5 0 0 1 8 1.5" />
-    <svg:path d="M22 22v-4h-4" />
-    <svg:path d="m22 18-1.535 1.605a5 5 0 0 1-8-1.5" />
-  `,
+    ></svg:path>
+    <svg:path d="M12 10v4h4"></svg:path>
+    <svg:path d="m12 14 1.535-1.605a5 5 0 0 1 8 1.5"></svg:path>
+    <svg:path d="M22 22v-4h-4"></svg:path>
+    <svg:path d="m22 18-1.535 1.605a5 5 0 0 1-8-1.5"></svg:path>`,
 })
 export class LucideFolderSync {
-  readonly class = input('lucide lucide-folder-sync');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

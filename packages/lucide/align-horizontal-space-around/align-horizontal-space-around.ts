@@ -6,11 +6,7 @@ import { Component, input } from '@angular/core';
     'svg[lucideAlignHorizontalSpaceAround],svg[lucide-align-horizontal-space-around]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -18,17 +14,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="6" height="10" x="9" y="7" rx="2" />
-    <svg:path d="M4 22V2" />
-    <svg:path d="M20 22V2" />
-  `,
+  template: `<svg:rect width="6" height="10" x="9" y="7" rx="2"></svg:rect>
+    <svg:path d="M4 22V2"></svg:path>
+    <svg:path d="M20 22V2"></svg:path>`,
 })
 export class LucideAlignHorizontalSpaceAround {
-  readonly class = input('lucide lucide-align-horizontal-space-around');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

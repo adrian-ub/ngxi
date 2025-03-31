@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideGitFork],svg[lucide-git-fork]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="12" cy="18" r="3" />
-    <svg:circle cx="6" cy="6" r="3" />
-    <svg:circle cx="18" cy="6" r="3" />
-    <svg:path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9" />
-    <svg:path d="M12 12v3" />
-  `,
+  template: `<svg:circle cx="12" cy="18" r="3"></svg:circle>
+    <svg:circle cx="6" cy="6" r="3"></svg:circle>
+    <svg:circle cx="18" cy="6" r="3"></svg:circle>
+    <svg:path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></svg:path>
+    <svg:path d="M12 12v3"></svg:path>`,
 })
 export class LucideGitFork {
-  readonly class = input('lucide lucide-git-fork');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

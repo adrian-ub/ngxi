@@ -6,11 +6,7 @@ import { Component, input } from '@angular/core';
     'svg[lucideAlignVerticalJustifyCenter],svg[lucide-align-vertical-justify-center]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -18,17 +14,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="14" height="6" x="5" y="16" rx="2" />
-    <svg:rect width="10" height="6" x="7" y="2" rx="2" />
-    <svg:path d="M2 12h20" />
-  `,
+  template: `<svg:rect width="14" height="6" x="5" y="16" rx="2"></svg:rect>
+    <svg:rect width="10" height="6" x="7" y="2" rx="2"></svg:rect>
+    <svg:path d="M2 12h20"></svg:path>`,
 })
 export class LucideAlignVerticalJustifyCenter {
-  readonly class = input('lucide lucide-align-vertical-justify-center');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

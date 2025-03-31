@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideNotebookTabs],svg[lucide-notebook-tabs]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,23 +13,18 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M2 6h4" />
-    <svg:path d="M2 10h4" />
-    <svg:path d="M2 14h4" />
-    <svg:path d="M2 18h4" />
-    <svg:rect width="16" height="20" x="4" y="2" rx="2" />
-    <svg:path d="M15 2v20" />
-    <svg:path d="M15 7h5" />
-    <svg:path d="M15 12h5" />
-    <svg:path d="M15 17h5" />
-  `,
+  template: `<svg:path d="M2 6h4"></svg:path>
+    <svg:path d="M2 10h4"></svg:path>
+    <svg:path d="M2 14h4"></svg:path>
+    <svg:path d="M2 18h4"></svg:path>
+    <svg:rect width="16" height="20" x="4" y="2" rx="2"></svg:rect>
+    <svg:path d="M15 2v20"></svg:path>
+    <svg:path d="M15 7h5"></svg:path>
+    <svg:path d="M15 12h5"></svg:path>
+    <svg:path d="M15 17h5"></svg:path>`,
 })
 export class LucideNotebookTabs {
-  readonly class = input('lucide lucide-notebook-tabs');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

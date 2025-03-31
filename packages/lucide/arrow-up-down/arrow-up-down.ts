@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideArrowUpDown],svg[lucide-arrow-up-down]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m21 16-4 4-4-4" />
-    <svg:path d="M17 20V4" />
-    <svg:path d="m3 8 4-4 4 4" />
-    <svg:path d="M7 4v16" />
-  `,
+  template: `<svg:path d="m21 16-4 4-4-4"></svg:path>
+    <svg:path d="M17 20V4"></svg:path>
+    <svg:path d="m3 8 4-4 4 4"></svg:path>
+    <svg:path d="M7 4v16"></svg:path>`,
 })
 export class LucideArrowUpDown {
-  readonly class = input('lucide lucide-arrow-up-down');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

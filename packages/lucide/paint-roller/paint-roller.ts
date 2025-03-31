@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucidePaintRoller],svg[lucide-paint-roller]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="16" height="6" x="2" y="2" rx="2" />
-    <svg:path d="M10 16v-2a2 2 0 0 1 2-2h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
-    <svg:rect width="4" height="6" x="8" y="16" rx="1" />
-  `,
+  template: `<svg:rect width="16" height="6" x="2" y="2" rx="2"></svg:rect>
+    <svg:path
+      d="M10 16v-2a2 2 0 0 1 2-2h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"
+    ></svg:path>
+    <svg:rect width="4" height="6" x="8" y="16" rx="1"></svg:rect>`,
 })
 export class LucidePaintRoller {
-  readonly class = input('lucide lucide-paint-roller');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

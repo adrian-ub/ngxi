@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideToyBrick],svg[lucide-toy-brick]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="18" height="12" x="3" y="8" rx="1" />
-    <svg:path d="M10 8V5c0-.6-.4-1-1-1H6a1 1 0 0 0-1 1v3" />
-    <svg:path d="M19 8V5c0-.6-.4-1-1-1h-3a1 1 0 0 0-1 1v3" />
-  `,
+  template: `<svg:rect width="18" height="12" x="3" y="8" rx="1"></svg:rect>
+    <svg:path d="M10 8V5c0-.6-.4-1-1-1H6a1 1 0 0 0-1 1v3"></svg:path>
+    <svg:path d="M19 8V5c0-.6-.4-1-1-1h-3a1 1 0 0 0-1 1v3"></svg:path>`,
 })
 export class LucideToyBrick {
-  readonly class = input('lucide lucide-toy-brick');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

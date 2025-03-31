@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideWebcam],svg[lucide-webcam]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="12" cy="10" r="8" />
-    <svg:circle cx="12" cy="10" r="3" />
-    <svg:path d="M7 22h10" />
-    <svg:path d="M12 22v-4" />
-  `,
+  template: `<svg:circle cx="12" cy="10" r="8"></svg:circle>
+    <svg:circle cx="12" cy="10" r="3"></svg:circle>
+    <svg:path d="M7 22h10"></svg:path>
+    <svg:path d="M12 22v-4"></svg:path>`,
 })
 export class LucideWebcam {
-  readonly class = input('lucide lucide-webcam');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

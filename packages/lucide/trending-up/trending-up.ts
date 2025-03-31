@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideTrendingUp],svg[lucide-trending-up]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
-    <svg:polyline points="16 7 22 7 22 13" />
-  `,
+  template: `<svg:polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></svg:polyline>
+    <svg:polyline points="16 7 22 7 22 13"></svg:polyline>`,
 })
 export class LucideTrendingUp {
-  readonly class = input('lucide lucide-trending-up');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

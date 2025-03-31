@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideCopyleft],svg[lucide-copyleft]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="12" cy="12" r="10" />
-    <svg:path d="M9.17 14.83a4 4 0 1 0 0-5.66" />
-  `,
+  template: `<svg:circle cx="12" cy="12" r="10"></svg:circle>
+    <svg:path d="M9.17 14.83a4 4 0 1 0 0-5.66"></svg:path>`,
 })
 export class LucideCopyleft {
-  readonly class = input('lucide lucide-copyleft');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

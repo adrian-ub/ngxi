@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSprayCan],svg[lucide-spray-can]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,24 +13,21 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M3 3h.01" />
-    <svg:path d="M7 5h.01" />
-    <svg:path d="M11 7h.01" />
-    <svg:path d="M3 7h.01" />
-    <svg:path d="M7 9h.01" />
-    <svg:path d="M3 11h.01" />
-    <svg:rect width="4" height="4" x="15" y="5" />
-    <svg:path d="m19 9 2 2v10c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1V11l2-2" />
-    <svg:path d="m13 14 8-2" />
-    <svg:path d="m13 19 8-2" />
-  `,
+  template: `<svg:path d="M3 3h.01"></svg:path>
+    <svg:path d="M7 5h.01"></svg:path>
+    <svg:path d="M11 7h.01"></svg:path>
+    <svg:path d="M3 7h.01"></svg:path>
+    <svg:path d="M7 9h.01"></svg:path>
+    <svg:path d="M3 11h.01"></svg:path>
+    <svg:rect width="4" height="4" x="15" y="5"></svg:rect>
+    <svg:path
+      d="m19 9 2 2v10c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1V11l2-2"
+    ></svg:path>
+    <svg:path d="m13 14 8-2"></svg:path>
+    <svg:path d="m13 19 8-2"></svg:path>`,
 })
 export class LucideSprayCan {
-  readonly class = input('lucide lucide-spray-can');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

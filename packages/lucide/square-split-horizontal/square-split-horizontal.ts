@@ -6,11 +6,7 @@ import { Component, input } from '@angular/core';
     'svg[lucideSquareSplitHorizontal],svg[lucide-square-split-horizontal]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -18,17 +14,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M8 19H5c-1 0-2-1-2-2V7c0-1 1-2 2-2h3" />
-    <svg:path d="M16 5h3c1 0 2 1 2 2v10c0 1-1 2-2 2h-3" />
-    <svg:line x1="12" x2="12" y1="4" y2="20" />
-  `,
+  template: `<svg:path d="M8 19H5c-1 0-2-1-2-2V7c0-1 1-2 2-2h3"></svg:path>
+    <svg:path d="M16 5h3c1 0 2 1 2 2v10c0 1-1 2-2 2h-3"></svg:path>
+    <svg:line x1="12" x2="12" y1="4" y2="20"></svg:line>`,
 })
 export class LucideSquareSplitHorizontal {
-  readonly class = input('lucide lucide-square-split-horizontal');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

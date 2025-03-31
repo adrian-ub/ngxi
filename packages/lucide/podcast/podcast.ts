@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucidePodcast],svg[lucide-podcast]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M16.85 18.58a9 9 0 1 0-9.7 0" />
-    <svg:path d="M8 14a5 5 0 1 1 8 0" />
-    <svg:circle cx="12" cy="11" r="1" />
-    <svg:path d="M13 17a1 1 0 1 0-2 0l.5 4.5a.5.5 0 1 0 1 0Z" />
-  `,
+  template: `<svg:path d="M16.85 18.58a9 9 0 1 0-9.7 0"></svg:path>
+    <svg:path d="M8 14a5 5 0 1 1 8 0"></svg:path>
+    <svg:circle cx="12" cy="11" r="1"></svg:circle>
+    <svg:path d="M13 17a1 1 0 1 0-2 0l.5 4.5a.5.5 0 1 0 1 0Z"></svg:path>`,
 })
 export class LucidePodcast {
-  readonly class = input('lucide lucide-podcast');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

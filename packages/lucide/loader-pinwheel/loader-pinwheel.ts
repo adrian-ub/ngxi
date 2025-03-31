@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideLoaderPinwheel],svg[lucide-loader-pinwheel]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M22 12a1 1 0 0 1-10 0 1 1 0 0 0-10 0" />
-    <svg:path d="M7 20.7a1 1 0 1 1 5-8.7 1 1 0 1 0 5-8.6" />
-    <svg:path d="M7 3.3a1 1 0 1 1 5 8.6 1 1 0 1 0 5 8.6" />
-    <svg:circle cx="12" cy="12" r="10" />
-  `,
+  template: `<svg:path d="M22 12a1 1 0 0 1-10 0 1 1 0 0 0-10 0"></svg:path>
+    <svg:path d="M7 20.7a1 1 0 1 1 5-8.7 1 1 0 1 0 5-8.6"></svg:path>
+    <svg:path d="M7 3.3a1 1 0 1 1 5 8.6 1 1 0 1 0 5 8.6"></svg:path>
+    <svg:circle cx="12" cy="12" r="10"></svg:circle>`,
 })
 export class LucideLoaderPinwheel {
-  readonly class = input('lucide lucide-loader-pinwheel');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

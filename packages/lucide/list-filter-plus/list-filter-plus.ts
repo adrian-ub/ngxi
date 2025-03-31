@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideListFilterPlus],svg[lucide-list-filter-plus]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M10 18h4" />
-    <svg:path d="M11 6H3" />
-    <svg:path d="M15 6h6" />
-    <svg:path d="M18 9V3" />
-    <svg:path d="M7 12h8" />
-  `,
+  template: `<svg:path d="M10 18h4"></svg:path>
+    <svg:path d="M11 6H3"></svg:path>
+    <svg:path d="M15 6h6"></svg:path>
+    <svg:path d="M18 9V3"></svg:path>
+    <svg:path d="M7 12h8"></svg:path>`,
 })
 export class LucideListFilterPlus {
-  readonly class = input('lucide lucide-list-filter-plus');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

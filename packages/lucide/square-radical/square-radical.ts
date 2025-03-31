@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSquareRadical],svg[lucide-square-radical]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M7 12h2l2 5 2-10h4" />
-    <svg:rect x="3" y="3" width="18" height="18" rx="2" />
-  `,
+  template: `<svg:path d="M7 12h2l2 5 2-10h4"></svg:path>
+    <svg:rect x="3" y="3" width="18" height="18" rx="2"></svg:rect>`,
 })
 export class LucideSquareRadical {
-  readonly class = input('lucide lucide-square-radical');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

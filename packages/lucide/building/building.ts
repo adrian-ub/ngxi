@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideBuilding],svg[lucide-building]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,25 +13,27 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
-    <svg:path d="M9 22v-4h6v4" />
-    <svg:path d="M8 6h.01" />
-    <svg:path d="M16 6h.01" />
-    <svg:path d="M12 6h.01" />
-    <svg:path d="M12 10h.01" />
-    <svg:path d="M12 14h.01" />
-    <svg:path d="M16 10h.01" />
-    <svg:path d="M16 14h.01" />
-    <svg:path d="M8 10h.01" />
-    <svg:path d="M8 14h.01" />
-  `,
+  template: `<svg:rect
+      width="16"
+      height="20"
+      x="4"
+      y="2"
+      rx="2"
+      ry="2"
+    ></svg:rect>
+    <svg:path d="M9 22v-4h6v4"></svg:path>
+    <svg:path d="M8 6h.01"></svg:path>
+    <svg:path d="M16 6h.01"></svg:path>
+    <svg:path d="M12 6h.01"></svg:path>
+    <svg:path d="M12 10h.01"></svg:path>
+    <svg:path d="M12 14h.01"></svg:path>
+    <svg:path d="M16 10h.01"></svg:path>
+    <svg:path d="M16 14h.01"></svg:path>
+    <svg:path d="M8 10h.01"></svg:path>
+    <svg:path d="M8 14h.01"></svg:path>`,
 })
 export class LucideBuilding {
-  readonly class = input('lucide lucide-building');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

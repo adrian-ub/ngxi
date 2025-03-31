@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideAngry],svg[lucide-angry]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="12" cy="12" r="10" />
-    <svg:path d="M16 16s-1.5-2-4-2-4 2-4 2" />
-    <svg:path d="M7.5 8 10 9" />
-    <svg:path d="m14 9 2.5-1" />
-    <svg:path d="M9 10h.01" />
-    <svg:path d="M15 10h.01" />
-  `,
+  template: `<svg:circle cx="12" cy="12" r="10"></svg:circle>
+    <svg:path d="M16 16s-1.5-2-4-2-4 2-4 2"></svg:path>
+    <svg:path d="M7.5 8 10 9"></svg:path>
+    <svg:path d="m14 9 2.5-1"></svg:path>
+    <svg:path d="M9 10h.01"></svg:path>
+    <svg:path d="M15 10h.01"></svg:path>`,
 })
 export class LucideAngry {
-  readonly class = input('lucide lucide-angry');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

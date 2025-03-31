@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideTextCursor],svg[lucide-text-cursor]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M17 22h-1a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h1" />
-    <svg:path d="M7 22h1a4 4 0 0 0 4-4v-1" />
-    <svg:path d="M7 2h1a4 4 0 0 1 4 4v1" />
-  `,
+  template: `<svg:path d="M17 22h-1a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h1"></svg:path>
+    <svg:path d="M7 22h1a4 4 0 0 0 4-4v-1"></svg:path>
+    <svg:path d="M7 2h1a4 4 0 0 1 4 4v1"></svg:path>`,
 })
 export class LucideTextCursor {
-  readonly class = input('lucide lucide-text-cursor');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

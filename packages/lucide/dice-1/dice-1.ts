@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideDice1],svg[lucide-dice-1]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,18 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-    <svg:path d="M12 12h.01" />
-  `,
+  template: `<svg:rect
+      width="18"
+      height="18"
+      x="3"
+      y="3"
+      rx="2"
+      ry="2"
+    ></svg:rect>
+    <svg:path d="M12 12h.01"></svg:path>`,
 })
 export class LucideDice1 {
-  readonly class = input('lucide lucide-dice-1');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

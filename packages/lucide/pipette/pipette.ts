@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucidePipette],svg[lucide-pipette]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m2 22 1-1h3l9-9" />
-    <svg:path d="M3 21v-3l9-9" />
+  template: `<svg:path d="m2 22 1-1h3l9-9"></svg:path>
+    <svg:path d="M3 21v-3l9-9"></svg:path>
     <svg:path
       d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9l.4.4a2.1 2.1 0 1 1-3 3l-3.8-3.8a2.1 2.1 0 1 1 3-3l.4.4Z"
-    />
-  `,
+    ></svg:path>`,
 })
 export class LucidePipette {
-  readonly class = input('lucide lucide-pipette');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

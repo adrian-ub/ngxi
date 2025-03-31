@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideList],svg[lucide-list]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M3 12h.01" />
-    <svg:path d="M3 18h.01" />
-    <svg:path d="M3 6h.01" />
-    <svg:path d="M8 12h13" />
-    <svg:path d="M8 18h13" />
-    <svg:path d="M8 6h13" />
-  `,
+  template: `<svg:path d="M3 12h.01"></svg:path>
+    <svg:path d="M3 18h.01"></svg:path>
+    <svg:path d="M3 6h.01"></svg:path>
+    <svg:path d="M8 12h13"></svg:path>
+    <svg:path d="M8 18h13"></svg:path>
+    <svg:path d="M8 6h13"></svg:path>`,
 })
 export class LucideList {
-  readonly class = input('lucide lucide-list');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

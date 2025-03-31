@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideTowerControl],svg[lucide-tower-control]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,23 +13,18 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path
+  template: `<svg:path
       d="M18.2 12.27 20 6H4l1.8 6.27a1 1 0 0 0 .95.73h10.5a1 1 0 0 0 .96-.73Z"
-    />
-    <svg:path d="M8 13v9" />
-    <svg:path d="M16 22v-9" />
-    <svg:path d="m9 6 1 7" />
-    <svg:path d="m15 6-1 7" />
-    <svg:path d="M12 6V2" />
-    <svg:path d="M13 2h-2" />
-  `,
+    ></svg:path>
+    <svg:path d="M8 13v9"></svg:path>
+    <svg:path d="M16 22v-9"></svg:path>
+    <svg:path d="m9 6 1 7"></svg:path>
+    <svg:path d="m15 6-1 7"></svg:path>
+    <svg:path d="M12 6V2"></svg:path>
+    <svg:path d="M13 2h-2"></svg:path>`,
 })
 export class LucideTowerControl {
-  readonly class = input('lucide lucide-tower-control');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

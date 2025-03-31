@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideAsterisk],svg[lucide-asterisk]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M12 6v12" />
-    <svg:path d="M17.196 9 6.804 15" />
-    <svg:path d="m6.804 9 10.392 6" />
-  `,
+  template: `<svg:path d="M12 6v12"></svg:path>
+    <svg:path d="M17.196 9 6.804 15"></svg:path>
+    <svg:path d="m6.804 9 10.392 6"></svg:path>`,
 })
 export class LucideAsterisk {
-  readonly class = input('lucide lucide-asterisk');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

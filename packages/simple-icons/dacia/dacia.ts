@@ -5,15 +5,17 @@ import { Component, input } from '@angular/core';
   selector: 'svg[siDacia],svg[si-dacia]',
   host: {
     role: 'img',
+    '[attr.role]': 'role()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.xmlns]': 'xmlns()',
   },
   template: `<svg:title>Dacia</svg:title>
     <svg:path
       d="M0 8.646v2.23h8.252v2.248H0v2.23h9.112a.62.62 0 00.489-.201L12 12.819l2.399 2.334a.62.62 0 00.49.201H24v-2.23h-8.252v-2.248H24v-2.23h-9.112a.62.62 0 00-.489.201L12 11.181 9.601 8.847a.62.62 0 00-.49-.201Z"
-    />`,
+    ></svg:path>`,
 })
 export class SiDacia {
+  readonly role = input('img');
   readonly viewBox = input('0 0 24 24');
   readonly xmlns = input('http://www.w3.org/2000/svg');
 }

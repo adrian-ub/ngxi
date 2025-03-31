@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSmilePlus],svg[lucide-smile-plus]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,20 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M22 11v1a10 10 0 1 1-9-10" />
-    <svg:path d="M8 14s1.5 2 4 2 4-2 4-2" />
-    <svg:line x1="9" x2="9.01" y1="9" y2="9" />
-    <svg:line x1="15" x2="15.01" y1="9" y2="9" />
-    <svg:path d="M16 5h6" />
-    <svg:path d="M19 2v6" />
-  `,
+  template: `<svg:path d="M22 11v1a10 10 0 1 1-9-10"></svg:path>
+    <svg:path d="M8 14s1.5 2 4 2 4-2 4-2"></svg:path>
+    <svg:line x1="9" x2="9.01" y1="9" y2="9"></svg:line>
+    <svg:line x1="15" x2="15.01" y1="9" y2="9"></svg:line>
+    <svg:path d="M16 5h6"></svg:path>
+    <svg:path d="M19 2v6"></svg:path>`,
 })
 export class LucideSmilePlus {
-  readonly class = input('lucide lucide-smile-plus');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

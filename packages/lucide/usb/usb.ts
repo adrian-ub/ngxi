@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideUsb],svg[lucide-usb]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,21 +13,16 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="10" cy="7" r="1" />
-    <svg:circle cx="4" cy="20" r="1" />
-    <svg:path d="M4.7 19.3 19 5" />
-    <svg:path d="m21 3-3 1 2 2Z" />
-    <svg:path d="M9.26 7.68 5 12l2 5" />
-    <svg:path d="m10 14 5 2 3.5-3.5" />
-    <svg:path d="m18 12 1-1 1 1-1 1Z" />
-  `,
+  template: `<svg:circle cx="10" cy="7" r="1"></svg:circle>
+    <svg:circle cx="4" cy="20" r="1"></svg:circle>
+    <svg:path d="M4.7 19.3 19 5"></svg:path>
+    <svg:path d="m21 3-3 1 2 2Z"></svg:path>
+    <svg:path d="M9.26 7.68 5 12l2 5"></svg:path>
+    <svg:path d="m10 14 5 2 3.5-3.5"></svg:path>
+    <svg:path d="m18 12 1-1 1 1-1 1Z"></svg:path>`,
 })
 export class LucideUsb {
-  readonly class = input('lucide lucide-usb');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

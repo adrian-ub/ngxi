@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideKeyboard],svg[lucide-keyboard]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,23 +13,18 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M10 8h.01" />
-    <svg:path d="M12 12h.01" />
-    <svg:path d="M14 8h.01" />
-    <svg:path d="M16 12h.01" />
-    <svg:path d="M18 8h.01" />
-    <svg:path d="M6 8h.01" />
-    <svg:path d="M7 16h10" />
-    <svg:path d="M8 12h.01" />
-    <svg:rect width="20" height="16" x="2" y="4" rx="2" />
-  `,
+  template: `<svg:path d="M10 8h.01"></svg:path>
+    <svg:path d="M12 12h.01"></svg:path>
+    <svg:path d="M14 8h.01"></svg:path>
+    <svg:path d="M16 12h.01"></svg:path>
+    <svg:path d="M18 8h.01"></svg:path>
+    <svg:path d="M6 8h.01"></svg:path>
+    <svg:path d="M7 16h10"></svg:path>
+    <svg:path d="M8 12h.01"></svg:path>
+    <svg:rect width="20" height="16" x="2" y="4" rx="2"></svg:rect>`,
 })
 export class LucideKeyboard {
-  readonly class = input('lucide lucide-keyboard');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

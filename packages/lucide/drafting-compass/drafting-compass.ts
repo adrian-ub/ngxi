@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideDraftingCompass],svg[lucide-drafting-compass]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m12.99 6.74 1.93 3.44" />
-    <svg:path d="M19.136 12a10 10 0 0 1-14.271 0" />
-    <svg:path d="m21 21-2.16-3.84" />
-    <svg:path d="m3 21 8.02-14.26" />
-    <svg:circle cx="12" cy="5" r="2" />
-  `,
+  template: `<svg:path d="m12.99 6.74 1.93 3.44"></svg:path>
+    <svg:path d="M19.136 12a10 10 0 0 1-14.271 0"></svg:path>
+    <svg:path d="m21 21-2.16-3.84"></svg:path>
+    <svg:path d="m3 21 8.02-14.26"></svg:path>
+    <svg:circle cx="12" cy="5" r="2"></svg:circle>`,
 })
 export class LucideDraftingCompass {
-  readonly class = input('lucide lucide-drafting-compass');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

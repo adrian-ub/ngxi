@@ -6,11 +6,7 @@ import { Component, input } from '@angular/core';
     'svg[lucideAlignHorizontalSpaceBetween],svg[lucide-align-horizontal-space-between]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -18,18 +14,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="6" height="14" x="3" y="5" rx="2" />
-    <svg:rect width="6" height="10" x="15" y="7" rx="2" />
-    <svg:path d="M3 2v20" />
-    <svg:path d="M21 2v20" />
-  `,
+  template: `<svg:rect width="6" height="14" x="3" y="5" rx="2"></svg:rect>
+    <svg:rect width="6" height="10" x="15" y="7" rx="2"></svg:rect>
+    <svg:path d="M3 2v20"></svg:path>
+    <svg:path d="M21 2v20"></svg:path>`,
 })
 export class LucideAlignHorizontalSpaceBetween {
-  readonly class = input('lucide lucide-align-horizontal-space-between');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

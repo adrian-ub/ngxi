@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideVoicemail],svg[lucide-voicemail]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="6" cy="12" r="4" />
-    <svg:circle cx="18" cy="12" r="4" />
-    <svg:line x1="6" x2="18" y1="16" y2="16" />
-  `,
+  template: `<svg:circle cx="6" cy="12" r="4"></svg:circle>
+    <svg:circle cx="18" cy="12" r="4"></svg:circle>
+    <svg:line x1="6" x2="18" y1="16" y2="16"></svg:line>`,
 })
 export class LucideVoicemail {
-  readonly class = input('lucide lucide-voicemail');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

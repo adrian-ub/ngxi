@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideGrid3x3],svg[lucide-grid-3x3]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,14 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="18" height="18" x="3" y="3" rx="2" />
-    <svg:path d="M3 9h18" />
-    <svg:path d="M3 15h18" />
-    <svg:path d="M9 3v18" />
-    <svg:path d="M15 3v18" />
-  `,
+  template: `<svg:rect width="18" height="18" x="3" y="3" rx="2"></svg:rect>
+    <svg:path d="M3 9h18"></svg:path>
+    <svg:path d="M3 15h18"></svg:path>
+    <svg:path d="M9 3v18"></svg:path>
+    <svg:path d="M15 3v18"></svg:path>`,
 })
 export class LucideGrid3x3 {
-  readonly class = input('lucide lucide-grid-3x3');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

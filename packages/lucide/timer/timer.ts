@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideTimer],svg[lucide-timer]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:line x1="10" x2="14" y1="2" y2="2" />
-    <svg:line x1="12" x2="15" y1="14" y2="11" />
-    <svg:circle cx="12" cy="14" r="8" />
-  `,
+  template: `<svg:line x1="10" x2="14" y1="2" y2="2"></svg:line>
+    <svg:line x1="12" x2="15" y1="14" y2="11"></svg:line>
+    <svg:circle cx="12" cy="14" r="8"></svg:circle>`,
 })
 export class LucideTimer {
-  readonly class = input('lucide lucide-timer');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

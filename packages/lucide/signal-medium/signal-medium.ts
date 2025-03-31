@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSignalMedium],svg[lucide-signal-medium]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M2 20h.01" />
-    <svg:path d="M7 20v-4" />
-    <svg:path d="M12 20v-8" />
-  `,
+  template: `<svg:path d="M2 20h.01"></svg:path>
+    <svg:path d="M7 20v-4"></svg:path>
+    <svg:path d="M12 20v-8"></svg:path>`,
 })
 export class LucideSignalMedium {
-  readonly class = input('lucide lucide-signal-medium');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

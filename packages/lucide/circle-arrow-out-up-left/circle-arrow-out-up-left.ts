@@ -6,11 +6,7 @@ import { Component, input } from '@angular/core';
     'svg[lucideCircleArrowOutUpLeft],svg[lucide-circle-arrow-out-up-left]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -18,17 +14,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M2 8V2h6" />
-    <svg:path d="m2 2 10 10" />
-    <svg:path d="M12 2A10 10 0 1 1 2 12" />
-  `,
+  template: `<svg:path d="M2 8V2h6"></svg:path>
+    <svg:path d="m2 2 10 10"></svg:path>
+    <svg:path d="M12 2A10 10 0 1 1 2 12"></svg:path>`,
 })
 export class LucideCircleArrowOutUpLeft {
-  readonly class = input('lucide lucide-circle-arrow-out-up-left');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

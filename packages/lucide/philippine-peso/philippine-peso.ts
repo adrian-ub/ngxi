@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucidePhilippinePeso],svg[lucide-philippine-peso]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M20 11H4" />
-    <svg:path d="M20 7H4" />
-    <svg:path d="M7 21V4a1 1 0 0 1 1-1h4a1 1 0 0 1 0 12H7" />
-  `,
+  template: `<svg:path d="M20 11H4"></svg:path>
+    <svg:path d="M20 7H4"></svg:path>
+    <svg:path d="M7 21V4a1 1 0 0 1 1-1h4a1 1 0 0 1 0 12H7"></svg:path>`,
 })
 export class LucidePhilippinePeso {
-  readonly class = input('lucide lucide-philippine-peso');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

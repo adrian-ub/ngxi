@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSearchCode],svg[lucide-search-code]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="m13 13.5 2-2.5-2-2.5" />
-    <svg:path d="m21 21-4.3-4.3" />
-    <svg:path d="M9 8.5 7 11l2 2.5" />
-    <svg:circle cx="11" cy="11" r="8" />
-  `,
+  template: `<svg:path d="m13 13.5 2-2.5-2-2.5"></svg:path>
+    <svg:path d="m21 21-4.3-4.3"></svg:path>
+    <svg:path d="M9 8.5 7 11l2 2.5"></svg:path>
+    <svg:circle cx="11" cy="11" r="8"></svg:circle>`,
 })
 export class LucideSearchCode {
-  readonly class = input('lucide lucide-search-code');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

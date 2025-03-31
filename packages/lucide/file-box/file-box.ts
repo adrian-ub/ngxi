@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideFileBox],svg[lucide-file-box]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,21 +13,18 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M14.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4" />
-    <svg:path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  template: `<svg:path
+      d="M14.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4"
+    ></svg:path>
+    <svg:path d="M14 2v4a2 2 0 0 0 2 2h4"></svg:path>
     <svg:path
       d="M3 13.1a2 2 0 0 0-1 1.76v3.24a2 2 0 0 0 .97 1.78L6 21.7a2 2 0 0 0 2.03.01L11 19.9a2 2 0 0 0 1-1.76V14.9a2 2 0 0 0-.97-1.78L8 11.3a2 2 0 0 0-2.03-.01Z"
-    />
-    <svg:path d="M7 17v5" />
-    <svg:path d="M11.7 14.2 7 17l-4.7-2.8" />
-  `,
+    ></svg:path>
+    <svg:path d="M7 17v5"></svg:path>
+    <svg:path d="M11.7 14.2 7 17l-4.7-2.8"></svg:path>`,
 })
 export class LucideFileBox {
-  readonly class = input('lucide lucide-file-box');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

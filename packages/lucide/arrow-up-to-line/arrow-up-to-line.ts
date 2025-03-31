@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideArrowUpToLine],svg[lucide-arrow-up-to-line]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M5 3h14" />
-    <svg:path d="m18 13-6-6-6 6" />
-    <svg:path d="M12 7v14" />
-  `,
+  template: `<svg:path d="M5 3h14"></svg:path>
+    <svg:path d="m18 13-6-6-6 6"></svg:path>
+    <svg:path d="M12 7v14"></svg:path>`,
 })
 export class LucideArrowUpToLine {
-  readonly class = input('lucide lucide-arrow-up-to-line');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

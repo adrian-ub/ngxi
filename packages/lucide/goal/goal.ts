@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideGoal],svg[lucide-goal]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M12 13V2l8 4-8 4" />
-    <svg:path d="M20.561 10.222a9 9 0 1 1-12.55-5.29" />
-    <svg:path d="M8.002 9.997a5 5 0 1 0 8.9 2.02" />
-  `,
+  template: `<svg:path d="M12 13V2l8 4-8 4"></svg:path>
+    <svg:path d="M20.561 10.222a9 9 0 1 1-12.55-5.29"></svg:path>
+    <svg:path d="M8.002 9.997a5 5 0 1 0 8.9 2.02"></svg:path>`,
 })
 export class LucideGoal {
-  readonly class = input('lucide lucide-goal');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

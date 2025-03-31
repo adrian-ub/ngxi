@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideClipboardCopy],svg[lucide-clipboard-copy]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,19 +13,23 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-    <svg:path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
-    <svg:path d="M16 4h2a2 2 0 0 1 2 2v4" />
-    <svg:path d="M21 14H11" />
-    <svg:path d="m15 10-4 4 4 4" />
-  `,
+  template: `<svg:rect
+      width="8"
+      height="4"
+      x="8"
+      y="2"
+      rx="1"
+      ry="1"
+    ></svg:rect>
+    <svg:path
+      d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
+    ></svg:path>
+    <svg:path d="M16 4h2a2 2 0 0 1 2 2v4"></svg:path>
+    <svg:path d="M21 14H11"></svg:path>
+    <svg:path d="m15 10-4 4 4 4"></svg:path>`,
 })
 export class LucideClipboardCopy {
-  readonly class = input('lucide lucide-clipboard-copy');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

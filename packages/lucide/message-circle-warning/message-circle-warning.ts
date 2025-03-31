@@ -6,11 +6,7 @@ import { Component, input } from '@angular/core';
     'svg[lucideMessageCircleWarning],svg[lucide-message-circle-warning]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -18,17 +14,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
-    <svg:path d="M12 8v4" />
-    <svg:path d="M12 16h.01" />
-  `,
+  template: `<svg:path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></svg:path>
+    <svg:path d="M12 8v4"></svg:path>
+    <svg:path d="M12 16h.01"></svg:path>`,
 })
 export class LucideMessageCircleWarning {
-  readonly class = input('lucide lucide-message-circle-warning');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

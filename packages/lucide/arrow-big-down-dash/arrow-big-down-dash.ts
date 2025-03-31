@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideArrowBigDownDash],svg[lucide-arrow-big-down-dash]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:path d="M15 5H9" />
-    <svg:path d="M15 9v3h4l-7 7-7-7h4V9z" />
-  `,
+  template: `<svg:path d="M15 5H9"></svg:path>
+    <svg:path d="M15 9v3h4l-7 7-7-7h4V9z"></svg:path>`,
 })
 export class LucideArrowBigDownDash {
-  readonly class = input('lucide lucide-arrow-big-down-dash');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideRatio],svg[lucide-ratio]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,16 +13,11 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:rect width="12" height="20" x="6" y="2" rx="2" />
-    <svg:rect width="20" height="12" x="2" y="6" rx="2" />
-  `,
+  template: `<svg:rect width="12" height="20" x="6" y="2" rx="2"></svg:rect>
+    <svg:rect width="20" height="12" x="2" y="6" rx="2"></svg:rect>`,
 })
 export class LucideRatio {
-  readonly class = input('lucide lucide-ratio');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

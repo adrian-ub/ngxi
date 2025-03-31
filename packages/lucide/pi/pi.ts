@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucidePi],svg[lucide-pi]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,17 +13,12 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:line x1="9" x2="9" y1="4" y2="20" />
-    <svg:path d="M4 7c0-1.7 1.3-3 3-3h13" />
-    <svg:path d="M18 20c-1.7 0-3-1.3-3-3V4" />
-  `,
+  template: `<svg:line x1="9" x2="9" y1="4" y2="20"></svg:line>
+    <svg:path d="M4 7c0-1.7 1.3-3 3-3h13"></svg:path>
+    <svg:path d="M18 20c-1.7 0-3-1.3-3-3V4"></svg:path>`,
 })
 export class LucidePi {
-  readonly class = input('lucide lucide-pi');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

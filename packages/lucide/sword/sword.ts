@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideSword],svg[lucide-sword]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,15 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
-    <svg:line x1="13" x2="19" y1="19" y2="13" />
-    <svg:line x1="16" x2="20" y1="16" y2="20" />
-    <svg:line x1="19" x2="21" y1="21" y2="19" />
-  `,
+  template: `<svg:polyline
+      points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"
+    ></svg:polyline>
+    <svg:line x1="13" x2="19" y1="19" y2="13"></svg:line>
+    <svg:line x1="16" x2="20" y1="16" y2="20"></svg:line>
+    <svg:line x1="19" x2="21" y1="21" y2="19"></svg:line>`,
 })
 export class LucideSword {
-  readonly class = input('lucide lucide-sword');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

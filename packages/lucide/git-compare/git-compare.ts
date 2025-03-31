@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideGitCompare],svg[lucide-git-compare]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:circle cx="18" cy="18" r="3" />
-    <svg:circle cx="6" cy="6" r="3" />
-    <svg:path d="M13 6h3a2 2 0 0 1 2 2v7" />
-    <svg:path d="M11 18H8a2 2 0 0 1-2-2V9" />
-  `,
+  template: `<svg:circle cx="18" cy="18" r="3"></svg:circle>
+    <svg:circle cx="6" cy="6" r="3"></svg:circle>
+    <svg:path d="M13 6h3a2 2 0 0 1 2 2v7"></svg:path>
+    <svg:path d="M11 18H8a2 2 0 0 1-2-2V9"></svg:path>`,
 })
 export class LucideGitCompare {
-  readonly class = input('lucide lucide-git-compare');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');

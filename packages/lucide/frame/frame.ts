@@ -5,11 +5,7 @@ import { Component, input } from '@angular/core';
   selector: 'svg[lucideFrame],svg[lucide-frame]',
   host: {
     role: 'img',
-
-    '[attr.class]': 'class()',
     '[attr.xmlns]': 'xmlns()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.fill]': 'fill()',
     '[attr.stroke]': 'stroke()',
@@ -17,18 +13,13 @@ import { Component, input } from '@angular/core';
     '[attr.stroke-linecap]': 'strokeLinecap()',
     '[attr.stroke-linejoin]': 'strokeLinejoin()',
   },
-  template: `
-    <svg:line x1="22" x2="2" y1="6" y2="6" />
-    <svg:line x1="22" x2="2" y1="18" y2="18" />
-    <svg:line x1="6" x2="6" y1="2" y2="22" />
-    <svg:line x1="18" x2="18" y1="2" y2="22" />
-  `,
+  template: `<svg:line x1="22" x2="2" y1="6" y2="6"></svg:line>
+    <svg:line x1="22" x2="2" y1="18" y2="18"></svg:line>
+    <svg:line x1="6" x2="6" y1="2" y2="22"></svg:line>
+    <svg:line x1="18" x2="18" y1="2" y2="22"></svg:line>`,
 })
 export class LucideFrame {
-  readonly class = input('lucide lucide-frame');
   readonly xmlns = input('http://www.w3.org/2000/svg');
-  readonly width = input('24');
-  readonly height = input('24');
   readonly viewBox = input('0 0 24 24');
   readonly fill = input('none');
   readonly stroke = input('currentColor');
