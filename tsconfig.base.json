@@ -15,9 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ngxi/lucide": ["libs/lucide/index.ts"],
-      "@ngxi/scripts": ["scripts/src/index.ts"],
-      "@ngxi/simple-icons": ["libs/simple-icons/src/index.ts"]
+      "@ngxi/lucide": ["packages/lucide/index.ts"],
+      "@ngxi/simple-icons": ["packages/simple-icons/src/index.ts"],
+      "@ngxi/workspace-plugin": ["tools/workspace-plugin/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
