@@ -1,0 +1,19 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[<%= propertyName %>],svg[<%= name %>]',
+  host: {
+    role: 'img',<% svgAttributes.forEach(attr => { %>
+    '[attr.<%= attr.originalName %>]': '<%= attr.transformedName %>()',<% }); %>
+  },
+  template: `<%- svgContent %>`
+})
+export class <%= className %> {
+<% svgAttributes.forEach(attr => {
+  const aliasParam = attr.transformedName !== attr.originalName
+    ? `, { alias: "${attr.originalName}" }`
+    : '';
+%>
+  readonly <%= attr.transformedName %> = input("<%- attr.value %>"<%- aliasParam %>);<% }); %>
+}
