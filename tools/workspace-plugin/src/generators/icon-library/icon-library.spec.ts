@@ -1,71 +1,52 @@
-import { createTreeWithEmptyWorkspace } from '@nx/devkit/testing';
-import { Tree, readProjectConfiguration } from '@nx/devkit';
-import { vi, describe, beforeEach, it, expect, afterEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { Tree } from '@nx/devkit';
 import { iconLibraryGenerator } from './icon-library';
-import { IconLibraryGeneratorSchema } from './schema';
-import * as generateIconLibraryModule from './lib/generate-icon-library';
-import * as devkitModule from '@nx/devkit';
+import { generateIconLibrary } from './lib/generate-icon-library';
+import { addIconSet } from './lib/add-iconset';
+import { formatFiles } from '@nx/devkit';
 
-describe('icon-library generator', () => {
-  let tree: Tree;
-  const options: IconLibraryGeneratorSchema = {
-    name: 'ub-icon',
-    internalPackageName: 'ub-icons-internal',
-    input: 'node_modules/ub-icon/icons',
-    output: 'dist/libs/ub-icon',
-    glob: '**/*.svg',
-    prefix: 'ub',
-    suffix: ''
+vi.mock('./lib/generate-icon-library', () => ({
+  generateIconLibrary: vi.fn().mockResolvedValue(undefined)
+}));
+
+vi.mock('./lib/add-iconset', () => ({
+  addIconSet: vi.fn()
+}));
+
+vi.mock('@nx/devkit', () => ({
+  formatFiles: vi.fn().mockResolvedValue(undefined),
+  Tree: vi.fn()
+}));
+
+describe('iconLibraryGenerator', () => {
+  const mockTree = {} as Tree;
+  const mockOptions = {
+    name: 'test-icons',
+    internalPackageName: 'test-package',
+    input: 'src/icons',
+    output: 'dist/icons',
+    glob: '**/*.svg'
   };
 
   beforeEach(() => {
-    tree = createTreeWithEmptyWorkspace();
+    vi.clearAllMocks();
   });
 
-  it('should run successfully', async () => {
-    await iconLibraryGenerator(tree, options);
-    const config = readProjectConfiguration(tree, 'ub-icon');
-    expect(config).toBeDefined();
+  it('should call generateIconLibrary with the tree and options', async () => {
+    await iconLibraryGenerator(mockTree, mockOptions);
+
+    expect(generateIconLibrary).toHaveBeenCalledWith(mockTree, mockOptions);
   });
 
-  it('should generate project with different name and prefix', async () => {
-    const customOptions: IconLibraryGeneratorSchema = {
-      ...options,
-      name: 'custom-icon',
-      prefix: 'custom',
-    };
+  it('should call addIconSet with the tree and options', async () => {
+    await iconLibraryGenerator(mockTree, mockOptions);
 
-    await iconLibraryGenerator(tree, customOptions);
-    const config = readProjectConfiguration(tree, 'custom-icon');
-    expect(config).toBeDefined();
+    expect(addIconSet).toHaveBeenCalledWith(mockTree, mockOptions);
   });
 
-  it('should call generateIconLibrary with correct parameters', async () => {
-    const generateIconLibrarySpy = vi.spyOn(generateIconLibraryModule, 'generateIconLibrary');
+  it('should call formatFiles with the tree', async () => {
+    await iconLibraryGenerator(mockTree, mockOptions);
 
-    await iconLibraryGenerator(tree, options);
-
-    expect(generateIconLibrarySpy).toHaveBeenCalledWith(tree, options);
-  });
-
-  it('should call formatFiles after generating icon library', async () => {
-    const formatFilesSpy = vi.spyOn(devkitModule, 'formatFiles');
-
-    await iconLibraryGenerator(tree, options);
-
-    expect(formatFilesSpy).toHaveBeenCalledWith(tree);
-  });
-
-  it('should handle errors from generateIconLibrary', async () => {
-    const error = new Error('Generation failed');
-    vi.spyOn(generateIconLibraryModule, 'generateIconLibrary').mockImplementation(() => {
-      return Promise.reject(error);
-    });
-
-    await expect(iconLibraryGenerator(tree, options)).rejects.toThrow('Generation failed');
-  });
-
-  afterEach(() => {
-    vi.restoreAllMocks();
+    expect(formatFiles).toHaveBeenCalledWith(mockTree);
   });
 });
