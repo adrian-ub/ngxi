@@ -5,16 +5,6 @@
       "schema": "./src/generators/icon-library/schema.json",
       "description": "icon-library generator"
     },
-    "lucide": {
-      "factory": "./src/generators/lucide/lucide",
-      "schema": "./src/generators/lucide/schema.json",
-      "description": "lucide generator"
-    },
-    "simple-icons": {
-      "factory": "./src/generators/simple-icons/simple-icons",
-      "schema": "./src/generators/simple-icons/schema.json",
-      "description": "simple-icons generator"
-    },
     "svg-to-ts": {
       "factory": "./src/generators/svg-to-ts/svg-to-ts",
       "schema": "./src/generators/svg-to-ts/schema.json",
