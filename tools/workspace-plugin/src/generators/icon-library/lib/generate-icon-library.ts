@@ -27,14 +27,14 @@ export async function generateIconLibrary(tree: Tree, schema: IconLibraryGenerat
 
 
   tree.delete(`${libraryRoot}/src/lib`);
-  tree.write(`${libraryRoot}/src/index.ts`, '');
+  tree.delete(`${libraryRoot}/src/index.ts`);
+  tree.write(`${libraryRoot}/index.ts`, '');
 
   const gitHubRepositoryUrl = 'https://github.com/adrian-ub/ngxi';
   updateJson(tree, `${libraryRoot}/package.json`, (json) => {
     json = {
       ...json,
       peerDependencies: {
-        ...json.peerDependencies,
         '@angular/core': '^17.0.0 || ^18.0.0 || ^19.0.0',
       },
       publishConfig: {
@@ -51,6 +51,11 @@ export async function generateIconLibrary(tree: Tree, schema: IconLibraryGenerat
       bugs: `${gitHubRepositoryUrl}/issues`,
     }
 
+    return json;
+  });
+
+  updateJson(tree, `${libraryRoot}/project.json`, (json) => {
+    json.sourceRoot = libraryRoot;
     return json;
   });
 
