@@ -16,6 +16,7 @@ export type IconFiles = IconFile[];
 export interface Iconset {
   internalPackageName: string;
   files: IconFiles;
+  preCreation?: (tree?:Tree) => void | Promise<void>;
 }
 
 export interface SvgOptions {
