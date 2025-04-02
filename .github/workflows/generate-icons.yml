@@ -42,3 +42,5 @@ jobs:
           delete-branch: true
           committer: Adrián UB <22903142+adrian-ub@users.noreply.github.com>
           author: Adrián UB <22903142+adrian-ub@users.noreply.github.com>
+          labels: |
+            🚀 autorelease

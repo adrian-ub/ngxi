@@ -2,10 +2,12 @@ name: publish
 
 on:
   workflow_dispatch:
+  pull_request:
+    types: [closed]
 
 jobs:
   publish:
-    if: github.repository == 'adrian-ub/ngxi'
+    if: github.repository == 'adrian-ub/ngxi' && (github.event_name == 'workflow_dispatch' || (github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, '🚀 autorelease')))
     name: Publish to npm
     runs-on: ubuntu-latest
     permissions:
