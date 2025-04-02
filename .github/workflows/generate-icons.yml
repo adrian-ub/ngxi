@@ -1,0 +1,42 @@
+name: Generate icons
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm nx generate @ngxi/workspace-plugin:svg-to-ts
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.PAT_GITHUB }}
+          commit-message: "feat: update generated icons"
+          title: "feat: update generated icons"
+          body: "This PR updates the generated icons."
+          branch: update-icons
+          base: main
+          delete-branch: true
+          committer: Adrián UB <22903142+adrian-ub@users.noreply.github.com>
+          author: Adrián UB <22903142+adrian-ub@users.noreply.github.com>
