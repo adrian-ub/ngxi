@@ -1,5 +1,9 @@
 export interface IconLibraryGeneratorSchema {
   name: string;
-  prefix: string;
-  iconsSourcePath: string;
+  internalPackageName: string;
+  input: string;
+  output: string;
+  glob: string;
+  prefix?: string;
+  suffix?: string;
 }
