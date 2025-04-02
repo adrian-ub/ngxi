@@ -8,9 +8,9 @@ export const iconsets: Iconset[] = [
         input: 'node_modules/lucide-static/icons',
         output: '/',
         glob: '*.svg',
+        prefix: 'lucide',
       },
     ],
-    prefix: 'lucide',
   },
   {
     internalPackageName: 'simple-icons',
@@ -19,8 +19,8 @@ export const iconsets: Iconset[] = [
         input: 'node_modules/simple-icons/icons',
         output: '.',
         glob: '*.svg',
+        prefix: 'si',
       },
     ],
-    prefix: 'si',
   }
 ];
