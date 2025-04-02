@@ -57,14 +57,14 @@ function loadIconset(tree: Tree, iconset: Iconset) {
 
   for (const iconPath of allIconPaths) {
     const iconName = path.basename(iconPath, '.svg');
-    let svg = tree.read(iconPath, 'utf-8').toString();
-    svg = optimizeIcon(svg, iconset.svg, iconset.plugins);
-
     const fileConfig = iconPathToConfigMap.get(iconPath);
     if (!fileConfig) {
       logger.warn(`Could not find matching file configuration for icon: ${iconPath}`);
       continue;
     }
+
+    let svg = tree.read(iconPath, 'utf-8').toString();
+    svg = optimizeIcon(svg, fileConfig.svg, fileConfig.plugins);
 
     const relativePath = path.relative(fileConfig.input, path.dirname(iconPath));
     const newIconDir = path.join(relativePath, path.basename(iconPath, '.svg'));
@@ -89,6 +89,7 @@ function createIconset(tree: Tree, iconset: Iconset) {
   for (const iconName in icons) {
     const icon = icons[iconName];
     const outputPath = icon.fileConfig.output;
+    const fileConfig = icon.fileConfig;
 
     const $ = cheerio.load(icon.svg);
     const svgElement = $('svg');
@@ -108,7 +109,7 @@ function createIconset(tree: Tree, iconset: Iconset) {
       }
     );
 
-    const { propertyName, name, className } = names(`${iconset.prefix ? iconset.prefix + '-' : ''}${iconName}${iconset.suffix ? '-' + iconset.suffix : ''}`);
+    const { propertyName, name, className } = names(`${fileConfig.prefix ? fileConfig.prefix + '-' : ''}${iconName}${fileConfig.suffix ? '-' + fileConfig.suffix : ''}`);
 
     const targetDir = path.join(iconPackageSourceRoot, outputPath, icon.newIconDir);
 
