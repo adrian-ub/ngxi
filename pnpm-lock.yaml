@@ -144,6 +144,9 @@ importers:
       eslint-config-prettier:
         specifier: 10.1.1
         version: 10.1.1(eslint@9.23.0(jiti@2.4.2))
+      fast-npm-meta:
+        specifier: ^0.4.0
+        version: 0.4.0
       glob:
         specifier: ^11.0.1
         version: 11.0.1
@@ -4478,6 +4481,9 @@ packages:
 
   fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
+
+  fast-npm-meta@0.4.0:
+    resolution: {integrity: sha512-tKP+fcyuCje12xbOwfvF19Akk6sNa5mUfWG5yCzmMnVX3QQRxpW6xQDPdo59pIVLvwtgMogJSyHhy0OJZz2OPA==}
 
   fast-redact@3.5.0:
     resolution: {integrity: sha512-dwsoQlS7h9hMeYUq1W++23NDcBLV4KqONnITDV9DjfS3q1SgDGVrBdvvTLUotWtPSD7asWDV9/CmsZPy8Hf70A==}
@@ -13506,6 +13512,8 @@ snapshots:
   fast-json-stable-stringify@2.1.0: {}
 
   fast-levenshtein@2.0.6: {}
+
+  fast-npm-meta@0.4.0: {}
 
   fast-redact@3.5.0: {}
 
