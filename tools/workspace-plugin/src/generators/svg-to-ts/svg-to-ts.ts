@@ -138,6 +138,7 @@ function createIconset(tree: Tree, iconset: Iconset) {
 
 export async function svgToTsGenerator(tree: Tree) {
   for (const iconset of iconsets) {
+    await iconset.preCreation?.(tree);
     deleteIconSet(tree, iconset);
     createIconset(tree, iconset);
   }
