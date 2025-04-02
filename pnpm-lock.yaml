@@ -163,8 +163,8 @@ importers:
         specifier: latest
         version: 0.485.0
       lucide-static:
-        specifier: 0.485.0
-        version: 0.485.0
+        specifier: 0.487.0
+        version: 0.487.0
       ng-packagr:
         specifier: ~19.2.0
         version: 19.2.0(@angular/compiler-cli@19.2.4(@angular/compiler@19.2.4)(typescript@5.7.3))(tslib@2.8.1)(typescript@5.7.3)
@@ -181,8 +181,8 @@ importers:
         specifier: ^2.6.2
         version: 2.8.8
       simple-icons:
-        specifier: latest
-        version: 14.11.1
+        specifier: ^14.12.0
+        version: 14.12.0
       svgo:
         specifier: ^3.3.2
         version: 3.3.2
@@ -5679,8 +5679,8 @@ packages:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
 
-  lucide-static@0.485.0:
-    resolution: {integrity: sha512-9IU2xG3LK65tEAlJnxfL63Y8FyD7Le085fuXb0JEbEcGURoHCKLf8BBuSRcTEetQJWwt/38pjrEne7obTEAPuw==}
+  lucide-static@0.487.0:
+    resolution: {integrity: sha512-voCG76ciX9Ri74MN4THwJbKY6iLBEvtiaWUKJwd0nk+ff4X247GPlukxvgUzCgYHpejrHLNdiVjlT0xOIayMLQ==}
 
   lucide@0.485.0:
     resolution: {integrity: sha512-gHtED5mr/pFaw0shTgp80Cjgf6yp3Np0cVpL9aiken1XH0ZARcqU676ybDDqDJDJw4FETo0Kgs+5BMlFLu5vKw==}
@@ -7188,8 +7188,8 @@ packages:
     resolution: {integrity: sha512-ZpzWAFHIFqyFE56dXqgX/DkDRZdz+rRcjoIk/RQU4IX0wiCv1l8S7ZrXDHcCc+uaf+6o7w3h2l3g6GYG5TKN9Q==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  simple-icons@14.11.1:
-    resolution: {integrity: sha512-x4YmyosK22r+m+VK2ilRlrhJNtuIOgCHvVhUglJAvGIa18PlmQrGDIYGqDzYrqmgWB3yKz8Z1ZMSx/kZQSbLow==}
+  simple-icons@14.12.0:
+    resolution: {integrity: sha512-IlW4sFVSCq6bfVnxfdhGqU7NXGR39lwsLY8EiZSHfyIq4TO6tGaDxIgTZSthq/t7rfK1fzZVjKeKWaBe2Ep5lA==}
     engines: {node: '>=0.12.18'}
 
   sirv@3.0.1:
@@ -15035,7 +15035,7 @@ snapshots:
 
   lru-cache@7.18.3: {}
 
-  lucide-static@0.485.0: {}
+  lucide-static@0.487.0: {}
 
   lucide@0.485.0: {}
 
@@ -16600,7 +16600,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  simple-icons@14.11.1: {}
+  simple-icons@14.12.0: {}
 
   sirv@3.0.1:
     dependencies:
