@@ -95,9 +95,7 @@ function createIconset(tree: Tree, iconset: Iconset) {
       }));
 
     const componentName = names(
-      (fileConfig.prefix ? fileConfig.prefix + '-' : '') +
-      iconName +
-      (fileConfig.suffix ? '-' + fileConfig.suffix : '')
+      fileConfig.getIconName(iconName)
     );
 
     const targetDir = path.join(
