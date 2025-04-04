@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ngxi/heroicons": ["packages/heroicons/src/index.ts"],
       "@ngxi/lucide": ["packages/lucide/index.ts"],
       "@ngxi/simple-icons": ["packages/simple-icons/src/index.ts"],
       "@ngxi/workspace-plugin": ["tools/workspace-plugin/src/index.ts"]
