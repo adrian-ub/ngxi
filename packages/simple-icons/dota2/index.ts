@@ -1,1 +1,0 @@
-export * from './dota2';
