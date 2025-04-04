@@ -6,9 +6,9 @@ Currently, support the following libraries:
 
 | Package | Version | Downloads | Version Icons |
 | :-- | :-: | :-: | :-: |
-| `@ngxi/heroicons` | ![Ngxi Heroicons version][heroicons-ngxi-version-src] | ![Heroicons downloads][heroicons-ngxi-downloads-src] | ![Heroicons version][heroicons-internal-version-src] |
-| `@ngxi/lucide` | ![Ngxi Lucide version][lucide-ngxi-version-src] | ![Lucide downloads][lucide-ngxi-downloads-src] | ![Lucide version][lucide-internal-version-src] |
-| `@ngxi/simple-icons` | ![Ngxi Simple Icons version][simple-icons-ngxi-version-src] | ![Simple Icons downloads][simple-icons-ngxi-downloads-src] | ![Simple Icons version][simple-icons-internal-version-src] |
+| `@ngxi/heroicons` | [![Ngxi Heroicons version][heroicons-ngxi-version-src]][heroicons-ngxi-href] | ![Heroicons downloads][heroicons-ngxi-downloads-src] | ![Heroicons version][heroicons-internal-version-src] |
+| `@ngxi/lucide` | [![Ngxi Lucide version][lucide-ngxi-version-src]][lucide-ngxi-href] | ![Lucide downloads][lucide-ngxi-downloads-src] | ![Lucide version][lucide-internal-version-src] |
+| `@ngxi/simple-icons` | [![Ngxi Simple Icons version][simple-icons-ngxi-version-src]][simple-icons-ngxi-href] | ![Simple Icons downloads][simple-icons-ngxi-downloads-src] | ![Simple Icons version][simple-icons-internal-version-src] |
 
 ## Sponsors
 
