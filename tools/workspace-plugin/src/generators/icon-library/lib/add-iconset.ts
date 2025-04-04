@@ -21,8 +21,30 @@ export function addIconSet(tree: Tree, schema: IconLibraryGeneratorSchema) {
     ts.factory.createPropertyAssignment('input', ts.factory.createStringLiteral(schema.input)),
     ts.factory.createPropertyAssignment('output', ts.factory.createStringLiteral(schema.output)),
     ts.factory.createPropertyAssignment('glob', ts.factory.createStringLiteral(schema.glob)),
-    ts.factory.createPropertyAssignment('prefix', ts.factory.createStringLiteral(schema.prefix)),
-    ts.factory.createPropertyAssignment('suffix', ts.factory.createStringLiteral(schema.suffix)),
+    ts.factory.createPropertyAssignment(
+      'getIconName',
+      ts.factory.createArrowFunction(
+        undefined,
+        undefined,
+        [ts.factory.createParameterDeclaration(
+          undefined,
+          undefined,
+          ts.factory.createIdentifier('name'),
+          undefined,
+          undefined,
+          undefined
+        )],
+        undefined,
+        ts.factory.createToken(ts.SyntaxKind.EqualsGreaterThanToken),
+        ts.factory.createTemplateExpression(
+          ts.factory.createTemplateHead('', ''),
+          [ts.factory.createTemplateSpan(
+            ts.factory.createIdentifier('name'),
+            ts.factory.createTemplateTail('', '')
+          )]
+        )
+      )
+    )
   ], true);
 
   const filesArray = ts.factory.createArrayLiteralExpression([fileObject], true);
