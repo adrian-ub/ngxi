@@ -172,6 +172,23 @@ export function optimizeIcon(
         };
       },
     } as CustomPlugin,
+    {
+      name: 'namespaceSvgElements',
+      type: 'visitor',
+      description: 'add prefix',
+      params: {},
+      fn: () => {
+        return {
+          element: {
+            enter: (node) => {
+              if (node.name !== 'svg') {
+                node.name = `svg:${node.name}`;
+              }
+            }
+          }
+        };
+      }
+    } as CustomPlugin
   ];
 
   if (options?.colorAttr) {
