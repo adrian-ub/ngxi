@@ -23,6 +23,7 @@ export default [
     files: ['**/*.ts'],
     rules: {
       '@angular-eslint/component-class-suffix': ['off'],
+      '@angular-eslint/no-input-rename': ['off'],
     },
   },
   {
