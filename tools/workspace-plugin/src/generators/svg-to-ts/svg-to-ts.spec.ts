@@ -138,8 +138,8 @@ describe('createIconset', () => {
 
     // Verify index file was created with proper exports
     expect(tree.read('libs/test-icons/index.ts', 'utf-8')).toContain('export * from ');
-    expect(tree.read('libs/test-icons/index.ts', 'utf-8')).toContain('./src/test/test');
-    expect(tree.read('libs/test-icons/index.ts', 'utf-8')).toContain('./src/nested/circle/circle');
+    expect(tree.read('libs/test-icons/index.ts', 'utf-8')).toContain('./src/test');
+    expect(tree.read('libs/test-icons/index.ts', 'utf-8')).toContain('./src/nested/circle');
   });
 
   it('should apply prefix and suffix to generated icon names', async () => {
