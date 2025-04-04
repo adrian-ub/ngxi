@@ -59,6 +59,11 @@ export async function generateIconLibrary(tree: Tree, schema: IconLibraryGenerat
     return json;
   });
 
+  updateJson(tree, `${libraryRoot}/ng-package.json`, (json) => {
+    json.lib.entryFile = 'index.ts';
+    return json;
+  });
+
   generateFiles(tree, path.join(__dirname, '..', 'files', 'library'), libraryRoot, {
     fileName,
   });
