@@ -7,7 +7,6 @@ import { iconsets } from './iconsets';
 import { IconFile, Iconset } from './iconsets.d';
 import { optimizeIcon } from './optimize-icon';
 
-const SVG_TAGS_REGEX = /<(\/?)(circle|rect|path|line|polygon|polyline|ellipse|text|mask|g|clipPath|defs|stop|use|marker|title)([^>]*)>/gi;
 const PATH_CLEANUP_REGEX = /^[./\\]+/;
 
 const ROOT_PATHS = new Set(['/', '.', './', '', undefined, null]);
@@ -106,10 +105,7 @@ function createIconset(tree: Tree, iconset: Iconset) {
 
     generateFiles(tree, path.join(__dirname, 'files'), targetDir, {
       svgFileName: iconName,
-      svgContent: (svgElement.html() || '').replace(
-        SVG_TAGS_REGEX,
-        (_, closing, tagName, attributes) => `<${closing}svg:${tagName}${attributes}>`
-      ),
+      svgContent: svgElement.html(),
       propertyName: componentName.propertyName,
       name: componentName.name,
       className: componentName.className,
