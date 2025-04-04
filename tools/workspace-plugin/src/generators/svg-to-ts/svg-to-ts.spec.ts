@@ -28,8 +28,9 @@ describe('createIconset', () => {
 
     // Mock the readProjectConfiguration function
     vi.mocked(readProjectConfiguration).mockReturnValue({
+      root: 'libs/test-icons',
       sourceRoot: 'libs/test-icons'
-    } as any);
+    });
 
     // Create a basic iconset for testing
     mockIconset = {
