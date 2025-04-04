@@ -1,0 +1,25 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector:
+    'svg[heroChatBubbleBottomCenterMicro],svg[hero-chat-bubble-bottom-center-micro]',
+  host: {
+    role: 'img',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.aria-hidden]': 'ariaHidden()',
+    '[attr.data-slot]': 'dataSlot()',
+  },
+  template: `<svg:path
+    d="M1 8.74c0 .983.713 1.825 1.69 1.943.904.108 1.817.19 2.737.243.363.02.688.231.85.556l1.052 2.103a.75.75 0 0 0 1.342 0l1.052-2.103c.162-.325.487-.535.85-.556.92-.053 1.833-.134 2.738-.243.976-.118 1.689-.96 1.689-1.942V4.259c0-.982-.713-1.824-1.69-1.942a44.45 44.45 0 0 0-10.62 0C1.712 2.435 1 3.277 1 4.26v4.482Z"
+  ></svg:path>`,
+})
+export class HeroChatBubbleBottomCenterMicro {
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly viewBox = input('0 0 16 16');
+  readonly fill = input('currentColor');
+  readonly ariaHidden = input('true', { alias: 'aria-hidden' });
+  readonly dataSlot = input('icon', { alias: 'data-slot' });
+}
