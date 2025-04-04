@@ -8,6 +8,7 @@ import { Component, input } from '@angular/core';
     '[attr.role]': 'role()',
     '[attr.viewBox]': 'viewBox()',
     '[attr.xmlns]': 'xmlns()',
+    '[attr.fill]': 'fill()',
   },
   template: `<svg:title>30 seconds of code</svg:title>
     <svg:path
@@ -18,4 +19,5 @@ export class Si30secondsofcode {
   readonly role = input('img');
   readonly viewBox = input('0 0 24 24');
   readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly fill = input('currentColor');
 }
