@@ -1,3 +1,13 @@
+## 0.4.0 (2025-04-04)
+
+### 🚀 Features
+
+- feat: add colorAttr ([547b6f44](https://github.com/adrian-ub/ngxi/commit/547b6f44))
+
+### ❤️ Thank You
+
+- Adrián UB @adrian-ub
+
 ## 0.3.0 (2025-04-02)
 
 ### 🚀 Features
