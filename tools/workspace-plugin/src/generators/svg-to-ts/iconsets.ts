@@ -29,6 +29,9 @@ export const iconsets: Iconset[] = [
         output: '.',
         glob: '*.svg',
         prefix: 'si',
+        svg: {
+          colorAttr: 'fill',
+        },
       },
     ],
   },
