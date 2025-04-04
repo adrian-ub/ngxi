@@ -54,7 +54,7 @@ export async function updatePkgToLatestVersion(pkgName: string, options = { maxR
         logger.warn("Using fallback method to get version...");
         try {
           latestVersion = getLatestVersionFromNpm(pkgName);
-        } catch (fallbackError) {
+        } catch {
           throw new Error(`Failed to get latest version after ${options.maxRetries} attempts, and fallback also failed`);
         }
       } else {
