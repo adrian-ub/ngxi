@@ -1,4 +1,4 @@
-import { formatFiles, Tree, readProjectConfiguration, logger, names, generateFiles } from '@nx/devkit';
+import { formatFiles, Tree, readProjectConfiguration, names, generateFiles } from '@nx/devkit';
 import * as path from 'path';
 import { sync } from 'glob';
 import * as cheerio from 'cheerio';
@@ -7,143 +7,137 @@ import { iconsets } from './iconsets';
 import { IconFile, Iconset } from './iconsets.d';
 import { optimizeIcon } from './optimize-icon';
 
-function deleteIconSet(tree: Tree, iconset: Iconset) {
-  const iconConfig = readProjectConfiguration(tree, iconset.internalPackageName);
-  const iconSourceRoot = iconConfig.sourceRoot;
+const SVG_TAGS_REGEX = /<(\/?)(circle|rect|path|line|polygon|polyline|ellipse|text|mask|g|clipPath|defs|stop|use|marker|title)([^>]*)>/gi;
+const PATH_CLEANUP_REGEX = /^[./\\]+/;
 
-  const mainNgPackageJson = `${iconSourceRoot}/ng-package.json`;
-  const subNgPackageJsonFiles = sync(`${iconSourceRoot}/**/ng-package.json`, {
-    ignore: mainNgPackageJson
+const ROOT_PATHS = new Set(['/', '.', './', '', undefined, null]);
+
+function deleteIconSet(tree: Tree, iconset: Iconset) {
+  const { sourceRoot } = readProjectConfiguration(tree, iconset.internalPackageName);
+  tree.write(`${sourceRoot}/index.ts`, '');
+
+  sync(`${sourceRoot}/**/ng-package.json`, { ignore: `${sourceRoot}/ng-package.json` })
+    .map(path.dirname)
+    .forEach(dir => tree.delete(dir));
+}
+
+function collectIconPaths(iconset: Iconset) {
+  const iconPathsData = iconset.files.flatMap(fileConfig => {
+    const basePath = fileConfig.input;
+    return sync(fileConfig.glob, { cwd: basePath }).map(relativePath => {
+      const fullPath = path.join(basePath, relativePath);
+      return { fullPath, fileConfig, relativePath };
+    });
   });
 
-  for (const file of subNgPackageJsonFiles) {
-    tree.delete(path.dirname(file));
-  }
-
-  tree.write(`${iconSourceRoot}/index.ts`, '');
+  return iconPathsData;
 }
 
 function loadIconset(tree: Tree, iconset: Iconset) {
-  const allIconPaths: string[] = [];
-  const fileConfigs = iconset.files;
+  const iconPathsData = collectIconPaths(iconset);
 
-  const iconPathToConfigMap = new Map<string, IconFile>();
-
-  for (const fileConfig of fileConfigs) {
-    const relativeIconPaths = sync(fileConfig.glob, { cwd: fileConfig.input });
-
-    const iconPaths = relativeIconPaths.map(relativePath => {
-      const fullPath = path.join(fileConfig.input, relativePath)
-
-      iconPathToConfigMap.set(fullPath, fileConfig);
-
-      return fullPath;
-    });
-
-    allIconPaths.push(...iconPaths);
+  if (iconPathsData.length === 0) {
+    throw new Error('No icons found');
   }
 
-  if (allIconPaths.length === 0) {
-    throw new Error('No icons found for iconset: ' + JSON.stringify(iconset.files));
-  }
+  const output: Record<string, { svg: string; newIconDir: string; fileConfig: IconFile; iconName: string }> = {};
+  const iconsByOutputDir = new Map();
 
-  logger.info(`Found ${allIconPaths.length} icons for iconset: ${iconset.internalPackageName}`);
+  iconPathsData.forEach(({ fullPath, fileConfig }) => {
+    const iconName = path.basename(fullPath, '.svg');
+    const outputDir = fileConfig.output;
 
-  const output: Record<string, {
-    svg: string;
-    newIconDir: string;
-    fileConfig: IconFile;
-  }> = {};
-
-  for (const iconPath of allIconPaths) {
-    const iconName = path.basename(iconPath, '.svg');
-    const fileConfig = iconPathToConfigMap.get(iconPath);
-    if (!fileConfig) {
-      logger.warn(`Could not find matching file configuration for icon: ${iconPath}`);
-      continue;
+    let processedIcons = iconsByOutputDir.get(outputDir);
+    if (!processedIcons) {
+      processedIcons = new Set();
+      iconsByOutputDir.set(outputDir, processedIcons);
     }
 
-    let svg = tree.read(iconPath, 'utf-8').toString();
-    svg = optimizeIcon(svg, fileConfig.svg, fileConfig.plugins);
+    if (processedIcons.has(iconName)) return;
+    processedIcons.add(iconName);
 
-    const relativePath = path.relative(fileConfig.input, path.dirname(iconPath));
-    const newIconDir = path.join(relativePath, path.basename(iconPath, '.svg'));
+    const svg = tree.read(fullPath, 'utf-8')?.toString();
+    if (!svg) return;
 
-    output[iconName] = {
-      svg,
-      newIconDir,
-      fileConfig
+    const optimizedSvg = optimizeIcon(svg, fileConfig.svg, fileConfig.plugins);
+    const relPath = path.relative(fileConfig.input, path.dirname(fullPath));
+
+    output[`${outputDir}:${iconName}`] = {
+      svg: optimizedSvg,
+      newIconDir: path.join(relPath, iconName),
+      fileConfig,
+      iconName
     };
-  }
+  });
 
   return output;
 }
 
 function createIconset(tree: Tree, iconset: Iconset) {
   const icons = loadIconset(tree, iconset);
-  const globalIndex: string[] = [];
-  const iconPackageConfig = readProjectConfiguration(tree, iconset.internalPackageName);
-  const iconPackageSourceRoot = iconPackageConfig.sourceRoot;
-  const indexPackagePath = path.join(iconPackageSourceRoot, 'index.ts');
+  const { sourceRoot } = readProjectConfiguration(tree, iconset.internalPackageName);
+  const globalIndex = [];
 
-  for (const iconName in icons) {
-    const icon = icons[iconName];
-    const outputPath = icon.fileConfig.output;
-    const fileConfig = icon.fileConfig;
+  Object.entries(icons).forEach(([, icon]) => {
+    const { iconName, fileConfig, svg, newIconDir } = icon;
+    const outputPath = fileConfig.output;
+    const isRoot = ROOT_PATHS.has(outputPath);
 
-    const $ = cheerio.load(icon.svg);
+    const $ = cheerio.load(svg);
     const svgElement = $('svg');
-    if (!svgElement) {
-      throw new Error(`No SVG element found in icon: ${iconName}`);
-    }
-    const svgAttributes = Object.entries(svgElement[0].attribs || {}).map(([name, value]) => {
-      const transformedName = names(name).propertyName;
-      return { originalName: name, transformedName, value };
+    if (!svgElement) return;
+
+    const svgAttributes = Object.entries(svgElement[0].attribs || {})
+      .map(([name, value]) => ({
+        originalName: name,
+        transformedName: names(name).propertyName,
+        value
+      }));
+
+    const componentName = names(
+      (fileConfig.prefix ? fileConfig.prefix + '-' : '') +
+      iconName +
+      (fileConfig.suffix ? '-' + fileConfig.suffix : '')
+    );
+
+    const targetDir = path.join(
+      sourceRoot,
+      isRoot ? '' : outputPath || '',
+      newIconDir
+    );
+
+    generateFiles(tree, path.join(__dirname, 'files'), targetDir, {
+      svgFileName: iconName,
+      svgContent: (svgElement.html() || '').replace(
+        SVG_TAGS_REGEX,
+        (_, closing, tagName, attributes) => `<${closing}svg:${tagName}${attributes}>`
+      ),
+      propertyName: componentName.propertyName,
+      name: componentName.name,
+      className: componentName.className,
+      svgAttributes
     });
 
-    let insideSvgContent = svgElement.html();
-    insideSvgContent = insideSvgContent.replace(
-      /<(\/?)(circle|rect|path|line|polygon|polyline|ellipse|text|mask|g|clipPath|defs|stop|use|marker|title)([^>]*)>/gi,
-      (match, closing, tagName, attributes) => {
-        return `<${closing}svg:${tagName}${attributes}>`;
-      }
-    );
-
-    const { propertyName, name, className } = names(`${fileConfig.prefix ? fileConfig.prefix + '-' : ''}${iconName}${fileConfig.suffix ? '-' + fileConfig.suffix : ''}`);
-
-    const targetDir = path.join(iconPackageSourceRoot, outputPath, icon.newIconDir);
-
-    generateFiles(
-      tree,
-      path.join(__dirname, 'files'),
-      targetDir,
-      {
-        svgFileName: iconName,
-        svgContent: insideSvgContent,
-        propertyName,
-        name,
-        className,
-        svgAttributes
-      }
-    );
-
-    const relativePath = path.normalize(path.join(outputPath || '', icon.newIconDir, iconName));
-    const exportPath = './' + relativePath.replace(/^[./\\]+/, '');
+    const exportPath = './' + path.normalize(
+      isRoot ? newIconDir : path.join(outputPath || '', newIconDir)
+    ).replace(PATH_CLEANUP_REGEX, '');
 
     globalIndex.push(`export * from '${exportPath}';`);
-  }
+  });
 
-  tree.write(indexPackagePath, globalIndex.join('\n'));
+  tree.write(`${sourceRoot}/index.ts`, globalIndex.join('\n'));
 }
 
 export async function svgToTsGenerator(tree: Tree) {
-  for (const iconset of iconsets) {
-    await iconset.preCreation?.(tree);
-    deleteIconSet(tree, iconset);
-    createIconset(tree, iconset);
+  try {
+    for (const iconset of iconsets) {
+      await iconset.preCreation?.(tree);
+      deleteIconSet(tree, iconset);
+      createIconset(tree, iconset);
+    }
+  } finally {
+    await formatFiles(tree);
   }
-
-  await formatFiles(tree);
 }
 
 export default svgToTsGenerator;
