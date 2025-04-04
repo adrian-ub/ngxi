@@ -5,8 +5,7 @@ export interface IconFile {
   output: string;
   glob: string;
   filter?: (name: string) => boolean;
-  prefix?: string;
-  suffix?: string;
+  getIconName: (name: string) => string;
   svg?: SvgOptions;
   plugins?: CustomPlugin[];
 }
