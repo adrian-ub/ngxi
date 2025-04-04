@@ -1,0 +1,26 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[heroRectangleGroupMini],svg[hero-rectangle-group-mini]',
+  host: {
+    role: 'img',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.aria-hidden]': 'ariaHidden()',
+    '[attr.data-slot]': 'dataSlot()',
+  },
+  template: `<svg:path
+    fill-rule="evenodd"
+    d="M2.5 3A1.5 1.5 0 0 0 1 4.5v4A1.5 1.5 0 0 0 2.5 10h6A1.5 1.5 0 0 0 10 8.5v-4A1.5 1.5 0 0 0 8.5 3h-6Zm11 2A1.5 1.5 0 0 0 12 6.5v7a1.5 1.5 0 0 0 1.5 1.5h4a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 17.5 5h-4Zm-10 7A1.5 1.5 0 0 0 2 13.5v2A1.5 1.5 0 0 0 3.5 17h6a1.5 1.5 0 0 0 1.5-1.5v-2A1.5 1.5 0 0 0 9.5 12h-6Z"
+    clip-rule="evenodd"
+  ></svg:path>`,
+})
+export class HeroRectangleGroupMini {
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly viewBox = input('0 0 20 20');
+  readonly fill = input('currentColor');
+  readonly ariaHidden = input('true', { alias: 'aria-hidden' });
+  readonly dataSlot = input('icon', { alias: 'data-slot' });
+}

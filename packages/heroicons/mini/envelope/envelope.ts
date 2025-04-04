@@ -1,0 +1,27 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[heroEnvelopeMini],svg[hero-envelope-mini]',
+  host: {
+    role: 'img',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.aria-hidden]': 'ariaHidden()',
+    '[attr.data-slot]': 'dataSlot()',
+  },
+  template: `<svg:path
+      d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z"
+    ></svg:path>
+    <svg:path
+      d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z"
+    ></svg:path>`,
+})
+export class HeroEnvelopeMini {
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly viewBox = input('0 0 20 20');
+  readonly fill = input('currentColor');
+  readonly ariaHidden = input('true', { alias: 'aria-hidden' });
+  readonly dataSlot = input('icon', { alias: 'data-slot' });
+}

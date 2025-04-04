@@ -1,0 +1,26 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[heroMapMini],svg[hero-map-mini]',
+  host: {
+    role: 'img',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.aria-hidden]': 'ariaHidden()',
+    '[attr.data-slot]': 'dataSlot()',
+  },
+  template: `<svg:path
+    fill-rule="evenodd"
+    d="M8.157 2.176a1.5 1.5 0 0 0-1.147 0l-4.084 1.69A1.5 1.5 0 0 0 2 5.25v10.877a1.5 1.5 0 0 0 2.074 1.386l3.51-1.452 4.26 1.762a1.5 1.5 0 0 0 1.146 0l4.083-1.69A1.5 1.5 0 0 0 18 14.75V3.872a1.5 1.5 0 0 0-2.073-1.386l-3.51 1.452-4.26-1.762ZM7.58 5a.75.75 0 0 1 .75.75v6.5a.75.75 0 0 1-1.5 0v-6.5A.75.75 0 0 1 7.58 5Zm5.59 2.75a.75.75 0 0 0-1.5 0v6.5a.75.75 0 0 0 1.5 0v-6.5Z"
+    clip-rule="evenodd"
+  ></svg:path>`,
+})
+export class HeroMapMini {
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly viewBox = input('0 0 20 20');
+  readonly fill = input('currentColor');
+  readonly ariaHidden = input('true', { alias: 'aria-hidden' });
+  readonly dataSlot = input('icon', { alias: 'data-slot' });
+}

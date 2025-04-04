@@ -1,0 +1,26 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[heroMinusSmallSolid],svg[hero-minus-small-solid]',
+  host: {
+    role: 'img',
+    '[attr.xmlns]': 'xmlns()',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.fill]': 'fill()',
+    '[attr.aria-hidden]': 'ariaHidden()',
+    '[attr.data-slot]': 'dataSlot()',
+  },
+  template: `<svg:path
+    fill-rule="evenodd"
+    d="M5.25 12a.75.75 0 0 1 .75-.75h12a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75Z"
+    clip-rule="evenodd"
+  ></svg:path>`,
+})
+export class HeroMinusSmallSolid {
+  readonly xmlns = input('http://www.w3.org/2000/svg');
+  readonly viewBox = input('0 0 24 24');
+  readonly fill = input('currentColor');
+  readonly ariaHidden = input('true', { alias: 'aria-hidden' });
+  readonly dataSlot = input('icon', { alias: 'data-slot' });
+}

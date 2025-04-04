@@ -150,6 +150,9 @@ importers:
       glob:
         specifier: ^11.0.1
         version: 11.0.1
+      heroicons:
+        specifier: 2.2.0
+        version: 2.2.0
       jiti:
         specifier: 2.4.2
         version: 2.4.2
@@ -4811,6 +4814,9 @@ packages:
   he@1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+
+  heroicons@2.2.0:
+    resolution: {integrity: sha512-yOwvztmNiBWqR946t+JdgZmyzEmnRMC2nxvHFC90bF1SUttwB6yJKYeme1JeEcBfobdOs827nCyiWBS2z/brog==}
 
   homedir-polyfill@1.0.3:
     resolution: {integrity: sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==}
@@ -13879,6 +13885,8 @@ snapshots:
       function-bind: 1.1.2
 
   he@1.2.0: {}
+
+  heroicons@2.2.0: {}
 
   homedir-polyfill@1.0.3:
     dependencies:
