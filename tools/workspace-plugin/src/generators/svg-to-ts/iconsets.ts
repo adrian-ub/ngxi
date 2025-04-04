@@ -44,9 +44,9 @@ export const iconsets: Iconset[] = [
     files: [
       {
         input: 'node_modules/heroicons/24/outline',
-        output: '/',
+        output: 'outline',
         glob: '**/*.svg',
-        getIconName: (name) => `hero-${name}`,
+        getIconName: (name) => `hero-${name}-outline`,
       },
       {
         input: 'node_modules/heroicons/24/solid',
