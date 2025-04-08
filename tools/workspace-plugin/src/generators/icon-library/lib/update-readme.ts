@@ -1,33 +1,63 @@
 import { Tree } from '@nx/devkit';
 
+const README_PATH = 'README.md';
+const ICONSETS_PATH = 'tools/workspace-plugin/src/generators/svg-to-ts/icon-sets.json';
+
 export function updateReadme(tree: Tree, iconsetName: string) {
-  const readmePath = 'README.md';
-  if (!tree.exists(readmePath)) return;
+  if (!tree.exists(README_PATH) || !tree.exists(ICONSETS_PATH)) return;
 
-  const name = iconsetName;
-  const pkg = `@ngxi/${name}`;
-  const entry = `| \`${pkg}\` | [![Ngxi ${name} version][${name}-ngxi-version-src]][${name}-ngxi-href] | ![${name} downloads][${name}-ngxi-downloads-src] | ![${name} license][${name}-ngxi-license] |`;
+  const current = tree.read(README_PATH, 'utf-8') ?? '';
+  const iconsets = JSON.parse(tree.read(ICONSETS_PATH, 'utf-8') ?? '[]') as string[];
 
-  const badgeBlock = `\n[${name}-ngxi-version-src]: https://img.shields.io/npm/v/${pkg}?style=flat&colorA=080f12&colorB=1fa669\n[${name}-ngxi-href]: https://www.npmjs.com/package/${pkg}\n[${name}-ngxi-downloads-src]: https://img.shields.io/npm/dm/${pkg}?style=flat&colorA=080f12&colorB=1fa669\n[${name}-ngxi-license]: https://img.shields.io/npm/l/${pkg}`;
+  const rows = iconsets
+    .sort()
+    .map(
+      (name) =>
+        `| \`@ngxi/${name}\` | [![Ngxi ${name} version][${name}-ngxi-version-src]][${name}-ngxi-href] | ![${name} downloads][${name}-ngxi-downloads-src] | ![${name} license][${name}-ngxi-license] |`
+    );
 
-  const content = tree.read(readmePath, 'utf-8') ?? '';
-  const lines = content.split('\n');
+  const table = [
+    '| Package | Version | Downloads | LICENSE |',
+    '| :-- | :-: | :-: | :-: |',
+    ...rows,
+  ].join('\n');
 
-  const tableStart = lines.findIndex(l => l.includes('| Package |'));
-  const tableEnd = lines.findIndex((l, i) => i > tableStart && !l.trim().startsWith('|'));
+  const newLinks = iconsets
+    .sort()
+    .map((name) => {
+      return [
+        `[${name}-ngxi-version-src]: https://img.shields.io/npm/v/@ngxi/${name}?style=flat&colorA=080f12&colorB=1fa669`,
+        `[${name}-ngxi-href]: https://www.npmjs.com/package/@ngxi/${name}`,
+        `[${name}-ngxi-downloads-src]: https://img.shields.io/npm/dm/@ngxi/${name}?style=flat&colorA=080f12&colorB=1fa669`,
+        `[${name}-ngxi-license]: https://img.shields.io/npm/l/@ngxi/${name}`,
+      ].join('\n');
+    })
+    .join('\n\n');
 
-  const tableEntries = lines.slice(tableStart + 2, tableEnd);
-  const alreadyExists = tableEntries.some(line => line.includes(pkg));
+  // Inyectar los comentarios si no existen aún
+  const startMarker = '<!-- ICONSETS:START -->';
+  const endMarker = '<!-- ICONSETS:END -->';
 
-  if (alreadyExists) return;
+  let updated = current;
 
-  const updatedTable = [...tableEntries, entry].sort();
-  const updatedLines = [
-    ...lines.slice(0, tableStart + 2),
-    ...updatedTable,
-    ...lines.slice(tableEnd),
-    badgeBlock.trim()
-  ];
+  if (!current.includes(startMarker)) {
+    updated += `\n\n${startMarker}\n${endMarker}`;
+  }
 
-  tree.write(readmePath, updatedLines.join('\n'));
+  updated = updated.replace(
+    new RegExp(`${startMarker}[\\s\\S]*?${endMarker}`),
+    [startMarker, table, endMarker].join('\n')
+  );
+
+  updated = replaceLinks(updated, newLinks);
+
+  tree.write(README_PATH, updated.trimEnd() + '\n');
+}
+
+function replaceLinks(content: string, newLinks: string): string {
+  const cleaned = content.replace(
+    /\[[a-z0-9-]+-ngxi-(version-src|href|downloads-src|license)\]: .*\n?/gi,
+    ''
+  );
+  return cleaned.trimEnd() + '\n\n' + newLinks.trim();
 }
