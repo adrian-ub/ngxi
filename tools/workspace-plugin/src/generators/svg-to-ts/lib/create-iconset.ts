@@ -63,12 +63,15 @@ async function loadIconset(iconset: IconifyJSON) {
 export async function createIconset(tree: Tree, iconset: IconifyJSON) {
   const icons = await loadIconset(iconset);
   const { sourceRoot } = readProjectConfiguration(tree, iconset.prefix);
+  const iconsDir = path.join(sourceRoot, 'icons');
+  mkdirSync(iconsDir, { recursive: true });
+
   const globalIndex: string[] = [];
 
   const iconEntries = Object.entries(icons);
   const progressBar = new cliProgress.SingleBar(
     {
-      format: `Loading ${iconset.prefix} | {bar} {value}/{total} icons`,
+      format: `Generating ${iconset.prefix} | {bar} {value}/{total} icons`,
       barCompleteChar: '█',
       barIncompleteChar: '░',
       hideCursor: true,
@@ -79,8 +82,7 @@ export async function createIconset(tree: Tree, iconset: IconifyJSON) {
 
   for (let i = 0; i < iconEntries.length; i++) {
     const [iconName, svg] = iconEntries[i];
-    const iconNameWithPrefix = names(`${iconset.prefix}-${iconName}`);
-    const iconNameWithoutPrefix = names(iconName);
+    const iconNames = names(`${iconset.prefix}-${iconName}`);
     const $ = cheerio.load(svg);
     const svgElement = $('svg');
     if (!svgElement) continue;
@@ -93,34 +95,22 @@ export async function createIconset(tree: Tree, iconset: IconifyJSON) {
       })
     );
 
-    const targetDir = path.join(sourceRoot, iconNameWithoutPrefix.fileName);
-    mkdirSync(targetDir, { recursive: true });
-
     const substitutions = {
       svgFileName: iconName,
       svgContent: svgElement.html(),
-      propertyName: iconNameWithPrefix.propertyName,
-      name: iconNameWithPrefix.name,
-      className: iconNameWithPrefix.className,
+      propertyName: iconNames.propertyName,
+      name: iconNames.name,
+      className: iconNames.className,
       svgAttributes,
     };
 
-    writeFileSync(
-      path.join(targetDir, `${iconName}.ts`),
-      ejs.render(templateCache.directive, substitutions)
-    );
+    const fileName = `${iconName}.ts`;
+    const filePath = path.join(iconsDir, fileName);
+    const exportPath = `./icons/${iconName}`;
 
-    writeFileSync(
-      path.join(targetDir, 'index.ts'),
-      ejs.render(templateCache.index, substitutions)
-    );
+    writeFileSync(filePath, ejs.render(templateCache.directive, substitutions));
+    globalIndex.push(`export * from '${exportPath}';`);
 
-    writeFileSync(
-      path.join(targetDir, 'ng-package.json'),
-      ejs.render(templateCache.package, substitutions)
-    );
-
-    globalIndex.push(`export * from './${iconNameWithoutPrefix.fileName}';`);
     progressBar.increment();
   }
 

@@ -83,12 +83,8 @@
     }
   },
   "release": {
-    "versionPlans": true,
     "projectsRelationship": "fixed",
     "changelog": {
-      "projectChangelogs": {
-        "createRelease": "github"
-      },
       "workspaceChangelog": {
         "createRelease": "github"
       }
