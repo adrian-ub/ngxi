@@ -3,6 +3,7 @@ import { lookupCollection } from '@iconify/json';
 
 import { IconLibraryGeneratorSchema } from './schema';
 import { createLibrary } from './lib/create-library';
+import { updateReadme } from './lib/update-readme';
 
 export async function iconLibraryGenerator(
   tree: Tree,
@@ -14,6 +15,9 @@ export async function iconLibraryGenerator(
     const newIconsets = [...json, options.name].sort();
     return newIconsets;
   });
+
+  updateReadme(tree, options.name);
+
   await formatFiles(tree);
 }
 
