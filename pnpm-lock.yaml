@@ -168,9 +168,6 @@ importers:
       fast-glob:
         specifier: ^3.3.3
         version: 3.3.3
-      heroicons:
-        specifier: 2.2.0
-        version: 2.2.0
       jiti:
         specifier: 2.4.2
         version: 2.4.2
@@ -180,12 +177,6 @@ importers:
       jsonc-eslint-parser:
         specifier: ^2.1.0
         version: 2.4.0
-      lucide:
-        specifier: latest
-        version: 0.485.0
-      lucide-static:
-        specifier: 0.487.0
-        version: 0.487.0
       ng-packagr:
         specifier: ~19.2.0
         version: 19.2.0(@angular/compiler-cli@19.2.4(@angular/compiler@19.2.4)(typescript@5.7.3))(tslib@2.8.1)(typescript@5.7.3)
@@ -204,9 +195,6 @@ importers:
       prettier:
         specifier: ^2.6.2
         version: 2.8.8
-      simple-icons:
-        specifier: ^14.12.1
-        version: 14.12.1
       svgo:
         specifier: ^3.3.2
         version: 3.3.2
@@ -4862,9 +4850,6 @@ packages:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
 
-  heroicons@2.2.0:
-    resolution: {integrity: sha512-yOwvztmNiBWqR946t+JdgZmyzEmnRMC2nxvHFC90bF1SUttwB6yJKYeme1JeEcBfobdOs827nCyiWBS2z/brog==}
-
   homedir-polyfill@1.0.3:
     resolution: {integrity: sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==}
     engines: {node: '>=0.10.0'}
@@ -5730,12 +5715,6 @@ packages:
   lru-cache@7.18.3:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
-
-  lucide-static@0.487.0:
-    resolution: {integrity: sha512-voCG76ciX9Ri74MN4THwJbKY6iLBEvtiaWUKJwd0nk+ff4X247GPlukxvgUzCgYHpejrHLNdiVjlT0xOIayMLQ==}
-
-  lucide@0.485.0:
-    resolution: {integrity: sha512-gHtED5mr/pFaw0shTgp80Cjgf6yp3Np0cVpL9aiken1XH0ZARcqU676ybDDqDJDJw4FETo0Kgs+5BMlFLu5vKw==}
 
   luxon@3.6.0:
     resolution: {integrity: sha512-WE7p0p7W1xji9qxkLYsvcIxZyfP48GuFrWIBQZIsbjCyf65dG1rv4n83HcOyEyhvzxJCrUoObCRNFgRNIQ5KNA==}
@@ -7253,10 +7232,6 @@ packages:
   sigstore@3.1.0:
     resolution: {integrity: sha512-ZpzWAFHIFqyFE56dXqgX/DkDRZdz+rRcjoIk/RQU4IX0wiCv1l8S7ZrXDHcCc+uaf+6o7w3h2l3g6GYG5TKN9Q==}
     engines: {node: ^18.17.0 || >=20.5.0}
-
-  simple-icons@14.12.1:
-    resolution: {integrity: sha512-9BYt6kvNs4n0asXZx4/h8MkcI+5qSnpYhtYVRnD1Clf0Vlh9Lfd4cRVjo/DbnosqsUGcq2M+clr/h4valZeg+Q==}
-    engines: {node: '>=0.12.18'}
 
   sirv@3.0.1:
     resolution: {integrity: sha512-FoqMu0NCGBLCcAkS1qA+XJIQTR6/JHfQXl+uGteNCQ76T91DMUjPa9xfmeqMY3z80nLSg9yQmNjK0Px6RWsH/A==}
@@ -13981,8 +13956,6 @@ snapshots:
 
   he@1.2.0: {}
 
-  heroicons@2.2.0: {}
-
   homedir-polyfill@1.0.3:
     dependencies:
       parse-passwd: 1.0.0
@@ -15139,10 +15112,6 @@ snapshots:
       yallist: 3.1.1
 
   lru-cache@7.18.3: {}
-
-  lucide-static@0.487.0: {}
-
-  lucide@0.485.0: {}
 
   luxon@3.6.0: {}
 
@@ -16726,8 +16695,6 @@ snapshots:
       '@sigstore/verify': 2.1.0
     transitivePeerDependencies:
       - supports-color
-
-  simple-icons@14.12.1: {}
 
   sirv@3.0.1:
     dependencies:
