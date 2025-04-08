@@ -1,18 +1,12 @@
-import { IconifyJSON } from '@iconify/types';
 import { readProjectConfiguration, Tree } from '@nx/devkit';
-import fg from 'fast-glob';
 import path from 'path';
 import { rmSync } from 'fs';
 import cliProgress from 'cli-progress';
+import { IconifyJSON } from '@iconify/types';
 
 export async function deleteOldIconset(tree: Tree, collection: IconifyJSON) {
   const { sourceRoot } = readProjectConfiguration(tree, collection.prefix);
-
-  const files = await fg(`**/ng-package.json`, {
-    cwd: sourceRoot,
-    ignore: ['ng-package.json'],
-    onlyFiles: true,
-  });
+  const iconsDir = path.join(sourceRoot, 'icons');
 
   const progressBar = new cliProgress.SingleBar(
     {
@@ -24,13 +18,12 @@ export async function deleteOldIconset(tree: Tree, collection: IconifyJSON) {
     cliProgress.Presets.shades_classic
   );
 
-  progressBar.start(files.length, 0);
+  progressBar.start(1, 0);
 
-  for (const file of files) {
-    const dir = path.join(sourceRoot, path.dirname(file));
-    rmSync(dir, { recursive: true, force: true });
-    progressBar.increment();
-  }
+  try {
+    rmSync(iconsDir, { recursive: true, force: true });
+  } catch (e) { }
 
+  progressBar.increment();
   progressBar.stop();
 }

@@ -3,7 +3,7 @@ import { Tree } from '@nx/devkit';
 const README_PATH = 'README.md';
 const ICONSETS_PATH = 'tools/workspace-plugin/src/generators/svg-to-ts/icon-sets.json';
 
-export function updateReadme(tree: Tree, iconsetName: string) {
+export function updateReadme(tree: Tree) {
   if (!tree.exists(README_PATH) || !tree.exists(ICONSETS_PATH)) return;
 
   const current = tree.read(README_PATH, 'utf-8') ?? '';
