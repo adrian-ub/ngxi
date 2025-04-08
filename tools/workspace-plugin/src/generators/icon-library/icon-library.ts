@@ -16,7 +16,7 @@ export async function iconLibraryGenerator(
     return newIconsets;
   });
 
-  updateReadme(tree, options.name);
+  updateReadme(tree);
 
   await formatFiles(tree);
 }
