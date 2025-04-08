@@ -18,6 +18,7 @@
     "baseUrl": ".",
     "paths": {
       "@ngxi/heroicons": ["packages/heroicons/index.ts"],
+      "@ngxi/heroicons-solid": ["packages/heroicons-solid/index.ts"],
       "@ngxi/lucide": ["packages/lucide/index.ts"],
       "@ngxi/simple-icons": ["packages/simple-icons/index.ts"],
       "@ngxi/workspace-plugin": ["tools/workspace-plugin/src/index.ts"]
