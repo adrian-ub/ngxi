@@ -84,7 +84,7 @@
   },
   "release": {
     "versionPlans": true,
-    "projectsRelationship": "independent",
+    "projectsRelationship": "fixed",
     "changelog": {
       "projectChangelogs": {
         "createRelease": "github"
