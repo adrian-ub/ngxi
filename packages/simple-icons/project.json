@@ -2,7 +2,7 @@
   "name": "simple-icons",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/simple-icons",
-  "prefix": "si",
+  "prefix": "",
   "projectType": "library",
   "release": {
     "version": {

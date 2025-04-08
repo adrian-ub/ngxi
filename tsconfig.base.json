@@ -13,11 +13,13 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "@ngxi/heroicons": ["packages/heroicons/src/index.ts"],
+      "@ngxi/heroicons": ["packages/heroicons/index.ts"],
       "@ngxi/lucide": ["packages/lucide/index.ts"],
-      "@ngxi/simple-icons": ["packages/simple-icons/src/index.ts"],
+      "@ngxi/simple-icons": ["packages/simple-icons/index.ts"],
       "@ngxi/workspace-plugin": ["tools/workspace-plugin/src/index.ts"]
     }
   },

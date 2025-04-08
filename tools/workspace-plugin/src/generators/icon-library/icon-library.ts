@@ -1,15 +1,19 @@
-import { formatFiles, Tree } from '@nx/devkit';
+import { formatFiles, Tree, updateJson } from '@nx/devkit';
+import { lookupCollection } from '@iconify/json';
 
 import { IconLibraryGeneratorSchema } from './schema';
-import { generateIconLibrary } from './lib/generate-icon-library';
-import { addIconSet } from './lib/add-iconset';
+import { createLibrary } from './lib/create-library';
 
 export async function iconLibraryGenerator(
   tree: Tree,
   options: IconLibraryGeneratorSchema
 ) {
-  await generateIconLibrary(tree, options);
-  addIconSet(tree, options);
+  const collection = await lookupCollection(options.name);
+  await createLibrary(tree, collection);
+  updateJson(tree, 'tools/workspace-plugin/src/generators/svg-to-ts/icon-sets.json', (json) => {
+    const newIconsets = [...json, options.name].sort();
+    return newIconsets;
+  });
   await formatFiles(tree);
 }
 

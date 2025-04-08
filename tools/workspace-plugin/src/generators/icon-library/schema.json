@@ -12,44 +12,9 @@
         "index": 0
       },
       "x-prompt": "What is the name of your icon library?"
-    },
-    "internalPackageName": {
-      "type": "string",
-      "description": "The internal package name for the icon library",
-      "x-prompt": "What is the internal package name for your icon library?"
-    },
-    "input": {
-      "type": "string",
-      "description": "Input directory containing SVG files",
-      "x-prompt": "What is the input directory for your SVG files?"
-    },
-    "output": {
-      "type": "string",
-      "description": "Output directory for generated TypeScript files",
-      "x-prompt": "What is the output directory for your generated files?"
-    },
-    "glob": {
-      "type": "string",
-      "description": "Glob pattern for matching SVG files",
-      "default": "**/*.svg",
-      "x-prompt": "What glob pattern should be used to match SVG files?"
-    },
-    "prefix": {
-      "type": "string",
-      "description": "Prefix to prepend to icon names",
-      "x-prompt": "What prefix should be prepended to icon names? (optional)"
-    },
-    "suffix": {
-      "type": "string",
-      "description": "Suffix to append to icon names",
-      "x-prompt": "What suffix should be appended to icon names? (optional)"
     }
   },
   "required": [
-    "name",
-    "internalPackageName",
-    "input",
-    "output",
-    "glob"
+    "name"
   ]
 }
