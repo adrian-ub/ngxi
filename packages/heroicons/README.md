@@ -16,7 +16,7 @@
 
 ## License
 
-[MIT](./LICENSE) License © 2025-PRESENT [Adrián UB](https://github.com/adrian-ub)
+MIT License © 2025-PRESENT [Adrián UB](https://github.com/adrian-ub)
 
 <!-- Badges -->
 

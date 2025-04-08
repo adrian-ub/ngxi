@@ -5,12 +5,17 @@
     "@angular/core": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "sideEffects": false,
+  "license": "CC0-1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/adrian-ub/ngxi",
     "directory": "packages/simple-icons"
   },
-  "publishConfig": {
-    "access": "public"
-  }
+  "author": "Adrián UB",
+  "funding": "https://github.com/sponsors/adrian-ub",
+  "homepage": "https://github.com/adrian-ub/ngxi/tree/main/packages/simple-icons#readme",
+  "bugs": "https://github.com/adrian-ub/ngxi/issues"
 }

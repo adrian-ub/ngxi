@@ -2,7 +2,7 @@
   "name": "lucide",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/lucide",
-  "prefix": "lucide",
+  "prefix": "",
   "projectType": "library",
   "release": {
     "version": {

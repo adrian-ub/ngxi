@@ -6,15 +6,19 @@
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
   "dependencies": {
-    "@nx/devkit": "20.7.1",
-    "tslib": "^2.3.0",
     "@nx/angular": "20.7.1",
+    "@nx/devkit": "20.7.1",
     "cheerio": "^1.0.0",
-    "typescript": "~5.7.2",
-    "svgo": "^3.3.2",
     "fast-npm-meta": "^0.4.0",
     "glob": "^11.0.1",
-    "local-pkg": "^1.1.1"
+    "local-pkg": "^1.1.1",
+    "svgo": "^3.3.2",
+    "tslib": "^2.3.0",
+    "typescript": "~5.7.2"
   },
-  "generators": "./generators.json"
+  "generators": "./generators.json",
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.6",
+    "@types/ejs": "^3.1.5"
+  }
 }
