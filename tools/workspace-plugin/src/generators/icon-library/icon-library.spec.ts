@@ -3,6 +3,7 @@ import { iconLibraryGenerator } from './icon-library';
 import { Tree, updateJson } from '@nx/devkit';
 import * as iconify from '@iconify/json';
 import * as createLib from './lib/create-library';
+import * as updateReadmeLib from './lib/update-readme';
 
 vi.mock('@iconify/json', () => ({
   lookupCollection: vi.fn(),
@@ -10,6 +11,10 @@ vi.mock('@iconify/json', () => ({
 
 vi.mock('./lib/create-library', () => ({
   createLibrary: vi.fn(),
+}));
+
+vi.mock('./lib/update-readme', () => ({
+  updateReadme: vi.fn(),
 }));
 
 vi.mock('@nx/devkit', async () => {
@@ -41,11 +46,12 @@ describe('iconLibraryGenerator', () => {
     });
   });
 
-  it('should lookup the icon collection, create the library and update icon-sets', async () => {
+  it('should lookup the icon collection, create the library, update icon-sets and update the README', async () => {
     await iconLibraryGenerator(mockTree, options);
 
     expect(iconify.lookupCollection).toHaveBeenCalledWith('heroicons');
     expect(createLib.createLibrary).toHaveBeenCalled();
+    expect(updateReadmeLib.updateReadme).toHaveBeenCalledWith(mockTree, 'heroicons');
     expect(updateJson).toHaveBeenCalledWith(
       mockTree,
       'tools/workspace-plugin/src/generators/svg-to-ts/icon-sets.json',
