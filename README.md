@@ -9,6 +9,7 @@ Currently, support the following libraries:
 | Package                 |                                            Version                                             |                            Downloads                             |                         LICENSE                          |
 | :---------------------- | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------: | :------------------------------------------------------: |
 | `@ngxi/heroicons`       |          [![Ngxi heroicons version][heroicons-ngxi-version-src]][heroicons-ngxi-href]          |       ![heroicons downloads][heroicons-ngxi-downloads-src]       |       ![heroicons license][heroicons-ngxi-license]       |
+| `@ngxi/heroicons-solid` | [![Ngxi heroicons-solid version][heroicons-solid-ngxi-version-src]][heroicons-solid-ngxi-href] | ![heroicons-solid downloads][heroicons-solid-ngxi-downloads-src] | ![heroicons-solid license][heroicons-solid-ngxi-license] |
 | `@ngxi/lucide`          |              [![Ngxi lucide version][lucide-ngxi-version-src]][lucide-ngxi-href]               |          ![lucide downloads][lucide-ngxi-downloads-src]          |          ![lucide license][lucide-ngxi-license]          |
 | `@ngxi/simple-icons`    |     [![Ngxi simple-icons version][simple-icons-ngxi-version-src]][simple-icons-ngxi-href]      |    ![simple-icons downloads][simple-icons-ngxi-downloads-src]    |    ![simple-icons license][simple-icons-ngxi-license]    |
 
@@ -30,6 +31,10 @@ Currently, support the following libraries:
 [heroicons-ngxi-href]: https://www.npmjs.com/package/@ngxi/heroicons
 [heroicons-ngxi-downloads-src]: https://img.shields.io/npm/dm/@ngxi/heroicons?style=flat&colorA=080f12&colorB=1fa669
 [heroicons-ngxi-license]: https://img.shields.io/npm/l/@ngxi/heroicons
+[heroicons-solid-ngxi-version-src]: https://img.shields.io/npm/v/@ngxi/heroicons-solid?style=flat&colorA=080f12&colorB=1fa669
+[heroicons-solid-ngxi-href]: https://www.npmjs.com/package/@ngxi/heroicons-solid
+[heroicons-solid-ngxi-downloads-src]: https://img.shields.io/npm/dm/@ngxi/heroicons-solid?style=flat&colorA=080f12&colorB=1fa669
+[heroicons-solid-ngxi-license]: https://img.shields.io/npm/l/@ngxi/heroicons-solid
 [lucide-ngxi-version-src]: https://img.shields.io/npm/v/@ngxi/lucide?style=flat&colorA=080f12&colorB=1fa669
 [lucide-ngxi-href]: https://www.npmjs.com/package/@ngxi/lucide
 [lucide-ngxi-downloads-src]: https://img.shields.io/npm/dm/@ngxi/lucide?style=flat&colorA=080f12&colorB=1fa669
