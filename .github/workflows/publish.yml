@@ -38,6 +38,9 @@ jobs:
           git config --global user.name "Adrián UB"
           git config --global user.email "22903142+adrian-ub@users.noreply.github.com"
 
+      - name: Generate icons
+        run: pnpm nx generate @ngxi/workspace-plugin:svg-to-ts
+
       - name: Release a new package
         run: pnpm nx release -y
         env:

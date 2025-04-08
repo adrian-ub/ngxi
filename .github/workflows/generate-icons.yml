@@ -26,6 +26,7 @@ jobs:
           cache: 'pnpm'
 
       - run: pnpm install --frozen-lockfile
+      - run: pnpm install -DE @iconify/json@latest
       - run: pnpm nx generate @ngxi/workspace-plugin:svg-to-ts
       - run: |
           pnpm nx release plan --bump minor --message "feat: update generated icons"
