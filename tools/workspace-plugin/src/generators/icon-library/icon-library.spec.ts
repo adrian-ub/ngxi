@@ -1,52 +1,55 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { Tree } from '@nx/devkit';
+import { describe, it, expect, vi, beforeEach, Mock } from 'vitest';
 import { iconLibraryGenerator } from './icon-library';
-import { generateIconLibrary } from './lib/generate-icon-library';
-import { addIconSet } from './lib/add-iconset';
-import { formatFiles } from '@nx/devkit';
+import { Tree, updateJson } from '@nx/devkit';
+import * as iconify from '@iconify/json';
+import * as createLib from './lib/create-library';
 
-vi.mock('./lib/generate-icon-library', () => ({
-  generateIconLibrary: vi.fn().mockResolvedValue(undefined)
+vi.mock('@iconify/json', () => ({
+  lookupCollection: vi.fn(),
 }));
 
-vi.mock('./lib/add-iconset', () => ({
-  addIconSet: vi.fn()
+vi.mock('./lib/create-library', () => ({
+  createLibrary: vi.fn(),
 }));
 
-vi.mock('@nx/devkit', () => ({
-  formatFiles: vi.fn().mockResolvedValue(undefined),
-  Tree: vi.fn()
-}));
+vi.mock('@nx/devkit', async () => {
+  const actual = await vi.importActual('@nx/devkit');
+  return {
+    ...actual,
+    updateJson: vi.fn(),
+    formatFiles: vi.fn(),
+  };
+});
 
 describe('iconLibraryGenerator', () => {
   const mockTree = {} as Tree;
-  const mockOptions = {
-    name: 'test-icons',
-    internalPackageName: 'test-package',
-    input: 'src/icons',
-    output: 'dist/icons',
-    glob: '**/*.svg'
-  };
+  const options = { name: 'heroicons' };
 
   beforeEach(() => {
     vi.clearAllMocks();
+
+    (iconify.lookupCollection as Mock).mockResolvedValue({
+      prefix: 'heroicons',
+      icons: {},
+    });
+
+    (updateJson as Mock).mockImplementation((_tree, _path, updater) => {
+      const initial = ['lucide'];
+      const result = updater(initial);
+      expect(result).toContain('heroicons');
+      expect(result).toContain('lucide');
+    });
   });
 
-  it('should call generateIconLibrary with the tree and options', async () => {
-    await iconLibraryGenerator(mockTree, mockOptions);
+  it('should lookup the icon collection, create the library and update icon-sets', async () => {
+    await iconLibraryGenerator(mockTree, options);
 
-    expect(generateIconLibrary).toHaveBeenCalledWith(mockTree, mockOptions);
-  });
-
-  it('should call addIconSet with the tree and options', async () => {
-    await iconLibraryGenerator(mockTree, mockOptions);
-
-    expect(addIconSet).toHaveBeenCalledWith(mockTree, mockOptions);
-  });
-
-  it('should call formatFiles with the tree', async () => {
-    await iconLibraryGenerator(mockTree, mockOptions);
-
-    expect(formatFiles).toHaveBeenCalledWith(mockTree);
+    expect(iconify.lookupCollection).toHaveBeenCalledWith('heroicons');
+    expect(createLib.createLibrary).toHaveBeenCalled();
+    expect(updateJson).toHaveBeenCalledWith(
+      mockTree,
+      'tools/workspace-plugin/src/generators/svg-to-ts/icon-sets.json',
+      expect.any(Function)
+    );
   });
 });
