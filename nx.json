@@ -83,6 +83,7 @@
     }
   },
   "release": {
+    "versionPlans": true,
     "projectsRelationship": "fixed",
     "changelog": {
       "workspaceChangelog": {
