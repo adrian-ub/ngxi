@@ -1,3 +1,13 @@
+## 0.5.0 (2025-04-08)
+
+### 🚀 Features
+
+- feat: remove second enty point ([4d89063a](https://github.com/adrian-ub/ngxi/commit/4d89063a))
+
+### ❤️ Thank You
+
+- Adrián UB @adrian-ub
+
 ## 0.1.0 (2025-04-08)
 
 ### 🚀 Features
