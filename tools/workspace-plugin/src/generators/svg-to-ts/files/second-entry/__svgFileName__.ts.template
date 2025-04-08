@@ -2,14 +2,14 @@ import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
-  selector: 'svg[<%= propertyName %>],svg[<%= name %>]',
+  selector: 'svg[<%= propertyName %>Icon],svg[<%= name %>-icon]',
   host: {
     role: 'img',<% svgAttributes.forEach(attr => { %>
     '[attr.<%= attr.originalName %>]': '<%= attr.transformedName %>()',<% }); %>
   },
   template: `<%- svgContent %>`
 })
-export class <%= className %> {
+export class <%= className %>Icon {
 <% svgAttributes.forEach(attr => {
   const aliasParam = attr.transformedName !== attr.originalName
     ? `, { alias: "${attr.originalName}" }`
