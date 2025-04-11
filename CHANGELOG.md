@@ -1,3 +1,13 @@
+## 0.7.0 (2025-04-11)
+
+### 🚀 Features
+
+- feat: update generated icons ([#6](https://github.com/adrian-ub/ngxi/pull/6))
+
+### ❤️ Thank You
+
+- Adrián UB @adrian-ub
+
 ## 0.6.0 (2025-04-09)
 
 ### 🚀 Features
