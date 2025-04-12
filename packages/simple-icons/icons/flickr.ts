@@ -1,0 +1,19 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleIconsFlickrIcon],svg[simple-icons-flickr-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.334 6.666a5.335 5.335 0 0 0 0 10.668A5.333 5.333 0 0 0 10.666 12a5.333 5.333 0 0 0-5.332-5.334m13.332 0A5.333 5.333 0 0 0 13.334 12A5.333 5.333 0 1 0 24 12a5.335 5.335 0 0 0-5.334-5.334"></svg:path>`
+})
+export class SimpleIconsFlickrIcon {
+
+  readonly viewBox = input("0 0 24 24");
+  readonly width = input("1em");
+  readonly height = input("1em");
+}

@@ -1,0 +1,19 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleIconsOpencollectiveIcon],svg[simple-icons-opencollective-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c2.54 0 4.894-.79 6.834-2.135l-3.107-3.109a7.715 7.715 0 1 1 0-13.512l3.107-3.109A11.94 11.94 0 0 0 12 0m9.865 5.166l-3.109 3.107A7.7 7.7 0 0 1 19.715 12a7.7 7.7 0 0 1-.959 3.727l3.109 3.107A11.94 11.94 0 0 0 24 12c0-2.54-.79-4.894-2.135-6.834"></svg:path>`
+})
+export class SimpleIconsOpencollectiveIcon {
+
+  readonly viewBox = input("0 0 24 24");
+  readonly width = input("1em");
+  readonly height = input("1em");
+}

@@ -1,0 +1,19 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[heroiconsArrowUpRightIcon],svg[heroicons-arrow-up-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></svg:path>`
+})
+export class HeroiconsArrowUpRightIcon {
+
+  readonly viewBox = input("0 0 24 24");
+  readonly width = input("1em");
+  readonly height = input("1em");
+}

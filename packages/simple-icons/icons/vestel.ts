@@ -1,0 +1,19 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleIconsVestelIcon],svg[simple-icons-vestel-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.051 9.4h-1.388s-1.647.059-1.774 1.593s1.582 1.503 1.901 2.158c.203.419-.295.739-.718.739H8.928v.71h1.94s2.031-.11 1.745-1.857c-.183-1.127-1.425-.952-1.842-1.71c-.416-.757.31-.972.388-.972h.882zm.205.037h4.103v.659h-1.208v4.468h-1.634v-4.468h-1.261zm4.397 0h3.393v.605h-1.758v1.709h1.599v.605h-1.599v1.496h1.866v.712h-3.501zm3.775 0h1.707v4.415H24v.712h-3.572zm-15.386 0H8.49v.605H6.677v1.709h1.6v.605h-1.6v1.496h1.919v.712H5.042zm-1.051-.001l-1.1 3.578l-1.135-3.578H0l1.801 5.126h1.313L4.87 9.436z"></svg:path>`
+})
+export class SimpleIconsVestelIcon {
+
+  readonly viewBox = input("0 0 24 24");
+  readonly width = input("1em");
+  readonly height = input("1em");
+}

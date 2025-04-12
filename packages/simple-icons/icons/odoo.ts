@@ -1,0 +1,19 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleIconsOdooIcon],svg[simple-icons-odoo-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21.1 15.796a2.9 2.9 0 1 1 0-5.8a2.9 2.9 0 0 1 0 5.8m0-1.2a1.7 1.7 0 1 0 .002-3.4H21.1a1.7 1.7 0 0 0 0 3.4m-6.065 1.2a2.9 2.9 0 1 1 0-5.8a2.9 2.9 0 0 1 0 5.8m0-1.2a1.7 1.7 0 1 0 .002-3.4h-.002a1.7 1.7 0 0 0 0 3.4m-3.17-1.738c0 1.62-1.298 2.938-2.898 2.938s-2.9-1.314-2.9-2.936S7.248 10 8.968 10c.636 0 1.224.134 1.7.484v-1.68a.6.6 0 0 1 1.2 0v4.054zm-2.898 1.74a1.7 1.7 0 0 0 .002-3.4h-.002a1.7 1.7 0 0 0 0 3.4M2.9 15.796a2.9 2.9 0 1 1 0-5.8a2.9 2.9 0 0 1 0 5.8m0-1.2a1.7 1.7 0 1 0 .002-3.4H2.9a1.7 1.7 0 0 0 0 3.4"></svg:path>`
+})
+export class SimpleIconsOdooIcon {
+
+  readonly viewBox = input("0 0 24 24");
+  readonly width = input("1em");
+  readonly height = input("1em");
+}

@@ -1,0 +1,19 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleIconsSaucelabsIcon],svg[simple-icons-saucelabs-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M23.434 7.344a3.02 3.02 0 0 0-2.435-1.22h-7l-2 5.876h4.838l-2 5.876H10L8 23.75h9c1.291 0 2.438-.809 2.847-2.009l3.999-11.75a2.89 2.89 0 0 0-.412-2.647M10 11.999H7.162l2-5.876h4.837L16 .25H7c-1.291 0-2.438.809-2.847 2.009L.154 14.008a2.89 2.89 0 0 0 .412 2.647a3.02 3.02 0 0 0 2.435 1.22h7l2-5.876z"></svg:path>`
+})
+export class SimpleIconsSaucelabsIcon {
+
+  readonly viewBox = input("0 0 24 24");
+  readonly width = input("1em");
+  readonly height = input("1em");
+}
