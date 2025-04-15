@@ -1,0 +1,19 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[radixIconsLockOpen2Icon],svg[radix-icons-lock-open-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9 3.636c0-.876.242-1.524.642-1.95c.395-.421 1.001-.686 1.86-.686c.946 0 1.582.306 1.97.806c.331.427.528 1.037.528 1.827h1c0-.95-.237-1.794-.738-2.44C13.64.39 12.674 0 11.503 0c-1.073 0-1.967.338-2.59 1.002C8.294 1.662 8 2.582 8 3.636V6H1a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H9zM1 7h9v6H1z" clip-rule="evenodd"></svg:path>`
+})
+export class RadixIconsLockOpen2Icon {
+
+  readonly viewBox = input("0 0 15 15");
+  readonly width = input("1em");
+  readonly height = input("1em");
+}

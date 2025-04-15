@@ -1,0 +1,19 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'svg[radixIconsTriangleRightIcon],svg[radix-icons-triangle-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 11V4l4.5 3.5z"></svg:path>`
+})
+export class RadixIconsTriangleRightIcon {
+
+  readonly viewBox = input("0 0 15 15");
+  readonly width = input("1em");
+  readonly height = input("1em");
+}
