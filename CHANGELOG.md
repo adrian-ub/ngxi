@@ -1,3 +1,13 @@
+## 0.8.0 (2025-04-15)
+
+### 🚀 Features
+
+- feat: add `radix-icons` ([a9b8a9a2](https://github.com/adrian-ub/ngxi/commit/a9b8a9a2))
+
+### ❤️ Thank You
+
+- Adrián UB @adrian-ub
+
 ## 0.7.0 (2025-04-11)
 
 ### 🚀 Features
