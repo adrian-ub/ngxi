@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core';
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 6.1H3m18 6H3M15.1 18H3"></svg:path>`
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 18H3M17 6H3m18 6H3"></svg:path>`
 })
 export class LucideTextIcon {
 
