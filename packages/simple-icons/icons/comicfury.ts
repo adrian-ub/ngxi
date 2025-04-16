@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsComicfuryIcon],svg[simple-icons-comicfury-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m0 6.959l1.899-3.256l2.725 2.736l2.973-.204L9.3 3.297l2.213 2.693l8.655-.252l.406-1.085L24 5.128v5.268l-11.248 3.526l-1.085 6.781H0zm2.195-.748L1.041 8.137l1.75 1.748l1.133-1.948zm7.409-.448L8.48 7.546l1.224 1.598l1.137-1.766zm3.901 3.751l-1.992.349l.997 2.025zm3.319-.565l-1.992.348l.996 2.025zm3.228-.611l-1.991.349l.996 2.025zm3.183-.566l-1.992.349l.996 2.025z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="m0 6.959l1.899-3.256l2.725 2.736l2.973-.204L9.3 3.297l2.213 2.693l8.655-.252l.406-1.085L24 5.128v5.268l-11.248 3.526l-1.085 6.781H0zm2.195-.748L1.041 8.137l1.75 1.748l1.133-1.948zm7.409-.448L8.48 7.546l1.224 1.598l1.137-1.766zm3.901 3.751l-1.992.349l.997 2.025zm3.319-.565l-1.992.348l.996 2.025zm3.228-.611l-1.991.349l.996 2.025zm3.183-.566l-1.992.349l.996 2.025z"></svg:path>`,
 })
 export class SimpleIconsComicfuryIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

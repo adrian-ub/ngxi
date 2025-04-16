@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsProtractorIcon],svg[simple-icons-protractor-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M12 0C5.37 0 0 5.372 0 12s5.371 12 12 12s12-5.372 12-12S18.627 0 12 0m-.273 3.789v1.71h.545v-1.71a9.06 9.06 0 0 1 5.961 2.468l-1.277 1.278l.386.386l1.277-1.278a9.06 9.06 0 0 1 2.469 5.96h-1.71v.546h1.717v2.001H2.905v-2H4.62v-.546H2.91a9.06 9.06 0 0 1 2.469-5.96L6.658 7.92l.386-.386l-1.278-1.278a9.06 9.06 0 0 1 5.96-2.468zM12 6.965a5.91 5.91 0 0 0-5.913 5.912h11.824A5.91 5.91 0 0 0 12 6.965"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M12 0C5.37 0 0 5.372 0 12s5.371 12 12 12s12-5.372 12-12S18.627 0 12 0m-.273 3.789v1.71h.545v-1.71a9.06 9.06 0 0 1 5.961 2.468l-1.277 1.278l.386.386l1.277-1.278a9.06 9.06 0 0 1 2.469 5.96h-1.71v.546h1.717v2.001H2.905v-2H4.62v-.546H2.91a9.06 9.06 0 0 1 2.469-5.96L6.658 7.92l.386-.386l-1.278-1.278a9.06 9.06 0 0 1 5.96-2.468zM12 6.965a5.91 5.91 0 0 0-5.913 5.912h11.824A5.91 5.91 0 0 0 12 6.965"></svg:path>`,
 })
 export class SimpleIconsProtractorIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

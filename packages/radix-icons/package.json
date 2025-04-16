@@ -1,21 +1,27 @@
 {
   "name": "@ngxi/radix-icons",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/core": "^17.0.0 || ^18.0.0 || ^19.0.0"
-  },
-  "sideEffects": false,
+  "version": "0.8.0",
+  "author": "Adrián UB",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
+  "funding": "https://github.com/sponsors/adrian-ub",
+  "homepage": "https://github.com/adrian-ub/ngxi/tree/main/packages/radix-icons#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/adrian-ub/ngxi",
     "directory": "packages/radix-icons"
   },
-  "author": "Adrián UB",
-  "funding": "https://github.com/sponsors/adrian-ub",
-  "homepage": "https://github.com/adrian-ub/ngxi/tree/main/packages/radix-icons#readme",
-  "bugs": "https://github.com/adrian-ub/ngxi/issues"
+  "bugs": "https://github.com/adrian-ub/ngxi/issues",
+  "sideEffects": false,
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
+  "peerDependencies": {
+    "@angular/core": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "tslib": "catalog:angular"
+  },
+  "publishConfig": {
+    "directory": "dist"
+  }
 }

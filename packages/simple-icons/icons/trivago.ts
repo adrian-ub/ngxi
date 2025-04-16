@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsTrivagoIcon],svg[simple-icons-trivago-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M7.811 0a.25.25 0 0 0-.133.042L2.83 3.18a.43.43 0 0 0-.195.358v9.285c0 .141.115.256.256.256h5.18L18.432 7.35a.43.43 0 0 0 .22-.373v-5.3a.256.256 0 0 0-.38-.224L8.073 7.092V.256A.256.256 0 0 0 7.81 0m.017 14.707h-4.93a.257.257 0 0 0-.256.268a9.367 9.367 0 0 0 18.721 0a.26.26 0 0 0-.256-.268h-4.932a.26.26 0 0 0-.254.238a3.93 3.93 0 0 1-3.918 3.619c-2.478 0-3.48-2.105-3.48-2.105a4 4 0 0 1-.44-1.519a.255.255 0 0 0-.255-.233"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M7.811 0a.25.25 0 0 0-.133.042L2.83 3.18a.43.43 0 0 0-.195.358v9.285c0 .141.115.256.256.256h5.18L18.432 7.35a.43.43 0 0 0 .22-.373v-5.3a.256.256 0 0 0-.38-.224L8.073 7.092V.256A.256.256 0 0 0 7.81 0m.017 14.707h-4.93a.257.257 0 0 0-.256.268a9.367 9.367 0 0 0 18.721 0a.26.26 0 0 0-.256-.268h-4.932a.26.26 0 0 0-.254.238a3.93 3.93 0 0 1-3.918 3.619c-2.478 0-3.48-2.105-3.48-2.105a4 4 0 0 1-.44-1.519a.255.255 0 0 0-.255-.233"></svg:path>`,
 })
 export class SimpleIconsTrivagoIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

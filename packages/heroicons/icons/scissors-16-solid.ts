@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[heroiconsScissors16SolidIcon],svg[heroicons-scissors-16-solid-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.25 6.665a2.5 2.5 0 0 0 2.94-.323l.359.207c.34.196.777.02.97-.322c.19-.337.115-.784-.22-.977l-.359-.207a2.501 2.501 0 1 0-3.69 1.622M4.364 5a1 1 0 1 1-1.732-1a1 1 0 0 1 1.732 1m4.539.465a2.75 2.75 0 0 0-1.775 1.893l-.375 1.398l-1.563.902a2.501 2.501 0 1 0 .75 1.3L14.7 5.9a.75.75 0 0 0-.18-1.374l-.782-.21a2.75 2.75 0 0 0-1.593.052zM4.365 11a1 1 0 1 1-1.732 1a1 1 0 0 1 1.732-1" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M8.892 10.408c-.052.03-.047.108.011.128l3.243 1.097a2.75 2.75 0 0 0 1.593.05l.781-.208a.75.75 0 0 0 .18-1.374l-2.137-1.235a1 1 0 0 0-1 0z"></svg:path>`
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.25 6.665a2.5 2.5 0 0 0 2.94-.323l.359.207c.34.196.777.02.97-.322c.19-.337.115-.784-.22-.977l-.359-.207a2.501 2.501 0 1 0-3.69 1.622M4.364 5a1 1 0 1 1-1.732-1a1 1 0 0 1 1.732 1m4.539.465a2.75 2.75 0 0 0-1.775 1.893l-.375 1.398l-1.563.902a2.501 2.501 0 1 0 .75 1.3L14.7 5.9a.75.75 0 0 0-.18-1.374l-.782-.21a2.75 2.75 0 0 0-1.593.052zM4.365 11a1 1 0 1 1-1.732 1a1 1 0 0 1 1.732-1" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M8.892 10.408c-.052.03-.047.108.011.128l3.243 1.097a2.75 2.75 0 0 0 1.593.05l.781-.208a.75.75 0 0 0 .18-1.374l-2.137-1.235a1 1 0 0 0-1 0z"></svg:path>`,
 })
 export class HeroiconsScissors16SolidIcon {
-
-  readonly viewBox = input("0 0 16 16");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 16 16')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

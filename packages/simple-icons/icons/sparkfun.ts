@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsSparkfunIcon],svg[simple-icons-sparkfun-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M16.307 5.476c-.756.134-1.975-.615-2.59-1.362c-.755-.922-.66-1.647-.071-2.29c.883-.978 2.396-.6 2.396-.6s-2.772-2.432-5.658-.44c-2.571 1.77-1.833 4.183.487 6.288c2.09 1.902.42 3.988-1.686 3.717c-1.443-.184-2.034-1.343-1.687-2.054c.298-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044c-1.259.474-2.297 1.515-2.214 4.12V24s1.301-1.604 2.83-3.236c1.714-1.84 2.495-3.084 4.254-2.938c3.328.205 5.735-1.273 7.371-3.645c3.141-4.563.67-9.68-1.43-10.343c0 0 .34 1.438-.745 1.638"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M16.307 5.476c-.756.134-1.975-.615-2.59-1.362c-.755-.922-.66-1.647-.071-2.29c.883-.978 2.396-.6 2.396-.6s-2.772-2.432-5.658-.44c-2.571 1.77-1.833 4.183.487 6.288c2.09 1.902.42 3.988-1.686 3.717c-1.443-.184-2.034-1.343-1.687-2.054c.298-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044c-1.259.474-2.297 1.515-2.214 4.12V24s1.301-1.604 2.83-3.236c1.714-1.84 2.495-3.084 4.254-2.938c3.328.205 5.735-1.273 7.371-3.645c3.141-4.563.67-9.68-1.43-10.343c0 0 .34 1.438-.745 1.638"></svg:path>`,
 })
 export class SimpleIconsSparkfunIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

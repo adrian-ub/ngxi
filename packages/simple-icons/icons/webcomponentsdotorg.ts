@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsWebcomponentsdotorgIcon],svg[simple-icons-webcomponentsdotorg-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m11.731 2.225l-.01.016H5.618L0 11.979l5.618 9.736h12.8l.04.06l2.134-3.735l.518-.893h-.008l.008-.014l-.626-.75h.895l.006-.01l.008.01L24 11.994l-2.607-4.39l-.003.005l-.011-.02h-.945l.63-.763l-2.606-4.57l-.006.01l-.024-.04zM9.107 6.824h6.19l-.53.764h-.023l2.398 4.015h.875l-.277.328l.357.435h-.956l-2.398 4.015h.027l.523.764H9.074l-2.99-5.168l3.022-5.155z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="m11.731 2.225l-.01.016H5.618L0 11.979l5.618 9.736h12.8l.04.06l2.134-3.735l.518-.893h-.008l.008-.014l-.626-.75h.895l.006-.01l.008.01L24 11.994l-2.607-4.39l-.003.005l-.011-.02h-.945l.63-.763l-2.606-4.57l-.006.01l-.024-.04zM9.107 6.824h6.19l-.53.764h-.023l2.398 4.015h.875l-.277.328l.357.435h-.956l-2.398 4.015h.027l.523.764H9.074l-2.99-5.168l3.022-5.155z"></svg:path>`,
 })
 export class SimpleIconsWebcomponentsdotorgIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

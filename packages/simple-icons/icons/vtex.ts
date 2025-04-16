@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsVtexIcon],svg[simple-icons-vtex-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M22.203 1.793H4.28c-1.39 0-2.28 1.47-1.63 2.691l1.794 3.377h-3.25a1.2 1.2 0 0 0-.588.154a1.2 1.2 0 0 0-.435.421a1.19 1.19 0 0 0-.034 1.168l5.766 10.859c.101.19.253.35.44.462a1.2 1.2 0 0 0 1.232 0a1.2 1.2 0 0 0 .44-.463l1.566-2.933l1.965 3.701c.691 1.302 2.564 1.304 3.258.004l8.983-16.818c.635-1.19-.232-2.623-1.585-2.623m-8.05 7.185l-3.874 7.253a.8.8 0 0 1-.293.308a.8.8 0 0 1-.82 0a.8.8 0 0 1-.292-.308L5.038 9.01a.79.79 0 0 1 .02-.778a.8.8 0 0 1 .29-.281a.8.8 0 0 1 .39-.103h7.731a.8.8 0 0 1 .381.1a.8.8 0 0 1 .282.273a.77.77 0 0 1 .02.758z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M22.203 1.793H4.28c-1.39 0-2.28 1.47-1.63 2.691l1.794 3.377h-3.25a1.2 1.2 0 0 0-.588.154a1.2 1.2 0 0 0-.435.421a1.19 1.19 0 0 0-.034 1.168l5.766 10.859c.101.19.253.35.44.462a1.2 1.2 0 0 0 1.232 0a1.2 1.2 0 0 0 .44-.463l1.566-2.933l1.965 3.701c.691 1.302 2.564 1.304 3.258.004l8.983-16.818c.635-1.19-.232-2.623-1.585-2.623m-8.05 7.185l-3.874 7.253a.8.8 0 0 1-.293.308a.8.8 0 0 1-.82 0a.8.8 0 0 1-.292-.308L5.038 9.01a.79.79 0 0 1 .02-.778a.8.8 0 0 1 .29-.281a.8.8 0 0 1 .39-.103h7.731a.8.8 0 0 1 .381.1a.8.8 0 0 1 .282.273a.77.77 0 0 1 .02.758z"></svg:path>`,
 })
 export class SimpleIconsVtexIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

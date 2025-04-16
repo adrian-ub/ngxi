@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsCastoramaIcon],svg[simple-icons-castorama-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M8.91 16.106c-2.129 0-3.659-1.794-3.659-4.266c0-2.148 1.468-4.095 3.488-4.095c2.275 0 3.545 1.857 3.545 1.857l2.939-3.298c-.91-1.062-2.598-2.882-6.503-2.882c-4.388 0-8.209 3.489-8.209 8.456c0 4.766 3.475 8.532 8.266 8.532c3.855 0 5.572-2.017 6.54-3.129l-2.831-2.969c0 .001-1.415 1.794-3.576 1.794M18.283 0v9.988h-2.064a1.92 1.92 0 1 0 0 3.84h2.064V24h5.205V0z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M8.91 16.106c-2.129 0-3.659-1.794-3.659-4.266c0-2.148 1.468-4.095 3.488-4.095c2.275 0 3.545 1.857 3.545 1.857l2.939-3.298c-.91-1.062-2.598-2.882-6.503-2.882c-4.388 0-8.209 3.489-8.209 8.456c0 4.766 3.475 8.532 8.266 8.532c3.855 0 5.572-2.017 6.54-3.129l-2.831-2.969c0 .001-1.415 1.794-3.576 1.794M18.283 0v9.988h-2.064a1.92 1.92 0 1 0 0 3.84h2.064V24h5.205V0z"></svg:path>`,
 })
 export class SimpleIconsCastoramaIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

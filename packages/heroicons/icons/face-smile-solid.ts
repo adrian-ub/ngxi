@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[heroiconsFaceSmileSolidIcon],svg[heroicons-face-smile-solid-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75s9.75-4.365 9.75-9.75S17.385 2.25 12 2.25m-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866c.108.215.395.634.936.634c.54 0 .828-.419.936-.634c.13-.26.189-.568.189-.866s-.059-.605-.189-.866c-.108-.215-.395-.634-.936-.634m4.314.634c.108-.215.395-.634.936-.634c.54 0 .828.419.936.634c.13.26.189.568.189.866s-.059.605-.189.866c-.108.215-.395.634-.936.634c-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866m2.023 6.828a.75.75 0 1 0-1.06-1.06a3.75 3.75 0 0 1-5.304 0a.75.75 0 0 0-1.06 1.06a5.25 5.25 0 0 0 7.424 0" clip-rule="evenodd"></svg:path>`
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75s9.75-4.365 9.75-9.75S17.385 2.25 12 2.25m-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866c.108.215.395.634.936.634c.54 0 .828-.419.936-.634c.13-.26.189-.568.189-.866s-.059-.605-.189-.866c-.108-.215-.395-.634-.936-.634m4.314.634c.108-.215.395-.634.936-.634c.54 0 .828.419.936.634c.13.26.189.568.189.866s-.059.605-.189.866c-.108.215-.395.634-.936.634c-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866m2.023 6.828a.75.75 0 1 0-1.06-1.06a3.75 3.75 0 0 1-5.304 0a.75.75 0 0 0-1.06 1.06a5.25 5.25 0 0 0 7.424 0" clip-rule="evenodd"></svg:path>`,
 })
 export class HeroiconsFaceSmileSolidIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

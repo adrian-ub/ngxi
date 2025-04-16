@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsQantasIcon],svg[simple-icons-qantas-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m0 3.47l.218.572c1.925 5.006 5.566 2.689 10.415 7.139l.056.05c.652.599 1.1.044.888-.306a.76.76 0 0 1-.165-.532a6.7 6.7 0 0 1 2.606 1.369l-.06.126c-.366.73-3.959.421-4 1.943a.97.97 0 0 0 .607.923l.71.287a17.3 17.3 0 0 1 6.086 4.146a.086.086 0 0 1-.063.147a.08.08 0 0 1-.054-.018a17.3 17.3 0 0 0-8.173-3.61a.47.47 0 0 1-.39-.41c-.548-5.089-5.575-5.434-7.492-8.705l5.313 13.94H24L9.979 6.449a10.02 10.02 0 0 0-7.045-2.98Z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="m0 3.47l.218.572c1.925 5.006 5.566 2.689 10.415 7.139l.056.05c.652.599 1.1.044.888-.306a.76.76 0 0 1-.165-.532a6.7 6.7 0 0 1 2.606 1.369l-.06.126c-.366.73-3.959.421-4 1.943a.97.97 0 0 0 .607.923l.71.287a17.3 17.3 0 0 1 6.086 4.146a.086.086 0 0 1-.063.147a.08.08 0 0 1-.054-.018a17.3 17.3 0 0 0-8.173-3.61a.47.47 0 0 1-.39-.41c-.548-5.089-5.575-5.434-7.492-8.705l5.313 13.94H24L9.979 6.449a10.02 10.02 0 0 0-7.045-2.98Z"></svg:path>`,
 })
 export class SimpleIconsQantasIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

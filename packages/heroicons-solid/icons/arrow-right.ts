@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[heroiconsSolidArrowRightIcon],svg[heroicons-solid-arrow-right-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414" clip-rule="evenodd"></svg:path>`
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414" clip-rule="evenodd"></svg:path>`,
 })
 export class HeroiconsSolidArrowRightIcon {
-
-  readonly viewBox = input("0 0 20 20");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 20 20')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

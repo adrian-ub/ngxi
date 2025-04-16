@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsStackoverflowIcon],svg[simple-icons-stackoverflow-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m15.725 0l-1.72 1.277l6.39 8.588l1.716-1.277zm-3.94 3.418l-1.369 1.644l8.225 6.85l1.369-1.644zm-3.15 4.465l-.905 1.94l9.702 4.517l.904-1.94zm-1.85 4.86l-.44 2.093l10.473 2.201l.44-2.092l-10.473-2.203zM1.89 15.47V24h19.19v-8.53h-2.133v6.397H4.021v-6.396zm4.265 2.133v2.13h10.66v-2.13H6.154Z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="m15.725 0l-1.72 1.277l6.39 8.588l1.716-1.277zm-3.94 3.418l-1.369 1.644l8.225 6.85l1.369-1.644zm-3.15 4.465l-.905 1.94l9.702 4.517l.904-1.94zm-1.85 4.86l-.44 2.093l10.473 2.201l.44-2.092l-10.473-2.203zM1.89 15.47V24h19.19v-8.53h-2.133v6.397H4.021v-6.396zm4.265 2.133v2.13h10.66v-2.13H6.154Z"></svg:path>`,
 })
 export class SimpleIconsStackoverflowIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

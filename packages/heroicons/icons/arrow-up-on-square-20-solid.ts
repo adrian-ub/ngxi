@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[heroiconsArrowUpOnSquare20SolidIcon],svg[heroicons-arrow-up-on-square-20-solid-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M13.75 7h-3V3.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0L6.2 4.74a.75.75 0 0 0 1.1 1.02l1.95-2.1V7h-3A2.25 2.25 0 0 0 4 9.25v7.5A2.25 2.25 0 0 0 6.25 19h7.5A2.25 2.25 0 0 0 16 16.75v-7.5A2.25 2.25 0 0 0 13.75 7m-3 0h-1.5v5.25a.75.75 0 0 0 1.5 0z" clip-rule="evenodd"></svg:path>`
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M13.75 7h-3V3.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0L6.2 4.74a.75.75 0 0 0 1.1 1.02l1.95-2.1V7h-3A2.25 2.25 0 0 0 4 9.25v7.5A2.25 2.25 0 0 0 6.25 19h7.5A2.25 2.25 0 0 0 16 16.75v-7.5A2.25 2.25 0 0 0 13.75 7m-3 0h-1.5v5.25a.75.75 0 0 0 1.5 0z" clip-rule="evenodd"></svg:path>`,
 })
 export class HeroiconsArrowUpOnSquare20SolidIcon {
-
-  readonly viewBox = input("0 0 20 20");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 20 20')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

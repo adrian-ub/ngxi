@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsK6Icon],svg[simple-icons-k6-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M24 23.646H0L7.99 6.603l4.813 3.538L19.08.354Zm-8.8-3.681h.052a2.3 2.3 0 0 0 1.593-.64a2.1 2.1 0 0 0 .685-1.576a1.91 1.91 0 0 0-.66-1.511a2 2 0 0 0-1.37-.59h-.04a.7.7 0 0 0-.199.027l1.267-1.883l-1.01-.705l-.477.705l-1.22 1.864c-.21.31-.386.582-.495.77q-.169.301-.29.625a1.9 1.9 0 0 0-.138.719a2.1 2.1 0 0 0 .676 1.558c.422.411.989.641 1.578.64Zm-5.365-2.027l1.398 1.978h1.496l-1.645-2.295l1.46-2.029l-.97-.671l-.427.565l-1.314 1.853v-3.725l-1.31-1.068v7.37h1.31v-1.98Zm5.367.792a.963.963 0 1 1 0-1.927h.009a.94.94 0 0 1 .679.29a.9.9 0 0 1 .29.668a.98.98 0 0 1-.977.967Z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M24 23.646H0L7.99 6.603l4.813 3.538L19.08.354Zm-8.8-3.681h.052a2.3 2.3 0 0 0 1.593-.64a2.1 2.1 0 0 0 .685-1.576a1.91 1.91 0 0 0-.66-1.511a2 2 0 0 0-1.37-.59h-.04a.7.7 0 0 0-.199.027l1.267-1.883l-1.01-.705l-.477.705l-1.22 1.864c-.21.31-.386.582-.495.77q-.169.301-.29.625a1.9 1.9 0 0 0-.138.719a2.1 2.1 0 0 0 .676 1.558c.422.411.989.641 1.578.64Zm-5.365-2.027l1.398 1.978h1.496l-1.645-2.295l1.46-2.029l-.97-.671l-.427.565l-1.314 1.853v-3.725l-1.31-1.068v7.37h1.31v-1.98Zm5.367.792a.963.963 0 1 1 0-1.927h.009a.94.94 0 0 1 .679.29a.9.9 0 0 1 .29.668a.98.98 0 0 1-.977.967Z"></svg:path>`,
 })
 export class SimpleIconsK6Icon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

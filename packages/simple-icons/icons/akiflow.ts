@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsAkiflowIcon],svg[simple-icons-akiflow-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M9.425 5.2L5.457 18h5.795l.948-2.99l.947 2.99h5.795L14.974 5.2Zm.836.8h4.124l3.472 11.2h-4.124l-1.152-3.632Zm-.543.957l2.063 6.728l-1.113 3.515H6.543ZM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12s12-5.373 12-12S18.627 0 12 0m0 .8C18.186.8 23.2 5.813 23.2 12S18.186 23.2 12 23.2S.8 18.186.8 12S5.814.8 12 .8"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M9.425 5.2L5.457 18h5.795l.948-2.99l.947 2.99h5.795L14.974 5.2Zm.836.8h4.124l3.472 11.2h-4.124l-1.152-3.632Zm-.543.957l2.063 6.728l-1.113 3.515H6.543ZM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12s12-5.373 12-12S18.627 0 12 0m0 .8C18.186.8 23.2 5.813 23.2 12S18.186 23.2 12 23.2S.8 18.186.8 12S5.814.8 12 .8"></svg:path>`,
 })
 export class SimpleIconsAkiflowIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

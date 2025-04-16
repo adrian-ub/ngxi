@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsWyzeIcon],svg[simple-icons-wyze-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M5.475 13.171L7.3 9.469h.974L5.779 14.53h-.608l-1.034-2.082l-1.034 2.082h-.609L0 9.469h.973l1.826 3.673l.851-1.706l-.973-1.967h.973zm8.457-3.702l-2.251 3.442v1.591h-.882v-1.591L8.517 9.469h1.034l1.673 2.545l1.673-2.545zm5.444 4.194H24v.867h-4.624zm0-4.194H24v.868h-4.624zm0 2.083H24v.867h-4.624zm-.273-2.083l-3.438 4.223h3.133v.838H13.84l3.407-4.222h-3.042v-.839z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M5.475 13.171L7.3 9.469h.974L5.779 14.53h-.608l-1.034-2.082l-1.034 2.082h-.609L0 9.469h.973l1.826 3.673l.851-1.706l-.973-1.967h.973zm8.457-3.702l-2.251 3.442v1.591h-.882v-1.591L8.517 9.469h1.034l1.673 2.545l1.673-2.545zm5.444 4.194H24v.867h-4.624zm0-4.194H24v.868h-4.624zm0 2.083H24v.867h-4.624zm-.273-2.083l-3.438 4.223h3.133v.838H13.84l3.407-4.222h-3.042v-.839z"></svg:path>`,
 })
 export class SimpleIconsWyzeIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

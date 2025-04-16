@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsBackbonedotjsIcon],svg[simple-icons-backbonedotjs-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M2.34 0v10.45l3.2-1.83V5.27l2.93 1.67l3.01-1.72zm19.31 0L12.5 5.22l3.02 1.73l2.94-1.68v3.35l3.2 1.83V0zm-9.9 5.64l-9.4 5.38V24l9.4-5.36v-3.76l-6.21 3.56v-5.5l6.21-3.54zm.5 0V9.4l6.22 3.54v5.5l-6.22-3.56v3.76L21.66 24V11.02zM7.7 12.3l-1.65.94v1.86l2.17 1.24l3.28-1.87zm8.61 0l-3.8 2.16l3.28 1.88l2.17-1.24v-1.86z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M2.34 0v10.45l3.2-1.83V5.27l2.93 1.67l3.01-1.72zm19.31 0L12.5 5.22l3.02 1.73l2.94-1.68v3.35l3.2 1.83V0zm-9.9 5.64l-9.4 5.38V24l9.4-5.36v-3.76l-6.21 3.56v-5.5l6.21-3.54zm.5 0V9.4l6.22 3.54v5.5l-6.22-3.56v3.76L21.66 24V11.02zM7.7 12.3l-1.65.94v1.86l2.17 1.24l3.28-1.87zm8.61 0l-3.8 2.16l3.28 1.88l2.17-1.24v-1.86z"></svg:path>`,
 })
 export class SimpleIconsBackbonedotjsIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

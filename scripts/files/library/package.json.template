@@ -1,0 +1,27 @@
+{
+  "name": "<%= importPath %>",
+  "version": "<%= version %>",
+  "author": "<%= author %>",
+  "license": "<%= licensePkgJson %>",
+  "funding": "<%= funding %>",
+  "homepage": "<%= githubRepo %>/tree/main/<%= libraryRoot %>#readme",
+  "repository": {
+    "type": "git",
+    "url": "<%= githubRepo %>",
+    "directory": "<%= libraryRoot %>"
+  },
+  "bugs": "<%= githubRepo %>/issues",
+  "sideEffects": false,
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
+  "peerDependencies": {
+    "@angular/core": "<%= angularPeerDepVersion %>"
+  },
+  "dependencies": {
+    "tslib": "<%= tsLibLatestVersion %>"
+  },
+  "publishConfig": {
+    "directory": "dist"
+  }
+}

@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsAegisauthenticatorIcon],svg[simple-icons-aegisauthenticator-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m6.949 19.873l-.008.013a1.48 1.48 0 0 0-.001 1.47l.317.556c.263.464.756.75 1.29.75h.016a1.483 1.483 0 0 0 1.288-2.219l-.325-.57a1.484 1.484 0 0 0-2.577 0m3.49-6.107a1.48 1.48 0 0 0-.001 1.469l3.796 6.676c.264.464.756.75 1.29.75h.016a1.483 1.483 0 0 0 1.288-2.218l-3.812-6.677a1.484 1.484 0 0 0-2.577 0m.328-11.692L.197 20.464a1.466 1.466 0 0 0 1.272 2.198a1.47 1.47 0 0 0 1.273-.74l7.951-13.928a1.466 1.466 0 0 1 2.548.003L21.16 21.92a1.47 1.47 0 0 0 1.274.742h.099a1.466 1.466 0 0 0 1.273-2.193L13.312 2.078a1.466 1.466 0 0 0-2.545-.004"></svg:path>`
+  template: `<svg:path fill="currentColor" d="m6.949 19.873l-.008.013a1.48 1.48 0 0 0-.001 1.47l.317.556c.263.464.756.75 1.29.75h.016a1.483 1.483 0 0 0 1.288-2.219l-.325-.57a1.484 1.484 0 0 0-2.577 0m3.49-6.107a1.48 1.48 0 0 0-.001 1.469l3.796 6.676c.264.464.756.75 1.29.75h.016a1.483 1.483 0 0 0 1.288-2.218l-3.812-6.677a1.484 1.484 0 0 0-2.577 0m.328-11.692L.197 20.464a1.466 1.466 0 0 0 1.272 2.198a1.47 1.47 0 0 0 1.273-.74l7.951-13.928a1.466 1.466 0 0 1 2.548.003L21.16 21.92a1.47 1.47 0 0 0 1.274.742h.099a1.466 1.466 0 0 0 1.273-2.193L13.312 2.078a1.466 1.466 0 0 0-2.545-.004"></svg:path>`,
 })
 export class SimpleIconsAegisauthenticatorIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

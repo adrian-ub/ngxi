@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsPlanetIcon],svg[simple-icons-planet-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M12.891 6.582c-1.159 0-2.4.457-3.217 1.633h-.033a1.59 1.59 0 0 0-1.59-1.59h-.048v10.86a1.79 1.79 0 0 0 1.784 1.784v-4.703h.034c.343.571 1.29 1.536 3.185 1.536c2.857 0 4.572-2.352 4.572-4.638c.002-2.416-1.616-4.882-4.687-4.882m-.066 7.975c-1.714 0-3.07-1.388-3.07-3.217c0-1.666 1.242-3.2 3.023-3.2c1.845 0 3.103 1.616 3.103 3.233c-.001 1.905-1.455 3.184-3.056 3.184M12.001 24A12 12 0 1 1 24 12.001A12.013 12.013 0 0 1 12.001 24m0-22.856a10.861 10.861 0 1 0 10.861 10.862a10.87 10.87 0 0 0-10.86-10.862z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M12.891 6.582c-1.159 0-2.4.457-3.217 1.633h-.033a1.59 1.59 0 0 0-1.59-1.59h-.048v10.86a1.79 1.79 0 0 0 1.784 1.784v-4.703h.034c.343.571 1.29 1.536 3.185 1.536c2.857 0 4.572-2.352 4.572-4.638c.002-2.416-1.616-4.882-4.687-4.882m-.066 7.975c-1.714 0-3.07-1.388-3.07-3.217c0-1.666 1.242-3.2 3.023-3.2c1.845 0 3.103 1.616 3.103 3.233c-.001 1.905-1.455 3.184-3.056 3.184M12.001 24A12 12 0 1 1 24 12.001A12.013 12.013 0 0 1 12.001 24m0-22.856a10.861 10.861 0 1 0 10.861 10.862a10.87 10.87 0 0 0-10.86-10.862z"></svg:path>`,
 })
 export class SimpleIconsPlanetIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

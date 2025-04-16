@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsVaporIcon],svg[simple-icons-vapor-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M22.75 13.908v1.56L12 24L1.25 15.468v-1.56L12 22.44zM12 17.267L1.25 8.824L12 0l10.75 8.824zm.356-4.635a3.193 3.193 0 0 0 3.193-3.193a3.185 3.185 0 0 0-3.029-3.176l.001-.016l-4.514-.427l1.205 4.102a3.184 3.184 0 0 0 3.144 2.71M12 20.269L1.25 11.737v1.533L12 21.802l10.75-8.532v-1.533zm0-2.366L1.25 9.46v1.64L12 19.63l10.75-8.532V9.46z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M22.75 13.908v1.56L12 24L1.25 15.468v-1.56L12 22.44zM12 17.267L1.25 8.824L12 0l10.75 8.824zm.356-4.635a3.193 3.193 0 0 0 3.193-3.193a3.185 3.185 0 0 0-3.029-3.176l.001-.016l-4.514-.427l1.205 4.102a3.184 3.184 0 0 0 3.144 2.71M12 20.269L1.25 11.737v1.533L12 21.802l10.75-8.532v-1.533zm0-2.366L1.25 9.46v1.64L12 19.63l10.75-8.532V9.46z"></svg:path>`,
 })
 export class SimpleIconsVaporIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

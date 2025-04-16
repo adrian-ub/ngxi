@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsVisualstudioappcenterIcon],svg[simple-icons-visualstudioappcenter-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M18 0v20.625L0 17.94L18 24l6-2.497V2.498zm-6.3 5.445L7.8 8.04V4.223h-.09l-2.063-.634L1.5 6.99v1.594l2.685 1.747L1.5 12.079v1.594l4.148 3.408L7.8 16.44v-3.818l3.9 2.595l3.3-1.016v-7.74zm-6.285 6.161v3.233L2.79 13.001zm6.585.833l-4.245-2.108L12 8.224zM2.79 7.695l2.625-1.837V9.09z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M18 0v20.625L0 17.94L18 24l6-2.497V2.498zm-6.3 5.445L7.8 8.04V4.223h-.09l-2.063-.634L1.5 6.99v1.594l2.685 1.747L1.5 12.079v1.594l4.148 3.408L7.8 16.44v-3.818l3.9 2.595l3.3-1.016v-7.74zm-6.285 6.161v3.233L2.79 13.001zm6.585.833l-4.245-2.108L12 8.224zM2.79 7.695l2.625-1.837V9.09z"></svg:path>`,
 })
 export class SimpleIconsVisualstudioappcenterIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsLibreofficewriterIcon],svg[simple-icons-libreofficewriter-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M22 0v7l-7-7zm0 9v12c0 1.662-1.338 3-3 3H5c-1.662 0-3-1.338-3-3V3c0-1.662 1.338-3 3-3h8zM6 10h5V9H6zm0 2h5v-1H6zm0 2h5v-1H6zm5 3H6v1h5zm7-2H6v1h12zm0-6h-6v5h6zm-1.5 2a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1M14 11l-1 2h3z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M22 0v7l-7-7zm0 9v12c0 1.662-1.338 3-3 3H5c-1.662 0-3-1.338-3-3V3c0-1.662 1.338-3 3-3h8zM6 10h5V9H6zm0 2h5v-1H6zm0 2h5v-1H6zm5 3H6v1h5zm7-2H6v1h12zm0-6h-6v5h6zm-1.5 2a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1M14 11l-1 2h3z"></svg:path>`,
 })
 export class SimpleIconsLibreofficewriterIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

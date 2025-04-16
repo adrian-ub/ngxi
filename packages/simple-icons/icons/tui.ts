@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsTuiIcon],svg[simple-icons-tui-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M24 4.517a2.117 2.117 0 0 1-2.117 2.117a2.117 2.117 0 0 1-2.117-2.117A2.117 2.117 0 0 1 21.883 2.4A2.117 2.117 0 0 1 24 4.517M1.14 7.747h5.705c.564 0 .98.178 1.147.972c.185.884.113 1.499-.886 1.569l-1.791.132c1.318 8.33 9.028 11.045 13.222 2.073c.695-1.485.922-1.755 1.683-1.567c1.031.256 1.172.79.677 2.283c-3.624 11.057-15.819 12.166-18.211-2.604l-1.455.105C.046 10.794 0 9.796 0 9.24c0-1.099.407-1.493 1.14-1.493"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M24 4.517a2.117 2.117 0 0 1-2.117 2.117a2.117 2.117 0 0 1-2.117-2.117A2.117 2.117 0 0 1 21.883 2.4A2.117 2.117 0 0 1 24 4.517M1.14 7.747h5.705c.564 0 .98.178 1.147.972c.185.884.113 1.499-.886 1.569l-1.791.132c1.318 8.33 9.028 11.045 13.222 2.073c.695-1.485.922-1.755 1.683-1.567c1.031.256 1.172.79.677 2.283c-3.624 11.057-15.819 12.166-18.211-2.604l-1.455.105C.046 10.794 0 9.796 0 9.24c0-1.099.407-1.493 1.14-1.493"></svg:path>`,
 })
 export class SimpleIconsTuiIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

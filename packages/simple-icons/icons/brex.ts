@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsBrexIcon],svg[simple-icons-brex-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M18.69 2.319a3.87 3.87 0 0 0-3.108 1.547l-.759 1.007a1.66 1.66 0 0 1-1.313.656H0V21.68h5.296a3.87 3.87 0 0 0 3.108-1.547l.759-1.006a1.66 1.66 0 0 1 1.313-.657H24V2.319zm1.108 11.949h-5.66a3.87 3.87 0 0 0-3.108 1.547l-.759 1.007a1.66 1.66 0 0 1-1.313.656H4.202V9.731h5.661a3.87 3.87 0 0 0 3.107-1.547l.759-1.006a1.66 1.66 0 0 1 1.313-.657h4.771z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M18.69 2.319a3.87 3.87 0 0 0-3.108 1.547l-.759 1.007a1.66 1.66 0 0 1-1.313.656H0V21.68h5.296a3.87 3.87 0 0 0 3.108-1.547l.759-1.006a1.66 1.66 0 0 1 1.313-.657H24V2.319zm1.108 11.949h-5.66a3.87 3.87 0 0 0-3.108 1.547l-.759 1.007a1.66 1.66 0 0 1-1.313.656H4.202V9.731h5.661a3.87 3.87 0 0 0 3.107-1.547l.759-1.006a1.66 1.66 0 0 1 1.313-.657h4.771z"></svg:path>`,
 })
 export class SimpleIconsBrexIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

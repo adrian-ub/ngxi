@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsCommonworkflowlanguageIcon],svg[simple-icons-commonworkflowlanguage-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13.905 0L8.571 5.4l.037.037l.096.096l3.586 3.395l-2.24 2.252h-.01l-1.576 1.586l3.737 3.766l-3.735 3.803l.126.139v.012L12.052 24l1.608-1.64l-1.98-2.034l3.737-3.79l-1.608-1.642l-.01.012l-2.13-2.129l3.867-3.866l-.017-.015l.016-.016l-3.641-3.524l3.64-3.694z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M13.905 0L8.571 5.4l.037.037l.096.096l3.586 3.395l-2.24 2.252h-.01l-1.576 1.586l3.737 3.766l-3.735 3.803l.126.139v.012L12.052 24l1.608-1.64l-1.98-2.034l3.737-3.79l-1.608-1.642l-.01.012l-2.13-2.129l3.867-3.866l-.017-.015l.016-.016l-3.641-3.524l3.64-3.694z"></svg:path>`,
 })
 export class SimpleIconsCommonworkflowlanguageIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

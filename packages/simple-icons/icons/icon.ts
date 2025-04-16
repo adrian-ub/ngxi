@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsIconIcon],svg[simple-icons-icon-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1.927 23.935a2.4 2.4 0 0 1-1.882-1.883a2.4 2.4 0 0 1 2.82-2.82a2.4 2.4 0 0 1 1.882 1.882a2.4 2.4 0 0 1-2.82 2.82M21.135 4.768a2.4 2.4 0 0 1-1.882-1.882a2.4 2.4 0 0 1 2.82-2.82a2.4 2.4 0 0 1 1.882 1.882a2.4 2.4 0 0 1-2.82 2.82M12.021 6.01c1.147 0 2.219.324 3.13.883l2.585-2.585A9.583 9.583 0 0 0 4.328 17.716l2.586-2.586a5.99 5.99 0 0 1 5.107-9.12m5.107 2.86a5.99 5.99 0 0 1-8.237 8.237l-2.586 2.585A9.583 9.583 0 0 0 19.713 6.284Z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M1.927 23.935a2.4 2.4 0 0 1-1.882-1.883a2.4 2.4 0 0 1 2.82-2.82a2.4 2.4 0 0 1 1.882 1.882a2.4 2.4 0 0 1-2.82 2.82M21.135 4.768a2.4 2.4 0 0 1-1.882-1.882a2.4 2.4 0 0 1 2.82-2.82a2.4 2.4 0 0 1 1.882 1.882a2.4 2.4 0 0 1-2.82 2.82M12.021 6.01c1.147 0 2.219.324 3.13.883l2.585-2.585A9.583 9.583 0 0 0 4.328 17.716l2.586-2.586a5.99 5.99 0 0 1 5.107-9.12m5.107 2.86a5.99 5.99 0 0 1-8.237 8.237l-2.586 2.585A9.583 9.583 0 0 0 19.713 6.284Z"></svg:path>`,
 })
 export class SimpleIconsIconIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[heroiconsSolidUserGroupIcon],svg[heroicons-solid-user-group-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 6a3 3 0 1 1-6 0a3 3 0 0 1 6 0m5 2a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-4 7a4 4 0 0 0-8 0v3h8zM6 8a2 2 0 1 1-4 0a2 2 0 0 1 4 0m10 10v-3a6 6 0 0 0-.75-2.906A3.005 3.005 0 0 1 19 15v3zM4.75 12.094A6 6 0 0 0 4 15v3H1v-3a3 3 0 0 1 3.75-2.906"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M13 6a3 3 0 1 1-6 0a3 3 0 0 1 6 0m5 2a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-4 7a4 4 0 0 0-8 0v3h8zM6 8a2 2 0 1 1-4 0a2 2 0 0 1 4 0m10 10v-3a6 6 0 0 0-.75-2.906A3.005 3.005 0 0 1 19 15v3zM4.75 12.094A6 6 0 0 0 4 15v3H1v-3a3 3 0 0 1 3.75-2.906"></svg:path>`,
 })
 export class HeroiconsSolidUserGroupIcon {
-
-  readonly viewBox = input("0 0 20 20");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 20 20')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

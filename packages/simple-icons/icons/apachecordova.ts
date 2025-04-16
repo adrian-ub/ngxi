@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsApachecordovaIcon],svg[simple-icons-apachecordova-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M18.545.545H5.455L0 9.273l2.182 14.182h3.886l-.273-3.273h1.909l.273 3.273h8.045l.273-3.273h1.909l-.273 3.273h3.886L24 9.273zm0 17.455H5.455L4.364 9.273l2.182-4.364h3.506l-.234 1.636h4.364l-.234-1.636h3.506l2.182 4.364zm-3-6.955c.301 0 .545.908.545 2.029s-.244 2.029-.545 2.029S15 14.195 15 13.074s.244-2.029.545-2.029m-6.886.17c.301 0 .545.908.545 2.029s-.244 2.029-.545 2.029s-.545-.908-.545-2.029s.244-2.029.545-2.029"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M18.545.545H5.455L0 9.273l2.182 14.182h3.886l-.273-3.273h1.909l.273 3.273h8.045l.273-3.273h1.909l-.273 3.273h3.886L24 9.273zm0 17.455H5.455L4.364 9.273l2.182-4.364h3.506l-.234 1.636h4.364l-.234-1.636h3.506l2.182 4.364zm-3-6.955c.301 0 .545.908.545 2.029s-.244 2.029-.545 2.029S15 14.195 15 13.074s.244-2.029.545-2.029m-6.886.17c.301 0 .545.908.545 2.029s-.244 2.029-.545 2.029s-.545-.908-.545-2.029s.244-2.029.545-2.029"></svg:path>`,
 })
 export class SimpleIconsApachecordovaIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

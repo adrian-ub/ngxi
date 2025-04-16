@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsHomeadvisorIcon],svg[simple-icons-homeadvisor-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M15.98 2.442H8.02L0 10.46h2.275l6.882-6.88l6.881 6.881H24l-8.02-8.018m-.492 9.348L9.157 5.459L4.01 10.605v4.987a1.33 1.33 0 0 0 1.329 1.329h6.077l4.637 4.637v-4.637h2.598a1.33 1.33 0 0 0 1.33-1.33V11.79h-4.494Z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M15.98 2.442H8.02L0 10.46h2.275l6.882-6.88l6.881 6.881H24l-8.02-8.018m-.492 9.348L9.157 5.459L4.01 10.605v4.987a1.33 1.33 0 0 0 1.329 1.329h6.077l4.637 4.637v-4.637h2.598a1.33 1.33 0 0 0 1.33-1.33V11.79h-4.494Z"></svg:path>`,
 })
 export class SimpleIconsHomeadvisorIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

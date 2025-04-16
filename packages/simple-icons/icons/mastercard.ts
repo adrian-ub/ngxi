@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsMastercardIcon],svg[simple-icons-mastercard-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M11.343 18.031q.088.074.181.146a7.4 7.4 0 0 1-4.107 1.238a7.416 7.416 0 1 1 4.104-13.593c-.06.051-.12.098-.165.15A7.96 7.96 0 0 0 8.595 12a8 8 0 0 0 2.748 6.031m5.241-13.447c-1.52 0-2.931.456-4.105 1.238c.06.051.12.098.165.15A7.96 7.96 0 0 1 15.405 12a8 8 0 0 1-2.748 6.031q-.088.074-.181.146a7.4 7.4 0 0 0 4.107 1.238A7.414 7.414 0 0 0 24 12a7.417 7.417 0 0 0-7.416-7.416M12 6.174q-.144.111-.28.231A7.4 7.4 0 0 0 9.169 12A7.39 7.39 0 0 0 12 17.827q.144-.112.28-.232A7.4 7.4 0 0 0 14.831 12A7.39 7.39 0 0 0 12 6.174"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M11.343 18.031q.088.074.181.146a7.4 7.4 0 0 1-4.107 1.238a7.416 7.416 0 1 1 4.104-13.593c-.06.051-.12.098-.165.15A7.96 7.96 0 0 0 8.595 12a8 8 0 0 0 2.748 6.031m5.241-13.447c-1.52 0-2.931.456-4.105 1.238c.06.051.12.098.165.15A7.96 7.96 0 0 1 15.405 12a8 8 0 0 1-2.748 6.031q-.088.074-.181.146a7.4 7.4 0 0 0 4.107 1.238A7.414 7.414 0 0 0 24 12a7.417 7.417 0 0 0-7.416-7.416M12 6.174q-.144.111-.28.231A7.4 7.4 0 0 0 9.169 12A7.39 7.39 0 0 0 12 17.827q.144-.112.28-.232A7.4 7.4 0 0 0 14.831 12A7.39 7.39 0 0 0 12 6.174"></svg:path>`,
 })
 export class SimpleIconsMastercardIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

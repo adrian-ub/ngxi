@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsZenbrowserIcon],svg[simple-icons-zenbrowser-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12S5.373 0 12 0s12 5.373 12 12m-12 9.846c5.438 0 9.846-4.408 9.846-9.846S17.438 2.154 12 2.154S2.154 6.562 2.154 12S6.562 21.846 12 21.846M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0m-8 6.462a6.462 6.462 0 1 0 0-12.924a6.462 6.462 0 0 0 0 12.924m0-1.847a4.615 4.615 0 1 0 0-9.23a4.615 4.615 0 0 0 0 9.23M15.692 12a3.692 3.692 0 1 1-7.384 0a3.692 3.692 0 0 1 7.384 0"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12S5.373 0 12 0s12 5.373 12 12m-12 9.846c5.438 0 9.846-4.408 9.846-9.846S17.438 2.154 12 2.154S2.154 6.562 2.154 12S6.562 21.846 12 21.846M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0m-8 6.462a6.462 6.462 0 1 0 0-12.924a6.462 6.462 0 0 0 0 12.924m0-1.847a4.615 4.615 0 1 0 0-9.23a4.615 4.615 0 0 0 0 9.23M15.692 12a3.692 3.692 0 1 1-7.384 0a3.692 3.692 0 0 1 7.384 0"></svg:path>`,
 })
 export class SimpleIconsZenbrowserIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

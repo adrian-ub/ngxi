@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[heroiconsBanknotes20SolidIcon],svg[heroicons-banknotes-20-solid-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1 4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm12 4a3 3 0 1 1-6 0a3 3 0 0 1 6 0M4 9a1 1 0 1 0 0-2a1 1 0 0 0 0 2m13-1a1 1 0 1 1-2 0a1 1 0 0 1 2 0M1.75 14.5a.75.75 0 0 0 0 1.5c4.417 0 8.693.603 12.749 1.73c1.111.309 2.251-.512 2.251-1.696v-.784a.75.75 0 0 0-1.5 0v.784a.272.272 0 0 1-.35.25A49 49 0 0 0 1.75 14.5" clip-rule="evenodd"></svg:path>`
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1 4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm12 4a3 3 0 1 1-6 0a3 3 0 0 1 6 0M4 9a1 1 0 1 0 0-2a1 1 0 0 0 0 2m13-1a1 1 0 1 1-2 0a1 1 0 0 1 2 0M1.75 14.5a.75.75 0 0 0 0 1.5c4.417 0 8.693.603 12.749 1.73c1.111.309 2.251-.512 2.251-1.696v-.784a.75.75 0 0 0-1.5 0v.784a.272.272 0 0 1-.35.25A49 49 0 0 0 1.75 14.5" clip-rule="evenodd"></svg:path>`,
 })
 export class HeroiconsBanknotes20SolidIcon {
-
-  readonly viewBox = input("0 0 20 20");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 20 20')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

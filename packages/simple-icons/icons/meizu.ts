@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsMeizuIcon],svg[simple-icons-meizu-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M20.045 18.818h3.546A.41.41 0 0 0 24 18.41v-3.545a.41.41 0 0 0-.41-.41h-3.545a.41.41 0 0 0-.409.41v3.545c0 .226.184.41.41.41zM13.8 12.11a.095.095 0 0 1-.163-.068V5.591a.41.41 0 0 0-.409-.41H10.59a.55.55 0 0 0-.385.16L.16 15.387a.55.55 0 0 0-.16.385v2.638c0 .226.183.41.41.41h2.637a.55.55 0 0 0 .385-.16l6.769-6.769a.096.096 0 0 1 .163.068v6.451c0 .226.183.41.409.41h2.638a.55.55 0 0 0 .385-.16L23.84 8.613A.55.55 0 0 0 24 8.23V5.59a.41.41 0 0 0-.41-.41h-2.637a.55.55 0 0 0-.386.16z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M20.045 18.818h3.546A.41.41 0 0 0 24 18.41v-3.545a.41.41 0 0 0-.41-.41h-3.545a.41.41 0 0 0-.409.41v3.545c0 .226.184.41.41.41zM13.8 12.11a.095.095 0 0 1-.163-.068V5.591a.41.41 0 0 0-.409-.41H10.59a.55.55 0 0 0-.385.16L.16 15.387a.55.55 0 0 0-.16.385v2.638c0 .226.183.41.41.41h2.637a.55.55 0 0 0 .385-.16l6.769-6.769a.096.096 0 0 1 .163.068v6.451c0 .226.183.41.409.41h2.638a.55.55 0 0 0 .385-.16L23.84 8.613A.55.55 0 0 0 24 8.23V5.59a.41.41 0 0 0-.41-.41h-2.637a.55.55 0 0 0-.386.16z"></svg:path>`,
 })
 export class SimpleIconsMeizuIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

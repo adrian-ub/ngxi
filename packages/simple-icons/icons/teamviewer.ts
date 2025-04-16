@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsTeamviewerIcon],svg[simple-icons-teamviewer-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m20.17 11.998l-6.225-3.401l.685 2.144H9.37l.684-2.145L3.829 12l6.225 3.404l-.683-2.147h5.26l-.686 2.147zM20.448 0H3.553A3.553 3.553 0 0 0 .001 3.552v16.895A3.553 3.553 0 0 0 3.553 24h16.895A3.553 3.553 0 0 0 24 20.447V3.552A3.553 3.553 0 0 0 20.448 0M12 21.646c-5.328 0-9.648-4.32-9.648-9.648c0-5.329 4.32-9.646 9.648-9.646s9.65 4.32 9.65 9.648s-4.32 9.648-9.649 9.648z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="m20.17 11.998l-6.225-3.401l.685 2.144H9.37l.684-2.145L3.829 12l6.225 3.404l-.683-2.147h5.26l-.686 2.147zM20.448 0H3.553A3.553 3.553 0 0 0 .001 3.552v16.895A3.553 3.553 0 0 0 3.553 24h16.895A3.553 3.553 0 0 0 24 20.447V3.552A3.553 3.553 0 0 0 20.448 0M12 21.646c-5.328 0-9.648-4.32-9.648-9.648c0-5.329 4.32-9.646 9.648-9.646s9.65 4.32 9.65 9.648s-4.32 9.648-9.649 9.648z"></svg:path>`,
 })
 export class SimpleIconsTeamviewerIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

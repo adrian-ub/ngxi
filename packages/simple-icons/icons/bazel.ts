@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsBazelIcon],svg[simple-icons-bazel-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m11.747 23.82l-5.497-5.5v-5.535l5.498 5.499zm-.103-17.641l.176-.177L6 .18L.177 6.002l5.822 5.827zM0 6.532v5.535l5.749 5.754v-5.535l-.104-.103zm17.648 5.65l-5.65-5.65l-5.646 5.65l5.645 5.646zm.103 5.89v-5.286l-5.504 5.499v5.535l5.504-5.499zM24 6.531l-5.645 5.65l-.104.104v5.535L24 12.067zm-.177-.53L18.001.18l-5.827 5.822l5.827 5.827z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="m11.747 23.82l-5.497-5.5v-5.535l5.498 5.499zm-.103-17.641l.176-.177L6 .18L.177 6.002l5.822 5.827zM0 6.532v5.535l5.749 5.754v-5.535l-.104-.103zm17.648 5.65l-5.65-5.65l-5.646 5.65l5.645 5.646zm.103 5.89v-5.286l-5.504 5.499v5.535l5.504-5.499zM24 6.531l-5.645 5.65l-.104.104v5.535L24 12.067zm-.177-.53L18.001.18l-5.827 5.822l5.827 5.827z"></svg:path>`,
 })
 export class SimpleIconsBazelIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

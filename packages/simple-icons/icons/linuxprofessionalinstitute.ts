@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsLinuxprofessionalinstituteIcon],svg[simple-icons-linuxprofessionalinstitute-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12s12-5.373 12-12S18.627 0 12 0m0 20.987a8.987 8.987 0 1 1 0-17.973a8.987 8.987 0 1 1 0 17.973m5.104-3.003l.8-2.998H10.74l2.765-10.491h-2.998L6.912 17.984Zm.29-10.494c0 .822-.67 1.494-1.494 1.494a1.493 1.493 0 0 1 0-2.985c.822 0 1.494.669 1.494 1.49"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12s12-5.373 12-12S18.627 0 12 0m0 20.987a8.987 8.987 0 1 1 0-17.973a8.987 8.987 0 1 1 0 17.973m5.104-3.003l.8-2.998H10.74l2.765-10.491h-2.998L6.912 17.984Zm.29-10.494c0 .822-.67 1.494-1.494 1.494a1.493 1.493 0 0 1 0-2.985c.822 0 1.494.669 1.494 1.49"></svg:path>`,
 })
 export class SimpleIconsLinuxprofessionalinstituteIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

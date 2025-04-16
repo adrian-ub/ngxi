@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsTmuxIcon],svg[simple-icons-tmux-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M24 2.251V10.5H12.45V0h9.3A2.25 2.25 0 0 1 24 2.251M12.45 11.4H24v10.5h-.008A2.25 2.25 0 0 1 21.75 24H2.25a2.247 2.247 0 0 1-2.242-2.1H0V2.251A2.25 2.25 0 0 1 2.25 0h9.3v21.6h.9zm11.242 10.5H.308a1.95 1.95 0 0 0 1.942 1.8h19.5a1.95 1.95 0 0 0 1.942-1.8"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M24 2.251V10.5H12.45V0h9.3A2.25 2.25 0 0 1 24 2.251M12.45 11.4H24v10.5h-.008A2.25 2.25 0 0 1 21.75 24H2.25a2.247 2.247 0 0 1-2.242-2.1H0V2.251A2.25 2.25 0 0 1 2.25 0h9.3v21.6h.9zm11.242 10.5H.308a1.95 1.95 0 0 0 1.942 1.8h19.5a1.95 1.95 0 0 0 1.942-1.8"></svg:path>`,
 })
 export class SimpleIconsTmuxIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

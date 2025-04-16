@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsTheirishtimesIcon],svg[simple-icons-theirishtimes-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M9.636 4.093V8.33h.42q.27-1.735 1.3-2.67q.73-.672 2.35-.672h1.197V17.22q0 1.186-.127 1.465q-.173.396-.473.557q-.415.247-1.096.246h-.518v.417h8.26v-.417h-.517q-.665 0-1.049-.228q-.384-.226-.516-.528q-.132-.304-.131-1.512V4.988h1.197q1.115 0 1.56.208q.797.381 1.256 1.023q.458.64.834 2.11H24V4.093zM7.74 19.488q-.658 0-1.044-.227q-.387-.226-.519-.529q-.132-.302-.132-1.512V6.778q-.001-1.185.127-1.464q.171-.396.472-.559q.415-.244 1.096-.244h.519v-.418H0v.418h.521q.66 0 1.05.227q.387.227.515.53q.128.301.129 1.51v10.444q-.001 1.185-.128 1.465q-.164.396-.463.557q-.42.245-1.103.245H0v.418h8.26v-.418h-.52Z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M9.636 4.093V8.33h.42q.27-1.735 1.3-2.67q.73-.672 2.35-.672h1.197V17.22q0 1.186-.127 1.465q-.173.396-.473.557q-.415.247-1.096.246h-.518v.417h8.26v-.417h-.517q-.665 0-1.049-.228q-.384-.226-.516-.528q-.132-.304-.131-1.512V4.988h1.197q1.115 0 1.56.208q.797.381 1.256 1.023q.458.64.834 2.11H24V4.093zM7.74 19.488q-.658 0-1.044-.227q-.387-.226-.519-.529q-.132-.302-.132-1.512V6.778q-.001-1.185.127-1.464q.171-.396.472-.559q.415-.244 1.096-.244h.519v-.418H0v.418h.521q.66 0 1.05.227q.387.227.515.53q.128.301.129 1.51v10.444q-.001 1.185-.128 1.465q-.164.396-.463.557q-.42.245-1.103.245H0v.418h8.26v-.418h-.52Z"></svg:path>`,
 })
 export class SimpleIconsTheirishtimesIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

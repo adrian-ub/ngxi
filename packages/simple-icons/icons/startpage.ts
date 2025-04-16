@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsStartpageIcon],svg[simple-icons-startpage-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m16.885 14.254l.04-.06a8.7 8.7 0 0 0 1.851-4.309c-1.334 0-2.648 0-3.982.04a4.9 4.9 0 0 1-4.758 3.696a4.95 4.95 0 0 1-4.56-3.044a90 90 0 0 0-3.941.514c1.035 3.697 4.46 6.405 8.501 6.405a8.8 8.8 0 0 0 3.743-.83l.06-.02l.04.04l5.455 6.603c.378.454.916.711 1.513.711c.458 0 .896-.158 1.234-.435c.399-.336.657-.79.697-1.304s-.1-1.009-.438-1.424zM5.118 8.56c.1-2.59 2.27-4.685 4.918-4.685a4.91 4.91 0 0 1 4.898 4.389c1.314.02 2.608.04 3.922.099C18.616 3.717 14.754 0 10.036 0c-4.858 0-8.82 3.934-8.82 8.758v.178a87 87 0 0 1 3.902-.376"></svg:path>`
+  template: `<svg:path fill="currentColor" d="m16.885 14.254l.04-.06a8.7 8.7 0 0 0 1.851-4.309c-1.334 0-2.648 0-3.982.04a4.9 4.9 0 0 1-4.758 3.696a4.95 4.95 0 0 1-4.56-3.044a90 90 0 0 0-3.941.514c1.035 3.697 4.46 6.405 8.501 6.405a8.8 8.8 0 0 0 3.743-.83l.06-.02l.04.04l5.455 6.603c.378.454.916.711 1.513.711c.458 0 .896-.158 1.234-.435c.399-.336.657-.79.697-1.304s-.1-1.009-.438-1.424zM5.118 8.56c.1-2.59 2.27-4.685 4.918-4.685a4.91 4.91 0 0 1 4.898 4.389c1.314.02 2.608.04 3.922.099C18.616 3.717 14.754 0 10.036 0c-4.858 0-8.82 3.934-8.82 8.758v.178a87 87 0 0 1 3.902-.376"></svg:path>`,
 })
 export class SimpleIconsStartpageIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

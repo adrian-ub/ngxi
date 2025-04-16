@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsRaycastIcon],svg[simple-icons-raycast-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M6.004 15.492v2.504L0 11.992l1.258-1.249Zm2.504 2.504H6.004L12.008 24l1.253-1.253zm14.24-4.747L24 11.997L12.003 0L10.75 1.251L15.491 6h-2.865L9.317 2.692L8.065 3.944l2.06 2.06H8.691v9.31H18v-1.432l2.06 2.06l1.252-1.252L18 11.37V8.506ZM6.63 5.372L5.38 6.625l1.342 1.343l1.251-1.253Zm10.655 10.655l-1.247 1.251l1.342 1.343l1.253-1.251zM3.944 8.059L2.692 9.31l3.312 3.314v-2.506zm9.936 9.937h-2.504l3.314 3.312l1.25-1.252z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M6.004 15.492v2.504L0 11.992l1.258-1.249Zm2.504 2.504H6.004L12.008 24l1.253-1.253zm14.24-4.747L24 11.997L12.003 0L10.75 1.251L15.491 6h-2.865L9.317 2.692L8.065 3.944l2.06 2.06H8.691v9.31H18v-1.432l2.06 2.06l1.252-1.252L18 11.37V8.506ZM6.63 5.372L5.38 6.625l1.342 1.343l1.251-1.253Zm10.655 10.655l-1.247 1.251l1.342 1.343l1.253-1.251zM3.944 8.059L2.692 9.31l3.312 3.314v-2.506zm9.936 9.937h-2.504l3.314 3.312l1.25-1.252z"></svg:path>`,
 })
 export class SimpleIconsRaycastIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsSourcetreeIcon],svg[simple-icons-sourcetree-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M11.999 0C6.756 0 2.474 4.245 2.474 9.525c0 4.21 2.769 7.792 6.572 9.047v4.764c0 .37.295.664.664.664h4.506a.66.66 0 0 0 .664-.664v-4.764l.074-.027v.064c3.694-1.22 6.412-4.634 6.565-8.687q.007-.187.007-.375v-.022q-.001-.228-.013-.455C21.275 4.037 17.125 0 11.999 0m0 6.352a3.214 3.214 0 0 1 2.664 5.005v.002A3.22 3.22 0 0 1 12 12.775a3.212 3.212 0 0 1 0-6.424z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M11.999 0C6.756 0 2.474 4.245 2.474 9.525c0 4.21 2.769 7.792 6.572 9.047v4.764c0 .37.295.664.664.664h4.506a.66.66 0 0 0 .664-.664v-4.764l.074-.027v.064c3.694-1.22 6.412-4.634 6.565-8.687q.007-.187.007-.375v-.022q-.001-.228-.013-.455C21.275 4.037 17.125 0 11.999 0m0 6.352a3.214 3.214 0 0 1 2.664 5.005v.002A3.22 3.22 0 0 1 12 12.775a3.212 3.212 0 0 1 0-6.424z"></svg:path>`,
 })
 export class SimpleIconsSourcetreeIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[heroiconsPercentBadge20SolidIcon],svg[heroicons-percent-badge-20-solid-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M3.597 7.348a3 3 0 0 0 0 5.305a3 3 0 0 0 3.75 3.75a3 3 0 0 0 5.305 0a3 3 0 0 0 3.751-3.75a3 3 0 0 0 0-5.305a3 3 0 0 0-3.75-3.751a3 3 0 0 0-5.305 0a3 3 0 0 0-3.751 3.75m9.933.182a.75.75 0 0 0-1.06-1.06l-6 6a.75.75 0 1 0 1.06 1.06zm.47 5.22a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M7.25 8.5a1.25 1.25 0 1 0 0-2.5a1.25 1.25 0 0 0 0 2.5" clip-rule="evenodd"></svg:path>`
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M3.597 7.348a3 3 0 0 0 0 5.305a3 3 0 0 0 3.75 3.75a3 3 0 0 0 5.305 0a3 3 0 0 0 3.751-3.75a3 3 0 0 0 0-5.305a3 3 0 0 0-3.75-3.751a3 3 0 0 0-5.305 0a3 3 0 0 0-3.751 3.75m9.933.182a.75.75 0 0 0-1.06-1.06l-6 6a.75.75 0 1 0 1.06 1.06zm.47 5.22a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M7.25 8.5a1.25 1.25 0 1 0 0-2.5a1.25 1.25 0 0 0 0 2.5" clip-rule="evenodd"></svg:path>`,
 })
 export class HeroiconsPercentBadge20SolidIcon {
-
-  readonly viewBox = input("0 0 20 20");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 20 20')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }

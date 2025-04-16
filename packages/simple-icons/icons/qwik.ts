@@ -1,19 +1,18 @@
-import { Component, input } from '@angular/core';
+import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
   selector: 'svg[simpleIconsQwikIcon],svg[simple-icons-qwik-icon]',
   host: {
-    role: 'img',
+    'role': 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M7.547 0a2.96 2.96 0 0 0-2.56 1.479L.532 9.19a2.96 2.96 0 0 0 0 2.957l4.453 7.713a2.96 2.96 0 0 0 2.561 1.477H12l8.594 2.648a.284.284 0 0 0 .336-.402l-1.916-3.723l4.453-7.713a2.96 2.96 0 0 0 0-2.957l-4.453-7.71A2.96 2.96 0 0 0 16.453 0zm0 .766l10.185 9.904l-1.896 1.899l.578 7.533L6.268 10.67l2.37-2.373z"></svg:path>`
+  template: `<svg:path fill="currentColor" d="M7.547 0a2.96 2.96 0 0 0-2.56 1.479L.532 9.19a2.96 2.96 0 0 0 0 2.957l4.453 7.713a2.96 2.96 0 0 0 2.561 1.477H12l8.594 2.648a.284.284 0 0 0 .336-.402l-1.916-3.723l4.453-7.713a2.96 2.96 0 0 0 0-2.957l-4.453-7.71A2.96 2.96 0 0 0 16.453 0zm0 .766l10.185 9.904l-1.896 1.899l.578 7.533L6.268 10.67l2.37-2.373z"></svg:path>`,
 })
 export class SimpleIconsQwikIcon {
-
-  readonly viewBox = input("0 0 24 24");
-  readonly width = input("1em");
-  readonly height = input("1em");
+  readonly viewBox = input('0 0 24 24')
+  readonly width = input('1em')
+  readonly height = input('1em')
 }
