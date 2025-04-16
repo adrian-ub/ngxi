@@ -6,6 +6,25 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Installation
+
+```sh
+npm install @ngxi/radix-icons
+```
+
+## Usage
+
+```ts
+import { Component } from '@angular/core'
+import { RadixIconsAccessibilityIcon } from '@ngxi/radix-icons'
+
+@Component({
+  imports: [RadixIconsAccessibilityIcon],
+  template: `<svg radixIconsAccessibilityIcon></svg>`
+})
+export class UsageIcon {}
+```
+
 ## Sponsors
 
 <p align="center">
@@ -26,7 +45,7 @@ MIT License © 2025-PRESENT [Adrián UB](https://github.com/adrian-ub)
 [npm-downloads-href]: https://npmjs.com/package/@ngxi/radix-icons
 [bundle-src]: https://img.shields.io/bundlephobia/minzip/@ngxi/radix-icons?style=flat&colorA=080f12&colorB=1fa669&label=minzip
 [bundle-href]: https://bundlephobia.com/result?p=@ngxi/radix-icons
-[license-src]: https://img.shields.io/github/license/adrian-ub/ngxi.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-src]: https://img.shields.io/npm/l/@ngxi/radix-icons?style=flat&colorA=080f12&colorB=1fa669
 [license-href]: https://github.com/adrian-ub/ngxi/blob/main/LICENSE
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
 [jsdocs-href]: https://www.jsdocs.io/package/@ngxi/radix-icons
