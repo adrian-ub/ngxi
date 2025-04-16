@@ -1,5 +1,4 @@
 import { lookupCollection } from '@iconify/json'
-import { execa } from 'execa'
 
 import collections from '~~/collections'
 import { generateLibrary } from './generate-library'
