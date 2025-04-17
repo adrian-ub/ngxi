@@ -14,7 +14,6 @@
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },
-  "dependencies": {},
   "devDependencies": {
     "@angular/core": "catalog:angular",
     "@antfu/eslint-config": "catalog:dev",
@@ -33,6 +32,7 @@
     "execa": "catalog:dev",
     "lint-staged": "catalog:dev",
     "ng-packagr": "catalog:angular",
+    "p-limit": "catalog:dev",
     "picocolors": "catalog:dev",
     "pnpm": "catalog:dev",
     "simple-git-hooks": "catalog:dev",

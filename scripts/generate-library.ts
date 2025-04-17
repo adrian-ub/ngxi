@@ -2,8 +2,6 @@ import type { IconifyJSON } from '@iconify/types'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-import { execa } from 'execa'
-
 import { version } from '~~/package.json'
 import { angularPeerDepVersion, tsLibLatestVersion } from './utils/dependencies-version'
 import { generateFiles } from './utils/generate-files'
@@ -52,6 +50,4 @@ export async function generateLibrary(collection: IconifyJSON) {
     ...defaultProps,
     ...pkgProps,
   })
-
-  execa('eslint', ['--fix', '--no-ignore', libraryDir])
 }
