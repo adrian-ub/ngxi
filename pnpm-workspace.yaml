@@ -23,6 +23,7 @@ catalogs:
     eslint: ^9.24.0
     execa: ^9.5.2
     lint-staged: ^15.5.1
+    p-limit: ^6.2.0
     picocolors: ^1.1.1
     pnpm: ^10.8.0
     simple-git-hooks: ^2.12.1
