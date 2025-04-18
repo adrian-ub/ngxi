@@ -30,7 +30,6 @@
     "ejs": "catalog:dev",
     "eslint": "catalog:dev",
     "execa": "catalog:dev",
-    "fast-glob": "catalog:dev",
     "lint-staged": "catalog:dev",
     "ng-packagr": "catalog:angular",
     "p-limit": "catalog:dev",
