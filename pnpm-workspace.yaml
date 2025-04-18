@@ -2,7 +2,7 @@ packages:
   - docs
   - packages/*
 catalog:
-  '@iconify/json': ^2.2.327
+  '@iconify/json': ^2.2.329
 catalogs:
   angular:
     '@angular/core': ^19.2.6
