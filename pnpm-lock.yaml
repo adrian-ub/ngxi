@@ -18,7 +18,7 @@ catalogs:
   default:
     '@iconify/json':
       specifier: ^2.2.327
-      version: 2.2.327
+      version: 2.2.329
   dev:
     '@antfu/eslint-config':
       specifier: ^4.12.0
@@ -59,9 +59,6 @@ catalogs:
     execa:
       specifier: ^9.5.2
       version: 9.5.2
-    fast-glob:
-      specifier: ^3.3.3
-      version: 3.3.3
     lint-staged:
       specifier: ^15.5.1
       version: 15.5.1
@@ -106,7 +103,7 @@ importers:
         version: 24.3.0
       '@iconify/json':
         specifier: 'catalog:'
-        version: 2.2.327
+        version: 2.2.329
       '@iconify/types':
         specifier: catalog:dev
         version: 2.0.0
@@ -140,9 +137,6 @@ importers:
       execa:
         specifier: catalog:dev
         version: 9.5.2
-      fast-glob:
-        specifier: catalog:dev
-        version: 3.3.3
       lint-staged:
         specifier: catalog:dev
         version: 15.5.1
@@ -632,8 +626,8 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify/json@2.2.327':
-    resolution: {integrity: sha512-G9LFSD3ZSNHj+0O98ZStkBOd543I05fomTep3DA8UyrreJRnsbjswAe8Ux9teHc/GE/alcCuaaxNqWyCTdN6PA==}
+  '@iconify/json@2.2.329':
+    resolution: {integrity: sha512-t8h9fj+u5Fjre4jifYaC1SPqzIxZ8OIJefzSlLpjX0+2ejrcXKiYl+slIQ1uv2Eco28c+gzkvrwO7cXr3sELMw==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3525,7 +3519,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@iconify/json@2.2.327':
+  '@iconify/json@2.2.329':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.2
