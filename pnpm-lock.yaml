@@ -17,7 +17,7 @@ catalogs:
       version: 2.8.1
   default:
     '@iconify/json':
-      specifier: ^2.2.327
+      specifier: ^2.2.329
       version: 2.2.329
   dev:
     '@antfu/eslint-config':
