@@ -9,10 +9,12 @@ import { loadNodeIcon } from '@iconify/utils/lib/loader/node-loader'
 import * as cheerio from 'cheerio'
 import { Presets, SingleBar } from 'cli-progress'
 import { execa } from 'execa'
+import fg from 'fast-glob'
 import pLimit from 'p-limit'
 import pc from 'picocolors'
 
 import collections from '~~/collections'
+
 import { generateFiles } from './utils/generate-files'
 import { names } from './utils/names'
 
@@ -35,7 +37,45 @@ async function svgToTs() {
 
   await Promise.all(tasks)
 
-  execa('eslint', ['--fix', '--no-ignore', packagesFolder])
+  const files = await fg(`${packagesFolder}/**/icons/*.ts`, { absolute: true })
+  const batchSize = 50
+  await runEslintInBatches(files, batchSize, 5)
+}
+
+async function runEslintInBatches(filePaths: string[], batchSize: number, concurrency: number = 5) {
+  const fileBatches = chunk(filePaths, batchSize)
+  const limit = pLimit(concurrency)
+
+  const progressBar = new SingleBar({
+    hideCursor: true,
+    clearOnComplete: false,
+    format: `${pc.cyan('ESLint')} {bar} {value}/{total} ${pc.gray('{status}')}`,
+    linewrap: false,
+    barsize: 40,
+  }, Presets.shades_classic)
+
+  progressBar.start(fileBatches.length, 0, { status: '' })
+
+  let completed = 0
+
+  const promises = fileBatches.map(batch =>
+    limit(async () => {
+      await execa('eslint', ['--fix', '--no-ignore', ...batch])
+      completed++
+      progressBar.update(completed)
+    }),
+  )
+
+  await Promise.all(promises)
+  progressBar.stop()
+}
+
+function chunk<T>(array: T[], size: number): T[][] {
+  const result: T[][] = []
+  for (let i = 0; i < array.length; i += size) {
+    result.push(array.slice(i, i + size))
+  }
+  return result
 }
 
 async function createIconset(collection: IconifyJSON) {

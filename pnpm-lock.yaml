@@ -59,6 +59,9 @@ catalogs:
     execa:
       specifier: ^9.5.2
       version: 9.5.2
+    fast-glob:
+      specifier: ^3.3.3
+      version: 3.3.3
     lint-staged:
       specifier: ^15.5.1
       version: 15.5.1
@@ -137,6 +140,9 @@ importers:
       execa:
         specifier: catalog:dev
         version: 9.5.2
+      fast-glob:
+        specifier: catalog:dev
+        version: 3.3.3
       lint-staged:
         specifier: catalog:dev
         version: 15.5.1
