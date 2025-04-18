@@ -171,7 +171,917 @@ importers:
         specifier: catalog:vite
         version: 3.1.1(@types/debug@4.1.12)(@types/node@22.14.1)(jiti@2.4.2)(less@4.3.0)(sass@1.86.3)(tsx@4.19.3)(yaml@2.7.1)
 
+  packages/academicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/akar-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ant-design:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/arcticons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/aws:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/basil:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/bi:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/bitcoin-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/bpmn:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/brandico:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/bubbles:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/bx:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/bxl:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/bxs:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/bytesize:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/carbon:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/catppuccin:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/cbi:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/charm:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ci:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/cib:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/cif:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/cil:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/circle-flags:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/circum:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/clarity:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/codex:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/codicon:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/covid:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/cryptocurrency:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/cryptocurrency-color:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/cuida:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/dashicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/devicon:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/devicon-line:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/devicon-original:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/devicon-plain:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/duo-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ei:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/el:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/emblemicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/emojione:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/emojione-monotone:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/emojione-v1:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/entypo:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/entypo-social:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/eos-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ep:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/et:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/eva:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/f7:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fa:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fa-brands:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fa-regular:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fa-solid:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fa6-brands:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fa6-regular:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fa6-solid:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fad:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/famicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fe:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/feather:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/file-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/flag:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/flagpack:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/flat-color-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/flat-ui:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/flowbite:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fluent:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fluent-color:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fluent-emoji:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fluent-emoji-flat:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fluent-emoji-high-contrast:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fluent-mdl2:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fontelico:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fontisto:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/formkit:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/foundation:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/fxemoji:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/gala:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/game-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/garden:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/geo:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/gg:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/gis:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/gravity-ui:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/gridicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/grommet-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/guidance:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/healthicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
   packages/heroicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/heroicons-outline:
     dependencies:
       '@angular/core':
         specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -191,7 +1101,657 @@ importers:
         version: 2.8.1
     publishDirectory: dist
 
+  packages/hugeicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/humbleicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ic:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/icomoon-free:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/icon-park:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/icon-park-outline:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/icon-park-solid:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/icon-park-twotone:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/iconamoon:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/iconoir:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/icons8:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/il:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ion:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/iwwa:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ix:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/jam:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/la:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/lets-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/line-md:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/lineicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/logos:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ls:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/lsicon:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
   packages/lucide:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/lucide-lab:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/mage:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/majesticons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/maki:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/map:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/marketeq:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/material-icon-theme:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/material-symbols:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/material-symbols-light:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/mdi:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/mdi-light:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/medical-icon:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/memory:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/meteocons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/meteor-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/mi:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/mingcute:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/mono-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/mynaui:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/nimbus:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/nonicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/noto:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/noto-v1:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/nrk:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/octicon:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/oi:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ooui:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/openmoji:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/oui:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/pajamas:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/pepicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/pepicons-pencil:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/pepicons-pop:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/pepicons-print:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ph:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/pixel:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/pixelarticons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/prime:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/proicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ps:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/qlementine-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/quill:
     dependencies:
       '@angular/core':
         specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -211,7 +1771,387 @@ importers:
         version: 2.8.1
     publishDirectory: dist
 
+  packages/raphael:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/ri:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/rivet-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/si:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/si-glyph:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
   packages/simple-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/simple-line-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/skill-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/solar:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/stash:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/streamline:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/streamline-emojis:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/subway:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/svg-spinners:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/system-uicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/tabler:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/tdesign:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/teenyicons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/token:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/token-branded:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/topcoat:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/twemoji:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/typcn:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/uil:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/uim:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/uis:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/uit:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/uiw:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/unjs:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/vaadin:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/vs:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/vscode-icons:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/websymbol:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/weui:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/whh:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/wi:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/wpf:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/zmdi:
+    dependencies:
+      '@angular/core':
+        specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
+        version: 19.2.6(rxjs@7.8.2)(zone.js@0.15.0)
+      tslib:
+        specifier: catalog:angular
+        version: 2.8.1
+    publishDirectory: dist
+
+  packages/zondicons:
     dependencies:
       '@angular/core':
         specifier: ^17.0.0 || ^18.0.0 || ^19.0.0
