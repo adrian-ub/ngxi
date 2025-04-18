@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkPerson20FilledIcon],svg[fluent-link-person-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18 8a4 4 0 0 0-4-4h-2l-.102.007A.75.75 0 0 0 12 5.5h2l.164.005a2.5 2.5 0 0 1 1.886 3.926c.44.265.805.64 1.059 1.086A3.98 3.98 0 0 0 18 8M8.75 4.75A.75.75 0 0 0 8 4H6l-.2.005A4 4 0 0 0 6 12h2l.102-.007A.75.75 0 0 0 8 10.5H6l-.164-.005A2.5 2.5 0 0 1 6 5.5h2l.102-.007a.75.75 0 0 0 .648-.743m5 2.5h-7.5l-.102.007A.75.75 0 0 0 6.25 8.75h7.5l.102-.007a.75.75 0 0 0-.102-1.493M16.5 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 4.5c0 1.245-1 2.5-3.5 2.5S11 17.75 11 16.5a1.5 1.5 0 0 1 1.5-1.5h4a1.5 1.5 0 0 1 1.5 1.5"></svg:path>`,
+})
+export class FluentLinkPerson20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

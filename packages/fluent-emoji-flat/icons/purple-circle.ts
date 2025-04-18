@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatPurpleCircleIcon],svg[fluent-emoji-flat-purple-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#8D65C5" d="M30 16c0 7.732-6.268 14-14 14S2 23.732 2 16S8.268 2 16 2s14 6.268 14 14"></svg:path>`,
+})
+export class FluentEmojiFlatPurpleCircleIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

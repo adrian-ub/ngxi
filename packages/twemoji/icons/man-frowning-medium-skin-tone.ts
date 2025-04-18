@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiManFrowningMediumSkinToneIcon],svg[twemoji-man-frowning-medium-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:path id="twemojiManFrowningMediumSkinTone0" fill="#D5AB88" d="M15 24v4a3 3 0 1 0 6 0v-4z"></svg:path></svg:defs><svg:path fill="#D5AB88" d="M9 5.938V17c0 4.971 4.029 9 9 9s9-4.029 9-9V6.25z"></svg:path><svg:path fill="#662113" d="M14 16a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1m8 0a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1"></svg:path><svg:path fill="#C1694F" d="M19 19.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 0 1"></svg:path><svg:path fill="#D5AB88" d="M10.847 13.715c0 1.58-.8 2.861-1.788 2.861s-1.788-1.281-1.788-2.861s.801-2.861 1.788-2.861s1.788 1.281 1.788 2.861m17.882 0c0 1.58-.8 2.861-1.788 2.861s-1.788-1.281-1.788-2.861s.8-2.861 1.788-2.861s1.788 1.281 1.788 2.861"></svg:path><svg:path fill="#963B22" d="M18 .823c-7.019 0-10.139 4.684-10.139 8.588s1.343 4.986 1.56 3.903c.78-3.903 3.12-5.101 3.12-5.101c4.68 3.904 3.9.781 3.9.781c4.679 4.684 2.34 0 2.34 0c1.56 1.562 6.239 1.562 6.239 1.562s.78 1.198 1.559 2.759c.78 1.562 1.56 0 1.56-3.903c0-3.905-3.9-8.589-10.139-8.589"></svg:path><svg:path fill="#4289C1" d="M27 27H9a4 4 0 0 0-4 4v5h26v-5a4 4 0 0 0-4-4"></svg:path><svg:path fill="#2A6797" d="M26 32h1v4h-1zM9 32h1v4H9z"></svg:path><svg:use href="#twemojiManFrowningMediumSkinTone0"></svg:use><svg:use href="#twemojiManFrowningMediumSkinTone0"></svg:use><svg:path fill="#C1694F" d="M15 24s1.001-2 3-2s3 2 3 2z"></svg:path>`,
+})
+export class TwemojiManFrowningMediumSkinToneIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

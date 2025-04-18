@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentRewind24FilledIcon],svg[fluent-rewind-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.03 4.362c.974-.83 2.472-.137 2.472 1.142v3.99l6.027-5.13c.974-.83 2.473-.138 2.473 1.142v12.992c0 .879-.707 1.48-1.465 1.503h-.087a1.48 1.48 0 0 1-.92-.36l-6.028-5.13v3.986c0 1.279-1.498 1.971-2.472 1.142l-7.41-6.306a1.75 1.75 0 0 1 0-2.665zm-7.41 6.306l.486.57Z"></svg:path>`,
+})
+export class FluentRewind24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

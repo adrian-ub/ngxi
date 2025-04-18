@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[whhSnaptogridIcon],svg[whh-snaptogrid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1007 751h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5m0-410h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5M870 751h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5m0-410h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5m-136 683h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5m0-137h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5m0-136H290q-7 0-12-5t-5-12V290q0-7 5-12t12-5h444q7 0 12 5t5 12v444q0 7-5 12t-12 5m-51-410H341v342h342zm51-136h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5m0-137h-34q-7 0-12-5t-5-12V17q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5M324 205h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5m0-137h-34q-7 0-12-5t-5-12V17q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5M188 751h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5m0-410h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5M51 751H17q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5m0-410H17q-7 0-12-5t-5-12v-34q0-7 5-12t12-5h34q7 0 12 5t5 12v34q0 7-5 12t-12 5m239 478h34q7 0 12 5t5 12v34q0 7-5 12t-12 5h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5m0 137h34q7 0 12 5t5 12v34q0 7-5 12t-12 5h-34q-7 0-12-5t-5-12v-34q0-7 5-12t12-5"></svg:path>`,
+})
+export class WhhSnaptogridIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

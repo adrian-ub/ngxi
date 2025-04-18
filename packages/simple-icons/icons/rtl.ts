@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsRtlIcon],svg[simple-icons-rtl-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M0 9.889v4.222h7.498V9.89H0zm8.25 0v4.222h7.5V9.89h-7.5zm8.252 0v4.222H24V9.89h-7.498zm-14.365.966H4.12c.61 0 .945.275.945.733c0 .397-.254.662-.691.723l.977.824h-.754l-.926-.795H2.656v.795h-.52zm8.281 0h3.164v.448H12.26v1.832h-.52v-1.832h-1.322zm8.414 0h.518v1.832h2.32v.448h-2.838zm-16.176.428v.631H4.06c.325 0 .478-.103.478-.316s-.153-.315-.478-.315z"></svg:path>`,
 })
 export class SimpleIconsRtlIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

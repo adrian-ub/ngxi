@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsBorgOutlineIcon],svg[material-symbols-borg-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 22q-.275 0-.525-.075t-.475-.2L4 17.7q-.475-.275-.737-.737T3 15.95v-7.9q0-.55.263-1.012T4 6.3l7-4.025q.225-.125.475-.2T12 2t.525.075t.475.2L20 6.3q.475.275.738.738T21 8.05v7.9q0 .55-.262 1.013T20 17.7l-7 4.025q-.225.125-.475.2T12 22m-4-6v-3H5v2.95l6 3.475V16zm0-8h3V4.575L5 8.05V11h3zm2 6h4v-4h-4zm6 2h-3v3.425l6-3.475V13h-3zm0-8v3h3V8.05l-6-3.475V8z"></svg:path>`,
+})
+export class MaterialSymbolsBorgOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

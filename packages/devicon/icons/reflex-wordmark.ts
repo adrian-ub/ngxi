@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[deviconReflexWordmarkIcon],svg[devicon-reflex-wordmark-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#1C2024" d="M0 52.148v23.704h4.74V66.37h11.062v-4.74H4.741v-4.741h11.061v4.74h4.741v-9.48ZM15.802 66.37v9.482h4.741V66.37Zm9.482-14.222v23.704h15.802v-4.74H30.093l-.068-4.742h11.061v-4.74H30.025v-4.741h11.061v-4.74zm20.543 0v23.704h4.74V66.37H61.63v-4.74H50.568v-4.741H61.63v-4.74zm20.543 0v23.704h15.803v-4.74H71.11V52.147Zm20.544 0v23.704h15.802v-4.74H91.722l-.068-4.742h11.062v-4.74H91.654v-4.741h11.062v-4.74zm20.543 0v9.482h4.74v-9.482zm4.74 9.482v4.74h11.062v-4.74zm11.062 0H128v-9.482h-4.74zm0 4.74v9.482H128V66.37Zm-11.061 0h-4.741v9.482h4.74z"></svg:path>`,
+})
+export class DeviconReflexWordmarkIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

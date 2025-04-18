@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[stashIntegrationsLightIcon],svg[stash-integrations-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.5 4.5a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-2 1A2 2 0 1 1 8 7.437v4.634q.296-.297.648-.507c.904-.544 2.072-.705 3.12-.85l.163-.022c1.15-.16 2.152-.323 2.883-.817c.61-.413 1.09-1.103 1.173-2.441a2 2 0 1 1 1.001.006c-.09 1.615-.682 2.633-1.614 3.263c-.957.647-2.204.827-3.305.98l-.066.009c-1.134.157-2.116.294-2.839.729a2.13 2.13 0 0 0-.831.882C8.13 13.701 8 14.243 8 15v1.563a2 2 0 1 1-1 0V7.437A2 2 0 0 1 5.5 5.5m11-1a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-9 13a1 1 0 1 0 0 2a1 1 0 0 0 0-2"></svg:path>`,
+})
+export class StashIntegrationsLightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

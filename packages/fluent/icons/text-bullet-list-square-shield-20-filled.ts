@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTextBulletListSquareShield20FilledIcon],svg[fluent-text-bullet-list-square-shield-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 5.75A2.75 2.75 0 0 1 5.75 3h8.5A2.75 2.75 0 0 1 17 5.75v4.667c-.514-.136-1.017-.446-1.524-.99A1.34 1.34 0 0 0 14.504 9h-.01a1.34 1.34 0 0 0-.972.427a4 4 0 0 1-.648.573H9.5a.5.5 0 0 0 0 1h.81c-.198.247-.31.56-.31.875v2.259l.004.255v.008c.031.948.226 1.824.603 2.603H5.75A2.75 2.75 0 0 1 3 14.25zM6.75 8a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m.75 2.25a.75.75 0 1 0-1.5 0a.75.75 0 0 0 1.5 0M6.75 14a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5M9 7.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M14.499 19a.3.3 0 0 1-.11-.02q-1.038-.37-1.761-.979L12.627 18a4.3 4.3 0 0 1-.877-.999L11.749 17q-.694-1.093-.745-2.635l-.004-.24v-2.25c0-.207.157-.375.35-.375c1.07 0 2.033-.458 2.903-1.39A.34.34 0 0 1 14.5 10c.09 0 .178.037.246.11c.87.932 1.833 1.39 2.903 1.39c.193 0 .35.168.35.375v2.25l-.004.24q-.05 1.542-.745 2.635v.001q-.356.56-.877.999l-.002.001q-.724.61-1.761.98a.3.3 0 0 1-.11.019"></svg:path>`,
+})
+export class FluentTextBulletListSquareShield20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

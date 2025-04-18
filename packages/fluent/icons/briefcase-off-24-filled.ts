@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBriefcaseOff24FilledIcon],svg[fluent-briefcase-off-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.135 6.196A3.25 3.25 0 0 0 3 9.25v1.5c0 .966.784 1.75 1.75 1.75H10V12a1 1 0 0 1 .263-.676l3.413 3.413A1 1 0 0 1 13 15h-2a1 1 0 0 1-1-1H4.75A3.24 3.24 0 0 1 3 13.49v3.26A3.25 3.25 0 0 0 6.25 20h11.5a3.2 3.2 0 0 0 1.024-.165l1.945 1.945a.75.75 0 0 0 1.061-1.06L3.28 2.22a.75.75 0 1 0-1.06 1.06zM17.182 14l3.682 3.683q.135-.446.136-.933v-3.26a3.24 3.24 0 0 1-1.75.51zM8 4.818l7.682 7.682h3.568A1.75 1.75 0 0 0 21 10.75v-1.5A3.25 3.25 0 0 0 17.75 6H16V4.25A2.25 2.25 0 0 0 13.75 2h-3.5A2.25 2.25 0 0 0 8 4.25zM10.25 3.5h3.5a.75.75 0 0 1 .75.75V6h-5V4.25a.75.75 0 0 1 .75-.75"></svg:path>`,
+})
+export class FluentBriefcaseOff24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ionSunnySharpIcon],svg[ion-sunny-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M234 26h44v92h-44zm0 368h44v92h-44zm104.025-251.143l65.054-65.054l31.113 31.113l-65.054 65.054zM77.815 403.074l65.054-65.054l31.113 31.113l-65.054 65.053zM394 234h92v44h-92zm-368 0h92v44H26zm312.028 135.14l31.113-31.113l65.054 65.054l-31.113 31.112zM77.802 108.92l31.113-31.113l65.053 65.054l-31.112 31.113zM256 358a102 102 0 1 1 102-102a102.12 102.12 0 0 1-102 102"></svg:path>`,
+})
+export class IonSunnySharpIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiFlagForFlagStKittsAndNevisIcon],svg[twemoji-flag-for-flag-st-kitts-and-nevis-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#009E49" d="M4 5a4 4 0 0 0-4 4v15.323L26.496 5H4z"></svg:path><svg:path fill="#CE1126" d="M32 31a4 4 0 0 0 4-4V11.186L8.767 31H32z"></svg:path><svg:path fill="#FCD116" d="M26.496 5L0 24.323v1.874L29.066 5zM8.767 31L36 11.186V9.312L6.197 31z"></svg:path><svg:path fill="#141414" d="M32 5h-2.934L0 26.197V27a4 4 0 0 0 4 4h2.197L36 9.312V9a4 4 0 0 0-4-4z"></svg:path><svg:path d="M27.152 9.729l-2.074 1.513l-2.079-1.505l.798 2.439l-2.074 1.513l2.567-.005l.797 2.44l.789-2.443l2.567-.004l-2.08-1.505zM13.185 19.915l-2.074 1.513l-2.079-1.505l.798 2.439l-2.074 1.513l2.567-.005l.797 2.44l.789-2.443l2.567-.004l-2.08-1.505z" fill="#FFF"></svg:path>`,
+})
+export class TwemojiFlagForFlagStKittsAndNevisIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

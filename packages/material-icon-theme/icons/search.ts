@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeSearchIcon],svg[material-icon-theme-search-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#42a5f5" d="M17 17a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-3a7 7 0 1 0 7 7a7 7 0 0 0-7-7"></svg:path><svg:path fill="#42a5f5" d="m19.586 26.414l2.828-2.828L26 27.17L23.17 30zM10 26H6V4h9.172L22 10.828V12h2v-2l-8-8H6a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h4Z"></svg:path><svg:path fill="#42a5f5" d="M22 12h-8V4h2l6 6zm0 0h2v2h-2z"></svg:path>`,
+})
+export class MaterialIconThemeSearchIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

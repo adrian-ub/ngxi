@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2ChartTemplateIcon],svg[fluent-mdl2-chart-template-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M128 0v128H0V0zm0 256v128H0V256zm0 256v128H0V512zm0 256v128H0V768zm0 256v128H0v-128zm0 256v128H0v-128zm0 256v128H0v-128zM0 1792h128v128H0zm128 256v-128h128v128zM384 0v128H256V0zm0 2048v-128h128v128zm256 0v-128h128v128zM640 0v128H512V0zm256 0v128H768V0zm256 0v128h-128V0zm256 0v128h-128V0zm128 256h-128V128h128zm0 128v128h-128V384zm-128 384V640h128v128zm0 256V896h128v128zm-256 256v-128h512v128zm-128 640h896v128H896V1024h128zm128-512h384v128h-384zm0 384v-128h640v128z"></svg:path>`,
+})
+export class FluentMdl2ChartTemplateIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

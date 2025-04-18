@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsChartmogulIcon],svg[simple-icons-chartmogul-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M10.621 19.89V8.75L2.867 19.89H0V4.11h2.758v11.112l7.754-11.113h2.867v11.14L21.16 4.11H24v15.782h-2.73V8.75l-7.755 11.14Z"></svg:path>`,
 })
 export class SimpleIconsChartmogulIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

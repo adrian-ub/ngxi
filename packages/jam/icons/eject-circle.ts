@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamEjectCircleIcon],svg[jam-eject-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m1.746-12.587l2.898 4.055c.646.905.389 2.13-.576 2.737a2.2 2.2 0 0 1-1.17.334H7.102c-1.16 0-2.102-.883-2.102-1.972c0-.391.124-.774.356-1.099l2.898-4.055c.647-.905 1.952-1.146 2.917-.54c.227.143.422.327.575.54m-4.644 5.154h5.796L10 6.512zM6 13.539h8a1 1 0 0 1 0 2H6a1 1 0 1 1 0-2"></svg:path>`,
+})
+export class JamEjectCircleIcon {
+  readonly viewBox = input("-2 -2 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

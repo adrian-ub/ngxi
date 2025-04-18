@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastHeavyDollarSignIcon],svg[fluent-emoji-high-contrast-heavy-dollar-sign-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M22.788 20.56c-.04-2.6-1.91-6.46-6.89-6.46c-2.85 0-3.24-1.74-3.27-2.39c.03-.81.4-2.69 3.23-2.69c2.94 0 3.28 2.07 3.31 2.71c.03.99.88 1.84 1.85 1.75c1-.02 1.79-.85 1.76-1.85c-.05-2.17-1.49-5.24-5.1-6.03l.03-1.77c.01-1-.79-1.82-1.79-1.83h-.02c-.99 0-1.8.8-1.81 1.79l-.02 1.8c-3.64.77-5.04 3.88-5.06 6.11c.04 2.42 1.91 6.02 6.89 6.02c2.81 0 3.21 2.04 3.27 2.8c-.08.49-.54 2.28-3.27 2.28c-2.77 0-3.21-1.86-3.28-2.41c-.09-1-.95-1.72-1.97-1.64c-1 .09-1.73.97-1.64 1.96c.15 1.71 1.44 4.75 5.07 5.52v2.07c0 1 .81 1.81 1.81 1.81s1.82-.81 1.82-1.81v-2.07a6.28 6.28 0 0 0 5.07-5.48l.01-.1z"></svg:path>`,
+})
+export class FluentEmojiHighContrastHeavyDollarSignIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

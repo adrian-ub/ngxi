@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsManjaroIcon],svg[simple-icons-manjaro-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M2.182 0A2.177 2.177 0 0 0 0 2.182v19.636C0 23.027.973 24 2.182 24h4.363V6.545h8.728V0Zm15.273 0v24h4.363A2.177 2.177 0 0 0 24 21.818V2.182A2.177 2.177 0 0 0 21.818 0ZM8.727 8.727V24h6.546V8.727Z"></svg:path>`,
 })
 export class SimpleIconsManjaroIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

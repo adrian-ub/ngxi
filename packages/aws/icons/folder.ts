@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[awsFolderIcon],svg[aws-folder-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#232F3D" fill-rule="evenodd" d="M4,42 L44,42 L44,16 L4,16 L4,42 Z M16.586,6 L20.294,9.708 C20.481,9.896 20.735,10.001 21.001,10.001 L44,10.001 L44,14 L4,14 L4,6 L16.586,6 Z M46,9.001 C46,8.449 45.553,8.001 45,8.001 L21.415,8.001 L17.707,4.293 C17.52,4.105 17.266,4 17,4 L3,4 C2.447,4 2,4.448 2,5 L2,15 L2,43 C2,43.552 2.447,44 3,44 L45,44 C45.553,44 46,43.552 46,43 L46,15 C46,14.996 45.998,14.993 45.998,14.989 L46,14.989 L46,9.001 Z"></svg:path>`,
+})
+export class AwsFolderIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

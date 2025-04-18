@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMailUnread16FilledIcon],svg[fluent-mail-unread-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.64 5.396A2 2 0 1 0 11.062 3q-.062.24-.063.5a2 2 0 0 0 2.64 1.896M4 3h6.041q-.04.245-.041.5c0 1.285.808 2.381 1.944 2.809L8 8.432l-6-3.23V5a2 2 0 0 1 2-2m10 3.337L8.237 9.44a.5.5 0 0 1-.474 0L2 6.337V11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2z"></svg:path>`,
+})
+export class FluentMailUnread16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

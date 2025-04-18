@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[oouiSmallerTextIcon],svg[ooui-smaller-text-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15.75 18h-1.51a.64.64 0 0 1-.42-.13a.8.8 0 0 1-.24-.32l-1-2.65H7.41l-1 2.65a.8.8 0 0 1-.23.31a.62.62 0 0 1-.42.14H4.25L9 6h2zm-3.69-4.5L10.4 9.12a12 12 0 0 1-.4-1.3q-.09.39-.2.72t-.2.58L7.95 13.5z"></svg:path>`,
+})
+export class OouiSmallerTextIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

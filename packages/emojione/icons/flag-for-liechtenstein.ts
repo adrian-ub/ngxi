@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneFlagForLiechtensteinIcon],svg[emojione-flag-for-liechtenstein-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#ed4c5c" d="M32 62c16.6 0 30-13.4 30-30H2c0 16.6 13.4 30 30 30"></svg:path><svg:path fill="#2a5f9e" d="M32 2C15.4 2 2 15.4 2 32h60C62 15.4 48.6 2 32 2"></svg:path><svg:path fill="#ffce31" d="M28.7 20.9c0-2.8-.7-5.2-5.2-5.2c-1.2 0-2 .3-2.8.5c-.2-.3-3.2-.3-3.4 0c-.8-.2-1.6-.4-2.7-.4c-5.3 0-5.1 2.3-5.1 5.1c0 .4-.4 1.3-.4 1.3L11 29h16.1l1.9-6.8s-.3-.8-.3-1.3"></svg:path><svg:g fill="#3e4347"><svg:ellipse cx="19" cy="29" rx="8" ry="1"></svg:ellipse><svg:path d="M25.7 25h-1.1c0-1.3-.7-2.4-1.5-2.4s-1.5 1.1-1.5 2.4h-1.1c0-1.3-.7-2.4-1.5-2.4s-1.5 1.1-1.5 2.4h-1.1c0-1.3-.7-2.4-1.5-2.4s-1.5 1.1-1.5 2.4h-1.1c0-4-3.3-2.8-3.3-2.8q.75-1.2 1.8-1.2c.8 0 1.6.6 2 1.6c.5-1 1.2-1.6 2-1.6s1.6.6 2 1.6c.5-.9 1.2-1.6 2-1.6s1.6.6 2 1.6c.5-.9 1.2-1.6 2-1.6s1.6.6 2 1.6c.5-1 1.2-1.6 2-1.6q1.05 0 1.8 1.2c.4 0-2.9-1.2-2.9 2.8"></svg:path></svg:g><svg:g fill="#ffce31"><svg:circle cx="16.8" cy="15.9" r=".5"></svg:circle><svg:circle cx="15.6" cy="15.6" r=".5"></svg:circle><svg:circle cx="14.4" cy="15.4" r=".5"></svg:circle><svg:circle cx="13.2" cy="15.2" r=".5"></svg:circle><svg:circle cx="12" cy="15.3" r=".5"></svg:circle><svg:circle cx="10.9" cy="15.7" r=".5"></svg:circle><svg:circle cx="10" cy="16.4" r=".5"></svg:circle><svg:circle cx="9.3" cy="17.4" r=".5"></svg:circle><svg:circle cx="9" cy="18.6" r=".5"></svg:circle><svg:circle cx="9" cy="19.8" r=".5"></svg:circle><svg:circle cx="9.2" cy="20.9" r=".5"></svg:circle><svg:circle cx="21.2" cy="15.9" r=".5"></svg:circle><svg:circle cx="22.4" cy="15.6" r=".5"></svg:circle><svg:circle cx="23.6" cy="15.4" r=".5"></svg:circle><svg:circle cx="24.8" cy="15.2" r=".5"></svg:circle><svg:circle cx="26" cy="15.3" r=".5"></svg:circle><svg:circle cx="27.1" cy="15.7" r=".5"></svg:circle><svg:circle cx="28" cy="16.4" r=".5"></svg:circle><svg:circle cx="28.7" cy="17.4" r=".5"></svg:circle><svg:circle cx="29" cy="18.6" r=".5"></svg:circle><svg:circle cx="29" cy="19.8" r=".5"></svg:circle><svg:circle cx="28.8" cy="20.9" r=".5"></svg:circle><svg:path d="M18.3 11.2c.1.3.3.5.5.5l-.8 1.4l.3.5c-.6.2-1 .7-1.1 1.2c0 .2-.1.3-.1.5c0 1 .8 1.8 1.8 1.8s1.8-.8 1.8-1.8c0-.2 0-.3-.1-.5c-.2-.6-.6-1-1.1-1.2l.3-.5l-.8-1.4c.3-.1.5-.2.5-.5l1.1.7L22 11l-1.4-.9l-1.1.7c-.1-.2-.3-.4-.5-.5l.8-1.5l-.8-1.6l-.9 1.7l.8 1.5c-.3 0-.5.2-.5.5l-1.1-.7l-1.5.8l1.4.9z"></svg:path></svg:g><svg:g fill="#3e4347"><svg:path d="M15.5 20.7c-.5.5-1.1.8-1.7.9c.9.2 2 0 2.7-.7c1.1-1.1 1.1-3 0-4.1c-.1-.1-.3-.2-.4-.3c.7 1.4.5 3.1-.6 4.2m7 0c.5.5 1.1.8 1.7.9c-.9.2-2 0-2.7-.7c-1.1-1.1-1.1-3 0-4.1c.1-.1.3-.2.4-.3c-.7 1.4-.5 3.1.6 4.2"></svg:path><svg:ellipse cx="15" cy="25.5" rx=".4" ry="1.6" transform="rotate(-7.36 15.009 25.527)"></svg:ellipse><svg:ellipse cx="11.2" cy="25.7" rx=".4" ry="1.6" transform="rotate(-16.116 11.231 25.745)"></svg:ellipse><svg:ellipse cx="23" cy="25.5" rx="1.6" ry=".4" transform="rotate(-82.64 22.992 25.525)"></svg:ellipse><svg:ellipse cx="26.8" cy="25.7" rx="1.6" ry=".4" transform="rotate(-73.883 26.768 25.745)"></svg:ellipse><svg:ellipse cx="19" cy="25.4" rx=".4" ry="1.7"></svg:ellipse><svg:circle cx="19" cy="20" r="1.1"></svg:circle><svg:circle cx="19" cy="18" r="1"></svg:circle><svg:circle cx="19" cy="16.4" r=".8"></svg:circle></svg:g>`,
+})
+export class EmojioneFlagForLiechtensteinIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

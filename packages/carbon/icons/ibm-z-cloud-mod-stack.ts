@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonIbmZCloudModStackIcon],svg[carbon-ibm-z-cloud-mod-stack-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.496 27.386L16 28.842L5 22.426v-5.852l10.016-5.843c.292.166.625.269.984.269a2 2 0 1 0-2-2l.001.008l-10.505 6.128A1 1 0 0 0 3 16v7c0 .355.189.685.496.864l12 7a1 1 0 0 0 1.008 0l3-1.75z"></svg:path><svg:path fill="currentColor" d="m28.504 8.136l-3-1.75l-1.008 1.728L27 9.574v12.852l-4.593 2.679l-10.409-6.093L12 19a2 2 0 1 0-2 2c.358 0 .69-.102.981-.267l10.92 6.393a1 1 0 0 0 1.009.001l5.594-3.263c.307-.179.496-.509.496-.864V9c0-.355-.189-.685-.496-.864"></svg:path><svg:path fill="currentColor" d="M23 17.277V5.5c0-.355-.189-.685-.496-.864l-6-3.5a1 1 0 0 0-1.008 0l-12 7A1 1 0 0 0 3 9v2.999h2V9.574l11-6.417l5 2.917v11.203c-.595.347-1 .984-1 1.723a2 2 0 0 0 4 0c0-.738-.405-1.376-1-1.723"></svg:path>`,
+})
+export class CarbonIbmZCloudModStackIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

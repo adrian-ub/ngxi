@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorBookDatabase32Icon],svg[fluent-color-book-database-32-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorBookDatabase320)" d="M6 25h20.688S26 25.4 26 27s.688 2 .688 2H9a3 3 0 0 1-3-3z"></svg:path><svg:path fill="url(#fluentColorBookDatabase321)" d="M9 28a2 2 0 0 1-2-2h18.25A1.75 1.75 0 0 0 27 24.25V6a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v20a4 4 0 0 0 4 4h17a1 1 0 1 0 0-2z"></svg:path><svg:path fill="url(#fluentColorBookDatabase322)" d="M10.75 6A1.75 1.75 0 0 0 9 7.75v2.5c0 .966.784 1.75 1.75 1.75h10.5A1.75 1.75 0 0 0 23 10.25v-2.5A1.75 1.75 0 0 0 21.25 6z"></svg:path><svg:path fill="url(#fluentColorBookDatabase325)" fill-opacity=".3" d="M27 6a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v20a4 4 0 0 0 4 4h17a1 1 0 0 0 1-1z"></svg:path><svg:path fill="url(#fluentColorBookDatabase326)" fill-opacity=".3" d="M27 6a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v20a4 4 0 0 0 4 4h17a1 1 0 0 0 1-1z"></svg:path><svg:path fill="url(#fluentColorBookDatabase323)" d="M17 28c0 .546.34 1.059.936 1.5c1.21.897 3.473 1.5 6.064 1.5c3.866 0 7-1.343 7-3v-9c-.436.33-.936.603-1.46.827l-.04.018c-.6.253-1.274.462-2 .621a16.5 16.5 0 0 1-3.5.361c-2.086 0-4.046-.36-5.54-1A7 7 0 0 1 17 19z"></svg:path><svg:path fill="url(#fluentColorBookDatabase324)" d="M27.5 21.599c.772-.192 1.45-.445 2-.743c.94-.51 1.5-1.155 1.5-1.856c0-.7-.56-1.345-1.5-1.856c-.55-.298-1.228-.551-2-.743A14.7 14.7 0 0 0 24 16c-3.866 0-7 1.343-7 3s3.134 3 7 3c1.275 0 2.47-.146 3.5-.401"></svg:path><svg:defs><svg:lineargradient id="fluentColorBookDatabase320" x1="15.565" x2="15.565" y1="28.2" y2="25" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#9DEAFF"></svg:stop><svg:stop offset=".716" stop-color="#58AAFE"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorBookDatabase321" x1="12.591" x2="16.974" y1="7.239" y2="37.373" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#20AC9D"></svg:stop><svg:stop offset="1" stop-color="#2052CB"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorBookDatabase322" x1="13.828" x2="20.922" y1="4.971" y2="15.271" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#9FF0F9"></svg:stop><svg:stop offset="1" stop-color="#6CE0FF"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorBookDatabase323" x1="20.305" x2="28.471" y1="16.297" y2="29.692" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#3BD5FF"></svg:stop><svg:stop offset="1" stop-color="#4894FE"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorBookDatabase324" x1="28.667" x2="20.111" y1="22.6" y2="16" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#66C0FF"></svg:stop><svg:stop offset="1" stop-color="#C8F3FF"></svg:stop></svg:lineargradient><svg:radialgradient id="fluentColorBookDatabase325" cx="0" cy="0" r="1" gradientTransform="matrix(-6.66666 3.75003 -4.0889 -7.26909 19 28)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#4A43CB"></svg:stop><svg:stop offset=".443" stop-color="#4A43CB" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorBookDatabase326" cx="0" cy="0" r="1" gradientTransform="matrix(0 -11.5 5.96562 0 20.5 27)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#171155"></svg:stop><svg:stop offset=".328" stop-color="#171155"></svg:stop><svg:stop offset="1" stop-color="#4A43CB" stop-opacity="0"></svg:stop></svg:radialgradient></svg:defs></svg:g>`,
+})
+export class FluentColorBookDatabase32Icon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

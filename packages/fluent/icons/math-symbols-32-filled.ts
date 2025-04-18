@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMathSymbols32FilledIcon],svg[fluent-math-symbols-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 1.75c.69 0 1.25.56 1.25 1.25v3.5h3.5a1.25 1.25 0 1 1 0 2.5h-3.5v4a1.25 1.25 0 1 1-2.5 0V9h-3.5a1.25 1.25 0 1 1 0-2.5h3.5V3c0-.69.56-1.25 1.25-1.25m5.634 25.116L9.768 23l3.866-3.866a1.25 1.25 0 0 0-1.768-1.768L8 21.232l-3.866-3.866a1.25 1.25 0 0 0-1.768 1.768L6.232 23l-3.866 3.866a1.25 1.25 0 0 0 1.768 1.768L8 24.768l3.866 3.866a1.25 1.25 0 0 0 1.768-1.768M19.25 6.5a1.25 1.25 0 1 0 0 2.5h9.5a1.25 1.25 0 1 0 0-2.5zm0 15a1.25 1.25 0 1 0 0 2.5h9.5a1.25 1.25 0 1 0 0-2.5zm6.75-3a2 2 0 1 1-4 0a2 2 0 0 1 4 0M24 29a2 2 0 1 0 0-4a2 2 0 0 0 0 4"></svg:path>`,
+})
+export class FluentMathSymbols32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

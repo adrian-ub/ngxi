@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentArrowForwardDownLightning20FilledIcon],svg[fluent-arrow-forward-down-lightning-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m13.435 4.745l2.255 2.256H12l-.257-.005C8.943 6.908 7.25 5.38 7.25 3.25a.75.75 0 0 0-1.5 0l.005.213C5.868 6.423 8.349 8.5 12 8.5l3.69.001l-2.256 2.255l-.073.084a.75.75 0 0 0 1.133.976l3.536-3.535a1 1 0 0 0 .088-.107l.035-.055l.047-.099l.03-.1l.016-.093l.003-.06l-.003-.093l-.01-.062l-.015-.068l-.033-.091l-.05-.095l-.04-.06l-.068-.078l-3.536-3.535l-.084-.073a.75.75 0 0 0-.976 1.133M2.502 16h1.75l-.59 2.36c-.12.482.463.826.827.486l4.872-4.548A.75.75 0 0 0 8.85 13H7.752l.781-2.342A.5.5 0 0 0 8.06 10H4.586a.5.5 0 0 0-.462.308l-2.083 5a.5.5 0 0 0 .461.692"></svg:path>`,
+})
+export class FluentArrowForwardDownLightning20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsArhiveAltAddListIcon],svg[lets-icons-arhive-alt-add-list-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="2"><svg:path d="M21 12h-2.93c-.524 0-.786 0-1.007.118c-.22.119-.366.337-.657.773l-.812 1.218c-.29.436-.436.654-.657.773c-.221.118-.483.118-1.007.118h-3.86c-.524 0-.786 0-1.007-.118c-.22-.119-.366-.337-.657-.773l-.812-1.218c-.29-.436-.436-.654-.657-.773C6.716 12 6.454 12 5.93 12H3"></svg:path><svg:path stroke-linecap="round" d="m7 7l-3.707 3.707a1 1 0 0 0-.293.707V17a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5.586a1 1 0 0 0-.293-.707L17 7"></svg:path><svg:path d="M17 13V6.163c0-.245 0-.367-.028-.482a1 1 0 0 0-.12-.29c-.061-.1-.148-.187-.32-.36L14.968 3.47c-.173-.173-.26-.26-.36-.322a1 1 0 0 0-.29-.12C14.204 3 14.082 3 13.837 3H9.4c-.84 0-1.26 0-1.581.163a1.5 1.5 0 0 0-.656.656C7 4.139 7 4.559 7 5.4V13"></svg:path><svg:path d="M13 3v2.4c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C13.76 7 14.04 7 14.6 7H17"></svg:path></svg:g>`,
+})
+export class LetsIconsArhiveAltAddListIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

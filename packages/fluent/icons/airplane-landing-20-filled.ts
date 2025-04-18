@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentAirplaneLanding20FilledIcon],svg[fluent-airplane-landing-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m11.883 6l-1.03-2.147C10.16 2.414 8 2.906 8 4.503v.742L10.768 6zm-1.115 1a1 1 0 0 1-.263-.035L6 5.736V4.204c0-1.222-1.615-1.662-2.234-.608L2.24 6.19a1.75 1.75 0 0 0 .965 2.55l3.411 1.117l-1.672 1.527c-1.178 1.076-.085 3.003 1.442 2.545l6.612-1.984l3.03.992a1.5 1.5 0 0 0 1.967-1.426V11a4 4 0 0 0-4-4zM2 17.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1h-15a.5.5 0 0 1-.5-.5"></svg:path>`,
+})
+export class FluentAirplaneLanding20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixHandFilledIcon],svg[ix-hand-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M341.333 321.173H320l-.144-234.666c0-11.783-9.551-21.334-21.333-21.334c-10.94 0-19.957 8.236-21.19 18.846l-.143 2.487l.143 170.667H256v-192c0-11.782-9.551-21.333-21.333-21.333c-10.941 0-19.958 8.235-21.19 18.845l-.144 2.488v192H192V86.507c0-11.783-9.551-21.334-21.333-21.334c-10.941 0-19.958 8.236-21.19 18.846l-.144 2.487V267.84H128V129.173c0-11.782-9.551-21.333-21.333-21.333c-10.94 0-19.958 8.235-21.19 18.845l-.144 2.488v119.581c0 49.739 7.402 99.178 21.943 146.697l28.404 75.056h212.352a223.85 223.85 0 0 0 57.074-149.904l-.391-147.568l-2.35.564c-21.762 5.738-59.413 24.884-60.918 48.068l-.114 3.506z"></svg:path>`,
+})
+export class IxHandFilledIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

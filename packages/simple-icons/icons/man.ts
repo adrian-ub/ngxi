@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsManIcon],svg[simple-icons-man-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M10.979 14.943h2.05L15.46 18.7h-2.054l-.263-.409h-2.278l-.264.41H8.548zm1.025 1.568l-.458.711h.916l-.458-.712zM0 17.372C0 10.704 5.372 5.3 12 5.3s12 5.405 12 12.073q0 .674-.072 1.328H22.58q.081-.653.082-1.328c0-5.924-4.774-10.726-10.662-10.726S1.339 11.449 1.339 17.373q0 .675.08 1.328H.073A12.254 12.274 0 0 1 0 17.372m2.237-2.43h1.83l1.22 1.228l1.22-1.227h1.831V18.7H6.363v-1.38l-1.075 1.082l-1.076-1.082v1.38H2.237zm13.42 0h1.927l2.17 1.62v-1.62h1.975V18.7h-1.942l-2.156-1.605V18.7h-1.975Z"></svg:path>`,
 })
 export class SimpleIconsManIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

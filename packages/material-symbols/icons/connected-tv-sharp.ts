@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsConnectedTvSharpIcon],svg[material-symbols-connected-tv-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 16h2q0-.825-.587-1.412T5 14zm3.55 0H10q0-2.075-1.463-3.537T5 11v1.45q1.475 0 2.513 1.038T8.55 16m3 0H13q0-1.65-.625-3.113t-1.713-2.55t-2.55-1.712T5 8v1.45q2.725 0 4.638 1.913T11.55 16M8 21v-2H2V3h20v16h-6v2z"></svg:path>`,
+})
+export class MaterialSymbolsConnectedTvSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatToothbrushIcon],svg[fluent-emoji-flat-toothbrush-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#83CBFF" d="M11.08 3.74a1.056 1.056 0 0 1 1.48 0a1.024 1.024 0 0 1 0 1.47L9.35 8.437l-1.107-.553l-.373-.927zm2.858 2.85a1.056 1.056 0 0 1 1.48 0a1.056 1.056 0 0 1 0 1.48L12.2 11.287l-1.23-.301l-.25-1.178z"></svg:path><svg:path fill="#AEDDFF" d="M11.128 2.31a1.026 1.026 0 0 0-1.47 0L6.44 5.523l.468.989L7.92 7l3.219-3.213a1.043 1.043 0 0 0-.01-1.477m2.851 2.85a1.054 1.054 0 0 0-1.477 0L9.29 8.38l.385.956l1.092.52l3.213-3.21a1.047 1.047 0 0 0 0-1.487m1.378 2.861a1.056 1.056 0 0 1 1.48 0c.414.404.414 1.066.01 1.48l-3.218 3.217l-1.208-.456l-.272-1.023z"></svg:path><svg:path fill="#F8312F" d="M20.72 17.324a12.3 12.3 0 0 0-3.876-2.637a12.3 12.3 0 0 1-3.876-2.636L6.609 5.629a2.086 2.086 0 0 0-2.986 0a2.137 2.137 0 0 0 0 3.016l6.062 6.122l.287.3l13.893 14.042a2.98 2.98 0 0 0 4.252 0a3.053 3.053 0 0 0 0-4.295z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatToothbrushIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

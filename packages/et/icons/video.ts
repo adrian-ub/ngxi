@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[etVideoIcon],svg[et-video-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M7.5 0h-6C.631 0 0 .631 0 1.5v29c0 .869.631 1.5 1.5 1.5h34c.869 0 1.5-.631 1.5-1.5v-29c0-.869-.631-1.5-1.5-1.5zM1 30.5v-29c0-.313.187-.5.5-.5H7v30H1.5c-.313 0-.5-.187-.5-.5m7 .5V1h21v30zM36 1.5v29c0 .313-.187.5-.5.5H30V1h5.5c.313 0 .5.187.5.5"></svg:path><svg:path d="M14.777 10.084a.5.5 0 0 0-.514-.025a.5.5 0 0 0-.263.441v12a.5.5 0 0 0 .777.416l9-6a.5.5 0 0 0 0-.832zM15 21.566V11.434l7.599 5.066zM5 8H3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1M3 5h2a.5.5 0 0 0 0-1H3a.5.5 0 0 0 0 1m2 7H3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1m0 4H3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1m0 4H3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1m0 4H3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1m0 4H3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1M32 9h2a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1m0-4h2a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1m0 8h2a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1m0 4h2a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1m0 4h2a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1m0 4h2a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1m2 3h-2a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1"></svg:path></svg:g>`,
+})
+export class EtVideoIcon {
+  readonly viewBox = input("0 0 37 32")
+  readonly width = input("1.16em")
+  readonly height = input("1em")
+}

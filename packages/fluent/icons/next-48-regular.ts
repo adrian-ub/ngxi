@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentNext48RegularIcon],svg[fluent-next-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M39.5 7.25a1.25 1.25 0 0 1 2.5 0v33.5a1.25 1.25 0 1 1-2.5 0zM6 9.257v29.487c0 2.615 2.931 4.16 5.088 2.68l21.504-14.743c1.883-1.29 1.883-4.07 0-5.36L11.088 6.576C8.93 5.098 6 6.642 6 9.257m3.674-.618l21.504 14.743a.75.75 0 0 1 0 1.237L9.674 39.363a.75.75 0 0 1-1.174-.618V9.257a.75.75 0 0 1 1.174-.618"></svg:path>`,
+})
+export class FluentNext48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

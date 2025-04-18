@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightPageControlIcon],svg[material-symbols-light-page-control-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.998 13.808q-.746 0-1.276-.532q-.53-.531-.53-1.278q0-.746.532-1.276q.531-.53 1.278-.53q.746 0 1.276.532q.53.531.53 1.278q0 .746-.532 1.276q-.531.53-1.278.53m.002-.85q.39 0 .674-.284T4.958 12t-.284-.674T4 11.042t-.674.284t-.284.674t.284.674t.674.284m5.31.85q-.746 0-1.276-.532q-.53-.531-.53-1.278q0-.746.531-1.276q.532-.53 1.278-.53q.747 0 1.277.532q.53.531.53 1.278q0 .746-.532 1.276t-1.278.53m.002-.85q.39 0 .674-.284q.283-.284.283-.674t-.284-.674q-.283-.284-.673-.284t-.674.284t-.284.674t.284.674t.674.284m5.336.85q-.746 0-1.276-.532q-.53-.531-.53-1.278q0-.746.532-1.276q.531-.53 1.278-.53q.746 0 1.276.532q.53.531.53 1.278q0 .746-.532 1.276q-.531.53-1.278.53m.002-.85q.39 0 .674-.284t.284-.674t-.284-.674t-.674-.284t-.674.284t-.284.674t.284.674t.674.284m5.348.85q-.746 0-1.276-.532q-.53-.531-.53-1.278q0-.746.532-1.276q.531-.53 1.278-.53q.746 0 1.276.532q.53.531.53 1.278q0 .746-.532 1.276q-.531.53-1.278.53"></svg:path>`,
+})
+export class MaterialSymbolsLightPageControlIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

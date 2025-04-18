@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatLeftLuggageIcon],svg[fluent-emoji-flat-left-luggage-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#00A6ED" d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"></svg:path><svg:path fill="#fff" d="M15.146 8.943A3.25 3.25 0 0 1 12.125 11a3.255 3.255 0 0 1-3.25-3.26a3.256 3.256 0 0 1 3.25-3.262A3.25 3.25 0 0 1 15.07 6.36h6.465q.04 0 .08.003l.096-.004a1.289 1.289 0 0 1 .059 2.577a1 1 0 0 1-.114.007h-.95a.77.77 0 0 1-.547-.227l-.16-.16a.547.547 0 0 0-.774 0a.547.547 0 0 1-.774 0a.547.547 0 0 0-.774 0l-.16.16a.77.77 0 0 1-.548.227zm-4.654-.454a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5M14 16h-1.75a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H18a2 2 0 1 0-4 0m3 0h-2a1 1 0 1 1 2 0m-9 1a1 1 0 0 1 1-1h1.75a.25.25 0 0 1 .25.25v9.5a.25.25 0 0 1-.25.25H9a1 1 0 0 1-1-1zm13.25 9a.25.25 0 0 1-.25-.25v-9.5a.25.25 0 0 1 .25-.25H23a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1z"></svg:path><svg:path fill="#fff" d="M6.5 12A1.5 1.5 0 0 0 5 13.5v13A1.5 1.5 0 0 0 6.5 28h19a1.5 1.5 0 0 0 1.5-1.5v-13a1.5 1.5 0 0 0-1.5-1.5zm0 1h19a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-.5.5h-19a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 .5-.5"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatLeftLuggageIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

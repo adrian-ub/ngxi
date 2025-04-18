@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsLevelTwoAdvancedIcon],svg[game-icons-level-two-advanced-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M256 16c-22.5 72-45 72-45 120c0 0 22.5 24 45 24s45-24 45-24c0-48-22.5-48-45-120m0 144c-49.706 0-90 42.98-90 96s40.294 96 90 96c49.705 0 90-42.98 90-96s-40.295-96-90-96m0 192c-22.5 0-45 24-45 24c0 48 22.5 48 45 120c22.5-72 45-72 45-120c0 0-22.5-24-45-24m-22.5-168h45v48h45v48h-45v48h-45v-48h-45v-48h45z"></svg:path>`,
+})
+export class GameIconsLevelTwoAdvancedIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

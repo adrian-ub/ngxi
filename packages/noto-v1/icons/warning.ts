@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[notoV1WarningIcon],svg[noto-v1-warning-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#fcc21b" d="M9.6 114.26L64 20.03l54.41 94.23z"></svg:path><svg:g fill="#2f2f2f"><svg:path d="M127.07 115.93L66.89 11.7c-.6-1.03-1.7-1.67-2.89-1.67s-2.29.64-2.88 1.67L.93 115.93c-.6 1.03-.6 2.3 0 3.34c.6 1.03 1.7 1.66 2.89 1.66h120.36c1.19 0 2.29-.63 2.89-1.66c.59-1.04.59-2.31 0-3.34M9.6 114.26L64 20.03l54.41 94.23z"></svg:path><svg:path d="M59.12 83.21h9.76c.36 0 .65-.23.67-.53l2.66-38.27q.015-.24-.18-.42a.74.74 0 0 0-.49-.18H56.46c-.19 0-.37.07-.49.18a.54.54 0 0 0-.18.42l2.67 38.27c.01.29.3.53.66.53m-3.01 20.11c0-1.41.2-2.6.61-3.57q.6-1.47 1.68-2.37c.72-.6 1.56-1.04 2.54-1.31c.97-.27 2.01-.41 3.13-.41c1.05 0 2.05.14 3 .41s1.78.71 2.49 1.31c.72.6 1.29 1.38 1.71 2.37q.63 1.455.63 3.57c0 1.35-.21 2.51-.63 3.46c-.42.96-.99 1.76-1.71 2.39c-.71.63-1.54 1.09-2.49 1.37s-1.95.43-3 .43c-1.11 0-2.15-.14-3.13-.43s-1.82-.74-2.54-1.37a6.2 6.2 0 0 1-1.68-2.39c-.41-.96-.61-2.11-.61-3.46"></svg:path></svg:g>`,
+})
+export class NotoV1WarningIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

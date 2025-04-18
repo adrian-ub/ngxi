@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[heroiconsShareIcon],svg[heroicons-share-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186a2.25 2.25 0 0 0-3.935-2.186m0-12.814a2.25 2.25 0 1 0 3.933-2.185a2.25 2.25 0 0 0-3.933 2.185"></svg:path>`,
 })
 export class HeroiconsShareIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

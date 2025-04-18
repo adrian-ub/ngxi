@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsBook4SparkIcon],svg[material-symbols-book-4-spark-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7 16h2V4H7zm14 6H6q-1.25 0-2.125-.875T3 19V5q0-1.25.875-2.125T6 2h6.8q-.85.875-1.325 2.025T11 6.5q0 2.575 1.738 4.425T17 12.975V18H6q-.425 0-.712.288T5 19t.288.713T6 20h13v-7.175q.55-.125 1.05-.337t.95-.513zm-3.5-10q0-2.3 1.6-3.9T23 6.5q-2.3 0-3.9-1.6T17.5 1q0 2.3-1.6 3.9T12 6.5q2.3 0 3.9 1.6t1.6 3.9"></svg:path>`,
+})
+export class MaterialSymbolsBook4SparkIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

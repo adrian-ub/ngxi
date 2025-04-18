@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatFloppyDiskIcon],svg[fluent-emoji-flat-floppy-disk-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#635994" d="M30 7.876v18.277A3.845 3.845 0 0 1 26.149 30H5.85A3.845 3.845 0 0 1 2 26.153V5.847A3.845 3.845 0 0 1 5.851 2h18.257c.93 0 1.82.37 2.48 1.02l2.392 2.378c.65.66 1.02 1.548 1.02 2.478"></svg:path><svg:path fill="#E6E6E6" d="M6 18h20v12H6z"></svg:path><svg:path fill="#F8312F" d="M6 17.5A1.5 1.5 0 0 1 7.5 16h17a1.5 1.5 0 0 1 1.5 1.5V19H6z"></svg:path><svg:path fill="#321B41" d="M24.116 2A3.53 3.53 0 0 1 26 2.551v8.7c0 .97-.79 1.75-1.75 1.75H7.75A1.747 1.747 0 0 1 6 11.25V2h18.108z"></svg:path><svg:path fill="#E6E6E6" d="M22.64 12H12.36c-.75 0-1.36-.61-1.36-1.36V3.27c0-.7.57-1.27 1.27-1.27H24v8.64c0 .75-.61 1.36-1.36 1.36"></svg:path><svg:path fill="#321B41" d="M22.03 11h-2.06a.98.98 0 0 1-.97-.982V3.982c0-.54.436-.982.97-.982h2.06c.534 0 .97.441.97.982v6.046a.976.976 0 0 1-.97.972"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatFloppyDiskIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[whhDetailsIcon],svg[whh-details-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M960.488 768h-448q-27 0-45.5-18.5t-18.5-45.5t18.5-45.5t45.5-18.5h448q27 0 45.5 18.5t18.5 45.5t-18.5 45.5t-45.5 18.5m0-384h-448q-27 0-45.5-19t-18.5-45.5t18.5-45t45.5-18.5h448q27 0 45.5 18.5t18.5 45t-18.5 45.5t-45.5 19m0-256h-448q-27 0-45.5-19t-18.5-45.5t18.5-45t45.5-18.5h448q27 0 45.5 18.5t18.5 45t-18.5 45.5t-45.5 19m-640 896h-256q-27 0-45.5-18.5T.488 960V704q0-27 18.5-45.5t45.5-18.5h256q26 0 45 18.5t19 45.5v256q0 27-19 45.5t-45 18.5m0-640h-256q-27 0-45.5-19t-18.5-45V64q0-27 18.5-45.5T64.488 0h256q26 0 45 18.5t19 45.5v256q0 26-19 45t-45 19m192 512h448q27 0 45.5 18.5t18.5 45.5t-19 45.5t-45 18.5h-448q-27 0-45.5-18.5t-18.5-45.5t18.5-45.5t45.5-18.5"></svg:path>`,
+})
+export class WhhDetailsIcon {
+  readonly viewBox = input("0 0 1025 1024")
+  readonly width = input("1.01em")
+  readonly height = input("1em")
+}

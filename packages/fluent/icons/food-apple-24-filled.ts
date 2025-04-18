@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentFoodApple24FilledIcon],svg[fluent-food-apple-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.471 3.42A5.18 5.18 0 0 0 6.89 7.301a5.12 5.12 0 0 0-3.66 4.216a10.46 10.46 0 0 0 1.37 6.797l.35.59l.043.063l1.416 1.906a3.462 3.462 0 0 0 5.275.336a.437.437 0 0 1 .63 0a3.462 3.462 0 0 0 5.275-.336l1.416-1.907l.042-.063l.351-.59a10.46 10.46 0 0 0 1.373-6.795a5.12 5.12 0 0 0-6.11-4.306l-1.901.394h-.003c.03-.78.152-1.62.391-2.338c.29-.868.692-1.39 1.14-1.576a.75.75 0 1 0-.578-1.385c-1.052.439-1.65 1.48-1.985 2.486l-.046.142a5.2 5.2 0 0 0-.943-1.29a5.18 5.18 0 0 0-3.98-1.51A1.367 1.367 0 0 0 5.47 3.418m2.926 7.815c-.347.069-.665.313-.864.778c-.203.474-.275 1.177-.056 2.054a.75.75 0 0 1-1.455.364c-.28-1.122-.227-2.17.132-3.009c.363-.847 1.045-1.478 1.949-1.658a.75.75 0 1 1 .294 1.47"></svg:path>`,
+})
+export class FluentFoodApple24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

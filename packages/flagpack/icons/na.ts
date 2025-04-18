@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[flagpackNaIcon],svg[flagpack-na-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#093" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path><svg:mask id="flagpackNa0" width="32" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance"><svg:path fill="#fff" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path></svg:mask><svg:g mask="url(#flagpackNa0)"><svg:path fill="#3195F9" fill-rule="evenodd" d="M0 0v24L32 0z" clip-rule="evenodd"></svg:path><svg:path fill="#E31D1C" stroke="#F7FCFF" stroke-width="2" d="m-1.012 27.094l.53.96l.908-.617l34.832-23.71l.702-.477l-.358-.77l-2.342-5.04l-.491-1.057l-.97.647l-35.356 23.556l-.766.51l.445.805z"></svg:path><svg:path fill="#FECA00" fill-rule="evenodd" d="m6.23 9.245l-1.294 1.614l-.314-2.045l-1.928.751l.751-1.928L1.4 7.324L3.015 6.03L1.4 4.736l2.045-.314l-.75-1.928l1.927.751l.314-2.045L6.23 2.815L7.524 1.2l.313 2.045l1.928-.75l-.751 1.927l2.045.314L9.445 6.03l1.614 1.294l-2.045.313l.751 1.928l-1.928-.751l-.313 2.045zm0-.715a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m2-2.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0" clip-rule="evenodd"></svg:path></svg:g></svg:g>`,
+})
+export class FlagpackNaIcon {
+  readonly viewBox = input("0 0 32 24")
+  readonly width = input("1.34em")
+  readonly height = input("1em")
+}

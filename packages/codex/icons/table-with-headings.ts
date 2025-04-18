@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[codexTableWithHeadingsIcon],svg[codex-table-with-headings-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="2"><svg:path d="M5 10h14"></svg:path><svg:rect width="14" height="14" x="5" y="5" rx="4"></svg:rect></svg:g>`,
+})
+export class CodexTableWithHeadingsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

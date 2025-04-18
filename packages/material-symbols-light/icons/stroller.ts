@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightStrollerIcon],svg[material-symbols-light-stroller-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.73 20.346q-.586 0-1.004-.418t-.418-1.005t.418-1.005t1.005-.418t1.005.418t.418 1.005t-.418 1.005t-1.005.418m-7.77 0q-.574 0-.998-.418t-.424-1.005t.424-1.005t.999-.418q.613 0 1.018.418t.404 1.005t-.404 1.005t-1.018.418m.463-3.846q-.32 0-.45-.287t.085-.536l8.679-10.175q.442-.518.939-.76t1.107-.242q.88 0 1.48.6t.6 1.488V7h-1v-.42q0-.46-.31-.77t-.77-.31q-.381 0-.675.148t-.546.425l-1.41 1.644v7.162q0 .677-.474 1.149t-1.14.472zm2.81-6.842L6.34 5.764q.95-.639 1.987-.951t2.192-.313q.895 0 1.742.179t1.75.555z"></svg:path>`,
+})
+export class MaterialSymbolsLightStrollerIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

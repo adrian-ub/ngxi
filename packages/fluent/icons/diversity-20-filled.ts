@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentDiversity20FilledIcon],svg[fluent-diversity-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.466 3.45c.637-1.266 2.431-1.266 3.068 0l1.779 3.536C9.889 8.131 9.069 9.5 7.779 9.5H4.22c-1.29 0-2.11-1.37-1.534-2.514zM11 4.5A1.5 1.5 0 0 1 12.5 3h3A1.5 1.5 0 0 1 17 4.5v3A1.5 1.5 0 0 1 15.5 9h-3A1.5 1.5 0 0 1 11 7.5zm2.495 6.331a1 1 0 0 1 1 0l1.99 1.15a1 1 0 0 1 .5.865v2.298a1 1 0 0 1-.5.866l-1.99 1.149a1 1 0 0 1-1 0l-1.99-1.15a1 1 0 0 1-.5-.865v-2.298a1 1 0 0 1 .5-.866zM3 14a3 3 0 1 1 6 0a3 3 0 0 1-6 0"></svg:path>`,
+})
+export class FluentDiversity20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[logosGleamIcon],svg[logos-gleam-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#F36A22" d="M256 74.981v106.038l-3.417.333l-123.367-51.822L128 128z"></svg:path><svg:path fill="#F3852F" d="M256 181.019L181.019 256l-1.145-.881l-52.309-123.609L128 128z"></svg:path><svg:path fill="#F2C32E" d="m128 128l-2.828 1.943l-50.636 123.898l.445 2.159h106.038z"></svg:path><svg:path fill="#CBDC38" d="m0 181.019l3.174-2.468l121.998-51.002L128 128L74.981 256z"></svg:path><svg:path fill="#B5D66D" d="m0 74.981l3.174-.215l123.071 50.473L128 128L0 181.019z"></svg:path><svg:path fill="#69C5E5" d="M74.981 0L0 74.981L128 128l.225-3.256L80.496 3.026z"></svg:path><svg:path fill="#6D9FD5" d="M74.981 0h106.038L128 128z"></svg:path>`,
+})
+export class LogosGleamIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

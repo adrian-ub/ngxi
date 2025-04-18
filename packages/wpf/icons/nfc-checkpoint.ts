@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[wpfNfcCheckpointIcon],svg[wpf-nfc-checkpoint-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 0a11.5 11.5 0 0 0-8.125 3.344A1.005 1.005 0 1 0 6.313 4.75A9.4 9.4 0 0 1 13 2c2.618 0 4.97 1.04 6.688 2.75a1.005 1.005 0 1 0 1.437-1.406A11.5 11.5 0 0 0 13 0m0 4a6.47 6.47 0 0 0-4.813 2.125a1 1 0 1 0 1.47 1.344A4.48 4.48 0 0 1 13 6c1.327 0 2.518.558 3.344 1.469a1 1 0 1 0 1.468-1.344A6.48 6.48 0 0 0 13 4M5 7v16a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7l-2 2v11.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V9zm8 1c-1.108 0-2 .893-2 2s.892 2 2 2a2 2 0 1 0 0-4m.5 14.219c.706 0 1.281.575 1.281 1.281s-.575 1.281-1.281 1.281a1.283 1.283 0 0 1-1.281-1.281c0-.706.575-1.281 1.281-1.281"></svg:path>`,
+})
+export class WpfNfcCheckpointIcon {
+  readonly viewBox = input("0 0 26 26")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

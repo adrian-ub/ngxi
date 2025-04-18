@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedIcpIcon],svg[token-branded-icp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedIcp0)" fill-rule="evenodd" d="m12 13.386l.023-.027c1.313 1.277 3.208 2.763 4.85 2.763A4.09 4.09 0 0 0 21 12.072c0-2.237-1.845-4.05-4.126-4.05c-1.746 0-3.465 1.295-4.874 2.736zm4.815 1.098c1.404 0 2.543-1.08 2.543-2.413S18.219 9.66 16.81 9.66s-2.781 1.305-3.744 2.412c.639.72 2.34 2.412 3.744 2.412z" clip-rule="evenodd"></svg:path><svg:path fill="url(#tokenBrandedIcp1)" fill-rule="evenodd" d="m12.054 13.44l-.09-.09c-1.274 1.264-3.15 2.772-4.838 2.772A4.09 4.09 0 0 1 3 12.072c0-2.237 1.845-4.05 4.126-4.05c1.773 0 3.42 1.399 4.806 2.893l.122-.126zm-4.869 1.043c-1.409 0-2.547-1.08-2.547-2.412S5.776 9.66 7.185 9.66c1.408 0 2.78 1.305 3.744 2.412c-.639.72-2.34 2.412-3.744 2.412" clip-rule="evenodd"></svg:path><svg:path fill="#46ABE3" d="m10.758 11.923l.108.095l1.103 1.404c1.296 1.21 3.186 2.7 4.905 2.7a4.11 4.11 0 0 0 4.05-3.267c-.352.634-1.575 1.629-3.762 1.606q-.17.022-.351.023c-1.409 0-3.105-1.692-3.744-2.412l.013-.018l-1.327-1.598l-1.328-1.26c-1.062-.81-2.16-1.318-3.366-1.318c-2.038 0-3.676 1.62-4.005 3.555c.91-1.647 2.867-2.178 4.586-1.724c1.125.194 2.101 1.09 3.118 2.214"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedIcp0" x1="21.918" x2="2.145" y1="11.615" y2="11.615" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#F2A528"></svg:stop><svg:stop offset="1" stop-color="#EF5E12"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedIcp1" x1="4.691" x2="21.402" y1="11.693" y2="11.693" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#5F2685"></svg:stop><svg:stop offset="1" stop-color="#DA1980"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedIcpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

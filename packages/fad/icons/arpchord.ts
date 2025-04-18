@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fadArpchordIcon],svg[fad-arpchord-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M96 203.996A4 4 0 0 1 91.996 208H68.004A4 4 0 0 1 64 203.996v-23.992A4 4 0 0 1 68.004 176h23.992A4 4 0 0 1 96 180.004zm0-64A4 4 0 0 1 91.996 144H68.004A4 4 0 0 1 64 139.996v-23.992A4 4 0 0 1 68.004 112h23.992A4 4 0 0 1 96 116.004zm0-64A4 4 0 0 1 91.996 80H68.004A4 4 0 0 1 64 75.996V52.004A4 4 0 0 1 68.004 48h23.992A4 4 0 0 1 96 52.004zm64 0A4 4 0 0 0 164.004 80h23.992A4 4 0 0 0 192 75.996V52.004A4 4 0 0 0 187.996 48h-23.992A4 4 0 0 0 160 52.004zm0 64a4 4 0 0 0 4.004 4.004h23.992a4 4 0 0 0 4.004-4.004v-23.992a4 4 0 0 0-4.004-4.004h-23.992a4 4 0 0 0-4.004 4.004zm0 64a4 4 0 0 0 4.004 4.004h23.992a4 4 0 0 0 4.004-4.004v-23.992a4 4 0 0 0-4.004-4.004h-23.992a4 4 0 0 0-4.004 4.004z"></svg:path>`,
+})
+export class FadArpchordIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

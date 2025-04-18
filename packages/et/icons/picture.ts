@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[etPictureIcon],svg[et-picture-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M1.5 32h29c.827 0 1.5-.673 1.5-1.5v-29c0-.827-.673-1.5-1.5-1.5h-29C.673 0 0 .673 0 1.5v29c0 .827.673 1.5 1.5 1.5M1 1.5a.5.5 0 0 1 .5-.5h29a.5.5 0 0 1 .5.5v29a.5.5 0 0 1-.5.5h-29a.5.5 0 0 1-.5-.5z"></svg:path><svg:path d="M20.5 12.5c1.103 0 2-.897 2-2s-.897-2-2-2s-2 .897-2 2s.897 2 2 2m0-3a1.001 1.001 0 1 1-1 1c0-.551.448-1 1-1"></svg:path><svg:path d="M4.5 25h23a.5.5 0 0 0 .5-.5v-20a.5.5 0 0 0-.5-.5h-23a.5.5 0 0 0-.5.5v20a.5.5 0 0 0 .5.5m.5-1v-5.638c.022-.016.047-.025.067-.045l5.116-5.116a.704.704 0 0 1 .972 0l7.521 7.521a.5.5 0 0 0 .699.008l3.866-3.672a.684.684 0 0 1 .957-.015L27 20.095l.001.001V24zM27 5v13.618l-2.081-2.266a1.67 1.67 0 0 0-1.191-.495h-.001a1.67 1.67 0 0 0-1.185.486l-3.504 3.328l-7.176-7.177c-.639-.638-1.749-.637-2.386 0L5 16.971V5z"></svg:path></svg:g>`,
+})
+export class EtPictureIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

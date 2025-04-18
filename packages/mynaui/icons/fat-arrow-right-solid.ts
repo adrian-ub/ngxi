@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiFatArrowRightSolidIcon],svg[mynaui-fat-arrow-right-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.486 3.6c-.744-.71-2.131-.278-2.131.883v3.569h-8.85c-.659 0-1.255.518-1.255 1.232v5.432c0 .714.596 1.232 1.256 1.232h8.849v3.569c0 1.16 1.387 1.592 2.13.884l.036-.037l6.87-7.502a1.216 1.216 0 0 0 0-1.724l-6.87-7.502z"></svg:path>`,
+})
+export class MynauiFatArrowRightSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

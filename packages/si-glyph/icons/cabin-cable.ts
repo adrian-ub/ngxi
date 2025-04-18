@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphCabinCableIcon],svg[si-glyph-cabin-cable-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="M9.283 7H9V2H7.024v5h-.35C5.203 7 2.013 8.147 2.013 9.563v4.428C2.013 15.406 3.206 16 4.677 16h6.603c1.472 0 2.663-.594 2.663-2.009V9.563C13.943 8.147 10.752 7 9.283 7M5.03 12.046H2.951v-1.703c0-.385.454-1.343 1.51-1.343h.569zm5.016 2.286c0 .37-.294.669-.656.669H6.602a.66.66 0 0 1-.655-.669V9.573c0-.369.294-.573.655-.573H9.39c.362 0 .656.204.656.573zm2.995-2.286H10.94V9h.576c1.146 0 1.524.972 1.524 1.354v1.692z"></svg:path><svg:path d="M1.682 4.93c-.367 0-.666-.273-.666-.612s.299-.613.666-.613c5.575 0 11.077-.985 14.358-2.573c.327-.158.728-.042.899.258c.171.299.045.67-.28.827C13.199 3.891 7.46 4.93 1.682 4.93"></svg:path></svg:g>`,
+})
+export class SiGlyphCabinCableIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}

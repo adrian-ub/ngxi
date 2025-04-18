@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsEdaIcon],svg[material-symbols-eda-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7 23q-1.65 0-2.825-1.175T3 19v-3h5.45l3.4 4.525l6.175-6.175l1.225-.75q.5-.325 1.1-.275t1.1.4l1.575 1.175l-7.225 7.225q-.425.425-.975.65t-1.15.225zm-4-9V5q0-.425.288-.712T4 4t.713.288T5 5v7h2V3q0-.425.288-.712T8 2t.713.288T9 3v9h2V2q0-.425.288-.712T12 1t.713.288T13 2v10h2V4q0-.425.288-.712T16 3t.713.288T17 4v8.575l-4.95 4.9L9.45 14z"></svg:path>`,
+})
+export class MaterialSymbolsEdaIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

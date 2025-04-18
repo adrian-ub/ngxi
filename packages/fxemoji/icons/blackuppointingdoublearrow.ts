@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fxemojiBlackuppointingdoublearrowIcon],svg[fxemoji-blackuppointingdoublearrow-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#597B91" d="M508.333 32.666C508.333 16.35 494.984 3 478.668 3H29.032C14.348 3 2.333 15.015 2.333 29.699v452.602C2.333 496.985 14.348 509 29.032 509h449.635c16.316 0 29.666-13.35 29.666-29.666z"></svg:path><svg:path fill="#2B5770" d="M478.668 488.915H29.032c-14.684 0-26.699-12.015-26.699-26.699v20.085C2.333 496.985 14.348 509 29.032 509h449.635c16.316 0 29.666-13.35 29.666-29.666v-20.085c0 16.316-13.349 29.666-29.665 29.666"></svg:path><svg:path fill="#F9F9F7" d="M287.931 275.377h76.558c10.24 0 16.358-11.401 10.697-19.933L266.03 90.903c-5.078-7.654-16.317-7.654-21.394 0l-109.155 164.54c-5.661 8.533.458 19.933 10.697 19.933h76.558l-87.255 131.528c-5.661 8.533.458 19.933 10.697 19.933h218.311c10.24 0 16.358-11.401 10.697-19.933z"></svg:path>`,
+})
+export class FxemojiBlackuppointingdoublearrowIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icomoonFreeRenrenIcon],svg[icomoon-free-renren-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.644.166C2.875.8 0 4.079 0 8.028a7.96 7.96 0 0 0 1.887 5.15c2.791-1.35 4.744-4.406 4.756-7.966zm2.712 0C13.125.8 16 4.079 16 8.028a7.96 7.96 0 0 1-1.887 5.15c-2.791-1.35-4.744-4.406-4.756-7.966zm-1.384 9.875c-.497 2.056-1.981 3.813-3.828 4.981c1.138.622 2.441.978 3.828.978s2.691-.356 3.828-.978c-1.847-1.169-3.331-2.925-3.828-4.981"></svg:path>`,
+})
+export class IcomoonFreeRenrenIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPeopleLock24FilledIcon],svg[fluent-people-lock-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 7a4 4 0 1 1-8 0a4 4 0 0 1 8 0m4.01 3.832a3.5 3.5 0 0 1 2.437-.203A3 3 0 0 0 16.999 5a3 3 0 0 0-.99 5.833m-2.308 3.298A2.5 2.5 0 0 0 12 16.5v2.49c-.884.587-2.16 1.01-4 1.01c-6 0-6-4.5-6-4.5v-.25A2.25 2.25 0 0 1 4.25 13h7.5a2.25 2.25 0 0 1 1.952 1.13M15 15v-1a2.5 2.5 0 0 1 5 0v1h.5a1.5 1.5 0 0 1 1.5 1.5v5a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5v-5a1.5 1.5 0 0 1 1.5-1.5zm1.5-1v1h2v-1a1 1 0 1 0-2 0m2 5a1 1 0 1 0-2 0a1 1 0 0 0 2 0"></svg:path>`,
+})
+export class FluentPeopleLock24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

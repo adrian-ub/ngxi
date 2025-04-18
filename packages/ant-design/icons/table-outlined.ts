@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[antDesignTableOutlinedIcon],svg[ant-design-table-outlined-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32m-40 208H676V232h212zm0 224H676V432h212zM412 432h200v160H412zm200-64H412V232h200zm-476 64h212v160H136zm0-200h212v136H136zm0 424h212v136H136zm276 0h200v136H412zm476 136H676V656h212z"></svg:path>`,
+})
+export class AntDesignTableOutlinedIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

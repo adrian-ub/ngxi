@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeScalaIcon],svg[material-icon-theme-scala-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#f44336" d="m6.457 9.894l12.523 5.163l-.456 1.211L6 11.105Zm7.02-3.091L26 11.966l-.457 1.21L13.02 8.015ZM6.465 18.885l12.524 5.163l-.457 1.21L6.01 20.097Zm7.007-3.086l12.524 5.163l-.456 1.21l-12.524-5.162Z"></svg:path><svg:path fill="#f44336" d="M6 24.07V30l19.997-3.106V20.96zM6 5.11v5.99l20-3.11V2zm0 9.96v5.03l20-3.11v-5.03z"></svg:path>`,
+})
+export class MaterialIconThemeScalaIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoEmojiSadIcon],svg[entypo-emoji-sad-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.001.4C4.698.4.4 4.698.4 10a9.6 9.6 0 0 0 9.601 9.601c5.301 0 9.6-4.298 9.6-9.601c-.001-5.302-4.3-9.6-9.6-9.6M10 17.599a7.6 7.6 0 1 1 0-15.2a7.6 7.6 0 0 1 0 15.2m2.501-7.849c.828 0 1.5-.783 1.5-1.75s-.672-1.75-1.5-1.75s-1.5.783-1.5 1.75s.671 1.75 1.5 1.75m-5 0c.828 0 1.5-.783 1.5-1.75s-.672-1.75-1.5-1.75s-1.5.783-1.5 1.75s.671 1.75 1.5 1.75m2.501 1.5c-3.424 0-4.622 2.315-4.672 2.414a.75.75 0 0 0 1.342.672c.008-.017.822-1.586 3.33-1.586c2.463 0 3.298 1.527 3.328 1.585a.75.75 0 1 0 1.342-.67c-.049-.099-1.246-2.415-4.67-2.415"></svg:path>`,
+})
+export class EntypoEmojiSadIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

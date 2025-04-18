@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsFarhanIcon],svg[arcticons-farhan-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19.794 41.128V6.863h7.712c8.281 0 14.994 6.713 14.994 14.994v4.286c0 8.281-6.713 14.994-14.994 14.994zM5.621 11.4h5.322v6.647H5.621zM5.5 30.53h5.322v6.647H5.5z"></svg:path>`,
+})
+export class ArcticonsFarhanIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

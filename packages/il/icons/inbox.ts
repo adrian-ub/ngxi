@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ilInboxIcon],svg[il-inbox-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M736 269q5 9 5 21v244q0 10-6 16t-17 7H23q-10 0-16-7t-7-16V290q0-9 5-21L126 26q13-25 42-25h406q28 0 41 25zm-95 33q3 0 5-3t-1-4l-97-195q-3-6-10-6H203q-7 0-10 6L96 295q-2 2 0 4t4 3h117q14 0 21 13l34 67q6 13 20 13h157q14 0 21-13l33-67q6-13 21-13z"></svg:path>`,
+})
+export class IlInboxIcon {
+  readonly viewBox = input("0 0 750 750")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

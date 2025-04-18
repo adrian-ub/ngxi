@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiHouseWithGardenIcon],svg[twemoji-house-with-garden-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#5C913B" d="M36 33.5a1.5 1.5 0 0 1-1.5 1.5h-33a1.5 1.5 0 0 1 0-3h33a1.5 1.5 0 0 1 1.5 1.5"></svg:path><svg:path fill="#A0041E" d="M12.344 14.702h-2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5"></svg:path><svg:path fill="#FFCC4D" d="M5.942 32c-.137-4.657-.506-8-.942-8s-.804 3.343-.941 8z"></svg:path><svg:path fill="#77B255" d="M10 18.731C10 24.306 7.762 26 5 26s-5-1.694-5-7.269C0 13.154 4 5 5 5s5 8.154 5 13.731"></svg:path><svg:path fill="#FFE8B6" d="M8 16L21 3l13 13v16H8z"></svg:path><svg:path fill="#FFCC4D" d="M21 16h1v16h-1z"></svg:path><svg:path fill="#66757F" d="M34 17a1 1 0 0 1-.707-.293L21 4.414L8.707 16.707a.999.999 0 1 1-1.414-1.414l13-13a1 1 0 0 1 1.414 0l13 13A.999.999 0 0 1 34 17"></svg:path><svg:path fill="#66757F" d="M21 17a.999.999 0 0 1-.707-1.707l6.5-6.5a.999.999 0 1 1 1.414 1.414l-6.5 6.5A1 1 0 0 1 21 17"></svg:path><svg:path fill="#C1694F" d="M13 26h4v6h-4z"></svg:path><svg:path fill="#55ACEE" d="M13 17h4v4h-4zm12.5 0h4v4h-4zm0 9h4v4h-4z"></svg:path><svg:path fill="#77B255" d="M10.625 29.991c0 1.613-.858 2.103-1.917 2.103c-1.058 0-1.917-.49-1.917-2.103s1.533-3.973 1.917-3.973s1.917 2.359 1.917 3.973m25.25 0c0 1.613-.858 2.103-1.917 2.103c-1.058 0-1.917-.49-1.917-2.103s1.533-3.973 1.917-3.973s1.917 2.359 1.917 3.973"></svg:path>`,
+})
+export class TwemojiHouseWithGardenIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

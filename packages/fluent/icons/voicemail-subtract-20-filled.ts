@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentVoicemailSubtract20FilledIcon],svg[fluent-voicemail-subtract-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 8a2 2 0 0 1 1.735 1.005A5.48 5.48 0 0 1 18 10.257V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.207A5.5 5.5 0 0 1 9 14.5a5.49 5.49 0 0 1 2.015-4.255A2.02 2.02 0 0 1 11.268 9H8.732A2 2 0 1 1 7 8zm-7 2a1 1 0 1 1 2 0a1 1 0 0 1-2 0m13 4.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-7 0a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5"></svg:path>`,
+})
+export class FluentVoicemailSubtract20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

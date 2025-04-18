@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cryptocurrencyPptIcon],svg[cryptocurrency-ppt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16s-7.163 16-16 16m.049-23.684c1.316 0 2.382-.733 2.382-1.638S17.365 5.04 16.049 5.04s-2.383.733-2.383 1.638s1.067 1.638 2.383 1.638M14.816 26.6c0 .196.173.375.37.375h1.667c.196 0 .347-.179.347-.375v-7.08h2.928c.196 0 .336-.168.336-.364V9.448c0-.197-.139-.344-.336-.344h-5.312zm-.896-7.081V9.104h-2.01c-.197 0-.374.147-.374.344v9.708c0 .196.177.364.373.364h2.011z"></svg:path>`,
+})
+export class CryptocurrencyPptIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

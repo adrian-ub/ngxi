@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkClearIcon],svg[icon-park-clear-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke-linejoin="round" stroke-width="4"><svg:path stroke="#000" stroke-linecap="round" d="M20 5.91406H28V13.9141H43V21.9141H5V13.9141H20V5.91406Z" clip-rule="evenodd"></svg:path><svg:path fill="#2F88FF" stroke="#000" d="M8 40H40V22H8V40Z"></svg:path><svg:path stroke="#fff" stroke-linecap="round" d="M16 39.8976V33.9141"></svg:path><svg:path stroke="#fff" stroke-linecap="round" d="M24 39.8977V33.8977"></svg:path><svg:path stroke="#fff" stroke-linecap="round" d="M32 39.8976V33.9141"></svg:path><svg:path stroke="#000" stroke-linecap="round" d="M12 40H36"></svg:path></svg:g>`,
+})
+export class IconParkClearIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

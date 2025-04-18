@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightViewCozyOutlineRoundedIcon],svg[material-symbols-light-view-cozy-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.462 10.5H5.038q-.44 0-.739-.299Q4 9.9 4 9.46V5.039q0-.44.299-.739q.3-.299.74-.299h4.423q.44 0 .739.299q.299.3.299.74v4.423q0 .44-.299.739q-.3.299-.74.299ZM5 9.5h4.5V5H5v4.5ZM9.462 20H5.038q-.44 0-.739-.299q-.299-.3-.299-.74v-4.423q0-.44.299-.739q.3-.299.74-.299h4.423q.44 0 .739.299q.299.3.299.74v4.423q0 .44-.299.739q-.3.299-.74.299ZM5 19h4.5v-4.5H5V19Zm13.962-8.5h-4.424q-.44 0-.739-.299q-.299-.3-.299-.74V5.039q0-.44.299-.739q.3-.299.74-.299h4.423q.44 0 .739.299q.299.3.299.74v4.423q0 .44-.299.739q-.3.299-.74.299Zm-4.462-1H19V5h-4.5v4.5ZM18.962 20h-4.424q-.44 0-.739-.299q-.299-.3-.299-.74v-4.423q0-.44.299-.739q.3-.299.74-.299h4.423q.44 0 .739.299q.299.3.299.74v4.423q0 .44-.299.739q-.3.299-.74.299ZM14.5 19H19v-4.5h-4.5V19Zm-5-9.5Zm0 5Zm5-5Zm0 5Z"></svg:path>`,
+})
+export class MaterialSymbolsLightViewCozyOutlineRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

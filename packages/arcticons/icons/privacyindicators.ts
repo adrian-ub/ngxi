@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsPrivacyindicatorsIcon],svg[arcticons-privacyindicators-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:rect width="15.901" height="34.846" x="16.049" y="4.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" rx="1.167"></svg:rect><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M22.41 39.345V43.5h3.148v-4.155"></svg:path><svg:circle cx="24" cy="32.23" r="3.485" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></svg:circle><svg:circle cx="24" cy="21.923" r="3.485" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></svg:circle><svg:circle cx="24" cy="11.616" r="3.485" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></svg:circle><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M16.049 9.149h-4.494s.855 2.442 4.494 2.442"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M16.049 14.962H13.9v-3.72m2.149 7.774h-4.494s.855 2.442 4.494 2.442"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M16.049 24.829H13.9v-3.72m2.149 7.775h-4.494s.855 2.442 4.494 2.442"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M16.049 34.697H13.9v-3.72M31.951 9.149h4.494s-.855 2.442-4.494 2.442"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M31.951 14.962H34.1v-3.72m-2.149 7.774h4.494s-.855 2.442-4.494 2.442"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M31.951 24.829H34.1v-3.72m-2.149 7.775h4.494s-.855 2.442-4.494 2.442"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M31.951 34.697H34.1v-3.72"></svg:path>`,
+})
+export class ArcticonsPrivacyindicatorsIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

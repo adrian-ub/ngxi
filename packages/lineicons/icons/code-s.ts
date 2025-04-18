@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsCodeSIcon],svg[lineicons-code-s-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.276 7.249a2.25 2.25 0 0 0-2.25 2.25v1a2.25 2.25 0 0 0 2.25 2.25h.545a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-.75.75h-2.045a.75.75 0 0 0 0 1.5h2.045a2.25 2.25 0 0 0 2.25-2.25v-1a2.25 2.25 0 0 0-2.25-2.25h-.545a.75.75 0 0 1-.75-.75v-1a.75.75 0 0 1 .75-.75h2.045a.75.75 0 1 0 0-1.5zm-4.446.22a.75.75 0 0 1 0 1.06l-2.763 2.763a1 1 0 0 0 0 1.414l2.762 2.763a.75.75 0 1 1-1.06 1.06l-4-4a.75.75 0 0 1 0-1.06l4-4a.75.75 0 0 1 1.06 0m9.44 0a.75.75 0 0 0 0 1.06l2.762 2.763a1 1 0 0 1 0 1.414L17.27 15.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 0-1.06l-4-4a.75.75 0 0 0-1.06 0"></svg:path>`,
+})
+export class LineiconsCodeSIcon {
+  readonly viewBox = input("0 0 25 24")
+  readonly width = input("1.05em")
+  readonly height = input("1em")
+}

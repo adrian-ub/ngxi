@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastThreeOclockIcon],svg[fluent-emoji-high-contrast-three-oclock-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M17.029 8.016a1 1 0 1 0-2 0v6.277A1.988 1.988 0 0 0 16.03 18c.739 0 1.383-.402 1.726-1H22a1 1 0 1 0 0-2h-4.256a2 2 0 0 0-.715-.71z"></svg:path><svg:path d="M30 16c0-7.732-6.268-14-14-14S2 8.268 2 16s6.268 14 14 14s14-6.268 14-14m-3 0c0 6.075-4.925 11-11 11S5 22.075 5 16S9.925 5 16 5s11 4.925 11 11"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastThreeOclockIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

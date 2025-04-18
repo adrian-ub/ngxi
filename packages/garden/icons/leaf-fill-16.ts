@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenLeafFill16Icon],svg[garden-leaf-fill-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m7 8.293l-2.854 2.853a.5.5 0 0 0 .708.708L7.707 9H11a.5.5 0 1 0 0-1H8.707l3.147-3.146a.5.5 0 0 0-.708-.708L8 7.293V5a.5.5 0 0 0-1 0zM3.707 13L.854 15.854a.5.5 0 0 1-.708-.708L3 12.293V7.167C3 3.209 7.5 0 15.5 0a.5.5 0 0 1 .5.5c0 8-3.209 12.5-7.167 12.5z"></svg:path>`,
+})
+export class GardenLeafFill16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

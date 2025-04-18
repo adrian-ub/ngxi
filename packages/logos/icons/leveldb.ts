@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[logosLeveldbIcon],svg[logos-leveldb-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#D4EB95" d="M128 72.17L0 135.367v128.535l128 64.268l128-64.268V135.367z"></svg:path><svg:path fill="#96DC75" d="M128 51.745L0 114.94v128.536l128 64.268l128-64.268V114.94z"></svg:path><svg:path fill="#317342" d="M128 0L0 63.197v128.535L128 256l128-64.268V63.197z" opacity=".553"></svg:path><svg:path fill="#34954C" d="M128 122.795L0 62.638v128.908L128 256l128-64.454V62.638z" opacity=".553"></svg:path>`,
+})
+export class LogosLeveldbIcon {
+  readonly viewBox = input("0 0 256 329")
+  readonly width = input("0.78em")
+  readonly height = input("1em")
+}

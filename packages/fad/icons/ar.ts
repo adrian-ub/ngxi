@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fadArIcon],svg[fad-ar-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M25 184c-.47 2.68-.227 4.354 1 6s4.563 2.464 8 2s5.078-.958 6-4S80.911 82.783 80.911 82.783c.601-1.537 2.13-1.93 3.404-.886c0 0 134.305 110.087 136.602 110.103c1.194.008 3.15-.157 4.942-1.477c1.656-1.22 3.173-3.57 3.824-4.25c1.355-1.414 3.54-3.424.46-6.697C227.063 176.304 104.148 78.758 100 74S89.369 64 84 64s-13.914 2.695-16 8s-42.53 109.32-43 112"></svg:path>`,
+})
+export class FadArIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

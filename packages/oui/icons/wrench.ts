@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ouiWrenchIcon],svg[oui-wrench-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m6.918 9.746l4.537 4.537a2 2 0 1 0 2.828-2.829l-3.157-3.156a.5.5 0 0 1 .708-.708l3.156 3.157a3 3 0 1 1-4.243 4.243l-4.949-4.95a5.001 5.001 0 0 1-5.22-7.106a.5.5 0 0 1 .805-.138L3.676 5.09a1 1 0 1 0 1.415-1.414L2.797 1.382a.5.5 0 0 1 .138-.805a5.001 5.001 0 1 1 3.983 9.169M1.226 4.054a4.002 4.002 0 0 0 6.693 3.865a4 4 0 0 0-3.865-6.693l1.744 1.743a2 2 0 1 1-2.829 2.828zm10.229 8.814a1 1 0 1 1 1.414-1.414a1 1 0 0 1-1.414 1.414"></svg:path>`,
+})
+export class OuiWrenchIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

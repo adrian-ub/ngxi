@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconamoonNumber9DuotoneIcon],svg[iconamoon-number-9-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M17 9A5 5 0 1 1 7 9a5 5 0 0 1 10 0" opacity=".16"></svg:path><svg:path d="M10.153 19.468a1 1 0 1 0 1.694 1.064zm6.92-7.264a1 1 0 1 0-1.693-1.064zM8 9a4 4 0 0 1 4-4V3a6 6 0 0 0-6 6zm4-4a4 4 0 0 1 4 4h2a6 6 0 0 0-6-6zm4 4a4 4 0 0 1-4 4v2a6 6 0 0 0 6-6zm-4 4a4 4 0 0 1-4-4H6a6 6 0 0 0 6 6zm-.153 7.532l5.227-8.328l-1.694-1.064l-5.227 8.328z"></svg:path></svg:g>`,
+})
+export class IconamoonNumber9DuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

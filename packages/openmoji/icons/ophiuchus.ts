@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiOphiuchusIcon],svg[openmoji-ophiuchus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#b399c8" d="M12 12h48v47.83H12z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round"><svg:path stroke-linejoin="round" stroke-width="2" d="M12 12h48v48H12z"></svg:path><svg:path stroke-linejoin="round" stroke-width="3" d="m43.34 21.8l.18 19.62c-.014 4.962-3.336 8.807-7.43 8.807s-7.416-3.845-7.43-8.807l-.18-19.62"></svg:path><svg:path stroke-miterlimit="10" stroke-width="3" d="M52.4 35.85c-4.797 6.036-13.14 5.607-16.4.15s-11.6-5.886-16.4.15"></svg:path></svg:g>`,
+})
+export class OpenmojiOphiuchusIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

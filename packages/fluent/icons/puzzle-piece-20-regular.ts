@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPuzzlePiece20RegularIcon],svg[fluent-puzzle-piece-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 3c-.69 0-1.25.56-1.25 1.25V5H6.5a.5.5 0 0 0-.5.5v3.25h-.75a1.25 1.25 0 1 0 0 2.5H6v3.25a.5.5 0 0 0 .5.5h3.25v.75a1.25 1.25 0 1 0 2.5 0V15h3.25a.5.5 0 0 0 .5-.5v-2.25h-.75a2.25 2.25 0 0 1 0-4.5H16V5.5a.5.5 0 0 0-.5-.5h-3.25v-.75C12.25 3.56 11.69 3 11 3M8.764 4a2.25 2.25 0 0 1 4.472 0H15.5A1.5 1.5 0 0 1 17 5.5v3.25h-1.75a1.25 1.25 0 1 0 0 2.5H17v3.25a1.5 1.5 0 0 1-1.5 1.5h-2.264a2.25 2.25 0 0 1-4.472 0H6.5A1.5 1.5 0 0 1 5 14.5v-2.264a2.25 2.25 0 0 1 0-4.472V5.5A1.5 1.5 0 0 1 6.5 4z"></svg:path>`,
+})
+export class FluentPuzzlePiece20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

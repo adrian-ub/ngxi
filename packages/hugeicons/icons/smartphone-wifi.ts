@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsSmartphoneWifiIcon],svg[hugeicons-smartphone-wifi-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 6c-1.627.03-2.562.168-3.195.812C4 7.632 4 8.953 4 11.595v4.802c0 2.641 0 3.962.805 4.783c.806.82 2.102.82 4.695.82s3.89 0 4.695-.82c.805-.821.805-2.142.805-4.783v-2.901M9.5 19h.009M10 3.847C11.436 2.68 13.151 2 14.993 2c1.848 0 3.568.683 5.007 1.858M17.718 7a5.1 5.1 0 0 0-2.725-.8c-.974 0-1.895.286-2.712.792M15 10h.006" color="currentColor"></svg:path>`,
+})
+export class HugeiconsSmartphoneWifiIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[phArrowBendDoubleUpLeftIcon],svg[ph-arrow-bend-double-up-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M85.66 146.34a8 8 0 0 1-11.32 11.32l-48-48a8 8 0 0 1 0-11.32l48-48a8 8 0 0 1 11.32 11.32L43.31 104ZM128 96H99.31l34.35-34.34a8 8 0 0 0-11.32-11.32l-48 48a8 8 0 0 0 0 11.32l48 48a8 8 0 0 0 11.32-11.32L99.31 112H128a88.1 88.1 0 0 1 88 88a8 8 0 0 0 16 0A104.11 104.11 0 0 0 128 96"></svg:path>`,
+})
+export class PhArrowBendDoubleUpLeftIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

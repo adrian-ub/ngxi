@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneMonotoneRedTrianglePointedUpIcon],svg[emojione-monotone-red-triangle-pointed-up-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M32 2L2 62h60z"></svg:path>`,
+})
+export class EmojioneMonotoneRedTrianglePointedUpIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

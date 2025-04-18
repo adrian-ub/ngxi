@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiAbacusIcon],svg[twemoji-abacus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#CCD6DD" d="M3 16v-2h30v2zm0 7v-2h30v2zm0 7v-2h30v2zM3 9V7h30v2z"></svg:path><svg:path fill="#D5AB88" d="M35 33V1a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1H4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v32zM4 4h28v29H4z"></svg:path><svg:path fill="#3B94D9" d="M19 5.5A1.5 1.5 0 0 0 17.5 7a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0v2a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0V7A1.5 1.5 0 0 0 19 5.5"></svg:path><svg:path fill="#BE1931" d="M19 12.5a1.5 1.5 0 0 0-1.5 1.5a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0v2a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0v-2a1.5 1.5 0 0 0-1.5-1.5"></svg:path><svg:path fill="#5C913B" d="M19 19.5a1.5 1.5 0 0 0-1.5 1.5a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0v2a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0v-2a1.5 1.5 0 0 0-1.5-1.5"></svg:path><svg:path fill="#FFAC33" d="M19 26.5a1.5 1.5 0 0 0-1.5 1.5a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 1 0-3 0v2a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 3 0v-2a1.5 1.5 0 0 0-1.5-1.5"></svg:path><svg:path fill="#3B94D9" d="M29 10.5A1.5 1.5 0 0 1 27.5 9V7a1.5 1.5 0 1 1 3 0v2a1.5 1.5 0 0 1-1.5 1.5"></svg:path><svg:path fill="#BE1931" d="M29 17.5a1.5 1.5 0 0 1-1.5-1.5v-2a1.5 1.5 0 1 1 3 0v2a1.5 1.5 0 0 1-1.5 1.5"></svg:path><svg:path fill="#5C913B" d="M29 24.5a1.5 1.5 0 0 1-1.5-1.5v-2a1.5 1.5 0 0 1 3 0v2a1.5 1.5 0 0 1-1.5 1.5"></svg:path><svg:path fill="#FFAC33" d="M29 31.5a1.5 1.5 0 0 1-1.5-1.5v-2a1.5 1.5 0 0 1 3 0v2a1.5 1.5 0 0 1-1.5 1.5"></svg:path><svg:path fill="#BF6952" d="M35 33H1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h34a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1"></svg:path>`,
+})
+export class TwemojiAbacusIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsGitlabFill24Icon],svg[qlementine-icons-gitlab-fill-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m23.6 8.71l-.034-.082l-3.27-8.12a.8.8 0 0 0-.336-.385a.91.91 0 0 0-1 .05a.83.83 0 0 0-.29.42l-2.21 6.42H7.53L5.32.593a.8.8 0 0 0-.29-.42a.91.91 0 0 0-.999-.051a.83.83 0 0 0-.336.385l-3.27 8.11l-.032.082a5.52 5.52 0 0 0-.165 3.66a5.83 5.83 0 0 0 2.18 3.02l.011.008l.03.02l4.98 3.55l3.96 2.85a1.05 1.05 0 0 0 1.22 0l3.96-2.85l5.01-3.57l.013-.009a5.75 5.75 0 0 0 2.17-3.01c.362-1.2.305-2.48-.163-3.65z"></svg:path>`,
+})
+export class QlementineIconsGitlabFill24Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

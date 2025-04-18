@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsWebrtcIcon],svg[simple-icons-webrtc-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M12 .36A5.4 5.4 0 0 0 6.62 5.3a5.4 5.4 0 0 0-1.22-.14a5.4 5.4 0 0 0-2.143 10.357a5.4 5.4 0 0 0-.737 2.723a5.4 5.4 0 0 0 9.54 3.466a5.4 5.4 0 0 0 8.833-6.137a5.4 5.4 0 0 0-3.505-10.152A5.4 5.4 0 0 0 12 .36M6.283 7.228h10.592c.746 0 1.352.605 1.352 1.349v7.646a1.35 1.35 0 0 1-1.352 1.348h-3.608l-7.24 3.55l1.1-3.55h-.844a1.35 1.35 0 0 1-1.352-1.348V8.577c0-.744.606-1.349 1.352-1.349"></svg:path>`,
 })
 export class SimpleIconsWebrtcIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

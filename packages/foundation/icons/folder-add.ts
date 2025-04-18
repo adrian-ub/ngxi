@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[foundationFolderAddIcon],svg[foundation-folder-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M86.016 24.091H49.313c-1.979-2.37-4.013-4.865-4.541-5.624a3.18 3.18 0 0 0-2.875-1.808h-14.53c-.964 0-1.875.435-2.479 1.185l-5.021 6.247h-5.884a5.49 5.49 0 0 0-5.484 5.484v48.284a5.49 5.49 0 0 0 5.484 5.482h72.032a5.49 5.49 0 0 0 5.484-5.482V29.575a5.49 5.49 0 0 0-5.483-5.484m-4.473 39.195a.65.65 0 0 1-.195.465a.65.65 0 0 1-.464.194h-8.779v8.78c0 .174-.07.341-.193.466a.67.67 0 0 1-.465.193h-6.15a.66.66 0 0 1-.658-.659v-8.78h-8.78a.66.66 0 0 1-.465-.194a.65.65 0 0 1-.193-.465v-6.149a.68.68 0 0 1 .658-.659h8.779v-8.78c0-.363.294-.658.659-.658l6.15.001c.364 0 .659.293.659.658v8.778h8.78c.364 0 .659.294.659.659z"></svg:path>`,
+})
+export class FoundationFolderAddIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

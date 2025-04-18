@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsSmartCardReaderSharpIcon],svg[material-symbols-smart-card-reader-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 22v-5h20v5zm3-6.5V2h14v13.5zM8 14h.575q1.1 0 1.763-1.1T11 10t-.663-2.9T8.576 6H8zm6-2q.825 0 1.413-.587T16 10t-.587-1.412T14 8t-1.412.588T12 10t.588 1.413T14 12"></svg:path>`,
+})
+export class MaterialSymbolsSmartCardReaderSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

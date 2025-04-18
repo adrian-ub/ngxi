@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[laGrinStarsIcon],svg[la-grin-stars-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-4 5.268l-.875 1.964L9 12.465l1.59 1.428L10.143 16L12 14.93L13.857 16l-.447-2.107L15 12.465l-2.125-.233zm8 0l-.875 1.964l-2.125.233l1.59 1.428L18.143 16L20 14.93L21.857 16l-.447-2.107L23 12.465l-2.125-.233zM10.81 19l-1.72 1a8.1 8.1 0 0 0 2.02 2.316a8 8 0 0 0 2.761 1.395A8 8 0 0 0 16 24c2.212 0 4.21-.906 5.658-2.367A8 8 0 0 0 22.91 20l-1.72-1a5.996 5.996 0 0 1-6.795 2.783a5.9 5.9 0 0 1-2.075-1.047A6.1 6.1 0 0 1 10.81 19"></svg:path>`,
+})
+export class LaGrinStarsIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

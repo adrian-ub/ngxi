@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeVelocityIcon],svg[material-icon-theme-velocity-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#0288d1" d="M150 61.553A88.446 88.446 0 0 0 61.553 150A88.446 88.446 0 0 0 150 238.446A88.446 88.446 0 0 0 238.446 150A88.446 88.446 0 0 0 150 61.553m.011 25.082a63.353 63.353 0 0 1 63.353 63.353a63.353 63.353 0 0 1-63.353 63.353a63.353 63.353 0 0 1-63.353-63.353a63.353 63.353 0 0 1 63.353-63.353" paint-order="fill markers stroke"></svg:path><svg:path fill="#0288d1" d="M45.008 193.096L12.213 225.89l32.795 32.795V238.44h104.99v-25.098H45.008zM74.088 12.21L41.293 45.006h20.246v104.99h25.098V45.007h20.246zm180.901 29.093V61.55h-104.99v25.097h104.99v20.246L287.784 74.1zM213.32 149.998V254.99h-20.245l32.794 32.795l32.795-32.795h-20.246V150z"></svg:path>`,
+})
+export class MaterialIconThemeVelocityIcon {
+  readonly viewBox = input("0 0 300 300")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

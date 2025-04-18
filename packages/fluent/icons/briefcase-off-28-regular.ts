@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBriefcaseOff28RegularIcon],svg[fluent-briefcase-off-28-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.28 2.22a.75.75 0 1 0-1.06 1.06l3.793 3.793a3.75 3.75 0 0 0-3.01 3.677v.923L3 11.75v1q0 .087.004.173v7.327A3.75 3.75 0 0 0 6.754 24H21.25c.5 0 .977-.098 1.414-.275l2.055 2.055a.75.75 0 0 0 1.061-1.06zm18.152 20.273q-.09.007-.181.007H6.753a2.25 2.25 0 0 1-2.25-2.25v-4.497a3.73 3.73 0 0 0 2.246.747h4.75v.5a1.5 1.5 0 0 0 1.5 1.5h2a1.5 1.5 0 0 0 1.42-1.018zm-8.914-8.914A1.5 1.5 0 0 0 11.5 15H6.75a2.25 2.25 0 0 1-2.246-2.116V10.75a2.25 2.25 0 0 1 2.25-2.25h.685zM9 5.818L11.682 8.5h9.568a2.25 2.25 0 0 1 2.25 2.25v2A2.25 2.25 0 0 1 21.25 15h-3.068l1.5 1.5h1.568c.844 0 1.624-.28 2.25-.75v4.568l1.259 1.26A3.7 3.7 0 0 0 25 20.25v-9.5A3.75 3.75 0 0 0 21.25 7H19V4.75a2.25 2.25 0 0 0-2.25-2.25h-5.5A2.25 2.25 0 0 0 9 4.75zM11.25 4h5.5a.75.75 0 0 1 .75.75V7h-7V4.75a.75.75 0 0 1 .75-.75"></svg:path>`,
+})
+export class FluentBriefcaseOff28RegularIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

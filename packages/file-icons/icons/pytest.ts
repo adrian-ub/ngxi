@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsPytestIcon],svg[file-icons-pytest-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M47.289 47.818V0h80.312v47.818zm305.986 0V0h-80.313v47.818zm-112.837 0V0h-80.312v47.818zm249.044 15.287H22.58c-30.107 0-30.107 45.09 0 45.09h466.902c30.024 0 30.024-45.09 0-45.09m-23.37-15.287V0h-80.313v47.818zm-80.313 75.664v117.134h80.312V123.482zm-112.837 0v201.852h80.313V123.482zm-112.836 0v311.215h80.312V123.482zm-112.837 0V512h80.312V123.482z"></svg:path>`,
+})
+export class FileIconsPytestIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsDesktopAccessDisabledOutlineRoundedIcon],svg[material-symbols-desktop-access-disabled-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.175 3.175L5 5H4v11h9.2L1.4 4.2q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l18.4 18.4q.275.275.275.7t-.275.7t-.7.275t-.7-.275L15.2 18H14v2h1q.425 0 .713.288T16 21t-.288.713T15 22H9q-.425 0-.712-.288T8 21t.288-.712T9 20h1v-2H4q-.825 0-1.412-.587T2 16V5q0-.925.588-1.375zM22 5v10.5q0 .5-.312.75T21 16.5t-.687-.262t-.313-.763V5H9q-.5 0-.75-.312T8 4t.25-.687T9 3h11q.825 0 1.413.588T22 5M8.6 11.4"></svg:path>`,
+})
+export class MaterialSymbolsDesktopAccessDisabledOutlineRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

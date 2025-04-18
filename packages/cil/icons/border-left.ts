@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilBorderLeftIcon],svg[cil-border-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M72 440V40H40v432h32zm368 0h32v32h-32zm-133.818 0h33.455v32h-33.455zm-133.818 0h33.455v32h-33.455zm200.727 0h33.455v32h-33.455zm-267.636 0h33.455v32h-33.455zM306.182 40h33.455v32h-33.455zm-133.818 0h33.455v32h-33.455zm200.727 0h33.455v32h-33.455zm-133.819 0h33.455v32h-33.455zm-133.817 0h33.455v32h-33.455zM440 40h32v32h-32zm0 333.091h32v33.454h-32zm0-66.909h32v33.454h-32zm0-200.728h32v33.454h-32zm0 66.909h32v33.454h-32zm0 66.909h32v33.455h-32zm-200.728 0h33.455v33.455h-33.455zm0 66.91h33.455v33.454h-33.455zm0-133.819h33.455v33.454h-33.455zm0-66.909h33.455v33.454h-33.455zm0 267.637h33.455v33.454h-33.455zm0 66.909h33.455v32h-33.455zm66.91-200.728h33.455v33.455h-33.455zm66.909 0h33.455v33.455h-33.455zm-200.727 0h33.455v33.455h-33.455zm-66.909 0h33.455v33.455h-33.455z"></svg:path>`,
+})
+export class CilBorderLeftIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

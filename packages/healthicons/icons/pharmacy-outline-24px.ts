@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[healthiconsPharmacyOutline24pxIcon],svg[healthicons-pharmacy-outline-24px-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M9 5c0-.406.152-.747.356-.884c.15-.1.713-.336 2.19.416a1 1 0 0 0 .908-1.782c-1.723-.877-3.16-1-4.21-.296C7.248 3.121 7 4.274 7 5H5c-.552 0-1.008.45-.919.996a6.3 6.3 0 0 0 .528 1.683c.402.85.991 1.62 1.734 2.27a8.2 8.2 0 0 0 2.596 1.518c.66.24 1.354.4 2.061.478V15h2v-3.055a9 9 0 0 0 1.934-.433a2 2 0 0 1-.934 1.22v2.142c1.725-.444 3-2.01 3-3.874a1 1 0 0 0-.111-.459q.405-.274.768-.591a7 7 0 0 0 1.734-2.271a6.4 6.4 0 0 0 .528-1.683C20.009 5.45 19.552 5 19 5zM7.66 8.445A5.1 5.1 0 0 1 6.505 7h10.99a5.1 5.1 0 0 1-1.155 1.445a6.2 6.2 0 0 1-1.96 1.142a7 7 0 0 1-2.376.413h-.008c-.82 0-1.629-.142-2.376-.413a6.2 6.2 0 0 1-1.96-1.142" clip-rule="evenodd"></svg:path><svg:path d="M7 20h4a1 1 0 0 1 .706-.956l2.183-.728a.162.162 0 0 0-.051-.316H9.5a2.5 2.5 0 0 1 0-5h.5v2h-.5a.5.5 0 0 0 0 1h4.338a2.162 2.162 0 0 1 1.14 4H17v2H7z"></svg:path></svg:g>`,
+})
+export class HealthiconsPharmacyOutline24pxIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

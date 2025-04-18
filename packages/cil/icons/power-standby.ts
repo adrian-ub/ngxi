@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilPowerStandbyIcon],svg[cil-power-standby-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M312 87.666v33.47C381.676 144.582 432 210.522 432 288c0 97.047-78.953 176-176 176S80 385.047 80 288c0-77.478 50.324-143.418 120-166.864v-33.47C112.422 112.179 48 192.7 48 288c0 114.691 93.309 208 208 208s208-93.309 208-208c0-95.3-64.422-175.821-152-200.334"></svg:path><svg:path fill="currentColor" d="M240 16h32v272h-32z"></svg:path>`,
+})
+export class CilPowerStandbyIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

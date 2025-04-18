@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiScrollIcon],svg[twemoji-scroll-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FFD983" d="M32 0H10a4 4 0 0 0-4 4v24H4a4 4 0 0 0 0 8h24a4 4 0 0 0 4-4V8a4 4 0 0 0 0-8"></svg:path><svg:path fill="#E39F3D" d="M8 10h24V8H10L8 7z"></svg:path><svg:path fill="#FFE8B6" d="M10 0a4 4 0 0 0-4 4v24.555A3.96 3.96 0 0 0 4 28a4 4 0 1 0 4 4V7.445C8.59 7.789 9.268 8 10 8a4 4 0 0 0 0-8"></svg:path><svg:path fill="#C1694F" d="M12 4a2 2 0 1 1-4.001-.001A2 2 0 0 1 12 4M6 32a2 2 0 1 1-4.001-.001A2 2 0 0 1 6 32m24-17a1 1 0 0 1-1 1H11a1 1 0 0 1 0-2h18a1 1 0 0 1 1 1m0 4a1 1 0 0 1-1 1H11a1 1 0 1 1 0-2h18a1 1 0 0 1 1 1m0 4a1 1 0 0 1-1 1H11a1 1 0 1 1 0-2h18a1 1 0 0 1 1 1m0 4a1 1 0 0 1-1 1H11a1 1 0 1 1 0-2h18a1 1 0 0 1 1 1"></svg:path>`,
+})
+export class TwemojiScrollIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenArrowReverseFill12Icon],svg[garden-arrow-reverse-fill-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" d="M7 1L.5 7.5m11-3L5 11"></svg:path><svg:path fill="currentColor" d="M8 4.79V.5c0-.28-.22-.5-.5-.5H3.21a.5.5 0 0 0-.36.85l4.29 4.29c.32.32.86.1.86-.35M4 7.21v4.29c0 .28.22.5.5.5h4.29c.45 0 .67-.54.35-.85l-4.29-4.3a.5.5 0 0 0-.85.36"></svg:path>`,
+})
+export class GardenArrowReverseFill12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsWideArrowDunkIcon],svg[game-icons-wide-arrow-dunk-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M213.006 18.303a171.7 171.7 0 0 0-62.66 11.787v-.002C34.204 75.41-38.364 247.605 86.88 479.638C-1.625 185.493 192.23 114.806 335.583 306.48l-29.55 21.86c60.543 45.71 107.035 83.703 163.136 156.812c30.35-98.22 35.076-175.94 7.385-283.75l-32.032 24.037C390.41 80.73 297.89 18.347 213.007 18.304zM203.25 78.39c54.92-.455 114.01 35.336 160.82 112.112l22.928-13.592c25.364 48.176 30.742 96.352 31.47 144.528c-28.858-41.125-62.888-75.81-104.222-101.403l27.565-16.34C241.768 94.185 110.326 56.397 43.71 269.428C61.548 146.686 128.538 79.01 203.25 78.39"></svg:path>`,
+})
+export class GameIconsWideArrowDunkIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

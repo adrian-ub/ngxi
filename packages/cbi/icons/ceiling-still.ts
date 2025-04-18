@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cbiCeilingStillIcon],svg[cbi-ceiling-still-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.837 11.357C19.442 9.729 16.186 8.8 11.767 8.8s-7.441.93-8.837 2.558A2.84 2.84 0 0 0 2 13.45c.233 1.86 6.512 2.326 10 2.326s9.535-.466 10-2.326a4.76 4.76 0 0 0-1.163-2.093m-9.07 3.953c-6.046 0-9.069-1.162-9.069-1.627s3.023-1.628 9.069-1.628s9.07 1.162 9.07 1.628s-3.023 1.627-9.07 1.627m0-3.023s-4.883 0-4.883.93s3.953 1.163 4.883 1.163s4.652-.232 4.652-1.4c.232-.7-4.652-.7-4.652-.7"></svg:path>`,
+})
+export class CbiCeilingStillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

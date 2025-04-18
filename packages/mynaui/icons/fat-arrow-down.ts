@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiFatArrowDownIcon],svg[mynaui-fat-arrow-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.483 13.105c-.43 0-.645.545-.34.863l7.516 6.884a.466.466 0 0 0 .682 0l7.517-6.884c.304-.318.088-.863-.341-.863H15.68a.495.495 0 0 1-.483-.506V3.506A.494.494 0 0 0 14.716 3H9.284a.494.494 0 0 0-.482.506v9.093c0 .28-.216.506-.483.506z"></svg:path>`,
+})
+export class MynauiFatArrowDownIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

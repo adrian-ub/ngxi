@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[bitcoinIconsSofaOutlineIcon],svg[bitcoin-icons-sofa-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor"><svg:path d="M3.5 11.5a1 1 0 1 1 2 0v3h13v-3a1 1 0 1 1 2 0v5a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z"></svg:path><svg:path d="M6 8a1.5 1.5 0 0 1 1.5-1.5h9A1.5 1.5 0 0 1 18 8v.708A2.5 2.5 0 0 0 16.5 11v1.5h-9V11A2.5 2.5 0 0 0 6 8.708z"></svg:path></svg:g>`,
+})
+export class BitcoinIconsSofaOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

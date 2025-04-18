@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiHeavyDollarSignIcon],svg[twemoji-heavy-dollar-sign-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#292F33" d="M28.81 23.209c0-7.672-14.144-7.171-14.144-11.803c0-2.242 2.145-3.337 4.633-3.337c4.184 0 4.929 2.688 6.824 2.688c1.342 0 1.988-.845 1.988-1.792c0-2.201-3.337-3.867-6.537-4.444V2.397a2.398 2.398 0 1 0-4.798 0v2.199c-3.489.794-6.49 3.214-6.49 7.159c0 7.369 14.142 7.071 14.142 12.247c0 1.793-1.941 3.586-5.129 3.586c-4.781 0-6.374-3.236-8.316-3.236c-.946 0-1.792.796-1.792 1.996c0 1.906 3.195 4.2 7.588 4.841l-.003.015v2.397a2.401 2.401 0 0 0 4.8 0v-2.397c0-.028-.014-.05-.016-.075c3.953-.738 7.25-3.315 7.25-7.92"></svg:path>`,
+})
+export class TwemojiHeavyDollarSignIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

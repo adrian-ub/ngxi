@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsBlitzbasicIcon],svg[file-icons-blitzbasic-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M444.05 334.874c82.184-10.48 78.937-138.589-49.64-134.03c-36.527 0-70.072.249-99.315.127c-10.366-16.25-29.21-29.79-58.073-36.683c82.184-10.48 78.937-138.589-49.64-134.03c-86.596 0-146.69 1.412-187.382-4.079v68.188h43.937v155.645H0v65.223h227.86v105.363h-25.2v65.223h216.422c99.194 0 135.833-124.472 24.968-150.947m-285.35-82.99h-31.44v-55.33h31.44c32.542 3.31 32.542 50.366 0 55.33m0-105.246h-31.44v-55.33h31.44c32.542 3.31 32.542 50.366 0 55.33m207.028 275.831h-31.44V367.14h31.44c32.542 3.31 32.542 50.365 0 55.33m0-105.245h-31.44v-55.33h31.44c32.542 3.31 32.542 50.365 0 55.33"></svg:path>`,
+})
+export class FileIconsBlitzbasicIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

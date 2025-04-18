@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[whhSquarebIcon],svg[whh-squareb-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M896.428 1024h-768q-53 0-90.5-37.5T.428 896V128q0-53 37.5-90.5t90.5-37.5h768q53 0 90.5 37.5t37.5 90.5v768q0 53-37.5 90.5t-90.5 37.5m-192-448q0-58-44-96q44-38 44-96q0-53-37.5-90.5t-90.5-37.5h-224q-13 0-22.5 9.5t-9.5 22.5v448q0 13 9.5 22.5t22.5 9.5h224q53 0 90.5-37.5t37.5-90.5zm-128 128h-176q-7 0-11.5-4.5t-4.5-11.5V528q0-7 4.5-11.5t11.5-4.5h176q26 0 45 19t19 45v64q0 27-19 45.5t-45 18.5m0-256h-176q-7 0-11.5-4.5t-4.5-11.5v-96q0-6 4.5-11t11.5-5h176q26 0 45 19t19 45.5t-19 45t-45 18.5"></svg:path>`,
+})
+export class WhhSquarebIcon {
+  readonly viewBox = input("0 0 1025 1024")
+  readonly width = input("1.01em")
+  readonly height = input("1em")
+}

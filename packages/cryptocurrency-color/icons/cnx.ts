@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cryptocurrencyColorCnxIcon],svg[cryptocurrency-color-cnx-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" fill-rule="evenodd"><svg:circle cx="16" cy="16" r="16" fill="#4c6bae"></svg:circle><svg:g fill="#fff"><svg:path d="M6.383 17.01L5 17.153q1.11-3.105 4.391-4.968q.31 2.573 2.44 4.259l-1.3.135a5.5 5.5 0 0 0 4.553 4.845a6.1 6.1 0 0 1-2.987 1.185q1.022 1.8 2.417 2.947a9.674 9.674 0 0 1-8.131-8.546m19.234-2.02L27 14.847q-1.11 3.105-4.391 4.968q-.31-2.573-2.44-4.259l1.3-.135a5.5 5.5 0 0 0-4.626-4.857a6.1 6.1 0 0 1 2.972-1.173q-1.03-1.813-2.438-2.963a9.674 9.674 0 0 1 8.24 8.562" opacity=".5"></svg:path><svg:path d="M16.922 25.626L17.065 27q-3.105-1.11-4.968-4.391q2.572-.31 4.258-2.44l.136 1.31a5.5 5.5 0 0 0 4.945-4.636a6.1 6.1 0 0 1 1.173 2.972q1.813-1.03 2.963-2.438a9.674 9.674 0 0 1-8.65 8.249M14.99 6.383L14.847 5q3.105 1.11 4.968 4.391q-2.573.31-4.259 2.44l-.135-1.3a5.5 5.5 0 0 0-4.857 4.626a6.1 6.1 0 0 1-1.173-2.972q-1.813 1.03-2.963 2.438a9.674 9.674 0 0 1 8.562-8.24"></svg:path></svg:g></svg:g>`,
+})
+export class CryptocurrencyColorCnxIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

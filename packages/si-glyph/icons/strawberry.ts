@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphStrawberryIcon],svg[si-glyph-strawberry-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="M8.367 2.084c.055-.154.58-.761.58-1.167S8.726 0 8.049 0c-.682 0-.982.511-.982.948c0 .396.525.97.582 1.114c-7.258 0-5.432 5.919-5.432 5.919s2.031-3.882 3.84-4.237q-.005.144-.006.287c0 2.734 1.996 4.951 1.996 4.951s1.809-2.217 1.809-4.951q-.002-.153-.006-.305c2.023.331 3.902 4.305 3.902 4.305s1.957-5.947-5.385-5.947"></svg:path><svg:path d="M10.873 5.608c0 2.392-2.838 4.798-2.838 4.798S5.14 7.979 5.14 5.558c-1.193.947-2.016 2.833-2.589 3.588c0 0 2.302 6.854 5.476 6.854s5.446-6.729 5.446-6.729c-.455-.601-1.317-2.617-2.6-3.663"></svg:path></svg:g>`,
+})
+export class SiGlyphStrawberryIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

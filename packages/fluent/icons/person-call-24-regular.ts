@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonCall24RegularIcon],svg[fluent-person-call-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.383 15.5a2.2 2.2 0 0 1-.231-1.5h-10.9a2.25 2.25 0 0 0-2.248 2.249v.578c0 .892.318 1.756.898 2.435c1.566 1.834 3.952 2.74 7.098 2.74q.585 0 1.133-.043a2.26 2.26 0 0 1-.008-1.503q-.54.045-1.125.045c-2.738 0-4.704-.746-5.957-2.213a2.25 2.25 0 0 1-.54-1.462v-.577a.75.75 0 0 1 .75-.75zM12 2.005a5 5 0 1 1 0 10a5 5 0 0 1 0-10m0 1.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m6.192 10.49l.476-1.205c.242-.614.92-.933 1.548-.728l.431.141c.724.237 1.326.806 1.35 1.569c.1 3.11-2.476 7.583-5.213 9.055c-.673.362-1.468.123-2.035-.391l-.337-.305a1.253 1.253 0 0 1-.142-1.706l.8-1.01c.29-.367.767-.53 1.22-.42l1.292.313q1.654-1.095 1.774-3.079l-.917-.964a1.2 1.2 0 0 1-.247-1.27"></svg:path>`,
+})
+export class FluentPersonCall24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

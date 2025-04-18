@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightMoveSelectionDownRoundedIcon],svg[material-symbols-light-move-selection-down-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.577 21q-.667 0-1.141-.475t-.475-1.14v-6.847q0-.666.475-1.14t1.141-.475h6.846q.667 0 1.141.475t.475 1.14v6.847q0 .666-.475 1.14T15.423 21zm7.846-12.808q-.261 0-.438-.176q-.177-.177-.177-.439t.177-.438t.438-.177t.439.177t.177.438t-.177.439t-.439.176m0-3.961q-.261 0-.438-.177t-.177-.438t.177-.439t.438-.177t.439.177t.177.439t-.177.438t-.439.177M12 4.23q-.261 0-.438-.177t-.177-.438t.177-.439T12 3t.439.177t.176.439t-.177.438T12 4.23m-4.423 0q-.261 0-.438-.177q-.178-.177-.178-.439q0-.261.177-.438T7.578 3t.439.177t.176.439t-.177.438t-.438.177m0 3.961q-.262 0-.439-.177t-.177-.438t.177-.439t.439-.177t.438.177t.177.439t-.177.438t-.438.177"></svg:path>`,
+})
+export class MaterialSymbolsLightMoveSelectionDownRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

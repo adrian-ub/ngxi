@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeSmartyIcon],svg[material-icon-theme-smarty-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FFCA28" d="M16 5a7 7 0 0 1 4.198 12.601l-1.198.9V21h-6v-2.498l-1.198-.9a7 7 0 0 1 3.362-12.554A7 7 0 0 1 16 5m0-3a10 10 0 0 0-1.176.067A10 10 0 0 0 10 20.001V22a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2a10 10 0 0 0-6-18m-4 24h8v2a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z"></svg:path>`,
+})
+export class MaterialIconThemeSmartyIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTabletLaptop24RegularIcon],svg[fluent-tablet-laptop-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21.25 16.5a.75.75 0 0 1 .101 1.493L21.25 18H16.5v-1.5zM4 10h1.5V6.75a.25.25 0 0 1 .25-.25h12.5a.25.25 0 0 1 .25.25v7.5a.25.25 0 0 1-.25.25H16.5V16h1.75A1.75 1.75 0 0 0 20 14.25v-7.5A1.75 1.75 0 0 0 18.25 5H5.75A1.75 1.75 0 0 0 4 6.75zm3.75 7a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5zm-3.5-6A2.25 2.25 0 0 0 2 13.25v5.5A2.25 2.25 0 0 0 4.25 21h9a2.25 2.25 0 0 0 2.25-2.25v-5.5A2.25 2.25 0 0 0 13.25 11zm-.75 2.25a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-.75.75h-9a.75.75 0 0 1-.75-.75z"></svg:path>`,
+})
+export class FluentTabletLaptop24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

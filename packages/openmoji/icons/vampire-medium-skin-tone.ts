@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiVampireMediumSkinToneIcon],svg[openmoji-vampire-medium-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#6a462f" d="M26.1 39.2c-4 0-4-6-4-13s4-14 14-14s14 7 14 14s0 13-4 13"></svg:path><svg:path fill="#c19a65" d="M24.95 31.1c0 9 4.9 14 11 14c5.9 0 11.1-5 11.1-14a12.1 12.1 0 0 0-1-5c-3-3-7-8-7-8c-4 3-7 6-13 7c0 0-1.1 1-1.1 6"></svg:path><svg:path fill="#D22F27" d="M35.65 45.1c-3.4-.1-8.6-5.7-8.6-5.7h-13.6a83 83 0 0 1 4.3 8.4a48.6 48.6 0 0 1 2.8 9.9h30.9a48.6 48.6 0 0 1 2.8-9.9a83 83 0 0 1 4.3-8.4h-13.9c.1 0-5.5 5.7-9 5.7"></svg:path><svg:path fill="#3F3F3F" d="M17 61v-3.8c0-5 5-9 10-9q9 7.5 18 0c5 0 10 4 10 9V61z"></svg:path><svg:path d="M31.45 61h9c3.6-2.9 5.6-13.5 5.6-13.5c-5.767 5-14.333 5-20.1 0c0-.1 2 10.5 5.5 13.5"></svg:path><svg:path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2" d="M26.5 39.4H13.4a55.5 55.5 0 0 1 4.3 8.4q.761 1.862 1.3 3.8m34-.2c.4-1.2.8-2.4 1.3-3.6a51 51 0 0 1 4.3-8.4H44.7"></svg:path><svg:path d="M42 30.1a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-8 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M33 39c1.875-1 4.125-1 6 0"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M38 38.5q.361.123.7.3"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 60v-3c0-5 5-9 10-9q9 7.5 18 0c5 0 10 4 10 9v3"></svg:path><svg:path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="m34 38.7l.3 2.4l.8-2.3l-.1-.1zm3.9 0l-.2 2.4l-.8-2.3l-.1-.1z"></svg:path><svg:path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2" d="M24.95 31.1c0 9 4.9 14 11 14c5.9 0 11.1-5 11.1-14a12.1 12.1 0 0 0-1-5c-3-3-7-8-7-8c-4 3-7 6-13 7c0 0-1.1 1-1.1 6z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26 39.1c-4 0-4-6-4-13s4-14 14-14s14 7 14 14s0 13-4 13"></svg:path>`,
+})
+export class OpenmojiVampireMediumSkinToneIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

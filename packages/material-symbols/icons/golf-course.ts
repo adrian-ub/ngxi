@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsGolfCourseIcon],svg[material-symbols-golf-course-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.5 21q-.625 0-1.062-.437T18 19.5t.438-1.062T19.5 18t1.063.438T21 19.5t-.437 1.063T19.5 21M10 22q-2.5 0-4.25-.587T4 20q0-.575.825-1.025T7 18.25V20h2V2l8 3.9L11 9v9.05q2.15.125 3.575.663T16 20q0 .825-1.75 1.413T10 22"></svg:path>`,
+})
+export class MaterialSymbolsGolfCourseIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

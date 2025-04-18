@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedLibreIcon],svg[token-branded-libre-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#00B7FF" d="m17.69 6.668l-1.471-3.21c-.15-.35-.33-.453-.494-.458c-.216-.005-.391.16-.391.16s-8.606 7.732-9.671 8.838c-.463.478-.618.992-.607 1.42c.01.55.216.894.216.894c.926 1.863 1.723 3.833 2.628 5.72c.515.989 1.755.968 1.755.968h8.776c.257 0 .514-.298.514-.478c0-.206-.108-.396-.108-.396s-1.41-3.344-1.852-4.106c-.324-.679-1.075-.679-1.075-.679H10.2c2.34-2.402 6.724-5.833 7.305-6.446c.864-.89.185-2.227.185-2.227"></svg:path><svg:path fill="#0061E7" d="M5.273 14.313s.751 1.029 1.595 1.029h3.848c-.993 1.029-2.387 1.78-2.387 1.78s-.916.813-.7 2.335z"></svg:path></svg:g>`,
+})
+export class TokenBrandedLibreIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

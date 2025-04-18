@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkSolidDrinkIcon],svg[icon-park-solid-drink-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="4"><svg:path stroke-linecap="round" d="M10 16h28"></svg:path><svg:path d="M14.153 18.143A2 2 0 0 1 16.148 16h15.704a2 2 0 0 1 1.995 2.142l-1.714 24A2 2 0 0 1 30.138 44H17.862a2 2 0 0 1-1.995-1.858z"></svg:path><svg:path stroke-linecap="round" d="M24 10V6a2 2 0 0 1 2-2h3"></svg:path><svg:path fill="currentColor" d="M14.722 11.671A2 2 0 0 1 16.694 10h14.612a2 2 0 0 1 1.973 1.671L34 16H14z"></svg:path></svg:g>`,
+})
+export class IconParkSolidDrinkIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

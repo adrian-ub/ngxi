@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeFolderAzurePipelinesIcon],svg[material-icon-theme-folder-azure-pipelines-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#1e88e5" d="m13.844 7.536l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464"></svg:path><svg:path fill="#bbdefb" d="m28 22l3.724-1.862a.5.5 0 0 0 .276-.447V12.5a.5.5 0 0 0-.5-.5h-7.191a.5.5 0 0 0-.447.276L22 16h-5.5a.5.5 0 0 0-.5.5V20l1.172 1.172l1.414-1.415L20 21.172l-1.414 1.414l2.828 2.828L22.828 24l1.415 1.414l-1.415 1.414L24 28h3.5a.5.5 0 0 0 .5-.5Zm0-4a2 2 0 1 1 2-2a2 2 0 0 1-2 2M16 28v-4h-2v6h6v-2z"></svg:path>`,
+})
+export class MaterialIconThemeFolderAzurePipelinesIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

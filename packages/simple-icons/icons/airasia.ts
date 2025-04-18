@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsAirasiaIcon],svg[simple-icons-airasia-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M11.54 14.49c-1.278 0-2.264-.998-2.264-2.276c0-1.252.98-2.27 2.264-2.27c1.232 0 2.238 1.018 2.238 2.27c0 1.278-1.005 2.277-2.239 2.277zm3.074-7.854l-.214.998c-.59-1.18-2.348-1.297-3.295-1.297c-2.952 0-5.527 2.841-5.527 6.746c0 3.14 1.875 5.111 4.23 5.111c1.316 0 2.432-.304 3.353-1.4l-.24 1.102h3.711l1.692-11.26c-1.238-.001-2.482.01-3.71 0M12 0c6.63 0 12 5.37 12 12s-5.37 12-12 12S0 18.63 0 12S5.37 0 12 0"></svg:path>`,
 })
 export class SimpleIconsAirasiaIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

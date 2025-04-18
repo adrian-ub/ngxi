@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fxemojiClosedmailboxraisedIcon],svg[fxemoji-closedmailboxraised-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#D19B61" d="M198.373 319.086v167.272c0 11.4 27.197 20.642 60.746 20.642s60.746-9.242 60.746-20.642V319.086z"></svg:path><svg:path fill="#81929B" d="M500.242 181.857c0-61.435-49.803-111.238-111.238-111.238H124.036l111.238 313.834h257.768a7.2 7.2 0 0 0 7.2-7.2V189.057q-.001-.747-.146-1.451q.145-2.856.146-5.749"></svg:path><svg:path fill="#BCC8CC" d="M124.036 70.619c-61.435 0-111.238 49.803-111.238 111.238v195.396a7.2 7.2 0 0 0 7.2 7.2h208.076a7.2 7.2 0 0 0 7.2-7.2V181.857c0-61.435-49.803-111.238-111.238-111.238"></svg:path><svg:path fill="#FF473E" d="M398.984 5.525h-58.093c-18.729 0-34.461 12.829-38.891 30.178a23.4 23.4 0 0 0-2.213 9.959v162.843c0 12.984 10.525 23.509 23.509 23.509s23.509-10.525 23.509-23.509V85.8h52.179c22.167 0 40.138-17.97 40.138-40.137S421.151 5.525 398.984 5.525"></svg:path>`,
+})
+export class FxemojiClosedmailboxraisedIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

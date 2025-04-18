@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamSelectAllIcon],svg[jam-select-all-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.01 14a1 1 0 0 1 .988 1h12.004a1 1 0 0 1 1-1V4a1 1 0 0 1-1-1H4.01a1 1 0 0 1-1 1zm.988 3a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h.01V4a1 1 0 0 1-.998-1V1a1 1 0 0 1 .999-1H3.01a1 1 0 0 1 1 1h11.992a1 1 0 0 1 1-1H19a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-1.998a1 1 0 0 1-1-1z"></svg:path>`,
+})
+export class JamSelectAllIcon {
+  readonly viewBox = input("0 0 20 18")
+  readonly width = input("1.12em")
+  readonly height = input("1em")
+}

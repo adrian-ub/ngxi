@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsInboxTextAsteriskIcon],svg[material-symbols-inbox-text-asterisk-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m16.45 20.825l-1.6-1.175l1.525-2.125l-2.475-.8l.6-1.925l2.5.825V13h2v2.625l2.5-.825l.6 1.925l-2.475.8l1.525 2.125l-1.6 1.175L18 18.7zM5 21q-.825 0-1.413-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v5.65q-.475-.225-.975-.363T19 10.076V5H5v9h4.2q.225.675.75 1.175t1.175.7q-.2 1.35.075 2.675T12.275 21zM7 8.75h10v-2H7zm0 3.5h5.925q.675-.725 1.512-1.225t1.813-.775H7z"></svg:path>`,
+})
+export class MaterialSymbolsInboxTextAsteriskIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

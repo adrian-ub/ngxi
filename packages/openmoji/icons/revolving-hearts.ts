@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiRevolvingHeartsIcon],svg[openmoji-revolving-hearts-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FFA7C0" d="M43 36.165a8.51 8.51 0 0 0-16-4.045a8.51 8.51 0 0 0-16 4.044a8.47 8.47 0 0 0 1.886 5.337l-.003.003L27 59l14.117-17.496l-.003-.002A8.47 8.47 0 0 0 43 36.164m18-18.643a4.521 4.521 0 0 0-8.5-2.148a4.521 4.521 0 1 0-7.498 4.984h-.001l7.499 9.296l7.5-9.295l-.002-.001A4.5 4.5 0 0 0 61 17.52"></svg:path><svg:g fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"><svg:path stroke-linecap="round" d="M19.614 21.692C23.718 18.496 29.541 16.5 36 16.5q1.036 0 2.049.068M60.92 30.261c.38 1.202.58 2.453.58 3.739c0 8.728-9.241 15.873-20.94 16.46"></svg:path><svg:path stroke-linejoin="round" d="M43 36.165a8.51 8.51 0 0 0-16-4.045a8.51 8.51 0 0 0-16 4.044a8.47 8.47 0 0 0 1.886 5.337l-.003.003L27 59l14.117-17.496l-.003-.002A8.47 8.47 0 0 0 43 36.164zm18-18.644a4.521 4.521 0 0 0-8.5-2.148a4.521 4.521 0 1 0-7.498 4.984h-.001l7.499 9.296l7.5-9.295l-.002-.001A4.5 4.5 0 0 0 61 17.52z"></svg:path></svg:g>`,
+})
+export class OpenmojiRevolvingHeartsIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

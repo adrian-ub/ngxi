@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiSleepingFaceIcon],svg[openmoji-sleeping-face-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="36" cy="36" r="24" fill="#FCEA2B"></svg:circle><svg:circle cx="36" cy="48.144" r="3.404" fill="#FFF"></svg:circle><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M44.77 14.73A22.9 22.9 0 0 0 36 13c-12.703 0-23 10.297-23 23s10.297 23 23 23s23-10.298 23-23c0-2.824-.509-5.528-1.44-8.028"></svg:path><svg:circle cx="36" cy="48.144" r="3.404" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></svg:circle><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M50.165 32.86c-3.176 2.343-7.456 2.06-10 0m-8.33 0c-3.176 2.343-7.456 2.06-10 0"></svg:path><svg:path d="M44.875 24.026h-2.616a1.002 1.002 0 0 1-.868-1.496l1.76-3.082h-.892a1 1 0 1 1 0-2h2.616a1.002 1.002 0 0 1 .868 1.496l-1.76 3.082h.892a1 1 0 1 1 0 2m6.143-4h-3.76a1.002 1.002 0 0 1-.867-1.496l2.904-5.082h-2.036a1 1 0 1 1 0-2h3.76a1.002 1.002 0 0 1 .868 1.496l-2.905 5.082h2.036a1 1 0 1 1 0 2m8.142 5h-4.9a1.002 1.002 0 0 1-.868-1.496l4.046-7.082H54.26a1 1 0 1 1 0-2h4.902a1.002 1.002 0 0 1 .868 1.496l-4.047 7.082h3.179a1 1 0 1 1 0 2"></svg:path><svg:path fill="#61B2E4" stroke="#61B2E4" stroke-miterlimit="10" stroke-width=".1" d="M44.875 24.026h-2.616a1.002 1.002 0 0 1-.868-1.496l1.76-3.082h-.892a1 1 0 1 1 0-2h2.616a1.002 1.002 0 0 1 .868 1.496l-1.76 3.082h.892a1 1 0 1 1 0 2zm6.143-4h-3.76a1.002 1.002 0 0 1-.867-1.496l2.904-5.082h-2.036a1 1 0 1 1 0-2h3.76a1.002 1.002 0 0 1 .868 1.496l-2.905 5.082h2.036a1 1 0 1 1 0 2zm8.142 5h-4.9a1.002 1.002 0 0 1-.868-1.496l4.046-7.082H54.26a1 1 0 1 1 0-2h4.902a1.002 1.002 0 0 1 .868 1.496l-4.047 7.082h3.179a1 1 0 1 1 0 2z"></svg:path>`,
+})
+export class OpenmojiSleepingFaceIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

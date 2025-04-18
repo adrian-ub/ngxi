@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7TBubbleFillIcon],svg[f7-t-bubble-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.094 52.316c.937 0 1.594-.468 2.695-1.5l8.484-7.734l15.82.023c6.985.024 10.735-3.867 10.735-10.734V14.418c0-6.867-3.75-10.734-10.734-10.734H12.906c-6.96 0-10.734 3.843-10.734 10.734v17.953c0 6.89 3.773 10.734 10.734 10.711h1.102v6.82c0 1.453.773 2.414 2.086 2.414m11.86-18.164c-1.196 0-1.852-.867-1.852-2.11v-15.21h-5.766c-.89 0-1.547-.586-1.547-1.523c0-.961.656-1.547 1.547-1.547h15.352c.89 0 1.546.586 1.546 1.547c0 .937-.656 1.523-1.546 1.523h-5.836v15.21c0 1.29-.657 2.11-1.899 2.11"></svg:path>`,
+})
+export class F7TBubbleFillIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

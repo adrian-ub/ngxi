@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[primeBoxIcon],svg[prime-box-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.73 16.52V7.59a.7.7 0 0 0-.08-.33a.74.74 0 0 0-.36-.36l-8-3.58a.75.75 0 0 0-.62 0l-8 3.58a.8.8 0 0 0-.44.69v8.82a.83.83 0 0 0 .44.69l8 3.58a.72.72 0 0 0 .62 0l8-3.58a.77.77 0 0 0 .44-.58m-16-7.78l6.5 2.92v7.18l-6.5-2.91Zm8 2.92l6.5-2.92v7.19l-6.5 2.91ZM12 4.82l6.17 2.77L12 10.35L5.83 7.59Z"></svg:path>`,
+})
+export class PrimeBoxIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

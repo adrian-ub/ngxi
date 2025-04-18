@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentArrowTurnDownUp48RegularIcon],svg[fluent-arrow-turn-down-up-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M38.378 6.71a1.25 1.25 0 0 0-1.608-.614l-12 5a1.25 1.25 0 1 0 .961 2.308l9.483-3.951L23 39.273L10.407 8.525a1.25 1.25 0 0 0-2.313.948l12.824 31.31c.763 1.864 3.401 1.864 4.164 0l12.374-30.207l4.167 8.713a1.25 1.25 0 1 0 2.255-1.08z"></svg:path>`,
+})
+export class FluentArrowTurnDownUp48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

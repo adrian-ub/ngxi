@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedBrushIcon],svg[token-branded-brush-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedBrush0)" fill-opacity=".3" d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></svg:path><svg:path fill="url(#tokenBrandedBrush1)" fill-rule="evenodd" d="M12 20.37a8.37 8.37 0 0 0 7.934-5.118A8.375 8.375 0 1 0 12 20.37m0 .63a9 9 0 1 0 0-18a9 9 0 0 0 0 18" clip-rule="evenodd"></svg:path><svg:path fill="url(#tokenBrandedBrush2)" d="m6.966 16.326l3.594-3.257c.326.168.911.562.934 1.113l-3.178 3.505c-.45-.011-1.35-.304-1.35-1.361m1.186.421a.28.28 0 1 0 0-.556a.281.281 0 1 0 0 .562z"></svg:path><svg:path fill="#737071" d="m11.612 12.726l3.695 1.575l.788-.832l-.135-.17l.371-.292l.383.495l-1.288 1.35l-3.696-1.563l-.585.635l-.349-.32z"></svg:path><svg:path fill="#B38C68" d="M11.235 6.393c-1.125.163-1.868 1.35-2.099 1.912l5.614 5.664a2.05 2.05 0 0 0 2.076-1.895z"></svg:path><svg:path fill="url(#tokenBrandedBrush3)" d="M10.081 7.428c-.236.09-.461.9-.54 1.288l5.029 5.074c.94-.073 1.187-.54 1.198-.765c.248-.056.827-.686 1.08-.996l-5.524-5.613c-.19.09-.562.32-.562.517c0 .248-.388.383-.68.495"></svg:path><svg:path fill="url(#tokenBrandedBrush4)" d="M14.548 3.006L11.28 6.482l5.512 5.552l4.163-4.174V3h-6.407z"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedBrush0" x1="6.201" x2="17.349" y1="5.171" y2="18.817" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#99817E"></svg:stop><svg:stop offset=".25" stop-color="#948680"></svg:stop><svg:stop offset=".51" stop-color="#7C988B"></svg:stop><svg:stop offset=".77" stop-color="#7B90A1"></svg:stop><svg:stop offset="1" stop-color="#868A9F"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedBrush1" x1="6.336" x2="17.006" y1="4.755" y2="19.234" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF413F"></svg:stop><svg:stop offset=".16" stop-color="#FD9819"></svg:stop><svg:stop offset=".36" stop-color="#FCC008"></svg:stop><svg:stop offset=".51" stop-color="#45C391"></svg:stop><svg:stop offset=".7" stop-color="#D69B70"></svg:stop><svg:stop offset=".86" stop-color="#A767E5"></svg:stop><svg:stop offset="1" stop-color="#6A8AEF"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedBrush2" x1="8.232" x2="14.52" y1="9.819" y2="16.41" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#D02612"></svg:stop><svg:stop offset=".48" stop-color="#EB4F2E"></svg:stop><svg:stop offset="1" stop-color="#841F0C"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedBrush3" x1="5.272" x2="18.454" y1="5.884" y2="18.939" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#0EBEFF"></svg:stop><svg:stop offset=".28" stop-color="#46CB85"></svg:stop><svg:stop offset=".51" stop-color="#FA4B4C"></svg:stop><svg:stop offset=".69" stop-color="#F9CD07"></svg:stop><svg:stop offset="1" stop-color="#AE63E4"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedBrush4" x1="13.114" x2="18.57" y1="4.479" y2="10.088" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#79DBFF"></svg:stop><svg:stop offset=".29" stop-color="#77DC9B"></svg:stop><svg:stop offset=".55" stop-color="#EB6F69"></svg:stop><svg:stop offset=".73" stop-color="#FEE074"></svg:stop><svg:stop offset="1" stop-color="#C58FEC"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedBrushIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

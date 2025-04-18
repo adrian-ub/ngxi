@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMailDismiss28FilledIcon],svg[fluent-mail-dismiss-28-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M27 7.5a6.5 6.5 0 1 1-13 0a6.5 6.5 0 0 1 13 0m-9.146-3.354a.5.5 0 0 0-.708.708L19.793 7.5l-2.647 2.646a.5.5 0 0 0 .708.708L20.5 8.207l2.646 2.647a.5.5 0 0 0 .708-.708L21.207 7.5l2.647-2.646a.5.5 0 0 0-.708-.708L20.5 6.793zM20.5 15a7.47 7.47 0 0 0 4.5-1.5v6.25a3.25 3.25 0 0 1-3.065 3.245L21.75 23H6.25a3.25 3.25 0 0 1-3.245-3.066L3 19.75v-9.626l10.654 5.541a.75.75 0 0 0 .692 0l2.8-1.455A7.5 7.5 0 0 0 20.5 15M6.25 5h7.177A7.5 7.5 0 0 0 13 7.5a7.48 7.48 0 0 0 2.706 5.768L14 14.155L3 8.434V8.25a3.25 3.25 0 0 1 3.066-3.245z"></svg:path>`,
+})
+export class FluentMailDismiss28FilledIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

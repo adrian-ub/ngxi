@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsBatteryCharging20RoundedIcon],svg[material-symbols-battery-charging-20-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 22q-.425 0-.712-.288T7 21V5q0-.425.288-.712T8 4h2V3q0-.425.288-.712T11 2h2q.425 0 .713.288T14 3v1h2q.425 0 .713.288T17 5v6q0 .425-.288.713T16 12t-.712-.288T15 11V6H9v12h1.225q.325 0 .55.213t.275.562q.075.55.238 1.05t.412.975q.2.425 0 .813t-.625.387zm8.5-3h-1.55q-.3 0-.437-.262t.037-.513l2.5-3.575q.125-.15.288-.1t.162.25V17h1.55q.3 0 .438.263t-.038.512l-2.5 3.575q-.125.15-.288.1t-.162-.25z"></svg:path>`,
+})
+export class MaterialSymbolsBatteryCharging20RoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

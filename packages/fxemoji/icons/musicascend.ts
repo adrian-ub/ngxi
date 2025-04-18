@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fxemojiMusicascendIcon],svg[fxemoji-musicascend-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#00B1FF" d="M421 317.563c0 .177-.262.347-.267.523c.006.349-.214.694-.214 1.044c0 34.319-27.822 62.141-62.141 62.141s-62.141-27.821-62.141-62.141s27.82-62.141 62.139-62.141c9.14 0 17.623 1.99 25.623 5.533V131.498l-174 96.158v213.945c0 .772-.169 1.486-.263 2.173c-1.147 33.311-28.601 59.968-62.192 59.968c-34.319 0-62.18-27.821-62.18-62.141s27.743-62.141 62.063-62.141c9.18 0 17.571 2.006 25.571 5.579V139.728c0-6.647 3.827-12.771 9.648-15.985L393.557 7.425c5.658-3.123 12.657-3.02 18.227.263c5.564 3.283 9.215 9.263 9.215 15.723v294.152z"></svg:path>`,
+})
+export class FxemojiMusicascendIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

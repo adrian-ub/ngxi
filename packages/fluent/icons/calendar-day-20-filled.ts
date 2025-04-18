@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCalendarDay20FilledIcon],svg[fluent-calendar-day-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.5 3A2.5 2.5 0 0 1 17 5.5v9a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 3 14.5v-9A2.5 2.5 0 0 1 5.5 3zm-1.782 6H7.282c-.446 0-.607.046-.77.134a.9.9 0 0 0-.378.378c-.077.142-.122.284-.132.615L6 10.282v2.436c0 .446.046.607.134.77q.132.246.378.378c.142.077.284.122.616.132l.154.002h5.436c.446 0 .607-.046.77-.134a.9.9 0 0 0 .378-.378c.077-.142.122-.284.132-.615l.002-.155v-2.436c0-.446-.046-.607-.134-.77a.9.9 0 0 0-.378-.378c-.142-.077-.284-.122-.615-.132zm.194 1.002l.08.005l.006.08v2.825l-.005.08l-.08.006H7.087l-.08-.005l-.006-.08v-2.825l.005-.08l.08-.006zM13.5 6h-7l-.09.008a.5.5 0 0 0 0 .984L6.5 7h7l.09-.008a.5.5 0 0 0 0-.984z"></svg:path>`,
+})
+export class FluentCalendarDay20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

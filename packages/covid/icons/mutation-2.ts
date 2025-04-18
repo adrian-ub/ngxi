@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[covidMutation2Icon],svg[covid-mutation-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M7.528 19.777a3.714 3.714 0 1 0 0-7.428a3.714 3.714 0 0 0 0 7.428M6.909 9.563h1.238m-.619 0v2.786m4.159-1.32l.875.876m-.438-.438l-1.969 1.97m3.873 2.007v1.238m0-.619h-2.785m1.319 4.159l-.875.875m.437-.438l-1.969-1.969m-2.008 3.873H6.909m.619 0v-2.786m-4.158 1.32l-.876-.875m.438.437l1.97-1.969m-3.874-2.008v-1.238m0 .619h2.786m-1.32-4.158l.876-.876m-.438.438l1.97 1.97m13.446-4.283a2.714 2.714 0 1 0 0-5.428a2.714 2.714 0 0 0 0 5.428m-.452-7.464h.905m-.453 0v2.035m3.039-.964l.64.64m-.32-.32l-1.44 1.439m2.831 1.467v.905m0-.452h-2.036m.965 3.038l-.64.64m.32-.32l-1.44-1.439m-1.466 2.831h-.905m.452 0V9.154m-3.039.964l-.64-.64m.32.32l1.44-1.439m-2.831-1.467v-.905m0 .453h2.036m-.965-3.039l.64-.64m-.32.32l1.44 1.439M2.748 7.9V3.283a1.846 1.846 0 0 1 1.846-1.846H9.21"></svg:path><svg:path d="M4.594 6.052L2.748 7.898L.902 6.052m20.154 8.385v6.154a1.847 1.847 0 0 1-1.846 1.846h-2.616"></svg:path><svg:path d="m19.21 16.283l1.846-1.846l1.846 1.846"></svg:path></svg:g>`,
+})
+export class CovidMutation2Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

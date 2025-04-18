@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatGarlicIcon],svg[fluent-emoji-flat-garlic-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#FFCE7C" d="M15.985 28.236q.39.034.796.034h6.08c6.65 0 9.65-8.32 4.52-12.56l-4.23-3.49a8.47 8.47 0 0 1-3.09-6.55v-1.5c0-.65-.52-1.17-1.17-1.17h-5.81c-.65 0-1.17.52-1.17 1.17v1.5c0 2.54-1.13 4.94-3.09 6.55l-4.23 3.49c-5.13 4.24-2.13 12.56 4.52 12.56h6.08q.405 0 .794-.034"></svg:path><svg:path fill="#FEEFC2" d="m22.05 14.09l-2.33-2.21a7.6 7.6 0 0 1-2.35-5.49V3h-2.81v3.42c0 2.08-.85 4.06-2.36 5.49l-2.29 2.18c-5.38 5.12-1.76 14.19 5.67 14.19h.79c7.44 0 11.06-9.06 5.68-14.19"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatGarlicIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

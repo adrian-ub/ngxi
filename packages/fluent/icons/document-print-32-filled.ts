@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentDocumentPrint32FilledIcon],svg[fluent-document-print-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17 2v7a3 3 0 0 0 3 3h7v15a3 3 0 0 1-3 3h-7.017a3.25 3.25 0 0 0 1.517-2.75v-5a3.75 3.75 0 0 0-2.512-3.54A3.5 3.5 0 0 0 12.5 15.5h-6c-.537 0-1.045.12-1.5.337V5a3 3 0 0 1 3-3zm2 .117V9a1 1 0 0 0 1 1h6.883a3 3 0 0 0-.762-1.293L20.293 2.88A3 3 0 0 0 19 2.117M6.5 17a2 2 0 0 0-2 2v1h-.25A2.25 2.25 0 0 0 2 22.25v5c0 .966.784 1.75 1.75 1.75h.75a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2h.75A1.75 1.75 0 0 0 17 27.25v-5A2.25 2.25 0 0 0 14.75 20h-.25v-1a2 2 0 0 0-2-2zM6 20v-1a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1zm0 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5V29a.5.5 0 0 1-.5.5h-6A.5.5 0 0 1 6 29z"></svg:path>`,
+})
+export class FluentDocumentPrint32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

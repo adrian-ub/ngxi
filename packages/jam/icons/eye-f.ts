@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamEyeFIcon],svg[jam-eye-f-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 12c-5.042.007-10-2.686-10-6S4.984-.017 10 0s10 2.686 10 6s-4.958 5.993-10 6m0-2a4 4 0 1 0 0-8a4 4 0 0 0 0 8m0-2a2 2 0 1 1 0-4a2 2 0 0 1 0 4"></svg:path>`,
+})
+export class JamEyeFIcon {
+  readonly viewBox = input("-2 -6 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

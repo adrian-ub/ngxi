@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsRotate90DegreesCwIcon],svg[material-symbols-rotate-90-degrees-cw-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 22q-1.875 0-3.512-.712t-2.85-1.925t-1.926-2.85T2 13q0-3.75 2.625-6.375T11 4h.15L9.6 2.45L11 1l4 4l-4 4l-1.4-1.45L11.15 6H11Q8.075 6 6.038 8.038T4 13t2.038 4.963T11 20q.875 0 1.725-.213t1.625-.637l1.45 1.45q-1.075.7-2.3 1.05T11 22m6-3l-6-6l6-6l6 6z"></svg:path>`,
+})
+export class MaterialSymbolsRotate90DegreesCwIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

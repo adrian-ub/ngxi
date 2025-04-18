@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenDatabaseFill12Icon],svg[garden-database-fill-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 0C3.59 0 1 .63 1 2.02v7.97C1 11.37 3.59 12 6 12s5-.63 5-2.02V2.02C11 .63 8.41 0 6 0m3.69 9.4c-.92.38-2.26.6-3.69.6s-2.77-.22-3.69-.6c-.25-.11-.38-.4-.27-.65s.4-.38.65-.27C3.5 8.81 4.7 9 6 9s2.51-.19 3.31-.53c.25-.1.55.01.65.27a.5.5 0 0 1-.27.66m0-2.94c-.92.38-2.26.6-3.69.6s-2.77-.22-3.69-.6a.5.5 0 0 1-.27-.65a.5.5 0 0 1 .65-.27c.8.33 2.01.52 3.31.52s2.51-.19 3.31-.52c.25-.11.55.01.65.27c.11.25-.01.55-.27.65m0-3.06C8.77 3.78 7.43 4 6 4s-2.77-.22-3.69-.6a.5.5 0 0 1-.27-.65c.11-.26.4-.38.65-.27C3.49 2.81 4.7 3 6 3s2.51-.19 3.31-.52c.25-.1.55.01.65.27c.11.25-.01.54-.27.65"></svg:path>`,
+})
+export class GardenDatabaseFill12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

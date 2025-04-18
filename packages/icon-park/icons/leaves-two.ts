@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkLeavesTwoIcon],svg[icon-park-leaves-two-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path fill="#2F88FF" d="M20.9999 17C29.3846 14.8792 38.6651 8.24004 41.9999 5C41.9999 20 38.1985 28.4716 35.9999 31C25.9999 42.5 15.0652 37.1591 12.9999 33C8.14514 23.2233 15.0699 18.4999 20.9999 17Z"></svg:path><svg:path d="M6 43C6.41176 41 8.38824 36.4 13 34"></svg:path></svg:g>`,
+})
+export class IconParkLeavesTwoIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

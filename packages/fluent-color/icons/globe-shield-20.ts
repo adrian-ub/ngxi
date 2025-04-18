@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorGlobeShield20Icon],svg[fluent-color-globe-shield-20-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorGlobeShield203)" d="M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16"></svg:path><svg:path fill="url(#fluentColorGlobeShield200)" fill-opacity=".7" d="M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16"></svg:path><svg:path fill="url(#fluentColorGlobeShield201)" fill-opacity=".2" d="M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16"></svg:path><svg:path fill="url(#fluentColorGlobeShield202)" fill-rule="evenodd" d="M7.853 2.291a7 7 0 0 0-.816 1.51c-.368.906-.65 1.995-.826 3.199H2.58q-.195.485-.33 1h3.84a22 22 0 0 0 .001 4h-3.84q.135.515.33 1h3.63c.176 1.204.458 2.293.826 3.199a7 7 0 0 0 .816 1.51A8 8 0 0 0 10 18a8 8 0 0 0 2.147-.291a7 7 0 0 0 .816-1.51c.368-.906.65-1.995.826-3.199h3.63q.195-.485.329-1h-3.84a21.6 21.6 0 0 0 0-4h3.84a8 8 0 0 0-.33-1H13.79c-.176-1.204-.458-2.293-.826-3.199a7 7 0 0 0-.816-1.51A8 8 0 0 0 10 2a8 8 0 0 0-2.147.291M7.223 7c.166-1.076.42-2.035.74-2.822c.298-.733.642-1.292 1.003-1.66C9.324 2.153 9.672 2 10 2s.676.153 1.034.518c.36.368.705.927 1.003 1.66c.32.787.574 1.746.74 2.822zM10 18c.328 0 .676-.153 1.034-.518c.36-.368.705-.927 1.003-1.66c.32-.787.574-1.746.74-2.822H7.223c.167 1.076.421 2.035.741 2.822c.298.733.642 1.292 1.003 1.66c.358.365.706.518 1.034.518m-3-8c0 .692.033 1.362.096 2h5.808A21 21 0 0 0 13 10c0-.692-.033-1.362-.096-2H7.096A21 21 0 0 0 7 10" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorGlobeShield204)" d="M14 18.524c-1.175-.603-2.97-1.945-3-4.524v-2.562c0-.277.225-.497.499-.536c1.37-.193 2.485-1.134 3.066-1.725A.6.6 0 0 1 15 9c.16 0 .32.059.435.177c.58.591 1.696 1.532 3.066 1.725c.274.039.499.26.499.536V14c-.03 2.579-1.825 3.921-3 4.524a6.5 6.5 0 0 1-.87.372a.4.4 0 0 1-.26 0a6.5 6.5 0 0 1-.87-.372"></svg:path><svg:defs><svg:radialgradient id="fluentColorGlobeShield200" cx="0" cy="0" r="1" gradientTransform="rotate(180 7.469 7.063)scale(6.72116)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#003580"></svg:stop><svg:stop offset="1" stop-color="#003580" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorGlobeShield201" cx="0" cy="0" r="1" gradientTransform="matrix(8.37502 6.37502 -6.91548 9.08503 15.25 14)" gradientUnits="userSpaceOnUse"><svg:stop offset=".412" stop-color="#1B44B1"></svg:stop><svg:stop offset="1" stop-color="#1B44B1" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorGlobeShield202" cx="0" cy="0" r="1" gradientTransform="matrix(8.49999 8.5048 -9.08479 9.07965 15 14.002)" gradientUnits="userSpaceOnUse"><svg:stop offset=".445" stop-color="#3BD5FF" stop-opacity="0"></svg:stop><svg:stop offset=".815" stop-color="#3BD5FF"></svg:stop></svg:radialgradient><svg:lineargradient id="fluentColorGlobeShield203" x1="5.556" x2="17.111" y1="4.667" y2="15.333" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#29C3FF"></svg:stop><svg:stop offset="1" stop-color="#2052CB"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorGlobeShield204" x1="12.5" x2="20.018" y1="9" y2="17.701" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#62BE55"></svg:stop><svg:stop offset="1" stop-color="#1E794A"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class FluentColorGlobeShield20Icon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

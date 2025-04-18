@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeFolderExpoIcon],svg[material-icon-theme-folder-expo-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#1976d2" d="m13.844 7.536l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464"></svg:path><svg:path fill="#bbdefb" d="M25.182 13.148c-.663-1.013-.82-1.148-2.17-1.148h-.032c-1.35 0-1.499.135-2.17 1.148C20.187 14.1 14 25.473 14 25.79a2.5 2.5 0 0 0 .545 1.513c.434.626 1.183.974 1.728.42c.37-.373 4.34-7.24 6.257-9.837a.575.575 0 0 1 .94 0c1.916 2.597 5.887 9.464 6.257 9.837c.545.554 1.294.204 1.728-.42A2.5 2.5 0 0 0 32 25.79c-.008-.317-6.195-11.699-6.818-12.642"></svg:path>`,
+})
+export class MaterialIconThemeFolderExpoIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamPocketWatchIcon],svg[jam-pocket-watch-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 13h2a1 1 0 0 1 0 2H8a1 1 0 0 1-1-1v-4a1 1 0 1 1 2 0zM7 5.732V5a1 1 0 1 1 2 0v.732a2 2 0 1 0-2 0m-2.041.866a4 4 0 1 1 6.082 0A8.002 8.002 0 0 1 8 22A8 8 0 0 1 4.959 6.598M8 20A6 6 0 1 0 8 8a6 6 0 0 0 0 12"></svg:path>`,
+})
+export class JamPocketWatchIcon {
+  readonly viewBox = input("-4 -1 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

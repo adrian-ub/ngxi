@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatColorIconsVideoProjectorIcon],svg[flat-color-icons-video-projector-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#546E7A" d="M5 34h6v3H5zm32 0h6v3h-6z"></svg:path><svg:path fill="#78909C" d="M44 35H4c-2.2 0-4-1.8-4-4V17c0-2.2 1.8-4 4-4h40c2.2 0 4 1.8 4 4v14c0 2.2-1.8 4-4 4"></svg:path><svg:path fill="#37474F" d="M5 19h2v2H5zm0 4h2v2H5zm0 4h2v2H5zm4-8h2v2H9zm0 4h2v2H9zm0 4h2v2H9zm4-8h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm4-8h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm4-8h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2z"></svg:path><svg:circle cx="37" cy="24" r="8" fill="#37474F"></svg:circle><svg:circle cx="37" cy="24" r="6" fill="#a0f"></svg:circle><svg:path fill="#EA80FC" d="M40.7 21.7c-1-1.1-2.3-1.7-3.7-1.7s-2.8.6-3.7 1.7c-.4.4-.3 1 .1 1.4s1 .3 1.4-.1c1.2-1.3 3.3-1.3 4.5 0c.2.2.5.3.7.3s.5-.1.7-.3c.4-.3.4-.9 0-1.3"></svg:path>`,
+})
+export class FlatColorIconsVideoProjectorIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

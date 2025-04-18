@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLocalPizzaOutlineIcon],svg[material-symbols-local-pizza-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 22L2 7q2.125-1.8 4.663-2.9T12 3t5.338 1.088T22 7zm0-3.6l7.3-10.95q-1.625-1.125-3.475-1.788T12 5t-3.812.663T4.7 7.45zM9.5 10q.625 0 1.063-.437T11 8.5t-.437-1.062T9.5 7t-1.062.438T8 8.5t.438 1.063T9.5 10m2.5 5q.625 0 1.063-.437T13.5 13.5t-.437-1.062T12 12t-1.062.438T10.5 13.5t.438 1.063T12 15m0 3.4"></svg:path>`,
+})
+export class MaterialSymbolsLocalPizzaOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

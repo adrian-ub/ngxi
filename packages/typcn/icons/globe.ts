@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[typcnGlobeIcon],svg[typcn-globe-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 20H7a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2h-4v-1.23a8.93 8.93 0 0 0 4.363-2.406A8.94 8.94 0 0 0 20 10a8.93 8.93 0 0 0-1.968-5.619l.675-.673a1.001 1.001 0 0 0-1.414-1.416l-2.052 2.049l.708.708C17.271 6.371 18 8.13 18 10s-.729 3.627-2.051 4.949S12.87 17 11 17s-3.627-.729-4.949-2.051a.999.999 0 1 0-1.414 1.414A8.94 8.94 0 0 0 11 19zm0-16c1.657 0 3.157.672 4.243 1.757A6 6 0 0 1 17 10a6 6 0 0 1-1.757 4.242A5.98 5.98 0 0 1 11 16a5.98 5.98 0 0 1-4.242-1.757C5.673 13.157 5.002 11.657 5.002 10s.671-3.157 1.756-4.243A5.98 5.98 0 0 1 11 4"></svg:path>`,
+})
+export class TypcnGlobeIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

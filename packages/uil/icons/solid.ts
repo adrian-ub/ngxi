@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[uilSolidIcon],svg[uil-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.4 7.1c-.1-.1-.2-.1-.4-.1c-.3 0-.5 0-.8-.1c-1.7-.4-2.9-1.7-3-3.4v-.4c0-.3-.2-.5-.5-.5h-3.1c-.3 0-.5.2-.5.5v12.5c0 1.2-1 2.1-2.1 2.1c-.7 0-1.3-.3-1.7-.8c-.7-.9-.5-2.3.4-3c.4-.3.8-.3 1.6-.3c.1 0 .3 0 .4-.1s.2-.2.2-.4V9.8c0-.2-.2-.5-.4-.5c-1.6-.2-3.2.2-4.4 1.2c-1.1 1-1.9 2.4-2.1 4.1c-.3 1.9.4 3.9 1.7 5.2c1.2 1.3 2.9 1.9 4.5 1.9s3.2-.6 4.4-1.8s1.9-2.8 1.9-4.5V9.9c1.2.6 2.5 1 3.8 1c.3 0 .5-.2.5-.5v-3c-.2-.1-.3-.2-.4-.3"></svg:path>`,
+})
+export class UilSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

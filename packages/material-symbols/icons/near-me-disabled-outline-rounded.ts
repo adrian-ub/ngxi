@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsNearMeDisabledOutlineRoundedIcon],svg[material-symbols-near-me-disabled-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.675 20.425L10.05 13.95l-6.475-2.625q-.325-.125-.475-.387t-.15-.538t.163-.537t.487-.388l4.275-1.6L3.5 3.5q-.3-.3-.3-.712t.3-.713t.713-.3t.712.3l17 17q.3.3.3.7t-.3.7t-.712.3t-.713-.3l-4.375-4.35l-1.6 4.275q-.125.325-.387.488t-.538.162t-.537-.15t-.388-.475m7.35-16.45q.2.2.275.488t-.05.587l-2.025 5.45q-.2.525-.737.638t-.938-.288q-.2-.2-.275-.487t.05-.563L17.6 6.4l-3.4 1.275q-.275.125-.562.05t-.488-.275q-.4-.4-.288-.937t.638-.738l5.45-2.025q.3-.125.588-.05t.487.275M13.55 17.3l1.025-2.725l-5.15-5.15L6.7 10.45l4.9 1.95zM12 12"></svg:path>`,
+})
+export class MaterialSymbolsNearMeDisabledOutlineRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

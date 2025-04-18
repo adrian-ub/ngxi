@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkOutlineReplayFiveIcon],svg[icon-park-outline-replay-five-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path d="M11.272 36.728A17.94 17.94 0 0 0 24 42c9.941 0 18-8.059 18-18S33.941 6 24 6c-4.97 0-9.47 2.015-12.728 5.272C9.614 12.93 6 17 6 17"></svg:path><svg:path d="M6 9v8h8m14 1h-7v5.71c.985-.647 1.469-.71 3-.71c3 0 4 1.989 4 5s-2 4-4 4c-1.5 0-3-1-3-2"></svg:path></svg:g>`,
+})
+export class IconParkOutlineReplayFiveIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

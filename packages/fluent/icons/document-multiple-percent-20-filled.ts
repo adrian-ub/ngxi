@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentDocumentMultiplePercent20FilledIcon],svg[fluent-document-multiple-percent-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 6.5V2H5.5A1.5 1.5 0 0 0 4 3.5v5.67a3 3 0 0 1 1.998 2.711l1.441-1.442a1.5 1.5 0 0 1 2.122 2.122l-1.442 1.441A3 3 0 0 1 10.829 16H13.5a1.5 1.5 0 0 0 1.5-1.5V8h-4.5A1.5 1.5 0 0 1 9 6.5M5 12a2 2 0 1 1-4 0a2 2 0 1 1 4 0m-1 0a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-1.146 5.854a.5.5 0 0 1-.708-.708l6-6a.5.5 0 0 1 .708.708zM13.06 18h-2.232c.11-.313.171-.65.171-1h2a3 3 0 0 0 3-3V8a1 1 0 0 1 1 1v5.06A3.94 3.94 0 0 1 13.06 18M8 15a2 2 0 1 1 .002 3.998A2 2 0 0 1 8 15m-1 2a1 1 0 1 0 2 0a1 1 0 0 0-2 0m3-10.5V2.25L14.75 7H10.5a.5.5 0 0 1-.5-.5"></svg:path>`,
+})
+export class FluentDocumentMultiplePercent20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

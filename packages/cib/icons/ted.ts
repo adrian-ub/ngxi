@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cibTedIcon],svg[cib-ted-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.24 13.182H0v-2.964h10.042v2.964h-3.24v8.599H3.239zm7.354-2.963h9.745v2.964h-6.182v1.443h6.182v2.75h-6.182v1.443h6.182v2.964h-9.745zM24.5 18.823h1.396c2.219 0 2.542-1.802 2.542-2.891c0-.724-.24-2.75-2.818-2.75h-1.141v5.641zm-3.562-8.604h5.849c3.854 0 5.214 2.849 5.214 5.76c0 3.547-1.88 5.802-5.911 5.802h-5.151z"></svg:path>`,
+})
+export class CibTedIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ionWalkSharpIcon],svg[ion-walk-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="32" d="m315.09 481.38l-56.95-115.12l-45-57.56a73.1 73.1 0 0 1-10.16-37.17V142h15.73A40.36 40.36 0 0 1 259 182.32v162.52"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="32" d="M128.18 291.5v-74.77l64.95-65.1"></svg:path><svg:path fill="currentColor" d="m376.35 295.73l-83.95-56.38v-44.68l104.68 72.95zM175.13 498.58l-21.43-26.91l80.33-81.54l15.53 32.07z"></svg:path><svg:circle cx="259.02" cy="67.21" r="37.38" fill="currentColor" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="16"></svg:circle>`,
+})
+export class IonWalkSharpIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

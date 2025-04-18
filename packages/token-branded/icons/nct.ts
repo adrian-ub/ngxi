@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedNctIcon],svg[token-branded-nct-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#8500FF" d="M4.848 7.5h9.61c1.4 0 2.604 1.429 2.604 2.812c0 1.384-1.204 2.813-2.603 2.813H9.14c-.4 0-.754.168-.754.562s.355.563.754.563h5.061c2.197 0 3.985-1.767 3.985-3.938c0-2.17-1.788-3.937-3.985-3.937H4.848c-.399 0-.723.169-.723.562c0 .394.324.563.723.563"></svg:path><svg:path fill="#8500FF" d="M13.96 3.563h-3.493c-.383 0-.716.185-.716.56c0 .374.333.564.716.564h3.493c3.114 0 5.915 2.708 5.915 5.749s-2.801 5.5-5.915 5.5H5.088c-.384 0-.696.189-.696.563c0 .375.312.563.696.563h8.872c3.882 0 7.04-2.837 7.04-6.626s-3.158-6.873-7.04-6.873"></svg:path><svg:path fill="#fff" d="M9.75 10.313c0-.375-.245-.563-.63-.563H7.58c-.384 0-.643.188-.643.563c0 .376.28.562.534.562h1.572c.487 0 .707-.163.707-.562m-1.817 9H3.696c-.384 0-.696.187-.696.562c0 .374.312.562.696.562h4.237c.383 0 .692-.188.692-.562s-.309-.563-.692-.563"></svg:path></svg:g>`,
+})
+export class TokenBrandedNctIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

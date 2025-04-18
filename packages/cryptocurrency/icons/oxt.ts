@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cryptocurrencyOxtIcon],svg[cryptocurrency-oxt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16S7.163 0 16 0m.663 7.55a8.6 8.6 0 0 0-1.656.057a7.1 7.1 0 0 0-2.089.524c-.775.38-1.275 1.013-1.275 1.86c0 1.1.892 1.994 1.994 1.994c.184 0 .821-.202.973-.254a4.606 4.606 0 0 1 6.114 4.644a4.608 4.608 0 0 1-8.314 2.437l-.133-.19l-.101-.143c-.804-1.208-.607-2.99-.608-3.013a1.997 1.997 0 0 0-3.922-.451c-.045.167-.068.656-.061.721a8.547 8.547 0 0 0 9.547 8.836a8.549 8.549 0 0 0-.47-17.021zm-7.99 2.64a1.425 1.425 0 1 0 .129.068zm1.28-2.591a1.099 1.099 0 1 0 .107.056zm-3.625-.038a.776.776 0 1 0 .094.048z"></svg:path>`,
+})
+export class CryptocurrencyOxtIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

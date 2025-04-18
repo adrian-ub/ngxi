@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siNorthWestEscapeAltFillIcon],svg[si-north-west-escape-alt-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7 8.414V10a1 1 0 1 1-2 0V6a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H8.414l6.293 6.293a1 1 0 1 1-1.414 1.414zM14 9a1 1 0 0 1 1-1h.6c1.882 0 3.4 1.518 3.4 3.4v4.2c0 1.882-1.518 3.4-3.4 3.4h-4.2A3.394 3.394 0 0 1 8 15.6V15a1 1 0 1 1 2 0v.6c0 .778.622 1.4 1.4 1.4h4.2c.778 0 1.4-.622 1.4-1.4v-4.2c0-.778-.622-1.4-1.4-1.4H15a1 1 0 0 1-1-1" clip-rule="evenodd"></svg:path>`,
+})
+export class SiNorthWestEscapeAltFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

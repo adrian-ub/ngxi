@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPeopleStar16RegularIcon],svg[fluent-people-star-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 4.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0M5.5 2a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5m5 3a1 1 0 1 1 2 0a1 1 0 0 1-2 0m-.578 1.23A5.5 5.5 0 0 1 11.5 6a5.5 5.5 0 0 1 1.578.23a2 2 0 1 0-3.155 0M3 8h4.257A5.5 5.5 0 0 0 6.6 9H3a.5.5 0 0 0-.5.5v.097l.004.048a1.85 1.85 0 0 0 .338.857c.326.449 1.036.998 2.658.998q.266 0 .5-.019v.019q0 .501.087.977a7 7 0 0 1-.587.023c-1.878 0-2.918-.654-3.467-1.409a2.85 2.85 0 0 1-.523-1.342a2 2 0 0 1-.01-.137V9.5A1.5 1.5 0 0 1 3 8m13 3.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-4.024-2.64a.494.494 0 0 0-.952 0l-.477 1.532H9c-.484 0-.686.647-.294.944l1.25.947l-.477 1.532c-.15.48.378.88.77.583l1.25-.947l1.25.947c.392.297.92-.103.77-.583l-.477-1.532l1.25-.947c.392-.297.19-.944-.294-.944h-1.546z"></svg:path>`,
+})
+export class FluentPeopleStar16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

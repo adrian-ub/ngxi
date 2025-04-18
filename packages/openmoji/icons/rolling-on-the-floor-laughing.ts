@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiRollingOnTheFloorLaughingIcon],svg[openmoji-rolling-on-the-floor-laughing-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="36" cy="35.999" r="24" fill="#fcea2b"></svg:circle><svg:path fill="#fff" d="M51.58 34.554a11.6 11.6 0 0 1 1.22 4.408c-9.837 8.272-22.622 11.622-24.676 12.118a11.4 11.4 0 0 1-2.684-3.535l.098-.049s14.852-3.372 25.903-12.795Z"></svg:path><svg:path fill="#ea5a47" d="M52.799 38.962c.297 4.62-2.469 9.3-9.042 12.567c-6.635 3.298-12.121 2.641-15.633-.449c2.053-.496 14.839-3.846 24.675-12.118"></svg:path><svg:path fill="#92d3f5" d="M67.693 32.909a4.24 4.24 0 0 1-5.374 2.672c-3.984-1.339-6.68-6.687-6.707-6.74c.213-.092 5.447-2.637 9.41-1.306a4.24 4.24 0 0 1 2.67 5.374ZM14.395 59.398a4.24 4.24 0 0 1-2.672-5.374c1.339-3.984 6.687-6.68 6.74-6.707c.091.213 2.637 5.447 1.305 9.41a4.24 4.24 0 0 1-5.373 2.671"></svg:path><svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"><svg:path stroke-linecap="round" d="m55.277 23.449l-.093-.141a23.003 23.003 0 0 0-40.969 20.079l.14.399M25.037 56.22a23.53 23.53 0 0 0 21.199.376a23.34 23.34 0 0 0 12.486-17.023m-7.142-5.019a11.6 11.6 0 0 1 1.22 4.408c-9.837 8.272-22.622 11.622-24.676 12.118a11.4 11.4 0 0 1-2.684-3.535l.098-.049s14.852-3.372 25.903-12.795Z"></svg:path><svg:path stroke-linecap="round" d="M52.799 38.962c.297 4.62-2.469 9.3-9.042 12.567c-6.635 3.298-12.121 2.641-15.633-.449c2.053-.496 14.839-3.846 24.675-12.118"></svg:path><svg:path d="M67.693 32.909a4.24 4.24 0 0 1-5.374 2.672c-3.984-1.339-6.68-6.687-6.707-6.74c.213-.092 5.447-2.637 9.41-1.306a4.24 4.24 0 0 1 2.67 5.374ZM14.395 59.398a4.24 4.24 0 0 1-2.672-5.374c1.339-3.984 6.687-6.68 6.74-6.707c.091.213 2.637 5.447 1.305 9.41a4.24 4.24 0 0 1-5.373 2.671Z"></svg:path><svg:path stroke-linecap="round" d="m22.478 33.13l7.685.663l-4.235 6.279m15.95-16.584l-4.112 6.526l7.562.416"></svg:path></svg:g>`,
+})
+export class OpenmojiRollingOnTheFloorLaughingIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

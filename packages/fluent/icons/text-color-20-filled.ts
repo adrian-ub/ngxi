@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTextColor20FilledIcon],svg[fluent-text-color-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.464 2.314a.5.5 0 0 0-.928 0l-3 7.5a.5.5 0 1 0 .928.372l1.073-2.682h2.926l1.073 2.682a.5.5 0 1 0 .928-.372zM10 3.846l1.063 2.658H8.937zM4.5 12A1.5 1.5 0 0 0 3 13.5v3A1.5 1.5 0 0 0 4.5 18h11a1.5 1.5 0 0 0 1.5-1.5v-3a1.5 1.5 0 0 0-1.5-1.5z"></svg:path>`,
+})
+export class FluentTextColor20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineEmojisWritingHand2Icon],svg[streamline-emojis-writing-hand-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#45413c" d="M6.52 45.5a16.5 1.5 0 1 0 33 0a16.5 1.5 0 1 0-33 0" opacity=".15"></svg:path><svg:path fill="#ffb59e" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="m20.7 17.89l14.77 6.94L34.32 36l-2.52 1.27a8.52 8.52 0 0 1-6.9.42l-1.5-.56a8.9 8.9 0 0 0-4.4-.47l-2.39.34a3 3 0 0 1-2.84-1.2h0a1 1 0 0 1 .39-1.48l5.23-2.43l-6.45-4.84Z"></svg:path><svg:path fill="#009fd9" d="M10.34 38.59L6 41.69a.5.5 0 0 1-.76-.55L6.66 36a.9.9 0 0 1 .15-.3L27.18 7a1 1 0 0 1 1.39-.24l2.14 1.52A1 1 0 0 1 31 9.65L10.58 38.36a1 1 0 0 1-.24.23"></svg:path><svg:path fill="#00b8f0" d="M8.31 38a1.3 1.3 0 0 1 .16-.33L29.81 7.61l-1.24-.88a1 1 0 0 0-1.39.27L6.81 35.68a.9.9 0 0 0-.15.3l-1.47 5.16a.5.5 0 0 0 .76.55l1.54-1.09Z"></svg:path><svg:path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M10.34 38.59L6 41.69a.5.5 0 0 1-.76-.55L6.66 36a.9.9 0 0 1 .15-.3L27.18 7a1 1 0 0 1 1.39-.24l2.14 1.52A1 1 0 0 1 31 9.65L10.58 38.36a1 1 0 0 1-.24.23"></svg:path><svg:path fill="#ffb59e" d="m13.21 26.65l-1.36 5.76a3.05 3.05 0 0 1-3.5 2.3A1.54 1.54 0 0 1 7 33l.67-6.44a5.19 5.19 0 0 1 3-4.18l8.12-3.67Z"></svg:path><svg:path fill="#ffcebf" d="m10.13 25.51l5.22-1.87l3.48-4.9l-8.12 3.67a5.19 5.19 0 0 0-3 4.18v.47a6.8 6.8 0 0 1 2.42-1.55"></svg:path><svg:path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="m13.21 26.65l-1.36 5.76a3.05 3.05 0 0 1-3.5 2.3h0A1.54 1.54 0 0 1 7 33l.67-6.44a5.19 5.19 0 0 1 3-4.18l8.12-3.67Z"></svg:path><svg:path fill="#ffcebf" d="m18.79 26.78l-7.44 3.67a2 2 0 0 0-.91 2.66A4 4 0 0 0 15.65 35l2.73-1.24a3.54 3.54 0 0 1 3.3.17l.8.47a15.18 15.18 0 0 0 11 1.72a6.9 6.9 0 0 1 3.92.28l4.66 1.77a1 1 0 0 0 1.36-.94v-10a1 1 0 0 0-1-1h-.84a14.5 14.5 0 0 1-6.14-1.37L24 19.44Z"></svg:path><svg:path fill="#ffdcd1" d="M42.45 26.2h-.84a14.5 14.5 0 0 1-6.14-1.37L24 19.44l-2.44 3.43l12.85 5.34a18.3 18.3 0 0 0 7 1.37h1a1.07 1.07 0 0 1 1.13 1V27.2a1 1 0 0 0-1.09-1m-29.87 5.24a13 13 0 0 0 5-3.78l.34-.42l-6.52 3.21a2 2 0 0 0-1.1 2Z"></svg:path><svg:path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="m18.79 26.78l-7.44 3.67a2 2 0 0 0-.91 2.66h0A4 4 0 0 0 15.65 35l2.73-1.24a3.54 3.54 0 0 1 3.3.17l.8.47a15.18 15.18 0 0 0 11 1.72h0a6.9 6.9 0 0 1 3.92.28l4.66 1.77a1 1 0 0 0 1.36-.94v-10a1 1 0 0 0-1-1h-.84a14.5 14.5 0 0 1-6.14-1.37L24 19.44Z"></svg:path>`,
+})
+export class StreamlineEmojisWritingHand2Icon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

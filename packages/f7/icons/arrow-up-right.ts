@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7ArrowUpRightIcon],svg[f7-arrow-up-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M44.02 36.215V14.207c0-1.336-.844-2.227-2.227-2.227l-22.008.047c-1.289 0-2.156.961-2.156 2.063c0 1.101.984 2.039 2.062 2.039h6.985l11.156-.422l-4.266 3.75l-20.93 20.977c-.421.422-.655.937-.655 1.43c0 1.1.984 2.156 2.132 2.156c.54 0 1.032-.211 1.453-.633L36.543 22.41l3.75-4.242l-.422 10.664v7.477c0 1.078.938 2.062 2.063 2.062c1.101 0 2.086-.914 2.086-2.156"></svg:path>`,
+})
+export class F7ArrowUpRightIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

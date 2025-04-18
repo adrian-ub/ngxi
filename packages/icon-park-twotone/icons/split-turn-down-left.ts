@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkTwotoneSplitTurnDownLeftIcon],svg[icon-park-twotone-split-turn-down-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipTSplitTurnDownLeft0"><svg:g fill="none" stroke="#fff" stroke-width="4"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M37 22H21a8 8 0 0 0-8 8v14"></svg:path><svg:circle cx="37" cy="8.944" r="5" fill="#555" transform="rotate(-90 37 8.944)"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M37 14v29m5-4l-5 5l-5-5m-14 0l-5 5l-5-5"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTSplitTurnDownLeft0)"></svg:path>`,
+})
+export class IconParkTwotoneSplitTurnDownLeftIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

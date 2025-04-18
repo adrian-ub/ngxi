@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cryptocurrencyColorXIcon],svg[cryptocurrency-color-x-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" fill-rule="evenodd"><svg:circle cx="16" cy="16" r="16" fill="#3B5998" fill-rule="nonzero"></svg:circle><svg:g fill="#FFF"><svg:path d="M14.116 6.01h1.88v5.882l-1.88-1.963z"></svg:path><svg:path d="M6.011 7.993h4.949c1.677 1.755 3.361 3.507 5.038 5.266c.971-1.009 1.939-2.025 2.906-3.037q1.072-1.113 2.14-2.23h4.937q-3.454 3.497-6.91 6.99q-.365.365-.722.734c.058.062.12.123.172.189l6.771 6.846l.691.696h-3.83c-.099 0-.198.006-.295-.007c-.273-.008-.547.004-.82-.006c-.495-.511-.984-1.029-1.479-1.542c-.973-1.012-1.942-2.03-2.915-3.044c-.216-.224-.427-.454-.648-.672c-.47.5-.952.993-1.425 1.493l-2.677 2.794c-.312.325-.62.652-.934.971c-.27.008-.542 0-.814.004c-.155.019-.312.006-.467.01H6.01l7.268-7.35q.188-.189.37-.382L6.01 7.993z"></svg:path><svg:path d="M16 19.531c.626.663 1.26 1.319 1.888 1.98c.004 1.307 0 2.612 0 3.92h-1.89q-.001-2.95.004-5.9z"></svg:path></svg:g></svg:g>`,
+})
+export class CryptocurrencyColorXIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

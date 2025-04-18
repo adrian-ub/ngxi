@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[etBriefcaseIcon],svg[et-briefcase-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M37.5 18a.5.5 0 0 0-.5.5v12a.5.5 0 0 1-.5.5h-35a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 0-1 0v12c0 .827.673 1.5 1.5 1.5h35c.827 0 1.5-.673 1.5-1.5v-12a.5.5 0 0 0-.5-.5m-12-13a.5.5 0 0 0 .5-.5v-3c0-.827-.673-1.5-1.5-1.5h-11c-.827 0-1.5.673-1.5 1.5v3a.5.5 0 0 0 1 0v-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5"></svg:path><svg:path d="M36.5 7h-35C.673 7 0 7.673 0 8.5v4.958c0 2.778 9.456 6.5 19.125 6.5c9.543 0 18.875-3.722 18.875-6.5V8.5c0-.827-.673-1.5-1.5-1.5m.5 6.458c0 1.764-8.457 5.5-17.875 5.5c-9.55 0-18.125-3.735-18.125-5.5V8.5a.5.5 0 0 1 .5-.5h35a.5.5 0 0 1 .5.5zM19.125 23c.943 0 1.923-.039 2.914-.116a.5.5 0 0 0 .459-.538a.49.49 0 0 0-.538-.459c-2.014.157-3.909.15-5.919-.02a.5.5 0 0 0-.084.996c1.076.091 2.142.137 3.168.137"></svg:path></svg:g>`,
+})
+export class EtBriefcaseIcon {
+  readonly viewBox = input("0 0 38 32")
+  readonly width = input("1.19em")
+  readonly height = input("1em")
+}

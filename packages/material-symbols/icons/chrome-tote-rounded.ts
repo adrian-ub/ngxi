@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsChromeToteRoundedIcon],svg[material-symbols-chrome-tote-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m13.525 9.65l-.9-.875q-.3-.275-.7-.275t-.7.3q-.275.3-.287.7t.287.7l2.6 2.6q.3.3.7.3t.7-.3l2.6-2.6q.275-.275.288-.688t-.288-.712q-.275-.3-.7-.3t-.725.275l-.875.875V6.5q0-.425-.288-.713t-.712-.287q-.425 0-.713.288t-.287.712v3.15ZM9.025 17q-.825 0-1.413-.588T7.026 15V4q0-.825.588-1.413T9.024 2h11q.825 0 1.413.588T22.024 4v11q0 .825-.587 1.413T20.025 17h-11Zm-3.3 4.875q-.825.125-1.475-.4t-.75-1.35L2.15 9.2q-.1-.825.413-1.475t1.337-.75l1.125-.125V16q0 1.25.875 2.125T8.025 19h10.45q0 .65-.537 1.025t-1.213.475l-11 1.375Z"></svg:path>`,
+})
+export class MaterialSymbolsChromeToteRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphFolderIcon],svg[si-glyph-folder-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="M8.35 5L6.788 2.042H3.021v1.021H1.023v9.913h1.02l.002 1h14.902L16.968 5z"></svg:path><svg:path d="M14.964 3.982h-5.61l-.33-.94h5.94z"></svg:path></svg:g>`,
+})
+export class SiGlyphFolderIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}

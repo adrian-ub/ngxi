@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsRvHookupIcon],svg[material-symbols-rv-hookup-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m19.5 21.5l-1.4-1.4l1.1-1.1h-7.4q-.3.9-1.075 1.45T9 21t-1.712-.55T6.2 19H5q-1.25 0-2.125-.875T2 16v-6h6V7H2V5h13q.825 0 1.413.588T17 7v10h2.15l-1.05-1.05l1.4-1.45L23 18zM10 10h5V7h-5zm-1 9q.425 0 .713-.288T10 18t-.288-.712T9 17t-.712.288T8 18t.288.713T9 19"></svg:path>`,
+})
+export class MaterialSymbolsRvHookupIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

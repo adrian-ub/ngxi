@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[healthiconsNappyDiaperIcon],svg[healthicons-nappy-diaper-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M6 11.51c0-.834.676-1.51 1.51-1.51h32.98c.834 0 1.51.676 1.51 1.51v3.24h-5.882c-1.17 0-2.118.895-2.118 2s.948 2 2.118 2H42V20a18 18 0 0 1-.249 3H41c-8.248 0-14.94 6.656-15 14.89a18.2 18.2 0 0 1-4 0C21.94 29.656 15.248 23 7 23h-.751A18 18 0 0 1 6 20v-1.25h5.882c1.17 0 2.118-.895 2.118-2s-.948-2-2.118-2H6z"></svg:path><svg:path d="M41.297 25c-1.803 6.248-6.9 11.1-13.29 12.552C28.245 30.58 33.97 25 41 25zM7 25c7.03 0 12.756 5.58 12.992 12.552C13.603 36.1 8.507 31.248 6.704 25z"></svg:path></svg:g>`,
+})
+export class HealthiconsNappyDiaperIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

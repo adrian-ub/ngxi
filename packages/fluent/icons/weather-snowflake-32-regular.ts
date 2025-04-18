@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowflake32RegularIcon],svg[fluent-weather-snowflake-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 2a1 1 0 0 1 1 1v5.086l3.293-3.293a1 1 0 1 1 1.414 1.414L17 10.914V15h4.086l4.707-4.707a1 1 0 1 1 1.414 1.414L23.914 15H29a1 1 0 1 1 0 2h-5.086l3.293 3.293a1 1 0 0 1-1.414 1.414L21.086 17H17v4.086l4.707 4.707a1 1 0 0 1-1.414 1.414L17 23.914V29a1 1 0 1 1-2 0v-5.086l-3.293 3.293a1 1 0 0 1-1.414-1.414L15 21.086V17h-4.086l-4.707 4.707a1 1 0 0 1-1.414-1.414L8.086 17H3a1 1 0 1 1 0-2h5.086l-3.293-3.293a1 1 0 1 1 1.414-1.414L10.914 15H15v-4.086l-4.707-4.707a1 1 0 1 1 1.414-1.414L15 8.086V3a1 1 0 0 1 1-1"></svg:path>`,
+})
+export class FluentWeatherSnowflake32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

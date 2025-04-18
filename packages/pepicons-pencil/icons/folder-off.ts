@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsPencilFolderOffIcon],svg[pepicons-pencil-folder-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M15.5 5.5h-5.281L9.51 4.26A2.5 2.5 0 0 0 7.34 3H4.5A2.5 2.5 0 0 0 2 5.5V15a2.5 2.5 0 0 0 2.5 2.5h11A2.5 2.5 0 0 0 18 15V8a2.5 2.5 0 0 0-2.5-2.5m-11 11A1.5 1.5 0 0 1 3 15V5.5A1.5 1.5 0 0 1 4.5 4h2.84a1.5 1.5 0 0 1 1.302.756l.852 1.492a.5.5 0 0 0 .435.252H15.5A1.5 1.5 0 0 1 17 8v7a1.5 1.5 0 0 1-1.5 1.5z" clip-rule="evenodd"></svg:path><svg:path d="M1.15 1.878a.514.514 0 0 1 .728-.727l16.971 16.971a.514.514 0 0 1-.727.727z"></svg:path></svg:g>`,
+})
+export class PepiconsPencilFolderOffIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineHangUp2SolidIcon],svg[streamline-hang-up-2-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M13.174 4.068a3.05 3.05 0 0 0-1.736-1.073c-2.95-.565-6.017-.592-8.963.011A3.05 3.05 0 0 0 .07 6.002l-.006.51a1.363 1.363 0 0 0 1.347 1.347l2.156-.011A1.354 1.354 0 0 0 4.91 6.505a.363.363 0 0 1 .356-.358h3.388a.347.347 0 0 1 .35.357a1.355 1.355 0 0 0 1.342 1.343h2.156A1.363 1.363 0 0 0 13.849 6.5l-.006-.51a3.05 3.05 0 0 0-.67-1.922Zm-5.549 3.87a.625.625 0 1 0-1.25 0v2.221H5.128a.625.625 0 0 0-.442 1.067l1.866 1.866a.63.63 0 0 0 .526.184a.62.62 0 0 0 .364-.178l1.872-1.872a.625.625 0 0 0-.442-1.067H7.625V7.94Z" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineHangUp2SolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCompassNorthwest24RegularIcon],svg[fluent-compass-northwest-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.5 12a8.5 8.5 0 1 1 17 0a8.5 8.5 0 0 1-17 0M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2M7.083 8.708c-.406-1.02.605-2.03 1.624-1.624l4.029 1.605a4.75 4.75 0 0 1 2.607 2.541l1.854 4.326c.444 1.037-.604 2.086-1.641 1.641l-4.326-1.854a4.75 4.75 0 0 1-2.541-2.607zm1.61-.016l1.39 3.489a3.25 3.25 0 0 0 1.738 1.784l3.751 1.607l-1.608-3.75a3.25 3.25 0 0 0-1.784-1.74z"></svg:path>`,
+})
+export class FluentCompassNorthwest24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

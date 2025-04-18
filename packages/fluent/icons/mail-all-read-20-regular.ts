@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMailAllRead20RegularIcon],svg[fluent-mail-all-read-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.763 2.06a.5.5 0 0 1 .474 0l5.711 3.075A2 2 0 0 1 16 6.895V12.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 2 12.5V6.896a2 2 0 0 1 1.052-1.761zM9 3.068L3.526 6.015a1 1 0 0 0-.313.264L9 8.949l5.787-2.67a1 1 0 0 0-.313-.264zm6 4.213L9.21 9.954a.5.5 0 0 1-.42 0L3 7.281V12.5A1.5 1.5 0 0 0 4.5 14h9a1.5 1.5 0 0 0 1.5-1.5zM6.5 17a2.5 2.5 0 0 1-2-1h9a3.5 3.5 0 0 0 3.5-3.5v-6c.607.456 1 1.182 1 2v4a4.5 4.5 0 0 1-4.5 4.5z"></svg:path>`,
+})
+export class FluentMailAllRead20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

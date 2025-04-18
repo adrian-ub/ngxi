@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsLangEnTzIcon],svg[circle-flags-lang-en-tz-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsLangEnTz0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsLangEnTz0)"><svg:path fill="#ffda44" d="M399 0L268 68l-68 132l24 88l89 25l131-68l68-132V68L444 0Z"></svg:path><svg:path fill="#333" d="M444 0L222 222l2 66l66 2L512 68V0Z"></svg:path><svg:path fill="#338af3" d="M512 113L313 313l67 131l132 68Z"></svg:path><svg:path fill="#6da544" d="m0 0l68 132l132 68L399 0Z"></svg:path><svg:path fill="#eee" d="M512 512L0 0l8 23l-8 22v23l32 54l-32 54v32l32 48l-32 48v32l32 54l-32 54v68l22-8l23 8h23l54-32l54 32h32l48-32l48 32h32l54-32l54 32z"></svg:path><svg:path fill="#d80027" d="m304 304l-96-96H0v96h208v208h96zM176 176L0 0v45l131 131Zm0 160L0 512h45l131-131Z"></svg:path><svg:path fill="#0052b4" d="M444 512L336 404v108ZM176 404L68 512h108Zm-68-228L0 68v108zm0 160H0v108z"></svg:path></svg:g>`,
+})
+export class CircleFlagsLangEnTzIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

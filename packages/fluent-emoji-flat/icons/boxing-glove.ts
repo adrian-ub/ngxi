@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatBoxingGloveIcon],svg[fluent-emoji-flat-boxing-glove-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#CA0B4A" d="m22.58 20.82l-1.96 1.4h-6.44l5.51-4.99c-.47-.59-.76-1.33-.76-2.15v-4.02c0-1.89 1.53-3.42 3.42-3.42s3.42 1.53 3.42 3.42l-.05 3.75a7.3 7.3 0 0 1-.59 2.81a7.4 7.4 0 0 1-2.55 3.2"></svg:path><svg:path fill="#F8312F" d="M13 2a7 7 0 0 0-7 7v7a6.99 6.99 0 0 0 3 5.745V24h13v-3c.628-.835 1-1.874 1-3V9a7 7 0 0 0-7-7z"></svg:path><svg:path fill="#9B9B9B" d="M22 23H9v6.049c0 .53.39.951.861.951H21.14c.48 0 .861-.431.861-.951z"></svg:path><svg:path fill="#D3D3D3" d="M17.688 25h-4.376c-.172 0-.312.156-.312.35v2.3c0 .194.14.35.312.35h4.376c.172 0 .312-.156.312-.35v-2.3c0-.194-.14-.35-.312-.35"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatBoxingGloveIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsRdocIcon],svg[file-icons-rdoc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M401.946 421.39v64.969h-64.968zm-188.229 31.473H33.496V50.917h234.468l100.487 100.486v1.051h33.495v-34.546L301.46 17.42H0v468.94h247.213zm188.33-280.141H182.144L72.19 282.674l219.904 219.905L512 282.674zm-274.88 109.952l82.464-82.464H374.56l82.464 82.464l-164.929 164.929zm247.393-54.976h-82.465v192.416l137.44-137.44z"></svg:path>`,
+})
+export class FileIconsRdocIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

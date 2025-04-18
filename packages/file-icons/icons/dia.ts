@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsDiaIcon],svg[file-icons-dia-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M269.642 130.298L163.788 340.66l216.751.41zm-1.627 97.812l37.084 70.42l-71.738-.299zm-104.227-91.663H50.943V12.267h112.845zm-.16 251.768l-55.493 111.519L50.91 388.07l22.704.11V147.783h67.503v240.433zm104.514 54.532l-122.156.005l28.2-56.671h93.702c126.975-6.035 188.66-71.009 187.232-136.028c-1.407-64.16-64.27-128.364-186.535-136.022h-93.462V57.353h93.473c162.307 7.124 243.654 99.903 243.395 192.7c-.257 92.339-81.317 184.696-243.849 192.694m-198.76.008L0 442.758V386.08l40.289-.094zM39.608 114.03H0V57.353h39.608z"></svg:path>`,
+})
+export class FileIconsDiaIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cibEverplacesIcon],svg[cib-everplaces-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.453 31.964C6.349 31.183 0 24.344 0 16.036c0-8.828 7.172-16 16-16s16 7.172 16 16c0 8.308-6.349 15.147-14.453 15.928v-9.396A6.71 6.71 0 0 0 16 9.328a6.71 6.71 0 0 0-1.547 13.24zm-.521-19.543c.86 0 1.552.699 1.552 1.552c0 .855-.692 1.548-1.552 1.548a1.55 1.55 0 0 1-1.547-1.548c0-.853.697-1.552 1.547-1.552"></svg:path>`,
+})
+export class CibEverplacesIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

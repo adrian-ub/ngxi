@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[majesticonsPlanetRocketIcon],svg[majesticons-planet-rocket-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:g clip-path="url(#majesticonsPlanetRocket0)"><svg:path fill="currentColor" d="m21.048 8.868l1.402-.318l-.318 1.402a8 8 0 0 1-2.145 3.89L17.5 16.328l-.015.015c1.71 1.709-.702 4.935-1.414 5.628l-1.4-2.814l-2.828-2.829L9 14.9c.722-.703 4.001-3.1 5.686-1.415l2.472-2.472a8 8 0 0 1 3.89-2.145"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.672 19.157l-2.829-2.829m2.829 2.829l1.4 2.814c.711-.693 3.122-3.919 1.413-5.628m-2.813 2.814l2.813-2.814m-5.642-.015l2.829-2.828l.014-.015m-2.843 2.843L9 14.9c.722-.703 4.001-3.1 5.686-1.415m2.814 2.843l-.015.015m0 0l2.502-2.501a8 8 0 0 0 2.145-3.89l.318-1.402l-1.402.318a8 8 0 0 0-3.89 2.145l-2.472 2.472m-11.272-.172c-1.339 2.117-1.85 3.806-1.192 4.465c.586.586 1.987.246 3.778-.778m7.313-13.586c2.117-1.339 3.806-1.85 4.465-1.192c.886.885-.345 3.634-2.854 6.778m-10.67 5A7.002 7.002 0 0 1 14 4.254"></svg:path></svg:g><svg:defs><svg:clippath id="majesticonsPlanetRocket0"><svg:path fill="#fff" d="M0 0h24v24H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
+})
+export class MajesticonsPlanetRocketIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenKubIcon],svg[token-kub-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.925 6.717a1.8 1.8 0 0 1 .373-.567L21 11.762l-5.715 6.075l-4.09-4.185a1.68 1.68 0 0 1 1.863-.377c.208.088.396.216.553.377l1.678 1.714l3.294-3.6l-3.284-3.14a1.755 1.755 0 0 1-.37-1.909zm1.575 5.058a1.125 1.125 0 1 1-2.25 0a1.125 1.125 0 0 1 2.25 0M8.701 17.85a1.773 1.773 0 0 0 0-2.475l-3.285-3.577l3.299-3.164l1.674 1.715a1.7 1.7 0 0 0 1.206.513c.454 0 .855-.306 1.17-.635L8.715 6.16L3 11.798zm1.049-6.075a1.125 1.125 0 1 1-2.25 0a1.125 1.125 0 0 1 2.25 0"></svg:path>`,
+})
+export class TokenKubIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiArtstationIcon],svg[openmoji-artstation-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#92d3f5" d="M37.824 40.771L26.456 21.076L15.088 40.771ZM10.95 47.95l4.24 7.315a5.06 5.06 0 0 0 4.527 2.787h28.09L41.98 47.95Zm50.1.051a5 5 0 0 0-.81-2.736L43.786 16.634a5.04 5.04 0 0 0-4.476-2.686h-8.7l25.422 44.053l4.004-6.942c.81-1.335 1.013-1.909 1.013-3.058"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-width="2" d="M37.824 40.771L26.456 21.076L15.088 40.771ZM10.95 47.95l4.24 7.314v0a5.06 5.06 0 0 0 4.527 2.788v0h28.09L41.98 47.95Zm50.1.051a5 5 0 0 0-.81-2.736L43.786 16.634a5.04 5.04 0 0 0-4.476-2.686h-8.7l25.422 44.053l4.004-6.943c.81-1.334 1.013-1.908 1.013-3.057Z"></svg:path>`,
+})
+export class OpenmojiArtstationIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

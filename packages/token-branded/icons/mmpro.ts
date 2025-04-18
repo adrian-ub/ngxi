@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedMmproIcon],svg[token-branded-mmpro-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#3C6" d="M15.857 9V6.857h-.428V9h-.836l-1.307 1.599v-4.17h-1.072V3h-.428v3.429h-1.072v4.17L9.407 9h-.836V6.857h-.428V9h-.857v6h.857v3.429h.428V15h.858v-3.416l1.285 1.5v3.63h1.072V21h.428v-4.286h1.072V13.09l1.285-1.5V15h.857v3.429h.43V15h.856V9z"></svg:path>`,
+})
+export class TokenBrandedMmproIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

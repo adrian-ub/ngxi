@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[elUploadIcon],svg[el-upload-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M600 1200C268.63 1200 0 931.369 0 600S268.63 0 600 0s600 268.63 600 600s-268.631 600-600 600m0-1069.565c-259.369 0-469.565 210.261-469.565 469.565c0 259.305 210.196 469.564 469.565 469.564S1069.564 859.305 1069.564 600c0-259.304-210.195-469.565-469.564-469.565m117.392 720.652H482.608V584.348H335.87L600 335.87l264.131 248.478H717.392z"></svg:path>`,
+})
+export class ElUploadIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

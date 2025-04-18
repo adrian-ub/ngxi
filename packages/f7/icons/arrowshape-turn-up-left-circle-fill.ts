@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7ArrowshapeTurnUpLeftCircleFillIcon],svg[f7-arrowshape-turn-up-left-circle-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M28 51.906c13.055 0 23.906-10.851 23.906-23.906c0-13.078-10.875-23.906-23.93-23.906C14.899 4.094 4.095 14.922 4.095 28c0 13.055 10.828 23.906 23.906 23.906m-2.203-14.11c-.633 0-1.125-.28-1.711-.82l-9.961-9.374c-.469-.446-.633-.915-.633-1.336c0-.446.14-.914.633-1.36l9.96-9.304c.657-.61 1.055-.891 1.688-.891c.867 0 1.477.703 1.477 1.523v4.805h.375c9.047 0 13.008 5.742 13.008 15.094c0 1.078-.633 1.664-1.29 1.664c-.538 0-1.124-.14-1.546-.938c-2.18-4.125-5.274-5.343-10.172-5.343h-.375v4.828c0 .843-.61 1.453-1.453 1.453"></svg:path>`,
+})
+export class F7ArrowshapeTurnUpLeftCircleFillIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

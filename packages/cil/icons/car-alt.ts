@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilCarAltIcon],svg[cil-car-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m475.656 223.142l-90.272-13.908l-55.013-89.87a32.07 32.07 0 0 0-27.548-15.291L72.265 105.91A32.02 32.02 0 0 0 42.2 127.684L16 205.375V384h55.006a68 68 0 0 0 129.988 0h102.012a68 68 0 0 0 129.988 0H496V246.862a23.87 23.87 0 0 0-20.344-23.72M224 136.7l79.078-.63l44.1 72.047L224 208.074Zm-151.479 1.208L192 136.956v71.107l-143.119-.051ZM136 400a36 36 0 1 1 36-36a36.04 36.04 0 0 1-36 36m232 0a36 36 0 1 1 36-36a36.04 36.04 0 0 1-36 36m96-48h-29.082a67.982 67.982 0 0 0-133.836 0h-98.164a67.982 67.982 0 0 0-133.836 0H48V240.026l330.526.529L464 253.724Z"></svg:path>`,
+})
+export class CilCarAltIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

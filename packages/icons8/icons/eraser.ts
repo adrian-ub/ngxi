@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icons8EraserIcon],svg[icons8-eraser-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.906 4.094c-.805-.002-1.64.272-2.28.843v.032l-.032.03L4.906 16.594c-1.212 1.212-1.204 3.184-.062 4.468l.03.032h.032l6 6c1.213 1.212 3.184 1.204 4.47.062v-.03l.03-.032L27 15.5c1.267-1.267 1.306-3.288.094-4.5l-6-6a3.06 3.06 0 0 0-2.188-.906m-.03 2.03c.318 0 .618.088.81.282l6.002 6c.387.388.44 1.154-.094 1.688l-5.032 5.03l-7.656-7.655l5.063-5.033l.03-.03c.253-.21.57-.28.875-.282zm-7.407 6.782l7.655 7.656l-5.094 5.094l-.03.032c-.517.428-1.308.38-1.688 0L6.345 19.75c-.016-.018-.017-.044-.032-.063c-.41-.517-.374-1.313 0-1.687z"></svg:path>`,
+})
+export class Icons8EraserIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

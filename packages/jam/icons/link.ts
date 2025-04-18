@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamLinkIcon],svg[jam-link-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.19 9.345a.97.97 0 0 1 1.37 0a.966.966 0 0 1 0 1.367l-2.055 2.052a1.93 1.93 0 0 0 0 2.735a1.94 1.94 0 0 0 2.74 0l4.794-4.787a.966.966 0 0 0 0-1.367a.966.966 0 0 1 0-1.368a.97.97 0 0 1 1.37 0a2.9 2.9 0 0 1 0 4.103l-4.795 4.787a3.88 3.88 0 0 1-5.48 0a3.864 3.864 0 0 1 0-5.47L3.19 9.344zm11.62-.69a.97.97 0 0 1-1.37 0a.966.966 0 0 1 0-1.367l2.055-2.052a1.93 1.93 0 0 0 0-2.735a1.94 1.94 0 0 0-2.74 0L7.962 7.288a.966.966 0 0 0 0 1.367a.966.966 0 0 1 0 1.368a.97.97 0 0 1-1.37 0a2.9 2.9 0 0 1 0-4.103l4.795-4.787a3.88 3.88 0 0 1 5.48 0a3.864 3.864 0 0 1 0 5.47L14.81 8.656z"></svg:path>`,
+})
+export class JamLinkIcon {
+  readonly viewBox = input("-3 -3 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

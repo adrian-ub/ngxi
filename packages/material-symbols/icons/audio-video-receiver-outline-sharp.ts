@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsAudioVideoReceiverOutlineSharpIcon],svg[material-symbols-audio-video-receiver-outline-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 15h16V7H4zm-2 2V5h20v12h-2v2h-2v-2H6v2H4v-2zm2-2V7zm12.5-2q.825 0 1.413-.587T18.5 11t-.587-1.412T16.5 9t-1.412.588T14.5 11t.588 1.413T16.5 13M6 13h7V9H6z"></svg:path>`,
+})
+export class MaterialSymbolsAudioVideoReceiverOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTooltipQuote24RegularIcon],svg[fluent-tooltip-quote-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.25 5.5a.75.75 0 0 0-.75.75v1a.75.75 0 0 0 1.135.644A4.7 4.7 0 0 1 5.72 9.22a.75.75 0 1 0 1.06 1.06c.432-.43 1.72-1.879 1.72-4.03a.75.75 0 0 0-.75-.75zm4 0a.75.75 0 0 0-.75.75v1a.75.75 0 0 0 1.135.644A4.7 4.7 0 0 1 9.72 9.22a.75.75 0 1 0 1.06 1.06c.432-.431 1.72-1.879 1.72-4.03a.75.75 0 0 0-.75-.75zM2 4.25A2.25 2.25 0 0 1 4.25 2h9a2.25 2.25 0 0 1 2.25 2.25v7.5A2.25 2.25 0 0 1 13.25 14h-1.942l-1.894 3.6a.75.75 0 0 1-1.328 0L6.192 14H4.25A2.25 2.25 0 0 1 2 11.75zm2.25-.75a.75.75 0 0 0-.75.75v7.5c0 .414.336.75.75.75h2.395a.75.75 0 0 1 .663.4l1.442 2.74l1.441-2.74a.75.75 0 0 1 .664-.4h2.395a.75.75 0 0 0 .75-.75v-7.5a.75.75 0 0 0-.75-.75zm2.128 13H2.75a.75.75 0 0 0 0 1.5h4.417zm3.955 1.5H21.25a.75.75 0 0 0 0-1.5H11.122zM2.75 20.5a.75.75 0 0 0 0 1.5h12a.75.75 0 0 0 0-1.5z"></svg:path>`,
+})
+export class FluentTooltipQuote24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

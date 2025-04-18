@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7ArrowDownLeftCircleFillIcon],svg[f7-arrow-down-left-circle-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M28 51.906c13.055 0 23.906-10.828 23.906-23.906c0-13.055-10.875-23.906-23.93-23.906C14.899 4.094 4.095 14.945 4.095 28c0 13.078 10.828 23.906 23.906 23.906m-8.977-30.281c1.149 0 1.899.773 1.899 1.992v4.477l-.375 4.031l3.726-3.984l9.493-9.516a2 2 0 0 1 1.476-.586c1.149 0 1.875.75 1.875 1.922a1.88 1.88 0 0 1-.61 1.383l-9.515 9.515l-4.008 3.75l3.797-.422h4.711c1.242 0 2.04.774 2.04 1.899c0 1.172-.774 1.898-1.993 1.898H19.305c-1.36 0-2.157-.609-2.157-2.132V23.688c0-1.22.727-2.063 1.875-2.063"></svg:path>`,
+})
+export class F7ArrowDownLeftCircleFillIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

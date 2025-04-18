@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsSprayIcon],svg[file-icons-spray-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M386.213 512H65.969c-35.723 0-65.5-28.417-65.963-64.137C-.465 411.57 28.814 382 65 382h253v-59H61.502C27.535 323 0 295.465 0 261.498V64.084C0 28.139 29.14-1 65.084-1h315.947c35.723 0 65.5 28.417 65.963 64.137C447.465 99.43 418.186 129 382 129H125v64h258.809C419.26 193 448 221.74 448 257.191v193.022C448 484.337 420.337 512 386.213 512"></svg:path>`,
+})
+export class FileIconsSprayIcon {
+  readonly viewBox = input("0 0 448 512")
+  readonly width = input("0.88em")
+  readonly height = input("1em")
+}

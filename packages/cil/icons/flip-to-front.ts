@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilFlipToFrontIcon],svg[cil-flip-to-front-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M464 16H144a32.036 32.036 0 0 0-32 32v320a32.036 32.036 0 0 0 32 32h320a32.036 32.036 0 0 0 32-32V48a32.036 32.036 0 0 0-32-32m0 352H144V48h320l.021 320ZM77.846 464h30.77v32h-30.77zM384 464h30.77v32H384zm-183.692 0h30.77v32h-30.77zm-61.231 0h30.769v32h-30.769zm122.462 0h30.769v32h-30.769zm61.23 0h30.77v32h-30.77zM16 464h32v32H16zm0-239.692h32v30.154H16zm0 60.153h32v30.154H16zm0 120.308h32v30.154H16zm0-60.154h32v30.154H16zm0-180.461h32v30.154H16zM16 104h32v30.154H16z"></svg:path>`,
+})
+export class CilFlipToFrontIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsUptimekumaIcon],svg[simple-icons-uptimekuma-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M11.759.955c-4.071 0-7.93 2.265-10.06 5.774l-.16.263l-.116.284c-1.81 4.44-2.188 9.118.621 12.459c2.67 3.174 6.221 3.328 9.477 3.308s6.323-.482 8.995-2.032C22.75 19.714 24 16.917 24 14.53c0-2.388-.724-4.698-1.882-7.343l-.112-.257l-.148-.238C19.683 3.2 15.83.955 11.758.955Zm0 3.868q4.378 0 6.816 3.914q3.114 7.121 0 8.929c-3.116 1.808-11.234 2.359-13.57-.42q-2.337-2.78 0-8.51q2.376-3.913 6.754-3.913"></svg:path>`,
 })
 export class SimpleIconsUptimekumaIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

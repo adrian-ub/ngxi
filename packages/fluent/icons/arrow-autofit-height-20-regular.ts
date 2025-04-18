@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentArrowAutofitHeight20RegularIcon],svg[fluent-arrow-autofit-height-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m15.003 3.63l1.139 1.18a.5.5 0 1 0 .72-.695L15.04 2.229a.75.75 0 0 0-1.079 0l-1.82 1.886a.5.5 0 1 0 .719.694l1.143-1.183V7.5a.5.5 0 0 0 1 0zM3 5a2 2 0 0 1 2-2h4.5a.5.5 0 0 1 0 1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h4.5a.5.5 0 0 1 0 1H5a2 2 0 0 1-2-2zm13.142 10.19l-1.14 1.18V12.5a.5.5 0 1 0-1 0v3.874l-1.142-1.183a.5.5 0 1 0-.72.694l1.821 1.886a.75.75 0 0 0 1.08 0l1.82-1.886a.5.5 0 1 0-.72-.694"></svg:path>`,
+})
+export class FluentArrowAutofitHeight20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

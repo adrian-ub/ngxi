@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedNymIcon],svg[token-branded-nym-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#181B1E"><svg:path fill-rule="evenodd" d="M21 12a9 9 0 1 0-18 0a9 9 0 0 0 18 0m-1.059 0a7.941 7.941 0 1 0-15.883 0a7.941 7.941 0 0 0 15.883 0" clip-rule="evenodd"></svg:path><svg:path d="M7.235 17.289V6.722a7.2 7.2 0 0 1 1.589-1.075l6.353 9.9v-9.9a7.3 7.3 0 0 1 1.588 1.117v10.53a7.4 7.4 0 0 1-1.588 1.059L8.824 8.42v9.932a8.5 8.5 0 0 1-1.589-1.064"></svg:path></svg:g>`,
+})
+export class TokenBrandedNymIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLabsIcon],svg[material-symbols-labs-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 22q-2.075 0-3.537-1.463T7 17V8q-.825 0-1.412-.587T5 6V4q0-.825.588-1.412T7 2h10q.825 0 1.413.588T19 4v2q0 .825-.587 1.413T17 8v9q0 2.075-1.463 3.538T12 22m0-2q1.25 0 2.125-.875T15 17h-3v-2h3v-2h-3v-2h3V8H9v9q0 1.25.875 2.125T12 20"></svg:path>`,
+})
+export class MaterialSymbolsLabsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

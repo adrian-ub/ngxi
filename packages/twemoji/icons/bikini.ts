@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiBikiniIcon],svg[twemoji-bikini-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#553788" d="M29 25s-4 1-11 1s-11-1-11-1s6 5 11 5s11-5 11-5m-11-7.144c-5.514 0-10-4.515-10-10.063C8 4.935 9.214 2.202 11.331.294l1.339 1.485A8.1 8.1 0 0 0 10 7.793c0 4.446 3.589 8.063 8 8.063s8-3.617 8-8.063a8.1 8.1 0 0 0-2.669-6.012l1.34-1.485A10.1 10.1 0 0 1 28 7.793c0 5.549-4.486 10.063-10 10.063"></svg:path><svg:path fill="#744EAA" d="M16.625 16.856S11.208 13 8.893 5.526c-.184.182-4.418 5.665-2.209 10.197s9.941 1.133 9.941 1.133m2.815 0s5.477-4.731 7.732-11.33c.161.307 4.418 5.665 2.209 10.197s-9.941 1.133-9.941 1.133M29 25s-4 3-11 3s-11-3-11-3s7.208 5.625 9 11h4c1.958-6.625 9-11 9-11"></svg:path>`,
+})
+export class TwemojiBikiniIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

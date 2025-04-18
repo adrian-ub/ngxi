@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPuzzleCubePiece20FilledIcon],svg[fluent-puzzle-cube-piece-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15.794 1.29a1 1 0 0 1 1.414 0l1.503 1.503a1 1 0 0 1 0 1.414L17.208 5.71a1 1 0 0 1-1.414 0L14.29 4.207a1 1 0 0 1 0-1.414zM5.5 17H7v-4H3v1.5A2.5 2.5 0 0 0 5.5 17M7 8v4H3V8zm5 4H8V8h4zm-4 1h4v4H8zm5-5v4h4V8zm0 5h4v1.5a2.5 2.5 0 0 1-2.5 2.5H13zM3 7h4V3H5.5A2.5 2.5 0 0 0 3 5.5zm5 0V3h4v4z"></svg:path>`,
+})
+export class FluentPuzzleCubePiece20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedZigIcon],svg[token-branded-zig-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#734ACC" d="M3.58 9.307c0-.599.448-1.08 1-1.08h.905c.552 0 .999.481.999 1.08v4.807c0 .598-.447 1.08-.999 1.08h-.906c-.551 0-.998-.482-.998-1.08z"></svg:path><svg:path fill="#AC8CE1" d="M17.516 9.179c0-.523.447-.952.999-.952h.906c.551 0 .998.43.998.952v3.902c0 .522-.447.952-.998.952h-.906c-.552 0-.999-.43-.999-.952z"></svg:path><svg:path fill="#936ED8" d="M14.032 11.552c0-.551.447-1.004.998-1.004h.906c.552 0 .999.453.999 1.004v6.12c0 .552-.447 1.005-.999 1.005h-.906c-.551 0-.998-.453-.998-1.005z"></svg:path><svg:path fill="#6640C7" d="M7.064 4.028c0-.57.447-1.028.999-1.028h.905c.552 0 1 .465 1 1.028v8.396c0 .569-.448 1.027-1 1.027h-.905c-.552 0-.999-.464-.999-1.027z"></svg:path><svg:path fill="#8961D4" d="M10.549 5.764c0-.563.447-1.022.998-1.022h.906c.552 0 .999.459.999 1.022v14.214c0 .563-.447 1.022-.999 1.022h-.906c-.551 0-.998-.459-.998-1.022z"></svg:path></svg:g>`,
+})
+export class TokenBrandedZigIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

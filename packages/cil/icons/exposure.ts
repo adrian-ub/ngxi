@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilExposureIcon],svg[cil-exposure-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M456 40H56a16 16 0 0 0-16 16v400a16 16 0 0 0 16 16h400a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16M72 72h345.373L72 417.373Zm368 368H94.627L440 94.627Z"></svg:path><svg:path fill="currentColor" d="M336 368v40h32v-40h40v-32h-40v-40h-32v40h-40v32zM112 136h112v32H112z"></svg:path>`,
+})
+export class CilExposureIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

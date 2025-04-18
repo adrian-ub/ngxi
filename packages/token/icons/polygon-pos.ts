@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenPolygonPosIcon],svg[token-polygon-pos-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m16.85 15.574l4.743-2.706a.8.8 0 0 0 .407-.696V6.76a.8.8 0 0 0-.407-.697L16.85 3.357a.83.83 0 0 0-.814 0l-4.744 2.706a.8.8 0 0 0-.406.697v9.671l-3.327 1.897L4.23 16.43v-3.794l3.327-1.897l2.194 1.252V9.446l-1.787-1.02a.83.83 0 0 0-.814 0l-4.744 2.706A.8.8 0 0 0 2 11.83v5.412c0 .286.155.552.407.696l4.744 2.706a.83.83 0 0 0 .814 0l4.744-2.706a.8.8 0 0 0 .406-.696V7.569l.06-.033l3.266-1.863l3.327 1.896v3.795L16.44 13.26l-2.191-1.248v2.545l1.784 1.017a.83.83 0 0 0 .814 0z"></svg:path>`,
+})
+export class TokenPolygonPosIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

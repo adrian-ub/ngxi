@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenTerminalCliFill12Icon],svg[garden-terminal-cli-fill-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 1H1c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1M9.5 9h-4c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h4c.28 0 .5.22.5.5s-.22.5-.5.5m-7 .12a.62.62 0 0 1-.44-.18a.63.63 0 0 1 0-.88L4.12 6L2.06 3.94a.63.63 0 0 1 0-.88c.24-.24.64-.24.88 0L5.09 5.2c.44.44.44 1.15 0 1.59L2.94 8.94a.62.62 0 0 1-.44.18"></svg:path>`,
+})
+export class GardenTerminalCliFill12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[logosCodioIcon],svg[logos-codio-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#A3BAF0" d="m125.306 214.373l.934 77.731l1.68 3.46l127.679-73.75l-72.306-41.811l-55.373 31.94z"></svg:path><svg:path fill="#4474E1" d="m.24 221.813l127.68 73.75v-83.54l-55.293-31.94v-67L4.955 74.393H.24z"></svg:path><svg:path fill="#C7D6F7" d="m2.966 75.967l67.378 38.918l2.283 1.318l55.293-31.94l55.373 31.94l72.306-41.81L127.919.641L.242 74.392z"></svg:path>`,
+})
+export class LogosCodioIcon {
+  readonly viewBox = input("0 0 256 296")
+  readonly width = input("0.87em")
+  readonly height = input("1em")
+}

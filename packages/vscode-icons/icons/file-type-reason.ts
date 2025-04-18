@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeReasonIcon],svg[vscode-icons-file-type-reason-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#dd4b39" d="M2 2h28v28H2z"></svg:path><svg:path fill="#fff" d="M9.051 17.527h5.072a4.95 4.95 0 0 1 2.977.973a3.3 3.3 0 0 1 1.128 2.267a4.12 4.12 0 0 1-.778 3.022a3.6 3.6 0 0 1-1.137.905l2.247 3.549h-3.061l-1.6-3.043h-2.154v3.032H9.051zm2.69 2.128v3.438h1.989a2.18 2.18 0 0 0 1.468-.452a1.81 1.81 0 0 0 .482-1.544a1.47 1.47 0 0 0-.705-1.18a2.77 2.77 0 0 0-1.437-.269c-.598.006-1.797.007-1.797.007m8.384-2.13h8.35v2.13h-5.66V21.8h5.11v2.119H22.82V26.1h5.824v2.142h-8.519z"></svg:path>`,
+})
+export class VscodeIconsFileTypeReasonIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

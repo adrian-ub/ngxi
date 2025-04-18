@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsEmojiBeerMugIcon],svg[arcticons-emoji-beer-mug-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M32.627 35.27h4.569a3.054 3.054 0 0 0 3.045-3.044V21.573a3.054 3.054 0 0 0-3.045-3.044h-4.569m-22.27 2.14c.574-.2.99-.775.991-1.449l.001-1.217c.435.284.94.456 1.485.456l1.412.001c.915 0 1.725-.468 2.252-1.18c.781 1.173 2.065 1.946 3.514 1.947c2.37.002 4.31-2.055 4.311-4.571l8.316.006c.16-.477.251-.99.251-1.525c.002-2.526-1.924-4.576-4.303-4.578c-.993 0-1.905.359-2.634.957c-.714-1.474-2.157-2.485-3.826-2.487c-.61 0-1.188.135-1.714.377c-.853-1.157-2.178-1.905-3.67-1.906c-2.243-.002-4.116 1.678-4.566 3.919a3.4 3.4 0 0 0-.82-.11c-1.983-.002-3.592 1.704-3.593 3.809l-.005 6.1c0 .838.645 1.525 1.434 1.526h.718q.235 0 .446-.075"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24.323 14.518h7.923V42.5h-22.08V20.72"></svg:path>`,
+})
+export class ArcticonsEmojiBeerMugIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

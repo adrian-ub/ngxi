@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsPalisadeIcon],svg[game-icons-palisade-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m112 144.836l-9 48V279h18v-86.164zm36 0l-9 48V279h18v-86.164zm216 0l-9 48V279h18v-86.164zm36 0l-9 48V279h18v-86.164zm-360 64l-9 48V279h18v-22.164zm36 0l-9 48V279h18v-22.164zm108 0l-9 48V279h18v-22.164zm36 0l-9 48V279h18v-22.164zm36 0l-9 48V279h18v-22.164zm36 0l-9 48V279h18v-22.164zm36 0l-9 48V279h18v-22.164zm108 0l-9 48V279h18v-22.164zm36 0l-9 48V279h18v-22.164zM18 297v16h138.96v-16zm156.96 0v16h162.005v-16zm180.005 0v16H494v-16zM31 331v156h18V331zm36 0v156h18V331zm36 0v156h18V331zm36 0v156h18V331zm36 0v156h18V331zm36 0v156h18V331zm36 0v156h18V331zm36 0v156h18V331zm36 0v156h18V331zm36 0v156h18V331zm36 0v156h18V331zm36 0v156h18V331zm36 0v156h18V331z"></svg:path>`,
+})
+export class GameIconsPalisadeIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

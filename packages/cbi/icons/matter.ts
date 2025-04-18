@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cbiMatterIcon],svg[cbi-matter-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.939 7.248a6.4 6.4 0 0 0 2.908 1.335V2.894l1.158-.668l1.158.668v5.689a6.44 6.44 0 0 0 2.908-1.335l2.1 1.217a8.78 8.78 0 0 1-12.348 0zM10.5 21.774a8.78 8.78 0 0 0-6.184-10.693v2.433a6.44 6.44 0 0 1 2.61 1.851L2 18.209v1.338l1.158.665l4.926-2.844a6.4 6.4 0 0 1 .3 3.185zm9.194-10.693a8.78 8.78 0 0 0-6.174 10.693l2.108-1.217a6.4 6.4 0 0 1 .3-3.186l4.921 2.841L22 19.543v-1.334l-4.926-2.844a6.44 6.44 0 0 1 2.61-1.851z"></svg:path>`,
+})
+export class CbiMatterIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

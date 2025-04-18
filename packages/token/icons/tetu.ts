@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenTetuIcon],svg[token-tetu-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 10.03a3.375 3.375 0 1 0 0-6.75a3.375 3.375 0 0 0 0 6.75"></svg:path><svg:path fill="currentColor" d="M11.994 11.719A5.58 5.58 0 0 1 6.46 6.234C6.59 4.8 5.306 4.8 4.957 5.188l-.078.079A8.38 8.38 0 0 0 3 10.537c0 1.744 1.727 2.869 3.56 2.869h10.88c1.816 0 3.56-1.114 3.56-2.869a8.35 8.35 0 0 0-1.958-5.343c-.36-.394-1.642-.394-1.513 1.04c0 2.92-2.475 5.485-5.535 5.485m1.019 8.487l2.7-3.791c.568-.788-.011-1.885-1.012-1.885H9.3c-1.002 0-1.581 1.092-1.013 1.885l2.7 3.79a1.253 1.253 0 0 0 2.025 0"></svg:path>`,
+})
+export class TokenTetuIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[faRegularGrimaceIcon],svg[fa-regular-grimace-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248s248-111 248-248S385 8 248 8m0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200s-89.7 200-200 200m-80-216c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32m160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32m16 16H152c-26.5 0-48 21.5-48 48v32c0 26.5 21.5 48 48 48h192c26.5 0 48-21.5 48-48v-32c0-26.5-21.5-48-48-48m-168 96h-24c-8.8 0-16-7.2-16-16v-8h40zm0-40h-40v-8c0-8.8 7.2-16 16-16h24zm64 40h-48v-24h48zm0-40h-48v-24h48zm64 40h-48v-24h48zm0-40h-48v-24h48zm56 24c0 8.8-7.2 16-16 16h-24v-24h40zm0-24h-40v-24h24c8.8 0 16 7.2 16 16z"></svg:path>`,
+})
+export class FaRegularGrimaceIcon {
+  readonly viewBox = input("0 0 496 512")
+  readonly width = input("0.97em")
+  readonly height = input("1em")
+}

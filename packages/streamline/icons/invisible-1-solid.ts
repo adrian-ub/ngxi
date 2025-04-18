@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineInvisible1SolidIcon],svg[streamline-invisible-1-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M.264 1.324a.75.75 0 0 1 1.06-1.06l2.629 2.628C4.86 2.393 5.893 2.04 7 2.04c1.532 0 2.92.677 4.035 1.48c1.118.805 2.003 1.769 2.539 2.417l.004.005c.24.298.366.675.366 1.058s-.126.76-.366 1.058l-.004.006a14.5 14.5 0 0 1-2.249 2.2l2.411 2.412a.75.75 0 0 1-1.06 1.06zm8.753 6.633a2.232 2.232 0 0 0-2.974-2.974zm-8.59-2.02c.319-.387.762-.885 1.305-1.395l7.104 7.104A5.7 5.7 0 0 1 7 11.96c-1.532 0-2.92-.676-4.035-1.479C1.847 9.675.962 8.711.426 8.064l-.004-.006A1.7 1.7 0 0 1 .056 7c0-.383.126-.76.366-1.058l.004-.005Z" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineInvisible1SolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphHandLampIcon],svg[si-glyph-hand-lamp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m11.951 7.979l1.006.013l-1.039-.975V4.866C11.918 2.554 9.807.06 7.49.06h-.969c-2.316 0-4.438 2.547-4.438 4.858v2.117l-1.13.892l1.09.01l-.006 4.647l-.975 1.395l2.602.655l1.986.438l1.348.862l1.352-.858l2.006-.401l2.624-.613l-1.021-1.615zM6.035 13.98l-3.098-.578V7.917l3.098.372zm5.002-.49l-3.069.466V8.367l3.069-.357zM8.049 4.828c.135-.191.215-.418.215-.664c0-.67-.582-1.213-1.297-1.213s-1.295.543-1.295 1.213c0 .247.08.476.215.668L2.943 6.644V5.021C2.943 3.189 4.59.996 6.534.996H7.5c1.943 0 3.525 2.193 3.525 4.025v1.62z"></svg:path>`,
+})
+export class SiGlyphHandLampIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

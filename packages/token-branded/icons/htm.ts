@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedHtmIcon],svg[token-branded-htm-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedHtm0)" d="M5.388 7.53c-1.14-1.302-.69-3.36-.318-4.23C4.488 3.516 3 4.656 3 7.53c0 3.252 3.66 4.716 5.256 6.504s2.07 6.666 3.66 6.666c1.596 0 2.328-5.328 3.828-6.666C17.016 12.894 21 10.614 21 7.53c0-2.472-1.38-3.852-2.07-4.23c1.146 1.692.318 3.252-.636 4.23c-3.186 3.576-5.736 2.28-6.372 5.364c-.318-3.09-5.1-3.738-6.534-5.364"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedHtm0" x1="12" x2="12" y1="3.3" y2="20.7" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#64EAB7"></svg:stop><svg:stop offset="1" stop-color="#33CBF0"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedHtmIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

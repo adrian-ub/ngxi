@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiPlasterIcon],svg[openmoji-plaster-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:rect width="46.9" height="16.96" x="12.55" y="27.52" fill="#f4aa41" rx="4.326" ry="4.326"></svg:rect><svg:rect width="46.9" height="16.96" x="12.55" y="27.52" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" rx="4.005" ry="4.005"></svg:rect><svg:path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M28.52 31.91v8.16m14.25-8.16v8.16"></svg:path><svg:circle cx="33.69" cy="34.01" r="1.289"></svg:circle><svg:circle cx="38.06" cy="34.01" r="1.289"></svg:circle><svg:circle cx="33.69" cy="37.99" r="1.289"></svg:circle><svg:circle cx="38.06" cy="37.99" r="1.289"></svg:circle>`,
+})
+export class OpenmojiPlasterIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

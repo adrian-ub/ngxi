@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cryptocurrencyVrscIcon],svg[cryptocurrency-vrsc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16S7.163 0 16 0m-5.158 6.84c-.672-.273-1.445.115-1.996.588c-1.453 1.229-2.631 2.609-2.285 4.64c.167.978 1.673 4.137 3.284 7.276l.334.649c1.786 3.448 3.595 6.687 3.767 6.757c0 0 11.283-14.33 11.505-15.073c.176-.592-.035-2.724-2.077-4.252c-.582-.436-1.345-.79-1.902-.588c-1.631.589-6.174 7.048-6.174 7.048l-.02-.04l-.098-.195a77 77 0 0 0-1.788-3.335l-.269-.463c-.857-1.457-1.759-2.8-2.28-3.011z"></svg:path>`,
+})
+export class CryptocurrencyVrscIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

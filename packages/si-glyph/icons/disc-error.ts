@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphDiscErrorIcon],svg[si-glyph-disc-error-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="m11.172 14.414l4.198-4.199l1.393 1.393l-4.2 4.199z"></svg:path><svg:path d="m11.172 11.586l1.393-1.393l4.198 4.199l-1.393 1.393zM8.988 6.022a1.977 1.977 0 1 0 0 3.953a1.98 1.98 0 0 0 1.979-1.976a1.98 1.98 0 0 0-1.979-1.977"></svg:path><svg:path d="M16.958 7.969c0-4.413-3.573-7.906-7.979-7.906S1 3.556 1 7.969c0 4.412 3.572 7.989 7.979 7.989q.51-.002 1.001-.071v-4.935a3 3 0 0 1-.979.173c-1.721 0-3.115-1.406-3.115-3.14s1.395-3.142 3.115-3.142c1.719 0 3.115 1.406 3.115 3.142c0 .356-.072.695-.182 1.015h4.933c.053-.348.091-.693.091-1.031M6.15 11.676l-1.518 1.518l-.868-.869l1.518-1.518zm6.462-6.399l-.869-.869l1.518-1.518l.869.869z"></svg:path></svg:g>`,
+})
+export class SiGlyphDiscErrorIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}

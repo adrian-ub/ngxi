@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cuidaLampOnOutlineIcon],svg[cuida-lamp-on-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g class="lamp-on-outline"><svg:g fill="currentColor" class="Vector"><svg:path fill-rule="evenodd" d="M9 21a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1m0-5.575a1 1 0 0 1 1 1v.398c0 .374.303.677.677.677h2.646a.677.677 0 0 0 .677-.677V16.5a1 1 0 1 1 2 0v.323a2.676 2.676 0 0 1-2.677 2.677h-2.646A2.676 2.676 0 0 1 8 16.823v-.398a1 1 0 0 1 1-1" clip-rule="evenodd"></svg:path><svg:path d="M14.228 16.846c.137.42.59.654.995.476a8 8 0 1 0-6.367.034c.406.174.857-.064.99-.486l.087-.278c.132-.421-.106-.866-.506-1.052a6.109 6.109 0 1 1 5.206-.028c-.399.19-.632.637-.495 1.058z"></svg:path><svg:path fill-rule="evenodd" d="M10.056 9.076a1 1 0 0 1 1.274-.614l.906.317l.044.015c.22.076.478.166.682.273c.234.123.618.38.747.895c.128.515-.09.922-.238 1.14c-.13.19-.316.391-.473.562l-.032.034l-.103.112l.445.145a1 1 0 0 1-.616 1.902l-.743-.24l-.045-.015a5 5 0 0 1-.7-.262c-.238-.118-.635-.37-.772-.893c-.137-.522.086-.936.235-1.156c.132-.193.32-.397.482-.572l.032-.035l.109-.118l-.62-.216a1 1 0 0 1-.614-1.274" clip-rule="evenodd"></svg:path></svg:g></svg:g>`,
+})
+export class CuidaLampOnOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

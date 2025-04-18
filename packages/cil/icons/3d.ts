@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cil3dIcon],svg[cil-3d-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m68.983 382.642l171.35 98.928a32.08 32.08 0 0 0 32 0l171.352-98.929a32.09 32.09 0 0 0 16-27.713V157.071a32.09 32.09 0 0 0-16-27.713L272.334 30.429a32.09 32.09 0 0 0-32 0L68.983 129.358a32.09 32.09 0 0 0-16 27.713v197.858a32.09 32.09 0 0 0 16 27.713M272.333 67.38l155.351 89.691v177.378l-155.351-87.807Zm-16.051 206.947l157.155 88.828l-157.1 90.7l-157.158-90.73ZM84.983 157.071l155.35-89.691v179.2l-155.35 87.81Z"></svg:path>`,
+})
+export class Cil3dIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

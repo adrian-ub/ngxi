@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamDiscIcon],svg[jam-disc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m7-8a6.99 6.99 0 0 1-2.89 5.666l-.53-.796L13 14a5 5 0 0 0 2-4a5 5 0 0 0-2-4l1.2-1.6A6.99 6.99 0 0 1 17 10m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6m0-2a1 1 0 1 0 0-2a1 1 0 0 0 0 2"></svg:path>`,
+})
+export class JamDiscIcon {
+  readonly viewBox = input("-2 -2 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

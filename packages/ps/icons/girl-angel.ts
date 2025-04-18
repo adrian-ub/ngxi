@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[psGirlAngelIcon],svg[ps-girl-angel-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M448 192q0-56-32-107h32q21 0 21-21t-21-21h-73Q322 0 256 0T137 43H64q-21 0-21 21t21 21h32q-32 51-32 107v11Q3 359 0 425q-2 44 137 44q53 43 119 43q70 0 119-43q137 0 137-44q-3-66-64-222zM256 469q-62 0-105.5-43.5T107 320V192q0-58 42-105q24 84 254 84q2 6 2 21v128q0 62-43.5 105.5T256 469m-21-170q0 21 21 21t21-21v-22h-42zm21-86h-43q0 22-21 22q-5 0-8.5-1.5T178 231l-1-1q-6-6-6-17h-43q0 28 17 47q22 17 47 17q32 0 45-17q19-19 19-47m64 22q-5 0-8.5-1.5T306 231l-1-1q-6-6-6-17h-43q0 28 17 47q17 17 47 17q32 0 45-17q19-19 19-47h-43q0 22-21 22m-43 149q0 9-6 15t-15 6t-15-6t-6-15t6-15t15-6t15 6t6 15"></svg:path>`,
+})
+export class PsGirlAngelIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

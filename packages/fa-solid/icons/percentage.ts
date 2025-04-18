@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[faSolidPercentageIcon],svg[fa-solid-percentage-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M109.25 173.25c24.99-24.99 24.99-65.52 0-90.51s-65.52-24.99-90.51 0s-24.99 65.52 0 90.51c25 25 65.52 25 90.51 0m256 165.49c-24.99-24.99-65.52-24.99-90.51 0s-24.99 65.52 0 90.51s65.52 24.99 90.51 0c25-24.99 25-65.51 0-90.51m-1.94-231.43l-22.62-22.62c-12.5-12.5-32.76-12.5-45.25 0L20.69 359.44c-12.5 12.5-12.5 32.76 0 45.25l22.62 22.62c12.5 12.5 32.76 12.5 45.25 0l274.75-274.75c12.5-12.49 12.5-32.75 0-45.25"></svg:path>`,
+})
+export class FaSolidPercentageIcon {
+  readonly viewBox = input("0 0 384 512")
+  readonly width = input("0.75em")
+  readonly height = input("1em")
+}

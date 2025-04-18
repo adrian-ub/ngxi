@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cbiLucidIcon],svg[cbi-lucid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.567 12.35H2.79c-.249 0-.36-.112-.36-.352v-.536H2V12a.555.555 0 0 0 .588.538h2.979zm4.482-.888v.888H7.51c-.248 0-.359-.112-.359-.352v-.536H6.72V12a.555.555 0 0 0 .588.538h3.172v-1.076zm5.307.888h-2.927c-.249 0-.36-.112-.36-.352s.111-.35.36-.35h2.927v-.186h-3.129a.539.539 0 1 0 0 1.074h3.129zm6.056-.888a.539.539 0 1 1 0 1.074H18.2v-1.074zm.157.536c0-.242-.11-.35-.359-.35h-2.582v.7h2.582c.248 0 .359-.112.359-.352zm-5 .567h.419v-1.13h-.419z"></svg:path>`,
+})
+export class CbiLucidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

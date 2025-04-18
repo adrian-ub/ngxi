@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fxemojiWhitelargesquareIcon],svg[fxemoji-whitelargesquare-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#D9DDE8" d="M510.396 31.453c0-16.417-13.432-29.849-29.849-29.849H28.134C13.359 1.604 1.27 13.693 1.27 28.468v455.398c0 14.775 12.089 26.864 26.864 26.864h452.413c16.417 0 29.849-13.432 29.849-29.849z"></svg:path>`,
+})
+export class FxemojiWhitelargesquareIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsHtml5Icon],svg[hugeicons-html-5-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M16.769 3H8.23c-2.163 0-3.245 0-3.84.709s-.421 1.794-.077 3.965l1.375 8.661c.297 1.87.727 2.431 2.493 3.121l2.894 1.131c.704.275 1.056.413 1.424.413s.72-.138 1.424-.413l2.894-1.13c1.766-.69 2.196-1.251 2.493-3.122l1.375-8.661c.344-2.17.517-3.256-.078-3.965C20.015 3 18.933 3 16.769 3"></svg:path><svg:path d="M15.5 8h-4.973c-.908 0-1.091.189-1.01 1.093l.181 2.007c.07.762.244.914 1.01.914h3.155c.925 0 1.109.194 1.008 1.112l-.17 1.536c-.068.618-.087.642-.681.842l-1.235.415c-.323.108-.328.108-.651 0l-1.374-.462c-.37-.124-.493-.275-.56-.645"></svg:path></svg:g>`,
+})
+export class HugeiconsHtml5Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

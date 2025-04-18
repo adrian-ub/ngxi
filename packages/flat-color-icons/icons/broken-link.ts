@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatColorIconsBrokenLinkIcon],svg[flat-color-icons-broken-link-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#1976D2" d="M17.5 27c-1.1 1.2-2.7 2-4.5 2h-3c-3.3 0-6-2.7-6-6s2.7-6 6-6h3c1.8 0 3.4.8 4.5 2h4.7c-1.5-3.5-5.1-6-9.2-6h-3C4.5 13 0 17.5 0 23s4.5 10 10 10h3c4.1 0 7.6-2.5 9.2-6zM38 13h-3c-4.1 0-7.6 2.5-9.2 6h4.7c1.1-1.2 2.7-2 4.5-2h3c3.3 0 6 2.7 6 6s-2.7 6-6 6h-3c-1.8 0-3.4-.8-4.5-2h-4.7c1.5 3.5 5.1 6 9.2 6h3c5.5 0 10-4.5 10-10s-4.5-10-10-10"></svg:path><svg:path fill="#00BCD4" d="M19.5 4L16 6l6.1 8.1l1.3-.8zm9 0L32 6l-6.1 8.1l-1.3-.8zm0 40l3.5-2l-6.1-8.1l-1.3.8zm-9 0L16 42l6.1-8.1l1.3.8z"></svg:path>`,
+})
+export class FlatColorIconsBrokenLinkIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

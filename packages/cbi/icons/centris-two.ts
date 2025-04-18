@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cbiCentrisTwoIcon],svg[cbi-centris-two-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m21.915 13.992l-1.64-1.641h.7l.469-.7l-.231-4.451H2v4.217l.469 1.172h8.669v3.28c0 .469.937.937 1.874.937s1.874-.468 1.874-.937v-3.518h1.172v.938s2.109 2.343 2.577 3.046a1.22 1.22 0 0 0 .938.468a1.67 1.67 0 0 0 1.405-.7c.937-.237 1.172-1.174.937-2.111m-11.246-2.109H2.7l-.234-.7h8.2zm2.343 4.452c-.937 0-1.171-.235-1.171-.469a1.8 1.8 0 0 1 1.171-.469c.937 0 1.172.235 1.172.469c.234 0-.235.469-1.172.469m8.435-1.406a1.25 1.25 0 0 1-.7.937c-.234.234-.7.234-.937.469c-.234 0-.234 0-.469-.235c0-.234-.234-.468 0-.468a1.26 1.26 0 0 1 .7-.938c0-.234.469-.468.937-.468c.235 0 .235 0 .469.234z"></svg:path>`,
+})
+export class CbiCentrisTwoIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

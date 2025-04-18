@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamBrushFIcon],svg[jam-brush-f-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m5.36 11.116l2.68 2.681q-.75.974-1.864 1.832q-2.238 1.725-5.318.885a83 83 0 0 1 2.603-3.6q.733-.955 1.898-1.798zm1.489-1.338q.826-1.184 2.154-2.406q1.9-1.748 6.602-5.877c.834-.733 1.86-.9 2.375-.385c.514.514.348 1.542-.384 2.376q-4.135 4.71-5.878 6.601q-1.22 1.324-2.407 2.153z"></svg:path>`,
+})
+export class JamBrushFIcon {
+  readonly viewBox = input("-2.5 -3.5 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

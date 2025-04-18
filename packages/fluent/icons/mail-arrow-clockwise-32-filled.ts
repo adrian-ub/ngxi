@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMailArrowClockwise32FilledIcon],svg[fluent-mail-arrow-clockwise-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M30.5 2a1 1 0 1 0-2 0v1a7.5 7.5 0 1 0 3 6a1 1 0 1 0-2 0a5.5 5.5 0 1 1-2.337-4.5H26a1 1 0 1 0 0 2h3.5a1 1 0 0 0 1-1zM15 9a8.98 8.98 0 0 0 3.055 6.758L16 16.864L3.48 10.123l-1.476-.82A4.5 4.5 0 0 1 6.5 5h9.436A8.96 8.96 0 0 0 15 9m1.474 9.88l3.447-1.855A8.96 8.96 0 0 0 24 18a8.97 8.97 0 0 0 6-2.292V22.5a4.5 4.5 0 0 1-4.5 4.5h-19A4.5 4.5 0 0 1 2 22.5V11.588l.514.286l13.012 7.007a1 1 0 0 0 .948 0"></svg:path>`,
+})
+export class FluentMailArrowClockwise32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

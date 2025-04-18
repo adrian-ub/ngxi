@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixControlCheckboxIcon],svg[ix-control-checkbox-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m259.669 277.331l-41.621 42.666H128v106.667h106.667v-17.237l42.666-42.347v102.251h-192v-192zm19.213 2.972l30.368 29.971l-109.84 111.292l-61.046-58.049l29.401-30.919l30.678 29.17zm190.451 82.361v42.667H298.667v-42.667zm-209.664-320l-41.621 42.667H128v106.666h106.667V174.76l42.666-42.347v102.251h-192v-192zm19.213 2.972l30.368 29.97L199.41 186.9l-61.046-58.05l29.401-30.919l30.678 29.17zm190.451 82.361v42.667H298.667v-42.667z"></svg:path>`,
+})
+export class IxControlCheckboxIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

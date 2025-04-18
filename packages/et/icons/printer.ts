@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[etPrinterIcon],svg[et-printer-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M40.5 10H38V6.5c0-.827-.673-1.5-1.5-1.5h-2a.5.5 0 0 0 0 1h2a.5.5 0 0 1 .5.5V10h-4V.5a.5.5 0 0 0-.5-.5h-23a.5.5 0 0 0-.5.5V10H5V6.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 0 0-1h-2C4.673 5 4 5.673 4 6.5V10H1.5c-.827 0-1.5.673-1.5 1.5v14c0 .827.673 1.5 1.5 1.5h6a.5.5 0 0 0 0-1h-6a.5.5 0 0 1-.5-.5V22h40v3.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 0 0 1h6c.827 0 1.5-.673 1.5-1.5v-14c0-.827-.673-1.5-1.5-1.5M10 1h22v9H10zM1 21v-9.5a.5.5 0 0 1 .5-.5h39a.5.5 0 0 1 .5.5V21z"></svg:path><svg:path d="M32.5 23a.5.5 0 0 0-.5.5V31H10v-7.5a.5.5 0 0 0-1 0v8a.5.5 0 0 0 .5.5h23a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5"></svg:path><svg:circle cx="38" cy="18" r="1"></svg:circle><svg:circle cx="34" cy="18" r="1"></svg:circle></svg:g>`,
+})
+export class EtPrinterIcon {
+  readonly viewBox = input("0 0 42 32")
+  readonly width = input("1.32em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tablerPlant2OffIcon],svg[tabler-plant-2-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M2 9c0 5.523 4.477 10 10 10a9.95 9.95 0 0 0 5.418-1.593m2.137-1.855A9.96 9.96 0 0 0 22 9"></svg:path><svg:path d="M12 19c0-1.988.58-3.84 1.58-5.397m1.878-2.167A9.96 9.96 0 0 1 22 9M2 9a10 10 0 0 1 10 10m0-15a9.7 9.7 0 0 1 3 7.013"></svg:path><svg:path d="M9.01 11.5a9.7 9.7 0 0 1 .163-2.318m1.082-2.942A9.7 9.7 0 0 1 12 4M3 3l18 18"></svg:path></svg:g>`,
+})
+export class TablerPlant2OffIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedCtcIcon],svg[token-branded-ctc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#fff"><svg:path d="m19.2 8.647l-2.02.62a6.14 6.14 0 0 0-5.72-3.45c-4.342 0-6.21 3.708-6.21 6.183c0 1.952 1.384 6.193 6.188 6.193c3.594 0 5.501-2.886 5.743-3.398l2.132.507c-.197.77-2.616 5.13-7.853 5.13C6.791 20.432 3 16.658 3 12s3.791-8.432 8.46-8.432c4.675 0 7.279 3.6 7.74 5.08"></svg:path><svg:path d="M12.5 10.88H21v2.25h-8.5z"></svg:path><svg:path d="M11.437 13.693a1.688 1.688 0 1 0 0-3.375a1.688 1.688 0 0 0 0 3.375"></svg:path></svg:g>`,
+})
+export class TokenBrandedCtcIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

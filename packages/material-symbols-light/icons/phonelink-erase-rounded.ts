@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightPhonelinkEraseRoundedIcon],svg[material-symbols-light-phonelink-erase-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m16.5 12.708l-2.246 2.246q-.14.14-.344.15t-.364-.15t-.16-.354t.16-.354L15.792 12l-2.246-2.246q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16l2.246 2.246l2.246-2.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354L17.208 12l2.246 2.246q.14.14.15.344t-.15.364t-.354.16t-.354-.16zM6.616 22q-.672 0-1.144-.472T5 20.385V3.615q0-.67.472-1.143Q5.944 2 6.616 2h8.769q.67 0 1.143.472q.472.472.472 1.144v2.807q0 .214-.143.357t-.357.143t-.357-.143T16 6.423V5.5H6v13h10v-.923q0-.214.143-.357t.357-.143t.357.143t.143.357v2.807q0 .672-.472 1.144T15.385 22z"></svg:path>`,
+})
+export class MaterialSymbolsLightPhonelinkEraseRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

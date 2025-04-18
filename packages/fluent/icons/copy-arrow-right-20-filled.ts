@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCopyArrowRight20FilledIcon],svg[fluent-copy-arrow-right-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v5.207A5.5 5.5 0 0 0 9.207 16H8a2 2 0 0 1-2-2zm4.257 14a5.5 5.5 0 0 1-.657-1H7.5A2.5 2.5 0 0 1 5 14.5V4.268A2 2 0 0 0 4 6v8.5A3.5 3.5 0 0 0 7.5 18zm4.243-8a4.5 4.5 0 1 1 0 9a4.5 4.5 0 0 1 0-9m2.353 4.854l.003-.003a.5.5 0 0 0 .144-.348v-.006a.5.5 0 0 0-.146-.35l-2-2a.5.5 0 0 0-.708.707L15.293 14H12.5a.5.5 0 0 0 0 1h2.793l-1.147 1.146a.5.5 0 0 0 .708.708z"></svg:path>`,
+})
+export class FluentCopyArrowRight20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

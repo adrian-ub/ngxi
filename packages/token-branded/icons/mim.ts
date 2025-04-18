@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedMimIcon],svg[token-branded-mim-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#5552FD" d="M9.354 3.264h5.294v1.588H9.354z"></svg:path><svg:path fill="#9695F8" d="M9.354 17.56h5.294v1.588H9.354z"></svg:path><svg:path fill="#5552FD" d="M7.764 4.854h1.588v1.588H7.764zM6.176 6.442h1.588V8.03H6.176zm3.176 3.176h1.588v1.588H9.352zm3.706 0h1.588v1.588h-1.588zM4.588 8.03h1.588v1.588H4.587z"></svg:path><svg:path fill="#9695F8" d="M6.176 14.382h1.588v1.588H6.176z"></svg:path><svg:path fill="#5552FD" d="M6.176 15.972h1.588v1.588H6.176z"></svg:path><svg:path fill="#9695F8" d="M7.765 15.972h1.588v1.588H7.765z"></svg:path><svg:path fill="#5552FD" d="M7.764 17.558h1.588v1.588H7.764zm-3.177-3.176h1.589v1.588H4.587z"></svg:path><svg:path fill="#9695F8" d="M17.824 14.382h-1.589v1.588h1.589z"></svg:path><svg:path fill="#5552FD" d="M17.824 15.972h-1.589v1.588h1.589z"></svg:path><svg:path fill="#9695F8" d="M16.235 15.972h-1.588v1.588h1.588z"></svg:path><svg:path fill="#5552FD" d="M16.235 17.56h-1.588v1.588h1.588zm3.177-3.177h-1.588v1.588h1.588zM7.765 8.03h1.588v7.941H7.765zm6.882 0h1.588v7.941h-1.588zm3.176 0h1.589v1.588h-1.588zm-3.176-3.176h1.588v1.588h-1.588zm1.588 1.588h1.588V8.03h-1.588z"></svg:path><svg:path fill="#9695F8" d="M9.354 4.854h5.294v1.588H9.354z"></svg:path><svg:path fill="#5552FD" d="M9.354 19.148h5.294v1.588H9.354z"></svg:path><svg:path fill="#9695F8" d="M7.765 6.441h1.588V8.03H7.765z"></svg:path><svg:path fill="#FED955" d="M6.176 9.618h1.588v4.765H6.176z"></svg:path><svg:path fill="#9695F8" d="M6.176 8.03h1.588v1.588H6.176zM4.587 9.617h1.589v4.764H4.587zm14.824 0h-1.588v4.764h1.588z"></svg:path><svg:path fill="#5552FD" d="M3 9.618h1.588v4.765H3zm18 0h-1.588v4.765H21z"></svg:path><svg:path fill="#FED955" d="M16.235 9.618h1.588v4.765h-1.588zm-5.294 0h2.118v1.588H10.94z"></svg:path><svg:path fill="#9695F8" d="M16.235 8.03h1.588v1.588h-1.588zm-1.588-1.59h1.588v1.59h-1.588z"></svg:path><svg:path fill="#FED955" d="M9.354 6.441h5.294V8.03H9.354zm0 1.589h5.294v1.588H9.354zm5.294 3.176v6.353H9.354v-6.353z"></svg:path><svg:path fill="#5552FD" d="M10.94 11.206h2.119v1.588H10.94z"></svg:path></svg:g>`,
+})
+export class TokenBrandedMimIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsEIcon],svg[file-icons-e-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M53.962 65.59v370.93c0 62.742-40.94 76.356-40.94 76.356h392.435V387.983c0 25.796-36.225 60.728-68.07 60.728H185.86c-30.38 0-33.147-27.582-33.147-27.582V288.542h118.382c36.247 0 37.882 30.78 37.882 30.78V211.593s-8.638 13.022-36.147 13.022H152.712V65.59h149.16c71.883 0 71.03 56.786 71.03 56.786V.875H0s53.962 4.34 53.962 64.715"></svg:path>`,
+})
+export class FileIconsEIcon {
+  readonly viewBox = input("0 0 406 512")
+  readonly width = input("0.8em")
+  readonly height = input("1em")
+}

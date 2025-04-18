@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsKrIcon],svg[circle-flags-kr-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsKr0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsKr0)"><svg:path fill="#eee" d="M0 0h512v512H0Z"></svg:path><svg:path fill="#333" d="m350 335l24-24l16 16l-24 23zm-39 39l24-24l15 16l-23 24zm87 8l23-24l16 16l-24 24zm-40 39l24-23l16 15l-24 24Zm16-63l24-23l15 15l-23 24zm-39 40l23-24l16 16l-24 23zm63-221l-63-63l15-15l64 63zm-63-15l-24-24l16-16l23 24zm39 39l-24-24l16-15l24 23zm8-87l-24-23l16-16l24 24Zm39 40l-23-24l15-16l24 24ZM91 358l63 63l-16 16l-63-63zm63 16l23 24l-15 15l-24-23zm-40-39l24 23l-16 16l-23-24zm24-24l63 63l-16 16l-63-63zm16-220l-63 63l-16-16l63-63zm23 23l-63 63l-15-16l63-63zm24 24l-63 63l-16-16l63-63z"></svg:path><svg:path fill="#d80027" d="M319 319L193 193a89 89 0 1 1 126 126"></svg:path><svg:path fill="#0052b4" d="M319 319a89 89 0 1 1-126-126z"></svg:path><svg:circle cx="224.5" cy="224.5" r="44.5" fill="#d80027"></svg:circle><svg:circle cx="287.5" cy="287.5" r="44.5" fill="#0052b4"></svg:circle></svg:g>`,
+})
+export class CircleFlagsKrIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

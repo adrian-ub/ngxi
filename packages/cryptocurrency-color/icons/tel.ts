@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cryptocurrencyColorTelIcon],svg[cryptocurrency-color-tel-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" fill-rule="evenodd"><svg:circle cx="16" cy="16" r="16" fill="#14c8ff"></svg:circle><svg:path fill="#fff" fill-rule="nonzero" d="M25.08 11.478c.633.513 1.032 1.574.892 2.353l-1.36 7.524c-.142.784-.892 1.647-1.664 1.918l-7.419 2.605c-.772.271-1.92.075-2.552-.438l-6.058-4.917c-.633-.513-1.033-1.569-.89-2.353l1.36-7.524C7.53 9.862 8.28 9 9.053 8.728l7.42-2.606c.773-.272 1.92-.074 2.553.438zm-6.311 3.378l.302-1.53l-2.832.005l.4-2.016h-.915a5.76 5.76 0 0 1-2.748 2.225l-.257 1.319h1.238s-.419 1.894-.56 2.593c-.35 1.78.53 3.042 1.882 3.042h2.288l.4-1.69h-1.914c-.85 0-.805-.465-.64-1.29l.527-2.662z"></svg:path></svg:g>`,
+})
+export class CryptocurrencyColorTelIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

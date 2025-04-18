@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsEduvulcanIcon],svg[arcticons-eduvulcan-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M9.5 5.5h29c2.216 0 4 1.784 4 4v29c0 2.216-1.784 4-4 4h-29c-2.216 0-4-1.784-4-4v-29c0-2.216 1.784-4 4-4"></svg:path><svg:path d="M28.036 15.379v7.535c0 2.512 2.184 4.567 4.852 4.567h0c2.67 0 4.853-2.055 4.853-4.567v-7.536m-.001 7.765v4.567m-18.52-5.273c-.727 1.37-2.425 2.283-4.124 2.283h0c-2.669 0-4.852-2.055-4.852-4.567v-2.969c0-2.512 2.184-4.567 4.852-4.567h0c2.67 0 4.853 2.055 4.853 4.567v1.599h-9.705"></svg:path><svg:path d="M25.502 27.634c0-2.512-2.183-4.568-4.852-4.568h0c-2.669 0-4.852 2.056-4.852 4.568v2.968c0 2.512 2.183 4.567 4.852 4.567h0c2.669 0 4.852-2.055 4.852-4.567m0 4.796V17.129"></svg:path></svg:g>`,
+})
+export class ArcticonsEduvulcanIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

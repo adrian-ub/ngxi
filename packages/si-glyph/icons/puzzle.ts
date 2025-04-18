@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphPuzzleIcon],svg[si-glyph-puzzle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m14.992 6.567l-.01-2.817c0-.911-.799-1.724-1.709-1.724h-3.185C10.092.698 9.006.075 7.668.075S5.249.698 5.249 1.992c0 .012-2.536.034-2.536.034c-.908 0-1.681.813-1.681 1.724l.035 2.711c1.322.016 2.39 1.056 2.39 2.341c0 1.284-1.067 2.323-2.39 2.34v3.208c0 .911.736 1.65 1.645 1.65h10.561c.909 0 1.745-.739 1.745-1.65l-.011-3.116c1.162-.139 1.969-1.125 1.969-2.333c0-1.215-.813-2.202-1.984-2.334"></svg:path>`,
+})
+export class SiGlyphPuzzleIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}

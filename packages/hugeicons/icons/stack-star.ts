@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsStackStarIcon],svg[hugeicons-stack-star-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M16.828 7.062C18 8.125 18 9.835 18 13.254v1.492c0 3.42 0 5.13-1.172 6.192S13.771 22 10 22s-5.657 0-6.828-1.062S2 18.166 2 14.746v-1.492c0-3.42 0-5.13 1.172-6.192S6.229 6 10 6s5.657 0 6.828 1.062"></svg:path><svg:path d="M6.066 6c.107-1.388.385-2.285 1.105-2.938C8.342 2 10.228 2 13.999 2s5.657 0 6.829 1.062s1.171 2.773 1.171 6.192v1.492c0 3.42 0 5.13-1.171 6.192c-.654.592-1.529.854-2.829.97"></svg:path><svg:path d="m10.691 10.578l.704 1.42a.87.87 0 0 0 .568.423l1.276.213c.816.137 1.008.734.42 1.323l-.992 1a.88.88 0 0 0-.208.73l.284 1.238c.224.98-.292 1.359-1.152.847l-1.196-.714a.86.86 0 0 0-.792 0l-1.196.714c-.856.512-1.376.129-1.152-.847l.284-1.238a.88.88 0 0 0-.208-.73l-.991-1c-.584-.589-.396-1.186.42-1.323l1.275-.213a.87.87 0 0 0 .564-.424l.704-1.42c.384-.77 1.008-.77 1.388 0"></svg:path></svg:g>`,
+})
+export class HugeiconsStackStarIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

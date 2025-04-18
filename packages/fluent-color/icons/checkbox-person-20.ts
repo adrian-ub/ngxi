@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorCheckboxPerson20Icon],svg[fluent-color-checkbox-person-20-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorCheckboxPerson200)" fill-rule="evenodd" d="M3 6.25A3.25 3.25 0 0 1 6.25 3h7.5A3.25 3.25 0 0 1 17 6.25v7.5A3.25 3.25 0 0 1 13.75 17h-7.5A3.25 3.25 0 0 1 3 13.75z" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorCheckboxPerson205)" fill-rule="evenodd" d="M3 6.25A3.25 3.25 0 0 1 6.25 3h7.5A3.25 3.25 0 0 1 17 6.25v7.5A3.25 3.25 0 0 1 13.75 17h-7.5A3.25 3.25 0 0 1 3 13.75z" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorCheckboxPerson206)" fill-rule="evenodd" d="M3 6.25A3.25 3.25 0 0 1 6.25 3h7.5A3.25 3.25 0 0 1 17 6.25v7.5A3.25 3.25 0 0 1 13.75 17h-7.5A3.25 3.25 0 0 1 3 13.75z" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorCheckboxPerson201)" d="M13.854 7.854a.5.5 0 0 0-.708-.708L8.5 11.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0z"></svg:path><svg:path fill="url(#fluentColorCheckboxPerson202)" d="M19 16.5c0 1.245-1 2.5-3.5 2.5S12 17.75 12 16.5a1.5 1.5 0 0 1 1.5-1.5h4a1.5 1.5 0 0 1 1.5 1.5"></svg:path><svg:path fill="url(#fluentColorCheckboxPerson203)" d="M19 16.5c0 1.245-1 2.5-3.5 2.5S12 17.75 12 16.5a1.5 1.5 0 0 1 1.5-1.5h4a1.5 1.5 0 0 1 1.5 1.5"></svg:path><svg:path fill="url(#fluentColorCheckboxPerson204)" d="M17.5 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path><svg:defs><svg:lineargradient id="fluentColorCheckboxPerson200" x1="3.5" x2="13.162" y1="5.625" y2="15.663" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#36DFF1"></svg:stop><svg:stop offset="1" stop-color="#2764E7"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorCheckboxPerson201" x1="7.538" x2="11.07" y1="7.462" y2="18.869" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#fff"></svg:stop><svg:stop offset="1" stop-color="#B3E0FF"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorCheckboxPerson202" x1="13.665" x2="15.102" y1="15.532" y2="19.549" gradientUnits="userSpaceOnUse"><svg:stop offset=".125" stop-color="#BD96FF"></svg:stop><svg:stop offset="1" stop-color="#9C6CFE"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorCheckboxPerson203" x1="15.5" x2="17.527" y1="14.524" y2="21.15" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#885EDB" stop-opacity="0"></svg:stop><svg:stop offset="1" stop-color="#E362F8"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorCheckboxPerson204" x1="14.451" x2="16.49" y1="10.532" y2="13.787" gradientUnits="userSpaceOnUse"><svg:stop offset=".125" stop-color="#BD96FF"></svg:stop><svg:stop offset="1" stop-color="#9C6CFE"></svg:stop></svg:lineargradient><svg:radialgradient id="fluentColorCheckboxPerson205" cx="0" cy="0" r="1" gradientTransform="matrix(6.6292 0 0 4.5921 15.53 16.25)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#4A43CB"></svg:stop><svg:stop offset=".914" stop-color="#4A43CB" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorCheckboxPerson206" cx="0" cy="0" r="1" gradientTransform="rotate(90 1.318 14.128)scale(3.24526)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#4A43CB"></svg:stop><svg:stop offset="1" stop-color="#4A43CB" stop-opacity="0"></svg:stop></svg:radialgradient></svg:defs></svg:g>`,
+})
+export class FluentColorCheckboxPerson20Icon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

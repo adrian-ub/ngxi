@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsNzIcon],svg[circle-flags-nz-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsNz0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsNz0)"><svg:path fill="#0052b4" d="M256 0h256v512H0V256Z"></svg:path><svg:path fill="#eee" d="M0 0v32l32 32L0 96v160h32l32-32l32 32h32v-83l83 83h45l-8-16l8-15v-14l-83-83h83V96l-32-32l32-32V0H96L64 32L32 0Zm382 92l-11 35h-37l30 21l-12 35l30-22l30 22l-12-35l30-21h-37zm61 72l-11 35h-37l30 21l-11 35l29-21l30 21l-12-35l30-21h-37Zm-123 10l-11 35h-37l30 22l-11 35l29-22l30 22l-11-35l29-22h-36zm59 130l-11 35h-37l30 21l-11 35l29-21l30 21l-11-35l29-21h-36z"></svg:path><svg:path fill="#d80027" d="M32 0v32H0v64h32v160h64V96h160V32H96V0Zm96 128l128 128v-31l-97-97zm251 201l-5 18h-19l15 10l-6 18l15-11l15 11l-5-18l14-10h-18Zm-59-129l-5 17h-19l15 11l-6 17l15-11l15 11l-6-17l15-11h-18zm123-11l-6 18h-18l15 11l-6 17l15-11l15 11l-6-17l15-11h-18zm-61-72l-6 17h-18l15 11l-6 17l15-10l15 10l-6-17l15-11h-18z"></svg:path></svg:g>`,
+})
+export class CircleFlagsNzIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

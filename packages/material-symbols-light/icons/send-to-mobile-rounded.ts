@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightSendToMobileRoundedIcon],svg[material-symbols-light-send-to-mobile-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.38 12.5H13q-.213 0-.356-.144t-.144-.357t.144-.356T13 11.5h5.38l-1.74-1.746q-.14-.14-.15-.341q-.01-.202.16-.371q.156-.155.35-.155t.354.16l2.388 2.388q.243.242.243.565t-.243.566l-2.388 2.388q-.14.14-.341.153t-.371-.157q-.155-.156-.158-.347t.157-.357zM7.617 22q-.667 0-1.141-.475T6 20.386V3.615q0-.666.475-1.14T7.615 2h8.77q.666 0 1.14.475T18 3.614v2.808q0 .213-.144.356t-.357.144t-.356-.144T17 6.423V5.5H7v13h10v-.923q0-.213.144-.356t.357-.144t.356.144t.143.356v2.807q0 .667-.475 1.141t-1.14.475z"></svg:path>`,
+})
+export class MaterialSymbolsLightSendToMobileRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

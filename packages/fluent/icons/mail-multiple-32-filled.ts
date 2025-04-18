@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMailMultiple32FilledIcon],svg[fluent-mail-multiple-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.5 5a4.5 4.5 0 0 0-4.358 3.376l11.357 6.473l11.354-6.496A4.5 4.5 0 0 0 21.5 5zM3 19.5v-8.903l11.005 6.272a1 1 0 0 0 .992 0L26 10.572V19.5a4.5 4.5 0 0 1-4.5 4.5h-14A4.5 4.5 0 0 1 3 19.5m8 8a4.5 4.5 0 0 1-3.742-2H22a5.5 5.5 0 0 0 5.5-5.5V9.258c1.206.807 2 2.182 2 3.742v7a7.5 7.5 0 0 1-7.5 7.5z"></svg:path>`,
+})
+export class FluentMailMultiple32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[solarUfo3BoldDuotoneIcon],svg[solar-ufo-3-bold-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10.826 4.503C8.622 3.378 6.706 3.151 5.76 4.1c-1.63 1.63.214 6.117 4.12 10.022c3.905 3.905 8.392 5.75 10.022 4.12c.948-.948.72-2.863-.404-5.067c-.203.035-.427.04-.667-.004c-.945-.17-2.435-.896-4.77-3.23S11 6.115 10.83 5.17a1.9 1.9 0 0 1-.004-.667m1.88 8.204a1 1 0 1 1-1.413-1.414a1 1 0 0 1 1.414 1.414M8.465 8.464A1 1 0 1 0 9.878 7.05a1 1 0 0 0-1.414 1.414m8.486 7.071a1 1 0 1 1-1.415-1.414a1 1 0 0 1 1.415 1.414" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M8.287 16.773a.75.75 0 0 0-1.06-1.06l-4.122 4.12a.75.75 0 0 0 1.061 1.061z"></svg:path><svg:path fill="currentColor" d="M12.302 4.79a4.73 4.73 0 0 1 5.87.655l.384.383a4.73 4.73 0 0 1 .654 5.87a.4.4 0 0 1-.115-.004c-.496-.09-1.718-.56-3.974-2.815c-2.255-2.256-2.725-3.477-2.815-3.974a.4.4 0 0 1-.004-.115m-7.501 6.979a.75.75 0 0 0-1.16-.952l-2.22 2.707a.75.75 0 1 0 1.159.952zm8.486 7.534a.75.75 0 0 1-.104 1.055l-2.707 2.221a.75.75 0 0 1-.952-1.16l2.707-2.22a.75.75 0 0 1 1.056.103" opacity=".5"></svg:path>`,
+})
+export class SolarUfo3BoldDuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

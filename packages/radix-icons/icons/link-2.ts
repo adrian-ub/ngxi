@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[radixIconsLink2Icon],svg[radix-icons-link-2-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8.512 3.005c.676-.46 1.531-.468 2.167-.05c.144.094.298.244.71.656s.562.566.657.71c.417.636.408 1.49-.051 2.167c-.105.155-.267.32-.694.747l-.62.619a.5.5 0 0 0 .708.707l.619-.619l.043-.043c.37-.37.606-.606.771-.849c.675-.994.71-2.287.06-3.278c-.159-.241-.39-.472-.741-.823l-.045-.045l-.044-.045c-.352-.351-.583-.582-.824-.74c-.99-.65-2.284-.616-3.278.06c-.243.164-.48.4-.85.77l-.042.043l-.619.62a.5.5 0 1 0 .707.706l.62-.618c.426-.427.592-.59.746-.695M4.318 7.147a.5.5 0 0 0-.707-.707l-.619.618l-.043.043c-.37.37-.606.606-.771.85c-.675.993-.71 2.287-.06 3.277c.159.242.39.473.741.824l.045.045l.044.044c.352.351.583.583.824.741c.99.65 2.284.616 3.278-.06c.243-.165.48-.401.849-.771l.043-.043l.619-.619a.5.5 0 1 0-.708-.707l-.618.619c-.427.427-.593.59-.747.694c-.676.46-1.532.469-2.167.051c-.144-.094-.298-.245-.71-.657s-.562-.566-.657-.71c-.417-.635-.408-1.49.051-2.167c.105-.154.267-.32.694-.747zm5.304-1.061a.5.5 0 0 0-.707-.708L5.379 8.914a.5.5 0 1 0 .707.707z" clip-rule="evenodd"></svg:path>`,
 })
 export class RadixIconsLink2Icon {
-  readonly viewBox = input('0 0 15 15')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

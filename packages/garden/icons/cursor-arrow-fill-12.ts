@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenCursorArrowFill12Icon],svg[garden-cursor-arrow-fill-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m7.587 8.294l-1.147 3.06c-.314.836-1.482.874-1.849.06l-4.5-10C-.286.574.575-.286 1.414.09l10 4.5c.814.367.776 1.535-.06 1.849l-3.06 1.147l3.563 3.563a.5.5 0 1 1-.707.707z"></svg:path>`,
+})
+export class GardenCursorArrowFill12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

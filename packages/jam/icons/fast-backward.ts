@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamFastBackwardIcon],svg[jam-fast-backward-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 5.915L10.51.69a1.966 1.966 0 0 1 2.814-.182c.43.386.676.942.676 1.526v3.88L18.51.69a1.966 1.966 0 0 1 2.814-.182c.43.386.676.942.676 1.526v13.932C22 17.089 21.107 18 20.006 18a1.98 1.98 0 0 1-1.496-.69L14 12.085v3.88C14 17.09 13.107 18 12.006 18a1.98 1.98 0 0 1-1.496-.69L6 12.085V16a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2zm0 3.092l6.006 6.959V2.034L6 8.993zm8 0l6.006 6.959V2.034L14 8.993zM2 2v14h2V2z"></svg:path>`,
+})
+export class JamFastBackwardIcon {
+  readonly viewBox = input("-1 -3 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[makiCastleJpIcon],svg[maki-castle-jp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.5 12.75a1 1 0 0 1-1-1v-4.5H10a1 1 0 0 1-1-1v-2H6v2a1 1 0 0 1-1 1H3.5v4.5a1 1 0 0 1-2 0v-5.5a1 1 0 0 1 1-1H4v-2a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v2h1.5a1 1 0 0 1 1 1v5.5a1 1 0 0 1-1 1"></svg:path>`,
+})
+export class MakiCastleJpIcon {
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

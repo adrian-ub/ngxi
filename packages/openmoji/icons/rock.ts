@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiRockIcon],svg[openmoji-rock-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#d0cfce" d="M55.785 34.99a1 1 0 0 1 .106 1.041l-3.895 8.063a1 1 0 0 1-.706.546l-10.798 2.138a1 1 0 0 1-.794-.18L16.214 29.02a1 1 0 0 1-.176-1.432l2.438-2.997a1 1 0 0 1 .326-.262l18.305-9.222a1 1 0 0 1 .658-.085l3.819.807a1 1 0 0 1 .637.442l2.673 4.144l1.62 2.49Z"></svg:path><svg:path fill="#3f3f3f" d="M26.692 56h20.096l-6.471-10.181l-23.374-17.6l-1.129 4.827z"></svg:path><svg:path fill="#9b9b9a" d="m54.78 36.031l1.348 11.513L54.469 56h-7.681l-6.471-10.181l10.622-1.879z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m45.797 23.608l9.193 11.989l1.138 11.642L54.469 56H26.692L16 32.86l.813-4.641l2.439-2.997L37.558 16l3.819.807l2.643 4.11l-5.012 3.353"></svg:path><svg:path d="m47.359 56l-7.061-10.203l-23.485-17.578m38.177 7.378l-3.895 8.062l-10.797 2.138"></svg:path></svg:g>`,
+})
+export class OpenmojiRockIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

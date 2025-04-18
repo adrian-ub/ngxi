@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mingcuteMastercardFillIcon],svg[mingcute-mastercard-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M8.5 6a6.47 6.47 0 0 1 3.458.995l-.595.491A6.49 6.49 0 0 0 9 12.5a6.49 6.49 0 0 0 2.363 5.014l.595.49A6.5 6.5 0 1 1 8.5 6m7 0a6.5 6.5 0 1 1-3.204 12.157l-.254-.152l.595-.491A6.49 6.49 0 0 0 15 12.5c0-1.927-.84-3.659-2.17-4.848l-.193-.166l-.595-.491A6.47 6.47 0 0 1 15.5 6M12 9.671a4.48 4.48 0 0 1 1 2.829a4.48 4.48 0 0 1-1 2.829a4.48 4.48 0 0 1-1-2.829a4.48 4.48 0 0 1 1-2.829"></svg:path></svg:g>`,
+})
+export class MingcuteMastercardFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

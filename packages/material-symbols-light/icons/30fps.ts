@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLight30fpsIcon],svg[material-symbols-light-30fps-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.885 18.116v-1.231h5.384q.27 0 .442-.174t.173-.442v-3.038q0-.27-.172-.442t-.443-.173H2.885v-1.231h5.384q.27 0 .442-.173t.173-.443V7.731q0-.27-.172-.442t-.443-.173H2.885V5.885h5.384q.789 0 1.317.529q.53.528.53 1.317v3.054q0 .47-.334.843q-.334.372-.748.372q.414 0 .748.372q.333.372.333.844v3.053q0 .789-.529 1.318q-.528.529-1.317.529zm11.846-1.231h4.538q.27 0 .443-.174t.173-.442V7.731q0-.27-.173-.442t-.443-.173h-4.538q-.27 0-.442.173t-.173.442v8.538q0 .27.173.443t.442.173m0 1.23q-.789 0-1.317-.528q-.53-.53-.53-1.318V7.731q0-.789.53-1.317q.528-.53 1.317-.53h4.538q.789 0 1.318.53q.529.528.529 1.317v8.538q0 .789-.53 1.318q-.528.529-1.317.529z"></svg:path>`,
+})
+export class MaterialSymbolsLight30fpsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

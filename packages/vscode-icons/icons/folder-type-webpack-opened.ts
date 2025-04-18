@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFolderTypeWebpackOpenedIcon],svg[vscode-icons-folder-type-webpack-opened-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:radialgradient id="vscodeIconsFolderTypeWebpackOpened0" cx="-100.943" cy="-69.047" r=".004" gradientTransform="matrix(2074.534 0 0 -2395.464 209432.559 -165379.819)" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#93b4e7"></svg:stop><svg:stop offset=".593" stop-color="#b9d1f8"></svg:stop><svg:stop offset="1" stop-color="#9cb6e0"></svg:stop></svg:radialgradient></svg:defs><svg:path fill="#8da2cc" d="M27.4 5.5h-9.2l-2.1 4.2H4.3v16.8h25.2v-21Zm0 18.7H6.6V11.8h20.8Zm0-14.5h-8.2l1-2.1h7.1v2.1Z"></svg:path><svg:path fill="#8da2cc" d="M25.7 13.7H.5l3.8 12.8h25.2z"></svg:path><svg:path fill="url(#vscodeIconsFolderTypeWebpackOpened0)" d="m21.9 10.032l-9.079 5.242v10.484L21.9 31l9.079-5.242V15.274Z"></svg:path><svg:path fill="#6f95db" d="m21.9 15.35l-4.5 2.6v5.2l4.5 2.6l4.5-2.6v-5.2Z"></svg:path><svg:path fill="#fff" fill-opacity=".1" d="m21.9 10l-9.1 5.278l9.1 4.954L31 15.31Zm0 10.911l-9.1 4.824l9.1 5.245l9.066-5.28z"></svg:path>`,
+})
+export class VscodeIconsFolderTypeWebpackOpenedIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

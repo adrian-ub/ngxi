@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeClangdIcon],svg[material-icon-theme-clangd-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#4caf50" d="M10 4H7.5C4.75 4 2 5.379 2 9.5c0 4.12 2.75 5.51 5.53 5.5H10v-3H7.667C7.665 11.973 5 12.289 5 9.478C5 6.672 7.395 7.028 7.52 7H10z"></svg:path><svg:path fill="#2979ff" d="M10 1v6H7.52C7.452 7.03 5 6.659 5 9.478C5 12.295 7.618 11.97 7.668 12H13V1h-2.725z"></svg:path>`,
+})
+export class MaterialIconThemeClangdIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

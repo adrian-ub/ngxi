@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iwwaGoodOIcon],svg[iwwa-good-o-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.001 2.683C10.452 2.683 2.684 10.451 2.684 20s7.769 17.317 17.317 17.317S37.316 29.548 37.316 20S29.549 2.683 20.001 2.683m0 33.134c-8.722 0-15.817-7.096-15.817-15.817S11.279 4.183 20.001 4.183c8.721 0 15.815 7.096 15.815 15.817s-7.094 15.817-15.815 15.817"></svg:path><svg:path fill="currentColor" d="m26.472 23.655l-.568-.356a.36.36 0 0 0-.283-.048a.37.37 0 0 0-.233.166a6.31 6.31 0 0 1-5.374 2.979a6.3 6.3 0 0 1-5.394-3.01a.376.376 0 0 0-.516-.122l-.572.353a.375.375 0 0 0-.122.516a7.72 7.72 0 0 0 6.604 3.681a7.72 7.72 0 0 0 6.577-3.642a.375.375 0 0 0-.119-.517"></svg:path><svg:circle cx="15.265" cy="15.516" r="1.044" fill="currentColor"></svg:circle><svg:circle cx="24.403" cy="15.516" r="1.044" fill="currentColor"></svg:circle>`,
+})
+export class IwwaGoodOIcon {
+  readonly viewBox = input("0 0 40 40")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

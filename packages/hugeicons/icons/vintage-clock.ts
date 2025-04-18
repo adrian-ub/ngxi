@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsVintageClockIcon],svg[hugeicons-vintage-clock-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M4 6c.821 0 1.42-.472 1.739-1.046c.302-.544.453-.816.57-.885C6.428 4 6.619 4 7 4h.571c.281 0 .422 0 .514-.038c.092-.039.36-.308.894-.846C9.714 2.376 11.254 2 12 2s2.286.375 3.02 1.116c.535.538.803.807.895.846s.233.038.514.038H17c.382 0 .573 0 .69.07c.118.068.269.34.571.884C18.58 5.528 19.18 6 20 6m0 12c-.821 0-1.42.472-1.739 1.046c-.302.544-.453.816-.57.885c-.119.069-.31.069-.691.069h-.571c-.281 0-.422 0-.514.038c-.092.039-.36.308-.894.846C14.286 21.624 12.746 22 12 22s-2.286-.375-3.02-1.116c-.535-.538-.803-.807-.895-.846S7.852 20 7.571 20H7c-.382 0-.573 0-.69-.07c-.118-.068-.269-.34-.571-.884C5.42 18.472 4.82 18 4 18"></svg:path><svg:path d="M16.004 10a4 4 0 1 1-8 0a4 4 0 0 1 8 0m3-4v12m-14-12v12m7-8l1-1m-1 5v4m-1 0h2"></svg:path></svg:g>`,
+})
+export class HugeiconsVintageClockIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

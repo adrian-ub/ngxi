@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsDovecotIcon],svg[simple-icons-dovecot-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M8.784 8.39a.94.94 0 0 0-.564.192l-8.102 6.19a.313.313 0 0 0 0 .49l.339.253c.153.12.368.12.523 0l4.018-3.061a.62.62 0 0 1 .75 0l2.659 2.033a.62.62 0 0 0 .749 0l3.515-2.683a.422.422 0 0 0 0-.682l-3.322-2.54a.93.93 0 0 0-.565-.192m9.298 0a.92.92 0 0 0-.563.192l-8.102 6.196a.307.307 0 0 0 0 .489l.335.255a.44.44 0 0 0 .527 0l4.635-3.533a.624.624 0 0 1 .748 0l4.527 3.452a.62.62 0 0 0 .75 0l2.889-2.213a.43.43 0 0 0 0-.688l-5.181-3.958a.93.93 0 0 0-.565-.192"></svg:path>`,
 })
 export class SimpleIconsDovecotIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

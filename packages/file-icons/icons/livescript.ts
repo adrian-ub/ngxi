@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsLivescriptIcon],svg[file-icons-livescript-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M512 397.539H141.066l35.59-35.591h289.033v-31.454H208.11l34.966-34.966h222.613v-31.454h-191.16l29.728-29.728h161.431v-31.454H335.711l29.774-29.774h100.202v-31.454h-68.749l29.831-29.831h38.918V80.379h-31.454V48.925h-31.454v42.419l-29.826 29.826V48.924h-31.454v103.699l-29.774 29.774V48.923h-31.454v164.928l-29.728 29.728V48.923h-31.454v226.11l-34.971 34.971V48.923h-31.454v292.535l-31.219 31.219V-.003H58.538v397.539H-.003v62.908h58.541v51.553h62.907v-51.553h390.551z"></svg:path>`,
+})
+export class FileIconsLivescriptIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

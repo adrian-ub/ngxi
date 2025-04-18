@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[faQuestionCircleOIcon],svg[fa-question-circle-o-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M880 1072v160q0 14-9 23t-23 9H688q-14 0-23-9t-9-23v-160q0-14 9-23t23-9h160q14 0 23 9t9 23m256-496q0 50-15 90t-45.5 69t-52 44t-59.5 36q-32 18-46.5 28t-26 24t-11.5 29v32q0 14-9 23t-23 9H688q-14 0-23-9t-9-23v-68q0-35 10.5-64.5t24-47.5t39-35.5t41-25.5t44.5-21q53-25 75-43t22-49q0-42-43.5-71.5T773 473q-56 0-95 27q-29 20-80 83q-9 12-25 12q-11 0-19-6l-108-82q-10-7-12-20t5-23q122-192 349-192q129 0 238.5 89.5T1136 576M768 128q-130 0-248.5 51t-204 136.5t-136.5 204T128 768t51 248.5t136.5 204t204 136.5t248.5 51t248.5-51t204-136.5t136.5-204t51-248.5t-51-248.5t-136.5-204t-204-136.5T768 128m768 640q0 209-103 385.5T1153.5 1433T768 1536t-385.5-103T103 1153.5T0 768t103-385.5T382.5 103T768 0t385.5 103T1433 382.5T1536 768"></svg:path>`,
+})
+export class FaQuestionCircleOIcon {
+  readonly viewBox = input("0 0 1536 1536")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

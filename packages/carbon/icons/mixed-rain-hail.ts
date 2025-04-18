@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonMixedRainHailIcon],svg[carbon-mixed-rain-hail-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="24.5" cy="25.5" r="1.5" fill="currentColor"></svg:circle><svg:circle cx="21.5" cy="29.5" r="1.5" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="m15.868 30.496l-1.736-.992L17.276 24h-5.999l4.855-8.496l1.736.992L14.723 22h6.001z"></svg:path><svg:path fill="currentColor" d="M9 32a1 1 0 0 1-.894-1.447l2-4a1 1 0 1 1 1.788.894l-2 4A1 1 0 0 1 9 32M24.8 9.136a8.994 8.994 0 0 0-17.6 0a6.493 6.493 0 0 0 .23 12.768l-1.324 2.649a1 1 0 1 0 1.789.894l2-4a1 1 0 0 0-.447-1.341A1 1 0 0 0 9 20.01V20h-.5a4.498 4.498 0 0 1-.356-8.981l.816-.064l.099-.812a6.994 6.994 0 0 1 13.883 0l.099.812l.815.064A4.498 4.498 0 0 1 23.5 20H23v2h.5a6.497 6.497 0 0 0 1.3-12.864"></svg:path>`,
+})
+export class CarbonMixedRainHailIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

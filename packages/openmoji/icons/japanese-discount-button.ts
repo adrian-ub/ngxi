@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiJapaneseDiscountButtonIcon],svg[openmoji-japanese-discount-button-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:rect width="48.984" height="48.984" x="11.234" y="11.922" fill="#d0cfce" rx="1.699"></svg:rect><svg:g fill="none" stroke="#000" stroke-width="2"><svg:path stroke-linecap="round" stroke-miterlimit="10" d="M22.98 31.429h12.992M22.98 25.418h14.107m-14.864 0H36.33M23.396 35.547h12.14M24.11 50.707h10.915M21.728 40.115h15.465m-7.717-11.23v11.23m12.746-14.494v17.383M29.476 21.951v3.205m7.611.262v3.467m-14.864-3.467v3.467"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M24.11 52.46v-8.072h11.058v8.072m14.248-30.509V51.87h-5.642"></svg:path><svg:rect width="48.984" height="48.984" x="11.234" y="11.922" stroke-miterlimit="10" rx="1.699"></svg:rect></svg:g>`,
+})
+export class OpenmojiJapaneseDiscountButtonIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

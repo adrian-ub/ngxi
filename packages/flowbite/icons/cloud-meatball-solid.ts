@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[flowbiteCloudMeatballSolidIcon],svg[flowbite-cloud-meatball-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M6 17a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2zm12 0a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2z"></svg:path><svg:path fill-rule="evenodd" d="M12 13a1 1 0 0 1 1 1v.586l.414-.414a1 1 0 0 1 1.414 1.414l-.414.414H15a1 1 0 1 1 0 2h-.586l.414.414a1 1 0 0 1-1.414 1.415L13 19.414V20a1 1 0 0 1-2 0v-.586l-.414.414a1 1 0 1 1-1.414-1.414L9.586 18H9a1 1 0 0 1 0-2h.586l-.414-.414a1 1 0 1 1 1.414-1.414l.414.414V14a1 1 0 0 1 1-1" clip-rule="evenodd"></svg:path><svg:path d="M9.219 3.962a5.89 5.89 0 0 1 9.098 4.492A3.67 3.67 0 0 1 21 11.986c0 .945-.368 1.957-1.074 2.664c-.642.641-1.456.928-2.251.99a3 3 0 0 0-.554-.761a3 3 0 0 0-.878-2.122a3 3 0 0 0-2.122-.878A3 3 0 0 0 12 11a3 3 0 0 0-2.121.879a3 3 0 0 0-2.122.879a3 3 0 0 0-.878 2.12a3 3 0 0 0-.48.626A4.556 4.556 0 0 1 3 11.097c0-1.158.385-2.343 1.272-3.23c.742-.742 1.746-1.182 2.759-1.296a5.9 5.9 0 0 1 2.188-2.609"></svg:path></svg:g>`,
+})
+export class FlowbiteCloudMeatballSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentGlanceHorizontal24RegularIcon],svg[fluent-glance-horizontal-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.001 4.752a1.75 1.75 0 0 0-1.75-1.75h-6.5a1.75 1.75 0 0 0-1.75 1.75v4.5c0 .966.783 1.75 1.75 1.75h6.5a1.75 1.75 0 0 0 1.75-1.75zm-4.012 9.982a1.75 1.75 0 0 0-1.75-1.75H4.75A1.75 1.75 0 0 0 3 14.734v4.514c0 .967.783 1.75 1.75 1.75h2.488a1.75 1.75 0 0 0 1.75-1.75zM11.5 4.752v4.5a.25.25 0 0 1-.25.25h-6.5a.25.25 0 0 1-.25-.25v-4.5a.25.25 0 0 1 .25-.25h6.5a.25.25 0 0 1 .25.25m-4.012 9.982v4.514a.25.25 0 0 1-.25.25H4.75a.25.25 0 0 1-.25-.25v-4.514a.25.25 0 0 1 .25-.25h2.488a.25.25 0 0 1 .25.25m13.514.014a1.75 1.75 0 0 0-1.75-1.75h-6.5a1.75 1.75 0 0 0-1.745 1.607l-.005.143v4.5c0 .967.783 1.75 1.75 1.75h6.5a1.75 1.75 0 0 0 1.75-1.75zm-1.5 0v4.5a.25.25 0 0 1-.25.25h-6.5a.25.25 0 0 1-.25-.25v-4.5l.006-.057a.25.25 0 0 1 .244-.193h6.5a.25.25 0 0 1 .25.25m1.5-9.996a1.75 1.75 0 0 0-1.75-1.75h-2.5a1.75 1.75 0 0 0-1.75 1.75v4.5c0 .966.783 1.75 1.75 1.75h2.5a1.75 1.75 0 0 0 1.75-1.75zm-1.5 4.5a.25.25 0 0 1-.25.25h-2.5a.25.25 0 0 1-.25-.25v-4.5a.25.25 0 0 1 .25-.25h2.5a.25.25 0 0 1 .25.25z"></svg:path>`,
+})
+export class FluentGlanceHorizontal24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

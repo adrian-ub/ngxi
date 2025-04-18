@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatAbButtonBloodTypeIcon],svg[fluent-emoji-flat-ab-button-blood-type-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#F92F60" d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"></svg:path><svg:path fill="#fff" d="M9.945 8.922a1.375 1.375 0 0 1 1.281.856l4.636 11.372a1.375 1.375 0 1 1-2.546 1.038l-.668-1.639a.13.13 0 0 0-.116-.077H7.498a.13.13 0 0 0-.116.079l-.64 1.623a1.375 1.375 0 0 1-2.559-1.01L8.674 9.792c.206-.523.71-.867 1.271-.87M8.567 17.55a.125.125 0 0 0 .116.17h2.626c.089 0 .15-.09.116-.172l-1.334-3.271a.125.125 0 0 0-.232 0zm9.786-8.472c-.758 0-1.373.614-1.375 1.372l-.025 11.078a1.375 1.375 0 0 0 1.375 1.378h5.07q.05 0 .1-.003c2.267-.03 4.133-1.853 4.133-4.144a4.12 4.12 0 0 0-1.684-3.32a.13.13 0 0 1-.036-.171a4.1 4.1 0 0 0 .545-2.046c0-2.31-1.896-4.144-4.189-4.144zm3.894 8.288h1.196c.815 0 1.438.644 1.438 1.393c0 .75-.623 1.394-1.439 1.394q-.048 0-.095.003H19.83a.125.125 0 0 1-.125-.125l.006-2.54c0-.07.056-.125.125-.125zm.042-2.75h-2.445a.125.125 0 0 1-.125-.126l.006-2.537c0-.07.056-.125.125-.125h2.417c.816 0 1.439.645 1.439 1.394c0 .742-.613 1.382-1.417 1.394"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatAbButtonBloodTypeIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

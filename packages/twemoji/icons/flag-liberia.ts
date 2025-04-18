@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiFlagLiberiaIcon],svg[twemoji-flag-liberia-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#BF0A30" d="M35.692 28.538H.308A4 4 0 0 0 4 31h28a4 4 0 0 0 3.692-2.462M0 23.811h36v2.561H0zM11.5 9.629H36v2.561H11.5zm24.192-2.167A4 4 0 0 0 32 5H11.5v2.462zM11.5 14.356H36v2.561H11.5zM0 19.083h36v2.561H0z"></svg:path><svg:path fill="#EEE" d="M11.5 12.189H36v2.167H11.5zM0 16.917v2.166h36v-2.166H12zm11.5-9.455v2.167H36V9c0-.545-.111-1.064-.308-1.538zM0 21.644h36v2.167H0zM0 27c0 .545.111 1.064.308 1.538h35.383A4 4 0 0 0 36 27v-.629H0z"></svg:path><svg:path fill="#002868" d="M4 5a4 4 0 0 0-4 4v7.917h12V5z"></svg:path><svg:path fill="#FFF" d="M6.794 10.245L6 7.802l-.794 2.443H2.638l2.078 1.51l-.794 2.443L6 12.688l2.078 1.51l-.794-2.443l2.078-1.51z"></svg:path>`,
+})
+export class TwemojiFlagLiberiaIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

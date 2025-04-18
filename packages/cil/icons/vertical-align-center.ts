@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilVerticalAlignCenterIcon],svg[cil-vertical-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M240 16v146.177l-53.491-53.49l-22.627 22.626L256 223.431l92.118-92.118l-22.627-22.626L272 162.177V16zM16 240h480v32H16zm147.882 140.687l22.627 22.626L240 349.823V496h32V349.823l53.491 53.49l22.627-22.626L256 288.569z"></svg:path>`,
+})
+export class CilVerticalAlignCenterIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

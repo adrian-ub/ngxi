@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiCurlyHairIcon],svg[openmoji-curly-hair-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g stroke-miterlimit="10" stroke-width="2"><svg:path fill="#f4aa41" stroke="#f4aa41" d="M16.43 51.36H54.1c0-.51 1.9-1 1.82-1.61a8.34 8.34 0 0 0-3.26-5.39A8.17 8.17 0 0 0 54 35.89a7.78 7.78 0 0 0-4.68-4.11a7.12 7.12 0 0 0-2.91-6.59a6.69 6.69 0 0 0-8.08.51a7.32 7.32 0 0 0-5.88-4.8A7.58 7.58 0 0 0 26 23.69a10 10 0 0 0-9.55-2z"></svg:path><svg:path fill="#fcea2b" stroke="#fcea2b" d="M16.37 51.36H43.3a13.15 13.15 0 0 0-.37-6.3a12.88 12.88 0 0 0-2.4-4.41a16.26 16.26 0 0 1-7.13 3.1c-4.53.6-6-2.41-9.52-1.29c-1.27.4-1.54.94-3.17 1.26s-3.32-1.81-4.34-2.08c-.02 2.61.02 7.11 0 9.72z"></svg:path></svg:g><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M56 51.36a7.368 7.368 0 0 0-.06-1.61a8.34 8.34 0 0 0-3.26-5.39A8.17 8.17 0 0 0 54 35.89a7.78 7.78 0 0 0-4.68-4.11a7.12 7.12 0 0 0-2.91-6.59a6.69 6.69 0 0 0-8.08.51a7.32 7.32 0 0 0-5.88-4.8A7.58 7.58 0 0 0 26 23.69s-4.13-4.62-9.92-2.49"></svg:path><svg:path d="M44.93 51.36a49.76 49.76 0 0 0-4.59-12.45a8.7 8.7 0 0 1-5.29 4.2a8.65 8.65 0 0 1-8.53-2.8A6.59 6.59 0 0 1 21.34 43a6.53 6.53 0 0 1-5-2.49h0"></svg:path></svg:g>`,
+})
+export class OpenmojiCurlyHairIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

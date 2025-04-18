@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiHandIcon],svg[mynaui-hand-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M17.428 11.212v-4.5c0-2.213-3.572-2.35-3.572 0"></svg:path><svg:path d="M13.857 10V4.712c0-2.213-3.572-2.35-3.572 0v1.8m-.001 4.25v-4.05c0-2.213-3.747-2.35-3.747 0V13"></svg:path><svg:path d="M17.428 9.312c0-2.35 3.572-2.213 3.572 0v4.4c0 6.843-9.799 9.578-14.278 5.094l-3.215-3.24C2.018 13.904 4.044 10.5 6.537 13l1 1"></svg:path></svg:g>`,
+})
+export class MynauiHandIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

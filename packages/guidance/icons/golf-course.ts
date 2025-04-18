@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[guidanceGolfCourseIcon],svg[guidance-golf-course-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M4 23.5h5m-2.5 0V0m0 .5h1.879C9.737.5 11.039 1.04 12 2s2.263 1.5 3.621 1.5h.879v7h-1.879c-1.358 0-2.66-.54-3.621-1.5a5.12 5.12 0 0 0-3.621-1.5H6.5m17 11s-3.5-4-11.5-4c-1.28 0-2.446.102-3.5.275M.5 18.5s1.261-1.441 4-2.594m11 5.594a2 2 0 1 0 4 0a2 2 0 0 0-4 0Z"></svg:path>`,
+})
+export class GuidanceGolfCourseIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

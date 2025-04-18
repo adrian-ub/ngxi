@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7EllipsisVerticalCircleIcon],svg[f7-ellipsis-vertical-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.094 28C4.094 14.922 14.922 4.094 28 4.094c13.055 0 23.906 10.804 23.906 23.883c0 13.054-10.851 23.93-23.906 23.93C14.922 51.906 4.094 41.054 4.094 28m3.984 0c0 11.039 8.86 19.945 19.922 19.922c11.04-.024 19.922-8.906 19.922-19.945C47.922 16.914 39.039 8.1 28 8.1C16.938 8.101 8.078 16.937 8.078 28m19.899-7.735c-1.711 0-3.165-1.453-3.165-3.164c0-1.71 1.454-3.164 3.165-3.164c1.71 0 3.164 1.43 3.164 3.164c0 1.711-1.453 3.165-3.164 3.165m0 10.875c-1.711 0-3.165-1.476-3.165-3.163c0-1.688 1.454-3.165 3.165-3.165c1.71 0 3.164 1.43 3.164 3.165c0 1.687-1.453 3.163-3.164 3.163m0 10.876c-1.711 0-3.165-1.454-3.165-3.165c0-1.71 1.454-3.187 3.165-3.187c1.71 0 3.164 1.453 3.164 3.187c0 1.711-1.453 3.165-3.164 3.165"></svg:path>`,
+})
+export class F7EllipsisVerticalCircleIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

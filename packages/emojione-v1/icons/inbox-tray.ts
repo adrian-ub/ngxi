@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneV1InboxTrayIcon],svg[emojione-v1-inbox-tray-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#a7a8ac" d="M2.078 64h59.811a.914.914 0 0 0 .904-.905V4.944c0-.492-.408-.9-.904-.9H2.081a.84.84 0 0 0-.618.24s-.011.015-.016.027c-.018 0-.022.008-.027.032a.8.8 0 0 0-.244.601V63.09c0 .488.412.905.905.905"></svg:path><svg:path fill="#d1d2d3" d="M1.173 44.513v18.583c0 .488.414.905.906.905h59.813a.915.915 0 0 0 .905-.905V44.513H1.177"></svg:path><svg:g fill="#405967"><svg:path d="M8.663 46.28h46.636c.39 0 .709-.27.709-.59V7.852c0-.32-.319-.587-.709-.587H8.665c-.207 0-.371.061-.478.158c0 0-.011.008-.017.017c0 0-.014.004-.019.021a.48.48 0 0 0-.193.391v37.831c0 .321.324.59.707.59"></svg:path><svg:path d="M43.7 44.757c0 7.05-5.246 12.766-11.714 12.766c-6.472 0-11.718-5.716-11.718-12.766c0-7.06 5.247-12.772 11.718-12.772c6.468 0 11.714 5.716 11.714 12.772"></svg:path></svg:g><svg:path fill="#de374b" d="M34.393 28.584c1.511-1.862 3.01-3.729 4.521-5.594c1.501-1.863 3.01-3.727 4.51-5.592c1.061-1.315-.286-3.02-2.426-3.02h-4.611V.002h-8.809v14.376h-4.623c-2.126 0-3.478 1.707-2.421 3.02c3.02 3.729 6.02 7.457 9.02 11.186c1.051 1.305 3.797 1.305 4.837 0"></svg:path>`,
+})
+export class EmojioneV1InboxTrayIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

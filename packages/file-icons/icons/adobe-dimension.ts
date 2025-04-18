@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsAdobeDimensionIcon],svg[file-icons-adobe-dimension-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M212.81 231.32c-1.73 64.543-28.578 102.696-95.23 95.694V143.076c67.345-7.415 95.572 27.736 95.23 88.244M512 0v512H0V0zM256.116 230.388c0-74.273-39.116-125.031-117.58-125.031H74.972v259.609h61.235c52.155 0 119.91-31.2 119.91-134.578m181.144 9.314c0-56.579-36.787-69.385-69.617-69.385c-26.775 0-53.318 7.917-73.11 15.367c-4.25 1.951-.686.917-.698 26.776v151.807h42.609V211.995c37.05-10.54 58.688-1.873 58.208 30.734v121.538h42.608z"></svg:path>`,
+})
+export class FileIconsAdobeDimensionIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

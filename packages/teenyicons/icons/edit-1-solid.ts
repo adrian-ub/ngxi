@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[teenyiconsEdit1SolidIcon],svg[teenyicons-edit-1-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.854.146a.5.5 0 0 0-.708 0L6.5 2.793L12.207 8.5l2.647-2.646a.5.5 0 0 0 0-.708zM0 9.293L5.793 3.5L11.5 9.207L5.707 15H.5a.5.5 0 0 1-.5-.5zM8 15h7v-1H8z"></svg:path>`,
+})
+export class TeenyiconsEdit1SolidIcon {
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

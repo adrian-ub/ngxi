@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[phPaletteLightIcon],svg[ph-palette-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M199.37 55.31A101.32 101.32 0 0 0 128 26h-1A102 102 0 0 0 26 128c0 42.09 26.07 77.44 68 92.26a30.2 30.2 0 0 0 10.11 1.74A30.06 30.06 0 0 0 134 192a18 18 0 0 1 18-18h46.21a29.82 29.82 0 0 0 29.25-23.31a102.7 102.7 0 0 0 2.54-23.58a101.25 101.25 0 0 0-30.63-71.8M215.76 148a17.89 17.89 0 0 1-17.55 14H152a30 30 0 0 0-30 30a18 18 0 0 1-24 17c-37-13.14-60-44.15-60-81a90 90 0 0 1 89.07-90h.93a90.34 90.34 0 0 1 90 89.22a90.5 90.5 0 0 1-2.24 20.78M138 76a10 10 0 1 1-10-10a10 10 0 0 1 10 10m-44 24a10 10 0 1 1-10-10a10 10 0 0 1 10 10m0 56a10 10 0 1 1-10-10a10 10 0 0 1 10 10m88-56a10 10 0 1 1-10-10a10 10 0 0 1 10 10"></svg:path>`,
+})
+export class PhPaletteLightIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

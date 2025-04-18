@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[lucideMessageCircleDashedIcon],svg[lucide-message-circle-dashed-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 3.1c-.5 0-1-.1-1.5-.1s-1 .1-1.5.1m8.8 3.7a10.5 10.5 0 0 0-2.1-2.1m3.7 8.8c.1-.5.1-1 .1-1.5s-.1-1-.1-1.5m-3.7 8.8a10.5 10.5 0 0 0 2.1-2.1m-8.8 3.7c.5.1 1 .1 1.5.1s1-.1 1.5-.1m-10-3.4L2 22l4.5-1.5m-3.4-10c0 .5-.1 1-.1 1.5s.1 1 .1 1.5m3.7-8.8a10.5 10.5 0 0 0-2.1 2.1"></svg:path>`,
 })
 export class LucideMessageCircleDashedIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

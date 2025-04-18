@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiButterIcon],svg[twemoji-butter-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#99AAB5" d="m35.145 22.16l-22.86 13.219c-.902.521-2.364.521-3.266 0L.855 30.658c-.451-.261-.676-.602-.676-.944v-1.843l23.535-12.32c.902-.521 2.364-.521 3.266 0l8.84 3.819c0 .558-.005 1.497 0 1.834c.006.345-.219.692-.675.956"></svg:path><svg:path fill="#CCD6DD" d="m35.145 20.344l-22.86 13.219c-.902.521-2.364.521-3.266 0L.855 28.842c-.902-.521-.902-1.367 0-1.888l22.86-13.219c.902-.521 2.364-.521 3.266 0l8.164 4.721c.901.521.901 1.367 0 1.888"></svg:path><svg:path fill="#FFE8B6" d="M33 19.011v-8.083l-7-4.041l-13.042 7.502v8.083l7 4.042z"></svg:path><svg:path fill="#FFD983" d="M33 19.011v-8.083l-13.042 7.503l-7-4.042v8.083l7 4.042z"></svg:path><svg:path fill="#FFCC4D" d="M33 19.011v-8.083l-13.042 7.503v8.083z"></svg:path><svg:path fill="#FFE8B6" d="M17.182 28.302V26.29l-7-4.041L3 26.325v2.012l7 4.041z"></svg:path><svg:path fill="#FFD983" d="M17.182 28.302V26.29l-7 4.059L3 26.325v2.012l7 4.041z"></svg:path><svg:path fill="#FFCC4D" d="M17.182 28.302V26.29l-7 4.059L10 32.378z"></svg:path>`,
+})
+export class TwemojiButterIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

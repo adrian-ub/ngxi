@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentGuest16FilledIcon],svg[fluent-guest-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 2.5A1.5 1.5 0 0 0 11.5 1h-7A1.5 1.5 0 0 0 3 2.5v11A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5zm-6.5 1A.5.5 0 0 1 7 3h2a.5.5 0 0 1 0 1H7a.5.5 0 0 1-.5-.5M6 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0m-.305 3h4.61c.331 0 .69.238.72.657c.023.315-.005.922-.46 1.453c-.461.54-1.269.89-2.565.89s-2.104-.35-2.566-.89c-.454-.531-.482-1.138-.46-1.453c.03-.42.39-.657.721-.657"></svg:path>`,
+})
+export class FluentGuest16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

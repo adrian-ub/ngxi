@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorBuildingHome24Icon],svg[fluent-color-building-home-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorBuildingHome240)" d="M4 4.25A2.25 2.25 0 0 1 6.25 2h7.5A2.25 2.25 0 0 1 16 4.25V9.5h1.75A2.25 2.25 0 0 1 20 11.75V21h-2v1H4.75a.75.75 0 0 1-.75-.75z"></svg:path><svg:path fill="url(#fluentColorBuildingHome245)" d="M4 4.25A2.25 2.25 0 0 1 6.25 2h7.5A2.25 2.25 0 0 1 16 4.25V9.5h1.75A2.25 2.25 0 0 1 20 11.75V21h-2v1H4.75a.75.75 0 0 1-.75-.75z"></svg:path><svg:path fill="url(#fluentColorBuildingHome246)" d="M4 4.25A2.25 2.25 0 0 1 6.25 2h7.5A2.25 2.25 0 0 1 16 4.25V9.5h1.75A2.25 2.25 0 0 1 20 11.75V21h-2v1H4.75a.75.75 0 0 1-.75-.75z"></svg:path><svg:path fill="url(#fluentColorBuildingHome241)" d="M7 6.5a1 1 0 1 0 2 0a1 1 0 0 0-2 0m1 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2M8 9a1 1 0 1 0 0 2a1 1 0 0 0 0-2m4-3.5a1 1 0 1 0 0 2a1 1 0 0 0 0-2M12 9a1 1 0 1 0 0 2a1 1 0 0 0 0-2"></svg:path><svg:path fill="url(#fluentColorBuildingHome242)" d="M15 17h5v6h-5z"></svg:path><svg:path fill="url(#fluentColorBuildingHome243)" d="M18.1 13.325a1 1 0 0 0-1.2 0l-3.5 2.625a1 1 0 0 0-.4.8V22a1 1 0 0 0 1 1h2v-3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V23h2a1 1 0 0 0 1-1v-5.25a1 1 0 0 0-.4-.8z"></svg:path><svg:path fill="url(#fluentColorBuildingHome244)" fill-rule="evenodd" d="m17.5 13.95l4.04 3.142a.75.75 0 1 0 .92-1.184l-4.193-3.261a1.25 1.25 0 0 0-1.534 0l-4.193 3.261a.75.75 0 1 0 .92 1.184z" clip-rule="evenodd"></svg:path><svg:defs><svg:lineargradient id="fluentColorBuildingHome240" x1="4" x2="23.081" y1="2.625" y2="22.168" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#29C3FF"></svg:stop><svg:stop offset="1" stop-color="#2764E7"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorBuildingHome241" x1="9.15" x2="13.953" y1="4.5" y2="15.067" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FDFDFD"></svg:stop><svg:stop offset="1" stop-color="#B3E0FF"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorBuildingHome242" x1="17.5" x2="14.694" y1="17" y2="23.238" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#944600"></svg:stop><svg:stop offset="1" stop-color="#CD8E02"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorBuildingHome243" x1="13.859" x2="21.397" y1="14.109" y2="21.439" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFD394"></svg:stop><svg:stop offset="1" stop-color="#FFB357"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorBuildingHome244" x1="18" x2="17.263" y1="11" y2="16.847" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF921F"></svg:stop><svg:stop offset="1" stop-color="#EB4824"></svg:stop></svg:lineargradient><svg:radialgradient id="fluentColorBuildingHome245" cx="0" cy="0" r="1" gradientTransform="matrix(0 8.25 -4.75 0 16 20.75)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#4A43CB"></svg:stop><svg:stop offset=".914" stop-color="#4A43CB" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorBuildingHome246" cx="0" cy="0" r="1" gradientTransform="matrix(-4.5 3.5 -2.36586 -3.04182 17 16)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#4A43CB"></svg:stop><svg:stop offset=".914" stop-color="#4A43CB" stop-opacity="0"></svg:stop></svg:radialgradient></svg:defs></svg:g>`,
+})
+export class FluentColorBuildingHome24Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

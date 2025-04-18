@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[meteoconsCompassFillIcon],svg[meteocons-compass-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:lineargradient id="meteoconsCompassFill0" x1="184" x2="328" y1="131.3" y2="380.7" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#6b7280"></svg:stop><svg:stop offset=".5" stop-color="#6b7280"></svg:stop><svg:stop offset="1" stop-color="#374151"></svg:stop></svg:lineargradient></svg:defs><svg:circle cx="256" cy="256" r="144" fill="url(#meteoconsCompassFill0)" stroke="#e5e7eb" stroke-miterlimit="10" stroke-width="12"></svg:circle><svg:path fill="#9ca3af" d="M259.2 152v-10.4h4.6v18h-4.7l-6.3-10.4v10.4h-4.6v-18h4.7Zm103.3 105.7v3.3h9.8v4h-14.5v-18H372v4h-9.5v3h8.3v3.8Zm-106.4 116a8.4 8.4 0 0 1-5.4-1.6a5.8 5.8 0 0 1-2-4.4h4.4c0 1.6 1.1 2.4 3.1 2.4c1.8 0 2.6-.6 2.6-1.7a1.3 1.3 0 0 0-.4-1a4.6 4.6 0 0 0-1.6-.7l-3.4-.7c-2.9-.7-4.4-2.4-4.4-4.9a5 5 0 0 1 1.7-3.9a7.5 7.5 0 0 1 5.1-1.5a8 8 0 0 1 5 1.5a5.2 5.2 0 0 1 2 4h-4.3c-.2-1.4-1-2-2.7-2a2.9 2.9 0 0 0-1.6.4a1.3 1.3 0 0 0-.6 1c0 .8.5 1.3 1.6 1.6l3.5.8q4.7 1.1 4.7 5.1a4.9 4.9 0 0 1-2 4.1a8.5 8.5 0 0 1-5.3 1.5ZM156.2 255l2-8h4.7l-5.2 18h-4.5l-2.5-11.5l-2.3 11.5h-4.6l-5.2-18h4.7l2 8l.9 4.2l.7-4.3l1.7-7.9h4.4l1.8 8l.6 4.1Z"></svg:path><svg:g><svg:path fill="#ef4444" d="m256 172l-24 84h48l-24-84z"></svg:path><svg:path fill="#fff" d="m232 256l24 84l24-84h-48z"></svg:path><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="2s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="rotate" values="-6 256 256; 6 256 256; -6 256 256"></svg:animatetransform></svg:g>`,
+})
+export class MeteoconsCompassFillIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

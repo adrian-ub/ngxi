@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[notoV1LetterCIcon],svg[noto-v1-letter-c-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#40c0e7" d="M111.21 107.69L99.92 85.46c-.16-.32-.46-.55-.81-.63s-.71.01-.99.23c-6.32 5.01-17.18 8.79-25.27 8.79c-15.63 0-26.55-10.58-26.55-25.73s10.92-25.73 26.55-25.73c8.46 0 17.14 2.72 22.64 7.11c.27.22.64.3.98.24c.34-.07.64-.29.81-.6l12.52-22.81c.28-.51.15-1.15-.31-1.51c-9.47-7.5-21.49-11.15-36.75-11.15c-32.5 0-56.08 22.91-56.08 54.46c0 31.56 23.58 54.46 56.08 54.46c14.87 0 27.72-4.52 38.18-13.45c.42-.36.54-.96.29-1.45"></svg:path>`,
+})
+export class NotoV1LetterCIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

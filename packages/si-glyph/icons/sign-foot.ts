@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphSignFootIcon],svg[si-glyph-sign-foot-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="M13.798 14.262c0 3.231-2.339.253-5.294.253c-2.951 0-5.403 2.979-5.403-.253c0-1.509 1.232-3.097 2.09-4.453c.978-1.547 1.685-2.766 3.259-2.766c1.58 0 2.364 1.294 3.345 2.852c.849 1.351 2.003 2.865 2.003 4.367"></svg:path><svg:ellipse cx="5.91" cy="2.881" rx="1.91" ry="2.881"></svg:ellipse><svg:ellipse cx="10.936" cy="2.926" rx="1.936" ry="2.926"></svg:ellipse><svg:ellipse cx="1.871" cy="7.371" rx="1.885" ry="2.436" transform="rotate(-10.51 1.986 7.435)"></svg:ellipse><svg:path d="M12.115 7.305c-.345 1.326.201 2.504 1.214 2.627c1.014.126 2.116-.849 2.463-2.175c.345-1.328-.2-2.506-1.214-2.63c-1.016-.126-2.118.85-2.463 2.178"></svg:path></svg:g>`,
+})
+export class SiGlyphSignFootIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

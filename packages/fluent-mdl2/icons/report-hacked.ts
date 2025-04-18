@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2ReportHackedIcon],svg[fluent-mdl2-report-hacked-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1024 1536H896v-128h128zm0-1152H896v896h128zm-64 1661q-119-70-236-149t-224-171t-198-196t-159-223t-105-253T0 768V256q83 0 161-6t152-22t146-45t144-75q85-55 170-81T960 0q51 0 97 6t89 20t86 34t85 48q72 46 144 75t146 45t152 22t161 6v512q0 151-38 285t-105 253t-158 223t-198 195t-224 171t-237 150M128 382v386q0 127 33 244t92 222t138 200t172 178t193 155t204 130q102-59 203-130t194-154t172-178t138-200t91-223t34-244V382q-149-8-285-48t-263-121q-68-44-135-64t-149-21q-81 0-148 20t-136 65q-126 81-262 121t-286 48"></svg:path>`,
+})
+export class FluentMdl2ReportHackedIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

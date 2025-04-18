@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineMdSunnyOutlineToMoonTransitionIcon],svg[line-md-sunny-outline-to-moon-transition-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill-opacity="0" d="M15.22 6.03L17.75 4.09L14.56 4L13.5 1L12.44 4L9.25 4.09L11.78 6.03L10.87 9.09L13.5 7.28L16.13 9.09L15.22 6.03Z" fill="currentColor"><svg:animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.4s" values="0;1"></svg:animate></svg:path><svg:path fill-opacity="0" d="M19.61 12.25L21.25 11L19.19 10.95L18.5 9L17.81 10.95L15.75 11L17.39 12.25L16.8 14.23L18.5 13.06L20.2 14.23L19.61 12.25Z" fill="currentColor"><svg:animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.4s" values="0;1"></svg:animate></svg:path><svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:g><svg:path stroke-dasharray="2" stroke-dashoffset="4" d="M12 21v1M21 12h1M12 3v-1M3 12h-1"><svg:animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="4;2"></svg:animate></svg:path><svg:path stroke-dasharray="2" stroke-dashoffset="4" d="M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"><svg:animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="4;2"></svg:animate></svg:path><svg:set fill="freeze" attributeName="opacity" begin="0.5s" to="0"></svg:set></svg:g><svg:path d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z" opacity="0"><svg:set fill="freeze" attributeName="opacity" begin="0.5s" to="1"></svg:set></svg:path></svg:g><svg:mask id="lineMdSunnyOutlineToMoonTransition0"><svg:circle cx="12" cy="12" r="12" fill="#fff"></svg:circle><svg:circle cx="12" cy="12" r="4"><svg:animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="4;8"></svg:animate></svg:circle><svg:circle cx="22" cy="2" r="3" fill="#fff"><svg:animate fill="freeze" attributeName="cx" begin="0.1s" dur="0.4s" values="22;18"></svg:animate><svg:animate fill="freeze" attributeName="cy" begin="0.1s" dur="0.4s" values="2;6"></svg:animate><svg:animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="3;12"></svg:animate></svg:circle><svg:circle cx="22" cy="2" r="1"><svg:animate fill="freeze" attributeName="cx" begin="0.1s" dur="0.4s" values="22;18"></svg:animate><svg:animate fill="freeze" attributeName="cy" begin="0.1s" dur="0.4s" values="2;6"></svg:animate><svg:animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="1;10"></svg:animate></svg:circle></svg:mask><svg:circle cx="12" cy="12" r="6" mask="url(#lineMdSunnyOutlineToMoonTransition0)" fill="currentColor"><svg:animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="6;10"></svg:animate><svg:set fill="freeze" attributeName="opacity" begin="0.5s" to="0"></svg:set></svg:circle>`,
+})
+export class LineMdSunnyOutlineToMoonTransitionIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

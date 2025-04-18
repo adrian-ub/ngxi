@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsHumidityPercentageIcon],svg[material-symbols-humidity-percentage-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.5 18q.625 0 1.063-.437T16 16.5t-.437-1.062T14.5 15t-1.062.438T13 16.5t.438 1.063T14.5 18m-5.05-.05l6.5-6.5l-1.4-1.4l-6.5 6.5zM9.5 13q.625 0 1.063-.437T11 11.5t-.437-1.062T9.5 10t-1.062.438T8 11.5t.438 1.063T9.5 13m2.5 9q-3.425 0-5.712-2.35T4 13.8q0-2.5 1.988-5.437T12 2q4.025 3.425 6.013 6.363T20 13.8q0 3.5-2.287 5.85T12 22"></svg:path>`,
+})
+export class MaterialSymbolsHumidityPercentageIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

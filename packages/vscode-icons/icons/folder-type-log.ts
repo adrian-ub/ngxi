@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFolderTypeLogIcon],svg[vscode-icons-folder-type-log-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#53c153" d="M27.5 5.5h-9.3l-2.1 4.2H4.4v16.8h25.2v-21Zm0 4.2h-8.2l1.1-2.1h7.1Z"></svg:path><svg:path fill="#00bd02" d="M9.95 12.933h21v18.033h-21z"></svg:path><svg:path fill="#fff" d="M10.731 13.714H30.17v16.472H10.731z"></svg:path><svg:path fill="#00bd02" d="M9.95 13.714h21v1.483h-21zm6.896 3.123h6.376v.781h-6.376zm0 2.016h9.758v.781h-9.758zm0 2.082h8.288v.781h-8.288zm0 2.212h11.06v.781h-11.06zm0 2.277h7.677v.781h-7.677zm.13 2.016h9.498v.781h-9.498zm-4.684-10.603h3.383v.781h-3.383zm0 2.016h3.383v.781h-3.383z"></svg:path><svg:path fill="#00bd02" d="M12.292 18.853h3.383v.781h-3.383zm0 2.017h3.383v.781h-3.383zm0 2.017h3.383v.781h-3.383zm0 2.537h3.383v.781h-3.383zm0 2.016h3.383v.781h-3.383z"></svg:path>`,
+})
+export class VscodeIconsFolderTypeLogIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

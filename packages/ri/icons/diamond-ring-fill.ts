@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[riDiamondRingFillIcon],svg[ri-diamond-ring-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.535 1h-5.07L7.69 3.661l1.865 1.696a8.5 8.5 0 1 0 4.888 0L16.31 3.66zM12 7a6.5 6.5 0 1 1 0 13a6.5 6.5 0 0 1 0-13"></svg:path>`,
+})
+export class RiDiamondRingFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

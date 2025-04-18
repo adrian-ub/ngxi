@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[catppuccinBrowserslistIcon],svg[catppuccin-browserslist-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#eed49f" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M12.51 7.22a4.23 4.23 0 0 1-1.5-4.56a5.42 5.42 0 0 0-3.3.81A4.34 4.34 0 0 1 7.3 1.5a5.47 5.47 0 0 0-2.25 2.6a4.3 4.3 0 0 1-1.5-1.4a5.4 5.4 0 0 0-.36 3.37c-.62.07-1.24 0-2.01-.28a5.5 5.5 0 0 0 1.66 3c-.47.42-1.01.72-1.82.94c.75.8 1.87 1.3 3.05 1.5a4.3 4.3 0 0 1-.96 1.78a5.45 5.45 0 0 0 3.37-.53c.22.59.31 1.2.24 2.02c1.53-.66 3.03-2.61 3.28-4.91c1.27-.21 2.06-.64 2.7-.98"></svg:path><svg:path d="M14.52 8a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1m-4.5 1.34c0-.6-.36-1.27-.45-1.89c-.06-.4-.15-.8-.09-1.52c0-.66.62-2.1 1.16-2.99"></svg:path></svg:g>`,
+})
+export class CatppuccinBrowserslistIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

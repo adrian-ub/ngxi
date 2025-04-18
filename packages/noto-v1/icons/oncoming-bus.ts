@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[notoV1OncomingBusIcon],svg[noto-v1-oncoming-bus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#2f2f2f" d="M93.44 120.95c0 3.64 2.95 6.6 6.59 6.6s6.59-2.96 6.59-6.6V94.23c0-3.63-2.95-6.59-6.59-6.59s-6.59 2.96-6.59 6.59zm-58.88 0c0 3.64-2.95 6.6-6.59 6.6s-6.59-2.96-6.59-6.6V94.23c0-3.63 2.95-6.59 6.59-6.59s6.59 2.96 6.59 6.59z"></svg:path><svg:defs><svg:path id="notoV1OncomingBus0" d="M113.87 17.12c-.11-2.13-1.57-4.97-3.24-6.3c0 0-12.97-10.37-47.3-10.37S17.27 10.69 17.27 10.69c-1.61 1.41-3.02 4.31-3.13 6.44l-2.72 50.76c-.11 2.14-.21 5.63-.21 7.77v31.77a3.9 3.9 0 0 0 3.89 3.89h97.82a3.9 3.9 0 0 0 3.89-3.89V75.64c0-2.14-.09-5.63-.21-7.77z"></svg:path></svg:defs><svg:use fill="#fcc21b" href="#notoV1OncomingBus0"></svg:use><svg:path fill="#fff" d="M35.75 92.4c0 4.07-3.32 7.39-7.4 7.39c-4.09 0-7.39-3.32-7.39-7.39c0-4.08 3.31-7.39 7.39-7.39c4.09 0 7.4 3.31 7.4 7.39m56.98 0c0 4.07 3.31 7.39 7.4 7.39c4.08 0 7.39-3.32 7.39-7.39c0-4.08-3.31-7.39-7.39-7.39c-4.09 0-7.4 3.31-7.4 7.39"></svg:path><svg:path fill="#40c0e7" d="M105.91 32.33c-.11-4.27-3.71-7.77-7.98-7.77H30.08c-4.28 0-7.87 3.5-7.98 7.77l-.87 32.45a7.553 7.553 0 0 0 7.57 7.77h70.43c4.28 0 7.68-3.5 7.57-7.77z"></svg:path><svg:path fill="#fff" d="M88.25 18.63H38.38c-2.4 0-4.36-1.95-4.36-4.36s1.96-4.36 4.36-4.36h49.87c2.41 0 4.35 1.95 4.35 4.36a4.343 4.343 0 0 1-4.35 4.36"></svg:path>`,
+})
+export class NotoV1OncomingBusIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

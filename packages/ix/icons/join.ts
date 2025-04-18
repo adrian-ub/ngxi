@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixJoinIcon],svg[ix-join-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M168.836 128H42.666v42.667h108.497L236.497 256l-85.334 85.333H42.666V384h126.17l106.667-106.667h99.664l-27.584 27.584l30.17 30.17l79.085-79.085l-79.085-79.085l-30.17 30.17l27.58 27.58h-99.66z" clip-rule="evenodd"></svg:path>`,
+})
+export class IxJoinIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

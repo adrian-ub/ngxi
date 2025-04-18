@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsEyeCrossed24Icon],svg[qlementine-icons-eye-crossed-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.85 3.15a.5.5 0 0 0-.707.707l17 17a.5.5 0 0 0 .707-.707zM21.9 12.2c-.423.633-1.29 1.8-2.58 2.92l.709.708c1.37-1.2 2.28-2.42 2.71-3.07a1.34 1.34 0 0 0 0-1.5c-1.01-1.52-4.65-6.25-10.8-6.25c-.88 0-1.71.098-2.49.271l.856.856c.521-.082 1.06-.127 1.63-.127c5.58 0 8.95 4.33 9.94 5.81a.34.34 0 0 1 0 .39z"></svg:path><svg:path fill="currentColor" d="m12.3 8.01l3.74 3.74a3.993 3.993 0 0 0-3.74-3.74M1.23 11.2c.432-.646 1.34-1.87 2.71-3.07l.709.709a14.7 14.7 0 0 0-2.58 2.92a.34.34 0 0 0 0 .39c.983 1.47 4.36 5.81 9.94 5.81c.566 0 1.11-.045 1.63-.127l.856.856c-.777.172-1.61.27-2.49.27c-6.11 0-9.75-4.73-10.8-6.25a1.34 1.34 0 0 1 0-1.5z"></svg:path><svg:path fill="currentColor" d="M8.01 12.3a3.993 3.993 0 0 0 3.74 3.74z"></svg:path>`,
+})
+export class QlementineIconsEyeCrossed24Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

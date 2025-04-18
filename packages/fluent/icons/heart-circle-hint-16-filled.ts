@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentHeartCircleHint16FilledIcon],svg[fluent-heart-circle-hint-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.958 2.09a6 6 0 0 1 2.084 0a.5.5 0 0 1-.173.985a5 5 0 0 0-1.738 0a.5.5 0 0 1-.173-.985m6.373 4.462a.5.5 0 0 1 .579.406a6 6 0 0 1 0 2.084a.5.5 0 0 1-.985-.173a5 5 0 0 0 0-1.738a.5.5 0 0 1 .406-.58m-10.662 0a.5.5 0 0 1 .406.579a5 5 0 0 0 0 1.738a.5.5 0 0 1-.985.173a6 6 0 0 1 0-2.084a.5.5 0 0 1 .579-.406m3.883 6.779a.5.5 0 0 1 .579-.406a5 5 0 0 0 1.738 0a.5.5 0 1 1 .173.985a6 6 0 0 1-2.084 0a.5.5 0 0 1-.406-.579m4.89-10.247a6 6 0 0 1 1.473 1.474a.5.5 0 1 1-.818.574a5 5 0 0 0-1.23-1.23a.5.5 0 1 1 .575-.818m1.351 7.662a.5.5 0 0 1 .123.696a6 6 0 0 1-1.474 1.473a.5.5 0 0 1-.574-.818a5 5 0 0 0 1.229-1.23a.5.5 0 0 1 .697-.122m-7.539-7.54a.5.5 0 0 1-.122.697a5 5 0 0 0-1.229 1.23a.5.5 0 1 1-.819-.575a6 6 0 0 1 1.474-1.474a.5.5 0 0 1 .696.122m-2.048 7.54a.5.5 0 0 1 .697.121a5 5 0 0 0 1.23 1.23a.5.5 0 1 1-.575.818a6 6 0 0 1-1.474-1.473a.5.5 0 0 1 .122-.697m4.428-4.304a1.547 1.547 0 0 0-2.183 2.192l2.196 2.219a.5.5 0 0 0 .71 0l2.196-2.219A1.547 1.547 0 0 0 8.37 6.442l-.368.361z"></svg:path>`,
+})
+export class FluentHeartCircleHint16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

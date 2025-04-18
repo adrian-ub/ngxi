@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[foundationTargetIcon],svg[foundation-target-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M49.984 27.452c-12.453 0-22.548 10.095-22.548 22.548s10.095 22.548 22.548 22.548S72.531 62.453 72.531 50S62.436 27.452 49.984 27.452m0 35.156c-6.964 0-12.609-5.645-12.609-12.608s5.645-12.609 12.609-12.609S62.592 43.036 62.592 50c0 6.963-5.645 12.608-12.608 12.608"></svg:path><svg:path fill="currentColor" d="M50 12.5c-20.712 0-37.5 16.793-37.5 37.502S29.288 87.5 50 87.5s37.5-16.788 37.5-37.498S70.712 12.5 50 12.5m0 65.061c-15.199 0-27.56-12.362-27.56-27.559C22.44 34.807 34.802 22.44 50 22.44s27.56 12.367 27.56 27.562S65.198 77.561 50 77.561"></svg:path><svg:circle cx="49.984" cy="50" r="7.621" fill="currentColor"></svg:circle>`,
+})
+export class FoundationTargetIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

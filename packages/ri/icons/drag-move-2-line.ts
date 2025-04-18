@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[riDragMove2LineIcon],svg[ri-drag-move-2-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 11V5.828L9.172 7.657L7.757 6.243L12 2l4.243 4.243l-1.415 1.414L13 5.828V11h5.172l-1.829-1.828l1.414-1.415L22 12l-4.243 4.243l-1.414-1.415L18.172 13H13v5.172l1.828-1.829l1.415 1.414L12 22l-4.243-4.243l1.415-1.414L11 18.172V13H5.828l1.829 1.828l-1.414 1.415L2 12l4.243-4.243l1.414 1.415L5.828 11z"></svg:path>`,
+})
+export class RiDragMove2LineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

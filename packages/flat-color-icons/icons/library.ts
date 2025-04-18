@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatColorIconsLibraryIcon],svg[flat-color-icons-library-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FF9800" d="M1 38h46v2H1zm24-20h4v16h-4zm6 0h4v16h-4zm6 0h4v16h-4zm-18 0h4v16h-4zm-6 0h4v16h-4zm-6 0h4v16H7zm36-2H5v-3l19-9l19 9zM5 34h38v2H5z"></svg:path><svg:g fill="#EF6C00"><svg:path d="M25 16h4v2h-4zm6 0h4v2h-4zm6 0h4v2h-4zm-18 0h4v2h-4zm-6 0h4v2h-4zm-6 0h4v2H7zM3 36h42v2H3z"></svg:path><svg:circle cx="24" cy="11" r="2"></svg:circle></svg:g>`,
+})
+export class FlatColorIconsLibraryIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2LadybugSolidIcon],svg[fluent-mdl2-ladybug-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1024 576q102 0 196 26t175 74t149 115t115 149t74 176t27 196q0 112-32 216t-92 193t-144 159t-188 112l-44-132q-55 29-114 44t-122 16q-62 0-121-15t-115-45l-44 132q-104-42-188-112t-143-159t-92-193t-33-216q0-102 26-196t74-175t115-149t149-115t176-74t196-27m-384 960q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50q0 27 10 50t27 40t41 28t50 10m128-384q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50q0 27 10 50t27 40t41 28t50 10m256 640q52 0 101-14t94-41l-195-585l-195 585q45 26 94 40t101 15m128-768q0 27 10 50t27 40t41 28t50 10q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50m256 512q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50q0 27 10 50t27 40t41 28t50 10M704 448q0-72 30-135L595 173l90-90l126 126q45-39 99-60t114-21t114 21t99 60l126-126l90 90l-139 140q30 63 30 135q0 13-1 25t-4 25q-75-32-154-49t-161-17q-81 0-160 17t-155 49q-2-12-3-24t-2-26"></svg:path>`,
+})
+export class FluentMdl2LadybugSolidIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

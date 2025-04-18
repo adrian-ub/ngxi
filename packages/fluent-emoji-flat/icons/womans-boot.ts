@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatWomansBootIcon],svg[fluent-emoji-flat-womans-boot-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#CA0B4A" d="M2.01 21.902h8.857l2.577 5.492h16.57c0-1.286-.363-2.338-.748-3.144c-1.631-3.407-5.42-2.93-7.834-4.126c-.37-.18-.729-.38-1.068-.599c-1.528-.969-2.362-2.676-2.362-4.484V4.087A2.093 2.093 0 0 0 15.915 2H4.087A2.093 2.093 0 0 0 2 4.087"></svg:path><svg:path fill="#F3C07B" d="M14.112 30.002c-1.718-.01-3.105-1.44-3.115-3.168c-.13-2.885-2.626-2.905-2.626-2.905H7.073v5.602c0 .26-.21.469-.47.469H2.49a.47.47 0 0 1-.469-.47v-4.842H2v-3.316h7.11c3.615 0 4.134 2.127 4.314 3.425c.23 1.608.769 2.597 2.925 2.597h13.664v1.897c0 .38-.413.72-.793.72zM6.983 14.991a.99.99 0 0 1-.989-.988V2h1.978v12.003c0 .55-.44.988-.989.988"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatWomansBootIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

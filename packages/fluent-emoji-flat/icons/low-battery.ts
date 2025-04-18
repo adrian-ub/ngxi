@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatLowBatteryIcon],svg[fluent-emoji-flat-low-battery-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#9B9B9B" d="M13 4V2.79c0-.438.314-.79.705-.79h4.59c.39 0 .705.352.705.79V4h3.23c.98 0 1.77.79 1.77 1.769V28.23c0 .98-.79 1.769-1.77 1.769H9.77A1.765 1.765 0 0 1 8 28.231V5.77C8 4.789 8.79 4 9.77 4z"></svg:path><svg:path fill="#F92F60" d="M24 20H8v8h16z"></svg:path><svg:path fill="#fff" d="M15.5 9a.5.5 0 0 0-.5.5V11h-1.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H15v1.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V13h1.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H17V9.5a.5.5 0 0 0-.5-.5zM13 23.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatLowBatteryIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

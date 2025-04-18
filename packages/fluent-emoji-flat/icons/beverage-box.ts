@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatBeverageBoxIcon],svg[fluent-emoji-flat-beverage-box-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#86D72F" d="M7 26V7h.265l10.678 3.858L18 11l.127.185v18.612L18 30z"></svg:path><svg:path fill="#C3EF3C" d="m7 7l7-2l11 4v19l-7 2V11z"></svg:path><svg:path fill="#D3F093" d="M21.5 12.5L18 11l7-2l-2 3c-.344.54-.738.803-1.5.5"></svg:path><svg:path fill="#008463" d="M11.57 12.75c.62.22 1.18.88 1.47 1.72l.19.55c-.28-.01-.44-.07-.48-.08c-.05-.02-.33-.13-.78-.49c-.17-.14-.4-.28-.66-.37c-.28-.1-.6-.15-.92-.09c-.2-.33-.36-.71-.43-1.12l-.14-.75z"></svg:path><svg:path fill="#F8312F" d="M14.316 2.051A1 1 0 0 0 13 3v3.5s.5.25 1 .25s1-.25 1-.25V4.387l1.684.562a1 1 0 0 0 .632-1.898zM16.28 17.5c-.61-1.49-1.44-2.15-2.09-2.38c-.26-.09-.49-.12-.65-.11c-.11.01-.21.01-.3.01c-.28-.01-.45-.06-.49-.08l-.019-.009c-.078-.035-.345-.156-.751-.481c-.17-.14-.4-.28-.66-.37c-.28-.1-.6-.15-.92-.09c-.42.08-.85.35-1.22.94c-.99 1.57-.47 5.11.59 6.81c.46.72.89 1.04 1.31 1.19c.281.104.558.13.824.154c.245.023.481.045.706.126c.234.083.473.235.72.391c.26.166.528.337.81.439c.42.15.86.15 1.33-.24c1.1-.91 1.73-4.04.81-6.3"></svg:path><svg:path fill="#990838" d="m17.14 2.993l.176.058a1 1 0 0 1-.24 1.946c-.455-.037-.814-.471-.814-1c0-.555.393-1.004.878-1.004"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatBeverageBoxIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

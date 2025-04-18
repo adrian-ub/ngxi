@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneVideocassetteIcon],svg[emojione-videocassette-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#3e4347" d="M2 14v9c0 .5.5 1 1 1h58c.5 0 1-.5 1-1v-9z"></svg:path><svg:path fill="#62727a" d="M60 24v-6H4v6H2v24c0 1.1.9 2 2 2h56c1.1 0 2-.9 2-2V24z"></svg:path><svg:path fill="#b2c1c0" d="M53 24H11c-2.2 0-4 4-4 9s1.8 9 4 9h42c2.2 0 4-4 4-9s-1.8-9-4-9"></svg:path><svg:path fill="#e8e8e8" d="M53 26H11c-.5.2-2 2.6-2 7s1.5 6.8 2 7h42c.6-.2 2-2.6 2-7s-1.5-6.8-2-7"></svg:path><svg:g fill="#3e4347"><svg:circle cx="42" cy="33" r="7"></svg:circle><svg:path d="M30.5 40c1.6-1.9 2.5-4.3 2.5-7s-.9-5.1-2.5-7h-17c-1.6 1.9-2.5 4.3-2.5 7s.9 5.1 2.5 7z"></svg:path></svg:g><svg:circle cx="42" cy="33" r="5" fill="#fff"></svg:circle><svg:path fill="#b2c1c0" d="m44.7 36.6l-.5-.9c.7-.5 1.2-1.3 1.3-2.2h1c-.2 1.3-.9 2.4-1.8 3.1m0-7.2c1 .7 1.7 1.8 1.8 3.1h-1c-.1-.9-.6-1.7-1.3-2.2z"></svg:path><svg:circle cx="22" cy="33" r="5" fill="#fff"></svg:circle><svg:path fill="#b2c1c0" d="m19.3 36.6l.5-.9c-.7-.5-1.2-1.3-1.3-2.2h-1c.2 1.3.9 2.4 1.8 3.1m0-7.2c-1 .7-1.6 1.8-1.8 3.1h1c.1-.9.6-1.7 1.3-2.2zM22 24h20v18H22z"></svg:path><svg:path fill="#42ade2" d="M38 26H26c-1.1 0-2 .9-2 2v2h16v-2c0-1.1-.9-2-2-2"></svg:path><svg:path fill="#fff" d="M24 30v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8z"></svg:path><svg:path fill="#b2c1c0" d="M26 32h12v2H26zm0 4h12v2H26z"></svg:path><svg:path fill="#62727a" d="M22 31c-1.1 0-2 .9-2 2s.9 2 2 2zm20 0c1.1 0 2 .9 2 2s-.9 2-2 2z"></svg:path><svg:path fill="#b2c1c0" d="M22 28.5c-.6 0-1.2.1-1.8.4l.5.9c.4-.2.8-.3 1.3-.3zm0 8c-.5 0-.9-.1-1.3-.3l-.5.9c.6.2 1.2.4 1.8.4zm20-8v1c.5 0 .9.1 1.3.3l.5-.9c-.6-.3-1.2-.4-1.8-.4m1.3 7.7c-.4.2-.8.3-1.3.3v1c.6 0 1.2-.1 1.8-.4z"></svg:path><svg:path fill="#3e4347" d="m50 26l-2 7.9l.7 1.1l2.3-9z"></svg:path>`,
+})
+export class EmojioneVideocassetteIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

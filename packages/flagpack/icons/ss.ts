@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[flagpackSsIcon],svg[flagpack-ss-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#F7FCFF" fill-rule="evenodd" d="M0 0h32v24H0z" clip-rule="evenodd"></svg:path><svg:path fill="#272727" fill-rule="evenodd" d="M0 0v8h32V0z" clip-rule="evenodd"></svg:path><svg:path fill="#4E8B1D" fill-rule="evenodd" d="M0 16v8h32v-8z" clip-rule="evenodd"></svg:path><svg:path fill="#E31D1C" stroke="#F7FCFF" stroke-width="2" d="M0 7h-1v10h34V7z"></svg:path><svg:path fill="#3D58DB" fill-rule="evenodd" d="m0 0l20 12L0 24z" clip-rule="evenodd"></svg:path><svg:path fill="#FECA00" fill-rule="evenodd" d="m6.648 14.409l-2.02 2.1l-.21-2.986l-2.576-1.586l2.686-.843l.44-2.958l1.859 2.342l2.712-.727l-1.402 2.776L9.5 15.203z" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class FlagpackSsIcon {
+  readonly viewBox = input("0 0 32 24")
+  readonly width = input("1.34em")
+  readonly height = input("1em")
+}

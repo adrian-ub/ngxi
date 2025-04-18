@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedIpadIcon],svg[token-branded-ipad-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedIpad0)" d="m3 12l1.421-1.422L5.842 12l-1.42 1.421z"></svg:path><svg:path fill="url(#tokenBrandedIpad1)" d="m4.895 13.895l1.42-1.421l3.316 3.315l-1.42 1.422z"></svg:path><svg:path fill="url(#tokenBrandedIpad2)" d="m8.684 13.895l1.421-1.421l1.421 1.42l-1.42 1.422z"></svg:path><svg:path fill="url(#tokenBrandedIpad3)" d="M10.58 12L12 10.577L13.423 12L12 13.42z"></svg:path><svg:path fill="url(#tokenBrandedIpad4)" d="m12.474 10.106l1.421-1.421l1.421 1.42l-1.42 1.422z"></svg:path><svg:path fill="#F3BA2F" d="m14.369 8.21l1.42-1.42l3.317 3.315l-1.422 1.42z"></svg:path><svg:path fill="url(#tokenBrandedIpad5)" d="m12.474 13.895l1.421-1.421l1.421 1.42l-1.42 1.422z"></svg:path><svg:path fill="url(#tokenBrandedIpad6)" d="m14.369 15.79l3.315-3.316l1.422 1.42l-3.316 3.316z"></svg:path><svg:path fill="#F3BA2F" d="m18.158 12l1.421-1.422L21 12l-1.42 1.421z"></svg:path><svg:path fill="url(#tokenBrandedIpad7)" d="M4.895 10.105L8.21 6.789L9.631 8.21l-3.315 3.316z"></svg:path><svg:path fill="url(#tokenBrandedIpad8)" d="m8.684 10.106l1.421-1.421l1.421 1.42l-1.42 1.422z"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedIpad0" x1="9.394" x2="10.825" y1="10.815" y2="9.389" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#4086FF"></svg:stop><svg:stop offset="1" stop-color="#48D5FF"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedIpad1" x1="9.3" x2="12.02" y1="13.563" y2="8.865" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#4086FF"></svg:stop><svg:stop offset="1" stop-color="#48D5FF"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedIpad2" x1="9.395" x2="10.825" y1="10.816" y2="9.39" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#4086FF"></svg:stop><svg:stop offset="1" stop-color="#48D5FF"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedIpad3" x1="7.501" x2="12.019" y1="14.605" y2="6.799" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#E8BB41"></svg:stop><svg:stop offset="1" stop-color="#F6DA5B"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedIpad4" x1="7.5" x2="12.019" y1="14.606" y2="6.801" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#E8BB41"></svg:stop><svg:stop offset="1" stop-color="#F6DA5B"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedIpad5" x1="7.5" x2="12.019" y1="14.605" y2="6.8" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#E8BB41"></svg:stop><svg:stop offset="1" stop-color="#F6DA5B"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedIpad6" x1="5.7" x2="12.026" y1="15.647" y2="4.72" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#E8BB41"></svg:stop><svg:stop offset="1" stop-color="#F6DA5B"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedIpad7" x1="5.7" x2="12.107" y1="15.647" y2="4.673" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#4086FF"></svg:stop><svg:stop offset="1" stop-color="#48D5FF"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedIpad8" x1="9.395" x2="10.825" y1="10.816" y2="9.39" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#4086FF"></svg:stop><svg:stop offset="1" stop-color="#48D5FF"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedIpadIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

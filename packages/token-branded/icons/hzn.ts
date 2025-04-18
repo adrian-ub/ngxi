@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedHznIcon],svg[token-branded-hzn-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#37F" d="m21 12l-2.7-2.7l-1.8 1.8l.9.9l-5.4 5.4l-1.8-1.8l.9-.9l.4.45V12.5H8.85l.45.4l-2.7 2.7L12 21z"></svg:path><svg:path fill="#2AD4B7" d="M17.4 8.4L12 3l-9 9l2.7 2.7l1.8-1.8l-.9-.9L12 6.6l1.8 1.8l-.9.9l-.4-.45v2.65h2.65l-.45-.4z"></svg:path></svg:g>`,
+})
+export class TokenBrandedHznIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

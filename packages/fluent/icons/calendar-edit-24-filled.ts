@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCalendarEdit24FilledIcon],svg[fluent-calendar-edit-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m11.164 20.998l.356-1.423c.162-.648.497-1.24.97-1.712l5.901-5.901a3.28 3.28 0 0 1 2.607-.95V8.5H3v9.249a3.25 3.25 0 0 0 3.25 3.25zM6 16.25a1.25 1.25 0 1 1 2.5 0a1.25 1.25 0 0 1-2.5 0m4.75 0a1.25 1.25 0 1 1 2.5 0a1.25 1.25 0 0 1-2.5 0M6 11.75a1.25 1.25 0 1 1 2.5 0a1.25 1.25 0 0 1-2.5 0m4.75 0a1.25 1.25 0 1 1 2.5 0a1.25 1.25 0 0 1-2.5 0m4.75 0a1.25 1.25 0 1 1 2.5 0a1.25 1.25 0 0 1-2.5 0M17.749 3a3.25 3.25 0 0 1 3.25 3.25V7H3v-.75A3.25 3.25 0 0 1 6.25 3zm-4.552 15.57l5.901-5.901a2.286 2.286 0 0 1 3.233 3.232l-5.902 5.902a2.7 2.7 0 0 1-1.248.706l-1.83.458a1.087 1.087 0 0 1-1.318-1.319l.457-1.83c.118-.472.362-.903.707-1.248"></svg:path>`,
+})
+export class FluentCalendarEdit24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

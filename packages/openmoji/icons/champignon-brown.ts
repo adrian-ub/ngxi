@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiChampignonBrownIcon],svg[openmoji-champignon-brown-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#fff" d="M41.831 61.958a4 4 0 0 1-.48-.03H29.656a3.9 3.9 0 0 1-2.978-.987a2 2 0 0 1-.545-1.456l-.004-11.727a1 1 0 0 1 1-1h16.55a1 1 0 0 1 1 1v11.45a2.62 2.62 0 0 1-.89 2.113a3.04 3.04 0 0 1-1.957.637m-13.703-2.392v.005l.001.001Z"></svg:path><svg:path fill="#d0cfce" d="M43.679 46.758h-4.822v15.17h2.495a4 4 0 0 0 .48.03a3.04 3.04 0 0 0 1.955-.637a2.62 2.62 0 0 0 .892-2.113v-11.45a1 1 0 0 0-1-1"></svg:path><svg:path fill="#a57939" d="M36 48.758c-13.371 0-26 0-26-10c0-9.478 11.648-24 26-24s26 14.522 26 24c0 10-12.629 10-26 10"></svg:path><svg:path fill="#6a462f" d="M36 14.758a22 22 0 0 0-4.936.577c11.993 2.776 21.063 15.06 21.063 23.423c0 8.755-9.68 9.845-21.063 9.98c1.618.02 3.271.02 4.936.02c13.371 0 26 0 26-10c0-9.478-11.647-24-26-24"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M27.128 51.532v8.039s-.117 1.358 2.527 1.358h11.77s2.254.397 2.254-1.72v-7.677M61 38.758c0 8.837-11.193 9-25 9s-25-.163-25-9s11.193-23 25-23s25 14.164 25 23"></svg:path><svg:path d="M61 38.758c0 8.837-11.193 9-25 9s-25-.163-25-9s11.193-23 25-23s25 14.164 25 23"></svg:path></svg:g>`,
+})
+export class OpenmojiChampignonBrownIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

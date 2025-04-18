@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiAdmissionTicketsIcon],svg[openmoji-admission-tickets-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#D22F27" d="M57.6 35.9c0-4.9 3.9-9.1 9.4-10.6v-5.2H5v5.5c4.9 1.7 8.4 5.7 8.4 10.3S9.9 44.6 5 46.3v5.5h62v-5.2c-5.4-1.5-9.4-5.7-9.4-10.7"></svg:path><svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10"><svg:path stroke-width="2.216" d="M57.1 35.6c0-4.9 3.9-9.1 9.4-10.6v-5.2h-62v5.5c4.9 1.7 8.4 5.7 8.4 10.3s-3.5 8.6-8.4 10.3v5.5h62v-5.2c-5.4-1.5-9.4-5.7-9.4-10.6z"></svg:path><svg:path stroke-width="2.095" d="M18.5 25h34v20h-34z"></svg:path></svg:g><svg:path fill="none" stroke="#FFF" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.1" d="M18.5 25h34v20h-34z"></svg:path>`,
+})
+export class OpenmojiAdmissionTicketsIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

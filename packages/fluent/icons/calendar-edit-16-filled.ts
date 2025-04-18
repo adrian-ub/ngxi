@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCalendarEdit16FilledIcon],svg[fluent-calendar-edit-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.049 11.742a2.8 2.8 0 0 0-.73 1.29l-.304 1.21a.61.61 0 0 0 .74.74l1.21-.303a2.8 2.8 0 0 0 1.29-.73l4.288-4.288a1.56 1.56 0 0 0-2.207-2.207zM13.998 4.5V5H2v-.5A2.5 2.5 0 0 1 4.5 2h6.998a2.5 2.5 0 0 1 2.5 2.5m-1 1.5v.035a2.55 2.55 0 0 0-1.369.712l-4.287 4.288a3.8 3.8 0 0 0-.994 1.754l-.302 1.209H4.5a2.5 2.5 0 0 1-2.5-2.5V6zM5.997 8.247a.748.748 0 1 0-1.497 0a.748.748 0 0 0 1.497 0m-.749 3.249a.748.748 0 1 0 0-1.497a.748.748 0 0 0 0 1.497m3.5-3.249a.748.748 0 1 0-1.496 0a.748.748 0 0 0 1.497 0"></svg:path>`,
+})
+export class FluentCalendarEdit16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

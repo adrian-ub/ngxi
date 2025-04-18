@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneV1AerialTramwayIcon],svg[emojione-v1-aerial-tramway-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#243438"><svg:path d="M63.795 20.499C42.528 13.662 21.26 6.833 0 0v3.255q31.89 10.246 63.795 20.494z"></svg:path><svg:path d="m31.88 10.563l-6.993 6.993l6.993 6.991l6.991-6.991zm0 11.213l-4.22-4.22l4.22-4.222l4.22 4.222z"></svg:path></svg:g><svg:path fill="#ceba35" d="M18.954 21.02v38.34c0 .32 26.299.32 26.299 0V21.02a.7.7 0 0 0-.105-.398l-.001-.001s-.001-.012-.014-.02a.33.33 0 0 0-.267-.158H19.36c-.214 0-.397.265-.397.586"></svg:path><svg:path fill="#ad9b33" d="M22.5 20.431h-3.148c-.215 0-.398.265-.398.585v38.34c0 .15 5.75.23 11.871.238c-9.44-10.687-8.224-25.476-8.325-39.16"></svg:path><svg:path fill="#9a8831" d="M26.298 42.14v17.346c0 .146 11.611.146 11.611 0V42.139a.3.3 0 0 0-.047-.18l-.006-.008l-.004-.006c-.027-.037-.066-.07-.117-.07H26.473c-.095 0-.175.122-.175.265"></svg:path><svg:path fill="#243438" d="M20.456 27.66v18.745c0 .155.068.28.15.28h9.626c.082 0 .146-.125.146-.28V27.66a.44.44 0 0 0-.037-.195l-.004-.008l-.006-.006c-.021-.043-.057-.078-.1-.078h-9.626c-.081 0-.149.131-.149.287m13.073-.164v18.745c0 .156.068.28.148.28h9.628c.082 0 .148-.124.148-.28V27.496a.44.44 0 0 0-.039-.195l-.006-.008l-.004-.006c-.021-.043-.057-.078-.1-.078h-9.628c-.078 0-.147.131-.147.287"></svg:path>`,
+})
+export class EmojioneV1AerialTramwayIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

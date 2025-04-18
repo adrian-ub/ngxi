@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeSapphireFrameworkCliIcon],svg[vscode-icons-file-type-sapphire-framework-cli-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g class="layer"><svg:path fill="#95e8e8" d="m10.788 9.85l-.935.95v12.772l5.214 5.302l.451-.458v-.001l-4.73-5.793zm10.426 0v12.774l-.007.009l.941-.957V8.424l-4.98-5.064l-.682.694z"></svg:path><svg:path fill="#254fb9" d="M10.788 22.622L16 29.007l5.206-6.376l.007-4.51l-10.426 3.833z"></svg:path><svg:path fill="#5280dd" d="m16.485 4.055l.682-.693l-1.166-1.189l-6.148 6.251V10.8l1.696-1.724l-.002-.001l-.76.774l5.214-6.386zm5.663 19.518v-1.899l-.94.957L16 29.007l-.483-.59l-.451.457l.934.95zm-.94-.943l.006-.008l-1.32 1.342z"></svg:path><svg:path fill="#729ef4" d="M21.214 18.12v-7.514l-10.426 5.628v5.72z"></svg:path><svg:path fill="#254fb9" d="M10.788 9.849L16 3.463l5.213 6.386v.757l-10.426 5.628z"></svg:path></svg:g>`,
+})
+export class VscodeIconsFileTypeSapphireFrameworkCliIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

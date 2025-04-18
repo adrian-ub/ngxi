@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphForkliftIcon],svg[si-glyph-forklift-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" transform="translate(0 2)"><svg:circle cx="7.953" cy="8.953" r="1.953"></svg:circle><svg:circle cx="13.477" cy="9.477" r="1.477"></svg:circle><svg:path d="M13.477 6.925c1.23 0 2.252.882 2.475 2.044h.002l.047-7.024c.002-1.017-.91-1.917-1.943-1.919L9.656.015C8.625.013 8.142.734 7.779 1.852L6.674 4.476c0 .144-.719.25-.913.39c-.451.318-.743.78-.745 1.447c-.001.525.002 1.658.002 1.658l.168-.004a2.99 2.99 0 0 1 2.816-1.993c1.656 0 3 1.342 3 2.995l-.001.012H11a2.52 2.52 0 0 1 2.477-2.056m-1.49-5.091c.007-.931.146-.855.98-.853l1.042.002c.717.002.975.09.973.859l-.009 2.137l-2.991-.008l.006-2.137zM10.95 4l-2.989-.006l.653-2.08S8.887 1 9.716 1c.616 0 1.245.004 1.245.004L10.951 4zM3.033 2.375l-.018 6.656L.3 9.032c-.366-.001-.369.964-.002.965H3.35c.367.001.602-.297.604-.666l.019-6.954c.001-.367-.939-.37-.939-.002z"></svg:path></svg:g>`,
+})
+export class SiGlyphForkliftIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

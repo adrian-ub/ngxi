@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[laTransgenderIcon],svg[la-transgender-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19 3v2h3.594l-4.407 4.406A6.92 6.92 0 0 0 14 8c-3.855 0-7 3.145-7 7c0 3.516 2.617 6.418 6 6.906V25h-3v2h3v3h2v-3h3v-2h-3v-3.094c3.383-.488 6-3.39 6-6.906a6.92 6.92 0 0 0-1.406-4.188L24 6.407V10h2V3zm-5 7c2.773 0 5 2.227 5 5s-2.227 5-5 5s-5-2.227-5-5s2.227-5 5-5"></svg:path>`,
+})
+export class LaTransgenderIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

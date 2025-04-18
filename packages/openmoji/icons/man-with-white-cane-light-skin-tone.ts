@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiManWithWhiteCaneLightSkinToneIcon],svg[openmoji-man-with-white-cane-light-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#fadcbc"><svg:circle cx="41.226" cy="10.127" r="3"></svg:circle><svg:path d="m49.05 19.158l-3.458-1.333l-9.709-.209l-3.416 4.458l-.542 4.292l-1.667 1.167l-6.666-6.167s-1.459 1.73-.459 3.104s3.788 5.325 5.916 5.729a4.16 4.16 0 0 0 4.375-1.416a13.9 13.9 0 0 0 1.834-5.75l-1.7 41h3.3l3.4-25h2l3.4 25h3.3l-1.7-41s2.694 16.691 3.682 18.116a1.356 1.356 0 0 0 2.355.248Z"></svg:path></svg:g><svg:g fill="none" stroke="#000" stroke-width="2"><svg:circle cx="41.226" cy="10.127" r="3" stroke-miterlimit="10"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="m46.258 23.033l2.568 39.004a1.715 1.715 0 0 1-1.518 1.996a2.18 2.18 0 0 1-1.92-1.982l-2.86-21.037c-.15-1.09-.72-1.981-1.27-1.981s-1.122.891-1.27 1.981l-2.861 21.037a2.18 2.18 0 0 1-1.92 1.982a1.715 1.715 0 0 1-1.518-1.996l2.568-39.004"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m24.258 22.033l3.707 4.237c1.811 2.07 3.663 1.543 4.115-1.17l.355-2.135c.453-2.713 2.622-5.157 4.823-5.432a39 39 0 0 1 8 0c2.2.275 4.37 2.719 4.822 5.432l.355 2.136c.453 2.712 2.38 13.643 2.593 15.724"></svg:path><svg:path stroke-linecap="round" stroke-miterlimit="10" d="m24.2 22.101l-4.465 39.571"></svg:path></svg:g><svg:path fill="none" stroke="#d0cfce" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="m22.362 21.698l-3.549 30.833"></svg:path><svg:path fill="none" stroke="#d22f27" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="m18.813 52.531l-1.076 9.561"></svg:path><svg:circle cx="17.737" cy="62.172" r="1.097" fill="#d0cfce"></svg:circle><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="m22.362 21.698l-.79 6.858"></svg:path>`,
+})
+export class OpenmojiManWithWhiteCaneLightSkinToneIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

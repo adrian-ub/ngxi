@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPaneOpen16RegularIcon],svg[fluent-pane-open-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path d="M9.707 8.5l.647.646a.5.5 0 0 1-.708.707l-1.5-1.5a.5.5 0 0 1 0-.707l1.5-1.5a.5.5 0 0 1 .708.707l-.647.647h1.791a.5.5 0 0 1 0 1h-1.79z" fill="currentColor"></svg:path><svg:path d="M4 2.999a2 2 0 0 0-2 2V11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.999a2 2 0 0 0-2-2H4zm-1 2a1 1 0 0 1 1-1h2.002V12H4a1 1 0 0 1-1-1V4.999zM7.002 12V3.999H12a1 1 0 0 1 1 1V11a1 1 0 0 1-1 1H7.002z" fill="currentColor"></svg:path></svg:g>`,
+})
+export class FluentPaneOpen16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatPencilIcon],svg[fluent-emoji-flat-pencil-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#FF822D" d="m16.635 7.585l4.51 2.535l2.561 4.537L9.37 28.993l-4.862-2.57l-2.21-4.5z"></svg:path><svg:path fill="#FFCE7C" d="m1.39 28.065l.582 1.312l1.255.525l6.13-.925l-7.042-7.042z"></svg:path><svg:path fill="#402A32" d="m1.063 30.229l.326-2.164l1.838 1.837z"></svg:path><svg:path fill="#F92F60" d="M22.276 1.944a2 2 0 0 1 2.829 0l4.242 4.243a2 2 0 0 1 0 2.828l-3.535 3.536l-4.527-2.264L18.74 5.48z"></svg:path><svg:path fill="#D3D3D3" d="m18.74 5.48l7.072 7.071l-2.122 2.121l-7.07-7.07z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatPencilIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

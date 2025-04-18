@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsSingleBedRoundedIcon],svg[material-symbols-single-bed-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 11.975q0-.825.588-1.4T6 10V7q0-.825.588-1.412T8 5h8q.825 0 1.413.588T18 7v3q.825 0 1.413.588T20 12v3.65q0 .575-.387.963T18.65 17l-.55 1.675q-.05.15-.175.238T17.65 19h-.3q-.15 0-.275-.088t-.175-.237L16.35 17h-8.7l-.55 1.675q-.05.15-.175.238T6.65 19h-.3q-.15 0-.275-.088t-.175-.237L5.35 17q-.575 0-.962-.387T4 15.65zM13 10h3V7h-3zm-5 0h3V7H8z"></svg:path>`,
+})
+export class MaterialSymbolsSingleBedRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

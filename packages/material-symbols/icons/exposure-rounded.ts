@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsExposureRoundedIcon],svg[material-symbols-exposure-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5zm9.5-3h-1.25q-.325 0-.537-.213t-.213-.537t.213-.537t.537-.213h1.25v-1.25q0-.325.213-.537t.537-.213t.538.213t.212.537v1.25h1.25q.325 0 .538.213t.212.537t-.213.538t-.537.212H16v1.25q0 .325-.213.538T15.25 18t-.537-.213t-.213-.537zm-4.25-7.5q.325 0 .538-.213T11 7.75t-.213-.537T10.25 7h-3.5q-.325 0-.537.213T6 7.75t.213.538t.537.212z"></svg:path>`,
+})
+export class MaterialSymbolsExposureRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

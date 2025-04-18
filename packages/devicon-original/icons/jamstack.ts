@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[deviconOriginalJamstackIcon],svg[devicon-original-jamstack-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#f0047f" d="M61.928 9.176c-30.459 0-55.078 24.61-55.078 55.053c0 30.438 24.62 55.048 55.078 55.048c30.458 0 55.078-24.61 55.078-55.048V9.176zm1.166 14.654h38.635v38.615H63.094zM20.986 65.932h38.621v38.6c-20.905-.887-37.734-17.71-38.62-38.6zm42.108.076h38.615c-.881 20.89-17.715 37.714-38.615 38.596z"></svg:path>`,
+})
+export class DeviconOriginalJamstackIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLocationOff16RegularIcon],svg[fluent-location-off-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m11.582 12.289l2.564 2.565a.5.5 0 0 0 .708-.708l-13-13a.5.5 0 1 0-.708.708L2.99 3.697A5.97 5.97 0 0 0 2 7c0 2.867 1.935 5.506 5.732 7.922a.5.5 0 0 0 .536 0q2.005-1.275 3.313-2.633m-.707-.707q-1.027 1.07-2.556 2.11L8 13.905l-.32-.213C4.54 11.558 3 9.325 3 7c0-.943.261-1.825.715-2.578zM9.46 7.34l-1.8-1.801Q7.825 5.5 8 5.5a1.5 1.5 0 0 1 1.461 1.84m2.653 2.653Q13.001 8.523 13 7a5 5 0 0 0-7.93-4.052l-.715-.714A6 6 0 0 1 14 7q-.002 1.928-1.16 3.719z"></svg:path>`,
+})
+export class FluentLocationOff16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

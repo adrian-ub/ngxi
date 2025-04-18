@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7DecreaseIndentIcon],svg[f7-decrease-indent-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M32.184 11.36c.984 0 1.757-.774 1.757-1.782a1.74 1.74 0 0 0-1.757-1.758H2.606C1.597 7.82.8 8.594.8 9.578c0 1.008.797 1.781 1.805 1.781Zm0 12.28c.984 0 1.757-.773 1.757-1.78a1.74 1.74 0 0 0-1.757-1.758H2.606c-1.008 0-1.805.773-1.805 1.757c0 1.008.797 1.782 1.805 1.782Zm19.312 11.555c1.711 1.125 3.703.492 3.68-1.593v-11.11c.023-2.156-1.875-2.836-3.68-1.617l-7.758 5.273c-1.336.938-1.383 2.93 0 3.868Zm-19.312.727a1.76 1.76 0 0 0 1.757-1.781a1.74 1.74 0 0 0-1.757-1.758H2.606C1.597 32.383.8 33.156.8 34.14s.797 1.78 1.805 1.78Zm0 12.258a1.74 1.74 0 0 0 1.757-1.758a1.76 1.76 0 0 0-1.757-1.781H14.559a1.78 1.78 0 0 0-1.782 1.78a1.76 1.76 0 0 0 1.782 1.759Z"></svg:path>`,
+})
+export class F7DecreaseIndentIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icomoonFreeLinkIcon],svg[icomoon-free-link-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.879 9.934a.8.8 0 0 1-.575-.238a3.82 3.82 0 0 1 0-5.392l3-3C10.024.584 10.982.187 12 .187s1.976.397 2.696 1.117a3.82 3.82 0 0 1 0 5.392l-1.371 1.371a.813.813 0 0 1-1.149-1.149l1.371-1.371A2.19 2.19 0 0 0 12 1.812c-.584 0-1.134.228-1.547.641l-3 3a2.19 2.19 0 0 0 0 3.094a.813.813 0 0 1-.575 1.387z"></svg:path><svg:path fill="currentColor" d="M4 15.813a3.8 3.8 0 0 1-2.696-1.117a3.82 3.82 0 0 1 0-5.392l1.371-1.371a.813.813 0 0 1 1.149 1.149l-1.371 1.371A2.19 2.19 0 0 0 4 14.188c.585 0 1.134-.228 1.547-.641l3-3a2.19 2.19 0 0 0 0-3.094a.813.813 0 0 1 1.149-1.149a3.82 3.82 0 0 1 0 5.392l-3 3A3.8 3.8 0 0 1 4 15.813"></svg:path>`,
+})
+export class IcomoonFreeLinkIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

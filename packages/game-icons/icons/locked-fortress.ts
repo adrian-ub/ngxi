@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsLockedFortressIcon],svg[game-icons-locked-fortress-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M102.78 20.625V113.5L149 165.22v183.03h-25.875L99.53 489.156h319.94L395.874 348.25H370.03V165.22l46.22-51.72V20.625h-53.938v43.97H329.47v-43.97h-53.94v43.97h-32.436v-43.97h-53.938v43.97H156.72v-43.97zM263.813 157.72c30.17 0 54.625 24.455 54.625 54.624c0 20.84-11.65 38.946-28.812 48.156l27.625 140.25H210.375L238 260.5c-17.148-9.214-28.813-27.326-28.813-48.156c0-30.17 24.457-54.625 54.625-54.625z"></svg:path>`,
+})
+export class GameIconsLockedFortressIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

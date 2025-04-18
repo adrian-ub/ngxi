@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsLimeIcon],svg[file-icons-lime-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M362.097 165.33L206.84 249.841l.236-170.316zM207.09 443.141l155.205-93.67l-155.205-80.577zm164.69-102.757l-.008-165.648l-155.653 84.89zM194.022 73.038L37.019 160.092l156.777 88.176zM32.618 172.58v174.174l153.514-87.833zm161.428 96.063l-149.967 86.52l149.967 87.243zM176.2 512v-45.865L3.46 366.74L0 147.036L223.305 0v50.266l179.309 101.052l1.738 204.979zm17.845-54.183v22.964l190.78-129.835l.83-187.216L207.09 59.585V34.057L17.942 159.336l1.612 196.652z"></svg:path>`,
+})
+export class FileIconsLimeIcon {
+  readonly viewBox = input("0 0 405 512")
+  readonly width = input("0.8em")
+  readonly height = input("1em")
+}

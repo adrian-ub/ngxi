@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsWaterflyIiiIcon],svg[arcticons-waterfly-iii-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M42.228 42.345c1.367-.766-8.462-9.706-12.822-14.503l-1.57-2.879c7.04-2.292 15.765-4.747 13.72-9.457c-1.668-3.357-9.371 5.507-14.28 8.373C32.66 18.734 38.94 7.362 34.342 5.64c-4.503-1.52-3.692 9.837-8.336 17.12l-1.272-.749c-1.615-2.008-1.897-.93-2.466-.372c-.49.583-1.868.93.373 2.766l.524 1.046c-5.382 4-18.199 2.496-17.494 6.99c.485 1.245 4.228 6.114 18.728-5.383c-1.15 2.572-11.345 10.124-8.785 12.746c.933.938 5.818 2.103 10.131-12l2.205 1.271c4.747 4.485 13.191 14.813 14.28 13.27z"></svg:path>`,
+})
+export class ArcticonsWaterflyIiiIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

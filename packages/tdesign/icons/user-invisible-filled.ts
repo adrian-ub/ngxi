@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tdesignUserInvisibleFilledIcon],svg[tdesign-user-invisible-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.5 2a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11m12.09 16s-1.671 4.5-6.09 4.5a5.84 5.84 0 0 1-2.528-.557l-.971.971l-1.415-1.414l.718-.718C11.972 19.512 11.41 18 11.41 18s1.674-4.5 6.09-4.5c.972 0 1.811.218 2.529.558l.972-.972l1.414 1.414l-.718.718C23.028 16.49 23.59 18 23.59 18m-3.303-1.372l-3.753 3.753c.298.075.62.119.965.119c2.615 0 3.87-2.5 3.87-2.5s-.355-.71-1.082-1.372m-1.82-1.008a4 4 0 0 0-.968-.12c-2.621 0-3.87 2.5-3.87 2.5s.356.71 1.084 1.373z"></svg:path><svg:path fill="currentColor" d="M9.536 18.698L9.276 18l.26-.699V17.3l.002-.003l.004-.01l.008-.022a4 4 0 0 1 .111-.266a10.6 10.6 0 0 1 1.623-2.555a10 10 0 0 1 .408-.443H8a6 6 0 0 0-6 6v2h9.691a10 10 0 0 1-.407-.444a10.6 10.6 0 0 1-1.623-2.555a7 7 0 0 1-.111-.266l-.009-.023l-.003-.008l-.002-.004z"></svg:path>`,
+})
+export class TdesignUserInvisibleFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

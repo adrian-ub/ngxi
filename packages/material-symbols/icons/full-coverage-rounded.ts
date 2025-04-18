@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsFullCoverageRoundedIcon],svg[material-symbols-full-coverage-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 21q-.825 0-1.412-.587T2 19V8q0-.425.288-.712T3 7t.713.288T4 8v11h14q.425 0 .713.288T19 20t-.288.713T18 21zm4-4q-.825 0-1.412-.587T6 15V4q0-.425.288-.712T7 3h15q.425 0 .713.288T23 4v11q0 .825-.587 1.413T21 17zm3-5h2q.425 0 .713-.288T14 11V8q0-.425-.288-.712T13 7h-2q-.425 0-.712.288T10 8v3q0 .425.288.713T11 12m5 0h2q.425 0 .713-.288T19 11t-.288-.712T18 10h-2q-.425 0-.712.288T15 11t.288.713T16 12m0-3h2q.425 0 .713-.288T19 8t-.288-.712T18 7h-2q-.425 0-.712.288T15 8t.288.713T16 9"></svg:path>`,
+})
+export class MaterialSymbolsFullCoverageRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

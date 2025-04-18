@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[bxsShowerIcon],svg[bxs-shower-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21 18.33A6.8 6.8 0 0 0 19.5 15a6.73 6.73 0 0 0-1.5 3.33a1.51 1.51 0 1 0 3 0m-10 2A6.8 6.8 0 0 0 9.5 17A6.73 6.73 0 0 0 8 20.33A1.59 1.59 0 0 0 9.5 22a1.59 1.59 0 0 0 1.5-1.67m5 0A6.8 6.8 0 0 0 14.5 17a6.73 6.73 0 0 0-1.5 3.33A1.59 1.59 0 0 0 14.5 22a1.59 1.59 0 0 0 1.5-1.67m-10-2A6.8 6.8 0 0 0 4.5 15A6.73 6.73 0 0 0 3 18.33A1.59 1.59 0 0 0 4.5 20A1.59 1.59 0 0 0 6 18.33M2 12h20v2H2zm11-7.93V2h-2v2.07A8 8 0 0 0 4.07 11h15.86A8 8 0 0 0 13 4.07"></svg:path>`,
+})
+export class BxsShowerIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

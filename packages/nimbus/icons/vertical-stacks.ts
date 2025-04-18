@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[nimbusVerticalStacksIcon],svg[nimbus-vertical-stacks-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.82 2.5H1.18C.53 2.5 0 3.03 0 3.68V6.2c0 .65.53 1.18 1.18 1.18h13.64c.65 0 1.18-.53 1.18-1.18V3.68c0-.65-.53-1.18-1.18-1.18m-.07 3.62H1.25V3.75h13.5zm.07 2.5H1.18C.53 8.62 0 9.15 0 9.8v2.52c0 .65.53 1.18 1.18 1.18h13.64c.65 0 1.18-.53 1.18-1.18V9.8c0-.65-.53-1.18-1.18-1.18m-.07 3.63H1.25V9.87h13.5z"></svg:path>`,
+})
+export class NimbusVerticalStacksIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

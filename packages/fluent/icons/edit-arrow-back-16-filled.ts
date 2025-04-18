@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEditArrowBack16FilledIcon],svg[fluent-edit-arrow-back-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.529 1.764a2.621 2.621 0 1 1 3.707 3.707l-.547.547a5.5 5.5 0 0 0-1.05-.587L9.75 2.543zM10.5 5q.151 0 .301.008L9.043 3.25L2.657 9.635a2.96 2.96 0 0 0-.772 1.355l-.87 3.386a.5.5 0 0 0 .61.608l3.385-.869c.355-.091.689-.247.985-.46A5.5 5.5 0 0 1 10.5 5m0 10a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m-.896-6.396l-.897.896h1.543A2.75 2.75 0 0 1 13 12.25v.25a.5.5 0 0 1-1 0v-.25a1.75 1.75 0 0 0-1.75-1.75H8.707l.897.896a.5.5 0 0 1-.708.708L7.144 10.35a.5.5 0 0 1 .002-.705l1.75-1.75a.5.5 0 1 1 .708.708"></svg:path>`,
+})
+export class FluentEditArrowBack16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

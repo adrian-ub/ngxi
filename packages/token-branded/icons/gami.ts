@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedGamiIcon],svg[token-branded-gami-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FA096F" d="M16.5 16.044a5.32 5.32 0 0 1-3.656 1.58C10.25 17.625 7.5 15.32 7.5 12s2.75-5.625 5.344-5.625a5.43 5.43 0 0 1 4.207 2.21l2.824-1.844A8.72 8.72 0 0 0 12.844 3c-4.658 0-8.719 4.027-8.719 9s4.061 9 8.719 9a8.72 8.72 0 0 0 7.031-3.74v-6.385h-6.187v2.812H16.5z"></svg:path>`,
+})
+export class TokenBrandedGamiIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

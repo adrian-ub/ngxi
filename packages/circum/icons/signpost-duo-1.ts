@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circumSignpostDuo1Icon],svg[circum-signpost-duo-1-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.437 11.5H6.536a2.63 2.63 0 0 1-1.723-.629L2.564 8.915a1.33 1.33 0 0 1 .006-2.084L4.813 4.88a2.62 2.62 0 0 1 1.723-.629h13.9a1.45 1.45 0 0 1 1.5 1.393v4.463a1.45 1.45 0 0 1-1.499 1.393m-13.9-6.25a1.64 1.64 0 0 0-1.067.384L3.215 7.6a.36.36 0 0 0-.152.281a.35.35 0 0 0 .141.27l.011.01l2.254 1.961a1.64 1.64 0 0 0 1.067.384h13.9a.463.463 0 0 0 .5-.394V5.644a.463.463 0 0 0-.5-.393Zm10.927 14.499H3.563a1.45 1.45 0 0 1-1.5-1.394v-4.463a1.45 1.45 0 0 1 1.5-1.393h13.9a2.62 2.62 0 0 1 1.724.63l2.249 1.956a1.33 1.33 0 0 1-.007 2.083l-2.242 1.951a2.63 2.63 0 0 1-1.723.63M3.563 13.5a.463.463 0 0 0-.5.393v4.463a.463.463 0 0 0 .5.394h13.9a1.64 1.64 0 0 0 1.068-.385l2.253-1.96a.36.36 0 0 0 .152-.28a.35.35 0 0 0-.141-.271l-.011-.01l-2.254-1.96a1.64 1.64 0 0 0-1.067-.384Z"></svg:path>`,
+})
+export class CircumSignpostDuo1Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

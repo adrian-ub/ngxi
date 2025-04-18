@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[meteoconsWindsockWeakFillIcon],svg[meteocons-windsock-weak-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:lineargradient id="meteoconsWindsockWeakFill0" x1="90" x2="206" y1="155.6" y2="356.4" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#d4d7dd"></svg:stop><svg:stop offset=".5" stop-color="#d4d7dd"></svg:stop><svg:stop offset="1" stop-color="#bec1c6"></svg:stop></svg:lineargradient><svg:lineargradient id="meteoconsWindsockWeakFill1" x1="183.6" x2="221.9" y1="151.2" y2="217.6" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#f87171"></svg:stop><svg:stop offset=".5" stop-color="#f87171"></svg:stop><svg:stop offset="1" stop-color="#dc2626"></svg:stop></svg:lineargradient><svg:lineargradient id="meteoconsWindsockWeakFill2" x1="234.2" x2="262.2" y1="200.2" y2="248.7" href="#meteoconsWindsockWeakFill1"></svg:lineargradient><svg:lineargradient id="meteoconsWindsockWeakFill3" x1="270.9" x2="291.6" y1="252.4" y2="288.4" href="#meteoconsWindsockWeakFill1"></svg:lineargradient></svg:defs><svg:path fill="none" stroke="url(#meteoconsWindsockWeakFill0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" d="M148 376V136"></svg:path><svg:path fill="url(#meteoconsWindsockWeakFill1)" stroke="#ef4444" stroke-miterlimit="10" stroke-width="2" d="m239.7 154.7l-22.8-18a6.4 6.4 0 0 0-9.5 1.8l-41 71a6.4 6.4 0 0 0 3.2 9.2l27 10.7a6.4 6.4 0 0 0 7.9-2.7l36.8-63.8a6.4 6.4 0 0 0-1.6-8.2Z"><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="rotate" values="0 204 183; -3 204 183; 0 204 183"></svg:animatetransform><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="translate" values="0 0; 1 -2; 0 0"></svg:animatetransform></svg:path><svg:path fill="url(#meteoconsWindsockWeakFill2)" stroke="#ef4444" stroke-miterlimit="10" stroke-width="2" d="m285.2 210.6l-17.4-23.3a6.4 6.4 0 0 0-9.6-.7L213 231.8a6.4 6.4 0 0 0 .7 9.7l23.3 17.3a6.4 6.4 0 0 0 8.3-.6l39.3-39.2a6.4 6.4 0 0 0 .6-8.4Z"><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="rotate" values="0 249 222; -6 249 222; 0 249 222"></svg:animatetransform><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="translate" values="0 0; 5 -7; 0 0"></svg:animatetransform></svg:path><svg:path fill="url(#meteoconsWindsockWeakFill3)" stroke="#ef4444" stroke-miterlimit="10" stroke-width="2" d="m310.5 271.2l-10.7-27a6.4 6.4 0 0 0-9.1-3.2L251 263.9a6.4 6.4 0 0 0-1.9 9.5l18 22.8a6.4 6.4 0 0 0 8.2 1.5l32.4-18.7a6.4 6.4 0 0 0 2.7-7.8Z"><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="rotate" values="0 279 269; -9 279 269; 0 279 269"></svg:animatetransform><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="translate" values="0 0; 17 -12; 0 0"></svg:animatetransform></svg:path>`,
+})
+export class MeteoconsWindsockWeakFillIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

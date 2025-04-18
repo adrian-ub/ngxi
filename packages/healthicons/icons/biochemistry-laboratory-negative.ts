@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[healthiconsBiochemistryLaboratoryNegativeIcon],svg[healthicons-biochemistry-laboratory-negative-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:g fill="currentColor" clip-path="url(#healthiconsBiochemistryLaboratoryNegative0)"><svg:path fill-rule="evenodd" d="M32 16.679c2.282-1.52 4-2.99 4-5.679h2c0 3.411-2.077 5.381-4.188 6.865c.831.558 1.657 1.163 2.338 1.856C37.222 20.81 38 22.174 38 24s-.778 3.19-1.85 4.28c-.681.692-1.507 1.297-2.338 1.855C35.922 31.619 38 33.589 38 37h-2q-.001-.53-.086-1H31a1 1 0 1 1 0-2h4.065c-.722-1.019-1.808-1.841-3.065-2.678c-2.282 1.52-4 2.99-4 5.678h-2c0-3.411 2.077-5.381 4.188-6.865c-.831-.558-1.657-1.163-2.338-1.856C26.778 27.19 26 25.826 26 24s.778-3.19 1.85-4.28c.681-.692 1.507-1.297 2.338-1.855C28.078 16.381 26 14.411 26 11h2q.001.53.086 1H33a1 1 0 1 1 0 2h-4.065c.722 1.019 1.808 1.841 3.065 2.678m0 2.388c-1.004.653-1.896 1.251-2.6 1.933h5.2c-.703-.682-1.596-1.28-2.6-1.933M28 24q.001-.536.128-1h7.744q.127.464.128 1q-.001.536-.128 1h-7.744A3.8 3.8 0 0 1 28 24m1.4 3c.704.682 1.596 1.28 2.6 1.933c1.004-.653 1.897-1.251 2.6-1.933z" clip-rule="evenodd"></svg:path><svg:path d="M14 16a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h1v4.048l-4.231 6.85C9.123 33.563 11.039 37 14.172 37h6.656c3.132 0 5.05-3.437 3.403-6.102L20 24.048V20h1a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"></svg:path><svg:path fill-rule="evenodd" d="M48 0H0v48h48zM6 9a3 3 0 0 1 3-3h30a3 3 0 0 1 3 3v30a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z" clip-rule="evenodd"></svg:path></svg:g><svg:defs><svg:clippath id="healthiconsBiochemistryLaboratoryNegative0"><svg:path d="M0 0h48v48H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
+})
+export class HealthiconsBiochemistryLaboratoryNegativeIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

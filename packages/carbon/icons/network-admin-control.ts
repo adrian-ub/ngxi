@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonNetworkAdminControlIcon],svg[carbon-network-admin-control-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M27 20.415L25.586 19L23 21.587L20.414 19L19 20.415L21.586 23L19 25.586L20.414 27L23 24.414L25.586 27L27 25.586L24.414 23zM24 4a4.005 4.005 0 0 0-4 4a3.95 3.95 0 0 0 .567 2.019L10.019 20.567A3.95 3.95 0 0 0 8 20a4 4 0 1 0 4 4a3.95 3.95 0 0 0-.567-2.019l10.548-10.548A3.95 3.95 0 0 0 24 12a4 4 0 0 0 0-8M8 26a2 2 0 1 1 2-2a2 2 0 0 1-2 2m16-16a2 2 0 1 1 2-2a2 2 0 0 1-2 2M8 11.18L5.41 8.59L4 10l4 4l7-7l-1.41-1.41z"></svg:path>`,
+})
+export class CarbonNetworkAdminControlIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

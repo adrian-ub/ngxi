@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[wiMoonWaxingCrescent1Icon],svg[wi-moon-waxing-crescent-1-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15.01 25.71c2.04 0 3.92-.5 5.65-1.51s3.09-2.37 4.09-4.1s1.51-3.61 1.51-5.65s-.5-3.92-1.51-5.65s-2.37-3.09-4.09-4.09s-3.61-1.51-5.65-1.51c1.32.52 2.48 1.2 3.47 2.06s1.78 1.79 2.35 2.82s.99 2.07 1.27 3.13s.41 2.14.41 3.24c0 .64-.02 1.26-.07 1.84s-.15 1.2-.29 1.87s-.33 1.28-.56 1.86s-.54 1.15-.92 1.74s-.83 1.11-1.35 1.58s-1.14.92-1.87 1.33s-1.55.75-2.44 1.04"></svg:path>`,
+})
+export class WiMoonWaxingCrescent1Icon {
+  readonly viewBox = input("0 0 30 30")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

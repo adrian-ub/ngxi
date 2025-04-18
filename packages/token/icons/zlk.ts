@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenZlkIcon],svg[token-zlk-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.217 7.703c0-.175.092-.34.243-.423l7.141-4.212a.49.49 0 0 1 .486-.005l7.448 4.217a.49.49 0 0 1 .248.428v8.581a.49.49 0 0 1-.248.428l-7.452 4.218a.49.49 0 0 1-.487 0L4.46 16.717a.49.49 0 0 1-.243-.423zm2.18.91a.5.5 0 0 0-.234.418v6.09c0 .176.092.336.238.424l5.19 3.113a.49.49 0 0 0 .497 0l2.286-1.372a.496.496 0 0 0-.005-.846L9.81 13.764a.5.5 0 0 1-.243-.427V7.528a.486.486 0 0 0-.74-.418L6.396 8.618z"></svg:path>`,
+})
+export class TokenZlkIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

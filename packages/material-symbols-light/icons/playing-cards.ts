@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightPlayingCardsIcon],svg[material-symbols-light-playing-cards-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m14.93 14.03l.862-3.13l-2.684-1.854l-.862 3.131zM4.617 19.288l-.422-.189q-.794-.344-1.069-1.141q-.275-.798.075-1.553l1.416-3.035zM9 20.769q-.825 0-1.412-.59Q7 19.589 7 18.764v-4.725l2.214 6.08q.074.195.144.347q.069.153.194.303zm4.362-.971q-.64.237-1.243-.036t-.838-.914L7.22 7.7q-.236-.64.046-1.24t.923-.835l6.41-2.346q.64-.237 1.24.046t.835.923l4.066 11.148q.236.64-.037 1.24q-.273.599-.914.835z"></svg:path>`,
+})
+export class MaterialSymbolsLightPlayingCardsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

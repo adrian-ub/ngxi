@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBinFull20RegularIcon],svg[fluent-bin-full-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.932 2.248a.5.5 0 0 1-.18.684L4.349 9H8v-.5A1.5 1.5 0 0 1 9.5 7H12v-.5A1.5 1.5 0 0 1 13.5 5h2A1.5 1.5 0 0 1 17 6.5V9h.5a.5.5 0 0 1 .5.5v6a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 2 15.5v-6a.5.5 0 0 1 .248-.432l12-7a.5.5 0 0 1 .684.18M16.5 10H3v5.5A1.5 1.5 0 0 0 4.5 17h11a1.5 1.5 0 0 0 1.5-1.5V10zM12 9V8H9.5a.5.5 0 0 0-.5.5V9zm1 0h3V6.5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5z"></svg:path>`,
+})
+export class FluentBinFull20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

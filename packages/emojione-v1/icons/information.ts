@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneV1InformationIcon],svg[emojione-v1-information-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#1b75bb" d="M63.665 56.802a6.863 6.863 0 0 1-6.86 6.868H6.86A6.864 6.864 0 0 1 0 56.802V6.864A6.863 6.863 0 0 1 6.86 0h49.944c3.79 0 6.86 3.074 6.86 6.864z"></svg:path><svg:path fill="#fff" d="M31.888 14.11q-2.08 0-3.563-1.277q-1.481-1.278-1.48-3.618q-.001-2.126 1.516-3.491q1.517-1.373 3.528-1.373q1.938 0 3.436 1.244q1.499 1.242 1.499 3.62q0 2.302-1.463 3.6c-1.463 1.298-2.133 1.295-3.473 1.295m4.934 10.311v28.843q-.002 2.998-1.424 4.53q-1.427 1.533-3.621 1.535c-2.194.002-2.651-.523-3.564-1.574q-1.37-1.57-1.369-4.491V24.716q0-2.964 1.369-4.463q1.37-1.497 3.564-1.496c2.194.001 2.67.497 3.621 1.496c.948.998 1.424 2.39 1.424 4.168"></svg:path>`,
+})
+export class EmojioneV1InformationIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

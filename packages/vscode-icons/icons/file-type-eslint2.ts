@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeEslint2Icon],svg[vscode-icons-file-type-eslint2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#4b32c3" d="M13.027 30L2.39 20.422l2.979-14L18.973 2l10.637 9.578l-2.979 14zM7.883 18.642l6.342 5.7l8.112-2.642l1.781-8.344l-6.343-5.712L9.663 10.3z"></svg:path><svg:path fill="#8080f2" d="M21.72 25.915H10.28L4.554 16l5.726-9.915h11.44L27.446 16zm-9.426-3.491h7.413L23.419 16l-3.712-6.424h-7.414L8.593 16l3.7 6.424Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeEslint2Icon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

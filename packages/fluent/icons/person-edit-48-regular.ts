@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonEdit48RegularIcon],svg[fluent-person-edit-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M22 4c-5.523 0-10 4.477-10 10s4.477 10 10 10s10-4.477 10-10S27.523 4 22 4m-7.5 10a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0m-4.25 14A4.25 4.25 0 0 0 6 32.249V33c0 3.755 1.942 6.567 4.92 8.38C13.85 43.163 17.785 44 21.998 44q.002-.493.132-1.003l.39-1.502q-.26.005-.52.005c-3.932 0-7.37-.788-9.78-2.255C9.86 37.808 8.5 35.745 8.5 33v-.751a1.75 1.75 0 0 1 1.75-1.749h20.897l2.462-2.5zm34.584-2.832a3.98 3.98 0 0 0-5.652.022L25.671 38.913a3 3 0 0 0-.767 1.351l-.838 3.234c-.383 1.477.961 2.82 2.437 2.438l3.235-.839a3 3 0 0 0 1.351-.766L44.812 30.82a3.98 3.98 0 0 0 .022-5.651"></svg:path>`,
+})
+export class FluentPersonEdit48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedGhoIcon],svg[token-branded-gho-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#C9B4F9" d="M14.724 12h3.486L21 16.8v3H10.362C6.294 19.8 3 16.434 3 12.276v-.552C3 7.56 6.3 4.2 10.362 4.2h4.47l1.728 3h-5.838a4.74 4.74 0 0 0-4.68 4.788c0 2.64 2.094 4.812 4.68 4.812h6.792zM11.4 9.9a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m0 4.2a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0"></svg:path>`,
+})
+export class TokenBrandedGhoIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

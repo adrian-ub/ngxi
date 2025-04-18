@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[deviconBiomeIcon],svg[devicon-biome-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#60a5fa" d="M64 8.584L35.487 57.967a64.36 64.36 0 0 1 33.735-1.17l9.635 2.27l-9.054 38.429l-9.665-2.261c-11.855-2.802-23.23 3.421-28.053 13.356l-8.924-4.312C29.964 90.222 46 81.719 62.429 85.6l4.522-19.159A54.42 54.42 0 0 0 20.67 76.736A54.47 54.47 0 0 0 0 119.416h128zm0 0"></svg:path>`,
+})
+export class DeviconBiomeIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

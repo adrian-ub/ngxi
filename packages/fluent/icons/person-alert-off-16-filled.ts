@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonAlertOff16FilledIcon],svg[fluent-person-alert-off-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 14h.089a1.475 1.475 0 0 1 .444-1.644l.966-.82V10q0-.184.016-.363L6.94 9.06A1.5 1.5 0 0 1 6.5 8h-4A1.5 1.5 0 0 0 1 9.5v.5c0 1.971 1.86 4 5 4m1.256-7.303q.037-.021.075-.04A2.75 2.75 0 0 0 6 1.5a2.75 2.75 0 1 0 1.256 5.197m7.39 8.657L13.293 14h-5.79a.5.5 0 0 1-.323-.881L8.5 12v-2q0-.367.084-.71l-.938-.936a.5.5 0 1 1 .708-.708l7 7a.5.5 0 0 1-.708.708m-.147-2.976L9.712 7.59A3 3 0 0 1 14.499 10zM11.5 16a1.5 1.5 0 0 1-1.414-1h2.829a1.5 1.5 0 0 1-1.415 1"></svg:path>`,
+})
+export class FluentPersonAlertOff16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

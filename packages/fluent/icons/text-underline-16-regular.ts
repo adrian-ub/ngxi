@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTextUnderline16RegularIcon],svg[fluent-text-underline-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.5 2a.5.5 0 0 1 .5.5V8c0 1.624 1.376 3 3 3s3-1.376 3-3V2.5a.5.5 0 0 1 1 0V8c0 2.176-1.824 4-4 4s-4-1.824-4-4V2.5a.5.5 0 0 1 .5-.5M4 13.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5"></svg:path>`,
+})
+export class FluentTextUnderline16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

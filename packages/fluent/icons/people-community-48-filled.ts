@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPeopleCommunity48FilledIcon],svg[fluent-people-community-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.5 11.5a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0M9.5 9a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11m29 0a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11M18.25 21A3.25 3.25 0 0 0 15 24.25V32a9 9 0 1 0 18 0v-7.75A3.25 3.25 0 0 0 29.75 21zm-5.098 1.99q-.151.606-.152 1.26V32a10.98 10.98 0 0 0 4.087 8.557q-.227.075-.46.136A9 9 0 0 1 5.603 34.33l-1.489-5.554a3.25 3.25 0 0 1 2.299-3.98zm17.76 17.567A10.98 10.98 0 0 0 35 32v-7.75q-.002-.654-.152-1.26l6.738 1.805a3.25 3.25 0 0 1 2.298 3.98l-1.488 5.554a9 9 0 0 1-11.483 6.228"></svg:path>`,
+})
+export class FluentPeopleCommunity48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

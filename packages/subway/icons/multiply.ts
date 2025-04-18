@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[subwayMultiplyIcon],svg[subway-multiply-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0m121.3 316.5c8.4 8.4 8.4 22 0 30.4l-30.4 30.4c-8.4 8.4-22 8.4-30.4 0l-60.8-60.8l-60.8 60.8c-8.4 8.4-22 8.4-30.4 0L134 346.9c-8.4-8.4-8.4-22 0-30.4l60.8-60.8l-60.8-60.9c-8.4-8.4-8.4-22 0-30.4l30.4-30.4c8.4-8.4 22-8.4 30.4 0l60.8 60.8l60.8-60.8c8.4-8.4 22-8.4 30.4 0l30.4 30.4c8.4 8.4 8.4 22 0 30.4l-60.8 60.8z"></svg:path>`,
+})
+export class SubwayMultiplyIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

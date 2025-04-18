@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightPanoramaPhotosphereSharpIcon],svg[material-symbols-light-panorama-photosphere-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.98 20.346q-2.37 0-4.344-1.231T4.539 15.78L2 14.735v-5.47L4.539 8.22q1.123-2.102 3.097-3.333t4.345-1.232t4.345 1.232t3.097 3.333L22 9.266v5.469l-2.577 1.046q-1.123 2.102-3.097 3.334t-4.345 1.231m0-1q1.84 0 3.361-.828q1.521-.827 2.627-2.295q-1.417.37-2.924.573q-1.507.204-3.064.204t-3.065-.204t-2.924-.573q1.106 1.468 2.627 2.295q1.522.828 3.362.828m0-14.692q-1.84 0-3.362.828q-1.521.827-2.627 2.295q1.418-.37 2.924-.573Q10.423 7 11.981 7t3.064.204t2.924.573q-1.105-1.468-2.627-2.295q-1.52-.828-3.361-.828"></svg:path>`,
+})
+export class MaterialSymbolsLightPanoramaPhotosphereSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

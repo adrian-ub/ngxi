@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBorderNone16RegularIcon],svg[fluent-border-none-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.5 3A1.5 1.5 0 0 0 3 4.5a.5.5 0 0 1-1 0A2.5 2.5 0 0 1 4.5 2a.5.5 0 0 1 0 1M3 11.5a.5.5 0 0 0-1 0A2.5 2.5 0 0 0 4.5 14a.5.5 0 0 0 0-1A1.5 1.5 0 0 1 3 11.5m10.5-.5a.5.5 0 0 1 .5.5a2.5 2.5 0 0 1-2.5 2.5a.5.5 0 0 1 0-1a1.5 1.5 0 0 0 1.5-1.5a.5.5 0 0 1 .5-.5m-2-9a.5.5 0 0 0 0 1A1.5 1.5 0 0 1 13 4.5a.5.5 0 0 0 1 0A2.5 2.5 0 0 0 11.5 2m-5 .5A.5.5 0 0 1 7 2h2a.5.5 0 0 1 0 1H7a.5.5 0 0 1-.5-.5M2 9a.5.5 0 0 0 1 0V7a.5.5 0 0 0-1 0zm4.5 4.5A.5.5 0 0 1 7 13h2a.5.5 0 0 1 0 1H7a.5.5 0 0 1-.5-.5M13 9a.5.5 0 0 0 1 0V7a.5.5 0 0 0-1 0z"></svg:path>`,
+})
+export class FluentBorderNone16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

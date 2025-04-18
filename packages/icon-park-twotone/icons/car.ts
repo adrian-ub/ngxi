@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkTwotoneCarIcon],svg[icon-park-twotone-car-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipTCar0"><svg:g fill="none"><svg:path fill="#fff" fill-rule="evenodd" d="M13.5 32a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m21 0a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5" clip-rule="evenodd"></svg:path><svg:path fill="#555" stroke="#fff" stroke-linejoin="round" stroke-width="4" d="M7 37a3 3 0 0 1-3-3v-9.29a6 6 0 0 1 3.319-5.368l.682-.34l2.31-9.91A4 4 0 0 1 14.205 6h19.688a4 4 0 0 1 3.904 3.128l2.205 9.874l.68.34A6 6 0 0 1 44 24.708V34a3 3 0 0 1-3 3h-1.997v1A4.001 4.001 0 0 1 31 38v-1H17v1a4 4 0 1 1-8 0v-1z"></svg:path><svg:path fill="#555" stroke="#fff" stroke-linejoin="round" stroke-width="4" d="M14 22h20l-1.652-7.434A2 2 0 0 0 30.396 13H17.604a2 2 0 0 0-1.952 1.566z"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTCar0)"></svg:path>`,
+})
+export class IconParkTwotoneCarIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

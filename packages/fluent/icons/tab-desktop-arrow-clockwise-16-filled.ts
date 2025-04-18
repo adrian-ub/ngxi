@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTabDesktopArrowClockwise16FilledIcon],svg[fluent-tab-desktop-arrow-clockwise-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 4a2 2 0 0 1 2-2h3v1.75C7 4.44 7.56 5 8.25 5H14v7a2 2 0 0 1-2 2H9c.628-.836 1-1.874 1-3a5 5 0 0 0-.75-2.635V7.25a1.5 1.5 0 0 0-2.633-.983A5 5 0 0 0 5 6a4.98 4.98 0 0 0-3 1zm6-2v1.75c0 .138.112.25.25.25H14a2 2 0 0 0-2-2zm.247 5.198a.5.5 0 0 0-.997.052v.442A4 4 0 1 0 9 11a.5.5 0 0 0-1 0a3 3 0 1 1-1.341-2.5H6a.5.5 0 0 0 0 1h1.75a.5.5 0 0 0 .5-.5V7.25q0-.027-.003-.052"></svg:path>`,
+})
+export class FluentTabDesktopArrowClockwise16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[etPresentationIcon],svg[et-presentation-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M.5 3a.5.5 0 0 0-.5.5v17c0 .827.673 1.5 1.5 1.5h28c.827 0 1.5-.673 1.5-1.5v-17a.5.5 0 0 0-1 0v17a.5.5 0 0 1-.5.5h-28a.5.5 0 0 1-.5-.5v-17A.5.5 0 0 0 .5 3m32-3h-34a.5.5 0 0 0 0 1h34a.5.5 0 0 0 0-1"></svg:path><svg:path d="M11.854 8.146a.5.5 0 0 0-.674-.031l-6 5a.5.5 0 0 0 .641.769l5.649-4.708l5.677 5.677a.5.5 0 0 0 .707.001L25 7.707V11.5a.5.5 0 0 0 1 0v-5a.5.5 0 0 0-.309-.462A.5.5 0 0 0 25.5 6h-5a.5.5 0 0 0 0 1h3.793L17.5 13.793zM8.057 31.732a.5.5 0 0 0 .675.211l6.768-3.545l6.768 3.545a.5.5 0 0 0 .464-.886l-6.893-3.61a.5.5 0 0 0 .161-.364V24.5a.5.5 0 0 0-1 0v2.583c0 .144.063.272.161.363l-6.893 3.61a.5.5 0 0 0-.211.676"></svg:path></svg:g>`,
+})
+export class EtPresentationIcon {
+  readonly viewBox = input("0 0 31 32")
+  readonly width = input("0.97em")
+  readonly height = input("1em")
+}

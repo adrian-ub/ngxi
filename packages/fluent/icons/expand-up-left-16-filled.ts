@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentExpandUpLeft16FilledIcon],svg[fluent-expand-up-left-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.23 2.5a.5.5 0 0 0-.5-.5H2.5a.5.5 0 0 0-.5.5v4.23a.5.5 0 0 0 1 0V3.708l3.377 3.377a.5.5 0 1 0 .707-.707L3.707 3H6.73a.5.5 0 0 0 .5-.5m4.27.5A1.5 1.5 0 0 1 13 4.5V8H9.769a1.77 1.77 0 0 0-1.77 1.77V13H4.5A1.5 1.5 0 0 1 3 11.5V9.27a.5.5 0 0 0-1 0v2.23A2.5 2.5 0 0 0 4.5 14h7a2.5 2.5 0 0 0 2.5-2.5v-7A2.5 2.5 0 0 0 11.5 2H9.27a.5.5 0 0 0 0 1z"></svg:path>`,
+})
+export class FluentExpandUpLeft16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsBlenderOutlineRoundedIcon],svg[material-symbols-blender-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 22q-.825 0-1.412-.587T6 20v-1q0-1.175.513-2.175T7.85 15.15L7.225 11H5q-.825 0-1.412-.588T3 9V5q0-.825.588-1.412T5 3h5q.275-.275.438-.638T11 2h2q.4 0 .563.363T14 3h2.8q.45 0 .763.35t.237.8l-1.65 11q.825.675 1.338 1.675T18 19v1q0 .825-.587 1.413T16 22zM6.925 9l-.6-4H5v4zM12 19q.425 0 .713-.288T13 18t-.288-.712T12 17t-.712.288T11 18t.288.713T12 19m-2.3-5h4.6l1.35-9h-7.3zM8 20h8v-1q0-1.25-.875-2.125T13 16h-2q-1.25 0-2.125.875T8 19zm4-2"></svg:path>`,
+})
+export class MaterialSymbolsBlenderOutlineRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

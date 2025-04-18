@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPinOff20FilledIcon],svg[fluent-pin-off-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.854 2.146a.5.5 0 1 0-.708.708l4.75 4.75l-2.878 1.15a1 1 0 0 0-.335 1.636L6.293 13L3 16.293V17h.707L7 13.707l2.61 2.61a1 1 0 0 0 1.636-.335l1.15-2.878l4.75 4.75a.5.5 0 0 0 .708-.708zm14.008 7.732l-3.242 1.62L8.501 6.38l1.621-3.242a2 2 0 0 1 3.203-.52l4.057 4.057a2 2 0 0 1-.52 3.203"></svg:path>`,
+})
+export class FluentPinOff20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

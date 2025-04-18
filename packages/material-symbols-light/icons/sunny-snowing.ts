@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightSunnySnowingIcon],svg[material-symbols-light-sunny-snowing-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.23 13.25v-1h3v1zm4.62-4.942L4.712 6.175l.713-.708L7.539 7.6zm-.853 9.884q-.349 0-.586-.24t-.238-.59t.24-.586t.59-.237t.587.24t.237.59q0 .348-.24.586t-.59.237M8 13.25v-.5q0-1.671 1.165-2.835Q10.329 8.75 12 8.75t2.836 1.165T16 12.75v.5zm.997 8.942q-.349 0-.586-.24t-.238-.59t.24-.586t.59-.237t.586.24t.238.59q0 .348-.24.586t-.59.237m3-4q-.349 0-.586-.24t-.238-.59t.24-.586t.59-.237t.586.24t.238.59q0 .348-.24.586t-.59.237M11.5 5.981v-3h1v3zm3.497 16.211q-.349 0-.586-.24t-.238-.59t.24-.586t.59-.237t.586.24t.238.59q0 .348-.24.586t-.59.237M17.15 8.308l-.713-.708l2.138-2.133l.689.708zm.847 9.884q-.349 0-.586-.24t-.238-.59t.24-.586t.59-.237t.587.24t.237.59q0 .348-.24.586t-.59.237m.772-4.942v-1h3v1z"></svg:path>`,
+})
+export class MaterialSymbolsLightSunnySnowingIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

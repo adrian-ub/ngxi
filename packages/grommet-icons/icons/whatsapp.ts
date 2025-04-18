@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[grommetIconsWhatsappIcon],svg[grommet-icons-whatsapp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:g clip-path="url(#grommetIconsWhatsapp0)"><svg:path fill="currentColor" d="m.057 24l1.687-6.163a11.87 11.87 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488a11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592c5.448 0 9.886-4.434 9.889-9.885c.002-5.462-4.415-9.89-9.881-9.892c-5.452 0-9.887 4.434-9.89 9.884c0 2.225.652 3.891 1.747 5.634l-1 3.648zm11.387-5.464c-.074-.124-.272-.198-.57-.347s-1.758-.868-2.031-.967c-.272-.099-.47-.149-.67.149c-.197.297-.767.967-.94 1.165s-.347.223-.644.074s-1.255-.462-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.297-.347.446-.521c.15-.172.2-.296.3-.495c.099-.198.05-.372-.025-.521c-.075-.148-.67-1.611-.916-2.206c-.242-.579-.487-.501-.67-.51l-.57-.01c-.197 0-.52.074-.791.372c-.272.298-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074s2.095 3.2 5.076 4.487c.709.306 1.263.489 1.694.626c.712.226 1.36.194 1.872.118c.57-.085 1.758-.719 2.006-1.413s.248-1.29.173-1.414"></svg:path></svg:g><svg:defs><svg:clippath id="grommetIconsWhatsapp0"><svg:path fill="#fff" d="M0 0h24v24H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
+})
+export class GrommetIconsWhatsappIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

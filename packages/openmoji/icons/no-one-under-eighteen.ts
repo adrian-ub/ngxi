@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiNoOneUnderEighteenIcon],svg[openmoji-no-one-under-eighteen-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="36" cy="36" r="26" fill="#fff"></svg:circle><svg:path fill="#ea5a47" d="M36 7C19.98 7 7 19.98 7 36s12.98 29 29 29s29-12.98 29-29S52.02 7 36 7M10.79 36.27c0-5.075 3.417-12.69 6.202-16.49l35.2 35.27c-3.805 2.784-10.93 5.904-16.01 5.904c-12.7 0-25.39-11.98-25.39-24.68zm44.87 15.18L20.6 16.32c3.805-2.784 10.77-5.441 15.84-5.441c12.7 0 24.68 12.25 24.68 24.95c0 5.075-2.686 11.81-5.47 15.62z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="36" cy="36" r="30"></svg:circle><svg:path d="M36.29 27.28a6.789 6.751 0 0 1 2.35-8.026a6.789 6.751 0 0 1 8.398.4a6.789 6.751 0 0 1 1.569 8.212a6.789 6.751 0 0 1-7.666 3.433"></svg:path><svg:path d="M40.75 31.64a11.31 11.25 0 0 1 9.863 3.175a11.31 11.25 0 0 1 3.123 9.831M45.74 53.55a11.31 11.25 0 0 1-11.15-2.844a11.31 11.25 0 0 1-2.874-11.09"></svg:path><svg:path stroke-miterlimit="10" d="M26.5 18.09v.041m0 16.13v19.72"></svg:path><svg:path d="M55.66 51.44A24.99 24.99 0 0 0 20.6 16.31zM16.99 19.77a24.99 24.99 0 0 0 35.2 35.27z"></svg:path></svg:g>`,
+})
+export class OpenmojiNoOneUnderEighteenIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circumSquareQuestionIcon],svg[circum-square-question-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.41 12.461a1.6 1.6 0 0 1 .341-.6a2.7 2.7 0 0 1 .535-.417a2.2 2.2 0 0 0 .363-.285a1.2 1.2 0 0 0 .256-.364a1.1 1.1 0 0 0 .095-.451a.93.93 0 0 0-.142-.518a.95.95 0 0 0-.374-.338a1.14 1.14 0 0 0-.519-.119a1.2 1.2 0 0 0-.5.107a.93.93 0 0 0-.389.335a1 1 0 0 0-.111.224a.515.515 0 0 1-.483.359a.506.506 0 0 1-.479-.675a1.7 1.7 0 0 1 .178-.348a1.8 1.8 0 0 1 .748-.634a2.6 2.6 0 0 1 2.113.015a1.73 1.73 0 0 1 .721.642a1.77 1.77 0 0 1 .257.959a1.8 1.8 0 0 1-.118.678a1.7 1.7 0 0 1-.334.536a2.3 2.3 0 0 1-.52.417a2.3 2.3 0 0 0-.462.37a1.1 1.1 0 0 0-.256.454a2 2 0 0 0-.045.283a.486.486 0 0 1-.483.429a.484.484 0 0 1-.483-.53a3 3 0 0 1 .091-.529"></svg:path><svg:circle cx="11.792" cy="14.894" r=".587" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M18.438 20.938H5.563a2.5 2.5 0 0 1-2.5-2.5V5.564a2.5 2.5 0 0 1 2.5-2.5h12.875a2.5 2.5 0 0 1 2.5 2.5v12.874a2.5 2.5 0 0 1-2.5 2.5M5.563 4.064a1.5 1.5 0 0 0-1.5 1.5v12.874a1.5 1.5 0 0 0 1.5 1.5h12.875a1.5 1.5 0 0 0 1.5-1.5V5.564a1.5 1.5 0 0 0-1.5-1.5Z"></svg:path>`,
+})
+export class CircumSquareQuestionIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

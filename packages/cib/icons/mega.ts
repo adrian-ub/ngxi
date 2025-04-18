@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cibMegaIcon],svg[cib-mega-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 0C7.161 0 0 7.161 0 16s7.161 16 16 16s16-7.161 16-16S24.839 0 16 0m8.307 21.656a.5.5 0 0 1-.5.5h-2.089a.5.5 0 0 1-.495-.5v-6.438c0-.052-.063-.078-.104-.042l-4.427 4.427a.99.99 0 0 1-1.391 0l-4.427-4.427c-.036-.036-.109-.01-.109.042v6.438c0 .276-.219.5-.495.5H8.181a.493.493 0 0 1-.495-.5V10.343c0-.276.219-.495.495-.495h1.432c.266 0 .516.104.703.292l5.505 5.505c.094.099.25.099.349 0l5.505-5.505a.98.98 0 0 1 .698-.292h1.432c.276 0 .5.219.5.495z"></svg:path>`,
+})
+export class CibMegaIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

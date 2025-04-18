@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamTagIcon],svg[jam-tag-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m17.014.872l3.448 3.447a2 2 0 0 1 .463 2.103l-1.763 4.812a1 1 0 0 1-.232.363l-8.323 8.323a2 2 0 0 1-2.829 0l-6.364-6.364a2 2 0 0 1 0-2.828l8.333-8.333a1 1 0 0 1 .364-.232L14.913.408a2 2 0 0 1 2.101.464m-6.009 3.094l-8.177 8.176l6.364 6.364l8.168-8.167l1.687-4.605L15.6 2.286zm2.784 3.58a1.5 1.5 0 1 1 2.12-2.121a1.5 1.5 0 0 1-2.12 2.12z"></svg:path>`,
+})
+export class JamTagIcon {
+  readonly viewBox = input("-1.5 -1.5 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightSignalWifiStatusbarNotConnectedIcon],svg[material-symbols-light-signal-wifi-statusbar-not-connected-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 19.577L1.423 9q2.183-1.964 4.91-2.982Q9.063 5 12 5t5.666 1.018Q20.394 7.037 22.577 9l-.538.539q-.662-.555-1.401-.855T19 8.385q-1.921 0-3.268 1.357T14.385 13q0 .956.338 1.753q.339.797.816 1.286zm6.962-.5q-.271 0-.45-.178q-.178-.178-.178-.449t.178-.449t.45-.178q.27 0 .449.178q.178.178.178.449t-.178.449t-.45.178M18.52 16.8q0-.892.231-1.388q.23-.497.998-1.303q.487-.486.685-.835t.198-.71q0-.527-.37-.98q-.369-.453-1.174-.453q-.64 0-1.081.347t-.698.826l-.812-.358q.339-.68 1.004-1.179q.666-.498 1.587-.498q1.07 0 1.75.629t.679 1.677q0 .575-.25 1.006t-.989 1.169q-.542.542-.702.934q-.16.391-.16 1.116z"></svg:path>`,
+})
+export class MaterialSymbolsLightSignalWifiStatusbarNotConnectedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

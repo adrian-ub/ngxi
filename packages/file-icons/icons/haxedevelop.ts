@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsHaxedevelopIcon],svg[file-icons-haxedevelop-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M493.09 457.91L255.939 62.635L18.91 457.764zM94.256 219.587l-67.472 203.23L230.362 83.481zm390.838 203.15l-67.935-203.96L281.493 83.425zM99.212 371.754H274.87v11.262H99.21zm205.684 0H413.6v11.262H304.896zm-227.488 45.05h91.405v11.262H77.408zm122.77 0h148.348v11.262H200.18zm177.022 0h61.087v11.262H377.2zM258.011 44.085L426.755 212.84L512 469.113l-512-.119l84.638-255.342L254.407 43.557c1.495-1.135 2.648-.741 3.604.53"></svg:path>`,
+})
+export class FileIconsHaxedevelopIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

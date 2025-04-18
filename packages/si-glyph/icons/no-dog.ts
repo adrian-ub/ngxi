@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphNoDogIcon],svg[si-glyph-no-dog-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="m13.125 5.149l-.342-1.128l-2.163 2.138l1.081 1.127l2.294.493l.97-.712zm-3.061 1.926H5.451c-.018 0-2.242-.952-2.576-1.096v.444l1.502 1.372c-.195.241-.332.503-.332.704v3.417l1.378.104v-1.207l1.878-.95h2.342l.469 2.054h.88V8.015z"></svg:path><svg:path d="M9.01 15.958c-4.405 0-7.989-3.565-7.989-7.948S4.605.063 9.01.063s7.989 3.564 7.989 7.947s-3.584 7.948-7.989 7.948M8.979 1.073c-3.902 0-7.077 3.135-7.077 6.989s3.175 6.989 7.077 6.989s7.077-3.136 7.077-6.989c0-3.854-3.175-6.989-7.077-6.989"></svg:path><svg:path d="m11.157 1.314l1.207.58l-6.348 13.213l-1.207-.58z"></svg:path></svg:g>`,
+})
+export class SiGlyphNoDogIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}

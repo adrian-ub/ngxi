@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatMendingHeartIcon],svg[fluent-emoji-flat-mending-heart-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#F92F60" d="M21.016 5.16c-1.873.327-3.457 1.9-4.318 2.934c-.349.418-1.048.418-1.396 0c-.861-1.034-2.445-2.607-4.318-2.934C6.26 4.33 3.405 6.857 2.404 10l3.197 4.296l.494 7.332c3.054 3.718 6.983 6.718 8.84 8.04a1.825 1.825 0 0 0 2.13 0c2.581-1.84 9.161-6.92 11.84-12.666l-1.55-3.807l-.81-7.203c-1.41-.853-3.252-1.233-5.529-.832"></svg:path><svg:path fill="#E6E6E6" d="M29.595 10H2.405a8.6 8.6 0 0 0-.151 4.683c.198.78.484 1.554.838 2.317h25.813a13.3 13.3 0 0 0 .841-2.317A8.6 8.6 0 0 0 29.595 10"></svg:path><svg:path fill="#F4F4F4" d="M2.87 16.497L26.528 5.982c1.85 1.112 2.96 3.037 3.33 5.086L6.097 21.629c-1.317-1.602-2.47-3.339-3.227-5.132"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatMendingHeartIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

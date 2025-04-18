@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fa6SolidToiletPaperIcon],svg[fa6-solid-toilet-paper-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M444.2 0c-47 49.6-60.2 126.5-60.2 192c0 158.8-27.3 247-42.7 283.9c-10 24-33.2 36.1-55.4 36.1H48c-11.5 0-22.2-6.2-27.8-16.2s-5.6-22.3.4-32.2c9.8-17.7 15.4-38.2 20.5-57.7C52.3 362.8 64 293.5 64 192C64 86 107 0 160 0zM512 384c-53 0-96-86-96-192S459 0 512 0s96 86 96 192s-43 192-96 192m0-128c17.7 0 32-28.7 32-64s-14.3-64-32-64s-32 28.7-32 64s14.3 64 32 64m-368-48a16 16 0 1 0-32 0a16 16 0 1 0 32 0m64 0a16 16 0 1 0-32 0a16 16 0 1 0 32 0m48 16a16 16 0 1 0 0-32a16 16 0 1 0 0 32m80-16a16 16 0 1 0-32 0a16 16 0 1 0 32 0"></svg:path>`,
+})
+export class Fa6SolidToiletPaperIcon {
+  readonly viewBox = input("0 0 640 512")
+  readonly width = input("1.25em")
+  readonly height = input("1em")
+}

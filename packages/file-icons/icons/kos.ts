@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsKosIcon],svg[file-icons-kos-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M149.303 277.62H52.299C15.269 276.143-.53 257.84.013 248.003c.523-9.491 18.529-24.274 58.282-28.568h165.789v31.022h-74.781zm74.781-27.162h73.908v-31.022h25.441l70.904-71.51h105.258l-85.87 102.96L512 364.126H405.744l-84.306-84.805H224.66zm-76.167-44.232v-58.3h149.787l.288 71.626h-73.908v-13.326zm145.935 87.751v70.149H149.59l-.288-86.507h75.736v16.358z"></svg:path>`,
+})
+export class FileIconsKosIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[deviconLabviewIcon],svg[devicon-labview-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#bec7cc" d="M105.085 59.84a3.54 3.54 0 0 0-3.54 3.54v1.34a3.54 3.54 0 0 0 3.54 3.54h19.38a3.54 3.54 0 0 0 3.54-3.54v-1.34a3.54 3.54 0 0 0-3.54-3.54zM3.535 41.8a3.54 3.54 0 0 0-3.54 3.54v1.35a3.54 3.54 0 0 0 3.54 3.54h19.38a3.54 3.54 0 0 0 3.54-3.54v-1.35a3.54 3.54 0 0 0-3.54-3.54zm0 36.07a3.54 3.54 0 0 0-3.54 3.54v1.34a3.54 3.54 0 0 0 3.54 3.54h19.38a3.54 3.54 0 0 0 3.54-3.54v-1.34a3.54 3.54 0 0 0-3.54-3.54z" opacity=".998"></svg:path><svg:path fill="#ffd500" d="M29.755 22.46c-4.42-.09-8.06 2.99-8.06 6.82v69.43c0 5.25 6.56 8.53 11.81 5.91l69.49-34.72c5.25-2.62 5.25-9.18 0-11.8l-69.49-34.72a8.9 8.9 0 0 0-3.75-.91z" opacity=".998"></svg:path><svg:path fill="#727b84" d="M64.535 67.07h-11.95v11.99h-6.15V67.08h-11.95V61h11.95V49.02h6.15v11.99h11.95z" opacity=".998"></svg:path>`,
+})
+export class DeviconLabviewIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

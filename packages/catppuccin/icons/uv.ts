@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[catppuccinUvIcon],svg[catppuccin-uv-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="#f5bde6" stroke-linejoin="round" d="M1 1h5.8v9.1h2.8V1H15v14h-2v-1.4h-1.5c-.2.8-.9 1.4-1.8 1.4H3.2C1.9 15 1 14 1 12.9z"></svg:path>`,
+})
+export class CatppuccinUvIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiOncomingPoliceCarIcon],svg[openmoji-oncoming-police-car-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#d0cfce" d="m22.647 27.358l4.808-2.504l17.533-.042l5.222 4.049l2.612 9.184l2.031 1.753l-.456 12.356l-37.013.377v-13.48l1.03-.54z"></svg:path><svg:path fill="#92d3f5" d="m23.192 37.462l25.564-.019l-2.91-9.288H26.314z"></svg:path><svg:path fill="#fcea2b" d="M19.978 41.33h5v3.51h-5zm26 0h5v3.51h-5z"></svg:path><svg:path fill="#61b2e4" d="M29.839 20.533h-2.622v4.306h8.739v-4.306z"></svg:path><svg:path fill="#d22f27" d="M38.636 20.533h-2.68v4.306h8.933v-4.306z"></svg:path><svg:path fill="#fff" d="M35.126 20.533h-1.311v4.306h4.37v-4.306z"></svg:path><svg:rect width="37.242" height="4.236" x="17.641" y="47.844" fill="#3f3f3f" rx="2.118" ry="2.118"></svg:rect><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24.095 37.443h24.661l-2.878-8.591"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M32 42.161h9m-9 2.632h9"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 44.793h4v-2.632m22 2.632h4v-2.632"></svg:path><svg:rect width="6" height="3.51" x="18" y="52.49" rx="1.755" ry="1.755"></svg:rect><svg:rect width="6" height="3.51" x="48" y="52.49" rx="1.755" ry="1.755"></svg:rect><svg:rect width="4.965" height="3.274" x="52.478" y="35.502" rx="1.637" ry="1.637"></svg:rect><svg:rect width="4.965" height="3.274" x="14.504" y="35.686" rx="1.637" ry="1.637"></svg:rect><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.388 24.313c0-2.369 1.18-4.307 2.621-4.307h13.982c1.442 0 2.621 1.938 2.621 4.307h0M19.598 38.337l2.05-6.963c1.128-3.83 4.819-6.964 8.202-6.964H36m16.402 13.927l-2.05-6.963c-1.129-3.83-4.819-6.964-8.202-6.964H36m.262 28.08H19.913a2.946 2.946 0 0 1-2.926-2.947v-7.038c0-1.596.89-4.075 2.492-4.075"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M35.685 52.49h16.35a2.946 2.946 0 0 0 2.926-2.947v-7.038c0-1.596-.89-4.075-2.493-4.075"></svg:path>`,
+})
+export class OpenmojiOncomingPoliceCarIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

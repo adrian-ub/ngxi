@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fa6SolidWineGlassEmptyIcon],svg[fa6-solid-wine-glass-empty-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M64 0C47.4 0 33.5 12.8 32.1 29.3l-14 168.4c-6 72 42.5 135.2 109.9 150.6v99.6H80c-17.7 0-32 14.3-32 32s14.3 32 32 32h160c17.7 0 32-14.3 32-32s-14.3-32-32-32h-48v-99.6c67.4-15.4 115.9-78.6 109.9-150.6l-14-168.4C286.5 12.8 272.6 0 256 0zm17.9 203.1L93.4 64h133.1l11.6 139.1C242 248.8 205.9 288 160 288s-82-39.2-78.1-84.9"></svg:path>`,
+})
+export class Fa6SolidWineGlassEmptyIcon {
+  readonly viewBox = input("0 0 320 512")
+  readonly width = input("0.63em")
+  readonly height = input("1em")
+}

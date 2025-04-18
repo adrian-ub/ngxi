@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[elTextHeightIcon],svg[el-text-height-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M991.699 0L783.398 209.399H922.85V990.6H783.398L991.699 1200L1200 990.601h-139.38V209.399H1200zM5.933 207.642L0 420.703h74.048c0-146.136.1-145.972 186.841-145.972V862.5c0 73.264-.037 73.141-102.539 71.338v58.521h379.468v-58.521c-102.335 0-102.539-.179-102.539-71.338V274.731c186.839 0 187.354.041 187.354 145.972h73.535l-5.347-213.062z"></svg:path>`,
+})
+export class ElTextHeightIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

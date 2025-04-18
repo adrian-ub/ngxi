@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedNaosIcon],svg[token-branded-naos-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedNaos0)" d="M12 3c4.94 0 9 4.013 9 9c0 4.94-4.013 9-9 9c-4.94 0-9-4.013-9-9s4.013-9 9-9"></svg:path><svg:path fill="#F0F3FA" d="M13.853 10.01a.51.51 0 0 1 .264.439a.4.4 0 0 1-.068.233a.51.51 0 0 1-.461.26a.5.5 0 0 1-.212-.07L7.764 7.447v8.931l2.446-1.133a.46.46 0 0 1 .244-.068c.17 0 .328.095.423.264c.053.08.074.175.07.265a.51.51 0 0 1-.255.402l-3.219 1.62c-.095.048-.19.096-.286.096c-.29 0-.481-.191-.481-.477V6.669c0-.095 0-.143.052-.238c.138-.239.424-.334.668-.191l6.432 3.764z"></svg:path><svg:path fill="#F0F3FA" d="M10.121 13.402a.47.47 0 0 1-.238-.423q0-.11.048-.223c.069-.158.26-.232.45-.227a.7.7 0 0 1 .227.042l5.628 3.399V7.468l-2.435 1.291a.48.48 0 0 1-.499-.011a.5.5 0 0 1-.174-.174a.42.42 0 0 1-.069-.26a.49.49 0 0 1 .265-.386l3.198-1.662c.095-.043.19-.09.286-.09c.29 0 .487.185.487.46v10.197c0 .095 0 .138-.053.233c-.143.228-.434.275-.672.185z"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedNaos0" x1="18.088" x2="4.059" y1="4.853" y2="18.088" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#5A47F0"></svg:stop><svg:stop offset="1" stop-color="#2A1BA8"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedNaosIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

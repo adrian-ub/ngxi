@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiFlagNamibiaIcon],svg[twemoji-flag-namibia-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#009543" d="M1.067 29.701A3.97 3.97 0 0 0 4 31h28a4 4 0 0 0 4-4V9a3.97 3.97 0 0 0-1.019-2.643z"></svg:path><svg:path fill="#003580" d="M34.933 6.299A3.97 3.97 0 0 0 32 5H4a4 4 0 0 0-4 4v18a3.97 3.97 0 0 0 1.019 2.643z"></svg:path><svg:path fill="#EEE" d="M36 9a4 4 0 0 0-4-4h-.664L0 26.942V27a4 4 0 0 0 4 4h.664L36 9.059z"></svg:path><svg:path fill="#D20F34" d="M32.984 5.136L.175 28.108a3.99 3.99 0 0 0 2.912 2.777L35.843 7.949a3.99 3.99 0 0 0-2.859-2.813"></svg:path><svg:path fill="#FFCE00" d="m8 8l.809 1.981L10.5 8.67l-.29 2.12l2.12-.29l-1.311 1.691L13 13l-1.981.809L12.33 15.5l-2.12-.29l.29 2.12l-1.691-1.311L8 18l-.809-1.981L5.5 17.33l.29-2.12l-2.12.29l1.311-1.691L3 13l1.981-.809L3.67 10.5l2.12.29l-.29-2.12l1.691 1.311z"></svg:path><svg:circle cx="8" cy="13" r="3.175" fill="#003580"></svg:circle><svg:circle cx="8" cy="13" r="2.467" fill="#FFCE00"></svg:circle>`,
+})
+export class TwemojiFlagNamibiaIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

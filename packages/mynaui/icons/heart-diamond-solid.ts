@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiHeartDiamondSolidIcon],svg[mynaui-heart-diamond-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.79 1.49a3.2 3.2 0 0 0-1.025.686L2.177 9.765a3.16 3.16 0 0 0 0 4.47l7.588 7.588a3.16 3.16 0 0 0 4.47 0l7.588-7.588a3.16 3.16 0 0 0 0-4.47l-7.588-7.588a3.16 3.16 0 0 0-3.445-.686m1.511 14.634a.75.75 0 0 1-.832 0l-.005-.003l-.009-.006l-.032-.022l-.117-.081a15 15 0 0 1-1.628-1.341c-.444-.427-.91-.938-1.27-1.492c-.354-.545-.648-1.2-.648-1.898a2.531 2.531 0 0 1 4.125-1.966a2.52 2.52 0 0 1 1.594-.565c.628 0 1.27.18 1.764.629c.505.459.767 1.12.767 1.902c0 .698-.295 1.353-.648 1.898c-.36.554-.826 1.065-1.27 1.491a15 15 0 0 1-1.745 1.423l-.032.022l-.01.006z"></svg:path>`,
+})
+export class MynauiHeartDiamondSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

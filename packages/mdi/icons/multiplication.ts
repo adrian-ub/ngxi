@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiMultiplicationIcon],svg[mdi-multiplication-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 3h2v7.27l6.29-3.63l1 1.73L14 12l6.3 3.64l-1 1.73l-6.3-3.65V21h-2v-7.27l-6.31 3.63l-1-1.73L10 12L3.72 8.36l1-1.73L11 10.26z"></svg:path>`,
+})
+export class MdiMultiplicationIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

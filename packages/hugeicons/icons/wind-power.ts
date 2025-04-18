@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsWindPowerIcon],svg[hugeicons-wind-power-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 11a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m7.5-.5a9.18 9.18 0 0 0-3.928-7m-10.144 0A9.18 9.18 0 0 0 3 10.5m9-1V7m-1.5 4.5l-2 1.5m4.998-1.5l2 1.5M12 12.5V22m6 0H6m4.08-18.01l.162 1.517c.058.542.086 1.111.628 1.378C11.103 7 11.402 7 12 7s.897 0 1.13-.115c.542-.267.57-.836.628-1.378l.162-1.517c.062-.585.245-1.36-.299-1.77C13.33 2 12.886 2 12 2s-1.329 0-1.621.22c-.544.41-.361 1.185-.299 1.77m9.011 8.945l-1.414-.626c-.505-.223-1.02-.486-1.529-.146c-.219.146-.37.407-.673.93s-.455.786-.473 1.048c-.04.61.446.922.892 1.246l1.25.908c.483.35 1.07.902 1.706.634c.342-.145.566-.533 1.016-1.308c.449-.776.674-1.164.628-1.53c-.084-.684-.857-.915-1.403-1.156m-14.182 0l1.414-.626c.505-.223 1.02-.486 1.529-.146c.219.146.37.407.673.93s.455.786.473 1.048c.04.61-.446.922-.892 1.246l-1.25.908c-.483.35-1.07.902-1.706.634c-.342-.145-.566-.533-1.016-1.308c-.449-.776-.673-1.164-.628-1.53c.084-.684.857-.915 1.403-1.156" color="currentColor"></svg:path>`,
+})
+export class HugeiconsWindPowerIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

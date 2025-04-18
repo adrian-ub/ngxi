@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneDepartmentStoreIcon],svg[emojione-department-store-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#d0d0d0" d="M0 60h64v4H0z"></svg:path><svg:path fill="#62727a" d="M2 32h60v28H2z"></svg:path><svg:path fill="#d6eef0" d="M6 42h14v18H6z"></svg:path><svg:path fill="#3e4347" d="M2 27h60v6H2z"></svg:path><svg:path fill="#83bf4f" d="M0 27c0 2.2 1.8 4 4 4s4-1.8 4-4z"></svg:path><svg:path fill="#d33b23" d="M8 27c0 2.2 1.8 4 4 4s4-1.8 4-4z"></svg:path><svg:path fill="#83bf4f" d="M16 27c0 2.2 1.8 4 4 4s4-1.8 4-4z"></svg:path><svg:path fill="#c7e755" d="M16 18h8v9h-8z"></svg:path><svg:path fill="#d33b23" d="M24 27c0 2.2 1.8 4 4 4s4-1.8 4-4z"></svg:path><svg:path fill="#f15744" d="M24 18h8v9h-8z"></svg:path><svg:path fill="#c7e755" d="M0 18h8v9H0z"></svg:path><svg:path fill="#f15744" d="M8 18h8v9H8z"></svg:path><svg:path fill="#c7e755" d="M48 18h8v9h-8z"></svg:path><svg:path fill="#f15744" d="M56 18h8v9h-8z"></svg:path><svg:path fill="#83bf4f" d="M32 27c0 2.2 1.8 4 4 4s4-1.8 4-4z"></svg:path><svg:path fill="#c7e755" d="M32 18h8v9h-8z"></svg:path><svg:path fill="#d33b23" d="M40 27c0 2.2 1.8 4 4 4s4-1.8 4-4z"></svg:path><svg:path fill="#f15744" d="M40 18h8v9h-8z"></svg:path><svg:path fill="#83bf4f" d="M48 27c0 2.2 1.8 4 4 4s4-1.8 4-4z"></svg:path><svg:path fill="#d33b23" d="M56 27c0 2.2 1.8 4 4 4s4-1.8 4-4z"></svg:path><svg:path fill="#fff" d="M13 33c-5 0-9 4-9 9h18c0-5-4-9-9-9"></svg:path><svg:path fill="#62727a" d="M6.3 40h13.4c-.9-2.9-3.5-5-6.7-5s-5.8 2.1-6.7 5"></svg:path><svg:path fill="#fff" d="M6 42h2v18H6zm12 0h2v18h-2z"></svg:path><svg:path fill="#b4d7ee" d="M8 42h10v2H8z"></svg:path><svg:path fill="#fff" d="M27 33h30v20H27z"></svg:path><svg:path fill="#3e4347" d="M59 56c0 .5-.5 1-1 1H26c-.5 0-1-.5-1-1v-2c0-.5.5-1 1-1h32c.5 0 1 .5 1 1z"></svg:path><svg:path fill="#d6eef0" d="M29 35h26v16H29z"></svg:path><svg:path fill="#b4d7ee" d="M29 35h26v2H29z"></svg:path><svg:path fill="#62727a" d="M16 47c-.6 0-1 .6-1 1.3v2c0 .7.4 1.7.8 2.1l.4.4c.4.4.8.2.8-.5v-3.9c0-.8-.5-1.4-1-1.4"></svg:path><svg:path fill="#3e4347" d="M64 18H0V2C0 .9.9 0 2 0h60c1.1 0 2 .9 2 2z"></svg:path><svg:path fill="#e8e8e8" d="M3 2c-.5 0-1 .5-1 1v12c0 .6.5 1 1 1h58c.5 0 1-.4 1-1V3c0-.5-.5-1-1-1z"></svg:path><svg:g fill="#3e4347"><svg:path d="M17.5 5.1c-2.3-1-4.9-1.5-7.4-.8c-2.4.7-2.7 3.6-.7 5c1.9 1.2 4.3.2 6.3 1.2c.8.4.2 1.1-.3 1.3c-.7.2-1.3.2-1.9.2c-1.3 0-2.9-.2-4-.9s-2.1 1-1 1.7c1.9 1.2 4.9 1.4 7 .9c2.2-.5 3.4-3.1 1.5-4.7c-1.6-1.4-4.1-.8-6.1-1.3c-.6-.1-1.4-.6-.8-1.3c.6-.5 1.9-.4 2.5-.4c1.3 0 2.9.4 3.9.9c1.2.5 2.2-1.3 1-1.8M50 13V5l-1 1c.8 0 6.1-.2 4.9 1.4c-.8 1-3.7.6-4.9.6c-1.3 0-1.3 2 0 2c2.2 0 6.7.4 7-2.7c.3-3.8-4.5-3.3-7-3.3c-.5 0-1 .5-1 1v8c0 1.3 2 1.3 2 0M22 5v8c0 1.3 2 1.3 2 0V5c0-1.3-2-1.3-2 0m8 0v8c0 1.3 2 1.3 2 0V5c0-1.3-2-1.3-2 0"></svg:path><svg:path d="M23 10h8c1.3 0 1.3-2 0-2h-8c-1.3 0-1.3 2 0 2"></svg:path></svg:g><svg:circle cx="40" cy="9" r="4" fill="none" stroke="#3e4347" stroke-miterlimit="10" stroke-width="2"></svg:circle><svg:g fill="#3e4347"><svg:circle cx="5" cy="9" r="1"></svg:circle><svg:circle cx="59" cy="9" r="1"></svg:circle></svg:g>`,
+})
+export class EmojioneDepartmentStoreIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCommentArrowRight12FilledIcon],svg[fluent-comment-arrow-right-12-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 3.5a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0m-1.5.5a.5.5 0 0 0 0-1H7.707l.647-.646a.5.5 0 1 0-.708-.708l-1.5 1.5A.5.5 0 0 0 6 3.497v.006a.5.5 0 0 0 .146.35l1.5 1.5a.5.5 0 1 0 .708-.707L7.707 4zm-2 4a4.5 4.5 0 0 0 2.484-.747A2 2 0 0 1 9 9H6.651l-2.874 1.916A.5.5 0 0 1 3 10.5V9a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1.758A4.5 4.5 0 0 0 8.5 8"></svg:path>`,
+})
+export class FluentCommentArrowRight12FilledIcon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

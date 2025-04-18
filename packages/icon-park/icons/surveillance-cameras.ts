@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkSurveillanceCamerasIcon],svg[icon-park-surveillance-cameras-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path d="M43 6H23H5"></svg:path><svg:path d="M23 23V6"></svg:path><svg:path fill="#2F88FF" d="M8.42498 19.5798L40.3005 28.1209L38.5581 30.7598L34.5557 37.9696L32.8133 40.6085L4.80151 33.1028L8.42498 19.5798Z"></svg:path><svg:path d="M38.5583 30.7598L42.422 31.7951L40.3515 39.5225L34.5559 37.9696"></svg:path></svg:g>`,
+})
+export class IconParkSurveillanceCamerasIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

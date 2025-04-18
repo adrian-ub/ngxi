@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedSandIcon],svg[token-branded-sand-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#00AEEF" d="M19.313 8.625h-5.625V6.937h-3.376v3.375h7.238L19.312 12v7.154L17.55 21H6.508l-1.82-1.846v-3.78h5.624v2.25h3.376v-3.937H6.465L4.688 12V4.846L6.508 3H17.55l1.762 1.846z"></svg:path>`,
+})
+export class TokenBrandedSandIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cbiSolanaSolIcon],svg[cbi-solana-sol-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.751 10.2a.66.66 0 0 0-.463-.191H2.328a.326.326 0 0 0-.231.558l3.152 3.153a.65.65 0 0 0 .463.191h15.96a.326.326 0 0 0 .231-.558zM2.328 8.065h15.96a.65.65 0 0 0 .463-.191L21.9 4.721a.326.326 0 0 0-.231-.558H5.712a.68.68 0 0 0-.463.191L2.1 7.507a.326.326 0 0 0 .228.558m19.344 7.87H5.712a.65.65 0 0 0-.463.191L2.1 19.279a.326.326 0 0 0 .231.558h15.96a.66.66 0 0 0 .463-.191l3.146-3.153a.326.326 0 0 0-.228-.558"></svg:path>`,
+})
+export class CbiSolanaSolIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

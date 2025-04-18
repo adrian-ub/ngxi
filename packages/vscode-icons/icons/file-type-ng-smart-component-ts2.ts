@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeNgSmartComponentTs2Icon],svg[vscode-icons-file-type-ng-smart-component-ts2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#930031" d="M15.63 2L2.596 6.648l1.988 17.234L15.63 30l11.046-6.118l1.988-17.234z"></svg:path><svg:path fill="#79002f" d="M15.63 2v3.108v-.014V30l11.046-6.118l1.988-17.234z"></svg:path><svg:path fill="#fff" d="m15.63 5.094l-8.148 18.27h3.038l1.638-4.088h6.916l1.638 4.088h3.038zm2.38 11.662h-4.76l2.38-5.726Z"></svg:path><svg:path fill="#007acc" d="M28.385 20.525a2.84 2.84 0 0 1 1.426.822a3.8 3.8 0 0 1 .547.731c.007.029-.985.7-1.586 1.068c-.022.014-.109-.08-.206-.224a1.3 1.3 0 0 0-1.072-.644c-.692-.047-1.137.315-1.133.92a.84.84 0 0 0 .1.427c.152.315.434.5 1.321.887c1.633.7 2.332 1.166 2.766 1.825a3.31 3.31 0 0 1 .264 2.781a3.06 3.06 0 0 1-2.523 1.807a7 7 0 0 1-1.739-.025a4.2 4.2 0 0 1-2.321-1.2a4 4 0 0 1-.594-.88a2 2 0 0 1 .21-.134l.847-.489l.655-.38l.138.2a3.1 3.1 0 0 0 .865.829a2.12 2.12 0 0 0 2.219-.112a.99.99 0 0 0 .127-1.264c-.177-.253-.539-.467-1.568-.912a5.65 5.65 0 0 1-2.147-1.321a3 3 0 0 1-.626-1.14a4.6 4.6 0 0 1-.04-1.455a2.78 2.78 0 0 1 2.339-2.165a5.8 5.8 0 0 1 1.731.048m-5.355.952l.007.934h-2.968v8.436h-2.1v-8.436H15V21.5a9 9 0 0 1 .025-.941c.011-.014 1.817-.022 4.008-.018l3.986.011Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeNgSmartComponentTs2Icon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

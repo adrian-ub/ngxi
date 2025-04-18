@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[elTumblrIcon],svg[el-tumblr-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1200 0v1200H0V0zM698.943 874.63c-20.393-5.684-40.498-12.145-56.448-24.735q-9.514-7.611-9.514-13.953V528.964H827.06v-134.46H632.981v-202.96H521.354c-8.321 104.2-63.527 202.96-172.517 202.96v134.46h92.601v332.347c.382 52.267 24.514 97.235 66.598 121.144c39.829 20.617 81.797 25.865 123.679 26.004c41.049-.2 84.731.617 123.679-1.903c34.102-1.224 66.789-9.025 95.771-23.467V838.477v1.269q-25.37 16.49-55.813 27.907c-34.048 11.164-64.44 14.827-96.409 6.977"></svg:path>`,
+})
+export class ElTumblrIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

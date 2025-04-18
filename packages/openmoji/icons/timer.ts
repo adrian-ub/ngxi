@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiTimerIcon],svg[openmoji-timer-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="35.905" cy="36.014" r="27.035" fill="#fcea2b"></svg:circle><svg:circle cx="36.006" cy="36.037" r="21.871" fill="#fff"></svg:circle><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M55.11 25.38a21.863 21.863 0 1 1-8.095-8.245"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M62.94 35.997a27.046 27.046 0 1 1-5.266-16.038"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m47.394 21.578l11.038-1.16l-1.16-11.038m-7.297 26.974H35.891V18.52m0 35.391v-3.845M21.143 36.354h-3.057h0"></svg:path><svg:circle cx="35.891" cy="36.354" r="3.737"></svg:circle><svg:circle cx="48.694" cy="47.937" r="1.48"></svg:circle><svg:circle cx="23.087" cy="24.717" r="1.48"></svg:circle><svg:circle cx="23.087" cy="47.937" r="1.48"></svg:circle>`,
+})
+export class OpenmojiTimerIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

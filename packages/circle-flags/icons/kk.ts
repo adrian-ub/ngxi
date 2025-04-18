@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsKkIcon],svg[circle-flags-kk-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsKk0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsKk0)"><svg:path fill="#338af3" d="M0 0h512v512H0z"></svg:path><svg:path fill="#ffda44" d="M400.7 258.8H111.3c0 20 17.4 36.2 37.4 36.2h-1.2c0 20 16.2 36.1 36.2 36.1c0 20 16.1 36.2 36.1 36.2h72.4c20 0 36.1-16.2 36.1-36.2c20 0 36.2-16.2 36.2-36.1h-1.2c20 0 37.4-16.2 37.4-36.2"></svg:path><svg:path fill="#338af3" d="M356.2 211.5a100.2 100.2 0 0 1-200.4 0"></svg:path><svg:path fill="#ffda44" d="m332.5 211.5l-31.3 14.7l16.7 30.3l-34-6.5l-4.3 34.3L256 259l-23.6 25.3L228 250l-34 6.5l16.6-30.3l-31.2-14.7l31.2-14.7l-16.6-30.3l34 6.5l4.3-34.3l23.6 25.2l23.6-25.2L284 173l34-6.5l-16.6 30.3z"></svg:path></svg:g>`,
+})
+export class CircleFlagsKkIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

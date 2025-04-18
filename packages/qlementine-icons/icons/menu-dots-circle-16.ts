@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsMenuDotsCircle16Icon],svg[qlementine-icons-menu-dots-circle-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8 15c3.87 0 7-3.13 7-7s-3.13-7-7-7s-7 3.13-7 7s3.13 7 7 7m0 1c4.42 0 8-3.58 8-8s-3.58-8-8-8s-8 3.58-8 8s3.58 8 8 8" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M7.2 4.8c0-.111 0-.167.007-.214a.68.68 0 0 1 .58-.58c.046-.007.102-.007.214-.007c.11 0 .167 0 .214.007a.68.68 0 0 1 .58.58c.006.047.006.102.006.214s0 .167-.006.214a.68.68 0 0 1-.58.58c-.047.007-.102.007-.214.007c-.111 0-.167 0-.214-.007a.68.68 0 0 1-.58-.58C7.2 4.967 7.2 4.912 7.2 4.8m0 3.2c0-.111 0-.167.007-.214a.68.68 0 0 1 .58-.58c.046-.007.102-.007.214-.007c.11 0 .167 0 .214.007a.68.68 0 0 1 .58.58c.006.047.006.102.006.214s0 .167-.006.214a.68.68 0 0 1-.58.58c-.047.007-.102.007-.214.007c-.111 0-.167 0-.214-.007a.68.68 0 0 1-.58-.58C7.2 8.167 7.2 8.112 7.2 8m0 3.2c0-.112 0-.167.007-.214a.68.68 0 0 1 .58-.58c.046-.007.102-.007.214-.007c.11 0 .167 0 .214.007a.68.68 0 0 1 .58.58c.006.047.006.102.006.214s0 .167-.006.214a.68.68 0 0 1-.58.58c-.047.007-.102.007-.214.007c-.111 0-.167 0-.214-.007a.68.68 0 0 1-.58-.58c-.007-.047-.007-.102-.007-.214"></svg:path>`,
+})
+export class QlementineIconsMenuDotsCircle16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

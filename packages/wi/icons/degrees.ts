@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[wiDegreesIcon],svg[wi-degrees-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.19 9.21c0-.5.18-.93.53-1.28c.36-.36.78-.53 1.28-.53c.49 0 .92.18 1.27.53c.35.36.53.78.53 1.28s-.18.93-.53 1.29s-.78.54-1.27.54s-.92-.18-1.28-.54s-.53-.79-.53-1.29m.88 0c0 .26.09.48.27.67c.19.19.41.28.67.28s.48-.09.67-.28s.28-.41.28-.67a.87.87 0 0 0-.28-.66a.95.95 0 0 0-.67-.28c-.26 0-.48.09-.67.27c-.18.18-.27.4-.27.67"></svg:path>`,
+})
+export class WiDegreesIcon {
+  readonly viewBox = input("0 0 30 30")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

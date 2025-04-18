@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fxemojiRightspeechbubbleIcon],svg[fxemoji-rightspeechbubble-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#E3E2DD" d="M267.206 8.765c-130.1 0-235.566 105.594-235.566 235.851c0 30.486 5.778 59.62 16.297 86.367L8.015 461.423a12.6 12.6 0 0 0-.757 2.439l-.052.138h.03c-.729 4 .302 8.081 3.214 11.183c2.909 3.101 6.996 4.409 10.915 3.924v.027l.165-.027c.865-.12 1.719-.314 2.55-.609l124.823-29.9c34.767 20.256 75.178 31.867 118.301 31.867c130.1 0 235.566-105.594 235.566-235.85S397.305 8.765 267.206 8.765"></svg:path>`,
+})
+export class FxemojiRightspeechbubbleIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

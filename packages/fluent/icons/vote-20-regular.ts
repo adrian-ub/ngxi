@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentVote20RegularIcon],svg[fluent-vote-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.232 9H13.5a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h.757a1 1 0 0 1-.123-1.17l2.5-4.33A1 1 0 0 1 11 3.134l2.598 1.5A1 1 0 0 1 13.964 6zm.866-3.5L10.5 4L8 8.33L9.16 9h1.918zM13.96 8l.577-1a1 1 0 0 1 .763.4l2.5 3.333a1 1 0 0 1 .2.6V16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-4.667a1 1 0 0 1 .2-.6L4.7 7.4a1 1 0 0 1 .8-.4h.963l-.479.83a1 1 0 0 0-.078.17H5.5l-2.25 3h13.5L14.5 8zM3 16h14v-4H3z"></svg:path>`,
+})
+export class FluentVote20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

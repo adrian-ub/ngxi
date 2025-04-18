@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cibArtstationIcon],svg[cib-artstation-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m0 23.63l2.703 4.672a3.23 3.23 0 0 0 2.885 1.781h17.943l-3.724-6.453zm32 .031a3.25 3.25 0 0 0-.516-1.75L20.968 3.635a3.23 3.23 0 0 0-2.854-1.719h-5.557l16.24 28.135l2.563-4.432c.5-.849.641-1.224.641-1.958zm-14.839-4.614L9.906 6.479l-7.26 12.568z"></svg:path>`,
+})
+export class CibArtstationIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiPotableWaterIcon],svg[twemoji-potable-water-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#269" d="M0 4c0-4 4-4 4-4h28s4 0 4 4v28s0 4-4 4H4s-4 0-4-4z"></svg:path><svg:g fill="#FFF"><svg:path d="M33 9H22V3s0-1-1-1s-1 1-1 1v6c-8 0-8 7-8 7v2c0 1 1 1 1 1h3s1 0 1-1v-2c0-2 2-2 2-2h14c1 0 1-1 1-1v-3s0-1-1-1"></svg:path><svg:path d="M18.5 3h-3a1.5 1.5 0 1 0 0 3h3a1.5 1.5 0 1 0 0-3m5 3h3a1.5 1.5 0 1 0 0-3h-3a1.5 1.5 0 1 0 0 3"></svg:path></svg:g><svg:path fill="#FFF" d="M20 20c-1 0-1 1-1 1v5h-9v-5s0-1-1-1s-1 1-1 1v11s0 2 2 2h9c2 0 2-2 2-2V21s0-1-1-1"></svg:path>`,
+})
+export class TwemojiPotableWaterIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

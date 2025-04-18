@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[basilRowsOutlineIcon],svg[basil-rows-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.957 5.192a7 7 0 0 0 0 4.116c4.685.451 9.401.451 14.086 0a7 7 0 0 0 0-4.116a73.4 73.4 0 0 0-14.086 0M4.71 3.71a75 75 0 0 1 14.582 0c.535.053.984.419 1.148.925c.55 1.693.55 3.54 0 5.232a1.35 1.35 0 0 1-1.148.925a75 75 0 0 1-14.582 0a1.35 1.35 0 0 1-1.148-.925a8.5 8.5 0 0 1 0-5.232A1.35 1.35 0 0 1 4.71 3.71m.247 10.982a7 7 0 0 0 0 4.116c4.685.451 9.401.451 14.086 0a7 7 0 0 0 0-4.116a73.4 73.4 0 0 0-14.086 0M4.71 13.21a75 75 0 0 1 14.582 0c.535.053.984.419 1.148.925c.55 1.693.55 3.54 0 5.232a1.35 1.35 0 0 1-1.148.925a75 75 0 0 1-14.582 0a1.35 1.35 0 0 1-1.148-.925a8.5 8.5 0 0 1 0-5.232a1.35 1.35 0 0 1 1.148-.925" clip-rule="evenodd"></svg:path>`,
+})
+export class BasilRowsOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

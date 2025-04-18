@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeBitbucketpipelineIcon],svg[vscode-icons-file-type-bitbucketpipeline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:lineargradient id="vscodeIconsFileTypeBitbucketpipeline0" x1="-792.28" x2="-793.365" y1="633.265" y2="632.418" gradientTransform="matrix(12.821 0 0 -12.821 10188.143 8132.963)" gradientUnits="userSpaceOnUse"><svg:stop offset=".18" stop-color="#0052cc"></svg:stop><svg:stop offset="1" stop-color="#2684ff"></svg:stop></svg:lineargradient></svg:defs><svg:path fill="#2684ff" d="M2.909 3.41A.9.9 0 0 0 2 4.3a1 1 0 0 0 .012.155L5.82 27.568a1.22 1.22 0 0 0 1.193 1.018h18.269a.9.9 0 0 0 .9-.754l3.805-23.378a.9.9 0 0 0-.737-1.033a1 1 0 0 0-.147-.012Zm16.035 16.709h-5.831l-1.579-8.244h8.823Z"></svg:path><svg:path fill="url(#vscodeIconsFileTypeBitbucketpipeline0)" d="M28.776 11.874h-8.419l-1.413 8.244h-5.831L6.228 28.3a1.2 1.2 0 0 0 .785.3h18.274a.9.9 0 0 0 .9-.754Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeBitbucketpipelineIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

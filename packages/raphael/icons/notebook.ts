@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[raphaelNotebookIcon],svg[raphael-notebook-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M24.875 1.375H8a1.995 1.995 0 0 0-1.98 1.792h1.605c1.102 0 2 .898 2 2s-.898 2-2 2H6v1h1.625c1.104 0 2.002.897 2.002 2a2.004 2.004 0 0 1-2.002 2.002H6v.996h1.625c1.102 0 2 .898 2 2a2.005 2.005 0 0 1-2 2.004H6v.994h1.625c1.102 0 2 .898 2 2.002s-.898 2.002-2 2.002H6v.997h1.624c1.104 0 2.002.897 2.002 2a2.004 2.004 0 0 1-2.002 2.003h-1.62A2 2 0 0 0 8 29.124h16.875a2 2 0 0 0 2-2V3.375a2 2 0 0 0-2-2m.375 7a1 1 0 0 1-1 1H14a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10.25a1 1 0 0 1 1 1zM8.625 25.165c0-.553-.45-1-1-1h-3.25a1 1 0 1 0 0 2h3.25c.55 0 1-.447 1-1m-4.25-19h3.25a1 1 0 1 0 0-1.998h-3.25a1.001 1.001 0 0 0 0 2zm0 5.002h3.25a1 1 0 1 0 0-2h-3.25a1 1 0 1 0 0 2m0 5h3.25a1 1 0 0 0 0-2h-3.25c-.553 0-1 .446-1 1s.447 1 1 1m-1 3.998a1 1 0 0 0 1 1.002h3.25a1 1 0 0 0 0-2.002h-3.25a1 1 0 0 0-1 1"></svg:path>`,
+})
+export class RaphaelNotebookIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

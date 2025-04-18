@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsCoinIcon],svg[lineicons-coin-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M35.8 29.8h-7.1c-2.1 0-3.8-1.6-3.8-3.6s1.7-3.6 3.8-3.6H39c1.2 0 2.2-1 2.2-2.2s-1-2.2-2.2-2.2h-4.8v-2.4c0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2v2.4h-1.1c-4.6 0-8.3 3.6-8.3 8.1s3.7 8.1 8.3 8.1h7.1c2.1 0 3.8 1.6 3.8 3.6s-1.7 3.6-3.8 3.6H25c-1.2 0-2.2 1-2.2 2.2s1 2.2 2.2 2.2h4.8v2.4c0 1.2 1 2.2 2.2 2.2s2.2-1 2.2-2.2V46h1.6c4.6 0 8.3-3.6 8.3-8.1c.1-4.5-3.7-8.1-8.3-8.1"></svg:path><svg:path fill="currentColor" d="M32 1.8C15.3 1.8 1.8 15.3 1.8 32S15.3 62.2 32 62.2S62.2 48.7 62.2 32S48.7 1.8 32 1.8m0 56C17.8 57.8 6.2 46.2 6.2 32S17.8 6.2 32 6.2S57.8 17.8 57.8 32S46.2 57.8 32 57.8"></svg:path>`,
+})
+export class LineiconsCoinIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsLangTaIcon],svg[circle-flags-lang-ta-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsLangTa0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsLangTa0)"><svg:path fill="#eee" d="M0 0h512v512H0z"></svg:path><svg:path fill="#496e2d" d="M256 32a206 206 0 1 0 0 412a206 206 0 0 0 0-412m0 8a198 198 0 0 1 182 276h-43a158 158 0 0 0-73-222v8a151 151 0 0 1 64 214h-1v72a197 197 0 0 1-258 0v-72a151 151 0 0 1 63-214v-8a159 159 0 0 0-73 222H74A198 198 0 0 1 256 40m0 12A186 186 0 0 0 73 271a8 8 0 0 0 9 7a8 8 0 0 0 7-9l-3-31a170 170 0 1 1 337 31a8 8 0 0 0 7 9a8 8 0 0 0 9-7A187 187 0 0 0 256 52M63 355a8 8 0 0 0-4 1a8 8 0 0 0-3 11a238 238 0 0 0 400 0a8 8 0 0 0-3-11a8 8 0 0 0-11 3a222 222 0 0 1-372 0a8 8 0 0 0-7-4"></svg:path><svg:path fill="#ffda44" d="M199 86v51l-25 153l-38 31h240l-38-31l-25-153V86z"></svg:path><svg:path fill="#ff9811" d="M136 321h240v24H136z"></svg:path><svg:path fill="#eee" d="M136 345h240v24H136z"></svg:path><svg:path fill="#6da544" d="M136 369h240v24H136z"></svg:path><svg:circle cx="191" cy="357" r="8" fill="#0052b4"></svg:circle><svg:circle cx="-321" cy="357" r="8" fill="#0052b4" transform="scale(-1 1)"></svg:circle><svg:path fill="#d80027" d="M256 252a20 20 0 0 0-20 20a20 20 0 0 0-17-10a20 20 0 0 0-20 20a20 20 0 0 0 20 20a20 20 0 0 0 3 0v71h-1c-5 0-10 4-10 10v8c0 5 5 10 10 10h1v1c0 6 5 10 10 10h48c6 0 10-4 10-10v-1h1c6 0 10-5 10-10v-8c0-6-4-10-10-10h-1v-71a20 20 0 0 0 3 0a20 20 0 0 0 20-20a20 20 0 0 0-20-20a20 20 0 0 0-17 11a20 20 0 0 0 0-1a20 20 0 0 0-20-20"></svg:path></svg:g>`,
+})
+export class CircleFlagsLangTaIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

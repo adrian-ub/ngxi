@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cibNginxIcon],svg[cib-nginx-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 0L2.14 8v16L16 32l13.86-8V8zm8 22.12c0 .943-.86 1.719-2.036 1.719c-.844 0-1.803-.339-2.401-1.079l-8-9.52v8.88c0 .959-.76 1.719-1.703 1.719h-.1a1.73 1.73 0 0 1-1.719-1.719V9.88c0-.943.839-1.719 2-1.719c.86 0 1.839.339 2.437 1.079l7.959 9.52V9.88c0-.963.803-1.719 1.724-1.719h.099a1.73 1.73 0 0 1 1.719 1.719v12.24z"></svg:path>`,
+})
+export class CibNginxIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

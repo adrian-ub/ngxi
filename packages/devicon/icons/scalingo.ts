@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[deviconScalingoIcon],svg[devicon-scalingo-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#21cfee" d="M53.903 7.868c4.239-7.28 13.737-9.995 21.214-6.07c7.478 3.928 10.105 13.012 5.869 20.289L52.294 71.362c-4.239 7.277-13.737 9.996-21.214 6.067c-7.478-3.925-10.105-13.01-5.87-20.288Zm0 0"></svg:path><svg:path fill="#173aee" d="M75.706 56.639c4.239-7.28 13.736-9.996 21.214-6.07c7.478 3.928 10.105 13.012 5.869 20.288l-28.692 49.277c-4.239 7.277-13.737 9.995-21.214 6.067c-7.478-3.926-10.108-13.01-5.869-20.29zm0 0"></svg:path>`,
+})
+export class DeviconScalingoIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fadAutomation2pIcon],svg[fad-automation-2p-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m95.847 148.193l52.206-52.594A31.86 31.86 0 0 1 144 80c0-17.673 14.327-32 32-32s32 14.327 32 32s-14.327 32-32 32a31.85 31.85 0 0 1-16.89-4.815l-52.068 51.699A31.85 31.85 0 0 1 112 176c0 17.673-14.327 32-32 32s-32-14.327-32-32s14.327-32 32-32a31.85 31.85 0 0 1 15.847 4.193M176 96c8.837 0 16-7.163 16-16s-7.163-16-16-16s-16 7.163-16 16s7.163 16 16 16m-96 96c8.837 0 16-7.163 16-16s-7.163-16-16-16s-16 7.163-16 16s7.163 16 16 16"></svg:path>`,
+})
+export class FadAutomation2pIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

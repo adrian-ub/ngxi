@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatPotableWaterIcon],svg[fluent-emoji-flat-potable-water-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#00A6ED" d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"></svg:path><svg:path fill="#fff" d="M17 6a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-1v1h4a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-8v.031a2.5 2.5 0 0 0-2 2.45a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5A6.5 6.5 0 0 1 17 8h2V7h-1a1 1 0 0 1-1-1M7.316 17.1l2.458 8.19a1 1 0 0 0 .957.713h4.498a1 1 0 0 0 .958-.71l2.478-8.208a.845.845 0 0 0-1.615-.498l-.968 3.082a.5.5 0 0 1-.477.35h-5.246a.5.5 0 0 1-.479-.356l-.92-3.057a.858.858 0 0 0-1.644.494"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatPotableWaterIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeOtneIcon],svg[material-icon-theme-otne-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#00c853"><svg:path d="M512 254.16A257.84 257.84 0 0 0 254.16 512A257.84 257.84 0 0 0 512 769.841a257.84 257.84 0 0 0 257.841-257.84a257.84 257.84 0 0 0-257.84-257.842zM941.74 512A429.74 429.74 0 0 1 512 941.74A429.74 429.74 0 0 1 82.262 512A429.74 429.74 0 0 1 512 82.262A429.74 429.74 0 0 1 941.74 512"></svg:path><svg:path d="M695.945 450.836h-92.08l-.005 122.318h92.084zm-122.854-122.78H450.92v367.89h122.17zm-152.942 122.78h-92.084v122.318h92.08z"></svg:path></svg:g>`,
+})
+export class MaterialIconThemeOtneIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

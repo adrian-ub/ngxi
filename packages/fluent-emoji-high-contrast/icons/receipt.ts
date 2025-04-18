@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastReceiptIcon],svg[fluent-emoji-high-contrast-receipt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M24.75 10h-12.5c-.14 0-.25-.11-.25-.25v-1.5c0-.14.11-.25.25-.25h12.5c.14 0 .25.11.25.25v1.5c0 .14-.11.25-.25.25M12 12.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m0 3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h8a.5.5 0 0 0 0-1zm-.5 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5M22.5 12a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm-.5 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm-.5 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"></svg:path><svg:path d="M29 4.345c0-1.966-2.277-2.919-3.695-1.722a2.63 2.63 0 0 0-3.4 0a2.63 2.63 0 0 0-3.4 0a2.63 2.63 0 0 0-3.405.005a2.63 2.63 0 0 0-3.399-.01C10.174 1.308 8 2.536 8 4.345v19.65H5.94c-.52 0-.94.42-.94.94v3.56a2.5 2.5 0 0 0 2.5 2.5l8 .005l.022-.005h9.088a4.39 4.39 0 0 0 4.39-4.39zm-4.5 24.65a2.5 2.5 0 0 1-2.5-2.5v-1.56c0-.52-.42-.94-.94-.94H10V4.345c0-.22.26-.34.42-.19l1.02.95a.38.38 0 0 0 .51 0l1.02-.94a.63.63 0 0 1 .85 0l1.02.94c.14.13.37.13.51 0l1.03-.94a.63.63 0 0 1 .85 0l1.02.94c.14.13.37.13.51 0l1.02-.94a.63.63 0 0 1 .85 0l1.02.94c.14.13.37.13.51 0l1.02-.94a.63.63 0 0 1 .85 0l1.02.94a.38.38 0 0 0 .5.01l1.03-.95c.16-.15.42-.04.42.18v22.26a2.39 2.39 0 0 1-2.39 2.39z"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastReceiptIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

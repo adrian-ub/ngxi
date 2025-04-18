@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsPencilHospitalCircleFilledIcon],svg[pepicons-pencil-hospital-circle-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:defs><svg:mask id="pepiconsPencilHospitalCircleFilled0"><svg:path fill="#fff" d="M0 0h26v26H0z"></svg:path><svg:g fill="#000"><svg:path fill-rule="evenodd" d="M10.25 8.25a1 1 0 0 1 1-1h3.5a1 1 0 1 1 0 2h-3.5a1 1 0 0 1-1-1" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M13 11a1 1 0 0 1-1-1V6.5a1 1 0 0 1 2 0V10a1 1 0 0 1-1 1" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M9 4.5a.5.5 0 0 0-.5.5v4.824a1 1 0 0 1-1 1H5a.5.5 0 0 0-.5.5V21a.5.5 0 0 0 .5.5h16a.5.5 0 0 0 .5-.5v-9.676a.5.5 0 0 0-.5-.5h-2.5a1 1 0 0 1-1-1V5a.5.5 0 0 0-.5-.5zM7.5 5A1.5 1.5 0 0 1 9 3.5h8A1.5 1.5 0 0 1 18.5 5v4.824H21a1.5 1.5 0 0 1 1.5 1.5V21a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 21v-9.676a1.5 1.5 0 0 1 1.5-1.5h2.5z" clip-rule="evenodd"></svg:path><svg:path d="M6.5 13.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"></svg:path><svg:path fill-rule="evenodd" d="M6.25 13.5c0-.69.56-1.25 1.25-1.25h1c.69 0 1.25.56 1.25 1.25v1c0 .69-.56 1.25-1.25 1.25h-1c-.69 0-1.25-.56-1.25-1.25zm1.25-.75a.75.75 0 0 0-.75.75v1c0 .414.336.75.75.75h1a.75.75 0 0 0 .75-.75v-1a.75.75 0 0 0-.75-.75z" clip-rule="evenodd"></svg:path><svg:path d="M11.5 13.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"></svg:path><svg:path fill-rule="evenodd" d="M11.25 13.5c0-.69.56-1.25 1.25-1.25h1c.69 0 1.25.56 1.25 1.25v1c0 .69-.56 1.25-1.25 1.25h-1c-.69 0-1.25-.56-1.25-1.25zm1.25-.75a.75.75 0 0 0-.75.75v1c0 .414.336.75.75.75h1a.75.75 0 0 0 .75-.75v-1a.75.75 0 0 0-.75-.75z" clip-rule="evenodd"></svg:path><svg:path d="M16.5 13.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"></svg:path><svg:path fill-rule="evenodd" d="M16.25 13.5c0-.69.56-1.25 1.25-1.25h1c.69 0 1.25.56 1.25 1.25v1c0 .69-.56 1.25-1.25 1.25h-1c-.69 0-1.25-.56-1.25-1.25zm1.25-.75a.75.75 0 0 0-.75.75v1c0 .414.336.75.75.75h1a.75.75 0 0 0 .75-.75v-1a.75.75 0 0 0-.75-.75z" clip-rule="evenodd"></svg:path><svg:path d="M6.5 18a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"></svg:path><svg:path fill-rule="evenodd" d="M6.25 18c0-.69.56-1.25 1.25-1.25h1c.69 0 1.25.56 1.25 1.25v1c0 .69-.56 1.25-1.25 1.25h-1c-.69 0-1.25-.56-1.25-1.25zm1.25-.75a.75.75 0 0 0-.75.75v1c0 .414.336.75.75.75h1a.75.75 0 0 0 .75-.75v-1a.75.75 0 0 0-.75-.75z" clip-rule="evenodd"></svg:path><svg:path d="M11.5 18a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"></svg:path><svg:path fill-rule="evenodd" d="M11.25 18c0-.69.56-1.25 1.25-1.25h1c.69 0 1.25.56 1.25 1.25v1c0 .69-.56 1.25-1.25 1.25h-1c-.69 0-1.25-.56-1.25-1.25zm1.25-.75a.75.75 0 0 0-.75.75v1c0 .414.336.75.75.75h1a.75.75 0 0 0 .75-.75v-1a.75.75 0 0 0-.75-.75z" clip-rule="evenodd"></svg:path><svg:path d="M16.5 18a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"></svg:path><svg:path fill-rule="evenodd" d="M16.25 18c0-.69.56-1.25 1.25-1.25h1c.69 0 1.25.56 1.25 1.25v1c0 .69-.56 1.25-1.25 1.25h-1c-.69 0-1.25-.56-1.25-1.25zm1.25-.75a.75.75 0 0 0-.75.75v1c0 .414.336.75.75.75h1a.75.75 0 0 0 .75-.75v-1a.75.75 0 0 0-.75-.75z" clip-rule="evenodd"></svg:path></svg:g></svg:mask></svg:defs><svg:circle cx="13" cy="13" r="13" fill="currentColor" mask="url(#pepiconsPencilHospitalCircleFilled0)"></svg:circle></svg:g>`,
+})
+export class PepiconsPencilHospitalCircleFilledIcon {
+  readonly viewBox = input("0 0 26 26")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

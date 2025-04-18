@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedPstakeIcon],svg[token-branded-pstake-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#fff" d="M16.886 10.313H13.32c0-.518-.298-1.688-1.496-1.688s-1.519.917-1.508 1.35c0 1.125 1.84 1.879 2.734 2.12c3.47 1.024 4.106 3.072 3.994 3.966c.18 1.648-.563 4.939-4.95 4.939s-5.265-2.959-5.153-4.5h3.375c0 .523.32 1.688 1.778 1.688c1.164 0 1.575-1.294 1.597-1.744c.09-.433-.506-1.238-3.324-2.042c-3.533-1.007-3.414-3.488-3.414-4.157c0-.675.016-4.432 4.966-4.432c3.96 0 4.962 3.02 4.967 4.5"></svg:path><svg:path fill="#E50913" d="M6.943 3h10.125v2.25H6.943z"></svg:path></svg:g>`,
+})
+export class TokenBrandedPstakeIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

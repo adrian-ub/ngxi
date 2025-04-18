@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsOpenRunIcon],svg[material-symbols-open-run-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m12 19.175l2.125-2.125l1.425 1.4L12 22l-3.55-3.55l1.425-1.4zM4.825 12l2.125 2.125l-1.4 1.425L2 12l3.55-3.55l1.4 1.425zm14.35 0L17.05 9.875l1.4-1.425L22 12l-3.55 3.55l-1.4-1.425zM12 4.825L9.875 6.95L8.45 5.55L12 2l3.55 3.55l-1.425 1.4z"></svg:path>`,
+})
+export class MaterialSymbolsOpenRunIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

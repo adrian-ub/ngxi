@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsBoxOpenLightIcon],svg[lets-icons-box-open-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor"><svg:path d="M6 11.657c0-.818 0-1.226.152-1.594c.152-.367.442-.657 1.02-1.235l.656-.656c.578-.578.868-.868 1.235-1.02S9.84 7 10.657 7h2.686c.818 0 1.226 0 1.594.152s.657.442 1.235 1.02l.656.656c.579.578.867.868 1.02 1.235c.152.368.152.776.152 1.594V16c0 1.886 0 2.828-.586 3.414S15.886 20 14 20h-4c-1.886 0-2.828 0-3.414-.586S6 17.886 6 16z"></svg:path><svg:path stroke-linecap="round" d="M9 7L6.139 5.092a.25.25 0 0 0-.278 0L3.254 6.831a.25.25 0 0 0-.038.385l2.577 2.577a.7.7 0 0 1 .207.5v0c0 .39.317.707.707.707h10.586c.39 0 .707-.317.707-.707v0a.7.7 0 0 1 .207-.5l2.577-2.577a.25.25 0 0 0-.038-.385L18.14 5.092a.25.25 0 0 0-.278 0L15 7"></svg:path></svg:g>`,
+})
+export class LetsIconsBoxOpenLightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

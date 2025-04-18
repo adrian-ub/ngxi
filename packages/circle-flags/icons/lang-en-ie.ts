@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsLangEnIeIcon],svg[circle-flags-lang-en-ie-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsLangEnIe0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsLangEnIe0)"><svg:path fill="#eee" d="m167 0l-32 172l32 173l121-57l57-121l32-84l-32-83Z"></svg:path><svg:path fill="#6da544" d="M0 0v512l115-52l52-115V0Z"></svg:path><svg:path fill="#ff9811" d="M345 0v167l115-52L512 0Z"></svg:path><svg:path fill="#eee" d="M512 0L0 512l23-8l22 8h23l54-32l54 32h32l48-32l48 32h32l54-32l54 32h68l-8-22l8-23v-23l-32-54l32-54v-32l-32-48l32-48v-32l-32-54l32-54z"></svg:path><svg:path fill="#d80027" d="m304 208l-96 96v208h96V304h208v-96ZM176 336L0 512h45l131-131Zm160 0l176 176v-45L381 336Z"></svg:path><svg:path fill="#0052b4" d="M512 68L404 176h108ZM404 336l108 108V336Zm-228 68L68 512h108zm160 0v108h108z"></svg:path></svg:g>`,
+})
+export class CircleFlagsLangEnIeIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

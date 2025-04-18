@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsWeeklyRunsIcon],svg[arcticons-weekly-runs-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M42.54 31.735c1.469-1.204 1.96-5.368 1.96-7.41c0-1.815-.739-6.709-1.933-7.897c0 0-1.738-.737-2.641 0c-2.96 2.412-8.925 7.943-16.34 0c0 0-11.486 5.424-14.586 6.207c-5.32 1.344-5.5 2.68-5.5 4.437c0 5.626 6.59 4.902 10.985 4.663c2.423-.131 25.356.147 28.055 0"></svg:path><svg:path d="M41.886 28.325s-9.89-1.6-16.007.072s-18.524.8-18.524.8"></svg:path><svg:path d="M42.54 31.735c1.469-1.204 1.96-5.368 1.96-7.41c0-1.815-.739-6.709-1.933-7.897c0 0-1.738-.737-2.641 0c-2.96 2.412-8.925 7.943-16.34 0c0 0-11.486 5.424-14.586 6.207c-5.32 1.344-5.5 2.68-5.5 4.437c0 5.626 6.59 4.902 10.985 4.663c2.423-.131 25.356.147 28.055 0M20.686 21.264L24 25.125m-6.637-2.689l2.308 2.69"></svg:path></svg:g>`,
+})
+export class ArcticonsWeeklyRunsIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

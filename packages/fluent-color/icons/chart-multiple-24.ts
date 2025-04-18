@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorChartMultiple24Icon],svg[fluent-color-chart-multiple-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorChartMultiple240)" fill-rule="evenodd" d="M10 4.016c.275-.018.5.208.5.484v6a1 1 0 0 0 1 1h6c.276 0 .502.225.484.5A7.5 7.5 0 1 1 10 4.016" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorChartMultiple245)" fill-opacity=".4" fill-rule="evenodd" d="M10 4.016c.275-.018.5.208.5.484v6a1 1 0 0 0 1 1h6c.276 0 .502.225.484.5A7.5 7.5 0 1 1 10 4.016" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorChartMultiple246)" fill-opacity=".4" fill-rule="evenodd" d="M10 4.016c.275-.018.5.208.5.484v6a1 1 0 0 0 1 1h6c.276 0 .502.225.484.5A7.5 7.5 0 1 1 10 4.016" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorChartMultiple241)" fill-rule="evenodd" d="M20 9.402v.135a.476.476 0 0 1-.485.463H12.5a.5.5 0 0 1-.5-.5V2.485c0-.261.201-.48.463-.484L12.572 2A7.43 7.43 0 0 1 20 9.402" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorChartMultiple242)" d="M21.5 12a1.5 1.5 0 0 0-1.5 1.5v8a1.5 1.5 0 0 0 3 0v-8a1.5 1.5 0 0 0-1.5-1.5"></svg:path><svg:path fill="url(#fluentColorChartMultiple243)" d="M16 16.5a1.5 1.5 0 0 1 3 0v5a1.5 1.5 0 0 1-3 0z"></svg:path><svg:path fill="url(#fluentColorChartMultiple244)" d="M13.5 18a1.5 1.5 0 0 0-1.5 1.5v2a1.5 1.5 0 0 0 3 0v-2a1.5 1.5 0 0 0-1.5-1.5"></svg:path><svg:defs><svg:lineargradient id="fluentColorChartMultiple240" x1="18.091" x2="-.127" y1="21.418" y2="3.366" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#6D37CD"></svg:stop><svg:stop offset="1" stop-color="#EA71EF"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorChartMultiple241" x1="20.333" x2="19.974" y1="7.533" y2=".71" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#E23CB4"></svg:stop><svg:stop offset="1" stop-color="#EA71EF"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorChartMultiple242" x1="22.605" x2="30.398" y1="8.621" y2="12.589" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#16BBDA"></svg:stop><svg:stop offset="1" stop-color="#0067BF"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorChartMultiple243" x1="16.75" x2="21.913" y1="15.571" y2="19.079" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#16BBDA"></svg:stop><svg:stop offset="1" stop-color="#0067BF"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorChartMultiple244" x1="12.75" x2="15.361" y1="18" y2="20.888" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#16BBDA"></svg:stop><svg:stop offset="1" stop-color="#0067BF"></svg:stop></svg:lineargradient><svg:radialgradient id="fluentColorChartMultiple245" cx="0" cy="0" r="1" gradientTransform="matrix(0 3.86087 -3.80424 0 13.306 19)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#30116E"></svg:stop><svg:stop offset=".75" stop-color="#30116E" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorChartMultiple246" cx="0" cy="0" r="1" gradientTransform="matrix(0 3.86087 -3.4218 0 17.17 17.07)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#30116E"></svg:stop><svg:stop offset="1" stop-color="#30116E" stop-opacity="0"></svg:stop></svg:radialgradient></svg:defs></svg:g>`,
+})
+export class FluentColorChartMultiple24Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsTimeDelLightIcon],svg[lets-icons-time-del-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="2"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M10.188 5.239a7 7 0 0 1 8.574 8.573"></svg:path><svg:path d="M16.95 16.95a7 7 0 1 1-9.9-9.9"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M19 19L5 5"></svg:path><svg:path stroke-linecap="round" d="M18.035 3.136a4 4 0 0 1 2.829 2.829"></svg:path></svg:g>`,
+})
+export class LetsIconsTimeDelLightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

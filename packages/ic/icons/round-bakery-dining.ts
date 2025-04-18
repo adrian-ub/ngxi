@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icRoundBakeryDiningIcon],svg[ic-round-bakery-dining-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m18.77 8.55l-1.17-.47c-.62-.25-1.31.17-1.37.84L15.49 17H17l2.6-6.5c.31-.77-.06-1.65-.83-1.95M6.4 8.08l-1.17.47c-.77.3-1.14 1.18-.83 1.95L7 17h1.5l-.74-8.08a.993.993 0 0 0-1.36-.84M13.36 6h-2.71c-.89 0-1.58.76-1.5 1.64l.85 9.35h4l.85-9.36c.08-.87-.61-1.63-1.49-1.63M3.18 13.72l-1 1.93c-.19.36-.23.78-.12 1.19c.29 1.01 1.43 1.41 2.38.94l1.05-.52l-1.4-3.49a.5.5 0 0 0-.91-.05m18.64 1.93l-1-1.93a.503.503 0 0 0-.91.04l-1.4 3.49l1.05.52c.94.47 2.09.07 2.38-.94c.11-.4.07-.82-.12-1.18"></svg:path>`,
+})
+export class IcRoundBakeryDiningIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

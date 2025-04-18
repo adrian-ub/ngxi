@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixDocumentProgramIcon],svg[ix-document-program-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m307.503 42.668l119.164 119.163v307.504H85.333V42.668zm-17.69 42.667H128v341.333h256V179.521zm-70.231 57.768l15.085 15.085l-45.26 45.246l45.312 45.314l-15.085 15.085l-60.339-60.339zm72.131 127.174L352 330.668l-60.34 60.34l-15.085-15.085l45.312-45.315l-45.259-45.246zm-41.046-67.609c0-8.837 7.163-16 16-16s16 7.163 16 16s-7.164 16-16 16s-16-7.163-16-16m58.666-16c-8.836 0-16 7.163-16 16s7.164 16 16 16s16-7.163 16-16s-7.163-16-16-16m-144 144c0-8.837 7.164-16 16-16s16 7.163 16 16s-7.163 16-16 16s-16-7.163-16-16m58.667-16c-8.837 0-16 7.163-16 16s7.163 16 16 16s16-7.163 16-16s-7.163-16-16-16" clip-rule="evenodd"></svg:path>`,
+})
+export class IxDocumentProgramIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

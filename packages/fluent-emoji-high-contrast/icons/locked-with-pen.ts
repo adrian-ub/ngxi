@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastLockedWithPenIcon],svg[fluent-emoji-high-contrast-locked-with-pen-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M15.386 19.245A2.5 2.5 0 0 1 14.5 20.5V24a1.5 1.5 0 1 1-3 0v-3.5a2.5 2.5 0 1 1 3.886-1.255"></svg:path><svg:path d="M8.757 2.757a6 6 0 0 1 6.54-1.302a6 6 0 0 1 3.707 5.542v3h2a4 4 0 0 1 4 4h4.75a1.25 1.25 0 0 1 .25 2.475v5.526a4.2 4.2 0 0 1-.569 1.873l-.037.073c-.529 1.058-2.947 5.539-3.407 6.153a3 3 0 0 1-.5.526a1.5 1.5 0 0 1-1.984 0a2.6 2.6 0 0 1-.3-.287A4 4 0 0 1 21 31H5a4 4 0 0 1-4-4V14a4 4 0 0 1 4-4h2V7a6 6 0 0 1 1.757-4.243m13.657 9.829A2 2 0 0 0 21 12H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h16a2 2 0 0 0 1.146-.361l-.259-.463q-.178-.322-.387-.691a104 104 0 0 1-1.895-3.538l-.038-.076A4.2 4.2 0 0 1 19 22v-5.525A1.25 1.25 0 0 1 19.25 14H23a2 2 0 0 0-.586-1.414M16.5 7a3.5 3.5 0 0 0-7 0v3h7zM24 27.854v-4.938a1.5 1.5 0 1 1 1 0v4.94c.198-.351.461-.818.75-1.34a100 100 0 0 0 1.855-3.462c.207-.319.341-.678.395-1.054v-5h-7v5a2.6 2.6 0 0 0 .394 1.052a100 100 0 0 0 1.855 3.462c.29.522.551.989.751 1.34"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastLockedWithPenIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

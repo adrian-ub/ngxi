@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiBentoBoxIcon],svg[openmoji-bento-box-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FFF" d="M5 19a2 2 0 0 1 2-2h58a2 2 0 0 1 2 2v34a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"></svg:path><svg:path fill="#d0cfce" d="M44.071 21A5.001 5.001 0 0 1 37 28.071zm12.536 0a5.001 5.001 0 0 1-7.072 7.071z"></svg:path><svg:path fill="#ea5a47" d="M39 40a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2zm12 0a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2zm12 0a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2z"></svg:path><svg:path fill="#61b2e4" d="m12.998 42.213l-1 8.787l4-4l4 4l-1.393-8.787"></svg:path><svg:path fill="#92d3f5" d="M17.605 43.213c5.857-5.858 5.857-15.355 0-21.213h-3.607c-5.857 5.858-5.857 15.355 0 21.213z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><svg:path d="M5 19a2 2 0 0 1 2-2h58a2 2 0 0 1 2 2v34a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2zm22-2v38m0-21h40"></svg:path><svg:path d="M17.606 43.213c5.858-5.858 5.858-15.355 0-21.213H14c-5.857 5.858-5.857 15.355 0 21.213zM11 28h10"></svg:path><svg:path d="M13 42.213L12 51l4-4h0l4 4l-1.394-8.787M39 40a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2zm12 0a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2zm12 0a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2zM44 21a5.001 5.001 0 0 1-7.071 7.071zm12.536 0a5.001 5.001 0 0 1-7.072 7.071z"></svg:path><svg:path d="M39 44.334a2 2 0 0 1-2 2M39 40a2 2 0 0 1-2 2m14 2.334a2 2 0 0 1-2 2M51 40a2 2 0 0 1-2 2m14 2.334a2 2 0 0 1-2 2M63 40a2 2 0 0 1-2 2"></svg:path></svg:g>`,
+})
+export class OpenmojiBentoBoxIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

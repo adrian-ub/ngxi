@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[riCapsuleFillIcon],svg[ri-capsule-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.779 4.222a6 6 0 0 1 0 8.485l-2.122 2.12l-4.95 4.951a6 6 0 0 1-8.485-8.485l7.071-7.071a6 6 0 0 1 8.486 0m-4.95 10.606L9.172 9.172l-3.536 3.535a4 4 0 0 0 5.657 5.657z"></svg:path>`,
+})
+export class RiCapsuleFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

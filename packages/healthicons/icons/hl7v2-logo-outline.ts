@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[healthiconsHl7v2LogoOutlineIcon],svg[healthicons-hl7v2-logo-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M31.547 4H16.88c-1.108 0-1.673 1.347-.882 2.138l2.508 2.512l-7.39 7.4a1.255 1.255 0 0 0 0 1.771l7.924 7.934a1.246 1.246 0 0 0 1.764 0l7.393-7.402l2.468 2.471c.784.785 2.13.234 2.13-.886V5.252A1.25 1.25 0 0 0 31.547 4M20.453 7.764l-1.755-1.757h12.098V18.12l-1.717-1.72a1.246 1.246 0 0 0-1.764 0l-7.393 7.403l-6.86-6.868l7.39-7.399a1.255 1.255 0 0 0 0-1.772"></svg:path><svg:path d="M28.96 22.245a1.246 1.246 0 0 0-1.764 0l-7.393 7.402l-2.468-2.471c-.784-.785-2.13-.234-2.13.886v14.686c0 .694.56 1.252 1.248 1.252H31.12c1.108 0 1.673-1.347.882-2.138l-2.508-2.512l7.39-7.4a1.255 1.255 0 0 0 0-1.771zm-8.275 9.354l7.393-7.402l6.86 6.868l-7.39 7.399a1.255 1.255 0 0 0 0 1.772l1.754 1.757H17.205V29.88l1.716 1.72a1.246 1.246 0 0 0 1.764 0"></svg:path></svg:g>`,
+})
+export class HealthiconsHl7v2LogoOutlineIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

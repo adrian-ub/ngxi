@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2CityNext2Icon],svg[fluent-mdl2-city-next-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M512 1024H384V768h128zm256 0H640V768h128zm256 0H896V768h128zm-512 384H384v-256h128zm256 0H640v-256h128zm256 0H896v-256h128zm384-640q106 0 199 40t163 109t110 163t40 200v768h-128v-768q0-79-30-149t-82-122t-123-83t-149-30h-128v1152H768v-384H640v384H128V512h128V256h256V0h384v256h256v256h128v256zM640 256h128V128H640zM384 512h640V384H384zm768 128H256v1280h256v-384h384v384h256zm256 512h256v128h-256zm0 256h256v128h-256zm0 256h256v128h-256zm0 256h256v128h-256z"></svg:path>`,
+})
+export class FluentMdl2CityNext2Icon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

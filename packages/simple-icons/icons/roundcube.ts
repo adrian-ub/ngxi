@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsRoundcubeIcon],svg[simple-icons-roundcube-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M12.002.072a8.3 8.3 0 0 0-8.266 7.512L.498 9.454l4.682 2.704A7.8 7.8 0 0 1 12.002.572a7.802 7.802 0 0 1 6.824 11.582l4.676-2.7l-3.236-1.87A8.3 8.3 0 0 0 12.002.072M0 9.742v7.399l11.75 6.787v-7.399zm24 0l-5.777 3.338l-5.248 3.031h-.002l-.108.063l-.615.355v7.399L24 17.14V9.744z"></svg:path>`,
 })
 export class SimpleIconsRoundcubeIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

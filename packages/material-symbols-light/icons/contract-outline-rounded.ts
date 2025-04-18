@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightContractOutlineRoundedIcon],svg[material-symbols-light-contract-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 21q-.846 0-1.423-.577T4 19v-1.154q0-.666.475-1.14t1.14-.475H7V4.616q0-.667.475-1.141T8.615 3h9.77q.666 0 1.14.475T20 4.615V19q0 .846-.577 1.423T18 21zm12-1q.425 0 .713-.288T19 19V4.616q0-.27-.173-.443T18.385 4h-9.77q-.269 0-.442.173T8 4.616V16.23h7.385q.666 0 1.14.474T17 17.846V19q0 .425.288.713T18 20M9.885 8.385q-.213 0-.357-.144q-.143-.144-.143-.357t.143-.356t.357-.143h7.23q.213 0 .357.144t.143.356t-.143.356t-.357.144zm0 2.769q-.213 0-.357-.144q-.143-.144-.143-.357t.143-.356t.357-.143h7.23q.213 0 .357.144t.143.357t-.143.356t-.357.143zM6 20h10v-2.154q0-.269-.173-.442t-.442-.173h-9.77q-.269 0-.442.173T5 17.846V19q0 .425.288.713T6 20m0 0H5h11z"></svg:path>`,
+})
+export class MaterialSymbolsLightContractOutlineRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

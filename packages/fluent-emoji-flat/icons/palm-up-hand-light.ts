@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatPalmUpHandLightIcon],svg[fluent-emoji-flat-palm-up-hand-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#F1B99B" d="M21 15.433v-.792a2 2 0 0 0-4 0v.62a2 2 0 0 0-3.428 1.845l1.042 3.89a2 2 0 0 0 3.412.827a1.995 1.995 0 0 0 2.455-.403a2 2 0 0 0 3.306-.936l1.664-6.208a2 2 0 0 0-3.863-1.036z"></svg:path><svg:path fill="#FFD7C2" d="M2.024 18.648c0-4.148 1.696-6.308 5.315-9.56a6 6 0 0 1 3.905-1.444h3.175c.386 0 .755.016 1.02-.266a2.33 2.33 0 0 1 3.564.194l.069.092a2.426 2.426 0 0 1-.23 3.175l-.615.612a4.1 4.1 0 0 1-2.899 1.197h-.551a2.72 2.72 0 0 0-2.46 1.555l-.021.046a2.8 2.8 0 0 0-.271 1.203v.196a3 3 0 0 0 3 3h5.186a2 2 0 0 0 1.396-.568l4.256-4.148a2.422 2.422 0 1 1 3.288 3.555l-6.428 5.64a6 6 0 0 1-3.958 1.49h-9.56c-3.311 0-7.18-1.821-7.18-5.969"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatPalmUpHandLightIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

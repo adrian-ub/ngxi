@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mapSearchIcon],svg[map-search-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M35.66 29.539a18.04 18.04 0 0 0 2.632-9.385c0-10.029-8.115-18.15-18.146-18.154C10.124 2.003 2 10.125 2 20.152c0 10.018 8.125 18.139 18.152 18.139c3.44 0 6.645-.972 9.384-2.633L41.879 48L48 41.876zM20.15 31.38c-6.202-.015-11.216-5.027-11.227-11.216A11.245 11.245 0 0 1 20.15 8.935c6.199.016 11.215 5.028 11.228 11.229c-.013 6.182-5.031 11.201-11.228 11.216"></svg:path>`,
+})
+export class MapSearchIcon {
+  readonly viewBox = input("0 0 50 50")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiReminderRibbonIcon],svg[openmoji-reminder-ribbon-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#D22F27" d="M21.8 62.4L33 66l20-42.7c2.9-6 0-13.4-5.7-15.3"></svg:path><svg:path fill="#EA5A47" d="m45 48.5l-6.5 13.1l1.7 3.4l11.2-3.5M25 8c-5.8 1.9-8.6 9.2-5.8 15.3L28 42.2l6.4-13.8"></svg:path><svg:path fill="#D22F27" d="m41 20l5.9-12.8H25.3l6 12.8z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.813" d="M21.8 62.4L33 66l20-42.7c2.9-6 0-13.4-5.7-15.3zm17.1 0l1.3 2.6l11.2-3.5l-6-12.2M34.2 27.6L25 8c-5.8 1.9-8.6 9.2-5.8 15.3l8.5 18.3m6-22.5h4.6m5.4-11H28.6"></svg:path>`,
+})
+export class OpenmojiReminderRibbonIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

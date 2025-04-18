@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsClear24Icon],svg[qlementine-icons-clear-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M23 12c0 6.08-4.92 11-11 11S1 18.08 1 12S5.92 1 12 1s11 4.92 11 11m1 0c0 6.63-5.37 12-12 12S0 18.63 0 12S5.37 0 12 0s12 5.37 12 12M7.6 7.65a.5.5 0 0 1 .707 0l3.65 3.65l3.65-3.65a.5.5 0 0 1 .707.707l-3.65 3.65l3.65 3.65a.5.5 0 0 1-.707.707l-3.65-3.65l-3.65 3.65a.5.5 0 0 1-.707-.707l3.65-3.65l-3.65-3.65a.5.5 0 0 1 0-.707" clip-rule="evenodd"></svg:path>`,
+})
+export class QlementineIconsClear24Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[laFeatherAltIcon],svg[la-feather-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M27 4c-8.803 0-13.201 4.795-15.314 7.1l-3.05 3.076A8.93 8.93 0 0 0 6 20.539V22l2.027-2.027a6.94 6.94 0 0 1 2.02-4.381l3.113-3.14c1.836-2.003 5.569-6.074 12.815-6.429c-.222 4.522-1.89 7.674-3.598 9.852L19 17h2.418a30 30 0 0 1-1.87 1.84l-.98.97L15 21h2.367l-.957.947a6.95 6.95 0 0 1-4.95 2.051H9.417l9.291-9.291l-1.414-1.414L4 26.586L5.414 28l2.002-2.002h4.045a8.94 8.94 0 0 0 6.367-2.64l3.07-3.046C23.203 18.203 28 13.805 28 5V4z"></svg:path>`,
+})
+export class LaFeatherAltIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

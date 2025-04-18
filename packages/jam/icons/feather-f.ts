@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamFeatherFIcon],svg[jam-feather-f-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m16.393 12.029l-4.461-1.196l3.018-3.018a1 1 0 1 0-1.414-1.414l-.897.897l-1.195-4.462l.677-.677a5 5 0 0 1 7.071 7.07zm-1.633 1.633l-3.766 3.766l-5.318-.339l4.623-4.623zM4.343 15.594l1.414 1.414l-3.535 3.535A1 1 0 1 1 .808 19.13l3.45-3.45l-.326-5.331L9.811 4.47l1.195 4.462z"></svg:path>`,
+})
+export class JamFeatherFIcon {
+  readonly viewBox = input("-1.5 -1.5 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

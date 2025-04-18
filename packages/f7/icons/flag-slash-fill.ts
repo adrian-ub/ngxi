@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7FlagSlashFillIcon],svg[f7-flag-slash-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M47.067 46.598c.726.703 1.874.703 2.554 0c.727-.68.727-1.852 0-2.555L8.911 3.356a1.84 1.84 0 0 0-2.579 0c-.68.68-.68 1.875 0 2.554ZM16.879 7.363l31.172 31.149c.375-.586.586-1.266.586-2.11V12.59c0-1.242-1.078-1.992-2.438-1.992c-1.148 0-3.304 1.007-7.336 1.007c-8.086 0-13.476-4.124-21.984-4.242M7.012 51.566c0 .961.82 1.782 1.781 1.782c.984 0 1.781-.774 1.781-1.782V38.56c.586-.258 2.79-1.102 6.235-1.102c8.297 0 13.5 3.844 21.351 4.195L7.48 11.02a3 3 0 0 0-.468 1.617Z"></svg:path>`,
+})
+export class F7FlagSlashFillIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

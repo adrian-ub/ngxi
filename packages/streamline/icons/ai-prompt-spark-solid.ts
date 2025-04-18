@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineAiPromptSparkSolidIcon],svg[streamline-ai-prompt-spark-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.721.657c.186-.846 1.39-.851 1.582-.007l.01.04l.018.08a2.48 2.48 0 0 0 1.992 1.879c.881.153.881 1.42 0 1.573a2.48 2.48 0 0 0-1.996 1.894l-.024.105c-.192.844-1.396.839-1.582-.007l-.02-.09c-.214-.98-1-1.732-1.987-1.904c-.88-.153-.88-1.417 0-1.57A2.47 2.47 0 0 0 9.7.757l.015-.066zM1.766 2.48h4.39c-.57 1.05-.115 2.6 1.364 2.857c.486.085.882.43 1.036.893h-7.04v6c0 .138.112.25.25.25h9a.25.25 0 0 0 .25-.25V7.923c.644-.163 1.21-.646 1.394-1.45l.024-.106a1.4 1.4 0 0 1 .082-.247v6.11a1.75 1.75 0 0 1-1.75 1.75h-9a1.75 1.75 0 0 1-1.75-1.75v-8c0-.967.784-1.75 1.75-1.75m.963 4.836a.625.625 0 0 1 .884 0l1.5 1.5a.625.625 0 0 1 0 .884l-1.5 1.5a.625.625 0 1 1-.884-.884L3.787 9.26L2.73 8.201a.625.625 0 0 1 0-.884Zm2.817 3.442c0-.345.28-.625.625-.625h1.5a.625.625 0 1 1 0 1.25h-1.5a.625.625 0 0 1-.625-.625" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineAiPromptSparkSolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

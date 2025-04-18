@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[logosXataIconIcon],svg[logos-xata-icon-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#06D6A0" d="M216.514 259.317c17.957-17.916 29.972-40.317 33.4-62.274c3.43-21.959-2.007-41.676-15.115-54.814l-67.708 67.55z"></svg:path><svg:path fill="#FFBE0B" d="M39.487 259.704C21.53 241.788 9.515 219.388 6.086 197.429s2.008-41.675 15.116-54.814l67.708 67.55z"></svg:path><svg:path fill="#FF0075" d="M0 68.049a95.64 95.64 0 0 0 28.092 67.596l.001-.002l67.7 67.541a95.643 95.643 0 0 0-.159-135.258l-.001.002l-67.7-67.54A95.64 95.64 0 0 0 0 68.048"></svg:path><svg:path fill="#0076FF" d="M256 67.661a95.64 95.64 0 0 1-28.092 67.597l-.002-.003l-67.699 67.541a95.645 95.645 0 0 1 .158-135.257l.002.001L228.067 0A95.64 95.64 0 0 1 256 67.661"></svg:path>`,
+})
+export class LogosXataIconIcon {
+  readonly viewBox = input("0 0 256 260")
+  readonly width = input("0.99em")
+  readonly height = input("1em")
+}

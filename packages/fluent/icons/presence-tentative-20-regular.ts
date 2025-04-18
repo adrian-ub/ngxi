@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPresenceTentative20RegularIcon],svg[fluent-presence-tentative-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.946.055a9.96 9.96 0 0 0-6.021 2.874A9.96 9.96 0 0 0 .05 8.949zM.187 11.953L11.95.19a10 10 0 0 1 2.355.781L.968 14.308a10 10 0 0 1-.78-2.355m1.991 4.284A10 10 0 0 0 3.76 17.82L17.815 3.764a10 10 0 0 0-1.582-1.582zM19.024 5.694L5.69 19.03c.757.36 1.55.62 2.359.78L19.805 8.054a10 10 0 0 0-.78-2.359m.916 5.364l-8.886 8.886a9.96 9.96 0 0 0 6.013-2.873a9.96 9.96 0 0 0 2.873-6.013"></svg:path>`,
+})
+export class FluentPresenceTentative20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

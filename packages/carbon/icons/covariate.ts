@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonCovariateIcon],svg[carbon-covariate-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="8" cy="16" r="2" fill="currentColor"></svg:circle><svg:circle cx="14" cy="8" r="2" fill="currentColor"></svg:circle><svg:circle cx="28" cy="12" r="2" fill="currentColor"></svg:circle><svg:circle cx="21" cy="18" r="2" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M30 3.414L28.586 2L4 26.586V2H2v26a2 2 0 0 0 2 2h26v-2H5.414ZM4 28"></svg:path>`,
+})
+export class CarbonCovariateIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

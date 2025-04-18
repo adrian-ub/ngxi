@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsWantedlyIcon],svg[simple-icons-wantedly-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M18.453 14.555c-.171-.111-.658-.764-2.006-3.982a9 9 0 0 0-.237-.526l-.274-.664l-2.362-5.702H8.85l2.362 5.702l2.362 5.706l2.181 5.267a.196.196 0 0 0 .362 0l2.373-5.682a.1.1 0 0 0-.037-.119m-8.85 0c-.171-.111-.658-.764-2.006-3.982a9 9 0 0 0-.236-.525l-.276-.665l-2.36-5.702H0l2.362 5.702l2.362 5.706l2.181 5.267a.196.196 0 0 0 .362 0l2.374-5.682a.1.1 0 0 0-.038-.119M24 6.375a2.85 2.85 0 0 1-2.851 2.852a2.85 2.85 0 0 1-2.852-2.852a2.85 2.85 0 0 1 2.852-2.851A2.85 2.85 0 0 1 24 6.375"></svg:path>`,
 })
 export class SimpleIconsWantedlyIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

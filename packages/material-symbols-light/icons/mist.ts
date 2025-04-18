@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightMistIcon],svg[material-symbols-light-mist-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 18.5q-.213 0-.356-.144t-.144-.357t.144-.356T4 17.5h10q.213 0 .356.144t.144.357t-.144.356T14 18.5zm14 0q-.213 0-.356-.144t-.144-.357t.144-.356T18 17.5h2q.213 0 .356.144t.144.357t-.144.356T20 18.5zm-14-4q-.213 0-.356-.144t-.144-.357t.144-.356T4 13.5h2q.213 0 .356.144t.144.357t-.144.356T6 14.5zm6 0q-.213 0-.356-.144t-.144-.357t.144-.356T10 13.5h10q.213 0 .356.144t.144.357t-.144.356T20 14.5zm-6-4q-.213 0-.356-.144T3.5 9.999t.144-.356T4 9.5h11q.213 0 .356.144t.144.357t-.144.356T15 10.5zm15 0q-.213 0-.356-.144t-.144-.357t.144-.356T19 9.5h1q.213 0 .356.144t.144.357t-.144.356T20 10.5zm-15-4q-.213 0-.356-.144T3.5 5.999t.144-.356T4 5.5h5q.213 0 .356.144t.144.357t-.144.356T9 6.5zm9 0q-.213 0-.356-.144t-.144-.357t.144-.356T13 5.5h7q.213 0 .356.144t.144.357t-.144.356T20 6.5z"></svg:path>`,
+})
+export class MaterialSymbolsLightMistIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

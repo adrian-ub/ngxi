@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatClapperBoardIcon],svg[fluent-emoji-flat-clapper-board-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#6B438B" d="M27.21 30.02H9.46c-.92 0-2.67-.75-2.67-1.67V16.74l11.093-1.91l11.007 1.91v11.61c-.01.92-.75 1.67-1.68 1.67"></svg:path><svg:path fill="#A4AEEB" d="M11.96 10.02L9.708 9.002L8.25 7.01l4.527-1.198l3.65.074l2.013-1.572l4.51-1.194l2.615 1.092L26.66 6.12l-4.52 1.2h-3.732l-1.927 1.5zm12.57 6.72l2.461-1.986l.35-1.874h-4.683l-3.812 1.349l-2.033-1.349H12.14l-2.527 1.874l-.283 1.986h4.72l3.842-1.14l1.956 1.14z"></svg:path><svg:path fill="#635994" d="m26.66 6.12l-3.71-3L27.16 2l.99 3.73zM7.75 11.14L6.225 9.762L6.77 7.41l1.48-.4l3.71 3.01zm10.7-6.83l-5.69 1.51l3.7 3.01l5.7-1.51zm10.43 12.43v-3.86h-1.54l-2.81 3.86zm-16.74-3.86l-2.81 3.86H6.79v-3.86zm10.55 0H16.8l-2.81 3.86h5.89z"></svg:path><svg:path fill="#321B41" d="m6.77 7.41l.98 3.73l-2.76.73L4 8.14l1.49-.39zm1.02 5.47v15.47c0 .92.75 1.67 1.67 1.67H6.6c-.92 0-1.67-.75-1.67-1.67V12.88z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatClapperBoardIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTagOff16FilledIcon],svg[fluent-tag-off-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m10.719 11.426l3.427 3.428a.5.5 0 0 0 .708-.708l-13-13a.5.5 0 1 0-.708.708l3.456 3.455l-2.015 2.005a1.99 1.99 0 0 0 0 2.822l3.296 3.28a2.013 2.013 0 0 0 2.836 0zm2.67-2.657l-1.253 1.246L6.02 3.898l1.307-1.3a2 2 0 0 1 1.41-.584L11.986 2A2 2 0 0 1 14 4.01l-.024 3.363a2 2 0 0 1-.588 1.396M11 6a1 1 0 1 0 0-2a1 1 0 0 0 0 2"></svg:path>`,
+})
+export class FluentTagOff16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

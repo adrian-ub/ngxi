@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixZoomOutIcon],svg[ix-zoom-out-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M213.334 42.667C307.435 42.667 384 119.232 384 213.334c0 39.381-13.546 75.584-36.01 104.469l121.3 121.323l-30.165 30.165L317.803 347.99C288.918 370.454 252.715 384 213.333 384c-94.1 0-170.666-76.565-170.666-170.666c0-94.102 76.565-170.667 170.667-170.667m0 42.667c-70.592 0-128 57.408-128 128s57.408 128 128 128s128-57.408 128-128s-57.408-128-128-128M298.667 192v42.667H128V192z"></svg:path>`,
+})
+export class IxZoomOutIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentScript20FilledIcon],svg[fluent-script-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.563 2H6.5A2.5 2.5 0 0 0 4 4.5V13h6a1 1 0 0 1 1 1v2.094c0 1.104.895 1.906 2 1.906c1.095 0 1.985-.787 2-1.88V4.376h.003A2.5 2.5 0 0 1 17 2.05a2.5 2.5 0 0 0-.437-.05m-5.88 16A3 3 0 0 1 10 16.094V14H1.5a.5.5 0 0 0-.5.5v1.188C1 17.02 2.086 18 3.375 18zM18 7a1 1 0 0 0 1-1V4.5a1.5 1.5 0 0 0-3 0V7z"></svg:path>`,
+})
+export class FluentScript20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

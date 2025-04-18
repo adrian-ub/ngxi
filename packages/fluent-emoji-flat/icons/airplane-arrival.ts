@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatAirplaneArrivalIcon],svg[fluent-emoji-flat-airplane-arrival-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:g clip-path="url(#fluentEmojiFlatAirplaneArrival0)"><svg:path fill="#9B9B9B" d="m14.756 8.442l2.03 1.263l2.197-.712a1.03 1.03 0 0 0-.895-.976l-3.22-.425zm-1.19 8.814l3.22.425c.56.069.961.589.886 1.158a1.026 1.026 0 0 1-1.158.886l-3.22-.424z"></svg:path><svg:path fill="#0084CE" d="M6.754 4.317L8.17 7.586L5 8L2.03 6.78l.583-4.471a.64.64 0 0 1 .719-.556a4.36 4.36 0 0 1 3.422 2.564m6.614-.79l4.516 5.323l-3.384.65l-2.754-1.451l-1.322-2.537c-.67-1.285.384-2.784 1.813-2.597a1.77 1.77 0 0 1 1.131.612"></svg:path><svg:path fill="#CDC4D6" d="m2.03 6.78l-.136 1.015a6.174 6.174 0 0 0 5.324 6.924l19.047 2.484c1.905.245 3.66-1.144 3.919-3.118c.258-1.975-1.084-3.775-2.99-4.02z"></svg:path><svg:path fill="#00A6ED" d="M25.538 12.702a.777.777 0 0 0 .667.87l3.987.519l.007-.009a3.6 3.6 0 0 0-.134-1.567l-3.657-.48a.76.76 0 0 0-.87.667"></svg:path><svg:path fill="#0084CE" d="m15.449 12.687l5.032.651c.875.11 1.154 1.243.43 1.755l-9.956 6.936a1.8 1.8 0 0 1-1.25.31c-1.43-.188-2.067-1.915-1.092-2.98l5.72-6.26a1.29 1.29 0 0 1 1.116-.412"></svg:path><svg:path fill="#636363" d="M30.003 25a1 1 0 0 0-1-1h-26a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1z"></svg:path><svg:path fill="#9B9B9B" d="M4.5 26.5a.5.5 0 0 0 0 1H8a.5.5 0 0 0 0-1zm6.5 0a.5.5 0 0 0 0 1h3.5a.5.5 0 0 0 0-1zm6 .5a.5.5 0 0 1 .5-.5H21a.5.5 0 0 1 0 1h-3.5a.5.5 0 0 1-.5-.5m7-.5a.5.5 0 0 0 0 1h3.5a.5.5 0 0 0 0-1z"></svg:path></svg:g><svg:defs><svg:clippath id="fluentEmojiFlatAirplaneArrival0"><svg:path fill="#fff" d="M0 0h32v32H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
+})
+export class FluentEmojiFlatAirplaneArrivalIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

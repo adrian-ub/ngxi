@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineWifiSolidIcon],svg[streamline-wifi-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M3.916 3.381a8.06 8.06 0 0 1 8.782 1.747a.75.75 0 1 0 1.06-1.06a9.556 9.556 0 0 0-13.517 0a.75.75 0 1 0 1.061 1.06a8.1 8.1 0 0 1 2.614-1.747M7 5.61a5.53 5.53 0 0 0-3.919 1.63a.75.75 0 0 1-1.064-1.058a7.027 7.027 0 0 1 9.966 0a.75.75 0 1 1-1.064 1.058A5.53 5.53 0 0 0 7 5.61m-.98 2.939a2.59 2.59 0 0 1 2.867.58a.75.75 0 1 0 1.075-1.047a4.094 4.094 0 0 0-5.866 0A.75.75 0 1 0 5.17 9.13c.242-.248.531-.446.85-.58Zm-.612 3.164a1.592 1.592 0 1 1 3.184 0a1.592 1.592 0 0 1-3.184 0" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineWifiSolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiSmartCardReaderOutlineIcon],svg[mdi-smart-card-reader-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.5 8.5A2.5 2.5 0 1 0 17 11a2.5 2.5 0 0 0-2.5-2.5M8.25 6H7v10h1.25c1.66 0 2.5-3.34 2.5-5s-.84-5-2.5-5M19 2H5a2.07 2.07 0 0 0-2 2v14h2V4h14v14h2V4a2.07 2.07 0 0 0-2-2m4 20H1v-1a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2Z"></svg:path>`,
+})
+export class MdiSmartCardReaderOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

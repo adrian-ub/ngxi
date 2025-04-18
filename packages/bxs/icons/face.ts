@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[bxsFaceIcon],svg[bxs-face-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2m0 18c-4.411 0-8-3.589-8-8c0-1.168.258-2.275.709-3.276q.232.135.456.276c.396.25.791.5 1.286.688c.494.187 1.088.312 1.879.312c.792 0 1.386-.125 1.881-.313s.891-.437 1.287-.687s.792-.5 1.287-.688S13.873 8 14.665 8s1.386.125 1.88.313c.495.187.891.437 1.287.687s.792.5 1.287.688q.269.099.581.171c.191.682.3 1.398.3 2.141c0 4.411-3.589 8-8 8"></svg:path><svg:circle cx="8.5" cy="12.5" r="1.5" fill="currentColor"></svg:circle><svg:circle cx="15.5" cy="12.5" r="1.5" fill="currentColor"></svg:circle>`,
+})
+export class BxsFaceIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

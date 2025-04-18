@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentDatabaseCheckmark16RegularIcon],svg[fluent-database-checkmark-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 1C5.149 1 3 2.075 3 3.5v9c0 1.294 1.773 2.3 4.235 2.473a5.5 5.5 0 0 1-.692-1.086C4.956 13.627 4 12.978 4 12.5V5.021A7.4 7.4 0 0 0 8 6a7.4 7.4 0 0 0 4-.979v1.001q.516.048 1 .185V3.5C13 2.075 10.851 1 8 1m0 1c2.441 0 4 .888 4 1.5S10.441 5 8 5s-4-.888-4-1.5S5.558 2 8 2m8 9.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.146-1.854a.5.5 0 0 0-.708 0L10.5 12.293l-.646-.647a.5.5 0 0 0-.708.708l1 1a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0 0-.708"></svg:path>`,
+})
+export class FluentDatabaseCheckmark16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

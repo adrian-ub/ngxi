@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenRoninIcon],svg[token-ronin-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.95 10.021h1.349a.9.9 0 0 0 .636-.266a.9.9 0 0 0 .264-.642V7.147a.15.15 0 0 0-.15-.152h-2.1a.15.15 0 0 0-.106.045a.15.15 0 0 0-.044.107V9.87a.15.15 0 0 0 .15.151"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M5.571 15.49V4.385A1.386 1.386 0 0 1 6.961 3h10.077a1.39 1.39 0 0 1 1.39 1.385V15.49a1.38 1.38 0 0 1-.52 1.08l-5.257 4.202a1.045 1.045 0 0 1-1.303 0L6.093 16.57a1.39 1.39 0 0 1-.522-1.08m10.177-8.494v2.42c0 .32-.126.628-.35.855a1.2 1.2 0 0 1-.848.355c.318 0 .624.128.849.355s.35.535.35.856v2.182a1.22 1.22 0 0 1-.449.944l-1.856 1.503a.15.15 0 0 1-.159.018a.15.15 0 0 1-.085-.136V12.14a.9.9 0 0 0-.264-.642a.9.9 0 0 0-.636-.265h-1.35a.15.15 0 0 0-.15.15v4.966a.15.15 0 0 1-.085.137a.15.15 0 0 1-.159-.019L8.7 14.962a1.2 1.2 0 0 1-.45-.943V6.996c0-.321.126-.629.351-.856s.53-.354.849-.354h5.098c.318 0 .623.127.848.354s.352.535.352.856" clip-rule="evenodd"></svg:path>`,
+})
+export class TokenRoninIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

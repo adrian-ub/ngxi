@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWindowApps32FilledIcon],svg[fluent-window-apps-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 7.5A4.5 4.5 0 0 1 7.5 3h17A4.5 4.5 0 0 1 29 7.5v4.111a4.5 4.5 0 0 0-1-.111h-1V11H5v13.5A2.5 2.5 0 0 0 7.5 27h4v1q.002.517.111 1H7.5A4.5 4.5 0 0 1 3 24.5zM24 13a3 3 0 0 0-3 3v5h-5a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3h10.5a4.5 4.5 0 0 0 4.5-4.5V16a3 3 0 0 0-3-3zm-1 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5h-6zm-7 7h5v6h-5a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m10.5 6H23v-6h6v3.5a2.5 2.5 0 0 1-2.5 2.5"></svg:path>`,
+})
+export class FluentWindowApps32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

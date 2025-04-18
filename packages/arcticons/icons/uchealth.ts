@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsUchealthIcon],svg[arcticons-uchealth-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M6.5 21.637v2.73a1.66 1.66 0 0 0 1.655 1.655h0a1.66 1.66 0 0 0 1.655-1.655v-2.73m0 2.73v1.655m6.902-6.619v6.619m0-2.73a1.66 1.66 0 0 1 1.654-1.655h0a1.66 1.66 0 0 1 1.655 1.655v2.73m18.169-6.619v6.619m0-2.73a1.66 1.66 0 0 1 1.655-1.655h0a1.66 1.66 0 0 1 1.655 1.655v2.73m-6.041-5.792v5.792m-.911-4.385h1.738m-11.269 3.558a1.6 1.6 0 0 1-1.406.827h0a1.66 1.66 0 0 1-1.655-1.655v-1.075a1.66 1.66 0 0 1 1.655-1.655h0a1.66 1.66 0 0 1 1.655 1.655v.579h-3.31m10.501-4.468v5.792a.782.782 0 0 0 .828.827h.248m-18.785-.827a1.6 1.6 0 0 1-1.407.827h0a1.66 1.66 0 0 1-1.655-1.655v-1.075a1.66 1.66 0 0 1 1.655-1.655h0a1.6 1.6 0 0 1 1.407.827m15.748 1.903a1.66 1.66 0 0 1-1.655 1.655h0a1.66 1.66 0 0 1-1.655-1.655v-1.075a1.66 1.66 0 0 1 1.655-1.655h0a1.66 1.66 0 0 1 1.655 1.655m0 2.73v-4.385M4.5 29h39"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M43.5 35.5v-23a4 4 0 0 0-4-4h-31a4 4 0 0 0-4 4v23a4 4 0 0 0 4 4h31a4 4 0 0 0 4-4"></svg:path>`,
+})
+export class ArcticonsUchealthIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

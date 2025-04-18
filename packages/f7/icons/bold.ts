@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7BoldIcon],svg[f7-bold-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.027 44.758h12.235c7.148 0 11.672-3.774 11.672-9.563c0-4.57-3.282-7.875-8.063-8.132v-.188c3.89-.54 6.54-3.469 6.54-7.195c0-5.227-3.985-8.438-10.5-8.438H18.026c-2.508 0-3.96 1.477-3.96 4.055v25.43c0 2.554 1.453 4.03 3.96 4.03M21.8 25.163V16.75h5.765c3.282 0 5.227 1.5 5.227 4.078c0 2.719-2.156 4.336-5.812 4.336Zm0 14.18v-9.305h5.883c4.125 0 6.398 1.594 6.398 4.594c0 3.07-2.203 4.71-6.234 4.71Z"></svg:path>`,
+})
+export class F7BoldIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

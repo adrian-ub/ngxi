@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7ArrowRightToLineAltIcon],svg[f7-arrow-right-to-line-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M30.262 45.766c.539 0 1.03-.188 1.5-.633L47.347 29.57c.4-.375.657-.843.703-1.336V43.75c0 1.195.891 2.016 2.11 2.016s2.086-.82 2.086-2.016V12.32c0-1.218-.867-2.086-2.086-2.086s-2.11.868-2.11 2.086v15.47c-.046-.493-.304-.962-.703-1.36L31.762 10.89c-.47-.445-.961-.656-1.5-.656c-1.172 0-2.063.868-2.063 2.016c0 .563.211 1.125.563 1.5l5.25 5.32l7.687 7.032l-4.992-.188H5.817c-1.196 0-2.063.867-2.063 2.086s.867 2.11 2.062 2.11h30.89l5.016-.188l-7.71 7.008l-5.25 5.343c-.352.375-.563.938-.563 1.477c0 1.172.89 2.016 2.063 2.016"></svg:path>`,
+})
+export class F7ArrowRightToLineAltIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

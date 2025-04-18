@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightTollRoundedIcon],svg[material-symbols-light-toll-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15.003 19q-2.93 0-4.966-2.033T8 12.003t2.034-4.966T14.997 5t4.967 2.034T22 11.997t-2.033 4.967T15.003 19m-8.705-.52q-1.984-.743-3.141-2.52T2 12t1.157-3.96q1.157-1.776 3.141-2.52q.275-.116.489.033Q7 5.7 7 6.038q0 .13-.087.245q-.086.116-.219.176q-1.69.668-2.692 2.179T3 12t1.002 3.363t2.692 2.178q.133.065.22.183q.086.118.086.263q0 .298-.213.454q-.214.155-.489.04"></svg:path>`,
+})
+export class MaterialSymbolsLightTollRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

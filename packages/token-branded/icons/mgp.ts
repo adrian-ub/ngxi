@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedMgpIcon],svg[token-branded-mgp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#CEEBFF" d="M12 19.941a7.942 7.942 0 1 0 0-15.883a7.942 7.942 0 0 0 0 15.883M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18"></svg:path><svg:path fill="#91C5FF" d="M12 19.94a7.941 7.941 0 1 0 0-15.882a7.941 7.941 0 0 0 0 15.882"></svg:path><svg:path fill="url(#tokenBrandedMgp0)" d="M12 14.118a8.47 8.47 0 0 0 6.845-3.483a7.8 7.8 0 0 1-.37 1.779l-.652.645l.445-.11a8 8 0 0 1-.334.688l-.64.481l.423-.106A6.76 6.76 0 0 1 12 17.295c-2.383 0-4.48-1.303-5.718-3.283l.423.106l-.64-.476a7 7 0 0 1-.35-.742l.461.16l-.646-.646a8 8 0 0 1-.376-1.78A8.46 8.46 0 0 0 12 14.119"></svg:path><svg:path fill="url(#tokenBrandedMgp1)" d="M17.03 12.25a5.03 5.03 0 1 1-10.059 0a5.03 5.03 0 0 1 10.059 0"></svg:path><svg:path fill="url(#tokenBrandedMgp2)" d="M16.627 14.382a5.55 5.55 0 0 1-7.139 1.755A5.55 5.55 0 0 1 7.5 14.382a5.03 5.03 0 0 0 9.127 0"></svg:path><svg:path fill="#FDFFFF" d="M16.5 11.455a2.118 2.118 0 1 1-4.236 0a2.118 2.118 0 0 1 4.236 0"></svg:path><svg:path fill="url(#tokenBrandedMgp3)" d="m11.47 13.324l.53-.795l.53.794l-.53.795z"></svg:path><svg:path fill="#1474B0" d="M14.647 11.735a1.059 1.059 0 1 1-2.118 0a1.059 1.059 0 0 1 2.118 0"></svg:path><svg:path fill="#0C192A" d="M14.382 11.737a.795.795 0 1 1-1.59-.001a.795.795 0 0 1 1.59 0"></svg:path><svg:path fill="#FEFFFF" d="M14.119 11.207a.265.265 0 1 1-.53 0a.265.265 0 0 1 .53 0"></svg:path><svg:path fill="#FDFFFF" d="M7.5 11.47a2.118 2.118 0 1 0 4.235 0a2.118 2.118 0 0 0-4.235 0"></svg:path><svg:path fill="#1474B0" d="M9.353 11.751a1.059 1.059 0 1 0 2.118 0a1.059 1.059 0 0 0-2.118 0"></svg:path><svg:path fill="#0C192A" d="M9.618 11.751a.794.794 0 1 0 1.589 0a.794.794 0 0 0-1.589 0"></svg:path><svg:path fill="#FEFFFF" d="M9.883 11.207a.265.265 0 1 0 .53 0a.265.265 0 0 0-.53 0"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedMgp0" x1="20.7" x2="3.647" y1="8.123" y2="8.123" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#68AFE7"></svg:stop><svg:stop offset=".07" stop-color="#106EBE"></svg:stop><svg:stop offset=".16" stop-color="#0A3256"></svg:stop><svg:stop offset=".81" stop-color="#083459"></svg:stop><svg:stop offset=".91" stop-color="#1879CA"></svg:stop><svg:stop offset="1" stop-color="#67AEE6"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedMgp1" x1="11.527" x2="11.527" y1="3.03" y2="21.03" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#06111D"></svg:stop><svg:stop offset="1" stop-color="#154983"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedMgp2" x1="3.125" x2="20.875" y1="4.667" y2="4.667" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#083A5E"></svg:stop><svg:stop offset=".09" stop-color="#699AC3"></svg:stop><svg:stop offset=".29" stop-color="#FFFDFF"></svg:stop><svg:stop offset=".85" stop-color="#FDFDFD"></svg:stop><svg:stop offset=".94" stop-color="#4197DE"></svg:stop><svg:stop offset="1" stop-color="#114873"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedMgp3" x1="12" x2="12" y1="3" y2="21" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#C7C4BD"></svg:stop><svg:stop offset="1" stop-color="#ADA9AA"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedMgpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

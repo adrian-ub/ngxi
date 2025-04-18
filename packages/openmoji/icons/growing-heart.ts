@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiGrowingHeartIcon],svg[openmoji-growing-heart-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FFA7C0" d="M59.5 25c0-6.904-5.596-12.5-12.5-12.5a12.5 12.5 0 0 0-11 6.56a12.5 12.5 0 0 0-11-6.56c-6.904 0-12.5 5.596-12.5 12.5c0 2.97 1.04 5.694 2.77 7.839l-.004.003L36 58.54l20.734-25.698l-.004-.003A12.44 12.44 0 0 0 59.5 25"></svg:path><svg:path fill="#E67A94" d="M56.417 29.4c0-5.998-4.862-10.86-10.86-10.86c-4.13 0-7.72 2.305-9.557 5.699a10.86 10.86 0 0 0-9.557-5.7c-5.998 0-10.86 4.863-10.86 10.86c0 2.581.904 4.948 2.407 6.811l-.004.003L36 58.54l18.014-22.327l-.004-.003a10.8 10.8 0 0 0 2.407-6.81"></svg:path><svg:path fill="#FFA7C0" d="M53.865 33.042A9.503 9.503 0 0 0 36 28.526a9.503 9.503 0 0 0-17.865 4.516c0 2.258.79 4.33 2.106 5.96l-.003.002L36 58.54l15.762-19.536l-.003-.002a9.46 9.46 0 0 0 2.106-5.96"></svg:path><svg:path fill="#E67A94" d="M51.313 36.685A8.145 8.145 0 0 0 36 32.815a8.145 8.145 0 0 0-15.313 3.87c0 1.935.678 3.71 1.806 5.108l-.003.002L36 58.54l13.51-16.745l-.002-.002a8.1 8.1 0 0 0 1.805-5.108"></svg:path><svg:path fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M59.5 25c0-6.904-5.596-12.5-12.5-12.5a12.5 12.5 0 0 0-11 6.56a12.5 12.5 0 0 0-11-6.56c-6.904 0-12.5 5.596-12.5 12.5c0 2.97 1.04 5.694 2.77 7.839l-.004.003L36 58.54l20.734-25.698l-.004-.003A12.44 12.44 0 0 0 59.5 25z"></svg:path>`,
+})
+export class OpenmojiGrowingHeartIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

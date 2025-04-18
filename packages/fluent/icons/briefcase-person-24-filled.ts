@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBriefcasePerson24FilledIcon],svg[fluent-briefcase-person-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 6V4.25A2.25 2.25 0 0 1 10.25 2h3.5A2.25 2.25 0 0 1 16 4.25V6h1.75A3.25 3.25 0 0 1 21 9.25v1.5c0 .629-.331 1.18-.829 1.488A3.5 3.5 0 0 0 17.5 11c-1.19 0-2.24.593-2.873 1.5H14V12a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.5H4.75A1.75 1.75 0 0 1 3 10.75v-1.5A3.25 3.25 0 0 1 6.25 6zm5.75-2.5h-3.5a.75.75 0 0 0-.75.75V6h5V4.25a.75.75 0 0 0-.75-.75m.285 10.5H14a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1H4.75A3.24 3.24 0 0 1 3 13.49v3.26A3.25 3.25 0 0 0 6.25 20h5.752L12 19.875v-.103A2.77 2.77 0 0 1 14.773 17h.277a3.49 3.49 0 0 1-1.015-3m5.965.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m2 5.375C22 21.431 20.714 23 17.5 23S13 21.437 13 19.875v-.103c0-.98.794-1.772 1.773-1.772h5.454c.98 0 1.773.793 1.773 1.772z"></svg:path>`,
+})
+export class FluentBriefcasePerson24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

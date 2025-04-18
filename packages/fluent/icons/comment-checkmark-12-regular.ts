@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCommentCheckmark12RegularIcon],svg[fluent-comment-checkmark-12-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 3.5a3.5 3.5 0 1 0-7 0a3.5 3.5 0 0 0 7 0m-1.646-1.354a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708L8 3.793l1.646-1.647a.5.5 0 0 1 .708 0M3 2h1.256q.19-.535.502-1H3a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v1.5a.5.5 0 0 0 .777.416L6.651 9H9a2 2 0 0 0 1.984-1.747a4.5 4.5 0 0 1-1.557.651A1 1 0 0 1 9 8H6.5a.5.5 0 0 0-.277.084L4 9.566V8.5a.5.5 0 0 0-.5-.5H3a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1"></svg:path>`,
+})
+export class FluentCommentCheckmark12RegularIcon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

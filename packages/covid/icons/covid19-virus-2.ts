@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[covidCovid19Virus2Icon],svg[covid-covid19-virus-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M4.934 7.263L3.269 5.6A1.648 1.648 0 1 1 5.6 3.269l1.663 1.665m0 14.132L5.6 20.731A1.647 1.647 0 1 1 3.269 18.4l1.665-1.666m14.132.003l1.665 1.663a1.648 1.648 0 0 1-2.331 2.331l-1.666-1.665m.003-14.132L18.4 3.269A1.648 1.648 0 0 1 20.731 5.6l-1.665 1.663"></svg:path><svg:path d="M20.347 10.354a8.51 8.51 0 0 0-6.7-6.7m-.001 16.693a8.515 8.515 0 0 0 6.7-6.7m-16.693-.001a8.51 8.51 0 0 0 6.7 6.7m.001-16.693a8.51 8.51 0 0 0-6.7 6.7"></svg:path><svg:path d="M9.805 6.787c.351-.352.549-.828.549-1.325V2.4a1.646 1.646 0 1 1 3.292 0v3.062c.002.498.201.974.554 1.325M6.787 14.2a1.88 1.88 0 0 0-1.325-.549H2.4a1.646 1.646 0 1 1 0-3.292h3.062c.497 0 .973-.198 1.325-.549m7.413 7.403a1.88 1.88 0 0 0-.549 1.325V21.6a1.646 1.646 0 1 1-3.292 0v-3.062c0-.497-.198-.973-.549-1.325m7.403-7.408c.352.351.828.549 1.325.549H21.6a1.646 1.646 0 0 1 0 3.292h-3.062c-.497 0-.973.198-1.325.549"></svg:path></svg:g>`,
+})
+export class CovidCovid19Virus2Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

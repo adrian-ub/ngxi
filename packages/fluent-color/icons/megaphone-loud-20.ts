@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorMegaphoneLoud20Icon],svg[fluent-color-megaphone-loud-20-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorMegaphoneLoud200)" fill-rule="evenodd" d="M6 15.5a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0m3.5-2a2 2 0 1 0 0 4a2 2 0 0 0 0-4" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorMegaphoneLoud201)" fill-opacity=".8" fill-rule="evenodd" d="M6 15.5a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0m3.5-2a2 2 0 1 0 0 4a2 2 0 0 0 0-4" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorMegaphoneLoud202)" d="M7.607 3.145a2 2 0 0 1 3.261-.514l6.587 6.98a2 2 0 0 1-.648 3.203L5.325 17.872a1.5 1.5 0 0 1-1.661-.307l-1.222-1.211a1.5 1.5 0 0 1-.299-1.71z"></svg:path><svg:path fill="url(#fluentColorMegaphoneLoud203)" fill-opacity=".8" d="M7.607 3.145a2 2 0 0 1 3.261-.514l6.587 6.98a2 2 0 0 1-.648 3.203L5.325 17.872a1.5 1.5 0 0 1-1.661-.307l-1.222-1.211a1.5 1.5 0 0 1-.299-1.71z"></svg:path><svg:path fill="url(#fluentColorMegaphoneLoud204)" d="M14.712 1.737a.75.75 0 0 0-1.423-.474l-.5 1.5a.75.75 0 1 0 1.423.474z"></svg:path><svg:path fill="url(#fluentColorMegaphoneLoud205)" d="M18.03 3.03a.75.75 0 0 0-1.06-1.06l-2 2a.75.75 0 0 0 1.06 1.06z"></svg:path><svg:path fill="url(#fluentColorMegaphoneLoud206)" d="M17 5.75a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5z"></svg:path><svg:defs><svg:lineargradient id="fluentColorMegaphoneLoud200" x1="14.5" x2="11.487" y1="23.5" y2="16.098" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#43E5CA"></svg:stop><svg:stop offset="1" stop-color="#0C74A1"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorMegaphoneLoud201" x1="8" x2="11.003" y1="13" y2="20.499" gradientUnits="userSpaceOnUse"><svg:stop offset=".08" stop-color="#E362F8"></svg:stop><svg:stop offset=".656" stop-color="#96F" stop-opacity="0"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorMegaphoneLoud202" x1="2.57" x2="13.609" y1="5.003" y2="16.477" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#43E5CA"></svg:stop><svg:stop offset="1" stop-color="#1384B1"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorMegaphoneLoud203" x1="10" x2="17" y1="11" y2="22.5" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#96F" stop-opacity="0"></svg:stop><svg:stop offset=".63" stop-color="#E362F8"></svg:stop></svg:lineargradient><svg:radialgradient id="fluentColorMegaphoneLoud204" cx="0" cy="0" r="1" gradientTransform="matrix(14 -14 14.00977 14.00977 6 14)" gradientUnits="userSpaceOnUse"><svg:stop offset=".623" stop-color="#FB5937"></svg:stop><svg:stop offset=".935" stop-color="#FFA43D"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorMegaphoneLoud205" cx="0" cy="0" r="1" gradientTransform="matrix(14 -14 14.00977 14.00977 6 14)" gradientUnits="userSpaceOnUse"><svg:stop offset=".623" stop-color="#FB5937"></svg:stop><svg:stop offset=".935" stop-color="#FFA43D"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorMegaphoneLoud206" cx="0" cy="0" r="1" gradientTransform="matrix(14 -14 14.00977 14.00977 6 14)" gradientUnits="userSpaceOnUse"><svg:stop offset=".623" stop-color="#FB5937"></svg:stop><svg:stop offset=".935" stop-color="#FFA43D"></svg:stop></svg:radialgradient></svg:defs></svg:g>`,
+})
+export class FluentColorMegaphoneLoud20Icon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

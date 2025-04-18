@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneV1TwoOclockIcon],svg[emojione-v1-two-oclock-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="31.926" cy="31.924" r="29.574" fill="#e0e7ec"></svg:circle><svg:path fill="#98a9b4" d="M0 31.926C0 49.529 14.321 63.85 31.924 63.85S63.85 49.531 63.85 31.926S49.527 0 31.924 0S0 14.321 0 31.926m6.215 0c0-14.179 11.534-25.712 25.708-25.712c14.177 0 25.711 11.534 25.711 25.712c0 14.176-11.534 25.709-25.711 25.709c-14.174 0-25.708-11.533-25.708-25.709"></svg:path><svg:path fill="#85939c" d="M33.799 11.01c0-1.434-.846-2.596-1.886-2.596c-1.039 0-1.886 1.162-1.886 2.596v21.04c0 1.436.848 2.6 1.886 2.6c1.041 0 1.886-1.164 1.886-2.6z"></svg:path><svg:path fill="#788288" d="M46.15 25.08c1.162-.84 1.606-2.206.998-3.05c-.61-.84-2.051-.842-3.211 0L31.61 30.961c-1.158.84-1.606 2.212-.994 3.05c.609.844 2.047.846 3.207.008z"></svg:path>`,
+})
+export class EmojioneV1TwoOclockIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

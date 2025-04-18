@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsSdMaidIcon],svg[arcticons-sd-maid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M38.3 28.6c0 2-1.6 3.6-3.6 3.6h0c-.2 0-.5 0-.7-.1c.1.3.1.5.1.8c0 2-1.6 3.6-3.6 3.6c-1 0-2-.4-2.6-1.1c-.5 1.9-2.4 3.1-4.3 2.7c-1.3-.3-2.3-1.3-2.7-2.7c-1.3 1.5-3.6 1.6-5 .3c-1-.9-1.4-2.3-1.1-3.6c-.2 0-.5.1-.7.1c-2 0-3.6-1.6-3.6-3.6h0v-.1H5.9v11.7c0 1.1.8 2 1.9 2q0 0 0 0H41c1.1 0 2-.9 2-2V28.4h-4.6c-.1.1-.1.1-.1.2M14.6 5.9l3.7 5.6l-5.9 1.4l-3.6 4.8l-3.7-5.6l5.9-1.4z"></svg:path><svg:path d="M7.9 16.3c-1.3 2.6-2 5.4-2 8.3v3.8m6.7-19.8L11 7c-.6-.6-1.4-.9-2.2-.9c-1.7 0-3 1.3-3 3c0 .8.3 1.6.9 2.2l.4.3m35.8 16.8v-3.8c0-3.9-1.3-7.7-3.5-10.8l2.6-2.6c1.2-1.2 1.2-3.1 0-4.3s-3.1-1.2-4.3 0h0l-2.6 2.6c-5.6-4-12.9-4.6-19-1.5m3.4 12.8c0 1.6-1.3 2.9-2.9 2.9s-2.9-1.3-2.9-2.9s1.3-2.9 2.9-2.9h0c1.6 0 2.9 1.3 2.9 2.9m12.6 3c-1.6 0-2.9-1.3-2.9-2.9s1.3-2.9 2.9-2.9s2.9 1.3 2.9 2.9v0h0c.1 1.5-1.2 2.8-2.9 2.9m-21.6 4.7h27.8"></svg:path></svg:g>`,
+})
+export class ArcticonsSdMaidIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

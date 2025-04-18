@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fa6SolidPersonBikingIcon],svg[fa6-solid-person-biking-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M400 96a48 48 0 1 0 0-96a48 48 0 1 0 0 96m27.2 64l-61.8-48.8c-17.3-13.6-41.7-13.8-59.1-.3l-83.1 64.2c-30.7 23.8-28.5 70.8 4.3 91.6l60.5 38.4V416c0 17.7 14.3 32 32 32s32-14.3 32-32V288c0-10.7-5.3-20.7-14.2-26.6L295 232.9l60.3-48.5L396 217c5.7 4.5 12.7 7 20 7h64c17.7 0 32-14.3 32-32s-14.3-32-32-32zM56 384a72 72 0 1 1 144 0a72 72 0 1 1-144 0m200 0a128 128 0 1 0-256 0a128 128 0 1 0 256 0m184 0a72 72 0 1 1 144 0a72 72 0 1 1-144 0m200 0a128 128 0 1 0-256 0a128 128 0 1 0 256 0"></svg:path>`,
+})
+export class Fa6SolidPersonBikingIcon {
+  readonly viewBox = input("0 0 640 512")
+  readonly width = input("1.25em")
+  readonly height = input("1em")
+}

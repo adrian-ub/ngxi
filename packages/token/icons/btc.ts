@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBtcIcon],svg[token-btc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.763 10.236c.28-1.895-1.155-2.905-3.131-3.591l.64-2.553l-1.56-.389l-.623 2.49l-1.245-.297l.631-2.508L11.915 3l-.641 2.562l-.992-.234v-.01l-2.157-.54l-.415 1.668s1.155.272 1.137.28c.631.163.74.578.722.903l-.722 2.923l.162.054l-.171-.036l-1.02 4.087c-.072.19-.27.478-.712.36c.018.028-1.128-.27-1.128-.27l-.776 1.778l2.03.505l1.11.289l-.65 2.59l1.56.387l.632-2.562l1.254.324l-.64 2.554l1.56.388l.641-2.59c2.662.505 4.665.308 5.505-2.102c.676-1.94-.037-3.05-1.435-3.79c1.02-.225 1.786-.902 1.985-2.282zm-3.564 4.999c-.479 1.94-3.745.884-4.8.63l.857-3.436c1.055.27 4.448.784 3.943 2.796zm.478-5.026c-.433 1.76-3.158.866-4.033.65l.775-3.113c.885.217 3.718.632 3.258 2.463"></svg:path>`,
+})
+export class TokenBtcIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

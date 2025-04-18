@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPeopleToolbox16FilledIcon],svg[fluent-people-toolbox-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 4.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0M10.5 6q-.351.001-.676.092a2 2 0 1 1 3.351 0A2.5 2.5 0 0 0 12.5 6zM8 8h.05l-.008.042A2.5 2.5 0 0 0 6 10.5v1.984q-.24.016-.5.016c-4 0-4-2.925-4-2.925V9.5A1.5 1.5 0 0 1 3 8zm1 1v-.5A1.5 1.5 0 0 1 10.5 7h2A1.5 1.5 0 0 1 14 8.5V9h.5a1.5 1.5 0 0 1 1.5 1.5V12h-2v-.5a.5.5 0 0 0-1 0v.5h-3v-.5a.5.5 0 0 0-1 0v.5H7v-1.5A1.5 1.5 0 0 1 8.5 9zm1-.5V9h3v-.5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5m4 4.5h2v1.5a1.5 1.5 0 0 1-1.5 1.5h-6A1.5 1.5 0 0 1 7 14.5V13h2v.5a.5.5 0 0 0 1 0V13h3v.5a.5.5 0 0 0 1 0z"></svg:path>`,
+})
+export class FluentPeopleToolbox16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

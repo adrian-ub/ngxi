@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[laSmileBeamIcon],svg[la-smile-beam-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-5 7c-2.094 0-3.61 1.207-3.61 1.207l1.22 1.586S9.692 14 11.001 14s2.39.793 2.39.793l1.22-1.586C14.608 13.207 13.093 12 11 12m10 0c-2.094 0-3.61 1.207-3.61 1.207l1.22 1.586S19.692 14 21.001 14s2.39.793 2.39.793l1.22-1.586C24.608 13.207 23.093 12 21 12m-10.19 7l-1.72 1a8.1 8.1 0 0 0 2.87 2.896q.445.264.923.47a8 8 0 0 0 2.031.56a8 8 0 0 0 2.172 0a7.95 7.95 0 0 0 4.572-2.293A8 8 0 0 0 22.91 20l-1.72-1a5.996 5.996 0 0 1-6.795 2.783a6 6 0 0 1-1.436-.611A6 6 0 0 1 10.811 19z"></svg:path>`,
+})
+export class LaSmileBeamIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

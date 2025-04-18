@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentIot20FilledIcon],svg[fluent-iot-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 3.992a2 2 0 0 1-2.647 1.893l-1.284 1.943c.571.544.928 1.311.931 2.162l1.17.202a2 2 0 1 1-.162.987l-1.17-.203a3 3 0 0 1-1.426 1.673l.444 1.357Q11.928 14 12 14a2 2 0 1 1-1.092.324l-.445-1.36a3 3 0 0 1-2.874-1.18l-1.635.788Q6 12.779 6 13a2 2 0 1 1-.498-1.32l1.633-.787a3 3 0 0 1 .637-2.902l-.935-1.174a2 2 0 1 1 .775-.632l.944 1.185C8.984 7.135 9.476 7 10 7c.442 0 .862.095 1.24.267l1.278-1.933A2 2 0 1 1 16 3.992"></svg:path>`,
+})
+export class FluentIot20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

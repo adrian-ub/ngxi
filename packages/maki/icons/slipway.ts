@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[makiSlipwayIcon],svg[maki-slipway-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m2 10l12 1.495V12H2zm12-4l-1 1v.583L5.196 4.332l.063-.125L6.61 2.845h.831a.35.35 0 0 0 0-.7h-.976a.35.35 0 0 0-.248.103L4.723 3.753a.4.4 0 0 0-.066.09l-.109.219L2 3c0 2-.03 3.958 2.86 4.5C6.28 7.765 13 9 13 9l2-2z"></svg:path>`,
+})
+export class MakiSlipwayIcon {
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

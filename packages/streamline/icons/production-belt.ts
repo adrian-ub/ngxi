@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineProductionBeltIcon],svg[streamline-production-belt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M2.9 8.875h8.2a2.305 2.305 0 0 1 0 4.61H2.9a2.305 2.305 0 0 1 0-4.61m7.545-7.379h-7c-.351 0-.636.254-.636.568v6.243c0 .314.285.568.636.568h7c.351 0 .636-.254.636-.568V2.064c0-.314-.285-.568-.636-.568"></svg:path><svg:path d="M8.218 1.496v2.838a.27.27 0 0 1-.093.2a.34.34 0 0 1-.225.084H5.99a.34.34 0 0 1-.224-.083a.27.27 0 0 1-.093-.2v-2.84M3.735 11.43a.25.25 0 1 1 0-.5m0 .5a.25.25 0 1 0 0-.5m3.265.5a.25.25 0 1 1 0-.5m0 .5a.25.25 0 1 0 0-.5m3.265.5a.25.25 0 1 1 0-.5m0 .5a.25.25 0 1 0 0-.5"></svg:path></svg:g>`,
+})
+export class StreamlineProductionBeltIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

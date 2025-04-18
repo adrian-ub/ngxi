@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatNestingDollsIcon],svg[fluent-emoji-flat-nesting-dolls-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#F70A8D" d="M9 14.5C7.613 16.58 7 18 7 20h18c0-2-.613-3.42-2-5.5C22 13 21.5 10 21.5 9c0-2.333-.5-7-5.5-7s-5.5 4.667-5.5 7c0 1-.5 4-1.5 5.5"></svg:path><svg:path fill="#F4F4F4" d="M21 20c-2-.5-4.5-6-5-8c-.5 2-3 7.5-5 8z"></svg:path><svg:path fill="#CA0B4A" d="M5 20a1 1 0 0 1 1-1h3l7 2.807L23 19h3a1 1 0 0 1 1 1v1a9 9 0 0 1-9 9h-4a9 9 0 0 1-9-9z"></svg:path><svg:path fill="#fff" d="M9 19h14v1a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6z"></svg:path><svg:path fill="#CA0B4A" d="M14.318 12a1.82 1.82 0 0 0-1.818 1.818c0 .1.081.182.182.182H14a2 2 0 0 0 1.732-1c.156-.25.389-.254.536 0A2 2 0 0 0 18 14h1.318c.1 0 .182-.081.182-.182A1.82 1.82 0 0 0 17.682 12z"></svg:path><svg:path fill="#F3C07B" d="M20 8a4 4 0 1 1-8 0a4 4 0 0 1 8 0"></svg:path><svg:path fill="#000" d="M14.5 8a.5.5 0 0 0-.5.5V9a.5.5 0 0 0 1 0v-.5a.5.5 0 0 0-.5-.5m3 0a.5.5 0 0 0-.5.5V9a.5.5 0 0 0 1 0v-.5a.5.5 0 0 0-.5-.5"></svg:path><svg:path fill="#A56953" d="M16 4a4 4 0 0 0-4 4a4 4 0 0 0 4-4m4 4a4 4 0 0 1-4-4a4 4 0 0 1 4 4"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatNestingDollsIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

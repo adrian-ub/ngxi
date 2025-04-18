@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2ArrowTallDownRightIcon],svg[fluent-mdl2-arrow-tall-down-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2048 896v1152H896v-128h933L19 109l90-90l1811 1810V896z"></svg:path>`,
+})
+export class FluentMdl2ArrowTallDownRightIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

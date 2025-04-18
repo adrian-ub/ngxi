@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeFolderNetlifyIcon],svg[material-icon-theme-folder-netlify-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#26a69a" d="m13.844 7.536l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464"></svg:path><svg:path fill="#a7ffeb" d="M22 16h-4v6h2v-4h1.5a.5.5 0 0 1 .5.5V22h2v-4a2 2 0 0 0-2-2"></svg:path><svg:rect width="6" height="2" x="26" y="18" fill="#a7ffeb" rx=".5"></svg:rect><svg:rect width="2" height="6" x="20" y="8" fill="#a7ffeb" rx=".5"></svg:rect><svg:rect width="6" height="2" x="10" y="18" fill="#a7ffeb" rx=".5"></svg:rect><svg:rect width="2" height="6" x="20" y="24" fill="#a7ffeb" rx=".5"></svg:rect><svg:path fill="#a7ffeb" d="m13 12.172l1.414-1.414l2.828 2.828L15.828 15zM15.828 23l1.414 1.414l-2.828 2.828L13 25.828z"></svg:path>`,
+})
+export class MaterialIconThemeFolderNetlifyIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

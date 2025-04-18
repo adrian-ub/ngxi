@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeGlyphsIcon],svg[vscode-icons-file-type-glyphs-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:lineargradient id="vscodeIconsFileTypeGlyphs0" x1="16" x2="16" y1="2.72" y2="29.28" gradientTransform="translate(-.583 -.563)scale(1.0352)" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#00bf52"></svg:stop><svg:stop offset="1" stop-color="#00c67e"></svg:stop></svg:lineargradient></svg:defs><svg:path fill="url(#vscodeIconsFileTypeGlyphs0)" d="M23.289 15.265a6.646 6.646 0 0 0 6.667-6.946V2.252H16.623v6.119c0 5.29 4.275 6.894 6.666 6.894m6.667 14.482V16.321H16.623c0 7.909 5.424 13.426 13.333 13.426m-14.524 0V2.252c-7.816 0-13.426 5.932-13.426 13.789c0 7.774 5.517 13.706 13.426 13.706"></svg:path>`,
+})
+export class VscodeIconsFileTypeGlyphsIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

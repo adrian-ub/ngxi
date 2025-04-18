@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatSportUtilityVehicleIcon],svg[fluent-emoji-flat-sport-utility-vehicle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#212121" d="M14 7a1 1 0 0 0-1 1v1h1V8h11v1h1V8a1 1 0 0 0-1-1z"></svg:path><svg:path fill="#D3D3D3" d="M14 7h1v1h-1zm2 0h1v1h-1zm3 0h-1v1h1zm1 0h1v1h-1zm5 0h-1v1h1zm-3 0h1v1h-1z"></svg:path><svg:path fill="#636363" d="M29.49 23H27v-8h2.49c.28 0 .51.23.51.51v6.98c-.01.29-.23.51-.51.51"></svg:path><svg:path fill="#5092FF" d="M27.05 9H11.59c-.36 0-.69.21-.85.53l-.235.47L9.5 13.5L7.01 17h-2C3.51 17 3 17.5 3 19v7h25v-9l-1-3.5l1-3.5v-.05a.95.95 0 0 0-.95-.95"></svg:path><svg:path fill="#D3D3D3" d="M28.13 24H2.87a.87.87 0 0 0-.87.87v1.26c0 .48.39.87.87.87h25.26c.48 0 .87-.39.87-.87v-1.26a.877.877 0 0 0-.87-.87"></svg:path><svg:path fill="#FFF478" d="M5 20c0-.55-.45-1-1-1H3v3h1c.55 0 1-.45 1-1z"></svg:path><svg:path fill="#321B41" d="M11.99 26.5a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0m14 0a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0"></svg:path><svg:path fill="#F4F4F4" d="M10 26.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m14 0a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0"></svg:path><svg:path fill="#26C9FC" d="M22.034 17h-4.068a.964.964 0 0 1-.966-.96v-5.08c0-.53.433-.96.966-.96h4.068c.533 0 .966.43.966.96v5.08c0 .53-.433.96-.966.96M15 16.04v-5.08c0-.53-.435-.96-.97-.96H10.5L7 17h7.03c.535 0 .97-.43.97-.96M25.96 10H28v7h-2.04a.96.96 0 0 1-.96-.96v-5.08c0-.53.43-.96.96-.96"></svg:path><svg:path fill="#F8312F" d="M28 19h-.5a1.5 1.5 0 0 0-1.498 1.57c.04.81.739 1.43 1.548 1.43H28z"></svg:path><svg:path fill="#D3D3D3" d="M11.13 18h.39c.27 0 .48-.22.48-.48v-2.04a.48.48 0 0 0-.48-.48h-.39c-.62 0-1.13.51-1.13 1.13v.74c0 .63.51 1.13 1.13 1.13m4.37 1h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5m4 0h1c.28 0 .5-.22.5-.5s-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5s.22.5.5.5"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatSportUtilityVehicleIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

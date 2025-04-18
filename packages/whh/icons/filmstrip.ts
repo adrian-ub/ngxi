@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[whhFilmstripIcon],svg[whh-filmstrip-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M64.59 832V256h960v576zm736-64q13 0 22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5t-22.5 9.5t-9.5 22.5t9.5 22.5t22.5 9.5m0-448q-13 0-22.5 9.5t-9.5 22.5t9.5 22.5t22.5 9.5t22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5m128 0q-13 0-22.5 9.5t-9.5 22.5t9.5 22.5t22.5 9.5t22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5m32 160q0-13-9.5-22.5t-22.5-9.5h-128q-13 0-22.5 9.5t-9.5 22.5v128q0 13 9.5 22.5t22.5 9.5h128q13 0 22.5-9.5t9.5-22.5zm-32 224q-13 0-22.5 9.5t-9.5 22.5t9.5 22.5t22.5 9.5t22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5m-128-512h-768q-13 0-22.5-9.5T.59 160V96q0-13 9.5-22.5t22.5-9.5h288V32q0-13 9.5-22.5t22.5-9.5h128q13 0 22.5 9.5t9.5 22.5v32h288q13 0 22.5 9.5t9.5 22.5v64q0 13-9.5 22.5t-22.5 9.5m-768 704h768q13 0 22.5 9.5t9.5 22.5v64q0 13-9.5 22.5t-22.5 9.5h-768q-13 0-22.5-9.5T.59 992v-64q0-13 9.5-22.5t22.5-9.5"></svg:path>`,
+})
+export class WhhFilmstripIcon {
+  readonly viewBox = input("0 0 1025 1024")
+  readonly width = input("1.01em")
+  readonly height = input("1em")
+}

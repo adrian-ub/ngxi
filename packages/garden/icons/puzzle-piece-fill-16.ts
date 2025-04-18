@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenPuzzlePieceFill16Icon],svg[garden-puzzle-piece-fill-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.32 5.32c.82-.37 1.35-1.27 1.13-2.27c-.16-.73-.77-1.34-1.5-1.5c-1-.22-1.9.31-2.27 1.13L8.35.35c-.2-.2-.51-.2-.71 0l-2 2.01a.5.5 0 0 0 .16.81C6.51 3.48 7 4.18 7 5c0 1.1-.9 2-2 2c-.82 0-1.52-.49-1.83-1.2a.5.5 0 0 0-.81-.16L.35 7.65c-.2.2-.2.51 0 .71l2.33 2.33a1.997 1.997 0 1 0 2.64 2.64l2.33 2.33c.2.2.51.2.71 0l2.01-2.01a.5.5 0 0 0-.16-.81A2.01 2.01 0 0 1 9 11c0-1.1.9-2 2-2c.82 0 1.52.49 1.83 1.2a.5.5 0 0 0 .81.16l2.01-2.01c.2-.2.2-.51 0-.71z"></svg:path>`,
+})
+export class GardenPuzzlePieceFill16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

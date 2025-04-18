@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[uilAlignLeftJustifyIcon],svg[uil-align-left-justify-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 5h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2m12 14H3a1 1 0 0 0 0 2h12a1 1 0 0 0 0-2m6-8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2m0-4H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2m0 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2"></svg:path>`,
+})
+export class UilAlignLeftJustifyIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

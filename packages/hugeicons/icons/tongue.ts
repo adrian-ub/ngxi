@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsTongueIcon],svg[hugeicons-tongue-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M19.651 12c1.171-1.114 1.924-2.527 2.259-3.244c.067-.144.09-.303.09-.462M4.349 12C3.178 10.886 2.425 9.473 2.09 8.756A1.1 1.1 0 0 1 2 8.294m20 0h-3m3 0a1.1 1.1 0 0 0-.09-.46C21.31 6.543 19.354 3 16.044 3c-1.04 0-1.91.538-2.572 1.171c-.564.54-.846.809-.908.853c-.53.373-.597.373-1.128 0c-.062-.044-.344-.314-.908-.853C9.865 3.538 8.996 3 7.956 3C4.646 3 2.69 6.545 2.09 7.833c-.067.144-.09.303-.09.461m0 0h3"></svg:path><svg:path d="m12 9l.27-.274A2.43 2.43 0 0 1 14.001 8c1.14 0 2.13.797 2.386 1.922l.97 4.257C18.152 17.67 15.535 21 12 21s-6.152-3.331-5.357-6.82l.97-4.258A2.455 2.455 0 0 1 9.999 8c.649 0 1.272.261 1.73.726zm0 0v3"></svg:path></svg:g>`,
+})
+export class HugeiconsTongueIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

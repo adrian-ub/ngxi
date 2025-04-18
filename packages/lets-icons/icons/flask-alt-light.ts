@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsFlaskAltLightIcon],svg[lets-icons-flask-alt-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path stroke="currentColor" stroke-linejoin="round" d="M14.5 6.5v4.197a1 1 0 0 0 .168.555l5.796 8.693a1 1 0 0 1-.832 1.555H4.368a1 1 0 0 1-.833-1.555l5.796-8.693a1 1 0 0 0 .168-.555V6.5"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M15.5 4.5h1a1 1 0 0 1 1 1v0a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1v0a1 1 0 0 1 1-1h4"></svg:path><svg:circle cx="13.5" cy="4.5" r=".5" fill="currentColor"></svg:circle><svg:path stroke="currentColor" stroke-linejoin="round" d="m17.5 19.5l-2.5-4H9l-2.5 4z"></svg:path></svg:g>`,
+})
+export class LetsIconsFlaskAltLightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

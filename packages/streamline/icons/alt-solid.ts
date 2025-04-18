@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineAltSolidIcon],svg[streamline-alt-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M.44.44A1.5 1.5 0 0 1 1.5 0h11A1.5 1.5 0 0 1 14 1.5v11a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 0 12.5v-11C0 1.102.158.72.44.44m11.855 5.219a.625.625 0 1 0 0-1.25H9.673a.625.625 0 1 0 0 1.25h.686v3.307a.625.625 0 1 0 1.25 0V5.66h.686Zm-5.572-1.25c.346 0 .625.28.625.625V8.34h1.67a.625.625 0 1 1 0 1.25H6.723a.625.625 0 0 1-.625-.625V5.034c0-.346.28-.625.625-.625m-2.355.738a1.08 1.08 0 0 0-2.049 0l-.765 2.297l-.01.028l-.432 1.297a.625.625 0 1 0 1.186.395l.294-.884h1.503l.294.884a.625.625 0 0 0 1.186-.395l-.432-1.297l-.01-.028zM3.009 7.03l.335-1.003l.334 1.003z" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineAltSolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tdesignCryAndLaughFilledIcon],svg[tdesign-cry-and-laugh-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11M6 9h4v2H9v3H7v-3H6zm8 0h4v2h-1v3h-2v-3h-1zm-2 10c-2.09 0-3.582-1.802-3.981-3.805h7.961C15.581 17.198 14.09 19 12 19"></svg:path>`,
+})
+export class TdesignCryAndLaughFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

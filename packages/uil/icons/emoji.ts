@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[uilEmojiIcon],svg[uil-emoji-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15 11a1 1 0 1 0-1-1a1 1 0 0 0 1 1m-6 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1m3-9a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m4.28-7.12a1 1 0 0 0-1.4-.16A2.8 2.8 0 0 0 14 14h-3.65a2.8 2.8 0 0 0-.88-1.31a1 1 0 0 0-1.36.2a1 1 0 0 0 .14 1.39a1 1 0 0 1 .25.72a1.1 1.1 0 0 1-.25.72a1 1 0 1 0 1.25 1.56a2.9 2.9 0 0 0 .84-1.28H14a2.7 2.7 0 0 0 .89 1.31a1 1 0 0 0 .57.18a1 1 0 0 0 .78-.38a1 1 0 0 0-.14-1.39a1 1 0 0 1-.25-.72a1.1 1.1 0 0 1 .25-.72a1 1 0 0 0 .18-1.4"></svg:path>`,
+})
+export class UilEmojiIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

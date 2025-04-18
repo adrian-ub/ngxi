@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentShieldGlobe24FilledIcon],svg[fluent-shield-globe-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.75 5a.75.75 0 0 0-.75.75V11c0 5.001 2.958 8.676 8.725 10.948a.75.75 0 0 0 .55 0C18.042 19.676 21 16 21 11V5.75a.75.75 0 0 0-.75-.75c-2.663 0-5.258-.943-7.8-2.85a.75.75 0 0 0-.9 0C9.008 4.057 6.413 5 3.75 5m6.324 10.507c-.29-.77-.487-1.718-.551-2.757H8.07a4 4 0 0 0 2.004 2.757m1.524-.239c-.28-.614-.498-1.488-.572-2.518h1.948c-.074 1.03-.292 1.904-.572 2.518c-.169.372-.311.561-.402.655c-.09-.094-.233-.283-.402-.655m0-6.536c-.28.614-.498 1.488-.572 2.518h1.948c-.074-1.03-.292-1.904-.572-2.518c-.169-.372-.311-.561-.402-.655c-.09.094-.233.283-.402.655m2.328 6.775c.29-.77.486-1.718.55-2.757h1.454a4 4 0 0 1-2.004 2.757m.55-4.257h1.454a4 4 0 0 0-2.004-2.757c.29.77.486 1.718.55 2.757m-6.406 0h1.453c.064-1.04.26-1.986.55-2.757A4 4 0 0 0 8.07 11.25M12 6.5a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11"></svg:path>`,
+})
+export class FluentShieldGlobe24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

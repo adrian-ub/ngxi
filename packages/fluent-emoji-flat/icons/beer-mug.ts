@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatBeerMugIcon],svg[fluent-emoji-flat-beer-mug-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#83CBFF" fill-rule="evenodd" d="M15 14.5a3.5 3.5 0 0 1 3.5-3.5h7a3.5 3.5 0 0 1 3.5 3.5v7a3.5 3.5 0 0 1-3.5 3.5h-7a3.5 3.5 0 0 1-3.5-3.5zm3.5-.5a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5z" clip-rule="evenodd"></svg:path><svg:path fill="#AEDDFF" d="M3 9v18.06c0 1.66 1.38 3 3.07 3h13.89c1.69 0 3.07-1.35 3.07-3L23 9L13 7z"></svg:path><svg:path fill="#F9C23C" d="M5 27.165V9.006L12.985 8L21 9.006v18.159c0 .463-.38.835-.853.835H5.853A.84.84 0 0 1 5 27.165"></svg:path><svg:path fill="#FCD53F" d="M9 24.03c0 .534.45.97 1 .97s1-.436 1-.97V13.97c0-.534-.45-.97-1-.97s-1 .436-1 .97zm6 0c0 .534.45.97 1 .97s1-.436 1-.97V13.97c0-.534-.45-.97-1-.97s-1 .436-1 .97z"></svg:path><svg:path fill="#FF9F2E" d="M18.45 12.43a.84.84 0 1 0 0-1.68a.84.84 0 0 0 0 1.68m0 8.74a.58.58 0 1 0 0-1.16a.58.58 0 0 0 0 1.16m-5.08-5.73a.58.58 0 1 1-1.16 0a.58.58 0 0 1 1.16 0"></svg:path><svg:path fill="#E6E6E6" d="M3 8.5a4.5 4.5 0 0 1 9 0V9H3zm11 0a4.5 4.5 0 1 1 9 0V9h-9z"></svg:path><svg:path fill="#F4F4F4" d="M18 7.5a5.5 5.5 0 0 1-.207 1.5H14.5a1.5 1.5 0 0 0-1.5 1.5v2a3 3 0 1 1-6 0v-5a5.5 5.5 0 1 1 11 0"></svg:path><svg:path fill="#BEBEBE" d="M14.33 4.47a.46.46 0 1 0 0-.92a.46.46 0 0 0 0 .92m1.42 1.83a.46.46 0 1 0 0-.92a.46.46 0 0 0 0 .92m-1.71-.29a.46.46 0 1 1-.92 0a.46.46 0 0 1 .92 0"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatBeerMugIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

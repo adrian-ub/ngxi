@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeFolderCoreIcon],svg[material-icon-theme-folder-core-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#1976d2" d="m13.844 7.536l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464"></svg:path><svg:path fill="#bbdefb" d="M18 14v10h10V14Zm8 8h-6v-6h6ZM14 12h2v-2a2 2 0 0 0-2 2m4-2h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0v2h2a2 2 0 0 0-2-2m0 4h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm0 6a2 2 0 0 0 2-2h-2Zm-4-2h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zm-2 2v-2h-2a2 2 0 0 0 2 2m-2-6h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2z"></svg:path>`,
+})
+export class MaterialIconThemeFolderCoreIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

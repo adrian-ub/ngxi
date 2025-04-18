@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[elLockAltIcon],svg[el-lock-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M600 0C268.629 0 0 268.629 0 600s268.629 600 600 600s600-268.629 600-600S931.371 0 600 0m-4.321 274.658c81.026.386 155.088 52.056 186.548 124.146c10.762 25.109 16.479 50.903 16.479 78.882v71.339h98.291v376.317H303.003V549.023h90.381c-.819-50.406-1.856-108.07 15.82-150.221c34.37-75.909 105.448-124.53 186.475-124.144m-4.395 119.824c-44.881.944-74.48 35.073-78.81 83.202v71.339h167.14v-72.07c-2.061-45.641-36.604-81.214-83.937-82.471a93 93 0 0 0-4.393 0"></svg:path>`,
+})
+export class ElLockAltIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

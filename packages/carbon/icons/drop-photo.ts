@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonDropPhotoIcon],svg[carbon-drop-photo-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19 26a4 4 0 1 1 4-4a4.005 4.005 0 0 1-4 4m0-6a2 2 0 1 0 2 2a2 2 0 0 0-2-2"></svg:path><svg:path fill="currentColor" d="M27 29H11a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h3.28l.543-1.632A2 2 0 0 1 16.721 13h4.558a2 2 0 0 1 1.898 1.368L23.72 16H27a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2m-16-2h16v-9h-4.72l-1-3h-4.56l-1 3H11zm16-16h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zM7 3h2v2H7zM3 3h2v2H3zm0 4h2v2H3zm0 4h2v2H3zm0 4h2v2H3zm0 4h2v2H3zm0 4h2v2H3zm0 4h2v2H3z"></svg:path>`,
+})
+export class CarbonDropPhotoIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

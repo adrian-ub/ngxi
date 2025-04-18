@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkSolidBabyFeetIcon],svg[icon-park-solid-baby-feet-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" stroke="currentColor" stroke-width="4" d="M15 20.612c-1.424 6.15 6.493 7.715 4.624 12.048c-1.87 4.332-6.055 3.466-5.588 7.798c.468 4.333 6.006 4.394 11.048 1.784c10.083-5.221 12.187-16.625 7.624-21.63c-5.608-6.15-16.284-6.15-17.708 0Z"></svg:path><svg:ellipse cx="34.535" cy="13.535" fill="currentColor" rx="2" ry="3" transform="rotate(40 34.535 13.535)"></svg:ellipse><svg:ellipse cx="29.381" cy="10.603" fill="currentColor" rx="2" ry="3" transform="rotate(25 29.38 10.603)"></svg:ellipse><svg:ellipse cx="23.381" cy="9.603" fill="currentColor" rx="2" ry="3" transform="rotate(6 23.38 9.603)"></svg:ellipse><svg:ellipse cx="14" cy="8" fill="currentColor" stroke="currentColor" stroke-width="4" rx="3" ry="4" transform="rotate(-20 14 8)"></svg:ellipse><svg:ellipse cx="38.535" cy="17.536" fill="currentColor" rx="2" ry="3" transform="rotate(50 38.535 17.536)"></svg:ellipse>`,
+})
+export class IconParkSolidBabyFeetIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

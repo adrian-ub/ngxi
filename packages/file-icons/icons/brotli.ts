@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsBrotliIcon],svg[file-icons-brotli-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M127.711 34.453c-170.281 98.17-170.281 344.925 0 443.094S512 452.338 512 256S297.992-63.716 127.711 34.453m29.403 195.05c-14.634 54.614-37.565 95.921-51.218 92.263s-12.859-50.897 1.775-105.51c14.633-54.614 37.564-95.921 51.218-92.263c13.653 3.659 12.858 50.897-1.775 105.51m148.33 39.745c-29.268 109.227-75.13 191.841-102.437 184.525s-25.717-101.794 3.55-211.021S281.687 50.91 308.993 58.227s25.717 101.794-3.55 211.021m98.885 26.497c-14.633 54.613-37.564 95.92-51.218 92.262c-13.653-3.659-12.858-50.897 1.775-105.51s37.565-95.921 51.218-92.263s12.859 50.897-1.775 105.51"></svg:path>`,
+})
+export class FileIconsBrotliIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

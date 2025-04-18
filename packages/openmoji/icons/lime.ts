@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiLimeIcon],svg[openmoji-lime-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g stroke-width="0"><svg:path fill="#b1cc33" d="M20.04 18s-5 10-4 15s5 20 23 15s17-14 17-14z"></svg:path><svg:path fill="#5c9e31" d="M38.04 27s4 12 6 13c.895.447 3 1 7-3c2-2 2.265-3.367 1-4c-2-1-14-6-14-6m-2 1l-9 15s-2 4 6 4s9-3 9-5s-6-14-6-14m-2-1s-13 2-14 3c-2 2-2 6 0 10s3.293 3.707 4 3c2-2 10-16 10-16m-12-6c-2 1-3 6-1 7s13-3 13-3s-10.21-4.894-12-4"></svg:path><svg:path fill="#fff" d="M26.45 29.918C27.37 29 31.04 29 31.04 29s-.917 2.754-1.835 3.672c-.363.363-1.754.506-1.836 0c-.156-.961 1.836-2.754 1.836-2.754s-1.337.8-1.836.918c-.894.21-1.281-.555-.918-.918M35.822 31s-1.659 2.488-.83 4.146s1.66 0 1.66-.83s-.83-3.316-.83-3.316m4.218-2.153S41.477 31 42.194 31s.848-1 0-1.435c-.504-.26-2.152-.718-2.152-.718Z"></svg:path><svg:path fill="#5c9e31" d="M56.04 34.46c0 18.545-18 24.689-33 14.401S20.04 18 20.04 18s-11 25.718 7 29.833c19.91 4.551 29-16.46 29-13.373"></svg:path></svg:g><svg:path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2" d="M56.444 35.2c-.152 18.028-18.202 23.848-33.117 13.722S20.58 18.898 20.58 18.898S9.37 43.804 27.335 47.956C47.208 52.548 56.47 32.2 56.444 35.2Z"></svg:path>`,
+})
+export class OpenmojiLimeIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

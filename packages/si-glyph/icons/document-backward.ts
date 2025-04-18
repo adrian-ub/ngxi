@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphDocumentBackwardIcon],svg[si-glyph-document-backward-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="M2.017.058v15.896h11.926V5.032H7.952V.058zm9.025 12.524q0 .552-.288.554c-.205 0-.349-.255-.377-.306c-.519-.963-2.046-1.779-3.361-1.805v.905l-.039.038a.6.6 0 0 1-.429.155a.64.64 0 0 1-.393-.118l-2.108-1.603a.55.55 0 0 1 0-.756l2.097-1.613a.63.63 0 0 1 .447-.172c.158 0 .293.051.386.146l.039.039V9c1.873.026 4.026 1.582 4.026 3.582"></svg:path><svg:path d="M9.004.016v3.978h4.946z"></svg:path></svg:g>`,
+})
+export class SiGlyphDocumentBackwardIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

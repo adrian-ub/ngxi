@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsCordovaIcon],svg[file-icons-cordova-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M465.498 500.555h-82.883l5.782-69.873h-40.719l-5.782 69.873H170.104l-5.782-69.873h-40.72l5.783 69.873H46.502L0 197.692L116.375 11.445h279.25L512 197.692zM372.254 104.69h-74.692l5.06 34.936h-93.244l5.06-34.936h-74.692l-46.743 93.003l23.372 186.248h279.25l23.372-186.248zM196.367 282.504c0-33.262-9.668-54.164-17.36-37.533s-7.693 58.435 0 75.066s17.36-4.27 17.36-37.533m146.733-3.615c0-33.262-9.668-54.164-17.36-37.533s-7.693 58.435 0 75.066s17.36-4.27 17.36-37.533"></svg:path>`,
+})
+export class FileIconsCordovaIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

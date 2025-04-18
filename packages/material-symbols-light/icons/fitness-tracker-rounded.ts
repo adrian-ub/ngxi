@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightFitnessTrackerRoundedIcon],svg[material-symbols-light-fitness-tracker-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.462 21q-.273 0-.488-.159q-.215-.158-.295-.426l-.821-2.756q-.394-.226-.626-.626T8 16.134V7.866q0-.504.241-.904q.242-.4.636-.627l.802-2.75q.08-.268.295-.426q.215-.159.488-.159h3.077q.273 0 .484.162t.293.429l.776 2.719q.42.232.664.632t.244.924v8.269q0 .523-.241.923q-.242.4-.661.633l-.777 2.719q-.08.267-.295.429t-.487.161zm-.654-4.02h4.384q.349 0 .578-.229t.23-.578V7.827q0-.348-.23-.578t-.578-.23H9.808q-.348 0-.578.23T9 7.827v8.346q0 .348.23.578t.578.23"></svg:path>`,
+})
+export class MaterialSymbolsLightFitnessTrackerRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

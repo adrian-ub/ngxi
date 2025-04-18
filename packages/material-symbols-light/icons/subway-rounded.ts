@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightSubwayRoundedIcon],svg[material-symbols-light-subway-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 19.385V8.85q0-1.76.956-3.101t2.629-2.026q1.215-.467 2.663-.595T12 3t2.752.128t2.664.595q1.673.685 2.628 2.026Q21 7.091 21 8.85v10.535q0 .666-.475 1.14t-1.14.475H4.615q-.666 0-1.14-.475T3 19.386m4.5-6.154V9h9v4.23zm7.574 3.115q-.345 0-.575-.233t-.23-.578t.233-.574t.578-.23t.575.233t.23.578t-.234.574t-.578.23m-6.153 0q-.345 0-.575-.233t-.23-.578t.233-.574t.578-.23t.575.233t.23.578t-.234.574t-.577.23m1.334 2h3.48l1.352 1.487q.068.086.16.127q.091.04.191.04q.334 0 .464-.292t-.085-.527l-.789-.885q1.12-.15 1.739-.91q.619-.761.619-1.886V9q0-1.43-1.443-1.927Q14.5 6.577 12 6.577q-2.275 0-3.83.496T6.615 9v6.5q0 1.125.62 1.895q.619.77 1.738.901l-.794.89q-.216.235-.088.525q.128.289.468.289q.102 0 .189-.05t.154-.117z"></svg:path>`,
+})
+export class MaterialSymbolsLightSubwayRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

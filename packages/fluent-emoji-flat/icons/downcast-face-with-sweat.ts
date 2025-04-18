@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatDowncastFaceWithSweatIcon],svg[fluent-emoji-flat-downcast-face-with-sweat-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#FFB02E" d="M15.999 29.998c9.334 0 13.999-6.268 13.999-14c0-7.73-4.665-13.998-14-13.998C6.665 2 2 8.268 2 15.999s4.664 13.999 13.999 13.999"></svg:path><svg:path fill="#402A32" d="M10.5 14.5c-1.116 0-1.503.67-1.551.816a1 1 0 0 1-1.898-.632c.285-.855 1.365-2.184 3.449-2.184c2.085 0 3.164 1.33 3.449 2.184a1 1 0 1 1-1.898.632c-.048-.145-.435-.816-1.551-.816m11 0c-1.116 0-1.503.67-1.551.816a1 1 0 1 1-1.898-.632c.285-.855 1.365-2.184 3.449-2.184s3.164 1.33 3.449 2.184a1 1 0 1 1-1.898.632c-.048-.145-.435-.816-1.551-.816m-9.742 10.226a6.007 6.007 0 0 1 8.488-.026a1 1 0 0 0 1.409-1.42a8.007 8.007 0 0 0-11.313.034a1 1 0 1 0 1.416 1.412"></svg:path><svg:path fill="#3F5FFF" d="M3 5a3 3 0 0 1 6 0v5a3 3 0 1 1-6 0z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatDowncastFaceWithSweatIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

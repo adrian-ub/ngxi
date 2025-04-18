@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBriefcase16RegularIcon],svg[fluent-briefcase-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 5V3.5A1.5 1.5 0 0 1 6.5 2h3A1.5 1.5 0 0 1 11 3.5V5h1a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm1-1.5V5h4V3.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5m-3 6V12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9.5c-.418.314-.937.5-1.5.5H9v.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V10H4.5A2.5 2.5 0 0 1 3 9.5M7 9v-.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V9h2.5A1.5 1.5 0 0 0 13 7.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v.5A1.5 1.5 0 0 0 4.5 9z"></svg:path>`,
+})
+export class FluentBriefcase16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiBitcoinCircleSolidIcon],svg[mynaui-bitcoin-circle-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M9.75 11.25v-2.5H13a1.25 1.25 0 1 1 0 2.5zm0 4v-2.5H14a1.25 1.25 0 1 1 0 2.5z"></svg:path><svg:path d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12m10.5-6a.75.75 0 0 0-1.5 0v1.25H9a.75.75 0 0 0-.75.75v8c0 .414.336.75.75.75h2.25V18a.75.75 0 0 0 1.5 0v-1.25H14a2.75 2.75 0 0 0 1.266-5.192A2.75 2.75 0 0 0 13 7.25h-.25z"></svg:path></svg:g>`,
+})
+export class MynauiBitcoinCircleSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

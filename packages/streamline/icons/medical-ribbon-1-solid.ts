@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineMedicalRibbon1SolidIcon],svg[streamline-medical-ribbon-1-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8.416.362A3.6 3.6 0 0 0 7 .132A3.563 3.563 0 0 0 3.293 3.87c.007 1.138.461 2.317 1.037 3.38c.401.74.888 1.472 1.396 2.156a34 34 0 0 1-2.328 2.502l-.235.224A1 1 0 0 0 4.52 13.6c.327-.304.643-.62.954-.939c.427-.438.962-1.01 1.526-1.665c.564.656 1.1 1.227 1.526 1.665c.55.565 1.505 1.817 2.367.883a1 1 0 0 0-.056-1.413l-.002-.002h-.001a34 34 0 0 1-2.56-2.722A18 18 0 0 0 9.67 7.25c.576-1.063 1.03-2.242 1.037-3.38A3.56 3.56 0 0 0 8.417.362ZM7 7.755c.337-.482.649-.973.912-1.458c.52-.96.795-1.8.795-2.456c0-1.132-.795-1.71-1.765-1.71s-1.65.784-1.65 1.71c0 .657.277 1.497.796 2.456c.263.485.574.976.912 1.458" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineMedicalRibbon1SolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

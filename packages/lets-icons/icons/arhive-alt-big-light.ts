@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsArhiveAltBigLightIcon],svg[lets-icons-arhive-alt-big-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor"><svg:path d="M5.661 6.898c.306-.51.459-.765.67-.95a1.8 1.8 0 0 1 .64-.363c.268-.085.565-.085 1.16-.085h7.738c.595 0 .892 0 1.16.085c.236.076.454.2.64.363c.211.185.364.44.67.95l1.75 2.918c.153.255.23.382.284.518q.072.181.103.374c.024.144.024.293.024.59v4.322c0 1.008 0 1.512-.196 1.897a1.8 1.8 0 0 1-.787.787c-.385.196-.889.196-1.897.196H6.38c-1.008 0-1.512 0-1.897-.196a1.8 1.8 0 0 1-.787-.787c-.196-.385-.196-.889-.196-1.897v-4.322c0-.297 0-.446.024-.59a1.8 1.8 0 0 1 .103-.374c.054-.136.13-.263.283-.518z"></svg:path><svg:path d="M20.5 12.5h-2.558c-.696 0-1.044 0-1.306.189c-.262.188-.372.518-.592 1.178l-.088.265c-.22.66-.33.99-.592 1.18c-.262.188-.61.188-1.306.188H9.943c-.696 0-1.044 0-1.306-.189c-.262-.188-.372-.518-.592-1.178l-.088-.265c-.22-.66-.33-.99-.592-1.18c-.262-.188-.61-.188-1.306-.188H3.5"></svg:path></svg:g>`,
+})
+export class LetsIconsArhiveAltBigLightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

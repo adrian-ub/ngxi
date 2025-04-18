@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[notoV1LetterQIcon],svg[noto-v1-letter-q-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#40c0e7" d="M102.61 107.83c10.8-9.85 16.84-24.08 16.84-39.9c0-29.73-21.33-53.82-55.45-53.82S8.55 38.21 8.55 67.93c0 29.73 21.33 53.82 55.45 53.82c7.69 0 14.72-1.23 21.01-3.47l5.97 8.54a2.08 2.08 0 0 0 2.28.81l16.51-4.75c.64-.19 1.16-.67 1.39-1.31c.22-.63.13-1.33-.26-1.89zM64 95.89c-17.72 0-28.81-12.52-28.81-27.96S46.27 39.97 64 39.97s28.81 12.52 28.81 27.96c0 6.65-2.07 12.76-5.82 17.56l-7.26-10.38a2.09 2.09 0 0 0-2.28-.81l-16.52 4.75c-.64.19-1.16.67-1.39 1.31c-.22.63-.13 1.33.26 1.89l9.27 13.25c-1.62.24-3.3.39-5.07.39"></svg:path>`,
+})
+export class NotoV1LetterQIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

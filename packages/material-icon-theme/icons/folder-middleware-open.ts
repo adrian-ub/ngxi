@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeFolderMiddlewareOpenIcon],svg[material-icon-theme-folder-middleware-open-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#5c6bc0" d="M28.967 12H9.442a2 2 0 0 0-1.898 1.368L4 24V10h24a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h22l4.805-11.212A2 2 0 0 0 28.967 12"></svg:path><svg:path fill="#c5cae9" d="M30.107 20H32v-4a2 2 0 0 0-2-2h-4v-2a2 2 0 0 0-4 0v2h-4a2 2 0 0 0-2 2v4h-2a2 2 0 0 0 0 4h2v4a2 2 0 0 0 2 2h4v-1.893a2.074 2.074 0 0 1 1.664-2.08A2 2 0 0 1 26 28v2h4a2 2 0 0 0 2-2v-4h-2a2 2 0 0 1-1.973-2.336A2.074 2.074 0 0 1 30.107 20"></svg:path>`,
+})
+export class MaterialIconThemeFolderMiddlewareOpenIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

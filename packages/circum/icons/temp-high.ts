@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circumTempHighIcon],svg[circum-temp-high-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.863 13.4V4.939a2.93 2.93 0 0 0-.84-2.03a2.86 2.86 0 0 0-2.23-.82a2.95 2.95 0 0 0-2.66 3l.01 8.28a4.755 4.755 0 0 0 1.9 8.46a5 5 0 0 0 .95.09a4.76 4.76 0 0 0 4.76-4.75a4.68 4.68 0 0 0-1.89-3.769m-.48 6.66a3.78 3.78 0 0 1-3.15.78a3.7 3.7 0 0 1-2.92-2.98a3.75 3.75 0 0 1 1.43-3.69a.96.96 0 0 0 .39-.77V5.089a1.97 1.97 0 0 1 1.73-2a.7.7 0 0 1 .14-.01a1.88 1.88 0 0 1 1.86 1.86V13.4a.96.96 0 0 0 .39.77a3.742 3.742 0 0 1 .13 5.89"></svg:path><svg:path fill="currentColor" d="M13.893 17.169a1.89 1.89 0 0 1-3.78 0a1.86 1.86 0 0 1 1.39-1.81V5.4a.5.5 0 0 1 1 0v9.96a1.87 1.87 0 0 1 1.39 1.809"></svg:path>`,
+})
+export class CircumTempHighIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

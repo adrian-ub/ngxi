@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[faSolidShapesIcon],svg[fa-solid-shapes-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M128 256a128 128 0 1 0 128 128a128 128 0 0 0-128-128m379-54.86L400.07 18.29a37.26 37.26 0 0 0-64.14 0L229 201.14c-14.24 24.38 3.58 54.86 32.09 54.86h213.82c28.51 0 46.33-30.48 32.09-54.86M480 288H320a32 32 0 0 0-32 32v160a32 32 0 0 0 32 32h160a32 32 0 0 0 32-32V320a32 32 0 0 0-32-32"></svg:path>`,
+})
+export class FaSolidShapesIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

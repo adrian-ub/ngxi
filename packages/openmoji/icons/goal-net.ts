@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiGoalNetIcon],svg[openmoji-goal-net-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#fff" d="m10.752 18.083l.224 34.693l6.912-7.2l35.424.384l7.776 7.488l.576-35.52z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M62 55.5V17H10v38.5m52 0l-9.096-9.096M20 46h33m-43 9.5l9.096-9.096M10 17l9.32 28.583m-8.568-27.5h51m-12.732 0h12.582m-44.716 21h38.866m-6.732 0h6.913m-41.181-7h42m-7.732 0h8.33M35.77 17.5v28m-7-28v28m-7-28v28m-7-28v32.949m28-32.366v27.5m7-28.067v28.067m7-27.5v31.999M42.77 21v15.167M12.768 25.083h46.984m-10.984 0h11.417M57.35 32l4.508 4.508m-2.106-11.425l2.151 2.155m-6.801 11.845l6.898 6.5m-47.313-13.5l-4.424 4.424m2.505-10.727l-2.608 2.607m7.011 10.433l-6.834 6.439M53 46l9-28"></svg:path><svg:g fill="none" stroke-width="2"><svg:path stroke="#d0cfce" stroke-miterlimit="10" d="M10.752 18.083h51"></svg:path><svg:path stroke="#9b9b9a" stroke-miterlimit="10" d="M49.02 18.083h12.582"></svg:path><svg:path stroke="#d0cfce" stroke-miterlimit="10" d="M16.886 39.083h38.866"></svg:path><svg:path stroke="#9b9b9a" stroke-miterlimit="10" d="M49.02 39.083h6.913"></svg:path><svg:path stroke="#d0cfce" stroke-miterlimit="10" d="M14.752 32.083h42"></svg:path><svg:path stroke="#9b9b9a" stroke-miterlimit="10" d="M49.02 32.083h8.33"></svg:path><svg:path stroke="#d0cfce" stroke-miterlimit="10" d="M35.77 18.574v26.589m-7-26.589v26.589m-7-26.647v26.616m-7-27.188v32.361m28-32.222v27.11"></svg:path><svg:path stroke="#9b9b9a" stroke-miterlimit="10" d="M49.77 17.829v27.303m7-27.049v31.709"></svg:path><svg:path stroke="#d0cfce" stroke-miterlimit="10" d="M42.77 21v15.167M12.768 25.083h46.984"></svg:path><svg:path stroke="#9b9b9a" stroke-miterlimit="10" d="M48.768 25.083h11.417M57.35 32l4.332 4.332M59.78 25.141l1.943 1.946m-1.885-2.433l1.943 1.947m-6.679 12.482l6.605 6.208"></svg:path><svg:path stroke="#d0cfce" stroke-miterlimit="10" d="M14.687 32.083L10.3 36.469m3.183-11.405l-3.188 3.188m6.876 10.568l-6.85 6.453"></svg:path><svg:path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="m53 46l9-28m0 37.5V17H10v38.5m52 0l-9.096-9.096M20 46h33m-43 9.5l9.096-9.096M10 17l9.32 28.583M53 46l9-28"></svg:path></svg:g>`,
+})
+export class OpenmojiGoalNetIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

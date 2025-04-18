@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentContentViewGalleryLightning28FilledIcon],svg[fluent-content-view-gallery-lightning-28-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17 3H6.75A3.75 3.75 0 0 0 3 6.75v14.5A3.75 3.75 0 0 0 6.75 25H17v-2h-1.5a1.5 1.5 0 0 1-1.355-2.142L17 14.83zm8 10h-6.184q-.161 0-.316.034V9.5H25zm-6.5-5V3h2.75A3.75 3.75 0 0 1 25 6.75V8zm-12 .75c0-.69.56-1.25 1.25-1.25h5c.69 0 1.25.56 1.25 1.25v3.5c0 .69-.56 1.25-1.25 1.25h-5c-.69 0-1.25-.56-1.25-1.25zM8 9v3h4.5V9zm-.75 8a.75.75 0 0 1 0-1.5h6a.75.75 0 0 1 0 1.5zm-.75 2.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75M18.817 14h6.329a.5.5 0 0 1 .436.745L23.75 18h1.515a.75.75 0 0 1 .568 1.24l-6.415 7.452c-.523.606-1.5.052-1.246-.707L19.5 22h-4a.5.5 0 0 1-.452-.714l3.317-7a.5.5 0 0 1 .451-.286"></svg:path>`,
+})
+export class FluentContentViewGalleryLightning28FilledIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

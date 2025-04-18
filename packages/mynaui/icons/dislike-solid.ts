@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiDislikeSolidIcon],svg[mynaui-dislike-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.193 20.928a1.62 1.62 0 0 1-1.415.822c-1.005 0-1.773-.38-2.282-1.048c-.477-.628-.664-1.43-.723-2.189c-.106-1.37.188-2.908.404-3.868h-5.25c-.661 0-1.117-.389-1.364-.882c-.225-.446-.301-1.004-.312-1.556c-.021-1.124.23-2.564.607-3.956c.38-1.4.902-2.813 1.459-3.893c.276-.536.577-1.02.894-1.383c.28-.321.725-.725 1.304-.725h12.521c.935 0 1.714.748 1.714 1.697v9.385c0 .628-.349 1.199-.898 1.493m0 0c-.39.21-.773.402-1.148.591c-.68.343-1.335.673-1.973 1.07c-.958.596-1.746 1.27-2.258 2.176l-1.28 2.266"></svg:path>`,
+})
+export class MynauiDislikeSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

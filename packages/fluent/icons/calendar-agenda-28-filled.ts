@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCalendarAgenda28FilledIcon],svg[fluent-calendar-agenda-28-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M25 21.75A3.25 3.25 0 0 1 21.75 25H6.25A3.25 3.25 0 0 1 3 21.75V6.25A3.25 3.25 0 0 1 6.25 3h15.5A3.25 3.25 0 0 1 25 6.25zM19.75 14a.75.75 0 0 0-.648-.743L19 13.25H9l-.102.007a.75.75 0 0 0 0 1.486L9 14.75h10l.102-.007A.75.75 0 0 0 19.75 14m0 5.25a.75.75 0 0 0-.648-.743L19 18.5H9l-.102.007a.75.75 0 0 0 0 1.486L9 20h10l.102-.007a.75.75 0 0 0 .648-.743m0-10.5a.75.75 0 0 0-.648-.743L19 8H9l-.102.007a.75.75 0 0 0 0 1.486L9 9.5h10l.102-.007a.75.75 0 0 0 .648-.743"></svg:path>`,
+})
+export class FluentCalendarAgenda28FilledIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

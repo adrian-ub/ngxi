@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorSavings24Icon],svg[fluent-color-savings-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorSavings240)" d="M21.071 8.86c.604.998.929 2.203.929 3.64c0 2.206-.833 3.75-1.68 4.738A6.7 6.7 0 0 1 19 18.421v1.83A1.75 1.75 0 0 1 17.25 22H16a1.5 1.5 0 0 1-1.5-1.5h-2A1.5 1.5 0 0 1 11 22H9.75A1.75 1.75 0 0 1 8 20.25v-.684a7 7 0 0 1-.464-.175A6.5 6.5 0 0 1 5.47 18.03a10 10 0 0 1-1.605-2.13a.49.49 0 0 0-.329-.259A1.84 1.84 0 0 1 2 13.828v-1.753c0-.843.61-1.562 1.44-1.7c.087-.015.216-.101.277-.284c.192-.576.565-1.434 1.253-2.121a8 8 0 0 1 1.658-1.246q.206-.117.372-.201V3.67c0-.938 1.13-1.323 1.74-.716c.33.329.81.768 1.341 1.134s1.033.66 1.454.66c4.248 0 7.684 1.051 9.536 4.11"></svg:path><svg:path fill="url(#fluentColorSavings241)" d="M9 10a1 1 0 1 1-2 0a1 1 0 0 1 2 0"></svg:path><svg:path fill="#9F1459" d="M10.55 6.503a1.2 1.2 0 0 1 1.568-.652l7.376 3.045a1.201 1.201 0 1 1-.917 2.221l-7.376-3.045a1.2 1.2 0 0 1-.652-1.57"></svg:path><svg:path fill="url(#fluentColorSavings242)" d="M17.545 10.69a4.001 4.001 0 1 0-5.244-2.164z"></svg:path><svg:path fill="url(#fluentColorSavings243)" fill-opacity=".8" d="M17.545 10.69a4.001 4.001 0 1 0-5.244-2.164z"></svg:path><svg:defs><svg:radialgradient id="fluentColorSavings240" cx="0" cy="0" r="1" gradientTransform="matrix(5.1875 18.18747 -18.81061 5.36523 8.125 4.563)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#F08AF4"></svg:stop><svg:stop offset=".581" stop-color="#E869CE"></svg:stop><svg:stop offset="1" stop-color="#D7257D"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorSavings241" cx="0" cy="0" r="1" gradientTransform="rotate(59.532 -4.541 11.412)scale(1.69458)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#B91D6B"></svg:stop><svg:stop offset="1" stop-color="#670938"></svg:stop></svg:radialgradient><svg:lineargradient id="fluentColorSavings242" x1="18.745" x2="12.651" y1="9.82" y2="4.629" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF8A69"></svg:stop><svg:stop offset="1" stop-color="#FFCD0F"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorSavings243" x1="17.188" x2="14.563" y1="3.438" y2="9.75" gradientUnits="userSpaceOnUse"><svg:stop offset=".67" stop-color="#FB5937" stop-opacity="0"></svg:stop><svg:stop offset="1" stop-color="#CD3E1D"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class FluentColorSavings24Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

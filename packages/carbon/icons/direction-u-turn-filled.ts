@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonDirectionUTurnFilledIcon],svg[carbon-direction-u-turn-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" d="M26.586 17.586L22 22.172V14a8 8 0 0 0-16 0v12h2V14a6 6 0 0 1 12 0v8.172l-4.586-4.586L14 19l7 7l7-7Z"></svg:path><svg:path fill="currentColor" d="M28 2H4a2 2 0 0 0-2 2v24a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2m-7 24l-7-7l1.414-1.414L20 22.172V14a6 6 0 0 0-12 0v12H6V14a8 8 0 0 1 16 0v8.172l4.586-4.586L28 19Z"></svg:path>`,
+})
+export class CarbonDirectionUTurnFilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

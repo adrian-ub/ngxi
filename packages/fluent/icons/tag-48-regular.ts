@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTag48RegularIcon],svg[fluent-tag-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M26.495 6a4.25 4.25 0 0 0-3.005 1.245L7.249 23.485a4.25 4.25 0 0 0 0 6.01l11.257 11.258a4.25 4.25 0 0 0 6.01 0l16.241-16.24a4.25 4.25 0 0 0 1.245-3.006V10.25A4.25 4.25 0 0 0 37.752 6zm-1.238 3.013a1.75 1.75 0 0 1 1.238-.513h11.257c.967 0 1.75.784 1.75 1.75v11.257c0 .464-.184.91-.512 1.238l-16.241 16.24a1.75 1.75 0 0 1-2.475 0L9.016 27.728a1.75 1.75 0 0 1 0-2.475zM33.5 17a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5"></svg:path>`,
+})
+export class FluentTag48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

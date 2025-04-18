@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[phFactoryLightIcon],svg[ph-factory-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M114 176a6 6 0 0 1-6 6H80a6 6 0 0 1 0-12h28a6 6 0 0 1 6 6m62-6h-28a6 6 0 0 0 0 12h28a6 6 0 0 0 0-12m62 46a6 6 0 0 1-6 6H24a6 6 0 0 1 0-12h10V88a6 6 0 0 1 9.6-4.8L98 124V88a6 6 0 0 1 9.6-4.8l41.4 31.08l12-84.26a14.07 14.07 0 0 1 13.86-12h18.12a14.07 14.07 0 0 1 13.86 12l15 105.13s.06.59.06.85v74h10a6 6 0 0 1 6.1 6m-78-93.51l10 7.51h39.08L195 31.72a2 2 0 0 0-2-1.72h-18.06a2 2 0 0 0-2 1.72ZM46 210h164v-68h-42a6 6 0 0 1-3.6-1.2L150 130l-40-30v36a6 6 0 0 1-9.6 4.8L46 100Z"></svg:path>`,
+})
+export class PhFactoryLightIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

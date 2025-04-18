@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[phSplitVerticalDuotoneIcon],svg[ph-split-vertical-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M160 56H96l32-32Zm-32 176l32-32H96Z" opacity=".2"></svg:path><svg:path d="M208 144H48a8 8 0 0 0 0 16h72v32H96a8 8 0 0 0-5.66 13.66l32 32a8 8 0 0 0 11.32 0l32-32A8 8 0 0 0 160 192h-24v-32h72a8 8 0 0 0 0-16m-80 76.69L115.31 208h25.38ZM48 112h160a8 8 0 0 0 0-16h-72V64h24a8 8 0 0 0 5.66-13.66l-32-32a8 8 0 0 0-11.32 0l-32 32A8 8 0 0 0 96 64h24v32H48a8 8 0 0 0 0 16m80-76.69L140.69 48h-25.38Z"></svg:path></svg:g>`,
+})
+export class PhSplitVerticalDuotoneIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

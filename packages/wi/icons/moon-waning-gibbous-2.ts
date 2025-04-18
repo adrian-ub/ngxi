@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[wiMoonWaningGibbous2Icon],svg[wi-moon-waning-gibbous-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.74 14.49c0 1.22.19 2.4.56 3.54s.91 2.17 1.6 3.09s1.5 1.72 2.42 2.42s1.95 1.23 3.09 1.6s2.32.56 3.54.56c4.33-1.73 6.49-5.47 6.49-11.22q0-2.085-.54-3.93c-.54-1.845-.85-2.31-1.47-3.23s-1.31-1.71-2.06-2.39s-1.56-1.23-2.42-1.66c-2.03 0-3.91.5-5.63 1.5S6.25 7.14 5.24 8.86s-1.5 3.6-1.5 5.63"></svg:path>`,
+})
+export class WiMoonWaningGibbous2Icon {
+  readonly viewBox = input("0 0 30 30")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

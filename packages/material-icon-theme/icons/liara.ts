@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeLiaraIcon],svg[material-icon-theme-liara-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:lineargradient id="materialIconThemeLiara0" x1="11.328" x2="90.301" y1="8.203" y2="10.761" gradientTransform="matrix(.15939 0 0 .16254 -.134 -.857)" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#69F0AE"></svg:stop><svg:stop offset="1" stop-color="#4FC3F7"></svg:stop></svg:lineargradient><svg:lineargradient id="materialIconThemeLiara1" x1="11.328" x2="90.301" y1="8.203" y2="10.761" gradientTransform="matrix(.15939 0 0 .16253 .195 -.856)" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#69F0AE"></svg:stop><svg:stop offset="1" stop-color="#4FC3F7"></svg:stop></svg:lineargradient><svg:lineargradient id="materialIconThemeLiara2" x1="11.328" x2="90.301" y1="8.203" y2="10.761" gradientTransform="matrix(.15784 0 0 .16493 .15 -.355)" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#69F0AE"></svg:stop><svg:stop offset="1" stop-color="#4FC3F7"></svg:stop></svg:lineargradient></svg:defs><svg:path fill="url(#materialIconThemeLiara0)" d="M8.5 8.811c0-.53.368-1.174.82-1.44l3.86-2.257c.452-.265.82-.052.82.479v4.596c0 .527-.368 1.17-.82 1.436l-3.86 2.261c-.452.265-.82.051-.82-.479zm0 0"></svg:path><svg:path fill="url(#materialIconThemeLiara1)" d="M2 5.593c0-.53.368-.745.82-.479l3.86 2.258c.452.264.82.909.82 1.44v4.595c0 .53-.368.744-.82.48l-3.86-2.262c-.452-.264-.82-.909-.82-1.44zm0 0"></svg:path><svg:path fill="url(#materialIconThemeLiara2)" d="M3.336 4.467c-.448-.27-.448-.706 0-.972l3.821-2.293c.447-.27 1.173-.27 1.62 0l3.888 2.332c.447.268.447.702 0 .971L8.843 6.799c-.447.268-1.173.268-1.624 0zm0 0"></svg:path>`,
+})
+export class MaterialIconThemeLiaraIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

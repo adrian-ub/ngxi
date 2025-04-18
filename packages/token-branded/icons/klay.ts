@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedKlayIcon],svg[token-branded-klay-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedKlay0)" d="M12.323 3a8.64 8.64 0 0 1 5.45 2.098L7.745 15.144z"></svg:path><svg:path fill="url(#tokenBrandedKlay1)" d="M12.323 3a8.64 8.64 0 0 1 5.45 2.098L7.745 15.144z"></svg:path><svg:path fill="url(#tokenBrandedKlay2)" d="m13.143 12.023l5.782-5.805a9.095 9.095 0 0 1 0 11.565z"></svg:path><svg:path fill="url(#tokenBrandedKlay3)" d="m13.143 12.023l5.782-5.805a9.095 9.095 0 0 1 0 11.565z"></svg:path><svg:path fill="url(#tokenBrandedKlay4)" d="m3.017 11.438l7.043-7.07l-5.018 13.364a9.07 9.07 0 0 1-2.025-6.294"></svg:path><svg:path fill="url(#tokenBrandedKlay5)" d="m3.017 11.438l7.043-7.07l-5.018 13.364a9.07 9.07 0 0 1-2.025-6.294"></svg:path><svg:path fill="url(#tokenBrandedKlay6)" d="m6.247 18.902l5.788-5.754l5.782 5.754A9 9 0 0 1 12.035 21a9 9 0 0 1-5.788-2.098"></svg:path><svg:path fill="url(#tokenBrandedKlay7)" d="m6.247 18.902l5.788-5.754l5.782 5.754A9 9 0 0 1 12.035 21a9 9 0 0 1-5.788-2.098"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedKlay0" x1="10.644" x2="10.644" y1="3" y2="29.679" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF8300"></svg:stop><svg:stop offset=".51" stop-color="#E91A00"></svg:stop><svg:stop offset="1" stop-color="#7C0000"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedKlay1" x1="24.777" x2="2.431" y1="35.932" y2="10.378" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#9D0097" stop-opacity=".85"></svg:stop><svg:stop offset="1" stop-color="#9D0097" stop-opacity="0"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedKlay2" x1=".384" x2=".384" y1="-2.008" y2="26.008" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF8300"></svg:stop><svg:stop offset=".51" stop-color="#E91A00"></svg:stop><svg:stop offset="1" stop-color="#7C0000"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedKlay3" x1="18.425" x2="-4.023" y1="32.574" y2="1.369" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#9D0097" stop-opacity=".85"></svg:stop><svg:stop offset="1" stop-color="#9D0097" stop-opacity="0"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedKlay4" x1="25.948" x2="25.948" y1="1.159" y2="25.402" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF8300"></svg:stop><svg:stop offset=".51" stop-color="#E91A00"></svg:stop><svg:stop offset="1" stop-color="#7C0000"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedKlay5" x1="46.025" x2="28.568" y1="31.084" y2="-.128" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#9D0097" stop-opacity=".85"></svg:stop><svg:stop offset="1" stop-color="#9D0097" stop-opacity="0"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedKlay6" x1="11.952" x2="11.952" y1="-20.261" y2="21" gradientUnits="userSpaceOnUse"><svg:stop offset=".51" stop-color="#E91A00"></svg:stop><svg:stop offset="1" stop-color="#7C0000"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedKlay7" x1="19.875" x2="4.688" y1="25.219" y2="10.875" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#9D0097" stop-opacity=".85"></svg:stop><svg:stop offset="1" stop-color="#9D0097" stop-opacity="0"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedKlayIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

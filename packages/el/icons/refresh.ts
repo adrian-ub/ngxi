@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[elRefreshIcon],svg[el-refresh-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M600 0C308.74 0 66.009 207.555 11.499 482.812h166.553C229.37 297.756 398.603 161.719 600 161.719c121.069 0 230.474 49.195 309.668 128.613l-192.48 192.48H1200V0l-175.781 175.781C915.653 67.181 765.698 0 600 0M0 717.188V1200l175.781-175.781C284.346 1132.819 434.302 1200 600 1200c291.26 0 533.991-207.555 588.501-482.812h-166.553C970.631 902.243 801.396 1038.281 600 1038.281c-121.069 0-230.474-49.195-309.668-128.613l192.48-192.48z"></svg:path>`,
+})
+export class ElRefreshIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

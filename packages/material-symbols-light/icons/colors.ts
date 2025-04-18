@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightColorsIcon],svg[material-symbols-light-colors-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m8.689 19.539l-5.227-5.227q-.231-.233-.346-.513q-.116-.28-.116-.58t.116-.577t.346-.507l5.557-5.552l-2.88-2.804l.78-.798l9.156 9.174q.229.23.341.508t.113.579t-.113.579t-.343.51l-5.208 5.208q-.23.23-.507.346T9.78 20t-.58-.115t-.513-.346M9.768 7.33l-5.466 5.465q-.115.116-.154.231t-.038.23h11.315q0-.115-.039-.23q-.038-.115-.153-.23zM19.318 20q-.707 0-1.178-.492q-.472-.493-.472-1.208q0-.54.232-1.044t.599-.944l.82-1.004l.869 1.004q.361.44.596.944t.234 1.044q0 .715-.496 1.208q-.496.492-1.204.492"></svg:path>`,
+})
+export class MaterialSymbolsLightColorsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

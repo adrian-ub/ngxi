@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentReadAloud16FilledIcon],svg[fluent-read-aloud-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.044 1.498a.75.75 0 0 1 .958-.454c.214.09.001 0 .001 0h.001l.003.001l.005.003l.015.005a2 2 0 0 1 .19.08c.118.056.28.138.47.253c.379.23.876.596 1.37 1.143C14.057 3.636 15 5.44 15 8.249a.75.75 0 0 1-1.5 0c0-2.44-.807-3.885-1.556-4.715a4.7 4.7 0 0 0-1.036-.865a3 3 0 0 0-.401-.209l-.014-.005a.75.75 0 0 1-.45-.957M7.198 3.475a.75.75 0 0 0-1.395 0l-3.75 9.5a.75.75 0 0 0 1.395.55l.898-2.275h4.308l.898 2.275a.75.75 0 1 0 1.396-.55zm.864 6.275H4.938L6.5 5.793zm2.668-6.076a.75.75 0 0 0-.962 1.15l.006.006l.034.03q.049.045.139.136c.12.123.28.304.44.53c.327.463.613 1.063.613 1.724a.75.75 0 0 0 1.5 0c0-1.088-.464-1.989-.887-2.588a6 6 0 0 0-.853-.962l-.02-.017l-.006-.005l-.002-.002zm-.962 1.15l.001.002Z"></svg:path>`,
+})
+export class FluentReadAloud16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

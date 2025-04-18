@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFolderTypeLibraryIcon],svg[vscode-icons-folder-type-library-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#c18053" d="M27.5 5.5h-9.3l-2.1 4.2H4.4v16.8h25.2v-21Zm0 4.2h-8.2l1.1-2.1h7.1Z"></svg:path><svg:path fill="#59c2f2" d="m13.065 26.488l-.383-.365v-.753a4.48 4.48 0 0 0 5.557 0v.753l-.383.365a3.47 3.47 0 0 1-4.791 0"></svg:path><svg:path fill="#59c2f2" d="M12.682 23.9V13a4.03 4.03 0 0 0 5.557 0v10.9l-.383.365a3.47 3.47 0 0 1-4.791 0Zm1.111-6.455h3.334v-1.111h-3.334Zm1.667 11.114a4.57 4.57 0 0 1-2.778-.966v2.077a4.03 4.03 0 0 0 5.557 0v-2.077a4.57 4.57 0 0 1-2.779.966"></svg:path><svg:path fill="#8abf4f" d="m23.968 26.488l.383-.365v-.753a4.48 4.48 0 0 1-5.557 0v.753l.383.365a3.47 3.47 0 0 0 4.791 0"></svg:path><svg:path fill="#8abf4f" d="M18.794 23.9V13a4.03 4.03 0 0 0 5.557 0v10.9l-.383.365a3.47 3.47 0 0 1-4.791 0Zm1.111-6.455h3.335v-1.111h-3.334Zm1.668 11.114a4.57 4.57 0 0 1-2.778-.966v2.077a4.03 4.03 0 0 0 5.557 0v-2.077a4.57 4.57 0 0 1-2.779.966"></svg:path><svg:path fill="#b533a5" d="m30.081 26.488l.383-.365v-.753a4.48 4.48 0 0 1-5.557 0v.753l.383.365a3.47 3.47 0 0 0 4.791 0"></svg:path><svg:path fill="#b533a5" d="M24.907 23.9V13a4.03 4.03 0 0 0 5.557 0v10.9l-.383.365a3.47 3.47 0 0 1-4.791 0Zm1.111-6.455h3.334v-1.111h-3.334Zm1.667 11.114a4.57 4.57 0 0 1-2.778-.966v2.077a4.03 4.03 0 0 0 5.557 0v-2.077a4.57 4.57 0 0 1-2.779.966"></svg:path>`,
+})
+export class VscodeIconsFolderTypeLibraryIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

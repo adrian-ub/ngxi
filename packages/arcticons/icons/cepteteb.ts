@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsCeptetebIcon],svg[arcticons-cepteteb-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24 42.5S9.694 35.16 9.558 34.225L5.619 7.213C5.483 6.277 6.386 5.5 7.332 5.5h33.336c.946 0 1.85.777 1.713 1.713l-3.94 27.012C38.305 35.161 24 42.5 24 42.5"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M30.506 27.312a7.56 7.56 0 0 1-5.513 2.388c-4.175 0-7.5-3.447-7.5-7.621a7.558 7.558 0 0 1 12.966-5.281"></svg:path>`,
+})
+export class ArcticonsCeptetebIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

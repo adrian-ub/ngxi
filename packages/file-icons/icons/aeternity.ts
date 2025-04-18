@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsAeternityIcon],svg[file-icons-aeternity-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M390.92 134.626c-49.387 0-83.244 30.982-112.498 69.353l17.338 25.428c26.796-36.776 55.288-65.779 95.16-65.779c45.022-.086 83.494 32.42 90.923 76.825H368.14v29.003h143.121c7.742-73.55-46.25-134.015-120.341-134.83m-2.642 242.738c50.552.147 96.081-30.55 114.9-77.468h-32.621a93.94 93.94 0 0 1-82.279 48.194c-110.564.107-127.04-206.658-265.304-213.464c-164.338 7.282-163.593 234.817 0 242.738c50.118 0 84.486-31.133 114.2-69.751l-17.495-25.806c-27.237 37.104-56.19 66.29-96.71 66.29c-123.741-6.211-123.741-177.515.005-184.204c109.845-.631 136.617 215.195 265.304 213.471"></svg:path>`,
+})
+export class FileIconsAeternityIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

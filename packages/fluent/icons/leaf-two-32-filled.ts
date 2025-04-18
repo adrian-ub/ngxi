@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLeafTwo32FilledIcon],svg[fluent-leaf-two-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 3a3 3 0 0 0-3 3v6a9 9 0 0 0 6.278 8.581A12 12 0 0 1 8 18c0-2.18.582-4.225 1.598-5.988L7.293 9.707a1 1 0 0 1 1.414-1.414l2.052 2.052a12 12 0 0 1 7.113-4.157A8.98 8.98 0 0 0 11 3zm14.085 5.041a9.98 9.98 0 0 0-6.905 3.725A9.96 9.96 0 0 0 10 18a9.98 9.98 0 0 0 2.257 6.329l-2.964 2.964a1 1 0 1 0 1.414 1.414l2.964-2.964A9.96 9.96 0 0 0 20 28c5.523 0 10-4.477 10-10v-7a3 3 0 0 0-3-3h-7q-.463 0-.915.041m2.622 8.252a1 1 0 0 1 0 1.414l-6.613 6.613a8 8 0 0 1-1.414-1.414l6.613-6.613a1 1 0 0 1 1.414 0"></svg:path>`,
+})
+export class FluentLeafTwo32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ionDiamondSharpIcon],svg[ion-diamond-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M396.31 32H264l84.19 112.26zm-280.62 0l48.12 112.26L248 32zM256 74.67L192 160h128zm166.95-23.61L376.26 160H488zm-333.9 0L23 160h112.74zM146.68 192H24l222.8 288h.53zm218.64 0L264.67 480h.53L488 192zm-35.93 0H182.61L256 400z"></svg:path>`,
+})
+export class IonDiamondSharpIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

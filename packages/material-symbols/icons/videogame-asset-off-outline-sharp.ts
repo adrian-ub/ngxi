@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsVideogameAssetOffOutlineSharpIcon],svg[material-symbols-videogame-asset-off-outline-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.5 12q-.625 0-1.062-.437T16 10.5t.438-1.062T17.5 9t1.063.438T19 10.5t-.437 1.063T17.5 12M2 18V5.975h3.975L8 8H4v8h9.15L1.375 4.225L2.8 2.8l18.4 18.4l-1.425 1.425L15.15 18zm5-3v-2H5v-2h2V9h2v2h2v2H9v2zm15 2.875h-1.275L20 17.15V8h-9.15l-2-2H22zm-6.575-5.3"></svg:path>`,
+})
+export class MaterialSymbolsVideogameAssetOffOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

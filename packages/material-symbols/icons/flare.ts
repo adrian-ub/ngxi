@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsFlareIcon],svg[material-symbols-flare-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 13v-2h6v2zm6.75-3.85l-2.1-2.1l1.4-1.4l2.1 2.1zM11 7V1h2v6zm5.25 2.15l-1.4-1.4l2.1-2.1l1.4 1.4zM17 13v-2h6v2zm-5 2q-1.25 0-2.125-.875T9 12t.875-2.125T12 9t2.125.875T15 12t-.875 2.125T12 15m4.95 3.35l-2.1-2.1l1.4-1.4l2.1 2.1zm-9.9 0l-1.4-1.4l2.1-2.1l1.4 1.4zM11 23v-6h2v6z"></svg:path>`,
+})
+export class MaterialSymbolsFlareIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

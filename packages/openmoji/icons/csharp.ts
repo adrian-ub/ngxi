@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiCsharpIcon],svg[openmoji-csharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:path id="openmojiCsharp0" d="m48.234 30.218l-1.757 11.556m6.877-11.557l-1.757 11.556"></svg:path><svg:path id="openmojiCsharp1" d="m44.563 33.596l11.691-.013m-12.568 4.94l11.691-.014"></svg:path></svg:defs><svg:g stroke="#000" stroke-linejoin="round"><svg:g stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.857" clip-rule="evenodd"><svg:use href="#openmojiCsharp0"></svg:use><svg:use href="#openmojiCsharp1"></svg:use></svg:g><svg:path stroke-width="2.25" d="M37.9 21.38c2.481 0 4.867.905 6.72 2.547a1.125 1.125 0 1 0 1.493-1.683A12.37 12.37 0 0 0 37.9 19.13c-6.823 0-12.38 5.552-12.38 12.38v9c0 6.823 5.552 12.38 12.38 12.38c3.03 0 5.948-1.106 8.212-3.114a1.125 1.125 0 1 0-1.493-1.683a10.12 10.12 0 0 1-6.72 2.547c-5.582 0-10.12-4.543-10.12-10.12v-9c0-5.582 4.543-10.12 10.12-10.12z"></svg:path></svg:g><svg:path fill="#b399c8" stroke="#b399c8" d="M35.02 8.261a1.95 1.95 0 0 1 1.952 0l22.56 13.02c.604.348.976.993.976 1.69v26.05a1.95 1.95 0 0 1-.976 1.69l-22.56 13.02a1.95 1.95 0 0 1-1.952 0l-22.56-13.02a1.95 1.95 0 0 1-.976-1.69v-26.05c0-.698.372-1.342.976-1.69z"></svg:path><svg:path fill="#8967aa" stroke="#8967aa" stroke-linejoin="round" stroke-width="2" d="m12.46 50.71l48.05-27.74v26.05l-.976 1.69l-22.56 13.02h-1.952z"></svg:path><svg:path fill="#8967aa" stroke="#8967aa" stroke-width="2" d="M60.51 22.98L36.49 36.85L59.18 48.4c0-.995 1.337-1.317 1.337-2.228v-23.19"></svg:path><svg:g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.857" clip-rule="evenodd"><svg:use href="#openmojiCsharp0"></svg:use><svg:use href="#openmojiCsharp1"></svg:use></svg:g><svg:path fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2.25" d="M37.9 21.38c2.481 0 4.867.905 6.72 2.547a1.125 1.125 0 1 0 1.493-1.683A12.37 12.37 0 0 0 37.9 19.13c-6.823 0-12.38 5.552-12.38 12.38v9c0 6.823 5.552 12.38 12.38 12.38c3.03 0 5.948-1.106 8.212-3.114a1.125 1.125 0 1 0-1.493-1.683a10.12 10.12 0 0 1-6.72 2.547c-5.582 0-10.12-4.543-10.12-10.12v-9c0-5.582 4.543-10.12 10.12-10.12z"></svg:path><svg:path fill="none" stroke="#000" stroke-width="2" d="M35.02 8.261a1.95 1.95 0 0 1 1.952 0l22.56 13.02c.604.348.976.993.976 1.69v26.05a1.95 1.95 0 0 1-.976 1.69l-22.56 13.02a1.95 1.95 0 0 1-1.952 0l-22.56-13.02a1.95 1.95 0 0 1-.976-1.69v-26.05c0-.698.372-1.342.976-1.69z"></svg:path>`,
+})
+export class OpenmojiCsharpIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

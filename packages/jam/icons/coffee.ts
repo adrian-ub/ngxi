@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamCoffeeIcon],svg[jam-coffee-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1.232 4.976A1.5 1.5 0 0 1 1.5 2H2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2h.5a1.5 1.5 0 0 1 .268 2.976l-.448 3.805a2 2 0 0 1 .399 1.467l-.5 4a2 2 0 0 1-.693 1.279l-.422 3.59a1 1 0 0 1-.993.883H3.889a1 1 0 0 1-.993-.883l-.422-3.59a2 2 0 0 1-.693-1.279l-.5-4a2 2 0 0 1 .4-1.467zM3.25 5l.353 3h6.796l.353-3zm.517 9h6.468l.5-4H3.266zm.777 2l.235 2h4.444l.235-2z"></svg:path>`,
+})
+export class JamCoffeeIcon {
+  readonly viewBox = input("-5 -2 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[notoV1PButtonIcon],svg[noto-v1-p-button-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#006ca2" d="M121 .11H6.99C3.21.11.12 3.21.12 6.99V121c0 3.78 3.09 6.88 6.87 6.88H121c3.78 0 6.88-3.09 6.88-6.88V7c0-3.79-3.1-6.89-6.88-6.89"></svg:path><svg:path fill="#fff" d="M71.63 15.96h-34.5c-.13 0-.25.06-.37.08h-5.91c-1.13 0-2.04.92-2.04 2.05v92.01c0 1.13.91 2.04 2.04 2.04H50.8c1.13 0 2.04-.91 2.04-2.04V80.85h18.79c18.07 0 32.77-14.55 32.77-32.44S89.7 15.96 71.63 15.96m-1.58 45.77c-.32.02-.64.05-.95.05H53.18s-.08-.04-.11-.05a.6.6 0 0 1-.23-.09c-.1-.1-.19-.23-.19-.39V35.57c0-.16.09-.29.19-.39c.06-.05.13-.06.2-.08c.06-.02.1-.06.14-.06H69.1c.38 0 .75.02 1.13.06C76.81 35.69 82 41.43 82 48.4c0 7.05-5.29 12.82-11.95 13.33"></svg:path>`,
+})
+export class NotoV1PButtonIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

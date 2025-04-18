@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsSupercolliderIcon],svg[file-icons-supercollider-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M217.456 512L0 396.13V109.755l22.719 12.105v253.872l172.018 91.66l.001-221.37l-131.503-70.07v158.445l92.122 49.086v-95.8l-50.629-26.977v33.154l28.447 15.157v32.503L82.01 314.257V216.1l96.067 51.188v160.805l-137.56-73.298v-223.45l176.94 94.282zm16.989-326.542l218.546-61.653L283.683 38.22L113.778 86.15l121.842 61.592l118.655-33.474l-74.374-37.596L216.703 94.5l24.627 12.449l35.137-9.912l25.12 12.698l-62.534 17.642l-72.587-36.694l113.783-32.099l120.054 60.688l-162.424 45.82L70.148 80.304l212.467-59.938l192.359 97.239l28.06-7.916L286.05 0L17.46 75.77zm277.554-34.332l-256.265 74.5V512l26.773-7.783V250.345l202.719-58.934v221.37l-154.971 45.052V299.388l108.563-31.56v95.8l-59.665 17.345v-33.154l33.524-9.746v-32.502L352.38 323.1v98.158l113.211-32.913V227.541l-162.11 47.128v223.45L512 437.499z"></svg:path>`,
+})
+export class FileIconsSupercolliderIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

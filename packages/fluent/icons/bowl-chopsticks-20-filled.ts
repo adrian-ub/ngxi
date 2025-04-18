@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBowlChopsticks20FilledIcon],svg[fluent-bowl-chopsticks-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.238 2.074a.5.5 0 0 1 .688.164L9.087 9h1.826L7.074 2.762a.5.5 0 0 1 .852-.524L12.087 9H17.5a.5.5 0 0 1 .5.5v.5a8 8 0 0 1-.252 2H2.252A8 8 0 0 1 2 10v-.5a.5.5 0 0 1 .5-.5h5.413L4.074 2.762a.5.5 0 0 1 .164-.688M10 18a8 8 0 0 1-7.418-5h14.837A8 8 0 0 1 10 18"></svg:path>`,
+})
+export class FluentBowlChopsticks20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

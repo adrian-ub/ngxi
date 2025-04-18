@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineSproutSolidIcon],svg[streamline-sprout-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.758 5.61c.81.433 1.856.357 2.585-.278c.753-.588 1.099-2.528 1.222-3.43a.46.46 0 0 0-.413-.525c-.908-.093-2.88-.214-3.625.375c-.891.632-1.183 1.822-.763 2.785a.8.8 0 0 0-.156.12c-.64.64-1.194 1.633-1.596 2.605a5.3 5.3 0 0 0-.975-1.009c.251-.878-.058-1.881-.832-2.43c-.715-.565-2.605-.453-3.49-.364a.46.46 0 0 0-.414.525c.121.88.456 2.738 1.18 3.303c.755.658 1.86.696 2.663.174c.46.388.707.7.856 1.037c.06.135.11.284.147.457a17 17 0 0 1 1.854.008c.104-.361.238-.744.396-1.126c.372-.897.835-1.682 1.272-2.12a1 1 0 0 0 .089-.106ZM14 12.339s-1.93-1.931-6.25-2.136a16 16 0 0 0-1.5 0C1.931 10.406 0 12.337 0 12.337v1.582h14v-1.582Z" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineSproutSolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

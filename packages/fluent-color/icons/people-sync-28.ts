@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorPeopleSync28Icon],svg[fluent-color-people-sync-28-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorPeopleSync280)" d="M2 17.25A2.25 2.25 0 0 1 4.25 15h10.5A2.25 2.25 0 0 1 17 17.25v.5S17 23 9.5 23S2 17.75 2 17.75z"></svg:path><svg:path fill="url(#fluentColorPeopleSync281)" d="M2 17.25A2.25 2.25 0 0 1 4.25 15h10.5A2.25 2.25 0 0 1 17 17.25v.5S17 23 9.5 23S2 17.75 2 17.75z"></svg:path><svg:path fill="url(#fluentColorPeopleSync286)" fill-opacity=".5" d="M2 17.25A2.25 2.25 0 0 1 4.25 15h10.5A2.25 2.25 0 0 1 17 17.25v.5S17 23 9.5 23S2 17.75 2 17.75z"></svg:path><svg:path fill="url(#fluentColorPeopleSync282)" d="M23.5 9.5a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0"></svg:path><svg:path fill="url(#fluentColorPeopleSync283)" d="M9.5 13a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9"></svg:path><svg:path fill="url(#fluentColorPeopleSync284)" d="M14 20.5a6.5 6.5 0 1 0 13 0a6.5 6.5 0 0 0-13 0"></svg:path><svg:path fill="url(#fluentColorPeopleSync285)" d="M19.349 16.42A4 4 0 0 1 24 18.313V17.5a.5.5 0 0 1 1 0v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h.727a2.998 2.998 0 0 0-4.848-.871a.5.5 0 0 1-.707-.707a4 4 0 0 1 1.677-1.003m2.302 8.16A4 4 0 0 1 17 22.687v.814a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-.727a2.998 2.998 0 0 0 4.848.871a.5.5 0 0 1 .707.707a4 4 0 0 1-1.677 1.003"></svg:path><svg:defs><svg:lineargradient id="fluentColorPeopleSync280" x1="5.567" x2="8.291" y1="16.064" y2="24.217" gradientUnits="userSpaceOnUse"><svg:stop offset=".125" stop-color="#BD96FF"></svg:stop><svg:stop offset="1" stop-color="#9C6CFE"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorPeopleSync281" x1="9.5" x2="13.325" y1="14.048" y2="27.448" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#885EDB" stop-opacity="0"></svg:stop><svg:stop offset="1" stop-color="#E362F8"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorPeopleSync282" x1="18.165" x2="21.732" y1="6.931" y2="12.627" gradientUnits="userSpaceOnUse"><svg:stop offset=".125" stop-color="#9C6CFE"></svg:stop><svg:stop offset="1" stop-color="#7A41DC"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorPeopleSync283" x1="7.14" x2="11.727" y1="5.196" y2="12.52" gradientUnits="userSpaceOnUse"><svg:stop offset=".125" stop-color="#BD96FF"></svg:stop><svg:stop offset="1" stop-color="#9C6CFE"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorPeopleSync284" x1="14.464" x2="23.436" y1="16.438" y2="25.759" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#52D17C"></svg:stop><svg:stop offset="1" stop-color="#22918B"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorPeopleSync285" x1="16" x2="21.228" y1="15.542" y2="25.543" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#fff"></svg:stop><svg:stop offset="1" stop-color="#E3FFD9"></svg:stop></svg:lineargradient><svg:radialgradient id="fluentColorPeopleSync286" cx="0" cy="0" r="1" gradientTransform="matrix(2.78571 5.85714 -6.13347 2.91713 18.5 20)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#30116E"></svg:stop><svg:stop offset=".268" stop-color="#30116E" stop-opacity=".812"></svg:stop><svg:stop offset="1" stop-color="#30116E" stop-opacity="0"></svg:stop></svg:radialgradient></svg:defs></svg:g>`,
+})
+export class FluentColorPeopleSync28Icon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

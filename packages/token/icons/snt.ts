@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenSntIcon],svg[token-snt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.03 10.922a10 10 0 0 0-1.827.154A8.99 8.99 0 0 1 16.093 3c2.795 0 4.71 1.364 4.71 4.203c0 2.828-2.3 4.192-5.656 4.192c-2.476 0-3.642-.473-6.117-.473m-.176 1.672c-3.356 0-5.656 1.386-5.656 4.203c0 2.839 1.915 4.203 4.71 4.203a8.99 8.99 0 0 0 8.89-8.076q-.908.161-1.827.154c-2.476 0-3.642-.473-6.117-.473"></svg:path>`,
+})
+export class TokenSntIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

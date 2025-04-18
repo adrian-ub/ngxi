@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsDiscordAltIcon],svg[lineicons-discord-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M54.214 11.274A52 52 0 0 0 41.01 7.125a39 39 0 0 0-1.691 3.512q-7.384-1.11-14.633 0a38 38 0 0 0-1.712-3.512a52 52 0 0 0-13.213 4.16C1.404 23.911-.861 36.224.27 48.363c5.543 4.139 10.914 6.653 16.195 8.298a40 40 0 0 0 3.468-5.712a34 34 0 0 1-5.462-2.658q.688-.51 1.34-1.06c10.53 4.926 21.972 4.926 32.377 0q.658.55 1.339 1.06a34 34 0 0 1-5.472 2.663a40 40 0 0 0 3.468 5.712c5.286-1.645 10.662-4.16 16.204-8.303c1.329-14.072-2.27-26.272-9.514-37.09M21.37 40.9c-3.162 0-5.754-2.952-5.754-6.545s2.537-6.55 5.754-6.55s5.808 2.95 5.753 6.55c.005 3.593-2.537 6.545-5.753 6.545m21.262 0c-3.16 0-5.753-2.952-5.753-6.545s2.537-6.55 5.753-6.55s5.81 2.95 5.754 6.55c0 3.593-2.537 6.545-5.754 6.545"></svg:path>`,
+})
+export class LineiconsDiscordAltIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

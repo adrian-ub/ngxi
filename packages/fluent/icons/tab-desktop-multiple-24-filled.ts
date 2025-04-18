@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTabDesktopMultiple24FilledIcon],svg[fluent-tab-desktop-multiple-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19 6.01a3.25 3.25 0 0 1 3.002 3.24v8a4.75 4.75 0 0 1-4.75 4.75h-8a3.25 3.25 0 0 1-3.24-3h8.739A4.25 4.25 0 0 0 19 14.75zM5.25 2A3.25 3.25 0 0 0 2 5.25v9.5A3.25 3.25 0 0 0 5.25 18h9.5A3.25 3.25 0 0 0 18 14.75V7.5h-7.25A2.25 2.25 0 0 1 8.5 5.25V2zm5.5 4H18v-.75A3.25 3.25 0 0 0 14.75 2H10v3.25c0 .414.336.75.75.75"></svg:path>`,
+})
+export class FluentTabDesktopMultiple24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsPencilTicketIcon],svg[pepicons-pencil-ticket-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M1.5 6A1.5 1.5 0 0 1 3 4.5h14A1.5 1.5 0 0 1 18.5 6v2.64c0 .269-.161.51-.408.613a.809.809 0 0 0 0 1.493a.66.66 0 0 1 .408.613V14a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 14v-2.64c0-.269.161-.51.408-.614a.809.809 0 0 0 0-1.493a.66.66 0 0 1-.408-.612zM3 5.5a.5.5 0 0 0-.5.5v2.431c1.208.683 1.208 2.455 0 3.138V14a.5.5 0 0 0 .5.5h14a.5.5 0 0 0 .5-.5v-2.431c-1.208-.683-1.208-2.455 0-3.138V6a.5.5 0 0 0-.5-.5z"></svg:path><svg:path d="M12.5 13.25a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0V14a.75.75 0 0 1 .75-.75m0-8.5a.75.75 0 0 1 .75.75V6a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75m0 2.75a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75m0 3a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75"></svg:path></svg:g>`,
+})
+export class PepiconsPencilTicketIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

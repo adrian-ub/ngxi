@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastEMailIcon],svg[fluent-emoji-high-contrast-e-mail-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M15.61 17.46c-.88 0-1.6-.72-1.6-1.6s.72-1.6 1.6-1.6s1.6.72 1.6 1.6s-.72 1.6-1.6 1.6"></svg:path><svg:path d="M16 23a7 7 0 1 0 0-14a7 7 0 0 0 0 14m0-11.5c2.45.03 4.44 2.08 4.44 4.55v.81c0 .89-.73 1.62-1.62 1.62c-.61 0-1.14-.34-1.42-.84c-.46.46-1.1.75-1.8.75c-1.4 0-2.54-1.14-2.54-2.54s1.14-2.54 2.54-2.54c.61 0 1.16.22 1.6.57v-.09c0-.26.23-.47.49-.47s.47.21.47.47v3.08a.67.67 0 0 0 1.34 0v-.81c0-1.97-1.58-3.59-3.51-3.62c-.96 0-1.87.36-2.55 1.03s-1.06 1.57-1.06 2.53c0 1.96 1.6 3.56 3.56 3.56a.47.47 0 1 1 0 .94c-2.48 0-4.5-2.02-4.5-4.5c0-1.21.47-2.35 1.34-3.2c.86-.86 2.01-1.32 3.22-1.3"></svg:path><svg:path d="M1 7.01C1 5.898 1.898 5 3.01 5H29c1.109 0 2 .904 2 2.01V25c0 1.109-.904 2-2.01 2H3.01A2.007 2.007 0 0 1 1 24.99zm2-.005v.497l6.35 4.046a8 8 0 0 0-.902 1.797L3 9.873V22.68l5.62-3.581a8 8 0 0 0 1 1.733L3.08 25h25.855l-6.557-4.173a8 8 0 0 0 1-1.735L29 22.671V9.88l-5.452 3.47a8 8 0 0 0-.9-1.798L29 7.511v-.508L28.996 7H3.005l-.003.002z"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastEMailIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

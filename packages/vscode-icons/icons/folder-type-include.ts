@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFolderTypeIncludeIcon],svg[vscode-icons-folder-type-include-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#686868" d="M27.5 5.5h-9.3l-2.1 4.2H4.4v16.8h25.2v-21Zm0 4.2h-8.2l1.1-2.1h7.1Z"></svg:path><svg:path fill="gray" d="M15.266 11.311v18.375h14.449v-15.1h-3.6v-3.275Zm12.146.813l.008 1.158h1.252l-1.26-1.16Z"></svg:path><svg:path fill="#c5c5c5" d="M27.028 10H15.281a1.316 1.316 0 0 0-1.312 1.313v18.375A1.316 1.316 0 0 0 15.281 31h14.438a1.316 1.316 0 0 0 1.313-1.312V13.642Zm.394 2.133l1.247 1.148h-1.247ZM15.281 29.688V11.313h10.828v3.281h3.609v15.094Z"></svg:path><svg:path fill="#c5c5c5" d="m17.523 27.326l5.577-5.577l-5.577-5.577v3.489H10.1v4.176h7.423z"></svg:path>`,
+})
+export class VscodeIconsFolderTypeIncludeIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

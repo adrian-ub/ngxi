@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsHeartFillIcon],svg[lineicons-heart-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M32 57.6c-.8 0-1.6-.3-2.2-.8c-2.3-2-4.6-3.9-6.6-5.6c-5.8-4.9-10.9-9.2-14.4-13.4C4.8 33 3 28.6 3 23.7c0-4.7 1.6-9.1 4.6-12.3s7.1-5 11.6-5c3.3 0 6.4 1.1 9.1 3.1c1.1.8 2 1.8 2.9 2.9c.4.5 1.1.5 1.5 0c.9-1.1 1.9-2 2.9-2.9c2.7-2.1 5.8-3.1 9.1-3.1c4.5 0 8.6 1.8 11.6 5s4.6 7.6 4.6 12.3c0 4.9-1.8 9.3-5.8 14c-3.5 4.2-8.6 8.5-14.4 13.4c-2 1.7-4.3 3.6-6.6 5.6c-.5.6-1.3.9-2.1.9"></svg:path>`,
+})
+export class LineiconsHeartFillIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

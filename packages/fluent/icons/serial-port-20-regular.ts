@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentSerialPort20RegularIcon],svg[fluent-serial-port-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 9.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1M8.5 9a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0M7 11.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0m1.5.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0M10 9.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0m1.5.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1M4.769 6a2.5 2.5 0 0 0-2.435 3.067l.698 3A2.5 2.5 0 0 0 5.467 14h9.062a2.5 2.5 0 0 0 2.435-1.932l.7-3A2.5 2.5 0 0 0 15.229 6zM3.308 8.84A1.5 1.5 0 0 1 4.768 7H15.23c.966 0 1.68.9 1.46 1.84l-.7 3A1.5 1.5 0 0 1 14.53 13H5.467a1.5 1.5 0 0 1-1.46-1.16z"></svg:path>`,
+})
+export class FluentSerialPort20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiFlagBritishVirginIslandsIcon],svg[openmoji-flag-british-virgin-islands-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#1e50a0" d="M5 17h62v38H5z"></svg:path><svg:path fill="#1e50a0" d="M5 17h31v19H5z"></svg:path><svg:path fill="#fff" d="M9.5 36H5l26.5-19H36Z"></svg:path><svg:path fill="#fff" d="M36 32.5L5 17v3.5L36 36Z"></svg:path><svg:path fill="#d22f27" d="M36 33.5L5 18v1.5L36 35Z"></svg:path><svg:path fill="#d22f27" d="M8.5 36H6l26.5-19H35Z"></svg:path><svg:path fill="#d22f27" d="M36 25H22v-8h-3v8H5v3h14v8h3v-8h14z"></svg:path><svg:path fill="none" stroke="#fff" stroke-linejoin="round" d="M5 28h14v8m0-19v8H5m31 0H22v-8m0 19v-8h14"></svg:path><svg:path fill="#fcea2b" d="M57.452 44.755c-4.502 3.938-9.019 3.806-13.356.13c-.475.112-.844.327-1.107.236c-.646-.222-.704-.85-.198-1.32a8 8 0 0 0 .967-.938c.346-.453.627-.378.997-.053a20 20 0 0 0 1.968 1.637a7.357 7.357 0 0 0 9.7-1.406c.629-.747.822-.746 1.46-.008a3.7 3.7 0 0 0 .609.628c.48.337.701.713.3 1.234c-.32.415-.735.38-1.34-.14"></svg:path><svg:path fill="#186648" d="M50.643 27.723h-5.076a1.863 1.863 0 0 0-1.862 1.863v10.752c0 2.087 4.749 3.743 6.389 4.252a1.84 1.84 0 0 0 1.098 0c1.64-.51 6.389-2.165 6.389-4.252V29.586a1.863 1.863 0 0 0-1.863-1.863Z"></svg:path><svg:circle cx="55.215" cy="30.246" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="55.215" cy="32.138" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="55.215" cy="34.031" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="55.215" cy="35.923" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="55.215" cy="37.815" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="55.215" cy="39.707" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="46.385" cy="30.246" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="51.116" cy="29.931" r=".946" fill="#ffa7c0"></svg:circle><svg:circle cx="46.385" cy="32.138" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="46.385" cy="34.031" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="47.647" cy="35.923" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="46.385" cy="37.815" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="46.385" cy="39.707" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="50.17" cy="41.599" r=".631" fill="#fcea2b"></svg:circle><svg:circle cx="51.431" cy="41.599" r=".631" fill="#fcea2b"></svg:circle><svg:path fill="none" stroke="#ffa7c0" stroke-linecap="round" stroke-linejoin="round" stroke-width=".631" d="m49.854 32.454l-1.892 2.523"></svg:path><svg:rect width="3.154" height="10.092" x="49.46" y="31.508" fill="#fff" rx="1.155" ry="1.155"></svg:rect><svg:path fill="none" stroke="#ffa7c0" stroke-linecap="round" stroke-linejoin="round" stroke-width=".631" d="m52.377 32.454l.586 3.445"></svg:path><svg:path fill="#a57939" stroke="#a57939" stroke-linecap="round" stroke-linejoin="round" stroke-width=".631" d="M52.081 29.123a.946.946 0 0 0-1.338 0l1.338 1.338a.946.946 0 0 0 0-1.338"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z"></svg:path>`,
+})
+export class OpenmojiFlagBritishVirginIslandsIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

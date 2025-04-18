@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTableInsertColumn28FilledIcon],svg[fluent-table-insert-column-28-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.5 3.75a.75.75 0 0 0-1.5 0v20.5a.75.75 0 0 0 1.5 0zm20.5 0a.75.75 0 0 0-1.5 0v20.5a.75.75 0 0 0 1.5 0zM11.75 3A2.75 2.75 0 0 0 9 5.75V9.5h10V5.75A2.75 2.75 0 0 0 16.25 3zM9 17v-6h10v6zm0 1.5h10v3.75A2.75 2.75 0 0 1 16.25 25h-4.5A2.75 2.75 0 0 1 9 22.25z"></svg:path>`,
+})
+export class FluentTableInsertColumn28FilledIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

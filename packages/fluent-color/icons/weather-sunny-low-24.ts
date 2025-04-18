@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorWeatherSunnyLow24Icon],svg[fluent-color-weather-sunny-low-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorWeatherSunnyLow240)" d="M17.125 14a5.5 5.5 0 1 0-10.25 0z"></svg:path><svg:path fill="url(#fluentColorWeatherSunnyLow241)" d="M2 14a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1"></svg:path><svg:path fill="url(#fluentColorWeatherSunnyLow242)" d="M6 17a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1"></svg:path><svg:path fill="url(#fluentColorWeatherSunnyLow243)" d="M10 20a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1"></svg:path><svg:path fill="url(#fluentColorWeatherSunnyLow244)" d="M12 2a1 1 0 0 1 1 1v1.25a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1"></svg:path><svg:path fill="url(#fluentColorWeatherSunnyLow245)" d="M4.793 4.793a1 1 0 0 1 1.414 0l1 1a1 1 0 0 1-1.414 1.414l-1-1a1 1 0 0 1 0-1.414"></svg:path><svg:path fill="url(#fluentColorWeatherSunnyLow246)" d="M19.207 4.793a1 1 0 0 1 0 1.414l-1 1a1 1 0 1 1-1.414-1.414l1-1a1 1 0 0 1 1.414 0"></svg:path><svg:defs><svg:lineargradient id="fluentColorWeatherSunnyLow240" x1="10.31" x2="14.51" y1="6.089" y2="14.585" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFE580"></svg:stop><svg:stop offset=".273" stop-color="#FFBF70"></svg:stop><svg:stop offset=".57" stop-color="#FFA342"></svg:stop><svg:stop offset=".96" stop-color="#FA6673"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorWeatherSunnyLow241" x1=".531" x2="22" y1="13" y2="13" gradientUnits="userSpaceOnUse"><svg:stop offset=".061" stop-color="#0FAFFF"></svg:stop><svg:stop offset="1" stop-color="#0094F0"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorWeatherSunnyLow242" x1=".531" x2="22" y1="13" y2="13" gradientUnits="userSpaceOnUse"><svg:stop offset=".061" stop-color="#0FAFFF"></svg:stop><svg:stop offset="1" stop-color="#0094F0"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorWeatherSunnyLow243" x1=".531" x2="22" y1="13" y2="13" gradientUnits="userSpaceOnUse"><svg:stop offset=".061" stop-color="#0FAFFF"></svg:stop><svg:stop offset="1" stop-color="#0094F0"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorWeatherSunnyLow244" x1="9.696" x2="12.931" y1="1.699" y2="13.084" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFE580"></svg:stop><svg:stop offset=".273" stop-color="#FFBF70"></svg:stop><svg:stop offset=".57" stop-color="#FFA342"></svg:stop><svg:stop offset=".815" stop-color="#FA6673"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorWeatherSunnyLow245" x1="9.696" x2="12.931" y1="1.699" y2="13.084" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFE580"></svg:stop><svg:stop offset=".273" stop-color="#FFBF70"></svg:stop><svg:stop offset=".57" stop-color="#FFA342"></svg:stop><svg:stop offset=".815" stop-color="#FA6673"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorWeatherSunnyLow246" x1="9.696" x2="12.931" y1="1.699" y2="13.084" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFE580"></svg:stop><svg:stop offset=".273" stop-color="#FFBF70"></svg:stop><svg:stop offset=".57" stop-color="#FFA342"></svg:stop><svg:stop offset=".815" stop-color="#FA6673"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class FluentColorWeatherSunnyLow24Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

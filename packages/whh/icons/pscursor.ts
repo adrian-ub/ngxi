@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[whhPscursorIcon],svg[whh-pscursor-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M960 704H800q-13 0-33.5-11T736 672L608 544q-19-19-19-32t19-32l128-128q7-11 29-21.5t35-10.5h160q26 0 45 18.5t19 45.5v256q0 26-19 45t-45 19M672 288L544 416q-19 19-32 19t-32-19L352 288q-10-10-21-30.5T320 224V64q0-27 19-45.5T384 0h256q27 0 45.5 18.5T704 64v160q0 13-10.5 35T672 288M416 544L288 672q-10 10-30.5 21T224 704H64q-26 0-45-19T0 640V384q0-27 19-45.5T64 320h160q13 0 35 10.5t29 21.5l128 128q19 19 19 32t-19 32m64 64q19-19 32-19t32 19l128 128q11 7 21.5 29t10.5 35v160q0 26-19 45t-45 19H384q-27 0-45.5-19T320 960V800q0-13 11-33.5t21-30.5z"></svg:path>`,
+})
+export class WhhPscursorIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPhoneEdit24FilledIcon],svg[fluent-phone-edit-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.197 7.572L19.1 1.669a2.286 2.286 0 1 1 3.232 3.233l-5.902 5.902a2.7 2.7 0 0 1-1.248.707l-1.83.457a1.087 1.087 0 0 1-1.319-1.318l.458-1.83c.118-.473.362-.904.706-1.248m-.707-.707l4.496-4.496A2.24 2.24 0 0 0 15.75 2h-7.5A2.25 2.25 0 0 0 6 4.25v15.5A2.25 2.25 0 0 0 8.25 22h7.5A2.25 2.25 0 0 0 18 19.75v-9.102l-.863.863a3.7 3.7 0 0 1-1.712.97l-1.83.457c-1.53.383-2.914-1.002-2.532-2.53l.458-1.831c.162-.648.497-1.24.97-1.712M13.25 18a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1 0-1.5z"></svg:path>`,
+})
+export class FluentPhoneEdit24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

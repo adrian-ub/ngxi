@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsScoreOutlineSharpIcon],svg[material-symbols-score-outline-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 21V3h18v18zm6-8.5l4 4l6-6V5H5v11.5zm3-.5V6h1.5v6zm3.5 0l-2-3l2-3h1.7l-2 3l2 3zM7 12V8.25h2.5V7.5H7V6h4v3.75H8.5v.75H11V12zm2 3l-4 4h14v-6l-6 6zm-4 4V5z"></svg:path>`,
+})
+export class MaterialSymbolsScoreOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneTongueIcon],svg[emojione-tongue-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#493b30" d="M62 9.3c0 10.9-13.4 20.2-30 20.2S2 20.2 2 9.3c0 0 14.3 3.2 30 3.2s30-3.2 30-3.2"></svg:path><svg:path fill="#ff717f" d="M8 29.1C8 12 8 17.2 32 17.2S56 12 56 29c0 17.1-10.7 25.6-24 25.6c-13.3.1-24-8.5-24-25.5"></svg:path><svg:path fill="#e2596c" d="M33.5 17.2L32 46.5l-1.5-29.3z"></svg:path>`,
+})
+export class EmojioneTongueIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

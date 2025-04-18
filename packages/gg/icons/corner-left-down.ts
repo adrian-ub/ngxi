@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ggCornerLeftDownIcon],svg[gg-corner-left-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.601 6.85a2 2 0 0 1 2.002-1.998l8 .007l.002-2l-8-.007a4 4 0 0 0-4.004 3.996l-.01 10.306l-3.78-3.788l-1.416 1.412l6.358 6.37l6.37-6.358l-1.413-1.415l-4.119 4.11z"></svg:path>`,
+})
+export class GgCornerLeftDownIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

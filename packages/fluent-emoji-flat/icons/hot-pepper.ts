@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatHotPepperIcon],svg[fluent-emoji-flat-hot-pepper-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#F8312F" d="M9.815 24.34a11.9 11.9 0 0 1-4.68 2.13c-1.43.3-1.54 2.3-.15 2.76c4.75 1.56 10.16.85 14.46-2.38c4.44-3.33 6.64-8.54 6.31-13.7c-.28-4.45-5.39-6.82-8.96-4.14a5.57 5.57 0 0 0-2.23 4.86c.29 3.93-1.37 7.93-4.75 10.47"></svg:path><svg:path fill="#00D26A" d="M20.965 3a1 1 0 1 0-2 0v2.03h-1.61c-2.77 0-5.01 2.24-5.01 5c0 1.07.46 2.1 1.26 2.82l.01.01c.72.65 1.82.65 2.54 0s1.82-.65 2.54 0s1.82.65 2.54 0s1.82-.65 2.54 0s1.82.65 2.54 0l.01-.01a3.8 3.8 0 0 0 1.26-2.82c0-2.76-2.24-5-5-5h-1.62z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatHotPepperIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphDesktopIcon],svg[si-glyph-desktop-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M16.089.064H1.913A.91.91 0 0 0 1 .975V11.05c0 .504.409.912.913.912h14.176A.91.91 0 0 0 17 11.05V.975a.91.91 0 0 0-.911-.911M2.971 9.369V2.575c0-.375.283-.677.633-.677h10.794c.351 0 .633.302.633.677v6.794c0 .373-.282.676-.633.676H3.604c-.35 0-.633-.303-.633-.676m11.476 4.714H9.911v-2.041H8.052v2.041H3.583c-.282 0-.511.792-.511 1.193c0 .403.229.623.511.623h10.864c.282 0 .511-.22.511-.623c0-.401-.229-1.193-.511-1.193"></svg:path>`,
+})
+export class SiGlyphDesktopIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}

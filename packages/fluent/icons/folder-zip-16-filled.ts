@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentFolderZip16FilledIcon],svg[fluent-folder-zip-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 4.207L6.646 6.561A1.5 1.5 0 0 1 5.586 7H1v4.5A2.5 2.5 0 0 0 3.5 14H10v-2h-.5a.5.5 0 0 1 0-1h.5v-1h-.5a.5.5 0 0 1 0-1h.5V7h-.5a.5.5 0 0 1-.5-.5zM11 14h1.5a2.5 2.5 0 0 0 2.5-2.5v-5A2.5 2.5 0 0 0 12.5 4H12v2.5a.5.5 0 0 1-.5.5H11v3h.5a.5.5 0 0 1 0 1H11zm0-10h-1v2h1zM3.5 2A2.5 2.5 0 0 0 1 4.5V6h4.586a.5.5 0 0 0 .353-.146L8 3.793L6.646 2.439A1.5 1.5 0 0 0 5.586 2z"></svg:path>`,
+})
+export class FluentFolderZip16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

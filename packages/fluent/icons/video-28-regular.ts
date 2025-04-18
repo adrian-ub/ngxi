@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentVideo28RegularIcon],svg[fluent-video-28-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.75 6A3.75 3.75 0 0 0 2 9.75v8.5A3.75 3.75 0 0 0 5.75 22h9.5A3.75 3.75 0 0 0 19 18.25v-.503l4.252 2.936c1.16.801 2.744-.03 2.744-1.44V8.753c0-1.41-1.584-2.242-2.744-1.44L19 10.249V9.75A3.75 3.75 0 0 0 15.25 6zM19 12.071l5.104-3.524a.25.25 0 0 1 .392.206v10.49a.25.25 0 0 1-.392.206L19 15.923zM3.5 9.75A2.25 2.25 0 0 1 5.75 7.5h9.5a2.25 2.25 0 0 1 2.25 2.25v8.5a2.25 2.25 0 0 1-2.25 2.25h-9.5a2.25 2.25 0 0 1-2.25-2.25z"></svg:path>`,
+})
+export class FluentVideo28RegularIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

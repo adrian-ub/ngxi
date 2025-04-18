@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[healthiconsBandagedOutline24pxIcon],svg[healthicons-bandaged-outline-24px-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16" clip-rule="evenodd"></svg:path><svg:path d="M9.487 12.9c.665-.486 1.517-.9 2.513-.9s1.848.414 2.513.9c.665.485 1.206 1.088 1.6 1.58a1.25 1.25 0 0 1-.024 1.595c-.322.382-.934.62-1.536.32l-1-.5c-.44-.22-.73-.31-.937-.352A3 3 0 0 0 12 15.5c-.248 0-.41.002-.616.043s-.497.132-.937.351l-1 .5a1.26 1.26 0 0 1-1.536-.32a1.25 1.25 0 0 1-.023-1.593c.393-.493.934-1.096 1.599-1.582m-2.149-2.641A1.5 1.5 0 1 0 9.911 8.8zm9.412-.508a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0"></svg:path><svg:path fill-rule="evenodd" d="M14.24 2.285a1.5 1.5 0 0 1 1.528.01l1.511.906a1.5 1.5 0 0 1-.032 2.592l-13.342 7.56c-1.098.622-2.427-.307-2.22-1.551l.29-1.735a1.5 1.5 0 0 1 .724-1.049zm.753 1.877L3.909 10.627l-.078.47l11.684-6.622z" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class HealthiconsBandagedOutline24pxIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

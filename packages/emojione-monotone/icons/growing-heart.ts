@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneMonotoneGrowingHeartIcon],svg[emojione-monotone-growing-heart-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M61.072 18.16c-6.395-16.918-27.154-9.328-29.074-.879c-2.64-9.004-22.89-15.72-29.07.891C-3.953 36.674 29.598 53.279 31.999 56c2.397-2.162 35.952-19.639 29.073-37.84M31.999 50.783c-2-2.143-29.959-15.213-24.225-29.777c5.148-13.074 22.023-7.787 24.225-.701c1.599-6.65 18.898-12.623 24.228.693c5.732 14.326-22.231 28.084-24.228 29.785"></svg:path><svg:path fill="currentColor" d="M49.227 24.799c-3.79-10.025-16.09-5.527-17.228-.521c-1.563-5.334-13.563-9.314-17.225.527c-4.078 10.967 15.803 20.805 17.225 22.416c1.422-1.282 21.305-11.637 17.228-22.422"></svg:path>`,
+})
+export class EmojioneMonotoneGrowingHeartIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

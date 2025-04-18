@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsTShirtIcon],svg[hugeicons-t-shirt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M5.998 12v5.684c0 1.811 0 2.717.585 3.28c.665.639 3.032 1.015 5.41 1.035c2.316.02 4.64-.297 5.41-1.035c.584-.563.584-1.469.584-3.28V12"></svg:path><svg:path d="M5.722 14.022c-.865-.314-2.492-.582-3.226-1.319c-1.01-1.013-.357-2.383.881-4.964c.557-1.162 1.624-2.017 2.867-2.354a.72.72 0 0 0 .412-.297l1.283-2a.45.45 0 0 1 .142-.137C8.659 2.602 10.092 2 11.993 2s3.24.602 3.817.95a.45.45 0 0 1 .142.139l1.32 1.98a.72.72 0 0 0 .412.297c1.243.338 2.261 1.084 2.819 2.246c1.39 2.53 2.008 4.059.997 5.072c-.733.736-2.383 1.028-3.248 1.341"></svg:path><svg:path d="m6.501 5.5l4.234 3.293c.606.471.909.707 1.266.707s.66-.236 1.267-.707L17.5 5.5M9.501 3l1.5 6m3.5-6l-1.5 6"></svg:path></svg:g>`,
+})
+export class HugeiconsTShirtIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

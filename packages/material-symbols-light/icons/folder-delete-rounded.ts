@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightFolderDeleteRoundedIcon],svg[material-symbols-light-folder-delete-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.616 19q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.611 5H8.92q.333 0 .635.13q.302.132.519.349L11.596 7h7.789q.69 0 1.153.463T21 8.616v8.769q0 .69-.462 1.153T19.385 19zm9.615-2.384h2.385q.496 0 .844-.348t.348-.845v-4.538h.365q.192 0 .317-.125q.126-.125.126-.317t-.126-.317t-.317-.126h-1.865v-.211q0-.162-.122-.283q-.12-.121-.282-.121h-.962q-.161 0-.283.12q-.12.122-.12.284V10h-1.866q-.192 0-.317.125t-.125.317t.125.317t.317.125h.365v4.539q0 .497.348.845q.348.347.845.347m-.308-5.73h3v4.538q0 .135-.087.221t-.22.087H14.23q-.135 0-.222-.087q-.086-.086-.086-.221z"></svg:path>`,
+})
+export class MaterialSymbolsLightFolderDeleteRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

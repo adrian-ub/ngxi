@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedBbankIcon],svg[token-branded-bbank-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#F26122" d="M4.91 3h1.637v10.907H4.91z"></svg:path><svg:path fill="#F6851F" d="M4.91 3h1.637v3.817S6.274 4.363 4.91 3"></svg:path><svg:path fill="#F26122" d="M19.09 13.907a7.09 7.09 0 0 1-6.15 7.03A7.089 7.089 0 0 1 6.548 9.381v4.526a5.453 5.453 0 1 0 1.636-3.894V7.93a7.09 7.09 0 0 1 10.906 5.977"></svg:path><svg:path fill="#F6851F" d="M19.088 13.907c0-4.614-5.59-6.686-9.358-4.963a5.5 5.5 0 0 0-1.548 1.074V7.935a7.09 7.09 0 0 1 10.906 5.972"></svg:path><svg:path fill="#F6851F" fill-rule="evenodd" d="m10.364 9.544l-1.636.818v4.09a3.272 3.272 0 1 0 1.636-2.835zm0 4.908a1.637 1.637 0 1 0 3.273 0a1.637 1.637 0 0 0-3.273 0" clip-rule="evenodd"></svg:path><svg:path fill="#F26122" d="m8.728 10.362l1.636-.818v2.073a3.256 3.256 0 0 1 4.292.927c-1.048 0-2.525-.055-3.474.49c-1.615.933-1.833 3.338-1.833 3.338a3.26 3.26 0 0 1-.621-1.92z"></svg:path></svg:g>`,
+})
+export class TokenBrandedBbankIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

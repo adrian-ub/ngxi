@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsDailypicIcon],svg[arcticons-dailypic-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M8.5 9.5h-1a2 2 0 0 0-2 2v28a2 2 0 0 0 2 2h33a2 2 0 0 0 2-2v-28a2 2 0 0 0-2-2h-1m-6 0h-19m22 3v-6m-25 6v-6"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M20.09 31.288A6.986 6.986 0 0 0 30.985 25.5m-3.079-5.792a6.986 6.986 0 0 0-10.89 5.792"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M29.906 25.5h-2.625l3.61-3.609L34.5 25.5h0zm-11.812.001h2.625l-3.61 3.609l-3.609-3.609z"></svg:path>`,
+})
+export class ArcticonsDailypicIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

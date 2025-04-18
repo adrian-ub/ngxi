@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icSharpEditLocationIcon],svg[ic-sharp-edit-location-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.11 1.77L19.78.1l2.12 2.12l-1.67 1.67zm-1 1l2.12 2.12L13.12 11H11V8.89zm-1.98-.13L9.5 8.27v4.24h4.24l5.62-5.62c.41.99.64 2.1.64 3.32c0 3.32-2.67 7.25-8 11.8c-5.33-4.55-8-8.48-8-11.8c0-4.98 3.8-8.2 8-8.2c1.09 0 2.16.22 3.13.63"></svg:path>`,
+})
+export class IcSharpEditLocationIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

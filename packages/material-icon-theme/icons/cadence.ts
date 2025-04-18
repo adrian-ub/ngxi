@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeCadenceIcon],svg[material-icon-theme-cadence-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#00e676" d="M14 12h6v-1a1 1 0 0 1 1-1h7V4h-6a8 8 0 0 0-8 8m6 0h6v6h-6zm-6 6v2.65A1.35 1.35 0 0 1 12.65 22h-1.3A1.35 1.35 0 0 1 10 20.65v-1.3A1.35 1.35 0 0 1 11.35 18zv-6h-2.65A7.35 7.35 0 0 0 4 19.35v1.3A7.35 7.35 0 0 0 11.35 28h1.3A7.35 7.35 0 0 0 20 20.65V18Z"></svg:path>`,
+})
+export class MaterialIconThemeCadenceIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

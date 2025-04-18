@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsAdobeAuditionIcon],svg[file-icons-adobe-audition-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M167.796 154.298c5.586 26.531 20.946 81.222 27.23 106.357h-53.528c9.31-35.142 21.644-79.826 26.298-106.357M512 0v512H0V0zM266.673 367.709l-73.968-249.018h-51.207c-.067 8.093-.624 15.525-2.327 21.41L73.769 367.71h39.157l18.798-69.818h72.843l19.394 69.818zm162.77-11.462c-.744-13.631-1.69-22.136-1.69-25.076V183.855h-39.331v147.781c-30.854 10.624-57.096 2.241-55.855-29.789V183.855H290.91v122.88c-1.028 74.08 68.934 77.908 138.535 49.512"></svg:path>`,
+})
+export class FileIconsAdobeAuditionIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

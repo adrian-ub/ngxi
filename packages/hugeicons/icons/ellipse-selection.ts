@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsEllipseSelectionIcon],svg[hugeicons-ellipse-selection-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 4.252A8.01 8.01 0 0 1 19.748 10M10 4.252A8.01 8.01 0 0 0 4.252 10m0 4A8.01 8.01 0 0 0 10 19.748m4 0A8.01 8.01 0 0 0 19.748 14m-9.455-8.293C10.586 6 11.057 6 12 6s1.414 0 1.707-.293m-3.414 0C10 5.414 10 4.943 10 4s0-1.414.293-1.707m0 3.414q0 0 0 0m3.414 0C14 5.414 14 4.943 14 4s0-1.414-.293-1.707m0 3.414q0 0 0 0m0-3.414C13.414 2 12.943 2 12 2s-1.414 0-1.707.293m3.414 0q0 0 0 0m-3.414 0q0 0 0 0m0 19.414C10.586 22 11.057 22 12 22s1.414 0 1.707-.293m-3.414 0C10 21.414 10 20.943 10 20s0-1.414.293-1.707m0 3.414q0 0 0 0m3.414 0C14 21.414 14 20.943 14 20s0-1.414-.293-1.707m0 3.414q0 0 0 0m0-3.414C13.414 18 12.943 18 12 18s-1.414 0-1.707.293m3.414 0q0 0 0 0m-3.414 0q0 0 0 0m8-8C18 10.586 18 11.057 18 12s0 1.414.293 1.707m0-3.414C18.586 10 19.057 10 20 10s1.414 0 1.707.293m-3.414 0q0 0 0 0m0 3.414C18.586 14 19.057 14 20 14s1.414 0 1.707-.293m-3.414 0q0 0 0 0m3.414 0C22 13.414 22 12.943 22 12s0-1.414-.293-1.707m0 3.414q0 0 0 0m0-3.414q0 0 0 0m-19.414 0C2 10.586 2 11.057 2 12s0 1.414.293 1.707m0-3.414C2.586 10 3.057 10 4 10s1.414 0 1.707.293m-3.414 0q0 0 0 0m0 3.414C2.586 14 3.057 14 4 14s1.414 0 1.707-.293m-3.414 0q0 0 0 0m3.414 0C6 13.414 6 12.943 6 12s0-1.414-.293-1.707m0 3.414q0 0 0 0m0-3.414q0 0 0 0" color="currentColor"></svg:path>`,
+})
+export class HugeiconsEllipseSelectionIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixAnomalyNoneIcon],svg[ix-anomaly-none-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m469.297 439.13l-30.167 30.167l-121.315-121.315C288.906 370.466 252.707 384 213.333 384c-94.104 0-170.666-76.562-170.666-170.667c0-94.104 76.562-170.666 170.666-170.666S384 119.229 384 213.333c0 39.374-13.534 75.573-36.018 104.482zM339.556 192C329.371 131.536 276.65 85.333 213.333 85.333S97.295 131.536 87.111 192zm0 42.667H87.111c10.184 60.464 62.906 106.666 126.222 106.666c63.317 0 116.038-46.202 126.223-106.666" clip-rule="evenodd"></svg:path>`,
+})
+export class IxAnomalyNoneIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

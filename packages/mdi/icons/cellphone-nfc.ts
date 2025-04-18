@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiCellphoneNfcIcon],svg[mdi-cellphone-nfc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 16v2a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7m0 4v3h3a3 3 0 0 0-3-3m0-8v2a9 9 0 0 1 9 9h2c0-6.08-4.92-11-11-11M17 1H7a2 2 0 0 0-2 2v7.37c.69.16 1.36.37 2 .63V5h10v13h-3.03c.53 1.25.84 2.59.95 4H17a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2"></svg:path>`,
+})
+export class MdiCellphoneNfcIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

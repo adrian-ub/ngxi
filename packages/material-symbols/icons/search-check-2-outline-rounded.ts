@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsSearchCheck2OutlineRoundedIcon],svg[material-symbols-search-check-2-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 16q2.5 0 4.25-1.75T16 10t-1.75-4.25T10 4T5.75 5.75T4 10t1.75 4.25T10 16m-1.05-5.3L7.525 9.3q-.3-.3-.7-.3t-.7.3t-.313.7t.288.7l2.125 2.125q.3.3.712.3t.713-.3L13.9 8.6q.3-.3.3-.713t-.3-.712t-.712-.3t-.713.3zM10 18q-3.35 0-5.675-2.325T2 10t2.325-5.675T10 2t5.675 2.325T18 10q0 1.4-.437 2.638T16.325 14.9l4.975 4.975q.3.3.3.713t-.3.712t-.712.3t-.713-.3L14.9 16.325q-1.025.8-2.262 1.238T10 18m0-8"></svg:path>`,
+})
+export class MaterialSymbolsSearchCheck2OutlineRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

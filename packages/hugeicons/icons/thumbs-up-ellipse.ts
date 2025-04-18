@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsThumbsUpEllipseIcon],svg[hugeicons-thumbs-up-ellipse-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"></svg:path><svg:path d="m13.153 8.786l-.178.557c-.146.456-.218.684-.162.864a.64.64 0 0 0 .28.354c.167.102.42.102.926.102h.27c1.713 0 2.57 0 2.974.492q.07.085.123.18c.312.548-.042 1.288-.75 2.767c-.65 1.357-.974 2.036-1.577 2.436a3 3 0 0 1-.18.109c-.635.353-1.422.353-2.995.353h-.34c-1.907 0-2.86 0-3.452-.557S7.5 14.99 7.5 13.198v-.63c0-.942 0-1.413.172-1.844s.502-.786 1.162-1.494l2.727-2.932a2 2 0 0 1 .133-.136a.704.704 0 0 1 .962.06c.027.028.055.07.113.15c.09.128.135.191.175.254c.351.564.458 1.234.297 1.87a5 5 0 0 1-.088.29"></svg:path></svg:g>`,
+})
+export class HugeiconsThumbsUpEllipseIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

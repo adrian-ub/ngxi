@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCloudOff20FilledIcon],svg[fluent-cloud-off-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.854 2.146a.5.5 0 1 0-.708.708l3.67 3.668a5.3 5.3 0 0 0-.463 1.724h-.07C3.468 8.246 2 9.758 2 11.623S3.47 15 5.282 15h9.01l2.854 2.854a.5.5 0 0 0 .708-.708zM18 11.623a3.4 3.4 0 0 1-1.452 2.804l-9.49-9.49C7.808 4.353 8.792 4 10 4c2.817 0 4.415 1.923 4.647 4.246h.07c1.814 0 3.283 1.512 3.283 3.377"></svg:path>`,
+})
+export class FluentCloudOff20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

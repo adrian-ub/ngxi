@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsSplashIcon],svg[game-icons-splash-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M135.563 17.5c-16.394-.215-25.532 15.656-25.532 15.656L63 144.562l26 15l72.97-96.406s15.012-26-10.97-41c-5.683-3.28-10.847-4.596-15.438-4.656zm219.656 13.22c-9.124.072-16.47 4.31-16.47 4.31L112.437 183l15 26L368.75 86.97S394.72 71.98 379.72 46c-7.033-12.18-16.452-15.346-24.5-15.28zM16 166v180a90 90 0 0 0 0-180m435 45l-315 30v30l315 30s45 0 45-45s-45-45-45-45m-323.563 92l-15 26L338.75 476.97s25.97 15.012 40.97-10.97s-10.97-40.97-10.97-40.97zM89 352.438l-26 15l47.03 111.406s14.99 25.97 40.97 10.97c25.982-15.002 10.97-40.97 10.97-40.97z"></svg:path>`,
+})
+export class GameIconsSplashIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsCreditsCurrencyIcon],svg[game-icons-credits-currency-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M224 22v63.46c-31.9 7.25-58.7 20.94-80.3 41.14c-33.7 31.5-50.53 74.7-50.53 129.6c0 54.3 16.53 97.3 49.63 129c21.9 20.9 49 35 81.2 42.1V492h64v-59.4c21.5-.6 42.3-3.2 62.7-7.9c23.5-5.3 56.3-13.2 78.2-23.9l-16-163.8H302l-36 58.8h69.6l8 66.2c-16.2 6.2-36.3 7.1-54.6 7.1c-33.5 0-59.4-9.8-77.7-29.5c-18.3-19.6-27.4-47.4-27.4-83.4c0-36.4 9.4-64.3 28.3-83.8c19-19.6 46-29.4 80.9-29.4c18.9 0 37.7 2.7 56.4 8c18.9 5.3 33.8 13.4 52.8 24.2l-8-72.5c-18.4-8.35-26-12.66-46.9-16.94c-18.9-3.94-38.7-6.06-59.4-6.38V22z"></svg:path>`,
+})
+export class GameIconsCreditsCurrencyIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

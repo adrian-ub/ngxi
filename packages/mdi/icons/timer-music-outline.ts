@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiTimerMusicOutlineIcon],svg[mdi-timer-music-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15 3H9V1h6zm-4 11h2V8h-2zm2.05 5.91Q12.54 20 12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7c3.17 0 5.85 2.11 6.71 5h2.06a9.05 9.05 0 0 0-1.74-3.61l1.42-1.42c-.45-.51-.9-.97-1.41-1.41L17.62 6c-1.55-1.26-3.5-2-5.62-2a9 9 0 0 0 0 18c.42 0 .83-.04 1.24-.09c-.15-.45-.24-.91-.24-1.41c0-.2.03-.39.05-.59M18.5 13v5.21a2.5 2.5 0 1 0-1 4.79a2.5 2.5 0 0 0 2.5-2.5V15h2v-2z"></svg:path>`,
+})
+export class MdiTimerMusicOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

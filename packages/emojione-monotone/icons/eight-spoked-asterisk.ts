@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneMonotoneEightSpokedAsteriskIcon],svg[emojione-monotone-eight-spoked-asterisk-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m62 32l-24.166-2.417l15.379-18.797l-18.797 15.38L32 2l-2.417 24.166l-18.797-15.38l15.38 18.797L2 32l24.166 2.416l-15.38 18.797l18.797-15.379L32 62l2.416-24.166l18.797 15.379l-15.379-18.797z"></svg:path>`,
+})
+export class EmojioneMonotoneEightSpokedAsteriskIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

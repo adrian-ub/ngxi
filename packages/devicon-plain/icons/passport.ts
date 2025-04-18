@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[deviconPlainPassportIcon],svg[devicon-plain-passport-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M64.402 0C36.004 0 13 22.913 13 51.2h25.7c0-14.133 11.517-25.602 25.702-25.602Zm51.401 51.2C115.803 22.914 92.8 0 64.402 0v25.598c14.185 0 25.7 11.469 25.7 25.603zm-51.401 51.202c28.397 0 51.401-22.914 51.401-51.201h-25.7c0 14.13-11.516 25.598-25.701 25.598Zm-25.701 0V51.2H13V128h51.402v-25.598zm0 0"></svg:path>`,
+})
+export class DeviconPlainPassportIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

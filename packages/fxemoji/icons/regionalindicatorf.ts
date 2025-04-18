@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fxemojiRegionalindicatorfIcon],svg[fxemoji-regionalindicatorf-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#132028" d="M496 496h-40v-16h24v-24h16zm-65.532-16h-68.085v16h68.085zm-93.617 0h-68.085v16h68.085zm-93.617 0h-68.085v16h68.085zm-93.617 0H81.532v16h68.085zM56 480H32v-24H16v40h40zM32 362.383H16v68.085h16zm0-93.617H16v68.085h16zm0-93.618H16v68.085h16zm0-93.616H16v68.085h16zM32 32h24V16H16v40h16zm398.468-16h-68.085v16h68.085zm-93.617 0h-68.085v16h68.085zm-93.617 0h-68.085v16h68.085zm-93.617 0H81.532v16h68.085zM496 16h-40v16h24v24h16zm0 346.383h-16v68.085h16zm0-93.617h-16v68.085h16zm0-93.617h-16v68.085h16zm0-93.617h-16v68.085h16zM338.398 123l4.84-33H169v332h42V274h110v-33H211V123z"></svg:path>`,
+})
+export class FxemojiRegionalindicatorfIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

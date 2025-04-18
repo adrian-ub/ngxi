@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[solarPillBoldIcon],svg[solar-pill-bold-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.99 3.99a6.796 6.796 0 0 0 0 9.612l2.564 2.563l.495-.095h.001l.014-.003l.074-.018q.103-.024.315-.091c.282-.09.697-.243 1.21-.49c1.024-.493 2.438-1.364 3.939-2.866c1.501-1.501 2.372-2.915 2.866-3.939c.247-.512.4-.928.49-1.21a5 5 0 0 0 .109-.389l.003-.014l.095-.496l-2.563-2.563a6.796 6.796 0 0 0-9.611 0m13.428 3.816l-.032.103c-.11.343-.288.824-.568 1.404c-.56 1.162-1.525 2.718-3.156 4.349s-3.187 2.597-4.349 3.157a11 11 0 0 1-1.507.599l2.591 2.59a6.796 6.796 0 1 0 9.611-9.61z"></svg:path>`,
+})
+export class SolarPillBoldIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

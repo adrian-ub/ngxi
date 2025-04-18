@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenNotesFill12Icon],svg[garden-notes-fill-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.46 6.24a.48.48 0 0 1-.32.15L6 6.56A.51.51 0 0 1 5.44 6l.17-3.17a.48.48 0 0 1 .15-.32L7.29 1H1.5a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V4.71zm-1.04-.82L7 5.5a.48.48 0 0 1-.5-.5l.08-1.42a.48.48 0 0 1 .13-.32L9.84.14a.46.46 0 0 1 .67 0l1.35 1.35a.46.46 0 0 1 0 .67L8.74 5.29a.48.48 0 0 1-.32.13"></svg:path>`,
+})
+export class GardenNotesFill12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

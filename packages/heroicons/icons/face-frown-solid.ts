@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[heroiconsFaceFrownSolidIcon],svg[heroicons-face-frown-solid-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75s9.75-4.365 9.75-9.75S17.385 2.25 12 2.25m-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866c.108.215.395.634.936.634c.54 0 .828-.419.936-.634c.13-.26.189-.568.189-.866s-.059-.605-.189-.866c-.108-.215-.395-.634-.936-.634m4.314.634c.108-.215.395-.634.936-.634c.54 0 .828.419.936.634c.13.26.189.568.189.866s-.059.605-.189.866c-.108.215-.395.634-.936.634c-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866m-4.34 7.964a.75.75 0 0 1-1.061-1.06a5.24 5.24 0 0 1 3.73-1.538a5.24 5.24 0 0 1 3.695 1.538a.75.75 0 1 1-1.061 1.06a3.74 3.74 0 0 0-2.639-1.098a3.74 3.74 0 0 0-2.664 1.098" clip-rule="evenodd"></svg:path>`,
 })
 export class HeroiconsFaceFrownSolidIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vsLSquareIcon],svg[vs-l-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M336 0h1120q139 0 237.5 98.5T1792 336v1120q0 139-98.5 237.5T1456 1792H336q-139 0-237.5-98.5T0 1456V336Q0 197 98.5 98.5T336 0m43 1419q0 31 22 52.5t53 21.5h884q31 0 53-21.5t22-52.5v-150q0-31-22-52.5t-53-21.5H678V373q0-31-22-52.5T603 299H454q-31 0-53 21.5T379 373z"></svg:path>`,
+})
+export class VsLSquareIcon {
+  readonly viewBox = input("0 0 1792 1792")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

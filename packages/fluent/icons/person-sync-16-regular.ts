@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSync16RegularIcon],svg[fluent-person-sync-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 10c0 1.803 1.555 3.653 4.222 3.957a5.5 5.5 0 0 1-.72-1.157C3.882 12.333 3 11.128 3 10v-.5a.5.5 0 0 1 .5-.5h1.707q.149-.524.393-1H3.5A1.5 1.5 0 0 0 2 9.5zm7.75-5.75q-.001.429-.124.82a5.5 5.5 0 0 0-1.385.414a1.75 1.75 0 1 0-.836.47a5.5 5.5 0 0 0-1.078.963A2.751 2.751 0 1 1 9.75 4.25M6 10.5a4.5 4.5 0 1 0 9 0a4.5 4.5 0 0 0-9 0m6.5-3a.5.5 0 0 1 .5.5v1.5a.5.5 0 0 1-.5.5H11a.5.5 0 0 1 0-1h.468a2 2 0 0 0-.933-.25a2 2 0 0 0-1.45.586a.5.5 0 0 1-.706-.707A3 3 0 0 1 12 8.152V8a.5.5 0 0 1 .5-.5m-.876 5.532A3 3 0 0 1 9 12.848V13a.5.5 0 0 1-1 0v-1.5a.5.5 0 0 1 .5-.5H10a.5.5 0 0 1 0 1h-.468a2 2 0 0 0 .933.25a2 2 0 0 0 1.45-.586a.5.5 0 0 1 .706.707c-.285.285-.624.51-.997.66"></svg:path>`,
+})
+export class FluentPersonSync16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsVideoCameraBackAddRoundedIcon],svg[material-symbols-video-camera-back-add-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18v-5.45q0-.5.438-.763t.937-.062q.4.125.8.2T5 12q2.075 0 3.538-1.463T10 7q0-.425-.075-.825t-.2-.8q-.175-.5.075-.937T10.55 4H16q.825 0 1.413.588T18 6v4.5l3.15-3.15q.25-.25.55-.125t.3.475v8.6q0 .35-.3.475t-.55-.125L18 13.5V18q0 .825-.587 1.413T16 20zm1-10q-.425 0-.712-.288T4 9V8H3q-.425 0-.712-.288T2 7t.288-.712T3 6h1V5q0-.425.288-.712T5 4t.713.288T6 5v1h1q.425 0 .713.288T8 7t-.288.713T7 8H6v1q0 .425-.288.713T5 10m1 6h8q.3 0 .45-.275t-.05-.525l-2.375-3.175q-.15-.2-.4-.2t-.4.2L9 15l-1.225-1.625q-.15-.2-.4-.2t-.4.2L5.6 15.2q-.2.25-.05.525T6 16"></svg:path>`,
+})
+export class MaterialSymbolsVideoCameraBackAddRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

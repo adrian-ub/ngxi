@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[makiConfectioneryIcon],svg[maki-confectionery-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 4a1 1 0 0 0-1-1a1 1 0 0 0-2 0v2.067A3.48 3.48 0 0 0 4.358 9H2a1 1 0 0 0 0 2a1 1 0 0 0 1 1a1 1 0 0 0 2 0V9.933A3.48 3.48 0 0 0 10.642 6H13a1 1 0 0 0 0-2M7.5 9.993a2.484 2.484 0 0 1-1.182-4.674a1.1 1.1 0 0 1 .546.307a2.12 2.12 0 0 1 .386 1.386l.001.956a2.58 2.58 0 0 0 .509 1.735a1.6 1.6 0 0 0 .26.233a2.5 2.5 0 0 1-.52.056m1.181-.312a1.1 1.1 0 0 1-.545-.307a2.12 2.12 0 0 1-.386-1.386l-.001-.956a2.58 2.58 0 0 0-.509-1.735a1.6 1.6 0 0 0-.26-.233A2.484 2.484 0 0 1 8.682 9.68"></svg:path>`,
+})
+export class MakiConfectioneryIcon {
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

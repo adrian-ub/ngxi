@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsCiliumIcon],svg[simple-icons-cilium-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M13.607 14.583h-3.215l-1.626-2.764l1.626-2.802h3.215l1.626 2.802zM14.186 8H9.799l-2.2 3.813l2.2 3.787h4.387l2.213-3.787zm-4.387 8.4l-2.2 3.813L9.799 24h4.387l2.213-3.787l-2.213-3.813zm-1.034 3.819l1.627-2.802h3.215l1.626 2.802l-1.626 2.765h-3.215zM9.799 0l-2.2 3.813l2.2 3.787h4.387l2.213-3.787L14.186 0zM8.765 3.819l1.627-2.802h3.215l1.626 2.802l-1.626 2.764h-3.215zm8.234 8.581l-2.2 3.813l2.2 3.787h4.388l2.213-3.787l-2.213-3.813zm-1.034 3.819l1.627-2.802h3.215l1.626 2.802l-1.626 2.765h-3.215zM16.999 4l-2.2 3.813l2.2 3.787h4.388L23.6 7.813L21.387 4zm-1.034 3.819l1.627-2.802h3.215l1.626 2.802l-1.626 2.764h-3.215zM2.599 12.4l-2.2 3.813L2.599 20h4.387l2.213-3.787L6.986 12.4zm-1.034 3.819l1.627-2.802h3.214l1.627 2.802l-1.627 2.765H3.192zM2.599 4l-2.2 3.813l2.2 3.787h4.387l2.213-3.787L6.986 4zM1.565 7.819l1.627-2.802h3.214l1.627 2.802l-1.627 2.764H3.192z"></svg:path>`,
 })
 export class SimpleIconsCiliumIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeNanoStagedLightIcon],svg[material-icon-theme-nano-staged-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#546e7a" d="M11.999 1.481A10.495 10.495 0 0 0 1.48 11.999c0 5.828 4.69 10.52 10.518 10.52c5.827 0 10.52-4.693 10.52-10.52a10.496 10.496 0 0 0-10.52-10.518zM7.953 6.899a.2.2 0 0 1 .109.028l5.662 3.27a.21.21 0 0 0 .212 0l2.002-1.157a.21.21 0 0 1 .317.18v7.67a.21.21 0 0 1-.317.183l-5.662-3.27a.21.21 0 0 0-.21 0l-2.004 1.16a.21.21 0 0 1-.315-.184V7.11a.21.21 0 0 1 .206-.21z"></svg:path>`,
+})
+export class MaterialIconThemeNanoStagedLightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

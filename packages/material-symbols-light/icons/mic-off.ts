@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightMicOffIcon],svg[material-symbols-light-mic-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m16.73 13.412l-.757-.796q.139-.287.227-.71t.089-.906h1q0 .754-.153 1.338t-.405 1.074m-3.489-3.5L9.29 5.919V5q0-.846.577-1.423Q10.442 3 11.289 3q.846 0 1.423.577T13.289 5v4.692q0 .064-.015.116t-.032.104M10.79 20.5v-3.485q-2.35-.234-3.925-1.947T5.289 11h1q0 2.075 1.462 3.538T11.289 16q1.08 0 2.016-.426t1.618-1.17l.714.713q-.725.787-1.713 1.28q-.987.494-2.135.619V20.5zm9.146.33L1.957 2.855l.708-.708l17.976 17.977z"></svg:path>`,
+})
+export class MaterialSymbolsLightMicOffIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

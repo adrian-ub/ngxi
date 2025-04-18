@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[phKnifeThinIcon],svg[ph-knife-thin-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M229 35a23.83 23.83 0 0 0-33.66 0L21.17 209.22a4 4 0 0 0 1.93 6.72A156.2 156.2 0 0 0 58.4 220c39.41 0 72.27-15.08 94.78-29.6c31.21-20.14 49.23-43 50-43.91a4 4 0 0 0-.32-5.29L179.67 118L229 68.63A23.84 23.84 0 0 0 229 35m-34.41 109.27a222.4 222.4 0 0 1-46 39.55c-37.85 24.35-77 33-116.55 25.81L146 95.67ZM223.38 63L174 112.36L151.66 90L201 40.62A15.8 15.8 0 0 1 223.38 63"></svg:path>`,
+})
+export class PhKnifeThinIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

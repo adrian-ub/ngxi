@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[laAlgoliaIcon],svg[la-algolia-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 5v22h22V5zm2 2h18v18H7zm8 1a1 1 0 0 0-1 1v1.295a6.96 6.96 0 0 1 4 0V9a1 1 0 0 0-1-1zm-4.293 2a1 1 0 0 0-.707.295L9.293 11a1 1 0 0 0 0 1.414l.816.818a7 7 0 0 1 2.121-2.12l-.816-.817a1 1 0 0 0-.707-.295M16 11a6 6 0 1 0 0 12a6 6 0 0 0 0-12m0 2c2.206 0 4 1.794 4 4s-1.794 4-4 4s-4-1.794-4-4s1.794-4 4-4m0 1v3l2.594-1.482A2.99 2.99 0 0 0 16 14"></svg:path>`,
+})
+export class LaAlgoliaIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

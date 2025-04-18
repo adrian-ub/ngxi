@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsPowerpcIcon],svg[file-icons-powerpc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M115.855 202.822L56.981 357.6H0l76.92-203.208h57.92c37.037 0 80.713 18.039 56.028 78.807c-24.684 60.774-57.921 69.32-84.512 69.32H88.318l17.091-47.476c18.992-.947 28.49-18.992 31.331-27.531c6.077-17.448.325-25.9-20.885-24.691m153.055.006l-58.862 154.779H153.06l76.919-203.208h57.927c37.03 0 80.713 18.039 56.022 78.807c-24.678 60.774-57.915 69.32-84.506 69.32H241.38l17.091-47.476c18.998-.947 28.49-18.991 31.337-27.531c4.951-15.187 3.055-26.144-20.897-24.691m77.086 51.312c-20.378 81.053 10.576 103.46 57.76 103.46h32.284l21.838-58.874h-38.93c-21.838 0-20.427-19.944-12.822-44.629zm63.682-10.006c9.704-20.978 27.439-41.312 51.053-41.312h34.177L512 154.399h-53.169c-30.916 0-85.86 6.585-110.13 89.717z"></svg:path>`,
+})
+export class FileIconsPowerpcIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

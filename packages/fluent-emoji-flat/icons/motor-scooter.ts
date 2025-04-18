@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatMotorScooterIcon],svg[fluent-emoji-flat-motor-scooter-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#433B6B" d="M6.5 30a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7m19 0a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7"></svg:path><svg:path fill="#F3EEF8" d="M6.5 28a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m19 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"></svg:path><svg:path fill="#F92F60" d="M12 11a2 2 0 1 0-4 0v13.517A2.483 2.483 0 0 0 10.483 27h9.752a.765.765 0 0 0 .765-.765V21h6a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3H14.5a.5.5 0 0 0-.5.5V18a2 2 0 0 0 2 2h.5a1.5 1.5 0 0 1 0 3h-3.833a.667.667 0 0 1-.667-.667z"></svg:path><svg:path fill="#636363" d="M9 10a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1"></svg:path><svg:path fill="#F9C23C" d="M8 14h.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H8z"></svg:path><svg:path fill="#CA0B4A" d="M22.5 20a3.5 3.5 0 1 0 0 7H29a1 1 0 0 0 1-1v-2.586A3.414 3.414 0 0 0 26.586 20zm-16 1C4.015 21 2 23.056 2 25.541c0 .251.204.459.455.459h8.09a.46.46 0 0 0 .455-.459C11 23.056 8.985 21 6.5 21"></svg:path><svg:path fill="#8C5543" d="M14 15.667c0-.92.746-1.667 1.667-1.667h5.666c.92 0 1.667.746 1.667 1.667c0 .184-.15.333-.333.333h-8.334a.333.333 0 0 1-.333-.333"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatMotorScooterIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

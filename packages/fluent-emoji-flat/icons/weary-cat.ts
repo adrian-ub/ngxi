@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatWearyCatIcon],svg[fluent-emoji-flat-weary-cat-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#FFB02E" d="M4 25.942C4 28.174 5.763 30 7.918 30h16.164C26.237 30 28 28.073 28 25.84V6.43c0-1.3-1.59-1.9-2.485-1L20.975 10h-9.812L6.5 5.43c-.9-.9-2.5-.3-2.5 1z"></svg:path><svg:path fill="#FF822D" d="m9 10.927l-2.8 2.6c-.5.5-1.4.1-1.4-.6v-5.2c0-.6.9-1 1.4-.5l2.8 2.6c.3.3.3.8 0 1.1m14.05 0l2.8 2.6c.5.5 1.4.1 1.4-.6v-5.2c0-.6-.9-1-1.4-.5l-2.8 2.6c-.3.3-.3.8 0 1.1"></svg:path><svg:path fill="#FF6723" d="M2.724 20.053a.5.5 0 1 0-.448.894l4 2a.5.5 0 1 0 .448-.894zm0 6.894a.5.5 0 1 1-.448-.894l4-2a.5.5 0 1 1 .448.894zm27.223-6.671a.5.5 0 0 0-.67-.223l-4 2a.5.5 0 1 0 .447.894l4-2a.5.5 0 0 0 .223-.67m-.67 6.67a.5.5 0 1 0 .447-.894l-4-2a.5.5 0 1 0-.448.894z"></svg:path><svg:path fill="#FF822D" d="M12 24v6H7.918C5.763 30 4 28.174 4 25.942V20a5 5 0 0 1 8 4m12.082 6H20v-6a5 5 0 0 1 8-4v5.84c0 2.233-1.763 4.16-3.918 4.16"></svg:path><svg:path fill="#F70A8D" d="M17.043 19h-2.086a.5.5 0 0 0-.353.854l1.043 1.042a.5.5 0 0 0 .707 0l1.043-1.042a.5.5 0 0 0-.354-.854"></svg:path><svg:path fill="#FFB02E" d="M7 20a4 4 0 0 0-4 4v6h8v-6a4 4 0 0 0-4-4m18 0a4 4 0 0 0-4 4v6h8v-6a4 4 0 0 0-4-4"></svg:path><svg:path fill="#BB1D80" d="M14 24a2 2 0 1 1 4 0v1a2 2 0 1 1-4 0z"></svg:path><svg:path fill="#fff" d="M11.5 19a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7m9 0a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7"></svg:path><svg:path fill="#FF6723" d="M5 20.535a4 4 0 0 1 1-.409V23.5a.5.5 0 0 1-1 0zm3-.409q.534.138 1 .41V23.5a.5.5 0 0 1-1 0zm15 .409a4 4 0 0 1 1-.409V23.5a.5.5 0 0 1-1 0zm3-.409q.534.138 1 .41V23.5a.5.5 0 0 1-1 0z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatWearyCatIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

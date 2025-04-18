@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiSoonArrowIcon],svg[openmoji-soon-arrow-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#3f3f3f" d="M15.74 31.83v-6.134h27.84v-8.433l12.66 11.5l-12.66 11.5V31.83z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.75 31.83h27.84v8.433l12.66-11.5l-12.66-11.5v8.433H15.75zm7.9 14.89a3.05 3.05 0 0 0-3.073-1.994v0c-1.732 0-3.137 1.118-3.137 2.498s1.404 2.498 3.137 2.498l-.064.01c1.733 0 3.137 1.117 3.137 2.497s-1.404 2.498-3.137 2.498v0a3.05 3.05 0 0 1-3.073-1.994m29.2 1.91v-10l7.14 10v-10M40.21 54.61a3.57 3.57 0 0 1-3.572-3.571v-2.857a3.57 3.57 0 0 1 3.572-3.571v0a3.57 3.57 0 0 1 3.571 3.571v2.857a3.57 3.57 0 0 1-3.571 3.571m-10 0a3.57 3.57 0 0 1-3.572-3.571v-2.857a3.57 3.57 0 0 1 3.572-3.571v0a3.57 3.57 0 0 1 3.571 3.571v2.857a3.57 3.57 0 0 1-3.571 3.571"></svg:path>`,
+})
+export class OpenmojiSoonArrowIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

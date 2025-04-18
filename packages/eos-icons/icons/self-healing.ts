@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[eosIconsSelfHealingIcon],svg[eos-icons-self-healing-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.048 11.769A8.2 8.2 0 0 1 5.73 5.722L8.167 8.17V2H2l2.276 2.262A10.271 10.271 0 0 0 10.214 22v-2.077a8.22 8.22 0 0 1-7.166-8.154M23 12.283A10.315 10.315 0 0 0 13.786 2v2.077a8.27 8.27 0 0 1 7.166 8.206a8.07 8.07 0 0 1-2.682 5.995l-2.484-2.448V22h6.19l-2.252-2.262A10.12 10.12 0 0 0 23 12.283"></svg:path><svg:path fill="currentColor" d="m12.29 16l-.537-.49c-1.91-1.732-3.172-2.875-3.172-4.277a2.02 2.02 0 0 1 2.04-2.04a2.22 2.22 0 0 1 1.67.775a2.22 2.22 0 0 1 1.669-.775a2.02 2.02 0 0 1 2.04 2.04c0 1.402-1.261 2.545-3.172 4.281Z"></svg:path>`,
+})
+export class EosIconsSelfHealingIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoEraserIcon],svg[entypo-eraser-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m16.998 4.18l-3.154-2.425a2.01 2.01 0 0 0-2.807.365l-8.4 10.897a2.003 2.003 0 0 0 .365 2.803l3.153 2.425a2.01 2.01 0 0 0 2.807-.365l8.401-10.897a2.003 2.003 0 0 0-.365-2.803m-8.45 12.287l-.537.681a.8.8 0 0 1-.639.31a.8.8 0 0 1-.485-.164l-3.153-2.425a.8.8 0 0 1-.303-.53a.8.8 0 0 1 .157-.589l.537-.681a.8.8 0 0 1 .64-.311c.124 0 .309.029.485.164l3.154 2.425a.8.8 0 0 1 .144 1.12"></svg:path>`,
+})
+export class EntypoEraserIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

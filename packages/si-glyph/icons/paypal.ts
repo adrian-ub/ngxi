@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphPaypalIcon],svg[si-glyph-paypal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="M9.875.074H3.639L.965 12.917h3.31l.942-3.019h4.658c2.272 0 4.116-2.035 4.116-4.543v-.907c0-2.509-1.844-4.374-4.116-4.374m.25 5.138c0 1.033-.87 1.87-1.373 1.87l-2.928.012l.832-4.129h2.096c.503 0 1.373.838 1.373 1.871z"></svg:path><svg:path d="M15.113 3.868c0 .77-.052 1.471-.052 2.11c0 3.211-1.308 5.104-4.222 5.104H6.557l-1.571 4.907h2.639l.943-3.021h4.281c2.273 0 4.115-1.721 4.115-4.213v-.902c.001-1.727-.549-3.226-1.851-3.985"></svg:path></svg:g>`,
+})
+export class SiGlyphPaypalIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}

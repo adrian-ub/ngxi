@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBoardHeart16FilledIcon],svg[fluent-board-heart-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.5 2v3H2v-.5A2.5 2.5 0 0 1 4.5 2zm1 0v4a3.54 3.54 0 0 1 2 .574a3.55 3.55 0 0 1 3.5-.212V4.5A2.5 2.5 0 0 0 11.5 2zm-1 4v.163a3.55 3.55 0 0 0-1.459.89a3.597 3.597 0 0 0 0 5.062l1.459 1.47V14h-3A2.5 2.5 0 0 1 2 11.5V6zm-.749 5.41l3.43 3.457a.45.45 0 0 0 .637 0l3.431-3.457A2.598 2.598 0 0 0 14 7.536a2.55 2.55 0 0 0-3.377.22l-.123.124l-.123-.123l-.075-.073A2.545 2.545 0 0 0 7.5 7.232a2.597 2.597 0 0 0-.749 4.178"></svg:path>`,
+})
+export class FluentBoardHeart16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

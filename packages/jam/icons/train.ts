@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamTrainIcon],svg[jam-train-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 15h8a2 2 0 0 0 2-2v-2H2v2a2 2 0 0 0 2 2m8.813 1.917A2 2 0 0 1 11.131 20H4.87a2 2 0 0 1-1.682-3.083A4 4 0 0 1 0 13V4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v9a4 4 0 0 1-3.187 3.917M14 9V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v5zm-2-6a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0V4a1 1 0 0 1 1-1M4 14a1 1 0 1 1 0-2a1 1 0 0 1 0 2m8 0a1 1 0 1 1 0-2a1 1 0 0 1 0 2m-7.131 4h6.262l-.666-1h-4.93z"></svg:path>`,
+})
+export class JamTrainIcon {
+  readonly viewBox = input("-4 -2 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

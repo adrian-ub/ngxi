@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsJvIcon],svg[circle-flags-jv-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsJv0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsJv0)"><svg:path fill="#ffda44" d="M0 0h512v512H0Z"></svg:path><svg:path fill="#d80027" d="m256 114l-6 2l-95 78c-4 3-4 9-1 13l102-33l102 33c3-4 3-10-1-13l-95-78z"></svg:path><svg:path fill="#eee" d="M278 231h-1zm-43 0"></svg:path><svg:path fill="#6da544" d="m256 134l-99 72l6 22l51-32l42 25l42-25l51 32l6-22z"></svg:path><svg:path fill="#333" d="m256 191l-28 60l-9-21l-10 21l-7-16l-10 21l-7-16l-13 27l14 23h140l14-23l-12-27l-8 16l-10-21l-7 16l-10-21l-9 21zm62 134"></svg:path><svg:path fill="#338af3" d="m183 290l11 32h124l11-32h-73z"></svg:path><svg:path fill="#eee" d="M256 129a4 4 0 0 0-2 1l-100 73a4 4 0 0 0-2 4l38 117a4 4 0 0 0 4 3h124a4 4 0 0 0 4-3l38-117a4 4 0 0 0-2-4l-100-73a4 4 0 0 0-2-1m0 9l95 70l-36 111H197l-36-111z"></svg:path><svg:rect width="9" height="142" x="252" y="170" fill="#ff9811" rx="4.5" ry="4.5"></svg:rect><svg:rect width="128" height="24" x="192" y="338" fill="#d80027" rx="12" ry="12"></svg:rect><svg:rect width="160" height="24" x="176" y="350" fill="#eee" rx="12" ry="12"></svg:rect><svg:path fill="#ffda44" d="m242 191l14-42l14 42l-36-26h44z"></svg:path></svg:g>`,
+})
+export class CircleFlagsJvIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

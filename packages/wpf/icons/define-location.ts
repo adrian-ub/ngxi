@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[wpfDefineLocationIcon],svg[wpf-define-location-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.906-.031a1 1 0 0 0-.125.031A1 1 0 0 0 12 1v1.063C6.737 2.54 2.54 6.737 2.062 12H1a1 1 0 0 0-.094 0A1.001 1.001 0 0 0 1 14h1.063c.477 5.263 4.674 9.46 9.937 9.938V25a1 1 0 1 0 2 0v-1.063c5.263-.477 9.46-4.674 9.938-9.937H25a1 1 0 1 0 0-2h-1.063C23.46 6.737 19.264 2.54 14 2.062V1a1 1 0 0 0-1.094-1.031M12 5.062V6a1 1 0 1 0 2 0v-.938A7.986 7.986 0 0 1 20.938 12H20a1 1 0 0 0-.094 0A1.001 1.001 0 0 0 20 14h.938A7.986 7.986 0 0 1 14 20.938V20a1 1 0 0 0-1.219-1A1 1 0 0 0 12 20v.938A7.986 7.986 0 0 1 5.062 14H6a1 1 0 1 0 0-2h-.938A7.986 7.986 0 0 1 12 5.062"></svg:path>`,
+})
+export class WpfDefineLocationIcon {
+  readonly viewBox = input("0 0 26 26")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

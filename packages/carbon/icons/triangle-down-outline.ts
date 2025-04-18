@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonTriangleDownOutlineIcon],svg[carbon-triangle-down-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m2.125 4.488l13.019 23.987A.98.98 0 0 0 16 29a.98.98 0 0 0 .856-.525L29.874 4.488A1 1 0 0 0 30 4c-.002-.523-.411-1-.98-1H2.98c-.569 0-.979.477-.98 1c0 .163.039.33.125.488M27.323 5L16 25.868L4.677 5z"></svg:path>`,
+})
+export class CarbonTriangleDownOutlineIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

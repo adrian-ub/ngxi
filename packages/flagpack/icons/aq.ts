@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[flagpackAqIcon],svg[flagpack-aq-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#5196ED" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path><svg:mask id="flagpackAq0" width="32" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance"><svg:path fill="#fff" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path></svg:mask><svg:g mask="url(#flagpackAq0)"><svg:path fill="#F5F8FB" fill-rule="evenodd" d="M8.717 7.894s2.064 1.132 2.352 1.445c.286.314.746 1.464 1.464.814c.717-.65 1.435-.145 1.435-1.181s1.07-3.44 2.625-2.838c1.554.603 2.832.226 3.19.467c.359.24 1.22 1.437 1.89 1.437s1.003.699 1.051 1.71c.048 1.013-.215 1.11.407 1.23s.86.579.55 1.18c-.31.603-.287.338-.24.965c.049.626-.62 4.321-2.678 4.683c-2.056.361-4.005.168-3.48-.53c.527-.7 1.255-1.503.18-1.672c-1.077-.169-1.755-.312-2.831-.023s-2.2.746-2.87-.12c-.67-.868-.526-1.495-1.076-1.905s-1.22-.337-.67-1.132s1.005-.498.55-1.125c-.454-.626-2.169-.9-2.169-1.525c0-.627-1.09-2 .32-1.88" clip-rule="evenodd"></svg:path></svg:g></svg:g>`,
+})
+export class FlagpackAqIcon {
+  readonly viewBox = input("0 0 32 24")
+  readonly width = input("1.34em")
+  readonly height = input("1em")
+}

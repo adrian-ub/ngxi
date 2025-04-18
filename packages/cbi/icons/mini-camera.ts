@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cbiMiniCameraIcon],svg[cbi-mini-camera-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15.23 2.25a4.13 4.13 0 0 1 4.14 4.13v5.86a4.14 4.14 0 0 1-4.14 4.14H9a4.14 4.14 0 0 1-4.14-4.14V6.38A4.13 4.13 0 0 1 9 2.25zm-2.84 9.17a2.11 2.11 0 1 0-2.1-2.11a2.1 2.1 0 0 0 2.1 2.11M12.27 17l4.79 4.93H7.18zm3-15.76H9a5.14 5.14 0 0 0-5.14 5.14v5.86A5.14 5.14 0 0 0 9 17.38h1.45l-4 3.85A1 1 0 0 0 7.18 23h9.88a1 1 0 0 0 .92-.61a1 1 0 0 0-.21-1.09L14 17.38h1.2a5.14 5.14 0 0 0 5.14-5.14V6.38a5.14 5.14 0 0 0-5.14-5.13Zm-2.84 9.17a1.11 1.11 0 1 1 1.07-1.1a1.11 1.11 0 0 1-1.11 1.11Z"></svg:path>`,
+})
+export class CbiMiniCameraIcon {
+  readonly viewBox = input("0 0 25 25")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

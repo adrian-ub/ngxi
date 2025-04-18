@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsEmojiAntIcon],svg[arcticons-emoji-ant-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m20.662 19.163l-8.194-3.796l-2.471-6.578M27.368 19.19l8.164-3.823l2.471-6.578M27.659 21.925l9.52.02l2.471-2.467m-19.263 2.447l-9.566.02l-2.472-2.467m13.248 3.379l-9.953 9.05l.824 6.579m14.009-15.664l10.702 9.086l-.823 6.578M22.01 10.433l-1.075-3.289l.824-1.644m3.889 4.933l1.074-3.289l-.824-1.644m-7.664 8.75c0 2.108 2.582 3.817 5.766 3.817s5.766-1.709 5.766-3.817s-2.581-3.817-5.766-3.817s-5.766 1.71-5.766 3.817"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19.881 20.711c0 1.46 1.844 2.643 4.119 2.643s4.119-1.183 4.119-2.643s-1.843-2.643-4.117-2.644c-2.275 0-4.12 1.182-4.12 2.642zm-1.647 12.216c0 5.287 2.582 9.573 5.766 9.573s5.766-4.286 5.766-9.573s-2.581-9.573-5.766-9.573s-5.766 4.286-5.766 9.573"></svg:path>`,
+})
+export class ArcticonsEmojiAntIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

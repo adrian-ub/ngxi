@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsQwantIcon],svg[simple-icons-qwant-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M9.313 5.163c4.289 0 7.766 2.589 7.766 7.616c0 4.759-3.072 7.301-7.003 7.59c1.87 1.142 4.693 1.143 6.45-.348l.547.297l-.615 3.074l-.226.285c-3.118.918-5.947-.099-7.921-3.329c-3.816-.37-6.765-2.9-6.765-7.568c0-5.03 3.477-7.617 7.766-7.617zm0 13.88c2.756 0 4.08-2.804 4.08-6.264s-1.148-6.264-4.08-6.264c-2.85 0-4.08 2.805-4.08 6.264s1.182 6.264 4.08 6.264m8.719-16.319L18.734 0h.263l.703 2.725l2.754.71v.248l-2.754.71l-.703 2.725h-.263l-.702-2.725l-2.696-.695V3.42z"></svg:path>`,
 })
 export class SimpleIconsQwantIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

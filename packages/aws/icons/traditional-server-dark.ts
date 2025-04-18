@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[awsTraditionalServerDarkIcon],svg[aws-traditional-server-dark-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FFF" fill-rule="evenodd" d="M15.437,21.52 L32.064,21.52 L32.064,19.52 L15.437,19.52 L15.437,21.52 Z M15.437,17.196 L32.064,17.196 L32.064,15.196 L15.437,15.196 L15.437,17.196 Z M15.437,12.762 L32.064,12.762 L32.064,10.762 L15.437,10.762 L15.437,12.762 Z M15.437,8.494 L32.064,8.494 L32.064,6.494 L15.437,6.494 L15.437,8.494 Z M13,44.013 L34.499,44.013 L34.499,4 L13,4 L13,44.013 Z M35.032,2 L12.468,2 C11.659,2 11,2.659 11,3.469 L11,44.545 C11,45.355 11.659,46.013 12.468,46.013 L35.032,46.013 C35.841,46.013 36.499,45.355 36.499,44.545 L36.499,3.469 C36.499,2.659 35.841,2 35.032,2 L35.032,2 Z"></svg:path>`,
+})
+export class AwsTraditionalServerDarkIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

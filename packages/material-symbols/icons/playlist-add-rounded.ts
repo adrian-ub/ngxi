@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsPlaylistAddRoundedIcon],svg[material-symbols-playlist-add-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 16q-.425 0-.712-.288T3 15t.288-.712T4 14h5q.425 0 .713.288T10 15t-.288.713T9 16zm0-4q-.425 0-.712-.288T3 11t.288-.712T4 10h9q.425 0 .713.288T14 11t-.288.713T13 12zm0-4q-.425 0-.712-.288T3 7t.288-.712T4 6h9q.425 0 .713.288T14 7t-.288.713T13 8zm13 12q-.425 0-.712-.288T16 19v-3h-3q-.425 0-.712-.288T12 15t.288-.712T13 14h3v-3q0-.425.288-.712T17 10t.713.288T18 11v3h3q.425 0 .713.288T22 15t-.288.713T21 16h-3v3q0 .425-.288.713T17 20"></svg:path>`,
+})
+export class MaterialSymbolsPlaylistAddRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

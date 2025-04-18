@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[bxGlobeAltIcon],svg[bx-globe-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 18.791V20H9v2h6v-2h-2v-1.845a9.9 9.9 0 0 0 3.071-2.084c3.898-3.898 3.898-10.243 0-14.143l-1.414 1.414c3.119 3.12 3.119 8.195 0 11.314s-8.195 3.12-11.314 0L1.929 16.07A9.97 9.97 0 0 0 9 18.994a10 10 0 0 0 2-.203"></svg:path><svg:path fill="currentColor" d="M3 9c0 3.309 2.691 6 6 6s6-2.691 6-6s-2.691-6-6-6s-6 2.691-6 6m10 0c0 2.206-1.794 4-4 4s-4-1.794-4-4s1.794-4 4-4s4 1.794 4 4"></svg:path>`,
+})
+export class BxGlobeAltIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

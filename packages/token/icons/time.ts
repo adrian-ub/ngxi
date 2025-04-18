@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenTimeIcon],svg[token-time-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 7.517C3 6.265 4.045 5.25 5.333 5.25h13.334C19.955 5.25 21 6.265 21 7.517v8.966c0 1.252-1.045 2.267-2.333 2.267H5.333C4.045 18.75 3 17.735 3 16.483zm2.333-1.72c-.976 0-1.769.771-1.769 1.72v8.967c0 .948.793 1.718 1.77 1.718h13.333c.976 0 1.769-.77 1.769-1.719V7.517c0-.95-.793-1.72-1.77-1.72z"></svg:path><svg:path fill="currentColor" d="M12 8.636a3.363 3.363 0 1 0 0 6.727a3.363 3.363 0 0 0 0-6.727M8.061 12a3.938 3.938 0 1 1 7.875 0a3.938 3.938 0 0 1-7.875 0"></svg:path><svg:path fill="currentColor" d="M11.718 10.875c.167 0 .281.135.281.302v1.386h1.386c.167 0 .302.114.302.28s-.135.282-.302.282h-1.948v-1.948c0-.167.115-.302.281-.302"></svg:path>`,
+})
+export class TokenTimeIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

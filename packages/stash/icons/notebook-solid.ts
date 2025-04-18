@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[stashNotebookSolidIcon],svg[stash-notebook-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.371 4.5c-.395 0-.736 0-1.017.023a2.3 2.3 0 0 0-.875.222a2.25 2.25 0 0 0-.984.984a2.3 2.3 0 0 0-.222.875c-.023.28-.023.622-.023 1.017v7.904c-.57.116-1 .62-1 1.225A2.75 2.75 0 0 0 5 19.5h14a2.75 2.75 0 0 0 2.75-2.75c0-.605-.43-1.11-1-1.225V7.621c0-.395 0-.736-.023-1.017a2.3 2.3 0 0 0-.222-.875a2.25 2.25 0 0 0-.983-.984a2.3 2.3 0 0 0-.876-.222c-.28-.023-.622-.023-1.017-.023zM3.775 17h5.164c.366.457.929.75 1.561.75h3c.632 0 1.195-.293 1.561-.75h5.164c-.116.57-.62 1-1.225 1H5a1.25 1.25 0 0 1-1.225-1"></svg:path>`,
+})
+export class StashNotebookSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

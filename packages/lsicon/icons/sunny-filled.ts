@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lsiconSunnyFilledIcon],svg[lsicon-sunny-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.5 3V1h1v2zm-4.146-.354l1.5 1.5l-.708.708l-1.5-1.5zm10 .708l-1.5 1.5l-.708-.708l1.5-1.5zM4.5 8a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0M3 8.5H1v-1h2zm12 0h-2v-1h2zM2.646 12.646l1.5-1.5l.708.708l-1.5 1.5zm10 .708l-1.5-1.5l.708-.708l1.5 1.5zM7.5 15v-2h1v2z" clip-rule="evenodd"></svg:path>`,
+})
+export class LsiconSunnyFilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

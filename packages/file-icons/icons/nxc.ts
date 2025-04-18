@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsNxcIcon],svg[file-icons-nxc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M342.352 55.717H0V459.32h342.352zM57.657 95.005h223.68V242.95H57.658zm46.152 272.558L42.27 330.958l61.54-38.12zm99.636 66.074h-71.04v-42.792h71.04zm0-65.95h-71.04v-73.643h71.04zm31.74-.124v-74.726l61.539 38.121zM251.45 0h73.428v33.591H251.45zM19.51 0h212.745v33.591H19.51zm305.368 480.446V512H17.474v-31.554z"></svg:path>`,
+})
+export class FileIconsNxcIcon {
+  readonly viewBox = input("0 0 343 512")
+  readonly width = input("0.67em")
+  readonly height = input("1em")
+}

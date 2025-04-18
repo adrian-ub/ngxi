@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherHailNight20FilledIcon],svg[fluent-weather-hail-night-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 16.667A.667.667 0 1 1 11 18a.667.667 0 0 1 0-1.333M8.667 16a.667.667 0 1 1 0 1.333a.667.667 0 0 1 0-1.333m4.666 0a.667.667 0 1 1 0 1.333a.667.667 0 0 1 0-1.333M11 6c2.465 0 3.863 1.574 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S16.714 15 15.128 15H6.872C5.286 15 4 13.763 4 12.237c0-1.47 1.192-2.671 2.697-2.758l.237-.005C7.139 7.561 8.535 6 11 6M5.843 2a4.24 4.24 0 0 1 1.895.565a4.24 4.24 0 0 1 1.979 2.573c-1.724.38-2.963 1.54-3.469 3.141l-.064.221l-.046.187l-.165.03a3.75 3.75 0 0 0-2.2 1.362a4.24 4.24 0 0 1-1.662-1.418a.63.63 0 0 1 .306-.948c1.376-.492 2.117-1.046 2.54-1.856c.463-.883.549-1.82.242-3.08a.628.628 0 0 1 .644-.776"></svg:path>`,
+})
+export class FluentWeatherHailNight20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

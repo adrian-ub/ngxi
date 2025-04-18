@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsRepeat16Icon],svg[qlementine-icons-repeat-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:g clip-path="url(#qlementineIconsRepeat160)"><svg:path fill="currentColor" d="M5.38 2c-1.28 0-2.06 0-2.7.224a4 4 0 0 0-2.45 2.45c-.225.642-.225 1.42-.224 2.7v2.12c0 1.93 1.57 3.5 3.5 3.5a.5.5 0 0 0 0-1a2.5 2.5 0 0 1-2.5-2.5v-2c0-1.44.007-2.03.168-2.49a3 3 0 0 1 1.84-1.84c.461-.161 1.05-.168 2.49-.168h5c1.44 0 2.03.007 2.49.168c.862.302 1.54.979 1.84 1.84c.161.461.168 1.05.168 2.49s-.007 2.03-.168 2.49a3 3 0 0 1-1.84 1.84c-.461.161-1.05.168-2.49.168h-2.79l2.15-2.15a.5.5 0 0 0-.707-.707l-3 3a.5.5 0 0 0 0 .707l3 3a.5.5 0 0 0 .707-.707l-2.15-2.15h2.91c1.28 0 2.06 0 2.7-.224a4 4 0 0 0 2.45-2.45c.225-.642.225-1.42.224-2.7v-.234c0-1.28 0-2.06-.224-2.7a4 4 0 0 0-2.45-2.45c-.642-.225-1.42-.225-2.7-.224h-5.23z"></svg:path></svg:g><svg:defs><svg:clippath id="qlementineIconsRepeat160"><svg:path fill="#000" d="M0 0h16v16H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
+})
+export class QlementineIconsRepeat16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

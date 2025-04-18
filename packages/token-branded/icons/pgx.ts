@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedPgxIcon],svg[token-branded-pgx-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#03EDAE" d="M3.483 16.006c.43-.5 1.753-1.104 4.063-1.104h4.21c3.076.006 9.23-1.532 9.23-6.565c.15-1.684-.836-5.045-6.003-5.045s-7.129 1.544-8.011 3.21L3.21 15.855a.153.153 0 0 0 .145.209a.17.17 0 0 0 .128-.058m5.323-4.378l1.295-3.593a.4.4 0 0 1 .07-.116c.348-.412 1.921-1.144 3.442-1.144h.075c1.951 0 3.826 0 3.826 1.521c0 1.544-2.246 3.123-5.062 3.123H9.956c-.442 0-.813.117-1.028.175z"></svg:path><svg:path fill="url(#tokenBrandedPgx0)" d="M8.423 20.105c-.307.697-.94.598-1.323.598c-3.483 0-4.18-1.358-4.093-2.043c.749-2.682 5.805-2.595 6.461-2.595c.528 0 .534.383.47.58z"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedPgx0" x1="5.277" x2="6.775" y1="16.338" y2="20.785" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#202D52"></svg:stop><svg:stop offset="1" stop-color="#05D8A8"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedPgxIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

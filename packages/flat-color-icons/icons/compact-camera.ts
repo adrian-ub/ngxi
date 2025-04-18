@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatColorIconsCompactCameraIcon],svg[flat-color-icons-compact-camera-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#607D8B" d="M40 39H8c-2.2 0-4-1.8-4-4V13c0-2.2 1.8-4 4-4h32c2.2 0 4 1.8 4 4v22c0 2.2-1.8 4-4 4"></svg:path><svg:circle cx="29" cy="24" r="12" fill="#455A64"></svg:circle><svg:circle cx="29" cy="24" r="9" fill="#42A5F5"></svg:circle><svg:path fill="#90CAF9" d="M33.8 21c-1.2-1.4-3-2.2-4.8-2.2s-3.6.8-4.8 2.2c-.5.5-.4 1.3.1 1.8s1.3.4 1.8-.1c1.5-1.7 4.3-1.7 5.8 0c.3.3.6.4 1 .4q.45 0 .9-.3c.4-.4.5-1.3 0-1.8"></svg:path><svg:path fill="#ADD8FB" d="M8 13h6v3H8z"></svg:path>`,
+})
+export class FlatColorIconsCompactCameraIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

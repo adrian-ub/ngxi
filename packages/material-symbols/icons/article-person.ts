@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsArticlePersonIcon],svg[material-symbols-article-person-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7 9h10V7H7zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v6.45q-.575-1.125-1.65-1.787T17 9q-1.125 0-2.1.525T13.275 11H7v2h5.525q-.05.5 0 1t.225 1H7v2h3.925q-.475.55-.7 1.213T10 19.6V21zm7 0v-1.4q0-.6.313-1.112t.887-.738q.9-.375 1.863-.562T17 17t1.938.188t1.862.562q.575.225.888.738T22 19.6V21zm5-5q-1.05 0-1.775-.725T14.5 13.5t.725-1.775T17 11t1.775.725t.725 1.775t-.725 1.775T17 16"></svg:path>`,
+})
+export class MaterialSymbolsArticlePersonIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

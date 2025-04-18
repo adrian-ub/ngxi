@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[whhWasherIcon],svg[whh-washer-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M832.417 1024h-768q-26 0-45-19t-19-45V320q0-26 19-45t45-19h768q27 0 45.5 19t18.5 45v640q0 27-18.5 45.5t-45.5 18.5m-384-640q-106 0-181 75t-75 181t75 181t181 75t181-75t75-181t-75-181t-181-75m0 448q-80 0-136-56t-56-136t56-136t136-56t136 56t56 136t-56 136t-136 56m384-640h-768q-26 0-45-19t-19-45V64q0-26 19-45t45-19h768q27 0 45.5 19t18.5 45v64q0 27-18.5 45.5t-45.5 18.5m-608-128h-64q-13 0-22.5 9.5t-9.5 22.5t9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5m128 0q-13 0-22.5 9.5t-9.5 22.5t9.5 22.5t22.5 9.5t22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5m128 0q-13 0-22.5 9.5t-9.5 22.5t9.5 22.5t22.5 9.5t22.5-9.5t9.5-22.5t-9.5-22.5t-22.5-9.5"></svg:path>`,
+})
+export class WhhWasherIcon {
+  readonly viewBox = input("0 0 897 1024")
+  readonly width = input("0.88em")
+  readonly height = input("1em")
+}

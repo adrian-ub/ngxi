@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[notoPlacardIcon],svg[noto-placard-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#A3673E" d="M76.1 124.17H59.47V4h11.96c.69 0 1.36.29 1.83.8l2.45 2.65c.25.27.39.62.39.99z"></svg:path><svg:path fill="#BF855E" d="M72.53 124.17H55.9V5.36c0-.75.61-1.36 1.36-1.36h13.91c.75 0 1.36.61 1.36 1.36z"></svg:path><svg:lineargradient id="notoPlacard0" x1="66" x2="66" y1="81.626" y2="96.647" gradientUnits="userSpaceOnUse"><svg:stop offset=".167" stop-color="#424242"></svg:stop><svg:stop offset=".944" stop-color="#424242" stop-opacity="0"></svg:stop></svg:lineargradient><svg:path fill="url(#notoPlacard0)" d="m76.1 83l-20.2.02v15L76.1 98z"></svg:path><svg:lineargradient id="notoPlacard1" x1="66" x2="66" y1=".007" y2="13.477" gradientTransform="rotate(180 66 11.51)" gradientUnits="userSpaceOnUse"><svg:stop offset=".232" stop-color="#424242"></svg:stop><svg:stop offset=".943" stop-color="#424242" stop-opacity="0"></svg:stop></svg:lineargradient><svg:path fill="url(#notoPlacard1)" d="M55.9 22.02L76.1 22V7l-20.2.02z"></svg:path><svg:lineargradient id="notoPlacard2" x1="63.5" x2="63.5" y1="90.335" y2="28.308" gradientUnits="userSpaceOnUse"><svg:stop offset=".373" stop-color="#9E9E9E"></svg:stop><svg:stop offset="1" stop-color="#BDBDBD"></svg:stop></svg:lineargradient><svg:path fill="url(#notoPlacard2)" d="M108.54 89.63H22.25c-.35 0-.69-.09-.99-.26l-3.97-2.23c-.52-.29-.85-.85-.85-1.45v-71.7c0-.54.44-.99.99-.99h89.1c.48 0 .96.16 1.34.45l1.89 1.45c.5.38.79.98.79 1.6v71.1c.01 1.13-.9 2.03-2.01 2.03"></svg:path><svg:path fill="#F5F5F5" d="M106.27 86.67H17.45c-.56 0-1.01-.45-1.01-1.01V14.01c0-.56.45-1.01 1.01-1.01h88.82c.56 0 1.01.45 1.01 1.01v71.65c0 .56-.45 1.01-1.01 1.01"></svg:path><svg:path fill="none" stroke="#616161" stroke-linecap="round" stroke-miterlimit="10" stroke-width="9" d="M40.24 38.25h43.04m-42.56 22.5h43.04"></svg:path><svg:lineargradient id="notoPlacard3" x1="61.861" x2="61.861" y1="23.216" y2="-6.021" gradientUnits="userSpaceOnUse"><svg:stop offset=".202" stop-color="#F5F5F5"></svg:stop><svg:stop offset="1" stop-color="#BDBDBD"></svg:stop></svg:lineargradient><svg:path fill="url(#notoPlacard3)" d="M106.31 26.56h-88.9a.97.97 0 0 1-.97-.97V13.97c0-.54.44-.97.97-.97h88.89c.54 0 .97.44.97.97v11.62c.01.54-.43.97-.96.97"></svg:path><svg:lineargradient id="notoPlacard4" x1="49.861" x2="49.861" y1="34.691" y2="5.454" gradientTransform="rotate(-90 49.86 49.835)" gradientUnits="userSpaceOnUse"><svg:stop offset=".507" stop-color="#BDBDBD" stop-opacity="0"></svg:stop><svg:stop offset="1" stop-color="#BDBDBD"></svg:stop></svg:lineargradient><svg:path fill="url(#notoPlacard4)" d="M30.01 13.99v71.69c0 .55-.44.99-.99.99H17.43c-.55 0-.99-.44-.99-.99V13.99c0-.55.44-.99.99-.99h11.59c.54 0 .99.44.99.99"></svg:path>`,
+})
+export class NotoPlacardIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

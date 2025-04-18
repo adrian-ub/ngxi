@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[bitcoinIconsLightningOutlineIcon],svg[bitcoin-icons-lightning-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="m18.496 10.709l-8.636 8.88c-.24.246-.638-.039-.482-.345l3.074-6.066a.3.3 0 0 0-.268-.436H5.718a.3.3 0 0 1-.214-.51l8.01-8.115c.232-.235.618.023.489.328L11.706 9.86a.3.3 0 0 0 .28.417l6.291-.078a.3.3 0 0 1 .22.509Z"></svg:path>`,
+})
+export class BitcoinIconsLightningOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

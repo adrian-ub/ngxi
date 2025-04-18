@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsSheinIcon],svg[arcticons-shein-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M11.553 39.113c2.44 2.924 5.37 4.387 9.763 4.387h5.857c5.37 0 9.762-4.387 9.762-9.75S32.542 24 27.173 24h-6.345c-5.37 0-9.763-4.387-9.763-9.75s4.393-9.75 9.763-9.75h5.857c4.393 0 7.321.975 9.762 4.388"></svg:path>`,
+})
+export class ArcticonsSheinIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilWcIcon],svg[cil-wc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M132 139.824a61.912 61.912 0 1 0-61.912-61.912A61.98 61.98 0 0 0 132 139.824M132 48a29.912 29.912 0 1 1-29.912 29.912A29.947 29.947 0 0 1 132 48m44 104H88a48.053 48.053 0 0 0-48 48v152h32v144h120V352h32V200a48.053 48.053 0 0 0-48-48m16 168h-32v144h-56V320H72V200a16.02 16.02 0 0 1 16-16h88a16.02 16.02 0 0 1 16 16Zm178.088-180.176a61.912 61.912 0 1 0-61.912-61.912a61.98 61.98 0 0 0 61.912 61.912m0-91.824a29.912 29.912 0 1 1-29.912 29.912A29.947 29.947 0 0 1 370.088 48m55.671 145.354a61.586 61.586 0 0 0-115.833-1.392L248 357.1V400h64v96h104v-96h64v-50.7ZM448 368h-64v96h-40v-96h-64v-5.1l59.889-159.7a29.585 29.585 0 0 1 55.645.669L448 354.7Z"></svg:path>`,
+})
+export class CilWcIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

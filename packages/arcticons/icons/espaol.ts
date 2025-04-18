@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsEspaolIcon],svg[arcticons-espaol-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M9.378 6.375V39.18a1.875 1.875 0 0 0 1.875 1.875h2.184V4.5h-2.184a1.875 1.875 0 0 0-1.875 1.875"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M13.437 4.5v36.555h23.31a1.875 1.875 0 0 0 1.875-1.875V6.375A1.875 1.875 0 0 0 36.747 4.5Zm4.973 36.865V43.5l-1.412-.593l-1.607.593h0v-2.135m10.142-.023v2.135l-1.413-.593l-1.606.593h0v-2.135"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M17.361 8.901H33.27V19.56H17.361zm.026 2.863h15.909m-15.909 4.962h15.909"></svg:path>`,
+})
+export class ArcticonsEspaolIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

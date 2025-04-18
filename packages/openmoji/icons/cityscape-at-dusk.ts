@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiCityscapeAtDuskIcon],svg[openmoji-cityscape-at-dusk-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#e27022" d="M4 3.898h64V68H4z"></svg:path><svg:path fill="#9b9b9a" d="M9.923 46V29h10v17m14-13h13v35h-13z"></svg:path><svg:path fill="#d0cfce" d="M50.923 68V37h16v31m-62 0V46h34v22"></svg:path><svg:path fill="#fcea2b" d="M8.923 49.004h2.991v5.997H8.923zm6 0h2.991v5.997h-2.991zm12 0h2.991v5.997h-2.991zm6 0h2.991v5.997h-2.991zm22-9h2.991v5.997h-2.991zm6 10h2.991v5.997h-2.991zm0 10h2.991v5.997h-2.991zm-6 0h2.991v5.997h-2.991zm-22-1h2.991v5.997h-2.991zm-12 0h2.991v5.997h-2.991zm-12 0h2.991v5.997H8.923z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M50.924 66.629v-30h16v30m-62 0v-21h34v21"></svg:path><svg:path d="M34.924 42.629v-10h12v34m-36-24v-14h8v14m38 3h-2v-5m8 15h-2v-5m-32 4h-2v-5m8 5h-2v-5m2 15h-2v-5m-16-5h-2v-5m-4 5h-2v-5m2 15h-2v-5m14 5h-2v-5m36 6h-2v-5m8 5h-2v-5m-46-29v11m24-7v7m4-7v31"></svg:path></svg:g>`,
+})
+export class OpenmojiCityscapeAtDuskIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

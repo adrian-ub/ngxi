@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiRollerCoasterIcon],svg[openmoji-roller-coaster-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#fcea2b" d="M39.478 16.493c5.549-3.93 8.754-.634 8.754-.634c.962.84 1.066 2.3.232 3.267L38.498 30.62a2.323 2.323 0 0 1-3.267.233l-3.713-3.22a2.323 2.323 0 0 1-.233-3.267l1.631-1.882l3.235 2.805l5.811-6.703z"></svg:path><svg:path fill="#f4aa41" d="M45.966 22.194L38.86 30.39a2.323 2.323 0 0 1-3.267.233l-3.713-3.22a2.323 2.323 0 0 1-.233-3.267l1.632-1.882l3.234 2.804l2.417-2.788"></svg:path><svg:path fill="#ea5a47" d="m14.271 50.034l-6.405-2.562v16.421h6.405z"></svg:path><svg:path fill="#d22f27" d="M10.38 49.63v14.083h3.203V50.9z"></svg:path><svg:path fill="#ea5a47" d="m30.613 48.78l-6.405 1.693v13.42h6.405z"></svg:path><svg:path fill="#d22f27" d="M27.41 50.111v13.083h3.203V48.78z"></svg:path><svg:path fill="#ea5a47" d="m48.353 36.383l-6.405 6.413v21.139h6.405z"></svg:path><svg:path fill="#d22f27" d="M44.515 40.249v23.195h3.203V37.986z"></svg:path><svg:path fill="#ea5a47" d="m64.822 11.896l-6.405 10.482v41.515h6.405z"></svg:path><svg:path fill="#d22f27" d="M61.62 17.866v45.492h3.202V13.565z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M62.359 6.195S36.534 62.135 7.178 42.17"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m47.718 36.383l-6.405 6.413v21.139h6.405zM30.613 48.78l-6.405 1.693v13.42h6.405zm-17.03 1.254l-6.405-2.562v16.421h6.405zM39.86 16.45c5.55-3.93 8.755-.634 8.755-.634c.963.84 1.066 2.3.232 3.267l-9.966 11.495a2.323 2.323 0 0 1-3.267.233l-3.713-3.22a2.323 2.323 0 0 1-.233-3.267l1.632-1.882l3.234 2.804l5.812-6.703z"></svg:path><svg:circle cx="48.575" cy="20.77" r="1.55"></svg:circle><svg:circle cx="46.884" cy="22.991" r="1.55"></svg:circle><svg:circle cx="40.021" cy="30.636" r="1.55"></svg:circle><svg:circle cx="42.21" cy="28.608" r="1.55"></svg:circle><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m64.822 11.896l-6.405 10.482v41.515h6.405z"></svg:path>`,
+})
+export class OpenmojiRollerCoasterIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

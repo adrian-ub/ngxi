@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsApartmentIcon],svg[lineicons-apartment-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M56 1.8H33.5c-3.4 0-6.2 2.8-6.2 6.3V12H8c-3.4 0-6.3 2.8-6.3 6.3V56c0 3.4 2.8 6.3 6.3 6.3h48c3.4 0 6.3-2.8 6.3-6.3V8c0-3.4-2.9-6.2-6.3-6.2m-28.8 56H8c-1 0-1.8-.8-1.8-1.8V18.2c0-1 .8-1.8 1.8-1.8h19.2zM57.8 56c0 1-.8 1.8-1.8 1.8H31.7V8c0-1 .8-1.8 1.7-1.8H56c1 0 1.8.8 1.8 1.8z"></svg:path><svg:path fill="currentColor" d="M14 28.1h5.6c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3H14c-1.2 0-2.3 1-2.3 2.3s1.1 2.3 2.3 2.3m0 11.2h5.6c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3H14c-1.2 0-2.3 1-2.3 2.3s1.1 2.3 2.3 2.3m-.1 11.3h5.6c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3h-5.6c-1.2 0-2.3 1-2.3 2.3s1.1 2.3 2.3 2.3m33.7-35.9H42c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h5.6c1.2 0 2.3-1 2.3-2.3s-1.1-2.3-2.3-2.3m0 14.4H42c-1.2 0-2.3 1-2.3 2.3c0 1.2 1 2.3 2.3 2.3h5.6c1.2 0 2.3-1 2.3-2.3c-.1-1.3-1.1-2.3-2.3-2.3m-.1 14.4h-5.6c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h5.6c1.2 0 2.3-1 2.3-2.3s-1.1-2.3-2.3-2.3"></svg:path>`,
+})
+export class LineiconsApartmentIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

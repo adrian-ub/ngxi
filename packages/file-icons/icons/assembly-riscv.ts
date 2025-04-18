@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsAssemblyRiscvIcon],svg[file-icons-assembly-riscv-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M379.115 222.47h-39.392v-47.956h39.392zM0 414.325l72.881 4.572v-34.1L0 388.701zm0-98.177l72.881 4.572v-34.1L0 290.523zm460.02-123.802l-72.881-3.903v34.1l72.881-4.572zM0 217.97l72.881 4.573v-34.1l-72.88 3.903zM379.115 76.337h-39.392v61.956h39.392zM460.02 94.17l-72.88-3.904l-.001 34.1l72.881-4.572zM81.574 138.293h43.945V76.337H81.574zm0 98.177h43.945v-61.955H81.573zM0 119.793l72.881 4.572v-34.1L.001 94.168zm250.64 115.972h80.345V62.915c0-10.808-8.761-19.57-19.57-19.57H152.592c-10.808 0-19.57 8.762-19.57 19.57v386.17c0 10.808 8.762 19.57 19.57 19.57h98.05zM81.573 334.648h43.946v-61.956H81.573zm0 98.177h43.946V370.87H81.573zm267.016-197.06H512v60.518L404.762 447.11l-56.173-66.673c81.507-9.39 81.928-138.863 0-144.672m81.367 232.89H512V353.736zm-97.725-119.023h-38.806v16.428l84.802 102.595H279.11V268.583h53.121c57.576 0 57.576 81.05 0 81.05"></svg:path>`,
+})
+export class FileIconsAssemblyRiscvIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiRadioactiveWasteIcon],svg[openmoji-radioactive-waste-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#fcea2b" d="M20.684 12.084h29.619v48.13H20.684z"></svg:path><svg:path fill="#f1b31c" d="M40.431 12.084h10.018v48.13H40.431z"></svg:path><svg:g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path fill="none" d="M19.178 60.214h32.358m0-48.537H19.178m18.098-1.463h5.393m-23.491 1.463c1.735 1.657 2.173 4.561 2.173 7.868c0 3.625-.154 6.766-2.173 8.31m0 .001c1.735 1.657 2.173 4.561 2.173 7.869c0 3.624-.154 6.765-2.173 8.31"></svg:path><svg:path fill="none" d="M19.178 44.035c1.735 1.657 2.173 4.562 2.173 7.869c0 3.624-.154 6.765-2.173 8.31m32.358-48.537c-1.735 1.657-2.173 4.561-2.173 7.868c0 3.625.155 6.766 2.173 8.31m0 .001c-1.735 1.657-2.173 4.561-2.173 7.869c0 3.624.155 6.765 2.173 8.31"></svg:path><svg:path fill="none" d="M51.536 44.035c-1.735 1.657-2.173 4.562-2.173 7.869c0 3.624.155 6.765 2.173 8.31"></svg:path><svg:path d="M36.727 35.489a1.233 1.233 0 1 1-.617-1.069a1.23 1.23 0 0 1 .617 1.069m-6.17 0a4.93 4.93 0 0 1 2.467-4.276l-2.468-4.276a9.87 9.87 0 0 0-4.936 8.552Zm7.405 4.275a4.94 4.94 0 0 1-4.938 0l-2.468 4.276a9.89 9.89 0 0 0 9.874 0Zm0-8.551a4.93 4.93 0 0 1 2.467 4.276h4.937a9.87 9.87 0 0 0-4.936-8.552Z"></svg:path></svg:g>`,
+})
+export class OpenmojiRadioactiveWasteIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

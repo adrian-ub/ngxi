@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoPaletteIcon],svg[entypo-palette-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15.74 2.608c-3.528-1.186-7.066-.961-10.72 1.274C2.167 5.625.302 9.958.917 13.064c.728 3.671 4.351 5.995 9.243 4.651c5.275-1.449 6.549-4.546 6.379-5.334s-2.665-1.652-1.718-3.498c1.188-2.313 3.129-1.149 3.982-1.622c.855-.472.539-3.442-3.063-4.653m-3.646 10.706a1.504 1.504 0 0 1-1.843-1.059a1.5 1.5 0 0 1 1.046-1.849a1.503 1.503 0 0 1 1.843 1.059a1.5 1.5 0 0 1-1.046 1.849"></svg:path>`,
+})
+export class EntypoPaletteIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

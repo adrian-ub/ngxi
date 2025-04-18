@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cryptocurrencyDltIcon],svg[cryptocurrency-dlt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16s-7.163 16-16 16m-.193-23.042a.24.24 0 0 1 .222-.143c.094 0 .18.057.22.145l6.29 13.695a.88.88 0 0 0 .794.516h.084a.57.57 0 0 0 .548-.423a.96.96 0 0 0-.058-.666L16.614 6.83a.5.5 0 0 0-.135-.171a.69.69 0 0 0-.892.008a1.25 1.25 0 0 0-.313.411l-7.19 15.148a.874.874 0 0 0 .29 1.09l.056.04c.138.094.3.144.466.144h10.752a.96.96 0 0 0 .835-.495a.64.64 0 0 0 .031-.56l-.01-.025a.73.73 0 0 0-.674-.455H9.713z"></svg:path>`,
+})
+export class CryptocurrencyDltIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

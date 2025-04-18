@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[faBrandsDyalogIcon],svg[fa-brands-dyalog-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 32v119.2h64V96h107.2C284.6 96 352 176.2 352 255.9C352 332 293.4 416 171.2 416H0v64h171.2C331.9 480 416 367.3 416 255.9c0-58.7-22.1-113.4-62.3-154.3C308.9 56 245.7 32 171.2 32z"></svg:path>`,
+})
+export class FaBrandsDyalogIcon {
+  readonly viewBox = input("0 0 416 512")
+  readonly width = input("0.82em")
+  readonly height = input("1em")
+}

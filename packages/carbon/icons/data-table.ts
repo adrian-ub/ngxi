@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonDataTableIcon],svg[carbon-data-table-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 18h4v2H8zm6 0h4v2h-4zm-6-4h4v2H8zm6 8h4v2h-4zm6-8h4v2h-4zm0 8h4v2h-4z"></svg:path><svg:path fill="currentColor" d="M27 3H5a2.003 2.003 0 0 0-2 2v22a2.003 2.003 0 0 0 2 2h22a2.003 2.003 0 0 0 2-2V5a2.003 2.003 0 0 0-2-2m0 2v4H5V5ZM5 27V11h22v16Z"></svg:path>`,
+})
+export class CarbonDataTableIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

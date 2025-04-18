@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkPrescriptionIcon],svg[icon-park-prescription-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke-width="4"><svg:path fill="#2F88FF" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" d="M8 8C8 6.89543 8.89543 6 10 6H27V18H40V40C40 41.1046 39.1046 42 38 42H10C8.89543 42 8 41.1046 8 40V8Z" clip-rule="evenodd"></svg:path><svg:path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M27 6L40 18"></svg:path><svg:path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M27.0244 6V18.0818H39.9996"></svg:path><svg:path stroke="#fff" stroke-linecap="round" d="M14 30H26"></svg:path><svg:path stroke="#fff" stroke-linecap="round" d="M20 24V36"></svg:path></svg:g>`,
+})
+export class IconParkPrescriptionIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

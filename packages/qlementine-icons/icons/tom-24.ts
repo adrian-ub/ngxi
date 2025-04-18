@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsTom24Icon],svg[qlementine-icons-tom-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 12.5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0zm-7 0a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M1 5.5v13C1 20.99 5.92 23 12 23s11-2.01 11-4.5v-13C23 3.01 18.08 1 12 1S1 3.01 1 5.5m21 0c0 .266-.128.615-.56 1.03c-.435.421-1.12.846-2.04 1.22c-1.84.754-4.46 1.24-7.4 1.24s-5.56-.489-7.4-1.24c-.924-.378-1.61-.803-2.04-1.22C2.128 6.112 2 5.763 2 5.5s.128-.615.56-1.03c.435-.421 1.12-.846 2.04-1.22c1.84-.754 4.46-1.24 7.4-1.24s5.56.489 7.4 1.24c.924.378 1.61.803 2.04 1.22c.432.418.56.767.56 1.03m-20 13V7.4c1.74 1.55 5.56 2.62 10 2.62s8.26-1.07 10-2.62v11.1c0 .266-.128.615-.56 1.03c-.435.421-1.12.846-2.04 1.22c-1.84.754-4.46 1.24-7.4 1.24s-5.56-.49-7.4-1.24c-.924-.378-1.61-.803-2.04-1.22c-.432-.418-.56-.767-.56-1.03" clip-rule="evenodd"></svg:path>`,
+})
+export class QlementineIconsTom24Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

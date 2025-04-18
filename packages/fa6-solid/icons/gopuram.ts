@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fa6SolidGopuramIcon],svg[fa6-solid-gopuram-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M120 0c13.3 0 24 10.7 24 24v8h40v-8c0-13.3 10.7-24 24-24s24 10.7 24 24v8h48v-8c0-13.3 10.7-24 24-24s24 10.7 24 24v8h40v-8c0-13.3 10.7-24 24-24s24 10.7 24 24v104c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32v96c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32h-64V352h-32V224h-32v-96h-32v96h32v128h32v160h-80v-48c0-26.5-21.5-48-48-48s-48 21.5-48 48v48h-80V352h32V224h32v-96h-32v96h-32v128H96v160H32c-17.7 0-32-14.3-32-32v-96c0-17.7 14.3-32 32-32v-96c0-17.7 14.3-32 32-32v-64c0-17.7 14.3-32 32-32V24c0-13.3 10.7-24 24-24m136 272c-17.7 0-32 14.3-32 32v48h64v-48c0-17.7-14.3-32-32-32m-32-80v32h64v-32c0-17.7-14.3-32-32-32s-32 14.3-32 32"></svg:path>`,
+})
+export class Fa6SolidGopuramIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

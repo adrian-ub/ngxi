@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLight3dRoundedIcon],svg[material-symbols-light-3d-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 14.692h3.096q.532 0 .91-.378q.379-.379.379-.91v-2.808q0-.531-.379-.91q-.378-.378-.91-.378H13zm.885-.884v-3.616h2.211q.162 0 .283.122q.121.12.121.282v2.808q0 .162-.121.283t-.283.12zm-4.039.884q.327 0 .548-.22q.221-.222.221-.549v-1.346q0-.245-.166-.411q-.165-.166-.41-.166q.245 0 .41-.166q.166-.166.166-.411v-1.346q0-.327-.22-.548q-.222-.221-.549-.221H7.173q-.191 0-.317.125q-.125.125-.125.316q0 .192.125.317q.126.126.317.126h2.558v1.366H8.173q-.191 0-.317.125q-.125.125-.125.316q0 .192.125.317q.126.126.317.126h1.558v1.366H7.173q-.191 0-.317.125q-.125.125-.125.316q0 .192.125.317q.126.126.317.126zM4.616 19q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v10.769q0 .69-.463 1.153T19.385 19z"></svg:path>`,
+})
+export class MaterialSymbolsLight3dRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

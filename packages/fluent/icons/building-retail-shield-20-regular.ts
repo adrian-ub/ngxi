@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBuildingRetailShield20RegularIcon],svg[fluent-building-retail-shield-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.5 3A1.5 1.5 0 0 0 3 5.915V16.5a.5.5 0 0 0 .5.5H10v-4.5a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 0-.5.5V16H4V6h12v2.405q.078.062.15.134c.223.229.513.49.85.729V5.915A1.5 1.5 0 0 0 16.5 3zM3 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M9 16H6v-3h3zm6-7.937V7.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h4.583c.185-.528.65-.885 1.14-1H6V8h8v.405a1.6 1.6 0 0 1 1-.342m3.501 2.902c-1.37-.193-2.486-1.134-3.066-1.726a.624.624 0 0 0-.87 0c-.58.592-1.695 1.533-3.066 1.726c-.274.038-.499.259-.499.535V14c0 3.468 3.182 4.727 3.87 4.959a.4.4 0 0 0 .26 0C15.818 18.727 19 17.469 19 14v-2.5c0-.276-.225-.497-.499-.535"></svg:path>`,
+})
+export class FluentBuildingRetailShield20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

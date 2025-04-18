@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBrightnessLow48FilledIcon],svg[fluent-brightness-low-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M25.25 8.25a1.25 1.25 0 1 0-2.5 0v2.5a1.25 1.25 0 0 0 2.5 0zm8.771 15.796c0 5.509-4.466 9.975-9.975 9.975c-5.51 0-9.975-4.466-9.975-9.975c0-5.51 4.466-9.976 9.975-9.976c5.51 0 9.975 4.466 9.975 9.976m-2.5 0a7.475 7.475 0 0 0-7.475-7.476H24v14.95l.046.001a7.475 7.475 0 0 0 7.475-7.475m9.48-.046c0 .69-.56 1.25-1.25 1.25h-2.5a1.25 1.25 0 0 1 0-2.5h2.5c.69 0 1.25.56 1.25 1.25M25.25 37.25a1.25 1.25 0 1 0-2.5 0v2.5a1.25 1.25 0 0 0 2.5 0zM12 24c0 .69-.56 1.25-1.25 1.25h-2.5a1.25 1.25 0 1 1 0-2.5h2.5c.69 0 1.25.56 1.25 1.25m2.133-11.634a1.25 1.25 0 0 0-1.767 1.768l1.5 1.5a1.25 1.25 0 0 0 1.767-1.768zm-1.767 23.268a1.25 1.25 0 0 0 1.767 0l1.5-1.5a1.25 1.25 0 1 0-1.767-1.768l-1.5 1.5a1.25 1.25 0 0 0 0 1.768m21.5-23.268a1.25 1.25 0 0 1 1.767 1.768l-1.5 1.5a1.25 1.25 0 0 1-1.767-1.768zm1.767 23.268a1.25 1.25 0 0 1-1.767 0l-1.5-1.5a1.25 1.25 0 1 1 1.767-1.768l1.5 1.5a1.25 1.25 0 0 1 0 1.768"></svg:path>`,
+})
+export class FluentBrightnessLow48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

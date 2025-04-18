@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentDocumentPy16FilledIcon],svg[fluent-document-py-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 4.5V1.25L13.75 5H10.5c-.28 0-.5-.22-.5-.5m-1 0c0 .83.67 1.5 1.5 1.5H14v7.5c0 .83-.67 1.5-1.5 1.5H7.91c.06-.16.09-.32.09-.5V13l1.2-1.6c.24-.31.34-.72.28-1.11c-.05-.4-.26-.75-.58-.99c-.25-.19-.58-.3-.9-.3h-.15l-.07.02c-.39.05-.74.26-.98.58l-.3.4l-.3-.4c-.24-.32-.58-.52-.99-.59L5.07 9H5c-.33 0-.65.11-.9.3c-.04.03-.07.06-.1.09V2.5C4 1.67 4.67 1 5.5 1H9zM1.5 10h1a1.5 1.5 0 1 1 0 3H2v1.5a.5.5 0 1 1-1 0v-4a.5.5 0 0 1 .5-.5m.5 2h.5a.5.5 0 1 0 0-1H2zm5 .666L8.4 10.8a.5.5 0 0 0-.1-.7a.5.5 0 0 0-.7.1l-1.1 1.467L5.4 10.2a.5.5 0 1 0-.8.6L6 12.666V14.5a.5.5 0 1 0 1 0z"></svg:path>`,
+})
+export class FluentDocumentPy16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

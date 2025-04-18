@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cibMixerIcon],svg[cib-mixer-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.276 1.833c-.817 0-1.599.307-2.203.855C-.178 3.844-.282 5.797.74 7.172l6.552 8.787l-6.595 8.869c-1.015 1.375-.937 3.328.339 4.484a3.27 3.27 0 0 0 4.824-.457l9.208-12.376a.87.87 0 0 0 0-1.015L5.896 3.145a3.25 3.25 0 0 0-2.62-1.312m25.453 0a3.25 3.25 0 0 0-2.625 1.312l-9.145 12.297a.85.85 0 0 0 0 1.016l9.181 12.396a3.27 3.27 0 0 0 4.824.457c1.276-1.156 1.353-3.109.339-4.484l-6.595-8.869l6.557-8.787c1.016-1.375.917-3.328-.339-4.484a3.3 3.3 0 0 0-2.203-.855z"></svg:path>`,
+})
+export class CibMixerIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentSim20FilledIcon],svg[fluent-sim-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 5a3 3 0 0 1 3-3h3.464a3 3 0 0 1 2.122.879l2.535 2.535A3 3 0 0 1 16 7.536V15a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3zm3 5.5v.5h3V9H8.5A1.5 1.5 0 0 0 7 10.5M7 12v1.5A1.5 1.5 0 0 0 8.5 15H10v-3zm4.5 3a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 11.5 9H11v6z"></svg:path>`,
+})
+export class FluentSim20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

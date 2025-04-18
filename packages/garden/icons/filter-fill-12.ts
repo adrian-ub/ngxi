@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenFilterFill12Icon],svg[garden-filter-fill-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 11.69a1 1 0 0 1-1-1V5.21L.43 1.71C.14 1.42.06.99.21.62S.73 0 1.14 0h9.73c.41 0 .77.24.92.62s.07.8-.22 1.09L8 5.21v4.48c0 .38-.21.72-.55.89l-2 1c-.14.08-.3.11-.45.11"></svg:path>`,
+})
+export class GardenFilterFill12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

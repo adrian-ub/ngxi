@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFolderTypePrivateOpenedIcon],svg[vscode-icons-folder-type-private-opened-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#a76571" d="M27.4 5.5h-9.2l-2.1 4.2H4.3v16.8h25.2v-21Zm0 18.7H6.6V11.8h20.8Zm0-14.5h-8.2l1-2.1h7.1v2.1Z"></svg:path><svg:path fill="#a76571" d="M25.7 13.7H.5l3.8 12.8h25.2z"></svg:path><svg:path fill="#d80027" d="M20.4 10a10.5 10.5 0 1 0 10.5 10.5A10.5 10.5 0 0 0 20.4 10m0 18.375a7.862 7.862 0 0 1-6.41-12.432l10.968 10.968a7.83 7.83 0 0 1-4.558 1.464m6.411-3.318L15.843 14.09a7.862 7.862 0 0 1 10.968 10.967"></svg:path>`,
+})
+export class VscodeIconsFolderTypePrivateOpenedIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

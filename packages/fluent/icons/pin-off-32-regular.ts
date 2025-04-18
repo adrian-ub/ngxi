@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPinOff32RegularIcon],svg[fluent-pin-off-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m20.187 21.601l-1.226 3.68a2 2 0 0 1-3.312.782L11.5 21.914L5.415 28H4v-1.414l6.086-6.086l-4.149-4.149a2 2 0 0 1 .782-3.311l3.68-1.227l-8.106-8.106a1 1 0 0 1 1.414-1.414l26 26a1 1 0 0 1-1.414 1.414zm-1.58-1.581l-6.627-6.626l-4.628 1.543l9.711 9.712zm8.223-5.553l-5.885 2.943l1.49 1.49l5.29-2.644c2.442-1.221 2.97-4.476 1.04-6.406L22.15 3.236c-1.931-1.93-5.186-1.403-6.407 1.04L13.1 9.564l1.49 1.49l2.943-5.885a2 2 0 0 1 3.203-.52l6.614 6.614a2 2 0 0 1-.52 3.203"></svg:path>`,
+})
+export class FluentPinOff32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

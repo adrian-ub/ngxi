@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiFileCabinetIcon],svg[openmoji-file-cabinet-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#3f3f3f" d="M18 55h36V13H18z"></svg:path><svg:path fill="#d0cfce" d="M22.27 17.011v14h27.499v-14zM49.769 50.83v-14h-27.5v14z"></svg:path><svg:path fill="#9B9B9A" d="M29.947 19.677H41.93v4.357H29.947zm-.352 20.116h12.679v4.067H29.595z"></svg:path><svg:path fill="#d0cfce" d="M17.009 60.003H55"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><svg:path d="M17 12h38v44H17zm.009 48.003H55"></svg:path><svg:path d="M21.269 35.829h29.5v16h-29.5z"></svg:path><svg:path d="M29.735 39.713h12.399v4.116H29.735zm12.399 8.116H29.735m-8.466-31.818h29.5v16h-29.5z"></svg:path><svg:path d="M29.735 19.895h12.399v4.116H29.735zm12.399 8.116H29.735"></svg:path></svg:g>`,
+})
+export class OpenmojiFileCabinetIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

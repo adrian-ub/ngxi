@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeFolderPrivateIcon],svg[material-icon-theme-folder-private-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#ff5252" d="m13.844 7.536l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464"></svg:path><svg:path fill="#ffcdd2" d="M24 14a8 8 0 1 0 8 8a8 8 0 0 0-8-8m6 8a5.96 5.96 0 0 1-1.115 3.471l-8.356-8.356A5.99 5.99 0 0 1 30 22m-12 0a5.96 5.96 0 0 1 1.115-3.471l8.356 8.356A5.99 5.99 0 0 1 18 22"></svg:path>`,
+})
+export class MaterialIconThemeFolderPrivateIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

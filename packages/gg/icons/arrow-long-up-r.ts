@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ggArrowLongUpRIcon],svg[gg-arrow-long-up-r-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.793 4.61L12.068.398l4.21 4.275l-1.424 1.403l-1.804-1.831l-.07 11.886l3.227 3.226l-4.243 4.243l-4.242-4.243l3.259-3.26l.07-11.89l-1.854 1.826zm4.171 16.163l1.414-1.415l-1.414-1.414l-1.414 1.414z" clip-rule="evenodd"></svg:path>`,
+})
+export class GgArrowLongUpRIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

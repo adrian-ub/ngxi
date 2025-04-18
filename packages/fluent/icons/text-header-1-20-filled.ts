@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTextHeader120FilledIcon],svg[fluent-text-header-1-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.573 3.823a.75.75 0 0 0-1.058.53c-.255 1.138-1.308 2.608-2.681 3.523a.75.75 0 1 0 .832 1.248A8.8 8.8 0 0 0 15.5 7.47v8.03a.75.75 0 0 0 1.5 0V4.516a.75.75 0 0 0-.427-.693M3.5 4.5a.75.75 0 1 0-1.5 0v11a.75.75 0 0 0 1.5 0v-5h5v5a.75.75 0 0 0 1.5 0v-11a.75.75 0 1 0-1.5 0V9h-5z"></svg:path>`,
+})
+export class FluentTextHeader120FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

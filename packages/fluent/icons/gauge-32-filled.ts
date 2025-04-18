@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentGauge32FilledIcon],svg[fluent-gauge-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 16C2 8.268 8.268 2 16 2s14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16m15.56-7.848a1 1 0 1 0 .388-1.962a10 10 0 0 0-10.24 15.4a1 1 0 1 0 1.657-1.118a8 8 0 0 1 8.196-12.32m5.676 2.403a1 1 0 0 0-.35 1.37a8 8 0 0 1-.24 8.534a1 1 0 1 0 1.661 1.113a10 10 0 0 0 .3-10.666a1 1 0 0 0-1.37-.351m-2.244-2.502l-1.056.842c-.638.507-1.494 1.192-2.368 1.9s-1.77 1.437-2.485 2.037c-.357.3-.673.568-.92.786a7 7 0 0 0-.563.538a2.463 2.463 0 0 0 3.745 3.2a7 7 0 0 0 .443-.64c.176-.278.393-.632.632-1.032c.48-.8 1.061-1.798 1.623-2.773s1.108-1.927 1.508-2.636l.484-.853l.182-.322a.82.82 0 0 0-1.225-1.047"></svg:path>`,
+})
+export class FluentGauge32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatFrontFacingBabyChickIcon],svg[fluent-emoji-flat-front-facing-baby-chick-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#FF822D" d="M14.25 28.5h3.5l-.02-6h1.5l.02 6h1.27c.73 0 1.34.52 1.47 1.21c.03.15-.09.29-.25.29h-11.5c-.16 0-.28-.14-.25-.29c.14-.69.74-1.21 1.47-1.21h1.29l-.02-6h1.5z"></svg:path><svg:path fill="#F9C23C" d="M11.47 14.6c.01-1.32-.37-2.56-1.02-3.6l-8.14 8.14c-.52.52-.33 1.4.36 1.64c.7.25 1.46.38 2.25.37c3.58-.04 6.51-2.96 6.55-6.55m9.05.01c-.01-1.33.36-2.57 1.02-3.61l8.14 8.15c.52.52.33 1.4-.36 1.64c-.7.25-1.46.38-2.25.37c-3.58-.04-6.51-2.96-6.55-6.55"></svg:path><svg:path fill="#FCD53F" d="M23.19 12.61c-.13-.18-.2-.39-.2-.61a7 7 0 0 0-7.65-6.97c-3.56.33-6.35 3.33-6.35 6.97c0 .22-.07.43-.2.61A8.93 8.93 0 0 0 6.99 18a9 9 0 0 0 18 0c0-2.02-.67-3.89-1.8-5.39"></svg:path><svg:path fill="#212121" d="M13 10.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0m7 0a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0"></svg:path><svg:path fill="#FF822D" d="M15.99 10c-1.1 0-2 .9-2 2h4c0-1.1-.9-2-2-2"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatFrontFacingBabyChickIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

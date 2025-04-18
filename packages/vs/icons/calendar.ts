@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vsCalendarIcon],svg[vs-calendar-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M56 333h1553q55 0 55-56V111q0-47-32-79t-79-32H111Q64 0 32 32T0 111v166q0 56 56 56m221 998H56q-56 0-56 56v166q0 47 32 79t79 32h166q56 0 56-56v-221q0-56-56-56m1110 0q-56 0-56 56v221q0 56 56 56h166q47 0 79-32t32-79v-166q0-56-55-56zm-444 0q-56 0-56 56v221q0 56 56 56h222q55 0 55-56v-221q0-56-55-56zm-444 0q-55 0-55 56v221q0 56 55 56h222q56 0 56-56v-221q0-56-56-56zm888-444q-56 0-56 56v222q0 55 56 55h222q55 0 55-55V943q0-56-55-56zm-444 0q-56 0-56 56v222q0 55 56 55h222q55 0 55-55V943q0-56-55-56zm-887 0q-56 0-56 56v222q0 55 56 55h221q56 0 56-55V943q0-56-56-56zm443 0q-55 0-55 56v222q0 55 55 55h222q56 0 56-55V943q0-56-56-56zm888-443q-56 0-56 55v222q0 56 56 56h222q55 0 55-56V499q0-55-55-55zm-444 0q-56 0-56 55v222q0 56 56 56h222q55 0 55-56V499q0-55-55-55zm-887 0q-56 0-56 55v222q0 56 56 56h221q56 0 56-56V499q0-55-56-55zm443 0q-55 0-55 55v222q0 56 55 56h222q56 0 56-56V499q0-55-56-55z"></svg:path>`,
+})
+export class VsCalendarIcon {
+  readonly viewBox = input("0 0 1664 1664")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

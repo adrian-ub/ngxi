@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamVolumeDownSquareFIcon],svg[jam-volume-down-square-f-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 0h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4m2.038 13.23h1.005l1.823 1.71a2 2 0 0 0 1.367.54h.205a1.6 1.6 0 0 0 1.6-1.6v-7.8a1.6 1.6 0 0 0-1.6-1.6h-.205a2 2 0 0 0-1.367.541l-1.823 1.71H6.038a2 2 0 0 0-2 2v2.5a2 2 0 0 0 2 2zm7.664-4.24a1 1 0 0 1 0 2a1 1 0 1 0 0 2a3 3 0 0 0 0-6a1 1 0 1 0 0 2m-5.869-.26l2.205-2.066v6.633L7.833 11.23H6.038v-2.5z"></svg:path>`,
+})
+export class JamVolumeDownSquareFIcon {
+  readonly viewBox = input("-2 -2 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

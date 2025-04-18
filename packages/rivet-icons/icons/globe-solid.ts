@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[rivetIconsGlobeSolidIcon],svg[rivet-icons-globe-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.76.004L6.652 3.985c-.275.99-.446 2-.514 3.015H9.86a15 15 0 0 0-.514-3.015L8.24.004a8 8 0 0 0-.482 0ZM5.58.372L4.727 3.45A17 17 0 0 0 4.136 7H.061A8.01 8.01 0 0 1 5.58.372M.062 9a8.01 8.01 0 0 0 5.519 6.628l-.855-3.078A17 17 0 0 1 4.136 9H.061Zm7.698 6.996a8 8 0 0 0 .48 0l1.107-3.981A15 15 0 0 0 9.86 9H6.139a15 15 0 0 0 .514 3.015zm2.659-.368A8.01 8.01 0 0 0 15.939 9h-4.074a17 17 0 0 1-.591 3.55zM15.938 7A8.01 8.01 0 0 0 10.42.372l.855 3.078c.323 1.164.52 2.354.59 3.55z"></svg:path>`,
+})
+export class RivetIconsGlobeSolidIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

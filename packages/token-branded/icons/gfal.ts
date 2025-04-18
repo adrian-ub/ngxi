@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedGfalIcon],svg[token-branded-gfal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#F113A3" d="M4.059 16.5v-9L12 3l4.04 2.25l-8.275 4.78v4.781L12 16.765l4.235-2.118V9.861L19.941 7.5v9L12 21z"></svg:path>`,
+})
+export class TokenBrandedGfalIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

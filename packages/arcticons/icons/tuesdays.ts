@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsTuesdaysIcon],svg[arcticons-tuesdays-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M38.5 5.5h-29a4 4 0 0 0-4 4v29a4 4 0 0 0 4 4h29a4 4 0 0 0 4-4v-29a4 4 0 0 0-4-4m-28 8.551h5.592m-2.796 8.441v-8.441"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m30.343 25.508l-2.796 4.22l-2.796-4.22m2.796 8.441v-4.221m4.528-8.16c.517.673 1.167.924 2.07.924h1.25a2.106 2.106 0 0 0 2.105-2.105v-.01a2.106 2.106 0 0 0-2.106-2.105h-1.378a2.11 2.11 0 0 1-2.108-2.108h0c0-1.167.946-2.113 2.112-2.113h1.243c.903 0 1.552.251 2.07.925m-5.258 18.048c.517.674 1.167.925 2.07.925h1.25a2.106 2.106 0 0 0 2.105-2.106v-.01a2.106 2.106 0 0 0-2.106-2.105h-1.378a2.11 2.11 0 0 1-2.108-2.108h0c0-1.166.946-2.112 2.112-2.112h1.243c.903 0 1.552.25 2.07.925M18.255 14.051v5.645a2.796 2.796 0 1 0 5.592 0v-5.645m2.275 4.221h2.752m1.469 4.22h-4.221v-8.441h4.221M10.796 33.949v-8.441h1.9a3.693 3.693 0 0 1 3.692 3.693v1.055a3.693 3.693 0 0 1-3.693 3.693zm12.125-2.797h-3.74m-.926 2.797l2.796-8.441l2.797 8.441"></svg:path>`,
+})
+export class ArcticonsTuesdaysIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

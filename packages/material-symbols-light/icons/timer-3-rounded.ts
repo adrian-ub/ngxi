@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightTimer3RoundedIcon],svg[material-symbols-light-timer-3-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.27 18.116H9.5q-.26 0-.437-.178t-.179-.438t.178-.437t.438-.178h4.77q.268 0 .442-.174t.172-.442v-3.038q0-.27-.172-.442t-.443-.173H10.5q-.26 0-.437-.178T9.884 12t.178-.437t.438-.179h3.77q.268 0 .442-.173t.172-.442V7.731q0-.27-.172-.442t-.443-.173H9.5q-.26 0-.437-.178T8.884 6.5t.178-.437t.438-.178h4.77q.769 0 1.307.538t.539 1.308v3.054q0 .49-.305.853q-.305.362-.776.362q.47 0 .776.363q.305.362.305.853v3.053q0 .77-.539 1.308t-1.308.539"></svg:path>`,
+})
+export class MaterialSymbolsLightTimer3RoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

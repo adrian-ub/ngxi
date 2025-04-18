@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[codiconDebugCoverageIcon],svg[codicon-debug-coverage-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M5 2.41L5.78 2l9 6v.83L9 12.683v-1.2l4.6-3.063L6 3.35V7H5z"></svg:path><svg:path d="M6.13 12.124q-.273.27-.42.6q-.145.328-.145.715v.862a.7.7 0 0 1-.205.495a.7.7 0 0 1-.496.204h-.865a.7.7 0 0 1-.497-.204a.7.7 0 0 1-.205-.495v-.862q0-.387-.147-.716a1.9 1.9 0 0 0-.418-.6a2.5 2.5 0 0 1-.542-.773a2.3 2.3 0 0 1-.19-.927A2.4 2.4 0 0 1 2.332 9.2a2.4 2.4 0 0 1 .87-.87A2.5 2.5 0 0 1 4.432 8a2.4 2.4 0 0 1 1.225.33a2.41 2.41 0 0 1 1.205 2.093q0 .498-.19.927a2.5 2.5 0 0 1-.542.774m-1.103.991H3.835v1.186q0 .064.049.114q.048.049.115.048h.865a.16.16 0 0 0 .114-.048a.15.15 0 0 0 .049-.114z"></svg:path></svg:g>`,
+})
+export class CodiconDebugCoverageIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

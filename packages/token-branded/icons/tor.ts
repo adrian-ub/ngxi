@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedTorIcon],svg[token-branded-tor-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#BE7C40" fill-rule="evenodd" d="M6.602 5.716a1.406 1.406 0 1 0-.787.068v2.755l5.527-3.689l-.85 6.331l-6.927 3.88l6.67 2.474l-1.514 1.012a1.406 1.406 0 1 0 .394.596l2.57-1.884l-6.495-2.361l5.578-3.154l6.669 4.408l-1.035-6.702l1.305.663a1.405 1.405 0 1 0 .376-.562L15.48 8.224l1.018 6.562l-5.325-3.605l1.023-7.815l-5.6 3.936V5.716zm.157-1.31a.664.664 0 1 1-1.327 0a.664.664 0 0 1 1.327 0m12.269 6.848a.663.663 0 1 0 0-1.326a.663.663 0 0 0 0 1.326M8.446 19.587a.663.663 0 1 1-1.326 0a.663.663 0 0 1 1.326 0" clip-rule="evenodd"></svg:path>`,
+})
+export class TokenBrandedTorIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

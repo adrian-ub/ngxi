@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2RedEye12Icon],svg[fluent-mdl2-red-eye-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1024 512q150 0 292 39t272 107t246 163t214 203q-98 110-213 203t-246 162t-273 108t-292 39t-292-39t-272-107t-247-162T0 1024q97-109 213-203t246-162t273-108t292-39m0 878q76 0 142-29t116-78t79-116t29-143t-29-142t-78-116t-116-79t-143-29t-142 29t-116 78t-79 116t-29 143t29 142t78 116t116 79t143 29m-375-54q-55-66-84-146t-29-166t29-166t84-146q-134 53-251 132t-221 180q103 100 220 179t252 133m1222-312q-103-100-220-179t-252-133q55 66 84 146t29 166t-29 166t-84 146q134-53 251-132t221-180m-847-171q35 0 66 13t54 37t37 55t14 66t-13 66t-37 55t-55 36t-66 14q-35 0-66-13t-55-37t-36-54t-14-67q0-35 13-66t37-54t54-37t67-14"></svg:path>`,
+})
+export class FluentMdl2RedEye12Icon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

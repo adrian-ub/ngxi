@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsBacklightLowRoundedIcon],svg[material-symbols-backlight-low-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 15q-.425 0-.712-.288T2 14t.288-.712T3 13h1q.425 0 .713.288T5 14t-.288.713T4 15zm4.05-5.95q-.275.275-.7.275t-.7-.275l-.725-.725q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l.725.725q.275.275.275.7t-.275.7M8.5 18q-.625 0-1.062-.437T7 16.5t.438-1.062T8.5 15h7q.625 0 1.063.438T17 16.5t-.437 1.063T15.5 18zM12 7q-.425 0-.712-.288T11 6V5q0-.425.288-.712T12 4t.713.288T13 5v1q0 .425-.288.713T12 7m4.95 2.05q-.275-.3-.288-.7t.288-.7l.725-.725q.3-.3.7-.287t.7.312q.275.3.288.7t-.288.7l-.725.725q-.3.3-.7.288t-.7-.313M20 15q-.425 0-.712-.288T19 14t.288-.712T20 13h1q.425 0 .713.288T22 14t-.288.713T21 15z"></svg:path>`,
+})
+export class MaterialSymbolsBacklightLowRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

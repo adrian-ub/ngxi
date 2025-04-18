@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiWifiSolidIcon],svg[mynaui-wifi-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21.484 10.027c-5.314-5.036-13.654-5.036-18.968 0a.75.75 0 1 1-1.032-1.089c5.893-5.584 15.14-5.584 21.032 0a.75.75 0 0 1-1.032 1.09M4.47 12.37c4.159-4.159 10.901-4.159 15.06 0a.75.75 0 0 1-1.06 1.06a9.15 9.15 0 0 0-12.94 0a.75.75 0 1 1-1.06-1.06m3 3.258a6.407 6.407 0 0 1 9.06 0a.75.75 0 0 1-1.06 1.06a4.907 4.907 0 0 0-6.94 0a.75.75 0 0 1-1.06-1.06M12 18a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5A.75.75 0 0 1 12 18"></svg:path>`,
+})
+export class MynauiWifiSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

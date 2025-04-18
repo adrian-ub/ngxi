@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsLangCebIcon],svg[circle-flags-lang-ceb-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsLangCeb0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsLangCeb0)"><svg:path fill="#0052b4" d="M0 0h512v256l-265 45.2z"></svg:path><svg:path fill="#d80027" d="M210 256h302v256H0z"></svg:path><svg:path fill="#eee" d="M0 0v512l256-256z"></svg:path><svg:path fill="#ffda44" d="M175.3 256L144 241.3l16.7-30.3l-34 6.5l-4.3-34.3l-23.6 25.2L75 183.2l-4.3 34.3l-34-6.5l16.7 30.3L22.3 256l31.2 14.7L37 301l34-6.5l4.2 34.3l23.7-25.2l23.6 25.2l4.3-34.3l34 6.5l-16.7-30.3zm-107-155.8l10.4 14.5l17-5.4l-10.6 14.4l10.4 14.5l-17-5.6L68 147l.2-17.9l-17-5.6l17-5.4zm0 264.8l10.4 14.6l17-5.4l-10.6 14.3l10.4 14.6l-17-5.7L68 411.8l.2-17.9l-17-5.6l17-5.4zm148.4-132.4L206.3 247l-17-5.4l10.5 14.4l-10.4 14.6l17-5.7l10.6 14.4l-.1-17.9l17-5.6l-17.1-5.4z"></svg:path></svg:g>`,
+})
+export class CircleFlagsLangCebIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

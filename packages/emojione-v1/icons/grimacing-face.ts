@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneV1GrimacingFaceIcon],svg[emojione-v1-grimacing-face-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="32.33" cy="32.32" r="31.674" fill="#fbbf67"></svg:circle><svg:path fill="#fff" d="M48.813 22.12c0 5.278-2.854 9.549-6.375 9.549c-3.523 0-6.38-4.271-6.38-9.549c0-5.275 2.856-9.55 6.38-9.55c3.522 0 6.375 4.275 6.375 9.55"></svg:path><svg:ellipse cx="42.44" cy="22.12" fill="#25333a" rx="4.127" ry="5"></svg:ellipse><svg:path fill="#fff" d="M28.592 22.12c0 5.278-2.854 9.549-6.375 9.549c-3.523 0-6.38-4.271-6.38-9.549c0-5.275 2.856-9.55 6.38-9.55c3.521 0 6.375 4.275 6.375 9.55"></svg:path><svg:ellipse cx="22.22" cy="22.12" fill="#25333a" rx="4.128" ry="5"></svg:ellipse><svg:path fill="#fff" d="M54 46.5c0 4.143-3.478 7.5-7.768 7.5H18.268c-4.29 0-7.768-3.357-7.768-7.5s3.478-7.5 7.768-7.5h27.965C50.522 39 54 42.357 54 46.5"></svg:path><svg:g fill="#ccc"><svg:path d="M10 45h44v2H10z"></svg:path><svg:path d="M19 37h2v17h-2zm8 0h2v17h-2zm9 0h2v17h-2zm8 0h2v17h-2z"></svg:path></svg:g><svg:path fill="#a5692d" d="M46.23 55H18.266c-5.111 0-9.268-4.04-9.268-9s4.157-9 9.268-9h27.965c5.11 0 9.268 4.04 9.268 9s-4.158 9-9.269 9M18.266 40c-3.456 0-6.268 2.691-6.268 6s2.812 6 6.268 6h27.965c3.456 0 6.268-2.691 6.268-6s-2.812-6-6.268-6z"></svg:path>`,
+})
+export class EmojioneV1GrimacingFaceIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

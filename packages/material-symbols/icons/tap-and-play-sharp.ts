@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsTapAndPlaySharpIcon],svg[material-symbols-tap-and-play-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 11V1h14v22h-2V6H7v5zm0 12v-2q.825 0 1.413.588T7 23zm4 0q0-1.65-1.175-2.825T5 19v-2q2.5 0 4.25 1.75T11 23zm4 0q0-3.35-2.325-5.675T5 15v-2q2.075 0 3.9.788t3.175 2.137t2.138 3.175T15 23z"></svg:path>`,
+})
+export class MaterialSymbolsTapAndPlaySharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

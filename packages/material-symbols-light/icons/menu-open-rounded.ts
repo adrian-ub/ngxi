@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightMenuOpenRoundedIcon],svg[material-symbols-light-menu-open-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.5 17q-.213 0-.356-.144T4 16.499t.144-.356T4.5 16h10.423q.213 0 .356.144t.144.357t-.144.356t-.356.143zm14.439-1.258l-3.197-3.177Q15.5 12.324 15.5 12t.242-.565l3.196-3.158q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.353L16.573 12l3.073 3.035q.16.133.16.34t-.16.367q-.134.14-.34.14q-.208 0-.368-.14M4.5 12.5q-.213 0-.356-.144T4 11.999t.144-.356t.356-.143h7.577q.213 0 .356.144t.144.357t-.144.356t-.356.143zm0-4.5q-.213 0-.356-.144T4 7.499t.144-.356T4.5 7h10.423q.213 0 .356.144t.144.357t-.144.356t-.356.143z"></svg:path>`,
+})
+export class MaterialSymbolsLightMenuOpenRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

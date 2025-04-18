@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[notoV1DigitNineIcon],svg[noto-v1-digit-nine-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#fff"><svg:path d="M63.87 74.79C81.45 74.79 93 63.43 93 49.4S81.45 24 63.87 24c-17.56 0-29.12 11.37-29.12 25.4s11.56 25.39 29.12 25.39m0-37.63c7.77 0 12.89 5.48 12.89 12.23c0 6.76-5.12 12.23-12.89 12.23s-12.89-5.48-12.89-12.23s5.12-12.23 12.89-12.23"></svg:path><svg:path d="M83.3 41.75L66.87 24.61s25.07 5.09 26.04 24.14c.91 17.68-5.68 29.24-11.48 37.1c-10.35 14-24.21 19.1-24.21 19.1l-8.78-11.42s11.92-5.73 20.28-17.55c4.51-6.38 7.44-14.09 8.13-24.61z"></svg:path></svg:g>`,
+})
+export class NotoV1DigitNineIcon {
+  readonly viewBox = input("0 0 128 128")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

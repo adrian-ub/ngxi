@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPeopleQueue20RegularIcon],svg[fluent-people-queue-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.5 7.5a2.25 2.25 0 1 0 0-4.5a2.25 2.25 0 0 0 0 4.5m0-1a1.25 1.25 0 1 1 0-2.5a1.25 1.25 0 0 1 0 2.5M3 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v4.5a3.5 3.5 0 1 1-7 0zm1 0v4.5a2.5 2.5 0 0 0 5 0V9zm5.626-2.857a3.2 3.2 0 0 1-.396.87c.413.048.787.22 1.084.48q.091.006.186.007a2.25 2.25 0 1 0-1.312-4.078c.192.283.341.598.438.935a1.25 1.25 0 1 1 0 1.787m-.127 10.712A3.5 3.5 0 0 0 14 13.5V9a1 1 0 0 0-1-1h-2.267c.17.294.268.636.268 1h2v4.5a2.5 2.5 0 0 1-2.75 2.488q-.321.482-.75.867m4.127-10.712a3.2 3.2 0 0 1-.396.87c.413.048.787.22 1.084.48q.091.006.186.007a2.25 2.25 0 1 0-1.312-4.078c.192.283.341.598.438.935a1.25 1.25 0 1 1 0 1.787m-.127 10.712q.478.143 1 .145a3.5 3.5 0 0 0 3.5-3.5V9a1 1 0 0 0-1-1h-2.267c.17.294.268.636.268 1h2v4.5a2.5 2.5 0 0 1-2.75 2.488q-.321.482-.75.867"></svg:path>`,
+})
+export class FluentPeopleQueue20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

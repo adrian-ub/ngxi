@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiRewindDiamondIcon],svg[mynaui-rewind-diamond-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M2.707 10.295a2.41 2.41 0 0 0 0 3.41l7.588 7.588a2.41 2.41 0 0 0 3.41 0l7.588-7.588a2.41 2.41 0 0 0 0-3.41l-7.588-7.588a2.41 2.41 0 0 0-3.41 0z"></svg:path><svg:path d="M8.008 10.71C7.336 11.256 7 11.53 7 12s.336.743 1.008 1.29c.185.152.37.295.538.413c.149.104.316.212.49.318c.67.407 1.006.611 1.306.385s.328-.697.383-1.642c.015-.267.025-.53.025-.764c0-.235-.01-.497-.025-.764c-.055-.945-.082-1.417-.383-1.642c-.3-.226-.635-.022-1.306.385a9 9 0 0 0-.49.318a10 10 0 0 0-.538.412m5.75.001c-.672.547-1.008.821-1.008 1.29s.336.743 1.008 1.29c.185.152.37.295.538.413c.149.104.316.212.49.318c.67.407 1.006.611 1.306.385s.328-.697.383-1.642c.015-.267.025-.53.025-.764c0-.235-.01-.497-.025-.764c-.055-.945-.082-1.417-.383-1.642c-.3-.226-.635-.022-1.306.385a9 9 0 0 0-.49.318a10 10 0 0 0-.538.412"></svg:path></svg:g>`,
+})
+export class MynauiRewindDiamondIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

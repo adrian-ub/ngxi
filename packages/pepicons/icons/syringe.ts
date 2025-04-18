@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsSyringeIcon],svg[pepicons-syringe-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M4.354 10.717a2.5 2.5 0 0 0 0 3.536l1.414 1.414a2.5 2.5 0 0 0 3.535 0l6.971-6.97a2.5 2.5 0 0 0 .732-1.825l-.032-1.407a2.5 2.5 0 0 0-2.473-2.444l-1.374-.014a2.5 2.5 0 0 0-1.795.732l-6.978 6.979ZM14.86 7.282l-6.97 6.971a.5.5 0 0 1-.708 0l-1.414-1.414a.5.5 0 0 1 0-.707l6.978-6.979a.5.5 0 0 1 .36-.146l1.374.014a.5.5 0 0 1 .495.489l.032 1.407a.5.5 0 0 1-.147.365Z" clip-rule="evenodd"></svg:path><svg:path d="M11.02 11.607a.5.5 0 1 1-.706.707l-1.415-1.415a.5.5 0 1 1 .708-.707l1.414 1.415ZM5.718 16.91a1 1 0 1 1-1.415 1.414l-2.828-2.828a1 1 0 1 1 1.414-1.415l2.829 2.829Zm3.667-.24a1 1 0 1 1-1.414 1.415l-5.964-5.964a1 1 0 1 1 1.414-1.414l5.964 5.964Zm3.757-7.185a.5.5 0 1 1-.707.707l-1.414-1.414a.5.5 0 1 1 .707-.707l1.414 1.414Z"></svg:path><svg:path d="M5 16.414L3.586 15L5 13.586L6.414 15L5 16.414ZM17.97.97a.75.75 0 0 1 1.061 1.061l-3 3a.75.75 0 0 1-1.06-1.06l3-3Z"></svg:path></svg:g>`,
+})
+export class PepiconsSyringeIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

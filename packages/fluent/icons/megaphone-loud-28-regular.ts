@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMegaphoneLoud28RegularIcon],svg[fluent-megaphone-loud-28-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.526 4.466a.75.75 0 1 0 1.449.388l.647-2.415a.75.75 0 1 0-1.45-.388zM24.78 3.22a.75.75 0 0 1 0 1.06l-2.5 2.5a.75.75 0 1 1-1.061-1.06l2.5-2.5a.75.75 0 0 1 1.06 0m-14.6 20.484a4.75 4.75 0 0 0 8.472-4.236l3.827-1.913a2.75 2.75 0 0 0 .715-4.404L14.85 4.806a2.75 2.75 0 0 0-4.404.715L3.291 19.83a2.75 2.75 0 0 0 .516 3.174l1.19 1.19a2.75 2.75 0 0 0 3.174.515zm1.349-.674l5.775-2.888a3.25 3.25 0 0 1-5.776 2.888m.258-16.838a1.25 1.25 0 0 1 2.002-.325l8.344 8.344a1.25 1.25 0 0 1-.325 2.002L7.5 23.368a1.25 1.25 0 0 1-1.443-.234l-1.19-1.19a1.25 1.25 0 0 1-.234-1.443zM22.5 9.752a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75"></svg:path>`,
+})
+export class FluentMegaphoneLoud28RegularIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

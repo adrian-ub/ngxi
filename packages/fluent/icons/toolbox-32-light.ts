@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentToolbox32LightIcon],svg[fluent-toolbox-32-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.25 3A3.25 3.25 0 0 0 9 6.25V8H4.75A2.75 2.75 0 0 0 2 10.75v14.5A2.75 2.75 0 0 0 4.75 28h22.5A2.75 2.75 0 0 0 30 25.25v-14.5A2.75 2.75 0 0 0 27.25 8H23V6.25A3.25 3.25 0 0 0 19.75 3zm-7.5 6h22.5c.966 0 1.75.784 1.75 1.75V16h-6v-1.5a.5.5 0 0 0-1 0V16H10v-1.5a.5.5 0 0 0-1 0V16H3v-5.25C3 9.784 3.784 9 4.75 9M3 17h6v1.5a.5.5 0 0 0 1 0V17h12v1.5a.5.5 0 0 0 1 0V17h6v8.25A1.75 1.75 0 0 1 27.25 27H4.75A1.75 1.75 0 0 1 3 25.25zm7-9V6.25A2.25 2.25 0 0 1 12.25 4h7.5A2.25 2.25 0 0 1 22 6.25V8z"></svg:path>`,
+})
+export class FluentToolbox32LightIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

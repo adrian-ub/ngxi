@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMicPulse32RegularIcon],svg[fluent-mic-pulse-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15 2a6 6 0 0 0-6 6v8a6 6 0 0 0 5.063 5.927c.08-.677.237-1.332.46-1.955A4 4 0 0 1 11 16V8a4 4 0 0 1 8 0v6.935a9 9 0 0 1 2-.712V8a6 6 0 0 0-6-6M7 16a8 8 0 0 0 7.049 7.944A8.96 8.96 0 0 0 16 28.657V29a1 1 0 1 1-2 0v-3l.001-.05C8.947 25.45 5 21.187 5 16a1 1 0 1 1 2 0m16 14.5a7.5 7.5 0 1 0 0-15a7.5 7.5 0 0 0 0 15m-1.587-11.25a.75.75 0 0 1 .695.502L23.5 23.73l1.042-2.978a.75.75 0 0 1 1.411-.013l.569 1.531h.728a.75.75 0 0 1 0 1.5H26a.75.75 0 0 1-.703-.489l-.026-.07l-1.063 3.037a.75.75 0 0 1-1.416 0l-1.429-4.082l-.437 1.126a.75.75 0 0 1-.699.478H18.75a.75.75 0 0 1 0-1.5h.964l.987-2.541a.75.75 0 0 1 .712-.479"></svg:path>`,
+})
+export class FluentMicPulse32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

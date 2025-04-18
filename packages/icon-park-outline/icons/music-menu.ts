@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkOutlineMusicMenuIcon],svg[icon-park-outline-music-menu-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><svg:path stroke-linecap="round" d="M29 6v29"></svg:path><svg:path d="M15 36.04A5.04 5.04 0 0 1 20.04 31H29v5.96A5.04 5.04 0 0 1 23.96 42h-3.92A5.04 5.04 0 0 1 15 36.96z"></svg:path><svg:path stroke-linecap="round" d="m29 14.066l12.883 3.056V9.013L29 6z" clip-rule="evenodd"></svg:path><svg:path stroke-linecap="round" d="M6 8h14M6 16h14M6 24h10"></svg:path></svg:g>`,
+})
+export class IconParkOutlineMusicMenuIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

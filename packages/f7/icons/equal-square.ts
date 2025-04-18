@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7EqualSquareIcon],svg[f7-equal-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.785 49.574h28.453c4.899 0 7.336-2.437 7.336-7.265V13.69c0-4.828-2.437-7.265-7.336-7.265H13.785c-4.875 0-7.36 2.414-7.36 7.265v28.62c0 4.851 2.485 7.265 7.36 7.265m.07-3.773c-2.343 0-3.656-1.242-3.656-3.68V13.88c0-2.438 1.313-3.68 3.656-3.68h28.313c2.32 0 3.633 1.242 3.633 3.68v28.24c0 2.438-1.313 3.68-3.633 3.68Zm5.32-20.344h17.65c1.194 0 2.015-.586 2.015-1.781s-.774-1.805-2.016-1.805H19.176c-1.266 0-2.04.61-2.04 1.805s.821 1.781 2.04 1.781m0 8.648h17.65c1.194 0 2.015-.585 2.015-1.757c0-1.196-.774-1.805-2.016-1.805H19.176c-1.266 0-2.04.61-2.04 1.805c0 1.172.821 1.758 2.04 1.758"></svg:path>`,
+})
+export class F7EqualSquareIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

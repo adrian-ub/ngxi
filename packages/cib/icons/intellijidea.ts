@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cibIntellijideaIcon],svg[cib-intellijidea-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 0v32h32V0zm4.964 4.145h6.667v2.448H9.776v8.371h1.855v2.443H4.964v-2.443h1.927V6.593H4.964zm14.739 0h2.964v8.667c0 .819-.073 1.485-.297 2.079a4 4 0 0 1-.963 1.479c-.371.371-.885.745-1.48.891a5.2 5.2 0 0 1-1.927.371c-1.036 0-1.927-.224-2.593-.595a6.4 6.4 0 0 1-1.704-1.405l1.855-2.073c.369.443.74.74 1.109.964c.369.219.812.369 1.26.369c.521 0 .959-.151 1.333-.521c.292-.369.443-.891.443-1.703zM2.964 26h12v2h-12z"></svg:path>`,
+})
+export class CibIntellijideaIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

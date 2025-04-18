@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsCaltropsIcon],svg[game-icons-caltrops-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m119.244 19.566l-8.69 4.383l-8.265 95.438l-42.533 18.619l.504 10.965l32.906-7.02l-64.55 96.463l15.677-3.02l75.582-91.835l71.578 22.966l12.79-8.94l-80.325-37.44zm262.844 73.059l-1.326 133.818L264.54 280.49l5.178 9.428l124.004-27.285l69.574 111.066l12.47-1.574L419.2 253.283l63.684-4.54l.982-9.554l-72.344-16.646L391.55 94.219zm-177.994 99.326l-19.065 2.504l-14.972 134.44l-102.29 18.001l14.393 16.79l74.115-4.155L85.844 488.25l17.611 1.525l82.639-120.525l132.7 34.564l18.151-9.138l-137.863-62.242z"></svg:path>`,
+})
+export class GameIconsCaltropsIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

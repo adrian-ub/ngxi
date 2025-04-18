@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icOutlineBedtimeOffIcon],svg[ic-outline-bedtime-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.27 4.49c-.13.59-.2 1.15-.24 1.71l2.05 2.05c-.27-2.05.1-4.22 1.26-6.23c-.12 0-.23-.01-.35-.01a9.9 9.9 0 0 0-5.5 1.65l1.46 1.46c.42-.24.86-.46 1.32-.63m-7.88-.27l2.27 2.27A9.93 9.93 0 0 0 2 12c0 5.52 4.48 10 10 10c2.04 0 3.92-.63 5.5-1.67l2.28 2.28l1.41-1.41L2.81 2.81zm3.74 3.74l10.92 10.92C14.84 19.6 13.45 20 12 20c-4.41 0-8-3.59-8-8c0-1.48.42-2.85 1.13-4.04"></svg:path>`,
+})
+export class IcOutlineBedtimeOffIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

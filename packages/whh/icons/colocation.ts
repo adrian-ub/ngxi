@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[whhColocationIcon],svg[whh-colocation-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M896.56 960h-768q-53 0-90.5-37.5T.56 832V128q0-53 37.5-90.5T128.56 0h768q53 0 90.5 37.5t37.5 90.5v704q0 53-37.5 90.5t-90.5 37.5m0-768q0-26-19-45t-45-19h-640q-27 0-45.5 18.5t-18.5 45.5v64q0 27 18.5 45.5t45.5 18.5v-64q0-26 18.5-45t45-19t45.5 19t19 45v64h512q26 0 45-18.5t19-45.5zm0 256q0-26-19-45t-45-19h-640q-27 0-45.5 18.5t-18.5 45.5v64q0 27 18.5 45.5t45.5 18.5v-64q0-26 18.5-45t45-19t45.5 19t19 45v64h512q26 0 45-18.5t19-45.5zm0 256q0-26-19-45t-45-19h-640q-27 0-45.5 18.5t-18.5 45.5v64q0 27 18.5 45.5t45.5 18.5v-64q0-26 18.5-45t45-19t45.5 19t19 45v64h512q26 0 45-18.5t19-45.5zm-96 64h-384q-13 0-22.5-9.5t-9.5-22.5t9.5-22.5t22.5-9.5h384q13 0 22.5 9.5t9.5 22.5t-9.5 22.5t-22.5 9.5m0-256h-384q-13 0-22.5-9.5t-9.5-22.5t9.5-22.5t22.5-9.5h384q13 0 22.5 9.5t9.5 22.5t-9.5 22.5t-22.5 9.5m0-256h-384q-13 0-22.5-9.5t-9.5-22.5t9.5-22.5t22.5-9.5h384q13 0 22.5 9.5t9.5 22.5t-9.5 22.5t-22.5 9.5"></svg:path>`,
+})
+export class WhhColocationIcon {
+  readonly viewBox = input("0 0 1025 960")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}

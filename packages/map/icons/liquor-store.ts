@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mapLiquorStoreIcon],svg[map-liquor-store-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14 16c3 1 5 3.548 5 6.908v25.817c0 .794.803 1.275-.017 1.275H4.182C3.364 50 3 49.519 3 48.726V22.908C3 19.54 5 16.754 8 16V4h6zM8 0h6v2H8zm27.255 4.785c-.457-.065-.808-.436-.808-.883c0-.327.196-.612.481-.774c-.285-.15-.481-.678-.481-1.008c0-.496.418-1.12.936-1.12h4.684c.521 0 .936.624.936 1.119c0 .345-.195.747-.492.892a.98.98 0 0 1 .492.833a.92.92 0 0 1-.793.907l5.965 14.6c.35.949.825 2.016.825 3.064V48c0 .976.026 2-1 2H30.911C29.869 50 30 48.976 30 48V22c0-1.047.195-1.686.547-2.636z"></svg:path>`,
+})
+export class MapLiquorStoreIcon {
+  readonly viewBox = input("0 0 50 50")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

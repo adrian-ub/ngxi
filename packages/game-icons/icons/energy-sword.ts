@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsEnergySwordIcon],svg[game-icons-energy-sword-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M491.313 21.406C331.102 120.193 194.688 226.866 70 350.906c29.11-21.616 63.387-37.86 103.875-49.28c40.95-60.157 100.923-106.7 170.844-130.157c-23.522 69.8-70.747 130.135-131.314 171.25c-9.76 38.353-26.835 69.38-48 96.374C289.153 314.63 403.748 181.7 491.312 21.406zM132.656 345.5v.344c-30.526 52.844-71.12 87.318-115.437 115.47c-4.89 28.29 9.777 39.067 34.75 34.56c30.594-51.69 68.69-88.052 115.436-115.468c0-19.56-12.363-34.906-34.75-34.906z"></svg:path>`,
+})
+export class GameIconsEnergySwordIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

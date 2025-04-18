@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonHailIcon],svg[carbon-hail-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="21.5" cy="29.5" r="1.5" fill="currentColor"></svg:circle><svg:circle cx="24.5" cy="25.5" r="1.5" fill="currentColor"></svg:circle><svg:circle cx="7.5" cy="25.5" r="1.5" fill="currentColor"></svg:circle><svg:circle cx="4.5" cy="29.5" r="1.5" fill="currentColor"></svg:circle><svg:circle cx="10.499" cy="29.5" r="1.5" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="m15.868 30.496l-1.736-.992L17.276 24h-5.999l4.855-8.496l1.736.992L14.723 22h6.001z"></svg:path><svg:path fill="currentColor" d="M23.5 22H23v-2h.5a4.498 4.498 0 0 0 .356-8.981l-.815-.064l-.099-.812a6.994 6.994 0 0 0-13.883 0l-.1.812l-.815.064A4.498 4.498 0 0 0 8.5 20H9v2h-.5A6.497 6.497 0 0 1 7.2 9.136a8.994 8.994 0 0 1 17.6 0A6.497 6.497 0 0 1 23.5 22"></svg:path>`,
+})
+export class CarbonHailIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

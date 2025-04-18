@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTableSwitch24FilledIcon],svg[fluent-table-switch-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.78 1.22a.75.75 0 0 0-1.06 1.06l.72.72H6.25A3.25 3.25 0 0 0 3 6.25v2.19l-.72-.72a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.06 0l2-2a.75.75 0 0 0-1.06-1.06l-.72.72V6.25c0-.966.784-1.75 1.75-1.75h2.19l-.72.72a.75.75 0 0 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06zM14.5 8H9.502V6.973l1.985-1.986A1.75 1.75 0 0 0 11.832 3H14.5zM3 11.832V14.5h5v-5H6.975l-1.988 1.987A1.75 1.75 0 0 1 3 11.832M14.5 14.5v-5h-5v5zm1.5 0v-5h5v5zM16 8h5V6.25A3.25 3.25 0 0 0 17.75 3H16zm-1.5 13v-5h-5v5zM8 16H3v1.75A3.25 3.25 0 0 0 6.25 21H8zm8 0h5v1.75A3.25 3.25 0 0 1 17.75 21H16z"></svg:path>`,
+})
+export class FluentTableSwitch24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

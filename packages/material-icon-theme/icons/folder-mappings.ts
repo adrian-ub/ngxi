@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeFolderMappingsIcon],svg[material-icon-theme-folder-mappings-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#afb42b" d="m13.844 7.536l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464"></svg:path><svg:path fill="#f0f4c3" d="M18 16h2v2h-2zm4 0h6v2h-6zm-4 4h2v2h-2zm4 0h6v2h-6zm-4 4h2v2h-2zm4 0h6v2h-6z"></svg:path><svg:path fill="#f0f4c3" d="M14 12.5v17a.5.5 0 0 0 .5.5h17a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5h-17a.5.5 0 0 0-.5.5M30 28H16V14h14Z"></svg:path>`,
+})
+export class MaterialIconThemeFolderMappingsIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

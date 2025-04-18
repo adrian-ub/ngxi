@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2PieDoubleIcon],svg[fluent-mdl2-pie-double-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1024 128q58 0 113 3t110 11t107 23t108 38q133 57 241 148t185 206t118 251t42 280q0 133-34 255t-96 230t-150 194t-195 150t-229 97t-256 34q-195 0-368-72t-311-209l-45-45l660-661zm64 1792q115 0 221-30t198-84t169-130t130-168t84-199t30-221q0-108-27-209t-76-191t-119-165t-155-132t-184-90t-207-43v857l-605 605q114 98 252 149t289 51M896 896H0q0-124 32-238t90-214t140-181t181-140t214-91T896 0zM768 138q-121 21-226 76T353 353T215 541t-77 227h630zm96 886l-624 624q-118-128-179-289T0 1024zm-726 128q13 81 41 157t73 146l303-303z"></svg:path>`,
+})
+export class FluentMdl2PieDoubleIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

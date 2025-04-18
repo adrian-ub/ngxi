@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsMyOrangeIcon],svg[arcticons-my-orange-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="23.124" cy="11.779" r="7.279" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></svg:circle><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M34.1 23.693s-1.387-2.885-4.492-4.176c0 0-6.085 5.237-13.023 0c0 0-5.346 2.385-5.573 8.186V38.11s.333 3.555 3.98 3.81l9.612-.057"></svg:path><svg:rect width="10.211" height="17.605" x="26.777" y="25.895" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" rx="1.673" ry="1.673"></svg:rect><svg:circle cx="31.882" cy="41.14" r=".75" fill="currentColor"></svg:circle>`,
+})
+export class ArcticonsMyOrangeIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

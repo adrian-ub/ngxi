@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenXLayerIcon],svg[token-x-layer-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-opacity=".5" d="M17.82 14.342v4.672h1.275c.172 0 .312-.14.312-.311v-4.05a.31.31 0 0 0-.312-.312zm0-9.356v4.673h1.275c.172 0 .312-.14.312-.312v-4.05a.31.31 0 0 0-.312-.311z"></svg:path><svg:path fill="currentColor" fill-opacity=".3" d="M20.209 4.986v4.673h.477c.172 0 .311-.14.311-.312v-4.05a.31.31 0 0 0-.311-.311zm.002 9.356v4.672h.477c.172 0 .312-.14.312-.311v-4.05a.31.31 0 0 0-.312-.312z"></svg:path><svg:path fill="currentColor" d="M12.026 9.67h-4.03a.31.31 0 0 0-.31.307v4.002c0 .17.138.308.31.308h4.03a.31.31 0 0 0 .31-.308V9.977a.31.31 0 0 0-.31-.308M7.361 4.986h-4.05A.31.31 0 0 0 3 5.297v4.05c0 .172.14.312.312.312h4.05c.171 0 .31-.14.31-.312v-4.05a.31.31 0 0 0-.31-.311m9.343 0h-4.05a.31.31 0 0 0-.311.311v4.05c0 .172.14.312.311.312h4.05c.172 0 .312-.14.312-.312v-4.05a.31.31 0 0 0-.312-.311M7.361 14.33h-4.05a.31.31 0 0 0-.311.313v4.05c0 .171.14.31.312.31h4.05a.31.31 0 0 0 .31-.31v-4.05a.31.31 0 0 0-.31-.312m9.343-.001h-4.05a.31.31 0 0 0-.311.313v4.05c0 .171.14.31.311.31h4.05a.31.31 0 0 0 .312-.31v-4.05a.31.31 0 0 0-.312-.312"></svg:path>`,
+})
+export class TokenXLayerIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

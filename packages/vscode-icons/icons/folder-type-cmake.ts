@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFolderTypeCmakeIcon],svg[vscode-icons-folder-type-cmake-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:lineargradient id="vscodeIconsFolderTypeCmake0" x1="15.912" x2="21.015" y1="25.739" y2="14.942" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#1011a1"></svg:stop><svg:stop offset="1" stop-color="#6969e1"></svg:stop></svg:lineargradient><svg:lineargradient id="vscodeIconsFolderTypeCmake1" x1="20.675" x2="27.799" y1="17.727" y2="29.772" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#b40e0e"></svg:stop><svg:stop offset="1" stop-color="#ff5959"></svg:stop></svg:lineargradient><svg:lineargradient id="vscodeIconsFolderTypeCmake2" x1="24.797" x2="14.718" y1="28.981" y2="28.135" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#01a300"></svg:stop><svg:stop offset="1" stop-color="#01df00"></svg:stop></svg:lineargradient><svg:lineargradient id="vscodeIconsFolderTypeCmake3" x1="19.472" x2="19.342" y1="26.291" y2="21.908" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#848484"></svg:stop><svg:stop offset="1" stop-color="#d2d2d2"></svg:stop></svg:lineargradient></svg:defs><svg:path fill="#c09553" d="M27.9 6h-9.8l-2 4H5v17h25V6Zm.1 4h-7.8l1-2H28Z"></svg:path><svg:path fill="url(#vscodeIconsFolderTypeCmake0)" d="m21.453 21.2l-11.391 9.733L20.5 10.091Z"></svg:path><svg:path d="m10.078 30.951l-.038-.029L20.518 10l.007.089l.954 11.122l-.009.008Zm10.4-20.77L10.14 30.833l11.287-9.644Z"></svg:path><svg:path fill="url(#vscodeIconsFolderTypeCmake1)" d="M21.981 27.277L20.5 10.089l10.446 20.846Z"></svg:path><svg:path d="m31 30.982l-.061-.024l-8.981-3.658v-.016l-1.483-17.193l.047-.013Zm-8.995-3.722l8.89 3.627l-10.359-20.67Z"></svg:path><svg:path fill="url(#vscodeIconsFolderTypeCmake2)" d="m16.827 25.124l14.13 5.809H10.065Z"></svg:path><svg:path d="M30.957 30.958H10l.051-.044l6.771-5.814l.015.006l14.13 5.808Zm-20.825-.051h20.7l-14-5.754Z"></svg:path><svg:path fill="url(#vscodeIconsFolderTypeCmake3)" d="m16.849 25.138l4.6-3.922l.64 6.056Z"></svg:path><svg:path d="m22.147 27.351l-.077-.033l-5.316-2.165l.062-.053l4.673-3.984l.01.095Zm-5.2-2.229l5.087 2.072l-.621-5.879Z"></svg:path><svg:path d="M30.884 31.075H10.092A.2.2 0 0 1 9.937 31a.18.18 0 0 1 .018-.171l10.425-20.82a.15.15 0 0 1 .121-.083a.13.13 0 0 1 .112.08l10.425 20.811a.2.2 0 0 1 .016.186a.19.19 0 0 1-.17.072m-20.807-.153h20.845q-.001-.009-.018-.036L20.5 10.109L10.09 30.893Z"></svg:path>`,
+})
+export class VscodeIconsFolderTypeCmakeIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCursorHover20FilledIcon],svg[fluent-cursor-hover-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h5v-4.5a1.5 1.5 0 0 1 2.56-1.06l5 5q.171.17.276.378A2 2 0 0 0 18 13V6a2 2 0 0 0-2-2zm6.854 6.147A.5.5 0 0 0 10 10.5v7a.5.5 0 0 0 .91.287l1.571-2.245l2.943.452a.5.5 0 0 0 .43-.848zM11 15.914v-4.207l3.066 3.067l-1.74-.268a.5.5 0 0 0-.486.207z"></svg:path>`,
+})
+export class FluentCursorHover20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

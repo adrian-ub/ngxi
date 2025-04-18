@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsInfiniteIcon],svg[lineicons-infinite-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M48 17.8c-5.8 0-12.8 7-16 10.7c-3.3-3.7-10.2-10.7-16-10.7c-7.9 0-14.2 6.4-14.2 14.2S8.1 46.2 16 46.2c5.8 0 12.8-7 16-10.7c3.3 3.7 10.2 10.7 16 10.7c7.8 0 14.2-6.4 14.2-14.2S55.9 17.8 48 17.8M16 41.7c-5.4 0-9.7-4.4-9.7-9.7s4.4-9.7 9.7-9.7c3.6 0 9.5 5.5 13.1 9.7c-3.6 4.2-9.5 9.7-13.1 9.7m32 0c-3.6 0-9.5-5.5-13.1-9.7c3.6-4.2 9.5-9.7 13.1-9.7c5.4 0 9.7 4.4 9.7 9.7s-4.3 9.7-9.7 9.7"></svg:path>`,
+})
+export class LineiconsInfiniteIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

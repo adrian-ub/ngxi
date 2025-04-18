@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatUpDownArrowIcon],svg[fluent-emoji-flat-up-down-arrow-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#00A6ED" d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"></svg:path><svg:path fill="#fff" d="M15.307 6.167a1 1 0 0 1 1.386 0l5.313 5.112c.649.625.207 1.721-.693 1.721H18.25a.25.25 0 0 0-.25.25v5.5c0 .138.112.25.25.25h3.063c.9 0 1.342 1.096.693 1.72l-5.313 5.113a1 1 0 0 1-1.386 0L9.994 20.72c-.649-.625-.207-1.721.693-1.721h3.063a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-3.063c-.9 0-1.342-1.096-.693-1.72z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatUpDownArrowIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

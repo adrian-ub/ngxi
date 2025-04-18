@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[riCoreosLineIcon],svg[ri-coreos-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.454 4.414a8 8 0 1 0 10.202 9.91q-5.1 2.189-11.545 1.565Q7.044 9.702 9.454 4.414M11.902 4a16.8 16.8 0 0 0-1.541 3.768a5.98 5.98 0 0 1 4.114 1.756a5.98 5.98 0 0 1 1.745 3.861q1.994-.513 3.78-1.433A7.994 7.994 0 0 0 11.902 4M4.93 19.07c-3.905-3.905-3.905-10.237 0-14.142s10.237-3.905 14.142 0s3.905 10.237 0 14.142s-10.237 3.905-14.142 0m5.02-9.293a18 18 0 0 0-.076 4.229a23 23 0 0 0 4.36-.219a4 4 0 0 0-1.172-2.849A4 4 0 0 0 9.95 9.777"></svg:path>`,
+})
+export class RiCoreosLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

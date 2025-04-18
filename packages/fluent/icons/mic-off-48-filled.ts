@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMicOff48FilledIcon],svg[fluent-mic-off-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 17.768V24a8 8 0 0 0 12.704 6.472l2.356 2.356A11.45 11.45 0 0 1 24 35.25c-6.351 0-11.5-5.149-11.5-11.5a1.25 1.25 0 1 0-2.5 0c0 7.225 5.473 13.172 12.5 13.92v5.08a1.25 1.25 0 1 0 2.5 0v-5.035c2.963-.21 5.67-1.34 7.84-3.108l8.776 8.777a1.25 1.25 0 1 0 1.768-1.768l-37-37a1.25 1.25 0 0 0-1.768 1.768zm18.258 11.186l1.842 1.843A13.94 13.94 0 0 0 38 23.75a1.25 1.25 0 1 0-2.5 0a11.45 11.45 0 0 1-1.242 5.204M16.09 10.788l15.56 15.559A8 8 0 0 0 31.999 24V12a8 8 0 0 0-15.909-1.212"></svg:path>`,
+})
+export class FluentMicOff48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsCircularSawIcon],svg[game-icons-circular-saw-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M256 16v72H88l48 48L16 256h72v168l48-48l120 120v-72h168l-48-48l120-120h-72V88l-48 48zm0 120c66.274 0 120 53.726 120 120s-53.726 120-120 120s-120-53.726-120-120s53.726-120 120-120m1.406 72.03A48 48 0 0 0 208 256a48 48 0 0 0 96 0a48 48 0 0 0-46.594-47.97"></svg:path>`,
+})
+export class GameIconsCircularSawIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

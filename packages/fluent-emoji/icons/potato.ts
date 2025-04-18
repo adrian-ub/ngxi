@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiPotatoIcon],svg[fluent-emoji-potato-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#f2090id0)" d="M22.837 2.932c-4.2-1.98-9.22-.7-11.96 3.04l-5.24 7.14c-3.95 5.38-2 13.03 4.04 15.87c5.33 2.51 11.67.19 14.14-5.15l3.71-8.04c2.23-4.84.14-10.58-4.69-12.86"></svg:path><svg:path fill="url(#f2090id6)" d="M22.837 2.932c-4.2-1.98-9.22-.7-11.96 3.04l-5.24 7.14c-3.95 5.38-2 13.03 4.04 15.87c5.33 2.51 11.67.19 14.14-5.15l3.71-8.04c2.23-4.84.14-10.58-4.69-12.86"></svg:path><svg:path fill="url(#f2090id1)" d="M19.005 16a1.995 1.995 0 1 0 0-3.99a1.995 1.995 0 0 0 0 3.99"></svg:path><svg:path fill="url(#f2090id2)" d="M9.458 19c.834 0 1.51-.672 1.51-1.5s-.676-1.5-1.51-1.5s-1.51.672-1.51 1.5s.676 1.5 1.51 1.5"></svg:path><svg:path fill="url(#f2090id3)" d="M10.969 25.063a1.063 1.063 0 1 0 0-2.125a1.063 1.063 0 0 0 0 2.125"></svg:path><svg:path fill="url(#f2090id4)" d="M23.483 15.947c.46.265 1.079.055 1.383-.47c.303-.526.177-1.168-.283-1.434c-.46-.265-1.08-.054-1.383.471c-.303.526-.177 1.167.283 1.433"></svg:path><svg:path fill="url(#f2090id5)" d="M19.518 7.985a1.482 1.482 0 1 0 0-2.964a1.482 1.482 0 0 0 0 2.964"></svg:path><svg:defs><svg:radialgradient id="f2090id0" cx="0" cy="0" r="1" gradientTransform="rotate(126.229 11.694 10.407)scale(31.302)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFE7BB"></svg:stop><svg:stop offset=".399" stop-color="#EAB994"></svg:stop><svg:stop offset=".657" stop-color="#DD977F"></svg:stop><svg:stop offset=".781" stop-color="#D27E76"></svg:stop><svg:stop offset=".885" stop-color="#C96A6F"></svg:stop></svg:radialgradient><svg:radialgradient id="f2090id1" cx="0" cy="0" r="1" gradientTransform="matrix(3.25 -2 2 3.25 17.75 14.938)" gradientUnits="userSpaceOnUse"><svg:stop offset=".056" stop-color="#DC9B66"></svg:stop><svg:stop offset=".506" stop-color="#CC7D4F"></svg:stop><svg:stop offset="1" stop-color="#CA7544"></svg:stop></svg:radialgradient><svg:radialgradient id="f2090id2" cx="0" cy="0" r="1" gradientTransform="matrix(2.28125 -.875 .88127 2.29759 8.5 18.031)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#BB8056"></svg:stop><svg:stop offset="1" stop-color="#B0693C"></svg:stop></svg:radialgradient><svg:radialgradient id="f2090id3" cx="0" cy="0" r="1" gradientTransform="rotate(-30.507 50.525 -6.72)scale(1.41458)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#C5805E"></svg:stop><svg:stop offset="1" stop-color="#B9663B"></svg:stop></svg:radialgradient><svg:radialgradient id="f2090id4" cx="0" cy="0" r="1" gradientTransform="matrix(1.1875 -1.09375 1.153 1.25183 23.625 15.75)" gradientUnits="userSpaceOnUse"><svg:stop offset=".056" stop-color="#DC9B66"></svg:stop><svg:stop offset=".852" stop-color="#CA7544"></svg:stop></svg:radialgradient><svg:radialgradient id="f2090id5" cx="0" cy="0" r="1" gradientTransform="matrix(2.71875 .59094 -.69305 3.18853 18.281 6.503)" gradientUnits="userSpaceOnUse"><svg:stop offset=".056" stop-color="#DC9B66"></svg:stop><svg:stop offset=".852" stop-color="#C97C34"></svg:stop></svg:radialgradient><svg:lineargradient id="f2090id6" x1="5.375" x2="14.625" y1="8.75" y2="12.875" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#AB8261"></svg:stop><svg:stop offset="1" stop-color="#AE8462" stop-opacity="0"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class FluentEmojiPotatoIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

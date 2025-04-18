@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiFloatingIceBrokenIcon],svg[openmoji-floating-ice-broken-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#92d3f5" d="M4 4h64v64H4z"></svg:path><svg:path fill="#61b2e4" d="m9.884 36.774l-.543.837a6.06 6.06 0 0 0-.227 6.205l4.315 7.868a6.05 6.05 0 0 0 1.68 1.935l5.594 4.188a6.06 6.06 0 0 0 3.479 1.206l16.984.422a6 6 0 0 0 1.879-.25l11.444-3.41a6.06 6.06 0 0 0 3.527-2.796l5.339-9.334a6.055 6.055 0 0 0-1.605-7.837"></svg:path><svg:path fill="#fff" d="M20.039 25.833L9.884 32.48l4.176 8.353l8.19 6.132h19.71l13.227-4.578l6.563-11.579l-13-7.975l-18.25 5.75z"></svg:path><svg:path fill="#fff" d="M9.884 32.48v7l4.176 8.353l8.19 6.132h19.71l13.227-4.578l6.563-11.579v-7"></svg:path><svg:path fill="#fff" d="m33.25 53.965l1.125-3.007l-1.5-1.375l1.062-2.618M30.5 28.583l4.188 5.313l-3.188 3.687l1.094 3.25l-1.781 2.125a32 32 0 0 0 1.125 4.007"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M20.039 25.833L9.884 32.48l4.176 8.353l8.19 6.132h19.71l13.227-4.578l6.563-11.579l-13-7.975l-18.25 5.75z"></svg:path><svg:path d="M9.884 32.48v7l4.176 8.353l8.19 6.132h19.71l13.227-4.578l6.563-11.579v-7"></svg:path><svg:path d="m33.25 53.965l1.125-3.007l-1.5-1.375l1.062-2.618M30.5 28.583l4.188 5.313l-3.188 3.687l1.094 3.25l-1.781 2.125a32 32 0 0 0 1.125 4.007"></svg:path></svg:g>`,
+})
+export class OpenmojiFloatingIceBrokenIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

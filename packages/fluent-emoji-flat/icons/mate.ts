@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatMateIcon],svg[fluent-emoji-flat-mate-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#86D72F" d="M16 24a8 8 0 0 0 3.564-15.164L19.16 8l-.927.316A8 8 0 1 0 16 24"></svg:path><svg:path fill="#8C5543" d="M6.5 13s0-.5-.5-1l.194-.154h19.559L26 12c-.5.5-.5 1-.5 1c0 1 1.5 2.5 1.5 6c0 6.5-5 11-11 11S5 25.5 5 19c0-3.5 1.5-5 1.5-6"></svg:path><svg:path fill="#D3D3D3" d="m21.4 2.033l1.91 1.1c.14.08.17.27.05.4l-1.9 2.02l-.244.42l.034.02l-1.65 2.86a8 8 0 0 0-1.416-.551l1.766-3.059l.035.02l.245-.42l.8-2.66c.05-.16.23-.23.37-.15M6 10a1 1 0 1 0 0 2h20a1 1 0 1 0 0-2z"></svg:path><svg:path fill="#F9C23C" d="m21.01 6.443l-1.33-.77a.505.505 0 0 1 .51-.87l1.33.77c.24.14.32.45.18.69c-.14.23-.45.32-.69.18"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatMateIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

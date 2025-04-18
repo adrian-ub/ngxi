@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tdesignVerifyFilledIcon],svg[tdesign-verify-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 3v18h22V3zm4 6h4.5v2H5zm0 4h4.5v2H5zm13-3a2.5 2.5 0 0 1-1.32 2.204A3.5 3.5 0 0 1 19 15.5v1h-7v-1c0-1.519.967-2.811 2.32-3.296A2.5 2.5 0 1 1 18 10"></svg:path>`,
+})
+export class TdesignVerifyFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

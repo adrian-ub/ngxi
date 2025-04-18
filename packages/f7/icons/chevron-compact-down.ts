@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7ChevronCompactDownIcon],svg[f7-chevron-compact-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m8.606 26.617l15.984 6.258c1.078.422 2.367.938 3.422.938c1.031 0 2.343-.516 3.422-.938l15.984-6.258c.914-.351 1.477-1.148 1.477-2.015c0-1.383-1.008-2.415-2.368-2.415c-.68 0-1.64.399-2.226.61l-16.29 6.398l-16.288-6.398c-.61-.211-1.524-.61-2.227-.61c-1.383 0-2.39 1.032-2.39 2.415c0 .867.585 1.664 1.5 2.015"></svg:path>`,
+})
+export class F7ChevronCompactDownIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

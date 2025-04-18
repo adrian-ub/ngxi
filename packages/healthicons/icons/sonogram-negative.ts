@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[healthiconsSonogramNegativeIcon],svg[healthicons-sonogram-negative-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:g fill="currentColor" clip-path="url(#healthiconsSonogramNegative0)"><svg:path d="M29.589 26.645c2.55 0 4.617-2.01 4.617-4.492c0-1.829-1.124-3.403-2.737-4.103c-1.18-.513-2.547-.35-3.74.13c-1.872.755-2.757 2.046-2.757 3.973q0 .541.126 1.047a.16.16 0 0 1-.13.197a.17.17 0 0 1-.186-.12l-.993-3.37c-.425-1.022-1.622-1.515-2.672-1.1s-1.557 1.578-1.131 2.6l-.003-.006l.005.014a42 42 0 0 1 .248.774a231 231 0 0 1 .495 1.635l.656 2.159a.184.184 0 0 1-.341.135c-.215-.43-.66-1.32-.81-1.597a17 17 0 0 0-.344-.608a4 4 0 0 0-.178-.277a2.2 2.2 0 0 0-.375-.418a2.1 2.1 0 0 0-.597-.362a2.2 2.2 0 0 0-.836-.15a2.4 2.4 0 0 0-.362.034a3 3 0 0 0-.372.09a7 7 0 0 0-.53.189c-.341.134-.76.314-1.16.492c-.355.156-.686.305-.971.433c-.422.19-.744.335-.894.393c-1.053.41-1.565 1.571-1.144 2.595c.42 1.024 1.614 1.522 2.667 1.113c.246-.096.765-.329 1.294-.566l.607-.272c.132.253.273.527.418.81c1.155 2.255 2.893 4.373 5.407 4.01c3.22-.46 4.657-2.923 5.577-4.498c.213-.366.4-.684.573-.918q.282.034.573.034"></svg:path><svg:path fill-rule="evenodd" d="M48 0H0v48h48zM9.583 32.512c-1.077-.33-1.619-1.512-1.215-2.563l6.408-16.687c.372-.968 1.42-1.484 2.431-1.258c2.188.488 4.46.745 6.792.745s4.605-.258 6.794-.746c1.011-.225 2.059.291 2.43 1.259l6.409 16.687c.403 1.051-.139 2.232-1.215 2.562a49 49 0 0 1-14.418 2.16a49 49 0 0 1-14.416-2.16M41 11.5v2a1 1 0 1 0 2 0V11a1.5 1.5 0 0 0-1.5-1.5H39a1 1 0 1 0 0 2zm-32 0H7v2a1 1 0 1 1-2 0V11a1.5 1.5 0 0 1 1.5-1.5H9a1 1 0 1 1 0 2m32 25v-2a1 1 0 1 1 2 0V37a1.5 1.5 0 0 1-1.5 1.5H39a1 1 0 1 1 0-2zm-32 0H7v-2a1 1 0 1 0-2 0V37a1.5 1.5 0 0 0 1.5 1.5H9a1 1 0 1 0 0-2" clip-rule="evenodd"></svg:path></svg:g><svg:defs><svg:clippath id="healthiconsSonogramNegative0"><svg:path d="M0 0h48v48H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
+})
+export class HealthiconsSonogramNegativeIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

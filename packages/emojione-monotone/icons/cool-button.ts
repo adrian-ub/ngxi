@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneMonotoneCoolButtonIcon],svg[emojione-monotone-cool-button-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M39 26.285c-1.377 0-2.5 1.025-2.5 2.285v6.857c0 1.26 1.123 2.287 2.5 2.287c1.379 0 2.5-1.027 2.5-2.287V28.57c0-1.259-1.121-2.285-2.5-2.285m-12 0c-1.377 0-2.5 1.025-2.5 2.285v6.857c0 1.26 1.123 2.287 2.5 2.287c1.379 0 2.5-1.027 2.5-2.287V28.57c0-1.259-1.121-2.285-2.5-2.285"></svg:path><svg:path fill="currentColor" d="M52 2H12C6.477 2 2 6.477 2 12v40c0 5.523 4.477 10 10 10h40c5.523 0 10-4.477 10-10V12c0-5.523-4.477-10-10-10M15 37.715c1.379 0 2.5-1.027 2.5-2.287H20C20 37.949 17.758 40 15 40c-2.756 0-5-2.051-5-4.572V28.57c0-2.52 2.244-4.57 5-4.57c2.758 0 5 2.051 5 4.57h-2.5c0-1.26-1.121-2.285-2.5-2.285c-1.377 0-2.5 1.025-2.5 2.285v6.857c0 1.261 1.123 2.288 2.5 2.288m17-2.287C32 37.949 29.756 40 27 40s-5-2.051-5-4.572V28.57c0-2.52 2.244-4.57 5-4.57s5 2.051 5 4.57zm12 0C44 37.949 41.756 40 39 40c-2.758 0-5-2.051-5-4.572V28.57c0-2.52 2.242-4.57 5-4.57c2.756 0 5 2.051 5 4.57zM54 40h-8V24h2.287v13.715H54z"></svg:path>`,
+})
+export class EmojioneMonotoneCoolButtonIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

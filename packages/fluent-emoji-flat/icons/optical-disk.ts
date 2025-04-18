@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatOpticalDiskIcon],svg[fluent-emoji-flat-optical-disk-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#B4ACBC" d="M16 30c7.732 0 14-6.268 14-14S23.732 2 16 2S2 8.268 2 16s6.268 14 14 14m0-10a4 4 0 1 1 0-8a4 4 0 0 1 0 8"></svg:path><svg:path fill="#F3EEF8" d="M19.535 12.465A4.98 4.98 0 0 0 16 11c-.903 0-1.75.24-2.481.658l-3.227-5.646c-.41-.719-.164-1.643.598-1.969A13 13 0 0 1 16 3c3.05 0 5.855 1.05 8.073 2.81c.65.515.644 1.472.058 2.058zm-7.07 7.07A4.98 4.98 0 0 0 16 21c.903 0 1.75-.24 2.481-.658l3.226 5.646c.411.719.164 1.643-.597 1.97A13 13 0 0 1 16 29a12.94 12.94 0 0 1-8.073-2.81c-.65-.515-.645-1.473-.059-2.058z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatOpticalDiskIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

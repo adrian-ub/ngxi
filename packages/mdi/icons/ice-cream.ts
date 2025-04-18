@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiIceCreamIcon],svg[mdi-ice-cream-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.5 6.05C17.25 3.22 14.89 1 12 1S6.75 3.22 6.5 6.05C5.09 6.28 4 7.5 4 9c0 1.66 1.34 3 3 3l5 10l5-10c1.66 0 3-1.34 3-3c0-1.5-1.09-2.72-2.5-2.95M12 17.53l-3.11-6.22c.06-.05.11-.1.19-.15a5.5 5.5 0 0 0 5.84 0c.08.05.13.1.19.15z"></svg:path>`,
+})
+export class MdiIceCreamIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

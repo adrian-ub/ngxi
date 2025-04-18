@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fxemojiAlienmonsterIcon],svg[fxemoji-alienmonster-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#7F4AFF" d="M111.051 442.516h36.658v36.658h-36.658zm-1.291-290.235h36.658v-36.658H73.102v73.316h36.658zm36.658-109.974H109.76v36.658h36.658zm255.715 146.632h36.658v-73.316h-73.316v36.658h36.658zm0-146.632h-36.658v36.658h36.658zm73.209 109.867v108.549h-73.028v-36.23h-36.082V188.28h-36.97v-73.316h-36.658v73.316h-73.316v-73.316H182.63v73.316h-36.658v36.213H109.76v36.23H36.658V152.281H0v108.656h36.299v36.444h73.461v108.904h37.949v36.23h71.77v-36.23h73.898v36.23h71.77v-36.23h37.166V297.381h73.135V260.83H512V152.174zM365.475 479.173h36.658v-36.658h-36.658z"></svg:path><svg:path fill="#132028" d="M218.573 332.941h-72.6v-72.002h72.6zm147.659-72.002h-72.201v72.002h72.201z"></svg:path>`,
+})
+export class FxemojiAlienmonsterIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7DeviceLaptopIcon],svg[f7-device-laptop-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M46 42h7.5a.5.5 0 0 1 .5.5V44c0 1.105-2.895 2-4 2H6c-1.105 0-4-.895-4-2v-1.5a.5.5 0 0 1 .5-.5H10a4 4 0 0 1-4-4V14a4 4 0 0 1 4-4h36a4 4 0 0 1 4 4v24a4 4 0 0 1-4 4M10 15v22a1 1 0 0 0 1 1h34a1 1 0 0 0 1-1V15a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1m14 26a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2z"></svg:path>`,
+})
+export class F7DeviceLaptopIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

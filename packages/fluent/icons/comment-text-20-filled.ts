@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCommentText20FilledIcon],svg[fluent-comment-text-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.4 17.604c.33.437.957.526 1.399.2l4.011-2.962h4.59c1.436 0 2.6-1.149 2.6-2.566v-6.71C18 4.149 16.836 3 15.4 3H4.6C3.164 3 2 4.149 2 5.566v6.71c0 1.418 1.164 2.566 2.6 2.566h.6v2.171c0 .213.07.42.2.591M9.5 10a.5.5 0 0 1 0-1H15a.5.5 0 0 1 0 1zm-2-1a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zM5 11h5.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m7.5 1a.5.5 0 0 1 0-1H15a.5.5 0 0 1 0 1z"></svg:path>`,
+})
+export class FluentCommentText20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

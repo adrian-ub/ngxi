@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenArrowLeftSmFill12Icon],svg[garden-arrow-left-sm-fill-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m2.157 6.835l2.386 2.097a.3.3 0 0 0 .29.05c.1-.036.165-.12.167-.215V7h4.571c.237 0 .429-.224.429-.5S9.808 6 9.571 6H5V4.237c0-.213-.29-.317-.457-.165L2.157 6.169A.44.44 0 0 0 2 6.502c0 .125.057.245.157.333"></svg:path>`,
+})
+export class GardenArrowLeftSmFill12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

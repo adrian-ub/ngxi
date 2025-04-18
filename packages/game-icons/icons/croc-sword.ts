@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsCrocSwordIcon],svg[game-icons-croc-sword-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M59.563 22.22c-19.707 5.93-33.054 18.817-39.407 39.436c52.72 22.56 98.5 67.61 122.188 119.97L83.75 240.218l14.47 14.436l155.968-155.97L239.75 84.22l-60.188 60.186c-25.63-11.673-49.807-28.375-70.218-48.78C87.88 74.167 71.057 49.08 59.564 22.218zm172.062 125.436l-36.47 36.47l58.126 58.905l61.94 61.94l62.374 61.56l61.125 61.94l56.967 56.217V411.72L231.625 147.655zm-52.156 52.156l-31.345 31.375l262.438 262.438h24.343l-9.406-51.938l-52.438-9.5l-9.093-52.03l-52.47-9.5l-9.47-52.47l-52.467-9.5l-9.5-52.437l-52.032-9.094z"></svg:path>`,
+})
+export class GameIconsCrocSwordIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

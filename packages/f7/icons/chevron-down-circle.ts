@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7ChevronDownCircleIcon],svg[f7-chevron-down-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M28 51.906c13.055 0 23.906-10.828 23.906-23.906c0-13.055-10.875-23.906-23.93-23.906C14.899 4.094 4.095 14.945 4.095 28c0 13.078 10.828 23.906 23.906 23.906m0-3.984C16.937 47.922 8.1 39.062 8.1 28c0-11.04 8.813-19.922 19.876-19.922c11.039 0 19.921 8.883 19.945 19.922c.023 11.063-8.883 19.922-19.922 19.922m2.32-13.078l9.188-9.774c.703-.726.726-1.828.07-2.46c-.703-.75-1.852-.774-2.508-.047L28 32.172l-9.07-9.61c-.68-.726-1.829-.703-2.532.047c-.656.633-.609 1.735.07 2.461l9.212 9.774c1.453 1.547 3.164 1.547 4.64 0"></svg:path>`,
+})
+export class F7ChevronDownCircleIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

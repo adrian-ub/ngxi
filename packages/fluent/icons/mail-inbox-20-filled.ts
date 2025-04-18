@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMailInbox20FilledIcon],svg[fluent-mail-inbox-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 6a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3zm1 4h3.5a.5.5 0 0 1 .5.5v.011l.004.06a2.6 2.6 0 0 0 .256.955c.126.254.308.492.572.667c.26.174.63.307 1.168.307s.907-.133 1.168-.307c.264-.175.446-.413.572-.667a2.6 2.6 0 0 0 .26-1.015v-.013a.5.5 0 0 1 .5-.498H16V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2zm4 .5v-.002Z"></svg:path>`,
+})
+export class FluentMailInbox20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

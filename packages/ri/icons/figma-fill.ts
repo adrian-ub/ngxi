@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[riFigmaFillIcon],svg[ri-figma-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.333 5.333A3.333 3.333 0 0 1 8.666 2h6.667a3.333 3.333 0 1 1 0 6.667H12v10a3.333 3.333 0 1 1-3.334-3.334a3.333 3.333 0 1 1 0-6.666a3.333 3.333 0 0 1-3.333-3.334M12 12a3.333 3.333 0 1 0 6.666 0A3.333 3.333 0 0 0 12 12"></svg:path>`,
+})
+export class RiFigmaFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiWavingHandMediumSkinToneIcon],svg[openmoji-waving-hand-medium-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#c19a65" d="M18.658 19.24a3.531 3.531 0 1 0-5.564 4.25l11.533 15.1l2.688 3.387l-7.89-10.331a3.531 3.531 0 1 0-5.564 4.249l7.891 10.331l6.27 7.899c5.468 6.273 14.515 5.93 20.787.465a19.62 19.62 0 0 0 6.515-12.31c.386-4.233.807-15.301.807-15.301c-.182-2.601-3.135-4.524-3.515-3.18l-4.894 9.757l-3.366-4.223l3.366 4.223l-3.366-4.223l-13.465-17.208a3.531 3.531 0 1 0-5.563 4.249l4.249 5.563L36 30.417l-13.419-17.68a3.531 3.531 0 1 0-5.563 4.248L31.689 36"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M18.658 19.24a3.531 3.531 0 1 0-5.564 4.25l11.533 15.1l2.688 3.387l-7.89-10.331a3.531 3.531 0 1 0-5.564 4.249l7.891 10.331l6.27 7.899c5.468 6.273 14.515 5.93 20.787.465a19.62 19.62 0 0 0 6.515-12.31c.386-4.233.807-15.301.807-15.301c-.182-2.601-3.135-4.524-3.515-3.18l-4.894 9.757l-3.366-4.223l3.366 4.223l-3.366-4.223l-13.465-17.208a3.531 3.531 0 1 0-5.563 4.249l4.249 5.563L36 30.417l-13.419-17.68a3.531 3.531 0 1 0-5.563 4.248L31.689 36"></svg:path><svg:path stroke-miterlimit="10" d="M11.673 42.872c0 2.566 1.747 4.643 3.905 4.643m-8.517-5.078c0 5.596 3.81 10.124 8.517 10.124m29.684-31.323c0-2.567-1.747-4.643-3.906-4.643m8.517 5.078c0-5.596-3.81-10.124-8.517-10.124"></svg:path></svg:g>`,
+})
+export class OpenmojiWavingHandMediumSkinToneIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

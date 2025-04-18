@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphKeyIcon],svg[si-glyph-key-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.885.764C8.678 1.971 8.862 3.473 9.609 4.22l1.121 1.121l-9.496 9.497c-.246.246-.229.667.041.937s.689.288.937.04l1.387-1.386l1.556 1.555l.534-.532l.444-.446l.533-.532l-1.556-1.557l1.355-1.355l1.066 1.066l.979-.979l-1.065-1.065l4.263-4.265l1.121 1.121c.783.783 2.434.748 3.457-.275s.82-2.748.111-3.458L13.176.488c-.592-.593-2.248-.767-3.291.276m5.42 3.969c.297.297-.162 1.12-.27 1.228c-.104.104-.926.562-1.224.265l-2.946-2.945c-.297-.297.162-1.118.268-1.224c.107-.107.929-.565 1.226-.27z"></svg:path>`,
+})
+export class SiGlyphKeyIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}

@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsQlikIcon],svg[simple-icons-qlik-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="m23.752 20.137l-3.13-2.633a11.2 11.2 0 0 0 1.73-5.965C22.352 5.37 17.344.362 11.176.362S0 5.37 0 11.54s5.008 11.176 11.176 11.176c2.393 0 4.622-.756 6.444-2.044l3.333 2.799s.497.423.92-.074l1.989-2.357c-.019 0 .386-.497-.11-.902m-5.708-8.598a6.867 6.867 0 1 1-13.735 0a6.867 6.867 0 0 1 13.735 0m-11.287 0a4.4 4.4 0 1 1 8.8 0a4.4 4.4 0 0 1-8.8 0"></svg:path>`,
 })
 export class SimpleIconsQlikIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

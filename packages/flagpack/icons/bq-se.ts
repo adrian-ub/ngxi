@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[flagpackBqSeIcon],svg[flagpack-bq-se-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#00268D" fill-rule="evenodd" d="M0 0h32v24H0z" clip-rule="evenodd"></svg:path><svg:path fill="#00268D" stroke="#E31D1C" stroke-width="2" d="M1 1h30v22H1z"></svg:path><svg:path fill="#E31D1C" d="M15 0h2v24h-2z"></svg:path><svg:path fill="#E31D1C" d="M0 13v-2h32v2z"></svg:path><svg:path fill="#059334" d="M11.609 16H25l-1.416-1.276s-2.831-2.524-3.013-2.64c-.183-.115-.484-.165-.826.203c-.343.367-.54-.202-.824-.202c-.285 0-.406 0-.82.471l-1.904 2.168h-2.19s-.369-.279-.58-.18s-1.396-1.099-1.818-1.188c-.423-.09-.7.325-.7.655s-.2-.303-.603-.117c-.405.185-.274.65-.274.65S11.34 16 11.609 16"></svg:path><svg:path fill="#FEDA00" fill-rule="evenodd" d="m15.505 11.301l-.927.699l.34-1.154l-.918-.707h1.144L15.504 9l.383 1.14H17l-.91.706l.346 1.154z" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class FlagpackBqSeIcon {
+  readonly viewBox = input("0 0 32 24")
+  readonly width = input("1.34em")
+  readonly height = input("1em")
+}

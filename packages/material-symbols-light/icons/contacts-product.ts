@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightContactsProductIcon],svg[material-symbols-light-contacts-product-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.76 20.462q-.35 0-.613-.277q-.264-.277-.264-.62v-2.223q0-1.906 1.184-3.367q1.185-1.461 3.046-1.864q-.853.6-1.322 1.511t-.47 1.942v3.997q0 .232.075.463q.075.232.212.437zm3.108 0q-.359 0-.623-.267t-.264-.63v-4q0-1.5 1.035-2.532Q10.052 12 11.552 12h4.01q1.484 0 2.517 1.033t1.032 2.533v1.33q0 1.5-1.032 2.533t-2.533 1.033zM12 10.208q-1.393 0-2.364-.971t-.97-2.364t.97-2.364q.971-.97 2.364-.97t2.364.97t.97 2.364t-.97 2.364q-.971.97-2.364.97"></svg:path>`,
+})
+export class MaterialSymbolsLightContactsProductIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

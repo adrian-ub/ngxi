@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeNgGuardDartIcon],svg[vscode-icons-file-type-ng-guard-dart-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#f6ea1c" d="M2.75 6.668L15.85 2v27.987L4.787 23.87Z"></svg:path><svg:path fill="#7f8006" d="m15.85 2l13.4 4.588l-2.187 17.2l-11.213 6.2Z"></svg:path><svg:path fill="#fff" d="m15.85 5.138l8.517 18.222H21.46l-1.817-4.16H15.85v-2.477h2.766L15.85 11l-2.326 5.727h2.326V19.2h-3.465l-1.628 4.16H7.623Z"></svg:path><svg:path fill="#fff" d="m29.035 22.675l-1.744-1.7l-.009-.009a3.07 3.07 0 0 0-1.585-.744l-.443-1.061a.3.3 0 0 0-.059-.088l-1.421-1.415a.86.86 0 0 0-.562-.247h-.034a.83.83 0 0 0-.561.218l-3.6 2.071a.275.275 0 0 0-.223.23l-2.062 3.554a.83.83 0 0 0 .028 1.152l1.77 1.763a.3.3 0 0 0 .094.061l.749.294a3.05 3.05 0 0 0 .717 1.42l.009.009l1.709 1.74a.28.28 0 0 0 .2.083H26.9a.276.276 0 0 0 .271-.223l.286-1.491l1.438-.273a.274.274 0 0 0 .224-.27v-4.873a.27.27 0 0 0-.084-.201"></svg:path><svg:path fill="#215896" d="m19.094 19.968l-2.136 3.68a.57.57 0 0 0-.163.394a.56.56 0 0 0 .166.4l1.77 1.764l6.921 2.713l1.565-.866l-.043-.043h-.011l-4.343-4.33Z"></svg:path><svg:path fill="#66c3fa" d="M23.178 17.69a.56.56 0 0 0-.394.162l-3.7 2.129l3.687 3.674L27.2 28.08l.845-1.517L25 19.274l-1.421-1.415a.56.56 0 0 0-.4-.166Z"></svg:path><svg:path fill="#235997" d="m19.069 19.974l3.771 3.762l4.341 4.331l1.653-.314V22.88l-1.744-1.7a2.8 2.8 0 0 0-1.56-.693v-.019Z"></svg:path><svg:path fill="#58b6f0" d="m19.1 19.994l3.773 3.76l4.342 4.328l-.315 1.651h-4.892l-1.708-1.74a2.8 2.8 0 0 1-.694-1.555h-.019Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeNgGuardDartIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

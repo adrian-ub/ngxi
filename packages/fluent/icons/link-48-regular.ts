@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLink48RegularIcon],svg[fluent-link-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M34 14c5.523 0 10 4.477 10 10c0 5.43-4.327 9.848-9.72 9.996L34 34h-5.75a1.25 1.25 0 0 1-.128-2.494l.128-.006H34a7.5 7.5 0 0 0 .243-14.996L34 16.5h-5.75a1.25 1.25 0 0 1-.128-2.493L28.25 14zm-14.25 0a1.25 1.25 0 0 1 .128 2.494l-.128.006H14a7.5 7.5 0 0 0-.243 14.996L14 31.5h5.75a1.25 1.25 0 0 1 .128 2.493L19.75 34H14C8.477 34 4 29.523 4 24c0-5.43 4.327-9.848 9.72-9.996L14 14zM13 22.75h22a1.25 1.25 0 0 1 .128 2.494L35 25.25H13a1.25 1.25 0 0 1-.128-2.494zh22z"></svg:path>`,
+})
+export class FluentLink48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

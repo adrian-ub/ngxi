@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentSprayCan16FilledIcon],svg[fluent-spray-can-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14 1.5a.5.5 0 1 1 1 0a.5.5 0 0 1-1 0m-2 1a.5.5 0 1 1 1 0a.5.5 0 0 1-1 0M10.5 4a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m2 0a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1m2-1a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1M14 5.5a.5.5 0 1 1 1 0a.5.5 0 0 1-1 0m-3.012.936a.5.5 0 0 0-.134-.29L9 4.292V2.5a.5.5 0 0 0-.5-.5H6.501a.5.5 0 0 0-.5.5v1.793L4.147 6.146a.5.5 0 0 0-.134.29l-.004.017l-.002.009A.1.1 0 0 0 4 6.5v6.75c0 .966.784 1.75 1.75 1.75h3.5A1.75 1.75 0 0 0 11 13.25V6.5q-.001-.017-.005-.031l-.002-.007zM7.001 3h1v1h-1zm-.293 2h1.586l1 1H5.708z"></svg:path>`,
+})
+export class FluentSprayCan16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

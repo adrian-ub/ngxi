@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[subwayCercle6Icon],svg[subway-cercle-6-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0m0 42.7c35.4 0 64 28.6 64 64s-28.6 64-64 64s-64-28.6-64-64s28.6-64 64-64M53.3 213.3c0-35.4 28.6-64 64-64s64 28.6 64 64s-28.6 64-64 64s-64-28.6-64-64m117.4 224c-35.4 0-64-28.6-64-64s28.6-64 64-64s64 28.6 64 64s-28.7 64-64 64M213.3 256c0-23.5 19.1-42.7 42.7-42.7s42.7 19.1 42.7 42.7s-19.1 42.7-42.7 42.7s-42.7-19.2-42.7-42.7m128 181.3c-35.4 0-64-28.6-64-64s28.6-64 64-64s64 28.6 64 64s-28.6 64-64 64m53.4-160c-35.4 0-64-28.6-64-64s28.6-64 64-64s64 28.6 64 64s-28.7 64-64 64"></svg:path>`,
+})
+export class SubwayCercle6Icon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

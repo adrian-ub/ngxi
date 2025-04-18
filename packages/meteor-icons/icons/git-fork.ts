@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[meteorIconsGitForkIcon],svg[meteor-icons-git-fork-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="6" cy="5" r="3"></svg:circle><svg:circle cx="18" cy="5" r="3"></svg:circle><svg:circle cx="12" cy="19" r="3"></svg:circle><svg:path d="M6 8v1a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V8m-6 4v4"></svg:path></svg:g>`,
+})
+export class MeteorIconsGitForkIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

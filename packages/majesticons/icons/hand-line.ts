@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[majesticonsHandLineIcon],svg[majesticons-hand-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M13 6V4.5A1.5 1.5 0 0 0 11.5 3v0A1.5 1.5 0 0 0 10 4.5V12m3-1V5.5A1.5 1.5 0 0 1 14.5 4v0A1.5 1.5 0 0 1 16 5.5V10m-6-3V5.5A1.5 1.5 0 0 0 8.5 4v0A1.5 1.5 0 0 0 7 5.5v6M7 14v-2.5A1.5 1.5 0 0 0 5.5 10v0A1.5 1.5 0 0 0 4 11.5v2C4 16 5.5 21 11.5 21c2.5 0 7.5-1.5 7.5-7.5v-4A1.5 1.5 0 0 0 17.5 8v0A1.5 1.5 0 0 0 16 9.5V12"></svg:path>`,
+})
+export class MajesticonsHandLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

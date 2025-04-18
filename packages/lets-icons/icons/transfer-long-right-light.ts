@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsTransferLongRightLightIcon],svg[lets-icons-transfer-long-right-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M2 10h12V6.435a.2.2 0 0 1 .33-.152L21 12l-6.67 5.717a.2.2 0 0 1-.33-.152V14H2"></svg:path>`,
+})
+export class LetsIconsTransferLongRightLightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

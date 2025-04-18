@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsSwapVerticalCircleRoundedIcon],svg[material-symbols-swap-vertical-circle-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 8.85V12q0 .425.288.713T10 13t.713-.288T11 12V8.85l.9.875q.275.275.688.275t.712-.3q.275-.275.275-.7t-.275-.7l-2.575-2.575q-.3-.3-.712-.3t-.713.3L6.7 8.3q-.275.275-.288.688T6.7 9.7q.275.275.688.288t.712-.263zm4 6.3l-.9-.875Q11.825 14 11.413 14t-.713.3q-.275.275-.275.7t.275.7l2.6 2.6q.3.3.713.3t.712-.3l2.575-2.6q.275-.275.288-.687T17.3 14.3q-.275-.275-.687-.288t-.713.263l-.9.875V12q0-.425-.288-.712T14 11t-.712.288T13 12zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"></svg:path>`,
+})
+export class MaterialSymbolsSwapVerticalCircleRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

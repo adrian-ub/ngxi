@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiSurveillanceIcon],svg[openmoji-surveillance-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:path id="openmojiSurveillance0" fill="none" stroke="#000" d="m17.515 23.408l5-8.66l31.176 18l-5 8.66z"></svg:path></svg:defs><svg:path fill="#D0CFCE" d="M33.1 58h-3c-.6 0-1-.4-1-1V37c0-.6.4-1 1-1h3c.6 0 1 .4 1 1v20c0 .6-.5 1-1 1"></svg:path><svg:path fill="#9B9B9A" d="M38.4 35.4c1.7-2.9.7-6.5-2.2-8.2s-6.5-.7-8.2 2.2s-.7 6.5 2.2 8.2s6.5.7 8.2-2.2"></svg:path><svg:path fill="#FFF" d="m17.515 23.408l5-8.66l31.176 18l-5 8.66z"></svg:path><svg:path fill="#D0CFCE" d="m17.513 23.41l5-8.66l31.176 17.999l-5 8.66z"></svg:path><svg:path fill="#9B9B9A" d="M42.1 37.6L22.5 14.8l-5 8.6z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M30 36.4V57m4.1-17.6V57m-5.3-27.1c-1.3 2.2-.7 4.9 1.2 6.4"></svg:path><svg:use href="#openmojiSurveillance0" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></svg:use><svg:use href="#openmojiSurveillance0" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></svg:use><svg:path d="M52.7 34.5c1.4.8 1.9 2.7 1.1 4.1s-2.7 1.9-4.1 1.1z"></svg:path><svg:path fill="#D22F27" d="M54.2 37.1c0 1.7-1.4 3-3 3c-.2 0-.4 0-.6-.1l2.9-5c.4.6.7 1.3.7 2.1"></svg:path>`,
+})
+export class OpenmojiSurveillanceIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsMapMarker5Icon],svg[lineicons-map-marker-5-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M12.504 6.475a3.835 3.835 0 1 0 0 7.67a3.835 3.835 0 0 0 0-7.67m-2.335 3.835a2.335 2.335 0 1 1 4.67 0a2.335 2.335 0 0 1-4.67 0"></svg:path><svg:path d="M12.503 2.84a7.47 7.47 0 0 0-7.472 7.472c0 2.804 1.072 5.357 2.345 7.406c1.275 2.053 2.782 3.648 3.727 4.551a2.033 2.033 0 0 0 2.836-.004c.94-.904 2.439-2.5 3.706-4.551c1.266-2.049 2.33-4.6 2.33-7.402a7.47 7.47 0 0 0-7.472-7.472m-5.972 7.472a5.972 5.972 0 1 1 11.944 0c0 2.425-.925 4.702-2.106 6.613c-1.179 1.909-2.583 3.406-3.47 4.26a.534.534 0 0 1-.76 0c-.89-.852-2.303-2.35-3.49-4.258c-1.187-1.913-2.118-4.19-2.118-6.615"></svg:path></svg:g>`,
+})
+export class LineiconsMapMarker5Icon {
+  readonly viewBox = input("0 0 25 25")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

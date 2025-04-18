@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsKick24Icon],svg[qlementine-icons-kick-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 11.5C1 5.7 5.7 1 11.5 1S22 5.7 22 11.5c0 3.18-1.42 6.03-3.65 7.96a.5.5 0 0 0 .652.758l.237-.21l1.85 2.77a.5.5 0 1 0 .832-.554l-1.96-2.93a11.44 11.44 0 0 0 3.04-7.79c0-6.35-5.15-11.5-11.5-11.5s-11.5 5.15-11.5 11.5c0 3 1.15 5.74 3.04 7.79l-1.96 2.93a.5.5 0 1 0 .832.554l1.85-2.77l.237.21a.5.5 0 1 0 .653-.758a10.47 10.47 0 0 1-3.65-7.96z"></svg:path><svg:path fill="currentColor" d="M10.3 18a1.5 1.5 0 0 0-1.48 1.25l-.5 3A1.503 1.503 0 0 0 9.8 24h3.46c.927 0 1.63-.832 1.48-1.75l-.5-3A1.5 1.5 0 0 0 12.76 18h-.729v-3.05a2.5 2.5 0 1 0-1 0V18h-.729z"></svg:path>`,
+})
+export class QlementineIconsKick24Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

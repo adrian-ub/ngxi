@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentHomeMore32FilledIcon],svg[fluent-home-more-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.105 2.778a3.25 3.25 0 0 0-4.21 0l-9.75 8.287A3.25 3.25 0 0 0 3 13.541v12.215A3.245 3.245 0 0 0 6.245 29h19.51A3.245 3.245 0 0 0 29 25.756V13.54a3.25 3.25 0 0 0-1.145-2.476zM12 16.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0M10.5 23a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3m5.5 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3m0-5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3m5.5 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3m0 5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3"></svg:path>`,
+})
+export class FluentHomeMore32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

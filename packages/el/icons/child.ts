@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[elChildIcon],svg[el-child-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M604.729 0C469.354 0 359.598 110.317 359.598 246.429c0 136.114 109.765 246.471 245.132 246.471c135.375 0 245.089-110.35 245.089-246.471C849.818 110.314 740.103 0 604.729 0M464.355 287.402h279.366c0 77.145-62.56 139.704-139.704 139.704s-139.662-62.559-139.662-139.704m-52.274 244.336c-127.661 2.621-211.637 85.551-206.878 235.714L204.952 1200h146.945V811.356c1.271-34.026 51.241-45.945 57.673 0V1200h386.133V811.356c1.271-34.026 51.241-45.945 57.673 0V1200h141.672V767.452c-.858-118.72-49.572-236.814-205.581-235.714z"></svg:path>`,
+})
+export class ElChildIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

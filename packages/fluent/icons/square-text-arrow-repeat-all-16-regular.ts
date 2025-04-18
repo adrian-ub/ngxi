@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentSquareTextArrowRepeatAll16RegularIcon],svg[fluent-square-text-arrow-repeat-all-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 4.5A2.5 2.5 0 0 1 4.5 2h7A2.5 2.5 0 0 1 14 4.5v2.879l-.94-.94l-.06-.057V4.5A1.5 1.5 0 0 0 11.5 3h-7A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h1.791q.198.487.51.901q.04.052.08.099H4.5A2.5 2.5 0 0 1 2 11.5zm5.354 4H5.5a.5.5 0 0 1 0-1H10a4 4 0 0 0-2.646 1M10.5 6a.5.5 0 0 0 0-1h-5a.5.5 0 0 0 0 1zm1.854 1.146a.5.5 0 0 0-.708.708l.647.646H10a3 3 0 0 0-2.4 4.8a.5.5 0 1 0 .8-.6A2 2 0 0 1 10 9.5h2.293l-.647.646a.5.5 0 0 0 .708.708l1.5-1.5a.5.5 0 0 0 0-.708zM15.4 9.7a.5.5 0 0 0-.8.6a2 2 0 0 1-1.6 3.2h-2.293l.647-.646a.5.5 0 0 0-.708-.708l-1.5 1.5a.5.5 0 0 0 0 .708l1.5 1.5a.5.5 0 0 0 .708-.708l-.647-.646H13a3 3 0 0 0 2.4-4.8"></svg:path>`,
+})
+export class FluentSquareTextArrowRepeatAll16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLocalAtmRoundedIcon],svg[material-symbols-local-atm-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 14h-3q-.425 0-.712.288T9 15t.288.713T10 16h1q0 .425.288.713T12 17q.4 0 .563-.363T13 16h1q.425 0 .713-.288T15 15v-3q0-.425-.288-.712T14 11h-3v-1h3q.425 0 .713-.288T15 9t-.288-.712T14 8h-1q0-.425-.288-.712T12 7q-.4 0-.562.363T11 8h-1q-.425 0-.712.288T9 9v3q0 .425.288.713T10 13h3zm-9 6q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20z"></svg:path>`,
+})
+export class MaterialSymbolsLocalAtmRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

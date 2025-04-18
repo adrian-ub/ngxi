@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentArrowCircleDownRight16FilledIcon],svg[fluent-arrow-circle-down-right-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 2a6 6 0 1 1 0 12A6 6 0 0 1 8 2m1.5 4l-.09.007a.5.5 0 0 0-.401.402L9 6.5v1.794L6.854 6.146l-.069-.058a.5.5 0 0 0-.568 0l-.07.058l-.058.069a.5.5 0 0 0 0 .568l.058.07L8.294 9H6.5l-.09.009a.5.5 0 0 0 0 .984L6.5 10h3l.058-.005l.05-.007l.064-.019l.04-.016l.076-.044l.065-.056l.044-.05l.036-.053l.02-.039l.023-.059l.013-.047l.01-.085V6.5l-.007-.09a.5.5 0 0 0-.402-.402zl-.09.008z"></svg:path>`,
+})
+export class FluentArrowCircleDownRight16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

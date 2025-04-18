@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeSublimeIcon],svg[vscode-icons-file-type-sublime-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="url(#vscodeIconsFileTypeSublime0)" d="M35.995 26.563c0-.548-.405-.864-.902-.707L.902 36.698c-.498.158-.902.731-.902 1.278v11.081c0 .548.404.865.902.707l34.191-10.841c.497-.158.902-.731.902-1.279z" transform="translate(5.221 .176)scale(.59881)"></svg:path><svg:path fill="#ff9800" d="M26.344 2.002a.5.5 0 0 0-.107.022L5.762 8.516c-.189.06-.347.222-.444.414a.5.5 0 0 0-.097.307v6.681c0 .127.038.232.1.309c.096.19.254.35.44.41L26.24 23.13c.298.095.541-.096.541-.424V16.07c0-.328-.243-.67-.541-.764l-8.608-2.73l8.606-2.73c.298-.094.54-.435.54-.763V2.447c0-.287-.187-.468-.433-.445z"></svg:path><svg:defs><svg:lineargradient id="vscodeIconsFileTypeSublime0" x2="1" gradientTransform="matrix(3.0823 -10.306 8.7238 3.5658 19.839 42.498)" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#ff9700"></svg:stop><svg:stop offset=".53" stop-color="#f48e00"></svg:stop><svg:stop offset="1" stop-color="#d06f00"></svg:stop></svg:lineargradient></svg:defs>`,
+})
+export class VscodeIconsFileTypeSublimeIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

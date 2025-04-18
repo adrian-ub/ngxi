@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iwwaDangerIcon],svg[iwwa-danger-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M37.874 37.2H2.132a1.74 1.74 0 0 1-1.501-.866a1.71 1.71 0 0 1-.001-1.729L18.507 3.663a1.728 1.728 0 0 1 2.991-.004l17.833 30.869a1.733 1.733 0 0 1-1.457 2.672M20.001 3.8a.74.74 0 0 0-.628.363L1.496 35.104a.7.7 0 0 0-.001.727a.74.74 0 0 0 .637.369h35.742a.74.74 0 0 0 .732-.73a.8.8 0 0 0-.134-.429L20.634 4.163a.74.74 0 0 0-.633-.363"></svg:path><svg:path fill="currentColor" d="M20.002 27.948a.5.5 0 0 1-.5-.5V9.864a.5.5 0 0 1 1 0v17.584a.5.5 0 0 1-.5.5m-.004 3.688a.5.5 0 0 1-.5-.5V29.78a.5.5 0 0 1 1 0v1.355a.5.5 0 0 1-.5.501"></svg:path>`,
+})
+export class IwwaDangerIcon {
+  readonly viewBox = input("0 0 40 40")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

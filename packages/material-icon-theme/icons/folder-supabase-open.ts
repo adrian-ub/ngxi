@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeFolderSupabaseOpenIcon],svg[material-icon-theme-folder-supabase-open-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#66bb6a" d="M28.967 12H9.442a2 2 0 0 0-1.898 1.368L4 24V10h24a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h22l4.805-11.212A2 2 0 0 0 28.967 12"></svg:path><svg:path fill="#c8e6c9" d="M30 18h-6v-6.499a.5.5 0 0 0-.9-.3l-6.3 8.4a1.5 1.5 0 0 0 1.2 2.4h6V28.5a.5.5 0 0 0 .9.3l6.3-8.4A1.5 1.5 0 0 0 30 18"></svg:path>`,
+})
+export class MaterialIconThemeFolderSupabaseOpenIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

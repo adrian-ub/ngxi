@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[basilDropboxSolidIcon],svg[basil-dropbox-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.66 3.253a.3.3 0 0 0-.322 0L1.398 6.4a.3.3 0 0 0 0 .506l4.94 3.148a.3.3 0 0 0 .323 0l4.942-3.148a.3.3 0 0 0 0-.506zm11.001 0a.3.3 0 0 0-.322 0L12.397 6.4a.3.3 0 0 0 0 .506l4.942 3.149a.3.3 0 0 0 .322 0l4.942-3.149a.3.3 0 0 0 0-.506zM1.397 13.915a.3.3 0 0 1 0-.506l4.941-3.148a.3.3 0 0 1 .323 0l4.942 3.148a.3.3 0 0 1 0 .506L6.66 17.063a.3.3 0 0 1-.323 0zm16.264-3.654a.3.3 0 0 0-.322 0l-4.942 3.148a.3.3 0 0 0 0 .506l4.942 3.149a.3.3 0 0 0 .322 0l4.942-3.149a.3.3 0 0 0 0-.506zM6.897 18.594a.3.3 0 0 1 0-.506l4.942-3.148a.3.3 0 0 1 .323 0l4.94 3.148a.3.3 0 0 1 0 .506l-4.94 3.148a.3.3 0 0 1-.323 0z"></svg:path>`,
+})
+export class BasilDropboxSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

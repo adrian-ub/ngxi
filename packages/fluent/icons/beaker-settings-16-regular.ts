@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBeakerSettings16RegularIcon],svg[fluent-beaker-settings-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.5 3H5v3.689a2.5 2.5 0 0 1-.341 1.26l-2.214 3.795A1.5 1.5 0 0 0 3.74 14h2.858a5.5 5.5 0 0 1-.392-1H3.74a.5.5 0 0 1-.432-.752L4.62 10h1.587q.148-.524.392-1H5.203l.32-.547A3.5 3.5 0 0 0 6 6.689V3h2v3.689q0 .27.04.535q.445-.361.96-.624V3h.5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0 0 1m4.565 5.442a2 2 0 0 1-1.43 2.478l-.462.118a4.7 4.7 0 0 0 .01 1.016l.35.083a2 2 0 0 1 1.456 2.519l-.127.422q.388.307.835.518l.325-.344a2 2 0 0 1 2.91.002l.337.358q.44-.204.822-.498l-.156-.557a2 2 0 0 1 1.43-2.477l.46-.118a4.7 4.7 0 0 0-.01-1.017l-.348-.082a2 2 0 0 1-1.456-2.52l.126-.422a4.3 4.3 0 0 0-.835-.518l-.325.344a2 2 0 0 1-2.91-.001l-.336-.358a4.3 4.3 0 0 0-.822.497zM11.5 12.5a1 1 0 1 1 0-2a1 1 0 0 1 0 2"></svg:path>`,
+})
+export class FluentBeakerSettings16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

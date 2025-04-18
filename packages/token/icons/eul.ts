@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenEulIcon],svg[token-eul-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.45 9.86a1.795 1.795 0 0 1 .821-2.368l8.9-4.321a1.72 1.72 0 0 1 2.318.844a1.794 1.794 0 0 1-.822 2.363l-8.9 4.326A1.723 1.723 0 0 1 3.45 9.86m.569 6.12a1.93 1.93 0 0 1 .855-2.514l5.963-2.97c.9-.45 1.969-.05 2.396.894a1.93 1.93 0 0 1-.855 2.515l-5.963 2.97c-.9.45-1.969.05-2.396-.894m4.494 4.004a1.795 1.795 0 0 1 .822-2.368l8.9-4.32a1.72 1.72 0 0 1 2.317.843a1.795 1.795 0 0 1-.821 2.363l-8.9 4.326a1.72 1.72 0 0 1-1.92-.29a1.7 1.7 0 0 1-.398-.554"></svg:path>`,
+})
+export class TokenEulIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

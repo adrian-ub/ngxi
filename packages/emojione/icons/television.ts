@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneTelevisionIcon],svg[emojione-television-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#3e4347"><svg:path d="M17 62H5.8c0-2.6 2.5-4.7 5.6-4.7S17 59.4 17 62m41.2 0H47c0-2.6 2.5-4.7 5.6-4.7s5.6 2.1 5.6 4.7M18.59 3.758l.636-.636l15.903 15.916l-.637.636z"></svg:path><svg:circle cx="19" cy="3.4" r="1.4"></svg:circle><svg:path d="m28.78 19.017l15.909-15.91l.636.637l-15.91 15.91z"></svg:path><svg:circle cx="45" cy="3.4" r="1.4"></svg:circle><svg:ellipse cx="32" cy="15.1" rx="8" ry="4.7"></svg:ellipse></svg:g><svg:path fill="#c28fef" d="M59.1 57.1c-5.2 6.6-47.5 6.4-53.7 0c-4.6-4.7-4.6-32.5 0-37.2c6.2-6.4 48.5-6.6 53.7 0c3.9 5 3.9 32.3 0 37.2"></svg:path><svg:g fill="#3e4347"><svg:path d="M49.5 52.7c-3.9 5-35.6 4.9-40.3 0c-3.4-3.6-3.4-24.7 0-28.2c4.7-4.9 36.4-5 40.3 0c2.9 3.7 2.9 24.5 0 28.2"></svg:path><svg:circle cx="56.4" cy="29.2" r="2.8"></svg:circle><svg:circle cx="56.4" cy="37.6" r="2.8"></svg:circle></svg:g>`,
+})
+export class EmojioneTelevisionIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

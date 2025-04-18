@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsReplyAll16Icon],svg[qlementine-icons-reply-all-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.96 2.69a.5.5 0 0 1-.109.162l-3.15 3.15h3.81c.916 0 1.63 0 2.2.04c.583.039 1.06.121 1.5.302c1.1.457 1.98 1.33 2.44 2.44c.182.44.264.916.303 1.5c.04.575.04 1.29.04 2.2v.019a.5.5 0 0 1-1 0c0-.939-.001-1.62-.038-2.15c-.036-.532-.107-.888-.23-1.18a3.5 3.5 0 0 0-1.89-1.89c-.296-.123-.652-.193-1.18-.23c-.537-.037-1.22-.037-2.15-.037h-3.79l3.15 3.15a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1-.147-.354a.5.5 0 0 1 .147-.354l4-4a.5.5 0 0 1 .817.546z"></svg:path><svg:path fill="currentColor" d="M4.85 2.85a.5.5 0 0 0-.707-.707l-4 4a.5.5 0 0 0 0 .707l4 4a.5.5 0 0 0 .707-.707L1.2 6.493l3.65-3.65z"></svg:path>`,
+})
+export class QlementineIconsReplyAll16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

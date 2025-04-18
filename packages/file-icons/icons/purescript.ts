@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsPurescriptIcon],svg[file-icons-purescript-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m188.207 368.2l-39.973-37.328h175.535l39.973 37.327zm0-130.851l-39.973 37.327h175.535l39.973-37.327zM363.73 181.14l-39.961-37.34H148.246l39.96 37.34zm-233.966 36.94l-26.407-26.406L5.448 289.57A18.5 18.5 0 0 0 0 302.774c0 4.989 1.933 9.676 5.448 13.191l97.91 97.909l26.406-26.395l-84.705-84.705zm376.764-22.033l-97.873-97.92l-26.395 26.406l84.657 84.706l-84.657 84.705l26.395 26.394l97.873-97.884A18.63 18.63 0 0 0 512 209.226c-.012-4.989-1.945-9.664-5.472-13.18"></svg:path>`,
+})
+export class FileIconsPurescriptIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

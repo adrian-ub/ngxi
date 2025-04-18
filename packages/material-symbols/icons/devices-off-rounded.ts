@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsDevicesOffRoundedIcon],svg[material-symbols-devices-off-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M22 9v7.625q0 .35-.175.575t-.45.35t-.55.063t-.525-.288l-5.7-5.575q-.275-.275-.437-.663T14 10.3V9q0-.425.288-.712T15 8h6q.425 0 .713.288T22 9m-7 11q-.425 0-.712-.288T14 19v-2.2l-8-8V17h4.5q.625 0 1.063.438T12 18.5t-.437 1.063T10.5 20h-7q-.625 0-1.062-.437T2 18.5t.438-1.062T3.5 17H4V6.8L2.1 4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l17 17q.275.275.275.7t-.275.7t-.7.275t-.7-.275L17.2 20zm5-14H9q-.5 0-.75-.312T8 5t.25-.687T9 4h11q.425 0 .713.288T21 5t-.288.713T20 6"></svg:path>`,
+})
+export class MaterialSymbolsDevicesOffRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

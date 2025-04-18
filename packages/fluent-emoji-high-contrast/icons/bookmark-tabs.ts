@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastBookmarkTabsIcon],svg[fluent-emoji-high-contrast-bookmark-tabs-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M6.5 14h12.581a1.5 1.5 0 0 0 0 1H6.5a.5.5 0 0 1 0-1m0-3a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1zM6 17.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h8a.5.5 0 0 0 0-1zm14.86-6.882a.5.5 0 0 1 .323-.118H24.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2.817a.5.5 0 0 1-.323-.118l-1.186-1a.5.5 0 0 1 0-.764z"></svg:path><svg:path d="M4.5 1A2.5 2.5 0 0 0 2 3.5v23A2.5 2.5 0 0 0 4.5 29h2.585A1.5 1.5 0 0 0 8.5 30h17a1.5 1.5 0 0 0 1.5-1.5V24h-1.317a1.5 1.5 0 0 1-.967-.353l-1.187-1a1.5 1.5 0 0 1 0-2.294l1.187-1a1.5 1.5 0 0 1 .967-.353H27V5.5A1.5 1.5 0 0 0 25.5 4h-4.187l2.15 2.17a.487.487 0 0 1-.69.688l-5.127-5.126A2.5 2.5 0 0 0 15.88 1zM4 3.5a.5.5 0 0 1 .5-.5h11.379a.5.5 0 0 1 .121.015V7.5A1.5 1.5 0 0 0 17.5 9h4.485q.015.06.015.121V12h2.5a1.5 1.5 0 0 1 1.5 1.5v2a1.5 1.5 0 0 1-1.5 1.5H22v9.5a.5.5 0 0 1-.5.5h-17a.5.5 0 0 1-.5-.5z"></svg:path><svg:path d="M25.683 20a.5.5 0 0 0-.323.118l-1.186 1a.5.5 0 0 0 0 .764l1.186 1a.5.5 0 0 0 .323.118H28.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastBookmarkTabsIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

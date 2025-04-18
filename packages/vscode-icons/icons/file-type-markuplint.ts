@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeMarkuplintIcon],svg[vscode-icons-file-type-markuplint-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#fff" d="M4.193 26.809c-1.49 0-2.544-1.478-2.084-2.919L5.94 11.888a2.195 2.195 0 0 1 2.084-1.541c1.489 0 2.544 1.478 2.084 2.919L6.277 25.268a2.195 2.195 0 0 1-2.084 1.541"></svg:path><svg:path fill="#1572eb" d="M21.548 4c-.973 0-1.855.583-2.25 1.487l-5.653 12.921l-2.04-4.663l-.004.014l-2.271 7.112l1.971 4.506a2.46 2.46 0 0 0 2.25 1.487l.093-.003l.092.003c.973 0 1.855-.583 2.25-1.487l7.812-17.85C24.523 5.867 23.331 4 21.548 4"></svg:path><svg:path fill="#fff" d="M29.891 23.89L25.024 8.647l-2.664 6.09l3.363 10.531a2.195 2.195 0 0 0 2.084 1.541c1.489 0 2.544-1.478 2.084-2.919"></svg:path>`,
+})
+export class VscodeIconsFileTypeMarkuplintIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentSquareDovetailJoint12FilledIcon],svg[fluent-square-dovetail-joint-12-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.192 6.606A.5.5 0 0 0 5 7v2.999H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1v3a.498.498 0 0 0 .621.485L7 5.14v1.719l-1.379-.344a.5.5 0 0 0-.429.091M6 2h2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H6V7.641l1.379.345A.498.498 0 0 0 8 7.5v-3a.5.5 0 0 0-.621-.485L6 4.359z"></svg:path>`,
+})
+export class FluentSquareDovetailJoint12FilledIcon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentHeartPulse32RegularIcon],svg[fluent-heart-pulse-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.374 5.988a7.63 7.63 0 0 1 10.66.13l.966.967l.86-.86A7.694 7.694 0 0 1 29.456 14.5h-2.214a5.694 5.694 0 0 0-8.968-6.86l-1.567 1.567a1 1 0 0 1-1.414 0l-1.674-1.674A5.631 5.631 0 0 0 4.86 14.5H2.61a7.63 7.63 0 0 1 1.763-8.511M22.707 19.5h2.76l-8.744 9.19a1 1 0 0 1-1.454-.006L6.661 19.5h2.481q.126 0 .249-.012l6.614 7.056zm-9.814-7.947a1 1 0 0 0-1.751-.067L8.432 16H2.668a1 1 0 1 0 0 2H9a1 1 0 0 0 .857-.485l2.063-3.438l3.186 6.37a1 1 0 0 0 1.703.141l3.371-4.636l2.18 1.816A1 1 0 0 0 23 18h6a1 1 0 1 0 0-2h-5.638l-2.722-2.268a1 1 0 0 0-1.449.18l-3.032 4.17z"></svg:path>`,
+})
+export class FluentHeartPulse32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

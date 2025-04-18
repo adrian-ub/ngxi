@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsFranprixIcon],svg[simple-icons-franprix-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M12 6.305c3.691 0 6.323-3.071 6.13-6.286c-2.124-.17-5.069.791-6.13 3.79C10.939.81 7.993-.15 5.87.02C5.677 3.234 8.309 6.305 12 6.305m11.002 6.962c-.139-3.413-2.821-6.362-6.55-6.362c-1.69 0-3.236.635-4.452 1.744c-1.217-1.11-2.763-1.744-4.452-1.744c-3.729 0-6.412 2.949-6.55 6.362C.758 19.19 5.913 24 12 24s11.242-4.81 11.002-10.733"></svg:path>`,
 })
 export class SimpleIconsFranprixIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

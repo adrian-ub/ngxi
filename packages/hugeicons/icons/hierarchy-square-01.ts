@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsHierarchySquare01Icon],svg[hugeicons-hierarchy-square-01-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 19.5h-1c-2.828 0-4.243 0-5.121-.879C7 17.743 7 16.328 7 13.5v-2M7 8v3.5m0 0h7m0 0c0-1.178 0-1.768.351-2.134C14.704 9 15.27 9 16.4 9h1.2c1.131 0 1.697 0 2.048.366c.352.366.352.956.352 2.134s0 1.768-.352 2.134c-.35.366-.917.366-2.048.366h-1.2c-1.131 0-1.697 0-2.048-.366C14 13.268 14 12.678 14 11.5m0 8c0-1.178 0-1.768.351-2.134C14.704 17 15.27 17 16.4 17h1.2c1.131 0 1.697 0 2.048.366c.352.366.352.956.352 2.134s0 1.768-.352 2.134c-.35.366-.917.366-2.048.366h-1.2c-1.131 0-1.697 0-2.048-.366C14 21.268 14 20.678 14 19.5M5.286 2h3.428C10.79 2 11 3.11 11 5s-.211 3-2.286 3H5.286C3.21 8 3 6.89 3 5s.211-3 2.286-3" color="currentColor"></svg:path>`,
+})
+export class HugeiconsHierarchySquare01Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

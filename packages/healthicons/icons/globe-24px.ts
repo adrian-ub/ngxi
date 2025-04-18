@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[healthiconsGlobe24pxIcon],svg[healthicons-globe-24px-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10m1.079-17.928a1.15 1.15 0 0 0-.545 1.272a.5.5 0 0 0 .033.093l1.305 2.753A1.15 1.15 0 0 0 14.97 9h4.449A8 8 0 0 1 20 12h-3.167c-.311 0-.612.105-.856.297a1.4 1.4 0 0 0-.492.763v.002l-.444 1.807a1.42 1.42 0 0 0 .251 1.198a1.4 1.4 0 0 0 1.097.543h.219l.3 1.707A7.97 7.97 0 0 1 12 20a7.97 7.97 0 0 1-4.858-1.643l.57-3.2h.504a1.78 1.78 0 0 0 1.406-.69a1.8 1.8 0 0 0 .325-1.533l-.641-2.581v-.002a1.8 1.8 0 0 0-.634-.974A1.78 1.78 0 0 0 7.574 9H4.582a8 8 0 0 1 8.497-4.928" clip-rule="evenodd"></svg:path>`,
+})
+export class HealthiconsGlobe24pxIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

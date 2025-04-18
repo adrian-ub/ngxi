@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsAkasaairIcon],svg[simple-icons-akasaair-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M14.732 1.8c-2.297 0-3.271.731-4.165 2.383l-.63 1.116a3.2 3.2 0 0 0-.529 1.482c.026.43.166.845.407 1.202l5.002 8.944c1.789 3.197 4 4.986 8.764 4.986c.407 0 .508-.244.344-.53l-6.488-11.59c-1.297-2.34-1.747-4.027-1.747-5.245a3.53 3.53 0 0 1 .814-2.425c.122-.137.101-.322-.142-.322Zm-6.92 7.056c-.122 0-.2.084-.323.285L.08 21.71a.4.4 0 0 0-.079.244c0 .244.386.245.487.245c5.335 0 9.04-3.256 9.04-7.972A10.06 10.06 0 0 0 8.12 9.121c-.1-.158-.185-.265-.307-.265Z"></svg:path>`,
 })
 export class SimpleIconsAkasaairIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

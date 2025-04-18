@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icons8KeyboardIcon],svg[icons8-keyboard-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 7c-1.093 0-2 .907-2 2v14c0 1.093.907 2 2 2h26c1.093 0 2-.907 2-2V9c0-1.093-.907-2-2-2zm0 2h26v14H3zm2 2v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zM5 15v2h4v-2zm6 0v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm4 0v2h4v-2zM5 19v2h4v-2zm6 0v2h10v-2zm12 0v2h4v-2z"></svg:path>`,
+})
+export class Icons8KeyboardIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

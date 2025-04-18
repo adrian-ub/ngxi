@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7SquareGrid2x2FillIcon],svg[f7-square-grid-2x2-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M34.434 26.066h10.664c3 0 4.476-1.5 4.476-4.593V10.996c0-3.094-1.476-4.57-4.476-4.57H34.434c-2.977 0-4.477 1.476-4.477 4.57v10.477c0 3.093 1.5 4.593 4.477 4.593m-23.532 0H21.59c2.976 0 4.476-1.5 4.476-4.593V10.996c0-3.094-1.5-4.57-4.476-4.57H10.902c-2.976 0-4.476 1.476-4.476 4.57v10.477c0 3.093 1.5 4.593 4.476 4.593m0 23.508H21.59c2.976 0 4.476-1.476 4.476-4.57v-10.5c0-3.07-1.5-4.57-4.476-4.57H10.902c-2.976 0-4.476 1.5-4.476 4.57v10.5c0 3.094 1.5 4.57 4.476 4.57m23.532 0h10.664c3 0 4.476-1.476 4.476-4.57v-10.5c0-3.07-1.476-4.57-4.476-4.57H34.434c-2.977 0-4.477 1.5-4.477 4.57v10.5c0 3.094 1.5 4.57 4.477 4.57"></svg:path>`,
+})
+export class F7SquareGrid2x2FillIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

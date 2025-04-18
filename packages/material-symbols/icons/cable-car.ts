@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsCableCarIcon],svg[material-symbols-cable-car-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7 21v-1H3v-2h1V6H3V4h3.325L7 2h10l.675 2H21v2h-1v12h1v2h-4v1zm5-4q.625 0 1.063-.437T13.5 15.5t-.437-1.062T12 14t-1.062.438T10.5 15.5t.438 1.063T12 17m-6-6h3V7.5q0-.625-.437-1.062T7.5 6t-1.062.438T6 7.5zm4.5 0h3V7.5q0-.625-.437-1.062T12 6t-1.062.438T10.5 7.5zm4.5 0h3V7.5q0-.625-.437-1.062T16.5 6t-1.062.438T15 7.5z"></svg:path>`,
+})
+export class MaterialSymbolsCableCarIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

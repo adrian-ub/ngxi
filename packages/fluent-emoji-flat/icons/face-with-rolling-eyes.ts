@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatFaceWithRollingEyesIcon],svg[fluent-emoji-flat-face-with-rolling-eyes-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#FFB02E" d="M15.999 29.998c9.334 0 13.999-6.268 13.999-14c0-7.73-4.665-13.998-14-13.998C6.665 2 2 8.268 2 15.999s4.664 13.999 13.999 13.999"></svg:path><svg:path fill="#fff" d="M10.5 19a4.5 4.5 0 0 0 2.463-8.266l-1.953.624l-1.803-1.17A4.502 4.502 0 0 0 10.5 19m11 0a4.5 4.5 0 0 0 1.293-8.811l-1.733 1.35l-2.012-.813A4.5 4.5 0 0 0 21.5 19"></svg:path><svg:path fill="#402A32" d="M13 11a2 2 0 1 1-3.834-.799A4.5 4.5 0 0 1 10.5 10a4.5 4.5 0 0 1 2.484.747Q13 10.871 13 11m10 0a2 2 0 1 1-3.984-.253A4.5 4.5 0 0 1 21.5 10a4.5 4.5 0 0 1 1.334.201c.107.245.166.515.166.799M12 25a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatFaceWithRollingEyesIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

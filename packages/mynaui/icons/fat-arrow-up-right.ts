@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiFatArrowUpRightIcon],svg[mynaui-fat-arrow-up-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.068 5.038C7.753 4.722 8.13 4.01 8.587 4h9.753c.581 0 .872 0 1.093.113c.196.1.354.258.454.453C20 4.789 20 5.08 20 5.66v9.753c-.01.457-.722.834-1.038.519l-2.714-2.78a.513.513 0 0 0-.725.018l-6.671 6.67a.513.513 0 0 1-.725.017l-3.985-3.985a.513.513 0 0 1 .017-.725l6.671-6.671a.513.513 0 0 0 .018-.725z"></svg:path>`,
+})
+export class MynauiFatArrowUpRightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

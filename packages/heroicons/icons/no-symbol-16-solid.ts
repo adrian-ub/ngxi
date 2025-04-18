@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[heroiconsNoSymbol16SolidIcon],svg[heroicons-no-symbol-16-solid-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M3.05 3.05a7 7 0 1 1 9.9 9.9a7 7 0 0 1-9.9-9.9m1.627.566l7.707 7.707a5.501 5.501 0 0 0-7.707-7.707m6.646 8.768L3.616 4.677a5.501 5.501 0 0 0 7.707 7.707" clip-rule="evenodd"></svg:path>`,
 })
 export class HeroiconsNoSymbol16SolidIcon {
-  readonly viewBox = input('0 0 16 16')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

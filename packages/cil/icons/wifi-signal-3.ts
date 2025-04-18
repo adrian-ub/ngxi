@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilWifiSignal3Icon],svg[cil-wifi-signal-3-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M503.785 124.254a432.02 432.02 0 0 0-495.57 0L8 124.4v27.438l33 47.126L237.778 480h36.444l196.783-281.036l33-47.122V124.4ZM189.87 355.789l125.621-192.127a317 317 0 0 1 42.184 10.981L213.968 390.2Zm-19.77-28.236l-26.453-37.778l89.523-130.843q11.354-.8 22.83-.8q12.2 0 24.276.918Zm-46.064-65.786l-38.248-54.622a318 318 0 0 1 104.534-42.258Zm109.633 156.574l154.47-231.7a320.5 320.5 0 0 1 38.073 20.509L256 450.232Zm210.91-237.427a351.95 351.95 0 0 0-377.158 0l-27.565-39.367a400.04 400.04 0 0 1 432.288 0Z"></svg:path>`,
+})
+export class CilWifiSignal3Icon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

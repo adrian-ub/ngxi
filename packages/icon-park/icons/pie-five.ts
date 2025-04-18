@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkPieFiveIcon],svg[icon-park-pie-five-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:circle cx="24" cy="24" r="20"></svg:circle><svg:path fill="#2F88FF" d="M24 4C27.2624 4 30.4754 4.79809 33.3586 6.32469C36.2418 7.85128 38.7078 10.06 40.5416 12.7583C42.3754 15.4566 43.5212 18.5626 43.8792 21.8053C44.2372 25.0481 43.7965 28.3291 42.5955 31.3625C41.3945 34.3958 39.4697 37.0893 36.989 39.2081C34.5082 41.3269 31.5467 42.8067 28.3629 43.5183C25.179 44.23 21.8694 44.152 18.7225 43.2911C15.5757 42.4303 12.6873 40.8127 10.3091 38.5794L24 24V4Z"></svg:path></svg:g>`,
+})
+export class IconParkPieFiveIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

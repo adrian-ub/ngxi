@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeFolderAstroOpenIcon],svg[material-icon-theme-folder-astro-open-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#7c4dff" d="M28.967 12H9.442a2 2 0 0 0-1.898 1.367L4 24V10h24a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h22l4.805-11.212A2 2 0 0 0 28.967 12"></svg:path><svg:path fill="#d1c4e9" d="M19.333 27c0-.81.082-1.508 1.3-1.508c0 2.608 1.5 4.508 2.7 4.508c0-3.319 2.667-3.122 2.667-6h-8c0 1.275.158 2.681 1.333 3m5.923-16.385L30 22h-2.333a4 4 0 0 1-3.693-2.462l-1.512-3.63a.5.5 0 0 0-.924 0l-1.512 3.63A4 4 0 0 1 16.333 22H14l4.744-11.385a1 1 0 0 1 .923-.615h4.666a1 1 0 0 1 .923.615"></svg:path>`,
+})
+export class MaterialIconThemeFolderAstroOpenIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

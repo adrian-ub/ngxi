@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsWhiteboardIcon],svg[material-symbols-whiteboard-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 18v-5l9.95-9.95Q16 2 17.45 2t2.5 1.05Q21 4.1 21 5.55t-1.05 2.5L10 18Zm2-2h2.175l9.375-9.375q.45-.45.45-1.088q0-.637-.45-1.087Q18.1 4 17.462 4q-.637 0-1.087.45L7 13.825Zm-4 6v-2h18v2Z"></svg:path>`,
+})
+export class MaterialSymbolsWhiteboardIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

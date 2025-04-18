@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsZoomIcon],svg[lineicons-zoom-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21.604 7.442a.7.7 0 0 0-.76.033l-3.53 2.313a1.01 1.01 0 0 0-.462.871v2.682c0 .335.165.67.462.872l3.53 2.312c.133.067.265.135.397.135a.74.74 0 0 0 .363-.101a.81.81 0 0 0 .396-.67V8.111a.76.76 0 0 0-.396-.67m-1.09 7.072l-2.177-1.441v-2.179l2.178-1.441zm-8.976-7.909H2.759a.774.774 0 0 0-.759.77v6.302c0 2.045 1.683 3.72 3.762 3.72h8.78a.774.774 0 0 0 .758-.77v-6.302c0-2.045-1.683-3.72-3.762-3.72m2.277 9.284H5.762c-1.254 0-2.277-1.005-2.277-2.212V8.112h8.053c1.254 0 2.277 1.005 2.277 2.212z"></svg:path>`,
+})
+export class LineiconsZoomIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

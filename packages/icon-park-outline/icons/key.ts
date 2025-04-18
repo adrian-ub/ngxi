@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkOutlineKeyIcon],svg[icon-park-outline-key-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><svg:path d="M22.868 24.298a9.87 9.87 0 0 1 2.63 9.588a9.93 9.93 0 0 1-7.065 7.028a9.99 9.99 0 0 1-9.64-2.615a9.863 9.863 0 0 1 .122-13.878c3.839-3.82 10.046-3.873 13.951-.121z"></svg:path><svg:path stroke-linecap="round" d="M23 24L40 7"></svg:path><svg:path d="m30.305 16.9l5.429 5.4l6.333-6.3l-5.428-5.4z"></svg:path></svg:g>`,
+})
+export class IconParkOutlineKeyIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

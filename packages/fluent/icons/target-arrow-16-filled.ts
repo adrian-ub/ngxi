@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTargetArrow16FilledIcon],svg[fluent-target-arrow-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 1.5a.5.5 0 0 0-.854-.354l-2 2A.5.5 0 0 0 9 3.5v2.793l-.741.74A1.002 1.002 0 0 0 7 8a1 1 0 1 0 1.966-.259L9.707 7H12.5a.5.5 0 0 0 .354-.146l2-2A.5.5 0 0 0 14.5 4H12zm1.944 5.678Q14 7.58 14 8a6 6 0 1 1-5.177-5.944l-.383.383A1.5 1.5 0 0 0 8 3.5A4.5 4.5 0 1 0 12.5 8a1.5 1.5 0 0 0 1.06-.44zM8 4.5A3.5 3.5 0 1 0 11.5 8h-1.379l-.125.125a2 2 0 1 1-2.121-2.121L8 5.879z"></svg:path>`,
+})
+export class FluentTargetArrow16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

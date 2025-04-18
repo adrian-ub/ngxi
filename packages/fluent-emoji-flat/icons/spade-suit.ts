@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatSpadeSuitIcon],svg[fluent-emoji-flat-spade-suit-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#212121" d="M28.619 14.965L18.9 3.35a3.79 3.79 0 0 0-5.8 0L3.38 14.965c-3.212 3.839-.463 9.657 4.562 9.657a5.96 5.96 0 0 0 5.408-3.459l.645-1.41v3.17c0 2.099-1.692 3.798-3.797 3.838h-.08c-.897 0-1.632.73-1.632 1.62S9.222 30 10.12 30h11.77c.897 0 1.632-.73 1.632-1.62s-.735-1.619-1.632-1.619h-.08c-2.105-.04-3.797-1.74-3.797-3.838v-3.17l.645 1.41c.956 2.11 3.071 3.459 5.408 3.459c5.015 0 7.764-5.818 4.552-9.657"></svg:path>`,
+})
+export class FluentEmojiFlatSpadeSuitIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

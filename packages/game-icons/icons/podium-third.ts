@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsPodiumThirdIcon],svg[game-icons-podium-third-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M417.945 168.902c-11.593 0-23 12.8-23 31c0 18.201 11.407 31 23 31s23-12.799 23-31c0-18.2-11.406-31-23-31m-103.95 2.975l-16.099 8.05c15.093 30.185 51.37 56.81 82.188 74.442l14.195 184.533h14.666v-103h18v103h14.666l11.854-154.093l13.928 51.892l17.382-4.664c-6.156-34.54-15.319-97.864-34.212-102.39c-7.307 11.535-18.869 19.255-32.618 19.255s-25.31-7.72-32.617-19.256c-26.443-8.62-51.424-27.87-71.334-57.769zM169 313v96H25v78h462v-30H343V313z"></svg:path>`,
+})
+export class GameIconsPodiumThirdIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

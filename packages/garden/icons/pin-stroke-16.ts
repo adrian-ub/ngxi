@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenPinStroke16Icon],svg[garden-pin-stroke-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.489.159a.543.543 0 0 0-.909.244l-.618 2.315a.54.54 0 0 0 .14.524l.836.837l-7.62 3.113a.512.512 0 0 0-.168.836l3.527 3.527L.54 14.693a.543.543 0 1 0 .767.767l3.138-3.137l3.527 3.527c.259.259.698.17.836-.169l3.113-7.62l.837.837c.137.137.337.19.524.14l2.315-.618a.543.543 0 0 0 .244-.909zm.282 4.752L11.09 7.23l-2.96 7.243L1.529 7.87zm-.385-3.319l6.022 6.022l-1.104.295l-5.213-5.213z"></svg:path>`,
+})
+export class GardenPinStroke16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

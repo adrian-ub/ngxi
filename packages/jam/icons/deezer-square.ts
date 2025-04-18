@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamDeezerSquareIcon],svg[jam-deezer-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M5 12.111h1.82v1H5z"></svg:path><svg:path d="M5 11.421h1.82v1H5z"></svg:path><svg:path d="M5 10.731h1.82v1H5z"></svg:path><svg:path d="M5 10.041h1.82v1H5z"></svg:path><svg:path d="M5 9.351h1.82v1H5zm2.041 2.76h1.82v1h-1.82z"></svg:path><svg:path d="M7.041 11.421h1.82v1h-1.82z"></svg:path><svg:path d="M7.041 10.731h1.82v1h-1.82zm2.041 1.38h1.82v1h-1.82z"></svg:path><svg:path d="M9.082 11.421h1.82v1h-1.82z"></svg:path><svg:path d="M9.082 10.731h1.82v1h-1.82z"></svg:path><svg:path d="M9.082 10.041h1.82v1h-1.82z"></svg:path><svg:path d="M9.082 9.351h1.82v1h-1.82z"></svg:path><svg:path d="M9.082 8.66h1.82v1h-1.82z"></svg:path><svg:path d="M9.082 7.97h1.82v1h-1.82zm2.041 4.141h1.821v1h-1.821z"></svg:path><svg:path d="M11.123 11.421h1.821v1h-1.821z"></svg:path><svg:path d="M11.123 10.731h1.821v1h-1.821z"></svg:path><svg:path d="M11.123 10.041h1.821v1h-1.821z"></svg:path><svg:path d="M11.123 9.351h1.821v1h-1.821zm2.041 2.76h1.82v1h-1.82z"></svg:path><svg:path d="M13.164 11.421h1.82v1h-1.82z"></svg:path><svg:path d="M13.164 10.731h1.82v1h-1.82z"></svg:path><svg:path d="M13.164 10.041h1.82v1h-1.82z"></svg:path><svg:path d="M13.164 9.35h1.82v1h-1.82z"></svg:path><svg:path d="M13.164 8.66h1.82v1h-1.82z"></svg:path><svg:path d="M13.164 7.97h1.82v1h-1.82z"></svg:path><svg:path d="M13.164 7.28h1.82v1h-1.82z"></svg:path><svg:path d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4"></svg:path></svg:g>`,
+})
+export class JamDeezerSquareIcon {
+  readonly viewBox = input("-2 -2 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbols4gMobiledataBadgeIcon],svg[material-symbols-4g-mobiledata-badge-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 21q-.825 0-1.412-.587T1 19V5q0-.825.588-1.412T3 3h18q.825 0 1.413.588T23 5v14q0 .825-.587 1.413T21 21zm17-10h-3.5v2H18v2h-3V9h5q0-.825-.587-1.412T18 7h-3q-.825 0-1.412.588T13 9v6q0 .825.588 1.413T15 17h3q.825 0 1.413-.587T20 15zM8 17h2v-3h2v-2h-2V7H8v5H6V7H4v7h4z"></svg:path>`,
+})
+export class MaterialSymbols4gMobiledataBadgeIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

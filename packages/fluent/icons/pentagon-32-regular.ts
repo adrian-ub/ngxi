@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPentagon32RegularIcon],svg[fluent-pentagon-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.09 2.602a3.25 3.25 0 0 1 3.82 0l10.242 7.441a3.25 3.25 0 0 1 1.18 3.634l-3.911 12.04a3.25 3.25 0 0 1-3.091 2.246H9.67a3.25 3.25 0 0 1-3.09-2.246l-3.913-12.04a3.25 3.25 0 0 1 1.18-3.634zm2.645 1.618a1.25 1.25 0 0 0-1.47 0L5.023 11.661a1.25 1.25 0 0 0-.454 1.398l3.912 12.04a1.25 1.25 0 0 0 1.189.863h12.66a1.25 1.25 0 0 0 1.188-.863l3.912-12.04a1.25 1.25 0 0 0-.454-1.398z"></svg:path>`,
+})
+export class FluentPentagon32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

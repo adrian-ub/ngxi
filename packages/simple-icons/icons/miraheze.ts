@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsMirahezeIcon],svg[simple-icons-miraheze-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="m2.677 12.923l3.768.011l1.949 3.369l-1.926 3.323H2.666L.727 16.292zm-.004-8.6l3.761.011l1.944 3.367l-1.922 3.326H2.662L.727 7.69zm14.882 0l3.768.011l1.95 3.367l-1.928 3.326h-3.801L15.606 7.69zm0 8.6l3.768.011l1.95 3.369l-1.928 3.323h-3.802l-1.937-3.334zm-7.456 4.373l3.767.011l1.951 3.368L13.889 24h-3.801l-1.939-3.336zm0-17.296l3.767.011l1.951 3.369l-1.928 3.324h-3.801L8.149 3.368zm0 8.628l3.767.011l1.951 3.368l-1.928 3.325h-3.801l-1.939-3.336z"></svg:path>`,
 })
 export class SimpleIconsMirahezeIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

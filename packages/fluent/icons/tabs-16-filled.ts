@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTabs16FilledIcon],svg[fluent-tabs-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.5 2A4.5 4.5 0 0 0 2 6.5v5a2.5 2.5 0 0 1-1-2v-3A5.5 5.5 0 0 1 6.5 1h3c.818 0 1.544.393 2 1zM4.061 6.395A3 3 0 0 1 7 4h6.5a2.5 2.5 0 0 0-2-1H7a4 4 0 0 0-4 4v4.5c0 .818.393 1.544 1 2V7q0-.311.061-.605M7.5 5A2.5 2.5 0 0 0 5 7.5v5A2.5 2.5 0 0 0 7.5 15h5a2.5 2.5 0 0 0 2.5-2.5v-5A2.5 2.5 0 0 0 12.5 5z"></svg:path>`,
+})
+export class FluentTabs16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

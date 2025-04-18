@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsHmnIcon],svg[circle-flags-hmn-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsHmn0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsHmn0)"><svg:path fill="#d80027" d="M0 0h512v512H0z"></svg:path><svg:path fill="#ffda44" d="M41 32L16 51L6 72l12 33l-14 17l5 27l12-26l13 18l-34 34l54 15l-19-18l24-17l24 17l-19 18l54-15l-34-34l13-18l12 26l5-27l-14-17l12-33l-10-21l-25-19l17 37l-23 24l3-24l-15-25l-15 25l3 24l-23-24zm394 0l-25 19l-10 21l12 33l-14 17l5 27l12-26l13 18l-34 34l54 15l-19-18l24-17l24 17l-19 18l54-15l-34-34l13-18l12 26l5-27l-14-17l12-33l-10-21l-25-19l17 37l-23 24l3-24l-15-25l-15 25l3 24l-23-24zM228.3 42v32l-27.7 16l27.7 16v32l27.7-16l27.7 16v-32l27.7-16l-27.7-16V42L256 58zM256 244a111 111 0 0 0-111 111a111 111 0 0 0 111 111a111 111 0 0 0 111-111a111 111 0 0 0-111-111M41 322l-25 19l-10 21l28 69l-34 34l54 15l-19-18l24-17l24 17l-19 18l54-15l-34-34l28-69l-10-21l-25-19l17 37l-23 24l3-24l-15-25l-15 25l3 24l-23-24zm394 0l-25 19l-10 21l28 69l-34 34l54 15l-19-18l24-17l24 17l-19 18l54-15l-34-34l28-69l-10-21l-25-19l17 37l-23 24l3-24l-15-25l-15 25l3 24l-23-24z"></svg:path></svg:g>`,
+})
+export class CircleFlagsHmnIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsRingFillIcon],svg[lets-icons-ring-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="currentColor" d="M6.901 11.846a5.303 5.303 0 0 1 10.198 0l.558 1.954c.227.795.577 1.55 1.035 2.239l.11.163c.139.21.209.314.243.391a1 1 0 0 1-.745 1.393c-.084.014-.21.014-.461.014H6.16c-.251 0-.377 0-.46-.014a1 1 0 0 1-.746-1.393c.034-.077.104-.182.244-.391l.109-.163a8 8 0 0 0 1.035-2.24z"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m11 9l1-6m1 6l-1-6m.5 18h-1"></svg:path></svg:g>`,
+})
+export class LetsIconsRingFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

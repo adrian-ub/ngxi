@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[rivetIconsHappyIcon],svg[rivet-icons-happy-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M10 7a1 1 0 1 0 0-2a1 1 0 0 0 0 2M7 6a1 1 0 1 1-2 0a1 1 0 0 1 2 0M4.86 8.732a1 1 0 0 1 1.398.116l.005.005q.014.016.062.06c.064.057.169.142.315.23c.287.172.736.357 1.36.357s1.073-.185 1.36-.357a2 2 0 0 0 .377-.29l.005-.005a1 1 0 0 1 1.526 1.292l-.001.002l-.001.001l-.003.004l-.007.008l-.018.02a2.4 2.4 0 0 1-.225.224c-.145.13-.352.296-.623.459A4.6 4.6 0 0 1 8 11.5a4.6 4.6 0 0 1-2.39-.643a4 4 0 0 1-.795-.624l-.053-.057l-.018-.021l-.007-.008l-.003-.004v-.001l-.002-.001a1 1 0 0 1 .128-1.41Z"></svg:path><svg:path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2 8a6 6 0 1 1 12 0A6 6 0 0 1 2 8"></svg:path></svg:g>`,
+})
+export class RivetIconsHappyIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

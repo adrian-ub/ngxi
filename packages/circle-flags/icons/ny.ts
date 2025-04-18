@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsNyIcon],svg[circle-flags-ny-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsNy0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsNy0)"><svg:path fill="#d80027" d="m0 167l253.8-19.3L512 167v178l-254.9 32.3L0 345z"></svg:path><svg:path fill="#333" d="M0 0h512v167H0z"></svg:path><svg:path fill="#496e2d" d="M0 345h512v167H0z"></svg:path><svg:path fill="#d80027" d="m332.5 122.4l-31.2-14.7l16.6-30.3l-34 6.5l-4.3-34.3L256 75l-23.6-25.3L228 84l-34-6.5l16.7 30.3l-31.3 14.7z"></svg:path></svg:g>`,
+})
+export class CircleFlagsNyIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

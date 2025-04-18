@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiSocksIcon],svg[twemoji-socks-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#55ACEE" d="M27 19.276c-.983 0-1.893.294-2.667.784v4.549h-2.3c.175 2.603 2.319 4.667 4.966 4.667a5 5 0 0 0 5-5v-5z"></svg:path><svg:path fill="#1C6399" d="m22.995 22.999l.005-16l9 .003l-.005 16z"></svg:path><svg:path fill="#1C6399" d="m24.202 21.451l6.354 6.354l-6.878 6.878l-6.354-6.354z"></svg:path><svg:path fill="#55ACEE" d="M30 4h-5c-1.1 0-2 .9-2 2v2h9V6c0-1.1-.9-2-2-2M15 15.276c-.983 0-1.893.294-2.667.784v4.549h-2.3c.175 2.603 2.319 4.667 4.966 4.667a5 5 0 0 0 5-5v-5z"></svg:path><svg:path fill="#1C6399" d="m10.994 18.999l.006-16l9 .003l-.006 16z"></svg:path><svg:path fill="#55ACEE" d="M23.676 34.682a4.5 4.5 0 0 1-6.364-6.364s1.149.133 3.69 2.674s2.674 3.69 2.674 3.69M18 0h-5c-1.1 0-2 .9-2 2v2h9V2c0-1.1-.9-2-2-2"></svg:path><svg:path fill="#1C6399" d="m12.202 17.451l6.354 6.354l-6.878 6.878l-6.354-6.354z"></svg:path><svg:path fill="#55ACEE" d="M11.676 30.682a4.5 4.5 0 0 1-6.364-6.364s1.149.133 3.69 2.674s2.674 3.69 2.674 3.69"></svg:path><svg:path fill="#FFCC4D" d="M22.994 10.067h9v2h-9zm0 4h9v2h-9zm-12-8h9v2h-9zm0 4h9v2h-9z"></svg:path>`,
+})
+export class TwemojiSocksIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

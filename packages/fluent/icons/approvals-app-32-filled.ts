@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentApprovalsApp32FilledIcon],svg[fluent-approvals-app-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.866 2.366a1.25 1.25 0 0 1 1.768 0l4 4a1.25 1.25 0 0 1 0 1.768l-4 4a1.25 1.25 0 0 1-1.768-1.768l1.862-1.862a9.5 9.5 0 1 0 9.69 10.743c.09-.684.642-1.247 1.332-1.247s1.257.561 1.186 1.248C27.312 25.289 22.206 30 16 30C9.373 30 4 24.627 4 18C4 11.461 9.23 6.144 15.735 6.003l-1.869-1.87a1.25 1.25 0 0 1 0-1.767m7.268 13.768a1.25 1.25 0 0 0-1.768-1.768l-4.616 4.616l-1.616-1.616a1.25 1.25 0 0 0-1.768 1.768l2.5 2.5a1.25 1.25 0 0 0 1.768 0z"></svg:path>`,
+})
+export class FluentApprovalsApp32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

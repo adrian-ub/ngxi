@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneFlowerPlayingCardsIcon],svg[emojione-flower-playing-cards-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#333" d="M52.6 0H11.4C9 0 7 1.8 7 4.1v55.8c0 2.3 2 4.1 4.4 4.1h41.2c2.4 0 4.4-1.8 4.4-4.1V4.1C57 1.8 55 0 52.6 0"></svg:path><svg:path fill="#b70000" d="M51.3 2H12.7C10.4 2 9 3.7 9 5.8V34l46 24.3V6c0-2.1-1.4-4-3.7-4"></svg:path><svg:circle cx="25" cy="19" r="13" fill="#fff"></svg:circle><svg:path fill="#333" d="M55.4 58.2H8.6V34c24 0 46.8 10.2 46.8 24.2"></svg:path>`,
+})
+export class EmojioneFlowerPlayingCardsIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

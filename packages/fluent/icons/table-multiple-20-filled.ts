@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTableMultiple20FilledIcon],svg[fluent-table-multiple-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.001 13.5a3.5 3.5 0 0 1-3.5 3.5H5.672c.773.625 1.757 1 2.829 1h5a4.5 4.5 0 0 0 4.5-4.5v-5a4.48 4.48 0 0 0-1-2.829zM4.501 16H6v-4H2v1.5A2.5 2.5 0 0 0 4.5 16M6 7v4H2V7zm5 4H7V7h4zm-4 1h4v4H7zm5-5v4h4V7zm0 5h4v1.5a2.5 2.5 0 0 1-2.5 2.5H12zM2 6h4V2H4.5A2.5 2.5 0 0 0 2 4.5zm5 0V2h4v4zm5 0V2h1.5A2.5 2.5 0 0 1 16 4.5V6z"></svg:path>`,
+})
+export class FluentTableMultiple20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

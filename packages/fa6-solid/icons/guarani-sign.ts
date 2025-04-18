@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fa6SolidGuaraniSignIcon],svg[fa6-solid-guarani-sign-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M192 0c-17.7 0-32 14.3-32 32v34.7C69.2 81.9 0 160.9 0 256s69.2 174.1 160 189.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32v-34.7c90.8-15.2 160-94.2 160-189.3c0-17.7-14.3-32-32-32H224v-92c22.1 5.7 41.8 17.1 57.6 32.6c12.6 12.4 32.9 12.2 45.3-.4s12.2-32.9-.5-45.3C299 92 263.5 73.3 224 66.7V32c0-17.7-14.3-32-32-32m-32 132v248c-55.2-14.2-96-64.3-96-124s40.8-109.8 96-124m64 248v-92h92c-11.6 45-47 80.4-92 92"></svg:path>`,
+})
+export class Fa6SolidGuaraniSignIcon {
+  readonly viewBox = input("0 0 384 512")
+  readonly width = input("0.75em")
+  readonly height = input("1em")
+}

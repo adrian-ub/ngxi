@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenAxlIcon],svg[token-axl-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m13.046 10.577l5.496-5.49L16.46 3L12 7.455L7.55 3L5.47 5.081l5.49 5.496a1.467 1.467 0 0 0 2.086 0M21 16.449l-4.45-4.455l4.444-4.449l-2.08-2.081l-5.49 5.49a1.47 1.47 0 0 0-.321 1.604c.074.178.183.34.32.477l5.49 5.496zm-9 .096L16.444 21l2.087-2.081l-5.49-5.496a1.47 1.47 0 0 0-1.609-.32a1.5 1.5 0 0 0-.478.32l-5.496 5.49L7.54 21zm-1.423-3.499a1.47 1.47 0 0 0 .32-1.604a1.5 1.5 0 0 0-.32-.477l-5.49-5.496L3 7.551l4.455 4.455L3 16.455l2.081 2.081z"></svg:path>`,
+})
+export class TokenAxlIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

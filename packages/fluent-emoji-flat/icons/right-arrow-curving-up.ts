@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatRightArrowCurvingUpIcon],svg[fluent-emoji-flat-right-arrow-curving-up-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#00A6ED" d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"></svg:path><svg:path fill="#fff" d="M9 24.593a1 1 0 0 0 1 1h1.993a.01.01 0 0 0 .007-.007q.001-.008.008-.008q.244.015.492.015c4.142 0 7.5-3.134 7.5-7v-5.75a.25.25 0 0 1 .25-.25h1.988a.75.75 0 0 0 .528-1.283l-4.238-4.195a.75.75 0 0 0-1.056 0l-4.238 4.195a.75.75 0 0 0 .528 1.283h1.988a.25.25 0 0 1 .25.25v5.75c0 1.401-1.303 3-3.5 3q-.25 0-.485-.027a.014.014 0 0 0-.015.014a.013.013 0 0 1-.014.013H10a1 1 0 0 0-1 1z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatRightArrowCurvingUpIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

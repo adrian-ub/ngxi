@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsE3Icon],svg[simple-icons-e3-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M11.068 16.519H4.772v-2.674h6.262v-3.757H4.772v-2.64h6.262V3.69H0v16.618h14.148c0-.034-2.776-.71-3.08-3.79m10.12-6.397c1.895 1.286 2.877 2.538 2.809 5.11c-.068 2.674-2.776 5.043-5.72 5.043c-2.099 0-4.772-.947-5.788-3.756l3.486-1.557c.474.88 1.151 1.557 2.2 1.557c1.151 0 1.997-.88 2.099-1.997c.034-.271-.136-2.234-2.099-2.302l-2.2-.237l2.81-4.535h-6.33V3.69h11.542z"></svg:path>`,
 })
 export class SimpleIconsE3Icon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

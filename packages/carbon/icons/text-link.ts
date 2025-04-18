@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonTextLinkIcon],svg[carbon-text-link-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.706 27.585a5.262 5.262 0 0 1-3.723-8.983l1.415 1.414a3.264 3.264 0 1 0 4.616 4.616l6.03-6.03a3.264 3.264 0 0 0-4.616-4.616l-1.414-1.414a5.264 5.264 0 0 1 7.444 7.444l-6.03 6.03a5.25 5.25 0 0 1-3.722 1.539"></svg:path><svg:path fill="currentColor" d="M10.264 29.997a5.262 5.262 0 0 1-3.722-8.983l6.03-6.03a5.264 5.264 0 1 1 7.444 7.443l-1.414-1.414a3.264 3.264 0 1 0-4.616-4.615l-6.03 6.03a3.264 3.264 0 0 0 4.616 4.616l1.414 1.414a5.25 5.25 0 0 1-3.722 1.54M2 10h8v2H2zm0-4h12v2H2zm0-4h12v2H2z"></svg:path>`,
+})
+export class CarbonTextLinkIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

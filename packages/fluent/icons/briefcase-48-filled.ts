@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBriefcase48FilledIcon],svg[fluent-briefcase-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.5 8.25V12h11V8.25a1.75 1.75 0 0 0-1.75-1.75h-7.5a1.75 1.75 0 0 0-1.75 1.75M16 12V8.25A4.25 4.25 0 0 1 20.25 4h7.5A4.25 4.25 0 0 1 32 8.25V12h3.75A6.25 6.25 0 0 1 42 18.25v3.5a3.75 3.75 0 0 1-3.75 3.75H28V25a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v.5H9.75A3.75 3.75 0 0 1 6 21.75v-3.5A6.25 6.25 0 0 1 12.25 12zm4 16H9.75A6.22 6.22 0 0 1 6 26.75v7A6.25 6.25 0 0 0 12.25 40h23.5A6.25 6.25 0 0 0 42 33.75v-7A6.22 6.22 0 0 1 38.25 28H28v1a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z"></svg:path>`,
+})
+export class FluentBriefcase48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

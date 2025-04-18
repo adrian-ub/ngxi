@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenEmpIcon],svg[token-emp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.625 14.25H3.282A9 9 0 0 1 3 12c0-4.973 3.988-9 8.91-9H21l-2.785 2.627l-.073-.034zM21 11.999a8.998 8.998 0 0 1-15.3 6.423l3.488-3.61A3.98 3.98 0 0 0 12 15.935a3.937 3.937 0 0 0 3.122-6.339l.253-.225l3.352-3.352A8.97 8.97 0 0 1 21 11.999"></svg:path><svg:path fill="currentColor" d="M21 11.999A8.999 8.999 0 0 1 3.45 14.81h5.738l.287.253c.854.76 2.469 2.182 4.96 2.182c3.19 0 6.002-3.183 6.002-6.372c0-1.361-.282-2.503-.63-3.353A8.96 8.96 0 0 1 20.999 12"></svg:path>`,
+})
+export class TokenEmpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsLaurelWreath02Icon],svg[hugeicons-laurel-wreath-02-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M18.52 6.23C18.812 7.896 17.5 9 17.5 9s-1.603-.563-1.895-2.23C15.313 5.104 16.625 4 16.625 4s1.603.563 1.895 2.23m2.407 7.359c-1.345 1.129-2.99.5-2.99.5s-.3-1.758 1.044-2.887s2.99-.5 2.99-.5s.3 1.758-1.044 2.887m-4.193 6.237c-1.5-.575-1.734-2.19-1.734-2.19s1.267-1.038 2.767-.462c1.5.575 1.733 2.19 1.733 2.19s-1.267 1.038-2.767.462"></svg:path><svg:path d="M15 17.637c1.405-1.201 3-3.58 3-5.91c0-.964-.154-1.885-.436-2.727M5.48 6.23C5.188 7.896 6.5 9 6.5 9s1.603-.563 1.895-2.23C8.687 5.104 7.375 4 7.375 4s-1.603.563-1.895 2.23m-2.407 7.359c1.345 1.129 2.99.5 2.99.5s.3-1.758-1.044-2.887s-2.99-.5-2.99-.5s-.3 1.758 1.044 2.887m4.194 6.237c1.5-.575 1.733-2.19 1.733-2.19s-1.267-1.038-2.767-.462c-1.5.575-1.733 2.19-1.733 2.19s1.267 1.038 2.767.462"></svg:path><svg:path d="M9 17.637c-1.405-1.201-3-3.58-3-5.91c0-.964.154-1.885.436-2.727"></svg:path></svg:g>`,
+})
+export class HugeiconsLaurelWreath02Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

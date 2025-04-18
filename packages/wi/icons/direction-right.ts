@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[wiDirectionRightIcon],svg[wi-direction-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.94 14.36c0 .22.08.42.23.57s.34.22.56.2h6.58l-1.03 1.08c-.16.16-.24.35-.24.55c0 .22.08.42.24.57c.16.16.35.23.58.23c.21-.01.39-.1.53-.27l2.45-2.41c.16-.16.23-.35.23-.58a.83.83 0 0 0-.24-.58l-2.47-2.39a.67.67 0 0 0-.54-.23c-.23 0-.42.07-.57.22c-.16.15-.23.34-.23.56c0 .23.08.42.23.57l1.06 1.08h-6.59a.77.77 0 0 0-.56.25c-.15.17-.22.36-.22.58"></svg:path>`,
+})
+export class WiDirectionRightIcon {
+  readonly viewBox = input("0 0 30 30")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

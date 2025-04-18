@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoCompassIcon],svg[entypo-compass-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.454 14.548s4.568-.627 6.518-2.576s2.576-6.518 2.576-6.518s-4.569.627-6.518 2.576s-2.576 6.518-2.576 6.518m3.563-5.533c.818-.818 2.385-1.4 3.729-1.762c-.361 1.342-.945 2.92-1.76 3.732a1.39 1.39 0 0 1-1.969 0a1.39 1.39 0 0 1 0-1.97M10.001.4C4.698.4.4 4.698.4 10a9.6 9.6 0 0 0 9.601 9.601c5.301 0 9.6-4.298 9.6-9.601c0-5.302-4.299-9.6-9.6-9.6M10 17.6a7.6 7.6 0 1 1 0-15.2a7.6 7.6 0 1 1 0 15.2"></svg:path>`,
+})
+export class EntypoCompassIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

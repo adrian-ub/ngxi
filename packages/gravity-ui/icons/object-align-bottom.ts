@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gravityUiObjectAlignBottomIcon],svg[gravity-ui-object-align-bottom-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1.75 12.5a.75.75 0 0 0 0 1.5h12.5a.75.75 0 0 0 0-1.5zM7 9.5h2a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v4.5a1 1 0 0 0 1 1m-2.5-1A2.5 2.5 0 0 0 7 11h2a2.5 2.5 0 0 0 2.5-2.5V4A2.5 2.5 0 0 0 9 1.5H7A2.5 2.5 0 0 0 4.5 4z" clip-rule="evenodd"></svg:path>`,
+})
+export class GravityUiObjectAlignBottomIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

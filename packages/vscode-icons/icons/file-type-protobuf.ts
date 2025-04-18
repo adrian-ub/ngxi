@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeProtobufIcon],svg[vscode-icons-file-type-protobuf-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#d44235" d="m5.219 11.769l2.429-3.312h6.624L8.53 16.185H5.219z"></svg:path><svg:path fill="#f7bb07" d="M23.177 15.817h3.46v4.49l-2.503 3.238h-6.477z"></svg:path><svg:path fill="#4081ec" d="M2.348 16.037c0-.398.008-.401 2.87-4.268l9.054 11.776H7.795c-5.443-7.049-5.447-7.057-5.447-7.508"></svg:path><svg:path fill="#0f9855" d="M17.657 8.457h6.403c5.358 7 5.59 7.26 5.594 7.58c.004.322-.047.469-3.018 4.27z"></svg:path>`,
+})
+export class VscodeIconsFileTypeProtobufIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[elPictureIcon],svg[el-picture-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 99.243v1001.514h1200V99.243zm92.065 93.604h1015.869v814.307H92.065zm209.4 117.553c-28.65 0-52.756 9.762-72.29 29.297s-29.297 43.64-29.297 72.29c0 27.349 9.763 50.777 29.297 70.312s43.64 29.297 72.29 29.297c27.348 0 50.778-9.763 70.313-29.297s29.297-42.964 29.297-70.312c0-28.65-9.763-52.755-29.297-72.29S328.813 310.4 301.465 310.4m431.689 49.512L502.661 709.57L380.273 607.983L199.878 842.358v68.407h800.244V635.962z"></svg:path>`,
+})
+export class ElPictureIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

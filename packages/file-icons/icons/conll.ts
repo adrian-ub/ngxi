@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fileIconsConllIcon],svg[file-icons-conll-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M509.933 266.39H378.328c-5.968-61.392-22.364-107.11-72.753-123.445v203.997c-36.707 13.427-72.856 13.3-108.334-3.119l-.506-337.47C433.035-3.822 499.643 125.92 509.933 266.39M512 158.69V6.353H364.712C437.142 32.798 484.431 85.462 512 158.69m-2.067 130.745H378.177C348.18 421.665 127.374 404.39 128.25 265.86V6.353H0L1.002 275.88c34.734 301.589 456.924 307.935 508.93 13.555"></svg:path>`,
+})
+export class FileIconsConllIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

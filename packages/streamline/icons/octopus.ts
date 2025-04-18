@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineOctopusIcon],svg[streamline-octopus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M13.5 9.5c0 2-2.5 2.354-3.854 1c-1.084-1.083-.83-2.267 0-3a4 4 0 1 0-5.292 0c.83.733 1.084 1.917 0 3C3 11.854.5 11.5.5 9.5"></svg:path><svg:path d="M6.25 10.5c-.167 1-1.25 3-3.25 3c-1 0-1.5-.5-1.5-.5m6.25-2.5c.167 1 1.25 3 3.25 3c1 0 1.5-.5 1.5-.5M5.25 5.5a.25.25 0 0 1 0-.5m0 .5a.25.25 0 0 0 0-.5m3.5.5a.25.25 0 0 1 0-.5m0 .5a.25.25 0 0 0 0-.5"></svg:path></svg:g>`,
+})
+export class StreamlineOctopusIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

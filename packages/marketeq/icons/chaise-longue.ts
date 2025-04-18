@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[marketeqChaiseLongueIcon],svg[marketeq-chaise-longue-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path stroke="#344054" d="M39.583 27.083a8.333 8.333 0 0 0-8.333-8.333H25v-1.042a7.292 7.292 0 0 0-14.583 0v.563m29.166 21.312v-4.166m-29.166 4.166v-4.166z"></svg:path><svg:path stroke="#306CFE" d="M14.583 27.083v-3.937a4.31 4.31 0 0 0-3.458-4.396a4.168 4.168 0 0 0-4.875 4.167v12.5h37.5v-6.25a2.083 2.083 0 0 0-2.083-2.084z"></svg:path></svg:g>`,
+})
+export class MarketeqChaiseLongueIcon {
+  readonly viewBox = input("0 0 50 50")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

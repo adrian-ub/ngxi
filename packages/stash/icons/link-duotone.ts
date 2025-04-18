@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[stashLinkDuotoneIcon],svg[stash-link-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12.502 4.93a4.65 4.65 0 0 1 6.575 6.576l-.011.01l-2.265 2.265a4.65 4.65 0 0 1-7.012-.502a.875.875 0 1 1 1.401-1.048a2.9 2.9 0 0 0 4.374.313l2.259-2.26a2.9 2.9 0 0 0-4.101-4.1l-1.294 1.287a.875.875 0 0 1-1.234-1.24zm-3.64 4.22a4.65 4.65 0 0 1 5.348 1.57a.875.875 0 1 1-1.401 1.05a2.9 2.9 0 0 0-4.373-.314l-2.26 2.26a2.9 2.9 0 0 0 4.1 4.1l1.286-1.285a.875.875 0 1 1 1.238 1.237l-1.292 1.291l-.01.01a4.65 4.65 0 0 1-6.576-6.575l.011-.01l2.265-2.265a4.65 4.65 0 0 1 1.663-1.07" clip-rule="evenodd"></svg:path>`,
+})
+export class StashLinkDuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

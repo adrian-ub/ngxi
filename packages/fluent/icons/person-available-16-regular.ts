@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonAvailable16RegularIcon],svg[fluent-person-available-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 4.5a2.5 2.5 0 1 1 4.889.74a5.5 5.5 0 0 0-2.623 1.75A2.5 2.5 0 0 1 4 4.5M6.5 3a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3m4 12a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m2.354-6.354a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1-1a.5.5 0 0 1 .708-.708l.646.647l2.646-2.647a.5.5 0 0 1 .708 0M5.6 8H3.5C2.672 8 2 8.955 2 9.75V10c0 1.73 1.554 3.64 4.22 3.955a5.5 5.5 0 0 1-.72-1.162C3.815 12.29 3 10.978 3 10v-.25c0-.14.07-.361.22-.547c.15-.188.264-.203.28-.203h1.707q.149-.524.393-1"></svg:path>`,
+})
+export class FluentPersonAvailable16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

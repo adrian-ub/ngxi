@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsWorkflowSquare05Icon],svg[hugeicons-workflow-square-05-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 4.4c0-1.131 0-1.697.351-2.049C3.703 2 4.27 2 5.4 2h.2c1.131 0 1.697 0 2.049.351C8 2.703 8 3.27 8 4.4v.2c0 1.131 0 1.697-.351 2.049C7.297 7 6.73 7 5.6 7h-.2c-1.131 0-1.697 0-2.049-.351C3 6.297 3 5.73 3 4.6zm13 5c0-1.131 0-1.697.352-2.049C16.702 7 17.269 7 18.4 7h.2c1.131 0 1.697 0 2.048.351C21 7.703 21 8.27 21 9.4v.2c0 1.131 0 1.697-.352 2.049c-.35.351-.917.351-2.048.351h-.2c-1.131 0-1.697 0-2.048-.351C16 11.297 16 10.73 16 9.6zm-13 5c0-1.131 0-1.697.351-2.049C3.703 12 4.27 12 5.4 12h.2c1.131 0 1.697 0 2.049.351C8 12.704 8 13.27 8 14.4v.2c0 1.131 0 1.697-.351 2.048C7.297 17 6.73 17 5.6 17h-.2c-1.131 0-1.697 0-2.049-.352C3 16.298 3 15.731 3 14.6zm13 5c0-1.131 0-1.697.352-2.048c.35-.352.917-.352 2.048-.352h.2c1.131 0 1.697 0 2.048.352c.352.35.352.917.352 2.048v.2c0 1.131 0 1.697-.352 2.048c-.35.352-.917.352-2.048.352h-.2c-1.131 0-1.697 0-2.048-.352C16 21.298 16 20.731 16 19.6zM8 4.5l7 5l-6 5l7 5" color="currentColor"></svg:path>`,
+})
+export class HugeiconsWorkflowSquare05Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

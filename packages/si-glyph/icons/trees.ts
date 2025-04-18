@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphTreesIcon],svg[si-glyph-trees-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12.986 14.203v-2.278c1.52-.339 2.967-1.952 2.967-3.896c0-2.19-1.648-7.982-3.451-7.982S9.047 5.839 9.047 8.029c0 1.901 1.513 3.489 2.984 3.874v2.21a62 62 0 0 0-3.011-.072a24 24 0 0 0-3.067.197v-2.672c1.058-.311 1.97-1.418 1.97-2.75c0-1.57-1.095-5.781-2.442-5.781c-1.35 0-2.442 4.211-2.442 5.781c0 1.354.905 2.48 1.993 2.769v2.793c-2.395.413-4.01 1.113-4.01 1.567h16c-.001-.456-1.627-1.531-4.036-1.742"></svg:path>`,
+})
+export class SiGlyphTreesIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}

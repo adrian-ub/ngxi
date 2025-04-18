@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ggViewMonthIcon],svg[gg-view-month-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2 8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3zm15-1h2a1 1 0 0 1 1 1v1h-3zm-2 0h-2v2h2zm-4 0H9v2h2zM7 7H5a1 1 0 0 0-1 1v1h3zm-3 4v2h3v-2zm0 4v1a1 1 0 0 0 1 1h2v-2zm5 2h2v-2H9zm4 0h2v-2h-2zm4 0h2a1 1 0 0 0 1-1v-1h-3zm3-4v-2h-3v2zm-9 0H9v-2h2zm4 0h-2v-2h2z" clip-rule="evenodd"></svg:path>`,
+})
+export class GgViewMonthIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

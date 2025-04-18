@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsYoutubeFill24Icon],svg[qlementine-icons-youtube-fill-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m11.7 3.6l.365-.002l.653.004c.872.006 2.46.026 4.06.086l.257.01c1.8.071 3.57.195 4.36.409c.509.138.972.406 1.35.778c.373.372.641.836.779 1.34c.793 3.19.61 8.23.015 11.5c-.138.508-.406.972-.779 1.34s-.836.64-1.35.778c-1.75.477-8.48.506-9.28.508l-.807-.004c-.817-.006-2.22-.024-3.68-.074l-.465-.017l-.444-.018c-1.69-.073-3.3-.195-4.04-.396a3.02 3.02 0 0 1-2.129-2.118c-.797-3.18-.579-8.22-.015-11.5a3.02 3.02 0 0 1 2.129-2.119c1.63-.444 7.56-.51 9.03-.522zM9.04 8v8l7-4z"></svg:path>`,
+})
+export class QlementineIconsYoutubeFill24Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

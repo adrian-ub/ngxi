@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[heroiconsNumberedList20SolidIcon],svg[heroicons-numbered-list-20-solid-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M3 1.25a.75.75 0 0 0 0 1.5h.25v2.5a.75.75 0 0 0 1.5 0V2A.75.75 0 0 0 4 1.25zm-.03 7.404a3.5 3.5 0 0 1 1.524-.12a.03.03 0 0 1-.012.012L2.415 9.579A.75.75 0 0 0 2 10.25v1c0 .414.336.75.75.75h2.5a.75.75 0 0 0 0-1.5H3.927l1.225-.613c.52-.26.848-.79.848-1.371c0-.647-.429-1.327-1.193-1.451a5 5 0 0 0-2.277.155a.75.75 0 0 0 .44 1.434M7.75 3a.75.75 0 0 0 0 1.5h9.5a.75.75 0 0 0 0-1.5zm0 6.25a.75.75 0 0 0 0 1.5h9.5a.75.75 0 0 0 0-1.5zm0 6.25a.75.75 0 0 0 0 1.5h9.5a.75.75 0 0 0 0-1.5zm-5.125-1.625a.75.75 0 0 0 0 1.5h1.5a.125.125 0 0 1 0 .25H3.5a.75.75 0 0 0 0 1.5h.625a.125.125 0 0 1 0 .25h-1.5a.75.75 0 0 0 0 1.5h1.5a1.625 1.625 0 0 0 1.37-2.5a1.625 1.625 0 0 0-1.37-2.5z"></svg:path>`,
 })
 export class HeroiconsNumberedList20SolidIcon {
-  readonly viewBox = input('0 0 20 20')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

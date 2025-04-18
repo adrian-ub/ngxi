@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineCellularNetwork5gSolidIcon],svg[streamline-cellular-network-5g-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1.772 2.219a.625.625 0 1 0 .81.953a7.16 7.16 0 0 1 4.421-1.697a7.15 7.15 0 0 1 4.416 1.697a.625.625 0 0 0 .809-.953A8.4 8.4 0 0 0 6.987.225A8.4 8.4 0 0 0 1.772 2.22ZM4.19 4.174a.625.625 0 0 0 .723 1.02c.66-.468 1.379-.725 2.103-.765c.726.038 1.448.294 2.109.762a.625.625 0 0 0 .722-1.02c-.85-.602-1.81-.947-2.804-.992h-.058c-.99.047-1.948.394-2.795.995M9.3 8.636a.66.66 0 0 0-.66.66v2.57a.66.66 0 0 0 .66.659h.857a.66.66 0 0 0 .66-.66v-.231h-.66a.625.625 0 1 1 0-1.25h1.285c.345 0 .625.28.625.625v.856a1.91 1.91 0 0 1-1.91 1.91H9.3a1.91 1.91 0 0 1-1.91-1.91v-2.57a1.91 1.91 0 0 1 1.91-1.91h.857a1.91 1.91 0 0 1 1.8 1.274a.625.625 0 1 1-1.178.417a.66.66 0 0 0-.622-.44zm-3.495.003H3.553l-.16.96q.327-.07.664-.07h.678a1.91 1.91 0 0 1 1.91 1.909v.428a1.91 1.91 0 0 1-1.91 1.909H3.88a1.91 1.91 0 0 1-1.8-1.273a.625.625 0 1 1 1.179-.416a.66.66 0 0 0 .621.439h.856a.66.66 0 0 0 .66-.659v-.428a.66.66 0 0 0-.66-.659h-.678c-.301 0-.599.07-.868.205l-.314.157a.625.625 0 0 1-.896-.662l.428-2.568a.625.625 0 0 1 .616-.522h2.782a.625.625 0 1 1 0 1.25Z" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineCellularNetwork5gSolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

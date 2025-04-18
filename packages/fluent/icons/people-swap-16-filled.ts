@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPeopleSwap16FilledIcon],svg[fluent-people-swap-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.5 8a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m8-2a2 2 0 1 1-4 0a2 2 0 0 1 4 0M7.879 9l-1.44 1.44a1.5 1.5 0 0 0 0 2.12l.728.729A6 6 0 0 1 5.5 13.5c-4 0-4-2.925-4-2.925V10.5A1.5 1.5 0 0 1 3 9zm1.975.854a.5.5 0 0 0-.708-.708l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L8.707 12h4.586l-1.147 1.146a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 0 0-.708.708L13.293 11H8.707z"></svg:path>`,
+})
+export class FluentPeopleSwap16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

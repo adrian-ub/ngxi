@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7GreaterthanIcon],svg[f7-greaterthan-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.832 43.563c.656 0 1.102-.211 1.594-.446L41.77 31.281c1.335-.633 2.39-1.664 2.39-3.164c0-1.476-1.031-2.555-2.414-3.164l-26.32-12.117c-.469-.234-.89-.399-1.5-.399c-1.219 0-2.086.844-2.086 2.087c0 1.078.562 1.687 1.547 2.156l25.219 11.133v.257l-25.22 11.227c-.984.469-1.546 1.078-1.546 2.156c0 1.29.844 2.11 1.992 2.11"></svg:path>`,
+})
+export class F7GreaterthanIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

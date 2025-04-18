@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[evaMenu2OutlineIcon],svg[eva-menu-2-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="4" cy="12" r="1" fill="currentColor"></svg:circle><svg:rect width="14" height="2" x="7" y="11" fill="currentColor" rx=".94" ry=".94"></svg:rect><svg:rect width="18" height="2" x="3" y="16" fill="currentColor" rx=".94" ry=".94"></svg:rect><svg:rect width="18" height="2" x="3" y="6" fill="currentColor" rx=".94" ry=".94"></svg:rect>`,
+})
+export class EvaMenu2OutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

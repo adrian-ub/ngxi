@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsEquipmentWeightliftingIcon],svg[hugeicons-equipment-weightlifting-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M10.529 8h2.942c.56 0 1.147.002 1.397.617c.176.433.176 1.333 0 1.766c-.25.615-.837.617-1.397.617H10.53c-.56 0-1.147-.002-1.397-.617c-.176-.433-.176-1.333 0-1.766C9.383 8.002 9.97 8 10.53 8m-.001 3h2.942c.56 0 1.147.002 1.397.617c.176.433.176 1.333 0 1.766c-.25.615-.837.617-1.397.617H10.53c-.56 0-1.147-.002-1.397-.617c-.176-.433-.176-1.333 0-1.766c.25-.615.837-.617 1.397-.617M7.5 19c.042-.127.063-.19.086-.246a2 2 0 0 1 1.735-1.25c.06-.004.127-.004.26-.004h4.838c.133 0 .2 0 .26.004a2 2 0 0 1 1.735 1.25c.023.056.044.12.086.246M12 17.5V22m0 0h7m-7 0H5"></svg:path><svg:path d="m21 8.5l-1.204-1.405c-.884-1.03-1.325-1.546-1.922-1.82C17.277 5 16.598 5 15.24 5H8.76c-1.358 0-2.037 0-2.634.274c-.597.275-1.038.79-1.922 1.821L3 8.5m9-.5V2"></svg:path></svg:g>`,
+})
+export class HugeiconsEquipmentWeightliftingIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

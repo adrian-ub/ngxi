@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cbiEsphomeNewIcon],svg[cbi-esphome-new-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.883 2.624a1.253 1.253 0 0 0-1.767 0l-8.232 8.232A3.48 3.48 0 0 0 2 12.991v7.5a1.254 1.254 0 0 0 1.25 1.25h4.916V9.3a.5.5 0 0 1 .5-.5h6.667a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-4.167v1h4.167a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-4.167v1h4.167a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-4.667a.5.5 0 0 1 0-1h4.167v-1h-4.167a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h4.167v-1h-4.167a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h4.167v-1H9.166v11.941H20.75a1.254 1.254 0 0 0 1.25-1.25v-7.5a3.48 3.48 0 0 0-.884-2.135z"></svg:path>`,
+})
+export class CbiEsphomeNewIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

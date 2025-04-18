@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorOptions16Icon],svg[fluent-color-options-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorOptions164)" d="M14 11.5a.5.5 0 0 0-.5-.5h-11l-.09.008A.5.5 0 0 0 2.5 12h11l.09-.008A.5.5 0 0 0 14 11.5"></svg:path><svg:path fill="url(#fluentColorOptions160)" d="M14 11.5a.5.5 0 0 0-.5-.5h-11l-.09.008A.5.5 0 0 0 2.5 12h11l.09-.008A.5.5 0 0 0 14 11.5"></svg:path><svg:path fill="url(#fluentColorOptions161)" d="M14 11.5a.5.5 0 0 0-.5-.5h-11l-.09.008A.5.5 0 0 0 2.5 12h11l.09-.008A.5.5 0 0 0 14 11.5"></svg:path><svg:path fill="url(#fluentColorOptions165)" d="M14 4.5a.5.5 0 0 0-.5-.5h-11l-.09.008A.5.5 0 0 0 2.5 5h11l.09-.008A.5.5 0 0 0 14 4.5"></svg:path><svg:path fill="url(#fluentColorOptions162)" d="M14 4.5a.5.5 0 0 0-.5-.5h-11l-.09.008A.5.5 0 0 0 2.5 5h11l.09-.008A.5.5 0 0 0 14 4.5"></svg:path><svg:path fill="url(#fluentColorOptions163)" d="M14 4.5a.5.5 0 0 0-.5-.5h-11l-.09.008A.5.5 0 0 0 2.5 5h11l.09-.008A.5.5 0 0 0 14 4.5"></svg:path><svg:circle cx="6" cy="11.5" r="2" fill="url(#fluentColorOptions166)"></svg:circle><svg:circle cx="10" cy="4.5" r="2" fill="url(#fluentColorOptions167)"></svg:circle><svg:defs><svg:radialgradient id="fluentColorOptions160" cx="0" cy="0" r="1" gradientTransform="matrix(3 0 0 2.3326 10 4.5)" gradientUnits="userSpaceOnUse"><svg:stop offset=".549" stop-color="#70777D"></svg:stop><svg:stop offset="1" stop-color="#70777D" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorOptions161" cx="0" cy="0" r="1" gradientTransform="matrix(3 0 0 2.3326 6 11.5)" gradientUnits="userSpaceOnUse"><svg:stop offset=".549" stop-color="#70777D"></svg:stop><svg:stop offset="1" stop-color="#70777D" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorOptions162" cx="0" cy="0" r="1" gradientTransform="matrix(3 0 0 2.3326 10 4.5)" gradientUnits="userSpaceOnUse"><svg:stop offset=".549" stop-color="#70777D"></svg:stop><svg:stop offset="1" stop-color="#70777D" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorOptions163" cx="0" cy="0" r="1" gradientTransform="matrix(3 0 0 2.3326 6 11.5)" gradientUnits="userSpaceOnUse"><svg:stop offset=".549" stop-color="#70777D"></svg:stop><svg:stop offset="1" stop-color="#70777D" stop-opacity="0"></svg:stop></svg:radialgradient><svg:lineargradient id="fluentColorOptions164" x1="14.75" x2="7.421" y1="12.8" y2="-1.064" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#8C959B"></svg:stop><svg:stop offset="1" stop-color="#A3ACB5"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorOptions165" x1="14.75" x2="7.421" y1="12.8" y2="-1.064" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#8C959B"></svg:stop><svg:stop offset="1" stop-color="#A3ACB5"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorOptions166" x1="4.4" x2="7.6" y1="9.5" y2="13.5" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#29B4FB"></svg:stop><svg:stop offset="1" stop-color="#2764E7"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorOptions167" x1="8.4" x2="11.6" y1="2.5" y2="6.5" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#29B4FB"></svg:stop><svg:stop offset="1" stop-color="#2764E7"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class FluentColorOptions16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

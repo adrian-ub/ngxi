@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icTwotoneMarginIcon],svg[ic-twotone-margin-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 19h14V5H5zM15 7h2v2h-2zm0 4h2v2h-2zm-4-4h2v2h-2zm0 4h2v2h-2zM7 7h2v2H7zm0 4h2v2H7z" opacity=".3"></svg:path><svg:path fill="currentColor" d="M7 7h2v2H7zm0 4h2v2H7z"></svg:path><svg:path fill="currentColor" d="M3 3v18h18V3zm16 16H5V5h14z"></svg:path><svg:path fill="currentColor" d="M11 7h2v2h-2zm4 4h2v2h-2zm-4 0h2v2h-2zm4-4h2v2h-2z"></svg:path>`,
+})
+export class IcTwotoneMarginIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatColorIconsCopyrightIcon],svg[flat-color-icons-copyright-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="24" cy="24" r="21" fill="#9C27B0"></svg:circle><svg:path fill="#E1BEE7" d="M33.5 28.1c-.6 6.4-5.6 8.1-9.3 8.1c-3.1 0-9.6-1.6-9.6-11.2v-1.5c0-8.7 5.5-11.2 9.7-11.2c8.5 0 9.2 7 9.3 8.2h-4.8c-.3-3.6-2.2-4.3-4.5-4.3c-1.6 0-4.8.5-4.8 7.2V25c-.1 7.5 3.8 7.2 4.7 7.2c4.3 0 4.3-2.9 4.6-4.1z"></svg:path>`,
+})
+export class FlatColorIconsCopyrightIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

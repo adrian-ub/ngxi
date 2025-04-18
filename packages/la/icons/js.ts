@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[laJsIcon],svg[la-js-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 7v18h32V7zm2 2h28v14H2zm10 3v5.5c0 .215-.285.5-.5.5s-.5-.285-.5-.5V17H9v.5c0 1.383 1.117 2.5 2.5 2.5s2.5-1.117 2.5-2.5V12zm6.5 0a2.497 2.497 0 0 0-2.5 2.5c0 1.383 1.117 2.5 2.5 2.5c.215 0 .5.285.5.5c0 .3-.117.5-.5.5c-.367 0-.426-.078-.438-.094c-.011-.015-.062-.078-.062-.312h-2c0 .566.164 1.203.625 1.687c.46.485 1.145.719 1.875.719c1.418 0 2.5-1.2 2.5-2.5c0-1.383-1.117-2.5-2.5-2.5c-.215 0-.5-.285-.5-.5s.285-.5.5-.5c.266 0 .348.063.406.125a.42.42 0 0 1 .094.281h2c0-.59-.215-1.191-.656-1.656S19.234 12 18.5 12"></svg:path>`,
+})
+export class LaJsIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

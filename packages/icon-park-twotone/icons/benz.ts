@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkTwotoneBenzIcon],svg[icon-park-twotone-benz-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipTBenz0"><svg:g fill="none" stroke="#fff" stroke-width="4"><svg:path fill="#555" d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M6.68 34L24 24m0-20v20zm17.32 30L24 24z"></svg:path><svg:path d="M18 4.916A20 20 0 0 1 24 4c2.09 0 4.106.32 6 .916M4.63 29a20 20 0 0 0 2.045 5a20 20 0 0 0 3.042 4m33.653-9a20 20 0 0 1-2.046 5a20 20 0 0 1-3.041 4"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTBenz0)"></svg:path>`,
+})
+export class IconParkTwotoneBenzIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

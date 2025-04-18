@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2RemoveLinkIcon],svg[fluent-mdl2-remove-link-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M960 384q93 0 174 35t142 96t96 142t35 175q0 93-35 174t-96 142t-142 96t-174 36h-64v-128h64q66 0 124-25t101-68t69-102t26-125t-25-124t-69-101t-102-69t-124-26H448q-66 0-124 25t-102 69t-69 102t-25 124t25 124t68 102t102 69t125 25h64v128h-64q-93 0-174-35t-142-96t-96-142T0 832q0-93 35-174t96-142t142-96t175-36zm958 809q-5-63-31-117t-69-94t-99-63t-119-23h-64V768h64q93 0 174 35t142 96t96 142t36 175q0 47-11 96zm-1150 23q0 66 25 124t68 102t102 69t125 25h176l128 128h-304q-93 0-174-35t-142-96t-96-142t-36-175q0-93 35-174t96-142t142-96t175-36h64v128h-64q-66 0-124 25t-102 69t-69 102t-25 124m1277 286l-226 226l226 227l-90 90l-227-226l-227 227l-90-91l227-227l-227-227l90-90l227 227l227-227z"></svg:path>`,
+})
+export class FluentMdl2RemoveLinkIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

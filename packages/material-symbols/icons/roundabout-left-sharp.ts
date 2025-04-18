@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsRoundaboutLeftSharpIcon],svg[material-symbols-roundabout-left-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15 21v-8.05h1q1.65 0 2.825-1.15T20 9t-1.175-2.825T16 5t-2.8 1.175T12.05 9v1H5.825l1.6 1.6L6 13L2 9l4-4l1.4 1.4L5.825 8h4.325q.35-2.125 1.988-3.562T16 3q2.5 0 4.25 1.75T22 9q0 2.225-1.437 3.863T17 14.85V21z"></svg:path>`,
+})
+export class MaterialSymbolsRoundaboutLeftSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

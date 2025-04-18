@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatAtmSignIcon],svg[fluent-emoji-flat-atm-sign-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#00A6ED" d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"></svg:path><svg:path fill="#fff" d="M12.24 12.25a.75.75 0 0 0 0 1.5h1.99v4.77a.75.75 0 0 0 1.5 0v-4.77h1.98a.75.75 0 0 0 0-1.5zm14.607.155a.75.75 0 0 1 .293.595v5.52a.75.75 0 0 1-1.5 0v-3.71l-1.67 1.67a.75.75 0 0 1-.535.22a.75.75 0 0 1-.536-.22l-1.659-1.665v3.705a.75.75 0 0 1-1.5 0V13a.75.75 0 0 1 .463-.693a.75.75 0 0 1 .818.164l2.415 2.422l2.424-2.423a.75.75 0 0 1 .518-.22h.012a.75.75 0 0 1 .457.155m-18.772-.097c.262 0 .733.106.953.57l.004.01l2.44 5.32a.75.75 0 0 1-1.364.625l-.405-.883H6.447l-.405.883a.75.75 0 1 1-1.364-.626l2.444-5.328c.22-.465.69-.572.953-.572m0 2.091l-.94 2.051h1.88z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatAtmSignIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatUiLockIcon],svg[flat-ui-lock-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#F1C40E" d="M4 39.997h80a4 4 0 0 1 4 4v52a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-52a4 4 0 0 1 4-4"></svg:path><svg:path fill="#FFF55C" d="M4 35.997h80a4 4 0 0 1 4 4v5a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-5a4 4 0 0 1 4-4"></svg:path><svg:path fill="#364B5E" d="M73 38.997c-4.418 0-8 1.567-8 3.5s3.582 3.5 8 3.5s8-1.567 8-3.5s-3.582-3.5-8-3.5m-58 0c-4.418 0-8 1.567-8 3.5s3.582 3.5 8 3.5s8-1.567 8-3.5s-3.582-3.5-8-3.5"></svg:path><svg:path fill="#EBEDEE" d="M44 0C24.701 0 9 14.709 9 34.019v7.978c0 .553 2.687 2 6 2s6-1.447 6-2l-.021-.071v-7.907c0-12.701 10.327-22.034 23.021-22.034c12.693 0 23.021 9.333 23.021 22.034v7.907l-.021.071c0 .553 2.688 2 6 2s6-1.447 6-2v-7.978C79 14.709 63.299 0 44 0"></svg:path><svg:path fill="#BDC3C7" d="M44 5.999c-15.99 0-29 13.091-29 29.183v8.815c3.313 0 6-1.447 6-2l-.021-.071v-7.907c0-12.701 10.327-22.034 23.021-22.034c12.693 0 23.021 9.333 23.021 22.034v7.907l-.021.071c0 .553 2.688 2 6 2v-8.815C73 19.091 59.99 5.999 44 5.999"></svg:path><svg:path fill="#D8B00C" d="M0 95.998a4 4 0 0 0 4 4h80a4 4 0 0 0 4-4v-3H0z"></svg:path><svg:path fill="#E5BA0D" d="M4 48.997a3.99 3.99 0 0 1-3.858-3H0v50a4 4 0 0 0 4 4h40v-51z"></svg:path><svg:path fill="#CDA70C" d="M0 92.998v3a4 4 0 0 0 4 4h40v-7z"></svg:path>`,
+})
+export class FlatUiLockIcon {
+  readonly viewBox = input("0 0 88 99.998")
+  readonly width = input("0.89em")
+  readonly height = input("1em")
+}

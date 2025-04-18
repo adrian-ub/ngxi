@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbon3dCurveAutoVesselsIcon],svg[carbon-3d-curve-auto-vessels-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M17 11a3 3 0 0 1 3-3h.1a5 5 0 1 0 0-2H20a5 5 0 0 0-5 5v1h-2a3 3 0 0 1-3-3V7a5 5 0 0 0-5-5H4v2h1a3 3 0 0 1 3 3v2a5 5 0 0 0 5 5h2v7a3 3 0 0 1-3 3h-.1a5 5 0 1 0 0 2h.1a5 5 0 0 0 5-5h2.5a2.5 2.5 0 0 1 2.5 2.5a4.51 4.51 0 0 0 4.5 4.5H28v-2h-1.5a2.5 2.5 0 0 1-2.5-2.5a4.51 4.51 0 0 0-4.5-4.5H17zm8-7a3 3 0 1 1-3 3a3 3 0 0 1 3-3zM7 28a3 3 0 1 1 3-3a3 3 0 0 1-3 3z" fill="currentColor"></svg:path>`,
+})
+export class Carbon3dCurveAutoVesselsIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

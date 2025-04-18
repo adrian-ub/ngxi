@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkOutlineTwoEllipsesIcon],svg[icon-park-outline-two-ellipses-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path d="M40.579 7.349c3.765 3.764-.622 14.255-9.799 23.431s-19.667 13.564-23.43 9.8c-3.765-3.765.622-14.255 9.798-23.432S36.814 3.584 40.58 7.35"></svg:path><svg:path d="M7.485 7.349c-3.764 3.764.623 14.255 9.799 23.431s19.667 13.564 23.432 9.799s-.623-14.255-9.799-23.432S11.25 3.584 7.485 7.35"></svg:path></svg:g>`,
+})
+export class IconParkOutlineTwoEllipsesIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

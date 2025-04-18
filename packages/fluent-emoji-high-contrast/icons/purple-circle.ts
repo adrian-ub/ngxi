@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastPurpleCircleIcon],svg[fluent-emoji-high-contrast-purple-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 1C7.716 1 1 7.716 1 16s6.716 15 15 15s15-6.716 15-15S24.284 1 16 1m1.5 2.086L3.086 17.5a13 13 0 0 1-.072-2.1L15.4 3.015a13 13 0 0 1 2.1.072m2.338.49q.81.25 1.572.6L4.176 21.41a13 13 0 0 1-.6-1.572zM5.19 23.224L23.224 5.19q.645.433 1.234.938l-18.33 18.33q-.505-.588-.938-1.234m2.352 2.648l18.33-18.33q.506.588.938 1.234L8.776 26.81q-.646-.432-1.234-.938m3.048 1.952L27.824 10.59q.35.761.6 1.572L12.162 28.424a13 13 0 0 1-1.572-.6m3.91 1.09L28.914 14.5a13 13 0 0 1 .072 2.1L16.6 28.985a13 13 0 0 1-2.1-.072m5.561-.56l8.292-8.293a13.03 13.03 0 0 1-8.292 8.292M3.647 11.938a13.03 13.03 0 0 1 8.292-8.292z"></svg:path>`,
+})
+export class FluentEmojiHighContrastPurpleCircleIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

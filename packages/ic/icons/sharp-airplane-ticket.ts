@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icSharpAirplaneTicketIcon],svg[ic-sharp-airplane-ticket-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M22 4H2.01v6c1.1 0 1.99.9 1.99 2s-.89 2-2 2v6h20zm-4.27 9.3l-8.86 2.36l-1.66-2.88l.93-.25l1.26.99l2.39-.64l-2.4-4.16l1.4-.38l4.01 3.74l2.44-.65a.967.967 0 0 1 1.18.68a.99.99 0 0 1-.69 1.19"></svg:path>`,
+})
+export class IcSharpAirplaneTicketIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

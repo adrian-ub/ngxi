@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icons8TimelineIcon],svg[icons8-timeline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 4v24h2v-5h2.188c.418 1.156 1.52 2 2.812 2s2.394-.844 2.813-2H28v-2H13.812c-.418-1.156-1.52-2-2.812-2s-2.394.844-2.813 2H6v-4h14.188c.418 1.156 1.52 2 2.812 2s2.394-.844 2.813-2H28v-2h-2.188c-.418-1.156-1.52-2-2.812-2s-2.394.844-2.813 2H6v-4h7.188c.418 1.156 1.52 2 2.812 2s2.394-.844 2.813-2H28V9h-9.188c-.418-1.156-1.52-2-2.812-2s-2.394.844-2.813 2H6V4zm12 5c.564 0 1 .436 1 1s-.436 1-1 1s-1-.436-1-1s.436-1 1-1m7 6c.564 0 1 .436 1 1s-.436 1-1 1s-1-.436-1-1s.436-1 1-1m-12 6c.564 0 1 .436 1 1s-.436 1-1 1s-1-.436-1-1s.436-1 1-1"></svg:path>`,
+})
+export class Icons8TimelineIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

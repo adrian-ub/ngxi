@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeVcxprojIcon],svg[vscode-icons-file-type-vcxproj-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#68217a" d="M29.821 4.321L24.023 2l-12.53 12.212l-7.66-5.827l-1.654.837V22.8l1.644.827l7.65-5.827L24.023 30l5.8-2.321V4.321ZM4.65 19.192v-6.374l3.55 3.167ZM16 15.985l7.082-5.3v10.639l-7.092-5.339Z"></svg:path><svg:path fill="#fff" d="m15.995 15.985l7.082-5.299v10.638l-7.092-5.339zM4.65 19.192v-6.374l3.546 3.167z"></svg:path><svg:path fill="#efeef0" d="M15.553 32a7.2 7.2 0 0 1-5.541-2.244A8.13 8.13 0 0 1 8 24.05a8.6 8.6 0 0 1 2.222-6.086a7.63 7.63 0 0 1 5.809-2.415a9.9 9.9 0 0 1 3.571.583l.955.372v6.569l-2.3-1.456a3.64 3.64 0 0 0-2-.548a2.13 2.13 0 0 0-1.684.668a2.98 2.98 0 0 0-.663 2.1a2.9 2.9 0 0 0 .62 2.008a1.92 1.92 0 0 0 1.572.618a4 4 0 0 0 2.165-.607l2.293-1.427v6.292l-.815.419a9.2 9.2 0 0 1-4.192.86"></svg:path><svg:path fill="#efeef0" d="M24.092 27.909h-4.758v-1.757h-1.756v-4.758l1.756.001v-1.757h4.758v1.758h1.758v4.756h-1.758z"></svg:path><svg:path fill="#efeef0" d="M30.243 27.909h-4.758v-1.757h-1.757v-4.758l1.757.001v-1.757h4.758v1.758H32v4.756h-1.757z"></svg:path><svg:path fill="#984c93" d="M19.057 29.808a7.7 7.7 0 0 1-3.5.689a5.72 5.72 0 0 1-4.436-1.759A6.66 6.66 0 0 1 9.5 24.05a7.1 7.1 0 0 1 1.817-5.06a6.16 6.16 0 0 1 4.714-1.941a8.4 8.4 0 0 1 3.026.481v2.82a5.13 5.13 0 0 0-2.8-.78a3.61 3.61 0 0 0-2.787 1.152a4.43 4.43 0 0 0-1.06 3.12a4.35 4.35 0 0 0 1 3.007a3.43 3.43 0 0 0 2.693 1.12a5.5 5.5 0 0 0 2.958-.834Zm1.777-6.913v-1.758h1.758v1.758h1.758v1.757h-1.758v1.757h-1.758v-1.757h-1.756v-1.758zm6.151 0v-1.758h1.758v1.758H30.5v1.757h-1.757v1.757h-1.758v-1.757h-1.757v-1.758z"></svg:path>`,
+})
+export class VscodeIconsFileTypeVcxprojIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

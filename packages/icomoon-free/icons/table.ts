@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icomoonFreeTableIcon],svg[icomoon-free-table-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 3v11h16V3zm6 7V8h4v2zm4 1v2H6v-2zm0-6v2H6V5zM5 5v2H1V5zM1 8h4v2H1zm10 0h4v2h-4zm0-1V5h4v2zM1 11h4v2H1zm10 2v-2h4v2z"></svg:path>`,
+})
+export class IcomoonFreeTableIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiCrescentMoonIcon],svg[openmoji-crescent-moon-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FCEA2B" d="M7.363 42.41c4.553 6.17 11.874 10.172 20.13 10.172c13.808 0 25-11.193 25-25c0-8.523-4.264-16.05-10.776-20.562C54.756 9.858 64.5 21.463 64.5 35.352c0 16.016-12.984 29-29 29c-13.588 0-24.99-9.33-28.136-21.943"></svg:path><svg:path fill="#F1B31C" d="M45.837 9.21c8.25 4.25 16.195 11.873 16.195 24.675c0 15.45-12.524 27.974-27.974 27.974c-9.243 0-19.752-4.836-24.294-15.544c0 0 4.38 18.657 25.72 18.665c19.326.007 28.041-20.622 28.041-20.622C70.033 12.382 45.837 9.211 45.837 9.211"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M7.363 42.41c4.553 6.17 11.874 10.172 20.13 10.172c13.808 0 25-11.193 25-25c0-8.523-4.264-16.05-10.776-20.562C54.756 9.858 64.5 21.463 64.5 35.352c0 16.016-12.984 29-29 29c-13.588 0-24.99-9.33-28.136-21.943"></svg:path>`,
+})
+export class OpenmojiCrescentMoonIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

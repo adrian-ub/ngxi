@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilHdIcon],svg[cil-hd-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M364 136h-92v240h92a52.06 52.06 0 0 0 52-52V188a52.06 52.06 0 0 0-52-52m20 188a20.023 20.023 0 0 1-20 20h-60V168h60a20.023 20.023 0 0 1 20 20Zm-176-84h-80V136H96v240h32V272h80v104h32V136h-32z"></svg:path><svg:path fill="currentColor" d="M464 16H48a32.036 32.036 0 0 0-32 32v416a32.036 32.036 0 0 0 32 32h416a32.036 32.036 0 0 0 32-32V48a32.036 32.036 0 0 0-32-32m0 448H48V48h416l.02 416Z"></svg:path>`,
+})
+export class CilHdIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

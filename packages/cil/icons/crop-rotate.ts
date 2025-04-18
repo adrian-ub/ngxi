@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilCropRotateIcon],svg[cil-crop-rotate-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M49.386 256c0-114.184 92.8-207.1 206.935-207.294v41.759L368 15.965H256.321L256 16c-63.783.094-123.414 25.679-168.525 70.79A237.73 237.73 0 0 0 17.386 256Zm206.601 207.367V432l-111.679 64h111.679c132.4-.36 240-108.214 240-239.965h-32c-.005 114.106-93.249 206.972-208 207.332"></svg:path><svg:path fill="currentColor" d="M337.372 152H184v-32h-32v32h-32v32h32v176h168v32h32v-32h32v-32h-32V222.628l-32 32V328H201.373L384 145.372V128h-22.628ZM184 305.372V184h121.372Z"></svg:path>`,
+})
+export class CilCropRotateIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fxemojiSpeakeronesoundwaveIcon],svg[fxemoji-speakeronesoundwave-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#ADB8BC" d="M289.467 404.34V96.941c0-43.862-53.19-65.652-83.962-34.395l-151.319 153.7c-18.786 19.082-18.786 49.708 0 68.79l151.318 153.699c30.773 31.257 83.963 9.467 83.963-34.395"></svg:path><svg:path fill="#597B91" d="M126.442 359.044H36.574c-15.84 0-28.8-12.96-28.8-28.8V171.038c0-15.84 12.96-28.8 28.8-28.8h89.869v216.806z"></svg:path><svg:path fill="#7D9DAF" d="M364.817 369.361c-4.336 0-8.579-2.15-11.075-6.082c-3.878-6.11-2.07-14.207 4.04-18.087c25.883-16.43 44.359-44.487 49.423-75.05c6.99-42.19-12.698-86.263-48.992-109.671c-6.082-3.923-7.832-12.032-3.909-18.114c3.921-6.083 12.03-7.835 18.115-3.91c44.944 28.987 69.314 83.633 60.641 135.978c-6.264 37.803-29.154 72.53-61.231 92.893a13.05 13.05 0 0 1-7.012 2.043"></svg:path>`,
+})
+export class FxemojiSpeakeronesoundwaveIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

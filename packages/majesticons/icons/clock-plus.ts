@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[majesticonsClockPlusIcon],svg[majesticons-clock-plus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 16v3m0 3v-3m0 0h-3m3 0h3"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10q.881 0 1.72-.147A6 6 0 0 1 13 19c0-1.746.746-3.318 1.936-4.414l-2.278-1.139A3 3 0 0 1 11 10.764V7a1 1 0 1 1 2 0v3.764a1 1 0 0 0 .553.894l2.894 1.448c.149.074.271.18.362.306A6 6 0 0 1 19 13c1.033 0 2.004.26 2.853.72A10 10 0 0 0 22 12c0-5.523-4.477-10-10-10" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class MajesticonsClockPlusIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

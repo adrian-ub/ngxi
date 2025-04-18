@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsHeavyLightningIcon],svg[game-icons-heavy-lightning-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.517 14.64v112.715l44.386 28.033l-44.97 78.26l96.948 49.056l-9.343 32.705l78.843 35.04l-32.122 96.947l174.623 46.14l-112.714-69.5l22.778-50.226l257.55 113.885l-282.08-203.82l29.2-90.525l47.89 52.562l83.515-40.88l-44.386 87.016l164.693 108.628l-106.292-126.148l22.778-40.296l74.754 56.648l-84.68-151.26l-71.837 27.45L227.263 14.64H20.52zm77.09 161.19l42.633 26.865l-14.6 50.81l-52.56-34.458l24.528-43.217z"></svg:path>`,
+})
+export class GameIconsHeavyLightningIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

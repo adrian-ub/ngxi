@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenClipboardListFill16Icon],svg[garden-clipboard-list-fill-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 0C5.79 0 4 1.79 4 4v1h8V4c0-2.21-1.79-4-4-4m6 2h-.5c-.28 0-.5.22-.5.5V5c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V2.5c0-.28-.22-.5-.5-.5H2c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1M6.5 13.5c0 .28-.22.5-.5.5H4.5c-.28 0-.5-.22-.5-.5V12c0-.28.22-.5.5-.5H6c.28 0 .5.22.5.5zm0-4c0 .28-.22.5-.5.5H4.5c-.28 0-.5-.22-.5-.5V8c0-.28.22-.5.5-.5H6c.28 0 .5.22.5.5zM12 13H9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h3c.28 0 .5.22.5.5s-.22.5-.5.5m0-4H9c-.28 0-.5-.22-.5-.5S8.72 8 9 8h3c.28 0 .5.22.5.5s-.22.5-.5.5"></svg:path>`,
+})
+export class GardenClipboardListFill16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

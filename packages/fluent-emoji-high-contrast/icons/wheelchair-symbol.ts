@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastWheelchairSymbolIcon],svg[fluent-emoji-high-contrast-wheelchair-symbol-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M13 23a4 4 0 0 0 4-4.076a.26.26 0 0 1 .307-.263l1.492.299a.244.244 0 0 1 .198.245A6 6 0 1 1 13 13q.35 0 .68.027a.24.24 0 0 1 .19.358l-.8 1.483a.26.26 0 0 1-.22.135A4 4 0 0 0 13 23M23 8a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path><svg:path d="M14.79 10.957c.863-.262 1.245-.297 1.796-.047c.097.044.256.16.453.36q.127.13.237.263l-2.186 3.28a1.5 1.5 0 0 0 .98 2.307l4.751.864c.066.012.201.065.382.348c.183.288.344.713.471 1.242c.253 1.05.314 2.255.326 2.93A1.52 1.52 0 0 0 23.513 24h.987a1 1 0 1 0 0-2h-.514c-.032-.763-.12-1.866-.367-2.894c-.152-.63-.377-1.295-.729-1.847c-.354-.558-.903-1.096-1.711-1.243l-4.003-.728l1.974-2.96a1.47 1.47 0 0 0-.034-1.69a7 7 0 0 0-.651-.77c-.261-.266-.624-.584-1.051-.778c-1.226-.558-2.199-.352-3.204-.047c-.804.244-1.436.73-1.844 1.115a6 6 0 0 0-.663.738l-.006.008a1 1 0 1 0 1.62 1.172l.014-.018q.025-.033.08-.1a4 4 0 0 1 .325-.344c.293-.275.662-.538 1.054-.657"></svg:path><svg:path d="M6 1a5 5 0 0 0-5 5v20a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5V6a5 5 0 0 0-5-5zM3 6a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastWheelchairSymbolIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

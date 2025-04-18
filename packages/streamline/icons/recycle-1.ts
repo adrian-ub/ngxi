@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineRecycle1Icon],svg[streamline-recycle-1-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M6.008 10.082v1.999a.29.29 0 0 1-.29.28H3.62a1.45 1.45 0 0 1-.88-.51"></svg:path><svg:path d="M2.74 11.86s-1.09-.949 1.44-3.477h1.129l-1.69-2.789H.512l.85 1.09s-.57.1-.57.89a10 10 0 0 0 1.95 4.287v0Zm7.616-5.486l1.479-1a.26.26 0 0 1 .21 0a.26.26 0 0 1 .19.12l1.15 1.72a1 1 0 0 1 0 .89"></svg:path><svg:path d="M13.424 8.003s-.32 1.3-3.628 1v-.87l-1.939 2.539l1.84 2.828l.1-1.33s.369.45.999 0a18.7 18.7 0 0 0 2.628-4.167M4.36 4.285l-1.35-.62a.3.3 0 0 1-.14-.38l1.14-2.278a1 1 0 0 1 .74-.5"></svg:path><svg:path d="M4.749.507s1.23 0 2.788 2.999l-.81 1h3.359l1.19-3.14l-1.4.43a1.21 1.21 0 0 0-.73-.999a5.9 5.9 0 0 0-2.138-.29z"></svg:path></svg:g>`,
+})
+export class StreamlineRecycle1Icon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

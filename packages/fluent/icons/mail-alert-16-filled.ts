@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMailAlert16FilledIcon],svg[fluent-mail-alert-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.497 4a3 3 0 0 1 6 0v2l1.32 1.119a.5.5 0 0 1-.323.881H6.501a.5.5 0 0 1-.323-.881L7.498 6zm3 6a1.5 1.5 0 0 1-1.414-1h2.832a1.5 1.5 0 0 1-1.415 1zm-7.5-5H6.5v.537l-.966.819C4.468 7.259 5.107 9 6.504 9h1.52l.119.333q.07.201.173.384l-1.326.715L1 7.202V7c0-1.105.894-2 1.997-2m7.503 6c-.569 0-1.093-.19-1.513-.51l-1.76.95a.5.5 0 0 1-.474 0L1 8.337V13c0 1.105.894 2 1.997 2h7.986a2 2 0 0 0 1.996-2V9h-.004l-.117.333A2.5 2.5 0 0 1 10.5 11"></svg:path>`,
+})
+export class FluentMailAlert16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

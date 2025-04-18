@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentDocumentMultipleProhibited24FilledIcon],svg[fluent-document-multiple-prohibited-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 6.75V2H8.75A2.25 2.25 0 0 0 6.5 4.25V11a6.5 6.5 0 0 1 6.187 8.5h5.063A2.25 2.25 0 0 0 20 17.25V9h-4.75A2.25 2.25 0 0 1 13 6.75M5.503 4.627l-.002 6.45a6.5 6.5 0 0 0-1.501.42V6.75c0-.98.627-1.815 1.503-2.123m9.741 17.377h-4.058a6.5 6.5 0 0 0 1.08-1.5h5.1a2.25 2.25 0 0 1-2.122 1.5M14.5 6.75V2.5l5 5h-4.25a.75.75 0 0 1-.75-.75M12 17.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-9.5 0c0 .834.255 1.608.691 2.248l5.557-5.557A4 4 0 0 0 2.5 17.5m4 4a4 4 0 0 0 3.309-6.248l-5.557 5.557A4 4 0 0 0 6.5 21.5"></svg:path>`,
+})
+export class FluentDocumentMultipleProhibited24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

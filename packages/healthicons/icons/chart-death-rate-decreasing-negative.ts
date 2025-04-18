@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[healthiconsChartDeathRateDecreasingNegativeIcon],svg[healthicons-chart-death-rate-decreasing-negative-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:g clip-path="url(#healthiconsChartDeathRateDecreasingNegative0)"><svg:path fill="currentColor" fill-rule="evenodd" d="M0 0h48v48H0zm38.67 16.712l1.445 2.753a1 1 0 1 0 1.77-.93l-2.625-5a1 1 0 0 0-1.45-.36l-4.376 3a1 1 0 1 0 1.132 1.65l2.132-1.463c-1.526 6.649-4.65 11.179-8.803 14.106C23.406 33.632 17.604 35 11.052 35H8V6H6v35a1 1 0 0 0 1 1h35v-2H8v-3h3.052c6.807 0 13.06-1.419 17.996-4.898c4.633-3.265 8.009-8.279 9.622-15.39m-23.985 3.113l.01.02c1.08.107 1.63.93 1.801 1.237c.225.4.339.828.403 1.128c.048.228.085.466.112.703c.788.084 1.843.087 2.989.087c1.184 0 2.27-.003 3.066-.096a10 10 0 0 1 .516-1.62a5 5 0 0 1 .13-.285a2.1 2.1 0 0 1 .611-.754c.074-.056.333-.252.733-.351l.006-.003a.7.7 0 0 0 .16-.095a.4.4 0 0 0 .103-.12c.018-.035.06-.128.06-.328c0-1.484.657-2.43.968-2.877q.078-.112.12-.181c.174-.292.527-.931.527-3.047c0-1.702-.756-2.933-1.976-3.806C23.744 8.522 21.926 8 20 8s-3.745.522-5.024 1.437C13.756 10.31 13 11.542 13 13.243c0 2.116.353 2.755.526 3.047q.043.07.121.18c.31.447.968 1.394.968 2.878c0 .28.047.423.07.477m-.224 2.01c-.461 0-1.846-.453-1.846-2.487c0-.805-.252-1.186-.558-1.646C11.59 17 11 16.112 11 13.243c0-9.657 18-9.657 18 0c0 2.87-.59 3.757-1.057 4.46c-.306.46-.558.84-.558 1.645c0 2.035-1.808 2.487-1.847 2.487s-.615 1.356-.615 2.26C24.923 25 22.308 25 20 25s-4.923 0-4.923-.904c0-.905-.154-2.261-.616-2.261M19 16a2 2 0 1 1-4 0a2 2 0 0 1 4 0m3.965 2.215a2.107 2.107 0 1 0-.004-4.213a2.107 2.107 0 0 0 .004 4.213" clip-rule="evenodd"></svg:path></svg:g><svg:defs><svg:clippath id="healthiconsChartDeathRateDecreasingNegative0"><svg:path d="M0 0h48v48H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
+})
+export class HealthiconsChartDeathRateDecreasingNegativeIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

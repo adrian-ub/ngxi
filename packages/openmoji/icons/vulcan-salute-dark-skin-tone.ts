@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiVulcanSaluteDarkSkinToneIcon],svg[openmoji-vulcan-salute-dark-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:path id="openmojiVulcanSaluteDarkSkinTone0" d="M39.822 32.522L43.83 10.88c1.81-7.75-5.693-10.015-7.615-1.778l-3.658 19.236c-.795 3.58-1.886 5.141-3.273 5.765c-2.38 1.071-4.57-2.407-5.593-4.807l-5.293-12.413c-3.236-7.029-9.742-3.732-7.138 2.742l7.279 16.519l-1.289-2.968l-3.163-7.294c-2.781-5.864-8.75-3.52-6.812 2.292c0 0 4.333 10.662 5.604 14.281c1.656 4.719 3.35 14.822 5.936 19.102c5.627 9.315 20.609 8.11 27.866 0c2.04-2.28 5.637-7.247 7.645-9.555c2.788-3.208 10.085-11.535 10.085-11.535c1.463-2.158.328-5.494-.8-4.673l-14.69 5.39c-1.009.34-1.667-.46-2.09-1.095c-.31-.464.088-2.054.206-2.771l4.199-23.441c1.195-5.953-6.118-8.14-7.575-2.013"></svg:path></svg:defs><svg:path fill="#6a462f" d="M39.822 32.522L43.83 10.88c1.81-7.75-5.693-10.015-7.615-1.778l-3.658 19.236c-.795 3.58-1.886 5.141-3.273 5.765c-2.38 1.071-4.57-2.407-5.593-4.807l-5.293-12.413c-3.236-7.029-9.742-3.732-7.138 2.742l7.279 16.519l-1.289-2.968l-3.163-7.294c-2.781-5.864-8.75-3.52-6.812 2.292c0 0 4.333 10.662 5.604 14.281c1.656 4.719 3.35 14.822 5.936 19.102c5.627 9.315 20.609 8.11 27.866 0c2.04-2.28 5.637-7.247 7.645-9.555c2.788-3.208 10.085-11.535 10.085-11.535c1.463-2.158.328-5.494-.8-4.673l-14.69 5.39c-1.009.34-1.667-.46-2.09-1.095c-.31-.464.088-2.054.206-2.771l4.199-23.441c1.195-5.953-6.118-8.14-7.575-2.013"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:use href="#openmojiVulcanSaluteDarkSkinTone0"></svg:use><svg:use href="#openmojiVulcanSaluteDarkSkinTone0"></svg:use></svg:g>`,
+})
+export class OpenmojiVulcanSaluteDarkSkinToneIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

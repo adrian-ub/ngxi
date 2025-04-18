@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneMonotoneFlashlightIcon],svg[emojione-monotone-flashlight-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M62 15.268a19.5 19.5 0 0 0-4.939-8.327A19.5 19.5 0 0 0 48.732 2L36.689 14.041l-1.775-1.816l-6.025 6.024l1.776 1.816l-7.829 7.83C16.307 25.99 8.977 27.558 3.76 32.6q-.084.078-.164.156c-3.758 3.844-.656 13.09 6.953 20.699C15.964 58.87 22.208 62 26.743 62c1.837 0 3.394-.513 4.502-1.596l.156-.164c5.042-5.219 6.609-12.547 4.703-19.078zM29.206 58.084q-.066.068-.131.139c-3.238 3.165-11.028.555-17.438-5.856c-6.412-6.411-9.025-14.202-5.859-17.44q.068-.066.139-.131c3.28-3.063 11.003-.447 17.369 5.922c6.366 6.364 8.982 14.087 5.92 17.366"></svg:path>`,
+})
+export class EmojioneMonotoneFlashlightIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

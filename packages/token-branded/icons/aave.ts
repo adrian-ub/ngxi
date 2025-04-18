@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedAaveIcon],svg[token-branded-aave-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#9391F7"><svg:path d="M9.61 16.5c1.012 0 1.831-.786 1.831-1.755c0-.97-.82-1.755-1.83-1.755c-1.012 0-1.831.786-1.831 1.755c0 .97.82 1.755 1.83 1.755m4.786 0c1.01 0 1.83-.786 1.83-1.755c0-.97-.82-1.755-1.83-1.755s-1.831.786-1.831 1.755c0 .97.82 1.755 1.83 1.755"></svg:path><svg:path d="M12 7.5c-4.971 0-9.001 3.937-9 8.792h2.3c0-3.638 2.976-6.588 6.7-6.588s6.7 2.95 6.7 6.588H21c0-4.855-4.03-8.792-9-8.792"></svg:path></svg:g>`,
+})
+export class TokenBrandedAaveIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

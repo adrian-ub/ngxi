@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixRandomIcon],svg[ix-random-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M465.023 135.32L376.68 465.023L46.977 376.68L135.32 46.977zm-52.256 30.17L165.49 99.233L99.233 346.51l247.277 66.257zM317.08 316.538c17.07 4.574 27.201 22.121 22.627 39.192c-4.574 17.07-22.121 27.201-39.192 22.627c-17.07-4.574-27.201-22.12-22.627-39.192c4.574-17.07 22.12-27.201 39.192-22.627m-52.798-91.448c17.071 4.575 27.202 22.121 22.628 39.192s-22.121 27.202-39.192 22.628s-27.202-22.121-22.628-39.192s22.121-27.202 39.192-22.628m-52.797-91.447c17.07 4.574 27.201 22.12 22.627 39.192c-4.574 17.07-22.12 27.201-39.192 22.627c-17.07-4.574-27.201-22.12-22.627-39.192c4.574-17.07 22.121-27.201 39.192-22.627"></svg:path>`,
+})
+export class IxRandomIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

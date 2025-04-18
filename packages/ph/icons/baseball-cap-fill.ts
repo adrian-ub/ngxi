@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[phBaseballCapFillIcon],svg[ph-baseball-cap-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M128 24A104.12 104.12 0 0 0 24 128v56a24 24 0 0 0 24 24a24.1 24.1 0 0 0 14.18-4.64C74.33 194.53 95.6 184 128 184s53.67 10.52 65.81 19.35A24 24 0 0 0 232 184v-56A104.12 104.12 0 0 0 128 24M40 128a88.15 88.15 0 0 1 69.81-86.1a167 167 0 0 0-28.87 76.76A166 166 0 0 0 40 136.88Zm176 56a7.77 7.77 0 0 1-4.34 7.1a8 8 0 0 1-8.44-.69C189.16 180.2 164.7 168 128 168s-61.16 12.2-75.22 22.42a8 8 0 0 1-8.44.69A7.77 7.77 0 0 1 40 184v-27.93a150.6 150.6 0 0 1 49.93-23.28a7 7 0 0 0 1-.26a154.06 154.06 0 0 1 74.17 0a9 9 0 0 0 1 .27a150.5 150.5 0 0 1 49.9 23.27Zm0-47.13a166 166 0 0 0-40.94-18.22a167 167 0 0 0-28.87-76.75A88.15 88.15 0 0 1 216 128Z"></svg:path>`,
+})
+export class PhBaseballCapFillIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

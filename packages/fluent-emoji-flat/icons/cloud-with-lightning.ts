@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatCloudWithLightningIcon],svg[fluent-emoji-flat-cloud-with-lightning-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#1345B7" d="M2.002 13.648L2 13.5a6.5 6.5 0 0 1 6.132-6.49a4.042 4.042 0 0 1 6.325-2.208A8.95 8.95 0 0 1 20.97 2c4.33 0 7.945 3.07 8.786 7.151q.242.861.244 1.849c0 5-4.306 9-9 9H8.5a6.5 6.5 0 0 1-2.733-.6C3.54 18.4 2 16.263 2 13.786l.002-.14"></svg:path><svg:path fill="#FF6723" d="m19.128 20.609l-4.387 7.178c-.21.345-.741.195-.741-.209V22.4a.4.4 0 0 0-.4-.4h-1.853a.4.4 0 0 1-.332-.622l4.852-7.279a.4.4 0 0 1 .733.222V19.6c0 .22.18.4.4.4h1.387a.4.4 0 0 1 .341.609"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatCloudWithLightningIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

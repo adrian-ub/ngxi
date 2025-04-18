@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsEnergyProgramTimeUsedSharpIcon],svg[material-symbols-energy-program-time-used-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18 12q-.75 0-1.475-.225t-1.35-.65l-1.1 1.025l-1.375-1.375l1.1-1.1q-.4-.6-.6-1.275T13 7q0-2.075 1.463-3.537T18 2h5v5q0 2.075-1.463 3.538T18 12m-.825-2.875l2.8-2.8l-1.425-1.4L15.775 7.7zM1 22V4h10v10h8v8zm4-4h2v-7H5zm4 0h2V8H9zm4 0h2v-4h-2z"></svg:path>`,
+})
+export class MaterialSymbolsEnergyProgramTimeUsedSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

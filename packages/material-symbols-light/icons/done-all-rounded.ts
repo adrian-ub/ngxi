@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightDoneAllRoundedIcon],svg[material-symbols-light-done-all-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.096 12.704q-.146-.146-.153-.345t.159-.363q.165-.16.354-.162t.354.162l3.896 3.896l.5-.5q.117-.036.263-.006t.283.168q.165.165.163.354q-.004.188-.169.353l-.48.481q-.243.237-.566.24q-.323.002-.566-.24zm10.254 3.183l8.846-8.846q.146-.147.345-.153t.363.158q.16.166.162.354q.003.189-.162.354l-8.988 8.988q-.243.243-.566.243t-.565-.243l-4.039-4.038q-.14-.14-.15-.342q-.01-.2.15-.366q.166-.165.357-.165t.357.165zm3.898-8.127l-4.237 4.236q-.14.14-.34.15q-.202.01-.367-.15q-.166-.165-.166-.356q0-.192.166-.357l4.236-4.237q.14-.14.342-.15q.2-.01.366.15q.165.166.165.357t-.165.357"></svg:path>`,
+})
+export class MaterialSymbolsLightDoneAllRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

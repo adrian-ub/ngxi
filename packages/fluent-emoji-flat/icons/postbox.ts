@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatPostboxIcon],svg[fluent-emoji-flat-postbox-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#9B9B9B" d="M19.048 30v-6.318L16.5 22l-2.85 1.682V30z"></svg:path><svg:path fill="#F92F60" d="M23.224 2H9.473A2.47 2.47 0 0 0 7 4.473V21.21a2.473 2.473 0 0 0 2.473 2.473h13.752a2.473 2.473 0 0 0 2.473-2.473V4.473A2.474 2.474 0 0 0 23.224 2"></svg:path><svg:path fill="#CA0B4A" d="M10.65 4.451h11.398a.422.422 0 1 1 0 .846h-11.4a.423.423 0 0 1 0-.846m.418 8.389h10.566a.84.84 0 0 1 .839.84v5.854a.84.84 0 0 1-.84.84H11.067a.84.84 0 0 1-.84-.84V13.68a.84.84 0 0 1 .84-.84"></svg:path><svg:path fill="#321B41" d="M20.564 6.568h-.637l-3.918 2.61l-3.208-2.61h-.667a1.907 1.907 0 0 0 0 3.815h8.43a1.908 1.908 0 0 0 0-3.815"></svg:path><svg:path fill="#E1D8EC" d="M13.808 6.568h5.453l-1.861 8.47H12z"></svg:path><svg:path fill="#CDC4D6" d="M13.137 6.568h1.735l1.265 3.019c.11.264.037.602-.189.866l-3.923 4.585h-.375c-.2 0-.327-.161-.282-.36z"></svg:path><svg:path fill="#F3EEF8" d="M18.203 6.568h1.735l-1.769 8.109a.47.47 0 0 1-.44.36h-.375l-1.751-4.18l.345-.404c.226-.264.3-.602.189-.866l-.17-.405z"></svg:path><svg:path fill="#F3EEF8" d="M12.778 6.568h1.735l1.265 3.02c.11.263.037.602-.189.866l-3.923 4.585h-.375c-.2 0-.326-.162-.282-.361z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatPostboxIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

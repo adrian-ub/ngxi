@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[phBracketsCurlyThinIcon],svg[ph-brackets-curly-thin-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M35.89 128C52 136.23 52 155.64 52 172c0 24.8 1.35 40 28 40a4 4 0 0 1 0 8c-36 0-36-26.61-36-48c0-24.8-1.35-40-28-40a4 4 0 0 1 0-8c26.65 0 28-15.2 28-40c0-21.39 0-48 36-48a4 4 0 0 1 0 8c-26.65 0-28 15.2-28 40c0 16.36 0 35.77-16.11 44M240 124c-26.65 0-28-15.2-28-40c0-21.39 0-48-36-48a4 4 0 0 0 0 8c26.65 0 28 15.2 28 40c0 16.36 0 35.77 16.11 44C204 136.23 204 155.64 204 172c0 24.8-1.35 40-28 40a4 4 0 0 0 0 8c36 0 36-26.61 36-48c0-24.8 1.35-40 28-40a4 4 0 0 0 0-8"></svg:path>`,
+})
+export class PhBracketsCurlyThinIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

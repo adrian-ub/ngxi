@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[clarityBullseyeLineIcon],svg[clarity-bullseye-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18 2a16 16 0 0 0-4.25.59l.77 1.86a14.07 14.07 0 1 1-10 10l-1.86-.78A16 16 0 1 0 18 2" class="clr-i-outline clr-i-outline-path-1"></svg:path><svg:path fill="currentColor" d="M7.45 15.7a10.81 10.81 0 1 0 8.3-8.26L16.37 9A9.24 9.24 0 1 1 9 16.32Z" class="clr-i-outline clr-i-outline-path-2"></svg:path><svg:path fill="currentColor" d="M18 22.09a4.08 4.08 0 0 1-4-3.68l-1.63-.68V18A5.69 5.69 0 1 0 18 12.31h-.24l.67 1.69a4.07 4.07 0 0 1-.43 8.09" class="clr-i-outline clr-i-outline-path-3"></svg:path><svg:path fill="currentColor" d="M8.2 13.34a.5.5 0 0 0 .35.15h3.65l5.37 5.37A1 1 0 0 0 19 17.44L13.53 12V8.51a.5.5 0 0 0-.15-.35L7.79 2.57a.5.5 0 0 0-.85.35v4H3a.5.5 0 0 0-.35.85Z" class="clr-i-outline clr-i-outline-path-4"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
+})
+export class ClarityBullseyeLineIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentDrawText20FilledIcon],svg[fluent-draw-text-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.14 10.5H6.857l1.642-4.685zm.526 1.5l.33.944l1.178-1.177L9.3 3.569c-.266-.759-1.339-.759-1.604 0L4.04 14.003a.75.75 0 0 0 1.416.496L6.33 12zm5.14-2.452l-4.829 4.83a2.2 2.2 0 0 0-.578 1.02l-.374 1.498a1 1 0 0 0-.024.14a4.6 4.6 0 0 1-1.111-.088c-.073-.017-.1-.11-.066-.178c.18-.348.233-1.073-.404-1.33c-.86-.345-1.978.125-2.862.498c-.366.154-.692.29-.944.346c-.387.086-.848-.065-1.216-.249c-.212-.106-.482.082-.36.286c.219.366.614.737 1.326.825c.82.102 1.391-.152 1.975-.41c.4-.178.805-.358 1.3-.428c.086-.012.145.09.112.17c-.152.357-.133.894.316 1.244c.518.405 2.191.511 3.313.183l1.221-.305c.387-.097.74-.296 1.021-.578l4.83-4.83a1.87 1.87 0 1 0-2.645-2.644"></svg:path>`,
+})
+export class FluentDrawText20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

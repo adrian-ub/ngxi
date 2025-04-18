@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatOdenIcon],svg[fluent-emoji-flat-oden-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:g clip-path="url(#fluentEmojiFlatOden0)"><svg:path fill="#D3883E" d="M-.124-.121a1.5 1.5 0 0 1 2.121-.003l25 24.94a1.5 1.5 0 1 1-2.118 2.124L-.121 2A1.5 1.5 0 0 1-.124-.121"></svg:path><svg:path fill="#635994" d="m3.51 7.35l1.89 7.06c.62 2.33 3.54 3.11 5.24 1.4l5.17-5.17c1.71-1.71.92-4.62-1.4-5.24L7.35 3.51c-2.33-.62-4.46 1.51-3.84 3.84"></svg:path><svg:path fill="#E39D89" d="M16.78 23.63a6.85 6.85 0 1 0 0-13.7a6.85 6.85 0 0 0 0 13.7"></svg:path><svg:path fill="#FFDEA7" d="m28.4 21.95l-6.45 6.45a3.664 3.664 0 0 1-5.18-5.18l6.45-6.45a3.664 3.664 0 0 1 5.18 5.18"></svg:path><svg:path fill="#D3883E" d="M23.538 23.49a1.5 1.5 0 0 1 2.121-.002l3.4 3.39a1.5 1.5 0 0 1-2.118 2.124l-3.4-3.39a1.5 1.5 0 0 1-.003-2.121"></svg:path></svg:g><svg:defs><svg:clippath id="fluentEmojiFlatOden0"><svg:path fill="#fff" d="M0 0h32v32H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
+})
+export class FluentEmojiFlatOdenIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

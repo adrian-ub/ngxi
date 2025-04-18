@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mingcuteStore2LineIcon],svg[mingcute-store-2-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="M0 0h24v24H0z"></svg:path><svg:path fill="currentColor" d="M18 2a3 3 0 0 1 3 3v13a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3zm-6 12h-1a1 1 0 0 0-1 1v4h3v-4a1 1 0 0 0-1-1m2.14-5.203A3.5 3.5 0 0 1 11.5 10a3.5 3.5 0 0 1-2.64-1.203A4 4 0 0 1 6 10a4 4 0 0 1-2-.535V18a1 1 0 0 0 1 1h3v-4a3 3 0 0 1 3-3h1a3 3 0 0 1 3 3v4h3a1 1 0 0 0 1-1V9.465A4 4 0 0 1 17 10c-1.12 0-2.133-.46-2.86-1.203M18 4H5a1 1 0 0 0-.993.883L4 5v1a2 2 0 0 0 3.995.15L8 6a1 1 0 0 1 1.993-.117L10 6v.5a1.5 1.5 0 0 0 2.993.144L13 6.5V6a1 1 0 1 1 2 0a2 2 0 0 0 3.995.15L19 6V5a1 1 0 0 0-.883-.993z"></svg:path></svg:g>`,
+})
+export class MingcuteStore2LineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

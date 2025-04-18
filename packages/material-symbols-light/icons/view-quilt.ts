@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightViewQuiltIcon],svg[material-symbols-light-view-quilt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.21 11.616q-.69 0-1.153-.463T9.594 10V7.616q0-.691.463-1.153T11.21 6h7.175q.69 0 1.153.463T20 7.616V10q0 .69-.462 1.153t-1.153.463zM16.79 18q-.69 0-1.152-.462t-.463-1.154V14q0-.69.463-1.153t1.153-.462h1.594q.69 0 1.153.462T20 14v2.385q0 .69-.462 1.152T18.384 18zm-5.58 0q-.69 0-1.153-.462t-.463-1.153V14q0-.69.463-1.153t1.153-.462h1.58q.69 0 1.153.462T14.406 14v2.385q0 .69-.463 1.152T12.791 18zm-5.594 0q-.691 0-1.153-.462T4 16.384V7.616q0-.691.463-1.153T5.616 6H7.21q.69 0 1.153.463t.462 1.153v8.769q0 .69-.462 1.153T7.21 18z"></svg:path>`,
+})
+export class MaterialSymbolsLightViewQuiltIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBox48FilledIcon],svg[fluent-box-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M26.321 4.832a6.25 6.25 0 0 0-4.642 0l-5.29 2.116l18.738 7.505l7.344-2.938a4.3 4.3 0 0 0-1.143-.68zm5.442 10.967L13.024 8.294l-6.352 2.54c-.422.17-.806.4-1.143.681L24 18.904zM4 14.78c0-.386.052-.764.151-1.124l18.599 7.44v22.391a6 6 0 0 1-1.071-.32L6.672 37.163A4.25 4.25 0 0 1 4 33.219zm22.321 28.386q-.524.21-1.071.321V21.096l18.599-7.44c.099.361.151.739.151 1.125v18.438a4.25 4.25 0 0 1-2.672 3.945z"></svg:path>`,
+})
+export class FluentBox48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

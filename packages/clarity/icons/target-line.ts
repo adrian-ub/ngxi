@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[clarityTargetLineIcon],svg[clarity-target-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m0 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14" class="clr-i-outline clr-i-outline-path-1"></svg:path><svg:path fill="currentColor" d="M18 7.2A10.8 10.8 0 1 0 28.8 18A10.81 10.81 0 0 0 18 7.2m0 20a9.2 9.2 0 1 1 9.2-9.2a9.21 9.21 0 0 1-9.2 9.2" class="clr-i-outline clr-i-outline-path-2"></svg:path><svg:path fill="currentColor" d="M18 12.31A5.69 5.69 0 1 0 23.69 18A5.69 5.69 0 0 0 18 12.31m0 9.77A4.09 4.09 0 1 1 22.09 18A4.09 4.09 0 0 1 18 22.09Z" class="clr-i-outline clr-i-outline-path-3"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
+})
+export class ClarityTargetLineIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

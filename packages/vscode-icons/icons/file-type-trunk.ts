@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeTrunkIcon],svg[vscode-icons-file-type-trunk-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#fb6a5b"><svg:path d="M16 29.92v-3a11.07 11.07 0 0 0 6.09-1.83A10.95 10.95 0 0 0 23.75 8.3A11 11 0 0 0 6.89 10a10.87 10.87 0 0 0-1.84 6H2a13.83 13.83 0 0 1 2.36-7.73a14 14 0 1 1 19.42 19.29A14.07 14.07 0 0 1 16 29.92"></svg:path><svg:path d="M9.2 16h-3A9.78 9.78 0 0 1 9 9.08a9.9 9.9 0 0 1 7-2.86v3A6.79 6.79 0 0 0 9.2 16"></svg:path><svg:path d="M21.68 16h-3A2.66 2.66 0 0 0 16 13.36a2.65 2.65 0 0 0-1.88.78a2.6 2.6 0 0 0-.78 1.86h-3a5.68 5.68 0 1 1 11.36 0Z"></svg:path></svg:g>`,
+})
+export class VscodeIconsFileTypeTrunkIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonKubernetesWorkerNodeIcon],svg[carbon-kubernetes-worker-node-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M23 18v-2h-2.1c-.1-.6-.4-1.2-.7-1.8l1.5-1.5l-1.4-1.4l-1.5 1.5c-.5-.3-1.1-.6-1.8-.7V10h-2v2.1c-.6.1-1.2.4-1.8.7l-1.5-1.5l-1.4 1.4l1.5 1.5c-.3.5-.6 1.1-.7 1.8H9v2h2.1c.1.6.4 1.2.7 1.8l-1.5 1.5l1.4 1.4l1.5-1.5c.5.3 1.1.6 1.8.7V24h2v-2.1c.6-.1 1.2-.4 1.8-.7l1.5 1.5l1.4-1.4l-1.5-1.5c.3-.5.6-1.1.7-1.8zm-7 2c-1.7 0-3-1.3-3-3s1.3-3 3-3s3 1.3 3 3s-1.3 3-3 3"></svg:path><svg:path fill="currentColor" d="M29.948 18.99L27.355 7.803a2 2 0 0 0-1.124-1.37l-9.407-4.255a2 2 0 0 0-1.648 0L5.769 6.432a2 2 0 0 0-1.124 1.371L2.052 18.99a2 2 0 0 0 .39 1.705l6.886 8.559a2 2 0 0 0 1.558.746h10.228a2 2 0 0 0 1.558-.746l6.886-8.559a2 2 0 0 0 .39-1.705M21.114 28H10.886L4 19.441L6.593 8.254L16 4l9.407 4.255L28 19.44z"></svg:path><svg:path fill="none" d="M0 0h32v32H0z"></svg:path>`,
+})
+export class CarbonKubernetesWorkerNodeIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

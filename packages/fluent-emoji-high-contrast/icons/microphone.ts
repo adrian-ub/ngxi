@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastMicrophoneIcon],svg[fluent-emoji-high-contrast-microphone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M15.415 18.53a1.47 1.47 0 1 1-2.94 0a1.47 1.47 0 0 1 2.94 0"></svg:path><svg:path d="M19.36 3.662a2.227 2.227 0 0 0-3.157-.09a2.227 2.227 0 0 0-.124 3.12a7.4 7.4 0 0 0-1 3.164l-.012-.013L1.8 25.394a3.381 3.381 0 0 0 2.579 5.568c.733 0 1.446-.24 2.029-.685l16.299-12.334l-.005-.005a7.4 7.4 0 0 0 3.21-.808l.14.148c.85.901 2.255.94 3.155.092c.906-.842.94-2.26.093-3.158l-.194-.205a7.47 7.47 0 0 0-9.72-10.317zm-4.218 9.175l.492.522a7.5 7.5 0 0 0 3.595 3.817l.494.524L5.199 28.689a1.377 1.377 0 0 1-1.874-2zm1.747-8.538c.5-.471 1.273-.45 1.743.049l9.94 10.55a1.227 1.227 0 0 1-.046 1.74l-.003.003c-.5.472-1.274.45-1.743-.049l-9.94-10.55c-.472-.5-.45-1.273.049-1.743"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastMicrophoneIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

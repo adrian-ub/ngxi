@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamInboxFIcon],svg[jam-inbox-f-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20 5H0l4-5h12zm0 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V7h6.126a4.002 4.002 0 0 0 7.748 0zM8.265 7h3.465a2 2 0 0 1-3.465 0"></svg:path>`,
+})
+export class JamInboxFIcon {
+  readonly viewBox = input("-2 -5 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

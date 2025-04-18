@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkTwotoneRingIcon],svg[icon-park-twotone-ring-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipTRing0"><svg:g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><svg:path fill="#555" d="M24 11.619c2.093 0 3.79-1.706 3.79-3.81S26.093 4 24 4s-3.79 1.706-3.79 3.81s1.697 3.809 3.79 3.809ZM9.79 40.19c2.092 0 3.789-1.705 3.789-3.809s-1.697-3.81-3.79-3.81S6 34.278 6 36.382s1.697 3.81 3.79 3.81Zm28.42 0c2.093 0 3.79-1.705 3.79-3.809s-1.697-3.81-3.79-3.81s-3.79 1.706-3.79 3.81s1.697 3.81 3.79 3.81Z"></svg:path><svg:path stroke-linecap="round" d="M33.143 10.314A18.1 18.1 0 0 1 42 25.904q0 .867-.08 1.711v0m-10.906 14.96A17.9 17.9 0 0 1 24 44c-2.488 0-4.858-.507-7.014-1.425M6.08 27.615a18 18 0 0 1-.08-1.71a18.1 18.1 0 0 1 8.857-15.59"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTRing0)"></svg:path>`,
+})
+export class IconParkTwotoneRingIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

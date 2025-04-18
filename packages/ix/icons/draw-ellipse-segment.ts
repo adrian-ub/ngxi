@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixDrawEllipseSegmentIcon],svg[ix-draw-ellipse-segment-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M469.333 255.999c0 82.475-95.512 149.334-213.333 149.334S42.667 338.474 42.667 255.999c0-82.474 95.512-149.333 213.333-149.333c7.206 0 14.329.25 21.352.739l-.019 127.261l189.842.008a106.4 106.4 0 0 1 2.158 21.325m-387.878 0c0 53.832 75.478 106.667 174.545 106.667c85.869 0 154.017-39.696 170.65-85.329l-191.983-.004l.01-127.174c-88.373 6.902-153.222 55.943-153.222 105.84"></svg:path>`,
+})
+export class IxDrawEllipseSegmentIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

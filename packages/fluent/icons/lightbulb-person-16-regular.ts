@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLightbulbPerson16RegularIcon],svg[fluent-lightbulb-person-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 3a3.5 3.5 0 0 0-2.454 5.995c.144.142.275.315.366.518A4.5 4.5 0 0 1 8 9a4.5 4.5 0 0 1 2.088.513a1.7 1.7 0 0 1 .366-.518A3.5 3.5 0 0 0 8 3m-1.664 8h3.328l.136-.502A3.5 3.5 0 0 0 8 10c-.658 0-1.274.182-1.8.498zm.273 1l.172.632a.5.5 0 0 0 .483.368h1.472a.5.5 0 0 0 .483-.368L9.39 12zM3.5 6.5a4.5 4.5 0 1 1 7.655 3.208a.65.65 0 0 0-.18.287l-.792 2.9A1.5 1.5 0 0 1 8.736 14H7.264a1.5 1.5 0 0 1-1.447-1.105l-.791-2.9a.65.65 0 0 0-.181-.287A4.5 4.5 0 0 1 3.5 6.5m3.5 0a1 1 0 1 1 2 0a1 1 0 0 1-2 0m1-2a2 2 0 1 0 0 4a2 2 0 0 0 0-4"></svg:path>`,
+})
+export class FluentLightbulbPerson16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

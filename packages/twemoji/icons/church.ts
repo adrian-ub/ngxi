@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiChurchIcon],svg[twemoji-church-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#BCBEC0" d="M20 2h-1V1a1 1 0 1 0-2 0v1h-1a1 1 0 1 0 0 2h1v6a1 1 0 1 0 2 0V4h1a1 1 0 1 0 0-2"></svg:path><svg:path fill="#FFD983" d="m18 9l-5.143 4H13v9h10v-9h.143z"></svg:path><svg:path fill="#662113" d="M19.999 15A2 2 0 0 0 16 15v7h4z"></svg:path><svg:path fill="#FFD983" d="M17.999 18L4 26v9a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-9z"></svg:path><svg:path fill="#DD2E44" d="M31.998 27a1 1 0 0 1-.495-.132l-13.504-7.717l-13.504 7.717a.999.999 0 1 1-.992-1.736l14-8a1 1 0 0 1 .992 0l14 8A.998.998 0 0 1 31.998 27m-8.999-13a1 1 0 0 1-.624-.219l-4.376-3.5l-4.374 3.5a1 1 0 0 1-1.25-1.562l4.999-4a1 1 0 0 1 1.25 0l5.001 4A1 1 0 0 1 22.999 14"></svg:path><svg:path fill="#662113" d="M12.999 31A2 2 0 1 0 9 31v5h4zm7-2A2 2 0 0 0 16 29v7h4zm7 2A2 2 0 0 0 23 31v5h4z"></svg:path>`,
+})
+export class TwemojiChurchIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastVirgoIcon],svg[fluent-emoji-high-contrast-virgo-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M28 13.66v3.33a6.07 6.07 0 0 1-2.98 5.22l2.13 1.57a1.005 1.005 0 0 1-.6 1.81c-.2 0-.41-.07-.59-.2l-2.63-1.94l-2.63 1.94c-.18.14-.38.2-.59.2a1.003 1.003 0 0 1-.6-1.81l2.13-1.57a6.07 6.07 0 0 1-2.98-5.22V9.67c0-1.1-.9-2-2-2s-2 .9-2 2v12c0 .55-.45 1-1 1s-1-.45-1-1v-12c0-1.1-.9-2-2-2s-2 .9-2 2v12c0 .55-.45 1-1 1s-1-.45-1-1v-12c0-1.1-.9-2-2-2c-.55 0-1-.45-1-1s.45-1 1-1a4 4 0 0 1 3 1.36a4 4 0 0 1 3-1.36a4 4 0 0 1 3 1.36a4 4 0 0 1 3-1.36c2.21 0 4 1.79 4 4v.16c.76-.53 1.68-.84 2.67-.84c2.58 0 4.67 2.1 4.67 4.67m-4.09 6.88A4.06 4.06 0 0 0 26 16.99v-3.33c0-1.47-1.2-2.67-2.67-2.67s-2.67 1.2-2.67 2.67v3.33c0 1.47.8 2.83 2.09 3.55l.58.33z"></svg:path><svg:path d="M6 1a5 5 0 0 0-5 5v20a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5V6a5 5 0 0 0-5-5zM3 6a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastVirgoIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

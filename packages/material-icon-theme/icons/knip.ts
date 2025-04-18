@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeKnipIcon],svg[material-icon-theme-knip-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#EF6C00" d="m18.957 2.998l-5.985 5.984l1.995 1.995l6.983-6.982v-.998m-9.975 9.477a.5.5 0 1 1 0-.998a.5.5 0 0 1 0 .998M5.99 19.955a1.995 1.995 0 1 1 0-3.99a1.995 1.995 0 0 1 0 3.99m0-11.97a1.995 1.995 0 1 1 0-3.99a1.995 1.995 0 0 1 0 3.99m3.63-.36a3.9 3.9 0 0 0 .36-1.635a3.99 3.99 0 1 0-3.99 3.99c.589 0 1.137-.13 1.636-.36l2.354 2.355l-2.354 2.354a3.9 3.9 0 0 0-1.636-.359a3.99 3.99 0 1 0 3.99 3.99c0-.588-.13-1.137-.36-1.636l2.355-2.354l6.982 6.982h2.993v-.997z"></svg:path>`,
+})
+export class MaterialIconThemeKnipIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

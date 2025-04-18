@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenKrakenIcon],svg[token-kraken-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.998 4.5C7.028 4.5 3 8.774 3 14.047v4.09c0 .753.575 1.363 1.285 1.363s1.288-.61 1.288-1.362v-4.091c0-.755.573-1.365 1.285-1.365c.71 0 1.284.61 1.284 1.365v4.09c0 .753.575 1.363 1.285 1.363c.712 0 1.286-.61 1.286-1.362v-4.091c0-.755.575-1.365 1.285-1.365c.712 0 1.289.61 1.289 1.365v4.09c0 .753.574 1.363 1.284 1.363s1.285-.61 1.285-1.362v-4.091c0-.755.574-1.365 1.288-1.365c.71 0 1.285.61 1.285 1.365v4.09c0 .753.575 1.363 1.287 1.363c.71 0 1.284-.61 1.284-1.362v-4.091C21 8.774 16.97 4.5 11.998 4.5"></svg:path>`,
+})
+export class TokenKrakenIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

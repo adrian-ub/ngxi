@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamLayersIcon],svg[jam-layers-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m13.071 7.762l6.417 2.575a1 1 0 0 1 .01 1.852l-8.85 3.664a1 1 0 0 1-.765 0L1.032 12.19a1 1 0 0 1 .01-1.852l6.53-2.62c.374-.15 1.556.29 2.693.294c1.215.004 2.387-.417 2.806-.249zM4.064 11.28l6.201 2.567l6.202-2.567l-6.202-2.489zM10.638.786l8.85 3.551a1 1 0 0 1 .01 1.852l-8.85 3.664a1 1 0 0 1-.765 0L1.032 6.19a1 1 0 0 1 .01-1.852L9.892.786a1 1 0 0 1 .746 0M4.064 5.28l6.201 2.567l6.202-2.567l-6.202-2.489z"></svg:path>`,
+})
+export class JamLayersIcon {
+  readonly viewBox = input("-1.5 -4 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

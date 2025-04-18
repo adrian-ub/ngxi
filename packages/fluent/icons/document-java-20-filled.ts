@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentDocumentJava20FilledIcon],svg[fluent-document-java-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 2v4.5A1.5 1.5 0 0 0 11.5 8H16v3.02a1.5 1.5 0 0 0-1.125.88a1.5 1.5 0 0 0-2.79.104l-.335.955l-.334-.955a1.5 1.5 0 0 0-2.791-.104a1.5 1.5 0 0 0-2.79.104L5 14.389V12.5a1.5 1.5 0 0 0-1-1.415V3.5A1.5 1.5 0 0 1 5.5 2zm1 .25V6.5a.5.5 0 0 0 .5.5h4.25zM11.75 18a.5.5 0 0 0 .472-.335l1.75-5a.5.5 0 1 0-.944-.33l-1.278 3.652l-1.278-3.652a.5.5 0 1 0-.944.33l1.75 5a.5.5 0 0 0 .472.335m4.972-5.665a.5.5 0 0 0-.944 0l-1.75 5a.5.5 0 1 0 .944.33l.233-.665h2.09l.233.665a.5.5 0 1 0 .944-.33zM16.945 16h-1.39l.695-1.986zM3.5 12a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-3 0V16a.5.5 0 1 1 1 0v.5a.5.5 0 0 0 1 0v-4a.5.5 0 0 1 .5-.5m3.75 0a.5.5 0 0 1 .472.335l1.75 5a.5.5 0 1 1-.944.33L8.295 17h-2.09l-.233.665a.5.5 0 1 1-.944-.33l1.75-5A.5.5 0 0 1 7.25 12m0 2.014L6.555 16h1.39z"></svg:path>`,
+})
+export class FluentDocumentJava20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

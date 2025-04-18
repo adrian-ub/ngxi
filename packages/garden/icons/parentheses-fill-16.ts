@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenParenthesesFill16Icon],svg[garden-parentheses-fill-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.498 14.487c.188.327.544.513.921.513c.895 0 1.482-1.026 1.151-1.857C3.979 11.659 3.5 9.766 3.5 8c0-1.753.477-3.653 1.067-5.139C4.897 2.031 4.308 1 3.414 1c-.374 0-.727.184-.915.508C1.475 3.275 1 5.438 1 7.996c0 2.551.474 4.713 1.498 6.491M12.581 15c.377 0 .733-.186.92-.513C14.527 12.71 15 10.547 15 7.997c0-2.56-.475-4.722-1.499-6.49A1.05 1.05 0 0 0 12.586 1c-.894 0-1.49 1.034-1.173 1.87c.56 1.484.995 3.377.995 5.126c0 1.763-.436 3.653-.999 5.137c-.317.837.277 1.867 1.172 1.867"></svg:path>`,
+})
+export class GardenParenthesesFill16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

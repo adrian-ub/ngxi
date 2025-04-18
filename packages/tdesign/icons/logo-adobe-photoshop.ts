@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tdesignLogoAdobePhotoshopIcon],svg[tdesign-logo-adobe-photoshop-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 13v5H6V6h3.5a3.5 3.5 0 1 1 0 7zm0-5v3h1.5a1.5 1.5 0 0 0 0-3zm5.5 4.453A2.453 2.453 0 0 1 15.953 10H18v2h-2.047a.453.453 0 0 0-.143.883l1.013.337a2.453 2.453 0 0 1-.776 4.78H13.5v-2h2.547a.453.453 0 0 0 .143-.883l-1.013-.337a2.45 2.45 0 0 1-1.677-2.327"></svg:path><svg:path fill="currentColor" d="M22 2H2v20h20zM4 20V4h16v16z"></svg:path>`,
+})
+export class TdesignLogoAdobePhotoshopIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

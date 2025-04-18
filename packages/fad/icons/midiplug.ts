@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fadMidiplugIcon],svg[fad-midiplug-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="M128 193.901c-13.606 0-21.823 9.814-23.434 22.258C62.374 207.79 36 172.65 36 128c0-50.81 41.19-92 92-92s92 41.19 92 92c0 44.21-25.713 77.476-67.501 86.16c-1.346-8.684-11.008-20.259-24.499-20.259m-.244-18.45c16.601 0 29.657 10.87 32.244 17.732c31.34-6.861 42.826-42.019 42.826-65.183c0-40.149-36.718-76-74.826-76s-75.313 35.851-75.313 76c0 35.28 21.881 61.702 43.313 66.628c2.095-10.012 15.155-19.178 31.756-19.178z"></svg:path><svg:circle cx="80" cy="125" r="11"></svg:circle><svg:circle cx="95" cy="92" r="11"></svg:circle><svg:circle cx="128" cy="79" r="11"></svg:circle><svg:circle cx="161" cy="92" r="11"></svg:circle><svg:circle cx="174" cy="124" r="11"></svg:circle></svg:g>`,
+})
+export class FadMidiplugIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

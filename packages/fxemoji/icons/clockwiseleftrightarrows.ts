@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fxemojiClockwiseleftrightarrowsIcon],svg[fxemoji-clockwiseleftrightarrows-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#2B3B47" d="M467.399 209.64c-17.646 0-31.95 14.305-31.95 31.951v28.818c0 39.178-31.874 71.052-71.053 71.052H189.834v-50.649c0-8.265-9.203-13.204-16.09-8.635l-124.51 82.599c-6.178 4.099-6.178 13.171 0 17.269l124.51 82.599c6.888 4.569 16.09-.369 16.09-8.635V405.36h174.562c74.413 0 134.953-60.539 134.953-134.952V241.59c.001-17.645-14.304-31.95-31.95-31.95m-4.634-79.686l-124.51-82.599c-6.888-4.569-16.09.369-16.09 8.635v50.648H134.748c-4.179 0-8.167.811-11.825 2.27c-62.667 11.63-110.272 66.699-110.272 132.683v28.818c0 17.646 14.305 31.95 31.95 31.95c17.646 0 31.951-14.305 31.951-31.95v-28.818c0-39.178 31.874-71.052 71.052-71.052h174.562v50.648c0 8.265 9.202 13.204 16.09 8.635l124.51-82.599c6.178-4.099 6.178-13.171-.001-17.269"></svg:path>`,
+})
+export class FxemojiClockwiseleftrightarrowsIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

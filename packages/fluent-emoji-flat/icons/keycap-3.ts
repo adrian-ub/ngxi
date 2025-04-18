@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatKeycap3Icon],svg[fluent-emoji-flat-keycap-3-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#00A6ED" d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"></svg:path><svg:path fill="#fff" d="M14.291 12.225a1.556 1.556 0 1 1 2.015 2.105a1.75 1.75 0 0 0-.252 3.443l.086.023a1.558 1.558 0 0 1-.446 3.047a1.56 1.56 0 0 1-1.483-1.083a1.75 1.75 0 0 0-3.335 1.061a5.057 5.057 0 1 0 8.737-4.728a5.056 5.056 0 1 0-8.475-5.388a1.75 1.75 0 0 0 3.153 1.52"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatKeycap3Icon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

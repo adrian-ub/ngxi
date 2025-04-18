@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[noniconsClass16Icon],svg[nonicons-class-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M3.36 4.984h1.574v2.885h3.673v1.574H4.934v3.672h3.673v1.573h-4.46a.787.787 0 0 1-.786-.786z"></svg:path><svg:path d="M1 1.836C1 .822 1.822 0 2.836 0h7.869c1.014 0 1.836.822 1.836 1.836v1.836a1.836 1.836 0 0 1-1.836 1.836H2.836A1.836 1.836 0 0 1 1 3.672zm1.836-.262a.26.26 0 0 0-.262.262v1.836c0 .145.117.262.262.262h7.869a.26.26 0 0 0 .262-.262V1.836a.26.26 0 0 0-.262-.262zM7.82 8.393c0-1.014.822-1.836 1.836-1.836h2.623c1.014 0 1.836.822 1.836 1.836v.525a1.836 1.836 0 0 1-1.836 1.836H9.656A1.836 1.836 0 0 1 7.82 8.918zm1.836-.262a.26.26 0 0 0-.263.262v.525c0 .145.118.262.263.262h2.623a.26.26 0 0 0 .262-.262v-.525a.26.26 0 0 0-.262-.262zM7.82 13.64c0-1.015.822-1.837 1.836-1.837h2.623c1.014 0 1.836.822 1.836 1.836v.525A1.836 1.836 0 0 1 12.279 16H9.656a1.836 1.836 0 0 1-1.836-1.836zm1.836-.263a.26.26 0 0 0-.263.262v.525c0 .145.118.262.263.262h2.623a.26.26 0 0 0 .262-.262v-.525a.26.26 0 0 0-.262-.262z"></svg:path></svg:g>`,
+})
+export class NoniconsClass16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

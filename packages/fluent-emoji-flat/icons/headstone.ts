@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatHeadstoneIcon],svg[fluent-emoji-flat-headstone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#9B9B9B" d="M20.262 6a.545.545 0 0 1-.503-.37a4.002 4.002 0 0 0-7.518 0a.545.545 0 0 1-.503.37H10a2 2 0 0 0-2 2v17H7a1 1 0 0 0-1 1v1.5h20V26a1 1 0 0 0-1-1h-1V8a2 2 0 0 0-2-2z"></svg:path><svg:path fill="#636363" d="M16 5a2 2 0 0 0-2 2v.071a.93.93 0 0 1-.929.929H10.5a.5.5 0 0 0-.5.5V25H9V8.5A1.5 1.5 0 0 1 10.5 7H13a3 3 0 1 1 6 0h2.5A1.5 1.5 0 0 1 23 8.5V25h-1V8.5a.5.5 0 0 0-.5-.5h-2.571A.93.93 0 0 1 18 7.071V7a2 2 0 0 0-2-2"></svg:path><svg:path fill="#636363" d="M13 12.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m.5 3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m-1 1.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm3.5.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"></svg:path><svg:path fill="#86D72F" d="M2 29a2 2 0 0 1 2-2h24a2 2 0 0 1 2 2v1H2z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatHeadstoneIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

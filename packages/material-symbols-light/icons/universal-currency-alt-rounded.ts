@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightUniversalCurrencyAltRoundedIcon],svg[material-symbols-light-universal-currency-alt-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.616 18q-.691 0-1.153-.462T3 16.384V7.616q0-.691.463-1.153T4.615 6h14.77q.69 0 1.152.463T21 7.616v8.769q0 .69-.463 1.153T19.385 18zm13.192-3.192H15.75q-.192 0-.317.125t-.125.316t.125.317t.317.126h2.135q.343 0 .575-.232t.232-.576V12.75q0-.192-.125-.317t-.316-.125t-.317.125t-.126.317zM12 14.385q.98 0 1.683-.702q.702-.702.702-1.683t-.702-1.683T12 9.615t-1.683.702T9.615 12t.702 1.683t1.683.702M6.192 9.192H8.25q.192 0 .317-.125t.125-.316t-.125-.317t-.317-.126H6.116q-.344 0-.576.232t-.232.576v2.134q0 .192.125.317t.316.125t.317-.125t.126-.317z"></svg:path>`,
+})
+export class MaterialSymbolsLightUniversalCurrencyAltRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLocationOff48FilledIcon],svg[fluent-location-off-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M43.634 41.866a1.25 1.25 0 0 1-1.768 1.768l-8.149-8.15l-6.805 7.225a4 4 0 0 1-5.824 0L11 32h.038A16.93 16.93 0 0 1 7 21a16.9 16.9 0 0 1 2.833-9.4L4.366 6.135a1.25 1.25 0 1 1 1.768-1.768zM18.317 20.085a6 6 0 0 0 7.603 7.603zM13.186 7.882l8.558 8.559a6 6 0 0 1 7.82 7.82l7.554 7.553A16.93 16.93 0 0 0 41 21c0-9.389-7.611-17-17-17a16.93 16.93 0 0 0-10.814 3.882"></svg:path>`,
+})
+export class FluentLocationOff48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

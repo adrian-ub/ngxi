@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[foundationGraphHorizontalIcon],svg[foundation-graph-horizontal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M86.304 40.985H13.696c-.836 0-1.513.677-1.513 1.513v15.127c0 .836.677 1.513 1.513 1.513h72.608c.836 0 1.513-.677 1.513-1.513V42.497c0-.835-.677-1.512-1.513-1.512M56.261 17.848v-.053H13.696c-.836 0-1.513.677-1.513 1.513v15.127c0 .836.677 1.513 1.513 1.513h42.565v-.053a1.51 1.51 0 0 0 1.135-1.459V19.307c0-.704-.483-1.29-1.135-1.459m9.622 46.205H13.696c-.836 0-1.513.677-1.513 1.513v15.127c0 .836.677 1.513 1.513 1.513h52.187c.836 0 1.513-.677 1.513-1.513V65.566c0-.836-.677-1.513-1.513-1.513"></svg:path>`,
+})
+export class FoundationGraphHorizontalIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

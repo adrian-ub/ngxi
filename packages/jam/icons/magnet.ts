@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamMagnetIcon],svg[jam-magnet-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 12c0-2.878-1.516-5-3-5s-3 2.122-3 5v6a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-6C0 5.373 4.477 0 10 0s10 5.373 10 12v6a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zm2 0h3c0-5.595-3.67-10-8-10S2 6.405 2 12h3c0-3.866 2.239-7 5-7s5 3.134 5 7M2 18h3v-4H2zm13 0h3v-4h-3z"></svg:path>`,
+})
+export class JamMagnetIcon {
+  readonly viewBox = input("-2 -2 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

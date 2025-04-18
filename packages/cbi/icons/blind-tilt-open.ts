@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[cbiBlindTiltOpenIcon],svg[cbi-blind-tilt-open-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.74 2.3v1.64h4.05v.89h.2v.24h10.06v-.24h.18v.24h3.32v-.25h-3.32v-.88h3.89V2.3Zm14.49 2.77h-.18v1.16h.18zm0 1.16v.25h3.32v-.25zm0 .25h-.18v1.16h.18zm-.18 0v-.25H6.99v.25zM6.99 6.23V5.07h-.2v1.16zm0-2.29h10.06v.88H6.99Zm-3.69.88v.25h3.48v-.25zm0 1.41v.25h3.48v-.25zm3.49.26v1.16h.2V6.49Zm.2 1.16v.25h10.06v-.25zm10.06.25v1.16h.18V7.9Zm.18 0h3.32v-.25h-3.32zm0 1.16v.25h3.32v-.25zm0 .25h-.18v1.16h.18zm0 1.16v.25h3.32v-.25zm0 .25h-.18v1.16h.18zm-.18 0v-.25H6.99v.25zm-10.06 0h-.2v1.16h.2zm0-.25V9.31h-.2v1.16zm0-1.16h10.06v-.25H6.99Zm0-.25V7.9h-.2v1.16ZM3.3 7.65v.25h3.48v-.25zm0 1.41v.25h3.48v-.25zm0 1.41v.25h3.48v-.25zm0 1.42v.25h3.48v-.25zm3.69 0v.25h10.06v-.25zm10.06.25v1.16h.18v-1.16zm.18 0h3.32v-.25h-3.32zm0 1.16v.25h3.32v-.25zm0 .25h-.18v1.16h.18zm0 1.16v.25h3.32v-.25zm0 .25h-.18v1.16h.18zm0 1.16v.25h3.32v-.25zm0 .25h-.18v1.16h.18zm-.18 0v-.25H6.99v.25zm-10.06 0h-.2v1.16h.2zm0-.25v-1.16h-.2v1.16zm0-1.16h10.06v-.25H6.99Zm0-.25v-1.16h-.2v1.16zm0-1.16h10.06v-.25H6.99Zm0-.25v-1.16h-.2v1.16zm-3.69 0v.25h3.48v-.25zm0 1.41v.25h3.48v-.25zm0 1.41v.25h3.48v-.25zm0 1.42v.25h3.48v-.25zm3.69 0v.25h10.06v-.25zm10.06.25v1.16h.18v-1.16zm.18 0h3.32v-.25h-3.32zm0 1.16v.25h3.32v-.25zm0 .25h-.18v1.16h.18zm0 1.16v.25h3.32v-.25zm0 .25h-.18v.69H6.99v-.69h-.2v.69H3.3v.5h17.25v-.5h-3.32zm-10.24 0h10.06v-.25H6.99Zm0-.25V19.2h-.2v1.16zm0-1.16h10.06v-.25H6.99Zm0-.25v-1.16h-.2v1.16zm-3.69 0v.25h3.48v-.25zm0 1.41v.25h3.48v-.25z"></svg:path>`,
+})
+export class CbiBlindTiltOpenIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentGasPump20FilledIcon],svg[fluent-gas-pump-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 17V4.5A2.5 2.5 0 0 1 6.5 2h5A2.5 2.5 0 0 1 14 4.5v9a1.5 1.5 0 0 0 3 0V9.167a1.5 1.5 0 0 0-.3-.9L15.6 6.8a.5.5 0 0 1 .8-.6l1.1 1.467c.325.432.5.959.5 1.5V13.5a2.5 2.5 0 0 1-4 2V17h.5a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1zM6.5 4a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"></svg:path>`,
+})
+export class FluentGasPump20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

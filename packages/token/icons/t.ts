@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenTIcon],svg[token-t-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21 6.316h-6.158V8.21H21zM11.053 8.21H9.158v1.894h1.895zm-1.895 9.473h1.895V12H9.158zm3.79-9.473v1.894h1.894V8.211zm0 9.473h1.894V12h-1.895zm0-11.368h-1.895V8.21h1.894zM3 6.316V8.21h6.158V6.316zM21 12v-1.895h-6.158V12zm-9.947-1.895V12h1.894v-1.895zm-8.053 0V12h6.158v-1.895z"></svg:path>`,
+})
+export class TokenTIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiMotorBoatIcon],svg[openmoji-motor-boat-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#9b9b9a" d="M39 36.09v5.55l-15.78-1.03c.01-.02.02-.04.05-.07c1.12-1.34 5.87-6.26 14.83-5.45c.51.05.9.49.9 1"></svg:path><svg:path fill="#3f3f3f" d="M65 38.93v4.43c0 .55-.506 1-1.125 1H60.5v-.43c0-.52-.495-.96-1.125-.99L56 42.74v-3.81c0-.55.506-1 1.125-1h6.75c.619 0 1.125.45 1.125 1"></svg:path><svg:path fill="#d0cfce" d="M60 43.93V50H21.45s-2.2-1.54-4.62-5c-.61-.86-1.23-1.84-1.83-2.94c-.1-.16-.18-.32-.27-.49c-.37-.7.21-1.51 1.03-1.45l.62.04l6.84.45L39 41.64l17 1.1l3 .2c.56.03 1 .47 1 .99"></svg:path><svg:path fill="none" d="m67.964 48.11l.078 19.911h-64V48.256"></svg:path><svg:path fill="#92d3f5" d="M68 47.02h-.958c-8 0-10 3-15 3s-10-3-16-3s-10 3-16 3s-12-3-15-3h-1v21h64v-10.5H68z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke-width="2" d="M39 36.09v5.55l-15.78-1.03c.01-.02.02-.04.05-.07c1.12-1.34 5.87-6.26 14.83-5.45c.51.05.9.49.9 1m24 8.27V47"></svg:path><svg:path stroke-width="2.121" d="M65 38.93v4.43c0 .55-.506 1-1.125 1H60.5v-.43c0-.52-.495-.96-1.125-.99L56 42.74v-3.81c0-.55.506-1 1.125-1h6.75c.619 0 1.125.45 1.125 1"></svg:path><svg:path stroke-width="2" d="M21.45 50s-2.2-1.54-4.62-5c-.61-.86-1.23-1.84-1.83-2.94c-.1-.16-.18-.32-.27-.49c-.37-.7.21-1.51 1.03-1.45l.62.04l6.84.45L39 41.64l17 1.1l3 .2c.56.03 1 .47 1 .99v3.09"></svg:path><svg:path stroke-width="2" d="M5.042 47.02c3 0 9 3 15 3s10-3 16-3s11 3 16 3s7-3 15-3"></svg:path></svg:g>`,
+})
+export class OpenmojiMotorBoatIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

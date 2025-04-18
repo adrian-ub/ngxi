@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastFileFolderIcon],svg[fluent-emoji-high-contrast-file-folder-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.125 3A3.125 3.125 0 0 0 1 6.125V14h.002L1 14.125v13.802a3.125 3.125 0 0 0 3.125 3.125h23.75A3.125 3.125 0 0 0 31 27.928V14.125q0-.063-.003-.125H31v-3.863a3.125 3.125 0 0 0-3.125-3.125H16.888c-.299 0-.585-.118-.796-.329l-2.477-2.475A4.12 4.12 0 0 0 10.699 3zM29 11.209A3.1 3.1 0 0 0 27.875 11H4.125A3.1 3.1 0 0 0 3 11.209V6.125C3 5.504 3.504 5 4.125 5h6.574c.564 0 1.104.224 1.502.622l2.477 2.476c.586.585 1.38.914 2.21.914h10.987c.622 0 1.125.504 1.125 1.125zM3 14.125C3 13.504 3.504 13 4.125 13h23.75c.622 0 1.125.504 1.125 1.125v13.802c0 .622-.503 1.125-1.125 1.125H4.125A1.125 1.125 0 0 1 3 27.928z"></svg:path>`,
+})
+export class FluentEmojiHighContrastFileFolderIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

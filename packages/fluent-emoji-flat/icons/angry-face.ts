@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatAngryFaceIcon],svg[fluent-emoji-flat-angry-face-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#FFB02E" d="M15.999 29.998c9.334 0 13.999-6.268 13.999-14c0-7.73-4.665-13.998-14-13.998C6.665 2 2 8.268 2 15.999s4.664 13.999 13.999 13.999"></svg:path><svg:path fill="#fff" d="M10.5 21a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m11 0a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9"></svg:path><svg:path fill="#402A32" d="M14.29 12.501a.75.75 0 0 1-.08 1.498c-1.017-.054-1.989-.304-2.817-.88c-.835-.582-1.46-1.452-1.854-2.631a.75.75 0 1 1 1.422-.476c.31.928.762 1.509 1.29 1.876c.534.372 1.21.569 2.039.613m3.42 0a.75.75 0 0 0 .08 1.498c1.017-.054 1.989-.304 2.817-.88c.835-.582 1.46-1.452 1.854-2.631a.75.75 0 1 0-1.422-.476c-.31.928-.763 1.509-1.29 1.876c-.534.372-1.21.569-2.039.613M16 24c-2.005 0-2.934 1.104-3.106 1.447a1 1 0 1 1-1.789-.894C11.602 23.563 13.205 22 16 22s4.4 1.562 4.894 2.553a1 1 0 1 1-1.788.894C18.934 25.104 18.005 24 16 24m-2-7a2 2 0 1 1-4 0a2 2 0 0 1 4 0m8 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatAngryFaceIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

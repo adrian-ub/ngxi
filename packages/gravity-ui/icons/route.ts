@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gravityUiRouteIcon],svg[gravity-ui-route-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12.25 5a1.25 1.25 0 1 0 0-2.5a1.25 1.25 0 0 0 0 2.5m0 1.5a2.75 2.75 0 0 1-2.646-2H4.577a.827.827 0 0 0-.238 1.619l7.753 2.326A2.327 2.327 0 0 1 11.423 13H6.397a2.751 2.751 0 1 1 0-1.5h5.026a.827.827 0 0 0 .238-1.619L3.908 7.556A2.327 2.327 0 0 1 4.577 3h5.027a2.751 2.751 0 1 1 2.646 3.5M5 12.25a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0" clip-rule="evenodd"></svg:path>`,
+})
+export class GravityUiRouteIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

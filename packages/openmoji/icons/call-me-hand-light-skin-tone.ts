@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiCallMeHandLightSkinToneIcon],svg[openmoji-call-me-hand-light-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#fadcbc" stroke="#fadcbc" d="m41.719 53.188l3.434 1.739c3.687 1.219 5.478-6.702-.45-9.348l-1.875-1.257l3.133 1.257c3.528 1.658 7.642-6.237.49-9.695l-2.846-.562l4.99.562c3.107 1.835 3.662-6.083-1.208-8.393L31.5 24.313C32.625 13.438 33.5 6.438 25.438 5c-2.463-.375-5.5 0-4.875 2.5c3.25 14.625-3.125 22.604-4.897 24.455c-7.199 7.198-7.199 18.87 0 26.068c3.126 2.935 6.16 2.727 13.772 2.727c1.437 0 19.6 4.48 19.6 4.48c6.875 1.813 10.648-5.572 6.023-7.134l-1.53-1.05"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M45.527 36.545c5.857 1.475 9.28-7.576.815-9.33L31.5 24.313C32.625 13.438 33.5 6.438 25.438 5c-2.463-.375-5.5 0-4.875 2.5c3.25 14.625-3.125 22.604-4.897 24.455c-7.199 7.198-7.199 18.87 0 26.068c3.126 2.935 6.16 2.727 13.772 2.727c1.437 0 20.632 4.731 20.632 4.731c6.875 1.813 8.97-5.516 4.346-7.079l-4.346-1.567"></svg:path><svg:path d="M44.703 45.58c5.826 1.532 8.063-7.403.824-9.035"></svg:path><svg:path d="M43.412 54.779c5.827 1.57 7.188-7.596 1.291-9.2"></svg:path><svg:path stroke-miterlimit="10" d="m43.412 54.779l-5.693-1.583m6.984-7.616l-5.028-1.433m5.852-7.602l-4.133-.843"></svg:path></svg:g>`,
+})
+export class OpenmojiCallMeHandLightSkinToneIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

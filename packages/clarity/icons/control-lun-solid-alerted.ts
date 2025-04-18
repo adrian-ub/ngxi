@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[clarityControlLunSolidAlertedIcon],svg[clarity-control-lun-solid-alerted-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.11 27a1 1 0 1 0 1 1a1 1 0 0 0-1-1"></svg:path><svg:path fill="currentColor" d="M32.09 21H32v-3.68c-1.9 2.93-10.46 3.3-14 3.3a42.4 42.4 0 0 1-10-1.06v-1.68A40.6 40.6 0 0 0 18 19c4.85 0 12.8-.79 13.91-3.62h-9.68a3.68 3.68 0 0 1-2.73-1.23H18a42 42 0 0 1-10-1.04V11a40.6 40.6 0 0 0 10 1.14h.59a3.6 3.6 0 0 1 .46-2.29l3.46-6c-1.6-.15-3.17-.21-4.51-.21c-5.14 0-13.79.88-14 4.15v19.7c0 2.16 3.64 3.3 7.63 3.84l2.84 3l.59.62h17a3 3 0 0 0 3-3v-8.02A3 3 0 0 0 32.09 21M8 26.08V24.4a26 26 0 0 0 3.46.7l-1.24 1.44c-.76-.12-1.51-.27-2.22-.46M33.09 32a1 1 0 0 1-1 1H15.92l-4.52-4.77L15.92 23h16.17a1 1 0 0 1 1 1Z"></svg:path><svg:path fill="currentColor" d="m26.85 1.14l-5.72 9.91a1.27 1.27 0 0 0 1.1 1.95h11.45a1.27 1.27 0 0 0 1.1-1.91l-5.72-9.95a1.28 1.28 0 0 0-2.21 0"></svg:path>`,
+})
+export class ClarityControlLunSolidAlertedIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

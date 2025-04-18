@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsTouchLocked04Icon],svg[hugeicons-touch-locked-04-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.916 13.495V9.996m0 0V3.75a1.75 1.75 0 0 1 3.5 0v5.248l3.077.477c1.929.29 2.893.434 3.572.84c.7.42 1.098.97 1.435 1.682m-11.584-2L5.73 11.352c-.953 1.088-1.43 1.633-1.614 2.278a3 3 0 0 0-.115.895c.016.67.34 1.317.986 2.61c.798 1.596 1.197 2.394 1.84 2.93c.29.241.613.44.959.592c.99.433 2.154.333 3.214.333m3-1.49c0-.935 0-1.402.201-1.75a1.5 1.5 0 0 1 .549-.549C15.098 17 15.565 17 16.5 17h1c.935 0 1.402 0 1.75.201a1.5 1.5 0 0 1 .549.549c.201.348.201.815.201 1.75s0 1.402-.201 1.75a1.5 1.5 0 0 1-.549.549c-.348.201-.815.201-1.75.201h-1c-.935 0-1.402 0-1.75-.201a1.5 1.5 0 0 1-.549-.549C14 20.902 14 20.435 14 19.5m1.5-4a1.5 1.5 0 0 1 3 0V17h-3z" color="currentColor"></svg:path>`,
+})
+export class HugeiconsTouchLocked04Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

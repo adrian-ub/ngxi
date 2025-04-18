@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiSeedOutlineIcon],svg[mdi-seed-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.2 5c.6 0 1.2 0 1.7.1c.2 2.3.2 6.9-2.5 10.1c-2 2.5-5.4 3.8-10 3.8H5.1c-.2-4.6.7-8.2 2.8-10.5C10.4 5.6 14.4 5 17.2 5m0-2c-5.5 0-15.6 2.1-14 17.8c1.1.1 2.2.2 3.2.2C24.3 21 20.7 3.3 20.7 3.3S19.3 3 17.2 3M17 7C7 7 7 17 7 17C11 9 17 7 17 7"></svg:path>`,
+})
+export class MdiSeedOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

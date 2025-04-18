@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneMonotoneHeartWithArrowIcon],svg[emojione-monotone-heart-with-arrow-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m50.621 11.985l2.347 2.346l-9.747 9.699s9.914.433 18.779-8.391l-8.18-2.156l-2.357-2.356L49.299 3c-8.863 8.824-8.43 18.693-8.43 18.693z"></svg:path><svg:path fill="currentColor" d="M54.16 22.922c-6.059 2.797-10.945 2.313-12.085 2.304l-5.009 4.914l-2.352-2.342l5.027-4.988c-.01-.54-.469-3.207.793-7.404c-5.665.667-10.877 4.277-11.749 8.091c-2.357-8.001-20.438-13.974-25.958.79c-3.403 9.106 4.272 17.693 12.16 23.956l-2.73 2.717l-1.617-5.317c-7.11 7.074-6.408 15.34-6.408 15.34s8.305.699 15.416-6.377l-5.343-1.609l2.996-2.981c5.534 4.094 10.645 6.94 11.484 7.888c2.143-1.922 32.104-17.451 25.961-33.625c-.221-.59-.325-.835-.586-1.357"></svg:path>`,
+})
+export class EmojioneMonotoneHeartWithArrowIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

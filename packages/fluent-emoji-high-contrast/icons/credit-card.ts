@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastCreditCardIcon],svg[fluent-emoji-high-contrast-credit-card-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M27.147 28h-1.794a.86.86 0 0 1-.853-.853v-1.794c0-.475.378-.853.853-.853h1.794c.475 0 .853.378.853.853v1.794a.85.85 0 0 1-.853.853m-3.761-4H5.614A.617.617 0 0 1 5 23.384v-2.768c0-.333.272-.616.614-.616h17.772c.332 0 .614.273.614.616v2.778a.61.61 0 0 1-.614.606M6 22a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0-.5.5"></svg:path><svg:path d="M4.248 11A3.25 3.25 0 0 0 1 14.249V27.75A3.25 3.25 0 0 0 4.248 31h23.504A3.245 3.245 0 0 0 31 27.751V14.25A3.25 3.25 0 0 0 27.752 11zM3 14.249C3 13.56 3.562 13 4.248 13h23.504c.686 0 1.248.561 1.248 1.249V15H3zM3 18h26v9.751c0 .695-.559 1.249-1.248 1.249H4.248A1.25 1.25 0 0 1 3 27.751z"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastCreditCardIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

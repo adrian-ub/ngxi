@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedXdcIcon],svg[token-branded-xdc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#B8B5B1" d="M20.977 11.128C18.907-.836 3.281 1.48 3 11.128l1.474.76s-.478.28-1.474.933c1.811 11.745 17.184 10.035 18-.017a135 135 0 0 0-1.513-.917zm-7.706 4.185l-1.468-2.531l-1.474 2.53l-1.136-.084l2.132-3.583l-1.913-3.082l1.154-.101l1.35 2.289l1.36-2.194l1.07.023l-1.767 3.049l1.969 3.645l-1.271.039z"></svg:path><svg:path fill="#254C82" d="M20.24 10.65C17.433.02 4.591 2.888 3.714 10.65l2.194 1.237l-2.194 1.396c1.912 10.231 15.772 8.257 16.526-.023c-1.39-.877-2.227-1.395-2.227-1.395s1.89-1.013 2.227-1.215m-6.964 4.68l-1.473-2.531l-1.497 2.531l-1.136-.079l2.138-3.583L9.395 8.58l1.153-.096l1.35 2.29l1.356-2.194l1.074.023l-1.766 3.043l1.991 3.645l-1.271.039z"></svg:path></svg:g>`,
+})
+export class TokenBrandedXdcIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

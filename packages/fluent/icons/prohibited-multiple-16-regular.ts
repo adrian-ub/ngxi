@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentProhibitedMultiple16RegularIcon],svg[fluent-prohibited-multiple-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.464 3.464a5 5 0 0 1 6.7-.336l-7.036 7.037a5 5 0 0 1 .336-6.7m.371 7.408l7.037-7.037a5 5 0 0 1-7.037 7.037m7.408-8.115a6 6 0 1 0-8.486 8.486a6 6 0 0 0 8.486-8.486M14 7c0 1.217-.31 2.361-.857 3.358a5.02 5.02 0 0 1-2.785 2.785A7 7 0 0 1 7 14q-.553 0-1.084-.084a6 6 0 0 0 8-8Q14 6.446 14 7"></svg:path>`,
+})
+export class FluentProhibitedMultiple16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

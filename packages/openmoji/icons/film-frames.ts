@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiFilmFramesIcon],svg[openmoji-film-frames-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#D0CFCE" d="M42.392 24.68L60 24.937l.17-7.62L12 16.829v8.108l20.345-.257c.552 0 1.614.505 1.614 1.057l-.231 20.91c0 .553-2.905.333-3.458.333L12 46.688V55l48-.258V46.98H39.87c-.553 0-1.64-.448-1.64-1l.42-20.73c0-.553 3.19-.57 3.742-.57"></svg:path><svg:path fill="#FFF" d="M38.244 24.937h21.742V46.98H38.244zm-26.24 0h21.951V46.98H12.004z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M12 17h48v38H12z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M12 24.937h21.959V46.98H12m48 0H38.23V24.937H60"></svg:path><svg:circle cx="18.095" cy="20.908" r="1.079"></svg:circle><svg:circle cx="24.095" cy="20.908" r="1.079"></svg:circle><svg:circle cx="30.095" cy="20.908" r="1.079"></svg:circle><svg:circle cx="36.095" cy="20.908" r="1.079"></svg:circle><svg:circle cx="42.095" cy="20.908" r="1.079"></svg:circle><svg:circle cx="48.095" cy="20.908" r="1.079"></svg:circle><svg:circle cx="54.095" cy="20.908" r="1.079"></svg:circle><svg:circle cx="18.078" cy="51.026" r="1.079"></svg:circle><svg:circle cx="24.078" cy="51.026" r="1.079"></svg:circle><svg:circle cx="30.078" cy="51.026" r="1.079"></svg:circle><svg:circle cx="36.078" cy="51.026" r="1.079"></svg:circle><svg:circle cx="42.078" cy="51.026" r="1.079"></svg:circle><svg:circle cx="48.078" cy="51.026" r="1.079"></svg:circle><svg:circle cx="54.078" cy="51.026" r="1.079"></svg:circle>`,
+})
+export class OpenmojiFilmFramesIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

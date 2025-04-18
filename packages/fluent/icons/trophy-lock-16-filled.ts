@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTrophyLock16FilledIcon],svg[fluent-trophy-lock-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.999 3h-.503a1.5 1.5 0 0 0-1.5 1.5v1c0 1.252.922 2.288 2.122 2.471a4 4 0 0 0 3.381 2.998V12h-1.5a2 2 0 0 0-2 2v.504a.5.5 0 0 0 .5.5h3.77A2 2 0 0 1 8 14v-4a2 2 0 0 1 1.5-1.937V8a3 3 0 0 1 2.499-2.958V4h.5a.5.5 0 0 1 .5.5v.541c.359.06.696.184 1 .36V4.5a1.5 1.5 0 0 0-1.5-1.5h-.5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2m0 1v2.915A1.5 1.5 0 0 1 2.996 5.5v-1a.5.5 0 0 1 .5-.5zM10.5 8v1H10a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-.5V8a2 2 0 1 0-4 0m1 1V8a1 1 0 1 1 2 0v1zm1 2.25a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5"></svg:path>`,
+})
+export class FluentTrophyLock16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

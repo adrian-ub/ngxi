@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsThefinalsIcon],svg[simple-icons-thefinals-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M18.523 19.319H24L14.965 6.295c-.626-.904-1.51-1.614-2.847-1.614c-1.38 0-2.264.775-2.889 1.614L0 19.319h5.261l3.372-4.759l3.256 4.759h5.478l-5.934-8.712l.599-.846zm0 0"></svg:path>`,
 })
 export class SimpleIconsThefinalsIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiArrowUpDownSolidIcon],svg[mynaui-arrow-up-down-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.5 18.25a.75.75 0 0 0 .75-.75v-6.97h3.28a.75.75 0 0 0 0-1.06l-3.5-3.5a.75.75 0 0 0-1.06 0l-3.5 3.5a.75.75 0 0 0 0 1.06h3.28v6.97c0 .414.336.75.75.75m9-12.5a.75.75 0 0 1 .75.75v6.97h3.28a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 0 1 0-1.06h3.28V6.5a.75.75 0 0 1 .75-.75"></svg:path>`,
+})
+export class MynauiArrowUpDownSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

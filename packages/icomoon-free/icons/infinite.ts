@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icomoonFreeInfiniteIcon],svg[icomoon-free-infinite-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.25 11.75a3.73 3.73 0 0 1-2.652-1.098L8 9.054l-1.598 1.598c-.708.708-1.65 1.098-2.652 1.098s-1.944-.39-2.652-1.098S0 9.002 0 8s.39-1.943 1.098-2.652C1.806 4.64 2.748 4.25 3.75 4.25s1.943.39 2.652 1.098L8 6.946l1.598-1.598c.708-.708 1.65-1.098 2.652-1.098s1.944.39 2.652 1.098S16 6.998 16 8s-.39 1.943-1.098 2.652a3.73 3.73 0 0 1-2.652 1.098m-1.598-2.152c.427.427.994.662 1.598.662s1.171-.235 1.598-.662s.662-.994.662-1.598s-.235-1.171-.662-1.598s-.994-.662-1.598-.662s-1.171.235-1.598.662L9.054 8zM3.75 5.74c-.604 0-1.171.235-1.598.662S1.49 7.396 1.49 8s.235 1.171.662 1.598s.994.662 1.598.662s1.171-.235 1.598-.662L6.946 8L5.348 6.402A2.24 2.24 0 0 0 3.75 5.74"></svg:path>`,
+})
+export class IcomoonFreeInfiniteIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

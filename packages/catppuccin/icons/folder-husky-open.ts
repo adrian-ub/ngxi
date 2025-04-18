@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[catppuccinFolderHuskyOpenIcon],svg[catppuccin-folder-husky-open-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#cad3f5" d="m1.875 8l.686-2.743a1 1 0 0 1 .97-.757h10.938a1 1 0 0 1 .97 1.243l-.315 1.26M6 13.5H2.004A1.5 1.5 0 0 1 .5 12V3.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1"></svg:path><svg:path stroke="#f4dbd6" d="m9.06 12.285l2.118-.775c.65-.238 1.36.163 1.474.831l.372 2.18c.12.702-.65 1.224-1.28.868a.6.6 0 0 1-.207-.19l-.11-.162A2.63 2.63 0 0 0 9.4 13.893l-.198-.011a.6.6 0 0 1-.271-.08a.834.834 0 0 1 .128-1.517"></svg:path><svg:path fill="#f4dbd6" d="M9.224 10.801c.398.23.944.036 1.22-.435c.276-.47.176-1.039-.222-1.27c-.398-.23-.944-.035-1.22.436c-.275.47-.176 1.04.222 1.27m2.62-1c.398.23.944.036 1.22-.435c.275-.47.176-1.039-.222-1.27c-.398-.23-.944-.035-1.22.436c-.275.47-.176 1.04.222 1.27m2.045 1c.398.23.944.036 1.22-.435c.276-.47.177-1.039-.221-1.27c-.398-.23-.944-.035-1.22.436c-.276.47-.177 1.04.221 1.27m.688 2.793c.398.23.945.035 1.22-.436c.276-.47.177-1.039-.22-1.269c-.399-.23-.945-.035-1.22.435c-.277.471-.178 1.04.22 1.27"></svg:path></svg:g>`,
+})
+export class CatppuccinFolderHuskyOpenIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

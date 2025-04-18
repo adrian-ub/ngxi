@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[icRoundContactlessIcon],svg[ic-round-contactless-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2M8.75 13.68c-.13.43-.62.63-1.02.45a.75.75 0 0 1-.4-.9c.12-.41.18-.83.17-1.24s-.06-.8-.17-1.18c-.1-.36.06-.75.4-.9c.42-.19.91.04 1.04.49c.15.51.22 1.03.23 1.57a6 6 0 0 1-.25 1.71m3.14 1.59c-.17.41-.67.57-1.06.35a.755.755 0 0 1-.32-.94c.33-.77.49-1.63.49-2.56c0-.96-.18-1.89-.53-2.78c-.14-.36.02-.76.36-.94c.39-.2.87-.02 1.03.39c.42 1.06.63 2.18.63 3.33c.02 1.13-.19 2.19-.6 3.15M15 16.6a.748.748 0 0 1-1.39-.56c.59-1.39.89-2.75.89-4.06s-.3-2.65-.88-4.01c-.16-.36.01-.78.36-.95c.39-.2.85-.02 1.02.38c.66 1.54 1 3.08 1 4.58s-.34 3.06-1 4.62"></svg:path>`,
+})
+export class IcRoundContactlessIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

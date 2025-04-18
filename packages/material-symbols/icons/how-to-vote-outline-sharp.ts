@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsHowToVoteOutlineSharpIcon],svg[material-symbols-how-to-vote-outline-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 22v-6.55l2.75-3.125l1.425 1.425l-2 2.25h13.65l-1.95-2.2l1.425-1.425L21 15.45V22zm2-2h14v-2H5zm7.05-4.2L5.7 9.45l7.775-7.775l6.35 6.35zm0-2.825L17 8.025L13.475 4.5l-4.95 4.95zM5 20v-2z"></svg:path>`,
+})
+export class MaterialSymbolsHowToVoteOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

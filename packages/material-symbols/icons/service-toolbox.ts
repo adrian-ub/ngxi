@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsServiceToolboxIcon],svg[material-symbols-service-toolbox-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18v-4h5v1h2v-1h6v1h2v-1h5v4q0 .825-.587 1.413T20 20zm-1.575-8L4.5 7.2q.225-.55.725-.875T6.3 6H7V5q0-.825.588-1.413T9 3h6q.825 0 1.413.588T17 5v1h.7q.575 0 1.075.325t.725.875l2.075 4.8H17v-1h-2v1H9v-1H7v1zM9 6h6V5H9z"></svg:path>`,
+})
+export class MaterialSymbolsServiceToolboxIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

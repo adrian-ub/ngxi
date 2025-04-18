@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiTropicalDrinkIcon],svg[openmoji-tropical-drink-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M16.9 28h38.3"></svg:path><svg:path fill="#FCEA2B" d="M56 33c-.1-2.1-.3-4.1-.7-6H16.8c-.4 1.9-.7 3.9-.7 6v1c.5 12.2 9.2 22 20 22s19.5-9.8 20-22v-.4c-.1-.2-.1-.4-.1-.6"></svg:path><svg:path fill="#F1B31C" d="M56 33c-.1-2.1-.4-4.1-.8-6h-13c.4 1.9.7 3.9.7 6v1c-.4 9.6-5.9 17.8-13.5 20.8c2 .8 4.2 1.2 6.5 1.2c10.8 0 19.5-9.8 20-22v-.4c.1-.2.1-.4.1-.6"></svg:path><svg:g fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M36 56v11m-16 0h32"></svg:path><svg:path d="M56 33c0 12.7-9 23-20 23S16 45.7 16 33"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M50.1 15.6C53.8 20.3 56 26.8 56 34m-40 0c0-7 2.1-13.3 5.6-18M43 24V11l7-7"></svg:path></svg:g>`,
+})
+export class OpenmojiTropicalDrinkIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

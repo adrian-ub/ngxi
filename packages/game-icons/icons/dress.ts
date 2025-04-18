@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gameIconsDressIcon],svg[game-icons-dress-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M342.842 462.946c-2.029 31.63-171.708 29.834-173.863 0c-6.223-162.824 18.646-224.226 26.506-280.24c1.902-13.533-14.843-37.589-19.016-54.323c-8.917-35.36 3.856-66.262-8.917-95.42L185.977 26C196.373 66.568 223.8 95.547 256 95.547c32.201 0 59.627-28.979 70.023-69.547l18.425 6.962c-12.773 29.159 0 60.06-8.917 95.42c-4.226 16.735-20.96 40.79-19.016 54.324c7.68 56.025 32.55 117.427 26.327 280.24"></svg:path>`,
+})
+export class GameIconsDressIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

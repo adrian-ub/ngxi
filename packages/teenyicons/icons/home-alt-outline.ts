@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[teenyiconsHomeAltOutlineIcon],svg[teenyicons-home-alt-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m7.5.5l.354-.354a.5.5 0 0 0-.708 0zm-6 6l-.354-.354L1 6.293V6.5zm12 0h.5v-.207l-.146-.147zm.354-.354l-6-6l-.708.708l6 6zm-6.708-6l-6 6l.708.708l6-6zM14 13.5v-7h-1v7zm-13-7v7h1v-7zM2.5 15h10v-1h-10zM13 13.5a.5.5 0 0 1-.5.5v1a1.5 1.5 0 0 0 1.5-1.5zm-12 0A1.5 1.5 0 0 0 2.5 15v-1a.5.5 0 0 1-.5-.5z"></svg:path>`,
+})
+export class TeenyiconsHomeAltOutlineIcon {
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixVersionHistoryIcon],svg[ix-version-history-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M277.334 64c106.038 0 192 85.961 192 192s-85.962 192-192 192c-52.074 0-99.306-20.73-133.893-54.389l29.755-30.58c26.9 26.179 63.636 42.302 104.138 42.302c82.474 0 149.333-66.858 149.333-149.333s-66.859-149.333-149.333-149.333S128 173.525 128 256q.001 6.065.476 12.008l42.19-42.178l30.17 30.17l-94.17 94.17L12.498 256l30.17-30.17l43.094 43.086A195 195 0 0 1 85.334 256c0-106.039 85.96-192 192-192M244.32 191.127l33.215 88.555l33.213-88.555h45.57l-56 149.333H254.75l-55.999-149.333z"></svg:path>`,
+})
+export class IxVersionHistoryIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

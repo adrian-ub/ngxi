@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixPointUpIcon],svg[ix-point-up-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m234.666 64l-3.76.109c-33.596 1.946-60.24 29.807-60.24 63.891v143.765l-2.809-2.14c-26.063-18.603-62.112-16.832-86.273 5.316c-24.582 22.534-27.16 60.102-6.56 85.727l3.877 4.39l104.262 104.275h243.503v-196.71l-128-42.671V128c0-35.346-28.653-64-64-64m0 42.667c11.783 0 21.334 9.55 21.334 21.333v132.71l128 42.65v123.307H200.853l-91.68-91.691c-7.55-8.236-6.994-21.034 1.242-28.583c9.95-9.12 25.22-9.12 35.17 0l67.748 62.103V128c0-11.782 9.551-21.333 21.333-21.333"></svg:path>`,
+})
+export class IxPointUpIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

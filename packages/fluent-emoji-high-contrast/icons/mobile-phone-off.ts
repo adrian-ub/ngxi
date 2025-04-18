@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastMobilePhoneOffIcon],svg[fluent-emoji-high-contrast-mobile-phone-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M7 7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-3.44c0-.11-.134-.169-.219-.1a3.6 3.6 0 0 1-1.22.65a.13.13 0 0 0-.092.12v1.957a.25.25 0 0 1-.25.25H6.844a.25.25 0 0 1-.25-.25V9.845a.25.25 0 0 1 .25-.25h8.375a.25.25 0 0 1 .25.25v1.542c0 .057.037.106.091.122c.45.137.864.36 1.221.649c.085.07.219.01.219-.1V9a2 2 0 0 0-2-2z"></svg:path><svg:path d="M12.133 14.973a2.371 2.371 0 1 1 4.742 0v1.672a2.371 2.371 0 1 1-4.742 0zm2.37-1.371a1.37 1.37 0 0 0-1.37 1.37v1.673a1.371 1.371 0 1 0 2.742 0v-1.672a1.37 1.37 0 0 0-1.371-1.371m3.449-.407a.5.5 0 0 1 .5-.5h3.078a.5.5 0 1 1 0 1h-2.578v1.594h2.461a.5.5 0 1 1 0 1h-2.46v2.242a.5.5 0 1 1-1 0zm5.024 0a.5.5 0 0 1 .5-.5h3.078a.5.5 0 0 1 0 1h-2.578v1.594h2.46a.5.5 0 1 1 0 1h-2.46v2.234a.5.5 0 1 1-1 0z"></svg:path><svg:path d="M6 1a5 5 0 0 0-5 5v20a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5V6a5 5 0 0 0-5-5zM3 6a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastMobilePhoneOffIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

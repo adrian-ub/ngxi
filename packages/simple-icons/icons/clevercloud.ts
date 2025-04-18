@@ -4,7 +4,7 @@ import { Component, input } from '@angular/core'
   standalone: true,
   selector: 'svg[simpleIconsClevercloudIcon],svg[simple-icons-clevercloud-icon]',
   host: {
-    'role': 'img',
+    role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
@@ -12,7 +12,7 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M4.823 11.139L11.253 0L1.608 5.57zM1.235 6.646v10.708L4.325 12zM12 23.57l6.43-11.14H5.57zM12 .43L5.57 11.57h12.86zm10.764 16.924V6.646L19.674 12zm.001.862l-.374.215l-3.215-5.57L12.746 24zm0-12.431L12.745 0l6.431 11.139l3.215-5.57zM1.235 18.216L11.254 24l-6.43-11.138l-3.216 5.569z"></svg:path>`,
 })
 export class SimpleIconsClevercloudIcon {
-  readonly viewBox = input('0 0 24 24')
-  readonly width = input('1em')
-  readonly height = input('1em')
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
 }

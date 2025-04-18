@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[healthiconsChartInfectedStableNegativeIcon],svg[healthicons-chart-infected-stable-negative-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:g clip-path="url(#healthiconsChartInfectedStableNegative0)"><svg:path fill="currentColor" fill-rule="evenodd" d="M0 0h48v48H0zm24.712 20.45a6.47 6.47 0 0 1-3.212 1.474v1.087A1 1 0 0 1 21.35 25h-1.7a1 1 0 0 1-.15-1.989v-1.087a6.5 6.5 0 0 1-2.835-1.175l-.7.701l.142.143a1 1 0 0 1-1.414 1.414l-1.7-1.7a1 1 0 0 1 1.414-1.414l.143.143l.701-.701a6.5 6.5 0 0 1-1.175-2.835H12.99a1 1 0 0 1-1.99-.15v-1.7a1 1 0 0 1 1.989-.15h1.087a6.5 6.5 0 0 1 1.175-2.835l-.701-.7l-.143.142a1 1 0 0 1-1.414-1.414l1.7-1.7a1 1 0 1 1 1.414 1.414l-.143.143l.701.701A6.5 6.5 0 0 1 19.5 9.076V7.99A1 1 0 0 1 19.65 6h1.7a1 1 0 0 1 .15 1.989v1.087a6.5 6.5 0 0 1 2.835 1.175l.7-.701l-.142-.143a1 1 0 0 1 1.414-1.414l1.7 1.7a1 1 0 0 1-1.414 1.414l-.143-.143l-.701.701c.6.82 1.013 1.786 1.175 2.835h1.087a1 1 0 0 1 1.989.15v1.7a1 1 0 0 1-1.989.15h-1.087a6.5 6.5 0 0 1-.905 2.436l1.248 1.133l.176-.176a1 1 0 0 1 1.414 1.414l-1.7 1.7a1 1 0 0 1-1.414-1.414l.108-.108zm-5.787 11.17c1.23-.405 2.6-.62 3.995-.62s2.764.215 3.994.62l3.673 1.212c2.336.77 4.9 1.168 7.493 1.168h1.286l-3.073 3.075a1 1 0 0 0 1.414 1.414l4.78-4.782a1 1 0 0 0 0-1.414l-4.78-4.782a1 1 0 0 0-1.414 1.414L39.367 32H38.08c-2.392 0-4.745-.368-6.867-1.068l-3.672-1.21A14.9 14.9 0 0 0 22.92 29c-1.595 0-3.176.245-4.621.721l-3.671 1.207c-2.052.676-4.318 1.043-6.628 1.067V6H6v35a1 1 0 0 0 1 1h35v-2H8v-6.005c2.51-.024 4.988-.42 7.252-1.167z" clip-rule="evenodd"></svg:path></svg:g><svg:defs><svg:clippath id="healthiconsChartInfectedStableNegative0"><svg:path d="M0 0h48v48H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
+})
+export class HealthiconsChartInfectedStableNegativeIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineMdPeanutOffTwotoneIcon],svg[line-md-peanut-off-twotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="lineMdPeanutOffTwotone0"><svg:g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path fill="#fff" fill-opacity="0" stroke-dasharray="56" stroke-dashoffset="56" d="M12 2c2.5 0 5 2 5 5c0 1.13 -0.37 2.16 -1 3c-0.28 0.38 -0.5 1 -0.5 1.5c0 0.5 0.2 0.91 0.5 1.23c0.93 0.98 1.5 2.31 1.5 3.77c0 3.04 -2.46 5.5 -5.5 5.5c-3.04 0 -5.5 -2.46 -5.5 -5.5c0 -1.46 0.57 -2.79 1.5 -3.77c0.3 -0.32 0.5 -0.73 0.5 -1.23c0 -0.5 -0.22 -1.12 -0.5 -1.5c-0.63 -0.84 -1 -1.87 -1 -3c0 -2.76 2 -5 5 -5Z"><svg:animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.15s" values="0;0.3"></svg:animate><svg:animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="56;0"></svg:animate></svg:path><svg:circle cx="13" cy="15" r="0" fill="#fff" stroke="none"><svg:animate fill="freeze" attributeName="r" begin="0.6s" dur="0.2s" values="0;1"></svg:animate></svg:circle><svg:circle cx="13" cy="6" r="0" fill="#fff" stroke="none"><svg:animate fill="freeze" attributeName="r" begin="0.7s" dur="0.2s" values="0;1"></svg:animate></svg:circle><svg:circle cx="11" cy="17" r="0" fill="#fff" stroke="none"><svg:animate fill="freeze" attributeName="r" begin="0.8s" dur="0.2s" values="0;1"></svg:animate></svg:circle><svg:circle cx="14" cy="18" r="0" fill="#fff" stroke="none"><svg:animate fill="freeze" attributeName="r" begin="0.9s" dur="0.2s" values="0;1"></svg:animate></svg:circle><svg:path stroke="#000" stroke-dasharray="28" stroke-dashoffset="28" d="M-1 11h24" transform="rotate(45 12 12)"><svg:animate fill="freeze" attributeName="stroke-dashoffset" begin="1.15s" dur="0.4s" values="28;0"></svg:animate></svg:path><svg:path stroke-dasharray="28" stroke-dashoffset="28" d="M-1 13h24" transform="rotate(45 12 12)"><svg:animate fill="freeze" attributeName="stroke-dashoffset" begin="1.15s" dur="0.4s" values="28;0"></svg:animate></svg:path></svg:g></svg:mask><svg:rect width="24" height="24" fill="currentColor" mask="url(#lineMdPeanutOffTwotone0)"></svg:rect>`,
+})
+export class LineMdPeanutOffTwotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

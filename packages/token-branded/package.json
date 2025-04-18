@@ -1,0 +1,27 @@
+{
+  "name": "@ngxi/token-branded",
+  "version": "0.8.0",
+  "author": "Adrián UB",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/adrian-ub",
+  "homepage": "https://github.com/adrian-ub/ngxi/tree/main/packages/token-branded#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrian-ub/ngxi",
+    "directory": "packages/token-branded"
+  },
+  "bugs": "https://github.com/adrian-ub/ngxi/issues",
+  "sideEffects": false,
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
+  "peerDependencies": {
+    "@angular/core": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "tslib": "catalog:angular"
+  },
+  "publishConfig": {
+    "directory": "dist"
+  }
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonInteractionsIcon],svg[carbon-interactions-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M26 18h-4v-4h-2v14h6a2.003 2.003 0 0 0 2-2v-6a2 2 0 0 0-2-2m-4 8v-6h4v6zM20 6.076l-.744-1.857L16 5.522V2h-2v3.523L10.744 4.22L10 6.077l3.417 1.367L10.9 10.8l1.6 1.2L15 8.667L17.5 12l1.6-1.2l-2.517-3.357zM10 18H5v2h5v2H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h6v-8a2 2 0 0 0-2-2m0 8H6v-2h4z"></svg:path>`,
+})
+export class CarbonInteractionsIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

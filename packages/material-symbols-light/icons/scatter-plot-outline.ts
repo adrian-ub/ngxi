@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightScatterPlotOutlineIcon],svg[material-symbols-light-scatter-plot-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.77 19.77q-1.238 0-2.12-.882t-.88-2.119t.88-2.118t2.12-.882t2.118.881t.881 2.12t-.881 2.118t-2.119.881m0-1q.825 0 1.413-.587t.587-1.413t-.587-1.412t-1.413-.588t-1.412.588t-.588 1.412t.588 1.413t1.412.587m-9.538-2q-1.238 0-2.119-.881t-.881-2.119t.881-2.119t2.119-.88t2.118.88t.882 2.12t-.882 2.118t-2.118.881m0-1q.825 0 1.412-.587t.588-1.413t-.588-1.412t-1.412-.588t-1.413.588t-.587 1.412t.587 1.413t1.413.587M11 9.385q-1.237 0-2.119-.882T8 6.385t.881-2.12T11 3.386t2.119.88t.881 2.12t-.881 2.118T11 9.385m0-1q.825 0 1.413-.588T13 6.385t-.587-1.413T11 4.385t-1.412.587T9 6.385t.588 1.412T11 8.385m0-2"></svg:path>`,
+})
+export class MaterialSymbolsLightScatterPlotOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

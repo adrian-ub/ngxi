@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentFlipHorizontal16FilledIcon],svg[fluent-flip-horizontal-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.884 12.651a.75.75 0 0 1-.634.35h-4.5a.75.75 0 0 1-.75-.75v-9.5a.75.75 0 0 1 1.428-.322l4.5 9.5a.75.75 0 0 1-.044.722M10.5 6.085V11.5h2.565zM1.5 13a.5.5 0 0 1-.447-.724l5-10A.5.5 0 0 1 7 2.5v10a.5.5 0 0 1-.5.5z"></svg:path>`,
+})
+export class FluentFlipHorizontal16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

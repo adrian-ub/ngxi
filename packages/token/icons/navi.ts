@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenNaviIcon],svg[token-navi-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.934 13.961L3.87 18.533V5.308a2.032 2.032 0 1 1 4.065 0z"></svg:path><svg:path fill="currentColor" d="m7.788 10.694l-.18-6.497l11.211 13.518a1.993 1.993 0 0 1-.288 2.832a2.045 2.045 0 0 1-2.85-.293zm-3.914 7.682l4.065-4.825v5.416a2.033 2.033 0 0 1-4.065 0z"></svg:path><svg:path fill="currentColor" d="m3.874 5.949l4.065 4.972V5.308a2.033 2.033 0 0 0-4.065 0zm16.055.931c.134-.33.202-.684.202-1.041C20.13 4.27 18.83 3 17.227 3s-2.903 1.27-2.903 2.839c0 .348.064.682.181.99c.55 1.803 1.989 3.205 2.707 3.72c1.602-1.18 2.396-2.68 2.717-3.669"></svg:path><svg:path fill="currentColor" d="M17.228 7.065a1.162 1.162 0 1 0 0-2.323a1.162 1.162 0 0 0 0 2.323"></svg:path>`,
+})
+export class TokenNaviIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

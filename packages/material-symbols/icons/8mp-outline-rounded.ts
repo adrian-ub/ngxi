@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbols8mpOutlineRoundedIcon],svg[material-symbols-8mp-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 11.5h2.5q.425 0 .713-.288t.287-.712v-4q0-.425-.288-.712T13.5 5.5H11q-.425 0-.712.288T10 6.5v4q0 .425.288.713T11 11.5m.5-3.5V6.5H13V8zm0 2.5V9H13v1.5zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14zm2.5 9h1v2.25q0 .325.213.538T9.25 17t.538-.213t.212-.537V14h1v3.75q0 .325.213.538t.537.212t.538-.213t.212-.537V13.5q0-.425-.288-.712T11.5 12.5H7q-.425 0-.712.288T6 13.5v4.25q0 .325.213.538t.537.212t.538-.213t.212-.537zm7.5 3h2q.425 0 .713-.288T18 16v-2.5q0-.425-.288-.712T17 12.5h-2.75q-.325 0-.537.213t-.213.537v4.5q0 .325.213.538t.537.212t.538-.213t.212-.537zm0-1.5V14h1.5v1.5z"></svg:path>`,
+})
+export class MaterialSymbols8mpOutlineRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

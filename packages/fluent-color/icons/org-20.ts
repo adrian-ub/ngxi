@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorOrg20Icon],svg[fluent-color-org-20-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorOrg206)" fill-rule="evenodd" d="M9.25 9.25h-2.5A1.75 1.75 0 0 0 5 11v2.5h1.5V11a.25.25 0 0 1 .25-.25h6.5a.25.25 0 0 1 .25.25v2.5H15V11a1.75 1.75 0 0 0-1.75-1.75h-2.5V7h-1.5z" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorOrg200)" fill-rule="evenodd" d="M9.25 9.25h-2.5A1.75 1.75 0 0 0 5 11v2.5h1.5V11a.25.25 0 0 1 .25-.25h6.5a.25.25 0 0 1 .25.25v2.5H15V11a1.75 1.75 0 0 0-1.75-1.75h-2.5V7h-1.5z" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorOrg201)" fill-rule="evenodd" d="M9.25 9.25h-2.5A1.75 1.75 0 0 0 5 11v2.5h1.5V11a.25.25 0 0 1 .25-.25h6.5a.25.25 0 0 1 .25.25v2.5H15V11a1.75 1.75 0 0 0-1.75-1.75h-2.5V7h-1.5z" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorOrg202)" fill-rule="evenodd" d="M9.25 9.25h-2.5A1.75 1.75 0 0 0 5 11v2.5h1.5V11a.25.25 0 0 1 .25-.25h6.5a.25.25 0 0 1 .25.25v2.5H15V11a1.75 1.75 0 0 0-1.75-1.75h-2.5V7h-1.5z" clip-rule="evenodd"></svg:path><svg:path fill="url(#fluentColorOrg203)" d="M8.75 15a3 3 0 1 1-6 0a3 3 0 0 1 6 0"></svg:path><svg:path fill="url(#fluentColorOrg204)" d="M17.25 15a3 3 0 1 1-6 0a3 3 0 0 1 6 0"></svg:path><svg:path fill="url(#fluentColorOrg205)" d="M13 5a3 3 0 1 1-6 0a3 3 0 0 1 6 0"></svg:path><svg:defs><svg:radialgradient id="fluentColorOrg200" cx="0" cy="0" r="1" gradientTransform="matrix(0 3.95312 -6.08173 0 10 5.047)" gradientUnits="userSpaceOnUse"><svg:stop offset=".553" stop-color="#70777D"></svg:stop><svg:stop offset="1" stop-color="#70777D" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorOrg201" cx="0" cy="0" r="1" gradientTransform="matrix(-.01562 -4.04688 6.22596 -.02404 5.5 15.016)" gradientUnits="userSpaceOnUse"><svg:stop offset=".549" stop-color="#70777D"></svg:stop><svg:stop offset="1" stop-color="#70777D" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorOrg202" cx="0" cy="0" r="1" gradientTransform="matrix(.03125 -4 6.15384 .04808 14.484 15)" gradientUnits="userSpaceOnUse"><svg:stop offset=".549" stop-color="#70777D"></svg:stop><svg:stop offset="1" stop-color="#70777D" stop-opacity="0"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorOrg203" cx="0" cy="0" r="1" gradientTransform="matrix(9.62493 13.06257 -11.1875 8.24332 -.875 5.312)" gradientUnits="userSpaceOnUse"><svg:stop offset=".529" stop-color="#1EC8B0"></svg:stop><svg:stop offset="1" stop-color="#1A7F7C"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorOrg204" cx="0" cy="0" r="1" gradientTransform="matrix(9.62493 13.06257 -11.1875 8.24332 7.625 5.312)" gradientUnits="userSpaceOnUse"><svg:stop offset=".529" stop-color="#7B7BFF"></svg:stop><svg:stop offset="1" stop-color="#4A43CB"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorOrg205" cx="0" cy="0" r="1" gradientTransform="matrix(9.62493 13.06257 -11.1875 8.24332 3.375 -4.688)" gradientUnits="userSpaceOnUse"><svg:stop offset=".529" stop-color="#0FAFFF"></svg:stop><svg:stop offset="1" stop-color="#0067BF"></svg:stop></svg:radialgradient><svg:lineargradient id="fluentColorOrg206" x1="5" x2="6.618" y1="7" y2="14.111" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#B9C0C7"></svg:stop><svg:stop offset="1" stop-color="#70777D"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class FluentColorOrg20Icon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

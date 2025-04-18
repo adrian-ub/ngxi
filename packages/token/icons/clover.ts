@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenCloverIcon],svg[token-clover-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.283 8.95a.3.3 0 0 0-.3.3v1.755H9.25a.3.3 0 0 0-.3.3v1.454a.3.3 0 0 0 .3.3h1.733v1.69a.3.3 0 0 0 .3.3h1.433a.3.3 0 0 0 .3-.3v-1.754h-2.033v-1.99h2.033v2.054h1.734a.3.3 0 0 0 .3-.3v-1.454a.3.3 0 0 0-.3-.3h-1.734V9.25a.3.3 0 0 0-.3-.3z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M7.32 3h9.36A4.32 4.32 0 0 1 21 7.32v9.36A4.32 4.32 0 0 1 16.68 21H7.32A4.32 4.32 0 0 1 3 16.68V7.32A4.32 4.32 0 0 1 7.32 3m10.44 9a5.76 5.76 0 1 1-11.52 0a5.76 5.76 0 0 1 11.52 0" clip-rule="evenodd"></svg:path>`,
+})
+export class TokenCloverIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedLsdIcon],svg[token-branded-lsd-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedLsd0)" d="M18.924 21c-3.234-3.611-5.31-5.063-7.2-5.063c-1.67 0-3.206 1.16-5.27 2.813l-.979-1.125C8.462 12.73 6.808 10.442 3.844 6.43l.973-1.181C9.58 8.231 13.018 9.671 17.867 3l1.204.832c-1.199 2.655-1.66 4.85-1.632 6.92c.04 3.037 1.215 5.804 2.717 9.365z"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedLsd0" x1="12" x2="12" y1="3" y2="21" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#6F76FB"></svg:stop><svg:stop offset="1" stop-color="#2730EC"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedLsdIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

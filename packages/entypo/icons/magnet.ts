@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoMagnetIcon],svg[entypo-magnet-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.165 17.86c-.028.309.217.584.545.611l3.985.326c.329.027.621-.203.65-.512l.311-3.287l-5.18-.426zm-9.821-2.861l.312 3.287c.028.309.321.539.65.512l3.985-.326c.328-.027.573-.303.546-.611l-.312-3.287zm-.513-5.416l.321 3.391l5.181-.426l-.322-3.387A3 3 0 0 1 7 8.911c0-1.555 1.346-2.82 3-2.82s3 1.266 3 2.82q0 .126-.012.25l-.321 3.387l5.181.426l.321-3.391q.03-.338.03-.672C18.2 4.659 14.522 1.2 10 1.2S1.8 4.659 1.8 8.911q0 .335.031.672"></svg:path>`,
+})
+export class EntypoMagnetIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

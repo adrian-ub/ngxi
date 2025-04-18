@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[f7LockCircleFillIcon],svg[f7-lock-circle-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M28 51.906c13.055 0 23.906-10.851 23.906-23.906c0-13.078-10.875-23.906-23.93-23.906C14.899 4.094 4.095 14.922 4.095 28c0 13.055 10.828 23.906 23.906 23.906M19.492 36.72v-9.375c0-1.524.586-2.297 1.852-2.485v-2.836c0-4.57 2.765-7.523 6.656-7.523s6.656 2.953 6.656 7.523v2.813c1.242.187 1.828.96 1.828 2.508v9.375c0 1.758-.773 2.554-2.39 2.554H21.906c-1.64 0-2.414-.796-2.414-2.554m4.29-11.907l8.437-.023v-3.023c0-2.953-1.688-4.899-4.22-4.899c-2.53 0-4.218 1.945-4.218 4.899Z"></svg:path>`,
+})
+export class F7LockCircleFillIcon {
+  readonly viewBox = input("0 0 56 56")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

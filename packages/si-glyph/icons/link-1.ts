@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphLink1Icon],svg[si-glyph-link-1-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="M5 7h6.979v.959H5z"></svg:path><svg:path d="M14.604 5h-4.219c-.743 0-1.35.591-1.35 1.318v2.344c0 .726.606 1.317 1.35 1.317h4.219c.744 0 1.348-.592 1.348-1.317V6.318C15.951 5.591 15.348 5 14.604 5m.42 3.679c0 .192-.171.348-.381.348h-4.318c-.21 0-.38-.155-.38-.348V6.302c0-.192.17-.349.38-.349h4.318c.21 0 .381.156.381.349zM6.621 5H2.377c-.749 0-1.357.591-1.357 1.318v2.344c0 .726.608 1.317 1.357 1.317h4.244c.748 0 1.356-.592 1.356-1.317V6.318C7.978 5.591 7.369 5 6.621 5m.428 3.662c0 .189-.172.343-.381.343H2.35c-.209 0-.381-.153-.381-.343V6.318c0-.189.172-.344.381-.344h4.318c.209 0 .381.154.381.344z"></svg:path></svg:g>`,
+})
+export class SiGlyphLink1Icon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}

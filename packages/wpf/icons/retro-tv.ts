@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[wpfRetroTvIcon],svg[wpf-retro-tv-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.875 0a1 1 0 0 0-.594.281L13 6.563L9.719 3.28A1.016 1.016 0 1 0 8.28 4.72L11.562 8H3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h20a3 3 0 0 0 3-3V11a3 3 0 0 0-3-3h-8.563l6.282-6.281A1 1 0 0 0 19.875 0M10.5 10c7.445 0 8.5.021 8.5 7c0 6.98-1.128 7-8.5 7c-7.406 0-8.5-.074-8.5-7c0-6.924 1.094-7 8.5-7m12 2.938c.866 0 1.563.696 1.563 1.562a1.56 1.56 0 0 1-1.563 1.563a1.56 1.56 0 0 1-1.563-1.563a1.56 1.56 0 0 1 1.563-1.563zm0 4c.866 0 1.563.696 1.563 1.562a1.56 1.56 0 0 1-1.563 1.563a1.56 1.56 0 0 1-1.563-1.563a1.56 1.56 0 0 1 1.563-1.563z"></svg:path>`,
+})
+export class WpfRetroTvIcon {
+  readonly viewBox = input("0 0 26 26")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

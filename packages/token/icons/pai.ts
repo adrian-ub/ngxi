@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenPaiIcon],svg[token-pai-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.757 7.864a3.405 3.405 0 1 0 0 6.81a3.405 3.405 0 0 0 0-6.81m-4.865 3.405a4.865 4.865 0 1 1 9.73 0a4.865 4.865 0 0 1-9.73 0"></svg:path><svg:path fill="currentColor" d="M7.622 10.541a.73.73 0 0 1 .73.73v9a.73.73 0 0 1-1.46 0v-9a.73.73 0 0 1 .73-.73m8.27 0a.73.73 0 0 1 .73.73v4.621a.73.73 0 0 1-1.46 0v-4.621a.73.73 0 0 1 .73-.73m0-5.109a1.216 1.216 0 1 0 0-2.432a1.216 1.216 0 0 0 0 2.432"></svg:path>`,
+})
+export class TokenPaiIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsBusketBallIcon],svg[lineicons-busket-ball-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 2.5c-5.523 0-10 4.477-10 10s4.477 10 10 10s10-4.477 10-10s-4.477-10-10-10M6.598 5.937a8.46 8.46 0 0 1 4.652-1.904v3.809a8.46 8.46 0 0 1-4.652-1.905M5.524 6.994a9.96 9.96 0 0 0 5.726 2.353v2.403H3.533a8.46 8.46 0 0 1 1.99-4.756m7.226 2.353a9.96 9.96 0 0 0 5.726-2.353a8.46 8.46 0 0 1 1.991 4.756H12.75zm4.652-3.41a8.46 8.46 0 0 1-4.652 1.905v-3.81a8.46 8.46 0 0 1 4.652 1.905M3.532 13.25h7.718v2.402a9.96 9.96 0 0 0-5.727 2.353a8.46 8.46 0 0 1-1.99-4.755m3.065 5.812a8.46 8.46 0 0 1 4.653-1.905v3.81a8.46 8.46 0 0 1-4.653-1.905m6.153-1.905a8.46 8.46 0 0 1 4.653 1.905a8.46 8.46 0 0 1-4.653 1.905zm5.727.848a9.96 9.96 0 0 0-5.727-2.353V13.25h7.717a8.46 8.46 0 0 1-1.99 4.755"></svg:path>`,
+})
+export class LineiconsBusketBallIcon {
+  readonly viewBox = input("0 0 24 25")
+  readonly width = input("0.96em")
+  readonly height = input("1em")
+}

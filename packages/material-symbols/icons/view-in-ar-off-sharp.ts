@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsViewInArOffSharpIcon],svg[material-symbols-view-in-ar-off-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m20.45 23.3l-1.3-1.3H17v-2h.35v.2L3.65 6.5H4V7H2V4.85L.65 3.5l1.425-1.425l19.8 19.8zM22 19.15l-2-2V17h2zM6.85 4l-2-2H7v2zM2 22v-5h2v3h3v2zM20 7V4h-3V2h5v5zm-1 9.15l-4.475-4.475L17 10.25V9.125l-1.05-.6l-2.875 1.7L8.7 5.85l3.3-1.9l7 4.025zm-7 3.9l-7-4.025v-8.05L6.9 6.9l2.3 2.3l-1.15-.675l-1.05.6v1.125l4 2.325v4.6l1 .575l1-.575V13l4.1 4.1z"></svg:path>`,
+})
+export class MaterialSymbolsViewInArOffSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

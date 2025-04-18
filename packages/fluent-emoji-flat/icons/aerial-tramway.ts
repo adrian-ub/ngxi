@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatAerialTramwayIcon],svg[fluent-emoji-flat-aerial-tramway-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#D3D3D3" d="M28.988 2.846a1 1 0 0 1-.834 1.142l-24 3.75a1 1 0 1 1-.308-1.976l24-3.75a1 1 0 0 1 1.142.834"></svg:path><svg:path fill="#636363" d="M22.154 4.926a1 1 0 0 0-.308-1.976l-12.5 1.953a1 1 0 0 0 .308 1.976L15 6.043V13h2V5.73z"></svg:path><svg:path fill="#FF9F2E" d="M20.999 30H11a2 2 0 0 1-2-2.001v-4.99l3-4.509l-3-4.499A2 2 0 0 1 11.001 12H21a2 2 0 0 1 2 2.001L20 18.5l3 4.5v4.999A2 2 0 0 1 20.999 30"></svg:path><svg:path fill="#86D72F" d="M23 26H9v2h14z"></svg:path><svg:path fill="#26C9FC" d="M14.07 23H9v-9h5.07c.51 0 .93.38.93.86v7.279c0 .47-.42.861-.93.861m3.86-9H23v9h-5.07c-.51 0-.93-.38-.93-.861v-7.278c0-.47.42-.861.93-.861"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatAerialTramwayIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

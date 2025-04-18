@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiClubSuitIcon],svg[fluent-emoji-club-suit-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:g filter="url(#f291id1)"><svg:path fill="url(#f291id0)" d="M23.767 23.426c3.448-.17 6.243-2.941 6.375-6.323c.153-3.772-2.917-6.874-6.722-6.874h-.01a.596.596 0 0 1-.602-.68c.062-.41.082-.83.062-1.27c-.174-3.403-3-6.144-6.467-6.274c-3.835-.14-6.987 2.871-6.987 6.593c0 .32.02.64.071.95c.051.361-.245.661-.602.661h-.01c-3.805 0-6.875 3.102-6.722 6.874c.133 3.392 2.928 6.153 6.375 6.323c2 .1 3.825-.66 5.12-1.94c.174-.17.46-.05.46.18v1.26c0 2.101-1.714 3.812-3.856 3.852h-.03c-.908 0-1.694.7-1.714 1.591c-.02.91.734 1.651 1.652 1.651h11.944c.715 0 1.367-.44 1.571-1.1c.357-1.121-.49-2.142-1.57-2.142h-.082c-2.132-.04-3.856-1.75-3.856-3.852v-1.26c0-.24.296-.35.46-.18a6.8 6.8 0 0 0 5.14 1.96"></svg:path></svg:g><svg:defs><svg:lineargradient id="f291id0" x1="24.465" x2="11.602" y1="11.078" y2="29.196" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#534165"></svg:stop><svg:stop offset="1" stop-color="#3F3946"></svg:stop></svg:lineargradient><svg:filter id="f291id1" width="29.75" height="29.5" x="1.148" y="1.25" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><svg:feflood flood-opacity="0" result="BackgroundImageFix"></svg:feflood><svg:feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></svg:feblend><svg:fecolormatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></svg:fecolormatrix><svg:feoffset dx="-1"></svg:feoffset><svg:fegaussianblur stdDeviation=".5"></svg:fegaussianblur><svg:fecomposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"></svg:fecomposite><svg:fecolormatrix values="0 0 0 0 0.427451 0 0 0 0 0.372549 0 0 0 0 0.482353 0 0 0 1 0"></svg:fecolormatrix><svg:feblend in2="shape" result="effect1_innerShadow_18_4053"></svg:feblend><svg:fecolormatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></svg:fecolormatrix><svg:feoffset dx=".75" dy="-.75"></svg:feoffset><svg:fegaussianblur stdDeviation=".625"></svg:fegaussianblur><svg:fecomposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"></svg:fecomposite><svg:fecolormatrix values="0 0 0 0 0.172549 0 0 0 0 0.109804 0 0 0 0 0.227451 0 0 0 1 0"></svg:fecolormatrix><svg:feblend in2="effect1_innerShadow_18_4053" result="effect2_innerShadow_18_4053"></svg:feblend><svg:fecolormatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></svg:fecolormatrix><svg:feoffset dx=".75" dy=".75"></svg:feoffset><svg:fegaussianblur stdDeviation=".625"></svg:fegaussianblur><svg:fecomposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"></svg:fecomposite><svg:fecolormatrix values="0 0 0 0 0.196078 0 0 0 0 0.192157 0 0 0 0 0.2 0 0 0 1 0"></svg:fecolormatrix><svg:feblend in2="effect2_innerShadow_18_4053" result="effect3_innerShadow_18_4053"></svg:feblend></svg:filter></svg:defs></svg:g>`,
+})
+export class FluentEmojiClubSuitIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

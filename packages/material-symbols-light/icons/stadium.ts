@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightStadiumIcon],svg[material-symbols-light-stadium-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.462 7V3.616l3.384 1.692zm12.692 0V3.616l3.384 1.692zm-5.923-.846V2.769l3.385 1.693zM9.5 21.24q-1.434-.106-2.646-.327t-2.094-.536t-1.378-.712q-.498-.399-.498-.858v-8.231q0-.529.682-.98t1.897-.787t2.887-.534T12 8.077t3.65.199t2.887.535t1.897.786t.681.98v8.23q0 .46-.497.859t-1.378.712t-2.094.536t-2.646.326v-4.432h-5zm2.5-9.164q2.483 0 4.649-.393t3.236-1.038q-.327-.529-2.39-1.049T12 9.077t-5.494.52t-2.39 1.05q1.068.644 3.014 1.037t4.87.393"></svg:path>`,
+})
+export class MaterialSymbolsLightStadiumIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

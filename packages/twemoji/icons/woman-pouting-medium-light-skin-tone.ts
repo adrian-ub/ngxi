@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiWomanPoutingMediumLightSkinToneIcon],svg[twemoji-woman-pouting-medium-light-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FFE51E" d="M19 0c-1.721 0-3.343.406-4.793 1.111A7 7 0 0 0 13 1a7 7 0 0 0-7 7v12h.018C6.201 26.467 11.489 31.656 18 31.656S29.799 26.467 29.982 20H30v-9c0-6.075-4.925-11-11-11"></svg:path><svg:path fill="#9268CA" d="M27 27H9a4 4 0 0 0-4 4v5h26v-5a4 4 0 0 0-4-4"></svg:path><svg:path fill="#F3D2A2" d="M15 22v6a3 3 0 1 0 6 0v-6z"></svg:path><svg:path fill="#F3D2A2" d="M9 5v12c0 4.971 4.029 9 9 9s9-4.029 9-9V5z"></svg:path><svg:path fill="#FFE51E" d="M27.999 5L26 4H8v7c6 0 6-6 6-6s2 7 14 7z"></svg:path><svg:path fill="#7450A8" d="M9 32h1v4H9zm17 0h1v4h-1z"></svg:path><svg:circle cx="18" cy="23" r="1" fill="#DF1F32"></svg:circle><svg:path fill="#662113" d="M14 16a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1m8 0a1 1 0 0 1-1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 1-1 1"></svg:path><svg:path fill="#C1694F" d="M19 19.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 0 1"></svg:path>`,
+})
+export class TwemojiWomanPoutingMediumLightSkinToneIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

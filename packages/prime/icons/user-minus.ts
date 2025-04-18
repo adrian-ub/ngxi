@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[primeUserMinusIcon],svg[prime-user-minus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 12.75A3.75 3.75 0 1 1 15.75 9A3.75 3.75 0 0 1 12 12.75m0-6A2.25 2.25 0 1 0 14.25 9A2.25 2.25 0 0 0 12 6.75m7 13a.76.76 0 0 1-.75-.75c0-1.95-1.06-3.25-6.25-3.25S5.75 17.05 5.75 19a.75.75 0 0 1-1.5 0c0-4.75 5.43-4.75 7.75-4.75s7.75 0 7.75 4.75a.76.76 0 0 1-.75.75m1.75-7h-3.5a.75.75 0 0 1 0-1.5h3.5a.75.75 0 0 1 0 1.5"></svg:path>`,
+})
+export class PrimeUserMinusIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

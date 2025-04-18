@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightRemoteGenIcon],svg[material-symbols-light-remote-gen-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.5 22.116q-.666 0-1.14-.475q-.476-.475-.476-1.141v-17q0-.666.475-1.14q.475-.475 1.141-.475h7q.666 0 1.14.474q.476.475.476 1.141v17q0 .666-.475 1.14q-.475.476-1.141.476zM11.998 9.5q1.04 0 1.771-.728t.731-1.77t-.728-1.771t-1.77-.731t-1.771.729T9.5 6.998t.729 1.771t1.769.731m.002-1q-.617 0-1.059-.441Q10.5 7.617 10.5 7t.441-1.059Q11.383 5.5 12 5.5t1.059.441T13.5 7t-.441 1.059Q12.617 8.5 12 8.5m-1.804 5.116q.345 0 .574-.234t.23-.578t-.233-.574t-.578-.23t-.574.233t-.23.578t.233.575t.578.23m3.615 0q.345 0 .575-.234q.23-.233.23-.578t-.234-.574t-.578-.23t-.574.233t-.23.578t.233.575t.578.23m-3.615 3q.345 0 .574-.234t.23-.578t-.233-.574t-.578-.23t-.574.233t-.23.578t.233.575t.578.23m3.615 0q.345 0 .575-.234q.23-.233.23-.578t-.234-.574t-.578-.23t-.574.233t-.23.578t.233.575t.578.23m-3.615 3q.345 0 .574-.234t.23-.578t-.233-.574t-.578-.23t-.574.233t-.23.578t.233.575t.578.23m3.615 0q.345 0 .575-.234q.23-.233.23-.578t-.234-.574t-.578-.23t-.574.233t-.23.578t.233.575t.578.23"></svg:path>`,
+})
+export class MaterialSymbolsLightRemoteGenIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsConciergeIcon],svg[material-symbols-concierge-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 22v-2h13v2zm1-3q0-2.025 1.275-3.537T15.5 13.6v-.625q0-.425.288-.712t.712-.288t.713.288t.287.712v.625q1.925.35 3.213 1.863T22 19zM1 13h4V2H1zm6 0h1.975l7.05-2.625q.425-.175.7-.562T17 8.95q0-.4-.275-.675T16.05 8H13l-1.75.675l-.35-.925L13 7h7q.8 0 1.4-.575T22 5l-8-3l-7 1.95z"></svg:path>`,
+})
+export class MaterialSymbolsConciergeIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

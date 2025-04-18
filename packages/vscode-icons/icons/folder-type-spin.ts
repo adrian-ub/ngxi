@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFolderTypeSpinIcon],svg[vscode-icons-folder-type-spin-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#999" d="M27.35 5.542h-9.227l-2.083 4.2H4.433v16.8h25v-21zm0 4.2h-8.135l1.091-2.1h7.044z"></svg:path><svg:path d="M20.91 14.457h1.687v16.297H20.91z"></svg:path><svg:path d="M23.813 15.81a6.738 6.774 0 0 0-6.739 6.775a6.738 6.774 0 0 0 6.739 6.774a6.738 6.774 0 0 0 6.738-6.774a6.738 6.774 0 0 0-6.738-6.775m.02 1.628a5.14 5.168 0 0 1 5.141 5.167a5.14 5.168 0 0 1-5.14 5.168a5.14 5.168 0 0 1-5.14-5.169a5.14 5.168 0 0 1 5.14-5.166"></svg:path>`,
+})
+export class VscodeIconsFolderTypeSpinIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

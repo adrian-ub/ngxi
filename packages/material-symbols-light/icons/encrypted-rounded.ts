@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightEncryptedRoundedIcon],svg[material-symbols-light-encrypted-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.466 14.5h1.069q.181 0 .318-.151q.136-.152.086-.334l-.475-2.606q.442-.153.73-.544q.287-.392.287-.865q0-.61-.436-1.046t-1.047-.435t-1.045.435T10.519 10q0 .473.288.865q.287.39.73.544l-.475 2.606q-.05.182.086.333t.318.152M12 20.842q-.136 0-.287-.025t-.28-.075Q8.48 19.617 6.74 16.926T5 11.1V6.817q0-.514.293-.926q.292-.412.757-.597l5.385-2q.292-.106.565-.106t.566.106l5.384 2q.464.186.757.597q.293.412.293.926V11.1q0 3.135-1.74 5.826t-4.692 3.816q-.131.05-.281.075t-.287.025"></svg:path>`,
+})
+export class MaterialSymbolsLightEncryptedRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

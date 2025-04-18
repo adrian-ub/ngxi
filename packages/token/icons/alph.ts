@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenAlphIcon],svg[token-alph-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.294 4.36a.68.68 0 0 0-.683-.353l-3.161.534c-.267.042-.384.266-.272.506l6.995 14.593a.685.685 0 0 0 .688.352l3.156-.533c.267-.043.384-.267.273-.506zM9.867 14.9c0-.229-.191-.389-.431-.352l-2.864.459a.52.52 0 0 0-.437.49v5.146c0 .229.197.389.437.352l2.864-.459a.52.52 0 0 0 .431-.49zm7.998-11.537c0-.235-.192-.395-.432-.358l-2.869.459a.52.52 0 0 0-.431.49V9.1c0 .229.192.389.431.352l2.869-.459a.52.52 0 0 0 .432-.49V3.357z"></svg:path>`,
+})
+export class TokenAlphIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

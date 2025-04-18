@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixPhotoCameraAddIcon],svg[ix-photo-camera-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M426.667 320v64h64v42.667h-64v64H384v-64h-64V384h64v-64zm-128-245.333l38.394 53.324l89.606.01v170.666H384V170.646l-71.097.01l-38.407-53.322h-79.701l-38.37 53.333H85.333V384h213.333v42.667h-256V128h89.6l38.4-53.333zm-64 117.333C281.795 192 320 230.205 320 277.334c0 47.128-38.205 85.333-85.333 85.333s-85.333-38.205-85.333-85.333S187.539 192 234.667 192m0 42.667c-23.564 0-42.667 19.103-42.667 42.667S211.103 320 234.667 320s42.667-19.102 42.667-42.666s-19.103-42.667-42.667-42.667M341.334 192c11.782 0 21.333 9.552 21.333 21.334s-9.551 21.333-21.333 21.333S320 225.116 320 213.334S329.552 192 341.334 192"></svg:path>`,
+})
+export class IxPhotoCameraAddIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

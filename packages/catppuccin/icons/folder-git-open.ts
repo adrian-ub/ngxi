@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[catppuccinFolderGitOpenIcon],svg[catppuccin-folder-git-open-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#cad3f5" d="m1.875 8l.686-2.743a1 1 0 0 1 .97-.757h10.938a1 1 0 0 1 .97 1.243l-.315 1.26M6 13.5H2.004A1.5 1.5 0 0 1 .5 12V3.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1"></svg:path><svg:path stroke="#f5a97f" d="M10.5 10.5v3m-.75-4.75L8 7m4.75 4.75l-1.5-1.5m-.75 5.25a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0-5a1 1 0 1 0 0-2a1 1 0 0 0 0 2m3 3a1 1 0 1 0 0-2a1 1 0 0 0 0 2"></svg:path></svg:g>`,
+})
+export class CatppuccinFolderGitOpenIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

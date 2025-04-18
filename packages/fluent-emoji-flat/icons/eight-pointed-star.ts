@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiFlatEightPointedStarIcon],svg[fluent-emoji-flat-eight-pointed-star-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#FF9F2E" d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"></svg:path><svg:path fill="#fff" d="M15.757 7c.062-.254.424-.254.486 0l1.207 4.972a.25.25 0 0 0 .373.154l4.369-2.661c.224-.137.48.12.343.343l-2.661 4.369a.25.25 0 0 0 .154.373L25 15.757c.255.062.255.424 0 .486l-4.97 1.207a.25.25 0 0 0-.155.373l2.661 4.369c.137.224-.12.48-.343.343l-4.369-2.661a.25.25 0 0 0-.373.154L16.243 25c-.062.255-.424.255-.486 0l-1.207-4.97a.25.25 0 0 0-.373-.155l-4.369 2.661c-.224.137-.48-.12-.343-.343l2.661-4.369a.25.25 0 0 0-.154-.373L7 16.243c-.255-.062-.255-.424 0-.486l4.97-1.207a.25.25 0 0 0 .155-.373l-2.66-4.369c-.137-.224.12-.48.343-.343l4.369 2.661a.25.25 0 0 0 .373-.154z"></svg:path></svg:g>`,
+})
+export class FluentEmojiFlatEightPointedStarIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLightbulb32RegularIcon],svg[fluent-lightbulb-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 12a8 8 0 1 1 13.308 5.986c-.568.504-1.067 1.188-1.262 2.033L19.358 23h-6.716l-.688-2.981c-.195-.845-.694-1.53-1.262-2.033A7.98 7.98 0 0 1 8 12m5.103 13h5.794l-.424 1.837A1.5 1.5 0 0 1 17.01 28h-2.02a1.5 1.5 0 0 1-1.462-1.163zM16 2C10.477 2 6 6.477 6 12a9.98 9.98 0 0 0 3.365 7.482c.343.304.561.645.64.986l1.573 6.819A3.5 3.5 0 0 0 14.988 30h2.023a3.5 3.5 0 0 0 3.41-2.713l1.574-6.818c.079-.342.297-.683.64-.987A9.98 9.98 0 0 0 26 12c0-5.523-4.477-10-10-10"></svg:path>`,
+})
+export class FluentLightbulb32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

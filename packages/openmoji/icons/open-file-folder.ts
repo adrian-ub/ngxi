@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiOpenFileFolderIcon],svg[openmoji-open-file-folder-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#9b9b9a" d="M15.464 59.626c.14-.169 2.356-7.826 2.9-9.627c.457-1.513 3.962-15.27 6.16-25.07c.008-.132 32.484-.614 32.484-.614v-7.367l-27.493-.571c-.08-1.236-1.004-4.122-2.137-4.122l-12.587-.198c-1.103 0-2.832 1.34-2.832 2.444c0 0-.25 36.183-.25 44.977c0 1.328 3.734.174 3.755.148"></svg:path><svg:path fill="#d0cfce" d="M23.944 24.315q0 .117-.025.232c-.275 1.226-6.735 30.042-7.363 32.124a9.8 9.8 0 0 1-1.765 3.291l43.112.01c1.138 0 1.521 0 2.152-2.39c.667-2.53 6.698-30.269 7.342-33.232l.006-.035z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M57.008 20.304v-3.356l-27.338-.002a.364.364 0 0 1-.36-.369l-.068-1.517c-.116-1.787-1.34-3.003-2.996-3.003H14.959a3 3 0 0 0-3 3V56"></svg:path><svg:path d="M17.027 55.568c-.59 1.954-2.972 4.139-4.646 4.394l44.665.01c1.657 0 2.323-.438 3-3s7-31.657 7-31.657a1 1 0 0 0-1-1H24.965a1 1 0 0 0-1 1s-6.348 28.299-6.938 30.253"></svg:path></svg:g>`,
+})
+export class OpenmojiOpenFileFolderIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

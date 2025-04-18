@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiDomainOffIcon],svg[mdi-domain-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 19h4l-2-2h-2zm-2-4v-2H8v2zm0 4v-2H8v2zm-4-8V9H4v2zm0 4v-2H4v2zm0 4v-2H4v2zM1.31 1.78l21 20.91L21 24l-3-3H2V5L.09 3.09zM16 11h2v2h-2zM8 5v.91L5.11 3H12v4h10v12.92l-2-2.01V9h-8v.89L9.09 7H10V5z"></svg:path>`,
+})
+export class MdiDomainOffIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

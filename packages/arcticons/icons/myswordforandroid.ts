@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[arcticonsMyswordforandroidIcon],svg[arcticons-myswordforandroid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m16.32 28.52l-9.74-9.74a1.66 1.66 0 0 1 0-2.35L17 6a1.66 1.66 0 0 1 2.35 0l9.42 9.41m3.9 3.88l9.77 9.76a1.66 1.66 0 0 1 0 2.35L32 41.84a1.66 1.66 0 0 1-2.35 0L19.32 31.52M8.61 20.81l12.8-12.79m6.03 31.62l12.79-12.79M11.58 14.67l3.69-3.69"></svg:path><svg:circle cx="10.06" cy="16.19" r=".65" fill="currentColor"></svg:circle><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m9.84 27.07l.09 2.2l8.39 8.55l2.31.24m-6.45-4.47l-8.03 7.89m-1-1.02l2 2.04"></svg:path><svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m12.82 32.21l21.9-23.06l7.74-3.33l-3.47 7.68l-23.45 21.48"></svg:path>`,
+})
+export class ArcticonsMyswordforandroidIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

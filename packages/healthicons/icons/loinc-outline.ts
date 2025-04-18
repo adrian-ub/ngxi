@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[healthiconsLoincOutlineIcon],svg[healthicons-loinc-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M24 20.023h-2v8h2zm3.535 0L30 23.72v-3.697h2v8h-1.535L28 24.326v3.697h-2v-8zm10.921 2.2l.864.502l1.005-1.73l-.865-.502a4.155 4.155 0 0 0-5.538 1.284a4.153 4.153 0 0 0 5.538 5.898l.865-.502l-1.005-1.73l-.864.503a2.155 2.155 0 0 1-2.871-.666a2.153 2.153 0 0 1 2.87-3.058"></svg:path><svg:path fill-rule="evenodd" d="M13 24.023a4 4 0 1 1 8 0a4 4 0 0 1-8 0m4-2a2 2 0 1 0 0 4a2 2 0 0 0 0-4" clip-rule="evenodd"></svg:path><svg:path d="M10 20.023H8v8h4.5v-2H10z"></svg:path><svg:path fill-rule="evenodd" d="M4 13a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v22a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3zm3-1h34a1 1 0 0 1 1 1v22a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V13a1 1 0 0 1 1-1" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class HealthiconsLoincOutlineIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}

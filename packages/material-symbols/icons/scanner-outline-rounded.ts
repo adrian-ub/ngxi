@@ -1,0 +1,18 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsScannerOutlineRoundedIcon],svg[material-symbols-scanner-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.6 12L4.45 7.25q-.4-.15-.575-.525T3.85 5.95t.525-.575t.775-.025L19.8 10.7q.5.2.85.7t.35 1.1V18q0 .825-.587 1.413T19 20H5q-.825 0-1.412-.587T3 18v-4q0-.825.588-1.412T5 12zm1.4 6v-4H5v4zm-8-1h6q.425 0 .713-.288T18 16t-.288-.712T17 15h-6q-.425 0-.712.288T10 16t.288.713T11 17m-4 0q.425 0 .713-.288T8 16t-.288-.712T7 15t-.712.288T6 16t.288.713T7 17m-2 1v-4z"></svg:path>`,
+})
+export class MaterialSymbolsScannerOutlineRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
