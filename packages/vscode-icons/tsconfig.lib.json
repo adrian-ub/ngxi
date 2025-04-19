@@ -7,6 +7,11 @@
     "inlineSources": true,
     "outDir": "dist/out-tsc"
   },
-  "include": ["**/*.ts"],
-  "exclude": ["**/*.spec.ts", "**/*.test.ts"]
+  "files": [
+    "index.ts"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
 }
