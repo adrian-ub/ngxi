@@ -11,7 +11,7 @@
     "prepublishOnly": "nr build",
     "release": "bumpp -r --excute=\"pnpm i\"",
     "test": "vitest",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "pnpm -r run typecheck",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
