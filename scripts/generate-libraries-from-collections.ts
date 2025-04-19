@@ -2,7 +2,6 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { lookupCollection } from '@iconify/json'
-import { execa } from 'execa'
 import pLimit from 'p-limit'
 
 import collections from '~~/collections'
@@ -34,8 +33,6 @@ async function generateLibrariesFromCollections() {
   })
 
   await Promise.all(tasks)
-
-  execa('eslint', ['--fix', '--no-ignore', ...libraries])
 }
 
 async function verifyIsLibraryExists(name: string) {
