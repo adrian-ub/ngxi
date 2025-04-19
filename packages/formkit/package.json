@@ -13,7 +13,8 @@
   "bugs": "https://github.com/adrian-ub/ngxi/issues",
   "sideEffects": false,
   "scripts": {
-    "build": "ng-packagr -p ng-package.json"
+    "build": "ng-packagr -p ng-package.json",
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "@angular/core": "^17.0.0 || ^18.0.0 || ^19.0.0"
