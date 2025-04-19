@@ -7,7 +7,6 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const ICONIFY_COLLECTION = path.resolve(__dirname, '../collections.ts')
-const PACKAGE_JSON = path.resolve(__dirname, '../package.json')
 
 async function update() {
   try {
@@ -27,8 +26,6 @@ async function update() {
       `export default ${JSON.stringify(collections)}`,
       'utf-8',
     )
-
-    execa('eslint', ['--fix', '--no-ignore', ICONIFY_COLLECTION, PACKAGE_JSON])
   }
   catch (err) {
     console.log(err)

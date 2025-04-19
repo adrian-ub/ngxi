@@ -1,7 +1,6 @@
 import * as fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { execa } from 'execa'
 
 import iconsets from '~~/collections'
 
@@ -24,8 +23,6 @@ async function updateReadme() {
   const updatedContent = updateReadmeContent(currentContent, table, newLinks)
 
   await fs.writeFile(README, updatedContent, 'utf-8')
-
-  execa('eslint', ['--fix', '--no-ignore', README])
 }
 
 function generateTable(iconsets: string[]): string {
