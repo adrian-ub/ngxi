@@ -1,12 +1,17 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "<%= rootTsConfig %>",
   "compilerOptions": {
     "types": [],
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "outDir": "dist/out-tsc",
+    "outDir": "dist/out-tsc"
   },
-  "include": ["**/*.ts"],
-  "exclude": ["**/*.spec.ts", "**/*.test.ts"]
+  "files": [
+    "index.ts"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
 }
