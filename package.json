@@ -5,7 +5,7 @@
   "private": true,
   "packageManager": "pnpm@10.8.0",
   "scripts": {
-    "build": "pnpm -r run build",
+    "build": "pnpm -r --workspace-concurrency=1 run build",
     "lint": "eslint --cache .",
     "lint:fix": "nr lint --fix",
     "prepublishOnly": "nr build",
