@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M12 5a3 3 0 1 0-5.997.142a4 4 0 0 0-2.526 5.77a4 4 0 0 0 .556 6.588a4 4 0 0 0 7.636 2.106a3 3 0 0 0 .164-.546c.028-.13.306-.13.335 0a3 3 0 0 0 .163.546a4 4 0 0 0 7.636-2.106a4 4 0 0 0 .556-6.588a4 4 0 0 0-2.526-5.77A3 3 0 1 0 12 5"></svg:path><svg:path d="M17.599 6.5a3 3 0 0 0 .399-1.375m-11.995 0A3 3 0 0 0 6.401 6.5m-2.924 4.396a4 4 0 0 1 .585-.396m15.876 0a4 4 0 0 1 .585.396M6 18a4 4 0 0 1-1.967-.516m15.934 0A4 4 0 0 1 18 18"></svg:path><svg:circle cx="12" cy="12" r="3"></svg:circle><svg:path d="m15.7 10.4l-.9.4m-5.6 2.4l-.9.4m5.3 2.1l-.4-.9m-2.4-5.6l-.4-.9m5.3 5.2l-.9-.4m-5.6-2.2l-.9-.4m2.2 5.2l.4-.9m2.2-5.6l.4-.9"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m10.852 14.772l-.383.923m.383-6.467l-.383-.923m2.679 6.467l.382.924m.001-7.391l-.383.923m1.624 1.624l.923-.383m-.923 2.679l.923.383M17.598 6.5A3 3 0 1 0 12 5a3 3 0 0 0-5.63-1.446a3 3 0 0 0-.368 1.571a4 4 0 0 0-2.525 5.771"></svg:path><svg:path d="M17.998 5.125a4 4 0 0 1 2.525 5.771"></svg:path><svg:path d="M19.505 10.294a4 4 0 0 1-1.5 7.706"></svg:path><svg:path d="M4.032 17.483A4 4 0 0 0 11.464 20c.18-.311.892-.311 1.072 0a4 4 0 0 0 7.432-2.516"></svg:path><svg:path d="M4.5 10.291A4 4 0 0 0 6 18m.002-12.875a3 3 0 0 0 .4 1.375m2.826 4.352l-.923-.383m.923 2.679l-.923.383"></svg:path><svg:circle cx="12" cy="12" r="3"></svg:circle></svg:g>`,
 })
 export class LucideBrainCogIcon {
   readonly viewBox = input("0 0 24 24")
