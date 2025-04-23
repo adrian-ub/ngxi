@@ -15,6 +15,10 @@ catalogs:
     tslib:
       specifier: ^2.3.0
       version: 2.8.1
+  default:
+    '@iconify/json':
+      specifier: ^2.2.329
+      version: 2.2.330
   dev:
     '@antfu/eslint-config':
       specifier: ^4.12.0
@@ -98,7 +102,7 @@ importers:
         specifier: catalog:dev
         version: 24.3.0
       '@iconify/json':
-        specifier: ^2.2.330
+        specifier: 'catalog:'
         version: 2.2.330
       '@iconify/types':
         specifier: catalog:dev
