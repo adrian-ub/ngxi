@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m14 5l-3 3l2 7l8-8z"></svg:path><svg:path d="m14 5l-3 3l-3-3l3-3z"></svg:path><svg:path d="M9.5 6.5L4 12l3 6m-4 4v-2c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2v2z"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M10.293 2.293a1 1 0 0 1 1.414 0l2.5 2.5l5.994 1.227a1 1 0 0 1 .506 1.687l-7 7a1 1 0 0 1-1.687-.506l-1.227-5.994l-2.5-2.5a1 1 0 0 1 0-1.414zm3.914 2.5l-3.414 3.414M3 20a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"></svg:path><svg:path d="m9.086 6.5l-4.793 4.793a1 1 0 0 0-.18 1.17L7 18"></svg:path></svg:g>`,
 })
 export class LucideLampDeskIcon {
   readonly viewBox = input("0 0 24 24")
