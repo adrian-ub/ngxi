@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 1H3v22h2v-9.5h5v.145a3.5 3.5 0 0 1 1-.145h3v.145a3.5 3.5 0 0 1 1-.145h1a3.5 3.5 0 0 1 1 .145V13.5h4V9h-8z"></svg:path><svg:path fill="currentColor" d="M21 7v-.414L15.414 1H15v6zM8.5 23v-8h-2v8zm2.5-8a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1.5v-2H11v-4h1.5v-2zm4 0a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2zm0 6v-4h1v4zm6.5-6h-3v8h2v-6h1v6h2v-6a2 2 0 0 0-2-2"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M13.5 18v-4h.5v4z"></svg:path><svg:path fill="currentColor" d="M15.414 1H3v22h18v-3h-2v-6h-.5v6h-2v-8h2.75c.966 0 1.75.784 1.75 1.75V6.586zM14.5 7.5V3L19 7.5zM7 12v8H5v-8zm2.5 2v4H11v2H9.25a1.75 1.75 0 0 1-1.75-1.75v-4.5c0-.966.784-1.75 1.75-1.75H11v2zm3.75-2h1c.966 0 1.75.784 1.75 1.75v4.5A1.75 1.75 0 0 1 14.25 20h-1a1.75 1.75 0 0 1-1.75-1.75v-4.5c0-.966.784-1.75 1.75-1.75"></svg:path>`,
 })
 export class TdesignFileIconFilledIcon {
   readonly viewBox = input("0 0 24 24")

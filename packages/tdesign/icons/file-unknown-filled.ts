@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 1H3v22h10.846A6.5 6.5 0 0 1 21 12.232V9h-8z"></svg:path><svg:path fill="currentColor" d="M21 7v-.414L15.414 1H15v6zm-4.5 9.249c0-.593.57-1.249 1.5-1.249s1.5.656 1.5 1.249c0 .303-.132.599-.388.834L17 19.076v1.546h2v-.683l1.473-1.39c.62-.575 1.027-1.385 1.027-2.3C21.5 14.358 19.83 13 18 13s-3.5 1.358-3.5 3.249v1h2zm2.503 5.747h-2.004V24h2.004z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M15.414 1H3v22h10.846A6.5 6.5 0 0 1 21 12.232V6.586zM14.5 7.5V3L19 7.5z"></svg:path><svg:path fill="currentColor" d="M18 15c-.93 0-1.5.656-1.5 1.249v1h-2v-1C14.5 14.358 16.17 13 18 13s3.5 1.358 3.5 3.249a3.13 3.13 0 0 1-1.027 2.3L19 19.939v.683h-2v-1.546l2.112-1.993c.256-.235.388-.53.388-.834c0-.593-.57-1.249-1.5-1.249m-1 6.996h2.003V24h-2.004z"></svg:path>`,
 })
 export class TdesignFileUnknownFilledIcon {
   readonly viewBox = input("0 0 24 24")

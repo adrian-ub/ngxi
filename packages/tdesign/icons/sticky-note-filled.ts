@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M2 2v20h11v-9h9V2zm16 6v2H6V8zm-7 4v2H6v-2z"></svg:path><svg:path fill="currentColor" d="M15 21.414L21.414 15H15z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-opacity=".9" d="M16.414 22H2V2h20v14.414zm-.914-6.5V20l4.5-4.5zM18 10V8H6v2zm-7 4v-2H6v2z"></svg:path>`,
 })
 export class TdesignStickyNoteFilledIcon {
   readonly viewBox = input("0 0 24 24")

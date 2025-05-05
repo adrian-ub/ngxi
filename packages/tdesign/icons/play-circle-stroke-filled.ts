@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1m6.25 11L8.5 6.37v11.26z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-opacity=".9" d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1m4.75 11l-8-4.5v9z"></svg:path>`,
 })
 export class TdesignPlayCircleStrokeFilledIcon {
   readonly viewBox = input("0 0 24 24")

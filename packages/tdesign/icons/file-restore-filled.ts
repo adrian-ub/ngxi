@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 1H3v22h9a7.5 7.5 0 0 1 9-11.376V9h-8z"></svg:path><svg:path fill="currentColor" d="M21 7v-.414L15.414 1H15v6zm-3.586 7l1-1L17 11.586L13.586 15L17 18.414L18.414 17l-1-1H18a3 3 0 1 1-3 3v-1h-2v1a5 5 0 1 0 5-5z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M3 1h12.414L21 6.586v5.038A7.5 7.5 0 0 0 12 23H3zm11.5 2v4.5H19z"></svg:path><svg:path fill="currentColor" d="m17.414 14l1-1L17 11.586L13.586 15L17 18.414L18.414 17l-1-1H18a3 3 0 1 1-3 3v-1h-2v1a5 5 0 1 0 5-5z"></svg:path>`,
 })
 export class TdesignFileRestoreFilledIcon {
   readonly viewBox = input("0 0 24 24")

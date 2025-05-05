@@ -9,10 +9,10 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 1H3v22h10.876A6.5 6.5 0 0 1 21 12.814V9h-8z"></svg:path><svg:path fill="currentColor" d="M21 7v-.414L15.414 1H15v6zm-1 14.11V14h-2v7.11l-2.508-2.48l-1.406 1.422L19 24.91l4.914-4.858l-1.406-1.422z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M15.414 1H3v22h11.846A6.5 6.5 0 0 1 21 11.814V6.586zM14.5 7.5V3L19 7.5z"></svg:path><svg:path fill="currentColor" d="M20 13v7.11l2.508-2.48l1.406 1.422L19 23.91l-4.914-4.858l1.406-1.422L18 20.11V13z"></svg:path>`,
 })
 export class TdesignFileDownloadFilledIcon {
-  readonly viewBox = input("0 0 24 25")
-  readonly width = input("0.96em")
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
   readonly height = input("1em")
 }

@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M3 1h10v8h8v14H3zm7.004 2H8v2H6v2.004h2V9H6v2.004h2V13H6v2.004h2.004v-2h2V11h-2V9.004h2V7h-2V5.004h2z"></svg:path><svg:path fill="currentColor" d="M21 6.586V7h-6V1h.414z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M15.414 1H3v22h18V6.586zM14.5 7.5V3L19 7.5zM10.004 3v2.004h-2V7h2v2.004h-2V11h2v2.004h-2v2H6V13h2v-1.996H6V9h2V7.004H6V5h2V3z"></svg:path>`,
 })
 export class TdesignFileZipFilledIcon {
   readonly viewBox = input("0 0 24 24")

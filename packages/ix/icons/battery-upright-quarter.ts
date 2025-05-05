@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M128 85.333h74.666l.001-42.666h106.667l-.001 42.666H384v384H128zM170.667 128v298.667h170.667V128zM192 341.333h128v64H192z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M128 85.333h85.333V42.667h85.334v42.666H384v384H128zM170.667 128v298.667h170.666V128zm42.666 192h85.334v64h-85.334z" clip-rule="evenodd"></svg:path>`,
 })
 export class IxBatteryUprightQuarterIcon {
   readonly viewBox = input("0 0 512 512")

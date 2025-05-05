@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M3 1h10v8h8v14H3zm7 16v-5H8v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-5h-2v5h-1v-5h-2v5z"></svg:path><svg:path fill="currentColor" d="M21 6.586V7h-6V1h.414z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M15.414 1H3v22h18V6.586zM14.5 7.5V3L19 7.5zM10 16h1v-5h2v5h1v-5h2v5a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-5h2z"></svg:path>`,
 })
 export class TdesignFileWordFilledIcon {
   readonly viewBox = input("0 0 24 24")

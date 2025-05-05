@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 1H3v22h10.101A7 7 0 0 1 21 11.674V9h-8z"></svg:path><svg:path fill="currentColor" d="M21 7v-.414L15.414 1H15v6zm-3 5.5a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11M14.5 18a3.5 3.5 0 0 1 5.165-3.08l-4.744 4.745A3.5 3.5 0 0 1 14.5 18m1.835 3.08l4.744-4.745a3.5 3.5 0 0 1-4.745 4.745"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M15.414 1H3v22h10.101A7 7 0 0 1 21 11.674V6.586zM14.5 7.5V3L19 7.5z"></svg:path><svg:path fill="currentColor" d="M18 14.5a3.5 3.5 0 0 0-3.08 5.165l4.745-4.744A3.5 3.5 0 0 0 18 14.5m3.08 1.835l-4.745 4.744a3.5 3.5 0 0 0 4.745-4.745M12.5 18a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0"></svg:path>`,
 })
 export class TdesignFileBlockedFilledIcon {
   readonly viewBox = input("0 0 24 24")

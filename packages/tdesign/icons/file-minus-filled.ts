@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M3 1h10v8h8v14H3zm13 15v-2H8v2z"></svg:path><svg:path fill="currentColor" d="M21 6.586V7h-6V1h.414z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M15.414 1H3v22h18V6.586zM14.5 7.5V3L19 7.5zM16 16H8v-2h8z"></svg:path>`,
 })
 export class TdesignFileMinusFilledIcon {
   readonly viewBox = input("0 0 24 24")

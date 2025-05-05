@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 1H3v22h2v-9.5h6.214c.276 0 .541.049.786.139V13.5h3.714c.591 0 1.13.224 1.536.593a2.28 2.28 0 0 1 1.536-.593H21V9h-8z"></svg:path><svg:path fill="currentColor" d="M21 7v-.414L15.414 1H15v6zm-10.786 8H6.5v8h2v-3h1.714c.71 0 1.286-.576 1.286-1.286v-2.428c0-.71-.576-1.286-1.286-1.286M9.5 18h-1v-1h1zm6.214-3H12v8h3.714c.71 0 1.286-.576 1.286-1.286v-5.428c0-.71-.576-1.286-1.286-1.286M14 21v-4h1v4zm4.786-6c-.71 0-1.286.576-1.286 1.286V23h2v-3h2.667v-2H19.5v-1h2.667v-2z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M8 15.25V14h.75v1.25zM13.5 14h.75v4h-.75z"></svg:path><svg:path fill="currentColor" d="M15.414 1H3v22h18v-5.75h-2V20h-2v-6.5a1.5 1.5 0 0 1 1.5-1.5H21v.889v-6.303zM14.5 7.5V3L19 7.5zm-5.25 9.75H8V20H6v-8h3.25a1.5 1.5 0 0 1 1.5 1.5v2.25a1.5 1.5 0 0 1-1.5 1.5m7-3.75v5a1.5 1.5 0 0 1-1.5 1.5H11.5v-8h3.25a1.5 1.5 0 0 1 1.5 1.5"></svg:path><svg:path fill="currentColor" d="M21 14h-2v1.25h2z"></svg:path>`,
 })
 export class TdesignFilePdfFilledIcon {
   readonly viewBox = input("0 0 24 24")

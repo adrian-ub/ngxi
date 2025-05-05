@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 15.6h-2V14h2z"></svg:path><svg:path fill="currentColor" d="M3 1h10v8h8v14H3zm10 11H9v8h2v-2.4h2a2 2 0 0 0 2-2V14a2 2 0 0 0-2-2"></svg:path><svg:path fill="currentColor" d="M21 6.586V7h-6V1h.414z"></svg:path>`,
+  template: `<svg:g fill="currentColor" fill-opacity=".9"><svg:path d="M13 13.6h-2V12h2z"></svg:path><svg:path d="M15.414 1H3v22h18V6.586zM14.5 7.5V3L19 7.5zM13 10a2 2 0 0 1 2 2v1.6a2 2 0 0 1-2 2h-2V18H9v-8z"></svg:path></svg:g>`,
 })
 export class TdesignFilePowerpointFilledIcon {
   readonly viewBox = input("0 0 24 24")

@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M23 3H1v18h22zm-5.25 9L8 17.629V6.37z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M23 3H1v18h22zm-6.25 9l-8 4.5v-9z"></svg:path>`,
 })
 export class TdesignPlayRectangleFilledIcon {
   readonly viewBox = input("0 0 24 24")

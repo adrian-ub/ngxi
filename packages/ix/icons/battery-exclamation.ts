@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M234.667 341.334c17.664 0 32 14.327 32 32c0 17.672-14.336 32-32 32s-32-14.328-32-32s14.336-32 32-32m-64-213.334v42.667H85.334v170.667l85.333-.001V384h-128V128zm256 0v74.667h42.667v106.667l-42.667-.001V384h-128v-42.667H384V170.668h-85.333V128zM256 106.667v208h-42.666v-208z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M234.667 341.333c17.664 0 32 14.328 32 32s-14.336 32-32 32s-32-14.327-32-32c0-17.672 14.336-32 32-32m-64-213.333v42.667H85.333v170.666h85.334V384h-128V128zm256 0v85.333h42.666v85.334h-42.666V384h-128v-42.667H384V170.667h-85.333V128zM256 106.667v208h-42.667v-208z" clip-rule="evenodd"></svg:path>`,
 })
 export class IxBatteryExclamationIcon {
   readonly viewBox = input("0 0 512 512")

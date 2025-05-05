@@ -9,7 +9,7 @@ import { Component, input } from '@angular/core'
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M426.667 128v74.666h42.667v106.667h-42.667V384h-384V128zM384 170.667H85.334v170.666H384zM138.667 192v128h-32V192z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M170.667 213.333H128v85.334h42.667z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M469.334 213.333h-42.667V128h-384v256h384v-85.333h42.667zm-85.334 128H85.334V170.667H384z" clip-rule="evenodd"></svg:path>`,
 })
 export class IxBatteryLowIcon {
   readonly viewBox = input("0 0 512 512")
