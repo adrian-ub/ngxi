@@ -30,6 +30,7 @@ jobs:
       - run: pnpm tsx scripts/update-iconify-collections
       - run: pnpm tsx scripts/generate-libraries-from-collections
       - run: pnpm tsx scripts/svg-to-ts
+      - run: pnpm install --no-frozen-lockfile
       - run: pnpm tsx scripts/update-readme
 
       - name: Create Pull Request
