@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename)
 const ICONIFY_COLLECTION = path.resolve(__dirname, '../collections.ts')
 
 // @see https://github.com/adrian-ub/ngxi/issues/10
-const EXCLUDED_COLLECTIONS = ['arcticons', 'fluent', 'fluent-emoji', 'ic', 'material-symbols', 'material-symbols-light', 'mdi', 'ph', 'solar', 'table']
+const EXCLUDED_COLLECTIONS = ['arcticons', 'fluent', 'fluent-emoji', 'ic', 'material-symbols', 'material-symbols-light', 'mdi', 'ph', 'solar', 'tabler']
 
 async function update() {
   try {
