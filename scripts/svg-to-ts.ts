@@ -1,5 +1,6 @@
 import type { IconifyJSON } from '@iconify/types'
 
+import fsSync from 'node:fs'
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -8,18 +9,22 @@ import { lookupCollection } from '@iconify/json'
 import { loadNodeIcon } from '@iconify/utils/lib/loader/node-loader'
 import * as cheerio from 'cheerio'
 import { Presets, SingleBar } from 'cli-progress'
+import ejs from 'ejs'
 import pLimit from 'p-limit'
 import pc from 'picocolors'
 
 import collections from '~~/collections'
 
-import { generateFiles } from './utils/generate-files'
 import { names } from './utils/names'
+
+import * as strings from './utils/strings'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const templateIconDir = path.resolve(__dirname, './files/icon')
+const templateIconDir = path.resolve(__dirname, './files/icon/__svgFileName__.ts.template')
+
+const templateIcon = fsSync.readFileSync(templateIconDir, 'utf-8')
 
 async function svgToTs() {
   const limitCollections = pLimit(3)
@@ -27,7 +32,6 @@ async function svgToTs() {
   const tasks = collections.map(collection =>
     limitCollections(async () => {
       const iconifyJSON = await lookupCollection(collection)
-      await deleteOldIconset(iconifyJSON)
       await createIconset(iconifyJSON)
     }),
   )
@@ -38,9 +42,6 @@ async function svgToTs() {
 async function createIconset(collection: IconifyJSON) {
   const libraryRoot = `packages/${collection.prefix}`
   const libraryDir = path.resolve(__dirname, `../${libraryRoot}`)
-  const iconsDir = path.join(libraryDir, 'icons')
-
-  await fs.mkdir(iconsDir, { recursive: true })
 
   const globalIndex: string[] = []
 
@@ -50,7 +51,7 @@ async function createIconset(collection: IconifyJSON) {
 
   const progressBar = new SingleBar({
     hideCursor: true,
-    format: `${pc.green(collection.prefix)} {bar} {value}/{total} ${pc.gray('{name}')}`,
+    format: `{bar} ${pc.green(collection.prefix)} {value}/{total} ${pc.gray('{name}')}`,
     linewrap: false,
     barsize: 40,
   }, Presets.shades_grey)
@@ -84,12 +85,13 @@ async function createIconset(collection: IconifyJSON) {
         svgAttributes,
       }
 
-      const filePath = path.join(iconsDir)
-      const exportPath = `./icons/${iconName}`
+      const generatedComponent = ejs.render(templateIcon, {
+        names,
+        ...strings,
+        ...substitutions,
+      })
 
-      await generateFiles(templateIconDir, filePath, substitutions, { silentLogger: true })
-
-      globalIndex.push(`export * from '${exportPath}'`)
+      globalIndex.push(generatedComponent)
       progressBar.update(index + 1, { name: iconName })
     }),
   )
@@ -106,7 +108,9 @@ export const ɵɵtsModuleIndicatorApiExtractorWorkaround = true
 `)
   }
 
-  await fs.writeFile(`${libraryDir}/index.ts`, globalIndex.sort().join('\n'))
+  globalIndex.unshift('import { Component, input } from \'@angular/core\'', '')
+
+  await fs.writeFile(`${libraryDir}/index.ts`, globalIndex.join('\n'))
 }
 
 async function loadIconset(iconset: IconifyJSON) {
@@ -137,37 +141,6 @@ async function loadIconset(iconset: IconifyJSON) {
   await Promise.all(tasks)
 
   return result
-}
-
-async function deleteOldIconset(collection: IconifyJSON) {
-  const libraryRoot = `packages/${collection.prefix}`
-  const libraryDir = path.resolve(__dirname, `../${libraryRoot}`)
-
-  const iconsDir = path.join(libraryDir, 'icons')
-
-  const progressBar = new SingleBar(
-    {
-      clearOnComplete: true,
-      hideCursor: true,
-      format: `{bar} {value}/{total} ${pc.gray(collection.prefix)}`,
-      linewrap: false,
-      barsize: 40,
-    },
-    Presets.shades_grey,
-  )
-
-  progressBar.start(1, 0)
-  const limitDelete = pLimit(3)
-
-  try {
-    await limitDelete(() =>
-      fs.rm(iconsDir, { recursive: true, force: true, maxRetries: 3, retryDelay: 1000 }),
-    )
-  }
-  catch { }
-
-  progressBar.increment()
-  progressBar.stop()
 }
 
 svgToTs()
