@@ -1,5 +1,3 @@
-import { Component, input } from '@angular/core'
-
 @Component({
   standalone: true,
   selector: 'svg[<%= propertyName %>Icon],svg[<%= name %>-icon]',
