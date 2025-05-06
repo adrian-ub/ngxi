@@ -43,10 +43,9 @@ async function createIconset(collection: IconifyJSON) {
   const libraryRoot = `packages/${collection.prefix}`
   const libraryDir = path.resolve(__dirname, `../${libraryRoot}`)
 
-  const globalIndex: string[] = []
+  const componentSnippets: string[] = []
 
   const icons = await loadIconset(collection)
-
   const iconEntries = Object.entries(icons)
 
   const progressBar = new SingleBar({
@@ -91,7 +90,7 @@ async function createIconset(collection: IconifyJSON) {
         ...substitutions,
       })
 
-      globalIndex.push(generatedComponent)
+      componentSnippets.push(generatedComponent)
       progressBar.update(index + 1, { name: iconName })
     }),
   )
@@ -101,16 +100,44 @@ async function createIconset(collection: IconifyJSON) {
   progressBar.update(iconEntries.length, { name: '' })
   progressBar.stop()
 
-  if (!globalIndex.length) {
-    globalIndex.push(`// Workaround for: https://github.com/microsoft/rushstack/issues/2806.
+  // Si no hay componentes, agrega el workaround
+  if (!componentSnippets.length) {
+    await fs.writeFile(`${libraryDir}/index.ts`, `
+// Workaround for: https://github.com/microsoft/rushstack/issues/2806.
 // This is a private export that can be removed at any time.
 export const ɵɵtsModuleIndicatorApiExtractorWorkaround = true
-`)
+    `.trimStart())
+    return
   }
 
-  globalIndex.unshift('import { Component, input } from \'@angular/core\'', '')
+  // Divide en chunks
+  const chunkSize = 500
+  const chunksDir = path.resolve(libraryDir, 'chunks')
+  await fs.mkdir(chunksDir, { recursive: true })
 
-  await fs.writeFile(`${libraryDir}/index.ts`, globalIndex.join('\n'))
+  const chunkCount = Math.ceil(componentSnippets.length / chunkSize)
+  const chunkFilenames: string[] = []
+
+  for (let i = 0; i < chunkCount; i++) {
+    const start = i * chunkSize
+    const end = start + chunkSize
+    const chunk = componentSnippets.slice(start, end)
+    const chunkFilename = `chunk-${i}.ts`
+    chunkFilenames.push(`./chunks/${chunkFilename}`)
+    await fs.writeFile(path.join(chunksDir, chunkFilename), [
+      `import { Component, input } from '@angular/core'`,
+      '',
+      ...chunk,
+    ].join('\n'))
+  }
+
+  const indexTsContent = [
+    `// Auto-generated entry point for ${collection.prefix}`,
+    ...chunkFilenames.map(f => `export * from '${f.replace('.ts', '')}'`),
+    '',
+  ].join('\n')
+
+  await fs.writeFile(`${libraryDir}/index.ts`, indexTsContent)
 }
 
 async function loadIconset(iconset: IconifyJSON) {

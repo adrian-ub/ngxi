@@ -1,0 +1,52 @@
+import { Component, input } from '@angular/core'
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenZendeskStroke12Icon],svg[garden-zendesk-stroke-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.538 3.376V10H0zm0-2.376c0 1.508-1.246 2.741-2.769 2.741S0 2.508 0 1zm.924 9c0-1.508 1.246-2.741 2.769-2.741S12 8.492 12 10zm0-2.376V1H12z"></svg:path>`,
+})
+export class GardenZendeskStroke12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenZendeskStroke16Icon],svg[garden-zendesk-stroke-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.385 5.168V14H0zm0-3.168c0 2.01-1.662 3.655-3.693 3.655C1.662 5.655 0 4.01 0 2zm1.23 12c0-2.01 1.662-3.655 3.693-3.655C14.338 10.345 16 11.99 16 14zm0-3.168V2H16z"></svg:path>`,
+})
+export class GardenZendeskStroke16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[garden123Fill12Icon],svg[garden-123-fill-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 0a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1zM5.926 3l-.17.006a1.39 1.39 0 0 0-1.25 1.25l-.006.133V4.5l.008.09a.5.5 0 0 0 .984 0L5.5 4.5v-.111l.008-.078a.39.39 0 0 1 .303-.303L5.889 4h.037l.091.007a.567.567 0 0 1 .426.79l-.096.201l-.223.43l-.394.73l-1.171 2.107a.5.5 0 0 0 .357.728L5 9h2l.09-.008a.5.5 0 0 0 .402-.402L7.5 8.5l-.008-.09a.5.5 0 0 0-.402-.402L7 8H5.85l.347-.621l.584-1.06l.39-.737l.138-.274l.048-.105a1.567 1.567 0 0 0-1.289-2.197zM2.502 3l-.044.002l-.032.003l-.054.012l-.063.02l-.059.03l-.062.042l-.042.037l-1 1l-.057.07a.5.5 0 0 0 .695.695l.07-.057L2 4.706V8h-.5l-.09.008a.5.5 0 0 0 0 .984L1.5 9h2l.09-.008a.5.5 0 0 0 0-.984L3.5 8H3V3.5l-.002-.046l-.015-.082l-.02-.063l-.03-.059l-.042-.062l-.037-.042l-.032-.028l-.055-.04l-.076-.04l-.063-.021l-.061-.012zM10.5 3h-2l-.09.008a.5.5 0 0 0-.402.402L8 3.5l.008.09a.5.5 0 0 0 .402.402L8.5 4l1-.001L8.6 5.2A.5.5 0 0 0 9 6c.645 0 .875.173.96.51c.019.078.03.153.035.252L10 7l-.004.253l-.014.189l-.012.087C9.912 7.875 9.8 8 9.5 8c-.39 0-.5-.11-.5-.5a.5.5 0 0 0-1 0C8 8.443 8.557 9 9.5 9c.86 0 1.326-.525 1.456-1.307c.03-.174.04-.318.043-.525v-.344a2.5 2.5 0 0 0-.04-.421l-.03-.135l-.042-.145a1.5 1.5 0 0 0-.695-.854l-.152-.076l-.143-.057L10.9 3.8a.5.5 0 0 0-.315-.793z"></svg:path>`,
+})
+export class Garden123Fill12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
