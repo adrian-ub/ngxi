@@ -4,7 +4,6 @@
     "types": [],
     "declaration": true,
     "declarationMap": true,
-    "inlineSources": true,
     "outDir": "dist/out-tsc"
   },
   "files": [
