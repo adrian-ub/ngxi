@@ -3,6 +3,7 @@ packages:
   - packages/*
 catalogs:
   angular:
+    '@angular/compiler-cli': ^19.2.9
     '@angular/core': ^19.2.6
     ng-packagr: ^19.2.2
     tslib: ^2.3.0
@@ -11,6 +12,7 @@ catalogs:
     '@antfu/ni': ^24.3.0
     '@antfu/nip': ^0.1.0
     bumpp: ^10.1.0
+    esbuild: ^0.25.4
     eslint: ^9.24.0
     lint-staged: ^15.5.1
     simple-git-hooks: ^2.12.1
