@@ -2,7 +2,10 @@
 
 A comprehensive collection of SVG icons for Angular applications that provides seamless integration with thousands of popular icons.
 
+<details>
+<summary>
 Currently, support the following libraries:
+</summary>
 
 <!-- ICONSETS:START -->
 | Package | Version | Downloads | LICENSE |
@@ -207,6 +210,8 @@ Currently, support the following libraries:
 | `@ngxi/zmdi` | [![Ngxi zmdi version][zmdi-ngxi-version-src]][zmdi-ngxi-href] | ![zmdi downloads][zmdi-ngxi-downloads-src] | ![zmdi license][zmdi-ngxi-license] |
 | `@ngxi/zondicons` | [![Ngxi zondicons version][zondicons-ngxi-version-src]][zondicons-ngxi-href] | ![zondicons downloads][zondicons-ngxi-downloads-src] | ![zondicons license][zondicons-ngxi-license] |
 <!-- ICONSETS:END -->
+
+</details>
 
 ## Sponsors
 
