@@ -13,7 +13,6 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
     "importHelpers": true,
     "esModuleInterop": true,
     "isolatedModules": true,
@@ -24,5 +23,6 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "exclude": ["packages"]
 }
