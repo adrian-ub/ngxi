@@ -4,8 +4,7 @@
     "types": [],
     "declaration": true,
     "declarationMap": true,
-    "inlineSources": true,
-    "outDir": "dist/out-tsc"
+    "outDir": "dist"
   },
   "files": [
     "index.ts"
