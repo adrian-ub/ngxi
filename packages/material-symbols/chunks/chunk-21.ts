@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsRearCameraRoundedIcon],svg[material-symbols-rear-camera-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16.5 8q.425 0 .713-.288T17.5 7t-.288-.712T16.5 6t-.712.288T15.5 7t.288.713T16.5 8M13 19h7V5h-7zm-9 2q-.825 0-1.412-.587T2 19v-5q0-.425.288-.712T3 13h3.2l-.9.9q-.275.275-.275.7t.275.7t.7.275t.7-.275l2.6-2.6q.3-.3.3-.7t-.3-.7L6.7 8.7q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7l.9.9H3q-.425 0-.712-.288T2 10V5q0-.825.588-1.412T4 3h16q.825 0 1.413.588T22 5v14q0 .825-.587 1.413T20 21z"></svg:path>`,
-})
-export class MaterialSymbolsRearCameraRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsRearCameraSharpIcon],svg[material-symbols-rear-camera-sharp-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsScanDeleteRoundedIcon {
   template: `<svg:path fill="currentColor" d="M13 9h5l-5-5zm2.9 12.5l-1.4-1.4l2.1-2.1l-2.1-2.1l1.4-1.4l2.1 2.1l2.1-2.1l1.4 1.4l-2.075 2.1l2.075 2.1l-1.4 1.4l-2.1-2.075zM4 22V2h10l6 6v4.35q-.475-.175-.975-.262T18 12q-2.5 0-4.25 1.738T12 17.975q0 1.125.4 2.163T13.55 22z"></svg:path>`,
 })
 export class MaterialSymbolsScanDeleteSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsScanOutlineIcon],svg[material-symbols-scan-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 22q-.825 0-1.412-.587T4 20v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 22zM4 11V4q0-.825.588-1.412T6 2h8l6 6v3h-2V9h-5V4H6v7zm-3 4v-2h22v2zm11 2"></svg:path>`,
+})
+export class MaterialSymbolsScanOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

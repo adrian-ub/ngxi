@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[solarClockCircleBoldIcon],svg[solar-clock-circle-bold-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="solarClockCircleBold0"><svg:g fill="none"><svg:path fill="#fff" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10"></svg:path><svg:path fill="#000" fill-rule="evenodd" d="M12 7.25a.75.75 0 0 1 .75.75v3.69l2.28 2.28a.75.75 0 1 1-1.06 1.06l-2.5-2.5a.75.75 0 0 1-.22-.53V8a.75.75 0 0 1 .75-.75" clip-rule="evenodd"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h24v24H0z" mask="url(#solarClockCircleBold0)"></svg:path>`,
+})
+export class SolarClockCircleBoldIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[solarClockCircleBoldDuotoneIcon],svg[solar-clock-circle-bold-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10" opacity=".5"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M12 7.25a.75.75 0 0 1 .75.75v3.69l2.28 2.28a.75.75 0 1 1-1.06 1.06l-2.5-2.5a.75.75 0 0 1-.22-.53V8a.75.75 0 0 1 .75-.75" clip-rule="evenodd"></svg:path>`,
+})
+export class SolarClockCircleBoldDuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[solarClockCircleBrokenIcon],svg[solar-clock-circle-broken-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class SolarDnaBoldIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M15.03 1.47a.75.75 0 0 1 0 1.06c-2.558 2.558-3.523 6.113-2.591 9.031c2.918.932 6.473-.033 9.03-2.591a.75.75 0 1 1 1.061 1.06c-2.622 2.623-6.264 3.854-9.556 3.213c.75 3.175-.4 6.744-2.944 9.287a.75.75 0 1 1-1.06-1.06c2.416-2.417 3.3-5.788 2.36-8.516l-.072-.212l-.212-.072c-2.727-.94-6.099-.056-8.516 2.36a.75.75 0 0 1-1.06-1.06c2.543-2.544 6.112-3.693 9.287-2.944c-.64-3.292.59-6.934 3.213-9.556a.75.75 0 0 1 1.06 0" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M20.085 10.136L16.809 6.86a.75.75 0 0 0-1.061 1.061l3.008 3.008q.684-.34 1.329-.793M13.108 5.17l.948.947a.75.75 0 1 0 1.06-1.06L13.91 3.85q-.456.639-.802 1.32m-2.211 13.554L9.835 17.66a.75.75 0 0 0-1.06 1.06l1.353 1.354a9.4 9.4 0 0 0 .77-1.351m-7.041-4.805l3.113 3.113a.75.75 0 0 0 1.06-1.061L5.2 13.139a9.4 9.4 0 0 0-1.343.78m2.644-1.279l4.812 4.812q.022.023.048.044a8.2 8.2 0 0 0 .322-1.795L8.3 12.317a8.2 8.2 0 0 0-1.799.323m11.049-1.209a1 1 0 0 0-.097-.118l-4.878-4.878a9 9 0 0 0-.407 1.714l3.683 3.683a9 9 0 0 0 1.698-.4" opacity=".5"></svg:path>`,
 })
 export class SolarDnaBoldDuotoneIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solarDnaBrokenIcon],svg[solar-dna-broken-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m11.848 12.152l.198.069c3.26 1.122 7.184.049 9.954-2.721m-10.152 2.652l-.558-.191C8.248 10.913 4.585 11.915 2 14.5m9.848-2.348l-.069-.198C10.657 8.694 11.73 4.77 14.5 2m-2.652 10.152l.191.558c1.048 3.041.046 6.705-2.539 9.29m.5-7l1.843 1.922m-5.078-5.079L8 13.08m3.844-6.315L14 9m2 2l.922.843M4 13l3.5 3.5m12.278-5.61l-3.5-3.5M9.305 18.191l1.587 1.587m3.695-14.191L13 4"></svg:path>`,
-})
-export class SolarDnaBrokenIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solarDnaLineDuotoneIcon],svg[solar-dna-line-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><svg:path d="m11.848 12.152l.198.069c3.26 1.122 7.184.049 9.954-2.721m-10.152 2.652l-.558-.191C8.248 10.913 4.585 11.915 2 14.5m9.848-2.348l-.069-.198C10.657 8.694 11.73 4.77 14.5 2m-2.652 10.152l.191.558c1.048 3.041.046 6.705-2.539 9.29"></svg:path><svg:path d="m6.765 11.843l5.078 5.079m.001-10.157l5.078 5.078M4 13l3.5 3.5m12.278-5.61l-3.5-3.5M9.305 18.191l1.587 1.587m3.695-14.191L13 4" opacity=".5"></svg:path></svg:g>`,
-})
-export class SolarDnaLineDuotoneIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

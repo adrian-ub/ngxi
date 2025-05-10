@@ -36,23 +36,6 @@ export class LineiconsAddFilesIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[lineiconsAeroplane1Icon],svg[lineicons-aeroplane-1-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16.04 21.988c-.1 0-.19-.02-.28-.06l-3.78-1.55l-3.78 1.55c-.23.09-.49.07-.7-.07a.74.74 0 0 1-.33-.62v-2.18c0-.23.11-.45.29-.59l1.93-1.5l-.12-2.46l-5.16.82a.73.73 0 0 1-.6-.17a.77.77 0 0 1-.26-.57v-2.53c0-.29.17-.55.43-.68L9 8.858c-.1-2.25.57-4.5 1.9-6.32c.51-.7 1.69-.7 2.2 0a9.92 9.92 0 0 1 1.9 6.32l5.32 2.52c.26.12.43.39.43.68v2.53c0 .22-.1.43-.26.57c-.17.14-.39.21-.6.17l-5.16-.82l-.12 2.46l1.93 1.5c.18.14.29.36.29.59v2.18c0 .25-.12.48-.33.62c-.13.08-.27.13-.42.13zm-7.37-2.56v.69l3.03-1.24c.18-.08.39-.08.57 0l3.03 1.24v-.7l-1.95-1.52a.77.77 0 0 1-.29-.63l.18-3.68c.01-.21.11-.41.28-.54s.38-.19.59-.16l5.12.81v-1.18l-5.34-2.53a.77.77 0 0 1-.43-.72l.02-.47c.09-1.86-.44-3.71-1.5-5.23a8.47 8.47 0 0 0-1.5 5.23l.02.47c.02.3-.15.59-.43.72l-5.34 2.53v1.18l5.12-.81c.21-.03.42.02.59.16c.17.13.27.33.28.54l.18 3.68c.01.24-.1.48-.29.63l-1.94 1.52z"></svg:path>`,
-})
-export class LineiconsAeroplane1Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[lineiconsAdobeIcon],svg[lineicons-adobe-icon]',
   host: {
     role: 'img',
@@ -70,23 +53,6 @@ export class LineiconsAdobeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[lineiconsAgendaIcon],svg[lineicons-agenda-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.523 4.25A2.25 2.25 0 0 1 6.773 2h10.5a2.25 2.25 0 0 1 2.25 2.25v15.5a2.25 2.25 0 0 1-2.25 2.25h-8.25v.75a.75.75 0 0 1-1.5 0V22h-.75a2.25 2.25 0 0 1-2.25-2.25zm1.5 11.583v3.917c0 .414.336.75.75.75h6.75v-4.667zm7.5-1.5V9.667h-7.5v4.666zm1.5 1.5V20.5h2.25a.75.75 0 0 0 .75-.75v-3.917zm3-1.5V9.667h-3v4.666zm0-10.083a.75.75 0 0 0-.75-.75h-2.25v4.667h3zm-4.5-.75h-6.75a.75.75 0 0 0-.75.75v3.917h7.5z"></svg:path>`,
-})
-export class LineiconsAgendaIcon {
-  readonly viewBox = input("0 0 25 24")
-  readonly width = input("1.05em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[lineiconsAdonisIcon],svg[lineicons-adonis-icon]',
   host: {
     role: 'img',
@@ -97,6 +63,23 @@ export class LineiconsAgendaIcon {
   template: `<svg:path fill="currentColor" d="M12 21c-7.259 0-9-1.741-9-9s1.741-9 9-9s9 1.741 9 9s-1.741 9-9 9M9.452 7.454L6.63 13.87c-.128.311-.238.715-.238 1.063c0 1.595 1.118 2.713 2.713 2.713c.522 0 .956-.138 1.398-.277c.456-.145.92-.292 1.498-.292c.584 0 1.037.146 1.485.29c.437.14.868.279 1.411.279c1.595 0 2.713-1.119 2.713-2.713c0-.348-.11-.752-.238-1.063l-2.823-6.416C14.07 6.373 13.155 5.786 12 5.786s-2.071.587-2.548 1.668m-.238 7.424L12 8.572l2.75 6.306c-.789-.385-1.778-.568-2.75-.568c-1.008 0-1.961.183-2.786.568"></svg:path>`,
 })
 export class LineiconsAdonisIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsAeroplane1Icon],svg[lineicons-aeroplane-1-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.04 21.988c-.1 0-.19-.02-.28-.06l-3.78-1.55l-3.78 1.55c-.23.09-.49.07-.7-.07a.74.74 0 0 1-.33-.62v-2.18c0-.23.11-.45.29-.59l1.93-1.5l-.12-2.46l-5.16.82a.73.73 0 0 1-.6-.17a.77.77 0 0 1-.26-.57v-2.53c0-.29.17-.55.43-.68L9 8.858c-.1-2.25.57-4.5 1.9-6.32c.51-.7 1.69-.7 2.2 0a9.92 9.92 0 0 1 1.9 6.32l5.32 2.52c.26.12.43.39.43.68v2.53c0 .22-.1.43-.26.57c-.17.14-.39.21-.6.17l-5.16-.82l-.12 2.46l1.93 1.5c.18.14.29.36.29.59v2.18c0 .25-.12.48-.33.62c-.13.08-.27.13-.42.13zm-7.37-2.56v.69l3.03-1.24c.18-.08.39-.08.57 0l3.03 1.24v-.7l-1.95-1.52a.77.77 0 0 1-.29-.63l.18-3.68c.01-.21.11-.41.28-.54s.38-.19.59-.16l5.12.81v-1.18l-5.34-2.53a.77.77 0 0 1-.43-.72l.02-.47c.09-1.86-.44-3.71-1.5-5.23a8.47 8.47 0 0 0-1.5 5.23l.02.47c.02.3-.15.59-.43.72l-5.34 2.53v1.18l5.12-.81c.21-.03.42.02.59.16c.17.13.27.33.28.54l.18 3.68c.01.24-.1.48-.29.63l-1.94 1.52z"></svg:path>`,
+})
+export class LineiconsAeroplane1Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,6 +104,23 @@ export class LineiconsAirbnbIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[lineiconsAgendaIcon],svg[lineicons-agenda-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.523 4.25A2.25 2.25 0 0 1 6.773 2h10.5a2.25 2.25 0 0 1 2.25 2.25v15.5a2.25 2.25 0 0 1-2.25 2.25h-8.25v.75a.75.75 0 0 1-1.5 0V22h-.75a2.25 2.25 0 0 1-2.25-2.25zm1.5 11.583v3.917c0 .414.336.75.75.75h6.75v-4.667zm7.5-1.5V9.667h-7.5v4.666zm1.5 1.5V20.5h2.25a.75.75 0 0 0 .75-.75v-3.917zm3-1.5V9.667h-3v4.666zm0-10.083a.75.75 0 0 0-.75-.75h-2.25v4.667h3zm-4.5-.75h-6.75a.75.75 0 0 0-.75.75v3.917h7.5z"></svg:path>`,
+})
+export class LineiconsAgendaIcon {
+  readonly viewBox = input("0 0 25 24")
+  readonly width = input("1.05em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[lineiconsAirtableIcon],svg[lineicons-airtable-icon]',
   host: {
     role: 'img',
@@ -132,23 +132,6 @@ export class LineiconsAirbnbIcon {
 })
 export class LineiconsAirtableIcon {
   readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[lineiconsAlarmIcon],svg[lineicons-alarm-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m57.6 53.1l-2-3.1c-.4-.6-.6-1.2-.6-1.9V27.3c0-5.9-2.5-11.4-7.1-15.5c-3.7-3.3-8.5-5.4-13.6-5.8V4c0-1.2-1-2.3-2.3-2.3c-1.2 0-2.3 1-2.3 2.3v1.9c-.2 0-.4 0-.6.1C17.5 7.3 8.8 16.6 8.8 27.7v20.4c-.1 1-.3 1.5-.5 1.8l-1.9 3.2c-.6 1-.6 2.2 0 3.2c.6.9 1.6 1.5 2.7 1.5h20.7V60c0 1.2 1 2.3 2.3 2.3c1.2 0 2.3-1 2.3-2.3v-2.2H55c1.1 0 2.1-.6 2.7-1.5c.6-1 .6-2.2-.1-3.2m-46.1.2l.7-1.2c.6-1 .9-2.2 1.1-3.6V27.7c0-8.8 7-16.2 16.3-17.2c5.7-.6 11.3 1.1 15.4 4.7c3.6 3.2 5.6 7.5 5.6 12.1v20.8c0 1.5.4 2.9 1.3 4.3l.6.9z"></svg:path>`,
-})
-export class LineiconsAlarmIcon {
-  readonly viewBox = input("0 0 64 64")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -8497,5 +8480,22 @@ export class LineiconsLineDoubleIcon {
 export class LineiconsLineHeightIcon {
   readonly viewBox = input("0 0 25 24")
   readonly width = input("1.05em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsLineSpacingIcon],svg[lineicons-line-spacing-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M37.2 7.6h22.7c1.2 0 2.3-1 2.3-2.3S61.2 3 59.9 3H37.2c-1.2 0-2.3 1-2.3 2.3s1.1 2.3 2.3 2.3m22.7 13.2H37.2c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h22.7c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3m0 17.8H37.2c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h22.7c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3m0 17.8H37.2c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h22.7c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3M22.8 15.3c.4.4 1 .7 1.6.7s1.2-.2 1.6-.7c.9-.9.9-2.3 0-3.2l-9.4-9.4c-1.3-1.3-3.3-1.3-4.6 0l-9.5 9.4c-.9.9-.9 2.3 0 3.2s2.3.9 3.2 0L12 9v46l-6.3-6.4c-.9-.9-2.3-.9-3.2 0s-.9 2.3 0 3.2l9.4 9.5c.6.6 1.4 1 2.3 1s1.7-.3 2.3-.9l9.5-9.5c.9-.9.9-2.3 0-3.2s-2.3-.9-3.2 0L16.5 55V9z"></svg:path>`,
+})
+export class LineiconsLineSpacingIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
   readonly height = input("1em")
 }

@@ -2,40 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentColorAddCircle24Icon],svg[fluent-color-add-circle-24-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAddCircle240)" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2"></svg:path><svg:path fill="url(#fluentColorAddCircle241)" d="M12 7a.75.75 0 0 0-.743.648l-.007.102v3.5h-3.5a.75.75 0 0 0-.102 1.493l.102.007h3.5v3.5a.75.75 0 0 0 1.493.102l.007-.102v-3.5h3.5a.75.75 0 0 0 .102-1.493l-.102-.007h-3.5v-3.5A.75.75 0 0 0 12 7"></svg:path><svg:defs><svg:lineargradient id="fluentColorAddCircle240" x1="2.714" x2="16.517" y1="5.75" y2="20.09" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#52D17C"></svg:stop><svg:stop offset="1" stop-color="#22918B"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorAddCircle241" x1="8.875" x2="11.943" y1="8.02" y2="18.852" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#fff"></svg:stop><svg:stop offset="1" stop-color="#E3FFD9"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
-})
-export class FluentColorAddCircle24Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentColorAddStarburst16Icon],svg[fluent-color-add-starburst-16-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAddStarburst160)" d="M8.402.213a.5.5 0 0 0-.792 0L6.317 1.889a.5.5 0 0 1-.537.174l-2.03-.595a.5.5 0 0 0-.64.465l-.062 2.116a.5.5 0 0 1-.331.456l-1.994.712a.5.5 0 0 0-.244.753l1.194 1.748a.5.5 0 0 1 0 .564L.478 10.03a.5.5 0 0 0 .244.753l1.994.712a.5.5 0 0 1 .331.456l.062 2.116a.5.5 0 0 0 .64.465l2.031-.595a.5.5 0 0 1 .537.175l1.293 1.675a.5.5 0 0 0 .792 0l1.293-1.676a.5.5 0 0 1 .537-.174l2.03.595a.5.5 0 0 0 .641-.465l.062-2.116a.5.5 0 0 1 .331-.456l1.994-.712a.5.5 0 0 0 .244-.753L14.34 8.282a.5.5 0 0 1 0-.564l1.194-1.748a.5.5 0 0 0-.245-.753l-1.993-.712a.5.5 0 0 1-.331-.456l-.062-2.116a.5.5 0 0 0-.64-.465l-2.031.595a.5.5 0 0 1-.537-.174z"></svg:path><svg:path fill="url(#fluentColorAddStarburst161)" fill-opacity=".95" d="M8.5 5a.5.5 0 0 0-1 0v2.5H5a.5.5 0 0 0 0 1h2.5V11a.5.5 0 0 0 1 0V8.5H11a.5.5 0 0 0 0-1H8.5z"></svg:path><svg:defs><svg:radialgradient id="fluentColorAddStarburst160" cx="0" cy="0" r="1" gradientTransform="matrix(-16.57345 -30.71471 28.69314 -15.48262 17.862 18.308)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFC470"></svg:stop><svg:stop offset=".251" stop-color="#FF835C"></svg:stop><svg:stop offset=".55" stop-color="#F24A9D"></svg:stop><svg:stop offset=".814" stop-color="#B339F0"></svg:stop></svg:radialgradient><svg:lineargradient id="fluentColorAddStarburst161" x1="11.014" x2="3.669" y1="13.476" y2="8.719" gradientUnits="userSpaceOnUse"><svg:stop offset=".024" stop-color="#FFC8D7"></svg:stop><svg:stop offset=".807" stop-color="#fff"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
-})
-export class FluentColorAddStarburst16Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fluentColorAddCircle16Icon],svg[fluent-color-add-circle-16-icon]',
   host: {
     role: 'img',
@@ -70,33 +36,33 @@ export class FluentColorAddCircle20Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentColorAddStarburst20Icon],svg[fluent-color-add-starburst-20-icon]',
+  selector: 'svg[fluentColorAddCircle32Icon],svg[fluent-color-add-circle-32-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAddStarburst200)" d="M11.092 1.29a.75.75 0 0 0-1.184 0L8.844 2.658a.5.5 0 0 1-.583.157L6.657 2.16a.75.75 0 0 0-1.025.592L5.395 4.47a.5.5 0 0 1-.427.427l-1.716.237a.75.75 0 0 0-.592 1.025l.653 1.604a.5.5 0 0 1-.157.583L1.79 9.408a.75.75 0 0 0 0 1.185l1.366 1.063a.5.5 0 0 1 .157.583l-.653 1.604a.75.75 0 0 0 .592 1.025l1.716.237a.5.5 0 0 1 .427.427l.237 1.716a.75.75 0 0 0 1.025.592l1.604-.653a.5.5 0 0 1 .583.157l1.064 1.366a.75.75 0 0 0 1.184 0l1.063-1.366a.5.5 0 0 1 .583-.157l1.604.653a.75.75 0 0 0 1.025-.592l.237-1.716a.5.5 0 0 1 .427-.427l1.716-.237a.75.75 0 0 0 .592-1.025l-.653-1.604a.5.5 0 0 1 .157-.583l1.366-1.064a.75.75 0 0 0 0-1.184l-1.366-1.063a.5.5 0 0 1-.157-.583l.653-1.604a.75.75 0 0 0-.592-1.025l-1.716-.237a.5.5 0 0 1-.426-.427l-.238-1.716a.75.75 0 0 0-1.025-.592l-1.604.653a.5.5 0 0 1-.583-.157z"></svg:path><svg:path fill="url(#fluentColorAddStarburst201)" fill-opacity=".95" d="M6.5 10a.5.5 0 0 1 .5-.5h3v-3a.5.5 0 0 1 1 0v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3H7a.5.5 0 0 1-.5-.5"></svg:path><svg:defs><svg:radialgradient id="fluentColorAddStarburst200" cx="0" cy="0" r="1" gradientTransform="matrix(-19.58616 -34.63252 33.172 -18.76018 22.147 21.623)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFC470"></svg:stop><svg:stop offset=".251" stop-color="#FF835C"></svg:stop><svg:stop offset=".55" stop-color="#F24A9D"></svg:stop><svg:stop offset=".814" stop-color="#B339F0"></svg:stop></svg:radialgradient><svg:lineargradient id="fluentColorAddStarburst201" x1="13.944" x2="5.55" y1="16.259" y2="10.821" gradientUnits="userSpaceOnUse"><svg:stop offset=".024" stop-color="#FFC8D7"></svg:stop><svg:stop offset=".807" stop-color="#fff"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAddCircle320)" d="M30 16c0 7.732-6.268 14-14 14S2 23.732 2 16S8.268 2 16 2s14 6.268 14 14"></svg:path><svg:path fill="url(#fluentColorAddCircle321)" d="M15 10a1 1 0 1 1 2 0v5h5a1 1 0 1 1 0 2h-5v5a1 1 0 1 1-2 0v-5h-5a1 1 0 1 1 0-2h5z"></svg:path><svg:defs><svg:lineargradient id="fluentColorAddCircle320" x1="3" x2="22.323" y1="7.25" y2="27.326" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#52D17C"></svg:stop><svg:stop offset="1" stop-color="#22918B"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorAddCircle321" x1="11.625" x2="15.921" y1="10.428" y2="25.592" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#fff"></svg:stop><svg:stop offset="1" stop-color="#E3FFD9"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
 })
-export class FluentColorAddStarburst20Icon {
-  readonly viewBox = input("0 0 20 20")
+export class FluentColorAddCircle32Icon {
+  readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
 }
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentColorAddStarburst24Icon],svg[fluent-color-add-starburst-24-icon]',
+  selector: 'svg[fluentColorAddCircle24Icon],svg[fluent-color-add-circle-24-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAddStarburst240)" d="M12.793 1.383a1 1 0 0 0-1.579 0L9.801 3.2a.25.25 0 0 1-.291.079L7.378 2.41a1 1 0 0 0-1.367.79l-.315 2.28a.25.25 0 0 1-.213.213l-2.28.315a1 1 0 0 0-.79 1.367l.868 2.132a.25.25 0 0 1-.079.291l-1.816 1.413a1 1 0 0 0 0 1.579l1.816 1.413a.25.25 0 0 1 .079.291l-.867 2.132a1 1 0 0 0 .79 1.367l2.279.315a.25.25 0 0 1 .213.213l.315 2.28a1 1 0 0 0 1.367.79l2.132-.868a.25.25 0 0 1 .291.079l1.413 1.816a1 1 0 0 0 1.579 0l1.413-1.816a.25.25 0 0 1 .291-.079l2.131.867a1 1 0 0 0 1.368-.79l.315-2.279a.25.25 0 0 1 .213-.213l2.28-.315a1 1 0 0 0 .789-1.367l-.867-2.132a.25.25 0 0 1 .079-.291l1.816-1.413a1 1 0 0 0 0-1.579l-1.816-1.413a.25.25 0 0 1-.079-.291l.867-2.132a1 1 0 0 0-.79-1.367l-2.279-.315a.25.25 0 0 1-.213-.213l-.315-2.28a1 1 0 0 0-1.367-.79l-2.132.868a.25.25 0 0 1-.291-.079z"></svg:path><svg:path fill="url(#fluentColorAddStarburst241)" fill-opacity=".95" d="M12 7a.75.75 0 0 1 .75.75v3.5h3.5a.75.75 0 0 1 0 1.5h-3.5v3.5a.75.75 0 0 1-1.5 0v-3.5h-3.5a.75.75 0 0 1 0-1.5h3.5v-3.5A.75.75 0 0 1 12 7"></svg:path><svg:defs><svg:radialgradient id="fluentColorAddStarburst240" cx="0" cy="0" r="1" gradientTransform="matrix(-23.9474 -42.34411 40.5584 -22.9375 26.245 26.212)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFC470"></svg:stop><svg:stop offset=".251" stop-color="#FF835C"></svg:stop><svg:stop offset=".55" stop-color="#F24A9D"></svg:stop><svg:stop offset=".814" stop-color="#B339F0"></svg:stop></svg:radialgradient><svg:lineargradient id="fluentColorAddStarburst241" x1="16.305" x2="5.813" y1="19.823" y2="13.027" gradientUnits="userSpaceOnUse"><svg:stop offset=".024" stop-color="#FFC8D7"></svg:stop><svg:stop offset=".807" stop-color="#fff"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAddCircle240)" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2"></svg:path><svg:path fill="url(#fluentColorAddCircle241)" d="M12 7a.75.75 0 0 0-.743.648l-.007.102v3.5h-3.5a.75.75 0 0 0-.102 1.493l.102.007h3.5v3.5a.75.75 0 0 0 1.493.102l.007-.102v-3.5h3.5a.75.75 0 0 0 .102-1.493l-.102-.007h-3.5v-3.5A.75.75 0 0 0 12 7"></svg:path><svg:defs><svg:lineargradient id="fluentColorAddCircle240" x1="2.714" x2="16.517" y1="5.75" y2="20.09" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#52D17C"></svg:stop><svg:stop offset="1" stop-color="#22918B"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorAddCircle241" x1="8.875" x2="11.943" y1="8.02" y2="18.852" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#fff"></svg:stop><svg:stop offset="1" stop-color="#E3FFD9"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
 })
-export class FluentColorAddStarburst24Icon {
+export class FluentColorAddCircle24Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,17 +87,34 @@ export class FluentColorAddCircle28Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentColorAddCircle32Icon],svg[fluent-color-add-circle-32-icon]',
+  selector: 'svg[fluentColorAddStarburst16Icon],svg[fluent-color-add-starburst-16-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAddCircle320)" d="M30 16c0 7.732-6.268 14-14 14S2 23.732 2 16S8.268 2 16 2s14 6.268 14 14"></svg:path><svg:path fill="url(#fluentColorAddCircle321)" d="M15 10a1 1 0 1 1 2 0v5h5a1 1 0 1 1 0 2h-5v5a1 1 0 1 1-2 0v-5h-5a1 1 0 1 1 0-2h5z"></svg:path><svg:defs><svg:lineargradient id="fluentColorAddCircle320" x1="3" x2="22.323" y1="7.25" y2="27.326" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#52D17C"></svg:stop><svg:stop offset="1" stop-color="#22918B"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorAddCircle321" x1="11.625" x2="15.921" y1="10.428" y2="25.592" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#fff"></svg:stop><svg:stop offset="1" stop-color="#E3FFD9"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAddStarburst160)" d="M8.402.213a.5.5 0 0 0-.792 0L6.317 1.889a.5.5 0 0 1-.537.174l-2.03-.595a.5.5 0 0 0-.64.465l-.062 2.116a.5.5 0 0 1-.331.456l-1.994.712a.5.5 0 0 0-.244.753l1.194 1.748a.5.5 0 0 1 0 .564L.478 10.03a.5.5 0 0 0 .244.753l1.994.712a.5.5 0 0 1 .331.456l.062 2.116a.5.5 0 0 0 .64.465l2.031-.595a.5.5 0 0 1 .537.175l1.293 1.675a.5.5 0 0 0 .792 0l1.293-1.676a.5.5 0 0 1 .537-.174l2.03.595a.5.5 0 0 0 .641-.465l.062-2.116a.5.5 0 0 1 .331-.456l1.994-.712a.5.5 0 0 0 .244-.753L14.34 8.282a.5.5 0 0 1 0-.564l1.194-1.748a.5.5 0 0 0-.245-.753l-1.993-.712a.5.5 0 0 1-.331-.456l-.062-2.116a.5.5 0 0 0-.64-.465l-2.031.595a.5.5 0 0 1-.537-.174z"></svg:path><svg:path fill="url(#fluentColorAddStarburst161)" fill-opacity=".95" d="M8.5 5a.5.5 0 0 0-1 0v2.5H5a.5.5 0 0 0 0 1h2.5V11a.5.5 0 0 0 1 0V8.5H11a.5.5 0 0 0 0-1H8.5z"></svg:path><svg:defs><svg:radialgradient id="fluentColorAddStarburst160" cx="0" cy="0" r="1" gradientTransform="matrix(-16.57345 -30.71471 28.69314 -15.48262 17.862 18.308)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFC470"></svg:stop><svg:stop offset=".251" stop-color="#FF835C"></svg:stop><svg:stop offset=".55" stop-color="#F24A9D"></svg:stop><svg:stop offset=".814" stop-color="#B339F0"></svg:stop></svg:radialgradient><svg:lineargradient id="fluentColorAddStarburst161" x1="11.014" x2="3.669" y1="13.476" y2="8.719" gradientUnits="userSpaceOnUse"><svg:stop offset=".024" stop-color="#FFC8D7"></svg:stop><svg:stop offset=".807" stop-color="#fff"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
 })
-export class FluentColorAddCircle32Icon {
-  readonly viewBox = input("0 0 32 32")
+export class FluentColorAddStarburst16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorAddStarburst20Icon],svg[fluent-color-add-starburst-20-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAddStarburst200)" d="M11.092 1.29a.75.75 0 0 0-1.184 0L8.844 2.658a.5.5 0 0 1-.583.157L6.657 2.16a.75.75 0 0 0-1.025.592L5.395 4.47a.5.5 0 0 1-.427.427l-1.716.237a.75.75 0 0 0-.592 1.025l.653 1.604a.5.5 0 0 1-.157.583L1.79 9.408a.75.75 0 0 0 0 1.185l1.366 1.063a.5.5 0 0 1 .157.583l-.653 1.604a.75.75 0 0 0 .592 1.025l1.716.237a.5.5 0 0 1 .427.427l.237 1.716a.75.75 0 0 0 1.025.592l1.604-.653a.5.5 0 0 1 .583.157l1.064 1.366a.75.75 0 0 0 1.184 0l1.063-1.366a.5.5 0 0 1 .583-.157l1.604.653a.75.75 0 0 0 1.025-.592l.237-1.716a.5.5 0 0 1 .427-.427l1.716-.237a.75.75 0 0 0 .592-1.025l-.653-1.604a.5.5 0 0 1 .157-.583l1.366-1.064a.75.75 0 0 0 0-1.184l-1.366-1.063a.5.5 0 0 1-.157-.583l.653-1.604a.75.75 0 0 0-.592-1.025l-1.716-.237a.5.5 0 0 1-.426-.427l-.238-1.716a.75.75 0 0 0-1.025-.592l-1.604.653a.5.5 0 0 1-.583-.157z"></svg:path><svg:path fill="url(#fluentColorAddStarburst201)" fill-opacity=".95" d="M6.5 10a.5.5 0 0 1 .5-.5h3v-3a.5.5 0 0 1 1 0v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3H7a.5.5 0 0 1-.5-.5"></svg:path><svg:defs><svg:radialgradient id="fluentColorAddStarburst200" cx="0" cy="0" r="1" gradientTransform="matrix(-19.58616 -34.63252 33.172 -18.76018 22.147 21.623)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFC470"></svg:stop><svg:stop offset=".251" stop-color="#FF835C"></svg:stop><svg:stop offset=".55" stop-color="#F24A9D"></svg:stop><svg:stop offset=".814" stop-color="#B339F0"></svg:stop></svg:radialgradient><svg:lineargradient id="fluentColorAddStarburst201" x1="13.944" x2="5.55" y1="16.259" y2="10.821" gradientUnits="userSpaceOnUse"><svg:stop offset=".024" stop-color="#FFC8D7"></svg:stop><svg:stop offset=".807" stop-color="#fff"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class FluentColorAddStarburst20Icon {
+  readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -8496,6 +8479,23 @@ export class FluentColorLockShield16Icon {
 })
 export class FluentColorLockShield20Icon {
   readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentColorLockShield24Icon],svg[fluent-color-lock-shield-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorLockShield240)" d="M12 2a4 4 0 0 0-4 4v1.5h1.5V6a2.5 2.5 0 0 1 5 0v1.5H16V6a4 4 0 0 0-4-4"></svg:path><svg:path fill="url(#fluentColorLockShield241)" d="M20 10.25A3.25 3.25 0 0 0 16.75 7h-9.5A3.25 3.25 0 0 0 4 10.25v7.5A3.25 3.25 0 0 0 7.25 21h9.5A3.25 3.25 0 0 0 20 17.75z"></svg:path><svg:path fill="url(#fluentColorLockShield243)" d="M12 15.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"></svg:path><svg:path fill="url(#fluentColorLockShield244)" d="M20 10.25A3.25 3.25 0 0 0 16.75 7h-9.5A3.25 3.25 0 0 0 4 10.25v7.5A3.25 3.25 0 0 0 7.25 21h9.5A3.25 3.25 0 0 0 20 17.75z"></svg:path><svg:path fill="url(#fluentColorLockShield242)" d="M17.99 12.195c.652.65 1.907 1.685 3.449 1.898c.308.042.561.285.561.589v2.838c0 3.816-3.58 5.201-4.353 5.456a.46.46 0 0 1-.293 0C16.58 22.721 13 21.336 13 17.52v-2.838c0-.304.253-.547.561-.59c1.542-.212 2.797-1.247 3.45-1.898a.714.714 0 0 1 .979 0"></svg:path><svg:defs><svg:lineargradient id="fluentColorLockShield240" x1="9.714" x2="15.835" y1=".949" y2="11.057" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFC205"></svg:stop><svg:stop offset="1" stop-color="#FB5937"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorLockShield241" x1="21.143" x2="6.542" y1="21.875" y2="8.278" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF6F47"></svg:stop><svg:stop offset="1" stop-color="#FFCD0F"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorLockShield242" x1="14.688" x2="23.007" y1="12" y2="21.767" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#62BE55"></svg:stop><svg:stop offset="1" stop-color="#1E794A"></svg:stop></svg:lineargradient><svg:radialgradient id="fluentColorLockShield243" cx="0" cy="0" r="1" gradientTransform="matrix(-1.49996 -5.25 7.28439 -2.0812 12.75 15.5)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#944600"></svg:stop><svg:stop offset="1" stop-color="#CD8E02"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorLockShield244" cx="0" cy="0" r="1" gradientTransform="rotate(142.708 5.52 11.934)scale(6.46446 7.08296)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#EB4824"></svg:stop><svg:stop offset=".99" stop-color="#EB4824" stop-opacity="0"></svg:stop></svg:radialgradient></svg:defs></svg:g>`,
+})
+export class FluentColorLockShield24Icon {
+  readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
 }

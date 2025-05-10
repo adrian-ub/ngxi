@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentRectangleLandscapeSyncOff28RegularIcon],svg[fluent-rectangle-landscape-sync-off-28-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.28 2.22a.75.75 0 1 0-1.06 1.06l1.39 1.392A3.75 3.75 0 0 0 2.004 7.75v12.5A3.75 3.75 0 0 0 5.754 24H14.5a7.5 7.5 0 0 1-.876-1.5h-7.87a2.25 2.25 0 0 1-2.25-2.25V7.75c0-.862.485-1.61 1.197-1.989l10.289 10.29a6.5 6.5 0 0 0 8.96 8.96l.77.77a.75.75 0 0 0 1.06-1.061zm18.994 21.115a4 4 0 0 1-2.575.334A4 4 0 0 1 17 21.686v.814a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-.727a3 3 0 0 0 3.74 1.574zM7.182 4l1.5 1.5H22.25a2.25 2.25 0 0 1 2.25 2.25v5.405c.554.35 1.058.769 1.5 1.247V7.75A3.75 3.75 0 0 0 22.25 4zM27 19.5a6.47 6.47 0 0 1-.944 3.375l-6.479-6.48l.06-.018A3 3 0 0 1 23.227 18H22.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-1 0v.814a4 4 0 0 0-5.192-1.688l-1.683-1.682A6.5 6.5 0 0 1 27 19.5"></svg:path>`,
+})
+export class FluentRectangleLandscapeSyncOff28RegularIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentRectanglePortrait12FilledIcon],svg[fluent-rectangle-portrait-12-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 9a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"></svg:path>`,
+})
+export class FluentRectanglePortrait12FilledIcon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentRectanglePortrait12RegularIcon],svg[fluent-rectangle-portrait-12-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 11a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2zM3 9a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1z"></svg:path>`,
+})
+export class FluentRectanglePortrait12RegularIcon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentRectanglePortrait16FilledIcon],svg[fluent-rectangle-portrait-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 12.5A2.5 2.5 0 0 0 5.5 15h5a2.5 2.5 0 0 0 2.5-2.5v-9A2.5 2.5 0 0 0 10.5 1h-5A2.5 2.5 0 0 0 3 3.5z"></svg:path>`,
+})
+export class FluentRectanglePortrait16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentRectanglePortrait16RegularIcon],svg[fluent-rectangle-portrait-16-regular-icon]',
   host: {
     role: 'img',
@@ -8427,74 +8495,6 @@ export class FluentSelectObjectSkew24RegularIcon {
   template: `<svg:path fill="currentColor" d="M15 4.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 0 0-3 0m-13 11a1.5 1.5 0 1 0 3 0a1.5 1.5 0 0 0-3 0m4-11a1.5 1.5 0 1 0 3 0a1.5 1.5 0 0 0-3 0m3.886.75h4.229a2.5 2.5 0 0 1 0-1.5h-4.23a2.5 2.5 0 0 1 0 1.5M3.61 13.002l2.37-6.517c.394.302.88.49 1.41.513l-2.37 6.517a2.5 2.5 0 0 0-1.41-.513m2.276 3.248h3.398a5.5 5.5 0 0 1-.278-1.5h-3.12a2.5 2.5 0 0 1 0 1.5M16.39 6.998l-.77 2.116a5.5 5.5 0 0 0-1.56-.097l.92-2.532c.394.302.88.49 1.41.513M19 14.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.646-1.146a.5.5 0 0 0-.708-.708L14.5 13.793l-1.146-1.147a.5.5 0 0 0-.708.708l1.147 1.146l-1.147 1.146a.5.5 0 0 0 .708.708l1.146-1.147l1.146 1.147a.5.5 0 0 0 .708-.708L15.207 14.5z"></svg:path>`,
 })
 export class FluentSelectObjectSkewDismiss20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentSelectObjectSkewDismiss20RegularIcon],svg[fluent-select-object-skew-dismiss-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16.487 6h.013a1.5 1.5 0 1 0-1.415-2l-.006.019a1.5 1.5 0 0 0 .468 1.64l.006.004c.255.208.58.334.934.337M2 15.5a1.5 1.5 0 1 0 2.921-.481L4.915 15a1.5 1.5 0 0 0-1.402-1H3.5A1.5 1.5 0 0 0 2 15.5M7.487 6H7.5a1.5 1.5 0 0 0 1.415-1l.006-.019A1.5 1.5 0 0 0 8.915 4a1.5 1.5 0 1 0-2.368 1.658l.006.005c.255.208.58.334.934.337m-1.294.631l-2.326 6.396c.34.05.659.169.94.341l2.326-6.395a2.5 2.5 0 0 1-.94-.342M14.05 5h-4.1a2.5 2.5 0 0 0 0-1h4.1a2.5 2.5 0 0 0 0 1m.45 4q.445 0 .87.069l.763-2.096a2.5 2.5 0 0 1-.94-.342l-.862 2.372Q14.415 9 14.5 9m-5.478 6q.047.516.185 1H5.95a2.5 2.5 0 0 0 0-1zM19 14.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.646-1.146a.5.5 0 0 0-.708-.708L14.5 13.793l-1.146-1.147a.5.5 0 0 0-.708.708l1.147 1.146l-1.147 1.146a.5.5 0 0 0 .708.708l1.146-1.147l1.146 1.147a.5.5 0 0 0 .708-.708L15.207 14.5z"></svg:path>`,
-})
-export class FluentSelectObjectSkewDismiss20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentSelectObjectSkewDismiss24FilledIcon],svg[fluent-select-object-skew-dismiss-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18.586 6.414a2 2 0 0 0 1.9.527a2 2 0 1 0-1.923-.55zM2 19a2 2 0 1 0 4 0a2 2 0 0 0-4 0M6.586 6.414a2 2 0 0 0 1.9.527A2.004 2.004 0 0 0 10 5a2 2 0 1 0-3.437 1.39zM6.26 7.445l-2.445 8.56Q3.906 16 4 16c.648 0 1.248.206 1.739.555l2.446-8.56a3 3 0 0 1-1.923-.55M17.171 6h-6.342a3 3 0 0 0 0-2h6.342a3 3 0 0 0 0 2m-5.673 14a6.5 6.5 0 0 1-.48-2H6.83a3 3 0 0 1 0 2zm8.687-12.006l-.928 3.246a6.5 6.5 0 0 0-2.013-.235l1.017-3.56a3 3 0 0 0 1.924.55M23 17.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-7.146-2.354a.5.5 0 0 0-.708.708l1.647 1.646l-1.647 1.646a.5.5 0 0 0 .708.708l1.646-1.647l1.646 1.647a.5.5 0 0 0 .708-.708L18.207 17.5l1.647-1.646a.5.5 0 0 0-.708-.708L17.5 16.793z"></svg:path>`,
-})
-export class FluentSelectObjectSkewDismiss24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentSelectObjectSkewDismiss24RegularIcon],svg[fluent-select-object-skew-dismiss-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18.882 6.658a2 2 0 0 0 1.33.33a2 2 0 1 0-1.33-.33M2 19a2 2 0 1 0 4 0a2 2 0 0 0-4 0M6.882 6.658a2 2 0 0 0 1.33.33A2.002 2.002 0 0 0 9.855 4.25a2 2 0 1 0-2.973 2.408m-2.805 9.343l2.404-8.414c.425.25.917.399 1.442.412L5.52 16.413A3 3 0 0 0 4.077 16M17.095 5.75h-6.19a3 3 0 0 0 0-1.5h6.19a3 3 0 0 0 0 1.5m-5.695 14a6.5 6.5 0 0 1-.357-1.5H6.905a3 3 0 0 1 0 1.5zm8.523-11.751l-.908 3.179a6.5 6.5 0 0 0-1.51-.178l.976-3.413c.425.25.917.399 1.442.412M23 17.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-7.146-2.354a.5.5 0 0 0-.708.708l1.647 1.646l-1.647 1.646a.5.5 0 0 0 .708.708l1.646-1.647l1.646 1.647a.5.5 0 0 0 .708-.708L18.207 17.5l1.647-1.646a.5.5 0 0 0-.708-.708L17.5 16.793z"></svg:path>`,
-})
-export class FluentSelectObjectSkewDismiss24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentSelectObjectSkewEdit20FilledIcon],svg[fluent-select-object-skew-edit-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15 4.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 0 0-3 0m-13 11a1.5 1.5 0 1 0 3 0a1.5 1.5 0 0 0-3 0m4-11a1.5 1.5 0 1 0 3 0a1.5 1.5 0 0 0-3 0m3.886.75h4.229a2.5 2.5 0 0 1 0-1.5h-4.23a2.5 2.5 0 0 1 0 1.5M3.61 13.002l2.37-6.517c.394.302.88.49 1.41.513l-2.37 6.517a2.5 2.5 0 0 0-1.41-.513m2.276 3.248h3.522l.024-.095c.117-.467.337-.901.644-1.27q.018-.068.039-.135h-4.23a2.5 2.5 0 0 1 0 1.5M16.39 6.998l-.92 2.532a3 3 0 0 0-.368.31l-2.109 2.11l1.987-5.465c.394.302.88.49 1.41.513m-5.41 8.38l4.83-4.83a1.87 1.87 0 1 1 2.644 2.645l-4.83 4.829a2.2 2.2 0 0 1-1.02.578l-1.498.374a.89.89 0 0 1-1.079-1.078l.375-1.498a2.2 2.2 0 0 1 .578-1.02"></svg:path>`,
-})
-export class FluentSelectObjectSkewEdit20FilledIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

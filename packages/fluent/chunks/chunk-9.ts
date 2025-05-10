@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentCloudLink24FilledIcon],svg[fluent-cloud-link-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.08 9.02a6.001 6.001 0 0 1 11.84 0a4.5 4.5 0 0 1 4.077 4.31a4.74 4.74 0 0 0-3.747-1.83h-3.5a4.75 4.75 0 0 0-4.417 6.5H6.5a4.5 4.5 0 0 1-.42-8.98M22 16.25a3.75 3.75 0 0 0-3.75-3.75l-.102.007A.75.75 0 0 0 18.25 14l.154.005a2.25 2.25 0 0 1-.154 4.495l-.003.005l-.102.007a.75.75 0 0 0 .108 1.493V20l.2-.005A3.75 3.75 0 0 0 22 16.25m-6.5-3a.75.75 0 0 0-.75-.75l-.2.005a3.75 3.75 0 0 0 .2 7.495l.102-.007a.75.75 0 0 0-.102-1.493l-.154-.005A2.25 2.25 0 0 1 14.75 14l.102-.007a.75.75 0 0 0 .648-.743m3.5 3a.75.75 0 0 0-.75-.75h-3.5l-.102.007A.75.75 0 0 0 14.75 17h3.5l.102-.007A.75.75 0 0 0 19 16.25"></svg:path>`,
+})
+export class FluentCloudLink24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCloudLink24RegularIcon],svg[fluent-cloud-link-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 5.5a4.5 4.5 0 0 0-4.495 4.285a.75.75 0 0 1-.75.715H6.5a3 3 0 1 0 0 6h3.507c.027.527.14 1.032.326 1.5H6.5a4.5 4.5 0 0 1-.42-8.98a6.001 6.001 0 0 1 11.84 0a4.5 4.5 0 0 1 4.077 4.31a4.76 4.76 0 0 0-2.005-1.5A3 3 0 0 0 17.5 10.5h-.256a.75.75 0 0 1-.749-.715A4.5 4.5 0 0 0 12 5.5m10 10.75a3.75 3.75 0 0 0-3.75-3.75l-.102.007A.75.75 0 0 0 18.25 14l.154.005a2.25 2.25 0 0 1-.154 4.495l-.003.005l-.102.007a.75.75 0 0 0 .108 1.493V20l.2-.005A3.75 3.75 0 0 0 22 16.25m-6.5-3a.75.75 0 0 0-.75-.75l-.2.005a3.75 3.75 0 0 0 .2 7.495l.102-.007a.75.75 0 0 0-.102-1.493l-.154-.005A2.25 2.25 0 0 1 14.75 14l.102-.007a.75.75 0 0 0 .648-.743m3.5 3a.75.75 0 0 0-.75-.75h-3.5l-.102.007A.75.75 0 0 0 14.75 17h3.5l.102-.007A.75.75 0 0 0 19 16.25"></svg:path>`,
+})
+export class FluentCloudLink24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCloudOff16FilledIcon],svg[fluent-cloud-off-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m12.254 12.961l1.892 1.893a.5.5 0 0 0 .708-.708l-13-13a.5.5 0 1 0-.708.708L4.45 5.156c-.215.414-.36.87-.419 1.351A3.25 3.25 0 0 0 4.25 13h7.5q.257 0 .504-.039M15 9.75c0 .867-.34 1.654-.892 2.237l-8.32-8.32a4 4 0 0 1 6.182 2.84A3.25 3.25 0 0 1 15 9.75"></svg:path>`,
+})
+export class FluentCloudOff16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentCloudOff16RegularIcon],svg[fluent-cloud-off-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m12.254 12.961l1.892 1.893a.5.5 0 0 0 .708-.708l-13-13a.5.5 0 1 0-.708.708L4.45 5.156c-.215.414-.36.87-.419 1.351A3.25 3.25 0 0 0 4.25 13h7.5q.257 0 .504-.039M11.293 12H4.25a2.25 2.25 0 0 1 0-4.5h.25A.5.5 0 0 0 5 7c0-.384.072-.751.204-1.09zM14 9.75c0 .59-.227 1.128-.6 1.53l.708.707a3.25 3.25 0 0 0-2.138-5.48a4 4 0 0 0-6.182-2.84l.726.726A3 3 0 0 1 11 7a.5.5 0 0 0 .5.5h.25A2.25 2.25 0 0 1 14 9.75"></svg:path>`,
+})
+export class FluentCloudOff16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentCloudOff20FilledIcon],svg[fluent-cloud-off-20-filled-icon]',
   host: {
     role: 'img',
@@ -8427,74 +8495,6 @@ export class FluentContactCardLink16RegularIcon {
   template: `<svg:path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h13A1.5 1.5 0 0 1 18 5.5v5.837A3.5 3.5 0 0 0 16.5 11h-4a3.5 3.5 0 0 0-3.163 5H3.5A1.5 1.5 0 0 1 2 14.5zm3 3a1.5 1.5 0 1 0 3 0a1.5 1.5 0 0 0-3 0m4 3.199a.95.95 0 0 0-.949-.949H4.95a.95.95 0 0 0-.949.949c0 .847.577 1.585 1.399 1.791l.059.015c.684.17 1.4.17 2.084 0l.06-.015A1.846 1.846 0 0 0 9 11.699M11.5 8a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm1 4a2.5 2.5 0 0 0 0 5h.5a.5.5 0 0 0 0-1h-.5a1.5 1.5 0 0 1 0-3h.5a.5.5 0 0 0 0-1zm3.5 0a.5.5 0 0 0 0 1h.5a1.5 1.5 0 0 1 0 3H16a.5.5 0 0 0 0 1h.5a2.5 2.5 0 0 0 0-5zm-3.5 2a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"></svg:path>`,
 })
 export class FluentContactCardLink20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentContactCardLink20RegularIcon],svg[fluent-contact-card-link-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6.5 10a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m-1.551.75a.95.95 0 0 0-.949.949c0 .847.577 1.585 1.399 1.791l.059.015c.684.17 1.4.17 2.084 0l.06-.015A1.846 1.846 0 0 0 9 11.699a.95.95 0 0 0-.949-.949zM11 8.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M9.035 15H3.75a.75.75 0 0 1-.75-.75v-8.5A.75.75 0 0 1 3.75 5h12.5a.75.75 0 0 1 .75.75v5.285c.353.05.69.154 1 .302V5.75A1.75 1.75 0 0 0 16.25 4H3.75A1.75 1.75 0 0 0 2 5.75v8.5c0 .966.784 1.75 1.75 1.75h5.587a3.5 3.5 0 0 1-.302-1m3.465-3a2.5 2.5 0 0 0 0 5h.5a.5.5 0 0 0 0-1h-.5a1.5 1.5 0 0 1 0-3h.5a.5.5 0 0 0 0-1zm3.5 0a.5.5 0 0 0 0 1h.5a1.5 1.5 0 0 1 0 3H16a.5.5 0 0 0 0 1h.5a2.5 2.5 0 0 0 0-5zm-4 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5"></svg:path>`,
-})
-export class FluentContactCardLink20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentContactCardRibbon16FilledIcon],svg[fluent-contact-card-ribbon-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1 4.75C1 3.784 1.784 3 2.75 3h10.5c.966 0 1.75.784 1.75 1.75v1.785a4 4 0 0 0-2.37-.518A.5.5 0 0 0 12.5 6h-3a.5.5 0 0 0 0 1h.854a4 4 0 0 0-1.282 2.242a.5.5 0 0 0-.055.387A4 4 0 0 0 10 12.645V13H2.75A1.75 1.75 0 0 1 1 11.25zm4.261 2.964a1.357 1.357 0 1 0 0-2.714a1.357 1.357 0 0 0 0 2.714m-1.403.678A.86.86 0 0 0 3 9.25a1.67 1.67 0 0 0 1.265 1.62l.053.014c.62.155 1.267.155 1.886 0l.054-.013a1.67 1.67 0 0 0 1.265-1.62a.86.86 0 0 0-.858-.859zM16 10a3 3 0 1 1-6 0a3 3 0 0 1 6 0m-1 3.465A4 4 0 0 1 13 14a4 4 0 0 1-2-.535v2.285a.25.25 0 0 0 .378.215L13 15l1.622.965A.25.25 0 0 0 15 15.75z"></svg:path>`,
-})
-export class FluentContactCardRibbon16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentContactCardRibbon16RegularIcon],svg[fluent-contact-card-ribbon-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1 4.75C1 3.784 1.784 3 2.75 3h10.5c.966 0 1.75.784 1.75 1.75v1.785a4 4 0 0 0-1-.409V4.75a.75.75 0 0 0-.75-.75H2.75a.75.75 0 0 0-.75.75v6.5c0 .414.336.75.75.75h6.785q.202.346.465.646V13H2.75A1.75 1.75 0 0 1 1 11.25zM12.5 6a.5.5 0 0 1 .13.017A4 4 0 0 0 10.354 7H9.5a.5.5 0 0 1 0-1zM5.261 7.714a1.357 1.357 0 1 0 0-2.714a1.357 1.357 0 0 0 0 2.714m-1.403.678A.86.86 0 0 0 3 9.25a1.67 1.67 0 0 0 1.265 1.62l.053.014c.62.155 1.267.155 1.886 0l.054-.013a1.67 1.67 0 0 0 1.265-1.62a.86.86 0 0 0-.858-.859zM16 10a3 3 0 1 1-6 0a3 3 0 0 1 6 0m-1 3.465A4 4 0 0 1 13 14a4 4 0 0 1-2-.535v2.285a.25.25 0 0 0 .378.215L13 15l1.622.965A.25.25 0 0 0 15 15.75z"></svg:path>`,
-})
-export class FluentContactCardRibbon16RegularIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentContactCardRibbon20FilledIcon],svg[fluent-contact-card-ribbon-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.5 4A1.5 1.5 0 0 0 2 5.5v9A1.5 1.5 0 0 0 3.5 16H13v-.354A4.01 4.01 0 0 1 12.126 12H11.5a.5.5 0 0 1 0-1h1.035A4 4 0 0 1 18 9.535V5.5A1.5 1.5 0 0 0 16.5 4zm3 6a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3m1.551.75a.95.95 0 0 1 .949.949c0 .847-.577 1.585-1.399 1.791l-.059.015c-.684.17-1.4.17-2.084 0l-.06-.015A1.846 1.846 0 0 1 4 11.699a.95.95 0 0 1 .949-.949zM11 8.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m8 4.5a3 3 0 1 1-6 0a3 3 0 0 1 6 0m-1 3.465A4 4 0 0 1 16 17a4 4 0 0 1-2-.535v2.285a.25.25 0 0 0 .378.215L16 18l1.622.965A.25.25 0 0 0 18 18.75z"></svg:path>`,
-})
-export class FluentContactCardRibbon20FilledIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

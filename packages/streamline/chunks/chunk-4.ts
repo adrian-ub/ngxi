@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[streamlineNecktieIcon],svg[streamline-necktie-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M8.5 3.5h-3l-.561-1.684A1 1 0 0 1 5.887.5h2.226a1 1 0 0 1 .948 1.316zm0 0l1 7.5L7 13.5L4.5 11l1-7.5"></svg:path>`,
+})
+export class StreamlineNecktieIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[streamlineNecktieSolidIcon],svg[streamline-necktie-solid-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class StreamlineSmileyThrowUpIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7 0a7 7 0 0 1 4.62 12.26a3 3 0 0 0-.278-.253a5 5 0 0 0-.406-.289c.145-.21.242-.465.27-.756c.07-.737-.076-1.406-.425-1.972A3.23 3.23 0 0 0 9.5 7.833c-.894-.464-1.91-.56-2.5-.56c-.587 0-1.597.095-2.487.554c-.46.237-.938.598-1.28 1.141c-.352.558-.505 1.222-.443 1.954c.027.312.13.576.281.791a6 6 0 0 0-.413.294c-.069.055-.17.139-.277.252A7 7 0 0 1 7 0m3.473 3.362a.625.625 0 0 0-.867.173L8.498 5.197a.625.625 0 0 0 .52.972h2.216a.625.625 0 1 0 0-1.25h-1.048l.46-.69a.625.625 0 0 0-.174-.867Zm-6.079.173a.625.625 0 0 0-1.04.694l.46.69H2.766a.625.625 0 1 0 0 1.25h2.216a.625.625 0 0 0 .52-.972zM7 8.524c.99 0 3.15.343 2.962 2.32a.393.393 0 0 1-.401.344h-.714c.003.687.654 1.1 1.218 1.457c.432.273.813.514.813.822c0 0-.167.533-3.878.533c-3.71 0-3.878-.533-3.878-.533c0-.308.381-.549.813-.822c.564-.358 1.215-.77 1.218-1.457H4.49c-.23 0-.435-.155-.453-.371C3.87 8.863 6.014 8.524 7 8.524" clip-rule="evenodd"></svg:path>`,
 })
 export class StreamlineSmileyThrowUpSolidIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineSmileyVeryShockedIcon],svg[streamline-smiley-very-shocked-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M7 8.5v2m-6 3c.245-.388.661-1.473.367-2.714s-.122-1.81 0-1.94c.245-.387.955-.775 1.836.776s.857 3.232.735 3.878m9.062 0c-.245-.388-.661-1.473-.367-2.714s.122-1.81 0-1.94c-.245-.387-.955-.775-1.836.776s-.857 3.232-.735 3.878M2 4.5a2 2.5 0 1 0 4 0a2 2.5 0 1 0-4 0m6 0a2 2.5 0 1 0 4 0a2 2.5 0 1 0-4 0"></svg:path><svg:path d="M1.762 8.53C1.272 7.865 1 7.204 1 6C1 2.253 3.693.5 7 .5s6 1.753 6 5.5c0 1.205-.272 1.866-.762 2.53m-8.437 2.596C4.461 12.096 5.208 13 7 13s2.539-.905 3.199-1.874"></svg:path></svg:g>`,
-})
-export class StreamlineSmileyVeryShockedIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

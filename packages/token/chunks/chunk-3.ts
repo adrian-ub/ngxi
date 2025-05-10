@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[tokenTaikoIcon],svg[token-taiko-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m20.622 16.86l-3.085-4.107a1.97 1.97 0 0 0-1.36-.773a.38.38 0 0 1-.287-.185a.37.37 0 0 1-.02-.338a1.88 1.88 0 0 0-.003-1.54l-2.086-4.67A1.94 1.94 0 0 0 12 4.104c-.772 0-1.471.449-1.78 1.141L8.132 9.917a1.9 1.9 0 0 0-.004 1.54a.37.37 0 0 1-.019.338a.38.38 0 0 1-.288.185a1.97 1.97 0 0 0-1.36.773L3.379 16.86a1.875 1.875 0 0 0-.118 2.082a1.96 1.96 0 0 0 1.899.94l5.171-.563a1.96 1.96 0 0 0 1.362-.768a.386.386 0 0 1 .616 0c.316.42.8.707 1.362.768l5.171.564a1.96 1.96 0 0 0 1.899-.941a1.875 1.875 0 0 0-.118-2.082m-11.14-6.356l2.09-4.677a.47.47 0 0 1 .859 0l2.09 4.677a.47.47 0 0 1-.039.452a.49.49 0 0 1-.408.216H9.927a.49.49 0 0 1-.408-.216a.47.47 0 0 1-.039-.452zm1.072 7.12a.49.49 0 0 1-.38.258l-5.177.564a.47.47 0 0 1-.459-.226a.45.45 0 0 1 .03-.502l3.087-4.111a.49.49 0 0 1 .419-.194a.49.49 0 0 1 .395.238l.003.005l2.067 3.51l.004.005c.082.14.087.31.013.453zm1.871-1.588a.494.494 0 0 1-.85 0l-1.589-2.695a.47.47 0 0 1 0-.48a.5.5 0 0 1 .426-.242h3.175a.49.49 0 0 1 .425.24a.47.47 0 0 1 0 .481zm7.038 2.184a.47.47 0 0 1-.459.227l-5.176-.564a.49.49 0 0 1-.381-.259a.47.47 0 0 1 .013-.453l.003-.006l2.067-3.509l.003-.005a.492.492 0 0 1 .814-.044l3.088 4.11c.11.148.121.345.029.503z"></svg:path>`,
-})
-export class TokenTaikoIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[tokenTakiIcon],svg[token-taki-icon]',
   host: {
     role: 'img',
@@ -5163,6 +5146,23 @@ export class TokenZyxIcon {
   template: `<svg:path fill="currentColor" d="M8.29 3.1a.79.79 0 0 0-.914.105l-.965.87c-.425.385-.35 1.1.16 1.37l7.79 4.2l-5.45 4a.63.63 0 0 0 .08 1.07l8.99 4.545l-1.25.905L5.996 14.14l5.065-3.6a.636.636 0 0 0-.035-1.055l-3.11-1.91l-.46.69l2.885 1.77l-5.08 3.615c-.37.265-.34.84.055 1.065L16.34 20.9c.27.15.6.13.85-.05l1.255-.91a.85.85 0 0 0-.105-1.43l-8.69-4.39l5.45-3.99c.37-.27.33-.85-.07-1.065L6.946 4.7l.96-.87l10.105 5.6l-5.475 4.005A.64.64 0 0 0 12.6 14.5l4.975 2.76l.435-.765l-4.74-2.575l5.475-4.005a.64.64 0 0 0-.065-1.065zM7.03 8l.46-.685l-.92-.565l-.414.715l.875.54z"></svg:path>`,
 })
 export class TokenZzIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenAartIcon],svg[token-aart-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15.071 3.844H8.93L3 20.156h5.44l.747-2.081a3.376 3.376 0 0 1 1.8-5.074L12 10.144L13.012 13a3.373 3.373 0 0 1 1.806 5.074l.743 2.081H21z"></svg:path><svg:path fill="currentColor" d="M12 18.469a2.25 2.25 0 1 0 0-4.5a2.25 2.25 0 0 0 0 4.5"></svg:path>`,
+})
+export class TokenAartIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsPlagiarismOutlineRoundedIcon],svg[material-symbols-plagiarism-outline-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.45 17q.45 0 .888-.112t.812-.338l1.75 1.75q.275.275.7.275t.7-.275t.275-.7t-.275-.7l-1.75-1.75q.225-.375.338-.812T15 13.45Q15 12 13.975 11T11.5 10t-2.475 1.025T8 13.5t1 2.475T11.45 17m.05-2q-.625 0-1.062-.437T10 13.5t.438-1.062T11.5 12t1.063.438T13 13.5t-.437 1.063T11.5 15M6 22q-.825 0-1.412-.587T4 20V4q0-.825.588-1.412T6 2h7.175q.4 0 .763.15t.637.425l4.85 4.85q.275.275.425.638t.15.762V20q0 .825-.587 1.413T18 22zm7-14V4H6v16h12V9h-4q-.425 0-.712-.288T13 8M6 4v5zv16z"></svg:path>`,
-})
-export class MaterialSymbolsPlagiarismOutlineRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsPlagiarismOutlineSharpIcon],svg[material-symbols-plagiarism-outline-sharp-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsRearCameraOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="m6 16l4-4l-4-4l-1.4 1.4L6.2 11H2v2h4.2l-1.6 1.6zm10.5-8q.425 0 .713-.288T17.5 7t-.288-.712T16.5 6t-.712.288T15.5 7t.288.713T16.5 8M13 19h7V5h-7zM2 21v-6h2v4h7V5H4v4H2V3h20v18zm9-2V5z"></svg:path>`,
 })
 export class MaterialSymbolsRearCameraOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsRearCameraRoundedIcon],svg[material-symbols-rear-camera-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.5 8q.425 0 .713-.288T17.5 7t-.288-.712T16.5 6t-.712.288T15.5 7t.288.713T16.5 8M13 19h7V5h-7zm-9 2q-.825 0-1.412-.587T2 19v-5q0-.425.288-.712T3 13h3.2l-.9.9q-.275.275-.275.7t.275.7t.7.275t.7-.275l2.6-2.6q.3-.3.3-.7t-.3-.7L6.7 8.7q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7l.9.9H3q-.425 0-.712-.288T2 10V5q0-.825.588-1.412T4 3h16q.825 0 1.413.588T22 5v14q0 .825-.587 1.413T20 21z"></svg:path>`,
+})
+export class MaterialSymbolsRearCameraRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsEditRoadIcon],svg[material-symbols-edit-road-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16 12.125V4h2v6.125zM4 20V4h2v16zm6-12V4h2v4zm0 6v-4h2v4zm0 6v-4h2v4zm4 0v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zm6.575-5.6l.925-.975l-.925-.925l-.95.95z"></svg:path>`,
-})
-export class MaterialSymbolsEditRoadIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsEditRoadOutlineIcon],svg[material-symbols-edit-road-outline-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsFamilyLinkOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="M9.75 23q-1.275 0-2.262-.763T6.15 20.276Q6 19.7 5.525 19.35T4.45 19q-.4 0-.75.163t-.6.462L1.575 18.35q.525-.65 1.288-1T4.45 17q1.275 0 2.275.75t1.35 1.975q.15.575.625.925t1.05.35q.475 0 .85-.25t.65-.625l.025-.05l-7.9-10.925L12.5.2l9.125 8.95L12.5 21.8q-.45.625-1.2.913T9.75 23m2.75-4.625l6.5-9L12.5 3L6.025 9.4zm.025-7.7"></svg:path>`,
 })
 export class MaterialSymbolsFamilyLinkOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsFamilyLinkRoundedIcon],svg[material-symbols-family-link-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.75 23q-1.275 0-2.262-.763T6.15 20.276Q6 19.7 5.525 19.35T4.45 19q-.4 0-.75.15t-.6.45q-.125.175-.312.275t-.438.1q-.425 0-.712-.288t-.288-.712q0-.2.05-.35t.175-.275q.525-.65 1.288-1T4.45 17q1.275 0 2.275.75t1.35 1.975q.15.575.625.925t1.05.35q.475 0 .85-.25t.65-.625l.025-.05l-6.9-9.525q-.2-.275-.288-.575T4 9.375q0-.4.15-.762t.45-.663l6.5-6.375q.275-.275.65-.425T12.5 1t.75.15t.65.425l6.5 6.375q.3.3.45.663t.15.762q0 .3-.088.6t-.287.575L12.5 21.8q-.45.625-1.2.913T9.75 23"></svg:path>`,
+})
+export class MaterialSymbolsFamilyLinkRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

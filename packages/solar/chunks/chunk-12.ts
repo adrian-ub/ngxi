@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[solarSquareDoubleAltArrowLeftBoldIcon],svg[solar-square-double-alt-arrow-left-bold-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12m14.03-2.47a.75.75 0 0 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06L13.56 12zm-4-1.06a.75.75 0 0 1 0 1.06L9.56 12l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3-3a.75.75 0 0 1 0-1.06l3-3a.75.75 0 0 1 1.06 0" clip-rule="evenodd"></svg:path>`,
+})
+export class SolarSquareDoubleAltArrowLeftBoldIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[solarSquareDoubleAltArrowLeftBoldDuotoneIcon],svg[solar-square-double-alt-arrow-left-bold-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.464 20.536C4.93 22 7.286 22 12 22s7.071 0 8.535-1.465C22 19.072 22 16.714 22 12s0-7.071-1.465-8.536C19.072 2 16.714 2 12 2S4.929 2 3.464 3.464C2 4.93 2 7.286 2 12s0 7.071 1.464 8.535" opacity=".5"></svg:path><svg:path fill="currentColor" d="M12.03 9.53a.75.75 0 0 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06L9.56 12z"></svg:path><svg:path fill="currentColor" d="M16.03 9.53a.75.75 0 0 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06L13.56 12z"></svg:path>`,
+})
+export class SolarSquareDoubleAltArrowLeftBoldDuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[solarSquareDoubleAltArrowLeftBrokenIcon],svg[solar-square-double-alt-arrow-left-broken-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class SolarTextFieldLineDuotoneIcon {
   template: `<svg:g fill="none"><svg:path stroke="currentColor" stroke-width="1.5" d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12s0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12Z"></svg:path><svg:path fill="currentColor" d="M8.25 15.5a.75.75 0 0 0 1.5 0zm3.414-6.748l.498-.56zm-.414 1.673a.75.75 0 0 0 1.5 0zm.498-1.59l.56-.497zm-5.412-.083l-.498-.56zM5.25 10.425a.75.75 0 0 0 1.5 0zm1.002-1.59l-.56-.497zM7 14.75a.75.75 0 0 0 0 1.5zm4 1.5a.75.75 0 0 0 0-1.5zm-3.075-7H9v-1.5H7.925zM9 9.25h1.075v-1.5H9zm.75 6.25v-7h-1.5v7zm.325-6.25c.455 0 .726.001.922.026c.177.022.186.052.17.037l.995-1.121c-.3-.268-.651-.364-.98-.405c-.31-.038-.691-.037-1.107-.037zm2.675 1.175c0-.416.001-.797-.037-1.107c-.041-.329-.137-.68-.405-.98l-1.121.996c-.015-.017.015-.008.037.17c.025.195.026.466.026.921zm-1.584-1.112l.02.02l1.122-.995a2 2 0 0 0-.146-.146zM7.925 7.75c-.416 0-.797-.001-1.107.037c-.329.041-.68.137-.98.405l.996 1.121c-.017.015-.008-.015.17-.037c.195-.025.466-.026.921-.026zM6.75 10.425c0-.455.001-.726.026-.922c.022-.177.052-.186.037-.17l-1.121-.995c-.268.3-.364.651-.405.98c-.038.31-.037.691-.037 1.107zm-.912-2.233q-.077.069-.146.146l1.121.996l.02-.02zM7 16.25h4v-1.5H7z"></svg:path></svg:g>`,
 })
 export class SolarTextFieldLinearIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solarTextFieldOutlineIcon],svg[solar-text-field-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7.884 7.75c-.4 0-.766 0-1.066.037c-.329.041-.68.137-.98.405a2 2 0 0 0-.146.146c-.268.3-.364.651-.405.98c-.037.3-.037.666-.037 1.066v.041a.75.75 0 0 0 1.5 0c0-.455.001-.726.026-.922c.024-.195.227-.227.227-.227c.196-.025.467-.026.922-.026h.325v5.5H7a.75.75 0 0 0 0 1.5h4a.75.75 0 0 0 0-1.5H9.75v-5.5h.325c.455 0 .726.001.922.026c0 0 .203.032.227.227c.025.196.026.467.026.922a.75.75 0 0 0 1.5 0v-.041c0-.4 0-.766-.037-1.066c-.041-.329-.137-.68-.405-.98a2 2 0 0 0-.146-.146c-.3-.268-.651-.364-.98-.405c-.3-.037-.666-.037-1.066-.037z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M14.056 3.25H9.944c-1.838 0-3.294 0-4.433.153c-1.172.158-2.121.49-2.87 1.238c-.748.749-1.08 1.698-1.238 2.87c-.153 1.14-.153 2.595-.153 4.433v.112c0 1.838 0 3.294.153 4.433c.158 1.172.49 2.121 1.238 2.87c.749.748 1.698 1.08 2.87 1.238c1.14.153 2.595.153 4.433.153h4.112c1.838 0 3.294 0 4.433-.153c1.172-.158 2.121-.49 2.87-1.238c.748-.749 1.08-1.698 1.238-2.87c.153-1.14.153-2.595.153-4.433v-.112c0-1.838 0-3.294-.153-4.433c-.158-1.172-.49-2.121-1.238-2.87c-.749-.748-1.698-1.08-2.87-1.238c-1.14-.153-2.595-.153-4.433-.153M3.702 5.702c.423-.423 1.003-.677 2.009-.812c1.028-.138 2.382-.14 4.289-.14h4c1.907 0 3.262.002 4.29.14c1.005.135 1.585.389 2.008.812s.677 1.003.812 2.009c.138 1.028.14 2.382.14 4.289s-.002 3.262-.14 4.29c-.135 1.005-.389 1.585-.812 2.008s-1.003.677-2.009.812c-1.027.138-2.382.14-4.289.14h-4c-1.907 0-3.261-.002-4.29-.14c-1.005-.135-1.585-.389-2.008-.812s-.677-1.003-.812-2.009c-.138-1.028-.14-2.382-.14-4.289s.002-3.261.14-4.29c.135-1.005.389-1.585.812-2.008" clip-rule="evenodd"></svg:path>`,
-})
-export class SolarTextFieldOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solarTextItalicBoldIcon],svg[solar-text-italic-bold-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M14.977 1H9a1 1 0 1 0 0 2h4.656l-5.4 18H3a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2h-4.656l5.4-18H21a1 1 0 1 0 0-2z" clip-rule="evenodd"></svg:path>`,
-})
-export class SolarTextItalicBoldIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

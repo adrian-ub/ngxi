@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsVideoCameraBackAddRoundedIcon],svg[material-symbols-video-camera-back-add-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18v-5.45q0-.5.438-.763t.937-.062q.4.125.8.2T5 12q2.075 0 3.538-1.463T10 7q0-.425-.075-.825t-.2-.8q-.175-.5.075-.937T10.55 4H16q.825 0 1.413.588T18 6v4.5l3.15-3.15q.25-.25.55-.125t.3.475v8.6q0 .35-.3.475t-.55-.125L18 13.5V18q0 .825-.587 1.413T16 20zm1-10q-.425 0-.712-.288T4 9V8H3q-.425 0-.712-.288T2 7t.288-.712T3 6h1V5q0-.425.288-.712T5 4t.713.288T6 5v1h1q.425 0 .713.288T8 7t-.288.713T7 8H6v1q0 .425-.288.713T5 10m1 6h8q.3 0 .45-.275t-.05-.525l-2.375-3.175q-.15-.2-.4-.2t-.4.2L9 15l-1.225-1.625q-.15-.2-.4-.2t-.4.2L5.6 15.2q-.2.25-.05.525T6 16"></svg:path>`,
-})
-export class MaterialSymbolsVideoCameraBackAddRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsVideoCameraBackAddSharpIcon],svg[material-symbols-video-camera-back-add-sharp-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsWbIncandescentOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="M11 21v-1q0-.425.288-.712T12 19t.713.288T13 20v1q0 .425-.288.713T12 22t-.712-.288T11 21M3 11h1q.425 0 .713.288T5 12t-.288.713T4 13H3q-.425 0-.712-.288T2 12t.288-.712T3 11m17 0h1q.425 0 .713.288T22 12t-.288.713T21 13h-1q-.425 0-.712-.288T19 12t.288-.712T20 11m-2.7 8.2l-.7-.7q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l.7.7q.275.275.275.7t-.275.7t-.7.275t-.7-.275m-12-1.4l.7-.7q.275-.275.7-.275t.7.275t.275.7t-.275.7l-.7.7q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7M12 17q-2.075 0-3.537-1.462T7 12q0-1.2.538-2.238T9 8V5q0-.825.588-1.412T11 3h2q.825 0 1.413.588T15 5v3q.925.725 1.463 1.763T17 12q0 2.075-1.463 3.538T12 17m-1-9.9q.25-.05.5-.075T12 7t.5.025t.5.075V5h-2zm1 7.9q1.25 0 2.125-.875T15 12t-.875-2.125T12 9t-2.125.875T9 12t.875 2.125T12 15m0 0q-1.25 0-2.125-.875T9 12t.875-2.125T12 9t2.125.875T15 12t-.875 2.125T12 15"></svg:path>`,
 })
 export class MaterialSymbolsWbIncandescentRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsWbShadeIcon],svg[material-symbols-wb-shade-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.5 20L14 14.5V12l8 8zM14 20v-3l3 3zM4 20V10H2l6-6l6 6h-2v10zm3-6h2v-4H7z"></svg:path>`,
+})
+export class MaterialSymbolsWbShadeIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

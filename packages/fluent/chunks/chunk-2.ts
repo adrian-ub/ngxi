@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentArrowLeft16FilledIcon],svg[fluent-arrow-left-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14 8a.75.75 0 0 1-.75.75H4.463l3.287 2.941a.75.75 0 1 1-1 1.118L2 8.559A.75.75 0 0 1 2 7.44l4.75-4.25a.75.75 0 1 1 1 1.118L4.463 7.25h8.787A.75.75 0 0 1 14 8"></svg:path>`,
+})
+export class FluentArrowLeft16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentArrowLeft16RegularIcon],svg[fluent-arrow-left-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.5 8.5a.5.5 0 0 0 0-1H3.803l4.031-3.628a.5.5 0 1 0-.668-.744l-5 4.5a.5.5 0 0 0 0 .744l5 4.5a.5.5 0 1 0 .668-.744L3.803 8.5z"></svg:path>`,
+})
+export class FluentArrowLeft16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentArrowLeft20FilledIcon],svg[fluent-arrow-left-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.73 16.795a.75.75 0 0 0 1.031-1.09L4.522 10.75h12.724a.75.75 0 0 0 0-1.5H4.52l5.241-4.957a.75.75 0 1 0-1.03-1.09l-6.417 6.07a1 1 0 0 0-.3.566a.75.75 0 0 0 0 .329a1 1 0 0 0 .3.558z"></svg:path>`,
+})
+export class FluentArrowLeft20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentArrowLeft20RegularIcon],svg[fluent-arrow-left-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.159 16.867a.5.5 0 1 0 .674-.739l-6.168-5.63h13.831a.5.5 0 0 0 0-1H3.668l6.165-5.629a.5.5 0 0 0-.674-.738L2.243 9.445a.75.75 0 0 0-.24.631a.75.75 0 0 0 .24.477z"></svg:path>`,
+})
+export class FluentArrowLeft20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentArrowLeft24FilledIcon],svg[fluent-arrow-left-24-filled-icon]',
   host: {
     role: 'img',
@@ -8428,74 +8496,6 @@ export class FluentArrowUpExclamation16FilledIcon {
 })
 export class FluentArrowUpExclamation16RegularIcon {
   readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentArrowUpExclamation20FilledIcon],svg[fluent-arrow-up-exclamation-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 5a3 3 0 0 1 6 0c0 2.25-.788 5.214-1.224 6.69A1.84 1.84 0 0 1 6 13c-.811 0-1.542-.52-1.776-1.315C3.789 10.204 3 7.227 3 5m1 11a2 2 0 1 1 4 0a2 2 0 0 1-4 0M15 3.707V17.5a.5.5 0 0 1-1 0V3.707l-2.146 2.147a.5.5 0 0 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708z"></svg:path>`,
-})
-export class FluentArrowUpExclamation20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentArrowUpExclamation20RegularIcon],svg[fluent-arrow-up-exclamation-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 5a2 2 0 1 1 4 0c0 2.089-.745 4.925-1.183 6.405a.84.84 0 0 1-.816.595a.84.84 0 0 1-.817-.597C4.746 9.915 4 7.065 4 5m2-3a3 3 0 0 0-3 3c0 2.227.789 5.204 1.225 6.685A1.84 1.84 0 0 0 6 13c.81 0 1.54-.518 1.775-1.31C8.212 10.213 9 7.25 9 5a3 3 0 0 0-3-3M5 16a1 1 0 1 1 2 0a1 1 0 0 1-2 0m1-2a2 2 0 1 0 0 4a2 2 0 0 0 0-4m9-10.293V17.5a.5.5 0 0 1-1 0V3.707l-2.146 2.147a.5.5 0 0 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708z"></svg:path>`,
-})
-export class FluentArrowUpExclamation20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentArrowUpExclamation24FilledIcon],svg[fluent-arrow-up-exclamation-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18 4.56v16.69a.75.75 0 0 1-1.5 0V4.56l-2.22 2.22a.75.75 0 1 1-1.06-1.06l3.5-3.5a.75.75 0 0 1 1.06 0l3.5 3.5a.75.75 0 0 1-1.06 1.06zM3.125 5.878a3.875 3.875 0 1 1 7.75 0c0 2.95-1.204 6.564-1.81 8.204A2.185 2.185 0 0 1 7.003 15.5a2.19 2.19 0 0 1-2.065-1.423c-.606-1.647-1.813-5.28-1.813-8.199M4.5 19.502a2.501 2.501 0 1 1 5.002 0a2.501 2.501 0 0 1-5.002 0"></svg:path>`,
-})
-export class FluentArrowUpExclamation24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentArrowUpExclamation24RegularIcon],svg[fluent-arrow-up-exclamation-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18 4.56v16.69a.75.75 0 0 1-1.5 0V4.56l-2.22 2.22a.75.75 0 1 1-1.06-1.06l3.5-3.5a.75.75 0 0 1 1.06 0l3.5 3.5a.75.75 0 0 1-1.06 1.06zM3.125 5.878a3.875 3.875 0 1 1 7.75 0c0 2.95-1.204 6.564-1.81 8.204A2.185 2.185 0 0 1 7.003 15.5a2.19 2.19 0 0 1-2.065-1.423c-.606-1.647-1.813-5.28-1.813-8.199M7 3.502a2.375 2.375 0 0 0-2.375 2.375c0 2.624 1.114 6.03 1.72 7.682c.096.26.35.44.658.44c.306 0 .56-.18.655-.438c.606-1.64 1.718-5.03 1.718-7.684A2.375 2.375 0 0 0 7 3.502m-2.5 16a2.501 2.501 0 1 1 5.002 0a2.501 2.501 0 0 1-5.002 0m2.501-1.001a1.001 1.001 0 1 0 0 2.002a1.001 1.001 0 0 0 0-2.002"></svg:path>`,
-})
-export class FluentArrowUpExclamation24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
 }

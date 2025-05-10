@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[hugeiconsMicrosoftIcon],svg[hugeicons-microsoft-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 15.5c0-.943 0-1.414.293-1.707s.764-.293 1.707-.293H20c.943 0 1.414 0 1.707.293S22 14.557 22 15.5V20c0 .943 0 1.414-.293 1.707S20.943 22 20 22h-4.5c-.943 0-1.414 0-1.707-.293S13.5 20.943 13.5 20zM2 4c0-.943 0-1.414.293-1.707S3.057 2 4 2h4.5c.943 0 1.414 0 1.707.293S10.5 3.057 10.5 4v4.5c0 .943 0 1.414-.293 1.707s-.764.293-1.707.293H4c-.943 0-1.414 0-1.707-.293S2 9.443 2 8.5zm0 11.5c0-.943 0-1.414.293-1.707S3.057 13.5 4 13.5h4.5c.943 0 1.414 0 1.707.293s.293.764.293 1.707V20c0 .943 0 1.414-.293 1.707S9.443 22 8.5 22H4c-.943 0-1.414 0-1.707-.293S2 20.943 2 20zM13.5 4c0-.943 0-1.414.293-1.707S14.557 2 15.5 2H20c.943 0 1.414 0 1.707.293S22 3.057 22 4v4.5c0 .943 0 1.414-.293 1.707s-.764.293-1.707.293h-4.5c-.943 0-1.414 0-1.707-.293S13.5 9.443 13.5 8.5z" color="currentColor"></svg:path>`,
+})
+export class HugeiconsMicrosoftIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[hugeiconsMicrosoftAdminIcon],svg[hugeicons-microsoft-admin-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class HugeiconsPointingRight07Icon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M22 4.5h-6m6 0c0-.7-1.994-2.008-2.5-2.5M22 4.5c0 .7-1.994 2.008-2.5 2.5m-6.515 6.005h3.004m0 0h3.506c.831 0 1.505-.672 1.505-1.501c0-.83-.674-1.502-1.505-1.502h-5.464m1.958 3.003l-.027 1.055a2 2 0 0 1-.978 1.668m-.953-5.726H9.468m4.563 0l-2.76-2.594c-1.867-1.572-3.229-.746-3.985-.165L4.848 8.857C2.781 10.082 2 11.5 2 12.692v4.88c0 2.267 2.382 4.38 4.566 4.38l5.2.048a2 2 0 0 0 2.004-1.733l.19-1.54m-1.005-2.718h1.004c.375 0 .725-.103 1.025-.281m0 0l-.054 1.335a2 2 0 0 1-2.003 1.95h-1.004" color="currentColor"></svg:path>`,
 })
 export class HugeiconsPointingRight08Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsPokeballIcon],svg[hugeicons-pokeball-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:path id="hugeiconsPokeball0" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10"></svg:path></svg:defs><svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:use href="#hugeiconsPokeball0"></svg:use><svg:use href="#hugeiconsPokeball0"></svg:use><svg:path d="M15 13a3 3 0 1 1-6 0a3 3 0 0 1 6 0M2 11c2.596 1.004 4.853 1.668 6.998 1.993M22 11.003c-2.593 1.01-4.848 1.675-6.998 1.997"></svg:path></svg:g>`,
-})
-export class HugeiconsPokeballIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

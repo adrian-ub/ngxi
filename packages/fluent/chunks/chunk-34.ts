@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentTextboxSettings20RegularIcon],svg[fluent-textbox-settings-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.5 6a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zM6 9.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h2.707q.149-.524.393-1zm-1 4h3.707q.149.524.393 1H5.5A2.5 2.5 0 0 1 3 14.5v-9A2.5 2.5 0 0 1 5.5 3h9A2.5 2.5 0 0 1 17 5.5v4.1a5.5 5.5 0 0 0-1-.393V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16m6.565-4.558a2 2 0 0 1-1.43 2.478l-.461.118a4.7 4.7 0 0 0 .01 1.016l.35.083a2 2 0 0 1 1.455 2.519l-.126.423q.387.306.835.517l.325-.344a2 2 0 0 1 2.909.002l.337.358q.44-.203.822-.498l-.156-.556a2 2 0 0 1 1.43-2.478l.461-.118a4.7 4.7 0 0 0-.01-1.017l-.349-.082a2 2 0 0 1-1.456-2.52l.126-.421a4.3 4.3 0 0 0-.835-.519l-.324.344a2 2 0 0 1-2.91-.001l-.337-.358a4.3 4.3 0 0 0-.822.497zM14.5 15.5a1 1 0 1 1 0-2a1 1 0 0 1 0 2"></svg:path>`,
+})
+export class FluentTextboxSettings20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTextboxSettings24FilledIcon],svg[fluent-textbox-settings-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21 5.75A2.75 2.75 0 0 0 18.25 3H5.75A2.75 2.75 0 0 0 3 5.75v12.5A2.75 2.75 0 0 0 5.75 21h6.272a6.47 6.47 0 0 1-1.003-4H6.75a.75.75 0 0 1-.102-1.493l.102-.007h4.563A6.5 6.5 0 0 1 12.81 13H6.75a.75.75 0 0 1-.102-1.493l.102-.007h7.5c.162 0 .313.052.435.14A6.5 6.5 0 0 1 17.5 11a6.47 6.47 0 0 1 3.5 1.022zM17.25 7.5a.75.75 0 0 1 .102 1.493L17.25 9H6.75a.75.75 0 0 1-.102-1.493L6.75 7.5zm-4.75 8.129l.447.43a2 2 0 0 1 0 2.882l-.447.43c.2.574.49 1.103.853 1.57l.602-.178a2 2 0 0 1 2.51 1.45l.174.715a5.2 5.2 0 0 0 1.722 0l.173-.716a2 2 0 0 1 2.511-1.449l.602.178c.362-.467.652-.996.853-1.57l-.447-.43a2 2 0 0 1 0-2.882l.447-.43a5.5 5.5 0 0 0-.853-1.57l-.602.178a2 2 0 0 1-2.51-1.45l-.174-.715a5.2 5.2 0 0 0-1.723 0l-.172.716a2 2 0 0 1-2.511 1.449l-.602-.178a5.5 5.5 0 0 0-.853 1.57m5 3.371c-.8 0-1.45-.672-1.45-1.5S16.7 16 17.5 16s1.45.672 1.45 1.5S18.3 19 17.5 19"></svg:path>`,
+})
+export class FluentTextboxSettings24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTextboxSettings24RegularIcon],svg[fluent-textbox-settings-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.25 3A2.75 2.75 0 0 1 21 5.75v6.272a6.5 6.5 0 0 0-1.5-.709V5.75c0-.69-.56-1.25-1.25-1.25H5.75c-.69 0-1.25.56-1.25 1.25v12.5c0 .69.56 1.25 1.25 1.25h5.563c.173.534.412 1.037.709 1.5H5.75A2.75 2.75 0 0 1 3 18.25V5.75A2.75 2.75 0 0 1 5.75 3zm-4 8.5c.162 0 .313.052.435.14A6.5 6.5 0 0 0 12.81 13H6.75a.75.75 0 0 1-.102-1.493l.102-.007zm-7.5 4h4.563c-.154.478-.255.98-.294 1.5H6.75a.75.75 0 0 1-.102-1.493zm10.5-8H6.75l-.102.007A.75.75 0 0 0 6.75 9h10.5l.102-.007A.75.75 0 0 0 17.25 7.5m-4.75 8.129l.447.43a2 2 0 0 1 0 2.882l-.447.43c.2.574.49 1.103.853 1.57l.602-.178a2 2 0 0 1 2.51 1.45l.174.715a5.2 5.2 0 0 0 1.722 0l.173-.716a2 2 0 0 1 2.511-1.449l.602.178c.362-.467.652-.996.853-1.57l-.447-.43a2 2 0 0 1 0-2.882l.447-.43a5.5 5.5 0 0 0-.853-1.57l-.602.178a2 2 0 0 1-2.51-1.45l-.174-.715a5.2 5.2 0 0 0-1.723 0l-.172.716a2 2 0 0 1-2.511 1.449l-.602-.178a5.5 5.5 0 0 0-.853 1.57m5 3.371c-.8 0-1.45-.672-1.45-1.5S16.7 16 17.5 16s1.45.672 1.45 1.5S18.3 19 17.5 19"></svg:path>`,
+})
+export class FluentTextboxSettings24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentTextboxVertical20RegularIcon],svg[fluent-textbox-vertical-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path d="M13 6.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" fill="currentColor"></svg:path><svg:path d="M10 6.5a.5.5 0 1 0-1 0v4a.5.5 0 0 0 1 0v-4z" fill="currentColor"></svg:path><svg:path d="M7 6.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" fill="currentColor"></svg:path><svg:path d="M17 14.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 3 14.5v-9A2.5 2.5 0 0 1 5.5 3h9A2.5 2.5 0 0 1 17 5.5v9zm-1 0v-9A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16h9a1.5 1.5 0 0 0 1.5-1.5z" fill="currentColor"></svg:path></svg:g>`,
+})
+export class FluentTextboxVertical20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentThinking20FilledIcon],svg[fluent-thinking-20-filled-icon]',
   host: {
     role: 'img',
@@ -8428,74 +8496,6 @@ export class FluentVideoBackgroundEffect20RegularIcon {
 })
 export class FluentVideoBackgroundEffect24FilledIcon {
   readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentVideoBackgroundEffect24RegularIcon],svg[fluent-video-background-effect-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 16.938v2.121L5.059 20h-2.12zm16.002-2.503v2.122L18.56 20h-.566v-1.557zM8.75 14h6.495a1.75 1.75 0 0 1 1.744 1.607l.006.143V20h-1.5v-4.25a.25.25 0 0 0-.193-.243l-.057-.007H8.75a.25.25 0 0 0-.244.193l-.006.057V20H7v-4.25a1.75 1.75 0 0 1 1.606-1.744zm-.729-3.584c.06.579.243 1.12.523 1.6L2 18.56v-2.122zm13.98-.484v2.123l-4.007 4.01v-.315l-.004-.168a2.7 2.7 0 0 0-.387-1.247zM12.057 4L2 14.06v-2.121L9.936 4zm9.946 1.432v2.123l-5.667 5.67a2.7 2.7 0 0 0-.86-.216l-.23-.009h-.6a4 4 0 0 0 .855-1.062zM12 7a3 3 0 1 1 0 6a3 3 0 0 1 0-6m0 1.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3M7.559 4l-5.56 5.56V7.438L5.439 4zm13.497 0L15.91 9.149a4 4 0 0 0-.652-1.47L18.935 4zm-4.498 0l-2.543 2.544a4 4 0 0 0-1.6-.522L14.438 4z"></svg:path>`,
-})
-export class FluentVideoBackgroundEffect24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentVideoBackgroundEffect28FilledIcon],svg[fluent-video-background-effect-28-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6.44 4L2 8.44v2.12L8.56 4zM2 13.94v2.12L14.06 4h-2.12zm0 7.31q0 .15.016.295l7.983-7.983a4.5 4.5 0 0 1-.48-1.642L2 19.44zM14.42 7.02a4.5 4.5 0 0 1 1.642.479L19.56 4h-2.122zM7 19.94l-3.668 3.667c.414.25.9.393 1.418.393h.31L7 22.06zm11.918-4.297A3 3 0 0 0 18 15.5h-1.06l9.044-9.045Q26 6.6 26 6.75v1.81zM21 19.061V18.5c0-.456-.102-.89-.284-1.276L26 11.939v2.122zM21 24h.56L26 19.56v-2.12l-5 5zm-2.582-13.358a4.5 4.5 0 0 0-.598-1.522L22.94 4h.31c.519 0 1.004.144 1.418.393zM8 18.5V24h12v-5.5a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2m6-3.5a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7"></svg:path>`,
-})
-export class FluentVideoBackgroundEffect28FilledIcon {
-  readonly viewBox = input("0 0 28 28")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentVideoBackgroundEffect28RegularIcon],svg[fluent-video-background-effect-28-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6.44 4L2 8.44v2.12L8.56 4zM2 13.94v2.12L14.06 4h-2.12zm0 7.31q0 .15.016.295l7.983-7.983a4.5 4.5 0 0 1-.48-1.642L2 19.44zM14.42 7.02a4.5 4.5 0 0 1 1.642.479L19.56 4h-2.122zM7 19.94l-3.668 3.667c.414.25.9.393 1.418.393h.31L7 22.06zm11.918-4.297A3 3 0 0 0 18 15.5h-1.06l9.044-9.045Q26 6.6 26 6.75v1.81zM21 19.061V18.5c0-.456-.102-.89-.284-1.276L26 11.939v2.122zM21 24h.56L26 19.56v-2.12l-5 5zm-2.582-13.358a4.5 4.5 0 0 0-.598-1.522L22.94 4h.31c.519 0 1.004.144 1.418.393zM10 18a.5.5 0 0 0-.5.5V24H8v-5.5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2V24h-1.5v-5.5a.5.5 0 0 0-.5-.5zm2-6.5a2 2 0 1 1 4 0a2 2 0 0 1-4 0M14 8a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7"></svg:path>`,
-})
-export class FluentVideoBackgroundEffect28RegularIcon {
-  readonly viewBox = input("0 0 28 28")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentVideoBackgroundEffect32FilledIcon],svg[fluent-video-background-effect-32-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2 8.586L6.586 4h2.828L2 11.414zm0 9.828v-2.828L13.586 4h2.828l-3.062 3.062a6.53 6.53 0 0 0-3.29 3.29zm0 4.172l7.76-7.76c.202.69.515 1.334.92 1.909l-2.525 2.524a4 4 0 0 0-.896.896l-5.202 5.203A3.3 3.3 0 0 1 2 24.75zM17.826 6.76c.69.202 1.334.515 1.909.92L23.415 4h-2.83zm3.878 3.121c.354.645.6 1.357.718 2.11l6.824-6.823a3.25 3.25 0 0 0-1.747-1.081zM3.885 27.701L6.5 25.086v2.828L6.414 28H5.25a3.2 3.2 0 0 1-1.365-.3M21.5 18.5c.427 0 .838.067 1.224.19L30 11.415V8.586L20.086 18.5zm4 4v.414l4.5-4.5v-2.828l-4.991 4.991c.313.57.491 1.226.491 1.923m1.25 5.5H25.5v-.914l4.5-4.5v2.164q0 .389-.087.752l-2.411 2.41a3.3 3.3 0 0 1-.752.088M8 22.5V28h16v-5.5a2.5 2.5 0 0 0-2.5-2.5h-11A2.5 2.5 0 0 0 8 22.5m8-4.5a5 5 0 1 0 0-10a5 5 0 0 0 0 10"></svg:path>`,
-})
-export class FluentVideoBackgroundEffect32FilledIcon {
-  readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
 }

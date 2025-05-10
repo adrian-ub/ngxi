@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsStockpotOutlineIcon],svg[material-symbols-stockpot-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 8h18v9q0 1.25-.875 2.125T18 20H6q-1.25 0-2.125-.875T3 17zm2 2v7q0 .425.288.713T6 18h12q.425 0 .713-.288T19 17v-7zM3 7V5h6V4q0-.425.288-.712T10 3h4q.425 0 .713.288T15 4v1h6v2zm9 7"></svg:path>`,
-})
-export class MaterialSymbolsStockpotOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsStockpotOutlineRoundedIcon],svg[material-symbols-stockpot-outline-rounded-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsTableEyeIcon {
   template: `<svg:path fill="currentColor" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v8.325q-.475-.275-.975-.5t-1.025-.4V9h-6v3.425q-1.15.35-2.15 1T9 15H5v4h2.05q.275.55.55 1.05t.6.95zm0-8h6V9H5zm0-6h14V5H5zm11 16q-2.275 0-4.2-1.2T9 18.5q.875-2.1 2.8-3.3T16 14t4.2 1.2t2.8 3.3q-.875 2.1-2.8 3.3T16 23m0-2q1.425 0 2.688-.65t2.062-1.85q-.8-1.2-2.062-1.85T16 16t-2.687.65t-2.063 1.85q.8 1.2 2.063 1.85T16 21m0-1q-.625 0-1.062-.437T14.5 18.5t.438-1.062T16 17t1.063.438t.437 1.062t-.437 1.063T16 20"></svg:path>`,
 })
 export class MaterialSymbolsTableEyeOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsTableEyeOutlineRoundedIcon],svg[material-symbols-table-eye-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v6.875q0 .425-.288.713t-.712.287t-.712-.288t-.288-.712V9h-6.25v3.5q0 .825-.587 1.413t-1.413.587H5V19h1.625q.425 0 .713.288t.287.712t-.288.713t-.712.287zm0-8.5h5.75V9H5zM5 7h14V5H5zm11 16q-1.975 0-3.687-.9T9.55 19.55q-.15-.225-.225-.488t-.075-.537t.075-.55t.225-.525q1.05-1.65 2.763-2.55T16 14t3.688.9t2.762 2.55q.15.25.225.513t.075.537t-.075.538t-.225.512q-1.05 1.65-2.762 2.55T16 23m0-2q1.425 0 2.688-.65t2.062-1.85q-.8-1.2-2.062-1.85T16 16t-2.687.65t-2.063 1.85q.8 1.2 2.063 1.85T16 21m0-1q-.625 0-1.062-.437T14.5 18.5t.438-1.062T16 17t1.063.438t.437 1.062t-.437 1.063T16 20"></svg:path>`,
+})
+export class MaterialSymbolsTableEyeOutlineRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

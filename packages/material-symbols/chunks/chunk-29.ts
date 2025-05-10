@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsWbShadeIcon],svg[material-symbols-wb-shade-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M19.5 20L14 14.5V12l8 8zM14 20v-3l3 3zM4 20V10H2l6-6l6 6h-2v10zm3-6h2v-4H7z"></svg:path>`,
-})
-export class MaterialSymbolsWbShadeIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsWbShadeRoundedIcon],svg[material-symbols-wb-shade-rounded-icon]',
   host: {
     role: 'img',
@@ -4891,6 +4874,23 @@ export class MaterialSymbolsZoomOutMapRoundedIcon {
   template: `<svg:path fill="currentColor" d="M8 10.5q-.425 0-.712-.288T7 9.5t.288-.712T8 8.5h3q.425 0 .713.288T12 9.5t-.288.713T11 10.5zM9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"></svg:path>`,
 })
 export class MaterialSymbolsZoomOutRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbols10mpIcon],svg[material-symbols-10mp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.5 11.5H10v-6H7V7h1.5zm4.5 0h2.5q.425 0 .713-.288t.287-.712v-4q0-.425-.288-.712T15.5 5.5H13q-.425 0-.712.288T12 6.5v4q0 .425.288.713T13 11.5m.5-1.5V7H15v3zM6 18.5h1.5V14h1v3H10v-3h1v4.5h1.5v-5q0-.425-.288-.712T11.5 12.5H7q-.425 0-.712.288T6 13.5zm7.5 0H15V17h2q.425 0 .713-.288T18 16v-2.5q0-.425-.288-.712T17 12.5h-3.5zm1.5-3V14h1.5v1.5zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z"></svg:path>`,
+})
+export class MaterialSymbols10mpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

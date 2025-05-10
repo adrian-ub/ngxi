@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[letsIconsNotebookDuotoneLineIcon],svg[lets-icons-notebook-duotone-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.2"><svg:rect width="13" height="17" x="6" y="4" fill="currentColor" fill-opacity=".25" rx="2"></svg:rect><svg:path stroke-linecap="round" d="M15 10V8M4 9h4m-4 4h4m-4 4h4"></svg:path></svg:g>`,
+})
+export class LetsIconsNotebookDuotoneLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[letsIconsNotebookFillIcon],svg[lets-icons-notebook-fill-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class LetsIconsViewHorizontDuotoneLineIcon {
   template: `<svg:g fill="none"><svg:path stroke="currentColor" stroke-width="2" d="M11.725 7.382a9 9 0 0 1 .364 8.563"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M14 5c-2.814 2.814-10.029 6.509-10.911 6.955a.05.05 0 0 0 0 .09C3.97 12.49 11.186 16.185 14 19m2-7h5m-5-3l5-2m-5 8l5 2"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M13.687 9.519a10 10 0 0 0-.823-2.148L4 12l8.721 4.893a10 10 0 0 0 .966-2.413a3 3 0 1 1 0-4.962" clip-rule="evenodd"></svg:path></svg:g>`,
 })
 export class LetsIconsViewHorizontFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[letsIconsViewLightIcon],svg[lets-icons-view-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor"><svg:circle cx="12" cy="12" r="3.5"></svg:circle><svg:path d="M20.188 10.934c.388.472.582.707.582 1.066s-.194.594-.582 1.066C18.768 14.79 15.636 18 12 18s-6.768-3.21-8.188-4.934c-.388-.472-.582-.707-.582-1.066s.194-.594.582-1.066C5.232 9.21 8.364 6 12 6s6.768 3.21 8.188 4.934Z"></svg:path></svg:g>`,
-})
-export class LetsIconsViewLightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentShowerhead20RegularIcon],svg[fluent-showerhead-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.433 2.567a1.943 1.943 0 0 0-2.743 0l-2.043 2.038l-.006.006a6 6 0 0 0-6.747 1.014A1.913 1.913 0 0 0 4.148 8.85l7.003 7.004a1.913 1.913 0 0 0 3.225-1.748a6 6 0 0 0 1.013-6.748l.006-.007l2.038-2.033a1.94 1.94 0 0 0 0-2.751m-2.576 3.909a6 6 0 0 0-1.333-1.333l1.872-1.868a.943.943 0 1 1 1.331 1.335zm-8.021-.348a5 5 0 0 1 7.036 7.036l-.016-.016l-7.003-7.003zm-.714.7l7.05 7.051a.913.913 0 0 1-1.314 1.268L4.854 8.143A.913.913 0 0 1 6.122 6.83m.732 6.319a.5.5 0 0 1 0 .707l-2 2a.5.5 0 0 1-.708-.707l2-2a.5.5 0 0 1 .708 0m-2-1.293a.5.5 0 1 0-.708-.707l-2 2a.5.5 0 1 0 .708.707zm4 3.293a.5.5 0 0 1 0 .707l-2 2a.5.5 0 0 1-.708-.707l2-2a.5.5 0 0 1 .708 0"></svg:path>`,
+})
+export class FluentShowerhead20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentShowerhead24FilledIcon],svg[fluent-showerhead-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m21.49 4.982l-2.01 2.01a9 9 0 0 0-2.47-2.47l2.01-2.01a1.747 1.747 0 1 1 2.47 2.47M5.28 13.72a.75.75 0 0 1 0 1.06l-2 2a.75.75 0 0 1-1.06-1.06l2-2a.75.75 0 0 1 1.06 0m2.5 3.56a.75.75 0 1 0-1.06-1.06l-2 2a.75.75 0 1 0 1.06 1.06zm2.5 2.5a.75.75 0 1 0-1.06-1.06l-2 2a.75.75 0 1 0 1.06 1.06zM3.736 7.263a1.75 1.75 0 0 1 2.473 0l10.56 10.559a1.749 1.749 0 1 1-2.474 2.473L3.736 9.736a1.75 1.75 0 0 1 0-2.473m3.18-.707a3 3 0 0 0-.43-.352a8 8 0 0 1 11.316 11.304a3 3 0 0 0-.327-.393z"></svg:path>`,
+})
+export class FluentShowerhead24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentShowerhead24RegularIcon],svg[fluent-showerhead-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m15.605 4.856l2.124-2.125a2.497 2.497 0 1 1 3.531 3.531l-2.122 2.122a8.005 8.005 0 0 1-1.202 8.98a2.496 2.496 0 0 1-4.18 2.401l-9.49-9.49a2.497 2.497 0 0 1 2.35-4.192a8.005 8.005 0 0 1 8.989-1.227m2.71 2.23l1.884-1.884a.997.997 0 0 0-1.41-1.41l-1.885 1.886a8 8 0 0 1 1.41 1.409m-12.989.72a.997.997 0 0 0 0 1.41l9.49 9.489a.997.997 0 1 0 1.41-1.41l-9.49-9.49a.997.997 0 0 0-1.41 0M7.78 17.28a.75.75 0 1 0-1.06-1.06l-2 2a.75.75 0 1 0 1.06 1.06zm2.5 1.44a.75.75 0 0 1 0 1.06l-2 2a.75.75 0 0 1-1.06-1.06l2-2a.75.75 0 0 1 1.06 0m-5-3.94a.75.75 0 1 0-1.06-1.06l-2 2a.75.75 0 1 0 1.06 1.06zm11.816 1.256a6.501 6.501 0 0 0-9.132-9.132z"></svg:path>`,
+})
+export class FluentShowerhead24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentShowerhead32FilledIcon],svg[fluent-showerhead-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m28.377 6.623l-2.883 2.884a11.6 11.6 0 0 0-3.002-3.002l2.884-2.883a2.122 2.122 0 0 1 3.001 3.001M7.707 19.707a1 1 0 1 0-1.414-1.414l-3 3a1 1 0 1 0 1.414 1.414zm3 1.586a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414l3-3a1 1 0 0 1 1.414 0m3 4.414a1 1 0 0 0-1.414-1.414l-3 3a1 1 0 1 0 1.414 1.414zM8.237 9.622a2.13 2.13 0 0 0-2.978 3.047l14.096 14.096a2.13 2.13 0 0 0 3.024-3.002l-.01-.011L8.273 9.656zm1.097-1.027l-.026-.025c3.926-3.542 9.982-3.423 13.764.359s3.901 9.838.36 13.764l-.002-.002z"></svg:path>`,
+})
+export class FluentShowerhead32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentShowerhead32RegularIcon],svg[fluent-showerhead-32-regular-icon]',
   host: {
     role: 'img',
@@ -8428,74 +8496,6 @@ export class FluentSplitHorizontal16RegularIcon {
 })
 export class FluentSplitHorizontal20FilledIcon {
   readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentSplitHorizontal20RegularIcon],svg[fluent-split-horizontal-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M17.5 10a.5.5 0 0 0 0-1h-15a.5.5 0 0 0 0 1zM16 4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v4h1V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4h1zm0 7h-1v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-4H4v4a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2z"></svg:path>`,
-})
-export class FluentSplitHorizontal20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentSplitHorizontal24FilledIcon],svg[fluent-split-horizontal-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21.25 12.5a.75.75 0 0 0 0-1.5H2.75a.75.75 0 0 0 0 1.5zM17.75 2A2.25 2.25 0 0 1 20 4.25V10H4V4.25A2.25 2.25 0 0 1 6.25 2zM4 19.25V13.5h16v5.75a2.25 2.25 0 0 1-2.25 2.25H6.25A2.25 2.25 0 0 1 4 19.25"></svg:path>`,
-})
-export class FluentSplitHorizontal24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentSplitHorizontal24RegularIcon],svg[fluent-split-horizontal-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21.25 12.5a.75.75 0 0 0 0-1.5H2.75a.75.75 0 0 0 0 1.5zM20 4.25A2.25 2.25 0 0 0 17.75 2H6.25A2.25 2.25 0 0 0 4 4.25V10h1.5V4.25a.75.75 0 0 1 .75-.75h11.5a.75.75 0 0 1 .75.75V10H20zm-14.5 15V13.5H4v5.75a2.25 2.25 0 0 0 2.25 2.25h11.5A2.25 2.25 0 0 0 20 19.25V13.5h-1.5v5.75a.75.75 0 0 1-.75.75H6.25a.75.75 0 0 1-.75-.75"></svg:path>`,
-})
-export class FluentSplitHorizontal24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentSplitHorizontal28FilledIcon],svg[fluent-split-horizontal-28-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2.75 12.998a.75.75 0 0 0 0 1.5h22.5a.75.75 0 0 0 0-1.5zM21.25 2A2.75 2.75 0 0 1 24 4.75v7.248H4V4.75A2.75 2.75 0 0 1 6.75 2zM4 22.75v-7.252h20v7.252a2.75 2.75 0 0 1-2.75 2.75H6.75A2.75 2.75 0 0 1 4 22.75"></svg:path>`,
-})
-export class FluentSplitHorizontal28FilledIcon {
-  readonly viewBox = input("0 0 28 28")
   readonly width = input("1em")
   readonly height = input("1em")
 }

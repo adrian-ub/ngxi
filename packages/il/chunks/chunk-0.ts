@@ -19,6 +19,40 @@ export class IlAddUserIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[ilArrowDownIcon],svg[il-arrow-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M622 106L311 417L0 106l65-65l246 245L556 41z"></svg:path>`,
+})
+export class IlArrowDownIcon {
+  readonly viewBox = input("0 0 630 700")
+  readonly width = input("0.9em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ilArrowLeftIcon],svg[il-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M311 630L0 319L311 8l65 66l-245 245l245 245z"></svg:path>`,
+})
+export class IlArrowLeftIcon {
+  readonly viewBox = input("0 0 380 790")
+  readonly width = input("0.49em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[ilArrowRightIcon],svg[il-arrow-right-icon]',
   host: {
     role: 'img',
@@ -31,6 +65,23 @@ export class IlAddUserIcon {
 export class IlArrowRightIcon {
   readonly viewBox = input("0 0 380 790")
   readonly width = input("0.49em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ilArrowUpIcon],svg[il-arrow-up-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 352L311 41l311 311l-66 65l-245-245L65 417z"></svg:path>`,
+})
+export class IlArrowUpIcon {
+  readonly viewBox = input("0 0 630 700")
+  readonly width = input("0.9em")
   readonly height = input("1em")
 }
 
@@ -70,40 +121,6 @@ export class IlBasketIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ilArrowUpIcon],svg[il-arrow-up-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M0 352L311 41l311 311l-66 65l-245-245L65 417z"></svg:path>`,
-})
-export class IlArrowUpIcon {
-  readonly viewBox = input("0 0 630 700")
-  readonly width = input("0.9em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ilArrowLeftIcon],svg[il-arrow-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M311 630L0 319L311 8l65 66l-245 245l245 245z"></svg:path>`,
-})
-export class IlArrowLeftIcon {
-  readonly viewBox = input("0 0 380 790")
-  readonly width = input("0.49em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ilBehanceIcon],svg[il-behance-icon]',
   host: {
     role: 'img',
@@ -121,18 +138,18 @@ export class IlBehanceIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ilArrowDownIcon],svg[il-arrow-down-icon]',
+  selector: 'svg[ilBellIcon],svg[il-bell-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M622 106L311 417L0 106l65-65l246 245L556 41z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M579 372q0 24 9 45t25 37t37 25t45 9v93H0v-93q24 0 45-9t37-25t25-37t9-45V233q0-48 18-90t50-74t73-50t90-18t90 18t74 50t50 74t18 90zM347 696q-32 0-56-20t-33-49h179q-8 30-32 49t-58 20"></svg:path>`,
 })
-export class IlArrowDownIcon {
-  readonly viewBox = input("0 0 630 700")
-  readonly width = input("0.9em")
+export class IlBellIcon {
+  readonly viewBox = input("0 0 700 820")
+  readonly width = input("0.86em")
   readonly height = input("1em")
 }
 
@@ -1408,22 +1425,5 @@ export class IlWorldIcon {
 export class IlYoutubeIcon {
   readonly viewBox = input("0 0 840 790")
   readonly width = input("1.07em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ilBellIcon],svg[il-bell-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M579 372q0 24 9 45t25 37t37 25t45 9v93H0v-93q24 0 45-9t37-25t25-37t9-45V233q0-48 18-90t50-74t73-50t90-18t90 18t74 50t50 74t18 90zM347 696q-32 0-56-20t-33-49h179q-8 30-32 49t-58 20"></svg:path>`,
-})
-export class IlBellIcon {
-  readonly viewBox = input("0 0 700 820")
-  readonly width = input("0.86em")
   readonly height = input("1em")
 }

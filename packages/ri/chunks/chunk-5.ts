@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[riSignalWifi3FillIcon],svg[ri-signal-wifi-3-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 3c4.285 0 8.22 1.497 11.31 3.996L12 21L.69 6.997A17.93 17.93 0 0 1 12 3m0 2a15.9 15.9 0 0 0-8.42 2.392l1.904 2.357A12.94 12.94 0 0 1 12.001 8c2.374 0 4.6.637 6.516 1.749L20.42 7.39A15.9 15.9 0 0 0 12 5"></svg:path>`,
+})
+export class RiSignalWifi3FillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[riSignalWifi3LineIcon],svg[ri-signal-wifi-3-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 3c4.285 0 8.22 1.497 11.31 3.996L12 21L.69 6.997A17.93 17.93 0 0 1 12 3m0 7c-1.897 0-3.683.48-5.24 1.327l5.24 6.49l5.242-6.49A10.95 10.95 0 0 0 12 10m0-5a15.9 15.9 0 0 0-8.42 2.392l1.904 2.357A12.94 12.94 0 0 1 12.001 8c2.374 0 4.6.637 6.516 1.749L20.42 7.39A15.9 15.9 0 0 0 12 5"></svg:path>`,
+})
+export class RiSignalWifi3LineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[riSignalWifiErrorFillIcon],svg[ri-signal-wifi-error-fill-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class RiWebcamLineIcon {
   template: `<svg:path fill="currentColor" d="M13.501 4.399a3 3 0 0 1 1.382 3.436l1.92.56A5.002 5.002 0 0 0 7.67 4.498a5 5 0 0 0 1.014 6.243L6.803 14H6.8a2 2 0 1 0 1.946 1.537c-.082-.347-.102-.725.076-1.034l2.545-4.408l-.866-.5a3 3 0 0 1 3-5.196m1.53 13.681a3.001 3.001 0 0 0 4.765-3.576a3 3 0 0 0-4.098-1.098l-.866.5l-2.546-4.41c-.178-.308-.515-.48-.857-.582a2.003 2.003 0 0 1-1.16-2.917a2 2 0 0 1 3.464 2L13.731 8l1.883 3.26a5.002 5.002 0 0 1 4.084 9.074a5 5 0 0 1-6.112-.872zM3.8 16c0-1.409.973-2.594 2.285-2.914l-.475-1.943A5.002 5.002 0 0 0 6.8 21a5 5 0 0 0 4.9-4h3.764l.002.004a2 2 0 1 0 .358-2.454c-.26.245-.577.45-.934.45H9.8v1a3 3 0 1 1-6 0"></svg:path>`,
 })
 export class RiWebhookFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[riWebhookLineIcon],svg[ri-webhook-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.869 14.14c-.213.351-.319.638-.149 1.085c.47 1.236-.193 2.439-1.439 2.766c-1.175.308-2.32-.465-2.554-1.723c-.207-1.114.658-2.206 1.886-2.38c.067-.01.134-.014.22-.02q.07-.003.16-.01l1.869-3.132c-1.175-1.169-1.874-2.534-1.72-4.227c.11-1.196.58-2.23 1.44-3.077a4.89 4.89 0 0 1 6.098-.64c1.862 1.196 2.715 3.527 1.988 5.521l-1.707-.463c.229-1.109.06-2.105-.688-2.958c-.494-.563-1.128-.858-1.85-.967c-1.445-.218-2.864.71-3.285 2.129c-.478 1.61.246 2.925 2.222 3.916c-.829 1.394-1.651 2.792-2.491 4.18m4.915-5.867l1.806 3.186c3.041-.94 5.334.743 6.156 2.545c.994 2.177.315 4.755-1.637 6.098c-2.002 1.379-4.535 1.143-6.31-.628l1.393-1.165c1.752 1.136 3.285 1.082 4.423-.262a3.05 3.05 0 0 0-.05-3.979c-1.151-1.295-2.695-1.335-4.56-.091c-.775-1.373-1.562-2.736-2.311-4.119c-.253-.466-.532-.736-1.102-.835c-.95-.165-1.565-.981-1.602-1.897a2.08 2.08 0 0 1 1.33-2.041a2.075 2.075 0 0 1 2.35.64c.454.574.598 1.22.36 1.927a7 7 0 0 1-.159.407zm-2.232 8.622h3.66q.077.102.146.2c.097.138.19.268.297.384a2.07 2.07 0 0 0 2.913.1a2.074 2.074 0 0 0 .086-2.969c-.794-.814-2.151-.892-2.889-.03c-.447.524-.906.586-1.5.577c-1.524-.024-3.047-.008-4.57-.008c.1 2.142-.71 3.476-2.317 3.793c-1.572.31-3.02-.492-3.53-1.956c-.58-1.663.137-2.994 2.206-4.05l-.469-1.7c-2.255.492-3.948 2.68-3.773 5.142c.155 2.173 1.908 4.104 4.052 4.45a4.88 4.88 0 0 0 3.273-.584c1.306-.74 2.064-1.906 2.415-3.349"></svg:path>`,
-})
-export class RiWebhookLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[riWechat2FillIcon],svg[ri-wechat-2-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5.458 18.185C3.359 16.677 2 14.4 2 11.908C2 7.323 6.475 3.6 12 3.6s10 3.723 10 8.308c0 4.584-4.475 8.308-10 8.308a11.4 11.4 0 0 1-3.272-.462c-.092-.03-.216-.03-.308-.03c-.185 0-.37.06-.525.153l-2.191 1.262c-.062.03-.124.061-.186.061a.34.34 0 0 1-.339-.338c0-.093.03-.154.062-.246c.03-.031.308-1.047.463-1.662c0-.062.03-.154.03-.215q0-.37-.277-.554m3.21-7.673c.717 0 1.285-.569 1.285-1.286S9.385 7.94 8.668 7.94s-1.285.568-1.285 1.286c0 .717.567 1.285 1.285 1.285m6.666 0c.718 0 1.285-.569 1.285-1.286s-.567-1.286-1.285-1.286c-.717 0-1.285.568-1.285 1.286c0 .717.568 1.285 1.285 1.285"></svg:path>`,
-})
-export class RiWechat2FillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
