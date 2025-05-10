@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[codexAddBackgroundIcon],svg[codex-add-background-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><svg:path stroke-linejoin="round" d="M11 19c-1.864 0-2.796 0-3.53-.305a4 4 0 0 1-2.166-2.164C5 15.796 5 14.864 5 13v-1c0-2.809 0-4.213.674-5.222a4 4 0 0 1 1.104-1.104C7.787 5 9.19 5 12 5h1.5c1.396 0 2.093 0 2.661.172a4 4 0 0 1 2.667 2.667C19 8.407 19 9.104 19 10.5v0"></svg:path><svg:path d="M16 13v3m0 3v-3m3 0h-3m0 0h-3"></svg:path><svg:path stroke-linejoin="round" d="m6.5 17.5l11-11m1.492 4h.01m-8.01 8.5h.01M5 13l8-8"></svg:path></svg:g>`,
+})
+export class CodexAddBackgroundIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[codexAddBorderIcon],svg[codex-add-border-icon]',
   host: {
     role: 'img',
@@ -12,6 +29,23 @@ import { Component, input } from '@angular/core'
   template: `<svg:g fill="none" stroke="currentColor" stroke-width="2"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M18.992 9.5h.01M14.5 5h.01"></svg:path><svg:path stroke-linecap="round" d="M14.625 5H15a4 4 0 0 1 4 4v.375"></svg:path><svg:path d="M9.375 5H9a4 4 0 0 0-4 4v.375"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M9.373 5h.01M5 9.5h.01"></svg:path><svg:path d="M9.375 19H9a4 4 0 0 1-4-4v-.375"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M9.373 19h.01M5 14.55h.01"></svg:path><svg:path stroke-linecap="round" d="M16 13v3m0 3v-3m3 0h-3m0 0h-3"></svg:path></svg:g>`,
 })
 export class CodexAddBorderIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[codexAlignCenterIcon],svg[codex-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M18 7H6m12 10H6m10-5H8"></svg:path>`,
+})
+export class CodexAlignCenterIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,23 +70,6 @@ export class CodexAlignJustifyIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[codexAddBackgroundIcon],svg[codex-add-background-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><svg:path stroke-linejoin="round" d="M11 19c-1.864 0-2.796 0-3.53-.305a4 4 0 0 1-2.166-2.164C5 15.796 5 14.864 5 13v-1c0-2.809 0-4.213.674-5.222a4 4 0 0 1 1.104-1.104C7.787 5 9.19 5 12 5h1.5c1.396 0 2.093 0 2.661.172a4 4 0 0 1 2.667 2.667C19 8.407 19 9.104 19 10.5v0"></svg:path><svg:path d="M16 13v3m0 3v-3m3 0h-3m0 0h-3"></svg:path><svg:path stroke-linejoin="round" d="m6.5 17.5l11-11m1.492 4h.01m-8.01 8.5h.01M5 13l8-8"></svg:path></svg:g>`,
-})
-export class CodexAddBackgroundIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[codexAlignLeftIcon],svg[codex-align-left-icon]',
   host: {
     role: 'img',
@@ -70,6 +87,23 @@ export class CodexAlignLeftIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[codexAlignRightIcon],svg[codex-align-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M19 7H7m12 10H7m12-5h-8"></svg:path>`,
+})
+export class CodexAlignRightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[codexBoldIcon],svg[codex-bold-icon]',
   host: {
     role: 'img',
@@ -80,23 +114,6 @@ export class CodexAlignLeftIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9 12V7.1a.1.1 0 0 1 .1-.1h1.3c1.1 0 3.6.1 3.6 2.5c0 0 0 2.5-3 2.5m-2 0v4.8c0 .11.09.2.2.2h3.3c1.5 0 2.5-1 2.5-2.5c0-2.795-4-2.5-4-2.5m-2 0h2"></svg:path>`,
 })
 export class CodexBoldIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[codexAlignCenterIcon],svg[codex-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M18 7H6m12 10H6m10-5H8"></svg:path>`,
-})
-export class CodexAlignCenterIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -1304,23 +1321,6 @@ export class CodexUsersGroupIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-width="2"><svg:rect width="14" height="14" x="5" y="5" rx="4"></svg:rect><svg:path stroke-linecap="round" d="M12 9v3m0 3.02v-.01"></svg:path></svg:g>`,
 })
 export class CodexWarningIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[codexAlignRightIcon],svg[codex-align-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M19 7H7m12 10H7m12-5h-8"></svg:path>`,
-})
-export class CodexAlignRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

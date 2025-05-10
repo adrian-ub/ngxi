@@ -2790,16 +2790,16 @@ export class BxsZoomOutIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bxsAlbumIcon],svg[bxs-album-icon]',
+  selector: 'svg[bxsAlarmSnoozeIcon],svg[bxs-alarm-snooze-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2m-4.607 8.055A5 5 0 0 0 7 12H5a6.98 6.98 0 0 1 2.051-4.95a7 7 0 0 1 2.225-1.5l.779 1.842c-.596.252-1.13.612-1.59 1.072s-.82.995-1.072 1.591m4.6 3.945a2.007 2.007 0 1 1 0-4.014a2.007 2.007 0 0 1 0 4.014"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m17.284 3.707l1.412-1.416l3.01 3l-1.413 1.417zm-10.586 0l-2.99 2.999L2.29 5.294l2.99-3zM12 4c-4.878 0-9 4.121-9 9s4.122 9 9 9s9-4.121 9-9s-4.121-9-9-9m4 13H8.131l4-6H8V9h7.868l-1.035 1.554l-.001.001L11.869 15H16z"></svg:path>`,
 })
-export class BxsAlbumIcon {
+export class BxsAlarmSnoozeIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

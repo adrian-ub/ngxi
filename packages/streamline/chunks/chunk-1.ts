@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[streamlineCloudDataTransferSolidIcon],svg[streamline-cloud-data-transfer-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.883.115a4.37 4.37 0 0 0-4.582 2.717a3.693 3.693 0 0 0-1.706 6.7a2 2 0 0 1 .557-1.753l2-2A2 2 0 0 1 7 5.799a2 2 0 0 1 3.434 1.394v2a2 2 0 0 1 1.56.748a3.229 3.229 0 0 0-.308-6.078A4.37 4.37 0 0 0 7.883.115M5.853 6.5a.75.75 0 0 1 .463.693v6a.75.75 0 0 1-1.5 0v-4.19l-.72.72a.75.75 0 1 1-1.06-1.06l2-2a.75.75 0 0 1 .817-.163m3.331.693a.75.75 0 1 0-1.5 0v6a.75.75 0 0 0 1.28.53l2-2a.75.75 0 0 0-1.06-1.06l-.72.72z" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineCloudDataTransferSolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[streamlineCloudGaming1Icon],svg[streamline-cloud-gaming-1-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class StreamlineForkSpoonIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M.785.024a.75.75 0 0 1 .75.75v2.5a1.75 1.75 0 0 0 1 1.581V.774a.75.75 0 1 1 1.5 0v4.081a1.75 1.75 0 0 0 1-1.581v-2.5a.75.75 0 1 1 1.5 0v2.5a3.25 3.25 0 0 1-2.25 3.092V13a1 1 0 0 1-2 0V6.367a3.25 3.25 0 0 1-2.25-3.093v-2.5a.75.75 0 0 1 .75-.75m10.05 0c-1.772 0-2.941 1.727-2.941 3.489c0 1.404.742 2.786 1.94 3.29V13a1 1 0 1 0 2 0V6.802c1.2-.503 1.942-1.885 1.942-3.29c0-1.761-1.17-3.488-2.941-3.488" clip-rule="evenodd"></svg:path>`,
 })
 export class StreamlineForkSpoonSolidIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineFragileIcon],svg[streamline-fragile-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M3.67.5a1 1 0 0 0-1 .89C2.56 2.45 2.5 4.05 2.5 4.5c0 2.62 2 4 4.5 4s4.5-1.38 4.5-4c0-.45-.06-2-.17-3.11a1 1 0 0 0-1-.89zM7 8.5v5m-2 0h4"></svg:path><svg:path d="m7 .5l-1.5 2l2 1.5l-1 1.5"></svg:path></svg:g>`,
-})
-export class StreamlineFragileIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

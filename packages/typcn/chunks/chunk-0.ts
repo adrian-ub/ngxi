@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[typcnAnchorOutlineIcon],svg[typcn-anchor-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:circle cx="12" cy="6" r="1" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M19.793 12.096A3.004 3.004 0 0 0 17 8h-.422A4.95 4.95 0 0 0 17 6c0-2.757-2.243-5-5-5S7 3.243 7 6c0 .703.149 1.381.422 2H7a3.004 3.004 0 0 0-2.793 4.096A3 3 0 0 0 3 14.5c0 4.963 4.037 9 9 9s9-4.037 9-9a3 3 0 0 0-1.207-2.404M12 21.5c-3.859 0-7-3.141-7-7a1 1 0 1 1 2 0a5.01 5.01 0 0 0 4 4.898V12H7a1 1 0 1 1 0-2h4V8.816A2.99 2.99 0 0 1 9 6a3 3 0 1 1 6 0a2.99 2.99 0 0 1-2 2.816V10h4a1 1 0 1 1 0 2h-4v7.398a5.01 5.01 0 0 0 4-4.898a1 1 0 1 1 2 0c0 3.859-3.141 7-7 7M7.321 13H10v4.962A4.01 4.01 0 0 1 8 14.5c0-.597-.263-1.133-.679-1.5m9.358 0A2 2 0 0 0 16 14.5a4.01 4.01 0 0 1-2 3.462V13z"></svg:path><svg:circle cx="12" cy="6" r="1" fill="currentColor"></svg:circle>`,
-})
-export class TypcnAnchorOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[typcnAdjustBrightnessIcon],svg[typcn-adjust-brightness-icon]',
   host: {
     role: 'img',
@@ -53,16 +36,50 @@ export class TypcnAnchorIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[typcnArrowDownIcon],svg[typcn-arrow-down-icon]',
+  selector: 'svg[typcnAdjustContrastIcon],svg[typcn-adjust-contrast-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M16.707 13.293a1 1 0 0 0-1.414 0L13 15.586V8a1 1 0 1 0-2 0v7.586l-2.293-2.293a.999.999 0 1 0-1.414 1.414L12 19.414l4.707-4.707a1 1 0 0 0 0-1.414"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 14a6 6 0 1 1 0-12a6 6 0 0 1 0 12m0-11v10c2.757 0 5-2.243 5-5s-2.243-5-5-5"></svg:path>`,
 })
-export class TypcnArrowDownIcon {
+export class TypcnAdjustContrastIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[typcnAnchorOutlineIcon],svg[typcn-anchor-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="12" cy="6" r="1" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M19.793 12.096A3.004 3.004 0 0 0 17 8h-.422A4.95 4.95 0 0 0 17 6c0-2.757-2.243-5-5-5S7 3.243 7 6c0 .703.149 1.381.422 2H7a3.004 3.004 0 0 0-2.793 4.096A3 3 0 0 0 3 14.5c0 4.963 4.037 9 9 9s9-4.037 9-9a3 3 0 0 0-1.207-2.404M12 21.5c-3.859 0-7-3.141-7-7a1 1 0 1 1 2 0a5.01 5.01 0 0 0 4 4.898V12H7a1 1 0 1 1 0-2h4V8.816A2.99 2.99 0 0 1 9 6a3 3 0 1 1 6 0a2.99 2.99 0 0 1-2 2.816V10h4a1 1 0 1 1 0 2h-4v7.398a5.01 5.01 0 0 0 4-4.898a1 1 0 1 1 2 0c0 3.859-3.141 7-7 7M7.321 13H10v4.962A4.01 4.01 0 0 1 8 14.5c0-.597-.263-1.133-.679-1.5m9.358 0A2 2 0 0 0 16 14.5a4.01 4.01 0 0 1-2 3.462V13z"></svg:path><svg:circle cx="12" cy="6" r="1" fill="currentColor"></svg:circle>`,
+})
+export class TypcnAnchorOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[typcnArrowBackIcon],svg[typcn-arrow-back-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 9.059V6.5a1.001 1.001 0 0 0-1.707-.708L4 12l6.293 6.207a.997.997 0 0 0 1.414 0A1 1 0 0 0 12 17.5v-2.489c2.75.068 5.755.566 8 3.989v-1c0-4.633-3.5-8.443-8-8.941"></svg:path>`,
+})
+export class TypcnArrowBackIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -97,6 +114,23 @@ export class TypcnArchiveIcon {
   template: `<svg:path fill="currentColor" d="M19.164 19.547c-1.641-2.5-3.669-3.285-6.164-3.484V17.5c0 .534-.208 1.036-.586 1.414c-.756.756-2.077.751-2.823.005l-6.293-6.207a1 1 0 0 1 0-1.425l6.288-6.203c.754-.755 2.073-.756 2.829.001c.377.378.585.88.585 1.414v1.704c4.619.933 8 4.997 8 9.796v1a.999.999 0 0 1-1.836.548m-7.141-5.536c2.207.056 4.638.394 6.758 2.121a7.985 7.985 0 0 0-6.893-6.08C11.384 9.996 11 10 11 10V6.503l-5.576 5.496l5.576 5.5V14z"></svg:path>`,
 })
 export class TypcnArrowBackOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[typcnArrowDownIcon],svg[typcn-arrow-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.707 13.293a1 1 0 0 0-1.414 0L13 15.586V8a1 1 0 1 0-2 0v7.586l-2.293-2.293a.999.999 0 1 0-1.414 1.414L12 19.414l4.707-4.707a1 1 0 0 0 0-1.414"></svg:path>`,
+})
+export class TypcnArrowDownIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5673,40 +5707,6 @@ export class TypcnZoomOutOutlineIcon {
   template: `<svg:path fill="currentColor" d="M14 8a3.001 3.001 0 0 1 0 6a3.001 3.001 0 0 1 0-6m0-1c-2.206 0-4 1.794-4 4s1.794 4 4 4s4-1.794 4-4s-1.794-4-4-4M4.195 17.674a3.134 3.134 0 0 0 3.131 3.131c.756 0 1.503-.277 2.104-.783l2.397-2.386A6.9 6.9 0 0 0 14 18c3.86 0 7-3.141 7-7s-3.14-7-7-7s-7 3.141-7 7c0 .761.136 1.486.364 2.173l-2.245 2.283a3.1 3.1 0 0 0-.924 2.218m6.459-1.694l-2.512 2.511a1.27 1.27 0 0 1-.816.313a1.13 1.13 0 0 1-1.131-1.131c0-.311.127-.594.332-.797l2.492-2.531c.435.645.99 1.2 1.635 1.635M14 16c-2.757 0-5-2.243-5-5s2.243-5 5-5s5 2.243 5 5s-2.243 5-5 5"></svg:path>`,
 })
 export class TypcnZoomOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[typcnAdjustContrastIcon],svg[typcn-adjust-contrast-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 14a6 6 0 1 1 0-12a6 6 0 0 1 0 12m0-11v10c2.757 0 5-2.243 5-5s-2.243-5-5-5"></svg:path>`,
-})
-export class TypcnAdjustContrastIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[typcnArrowBackIcon],svg[typcn-arrow-back-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 9.059V6.5a1.001 1.001 0 0 0-1.707-.708L4 12l6.293 6.207a.997.997 0 0 0 1.414 0A1 1 0 0 0 12 17.5v-2.489c2.75.068 5.755.566 8 3.989v-1c0-4.633-3.5-8.443-8-8.941"></svg:path>`,
-})
-export class TypcnArrowBackIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

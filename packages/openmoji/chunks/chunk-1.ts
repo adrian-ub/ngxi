@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[openmojiCoupleWithHeartWomanManMediumDarkSkinToneLightSkinToneIcon],svg[openmoji-couple-with-heart-woman-man-medium-dark-skin-tone-light-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#92D3F5" d="M38 61v-3.3c0-3.7 3.7-6.7 7.4-6.7c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V61M6 61v-3.3C6 54 9.7 51 13.4 51c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V61"></svg:path><svg:path fill="#EA5A47" d="M36 11.7c1.1-2.4 4-3.4 6.3-2.2s3.3 4 2.2 6.4c-.1.3-.3.5-.4.7L36 27l-8.1-10.4c-.2-.2-.3-.5-.4-.7c-1.1-2.4-.1-5.2 2.2-6.4s5.2-.2 6.3 2.2"></svg:path><svg:path fill="#A57939" d="M41.5 52.1c1.2-.7 2.5-1.1 3.9-1.1c4.4 3.7 8.8 3.7 13.3 0c1.4 0 2.8.4 4 1.2c.9-.6 1.7-1.3 2.3-2.2c1.5-2 2-6.7.7-9.8c-1.8-4.2-2.3-4.2-2.6-9.6c-.1-3.1-2.5-5.7-5.6-6c0 0-1.9-2.3-6-2.3c-4.8 0-9.2 2.6-10.3 6.7c-1.2 4.2.2 5.9-1 9.1c-1.4 3.6-3.6 8.4-1.4 11.9c.4.6 1.3 1.4 2.7 2.1M9.1 31.4c.6-8.7 7.2-8.8 10.5-8.3c.3.1 1.2 0 1.5 0c6-.8 9 6 9 9c0 1.1 0 3.8-1.5 5.3c0 0-3.4-4.2-3.6-6.6c0 0-11.4 4.3-12.2.6c0 0-.8 3-1.5 3.8v3s-2.5-3-2.2-6.8"></svg:path><svg:path fill="#fadcbc" d="M43.7 37.5c0 6 3.8 10.5 8.3 10.5s8.3-4.5 8.3-10.5c0-3.8-1.5-6-4.5-9c-3 3-12 6.8-12 8.3z"></svg:path><svg:path fill="#a57939" d="M25 30.8s-11.4 4.3-12.2.6c0 0-.8 3-1.5 3.8v3c.6 5.5 4.2 9.8 8.6 9.8c4.6 0 8.4-4.7 8.7-10.6c-.3-.4-3.4-4.3-3.6-6.6"></svg:path><svg:path fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M28.6 36.1v.7c0 6.2-3.9 11.3-8.7 11.3s-8.7-5.1-8.7-11.3v-.7"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.1 31.4c.6-8.7 7.2-8.8 10.5-8.3c.3.1 1.2 0 1.5 0c6-.8 9 6 9 9c0 1.1 0 3.8-1.5 5.3c0 0-3.4-4.2-3.6-6.6c0 0-11.4 4.3-12.2.6c0 0-.8 3-1.5 3.8v3s-2.5-3-2.2-6.8M36 11.7c1.1-2.4 4-3.4 6.3-2.2s3.3 4 2.2 6.4c-.1.3-.3.5-.4.7L36 27l-8.1-10.4c-.2-.2-.3-.5-.4-.7c-1.1-2.4-.1-5.2 2.2-6.4s5.2-.2 6.3 2.2m3.4 37.7c-3-4.5-.6-7.7.8-11.3c1.2-3.2-.2-4.9 1-9.1c1.1-4.1 5.5-6.7 10.3-6.7c4.1 0 6 2.3 6 2.3c3.1.3 5.5 2.9 5.6 6c.3 5.4.8 5.4 2.6 9.6c1.3 3.1.8 6.6-1.4 9.1"></svg:path><svg:path fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M43.7 37.5c0 6 3.8 10.5 8.3 10.5s8.3-4.5 8.3-10.5c0-3.8-1.5-6-4.5-9c-3 3-12 6.8-12 8.3z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M38 60v-2.3c0-3.7 3.7-6.7 7.4-6.7c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V60M6 60v-2.3C6 54 9.7 51 13.4 51c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V60"></svg:path><svg:path d="M56.2 37.2c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.6 1.4 1.4m-5.6 0c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.6 1.4 1.4"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M49.9 42.9c1.3.7 2.9.7 4.2 0"></svg:path><svg:path d="M24.2 37.4c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.7 1.4 1.4m-5.6 0c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.7 1.4 1.4"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.9 43.2c1.3.7 2.9.7 4.2 0"></svg:path>`,
+})
+export class OpenmojiCoupleWithHeartWomanManMediumDarkSkinToneLightSkinToneIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[openmojiCoupleWithHeartWomanManMediumDarkSkinToneMediumLightSkinToneIcon],svg[openmoji-couple-with-heart-woman-man-medium-dark-skin-tone-medium-light-skin-tone-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class OpenmojiFlagJapanIcon {
   template: `<svg:path fill="#fff" d="M5 17h62v38H5z"></svg:path><svg:path fill="#d22f27" d="M67 20v-3h-4L5 52v3h4z"></svg:path><svg:path fill="#d22f27" d="M5 20v-3h4l58 35v3h-4z"></svg:path><svg:path fill="#d22f27" stroke="#d22f27" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.522" d="M38.74 22.34s.296.582.3 2.759c.003 2.177-.988 4.162-3.017 5.113c-2.03-.951-3.071-2.972-3.071-5.113s.3-2.759.3-2.759z"></svg:path><svg:path fill="#fcea2b" fill-rule="evenodd" stroke="#fcea2b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".986" d="M32.66 19.96h6.683l-.566 1.193h-5.604z"></svg:path><svg:rect width="5.478" height=".868" x="33.26" y="22.72" fill="#fcea2b" fill-rule="evenodd" stroke="#fcea2b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".632" paint-order="stroke fill markers" ry=".017"></svg:rect><svg:rect width="5.478" height=".868" x="33.26" y="25.08" fill="#fcea2b" fill-rule="evenodd" stroke="#fcea2b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".632" paint-order="stroke fill markers" ry=".017"></svg:rect><svg:rect width="4.526" height=".717" x="33.74" y="27.39" fill="#fcea2b" fill-rule="evenodd" stroke="#fcea2b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".522" paint-order="stroke fill markers" ry=".014"></svg:rect><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z"></svg:path>`,
 })
 export class OpenmojiFlagJerseyIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiFlagJordanIcon],svg[openmoji-flag-jordan-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#5c9e31" d="M5 17h62v38H5z"></svg:path><svg:path fill="#fff" d="M5 30h62v12H5z"></svg:path><svg:path d="M5 17h62v13H5z"></svg:path><svg:path fill="#d22f27" d="M26 36L5 55V17z"></svg:path><svg:path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="m13 33.5l.556 1.445l1.449-.455l-.755 1.348l1.25.878l-1.498.234l.111 1.55L13 37.445L11.887 38.5l.111-1.55l-1.498-.234l1.25-.878l-.755-1.348l1.449.455z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z"></svg:path>`,
-})
-export class OpenmojiFlagJordanIcon {
   readonly viewBox = input("0 0 72 72")
   readonly width = input("1em")
   readonly height = input("1em")

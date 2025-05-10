@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[emojioneRightFacingFistLightSkinToneIcon],svg[emojione-right-facing-fist-light-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#ffe1bd" d="M24.4 7.8C21.7 9.5 18.2 13.3 14 15c-3.9 1.5-12 2.3-12 2.3v31s14.8-1 19.6 2.9z"></svg:path><svg:path fill="#e6b796" d="M21.3 48.3S11.1 45.5 2 45.5v2.7c6.6 0 19.6 2.9 19.6 2.9z"></svg:path><svg:path fill="#ffe1bd" d="M46.1 14.1s-6.5-6.5-9.4-7.9C26.1.9 16.5 13.8 16.8 24.7c.2 6.3 1.1 15.9 2.5 22c2.1 9 14.9 9.3 20.5 8.7z"></svg:path><svg:path fill="#e6b796" d="M39.8 54.2c-10.9 0-18.1-3.3-21.5-8.4c.5 6.8 9.8 11 21.5 10z"></svg:path><svg:path fill="#ffe1bd" d="M33.8 6.2C51.8 4 58.9 13.5 60.9 17c1.8 3.1 1.1 6.1-.7 8c-2 2.1-12.2 4.8-12.2 4.8S27 7 33.8 6.2"></svg:path><svg:path fill="#e6b796" d="M27 36c6.9-.6 9.5-6 10.6-8.5l.9 4s-1.7 5.2-8.4 5.4c-1.7.1-3.3-.2-4.7-.9c.5.1 1.1.1 1.6 0"></svg:path><svg:path fill="#ffe1bd" d="m49.4 46.2l-3.2 3.1l-4.2-.4c-4.9-.4-5.5 8.9-.6 9.3l5.9.6c1.1.1 1.9-.1 2.8-1.1l4.5-4.4c3.9-3.7-1.4-10.8-5.2-7.1"></svg:path><svg:path fill="#e6b796" d="m54.8 52.1l-4.5 4.4c-.9.9-1.7 1.1-2.8 1.1l-6-.6c-2.2-.2-3.3-2.1-3.4-4.2c-.3 2.4.8 5.3 3.4 5.6l6 .6c1.1.1 1.8-.3 2.7-1.3l4.5-4.4c1-1 1.4-2.3 1.3-3.5c-.2.8-.5 1.6-1.2 2.3"></svg:path><svg:path fill="#ffe1bd" d="m51 36.5l-3.7 3.7l-4.9-.5c-5.8-.5-6.5 10.5-.7 11l7 .7c1.3.1 2.2-.2 3.3-1.3l5.3-5.2c4.3-4.4-1.9-12.8-6.3-8.4"></svg:path><svg:path fill="#e6b796" d="M57.3 43.4L52 48.6c-1.1 1.1-2 1.3-3.3 1.3l-7-.7c-2.6-.2-3.9-2.5-4-4.9c-.4 2.9.9 6.1 3.9 6.4l7 .7c1.3.1 2.2-.2 3.3-1.3l5.3-5.2c1.2-1.2 1.6-2.7 1.5-4.1c-.2.9-.6 1.8-1.4 2.6"></svg:path><svg:path fill="#ffe1bd" d="M51.3 25.3L47 29.6l-5.8-.6c-6.8-.6-7.6 12.2-.8 12.8l8.2.8c1.5.1 2.6-.2 3.8-1.5l6.2-6.1c5.2-5.1-2.1-14.8-7.3-9.7"></svg:path><svg:g fill="#e6b796"><svg:path d="m58.7 33.4l-6.2 6.1c-1.3 1.3-2.3 1.6-3.8 1.5l-8.2-.8c-3-.3-4.5-2.9-4.7-5.7c-.4 3.4 1 7.1 4.6 7.4l8.2.8c1.5.1 2.6-.2 3.8-1.5l6.2-6.1c1.4-1.4 1.9-3.1 1.7-4.8c-.2 1.1-.7 2.1-1.6 3.1m-9.1-13.2s.8-2.4 3.5-4.2c-2.6.4-4.4 3-4.4 3z"></svg:path><svg:path d="m60.3 23.7l-6.2 6.1c-1.3 1.3-2.3 1.5-3.8 1.5l-.1 1.7c1.5.1 2.6-.2 3.8-1.5l6.2-6.1c1.4-1.4 1.9-3.1 1.7-4.8c-.1 1-.6 2.1-1.6 3.1"></svg:path></svg:g><svg:path fill="#ffe1bd" d="m33.2 21.6l5.1 3.8l1.1 6.9c1.3 8.1 12.9 5.1 11.6-3l-1.7-9.8c-.3-1.8-.5-3-2-4.1L40 10.1c-6-4.5-12.8 7.1-6.8 11.5"></svg:path><svg:path fill="#e6b796" d="M45.4 37.1c3.9-.1 7-3.6 6-7.8c-2-8.4-1.7-10.8-2.5-12.3c-2-3.4-12.1-10.6-12.8-11.1c.3.4 10.7 9.6 11.6 11.7c1 2.2 1.1 5.7 2 9.8c1.4 6.2-.8 7.8-4.3 9.7m-7.1-11.5s-2-.7-4.5-3.3c1.6 3.8 3.3 4.1 3.3 4.1s1.3 10.9 7 10.8c-4.5-1.6-5.8-11.6-5.8-11.6"></svg:path>`,
+})
+export class EmojioneRightFacingFistLightSkinToneIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneRightFacingFistMediumDarkSkinToneIcon],svg[emojione-right-facing-fist-medium-dark-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#b47d56" d="M24.4 7.8C21.7 9.5 18.2 13.3 14 15c-3.9 1.5-12 2.3-12 2.3v31s14.8-1 19.6 2.9z"></svg:path><svg:path fill="#935e3e" d="M21.3 48.3S11.1 45.5 2 45.5v2.7c6.6 0 19.6 2.9 19.6 2.9z"></svg:path><svg:path fill="#b47d56" d="M46.1 14.1s-6.5-6.5-9.4-7.9C26.1.9 16.5 13.8 16.8 24.7c.2 6.3 1.1 15.9 2.5 22c2.1 9 14.9 9.3 20.5 8.7z"></svg:path><svg:path fill="#935e3e" d="M39.8 54.2c-10.9 0-18.1-3.3-21.5-8.4c.5 6.8 9.8 11 21.5 10z"></svg:path><svg:path fill="#b47d56" d="M33.8 6.2C51.8 4 58.9 13.5 60.9 17c1.8 3.1 1.1 6.1-.7 8c-2 2.1-12.2 4.8-12.2 4.8S27 7 33.8 6.2"></svg:path><svg:path fill="#935e3e" d="M27 36c6.9-.6 9.5-6 10.6-8.5l.9 4s-1.7 5.2-8.4 5.4c-1.7.1-3.3-.2-4.7-.9c.5.1 1.1.1 1.6 0"></svg:path><svg:path fill="#b47d56" d="m49.4 46.2l-3.2 3.1l-4.2-.4c-4.9-.4-5.5 8.9-.6 9.3l5.9.6c1.1.1 1.9-.1 2.8-1.1l4.5-4.4c3.9-3.7-1.4-10.8-5.2-7.1"></svg:path><svg:path fill="#935e3e" d="m54.8 52.1l-4.5 4.4c-.9.9-1.7 1.1-2.8 1.1l-6-.6c-2.2-.2-3.3-2.1-3.4-4.2c-.3 2.4.8 5.3 3.4 5.6l6 .6c1.1.1 1.8-.3 2.7-1.3l4.5-4.4c1-1 1.4-2.3 1.3-3.5c-.2.8-.5 1.6-1.2 2.3"></svg:path><svg:path fill="#b47d56" d="m51 36.5l-3.7 3.7l-4.9-.5c-5.8-.5-6.5 10.5-.7 11l7 .7c1.3.1 2.2-.2 3.3-1.3l5.3-5.2c4.3-4.4-1.9-12.8-6.3-8.4"></svg:path><svg:path fill="#935e3e" d="M57.3 43.4L52 48.6c-1.1 1.1-2 1.3-3.3 1.3l-7-.7c-2.6-.2-3.9-2.5-4-4.9c-.4 2.9.9 6.1 3.9 6.4l7 .7c1.3.1 2.2-.2 3.3-1.3l5.3-5.2c1.2-1.2 1.6-2.7 1.5-4.1c-.2.9-.6 1.8-1.4 2.6"></svg:path><svg:path fill="#b47d56" d="M51.3 25.3L47 29.6l-5.8-.6c-6.8-.6-7.6 12.2-.8 12.8l8.2.8c1.5.1 2.6-.2 3.8-1.5l6.2-6.1c5.2-5.1-2.1-14.8-7.3-9.7"></svg:path><svg:g fill="#935e3e"><svg:path d="m58.7 33.4l-6.2 6.1c-1.3 1.3-2.3 1.6-3.8 1.5l-8.2-.8c-3-.3-4.5-2.9-4.7-5.7c-.4 3.4 1 7.1 4.6 7.4l8.2.8c1.5.1 2.6-.2 3.8-1.5l6.2-6.1c1.4-1.4 1.9-3.1 1.7-4.8c-.2 1.1-.7 2.1-1.6 3.1m-9.1-13.2s.8-2.4 3.5-4.2c-2.6.4-4.4 3-4.4 3z"></svg:path><svg:path d="m60.3 23.7l-6.2 6.1c-1.3 1.3-2.3 1.5-3.8 1.5l-.1 1.7c1.5.1 2.6-.2 3.8-1.5l6.2-6.1c1.4-1.4 1.9-3.1 1.7-4.8c-.1 1-.6 2.1-1.6 3.1"></svg:path></svg:g><svg:path fill="#b47d56" d="m33.2 21.6l5.1 3.8l1.1 6.9c1.3 8.1 12.9 5.1 11.6-3l-1.7-9.8c-.3-1.8-.5-3-2-4.1L40 10.1c-6-4.5-12.8 7.1-6.8 11.5"></svg:path><svg:path fill="#935e3e" d="M45.4 37.1c3.9-.1 7-3.6 6-7.8c-2-8.4-1.7-10.8-2.5-12.3c-2-3.4-12.1-10.6-12.8-11.1c.3.4 10.7 9.6 11.6 11.7c1 2.2 1.1 5.7 2 9.8c1.4 6.2-.8 7.8-4.3 9.7m-7.1-11.5s-2-.7-4.5-3.3c1.6 3.8 3.3 4.1 3.3 4.1s1.3 10.9 7 10.8c-4.5-1.6-5.8-11.6-5.8-11.6"></svg:path>`,
+})
+export class EmojioneRightFacingFistMediumDarkSkinToneIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneRightFacingFistMediumLightSkinToneIcon],svg[emojione-right-facing-fist-medium-light-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#fed0ac" d="M24.4 7.8C21.7 9.5 18.2 13.3 14 15c-3.9 1.5-12 2.3-12 2.3v31s14.8-1 19.6 2.9z"></svg:path><svg:path fill="#e0a372" d="M21.3 48.3S11.1 45.5 2 45.5v2.7c6.6 0 19.6 2.9 19.6 2.9z"></svg:path><svg:path fill="#fed0ac" d="M46.1 14.1s-6.5-6.5-9.4-7.9C26.1.9 16.5 13.8 16.8 24.7c.2 6.3 1.1 15.9 2.5 22c2.1 9 14.9 9.3 20.5 8.7z"></svg:path><svg:path fill="#e0a372" d="M39.8 54.2c-10.9 0-18.1-3.3-21.5-8.4c.5 6.8 9.8 11 21.5 10z"></svg:path><svg:path fill="#fed0ac" d="M33.8 6.2C51.8 4 58.9 13.5 60.9 17c1.8 3.1 1.1 6.1-.7 8c-2 2.1-12.2 4.8-12.2 4.8S27 7 33.8 6.2"></svg:path><svg:path fill="#e0a372" d="M27 36c6.9-.6 9.5-6 10.6-8.5l.9 4s-1.7 5.2-8.4 5.4c-1.7.1-3.3-.2-4.7-.9c.5.1 1.1.1 1.6 0"></svg:path><svg:path fill="#fed0ac" d="m49.4 46.2l-3.2 3.1l-4.2-.4c-4.9-.4-5.5 8.9-.6 9.3l5.9.6c1.1.1 1.9-.1 2.8-1.1l4.5-4.4c3.9-3.7-1.4-10.8-5.2-7.1"></svg:path><svg:path fill="#e0a372" d="m54.8 52.1l-4.5 4.4c-.9.9-1.7 1.1-2.8 1.1l-6-.6c-2.2-.2-3.3-2.1-3.4-4.2c-.3 2.4.8 5.3 3.4 5.6l6 .6c1.1.1 1.8-.3 2.7-1.3l4.5-4.4c1-1 1.4-2.3 1.3-3.5c-.2.8-.5 1.6-1.2 2.3"></svg:path><svg:path fill="#fed0ac" d="m51 36.5l-3.7 3.7l-4.9-.5c-5.8-.5-6.5 10.5-.7 11l7 .7c1.3.1 2.2-.2 3.3-1.3l5.3-5.2c4.3-4.4-1.9-12.8-6.3-8.4"></svg:path><svg:path fill="#e0a372" d="M57.3 43.4L52 48.6c-1.1 1.1-2 1.3-3.3 1.3l-7-.7c-2.6-.2-3.9-2.5-4-4.9c-.4 2.9.9 6.1 3.9 6.4l7 .7c1.3.1 2.2-.2 3.3-1.3l5.3-5.2c1.2-1.2 1.6-2.7 1.5-4.1c-.2.9-.6 1.8-1.4 2.6"></svg:path><svg:path fill="#fed0ac" d="M51.3 25.3L47 29.6l-5.8-.6c-6.8-.6-7.6 12.2-.8 12.8l8.2.8c1.5.1 2.6-.2 3.8-1.5l6.2-6.1c5.2-5.1-2.1-14.8-7.3-9.7"></svg:path><svg:g fill="#e0a372"><svg:path d="m58.7 33.4l-6.2 6.1c-1.3 1.3-2.3 1.6-3.8 1.5l-8.2-.8c-3-.3-4.5-2.9-4.7-5.7c-.4 3.4 1 7.1 4.6 7.4l8.2.8c1.5.1 2.6-.2 3.8-1.5l6.2-6.1c1.4-1.4 1.9-3.1 1.7-4.8c-.2 1.1-.7 2.1-1.6 3.1m-9.1-13.2s.8-2.4 3.5-4.2c-2.6.4-4.4 3-4.4 3z"></svg:path><svg:path d="m60.3 23.7l-6.2 6.1c-1.3 1.3-2.3 1.5-3.8 1.5l-.1 1.7c1.5.1 2.6-.2 3.8-1.5l6.2-6.1c1.4-1.4 1.9-3.1 1.7-4.8c-.1 1-.6 2.1-1.6 3.1"></svg:path></svg:g><svg:path fill="#fed0ac" d="m33.2 21.6l5.1 3.8l1.1 6.9c1.3 8.1 12.9 5.1 11.6-3l-1.7-9.8c-.3-1.8-.5-3-2-4.1L40 10.1c-6-4.5-12.8 7.1-6.8 11.5"></svg:path><svg:path fill="#e0a372" d="M45.4 37.1c3.9-.1 7-3.6 6-7.8c-2-8.4-1.7-10.8-2.5-12.3c-2-3.4-12.1-10.6-12.8-11.1c.3.4 10.7 9.6 11.6 11.7c1 2.2 1.1 5.7 2 9.8c1.4 6.2-.8 7.8-4.3 9.7m-7.1-11.5s-2-.7-4.5-3.3c1.6 3.8 3.3 4.1 3.3 4.1s1.3 10.9 7 10.8c-4.5-1.6-5.8-11.6-5.8-11.6"></svg:path>`,
+})
+export class EmojioneRightFacingFistMediumLightSkinToneIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[emojioneRightFacingFistMediumSkinToneIcon],svg[emojione-right-facing-fist-medium-skin-tone-icon]',
   host: {
     role: 'img',
@@ -5622,57 +5673,6 @@ export class EmojioneZipperMouthFaceIcon {
   template: `<svg:path fill="#42ade2" d="m18.1 50.9l-4.4 3.7l.1-9.2c0-.1-.1-.3-.1-.4l-2-2.3c-.2-.3-.6-.3-.9-.1l-8.5 7.2c-.3.2-.4.6-.2.9l2 2.3c.2.3.6.3.9.1l3.9-3.3l-.1 9.5c0 .1.1.3.1.4l1.8 2.2c.2.3.6.3.9.1l9.1-7.6c.3-.2.3-.6.1-.9L18.9 51c-.2-.2-.6-.3-.8-.1M36 33.5l-6.5 3.7l2.2-11.6c0-.2 0-.4-.1-.5l-2-3.4c-.2-.4-.7-.5-1.1-.3l-12.4 7.2c-.4.2-.5.7-.3 1.1l1.9 3.3c.2.4.7.5 1.1.3l5.7-3.3l-2.2 12c0 .2 0 .4.1.5l1.8 3.2c.2.4.7.5 1.1.3l13.2-7.6c.4-.2.5-.7.3-1.1l-1.9-3.4c0-.5-.5-.6-.9-.4m23.3-16.7l-7.8 2.8l4.7-12.3q.15-.3 0-.6l-1.5-4.1c-.2-.5-.7-.7-1.1-.5l-15 5.4c-.5.2-.7.7-.5 1.1l1.5 4c.2.5.7.7 1.1.5l6.9-2.5l-4.7 12.7q-.15.3 0 .6l1.4 3.9c.2.5.7.7 1.1.5l16-5.8c.5-.2.7-.7.5-1.1l-1.5-4.1c-.1-.4-.6-.7-1.1-.5"></svg:path>`,
 })
 export class EmojioneZzzIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[emojione1stPlaceMedalIcon],svg[emojione-1st-place-medal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#428bc1" d="M46.1 2L34.8 18.9h5.6L53 2z"></svg:path><svg:path fill="#e8e8e8" d="M40.4 2L29.2 18.9h5.6L46.1 2z"></svg:path><svg:path fill="#ed4c5c" d="M34.8 2L23.6 18.9h5.6L40.4 2z"></svg:path><svg:g fill="#ffce31"><svg:circle cx="32" cy="41.4" r="20.6"></svg:circle><svg:path d="M21.7 15.1c-.5 0-.9.4-.9.9v8.4c0 .5.4.9.9.9h20.6c.5 0 .9-.4.9-.9V16c0-.5-.4-.9-.9-.9zm19.7 6.6c0 .5-.4.9-.9.9H23.6c-.5 0-.9-.4-.9-.9v-3.8c0-.5.4-.9.9-.9h16.9c.5 0 .9.4.9.9z"></svg:path></svg:g><svg:path fill="#89664c" d="M14.3 43.8c0-11.2 8.6-20.3 19.6-21.1c-.5 0-1.1-.1-1.6-.1c-10.5 0-19 8.5-19 19.1c0 3.1.8 6.1 2.1 8.7c-.7-2.1-1.1-4.3-1.1-6.6" opacity=".5"></svg:path><svg:path fill="#fff" d="M39.9 57.3C49.2 51.1 52 39 46.6 29.6l.9 1.2c5.8 8.6 3.4 20.3-5.3 26.2c-2.6 1.8-5.5 2.8-8.4 3.1c2.2-.6 4.2-1.5 6.1-2.8" opacity=".33"></svg:path><svg:path fill="#ed4c5c" d="M23.6 18.9h5.6L17.9 2H11z"></svg:path><svg:path fill="#e8e8e8" d="M29.2 18.9h5.6L23.6 2h-5.7z"></svg:path><svg:path fill="#3e4347" d="M32.9 4.8L30.1 9l6.6 9.9h3.7l1-1.4z" opacity=".5"></svg:path><svg:path fill="#428bc1" d="M34.8 18.9h5.6L29.2 2h-5.6z"></svg:path><svg:path fill="#89664c" d="M26.8 35.2v1c1 0 1.9-.2 2.8-.6v-1.4c-.8.6-1.7.9-2.8 1m6.6-6.5h.9v21.6h-.9zm3.8 22.5V54H26.8v1h11.3v-3.8z" opacity=".5"></svg:path><svg:path fill="#fff" d="M34.3 50.3h2.8v.9h-2.8zm-3.7-21.6h2.8v-.9h-3.8c0 2.1-1.7 3.8-3.8 3.8v3.7c.3 0 .6 0 .9-.1v-2.8c2.2.1 3.9-1.6 3.9-3.7m0 22.5v-16c-.3.2-.6.3-.9.5v14.6h-3.8V54h.9v-2.8z" opacity=".33"></svg:path>`,
-})
-export class Emojione1stPlaceMedalIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[emojioneAirplaneArrivalIcon],svg[emojione-airplane-arrival-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#3e4347" d="M30.6 26.3c.7 1 .5 2.3-.3 2.8s-2 .1-2.6-.9c-.7-1-.5-2.3.2-2.8c.9-.5 2-.1 2.7.9"></svg:path><svg:path fill="#42ade2" d="M30.7 17.3s-1.4-2.1-2.5-3.9c-1.1-1.7-1-2.9.3-2.5c1.3.3 4 1.7 5.9 3.1c.9.6 3.5 2.5 3.5 2.5c1.9 1.4 1.7 2.1-.6 1.6z"></svg:path><svg:path fill="#3e4347" d="M34.5 26.7c.7 1 .5 2.3-.3 2.8s-2 .1-2.6-.9c-.7-1-.5-2.3.3-2.8c.7-.5 1.9-.1 2.6.9m21 2.5c.7 1 .5 2.3-.3 2.8s-2 .1-2.6-.9c-.7-1-.5-2.3.2-2.8c.9-.5 2.1-.1 2.7.9"></svg:path><svg:path fill="#94989b" d="M54.9 30c-.2-2.2-.3-4.4-.5-6.6c-.1-1.1-1.8-.9-1.7.2c.2 2.2.3 4.4.5 6.6c.1 1.1 1.8 1 1.7-.2"></svg:path><svg:path fill="#dae3ea" d="M3.8 12.3s-2.7-1.3-3.4 0c-1.8 3.3.8 11.9 61.1 15.2c3.6.2 3.2-2.3-.2-5c-10.2-8.2 4.3-4.9-57.5-10.2"></svg:path><svg:path fill="#3e4347" d="M57.5 20.3c-.7.4-4 .8-4 .8s0 .9 1.4 1.3c1.2.4 2.8 0 4-.7z"></svg:path><svg:path fill="#42ade2" d="M16.8 13.4S8.7 4.2 6.1 1C4.5-1 2 .6 2 .6S-.1 12.3.4 12.4L16.3 14c.5.1.7-.2.5-.6"></svg:path><svg:path fill="#3e4347" d="M38.3 27c.7 1 .5 2.3-.3 2.8s-2 .1-2.6-.9c-.7-1-.5-2.3.3-2.8s2-.1 2.6.9"></svg:path><svg:path fill="#94989b" d="M37.2 27.6c-1.9-1.7-3.8-3.5-5.8-5.2c-.2-.2-.6-.1-.7.2c-.7 1.5-1.3 3-2 4.5v.3q0 .3.3.3c2.6.2 5.2.5 7.7.7c.6 0 .8-.5.5-.8"></svg:path><svg:path fill="#c5d0d8" d="M25.2 29.5s-8.5-4.4-17.5-2.3c-.5.1-1.7.6-1 1.7c1.6 1.8 5.9 5.1 15.9 6.3z"></svg:path><svg:path fill="#94989b" d="M23 35.1c-.8-.2-1.1-1.6-.5-3.2c.5-1.6 1.6-2.7 2.4-2.5s1.1 1.6.5 3.2c-.5 1.6-1.6 2.7-2.4 2.5"></svg:path><svg:path fill="#3e4347" d="M23.5 32.8c.4-1.1.4-2.2 0-2.8c-.4.5-.8 1.1-1.1 1.9c-.4 1.1-.4 2.2 0 2.8c.4-.5.8-1.1 1.1-1.9"></svg:path><svg:path fill="#42ade2" d="M29 20.7c-2.5-.4-3.7-.5-5.9.6l-15.5 7c-2.2 1.1-2 2.5.5 3.1c2.4.6 6.4.5 8.7-.2L39 24.1c2.3-.7 2.2-1.7-.3-2z"></svg:path><svg:g fill="#3e4347"><svg:circle cx="19.3" cy="17.4" r=".9"></svg:circle><svg:path d="M23.1 16.9c-.5 0-.9.3-.9.8s.3.9.8.9s.9-.3.9-.8s-.4-.9-.8-.9"></svg:path><svg:circle cx="26.7" cy="18" r=".9"></svg:circle><svg:circle cx="30.4" cy="18.3" r=".9"></svg:circle><svg:circle cx="34.1" cy="18.6" r=".9"></svg:circle><svg:circle cx="37.8" cy="18.9" r=".9"></svg:circle><svg:path d="M41.6 18.4c-.5 0-.9.3-.9.8s.3.9.8.9s.9-.3.9-.8s-.3-.9-.8-.9"></svg:path><svg:circle cx="45.2" cy="19.5" r=".9"></svg:circle></svg:g><svg:ellipse cx="31.3" cy="61.5" fill="#94989b" rx="24.6" ry="2.5"></svg:ellipse>`,
-})
-export class EmojioneAirplaneArrivalIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[emojione2ndPlaceMedalIcon],svg[emojione-2nd-place-medal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#428bc1" d="M46.1 2L34.8 18.9h5.6L53 2z"></svg:path><svg:path fill="#e8e8e8" d="M40.4 2L29.2 18.9h5.6L46.1 2z"></svg:path><svg:path fill="#ed4c5c" d="M34.8 2L23.6 18.9h5.6L40.4 2z"></svg:path><svg:g fill="#b2c1c0"><svg:circle cx="32" cy="41.4" r="20.6"></svg:circle><svg:path d="M21.7 15.1c-.5 0-.9.4-.9.9v8.4c0 .5.4.9.9.9h20.6c.5 0 .9-.4.9-.9V16c0-.5-.4-.9-.9-.9zm19.7 6.6c0 .5-.4.9-.9.9H23.6c-.5 0-.9-.4-.9-.9v-3.8c0-.5.4-.9.9-.9h16.9c.5 0 .9.4.9.9z"></svg:path></svg:g><svg:path fill="#3e4347" d="M14.3 43.8c0-11.2 8.6-20.3 19.6-21.1c-.5 0-1.1-.1-1.6-.1c-10.5 0-19 8.5-19 19.1c0 3.1.8 6.1 2.1 8.7c-.7-2.1-1.1-4.3-1.1-6.6" opacity=".5"></svg:path><svg:path fill="#fff" d="M39.9 57.3C49.2 51.1 52 39 46.6 29.6c.3.4.6.8.9 1.3c5.8 8.6 3.4 20.3-5.3 26.2c-2.6 1.8-5.5 2.8-8.4 3.1c2.2-.7 4.2-1.6 6.1-2.9" opacity=".33"></svg:path><svg:path fill="#ed4c5c" d="M23.6 18.9h5.6L17.9 2H11z"></svg:path><svg:path fill="#e8e8e8" d="M29.2 18.9h5.6L23.6 2h-5.7z"></svg:path><svg:path fill="#3e4347" d="M32.9 4.8L30.1 9l6.6 9.9h3.7l1-1.4z" opacity=".5"></svg:path><svg:path fill="#428bc1" d="M34.8 18.9h5.6L29.2 2h-5.6z"></svg:path><svg:path fill="#3e4347" d="M31.5 31.5c-2.1 0-3.8 1.7-3.8 3.7H25c0 .3-.1.6-.1.9h3.8c0-2.1 1.7-3.8 3.8-3.8c.8 0 1.5.3 2.1.7c-.7-.8-1.8-1.5-3.1-1.5M39 54H25v1h15v-3.8h-1zm-7.5-11.2c-2.1 0-3.8 1.7-3.8 3.8v3.8h.9v-2.8c0-2.1 1.7-3.8 3.8-3.8c4.1 0 7.5-3.4 7.5-7.5c0-2.3-1-4.4-2.7-5.8c1.1 1.3 1.8 3 1.8 4.8c0 4.1-3.3 7.5-7.5 7.5" opacity=".5"></svg:path><svg:path fill="#fff" d="M28.7 50.3H39v.9H28.7zM32.5 40c2.1 0 3.8-1.7 3.8-3.8c0-1.3-.6-2.4-1.6-3.1c.4.6.7 1.3.7 2.1c0 2.1-1.7 3.8-3.8 3.8c-4.1 0-7.5 3.4-7.5 7.5V54h.9v-6.6c0-4.1 3.3-7.4 7.5-7.4m0-11.3c1.8 0 3.5.7 4.8 1.8c-1.4-1.6-3.4-2.7-5.8-2.7c-4.1 0-7.5 3.4-7.5 7.5h1c.5-3.7 3.6-6.6 7.5-6.6" opacity=".33"></svg:path>`,
-})
-export class Emojione2ndPlaceMedalIcon {
   readonly viewBox = input("0 0 64 64")
   readonly width = input("1em")
   readonly height = input("1em")

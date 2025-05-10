@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentMdl2TableLastColumnIcon],svg[fluent-mdl2-table-last-column-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 128h2048v1664H0zm768 640v384h512V768zm-128 384V768H128v384zm640-512V256H768v384zm0 640H768v384h512zM640 256H128v384h512zM128 1280v384h512v-384z"></svg:path>`,
+})
+export class FluentMdl2TableLastColumnIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2TableLinkIcon],svg[fluent-mdl2-table-link-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1024 1024V896H640v768H0V128h1664v896h-128V896h-384v128zm512-256V512h-384v256zM512 1536v-256H128v256zm0-384V896H128v256zm0-384V512H128v256zM128 384h1408V256H128zm512 384h384V512H640zm1408 960q0 66-25 124t-68 102t-102 69t-125 25h-256q-67 0-125-25t-101-68t-69-102t-25-125q0-57 19-109t53-93t81-71t103-41v133q-58 21-93 69t-35 112q0 40 15 75t41 61t61 41t75 15h256q40 0 75-15t61-41t41-61t15-75q0-65-37-113t-97-70q6-36 6-73q0-15-1-29t-3-29q57 12 104 40t82 70t54 93t20 111M896 1472q0 65 37 113t97 70q-6 36-6 73q0 15 1 29t3 29q-56-9-104-38t-82-71t-54-96t-20-109q0-66 25-124t68-102t102-69t125-25h256q66 0 124 25t101 69t69 102t26 124q0 54-20 105t-56 94t-81 72t-99 43v-133q42-9 67-23t38-36t18-52t5-70t-15-75t-41-61t-61-41t-75-15h-256q-40 0-75 15t-61 41t-41 61t-15 75"></svg:path>`,
+})
+export class FluentMdl2TableLinkIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2TableTotalRowIcon],svg[fluent-mdl2-table-total-row-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 128h2048v1664H0zm1920 512V256h-512v384zm-640 128H768v384h512zM768 640h512V256H768zm-128 512V768H128v384zm768 0h512V768h-512zM640 256H128v384h512z"></svg:path>`,
+})
+export class FluentMdl2TableTotalRowIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentMdl2TabletIcon],svg[fluent-mdl2-tablet-icon]',
   host: {
     role: 'img',
@@ -3939,57 +3990,6 @@ export class FluentMdl2ZoomOutIcon {
   template: `<svg:path fill="currentColor" d="m749 456l-90-91L1024 0l365 365l-90 91l-275-275zm550 1136l90 91l-365 365l-365-365l90-91l275 275zM456 749l-275 275l275 275l-91 90L0 1024l365-365zm1592 275l-365 365l-91-90l275-275l-275-275l91-90zM640 640h768v768H640zm128 640h512V768H768z"></svg:path>`,
 })
 export class FluentMdl2ZoomToFitIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMdl2AccessLogoIcon],svg[fluent-mdl2-access-logo-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1280 64q137 0 274 15q24 3 69 9t101 18t112 28t105 39t77 51t30 64v1472q0 35-30 63t-77 51t-104 39t-113 28t-100 19t-70 9q-137 15-274 15q-138 0-274-15q-24-2-69-9t-101-18t-112-28t-105-39t-77-51t-30-64v-224H85q-35 0-60-25t-25-60V597q0-35 25-60t60-25h427V288q0-35 30-63t77-51t104-39t113-28t100-18t70-10q136-15 274-15m0 128q-65 0-145 4t-162 16t-161 29t-138 47q62 29 139 47t159 29t161 15t147 5q67 0 146-4t161-15t159-29t140-48q-60-28-138-46t-160-30t-163-15t-145-5M403 1207h217l51 153h171L597 688H430l-248 672h170zm1517 532v-303q-66 29-147 48t-168 30t-170 17t-155 5q-73 0-145-4t-145-13q-23 17-51 17H640v203q29 23 78 41t108 31t125 21t126 14t115 8t88 2q35 0 88-2t114-7t127-14t124-22t109-31t78-41m0-446V924q-66 29-147 48t-168 30t-170 17t-155 5q-64 0-128-3t-128-10v384q64 7 128 10t128 3q37 0 90-2t113-7t125-14t123-22t108-30t81-40m0-512V412q-66 29-147 48t-168 30t-170 17t-155 5q-71 0-155-5t-170-16t-167-31t-148-48v100h299q35 0 60 25t25 60v286q64 7 128 10t128 3q37 0 90-2t113-7t125-14t123-22t108-30t81-40M442 1077l69-209l67 209z"></svg:path>`,
-})
-export class FluentMdl2AccessLogoIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMdl2AccountActivityIcon],svg[fluent-mdl2-account-activity-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1792 256v1792H256V256h512q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100zM640 384v128h768V384h-256V256q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50v128zm1024 0h-128v256H512V384H384v1536h1280zm-405 335q42 0 78 15t64 42t42 63t16 78q0 39-15 76t-43 65l-526 531l-358 68l75-351l526-530q28-28 65-42t76-15m51 249q21-23 21-51q0-31-20-50t-52-20q-14 0-27 4t-23 15l-499 503l-27 126l129-25z"></svg:path>`,
-})
-export class FluentMdl2AccountActivityIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMdl2AccessibiltyCheckerIcon],svg[fluent-mdl2-accessibilty-checker-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M128 128v1792h384v128H0V0h1115l549 549v91h-640V128zm1024 91v293h293zm384 1061l-192 256l-192-256h128V768h128v512zm512 64l-256 192v-128h-192l96-128h96v-128zm-1401 64q9-81 39-155t82-139l91 91q-69 90-84 203zm128 128q15 113 84 203l-91 91q-51-64-81-138t-40-156zm377-505q-113 15-203 84l-91-91q64-51 138-81t156-40zm421 708q69-90 84-203h128q-9 81-39 155t-82 139zm-293 174q113-15 203-84l91 91q-64 51-138 81t-156 40zm-422 7l91-91q90 69 203 84v128q-81-9-155-39t-139-82"></svg:path>`,
-})
-export class FluentMdl2AccessibiltyCheckerIcon {
   readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")

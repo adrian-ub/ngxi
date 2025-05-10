@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[solarMirrorRightLinearIcon],svg[solar-mirror-right-linear-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:path d="M12 21h1c3.771 0 5.657 0 6.828-1.172S21 16.771 21 13v-2c0-3.771 0-5.657-1.172-6.828S16.771 3 13 3h-1"></svg:path><svg:path stroke-dasharray="2.5 3" stroke-linecap="round" d="M13 21H9c-2.828 0-4.243 0-5.121-.879C3 19.243 3 17.828 3 15V9c0-2.828 0-4.243.879-5.121C4.757 3 6.172 3 9 3h4"></svg:path><svg:path stroke-linecap="round" d="M12 22V2"></svg:path></svg:g>`,
+})
+export class SolarMirrorRightLinearIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[solarMirrorRightOutlineIcon],svg[solar-mirror-right-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9 3.75q-.653 0-1.202.003a.75.75 0 0 1-.013-1.5q.561-.004 1.213-.003h.911a.75.75 0 0 1 0 1.5zm-3.371-.695a.75.75 0 0 1-.494.938c-.321.1-.545.235-.726.416s-.316.405-.416.726a.75.75 0 0 1-1.432-.445c.16-.515.408-.962.787-1.342s.827-.627 1.342-.787a.75.75 0 0 1 .939.494M3.009 7.04a.75.75 0 0 1 .744.757Q3.75 8.348 3.75 9v1.364a.75.75 0 1 1-1.5 0V8.998q0-.652.003-1.213a.75.75 0 0 1 .757-.744M3 12.886a.75.75 0 0 1 .75.75V15q0 .653.003 1.202a.75.75 0 0 1-1.5.013q-.004-.562-.003-1.213v-1.366a.75.75 0 0 1 .75-.75m.055 5.485a.75.75 0 0 1 .938.494c.1.321.235.545.416.726s.405.316.726.416a.75.75 0 1 1-.445 1.432a3.2 3.2 0 0 1-1.342-.787a3.2 3.2 0 0 1-.787-1.342a.75.75 0 0 1 .494-.939m3.986 2.62a.75.75 0 0 1 .757-.744q.55.004 1.202.003h.91a.75.75 0 0 1 0 1.5h-.912q-.652 0-1.213-.003a.75.75 0 0 1-.744-.757M12 1.25a.75.75 0 0 1 .75.75v.25h.306c1.838 0 3.294 0 4.433.153c1.172.158 2.121.49 2.87 1.238c.748.749 1.08 1.698 1.238 2.87c.153 1.14.153 2.595.153 4.433v2.112c0 1.838 0 3.294-.153 4.433c-.158 1.172-.49 2.121-1.238 2.87c-.749.748-1.698 1.08-2.87 1.238c-1.14.153-2.595.153-4.433.153h-.306V22a.75.75 0 0 1-1.5 0V2a.75.75 0 0 1 .75-.75m.75 2.5v16.5H13c1.907 0 3.262-.002 4.29-.14c1.005-.135 1.585-.389 2.008-.812s.677-1.003.812-2.009c.138-1.027.14-2.382.14-4.289v-2c0-1.907-.002-3.261-.14-4.29c-.135-1.005-.389-1.585-.812-2.008s-1.003-.677-2.009-.812c-1.027-.138-2.382-.14-4.289-.14z" clip-rule="evenodd"></svg:path>`,
+})
+export class SolarMirrorRightOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[solarMoneyBagBoldIcon],svg[solar-money-bag-bold-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class SolarPlain2LinearIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M19.374 2.83c-.992.176-2.334.62-4.23 1.253l-9.332 3.11c-1.06.354-1.787.598-2.294.841c-.503.242-.637.414-.689.539a1 1 0 0 0-.078.33c-.01.134.033.348.375.79c.345.444.886.987 1.676 1.777l.283.283l.04.04c.216.216.391.39.528.593c.269.395.421.858.44 1.336c.01.244-.027.489-.072.79l-.009.056a28 28 0 0 0-.2 1.485c-.032.359-.02.556.011.693q.034.146.088.282L20.189 2.75c-.214-.004-.48.02-.815.08m2.669-.873c.765.766.804 1.81.604 2.931c-.198 1.114-.68 2.56-1.286 4.378l-3.168 9.504c-.324.972-.59 1.768-.87 2.357c-.287.602-.656 1.136-1.27 1.407a2.6 2.6 0 0 1-.906.213c-.671.033-1.24-.28-1.765-.69c-.515-.4-1.108-.994-1.832-1.718l-.288-.288c-.284-.284-.357-.352-.428-.4a1.06 1.06 0 0 0-.526-.177c-.087-.005-.185.005-.583.059l-.096.013c-.633.086-1.141.155-1.553.185c-.42.032-.799.03-1.162-.06a3.46 3.46 0 0 1-2.553-2.589c-.083-.364-.08-.743-.043-1.162c.036-.411.113-.919.207-1.55l.004-.024c.058-.385.069-.481.066-.565a1.06 1.06 0 0 0-.183-.553c-.047-.069-.112-.139-.388-.414l-.32-.32c-.744-.744-1.353-1.354-1.763-1.882c-.42-.54-.735-1.127-.686-1.816a2.6 2.6 0 0 1 .188-.797c.265-.639.809-1.021 1.426-1.317c.602-.29 1.42-.562 2.419-.895l9.445-3.148c1.818-.606 3.264-1.089 4.378-1.287c1.122-.2 2.166-.16 2.932.605M21.25 3.81L6.953 18.107q.153.066.318.107c.137.034.334.048.693.022c.361-.027.825-.09 1.487-.18l.072-.01l.058-.008c.311-.042.565-.076.817-.061a2.56 2.56 0 0 1 1.27.428c.21.14.391.322.613.544l.042.042l.251.25c.77.77 1.298 1.297 1.73 1.634c.43.335.64.38.77.374q.195-.01.374-.088c.12-.053.286-.187.52-.68c.237-.494.474-1.201.818-2.233l3.13-9.392c.633-1.897 1.078-3.238 1.255-4.23c.06-.336.083-.602.08-.816" clip-rule="evenodd"></svg:path>`,
 })
 export class SolarPlain2OutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solarPlain3BoldIcon],svg[solar-plain-3-bold-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m20.352 10.52l-1.716 5.15c-1.21 3.63-1.816 5.446-2.703 5.962c-.844.49-1.887.49-2.73 0c-.888-.516-1.493-2.331-2.703-5.962c-.195-.583-.292-.874-.455-1.118a2.2 2.2 0 0 0-.597-.597c-.244-.163-.535-.26-1.118-.454c-3.63-1.21-5.446-1.816-5.962-2.703a2.72 2.72 0 0 1 0-2.731C2.884 7.18 4.7 6.575 8.33 5.364l5.15-1.716c4.498-1.5 6.747-2.25 7.934-1.062s.438 3.436-1.062 7.935m-7.306.382a.75.75 0 0 1 .006-1.06l4.21-4.165a.75.75 0 1 1 1.055 1.067l-4.21 4.164a.75.75 0 0 1-1.061-.006" clip-rule="evenodd"></svg:path>`,
-})
-export class SolarPlain3BoldIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solarPlain3BoldDuotoneIcon],svg[solar-plain-3-bold-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m20.352 10.52l-1.716 5.15c-1.21 3.63-1.816 5.446-2.703 5.962c-.844.49-1.887.49-2.73 0c-.888-.516-1.493-2.331-2.703-5.962c-.195-.583-.292-.874-.455-1.118a2.2 2.2 0 0 0-.597-.597c-.244-.163-.535-.26-1.118-.454c-3.63-1.21-5.446-1.816-5.962-2.703a2.72 2.72 0 0 1 0-2.731C2.884 7.18 4.7 6.575 8.33 5.364l5.15-1.716c4.498-1.5 6.747-2.25 7.934-1.062s.438 3.436-1.062 7.935" clip-rule="evenodd" opacity=".5"></svg:path><svg:path fill="currentColor" d="M13.046 10.902a.75.75 0 0 1 .006-1.06l4.21-4.164a.75.75 0 0 1 1.055 1.066l-4.21 4.164a.75.75 0 0 1-1.061-.006"></svg:path>`,
-})
-export class SolarPlain3BoldDuotoneIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

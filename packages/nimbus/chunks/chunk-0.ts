@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[nimbusAlignRightIcon],svg[nimbus-align-right-icon]',
+  selector: 'svg[nimbusAccordionIcon],svg[nimbus-accordion-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M5.75 9h9.75v1.25H5.75zM.5 5.75h15V7H.5zm0 6.5h15v1.25H.5zM5.75 2.5h9.75v1.25H5.75z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M14.75 5.9V3.49L11 2.5L9.44 3L8 2.51L6.57 3L5 2.5l-2.82.75a1.24 1.24 0 0 0-.93 1.2V5.9A1.25 1.25 0 0 0 0 7.15v1.5A1.25 1.25 0 0 0 1.25 9.9v1.65a1.24 1.24 0 0 0 .93 1.2L5 13.5l1.57-.45l1.43.44l1.43-.44l1.57.45l3.75-1V9.9A1.25 1.25 0 0 0 16 8.65v-1.5a1.25 1.25 0 0 0-1.25-1.25m-11 6l-1.25-.35v-7.1l1.25-.33zm1.25.3V3.8l1 .27v7.86zm2.21-.26V4.06L8 3.82l.79.24v7.88l-.79.24zm2.84 0V4.07L11 3.8v8.4zm3.45-.38l-1.25.33V4.12l1.25.33z"></svg:path>`,
 })
-export class NimbusAlignRightIcon {
+export class NimbusAccordionIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -29,6 +29,40 @@ export class NimbusAlignRightIcon {
   template: `<svg:path fill="currentColor" d="M3.13 9h9.75v1.25H3.13zM.5 5.75h15V7H.5zm0 6.5h15v1.25H.5zM3.13 2.5h9.75v1.25H3.13z"></svg:path>`,
 })
 export class NimbusAlignCenterIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[nimbusAlignRightIcon],svg[nimbus-align-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.75 9h9.75v1.25H5.75zM.5 5.75h15V7H.5zm0 6.5h15v1.25H.5zM5.75 2.5h9.75v1.25H5.75z"></svg:path>`,
+})
+export class NimbusAlignRightIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[nimbusAlignLeftIcon],svg[nimbus-align-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M.5 9h9.75v1.25H.5zm0-3.25h15V7H.5zm0 6.5h15v1.25H.5zm0-9.75h9.75v1.25H.5z"></svg:path>`,
+})
+export class NimbusAlignLeftIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,23 +121,6 @@ export class NimbusArrowLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[nimbusAccordionIcon],svg[nimbus-accordion-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.75 5.9V3.49L11 2.5L9.44 3L8 2.51L6.57 3L5 2.5l-2.82.75a1.24 1.24 0 0 0-.93 1.2V5.9A1.25 1.25 0 0 0 0 7.15v1.5A1.25 1.25 0 0 0 1.25 9.9v1.65a1.24 1.24 0 0 0 .93 1.2L5 13.5l1.57-.45l1.43.44l1.43-.44l1.57.45l3.75-1V9.9A1.25 1.25 0 0 0 16 8.65v-1.5a1.25 1.25 0 0 0-1.25-1.25m-11 6l-1.25-.35v-7.1l1.25-.33zm1.25.3V3.8l1 .27v7.86zm2.21-.26V4.06L8 3.82l.79.24v7.88l-.79.24zm2.84 0V4.07L11 3.8v8.4zm3.45-.38l-1.25.33V4.12l1.25.33z"></svg:path>`,
-})
-export class NimbusAccordionIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[nimbusArrowsHorizontalIcon],svg[nimbus-arrows-horizontal-icon]',
   host: {
     role: 'img',
@@ -114,23 +131,6 @@ export class NimbusAccordionIcon {
   template: `<svg:path fill="currentColor" d="M9.25 6.12V4.87h-7l3-2.05l-.71-1L.59 4.45A1.29 1.29 0 0 0 0 5.5a1.29 1.29 0 0 0 .59 1l3.93 2.72l.71-1l-3-2.06zm6.16 3.33l-3.93-2.67l-.71 1l3 2.06h-7v1.25h7.03l-3 2l.71 1l3.93-2.67a1.23 1.23 0 0 0 0-2.1z"></svg:path>`,
 })
 export class NimbusArrowsHorizontalIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[nimbusAlignLeftIcon],svg[nimbus-align-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M.5 9h9.75v1.25H.5zm0-3.25h15V7H.5zm0 6.5h15v1.25H.5zm0-9.75h9.75v1.25H.5z"></svg:path>`,
-})
-export class NimbusAlignLeftIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

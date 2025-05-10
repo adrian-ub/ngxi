@@ -2,35 +2,35 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[formkitArrowdownIcon],svg[formkit-arrowdown-icon]',
+  selector: 'svg[formkitAddIcon],svg[formkit-add-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M4.5 13c-.28 0-.5-.22-.5-.5v-9c0-.28.22-.5.5-.5s.5.22.5.5v9c0 .28-.22.5-.5.5"></svg:path><svg:path fill="currentColor" d="M4.5 14a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.15 3.15l3.15-3.15c.2-.2.51-.2.71 0s.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7M8 2C4.69 2 2 4.69 2 8s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"></svg:path><svg:path fill="currentColor" d="M8 11.5c-.28 0-.5-.22-.5-.5V5c0-.28.22-.5.5-.5s.5.22.5.5v6c0 .28-.22.5-.5.5"></svg:path><svg:path fill="currentColor" d="M11 8.5H5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h6c.28 0 .5.22.5.5s-.22.5-.5.5"></svg:path>`,
 })
-export class FormkitArrowdownIcon {
-  readonly viewBox = input("0 0 9 16")
-  readonly width = input("0.57em")
+export class FormkitAddIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
   readonly height = input("1em")
 }
 
 @Component({
   standalone: true,
-  selector: 'svg[formkitArrowleftIcon],svg[formkit-arrowleft-icon]',
+  selector: 'svg[formkitAmexIcon],svg[formkit-amex-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"></svg:path><svg:path fill="currentColor" d="M6 8.5a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71L5.65.65c.2-.2.51-.2.71 0s.2.51 0 .71L3.21 4.51l3.15 3.15c.2.2.2.51 0 .71c-.1.1-.23.15-.35.15Z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M14.5 13h-13C.67 13 0 12.33 0 11.5v-9C0 1.67.67 1 1.5 1h13c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5M1.5 2c-.28 0-.5.22-.5.5v9c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-9c0-.28-.22-.5-.5-.5z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M8 10.05V7.23h2.39v.65H8.77v.44h1.58v.64H8.77v.43h1.62v.66z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="m10.38 10.05l1.32-1.41l-1.32-1.41h1.02l.81.89l.81-.89H14v.02l-1.29 1.39L14 10.01v.04h-.99l-.82-.9l-.81.9zM8.24 4.01L7 6.79h.85l.23-.56h1.26l.23.56h.87L9.21 4.01h-.98Zm.11 1.6l.37-.89l.37.89z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M10.43 6.79V4.01h1.19l.61 1.71l.62-1.71H14v2.78h-.74v-1.9l-.7 1.9h-.67l-.71-1.91v1.91z"></svg:path>`,
 })
-export class FormkitArrowleftIcon {
-  readonly viewBox = input("0 0 16 9")
-  readonly width = input("1.78em")
+export class FormkitAmexIcon {
+  readonly viewBox = input("0 0 16 14")
+  readonly width = input("1.15em")
   readonly height = input("1em")
 }
 
@@ -53,18 +53,18 @@ export class FormkitAndroidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[formkitArrowrightIcon],svg[formkit-arrowright-icon]',
+  selector: 'svg[formkitArrowdownIcon],svg[formkit-arrowdown-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"></svg:path><svg:path fill="currentColor" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M4.5 13c-.28 0-.5-.22-.5-.5v-9c0-.28.22-.5.5-.5s.5.22.5.5v9c0 .28-.22.5-.5.5"></svg:path><svg:path fill="currentColor" d="M4.5 14a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.15 3.15l3.15-3.15c.2-.2.51-.2.71 0s.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"></svg:path>`,
 })
-export class FormkitArrowrightIcon {
-  readonly viewBox = input("0 0 16 9")
-  readonly width = input("1.78em")
+export class FormkitArrowdownIcon {
+  readonly viewBox = input("0 0 9 16")
+  readonly width = input("0.57em")
   readonly height = input("1em")
 }
 
@@ -87,6 +87,57 @@ export class FormkitAppleIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[formkitArrowleftIcon],svg[formkit-arrowleft-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"></svg:path><svg:path fill="currentColor" d="M6 8.5a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71L5.65.65c.2-.2.51-.2.71 0s.2.51 0 .71L3.21 4.51l3.15 3.15c.2.2.2.51 0 .71c-.1.1-.23.15-.35.15Z"></svg:path>`,
+})
+export class FormkitArrowleftIcon {
+  readonly viewBox = input("0 0 16 9")
+  readonly width = input("1.78em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[formkitArrowrightIcon],svg[formkit-arrowright-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"></svg:path><svg:path fill="currentColor" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"></svg:path>`,
+})
+export class FormkitArrowrightIcon {
+  readonly viewBox = input("0 0 16 9")
+  readonly width = input("1.78em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[formkitAvatarmanIcon],svg[formkit-avatarman-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 10h5c1.66 0 3 1.34 3 3v2H1v-2c0-1.66 1.34-3 3-3m0-6h5v2.5a2.5 2.5 0 0 1-5 0zm5 0c.55 0 1 .45 1 1s-.45 1-1 1zM4 6c-.55 0-1-.45-1-1s.45-1 1-1z"></svg:path><svg:path fill="currentColor" d="M4.12 4.12h-.5C2.87 3.5 3 2.55 3 1.75s.5-.26 1-.26s1 .5 1 .5c-.88 0-1-1-1-1h3c1.1 0 2 .9 2 2h.5s.25.75-.12 1.25l-5.25-.12Z"></svg:path>`,
+})
+export class FormkitAvatarmanIcon {
+  readonly viewBox = input("0 0 13 16")
+  readonly width = input("0.82em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[formkitArrowupIcon],svg[formkit-arrowup-icon]',
   host: {
     role: 'img',
@@ -99,23 +150,6 @@ export class FormkitAppleIcon {
 export class FormkitArrowupIcon {
   readonly viewBox = input("0 0 9 16")
   readonly width = input("0.57em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[formkitAmexIcon],svg[formkit-amex-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.5 13h-13C.67 13 0 12.33 0 11.5v-9C0 1.67.67 1 1.5 1h13c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5M1.5 2c-.28 0-.5.22-.5.5v9c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-9c0-.28-.22-.5-.5-.5z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M8 10.05V7.23h2.39v.65H8.77v.44h1.58v.64H8.77v.43h1.62v.66z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="m10.38 10.05l1.32-1.41l-1.32-1.41h1.02l.81.89l.81-.89H14v.02l-1.29 1.39L14 10.01v.04h-.99l-.82-.9l-.81.9zM8.24 4.01L7 6.79h.85l.23-.56h1.26l.23.56h.87L9.21 4.01h-.98Zm.11 1.6l.37-.89l.37.89z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M10.43 6.79V4.01h1.19l.61 1.71l.62-1.71H14v2.78h-.74v-1.9l-.7 1.9h-.67l-.71-1.91v1.91z"></svg:path>`,
-})
-export class FormkitAmexIcon {
-  readonly viewBox = input("0 0 16 14")
-  readonly width = input("1.15em")
   readonly height = input("1em")
 }
 
@@ -2411,39 +2445,5 @@ export class FormkitYuanIcon {
 export class FormkitZipIcon {
   readonly viewBox = input("0 0 15 16")
   readonly width = input("0.94em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[formkitAddIcon],svg[formkit-add-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7M8 2C4.69 2 2 4.69 2 8s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"></svg:path><svg:path fill="currentColor" d="M8 11.5c-.28 0-.5-.22-.5-.5V5c0-.28.22-.5.5-.5s.5.22.5.5v6c0 .28-.22.5-.5.5"></svg:path><svg:path fill="currentColor" d="M11 8.5H5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h6c.28 0 .5.22.5.5s-.22.5-.5.5"></svg:path>`,
-})
-export class FormkitAddIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[formkitAvatarmanIcon],svg[formkit-avatarman-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 10h5c1.66 0 3 1.34 3 3v2H1v-2c0-1.66 1.34-3 3-3m0-6h5v2.5a2.5 2.5 0 0 1-5 0zm5 0c.55 0 1 .45 1 1s-.45 1-1 1zM4 6c-.55 0-1-.45-1-1s.45-1 1-1z"></svg:path><svg:path fill="currentColor" d="M4.12 4.12h-.5C2.87 3.5 3 2.55 3 1.75s.5-.26 1-.26s1 .5 1 .5c-.88 0-1-1-1-1h3c1.1 0 2 .9 2 2h.5s.25.75-.12 1.25l-5.25-.12Z"></svg:path>`,
-})
-export class FormkitAvatarmanIcon {
-  readonly viewBox = input("0 0 13 16")
-  readonly width = input("0.82em")
   readonly height = input("1em")
 }

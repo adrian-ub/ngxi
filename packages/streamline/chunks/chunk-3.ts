@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[streamlineInterfaceGeometricTriangleGeometricTriangleShapeDesignShapesIcon],svg[streamline-interface-geometric-triangle-geometric-triangle-shape-design-shapes-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M7.46 2a.55.55 0 0 0-.92 0l-6 9.5a.5.5 0 0 0 0 .5a.54.54 0 0 0 .46.25h12a.54.54 0 0 0 .46-.25a.5.5 0 0 0 0-.5Z"></svg:path>`,
+})
+export class StreamlineInterfaceGeometricTriangleGeometricTriangleShapeDesignShapesIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[streamlineInterfaceHelpCustomerSupport1CustomerHeadsetHelpMicrophonePhoneSupportIcon],svg[streamline-interface-help-customer-support-1-customer-headset-help-microphone-phone-support-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class StreamlineNecklaceIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M3.248 1.58a5.948 5.948 0 1 1 7.002 9.597v-.427a1.75 1.75 0 0 0-.413-1.13a4.447 4.447 0 1 0-5.674 0a1.75 1.75 0 0 0-.413 1.13v.427a5.948 5.948 0 0 1-.502-9.597M8.8 10.35a.5.5 0 0 1 .2.4v1.5a.5.5 0 0 1-.2.4l-1.5 1.125a.5.5 0 0 1-.6 0L5.2 12.65a.5.5 0 0 1-.2-.4v-1.5a.5.5 0 0 1 .2-.4l1.5-1.125a.5.5 0 0 1 .6 0z" clip-rule="evenodd"></svg:path>`,
 })
 export class StreamlineNecklaceSolidIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineNecktieIcon],svg[streamline-necktie-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M8.5 3.5h-3l-.561-1.684A1 1 0 0 1 5.887.5h2.226a1 1 0 0 1 .948 1.316zm0 0l1 7.5L7 13.5L4.5 11l1-7.5"></svg:path>`,
-})
-export class StreamlineNecktieIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

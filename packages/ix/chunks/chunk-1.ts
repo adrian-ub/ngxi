@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[ixEyeDropperIcon],svg[ix-eye-dropper-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m300.907 90.285l-70.409 70.409l-15.085-15.085l-30.169 30.17l30.169 30.169l-150.849 150.85v90.509h90.51l150.848-150.848l30.172 30.169l30.169-30.169l-15.084-15.085l70.408-70.41S476.339 156.211 416 95.871s-115.093-5.586-115.093-5.586m-25.155 176.004l-30.169-30.172l-138.352 138.354v30.169H137.4zm45.257-15.085l70.17-70.171c.104-.115.322-.356.629-.715a52 52 0 0 0 3.196-4.189c2.752-3.989 5.644-9.245 7.323-15.049c1.637-5.646 1.895-10.951.636-16.065c-1.18-4.79-4.36-12.236-14.116-21.991c-9.754-9.755-17.201-12.937-21.991-14.116c-5.113-1.258-10.419-1-16.066.635c-5.802 1.68-11.059 4.573-15.048 7.324a52 52 0 0 0-4.188 3.196c-.36.307-.599.524-.715.63l-70.171 70.17z" clip-rule="evenodd"></svg:path>`,
+})
+export class IxEyeDropperIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixEyeFilledIcon],svg[ix-eye-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M256 85.333C405.334 85.333 469.334 256 469.334 256s-64 170.666-213.334 170.666C106.667 426.666 42.667 256 42.667 256S106.667 85.333 256 85.333m0 96c-41.237 0-74.666 33.43-74.666 74.667s33.43 74.666 74.666 74.666c41.237 0 74.667-33.43 74.667-74.666c0-41.237-33.43-74.667-74.667-74.667M256 288c-17.644 0-32-14.356-32-32c0-17.645 14.356-32 32-32c17.645 0 32 14.355 32 32c0 17.644-14.355 32-32 32"></svg:path>`,
+})
+export class IxEyeFilledIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixEyeFocusIcon],svg[ix-eye-focus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M448 341.333V448H341.333v-42.667h64v-64zm-341.333 0v64h64V448H64V341.333zM256 121.6q115.2 0 192 134.4q-76.8 134.4-192 134.4T64 256q76.8-134.4 192-134.4m0 38.4c-55.516 0-104.272 29.657-147.076 93.606l-1.59 2.394l1.59 2.394c41.615 62.172 88.856 91.932 142.465 93.537L256 352c55.516 0 104.272-29.657 147.076-93.606l1.57-2.394l-1.57-2.394c-41.615-62.172-88.856-91.932-142.465-93.537zm0 28.8c37.114 0 67.2 30.086 67.2 67.2s-30.086 67.2-67.2 67.2s-67.2-30.086-67.2-67.2s30.086-67.2 67.2-67.2m0 38.4c-15.906 0-28.8 12.894-28.8 28.8s12.894 28.8 28.8 28.8s28.8-12.894 28.8-28.8s-12.894-28.8-28.8-28.8M448 64v106.667h-42.667v-64h-64V64zm-277.333 0v42.667h-64v64H64V64z"></svg:path>`,
+})
+export class IxEyeFocusIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixEyeMagnifyingGlassIcon],svg[ix-eye-magnifying-glass-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M42.667 256.003S106.667 85.336 256 85.336s213.333 170.667 213.333 170.667s-24.517 65.378-78.609 115.206l-25.135-35.189c28.903-27.879 47.75-61.132 57.032-80.025C404.596 219.306 350.262 128.003 256 128.003c-94.219 0-148.548 91.222-166.62 128.006c18.024 36.69 72.358 127.994 166.62 127.994c12.626 0 24.535-1.638 35.736-4.564l26.219 36.706c-18.75 6.623-39.377 10.524-61.955 10.524c-149.333 0-213.333-170.666-213.333-170.666m244.012 79.652c-9.521 3.669-19.865 5.681-30.679 5.681c-47.128 0-85.333-38.205-85.333-85.333s38.205-85.334 85.333-85.334s85.333 38.205 85.333 85.334c0 20.878-7.498 40.005-19.947 54.834l58.641 82.098l-34.72 24.799zM256 298.669c23.564 0 42.667-19.102 42.667-42.666c0-23.565-19.103-42.667-42.667-42.667s-42.667 19.102-42.667 42.667c0 23.564 19.103 42.666 42.667 42.666" clip-rule="evenodd"></svg:path>`,
+})
+export class IxEyeMagnifyingGlassIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[ixFacebookLogoIcon],svg[ix-facebook-logo-icon]',
   host: {
     role: 'img',
@@ -8427,74 +8495,6 @@ export class IxScreenFilledIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M469.333 448.003V170.669H298.667v277.334zM362.667 149.336v-64h-320v234.667h138.666v42.666h-32v42.667H256v-42.667h-32v-42.666h53.333v-42.667h-192V128.003H320v21.333zm-21.334 64h85.334v42.667h-85.334zm0 64v128h85.334v-128zm64 85.333v-42.666h-42.666v42.666z" clip-rule="evenodd"></svg:path>`,
 })
 export class IxScreenPcTowerIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ixScreenPcTowerFilledIcon],svg[ix-screen-pc-tower-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M469.333 448.003V170.669H298.667v277.334zM362.667 149.336v-64h-320v234.667h138.666v42.666h-32v42.667H256v-42.667h-32v-42.666h53.333V149.336zm-21.334 64h85.334v42.667h-85.334zm0 64v128h85.334v-128zm64 85.333v-42.666h-42.666v42.666z" clip-rule="evenodd"></svg:path>`,
-})
-export class IxScreenPcTowerFilledIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ixScreenPcTowerSettingsIcon],svg[ix-screen-pc-tower-settings-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M85.333 64h277.334v85.333H320v-42.666H85.333v192h192v42.666H224V384h32v42.667H149.333V384h32v-42.667H42.667V64zm189.412 115.006l-13.276 7.665a59.8 59.8 0 0 1 2.166 15.996a59.8 59.8 0 0 1-2.166 15.996l13.276 7.665a74 74 0 0 1-5.318 12.172l-1.658 2.873a75 75 0 0 1-7.977 10.809l-13.271-7.662c-7.49 7.626-17.011 13.251-27.686 15.998v15.322a75 75 0 0 1-14.93 1.493a75 75 0 0 1-14.937-1.494v-15.321c-10.677-2.748-20.199-8.374-27.689-16.002l-13.267 7.66a75 75 0 0 1-8.278-11.313l-1.063-1.842a74 74 0 0 1-5.608-12.701l13.27-7.662a59.8 59.8 0 0 1-2.165-15.991c0-5.539.754-10.901 2.165-15.991l-13.271-7.661a74 74 0 0 1 5.648-12.772l.984-1.705a75 75 0 0 1 8.317-11.38l13.267 7.66c7.491-7.628 17.013-13.254 27.69-16.003v-15.321a75 75 0 0 1 14.73-1.494h.415c5.04.014 9.963.527 14.722 1.493v15.323c10.676 2.747 20.196 8.372 27.686 15.998l13.273-7.662a75 75 0 0 1 8.001 10.851l1.608 2.786a74 74 0 0 1 5.342 12.217m-48.446 23.661c0 12.371-10.028 22.4-22.4 22.4s-22.4-10.029-22.4-22.4c0-12.372 10.029-22.4 22.4-22.4c12.372 0 22.4 10.028 22.4 22.4m243.034-32V448H298.667V170.667zm-42.666 42.666h-85.334V256h85.334zm-85.334 192v-128h85.334v128zm64-85.333v42.667h-42.666V320z" clip-rule="evenodd"></svg:path>`,
-})
-export class IxScreenPcTowerSettingsIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ixScreenPcTowerSettingsFilledIcon],svg[ix-screen-pc-tower-settings-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M42.667 85.336h320v64h-85.334v192H224v42.667h32v42.666H149.333v-42.666h32v-42.667H42.667zm210.136 100.963l-15.172 8.759a68.3 68.3 0 0 1 2.475 18.278c0 6.331-.862 12.46-2.475 18.278l15.172 8.759a85 85 0 0 1-6.252 14.229l-1.538 2.664a85.6 85.6 0 0 1-9.297 12.656l-15.167-8.757c-8.56 8.717-19.441 15.146-31.642 18.286v17.512a85.7 85.7 0 0 1-17.065 1.706a85.7 85.7 0 0 1-17.068-1.707v-17.51c-12.203-3.14-23.084-9.57-31.645-18.286l-15.163 8.754a85.6 85.6 0 0 1-9.286-12.637l-1.558-2.698a85 85 0 0 1-6.242-14.214l15.167-8.757a68.3 68.3 0 0 1-2.475-18.278c0-6.331.862-12.461 2.475-18.279l-15.167-8.756a85 85 0 0 1 6.233-14.197l1.577-2.732a85.6 85.6 0 0 1 9.276-12.621l15.163 8.755c8.56-8.717 19.442-15.146 31.645-18.287V129.71a85.7 85.7 0 0 1 17.068-1.707c5.844 0 11.551.587 17.065 1.706v17.511c12.201 3.141 23.082 9.57 31.642 18.286l15.167-8.756a85.6 85.6 0 0 1 9.286 12.637l1.56 2.702a85 85 0 0 1 6.241 14.21m-55.361 27.037c0 14.138-11.461 25.6-25.6 25.6c-14.138 0-25.6-11.462-25.6-25.6s11.462-25.6 25.6-25.6s25.6 11.462 25.6 25.6m271.891 234.667V170.669H298.667v277.334zm-128-234.667h85.334v42.667h-85.334zm0 64v128h85.334v-128zm21.334 85.333h42.666v-42.666h-42.666z" clip-rule="evenodd"></svg:path>`,
-})
-export class IxScreenPcTowerSettingsFilledIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ixScreenSettingsIcon],svg[ix-screen-settings-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M106.667 106.667V320h298.666V106.667zM64 362.667h170.667v42.666H192V448h128v-42.667h-42.667v-42.666H448V64H64zm273.26-176.37l-15.169 8.757a68.3 68.3 0 0 1 2.475 18.279c0 6.332-.862 12.461-2.474 18.279l15.168 8.757a85 85 0 0 1-6.301 14.319l-1.437 2.488a85.6 85.6 0 0 1-9.348 12.742l-15.165-8.755c-8.559 8.716-19.44 15.145-31.641 18.286v17.51a85.7 85.7 0 0 1-17.07 1.708c-5.843 0-11.55-.588-17.063-1.707v-17.51c-12.203-3.14-23.086-9.57-31.646-18.288l-15.166 8.756a85.6 85.6 0 0 1-9.24-12.561l-1.648-2.854a85 85 0 0 1-6.198-14.134l15.17-8.758a68.4 68.4 0 0 1-2.474-18.278c0-6.33.862-12.46 2.474-18.278l-15.17-8.758a85 85 0 0 1 6.186-14.112l1.673-2.897a85.6 85.6 0 0 1 9.227-12.54l15.166 8.756c8.561-8.717 19.443-15.147 31.646-18.287v-17.511A85.7 85.7 0 0 1 256.298 128c5.846 0 11.555.588 17.07 1.708v17.51c12.201 3.141 23.081 9.569 31.641 18.285l15.164-8.755a85.6 85.6 0 0 1 9.336 12.72l1.463 2.534a85 85 0 0 1 6.288 14.295m-55.358 27.037c0 14.138-11.462 25.6-25.6 25.6s-25.6-11.462-25.6-25.6s11.461-25.6 25.6-25.6c14.138 0 25.6 11.461 25.6 25.6" clip-rule="evenodd"></svg:path>`,
-})
-export class IxScreenSettingsIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -162,6 +162,7 @@ Currently, support the following libraries:
 | `@ngxi/pepicons-pop` | [![Ngxi pepicons-pop version][pepicons-pop-ngxi-version-src]][pepicons-pop-ngxi-href] | ![pepicons-pop downloads][pepicons-pop-ngxi-downloads-src] | ![pepicons-pop license][pepicons-pop-ngxi-license] |
 | `@ngxi/pepicons-print` | [![Ngxi pepicons-print version][pepicons-print-ngxi-version-src]][pepicons-print-ngxi-href] | ![pepicons-print downloads][pepicons-print-ngxi-downloads-src] | ![pepicons-print license][pepicons-print-ngxi-license] |
 | `@ngxi/ph` | [![Ngxi ph version][ph-ngxi-version-src]][ph-ngxi-href] | ![ph downloads][ph-ngxi-downloads-src] | ![ph license][ph-ngxi-license] |
+| `@ngxi/picon` | [![Ngxi picon version][picon-ngxi-version-src]][picon-ngxi-href] | ![picon downloads][picon-ngxi-downloads-src] | ![picon license][picon-ngxi-license] |
 | `@ngxi/pixel` | [![Ngxi pixel version][pixel-ngxi-version-src]][pixel-ngxi-href] | ![pixel downloads][pixel-ngxi-downloads-src] | ![pixel license][pixel-ngxi-license] |
 | `@ngxi/pixelarticons` | [![Ngxi pixelarticons version][pixelarticons-ngxi-version-src]][pixelarticons-ngxi-href] | ![pixelarticons downloads][pixelarticons-ngxi-downloads-src] | ![pixelarticons license][pixelarticons-ngxi-license] |
 | `@ngxi/prime` | [![Ngxi prime version][prime-ngxi-version-src]][prime-ngxi-href] | ![prime downloads][prime-ngxi-downloads-src] | ![prime license][prime-ngxi-license] |
@@ -985,6 +986,11 @@ Currently, support the following libraries:
 [ph-ngxi-href]: https://www.npmjs.com/package/@ngxi/ph
 [ph-ngxi-downloads-src]: https://img.shields.io/npm/dm/@ngxi/ph?style=flat&colorA=080f12&colorB=1fa669
 [ph-ngxi-license]: https://img.shields.io/npm/l/@ngxi/ph
+
+[picon-ngxi-version-src]: https://img.shields.io/npm/v/@ngxi/picon?style=flat&colorA=080f12&colorB=1fa669
+[picon-ngxi-href]: https://www.npmjs.com/package/@ngxi/picon
+[picon-ngxi-downloads-src]: https://img.shields.io/npm/dm/@ngxi/picon?style=flat&colorA=080f12&colorB=1fa669
+[picon-ngxi-license]: https://img.shields.io/npm/l/@ngxi/picon
 
 [pixel-ngxi-version-src]: https://img.shields.io/npm/v/@ngxi/pixel?style=flat&colorA=080f12&colorB=1fa669
 [pixel-ngxi-href]: https://www.npmjs.com/package/@ngxi/pixel

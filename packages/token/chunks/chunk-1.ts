@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[tokenEthxIcon],svg[token-ethx-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.407 3h1.112c3.939.307 7.221 2.922 8.206 6.755c.1.397.19.89.275 1.488v1.435c-.265 2.287-1.133 4.256-2.817 5.865a8.8 8.8 0 0 1-4.88 2.357l-.657.1h-1.303A9.08 9.08 0 0 1 3 12.603v-1.212A9.07 9.07 0 0 1 11.407 3M6.494 9.607a6 6 0 0 1 3.124-3.123a.05.05 0 0 0 .01-.043l-.01-.021L8.49 5.292a.07.07 0 0 0-.074-.016a.1.1 0 0 0-.027.016L5.298 8.39a.074.074 0 0 0 0 .106l1.127 1.123a.04.04 0 0 0 .037.01a.04.04 0 0 0 .032-.021m8.29-3.007l-.036.021c-.021.01-.021.027 0 .037a6.02 6.02 0 0 1 2.885 3.272q.04.127.137.032l1.377-1.377a.1.1 0 0 0 .016-.026v-.032a.1.1 0 0 0-.021-.063L16.135 5.45a.14.14 0 0 0-.164-.034a.14.14 0 0 0-.048.034q-.57.573-1.138 1.149m2.579 8.09a5.88 5.88 0 0 1-2.986 2.805a.06.06 0 0 0-.01.053c0 .016.01.021.015.027l1.371 1.37a.133.133 0 0 0 .186 0l3.023-3.022a.11.11 0 0 0 .026-.122a.1.1 0 0 0-.026-.037l-1.382-1.382a.06.06 0 0 0-.058-.015a.06.06 0 0 0-.048.042a1.7 1.7 0 0 1-.111.28M9.919 17.6a5.87 5.87 0 0 1-3.266-2.859l-.012.002a.02.02 0 0 0-.01.009l-1.153 1.149q-.048.057 0 .106l3.07 3.06a.09.09 0 0 0 .09.02c.01 0 .021-.01.027-.02l1.291-1.303a.12.12 0 0 0 .038-.063c0-.022 0-.043-.011-.064q-.008-.017-.064-.042z"></svg:path><svg:path fill="currentColor" d="m12 14.22l2.826-1.615L12 16.454zm0 0l-2.827-1.615L12 16.454zm0-.627l2.826-1.625L12 10.766z"></svg:path><svg:path fill="currentColor" d="m12 7.5l2.826 4.479L12 10.799zm0 6.093l-2.827-1.62L12 10.77z"></svg:path><svg:path fill="currentColor" d="m12 7.5l-2.827 4.479L12 10.799z"></svg:path>`,
-})
-export class TokenEthxIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[tokenEtiIcon],svg[token-eti-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class TokenMtlIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M19.941 4.324H21v14.294h-1.059zM3 4.324h1.059v14.294H3zm3.176 1.588H5.118V17.03h1.058zm11.648 0h1.058v11.647h-1.059zm-9.53 1.059H7.235v11.647h1.06zm7.412-.025h1.059v11.647h-1.06zm-5.294 1.613h-1.06v9h1.06zm3.176 0h1.059v9h-1.059zm-1.059 1.588h-1.058v9.53h1.058z" clip-rule="evenodd"></svg:path>`,
 })
 export class TokenMtlxIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenMtrgIcon],svg[token-mtrg-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 3.947a8.29 8.29 0 0 1 7.579 5.21l-1.421.238A6.6 6.6 0 0 0 12 5.41C8.314 5.41 5.292 8.3 5.368 12l-1.326 1.255A8.067 8.067 0 0 1 12 3.947m-6.02 10.73a6.61 6.61 0 0 0 6.015 3.912c3.728 0 6.75-3.126 6.636-6.826l1.365-.73A8.06 8.06 0 0 1 12 20.054a8.08 8.08 0 0 1-7.314-4.737z"></svg:path><svg:path fill="currentColor" d="m3 14.841l8.053-5.684l-.474 2.369l4.737-2.369l-.474 2.369L21 9.63l-8.29 4.026l.711-2.131l-4.737 2.368L9.158 12z"></svg:path>`,
+})
+export class TokenMtrgIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

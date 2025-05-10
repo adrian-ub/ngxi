@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentVideoBackgroundEffect24RegularIcon],svg[fluent-video-background-effect-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 16.938v2.121L5.059 20h-2.12zm16.002-2.503v2.122L18.56 20h-.566v-1.557zM8.75 14h6.495a1.75 1.75 0 0 1 1.744 1.607l.006.143V20h-1.5v-4.25a.25.25 0 0 0-.193-.243l-.057-.007H8.75a.25.25 0 0 0-.244.193l-.006.057V20H7v-4.25a1.75 1.75 0 0 1 1.606-1.744zm-.729-3.584c.06.579.243 1.12.523 1.6L2 18.56v-2.122zm13.98-.484v2.123l-4.007 4.01v-.315l-.004-.168a2.7 2.7 0 0 0-.387-1.247zM12.057 4L2 14.06v-2.121L9.936 4zm9.946 1.432v2.123l-5.667 5.67a2.7 2.7 0 0 0-.86-.216l-.23-.009h-.6a4 4 0 0 0 .855-1.062zM12 7a3 3 0 1 1 0 6a3 3 0 0 1 0-6m0 1.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3M7.559 4l-5.56 5.56V7.438L5.439 4zm13.497 0L15.91 9.149a4 4 0 0 0-.652-1.47L18.935 4zm-4.498 0l-2.543 2.544a4 4 0 0 0-1.6-.522L14.438 4z"></svg:path>`,
+})
+export class FluentVideoBackgroundEffect24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentVideoBackgroundEffect28FilledIcon],svg[fluent-video-background-effect-28-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.44 4L2 8.44v2.12L8.56 4zM2 13.94v2.12L14.06 4h-2.12zm0 7.31q0 .15.016.295l7.983-7.983a4.5 4.5 0 0 1-.48-1.642L2 19.44zM14.42 7.02a4.5 4.5 0 0 1 1.642.479L19.56 4h-2.122zM7 19.94l-3.668 3.667c.414.25.9.393 1.418.393h.31L7 22.06zm11.918-4.297A3 3 0 0 0 18 15.5h-1.06l9.044-9.045Q26 6.6 26 6.75v1.81zM21 19.061V18.5c0-.456-.102-.89-.284-1.276L26 11.939v2.122zM21 24h.56L26 19.56v-2.12l-5 5zm-2.582-13.358a4.5 4.5 0 0 0-.598-1.522L22.94 4h.31c.519 0 1.004.144 1.418.393zM8 18.5V24h12v-5.5a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2m6-3.5a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7"></svg:path>`,
+})
+export class FluentVideoBackgroundEffect28FilledIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentVideoBackgroundEffect28RegularIcon],svg[fluent-video-background-effect-28-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.44 4L2 8.44v2.12L8.56 4zM2 13.94v2.12L14.06 4h-2.12zm0 7.31q0 .15.016.295l7.983-7.983a4.5 4.5 0 0 1-.48-1.642L2 19.44zM14.42 7.02a4.5 4.5 0 0 1 1.642.479L19.56 4h-2.122zM7 19.94l-3.668 3.667c.414.25.9.393 1.418.393h.31L7 22.06zm11.918-4.297A3 3 0 0 0 18 15.5h-1.06l9.044-9.045Q26 6.6 26 6.75v1.81zM21 19.061V18.5c0-.456-.102-.89-.284-1.276L26 11.939v2.122zM21 24h.56L26 19.56v-2.12l-5 5zm-2.582-13.358a4.5 4.5 0 0 0-.598-1.522L22.94 4h.31c.519 0 1.004.144 1.418.393zM10 18a.5.5 0 0 0-.5.5V24H8v-5.5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2V24h-1.5v-5.5a.5.5 0 0 0-.5-.5zm2-6.5a2 2 0 1 1 4 0a2 2 0 0 1-4 0M14 8a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7"></svg:path>`,
+})
+export class FluentVideoBackgroundEffect28RegularIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentVideoBackgroundEffect32FilledIcon],svg[fluent-video-background-effect-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 8.586L6.586 4h2.828L2 11.414zm0 9.828v-2.828L13.586 4h2.828l-3.062 3.062a6.53 6.53 0 0 0-3.29 3.29zm0 4.172l7.76-7.76c.202.69.515 1.334.92 1.909l-2.525 2.524a4 4 0 0 0-.896.896l-5.202 5.203A3.3 3.3 0 0 1 2 24.75zM17.826 6.76c.69.202 1.334.515 1.909.92L23.415 4h-2.83zm3.878 3.121c.354.645.6 1.357.718 2.11l6.824-6.823a3.25 3.25 0 0 0-1.747-1.081zM3.885 27.701L6.5 25.086v2.828L6.414 28H5.25a3.2 3.2 0 0 1-1.365-.3M21.5 18.5c.427 0 .838.067 1.224.19L30 11.415V8.586L20.086 18.5zm4 4v.414l4.5-4.5v-2.828l-4.991 4.991c.313.57.491 1.226.491 1.923m1.25 5.5H25.5v-.914l4.5-4.5v2.164q0 .389-.087.752l-2.411 2.41a3.3 3.3 0 0 1-.752.088M8 22.5V28h16v-5.5a2.5 2.5 0 0 0-2.5-2.5h-11A2.5 2.5 0 0 0 8 22.5m8-4.5a5 5 0 1 0 0-10a5 5 0 0 0 0 10"></svg:path>`,
+})
+export class FluentVideoBackgroundEffect32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentVideoBackgroundEffect32RegularIcon],svg[fluent-video-background-effect-32-regular-icon]',
   host: {
     role: 'img',
@@ -8428,74 +8496,6 @@ export class FluentWeatherSnowflake48RegularIcon {
 })
 export class FluentWeatherSqualls20FilledIcon {
   readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentWeatherSqualls20RegularIcon],svg[fluent-weather-squalls-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6.568 6.11A3.248 3.248 0 0 1 13 6.75A3.25 3.25 0 0 1 9.75 10H2.5a.5.5 0 1 1 0-1h7.25a2.251 2.251 0 0 0 .002-4.5A2.25 2.25 0 0 0 7.55 6.307l-.059.291a.5.5 0 1 1-.98-.196zM13 10.5a2.5 2.5 0 1 1 2.5 2.5h-1.38c.24.357.379.787.379 1.25a2.254 2.254 0 0 1-2.255 2.25a2.264 2.264 0 0 1-2.233-1.888l-.005-.03a.5.5 0 1 1 .986-.164l.005.03c.101.605.63 1.052 1.247 1.052a1.25 1.25 0 1 0 .005-2.5H2.5a.5.5 0 0 1 0-1h13a1.5 1.5 0 1 0-1.5-1.5a.5.5 0 0 1-1 0"></svg:path>`,
-})
-export class FluentWeatherSqualls20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentWeatherSqualls24FilledIcon],svg[fluent-weather-squalls-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7.747 6.19a4.3 4.3 0 0 1 3.985-2.69C14.072 3.5 16 5.396 16 7.75A4.25 4.25 0 0 1 11.75 12H3a1 1 0 1 1 0-2h8.75A2.25 2.25 0 0 0 14 7.75a2.265 2.265 0 0 0-2.268-2.25c-.936 0-1.784.571-2.128 1.433l-.176.438a1 1 0 0 1-1.856-.742zm8.054 5.494a3.19 3.19 0 0 1 3.02-2.184A3.18 3.18 0 0 1 22 12.68v.07A3.25 3.25 0 0 1 18.75 16h-1c.161.385.25.807.25 1.25v.07a3.18 3.18 0 0 1-3.18 3.18a3.19 3.19 0 0 1-3.019-2.184a1 1 0 0 1 1.898-.632c.162.487.62.816 1.122.816A1.18 1.18 0 0 0 16 17.32v-.07c0-.69-.56-1.25-1.25-1.25H3a1 1 0 1 1 0-2h15.75c.69 0 1.25-.56 1.25-1.25v-.07a1.18 1.18 0 0 0-1.18-1.18c-.501 0-.959.33-1.121.816a1 1 0 0 1-1.898-.632"></svg:path>`,
-})
-export class FluentWeatherSqualls24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentWeatherSqualls24RegularIcon],svg[fluent-weather-squalls-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.077 6.884A4.07 4.07 0 0 1 11.973 4C14.174 4 16 5.783 16 8a4 4 0 0 1-4 4H2.75a.75.75 0 0 1 0-1.5H12A2.5 2.5 0 0 0 14.5 8c0-1.373-1.138-2.5-2.527-2.5c-1.13 0-2.138.743-2.46 1.815l-.045.15a.75.75 0 1 1-1.436-.43zm8.212 5.129A2.94 2.94 0 0 1 19.07 10A2.93 2.93 0 0 1 22 12.93V13a3 3 0 0 1-3 3h-1.3a2.75 2.75 0 0 1-2.45 4h-.135a2.56 2.56 0 0 1-2.285-1.41a.75.75 0 0 1 1.34-.673c.18.357.545.583.945.583h.135a1.25 1.25 0 1 0 0-2.5H2.75a.75.75 0 0 1 0-1.5H19a1.5 1.5 0 0 0 1.5-1.5v-.07c0-.79-.64-1.43-1.43-1.43c-.61 0-1.163.4-1.358.987a.75.75 0 0 1-1.424-.474"></svg:path>`,
-})
-export class FluentWeatherSqualls24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentWeatherSqualls48FilledIcon],svg[fluent-weather-squalls-48-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14 15.5a8.5 8.5 0 1 1 8.5 8.5h-17a1.5 1.5 0 0 1 0-3h17a5.5 5.5 0 1 0-5.5-5.5a1.5 1.5 0 0 1-3 0m17.098 8.424A6.5 6.5 0 0 1 37.404 19h.096a6.5 6.5 0 1 1 0 13h-2.303a6 6 0 1 1-10.736 5.308l-.096-.231a1.5 1.5 0 1 1 2.77-1.154l.096.23A3 3 0 1 0 30 32H5.5a1.5 1.5 0 0 1 0-3h32a3.5 3.5 0 1 0 0-7h-.096a3.5 3.5 0 0 0-3.396 2.651l-.053.213a1.5 1.5 0 1 1-2.91-.728z"></svg:path>`,
-})
-export class FluentWeatherSqualls48FilledIcon {
-  readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
 }

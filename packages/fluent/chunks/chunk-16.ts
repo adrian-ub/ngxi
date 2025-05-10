@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentGlassesOff32FilledIcon],svg[fluent-glasses-off-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m22.586 24l5.707 5.707a1 1 0 0 0 1.414-1.414l-26-26a1 1 0 0 0-1.414 1.414L6.715 8.13l-3.872 4.517A3.5 3.5 0 0 0 2 14.925V19.5A4.5 4.5 0 0 0 6.5 24h4a4.5 4.5 0 0 0 4.5-4.5V17h.586L17 18.415V19.5a4.5 4.5 0 0 0 4.5 4.5zm-12-12H6.032l2.101-2.452zm16.616 11.667l-9.799-9.799A3.5 3.5 0 0 1 20.5 12h5.469l-2.98-3.476A1.5 1.5 0 0 0 21.85 8H20a1 1 0 1 1 0-2h1.85a3.5 3.5 0 0 1 2.658 1.222l4.65 5.425A3.5 3.5 0 0 1 30 14.925V19.5a4.5 4.5 0 0 1-2.798 4.167M9.582 6.047L11.534 8H12a1 1 0 1 0 0-2h-1.85a3.5 3.5 0 0 0-.569.047"></svg:path>`,
+})
+export class FluentGlassesOff32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentGlassesOff32RegularIcon],svg[fluent-glasses-off-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M28.293 29.707L22.586 24H21.5a4.5 4.5 0 0 1-4.5-4.5v-1.085L15.586 17H15v2.5a4.5 4.5 0 0 1-4.5 4.5h-4A4.5 4.5 0 0 1 2 19.5v-4.575a3.5 3.5 0 0 1 .843-2.278L6.715 8.13L2.293 3.707a1 1 0 0 1 1.414-1.414l26 26a1 1 0 0 1-1.414 1.414M8.133 9.547L6.032 12h4.554zm9.27 4.321l1.598 1.598A1.5 1.5 0 0 1 20.5 14h6a1.5 1.5 0 0 1 1.5 1.5v4a2.5 2.5 0 0 1-2.466 2.5l1.667 1.667A4.5 4.5 0 0 0 30 19.5v-4.575a3.5 3.5 0 0 0-.842-2.278l-4.65-5.425A3.5 3.5 0 0 0 21.85 6H20a1 1 0 1 0 0 2h1.85a1.5 1.5 0 0 1 1.138.524L25.97 12H20.5a3.5 3.5 0 0 0-3.097 1.868M11.535 8L9.58 6.047A3.5 3.5 0 0 1 10.15 6H12a1 1 0 1 1 0 2zM13 19.5v-4a1.5 1.5 0 0 0-1.5-1.5h-6A1.5 1.5 0 0 0 4 15.5v4A2.5 2.5 0 0 0 6.5 22h4a2.5 2.5 0 0 0 2.5-2.5"></svg:path>`,
+})
+export class FluentGlassesOff32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentGlassesOff48FilledIcon],svg[fluent-glasses-off-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m34.232 36l7.634 7.634a1.25 1.25 0 0 0 1.768-1.768l-37.5-37.5a1.25 1.25 0 1 0-1.768 1.768l6.838 6.838l-5.744 6.21c-.287.263-.54.563-.75.892a4.25 4.25 0 0 0-.71 2.35V29.5a6.5 6.5 0 0 0 6.5 6.5h5a6.5 6.5 0 0 0 6.5-6.5v-5h.732L26 27.768V29.5a6.5 6.5 0 0 0 6.5 6.5zm-18-18H9.96l3.014-3.259zM44 29.5a6.5 6.5 0 0 1-3.931 5.973l-13.96-13.96A4.5 4.5 0 0 1 30.5 18h7.541l-4.568-4.938a1.75 1.75 0 0 0-1.285-.562H29.25a1.25 1.25 0 1 1 0-2.5h2.938a4.25 4.25 0 0 1 3.12 1.364l7.232 7.818c.287.263.54.563.75.892c.46.693.71 1.51.71 2.35zm-25.25-17h-1.654l-2.361-2.361A4.3 4.3 0 0 1 15.812 10h2.938a1.25 1.25 0 1 1 0 2.5"></svg:path>`,
+})
+export class FluentGlassesOff48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentGlassesOff48RegularIcon],svg[fluent-glasses-off-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m34.232 36l7.634 7.634a1.25 1.25 0 0 0 1.768-1.768l-37.5-37.5a1.25 1.25 0 1 0-1.768 1.768l6.838 6.838l-5.744 6.21c-.287.263-.54.563-.75.892a4.25 4.25 0 0 0-.71 2.35V29.5a6.5 6.5 0 0 0 6.5 6.5h5a6.5 6.5 0 0 0 6.5-6.5v-5h.732L26 27.768V29.5a6.5 6.5 0 0 0 6.5 6.5zm-18-18H9.96l3.014-3.259zM40.07 35.473A6.5 6.5 0 0 0 44 29.5v-7.075a4.25 4.25 0 0 0-.71-2.35a4.5 4.5 0 0 0-.75-.893l-7.232-7.818A4.25 4.25 0 0 0 32.188 10H29.25a1.25 1.25 0 1 0 0 2.5h2.938c.488 0 .954.204 1.285.562L38.041 18H30.5a4.5 4.5 0 0 0-4.391 3.512l2.391 2.392V22.5a2 2 0 0 1 2-2h9a2 2 0 0 1 1.289.47l.246.266q.086.095.157.198c.195.308.308.674.308 1.066v7a4 4 0 0 1-3.442 3.961zM14.735 10.139l2.361 2.361h1.654a1.25 1.25 0 1 0 0-2.5h-2.938a4.3 4.3 0 0 0-1.077.139M17.5 20.5a2 2 0 0 1 2 2v7a4 4 0 0 1-4 4h-5a4 4 0 0 1-4-4v-7c0-.392.113-.758.308-1.066q.071-.104.157-.198l.246-.266c.348-.293.798-.47 1.289-.47z"></svg:path>`,
+})
+export class FluentGlassesOff48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentGlobe12FilledIcon],svg[fluent-globe-12-filled-icon]',
   host: {
     role: 'img',
@@ -8428,74 +8496,6 @@ export class FluentHistory48RegularIcon {
 })
 export class FluentHistoryDismiss20FilledIcon {
   readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentHistoryDismiss20RegularIcon],svg[fluent-history-dismiss-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10 4a6 6 0 0 1 5.946 5.192q.547.15 1.042.402A7 7 0 0 0 5 5.1V3.5a.5.5 0 0 0-1 0v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1H5.528A5.98 5.98 0 0 1 10 4m.257 7c.313-.38.677-.716 1.08-1H10V6.5a.5.5 0 0 0-1 0v4a.5.5 0 0 0 .5.5zm-.663 5.988a5.5 5.5 0 0 1-.402-1.042a6 6 0 0 1-5.174-6.408a.5.5 0 1 0-.998-.076Q3 9.73 3 10a7 7 0 0 0 6.594 6.988M19 14.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.646-1.146a.5.5 0 0 0-.708-.708L14.5 13.793l-1.146-1.147a.5.5 0 0 0-.708.708l1.147 1.146l-1.147 1.146a.5.5 0 0 0 .708.708l1.146-1.147l1.146 1.147a.5.5 0 0 0 .708-.708L15.207 14.5z"></svg:path>`,
-})
-export class FluentHistoryDismiss20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentHistoryDismiss24FilledIcon],svg[fluent-history-dismiss-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 5a7 7 0 0 1 6.95 6.162c.74.169 1.43.463 2.05.86V12A9 9 0 0 0 7 4.516V4a1 1 0 0 0-2 0v3a1 1 0 0 0 1 1h3a1 1 0 0 0 0-2h-.608A6.97 6.97 0 0 1 12 5m.81 8a6.5 6.5 0 0 1 2.48-1.614A1 1 0 0 0 14.5 11H13V8a1 1 0 1 0-2 0v4a1 1 0 0 0 1 1zm-.788 8a6.5 6.5 0 0 1-.86-2.05a7 7 0 0 1-6.108-7.826a1 1 0 1 0-1.984-.248Q3 11.43 3 12a9 9 0 0 0 9 9zM23 17.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-7.146-2.354a.5.5 0 0 0-.708.708l1.647 1.646l-1.647 1.646a.5.5 0 0 0 .708.708l1.646-1.647l1.646 1.647a.5.5 0 0 0 .708-.708L18.207 17.5l1.647-1.646a.5.5 0 0 0-.708-.708L17.5 16.793z"></svg:path>`,
-})
-export class FluentHistoryDismiss24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentHistoryDismiss24RegularIcon],svg[fluent-history-dismiss-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 4.5a7.5 7.5 0 0 1 7.468 6.803c.545.173 1.06.416 1.532.719V12A9 9 0 0 0 6 5.292V4.25a.75.75 0 0 0-1.5 0v3c0 .414.336.75.75.75h3a.75.75 0 0 0 0-1.5H6.9a7.47 7.47 0 0 1 5.1-2m.81 8.5a6.5 6.5 0 0 1 2.129-1.476a.8.8 0 0 0-.189-.024H12.5V7.75a.75.75 0 0 0-1.5 0v4.5c0 .414.336.75.75.75zm-.788 8a6.5 6.5 0 0 1-.719-1.532a7.5 7.5 0 0 1-6.722-8.576c.067-.454-.265-.892-.724-.892a.75.75 0 0 0-.752.623A9 9 0 0 0 12 21zM23 17.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-7.146-2.354a.5.5 0 0 0-.708.708l1.647 1.646l-1.647 1.646a.5.5 0 0 0 .708.708l1.646-1.647l1.646 1.647a.5.5 0 0 0 .708-.708L18.207 17.5l1.647-1.646a.5.5 0 0 0-.708-.708L17.5 16.793z"></svg:path>`,
-})
-export class FluentHistoryDismiss24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentHistoryDismiss28FilledIcon],svg[fluent-history-dismiss-28-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14 5a8.96 8.96 0 0 0-5.658 2H10a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1.013V4a1 1 0 0 1 2 0v1.514A10.96 10.96 0 0 1 14 3c6.075 0 11 4.925 11 11q0 .248-.01.491a7.5 7.5 0 0 0-2.008-1.07A9 9 0 0 0 14 5m-.58 17.982a7.5 7.5 0 0 0 1.071 2.007Q14.248 25 14 25C7.925 25 3 20.075 3 14q0-.555.054-1.099a1 1 0 1 1 1.99.198Q5 13.543 5 14a9 9 0 0 0 8.42 8.982M15.4 15a7.5 7.5 0 0 1 3.24-1.768A1 1 0 0 0 18 13h-3V8a1 1 0 1 0-2 0v6a1 1 0 0 0 1 1zM27 20.5a6.5 6.5 0 1 1-13 0a6.5 6.5 0 0 1 13 0m-9.146-3.354a.5.5 0 0 0-.708.708l2.647 2.646l-2.647 2.646a.5.5 0 0 0 .708.708l2.646-2.647l2.646 2.647a.5.5 0 0 0 .708-.708L21.207 20.5l2.647-2.646a.5.5 0 0 0-.708-.708L20.5 19.793z"></svg:path>`,
-})
-export class FluentHistoryDismiss28FilledIcon {
-  readonly viewBox = input("0 0 28 28")
   readonly width = input("1em")
   readonly height = input("1em")
 }

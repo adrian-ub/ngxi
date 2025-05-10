@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[emojioneFlagForCoteDivoireIcon],svg[emojione-flag-for-cote-divoire-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#f2b200" d="M2 32c0 13.1 8.4 24.2 20 28.3V3.7C10.4 7.8 2 18.9 2 32"></svg:path><svg:path fill="#83bf4f" d="M62 32c0-13.1-8.3-24.2-20-28.3v56.6C53.7 56.2 62 45.1 62 32"></svg:path><svg:path fill="#f9f9f9" d="M22 60.3c3.1 1.1 6.5 1.7 10 1.7s6.9-.6 10-1.7V3.7C38.9 2.6 35.5 2 32 2s-6.9.6-10 1.7z"></svg:path>`,
+})
+export class EmojioneFlagForCoteDivoireIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneFlagForCroatiaIcon],svg[emojione-flag-for-croatia-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#ed4c5c" d="M32 2C18.9 2 7.8 10.4 3.7 22h56.6C56.2 10.4 45.1 2 32 2"></svg:path><svg:path fill="#428bc1" d="M32 62c13.1 0 24.2-8.3 28.3-20H3.7C7.8 53.7 18.9 62 32 62"></svg:path><svg:path fill="#f9f9f9" d="M3.7 22C2.6 25.1 2 28.5 2 32s.6 6.9 1.7 10h56.6c1.1-3.1 1.7-6.5 1.7-10s-.6-6.9-1.7-10z"></svg:path><svg:path fill="#fff" d="m42.9 25.2l2.6-6l-2-3.2l-3.3 1.2l-2.3-2.7l-3.1 1.8L32 14l-2.8 2.3l-3.1-1.8l-2.3 2.7l-3.3-1.2l-2 3.3l2.6 6c3.3-1.5 7-2.3 10.9-2.3c3.9-.2 7.6.7 10.9 2.2"></svg:path><svg:path fill="#428bc1" d="M34.7 16.5L32 14.3l-2.7 2.2l.5 6.2c.7-.1 1.5-.1 2.2-.1s1.5 0 2.2.1z"></svg:path><svg:path fill="#ed4c5c" d="M32 50c6.2 0 11.3-5.1 11.3-11.3V25.3H20.7v13.4C20.7 44.9 25.8 50 32 50"></svg:path><svg:path fill="#fff" d="M32 49.8c6.1 0 11.1-5 11.1-11.1V25.5H20.9v13.2c0 6.1 5 11.1 11.1 11.1"></svg:path><svg:g fill="#ed4c5c"><svg:path d="M25.6 25.9h-4.3v4.7h4.3zm0 9.4h4.3v-4.7h-4.3zm-4.3 3.4c0 .4 0 .8.1 1.3h4.2v-4.7h-4.3zm12.8-3.4h-4.3V40h4.3zm0 9.4h4.3V40h-4.3zm4.3 2.5c.9-.7 1.8-1.6 2.4-2.6h-2.4zm-12.8-2.5h4.3V40h-4.3zm-2.4 0c.7 1 1.5 1.8 2.4 2.6v-2.6z"></svg:path><svg:path d="M32.7 49.3c.5 0 .9-.1 1.4-.2v-4.5h-4.3v4.5c.5.1.9.2 1.4.2q.75.15 1.5 0m9.9-9.3c0-.4.1-.8.1-1.3v-3.4h-4.3V40zm-8.5-4.7h4.3v-4.7h-4.3zm0-9.4h-4.3v4.7h4.3z"></svg:path><svg:path d="M42.6 30.6v-4.7h-4.3v4.7z"></svg:path></svg:g><svg:path fill="#428bc1" d="m23.9 17.4l-3.3-1.2l-1.9 3l.7 1.6l1.8 4.1c1.3-.6 2.7-1.1 4.2-1.4z"></svg:path><svg:path fill="#fff" d="M23.7 20.4c.1.2.2.5.2.8c0 .9-.7 1.6-1.6 1.6c-.8 0-1.4-.6-1.6-1.3c.3.5.8.8 1.4.8c.9 0 1.6-.7 1.6-1.6z"></svg:path><svg:path fill="#ffe62e" d="M22.2 18.1v.1l-.1.6l.5.3v.1h-.1l-.5.2l-.1.5v.1l-.1-.1l-.4-.3l-.6.2v-.1l.1-.5l-.4-.4v-.1l.6-.2l.1-.5v-.1v.1l.4.3l.6-.1z"></svg:path><svg:path fill="#2a5f9e" d="m29.3 16.5l-3.1-1.7l-2.3 2.6l1.5 6c1.4-.4 2.9-.6 4.4-.7z"></svg:path><svg:path fill="#ed4c5c" d="M25 21.9c1.5-.4 3-.6 4.6-.8l-.1-1.6c-1.7.1-3.3.4-4.9.8zm-.7-3q2.55-.6 5.1-.9l-.1-1.5q-2.7.3-5.4.9z"></svg:path><svg:path fill="#ffe62e" d="M32 19.3c-.2 0-.5.7-.9.2c0 0 .3.4.3.6l-.3-.1c0 2.1 1.9 2 1.9 0l-.3.1c0-.1.3-.6.3-.6c-.5.5-.7-.1-1-.2m1.2-2.9c-.2 0-.5.7-.9.2c0 0 .3.4.3.6l-.3-.1c0 2.1 1.9 2 1.9 0l-.3.1c0-.1.3-.6.3-.6c-.4.5-.7-.2-1-.2m-2.5 0c-.2 0-.5.7-.9.2c0 0 .3.4.3.6l-.3-.1c0 2.1 1.9 2 1.9 0l-.3.1c0-.1.3-.6.3-.6c-.4.5-.7-.2-1-.2"></svg:path><svg:path fill="#2a5f9e" d="m40.1 17.4l-2.3-2.7l-3.1 1.8l-.5 6.2c1.5.1 3 .4 4.4.7z"></svg:path><svg:path fill="#ffe62e" d="M35.3 17.8h.3c.2.1.2 0 .3-.1c.2-.1.8-.2 1.4.1c.1.1.7.1.7.1s-.5.2-1 0c.2.1.3.3.5.4c.1 0 .8.2.8.2s-.6.3-1 0c-.3-.3-.6-.6-1.1-.5l.3.1c-.1.1-.4.2-.5.1c0 .3 1 1.3 2.2 1c.5-.2.2.2.1.4c-.1.1-.5 2.3-1.6 1.8c0 0 .6-.2.6-.6l-.2-.2c-.4 0-.7 1.2-1.2.6c0 0 .6-.3.5-.8H36c-.3.1-.2 1.2-.8.9c0 0 .7-1 .3-1c-.1.2-.3.4-.3.6c.2.2-.5.2-.4 0c0-.1.5-.6.4-1.1c-.2-.1 0-1 .1-1.2c-.6 0-.2-.2-.1-.6c.2 0 .1 0 .1-.2"></svg:path><svg:path fill="#428bc1" d="m42.8 24.9l2.5-5.7l-1.9-3l-3.3 1.2l-1.5 6q2.1.6 4.2 1.5"></svg:path><svg:path fill="#fff" d="M39.6 19.6c1.7.4 3.3 1 4.8 1.7l-1 2.2c-1.4-.6-2.9-1.1-4.4-1.5z"></svg:path><svg:path fill="#ed4c5c" d="m43.5 23.1l.6-1.5c-1.5-.7-3.1-1.2-4.7-1.6l-.4 1.5c1.6.4 3.1.9 4.5 1.6"></svg:path><svg:path fill="#ffe62e" d="m42 17.4l.1.6l-.4.4l.6.2l.1.6l.5-.4l.6.2l-.1-.6l.4-.4l-.6-.2l-.1-.6l-.4.4z"></svg:path>`,
+})
+export class EmojioneFlagForCroatiaIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneFlagForCrossedFlagsIcon],svg[emojione-flag-for-crossed-flags-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#e6eff4" d="M32.2 23.6c6 9.8 17.6 1.5 23.6 11.4c2-6.7 4.2-13.5 6.2-20.2C56 5 44.4 13.3 38.4 3.4c-2.1 6.7-4.2 13.4-6.2 20.2"></svg:path><svg:path fill="#ff2449" d="M51.4 21.3c-.8 2.8-3.5 4.1-5.9 3c-2.4-1.2-3.7-4.4-2.8-7.1c.8-2.8 3.5-4.1 5.9-3s3.7 4.3 2.8 7.1"></svg:path><svg:path fill="#3e4347" d="M39.4 3.3c.2-.5-.1-1.1-.7-1.3c-.5-.2-1.1.1-1.3.7L19.3 62h2.2z"></svg:path><svg:path fill="#e6eff4" d="M31.8 23.6c-6 9.8-17.6 1.5-23.6 11.4C6.2 28.2 4 21.5 2 14.7c6-9.8 17.6-1.5 23.6-11.4c2.1 6.8 4.2 13.5 6.2 20.3"></svg:path><svg:path fill="#ff2449" d="M12.6 21.3c.8 2.8 3.5 4.1 5.9 3c2.4-1.2 3.7-4.4 2.8-7.1c-.8-2.8-3.5-4.1-5.9-3s-3.7 4.3-2.8 7.1"></svg:path><svg:path fill="#4c5256" d="M26.6 2.7c-.2-.5-.8-.9-1.3-.7s-.9.8-.7 1.3l18 58.7h2.2z"></svg:path>`,
+})
+export class EmojioneFlagForCrossedFlagsIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[emojioneFlagForCubaIcon],svg[emojione-flag-for-cuba-icon]',
   host: {
     role: 'img',
@@ -8444,57 +8495,6 @@ export class EmojioneMagnifyingGlassTiltedRightIcon {
   template: `<svg:path fill="#b69467" d="M64 30.8v-8.4h-5.7v3L40.4 11c-.9-.8-2.5-.8-3.4 0L5.7 36v-2.8H0v8.5c.1.4.3.8.7 1.2l22.9 18.4c.9.8 2.5.8 3.4 0l36.2-29.1c.5-.4.8-.9.8-1.4"></svg:path><svg:path fill="#efdec2" d="M27.1 53c-.9.8-2.5.8-3.4 0L.7 34.6c-.9-.8-.9-2 0-2.8L36.9 2.7c.9-.8 2.5-.8 3.4 0l22.9 18.4c.9.8.9 2 0 2.8z"></svg:path><svg:path fill="#b70000" d="M46.5 13.5c.8 2.1.3 4.2.3 6.3c-1.8 2.1-3.7 0-5.5 2.5c3.8 2 9.1 6.4 6.6 10.5c-4.1-.6-8.3-1.6-12.3.6c0-1.2-2-2.4-3.5-3.7C25.7 31.8 22.6 40 15.8 41c.3-4.6 11.3-9 13.4-13.6c-1.6-2-3-1.1-4.6-2.8C28.8 21 21.5 17 28 13.5c2.1 1.6.1 3 1.3 4.5c2.5 1.5 4.9 1.9 7.4 3.3c3.8-2.6 3.2-5.3 5.3-7.9c1.5-.3 3.1.6 4.5.1M38 24c-1.6 1.3-3.2 2.6-4.9 3.9c3.6 2.2 7.1 1.5 10.6-.2c-.2-2.1-3.8-3-5.7-3.7m-7.9-3.8c-.9 1.9-2.3 3.8.8 5.9c1.5-1.5 4.8-2.9 3.2-4.4c-1.4.2-2.7-.9-4-1.5"></svg:path>`,
 })
 export class EmojioneMahjongRedDragonIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[emojioneManIcon],svg[emojione-man-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#ffb300" d="M6 36h52C58 8 54 2 32 2S6 8 6 36"></svg:path><svg:path fill="#ffdd67" d="M55.8 29.9c-.2 1.1-.4 2.1-.7 2.7c-.6 1-1.7 1.6-1.7 1.6s.3-2.1.2-5C52.4 11.8 51.4 16.6 32 16.6s-20.4-4.8-21.6 12.5c-.1 2.9.2 5.1.2 5.1s-1.1-.6-1.7-1.6c-.3-.6-.5-1.6-.7-2.7C6.4 29.4 4 29.8 4 35c0 3.2 1.2 5.9 5.3 6.2c1.3 10.2 7.3 15.4 17.2 19.9c2.7 1.2 8.3 1.2 11 0c10-4.5 15.9-9.7 17.2-19.9c4.1-.3 5.3-2.9 5.3-6.2c0-5.2-2.4-5.6-4.2-5.1"></svg:path><svg:path fill="#937237" d="M41 48.9c0 3.4-4.5 5.1-9 5.1s-9-1.7-9-5.1c0 0 0-.9.9-.9h16.2c.9 0 .9.9.9.9"></svg:path><svg:path fill="#f5f5f5" d="M20 28.6c-5 0-7 1.8-7 3.6s0 4.4 6.6 4.4c6.4 0 7.4-.8 7.4-3.5c0-1.8-2-4.5-7-4.5"></svg:path><svg:circle cx="20.5" cy="31.6" r="4.5" fill="#664e27"></svg:circle><svg:path fill="#231f20" d="M22 31.6c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5s1.5.7 1.5 1.5"></svg:path><svg:path fill="#664e27" d="M13 32.1c0-7 14-7 14 1c-2-6-12-6-14-1"></svg:path><svg:path fill="#f5f5f5" d="M44 28.6c5 0 7 1.8 7 3.6s0 4.4-6.6 4.4c-6.4 0-7.4-.8-7.4-3.5c0-1.8 2-4.5 7-4.5"></svg:path><svg:circle cx="43.5" cy="31.6" r="4.5" fill="#664e27"></svg:circle><svg:path fill="#231f20" d="M42 31.6c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5"></svg:path><svg:path fill="#664e27" d="M51 32.1c0-7-14-7-14 1c2-6 12-6 14-1"></svg:path><svg:path fill="#eba352" d="M32 45c-4.2 0-6.3-3-4.2-3h8.4c2.1 0 0 3-4.2 3"></svg:path>`,
-})
-export class EmojioneManIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[emojioneManAndWomanHoldingHandsIcon],svg[emojione-man-and-woman-holding-hands-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#ffdd67" d="M14.1 26.5h5.8V31h-5.8z"></svg:path><svg:path fill="#231f20" d="M10.2 43.3v17.2h5.3c0-11.5.9-13 .9-13h1.1s.9 1.5.9 13h5.3V43.3z"></svg:path><svg:g fill="#428bc1"><svg:path d="M18.4 59.9c.9-1.1 4.4-1.1 5.3 0V62h-5.3zm-2.8 0c-.9-1.1-4.4-1.1-5.3 0V62h5.4c-.1 0-.1-2.1-.1-2.1m8.8-31.1h-4.5c0 .9-1.3 1.6-2.9 1.6s-2.9-.7-2.9-1.6H9.6l.7 14.5h13.5z"></svg:path><svg:path d="m30.8 43.7l-7.7-12.6c-1.2-2 1.4-3.2 2.6-1.3l7.7 12.6z"></svg:path></svg:g><svg:path fill="#ffdd67" d="M30.8 43.7c1.5 2.3 2.1 2.2 2.9 1.9c.7-.4 1.2-.8-.2-3.2z"></svg:path><svg:path fill="#428bc1" d="M5.3 44.4L8 30.2c.4-2.2 3.4-1.8 2.9.5L8.2 44.8z"></svg:path><svg:path fill="#ffdd67" d="M5.3 44.4c-.5 2.6.1 2.9.9 3c.8.2 1.5.1 2-2.6z"></svg:path><svg:path fill="#ffb300" d="M59.2 14.8V31H33.4V14.8c0-15.6 25.8-15.6 25.8 0"></svg:path><svg:path fill="#ffdd67" d="M58.5 18.6c0-3.8-2.7-1.8-2.7-1.8c.2-5.3-2.2-5.7-2.2-5.7c-11.1 0-16.7 5.7-16.7 5.7s-2.7-1.9-2.7 1.8c0 1.5.5 2.6 2.3 2.8c.7 5.9 4.5 7 9.9 7s9.1-1.2 9.9-7c1.6-.2 2.2-1.4 2.2-2.8"></svg:path><svg:path fill="#ff4848" d="m56.5 44.1l-7.2-12.8c-1.1-2.1 1.5-3.2 2.7-1.2l7.2 12.8z"></svg:path><svg:path fill="#ffdd67" d="M56.5 44.1c1.4 2.5 2 2.3 2.8 2c.7-.3 1.3-.7-.1-3.2zM43.4 26.8h5.8v4.5h-5.8zM48.3 62V46.6c0-2.5 3-2.5 3 0V62z"></svg:path><svg:path fill="#ff4848" d="M47.1 59.9c.9-1.1 4.4-1.1 5.3 0V62h-5.3z"></svg:path><svg:path fill="#ffdd67" d="M41.3 62V46.6c0-2.5 3-2.5 3 0V62z"></svg:path><svg:g fill="#ff4848"><svg:path d="M45.5 59.9c-.9-1.1-4.4-1.1-5.3 0V62h5.3zm4.7-30.8h-1c0 .9-1.3 1.6-2.9 1.6s-2.9-.8-2.9-1.6h-1c-1.3 1.1-1.2 6.4-2.2 11.7c-1.2 6.5-3.5 10.5-3.5 10.5h19.2s-2.2-4-3.5-10.5c-1-5.3-.9-10.7-2.2-11.7"></svg:path><svg:path d="m35.5 43.9l7.7-12.6c1.2-2-1.4-3.2-2.6-1.2l-7.7 12.5z"></svg:path></svg:g><svg:path fill="#ffdd67" d="M35.5 43.9c-1.5 2.3-2.1 2.2-2.9 1.9c-.7-.4-1.2-.8.2-3.2z"></svg:path><svg:path fill="#ffb300" d="M4.7 14.8L6 17.2h22l1-2.5C29 5.8 26.9 2 17.2 2C7.2 1.9 4.7 5.8 4.7 14.8"></svg:path><svg:path fill="#ffdd67" d="M28 14.7c-.1.5-.2 1-.3 1.2c-.3.5-.8.8-.8.8s.1-1 .1-2.3c-.6-8.2-1-4.3-10-4.3S7.5 6.2 7 14.4c-.1 1.3.1 2.3.1 2.3s-.5-.2-.8-.8c-.1-.2-.2-.8-.3-1.2c-.9-.2-2 0-2 2.4c0 1.5.6 2.8 2.4 2.9c.7 5.1 7.5 8.5 10.5 8.5c3.1 0 9.9-3.4 10.5-8.5c1.9-.2 2.4-1.4 2.4-2.9c.2-2.4-.9-2.6-1.8-2.4"></svg:path><svg:path fill="#937237" d="M14.3 17.4c0 1.1-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9s.8-1.9 1.9-1.9s1.9.8 1.9 1.9m9.2 0c0 1.1-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9s.8-1.9 1.9-1.9c1 0 1.9.8 1.9 1.9M20 23.1c-1.9 1.5-4.1 1.5-6 0c-.2-.2-.4.1-.3.4c.6 1.1 1.8 2 3.3 2s2.7-.9 3.3-2c.1-.3-.1-.6-.3-.4m23.7-5.8c0 1.1-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9s.8-1.9 1.9-1.9c1 0 1.9.8 1.9 1.9m9.2 0c0 1.1-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9s.8-1.9 1.9-1.9s1.9.8 1.9 1.9M49.4 23c-1.9 1.5-4.1 1.5-6 0c-.2-.2-.4.2-.3.5c.6 1.1 1.8 2 3.3 2s2.7-.9 3.3-2c.2-.3-.1-.6-.3-.5"></svg:path>`,
-})
-export class EmojioneManAndWomanHoldingHandsIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[emojioneManDancingIcon],svg[emojione-man-dancing-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#3e4347" d="M21.5 58.9s-1 1.5 0 3.1h2.9v-1.1s.5 1.1 4.9 1.1c1.5 0 1.7-1.5.1-1.6s-1.4-1.2-2.9-3.1zm17.2 0s-1 1.5 0 3.1h2.9v-1.1s.5 1.1 4.9 1.1c1.5 0 1.7-1.5.1-1.6s-1.4-1.2-2.9-3.1z"></svg:path><svg:path fill="#c28fef" d="M41.9 48.2c-.5-2.5-4.3-4.2-6.7-9.1c0 0-4.1-1.2-10-1.2c0 0-2.6 1.3-1.2 7.3c.9 3.6-1 9.7-3.8 14.2c0 0 4.2 1.6 8.6 0c0 0-1.3-3.1.9-9.1c.7-1.9-1-3.9.7-8.1c0 0 .8 1.8 6.9 7.3c0 0-1.2 5.6.2 10c0 0 .9.4 4.2.4c3.1 0 4.6-.4 4.6-.4s-2.8-3-4.4-11.3"></svg:path><svg:path fill="#9450e0" d="M29.1 38.8c-2.1-1-3.4-1.1-4.2-.8c-.3.3-.9 1-1.2 2.3c1.8 1 4.6.8 4.6.8c.8-1.5.8-2.3.8-2.3"></svg:path><svg:path fill="#c28fef" d="M32.9 21.5s7.2-2.2 10.3-8.1c0 0 .5 2.3 4.2 4.5c0 0-5.4 4.1-9.2 5.8c0 0-.2 7.4 2.7 14.9c0 0-.3.9-7.1.9c0 0 3.5-6.3-.9-18m-5 .4s-3.4-2-5-.7c-8.9 7-9.4 8.7-8.4 14.2c0 0 1.8-1.3 5 .2c0 0-1.4-5.5 5-8.4c0 0 .2 4.2-2.1 11.2c0 0 1.4 1.9 5.5 1.9c0 0 4.3-9.1 0-18.4"></svg:path><svg:path fill="#9450e0" d="M44.1 12.4s3.9 2.1 3.9 5.4h-2.2s-.2-1.8-1.2-2.5s-.5-2.9-.5-2.9"></svg:path><svg:path fill="#ffc7ce" d="M44.1 12.4s-1.7 1.4-2.8 2.7c0 0 .2 1.2 1.1 2.2l2.5-1.3l-1.9 2.3s.7 1.1 2.1 1.6c0 0 1.8-1 2.9-2.1c0 0-3.2-1.8-3.9-5.4"></svg:path><svg:path fill="#ffdd67" d="M48 12.6s1.9-1.6 1.4-2.1s-.9-.6-1.4 0l-1.3 1.3c-.7-.6-1 0-1.2.2c-.3.3-.6 1.6-.6 1.6c.5 1.3 1.4 2.5 2.7 3.3c1-.6 2.4-1.6 2.4-2c0-1-2-2.3-2-2.3"></svg:path><svg:path fill="#eba352" d="M45.5 13.2s.9-.2 1.3.2l-.2.1s-.3-.2-1.1-.3"></svg:path><svg:path fill="#9450e0" d="M14.4 36.5s1.6 1.1 5.7.2c0-.1-2.1-1.8-5.7-.2"></svg:path><svg:path fill="#ffdd67" d="M15.4 35.4s-1.1 2.2.7 4.6c.5.6 1.8 1.2 3.3.5c1.4-.6.2-1.1-.4-2.3c.3-.4.7-.7.5-1.1c-.3-.6-1.2-1-1.2-1s.6-.9-2.9-.7"></svg:path><svg:path fill="#eba352" d="M19.6 37.2c0-.1-.1-.1-.1-.2c.1.3-.3.8-.5.6c-.4-.4-.9-.8-.9-.8c.6.7 1 1.5 1 1.5c.3-.4.7-.7.5-1.1"></svg:path><svg:path fill="#ffc7ce" d="M14 33.1s.5 2 .4 3.4c0 0 2.3-.9 5.7.2c0 0-.6-2 .1-3.5c0 0-.4-.9-2.1-1.1l-.7 2.8l-.7-2.8c.1 0-1.5-.5-2.7 1"></svg:path><svg:path fill="#eba352" d="M48.6 15.6c-.3.3-.9.8-1.7-.1c-.9-.9-.3-1.5.1-2c.2-.2.4-.4.4-.9c0-.4-.9-.8-.5-.5c0 0 .6.3-.2 1.4c-.3.5-.7 1-.3 1.7c.5.7 1.1 1.5 2.1.9c.9-.7.6-1 .1-.5m-15.7 5.6h-4.3l3.5 5.6z"></svg:path><svg:path fill="#ffc7ce" d="M35.9 22.1c-.5-.6-1.7-.3-1.7-.3l1.4-1.9c-1.1.8-2.9 1-2.9 1c-1 2-.6 5.8-.6 5.8s-.8-3.9-3.5-5.8c0 0-1.4-.2-3.3.2l2.6 1.3l-2 .8s1.3.2 2.9 1.1c0 0 1.6 6.4-.4 14.4l5.5.3s2.9-5.6-.2-15c1.1-1.2 2.2-1.9 2.2-1.9"></svg:path><svg:path fill="#9450e0" d="M33.8 39.5s5.7-2.1 7.1-.9c0 0-.1.9-7.1.9"></svg:path><svg:path fill="#c28fef" d="M32.1 27.2s1.3 4.7-.8 10.5c0 0 2.9-5.2.8-10.5"></svg:path><svg:path fill="#ffdd67" d="M28.6 7.9c-7.9 0-6.9-2-6.9 7.9c0 4.7 4.2 6.1 8.6 6s6.9-1.1 6.9-5.8c0-7.8-2.1-8.1-8.6-8.1"></svg:path><svg:path fill="#ffb300" d="M25 21.3c-.1.7-.1 2-3 1.6c0 0 .4-4.8-1.8-7.5s-2.6-5.1-.9-7c0 0-2-4.4 7.1-5.6c4.6-.6 8.7 1.1 12.9-.8c0 0 3.8 7.5-3.4 8.4s-7.2-1.6-11.4-1c0 0 .5 4.2 1.7 7.1c0 0 .2.8-.8 1.3c0 0-.9-3.9-2.3-4.8s-1.4 1.3-.7 2.5s1.2 1 1.2 1s1.7 2.5 1.4 4.8"></svg:path><svg:g fill="#937237"><svg:circle cx="27.9" cy="13.4" r="1.5"></svg:circle><svg:circle cx="35" cy="13.4" r="1.5"></svg:circle><svg:path d="M33.7 17.8c-1.5 1.2-3.2 1.2-4.6 0c-.2-.1-.3.1-.2.3c.5.8 1.4 1.6 2.5 1.6c1.2 0 2.1-.7 2.5-1.6c.2-.2 0-.4-.2-.3"></svg:path></svg:g>`,
-})
-export class EmojioneManDancingIcon {
   readonly viewBox = input("0 0 64 64")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[cilAccountLogoutIcon],svg[cil-account-logout-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M77.155 272.034H351.75v-32.001H77.155l75.053-75.053v-.001l-22.628-22.626l-113.681 113.68l.001.001h-.001L129.58 369.715l22.628-22.627v-.001z"></svg:path><svg:path fill="currentColor" d="M160 16v32h304v416H160v32h336V16z"></svg:path>`,
+})
+export class CilAccountLogoutIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[cil4kIcon],svg[cil-4k-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M208 184h-32v88h-62.32l13.6-136H95.12l-16.8 168H176v72h32v-72h32v-32h-32zm178.111-48l-52 104H304V136h-32v240h32V272h30.111l52 104h35.778l-60-120l60-120z"></svg:path><svg:path fill="currentColor" d="M464 16H48a32.036 32.036 0 0 0-32 32v416a32.036 32.036 0 0 0 32 32h416a32.036 32.036 0 0 0 32-32V48a32.036 32.036 0 0 0-32-32m0 448H48V48h416l.02 416Z"></svg:path>`,
+})
+export class Cil4kIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[cil3dIcon],svg[cil-3d-icon]',
   host: {
     role: 'img',
@@ -19,16 +53,33 @@ export class Cil3dIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[cilAccountLogoutIcon],svg[cil-account-logout-icon]',
+  selector: 'svg[cilActionRedoIcon],svg[cil-action-redo-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M77.155 272.034H351.75v-32.001H77.155l75.053-75.053v-.001l-22.628-22.626l-113.681 113.68l.001.001h-.001L129.58 369.715l22.628-22.627v-.001z"></svg:path><svg:path fill="currentColor" d="M160 16v32h304v416H160v32h336V16z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M361.376 495.163L226.753 360.54l22.627-22.627l111.996 111.996l111.997-111.996L496 360.54z"></svg:path><svg:path fill="currentColor" d="M377.377 472.52h-32V196.426C345.377 114.584 278.794 48 196.952 48c-83.229 0-148.426 63.106-148.426 143.667h-32c0-48.024 18.85-92.569 53.079-125.429C103.35 33.842 148.576 16 196.952 16c99.487 0 180.425 80.938 180.425 180.426Z"></svg:path>`,
 })
-export class CilAccountLogoutIcon {
+export class CilActionRedoIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilActionUndoIcon],svg[cil-action-undo-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M495.473 197.262c0-73.061-43.651-136.118-106.242-164.462q-2-.9-4.021-1.762q-4.046-1.715-8.19-3.235q-2.071-.761-4.167-1.47q-4.19-1.422-8.468-2.64a180.95 180.95 0 0 0-98.675 0q-4.278 1.218-8.469 2.64q-2.094.71-4.166 1.47q-4.143 1.519-8.19 3.235q-2.023.857-4.021 1.762c-62.592 28.344-106.242 91.4-106.242 164.462v237.483L38.627 338.75L16 361.377L150.623 496l134.623-134.623l-22.627-22.627l-96 96V197.263c0-72.891 52.814-133.678 122.186-146.1a149.4 149.4 0 0 1 52.479 0c69.371 12.426 122.186 73.213 122.186 146.1h32Z"></svg:path>`,
+})
+export class CilActionUndoIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8444,57 +8495,6 @@ export class CilTextStrikeIcon {
   template: `<svg:path fill="currentColor" d="M127.475 104H51.428a24.086 24.086 0 0 0-23.511 19.176l-1.5 7.31a503.6 503.6 0 0 0 1.477 210.663A24.14 24.14 0 0 0 51.334 360h76.141a24.03 24.03 0 0 0 24-24V128a24.027 24.027 0 0 0-24-24m-8 224H57.811a471.5 471.5 0 0 1-.046-191.082l.188-.918h61.522Zm373.36-109.526L421.583 93.246a24.25 24.25 0 0 0-21.036-12.236h-131.6a24.2 24.2 0 0 0-12.246 3.327l-72.012 42.244v37.1l86.376-50.671h124.947L464 232.5v9.271L444.3 294.3H316l-16 16v48.979l1.418 6.585l10.991 24.341A56.14 56.14 0 0 1 290.7 461.09L207.981 280H184v24l81.007 177.854a24.31 24.31 0 0 0 22.1 14.126a23.9 23.9 0 0 0 9.663-2.034a88.117 88.117 0 0 0 44.8-116.911l-9.57-21.2V326.3h117.7a24.31 24.31 0 0 0 22.661-15.7l22.09-58.906a24.1 24.1 0 0 0 1.542-8.5V230.44a24.26 24.26 0 0 0-3.158-11.966"></svg:path>`,
 })
 export class CilThumbDownIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cilThumbUpIcon],svg[cil-thumb-up-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M126.638 202.672H51.986a24.69 24.69 0 0 0-24.242 19.434a487.1 487.1 0 0 0-1.466 206.535l1.5 7.189a24.94 24.94 0 0 0 24.318 19.78h74.547a24.866 24.866 0 0 0 24.837-24.838V227.509a24.865 24.865 0 0 0-24.842-24.837m-7.163 220.938H57.916l-.309-1.487a455.1 455.1 0 0 1 .158-187.451h61.71Zm374.984-146.326l-22.09-58.906a24.315 24.315 0 0 0-22.662-15.706H332v-29.535l9.573-21.2a88.117 88.117 0 0 0-44.801-116.912a24.3 24.3 0 0 0-31.767 12.1l-80.312 175.812V248h23.731L290.7 67.882a56.14 56.14 0 0 1 21.711 70.885l-10.991 24.341l-1.42 6.584v48.98l16 16h128.3L464 287.2v9.272l-67.988 119.49H271.07l-86.377-50.67v37.1l72.007 42.241a24.2 24.2 0 0 0 12.25 3.329h131.6a24.25 24.25 0 0 0 21.035-12.234l71.25-125.228A24.26 24.26 0 0 0 496 298.531v-12.748a24.1 24.1 0 0 0-1.541-8.499"></svg:path>`,
-})
-export class CilThumbUpIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cilToggleOffIcon],svg[cil-toggle-off-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M368 128H144a128 128 0 0 0 0 256h224a128 128 0 0 0 0-256m0 224H144a96 96 0 0 1 0-192h224a96 96 0 0 1 0 192"></svg:path><svg:path fill="currentColor" d="M144 192a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32"></svg:path>`,
-})
-export class CilToggleOffIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cilToggleOnIcon],svg[cil-toggle-on-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M368 128H144a128 128 0 0 0 0 256h224a128 128 0 0 0 0-256m0 224H144a96 96 0 0 1 0-192h224a96 96 0 0 1 0 192"></svg:path><svg:path fill="currentColor" d="M368 192a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32"></svg:path>`,
-})
-export class CilToggleOnIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")

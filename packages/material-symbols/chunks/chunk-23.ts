@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsSettingsVideoCameraOutlineIcon],svg[material-symbols-settings-video-camera-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20 22h-6q-.425 0-.712-.288T13 21v-6q0-.425.288-.712T14 14h6q.425 0 .713.288T21 15v2l2-2v6l-2-2v2q0 .425-.288.713T20 22M12.05 8.5q-1.45 0-2.475 1.025T8.55 12q0 1.2.675 2.1T11 15.35V13.1q-.2-.2-.325-.513T10.55 12q0-.625.438-1.062t1.062-.438t1.05.438t.425 1.062h2.025q0-1.45-1.025-2.475T12.05 8.5M9.25 22l-.4-3.2q-.325-.125-.612-.3t-.563-.375L4.7 19.375l-2.75-4.75l2.575-1.95Q4.5 12.5 4.5 12.338v-.675q0-.163.025-.338L1.95 9.375l2.75-4.75l2.975 1.25q.275-.2.575-.375t.6-.3l.4-3.2h5.5l.4 3.2q.325.125.613.3t.562.375l2.975-1.25l2.75 4.75l-2.575 1.95q.025.175.025.338V12h-2q-.025-.475-.075-.837t-.15-.688l2.15-1.625l-.975-1.7l-2.475 1.05q-.55-.575-1.213-.962t-1.437-.588L13 4h-1.975l-.35 2.65q-.775.2-1.437.588t-1.213.937L5.55 7.15l-.975 1.7l2.15 1.6q-.125.375-.175.75t-.05.8q0 .4.05.775t.175.75l-2.15 1.625l.975 1.7l2.475-1.05q.6.625 1.35 1.05T11 17.4V22z"></svg:path>`,
-})
-export class MaterialSymbolsSettingsVideoCameraOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsSettingsVideoCameraOutlineRoundedIcon],svg[material-symbols-settings-video-camera-outline-rounded-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsSoapSharpIcon {
   template: `<svg:path fill="currentColor" d="m6 21l-4-4l4-4l1.4 1.4L5.8 16h12.4l-1.6-1.6L18 13l4 4l-4 4l-1.4-1.4l1.6-1.6H5.8l1.6 1.6zM2 11v-.575q0-.6.325-1.1t.9-.75q.65-.275 1.338-.425T6 8t1.438.15t1.337.425q.575.25.9.75t.325 1.1V11zm12 0v-.575q0-.6.325-1.1t.9-.75q.65-.275 1.338-.425T18 8t1.438.15t1.337.425q.575.25.9.75t.325 1.1V11zM6 7q-.825 0-1.412-.587T4 5t.588-1.412T6 3t1.413.588T8 5t-.587 1.413T6 7m12 0q-.825 0-1.412-.587T16 5t.588-1.412T18 3t1.413.588T20 5t-.587 1.413T18 7"></svg:path>`,
 })
 export class MaterialSymbolsSocialDistanceIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsSocialDistanceRoundedIcon],svg[material-symbols-social-distance-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m5.8 18l.9.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-2.6-2.6q-.3-.3-.3-.7t.3-.7l2.6-2.6q.275-.275.7-.275t.7.275t.275.7t-.275.7l-.9.9h12.4l-.9-.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l2.6 2.6q.3.3.3.7t-.3.7l-2.6 2.6q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l.9-.9zM2 11v-.575q0-.6.325-1.1t.9-.75q.65-.275 1.338-.425T6 8t1.438.15t1.337.425q.575.25.9.75t.325 1.1V11zm12 0v-.575q0-.6.325-1.1t.9-.75q.65-.275 1.338-.425T18 8t1.438.15t1.337.425q.575.25.9.75t.325 1.1V11zM6 7q-.825 0-1.412-.587T4 5t.588-1.412T6 3t1.413.588T8 5t-.587 1.413T6 7m12 0q-.825 0-1.412-.587T16 5t.588-1.412T18 3t1.413.588T20 5t-.587 1.413T18 7"></svg:path>`,
+})
+export class MaterialSymbolsSocialDistanceRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
