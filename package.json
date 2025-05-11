@@ -5,7 +5,7 @@
   "private": true,
   "packageManager": "pnpm@10.8.0",
   "scripts": {
-    "build": "NODE_OPTIONS='--max-old-space-size=8192' nx run-many --target=build --all --parallel=false",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' nx run-many --target=build --all --exclude=@ngxi/source,scripts,docs,collections --parallel=false",
     "lint": "eslint --cache .",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
