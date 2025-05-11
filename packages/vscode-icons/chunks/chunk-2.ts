@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[vscodeIconsFileTypeWasmIcon],svg[vscode-icons-file-type-wasm-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#654ff0" d="M19.153 2.35v.15a3.2 3.2 0 1 1-6.4 0v-.15H2v27.919h27.919V2.35Z"></svg:path><svg:path fill="#fff" d="M8.485 17.4h1.85l1.265 6.723h.023L13.14 17.4h1.731l1.371 6.81h.027l1.44-6.81h1.815l-2.358 9.885h-1.837l-1.36-6.728h-.036l-1.456 6.728h-1.87Zm13.124 0h2.917l2.9 9.885h-1.911l-.63-2.2h-3.323l-.486 2.2h-1.859Zm1.11 2.437l-.807 3.627h2.512l-.924-3.632Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeWasmIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeWatchmanconfigIcon],svg[vscode-icons-file-type-watchmanconfig-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:ellipse cx="16" cy="16.001" fill="#fff" rx="14.438" ry="14.925"></svg:ellipse><svg:path fill="#4356e6" d="m4.712 17.65l.014-.014l.014-.014q.489-.482.967-.964c.221-.214.435-.436.649-.65c-.214-.214-.435-.428-.649-.65a126 126 0 0 0-.967-.964l-.014-.014l-.014-.014q-.466-.505-.933-1q-.81-.867-1.589-1.714a15.46 15.46 0 0 0 0 8.727q.779-.846 1.589-1.714c.311-.351.621-.68.933-1.015m25.097-6.014q-.779.846-1.589 1.714q-.466.495-.933 1l-.014.014l-.014.014q-.489.482-.967.964c-.221.214-.435.436-.649.65c.214.214.435.428.649.65q.478.482.967.964l.014.014l.014.014q.466.505.933 1q.81.867 1.589 1.714a15.4 15.4 0 0 0 0-8.713Zm-4.974 5.157c-3.019 2.964-5.893 5.456-8.663 5.456h-.345c-2.77 0-5.644-2.492-8.663-5.456c-.546.543-1.1 1.1-1.651 1.65c-.981 1.057-1.983 2.107-2.908 3.135A14.46 14.46 0 0 0 16 30.926a14.46 14.46 0 0 0 13.395-9.348c-.926-1.028-1.92-2.078-2.908-3.135a161 161 0 0 0-1.652-1.65m-17.67-1.586c3.019-2.964 5.893-5.456 8.663-5.456h.345c2.77 0 5.644 2.492 8.663 5.456c.546-.543 1.1-1.1 1.651-1.65c.981-1.057 1.983-2.107 2.908-3.135A14.46 14.46 0 0 0 16 1.074a14.46 14.46 0 0 0-13.395 9.348c.926 1.028 1.92 2.078 2.908 3.135c.553.558 1.099 1.108 1.652 1.65"></svg:path><svg:path fill="#4356e6" d="M14.038 14.172a1.14 1.14 0 0 0-.553.993v1.678a1.15 1.15 0 0 0 .553.993l1.409.843a1.06 1.06 0 0 0 1.105 0l1.409-.843a1.14 1.14 0 0 0 .553-.993v-1.679a1.15 1.15 0 0 0-.553-.993l-1.409-.843a1.06 1.06 0 0 0-1.105 0Z"></svg:path><svg:path fill="#4356e6" d="M7.959 16c2.894 2.842 5.641 5.221 8.041 5.1c2.4.121 5.14-2.257 8.041-5.1c-2.894-2.842-5.641-5.221-8.041-5.1c-2.4-.121-5.14 2.258-8.041 5.1m8.594-3.992l2.515 1.5a1.14 1.14 0 0 1 .553.993v3a1.15 1.15 0 0 1-.553.993l-2.515 1.5a1.06 1.06 0 0 1-1.105 0l-2.515-1.5a1.14 1.14 0 0 1-.553-.993v-3a1.15 1.15 0 0 1 .553-.993l2.515-1.5a1.09 1.09 0 0 1 1.105 0"></svg:path>`,
+})
+export class VscodeIconsFileTypeWatchmanconfigIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vscodeIconsFileTypeWdioIcon],svg[vscode-icons-file-type-wdio-icon]',
   host: {
     role: 'img',
@@ -6438,40 +6472,6 @@ export class VscodeIconsFolderTypeYarnIcon {
   template: `<svg:path fill="#7abddc" d="M27.4 5.5h-9.2l-2.1 4.2H4.3v16.8h25.2v-21Zm0 18.7H6.6V11.8h20.8Zm0-14.5h-8.2l1-2.1h7.1v2.1Z"></svg:path><svg:path fill="#7abddc" d="M25.7 13.7H.5l3.8 12.8h25.2z"></svg:path><svg:path fill="#2188b6" d="M30.42 26.27a5.2 5.2 0 0 0-2 .91a11.7 11.7 0 0 1-2.91 1.32a.82.82 0 0 1-.49.28a32 32 0 0 1-3.22.29c-.58 0-.94-.15-1-.39a.78.78 0 0 1 .41-1a1.6 1.6 0 0 1-.26-.19c-.08-.08-.17-.25-.2-.19c-.11.27-.17.95-.47 1.25a1.51 1.51 0 0 1-1.66 0c-.51-.28 0-.91 0-.91a.36.36 0 0 1-.49-.16a2.5 2.5 0 0 1-.29-1.48a2.68 2.68 0 0 1 .88-1.44a4.6 4.6 0 0 1 .33-2.2a5.2 5.2 0 0 1 1.57-1.84s-1-1.07-.6-2c.23-.63.33-.63.4-.66a1.8 1.8 0 0 0 .73-.43a2.64 2.64 0 0 1 2.2-.85s.58-1.77 1.12-1.43a9.6 9.6 0 0 1 .77 1.45s.63-.38.71-.24a5.83 5.83 0 0 1 .26 3.07a7 7 0 0 1-1.3 2.7A5.8 5.8 0 0 1 26.22 24a5.7 5.7 0 0 1 .13 2.6a3.2 3.2 0 0 0 1.7-.65a4.2 4.2 0 0 1 2.13-.8a.54.54 0 0 1 .23 1.05Z"></svg:path>`,
 })
 export class VscodeIconsFolderTypeYarnOpenedIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsDefaultFolderIcon],svg[vscode-icons-default-folder-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#c09553" d="M27.5 5.5h-9.3l-2.1 4.2H4.4v16.8h25.2v-21Zm0 4.2h-8.2l1.1-2.1h7.1Z"></svg:path>`,
-})
-export class VscodeIconsDefaultFolderIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsDefaultRootFolderIcon],svg[vscode-icons-default-root-folder-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#c09553" d="M27.5 5.5h-9.3l-2.1 4.2H4.4v16.8h25.2v-21Zm0 4.2h-8.2l1.1-2.1h7.1Z"></svg:path><svg:path fill="#c09553" d="M19.735 31.25h-5.924l9.794-21.5h5.985z"></svg:path><svg:path fill="#ffeebe" d="M23.766 10H29.2l-9.625 21H14.2Z"></svg:path>`,
-})
-export class VscodeIconsDefaultRootFolderIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

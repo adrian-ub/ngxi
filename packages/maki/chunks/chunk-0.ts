@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[makiAerialwayIcon],svg[maki-aerialway-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13 5H8V2.6a1 1 0 0 0 .42-.46l5.08-.64a.5.5 0 0 0 0-1l-5.22.65a1 1 0 0 0-.78-.4a1 1 0 0 0-.92.62L1.5 2a.5.5 0 0 0 0 1l5.22-.65q.117.151.28.25V5H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1m-6 6H3V7h4zm5 0H8V7h4z"></svg:path>`,
-})
-export class MakiAerialwayIcon {
-  readonly viewBox = input("0 0 15 15")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[makiAerialway11Icon],svg[maki-aerialway-11-icon]',
   host: {
     role: 'img',
@@ -29,6 +12,23 @@ export class MakiAerialwayIcon {
   template: `<svg:path d="M9 4.5H6V3.1a1 1 0 0 0 .43-.52L9.5 2a.5.5 0 0 0 0-1l-3.25.61a1 1 0 0 0-1.69.32L1.5 2.5a.5.5 0 0 0 0 1l3.25-.61A1 1 0 0 0 5 3.1v1.4H2a1 1 0 0 0-1 1V9a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V5.5a1 1 0 0 0-1-1zm-4 4H2.5v-3H5v3zm3.5 0H6v-3h2.5v3z" fill="currentColor"></svg:path>`,
 })
 export class MakiAerialway11Icon {
+  readonly viewBox = input("0 0 11 11")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[makiAirfield11Icon],svg[maki-airfield-11-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M5 .5H3.5C3 .5 3 0 3.5 0h4c.5 0 .5.5 0 .5H6s.5.5.5 1.5v1H11v1.5l-4.5 2L6 10l1.5.5v.5h-4v-.5L5 10l-.5-3.5l-4.5-2V3h4.5V2C4.5 1 5 .5 5 .5z" fill="currentColor"></svg:path>`,
+})
+export class MakiAirfield11Icon {
   readonly viewBox = input("0 0 11 11")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,23 +53,6 @@ export class MakiAirfieldIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[makiAirport11Icon],svg[maki-airport-11-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M6.5 6.4V6l4.5.5V5L6.5 3.2V1.5C6.5.5 6 0 5.5 0s-1 .5-1 1.5v1.7L0 5v1.4L4.5 6v3.3L3 10v1l2.5-.5L8 11v-1l-1.5-.8V6.4z" fill="currentColor"></svg:path>`,
-})
-export class MakiAirport11Icon {
-  readonly viewBox = input("0 0 11 11")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[makiAirportIcon],svg[maki-airport-icon]',
   host: {
     role: 'img',
@@ -87,16 +70,16 @@ export class MakiAirportIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[makiAirfield11Icon],svg[maki-airfield-11-icon]',
+  selector: 'svg[makiAirport11Icon],svg[maki-airport-11-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path d="M5 .5H3.5C3 .5 3 0 3.5 0h4c.5 0 .5.5 0 .5H6s.5.5.5 1.5v1H11v1.5l-4.5 2L6 10l1.5.5v.5h-4v-.5L5 10l-.5-3.5l-4.5-2V3h4.5V2C4.5 1 5 .5 5 .5z" fill="currentColor"></svg:path>`,
+  template: `<svg:path d="M6.5 6.4V6l4.5.5V5L6.5 3.2V1.5C6.5.5 6 0 5.5 0s-1 .5-1 1.5v1.7L0 5v1.4L4.5 6v3.3L3 10v1l2.5-.5L8 11v-1l-1.5-.8V6.4z" fill="currentColor"></svg:path>`,
 })
-export class MakiAirfield11Icon {
+export class MakiAirport11Icon {
   readonly viewBox = input("0 0 11 11")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -114,6 +97,40 @@ export class MakiAirfield11Icon {
   template: `<svg:path fill="currentColor" d="M14 4h-4v3.5a2 2 0 0 0 1.5 1.93V13H11a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-.5V9.43A2 2 0 0 0 14 7.5zm-1 3.5a1 1 0 1 1-2 0V5h2zm-7.5-5V2a.5.5 0 0 0 0-1V.5A.5.5 0 0 0 5 0H4a.5.5 0 0 0-.5.5V1a.5.5 0 0 0 0 1v.5C3.5 3.93 1 5.57 1 7v6a1 1 0 0 0 1 1h5a1.1 1.1 0 0 0 1-1V7c0-1.35-2.5-3.15-2.5-4.5m-1 9.5a2.5 2.5 0 1 1 0-5a2.5 2.5 0 0 1 0 5"></svg:path>`,
 })
 export class MakiAlcoholShopIcon {
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[makiAlcoholShop11Icon],svg[maki-alcohol-shop-11-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M7 4v2.5a1.5 1.5 0 0 0 1 1.41V10h-.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H9V7.91a1.5 1.5 0 0 0 1-1.41V4H7zm2.5 2.5a1 1 0 1 1-2 0v-2h2v2zM4.21 2.85V2.5a.355.355 0 1 0 0-.71v-.35a.35.35 0 0 0-.36-.35h-.71a.35.35 0 0 0-.36.34v.36a.355.355 0 1 0 0 .71v.35C2.79 3.87 1 5 1 6v4.25a.7.7 0 0 0 .71.71h3.58a.79.79 0 0 0 .71-.67V6c0-.91-1.79-2.19-1.79-3.15zM3.5 9a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3z" fill="currentColor"></svg:path>`,
+})
+export class MakiAlcoholShop11Icon {
+  readonly viewBox = input("0 0 11 11")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[makiAmericanFootballIcon],svg[maki-american-football-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.53 3C3.09 3 1 7.5 1 7.5S3.09 12 7.53 12S14 7.5 14 7.5S12 3 7.53 3M11 7v1.5a.5.5 0 0 1-1 0V8H8v.5a.5.5 0 0 1-1 0V8H5v.5a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 1 0V7h2v-.5a.5.5 0 0 1 1 0V7h2v-.5a.5.5 0 0 1 1 0z"></svg:path>`,
+})
+export class MakiAmericanFootballIcon {
   readonly viewBox = input("0 0 15 15")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -7074,34 +7091,17 @@ export class MakiZoo11Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[makiAmericanFootballIcon],svg[maki-american-football-icon]',
+  selector: 'svg[makiAerialwayIcon],svg[maki-aerialway-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M7.53 3C3.09 3 1 7.5 1 7.5S3.09 12 7.53 12S14 7.5 14 7.5S12 3 7.53 3M11 7v1.5a.5.5 0 0 1-1 0V8H8v.5a.5.5 0 0 1-1 0V8H5v.5a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 1 0V7h2v-.5a.5.5 0 0 1 1 0V7h2v-.5a.5.5 0 0 1 1 0z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M13 5H8V2.6a1 1 0 0 0 .42-.46l5.08-.64a.5.5 0 0 0 0-1l-5.22.65a1 1 0 0 0-.78-.4a1 1 0 0 0-.92.62L1.5 2a.5.5 0 0 0 0 1l5.22-.65q.117.151.28.25V5H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1m-6 6H3V7h4zm5 0H8V7h4z"></svg:path>`,
 })
-export class MakiAmericanFootballIcon {
+export class MakiAerialwayIcon {
   readonly viewBox = input("0 0 15 15")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[makiAlcoholShop11Icon],svg[maki-alcohol-shop-11-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M7 4v2.5a1.5 1.5 0 0 0 1 1.41V10h-.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H9V7.91a1.5 1.5 0 0 0 1-1.41V4H7zm2.5 2.5a1 1 0 1 1-2 0v-2h2v2zM4.21 2.85V2.5a.355.355 0 1 0 0-.71v-.35a.35.35 0 0 0-.36-.35h-.71a.35.35 0 0 0-.36.34v.36a.355.355 0 1 0 0 .71v.35C2.79 3.87 1 5 1 6v4.25a.7.7 0 0 0 .71.71h3.58a.79.79 0 0 0 .71-.67V6c0-.91-1.79-2.19-1.79-3.15zM3.5 9a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3z" fill="currentColor"></svg:path>`,
-})
-export class MakiAlcoholShop11Icon {
-  readonly viewBox = input("0 0 11 11")
   readonly width = input("1em")
   readonly height = input("1em")
 }

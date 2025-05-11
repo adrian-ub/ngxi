@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[solarUserPlusRoundedLinearIcon],svg[solar-user-plus-rounded-linear-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:circle cx="12" cy="6" r="4"></svg:circle><svg:circle cx="17" cy="18" r="4"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M17 16.667v2.666M15.667 18h2.666"></svg:path><svg:path d="M14 20.834c-.634.108-1.305.166-2 .166c-3.866 0-7-1.79-7-4s3.134-4 7-4c1.713 0 3.283.352 4.5.936"></svg:path></svg:g>`,
+})
+export class SolarUserPlusRoundedLinearIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[solarUserPlusRoundedOutlineIcon],svg[solar-user-plus-rounded-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.25 6a4.75 4.75 0 1 1 9.5 0a4.75 4.75 0 0 1-9.5 0M12 2.75a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 0 0 0-6.5" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M17.75 16.667a.75.75 0 1 0-1.5 0v.583h-.584a.75.75 0 0 0 0 1.5h.584v.583a.75.75 0 0 0 1.5 0v-.583h.583a.75.75 0 0 0 0-1.5h-.583z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M16.812 13.254q.093-.004.188-.004a4.75 4.75 0 1 1-3.09 8.358c-.61.093-1.251.142-1.91.142c-2.04 0-3.922-.47-5.322-1.27C5.3 19.692 4.25 18.49 4.25 17s1.05-2.692 2.428-3.48c1.4-.8 3.283-1.27 5.322-1.27c1.805 0 3.483.368 4.812 1.004M17 14.75a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 0 0 0-6.5m-4.2 5.472A4.7 4.7 0 0 1 12.25 18c0-1.671.863-3.14 2.168-3.987A11 11 0 0 0 12 13.75c-1.827 0-3.444.425-4.578 1.073C6.267 15.483 5.75 16.28 5.75 17s.517 1.517 1.672 2.177c1.134.648 2.751 1.073 4.578 1.073q.407 0 .8-.028" clip-rule="evenodd"></svg:path>`,
+})
+export class SolarUserPlusRoundedOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[solarUserRoundedBoldIcon],svg[solar-user-rounded-bold-icon]',
   host: {
     role: 'img',
@@ -6829,40 +6863,6 @@ export class SolarZipFileLinearIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10.466 1.25h2.59c1.838 0 3.294 0 4.433.153c1.172.158 2.121.49 2.87 1.238c.748.749 1.08 1.698 1.238 2.87c.153 1.14.153 2.595.153 4.433v4.112c0 1.838 0 3.294-.153 4.433c-.158 1.172-.49 2.121-1.238 2.87c-.749.748-1.698 1.08-2.87 1.238c-1.14.153-2.595.153-4.433.153h-2.112c-1.838 0-3.294 0-4.433-.153c-1.172-.158-2.121-.49-2.87-1.238c-.748-.749-1.08-1.698-1.238-2.87c-.153-1.14-.153-2.595-.153-4.433V9.944c0-1.838 0-3.294.153-4.433c.158-1.172.49-2.121 1.238-2.87c.749-.748 1.698-1.08 2.87-1.238c1.008-.135 2.264-.151 3.813-.153zM8.75 2.763c-.805.016-1.473.05-2.04.127c-1.006.135-1.586.389-2.01.812c-.422.423-.676 1.003-.811 2.009c-.138 1.028-.14 2.382-.14 4.289v4c0 1.907.002 3.262.14 4.29c.135 1.005.389 1.585.812 2.008s1.003.677 2.009.812c1.028.138 2.382.14 4.289.14h2c1.907 0 3.262-.002 4.29-.14c1.005-.135 1.585-.389 2.008-.812s.677-1.003.812-2.009c.138-1.027.14-2.382.14-4.289v-4c0-1.907-.002-3.261-.14-4.29c-.135-1.005-.389-1.585-.812-2.008s-1.003-.677-2.009-.812c-1.027-.138-2.382-.14-4.289-.14h-.25v1.001l.216-.001h.568c.206 0 .427 0 .615.025c.219.03.5.105.735.341c.236.236.311.516.341.735c.025.188.025.41.025.615v.568c0 .206 0 .427-.025.615c-.03.219-.105.5-.341.735a1.24 1.24 0 0 1-.735.341c-.188.025-.41.025-.615.025h-.785l.001.216v.785l.216-.001h.568c.206 0 .427 0 .615.025c.219.03.5.105.735.341c.236.236.311.516.341.735c.025.188.025.41.025.615v.568c0 .206 0 .427-.025.615c-.03.219-.105.5-.341.735a1.24 1.24 0 0 1-.735.341a5 5 0 0 1-.615.025h-.568c-.206 0-.427 0-.615-.025c-.219-.03-.5-.105-.735-.341a1.24 1.24 0 0 1-.341-.735a5 5 0 0 1-.025-.614v-.786l-.216.001h-.568c-.206 0-.427 0-.615-.025c-.219-.03-.5-.105-.735-.341a1.24 1.24 0 0 1-.341-.735c-.025-.188-.025-.41-.025-.615v-.568c0-.206 0-.427.025-.615c.03-.219.105-.5.341-.735c.236-.236.516-.311.735-.341c.188-.025.41-.025.615-.025h.568l.217.001l-.001-.217V5.25l-.216.001h-.568c-.206 0-.427 0-.615-.025c-.219-.03-.5-.105-.735-.341a1.24 1.24 0 0 1-.341-.735c-.025-.188-.025-.41-.025-.615zm1.581-.013l.917.001l.001.249v.5l-.001.249H10.5l-.249-.001l-.001-.249V3l.001-.249zm2.42 2.501c-.002.07-.002.15-.002.249V6l.001.249l.249.001h.5l.249-.001L13.75 6v-.5l-.001-.249l-.249-.001H13zm-2.5 2.5c-.002.07-.002.15-.002.249v.5l.001.249l.249.001h.5l.249-.001l.001-.249V8l-.001-.249L11 7.75h-.5zm2.5 2.5c-.002.07-.002.15-.002.249v.5l.001.249l.249.001h.5l.249-.001l.001-.249v-.5l-.001-.249l-.249-.001H13zm-2.377 4.999a.125.125 0 0 0-.125.125v.125a1.75 1.75 0 1 0 3.5 0v-.125a.125.125 0 0 0-.125-.125zm-1.625.125c0-.897.728-1.625 1.625-1.625h3.25c.898 0 1.625.728 1.625 1.625v.125a3.25 3.25 0 0 1-6.5 0z" clip-rule="evenodd"></svg:path>`,
 })
 export class SolarZipFileOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solar4kBoldDuotoneIcon],svg[solar-4k-bold-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 22c-4.714 0-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12s0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22" opacity=".5"></svg:path><svg:path fill="currentColor" d="M19.02 7.46a.75.75 0 0 1 .02 1.06l-2.666 2.773l2.757 4.302a.75.75 0 1 1-1.262.81l-2.564-4l-1.055 1.097V16a.75.75 0 0 1-1.5 0V8a.75.75 0 0 1 1.5 0v3.338l3.71-3.858a.75.75 0 0 1 1.06-.02M5.5 7.25a.75.75 0 0 1 .75.75v2c0 .69.56 1.25 1.25 1.25h2.25V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-1.5 0v-3.25H7.5A2.75 2.75 0 0 1 4.75 10V8a.75.75 0 0 1 .75-.75"></svg:path>`,
-})
-export class Solar4kBoldDuotoneIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solarAccessibilityBoldIcon],svg[solar-accessibility-bold-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10m0-13a2 2 0 1 0 0-4a2 2 0 0 0 0 4m-5.707.31a.75.75 0 0 0-.586 1.38l.002.001l.002.001l.01.004l.032.014a15 15 0 0 0 .572.225c.38.145.914.338 1.527.53c.988.312 2.236.64 3.398.748v1.24c0 .43-.124.853-.357 1.216l-2.524 3.925a.75.75 0 0 0 1.262.812l2.37-3.686l2.368 3.686a.75.75 0 0 0 1.262-.812l-2.524-3.925a2.25 2.25 0 0 1-.357-1.217v-1.239c1.162-.108 2.41-.436 3.399-.748a28 28 0 0 0 2.098-.755l.033-.014l.01-.004l.002-.001a.75.75 0 0 0-.585-1.381l-.007.003l-.027.011l-.11.045q-.148.061-.42.164c-.36.137-.865.32-1.444.502c-1.178.37-2.588.715-3.699.715s-2.52-.345-3.698-.715a27 27 0 0 1-1.974-.711L6.3 9.313z" clip-rule="evenodd"></svg:path>`,
-})
-export class SolarAccessibilityBoldIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

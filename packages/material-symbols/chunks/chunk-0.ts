@@ -36,6 +36,23 @@ export class MaterialSymbols360Icon {
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbols10kIcon],svg[material-symbols-10k-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 15h1.5V9H5v1.5h1zm3.5 0H12q.425 0 .713-.288T13 14v-4q0-.425-.288-.712T12 9H9.5q-.425 0-.712.288T8.5 10v4q0 .425.288.713T9.5 15m.5-1.5v-3h1.5v3zm4 1.5h1.5v-2.25L17.25 15H19l-2.25-3L19 9h-1.75l-1.75 2.25V9H14zm-9 6q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z"></svg:path>`,
+})
+export class MaterialSymbols10kIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbols10kOutlineIcon],svg[material-symbols-10k-outline-icon]',
   host: {
     role: 'img',
@@ -87,40 +104,6 @@ export class MaterialSymbols10kOutlineSharpIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbols10kRoundedIcon],svg[material-symbols-10k-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 10.5v3.75q0 .325.213.538T6.75 15t.538-.213t.212-.537v-4.5q0-.325-.213-.537T6.75 9h-1q-.325 0-.537.213T5 9.75t.213.538t.537.212zM9.5 15H12q.425 0 .713-.288T13 14v-4q0-.425-.288-.712T12 9H9.5q-.425 0-.712.288T8.5 10v4q0 .425.288.713T9.5 15m.5-1.5v-3h1.5v3zm5.5-.75l1.55 1.975q.05.075.55.275q.425 0 .625-.387t-.075-.738L16.75 12l1.425-1.9q.275-.35.075-.725T17.6 9q-.175 0-.312.075t-.238.2L15.5 11.25v-1.5q0-.325-.212-.538T14.75 9t-.537.213T14 9.75v4.5q0 .325.213.538t.537.212t.538-.213t.212-.537zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z"></svg:path>`,
-})
-export class MaterialSymbols10kRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbols10kSharpIcon],svg[material-symbols-10k-sharp-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 15h1.5V9H5v1.5h1zm2.5 0H13V9H8.5zm1.5-1.5v-3h1.5v3zm4 1.5h1.5v-2.25L17.25 15H19l-2.25-3L19 9h-1.75l-1.75 2.25V9H14zM3 21V3h18v18z"></svg:path>`,
-})
-export class MaterialSymbols10kSharpIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbols10mpIcon],svg[material-symbols-10mp-icon]',
   host: {
     role: 'img',
@@ -138,16 +121,16 @@ export class MaterialSymbols10mpIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbols10kIcon],svg[material-symbols-10k-icon]',
+  selector: 'svg[materialSymbols10kRoundedIcon],svg[material-symbols-10k-rounded-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M6 15h1.5V9H5v1.5h1zm3.5 0H12q.425 0 .713-.288T13 14v-4q0-.425-.288-.712T12 9H9.5q-.425 0-.712.288T8.5 10v4q0 .425.288.713T9.5 15m.5-1.5v-3h1.5v3zm4 1.5h1.5v-2.25L17.25 15H19l-2.25-3L19 9h-1.75l-1.75 2.25V9H14zm-9 6q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M6 10.5v3.75q0 .325.213.538T6.75 15t.538-.213t.212-.537v-4.5q0-.325-.213-.537T6.75 9h-1q-.325 0-.537.213T5 9.75t.213.538t.537.212zM9.5 15H12q.425 0 .713-.288T13 14v-4q0-.425-.288-.712T12 9H9.5q-.425 0-.712.288T8.5 10v4q0 .425.288.713T9.5 15m.5-1.5v-3h1.5v3zm5.5-.75l1.55 1.975q.05.075.55.275q.425 0 .625-.387t-.075-.738L16.75 12l1.425-1.9q.275-.35.075-.725T17.6 9q-.175 0-.312.075t-.238.2L15.5 11.25v-1.5q0-.325-.212-.538T14.75 9t-.537.213T14 9.75v4.5q0 .325.213.538t.537.212t.538-.213t.212-.537zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z"></svg:path>`,
 })
-export class MaterialSymbols10kIcon {
+export class MaterialSymbols10kRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsAddCommentOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="M11 14h2v-3h3V9h-3V6h-2v3H8v2h3zm-9 8V2h20v16H6zm3.15-6H20V4H4v13.125zM4 16V4z"></svg:path>`,
 })
 export class MaterialSymbolsAddCommentOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsAddCommentRoundedIcon],svg[material-symbols-add-comment-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m6 18l-2.3 2.3q-.475.475-1.088.213T2 19.575V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18zm5-7v2q0 .425.288.713T12 14t.713-.288T13 13v-2h2q.425 0 .713-.288T16 10t-.288-.712T15 9h-2V7q0-.425-.288-.712T12 6t-.712.288T11 7v2H9q-.425 0-.712.288T8 10t.288.713T9 11z"></svg:path>`,
+})
+export class MaterialSymbolsAddCommentRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

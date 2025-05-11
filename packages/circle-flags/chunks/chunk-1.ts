@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[circleFlagsLusIcon],svg[circle-flags-lus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsLus0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsLus0)"><svg:path fill="#eee" d="M0 0h512v256l-256 32L0 256Z"></svg:path><svg:path fill="#338af3" d="M0 256h512v256H0Z"></svg:path><svg:circle cx="256" cy="256" r="128" fill="#d80027"></svg:circle></svg:g>`,
+})
+export class CircleFlagsLusIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsLvIcon],svg[circle-flags-lv-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsLv0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsLv0)"><svg:path fill="#a2001d" d="M0 0h512v189.2l-38.5 70l38.5 63.6V512H0V322.8l39.4-63L0 189.1z"></svg:path><svg:path fill="#eee" d="M0 189.2h512v133.6H0z"></svg:path></svg:g>`,
+})
+export class CircleFlagsLvIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[circleFlagsLyIcon],svg[circle-flags-ly-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="circleFlagsLy0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsLy0)"><svg:path fill="#333" d="m0 144.7l257-22.4l255 22.4v222.6l-254.9 31L0 367.3z"></svg:path><svg:path fill="#d80027" d="M0 0h512v144.7H0z"></svg:path><svg:path fill="#496e2d" d="M0 367.3h512V512H0z"></svg:path><svg:g fill="#eee"><svg:path d="m315.6 209.3l21 29l34-11l-21 29l21 28.8l-34-11l-21 29v-36l-34-11l34-11z"></svg:path><svg:path d="M258.3 328.4a72.3 72.3 0 1 1 34.4-136a89 89 0 1 0 0 127.3a72 72 0 0 1-34.4 8.7"></svg:path></svg:g></svg:g>`,
+})
+export class CircleFlagsLyIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[circleFlagsMaIcon],svg[circle-flags-ma-icon]',
   host: {
     role: 'img',
@@ -3827,67 +3878,16 @@ export class CircleFlagsZwIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[circleFlagsAfarIcon],svg[circle-flags-afar-icon]',
+  selector: 'svg[circleFlagsAgIcon],svg[circle-flags-ag-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:mask id="circleFlagsAfar0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsAfar0)"><svg:path fill="#eee" d="m0 160l256-32l256 32v192l-256 32L0 352Z"></svg:path><svg:path fill="#0052b4" d="M0 0h512v160H0Z"></svg:path><svg:path fill="#496e2d" d="M0 352h512v160H0Z"></svg:path><svg:path fill="#d80027" d="M0 0v512l256-256L0 0z"></svg:path><svg:path fill="#ff9811" d="m345 229l-12 11l40 40l-40 40l11 11l40-40l40 40l11-11l-40-40l40-40l-11-11l-40 40z"></svg:path><svg:path fill="#d80027" d="m384 181l21 62l-54-38h66l-53 39z"></svg:path></svg:g>`,
+  template: `<svg:mask id="circleFlagsAg0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsAg0)"><svg:path fill="#333" d="M0 .4h512l-34 229H36z"></svg:path><svg:path fill="#ffda44" d="m367.3 205.3l-109.7 19.4l-112.9-19.4l45.5-21.3l-24.2-44l49.3 9.4l6.3-49.9l34.4 36.7l34.4-36.6l6.3 50L346 140l-24.2 44z"></svg:path><svg:path fill="#0052b4" d="M25.6 205.3h466.8L257 439.5z"></svg:path><svg:path fill="#eee" d="M34 307.4h446L256 511.6z"></svg:path><svg:path fill="#a2001d" d="m0 511.6l256 .4L0 .4zm256 .4l256-.4V0z"></svg:path></svg:g>`,
 })
-export class CircleFlagsAfarIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[circleFlagsAcIcon],svg[circle-flags-ac-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:mask id="circleFlagsAc0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsAc0)"><svg:path fill="#0052b4" d="M256 0h256v512H0V256Z"></svg:path><svg:path fill="#eee" d="M0 0v32l32 32L0 96v160h32l32-32l32 32h32v-83l83 83h45l-8-16l8-15v-14l-83-83h83V96l-32-32l32-32V0H96L64 32L32 0Z"></svg:path><svg:path fill="#d80027" d="M32 0v32H0v64h32v160h64V96h160V32H96V0Zm96 128l128 128v-31l-97-97z"></svg:path><svg:path fill="#6da544" d="m320 144l48-80l48 80z"></svg:path><svg:circle cx="368" cy="144" r="48" fill="#acabb1"></svg:circle><svg:path fill="#338af3" d="M320 144v77c0 36 48 48 48 48s48-12 48-48v-77z"></svg:path><svg:rect width="32" height="128" x="288" y="128" fill="#ff9811" rx="16" ry="16"></svg:rect><svg:rect width="32" height="128" x="416" y="128" fill="#ff9811" rx="16" ry="16"></svg:rect><svg:path fill="#6da544" d="m368 160l-48 67c2 11 9 19 16 26l32-45l32 45c8-7 14-15 16-26z"></svg:path></svg:g>`,
-})
-export class CircleFlagsAcIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[circleFlagsAfIcon],svg[circle-flags-af-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:mask id="circleFlagsAf0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsAf0)"><svg:path fill="#d80027" d="M144.7 0h222.6l37 257.7l-37 254.3H144.7l-42.4-255.2z"></svg:path><svg:path fill="#496e2d" d="M367.3 0H512v512H367.3z"></svg:path><svg:path fill="#333" d="M0 0h144.7v512H0z"></svg:path><svg:g fill="#ffda44"><svg:path d="M256 167a89 89 0 1 0 0 178a89 89 0 0 0 0-178m0 144.7a55.7 55.7 0 1 1 0-111.4a55.7 55.7 0 0 1 0 111.4"></svg:path><svg:path d="M256 222.6c-12.3 0-22.3 10-22.3 22.3v33.4h44.6v-33.4c0-12.3-10-22.3-22.3-22.3"></svg:path></svg:g></svg:g>`,
-})
-export class CircleFlagsAfIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[circleFlagsAdIcon],svg[circle-flags-ad-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:mask id="circleFlagsAd0"><svg:circle cx="256" cy="256" r="256" fill="#fff"></svg:circle></svg:mask><svg:g mask="url(#circleFlagsAd0)"><svg:path fill="#0052b4" d="M0 0h144.7l36 254.6l-36 257.4H0z"></svg:path><svg:path fill="#d80027" d="M367.3 0H512v512H367.3l-29.7-257.3z"></svg:path><svg:path fill="#ffda44" d="M144.7 0h222.6v512H144.7z"></svg:path><svg:path fill="#d80027" d="M256 354.5V256h66.8v47.3zm-66.8-165.3H256V256h-66.8z"></svg:path><svg:path fill="#ff9811" d="M289.4 167a22.3 22.3 0 0 0-33.4-19.3a22.1 22.1 0 0 0-11.1-3c-12.3 0-22.3 10-22.3 22.3H167v111.3c0 41.4 32.9 65.4 58.7 77.8a22.1 22.1 0 0 0-3 11.2a22.3 22.3 0 0 0 33.3 19.3a22.1 22.1 0 0 0 11.1 3a22.3 22.3 0 0 0 19.2-33.5c25.8-12.4 58.7-36.4 58.7-77.8V167zm22.3 111.3c0 5.8 0 23.4-27.5 40.9a136.5 136.5 0 0 1-28.2 13.3c-7-2.4-17.8-6.7-28.2-13.3c-27.5-17.5-27.5-35.1-27.5-41v-77.9h111.4z"></svg:path></svg:g>`,
-})
-export class CircleFlagsAdIcon {
+export class CircleFlagsAgIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -19,18 +19,18 @@ export class Fa6Brands42GroupIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fa6BrandsAffiliatethemeIcon],svg[fa6-brands-affiliatetheme-icon]',
+  selector: 'svg[fa6Brands500pxIcon],svg[fa6-brands-500px-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M159.7 237.4C108.4 308.3 43.1 348.2 14 326.6C-15.2 304.9 2.8 230 54.2 159.1c51.3-70.9 116.6-110.8 145.7-89.2s11.1 96.6-40.2 167.5m351.2-57.3C437.1 303.5 319 367.8 246.4 323.7c-25-15.2-41.3-41.2-49-73.8c-33.6 64.8-92.8 113.8-164.1 133.2c49.8 59.3 124.1 96.9 207 96.9c150 0 271.6-123.1 271.6-274.9c.1-8.5-.3-16.8-1-25"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M103.3 344.3c-6.5-14.2-6.9-18.3 7.4-23.1c25.6-8 8 9.2 43.2 49.2h.3v-93.9c1.2-50.2 44-92.2 97.7-92.2c53.9 0 97.7 43.5 97.7 96.8c0 63.4-60.8 113.2-128.5 93.3c-10.5-4.2-2.1-31.7 8.5-28.6c53 0 89.4-10.1 89.4-64.4c0-61-77.1-89.6-116.9-44.6c-23.5 26.4-17.6 42.1-17.6 157.6c50.7 31 118.3 22 160.4-20.1c24.8-24.8 38.5-58 38.5-93c0-35.2-13.8-68.2-38.8-93.3c-24.8-24.8-57.8-38.5-93.3-38.5s-68.8 13.8-93.5 38.5c-.3.3-16 16.5-21.2 23.9l-.5.6c-3.3 4.7-6.3 9.1-20.1 6.1c-6.9-1.7-14.3-5.8-14.3-11.8V20c0-5 3.9-10.5 10.5-10.5h241.3c8.3 0 8.3 11.6 8.3 15.1c0 3.9 0 15.1-8.3 15.1H130.3v132.9h.3c104.2-109.8 282.8-36 282.8 108.9c0 178.1-244.8 220.3-310.1 62.8m63.3-260.8c-.5 4.2 4.6 24.5 14.6 20.6C306 56.6 384 144.5 390.6 144.5c4.8 0 22.8-15.3 14.3-22.8c-93.2-89-234.5-57-238.3-38.2M393 414.7C283 524.6 94 475.5 61 310.5c0-12.2-30.4-7.4-28.9 3.3c24 173.4 246 256.9 381.6 121.3c6.9-7.8-12.6-28.4-20.7-20.4M213.6 306.6c0 4 4.3 7.3 5.5 8.5c3 3 6.1 4.4 8.5 4.4c3.8 0 2.6.2 22.3-19.5c19.6 19.3 19.1 19.5 22.3 19.5c5.4 0 18.5-10.4 10.7-18.2L265.6 284l18.2-18.2c6.3-6.8-10.1-21.8-16.2-15.7L249.7 268c-18.6-18.8-18.4-19.5-21.5-19.5c-5 0-18 11.7-12.4 17.3L234 284c-18.1 17.9-20.4 19.2-20.4 22.6"></svg:path>`,
 })
-export class Fa6BrandsAffiliatethemeIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
+export class Fa6Brands500pxIcon {
+  readonly viewBox = input("0 0 448 512")
+  readonly width = input("0.88em")
   readonly height = input("1em")
 }
 
@@ -53,23 +53,6 @@ export class Fa6BrandsAccusoftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fa6Brands500pxIcon],svg[fa6-brands-500px-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M103.3 344.3c-6.5-14.2-6.9-18.3 7.4-23.1c25.6-8 8 9.2 43.2 49.2h.3v-93.9c1.2-50.2 44-92.2 97.7-92.2c53.9 0 97.7 43.5 97.7 96.8c0 63.4-60.8 113.2-128.5 93.3c-10.5-4.2-2.1-31.7 8.5-28.6c53 0 89.4-10.1 89.4-64.4c0-61-77.1-89.6-116.9-44.6c-23.5 26.4-17.6 42.1-17.6 157.6c50.7 31 118.3 22 160.4-20.1c24.8-24.8 38.5-58 38.5-93c0-35.2-13.8-68.2-38.8-93.3c-24.8-24.8-57.8-38.5-93.3-38.5s-68.8 13.8-93.5 38.5c-.3.3-16 16.5-21.2 23.9l-.5.6c-3.3 4.7-6.3 9.1-20.1 6.1c-6.9-1.7-14.3-5.8-14.3-11.8V20c0-5 3.9-10.5 10.5-10.5h241.3c8.3 0 8.3 11.6 8.3 15.1c0 3.9 0 15.1-8.3 15.1H130.3v132.9h.3c104.2-109.8 282.8-36 282.8 108.9c0 178.1-244.8 220.3-310.1 62.8m63.3-260.8c-.5 4.2 4.6 24.5 14.6 20.6C306 56.6 384 144.5 390.6 144.5c4.8 0 22.8-15.3 14.3-22.8c-93.2-89-234.5-57-238.3-38.2M393 414.7C283 524.6 94 475.5 61 310.5c0-12.2-30.4-7.4-28.9 3.3c24 173.4 246 256.9 381.6 121.3c6.9-7.8-12.6-28.4-20.7-20.4M213.6 306.6c0 4 4.3 7.3 5.5 8.5c3 3 6.1 4.4 8.5 4.4c3.8 0 2.6.2 22.3-19.5c19.6 19.3 19.1 19.5 22.3 19.5c5.4 0 18.5-10.4 10.7-18.2L265.6 284l18.2-18.2c6.3-6.8-10.1-21.8-16.2-15.7L249.7 268c-18.6-18.8-18.4-19.5-21.5-19.5c-5 0-18 11.7-12.4 17.3L234 284c-18.1 17.9-20.4 19.2-20.4 22.6"></svg:path>`,
-})
-export class Fa6Brands500pxIcon {
-  readonly viewBox = input("0 0 448 512")
-  readonly width = input("0.88em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fa6BrandsAdversalIcon],svg[fa6-brands-adversal-icon]',
   host: {
     role: 'img',
@@ -87,18 +70,52 @@ export class Fa6BrandsAdversalIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fa6BrandsAirbnbIcon],svg[fa6-brands-airbnb-icon]',
+  selector: 'svg[fa6BrandsAccessibleIconIcon],svg[fa6-brands-accessible-icon-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18c-22.55-88 112.61-88 90.06 0c-5.45 24.25-20.29 52-45 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47c103.9-130.07 46.11-200-18.85-200c-54.92 0-85.16 46.51-73.28 100.5c6.93 29.19 25.23 62.39 54.43 99.5c-32.53 36.05-60.55 52.69-85.15 54.92c-50 7.43-89.11-41.06-71.3-91.09c15.1-39.16 111.72-231.18 115.87-241.56c15.75-30.07 25.56-57.4 59.38-57.4c32.34 0 43.4 25.94 60.37 59.87c36 70.62 89.35 177.48 114.84 239.09c13.17 33.07-1.37 71.29-37.01 86.64m47-136.12C280.27 35.93 273.13 32 224 32c-45.52 0-64.87 31.67-84.66 72.79C33.18 317.1 22.89 347.19 22 349.81C-3.22 419.14 48.74 480 111.63 480c21.71 0 60.61-6.06 112.37-62.4c58.68 63.78 101.26 62.4 112.37 62.4c62.89.05 114.85-60.86 89.61-130.19c.02-3.89-16.82-38.9-16.82-39.58z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M423.9 255.8L411 413.1c-3.3 40.7-63.9 35.1-60.6-4.9l10-122.5l-41.1 2.3c10.1 20.7 15.8 43.9 15.8 68.5c0 41.2-16.1 78.7-42.3 106.5l-39.3-39.3c57.9-63.7 13.1-167.2-74-167.2c-25.9 0-49.5 9.9-67.2 26L73 243.2c22-20.7 50.1-35.1 81.4-40.2l75.3-85.7l-42.6-24.8l-51.6 46c-30 26.8-70.6-18.5-40.5-45.4l68-60.7c9.8-8.8 24.1-10.2 35.5-3.6c0 0 139.3 80.9 139.5 81.1c16.2 10.1 20.7 36 6.1 52.6L285.7 229l106.1-5.9c18.5-1.1 33.6 14.4 32.1 32.7m-64.9-154c28.1 0 50.9-22.8 50.9-50.9S387.1 0 359 0s-50.9 22.8-50.9 50.9s22.8 50.9 50.9 50.9M179.6 456.5c-80.6 0-127.4-90.6-82.7-156.1l-39.7-39.7C36.4 287 24 320.3 24 356.4c0 130.7 150.7 201.4 251.4 122.5l-39.7-39.7c-16 10.9-35.3 17.3-56.1 17.3"></svg:path>`,
 })
-export class Fa6BrandsAirbnbIcon {
+export class Fa6BrandsAccessibleIconIcon {
   readonly viewBox = input("0 0 448 512")
   readonly width = input("0.88em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fa6BrandsAdnIcon],svg[fa6-brands-adn-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m248 167.5l64.9 98.8H183.1zM496 256c0 136.9-111.1 248-248 248S0 392.9 0 256S111.1 8 248 8s248 111.1 248 248m-99.8 82.7L248 115.5L99.8 338.7h30.4l33.6-51.7h168.6l33.6 51.7z"></svg:path>`,
+})
+export class Fa6BrandsAdnIcon {
+  readonly viewBox = input("0 0 496 512")
+  readonly width = input("0.97em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fa6BrandsAffiliatethemeIcon],svg[fa6-brands-affiliatetheme-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M159.7 237.4C108.4 308.3 43.1 348.2 14 326.6C-15.2 304.9 2.8 230 54.2 159.1c51.3-70.9 116.6-110.8 145.7-89.2s11.1 96.6-40.2 167.5m351.2-57.3C437.1 303.5 319 367.8 246.4 323.7c-25-15.2-41.3-41.2-49-73.8c-33.6 64.8-92.8 113.8-164.1 133.2c49.8 59.3 124.1 96.9 207 96.9c150 0 271.6-123.1 271.6-274.9c.1-8.5-.3-16.8-1-25"></svg:path>`,
+})
+export class Fa6BrandsAffiliatethemeIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
   readonly height = input("1em")
 }
 
@@ -8366,33 +8383,16 @@ export class Fa6BrandsZhihuIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fa6BrandsAdnIcon],svg[fa6-brands-adn-icon]',
+  selector: 'svg[fa6BrandsAirbnbIcon],svg[fa6-brands-airbnb-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m248 167.5l64.9 98.8H183.1zM496 256c0 136.9-111.1 248-248 248S0 392.9 0 256S111.1 8 248 8s248 111.1 248 248m-99.8 82.7L248 115.5L99.8 338.7h30.4l33.6-51.7h168.6l33.6 51.7z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18c-22.55-88 112.61-88 90.06 0c-5.45 24.25-20.29 52-45 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47c103.9-130.07 46.11-200-18.85-200c-54.92 0-85.16 46.51-73.28 100.5c6.93 29.19 25.23 62.39 54.43 99.5c-32.53 36.05-60.55 52.69-85.15 54.92c-50 7.43-89.11-41.06-71.3-91.09c15.1-39.16 111.72-231.18 115.87-241.56c15.75-30.07 25.56-57.4 59.38-57.4c32.34 0 43.4 25.94 60.37 59.87c36 70.62 89.35 177.48 114.84 239.09c13.17 33.07-1.37 71.29-37.01 86.64m47-136.12C280.27 35.93 273.13 32 224 32c-45.52 0-64.87 31.67-84.66 72.79C33.18 317.1 22.89 347.19 22 349.81C-3.22 419.14 48.74 480 111.63 480c21.71 0 60.61-6.06 112.37-62.4c58.68 63.78 101.26 62.4 112.37 62.4c62.89.05 114.85-60.86 89.61-130.19c.02-3.89-16.82-38.9-16.82-39.58z"></svg:path>`,
 })
-export class Fa6BrandsAdnIcon {
-  readonly viewBox = input("0 0 496 512")
-  readonly width = input("0.97em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fa6BrandsAccessibleIconIcon],svg[fa6-brands-accessible-icon-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M423.9 255.8L411 413.1c-3.3 40.7-63.9 35.1-60.6-4.9l10-122.5l-41.1 2.3c10.1 20.7 15.8 43.9 15.8 68.5c0 41.2-16.1 78.7-42.3 106.5l-39.3-39.3c57.9-63.7 13.1-167.2-74-167.2c-25.9 0-49.5 9.9-67.2 26L73 243.2c22-20.7 50.1-35.1 81.4-40.2l75.3-85.7l-42.6-24.8l-51.6 46c-30 26.8-70.6-18.5-40.5-45.4l68-60.7c9.8-8.8 24.1-10.2 35.5-3.6c0 0 139.3 80.9 139.5 81.1c16.2 10.1 20.7 36 6.1 52.6L285.7 229l106.1-5.9c18.5-1.1 33.6 14.4 32.1 32.7m-64.9-154c28.1 0 50.9-22.8 50.9-50.9S387.1 0 359 0s-50.9 22.8-50.9 50.9s22.8 50.9 50.9 50.9M179.6 456.5c-80.6 0-127.4-90.6-82.7-156.1l-39.7-39.7C36.4 287 24 320.3 24 356.4c0 130.7 150.7 201.4 251.4 122.5l-39.7-39.7c-16 10.9-35.3 17.3-56.1 17.3"></svg:path>`,
-})
-export class Fa6BrandsAccessibleIconIcon {
+export class Fa6BrandsAirbnbIcon {
   readonly viewBox = input("0 0 448 512")
   readonly width = input("0.88em")
   readonly height = input("1em")

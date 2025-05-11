@@ -19,6 +19,40 @@ export class Pixelarticons4gIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[pixelarticons4kBoxIcon],svg[pixelarticons-4k-box-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 4H1v16h22V4zm18 2v12H3V6zM7 8H5v5h4v3h2V8H9v3H7zm8 0h-2v8h2v-3h2v3h2v-3h-2v-2h2V8h-2v3h-2z"></svg:path>`,
+})
+export class Pixelarticons4kBoxIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pixelarticons4kIcon],svg[pixelarticons-4k-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 7h2v4h4V7h2v10H9v-4H3zm10 0h2v4h2v2h-2v4h-2zm6 8h-2v-2h2zm0 0h2v2h-2zm0-6h-2v2h2zm0 0V7h2v2z"></svg:path>`,
+})
+export class Pixelarticons4kIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[pixelarticons5gIcon],svg[pixelarticons-5g-icon]',
   host: {
     role: 'img',
@@ -36,33 +70,16 @@ export class Pixelarticons5gIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pixelarticonsAddBoxMultipleIcon],svg[pixelarticons-add-box-multiple-icon]',
+  selector: 'svg[pixelarticonsAbTestingIcon],svg[pixelarticons-ab-testing-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M3 3h14v14H3zm12 12V5H5v10zm-8 6v-2h12V7h2v14zm4-12h2v2h-2v2H9v-2H7V9h2V7h2z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M3 3h6v2H5v2h4v2H5v2h4v2H3zm6 8h2V9H9zm0-4h2V5H9zm4 4h8v10h-2v-4h-4v4h-2zm2 4h4v-2h-4zm0-12h6v6h-2V5h-4zM3 15h2v4h4v2H3z"></svg:path>`,
 })
-export class PixelarticonsAddBoxMultipleIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pixelarticonsAddColIcon],svg[pixelarticons-add-col-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2 2h10v20H2v-2h8v-4H2v-2h8v-4H2V8h8V4H2zm17 9h3v2h-3v3h-2v-3h-3v-2h3V8h2z"></svg:path>`,
-})
-export class PixelarticonsAddColIcon {
+export class PixelarticonsAbTestingIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -97,6 +114,40 @@ export class PixelarticonsAcIcon {
   template: `<svg:path fill="currentColor" d="M3 3h18v18H3zm16 16V5H5v14zm-6-8h4v2h-4v4h-2v-4H7v-2h4V7h2z"></svg:path>`,
 })
 export class PixelarticonsAddBoxIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pixelarticonsAddBoxMultipleIcon],svg[pixelarticons-add-box-multiple-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 3h14v14H3zm12 12V5H5v10zm-8 6v-2h12V7h2v14zm4-12h2v2h-2v2H9v-2H7V9h2V7h2z"></svg:path>`,
+})
+export class PixelarticonsAddBoxMultipleIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pixelarticonsAddColIcon],svg[pixelarticons-add-col-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 2h10v20H2v-2h8v-4H2v-2h8v-4H2V8h8V4H2zm17 9h3v2h-3v3h-2v-3h-3v-2h3V8h2z"></svg:path>`,
+})
+export class PixelarticonsAddColIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8206,57 +8257,6 @@ export class PixelarticonsZoomInIcon {
   template: `<svg:path fill="currentColor" d="M14 2H6v2H4v2H2v8h2v2h2v2h8v-2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h2V6h-2V4h-2zm0 2v2h2v8h-2v2H6v-2H4V6h2V4zm0 5v2H6V9z"></svg:path>`,
 })
 export class PixelarticonsZoomOutIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pixelarticons4kBoxIcon],svg[pixelarticons-4k-box-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 4H1v16h22V4zm18 2v12H3V6zM7 8H5v5h4v3h2V8H9v3H7zm8 0h-2v8h2v-3h2v3h2v-3h-2v-2h2V8h-2v3h-2z"></svg:path>`,
-})
-export class Pixelarticons4kBoxIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pixelarticons4kIcon],svg[pixelarticons-4k-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 7h2v4h4V7h2v10H9v-4H3zm10 0h2v4h2v2h-2v4h-2zm6 8h-2v-2h2zm0 0h2v2h-2zm0-6h-2v2h2zm0 0V7h2v2z"></svg:path>`,
-})
-export class Pixelarticons4kIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pixelarticonsAbTestingIcon],svg[pixelarticons-ab-testing-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 3h6v2H5v2h4v2H5v2h4v2H3zm6 8h2V9H9zm0-4h2V5H9zm4 4h8v10h-2v-4h-4v4h-2zm2 4h4v-2h-4zm0-12h6v6h-2V5h-4zM3 15h2v4h4v2H3z"></svg:path>`,
-})
-export class PixelarticonsAbTestingIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

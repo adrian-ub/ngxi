@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[stashHashSolidIcon],svg[stash-hash-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.539 5.767a1.25 1.25 0 0 1 1.027 1.439l-.174 1.044h2.466l.242-1.455a1.25 1.25 0 0 1 2.466.41l-.174 1.045H17a1.25 1.25 0 1 1 0 2.5h-1.024l-.417 2.5h.608a1.25 1.25 0 0 1 0 2.5h-1.025l-.242 1.456a1.25 1.25 0 0 1-2.466-.412l.174-1.044h-2.466L9.9 17.206a1.25 1.25 0 1 1-2.466-.412l.174-1.044H7a1.25 1.25 0 1 1 0-2.5h1.024l.417-2.5h-.608a1.25 1.25 0 1 1 0-2.5h1.025L9.1 6.795a1.25 1.25 0 0 1 1.439-1.028m.437 4.983l-.417 2.5h2.465l.417-2.5z"></svg:path>`,
+})
+export class StashHashSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[stashHeadphonesIcon],svg[stash-headphones-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.763 11.622c.526.206.95.65 1.108 1.238l.988 3.688a1.84 1.84 0 0 1-1.302 2.254a3.66 3.66 0 0 1-4.481-2.587l-.047-.176a3.66 3.66 0 0 1 2.229-4.365a6.75 6.75 0 0 1 13.477-.133l.066.017a3.66 3.66 0 0 1 2.587 4.481l-.047.176a3.66 3.66 0 0 1-4.481 2.587a1.84 1.84 0 0 1-1.302-2.254l.988-3.688c.115-.427.37-.778.702-1.017a5.25 5.25 0 0 0-10.485-.221m-.341 1.626a.34.34 0 0 0-.418-.241a2.16 2.16 0 0 0-1.526 2.644l.047.176a2.16 2.16 0 0 0 2.644 1.527a.34.34 0 0 0 .241-.418zm11.99-.241a.34.34 0 0 0-.417.24l-.988 3.689a.34.34 0 0 0 .241.418a2.16 2.16 0 0 0 2.644-1.527l.047-.176a2.16 2.16 0 0 0-1.526-2.644"></svg:path>`,
+})
+export class StashHeadphonesIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[stashHeadphonesDuotoneIcon],svg[stash-headphones-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.764 11.622c.525.206.95.65 1.107 1.238l.988 3.688a1.84 1.84 0 0 1-1.302 2.254a3.66 3.66 0 0 1-4.481-2.587l-.047-.176a3.66 3.66 0 0 1 2.229-4.365a6.75 6.75 0 0 1 13.477-.133l.066.017a3.66 3.66 0 0 1 2.588 4.481l-.047.176a3.66 3.66 0 0 1-4.482 2.587a1.84 1.84 0 0 1-1.302-2.254l.989-3.688c.114-.427.369-.778.7-1.017a5.25 5.25 0 0 0-10.483-.221m11.649 1.385a.34.34 0 0 0-.418.24l-.988 3.689a.34.34 0 0 0 .241.418a2.16 2.16 0 0 0 2.645-1.527l.047-.176a2.16 2.16 0 0 0-1.527-2.644m-11.991.24a.34.34 0 0 0-.417-.24a2.16 2.16 0 0 0-1.527 2.644l.047.176a2.16 2.16 0 0 0 2.644 1.527a.34.34 0 0 0 .241-.418z"></svg:path><svg:path fill="currentColor" d="M17.995 13.248a.34.34 0 0 1 .418-.241a2.16 2.16 0 0 1 1.527 2.644l-.047.176a2.16 2.16 0 0 1-2.645 1.527a.34.34 0 0 1-.24-.418zm-11.99-.241a.34.34 0 0 1 .417.24l.988 3.689a.34.34 0 0 1-.24.418a2.16 2.16 0 0 1-2.645-1.527l-.047-.176a2.16 2.16 0 0 1 1.527-2.644" opacity=".5"></svg:path>`,
+})
+export class StashHeadphonesDuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[stashHeadphonesLightIcon],svg[stash-headphones-light-icon]',
   host: {
     role: 'img',
@@ -8138,57 +8189,6 @@ export class StashAngleDownIcon {
   template: `<svg:path fill="currentColor" d="M13.836 8.964a.9.9 0 0 1 0 1.272L12.073 12l1.763 1.764a.9.9 0 1 1-1.273 1.272l-2.4-2.4a.9.9 0 0 1 0-1.272l2.4-2.4a.9.9 0 0 1 1.273 0"></svg:path>`,
 })
 export class StashAngleLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[stashAngleLeftDuotoneIcon],svg[stash-angle-left-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13.836 8.964a.9.9 0 0 1 0 1.272L12.073 12l1.763 1.764a.9.9 0 1 1-1.273 1.272l-2.4-2.4a.9.9 0 0 1 0-1.272l2.4-2.4a.9.9 0 0 1 1.273 0"></svg:path>`,
-})
-export class StashAngleLeftDuotoneIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[stashAngleDownLightIcon],svg[stash-angle-down-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.176 10.376a.6.6 0 0 1 .848 0L12 12.352l1.976-1.976a.6.6 0 0 1 .848.848l-2.4 2.4a.6.6 0 0 1-.848 0l-2.4-2.4a.6.6 0 0 1 0-.848"></svg:path>`,
-})
-export class StashAngleDownLightIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[stashAirplaneDuotoneIcon],svg[stash-airplane-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20.633 2.276c-.726-.117-1.501.127-2.174.371c-.972.354-2.07.93-2.646 1.506l-1.61 1.703l-5.334-2.02a1.8 1.8 0 0 0-1.93.354L5.46 5.587c-.34.321-.3.89.083 1.16l4.696 3.303l-.862.912c-.52.52-.996 1.028-1.355 1.522a4.7 4.7 0 0 0-.432.707l-2.139-.844c-.66-.26-1.393-.07-1.886.397l-1.08 1.02a.757.757 0 0 0 .048 1.131l3.651 2.922l2.922 3.651c.28.35.822.373 1.13.047l1.022-1.08c.465-.492.657-1.226.396-1.885l-.844-2.138c.247-.12.483-.27.707-.433c.494-.359 1.002-.835 1.522-1.354l.912-.863l3.304 4.696a.758.758 0 0 0 1.159.083l1.397-1.48a1.8 1.8 0 0 0 .353-1.93l-2.019-5.334l1.703-1.61c.577-.577 1.152-1.674 1.506-2.646c.244-.672.488-1.448.371-2.174a1.27 1.27 0 0 0-1.09-1.091" opacity=".5"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M20.633 2.276c.224.035.51.125.738.353c.229.229.318.514.353.738c.037.23.03.473.005.7c-.052.458-.195.976-.376 1.474c-.354.972-.93 2.07-1.506 2.646l-.015.015l-1.688 1.595l2.02 5.334a1.8 1.8 0 0 1-.354 1.93l-1.397 1.48a.757.757 0 0 1-1.16-.083l-3.303-4.696l-.912.863c-.52.519-1.028.995-1.522 1.354c-.224.163-.46.313-.707.433l.844 2.138c.26.66.07 1.393-.396 1.886l-1.022 1.08a.757.757 0 0 1-1.13-.047l-2.922-3.652l-3.651-2.922a.757.757 0 0 1-.047-1.13l1.08-1.021c.492-.466 1.226-.658 1.885-.397l2.139.845c.12-.248.27-.484.432-.708c.359-.494.835-1.002 1.355-1.522l.862-.912l-4.696-3.304a.757.757 0 0 1-.083-1.159l1.48-1.397a1.8 1.8 0 0 1 1.93-.353l5.334 2.019l1.595-1.688l.015-.015C16.39 3.576 17.487 3 18.46 2.647c.498-.181 1.016-.324 1.474-.376c.227-.025.47-.032.7.005M16.88 5.207l-1.93 2.042a.75.75 0 0 1-.811.187L8.325 5.235l-.03-.012a.3.3 0 0 0-.326.057l-.813.768l4.654 3.274c.368.26.423.801.113 1.129L10.458 12l-.014.014c-.513.513-.922.954-1.21 1.35c-.291.403-.406.688-.425.891a.757.757 0 0 1-1.022.627l-2.888-1.141c-.262-.104-.6.371-.757.52l3.043 2.436a1 1 0 0 1 .118.117l2.435 3.043c.149-.157.624-.495.52-.757l-1.14-2.887a.757.757 0 0 1 .626-1.023c.203-.019.488-.134.89-.426c.397-.287.838-.696 1.35-1.209l.016-.014l1.55-1.465a.758.758 0 0 1 1.128.113l3.274 4.654l.768-.813a.3.3 0 0 0 .058-.325l-.013-.03l-2.2-5.815a.75.75 0 0 1 .186-.81l2.042-1.931c.347-.351.826-1.2 1.15-2.092c.148-.405.292-.842.306-1.277c-.435.014-.872.158-1.277.306c-.891.324-1.74.803-2.092 1.15" clip-rule="evenodd"></svg:path>`,
-})
-export class StashAirplaneDuotoneIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

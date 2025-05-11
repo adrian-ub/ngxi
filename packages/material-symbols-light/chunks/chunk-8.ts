@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightDomainVerificationSharpIcon],svg[material-symbols-light-domain-verification-sharp-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m10.95 15.82l4.958-4.959l-.72-.719l-4.238 4.239l-2.138-2.139l-.72.72zM4 8h16V6H4zM3 19V5h18v14z"></svg:path>`,
-})
-export class MaterialSymbolsLightDomainVerificationSharpIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightDominoMaskIcon],svg[material-symbols-light-domino-mask-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightEncryptedOffIcon {
   template: `<svg:path fill="currentColor" d="M13.294 10.714q.087-.162.137-.342t.05-.372q0-.613-.434-1.047q-.433-.434-1.047-.434q-.192 0-.372.05t-.341.137zm4.748 4.759l-.769-.78q.339-.8.533-1.75T18 11.1V6.375l-6-2.23l-3.842 1.432l-.781-.78L12 3.076l7 2.615V11.1q0 1.025-.22 2.102t-.738 2.271m1.758 5.743l-3.288-3.289q-.893 1.071-2.065 1.868T12 20.961q-3.148-.932-5.074-3.727T5 11.1V6.416L2.862 4.277l.707-.708l16.939 16.939zM12 19.9q1.067-.333 2.127-1.111q1.06-.78 1.677-1.57l-3.162-3.161l.077.442h-1.738l.327-1.777L6 7.416V11.1q0 3.025 1.7 5.5t4.3 3.3"></svg:path>`,
 })
 export class MaterialSymbolsLightEncryptedOffOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightEncryptedOffOutlineRoundedIcon],svg[material-symbols-light-encrypted-off-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19 6.817V11.1q0 .837-.147 1.728t-.5 1.876q-.097.275-.29.35t-.369.01t-.29-.226t-.038-.378q.307-.758.47-1.636Q18 11.946 18 11.1V6.798q0-.192-.106-.346q-.105-.154-.298-.23l-5.384-2q-.096-.04-.212-.04t-.212.04L8.45 5.466q-.14.062-.274.028t-.237-.137q-.189-.189-.141-.464t.318-.379l3.319-1.22q.273-.107.565-.107t.566.106l5.384 2q.46.187.755.6t.295.923m-7 14.045q-.1 0-.567-.12q-2.99-1.125-4.712-3.806T5 11.1V6.416L3.216 4.63q-.141-.14-.15-.344t.15-.364t.353-.16t.354.16l16.23 16.23q.141.141.15.345t-.15.364t-.353.16t-.354-.16l-2.934-2.935q-.806.971-1.784 1.667t-2.16 1.148q-.131.05-.281.085q-.15.034-.287.034m1.294-10.147q.087-.162.137-.342t.05-.372q0-.613-.434-1.047q-.433-.434-1.047-.434q-.192 0-.372.05t-.341.137zM12 19.9q1.067-.333 2.127-1.111q1.06-.78 1.677-1.57l-3.162-3.161l.02.115q.038.115-.039.221t-.212.106h-.945q-.187 0-.32-.149q-.135-.149-.085-.336l.247-1.292L6 7.416V11.1q0 3.025 1.7 5.5t4.3 3.3"></svg:path>`,
+})
+export class MaterialSymbolsLightEncryptedOffOutlineRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

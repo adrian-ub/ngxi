@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[lsiconAddChatTwoOutlineIcon],svg[lsicon-add-chat-two-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" d="M9 13.917a6.04 6.04 0 0 1-3.69-.553l-2.656.01v-2.647a6 6 0 1 1 11.284-3.593M10.5 11H12m0 0h1.5M12 11V9.5m0 1.5v1.5m3-1.5a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"></svg:path>`,
-})
-export class LsiconAddChatTwoOutlineIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[lsiconAddChatFilledIcon],svg[lsicon-add-chat-filled-icon]',
   host: {
     role: 'img',
@@ -36,6 +19,40 @@ export class LsiconAddChatFilledIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[lsiconAddChatOutlineIcon],svg[lsicon-add-chat-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M5 8h6M8 5v6m-5.5 2.5H8A5.5 5.5 0 1 0 2.5 8z"></svg:path>`,
+})
+export class LsiconAddChatOutlineIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lsiconAddChatTwoFilledIcon],svg[lsicon-add-chat-two-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.5 8a5.5 5.5 0 0 1 10.943-.794l.99-.143a6.501 6.501 0 1 0-12.279 3.782v3.03l3.04-.01a6.54 6.54 0 0 0 3.889.546l-.166-.987a5.54 5.54 0 0 1-3.383-.506l-.107-.054l-2.273.008v-2.265L3.1 10.5A5.5 5.5 0 0 1 2.5 8m9.5-.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m-.5 2v1h-1v1h1v1h1v-1h1v-1h-1v-1z" clip-rule="evenodd"></svg:path>`,
+})
+export class LsiconAddChatTwoFilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[lsiconAddOneFilledIcon],svg[lsicon-add-one-filled-icon]',
   host: {
     role: 'img',
@@ -46,6 +63,74 @@ export class LsiconAddChatFilledIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.5 7.5V3h1v4.5H13v1H8.5V13h-1V8.5H3v-1z" clip-rule="evenodd"></svg:path>`,
 })
 export class LsiconAddOneFilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lsiconAddOneOutlineIcon],svg[lsicon-add-one-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M3 8h10M8 3v10"></svg:path>`,
+})
+export class LsiconAddOneOutlineIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lsiconAddChatTwoOutlineIcon],svg[lsicon-add-chat-two-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M9 13.917a6.04 6.04 0 0 1-3.69-.553l-2.656.01v-2.647a6 6 0 1 1 11.284-3.593M10.5 11H12m0 0h1.5M12 11V9.5m0 1.5v1.5m3-1.5a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"></svg:path>`,
+})
+export class LsiconAddChatTwoOutlineIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lsiconAdjustWidthFilledIcon],svg[lsicon-adjust-width-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1 13V3h1v10zm14 0h-1V3h1zM4.207 8.5l1.147 1.146l-.708.708L2.293 8l2.353-2.354l.708.708L4.207 7.5H7v1zm7.147-2.854L13.707 8l-2.353 2.354l-.708-.708L11.793 8.5H9v-1h2.793l-1.147-1.146z" clip-rule="evenodd"></svg:path>`,
+})
+export class LsiconAdjustWidthFilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lsiconAdjustHightOutlineIcon],svg[lsicon-adjust-hight-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M13 1.5H3m10 13H3M8 7V3m0 0l2 2M8 3L6 5m2 8V9m0 4l-2-2m2 2l2-2"></svg:path>`,
+})
+export class LsiconAdjustHightOutlineIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8410,91 +8495,6 @@ export class LsiconRotationRightFilledIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linejoin="round" d="M8.9 3.969H6.5a4 4 0 0 0-4 4v.06m6.4-4.06L7.4 2.375M8.9 3.97L7.4 5.562m6.1 1.965h-8v6h8z"></svg:path>`,
 })
 export class LsiconRotationRightOutlineIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[lsiconRowHeightLFilledIcon],svg[lsicon-row-height-l-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m4.5 1.822l2.838 2.602l-.676.737L5 3.637v8.726l1.662-1.524l.676.737L4.5 14.178l-2.838-2.602l.676-.737L4 12.363V3.637L2.338 5.161l-.676-.737zM14 3.5v5H9v-5zm0 9H9v-1h5z" clip-rule="evenodd"></svg:path>`,
-})
-export class LsiconRowHeightLFilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[lsiconRowHeightLOutlineIcon],svg[lsicon-row-height-l-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" d="M9 4h5M9 5h5M9 6h5M9 7h5m-5 5h5M9 8h5M4.5 3v10M7 11.207L4.5 13.5L2 11.207m0-6.414L4.5 2.5L7 4.793"></svg:path>`,
-})
-export class LsiconRowHeightLOutlineIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[lsiconRowHeightMFilledIcon],svg[lsicon-row-height-m-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m4.5 1.822l2.838 2.602l-.676.737L5 3.637v8.726l1.662-1.524l.676.737L4.5 14.178l-2.838-2.602l.676-.737L4 12.363V3.637L2.338 5.161l-.676-.737zM14 3.5v3H9v-3zm0 5H9v-1h5zm0 4H9v-1h5z" clip-rule="evenodd"></svg:path>`,
-})
-export class LsiconRowHeightMFilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[lsiconRowHeightMOutlineIcon],svg[lsicon-row-height-m-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" d="M9 4h5M9 5h5M9 6h5m-5 6h5M9 8h5M4.5 3v10M7 11.207L4.5 13.5L2 11.207m0-6.414L4.5 2.5L7 4.793"></svg:path>`,
-})
-export class LsiconRowHeightMOutlineIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[lsiconRowHeightSFilledIcon],svg[lsicon-row-height-s-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m4.5 1.822l2.838 2.602l-.676.737L5 3.637v8.726l1.662-1.524l.676.737L4.5 14.178l-2.838-2.602l.676-.737L4 12.363V3.637L2.338 5.161l-.676-.737zM14 4.5H9v-1h5zm0 4H9v-1h5zm0 4H9v-1h5z" clip-rule="evenodd"></svg:path>`,
-})
-export class LsiconRowHeightSFilledIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

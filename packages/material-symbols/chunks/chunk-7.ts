@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsDangerousOutlineRoundedIcon],svg[material-symbols-dangerous-outline-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.075 21q-.4 0-.762-.15t-.638-.425l-4.1-4.1q-.275-.275-.425-.638T3 14.926v-5.85q0-.4.15-.762t.425-.638l4.1-4.1q.275-.275.638-.425T9.075 3h5.85q.4 0 .763.15t.637.425l4.1 4.1q.275.275.425.638t.15.762v5.85q0 .4-.15.763t-.425.637l-4.1 4.1q-.275.275-.638.425t-.762.15zm.025-2h5.8l4.1-4.1V9.1L14.9 5H9.1L5 9.1v5.8zm2.9-5.6l2.15 2.15q.275.275.7.275t.7-.275t.275-.7t-.275-.7L13.4 12l2.15-2.15q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275L12 10.6L9.85 8.45q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7L10.6 12l-2.15 2.15q-.275.275-.275.7t.275.7t.7.275t.7-.275zm0-1.4"></svg:path>`,
-})
-export class MaterialSymbolsDangerousOutlineRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsDangerousRoundedIcon],svg[material-symbols-dangerous-rounded-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsDirectionsRoundedIcon {
   template: `<svg:path fill="currentColor" d="M13 23v-6l-2.1-2l-1 4.4L3 18l.4-2l4.8 1l1.6-8.1l-1.8.7V13H6V8.3l3.95-1.7q.875-.375 1.288-.487T12 6q.525 0 .975.275T13.7 7l1 1.6q.65 1.05 1.763 1.725T19 11v2q-1.65 0-3.088-.687T13.5 10.5l-.6 3l2.1 2V23zm.5-17.5q-.825 0-1.412-.587T11.5 3.5t.588-1.412T13.5 1.5t1.413.588T15.5 3.5t-.587 1.413T13.5 5.5"></svg:path>`,
 })
 export class MaterialSymbolsDirectionsRunIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsDirectionsRunRoundedIcon],svg[material-symbols-directions-run-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 22v-5l-2.1-2l-.775 3.45q-.1.4-.437.613t-.738.137L4 18.2q-.425-.075-.65-.425T3.2 17t.425-.662t.775-.138l3.8.8l1.6-8.1l-1.8.7V12q0 .425-.288.713T7 13t-.712-.288T6 12V8.95q0-.3.163-.537T6.6 8.05L9.95 6.6q.875-.375 1.288-.487T12 6q.525 0 .975.275T13.7 7l1 1.6q.525.85 1.363 1.475T18 10.9q.425.075.713.375T19 12t-.288.7t-.687.225q-1.35-.2-2.525-.838t-2-1.587l-.6 3l1.8 1.7q.15.15.225.338t.075.387V22q0 .425-.288.713T14 23t-.712-.288T13 22m.5-16.5q-.825 0-1.412-.587T11.5 3.5t.588-1.412T13.5 1.5t1.413.588T15.5 3.5t-.587 1.413T13.5 5.5"></svg:path>`,
+})
+export class MaterialSymbolsDirectionsRunRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

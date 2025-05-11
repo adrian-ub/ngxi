@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[tablerBrandOauthIcon],svg[tabler-brand-oauth-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M2 12a10 10 0 1 0 20 0a10 10 0 1 0-20 0"></svg:path><svg:path d="M12.556 6c.65 0 1.235.373 1.508.947l2.839 7.848a1.646 1.646 0 0 1-1.01 2.108a1.673 1.673 0 0 1-2.068-.851L13.365 15h-2.73l-.398.905A1.67 1.67 0 0 1 8.26 16.95l-.153-.047a1.647 1.647 0 0 1-1.056-1.956l2.824-7.852a1.66 1.66 0 0 1 1.409-1.087z"></svg:path></svg:g>`,
+})
+export class TablerBrandOauthIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[tablerBrandOfficeIcon],svg[tabler-brand-office-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class TablerChartPpfIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m12 3l9.5 7L18 21H6L2.5 10z"></svg:path><svg:path d="m12 7.5l5.5 4L15 17H8.5l-2-5.5z"></svg:path><svg:path d="m2.5 10l9.5 3l9.5-3"></svg:path><svg:path d="M12 3v10l6 8M6 21l6-8"></svg:path></svg:g>`,
 })
 export class TablerChartRadarIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tablerChartSankeyIcon],svg[tabler-chart-sankey-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M3 3v18h18M3 6h18"></svg:path><svg:path d="M3 8c10 0 8 9 18 9"></svg:path></svg:g>`,
-})
-export class TablerChartSankeyIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

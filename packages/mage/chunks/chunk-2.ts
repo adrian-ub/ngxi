@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[mageVideoPlayerFillIcon],svg[mage-video-player-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21.706 6.259h-4.328V2.212a6.14 6.14 0 0 1 4.328 4.047M6.65 2.212v4.047H2.275A6.13 6.13 0 0 1 6.65 2.212M15.613 2H8.415v4.259h7.198zM22 8.024H2.004a.7.7 0 0 0 0 .152v7.647A6.177 6.177 0 0 0 8.156 22h7.645a6.186 6.186 0 0 0 6.176-6.177V8.176A.7.7 0 0 0 22 8.024m-6.328 7.14a1.4 1.4 0 0 1-.376.448l-3.53 2.47a1.26 1.26 0 0 1-.634.224h-.118a1.27 1.27 0 0 1-1.059-.541c-.13-.195-.2-.425-.2-.66v-4.61c-.001-.23.064-.455.189-.648c.13-.177.299-.322.494-.423c.2-.09.416-.135.635-.13c.211.01.417.07.6.177L15.2 13.6a1.18 1.18 0 0 1 .589.976c.016.204-.025.407-.118.589"></svg:path>`,
+})
+export class MageVideoPlayerFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mageVideoPlusIcon],svg[mage-video-plus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><svg:path stroke-miterlimit="10" d="M9.042 9.5v5m-2.495-2.494h5"></svg:path><svg:path stroke-linejoin="round" d="M12 5.32H6.095A3.595 3.595 0 0 0 2.5 8.923v6.162a3.595 3.595 0 0 0 3.595 3.595H12a3.595 3.595 0 0 0 3.595-3.595V8.924A3.594 3.594 0 0 0 12 5.32m9.5 4.118v5.135c0 .25-.071.496-.205.708a1.36 1.36 0 0 1-.555.493a1.27 1.27 0 0 1-.73.124a1.37 1.37 0 0 1-.677-.278l-3.225-2.588a1.38 1.38 0 0 1-.503-1.047c0-.2.045-.396.133-.575c.092-.168.218-.315.37-.432l3.225-2.567a1.36 1.36 0 0 1 .678-.278c.25-.032.504.011.729.124a1.33 1.33 0 0 1 .76 1.181"></svg:path></svg:g>`,
+})
+export class MageVideoPlusIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mageVideoPlusFillIcon],svg[mage-video-plus-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21.92 8.36a2.06 2.06 0 0 0-.86-.77a2.11 2.11 0 0 0-2.2.24l-2.53 2v-.9a4.1 4.1 0 0 0-.32-1.67a4.33 4.33 0 0 0-4-2.69H6.1a4.3 4.3 0 0 0-1.66.33a4.38 4.38 0 0 0-2.35 2.36a4.3 4.3 0 0 0-.33 1.66v6.17a4.34 4.34 0 0 0 4.34 4.34h5.82a4.34 4.34 0 0 0 4.34-4.34v-.91l2.53 2c.289.23.634.378 1 .43h.25a2 2 0 0 0 .9-.21a2.13 2.13 0 0 0 .98-.74a2.05 2.05 0 0 0 .32-1.11V9.42a2.13 2.13 0 0 0-.32-1.06m-10.38 4.4H9.78v1.75a.75.75 0 1 1-1.5 0v-1.75H6.54a.75.75 0 1 1 0-1.5h1.74V9.51a.75.75 0 1 1 1.5 0v1.75h1.76a.75.75 0 1 1 0 1.5"></svg:path>`,
+})
+export class MageVideoPlusFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mageVideoQuestionMarkIcon],svg[mage-video-question-mark-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><svg:path stroke-linejoin="round" d="M12 5.32H6.095A3.595 3.595 0 0 0 2.5 8.923v6.162a3.595 3.595 0 0 0 3.595 3.595H12a3.595 3.595 0 0 0 3.595-3.595V8.924A3.594 3.594 0 0 0 12 5.32m9.5 4.118v5.135c0 .25-.071.496-.205.708a1.36 1.36 0 0 1-.555.493a1.27 1.27 0 0 1-.73.124a1.37 1.37 0 0 1-.677-.278l-3.225-2.588a1.38 1.38 0 0 1-.503-1.047c0-.2.045-.396.133-.575c.092-.168.218-.315.37-.432l3.225-2.567a1.36 1.36 0 0 1 .678-.278c.25-.032.504.011.729.124a1.33 1.33 0 0 1 .76 1.181"></svg:path><svg:path stroke-miterlimit="10" d="M7.543 9.948a1.6 1.6 0 0 1 1.742-.906a1.55 1.55 0 0 1 1.137.81a1.345 1.345 0 0 1-.784 1.851a.99.99 0 0 0-.64.898v.37"></svg:path><svg:path stroke-linejoin="round" d="M8.97 15.015h.004"></svg:path></svg:g>`,
+})
+export class MageVideoQuestionMarkIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mageVideoQuestionMarkFillIcon],svg[mage-video-question-mark-fill-icon]',
   host: {
     role: 'img',
@@ -641,74 +709,6 @@ export class MageZoomOutIcon {
   template: `<svg:path fill="currentColor" d="m21.785 20.35l-5.22-5.22a8.18 8.18 0 1 0-1.41 1.42l5.22 5.22a1 1 0 1 0 1.41-1.42m-15.71-9.29a1 1 0 1 1 0-2h8a1 1 0 0 1 0 2z"></svg:path>`,
 })
 export class MageZoomOutFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mageAlignCenterIcon],svg[mage-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M6.286 12h11.428m-8 5.714h4.572M4 6.286h16"></svg:path>`,
-})
-export class MageAlignCenterIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mageAlignLeftIcon],svg[mage-align-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M4.5 12h8m-8 6.25h15m-15-12.5h15"></svg:path>`,
-})
-export class MageAlignLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mageAlignRightIcon],svg[mage-align-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M19.5 12h-8m8-6.25h-15m15 12.5h-15"></svg:path>`,
-})
-export class MageAlignRightIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mageAdobeIcon],svg[mage-adobe-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.443 3.104L2 20.897V3.104zm2.564 6.566l4.715 11.227h-3.084l-1.398-3.55H8.744zM22 3.104v17.793L14.653 3.104z"></svg:path>`,
-})
-export class MageAdobeIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

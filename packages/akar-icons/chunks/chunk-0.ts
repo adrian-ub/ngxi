@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[akarIconsAirplayAudioIcon],svg[akar-icons-airplay-audio-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m12 16l6 5H6z"></svg:path><svg:path d="M4 18a9.96 9.96 0 0 1-2-6C2 6.477 6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6"></svg:path><svg:path d="M17.123 15.125a6 6 0 1 0-10.247-.002"></svg:path><svg:path d="M14 12a2 2 0 1 0-4 0"></svg:path></svg:g>`,
+})
+export class AkarIconsAirplayAudioIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[akarIconsAirIcon],svg[akar-icons-air-icon]',
   host: {
     role: 'img',
@@ -19,6 +36,91 @@ export class AkarIconsAirIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[akarIconsAlignBottomIcon],svg[akar-icons-align-bottom-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2"><svg:path d="M21 22H3"></svg:path><svg:path stroke-linejoin="round" d="M6 18V2h4v16zm8 0V8h4v10z"></svg:path></svg:g>`,
+})
+export class AkarIconsAlignBottomIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[akarIconsAlarmIcon],svg[akar-icons-alarm-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="13" r="9"></svg:circle><svg:path d="M15.5 9.5L12 13m7 6l1 3M5 19l-1 3M2 5l3-3m14 0l3 3M12 4V2"></svg:path></svg:g>`,
+})
+export class AkarIconsAlarmIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[akarIconsAirpodsIcon],svg[akar-icons-airpods-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="2"><svg:path d="M14 7c0 2.21 1.644 4 4 4s4-1.79 4-4s-1.644-4-4-4s-4 1.79-4 4Zm-4 0c0 2.21-1.644 4-4 4S2 9.21 2 7s1.644-4 4-4s4 1.79 4 4Z"></svg:path><svg:path stroke-linecap="round" d="M14 7v12a2 2 0 0 0 2 2v0a2 2 0 0 0 2-2v-8"></svg:path><svg:path d="M14 17h4M6 17h4"></svg:path><svg:path stroke-linecap="round" d="M10 7v12a2 2 0 0 1-2 2v0a2 2 0 0 1-2-2v-8"></svg:path><svg:path d="M20 4a5.41 5.41 0 0 0 0 6M4 4a5.41 5.41 0 0 1 0 6"></svg:path></svg:g>`,
+})
+export class AkarIconsAirpodsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[akarIconsAirplayVideoIcon],svg[akar-icons-airplay-video-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></svg:path><svg:path d="m12 16l6 5H6z"></svg:path></svg:g>`,
+})
+export class AkarIconsAirplayVideoIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[akarIconsAlignLeftIcon],svg[akar-icons-align-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2"><svg:path d="M2 3v18"></svg:path><svg:path stroke-linejoin="round" d="M6 6h16v4H6zm0 8h10v4H6z"></svg:path></svg:g>`,
+})
+export class AkarIconsAlignLeftIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[akarIconsAlignHorizontalCenterIcon],svg[akar-icons-align-horizontal-center-icon]',
   host: {
     role: 'img',
@@ -29,23 +131,6 @@ export class AkarIconsAirIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2"><svg:path d="M12 3v18"></svg:path><svg:path stroke-linejoin="round" d="M16 6h4v4h-4m-8 0H4V6h4m8 8h2v4h-2m-8-4H6v4h2"></svg:path></svg:g>`,
 })
 export class AkarIconsAlignHorizontalCenterIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[akarIconsAlignRightIcon],svg[akar-icons-align-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2"><svg:path d="M22 3v18"></svg:path><svg:path stroke-linejoin="round" d="M2 6h16v4H2zm6 8h10v4H8z"></svg:path></svg:g>`,
-})
-export class AkarIconsAlignRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -7686,101 +7771,16 @@ export class AkarIconsZoomOutIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[akarIconsAlignLeftIcon],svg[akar-icons-align-left-icon]',
+  selector: 'svg[akarIconsAlignRightIcon],svg[akar-icons-align-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2"><svg:path d="M2 3v18"></svg:path><svg:path stroke-linejoin="round" d="M6 6h16v4H6zm0 8h10v4H6z"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2"><svg:path d="M22 3v18"></svg:path><svg:path stroke-linejoin="round" d="M2 6h16v4H2zm6 8h10v4H8z"></svg:path></svg:g>`,
 })
-export class AkarIconsAlignLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[akarIconsAirplayAudioIcon],svg[akar-icons-airplay-audio-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m12 16l6 5H6z"></svg:path><svg:path d="M4 18a9.96 9.96 0 0 1-2-6C2 6.477 6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6"></svg:path><svg:path d="M17.123 15.125a6 6 0 1 0-10.247-.002"></svg:path><svg:path d="M14 12a2 2 0 1 0-4 0"></svg:path></svg:g>`,
-})
-export class AkarIconsAirplayAudioIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[akarIconsAlarmIcon],svg[akar-icons-alarm-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="13" r="9"></svg:circle><svg:path d="M15.5 9.5L12 13m7 6l1 3M5 19l-1 3M2 5l3-3m14 0l3 3M12 4V2"></svg:path></svg:g>`,
-})
-export class AkarIconsAlarmIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[akarIconsAlignBottomIcon],svg[akar-icons-align-bottom-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2"><svg:path d="M21 22H3"></svg:path><svg:path stroke-linejoin="round" d="M6 18V2h4v16zm8 0V8h4v10z"></svg:path></svg:g>`,
-})
-export class AkarIconsAlignBottomIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[akarIconsAirplayVideoIcon],svg[akar-icons-airplay-video-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></svg:path><svg:path d="m12 16l6 5H6z"></svg:path></svg:g>`,
-})
-export class AkarIconsAirplayVideoIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[akarIconsAirpodsIcon],svg[akar-icons-airpods-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-width="2"><svg:path d="M14 7c0 2.21 1.644 4 4 4s4-1.79 4-4s-1.644-4-4-4s-4 1.79-4 4Zm-4 0c0 2.21-1.644 4-4 4S2 9.21 2 7s1.644-4 4-4s4 1.79 4 4Z"></svg:path><svg:path stroke-linecap="round" d="M14 7v12a2 2 0 0 0 2 2v0a2 2 0 0 0 2-2v-8"></svg:path><svg:path d="M14 17h4M6 17h4"></svg:path><svg:path stroke-linecap="round" d="M10 7v12a2 2 0 0 1-2 2v0a2 2 0 0 1-2-2v-8"></svg:path><svg:path d="M20 4a5.41 5.41 0 0 0 0 6M4 4a5.41 5.41 0 0 1 0 6"></svg:path></svg:g>`,
-})
-export class AkarIconsAirpodsIcon {
+export class AkarIconsAlignRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

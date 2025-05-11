@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[gardenLifesaverStroke12Icon],svg[garden-lifesaver-stroke-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor"><svg:circle cx="6" cy="6" r="5.5"></svg:circle><svg:circle cx="6" cy="6" r="2.5"></svg:circle><svg:path d="m8 8l2 2M2 2l2 2m0 4l-2 2m8-8L8 4"></svg:path></svg:g>`,
+})
+export class GardenLifesaverStroke12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[gardenLifesaverStroke16Icon],svg[garden-lifesaver-stroke-16-icon]',
   host: {
     role: 'img',
@@ -8479,23 +8496,6 @@ export class GardenZendesk26Icon {
 })
 export class GardenZendeskFill12Icon {
   readonly viewBox = input("0 0 12 12")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[gardenZendeskFill16Icon],svg[garden-zendesk-fill-16-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.667 0C15.403 0 16 .597 16 1.333v13.334c0 .736-.597 1.333-1.333 1.333H1.333A1.333 1.333 0 0 1 0 14.667V1.333C0 .597.597 0 1.333 0zM7.615 6.348L3 11.5h4.615zm3.077 3.02c-1.214 0-2.217.878-2.302 1.98l-.005.152H13c0-1.173-1.038-2.132-2.308-2.132M13 4.5H8.385v5.152zm-5.385 0H3c0 1.173 1.038 2.132 2.308 2.132c1.214 0 2.217-.878 2.302-1.98z"></svg:path>`,
-})
-export class GardenZendeskFill16Icon {
-  readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
 }

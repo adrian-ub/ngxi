@@ -36,16 +36,16 @@ export class PepiconsPopAirplaneIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pepiconsPopAlarmCircleIcon],svg[pepicons-pop-alarm-circle-icon]',
+  selector: 'svg[pepiconsPopAirplaneCircleFilledIcon],svg[pepicons-pop-airplane-circle-filled-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M13 8.5a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11M5.5 14a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0"></svg:path><svg:path d="M5.793 21.207a1 1 0 0 0 1.414 0l1.5-1.5a1 1 0 1 0-1.414-1.414l-1.5 1.5a1 1 0 0 0 0 1.414m11.5-2.914a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M13 10a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1"></svg:path><svg:path d="M17 14a1 1 0 0 1-1 1h-3a1 1 0 1 1 0-2h3a1 1 0 0 1 1 1M9.332 6.172L5.574 9.76s-.077-.07-.19-.198c-.257-.292-.697-.881-.821-1.601c-.113-.654.035-1.417.818-2.165c.783-.747 1.551-.86 2.2-.717c.713.157 1.281.624 1.561.894c.123.118.19.199.19.199m7.336 0l3.758 3.588s.077-.07.19-.198c.257-.292.697-.881.821-1.601c.113-.654-.035-1.417-.818-2.165c-.783-.747-1.551-.86-2.2-.717c-.713.157-1.281.624-1.561.894c-.123.118-.19.199-.19.199"></svg:path><svg:path d="M13 24c6.075 0 11-4.925 11-11S19.075 2 13 2S2 6.925 2 13s4.925 11 11 11m0 2c7.18 0 13-5.82 13-13S20.18 0 13 0S0 5.82 0 13s5.82 13 13 13"></svg:path></svg:g>`,
+  template: `<svg:g fill="none"><svg:defs><svg:mask id="pepiconsPopAirplaneCircleFilled0"><svg:path fill="#fff" d="M0 0h26v26H0z"></svg:path><svg:path fill="#000" fill-rule="evenodd" d="m13.755 15.996l1.859-1.704l1.472 5.269a1 1 0 0 0 1.643.464c1.579-1.465 2.44-2.82 2.519-4.13c.056-.941-.382-2.74-1.319-5.56l.23-.211c2.249-2.248 2.899-4.208 1.433-5.674c-1.465-1.465-3.426-.816-5.644 1.4l-.24.262c-2.821-.936-4.62-1.374-5.561-1.318c-1.311.078-2.665.94-4.13 2.519a1 1 0 0 0 .464 1.643l5.27 1.472l-1.704 1.859c-1.72-.236-2.798-.338-3.32-.307c-.937.056-1.859.643-2.834 1.694a1 1 0 0 0 .464 1.643l4.653 1.3l.415.414l1.3 4.654a1 1 0 0 0 1.643.464c1.05-.975 1.638-1.897 1.694-2.834c.03-.522-.072-1.6-.307-3.319m-1.739-1.119a1 1 0 0 0-.314.877c.239 1.687.36 2.816.366 3.304l-.788-2.817a1 1 0 0 0-.256-.438l-.785-.786a1 1 0 0 0-.438-.256l-2.818-.787c.488.005 1.619.127 3.305.366a1 1 0 0 0 .878-.314l3.16-3.447a1 1 0 0 0-.469-1.639L8.734 7.51c.599-.46 1.114-.694 1.532-.719c.642-.038 2.515.439 5.418 1.424a1 1 0 0 0 1.058-.271l.65-.709c1.507-1.505 2.366-1.79 2.786-1.37s.135 1.279-1.402 2.816l-.677.62a1 1 0 0 0-.271 1.058c.985 2.902 1.462 4.776 1.423 5.418c-.024.417-.259.933-.718 1.532l-1.431-5.123a1 1 0 0 0-1.64-.468z" clip-rule="evenodd"></svg:path></svg:mask></svg:defs><svg:circle cx="13" cy="13" r="13" fill="currentColor" mask="url(#pepiconsPopAirplaneCircleFilled0)"></svg:circle></svg:g>`,
 })
-export class PepiconsPopAlarmCircleIcon {
+export class PepiconsPopAirplaneCircleFilledIcon {
   readonly viewBox = input("0 0 26 26")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,23 +70,6 @@ export class PepiconsPopAirplaneCircleOffIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pepiconsPopAirplaneCircleFilledIcon],svg[pepicons-pop-airplane-circle-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:defs><svg:mask id="pepiconsPopAirplaneCircleFilled0"><svg:path fill="#fff" d="M0 0h26v26H0z"></svg:path><svg:path fill="#000" fill-rule="evenodd" d="m13.755 15.996l1.859-1.704l1.472 5.269a1 1 0 0 0 1.643.464c1.579-1.465 2.44-2.82 2.519-4.13c.056-.941-.382-2.74-1.319-5.56l.23-.211c2.249-2.248 2.899-4.208 1.433-5.674c-1.465-1.465-3.426-.816-5.644 1.4l-.24.262c-2.821-.936-4.62-1.374-5.561-1.318c-1.311.078-2.665.94-4.13 2.519a1 1 0 0 0 .464 1.643l5.27 1.472l-1.704 1.859c-1.72-.236-2.798-.338-3.32-.307c-.937.056-1.859.643-2.834 1.694a1 1 0 0 0 .464 1.643l4.653 1.3l.415.414l1.3 4.654a1 1 0 0 0 1.643.464c1.05-.975 1.638-1.897 1.694-2.834c.03-.522-.072-1.6-.307-3.319m-1.739-1.119a1 1 0 0 0-.314.877c.239 1.687.36 2.816.366 3.304l-.788-2.817a1 1 0 0 0-.256-.438l-.785-.786a1 1 0 0 0-.438-.256l-2.818-.787c.488.005 1.619.127 3.305.366a1 1 0 0 0 .878-.314l3.16-3.447a1 1 0 0 0-.469-1.639L8.734 7.51c.599-.46 1.114-.694 1.532-.719c.642-.038 2.515.439 5.418 1.424a1 1 0 0 0 1.058-.271l.65-.709c1.507-1.505 2.366-1.79 2.786-1.37s.135 1.279-1.402 2.816l-.677.62a1 1 0 0 0-.271 1.058c.985 2.902 1.462 4.776 1.423 5.418c-.024.417-.259.933-.718 1.532l-1.431-5.123a1 1 0 0 0-1.64-.468z" clip-rule="evenodd"></svg:path></svg:mask></svg:defs><svg:circle cx="13" cy="13" r="13" fill="currentColor" mask="url(#pepiconsPopAirplaneCircleFilled0)"></svg:circle></svg:g>`,
-})
-export class PepiconsPopAirplaneCircleFilledIcon {
-  readonly viewBox = input("0 0 26 26")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[pepiconsPopAirplaneOffIcon],svg[pepicons-pop-airplane-off-icon]',
   host: {
     role: 'img',
@@ -98,6 +81,40 @@ export class PepiconsPopAirplaneCircleFilledIcon {
 })
 export class PepiconsPopAirplaneOffIcon {
   readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsPopAlarmIcon],svg[pepicons-pop-alarm-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M10 5.5a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11M2.5 11a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0"></svg:path><svg:path d="M2.793 18.207a1 1 0 0 0 1.414 0l1.5-1.5a1 1 0 1 0-1.414-1.414l-1.5 1.5a1 1 0 0 0 0 1.414m11.5-2.914a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M10 7a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1"></svg:path><svg:path d="M14 11a1 1 0 0 1-1 1h-3a1 1 0 1 1 0-2h3a1 1 0 0 1 1 1M6.332 3.172L2.574 6.76s-.077-.07-.19-.198c-.257-.292-.697-.881-.821-1.601c-.113-.654.035-1.417.818-2.165c.783-.747 1.551-.86 2.2-.717c.713.157 1.281.624 1.561.894c.123.118.19.199.19.199m7.336 0l3.758 3.588s.077-.07.19-.198c.257-.292.697-.881.821-1.601c.113-.654-.035-1.417-.818-2.165c-.783-.747-1.551-.86-2.2-.717c-.713.157-1.281.624-1.561.894c-.123.118-.19.199-.19.199"></svg:path></svg:g>`,
+})
+export class PepiconsPopAlarmIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsPopAlarmCircleIcon],svg[pepicons-pop-alarm-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M13 8.5a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11M5.5 14a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0"></svg:path><svg:path d="M5.793 21.207a1 1 0 0 0 1.414 0l1.5-1.5a1 1 0 1 0-1.414-1.414l-1.5 1.5a1 1 0 0 0 0 1.414m11.5-2.914a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M13 10a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1"></svg:path><svg:path d="M17 14a1 1 0 0 1-1 1h-3a1 1 0 1 1 0-2h3a1 1 0 0 1 1 1M9.332 6.172L5.574 9.76s-.077-.07-.19-.198c-.257-.292-.697-.881-.821-1.601c-.113-.654.035-1.417.818-2.165c.783-.747 1.551-.86 2.2-.717c.713.157 1.281.624 1.561.894c.123.118.19.199.19.199m7.336 0l3.758 3.588s.077-.07.19-.198c.257-.292.697-.881.821-1.601c.113-.654-.035-1.417-.818-2.165c-.783-.747-1.551-.86-2.2-.717c-.713.157-1.281.624-1.561.894c-.123.118-.19.199-.19.199"></svg:path><svg:path d="M13 24c6.075 0 11-4.925 11-11S19.075 2 13 2S2 6.925 2 13s4.925 11 11 11m0 2c7.18 0 13-5.82 13-13S20.18 0 13 0S0 5.82 0 13s5.82 13 13 13"></svg:path></svg:g>`,
+})
+export class PepiconsPopAlarmCircleIcon {
+  readonly viewBox = input("0 0 26 26")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -132,23 +149,6 @@ export class PepiconsPopAlarmCircleOffIcon {
 })
 export class PepiconsPopAlarmCircleFilledIcon {
   readonly viewBox = input("0 0 26 26")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pepiconsPopAlarmIcon],svg[pepicons-pop-alarm-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M10 5.5a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11M2.5 11a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0"></svg:path><svg:path d="M2.793 18.207a1 1 0 0 0 1.414 0l1.5-1.5a1 1 0 1 0-1.414-1.414l-1.5 1.5a1 1 0 0 0 0 1.414m11.5-2.914a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414M10 7a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1"></svg:path><svg:path d="M14 11a1 1 0 0 1-1 1h-3a1 1 0 1 1 0-2h3a1 1 0 0 1 1 1M6.332 3.172L2.574 6.76s-.077-.07-.19-.198c-.257-.292-.697-.881-.821-1.601c-.113-.654.035-1.417.818-2.165c.783-.747 1.551-.86 2.2-.717c.713.157 1.281.624 1.561.894c.123.118.19.199.19.199m7.336 0l3.758 3.588s.077-.07.19-.198c.257-.292.697-.881.821-1.601c.113-.654-.035-1.417-.818-2.165c-.783-.747-1.551-.86-2.2-.717c-.713.157-1.281.624-1.561.894c-.123.118-.19.199-.19.199"></svg:path></svg:g>`,
-})
-export class PepiconsPopAlarmIcon {
-  readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
 }

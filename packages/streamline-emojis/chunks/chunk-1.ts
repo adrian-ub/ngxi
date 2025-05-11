@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[streamlineEmojisOpenBookIcon],svg[streamline-emojis-open-book-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#00b8f0" d="M43 10.41L26 9.6v1.57h-4V9.6l-17 .81a2 2 0 0 0-1.9 2v27a2 2 0 0 0 2.13 2l13.44-.81a1 1 0 0 1 .95.54c.26.66 1 .91 1.89.91h5c.88 0 1.63-.25 1.89-.91a1 1 0 0 1 .95-.54l13.44.81a2 2 0 0 0 2.13-2v-27a2 2 0 0 0-1.92-2"></svg:path><svg:path fill="#4acfff" d="M43 10.41L26 9.6v1.57h-4V9.6l-17 .81a2 2 0 0 0-1.9 2v3.5a2 2 0 0 1 1.9-2L24 13l19 .91a2 2 0 0 1 1.9 2V12.4a2 2 0 0 0-1.9-1.99"></svg:path><svg:path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M43 10.41L26 9.6v1.57h-4V9.6l-17 .81a2 2 0 0 0-1.9 2v27a2 2 0 0 0 2.13 2l13.44-.81a1 1 0 0 1 .95.54c.26.66 1 .91 1.89.91h5c.88 0 1.63-.25 1.89-.91a1 1 0 0 1 .95-.54l13.44.81a2 2 0 0 0 2.13-2v-27a2 2 0 0 0-1.92-2"></svg:path><svg:path fill="#627b8c" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M21 36h6v2a1.54 1.54 0 0 1-1.54 1.54h-2.92A1.54 1.54 0 0 1 21 38z"></svg:path><svg:path fill="#45413c" d="M7 43.5a17 1.5 0 1 0 34 0a17 1.5 0 1 0-34 0" opacity=".15"></svg:path><svg:path fill="#fffef2" d="m8.59 9.5l-2.16 2.74a2.05 2.05 0 0 0-.34 1.13V39l2.5-3.67Zm30.82 0l2.16 2.74a2.05 2.05 0 0 1 .34 1.13V39l-2.5-3.67Z"></svg:path><svg:path fill="#fff" d="M6.43 12.24a2.05 2.05 0 0 0-.34 1.13v3.5a2.05 2.05 0 0 1 .34-1.13L8.59 13V9.5Zm35.14 0L39.41 9.5V13l2.16 2.74a2.05 2.05 0 0 1 .34 1.13v-3.5a2.05 2.05 0 0 0-.34-1.13"></svg:path><svg:path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="m8.59 9.5l-2.16 2.74a2.05 2.05 0 0 0-.34 1.13V39l2.5-3.67Zm30.82 0l2.16 2.74a2.05 2.05 0 0 1 .34 1.13V39l-2.5-3.67Z"></svg:path><svg:path fill="#fffef2" d="M24 37V11a3 3 0 0 0-3-3l-11.5.92a1.52 1.52 0 0 0-.91.58v29l12.63-.4A3.42 3.42 0 0 1 24 37m3-29a3 3 0 0 0-3 3v26a3.42 3.42 0 0 1 2.78 1.1l12.63.4v-29a1.52 1.52 0 0 0-.91-.58Z"></svg:path><svg:path fill="#fff" d="m21 8l-11.5.92a1.52 1.52 0 0 0-.91.58v2.92a1 1 0 0 1 .91-1L21 10.5a3 3 0 0 1 3 3V11a3 3 0 0 0-3-3m17.5.92L27 8a3 3 0 0 0-3 3v2.5a3 3 0 0 1 3-3l11.5.92a1 1 0 0 1 .91 1V9.5a1.52 1.52 0 0 0-.91-.58"></svg:path><svg:path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M24 37V11a3 3 0 0 0-3-3l-11.5.92a1.52 1.52 0 0 0-.91.58v29l12.63-.4A3.42 3.42 0 0 1 24 37m3-29a3 3 0 0 0-3 3v26a3.42 3.42 0 0 1 2.78 1.1l12.63.4v-29a1.52 1.52 0 0 0-.91-.58Z"></svg:path><svg:path fill="#fffce5" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M24 37a3 3 0 0 0-3-2.5l-12.41.83L6.09 39l15.09-.83A3.34 3.34 0 0 1 24 37m2.82 1.17l15.09.83l-2.5-3.67L27 34.5a3 3 0 0 0-2.95 2.5a3.34 3.34 0 0 1 2.77 1.17"></svg:path><svg:path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="m20.5 11.5l-9 .86m9 2.97l-9 .86m9 2.97l-9 .85m9 2.98l-9 .85m9 2.97l-9 .86m9 2.97l-9 .86m16-20l9 .86m-9 2.97l9 .86m-9 2.97l9 .85m-9 2.98l9 .85m-9 2.97l9 .86m-9 2.97l9 .86"></svg:path>`,
+})
+export class StreamlineEmojisOpenBookIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[streamlineEmojisOpenFileFolderIcon],svg[streamline-emojis-open-file-folder-icon]',
   host: {
     role: 'img',
@@ -4857,23 +4874,6 @@ export class StreamlineEmojisZipperMouthFaceIcon {
   template: `<svg:path fill="#45413c" d="M10.17 42a15 1.5 0 1 0 30 0a15 1.5 0 1 0-30 0" opacity=".15"></svg:path><svg:path fill="#009fd9" d="M45 7.64H28.62a1.43 1.43 0 0 0-1.43 1.43v1.19a1.43 1.43 0 0 0 1.43 1.42h11.47L28 23.83a2.85 2.85 0 0 0-.83 2v1.44a1.42 1.42 0 0 0 1.43 1.42H45a1.41 1.41 0 0 0 1.42-1.42v-1.18A1.42 1.42 0 0 0 45 24.66H33.55l12.07-12.14a2.86 2.86 0 0 0 .82-2V9.07A1.42 1.42 0 0 0 45 7.64"></svg:path><svg:path fill="#00b8f0" d="M45 7.64H28.62a1.43 1.43 0 0 0-1.43 1.43v1.19a1.4 1.4 0 0 0 .1.5a1.41 1.41 0 0 1 1.33-.92H45A1.43 1.43 0 0 1 46.41 11a3 3 0 0 0 0-.44V9.07A1.42 1.42 0 0 0 45 7.64"></svg:path><svg:path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M45 7.64H28.62a1.43 1.43 0 0 0-1.43 1.43v1.19a1.43 1.43 0 0 0 1.43 1.42h11.47L28 23.83a2.85 2.85 0 0 0-.83 2v1.44a1.42 1.42 0 0 0 1.43 1.42H45a1.41 1.41 0 0 0 1.42-1.42v-1.18A1.42 1.42 0 0 0 45 24.66H33.55l12.07-12.14a2.86 2.86 0 0 0 .82-2V9.07A1.42 1.42 0 0 0 45 7.64"></svg:path><svg:path fill="#009fd9" d="M24.05 19.59H13.79a1.14 1.14 0 0 0-1.14 1.14v.95a1.14 1.14 0 0 0 1.14 1.14h6.32l-6.8 6.86a2.3 2.3 0 0 0-.66 1.61v1.15a1.14 1.14 0 0 0 1.14 1.14h10.26a1.14 1.14 0 0 0 1.14-1.14v-.95a1.14 1.14 0 0 0-1.14-1.14h-6.32l6.8-6.87a2.23 2.23 0 0 0 .66-1.6v-1.15a1.14 1.14 0 0 0-1.14-1.14"></svg:path><svg:path fill="#00b8f0" d="M24.05 19.59H13.79a1.14 1.14 0 0 0-1.14 1.14v.95a1.3 1.3 0 0 0 .07.4a1.15 1.15 0 0 1 1.07-.74h10.26a1.15 1.15 0 0 1 1.12.89v-1.5a1.14 1.14 0 0 0-1.12-1.14"></svg:path><svg:path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M24.05 19.59H13.79a1.14 1.14 0 0 0-1.14 1.14v.95a1.14 1.14 0 0 0 1.14 1.14h6.32l-6.8 6.86a2.3 2.3 0 0 0-.66 1.61v1.15a1.14 1.14 0 0 0 1.14 1.14h10.26a1.14 1.14 0 0 0 1.14-1.14v-.95a1.14 1.14 0 0 0-1.14-1.14h-6.32l6.8-6.87a2.23 2.23 0 0 0 .66-1.6v-1.15a1.14 1.14 0 0 0-1.14-1.14"></svg:path><svg:path fill="#009fd9" d="M10.09 30.38v-1a1 1 0 0 0-1-1H2.53a1 1 0 0 0-1 1v.82a1 1 0 0 0 1 1h3.22l-3.38 3.42A1.9 1.9 0 0 0 1.8 36v1a1 1 0 0 0 1 1h6.32a1 1 0 0 0 1-1v-.82a1 1 0 0 0-1-1h-3l3.38-3.44a1.9 1.9 0 0 0 .59-1.36"></svg:path><svg:path fill="#00b8f0" d="M9.12 28.42H2.53a1 1 0 0 0-1 1v.82a.9.9 0 0 0 .06.34a1 1 0 0 1 .91-.63h6.62a1 1 0 0 1 1 .76v-1.3a1 1 0 0 0-1-.99"></svg:path><svg:path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M9.12 28.42H2.53a1 1 0 0 0-1 1v.81a1 1 0 0 0 1 1h3.22l-3.38 3.39A1.9 1.9 0 0 0 1.8 36v1a1 1 0 0 0 1 1h6.32a1 1 0 0 0 1-1v-.82a1 1 0 0 0-1-1h-3l3.38-3.44a1.9 1.9 0 0 0 .57-1.37v-1a1 1 0 0 0-.95-.95"></svg:path>`,
 })
 export class StreamlineEmojisZzzIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineEmojisAnchorIcon],svg[streamline-emojis-anchor-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#45413c" d="M12.5 44.5a11.5 1.5 0 1 0 23 0a11.5 1.5 0 1 0-23 0" opacity=".15"></svg:path><svg:path fill="#8ca4b8" d="m37.4 37.76l-1.23-7.66a.46.46 0 0 0-.72-.29l-6.18 4.68a.43.43 0 0 0 .12.75l2.1.84a9.11 9.11 0 0 1-9.95 4.55L28 24.46L31.87 26a.68.68 0 0 0 .89-.36l.61-1.54a.66.66 0 0 0-.39-.87l-3.84-1.54l.86-2.14a4.66 4.66 0 0 0 4.49-2.87a4.83 4.83 0 0 0-9-3.59a4.66 4.66 0 0 0 1.26 5.18l-.85 2.13l-3.8-1.54a.68.68 0 0 0-.89.36l-.62 1.54a.67.67 0 0 0 .39.87l3.85 1.54l-6.49 16.17a9.09 9.09 0 0 1-4.05-10.16l2.1.84a.43.43 0 0 0 .6-.45l-1.23-7.66a.46.46 0 0 0-.72-.29L8.86 26.3a.43.43 0 0 0 .12.75l1.78.72a12.91 12.91 0 0 0 7.76 15.75A12.9 12.9 0 0 0 35 37.5l1.79.71a.43.43 0 0 0 .61-.45m-6.67-24.67a1.94 1.94 0 1 1-2.59 1.05a2 2 0 0 1 2.59-1.05"></svg:path><svg:path fill="#fff" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M40 29.23a1.75 1.75 0 1 0 3.5 0a1.75 1.75 0 1 0-3.5 0M2.2 10.44a2.25 2.25 0 1 0 4.5 0a2.25 2.25 0 1 0-4.5 0m3 9.5a1.75 1.75 0 1 0 3.5 0a1.75 1.75 0 1 0-3.5 0M9.45 4.69a1.75 1.75 0 1 0 3.5 0a1.75 1.75 0 1 0-3.5 0m32.3 15.29a2.25 2.25 0 1 0 4.5 0a2.25 2.25 0 1 0-4.5 0"></svg:path><svg:path fill="#627b8c" d="M21.45 41.9a1 1 0 0 0 .73.49a10.16 10.16 0 0 0 10-4.72a1 1 0 0 0 .12-.85a1 1 0 0 0-.58-.64l-.23-.09a9.12 9.12 0 0 1-9.95 4.54l-.16.39a1 1 0 0 0 .07.88M33 23.23l-3.84-1.54l-.25.63a1 1 0 0 0 .55 1.29L33 25.06l.39-1a.68.68 0 0 0-.39-.83m-3.61 12.01l1.24.5a.43.43 0 0 1-.05-.71l4.87-3.39a2 2 0 0 1 .9-.44l-.18-1.1a.46.46 0 0 0-.72-.29l-6.18 4.68a.43.43 0 0 0 .12.75"></svg:path><svg:path fill="#c0dceb" d="m9 27.05l.86.35L15 23.46a1.23 1.23 0 0 1 .91-.37l-.19-1.18a.46.46 0 0 0-.72-.29l-6.14 4.69a.43.43 0 0 0 .14.74m9.59 12.45A9.25 9.25 0 0 1 14 31.3a9.07 9.07 0 0 0 3 9.17a1 1 0 0 0 .89.2a1 1 0 0 0 .7-1.17M16.73 30h-.27a.42.42 0 0 0 .27 0M21 21.63l.23-.58a.68.68 0 0 1 .89-.36l2.3.89a1 1 0 0 0 1.27-.58l.24-.62l-3.83-1.52a.68.68 0 0 0-.89.36l-.62 1.54a.68.68 0 0 0 .41.87m4.53-6.71a4.73 4.73 0 0 1 6.21-2.51a4.86 4.86 0 0 1 3 3.51a4.84 4.84 0 0 0-9.19-2.83a4.44 4.44 0 0 0-.24 2.51a7 7 0 0 1 .22-.68"></svg:path><svg:path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="m37.4 37.76l-1.23-7.66a.46.46 0 0 0-.72-.29l-6.18 4.68a.43.43 0 0 0 .12.75l2.1.84a9.11 9.11 0 0 1-9.95 4.55L28 24.46L31.87 26a.68.68 0 0 0 .89-.36l.61-1.54a.66.66 0 0 0-.39-.87l-3.84-1.54l.86-2.14a4.66 4.66 0 0 0 4.49-2.87a4.83 4.83 0 0 0-9-3.59a4.66 4.66 0 0 0 1.26 5.18l-.85 2.13l-3.8-1.54a.68.68 0 0 0-.89.36l-.62 1.54a.67.67 0 0 0 .39.87l3.85 1.54l-6.49 16.17a9.09 9.09 0 0 1-4.05-10.16l2.1.84a.43.43 0 0 0 .6-.45l-1.23-7.66a.46.46 0 0 0-.72-.29L8.86 26.3a.43.43 0 0 0 .12.75l1.78.72a12.91 12.91 0 0 0 7.76 15.75A12.9 12.9 0 0 0 35 37.5l1.79.71a.43.43 0 0 0 .61-.45m-6.67-24.67a1.94 1.94 0 1 1-2.59 1.05a2 2 0 0 1 2.59-1.05"></svg:path>`,
-})
-export class StreamlineEmojisAnchorIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

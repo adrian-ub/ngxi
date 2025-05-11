@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsNoPhotographyRoundedIcon],svg[material-symbols-no-photography-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M19.775 22.575L18.175 21H4q-.825 0-1.412-.587T2 19V7q0-.825.588-1.412T4 5h1.025v2.85L1.375 4.2q-.3-.3-.3-.712t.3-.713t.713-.3t.712.3l18.4 18.4q.3.3.3.7t-.3.7t-.712.3t-.713-.3m1.6-4.95q-.275.125-.55.075t-.525-.3l-3.825-3.825q.125-1.05-.213-2.037T15.176 9.8q-.725-.725-1.713-1.062t-2.037-.213L8.175 5.3q-.15-.15-.213-.325T7.9 4.6t.063-.362t.187-.313l.25-.275q.275-.3.663-.475T9.875 3h4.25q.425 0 .813.175t.662.475L16.85 5H20q.825 0 1.413.588T22 7v9.7q0 .35-.175.575t-.45.35M12 17.5q.575 0 1.113-.125t1.037-.4L8.025 10.85q-.275.5-.4 1.038T7.5 13q0 1.875 1.313 3.188T12 17.5m0-2q-1.05 0-1.775-.725T9.5 13q0-.5.188-.962t.537-.813l3.55 3.55q-.35.35-.812.538T12 15.5"></svg:path>`,
-})
-export class MaterialSymbolsNoPhotographyRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsNoPhotographySharpIcon],svg[material-symbols-no-photography-sharp-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsPauseRoundedIcon {
   template: `<svg:path fill="currentColor" d="M3 20q-.825 0-1.412-.587T1 18V7h2v11h17v2zm4-4q-.825 0-1.412-.587T5 14V6q0-.825.588-1.412T7 4h14q.825 0 1.413.588T23 6v8q0 .825-.587 1.413T21 16zm2-2q0-.825-.587-1.412T7 12v2zm10 0h2v-2q-.825 0-1.412.588T19 14m-5-1q1.25 0 2.125-.875T17 10t-.875-2.125T14 7t-2.125.875T11 10t.875 2.125T14 13M7 8q.825 0 1.413-.587T9 6H7zm14 0V6h-2q0 .825.588 1.413T21 8"></svg:path>`,
 })
 export class MaterialSymbolsPaymentsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsPaymentsOutlineIcon],svg[material-symbols-payments-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14 13q-1.25 0-2.125-.875T11 10t.875-2.125T14 7t2.125.875T17 10t-.875 2.125T14 13m-7 3q-.825 0-1.412-.587T5 14V6q0-.825.588-1.412T7 4h14q.825 0 1.413.588T23 6v8q0 .825-.587 1.413T21 16zm2-2h10q0-.825.588-1.412T21 12V8q-.825 0-1.412-.587T19 6H9q0 .825-.587 1.413T7 8v4q.825 0 1.413.588T9 14m11 6H3q-.825 0-1.412-.587T1 18V7h2v11h17zM7 14V6z"></svg:path>`,
+})
+export class MaterialSymbolsPaymentsOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

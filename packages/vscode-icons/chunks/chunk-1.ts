@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[vscodeIconsFileTypeLightSolidityIcon],svg[vscode-icons-file-type-light-solidity-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="m20.477 2l-4.5 8h-9l4.5-8z" opacity=".45"></svg:path><svg:path d="M15.975 10h9l-4.5-8h-9Z" opacity=".6"></svg:path><svg:path d="m11.477 18l4.5-8l-4.5-8l-4.5 8Z" opacity=".8"></svg:path><svg:path d="m11.52 30l4.5-8h9l-4.5 8z" opacity=".45"></svg:path><svg:path d="M16.022 22h-9l4.5 8h9Z" opacity=".6"></svg:path><svg:path d="m20.52 14l-4.5 8l4.5 8l4.5-8Z" opacity=".8"></svg:path>`,
+})
+export class VscodeIconsFileTypeLightSolidityIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeLightSpinIcon],svg[vscode-icons-file-type-light-spin-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M11.012 2.002h2.9v27.997h-2.9z"></svg:path><svg:path d="M16 4.326A11.576 11.637 0 0 0 4.424 15.965A11.576 11.637 0 0 0 16 27.602a11.576 11.637 0 0 0 11.576-11.637A11.576 11.637 0 0 0 16 4.325m.035 2.797a8.831 8.878 0 0 1 8.832 8.877a8.831 8.878 0 0 1-8.832 8.879a8.831 8.878 0 0 1-8.83-8.88a8.831 8.878 0 0 1 8.83-8.876"></svg:path>`,
+})
+export class VscodeIconsFileTypeLightSpinIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vscodeIconsFileTypeLightStylelintIcon],svg[vscode-icons-file-type-light-stylelint-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class VscodeIconsFileTypeWallabyIcon {
   template: `<svg:path fill="#F2C57E" d="m12.8 25.2l-.9 3.8s8.5.2 12-2.7s2.7-2.7 2.7-2.7L22.9 20z"></svg:path><svg:path fill="#BD704B" d="M15.3 25.7s.3 2.8 1.2 3.3c0 0-4.5.4-4.4-.9l.7-2.9z"></svg:path><svg:path fill="#F2C57E" d="M12.2 18.8s.8 1.1 1 2.9s-1.9 3.3 2 3.9c3.4.6 10.6-2.6 8.3-4.9c-1.5-1.5-2.5-2.7-1.9-5.6c.7-2.9-3.3-4.7-3.3-4.7z"></svg:path><svg:path fill="#BD704B" d="M21 17.9s1.3 3.3 5.4 5.8l.4-.7s-3.5-1-5.3-5.1s-.5.1-.5 0M13.7 6.2s-2.4 1-1.3 8.4c.4 4-1.3 3.7-1.7 3.3s1.1-2.4.3-3.1s-1.9-.1-2.9-2.1c-1.3-2.6.2-1.5 1.4-3.8c.8-1.7 1.5-2.6 2.2-2.5c.8.2 1.3-.8 2-.2"></svg:path><svg:g fill="#F2C57E"><svg:path d="M8.9 14.7s.1 1.8-.2 2.7c-.6 1.4.8 3.4 2.7 1.3s-2.4-4-2.5-4"></svg:path><svg:path d="M18.7 6.7s-3.6-1.9-6.6.2s-.6 1.8-2.4 4.5s-.4 8.6 5.4 8.8s5.6-10.8 5.6-10.8s-.7-2.5-2-2.7"></svg:path></svg:g><svg:path fill="#BD704B" d="M17.4 18.8s-1.8 1.6-1.7 2.7c.1 1 4.4.8.6 1.9c-1 .3-1 2.1-.2 2.3c.8.3-3.2-.4-3.2-1.7c.1-1.3.6-3.7-.7-4.6c-.1.1 3.3 1.2 5.2-.6"></svg:path><svg:path fill="#AE4747" d="M12.8 23.9s3.5 1.7 7.1-.3c2.7-1.4 3.5-3 3.3-3.4c0 0 .7 0 1.3.9c.5.7-.3 2.8-4.2 4.5c-3.7 1.5-7 .6-7.7-.1c-.6-.4.2-1.6.2-1.6"></svg:path><svg:path fill="#3F2419" d="M11.4 10.8c-.2 0-.4-.2-.4-.4v-1c0-.2.2-.4.4-.4s.4.2.4.4v1c0 .2-.2.4-.4.4"></svg:path><svg:path fill="#F2C57E" d="M12.5 9.7s-3.1 2.2-4.3 2.7s-1 1.8.6 3.1s6.2-2.2 3.7-5.8"></svg:path><svg:path fill="#BD704B" d="M8 14.7s1.1 1.3.5 2.6c-.5.9 0 2.7 1.8 2.2c0 0-2.1.1-1.2-2.1c.2-.8.2-2.1-1.1-2.7m9.9-8.3s3.4 1.3 2.1 8.8c-.5 4 1.5 3.6 2 3.4c.5-.4.5-1.7 1.4-2.2c.9-.7 3.3-2.8 2.1-4.9s-2.3-1.7-3.2-3c-.7-1.2-1.1-1.4-2-1.4c-.6-.2-1.5-1.2-2.4-.7"></svg:path><svg:path fill="#3F2419" d="M16.9 11.2c-.2 0-.5-.2-.5-.5v-1c0-.2.2-.5.5-.5c.2 0 .5.2.5.5v1.1c0 .3-.2.4-.5.4"></svg:path><svg:g fill="#BD704B"><svg:path d="M16.2 8.9s-1-.6-.2-1c1.1-.7 2.3.4 2.5.9c0 0-1.3-1.2-2.3-.7c-.5.4 0 .8 0 .8m-4.4-.8c0-.1-.1-.2-.2-.2c-.1-.1-.4-.1-.6-.1s-.3.2-.4.3c.1-.2.2-.4.5-.6c.1-.1.2-.1.4-.1s.5.1.7.2s.3.4.3.7c-.1.3-.2.5-.4.6c-.1 0-.1.1-.1 0v-.2q.15-.15 0-.3c-.1-.1-.1-.2-.2-.3m-1.6 8.8s1 3.5 4.9 2.6c3.5-.8 4-3.8 4-3.8c.2.7-.7 4.8-5.5 4.4c-3.5-.3-3.4-3.2-3.4-3.2"></svg:path><svg:path d="M10.9 18.6s-.1 1.4-2.1.7c0 0 1 1.1 2.2-.1c.5-.6-.1-.6-.1-.6m-3.1-5c-.2-.1-.2-.5-.1-.7c.2-.2.6-.4.8-.6c1.5-.7 3-1.5 4.1-2.8c0 0-3.3 2.2-4.9 2.9c-.9.3.1 1.2.1 1.2"></svg:path></svg:g><svg:path fill="#AE4747" d="M7.4 12.9c-.6.6.3 2.1 1.3 2.5c1.1.6 2.9-1.5 2.5-2.1c-.2-.7-2.7-1.4-3.8-.4"></svg:path><svg:path fill="#6A2525" d="M9.6 14.7c-.1-.1-.1-.4 0-.5l.1-.1c0-.1.1-.1.1-.1c.4-.1.8.1 1.1.5c.2.2.1.5-.1.6c-.3.1-.7.2-1 .1c0-.1-.1-.3-.2-.5m-1.2 0c.1-.1.1-.4 0-.5l-.1-.1c0-.1-.1-.1-.1-.1c-.3-.1-.7.1-.9.5c-.3.2-.2.5 0 .6s.6.2.7.1c.3 0 .4-.3.4-.5"></svg:path><svg:path fill="#AE4747" d="M16 30C8.3 30 2 23.7 2 16S8.3 2 16 2s14 6.3 14 14s-6.3 14-14 14m0-26.1C9.4 3.9 3.9 9.4 3.9 16S9.4 28.1 16 28.1S28.1 22.6 28.1 16S22.7 3.9 16 3.9"></svg:path><svg:g fill="#BD704B"><svg:path d="M12.1 6.6s4.2-1.8 7.4.9c0 0-.1-1.2-2.4-1.8c-1.5-.2-4.3-.2-5 .9"></svg:path><svg:ellipse cx="11.6" cy="17.2" rx=".3" ry=".2"></svg:ellipse><svg:ellipse cx="13.5" cy="18.1" rx=".3" ry=".2"></svg:ellipse><svg:ellipse cx="15.1" cy="18.1" rx=".3" ry=".2"></svg:ellipse><svg:ellipse cx="14.3" cy="18.9" rx=".3" ry=".2"></svg:ellipse><svg:ellipse cx="12.3" cy="18.4" rx=".3" ry=".2"></svg:ellipse></svg:g>`,
 })
 export class VscodeIconsFileTypeWallyIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeWasmIcon],svg[vscode-icons-file-type-wasm-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#654ff0" d="M19.153 2.35v.15a3.2 3.2 0 1 1-6.4 0v-.15H2v27.919h27.919V2.35Z"></svg:path><svg:path fill="#fff" d="M8.485 17.4h1.85l1.265 6.723h.023L13.14 17.4h1.731l1.371 6.81h.027l1.44-6.81h1.815l-2.358 9.885h-1.837l-1.36-6.728h-.036l-1.456 6.728h-1.87Zm13.124 0h2.917l2.9 9.885h-1.911l-.63-2.2h-3.323l-.486 2.2h-1.859Zm1.11 2.437l-.807 3.627h2.512l-.924-3.632Z"></svg:path>`,
-})
-export class VscodeIconsFileTypeWasmIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeWatchmanconfigIcon],svg[vscode-icons-file-type-watchmanconfig-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:ellipse cx="16" cy="16.001" fill="#fff" rx="14.438" ry="14.925"></svg:ellipse><svg:path fill="#4356e6" d="m4.712 17.65l.014-.014l.014-.014q.489-.482.967-.964c.221-.214.435-.436.649-.65c-.214-.214-.435-.428-.649-.65a126 126 0 0 0-.967-.964l-.014-.014l-.014-.014q-.466-.505-.933-1q-.81-.867-1.589-1.714a15.46 15.46 0 0 0 0 8.727q.779-.846 1.589-1.714c.311-.351.621-.68.933-1.015m25.097-6.014q-.779.846-1.589 1.714q-.466.495-.933 1l-.014.014l-.014.014q-.489.482-.967.964c-.221.214-.435.436-.649.65c.214.214.435.428.649.65q.478.482.967.964l.014.014l.014.014q.466.505.933 1q.81.867 1.589 1.714a15.4 15.4 0 0 0 0-8.713Zm-4.974 5.157c-3.019 2.964-5.893 5.456-8.663 5.456h-.345c-2.77 0-5.644-2.492-8.663-5.456c-.546.543-1.1 1.1-1.651 1.65c-.981 1.057-1.983 2.107-2.908 3.135A14.46 14.46 0 0 0 16 30.926a14.46 14.46 0 0 0 13.395-9.348c-.926-1.028-1.92-2.078-2.908-3.135a161 161 0 0 0-1.652-1.65m-17.67-1.586c3.019-2.964 5.893-5.456 8.663-5.456h.345c2.77 0 5.644 2.492 8.663 5.456c.546-.543 1.1-1.1 1.651-1.65c.981-1.057 1.983-2.107 2.908-3.135A14.46 14.46 0 0 0 16 1.074a14.46 14.46 0 0 0-13.395 9.348c.926 1.028 1.92 2.078 2.908 3.135c.553.558 1.099 1.108 1.652 1.65"></svg:path><svg:path fill="#4356e6" d="M14.038 14.172a1.14 1.14 0 0 0-.553.993v1.678a1.15 1.15 0 0 0 .553.993l1.409.843a1.06 1.06 0 0 0 1.105 0l1.409-.843a1.14 1.14 0 0 0 .553-.993v-1.679a1.15 1.15 0 0 0-.553-.993l-1.409-.843a1.06 1.06 0 0 0-1.105 0Z"></svg:path><svg:path fill="#4356e6" d="M7.959 16c2.894 2.842 5.641 5.221 8.041 5.1c2.4.121 5.14-2.257 8.041-5.1c-2.894-2.842-5.641-5.221-8.041-5.1c-2.4-.121-5.14 2.258-8.041 5.1m8.594-3.992l2.515 1.5a1.14 1.14 0 0 1 .553.993v3a1.15 1.15 0 0 1-.553.993l-2.515 1.5a1.06 1.06 0 0 1-1.105 0l-2.515-1.5a1.14 1.14 0 0 1-.553-.993v-3a1.15 1.15 0 0 1 .553-.993l2.515-1.5a1.09 1.09 0 0 1 1.105 0"></svg:path>`,
-})
-export class VscodeIconsFileTypeWatchmanconfigIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkSolidInternalExpansionIcon],svg[icon-park-solid-internal-expansion-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path d="M8 42h32a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v32a2 2 0 0 0 2 2"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M42 8a2 2 0 0 0-2-2H28v14h14z" clip-rule="evenodd"></svg:path><svg:path d="m13 35l10-10m0 0v7m0-7h-7"></svg:path></svg:g>`,
+})
+export class IconParkSolidInternalExpansionIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkSolidInternalReductionIcon],svg[icon-park-solid-internal-reduction-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class IconParkSolidRobotIcon {
   template: `<svg:defs><svg:mask id="ipSRobotOne0"><svg:g fill="none"><svg:rect width="30" height="24" x="9" y="18" fill="#fff" stroke="#fff" stroke-width="4" rx="2"></svg:rect><svg:circle cx="17" cy="26" r="2" fill="#000"></svg:circle><svg:circle cx="31" cy="26" r="2" fill="#000"></svg:circle><svg:path fill="#000" d="M20 32a2 2 0 1 0 0 4zm8 4a2 2 0 1 0 0-4zm-8 0h8v-4h-8z"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M24 10v8M4 26v8m40-8v8"></svg:path><svg:circle cx="24" cy="8" r="2" stroke="#fff" stroke-width="4"></svg:circle></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSRobotOne0)"></svg:path>`,
 })
 export class IconParkSolidRobotOneIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkSolidRobotTwoIcon],svg[icon-park-solid-robot-two-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-width="4"><svg:path fill="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M5 35a2 2 0 0 1 2-2h34a2 2 0 0 1 2 2v7H5z"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M42 18h-8l-6-6l6-6h8"></svg:path><svg:circle cx="8" cy="12" r="4" fill="currentColor"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M12 12h16m-18 4l8 17"></svg:path></svg:g>`,
-})
-export class IconParkSolidRobotTwoIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

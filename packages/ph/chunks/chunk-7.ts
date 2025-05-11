@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[phFileDocBoldIcon],svg[ph-file-doc-bold-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M48 140H32a12 12 0 0 0-12 12v56a12 12 0 0 0 12 12h16a40 40 0 0 0 0-80m0 56h-4v-32h4a16 16 0 0 1 0 32m180.3-3.8a12 12 0 0 1 .37 17A34 34 0 0 1 204 220c-19.85 0-36-17.94-36-40s16.15-40 36-40a34 34 0 0 1 24.67 10.83a12 12 0 0 1-17.34 16.6A10.27 10.27 0 0 0 204 164c-6.5 0-12 7.33-12 16s5.5 16 12 16a10.27 10.27 0 0 0 7.33-3.43a12 12 0 0 1 16.97-.37M128 140c-19.85 0-36 17.94-36 40s16.15 40 36 40s36-17.94 36-40s-16.15-40-36-40m0 56c-6.5 0-12-7.33-12-16s5.5-16 12-16s12 7.33 12 16s-5.5 16-12 16m-80-76a12 12 0 0 0 12-12V44h76v48a12 12 0 0 0 12 12h48v4a12 12 0 0 0 24 0V88a12 12 0 0 0-3.51-8.48l-56-56A12 12 0 0 0 152 20H56a20 20 0 0 0-20 20v68a12 12 0 0 0 12 12m112-63l23 23h-23Z"></svg:path>`,
+})
+export class PhFileDocBoldIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phFileDocDuotoneIcon],svg[ph-file-doc-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M208 88h-56V32Z" opacity=".2"></svg:path><svg:path d="M52 144H36a8 8 0 0 0-8 8v56a8 8 0 0 0 8 8h16a36 36 0 0 0 0-72m0 56h-8v-40h8a20 20 0 0 1 0 40m169.53-4.91a8 8 0 0 1 .25 11.31A30.06 30.06 0 0 1 200 216c-17.65 0-32-16.15-32-36s14.35-36 32-36a30.06 30.06 0 0 1 21.78 9.6a8 8 0 0 1-11.56 11.06A14.24 14.24 0 0 0 200 160c-8.82 0-16 9-16 20s7.18 20 16 20a14.18 14.18 0 0 0 10.22-4.66a8 8 0 0 1 11.31-.25M128 144c-17.64 0-32 16.15-32 36s14.36 36 32 36s32-16.15 32-36s-14.36-36-32-36m0 56c-8.82 0-16-9-16-20s7.18-20 16-20s16 9 16 20s-7.18 20-16 20m-80-80a8 8 0 0 0 8-8V40h88v48a8 8 0 0 0 8 8h48v16a8 8 0 0 0 16 0V88a8 8 0 0 0-2.34-5.66l-56-56A8 8 0 0 0 152 24H56a16 16 0 0 0-16 16v72a8 8 0 0 0 8 8m112-68.69L188.69 80H160Z"></svg:path></svg:g>`,
+})
+export class PhFileDocDuotoneIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phFileDocFillIcon],svg[ph-file-doc-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M44 120h168.07a4 4 0 0 0 4-4V88a8 8 0 0 0-2.34-5.66l-56-56a8 8 0 0 0-5.68-2.34H56a16 16 0 0 0-16 16v76a4 4 0 0 0 4 4m108-76l44 44h-44ZM52 144H36a8 8 0 0 0-8 8v56a8 8 0 0 0 8 8h15.33C71 216 87.55 200.52 88 180.87A36 36 0 0 0 52 144m-.49 56H44v-40h8a20 20 0 0 1 20 20.77C71.59 191.59 62.35 200 51.52 200Zm170.67-4.28a8.26 8.26 0 0 1-.73 11.09a30 30 0 0 1-21.4 9.19c-17.65 0-32-16.15-32-36s14.36-36 32-36a30 30 0 0 1 21.4 9.19a8.26 8.26 0 0 1 .73 11.09a8 8 0 0 1-11.9.38a14.2 14.2 0 0 0-10.22-4.66c-8.82 0-16 9-16 20s7.18 20 16 20a14.25 14.25 0 0 0 10.23-4.66a8 8 0 0 1 11.9.38ZM128 144c-17.65 0-32 16.15-32 36s14.37 36 32 36s32-16.15 32-36s-14.31-36-32-36m0 56c-8.83 0-16-9-16-20s7.18-20 16-20s16 9 16 20s-7.14 20-16 20"></svg:path>`,
+})
+export class PhFileDocFillIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phFileDocLightIcon],svg[ph-file-doc-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M52 146H36a6 6 0 0 0-6 6v56a6 6 0 0 0 6 6h16a34 34 0 0 0 0-68m0 56H42v-44h10a22 22 0 0 1 0 44m168.15-5.46a6 6 0 0 1 .18 8.48A28.06 28.06 0 0 1 200 214c-16.54 0-30-15.25-30-34s13.46-34 30-34a28.06 28.06 0 0 1 20.33 9a6 6 0 0 1-8.66 8.3A16.23 16.23 0 0 0 200 158c-9.93 0-18 9.87-18 22s8.07 22 18 22a16.23 16.23 0 0 0 11.67-5.28a6 6 0 0 1 8.48-.18M128 146c-16.54 0-30 15.25-30 34s13.46 34 30 34s30-15.25 30-34s-13.46-34-30-34m0 56c-9.93 0-18-9.87-18-22s8.07-22 18-22s18 9.87 18 22s-8.07 22-18 22m-80-84a6 6 0 0 0 6-6V40a2 2 0 0 1 2-2h90v50a6 6 0 0 0 6 6h50v18a6 6 0 0 0 12 0V88a6 6 0 0 0-1.76-4.24l-56-56A6 6 0 0 0 152 26H56a14 14 0 0 0-14 14v72a6 6 0 0 0 6 6m110-71.52L193.52 82H158Z"></svg:path>`,
+})
+export class PhFileDocLightIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[phFileDocThinIcon],svg[ph-file-doc-thin-icon]',
   host: {
     role: 'img',
@@ -8427,74 +8495,6 @@ export class PhFolderStarLightIcon {
   template: `<svg:path fill="currentColor" d="M216 84a4 4 0 0 1 4 4v32a4 4 0 0 0 8 0V88a12 12 0 0 0-12-12h-86.34l-28.49-28.49A11.93 11.93 0 0 0 92.69 44H40a12 12 0 0 0-12 12v144.61A11.4 11.4 0 0 0 39.38 212h81.18a4 4 0 0 0 0-8H39.38a3.39 3.39 0 0 1-3.38-3.39V84ZM40 52h52.69a4 4 0 0 1 2.82 1.17L118.34 76H36V56a4 4 0 0 1 4-4m195.81 108.41a4 4 0 0 0-3.5-2.79l-32.24-2.49l-12.4-28.72a4 4 0 0 0-7.34 0l-12.4 28.72l-32.24 2.49a4 4 0 0 0-2.24 7.08l24.46 20.19l-7.46 30.11a4 4 0 0 0 5.91 4.41L184 203.18l27.64 16.27a4 4 0 0 0 2 .55a4.05 4.05 0 0 0 2.39-.79a4 4 0 0 0 1.49-4.17l-7.46-30.15l24.46-20.19a4 4 0 0 0 1.29-4.29m-32.76 19.91a4 4 0 0 0-1.33 4.05l5.78 23.36l-21.5-12.64a4 4 0 0 0-4.06 0l-21.44 12.64l5.78-23.36a4 4 0 0 0-1.33-4.05l-18.76-15.48l24.81-1.92a4 4 0 0 0 3.36-2.4L184 138.1l9.68 22.42a4 4 0 0 0 3.36 2.4l24.77 1.92Z"></svg:path>`,
 })
 export class PhFolderStarThinIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phFolderThinIcon],svg[ph-folder-thin-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M216 76h-86.34l-28.49-28.48A11.9 11.9 0 0 0 92.69 44H40a12 12 0 0 0-12 12v144.62A11.4 11.4 0 0 0 39.38 212h177.51A11.12 11.12 0 0 0 228 200.89V88a12 12 0 0 0-12-12M36 56a4 4 0 0 1 4-4h52.69a4 4 0 0 1 2.82 1.17L118.34 76H36Zm184 144.89a3.12 3.12 0 0 1-3.11 3.11H39.38a3.39 3.39 0 0 1-3.38-3.38V84h180a4 4 0 0 1 4 4Z"></svg:path>`,
-})
-export class PhFolderThinIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phFolderUserIcon],svg[ph-folder-user-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M214.61 198.62a32 32 0 1 0-45.23 0a40 40 0 0 0-17.11 23.32a8 8 0 0 0 5.67 9.79a8.2 8.2 0 0 0 2.06.27a8 8 0 0 0 7.73-5.95C170.56 215.42 180.54 208 192 208s21.44 7.42 24.27 18.05a8 8 0 1 0 15.46-4.11a40 40 0 0 0-17.12-23.32M192 160a16 16 0 1 1-16 16a16 16 0 0 1 16-16m24-88h-84.69L104 44.69A15.86 15.86 0 0 0 92.69 40H40a16 16 0 0 0-16 16v144.61A15.4 15.4 0 0 0 39.38 216h81.18a8 8 0 0 0 0-16H40V88h176v32a8 8 0 0 0 16 0V88a16 16 0 0 0-16-16M92.69 56l16 16H40V56Z"></svg:path>`,
-})
-export class PhFolderUserIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phFolderUserBoldIcon],svg[ph-folder-user-bold-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M220.51 197.94a36 36 0 1 0-57 0a43.75 43.75 0 0 0-15.08 23a12 12 0 0 0 8.52 14.67a11.8 11.8 0 0 0 3.05.39a12 12 0 0 0 11.59-8.92C174 218.2 182.35 212 192 212s18 6.2 20.4 15.08a12 12 0 0 0 23.19-6.17a43.7 43.7 0 0 0-15.08-22.97M192 164a12 12 0 1 1-12 12a12 12 0 0 1 12-12m24-96h-82.61l-26-29.29A20 20 0 0 0 92.41 32H40a20 20 0 0 0-20 20v148.61A19.41 19.41 0 0 0 39.38 220h73.18a12 12 0 0 0 0-24H44V92h168v16a12 12 0 0 0 24 0V88a20 20 0 0 0-20-20M44 68V56h46.61l10.67 12Z"></svg:path>`,
-})
-export class PhFolderUserBoldIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phFolderUserDuotoneIcon],svg[ph-folder-user-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M216 176a24 24 0 1 1-24-24a24 24 0 0 1 24 24" opacity=".2"></svg:path><svg:path d="M214.61 198.62a32 32 0 1 0-45.23 0a40 40 0 0 0-17.11 23.32a8 8 0 0 0 5.67 9.79a8.2 8.2 0 0 0 2.06.27a8 8 0 0 0 7.73-5.95C170.56 215.42 180.54 208 192 208s21.44 7.42 24.27 18.05a8 8 0 1 0 15.46-4.11a40 40 0 0 0-17.12-23.32M192 160a16 16 0 1 1-16 16a16 16 0 0 1 16-16m24-88h-84.69L104 44.69A15.86 15.86 0 0 0 92.69 40H40a16 16 0 0 0-16 16v144.61A15.4 15.4 0 0 0 39.38 216h81.18a8 8 0 0 0 0-16H40V88h176v32a8 8 0 0 0 16 0V88a16 16 0 0 0-16-16M92.69 56l16 16H40V56Z"></svg:path></svg:g>`,
-})
-export class PhFolderUserDuotoneIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")

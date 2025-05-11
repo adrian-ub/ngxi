@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialIconThemeUnityIcon],svg[material-icon-theme-unity-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#42a5f5" d="M8 6.5L5 5l2-1V2L2 5v5l2-1V6.5L7 8v4.5L4 11l-2 1l6 3l6-3l-2-1l-3 1.5V8l3-1.5V9l2 1V5L9 2v2l2 1Z"></svg:path>`,
+})
+export class MaterialIconThemeUnityIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeUnocssIcon],svg[material-icon-theme-unocss-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="24" cy="24" r="6" fill="#78909c"></svg:circle><svg:path fill="#546e7a" d="M2 18v6a6 6 0 0 0 12 0v-6Z"></svg:path><svg:path fill="#b0bec5" d="M30 14V8a6 6 0 0 0-12 0v6Z"></svg:path>`,
+})
+export class MaterialIconThemeUnocssIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialIconThemeUrlIcon],svg[material-icon-theme-url-icon]',
   host: {
     role: 'img',
@@ -835,50 +869,16 @@ export class MaterialIconThemeZipIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[materialIconThemeAdobeIllustratorLightIcon],svg[material-icon-theme-adobe-illustrator-light-icon]',
+  selector: 'svg[materialIconThemeAdobePhotoshopLightIcon],svg[material-icon-theme-adobe-photoshop-light-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:rect width="28" height="28" x="2" y="2" fill="#795548" rx="4"></svg:rect><svg:path fill="#ffb74d" d="M20.988 9.999a.96.96 0 0 1-.687-.269a1 1 0 0 1-.263-.704a.9.9 0 0 1 .278-.681a1 1 0 0 1 .687-.268a.93.93 0 0 1 .703.268a1.046 1.046 0 0 1-.015 1.385a.9.9 0 0 1-.703.268M20 12h2v10h-2zm-5.63-1.98l-.01-.02h-2.08a.12.12 0 0 0-.1.13a4.5 4.5 0 0 1-.06.74c-.05.13-.08.26-.12.37l-.27.78L8 22h2.14l.75-2h5.24l.79 2h2.16zM11.64 18l1.8-4.84l.01.04l.02.04L14.95 17l.39 1z"></svg:path>`,
+  template: `<svg:rect width="28" height="28" x="2" y="2" fill="#455a64" rx="4"></svg:rect><svg:path fill="#64b5f6" d="M23.744 14.716a3.7 3.7 0 0 0-1.066-.408a5.4 5.4 0 0 0-1.245-.157a2.1 2.1 0 0 0-.666.085a.57.57 0 0 0-.345.24a.7.7 0 0 0-.089.324a.56.56 0 0 0 .111.313a1.3 1.3 0 0 0 .378.324q.386.217.79.397a7.8 7.8 0 0 1 1.71.877a2.7 2.7 0 0 1 .878.998a2.8 2.8 0 0 1 .256 1.238a2.96 2.96 0 0 1-.434 1.599a2.83 2.83 0 0 1-1.244 1.07a4.75 4.75 0 0 1-2.011.384a7 7 0 0 1-1.511-.156a4.2 4.2 0 0 1-1.134-.385a.24.24 0 0 1-.122-.228v-2.092a.14.14 0 0 1 .044-.108c.034-.024.067-.012.1.012a4.6 4.6 0 0 0 1.378.59a4.8 4.8 0 0 0 1.311.18a2 2 0 0 0 .923-.169a.56.56 0 0 0 .3-.505a.65.65 0 0 0-.267-.48a4.6 4.6 0 0 0-1.089-.565a6.6 6.6 0 0 1-1.578-.866a3 3 0 0 1-.844-1.021a2.76 2.76 0 0 1-.256-1.226a3 3 0 0 1 .378-1.455a2.8 2.8 0 0 1 1.167-1.105A4 4 0 0 1 21.533 12a9 9 0 0 1 1.378.108a3.7 3.7 0 0 1 .956.277a.2.2 0 0 1 .11.108a.7.7 0 0 1 .023.144v1.96a.15.15 0 0 1-.056.12a.28.28 0 0 1-.2 0M12.38 10H9.99v-.03h-2v12h2V18h2.39A3.62 3.62 0 0 0 16 14.38v-.76A3.62 3.62 0 0 0 12.38 10M14 14.38A1.626 1.626 0 0 1 12.38 16H9.99v-4h2.39A1.626 1.626 0 0 1 14 13.62Z"></svg:path>`,
 })
-export class MaterialIconThemeAdobeIllustratorLightIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialIconThemeAbcIcon],svg[material-icon-theme-abc-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#ff5722" d="M13.295 11.033V7.65l2.126-2.136c.774-.763.919-1.981.377-2.929a2.38 2.38 0 0 0-2.068-1.217c-.203 0-.435.029-.619.087c-1.044.28-1.749 1.246-1.749 2.33v3.13L8.327 9.98a5.75 5.75 0 0 0-1.208 6.214a5.62 5.62 0 0 0 4.243 3.432v.59a.5.5 0 0 1-.483.482h-1.45v1.934h1.45a2.43 2.43 0 0 0 2.416-2.417v-.483c1.962 0 4.02-1.856 4.02-4.591c0-2.223-1.855-4.108-4.02-4.108m0-7.249c0-.222.106-.396.31-.454a.47.47 0 0 1 .54.222a.48.48 0 0 1-.077.59l-.773.83V3.785m-1.933 7.732c-.938.619-1.643 1.682-1.894 2.668l1.894.503v2.948a3.73 3.73 0 0 1-2.484-2.185a3.8 3.8 0 0 1 .802-4.098l1.682-1.769zm1.933 6.283v-4.89c1.13 0 2.107 1.062 2.107 2.232c0 1.691-1.227 2.658-2.107 2.658"></svg:path>`,
-})
-export class MaterialIconThemeAbcIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialIconThemeAdobePhotoshopIcon],svg[material-icon-theme-adobe-photoshop-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:rect width="28" height="28" x="2" y="2" fill="#37474f" rx="4"></svg:rect><svg:path fill="#64b5f6" d="M23.744 14.716a3.7 3.7 0 0 0-1.066-.408a5.4 5.4 0 0 0-1.245-.157a2.1 2.1 0 0 0-.666.085a.57.57 0 0 0-.345.24a.7.7 0 0 0-.089.324a.56.56 0 0 0 .111.313a1.3 1.3 0 0 0 .378.324q.386.217.79.397a7.8 7.8 0 0 1 1.71.877a2.7 2.7 0 0 1 .878.998a2.8 2.8 0 0 1 .256 1.238a2.96 2.96 0 0 1-.434 1.599a2.83 2.83 0 0 1-1.244 1.07a4.75 4.75 0 0 1-2.011.384a7 7 0 0 1-1.511-.156a4.2 4.2 0 0 1-1.134-.385a.24.24 0 0 1-.122-.228v-2.092a.14.14 0 0 1 .044-.108c.034-.024.067-.012.1.012a4.6 4.6 0 0 0 1.378.59a4.8 4.8 0 0 0 1.311.18a2 2 0 0 0 .923-.169a.56.56 0 0 0 .3-.505a.65.65 0 0 0-.267-.48a4.6 4.6 0 0 0-1.089-.565a6.6 6.6 0 0 1-1.578-.866a3 3 0 0 1-.844-1.021a2.76 2.76 0 0 1-.256-1.226a3 3 0 0 1 .378-1.455a2.8 2.8 0 0 1 1.167-1.105A4 4 0 0 1 21.533 12a9 9 0 0 1 1.378.108a3.7 3.7 0 0 1 .956.277a.2.2 0 0 1 .11.108a.7.7 0 0 1 .023.144v1.96a.15.15 0 0 1-.056.12a.28.28 0 0 1-.2 0M12.38 10H9.99v-.03h-2v12h2V18h2.39A3.62 3.62 0 0 0 16 14.38v-.76A3.62 3.62 0 0 0 12.38 10M14 14.38A1.626 1.626 0 0 1 12.38 16H9.99v-4h2.39A1.626 1.626 0 0 1 14 13.62Z"></svg:path>`,
-})
-export class MaterialIconThemeAdobePhotoshopIcon {
+export class MaterialIconThemeAdobePhotoshopLightIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

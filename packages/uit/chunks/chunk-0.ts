@@ -2,16 +2,33 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[uitAlignLeftIcon],svg[uit-align-left-icon]',
+  selector: 'svg[uitAdobeAltIcon],svg[uit-adobe-alt-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M2.5 7h19a.5.5 0 0 0 0-1h-19a.5.5 0 0 0 0 1m0 4h15a.5.5 0 0 0 0-1h-15a.5.5 0 0 0 0 1m15 7h-15a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1m4-4h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M9.917 2.224A.5.5 0 0 0 9.5 2h-8a.5.5 0 0 0-.5.5v19a.5.5 0 0 0 .96.194l8-19a.5.5 0 0 0-.043-.47M2 19.024V3h6.747zM22.5 2h-8a.5.5 0 0 0-.46.694l8 19A.5.5 0 0 0 23 21.5v-19a.5.5 0 0 0-.5-.5M22 19.024L15.253 3H22zm-9.532-9.7A.5.5 0 0 0 12.003 9H12a.5.5 0 0 0-.466.318l-3.5 9A.5.5 0 0 0 8.5 19h3.191l1.362 2.724A.5.5 0 0 0 13.5 22h3a.5.5 0 0 0 .468-.676zM13.808 21l-1.36-2.724A.5.5 0 0 0 12 18H9.23l2.761-7.099L15.778 21z"></svg:path>`,
 })
-export class UitAlignLeftIcon {
+export class UitAdobeAltIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uitAirplayIcon],svg[uit-airplay-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.5 3h-15A2.5 2.5 0 0 0 2 5.5v10A2.5 2.5 0 0 0 4.5 18h1a.5.5 0 0 0 0-1h-1A1.5 1.5 0 0 1 3 15.5v-10A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v10a1.5 1.5 0 0 1-1.5 1.5h-1a.5.5 0 0 0 0 1h1a2.5 2.5 0 0 0 2.5-2.5v-10A2.5 2.5 0 0 0 19.5 3m-6.259 11.44a1.557 1.557 0 0 0-2.482-.002l-2.863 4.22A1.5 1.5 0 0 0 9.136 21h5.727a1.5 1.5 0 0 0 1.241-2.342zM14.863 20H9.137a.5.5 0 0 1-.413-.781L11.587 15a.5.5 0 0 1 .413-.219a.49.49 0 0 1 .413.22l2.863 4.218a.5.5 0 0 1-.413.781"></svg:path>`,
+})
+export class UitAirplayIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,23 +70,6 @@ export class UitAlignCenterIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uitAdobeAltIcon],svg[uit-adobe-alt-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.917 2.224A.5.5 0 0 0 9.5 2h-8a.5.5 0 0 0-.5.5v19a.5.5 0 0 0 .96.194l8-19a.5.5 0 0 0-.043-.47M2 19.024V3h6.747zM22.5 2h-8a.5.5 0 0 0-.46.694l8 19A.5.5 0 0 0 23 21.5v-19a.5.5 0 0 0-.5-.5M22 19.024L15.253 3H22zm-9.532-9.7A.5.5 0 0 0 12.003 9H12a.5.5 0 0 0-.466.318l-3.5 9A.5.5 0 0 0 8.5 19h3.191l1.362 2.724A.5.5 0 0 0 13.5 22h3a.5.5 0 0 0 .468-.676zM13.808 21l-1.36-2.724A.5.5 0 0 0 12 18H9.23l2.761-7.099L15.778 21z"></svg:path>`,
-})
-export class UitAdobeAltIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[uitAlignCenterJustifyIcon],svg[uit-align-center-justify-icon]',
   host: {
     role: 'img',
@@ -80,23 +80,6 @@ export class UitAdobeAltIcon {
   template: `<svg:path fill="currentColor" d="M17.5 20h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1m4-4h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1M2.5 5h19a.5.5 0 0 0 0-1h-19a.5.5 0 0 0 0 1m19 3h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1m0 4h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1"></svg:path>`,
 })
 export class UitAlignCenterJustifyIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[uitAlignLeftJustifyIcon],svg[uit-align-left-justify-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15.5 20h-13a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1M2.5 5h19a.5.5 0 0 0 0-1h-19a.5.5 0 0 0 0 1m19 7h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1m0-4h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1m0 8h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1"></svg:path>`,
-})
-export class UitAlignLeftJustifyIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,16 +104,33 @@ export class UitAlignCenterAltIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uitAlignLetterRightIcon],svg[uit-align-letter-right-icon]',
+  selector: 'svg[uitAlignLeftIcon],svg[uit-align-left-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M9.5 4h12a.5.5 0 0 0 0-1h-12a.5.5 0 0 0 0 1m12 17h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1m0-4h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1m0-6h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1m0-4h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M2.5 7h19a.5.5 0 0 0 0-1h-19a.5.5 0 0 0 0 1m0 4h15a.5.5 0 0 0 0-1h-15a.5.5 0 0 0 0 1m15 7h-15a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1m4-4h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1"></svg:path>`,
 })
-export class UitAlignLetterRightIcon {
+export class UitAlignLeftIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uitAlignLeftJustifyIcon],svg[uit-align-left-justify-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15.5 20h-13a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1M2.5 5h19a.5.5 0 0 0 0-1h-19a.5.5 0 0 0 0 1m19 7h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1m0-4h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1m0 8h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1"></svg:path>`,
+})
+export class UitAlignLeftJustifyIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -3657,16 +3657,16 @@ export class UitYoutubeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uitAirplayIcon],svg[uit-airplay-icon]',
+  selector: 'svg[uitAlignLetterRightIcon],svg[uit-align-letter-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M19.5 3h-15A2.5 2.5 0 0 0 2 5.5v10A2.5 2.5 0 0 0 4.5 18h1a.5.5 0 0 0 0-1h-1A1.5 1.5 0 0 1 3 15.5v-10A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v10a1.5 1.5 0 0 1-1.5 1.5h-1a.5.5 0 0 0 0 1h1a2.5 2.5 0 0 0 2.5-2.5v-10A2.5 2.5 0 0 0 19.5 3m-6.259 11.44a1.557 1.557 0 0 0-2.482-.002l-2.863 4.22A1.5 1.5 0 0 0 9.136 21h5.727a1.5 1.5 0 0 0 1.241-2.342zM14.863 20H9.137a.5.5 0 0 1-.413-.781L11.587 15a.5.5 0 0 1 .413-.219a.49.49 0 0 1 .413.22l2.863 4.218a.5.5 0 0 1-.413.781"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M9.5 4h12a.5.5 0 0 0 0-1h-12a.5.5 0 0 0 0 1m12 17h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1m0-4h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1m0-6h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1m0-4h-19a.5.5 0 0 0 0 1h19a.5.5 0 0 0 0-1"></svg:path>`,
 })
-export class UitAirplayIcon {
+export class UitAlignLetterRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

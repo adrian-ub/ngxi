@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[openmojiWomanPlayingWaterPoloIcon],svg[openmoji-woman-playing-water-polo-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="#fcea2b"><svg:path d="M45.185 42.897s-3.527-7.435-4.29-9.914l-1.716 8.961l-4.862-1.049l-4.861.286l-1.812-10.485l-.953-.859c-.572-1.525-5.815-1.81-8.103-3.717c-1.62-1.43-3.05-6.483-3.622-8.77l1.24-1.526l3.717 6.864l8.389 3.05l11.153 1.335l2.765 2.002l5.338 11.63l.763 2.955Z"></svg:path><svg:circle cx="33.364" cy="19.161" r="2.86"></svg:circle></svg:g><svg:path fill="#92d3f5" d="M64.822 41.277c0-1.811-11.344 2.86-16.11 2.86s-9.532-2.86-15.252-2.86s-9.533 2.86-15.252 2.86S3.813 39.466 3.813 41.18c0 5.053-.286 7.15 1.62 10.677s9.533 3.527 12.488 6.578c2.288 2.383 6.769 1.715 9.724 1.715c2.097 0 4.385.096 8.58.096c3.622 0 10.009-1.24 12.678-1.24c2.193 0 5.53-3.24 6.196-4.575c1.907-3.813 6.292-.953 7.817-3.909c2.097-3.813 1.906-4.003 1.906-9.246"></svg:path><svg:circle cx="14.299" cy="14.395" r="2.86" fill="#ea5a47"></svg:circle><svg:g fill="none" stroke="#000" stroke-width="2"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M4.767 40.99c2.86 0 8.579 2.86 14.299 2.86s9.532-2.86 15.252-2.86s10.486 2.86 15.252 2.86s6.673-2.86 14.3-2.86m-20.02 7.627a20 20 0 0 0 5.72.953c2.574 0 4.386-.858 6.673-1.62m-44.041.572a26.5 26.5 0 0 0 6.864 1.048c5.72 0 9.532-2.86 15.252-2.86m-9.533 8.58c3.05-.858 5.91-2.002 9.533-2.002c4.194 0 7.912 1.525 11.44 2.383"></svg:path><svg:circle cx="14.299" cy="14.395" r="2.86" stroke-miterlimit="10"></svg:circle><svg:circle cx="33.364" cy="19.161" r="3" stroke-miterlimit="10"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M28.598 40.99v-6.672a11.7 11.7 0 0 0-.477-3.336c-.286-.763-.476-1.43-.476-1.43m12.392 3.813l-.953 7.626M17.063 15.253l2.384 6.768a4.2 4.2 0 0 0 2.478 2.288l3.908.953a16.7 16.7 0 0 0 3.718.572l8.58.667a6.03 6.03 0 0 1 3.24 1.525l.192.191a11 11 0 0 1 2.001 3.146l.763 2.097c.381.953.953 2.574 1.335 3.527l2.764 6.387M37.395 18.436s.636-.168.936.186c.353.417.406 1.748.796 2.39a3.36 3.36 0 0 0 1.646 1.417"></svg:path></svg:g>`,
-})
-export class OpenmojiWomanPlayingWaterPoloIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[openmojiWomanPlayingWaterPoloDarkSkinToneIcon],svg[openmoji-woman-playing-water-polo-dark-skin-tone-icon]',
   host: {
     role: 'img',
@@ -3650,6 +3633,23 @@ export class OpenmojiZombieIcon {
   template: `<svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><svg:path stroke-width="6" d="M49 8h13.143L49 31h13.143m-34 2.75H37l-8.857 15.5H37"></svg:path><svg:path stroke-width="4.645" d="M9.143 52.5H16l-6.857 12H16"></svg:path></svg:g>`,
 })
 export class OpenmojiZzzIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiAccordionIcon],svg[openmoji-accordion-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="56.882" cy="44.306" r="1"></svg:circle><svg:circle cx="60.702" cy="38.72" r="1"></svg:circle><svg:circle cx="59.772" cy="42.927" r="1"></svg:circle><svg:circle cx="57.873" cy="40.056" r="1"></svg:circle><svg:circle cx="61.661" cy="34.395" r="1"></svg:circle><svg:circle cx="58.855" cy="35.607" r="1"></svg:circle><svg:circle cx="59.827" cy="31.322" r="1"></svg:circle><svg:circle cx="19.912" cy="45.562" r="1"></svg:circle><svg:circle cx="18.062" cy="41.609" r="1"></svg:circle><svg:circle cx="16.082" cy="37.506" r="1"></svg:circle><svg:circle cx="14.194" cy="33.538" r="1"></svg:circle><svg:path fill="#fff" d="m14.115 27.117l4.121-3.925a.6.6 0 0 1 .144-.102l9.231-4.747a.6.6 0 0 1 .215-.065l9.896-1.105a.6.6 0 0 1 .202.01l10.468 2.303c.122.027.234.09.32.182l4.269 4.571a.62.62 0 0 0 .42.196l4.421.232a.62.62 0 0 1 .573.752l-5.116 23.056a.62.62 0 0 1-1 .341l-4.25-3.54a.62.62 0 0 0-1.016.466a.62.62 0 0 1-.923.53l-5.007-2.816a.62.62 0 0 0-.919.615l.037.295a.62.62 0 0 1-.834.655l-5.16-1.951a.62.62 0 0 0-.816.746l.3 1.07a.62.62 0 0 1-.753.765l-4.84-1.257a.62.62 0 0 0-.722.85l.588 1.326a.62.62 0 0 1-.566.87H24.22a.62.62 0 0 1-.553-.341L13.99 27.843a.62.62 0 0 1 .126-.726Z"></svg:path><svg:path fill="#781e32" d="M19.799 54.97c-.388 0-.74-.223-.906-.573L6.822 28.817a1 1 0 0 1 .477-1.331H7.3l5.774-2.725a1 1 0 0 1 1.33.475l.002.002l12.07 25.581A1 1 0 0 1 26 52.15l-5.775 2.725a1 1 0 0 1-.426.096m40.662-1.61a1 1 0 0 1-.4-.005l-7.412-1.628a1 1 0 0 1-.763-1.192l6.07-27.627a1 1 0 0 1 1.19-.762l7.412 1.628a1 1 0 0 1 .763 1.191l-6.07 27.627a1 1 0 0 1-.79.768"></svg:path><svg:path fill="#fff" d="M15.925 53.028a3.65 3.65 0 0 1-3.288-2.084L5.765 36.383a3.633 3.633 0 0 1 1.736-4.835l2.101-.993a1 1 0 0 1 1.33.477l.001.001l9.118 19.323a1 1 0 0 1-.476 1.33l-.001.001l-2.102.992a3.6 3.6 0 0 1-1.548.35"></svg:path><svg:path fill="#d0cfce" d="M28.962 46.828L17.965 22.982l2.926-1.727zm5.83-2.069l-7.087-26.826l3.341-.048zm6.502.309l-2.958-28.122l2.873.845zm6.731 1.569l1.167-27.092l1.927 2.434z"></svg:path><svg:circle cx="56.882" cy="44.306" r="1" fill="#fff"></svg:circle><svg:circle cx="60.702" cy="38.72" r="1" fill="#fff"></svg:circle><svg:circle cx="59.772" cy="42.927" r="1" fill="#fff"></svg:circle><svg:circle cx="57.873" cy="40.056" r="1" fill="#fff"></svg:circle><svg:circle cx="61.661" cy="34.395" r="1" fill="#fff"></svg:circle><svg:circle cx="58.855" cy="35.607" r="1" fill="#fff"></svg:circle><svg:circle cx="59.827" cy="31.322" r="1" fill="#fff"></svg:circle><svg:circle cx="19.912" cy="45.562" r="1" fill="#fff"></svg:circle><svg:circle cx="18.062" cy="41.609" r="1" fill="#fff"></svg:circle><svg:circle cx="16.082" cy="37.506" r="1" fill="#fff"></svg:circle><svg:circle cx="14.194" cy="33.538" r="1" fill="#fff"></svg:circle><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m43.915 21.386l4.503-1.213l-1.421 26.61l-3.882-2.412m10.549-19.197l4.889-.469l-5.494 24.762l-2.882-3.244M33.866 19.708l4.246-1.784l2.213 27.459l-3.952-1.687M23.952 21.272l3.882-2.337l6.146 26.987l-4.007-1.033M14.73 27.043l3.734-3.204L28.35 47.44h-4.513M9.331 31.789L7.727 28.39l5.773-2.725l12.072 25.581l-5.774 2.724l-1.349-2.858"></svg:path><svg:path d="m19.147 50.783l-3.678 1.735a.89.89 0 0 1-1.184-.425L5.926 34.38a.89.89 0 0 1 .425-1.184h0l3.678-1.736m42.835 19.29l6.07-27.627l7.41 1.629l-6.07 27.627zM9.886 35.642l-2.774 1.294m4.349 1.798l-2.774 1.294m4.367 1.833l-2.774 1.293m4.277 1.878l-2.773 1.293m4.333 1.872l-2.774 1.294"></svg:path></svg:g>`,
+})
+export class OpenmojiAccordionIcon {
   readonly viewBox = input("0 0 72 72")
   readonly width = input("1em")
   readonly height = input("1em")

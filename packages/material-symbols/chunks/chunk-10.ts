@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsFamilyLinkRoundedIcon],svg[material-symbols-family-link-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.75 23q-1.275 0-2.262-.763T6.15 20.276Q6 19.7 5.525 19.35T4.45 19q-.4 0-.75.15t-.6.45q-.125.175-.312.275t-.438.1q-.425 0-.712-.288t-.288-.712q0-.2.05-.35t.175-.275q.525-.65 1.288-1T4.45 17q1.275 0 2.275.75t1.35 1.975q.15.575.625.925t1.05.35q.475 0 .85-.25t.65-.625l.025-.05l-6.9-9.525q-.2-.275-.288-.575T4 9.375q0-.4.15-.762t.45-.663l6.5-6.375q.275-.275.65-.425T12.5 1t.75.15t.65.425l6.5 6.375q.3.3.45.663t.15.762q0 .3-.088.6t-.287.575L12.5 21.8q-.45.625-1.2.913T9.75 23"></svg:path>`,
-})
-export class MaterialSymbolsFamilyLinkRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsFamilyLinkSharpIcon],svg[material-symbols-family-link-sharp-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsFloatPortrait2SharpIcon {
   template: `<svg:path fill="currentColor" d="M6 22q-.825 0-1.413-.588T4 20V4q0-.825.588-1.413T6 2h12q.825 0 1.413.588T20 4v9h-2V4H6v16h7v2H6Zm9 0v-7h5v7h-5Zm-3-10Z"></svg:path>`,
 })
 export class MaterialSymbolsFloatPortraitOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsFloatPortraitOutlineRoundedIcon],svg[material-symbols-float-portrait-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 22q-.825 0-1.413-.588T4 20V4q0-.825.588-1.413T6 2h12q.825 0 1.413.588T20 4v8q0 .425-.288.713T19 13q-.425 0-.713-.288T18 12V4H6v16h6q.425 0 .713.288T13 21q0 .425-.288.713T12 22H6Zm10 0q-.425 0-.713-.288T15 21v-5q0-.425.288-.713T16 15h3q.425 0 .713.288T20 16v5q0 .425-.288.713T19 22h-3Zm-3-2H6V4h12v9h-3q-.825 0-1.413.588T13 15v5Z"></svg:path>`,
+})
+export class MaterialSymbolsFloatPortraitOutlineRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

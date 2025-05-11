@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[letsIconsNotebookDuotoneIcon],svg[lets-icons-notebook-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path stroke="currentColor" stroke-linecap="round" d="M3.5 7.5h4m-4 8h4m-4-4h4"></svg:path><svg:path fill="currentColor" fill-opacity=".25" fill-rule="evenodd" d="M5.01 5.695c-.003.143-.005.214.039.26c.044.045.116.045.26.045H7.5a1.5 1.5 0 1 1 0 3H5.3c-.141 0-.212 0-.256.044S5 9.159 5 9.3v.4c0 .141 0 .212.044.256S5.159 10 5.3 10h2.2a1.5 1.5 0 0 1 0 3H5.3c-.141 0-.212 0-.256.044S5 13.159 5 13.3v.4c0 .141 0 .212.044.256S5.159 14 5.3 14h2.2a1.5 1.5 0 0 1 0 3H5.3c-.141 0-.212 0-.256.044S5 17.159 5 17.3c.002 1.688.032 2.56.586 3.114C6.172 21 7.114 21 9 21h6c1.886 0 2.828 0 3.414-.586S19 18.886 19 17V7c0-1.886 0-2.828-.586-3.414S16.886 3 15 3H9c-1.886 0-2.828 0-3.414.586c-.432.431-.545 1.056-.575 2.11" clip-rule="evenodd"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" d="M15.5 10.5v-3"></svg:path></svg:g>`,
+})
+export class LetsIconsNotebookDuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsNotebookDuotoneLineIcon],svg[lets-icons-notebook-duotone-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.2"><svg:rect width="13" height="17" x="6" y="4" fill="currentColor" fill-opacity=".25" rx="2"></svg:rect><svg:path stroke-linecap="round" d="M15 10V8M4 9h4m-4 4h4m-4 4h4"></svg:path></svg:g>`,
+})
+export class LetsIconsNotebookDuotoneLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[letsIconsNotebookFillIcon],svg[lets-icons-notebook-fill-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class LetsIconsViewHorizontDuotoneIcon {
   template: `<svg:defs><svg:mask id="letsIconsViewHorizontDuotoneLine0"><svg:g fill="none"><svg:path stroke="#fff" d="M12.42 7.602a9.5 9.5 0 0 1-.135 9.047"></svg:path><svg:path stroke="#fff" stroke-linecap="round" d="M14.5 5.5c-2.781 3.708-9.86 6.127-10.877 6.46a.049.049 0 0 0-.005.092c1.001.446 8.097 3.663 10.882 6.448"></svg:path><svg:path stroke="#fff" d="M13.233 14.49a2.5 2.5 0 1 1-.093-4.986"></svg:path><svg:path stroke="silver" stroke-linecap="round" stroke-opacity=".25" d="M16.5 12h4m-4-2.5l4-1.5m-4 6.5l4 1.5"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h24v24H0z" mask="url(#letsIconsViewHorizontDuotoneLine0)"></svg:path>`,
 })
 export class LetsIconsViewHorizontDuotoneLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[letsIconsViewHorizontFillIcon],svg[lets-icons-view-horizont-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path stroke="currentColor" stroke-width="2" d="M11.725 7.382a9 9 0 0 1 .364 8.563"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M14 5c-2.814 2.814-10.029 6.509-10.911 6.955a.05.05 0 0 0 0 .09C3.97 12.49 11.186 16.185 14 19m2-7h5m-5-3l5-2m-5 8l5 2"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M13.687 9.519a10 10 0 0 0-.823-2.148L4 12l8.721 4.893a10 10 0 0 0 .966-2.413a3 3 0 1 1 0-4.962" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class LetsIconsViewHorizontFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[letsIconsViewLightIcon],svg[lets-icons-view-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor"><svg:circle cx="12" cy="12" r="3.5"></svg:circle><svg:path d="M20.188 10.934c.388.472.582.707.582 1.066s-.194.594-.582 1.066C18.768 14.79 15.636 18 12 18s-6.768-3.21-8.188-4.934c-.388-.472-.582-.707-.582-1.066s.194-.594.582-1.066C5.232 9.21 8.364 6 12 6s6.768 3.21 8.188 4.934Z"></svg:path></svg:g>`,
-})
-export class LetsIconsViewLightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

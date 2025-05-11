@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[qlementineIconsAddFolder16Icon],svg[qlementine-icons-add-folder-16-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.52 2h-.018L6.302.4a1 1 0 0 0-.8-.4h-3.5A2 2 0 0 0 .006 1.996v10a2 2 0 0 0 1.996 1.996h4v-1h-4a.997.997 0 0 1-1-1v-7h3.88c.203 0 .383 0 .557-.042q.231-.056.434-.18c.153-.093.28-.22.423-.365l1.41-1.41h6.29a.997.997 0 0 1 1 1v2h1v-2c0-.53-.21-1.04-.586-1.41S14.526 2 14 2zM5.5 1l1.2 1.6l-1.08 1.08c-.19.19-.229.225-.268.248a.5.5 0 0 1-.145.06c-.044.01-.097.014-.365.014h-3.84v-2a.997.997 0 0 1 1-1h3.5z" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M11.5 7a.5.5 0 0 1 .5.5V11h3.5a.5.5 0 0 1 0 1H12v3.5a.5.5 0 0 1-1 0V12H7.5a.5.5 0 0 1 0-1H11V7.5a.5.5 0 0 1 .5-.5"></svg:path>`,
-})
-export class QlementineIconsAddFolder16Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[qlementineIconsAccordion16Icon],svg[qlementine-icons-accordion-16-icon]',
   host: {
     role: 'img',
@@ -36,16 +19,16 @@ export class QlementineIconsAccordion16Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[qlementineIconsAddToCart16Icon],svg[qlementine-icons-add-to-cart-16-icon]',
+  selector: 'svg[qlementineIconsAddFile16Icon],svg[qlementine-icons-add-file-16-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M5.1 4.8a.499.499 0 0 1 .471-.795a.5.5 0 0 1 .329.195L8 7V.5a.5.5 0 0 1 .5-.5a.5.5 0 0 1 .5.5V7l2.1-2.8a.501.501 0 0 1 .895.229a.5.5 0 0 1-.095.371l-3 4c-.006.008-.017.012-.024.02a.5.5 0 0 1-.116.1a.3.3 0 0 1-.05.034a.47.47 0 0 1-.42 0a.3.3 0 0 1-.05-.034a.5.5 0 0 1-.116-.1c-.007-.008-.018-.012-.024-.02zm.65 9.95a1.245 1.245 0 0 1-.772 1.154a1.252 1.252 0 0 1-1.704-.91a1.25 1.25 0 1 1 2.475-.245zm8 0a1.245 1.245 0 0 1-.772 1.154a1.252 1.252 0 0 1-1.704-.91a1.249 1.249 0 1 1 2.475-.245zM14 5.5a.5.5 0 0 0-.5.5l-.5 4H4.09l-1.1-6.58a.5.5 0 0 0-.49-.418h-1a.5.5 0 0 0-.5.5a.5.5 0 0 0 .5.5h.576l1.43 8.58a.496.496 0 0 0 .493.418h9a.5.5 0 0 0 0-1h-8.58l-.167-1h8.74a1 1 0 0 0 .992-.876l.508-4.12a.5.5 0 0 0-.5-.5z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M13 4.57a.5.5 0 0 0-.024-.235l-.013-.063a1.5 1.5 0 0 0-.18-.434c-.092-.15-.222-.28-.482-.54L9.711.707c-.259-.26-.389-.39-.54-.483a1.5 1.5 0 0 0-.496-.193a.5.5 0 0 0-.235-.024C8.329.004 8.194.004 8.015.004h-3.21c-1.68 0-2.52 0-3.16.327a3.02 3.02 0 0 0-1.31 1.31C.008 2.283.008 3.12.008 4.8v6.4c0 1.68 0 2.52.327 3.16a3.02 3.02 0 0 0 1.31 1.31c.642.327 1.48.327 3.16.327h1.2v-1h-1.2c-.857 0-1.44-.001-1.89-.038c-.438-.036-.663-.101-.82-.18a2 2 0 0 1-.873-.874c-.08-.156-.145-.381-.18-.819c-.037-.45-.038-1.03-.038-1.89v-6.4c0-.857 0-1.44.038-1.89c.035-.438.1-.663.18-.819c.192-.376.498-.682.874-.874c.156-.08.38-.145.819-.18c.45-.037 1.03-.038 1.89-.038h3.2v3.5a.5.5 0 0 0 .484.5h4.52V4.99c0-.178 0-.313-.005-.425zM9 1.41L11.59 4H9z" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M11.5 7a.5.5 0 0 1 .5.5V11h3.5a.5.5 0 0 1 0 1H12v3.5a.5.5 0 0 1-1 0V12H7.5a.5.5 0 0 1 0-1H11V7.5a.5.5 0 0 1 .5-.5"></svg:path>`,
 })
-export class QlementineIconsAddToCart16Icon {
+export class QlementineIconsAddFile16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,16 +53,67 @@ export class QlementineIconsAccessibility16Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[qlementineIconsAiff16Icon],svg[qlementine-icons-aiff-16-icon]',
+  selector: 'svg[qlementineIconsAddFolder16Icon],svg[qlementine-icons-add-folder-16-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M6.25 9.59V5.41c0-.259.195-.475.45-.501l4.05-.408a.453.453 0 0 1 .497.453v4.79c0 .5-.383 1.03-1.12 1.2c-.82.19-1.38-.245-1.38-.859s.697-1.05 1.38-1.1c.241-.02.452.018.625.1v-2.57l-4 .403v3.33c0 .507-.383 1.03-1.12 1.21c-.82.189-1.38-.245-1.38-.86c0-.613.697-1.05 1.38-1.1c.241-.02.452.019.625.1z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M15 8c0 3.87-3.13 7-7 7s-7-3.13-7-7s3.13-7 7-7s7 3.13 7 7m-.75 0c0 3.45-2.8 6.25-6.25 6.25S1.75 11.45 1.75 8S4.55 1.75 8 1.75s6.25 2.8 6.25 6.25" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.52 2h-.018L6.302.4a1 1 0 0 0-.8-.4h-3.5A2 2 0 0 0 .006 1.996v10a2 2 0 0 0 1.996 1.996h4v-1h-4a.997.997 0 0 1-1-1v-7h3.88c.203 0 .383 0 .557-.042q.231-.056.434-.18c.153-.093.28-.22.423-.365l1.41-1.41h6.29a.997.997 0 0 1 1 1v2h1v-2c0-.53-.21-1.04-.586-1.41S14.526 2 14 2zM5.5 1l1.2 1.6l-1.08 1.08c-.19.19-.229.225-.268.248a.5.5 0 0 1-.145.06c-.044.01-.097.014-.365.014h-3.84v-2a.997.997 0 0 1 1-1h3.5z" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M11.5 7a.5.5 0 0 1 .5.5V11h3.5a.5.5 0 0 1 0 1H12v3.5a.5.5 0 0 1-1 0V12H7.5a.5.5 0 0 1 0-1H11V7.5a.5.5 0 0 1 .5-.5"></svg:path>`,
 })
-export class QlementineIconsAiff16Icon {
+export class QlementineIconsAddFolder16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsAddToCart16Icon],svg[qlementine-icons-add-to-cart-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.1 4.8a.499.499 0 0 1 .471-.795a.5.5 0 0 1 .329.195L8 7V.5a.5.5 0 0 1 .5-.5a.5.5 0 0 1 .5.5V7l2.1-2.8a.501.501 0 0 1 .895.229a.5.5 0 0 1-.095.371l-3 4c-.006.008-.017.012-.024.02a.5.5 0 0 1-.116.1a.3.3 0 0 1-.05.034a.47.47 0 0 1-.42 0a.3.3 0 0 1-.05-.034a.5.5 0 0 1-.116-.1c-.007-.008-.018-.012-.024-.02zm.65 9.95a1.245 1.245 0 0 1-.772 1.154a1.252 1.252 0 0 1-1.704-.91a1.25 1.25 0 1 1 2.475-.245zm8 0a1.245 1.245 0 0 1-.772 1.154a1.252 1.252 0 0 1-1.704-.91a1.249 1.249 0 1 1 2.475-.245zM14 5.5a.5.5 0 0 0-.5.5l-.5 4H4.09l-1.1-6.58a.5.5 0 0 0-.49-.418h-1a.5.5 0 0 0-.5.5a.5.5 0 0 0 .5.5h.576l1.43 8.58a.496.496 0 0 0 .493.418h9a.5.5 0 0 0 0-1h-8.58l-.167-1h8.74a1 1 0 0 0 .992-.876l.508-4.12a.5.5 0 0 0-.5-.5z"></svg:path>`,
+})
+export class QlementineIconsAddToCart16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsAddressBook16Icon],svg[qlementine-icons-address-book-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4 8c0-2.21 1.79-4 4-4h1.17A3.83 3.83 0 0 1 13 7.83v.417a1.75 1.75 0 0 1-1.75 1.75c-.648 0-1.21-.352-1.52-.875c-.286.51-.828.875-1.73.875c-1.5 0-2-1-2-2s.5-2 2-2c.702 0 1.18.219 1.5.554v-.054a.5.5 0 0 1 1 0v1.75a.75.75 0 0 0 1.5 0V7.83C12 6.27 10.73 5 9.17 5H8C6.34 5 5 6.34 5 8s1.34 3 3 3h.499c.694 0 1.13-.115 1.38-.214a1.3 1.3 0 0 0 .28-.15a.5.5 0 1 1 .636.77q-.043.038-.118.088a2.3 2.3 0 0 1-.428.22c-.378.15-.942.286-1.75.286H8c-2.21 0-4-1.79-4-4m5 0c0 .351-.09.596-.206.735C8.704 8.842 8.509 9 8 9s-.705-.158-.794-.265C7.09 8.596 7 8.352 7 8s.09-.596.206-.735C7.296 7.158 7.491 7 8 7s.705.158.794.265C8.91 7.404 9 7.648 9 8" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M2 11.2V10H.5a.5.5 0 0 1 0-1H2V7H.5a.5.5 0 0 1 0-1H2V4.8q0-.435.002-.8h-1.5a.5.5 0 0 1 0-1h1.53c.036-.588.117-1.01.298-1.36A3.02 3.02 0 0 1 3.64.33C4.282.003 5.12.003 6.8.003h3.4c1.68 0 2.52 0 3.16.327a3.02 3.02 0 0 1 1.31 1.31c.182.356.262.774.298 1.36h.529a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-.5v2h.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-.5v.2c0 1.68 0 2.52-.327 3.16a3 3 0 0 1-1.31 1.31c-.642.327-1.48.327-3.16.327H6.8c-1.68 0-2.52 0-3.16-.327a3 3 0 0 1-1.31-1.31c-.182-.356-.262-.774-.298-1.36H.502a.5.5 0 0 1 0-1h1.5q-.003-.365-.002-.8m12-6.4c0-.857 0-1.44-.038-1.89c-.035-.438-.1-.663-.18-.819a2 2 0 0 0-.874-.874c-.156-.08-.38-.145-.819-.18C11.64 1 11.06.999 10.2.999H6.8c-.857 0-1.44.001-1.89.038c-.438.036-.663.101-.819.18a2 2 0 0 0-.874.874c-.08.156-.145.381-.18.819C3 3.36 3 3.94 3 4.8v6.4c0 .857 0 1.44.037 1.89c.036.438.101.663.18.819c.192.376.498.682.874.874c.156.08.381.145.82.18c.45.037 1.03.038 1.89.038h3.4c.856 0 1.44-.001 1.89-.038c.437-.036.662-.101.818-.18c.376-.192.682-.498.874-.874c.08-.156.145-.381.18-.819c.037-.45.038-1.03.038-1.89z" clip-rule="evenodd"></svg:path>`,
+})
+export class QlementineIconsAddressBook16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[qlementineIconsAddressBookRemove16Icon],svg[qlementine-icons-address-book-remove-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 11.2V10H.5a.5.5 0 0 1 0-1H2V7H.5a.5.5 0 0 1 0-1H2V4.8q0-.435.002-.8h-1.5a.5.5 0 0 1 0-1h1.53c.036-.588.117-1.01.298-1.36A3.02 3.02 0 0 1 3.64.33C4.282.003 5.12.003 6.8.003h3.4c1.68 0 2.52 0 3.16.327a3.02 3.02 0 0 1 1.31 1.31c.182.356.262.774.298 1.36h.529a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-.5v1.5a.5.5 0 0 1-1 0V4.8c0-.857-.001-1.44-.038-1.89c-.036-.438-.1-.663-.18-.819a2 2 0 0 0-.874-.874c-.156-.08-.38-.145-.819-.18c-.45-.037-1.03-.038-1.89-.038h-3.4c-.857 0-1.44.001-1.89.038c-.438.036-.663.101-.819.18a2 2 0 0 0-.874.874c-.08.156-.145.381-.18.819c-.037.45-.038 1.03-.038 1.89v6.4c0 .857.001 1.44.038 1.89c.036.438.101.663.18.819c.192.376.498.682.874.874c.156.08.381.145.82.18c.45.037 1.03.038 1.89.038h3.4c.508 0 .921 0 1.27-.009a.52.52 0 0 1 .532.511a.484.484 0 0 1-.468.488c-.377.01-.814.01-1.33.01h-3.4c-1.68 0-2.52 0-3.16-.327a3 3 0 0 1-1.31-1.31c-.182-.356-.262-.774-.298-1.36H.503a.5.5 0 0 1 0-1h1.5q-.002-.366-.002-.8z"></svg:path><svg:path fill="currentColor" d="M8.5 11a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1z"></svg:path>`,
+})
+export class QlementineIconsAddressBookRemove16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,16 +138,16 @@ export class QlementineIconsAddressBookAdd16Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[qlementineIconsAddFile16Icon],svg[qlementine-icons-add-file-16-icon]',
+  selector: 'svg[qlementineIconsAiff16Icon],svg[qlementine-icons-aiff-16-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M13 4.57a.5.5 0 0 0-.024-.235l-.013-.063a1.5 1.5 0 0 0-.18-.434c-.092-.15-.222-.28-.482-.54L9.711.707c-.259-.26-.389-.39-.54-.483a1.5 1.5 0 0 0-.496-.193a.5.5 0 0 0-.235-.024C8.329.004 8.194.004 8.015.004h-3.21c-1.68 0-2.52 0-3.16.327a3.02 3.02 0 0 0-1.31 1.31C.008 2.283.008 3.12.008 4.8v6.4c0 1.68 0 2.52.327 3.16a3.02 3.02 0 0 0 1.31 1.31c.642.327 1.48.327 3.16.327h1.2v-1h-1.2c-.857 0-1.44-.001-1.89-.038c-.438-.036-.663-.101-.82-.18a2 2 0 0 1-.873-.874c-.08-.156-.145-.381-.18-.819c-.037-.45-.038-1.03-.038-1.89v-6.4c0-.857 0-1.44.038-1.89c.035-.438.1-.663.18-.819c.192-.376.498-.682.874-.874c.156-.08.38-.145.819-.18c.45-.037 1.03-.038 1.89-.038h3.2v3.5a.5.5 0 0 0 .484.5h4.52V4.99c0-.178 0-.313-.005-.425zM9 1.41L11.59 4H9z" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M11.5 7a.5.5 0 0 1 .5.5V11h3.5a.5.5 0 0 1 0 1H12v3.5a.5.5 0 0 1-1 0V12H7.5a.5.5 0 0 1 0-1H11V7.5a.5.5 0 0 1 .5-.5"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M6.25 9.59V5.41c0-.259.195-.475.45-.501l4.05-.408a.453.453 0 0 1 .497.453v4.79c0 .5-.383 1.03-1.12 1.2c-.82.19-1.38-.245-1.38-.859s.697-1.05 1.38-1.1c.241-.02.452.018.625.1v-2.57l-4 .403v3.33c0 .507-.383 1.03-1.12 1.21c-.82.189-1.38-.245-1.38-.86c0-.613.697-1.05 1.38-1.1c.241-.02.452.019.625.1z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M15 8c0 3.87-3.13 7-7 7s-7-3.13-7-7s3.13-7 7-7s7 3.13 7 7m-.75 0c0 3.45-2.8 6.25-6.25 6.25S1.75 11.45 1.75 8S4.55 1.75 8 1.75s6.25 2.8 6.25 6.25" clip-rule="evenodd"></svg:path>`,
 })
-export class QlementineIconsAddFile16Icon {
+export class QlementineIconsAiff16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8461,40 +8495,6 @@ export class QlementineIconsSeekBackward24Icon {
   template: `<svg:path fill="currentColor" d="M0 3.3c0-.874 1.04-1.33 1.68-.731l5.03 4.7a.997.997 0 0 1 0 1.46l-5.03 4.7c-.639.597-1.68.143-1.68-.731v-9.4zm8 0c0-.874 1.04-1.33 1.68-.731l5.03 4.7a.997.997 0 0 1 0 1.46l-5.03 4.7c-.639.597-1.68.143-1.68-.731v-9.4z"></svg:path>`,
 })
 export class QlementineIconsSeekForward16Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[qlementineIconsSeekForward24Icon],svg[qlementine-icons-seek-forward-24-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.6 3.09a1 1 0 0 0-.59.912v16a1 1 0 0 0 1.66.747l9-8a1 1 0 0 0 0-1.494l-9-8a.99.99 0 0 0-1.07-.165m-12.01 0a1 1 0 0 0-.59.912v16a1 1 0 0 0 1.66.747l9-8a1 1 0 0 0 0-1.494l-9-8A.99.99 0 0 0 .59 3.09"></svg:path>`,
-})
-export class QlementineIconsSeekForward24Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[qlementineIconsSelectAll16Icon],svg[qlementine-icons-select-all-16-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.2 1H8.8c-.857 0-1.44 0-1.89.038c-.438.035-.663.1-.819.18a2 2 0 0 0-.874.874a2 2 0 0 0-.153.462C5.01 2.803 4.803 3 4.548 3c-.282 0-.51-.24-.47-.518a2.7 2.7 0 0 1 .248-.844a3.02 3.02 0 0 1 1.31-1.31C6.278 0 7.116 0 8.796 0h2.4c1.68 0 2.52 0 3.16.327a3.02 3.02 0 0 1 1.31 1.31c.327.642.327 1.48.327 3.16v2.4c0 1.68 0 2.52-.327 3.16a3 3 0 0 1-1.31 1.31a2.7 2.7 0 0 1-.844.248c-.279.04-.518-.188-.518-.47c0-.255.197-.462.446-.516c.209-.046.365-.104.462-.153c.376-.192.682-.498.874-.874c.08-.156.145-.381.18-.82c.037-.45.038-1.03.038-1.89v-2.4c0-.856-.001-1.44-.038-1.89c-.036-.437-.101-.662-.18-.818a2 2 0 0 0-.874-.874c-.156-.08-.381-.145-.819-.18c-.45-.037-1.03-.038-1.89-.038zM8.83 8.12a.5.5 0 0 1 .054.705l-3 3.5a.497.497 0 0 1-.733.028l-2-2a.5.5 0 0 1 .707-.707l1.62 1.62l2.65-3.09a.5.5 0 0 1 .705-.054z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M.327 5.64C0 6.282 0 7.12 0 8.8v2.4c0 1.68 0 2.52.327 3.16a3.02 3.02 0 0 0 1.31 1.31c.642.327 1.48.327 3.16.327h2.4c1.68 0 2.52 0 3.16-.327a3 3 0 0 0 1.31-1.31c.327-.642.327-1.48.327-3.16V8.8c0-1.68 0-2.52-.327-3.16a3 3 0 0 0-1.31-1.31c-.642-.327-1.48-.327-3.16-.327h-2.4c-1.68 0-2.52 0-3.16.327a3.02 3.02 0 0 0-1.31 1.31m6.87-.638h-2.4c-.857 0-1.44 0-1.89.038c-.438.035-.663.1-.819.18a2 2 0 0 0-.874.874c-.08.156-.145.38-.18.819c-.037.45-.038 1.03-.038 1.89v2.4c0 .857.001 1.44.038 1.89c.036.438.101.663.18.819c.192.376.498.682.874.874c.156.08.381.145.819.18c.45.036 1.03.037 1.89.037h2.4c.857 0 1.44 0 1.89-.037c.438-.036.663-.101.819-.18c.376-.192.682-.498.874-.874c.08-.156.145-.381.18-.82c.037-.45.038-1.03.038-1.89v-2.4c0-.856-.001-1.44-.038-1.89c-.036-.437-.101-.662-.18-.818a2 2 0 0 0-.874-.874c-.156-.08-.381-.145-.819-.18c-.45-.037-1.03-.038-1.89-.038" clip-rule="evenodd"></svg:path>`,
-})
-export class QlementineIconsSelectAll16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

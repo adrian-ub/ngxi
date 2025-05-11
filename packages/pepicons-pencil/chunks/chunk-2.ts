@@ -2,6 +2,91 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[pepiconsPencilShieldCheckOffIcon],svg[pepicons-pencil-shield-check-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M11.558 2.332a3.5 3.5 0 0 0-3.115 0L4.807 4.14C3.707 4.686 2.99 5.75 3 6.935c.016 1.776.207 4.132.949 5.688c.824 1.728 2.8 3.456 4.368 4.625c1.007.75 2.357.75 3.364 0c1.567-1.169 3.544-2.897 4.368-4.626c.742-1.555.933-3.91.949-5.687c.01-1.184-.705-2.25-1.806-2.796zm-3.56-.895a4.5 4.5 0 0 1 4.004 0l3.636 1.806c1.402.697 2.375 2.09 2.36 3.7c-.015 1.783-.2 4.337-1.045 6.11c-.94 1.972-3.103 3.826-4.673 4.997a3.794 3.794 0 0 1-4.56 0c-1.57-1.171-3.733-3.025-4.673-4.997C2.2 11.28 2.017 8.726 2 6.943c-.014-1.61.96-3.003 2.361-3.7z" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M12.795 7.884c.212.178.24.494.065.707l-1.78 2.155a1.486 1.486 0 0 1-2.205.097l-1.208-1.22a.505.505 0 0 1-.001-.71a.495.495 0 0 1 .704.002l1.209 1.22c.207.21.548.194.735-.032l1.78-2.156a.495.495 0 0 1 .7-.063" clip-rule="evenodd"></svg:path><svg:path d="M1.15 1.878a.514.514 0 0 1 .728-.727l16.971 16.971a.514.514 0 0 1-.727.727z"></svg:path></svg:g>`,
+})
+export class PepiconsPencilShieldCheckOffIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsPencilShieldCheckeredIcon],svg[pepicons-pencil-shield-checkered-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M11.558 2.332a3.5 3.5 0 0 0-3.115 0L4.807 4.14C3.707 4.686 2.99 5.75 3 6.935c.016 1.776.207 4.132.949 5.688c.824 1.728 2.8 3.456 4.368 4.625c1.007.75 2.357.75 3.364 0c1.567-1.169 3.544-2.897 4.368-4.626c.742-1.555.933-3.91.949-5.687c.01-1.184-.705-2.25-1.806-2.796zm-3.56-.895a4.5 4.5 0 0 1 4.004 0l3.636 1.806c1.402.697 2.375 2.09 2.36 3.7c-.015 1.783-.2 4.337-1.045 6.11c-.94 1.972-3.103 3.826-4.673 4.997a3.794 3.794 0 0 1-4.56 0c-1.57-1.171-3.733-3.025-4.673-4.997C2.2 11.28 2.017 8.726 2 6.943c-.014-1.61.96-3.003 2.361-3.7z" clip-rule="evenodd"></svg:path><svg:path d="m9.505 1.5l3.467 1l3.963 2.368l.496 2.632l-.496 2.5h-6.93a.5.5 0 0 1-.5-.5z"></svg:path><svg:path d="M2.57 9.5H9.5a.5.5 0 0 1 .5.5v8.5L5.542 16L3.56 12.5z"></svg:path></svg:g>`,
+})
+export class PepiconsPencilShieldCheckeredIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsPencilShieldCheckeredCircleIcon],svg[pepicons-pencil-shield-checkered-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M14.558 5.332a3.5 3.5 0 0 0-3.115 0L7.807 7.14C6.707 7.686 5.99 8.75 6 9.935c.016 1.776.207 4.132.949 5.688c.824 1.728 2.8 3.456 4.368 4.625c1.007.75 2.357.75 3.364 0c1.567-1.169 3.544-2.897 4.368-4.626c.742-1.555.933-3.91.949-5.687c.01-1.184-.705-2.25-1.806-2.796zm-3.56-.895a4.5 4.5 0 0 1 4.005 0l3.635 1.806c1.402.697 2.375 2.09 2.36 3.7c-.015 1.783-.2 4.337-1.045 6.11c-.94 1.972-3.103 3.826-4.673 4.997a3.794 3.794 0 0 1-4.56 0c-1.57-1.171-3.733-3.025-4.673-4.997C5.2 14.28 5.017 11.726 5 9.943c-.014-1.61.96-3.003 2.361-3.7z" clip-rule="evenodd"></svg:path><svg:path d="m12.505 4.5l3.467 1l3.963 2.368l.496 2.632l-.496 2.5h-6.93a.5.5 0 0 1-.5-.5z"></svg:path><svg:path d="M5.57 12.5h6.93a.5.5 0 0 1 .5.5v8.5L8.542 19L6.56 15.5z"></svg:path><svg:path fill-rule="evenodd" d="M13 24.5c6.351 0 11.5-5.149 11.5-11.5S19.351 1.5 13 1.5S1.5 6.649 1.5 13S6.649 24.5 13 24.5m0 1c6.904 0 12.5-5.596 12.5-12.5S19.904.5 13 .5S.5 6.096.5 13S6.096 25.5 13 25.5" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class PepiconsPencilShieldCheckeredCircleIcon {
+  readonly viewBox = input("0 0 26 26")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsPencilShieldCheckeredCircleFilledIcon],svg[pepicons-pencil-shield-checkered-circle-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:defs><svg:mask id="pepiconsPencilShieldCheckeredCircleFilled0"><svg:path fill="#fff" d="M0 0h26v26H0z"></svg:path><svg:g fill="#000"><svg:path fill-rule="evenodd" d="M14.558 5.332a3.5 3.5 0 0 0-3.115 0L7.807 7.14C6.707 7.686 5.99 8.75 6 9.935c.016 1.776.207 4.132.949 5.688c.824 1.728 2.8 3.456 4.368 4.625c1.007.75 2.357.75 3.364 0c1.567-1.169 3.544-2.897 4.368-4.626c.742-1.555.933-3.91.949-5.687c.01-1.184-.705-2.25-1.806-2.796zm-3.56-.895a4.5 4.5 0 0 1 4.005 0l3.635 1.806c1.402.697 2.375 2.09 2.36 3.7c-.015 1.783-.2 4.337-1.045 6.11c-.94 1.972-3.103 3.826-4.673 4.997a3.794 3.794 0 0 1-4.56 0c-1.57-1.171-3.733-3.025-4.673-4.997C5.2 14.28 5.017 11.726 5 9.943c-.014-1.61.96-3.003 2.361-3.7z" clip-rule="evenodd"></svg:path><svg:path d="m12.505 4.5l3.467 1l3.963 2.368l.496 2.632l-.496 2.5h-6.93a.5.5 0 0 1-.5-.5z"></svg:path><svg:path d="M5.57 12.5h6.93a.5.5 0 0 1 .5.5v8.5L8.542 19L6.56 15.5z"></svg:path></svg:g></svg:mask></svg:defs><svg:circle cx="13" cy="13" r="13" fill="currentColor" mask="url(#pepiconsPencilShieldCheckeredCircleFilled0)"></svg:circle></svg:g>`,
+})
+export class PepiconsPencilShieldCheckeredCircleFilledIcon {
+  readonly viewBox = input("0 0 26 26")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsPencilShieldCheckeredCircleOffIcon],svg[pepicons-pencil-shield-checkered-circle-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M14.558 5.332a3.5 3.5 0 0 0-3.115 0L7.807 7.14C6.707 7.686 5.99 8.75 6 9.935c.016 1.776.207 4.132.949 5.688c.824 1.728 2.8 3.456 4.368 4.625c1.007.75 2.357.75 3.364 0c1.567-1.169 3.544-2.897 4.368-4.626c.742-1.555.933-3.91.949-5.687c.01-1.184-.705-2.25-1.806-2.796zm-3.56-.895a4.5 4.5 0 0 1 4.005 0l3.635 1.806c1.402.697 2.375 2.09 2.36 3.7c-.015 1.783-.2 4.337-1.045 6.11c-.94 1.972-3.103 3.826-4.673 4.997a3.794 3.794 0 0 1-4.56 0c-1.57-1.171-3.733-3.025-4.673-4.997C5.2 14.28 5.017 11.726 5 9.943c-.014-1.61.96-3.003 2.361-3.7z" clip-rule="evenodd"></svg:path><svg:path d="m12.505 4.5l3.467 1l3.963 2.368l.496 2.632l-.496 2.5h-6.93a.5.5 0 0 1-.5-.5z"></svg:path><svg:path d="M5.57 12.5h6.93a.5.5 0 0 1 .5.5v8.5L8.542 19L6.56 15.5z"></svg:path><svg:path d="M4.15 4.878a.514.514 0 0 1 .728-.727l16.971 16.971a.514.514 0 0 1-.727.727z"></svg:path><svg:path fill-rule="evenodd" d="M13 24.5c6.351 0 11.5-5.149 11.5-11.5S19.351 1.5 13 1.5S1.5 6.649 1.5 13S6.649 24.5 13 24.5m0 1c6.904 0 12.5-5.596 12.5-12.5S19.904.5 13 .5S.5 6.096.5 13S6.096 25.5 13 25.5" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class PepiconsPencilShieldCheckeredCircleOffIcon {
+  readonly viewBox = input("0 0 26 26")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[pepiconsPencilShieldCheckeredOffIcon],svg[pepicons-pencil-shield-checkered-off-icon]',
   host: {
     role: 'img',
@@ -4586,91 +4671,6 @@ export class PepiconsPencilYuanCircleOffIcon {
 })
 export class PepiconsPencilYuanOffIcon {
   readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pepiconsPencilAlarmCircleOffIcon],svg[pepicons-pencil-alarm-circle-off-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M13 7.75a6 6 0 1 0 0 12a6 6 0 0 0 0-12m-7 6a7 7 0 1 1 14 0a7 7 0 0 1-14 0" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M6.146 20.604a.5.5 0 0 0 .708 0l1.5-1.5a.5.5 0 1 0-.708-.707l-1.5 1.5a.5.5 0 0 0 0 .707m11.5-2.207a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1-.708.707l-1.5-1.5a.5.5 0 0 1 0-.707M13 10.25a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M16.5 13.75a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.5" clip-rule="evenodd"></svg:path><svg:path d="M5.381 5.546c2.023-1.931 3.951.376 3.951.376L5.574 9.51s-2.216-2.032-.193-3.964"></svg:path><svg:path fill-rule="evenodd" d="M6.97 5.783c-.225.027-.53.135-.898.487c-.369.352-.49.651-.528.875c-.039.235.001.481.103.735q.026.064.055.125l2.12-2.025a2 2 0 0 0-.122-.06a1.36 1.36 0 0 0-.73-.137m1.602-.518c-.746-.494-1.95-.903-3.19.281s-.888 2.407-.43 3.175c.15.251.312.454.432.59c.113.128.19.2.19.2l3.758-3.59s-.067-.08-.19-.198a4 4 0 0 0-.57-.458" clip-rule="evenodd"></svg:path><svg:path d="M20.619 5.546c-2.023-1.931-3.951.376-3.951.376l3.758 3.588s2.216-2.032.193-3.964"></svg:path><svg:path fill-rule="evenodd" d="M19.03 5.783c.225.027.53.135.898.487c.369.352.49.651.528.875c.039.235-.001.481-.103.735a2 2 0 0 1-.055.125l-2.12-2.025q.06-.032.122-.06c.249-.114.493-.165.73-.137m-1.602-.518c.746-.494 1.95-.903 3.19.281s.888 2.407.43 3.175c-.15.251-.312.454-.432.59c-.113.128-.19.2-.19.2l-3.758-3.59s.067-.08.19-.198c.131-.127.326-.297.57-.458" clip-rule="evenodd"></svg:path><svg:path d="M4.15 4.878a.514.514 0 0 1 .728-.727l16.971 16.971a.514.514 0 0 1-.727.727z"></svg:path><svg:path fill-rule="evenodd" d="M13 24.5c6.351 0 11.5-5.149 11.5-11.5S19.351 1.5 13 1.5S1.5 6.649 1.5 13S6.649 24.5 13 24.5m0 1c6.904 0 12.5-5.596 12.5-12.5S19.904.5 13 .5S.5 6.096.5 13S6.096 25.5 13 25.5" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class PepiconsPencilAlarmCircleOffIcon {
-  readonly viewBox = input("0 0 26 26")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pepiconsPencilAlarmIcon],svg[pepicons-pencil-alarm-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M10 4.75a6 6 0 1 0 0 12a6 6 0 0 0 0-12m-7 6a7 7 0 1 1 14 0a7 7 0 0 1-14 0" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M3.146 17.604a.5.5 0 0 0 .708 0l1.5-1.5a.5.5 0 1 0-.708-.707l-1.5 1.5a.5.5 0 0 0 0 .707m11.5-2.207a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1-.708.707l-1.5-1.5a.5.5 0 0 1 0-.707M10 7.25a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M13.5 10.75a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.5" clip-rule="evenodd"></svg:path><svg:path d="M2.381 2.546c2.023-1.931 3.951.376 3.951.376L2.574 6.51S.358 4.478 2.381 2.546"></svg:path><svg:path fill-rule="evenodd" d="M3.97 2.783c-.225.027-.53.135-.898.487c-.369.352-.49.651-.528.875c-.039.235.001.481.103.735q.026.064.055.125l2.12-2.025a2 2 0 0 0-.122-.06a1.36 1.36 0 0 0-.73-.137m1.602-.518c-.746-.494-1.95-.903-3.19.281s-.888 2.407-.43 3.175a4 4 0 0 0 .622.79l3.758-3.59s-.067-.08-.19-.198a4 4 0 0 0-.57-.458" clip-rule="evenodd"></svg:path><svg:path d="M17.619 2.546c-2.023-1.931-3.951.376-3.951.376l3.758 3.588s2.216-2.032.193-3.964"></svg:path><svg:path fill-rule="evenodd" d="M16.03 2.783c.225.027.53.135.898.487c.369.352.49.651.528.875c.039.235-.001.481-.103.735a2 2 0 0 1-.055.125l-2.12-2.025q.06-.032.122-.06c.249-.114.493-.165.73-.137m-1.602-.518c.746-.494 1.95-.903 3.19.281s.888 2.407.43 3.175c-.15.251-.312.454-.432.59c-.113.128-.19.2-.19.2l-3.758-3.59s.067-.08.19-.198c.131-.127.326-.297.57-.458" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class PepiconsPencilAlarmIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pepiconsPencilAlarmCircleIcon],svg[pepicons-pencil-alarm-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M13 7.75a6 6 0 1 0 0 12a6 6 0 0 0 0-12m-7 6a7 7 0 1 1 14 0a7 7 0 0 1-14 0" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M6.146 20.604a.5.5 0 0 0 .708 0l1.5-1.5a.5.5 0 1 0-.708-.707l-1.5 1.5a.5.5 0 0 0 0 .707m11.5-2.207a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1-.708.707l-1.5-1.5a.5.5 0 0 1 0-.707M13 10.25a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M16.5 13.75a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.5" clip-rule="evenodd"></svg:path><svg:path d="M5.381 5.546c2.023-1.931 3.951.376 3.951.376L5.574 9.51s-2.216-2.032-.193-3.964"></svg:path><svg:path fill-rule="evenodd" d="M6.97 5.783c-.225.027-.53.135-.898.487c-.369.352-.49.651-.528.875c-.039.235.001.481.103.735q.026.064.055.125l2.12-2.025a2 2 0 0 0-.122-.06a1.36 1.36 0 0 0-.73-.137m1.602-.518c-.746-.494-1.95-.903-3.19.281s-.888 2.407-.43 3.175c.15.251.312.454.432.59c.113.128.19.2.19.2l3.758-3.59s-.067-.08-.19-.198a4 4 0 0 0-.57-.458" clip-rule="evenodd"></svg:path><svg:path d="M20.619 5.546c-2.023-1.931-3.951.376-3.951.376l3.758 3.588s2.216-2.032.193-3.964"></svg:path><svg:path fill-rule="evenodd" d="M19.03 5.783c.225.027.53.135.898.487c.369.352.49.651.528.875c.039.235-.001.481-.103.735a2 2 0 0 1-.055.125l-2.12-2.025q.06-.032.122-.06c.249-.114.493-.165.73-.137m-1.602-.518c.746-.494 1.95-.903 3.19.281s.888 2.407.43 3.175c-.15.251-.312.454-.432.59c-.113.128-.19.2-.19.2l-3.758-3.59s.067-.08.19-.198c.131-.127.326-.297.57-.458" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M13 24.5c6.351 0 11.5-5.149 11.5-11.5S19.351 1.5 13 1.5S1.5 6.649 1.5 13S6.649 24.5 13 24.5m0 1c6.904 0 12.5-5.596 12.5-12.5S19.904.5 13 .5S.5 6.096.5 13S6.096 25.5 13 25.5" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class PepiconsPencilAlarmCircleIcon {
-  readonly viewBox = input("0 0 26 26")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pepiconsPencilAirplaneCircleOffIcon],svg[pepicons-pencil-airplane-circle-off-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M13.562 19.285c.03-.502-.083-1.645-.338-3.48l2.652-2.432l1.691 6.053a.5.5 0 0 0 .822.232c1.493-1.386 2.291-2.639 2.36-3.793c.052-.886-.412-2.749-1.397-5.68l.47-.43c2.062-2.062 2.62-3.747 1.417-4.951s-2.89-.646-4.937 1.4l-.445.485c-2.932-.984-4.795-1.449-5.68-1.396c-1.155.069-2.408.866-3.793 2.36a.5.5 0 0 0 .232.821l6.053 1.692l-2.431 2.652c-1.835-.256-2.979-.369-3.482-.339c-.78.047-1.6.57-2.497 1.535a.5.5 0 0 0 .232.822l4.78 1.335l.6.6l1.335 4.78a.5.5 0 0 0 .822.231c.965-.895 1.488-1.716 1.534-2.497m-1.365-3.6c.27 1.91.393 3.11.367 3.541c-.02.332-.225.742-.629 1.217L10.8 16.375a.5.5 0 0 0-.128-.219l-.786-.785a.5.5 0 0 0-.219-.128L5.6 14.107c.475-.404.884-.61 1.217-.63c.431-.025 1.631.097 3.543.368a.5.5 0 0 0 .438-.157l3.16-3.447a.5.5 0 0 0-.234-.82L7.7 7.74c.979-.93 1.83-1.406 2.535-1.448c.734-.043 2.637.44 5.608 1.45a.5.5 0 0 0 .53-.136l.65-.709c1.692-1.69 2.826-2.066 3.508-1.385c.68.681.305 1.815-1.402 3.522l-.693.635a.5.5 0 0 0-.136.53c1.009 2.97 1.493 4.874 1.45 5.608c-.042.704-.518 1.556-1.449 2.534l-1.682-6.02a.5.5 0 0 0-.82-.235l-3.446 3.16a.5.5 0 0 0-.157.44" clip-rule="evenodd"></svg:path><svg:path d="M4.15 4.878a.514.514 0 0 1 .728-.727l16.971 16.971a.514.514 0 0 1-.727.727z"></svg:path><svg:path fill-rule="evenodd" d="M13 24.5c6.351 0 11.5-5.149 11.5-11.5S19.351 1.5 13 1.5S1.5 6.649 1.5 13S6.649 24.5 13 24.5m0 1c6.904 0 12.5-5.596 12.5-12.5S19.904.5 13 .5S.5 6.096.5 13S6.096 25.5 13 25.5" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class PepiconsPencilAirplaneCircleOffIcon {
-  readonly viewBox = input("0 0 26 26")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pepiconsPencilAirplaneCircleIcon],svg[pepicons-pencil-airplane-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M13.562 19.285c.03-.502-.083-1.645-.338-3.48l2.652-2.432l1.691 6.053a.5.5 0 0 0 .822.232c1.493-1.386 2.291-2.639 2.36-3.793c.052-.886-.412-2.749-1.397-5.68l.47-.43c2.062-2.062 2.62-3.747 1.417-4.951s-2.89-.646-4.937 1.4l-.445.485c-2.932-.984-4.795-1.449-5.68-1.396c-1.155.069-2.408.866-3.793 2.36a.5.5 0 0 0 .232.821l6.053 1.692l-2.431 2.652c-1.835-.256-2.979-.369-3.482-.339c-.78.047-1.6.57-2.497 1.535a.5.5 0 0 0 .232.822l4.78 1.335l.6.6l1.335 4.78a.5.5 0 0 0 .822.231c.965-.895 1.488-1.716 1.534-2.497m-1.365-3.6c.27 1.91.393 3.11.367 3.541c-.02.332-.225.742-.629 1.217L10.8 16.375a.5.5 0 0 0-.128-.219l-.786-.785a.5.5 0 0 0-.219-.128L5.6 14.107c.475-.404.884-.61 1.217-.63c.431-.025 1.631.097 3.543.368a.5.5 0 0 0 .438-.157l3.16-3.447a.5.5 0 0 0-.234-.82L7.7 7.74c.979-.93 1.83-1.406 2.535-1.448c.734-.043 2.637.44 5.608 1.45a.5.5 0 0 0 .53-.136l.65-.709c1.692-1.69 2.826-2.066 3.508-1.385c.68.681.305 1.815-1.402 3.522l-.693.635a.5.5 0 0 0-.136.53c1.009 2.97 1.493 4.874 1.45 5.608c-.042.704-.518 1.556-1.449 2.534l-1.682-6.02a.5.5 0 0 0-.82-.235l-3.446 3.16a.5.5 0 0 0-.157.44"></svg:path><svg:path d="M13 24.5c6.351 0 11.5-5.149 11.5-11.5S19.351 1.5 13 1.5S1.5 6.649 1.5 13S6.649 24.5 13 24.5m0 1c6.904 0 12.5-5.596 12.5-12.5S19.904.5 13 .5S.5 6.096.5 13S6.096 25.5 13 25.5"></svg:path></svg:g>`,
-})
-export class PepiconsPencilAirplaneCircleIcon {
-  readonly viewBox = input("0 0 26 26")
   readonly width = input("1em")
   readonly height = input("1em")
 }

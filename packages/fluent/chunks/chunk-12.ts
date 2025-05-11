@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentDocumentBriefcase32RegularIcon],svg[fluent-document-briefcase-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 5a3 3 0 0 1 3-3h10.172a3 3 0 0 1 2.12.879l5.83 5.828A3 3 0 0 1 27 10.828V27a3 3 0 0 1-3 3h-5.713a3.8 3.8 0 0 0 .213-1.25V28H24a1 1 0 0 0 1-1V12h-5a3 3 0 0 1-3-3V4H8a1 1 0 0 0-1 1v9.535a3.5 3.5 0 0 0-2 1.015zm15 5h4.586L19 4.414V9a1 1 0 0 0 1 1M5.5 18v1.5H4.25a2.25 2.25 0 0 0-2.236 2H2v7.25A2.25 2.25 0 0 0 4.25 31h10.5A2.25 2.25 0 0 0 17 28.75V21.5h-.014a2.25 2.25 0 0 0-2.236-2H13.5V18a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2m2-.5h4a.5.5 0 0 1 .5.5v1.5H7V18a.5.5 0 0 1 .5-.5"></svg:path>`,
+})
+export class FluentDocumentBriefcase32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentDocumentBulletList16FilledIcon],svg[fluent-document-bullet-list-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 1v3.5A1.5 1.5 0 0 0 9.5 6H13v7.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 13.5v-11A1.5 1.5 0 0 1 4.5 1zm1 .25V4.5a.5.5 0 0 0 .5.5h3.25zM7 8.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m.5 1.5a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM7 12.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5M5.5 9a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m.5 1.5a.5.5 0 1 0-1 0a.5.5 0 0 0 1 0M5.5 13a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1"></svg:path>`,
+})
+export class FluentDocumentBulletList16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentDocumentBulletList16RegularIcon],svg[fluent-document-bullet-list-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V5.414a1.5 1.5 0 0 0-.44-1.06L9.647 1.439A1.5 1.5 0 0 0 8.586 1zM4 3a1 1 0 0 1 1-1h3v2.5A1.5 1.5 0 0 0 9.5 6H12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zm7.793 2H9.5a.5.5 0 0 1-.5-.5V2.207zM7 7.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M7.5 9a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM7 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M5.5 8a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1M6 9.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0M5.5 12a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1"></svg:path>`,
+})
+export class FluentDocumentBulletList16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentDocumentBulletList20FilledIcon],svg[fluent-document-bullet-list-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 6.5V2H5.5A1.5 1.5 0 0 0 4 3.5v13A1.5 1.5 0 0 0 5.5 18h9a1.5 1.5 0 0 0 1.5-1.5V8h-4.5A1.5 1.5 0 0 1 10 6.5m-4 4a.5.5 0 1 1 1 0a.5.5 0 0 1-1 0m0 2a.5.5 0 1 1 1 0a.5.5 0 0 1-1 0m0 2a.5.5 0 1 1 1 0a.5.5 0 0 1-1 0m2-4a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m3-8V2.25L15.75 7H11.5a.5.5 0 0 1-.5-.5"></svg:path>`,
+})
+export class FluentDocumentBulletList20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentDocumentBulletList20RegularIcon],svg[fluent-document-bullet-list-20-regular-icon]',
   host: {
     role: 'img',
@@ -8428,74 +8496,6 @@ export class FluentDocumentTable16FilledIcon {
 })
 export class FluentDocumentTable16RegularIcon {
   readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentDocumentTable20FilledIcon],svg[fluent-document-table-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9 15v-2h4v1.5a.5.5 0 0 1-.5.5zm4-4.5V12H9v-2h3.5a.5.5 0 0 1 .5.5M7 13h1v2h-.5a.5.5 0 0 1-.5-.5zm1-1v-2h-.5a.5.5 0 0 0-.5.5V12zm2-5.5V2H5.5A1.5 1.5 0 0 0 4 3.5v13A1.5 1.5 0 0 0 5.5 18h9a1.5 1.5 0 0 0 1.5-1.5V8h-4.5A1.5 1.5 0 0 1 10 6.5m-4 4A1.5 1.5 0 0 1 7.5 9h5a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 6 14.5zm5-4V2.25L15.75 7H11.5a.5.5 0 0 1-.5-.5"></svg:path>`,
-})
-export class FluentDocumentTable20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentDocumentTable20RegularIcon],svg[fluent-document-table-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 10.5A1.5 1.5 0 0 1 7.5 9h5a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 6 14.5zM8 15v-2H7v1.5a.5.5 0 0 0 .5.5zm1-3h4v-1.5a.5.5 0 0 0-.5-.5H9zm0 3h3.5a.5.5 0 0 0 .5-.5V13H9zm-1.5-5a.5.5 0 0 0-.5.5V12h1v-2zM6 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7.414a1.5 1.5 0 0 0-.44-1.06l-3.914-3.915A1.5 1.5 0 0 0 10.586 2zM5 4a1 1 0 0 1 1-1h4v3.5A1.5 1.5 0 0 0 11.5 8H15v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1zm9.793 3H11.5a.5.5 0 0 1-.5-.5V3.207z"></svg:path>`,
-})
-export class FluentDocumentTable20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentDocumentTable24FilledIcon],svg[fluent-document-table-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.5 13.25a.25.25 0 0 1 .25-.25H10v1.5H8.5zm0 2.75H10v1.5H8.75a.25.25 0 0 1-.25-.25zm7 1.25V16h-4v1.5h3.75a.25.25 0 0 0 .25-.25m-4-4.25v1.5h4v-1.25a.25.25 0 0 0-.25-.25zm.5-5V2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10h-6a2 2 0 0 1-2-2m-3.25 3.5h6.5c.966 0 1.75.784 1.75 1.75v4A1.75 1.75 0 0 1 15.25 19h-6.5A1.75 1.75 0 0 1 7 17.25v-4c0-.966.784-1.75 1.75-1.75M13.5 8V2.5l6 6H14a.5.5 0 0 1-.5-.5"></svg:path>`,
-})
-export class FluentDocumentTable24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentDocumentTable24RegularIcon],svg[fluent-document-table-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.75 11.5h6.5c.966 0 1.75.784 1.75 1.75v4A1.75 1.75 0 0 1 15.25 19h-6.5A1.75 1.75 0 0 1 7 17.25v-4c0-.966.784-1.75 1.75-1.75m-.25 1.75v1.25H10V13H8.75a.25.25 0 0 0-.25.25m0 2.75v1.25c0 .138.112.25.25.25H10V16zm3 0v1.5h3.75a.25.25 0 0 0 .25-.25V16zm4-1.5v-1.25a.25.25 0 0 0-.25-.25H11.5v1.5zM13.585 2.586l-.049-.04l-.036-.03a2 2 0 0 0-.219-.18a1 1 0 0 0-.08-.044l-.048-.024l-.05-.029c-.054-.031-.109-.063-.166-.087a2 2 0 0 0-.624-.138q-.03-.002-.059-.007L12.172 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9.828a2 2 0 0 0-.586-1.414zM18 20.5H6a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5h6V8a2 2 0 0 0 2 2h4.5v10a.5.5 0 0 1-.5.5m-.622-12H14a.5.5 0 0 1-.5-.5V4.621z"></svg:path>`,
-})
-export class FluentDocumentTable24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
 }

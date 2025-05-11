@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightHumerusAltRoundedIcon],svg[material-symbols-light-humerus-alt-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.35 19.866q-.654 0-1.267-.25q-.614-.249-1.112-.716l-6.775-6.338q-.217-.212-.255-.526q-.037-.315.163-.557l3.99-5.423q.256-.354.675-.424t.793.147q1.627 1.09 2.873 2.615t1.748 3.102q1.034-1.257 2.103-1.9q1.068-.642 3.249-1.219q.54-.142 1.006-.286q.467-.143.89-.285q.379-.142.714.075q.336.217.336.621v5.356q0 .423-.202.789t-.55.584l-6.498 4.086q-.417.262-.888.405q-.47.144-.993.144M9.808 15.5q.31 0 .539-.23t.23-.54v-.09q0-.04-.025-.09q.058.039.115.048q.058.01.116.01q.31 0 .542-.23t.233-.54t-.23-.539t-.54-.23q-.2 0-.358.097q-.159.098-.264.242l-2.595-2.92q.183-.086.306-.264T8 9.827q0-.31-.23-.54t-.54-.23t-.539.23t-.23.54q0 .05.01.08q.01.032.015.082q-.057-.039-.115-.048t-.115-.01q-.31 0-.543.23q-.232.23-.232.539t.23.54t.539.23q.206 0 .374-.098q.168-.097.274-.266l2.614 2.938q-.208.068-.34.258q-.134.19-.134.429q0 .31.23.54t.54.229"></svg:path>`,
-})
-export class MaterialSymbolsLightHumerusAltRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightHumerusOutlineIcon],svg[material-symbols-light-humerus-outline-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightLabsOutlineIcon {
   template: `<svg:path fill="currentColor" d="M12 21q-1.806 0-3.076-1.241t-1.27-3.028V7.654q-.69 0-1.172-.472Q6 6.709 6 6.019V4.654q0-.69.482-1.172T7.654 3h8.673q.69 0 1.182.482q.491.481.491 1.172v1.365q0 .69-.491 1.163q-.492.472-1.182.472v9.365q-.116 1.69-1.367 2.836T12 21M7.654 6.654h8.673q.27 0 .471-.183Q17 6.288 17 6.02V4.654q0-.27-.202-.462T16.327 4H7.654q-.27 0-.462.192T7 4.654v1.365q0 .27.192.452q.192.183.462.183M12 20q1.385 0 2.356-.942t.971-2.327v-.75h-2.693q-.213 0-.356-.143q-.144-.144-.144-.357t.144-.357t.356-.143h2.693v-2.846h-2.692q-.214 0-.357-.144q-.144-.143-.144-.356q0-.214.144-.357q.143-.144.357-.144h2.692v-3.48H8.654v9.077q0 1.384.98 2.327Q10.617 20 12 20M7 6.654V4z"></svg:path>`,
 })
 export class MaterialSymbolsLightLabsOutlineRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightLabsOutlineSharpIcon],svg[material-symbols-light-labs-outline-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 21q-1.804 0-3.075-1.241T7.654 16.73V7.654H6V3h12v4.654h-1.673v9.365q-.116 1.69-1.367 2.836T12 21M7 6.654h10V4H7zM12 20q1.386 0 2.357-.942q.97-.943.97-2.327v-.75h-3.193v-1h3.193v-2.846h-3.192v-1h3.192V7.654H8.654v9.077q0 1.384.976 2.327T12 20M7 6.654V4z"></svg:path>`,
+})
+export class MaterialSymbolsLightLabsOutlineSharpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

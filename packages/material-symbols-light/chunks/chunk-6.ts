@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightContactPageRoundedIcon],svg[material-symbols-light-contact-page-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 13.539q.633 0 1.066-.434t.434-1.066t-.434-1.067q-.433-.433-1.066-.433t-1.066.433t-.434 1.067t.434 1.066q.433.434 1.066.434m-3.5 3.384h7v-.152q0-.465-.248-.792t-.67-.52q-.591-.255-1.24-.396q-.65-.14-1.342-.14t-1.341.14t-1.242.396q-.42.193-.669.52q-.248.327-.248.792zM17.385 21H6.615q-.69 0-1.152-.462T5 19.385V4.615q0-.69.463-1.152T6.616 3h6.29q.323 0 .628.13q.305.132.522.349l4.465 4.465q.218.218.348.522q.131.305.131.628v10.29q0 .691-.462 1.154T17.384 21"></svg:path>`,
-})
-export class MaterialSymbolsLightContactPageRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightContactPageSharpIcon],svg[material-symbols-light-contact-page-sharp-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightDepartureBoardSharpIcon {
   template: `<svg:path fill="currentColor" d="m11.192 20.687l-6.384-3.68q-.38-.217-.593-.59Q4 16.044 4 15.61V8.391q0-.435.215-.808q.214-.373.593-.59l6.384-3.68q.38-.217.808-.217t.808.217l6.384 3.68q.38.216.594.59q.214.373.214.808v7.219q0 .434-.214.807q-.215.373-.594.59l-6.384 3.68q-.38.217-.808.217t-.808-.217m.308-8.4v7.427l.23.132q.135.077.27.077t.27-.077l.23-.132v-7.427L19 8.523v-.242q0-.097-.048-.193t-.144-.153l-.383-.221L12 11.427L5.575 7.714l-.383.22q-.096.058-.144.155Q5 8.185 5 8.28v.242z"></svg:path>`,
 })
 export class MaterialSymbolsLightDeployedCodeIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightDeployedCodeAccountIcon],svg[material-symbols-light-deployed-code-account-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.557 19.948q-.16 0-.32-.037t-.3-.13l-2.347-1.365q-.285-.164-.437-.44Q13 17.698 13 17.37v-2.717q0-.328.153-.604q.152-.276.437-.44l2.346-1.366q.141-.093.301-.13q.161-.037.322-.037t.308.047t.287.12L19.5 13.61q.287.164.451.44t.165.604v2.717q0 .328-.165.604q-.164.277-.451.44l-2.346 1.368q-.137.079-.287.122t-.31.043M3 18.616v-1.647q0-.69.348-1.194t.983-.802q1.217-.592 2.51-.975q1.292-.382 3.159-.382h.235q.111 0 .223.011q-.437 1.108-.38 2.546q.059 1.439.634 2.443zm7-7.231q-1.237 0-2.119-.882T7 8.385t.881-2.12T10 5.386t2.119.88t.881 2.12t-.881 2.118t-2.119.882m4.342 2.773l2.216 1.279l2.215-1.28l-2.215-1.272zm2.658 4.7l2.23-1.288v-2.724L17 16.191zm-3.116-1.281l2.231 1.306v-2.667l-2.23-1.325z"></svg:path>`,
+})
+export class MaterialSymbolsLightDeployedCodeAccountIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

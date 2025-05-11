@@ -19,74 +19,6 @@ export class Icons8AddShoppingCartIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[icons8AdvertisingIcon],svg[icons8-advertising-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m30 4.656l-1.28.375L5.812 12H2v8h3.813l1.968.594l-.03.093v.032c-.642 2.112.547 4.46 2.75 5.124c.01.003.022-.003.03 0c2.123.645 4.473-.53 5.126-2.75l.03-.094l13.033 3.97l1.28.374zm-2 2.688v17.312L6.28 18.03L6.157 18H4v-4h2.156l.125-.03L28 7.343zM9.687 21.187l4.094 1.22l-.03.093v.03c-.344 1.17-1.586 1.742-2.656 1.407c-1.17-.343-1.772-1.554-1.438-2.625v-.03z"></svg:path>`,
-})
-export class Icons8AdvertisingIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icons8AirportIcon],svg[icons8-airport-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16 3c-1.645 0-3 1.355-3 3v7.344l-8.406 3.75l-.594.25v4.78L5.125 22L13 21.125v1.844l-2.563 1.717l-.437.28v4.253l1.188-.25L16 28l4.813.97l1.187.25v-4.25l-.438-.282L19 22.968v-1.843l7.875.875l1.125.125v-4.78l-.594-.25L19 13.344V6c0-1.645-1.355-3-3-3m0 2c.565 0 1 .435 1 1v8.656l.594.25L26 18.656v1.22L18.125 19L17 18.875v5.187l.438.282L20 26.062v.72l-3.813-.75L16 25.97l-.188.06l-3.812.75v-.72l2.563-1.717l.437-.282v-5.186L13.875 19L6 19.875v-1.22l8.406-3.75l.594-.25V6c0-.565.435-1 1-1"></svg:path>`,
-})
-export class Icons8AirportIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icons8AlignCenterIcon],svg[icons8-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 7v2h26V7zm4 4v2h18v-2zm-4 4v2h26v-2zm4 4v2h18v-2zm-4 4v2h26v-2z"></svg:path>`,
-})
-export class Icons8AlignCenterIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icons8AlignJustifyIcon],svg[icons8-align-justify-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 7v2h26V7zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2z"></svg:path>`,
-})
-export class Icons8AlignJustifyIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[icons8AdventuresIcon],svg[icons8-adventures-icon]',
   host: {
     role: 'img',
@@ -121,6 +53,40 @@ export class Icons8AddUserIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[icons8AdvertisingIcon],svg[icons8-advertising-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m30 4.656l-1.28.375L5.812 12H2v8h3.813l1.968.594l-.03.093v.032c-.642 2.112.547 4.46 2.75 5.124c.01.003.022-.003.03 0c2.123.645 4.473-.53 5.126-2.75l.03-.094l13.033 3.97l1.28.374zm-2 2.688v17.312L6.28 18.03L6.157 18H4v-4h2.156l.125-.03L28 7.343zM9.687 21.187l4.094 1.22l-.03.093v.03c-.344 1.17-1.586 1.742-2.656 1.407c-1.17-.343-1.772-1.554-1.438-2.625v-.03z"></svg:path>`,
+})
+export class Icons8AdvertisingIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icons8AirportIcon],svg[icons8-airport-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 3c-1.645 0-3 1.355-3 3v7.344l-8.406 3.75l-.594.25v4.78L5.125 22L13 21.125v1.844l-2.563 1.717l-.437.28v4.253l1.188-.25L16 28l4.813.97l1.187.25v-4.25l-.438-.282L19 22.968v-1.843l7.875.875l1.125.125v-4.78l-.594-.25L19 13.344V6c0-1.645-1.355-3-3-3m0 2c.565 0 1 .435 1 1v8.656l.594.25L26 18.656v1.22L18.125 19L17 18.875v5.187l.438.282L20 26.062v.72l-3.813-.75L16 25.97l-.188.06l-3.812.75v-.72l2.563-1.717l.437-.282v-5.186L13.875 19L6 19.875v-1.22l8.406-3.75l.594-.25V6c0-.565.435-1 1-1"></svg:path>`,
+})
+export class Icons8AirportIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[icons8AlignLeftIcon],svg[icons8-align-left-icon]',
   host: {
     role: 'img',
@@ -138,6 +104,23 @@ export class Icons8AlignLeftIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[icons8AlignJustifyIcon],svg[icons8-align-justify-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 7v2h26V7zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2z"></svg:path>`,
+})
+export class Icons8AlignJustifyIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[icons8AlignRightIcon],svg[icons8-align-right-icon]',
   host: {
     role: 'img',
@@ -148,6 +131,23 @@ export class Icons8AlignLeftIcon {
   template: `<svg:path fill="currentColor" d="M3 7v2h26V7zm8 4v2h18v-2zm-8 4v2h26v-2zm8 4v2h18v-2zm-8 4v2h26v-2z"></svg:path>`,
 })
 export class Icons8AlignRightIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icons8AlignCenterIcon],svg[icons8-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 7v2h26V7zm4 4v2h18v-2zm-4 4v2h26v-2zm4 4v2h18v-2zm-4 4v2h26v-2z"></svg:path>`,
+})
+export class Icons8AlignCenterIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

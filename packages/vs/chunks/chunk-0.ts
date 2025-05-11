@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[vs0SquareIcon],svg[vs-0-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M336 0h1120q139 0 237.5 98.5T1792 336v1120q0 139-98.5 237.5T1456 1792H336q-139 0-237.5-98.5T0 1456V336Q0 197 98.5 98.5T336 0m560 1493q150 0 276.5-80t200.5-217.5t74-299.5t-74-299.5T1172.5 379T896 299t-276.5 80T419 596.5T345 896t74 299.5T619.5 1413t276.5 80m-77-271q40 10 75 10q127 0 216.5-97t89.5-239q0-107-56-195zm154-652q-40-10-75-10q-128 1-217 97.5T592 896q0 107 56 195z"></svg:path>`,
+})
+export class Vs0SquareIcon {
+  readonly viewBox = input("0 0 1792 1792")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vs1SquareIcon],svg[vs-1-square-icon]',
   host: {
     role: 'img',
@@ -19,33 +36,16 @@ export class Vs1SquareIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vs4SquareIcon],svg[vs-4-square-icon]',
+  selector: 'svg[vs3SquareIcon],svg[vs-3-square-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1456 1q139 0 237.5 98t98.5 237v1120q0 139-98.5 237.5T1456 1792H336q-139 0-237.5-98.5T0 1456V336Q0 197 98.5 99T336 1zM384 926q-15 17-24.5 37.5t-15 34.5t-8 41t-3 37.5t0 45.5t.5 44q0 31 20.5 53t49.5 22h576v178q0 30 22.5 52t52.5 22h127q31 0 53-21.5t22-52.5v-178h132q29 0 49.5-22t20.5-53v-105q0-31-20.5-53t-49.5-22h-132V373q0-30-22-52t-53-22h-127q-149 0-171 25zm256 60q106-123 340-401v401z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M1456 0H336Q197 0 98.5 99T0 337v1119q0 139 98.5 237.5T336 1792h1120q139 0 237.5-98.5T1792 1456V337q0-139-98.5-238T1456 0M906 514q0-1-12.5-1.5t-32.5 1t-43.5 5t-47.5 13t-44 23t-32.5 36T681 642q0 12-8.5 18t-15.5 6H434q-11 0-17.5-16t-6.5-28q3-71 32.5-127t75-92t107-60t126-34T885 299q77 0 157.5 16.5T1202 366t129.5 97.5T1382 611q0 182-195 285q195 103 195 285q0 84-50.5 147.5T1202 1426t-159.5 50.5T885 1493q-70 0-134.5-10t-126-34t-107-60t-75-92t-32.5-127q0-12 6.5-27.5T434 1127h223q8 0 16 6t8 18q0 29 12.5 51.5T726 1238t44 22.5t47.5 13t43.5 5t32.5 1.5t12.5-1q51-2 96-17t79-48.5t34-81.5q0-130-184-130H823q-34 0-42.5-8.5T771 953V839q1-32 10-40.5t42-8.5h108q184 0 184-130q-1-70-64-106.5T906 514"></svg:path>`,
 })
-export class Vs4SquareIcon {
-  readonly viewBox = input("0 0 1792 1792")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vs0SquareIcon],svg[vs-0-square-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M336 0h1120q139 0 237.5 98.5T1792 336v1120q0 139-98.5 237.5T1456 1792H336q-139 0-237.5-98.5T0 1456V336Q0 197 98.5 98.5T336 0m560 1493q150 0 276.5-80t200.5-217.5t74-299.5t-74-299.5T1172.5 379T896 299t-276.5 80T419 596.5T345 896t74 299.5T619.5 1413t276.5 80m-77-271q40 10 75 10q127 0 216.5-97t89.5-239q0-107-56-195zm154-652q-40-10-75-10q-128 1-217 97.5T592 896q0 107 56 195z"></svg:path>`,
-})
-export class Vs0SquareIcon {
+export class Vs3SquareIcon {
   readonly viewBox = input("0 0 1792 1792")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,6 +70,23 @@ export class Vs2SquareIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[vs4SquareIcon],svg[vs-4-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1456 1q139 0 237.5 98t98.5 237v1120q0 139-98.5 237.5T1456 1792H336q-139 0-237.5-98.5T0 1456V336Q0 197 98.5 99T336 1zM384 926q-15 17-24.5 37.5t-15 34.5t-8 41t-3 37.5t0 45.5t.5 44q0 31 20.5 53t49.5 22h576v178q0 30 22.5 52t52.5 22h127q31 0 53-21.5t22-52.5v-178h132q29 0 49.5-22t20.5-53v-105q0-31-20.5-53t-49.5-22h-132V373q0-30-22-52t-53-22h-127q-149 0-171 25zm256 60q106-123 340-401v401z"></svg:path>`,
+})
+export class Vs4SquareIcon {
+  readonly viewBox = input("0 0 1792 1792")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vs5SquareIcon],svg[vs-5-square-icon]',
   host: {
     role: 'img',
@@ -80,23 +97,6 @@ export class Vs2SquareIcon {
   template: `<svg:path fill="currentColor" d="M1456 1H336Q197 1 98.5 99T0 336v1120q0 139 98.5 237.5T336 1792h1120q139 0 237.5-98.5T1792 1456V336q0-139-98.5-237T1456 1M400 1208q-7-19-9.5-30t-1-24.5t14.5-20t38-6.5h143q15 0 21 1.5t15.5 11.5t24.5 34q32 53 98.5 85t147.5 32q111 0 190-57.5t79-139.5q0-81-79-138.5T892 898q-95 0-168 43q-9 5-16.5 10.5T697 959t-10 3t-21 1H507q-38 0-66-35.5T413 847l30-479q0-29 22-49t52-20h766q29 0 50.5 21t21.5 50v77q0 29-21.5 50t-50.5 21H683l-14 217q107-40 223-40q139 0 256.5 53.5t186 145.5t68.5 200q0 109-68.5 201t-186 145t-256.5 53q-97 0-194.5-30.5t-181-97.5T400 1208"></svg:path>`,
 })
 export class Vs5SquareIcon {
-  readonly viewBox = input("0 0 1792 1792")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vs3SquareIcon],svg[vs-3-square-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1456 0H336Q197 0 98.5 99T0 337v1119q0 139 98.5 237.5T336 1792h1120q139 0 237.5-98.5T1792 1456V337q0-139-98.5-238T1456 0M906 514q0-1-12.5-1.5t-32.5 1t-43.5 5t-47.5 13t-44 23t-32.5 36T681 642q0 12-8.5 18t-15.5 6H434q-11 0-17.5-16t-6.5-28q3-71 32.5-127t75-92t107-60t126-34T885 299q77 0 157.5 16.5T1202 366t129.5 97.5T1382 611q0 182-195 285q195 103 195 285q0 84-50.5 147.5T1202 1426t-159.5 50.5T885 1493q-70 0-134.5-10t-126-34t-107-60t-75-92t-32.5-127q0-12 6.5-27.5T434 1127h223q8 0 16 6t8 18q0 29 12.5 51.5T726 1238t44 22.5t47.5 13t43.5 5t32.5 1.5t12.5-1q51-2 96-17t79-48.5t34-81.5q0-130-184-130H823q-34 0-42.5-8.5T771 953V839q1-32 10-40.5t42-8.5h108q184 0 184-130q-1-70-64-106.5T906 514"></svg:path>`,
-})
-export class Vs3SquareIcon {
   readonly viewBox = input("0 0 1792 1792")
   readonly width = input("1em")
   readonly height = input("1em")

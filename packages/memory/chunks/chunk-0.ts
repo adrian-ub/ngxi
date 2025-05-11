@@ -19,6 +19,23 @@ export class MemoryAccountBoxIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[memoryAccountIcon],svg[memory-account-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 3h4v1h1v1h1v4h-1v1h-1v1H9v-1H8V9H7V5h1V4h1zm1 5v1h2V8h1V6h-1V5h-2v1H9v2zm-3 4h8v1h2v1h1v1h1v4H3v-4h1v-1h1v-1h2zm-1 4H5v1h12v-1h-1v-1h-2v-1H8v1H6z"></svg:path>`,
+})
+export class MemoryAccountIcon {
+  readonly viewBox = input("0 0 22 22")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[memoryAlertIcon],svg[memory-alert-icon]',
   host: {
     role: 'img',
@@ -53,16 +70,16 @@ export class MemoryAlertBoxIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[memoryAccountIcon],svg[memory-account-icon]',
+  selector: 'svg[memoryAlertCircleIcon],svg[memory-alert-circle-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M9 3h4v1h1v1h1v4h-1v1h-1v1H9v-1H8V9H7V5h1V4h1zm1 5v1h2V8h1V6h-1V5h-2v1H9v2zm-3 4h8v1h2v1h1v1h1v4H3v-4h1v-1h1v-1h2zm-1 4H5v1h12v-1h-1v-1h-2v-1H8v1H6z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M12 12h-2V6h2Zm0 4h-2v-2h2Zm3 5H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2Zm-1-2v-1h2v-1h1v-1h1v-2h1V8h-1V6h-1V5h-1V4h-2V3H8v1H6v1H5v1H4v2H3v6h1v2h1v1h1v1h2v1Z"></svg:path>`,
 })
-export class MemoryAccountIcon {
+export class MemoryAlertCircleIcon {
   readonly viewBox = input("0 0 22 22")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,23 +104,6 @@ export class MemoryAlertBoxFillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[memoryAlertCircleIcon],svg[memory-alert-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 12h-2V6h2Zm0 4h-2v-2h2Zm3 5H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2Zm-1-2v-1h2v-1h1v-1h1v-2h1V8h-1V6h-1V5h-1V4h-2V3H8v1H6v1H5v1H4v2H3v6h1v2h1v1h1v1h2v1Z"></svg:path>`,
-})
-export class MemoryAlertCircleIcon {
-  readonly viewBox = input("0 0 22 22")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[memoryAlertHexagonIcon],svg[memory-alert-hexagon-icon]',
   host: {
     role: 'img',
@@ -114,6 +114,40 @@ export class MemoryAlertCircleIcon {
   template: `<svg:path fill="currentColor" d="M12 12h-2V6h2m0 10h-2v-2h2m0 7h-2v-1H8v-1H6v-1H4v-1H2V5h2V4h2V3h2V2h2V1h2v1h2v1h2v1h2v1h2v12h-2v1h-2v1h-2v1h-2m0-1v-1h2v-1h2v-1h2V6h-2V5h-2V4h-2V3h-2v1H8v1H6v1H4v10h2v1h2v1h2v1Z"></svg:path>`,
 })
 export class MemoryAlertHexagonIcon {
+  readonly viewBox = input("0 0 22 22")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[memoryAlertCircleFillIcon],svg[memory-alert-circle-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15 21H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2Zm-3-9V6h-2v6Zm0 4v-2h-2v2Z"></svg:path>`,
+})
+export class MemoryAlertCircleFillIcon {
+  readonly viewBox = input("0 0 22 22")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[memoryAlertHexagonFillIcon],svg[memory-alert-hexagon-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 21h-2v-1H8v-1H6v-1H4v-1H2V5h2V4h2V3h2V2h2V1h2v1h2v1h2v1h2v1h2v12h-2v1h-2v1h-2v1h-2m0-8V6h-2v6m2 4v-2h-2v2Z"></svg:path>`,
+})
+export class MemoryAlertHexagonFillIcon {
   readonly viewBox = input("0 0 22 22")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8461,40 +8495,6 @@ export class MemoryMenuDownFillIcon {
   template: `<svg:path fill="currentColor" d="M15 4v14h-2v-1h-1v-1h-1v-1h-1v-1H9v-1H8v-1H7v-2h1V9h1V8h1V7h1V6h1V5h1V4zm-2 4h-1v1h-1v1h-1v2h1v1h1v1h1z"></svg:path>`,
 })
 export class MemoryMenuLeftIcon {
-  readonly viewBox = input("0 0 22 22")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[memoryMenuLeftFillIcon],svg[memory-menu-left-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13 17h1V5h-1v1h-1v1h-1v1h-1v1H9v1H8v2h1v1h1v1h1v1h1v1h1"></svg:path>`,
-})
-export class MemoryMenuLeftFillIcon {
-  readonly viewBox = input("0 0 22 22")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[memoryMenuLeftRightIcon],svg[memory-menu-left-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 4h2v1h1v1h1v1h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2zm-2 0v14H8v-1H7v-1H6v-1H5v-1H4v-1H3v-1H2v-2h1V9h1V8h1V7h1V6h1V5h1V4zm4 4v6h1v-1h1v-1h1v-2h-1V9h-1V8zM8 8H7v1H6v1H5v2h1v1h1v1h1z"></svg:path>`,
-})
-export class MemoryMenuLeftRightIcon {
   readonly viewBox = input("0 0 22 22")
   readonly width = input("1em")
   readonly height = input("1em")

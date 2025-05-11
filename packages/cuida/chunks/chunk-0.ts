@@ -2,33 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[cuidaAlertOutlineIcon],svg[cuida-alert-outline-icon]',
+  selector: 'svg[cuidaArrowDownCircleOutlineIcon],svg[cuida-arrow-down-circle-outline-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g class="alert-outline"><svg:g fill="currentColor" class="Vector"><svg:path fill-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-10 8a8 8 0 1 0 0-16a8 8 0 0 0 0 16" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M12 14a1 1 0 0 1-1-1V8a1 1 0 1 1 2 0v5a1 1 0 0 1-1 1" clip-rule="evenodd"></svg:path><svg:path d="M11 16a1 1 0 1 1 2 0a1 1 0 0 1-2 0"></svg:path></svg:g></svg:g>`,
+  template: `<svg:g class="arrow-down-circle-outline"><svg:g fill="currentColor" fill-rule="evenodd" class="Vector" clip-rule="evenodd"><svg:path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-10 8a8 8 0 1 0 0-16a8 8 0 0 0 0 16"></svg:path><svg:path d="M12 17a1 1 0 0 1-1-1V8a1 1 0 1 1 2 0v8a1 1 0 0 1-1 1"></svg:path><svg:path d="M12.707 16.707a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L12 14.586l2.293-2.293a1 1 0 0 1 1.414 1.414z"></svg:path></svg:g></svg:g>`,
 })
-export class CuidaAlertOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cuidaArrowLeftCircleOutlineIcon],svg[cuida-arrow-left-circle-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g class="arrow-left-circle-outline"><svg:g fill="currentColor" fill-rule="evenodd" class="Vector" clip-rule="evenodd"><svg:path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-10 8a8 8 0 1 0 0-16a8 8 0 0 0 0 16"></svg:path><svg:path d="M7 12a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1"></svg:path><svg:path d="M7.293 12.707a1 1 0 0 1 0-1.414l3-3a1 1 0 1 1 1.414 1.414L9.414 12l2.293 2.293a1 1 0 0 1-1.414 1.414z"></svg:path></svg:g></svg:g>`,
-})
-export class CuidaArrowLeftCircleOutlineIcon {
+export class CuidaArrowDownCircleOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,6 +36,40 @@ export class CuidaAmbulanceOutlineIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[cuidaAlertOutlineIcon],svg[cuida-alert-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g class="alert-outline"><svg:g fill="currentColor" class="Vector"><svg:path fill-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-10 8a8 8 0 1 0 0-16a8 8 0 0 0 0 16" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M12 14a1 1 0 0 1-1-1V8a1 1 0 1 1 2 0v5a1 1 0 0 1-1 1" clip-rule="evenodd"></svg:path><svg:path d="M11 16a1 1 0 1 1 2 0a1 1 0 0 1-2 0"></svg:path></svg:g></svg:g>`,
+})
+export class CuidaAlertOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[cuidaArrowDownOutlineIcon],svg[cuida-arrow-down-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 18.714a1 1 0 0 1-1-1v-12.5a1 1 0 1 1 2 0v12.5a1 1 0 0 1-1 1" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M12 20.214a1 1 0 0 1-.707-.292l-4.5-4.5a1 1 0 0 1 1.414-1.415L12 17.8l3.793-3.793a1 1 0 0 1 1.414 1.415l-4.5 4.5a1 1 0 0 1-.707.292" clip-rule="evenodd"></svg:path>`,
+})
+export class CuidaArrowDownOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[cuidaArrowLeftOutlineIcon],svg[cuida-arrow-left-outline-icon]',
   host: {
     role: 'img',
@@ -70,6 +87,40 @@ export class CuidaArrowLeftOutlineIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[cuidaArrowLeftCircleOutlineIcon],svg[cuida-arrow-left-circle-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g class="arrow-left-circle-outline"><svg:g fill="currentColor" fill-rule="evenodd" class="Vector" clip-rule="evenodd"><svg:path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-10 8a8 8 0 1 0 0-16a8 8 0 0 0 0 16"></svg:path><svg:path d="M7 12a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1"></svg:path><svg:path d="M7.293 12.707a1 1 0 0 1 0-1.414l3-3a1 1 0 1 1 1.414 1.414L9.414 12l2.293 2.293a1 1 0 0 1-1.414 1.414z"></svg:path></svg:g></svg:g>`,
+})
+export class CuidaArrowLeftCircleOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[cuidaArrowRightCircleOutlineIcon],svg[cuida-arrow-right-circle-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g class="arrow-right-circle-outline"><svg:g fill="currentColor" fill-rule="evenodd" class="Vector" clip-rule="evenodd"><svg:path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-10 8a8 8 0 1 0 0-16a8 8 0 0 0 0 16"></svg:path><svg:path d="M17 12a1 1 0 0 1-1 1H8a1 1 0 1 1 0-2h8a1 1 0 0 1 1 1"></svg:path><svg:path d="M16.707 11.293a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L14.586 12l-2.293-2.293a1 1 0 0 1 1.414-1.414z"></svg:path></svg:g></svg:g>`,
+})
+export class CuidaArrowRightCircleOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[cuidaArrowRightOutlineIcon],svg[cuida-arrow-right-outline-icon]',
   host: {
     role: 'img',
@@ -80,6 +131,23 @@ export class CuidaArrowLeftOutlineIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M18.5 12.214a1 1 0 0 0-1-1H5a1 1 0 1 0 0 2h12.5a1 1 0 0 0 1-1" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M20 12.214a1 1 0 0 0-.293-.707l-4.5-4.5a1 1 0 1 0-1.414 1.414l3.793 3.793l-3.793 3.793a1 1 0 0 0 1.414 1.415l4.5-4.5a1 1 0 0 0 .293-.708" clip-rule="evenodd"></svg:path>`,
 })
 export class CuidaArrowRightOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[cuidaArrowUpCircleOutlineIcon],svg[cuida-arrow-up-circle-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g class="arrow-up-circle-outline"><svg:g fill="currentColor" fill-rule="evenodd" class="Vector" clip-rule="evenodd"><svg:path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-10 8a8 8 0 1 0 0-16a8 8 0 0 0 0 16"></svg:path><svg:path d="M12 7a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1"></svg:path><svg:path d="M11.293 7.293a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1-1.414 1.414L12 9.414l-2.293 2.293a1 1 0 0 1-1.414-1.414z"></svg:path></svg:g></svg:g>`,
+})
+export class CuidaArrowUpCircleOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -2715,74 +2783,6 @@ export class CuidaXCircleOutlineIcon {
   template: `<svg:g class="x-outline"><svg:g fill="currentColor" fill-rule="evenodd" class="Vector" clip-rule="evenodd"><svg:path d="M5.293 5.293a1 1 0 0 1 1.414 0L19.435 18.02a1 1 0 0 1-1.414 1.414L5.293 6.707a1 1 0 0 1 0-1.414"></svg:path><svg:path d="M19.707 5.293a1 1 0 0 1 0 1.414L6.979 19.435a1 1 0 1 1-1.414-1.414L18.293 5.293a1 1 0 0 1 1.414 0"></svg:path></svg:g></svg:g>`,
 })
 export class CuidaXOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cuidaArrowUpCircleOutlineIcon],svg[cuida-arrow-up-circle-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g class="arrow-up-circle-outline"><svg:g fill="currentColor" fill-rule="evenodd" class="Vector" clip-rule="evenodd"><svg:path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-10 8a8 8 0 1 0 0-16a8 8 0 0 0 0 16"></svg:path><svg:path d="M12 7a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1"></svg:path><svg:path d="M11.293 7.293a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1-1.414 1.414L12 9.414l-2.293 2.293a1 1 0 0 1-1.414-1.414z"></svg:path></svg:g></svg:g>`,
-})
-export class CuidaArrowUpCircleOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cuidaArrowDownCircleOutlineIcon],svg[cuida-arrow-down-circle-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g class="arrow-down-circle-outline"><svg:g fill="currentColor" fill-rule="evenodd" class="Vector" clip-rule="evenodd"><svg:path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-10 8a8 8 0 1 0 0-16a8 8 0 0 0 0 16"></svg:path><svg:path d="M12 17a1 1 0 0 1-1-1V8a1 1 0 1 1 2 0v8a1 1 0 0 1-1 1"></svg:path><svg:path d="M12.707 16.707a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L12 14.586l2.293-2.293a1 1 0 0 1 1.414 1.414z"></svg:path></svg:g></svg:g>`,
-})
-export class CuidaArrowDownCircleOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cuidaArrowDownOutlineIcon],svg[cuida-arrow-down-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 18.714a1 1 0 0 1-1-1v-12.5a1 1 0 1 1 2 0v12.5a1 1 0 0 1-1 1" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M12 20.214a1 1 0 0 1-.707-.292l-4.5-4.5a1 1 0 0 1 1.414-1.415L12 17.8l3.793-3.793a1 1 0 0 1 1.414 1.415l-4.5 4.5a1 1 0 0 1-.707.292" clip-rule="evenodd"></svg:path>`,
-})
-export class CuidaArrowDownOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cuidaArrowRightCircleOutlineIcon],svg[cuida-arrow-right-circle-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g class="arrow-right-circle-outline"><svg:g fill="currentColor" fill-rule="evenodd" class="Vector" clip-rule="evenodd"><svg:path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-10 8a8 8 0 1 0 0-16a8 8 0 0 0 0 16"></svg:path><svg:path d="M17 12a1 1 0 0 1-1 1H8a1 1 0 1 1 0-2h8a1 1 0 0 1 1 1"></svg:path><svg:path d="M16.707 11.293a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L14.586 12l-2.293-2.293a1 1 0 0 1 1.414-1.414z"></svg:path></svg:g></svg:g>`,
-})
-export class CuidaArrowRightCircleOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

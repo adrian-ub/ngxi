@@ -2,16 +2,33 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[ouiAlertIcon],svg[oui-alert-icon]',
+  selector: 'svg[ouiAccessibilityIcon],svg[oui-accessibility-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.59 10.059L7.35 5.18h1.3l-.25 4.88zm.394 1.901a.6.6 0 0 1-.448-.186a.6.6 0 0 1-.186-.444q0-.261.186-.446a.6.6 0 0 1 .448-.184q.253 0 .44.182q.186.182.186.448a.6.6 0 0 1-.189.446a.6.6 0 0 1-.437.184M2 14a1 1 0 0 1-.878-1.479l6-11a1 1 0 0 1 1.756 0l6 11A1 1 0 0 1 14 14zm0-1h12L8 2z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0m0 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.974 4.342a.5.5 0 0 1-.233.596l-.083.036L9 6.86v2.559l.974 2.923a.5.5 0 0 1-.233.596l-.083.036a.5.5 0 0 1-.596-.233l-.036-.083l-1-3L8 9.5l-.026.158l-1 3a.5.5 0 0 1-.97-.228l.022-.088L7 9.416V6.86l-2.658-.886a.5.5 0 0 1 .228-.97l.088.022L7.583 6h.833l2.926-.974a.5.5 0 0 1 .632.316M8 3a1 1 0 1 1 0 2a1 1 0 0 1 0-2"></svg:path>`,
 })
-export class OuiAlertIcon {
+export class OuiAccessibilityIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ouiAggregateIcon],svg[oui-aggregate-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.5 2a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1m0-1a1.5 1.5 0 0 1 1.415 1h1.908a1.5 1.5 0 0 1 1.393.943L8.839 7H12.5a.5.5 0 0 1 0 1H8.839l-1.623 4.057A1.5 1.5 0 0 1 5.823 13H3.915a1.5 1.5 0 1 1 0-1h1.908a.5.5 0 0 0 .464-.314L7.761 8H3.915a1.5 1.5 0 1 1 0-1H7.76L6.287 3.314A.5.5 0 0 0 5.823 3H3.915A1.5 1.5 0 1 1 2.5 1m0 11a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M3 7.5a.5.5 0 1 0-1 0a.5.5 0 0 0 1 0m9.354-3.354a.5.5 0 0 0-.708.708L13.793 7a.707.707 0 0 1 0 1l-2.147 2.146a.5.5 0 0 0 .708.708L14.5 8.707a1.707 1.707 0 0 0 0-2.414z"></svg:path>`,
+})
+export class OuiAggregateIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,23 +53,6 @@ export class OuiAnalyzeEventIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ouiAccessibilityIcon],svg[oui-accessibility-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0m0 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.974 4.342a.5.5 0 0 1-.233.596l-.083.036L9 6.86v2.559l.974 2.923a.5.5 0 0 1-.233.596l-.083.036a.5.5 0 0 1-.596-.233l-.036-.083l-1-3L8 9.5l-.026.158l-1 3a.5.5 0 0 1-.97-.228l.022-.088L7 9.416V6.86l-2.658-.886a.5.5 0 0 1 .228-.97l.088.022L7.583 6h.833l2.926-.974a.5.5 0 0 1 .632.316M8 3a1 1 0 1 1 0 2a1 1 0 0 1 0-2"></svg:path>`,
-})
-export class OuiAccessibilityIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ouiAnnotationIcon],svg[oui-annotation-icon]',
   host: {
     role: 'img',
@@ -70,6 +70,40 @@ export class OuiAnnotationIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[ouiApmTraceIcon],svg[oui-apm-trace-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 0h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.5 2h10a.5.5 0 1 1 0 1h-10a.5.5 0 0 1 0-1m1 3h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1 0-1m2 3h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1m3 3h5a.5.5 0 1 1 0 1h-5a.5.5 0 1 1 0-1"></svg:path>`,
+})
+export class OuiApmTraceIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ouiAnomalyDetectionIcon],svg[oui-anomaly-detection-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 1H2a1 1 0 0 0-1 1v2.5a.5.5 0 1 1-1 0V2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2.5a.5.5 0 1 1-1 0V2a1 1 0 0 0-1-1M.5 9a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9.5a.5.5 0 1 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V9.5A.5.5 0 0 1 .5 9"></svg:path><svg:path fill="currentColor" d="M9.482 3.968a.5.5 0 0 0-.964 0L7.362 8.606l-.915-1.83A.5.5 0 0 0 6 6.5H.5a.5.5 0 0 0 0 1h5.191l1.362 2.724a.5.5 0 0 0 .93-.092L9 6l1.018 4.132a.5.5 0 0 0 .93.092l1.36-2.724H13.5a.5.5 0 1 0 0-1H12a.5.5 0 0 0-.447.276l-.915 1.83z"></svg:path>`,
+})
+export class OuiAnomalyDetectionIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[ouiAppAddDataIcon],svg[oui-app-add-data-icon]',
   host: {
     role: 'img',
@@ -80,6 +114,23 @@ export class OuiAnnotationIcon {
   template: `<svg:g fill="currentColor"><svg:path d="M32 30H0V3h12.57l3 5H32zM2 28h28V10H14.43l-3-5H2z"></svg:path><svg:path d="M21 18h-4v-4h-2v4h-4v2h4v4h2v-4h4z" class="ouiIcon__fillSecondary"></svg:path></svg:g>`,
 })
 export class OuiAppAddDataIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ouiAppAdvancedSettingsIcon],svg[oui-app-advanced-settings-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.909 26.182h1.939v4.848H2.909z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M4.848 16.62V0H2.91v16.62a3.879 3.879 0 1 0 1.94 0m-.97 5.683a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.879"></svg:path><svg:path fill="currentColor" d="M14.545 16.485h1.939V31.03h-1.939z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M16.485 6.924V0h-1.94v6.924a3.879 3.879 0 1 0 1.94 0m-.97 5.682a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.88"></svg:path><svg:path fill="currentColor" d="M26.182 26.182h1.939v4.848h-1.939z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M28.121 16.62V0h-1.94v16.62a3.879 3.879 0 1 0 1.94 0m-.97 5.683a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.879"></svg:path>`,
+})
+export class OuiAppAdvancedSettingsIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -6887,68 +6938,17 @@ export class OuiWsSelectorIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ouiAggregateIcon],svg[oui-aggregate-icon]',
+  selector: 'svg[ouiAlertIcon],svg[oui-alert-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.5 2a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1m0-1a1.5 1.5 0 0 1 1.415 1h1.908a1.5 1.5 0 0 1 1.393.943L8.839 7H12.5a.5.5 0 0 1 0 1H8.839l-1.623 4.057A1.5 1.5 0 0 1 5.823 13H3.915a1.5 1.5 0 1 1 0-1h1.908a.5.5 0 0 0 .464-.314L7.761 8H3.915a1.5 1.5 0 1 1 0-1H7.76L6.287 3.314A.5.5 0 0 0 5.823 3H3.915A1.5 1.5 0 1 1 2.5 1m0 11a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M3 7.5a.5.5 0 1 0-1 0a.5.5 0 0 0 1 0m9.354-3.354a.5.5 0 0 0-.708.708L13.793 7a.707.707 0 0 1 0 1l-2.147 2.146a.5.5 0 0 0 .708.708L14.5 8.707a1.707 1.707 0 0 0 0-2.414z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.59 10.059L7.35 5.18h1.3l-.25 4.88zm.394 1.901a.6.6 0 0 1-.448-.186a.6.6 0 0 1-.186-.444q0-.261.186-.446a.6.6 0 0 1 .448-.184q.253 0 .44.182q.186.182.186.448a.6.6 0 0 1-.189.446a.6.6 0 0 1-.437.184M2 14a1 1 0 0 1-.878-1.479l6-11a1 1 0 0 1 1.756 0l6 11A1 1 0 0 1 14 14zm0-1h12L8 2z"></svg:path>`,
 })
-export class OuiAggregateIcon {
+export class OuiAlertIcon {
   readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiAppAdvancedSettingsIcon],svg[oui-app-advanced-settings-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2.909 26.182h1.939v4.848H2.909z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M4.848 16.62V0H2.91v16.62a3.879 3.879 0 1 0 1.94 0m-.97 5.683a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.879"></svg:path><svg:path fill="currentColor" d="M14.545 16.485h1.939V31.03h-1.939z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M16.485 6.924V0h-1.94v6.924a3.879 3.879 0 1 0 1.94 0m-.97 5.682a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.88"></svg:path><svg:path fill="currentColor" d="M26.182 26.182h1.939v4.848h-1.939z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M28.121 16.62V0h-1.94v16.62a3.879 3.879 0 1 0 1.94 0m-.97 5.683a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.879"></svg:path>`,
-})
-export class OuiAppAdvancedSettingsIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiApmTraceIcon],svg[oui-apm-trace-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2 0h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.5 2h10a.5.5 0 1 1 0 1h-10a.5.5 0 0 1 0-1m1 3h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1 0-1m2 3h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1m3 3h5a.5.5 0 1 1 0 1h-5a.5.5 0 1 1 0-1"></svg:path>`,
-})
-export class OuiApmTraceIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiAnomalyDetectionIcon],svg[oui-anomaly-detection-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 1H2a1 1 0 0 0-1 1v2.5a.5.5 0 1 1-1 0V2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2.5a.5.5 0 1 1-1 0V2a1 1 0 0 0-1-1M.5 9a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9.5a.5.5 0 1 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V9.5A.5.5 0 0 1 .5 9"></svg:path><svg:path fill="currentColor" d="M9.482 3.968a.5.5 0 0 0-.964 0L7.362 8.606l-.915-1.83A.5.5 0 0 0 6 6.5H.5a.5.5 0 0 0 0 1h5.191l1.362 2.724a.5.5 0 0 0 .93-.092L9 6l1.018 4.132a.5.5 0 0 0 .93.092l1.36-2.724H13.5a.5.5 0 1 0 0-1H12a.5.5 0 0 0-.447.276l-.915 1.83z"></svg:path>`,
-})
-export class OuiAnomalyDetectionIcon {
-  readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")
 }

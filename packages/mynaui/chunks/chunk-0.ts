@@ -19,6 +19,23 @@ export class MynauiAArrowDownIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[mynauiAArrowUpIcon],svg[mynaui-a-arrow-up-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.5 13.667L7 7l-2.5 6.667m5 0L10.75 17M9.5 13.667h-5M3.25 17l1.25-3.333M17.25 7.5v9m3.5-6L17.25 7l-3.5 3.5"></svg:path>`,
+})
+export class MynauiAArrowUpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mynauiAArrowUpSolidIcon],svg[mynaui-a-arrow-up-solid-icon]',
   host: {
     role: 'img',
@@ -36,16 +53,16 @@ export class MynauiAArrowUpSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[mynauiAArrowUpIcon],svg[mynaui-a-arrow-up-icon]',
+  selector: 'svg[mynauiAArrowDownSolidIcon],svg[mynaui-a-arrow-down-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.5 13.667L7 7l-2.5 6.667m5 0L10.75 17M9.5 13.667h-5M3.25 17l1.25-3.333M17.25 7.5v9m3.5-6L17.25 7l-3.5 3.5"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M7 6.25a.75.75 0 0 1 .702.487l3.75 10a.75.75 0 0 1-1.404.526L8.98 14.417H5.02l-1.068 2.846a.75.75 0 1 1-1.404-.526l3.75-10A.75.75 0 0 1 7 6.25m1.418 6.667L7 9.136l-1.418 3.78zM17.25 6.75a.75.75 0 0 1 .75.75v4.97h3.28a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 0 1 0-1.06h3.28V7.5a.75.75 0 0 1 .75-.75"></svg:path>`,
 })
-export class MynauiAArrowUpIcon {
+export class MynauiAArrowDownSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -97,40 +114,6 @@ export class MynauiAcademicHatSolidIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0M8 9.5l4 .778m0 0l4-.778m-4 .778v2.333m0 0L10.4 16.5m1.6-3.889l1.6 3.889M12 7.25v.5"></svg:path>`,
 })
 export class MynauiAccessibilityIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mynauiAccessibilitySolidIcon],svg[mynaui-accessibility-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12m10.5-4.75a.75.75 0 0 0-1.5 0v.5a.75.75 0 0 0 1.5 0zM8.143 8.764a.75.75 0 0 0-.286 1.472l3.393.66v1.567l-1.544 3.752a.75.75 0 0 0 1.388.57L12 14.582l.906 2.203a.75.75 0 0 0 1.387-.57l-1.543-3.752v-1.567l3.393-.66a.75.75 0 1 0-.286-1.472L12 9.514z"></svg:path>`,
-})
-export class MynauiAccessibilitySolidIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mynauiAArrowDownSolidIcon],svg[mynaui-a-arrow-down-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7 6.25a.75.75 0 0 1 .702.487l3.75 10a.75.75 0 0 1-1.404.526L8.98 14.417H5.02l-1.068 2.846a.75.75 0 1 1-1.404-.526l3.75-10A.75.75 0 0 1 7 6.25m1.418 6.667L7 9.136l-1.418 3.78zM17.25 6.75a.75.75 0 0 1 .75.75v4.97h3.28a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 0 1 0-1.06h3.28V7.5a.75.75 0 0 1 .75-.75"></svg:path>`,
-})
-export class MynauiAArrowDownSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8495,6 +8478,23 @@ export class MynauiChevronRightWavesIcon {
   template: `<svg:path fill="currentColor" d="M10.565 2.075a3.33 3.33 0 0 1 2.87 0c.394.189.755.497 1.26.928l.079.066c.48.41.939.604 1.58.655l.102.008c.662.053 1.135.09 1.547.236a3.33 3.33 0 0 1 2.03 2.029c.145.412.182.885.235 1.547l.008.102c.051.641.246 1.1.655 1.58l.066.078c.431.506.74.867.928 1.261a3.33 3.33 0 0 1 0 2.87c-.189.394-.497.755-.928 1.26l-.066.079c-.418.49-.605.951-.655 1.58l-.008.102c-.053.662-.09 1.135-.236 1.547a3.33 3.33 0 0 1-2.029 2.03c-.412.145-.885.182-1.547.235l-.102.008c-.641.051-1.1.246-1.58.655l-.079.066c-.505.431-.866.74-1.26.928a3.33 3.33 0 0 1-2.87 0c-.394-.189-.755-.497-1.26-.928l-.079-.066a2.56 2.56 0 0 0-1.58-.655l-.102-.008c-.662-.053-1.135-.09-1.547-.236a3.33 3.33 0 0 1-2.03-2.029c-.145-.412-.182-.885-.235-1.547l-.008-.102a2.56 2.56 0 0 0-.655-1.58l-.066-.079c-.431-.505-.74-.866-.928-1.26a3.33 3.33 0 0 1 0-2.87c.189-.394.497-.755.928-1.26l.066-.079a2.56 2.56 0 0 0 .655-1.58l.008-.102c.053-.662.09-1.135.236-1.547a3.33 3.33 0 0 1 2.029-2.03c.412-.145.885-.182 1.547-.235l.102-.008a2.56 2.56 0 0 0 1.58-.655l.078-.066c.506-.431.867-.74 1.261-.928m.715 5.895a.75.75 0 1 0-1.06 1.06L13.19 12l-2.97 2.97a.75.75 0 1 0 1.06 1.06l3.5-3.5a.75.75 0 0 0 0-1.06z"></svg:path>`,
 })
 export class MynauiChevronRightWavesSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiChevronUpIcon],svg[mynaui-chevron-up-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m18 15l-6-6l-6 6"></svg:path>`,
+})
+export class MynauiChevronUpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

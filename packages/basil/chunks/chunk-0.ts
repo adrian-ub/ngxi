@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[basilAddOutlineIcon],svg[basil-add-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.007 12a.75.75 0 0 1 .75-.75h3.493V7.757a.75.75 0 0 1 1.5 0v3.493h3.493a.75.75 0 1 1 0 1.5H12.75v3.493a.75.75 0 0 1-1.5 0V12.75H7.757a.75.75 0 0 1-.75-.75"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M7.317 3.769a42.5 42.5 0 0 1 9.366 0c1.827.204 3.302 1.643 3.516 3.48c.37 3.157.37 6.346 0 9.503c-.215 1.837-1.69 3.275-3.516 3.48a42.5 42.5 0 0 1-9.366 0c-1.827-.205-3.302-1.643-3.516-3.48a41 41 0 0 1 0-9.503c.214-1.837 1.69-3.276 3.516-3.48m9.2 1.49a41 41 0 0 0-9.034 0A2.486 2.486 0 0 0 5.29 7.424a39.4 39.4 0 0 0 0 9.154a2.486 2.486 0 0 0 2.193 2.164c2.977.332 6.057.332 9.034 0a2.486 2.486 0 0 0 2.192-2.164a39.4 39.4 0 0 0 0-9.154a2.486 2.486 0 0 0-2.192-2.163" clip-rule="evenodd"></svg:path>`,
+})
+export class BasilAddOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[basilAddSolidIcon],svg[basil-add-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.345 4.017a42.3 42.3 0 0 1 9.31 0c1.713.192 3.095 1.541 3.296 3.26a40.7 40.7 0 0 1 0 9.446c-.201 1.719-1.583 3.068-3.296 3.26a42.3 42.3 0 0 1-9.31 0c-1.713-.192-3.095-1.541-3.296-3.26a40.7 40.7 0 0 1 0-9.445a3.734 3.734 0 0 1 3.295-3.26M12 7.007a.75.75 0 0 1 .75.75v3.493h3.493a.75.75 0 1 1 0 1.5H12.75v3.493a.75.75 0 0 1-1.5 0V12.75H7.757a.75.75 0 0 1 0-1.5h3.493V7.757a.75.75 0 0 1 .75-.75" clip-rule="evenodd"></svg:path>`,
+})
+export class BasilAddSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[basilAdobeAfterEffectsOutlineIcon],svg[basil-adobe-after-effects-outline-icon]',
   host: {
     role: 'img',
@@ -12,74 +46,6 @@ import { Component, input } from '@angular/core'
   template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="m11.248 15.5l-.67-2.101H8.222L7.585 15.5H6.188l2.376-7.414h1.727l2.41 7.414zm-2.233-4.95l-.572 1.826h1.903l-.583-1.826a21 21 0 0 1-.31-1.133l-.064-.253h-.022l-.114.465c-.074.31-.15.632-.238.921m8.669 2.079c0 .253-.022.451-.044.572h-3.586c.033.968.792 1.386 1.65 1.386c.627 0 1.078-.088 1.485-.242l.198.935c-.462.187-1.1.341-1.87.341c-1.738 0-2.761-1.078-2.761-2.717c0-1.485.902-2.882 2.618-2.882c1.749 0 2.31 1.43 2.31 2.607m-2.387-1.683c-.836 0-1.188.759-1.243 1.309h2.354c.01-.495-.21-1.309-1.111-1.309"></svg:path><svg:path d="M17.258 2.833a47.7 47.7 0 0 0-10.516 0c-2.012.225-3.637 1.81-3.873 3.832a46 46 0 0 0 0 10.67c.236 2.022 1.86 3.607 3.873 3.832a47.8 47.8 0 0 0 10.516 0c2.012-.225 3.637-1.81 3.873-3.832a46 46 0 0 0 0-10.67c-.236-2.022-1.86-3.607-3.873-3.832m-10.35 1.49a46.2 46.2 0 0 1 10.184 0c1.33.15 2.395 1.199 2.55 2.517a44.4 44.4 0 0 1 0 10.32a2.89 2.89 0 0 1-2.55 2.516a46.2 46.2 0 0 1-10.184 0a2.89 2.89 0 0 1-2.55-2.516a44.4 44.4 0 0 1 0-10.32a2.89 2.89 0 0 1 2.55-2.516"></svg:path></svg:g>`,
 })
 export class BasilAdobeAfterEffectsOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[basilAdobeExperinceDesignOutlineIcon],svg[basil-adobe-experince-design-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M16.076 10.726V7.69h1.353v6.303c0 .55.022 1.144.044 1.507h-1.21l-.055-.847h-.022c-.32.594-.968.968-1.75.968c-1.275 0-2.287-1.089-2.287-2.739c-.011-1.793 1.11-2.86 2.398-2.86c.737 0 1.265.308 1.507.704zm-.044 2.849c.033-.121.044-.253.044-.396v-.803c0-.11-.011-.242-.033-.352c-.121-.528-.55-.957-1.166-.957c-.87 0-1.353.77-1.353 1.771c0 .979.484 1.694 1.342 1.694c.55 0 1.034-.374 1.166-.957" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="m9.904 11.705l2.255 3.795h-1.562l-.803-1.474a27 27 0 0 1-.737-1.397h-.033c-.176.429-.374.825-.671 1.397L7.616 15.5H6.065l2.2-3.751l-2.112-3.663h1.55l.804 1.529c.242.462.418.825.616 1.243h.022c.198-.462.352-.792.583-1.243l.792-1.529h1.55z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M17.258 2.833a47.7 47.7 0 0 0-10.516 0c-2.012.225-3.637 1.81-3.873 3.832a46 46 0 0 0 0 10.67c.236 2.022 1.86 3.607 3.873 3.832a47.8 47.8 0 0 0 10.516 0c2.012-.225 3.637-1.81 3.873-3.832a46 46 0 0 0 0-10.67c-.236-2.022-1.86-3.607-3.873-3.832m-10.35 1.49a46.2 46.2 0 0 1 10.184 0c1.33.15 2.395 1.199 2.55 2.517a44.4 44.4 0 0 1 0 10.32a2.89 2.89 0 0 1-2.55 2.516a46.2 46.2 0 0 1-10.184 0a2.89 2.89 0 0 1-2.55-2.516a44.4 44.4 0 0 1 0-10.32a2.89 2.89 0 0 1 2.55-2.516" clip-rule="evenodd"></svg:path>`,
-})
-export class BasilAdobeExperinceDesignOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[basilAdobeExperinceDesignSolidIcon],svg[basil-adobe-experince-design-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16.032 13.575c.033-.121.044-.253.044-.396v-.803c0-.11-.011-.242-.033-.352c-.121-.528-.55-.957-1.166-.957c-.87 0-1.353.77-1.353 1.771c0 .979.484 1.694 1.342 1.694c.55 0 1.034-.374 1.166-.957"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082m9.306 7.644V7.69h1.353v6.303c0 .55.022 1.144.044 1.507h-1.21l-.055-.847h-.022c-.32.594-.968.968-1.75.968c-1.275 0-2.287-1.089-2.287-2.739c-.011-1.793 1.11-2.86 2.398-2.86c.737 0 1.265.308 1.507.704zm-6.172.979l2.255 3.795h-1.562l-.803-1.474a27 27 0 0 1-.737-1.397h-.033c-.176.429-.374.825-.671 1.397L7.616 15.5H6.065l2.2-3.751l-2.112-3.663h1.55l.804 1.529c.242.462.418.825.616 1.243h.022c.198-.462.352-.792.583-1.243l.792-1.529h1.55z" clip-rule="evenodd"></svg:path>`,
-})
-export class BasilAdobeExperinceDesignSolidIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[basilAdobeIllustratorOutlineIcon],svg[basil-adobe-illustrator-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15.933 10.143V15.5h-1.364v-5.357zm-1.441-1.496c0-.418.307-.737.758-.737c.463 0 .749.319.76.737c0 .407-.298.726-.77.726c-.451 0-.748-.319-.748-.726"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="m12.634 15.5l-.671-2.101H9.609L8.971 15.5H7.574L9.95 8.086h1.727l2.409 7.414zm-2.233-4.95l-.572 1.826h1.903l-.583-1.826c-.116-.365-.217-.766-.31-1.133l-.064-.253h-.022q-.056.222-.114.465c-.074.31-.151.632-.238.921" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M17.258 2.833a47.7 47.7 0 0 0-10.516 0c-2.012.225-3.637 1.81-3.873 3.832a46 46 0 0 0 0 10.67c.236 2.022 1.86 3.607 3.873 3.832a47.8 47.8 0 0 0 10.516 0c2.012-.225 3.637-1.81 3.873-3.832a46 46 0 0 0 0-10.67c-.236-2.022-1.86-3.607-3.873-3.832m-10.35 1.49a46.2 46.2 0 0 1 10.184 0c1.33.15 2.395 1.199 2.55 2.517a44.4 44.4 0 0 1 0 10.32a2.89 2.89 0 0 1-2.55 2.516a46.2 46.2 0 0 1-10.184 0a2.89 2.89 0 0 1-2.55-2.516a44.4 44.4 0 0 1 0-10.32a2.89 2.89 0 0 1 2.55-2.516" clip-rule="evenodd"></svg:path>`,
-})
-export class BasilAdobeIllustratorOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[basilAdobeIllustratorSolidIcon],svg[basil-adobe-illustrator-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m10.401 10.55l-.572 1.826h1.903l-.583-1.826c-.116-.365-.217-.766-.31-1.133l-.064-.253h-.022q-.056.222-.114.465c-.074.31-.151.632-.238.921"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082m9.162 7.061V15.5h-1.364v-5.357zm-1.44-1.496c0-.418.307-.737.758-.737c.463 0 .749.319.76.737c0 .407-.298.726-.77.726c-.451 0-.748-.319-.748-.726M12.634 15.5l-.671-2.101H9.609L8.971 15.5H7.574L9.95 8.086h1.727l2.409 7.414z" clip-rule="evenodd"></svg:path>`,
-})
-export class BasilAdobeIllustratorSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,16 +70,16 @@ export class BasilAdobeAfterEffectsSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[basilAddOutlineIcon],svg[basil-add-outline-icon]',
+  selector: 'svg[basilAdobeExperinceDesignOutlineIcon],svg[basil-adobe-experince-design-outline-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M7.007 12a.75.75 0 0 1 .75-.75h3.493V7.757a.75.75 0 0 1 1.5 0v3.493h3.493a.75.75 0 1 1 0 1.5H12.75v3.493a.75.75 0 0 1-1.5 0V12.75H7.757a.75.75 0 0 1-.75-.75"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M7.317 3.769a42.5 42.5 0 0 1 9.366 0c1.827.204 3.302 1.643 3.516 3.48c.37 3.157.37 6.346 0 9.503c-.215 1.837-1.69 3.275-3.516 3.48a42.5 42.5 0 0 1-9.366 0c-1.827-.205-3.302-1.643-3.516-3.48a41 41 0 0 1 0-9.503c.214-1.837 1.69-3.276 3.516-3.48m9.2 1.49a41 41 0 0 0-9.034 0A2.486 2.486 0 0 0 5.29 7.424a39.4 39.4 0 0 0 0 9.154a2.486 2.486 0 0 0 2.193 2.164c2.977.332 6.057.332 9.034 0a2.486 2.486 0 0 0 2.192-2.164a39.4 39.4 0 0 0 0-9.154a2.486 2.486 0 0 0-2.192-2.163" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M16.076 10.726V7.69h1.353v6.303c0 .55.022 1.144.044 1.507h-1.21l-.055-.847h-.022c-.32.594-.968.968-1.75.968c-1.275 0-2.287-1.089-2.287-2.739c-.011-1.793 1.11-2.86 2.398-2.86c.737 0 1.265.308 1.507.704zm-.044 2.849c.033-.121.044-.253.044-.396v-.803c0-.11-.011-.242-.033-.352c-.121-.528-.55-.957-1.166-.957c-.87 0-1.353.77-1.353 1.771c0 .979.484 1.694 1.342 1.694c.55 0 1.034-.374 1.166-.957" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="m9.904 11.705l2.255 3.795h-1.562l-.803-1.474a27 27 0 0 1-.737-1.397h-.033c-.176.429-.374.825-.671 1.397L7.616 15.5H6.065l2.2-3.751l-2.112-3.663h1.55l.804 1.529c.242.462.418.825.616 1.243h.022c.198-.462.352-.792.583-1.243l.792-1.529h1.55z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M17.258 2.833a47.7 47.7 0 0 0-10.516 0c-2.012.225-3.637 1.81-3.873 3.832a46 46 0 0 0 0 10.67c.236 2.022 1.86 3.607 3.873 3.832a47.8 47.8 0 0 0 10.516 0c2.012-.225 3.637-1.81 3.873-3.832a46 46 0 0 0 0-10.67c-.236-2.022-1.86-3.607-3.873-3.832m-10.35 1.49a46.2 46.2 0 0 1 10.184 0c1.33.15 2.395 1.199 2.55 2.517a44.4 44.4 0 0 1 0 10.32a2.89 2.89 0 0 1-2.55 2.516a46.2 46.2 0 0 1-10.184 0a2.89 2.89 0 0 1-2.55-2.516a44.4 44.4 0 0 1 0-10.32a2.89 2.89 0 0 1 2.55-2.516" clip-rule="evenodd"></svg:path>`,
 })
-export class BasilAddOutlineIcon {
+export class BasilAdobeExperinceDesignOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8417,16 +8383,50 @@ export class BasilZoomOutSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[basilAddSolidIcon],svg[basil-add-solid-icon]',
+  selector: 'svg[basilAdobeIllustratorOutlineIcon],svg[basil-adobe-illustrator-outline-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.345 4.017a42.3 42.3 0 0 1 9.31 0c1.713.192 3.095 1.541 3.296 3.26a40.7 40.7 0 0 1 0 9.446c-.201 1.719-1.583 3.068-3.296 3.26a42.3 42.3 0 0 1-9.31 0c-1.713-.192-3.095-1.541-3.296-3.26a40.7 40.7 0 0 1 0-9.445a3.734 3.734 0 0 1 3.295-3.26M12 7.007a.75.75 0 0 1 .75.75v3.493h3.493a.75.75 0 1 1 0 1.5H12.75v3.493a.75.75 0 0 1-1.5 0V12.75H7.757a.75.75 0 0 1 0-1.5h3.493V7.757a.75.75 0 0 1 .75-.75" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M15.933 10.143V15.5h-1.364v-5.357zm-1.441-1.496c0-.418.307-.737.758-.737c.463 0 .749.319.76.737c0 .407-.298.726-.77.726c-.451 0-.748-.319-.748-.726"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="m12.634 15.5l-.671-2.101H9.609L8.971 15.5H7.574L9.95 8.086h1.727l2.409 7.414zm-2.233-4.95l-.572 1.826h1.903l-.583-1.826c-.116-.365-.217-.766-.31-1.133l-.064-.253h-.022q-.056.222-.114.465c-.074.31-.151.632-.238.921" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M17.258 2.833a47.7 47.7 0 0 0-10.516 0c-2.012.225-3.637 1.81-3.873 3.832a46 46 0 0 0 0 10.67c.236 2.022 1.86 3.607 3.873 3.832a47.8 47.8 0 0 0 10.516 0c2.012-.225 3.637-1.81 3.873-3.832a46 46 0 0 0 0-10.67c-.236-2.022-1.86-3.607-3.873-3.832m-10.35 1.49a46.2 46.2 0 0 1 10.184 0c1.33.15 2.395 1.199 2.55 2.517a44.4 44.4 0 0 1 0 10.32a2.89 2.89 0 0 1-2.55 2.516a46.2 46.2 0 0 1-10.184 0a2.89 2.89 0 0 1-2.55-2.516a44.4 44.4 0 0 1 0-10.32a2.89 2.89 0 0 1 2.55-2.516" clip-rule="evenodd"></svg:path>`,
 })
-export class BasilAddSolidIcon {
+export class BasilAdobeIllustratorOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[basilAdobeIllustratorSolidIcon],svg[basil-adobe-illustrator-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m10.401 10.55l-.572 1.826h1.903l-.583-1.826c-.116-.365-.217-.766-.31-1.133l-.064-.253h-.022q-.056.222-.114.465c-.074.31-.151.632-.238.921"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082m9.162 7.061V15.5h-1.364v-5.357zm-1.44-1.496c0-.418.307-.737.758-.737c.463 0 .749.319.76.737c0 .407-.298.726-.77.726c-.451 0-.748-.319-.748-.726M12.634 15.5l-.671-2.101H9.609L8.971 15.5H7.574L9.95 8.086h1.727l2.409 7.414z" clip-rule="evenodd"></svg:path>`,
+})
+export class BasilAdobeIllustratorSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[basilAdobeExperinceDesignSolidIcon],svg[basil-adobe-experince-design-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.032 13.575c.033-.121.044-.253.044-.396v-.803c0-.11-.011-.242-.033-.352c-.121-.528-.55-.957-1.166-.957c-.87 0-1.353.77-1.353 1.771c0 .979.484 1.694 1.342 1.694c.55 0 1.034-.374 1.166-.957"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082m9.306 7.644V7.69h1.353v6.303c0 .55.022 1.144.044 1.507h-1.21l-.055-.847h-.022c-.32.594-.968.968-1.75.968c-1.275 0-2.287-1.089-2.287-2.739c-.011-1.793 1.11-2.86 2.398-2.86c.737 0 1.265.308 1.507.704zm-6.172.979l2.255 3.795h-1.562l-.803-1.474a27 27 0 0 1-.737-1.397h-.033c-.176.429-.374.825-.671 1.397L7.616 15.5H6.065l2.2-3.751l-2.112-3.663h1.55l.804 1.529c.242.462.418.825.616 1.243h.022c.198-.462.352-.792.583-1.243l.792-1.529h1.55z" clip-rule="evenodd"></svg:path>`,
+})
+export class BasilAdobeExperinceDesignSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

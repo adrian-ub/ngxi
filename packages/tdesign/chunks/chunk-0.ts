@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[tdesignAccessibilityIcon],svg[tdesign-accessibility-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 2a1.25 1.25 0 1 1 0 2.5A1.25 1.25 0 0 1 12 2M8.75 3.25a3.25 3.25 0 1 0 6.5 0a3.25 3.25 0 0 0-6.5 0m-6.5 6.375A2.625 2.625 0 0 1 4.875 7h14.25a2.625 2.625 0 0 1 0 5.25h-2.628l1.823 8.208a2.5 2.5 0 0 1-2.44 3.042h-2.142L12 17.198L10.261 23.5H8.12a2.5 2.5 0 0 1-2.44-3.042l1.823-8.208H4.875A2.625 2.625 0 0 1 2.25 9.625M4.875 9a.625.625 0 1 0 0 1.25h5.122L7.632 20.892a.5.5 0 0 0 .488.608h.619l2-7.25h2.522l2 7.25h.62a.5.5 0 0 0 .487-.608L14.003 10.25h5.122a.625.625 0 1 0 0-1.25z"></svg:path>`,
-})
-export class TdesignAccessibilityIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[tdesignActivityFilledIcon],svg[tdesign-activity-filled-icon]',
   host: {
     role: 'img',
@@ -36,16 +19,16 @@ export class TdesignActivityFilledIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tdesignAddCircleIcon],svg[tdesign-add-circle-icon]',
+  selector: 'svg[tdesignAccessibilityIcon],svg[tdesign-accessibility-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m12-5.5V11h4.5v2H13v4.5h-2V13H6.5v-2H11V6.5z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M12 2a1.25 1.25 0 1 1 0 2.5A1.25 1.25 0 0 1 12 2M8.75 3.25a3.25 3.25 0 1 0 6.5 0a3.25 3.25 0 0 0-6.5 0m-6.5 6.375A2.625 2.625 0 0 1 4.875 7h14.25a2.625 2.625 0 0 1 0 5.25h-2.628l1.823 8.208a2.5 2.5 0 0 1-2.44 3.042h-2.142L12 17.198L10.261 23.5H8.12a2.5 2.5 0 0 1-2.44-3.042l1.823-8.208H4.875A2.625 2.625 0 0 1 2.25 9.625M4.875 9a.625.625 0 1 0 0 1.25h5.122L7.632 20.892a.5.5 0 0 0 .488.608h.619l2-7.25h2.522l2 7.25h.62a.5.5 0 0 0 .487-.608L14.003 10.25h5.122a.625.625 0 1 0 0-1.25z"></svg:path>`,
 })
-export class TdesignAddCircleIcon {
+export class TdesignAccessibilityIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,16 +36,33 @@ export class TdesignAddCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tdesignAddIcon],svg[tdesign-add-icon]',
+  selector: 'svg[tdesignActivityIcon],svg[tdesign-activity-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 4v7h7v2h-7v7h-2v-7H4v-2h7V4z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M22 2H2v20h20zm-2 2v7h-2.554l-2.021 3.233l-5.865-7.82L5.546 11H4V4zM4 13h2.454L9.44 9.587l6.135 8.18L18.555 13H20v7H4z"></svg:path>`,
 })
-export class TdesignAddIcon {
+export class TdesignActivityIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tdesignAccessibilityFilledIcon],svg[tdesign-accessibility-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 4.5A2.25 2.25 0 1 0 12 0a2.25 2.25 0 0 0 0 4.5M21.75 7V5.5H2.25V7l6.5 1.75L9 12L4.75 22.75l1.5.75l5.745-9h.01l5.745 9l1.5-.75L15 12l.25-3.25z"></svg:path>`,
+})
+export class TdesignAccessibilityFilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,16 +87,16 @@ export class TdesignAddCircleFilledIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tdesignAddAndSubtractIcon],svg[tdesign-add-and-subtract-icon]',
+  selector: 'svg[tdesignAddCircleIcon],svg[tdesign-add-circle-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 1v8h8v2h-8v8h-2v-8H3V9h8V1zM3 20h18v2H3z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m12-5.5V11h4.5v2H13v4.5h-2V13H6.5v-2H11V6.5z"></svg:path>`,
 })
-export class TdesignAddAndSubtractIcon {
+export class TdesignAddCircleIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,16 +121,33 @@ export class TdesignAddRectangleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tdesignAccessibilityFilledIcon],svg[tdesign-accessibility-filled-icon]',
+  selector: 'svg[tdesignAddIcon],svg[tdesign-add-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M12 4.5A2.25 2.25 0 1 0 12 0a2.25 2.25 0 0 0 0 4.5M21.75 7V5.5H2.25V7l6.5 1.75L9 12L4.75 22.75l1.5.75l5.745-9h.01l5.745 9l1.5-.75L15 12l.25-3.25z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M13 4v7h7v2h-7v7h-2v-7H4v-2h7V4z"></svg:path>`,
 })
-export class TdesignAccessibilityFilledIcon {
+export class TdesignAddIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tdesignAddAndSubtractIcon],svg[tdesign-add-and-subtract-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 1v8h8v2h-8v8h-2v-8H3V9h8V1zM3 20h18v2H3z"></svg:path>`,
+})
+export class TdesignAddAndSubtractIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8478,23 +8495,6 @@ export class TdesignCloudyNightIcon {
   template: `<svg:path fill="currentColor" d="m16.133.92l-.102 1.186q-.017.194-.017.393a4.506 4.506 0 0 0 4.9 4.49l1.185-.103l-.103 1.185a6.5 6.5 0 0 1-2.162 4.3a5.2 5.2 0 0 1 1.186 3.31c0 2.983-2.501 5.338-5.505 5.338H5.604C3.097 21.019 1 19.052 1 16.549c0-1.833 1.126-3.38 2.709-4.076a6 6 0 0 1-.006-.263c0-3.147 2.399-5.7 5.464-6.139a6.51 6.51 0 0 1 5.782-5.048zM10.11 8.005h-.064c-2.44.034-4.342 1.938-4.342 4.206q0 .395.073.766l.184.956l-.95.21C3.833 14.402 3 15.403 3 16.548c0 1.33 1.13 2.47 2.604 2.47h9.91c1.972 0 3.506-1.53 3.506-3.338c0-1.052-.512-2-1.333-2.62a3.6 3.6 0 0 0-2.231-.718l-.855.014l-.146-.841c-.283-1.624-1.553-2.96-3.239-3.377a4.6 4.6 0 0 0-1.107-.134"></svg:path>`,
 })
 export class TdesignCloudyNightFilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tdesignCloudyNightRainIcon],svg[tdesign-cloudy-night-rain-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m17.131.901l-.102 1.185q-.017.194-.017.394a4.505 4.505 0 0 0 4.899 4.488l1.185-.102l-.103 1.184a6.5 6.5 0 0 1-2.162 4.3a5.2 5.2 0 0 1 1.186 3.309c0 2.212-1.383 4.085-3.316 4.898l-.921.388l-.776-1.844l.922-.387c1.25-.526 2.09-1.71 2.09-3.055c0-1.052-.51-2-1.332-2.62a3.6 3.6 0 0 0-2.172-.718h-.059l-.854.014l-.146-.842C15.17 9.87 13.9 8.535 12.215 8.118a4.6 4.6 0 0 0-1.172-.134c-2.438.034-4.34 1.938-4.34 4.205q0 .393.072.766l.184.956l-.95.21C4.833 14.38 4 15.38 4 16.526c0 .948.567 1.793 1.434 2.207l.902.432l-.864 1.804l-.902-.431C3.064 19.817 2 18.303 2 16.526c0-1.831 1.126-3.378 2.708-4.074a6 6 0 0 1-.005-.263c0-3.146 2.398-5.699 5.463-6.138a6.51 6.51 0 0 1 5.78-5.047zm-4.9 5.178q.234.041.463.097c2.15.531 3.883 2.122 4.538 4.19a5.6 5.6 0 0 1 2.045.676a4.5 4.5 0 0 0 1.5-2.099a6.51 6.51 0 0 1-5.723-5.722a4.52 4.52 0 0 0-2.823 2.858m.765 7.897H15v2.003h-2.004zm-4.996 2h2.004v2.003H8zm5 3h2.004v2.003H13zm-5 2h2.004v2.003H8z"></svg:path>`,
-})
-export class TdesignCloudyNightRainIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

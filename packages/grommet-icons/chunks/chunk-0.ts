@@ -2,50 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[grommetIconsAdIcon],svg[grommet-icons-ad-icon]',
+  selector: 'svg[grommetIconsAccessibilityIcon],svg[grommet-icons-accessibility-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 10h4v4h-4zm4 8h-4a4 4 0 0 1-4-4v-4a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v4m-4 8h-4a8 8 0 0 1-8-8v-4a8 8 0 0 1 8-8h4a8 8 0 0 1 8 8v4"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h7v6l-4 7M20 8h-7v6l4 7M12 5a1 1 0 1 0 0-2a1 1 0 0 0 0 2m-1 3h2v5h-2z"></svg:path>`,
 })
-export class GrommetIconsAdIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[grommetIconsAddIcon],svg[grommet-icons-add-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-width="2" d="M12 22V2M2 12h20"></svg:path>`,
-})
-export class GrommetIconsAddIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[grommetIconsActionsIcon],svg[grommet-icons-actions-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-width="2" d="M12 17.5a5.5 5.5 0 1 0 0-11a5.5 5.5 0 0 0 0 11Zm0-11V1m0 22v-5.5M1 12h5.5m11 0H23M4.438 4.438l4.125 4.125m6.874 6.874l4.126 4.126m0-15.125l-4.125 4.125m-6.876 6.874l-4.124 4.126"></svg:path>`,
-})
-export class GrommetIconsActionsIcon {
+export class GrommetIconsAccessibilityIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,16 +36,84 @@ export class GrommetIconsAchievementIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[grommetIconsAedIcon],svg[grommet-icons-aed-icon]',
+  selector: 'svg[grommetIconsActionIcon],svg[grommet-icons-action-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-width="2" d="M2 8.4C2 4 5 3 7 3s4 2 5 3.5C13 5 15 3 17 3s5 1 5 5.4C22 15 12 21 12 21S2 15 2 8.4ZM12 6c-.5-.5-2 4-2 4h2v2.5L14 9h-2s1-6 5-6c-4 0-5 3-5 3Z"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-width="2" d="m1 23l3-3zM20 4l3-3zM9 11l3-3zm4 4l3-3zM10 5l9 9l1-1c2-2 4.053-5 0-9s-7-2-9 0zm-6 6l1-1l9 9l-1 1c-2 2-5 4.087-9 0s-2-7 0-9Z"></svg:path>`,
 })
-export class GrommetIconsAedIcon {
+export class GrommetIconsActionIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[grommetIconsActionsIcon],svg[grommet-icons-actions-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-width="2" d="M12 17.5a5.5 5.5 0 1 0 0-11a5.5 5.5 0 0 0 0 11Zm0-11V1m0 22v-5.5M1 12h5.5m11 0H23M4.438 4.438l4.125 4.125m6.874 6.874l4.126 4.126m0-15.125l-4.125 4.125m-6.876 6.874l-4.124 4.126"></svg:path>`,
+})
+export class GrommetIconsActionsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[grommetIconsAddIcon],svg[grommet-icons-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-width="2" d="M12 22V2M2 12h20"></svg:path>`,
+})
+export class GrommetIconsAddIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[grommetIconsAdIcon],svg[grommet-icons-ad-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 10h4v4h-4zm4 8h-4a4 4 0 0 1-4-4v-4a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v4m-4 8h-4a8 8 0 0 1-8-8v-4a8 8 0 0 1 8-8h4a8 8 0 0 1 8 8v4"></svg:path>`,
+})
+export class GrommetIconsAdIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[grommetIconsAdobeCreativeCloudIcon],svg[grommet-icons-adobe-creative-cloud-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M24 11.456v.79q-.013.064-.022.128c-.04.343-.067.69-.124 1.03a8.4 8.4 0 0 1-1.176 3.093a8.8 8.8 0 0 1-3.645 3.303a8.5 8.5 0 0 1-2.812.83l-.652.071H7.138c-.043-.008-.085-.02-.128-.023a7.2 7.2 0 0 1-2.448-.588C2.865 19.347 1.6 18.143.771 16.486a7.1 7.1 0 0 1-.7-2.33L0 13.563v-.767c.008-.043.02-.085.023-.128a7 7 0 0 1 .461-2.139C1.2 8.68 2.45 7.31 4.222 6.42a7.3 7.3 0 0 1 2.928-.756a8 8 0 0 1 1.503.069a.2.2 0 0 0 .142-.046a8.9 8.9 0 0 1 2.457-1.781a8.6 8.6 0 0 1 2.826-.833q.35-.039.7-.073h.72q.07.012.14.021c.357.042.715.068 1.068.127a8.5 8.5 0 0 1 3.073 1.166a8.8 8.8 0 0 1 3.319 3.652c.438.883.719 1.835.83 2.814zM10.58 6.343c.015.02.019.028.025.031q.741.366 1.41.853c.028.02.098.012.132-.01c1.222-.774 2.547-1.041 3.97-.789c1.395.247 2.53.944 3.397 2.057c.982 1.26 1.357 2.684 1.085 4.27c-.181 1.061-.607 2.014-1.33 2.812c-1.32 1.456-2.972 2.057-4.917 1.803a5.2 5.2 0 0 1-3.086-1.538c-1.098-1.11-2.204-2.211-3.305-3.318c-.147-.147-.31-.265-.521-.291a.83.83 0 0 0-.864.47c-.142.296-.124.63.185.934c1.227 1.205 2.444 2.421 3.67 3.627q.315.313.674.573c.896.65 1.906 1.01 3 1.155a7.2 7.2 0 0 0 2.555-.1a7.08 7.08 0 0 0 4-2.455a7.03 7.03 0 0 0 1.576-3.609a7 7 0 0 0-.065-2.32c-.244-1.251-.773-2.37-1.62-3.322c-1.618-1.816-3.653-2.627-6.074-2.446a6.75 6.75 0 0 0-2.641.777a7 7 0 0 0-1.255.836ZM9.989 19.02l-.1-.093c-.501-.474-1.006-.945-1.502-1.425a.4.4 0 0 0-.32-.135c-.502.012-1.005.015-1.5-.097c-2.461-.557-3.89-3.233-2.983-5.587c.715-1.857 2.696-2.988 4.649-2.639c.875.156 1.644.527 2.275 1.177c.769.794 1.56 1.566 2.338 2.352c.177.179.38.26.626.225c.316-.045.569-.196.683-.507a.75.75 0 0 0-.173-.83c-.816-.826-1.613-1.673-2.462-2.465c-1.647-1.536-3.588-1.992-5.736-1.34c-2.888.878-4.579 3.86-3.919 6.804a5.816 5.816 0 0 0 5.691 4.566h2.299c.038 0 .076-.003.134-.006"></svg:path>`,
+})
+export class GrommetIconsAdobeCreativeCloudIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,33 +138,16 @@ export class GrommetIconsAddCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[grommetIconsAccessibilityIcon],svg[grommet-icons-accessibility-icon]',
+  selector: 'svg[grommetIconsAedIcon],svg[grommet-icons-aed-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h7v6l-4 7M20 8h-7v6l4 7M12 5a1 1 0 1 0 0-2a1 1 0 0 0 0 2m-1 3h2v5h-2z"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-width="2" d="M2 8.4C2 4 5 3 7 3s4 2 5 3.5C13 5 15 3 17 3s5 1 5 5.4C22 15 12 21 12 21S2 15 2 8.4ZM12 6c-.5-.5-2 4-2 4h2v2.5L14 9h-2s1-6 5-6c-4 0-5 3-5 3Z"></svg:path>`,
 })
-export class GrommetIconsAccessibilityIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[grommetIconsActionIcon],svg[grommet-icons-action-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-width="2" d="m1 23l3-3zM20 4l3-3zM9 11l3-3zm4 4l3-3zM10 5l9 9l1-1c2-2 4.053-5 0-9s-7-2-9 0zm-6 6l1-1l9 9l-1 1c-2 2-5 4.087-9 0s-2-7 0-9Z"></svg:path>`,
-})
-export class GrommetIconsActionIcon {
+export class GrommetIconsAedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8479,23 +8496,6 @@ export class GrommetIconsStatusCriticalSmallIcon {
 })
 export class GrommetIconsStatusDisabledIcon {
   readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[grommetIconsStatusDisabledSmallIcon],svg[grommet-icons-status-disabled-small-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:rect width="10" height="10" x="1" y="1" fill="currentColor" fill-rule="evenodd" stroke="currentColor" rx="1"></svg:rect>`,
-})
-export class GrommetIconsStatusDisabledSmallIcon {
-  readonly viewBox = input("0 0 12 12")
   readonly width = input("1em")
   readonly height = input("1em")
 }

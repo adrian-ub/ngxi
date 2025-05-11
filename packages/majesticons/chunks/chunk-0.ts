@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[majesticonsAcademicCapIcon],svg[majesticons-academic-cap-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill-rule="evenodd" clip-rule="evenodd" d="M11.514 3.126a1 1 0 0 1 .972 0l9 5A1 1 0 0 1 22 9v7a1 1 0 1 1-2 0v-5.3l-1 .555v.004l-6.067 3.016a2 2 0 0 1-1.848-.035L2.357 9.479a1 1 0 0 0-.284-.103a1 1 0 0 1 .441-1.25l9-5zM5 13.199V17a1 1 0 0 0 .553.894l6 3a1 1 0 0 0 .894 0l6-3A1 1 0 0 0 19 17v-3.256l-6.083 2.844a2 2 0 0 1-1.805-.056L5 13.2z" fill="currentColor"></svg:path></svg:g>`,
+})
+export class MajesticonsAcademicCapIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[majesticonsAddColumnIcon],svg[majesticons-add-column-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h3M3 21h3m0 0h4a2 2 0 0 0 2-2V9M6 21V9m0-6h4a2 2 0 0 1 2 2v4M6 3v6M3 9h3m0 0h6m-9 6h9m3-3h3m0 0h3m-3 0v3m0-3V9"></svg:path>`,
+})
+export class MajesticonsAddColumnIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[majesticonsAcademicCapLineIcon],svg[majesticons-academic-cap-line-icon]',
   host: {
     role: 'img',
@@ -36,33 +70,16 @@ export class MajesticonsAddColumnLineIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[majesticonsAdjustmentsIcon],svg[majesticons-adjustments-icon]',
+  selector: 'svg[majesticonsAddRowIcon],svg[majesticons-add-row-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none"><svg:path fill-rule="evenodd" clip-rule="evenodd" d="M20 7a1 1 0 1 0 0-2h-9.17a3.001 3.001 0 0 0-5.66 0H4a1 1 0 1 0 0 2h1.17a3.001 3.001 0 0 0 5.66 0H20zm0 6a1 1 0 1 0 0-2h-1.17a3.001 3.001 0 0 0-5.66 0H4a1 1 0 1 0 0 2h9.17a3.001 3.001 0 0 0 5.66 0H20zm0 6a1 1 0 1 0 0-2h-9.17a3.001 3.001 0 0 0-5.66 0H4a1 1 0 1 0 0 2h1.17a3.001 3.001 0 0 0 5.66 0H20z" fill="currentColor"></svg:path></svg:g>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v3m18-3v3m0 0v4a2 2 0 0 1-2 2H9m12-6H9M3 6v4a2 2 0 0 0 2 2h4M3 6h6m0-3v3m0 0v6m6-9v9m-3 3v3m0 0v3m0-3h3m-3 0H9"></svg:path>`,
 })
-export class MajesticonsAdjustmentsIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[majesticonsAdjustmentsLineIcon],svg[majesticons-adjustments-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M8 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2zM5 6a3 3 0 1 1 6 0a3 3 0 0 1-6 0zm11 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2zm-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0zm-5 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2zm-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0z"></svg:path><svg:path d="M3 6a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H4a1 1 0 0 1-1-1zm6 0a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H10a1 1 0 0 1-1-1zm-6 6a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm14 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1zM3 18a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm6 0a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H10a1 1 0 0 1-1-1z"></svg:path></svg:g>`,
-})
-export class MajesticonsAdjustmentsLineIcon {
+export class MajesticonsAddRowIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -97,6 +114,40 @@ export class MajesticonsAddRowLineIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M16.48 14h4.02a2.5 2.5 0 1 0 0-5H6.618a1 1 0 0 1-.894-.553l-.448-.894A1 1 0 0 0 4.382 7H2.517a1 1 0 0 0-.92 1.394l2.143 5a1 1 0 0 0 .92.606h3.863a1 1 0 0 1 .928 1.371L8.55 17.63A1 1 0 0 0 9.477 19h2.042a1 1 0 0 0 .781-.375l3.4-4.25a1 1 0 0 1 .78-.375M9.5 8h4.75L12.3 5.4a1 1 0 0 0-.8-.4H9.618a1 1 0 0 0-.894 1.447z" clip-rule="evenodd"></svg:path>`,
 })
 export class MajesticonsAirplaneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[majesticonsAdjustmentsLineIcon],svg[majesticons-adjustments-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M8 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2zM5 6a3 3 0 1 1 6 0a3 3 0 0 1-6 0zm11 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2zm-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0zm-5 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2zm-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0z"></svg:path><svg:path d="M3 6a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H4a1 1 0 0 1-1-1zm6 0a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H10a1 1 0 0 1-1-1zm-6 6a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm14 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1zM3 18a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm6 0a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H10a1 1 0 0 1-1-1z"></svg:path></svg:g>`,
+})
+export class MajesticonsAdjustmentsLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[majesticonsAdjustmentsIcon],svg[majesticons-adjustments-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill-rule="evenodd" clip-rule="evenodd" d="M20 7a1 1 0 1 0 0-2h-9.17a3.001 3.001 0 0 0-5.66 0H4a1 1 0 1 0 0 2h1.17a3.001 3.001 0 0 0 5.66 0H20zm0 6a1 1 0 1 0 0-2h-1.17a3.001 3.001 0 0 0-5.66 0H4a1 1 0 1 0 0 2h9.17a3.001 3.001 0 0 0 5.66 0H20zm0 6a1 1 0 1 0 0-2h-9.17a3.001 3.001 0 0 0-5.66 0H4a1 1 0 1 0 0 2h1.17a3.001 3.001 0 0 0 5.66 0H20z" fill="currentColor"></svg:path></svg:g>`,
+})
+export class MajesticonsAdjustmentsIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8444,57 +8495,6 @@ export class MajesticonsImageIcon {
   template: `<svg:g fill="none"><svg:path fill="currentColor" fill-rule="evenodd" d="M6.978 6.488A2.67 2.67 0 0 1 8.5 6c.41 0 1.003.115 1.522.488c.57.41.978 1.086.978 2.012s-.408 1.601-.978 2.011A2.67 2.67 0 0 1 8.5 11c-.41 0-1.003-.115-1.522-.489C6.408 10.101 6 9.427 6 8.5c0-.926.408-1.601.978-2.012m9.353 15.456C18.611 21.177 23 18.143 23 12a1 1 0 0 0-1-1h-1c-4.803 0-8.21 1.072-10.555 2.622c2.035.662 4.076 1.82 5.63 3.751a1 1 0 0 1-1.56 1.254c-1.515-1.884-3.65-2.912-5.796-3.41a15.5 15.5 0 0 0-3.531-.388c-.784.003-1.477.066-2.024.157a1 1 0 0 1-.232.012l-.096.016a1 1 0 0 0-.76 1.367c.652 1.584 2.135 3.723 4.51 5.097c2.42 1.399 5.684 1.958 9.745.466" clip-rule="evenodd"></svg:path><svg:circle cx="12" cy="12" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></svg:circle></svg:g>`,
 })
 export class MajesticonsImageCircleIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[majesticonsImageCircleLineIcon],svg[majesticons-image-circle-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757m0 0C10.895 13.985 14.558 12 21 12h1M8.5 7C8 7 7 7.3 7 8.5S8 10 8.5 10S10 9.7 10 8.5S9 7 8.5 7"></svg:path><svg:circle cx="12" cy="12" r="10"></svg:circle></svg:g>`,
-})
-export class MajesticonsImageCircleLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[majesticonsImageCircleOffIcon],svg[majesticons-image-circle-off-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.859 5A9.97 9.97 0 0 0 2 12c0 5.523 4.477 10 10 10a9.97 9.97 0 0 0 7-2.859M21.542 15A10 10 0 0 0 22 12c0-5.523-4.477-10-10-10a10 10 0 0 0-4 .832M2 2l20 20"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M6.346 7.174C6.13 7.534 6 7.977 6 8.5c0 .926.408 1.601.978 2.011A2.67 2.67 0 0 0 8.5 11c.357 0 .852-.087 1.316-.355zm5.598 5.599q-.811.393-1.5.849c2.036.662 4.077 1.82 5.63 3.751a1 1 0 0 1-1.558 1.254c-1.516-1.884-3.65-2.912-5.797-3.41a15.5 15.5 0 0 0-3.531-.388c-.784.003-1.477.066-2.024.157a1 1 0 0 1-.232.012l-.096.016a1 1 0 0 0-.76 1.367c.652 1.584 2.135 3.723 4.51 5.097c2.42 1.399 5.684 1.958 9.745.465c.829-.278 1.936-.856 3.01-1.774zm9.898 4.24C22.541 15.65 23 13.988 23 12a1 1 0 0 0-1-1h-1c-1.772 0-3.355.146-4.763.408z" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class MajesticonsImageCircleOffIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[majesticonsImageCircleOffLineIcon],svg[majesticons-image-circle-off-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757m0 0c.927-1.073 2.24-2.084 4.055-2.85M22 12h-1c-1.475 0-2.804.104-4 .291M7.341 7.5C7.14 7.728 7 8.051 7 8.5C7 9.7 8 10 8.5 10a1.66 1.66 0 0 0 1-.348"></svg:path><svg:path d="M4.859 5A9.97 9.97 0 0 0 2 12c0 5.523 4.477 10 10 10a9.97 9.97 0 0 0 7-2.859M8 2.832A10 10 0 0 1 12 2c5.523 0 10 4.477 10 10a10 10 0 0 1-.832 4M2 2l20 20"></svg:path></svg:g>`,
-})
-export class MajesticonsImageCircleOffLineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

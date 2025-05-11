@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[faSolidAbacusIcon],svg[fa-solid-abacus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M32 0C14.33 0 0 14.33 0 32v464c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V32C64 14.33 49.67 0 32 0zm512 0c-17.67 0-32 14.33-32 32v464c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V32c0-17.67-14.33-32-32-32zm-80 32h-32c-8.84 0-16 7.16-16 16v24H256V48c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v24h-32V48c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-24h32v24c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-24h160v24c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V48c0-8.84-7.16-16-16-16zM352 208c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v24h-32v-24c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v24h-32v-24c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-24h32v24c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-24h32v24c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-24h128v-48H352v-24zm112 144h-32c-8.84 0-16 7.16-16 16v24H256v-24c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v24h-32v-24c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-24h32v24c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-24h160v24c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16z" fill="currentColor"></svg:path>`,
+})
+export class FaSolidAbacusIcon {
+  readonly viewBox = input("0 0 576 512")
+  readonly width = input("1.13em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[faSolidAdIcon],svg[fa-solid-ad-icon]',
   host: {
     role: 'img',
@@ -19,35 +36,18 @@ export class FaSolidAdIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[faSolidAlignCenterIcon],svg[fa-solid-align-center-icon]',
+  selector: 'svg[faSolidAddressCardIcon],svg[fa-solid-address-card-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M432 160H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16m0 256H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16M108.1 96h231.81A12.09 12.09 0 0 0 352 83.9V44.09A12.09 12.09 0 0 0 339.91 32H108.1A12.09 12.09 0 0 0 96 44.09V83.9A12.1 12.1 0 0 0 108.1 96m231.81 256A12.09 12.09 0 0 0 352 339.9v-39.81A12.09 12.09 0 0 0 339.91 288H108.1A12.09 12.09 0 0 0 96 300.09v39.81a12.1 12.1 0 0 0 12.1 12.1z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48m-352 96c35.3 0 64 28.7 64 64s-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64m112 236.8c0 10.6-10 19.2-22.4 19.2H86.4C74 384 64 375.4 64 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6zM512 312c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8z"></svg:path>`,
 })
-export class FaSolidAlignCenterIcon {
-  readonly viewBox = input("0 0 448 512")
-  readonly width = input("0.88em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[faSolidAlignLeftIcon],svg[fa-solid-align-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.83 352h262.34A12.82 12.82 0 0 0 288 339.17v-38.34A12.82 12.82 0 0 0 275.17 288H12.83A12.82 12.82 0 0 0 0 300.83v38.34A12.82 12.82 0 0 0 12.83 352m0-256h262.34A12.82 12.82 0 0 0 288 83.17V44.83A12.82 12.82 0 0 0 275.17 32H12.83A12.82 12.82 0 0 0 0 44.83v38.34A12.82 12.82 0 0 0 12.83 96M432 160H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16m0 256H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16"></svg:path>`,
-})
-export class FaSolidAlignLeftIcon {
-  readonly viewBox = input("0 0 448 512")
-  readonly width = input("0.88em")
+export class FaSolidAddressCardIcon {
+  readonly viewBox = input("0 0 576 512")
+  readonly width = input("1.13em")
   readonly height = input("1em")
 }
 
@@ -70,6 +70,40 @@ export class FaSolidAddressBookIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[faSolidAlignCenterIcon],svg[fa-solid-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M432 160H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16m0 256H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16M108.1 96h231.81A12.09 12.09 0 0 0 352 83.9V44.09A12.09 12.09 0 0 0 339.91 32H108.1A12.09 12.09 0 0 0 96 44.09V83.9A12.1 12.1 0 0 0 108.1 96m231.81 256A12.09 12.09 0 0 0 352 339.9v-39.81A12.09 12.09 0 0 0 339.91 288H108.1A12.09 12.09 0 0 0 96 300.09v39.81a12.1 12.1 0 0 0 12.1 12.1z"></svg:path>`,
+})
+export class FaSolidAlignCenterIcon {
+  readonly viewBox = input("0 0 448 512")
+  readonly width = input("0.88em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[faSolidAirFreshenerIcon],svg[fa-solid-air-freshener-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M224 160H96c-53 0-96 43-96 96v224c0 17.625 14.375 32 32 32h256c17.625 0 32-14.375 32-32V256c0-53-43-96-96-96m-64 256c-44.125 0-80-35.875-80-80s35.875-80 80-80s80 35.875 80 80s-35.875 80-80 80m64-384c0-17.625-14.375-32-32-32h-64c-17.625 0-32 14.375-32 32v96h128zm157.781 19.578C383 50.969 384 49.359 384 48c0-1.375-1-2.969-2.219-3.578L352 32L339.562 2.219C338.969 1 337.375 0 336 0s-2.969 1-3.594 2.219L320 32l-29.781 12.422C289 45.031 288 46.625 288 48c0 1.359 1 2.969 2.219 3.578L320 64l12.406 29.781C333.031 95 334.625 96 336 96s2.969-1 3.562-2.219L352 64zM448 64l12.406 29.781C461.031 95 462.625 96 464 96s2.969-1 3.562-2.219L480 64l29.781-12.422C511 50.969 512 49.359 512 48c0-1.375-1-2.969-2.219-3.578L480 32L467.562 2.219C466.969 1 465.375 0 464 0s-2.969 1-3.594 2.219L448 32l-29.781 12.422C417 45.031 416 46.625 416 48c0 1.359 1 2.969 2.219 3.578zm32 160l-12.438-29.781C466.969 193 465.375 192 464 192s-2.969 1-3.594 2.219L448 224l-29.781 12.422C417 237.031 416 238.625 416 240c0 1.359 1 2.969 2.219 3.578L448 256l12.406 29.781C461.031 287 462.625 288 464 288s2.969-1 3.562-2.219L480 256l29.781-12.422C511 242.969 512 241.359 512 240c0-1.375-1-2.969-2.219-3.578zm-34.219-76.422C447 146.969 448 145.359 448 144c0-1.375-1-2.969-2.219-3.578L416 128l-12.438-29.781C402.969 97 401.375 96 400 96s-2.969 1-3.594 2.219L384 128l-29.781 12.422C353 141.031 352 142.625 352 144c0 1.359 1 2.969 2.219 3.578L384 160l12.406 29.781C397.031 191 398.625 192 400 192s2.969-1 3.562-2.219L416 160z"></svg:path>`,
+})
+export class FaSolidAirFreshenerIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[faSolidAlignJustifyIcon],svg[fa-solid-align-justify-icon]',
   host: {
     role: 'img',
@@ -82,6 +116,23 @@ export class FaSolidAddressBookIcon {
 export class FaSolidAlignJustifyIcon {
   readonly viewBox = input("0 0 448 512")
   readonly width = input("0.88em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[faSolidAdjustIcon],svg[fa-solid-adjust-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8S8 119.033 8 256m248 184V72c101.705 0 184 82.311 184 184c0 101.705-82.311 184-184 184"></svg:path>`,
+})
+export class FaSolidAdjustIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
   readonly height = input("1em")
 }
 
@@ -8446,56 +8497,5 @@ export class FaSolidIndustryIcon {
 export class FaSolidInfinityIcon {
   readonly viewBox = input("0 0 640 512")
   readonly width = input("1.25em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[faSolidInfoIcon],svg[fa-solid-info-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20M96 0C56.235 0 24 32.235 24 72s32.235 72 72 72s72-32.235 72-72S135.764 0 96 0"></svg:path>`,
-})
-export class FaSolidInfoIcon {
-  readonly viewBox = input("0 0 192 512")
-  readonly width = input("0.38em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[faSolidInfoCircleIcon],svg[fa-solid-info-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8m0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42s-42-18.804-42-42s18.804-42 42-42m56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12z"></svg:path>`,
-})
-export class FaSolidInfoCircleIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[faSolidIntegralIcon],svg[fa-solid-integral-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M377.21 73.03l-28-36.17C328.43 9.98 295.87-3.75 262.05.89 221.86 6.41 190.54 40 181.42 80.82l-78.16 334.36-23.95-30.91c-10.69-13.79-30.18-16.03-43.53-4.98l-24.17 20c-13.35 11.05-15.51 31.19-4.82 44.98l21.42 27.65c15.98 20.63 38.53 35.82 63.89 39.21 49.82 6.67 94.4-26.18 105.34-75.22l79.2-339.11 28.03 36.2c10.68 13.8 30.17 16.04 43.52 5l24.18-20c13.36-11.03 15.53-31.17 4.84-44.97z" fill="currentColor"></svg:path>`,
-})
-export class FaSolidIntegralIcon {
-  readonly viewBox = input("0 0 384 512")
-  readonly width = input("0.75em")
   readonly height = input("1em")
 }

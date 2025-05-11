@@ -2,33 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[noniconsC16Icon],svg[nonicons-c-16-icon]',
+  selector: 'svg[noniconsAngular16Icon],svg[nonicons-angular-16-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M7.586.102a.75.75 0 0 1 .756 0l6.214 3.625a.75.75 0 0 1 .373.648v7.25a.75.75 0 0 1-.373.648l-6.214 3.625a.75.75 0 0 1-.756 0l-6.214-3.625A.75.75 0 0 1 1 11.625v-7.25a.75.75 0 0 1 .372-.648zm.378 14.28l5.465-3.188V4.806L7.964 1.618L2.5 4.806v6.388z"></svg:path><svg:path fill="currentColor" d="M8 5.5a2.5 2.5 0 1 0 1.81 4.225a.75.75 0 1 1 1.086 1.035a4 4 0 1 1-.01-5.53a.75.75 0 0 1-1.082 1.04A2.5 2.5 0 0 0 8 5.5"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M7.467.133a1.75 1.75 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682c-.983 1.499-2.585 2.813-5.032 3.855a1.7 1.7 0 0 1-1.33 0c-2.447-1.042-4.049-2.356-5.032-3.855S1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86c.784 1.194 2.121 2.34 4.366 3.297a.2.2 0 0 0 .154 0c2.245-.956 3.582-2.103 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.25.25 0 0 0-.174-.238zM8 3.25a.75.75 0 0 1 .696.471l2.5 6.25a.75.75 0 0 1-1.392.557l-.312-.778H6.508l-.312.778a.75.75 0 0 1-1.392-.557l2.5-6.25A.75.75 0 0 1 8 3.25m-.892 5h1.784L8 6.02z"></svg:path>`,
 })
-export class NoniconsC16Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[noniconsCPlusplus16Icon],svg[nonicons-c-plusplus-16-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7 5.5a2.5 2.5 0 1 0 1.81 4.225a.75.75 0 0 1 1.086 1.035a4 4 0 1 1-.01-5.53a.75.75 0 0 1-1.082 1.04A2.5 2.5 0 0 0 7 5.5m7 .5a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1A.5.5 0 0 1 14 6"></svg:path><svg:path fill="currentColor" d="M11.5 6a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5"></svg:path><svg:path fill="currentColor" d="M6.586.102a.75.75 0 0 1 .756 0l4.715 2.75a.75.75 0 0 1-.756 1.296l-4.337-2.53L1.5 4.806v6.388l5.464 3.188l4.337-2.53a.75.75 0 1 1 .755 1.296l-4.714 2.75a.75.75 0 0 1-.756 0L.372 12.273A.75.75 0 0 1 0 11.625v-7.25a.75.75 0 0 1 .372-.648z"></svg:path>`,
-})
-export class NoniconsCPlusplus16Icon {
+export class NoniconsAngular16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,6 +36,57 @@ export class NoniconsBabel16Icon {
 
 @Component({
   standalone: true,
+  selector: 'svg[noniconsBiome16Icon],svg[nonicons-biome-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.038 1.682c.455-.91 1.754-.91 2.21 0l5.62 11.243c.41.82-.186 1.786-1.104 1.786H2.217c-.665 0-1.273-.551-1.213-1.294c.13-1.617.838-3.106 2.097-4.211c1.257-1.104 3.02-1.789 5.21-1.89a1.22 1.22 0 0 1 1.266 1.325l-.15 1.802c-.068.815-.83 1.225-1.42 1.217a3.4 3.4 0 0 0-1.063.168c-.368.12-.6.273-.7.394a.74.74 0 1 1-1.14-.947c.356-.429.891-.696 1.38-.856a5 5 0 0 1 1.478-.24l.114-1.364c-1.766.134-3.089.707-3.997 1.504a4.7 4.7 0 0 0-1.564 2.91h10.85L8.142 2.788L6.336 6.4a.74.74 0 0 1-1.325-.662z" clip-rule="evenodd"></svg:path>`,
+})
+export class NoniconsBiome16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[noniconsC16Icon],svg[nonicons-c-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.586.102a.75.75 0 0 1 .756 0l6.214 3.625a.75.75 0 0 1 .373.648v7.25a.75.75 0 0 1-.373.648l-6.214 3.625a.75.75 0 0 1-.756 0l-6.214-3.625A.75.75 0 0 1 1 11.625v-7.25a.75.75 0 0 1 .372-.648zm.378 14.28l5.465-3.188V4.806L7.964 1.618L2.5 4.806v6.388z"></svg:path><svg:path fill="currentColor" d="M8 5.5a2.5 2.5 0 1 0 1.81 4.225a.75.75 0 1 1 1.086 1.035a4 4 0 1 1-.01-5.53a.75.75 0 0 1-1.082 1.04A2.5 2.5 0 0 0 8 5.5"></svg:path>`,
+})
+export class NoniconsC16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[noniconsCapacitor16Icon],svg[nonicons-capacitor-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.293.179a.75.75 0 0 1 .53.22l2.298 2.298L12.066.752a.75.75 0 0 1 1.06 0l2.122 2.121a.75.75 0 0 1 0 1.061L13.303 5.88l2.298 2.298a.75.75 0 0 1 0 1.06l-2.12 2.122a.75.75 0 0 1-1.062 0L4.641 3.58a.75.75 0 0 1 0-1.061L6.763.399a.75.75 0 0 1 .53-.22M6.233 3.05l6.717 6.718l1.06-1.06l-2.298-2.299a.75.75 0 0 1 0-1.06l1.945-1.945l-1.06-1.06l-1.945 1.944a.75.75 0 0 1-1.061 0L7.293 1.99zM2.52 4.641a.75.75 0 0 1 1.06 0l7.779 7.778a.75.75 0 0 1 0 1.061l-2.122 2.121a.75.75 0 0 1-1.06 0l-2.298-2.298l-1.945 1.945a.75.75 0 0 1-1.06 0L.751 13.127a.75.75 0 0 1 0-1.061l1.945-1.945L.399 7.823a.75.75 0 0 1 0-1.06zm-.53 2.652L4.288 9.59a.75.75 0 0 1 0 1.06l-1.945 1.945l1.06 1.06l1.945-1.944a.75.75 0 0 1 1.061 0l2.298 2.298l1.06-1.06L3.05 6.232z" clip-rule="evenodd"></svg:path>`,
+})
+export class NoniconsCapacitor16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[noniconsCSharp16Icon],svg[nonicons-c-sharp-16-icon]',
   host: {
     role: 'img',
@@ -63,6 +97,23 @@ export class NoniconsBabel16Icon {
   template: `<svg:path fill="currentColor" d="M7 5.5a2.5 2.5 0 1 0 1.81 4.225a.75.75 0 0 1 1.086 1.035a4 4 0 1 1-.01-5.53a.75.75 0 0 1-1.082 1.04A2.5 2.5 0 0 0 7 5.5"></svg:path><svg:path fill="currentColor" d="M6.586.102a.75.75 0 0 1 .756 0l4.715 2.75a.75.75 0 0 1-.756 1.296l-4.337-2.53L1.5 4.806v6.388l5.464 3.188l4.337-2.53a.75.75 0 1 1 .755 1.296l-4.714 2.75a.75.75 0 0 1-.756 0L.372 12.273A.75.75 0 0 1 0 11.625v-7.25a.75.75 0 0 1 .372-.648z"></svg:path><svg:path fill="currentColor" d="M12.18 5.25a.5.5 0 0 1 .5.5v4.5a.5.5 0 0 1-1 0v-4.5a.5.5 0 0 1 .5-.5m2.14 0a.5.5 0 0 1 .5.5v4.5a.5.5 0 0 1-1 0v-4.5a.5.5 0 0 1 .5-.5"></svg:path><svg:path fill="currentColor" d="M10.5 6.93a.5.5 0 0 1 .5-.5h4.5a.5.5 0 0 1 0 1H11a.5.5 0 0 1-.5-.5m0 2.14a.5.5 0 0 1 .5-.5h4.5a.5.5 0 0 1 0 1H11a.5.5 0 0 1-.5-.5"></svg:path>`,
 })
 export class NoniconsCSharp16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[noniconsCPlusplus16Icon],svg[nonicons-c-plusplus-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7 5.5a2.5 2.5 0 1 0 1.81 4.225a.75.75 0 0 1 1.086 1.035a4 4 0 1 1-.01-5.53a.75.75 0 0 1-1.082 1.04A2.5 2.5 0 0 0 7 5.5m7 .5a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1A.5.5 0 0 1 14 6"></svg:path><svg:path fill="currentColor" d="M11.5 6a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5"></svg:path><svg:path fill="currentColor" d="M6.586.102a.75.75 0 0 1 .756 0l4.715 2.75a.75.75 0 0 1-.756 1.296l-4.337-2.53L1.5 4.806v6.388l5.464 3.188l4.337-2.53a.75.75 0 1 1 .755 1.296l-4.714 2.75a.75.75 0 0 1-.756 0L.372 12.273A.75.75 0 0 1 0 11.625v-7.25a.75.75 0 0 1 .372-.648z"></svg:path>`,
+})
+export class NoniconsCPlusplus16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -1107,40 +1158,6 @@ export class NoniconsYarn16Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[noniconsBiome16Icon],svg[nonicons-biome-16-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.038 1.682c.455-.91 1.754-.91 2.21 0l5.62 11.243c.41.82-.186 1.786-1.104 1.786H2.217c-.665 0-1.273-.551-1.213-1.294c.13-1.617.838-3.106 2.097-4.211c1.257-1.104 3.02-1.789 5.21-1.89a1.22 1.22 0 0 1 1.266 1.325l-.15 1.802c-.068.815-.83 1.225-1.42 1.217a3.4 3.4 0 0 0-1.063.168c-.368.12-.6.273-.7.394a.74.74 0 1 1-1.14-.947c.356-.429.891-.696 1.38-.856a5 5 0 0 1 1.478-.24l.114-1.364c-1.766.134-3.089.707-3.997 1.504a4.7 4.7 0 0 0-1.564 2.91h10.85L8.142 2.788L6.336 6.4a.74.74 0 0 1-1.325-.662z" clip-rule="evenodd"></svg:path>`,
-})
-export class NoniconsBiome16Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[noniconsCapacitor16Icon],svg[nonicons-capacitor-16-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.293.179a.75.75 0 0 1 .53.22l2.298 2.298L12.066.752a.75.75 0 0 1 1.06 0l2.122 2.121a.75.75 0 0 1 0 1.061L13.303 5.88l2.298 2.298a.75.75 0 0 1 0 1.06l-2.12 2.122a.75.75 0 0 1-1.062 0L4.641 3.58a.75.75 0 0 1 0-1.061L6.763.399a.75.75 0 0 1 .53-.22M6.233 3.05l6.717 6.718l1.06-1.06l-2.298-2.299a.75.75 0 0 1 0-1.06l1.945-1.945l-1.06-1.06l-1.945 1.944a.75.75 0 0 1-1.061 0L7.293 1.99zM2.52 4.641a.75.75 0 0 1 1.06 0l7.779 7.778a.75.75 0 0 1 0 1.061l-2.122 2.121a.75.75 0 0 1-1.06 0l-2.298-2.298l-1.945 1.945a.75.75 0 0 1-1.06 0L.751 13.127a.75.75 0 0 1 0-1.061l1.945-1.945L.399 7.823a.75.75 0 0 1 0-1.06zm-.53 2.652L4.288 9.59a.75.75 0 0 1 0 1.06l-1.945 1.945l1.06 1.06l1.945-1.944a.75.75 0 0 1 1.061 0l2.298 2.298l1.06-1.06L3.05 6.232z" clip-rule="evenodd"></svg:path>`,
-})
-export class NoniconsCapacitor16Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[noniconsConstant16Icon],svg[nonicons-constant-16-icon]',
   host: {
     role: 'img',
@@ -1151,23 +1168,6 @@ export class NoniconsCapacitor16Icon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M0 5.8A.8.8 0 0 1 .8 5h14.4a.8.8 0 0 1 0 1.6H.8a.8.8 0 0 1-.8-.8m.8 4.8a.8.8 0 0 1 .8.8v1.333h3.2V11.4a.8.8 0 0 1 1.6 0v1.333h3.2V11.4a.8.8 0 0 1 1.6 0v1.333h3.2V11.4a.8.8 0 0 1 1.6 0v2.933H0V11.4a.8.8 0 0 1 .8-.8" clip-rule="evenodd"></svg:path>`,
 })
 export class NoniconsConstant16Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[noniconsAngular16Icon],svg[nonicons-angular-16-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7.467.133a1.75 1.75 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682c-.983 1.499-2.585 2.813-5.032 3.855a1.7 1.7 0 0 1-1.33 0c-2.447-1.042-4.049-2.356-5.032-3.855S1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86c.784 1.194 2.121 2.34 4.366 3.297a.2.2 0 0 0 .154 0c2.245-.956 3.582-2.103 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.25.25 0 0 0-.174-.238zM8 3.25a.75.75 0 0 1 .696.471l2.5 6.25a.75.75 0 0 1-1.392.557l-.312-.778H6.508l-.312.778a.75.75 0 0 1-1.392-.557l2.5-6.25A.75.75 0 0 1 8 3.25m-.892 5h1.784L8 6.02z"></svg:path>`,
-})
-export class NoniconsAngular16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

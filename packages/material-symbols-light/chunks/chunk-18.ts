@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightOvenIcon],svg[material-symbols-light-oven-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 8.846v-3.23q0-.691.463-1.153T5.616 4h12.769q.69 0 1.153.463T20 5.616v3.23zM5.616 20q-.691 0-1.153-.462T4 18.384V9.616h16v8.769q0 .69-.462 1.153T18.384 20zM8 7.385q.425 0 .713-.288T9 6.384t-.288-.712T8 5.384t-.712.288T7 6.384t.288.713t.712.287m2.385 5.847h3.23V12h-3.23zM12 7.385q.425 0 .713-.288T13 6.385t-.288-.713T12 5.384t-.712.288t-.288.713t.288.712t.712.288m4 0q.425 0 .713-.288T17 6.385t-.288-.713T16 5.384t-.713.288t-.287.713t.287.712t.713.288"></svg:path>`,
-})
-export class MaterialSymbolsLightOvenIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightOvenGenIcon],svg[material-symbols-light-oven-gen-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightPhotoCameraFrontOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="M3 20V6h4.573l1.85-2h5.154l1.85 2H21v14zm1-1h16V7h-4.011l-1.845-2H9.856L8.012 7H4zm4.692-2.884h6.616v-.166q0-.875-.88-1.355q-.878-.48-2.428-.48t-2.429.48t-.879 1.355zM12 12.5q.633 0 1.066-.434q.434-.433.434-1.066t-.434-1.066T12 9.5t-1.066.434Q10.5 10.367 10.5 11t.434 1.066T12 12.5"></svg:path>`,
 })
 export class MaterialSymbolsLightPhotoCameraFrontOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightPhotoCameraFrontSharpIcon],svg[material-symbols-light-photo-camera-front-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 20V6h4.573l1.85-2h5.154l1.85 2H21v14zm5.692-3.884h6.616v-.166q0-.875-.88-1.355q-.878-.48-2.428-.48t-2.429.48t-.879 1.355zM12 12.5q.633 0 1.066-.434q.434-.433.434-1.066t-.434-1.066T12 9.5t-1.066.434Q10.5 10.367 10.5 11t.434 1.066T12 12.5"></svg:path>`,
+})
+export class MaterialSymbolsLightPhotoCameraFrontSharpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

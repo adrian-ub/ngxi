@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightTabNewRightOutlineIcon],svg[material-symbols-light-tab-new-right-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 19V5zm.616 1q-.691 0-1.153-.462T4 18.384V5.616q0-.691.463-1.153T5.616 4h12.769q.69 0 1.153.463T20 5.616v7.811q-.244-.06-.494-.09t-.506-.03v-7.69q0-.231-.192-.424T18.384 5H5.616q-.231 0-.424.192T5 5.616v12.769q0 .23.192.423t.423.192h7.693q0 .256.03.506t.089.494zM19 22.288l-.688-.688l2.055-2.1H15.5v-1h4.867l-2.056-2.1l.689-.688L22.288 19zM11.5 16.5h1v-4h4v-1h-4v-4h-1v4h-4v1h4z"></svg:path>`,
-})
-export class MaterialSymbolsLightTabNewRightOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightTabNewRightOutlineRoundedIcon],svg[material-symbols-light-tab-new-right-outline-rounded-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightTopPanelOpenOutlineIcon {
   template: `<svg:path fill="currentColor" d="m12.566 15.03l1.93-1.93q.193-.192.087-.444t-.38-.252H9.797q-.273 0-.379.252t.087.444l1.93 1.93q.243.243.566.243t.566-.242M5.616 20q-.672 0-1.144-.472T4 18.385V5.615q0-.67.472-1.143Q4.944 4 5.616 4h12.769q.67 0 1.143.472q.472.472.472 1.144v12.769q0 .67-.472 1.143q-.472.472-1.143.472zM19 8V5.616q0-.231-.192-.424T18.384 5H5.616q-.231 0-.424.192T5 5.616V8zM5 9v9.385q0 .23.192.423t.423.192h12.77q.23 0 .423-.192t.192-.423V9zm0-1V5z"></svg:path>`,
 })
 export class MaterialSymbolsLightTopPanelOpenOutlineRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightTopPanelOpenOutlineSharpIcon],svg[material-symbols-light-top-panel-open-outline-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m12 15.596l3.173-3.192H8.827zM5 8h14V5H5zm0 11h14V9H5zM5 8V5zM4 20V4h16v16z"></svg:path>`,
+})
+export class MaterialSymbolsLightTopPanelOpenOutlineSharpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

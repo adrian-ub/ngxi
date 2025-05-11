@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialIconThemeFolderRepositoryOpenIcon],svg[material-icon-theme-folder-repository-open-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#43a047" d="M28.967 12H9.442a2 2 0 0 0-1.898 1.368L4 24V10h24a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h22l4.805-11.212A2 2 0 0 0 28.967 12"></svg:path><svg:path fill="#c8e6c9" d="M20 10a2 2 0 0 0-1.6.8l-1.6 2.134a4 4 0 0 0-.8 2.398V26a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V15.332a4 4 0 0 0-.8-2.398L29.6 10.8A2 2 0 0 0 28 10zm0 2h8l1.5 2h-11zm2 4h4v4h4l-6 6l-6-6h4z"></svg:path>`,
+})
+export class MaterialIconThemeFolderRepositoryOpenIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeFolderResolverIcon],svg[material-icon-theme-folder-resolver-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#43a047" d="m13.844 7.536l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464"></svg:path><svg:path fill="#c8e6c9" d="M29.216 14L20.6 22.159l-3.816-3.614L14 21.183L20.6 28L32 17.205Z"></svg:path>`,
+})
+export class MaterialIconThemeFolderResolverIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialIconThemeFolderResolverOpenIcon],svg[material-icon-theme-folder-resolver-open-icon]',
   host: {
     role: 'img',
@@ -8462,40 +8496,6 @@ export class MaterialIconThemeUmlIcon {
 })
 export class MaterialIconThemeUmlLightIcon {
   readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialIconThemeUnityIcon],svg[material-icon-theme-unity-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#42a5f5" d="M8 6.5L5 5l2-1V2L2 5v5l2-1V6.5L7 8v4.5L4 11l-2 1l6 3l6-3l-2-1l-3 1.5V8l3-1.5V9l2 1V5L9 2v2l2 1Z"></svg:path>`,
-})
-export class MaterialIconThemeUnityIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialIconThemeUnocssIcon],svg[material-icon-theme-unocss-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:circle cx="24" cy="24" r="6" fill="#78909c"></svg:circle><svg:path fill="#546e7a" d="M2 18v6a6 6 0 0 0 12 0v-6Z"></svg:path><svg:path fill="#b0bec5" d="M30 14V8a6 6 0 0 0-12 0v6Z"></svg:path>`,
-})
-export class MaterialIconThemeUnocssIcon {
-  readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
 }

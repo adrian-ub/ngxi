@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightQrCodeScannerRoundedIcon],svg[material-symbols-light-qr-code-scanner-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.5 7.039q-.214 0-.357-.144T3 6.539V3.808q0-.343.232-.576T3.808 3h2.73q.213 0 .357.144t.144.357t-.144.356T6.539 4H4v2.539q0 .212-.144.356t-.357.144M3.808 21q-.343 0-.576-.232T3 20.192v-2.73q0-.213.144-.357t.357-.143t.356.143t.143.357V20h2.539q.212 0 .356.144t.144.357t-.144.356t-.356.143zm13.654 0q-.213 0-.357-.144t-.143-.357t.143-.356t.357-.143H20v-2.538q0-.213.144-.357t.357-.143t.356.143t.143.357v2.73q0 .344-.232.576t-.576.232zm3.037-13.961q-.212 0-.356-.144T20 6.539V4h-2.538q-.213 0-.357-.144t-.143-.357t.143-.356t.357-.143h2.73q.344 0 .576.232t.232.576v2.73q0 .213-.144.357t-.357.144m-3.557 11.115v-1.212h1.212v1.212zm0-2.423v-1.212h1.212v1.212zm-1.211 1.211v-1.211h1.211v1.211zm-1.212 1.212v-1.212h1.212v1.212zm-1.211-1.212v-1.211h1.211v1.211zm2.423-2.423v-1.211h1.211v1.211zm-1.212 1.212v-1.212h1.212v1.212zm-1.211-1.212v-1.211h1.211v1.211zm.803-3.827q-.344 0-.574-.232q-.23-.233-.23-.576V6.65q0-.344.233-.574q.232-.23.576-.23h3.234q.344 0 .574.233q.23.232.23.576v3.234q0 .344-.233.574q-.232.23-.576.23zM6.65 18.154q-.344 0-.574-.233q-.23-.232-.23-.576v-3.234q0-.344.233-.573q.232-.23.576-.23h3.234q.344 0 .574.232q.23.233.23.576v3.235q0 .343-.233.573t-.576.23zm0-7.462q-.344 0-.574-.232q-.23-.233-.23-.576V6.65q0-.344.233-.574q.232-.23.576-.23h3.234q.344 0 .574.233q.23.232.23.576v3.234q0 .344-.233.574t-.576.23zm.08 6.577h3.078v-3.077H6.73zm0-7.461h3.078V6.73H6.73zm7.462 0h3.077V6.73h-3.077z"></svg:path>`,
-})
-export class MaterialSymbolsLightQrCodeScannerRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightQueryStatsIcon],svg[material-symbols-light-query-stats-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightRoutineRoundedIcon {
   template: `<svg:path fill="currentColor" d="m18.077 23.23l-2.5-2.5v-1.5l-7.408-7.407q-.225.05-.392.075l-.43.064v-1.047q1.192-.103 2.684-.883t2.196-1.54l1.323-1.396q.229-.298.56-.447t.717-.149q.662 0 1.129.467t.467 1.13V14q0 .708-.305 1.245t-.768.867l-2.273-2.262V9.07q-.904.886-1.873 1.476q-.97.59-1.927.923l7.03 7.031h1.5l2.5 2.5zM5.462 19.847l-.808-.807l4.635-4.635l2.096 2.096H8.808zM15 5.27q-.633 0-1.066-.434q-.434-.433-.434-1.066t.434-1.066T15 2.269t1.066.434t.434 1.066t-.434 1.067q-.433.433-1.066.433"></svg:path>`,
 })
 export class MaterialSymbolsLightRowingIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightRowingRoundedIcon],svg[material-symbols-light-rowing-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m17.512 22.666l-1.693-1.693q-.13-.13-.186-.27t-.056-.301v-1.171l-7.408-7.408q-.225.05-.392.075l-.43.064v-1.047q1.192-.103 2.684-.883t2.196-1.54l1.323-1.396q.229-.298.56-.447t.717-.149q.662 0 1.129.467t.467 1.13V14q0 .708-.305 1.245t-.768.867l-2.273-2.262V9.07q-.904.886-1.873 1.476q-.97.59-1.927.923l7.03 7.031h1.172q.161 0 .3.056q.14.055.271.186l1.692 1.692q.242.243.242.566t-.242.566l-1.1 1.1q-.242.242-.565.242t-.566-.243M8.808 16.5l-2.942 2.942q-.172.172-.404.172t-.404-.172t-.171-.403t.17-.404l4.232-4.231l2.096 2.096zM15 5.27q-.633 0-1.066-.435q-.434-.433-.434-1.066t.434-1.066T15 2.269t1.066.434t.434 1.066t-.434 1.067q-.433.433-1.066.433m-7.654 6.693q-.219 0-.371-.152t-.152-.371t.152-.372q.152-.151.371-.151t.371.151t.152.372t-.152.37q-.151.153-.37.153"></svg:path>`,
+})
+export class MaterialSymbolsLightRowingRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

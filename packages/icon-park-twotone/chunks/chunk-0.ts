@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkTwotoneAbnormalIcon],svg[icon-park-twotone-abnormal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipTAbnormal0"><svg:g fill="none"><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M40 16.398V6a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v36a2 2 0 0 0 2 2h10"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-width="4" d="M16 14h13m-13 7h5"></svg:path><svg:circle cx="34" cy="34" r="10" fill="#555" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="rotate(90 34 34)"></svg:circle><svg:path stroke="#fff" stroke-linecap="round" stroke-width="4" d="M34 36v3"></svg:path><svg:circle cx="34" cy="30" r="2" fill="#fff"></svg:circle></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAbnormal0)"></svg:path>`,
+})
+export class IconParkTwotoneAbnormalIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkTwotoneAccelerationIcon],svg[icon-park-twotone-acceleration-icon]',
   host: {
     role: 'img',
@@ -29,23 +46,6 @@ export class IconParkTwotoneAccelerationIcon {
   template: `<svg:defs><svg:mask id="ipTActivitySource0"><svg:path fill="#555" stroke="#fff" stroke-linejoin="round" stroke-width="4" d="M42 5H6v8h36zm0 15H6v8h36zm0 15H6v8h36z"></svg:path></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTActivitySource0)"></svg:path>`,
 })
 export class IconParkTwotoneActivitySourceIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkTwotoneAbnormalIcon],svg[icon-park-twotone-abnormal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:mask id="ipTAbnormal0"><svg:g fill="none"><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M40 16.398V6a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v36a2 2 0 0 0 2 2h10"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-width="4" d="M16 14h13m-13 7h5"></svg:path><svg:circle cx="34" cy="34" r="10" fill="#555" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="rotate(90 34 34)"></svg:circle><svg:path stroke="#fff" stroke-linecap="round" stroke-width="4" d="M34 36v3"></svg:path><svg:circle cx="34" cy="30" r="2" fill="#fff"></svg:circle></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAbnormal0)"></svg:path>`,
-})
-export class IconParkTwotoneAbnormalIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,6 +87,23 @@ export class IconParkTwotoneAddItemIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkTwotoneAddIcon],svg[icon-park-twotone-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipTAdd0"><svg:g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><svg:rect width="36" height="36" x="6" y="6" fill="#555" rx="3"></svg:rect><svg:path stroke-linecap="round" d="M24 16v16m-8-8h16"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAdd0)"></svg:path>`,
+})
+export class IconParkTwotoneAddIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkTwotoneAddMusicIcon],svg[icon-park-twotone-add-music-icon]',
   host: {
     role: 'img',
@@ -104,16 +121,33 @@ export class IconParkTwotoneAddMusicIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconParkTwotoneAddIcon],svg[icon-park-twotone-add-icon]',
+  selector: 'svg[iconParkTwotoneAddModeIcon],svg[icon-park-twotone-add-mode-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:defs><svg:mask id="ipTAdd0"><svg:g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><svg:rect width="36" height="36" x="6" y="6" fill="#555" rx="3"></svg:rect><svg:path stroke-linecap="round" d="M24 16v16m-8-8h16"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAdd0)"></svg:path>`,
+  template: `<svg:defs><svg:mask id="ipTAddMode0"><svg:g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"><svg:path fill="#555" d="m24.003 4l5.27 5.27h9.457v9.456l5.27 5.27l-5.27 5.278v9.456h-9.456L24.004 44l-5.278-5.27H9.27v-9.456L4 23.997l5.27-5.27V9.27h9.456z"></svg:path><svg:path d="M17 23.997h14M24.004 17v14"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddMode0)"></svg:path>`,
 })
-export class IconParkTwotoneAddIcon {
+export class IconParkTwotoneAddModeIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkTwotoneAddOneIcon],svg[icon-park-twotone-add-one-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipTAddOne0"><svg:g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><svg:path fill="#555" d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"></svg:path><svg:path stroke-linecap="round" d="M24 16v16m-8-8h16"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddOne0)"></svg:path>`,
+})
+export class IconParkTwotoneAddOneIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8461,40 +8495,6 @@ export class IconParkTwotoneDatabaseTimeIcon {
   template: `<svg:defs><svg:mask id="ipTDeathStar0"><svg:g fill="none" stroke="#fff" stroke-width="4"><svg:circle cx="24" cy="24" r="20" fill="#555"></svg:circle><svg:path stroke-linecap="round" d="M5 25h39"></svg:path><svg:circle cx="19" cy="15" r="4" fill="#555"></svg:circle><svg:path stroke-linecap="round" d="M31 31h12m-9-14h8M25 37h14"></svg:path><svg:path d="M40 11.998A19.9 19.9 0 0 1 44 24c0 7.808-4.475 14.572-11 17.865M4.4 20c-.262 1.292-.4 2.63-.4 4c0 1.727.219 3.402.63 5"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDeathStar0)"></svg:path>`,
 })
 export class IconParkTwotoneDeathStarIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkTwotoneDeerIcon],svg[icon-park-twotone-deer-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:mask id="ipTDeer0"><svg:g fill="none"><svg:path fill="#555" stroke="#fff" stroke-width="4" d="M36 27c0 7.217-5.373 17-12 17s-12-9.783-12-17c0-7.216 1.5-11 12-11s12 3.784 12 11Z"></svg:path><svg:ellipse fill="#555" stroke="#fff" stroke-width="4" rx="5" ry="3.5" transform="scale(1 -1)rotate(45 40.625 38.327)"></svg:ellipse><svg:ellipse cx="9" cy="17.5" fill="#555" stroke="#fff" stroke-width="4" rx="5" ry="3.5" transform="rotate(45 9 17.5)"></svg:ellipse><svg:path stroke="#fff" stroke-linecap="round" stroke-width="4" d="M12 4c0 6.627 5.373 12 12 12s12-5.373 12-12"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-width="4" d="M18 7c0 4.97 2.686 9 6 9s6-4.03 6-9"></svg:path><svg:circle cx="20" cy="26" r="2" fill="#fff"></svg:circle><svg:circle cx="24" cy="34" r="2" fill="#fff"></svg:circle><svg:circle cx="28" cy="26" r="2" fill="#fff"></svg:circle></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDeer0)"></svg:path>`,
-})
-export class IconParkTwotoneDeerIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkTwotoneDegreeHatIcon],svg[icon-park-twotone-degree-hat-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:mask id="ipTDegreeHat0"><svg:g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><svg:path fill="#555" d="M2 17.4L23.022 9l21.022 8.4l-21.022 8.4z"></svg:path><svg:path stroke-linecap="round" d="M44.044 17.51v9.223m-32.488-4.908v12.442S16.366 39 23.022 39c6.657 0 11.467-4.733 11.467-4.733V21.825"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDegreeHat0)"></svg:path>`,
-})
-export class IconParkTwotoneDegreeHatIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

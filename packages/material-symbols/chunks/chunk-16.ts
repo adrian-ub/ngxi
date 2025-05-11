@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsMarkdownOutlineIcon],svg[material-symbols-markdown-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m16 15l3-3l-1.05-1.075l-1.2 1.2V9h-1.5v3.125l-1.2-1.2L13 12zM4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h16V6H4zm0 0V6zm1.5-3H7v-4.5h1v3h1.5v-3h1V15H12v-5q0-.425-.288-.712T11 9H6.5q-.425 0-.712.288T5.5 10z"></svg:path>`,
-})
-export class MaterialSymbolsMarkdownOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsMarkdownOutlineRoundedIcon],svg[material-symbols-markdown-outline-rounded-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsMouseLockSharpIcon {
   template: `<svg:path fill="currentColor" d="M12 22q-2.9 0-4.95-2.05T5 15V9q0-2.9 2.05-4.95T12 2t4.95 2.05T19 9v6q0 2.9-2.05 4.95T12 22m1-13h4q0-1.8-1.137-3.175T13 4.1zM7 9h4V4.1q-1.725.35-2.863 1.725T7 9m5 11q2.075 0 3.538-1.463T17 15v-4H7v4q0 2.075 1.463 3.538T12 20m0-9"></svg:path>`,
 })
 export class MaterialSymbolsMouseOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsMoveIcon],svg[material-symbols-move-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 17q-.175 0-.3-.1t-.175-.25q-.35-1.05-.85-1.75t-1-1.35t-.838-1.35t-.337-1.7q0-1.45 1.025-2.475T11 7t2.475 1.025T14.5 10.5q0 1-.338 1.7t-.837 1.35t-1 1.35t-.85 1.75q-.05.15-.175.25t-.3.1m0-5.25q.525 0 .888-.363t.362-.887t-.363-.888T11 9.25t-.888.363t-.362.887t.363.888t.887.362M11 21q-3.75 0-6.375-2.625T2 12q0-1.875.713-3.512t1.924-2.85t2.85-1.925T11 3t3.513.713t2.85 1.924t1.925 2.85T20 12v.2l1.325-1.35l1.425 1.4L19 16l-3.75-3.75l1.425-1.4L18 12.175V12q0-2.9-2.05-4.95T11 5T6.05 7.05T4 12q.025 2.9 2.062 4.95T11 19q1.425 0 2.675-.537t2.2-1.463l1.425 1.425q-1.225 1.2-2.838 1.888T11 21"></svg:path>`,
+})
+export class MaterialSymbolsMoveIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

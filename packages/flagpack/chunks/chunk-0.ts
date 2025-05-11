@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[flagpackAeIcon],svg[flagpack-ae-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#F7FCFF" fill-rule="evenodd" d="M0 0h32v24H0z" clip-rule="evenodd"></svg:path><svg:path fill="#5EAA22" fill-rule="evenodd" d="M0 0v8h32V0z" clip-rule="evenodd"></svg:path><svg:path fill="#272727" fill-rule="evenodd" d="M0 16v8h32v-8z" clip-rule="evenodd"></svg:path><svg:path fill="#E31D1C" d="M0 0h10v24H0z"></svg:path></svg:g>`,
+})
+export class FlagpackAeIcon {
+  readonly viewBox = input("0 0 32 24")
+  readonly width = input("1.34em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[flagpackAfIcon],svg[flagpack-af-icon]',
   host: {
     role: 'img',
@@ -19,16 +36,50 @@ export class FlagpackAfIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flagpackAmIcon],svg[flagpack-am-icon]',
+  selector: 'svg[flagpackAdIcon],svg[flagpack-ad-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none"><svg:path fill="#2E42A5" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path><svg:mask id="flagpackAm0" width="32" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance"><svg:path fill="#fff" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path></svg:mask><svg:g fill-rule="evenodd" clip-rule="evenodd" mask="url(#flagpackAm0)"><svg:path fill="#E31D1C" d="M0 0v8h32V0z"></svg:path><svg:path fill="#FECA00" d="M0 16v8h32v-8z"></svg:path></svg:g></svg:g>`,
+  template: `<svg:g fill="none"><svg:path fill="#FFD018" fill-rule="evenodd" d="M8 0h16v24H8z" clip-rule="evenodd"></svg:path><svg:path fill="#2E42A5" fill-rule="evenodd" d="M0 0h8v24H0z" clip-rule="evenodd"></svg:path><svg:path fill="#E31D1C" fill-rule="evenodd" d="M24 0h8v24h-8z" clip-rule="evenodd"></svg:path><svg:path fill="#BF9937" fill-rule="evenodd" d="M16.3 19.424c.22-.062.41-.447.41-.447s.145.113.373.228c.23.115.467-.228.467-.228s.325 0 .468-.383c.142-.384-.285-.548-.285-.548s.5-.524 1.342-.524s1.498 0 2.048-.234c.55-.233 1.084-.634 1.284-1.468c.2-.833-.433-1.358-.433-1.358s.14.044.433-.195c.293-.24-.179-1.01-.433-1.01c-.253 0-.283.143-.283.143s-.157-.136-.372-.599s.215-.868.215-.868s.235.135.44-.088c.206-.222-.106-.563-.106-.563s.988-.336.845-1.6s-1.446-1.192-1.446-1.192s.04-.21-.144-.33c-.183-.12-.32.12-.32.12c-.143-.334.279-.79.617-1.155a5 5 0 0 0 .27-.307c.293-.377.11-.843-.959-1.352s-1.652.175-1.737.417c-.086.243.245.393.245.393c-.27.237-.793.328-1.15.164s-.198-.663-.124-.799l.031-.054c.1-.169.312-.523.094-.867c-.245-.387-.668-.387-1.007-.167c-.29.188-.7.287-.813.312c-.113-.025-.524-.124-.814-.312c-.338-.22-.762-.22-1.006.167c-.218.344-.008.698.093.867l.031.054c.074.136.232.635-.124.799c-.357.164-.88.073-1.15-.164c0 0 .331-.15.246-.393c-.086-.242-.67-.926-1.738-.417s-1.252.975-.96 1.352c.07.09.166.194.271.307c.338.365.76.821.617 1.154c0 0-.136-.24-.32-.12s-.144.33-.144.33s-1.303-.071-1.446 1.193s.845 1.6.845 1.6s-.311.341-.106.563c.205.223.44.088.44.088s.43.406.215.868c-.215.463-.371.599-.371.599s-.03-.143-.284-.143s-.726.77-.433 1.01s.433.195.433.195s-.633.525-.433 1.358s.734 1.235 1.284 1.468c.55.234 1.206.234 2.048.234s1.342.524 1.342.524s-.427.164-.284.548c.142.383.467.383.467.383s.238.343.467.228s.373-.228.373-.228s.19.384.411.447v.008l.03-.002l.03.002z" clip-rule="evenodd"></svg:path><svg:path fill="#805440" d="m12.11 15.998l.105-.254q1.812.776 4.124.777q2.312-.001 4.013-.776l.11.252q-1.756.8-4.123.8q-2.364 0-4.229-.8"></svg:path></svg:g>`,
 })
-export class FlagpackAmIcon {
+export class FlagpackAdIcon {
+  readonly viewBox = input("0 0 32 24")
+  readonly width = input("1.34em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[flagpackAiIcon],svg[flagpack-ai-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:clippath id="flagpackAi0"><svg:path fill="#fff" d="M0 0h18v14H0z"></svg:path></svg:clippath><svg:g fill="none"><svg:path fill="#2E42A5" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path><svg:mask id="flagpackAi1" width="32" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance"><svg:path fill="#fff" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path></svg:mask><svg:g mask="url(#flagpackAi1)"><svg:path fill="#FBE625" fill-rule="evenodd" d="m20.943 11.856l.003.35c.027 2.95.136 4.88.33 5.805c.16.768.745 2.04 1.432 3.062c.864 1.283 1.787 2.064 2.669 2.064c.886 0 1.809-.726 2.669-1.936c.706-.993 1.311-2.252 1.552-3.18c.298-1.15.437-3.085.42-5.818l-.002-.347l-.318.164a4.44 4.44 0 0 1-2.072.497q-1.1 0-2.128-.66l-.118-.076l-.12.073q-1.086.665-2.043.663q-.968 0-1.952-.498zm.546 6.114q-.285-1.36-.326-5.765q1.03.522 2.054.522t2.16-.696q1.081.696 2.249.696q1.166 0 2.175-.522q.025 4.074-.414 5.765c-.439 1.69-2.279 4.957-4.01 4.957s-3.604-3.597-3.888-4.957" clip-rule="evenodd"></svg:path><svg:path fill="#F5FBFF" fill-rule="evenodd" d="M21.164 12.205s.04 4.404.325 5.765c.284 1.36 2.157 4.957 3.888 4.957s3.572-3.266 4.01-4.957c.44-1.692.414-5.765.414-5.765s-1.009.522-2.175.522c-1.167 0-2.249-.696-2.249-.696s-1.136.696-2.16.696s-2.053-.522-2.053-.522" clip-rule="evenodd"></svg:path><svg:mask id="flagpackAi2" width="9" height="11" x="21" y="12" maskUnits="userSpaceOnUse" style="mask-type:luminance"><svg:path fill="#fff" fill-rule="evenodd" d="M21.164 12.205s.04 4.404.325 5.765c.284 1.36 2.157 4.957 3.888 4.957s3.572-3.266 4.01-4.957c.44-1.692.414-5.765.414-5.765s-1.009.522-2.175.522c-1.167 0-2.249-.696-2.249-.696s-1.136.696-2.16.696s-2.053-.522-2.053-.522" clip-rule="evenodd"></svg:path></svg:mask><svg:g fill-rule="evenodd" clip-rule="evenodd" mask="url(#flagpackAi2)"><svg:path fill="#FF9800" d="M24.64 15.488c0 .288-.411 1.125-.65 1.34c-.176.158-.121-.21-.081-.482c.014-.096.026-.18.026-.224v-.02c0-.056 0-.087-.005-.117a.7.7 0 0 0-.055-.144l-.045-.103c-.381-.814-.111-1.204.009-1.377l.041-.065a.4.4 0 0 1 .09-.106c.096-.093.217-.21.172-.47c-.064-.366.322-.834.322-.834s-.094.908.35.686c.288-.145.811.063 1.276.247c.25.1.484.192.655.22c.346.056.535-.09.653-.18c.048-.037.085-.065.114-.065c.102 0 .222.02.222.095c0 .074-.456.292-.685.36c-.172.05.005.191.153.31c.049.038.094.074.123.104c.119.12.227.779-.046.364c-.274-.414-.856-.69-1.351-.731c-.495-.04-1.12.335-1.194.731c-.075.397.585.324.585.324s-.048.062-.26.137c-.214.075-.42 0-.42 0m-.498-.03a.107.107 0 0 1-.109.104a.107.107 0 0 1-.108-.105c0-.058.048-.105.108-.105s.109.047.109.105m2.44 1.943c-.303-.104-1.235-.058-1.486.082c0 0-.034-.216-.203-.366s-.247-.162-.247-.162s.384.542.001.669c-.383.126-1.014-.237-1.219-.69c-.204-.452-.244-1.096-.015-1.536c.23-.44-.293-.026-.341.136c-.012.04-.022.097-.032.158c-.031.187-.069.41-.197.284c-.17-.167-.581-.46-.646-.424s-.025.15.025.24c.014.026.056.044.112.068c.136.06.354.154.474.484c.058.163.09.412.125.68c.064.495.136 1.053.402 1.235c.41.28-.43.64-.43.64s.597.11.885-.123c.207-.167.367-.117.495-.078c.05.015.095.029.136.027q.03 0 .077.005c.21.02.681.068 1.208-.66l.069-.09c.05-.065.072-.094.1-.117a.5.5 0 0 1 .1-.062l.017-.01a2 2 0 0 1 .208-.085c.258-.097.606-.228.382-.305m-1.253.48a.107.107 0 0 1 .144.045a.107.107 0 0 1-.039.146a.107.107 0 0 1-.144-.045a.107.107 0 0 1 .039-.145m.513-3.007c.077.311.624 1.067.878 1.202c0 0-.163.146-.197.37c-.033.223-.001.295-.001.295s.245-.618.56-.365c.315.252.354.98.086 1.397s-.786.802-1.28.85c-.494.046.138.26.3.212c.04-.012.093-.035.15-.06c.174-.075.381-.165.345.011c-.047.234-.07.738-.004.773s.14-.062.188-.151c.014-.027.006-.072-.004-.132c-.024-.146-.064-.381.148-.66c.105-.139.296-.301.501-.476c.382-.324.81-.688.818-1.01c.012-.496.77.013.77.013s-.232-.561-.585-.676c-.252-.083-.298-.244-.335-.372a.4.4 0 0 0-.05-.13q-.017-.023-.039-.067c-.096-.187-.314-.608-1.211-.653l-.113-.01a.7.7 0 0 1-.153-.019a.6.6 0 0 1-.106-.05l-.017-.01a2 2 0 0 1-.186-.128c-.22-.163-.52-.384-.463-.154m1.12.83a.107.107 0 0 1-.042-.146a.107.107 0 0 1 .144-.046c.05.027.07.092.041.145a.107.107 0 0 1-.143.046"></svg:path><svg:path fill="#36C6FF" d="M21.426 19.752h7.279v3.457h-7.28z"></svg:path></svg:g><svg:g clip-path="url(#flagpackAi0)"><svg:path fill="#2E42A5" d="M0 0h18v14H0z"></svg:path><svg:path fill="#F7FCFF" d="m-2.004 13l3.96 1.737L18.09 1.889l2.09-2.582l-4.236-.58l-6.58 5.536l-5.297 3.73z"></svg:path><svg:path fill="#F50100" d="m-1.462 14.217l2.018 1.008L19.429-.933h-2.833z"></svg:path><svg:path fill="#F7FCFF" d="m20.004 13l-3.96 1.737L-.09 1.889L-2.18-.693l4.236-.58l6.58 5.536l5.297 3.73z"></svg:path><svg:path fill="#F50100" d="m19.87 13.873l-2.019 1.009l-8.036-6.918l-2.383-.773L-2.38-.684H.453l9.807 7.688l2.605.927z"></svg:path><svg:path fill="#F50100" fill-rule="evenodd" d="M9.985 0h-2v6H0v2h7.985v6h2V8H18V6H9.985z" clip-rule="evenodd"></svg:path><svg:path fill="#F7FCFF" fill-rule="evenodd" d="M6.485 0h5v4.5H18v5h-6.515L11.5 14h-5l-.015-4.5H0v-5h6.485zm1.5 6H0v2h7.985v6h2V8H18V6H9.985V0h-2z" clip-rule="evenodd"></svg:path></svg:g></svg:g></svg:g>`,
+})
+export class FlagpackAiIcon {
+  readonly viewBox = input("0 0 32 24")
+  readonly width = input("1.34em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[flagpackAgIcon],svg[flagpack-ag-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="#1B1B1B" fill-rule="evenodd" d="M0 0h32v24H0z" clip-rule="evenodd"></svg:path><svg:path fill="#F9D313" fill-rule="evenodd" d="m16 14l-2.003 3.8l.05-4.196l-3.658 2.65l2.093-3.76l-4.59.977l3.72-2.58L7 10l4.613-.89L7.89 6.529l4.59.977l-2.092-3.76l3.659 2.65l-.05-4.195L16 6l2.003-3.8l-.05 4.196l3.658-2.65l-2.093 3.76l4.59-.977l-3.72 2.58L25 10l-4.613.89l3.722 2.581l-4.59-.977l2.092 3.76l-3.658-2.65l.05 4.195z" clip-rule="evenodd"></svg:path><svg:path fill="#F1F9FF" d="M6 14h20v10H6z"></svg:path><svg:path fill="#4A80E8" d="M2 10h28v4H2z"></svg:path><svg:path fill="#E31D1C" fill-rule="evenodd" d="m0 6l16 18L32 6v18H0z" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class FlagpackAgIcon {
   readonly viewBox = input("0 0 32 24")
   readonly width = input("1.34em")
   readonly height = input("1em")
@@ -70,33 +121,16 @@ export class FlagpackAqIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flagpackAiIcon],svg[flagpack-ai-icon]',
+  selector: 'svg[flagpackAmIcon],svg[flagpack-am-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:clippath id="flagpackAi0"><svg:path fill="#fff" d="M0 0h18v14H0z"></svg:path></svg:clippath><svg:g fill="none"><svg:path fill="#2E42A5" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path><svg:mask id="flagpackAi1" width="32" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance"><svg:path fill="#fff" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path></svg:mask><svg:g mask="url(#flagpackAi1)"><svg:path fill="#FBE625" fill-rule="evenodd" d="m20.943 11.856l.003.35c.027 2.95.136 4.88.33 5.805c.16.768.745 2.04 1.432 3.062c.864 1.283 1.787 2.064 2.669 2.064c.886 0 1.809-.726 2.669-1.936c.706-.993 1.311-2.252 1.552-3.18c.298-1.15.437-3.085.42-5.818l-.002-.347l-.318.164a4.44 4.44 0 0 1-2.072.497q-1.1 0-2.128-.66l-.118-.076l-.12.073q-1.086.665-2.043.663q-.968 0-1.952-.498zm.546 6.114q-.285-1.36-.326-5.765q1.03.522 2.054.522t2.16-.696q1.081.696 2.249.696q1.166 0 2.175-.522q.025 4.074-.414 5.765c-.439 1.69-2.279 4.957-4.01 4.957s-3.604-3.597-3.888-4.957" clip-rule="evenodd"></svg:path><svg:path fill="#F5FBFF" fill-rule="evenodd" d="M21.164 12.205s.04 4.404.325 5.765c.284 1.36 2.157 4.957 3.888 4.957s3.572-3.266 4.01-4.957c.44-1.692.414-5.765.414-5.765s-1.009.522-2.175.522c-1.167 0-2.249-.696-2.249-.696s-1.136.696-2.16.696s-2.053-.522-2.053-.522" clip-rule="evenodd"></svg:path><svg:mask id="flagpackAi2" width="9" height="11" x="21" y="12" maskUnits="userSpaceOnUse" style="mask-type:luminance"><svg:path fill="#fff" fill-rule="evenodd" d="M21.164 12.205s.04 4.404.325 5.765c.284 1.36 2.157 4.957 3.888 4.957s3.572-3.266 4.01-4.957c.44-1.692.414-5.765.414-5.765s-1.009.522-2.175.522c-1.167 0-2.249-.696-2.249-.696s-1.136.696-2.16.696s-2.053-.522-2.053-.522" clip-rule="evenodd"></svg:path></svg:mask><svg:g fill-rule="evenodd" clip-rule="evenodd" mask="url(#flagpackAi2)"><svg:path fill="#FF9800" d="M24.64 15.488c0 .288-.411 1.125-.65 1.34c-.176.158-.121-.21-.081-.482c.014-.096.026-.18.026-.224v-.02c0-.056 0-.087-.005-.117a.7.7 0 0 0-.055-.144l-.045-.103c-.381-.814-.111-1.204.009-1.377l.041-.065a.4.4 0 0 1 .09-.106c.096-.093.217-.21.172-.47c-.064-.366.322-.834.322-.834s-.094.908.35.686c.288-.145.811.063 1.276.247c.25.1.484.192.655.22c.346.056.535-.09.653-.18c.048-.037.085-.065.114-.065c.102 0 .222.02.222.095c0 .074-.456.292-.685.36c-.172.05.005.191.153.31c.049.038.094.074.123.104c.119.12.227.779-.046.364c-.274-.414-.856-.69-1.351-.731c-.495-.04-1.12.335-1.194.731c-.075.397.585.324.585.324s-.048.062-.26.137c-.214.075-.42 0-.42 0m-.498-.03a.107.107 0 0 1-.109.104a.107.107 0 0 1-.108-.105c0-.058.048-.105.108-.105s.109.047.109.105m2.44 1.943c-.303-.104-1.235-.058-1.486.082c0 0-.034-.216-.203-.366s-.247-.162-.247-.162s.384.542.001.669c-.383.126-1.014-.237-1.219-.69c-.204-.452-.244-1.096-.015-1.536c.23-.44-.293-.026-.341.136c-.012.04-.022.097-.032.158c-.031.187-.069.41-.197.284c-.17-.167-.581-.46-.646-.424s-.025.15.025.24c.014.026.056.044.112.068c.136.06.354.154.474.484c.058.163.09.412.125.68c.064.495.136 1.053.402 1.235c.41.28-.43.64-.43.64s.597.11.885-.123c.207-.167.367-.117.495-.078c.05.015.095.029.136.027q.03 0 .077.005c.21.02.681.068 1.208-.66l.069-.09c.05-.065.072-.094.1-.117a.5.5 0 0 1 .1-.062l.017-.01a2 2 0 0 1 .208-.085c.258-.097.606-.228.382-.305m-1.253.48a.107.107 0 0 1 .144.045a.107.107 0 0 1-.039.146a.107.107 0 0 1-.144-.045a.107.107 0 0 1 .039-.145m.513-3.007c.077.311.624 1.067.878 1.202c0 0-.163.146-.197.37c-.033.223-.001.295-.001.295s.245-.618.56-.365c.315.252.354.98.086 1.397s-.786.802-1.28.85c-.494.046.138.26.3.212c.04-.012.093-.035.15-.06c.174-.075.381-.165.345.011c-.047.234-.07.738-.004.773s.14-.062.188-.151c.014-.027.006-.072-.004-.132c-.024-.146-.064-.381.148-.66c.105-.139.296-.301.501-.476c.382-.324.81-.688.818-1.01c.012-.496.77.013.77.013s-.232-.561-.585-.676c-.252-.083-.298-.244-.335-.372a.4.4 0 0 0-.05-.13q-.017-.023-.039-.067c-.096-.187-.314-.608-1.211-.653l-.113-.01a.7.7 0 0 1-.153-.019a.6.6 0 0 1-.106-.05l-.017-.01a2 2 0 0 1-.186-.128c-.22-.163-.52-.384-.463-.154m1.12.83a.107.107 0 0 1-.042-.146a.107.107 0 0 1 .144-.046c.05.027.07.092.041.145a.107.107 0 0 1-.143.046"></svg:path><svg:path fill="#36C6FF" d="M21.426 19.752h7.279v3.457h-7.28z"></svg:path></svg:g><svg:g clip-path="url(#flagpackAi0)"><svg:path fill="#2E42A5" d="M0 0h18v14H0z"></svg:path><svg:path fill="#F7FCFF" d="m-2.004 13l3.96 1.737L18.09 1.889l2.09-2.582l-4.236-.58l-6.58 5.536l-5.297 3.73z"></svg:path><svg:path fill="#F50100" d="m-1.462 14.217l2.018 1.008L19.429-.933h-2.833z"></svg:path><svg:path fill="#F7FCFF" d="m20.004 13l-3.96 1.737L-.09 1.889L-2.18-.693l4.236-.58l6.58 5.536l5.297 3.73z"></svg:path><svg:path fill="#F50100" d="m19.87 13.873l-2.019 1.009l-8.036-6.918l-2.383-.773L-2.38-.684H.453l9.807 7.688l2.605.927z"></svg:path><svg:path fill="#F50100" fill-rule="evenodd" d="M9.985 0h-2v6H0v2h7.985v6h2V8H18V6H9.985z" clip-rule="evenodd"></svg:path><svg:path fill="#F7FCFF" fill-rule="evenodd" d="M6.485 0h5v4.5H18v5h-6.515L11.5 14h-5l-.015-4.5H0v-5h6.485zm1.5 6H0v2h7.985v6h2V8H18V6H9.985V0h-2z" clip-rule="evenodd"></svg:path></svg:g></svg:g></svg:g>`,
+  template: `<svg:g fill="none"><svg:path fill="#2E42A5" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path><svg:mask id="flagpackAm0" width="32" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance"><svg:path fill="#fff" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path></svg:mask><svg:g fill-rule="evenodd" clip-rule="evenodd" mask="url(#flagpackAm0)"><svg:path fill="#E31D1C" d="M0 0v8h32V0z"></svg:path><svg:path fill="#FECA00" d="M0 16v8h32v-8z"></svg:path></svg:g></svg:g>`,
 })
-export class FlagpackAiIcon {
-  readonly viewBox = input("0 0 32 24")
-  readonly width = input("1.34em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[flagpackAdIcon],svg[flagpack-ad-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="#FFD018" fill-rule="evenodd" d="M8 0h16v24H8z" clip-rule="evenodd"></svg:path><svg:path fill="#2E42A5" fill-rule="evenodd" d="M0 0h8v24H0z" clip-rule="evenodd"></svg:path><svg:path fill="#E31D1C" fill-rule="evenodd" d="M24 0h8v24h-8z" clip-rule="evenodd"></svg:path><svg:path fill="#BF9937" fill-rule="evenodd" d="M16.3 19.424c.22-.062.41-.447.41-.447s.145.113.373.228c.23.115.467-.228.467-.228s.325 0 .468-.383c.142-.384-.285-.548-.285-.548s.5-.524 1.342-.524s1.498 0 2.048-.234c.55-.233 1.084-.634 1.284-1.468c.2-.833-.433-1.358-.433-1.358s.14.044.433-.195c.293-.24-.179-1.01-.433-1.01c-.253 0-.283.143-.283.143s-.157-.136-.372-.599s.215-.868.215-.868s.235.135.44-.088c.206-.222-.106-.563-.106-.563s.988-.336.845-1.6s-1.446-1.192-1.446-1.192s.04-.21-.144-.33c-.183-.12-.32.12-.32.12c-.143-.334.279-.79.617-1.155a5 5 0 0 0 .27-.307c.293-.377.11-.843-.959-1.352s-1.652.175-1.737.417c-.086.243.245.393.245.393c-.27.237-.793.328-1.15.164s-.198-.663-.124-.799l.031-.054c.1-.169.312-.523.094-.867c-.245-.387-.668-.387-1.007-.167c-.29.188-.7.287-.813.312c-.113-.025-.524-.124-.814-.312c-.338-.22-.762-.22-1.006.167c-.218.344-.008.698.093.867l.031.054c.074.136.232.635-.124.799c-.357.164-.88.073-1.15-.164c0 0 .331-.15.246-.393c-.086-.242-.67-.926-1.738-.417s-1.252.975-.96 1.352c.07.09.166.194.271.307c.338.365.76.821.617 1.154c0 0-.136-.24-.32-.12s-.144.33-.144.33s-1.303-.071-1.446 1.193s.845 1.6.845 1.6s-.311.341-.106.563c.205.223.44.088.44.088s.43.406.215.868c-.215.463-.371.599-.371.599s-.03-.143-.284-.143s-.726.77-.433 1.01s.433.195.433.195s-.633.525-.433 1.358s.734 1.235 1.284 1.468c.55.234 1.206.234 2.048.234s1.342.524 1.342.524s-.427.164-.284.548c.142.383.467.383.467.383s.238.343.467.228s.373-.228.373-.228s.19.384.411.447v.008l.03-.002l.03.002z" clip-rule="evenodd"></svg:path><svg:path fill="#805440" d="m12.11 15.998l.105-.254q1.812.776 4.124.777q2.312-.001 4.013-.776l.11.252q-1.756.8-4.123.8q-2.364 0-4.229-.8"></svg:path></svg:g>`,
-})
-export class FlagpackAdIcon {
+export class FlagpackAmIcon {
   readonly viewBox = input("0 0 32 24")
   readonly width = input("1.34em")
   readonly height = input("1em")
@@ -4313,40 +4347,6 @@ export class FlagpackZmIcon {
   template: `<svg:g fill="none"><svg:path fill="#F7FCFF" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path><svg:mask id="flagpackZw0" width="32" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance"><svg:path fill="#fff" fill-rule="evenodd" d="M0 0v24h32V0z" clip-rule="evenodd"></svg:path></svg:mask><svg:g mask="url(#flagpackZw0)"><svg:path fill="#FECA00" fill-rule="evenodd" d="M0 2v20h32V2z" clip-rule="evenodd"></svg:path><svg:path fill="#272727" stroke="#E31D1C" stroke-width="3.5" d="M0 8.25h-1.75v7.5h35.5v-7.5z"></svg:path><svg:path fill="#5EAA22" fill-rule="evenodd" d="M0 4V0h32v4zm0 20v-4h32v4z" clip-rule="evenodd"></svg:path></svg:g><svg:path fill="#F7FCFF" stroke="#272727" stroke-width="2" d="M.597-.802L-1-1.991V25.96l1.587-1.15l16.331-11.85l1.102-.799l-1.092-.812z"></svg:path><svg:mask id="flagpackZw1" width="22" height="32" x="-2" y="-4" maskUnits="userSpaceOnUse" style="mask-type:luminance"><svg:path fill="#fff" stroke="#fff" stroke-width="2" d="M.597-.802L-1-1.991V25.96l1.587-1.15l16.331-11.85l1.102-.799l-1.092-.812z"></svg:path></svg:mask><svg:g mask="url(#flagpackZw1)"><svg:path fill="#E31D1C" fill-rule="evenodd" d="M7.478 14.278L3.7 17.328l1.733-4.076l-2.979-2.868H5.97l1.443-3.459l1.532 3.459h3.51l-3.136 2.868l1.57 4.077z" clip-rule="evenodd"></svg:path><svg:path fill="#FECA00" fill-rule="evenodd" d="M5.018 8.422s-.055-.133.269-.25c.323-.117.422-.364.676-.182s.413-.184.485.342c.073.525.274 1.355.274 1.355l3.288 2.47h-.618s-.962 1.413-.803 2.653c0 0-.664-.1-1.563-.1c-.9 0-1.489.215-1.489.215l-.52-1.924s.189-.323.27-.583c.08-.26.415-.309.415-.516s-.33-.38-.165-.917s.165-2.14.165-2.14s-.522-.23-.415-.23c.106 0 .348-.193.174-.193z" clip-rule="evenodd"></svg:path><svg:path stroke="#0A0A0A" stroke-width=".25" d="m6.722 9.687l-.121.029l.01.044l.036.027l2.988 2.245h-.309l-.037.055l.103.07l-.103-.07l-.001.001l-.003.004l-.008.013l-.032.049a6 6 0 0 0-.43.815c-.204.473-.4 1.093-.365 1.697a13 13 0 0 0-1.424-.082c-.46 0-.84.056-1.107.11a4 4 0 0 0-.295.073l-.472-1.749l.006-.011q.03-.054.075-.143c.058-.116.13-.269.173-.41c.027-.085.095-.14.194-.214l.003-.002c.044-.034.098-.074.14-.123a.32.32 0 0 0 .084-.213a.46.46 0 0 0-.063-.214l-.036-.064a1 1 0 0 1-.056-.109c-.051-.111-.088-.257-.015-.493c.045-.147.077-.358.1-.585c.023-.23.04-.483.05-.718a23 23 0 0 0 .02-.804v-.07h-.125h.125v-.083l-.074-.032l-.002-.001l-.004-.002l-.016-.007l-.057-.026l-.135-.063a.5.5 0 0 0 .075-.079a.2.2 0 0 0 .033-.101a.15.15 0 0 0-.08-.131a.2.2 0 0 0-.106-.023h-.149l.017-.007c.093-.034.168-.076.23-.115l.072-.046a1 1 0 0 1 .08-.05c.04-.023.065-.03.083-.029c.017 0 .047.006.096.041a.46.46 0 0 0 .387.066c.012.02.031.072.048.192c.037.268.106.61.165.884a25 25 0 0 0 .102.446l.006.027l.002.008v.002z"></svg:path></svg:g></svg:g>`,
 })
 export class FlagpackZwIcon {
-  readonly viewBox = input("0 0 32 24")
-  readonly width = input("1.34em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[flagpackAeIcon],svg[flagpack-ae-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="#F7FCFF" fill-rule="evenodd" d="M0 0h32v24H0z" clip-rule="evenodd"></svg:path><svg:path fill="#5EAA22" fill-rule="evenodd" d="M0 0v8h32V0z" clip-rule="evenodd"></svg:path><svg:path fill="#272727" fill-rule="evenodd" d="M0 16v8h32v-8z" clip-rule="evenodd"></svg:path><svg:path fill="#E31D1C" d="M0 0h10v24H0z"></svg:path></svg:g>`,
-})
-export class FlagpackAeIcon {
-  readonly viewBox = input("0 0 32 24")
-  readonly width = input("1.34em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[flagpackAgIcon],svg[flagpack-ag-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="#1B1B1B" fill-rule="evenodd" d="M0 0h32v24H0z" clip-rule="evenodd"></svg:path><svg:path fill="#F9D313" fill-rule="evenodd" d="m16 14l-2.003 3.8l.05-4.196l-3.658 2.65l2.093-3.76l-4.59.977l3.72-2.58L7 10l4.613-.89L7.89 6.529l4.59.977l-2.092-3.76l3.659 2.65l-.05-4.195L16 6l2.003-3.8l-.05 4.196l3.658-2.65l-2.093 3.76l4.59-.977l-3.72 2.58L25 10l-4.613.89l3.722 2.581l-4.59-.977l2.092 3.76l-3.658-2.65l.05 4.195z" clip-rule="evenodd"></svg:path><svg:path fill="#F1F9FF" d="M6 14h20v10H6z"></svg:path><svg:path fill="#4A80E8" d="M2 10h28v4H2z"></svg:path><svg:path fill="#E31D1C" fill-rule="evenodd" d="m0 6l16 18L32 6v18H0z" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class FlagpackAgIcon {
   readonly viewBox = input("0 0 32 24")
   readonly width = input("1.34em")
   readonly height = input("1em")

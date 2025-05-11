@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsDirectionsRunRoundedIcon],svg[material-symbols-directions-run-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13 22v-5l-2.1-2l-.775 3.45q-.1.4-.437.613t-.738.137L4 18.2q-.425-.075-.65-.425T3.2 17t.425-.662t.775-.138l3.8.8l1.6-8.1l-1.8.7V12q0 .425-.288.713T7 13t-.712-.288T6 12V8.95q0-.3.163-.537T6.6 8.05L9.95 6.6q.875-.375 1.288-.487T12 6q.525 0 .975.275T13.7 7l1 1.6q.525.85 1.363 1.475T18 10.9q.425.075.713.375T19 12t-.288.7t-.687.225q-1.35-.2-2.525-.838t-2-1.587l-.6 3l1.8 1.7q.15.15.225.338t.075.387V22q0 .425-.288.713T14 23t-.712-.288T13 22m.5-16.5q-.825 0-1.412-.587T11.5 3.5t.588-1.412T13.5 1.5t1.413.588T15.5 3.5t-.587 1.413T13.5 5.5"></svg:path>`,
-})
-export class MaterialSymbolsDirectionsRunRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsDirectionsSharpIcon],svg[material-symbols-directions-sharp-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsEditOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="M5 19h1.425L16.2 9.225L14.775 7.8L5 17.575zm-2 2v-4.25L17.625 2.175L21.8 6.45L7.25 21zM19 6.4L17.6 5zm-3.525 2.125l-.7-.725L16.2 9.225z"></svg:path>`,
 })
 export class MaterialSymbolsEditOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsEditRoadIcon],svg[material-symbols-edit-road-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 12.125V4h2v6.125zM4 20V4h2v16zm6-12V4h2v4zm0 6v-4h2v4zm0 6v-4h2v4zm4 0v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zm6.575-5.6l.925-.975l-.925-.925l-.95.95z"></svg:path>`,
+})
+export class MaterialSymbolsEditRoadIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

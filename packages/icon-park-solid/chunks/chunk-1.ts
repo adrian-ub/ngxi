@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkSolidDatabaseSettingIcon],svg[icon-park-solid-database-setting-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipSDatabaseSetting0"><svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path stroke="#fff" d="M34 12v9a9.98 9.98 0 0 0-7.442 3.32A9.96 9.96 0 0 0 24 31q.002.87.144 1.698a10.01 10.01 0 0 0 4.93 7.007C26.412 40.51 22.878 41 19 41c-8.284 0-15-2.239-15-5V12"></svg:path><svg:path fill="#fff" stroke="#fff" d="M44 31c0 5.523-4.477 10-10 10c-1.79 0-3.472-.47-4.926-1.295A10.01 10.01 0 0 1 24 31c0-2.568.968-4.91 2.558-6.68A9.98 9.98 0 0 1 34 21c5.523 0 10 4.477 10 10M34 12c0 2.761-6.716 5-15 5S4 14.761 4 12s6.716-5 15-5s15 2.239 15 5"></svg:path><svg:path stroke="#fff" d="M4 28c0 2.761 6.716 5 15 5c1.807 0 3.54-.106 5.144-.302M4 20c0 2.761 6.716 5 15 5c2.756 0 5.339-.248 7.558-.68"></svg:path><svg:path fill="#fff" stroke="#000" d="m34 27l3.464 2v4L34 35l-3.464-2v-4z"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSDatabaseSetting0)"></svg:path>`,
+})
+export class IconParkSolidDatabaseSettingIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkSolidDatabaseSuccessIcon],svg[icon-park-solid-database-success-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class IconParkSolidIntercomIcon {
   template: `<svg:defs><svg:mask id="ipSIntermediateMode0"><svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"><svg:path fill="#fff" stroke="#fff" d="m24.003 4l5.27 5.27h9.457v9.456l5.27 5.27l-5.27 5.278v9.456h-9.456L24.004 44l-5.278-5.27H9.27v-9.456L4 23.997l5.27-5.27V9.27h9.456z"></svg:path><svg:path stroke="#000" d="M24 16c3.993.5 7 4 7 8s-3 7.5-7 7.955"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSIntermediateMode0)"></svg:path>`,
 })
 export class IconParkSolidIntermediateModeIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkSolidInternalExpansionIcon],svg[icon-park-solid-internal-expansion-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path d="M8 42h32a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v32a2 2 0 0 0 2 2"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M42 8a2 2 0 0 0-2-2H28v14h14z" clip-rule="evenodd"></svg:path><svg:path d="m13 35l10-10m0 0v7m0-7h-7"></svg:path></svg:g>`,
-})
-export class IconParkSolidInternalExpansionIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

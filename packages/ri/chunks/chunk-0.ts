@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[ri4kLineIcon],svg[ri-4k-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 5v14h16V5zM3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m8.5 10.5h-1V15H9v-1.5H6V9h1.5v3H9V9h1.5v3h1zM18 15h-1.75l-1.75-2.25V15H13V9h1.5v2.25L16.25 9H18l-2.25 3z"></svg:path>`,
+})
+export class Ri4kLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ri4kFillIcon],svg[ri-4k-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m8.5 10.5V12h-1V9H9v3H7.5V9H6v4.5h3V15h1.5v-1.5zM18 15l-2.25-3L18 9h-1.75l-1.75 2.25V9H13v6h1.5v-2.25L16.25 15z"></svg:path>`,
+})
+export class Ri4kFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[ri24HoursFillIcon],svg[ri-24-hours-fill-icon]',
   host: {
     role: 'img',
@@ -12,6 +46,23 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M12.005 13.003a3 3 0 0 1 2.08 5.162l-1.91 1.837h2.83v2h-6l-.001-1.724l3.694-3.555a1 1 0 1 0-1.693-.72h-2a3 3 0 0 1 3-3m6 0v4h2v-4h2v9h-2v-3h-4v-6zm-14-1a7.99 7.99 0 0 0 3 6.246v2.416a10 10 0 0 1-5-8.662zm8-10c5.185 0 9.449 3.946 9.95 9h-2.012A8.001 8.001 0 0 0 5.87 6.868l2.135 2.135h-6v-6L4.45 5.449a9.98 9.98 0 0 1 7.554-3.446"></svg:path>`,
 })
 export class Ri24HoursFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ri24HoursLineIcon],svg[ri-24-hours-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.005 13.003a3 3 0 0 1 2.08 5.162l-1.91 1.837h2.83v2h-6l-.001-1.724l3.694-3.555a1 1 0 1 0-1.693-.72h-2a3 3 0 0 1 3-3m6 0v4h2v-4h2v9h-2v-3h-4v-6zm-14-1a7.99 7.99 0 0 0 3 6.246v2.416a10 10 0 0 1-5-8.662zm8-10c5.185 0 9.449 3.946 9.95 9h-2.012a8.001 8.001 0 0 0-14.554-3.5h2.616v2h-6v-6h2v2.499a9.99 9.99 0 0 1 8-4"></svg:path>`,
+})
+export class Ri24HoursLineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,23 +87,6 @@ export class RiABIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[riAccessibilityLineIcon],svg[ri-accessibility-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 12a8 8 0 1 1 16 0a8 8 0 0 1-16 0m8-10C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m0 6.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m0 1c-1.557 0-3.178-.357-4.629-.929L6.63 10.43c1.076.429 2.228.718 3.37.901c0 .87.086 1.764-.316 2.567l-1.578 3.156l1.79.894l1.552-3.105a.618.618 0 0 1 1.106 0l1.552 3.105l1.79-.894l-1.578-3.156C13.915 13.094 14 12.2 14 11.33a16.5 16.5 0 0 0 3.359-.897c.025-.01-.73-1.862-.733-1.86c-1.453.566-3.067.927-4.626.927"></svg:path>`,
-})
-export class RiAccessibilityLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[riAccessibilityFillIcon],svg[ri-accessibility-fill-icon]',
   host: {
     role: 'img',
@@ -63,6 +97,23 @@ export class RiAccessibilityLineIcon {
   template: `<svg:path fill="currentColor" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10m1.5-15a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m-6.871 3.428l.742-1.857c1.45.572 3.072.929 4.629.929c1.56 0 3.173-.361 4.626-.928c.003 0 .758 1.851.733 1.861a16.5 16.5 0 0 1-3.36.897c0 .87-.084 1.764.318 2.567l1.577 3.156l-1.789.894l-1.552-3.105a.618.618 0 0 0-1.106 0l-1.553 3.105l-1.789-.894l1.578-3.156c.402-.803.317-1.697.317-2.567c-1.143-.183-2.295-.472-3.371-.902"></svg:path>`,
 })
 export class RiAccessibilityFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[riAccessibilityLineIcon],svg[ri-accessibility-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 12a8 8 0 1 1 16 0a8 8 0 0 1-16 0m8-10C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m0 6.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m0 1c-1.557 0-3.178-.357-4.629-.929L6.63 10.43c1.076.429 2.228.718 3.37.901c0 .87.086 1.764-.316 2.567l-1.578 3.156l1.79.894l1.552-3.105a.618.618 0 0 1 1.106 0l1.552 3.105l1.79-.894l-1.578-3.156C13.915 13.094 14 12.2 14 11.33a16.5 16.5 0 0 0 3.359-.897c.025-.01-.73-1.862-.733-1.86c-1.453.566-3.067.927-4.626.927"></svg:path>`,
+})
+export class RiAccessibilityLineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,33 +138,16 @@ export class RiAccountBox2FillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ri4kLineIcon],svg[ri-4k-line-icon]',
+  selector: 'svg[riAccountBox2LineIcon],svg[ri-account-box-2-line-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M4 5v14h16V5zM3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m8.5 10.5h-1V15H9v-1.5H6V9h1.5v3H9V9h1.5v3h1zM18 15h-1.75l-1.75-2.25V15H13V9h1.5v2.25L16.25 9H18l-2.25 3z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M4.995 3A1.995 1.995 0 0 0 3 4.995v14.01C3 20.107 3.893 21 4.995 21h14.01A1.995 1.995 0 0 0 21 19.005V4.995A1.995 1.995 0 0 0 19.005 3zM5 19V5h14v14zm7-11a1 1 0 1 1 0 2a1 1 0 0 1 0-2m0 4a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 3a2 2 0 0 0-2 2H8a4 4 0 0 1 8 0h-2a2 2 0 0 0-2-2"></svg:path>`,
 })
-export class Ri4kLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ri24HoursLineIcon],svg[ri-24-hours-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.005 13.003a3 3 0 0 1 2.08 5.162l-1.91 1.837h2.83v2h-6l-.001-1.724l3.694-3.555a1 1 0 1 0-1.693-.72h-2a3 3 0 0 1 3-3m6 0v4h2v-4h2v9h-2v-3h-4v-6zm-14-1a7.99 7.99 0 0 0 3 6.246v2.416a10 10 0 0 1-5-8.662zm8-10c5.185 0 9.449 3.946 9.95 9h-2.012a8.001 8.001 0 0 0-14.554-3.5h2.616v2h-6v-6h2v2.499a9.99 9.99 0 0 1 8-4"></svg:path>`,
-})
-export class Ri24HoursLineIcon {
+export class RiAccountBox2LineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8461,40 +8495,6 @@ export class RiChatHeartFillIcon {
   template: `<svg:path fill="currentColor" d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1zM4 18.385L5.763 17H20V5H4zm8.018-3.685l-3.359-3.36a2.25 2.25 0 0 1 3.182-3.182l.177.177l.176-.177a2.25 2.25 0 0 1 3.182 3.182z"></svg:path>`,
 })
 export class RiChatHeartLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[riChatHistoryFillIcon],svg[ri-chat-history-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-4.708-1.175L2 22l1.176-5.29A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2m1 5h-2v7h6v-2h-4z"></svg:path>`,
-})
-export class RiChatHistoryFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[riChatHistoryLineIcon],svg[ri-chat-history-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-4.708-1.175L2 22l1.176-5.29A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2m0 2a8 8 0 0 0-8 8c0 1.335.326 2.618.94 3.766l.35.654l-.656 2.946l2.948-.654l.653.349A7.96 7.96 0 0 0 12 20a8 8 0 1 0 0-16m1 3v5h4v2h-6V7z"></svg:path>`,
-})
-export class RiChatHistoryLineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

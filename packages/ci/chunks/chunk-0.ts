@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[ciAddColumnIcon],svg[ci-add-column-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h3m0 0h3m-3 0v-3m0 3v3m6 1h1a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v6"></svg:path>`,
-})
-export class CiAddColumnIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ciAddMinusSquareIcon],svg[ci-add-minus-square-icon]',
   host: {
     role: 'img',
@@ -36,16 +19,16 @@ export class CiAddMinusSquareIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ciAdobeXdIcon],svg[ci-adobe-xd-icon]',
+  selector: 'svg[ciAddPlusIcon],svg[ci-add-plus-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M18 22H6a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4ZM6 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H6Zm9.762 12.776a3.188 3.188 0 0 1-2.351-.9a3.762 3.762 0 0 1-.928-2.69a3.8 3.8 0 0 1 .955-2.6a3.422 3.422 0 0 1 2.587-1.069h.233v-2c0-.156.127-.283.283-.284h1.317a.29.29 0 0 1 .2.07a.263.263 0 0 1 .082.2v7.679c-.005.265.009.53.04.793V16a.286.286 0 0 1-.056.177a.34.34 0 0 1-.121.094a5.188 5.188 0 0 1-2.222.506l-.019-.001Zm-.916-5.116l-.005.006a2.222 2.222 0 0 0-.45 1.455a2.264 2.264 0 0 0 .443 1.524c.267.294.652.454 1.049.434a1.63 1.63 0 0 0 .375-.038v-3.849a1.31 1.31 0 0 0-.284-.029a1.436 1.436 0 0 0-1.128.5v-.003Zm-2.621 5h-1.451a.358.358 0 0 1-.354-.22l-.21-.44l-.005-.011L10 15.58l-.064-.133c-.319-.658-.648-1.336-.978-2.034a125.419 125.419 0 0 1-1.417 3.031v.01l-.005.009a.4.4 0 0 1-.136.137a.354.354 0 0 1-.188.05H5.841a.264.264 0 0 1-.263-.179a.282.282 0 0 1 .043-.245l2.229-4.261l-2.156-4.314a.27.27 0 0 1-.012-.288a.273.273 0 0 1 .234-.131H7.35a.372.372 0 0 1 .2.046a.33.33 0 0 1 .136.163c.536 1.125.988 2.1 1.383 2.965c.491-1.1 1.013-2.218 1.363-2.959l.005-.011l.006-.01v-.011a.495.495 0 0 1 .093-.115a.332.332 0 0 1 .221-.077H12.1a.266.266 0 0 1 .247.151a.285.285 0 0 1-.023.263l-2.157 4.187l2.282 4.4a.3.3 0 0 1 .029.259a.266.266 0 0 1-.253.175v.002Z"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12h6m0 0h6m-6 0v6m0-6V6"></svg:path>`,
 })
-export class CiAdobeXdIcon {
+export class CiAddPlusIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,16 +70,16 @@ export class CiAddRowIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ciAirplayIcon],svg[ci-airplay-icon]',
+  selector: 'svg[ciAddToQueueIcon],svg[ci-add-to-queue-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.25 17h-.053c-1.118 0-1.678 0-2.105-.218a2 2 0 0 1-.874-.875C3 15.48 3 14.92 3 13.8V8.2c0-1.12 0-1.68.218-2.108c.192-.377.497-.682.874-.874C4.52 5 5.08 5 6.2 5h11.6c1.12 0 1.68 0 2.107.218c.377.192.683.497.875.874c.218.427.218.987.218 2.105v5.606c0 1.118 0 1.677-.218 2.104a2 2 0 0 1-.874.875C19.48 17 18.92 17 17.803 17h-.05M16 20H8l4-5z"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9v10.4c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C3.76 21 4.04 21 4.598 21H15m-1-8v-3m0 0V7m0 3h-3m3 0h3M7 13.8V6.2c0-1.12 0-1.68.218-2.108c.192-.377.497-.682.874-.874C8.52 3 9.08 3 10.2 3h7.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C21 4.52 21 5.08 21 6.2v7.6c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874c-.428.218-.986.218-2.104.218h-7.607c-1.118 0-1.678 0-2.105-.218a2 2 0 0 1-.874-.874C7 15.48 7 14.92 7 13.8"></svg:path>`,
 })
-export class CiAirplayIcon {
+export class CiAddToQueueIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,16 +87,16 @@ export class CiAirplayIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ciAddPlusSquareIcon],svg[ci-add-plus-square-icon]',
+  selector: 'svg[ciAdobeXdIcon],svg[ci-adobe-xd-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h4m0 0h4m-4 0v4m0-4V8m-8 8.8V7.2c0-1.12 0-1.68.218-2.108c.192-.377.497-.682.874-.874C5.52 4 6.08 4 7.2 4h9.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C20 5.52 20 6.08 20 7.2v9.6c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874c-.428.218-.986.218-2.104.218H7.197c-1.118 0-1.678 0-2.105-.218a2 2 0 0 1-.874-.874C4 18.48 4 17.92 4 16.8"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M18 22H6a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4ZM6 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H6Zm9.762 12.776a3.188 3.188 0 0 1-2.351-.9a3.762 3.762 0 0 1-.928-2.69a3.8 3.8 0 0 1 .955-2.6a3.422 3.422 0 0 1 2.587-1.069h.233v-2c0-.156.127-.283.283-.284h1.317a.29.29 0 0 1 .2.07a.263.263 0 0 1 .082.2v7.679c-.005.265.009.53.04.793V16a.286.286 0 0 1-.056.177a.34.34 0 0 1-.121.094a5.188 5.188 0 0 1-2.222.506l-.019-.001Zm-.916-5.116l-.005.006a2.222 2.222 0 0 0-.45 1.455a2.264 2.264 0 0 0 .443 1.524c.267.294.652.454 1.049.434a1.63 1.63 0 0 0 .375-.038v-3.849a1.31 1.31 0 0 0-.284-.029a1.436 1.436 0 0 0-1.128.5v-.003Zm-2.621 5h-1.451a.358.358 0 0 1-.354-.22l-.21-.44l-.005-.011L10 15.58l-.064-.133c-.319-.658-.648-1.336-.978-2.034a125.419 125.419 0 0 1-1.417 3.031v.01l-.005.009a.4.4 0 0 1-.136.137a.354.354 0 0 1-.188.05H5.841a.264.264 0 0 1-.263-.179a.282.282 0 0 1 .043-.245l2.229-4.261l-2.156-4.314a.27.27 0 0 1-.012-.288a.273.273 0 0 1 .234-.131H7.35a.372.372 0 0 1 .2.046a.33.33 0 0 1 .136.163c.536 1.125.988 2.1 1.383 2.965c.491-1.1 1.013-2.218 1.363-2.959l.005-.011l.006-.01v-.011a.495.495 0 0 1 .093-.115a.332.332 0 0 1 .221-.077H12.1a.266.266 0 0 1 .247.151a.285.285 0 0 1-.023.263l-2.157 4.187l2.282 4.4a.3.3 0 0 1 .029.259a.266.266 0 0 1-.253.175v.002Z"></svg:path>`,
 })
-export class CiAddPlusSquareIcon {
+export class CiAdobeXdIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8495,6 +8478,23 @@ export class CiOctagonIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 10l-4 4l-2-2M7.332 3.938L3.938 7.332l-.004.003c-.343.343-.516.516-.64.717q-.164.27-.239.578C3 8.86 3 9.105 3 9.594v4.812c0 .489 0 .733.055.964a2 2 0 0 0 .24.578c.124.201.297.375.643.72l3.394 3.395c.346.346.518.518.72.642q.27.165.578.24c.23.055.474.055.962.055h4.816c.487 0 .732 0 .962-.055c.204-.05.4-.13.578-.24c.202-.124.375-.296.72-.642l3.395-3.394c.346-.346.519-.52.642-.721q.165-.271.24-.578c.055-.23.055-.475.055-.964V9.594c0-.489 0-.733-.056-.964a2 2 0 0 0-.239-.578c-.123-.202-.296-.374-.642-.72L16.67 3.938c-.346-.346-.519-.52-.72-.643a2 2 0 0 0-.579-.24C15.14 3 14.895 3 14.405 3H9.594c-.49 0-.734 0-.964.055q-.308.075-.578.24c-.2.122-.37.293-.71.633z"></svg:path>`,
 })
 export class CiOctagonCheckIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ciOctagonHelpIcon],svg[ci-octagon-help-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.146 9.074a2.998 2.998 0 0 1 5.28-.838A3 3 0 0 1 12 13v1m.05 3v.1h-.1V17zM7.332 3.938L3.938 7.332l-.004.003c-.343.343-.516.516-.64.717q-.164.27-.239.578C3 8.86 3 9.105 3 9.594v4.812c0 .489 0 .733.055.964a2 2 0 0 0 .24.578c.124.201.297.375.643.72l3.394 3.395c.346.346.518.518.72.642q.27.165.578.24c.23.055.474.055.962.055h4.816c.487 0 .732 0 .962-.055c.204-.05.4-.13.578-.24c.202-.124.375-.296.72-.642l3.395-3.394c.346-.346.519-.52.642-.721q.165-.271.24-.578c.055-.23.055-.475.055-.964V9.594c0-.489 0-.733-.056-.964a2 2 0 0 0-.239-.578c-.123-.202-.296-.374-.642-.72L16.67 3.938c-.346-.346-.519-.52-.72-.643a2 2 0 0 0-.579-.24C15.14 3 14.895 3 14.405 3H9.594c-.49 0-.734 0-.964.055q-.308.075-.578.24c-.2.122-.37.293-.71.633z"></svg:path>`,
+})
+export class CiOctagonHelpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

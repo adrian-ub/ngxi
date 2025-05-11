@@ -2,6 +2,91 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkFlightAirflowIcon],svg[icon-park-flight-airflow-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-width="4"><svg:path d="M6 25C6 15.0589 14.2827 7 24.5 7C34.7173 7 43 15.0589 43 25"></svg:path><svg:path fill="#2F88FF" stroke-linejoin="round" d="M10.0002 35L8.93573 30C8.93573 30 5.501 33.1087 4.35611 35.7391C3.21121 38.3696 4.85151 41 8 41H44.0002L36.0002 35.0217L10.0002 35Z"></svg:path><svg:path stroke-linejoin="round" d="M29 35L18 25L15 25L17 35"></svg:path></svg:g>`,
+})
+export class IconParkFlightAirflowIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkFlightSafetyIcon],svg[icon-park-flight-safety-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="4"><svg:path d="M38.986 23C38.6727 33.709 33.1203 39.5222 25.002 43C20.6093 41.1187 16.9675 38.5534 14.5 34.899"></svg:path><svg:path d="M39 19V10.2556L25.0067 5L11 10.2556V22.0285C11 24.6162 11.2942 26.9289 11.8477 29"></svg:path><svg:path fill="#2F88FF" stroke-linecap="round" d="M9.26785 30.632C7.89464 29.3755 6.27838 26.7552 5.68058 26.6051C5.68058 26.6051 3.88327 31.0394 4.00049 34C4.11771 36.9606 6.89668 38.6351 9.82462 37.2204C12.7526 35.8057 44 20 44 20L35 18L9.26785 30.632Z"></svg:path><svg:path stroke-linecap="round" d="M27.9998 21L18.9991 18L16.9992 19L19.9992 25"></svg:path></svg:g>`,
+})
+export class IconParkFlightSafetyIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkFlipCameraIcon],svg[icon-park-flip-camera-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path fill="#2F88FF" stroke="#000" d="M12 11H17L19 7H29L31 11H36V27H12V11Z"></svg:path><svg:circle cx="24" cy="18" r="4" fill="#43CCF8" stroke="#fff"></svg:circle><svg:path stroke="#000" d="M24 38C12.9543 38 4 33.5228 4 28C4 26.5778 4.59379 25.2249 5.66417 24M24 38L20 34M24 38L20 42"></svg:path><svg:path stroke="#000" d="M32 37.1679C39.0636 35.6248 44 32.1006 44 28C44 26.5778 43.4062 25.2249 42.3358 24"></svg:path></svg:g>`,
+})
+export class IconParkFlipCameraIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkFlipHorizontallyIcon],svg[icon-park-flip-horizontally-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="4"><svg:path stroke-linecap="round" d="M24 6V42"></svg:path><svg:path fill="#2F88FF" d="M4 34L16 12V34H4Z"></svg:path><svg:path fill="#2F88FF" d="M44 34H32V12L44 34Z"></svg:path></svg:g>`,
+})
+export class IconParkFlipHorizontallyIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkFlipVerticallyIcon],svg[icon-park-flip-vertically-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="4"><svg:path stroke-linecap="round" d="M42 24L6 24"></svg:path><svg:path fill="#2F88FF" d="M14 4L36 16H14V4Z"></svg:path><svg:path fill="#2F88FF" d="M14 44V32H36L14 44Z"></svg:path></svg:g>`,
+})
+export class IconParkFlipVerticallyIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkFlirtIcon],svg[icon-park-flirt-icon]',
   host: {
     role: 'img',
@@ -8410,91 +8495,6 @@ export class IconParkMagicHatIcon {
   template: `<svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path d="M7.57932 35.4207C5.32303 32.1826 4 28.2458 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24C44 35.0457 35.0457 44 24 44C19.7542 44 15.8174 42.677 12.5793 40.4207M7.57932 35.4207C8.93657 37.3685 10.6315 39.0634 12.5793 40.4207M7.57932 35.4207L16 27M12.5793 40.4207L21 32M16 27L20 23L25 28L21 32M16 27L21 32"></svg:path><svg:path d="M17 14H21M19 12V16"></svg:path><svg:path d="M28 17H34M31 14V20"></svg:path><svg:path d="M32 29H36M34 27V31"></svg:path></svg:g>`,
 })
 export class IconParkMagicWandIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkMagnetIcon],svg[icon-park-magnet-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path d="M6 10V26C6 35.9411 14.0589 44 24 44C33.9411 44 42 35.9411 42 26V10M14 10V26C14 31.5228 18.4772 36 24 36C29.5228 36 34 31.5228 34 26V10"></svg:path><svg:path fill="#2F88FF" d="M14 4H6V10H14V4Z"></svg:path><svg:path fill="#2F88FF" d="M34 4H42V10H34V4Z"></svg:path></svg:g>`,
-})
-export class IconParkMagnetIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkMailIcon],svg[icon-park-mail-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke-linejoin="round" stroke-width="4"><svg:path fill="#2F88FF" stroke="#000" d="M4 39H44V24V9H24H4V24V39Z"></svg:path><svg:path stroke="#fff" stroke-linecap="round" d="M4 9L24 24L44 9"></svg:path><svg:path stroke="#000" stroke-linecap="round" d="M24 9H4V24"></svg:path><svg:path stroke="#000" stroke-linecap="round" d="M44 24V9H24"></svg:path></svg:g>`,
-})
-export class IconParkMailIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkMailDownloadIcon],svg[icon-park-mail-download-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M10 18H4V42H44V18H38"></svg:path><svg:path fill="#2F88FF" d="M38 6H10V22.5L24 33L38 22.5V6Z"></svg:path><svg:path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M10 22.5L24 33L38 22.5M10 22.5V6H38V22.5M10 22.5L4 18M38 22.5L44 18"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 19L24 24M24 24L29 19M24 24V13"></svg:path></svg:g>`,
-})
-export class IconParkMailDownloadIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkMailEditIcon],svg[icon-park-mail-edit-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path d="M44 24V9H24H4V24V39H24"></svg:path><svg:path fill="#2F88FF" d="M35 39L43 32L39 28L31 35V39H35Z"></svg:path><svg:path d="M4 9L24 24L44 9"></svg:path></svg:g>`,
-})
-export class IconParkMailEditIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkMailOpenIcon],svg[icon-park-mail-open-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="4"><svg:path fill="#2F88FF" d="M44 18V39.8182C44 41.0232 43.1046 42 42 42H6C4.89543 42 4 41.0232 4 39.8182V18L24 31L44 18Z"></svg:path><svg:path stroke-linecap="round" d="M4 17.7839L24 4L44 17.7839"></svg:path></svg:g>`,
-})
-export class IconParkMailOpenIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

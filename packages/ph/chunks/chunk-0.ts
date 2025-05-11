@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[phAcornFillIcon],svg[ph-acorn-fill-icon]',
+  selector: 'svg[phAcornBoldIcon],svg[ph-acorn-bold-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M232 104a56.06 56.06 0 0 0-56-56h-40a24 24 0 0 1 24-24a8 8 0 0 0 0-16a40 40 0 0 0-40 40H80a56.06 56.06 0 0 0-56 56a16 16 0 0 0 8 13.84V128c0 35.53 33.12 62.12 59.74 83.49C103.66 221.07 120 234.18 120 240a8 8 0 0 0 16 0c0-5.82 16.34-18.93 28.26-28.51C190.88 190.12 224 163.53 224 128v-10.16a16 16 0 0 0 8-13.84m-77.75 95c-10.62 8.52-20 16-26.25 23.37c-6.25-7.32-15.63-14.85-26.25-23.37C77.8 179.79 48 155.86 48 128v-8h160v8c0 27.86-29.8 51.79-53.75 71"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M236 104a60.07 60.07 0 0 0-60-60h-35.6A20 20 0 0 1 160 28a12 12 0 0 0 0-24a44.06 44.06 0 0 0-43.81 40H80a60.07 60.07 0 0 0-60 60a20 20 0 0 0 8 16v8c0 37.45 34 64.71 61.23 86.61c10.22 8.2 25.63 20.58 26.77 25.56a12 12 0 0 0 24 0c1.14-5 16.55-17.36 26.77-25.56C194.05 192.71 228 165.45 228 128v-8a20 20 0 0 0 8-16M80 68h96a36.06 36.06 0 0 1 35.78 32H44.22A36.06 36.06 0 0 1 80 68m71.74 127.9c-9.17 7.36-17.46 14-23.74 20.55c-6.28-6.53-14.57-13.19-23.74-20.55C81 177.2 52 153.94 52 128v-4h152v4c0 25.94-29 49.2-52.26 67.9"></svg:path>`,
 })
-export class PhAcornFillIcon {
+export class PhAcornBoldIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,6 +36,40 @@ export class PhAcornIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[phAcornDuotoneIcon],svg[ph-acorn-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M216 112v16c0 53-88 88-88 112c0-24-88-59-88-112v-16Z" opacity=".2"></svg:path><svg:path d="M232 104a56.06 56.06 0 0 0-56-56h-40a24 24 0 0 1 24-24a8 8 0 0 0 0-16a40 40 0 0 0-40 40H80a56.06 56.06 0 0 0-56 56a16 16 0 0 0 8 13.83V128c0 35.53 33.12 62.12 59.74 83.49C103.66 221.07 120 234.18 120 240a8 8 0 0 0 16 0c0-5.82 16.34-18.93 28.26-28.51C190.88 190.12 224 163.53 224 128v-10.17a16 16 0 0 0 8-13.83M80 64h96a40.06 40.06 0 0 1 40 40H40a40 40 0 0 1 40-40m74.25 135c-10.62 8.52-20 16-26.25 23.37c-6.25-7.32-15.63-14.85-26.25-23.37C77.8 179.79 48 155.86 48 128v-8h160v8c0 27.86-29.8 51.79-53.75 71"></svg:path></svg:g>`,
+})
+export class PhAcornDuotoneIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phAcornFillIcon],svg[ph-acorn-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M232 104a56.06 56.06 0 0 0-56-56h-40a24 24 0 0 1 24-24a8 8 0 0 0 0-16a40 40 0 0 0-40 40H80a56.06 56.06 0 0 0-56 56a16 16 0 0 0 8 13.84V128c0 35.53 33.12 62.12 59.74 83.49C103.66 221.07 120 234.18 120 240a8 8 0 0 0 16 0c0-5.82 16.34-18.93 28.26-28.51C190.88 190.12 224 163.53 224 128v-10.16a16 16 0 0 0 8-13.84m-77.75 95c-10.62 8.52-20 16-26.25 23.37c-6.25-7.32-15.63-14.85-26.25-23.37C77.8 179.79 48 155.86 48 128v-8h160v8c0 27.86-29.8 51.79-53.75 71"></svg:path>`,
+})
+export class PhAcornFillIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[phAcornLightIcon],svg[ph-acorn-light-icon]',
   host: {
     role: 'img',
@@ -46,6 +80,23 @@ export class PhAcornIcon {
   template: `<svg:path fill="currentColor" d="M230 104a54.06 54.06 0 0 0-54-54h-42v-2a26 26 0 0 1 26-26a6 6 0 0 0 0-12a38 38 0 0 0-38 38v2H80a54.06 54.06 0 0 0-54 54a14 14 0 0 0 8 12.63V128c0 34.57 32.71 60.83 59 81.93c14.26 11.45 29 23.29 29 30.07a6 6 0 0 0 12 0c0-6.78 14.75-18.62 29-30.07c26.28-21.1 59-47.36 59-81.93v-11.37a14 14 0 0 0 8-12.63M80 62h96a42 42 0 0 1 42 42a2 2 0 0 1-2 2H40a2 2 0 0 1-2-2a42 42 0 0 1 42-42m75.5 138.58c-11.48 9.21-21.48 17.24-27.5 25c-6-7.72-16-15.75-27.5-25C76.22 181.08 46 156.82 46 128v-10h164v10c0 28.82-30.22 53.08-54.5 72.58"></svg:path>`,
 })
 export class PhAcornLightIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phActivityIcon],svg[ph-activity-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M160 216h-.4a8.1 8.1 0 0 1-7.1-5.2l-57.2-150l-32 70.5A8 8 0 0 1 56 136H24a8 8 0 0 1 0-16h26.8l37.9-83.3a8.2 8.2 0 0 1 7.6-4.7a8 8 0 0 1 7.2 5.2L161 188.1l31.8-63.7a8.2 8.2 0 0 1 7.2-4.4h32a8 8 0 0 1 0 16h-27.1l-37.7 75.6a8.2 8.2 0 0 1-7.2 4.4Z"></svg:path>`,
+})
+export class PhActivityIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,16 +121,33 @@ export class PhAcornThinIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[phActivityIcon],svg[ph-activity-icon]',
+  selector: 'svg[phActivityBoldIcon],svg[ph-activity-bold-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M160 216h-.4a8.1 8.1 0 0 1-7.1-5.2l-57.2-150l-32 70.5A8 8 0 0 1 56 136H24a8 8 0 0 1 0-16h26.8l37.9-83.3a8.2 8.2 0 0 1 7.6-4.7a8 8 0 0 1 7.2 5.2L161 188.1l31.8-63.7a8.2 8.2 0 0 1 7.2-4.4h32a8 8 0 0 1 0 16h-27.1l-37.7 75.6a8.2 8.2 0 0 1-7.2 4.4Z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M160 220h-.6a12.1 12.1 0 0 1-10.6-7.7L95 71.1L66.9 133a12 12 0 0 1-10.9 7H24a12 12 0 0 1 0-24h24.3l36.8-81a12 12 0 0 1 22.1.7l54.3 142.5l27.8-55.6A12.1 12.1 0 0 1 200 116h32a12 12 0 0 1 0 24h-24.6l-36.7 73.4A12.1 12.1 0 0 1 160 220Z"></svg:path>`,
 })
-export class PhActivityIcon {
+export class PhActivityBoldIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phActivityLightIcon],svg[ph-activity-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M160 214h-.3a5.8 5.8 0 0 1-5.3-3.9L95.5 55.6l-34 74.9A6.1 6.1 0 0 1 56 134H24a6 6 0 0 1 0-12h28.1l38.4-84.5a6 6 0 0 1 11.1.4l59.1 155.2l33.9-67.8a6 6 0 0 1 5.4-3.3h32a6 6 0 0 1 0 12h-28.3l-38.3 76.7a6.2 6.2 0 0 1-5.4 3.3Z"></svg:path>`,
+})
+export class PhActivityLightIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8427,74 +8495,6 @@ export class PhArrowFatLinesLeftBoldIcon {
   template: `<svg:g fill="currentColor"><svg:path d="M152 80v96h-32v48l-96-96l96-96v48Z" opacity=".2"></svg:path><svg:path d="M152 72h-24V32a8 8 0 0 0-13.66-5.66l-96 96a8 8 0 0 0 0 11.32l96 96A8 8 0 0 0 128 224v-40h24a8 8 0 0 0 8-8V80a8 8 0 0 0-8-8m-8 96h-24a8 8 0 0 0-8 8v28.69L35.31 128L112 51.31V80a8 8 0 0 0 8 8h24Zm80-88v96a8 8 0 0 1-16 0V80a8 8 0 0 1 16 0m-32 0v96a8 8 0 0 1-16 0V80a8 8 0 0 1 16 0"></svg:path></svg:g>`,
 })
 export class PhArrowFatLinesLeftDuotoneIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phArrowFatLinesLeftFillIcon],svg[ph-arrow-fat-lines-left-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M160 80v96a8 8 0 0 1-8 8h-24v40a8 8 0 0 1-13.66 5.66l-96-96a8 8 0 0 1 0-11.32l96-96A8 8 0 0 1 128 32v40h24a8 8 0 0 1 8 8m24-8a8 8 0 0 0-8 8v96a8 8 0 0 0 16 0V80a8 8 0 0 0-8-8m32 0a8 8 0 0 0-8 8v96a8 8 0 0 0 16 0V80a8 8 0 0 0-8-8"></svg:path>`,
-})
-export class PhArrowFatLinesLeftFillIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phArrowFatLinesLeftLightIcon],svg[ph-arrow-fat-lines-left-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M152 74h-26V32a6 6 0 0 0-10.24-4.24l-96 96a6 6 0 0 0 0 8.48l96 96A6 6 0 0 0 126 224v-42h26a6 6 0 0 0 6-6V80a6 6 0 0 0-6-6m-6 96h-26a6 6 0 0 0-6 6v33.51L32.49 128L114 46.49V80a6 6 0 0 0 6 6h26Zm76-90v96a6 6 0 0 1-12 0V80a6 6 0 0 1 12 0m-32 0v96a6 6 0 0 1-12 0V80a6 6 0 0 1 12 0"></svg:path>`,
-})
-export class PhArrowFatLinesLeftLightIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phArrowFatLinesLeftThinIcon],svg[ph-arrow-fat-lines-left-thin-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M152 76h-28V32a4 4 0 0 0-6.83-2.83l-96 96a4 4 0 0 0 0 5.66l96 96A4 4 0 0 0 124 224v-44h28a4 4 0 0 0 4-4V80a4 4 0 0 0-4-4m-4 96h-28a4 4 0 0 0-4 4v38.34L29.66 128L116 41.66V80a4 4 0 0 0 4 4h28Zm72-92v96a4 4 0 0 1-8 0V80a4 4 0 0 1 8 0m-32 0v96a4 4 0 0 1-8 0V80a4 4 0 0 1 8 0"></svg:path>`,
-})
-export class PhArrowFatLinesLeftThinIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phArrowFatLinesRightIcon],svg[ph-arrow-fat-lines-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m237.66 122.34l-96-96A8 8 0 0 0 128 32v40h-24a8 8 0 0 0-8 8v96a8 8 0 0 0 8 8h24v40a8 8 0 0 0 13.66 5.66l96-96a8 8 0 0 0 0-11.32M144 204.69V176a8 8 0 0 0-8-8h-24V88h24a8 8 0 0 0 8-8V51.31L220.69 128ZM48 80v96a8 8 0 0 1-16 0V80a8 8 0 0 1 16 0m32 0v96a8 8 0 0 1-16 0V80a8 8 0 0 1 16 0"></svg:path>`,
-})
-export class PhArrowFatLinesRightIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")

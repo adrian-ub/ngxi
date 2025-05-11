@@ -2,6 +2,91 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentEmojiHighContrast1stPlaceMedalIcon],svg[fluent-emoji-high-contrast-1st-place-medal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M10.6 14.18a7.48 7.48 0 0 1 5.39-2.29c1.96 0 3.91.76 5.39 2.29c2.97 3.05 2.97 8.01 0 11.06a7.46 7.46 0 0 1-5.39 2.29c-2.03 0-3.95-.81-5.39-2.29a7.87 7.87 0 0 1-2.23-5.53c0-2.09.79-4.05 2.23-5.53m4.476.861A1 1 0 0 0 15 17.038V23a1 1 0 1 0 2 0v-6.959a1 1 0 0 0-1-1z"></svg:path><svg:path d="m13.548 2.93l2.45 4.027l2.45-4.027c.34-.58.95-.93 1.62-.93h6.59c1.45 0 2.36 1.56 1.66 2.82a16.6 16.6 0 0 1-5.43 5.78a4.4 4.4 0 0 1-1.183.649c2.614 1.858 4.325 4.954 4.325 8.461c0 5.683-4.495 10.29-10.04 10.29S5.95 25.393 5.95 19.71c0-3.51 1.715-6.61 4.332-8.466a4.3 4.3 0 0 1-1.164-.644a16.7 16.7 0 0 1-5.43-5.78c-.71-1.26.2-2.82 1.65-2.82h6.59c.67 0 1.28.35 1.62.93m2.119 6.495q.16-.005.323-.005a9.8 9.8 0 0 1 4.483 1.08a3.4 3.4 0 0 0 1.807-.694l.03-.024l.034-.02a15.6 15.6 0 0 0 5.101-5.43A.9.9 0 0 0 26.658 3h-6.59a.87.87 0 0 0-.758.436l-.004.007zM9.76 26.11A8.64 8.64 0 0 0 16 28.76c2.35 0 4.57-.94 6.25-2.65c3.44-3.53 3.44-9.27 0-12.8a8.69 8.69 0 0 0-12.49 0a9.1 9.1 0 0 0-2.59 6.4c0 2.42.92 4.69 2.59 6.4"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrast1stPlaceMedalIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrast2ndPlaceMedalIcon],svg[fluent-emoji-high-contrast-2nd-place-medal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M10.6 14.18a7.48 7.48 0 0 1 5.39-2.29c1.96 0 3.91.76 5.39 2.29c2.97 3.05 2.97 8.01 0 11.06a7.46 7.46 0 0 1-5.39 2.29c-2.03 0-3.95-.81-5.39-2.29a7.87 7.87 0 0 1-2.23-5.53c0-2.09.79-4.05 2.23-5.53m3.268 9.77h3.97c.56 0 1-.46 1-1.02s-.45-1.01-1.01-1.01h-1.84l1.95-2.4c.66-.81.8-1.9.37-2.86a2.69 2.69 0 0 0-2.33-1.59h-.13c-.97 0-1.88.47-2.44 1.26c-.32.46-.22 1.09.24 1.41s1.09.21 1.41-.24c.19-.26.48-.41.8-.41h.05c.37.01.53.28.58.4c.04.1.16.44-.1.76l-3.3 4.05c-.25.3-.3.72-.13 1.07a1 1 0 0 0 .91.58"></svg:path><svg:path d="m15.998 6.957l-2.45-4.027c-.34-.58-.95-.93-1.62-.93h-6.59c-1.45 0-2.36 1.56-1.65 2.82a16.7 16.7 0 0 0 5.43 5.78c.354.275.747.491 1.164.644C7.665 13.1 5.95 16.2 5.95 19.71C5.95 25.393 10.445 30 15.99 30s10.04-4.607 10.04-10.29c0-3.507-1.711-6.603-4.324-8.461a4.5 4.5 0 0 0 1.182-.649c2.25-1.46 4.11-3.44 5.43-5.78c.7-1.26-.21-2.82-1.66-2.82h-6.59c-.67 0-1.28.35-1.62.93zM15.99 9.42q-.162 0-.323.005l3.64-5.982l.004-.007A.87.87 0 0 1 20.068 3h6.59a.9.9 0 0 1 .787 1.332a15.6 15.6 0 0 1-5.102 5.43l-.032.02l-.031.024a3.4 3.4 0 0 1-1.807.694a9.8 9.8 0 0 0-4.483-1.08M9.76 26.11a9.1 9.1 0 0 1-2.59-6.4c0-2.42.92-4.69 2.59-6.4a8.69 8.69 0 0 1 12.49 0c3.44 3.53 3.44 9.27 0 12.8c-1.68 1.71-3.9 2.65-6.25 2.65c-2.36 0-4.58-.94-6.24-2.65"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrast2ndPlaceMedalIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrast3rdPlaceMedalIcon],svg[fluent-emoji-high-contrast-3rd-place-medal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M10.6 14.18a7.87 7.87 0 0 0-2.23 5.53c0 2.09.79 4.05 2.23 5.53a7.48 7.48 0 0 0 5.39 2.29c2.04 0 3.95-.81 5.39-2.29c2.97-3.05 2.97-8.01 0-11.06a7.46 7.46 0 0 0-5.39-2.29c-1.95 0-3.91.76-5.39 2.29m7.85 2.284l-1.048 1.81a3.07 3.07 0 0 1 1.576 2.675A3.053 3.053 0 0 1 15.928 24a3.06 3.06 0 0 1-2.868-2.024a.966.966 0 0 1 .59-1.24a.975.975 0 0 1 1.24.59a1.1 1.1 0 0 0 1.038.732c.61 0 1.108-.499 1.108-1.109s-.498-1.108-1.108-1.108a.977.977 0 0 1-.977-.977a.96.96 0 0 1 .214-.6l.752-1.311h-1.403a.977.977 0 0 1 0-1.953h3.092a.97.97 0 0 1 .844.488a.98.98 0 0 1 0 .976"></svg:path><svg:path d="m15.998 6.957l-2.45-4.027c-.34-.58-.95-.93-1.62-.93h-6.59c-1.45 0-2.36 1.56-1.65 2.82a16.7 16.7 0 0 0 5.43 5.78c.354.275.747.491 1.164.644C7.665 13.1 5.95 16.2 5.95 19.71C5.95 25.393 10.445 30 15.99 30s10.04-4.607 10.04-10.29c0-3.507-1.711-6.603-4.324-8.461a4.5 4.5 0 0 0 1.182-.649c2.25-1.46 4.11-3.44 5.43-5.78c.7-1.26-.21-2.82-1.66-2.82h-6.59c-.67 0-1.28.35-1.62.93zM15.99 9.42q-.162 0-.323.005l3.64-5.982l.004-.007A.87.87 0 0 1 20.068 3h6.59a.9.9 0 0 1 .787 1.332a15.6 15.6 0 0 1-5.102 5.43l-.032.02l-.031.024a3.4 3.4 0 0 1-1.807.694a9.8 9.8 0 0 0-4.483-1.08M9.76 26.11a9.1 9.1 0 0 1-2.59-6.4c0-2.42.92-4.69 2.59-6.4a8.69 8.69 0 0 1 12.49 0c3.44 3.53 3.44 9.27 0 12.8c-1.68 1.71-3.9 2.65-6.25 2.65c-2.36 0-4.58-.94-6.24-2.65"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrast3rdPlaceMedalIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastAbButtonBloodTypeIcon],svg[fluent-emoji-high-contrast-ab-button-blood-type-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M11.226 9.778a1.375 1.375 0 0 0-2.552.014l-4.49 11.372a1.375 1.375 0 1 0 2.557 1.01l.641-1.623a.13.13 0 0 1 .116-.08h5.034c.05 0 .096.031.116.078l.668 1.64a1.375 1.375 0 1 0 2.546-1.039zm-2.543 7.944a.125.125 0 0 1-.116-.171l1.292-3.272a.125.125 0 0 1 .232-.001l1.334 3.271a.125.125 0 0 1-.116.173zm8.295-7.272a1.375 1.375 0 0 1 1.375-1.372h3.914c2.293 0 4.189 1.835 4.189 4.144a4.1 4.1 0 0 1-.545 2.046a.13.13 0 0 0 .036.17a4.12 4.12 0 0 1 1.684 3.321c0 2.29-1.866 4.114-4.133 4.144l-.1.003h-5.07a1.374 1.374 0 0 1-1.375-1.378zm5.29 6.916h-2.431a.125.125 0 0 0-.125.124l-.006 2.541c0 .07.056.125.125.125h3.516q.047-.003.095-.003c.816 0 1.439-.645 1.439-1.394s-.623-1.393-1.439-1.393h-1.175m1.438-4.144c0-.75-.623-1.394-1.439-1.394H19.85a.125.125 0 0 0-.125.125l-.006 2.537c0 .07.056.126.125.126h2.445c.804-.012 1.417-.652 1.417-1.394"></svg:path><svg:path d="M6 1a5 5 0 0 0-5 5v20a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5V6a5 5 0 0 0-5-5zM3 6a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastAbButtonBloodTypeIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastAButtonBloodTypeIcon],svg[fluent-emoji-high-contrast-a-button-blood-type-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M15.907 7.689a1.75 1.75 0 0 1 1.63 1.09L22.886 21.9a1.75 1.75 0 1 1-3.241 1.322l-.734-1.801a.13.13 0 0 0-.116-.078h-5.613a.13.13 0 0 0-.116.079l-.704 1.782a1.75 1.75 0 0 1-3.255-1.286l5.182-13.122a1.75 1.75 0 0 1 1.618-1.107m1.475 9.982l-1.322-3.244a.125.125 0 0 0-.232 0l-1.281 3.245a.125.125 0 0 0 .116.17h2.603c.09 0 .15-.09.116-.171"></svg:path><svg:path d="M6 1a5 5 0 0 0-5 5v20a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5V6a5 5 0 0 0-5-5zM3 6a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"></svg:path></svg:g>`,
+})
+export class FluentEmojiHighContrastAButtonBloodTypeIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentEmojiHighContrastAbacusIcon],svg[fluent-emoji-high-contrast-abacus-icon]',
   host: {
     role: 'img',
@@ -36,23 +121,6 @@ export class FluentEmojiHighContrastAccordionIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentEmojiHighContrastAButtonBloodTypeIcon],svg[fluent-emoji-high-contrast-a-button-blood-type-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M15.907 7.689a1.75 1.75 0 0 1 1.63 1.09L22.886 21.9a1.75 1.75 0 1 1-3.241 1.322l-.734-1.801a.13.13 0 0 0-.116-.078h-5.613a.13.13 0 0 0-.116.079l-.704 1.782a1.75 1.75 0 0 1-3.255-1.286l5.182-13.122a1.75 1.75 0 0 1 1.618-1.107m1.475 9.982l-1.322-3.244a.125.125 0 0 0-.232 0l-1.281 3.245a.125.125 0 0 0 .116.17h2.603c.09 0 .15-.09.116-.171"></svg:path><svg:path d="M6 1a5 5 0 0 0-5 5v20a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5V6a5 5 0 0 0-5-5zM3 6a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"></svg:path></svg:g>`,
-})
-export class FluentEmojiHighContrastAButtonBloodTypeIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fluentEmojiHighContrastAdhesiveBandageIcon],svg[fluent-emoji-high-contrast-adhesive-bandage-icon]',
   host: {
     role: 'img',
@@ -80,74 +148,6 @@ export class FluentEmojiHighContrastAdhesiveBandageIcon {
   template: `<svg:g fill="none"><svg:g fill="currentColor" clip-path="url(#fluentEmojiHighContrastAdmissionTickets0)"><svg:path d="M23 12c-.548 0-1 .448-1 .992v6.016a1.001 1.001 0 0 0 2 0v-6.016A.994.994 0 0 0 23 12m-4.995 4a2 2 0 1 1-4 0a2 2 0 0 1 4 0M8 12.992c0-.544.456-.992 1.01-.992a1 1 0 0 1 1.01.992v6.016c0 .544-.456.992-1.01.992S8 19.552 8 19.008z"></svg:path><svg:path d="M6.05 12.2c0-1.344 1.136-2.403 2.5-2.403h14.91c1.364 0 2.5 1.059 2.5 2.403v7.631c0 1.345-1.136 2.403-2.5 2.403H8.55c-1.35 0-2.5-1.046-2.5-2.403zm17.41 9.034c.856 0 1.5-.654 1.5-1.403V12.2c0-.75-.644-1.403-1.5-1.403h-2.61v10.437zm-3.61 0V10.797h-7.69v10.437zm-8.69-10.437H8.55c-.856 0-1.5.654-1.5 1.403v7.631c0 .756.65 1.403 1.5 1.403h2.61z"></svg:path><svg:path d="M26.24 5H5.75a2.574 2.574 0 0 0-2.539 2.188a1.24 1.24 0 0 1-1.067.992A2.47 2.47 0 0 0 0 10.626v1.551c0 .587.209 1.154.59 1.6a2.46 2.46 0 0 0-.59 1.6v1.254c0 .587.209 1.154.59 1.6a2.46 2.46 0 0 0-.59 1.6v1.561a2.476 2.476 0 0 0 2.174 2.449a1.22 1.22 0 0 1 1.04 1A2.57 2.57 0 0 0 5.75 27h20.51a2.574 2.574 0 0 0 2.54-2.168a1.22 1.22 0 0 1 1.046-.991A2.47 2.47 0 0 0 32 21.394v-1.561a2.46 2.46 0 0 0-.585-1.594a2.46 2.46 0 0 0 .595-1.607v-1.254a2.46 2.46 0 0 0-.59-1.6a2.46 2.46 0 0 0 .59-1.6v-1.542a2.48 2.48 0 0 0-2.174-2.45a1.24 1.24 0 0 1-1.06-1.022A2.575 2.575 0 0 0 26.24 5m0 2a.57.57 0 0 1 .56.474a3.25 3.25 0 0 0 2.79 2.7a.47.47 0 0 1 .42.465v1.541a.476.476 0 0 1-.48.474h-.22a1.13 1.13 0 0 0-1.14 1.146a1.16 1.16 0 0 0 1.18 1.1h.18a.48.48 0 0 1 .48.475v1.254a.476.476 0 0 1-.48.474h-.22a1.127 1.127 0 1 0 0 2.253h.21a.48.48 0 0 1 .48.474v1.561a.47.47 0 0 1-.42.464a3.23 3.23 0 0 0-2.76 2.678a.56.56 0 0 1-.56.464H5.75a.56.56 0 0 1-.56-.464a3.23 3.23 0 0 0-2.77-2.678a.47.47 0 0 1-.42-.461v-1.561a.477.477 0 0 1 .48-.474h.22a1.127 1.127 0 1 0 0-2.253h-.22a.477.477 0 0 1-.48-.474v-1.254a.48.48 0 0 1 .48-.475h.22a1.13 1.13 0 0 0 1.14-1.146a1.16 1.16 0 0 0-1.18-1.106h-.18a.477.477 0 0 1-.48-.474v-1.551a.47.47 0 0 1 .42-.465a3.25 3.25 0 0 0 2.77-2.687A.56.56 0 0 1 5.75 7z"></svg:path></svg:g><svg:defs><svg:clippath id="fluentEmojiHighContrastAdmissionTickets0"><svg:path fill="#fff" d="M0 0h32v32H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
 })
 export class FluentEmojiHighContrastAdmissionTicketsIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentEmojiHighContrast3rdPlaceMedalIcon],svg[fluent-emoji-high-contrast-3rd-place-medal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M10.6 14.18a7.87 7.87 0 0 0-2.23 5.53c0 2.09.79 4.05 2.23 5.53a7.48 7.48 0 0 0 5.39 2.29c2.04 0 3.95-.81 5.39-2.29c2.97-3.05 2.97-8.01 0-11.06a7.46 7.46 0 0 0-5.39-2.29c-1.95 0-3.91.76-5.39 2.29m7.85 2.284l-1.048 1.81a3.07 3.07 0 0 1 1.576 2.675A3.053 3.053 0 0 1 15.928 24a3.06 3.06 0 0 1-2.868-2.024a.966.966 0 0 1 .59-1.24a.975.975 0 0 1 1.24.59a1.1 1.1 0 0 0 1.038.732c.61 0 1.108-.499 1.108-1.109s-.498-1.108-1.108-1.108a.977.977 0 0 1-.977-.977a.96.96 0 0 1 .214-.6l.752-1.311h-1.403a.977.977 0 0 1 0-1.953h3.092a.97.97 0 0 1 .844.488a.98.98 0 0 1 0 .976"></svg:path><svg:path d="m15.998 6.957l-2.45-4.027c-.34-.58-.95-.93-1.62-.93h-6.59c-1.45 0-2.36 1.56-1.65 2.82a16.7 16.7 0 0 0 5.43 5.78c.354.275.747.491 1.164.644C7.665 13.1 5.95 16.2 5.95 19.71C5.95 25.393 10.445 30 15.99 30s10.04-4.607 10.04-10.29c0-3.507-1.711-6.603-4.324-8.461a4.5 4.5 0 0 0 1.182-.649c2.25-1.46 4.11-3.44 5.43-5.78c.7-1.26-.21-2.82-1.66-2.82h-6.59c-.67 0-1.28.35-1.62.93zM15.99 9.42q-.162 0-.323.005l3.64-5.982l.004-.007A.87.87 0 0 1 20.068 3h6.59a.9.9 0 0 1 .787 1.332a15.6 15.6 0 0 1-5.102 5.43l-.032.02l-.031.024a3.4 3.4 0 0 1-1.807.694a9.8 9.8 0 0 0-4.483-1.08M9.76 26.11a9.1 9.1 0 0 1-2.59-6.4c0-2.42.92-4.69 2.59-6.4a8.69 8.69 0 0 1 12.49 0c3.44 3.53 3.44 9.27 0 12.8c-1.68 1.71-3.9 2.65-6.25 2.65c-2.36 0-4.58-.94-6.24-2.65"></svg:path></svg:g>`,
-})
-export class FluentEmojiHighContrast3rdPlaceMedalIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentEmojiHighContrast1stPlaceMedalIcon],svg[fluent-emoji-high-contrast-1st-place-medal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M10.6 14.18a7.48 7.48 0 0 1 5.39-2.29c1.96 0 3.91.76 5.39 2.29c2.97 3.05 2.97 8.01 0 11.06a7.46 7.46 0 0 1-5.39 2.29c-2.03 0-3.95-.81-5.39-2.29a7.87 7.87 0 0 1-2.23-5.53c0-2.09.79-4.05 2.23-5.53m4.476.861A1 1 0 0 0 15 17.038V23a1 1 0 1 0 2 0v-6.959a1 1 0 0 0-1-1z"></svg:path><svg:path d="m13.548 2.93l2.45 4.027l2.45-4.027c.34-.58.95-.93 1.62-.93h6.59c1.45 0 2.36 1.56 1.66 2.82a16.6 16.6 0 0 1-5.43 5.78a4.4 4.4 0 0 1-1.183.649c2.614 1.858 4.325 4.954 4.325 8.461c0 5.683-4.495 10.29-10.04 10.29S5.95 25.393 5.95 19.71c0-3.51 1.715-6.61 4.332-8.466a4.3 4.3 0 0 1-1.164-.644a16.7 16.7 0 0 1-5.43-5.78c-.71-1.26.2-2.82 1.65-2.82h6.59c.67 0 1.28.35 1.62.93m2.119 6.495q.16-.005.323-.005a9.8 9.8 0 0 1 4.483 1.08a3.4 3.4 0 0 0 1.807-.694l.03-.024l.034-.02a15.6 15.6 0 0 0 5.101-5.43A.9.9 0 0 0 26.658 3h-6.59a.87.87 0 0 0-.758.436l-.004.007zM9.76 26.11A8.64 8.64 0 0 0 16 28.76c2.35 0 4.57-.94 6.25-2.65c3.44-3.53 3.44-9.27 0-12.8a8.69 8.69 0 0 0-12.49 0a9.1 9.1 0 0 0-2.59 6.4c0 2.42.92 4.69 2.59 6.4"></svg:path></svg:g>`,
-})
-export class FluentEmojiHighContrast1stPlaceMedalIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentEmojiHighContrastAbButtonBloodTypeIcon],svg[fluent-emoji-high-contrast-ab-button-blood-type-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M11.226 9.778a1.375 1.375 0 0 0-2.552.014l-4.49 11.372a1.375 1.375 0 1 0 2.557 1.01l.641-1.623a.13.13 0 0 1 .116-.08h5.034c.05 0 .096.031.116.078l.668 1.64a1.375 1.375 0 1 0 2.546-1.039zm-2.543 7.944a.125.125 0 0 1-.116-.171l1.292-3.272a.125.125 0 0 1 .232-.001l1.334 3.271a.125.125 0 0 1-.116.173zm8.295-7.272a1.375 1.375 0 0 1 1.375-1.372h3.914c2.293 0 4.189 1.835 4.189 4.144a4.1 4.1 0 0 1-.545 2.046a.13.13 0 0 0 .036.17a4.12 4.12 0 0 1 1.684 3.321c0 2.29-1.866 4.114-4.133 4.144l-.1.003h-5.07a1.374 1.374 0 0 1-1.375-1.378zm5.29 6.916h-2.431a.125.125 0 0 0-.125.124l-.006 2.541c0 .07.056.125.125.125h3.516q.047-.003.095-.003c.816 0 1.439-.645 1.439-1.394s-.623-1.393-1.439-1.393h-1.175m1.438-4.144c0-.75-.623-1.394-1.439-1.394H19.85a.125.125 0 0 0-.125.125l-.006 2.537c0 .07.056.126.125.126h2.445c.804-.012 1.417-.652 1.417-1.394"></svg:path><svg:path d="M6 1a5 5 0 0 0-5 5v20a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5V6a5 5 0 0 0-5-5zM3 6a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"></svg:path></svg:g>`,
-})
-export class FluentEmojiHighContrastAbButtonBloodTypeIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentEmojiHighContrast2ndPlaceMedalIcon],svg[fluent-emoji-high-contrast-2nd-place-medal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M10.6 14.18a7.48 7.48 0 0 1 5.39-2.29c1.96 0 3.91.76 5.39 2.29c2.97 3.05 2.97 8.01 0 11.06a7.46 7.46 0 0 1-5.39 2.29c-2.03 0-3.95-.81-5.39-2.29a7.87 7.87 0 0 1-2.23-5.53c0-2.09.79-4.05 2.23-5.53m3.268 9.77h3.97c.56 0 1-.46 1-1.02s-.45-1.01-1.01-1.01h-1.84l1.95-2.4c.66-.81.8-1.9.37-2.86a2.69 2.69 0 0 0-2.33-1.59h-.13c-.97 0-1.88.47-2.44 1.26c-.32.46-.22 1.09.24 1.41s1.09.21 1.41-.24c.19-.26.48-.41.8-.41h.05c.37.01.53.28.58.4c.04.1.16.44-.1.76l-3.3 4.05c-.25.3-.3.72-.13 1.07a1 1 0 0 0 .91.58"></svg:path><svg:path d="m15.998 6.957l-2.45-4.027c-.34-.58-.95-.93-1.62-.93h-6.59c-1.45 0-2.36 1.56-1.65 2.82a16.7 16.7 0 0 0 5.43 5.78c.354.275.747.491 1.164.644C7.665 13.1 5.95 16.2 5.95 19.71C5.95 25.393 10.445 30 15.99 30s10.04-4.607 10.04-10.29c0-3.507-1.711-6.603-4.324-8.461a4.5 4.5 0 0 0 1.182-.649c2.25-1.46 4.11-3.44 5.43-5.78c.7-1.26-.21-2.82-1.66-2.82h-6.59c-.67 0-1.28.35-1.62.93zM15.99 9.42q-.162 0-.323.005l3.64-5.982l.004-.007A.87.87 0 0 1 20.068 3h6.59a.9.9 0 0 1 .787 1.332a15.6 15.6 0 0 1-5.102 5.43l-.032.02l-.031.024a3.4 3.4 0 0 1-1.807.694a9.8 9.8 0 0 0-4.483-1.08M9.76 26.11a9.1 9.1 0 0 1-2.59-6.4c0-2.42.92-4.69 2.59-6.4a8.69 8.69 0 0 1 12.49 0c3.44 3.53 3.44 9.27 0 12.8c-1.68 1.71-3.9 2.65-6.25 2.65c-2.36 0-4.58-.94-6.24-2.65"></svg:path></svg:g>`,
-})
-export class FluentEmojiHighContrast2ndPlaceMedalIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

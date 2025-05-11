@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[bitcoinIconsAlertCircleFilledIcon],svg[bitcoin-icons-alert-circle-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-7.75 4.25a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M13 6.5h-2v7h2z" clip-rule="evenodd"></svg:path>`,
-})
-export class BitcoinIconsAlertCircleFilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[bitcoinIconsAddressBookFilledIcon],svg[bitcoin-icons-address-book-filled-icon]',
   host: {
     role: 'img',
@@ -29,57 +12,6 @@ export class BitcoinIconsAlertCircleFilledIcon {
   template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M7.005 19.996c.05.563.524 1.004 1.1 1.004h9.79c.61 0 1.105-.495 1.105-1.105V6.105c0-.576-.442-1.05-1.005-1.1q.005.05.005.1v13.79c0 .61-.495 1.105-1.105 1.105h-9.79a1 1 0 0 1-.1-.005"></svg:path><svg:path d="M5 4.105C5 3.495 5.495 3 6.105 3h9.79C16.505 3 17 3.495 17 4.105v13.79c0 .61-.495 1.105-1.105 1.105h-9.79C5.495 19 5 18.505 5 17.895zm3.34 10.502a.808.808 0 0 1 0-1.291a4.36 4.36 0 0 1 2.66-.9c1 0 1.923.335 2.66.9c.43.329.43.962 0 1.291c-.737.565-1.66.9-2.66.9s-1.923-.335-2.66-.9m2.658-2.965c1.136 0 2.058-1.153 2.058-2.575s-.922-2.574-2.058-2.574c-1.137 0-2.058 1.152-2.058 2.574s.921 2.575 2.058 2.575"></svg:path></svg:g>`,
 })
 export class BitcoinIconsAddressBookFilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bitcoinIconsArrowDownFilledIcon],svg[bitcoin-icons-arrow-down-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12.013 2.25a.75.75 0 0 1 .75.75l-.012 16.19l5.72-5.708a.75.75 0 1 1 1.059 1.061l-7 6.988a.75.75 0 0 1-1.06 0l-7-6.988a.75.75 0 0 1 1.06-1.061l5.721 5.71L11.262 3a.75.75 0 0 1 .751-.75" clip-rule="evenodd"></svg:path>`,
-})
-export class BitcoinIconsArrowDownFilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bitcoinIconsAlertFilledIcon],svg[bitcoin-icons-alert-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:circle cx="12" cy="16.75" r="1.25" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M11 6h2v8h-2z"></svg:path>`,
-})
-export class BitcoinIconsAlertFilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bitcoinIconsArrowLeftFilledIcon],svg[bitcoin-icons-arrow-left-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M2.461 12a.75.75 0 0 1 .75-.75l17.79.012a.75.75 0 1 1-.002 1.5L3.21 12.75a.75.75 0 0 1-.749-.75"></svg:path><svg:path d="M10.517 4.47a.75.75 0 0 1 .001 1.06L4.06 12l6.458 6.47a.75.75 0 0 1-1.061 1.06l-6.988-7a.75.75 0 0 1 0-1.06l6.988-7a.75.75 0 0 1 1.06 0"></svg:path></svg:g>`,
-})
-export class BitcoinIconsArrowLeftFilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,6 +36,23 @@ export class BitcoinIconsAddressBookOutlineIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[bitcoinIconsAlertCircleFilledIcon],svg[bitcoin-icons-alert-circle-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-7.75 4.25a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M13 6.5h-2v7h2z" clip-rule="evenodd"></svg:path>`,
+})
+export class BitcoinIconsAlertCircleFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[bitcoinIconsAlertCircleOutlineIcon],svg[bitcoin-icons-alert-circle-outline-icon]',
   host: {
     role: 'img',
@@ -114,6 +63,40 @@ export class BitcoinIconsAddressBookOutlineIcon {
   template: `<svg:g fill="none" stroke="currentColor"><svg:circle cx="12" cy="12" r="8.5"></svg:circle><svg:path stroke-linecap="round" d="M12 7v7m0 3.5v-1"></svg:path></svg:g>`,
 })
 export class BitcoinIconsAlertCircleOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bitcoinIconsAlertFilledIcon],svg[bitcoin-icons-alert-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="12" cy="16.75" r="1.25" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M11 6h2v8h-2z"></svg:path>`,
+})
+export class BitcoinIconsAlertFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bitcoinIconsArrowDownFilledIcon],svg[bitcoin-icons-arrow-down-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12.013 2.25a.75.75 0 0 1 .75.75l-.012 16.19l5.72-5.708a.75.75 0 1 1 1.059 1.061l-7 6.988a.75.75 0 0 1-1.06 0l-7-6.988a.75.75 0 0 1 1.06-1.061l5.721 5.71L11.262 3a.75.75 0 0 1 .751-.75" clip-rule="evenodd"></svg:path>`,
+})
+export class BitcoinIconsArrowDownFilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,16 +121,16 @@ export class BitcoinIconsAlertOutlineIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bitcoinIconsArrowDownOutlineIcon],svg[bitcoin-icons-arrow-down-outline-icon]',
+  selector: 'svg[bitcoinIconsArrowLeftFilledIcon],svg[bitcoin-icons-arrow-left-filled-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M12.013 3L12 20.789m7-6.776L12 21l-7-6.988"></svg:path>`,
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M2.461 12a.75.75 0 0 1 .75-.75l17.79.012a.75.75 0 1 1-.002 1.5L3.21 12.75a.75.75 0 0 1-.749-.75"></svg:path><svg:path d="M10.517 4.47a.75.75 0 0 1 .001 1.06L4.06 12l6.458 6.47a.75.75 0 0 1-1.061 1.06l-6.988-7a.75.75 0 0 1 0-1.06l6.988-7a.75.75 0 0 1 1.06 0"></svg:path></svg:g>`,
 })
-export class BitcoinIconsArrowDownOutlineIcon {
+export class BitcoinIconsArrowLeftFilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -4245,6 +4228,23 @@ export class BitcoinIconsWalletFilledIcon {
   template: `<svg:g fill="none" stroke="currentColor"><svg:path d="M15 17.5h3.005a1.5 1.5 0 0 0 1.5-1.5V8a1.5 1.5 0 0 0-1.5-1.5H15A1.5 1.5 0 0 1 16.5 8v8a1.5 1.5 0 0 1-1.5 1.5Z"></svg:path><svg:rect width="12" height="11" x="4.5" y="6.5" rx="1.5"></svg:rect><svg:circle cx="8.75" cy="11.75" r="1.25"></svg:circle></svg:g>`,
 })
 export class BitcoinIconsWalletOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bitcoinIconsArrowDownOutlineIcon],svg[bitcoin-icons-arrow-down-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M12.013 3L12 20.789m7-6.776L12 21l-7-6.988"></svg:path>`,
+})
+export class BitcoinIconsArrowDownOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

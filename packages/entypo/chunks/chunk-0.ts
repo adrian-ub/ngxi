@@ -2,16 +2,67 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[entypoAirIcon],svg[entypo-air-icon]',
+  selector: 'svg[entypoAddToListIcon],svg[entypo-add-to-list-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M2.643 6.357c1.747-1.5 3.127-2.686 6.872-.57c1.799 1.016 3.25 1.4 4.457 1.398c2.115 0 3.486-1.176 4.671-2.193a1.037 1.037 0 0 0 .122-1.439a.987.987 0 0 0-1.41-.125c-1.746 1.502-3.127 2.688-6.872.57c-4.948-2.793-7.266-.803-9.128.797a1.037 1.037 0 0 0-.121 1.439a.986.986 0 0 0 1.409.123m14.712 2.178c-1.746 1.5-3.127 2.688-6.872.57c-4.948-2.795-7.266-.804-9.128.795a1.037 1.037 0 0 0-.121 1.439a.986.986 0 0 0 1.409.125c1.747-1.501 3.127-2.687 6.872-.572c1.799 1.018 3.25 1.4 4.457 1.4c2.115 0 3.486-1.176 4.671-2.195a1.035 1.035 0 0 0 .122-1.438a.986.986 0 0 0-1.41-.124m0 5.106c-1.746 1.502-3.127 2.688-6.872.572c-4.948-2.795-7.266-.805-9.128.795a1.037 1.037 0 0 0-.121 1.439a.985.985 0 0 0 1.409.123c1.747-1.5 3.127-2.685 6.872-.57c1.799 1.016 3.25 1.4 4.457 1.4c2.115 0 3.486-1.178 4.671-2.195a1.037 1.037 0 0 0 .122-1.439a.99.99 0 0 0-1.41-.125"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M19.4 9H16V5.6c0-.6-.4-.6-1-.6s-1 0-1 .6V9h-3.4c-.6 0-.6.4-.6 1s0 1 .6 1H14v3.4c0 .6.4.6 1 .6s1 0 1-.6V11h3.4c.6 0 .6-.4.6-1s0-1-.6-1m-12 0H.6C0 9 0 9.4 0 10s0 1 .6 1h6.8c.6 0 .6-.4.6-1s0-1-.6-1m0 5H.6c-.6 0-.6.4-.6 1s0 1 .6 1h6.8c.6 0 .6-.4.6-1s0-1-.6-1m0-10H.6C0 4 0 4.4 0 5s0 1 .6 1h6.8C8 6 8 5.6 8 5s0-1-.6-1"></svg:path>`,
 })
-export class EntypoAirIcon {
+export class EntypoAddToListIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoAddUserIcon],svg[entypo-add-user-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15.989 19.129C16 17 13.803 15.74 11.672 14.822c-2.123-.914-2.801-1.684-2.801-3.334c0-.989.648-.667.932-2.481c.12-.752.692-.012.802-1.729c0-.684-.313-.854-.313-.854s.159-1.013.221-1.793c.064-.817-.398-2.56-2.301-3.095c-.332-.341-.557-.882.467-1.424c-2.24-.104-2.761 1.068-3.954 1.93c-1.015.756-1.289 1.953-1.24 2.59c.065.78.223 1.793.223 1.793s-.314.17-.314.854c.11 1.718.684.977.803 1.729c.284 1.814.933 1.492.933 2.481c0 1.65-.212 2.21-2.336 3.124C.663 15.53 0 17 .011 19.129C.014 19.766 0 20 0 20h16s-.014-.234-.011-.871M17 10V7h-2v3h-3v2h3v3h2v-3h3v-2z"></svg:path>`,
+})
+export class EntypoAddUserIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoAddressIcon],svg[entypo-address-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m19.799 5.165l-2.375-1.83a2 2 0 0 0-.521-.237A2 2 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335M8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099c-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235c.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5"></svg:path>`,
+})
+export class EntypoAddressIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoAdjustIcon],svg[entypo-adjust-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19 9.199h-.98c-.553 0-1 .359-1 .801c0 .441.447.799 1 .799H19c.552 0 1-.357 1-.799c0-.441-.449-.801-1-.801M10 4.5A5.483 5.483 0 0 0 4.5 10c0 3.051 2.449 5.5 5.5 5.5c3.05 0 5.5-2.449 5.5-5.5S13.049 4.5 10 4.5m0 9.5c-2.211 0-4-1.791-4-4c0-2.211 1.789-4 4-4zm-7-4c0-.441-.449-.801-1-.801H1c-.553 0-1 .359-1 .801c0 .441.447.799 1 .799h1c.551 0 1-.358 1-.799m7-7c.441 0 .799-.447.799-1V1c0-.553-.358-1-.799-1s-.801.447-.801 1v1c0 .553.359 1 .801 1m0 14c-.442 0-.801.447-.801 1v1c0 .553.359 1 .801 1c.441 0 .799-.447.799-1v-1c0-.553-.358-1-.799-1m7.365-13.234c.391-.391.454-.961.142-1.273s-.883-.248-1.272.143l-.7.699c-.391.391-.454.961-.142 1.273s.883.248 1.273-.143zM3.334 15.533l-.7.701c-.391.391-.454.959-.142 1.271s.883.25 1.272-.141l.7-.699c.391-.391.454-.961.142-1.274s-.883-.247-1.272.142m.431-12.898c-.39-.391-.961-.455-1.273-.143s-.248.883.141 1.274l.7.699c.391.391.96.455 1.272.143s.249-.883-.141-1.273zm11.769 14.031l.7.699c.391.391.96.453 1.272.143c.312-.312.249-.883-.142-1.273l-.699-.699c-.391-.391-.961-.455-1.274-.143s-.248.882.143 1.273"></svg:path>`,
+})
+export class EntypoAdjustIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,16 +87,16 @@ export class EntypoAircraftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[entypoAddToListIcon],svg[entypo-add-to-list-icon]',
+  selector: 'svg[entypoAirIcon],svg[entypo-air-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M19.4 9H16V5.6c0-.6-.4-.6-1-.6s-1 0-1 .6V9h-3.4c-.6 0-.6.4-.6 1s0 1 .6 1H14v3.4c0 .6.4.6 1 .6s1 0 1-.6V11h3.4c.6 0 .6-.4.6-1s0-1-.6-1m-12 0H.6C0 9 0 9.4 0 10s0 1 .6 1h6.8c.6 0 .6-.4.6-1s0-1-.6-1m0 5H.6c-.6 0-.6.4-.6 1s0 1 .6 1h6.8c.6 0 .6-.4.6-1s0-1-.6-1m0-10H.6C0 4 0 4.4 0 5s0 1 .6 1h6.8C8 6 8 5.6 8 5s0-1-.6-1"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M2.643 6.357c1.747-1.5 3.127-2.686 6.872-.57c1.799 1.016 3.25 1.4 4.457 1.398c2.115 0 3.486-1.176 4.671-2.193a1.037 1.037 0 0 0 .122-1.439a.987.987 0 0 0-1.41-.125c-1.746 1.502-3.127 2.688-6.872.57c-4.948-2.793-7.266-.803-9.128.797a1.037 1.037 0 0 0-.121 1.439a.986.986 0 0 0 1.409.123m14.712 2.178c-1.746 1.5-3.127 2.688-6.872.57c-4.948-2.795-7.266-.804-9.128.795a1.037 1.037 0 0 0-.121 1.439a.986.986 0 0 0 1.409.125c1.747-1.501 3.127-2.687 6.872-.572c1.799 1.018 3.25 1.4 4.457 1.4c2.115 0 3.486-1.176 4.671-2.195a1.035 1.035 0 0 0 .122-1.438a.986.986 0 0 0-1.41-.124m0 5.106c-1.746 1.502-3.127 2.688-6.872.572c-4.948-2.795-7.266-.805-9.128.795a1.037 1.037 0 0 0-.121 1.439a.985.985 0 0 0 1.409.123c1.747-1.5 3.127-2.685 6.872-.57c1.799 1.016 3.25 1.4 4.457 1.4c2.115 0 3.486-1.178 4.671-2.195a1.037 1.037 0 0 0 .122-1.439a.99.99 0 0 0-1.41-.125"></svg:path>`,
 })
-export class EntypoAddToListIcon {
+export class EntypoAirIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,16 +104,33 @@ export class EntypoAddToListIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[entypoAddressIcon],svg[entypo-address-icon]',
+  selector: 'svg[entypoAircraftLandingIcon],svg[entypo-aircraft-landing-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m19.799 5.165l-2.375-1.83a2 2 0 0 0-.521-.237A2 2 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335M8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099c-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235c.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M18.752 16.038c-.097.266-.822 1.002-6.029-.878l-5.105-1.843C5.841 12.676 3.34 11.668 2.36 11.1c-.686-.397-.836-1.282-.836-1.282s-.163-2.956-.263-3.684s.095-.853.796-.492c.436.225 1.865 2.562 2.464 3.567c1.512.381 2.862.761 3.493.949c-.257-1.717-.74-4.928-.913-5.933c-.166-.963.55-.535.55-.535c.331.19.983.661 1.206 1.002c1.522 2.326 3.672 6.6 3.836 6.928c.896.28 2.277.733 3.102 1.03c2.156.779 3.087 3.034 2.957 3.388"></svg:path>`,
 })
-export class EntypoAddressIcon {
+export class EntypoAircraftLandingIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoAircraftTakeOffIcon],svg[entypo-aircraft-take-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.87 6.453c.119.257.127 1.29-4.884 3.642l-4.913 2.306c-1.71.803-4.191 1.859-5.285 2.151c-.766.204-1.497-.316-1.497-.316S1.085 12.261.499 11.817s-.535-.67.215-.91c.467-.149 3.13.493 4.265.78A92 92 0 0 1 8.12 9.889c-1.396-1.033-4.008-2.962-4.841-3.55c-.799-.565.01-.768.01-.768c.368-.099 1.162-.228 1.562-.144c2.721.569 7.263 2.071 7.611 2.186a91 91 0 0 1 2.922-1.465c2.075-.974 4.327-.037 4.486.305"></svg:path>`,
+})
+export class EntypoAircraftTakeOffIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5384,74 +5452,6 @@ export class EntypoWarningIcon {
   template: `<svg:path fill="currentColor" d="M9.882 9.093c-.511 4.115-3.121 4.847-3.121 7.708C6.761 18.567 8.244 20 10 20s3.238-1.434 3.238-3.199c0-2.861-2.61-3.593-3.121-7.708c-.016-.123-.219-.123-.235 0m-5.999-9C3.372 4.208.762 4.939.762 7.801C.762 9.566 2.244 11 4 11s3.238-1.434 3.238-3.199c0-2.861-2.61-3.593-3.121-7.708c-.015-.123-.219-.123-.234 0m12 0c-.511 4.115-3.121 4.847-3.121 7.708C12.762 9.566 14.244 11 16 11s3.238-1.434 3.238-3.199c0-2.861-2.61-3.593-3.121-7.708c-.016-.123-.219-.123-.234 0"></svg:path>`,
 })
 export class EntypoWaterIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[entypoAddUserIcon],svg[entypo-add-user-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15.989 19.129C16 17 13.803 15.74 11.672 14.822c-2.123-.914-2.801-1.684-2.801-3.334c0-.989.648-.667.932-2.481c.12-.752.692-.012.802-1.729c0-.684-.313-.854-.313-.854s.159-1.013.221-1.793c.064-.817-.398-2.56-2.301-3.095c-.332-.341-.557-.882.467-1.424c-2.24-.104-2.761 1.068-3.954 1.93c-1.015.756-1.289 1.953-1.24 2.59c.065.78.223 1.793.223 1.793s-.314.17-.314.854c.11 1.718.684.977.803 1.729c.284 1.814.933 1.492.933 2.481c0 1.65-.212 2.21-2.336 3.124C.663 15.53 0 17 .011 19.129C.014 19.766 0 20 0 20h16s-.014-.234-.011-.871M17 10V7h-2v3h-3v2h3v3h2v-3h3v-2z"></svg:path>`,
-})
-export class EntypoAddUserIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[entypoAircraftTakeOffIcon],svg[entypo-aircraft-take-off-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M19.87 6.453c.119.257.127 1.29-4.884 3.642l-4.913 2.306c-1.71.803-4.191 1.859-5.285 2.151c-.766.204-1.497-.316-1.497-.316S1.085 12.261.499 11.817s-.535-.67.215-.91c.467-.149 3.13.493 4.265.78A92 92 0 0 1 8.12 9.889c-1.396-1.033-4.008-2.962-4.841-3.55c-.799-.565.01-.768.01-.768c.368-.099 1.162-.228 1.562-.144c2.721.569 7.263 2.071 7.611 2.186a91 91 0 0 1 2.922-1.465c2.075-.974 4.327-.037 4.486.305"></svg:path>`,
-})
-export class EntypoAircraftTakeOffIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[entypoAdjustIcon],svg[entypo-adjust-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M19 9.199h-.98c-.553 0-1 .359-1 .801c0 .441.447.799 1 .799H19c.552 0 1-.357 1-.799c0-.441-.449-.801-1-.801M10 4.5A5.483 5.483 0 0 0 4.5 10c0 3.051 2.449 5.5 5.5 5.5c3.05 0 5.5-2.449 5.5-5.5S13.049 4.5 10 4.5m0 9.5c-2.211 0-4-1.791-4-4c0-2.211 1.789-4 4-4zm-7-4c0-.441-.449-.801-1-.801H1c-.553 0-1 .359-1 .801c0 .441.447.799 1 .799h1c.551 0 1-.358 1-.799m7-7c.441 0 .799-.447.799-1V1c0-.553-.358-1-.799-1s-.801.447-.801 1v1c0 .553.359 1 .801 1m0 14c-.442 0-.801.447-.801 1v1c0 .553.359 1 .801 1c.441 0 .799-.447.799-1v-1c0-.553-.358-1-.799-1m7.365-13.234c.391-.391.454-.961.142-1.273s-.883-.248-1.272.143l-.7.699c-.391.391-.454.961-.142 1.273s.883.248 1.273-.143zM3.334 15.533l-.7.701c-.391.391-.454.959-.142 1.271s.883.25 1.272-.141l.7-.699c.391-.391.454-.961.142-1.274s-.883-.247-1.272.142m.431-12.898c-.39-.391-.961-.455-1.273-.143s-.248.883.141 1.274l.7.699c.391.391.96.455 1.272.143s.249-.883-.141-1.273zm11.769 14.031l.7.699c.391.391.96.453 1.272.143c.312-.312.249-.883-.142-1.273l-.699-.699c-.391-.391-.961-.455-1.274-.143s-.248.882.143 1.273"></svg:path>`,
-})
-export class EntypoAdjustIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[entypoAircraftLandingIcon],svg[entypo-aircraft-landing-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18.752 16.038c-.097.266-.822 1.002-6.029-.878l-5.105-1.843C5.841 12.676 3.34 11.668 2.36 11.1c-.686-.397-.836-1.282-.836-1.282s-.163-2.956-.263-3.684s.095-.853.796-.492c.436.225 1.865 2.562 2.464 3.567c1.512.381 2.862.761 3.493.949c-.257-1.717-.74-4.928-.913-5.933c-.166-.963.55-.535.55-.535c.331.19.983.661 1.206 1.002c1.522 2.326 3.672 6.6 3.836 6.928c.896.28 2.277.733 3.102 1.03c2.156.779 3.087 3.034 2.957 3.388"></svg:path>`,
-})
-export class EntypoAircraftLandingIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

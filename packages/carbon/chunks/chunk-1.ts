@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[carbonContainerSoftwareIcon],svg[carbon-container-software-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M28 12h-8V4h8Zm-6-2h4V6h-4Z"></svg:path><svg:path fill="currentColor" d="M17 15V9H9v14h14v-8Zm-6-4h4v4h-4Zm4 10h-4v-4h4Zm6 0h-4v-4h4Z"></svg:path><svg:path fill="currentColor" d="M26 28H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10v2H6v20h20V16h2v10a2 2 0 0 1-2 2"></svg:path>`,
+})
+export class CarbonContainerSoftwareIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonContentDeliveryNetworkIcon],svg[carbon-content-delivery-network-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="21" cy="21" r="2" fill="currentColor"></svg:circle><svg:circle cx="7" cy="7" r="2" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M27 31a4 4 0 1 1 4-4a4.01 4.01 0 0 1-4 4m0-6a2 2 0 1 0 2 2a2.006 2.006 0 0 0-2-2"></svg:path><svg:path fill="currentColor" d="M30 16A14.04 14.04 0 0 0 16 2a13.04 13.04 0 0 0-6.8 1.8l1.1 1.7a24 24 0 0 1 2.4-1A25.1 25.1 0 0 0 10 15H4a11.15 11.15 0 0 1 1.4-4.7L3.9 9A13.84 13.84 0 0 0 2 16a14 14 0 0 0 14 14a13.4 13.4 0 0 0 5.2-1l-.6-1.9a11.44 11.44 0 0 1-5.2.9A21.07 21.07 0 0 1 12 17h17.9a3.4 3.4 0 0 0 .1-1M12.8 27.6a13 13 0 0 1-5.3-3.1A12.5 12.5 0 0 1 4 17h6a25 25 0 0 0 2.8 10.6M12 15a21.45 21.45 0 0 1 3.3-11h1.4A21.45 21.45 0 0 1 20 15Zm10 0a23.3 23.3 0 0 0-2.8-10.6A12.09 12.09 0 0 1 27.9 15Z"></svg:path>`,
+})
+export class CarbonContentDeliveryNetworkIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[carbonContentViewIcon],svg[carbon-content-view-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class CarbonIbmCloudBareMetalServersVpcIcon {
   template: `<svg:path fill="currentColor" d="M19 23h4v4h-4zm7 0h4v4h-4zm-7-7h4v4h-4zm7 0h4v4h-4z"></svg:path><svg:path fill="currentColor" d="M16 4c-4.3 0-7.9 3-8.8 7.1c-3 .6-5.2 3.3-5.2 6.4C2 21.1 4.9 24 8.5 24H16v-2H8.5C6 22 4 20 4 17.5c0-2.3 1.8-4.3 4.1-4.5H9l.1-.8C9.5 8.6 12.5 6 16 6c3.9 0 7 3.1 7 7h2c0-5-4-9-9-9"></svg:path>`,
 })
 export class CarbonIbmCloudCitrixDaasIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[carbonIbmCloudCodeEngineIcon],svg[carbon-ibm-cloud-code-engine-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M22 20v7.923c0 .595-.482 1.077-1.077 1.077H9.077A1.077 1.077 0 0 1 8 27.923V23H2v-2h6v-4.923C8 15.482 8.482 15 9.077 15H13v2h-3v10h10v-7zM13 8H2v2h11zm16 9a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H17a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1zM18 5h10v10H18z"></svg:path>`,
-})
-export class CarbonIbmCloudCodeEngineIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[carbonIbmCloudContinuousDeliveryIcon],svg[carbon-ibm-cloud-continuous-delivery-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m23 1l-6 6l1.415 1.402L22 4.818V21H10V10H8v11c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V4.815l3.586 3.587L29 7z"></svg:path><svg:path fill="currentColor" d="M18.5 19h-5c-.827 0-1.5-.673-1.5-1.5v-5c0-.827.673-1.5 1.5-1.5h5c.827 0 1.5.673 1.5 1.5v5c0 .827-.673 1.5-1.5 1.5M14 17h4v-4h-4zm2 14v-2c7.168 0 13-5.832 13-13c0-1.265-.181-2.514-.538-3.715l1.917-.57C30.79 13.1 31 14.542 31 16c0 8.271-6.729 15-15 15M1.621 20.285A15 15 0 0 1 1 16C1 7.729 7.729 1 16 1v2C8.832 3 3 8.832 3 16c0 1.265.181 2.515.538 3.715z"></svg:path>`,
-})
-export class CarbonIbmCloudContinuousDeliveryIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

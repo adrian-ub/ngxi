@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightLogoutSharpIcon],svg[material-symbols-light-logout-sharp-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 20V4h8.02v1H5v14h7.02v1zm12.462-4.461l-.702-.72l2.319-2.319H9.192v-1h8.887l-2.32-2.32l.702-.718L20 12z"></svg:path>`,
-})
-export class MaterialSymbolsLightLogoutSharpIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightLooksIcon],svg[material-symbols-light-looks-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightMobileLoupeRoundedIcon {
   template: `<svg:path fill="currentColor" d="M6 22V2h12.077v6.285q-.426-.085-.851-.127q-.426-.042-.851-.042q-3.353.049-5.781 2.47t-2.478 5.789q-.031 1.64.525 3.036q.555 1.395 1.611 2.589zm10.498.5q-2.516 0-4.282-1.774t-1.72-4.3q.047-2.408 1.784-4.146t4.147-1.784q2.525-.046 4.299 1.72t1.774 4.282V22.5zm-.44-3.5v-2.058h-1.933v-.884h1.933V14h.884v2.058h1.933v.884h-1.933V19zM12.04 6.308q.327 0 .548-.222q.22-.221.22-.549t-.222-.547t-.549-.22t-.548.22t-.22.55t.222.548t.549.22M16.502 21.5q2.085 0 3.541-1.459t1.457-3.543t-1.459-3.541t-3.543-1.457t-3.541 1.459t-1.457 3.543t1.459 3.541t3.543 1.457"></svg:path>`,
 })
 export class MaterialSymbolsLightMobileLoupeSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightMobileOffIcon],svg[material-symbols-light-mobile-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.846 22.762L1.008 2.923l.708-.708l19.838 19.839zM6 7.214l1 1V18.5h9.927L18 19.573v.812q0 .67-.472 1.143q-.472.472-1.143.472h-8.77q-.67 0-1.143-.472Q6 21.056 6 20.385zM7.402 5.5L6.034 4.108v-.654q.058-.613.507-1.034Q6.991 2 7.616 2h8.769q.69 0 1.152.463T18 3.616v12.073l-1-1V5.5z"></svg:path>`,
+})
+export class MaterialSymbolsLightMobileOffIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

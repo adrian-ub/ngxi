@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[bxsPieChartAltIcon],svg[bxs-pie-chart-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.071 4.929A9.97 9.97 0 0 0 12 2a9.94 9.94 0 0 0-7.071 2.929C3.04 6.818 2 9.33 2 12s1.04 5.182 2.929 7.071S9.33 22 12 22s5.182-1.04 7.071-2.929A9.94 9.94 0 0 0 22 12a9.97 9.97 0 0 0-2.929-7.071m-1.414 12.728C16.146 19.168 14.137 20 12 20s-4.146-.832-5.657-2.343S4 14.137 4 12s.832-4.146 2.343-5.657A7.95 7.95 0 0 1 12 4v8h8a7.95 7.95 0 0 1-2.343 5.657"></svg:path>`,
+})
+export class BxsPieChartAltIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[bxsPieChartAlt2Icon],svg[bxs-pie-chart-alt-2-icon]',
   host: {
     role: 'img',
@@ -2783,23 +2800,6 @@ export class BxsZoomInIcon {
   template: `<svg:path fill="currentColor" d="M10 18a7.95 7.95 0 0 0 4.897-1.688l4.396 4.396l1.414-1.414l-4.396-4.396A7.95 7.95 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8s3.589 8 8 8M6 9h8v2H6z"></svg:path>`,
 })
 export class BxsZoomOutIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bxsAlbumIcon],svg[bxs-album-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2m-4.607 8.055A5 5 0 0 0 7 12H5a6.98 6.98 0 0 1 2.051-4.95a7 7 0 0 1 2.225-1.5l.779 1.842c-.596.252-1.13.612-1.59 1.072s-.82.995-1.072 1.591m4.6 3.945a2.007 2.007 0 1 1 0-4.014a2.007 2.007 0 0 1 0 4.014"></svg:path>`,
-})
-export class BxsAlbumIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[carbonStatusPartialFailIcon],svg[carbon-status-partial-fail-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M25.14 23.764l1.532 1.285a13.976 13.976 0 0 0 2.441-4.182l-1.878-.683a11.973 11.973 0 0 1-2.094 3.58z" fill="currentColor"></svg:path><svg:path d="M18 27.81l.413 1.968a13.889 13.889 0 0 0 4.541-1.638L22 26.409a12.52 12.52 0 0 1-4 1.401z" fill="currentColor"></svg:path><svg:path d="M10 26.409L9 28.14a14.14 14.14 0 0 0 4.587 1.638l.347-1.967A12.152 12.152 0 0 1 10 26.409z" fill="currentColor"></svg:path><svg:path d="M4.765 20.184l-1.878.683a13.976 13.976 0 0 0 2.44 4.182l1.532-1.285a11.973 11.973 0 0 1-2.094-3.58z" fill="currentColor"></svg:path><svg:path d="M16 22a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 16 22z" fill="currentColor"></svg:path><svg:path d="M15 8h2v11h-2z" fill="currentColor"></svg:path><svg:path d="M30 16h-2a12 12 0 0 0-24 0H2a14 14 0 0 1 28 0z" fill="currentColor"></svg:path>`,
+})
+export class CarbonStatusPartialFailIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonStatusResolvedIcon],svg[carbon-status-resolved-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M21 28.414l-5-5.001L17.413 22L21 25.586L28.585 18L30 19.415l-9 8.999z" fill="currentColor"></svg:path><svg:path d="M12 15.59L9.41 13L8 14.41l4 4l7-7L17.59 10L12 15.59z" fill="currentColor"></svg:path><svg:path d="M11.82 25.802a11.992 11.992 0 1 1 13.982-9.621l-1.967-.362a10.001 10.001 0 1 0-11.654 8.016z" fill="currentColor"></svg:path>`,
+})
+export class CarbonStatusResolvedIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[carbonStayInsideIcon],svg[carbon-stay-inside-icon]',
   host: {
     role: 'img',
@@ -7475,40 +7509,6 @@ export class CarbonZosIcon {
   template: `<svg:path fill="currentColor" d="M20 14h8c1.103 0 2-.897 2-2V4c0-1.102-.897-2-2-2h-8c-1.103 0-2 .898-2 2v1H9c-1.103 0-2 .898-2 2v3H4c-1.103 0-2 .898-2 2v8c0 1.103.897 2 2 2h3v3c0 1.103.897 2 2 2h9v1c0 1.103.897 2 2 2h8c1.103 0 2-.897 2-2v-8c0-1.102-.897-2-2-2h-8c-1.103 0-2 .898-2 2v5H9v-3h3c1.103 0 2-.897 2-2v-8c0-1.102-.897-2-2-2H9V7h9v5c0 1.103.897 2 2 2m1.414 14L28 21.414V28zm5.172-8L20 26.586V20zm-16.034-8L4 18.552V12zM5.38 20L12 13.38l.001 6.62zm16.034-8L28 5.414V12zm5.172-8L20 10.586V4z"></svg:path>`,
 })
 export class CarbonZosSysplexIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[carbon3dCurveAutoVesselsIcon],svg[carbon-3d-curve-auto-vessels-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M17 11a3 3 0 0 1 3-3h.1a5 5 0 1 0 0-2H20a5 5 0 0 0-5 5v1h-2a3 3 0 0 1-3-3V7a5 5 0 0 0-5-5H4v2h1a3 3 0 0 1 3 3v2a5 5 0 0 0 5 5h2v7a3 3 0 0 1-3 3h-.1a5 5 0 1 0 0 2h.1a5 5 0 0 0 5-5h2.5a2.5 2.5 0 0 1 2.5 2.5a4.51 4.51 0 0 0 4.5 4.5H28v-2h-1.5a2.5 2.5 0 0 1-2.5-2.5a4.51 4.51 0 0 0-4.5-4.5H17zm8-7a3 3 0 1 1-3 3a3 3 0 0 1 3-3zM7 28a3 3 0 1 1 3-3a3 3 0 0 1-3 3z" fill="currentColor"></svg:path>`,
-})
-export class Carbon3dCurveAutoVesselsIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[carbon3dCursorIcon],svg[carbon-3d-cursor-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M13 4H4v9.01h2V6h7V4z" fill="currentColor"></svg:path><svg:path d="M29.49 13.12l-9-5a1 1 0 0 0-1 0l-9 5A1 1 0 0 0 10 14v10a1 1 0 0 0 .52.87l9 5A1 1 0 0 0 20 30a1.05 1.05 0 0 0 .49-.13l9-5A1 1 0 0 0 30 24V14a1 1 0 0 0-.51-.88zM19 27.3l-7-3.89v-7.72l7 3.89zm1-9.45L13.06 14L20 10.14L26.94 14zm8 5.56l-7 3.89v-7.72l7-3.89z" fill="currentColor"></svg:path>`,
-})
-export class Carbon3dCursorIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

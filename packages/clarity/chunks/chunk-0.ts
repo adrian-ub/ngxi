@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[clarityAccessibility2SolidIcon],svg[clarity-accessibility-2-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="17.96" cy="5" r="3" fill="currentColor" class="clr-i-solid clr-i-solid-path-1"></svg:circle><svg:path fill="currentColor" d="M30 10H6a1 1 0 0 0 0 2h8v8.36l-3.89 12.81a1 1 0 0 0 .66 1.25a1.6 1.6 0 0 0 .29 0a1 1 0 0 0 1-.71l3.29-10.84h5.38L24 33.75a1 1 0 0 0 1 .71a1.6 1.6 0 0 0 .29 0a1 1 0 0 0 .66-1.25L22 20.4V12h8a1 1 0 0 0 0-2" class="clr-i-solid clr-i-solid-path-2"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
+})
+export class ClarityAccessibility2SolidIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[clarityAccessibility1LineIcon],svg[clarity-accessibility-1-line-icon]',
   host: {
     role: 'img',
@@ -12,6 +29,23 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M14.44 31.94a7.31 7.31 0 0 1-5.7-11.88l-1.42-1.42a9.3 9.3 0 0 0 13.1 13.11L19 30.33a7.3 7.3 0 0 1-4.56 1.61" class="clr-i-outline clr-i-outline-path-1"></svg:path><svg:path fill="currentColor" d="M25.36 1.67a4.12 4.12 0 1 0 4.11 4.11a4.12 4.12 0 0 0-4.11-4.11m0 6.23a2.12 2.12 0 1 1 2.11-2.12a2.12 2.12 0 0 1-2.11 2.12" class="clr-i-outline clr-i-outline-path-2"></svg:path><svg:path fill="currentColor" d="M26.56 18.18h-5a1 1 0 0 0-.24.05l3.09-3.55a2.83 2.83 0 0 0-.69-4.33l-8-4.6a1 1 0 0 0-1.12.08L9.83 9.58A1 1 0 0 0 9.66 11a1 1 0 0 0 .79.38a1 1 0 0 0 .61-.21l4.27-3.34l3.11 1.77l-5.08 5.78a9.3 9.3 0 0 0-4.53 1.83l1.43 1.43a7.3 7.3 0 0 1 10.16 10.17l1.42 1.43a9.27 9.27 0 0 0 .77-10.06h2.82l-.77 6.51a1 1 0 0 0 .88 1.11h.12a1 1 0 0 0 1-.88l.9-7.62a1 1 0 0 0-.25-.78a1 1 0 0 0-.75-.34m-6.37-7.56l2.52 1.46a.79.79 0 0 1 .4.59a.81.81 0 0 1-.2.69L19.75 17A9.2 9.2 0 0 0 16 15.45Z" class="clr-i-outline clr-i-outline-path-3"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
 })
 export class ClarityAccessibility1LineIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[clarityAccessibility1SolidIcon],svg[clarity-accessibility-1-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.77 31.94a7.31 7.31 0 0 1-5.7-11.88l-1.42-1.42a9.3 9.3 0 0 0 13.1 13.11l-1.42-1.42a7.3 7.3 0 0 1-4.56 1.61" class="clr-i-solid clr-i-solid-path-1"></svg:path><svg:path fill="currentColor" d="M26.65 2.1a3.12 3.12 0 1 0 3.11 3.12a3.12 3.12 0 0 0-3.11-3.12" class="clr-i-solid clr-i-solid-path-2"></svg:path><svg:path fill="currentColor" d="M26.81 18.18h-5.34q-.31-.33-.66-.63l4.38-4.86a2.14 2.14 0 0 0-.53-3.27L20.9 7.23l-3.85-2.16a1 1 0 0 0-1.11.08L11.15 8.9a1 1 0 0 0 1.23 1.58l4.27-3.34l2.87 1.63l-5.92 6.62a9.33 9.33 0 0 0-4.44 1.82l1.42 1.43a7.3 7.3 0 0 1 10.17 10.17l1.43 1.43A9.27 9.27 0 0 0 23 20.18h2.74l-.77 6.51a1 1 0 0 0 .87 1.11h.12a1 1 0 0 0 1-.88l.9-7.62a1 1 0 0 0-.25-.78a1 1 0 0 0-.8-.34" class="clr-i-solid clr-i-solid-path-3"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
+})
+export class ClarityAccessibility1SolidIcon {
   readonly viewBox = input("0 0 36 36")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,6 +70,40 @@ export class ClarityAccessibility2LineIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[clarityAddLineIcon],svg[clarity-add-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M30 17H19V6a1 1 0 1 0-2 0v11H6a1 1 0 0 0-1 1a.91.91 0 0 0 1 .94h11V30a1 1 0 1 0 2 0V19h11a1 1 0 0 0 1-1a1 1 0 0 0-1-1" class="clr-i-outline clr-i-outline-path-1"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
+})
+export class ClarityAddLineIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[clarityAddTextLineIcon],svg[clarity-add-text-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M31 21H13a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2" class="clr-i-outline clr-i-outline-path-1"></svg:path><svg:path fill="currentColor" d="M12 16a1 1 0 0 0 1 1h18a1 1 0 0 0 0-2H13a1 1 0 0 0-1 1" class="clr-i-outline clr-i-outline-path-2"></svg:path><svg:path fill="currentColor" d="M27 27H13a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2" class="clr-i-outline clr-i-outline-path-3"></svg:path><svg:path fill="currentColor" d="M15.89 9a1 1 0 0 0-1-1H10V3.21a1 1 0 0 0-2 0V8H2.89a1 1 0 0 0 0 2H8v5.21a1 1 0 0 0 2 0V10h4.89a1 1 0 0 0 1-1" class="clr-i-outline clr-i-outline-path-4"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
+})
+export class ClarityAddTextLineIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[clarityAdministratorLineIcon],svg[clarity-administrator-line-icon]',
   host: {
     role: 'img',
@@ -53,23 +121,6 @@ export class ClarityAdministratorLineIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[clarityAirplaneLineIcon],svg[clarity-airplane-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M35.77 8.16a2.43 2.43 0 0 0-1.9-2L28 4.87a4.5 4.5 0 0 0-3.65.79L7 18.3l-4.86-.2a1.86 1.86 0 0 0-1.23 3.31l5 3.93c.6.73 1 .59 10.93-4.82l.93 9.42a1.36 1.36 0 0 0 .85 1.18a1.4 1.4 0 0 0 .54.1a1.54 1.54 0 0 0 1-.41l2.39-2.18a1.52 1.52 0 0 0 .46-.83l2.19-11.9c3.57-2 6.95-3.88 9.36-5.25a2.43 2.43 0 0 0 1.21-2.49m-2.2.75c-2.5 1.42-6 3.41-9.76 5.47l-.41.23l-2.33 12.67l-1.47 1.34l-1.1-11.3l-1.33.68C10 22 7.61 23.16 6.79 23.52l-4.3-3.41l5.08.22l18-13.06a2.5 2.5 0 0 1 2-.45l5.85 1.26a.43.43 0 0 1 .35.37a.42.42 0 0 1-.2.46" class="clr-i-outline clr-i-outline-path-1"></svg:path><svg:path fill="currentColor" d="m7 12.54l3.56 1l1.64-1.19l-4-1.16l1.8-1.1l5.47-.16l2.3-1.67L10 8.5a1.25 1.25 0 0 0-.7.17L6.67 10.2A1.28 1.28 0 0 0 7 12.54" class="clr-i-outline clr-i-outline-path-2"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
-})
-export class ClarityAirplaneLineIcon {
-  readonly viewBox = input("0 0 36 36")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[clarityAdministratorSolidIcon],svg[clarity-administrator-solid-icon]',
   host: {
     role: 'img',
@@ -80,6 +131,23 @@ export class ClarityAirplaneLineIcon {
   template: `<svg:circle cx="14.67" cy="8.3" r="6" fill="currentColor" class="clr-i-solid clr-i-solid-path-1"></svg:circle><svg:path fill="currentColor" d="M16.44 31.82a2.15 2.15 0 0 1-.38-2.55l.53-1l-1.09-.33a2.14 2.14 0 0 1-1.5-2.1v-2.05a2.16 2.16 0 0 1 1.53-2.07l1.09-.33l-.52-1a2.17 2.17 0 0 1 .35-2.52a19 19 0 0 0-2.32-.16A15.58 15.58 0 0 0 2 23.07v7.75a1 1 0 0 0 1 1z" class="clr-i-solid clr-i-solid-path-2"></svg:path><svg:path fill="currentColor" d="m33.7 23.46l-2-.6a6.7 6.7 0 0 0-.58-1.42l1-1.86a.35.35 0 0 0-.07-.43l-1.45-1.46a.38.38 0 0 0-.43-.07l-1.85 1a7.7 7.7 0 0 0-1.43-.6l-.61-2a.38.38 0 0 0-.36-.25h-2.08a.38.38 0 0 0-.35.26l-.6 2a7 7 0 0 0-1.45.61l-1.81-1a.38.38 0 0 0-.44.06l-1.47 1.44a.37.37 0 0 0-.07.44l1 1.82a7.2 7.2 0 0 0-.65 1.43l-2 .61a.36.36 0 0 0-.26.35v2.05a.36.36 0 0 0 .26.35l2 .61a7.3 7.3 0 0 0 .6 1.41l-1 1.9a.37.37 0 0 0 .07.44L19.16 32a.38.38 0 0 0 .44.06l1.87-1a7 7 0 0 0 1.4.57l.6 2.05a.38.38 0 0 0 .36.26h2.05a.38.38 0 0 0 .35-.26l.6-2.05a6.7 6.7 0 0 0 1.38-.57l1.89 1a.38.38 0 0 0 .44-.06L32 30.55a.38.38 0 0 0 .06-.44l-1-1.88a7 7 0 0 0 .57-1.38l2-.61a.39.39 0 0 0 .27-.35v-2.07a.4.4 0 0 0-.2-.36m-8.83 4.72a3.34 3.34 0 1 1 3.33-3.34a3.34 3.34 0 0 1-3.33 3.34" class="clr-i-solid clr-i-solid-path-3"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
 })
 export class ClarityAdministratorSolidIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[clarityAirplaneLineIcon],svg[clarity-airplane-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M35.77 8.16a2.43 2.43 0 0 0-1.9-2L28 4.87a4.5 4.5 0 0 0-3.65.79L7 18.3l-4.86-.2a1.86 1.86 0 0 0-1.23 3.31l5 3.93c.6.73 1 .59 10.93-4.82l.93 9.42a1.36 1.36 0 0 0 .85 1.18a1.4 1.4 0 0 0 .54.1a1.54 1.54 0 0 0 1-.41l2.39-2.18a1.52 1.52 0 0 0 .46-.83l2.19-11.9c3.57-2 6.95-3.88 9.36-5.25a2.43 2.43 0 0 0 1.21-2.49m-2.2.75c-2.5 1.42-6 3.41-9.76 5.47l-.41.23l-2.33 12.67l-1.47 1.34l-1.1-11.3l-1.33.68C10 22 7.61 23.16 6.79 23.52l-4.3-3.41l5.08.22l18-13.06a2.5 2.5 0 0 1 2-.45l5.85 1.26a.43.43 0 0 1 .35.37a.42.42 0 0 1-.2.46" class="clr-i-outline clr-i-outline-path-1"></svg:path><svg:path fill="currentColor" d="m7 12.54l3.56 1l1.64-1.19l-4-1.16l1.8-1.1l5.47-.16l2.3-1.67L10 8.5a1.25 1.25 0 0 0-.7.17L6.67 10.2A1.28 1.28 0 0 0 7 12.54" class="clr-i-outline clr-i-outline-path-2"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
+})
+export class ClarityAirplaneLineIcon {
   readonly viewBox = input("0 0 36 36")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8427,74 +8495,6 @@ export class ClarityFlowChartLineIcon {
   template: `<svg:path fill="currentColor" d="M9.8 18.8h16.4v3.08h1.6V17.2h-9V14h-1.6v3.2h-9v4.68h1.6z" class="clr-i-solid clr-i-solid-path-1"></svg:path><svg:rect width="14" height="10" x="2" y="23" fill="currentColor" class="clr-i-solid clr-i-solid-path-2" rx="2" ry="2"></svg:rect><svg:rect width="14" height="10" x="20" y="23" fill="currentColor" class="clr-i-solid clr-i-solid-path-3" rx="2" ry="2"></svg:rect><svg:rect width="14" height="10" x="11" y="3" fill="currentColor" class="clr-i-solid clr-i-solid-path-4" rx="2" ry="2"></svg:rect><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
 })
 export class ClarityFlowChartSolidIcon {
-  readonly viewBox = input("0 0 36 36")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[clarityFolderLineIcon],svg[clarity-folder-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M30 9H16.42l-2.31-3.18A2 2 0 0 0 12.49 5H6a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2m0 20H6V13h7.31a2 2 0 0 0 2-2H6V7h6.49l2.61 3.59a1 1 0 0 0 .81.41H30Z" class="clr-i-outline clr-i-outline-path-1"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
-})
-export class ClarityFolderLineIcon {
-  readonly viewBox = input("0 0 36 36")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[clarityFolderOpenLineIcon],svg[clarity-folder-open-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M35.32 13.74a1.71 1.71 0 0 0-1.45-.74h-22.7a2.59 2.59 0 0 0-2.25 1.52a1 1 0 0 0 0 .14L6 25V7h6.49l2.61 3.59a1 1 0 0 0 .81.41H32a2 2 0 0 0-2-2H16.42l-2.31-3.18A2 2 0 0 0 12.49 5H6a2 2 0 0 0-2 2v22.69A1.37 1.37 0 0 0 5.41 31h24.93a1 1 0 0 0 1-.72l4.19-15.1a1.64 1.64 0 0 0-.21-1.44M29.55 29H6.9l3.88-13.81a.66.66 0 0 1 .38-.24h22.33Z" class="clr-i-outline clr-i-outline-path-1"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
-})
-export class ClarityFolderOpenLineIcon {
-  readonly viewBox = input("0 0 36 36")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[clarityFolderOpenOutlineAlertedIcon],svg[clarity-folder-open-outline-alerted-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M33.68 15.4h-.3L29.55 29H6.9l3.88-13.81a.66.66 0 0 1 .38-.24h9.42A3.67 3.67 0 0 1 19 13.56a3.6 3.6 0 0 1-.26-.56h-7.57a2.59 2.59 0 0 0-2.25 1.52a1 1 0 0 0 0 .14L6 25V7h6.49l2.61 3.59a1 1 0 0 0 .81.41h2.73A3.7 3.7 0 0 1 19 9.89l.56-.89h-3.14l-2.31-3.18A2 2 0 0 0 12.49 5H6a2 2 0 0 0-2 2v22.69A1.37 1.37 0 0 0 5.41 31h24.93a1 1 0 0 0 1-.72l4.19-15.1a1.7 1.7 0 0 0 .07-.32a3.67 3.67 0 0 1-1.92.54" class="clr-i-outline--alerted clr-i-outline-path-1--alerted"></svg:path><svg:path fill="currentColor" d="M26.85 1.14L21.13 11a1.28 1.28 0 0 0 1.1 2h11.45a1.28 1.28 0 0 0 1.1-2l-5.72-9.86a1.28 1.28 0 0 0-2.21 0" class="clr-i-outline--alerted clr-i-outline-path-2--alerted clr-i-alert"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
-})
-export class ClarityFolderOpenOutlineAlertedIcon {
-  readonly viewBox = input("0 0 36 36")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[clarityFolderOpenOutlineBadgedIcon],svg[clarity-folder-open-outline-badged-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M35.32 13.74a1.71 1.71 0 0 0-1.45-.74h-22.7a2.59 2.59 0 0 0-2.25 1.52a1 1 0 0 0 0 .14L6 25V7h6.49l2.61 3.59a1 1 0 0 0 .81.41h8.52a7.5 7.5 0 0 1-1.29-2h-6.72l-2.31-3.18A2 2 0 0 0 12.49 5H6a2 2 0 0 0-2 2v22.69A1.37 1.37 0 0 0 5.41 31h24.93a1 1 0 0 0 1-.72l4.19-15.1a1.64 1.64 0 0 0-.21-1.44M29.55 29H6.9l3.88-13.81a.66.66 0 0 1 .38-.24h22.33Z" class="clr-i-outline--badged clr-i-outline-path-1--badged"></svg:path><svg:circle cx="30" cy="6" r="5" fill="currentColor" class="clr-i-outline--badged clr-i-outline-path-2--badged clr-i-badge"></svg:circle><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
-})
-export class ClarityFolderOpenOutlineBadgedIcon {
   readonly viewBox = input("0 0 36 36")
   readonly width = input("1em")
   readonly height = input("1em")

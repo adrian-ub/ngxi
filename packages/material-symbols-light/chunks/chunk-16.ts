@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightMobileOffIcon],svg[material-symbols-light-mobile-off-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20.846 22.762L1.008 2.923l.708-.708l19.838 19.839zM6 7.214l1 1V18.5h9.927L18 19.573v.812q0 .67-.472 1.143q-.472.472-1.143.472h-8.77q-.67 0-1.143-.472Q6 21.056 6 20.385zM7.402 5.5L6.034 4.108v-.654q.058-.613.507-1.034Q6.991 2 7.616 2h8.769q.69 0 1.152.463T18 3.616v12.073l-1-1V5.5z"></svg:path>`,
-})
-export class MaterialSymbolsLightMobileOffIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightMobileOffOutlineIcon],svg[material-symbols-light-mobile-off-outline-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightNestWakeOnPressOutlineSharpIcon {
   template: `<svg:path fill="currentColor" d="M20.116 11.962q-.356 0-.62-.265q-.265-.264-.265-.62V5.885q0-.356.264-.62q.265-.265.62-.265q.356 0 .62.265q.265.264.265.62v5.192q0 .356-.264.62q-.265.265-.62.265M7.7 20q-.22 0-.432-.085t-.372-.246l-3.76-3.767q-.236-.242-.236-.568t.237-.563l.053-.054q.118-.117.259-.173t.301-.006l3.48.712V5.27q0-.53.371-.9T8.5 4t.899.37t.37.9v5.46h1.016q.123 0 .248.032t.229.092l3.292 1.627q.69.352 1 1.084q.31.731.171 1.51l-.683 4.104q-.067.365-.338.593t-.656.228z"></svg:path>`,
 })
 export class MaterialSymbolsLightNestWakeOnPressRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightNestWakeOnPressSharpIcon],svg[material-symbols-light-nest-wake-on-press-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.23 11.962V5H21v6.962zM7.217 20l-4.639-4.663l.835-.84l3.819.753V5.27q0-.53.37-.9T8.5 4t.899.37t.37.9v5.46h1.227l5.025 2.497L14.908 20z"></svg:path>`,
+})
+export class MaterialSymbolsLightNestWakeOnPressSharpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

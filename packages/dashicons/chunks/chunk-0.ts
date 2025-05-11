@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[dashiconsAdminAppearanceIcon],svg[dashicons-admin-appearance-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.48 11.06L7.41 3.99l1.5-1.5c.5-.56 2.3-.47 3.51.32c1.21.8 1.43 1.28 2.91 2.1c1.18.64 2.45 1.26 4.45.85zm-.71.71L6.7 4.7L4.93 6.47a.996.996 0 0 0 0 1.41l1.06 1.06c.39.39.39 1.03 0 1.42c-.6.6-1.43 1.11-2.21 1.69c-.35.26-.7.53-1.01.84C1.43 14.23.4 16.08 1.4 17.07c.99 1 2.84-.03 4.18-1.36c.31-.31.58-.66.85-1.02c.57-.78 1.08-1.61 1.69-2.21a.996.996 0 0 1 1.41 0l1.06 1.06c.39.39 1.02.39 1.41 0z"></svg:path>`,
+})
+export class DashiconsAdminAppearanceIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[dashiconsAdminCustomizerIcon],svg[dashicons-admin-customizer-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.33 3.57s.27-.8-.31-1.36c-.53-.52-1.22-.24-1.22-.24c-.61.3-5.76 3.47-7.67 5.57c-.86.96-2.06 3.79-1.09 4.82c.92.98 3.96-.17 4.79-1c2.06-2.06 5.21-7.17 5.5-7.79M1.4 17.65c2.37-1.56 1.46-3.41 3.23-4.64c.93-.65 2.22-.62 3.08.29c.63.67.8 2.57-.16 3.46c-1.57 1.45-4 1.55-6.15.89"></svg:path>`,
+})
+export class DashiconsAdminCustomizerIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[dashiconsAdminHomeIcon],svg[dashicons-admin-home-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m16 8.5l1.53 1.53l-1.06 1.06L10 4.62l-6.47 6.47l-1.06-1.06L10 2.5l4 4v-2h2zm-6-2.46l6 5.99V18H4v-5.97zM12 17v-5H8v5z"></svg:path>`,
+})
+export class DashiconsAdminHomeIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[dashiconsAdminCollapseIcon],svg[dashicons-admin-collapse-icon]',
   host: {
     role: 'img',
@@ -29,57 +80,6 @@ export class DashiconsAdminCollapseIcon {
   template: `<svg:path fill="currentColor" d="M18 12h-2.18c-.17.7-.44 1.35-.81 1.93l1.54 1.54l-2.1 2.1l-1.54-1.54c-.58.36-1.23.63-1.91.79V19H8v-2.18c-.68-.16-1.33-.43-1.91-.79l-1.54 1.54l-2.12-2.12l1.54-1.54c-.36-.58-.63-1.23-.79-1.91H1V9.03h2.17c.16-.7.44-1.35.8-1.94L2.43 5.55l2.1-2.1l1.54 1.54c.58-.37 1.24-.64 1.93-.81V2h3v2.18c.68.16 1.33.43 1.91.79l1.54-1.54l2.12 2.12l-1.54 1.54c.36.59.64 1.24.8 1.94H18zm-8.5 1.5c1.66 0 3-1.34 3-3s-1.34-3-3-3s-3 1.34-3 3s1.34 3 3 3"></svg:path>`,
 })
 export class DashiconsAdminGenericIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[dashiconsAdminCustomizerIcon],svg[dashicons-admin-customizer-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18.33 3.57s.27-.8-.31-1.36c-.53-.52-1.22-.24-1.22-.24c-.61.3-5.76 3.47-7.67 5.57c-.86.96-2.06 3.79-1.09 4.82c.92.98 3.96-.17 4.79-1c2.06-2.06 5.21-7.17 5.5-7.79M1.4 17.65c2.37-1.56 1.46-3.41 3.23-4.64c.93-.65 2.22-.62 3.08.29c.63.67.8 2.57-.16 3.46c-1.57 1.45-4 1.55-6.15.89"></svg:path>`,
-})
-export class DashiconsAdminCustomizerIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[dashiconsAdminLinksIcon],svg[dashicons-admin-links-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M17.74 2.76a4.32 4.32 0 0 1 0 6.1l-1.53 1.52c-1.12 1.12-2.7 1.47-4.14 1.09l2.62-2.61l.76-.77l.76-.76c.84-.84.84-2.2 0-3.04a2.13 2.13 0 0 0-3.04 0l-.77.76l-3.38 3.38c-.37-1.44-.02-3.02 1.1-4.14l1.52-1.53a4.32 4.32 0 0 1 6.1 0M8.59 13.43l5.34-5.34c.42-.42.42-1.1 0-1.52c-.44-.43-1.13-.39-1.53 0l-5.33 5.34c-.42.42-.42 1.1 0 1.52c.44.43 1.13.39 1.52 0m-.76 2.29l4.14-4.15c.38 1.44.03 3.02-1.09 4.14l-1.52 1.53a4.32 4.32 0 0 1-6.1 0a4.32 4.32 0 0 1 0-6.1l1.53-1.52c1.12-1.12 2.7-1.47 4.14-1.1l-4.14 4.15c-.85.84-.85 2.2 0 3.05c.84.84 2.2.84 3.04 0"></svg:path>`,
-})
-export class DashiconsAdminLinksIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[dashiconsAdminMultisiteIcon],svg[dashicons-admin-multisite-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.27 6.87L10 3.14L5.73 6.87L5 6.14l5-4.38l5 4.38zM14 8.42l-4.05 3.43L6 8.38v-.74l4-3.5l4 3.5zM11 9.7V8H9v1.7zm-1.73 4.03L5 10L.73 13.73L0 13l5-4.38L10 13zm10 0L15 10l-4.27 3.73L10 13l5-4.38L20 13zM5 11l4 3.5V18H1v-3.5zm10 0l4 3.5V18h-8v-3.5zm-9 6v-2H4v2zm10 0v-2h-2v2z"></svg:path>`,
-})
-export class DashiconsAdminMultisiteIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,16 +121,33 @@ export class DashiconsAdminMediaIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[dashiconsAdminHomeIcon],svg[dashicons-admin-home-icon]',
+  selector: 'svg[dashiconsAdminLinksIcon],svg[dashicons-admin-links-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m16 8.5l1.53 1.53l-1.06 1.06L10 4.62l-6.47 6.47l-1.06-1.06L10 2.5l4 4v-2h2zm-6-2.46l6 5.99V18H4v-5.97zM12 17v-5H8v5z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M17.74 2.76a4.32 4.32 0 0 1 0 6.1l-1.53 1.52c-1.12 1.12-2.7 1.47-4.14 1.09l2.62-2.61l.76-.77l.76-.76c.84-.84.84-2.2 0-3.04a2.13 2.13 0 0 0-3.04 0l-.77.76l-3.38 3.38c-.37-1.44-.02-3.02 1.1-4.14l1.52-1.53a4.32 4.32 0 0 1 6.1 0M8.59 13.43l5.34-5.34c.42-.42.42-1.1 0-1.52c-.44-.43-1.13-.39-1.53 0l-5.33 5.34c-.42.42-.42 1.1 0 1.52c.44.43 1.13.39 1.52 0m-.76 2.29l4.14-4.15c.38 1.44.03 3.02-1.09 4.14l-1.52 1.53a4.32 4.32 0 0 1-6.1 0a4.32 4.32 0 0 1 0-6.1l1.53-1.52c1.12-1.12 2.7-1.47 4.14-1.1l-4.14 4.15c-.85.84-.85 2.2 0 3.05c.84.84 2.2.84 3.04 0"></svg:path>`,
 })
-export class DashiconsAdminHomeIcon {
+export class DashiconsAdminLinksIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[dashiconsAdminMultisiteIcon],svg[dashicons-admin-multisite-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.27 6.87L10 3.14L5.73 6.87L5 6.14l5-4.38l5 4.38zM14 8.42l-4.05 3.43L6 8.38v-.74l4-3.5l4 3.5zM11 9.7V8H9v1.7zm-1.73 4.03L5 10L.73 13.73L0 13l5-4.38L10 13zm10 0L15 10l-4.27 3.73L10 13l5-4.38L20 13zM5 11l4 3.5V18H1v-3.5zm10 0l4 3.5V18h-8v-3.5zm-9 6v-2H4v2zm10 0v-2h-2v2z"></svg:path>`,
+})
+export class DashiconsAdminMultisiteIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5843,23 +5860,6 @@ export class DashiconsYesAltIcon {
   template: `<svg:path fill="currentColor" d="M17.7 5.3c-.2-.7-.7-1.2-1.4-1.4c-2.1-.2-4.2-.4-6.3-.3q-3.15 0-6.3.3c-.6.2-1.2.8-1.4 1.4a37 37 0 0 0 0 9.4c.2.7.7 1.2 1.4 1.4c2.1.2 4.2.4 6.3.3q3.15 0 6.3-.3c.7-.2 1.2-.7 1.4-1.4a37 37 0 0 0 0-9.4M8 13V7l5.2 3z"></svg:path>`,
 })
 export class DashiconsYoutubeIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[dashiconsAdminAppearanceIcon],svg[dashicons-admin-appearance-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.48 11.06L7.41 3.99l1.5-1.5c.5-.56 2.3-.47 3.51.32c1.21.8 1.43 1.28 2.91 2.1c1.18.64 2.45 1.26 4.45.85zm-.71.71L6.7 4.7L4.93 6.47a.996.996 0 0 0 0 1.41l1.06 1.06c.39.39.39 1.03 0 1.42c-.6.6-1.43 1.11-2.21 1.69c-.35.26-.7.53-1.01.84C1.43 14.23.4 16.08 1.4 17.07c.99 1 2.84-.03 4.18-1.36c.31-.31.58-.66.85-1.02c.57-.78 1.08-1.61 1.69-2.21a.996.996 0 0 1 1.41 0l1.06 1.06c.39.39 1.02.39 1.41 0z"></svg:path>`,
-})
-export class DashiconsAdminAppearanceIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

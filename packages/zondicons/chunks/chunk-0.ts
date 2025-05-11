@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[zondiconsAlignJustifiedIcon],svg[zondicons-align-justified-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM1 5h18v2H1zm0 8h18v2H1z"></svg:path>`,
-})
-export class ZondiconsAlignJustifiedIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[zondiconsAddOutlineIcon],svg[zondicons-add-outline-icon]',
   host: {
     role: 'img',
@@ -36,16 +19,16 @@ export class ZondiconsAddOutlineIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zondiconsAlignRightIcon],svg[zondicons-align-right-icon]',
+  selector: 'svg[zondiconsAddSolidIcon],svg[zondicons-add-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM7 5h12v2H7zm0 8h12v2H7z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M11 9V5H9v4H5v2h4v4h2v-4h4V9zm-1 11a10 10 0 1 1 0-20a10 10 0 0 1 0 20"></svg:path>`,
 })
-export class ZondiconsAlignRightIcon {
+export class ZondiconsAddSolidIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,16 +36,16 @@ export class ZondiconsAlignRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zondiconsAlignCenterIcon],svg[zondicons-align-center-icon]',
+  selector: 'svg[zondiconsAdjustIcon],svg[zondicons-adjust-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM4 5h12v2H4zm0 8h12v2H4z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M10 2v16a8 8 0 1 0 0-16m0 18a10 10 0 1 1 0-20a10 10 0 0 1 0 20"></svg:path>`,
 })
-export class ZondiconsAlignCenterIcon {
+export class ZondiconsAdjustIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,16 +70,16 @@ export class ZondiconsAirplaneIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zondiconsAlignLeftIcon],svg[zondicons-align-left-icon]',
+  selector: 'svg[zondiconsAlbumIcon],svg[zondicons-album-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM1 5h12v2H1zm0 8h12v2H1z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M0 0h20v20H0zm10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16m0-5a3 3 0 1 1 0-6a3 3 0 0 1 0 6"></svg:path>`,
 })
-export class ZondiconsAlignLeftIcon {
+export class ZondiconsAlbumIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,16 +87,33 @@ export class ZondiconsAlignLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zondiconsAddSolidIcon],svg[zondicons-add-solid-icon]',
+  selector: 'svg[zondiconsAlignJustifiedIcon],svg[zondicons-align-justified-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M11 9V5H9v4H5v2h4v4h2v-4h4V9zm-1 11a10 10 0 1 1 0-20a10 10 0 0 1 0 20"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM1 5h18v2H1zm0 8h18v2H1z"></svg:path>`,
 })
-export class ZondiconsAddSolidIcon {
+export class ZondiconsAlignJustifiedIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[zondiconsAlignCenterIcon],svg[zondicons-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM4 5h12v2H4zm0 8h12v2H4z"></svg:path>`,
+})
+export class ZondiconsAlignCenterIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5017,16 +5017,16 @@ export class ZondiconsZoomOutIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zondiconsAdjustIcon],svg[zondicons-adjust-icon]',
+  selector: 'svg[zondiconsAlignRightIcon],svg[zondicons-align-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M10 2v16a8 8 0 1 0 0-16m0 18a10 10 0 1 1 0-20a10 10 0 0 1 0 20"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM7 5h12v2H7zm0 8h12v2H7z"></svg:path>`,
 })
-export class ZondiconsAdjustIcon {
+export class ZondiconsAlignRightIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5034,16 +5034,16 @@ export class ZondiconsAdjustIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zondiconsAlbumIcon],svg[zondicons-album-icon]',
+  selector: 'svg[zondiconsAlignLeftIcon],svg[zondicons-align-left-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M0 0h20v20H0zm10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16m0-5a3 3 0 1 1 0-6a3 3 0 0 1 0 6"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM1 5h12v2H1zm0 8h12v2H1z"></svg:path>`,
 })
-export class ZondiconsAlbumIcon {
+export class ZondiconsAlignLeftIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

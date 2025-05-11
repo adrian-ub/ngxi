@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightForkliftOutlineIcon],svg[material-symbols-light-forklift-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.962 20.5q-1.039 0-1.77-.73T2.462 18q0-.592.26-1.112q.259-.52.74-.888v-4.5H5.75V6h6.096L16.2 16.19q.13.312.216.633q.084.321.084.677q0 1.258-.871 2.129T13.5 20.5q-.967 0-1.743-.547T10.67 18.5H7.402q-.171.88-.86 1.44q-.688.56-1.58.56m12.538-1v-15h1v14h3.039v1zm-12.538 0q.617 0 1.058-.441q.441-.442.441-1.059t-.44-1.059q-.442-.441-1.06-.441t-1.058.441T3.462 18t.441 1.059t1.059.441m8.538 0q.817 0 1.409-.591q.591-.592.591-1.409t-.591-1.409T13.5 15.5t-1.409.591q-.591.592-.591 1.409t.591 1.409t1.409.591m-6.098-2h3.104q-.027-.563.19-1.09q.216-.525.629-.91H9.248l-2.925-3H4.462v3.077q.115-.039.24-.058t.26-.019q.892 0 1.58.56t.86 1.44m2.273-3h3.86q.25 0 .49.058t.471.173L11.194 7H6.75v4.5zm-.427 1l-.462-.475q-.463-.475-1-1.037t-1-1.025l-.463-.463H4.462h1.861zh2.077z"></svg:path>`,
-})
-export class MaterialSymbolsLightForkliftOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightForkliftOutlineRoundedIcon],svg[material-symbols-light-forklift-outline-rounded-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightHPlusMobiledataBadgeOutlineSharpIcon {
   template: `<svg:path fill="currentColor" d="M3.616 20q-.691 0-1.153-.462T2 18.384V5.616q0-.691.463-1.153T3.616 4h16.769q.69 0 1.153.463T22 5.616v12.769q0 .69-.462 1.153T20.385 20zm2.692-7.5h4.615V16q0 .213.144.356t.357.144t.356-.144t.143-.356V8q0-.213-.144-.356q-.144-.144-.356-.144q-.213 0-.357.144T10.923 8v3.5H6.308V8q0-.213-.144-.356T5.807 7.5t-.356.144T5.308 8v8q0 .213.144.356q.144.144.356.144q.213 0 .357-.144T6.308 16zm9.384 0V14q0 .213.144.356t.357.144t.356-.144t.143-.356v-1.5h1.5q.213 0 .357-.144t.143-.357t-.143-.356t-.357-.143h-1.5V10q0-.213-.144-.356q-.143-.144-.356-.144t-.356.144t-.144.356v1.5h-1.5q-.212 0-.356.144t-.144.357t.144.356t.356.143z"></svg:path>`,
 })
 export class MaterialSymbolsLightHPlusMobiledataBadgeRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightHPlusMobiledataBadgeSharpIcon],svg[material-symbols-light-h-plus-mobiledata-badge-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.308 16.5h1v-4h4.615v4h1v-9h-1v4H6.308v-4h-1zm10.384-2h1v-2h2v-1h-2v-2h-1v2h-2v1h2zM2 20V4h20v16z"></svg:path>`,
+})
+export class MaterialSymbolsLightHPlusMobiledataBadgeSharpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

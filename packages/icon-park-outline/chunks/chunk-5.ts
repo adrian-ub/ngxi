@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkOutlineUnlockIcon],svg[icon-park-outline-unlock-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><svg:rect width="34" height="22" x="7" y="22.048" rx="2"></svg:rect><svg:path stroke-linecap="round" d="M14 22v-7.995c-.005-5.135 3.923-9.438 9.086-9.954S32.967 6.974 34 12.006M24 30v6"></svg:path></svg:g>`,
+})
+export class IconParkOutlineUnlockIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkOutlineUnlockOneIcon],svg[icon-park-outline-unlock-one-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="4"><svg:circle cx="24" cy="30" r="14"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M31 12v-1a7 7 0 0 0-7-7v0a7 7 0 0 0-7 7v6m7 9v8"></svg:path></svg:g>`,
+})
+export class IconParkOutlineUnlockOneIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkOutlineUnorderedListIcon],svg[icon-park-outline-unordered-list-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M8 18v9m3 0H5m6-15H5m0-7s3-3 5 0s-5 7-5 7m0 22.5s2-3 5-1s0 4.5 0 4.5s3 2.5 0 4.5s-5-1-5-1m5-3.5H8m0-20l-3 2m15 4h22M20 38h22M20 10h22"></svg:path>`,
+})
+export class IconParkOutlineUnorderedListIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkOutlineUpIcon],svg[icon-park-outline-up-icon]',
   host: {
     role: 'img',
@@ -2630,57 +2681,6 @@ export class IconParkOutlineZoomInternalIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><svg:path d="M21 38c9.389 0 17-7.611 17-17S30.389 4 21 4S4 11.611 4 21s7.611 17 17 17Z"></svg:path><svg:path stroke-linecap="round" d="M15 21h12m6.222 12.222l8.485 8.485"></svg:path></svg:g>`,
 })
 export class IconParkOutlineZoomOutIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkOutlineAdIcon],svg[icon-park-outline-ad-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:circle cx="24" cy="24" r="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></svg:circle><svg:path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m38 38l-3-3M10 10l3 3"></svg:path><svg:path d="M21.143 28L18 17l-3.143 11z"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m14 31l.857-3M22 31l-.857-3m0 0L18 17l-3.143 11m6.286 0h-6.286M35 24c0 5-3.582 7-8 7V17c4.418 0 8 2 8 7"></svg:path></svg:g>`,
-})
-export class IconParkOutlineAdIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkOutlineAbdominalIcon],svg[icon-park-outline-abdominal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="4" d="M7.9 5q4.256 4.529 4.256 11.765C12.156 24 6 29.538 4.969 33.5q-1.03 3.962-.97 9.5M39.256 5q-4.257 4.529-4.257 11.765C35 24 41.156 29.538 42.186 33.5q1.03 3.962.97 9.5"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="4" d="M6.244 30.837q9.787 6.195 17.777 6.195t16.898-6.195"></svg:path><svg:path fill="currentColor" d="M24 31a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5"></svg:path></svg:g>`,
-})
-export class IconParkOutlineAbdominalIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkOutlineAdProductIcon],svg[icon-park-outline-ad-product-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><svg:path d="M44 14L24 4L4 14v20l20 10l20-10z"></svg:path><svg:path stroke-linecap="round" d="m4 14l20 10m0 20V24m20-10L24 24M34 9L14 19"></svg:path></svg:g>`,
-})
-export class IconParkOutlineAdProductIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

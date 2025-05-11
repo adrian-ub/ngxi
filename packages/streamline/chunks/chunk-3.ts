@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[streamlineInterfaceHelpCustomerSupport1CustomerHeadsetHelpMicrophonePhoneSupportIcon],svg[streamline-interface-help-customer-support-1-customer-headset-help-microphone-phone-support-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M3 7V4.37A3.93 3.93 0 0 1 7 .5h0a3.93 3.93 0 0 1 4 3.87V7M1.5 5.5h1A.5.5 0 0 1 3 6v3a.5.5 0 0 1-.5.5h-1a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Zm11 4h-1A.5.5 0 0 1 11 9V6a.5.5 0 0 1 .5-.5h1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1ZM9 12.25a2 2 0 0 0 2-2h0V8m-2 4.25a1.25 1.25 0 0 1-1.25 1.25h-1.5a1.25 1.25 0 0 1 0-2.5h1.5A1.25 1.25 0 0 1 9 12.25Z"></svg:path>`,
-})
-export class StreamlineInterfaceHelpCustomerSupport1CustomerHeadsetHelpMicrophonePhoneSupportIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[streamlineInterfaceHelpCustomerSupport2CustomerHeadphonesHeadsetHelpMicrophonePhonePersonSupportIcon],svg[streamline-interface-help-customer-support-2-customer-headphones-headset-help-microphone-phone-person-support-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class StreamlineNecklaceSolidIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M8.5 3.5h-3l-.561-1.684A1 1 0 0 1 5.887.5h2.226a1 1 0 0 1 .948 1.316zm0 0l1 7.5L7 13.5L4.5 11l1-7.5"></svg:path>`,
 })
 export class StreamlineNecktieIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineNecktieSolidIcon],svg[streamline-necktie-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M5.5 3.104h3l.561-1.684A1 1 0 0 0 8.113.104H5.887A1 1 0 0 0 4.94 1.42zm3.967 8.255L8.5 4.104h-3l-.967 7.255a.5.5 0 0 0 .142.42l1.971 1.971a.5.5 0 0 0 .708 0l1.971-1.972a.5.5 0 0 0 .142-.42Z" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineNecktieSolidIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

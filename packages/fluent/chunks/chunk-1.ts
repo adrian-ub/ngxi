@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentArchiveMultiple16FilledIcon],svg[fluent-archive-multiple-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm0 4v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V5zm3.5 1.5A.5.5 0 0 1 6 6h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5M13 5.085A1.5 1.5 0 0 1 14 6.5V12a3 3 0 0 1-3 3H6a2 2 0 0 1-1.732-1H11a2 2 0 0 0 2-2z"></svg:path>`,
+})
+export class FluentArchiveMultiple16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentArchiveMultiple16RegularIcon],svg[fluent-archive-multiple-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 6a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zM2 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm1 10V5h8v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1M2 2h10v2H2zm12 4.5a1.5 1.5 0 0 0-1-1.415V12a2 2 0 0 1-2 2H4.268A2 2 0 0 0 6 15h5a3 3 0 0 0 3-3z"></svg:path>`,
+})
+export class FluentArchiveMultiple16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentArchiveMultiple20FilledIcon],svg[fluent-archive-multiple-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.5 2A1.5 1.5 0 0 0 2 3.5v1A1.5 1.5 0 0 0 3.5 6h11A1.5 1.5 0 0 0 16 4.5v-1A1.5 1.5 0 0 0 14.5 2zM15 7H3v5.5A3.5 3.5 0 0 0 6.5 16h5a3.5 3.5 0 0 0 3.5-3.5zM7 8.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M8.5 18a3.5 3.5 0 0 1-2.45-1h6.45a3.5 3.5 0 0 0 3.5-3.5V7.085A1.5 1.5 0 0 1 17 8.5v5a4.5 4.5 0 0 1-4.5 4.5z"></svg:path>`,
+})
+export class FluentArchiveMultiple20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentArchiveMultiple20RegularIcon],svg[fluent-archive-multiple-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.5 8a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm-4-6A1.5 1.5 0 0 0 2 3.5v2a1.5 1.5 0 0 0 1.007 1.417L3 7v5.5A3.5 3.5 0 0 0 6.5 16h5a3.5 3.5 0 0 0 3.5-3.5V7l-.007-.083A1.5 1.5 0 0 0 16 5.5v-2A1.5 1.5 0 0 0 14.5 2zM4 12.5V7h10v5.5a2.5 2.5 0 0 1-2.5 2.5h-5A2.5 2.5 0 0 1 4 12.5m-1-9a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5zM8.5 18a3.5 3.5 0 0 1-2.45-1h6.45a3.5 3.5 0 0 0 3.5-3.5V7.085A1.5 1.5 0 0 1 17 8.5v5a4.5 4.5 0 0 1-4.5 4.5z"></svg:path>`,
+})
+export class FluentArchiveMultiple20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentArchiveMultiple24FilledIcon],svg[fluent-archive-multiple-24-filled-icon]',
   host: {
     role: 'img',
@@ -8428,74 +8496,6 @@ export class FluentArrowLeft12FilledIcon {
 })
 export class FluentArrowLeft12RegularIcon {
   readonly viewBox = input("0 0 12 12")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentArrowLeft16FilledIcon],svg[fluent-arrow-left-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14 8a.75.75 0 0 1-.75.75H4.463l3.287 2.941a.75.75 0 1 1-1 1.118L2 8.559A.75.75 0 0 1 2 7.44l4.75-4.25a.75.75 0 1 1 1 1.118L4.463 7.25h8.787A.75.75 0 0 1 14 8"></svg:path>`,
-})
-export class FluentArrowLeft16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentArrowLeft16RegularIcon],svg[fluent-arrow-left-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13.5 8.5a.5.5 0 0 0 0-1H3.803l4.031-3.628a.5.5 0 1 0-.668-.744l-5 4.5a.5.5 0 0 0 0 .744l5 4.5a.5.5 0 1 0 .668-.744L3.803 8.5z"></svg:path>`,
-})
-export class FluentArrowLeft16RegularIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentArrowLeft20FilledIcon],svg[fluent-arrow-left-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.73 16.795a.75.75 0 0 0 1.031-1.09L4.522 10.75h12.724a.75.75 0 0 0 0-1.5H4.52l5.241-4.957a.75.75 0 1 0-1.03-1.09l-6.417 6.07a1 1 0 0 0-.3.566a.75.75 0 0 0 0 .329a1 1 0 0 0 .3.558z"></svg:path>`,
-})
-export class FluentArrowLeft20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentArrowLeft20RegularIcon],svg[fluent-arrow-left-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.159 16.867a.5.5 0 1 0 .674-.739l-6.168-5.63h13.831a.5.5 0 0 0 0-1H3.668l6.165-5.629a.5.5 0 0 0-.674-.738L2.243 9.445a.75.75 0 0 0-.24.631a.75.75 0 0 0 .24.477z"></svg:path>`,
-})
-export class FluentArrowLeft20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
 }

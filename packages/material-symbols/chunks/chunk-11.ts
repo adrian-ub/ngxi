@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsFloatPortraitOutlineRoundedIcon],svg[material-symbols-float-portrait-outline-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 22q-.825 0-1.413-.588T4 20V4q0-.825.588-1.413T6 2h12q.825 0 1.413.588T20 4v8q0 .425-.288.713T19 13q-.425 0-.713-.288T18 12V4H6v16h6q.425 0 .713.288T13 21q0 .425-.288.713T12 22H6Zm10 0q-.425 0-.713-.288T15 21v-5q0-.425.288-.713T16 15h3q.425 0 .713.288T20 16v5q0 .425-.288.713T19 22h-3Zm-3-2H6V4h12v9h-3q-.825 0-1.413.588T13 15v5Z"></svg:path>`,
-})
-export class MaterialSymbolsFloatPortraitOutlineRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsFloatPortraitOutlineSharpIcon],svg[material-symbols-float-portrait-outline-sharp-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsGardenCartSharpIcon {
   template: `<svg:path fill="currentColor" d="M8 22q-1.65 0-2.825-1.175T4 18V8q0-1.65 1.175-2.825T8 4h1V2h2v2h2V2h2v2h1q1.65 0 2.825 1.175T20 8v10q0 1.65-1.175 2.825T16 22zm0-12h8V8H8zm4 8q1.05 0 1.775-.712t.725-1.738q0-.825-.475-1.412T12 11.75q-1.575 1.8-2.037 2.4t-.463 1.4q0 1.025.725 1.738T12 18"></svg:path>`,
 })
 export class MaterialSymbolsGasMeterIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsGasMeterOutlineIcon],svg[material-symbols-gas-meter-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 22q-1.65 0-2.825-1.175T4 18V8q0-1.65 1.175-2.825T8 4h1V2h2v2h2V2h2v2h1q1.65 0 2.825 1.175T20 8v10q0 1.65-1.175 2.825T16 22zm0-2h8q.825 0 1.413-.587T18 18V8q0-.825-.587-1.412T16 6H8q-.825 0-1.412.588T6 8v10q0 .825.588 1.413T8 20m0-10h8V8H8zm4 8q1.05 0 1.775-.712t.725-1.738q0-.825-.475-1.412T12 11.75q-1.575 1.8-2.037 2.4t-.463 1.4q0 1.025.725 1.738T12 18M6 6v14z"></svg:path>`,
+})
+export class MaterialSymbolsGasMeterOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

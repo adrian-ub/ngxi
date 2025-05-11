@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[primeAndroidIcon],svg[prime-android-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18.06 9.33a.94.94 0 0 0-.94.94v4.26a.94.94 0 0 0 1.88 0v-4.26a.94.94 0 0 0-.94-.94m-12.12 0a.94.94 0 0 0-.94.94v4.26a.94.94 0 0 0 1.88 0v-4.26a.94.94 0 0 0-.94-.94m1.62 0v6.4a1.07 1.07 0 0 0 1.07 1.07h.68v2.27a.94.94 0 0 0 1.88 0V16.8h1.62v2.27a.94.94 0 0 0 1.88 0V16.8h.68a1.07 1.07 0 0 0 1.07-1.07v-6.4Z"></svg:path><svg:circle cx="9.98" cy="7.07" r=".4" fill="none"></svg:circle><svg:circle cx="14.02" cy="7.07" r=".4" fill="none"></svg:circle><svg:path fill="currentColor" d="M16.32 8a4.13 4.13 0 0 0-1.83-2.36l-.15-.09l-.16-.08l.18-.31l.53-1a.14.14 0 0 0-.05-.16h-.07a.17.17 0 0 0-.13.07L14.1 5l-.17.31l-.16-.07l-.17-.06a4.88 4.88 0 0 0-3.2 0l-.16.06l-.17.07L9.9 5l-.54-1a.14.14 0 0 0-.25.14l.53 1l.18.31l-.16.08l-.15.09A4.07 4.07 0 0 0 7.69 8a3 3 0 0 0-.13.8h8.88a3.6 3.6 0 0 0-.12-.8M10 7.47a.4.4 0 1 1 .4-.4a.4.4 0 0 1-.4.4m4 0a.4.4 0 1 1 .4-.4a.4.4 0 0 1-.4.4"></svg:path>`,
-})
-export class PrimeAndroidIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[primeAddressBookIcon],svg[prime-address-book-icon]',
   host: {
     role: 'img',
@@ -36,16 +19,16 @@ export class PrimeAddressBookIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[primeAngleDoubleLeftIcon],svg[prime-angle-double-left-icon]',
+  selector: 'svg[primeAlignCenterIcon],svg[prime-align-center-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M11 16.25a.74.74 0 0 1-.53-.22L7 12.53a.75.75 0 0 1 0-1.06L10.47 8a.75.75 0 0 1 1.06 1l-3 3l3 3a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.19m5.5 0A.74.74 0 0 1 16 16l-3.5-3.5a.75.75 0 0 1 0-1.06L16 8a.75.75 0 0 1 1 1l-3 3l3 3a.75.75 0 0 1 0 1a.74.74 0 0 1-.5.25"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M17 10.75H7a.75.75 0 0 1 0-1.5h10a.75.75 0 0 1 0 1.5m3-4H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 0 1.5m0 8H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 0 1.5m-3 4H7a.75.75 0 0 1 0-1.5h10a.75.75 0 0 1 0 1.5"></svg:path>`,
 })
-export class PrimeAngleDoubleLeftIcon {
+export class PrimeAlignCenterIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -63,6 +46,23 @@ export class PrimeAngleDoubleLeftIcon {
   template: `<svg:path fill="currentColor" d="M13.93 11h-10a.75.75 0 1 1 0-1.5h10a.75.75 0 0 1 0 1.5m6.14-4h-16a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 0 1.5m0 8h-16a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 0 1.5m-6.14 4h-10a.75.75 0 1 1 0-1.5h10a.75.75 0 0 1 0 1.5"></svg:path>`,
 })
 export class PrimeAlignLeftIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[primeAndroidIcon],svg[prime-android-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.06 9.33a.94.94 0 0 0-.94.94v4.26a.94.94 0 0 0 1.88 0v-4.26a.94.94 0 0 0-.94-.94m-12.12 0a.94.94 0 0 0-.94.94v4.26a.94.94 0 0 0 1.88 0v-4.26a.94.94 0 0 0-.94-.94m1.62 0v6.4a1.07 1.07 0 0 0 1.07 1.07h.68v2.27a.94.94 0 0 0 1.88 0V16.8h1.62v2.27a.94.94 0 0 0 1.88 0V16.8h.68a1.07 1.07 0 0 0 1.07-1.07v-6.4Z"></svg:path><svg:circle cx="9.98" cy="7.07" r=".4" fill="none"></svg:circle><svg:circle cx="14.02" cy="7.07" r=".4" fill="none"></svg:circle><svg:path fill="currentColor" d="M16.32 8a4.13 4.13 0 0 0-1.83-2.36l-.15-.09l-.16-.08l.18-.31l.53-1a.14.14 0 0 0-.05-.16h-.07a.17.17 0 0 0-.13.07L14.1 5l-.17.31l-.16-.07l-.17-.06a4.88 4.88 0 0 0-3.2 0l-.16.06l-.17.07L9.9 5l-.54-1a.14.14 0 0 0-.25.14l.53 1l.18.31l-.16.08l-.15.09A4.07 4.07 0 0 0 7.69 8a3 3 0 0 0-.13.8h8.88a3.6 3.6 0 0 0-.12-.8M10 7.47a.4.4 0 1 1 .4-.4a.4.4 0 0 1-.4.4m4 0a.4.4 0 1 1 .4-.4a.4.4 0 0 1-.4.4"></svg:path>`,
+})
+export class PrimeAndroidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,16 +104,16 @@ export class PrimeAngleDoubleDownIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[primeAlignCenterIcon],svg[prime-align-center-icon]',
+  selector: 'svg[primeAngleDoubleLeftIcon],svg[prime-angle-double-left-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M17 10.75H7a.75.75 0 0 1 0-1.5h10a.75.75 0 0 1 0 1.5m3-4H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 0 1.5m0 8H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 0 1.5m-3 4H7a.75.75 0 0 1 0-1.5h10a.75.75 0 0 1 0 1.5"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M11 16.25a.74.74 0 0 1-.53-.22L7 12.53a.75.75 0 0 1 0-1.06L10.47 8a.75.75 0 0 1 1.06 1l-3 3l3 3a.75.75 0 0 1 0 1.06a.74.74 0 0 1-.53.19m5.5 0A.74.74 0 0 1 16 16l-3.5-3.5a.75.75 0 0 1 0-1.06L16 8a.75.75 0 0 1 1 1l-3 3l3 3a.75.75 0 0 1 0 1a.74.74 0 0 1-.5.25"></svg:path>`,
 })
-export class PrimeAlignCenterIcon {
+export class PrimeAngleDoubleLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

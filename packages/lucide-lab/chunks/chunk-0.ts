@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[lucideLabAppleCoreIcon],svg[lucide-lab-apple-core-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M14 2a2 2 0 0 0-2 2v2.53"></svg:path><svg:path d="M12 6.53a5.98 5.98 0 0 0-8.5.5a4 4 0 0 1 4.02 5.86a4 4 0 0 1-1.76 7.04C6.82 21.17 7.97 22 9 22c1.5 0 1.5-1 3-1s1.5 1 3 1c1.03 0 2.18-.83 3.24-2.07a4 4 0 0 1-1.76-7.03a4 4 0 0 1 4.02-5.87a5.99 5.99 0 0 0-8.5-.5"></svg:path></svg:g>`,
+})
+export class LucideLabAppleCoreIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[lucideLabAmpersandSquareIcon],svg[lucide-lab-ampersand-square-icon]',
   host: {
     role: 'img',
@@ -12,6 +29,40 @@ import { Component, input } from '@angular/core'
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:rect width="18" height="18" x="3" y="3" rx="2"></svg:rect><svg:path d="M16 17c-4-2-7-6-7-8a2 2 0 0 1 4 0c0 3-5 1.5-5 5c0 1.7 1.3 3 3 3c3 0 5-2 5-4"></svg:path></svg:g>`,
 })
 export class LucideLabAmpersandSquareIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lucideLabArrowsUpDownSquareIcon],svg[lucide-lab-arrows-up-down-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m6 9l3-3l3 3M9 6v6"></svg:path><svg:rect width="20" height="20" x="2" y="2" rx="2"></svg:rect><svg:path d="M15 18v-6m3 3l-3 3l-3-3"></svg:path></svg:g>`,
+})
+export class LucideLabArrowsUpDownSquareIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lucideLabAstronautHelmetIcon],svg[lucide-lab-astronaut-helmet-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m10.6 13.4l6.3 6.1c.3.5.1 1.1-.4 1.4c-1.4.7-2.9 1.1-4.5 1.1a2 2 0 0 1-1.4-.6l-8-8A2 2 0 0 1 2 12a10 10 0 0 1 19.44-3.3c.3.7-.3 1.3-1 1.3H12"></svg:path><svg:circle cx="12" cy="12" r="2"></svg:circle><svg:path d="M16.2 18.8c3-1.9 4.4-5.5 3.5-8.8"></svg:path></svg:g>`,
+})
+export class LucideLabAstronautHelmetIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,23 +87,6 @@ export class LucideLabAtSignCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[lucideLabAvocadoIcon],svg[lucide-lab-avocado-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M22 7a4.95 4.95 0 0 0-8.6-3.4c-1.5 1.6-1.6 1.8-5 2.6a8 8 0 1 0 9.4 9.5c.7-3.4 1-3.6 2.6-5c1-1 1.6-2.3 1.6-3.7"></svg:path><svg:circle cx="10" cy="14" r="3.5"></svg:circle></svg:g>`,
-})
-export class LucideLabAvocadoIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[lucideLabAtSignSquareIcon],svg[lucide-lab-at-sign-square-icon]',
   host: {
     role: 'img',
@@ -63,6 +97,40 @@ export class LucideLabAvocadoIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:rect width="20" height="20" x="2" y="2" rx="2"></svg:rect><svg:path d="M14 17.7a6 6 0 1 1 4-5.7a2 2 0 0 1-4 0"></svg:path><svg:circle cx="12" cy="12" r="2"></svg:circle></svg:g>`,
 })
 export class LucideLabAtSignSquareIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lucideLabBabyPacifierIcon],svg[lucide-lab-baby-pacifier-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M10.1 7.4a1.95 1.95 0 0 0 3.7-1.5c-.8-2-3.2-3-5.2-2.2c-2.9 1.2-4.8 3.7-5.4 6.5a1.95 1.95 0 0 0 0 3.6A9.05 9.05 0 0 0 7 19.42m10.1-.02c2-1.3 3.3-3.4 3.8-5.6a2 2 0 0 0 0-3.6a9.83 9.83 0 0 0-3.2-5M8 12h.01M16 12h.01"></svg:path><svg:circle cx="12" cy="16" r="2"></svg:circle><svg:path d="M10 16h-.5A2.5 2.5 0 0 0 7 18.5v1A2.5 2.5 0 0 0 9.5 22h5a2.5 2.5 0 0 0 2.5-2.5v-1a2.5 2.5 0 0 0-2.5-2.5H14"></svg:path></svg:g>`,
+})
+export class LucideLabBabyPacifierIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lucideLabAvocadoIcon],svg[lucide-lab-avocado-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M22 7a4.95 4.95 0 0 0-8.6-3.4c-1.5 1.6-1.6 1.8-5 2.6a8 8 0 1 0 9.4 9.5c.7-3.4 1-3.6 2.6-5c1-1 1.6-2.3 1.6-3.7"></svg:path><svg:circle cx="10" cy="14" r="3.5"></svg:circle></svg:g>`,
+})
+export class LucideLabAvocadoIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -6258,57 +6326,6 @@ export class LucideLabYinYangIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[lucideLabBabyPacifierIcon],svg[lucide-lab-baby-pacifier-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M10.1 7.4a1.95 1.95 0 0 0 3.7-1.5c-.8-2-3.2-3-5.2-2.2c-2.9 1.2-4.8 3.7-5.4 6.5a1.95 1.95 0 0 0 0 3.6A9.05 9.05 0 0 0 7 19.42m10.1-.02c2-1.3 3.3-3.4 3.8-5.6a2 2 0 0 0 0-3.6a9.83 9.83 0 0 0-3.2-5M8 12h.01M16 12h.01"></svg:path><svg:circle cx="12" cy="16" r="2"></svg:circle><svg:path d="M10 16h-.5A2.5 2.5 0 0 0 7 18.5v1A2.5 2.5 0 0 0 9.5 22h5a2.5 2.5 0 0 0 2.5-2.5v-1a2.5 2.5 0 0 0-2.5-2.5H14"></svg:path></svg:g>`,
-})
-export class LucideLabBabyPacifierIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[lucideLabArrowsUpDownSquareIcon],svg[lucide-lab-arrows-up-down-square-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m6 9l3-3l3 3M9 6v6"></svg:path><svg:rect width="20" height="20" x="2" y="2" rx="2"></svg:rect><svg:path d="M15 18v-6m3 3l-3 3l-3-3"></svg:path></svg:g>`,
-})
-export class LucideLabArrowsUpDownSquareIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[lucideLabAppleCoreIcon],svg[lucide-lab-apple-core-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M14 2a2 2 0 0 0-2 2v2.53"></svg:path><svg:path d="M12 6.53a5.98 5.98 0 0 0-8.5.5a4 4 0 0 1 4.02 5.86a4 4 0 0 1-1.76 7.04C6.82 21.17 7.97 22 9 22c1.5 0 1.5-1 3-1s1.5 1 3 1c1.03 0 2.18-.83 3.24-2.07a4 4 0 0 1-1.76-7.03a4 4 0 0 1 4.02-5.87a5.99 5.99 0 0 0-8.5-.5"></svg:path></svg:g>`,
-})
-export class LucideLabAppleCoreIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[lucideLabBaconIcon],svg[lucide-lab-bacon-icon]',
   host: {
     role: 'img',
@@ -6319,23 +6336,6 @@ export class LucideLabAppleCoreIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M22 8c-2 5-5 2-7 7s-5 2-7 7l-6-6c2-5 5-2 7-7s5-2 7-7Z"></svg:path><svg:path d="M5 19c2-5 5-2 7-7s5-2 7-7"></svg:path></svg:g>`,
 })
 export class LucideLabBaconIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[lucideLabAstronautHelmetIcon],svg[lucide-lab-astronaut-helmet-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m10.6 13.4l6.3 6.1c.3.5.1 1.1-.4 1.4c-1.4.7-2.9 1.1-4.5 1.1a2 2 0 0 1-1.4-.6l-8-8A2 2 0 0 1 2 12a10 10 0 0 1 19.44-3.3c.3.7-.3 1.3-1 1.3H12"></svg:path><svg:circle cx="12" cy="12" r="2"></svg:circle><svg:path d="M16.2 18.8c3-1.9 4.4-5.5 3.5-8.8"></svg:path></svg:g>`,
-})
-export class LucideLabAstronautHelmetIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,16 +2,50 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[uiwAndroidIcon],svg[uiw-android-icon]',
+  selector: 'svg[uiwAdobeIcon],svg[uiw-adobe-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12.735 1.828L13.6.254a.172.172 0 0 0-.3-.164l-.874 1.59a6 6 0 0 0-2.428-.508c-.869 0-1.69.181-2.424.506L6.698.09a.17.17 0 0 0-.232-.069a.17.17 0 0 0-.069.232l.866 1.572c-1.7.874-2.85 2.537-2.849 4.447l11.166-.001c0-1.91-1.146-3.57-2.845-4.444m-5.278 2.43a.467.467 0 1 1 .001-.934a.467.467 0 0 1 0 .935M15.542 6.7l.002 8.012c0 .481-.262.897-.648 1.127a1.3 1.3 0 0 1-.675.19l-.904.001v2.734a1.237 1.237 0 0 1-1.489 1.21a1.24 1.24 0 0 1-.99-1.209V16.03H9.163v2.735A1.237 1.237 0 0 1 7.925 20a1.24 1.24 0 0 1-1.238-1.235V16.03h-.901c-.521 0-.967-.3-1.182-.736a1.3 1.3 0 0 1-.141-.581l-.002-8.01zM2.74 6.47c.684 0 1.24.553 1.24 1.234v5.17q0 .127-.025.249a1.238 1.238 0 0 1-1.897.78a1.23 1.23 0 0 1-.557-1.03L1.5 7.704c0-.68.555-1.234 1.24-1.234m14.52-.001c.684 0 1.24.552 1.24 1.234v5.169c0 .683-.555 1.235-1.239 1.235c-.685 0-1.24-.552-1.24-1.235v-5.17c0-.682.554-1.235 1.238-1.234M12.54 3.325a.467.467 0 1 1 0 .933a.467.467 0 1 1 0-.933"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M20 1v18.001L12.607 1zM7.399 1L0 19.001V1zm2.604 6.265L14.713 19h-3.086l-1.41-3.419H6.77z"></svg:path>`,
 })
-export class UiwAndroidIcon {
+export class UiwAdobeIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uiwAlipayIcon],svg[uiw-alipay-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20 13.692V3.846A3.845 3.845 0 0 0 16.154 0H3.846A3.845 3.845 0 0 0 0 3.846v12.308A3.845 3.845 0 0 0 3.846 20h12.308a3.85 3.85 0 0 0 3.787-3.167c-1.02-.439-5.44-2.347-7.742-3.45c-1.755 2.122-3.589 3.396-6.356 3.396s-4.613-1.703-4.388-3.79c.145-1.368 1.084-3.605 5.161-3.22c2.148.201 3.132.604 4.886 1.182c.45-.83.83-1.745 1.114-2.72H4.847v-.77H8.69V6.077H4V5.23h4.69V3.236s.045-.315.389-.315H11V5.23h5.002v.847H11v1.384h4.078a15.7 15.7 0 0 1-1.654 4.154c1.182.43 6.575 2.077 6.575 2.077M5.538 15.46c-2.925 0-3.384-1.846-3.23-2.617s1.002-1.768 2.625-1.768c1.87 0 3.541.477 5.547 1.454c-1.407 1.837-3.144 2.93-4.942 2.93"></svg:path>`,
+})
+export class UiwAlipayIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uiwAliwangwangIcon],svg[uiw-aliwangwang-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.23 6.572a9.6 9.6 0 0 0-2.104-3.073a9.88 9.88 0 0 0-6.94-2.83a9.9 9.9 0 0 0-3.226.533C4.191-.093.9-.002.756.003a.77.77 0 0 0-.7 1.052l1.727 4.277a9.5 9.5 0 0 0-1.415 5.002a9.5 9.5 0 0 0 .771 3.763a9.6 9.6 0 0 0 2.103 3.073a9.88 9.88 0 0 0 6.94 2.83a9.9 9.9 0 0 0 3.824-.76a9.78 9.78 0 0 0 5.223-5.143A9.5 9.5 0 0 0 20 10.334c0-1.304-.259-2.57-.77-3.762m-8.584 1.855c0 .442-.363.8-.812.8a.806.806 0 0 1-.812-.8V6.973c0-.442.363-.8.812-.8s.812.358.812.8zm4.721 0c0 .442-.363.8-.812.8a.806.806 0 0 1-.813-.8V6.973c0-.442.364-.8.813-.8s.812.358.812.8z"></svg:path>`,
+})
+export class UiwAliwangwangIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,23 +70,6 @@ export class UiwAndroidOIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uiwAreaChartIcon],svg[uiw-area-chart-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.087 2.054c.198 0 .357.16.357.357c0 .018-.007.034-.01.052h.01v7.755c0 .197.16.357.357.357h7.78c.196 0 .356.16.356.357l-.002.01l.002.085c0 4.955-4.015 8.973-8.969 8.973S0 15.982 0 11.027s4.015-8.973 8.968-8.973l.096.002c.008.002.015-.002.023-.002M11.13 0c4.877.05 8.82 3.996 8.871 8.876c0 .197-.16.357-.357.357c-.018 0-.034-.008-.052-.01v.01H11.13a.357.357 0 0 1-.357-.357V.41h.01c-.002-.018-.01-.034-.01-.052c0-.197.16-.357.357-.357"></svg:path>`,
-})
-export class UiwAreaChartIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[uiwAppleIcon],svg[uiw-apple-icon]',
   host: {
     role: 'img',
@@ -63,40 +80,6 @@ export class UiwAreaChartIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M14.122 4.682c1.35 0 2.781.743 3.8 2.028c-3.34 1.851-2.797 6.674.578 7.963c-.465 1.04-.687 1.505-1.285 2.426c-.835 1.284-2.01 2.884-3.469 2.898c-1.295.012-1.628-.853-3.386-.843s-2.125.858-3.42.846c-1.458-.014-2.573-1.458-3.408-2.743C1.198 13.665.954 9.45 2.394 7.21C3.417 5.616 5.03 4.683 6.548 4.683c1.545 0 2.516.857 3.794.857c1.24 0 1.994-.858 3.78-.858M13.73 0c.18 1.215-.314 2.405-.963 3.247c-.695.902-1.892 1.601-3.05 1.565c-.21-1.163.332-2.36.99-3.167C11.43.755 12.67.074 13.73 0"></svg:path>`,
 })
 export class UiwAppleIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[uiwAppstoreOIcon],svg[uiw-appstore-o-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2.02 1.515a.505.505 0 0 0-.505.505v5.05c0 .28.226.506.505.506h5.05a.505.505 0 0 0 .506-.505V2.02a.505.505 0 0 0-.505-.506zm5.05 9.394a2.02 2.02 0 0 1 2.02 2.02v5.05A2.02 2.02 0 0 1 7.07 20H2.02A2.02 2.02 0 0 1 0 17.98v-5.05a2.02 2.02 0 0 1 2.02-2.02zm10.91 0A2.02 2.02 0 0 1 20 12.93v5.05A2.02 2.02 0 0 1 17.98 20h-5.05a2.02 2.02 0 0 1-2.02-2.02v-5.05a2.02 2.02 0 0 1 2.02-2.02zM7.07 12.424H2.02a.505.505 0 0 0-.505.505v5.05c0 .28.226.506.505.506h5.05a.505.505 0 0 0 .506-.505v-5.05a.505.505 0 0 0-.505-.506m10.91 0h-5.05a.505.505 0 0 0-.506.505v5.05c0 .28.226.506.505.506h5.05a.505.505 0 0 0 .506-.505v-5.05a.505.505 0 0 0-.505-.506M7.07 0a2.02 2.02 0 0 1 2.02 2.02v5.05a2.02 2.02 0 0 1-2.02 2.02H2.02A2.02 2.02 0 0 1 0 7.07V2.02A2.02 2.02 0 0 1 2.02 0zm10.91 0A2.02 2.02 0 0 1 20 2.02v5.05a2.02 2.02 0 0 1-2.02 2.02h-5.05a2.02 2.02 0 0 1-2.02-2.02V2.02A2.02 2.02 0 0 1 12.93 0zm0 1.515h-5.05a.505.505 0 0 0-.506.505v5.05c0 .28.226.506.505.506h5.05a.505.505 0 0 0 .506-.505V2.02a.505.505 0 0 0-.505-.506"></svg:path>`,
-})
-export class UiwAppstoreOIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[uiwAdobeIcon],svg[uiw-adobe-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M20 1v18.001L12.607 1zM7.399 1L0 19.001V1zm2.604 6.265L14.713 19h-3.086l-1.41-3.419H6.77z"></svg:path>`,
-})
-export class UiwAdobeIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,16 +104,50 @@ export class UiwAppstoreIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uiwAliwangwangIcon],svg[uiw-aliwangwang-icon]',
+  selector: 'svg[uiwAreaChartIcon],svg[uiw-area-chart-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M19.23 6.572a9.6 9.6 0 0 0-2.104-3.073a9.88 9.88 0 0 0-6.94-2.83a9.9 9.9 0 0 0-3.226.533C4.191-.093.9-.002.756.003a.77.77 0 0 0-.7 1.052l1.727 4.277a9.5 9.5 0 0 0-1.415 5.002a9.5 9.5 0 0 0 .771 3.763a9.6 9.6 0 0 0 2.103 3.073a9.88 9.88 0 0 0 6.94 2.83a9.9 9.9 0 0 0 3.824-.76a9.78 9.78 0 0 0 5.223-5.143A9.5 9.5 0 0 0 20 10.334c0-1.304-.259-2.57-.77-3.762m-8.584 1.855c0 .442-.363.8-.812.8a.806.806 0 0 1-.812-.8V6.973c0-.442.363-.8.812-.8s.812.358.812.8zm4.721 0c0 .442-.363.8-.812.8a.806.806 0 0 1-.813-.8V6.973c0-.442.364-.8.813-.8s.812.358.812.8z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.087 2.054c.198 0 .357.16.357.357c0 .018-.007.034-.01.052h.01v7.755c0 .197.16.357.357.357h7.78c.196 0 .356.16.356.357l-.002.01l.002.085c0 4.955-4.015 8.973-8.969 8.973S0 15.982 0 11.027s4.015-8.973 8.968-8.973l.096.002c.008.002.015-.002.023-.002M11.13 0c4.877.05 8.82 3.996 8.871 8.876c0 .197-.16.357-.357.357c-.018 0-.034-.008-.052-.01v.01H11.13a.357.357 0 0 1-.357-.357V.41h.01c-.002-.018-.01-.034-.01-.052c0-.197.16-.357.357-.357"></svg:path>`,
 })
-export class UiwAliwangwangIcon {
+export class UiwAreaChartIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uiwAndroidIcon],svg[uiw-android-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12.735 1.828L13.6.254a.172.172 0 0 0-.3-.164l-.874 1.59a6 6 0 0 0-2.428-.508c-.869 0-1.69.181-2.424.506L6.698.09a.17.17 0 0 0-.232-.069a.17.17 0 0 0-.069.232l.866 1.572c-1.7.874-2.85 2.537-2.849 4.447l11.166-.001c0-1.91-1.146-3.57-2.845-4.444m-5.278 2.43a.467.467 0 1 1 .001-.934a.467.467 0 0 1 0 .935M15.542 6.7l.002 8.012c0 .481-.262.897-.648 1.127a1.3 1.3 0 0 1-.675.19l-.904.001v2.734a1.237 1.237 0 0 1-1.489 1.21a1.24 1.24 0 0 1-.99-1.209V16.03H9.163v2.735A1.237 1.237 0 0 1 7.925 20a1.24 1.24 0 0 1-1.238-1.235V16.03h-.901c-.521 0-.967-.3-1.182-.736a1.3 1.3 0 0 1-.141-.581l-.002-8.01zM2.74 6.47c.684 0 1.24.553 1.24 1.234v5.17q0 .127-.025.249a1.238 1.238 0 0 1-1.897.78a1.23 1.23 0 0 1-.557-1.03L1.5 7.704c0-.68.555-1.234 1.24-1.234m14.52-.001c.684 0 1.24.552 1.24 1.234v5.169c0 .683-.555 1.235-1.239 1.235c-.685 0-1.24-.552-1.24-1.235v-5.17c0-.682.554-1.235 1.238-1.234M12.54 3.325a.467.467 0 1 1 0 .933a.467.467 0 1 1 0-.933"></svg:path>`,
+})
+export class UiwAndroidIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uiwAppstoreOIcon],svg[uiw-appstore-o-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.02 1.515a.505.505 0 0 0-.505.505v5.05c0 .28.226.506.505.506h5.05a.505.505 0 0 0 .506-.505V2.02a.505.505 0 0 0-.505-.506zm5.05 9.394a2.02 2.02 0 0 1 2.02 2.02v5.05A2.02 2.02 0 0 1 7.07 20H2.02A2.02 2.02 0 0 1 0 17.98v-5.05a2.02 2.02 0 0 1 2.02-2.02zm10.91 0A2.02 2.02 0 0 1 20 12.93v5.05A2.02 2.02 0 0 1 17.98 20h-5.05a2.02 2.02 0 0 1-2.02-2.02v-5.05a2.02 2.02 0 0 1 2.02-2.02zM7.07 12.424H2.02a.505.505 0 0 0-.505.505v5.05c0 .28.226.506.505.506h5.05a.505.505 0 0 0 .506-.505v-5.05a.505.505 0 0 0-.505-.506m10.91 0h-5.05a.505.505 0 0 0-.506.505v5.05c0 .28.226.506.505.506h5.05a.505.505 0 0 0 .506-.505v-5.05a.505.505 0 0 0-.505-.506M7.07 0a2.02 2.02 0 0 1 2.02 2.02v5.05a2.02 2.02 0 0 1-2.02 2.02H2.02A2.02 2.02 0 0 1 0 7.07V2.02A2.02 2.02 0 0 1 2.02 0zm10.91 0A2.02 2.02 0 0 1 20 2.02v5.05a2.02 2.02 0 0 1-2.02 2.02h-5.05a2.02 2.02 0 0 1-2.02-2.02V2.02A2.02 2.02 0 0 1 12.93 0zm0 1.515h-5.05a.505.505 0 0 0-.506.505v5.05c0 .28.226.506.505.506h5.05a.505.505 0 0 0 .506-.505V2.02a.505.505 0 0 0-.505-.506"></svg:path>`,
+})
+export class UiwAppstoreOIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -3616,23 +3633,6 @@ export class UiwZoomInIcon {
   template: `<svg:path fill="currentColor" d="M8.195 0c4.527 0 8.196 3.62 8.196 8.084a8 8 0 0 1-1.977 5.267l5.388 5.473a.686.686 0 0 1-.015.98a.71.71 0 0 1-.993-.014l-5.383-5.47a8.23 8.23 0 0 1-5.216 1.849C3.67 16.169 0 12.549 0 8.084C0 3.62 3.67 0 8.195 0m0 1.386c-3.75 0-6.79 2.999-6.79 6.698s3.04 6.699 6.79 6.699s6.791-3 6.791-6.699c0-3.7-3.04-6.698-6.79-6.698m3.78 5.868c.387 0 .702.31.702.693a.7.7 0 0 1-.703.693H4.636a.7.7 0 0 1-.702-.693c0-.383.314-.693.702-.693z"></svg:path>`,
 })
 export class UiwZoomOutIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[uiwAlipayIcon],svg[uiw-alipay-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20 13.692V3.846A3.845 3.845 0 0 0 16.154 0H3.846A3.845 3.845 0 0 0 0 3.846v12.308A3.845 3.845 0 0 0 3.846 20h12.308a3.85 3.85 0 0 0 3.787-3.167c-1.02-.439-5.44-2.347-7.742-3.45c-1.755 2.122-3.589 3.396-6.356 3.396s-4.613-1.703-4.388-3.79c.145-1.368 1.084-3.605 5.161-3.22c2.148.201 3.132.604 4.886 1.182c.45-.83.83-1.745 1.114-2.72H4.847v-.77H8.69V6.077H4V5.23h4.69V3.236s.045-.315.389-.315H11V5.23h5.002v.847H11v1.384h4.078a15.7 15.7 0 0 1-1.654 4.154c1.182.43 6.575 2.077 6.575 2.077M5.538 15.46c-2.925 0-3.384-1.846-3.23-2.617s1.002-1.768 2.625-1.768c1.87 0 3.541.477 5.547 1.454c-1.407 1.837-3.144 2.93-4.942 2.93"></svg:path>`,
-})
-export class UiwAlipayIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

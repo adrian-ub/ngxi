@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[mynauiLetterYHexagonIcon],svg[mynaui-letter-y-hexagon-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m9 8.25l3 4m3-4l-3 4m0 0v4m8.5-.45V8.2a1.91 1.91 0 0 0-.944-1.645l-6.612-3.8a1.88 1.88 0 0 0-1.888 0l-6.612 3.8A1.9 1.9 0 0 0 3.5 8.2v7.602a1.91 1.91 0 0 0 .944 1.644l6.612 3.8a1.88 1.88 0 0 0 1.888 0l6.612-3.8A1.9 1.9 0 0 0 20.5 15.8"></svg:path>`,
-})
-export class MynauiLetterYHexagonIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mynauiLetterYHexagonSolidIcon],svg[mynaui-letter-y-hexagon-solid-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MynauiSevenDiamondSolidIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M10.75 16c0-3 4-8 4-8s-3 .5-5 0"></svg:path><svg:path d="M20.5 15.8V8.2a1.91 1.91 0 0 0-.944-1.645l-6.612-3.8a1.88 1.88 0 0 0-1.888 0l-6.612 3.8A1.9 1.9 0 0 0 3.5 8.2v7.602a1.91 1.91 0 0 0 .944 1.644l6.612 3.8a1.88 1.88 0 0 0 1.888 0l6.612-3.8A1.9 1.9 0 0 0 20.5 15.8"></svg:path></svg:g>`,
 })
 export class MynauiSevenHexagonIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiSevenHexagonSolidIcon],svg[mynaui-seven-hexagon-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.68 2.105a2.63 2.63 0 0 1 2.64 0l.001.001l6.611 3.8A2.65 2.65 0 0 1 21.25 8.2v7.603a2.66 2.66 0 0 1-1.318 2.291l-.003.002l-6.608 3.799h-.002a2.63 2.63 0 0 1-2.639 0h-.001l-6.608-3.8h-.003A2.64 2.64 0 0 1 2.75 15.8V8.198a2.66 2.66 0 0 1 1.318-2.291l.003-.002zm-.748 5.167a.75.75 0 0 0-.364 1.456c1.116.279 2.46.272 3.479.208l.084-.005c-.311.445-.665.975-1.02 1.55c-.511.832-1.032 1.774-1.427 2.712c-.39.926-.684 1.91-.684 2.807a.75.75 0 1 0 1.5 0c0-.603.206-1.37.566-2.225c.355-.843.834-1.713 1.323-2.507a32 32 0 0 1 1.906-2.748l.031-.04l.008-.01l.002-.002a.75.75 0 0 0-.71-1.208l-.005.001l-.022.004l-.091.014q-.123.018-.351.047c-.3.038-.723.083-1.204.113c-.981.061-2.137.054-3.021-.167"></svg:path>`,
+})
+export class MynauiSevenHexagonSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

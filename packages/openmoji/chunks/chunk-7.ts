@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[openmojiTicketIcon],svg[openmoji-ticket-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#FCEA2B" d="M48.713 23.515c-3.428-3.552-4.029-8.784-1.869-12.933l-3.6-3.732L6.886 41.936l3.801 3.94c4.073-1.574 8.868-.671 12.09 2.667s3.953 8.164 2.236 12.178l3.802 3.939l36.357-35.086l-3.6-3.732c-4.225 2.011-9.431 1.225-12.86-2.327"></svg:path><svg:path fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M48.155 23.505c-3.428-3.552-4.029-8.784-1.869-12.933l-3.6-3.732L6.328 41.926l3.801 3.94c4.072-1.574 8.868-.671 12.09 2.667s3.953 8.164 2.236 12.178l3.801 3.939l36.358-35.086l-3.6-3.732c-4.225 2.011-9.431 1.225-12.86-2.327z"></svg:path><svg:circle cx="37.122" cy="22.122" r="2" transform="rotate(-44.781 37.124 22.123)"></svg:circle><svg:circle cx="43.612" cy="28.661" r="2" transform="rotate(-44.781 43.614 28.661)"></svg:circle><svg:circle cx="50.101" cy="35.199" r="2" transform="rotate(-44.781 50.104 35.2)"></svg:circle>`,
-})
-export class OpenmojiTicketIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[openmojiTigerIcon],svg[openmoji-tiger-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class OpenmojiWomanPlayingHandballMediumLightSkinToneIcon {
   template: `<svg:g fill="#c19a65"><svg:circle cx="35.795" cy="12.733" r="2.86"></svg:circle><svg:path d="m35.51 19.215l-13.92 1.049l-7.244-.953s-1.335.667.476 1.906a15.9 15.9 0 0 0 7.054 2.383c3.337 0 6.594-.772 7.354.963a14.3 14.3 0 0 0 1.058 3.185l.842 1.354l-.715 5.309l-2.317 5.186l-11.369 5.452l.381 2.86l12.726-2.953l3.861-4.006l-.116 1.46l-.268 3.136a13.3 13.3 0 0 1-2.098 6.106l-3.458 5.315l2.544 1.796l6.99-8.287a3.6 3.6 0 0 0 .76-1.522l1.808-7.88a4 4 0 0 0 .084-.53l.61-6.893s.641-5.615 1.335-10.353c.838-1.924 4.583-.079 7.824.874c1.812.477 4.29 1.526 7.15 2.098c2.098.476 2.67-1.812 2.67-1.812l-17.446-6.1Z"></svg:path></svg:g><svg:circle cx="11.963" cy="20.359" r="2.86" fill="#ea5a47"></svg:circle><svg:g fill="none" stroke="#000" stroke-width="2"><svg:circle cx="11.963" cy="20.358" r="2.86" stroke-miterlimit="10"></svg:circle><svg:circle cx="35.795" cy="12.733" r="3" stroke-miterlimit="10"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M35.89 37.423a91 91 0 0 1-5.922 6.864a3 3 0 0 1-1.263.696l-9.783 2.64a1.7 1.7 0 0 1-2.097-1.144a2.28 2.28 0 0 1 1.525-2.097s5.589-2.552 8.552-4.41a5.9 5.9 0 0 0 2.221-2.541a25 25 0 0 0 2.14-6.264c.283-2.277-1.075-6.735-1.075-6.735"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M33.478 40.913s.074 1.687.05 3.522a11.9 11.9 0 0 1-2.06 6.538l-3.3 4.848a1.78 1.78 0 0 0 .382 2.478a2.37 2.37 0 0 0 2.765-.476s3.795-4.72 5.648-7.3a7.9 7.9 0 0 0 1.28-2.827l1.094-4.719a20.6 20.6 0 0 0 .465-4.204c.067-1.515.145-3.468.141-4.777c0-.601.43-6.921.43-7.146m-27.552-9.446l6.96 3.05a6.37 6.37 0 0 0 3.526.19l2.098-.667a23.4 23.4 0 0 1 3.717-.762l10.486-.667a12.5 12.5 0 0 1 3.718.476l15.348 5.052M31.949 11.075s-.547-.366-.946-.128c-.469.279-.951 1.52-1.53 2a3.36 3.36 0 0 1-2.017.805"></svg:path></svg:g>`,
 })
 export class OpenmojiWomanPlayingHandballMediumSkinToneIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiWomanPlayingWaterPoloIcon],svg[openmoji-woman-playing-water-polo-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#fcea2b"><svg:path d="M45.185 42.897s-3.527-7.435-4.29-9.914l-1.716 8.961l-4.862-1.049l-4.861.286l-1.812-10.485l-.953-.859c-.572-1.525-5.815-1.81-8.103-3.717c-1.62-1.43-3.05-6.483-3.622-8.77l1.24-1.526l3.717 6.864l8.389 3.05l11.153 1.335l2.765 2.002l5.338 11.63l.763 2.955Z"></svg:path><svg:circle cx="33.364" cy="19.161" r="2.86"></svg:circle></svg:g><svg:path fill="#92d3f5" d="M64.822 41.277c0-1.811-11.344 2.86-16.11 2.86s-9.532-2.86-15.252-2.86s-9.533 2.86-15.252 2.86S3.813 39.466 3.813 41.18c0 5.053-.286 7.15 1.62 10.677s9.533 3.527 12.488 6.578c2.288 2.383 6.769 1.715 9.724 1.715c2.097 0 4.385.096 8.58.096c3.622 0 10.009-1.24 12.678-1.24c2.193 0 5.53-3.24 6.196-4.575c1.907-3.813 6.292-.953 7.817-3.909c2.097-3.813 1.906-4.003 1.906-9.246"></svg:path><svg:circle cx="14.299" cy="14.395" r="2.86" fill="#ea5a47"></svg:circle><svg:g fill="none" stroke="#000" stroke-width="2"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M4.767 40.99c2.86 0 8.579 2.86 14.299 2.86s9.532-2.86 15.252-2.86s10.486 2.86 15.252 2.86s6.673-2.86 14.3-2.86m-20.02 7.627a20 20 0 0 0 5.72.953c2.574 0 4.386-.858 6.673-1.62m-44.041.572a26.5 26.5 0 0 0 6.864 1.048c5.72 0 9.532-2.86 15.252-2.86m-9.533 8.58c3.05-.858 5.91-2.002 9.533-2.002c4.194 0 7.912 1.525 11.44 2.383"></svg:path><svg:circle cx="14.299" cy="14.395" r="2.86" stroke-miterlimit="10"></svg:circle><svg:circle cx="33.364" cy="19.161" r="3" stroke-miterlimit="10"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M28.598 40.99v-6.672a11.7 11.7 0 0 0-.477-3.336c-.286-.763-.476-1.43-.476-1.43m12.392 3.813l-.953 7.626M17.063 15.253l2.384 6.768a4.2 4.2 0 0 0 2.478 2.288l3.908.953a16.7 16.7 0 0 0 3.718.572l8.58.667a6.03 6.03 0 0 1 3.24 1.525l.192.191a11 11 0 0 1 2.001 3.146l.763 2.097c.381.953.953 2.574 1.335 3.527l2.764 6.387M37.395 18.436s.636-.168.936.186c.353.417.406 1.748.796 2.39a3.36 3.36 0 0 0 1.646 1.417"></svg:path></svg:g>`,
+})
+export class OpenmojiWomanPlayingWaterPoloIcon {
   readonly viewBox = input("0 0 72 72")
   readonly width = input("1em")
   readonly height = input("1em")

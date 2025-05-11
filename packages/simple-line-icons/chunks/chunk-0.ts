@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[simpleLineIconsAnchorIcon],svg[simple-line-icons-anchor-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1021.02 731.408L938.734 580.11c-.128-.208-.096-.4-.224-.593l-5.872-10.143c-3.28-5.617-8.432-9.233-14.192-10.593c-5.696-1.408-11.985-.544-17.408 2.975l-9.84 6.336c-.193.113-.305.288-.497.416l-145.6 98.32c-10.88 7.008-14.416 21.68-7.936 32.913l6.544 7.2c6.48 11.184 21.265 11.647 32.161 4.64l87.04-59.184c-20.608 166-154.736 293.392-318.96 308.176v-641.6h128.048c17.664 0 32-14.336 32-32s-14.336-32-32-32h-129.44c-.24-.832-.448-1.664-.768-2.464c57.103-13.28 99.695-64.368 99.695-125.536c0-71.248-57.744-129.008-129.008-129.008c-71.248 0-128.992 57.744-128.992 129.008c0 60.817 42.112 111.664 98.736 125.28c-.336.88-.576 1.808-.848 2.72H351.997c-17.665 0-32 14.336-32 32s14.335 32 32 32H479.98v641.584c-164.176-14.784-298.16-142.128-318.816-308.112l86.944 59.12c10.88 7.008 25.664 6.544 32.144-4.64l6.56-7.2c6.48-11.216 2.944-25.903-7.951-32.911l-145.6-98.32c-.193-.144-.305-.32-.48-.415l-9.857-6.336a22.16 22.16 0 0 0-17.408-2.976c-5.744 1.36-10.912 4.992-14.193 10.592l-5.872 10.16c-.112.193-.096.385-.209.593L2.971 731.408c-6.496 11.168-2.945 25.872 7.952 32.896l9.12 3.424c10.88 6.992 24.256.64 30.752-10.543l47.904-88.975c29.376 204.72 205.104 357.823 413.28 357.823c208.063 0 383.92-153.088 413.36-357.712l47.84 88.864c6.496 11.184 19.888 17.535 30.768 10.543l9.12-3.424c10.896-7.024 14.448-21.728 7.952-32.896zM447.506 126.975c0-35.84 29.153-65.01 64.993-65.01s65.008 29.153 65.008 65.009s-29.152 65.009-65.009 65.009c-35.824-.016-64.992-29.168-64.992-65.008"></svg:path>`,
-})
-export class SimpleLineIconsAnchorIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[simpleLineIconsActionRedoIcon],svg[simple-line-icons-action-redo-icon]',
   host: {
     role: 'img',
@@ -36,6 +19,23 @@ export class SimpleLineIconsActionRedoIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[simpleLineIconsAnchorIcon],svg[simple-line-icons-anchor-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1021.02 731.408L938.734 580.11c-.128-.208-.096-.4-.224-.593l-5.872-10.143c-3.28-5.617-8.432-9.233-14.192-10.593c-5.696-1.408-11.985-.544-17.408 2.975l-9.84 6.336c-.193.113-.305.288-.497.416l-145.6 98.32c-10.88 7.008-14.416 21.68-7.936 32.913l6.544 7.2c6.48 11.184 21.265 11.647 32.161 4.64l87.04-59.184c-20.608 166-154.736 293.392-318.96 308.176v-641.6h128.048c17.664 0 32-14.336 32-32s-14.336-32-32-32h-129.44c-.24-.832-.448-1.664-.768-2.464c57.103-13.28 99.695-64.368 99.695-125.536c0-71.248-57.744-129.008-129.008-129.008c-71.248 0-128.992 57.744-128.992 129.008c0 60.817 42.112 111.664 98.736 125.28c-.336.88-.576 1.808-.848 2.72H351.997c-17.665 0-32 14.336-32 32s14.335 32 32 32H479.98v641.584c-164.176-14.784-298.16-142.128-318.816-308.112l86.944 59.12c10.88 7.008 25.664 6.544 32.144-4.64l6.56-7.2c6.48-11.216 2.944-25.903-7.951-32.911l-145.6-98.32c-.193-.144-.305-.32-.48-.415l-9.857-6.336a22.16 22.16 0 0 0-17.408-2.976c-5.744 1.36-10.912 4.992-14.193 10.592l-5.872 10.16c-.112.193-.096.385-.209.593L2.971 731.408c-6.496 11.168-2.945 25.872 7.952 32.896l9.12 3.424c10.88 6.992 24.256.64 30.752-10.543l47.904-88.975c29.376 204.72 205.104 357.823 413.28 357.823c208.063 0 383.92-153.088 413.36-357.712l47.84 88.864c6.496 11.184 19.888 17.535 30.768 10.543l9.12-3.424c10.896-7.024 14.448-21.728 7.952-32.896zM447.506 126.975c0-35.84 29.153-65.01 64.993-65.01s65.008 29.153 65.008 65.009s-29.152 65.009-65.009 65.009c-35.824-.016-64.992-29.168-64.992-65.008"></svg:path>`,
+})
+export class SimpleLineIconsAnchorIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[simpleLineIconsArrowDownCircleIcon],svg[simple-line-icons-arrow-down-circle-icon]',
   host: {
     role: 'img',
@@ -46,6 +46,91 @@ export class SimpleLineIconsActionRedoIcon {
   template: `<svg:path fill="currentColor" d="M0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0C229.232 0 0 229.232 0 512m961.008 0c0 247.024-201.969 448-449.009 448s-448-200.976-448-448s200.976-448 448-448s449.009 200.976 449.009 448M479.663 287.68v360.448l-115.76-115.76c-12.496-12.496-32.752-12.496-45.248 0s-12.496 32.752 0 45.248l194.016 189.008l194-189.008c6.256-6.256 9.376-14.432 9.376-22.624s-3.12-16.368-9.376-22.624c-12.496-12.496-32.752-12.496-45.248 0l-117.744 117.76V287.68c0-17.68-14.336-32-32-32s-32.016 14.32-32.016 32"></svg:path>`,
 })
 export class SimpleLineIconsArrowDownCircleIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleLineIconsActionUndoIcon],svg[simple-line-icons-action-undo-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M990.064 942.336c-.336 0-.72 0-1.088-.031c-16.192-.529-26.4-13.088-27.776-29.216c-1.088-11.872-33.968-299.088-482.256-298.784v183.664c0 12.368-7.12 23.664-18.336 28.944c-11.088 5.312-24.432 3.68-33.968-4.224L11.664 478.913a31.86 31.86 0 0 1-11.68-24.784c.032-9.6 4.335-18.687 11.776-24.752l414.96-340.56c9.568-7.807 22.784-9.311 33.936-4.095c11.153 5.311 18.288 16.56 18.288 28.91v179.633c185.968 5.904 330.992 65.712 424.336 174.976c151.936 177.776 118.031 436.16 116.432 446.912c-2.368 15.664-13.872 27.183-29.648 27.183m-543.12-392.527l.063-.001C767.23 550 889.599 658.128 959.47 753.617c-10.224-76.496-40.064-168.72-105.008-244.031c-86.336-100.096-225.44-152.848-407.535-152.848c-17.68 0-32-14.32-32-32V180.962L82.496 454.322l332.432 275.904v-148.4a31.95 31.95 0 0 1 9.408-22.656a32.02 32.02 0 0 1 22.608-9.36z"></svg:path>`,
+})
+export class SimpleLineIconsActionUndoIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleLineIconsArrowDownIcon],svg[simple-line-icons-arrow-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.2 275.4c0-8.6 3.4-17.401 10-24.001c13.2-13.2 34.8-13.2 48 0l451.8 451.8l445.2-445.2c13.2-13.2 34.8-13.2 48 0s13.2 34.8 0 48L542 775.399c-13.2 13.2-34.8 13.2-48 0l-475.8-475.8c-6.8-6.8-10-15.4-10-24.199"></svg:path>`,
+})
+export class SimpleLineIconsArrowDownIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleLineIconsArrowLeftCircleIcon],svg[simple-line-icons-arrow-left-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M512 0C229.216 0 0 229.232 0 512c0 282.784 229.216 512 512 512c282.768 0 512-229.216 512-512C1024 229.232 794.768 0 512 0m0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01m224.32-481.344H375.856l115.76-115.76c12.496-12.496 12.496-32.752 0-45.248s-32.752-12.496-45.248 0l-189.008 194l189.008 194c6.256 6.256 14.432 9.376 22.624 9.376s16.368-3.12 22.624-9.376c12.496-12.496 12.496-32.752 0-45.248l-117.76-117.744H736.32c17.68 0 32-14.336 32-32s-14.32-32-32-32"></svg:path>`,
+})
+export class SimpleLineIconsArrowLeftCircleIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleLineIconsArrowLeftIcon],svg[simple-line-icons-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M752.145 0c8.685 0 17.572 3.434 24.237 10.099c13.33 13.33 13.33 35.143 0 48.473L320.126 515.03l449.591 449.591c13.33 13.33 13.33 35.144 0 48.474s-35.142 13.33-48.472 0L247.418 539.268c-13.33-13.33-13.33-35.144 0-48.474L727.91 10.1C734.575 3.435 743.46.002 752.146.002z"></svg:path>`,
+})
+export class SimpleLineIconsArrowLeftIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleLineIconsArrowRightIcon],svg[simple-line-icons-arrow-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475s35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z"></svg:path>`,
+})
+export class SimpleLineIconsArrowRightIcon {
   readonly viewBox = input("0 0 1024 1024")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -3198,40 +3283,6 @@ export class SimpleLineIconsWrenchIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[simpleLineIconsArrowRightIcon],svg[simple-line-icons-arrow-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475s35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z"></svg:path>`,
-})
-export class SimpleLineIconsArrowRightIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[simpleLineIconsArrowLeftCircleIcon],svg[simple-line-icons-arrow-left-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M512 0C229.216 0 0 229.232 0 512c0 282.784 229.216 512 512 512c282.768 0 512-229.216 512-512C1024 229.232 794.768 0 512 0m0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01m224.32-481.344H375.856l115.76-115.76c12.496-12.496 12.496-32.752 0-45.248s-32.752-12.496-45.248 0l-189.008 194l189.008 194c6.256 6.256 14.432 9.376 22.624 9.376s16.368-3.12 22.624-9.376c12.496-12.496 12.496-32.752 0-45.248l-117.76-117.744H736.32c17.68 0 32-14.336 32-32s-14.32-32-32-32"></svg:path>`,
-})
-export class SimpleLineIconsArrowLeftCircleIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[simpleLineIconsArrowRightCircleIcon],svg[simple-line-icons-arrow-right-circle-icon]',
   host: {
     role: 'img',
@@ -3242,57 +3293,6 @@ export class SimpleLineIconsArrowLeftCircleIcon {
   template: `<svg:path fill="currentColor" d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0m0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01m20.368-642.368c-12.496 12.496-12.496 32.752 0 45.248l115.76 115.76H287.68c-17.68 0-32 14.336-32 32s14.32 32 32 32h362.464l-117.76 117.744c-12.496 12.496-12.496 32.752 0 45.248c6.256 6.256 14.432 9.376 22.624 9.376s16.368-3.12 22.624-9.376l189.008-194l-189.008-194c-12.512-12.496-32.752-12.496-45.264 0"></svg:path>`,
 })
 export class SimpleLineIconsArrowRightCircleIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[simpleLineIconsArrowLeftIcon],svg[simple-line-icons-arrow-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M752.145 0c8.685 0 17.572 3.434 24.237 10.099c13.33 13.33 13.33 35.143 0 48.473L320.126 515.03l449.591 449.591c13.33 13.33 13.33 35.144 0 48.474s-35.142 13.33-48.472 0L247.418 539.268c-13.33-13.33-13.33-35.144 0-48.474L727.91 10.1C734.575 3.435 743.46.002 752.146.002z"></svg:path>`,
-})
-export class SimpleLineIconsArrowLeftIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[simpleLineIconsActionUndoIcon],svg[simple-line-icons-action-undo-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M990.064 942.336c-.336 0-.72 0-1.088-.031c-16.192-.529-26.4-13.088-27.776-29.216c-1.088-11.872-33.968-299.088-482.256-298.784v183.664c0 12.368-7.12 23.664-18.336 28.944c-11.088 5.312-24.432 3.68-33.968-4.224L11.664 478.913a31.86 31.86 0 0 1-11.68-24.784c.032-9.6 4.335-18.687 11.776-24.752l414.96-340.56c9.568-7.807 22.784-9.311 33.936-4.095c11.153 5.311 18.288 16.56 18.288 28.91v179.633c185.968 5.904 330.992 65.712 424.336 174.976c151.936 177.776 118.031 436.16 116.432 446.912c-2.368 15.664-13.872 27.183-29.648 27.183m-543.12-392.527l.063-.001C767.23 550 889.599 658.128 959.47 753.617c-10.224-76.496-40.064-168.72-105.008-244.031c-86.336-100.096-225.44-152.848-407.535-152.848c-17.68 0-32-14.32-32-32V180.962L82.496 454.322l332.432 275.904v-148.4a31.95 31.95 0 0 1 9.408-22.656a32.02 32.02 0 0 1 22.608-9.36z"></svg:path>`,
-})
-export class SimpleLineIconsActionUndoIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[simpleLineIconsArrowDownIcon],svg[simple-line-icons-arrow-down-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.2 275.4c0-8.6 3.4-17.401 10-24.001c13.2-13.2 34.8-13.2 48 0l451.8 451.8l445.2-445.2c13.2-13.2 34.8-13.2 48 0s13.2 34.8 0 48L542 775.399c-13.2 13.2-34.8 13.2-48 0l-475.8-475.8c-6.8-6.8-10-15.4-10-24.199"></svg:path>`,
-})
-export class SimpleLineIconsArrowDownIcon {
   readonly viewBox = input("0 0 1024 1024")
   readonly width = input("1em")
   readonly height = input("1em")

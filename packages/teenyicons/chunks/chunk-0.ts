@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[teenyicons360OutlineIcon],svg[teenyicons-360-outline-icon]',
+  selector: 'svg[teenyicons360SolidIcon],svg[teenyicons-360-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m4.5 5.5l.4.3a.5.5 0 0 0-.4-.8zM3 7.5l-.4-.3A.5.5 0 0 0 3 8zm9.736-4.646l.382.323zM2 6h2.5V5H2zm2.1-.8l-1.5 2l.8.6l1.5-2zM3 8h.5V7H3zm.5 1H2v1h1.5zm.5-.5a.5.5 0 0 1-.5.5v1A1.5 1.5 0 0 0 5 8.5zM3.5 8a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 3.5 7zM8 5h-.5v1H8zM6 6.5v1h1v-1zm0 1v1h1v-1zM7.5 7h-1v1h1zM9 8.5A1.5 1.5 0 0 0 7.5 7v1a.5.5 0 0 1 .5.5zM7.5 10A1.5 1.5 0 0 0 9 8.5H8a.5.5 0 0 1-.5.5zm0-1a.5.5 0 0 1-.5-.5H6A1.5 1.5 0 0 0 7.5 10zm0-4A1.5 1.5 0 0 0 6 6.5h1a.5.5 0 0 1 .5-.5zM12 6.5v2h1v-2zm-1 2v-2h-1v2zm.5.5a.5.5 0 0 1-.5-.5h-1a1.5 1.5 0 0 0 1.5 1.5zm.5-.5a.5.5 0 0 1-.5.5v1A1.5 1.5 0 0 0 13 8.5zM11.5 6a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 11.5 5zm0-1A1.5 1.5 0 0 0 10 6.5h1a.5.5 0 0 1 .5-.5zm-4 9A6.5 6.5 0 0 1 1 7.5H0A7.5 7.5 0 0 0 7.5 15zM14 7.5A6.5 6.5 0 0 1 7.5 14v1A7.5 7.5 0 0 0 15 7.5zM7.5 0A7.5 7.5 0 0 0 0 7.5h1A6.5 6.5 0 0 1 7.5 1zm6 3a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 13.5 2zm0 1a.5.5 0 0 1-.5-.5h-1A1.5 1.5 0 0 0 13.5 5zm-.5-.5c0-.123.044-.235.118-.323l-.763-.646c-.221.261-.355.6-.355.969zm.118-.323A.5.5 0 0 1 13.5 3V2c-.46 0-.871.207-1.145.531zM7.5 1c1.934 0 3.671.844 4.862 2.186l.748-.664A7.48 7.48 0 0 0 7.5 0zm5.854 3.67c.414.856.646 1.815.646 2.83h1c0-1.17-.268-2.277-.746-3.265zM14 3.5a.5.5 0 0 1-.348.477l.304.952A1.5 1.5 0 0 0 15 3.5zm-.348.477A.5.5 0 0 1 13.5 4v1a1.5 1.5 0 0 0 .456-.07z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M7 8.5V8h.5a.5.5 0 1 1-.5.5M11.5 6a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M0 7.5a7.5 7.5 0 0 1 12.787-5.32a1.5 1.5 0 0 1 1.659 2.484A7.5 7.5 0 0 1 15 7.5a7.5 7.5 0 0 1-15 0M13.5 3a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1M2 6h1.5l-.9 1.2A.5.5 0 0 0 3 8h.5a.5.5 0 0 1 0 1H2v1h1.5a1.5 1.5 0 0 0 .449-2.932L4.9 5.8a.5.5 0 0 0-.4-.8H2zm5.5-1A1.5 1.5 0 0 0 6 6.5v2A1.5 1.5 0 1 0 7.5 7H7v-.5a.5.5 0 0 1 .5-.5H8V5zM10 6.5a1.5 1.5 0 0 1 3 0v2a1.5 1.5 0 0 1-3 0z" clip-rule="evenodd"></svg:path>`,
 })
-export class Teenyicons360OutlineIcon {
+export class Teenyicons360SolidIcon {
   readonly viewBox = input("0 0 15 15")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,6 +53,23 @@ export class TeenyiconsAbTestingOutlineIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[teenyiconsAddSmallOutlineIcon],svg[teenyicons-add-small-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M7.5 4v7M4 7.5h7"></svg:path>`,
+})
+export class TeenyiconsAddSmallOutlineIcon {
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[teenyiconsAddSmallSolidIcon],svg[teenyicons-add-small-solid-icon]',
   host: {
     role: 'img',
@@ -70,16 +87,50 @@ export class TeenyiconsAddSmallSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[teenyiconsAddOutlineIcon],svg[teenyicons-add-outline-icon]',
+  selector: 'svg[teenyiconsAddSolidIcon],svg[teenyicons-add-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" d="M7.5 1v13M1 7.5h13"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7 7V1h1v6h6v1H8v6H7V8H1V7z" clip-rule="evenodd"></svg:path>`,
 })
-export class TeenyiconsAddOutlineIcon {
+export class TeenyiconsAddSolidIcon {
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[teenyiconsAddressBookOutlineIcon],svg[teenyicons-address-book-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.5 11.5H5v.5h.5zm5 0v.5h.5v-.5zm-4.5 0V11H5v.5zm4-.5v.5h1V11zm.5 0h-5v1h5zM8 9a2 2 0 0 1 2 2h1a3 3 0 0 0-3-3zm-2 2a2 2 0 0 1 2-2V8a3 3 0 0 0-3 3zm2-8a2 2 0 0 0-2 2h1a1 1 0 0 1 1-1zm2 2a2 2 0 0 0-2-2v1a1 1 0 0 1 1 1zM8 7a2 2 0 0 0 2-2H9a1 1 0 0 1-1 1zm0-1a1 1 0 0 1-1-1H6a2 2 0 0 0 2 2zM3.5 1h9V0h-9zm9.5.5v12h1v-12zM12.5 14h-9v1h9zM3 13.5v-12H2v12zm.5.5a.5.5 0 0 1-.5-.5H2A1.5 1.5 0 0 0 3.5 15zm9.5-.5a.5.5 0 0 1-.5.5v1a1.5 1.5 0 0 0 1.5-1.5zM12.5 1a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 12.5 0zm-9-1A1.5 1.5 0 0 0 2 1.5h1a.5.5 0 0 1 .5-.5zM4 4H1v1h3zm0 6H1v1h3z"></svg:path>`,
+})
+export class TeenyiconsAddressBookOutlineIcon {
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[teenyicons360OutlineIcon],svg[teenyicons-360-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m4.5 5.5l.4.3a.5.5 0 0 0-.4-.8zM3 7.5l-.4-.3A.5.5 0 0 0 3 8zm9.736-4.646l.382.323zM2 6h2.5V5H2zm2.1-.8l-1.5 2l.8.6l1.5-2zM3 8h.5V7H3zm.5 1H2v1h1.5zm.5-.5a.5.5 0 0 1-.5.5v1A1.5 1.5 0 0 0 5 8.5zM3.5 8a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 3.5 7zM8 5h-.5v1H8zM6 6.5v1h1v-1zm0 1v1h1v-1zM7.5 7h-1v1h1zM9 8.5A1.5 1.5 0 0 0 7.5 7v1a.5.5 0 0 1 .5.5zM7.5 10A1.5 1.5 0 0 0 9 8.5H8a.5.5 0 0 1-.5.5zm0-1a.5.5 0 0 1-.5-.5H6A1.5 1.5 0 0 0 7.5 10zm0-4A1.5 1.5 0 0 0 6 6.5h1a.5.5 0 0 1 .5-.5zM12 6.5v2h1v-2zm-1 2v-2h-1v2zm.5.5a.5.5 0 0 1-.5-.5h-1a1.5 1.5 0 0 0 1.5 1.5zm.5-.5a.5.5 0 0 1-.5.5v1A1.5 1.5 0 0 0 13 8.5zM11.5 6a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 11.5 5zm0-1A1.5 1.5 0 0 0 10 6.5h1a.5.5 0 0 1 .5-.5zm-4 9A6.5 6.5 0 0 1 1 7.5H0A7.5 7.5 0 0 0 7.5 15zM14 7.5A6.5 6.5 0 0 1 7.5 14v1A7.5 7.5 0 0 0 15 7.5zM7.5 0A7.5 7.5 0 0 0 0 7.5h1A6.5 6.5 0 0 1 7.5 1zm6 3a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 13.5 2zm0 1a.5.5 0 0 1-.5-.5h-1A1.5 1.5 0 0 0 13.5 5zm-.5-.5c0-.123.044-.235.118-.323l-.763-.646c-.221.261-.355.6-.355.969zm.118-.323A.5.5 0 0 1 13.5 3V2c-.46 0-.871.207-1.145.531zM7.5 1c1.934 0 3.671.844 4.862 2.186l.748-.664A7.48 7.48 0 0 0 7.5 0zm5.854 3.67c.414.856.646 1.815.646 2.83h1c0-1.17-.268-2.277-.746-3.265zM14 3.5a.5.5 0 0 1-.348.477l.304.952A1.5 1.5 0 0 0 15 3.5zm-.348.477A.5.5 0 0 1 13.5 4v1a1.5 1.5 0 0 0 .456-.07z"></svg:path>`,
+})
+export class Teenyicons360OutlineIcon {
   readonly viewBox = input("0 0 15 15")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8444,57 +8495,6 @@ export class TeenyiconsGarageSolidIcon {
   template: `<svg:path fill="none" stroke="currentColor" d="M11.07 4a5.002 5.002 0 0 0-8.342 2L9 12.271A5 5 0 0 0 12.475 8H9m-6.5.5l4 4m1 2a7 7 0 1 1 0-14a7 7 0 0 1 0 14Z"></svg:path>`,
 })
 export class TeenyiconsGatsbyjsOutlineIcon {
-  readonly viewBox = input("0 0 15 15")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[teenyiconsGatsbyjsSolidIcon],svg[teenyicons-gatsbyjs-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M0 7.5a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0m3.305-1.631a4.502 4.502 0 0 1 7.409-1.519l.714-.7a5.502 5.502 0 0 0-9.176 2.2l-.09.29l6.699 6.699l.289-.09a5.5 5.5 0 0 0 3.823-4.7l.054-.549H9v1h2.889a4.51 4.51 0 0 1-2.758 3.195zm2.841 6.985l-4-4l.708-.708l4 4z" clip-rule="evenodd"></svg:path>`,
-})
-export class TeenyiconsGatsbyjsSolidIcon {
-  readonly viewBox = input("0 0 15 15")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[teenyiconsGbaOutlineIcon],svg[teenyicons-gba-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" d="M2 6.5h3m7 0h1m-2 2h1M3.5 5v3m1.606-5.5h4.788a2 2 0 0 1 1.11.336L12 3.5h.138a2 2 0 0 1 1.995 1.858l.32 4.475a1 1 0 0 1-.55.966l-2.091 1.045a3.2 3.2 0 0 1-.65.24a15.1 15.1 0 0 1-7.324 0a3.2 3.2 0 0 1-.65-.24l-2.09-1.045a1 1 0 0 1-.55-.966l.32-4.475A2 2 0 0 1 2.861 3.5H3l.996-.664a2 2 0 0 1 1.11-.336Z"></svg:path>`,
-})
-export class TeenyiconsGbaOutlineIcon {
-  readonly viewBox = input("0 0 15 15")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[teenyiconsGbaSolidIcon],svg[teenyicons-gba-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M3.719 2.42A2.5 2.5 0 0 1 5.106 2h4.789a2.5 2.5 0 0 1 1.386.42l.87.58a2.5 2.5 0 0 1 2.48 2.322l.32 4.476a1.5 1.5 0 0 1-.825 1.448l-2.09 1.045a3.7 3.7 0 0 1-.753.279a15.6 15.6 0 0 1-7.566 0a3.7 3.7 0 0 1-.753-.279l-2.09-1.045A1.5 1.5 0 0 1 .05 9.798l.32-4.476A2.5 2.5 0 0 1 2.849 3zM3 8V7H2V6h1V5h1v1h1v1H4v1zm10-1h-1V6h1zm-2 2h1V8h-1z" clip-rule="evenodd"></svg:path>`,
-})
-export class TeenyiconsGbaSolidIcon {
   readonly viewBox = input("0 0 15 15")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,33 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[streamlineAddBellNotificationIcon],svg[streamline-add-bell-notification-icon]',
+  selector: 'svg[streamlineAdd1SolidIcon],svg[streamline-add-1-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M5 13.5h2M5.09 2.1A4 4 0 0 0 2 6v3.5A1.5 1.5 0 0 1 .5 11h11A1.5 1.5 0 0 1 10 9.5V9m.5-8.5v6m-3-3h6"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8 1a1 1 0 0 0-2 0v5H1a1 1 0 0 0 0 2h5v5a1 1 0 1 0 2 0V8h5a1 1 0 1 0 0-2H8z" clip-rule="evenodd"></svg:path>`,
 })
-export class StreamlineAddBellNotificationIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineAddBellNotificationSolidIcon],svg[streamline-add-bell-notification-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11.5.75a.75.75 0 0 0-1.5 0V2.5H8.25a.75.75 0 0 0 0 1.5H10v1.75a.75.75 0 0 0 1.5 0V4h1.75a.75.75 0 0 0 0-1.5H11.5zM6 1.5q.555 0 1.086.123A2 2 0 0 0 8.25 5.25h.5v.5a2 2 0 0 0 1.822 1.992v1.833c0 .234.1.466.289.642c.219.204.391.283.639.283a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1c.248 0 .42-.079.64-.283a.88.88 0 0 0 .288-.642V5.8c0-1.152.49-2.25 1.351-3.053A4.72 4.72 0 0 1 6 1.5M4.25 13.25A.75.75 0 0 1 5 12.5h2A.75.75 0 0 1 7 14H5a.75.75 0 0 1-.75-.75" clip-rule="evenodd"></svg:path>`,
-})
-export class StreamlineAddBellNotificationSolidIcon {
+export class StreamlineAdd1SolidIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,16 +36,16 @@ export class StreamlineAdd1Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[streamlineAddLayer2SolidIcon],svg[streamline-add-layer-2-solid-icon]',
+  selector: 'svg[streamlineAddBellNotificationSolidIcon],svg[streamline-add-bell-notification-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.25 0a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 0 1.5 0v-7.5A2.25 2.25 0 0 0 11.75 0zM9.5 3A1.5 1.5 0 0 1 11 4.5v8A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-8A1.5 1.5 0 0 1 1.5 3zM2.25 8.5A.75.75 0 0 1 3 7.75h1.75V6a.75.75 0 0 1 1.5 0v1.75H8a.75.75 0 0 1 0 1.5H6.25V11a.75.75 0 0 1-1.5 0V9.25H3a.75.75 0 0 1-.75-.75" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11.5.75a.75.75 0 0 0-1.5 0V2.5H8.25a.75.75 0 0 0 0 1.5H10v1.75a.75.75 0 0 0 1.5 0V4h1.75a.75.75 0 0 0 0-1.5H11.5zM6 1.5q.555 0 1.086.123A2 2 0 0 0 8.25 5.25h.5v.5a2 2 0 0 0 1.822 1.992v1.833c0 .234.1.466.289.642c.219.204.391.283.639.283a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1c.248 0 .42-.079.64-.283a.88.88 0 0 0 .288-.642V5.8c0-1.152.49-2.25 1.351-3.053A4.72 4.72 0 0 1 6 1.5M4.25 13.25A.75.75 0 0 1 5 12.5h2A.75.75 0 0 1 7 14H5a.75.75 0 0 1-.75-.75" clip-rule="evenodd"></svg:path>`,
 })
-export class StreamlineAddLayer2SolidIcon {
+export class StreamlineAddBellNotificationSolidIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,16 +70,33 @@ export class StreamlineAddCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[streamlineAddSquareIcon],svg[streamline-add-square-icon]',
+  selector: 'svg[streamlineAddLayer2Icon],svg[streamline-add-layer-2-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M7 4v6M4 7h6m.5-6.5h-7a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h7a3 3 0 0 0 3-3v-7a3 3 0 0 0-3-3"></svg:path>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M9.5 3.5h-8a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1"></svg:path><svg:path d="M3.5.5h9a1 1 0 0 1 1 1v9M5.5 6v5M8 8.5H3"></svg:path></svg:g>`,
 })
-export class StreamlineAddSquareIcon {
+export class StreamlineAddLayer2Icon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineAddBellNotificationIcon],svg[streamline-add-bell-notification-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M5 13.5h2M5.09 2.1A4 4 0 0 0 2 6v3.5A1.5 1.5 0 0 1 .5 11h11A1.5 1.5 0 0 1 10 9.5V9m.5-8.5v6m-3-3h6"></svg:path>`,
+})
+export class StreamlineAddBellNotificationIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -114,23 +114,6 @@ export class StreamlineAddSquareIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M14 7A7 7 0 1 1 0 7a7 7 0 0 1 14 0M7 3.25a.75.75 0 0 1 .75.75v2.25H10a.75.75 0 0 1 0 1.5H7.75V10a.75.75 0 0 1-1.5 0V7.75H4a.75.75 0 0 1 0-1.5h2.25V4A.75.75 0 0 1 7 3.25" clip-rule="evenodd"></svg:path>`,
 })
 export class StreamlineAddCircleSolidIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineAdd1SolidIcon],svg[streamline-add-1-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8 1a1 1 0 0 0-2 0v5H1a1 1 0 0 0 0 2h5v5a1 1 0 1 0 2 0V8h5a1 1 0 1 0 0-2H8z" clip-rule="evenodd"></svg:path>`,
-})
-export class StreamlineAdd1SolidIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8495,6 +8478,23 @@ export class StreamlineCloudDataTransferIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.883.115a4.37 4.37 0 0 0-4.582 2.717a3.693 3.693 0 0 0-1.706 6.7a2 2 0 0 1 .557-1.753l2-2A2 2 0 0 1 7 5.799a2 2 0 0 1 3.434 1.394v2a2 2 0 0 1 1.56.748a3.229 3.229 0 0 0-.308-6.078A4.37 4.37 0 0 0 7.883.115M5.853 6.5a.75.75 0 0 1 .463.693v6a.75.75 0 0 1-1.5 0v-4.19l-.72.72a.75.75 0 1 1-1.06-1.06l2-2a.75.75 0 0 1 .817-.163m3.331.693a.75.75 0 1 0-1.5 0v6a.75.75 0 0 0 1.28.53l2-2a.75.75 0 0 0-1.06-1.06l-.72.72z" clip-rule="evenodd"></svg:path>`,
 })
 export class StreamlineCloudDataTransferSolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineCloudGaming1Icon],svg[streamline-cloud-gaming-1-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M4.579 6.126v2.786M3.186 7.519h2.786M.5 7a4.643 4.643 0 0 0 4.643 4.643h4.643a3.714 3.714 0 1 0-.856-7.33A4.643 4.643 0 0 0 .5 7"></svg:path><svg:path d="M9.131 7.853a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m2.139.25a.125.125 0 1 1 0-.25m0 .25a.125.125 0 0 0 0-.25m-1.045-.797a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m0 2.388a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25"></svg:path></svg:g>`,
+})
+export class StreamlineCloudGaming1Icon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

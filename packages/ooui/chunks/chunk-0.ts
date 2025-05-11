@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[oouiAddIcon],svg[ooui-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 9V4H9v5H4v2h5v5h2v-5h5V9z"></svg:path>`,
+})
+export class OouiAddIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oouiAlignCenterIcon],svg[ooui-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 15h18v2H1zM1 3h18v2H1z"></svg:path><svg:rect width="8" height="6" x="6" y="7" fill="currentColor" rx="1"></svg:rect>`,
+})
+export class OouiAlignCenterIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[oouiAlertIcon],svg[ooui-alert-icon]',
   host: {
     role: 'img',
@@ -36,23 +70,6 @@ export class OouiAlignLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oouiAddIcon],svg[ooui-add-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11 9V4H9v5H4v2h5v5h2v-5h5V9z"></svg:path>`,
-})
-export class OouiAddIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[oouiAlignRightIcon],svg[ooui-align-right-icon]',
   host: {
     role: 'img',
@@ -70,33 +87,16 @@ export class OouiAlignRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oouiAlignCenterIcon],svg[ooui-align-center-icon]',
+  selector: 'svg[oouiAppearanceIcon],svg[ooui-appearance-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1 15h18v2H1zM1 3h18v2H1z"></svg:path><svg:rect width="8" height="6" x="6" y="7" fill="currentColor" rx="1"></svg:rect>`,
+  template: `<svg:path fill="currentColor" d="M1.2 9a4.25 4.25 0 0 1 7.9-.6a2.8 2.8 0 0 1 1.8 0a4.25 4.25 0 0 1 7.9.6a1.01 1.01 0 1 1 .1 2a4.23 4.23 0 0 1-8.4-.6a1 1 0 0 0-1 0a4.23 4.23 0 0 1-8.4.6a1.01 1.01 0 1 1 .1-2m4.05-1a2.25 2.25 0 0 0 0 4.5a2.25 2.25 0 0 0 0-4.5m9.5 0a2.25 2.25 0 0 0 0 4.5a2.25 2.25 0 0 0 0-4.5"></svg:path>`,
 })
-export class OouiAlignCenterIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[oouiArrowDownIcon],svg[ooui-arrow-down-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m2 10l1.42-1.41L9 14.17V2h2v12.17l5.59-5.58L18 10l-8 8z"></svg:path>`,
-})
-export class OouiArrowDownIcon {
+export class OouiAppearanceIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -114,6 +114,23 @@ export class OouiArrowDownIcon {
   template: `<svg:path fill="currentColor" d="M8.6 3.4L14.2 9H2v2h12.2l-5.6 5.6L10 18l8-8l-8-8z"></svg:path>`,
 })
 export class OouiArrowNextLtrIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oouiArrowDownIcon],svg[ooui-arrow-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m2 10l1.42-1.41L9 14.17V2h2v12.17l5.59-5.58L18 10l-8 8z"></svg:path>`,
+})
+export class OouiArrowDownIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -6098,23 +6115,6 @@ export class OouiZoomInIcon {
   template: `<svg:path fill="currentColor" d="M8 15a7 7 0 0 0 4.2-1.4l5.4 5.4l1.4-1.4l-5.4-5.4A7 7 0 1 0 8 15m0-2A5 5 0 1 1 8 3a5 5 0 0 1 0 10M5 7h6v2H5Z"></svg:path>`,
 })
 export class OouiZoomOutIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[oouiAppearanceIcon],svg[ooui-appearance-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1.2 9a4.25 4.25 0 0 1 7.9-.6a2.8 2.8 0 0 1 1.8 0a4.25 4.25 0 0 1 7.9.6a1.01 1.01 0 1 1 .1 2a4.23 4.23 0 0 1-8.4-.6a1 1 0 0 0-1 0a4.23 4.23 0 0 1-8.4.6a1.01 1.01 0 1 1 .1-2m4.05-1a2.25 2.25 0 0 0 0 4.5a2.25 2.25 0 0 0 0-4.5m9.5 0a2.25 2.25 0 0 0 0 4.5a2.25 2.25 0 0 0 0-4.5"></svg:path>`,
-})
-export class OouiAppearanceIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

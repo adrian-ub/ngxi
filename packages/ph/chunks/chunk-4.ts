@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[phChartPolarFillIcon],svg[ph-chart-polar-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M120 199.54v27.74a4 4 0 0 1-4.46 4a104.22 104.22 0 0 1-90.8-90.8a4 4 0 0 1 4-4.46h27.72A72.11 72.11 0 0 0 120 199.54M183.42 136H136v47.42A56.11 56.11 0 0 0 183.42 136M136 72.58V120h47.42A56.11 56.11 0 0 0 136 72.58M227.28 136h-27.74A72.11 72.11 0 0 1 136 199.54v27.74a4 4 0 0 0 4.46 4a104.22 104.22 0 0 0 90.8-90.8a4 4 0 0 0-3.98-4.48m-27.74-16h27.74a4 4 0 0 0 4-4.46a104.22 104.22 0 0 0-90.8-90.8a4 4 0 0 0-4.46 4v27.72A72.11 72.11 0 0 1 199.54 120m-84-95.26a104.22 104.22 0 0 0-90.8 90.8a4 4 0 0 0 4 4.46h27.72A72.11 72.11 0 0 1 120 56.46V28.72a4 4 0 0 0-4.46-3.98M72.58 120H120V72.58A56.11 56.11 0 0 0 72.58 120M120 183.42V136H72.58A56.11 56.11 0 0 0 120 183.42"></svg:path>`,
+})
+export class PhChartPolarFillIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phChartPolarLightIcon],svg[ph-chart-polar-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M128 26a102 102 0 1 0 102 102A102.12 102.12 0 0 0 128 26m89.8 96h-28.1A62.07 62.07 0 0 0 134 66.3V38.2a90.15 90.15 0 0 1 83.8 83.8m-95.8 0H78.37A50.09 50.09 0 0 1 122 78.37Zm0 12v43.63A50.09 50.09 0 0 1 78.37 134Zm12 0h43.63A50.09 50.09 0 0 1 134 177.63Zm0-12V78.37A50.09 50.09 0 0 1 177.63 122Zm-12-83.8v28.1A62.07 62.07 0 0 0 66.3 122H38.2A90.15 90.15 0 0 1 122 38.2M38.2 134h28.1a62.07 62.07 0 0 0 55.7 55.7v28.1A90.15 90.15 0 0 1 38.2 134m95.8 83.8v-28.1a62.07 62.07 0 0 0 55.7-55.7h28.1a90.15 90.15 0 0 1-83.8 83.8"></svg:path>`,
+})
+export class PhChartPolarLightIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phChartPolarThinIcon],svg[ph-chart-polar-thin-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M128 28a100 100 0 1 0 100 100A100.11 100.11 0 0 0 128 28m91.91 96h-32.06A60.07 60.07 0 0 0 132 68.15V36.09A92.13 92.13 0 0 1 219.91 124M124 124H76.17A52.05 52.05 0 0 1 124 76.17Zm0 8v47.83A52.05 52.05 0 0 1 76.17 132Zm8 0h47.83A52.05 52.05 0 0 1 132 179.83Zm0-8V76.17A52.05 52.05 0 0 1 179.83 124Zm-8-87.91v32.06A60.07 60.07 0 0 0 68.15 124H36.09A92.13 92.13 0 0 1 124 36.09M36.09 132h32.06A60.07 60.07 0 0 0 124 187.85v32.06A92.13 92.13 0 0 1 36.09 132M132 219.91v-32.06A60.07 60.07 0 0 0 187.85 132h32.06A92.13 92.13 0 0 1 132 219.91"></svg:path>`,
+})
+export class PhChartPolarThinIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phChartScatterIcon],svg[ph-chart-scatter-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M232 208a8 8 0 0 1-8 8H32a8 8 0 0 1-8-8V48a8 8 0 0 1 16 0v152h184a8 8 0 0 1 8 8m-100-48a12 12 0 1 0-12-12a12 12 0 0 0 12 12m-24-56a12 12 0 1 0-12-12a12 12 0 0 0 12 12m-32 72a12 12 0 1 0-12-12a12 12 0 0 0 12 12m96-48a12 12 0 1 0-12-12a12 12 0 0 0 12 12m24-40a12 12 0 1 0-12-12a12 12 0 0 0 12 12m-20 76a12 12 0 1 0 12-12a12 12 0 0 0-12 12"></svg:path>`,
+})
+export class PhChartScatterIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[phChartScatterBoldIcon],svg[ph-chart-scatter-bold-icon]',
   host: {
     role: 'img',
@@ -8427,74 +8495,6 @@ export class PhCoinVerticalFillIcon {
   template: `<svg:path fill="currentColor" d="M196.78 57.09C185.08 37 169.18 26 152 26h-48c-17.18 0-33.08 11-44.78 31.09C48.12 76.13 42 101.31 42 128s6.12 51.87 17.22 70.91C70.92 219 86.82 230 104 230h48c17.18 0 33.08-11 44.78-31.09c11.1-19 17.22-44.22 17.22-70.91s-6.12-51.87-17.22-70.91m5.1 64.91h-36c-.65-18.84-4.37-36.73-10.74-52H190c7.06 14.74 11.16 32.77 11.88 52M152 38c11.31 0 22.22 7.06 31.14 20h-33.86l-.5-.91A76.8 76.8 0 0 0 133.49 38ZM69.58 192.86C59.54 175.63 54 152.6 54 128s5.54-47.63 15.58-64.86C79 46.93 91.26 38 104 38s25 8.93 34.42 25.14C148.46 80.37 154 103.4 154 128s-5.54 47.63-15.58 64.86C129 209.07 116.74 218 104 218s-25-8.93-34.42-25.14M152 218h-18.51a76.8 76.8 0 0 0 15.29-19.09l.5-.91h33.86c-8.92 12.94-19.83 20-31.14 20m38-32h-34.86c6.37-15.27 10.09-33.16 10.74-52h36c-.72 19.23-4.82 37.26-11.88 52"></svg:path>`,
 })
 export class PhCoinVerticalLightIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phCoinVerticalThinIcon],svg[ph-coin-vertical-thin-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M195.05 58.1C183.73 38.69 168.44 28 152 28h-48c-16.44 0-31.73 10.69-43 30.1c-11 18.74-17 43.56-17 69.9s6 51.16 17 69.9c11.27 19.41 26.56 30.1 43 30.1h48c16.44 0 31.73-10.69 43.05-30.1C206 179.16 212 154.34 212 128s-6-51.16-16.95-69.9M191.27 188H152.1c7.24-16.14 11.37-35.53 11.84-56h40c-.5 20.77-4.94 40.28-12.67 56m-27.33-64c-.47-20.47-4.6-39.86-11.84-56h39.17c7.74 15.72 12.17 35.23 12.67 56ZM152 36c12.89 0 25.19 8.51 34.84 24h-38.73c-.35-.63-.7-1.28-1.06-1.9c-5.58-9.56-12.12-17-19.29-22.1ZM67.86 193.87C57.63 176.34 52 153 52 128s5.63-48.34 15.86-65.87C77.69 45.28 90.52 36 104 36s26.31 9.28 36.14 26.13C150.37 79.66 156 103.05 156 128s-5.63 48.34-15.86 65.87C130.31 210.72 117.48 220 104 220s-26.31-9.28-36.14-26.13M152 220h-24.24c7.17-5.09 13.71-12.54 19.29-22.1c.36-.62.71-1.27 1.06-1.9h38.73c-9.65 15.49-21.95 24-34.84 24"></svg:path>`,
-})
-export class PhCoinVerticalThinIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phCoinsIcon],svg[ph-coins-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M184 89.57V84c0-25.08-37.83-44-88-44S8 58.92 8 84v40c0 20.89 26.25 37.49 64 42.46V172c0 25.08 37.83 44 88 44s88-18.92 88-44v-40c0-20.7-25.42-37.32-64-42.43M232 132c0 13.22-30.79 28-72 28c-3.73 0-7.43-.13-11.08-.37C170.49 151.77 184 139 184 124v-18.26c29.87 4.45 48 16.53 48 26.26M72 150.25v-23.79A184 184 0 0 0 96 128a184 184 0 0 0 24-1.54v23.79A163 163 0 0 1 96 152a163 163 0 0 1-24-1.75m96-40.32V124c0 8.39-12.41 17.4-32 22.87V123.5c12.91-3.13 23.84-7.79 32-13.57M96 56c41.21 0 72 14.78 72 28s-30.79 28-72 28s-72-14.78-72-28s30.79-28 72-28m-72 68v-14.07c8.16 5.78 19.09 10.44 32 13.57v23.37C36.41 141.4 24 132.39 24 124m64 48v-4.17c2.63.1 5.29.17 8 .17c3.88 0 7.67-.13 11.39-.35a122 122 0 0 0 12.61 3.76v23.46c-19.59-5.47-32-14.48-32-22.87m48 26.25V174.4a179.5 179.5 0 0 0 24 1.6a184 184 0 0 0 24-1.54v23.79a165.5 165.5 0 0 1-48 0m64-3.38V171.5c12.91-3.13 23.84-7.79 32-13.57V172c0 8.39-12.41 17.4-32 22.87"></svg:path>`,
-})
-export class PhCoinsIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phCoinsBoldIcon],svg[ph-coins-bold-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M188 86.11V84c0-14.62-10.83-27.55-30.51-36.4C140.87 40.12 119 36 96 36s-44.87 4.12-61.49 11.6C14.83 56.45 4 69.38 4 84v40c0 14.62 10.83 27.55 30.51 36.4A131.7 131.7 0 0 0 68 169.88V172c0 14.62 10.83 27.55 30.51 36.4C115.13 215.88 137 220 160 220s44.87-4.12 61.49-11.6C241.17 199.55 252 186.62 252 172v-40c0-22.14-25.29-39.92-64-45.89M228 132c0 7.75-21.77 22.48-61.81 23.88C180.33 147.4 188 136.3 188 124v-13.56c25.88 4.71 40 15.04 40 21.56m-120.63 15.63c-3.63.24-7.42.37-11.37.37c-5.08 0-9.89-.22-14.43-.61a11 11 0 0 0-1.14-.09c-1.51-.14-3-.3-4.43-.48v-15.89A187 187 0 0 0 96 132a187 187 0 0 0 20-1.07v15.89c-2.49.3-5.07.56-7.75.75c-.25.01-.59.03-.88.06M164 117.14V124c0 4.78-8.28 12.21-24 17.54v-15a115 115 0 0 0 17.49-6.13q3.44-1.55 6.51-3.27M96 60c44 0 68 15.85 68 24s-24 24-68 24s-68-15.85-68-24s24-24 68-24m-68 64v-6.86q3.08 1.71 6.51 3.26A115 115 0 0 0 52 126.53v15c-15.72-5.32-24-12.75-24-17.53m64 48h4q5.44 0 10.77-.32q4.45 1.57 9.23 2.86v15c-15.72-5.33-24-12.76-24-17.54m48 22.82v-15.88a187 187 0 0 0 20 1.06a187 187 0 0 0 20-1.07v15.89a170 170 0 0 1-40 0m64-5.28v-15a115 115 0 0 0 17.49-6.13q3.44-1.54 6.51-3.26V172c0 4.78-8.28 12.21-24 17.54"></svg:path>`,
-})
-export class PhCoinsBoldIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phCoinsDuotoneIcon],svg[ph-coins-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M240 132c0 19.88-35.82 36-80 36c-19.6 0-37.56-3.17-51.47-8.44C146.76 156.85 176 142 176 124V96.72c36.52 3.34 64 17.86 64 35.28m-64-48c0-19.88-35.82-36-80-36S16 64.12 16 84s35.82 36 80 36s80-16.12 80-36" opacity=".2"></svg:path><svg:path d="M184 89.57V84c0-25.08-37.83-44-88-44S8 58.92 8 84v40c0 20.89 26.25 37.49 64 42.46V172c0 25.08 37.83 44 88 44s88-18.92 88-44v-40c0-20.7-25.42-37.32-64-42.43M232 132c0 13.22-30.79 28-72 28c-3.73 0-7.43-.13-11.08-.37C170.49 151.77 184 139 184 124v-18.26c29.87 4.45 48 16.53 48 26.26M72 150.25v-23.79A184 184 0 0 0 96 128a184 184 0 0 0 24-1.54v23.79A163 163 0 0 1 96 152a163 163 0 0 1-24-1.75m96-40.32V124c0 8.39-12.41 17.4-32 22.87V123.5c12.91-3.13 23.84-7.79 32-13.57M96 56c41.21 0 72 14.78 72 28s-30.79 28-72 28s-72-14.78-72-28s30.79-28 72-28m-72 68v-14.07c8.16 5.78 19.09 10.44 32 13.57v23.37C36.41 141.4 24 132.39 24 124m64 48v-4.17c2.63.1 5.29.17 8 .17c3.88 0 7.67-.13 11.39-.35a122 122 0 0 0 12.61 3.76v23.46c-19.59-5.47-32-14.48-32-22.87m48 26.25V174.4a179.5 179.5 0 0 0 24 1.6a184 184 0 0 0 24-1.54v23.79a165.5 165.5 0 0 1-48 0m64-3.38V171.5c12.91-3.13 23.84-7.79 32-13.57V172c0 8.39-12.41 17.4-32 22.87"></svg:path></svg:g>`,
-})
-export class PhCoinsDuotoneIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")

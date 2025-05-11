@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[elAlignCenterIcon],svg[el-align-center-icon]',
+  selector: 'svg[elAddressBookIcon],svg[el-address-book-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M290.625 99.202v178.006h618.75V99.202zm-164.063 274.53v178.006h946.875V373.732zm107.813 274.53v178.006h731.25V648.262zM0 922.792v178.006h1200V922.792z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M.008.015v1199.984H1200V987.564h-130.664V870.733H1200V658.377h-130.664V541.545H1200V329.282h-130.664V212.451H1200l-.016-212.45H0zm534.665 209.56c95.784 0 173.373 77.68 173.373 173.466c0 67.881-38.969 126.625-95.78 155.109l222.013 132.926h2.696v187.473H232.28V671.076h2.784L456.982 538.15c-56.812-28.484-95.78-87.229-95.78-155.109c0-95.785 77.68-173.466 173.466-173.466z"></svg:path>`,
 })
-export class ElAlignCenterIcon {
+export class ElAddressBookIcon {
   readonly viewBox = input("0 0 1200 1200")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,16 +36,50 @@ export class ElAddressBookAltIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[elAlignLeftIcon],svg[el-align-left-icon]',
+  selector: 'svg[elAdjustIcon],svg[el-adjust-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M618.75 99.202v178.006H0V99.202zm328.125 274.53v178.006H0V373.732zM731.25 648.262v178.006H0V648.262zM1200 922.792v178.006H0V922.792z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M600 0C268.641 0 0 268.641 0 600s268.641 600 600 600s600-268.641 600-600S931.359 0 600 0m0 174.975V1025.1c-234.75 0-425.109-190.336-425.109-425.109c0-234.751 190.336-425.016 425.109-425.016"></svg:path>`,
 })
-export class ElAlignLeftIcon {
+export class ElAdjustIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[elAdjustAltIcon],svg[el-adjust-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M104.312 0v699.844H0v254.062h367.281V699.844H262.969V0zM520.75 0v451.75H416.344v254.062h367.312V451.75H679.312V0zm416.281 0v201.625H832.719v254.062H1200V201.625h-104.312V0zm-51.093 252.031h260.844v50.438H885.938zm51.093 246.094V1200h158.656V498.125zm-467.437 4.031h260.812v50.438H469.594zm51.156 244.032V1200h158.562V746.188zm-467.531 4.031h260.844v50.438H53.219zm51.125 246.093V1200H263V996.312z"></svg:path>`,
+})
+export class ElAdjustAltIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[elAlignCenterIcon],svg[el-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M290.625 99.202v178.006h618.75V99.202zm-164.063 274.53v178.006h946.875V373.732zm107.813 274.53v178.006h731.25V648.262zM0 922.792v178.006h1200V922.792z"></svg:path>`,
+})
+export class ElAlignCenterIcon {
   readonly viewBox = input("0 0 1200 1200")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -63,6 +97,40 @@ export class ElAlignLeftIcon {
   template: `<svg:path fill="currentColor" d="M0 99.202v178.006h1200V99.202zm0 274.53v178.006h1200V373.732zm0 274.53v178.006h1200V648.262zm0 274.53v178.006h1200V922.792z"></svg:path>`,
 })
 export class ElAlignJustifyIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[elAdultIcon],svg[el-adult-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M605.096 480c-135.542-2.098-239.082-111.058-239.999-240C367.336 105.667 477.133.942 605.096 0c135.662 5.13 239.036 108.97 240.001 240c-2.668 134.439-111.907 239.09-240.001 240m194.043 49.788c170.592 1.991 257.094 151.63 257.881 301.269V1200H889.784l.001-324.254c-4.072-22.416-19.255-30.018-33.164-27.82c-13.022 2.059-24.929 12.701-25.56 27.82V1200h-464.67V875.746c-3.557-21.334-17.128-29.537-30.331-28.709c-14.138.889-27.853 12.135-28.393 28.709V1200h-164.68V831.057c-.98-159.475 99.901-300.087 259.137-301.269z"></svg:path>`,
+})
+export class ElAdultIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[elAlignLeftIcon],svg[el-align-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M618.75 99.202v178.006H0V99.202zm328.125 274.53v178.006H0V373.732zM731.25 648.262v178.006H0V648.262zM1200 922.792v178.006H0V922.792z"></svg:path>`,
+})
+export class ElAlignLeftIcon {
   readonly viewBox = input("0 0 1200 1200")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5095,74 +5163,6 @@ export class ElZoomInIcon {
   template: `<svg:path fill="currentColor" d="M1200 1066.325L978.182 844.507c60.81-87.068 96.743-192.795 96.743-307.044C1074.925 240.629 834.219 0 537.463 0S0 240.629 0 537.463c0 296.832 240.629 537.462 537.463 537.462c114.249 0 220.052-35.933 307.121-96.743L1066.402 1200zM537.386 921.44c-211.99 0-383.902-171.834-383.902-383.901s171.912-383.901 383.902-383.901c212.067 0 383.901 171.834 383.901 383.901c.078 212.067-171.757 383.901-383.901 383.901M307.045 614.243h460.682V460.682H307.045z"></svg:path>`,
 })
 export class ElZoomOutIcon {
-  readonly viewBox = input("0 0 1200 1200")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[elAdjustIcon],svg[el-adjust-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M600 0C268.641 0 0 268.641 0 600s268.641 600 600 600s600-268.641 600-600S931.359 0 600 0m0 174.975V1025.1c-234.75 0-425.109-190.336-425.109-425.109c0-234.751 190.336-425.016 425.109-425.016"></svg:path>`,
-})
-export class ElAdjustIcon {
-  readonly viewBox = input("0 0 1200 1200")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[elAdultIcon],svg[el-adult-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M605.096 480c-135.542-2.098-239.082-111.058-239.999-240C367.336 105.667 477.133.942 605.096 0c135.662 5.13 239.036 108.97 240.001 240c-2.668 134.439-111.907 239.09-240.001 240m194.043 49.788c170.592 1.991 257.094 151.63 257.881 301.269V1200H889.784l.001-324.254c-4.072-22.416-19.255-30.018-33.164-27.82c-13.022 2.059-24.929 12.701-25.56 27.82V1200h-464.67V875.746c-3.557-21.334-17.128-29.537-30.331-28.709c-14.138.889-27.853 12.135-28.393 28.709V1200h-164.68V831.057c-.98-159.475 99.901-300.087 259.137-301.269z"></svg:path>`,
-})
-export class ElAdultIcon {
-  readonly viewBox = input("0 0 1200 1200")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[elAddressBookIcon],svg[el-address-book-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M.008.015v1199.984H1200V987.564h-130.664V870.733H1200V658.377h-130.664V541.545H1200V329.282h-130.664V212.451H1200l-.016-212.45H0zm534.665 209.56c95.784 0 173.373 77.68 173.373 173.466c0 67.881-38.969 126.625-95.78 155.109l222.013 132.926h2.696v187.473H232.28V671.076h2.784L456.982 538.15c-56.812-28.484-95.78-87.229-95.78-155.109c0-95.785 77.68-173.466 173.466-173.466z"></svg:path>`,
-})
-export class ElAddressBookIcon {
-  readonly viewBox = input("0 0 1200 1200")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[elAdjustAltIcon],svg[el-adjust-alt-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M104.312 0v699.844H0v254.062h367.281V699.844H262.969V0zM520.75 0v451.75H416.344v254.062h367.312V451.75H679.312V0zm416.281 0v201.625H832.719v254.062H1200V201.625h-104.312V0zm-51.093 252.031h260.844v50.438H885.938zm51.093 246.094V1200h158.656V498.125zm-467.437 4.031h260.812v50.438H469.594zm51.156 244.032V1200h158.562V746.188zm-467.531 4.031h260.844v50.438H53.219zm51.125 246.093V1200H263V996.312z"></svg:path>`,
-})
-export class ElAdjustAltIcon {
   readonly viewBox = input("0 0 1200 1200")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[streamlineSmileyVeryShockedSolidIcon],svg[streamline-smiley-very-shocked-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7 .048c-1.855 0-3.578.483-4.85 1.474C.862 2.524.074 4.02.074 5.945c0 .578.05 1.055.147 1.46c.324-.217.75-.36 1.262-.286c.843.122 1.545.785 2.141 1.778c.974 1.624 1.17 3.345 1.12 4.468c.568.344 1.292.534 2.255.534s1.687-.19 2.256-.534c-.052-1.124.145-2.845 1.119-4.468c.596-.993 1.298-1.656 2.14-1.778c.513-.074.94.069 1.263.285c.097-.404.147-.88.147-1.459c0-1.925-.788-3.421-2.075-4.423C10.578.53 8.854.048 7 .048M6 4.5C6 5.88 5.105 7 4 7S2 5.88 2 4.5S2.895 2 4 2s2 1.12 2 2.5M10 7C8.895 7 8 5.88 8 4.5S8.895 2 10 2s2 1.12 2 2.5S11.105 7 10 7m-3 .343a.75.75 0 0 1 .75.75v1.751a.75.75 0 0 1-1.5 0V8.093a.75.75 0 0 1 .75-.75M.502 10.771c.363 1.454-.152 2.726-.454 3.18h3.634c.152-.757.182-2.726-.908-4.543S.804 8.045.502 8.5c-.152.152-.364.818 0 2.272Zm12.996 0c-.363 1.454.152 2.726.454 3.18h-3.634c-.152-.757-.182-2.725.908-4.543c1.09-1.817 1.97-1.363 2.272-.909c.152.152.364.818 0 2.272" clip-rule="evenodd"></svg:path>`,
-})
-export class StreamlineSmileyVeryShockedSolidIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[streamlineSmokeDetectorIcon],svg[streamline-smoke-detector-icon]',
   host: {
     role: 'img',
@@ -7329,16 +7312,33 @@ export class StreamlineZodiac9SolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[streamlineAddLayer2Icon],svg[streamline-add-layer-2-icon]',
+  selector: 'svg[streamlineAddLayer2SolidIcon],svg[streamline-add-layer-2-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M9.5 3.5h-8a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1"></svg:path><svg:path d="M3.5.5h9a1 1 0 0 1 1 1v9M5.5 6v5M8 8.5H3"></svg:path></svg:g>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.25 0a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 0 1.5 0v-7.5A2.25 2.25 0 0 0 11.75 0zM9.5 3A1.5 1.5 0 0 1 11 4.5v8A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-8A1.5 1.5 0 0 1 1.5 3zM2.25 8.5A.75.75 0 0 1 3 7.75h1.75V6a.75.75 0 0 1 1.5 0v1.75H8a.75.75 0 0 1 0 1.5H6.25V11a.75.75 0 0 1-1.5 0V9.25H3a.75.75 0 0 1-.75-.75" clip-rule="evenodd"></svg:path>`,
 })
-export class StreamlineAddLayer2Icon {
+export class StreamlineAddLayer2SolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineAddSquareIcon],svg[streamline-add-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M7 4v6M4 7h6m.5-6.5h-7a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h7a3 3 0 0 0 3-3v-7a3 3 0 0 0-3-3"></svg:path>`,
+})
+export class StreamlineAddSquareIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

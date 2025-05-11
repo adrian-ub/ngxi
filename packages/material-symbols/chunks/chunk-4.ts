@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsBoxIcon],svg[material-symbols-box-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 21q-.825 0-1.412-.587T3 19V6.525q0-.35.113-.675t.337-.6L4.7 3.725q.275-.35.687-.538T6.25 3h11.5q.45 0 .863.188t.687.537l1.25 1.525q.225.275.338.6t.112.675V19q0 .825-.587 1.413T19 21zm.4-15h13.2l-.85-1H6.25zM16 8H8v8l4-2l4 2z"></svg:path>`,
-})
-export class MaterialSymbolsBoxIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsBoxAddIcon],svg[material-symbols-box-add-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsCardTravelRoundedIcon {
   template: `<svg:path fill="currentColor" d="M2 21V6h5V2h10v4h5v15zM9 6h6V4H9zM4 17h16v-3H4z"></svg:path>`,
 })
 export class MaterialSymbolsCardTravelSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsCardioLoadIcon],svg[material-symbols-cardio-load-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m12 21l-3.2-2.85q-1.8-1.625-3.088-2.9t-2.124-2.4t-1.225-2.175t-.388-2.2q0-2.35 1.575-3.912T7.475 3q1.3 0 2.475.55T12 5.1q.875-1 2.05-1.55T16.525 3q2.35 0 3.925 1.563t1.575 3.912q0 1.15-.387 2.2t-1.225 2.175t-2.125 2.4t-3.088 2.9zm-5.175-7.5h10.35q.4-.425.725-.788t.6-.712h-13q.275.35.6.713t.725.787M12 18.3q.9-.8 1.688-1.487t1.437-1.313h-6.25q.65.625 1.438 1.313T12 18.3"></svg:path>`,
+})
+export class MaterialSymbolsCardioLoadIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

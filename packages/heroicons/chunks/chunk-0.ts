@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[heroiconsAcademicCap16SolidIcon],svg[heroicons-academic-cap-16-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M7.702 1.368a.75.75 0 0 1 .597 0c2.098.91 4.105 1.99 6.004 3.223a.75.75 0 0 1-.194 1.348A34.3 34.3 0 0 0 8.341 8.25a.75.75 0 0 1-.682 0q-.938-.48-1.909-.901v-.542a37 37 0 0 1 2.568-1.33a.75.75 0 0 0-.636-1.357a38 38 0 0 0-3.06 1.605a.75.75 0 0 0-.372.648v.365q-1.16-.44-2.359-.8a.75.75 0 0 1-.194-1.347a41 41 0 0 1 6.005-3.223M4.25 8.348q-.795-.318-1.611-.596a41 41 0 0 0-.418 2.97a.75.75 0 0 0 .474.776q.263.102.524.21a5.5 5.5 0 0 1-.58.681a.75.75 0 1 0 1.06 1.06q.525-.525.915-1.124a29 29 0 0 0-1.395-.617A5.5 5.5 0 0 0 4.25 8.5z"></svg:path><svg:path d="M7.603 13.96q-1.441-.902-2.989-1.635a7 7 0 0 0 1.12-3.341q.629.288 1.244.602a2.25 2.25 0 0 0 2.045 0a33 33 0 0 1 4.338-1.834q.263 1.468.419 2.97a.75.75 0 0 1-.474.776a29.4 29.4 0 0 0-4.909 2.461a.75.75 0 0 1-.794 0"></svg:path></svg:g>`,
-})
-export class HeroiconsAcademicCap16SolidIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[heroiconsAcademicCapIcon],svg[heroicons-academic-cap-icon]',
   host: {
     role: 'img',
@@ -36,16 +19,16 @@ export class HeroiconsAcademicCapIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[heroiconsAdjustmentsHorizontal16SolidIcon],svg[heroicons-adjustments-horizontal-16-solid-icon]',
+  selector: 'svg[heroiconsAcademicCap16SolidIcon],svg[heroicons-academic-cap-16-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M6.5 2.25a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0V4.5h6.75a.75.75 0 0 0 0-1.5H6.5zM11 6.5a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0v-.75h2.25a.75.75 0 0 0 0-1.5H11zM5.75 10a.75.75 0 0 1 .75.75v.75h6.75a.75.75 0 0 1 0 1.5H6.5v.75a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75m-3-2.75H8.5v1.5H2.75a.75.75 0 0 1 0-1.5M4 3H2.75a.75.75 0 0 0 0 1.5H4zm-1.25 8.5H4V13H2.75a.75.75 0 0 1 0-1.5"></svg:path>`,
+  template: `<svg:g fill="currentColor"><svg:path d="M7.702 1.368a.75.75 0 0 1 .597 0c2.098.91 4.105 1.99 6.004 3.223a.75.75 0 0 1-.194 1.348A34.3 34.3 0 0 0 8.341 8.25a.75.75 0 0 1-.682 0q-.938-.48-1.909-.901v-.542a37 37 0 0 1 2.568-1.33a.75.75 0 0 0-.636-1.357a38 38 0 0 0-3.06 1.605a.75.75 0 0 0-.372.648v.365q-1.16-.44-2.359-.8a.75.75 0 0 1-.194-1.347a41 41 0 0 1 6.005-3.223M4.25 8.348q-.795-.318-1.611-.596a41 41 0 0 0-.418 2.97a.75.75 0 0 0 .474.776q.263.102.524.21a5.5 5.5 0 0 1-.58.681a.75.75 0 1 0 1.06 1.06q.525-.525.915-1.124a29 29 0 0 0-1.395-.617A5.5 5.5 0 0 0 4.25 8.5z"></svg:path><svg:path d="M7.603 13.96q-1.441-.902-2.989-1.635a7 7 0 0 0 1.12-3.341q.629.288 1.244.602a2.25 2.25 0 0 0 2.045 0a33 33 0 0 1 4.338-1.834q.263 1.468.419 2.97a.75.75 0 0 1-.474.776a29.4 29.4 0 0 0-4.909 2.461a.75.75 0 0 1-.794 0"></svg:path></svg:g>`,
 })
-export class HeroiconsAdjustmentsHorizontal16SolidIcon {
+export class HeroiconsAcademicCap16SolidIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,16 +36,16 @@ export class HeroiconsAdjustmentsHorizontal16SolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[heroiconsAdjustmentsHorizontal20SolidIcon],svg[heroicons-adjustments-horizontal-20-solid-icon]',
+  selector: 'svg[heroiconsAcademicCap20SolidIcon],svg[heroicons-academic-cap-20-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M10 3.75a2 2 0 1 0-4 0a2 2 0 0 0 4 0m7.25.75a.75.75 0 0 0 0-1.5h-5.5a.75.75 0 0 0 0 1.5zM5 3.75a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5a.75.75 0 0 1 .75.75M4.25 17a.75.75 0 0 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5zm13 0a.75.75 0 0 0 0-1.5h-5.5a.75.75 0 0 0 0 1.5zM9 10a.75.75 0 0 1-.75.75h-5.5a.75.75 0 0 1 0-1.5h5.5A.75.75 0 0 1 9 10m8.25.75a.75.75 0 0 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5zM14 10a2 2 0 1 0-4 0a2 2 0 0 0 4 0m-4 6.25a2 2 0 1 0-4 0a2 2 0 0 0 4 0"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.664 1.319a.75.75 0 0 1 .672 0a41 41 0 0 1 8.198 5.424a.75.75 0 0 1-.254 1.285a31.4 31.4 0 0 0-7.86 3.83a.75.75 0 0 1-.84 0a32 32 0 0 0-2.08-1.287V9.394c0-.244.116-.463.302-.592a36 36 0 0 1 3.305-2.033a.75.75 0 0 0-.714-1.319a37 37 0 0 0-3.446 2.12A2.22 2.22 0 0 0 6 9.393v.38a31 31 0 0 0-4.28-1.746a.75.75 0 0 1-.254-1.285a41 41 0 0 1 8.198-5.424M6 11.459a30 30 0 0 0-2.455-1.158a41 41 0 0 0-.39 3.114a.75.75 0 0 0 .419.74q.792.384 1.554.82q-.314.487-.739.914a.75.75 0 1 0 1.06 1.06c.37-.369.69-.77.96-1.193a26.6 26.6 0 0 1 3.095 2.348a.75.75 0 0 0 .992 0a26.6 26.6 0 0 1 5.93-3.95a.75.75 0 0 0 .42-.739a41 41 0 0 0-.39-3.114a30 30 0 0 0-5.199 2.801a2.25 2.25 0 0 1-2.514 0q-.614-.413-1.25-.797a7 7 0 0 1-1.084 3.45a27 27 0 0 0-1.281-.78A5.5 5.5 0 0 0 6 12z" clip-rule="evenodd"></svg:path>`,
 })
-export class HeroiconsAdjustmentsHorizontal20SolidIcon {
+export class HeroiconsAcademicCap20SolidIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,6 +87,40 @@ export class HeroiconsAdjustmentsHorizontalIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[heroiconsAdjustmentsHorizontal20SolidIcon],svg[heroicons-adjustments-horizontal-20-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 3.75a2 2 0 1 0-4 0a2 2 0 0 0 4 0m7.25.75a.75.75 0 0 0 0-1.5h-5.5a.75.75 0 0 0 0 1.5zM5 3.75a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5a.75.75 0 0 1 .75.75M4.25 17a.75.75 0 0 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5zm13 0a.75.75 0 0 0 0-1.5h-5.5a.75.75 0 0 0 0 1.5zM9 10a.75.75 0 0 1-.75.75h-5.5a.75.75 0 0 1 0-1.5h5.5A.75.75 0 0 1 9 10m8.25.75a.75.75 0 0 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5zM14 10a2 2 0 1 0-4 0a2 2 0 0 0 4 0m-4 6.25a2 2 0 1 0-4 0a2 2 0 0 0 4 0"></svg:path>`,
+})
+export class HeroiconsAdjustmentsHorizontal20SolidIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[heroiconsAdjustmentsHorizontal16SolidIcon],svg[heroicons-adjustments-horizontal-16-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.5 2.25a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0V4.5h6.75a.75.75 0 0 0 0-1.5H6.5zM11 6.5a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0v-.75h2.25a.75.75 0 0 0 0-1.5H11zM5.75 10a.75.75 0 0 1 .75.75v.75h6.75a.75.75 0 0 1 0 1.5H6.5v.75a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75m-3-2.75H8.5v1.5H2.75a.75.75 0 0 1 0-1.5M4 3H2.75a.75.75 0 0 0 0 1.5H4zm-1.25 8.5H4V13H2.75a.75.75 0 0 1 0-1.5"></svg:path>`,
+})
+export class HeroiconsAdjustmentsHorizontal16SolidIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[heroiconsAdjustmentsHorizontalSolidIcon],svg[heroicons-adjustments-horizontal-solid-icon]',
   host: {
     role: 'img',
@@ -115,23 +132,6 @@ export class HeroiconsAdjustmentsHorizontalIcon {
 })
 export class HeroiconsAdjustmentsHorizontalSolidIcon {
   readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[heroiconsAcademicCap20SolidIcon],svg[heroicons-academic-cap-20-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.664 1.319a.75.75 0 0 1 .672 0a41 41 0 0 1 8.198 5.424a.75.75 0 0 1-.254 1.285a31.4 31.4 0 0 0-7.86 3.83a.75.75 0 0 1-.84 0a32 32 0 0 0-2.08-1.287V9.394c0-.244.116-.463.302-.592a36 36 0 0 1 3.305-2.033a.75.75 0 0 0-.714-1.319a37 37 0 0 0-3.446 2.12A2.22 2.22 0 0 0 6 9.393v.38a31 31 0 0 0-4.28-1.746a.75.75 0 0 1-.254-1.285a41 41 0 0 1 8.198-5.424M6 11.459a30 30 0 0 0-2.455-1.158a41 41 0 0 0-.39 3.114a.75.75 0 0 0 .419.74q.792.384 1.554.82q-.314.487-.739.914a.75.75 0 1 0 1.06 1.06c.37-.369.69-.77.96-1.193a26.6 26.6 0 0 1 3.095 2.348a.75.75 0 0 0 .992 0a26.6 26.6 0 0 1 5.93-3.95a.75.75 0 0 0 .42-.739a41 41 0 0 0-.39-3.114a30 30 0 0 0-5.199 2.801a2.25 2.25 0 0 1-2.514 0q-.614-.413-1.25-.797a7 7 0 0 1-1.084 3.45a27 27 0 0 0-1.281-.78A5.5 5.5 0 0 0 6 12z" clip-rule="evenodd"></svg:path>`,
-})
-export class HeroiconsAcademicCap20SolidIcon {
-  readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
 }

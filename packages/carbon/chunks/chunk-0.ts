@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[carbon3dCursorIcon],svg[carbon-3d-cursor-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M13 4H4v9.01h2V6h7V4z" fill="currentColor"></svg:path><svg:path d="M29.49 13.12l-9-5a1 1 0 0 0-1 0l-9 5A1 1 0 0 0 10 14v10a1 1 0 0 0 .52.87l9 5A1 1 0 0 0 20 30a1.05 1.05 0 0 0 .49-.13l9-5A1 1 0 0 0 30 24V14a1 1 0 0 0-.51-.88zM19 27.3l-7-3.89v-7.72l7 3.89zm1-9.45L13.06 14L20 10.14L26.94 14zm8 5.56l-7 3.89v-7.72l7-3.89z" fill="currentColor"></svg:path>`,
+})
+export class Carbon3dCursorIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[carbon3dCurveManualIcon],svg[carbon-3d-curve-manual-icon]',
   host: {
     role: 'img',
@@ -12,6 +29,74 @@ import { Component, input } from '@angular/core'
   template: `<svg:path d="M15 21a3 3 0 0 1-3 3h-.1a5 5 0 1 0 0 2h.1a5 5 0 0 0 5-5zm-8 7a3 3 0 1 1 3-3a3 3 0 0 1-3 3z" fill="currentColor"></svg:path><svg:path d="M15 13h2v6h-2z" fill="currentColor"></svg:path><svg:path d="M25 2a5 5 0 0 0-4.9 4H20a5 5 0 0 0-5 5h2a3 3 0 0 1 3-3h.1A5 5 0 1 0 25 2zm0 8a3 3 0 1 1 3-3a3 3 0 0 1-3 3z" fill="currentColor"></svg:path>`,
 })
 export class Carbon3dCurveManualIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbon3dCurveAutoColonIcon],svg[carbon-3d-curve-auto-colon-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M9.5 8h10.6a5 5 0 1 0 0-2H9.5a5.5 5.5 0 0 0 0 11h11a3.5 3.5 0 0 1 0 7h-8.6a5 5 0 1 0 0 2h8.6a5.5 5.5 0 0 0 0-11h-11a3.5 3.5 0 0 1 0-7zM25 4a3 3 0 1 1-3 3a3 3 0 0 1 3-3zM7 28a3 3 0 1 1 3-3a3 3 0 0 1-3 3z" fill="currentColor"></svg:path>`,
+})
+export class Carbon3dCurveAutoColonIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbon3dCurveAutoVesselsIcon],svg[carbon-3d-curve-auto-vessels-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M17 11a3 3 0 0 1 3-3h.1a5 5 0 1 0 0-2H20a5 5 0 0 0-5 5v1h-2a3 3 0 0 1-3-3V7a5 5 0 0 0-5-5H4v2h1a3 3 0 0 1 3 3v2a5 5 0 0 0 5 5h2v7a3 3 0 0 1-3 3h-.1a5 5 0 1 0 0 2h.1a5 5 0 0 0 5-5h2.5a2.5 2.5 0 0 1 2.5 2.5a4.51 4.51 0 0 0 4.5 4.5H28v-2h-1.5a2.5 2.5 0 0 1-2.5-2.5a4.51 4.51 0 0 0-4.5-4.5H17zm8-7a3 3 0 1 1-3 3a3 3 0 0 1 3-3zM7 28a3 3 0 1 1 3-3a3 3 0 0 1-3 3z" fill="currentColor"></svg:path>`,
+})
+export class Carbon3dCurveAutoVesselsIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbon3dIcaIcon],svg[carbon-3d-ica-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M15 14h-5a2 2 0 0 1-2-2V4a2 2 0 0 1 .59-1.42A3.57 3.57 0 0 1 10 2h5v2h-5v8h5z" fill="currentColor"></svg:path><svg:path d="M4 6h2v8H4z" fill="currentColor"></svg:path><svg:path d="M4 2h2v2H4z" fill="currentColor"></svg:path><svg:path d="M27.45 19.11l-6-3a1 1 0 0 0-.9 0l-6 3A1 1 0 0 0 14 20v7a1 1 0 0 0 .55.89l6 3a1 1 0 0 0 .9 0l6-3A1 1 0 0 0 28 27v-7a1 1 0 0 0-.55-.89zm-6.45-1L24.76 20L21 21.88L17.24 20zm-5 3.5l4 2v4.76l-4-2zm6 6.76v-4.75l4-2v4.76z" fill="currentColor"></svg:path><svg:path d="M23 2h-4a2 2 0 0 0-2 2v10h2v-4h4v4h2V4a2 2 0 0 0-2-2zm-4 6V4h4v4z" fill="currentColor"></svg:path>`,
+})
+export class Carbon3dIcaIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbon3dCursorAltIcon],svg[carbon-3d-cursor-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4z" fill="currentColor"></svg:path><svg:path d="M15 7h2v7h-2z" fill="currentColor"></svg:path><svg:path d="M7 15h7v2H7z" fill="currentColor"></svg:path><svg:path d="M15 18h2v7h-2z" fill="currentColor"></svg:path><svg:path d="M18 15h7v2h-7z" fill="currentColor"></svg:path>`,
+})
+export class Carbon3dCursorAltIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -63,57 +148,6 @@ export class Carbon3dPrintMeshIcon {
   template: `<svg:path d="M21.49 13.115l-9-5a1 1 0 0 0-1 0l-9 5A1.008 1.008 0 0 0 2 14v9.995a1 1 0 0 0 .52.87l9 5A1.004 1.004 0 0 0 12 30a1.056 1.056 0 0 0 .49-.135l9-5A.992.992 0 0 0 22 24V14a1.008 1.008 0 0 0-.51-.885zM11 27.295l-7-3.89v-7.72l7 3.89zm1-9.45L5.06 14L12 10.135l6.94 3.86zm8 5.56l-7 3.89v-7.72l7-3.89z" fill="currentColor"></svg:path><svg:path d="M30 6h-4V2h-2v4h-4v2h4v4h2V8h4V6z" fill="currentColor"></svg:path>`,
 })
 export class Carbon3dSoftwareIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[carbon3dCursorAltIcon],svg[carbon-3d-cursor-alt-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4z" fill="currentColor"></svg:path><svg:path d="M15 7h2v7h-2z" fill="currentColor"></svg:path><svg:path d="M7 15h7v2H7z" fill="currentColor"></svg:path><svg:path d="M15 18h2v7h-2z" fill="currentColor"></svg:path><svg:path d="M18 15h7v2h-7z" fill="currentColor"></svg:path>`,
-})
-export class Carbon3dCursorAltIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[carbon3dCurveAutoColonIcon],svg[carbon-3d-curve-auto-colon-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M9.5 8h10.6a5 5 0 1 0 0-2H9.5a5.5 5.5 0 0 0 0 11h11a3.5 3.5 0 0 1 0 7h-8.6a5 5 0 1 0 0 2h8.6a5.5 5.5 0 0 0 0-11h-11a3.5 3.5 0 0 1 0-7zM25 4a3 3 0 1 1-3 3a3 3 0 0 1 3-3zM7 28a3 3 0 1 1 3-3a3 3 0 0 1-3 3z" fill="currentColor"></svg:path>`,
-})
-export class Carbon3dCurveAutoColonIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[carbon3dIcaIcon],svg[carbon-3d-ica-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M15 14h-5a2 2 0 0 1-2-2V4a2 2 0 0 1 .59-1.42A3.57 3.57 0 0 1 10 2h5v2h-5v8h5z" fill="currentColor"></svg:path><svg:path d="M4 6h2v8H4z" fill="currentColor"></svg:path><svg:path d="M4 2h2v2H4z" fill="currentColor"></svg:path><svg:path d="M27.45 19.11l-6-3a1 1 0 0 0-.9 0l-6 3A1 1 0 0 0 14 20v7a1 1 0 0 0 .55.89l6 3a1 1 0 0 0 .9 0l6-3A1 1 0 0 0 28 27v-7a1 1 0 0 0-.55-.89zm-6.45-1L24.76 20L21 21.88L17.24 20zm-5 3.5l4 2v4.76l-4-2zm6 6.76v-4.75l4-2v4.76z" fill="currentColor"></svg:path><svg:path d="M23 2h-4a2 2 0 0 0-2 2v10h2v-4h4v4h2V4a2 2 0 0 0-2-2zm-4 6V4h4v4z" fill="currentColor"></svg:path>`,
-})
-export class Carbon3dIcaIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8461,40 +8495,6 @@ export class CarbonContainerRuntimeMonitorIcon {
   template: `<svg:path fill="currentColor" d="M27 22v-5a2 2 0 0 0-2-2h-8v-5h3a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h3v5H7a2 2 0 0 0-2 2v5H2v8h8v-8H7v-5h8v5h-3v8h8v-8h-3v-5h8v5h-3v8h8v-8ZM12 4h8v4h-8ZM8 28H4v-4h4Zm10 0h-4v-4h4Zm10 0h-4v-4h4Z"></svg:path>`,
 })
 export class CarbonContainerServicesIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[carbonContainerSoftwareIcon],svg[carbon-container-software-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M28 12h-8V4h8Zm-6-2h4V6h-4Z"></svg:path><svg:path fill="currentColor" d="M17 15V9H9v14h14v-8Zm-6-4h4v4h-4Zm4 10h-4v-4h4Zm6 0h-4v-4h4Z"></svg:path><svg:path fill="currentColor" d="M26 28H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10v2H6v20h20V16h2v10a2 2 0 0 1-2 2"></svg:path>`,
-})
-export class CarbonContainerSoftwareIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[carbonContentDeliveryNetworkIcon],svg[carbon-content-delivery-network-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:circle cx="21" cy="21" r="2" fill="currentColor"></svg:circle><svg:circle cx="7" cy="7" r="2" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M27 31a4 4 0 1 1 4-4a4.01 4.01 0 0 1-4 4m0-6a2 2 0 1 0 2 2a2.006 2.006 0 0 0-2-2"></svg:path><svg:path fill="currentColor" d="M30 16A14.04 14.04 0 0 0 16 2a13.04 13.04 0 0 0-6.8 1.8l1.1 1.7a24 24 0 0 1 2.4-1A25.1 25.1 0 0 0 10 15H4a11.15 11.15 0 0 1 1.4-4.7L3.9 9A13.84 13.84 0 0 0 2 16a14 14 0 0 0 14 14a13.4 13.4 0 0 0 5.2-1l-.6-1.9a11.44 11.44 0 0 1-5.2.9A21.07 21.07 0 0 1 12 17h17.9a3.4 3.4 0 0 0 .1-1M12.8 27.6a13 13 0 0 1-5.3-3.1A12.5 12.5 0 0 1 4 17h6a25 25 0 0 0 2.8 10.6M12 15a21.45 21.45 0 0 1 3.3-11h1.4A21.45 21.45 0 0 1 20 15Zm10 0a23.3 23.3 0 0 0-2.8-10.6A12.09 12.09 0 0 1 27.9 15Z"></svg:path>`,
-})
-export class CarbonContentDeliveryNetworkIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

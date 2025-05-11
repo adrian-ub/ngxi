@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightBatteryPlusOutlineRoundedIcon],svg[material-symbols-light-battery-plus-outline-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16.385 18.385h-2.116q-.212 0-.356-.144t-.144-.357t.144-.356t.356-.144h2.115V15.27q0-.212.144-.356t.357-.144t.356.144t.144.356v2.115H19.5q.213 0 .356.144t.144.357t-.144.356t-.356.144h-2.116V20.5q0 .213-.143.356q-.144.144-.357.144t-.356-.144t-.144-.356zM8.692 21q-.343 0-.575-.232t-.233-.576V5.288q0-.343.233-.575t.575-.232h1.616v-.673q0-.344.232-.576T11.116 3h1.769q.343 0 .575.232t.232.576v.673h1.62q.344 0 .574.232t.23.575v6.27q0 .212-.144.356t-.357.144t-.356-.144t-.143-.356V5.462H8.885V20h2.582q.213 0 .357.144t.143.357t-.143.356t-.357.143z"></svg:path>`,
-})
-export class MaterialSymbolsLightBatteryPlusOutlineRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightBatteryPlusOutlineSharpIcon],svg[material-symbols-light-battery-plus-outline-sharp-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightBrushIcon {
   template: `<svg:path fill="currentColor" d="M6.385 19.616q-.592 0-1.17-.204t-1.023-.566q.497-.327.845-.878t.348-1.352q0-.847.577-1.424q.577-.576 1.423-.576t1.423.576t.577 1.424q0 1.237-.882 2.118t-2.118.881m0-1q.825 0 1.412-.587t.588-1.412q0-.425-.288-.713t-.712-.288t-.713.288t-.287.713q0 .575-.138 1.05t-.362.9q.125.05.25.05zM11.25 14.5l-1.711-1.711l8.18-8.181q.275-.275.688-.288t.712.288l.312.311q.3.3.3.7t-.3.7zm-3.866 2.116"></svg:path>`,
 })
 export class MaterialSymbolsLightBrushOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightBrushOutlineSharpIcon],svg[material-symbols-light-brush-outline-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.385 19.616q-.592 0-1.17-.204t-1.023-.566q.497-.327.845-.878t.348-1.352q0-.847.577-1.424q.577-.576 1.423-.576t1.423.576t.577 1.424q0 1.237-.882 2.118t-2.118.881m0-1q.825 0 1.412-.587t.588-1.412q0-.425-.288-.713t-.712-.288t-.713.288t-.287.713q0 .575-.138 1.05t-.362.9q.125.05.25.05zM11.25 14.5l-1.711-1.711l8.88-8.881l1.712 1.711zm-3.866 2.116"></svg:path>`,
+})
+export class MaterialSymbolsLightBrushOutlineSharpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

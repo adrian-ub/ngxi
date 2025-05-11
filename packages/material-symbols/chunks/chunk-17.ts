@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsMoveIcon],svg[material-symbols-move-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11 17q-.175 0-.3-.1t-.175-.25q-.35-1.05-.85-1.75t-1-1.35t-.838-1.35t-.337-1.7q0-1.45 1.025-2.475T11 7t2.475 1.025T14.5 10.5q0 1-.338 1.7t-.837 1.35t-1 1.35t-.85 1.75q-.05.15-.175.25t-.3.1m0-5.25q.525 0 .888-.363t.362-.887t-.363-.888T11 9.25t-.888.363t-.362.887t.363.888t.887.362M11 21q-3.75 0-6.375-2.625T2 12q0-1.875.713-3.512t1.924-2.85t2.85-1.925T11 3t3.513.713t2.85 1.924t1.925 2.85T20 12v.2l1.325-1.35l1.425 1.4L19 16l-3.75-3.75l1.425-1.4L18 12.175V12q0-2.9-2.05-4.95T11 5T6.05 7.05T4 12q.025 2.9 2.062 4.95T11 19q1.425 0 2.675-.537t2.2-1.463l1.425 1.425q-1.225 1.2-2.838 1.888T11 21"></svg:path>`,
-})
-export class MaterialSymbolsMoveIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsMoveDownIcon],svg[material-symbols-move-down-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsNoPhotographyOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="m22 19.125l-2-2V7h-4.05l-1.825-2h-4.25l-.95 1.05L7.5 4.625L9 3h6l1.85 2H22zM2 21V5h3.025l2 2H4v12h15.025l2 2zm13.65-5.375q-.625.85-1.562 1.363T12 17.5q-1.875 0-3.187-1.312T7.5 13q0-1.15.513-2.087T9.375 9.35l1.45 1.45q-.6.325-.962.9T9.5 13q0 1.05.725 1.775T12 15.5q.725 0 1.3-.363t.9-.962zM15.2 9.8q.625.6.963 1.425T16.5 13v.3q0 .15-.025.3L11.4 8.525q.15-.025.3-.025h.3q.95 0 1.775.338T15.2 9.8m5.275 13.5L.675 3.5L2.1 2.075l19.8 19.8zM14.45 11.575"></svg:path>`,
 })
 export class MaterialSymbolsNoPhotographyOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsNoPhotographyRoundedIcon],svg[material-symbols-no-photography-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.775 22.575L18.175 21H4q-.825 0-1.412-.587T2 19V7q0-.825.588-1.412T4 5h1.025v2.85L1.375 4.2q-.3-.3-.3-.712t.3-.713t.713-.3t.712.3l18.4 18.4q.3.3.3.7t-.3.7t-.712.3t-.713-.3m1.6-4.95q-.275.125-.55.075t-.525-.3l-3.825-3.825q.125-1.05-.213-2.037T15.176 9.8q-.725-.725-1.713-1.062t-2.037-.213L8.175 5.3q-.15-.15-.213-.325T7.9 4.6t.063-.362t.187-.313l.25-.275q.275-.3.663-.475T9.875 3h4.25q.425 0 .813.175t.662.475L16.85 5H20q.825 0 1.413.588T22 7v9.7q0 .35-.175.575t-.45.35M12 17.5q.575 0 1.113-.125t1.037-.4L8.025 10.85q-.275.5-.4 1.038T7.5 13q0 1.875 1.313 3.188T12 17.5m0-2q-1.05 0-1.775-.725T9.5 13q0-.5.188-.962t.537-.813l3.55 3.55q-.35.35-.812.538T12 15.5"></svg:path>`,
+})
+export class MaterialSymbolsNoPhotographyRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

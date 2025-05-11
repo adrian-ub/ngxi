@@ -36,16 +36,16 @@ export class Nrk404Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[nrkArrowDropdownIcon],svg[nrk-arrow-dropdown-icon]',
+  selector: 'svg[nrkAlarmClockIcon],svg[nrk-alarm-clock-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m12 15l5-5H7z"></svg:path>`,
+  template: `<svg:g fill="currentColor"><svg:path d="m2.177.63l-1.5 1.5l1.414 1.414l1.5-1.5zM11 12.414V6h2v5.586l3.707 3.707l-1.414 1.414z"></svg:path><svg:path fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11c0 2.678-.958 5.13-2.549 7.037L23 21.586L21.586 23l-2.549-2.549A10.95 10.95 0 0 1 12 23c-2.678 0-5.13-.958-7.037-2.549L2.414 23L1 21.586l2.549-2.549A10.95 10.95 0 0 1 1 12m11-9a9 9 0 1 0 0 18a9 9 0 0 0 0-18" clip-rule="evenodd"></svg:path><svg:path d="M20.421 2.044L21.835.63l1.5 1.5l-1.414 1.414z"></svg:path></svg:g>`,
 })
-export class NrkArrowDropdownIcon {
+export class NrkAlarmClockIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,6 +87,40 @@ export class NrkArrowDownIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[nrkArrowLeftIcon],svg[nrk-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m4 12l4.9-7h2.272l-4.2 6H20l-1 2H6.972l4.2 6H8.9z" clip-rule="evenodd"></svg:path>`,
+})
+export class NrkArrowLeftIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[nrkArrowDropdownIcon],svg[nrk-arrow-dropdown-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m12 15l5-5H7z"></svg:path>`,
+})
+export class NrkArrowDropdownIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[nrkArrowLeftLongIcon],svg[nrk-arrow-left-long-icon]',
   host: {
     role: 'img',
@@ -104,16 +138,16 @@ export class NrkArrowLeftLongIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[nrkArrowLeftIcon],svg[nrk-arrow-left-icon]',
+  selector: 'svg[nrkArrowNestedIcon],svg[nrk-arrow-nested-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m4 12l4.9-7h2.272l-4.2 6H20l-1 2H6.972l4.2 6H8.9z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M17 4H2v2h13v11.08l-5-3.25v2.272l6 3.9l6-3.9V13.83l-5 3.25z"></svg:path>`,
 })
-export class NrkArrowLeftIcon {
+export class NrkArrowNestedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -3871,40 +3905,6 @@ export class NrkUserNotloggedinActiveIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11.233 1L1 21h22L12.767 1zM12 3.891L19.73 19H4.27zM13.2 16.4a1.2 1.2 0 1 1-2.4 0a1.2 1.2 0 0 1 2.4 0M13 14h-2v-4h2z" clip-rule="evenodd"></svg:path>`,
 })
 export class NrkWarningIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[nrkArrowNestedIcon],svg[nrk-arrow-nested-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M17 4H2v2h13v11.08l-5-3.25v2.272l6 3.9l6-3.9V13.83l-5 3.25z"></svg:path>`,
-})
-export class NrkArrowNestedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[nrkAlarmClockIcon],svg[nrk-alarm-clock-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="m2.177.63l-1.5 1.5l1.414 1.414l1.5-1.5zM11 12.414V6h2v5.586l3.707 3.707l-1.414 1.414z"></svg:path><svg:path fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11c0 2.678-.958 5.13-2.549 7.037L23 21.586L21.586 23l-2.549-2.549A10.95 10.95 0 0 1 12 23c-2.678 0-5.13-.958-7.037-2.549L2.414 23L1 21.586l2.549-2.549A10.95 10.95 0 0 1 1 12m11-9a9 9 0 1 0 0 18a9 9 0 0 0 0-18" clip-rule="evenodd"></svg:path><svg:path d="M20.421 2.044L21.835.63l1.5 1.5l-1.414 1.414z"></svg:path></svg:g>`,
-})
-export class NrkAlarmClockIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

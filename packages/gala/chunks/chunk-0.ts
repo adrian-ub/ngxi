@@ -2,57 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[galaAirplayIcon],svg[gala-airplay-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"><svg:path d="M 64,192 H 47.999992 m 0,0 c -17.728,0 -32,-14.272 -32,-32 V 47.999993 c 0,-17.728 14.272,-32 32,-32 H 208.00001 c 17.728,0 32,14.272 32,32 V 160 c 0,17.728 -14.272,32 -32,32"></svg:path><svg:path d="m 64,240 64,-80 64,80 z"></svg:path><svg:path d="M 208,192 H 192"></svg:path></svg:g>`,
-})
-export class GalaAirplayIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[galaAppleIcon],svg[gala-apple-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.244"><svg:path d="m 33.866666,21.166666 c -4.233333,1e-6 -25.465872,-8.433732 -25.465872,12.732936" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 8.400794,33.899602 c 0,21.166665 12.743914,29.710184 16.977248,29.710184 4.233334,0 4.255291,-4.244312 8.488624,-4.244312" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 33.866665,21.166666 c 4.233334,1e-6 25.465874,-8.433732 25.465874,12.732936" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 59.354497,33.866666 c 0,21.166666 -12.765873,29.74312 -16.999207,29.74312 -4.233334,0 -4.25529,-4.244312 -8.488624,-4.244312" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 33.866666,21.166666 c 0,-12.6999995 -8.488624,-16.9772483 -8.488624,-16.9772483" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 33.866666,21.166666 c 0,-16.9333325 8.499603,-12.7439153 12.732936,-16.9772483" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 33.866666,21.166666 c 12.7,-4.233333 16.966269,-8.510583 12.732936,-16.9772483" transform="translate(.331 .207)scale(3.76975)"></svg:path></svg:g>`,
-})
-export class GalaAppleIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[galaBellIcon],svg[gala-bell-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.233"><svg:path d="M 33.866678,59.266666 A 4.2333331,4.2333331 0 0 1 29.633345,63.5" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="M -25.4,59.266666 A 4.2333331,4.2333331 0 0 1 -29.633333,63.5" transform="matrix(-3.77953 0 0 3.77953 16 0)"></svg:path><svg:path d="m 25.400031,55.033482 v 4.233333" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="m 33.866698,55.033482 -1.9e-5,4.233332" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="m 55.033333,50.8 c -8.466667,4.233333 -21.166667,4.233333 -25.4,4.233333" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="m 55.033333,50.8 c 0,-8.466667 -8.466667,-4.233336 -8.466667,-25.400002 0,-9.466021 -8.466666,-16.9330112 -12.699988,-16.9330112" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="M 4.233334,50.8 C 12.7,55.033333 25.4,55.033333 29.633333,55.033333" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="m 4.2333451,50.799681 c 0,-8.466669 8.4666669,-4.233338 8.4666669,-25.400003 0,-9.46602 8.466666,-16.9330108 12.699988,-16.9330108" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="m -25.400012,-8.4666872 a 4.2333331,4.2333331 0 0 1 -4.233333,4.2333331" transform="rotate(180 8 0)scale(3.77953)"></svg:path><svg:path d="m 33.866666,-8.4666672 a 4.2333331,4.2333331 0 0 1 -4.233333,4.2333331" transform="matrix(3.77953 0 0 -3.77953 16 0)"></svg:path></svg:g>`,
-})
-export class GalaBellIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[galaAddIcon],svg[gala-add-icon]',
   host: {
     role: 'img',
@@ -63,6 +12,23 @@ export class GalaBellIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"><svg:circle cx="128" cy="128" r="112"></svg:circle><svg:path d="M 79.999992,128 H 176.0001"></svg:path><svg:path d="m 128.00004,79.99995 v 96.0001"></svg:path></svg:g>`,
 })
 export class GalaAddIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[galaAirplayIcon],svg[gala-airplay-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"><svg:path d="M 64,192 H 47.999992 m 0,0 c -17.728,0 -32,-14.272 -32,-32 V 47.999993 c 0,-17.728 14.272,-32 32,-32 H 208.00001 c 17.728,0 32,14.272 32,32 V 160 c 0,17.728 -14.272,32 -32,32"></svg:path><svg:path d="m 64,240 64,-80 64,80 z"></svg:path><svg:path d="M 208,192 H 192"></svg:path></svg:g>`,
+})
+export class GalaAirplayIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,6 +53,23 @@ export class GalaBagIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[galaAppleIcon],svg[gala-apple-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.244"><svg:path d="m 33.866666,21.166666 c -4.233333,1e-6 -25.465872,-8.433732 -25.465872,12.732936" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 8.400794,33.899602 c 0,21.166665 12.743914,29.710184 16.977248,29.710184 4.233334,0 4.255291,-4.244312 8.488624,-4.244312" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 33.866665,21.166666 c 4.233334,1e-6 25.465874,-8.433732 25.465874,12.732936" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 59.354497,33.866666 c 0,21.166666 -12.765873,29.74312 -16.999207,29.74312 -4.233334,0 -4.25529,-4.244312 -8.488624,-4.244312" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 33.866666,21.166666 c 0,-12.6999995 -8.488624,-16.9772483 -8.488624,-16.9772483" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 33.866666,21.166666 c 0,-16.9333325 8.499603,-12.7439153 12.732936,-16.9772483" transform="translate(.331 .207)scale(3.76975)"></svg:path><svg:path d="m 33.866666,21.166666 c 12.7,-4.233333 16.966269,-8.510583 12.732936,-16.9772483" transform="translate(.331 .207)scale(3.76975)"></svg:path></svg:g>`,
+})
+export class GalaAppleIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[galaBookIcon],svg[gala-book-icon]',
   host: {
     role: 'img',
@@ -97,6 +80,74 @@ export class GalaBagIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.234"><svg:path d="M 55.033333,63.5 12.7,63.499999" transform="translate(16.003 .01)scale(3.77938)"></svg:path><svg:path d="M 4.2333336,-55.033333 A 8.4666662,8.4666662 0 0 1 12.7,-63.499999" transform="matrix(3.77938 0 0 -3.77938 16.003 .01)"></svg:path><svg:path d="M 4.2333336,55.033333 A 8.4666662,8.4666662 0 0 1 12.7,46.566667" transform="translate(16.003 .01)scale(3.77938)"></svg:path><svg:path d="m 55.033333,46.566667 -42.333332,-1e-6" transform="translate(16.003 .01)scale(3.77938)"></svg:path><svg:path d="M 4.2333336,12.7 A 8.4666662,8.4666662 0 0 1 12.7,4.2333336" transform="translate(16.003 .01)scale(3.77938)"></svg:path><svg:path d="m 55.033333,4.233334 -42.333332,-1e-6" transform="translate(16.003 .01)scale(3.77938)"></svg:path><svg:path d="m 4.2333334,12.7 2e-7,42.333333" transform="translate(16.003 .01)scale(3.77938)"></svg:path><svg:path d="M 12.7,46.566666 V 4.230783" transform="translate(16.003 .01)scale(3.77938)"></svg:path><svg:path d="M 55.033333,4.2333348 V 46.566667" transform="translate(16.003 .01)scale(3.77938)"></svg:path><svg:path d="m 55.033333,46.566667 c -2.662642,5.559118 -2.809222,11.198865 0,16.933333" transform="translate(16.003 .01)scale(3.77938)"></svg:path></svg:g>`,
 })
 export class GalaBookIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[galaBellIcon],svg[gala-bell-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.233"><svg:path d="M 33.866678,59.266666 A 4.2333331,4.2333331 0 0 1 29.633345,63.5" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="M -25.4,59.266666 A 4.2333331,4.2333331 0 0 1 -29.633333,63.5" transform="matrix(-3.77953 0 0 3.77953 16 0)"></svg:path><svg:path d="m 25.400031,55.033482 v 4.233333" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="m 33.866698,55.033482 -1.9e-5,4.233332" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="m 55.033333,50.8 c -8.466667,4.233333 -21.166667,4.233333 -25.4,4.233333" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="m 55.033333,50.8 c 0,-8.466667 -8.466667,-4.233336 -8.466667,-25.400002 0,-9.466021 -8.466666,-16.9330112 -12.699988,-16.9330112" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="M 4.233334,50.8 C 12.7,55.033333 25.4,55.033333 29.633333,55.033333" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="m 4.2333451,50.799681 c 0,-8.466669 8.4666669,-4.233338 8.4666669,-25.400003 0,-9.46602 8.466666,-16.9330108 12.699988,-16.9330108" transform="translate(16)scale(3.77953)"></svg:path><svg:path d="m -25.400012,-8.4666872 a 4.2333331,4.2333331 0 0 1 -4.233333,4.2333331" transform="rotate(180 8 0)scale(3.77953)"></svg:path><svg:path d="m 33.866666,-8.4666672 a 4.2333331,4.2333331 0 0 1 -4.233333,4.2333331" transform="matrix(3.77953 0 0 -3.77953 16 0)"></svg:path></svg:g>`,
+})
+export class GalaBellIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[galaCalendarIcon],svg[gala-calendar-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="16"><svg:path d="M 31.999978,31.999961 H 224.00004"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m 15.999975,47.999965 -3e-6,176.000055"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 240.00002,47.999965 V 224.00002"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m 31.999978,31.999961 c -8.836576,0 -16.000003,7.163446 -16.000003,16.000004"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m 224.00004,31.999961 c 8.83657,-4e-6 15.99998,7.163443 15.99998,16.000004"></svg:path><svg:path d="M 224.00004,240.00002 H 31.999978"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m 224.00004,240.00002 a 16.000004,16.000004 0 0 0 15.99998,-16"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m 31.999978,240.00002 a 16.000004,16.000004 0 0 1 -16.000011,-16"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 128.00001,47.999965 V 15.999962"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 160.00003,47.999965 V 15.999962"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 192.00002,47.999965 V 15.999962"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 95.999985,47.999965 V 15.999962"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 64.000001,47.999965 V 15.999962"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 15.999975,95.999972 H 240.00002"></svg:path></svg:g>`,
+})
+export class GalaCalendarIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[galaBrochureIcon],svg[gala-brochure-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"><svg:path d="M 16.110084,16.110084 H 160.04176 L 96.072129,64.087313"></svg:path><svg:path d="m 16.110084,16.110084 -2e-6,175.916496 h 79.962047"></svg:path><svg:path d="M 96.072132,64.087313 H 240.00381 V 240.0038 H 96.072129 l 3e-6,-175.916487"></svg:path><svg:path d="M 160.04176,16.110084 V 64.087313"></svg:path></svg:g>`,
+})
+export class GalaBrochureIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[galaChartIcon],svg[gala-chart-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"><svg:rect width="224" height="224" x="16" y="16" ry="32"></svg:rect><svg:path d="M 160.00003,192.00003 V 111.99998"></svg:path><svg:path d="M 192.00002,192.00003 V 63.999974"></svg:path><svg:path d="m 63.999979,192.00003 v -32"></svg:path><svg:path d="m 95.99997,128 v 64.00003"></svg:path><svg:path d="m 128,144 v 48.00003"></svg:path></svg:g>`,
+})
+export class GalaChartIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -811,57 +862,6 @@ export class GalaVideoIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"><svg:path d="m 16,64 224.93778,0.09256"></svg:path><svg:path d="M 48,16 H 207.91114 C 225.62929,16 240,30.281849 240,48 v 160 c 0,17.71816 -14.28185,32 -32,32 H 48 C 30.281848,240 16.069099,225.73073 16.06221,208.01257 L 16,48 C 15.993112,30.281851 30.281848,16 48,16 Z"></svg:path><svg:path d="M 191.96444,64.092555 192,16"></svg:path></svg:g>`,
 })
 export class GalaWindowIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[galaChartIcon],svg[gala-chart-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"><svg:rect width="224" height="224" x="16" y="16" ry="32"></svg:rect><svg:path d="M 160.00003,192.00003 V 111.99998"></svg:path><svg:path d="M 192.00002,192.00003 V 63.999974"></svg:path><svg:path d="m 63.999979,192.00003 v -32"></svg:path><svg:path d="m 95.99997,128 v 64.00003"></svg:path><svg:path d="m 128,144 v 48.00003"></svg:path></svg:g>`,
-})
-export class GalaChartIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[galaCalendarIcon],svg[gala-calendar-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-width="16"><svg:path d="M 31.999978,31.999961 H 224.00004"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m 15.999975,47.999965 -3e-6,176.000055"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 240.00002,47.999965 V 224.00002"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m 31.999978,31.999961 c -8.836576,0 -16.000003,7.163446 -16.000003,16.000004"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m 224.00004,31.999961 c 8.83657,-4e-6 15.99998,7.163443 15.99998,16.000004"></svg:path><svg:path d="M 224.00004,240.00002 H 31.999978"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m 224.00004,240.00002 a 16.000004,16.000004 0 0 0 15.99998,-16"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m 31.999978,240.00002 a 16.000004,16.000004 0 0 1 -16.000011,-16"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 128.00001,47.999965 V 15.999962"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 160.00003,47.999965 V 15.999962"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 192.00002,47.999965 V 15.999962"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 95.999985,47.999965 V 15.999962"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 64.000001,47.999965 V 15.999962"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M 15.999975,95.999972 H 240.00002"></svg:path></svg:g>`,
-})
-export class GalaCalendarIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[galaBrochureIcon],svg[gala-brochure-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"><svg:path d="M 16.110084,16.110084 H 160.04176 L 96.072129,64.087313"></svg:path><svg:path d="m 16.110084,16.110084 -2e-6,175.916496 h 79.962047"></svg:path><svg:path d="M 96.072132,64.087313 H 240.00381 V 240.0038 H 96.072129 l 3e-6,-175.916487"></svg:path><svg:path d="M 160.04176,16.110084 V 64.087313"></svg:path></svg:g>`,
-})
-export class GalaBrochureIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")

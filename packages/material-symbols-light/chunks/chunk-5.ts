@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightChaletOutlineIcon],svg[material-symbols-light-chalet-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M17.616 10.885V9.53l-.866.865l-.546-.546l1.411-1.411V7.385h-1.053L15.15 8.796l-.546-.546l.865-.865h-1.354v-.77h1.354l-.865-.865l.546-.546l1.412 1.392h1.054V5.562L16.204 4.15l.546-.546l.865.865V3.116h.77v1.353l.865-.865l.546.546l-1.411 1.412v1.054h1.053l1.412-1.412l.546.546l-.865.865h1.354v.77H20.53l.865.865l-.546.546l-1.412-1.411h-1.053v1.054l1.411 1.411l-.546.546l-.865-.865v1.354zm-2.477 4.579L14 14.325V19H6v-4.7l-.946.946l-.689-.688L10 8.923l5.827 5.827zM7 18h2.5v-2.5h1V18H13v-4.675l-3-3l-3 2.98zm0 0h6z"></svg:path>`,
-})
-export class MaterialSymbolsLightChaletOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightChaletOutlineRoundedIcon],svg[material-symbols-light-chalet-outline-rounded-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightContactPageOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="M12 13.539q.633 0 1.066-.434t.434-1.066t-.434-1.067q-.433-.433-1.066-.433t-1.066.433t-.434 1.067t.434 1.066q.433.434 1.066.434m-3.5 3.384h7v-.152q0-.465-.248-.792t-.67-.52q-.604-.256-1.256-.396T12 14.923t-1.326.14t-1.257.396q-.42.193-.669.52q-.248.327-.248.792zM19 21H5V3h8.577L19 8.423zm-1-1V8.85L13.15 4H6v16zM6 20V4z"></svg:path>`,
 })
 export class MaterialSymbolsLightContactPageOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightContactPageRoundedIcon],svg[material-symbols-light-contact-page-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 13.539q.633 0 1.066-.434t.434-1.066t-.434-1.067q-.433-.433-1.066-.433t-1.066.433t-.434 1.067t.434 1.066q.433.434 1.066.434m-3.5 3.384h7v-.152q0-.465-.248-.792t-.67-.52q-.591-.255-1.24-.396q-.65-.14-1.342-.14t-1.341.14t-1.242.396q-.42.193-.669.52q-.248.327-.248.792zM17.385 21H6.615q-.69 0-1.152-.462T5 19.385V4.615q0-.69.463-1.152T6.616 3h6.29q.323 0 .628.13q.305.132.522.349l4.465 4.465q.218.218.348.522q.131.305.131.628v10.29q0 .691-.462 1.154T17.384 21"></svg:path>`,
+})
+export class MaterialSymbolsLightContactPageRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightVerticalDistributeRoundedIcon],svg[material-symbols-light-vertical-distribute-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.5 21q-.213 0-.356-.144T3 20.499t.144-.356T3.5 20h17q.213 0 .356.144t.144.357t-.144.356T20.5 21zm5-8q-.417 0-.708-.291q-.292-.291-.292-.707t.292-.709T8.5 11h7q.417 0 .708.291q.292.291.292.707t-.292.709T15.5 13zm-5-9q-.213 0-.356-.144T3 3.499t.144-.356T3.5 3h17q.213 0 .356.144t.144.357t-.144.356T20.5 4z"></svg:path>`,
-})
-export class MaterialSymbolsLightVerticalDistributeRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightVerticalShadesIcon],svg[material-symbols-light-vertical-shades-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightWaterPhIcon {
   template: `<svg:path fill="currentColor" d="M9.423 20.97q-2.78-.216-4.602-2.231Q3 16.723 3 13.8q0-2.154 1.738-4.765T10 3.308q3.429 3.04 5.166 5.583T17 13.57v.046h-1v-.046q-.096-1.806-1.599-4.048T10 4.65Q7.025 7.375 5.513 9.675T4 13.8q0 2.54 1.525 4.244t3.898 1.92zm2 .03v-5.384h3.5q.37 0 .627.276q.258.277.258.647v1.653q0 .37-.258.627t-.627.258h-2.615V21zm6.077 0v-5.384h.885v2H21v-2h.885V21H21v-2.5h-2.616V21zm-5.192-2.808h2.615V16.5h-2.615z"></svg:path>`,
 })
 export class MaterialSymbolsLightWaterPhOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightWaterPhOutlineRoundedIcon],svg[material-symbols-light-water-ph-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 3.6q.142 0 .279.053q.136.053.261.159q.947.86 2.002 1.929Q13.598 6.81 14.53 8t1.608 2.487t.831 2.628q.031.214-.113.357q-.144.144-.357.144t-.355-.144t-.18-.357q-.131-.842-.529-1.731q-.397-.89-1.037-1.863q-.75-1.13-1.853-2.345Q11.442 5.962 10 4.65Q7.025 7.375 5.513 9.675T4 13.8q0 2.28 1.322 3.996t3.624 2.096q.287.066.394.236t.071.347t-.167.321t-.333.102q-2.684-.387-4.298-2.397T3 13.8q0-1.413.648-2.815t1.623-2.708t2.1-2.456t2.076-2.003q.13-.109.27-.163T10 3.6m4.923 15.477h-2.615v1.48q0 .192-.125.318q-.125.125-.317.125t-.317-.125t-.126-.317v-4.346q0-.248.184-.422t.432-.174h2.884q.37 0 .627.276q.258.277.258.647v1.653q0 .37-.258.627t-.627.258m3.461-.577v2.058q0 .191-.125.317q-.125.125-.316.125t-.317-.125t-.126-.317v-4.5q0-.192.125-.317q.125-.126.316-.126t.318.126t.125.317v1.557H21v-1.557q0-.192.125-.317q.125-.126.317-.126t.317.126t.126.317v4.5q0 .191-.125.317q-.125.125-.317.125t-.317-.125t-.126-.317V18.5zm-6.076-.308h2.615V16.54h-2.615z"></svg:path>`,
+})
+export class MaterialSymbolsLightWaterPhOutlineRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

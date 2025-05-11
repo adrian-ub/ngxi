@@ -2,40 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[mdiAbTestingIcon],svg[mdi-ab-testing-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 2a2 2 0 0 0-2 2v8h2V8h2v4h2V4a2 2 0 0 0-2-2zm0 2h2v2H4m18 9.5V14a2 2 0 0 0-2-2h-4v10h4a2 2 0 0 0 2-2v-1.5a1.54 1.54 0 0 0-1.5-1.5a1.54 1.54 0 0 0 1.5-1.5M20 20h-2v-2h2zm0-4h-2v-2h2M5.79 21.61l-1.58-1.22l14-18l1.58 1.22Z"></svg:path>`,
-})
-export class MdiAbTestingIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiAbugidaDevanagariIcon],svg[mdi-abugida-devanagari-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 3v2h3c1.32 0 2.41.83 2.82 2H6v2h8v1h-2c-2.75 0-5 2.25-5 5s2.25 5 5 5c.77 0 1.45-.27 2-.7V21h2v-4h-2c-.45.62-1.17 1-2 1c-1.67 0-3-1.33-3-3s1.33-3 3-3h4V9h2V7h-2.1c-.47-2.28-2.49-4-4.9-4z"></svg:path>`,
-})
-export class MdiAbugidaDevanagariIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mdiAbacusIcon],svg[mdi-abacus-icon]',
   host: {
     role: 'img',
@@ -46,6 +12,23 @@ export class MdiAbugidaDevanagariIcon {
   template: `<svg:path fill="currentColor" d="M5 5h2v6H5zm5 0H8v6h2zM5 19h2v-6H5zm5-6H8v6h2v-2h5v-2h-5zm-8 8h2V3H2zM20 3v4h-7V5h-2v6h2V9h7v6h-2v-2h-2v6h2v-2h2v4h2V3z"></svg:path>`,
 })
 export class MdiAbacusIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiAbTestingIcon],svg[mdi-ab-testing-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 2a2 2 0 0 0-2 2v8h2V8h2v4h2V4a2 2 0 0 0-2-2zm0 2h2v2H4m18 9.5V14a2 2 0 0 0-2-2h-4v10h4a2 2 0 0 0 2-2v-1.5a1.54 1.54 0 0 0-1.5-1.5a1.54 1.54 0 0 0 1.5-1.5M20 20h-2v-2h2zm0-4h-2v-2h2M5.79 21.61l-1.58-1.22l14-18l1.58 1.22Z"></svg:path>`,
+})
+export class MdiAbTestingIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,23 +53,6 @@ export class MdiAbjadArabicIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[mdiAbjadHebrewIcon],svg[mdi-abjad-hebrew-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.9 4L9 10.03a3.44 3.44 0 0 0-3 2.56L4 20h2.07l1.85-6.89c.17-.65.77-1.11 1.44-1.11h1.33l6.78 8h2.63L15 13.97a3.44 3.44 0 0 0 3-2.56L20 4h-2.07l-1.85 6.89c-.17.65-.77 1.11-1.44 1.11h-1.33L6.53 4Z"></svg:path>`,
-})
-export class MdiAbjadHebrewIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mdiAbugidaThaiIcon],svg[mdi-abugida-thai-icon]',
   host: {
     role: 'img',
@@ -97,23 +63,6 @@ export class MdiAbjadHebrewIcon {
   template: `<svg:path fill="currentColor" d="M9 20c0-2.56 1.87-7.58 4.86-12.75C14.29 6.5 15.08 6 16 6c1.12 0 2 .88 2 2v12h2V8c0-2.2-1.8-4-4-4c-1.66 0-3.1.92-3.87 2.25c-1.57 2.71-2.52 4.9-3.13 6.78V6.5C9 5.13 7.87 4 6.5 4S4 5.13 4 6.5S5.13 9 6.5 9c.17 0 .34 0 .5-.05V20M6.5 6c.29 0 .5.21.5.5s-.21.5-.5.5s-.5-.21-.5-.5s.21-.5.5-.5"></svg:path>`,
 })
 export class MdiAbugidaThaiIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiAccessPointCheckIcon],svg[mdi-access-point-check-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m20.59 14.84l1.16 1.41L17 21l-2.75-3l1.16-1.16L17 18.43zm-1.52-9.91l-1.41 1.41A7.96 7.96 0 0 1 20 12v.34c.68.25 1.33.62 1.88 1.09c.07-.47.12-.93.12-1.43c0-2.76-1.12-5.26-2.93-7.07m-3.11 7.43c.64-.23 1.32-.36 2.04-.36c0-1.65-.67-3.15-1.76-4.24l-1.41 1.41A4 4 0 0 1 16 12c0 .12-.03.24-.04.36M12 10c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2M6.34 6.34L4.93 4.93C3.12 6.74 2 9.24 2 12s1.12 5.26 2.93 7.07l1.41-1.41A7.94 7.94 0 0 1 4 12c0-2.21.89-4.22 2.34-5.66m1.42 1.42C6.67 8.85 6 10.35 6 12s.67 3.15 1.76 4.24l1.41-1.41C8.45 14.11 8 13.11 8 12s.45-2.11 1.17-2.83z"></svg:path>`,
-})
-export class MdiAccessPointCheckIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,16 +87,50 @@ export class MdiAccessPointIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[mdiAccessPointMinusIcon],svg[mdi-access-point-minus-icon]',
+  selector: 'svg[mdiAccessPointCheckIcon],svg[mdi-access-point-check-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M16 12c0-1.11-.45-2.11-1.17-2.83l1.41-1.41A5.98 5.98 0 0 1 18 12c-.72 0-1.4.13-2.04.36c.01-.12.04-.24.04-.36m4 .34c.68.25 1.33.62 1.88 1.09c.07-.47.12-.93.12-1.43c0-2.76-1.12-5.26-2.93-7.07l-1.41 1.41A7.96 7.96 0 0 1 20 12zM12 10c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2M7.76 7.76C6.67 8.85 6 10.35 6 12s.67 3.15 1.76 4.24l1.41-1.41C8.45 14.11 8 13.11 8 12s.45-2.11 1.17-2.83zM6.34 6.34L4.93 4.93C3.12 6.74 2 9.24 2 12s1.12 5.26 2.93 7.07l1.41-1.41A7.94 7.94 0 0 1 4 12c0-2.21.89-4.22 2.34-5.66M14 19h8v-2h-8z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m20.59 14.84l1.16 1.41L17 21l-2.75-3l1.16-1.16L17 18.43zm-1.52-9.91l-1.41 1.41A7.96 7.96 0 0 1 20 12v.34c.68.25 1.33.62 1.88 1.09c.07-.47.12-.93.12-1.43c0-2.76-1.12-5.26-2.93-7.07m-3.11 7.43c.64-.23 1.32-.36 2.04-.36c0-1.65-.67-3.15-1.76-4.24l-1.41 1.41A4 4 0 0 1 16 12c0 .12-.03.24-.04.36M12 10c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2M6.34 6.34L4.93 4.93C3.12 6.74 2 9.24 2 12s1.12 5.26 2.93 7.07l1.41-1.41A7.94 7.94 0 0 1 4 12c0-2.21.89-4.22 2.34-5.66m1.42 1.42C6.67 8.85 6 10.35 6 12s.67 3.15 1.76 4.24l1.41-1.41C8.45 14.11 8 13.11 8 12s.45-2.11 1.17-2.83z"></svg:path>`,
 })
-export class MdiAccessPointMinusIcon {
+export class MdiAccessPointCheckIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiAbjadHebrewIcon],svg[mdi-abjad-hebrew-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.9 4L9 10.03a3.44 3.44 0 0 0-3 2.56L4 20h2.07l1.85-6.89c.17-.65.77-1.11 1.44-1.11h1.33l6.78 8h2.63L15 13.97a3.44 3.44 0 0 0 3-2.56L20 4h-2.07l-1.85 6.89c-.17.65-.77 1.11-1.44 1.11h-1.33L6.53 4Z"></svg:path>`,
+})
+export class MdiAbjadHebrewIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiAbugidaDevanagariIcon],svg[mdi-abugida-devanagari-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 3v2h3c1.32 0 2.41.83 2.82 2H6v2h8v1h-2c-2.75 0-5 2.25-5 5s2.25 5 5 5c.77 0 1.45-.27 2-.7V21h2v-4h-2c-.45.62-1.17 1-2 1c-1.67 0-3-1.33-3-3s1.33-3 3-3h4V9h2V7h-2.1c-.47-2.28-2.49-4-4.9-4z"></svg:path>`,
+})
+export class MdiAbugidaDevanagariIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8495,6 +8478,23 @@ export class MdiArrowBottomRightIcon {
   template: `<svg:path fill="currentColor" d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2m-3.2-5V8.9L13.7 11L9.8 7.2L7 10l3.8 3.9L8.7 16z"></svg:path>`,
 })
 export class MdiArrowBottomRightBoldBoxIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiArrowBottomRightBoldBoxOutlineIcon],svg[mdi-arrow-bottom-right-bold-box-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 16H8.9l2.1-2.1L7 10l2.8-2.8l4.1 3.9L16 8.9zM5 21h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2M5 5h14v14H5z"></svg:path>`,
+})
+export class MdiArrowBottomRightBoldBoxOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

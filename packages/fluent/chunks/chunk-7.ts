@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentChatAdd48RegularIcon],svg[fluent-chat-add-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M25.25 15.25a1.25 1.25 0 1 0-2.5 0v7.5h-7.5a1.25 1.25 0 1 0 0 2.5h7.5v7.5a1.25 1.25 0 1 0 2.5 0v-7.5h7.5a1.25 1.25 0 1 0 0-2.5h-7.5zM24 4C12.954 4 4 12.954 4 24c0 3.448.873 6.695 2.411 9.528L4.07 41.766c-.375 1.318.843 2.537 2.162 2.162l8.236-2.342A19.9 19.9 0 0 0 24 44c11.046 0 20-8.954 20-20S35.046 4 24 4M6.5 24c0-9.665 7.835-17.5 17.5-17.5S41.5 14.335 41.5 24S33.665 41.5 24 41.5c-3.19 0-6.177-.852-8.75-2.34a1.25 1.25 0 0 0-.968-.121l-7.44 2.116l2.116-7.443a1.25 1.25 0 0 0-.12-.967A17.4 17.4 0 0 1 6.5 24"></svg:path>`,
+})
+export class FluentChatAdd48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentChatArrowBack16FilledIcon],svg[fluent-chat-arrow-back-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7 1a6 6 0 0 0-5.27 8.872l-.71 2.49a.5.5 0 0 0 .638.612l2.338-.779c.468.271.976.48 1.513.618a5.5 5.5 0 0 1 7.305-7.304A6 6 0 0 0 7 1m3.5 14a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m-.896-6.396l-.897.896h1.543A2.75 2.75 0 0 1 13 12.25v.25a.5.5 0 0 1-1 0v-.25a1.75 1.75 0 0 0-1.75-1.75H8.707l.897.896a.5.5 0 0 1-.708.708L7.144 10.35a.5.5 0 0 1 .002-.705l1.75-1.75a.5.5 0 1 1 .708.708"></svg:path>`,
+})
+export class FluentChatArrowBack16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentChatArrowBack16RegularIcon],svg[fluent-chat-arrow-back-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7 1a6 6 0 0 0-5.27 8.872l-.71 2.49a.5.5 0 0 0 .638.612l2.338-.779c.468.271.976.48 1.513.618a5.5 5.5 0 0 1-.392-1.18a5 5 0 0 1-.792-.408a.5.5 0 0 0-.426-.052l-1.658.553l.51-1.781a.5.5 0 0 0-.052-.393a5 5 0 1 1 8.934-4.435a5.5 5.5 0 0 1 1.18.392A6 6 0 0 0 7 1m8 9.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0M9.604 7.896a.5.5 0 0 0-.708 0l-1.75 1.75a.5.5 0 0 0-.002.705l1.752 1.753a.5.5 0 0 0 .708-.708l-.897-.896h1.543c.966 0 1.75.784 1.75 1.75v.25a.5.5 0 0 0 1 0v-.25a2.75 2.75 0 0 0-2.75-2.75H8.707l.897-.896a.5.5 0 0 0 0-.708"></svg:path>`,
+})
+export class FluentChatArrowBack16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentChatArrowBack20FilledIcon],svg[fluent-chat-arrow-back-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 2a8 8 0 0 1 7.996 8.254a5.5 5.5 0 0 0-7.742 7.742a8 8 0 0 1-3.867-.857l-.121-.064l-3.645.91a.5.5 0 0 1-.62-.441v-.082l.014-.083l.91-3.644l-.063-.12a8 8 0 0 1-.83-2.887l-.025-.382L2 10a8 8 0 0 1 8-8m4.5 17a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m-.896-6.396l-.897.896h1.543A2.75 2.75 0 0 1 17 16.25v.25a.5.5 0 0 1-1 0v-.25a1.75 1.75 0 0 0-1.75-1.75h-1.543l.897.896a.5.5 0 0 1-.708.708l-1.752-1.753a.5.5 0 0 1 .002-.705l1.75-1.75a.5.5 0 0 1 .708.708"></svg:path>`,
+})
+export class FluentChatArrowBack20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentChatArrowBack20RegularIcon],svg[fluent-chat-arrow-back-20-regular-icon]',
   host: {
     role: 'img',
@@ -8428,74 +8496,6 @@ export class FluentCircleMultipleHintCheckmark32RegularIcon {
 })
 export class FluentCircleMultipleHintCheckmark48FilledIcon {
   readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentCircleMultipleHintCheckmark48RegularIcon],svg[fluent-circle-multiple-hint-checkmark-48-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.398 4.71c-.604.423-.638 1.283-.116 1.804c.458.458 1.185.489 1.721.126a12.4 12.4 0 0 1 4.62-1.914c.636-.123 1.129-.658 1.129-1.306c0-.737-.631-1.322-1.357-1.195A14.9 14.9 0 0 0 8.398 4.71m1.077 22.273c-.537-.405-1.298-.394-1.773.081c-.502.502-.49 1.326.07 1.763a14.9 14.9 0 0 0 6.242 2.876a17 17 0 0 1 .084-2.541a12.45 12.45 0 0 1-4.623-2.179m22.227-12.968a17 17 0 0 0-2.542.084a12.45 12.45 0 0 0-2.178-4.623c-.405-.536-.395-1.297.08-1.772c.503-.503 1.326-.49 1.764.07a14.9 14.9 0 0 1 2.876 6.24M25.11 6.12c.541-.54.485-1.438-.164-1.844a14.9 14.9 0 0 0-5.337-2.05c-.726-.127-1.357.458-1.357 1.195c0 .648.493 1.183 1.129 1.306c1.46.282 2.83.818 4.062 1.56c.534.322 1.227.274 1.667-.167M6.286 23.445c.322.534.273 1.226-.167 1.667c-.541.54-1.438.484-1.844-.164a14.9 14.9 0 0 1-2.05-5.34c-.128-.726.457-1.358 1.194-1.358c.648 0 1.183.494 1.306 1.13a12.4 12.4 0 0 0 1.56 4.065m.353-13.442c.363-.536.333-1.263-.125-1.721c-.521-.521-1.381-.488-1.805.115a14.9 14.9 0 0 0-2.484 5.996c-.128.726.457 1.357 1.194 1.357c.648 0 1.183-.493 1.306-1.129a12.4 12.4 0 0 1 1.914-4.618M31 18.5c-6.904 0-12.5 5.596-12.5 12.5S24.096 43.5 31 43.5S43.5 37.904 43.5 31S37.904 18.5 31 18.5M16 31c0-8.284 6.716-15 15-15s15 6.716 15 15s-6.716 15-15 15s-15-6.716-15-15m22.384-2.866a1.25 1.25 0 0 0-1.768-1.768L29 33.982l-3.616-3.616a1.25 1.25 0 0 0-1.768 1.768l4.5 4.5a1.25 1.25 0 0 0 1.768 0z"></svg:path>`,
-})
-export class FluentCircleMultipleHintCheckmark48RegularIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentCircleMultipleSubtractCheckmark20FilledIcon],svg[fluent-circle-multiple-subtract-checkmark-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.917 6A7 7 0 0 0 6 12.917A6.002 6.002 0 0 1 7 1a6 6 0 0 1 5.917 5M9.124 6H4.5a.5.5 0 0 0 0 1h3.208a8 8 0 0 1 1.416-1M19 13a6 6 0 1 1-12 0a6 6 0 0 1 12 0m-3.146-1.854a.5.5 0 0 0-.708 0L12.5 13.793l-1.146-1.147a.5.5 0 0 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0 0-.708"></svg:path>`,
-})
-export class FluentCircleMultipleSubtractCheckmark20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentCircleMultipleSubtractCheckmark20RegularIcon],svg[fluent-circle-multiple-subtract-checkmark-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7 2a5 5 0 0 1 4.916 4.083q.49-.076 1.001-.083A6.002 6.002 0 0 0 1 7a6 6 0 0 0 5 5.917q.007-.51.083-1A5.002 5.002 0 0 1 7 2M4.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm11.354 5.854a.5.5 0 0 0-.708-.708L12.5 13.793l-1.146-1.147a.5.5 0 0 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0zM13 19a6 6 0 1 0 0-12a6 6 0 0 0 0 12m0-1a5 5 0 1 1 0-10a5 5 0 0 1 0 10"></svg:path>`,
-})
-export class FluentCircleMultipleSubtractCheckmark20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentCircleOff16FilledIcon],svg[fluent-circle-off-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m11.874 12.582l2.272 2.272a.5.5 0 0 0 .708-.708l-13-13a.5.5 0 1 0-.708.708l2.272 2.272a6 6 0 0 0 8.456 8.456M14 8a5.97 5.97 0 0 1-.83 3.048L4.951 2.83A6 6 0 0 1 14 8"></svg:path>`,
-})
-export class FluentCircleOff16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
 }

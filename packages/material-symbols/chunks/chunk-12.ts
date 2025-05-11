@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsGasMeterOutlineIcon],svg[material-symbols-gas-meter-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 22q-1.65 0-2.825-1.175T4 18V8q0-1.65 1.175-2.825T8 4h1V2h2v2h2V2h2v2h1q1.65 0 2.825 1.175T20 8v10q0 1.65-1.175 2.825T16 22zm0-2h8q.825 0 1.413-.587T18 18V8q0-.825-.587-1.412T16 6H8q-.825 0-1.412.588T6 8v10q0 .825.588 1.413T8 20m0-10h8V8H8zm4 8q1.05 0 1.775-.712t.725-1.738q0-.825-.475-1.412T12 11.75q-1.575 1.8-2.037 2.4t-.463 1.4q0 1.025.725 1.738T12 18M6 6v14z"></svg:path>`,
-})
-export class MaterialSymbolsGasMeterOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsGasMeterOutlineRoundedIcon],svg[material-symbols-gas-meter-outline-rounded-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsHexagonIcon {
   template: `<svg:path fill="currentColor" d="m6.8 21l-5.2-9l5.2-9h10.4l5.2 9l-5.2 9zm1.15-2h8.1l4.025-7l-4.025-7h-8.1L3.9 12zM12 12"></svg:path>`,
 })
 export class MaterialSymbolsHexagonOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsHexagonOutlineRoundedIcon],svg[material-symbols-hexagon-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.95 21q-.55 0-1-.262T6.225 20l-4.05-7q-.275-.475-.275-1t.275-1l4.05-7q.275-.475.725-.737t1-.263h8.1q.55 0 1 .263t.725.737l4.05 7q.275.475.275 1t-.275 1l-4.05 7q-.275.475-.725.738t-1 .262zm0-2h8.1l4.025-7l-4.025-7h-8.1L3.9 12zM12 12"></svg:path>`,
+})
+export class MaterialSymbolsHexagonOutlineRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

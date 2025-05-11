@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightRowingRoundedIcon],svg[material-symbols-light-rowing-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m17.512 22.666l-1.693-1.693q-.13-.13-.186-.27t-.056-.301v-1.171l-7.408-7.408q-.225.05-.392.075l-.43.064v-1.047q1.192-.103 2.684-.883t2.196-1.54l1.323-1.396q.229-.298.56-.447t.717-.149q.662 0 1.129.467t.467 1.13V14q0 .708-.305 1.245t-.768.867l-2.273-2.262V9.07q-.904.886-1.873 1.476q-.97.59-1.927.923l7.03 7.031h1.172q.161 0 .3.056q.14.055.271.186l1.692 1.692q.242.243.242.566t-.242.566l-1.1 1.1q-.242.242-.565.242t-.566-.243M8.808 16.5l-2.942 2.942q-.172.172-.404.172t-.404-.172t-.171-.403t.17-.404l4.232-4.231l2.096 2.096zM15 5.27q-.633 0-1.066-.435q-.434-.433-.434-1.066t.434-1.066T15 2.269t1.066.434t.434 1.066t-.434 1.067q-.433.433-1.066.433m-7.654 6.693q-.219 0-.371-.152t-.152-.371t.152-.372q.152-.151.371-.151t.371.151t.152.372t-.152.37q-.151.153-.37.153"></svg:path>`,
-})
-export class MaterialSymbolsLightRowingRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightRssFeedIcon],svg[material-symbols-light-rss-feed-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightSettingsBackupRestoreRoundedIcon {
   template: `<svg:path fill="currentColor" d="M8 23.77q-.31 0-.54-.23T7.23 23t.23-.54t.54-.23t.54.23t.23.54t-.23.54t-.54.23m4 0q-.31 0-.54-.23t-.23-.54t.23-.54t.54-.23t.54.23t.23.54t-.23.54t-.54.23m4 0q-.31 0-.54-.23t-.23-.54t.23-.54t.54-.23t.54.23t.23.54t-.23.54t-.54.23m-4.5-4.462v-8.1l-5.1 5.1l-.708-.708l5.6-5.6l-5.6-5.6l.708-.708l5.1 5.1v-8.1h.5L17.008 5.7l-4.3 4.3l4.3 4.3L12 19.308zm1-1.927l3.092-3.081l-3.092-3.092zm0-8.589L15.592 5.7L12.5 2.62z"></svg:path>`,
 })
 export class MaterialSymbolsLightSettingsBluetoothIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightSettingsBluetoothRoundedIcon],svg[material-symbols-light-settings-bluetooth-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m11.5 11.208l-4.746 4.746q-.14.14-.344.15t-.364-.15t-.16-.354t.16-.354L11.292 10L6.046 4.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L11.5 8.792V2.137q0-.374.252-.594t.556-.22q.142 0 .288.056q.146.055.277.186l3.57 3.57q.13.13.183.267q.053.136.053.298t-.053.298t-.184.267L12.708 10l3.734 3.735q.131.13.184.267t.053.298t-.053.298t-.184.268l-3.569 3.569q-.13.13-.277.186q-.146.056-.288.056q-.304 0-.556-.22t-.252-.594zm1 6.173l3.092-3.081l-3.092-3.092zm0-8.589L15.592 5.7L12.5 2.62zM8 23.77q-.31 0-.54-.23T7.23 23t.23-.54t.54-.23t.54.23t.23.54t-.23.54t-.54.23m4 0q-.31 0-.54-.23t-.23-.54t.23-.54t.54-.23t.54.23t.23.54t-.23.54t-.54.23m4 0q-.31 0-.54-.23t-.23-.54t.23-.54t.54-.23t.54.23t.23.54t-.23.54t-.54.23"></svg:path>`,
+})
+export class MaterialSymbolsLightSettingsBluetoothRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

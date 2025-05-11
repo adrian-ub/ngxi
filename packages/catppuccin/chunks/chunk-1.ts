@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[catppuccinStylelintIgnoreIcon],svg[catppuccin-stylelint-ignore-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#8087a2" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M11.5 3.48L12 1.5h1.5l2 2l-1.5 1L15 6l-7 9.5l2.72-9.32M6.5 3.5l-2-1v4l2-1"></svg:path><svg:path d="m9.5 3.5l2-1v4l-2-1m-5-2.02L4 1.5H2.5l-2 2l1.5 1L1 6l7 9.5l-2.72-9.33M8.5 8a.5.5 0 0 1-.5.5a.5.5 0 0 1-.5-.5a.5.5 0 0 1 .5-.5a.5.5 0 0 1 .5.5"></svg:path><svg:path d="M6.5 3.5h3v2h-3z"></svg:path></svg:g>`,
+})
+export class CatppuccinStylelintIgnoreIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[catppuccinSublimeIcon],svg[catppuccin-sublime-icon]',
   host: {
     role: 'img',
@@ -1039,33 +1056,16 @@ export class CatppuccinZipIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[catppuccinAdobeAiIcon],svg[catppuccin-adobe-ai-icon]',
+  selector: 'svg[catppuccinAmberIcon],svg[catppuccin-amber-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="#f5a97f" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M14.5 4.389v7.222a2.89 2.89 0 0 1-2.889 2.889H4.39a2.89 2.89 0 0 1-2.89-2.889V4.39A2.89 2.89 0 0 1 4.389 1.5h7.222A2.89 2.89 0 0 1 14.5 4.389M11 8v3m0-5.007V6"></svg:path><svg:path d="m4.5 11l.844-2.25M9 11l-.844-2.25m-2.812 0L6.75 5l1.406 3.75m-2.812 0h2.812"></svg:path></svg:g>`,
+  template: `<svg:path fill="none" stroke="#f5a97f" stroke-linecap="round" stroke-linejoin="round" d="m4 5.5l4-4l4 4v5l-4 4l-4-4z"></svg:path>`,
 })
-export class CatppuccinAdobeAiIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[catppuccinAdobeAeIcon],svg[catppuccin-adobe-ae-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="#c6a0f6" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M14.5 4.389v7.222a2.89 2.89 0 0 1-2.889 2.889H4.39a2.89 2.89 0 0 1-2.89-2.889V4.39A2.89 2.89 0 0 1 4.389 1.5h7.222A2.89 2.89 0 0 1 14.5 4.389"></svg:path><svg:path d="M9.499 8.667V7.89a1.5 1.555 0 0 1 1.499-1.555v0a1.5 1.555 0 0 1 1.5 1.555v.777Zm0 0v.778A1.5 1.555 0 0 0 10.998 11h1.125M3.5 11l.843-2.333M8 11l-.843-2.333m-2.812 0L5.75 4.78l1.406 3.888m-2.812 0h2.812"></svg:path></svg:g>`,
-})
-export class CatppuccinAdobeAeIcon {
+export class CatppuccinAmberIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

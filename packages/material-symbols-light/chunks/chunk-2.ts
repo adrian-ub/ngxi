@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightArrowSplitRoundedIcon],svg[material-symbols-light-arrow-split-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5.5 12.5q-.213 0-.356-.144T5 11.999t.144-.356t.356-.143h6.042q.116 0 .221-.039t.202-.134L17.292 6H14.5q-.213 0-.356-.144T14 5.499t.144-.356T14.5 5h3.692q.344 0 .576.232t.232.576V9.5q0 .213-.144.356t-.357.144t-.356-.144T18 9.5V6.708l-5.313 5.313q-.218.218-.518.348t-.633.131zm9 6.5q-.213 0-.356-.144T14 18.499t.144-.356T14.5 18h2.792l-3.494-3.488q-.146-.146-.156-.347t.156-.367t.36-.165t.36.165L18 17.292V14.5q0-.213.144-.356t.357-.144t.356.144t.143.356v3.692q0 .344-.232.576t-.576.232z"></svg:path>`,
-})
-export class MaterialSymbolsLightArrowSplitRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightArrowTopLeftIcon],svg[material-symbols-light-arrow-top-left-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightBatteryPlusIcon {
   template: `<svg:path fill="currentColor" d="M8.692 21q-.343 0-.575-.232t-.233-.576V5.288q0-.343.233-.575t.575-.232h1.616V3h3.384v1.48h1.62q.344 0 .574.233q.23.232.23.576v6.903q-.275.039-.516.088t-.484.128V5.462H8.885V20h2.561q.104.287.228.527t.293.473zm7.693 0v-2.616h-2.616v-1h2.615V14.77h1v2.615H20v1h-2.616V21z"></svg:path>`,
 })
 export class MaterialSymbolsLightBatteryPlusOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightBatteryPlusOutlineRoundedIcon],svg[material-symbols-light-battery-plus-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.385 18.385h-2.116q-.212 0-.356-.144t-.144-.357t.144-.356t.356-.144h2.115V15.27q0-.212.144-.356t.357-.144t.356.144t.144.356v2.115H19.5q.213 0 .356.144t.144.357t-.144.356t-.356.144h-2.116V20.5q0 .213-.143.356q-.144.144-.357.144t-.356-.144t-.144-.356zM8.692 21q-.343 0-.575-.232t-.233-.576V5.288q0-.343.233-.575t.575-.232h1.616v-.673q0-.344.232-.576T11.116 3h1.769q.343 0 .575.232t.232.576v.673h1.62q.344 0 .574.232t.23.575v6.27q0 .212-.144.356t-.357.144t-.356-.144t-.143-.356V5.462H8.885V20h2.582q.213 0 .357.144t.143.357t-.143.356t-.357.143z"></svg:path>`,
+})
+export class MaterialSymbolsLightBatteryPlusOutlineRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

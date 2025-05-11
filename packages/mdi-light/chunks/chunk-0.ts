@@ -19,6 +19,23 @@ export class MdiLightAccountIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[mdiLightAccountAlertIcon],svg[mdi-light-account-alert-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.5 14c4.14 0 7.5 1.57 7.5 3.5V20H3v-2.5c0-1.93 3.36-3.5 7.5-3.5m6.5 3.5c0-1.38-2.91-2.5-6.5-2.5S4 16.12 4 17.5V19h13zM10.5 5A3.5 3.5 0 0 1 14 8.5a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 7 8.5A3.5 3.5 0 0 1 10.5 5m0 1A2.5 2.5 0 0 0 8 8.5a2.5 2.5 0 0 0 2.5 2.5A2.5 2.5 0 0 0 13 8.5A2.5 2.5 0 0 0 10.5 6M20 16v-1h1v1zm0-3V7h1v6z"></svg:path>`,
+})
+export class MdiLightAccountAlertIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mdiLightAlarmIcon],svg[mdi-light-alarm-icon]',
   host: {
     role: 'img',
@@ -53,6 +70,23 @@ export class MdiLightAlarmPanelIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[mdiLightAlarmPlusIcon],svg[mdi-light-alarm-plus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.5 6a7.5 7.5 0 0 1 7.5 7.5a7.5 7.5 0 0 1-7.5 7.5A7.5 7.5 0 0 1 4 13.5A7.5 7.5 0 0 1 11.5 6m0 1A6.5 6.5 0 0 0 5 13.5a6.5 6.5 0 0 0 6.5 6.5a6.5 6.5 0 0 0 6.5-6.5A6.5 6.5 0 0 0 11.5 7m3.75-1.75l.64-.75l3.83 3.2l-.64.76zm-7.5 0L3.92 8.46l-.64-.76l3.83-3.2zM11 11h1v2h2v1h-2v2h-1v-2H9v-1h2z"></svg:path>`,
+})
+export class MdiLightAlarmPlusIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mdiLightAlertCircleIcon],svg[mdi-light-alert-circle-icon]',
   host: {
     role: 'img',
@@ -63,6 +97,23 @@ export class MdiLightAlarmPanelIcon {
   template: `<svg:path fill="currentColor" d="M11.5 3a9.5 9.5 0 0 1 9.5 9.5a9.5 9.5 0 0 1-9.5 9.5A9.5 9.5 0 0 1 2 12.5A9.5 9.5 0 0 1 11.5 3m0 1A8.5 8.5 0 0 0 3 12.5a8.5 8.5 0 0 0 8.5 8.5a8.5 8.5 0 0 0 8.5-8.5A8.5 8.5 0 0 0 11.5 4M11 17v-2h1v2zm0-4V8h1v5z"></svg:path>`,
 })
 export class MdiLightAlertCircleIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiLightAlertIcon],svg[mdi-light-alert-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 21L11.5 2.81L22 21zm19.27-1L11.5 4.81L2.73 20zM11 14v-4h1v4zm0 2h1v2h-1z"></svg:path>`,
+})
+export class MdiLightAlertIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,16 +138,16 @@ export class MdiLightAlertOctagonIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[mdiLightAlarmPlusIcon],svg[mdi-light-alarm-plus-icon]',
+  selector: 'svg[mdiLightArrangeBringForwardIcon],svg[mdi-light-arrange-bring-forward-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M11.5 6a7.5 7.5 0 0 1 7.5 7.5a7.5 7.5 0 0 1-7.5 7.5A7.5 7.5 0 0 1 4 13.5A7.5 7.5 0 0 1 11.5 6m0 1A6.5 6.5 0 0 0 5 13.5a6.5 6.5 0 0 0 6.5 6.5a6.5 6.5 0 0 0 6.5-6.5A6.5 6.5 0 0 0 11.5 7m3.75-1.75l.64-.75l3.83 3.2l-.64.76zm-7.5 0L3.92 8.46l-.64-.76l3.83-3.2zM11 11h1v2h2v1h-2v2h-1v-2H9v-1h2z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M8 9h4v1H9.71l6.71 6.72l-.7.7L9 10.71V13H8zM3 4h12v9l-1-1V5H4v10h7l1 1H3zm17 5v12H8v-3h1v2h10V10h-2V9z"></svg:path>`,
 })
-export class MdiLightAlarmPlusIcon {
+export class MdiLightArrangeBringForwardIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5112,57 +5163,6 @@ export class MdiLightWifiIcon {
   template: `<svg:path fill="currentColor" d="m16.17 17.74l-.71-.7L20 12.5l-4.54-4.54l.71-.7l5.24 5.24zm-9.34 0L1.59 12.5l5.24-5.24l.71.7L3 12.5l4.54 4.54zM12.73 5h1l-3.46 15h-1z"></svg:path>`,
 })
 export class MdiLightXmlIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiLightAccountAlertIcon],svg[mdi-light-account-alert-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.5 14c4.14 0 7.5 1.57 7.5 3.5V20H3v-2.5c0-1.93 3.36-3.5 7.5-3.5m6.5 3.5c0-1.38-2.91-2.5-6.5-2.5S4 16.12 4 17.5V19h13zM10.5 5A3.5 3.5 0 0 1 14 8.5a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 7 8.5A3.5 3.5 0 0 1 10.5 5m0 1A2.5 2.5 0 0 0 8 8.5a2.5 2.5 0 0 0 2.5 2.5A2.5 2.5 0 0 0 13 8.5A2.5 2.5 0 0 0 10.5 6M20 16v-1h1v1zm0-3V7h1v6z"></svg:path>`,
-})
-export class MdiLightAccountAlertIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiLightAlertIcon],svg[mdi-light-alert-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1 21L11.5 2.81L22 21zm19.27-1L11.5 4.81L2.73 20zM11 14v-4h1v4zm0 2h1v2h-1z"></svg:path>`,
-})
-export class MdiLightAlertIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiLightArrangeBringForwardIcon],svg[mdi-light-arrange-bring-forward-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 9h4v1H9.71l6.71 6.72l-.7.7L9 10.71V13H8zM3 4h12v9l-1-1V5H4v10h7l1 1H3zm17 5v12H8v-3h1v2h10V10h-2V9z"></svg:path>`,
-})
-export class MdiLightArrangeBringForwardIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

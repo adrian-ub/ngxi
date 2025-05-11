@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[iconamoonMenuKebabVerticalLightIcon],svg[iconamoon-menu-kebab-vertical-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2.25" d="M12 12h.01v.01H12zm0-7h.01v.01H12zm0 14h.01v.01H12z"></svg:path>`,
+})
+export class IconamoonMenuKebabVerticalLightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconamoonMenuKebabVerticalSquareIcon],svg[iconamoon-menu-kebab-vertical-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linejoin="round"><svg:path stroke-linecap="round" stroke-width="2" d="M4 4.001h16v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"></svg:path><svg:path stroke-width="3" d="M12 12h.01v.01H12zm0-4.5h.01v.01H12zm0 9h.01v.01H12z"></svg:path></svg:g>`,
+})
+export class IconamoonMenuKebabVerticalSquareIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconamoonMenuKebabVerticalSquareBoldIcon],svg[iconamoon-menu-kebab-vertical-square-bold-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linejoin="round"><svg:path stroke-linecap="round" stroke-width="2.5" d="M4 4.001h16v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"></svg:path><svg:path stroke-width="3.75" d="M12 12h.01v.01H12zm0-4.5h.01v.01H12zm0 9h.01v.01H12z"></svg:path></svg:g>`,
+})
+export class IconamoonMenuKebabVerticalSquareBoldIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconamoonMenuKebabVerticalSquareDuotoneIcon],svg[iconamoon-menu-kebab-vertical-square-duotone-icon]',
   host: {
     role: 'img',
@@ -8444,57 +8495,6 @@ export class IconamoonShoppingCardRemoveDuotoneIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2 3a1 1 0 0 1 1-1h2a1 1 0 0 1 .997.923L6.157 5H21a1 1 0 0 1 .994 1.11l-.816 7.345a3 3 0 0 1-2.768 2.661l-10.355.74a3 3 0 0 1-3.205-2.763l-.616-8.016L4.074 4H3a1 1 0 0 1-1-1m9.5 7a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2zM16 20.5a1.5 1.5 0 0 1 1.5-1.5h.01a1.5 1.5 0 0 1 1.5 1.5v.01a1.5 1.5 0 0 1-1.5 1.5h-.01a1.5 1.5 0 0 1-1.5-1.5zM8.5 19A1.5 1.5 0 0 0 7 20.5v.01a1.5 1.5 0 0 0 1.5 1.5h.01a1.5 1.5 0 0 0 1.5-1.5v-.01a1.5 1.5 0 0 0-1.5-1.5z" clip-rule="evenodd"></svg:path>`,
 })
 export class IconamoonShoppingCardRemoveFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconamoonShoppingCardRemoveLightIcon],svg[iconamoon-shopping-card-remove-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="currentColor" d="M3 2.25a.75.75 0 0 0 0 1.5zM5 3l.748-.058A.75.75 0 0 0 5 2.25zm16 3l.745.083A.75.75 0 0 0 21 5.25zM5.23 6l-.747.058zm13.109 9.119l.053.748zm-10.355.74l-.053-.749zM3 3.75h2v-1.5H3zm5.037 12.856l10.355-.74l-.107-1.495l-10.354.74zm12.892-3.179l.816-7.344l-1.49-.166l-.816 7.345zM4.252 3.057l.231 3l1.496-.115l-.231-3zm.231 3l.617 8.017l1.495-.115l-.616-8.017zM21 5.25H5.23v1.5H21zm-2.608 10.617a2.75 2.75 0 0 0 2.537-2.44l-1.49-.165a1.25 1.25 0 0 1-1.154 1.109zM7.931 15.11a1.25 1.25 0 0 1-1.336-1.15l-1.495.114a2.75 2.75 0 0 0 2.937 2.532z"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.5 11h3"></svg:path><svg:path stroke="currentColor" stroke-linejoin="round" stroke-width="2.25" d="M17.5 20.5h.01v.01h-.01zm-9 0h.01v.01H8.5z"></svg:path></svg:g>`,
-})
-export class IconamoonShoppingCardRemoveLightIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconamoonShoppingCardRemoveThinIcon],svg[iconamoon-shopping-card-remove-thin-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="currentColor" d="M3 2.5a.5.5 0 0 0 0 1zM5 3l.499-.038A.5.5 0 0 0 5 2.5zm16 3l.497.055A.5.5 0 0 0 21 5.5zM5.23 6l-.498.038zm13.109 9.119l.035.498zm-10.355.74l-.036-.5zM3 3.5h2v-1H3zm5.02 12.857l10.354-.74l-.071-.997l-10.355.74zM20.68 13.4l.817-7.345l-.994-.11l-.816 7.344zM4.502 3.038l.231 3l.997-.076l-.23-3zm.231 3l.617 8.017l.997-.077l-.617-8.016zM21 5.5H5.23v1H21zm-2.626 10.117a2.5 2.5 0 0 0 2.307-2.217l-.994-.11a1.5 1.5 0 0 1-1.384 1.33zM7.948 15.36a1.5 1.5 0 0 1-1.602-1.382l-.997.077a2.5 2.5 0 0 0 2.67 2.302z"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M11.5 11h3"></svg:path><svg:path stroke="currentColor" stroke-linejoin="round" stroke-width="1.5" d="M17.5 20.5h.01v.01h-.01zm-9 0h.01v.01H8.5z"></svg:path></svg:g>`,
-})
-export class IconamoonShoppingCardRemoveThinIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconamoonShoppingCardThinIcon],svg[iconamoon-shopping-card-thin-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="currentColor" d="M3 2.5a.5.5 0 0 0 0 1zM5 3l.499-.038A.5.5 0 0 0 5 2.5zm16 3l.497.055A.5.5 0 0 0 21 5.5zM5.23 6l-.498.038zm13.109 9.119l.035.498zm-10.355.74l-.036-.5zM3 3.5h2v-1H3zm5.02 12.857l10.354-.74l-.071-.997l-10.355.74zM20.68 13.4l.817-7.345l-.994-.11l-.816 7.344zM4.502 3.038l.231 3l.997-.076l-.23-3zm.231 3l.617 8.017l.997-.077l-.617-8.016zM21 5.5H5.23v1H21zm-2.626 10.117a2.5 2.5 0 0 0 2.307-2.217l-.994-.11a1.5 1.5 0 0 1-1.384 1.33zM7.948 15.36a1.5 1.5 0 0 1-1.602-1.382l-.997.077a2.5 2.5 0 0 0 2.67 2.302z"></svg:path><svg:path stroke="currentColor" stroke-linejoin="round" stroke-width="1.5" d="M8.5 20.5h.01v.01H8.5zm9 0h.01v.01h-.01z"></svg:path></svg:g>`,
-})
-export class IconamoonShoppingCardThinIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

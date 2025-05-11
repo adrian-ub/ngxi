@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[pixelAdIcon],svg[pixel-ad-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M22 5V4H2v1H1v14h1v1h20v-1h1V5zm-1 13H3V6h18z"></svg:path><svg:path fill="currentColor" d="M18 7v3h-4v1h-1v5h1v1h5v-1h1V7zm-3 5h3v3h-3zm-5-2V9H9V8H8V7H7v1H6v1H5v1H4v7h2v-2h3v2h2v-7zm-1 3H6v-2h1v-1h1v1h1z"></svg:path>`,
+})
+export class PixelAdIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[pixelAdSolidIcon],svg[pixel-ad-solid-icon]',
   host: {
     role: 'img',
@@ -36,23 +53,6 @@ export class PixelAnalyticsIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pixelAdIcon],svg[pixel-ad-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M22 5V4H2v1H1v14h1v1h20v-1h1V5zm-1 13H3V6h18z"></svg:path><svg:path fill="currentColor" d="M18 7v3h-4v1h-1v5h1v1h5v-1h1V7zm-3 5h3v3h-3zm-5-2V9H9V8H8V7H7v1H6v1H5v1H4v7h2v-2h3v2h2v-7zm-1 3H6v-2h1v-1h1v1h1z"></svg:path>`,
-})
-export class PixelAdIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[pixelAngellistIcon],svg[pixel-angellist-icon]',
   host: {
     role: 'img',
@@ -63,6 +63,57 @@ export class PixelAdIcon {
   template: `<svg:path fill="currentColor" d="M18 12h1v7h-1zm0-10h1v3h-1zm-1 17h1v1h-1zm0-8h1v1h-1zm0-6h1v3h-1zm-1 15h1v1h-1zm0-12h1v2h-1zm0-7h2v1h-2zm-2 9h3v1h-3zm1-8h1v2h-1zm-1 19h2v1h-2zm0-17h1v3h-1zm-1 15h1v1h-1zm1-12v3h-3V9h1V7zm2 6v1h-1v1h-1v1h-1v3h-1v-1h-1v1h-1v-2h2v-3h-1v-1zm-5-9h1v3h-1zm-1 18h4v1h-4zm0-10h1v1h-1zm0-10h1v2h-1zM9 16h1v1H9zm2-6v1h-1v1H9v-1H7v-1h2V8h1v2zM8 21h2v1H8zm0-2h2v1H8zm0-4h1v1H8zM8 5h1v3H8zm0-4h2v1H8zM7 20h1v1H7zm0-2h1v1H7zM7 2h1v3H7zM6 19h1v1H6zm0-2h1v1H6zm0-6h1v3H6zm-1 7h1v1H5zm0-4h3v1H5zm-1 1h1v3H4z"></svg:path>`,
 })
 export class PixelAngellistIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pixelAnalyticsSolidIcon],svg[pixel-analytics-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 11h1v10h-1v1H8v-1H7V11h1v-1h2zm1-6h1v1h-1zm1 1h1v1h-1zm4 2h1v2h-1v1h-2v-1h-1V8h1V7h2zm0 7h1v6h-1v1h-2v-1h-1v-6h1v-1h2zm1-9h1v1h-1zm1-1h1v1h-1zm5-3v2h-1v1h-2V4h-1V2h1V1h2v1zm-1 9h1v10h-1v1h-2v-1h-1V11h1v-1h2zM5 7h1v1H5zM4 9h1v2H4v1H2v-1H1V9h1V8h2zm0 7h1v5H4v1H2v-1H1v-5h1v-1h2zM6 6h1v1H6zm2-2H7V2h1V1h2v1h1v2h-1v1H8z"></svg:path>`,
+})
+export class PixelAnalyticsSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pixelAndroidIcon],svg[pixel-android-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 10h1v2H5zm13 0h1v2h-1zm4 10v-2h-1v-1h-1v-1h-1v-1h-1v-3h-1v2h-2v-1H9v1H7v-2H6v3H5v1H4v1H3v1H2v2H1v3h22v-3zM8 18v2H6v-2zm8 0h2v2h-2z"></svg:path><svg:path fill="none" d="M0 0h24v24H0z"></svg:path>`,
+})
+export class PixelAndroidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pixelAngleDownIcon],svg[pixel-angle-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20 8v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1h-1v-1H9v-1H8v-1H7v-1H6v-1H5V9H4V8h1V7h1v1h1v1h1v1h1v1h1v1h1v1h2v-1h1v-1h1v-1h1V9h1V8h1V7h1v1z"></svg:path>`,
+})
+export class PixelAngleDownIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,16 +138,16 @@ export class PixelAngleDownSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pixelAnalyticsSolidIcon],svg[pixel-analytics-solid-icon]',
+  selector: 'svg[pixelAngleLeftIcon],svg[pixel-angle-left-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M10 11h1v10h-1v1H8v-1H7V11h1v-1h2zm1-6h1v1h-1zm1 1h1v1h-1zm4 2h1v2h-1v1h-2v-1h-1V8h1V7h2zm0 7h1v6h-1v1h-2v-1h-1v-6h1v-1h2zm1-9h1v1h-1zm1-1h1v1h-1zm5-3v2h-1v1h-2V4h-1V2h1V1h2v1zm-1 9h1v10h-1v1h-2v-1h-1V11h1v-1h2zM5 7h1v1H5zM4 9h1v2H4v1H2v-1H1V9h1V8h2zm0 7h1v5H4v1H2v-1H1v-5h1v-1h2zM6 6h1v1H6zm2-2H7V2h1V1h2v1h1v2h-1v1H8z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M11 13h1v1h1v1h1v1h1v1h1v1h1v1h-1v1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1H9v-1H8v-2h1v-1h1V9h1V8h1V7h1V6h1V5h1V4h1v1h1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1z"></svg:path>`,
 })
-export class PixelAnalyticsSolidIcon {
+export class PixelAngleLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -7203,57 +7254,6 @@ export class PixelXIcon {
   template: `<svg:path fill="currentColor" d="M22 7V5h-2V4H4v1H2v2H1v10h1v2h2v1h16v-1h2v-2h1V7zm-10 8h-2V9h2v1h2v1h2v2h-2v1h-2z"></svg:path>`,
 })
 export class PixelYoutubeIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pixelAngleDownIcon],svg[pixel-angle-down-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20 8v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1h-1v-1H9v-1H8v-1H7v-1H6v-1H5V9H4V8h1V7h1v1h1v1h1v1h1v1h1v1h1v1h2v-1h1v-1h1v-1h1V9h1V8h1V7h1v1z"></svg:path>`,
-})
-export class PixelAngleDownIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pixelAngleLeftIcon],svg[pixel-angle-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11 13h1v1h1v1h1v1h1v1h1v1h1v1h-1v1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1H9v-1H8v-2h1v-1h1V9h1V8h1V7h1V6h1V5h1V4h1v1h1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1z"></svg:path>`,
-})
-export class PixelAngleLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pixelAndroidIcon],svg[pixel-android-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 10h1v2H5zm13 0h1v2h-1zm4 10v-2h-1v-1h-1v-1h-1v-1h-1v-3h-1v2h-2v-1H9v1H7v-2H6v3H5v1H4v1H3v1H2v2H1v3h22v-3zM8 18v2H6v-2zm8 0h2v2h-2z"></svg:path><svg:path fill="none" d="M0 0h24v24H0z"></svg:path>`,
-})
-export class PixelAndroidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[letsIconsDoneRingRoundDuotoneLineIcon],svg[lets-icons-done-ring-round-duotone-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:circle cx="12" cy="12" r="9" fill="currentColor" fill-opacity=".25"></svg:circle><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="m9 10l3.258 2.444a1 1 0 0 0 1.353-.142L20 5"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="M21 12a9 9 0 1 1-6.67-8.693"></svg:path></svg:g>`,
+})
+export class LetsIconsDoneRingRoundDuotoneLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsDoneRingRoundFillIcon],svg[lets-icons-done-ring-round-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 0 0 7.51-13.961l-7.155 7.95a2 2 0 0 1-2.687.262L6.4 12.8a1 1 0 0 1 1.2-1.6l3.268 2.451l7.346-8.161A9 9 0 1 0 12 21" clip-rule="evenodd"></svg:path>`,
+})
+export class LetsIconsDoneRingRoundFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[letsIconsDoneRingRoundLightIcon],svg[lets-icons-done-ring-round-light-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class LetsIconsNfcLightIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-width="2"><svg:rect width="13" height="17" x="6" y="4" rx="2"></svg:rect><svg:path stroke-linecap="round" d="M15 10V8M4 9h4m-4 4h4m-4 4h4"></svg:path></svg:g>`,
 })
 export class LetsIconsNotebookIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[letsIconsNotebookDuotoneIcon],svg[lets-icons-notebook-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path stroke="currentColor" stroke-linecap="round" d="M3.5 7.5h4m-4 8h4m-4-4h4"></svg:path><svg:path fill="currentColor" fill-opacity=".25" fill-rule="evenodd" d="M5.01 5.695c-.003.143-.005.214.039.26c.044.045.116.045.26.045H7.5a1.5 1.5 0 1 1 0 3H5.3c-.141 0-.212 0-.256.044S5 9.159 5 9.3v.4c0 .141 0 .212.044.256S5.159 10 5.3 10h2.2a1.5 1.5 0 0 1 0 3H5.3c-.141 0-.212 0-.256.044S5 13.159 5 13.3v.4c0 .141 0 .212.044.256S5.159 14 5.3 14h2.2a1.5 1.5 0 0 1 0 3H5.3c-.141 0-.212 0-.256.044S5 17.159 5 17.3c.002 1.688.032 2.56.586 3.114C6.172 21 7.114 21 9 21h6c1.886 0 2.828 0 3.414-.586S19 18.886 19 17V7c0-1.886 0-2.828-.586-3.414S16.886 3 15 3H9c-1.886 0-2.828 0-3.414.586c-.432.431-.545 1.056-.575 2.11" clip-rule="evenodd"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" d="M15.5 10.5v-3"></svg:path></svg:g>`,
-})
-export class LetsIconsNotebookDuotoneIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[letsIconsNotebookDuotoneLineIcon],svg[lets-icons-notebook-duotone-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.2"><svg:rect width="13" height="17" x="6" y="4" fill="currentColor" fill-opacity=".25" rx="2"></svg:rect><svg:path stroke-linecap="round" d="M15 10V8M4 9h4m-4 4h4m-4 4h4"></svg:path></svg:g>`,
-})
-export class LetsIconsNotebookDuotoneLineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

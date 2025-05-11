@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[hugeiconsFileBlockIcon],svg[hugeicons-file-block-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M8.975 7.975a3.5 3.5 0 1 0-4.95-4.95m4.95 4.95a3.5 3.5 0 1 1-4.95-4.95m4.95 4.95l-4.95-4.95"></svg:path><svg:path d="M12.5 2h.773c3.26 0 4.892 0 6.024.798c.324.228.612.5.855.805c.848 1.066.848 2.6.848 5.67v2.545c0 2.963 0 4.445-.469 5.628c-.754 1.903-2.348 3.403-4.37 4.113c-1.257.441-2.83.441-5.98.441c-1.798 0-2.698 0-3.416-.252c-1.155-.406-2.066-1.263-2.497-2.35C4 18.722 4 17.875 4 16.182v-4.364"></svg:path><svg:path d="M21 12a3.333 3.333 0 0 1-3.333 3.333c-.666 0-1.451-.116-2.098.057a1.67 1.67 0 0 0-1.179 1.179c-.173.647-.057 1.432-.057 2.098A3.333 3.333 0 0 1 11 22"></svg:path></svg:g>`,
+})
+export class HugeiconsFileBlockIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[hugeiconsFileBookmarkIcon],svg[hugeicons-file-bookmark-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class HugeiconsInsertColumnIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M2.813 18c.201.889.533 1.564 1.078 2.109C5.28 21.5 7.52 21.5 11.999 21.5s6.718 0 8.11-1.391c1.39-1.392 1.39-3.63 1.39-8.109c0-4.478 0-6.718-1.39-8.109C18.716 2.5 16.477 2.5 11.998 2.5s-6.717 0-8.108 1.391c-.545.545-.877 1.22-1.078 2.109"></svg:path><svg:path d="m5.5 9l-3 3l3 3m-2-3h7M15 2.498v19m6.5-13H15m6.5 7H15"></svg:path></svg:g>`,
 })
 export class HugeiconsInsertColumnLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsInsertColumnRightIcon],svg[hugeicons-insert-column-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M21.187 18c-.202.889-.533 1.564-1.078 2.109C18.717 21.5 16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391c.545.545.876 1.22 1.078 2.109"></svg:path><svg:path d="m18.5 9l3 3l-3 3m2-3h-7M9 2.498v19m-6.502-13h6.5m-6.5 7h6.5"></svg:path></svg:g>`,
-})
-export class HugeiconsInsertColumnRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

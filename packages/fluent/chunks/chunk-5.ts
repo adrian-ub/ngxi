@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentBuildingFactory20FilledIcon],svg[fluent-building-factory-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.938 3.4A1.5 1.5 0 0 1 4.435 2h1.129a1.5 1.5 0 0 1 1.497 1.4l.866 13A1.5 1.5 0 0 1 6.431 18H3.568a1.5 1.5 0 0 1-1.496-1.6zM8.431 18c.346-.46.536-1.043.494-1.666l-.521-7.82l3.761-3.386A.5.5 0 0 1 13 5.5v3.377l4.165-3.749A.5.5 0 0 1 18 5.5v11a1.5 1.5 0 0 1-1.5 1.5zM16 17v-4.2a.8.8 0 0 0-.8-.8h-3.4a.8.8 0 0 0-.8.8V17z"></svg:path>`,
+})
+export class FluentBuildingFactory20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBuildingFactory20RegularIcon],svg[fluent-building-factory-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.435 2a1.5 1.5 0 0 0-1.497 1.4l-.866 13A1.5 1.5 0 0 0 3.568 18h2.863a1.5 1.5 0 0 0 1.496-1.6l-.866-13A1.5 1.5 0 0 0 5.564 2zm-.499 1.467a.5.5 0 0 1 .5-.467h1.128a.5.5 0 0 1 .499.467l.867 13a.5.5 0 0 1-.5.533H3.569a.5.5 0 0 1-.498-.533zM16.5 18H8.43a2.5 2.5 0 0 0 .45-1H10v-4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4h.5a.5.5 0 0 0 .5-.5V6.623l-4.166 3.749a.5.5 0 0 1-.835-.372V6.623l-3.51 3.16l-.085-1.27l3.761-3.385A.5.5 0 0 1 13 5.5v3.377l4.165-3.749A.5.5 0 0 1 18 5.5v11a1.5 1.5 0 0 1-1.5 1.5M11 17h4v-4h-4z"></svg:path>`,
+})
+export class FluentBuildingFactory20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBuildingFactory24FilledIcon],svg[fluent-building-factory-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.923 4.129A2.25 2.25 0 0 1 5.17 2h1.158a2.25 2.25 0 0 1 2.246 2.129l.838 15.5A2.25 2.25 0 0 1 7.166 22H4.332a2.25 2.25 0 0 1-2.247-2.371zM9.511 22h10.238a2.25 2.25 0 0 0 2.25-2.25V6a.75.75 0 0 0-1.259-.551l-5.24 4.838V6a.75.75 0 0 0-1.259-.551L9.866 9.487l.545 10.088c.05.938-.3 1.8-.9 2.425m3.488-6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4.5h-6z"></svg:path>`,
+})
+export class FluentBuildingFactory24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentBuildingFactory24RegularIcon],svg[fluent-building-factory-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.17 2a2.25 2.25 0 0 0-2.247 2.129l-.838 15.5A2.25 2.25 0 0 0 4.332 22h2.834a2.25 2.25 0 0 0 2.246-2.371l-.838-15.5A2.25 2.25 0 0 0 6.328 2zm-.75 2.21a.75.75 0 0 1 .749-.71h1.158a.75.75 0 0 1 .749.71l.837 15.5a.75.75 0 0 1-.748.79H4.332a.75.75 0 0 1-.749-.79zM9.511 22c.395-.412.683-.928.818-1.5h1.17v-4.25c0-.966.783-1.75 1.75-1.75h4c.966 0 1.75.784 1.75 1.75v4.25h.75a.75.75 0 0 0 .75-.75V7.713l-5.241 4.838a.75.75 0 0 1-1.26-.551V7.713l-4.027 3.718l-.105-1.944l4.374-4.038A.75.75 0 0 1 15.5 6v4.287l5.241-4.838A.75.75 0 0 1 22 6v13.75A2.25 2.25 0 0 1 19.75 22zm3.488-5.75v4.25h4.5v-4.25a.25.25 0 0 0-.25-.25h-4a.25.25 0 0 0-.25.25"></svg:path>`,
+})
+export class FluentBuildingFactory24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentBuildingFactory28FilledIcon],svg[fluent-building-factory-28-filled-icon]',
   host: {
     role: 'img',
@@ -8428,74 +8496,6 @@ export class FluentCalendarToday16FilledIcon {
 })
 export class FluentCalendarToday16RegularIcon {
   readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentCalendarToday20FilledIcon],svg[fluent-calendar-today-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10 10a1 1 0 1 0 0-2a1 1 0 0 0 0 2m7 4.5V7H3v7.5A2.5 2.5 0 0 0 5.5 17h3v-1.75a1.5 1.5 0 0 1-.976-2.639l.01-.009l1.496-1.247a1.5 1.5 0 0 1 1.94 0l1.506 1.256a1.5 1.5 0 0 1-.976 2.639V17h3a2.5 2.5 0 0 0 2.5-2.5M12 9a2 2 0 1 1-4 0a2 2 0 0 1 4 0m5-3.5A2.5 2.5 0 0 0 14.5 3h-9A2.5 2.5 0 0 0 3 5.5V6h14zm-5.82 8.634a.5.5 0 0 0 .64-.768l-1.5-1.25a.5.5 0 0 0-.64 0l-1.5 1.25a.5.5 0 1 0 .64.768l.68-.566V17.5a.5.5 0 1 0 1 0v-3.932z"></svg:path>`,
-})
-export class FluentCalendarToday20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentCalendarToday20RegularIcon],svg[fluent-calendar-today-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.5 3A2.5 2.5 0 0 1 17 5.5v9a2.5 2.5 0 0 1-2.5 2.5h-3v-1h3a1.5 1.5 0 0 0 1.5-1.5V7H4v7.5A1.5 1.5 0 0 0 5.5 16h3v1h-3A2.5 2.5 0 0 1 3 14.5v-9A2.5 2.5 0 0 1 5.5 3zm0 1h-9A1.5 1.5 0 0 0 4 5.5V6h12v-.5A1.5 1.5 0 0 0 14.5 4M11 9a1 1 0 1 1-2 0a1 1 0 0 1 2 0m.884 5.07a.5.5 0 0 1-.704.064l-.68-.566V17.5a.5.5 0 1 1-1 0v-3.932l-.68.566a.5.5 0 0 1-.64-.768l1.5-1.25a.5.5 0 0 1 .64 0l1.5 1.25a.5.5 0 0 1 .064.704"></svg:path>`,
-})
-export class FluentCalendarToday20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentCalendarToday24FilledIcon],svg[fluent-calendar-today-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13.25 11.75a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M21 8.5v9.25A3.25 3.25 0 0 1 17.75 21h-4v-1.573a1.75 1.75 0 0 0 1.663-2.985l-2.25-2a1.75 1.75 0 0 0-2.326 0l-2.25 2a1.75 1.75 0 0 0 1.663 2.985V21h-4A3.25 3.25 0 0 1 3 17.75V8.5zM12 14a2.25 2.25 0 1 0 0-4.5a2.25 2.25 0 0 0 0 4.5m5.75-11A3.25 3.25 0 0 1 21 6.25V7H3v-.75A3.25 3.25 0 0 1 6.25 3zm-2.94 15.248a.75.75 0 0 1-1.058.063l-1.002-.89v3.829a.75.75 0 0 1-1.5 0v-3.83l-1.002.89a.75.75 0 0 1-.996-1.12l2.25-2a.75.75 0 0 1 .996 0l2.25 2a.75.75 0 0 1 .063 1.058"></svg:path>`,
-})
-export class FluentCalendarToday24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentCalendarToday24RegularIcon],svg[fluent-calendar-today-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21 6.25A3.25 3.25 0 0 0 17.75 3H6.25A3.25 3.25 0 0 0 3 6.25v11.5A3.25 3.25 0 0 0 6.25 21h4v-1.5h-4a1.75 1.75 0 0 1-1.75-1.75V8.5h15v9.25a1.75 1.75 0 0 1-1.75 1.75h-4V21h4A3.25 3.25 0 0 0 21 17.75zM6.25 4.5h11.5c.966 0 1.75.784 1.75 1.75V7h-15v-.75c0-.966.784-1.75 1.75-1.75m7 7.25a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0m.502 6.56a.75.75 0 0 0 .996-1.12l-2.25-2a.75.75 0 0 0-.996 0l-2.25 2a.75.75 0 0 0 .996 1.12l1.002-.89v3.83a.75.75 0 1 0 1.5 0v-3.83z"></svg:path>`,
-})
-export class FluentCalendarToday24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
 }

@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[carbonNetwork2Icon],svg[carbon-network-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17 17h5.142a4 4 0 1 0 0-2H17V7h5.142a4 4 0 1 0 0-2H17a2 2 0 0 0-2 2v8H9.858a4 4 0 1 0 0 2H15v8a2 2 0 0 0 2 2h5.142a4 4 0 1 0 0-2H17Zm9-3a2 2 0 1 1-2 2a2 2 0 0 1 2-2m0-10a2 2 0 1 1-2 2a2 2 0 0 1 2-2M6 18a2 2 0 1 1 2-2a2 2 0 0 1-2 2m20 6a2 2 0 1 1-2 2a2 2 0 0 1 2-2"></svg:path>`,
+})
+export class CarbonNetwork2Icon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonNetwork3Icon],svg[carbon-network-3-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M30 30h-8v-8h8zm-6-2h4v-4h-4zm-4-1H8a6 6 0 0 1 0-12h2v2H8a4 4 0 0 0 0 8h12z"></svg:path><svg:path fill="currentColor" d="M20 20h-8v-8h8Zm-6-2h4v-4h-4Z"></svg:path><svg:path fill="currentColor" d="M24 17h-2v-2h2a4 4 0 0 0 0-8H12V5h12a6 6 0 0 1 0 12m-14-7H2V2h8zM4 8h4V4H4z"></svg:path>`,
+})
+export class CarbonNetwork3Icon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[carbonNetwork3ReferenceIcon],svg[carbon-network-3-reference-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class CarbonStatusAcknowledgeIcon {
   template: `<svg:path d="M7 30a5 5 0 1 1 5-5a5.006 5.006 0 0 1-5 5zm0-8a3 3 0 1 0 3 3a3.003 3.003 0 0 0-3-3z" fill="currentColor"></svg:path><svg:path d="M23 30a5 5 0 1 1 5-5a5.006 5.006 0 0 1-5 5zm0-8a3 3 0 1 0 3 3a3.003 3.003 0 0 0-3-3z" fill="currentColor"></svg:path><svg:path d="M24 7v7l3.586-3.414L29 12l-6 6l-6-6l1.414-1.414L22 14V7a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v11H6V7a3.003 3.003 0 0 1 3-3h12a3.003 3.003 0 0 1 3 3z" fill="currentColor"></svg:path>`,
 })
 export class CarbonStatusChangeIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[carbonStatusPartialFailIcon],svg[carbon-status-partial-fail-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M25.14 23.764l1.532 1.285a13.976 13.976 0 0 0 2.441-4.182l-1.878-.683a11.973 11.973 0 0 1-2.094 3.58z" fill="currentColor"></svg:path><svg:path d="M18 27.81l.413 1.968a13.889 13.889 0 0 0 4.541-1.638L22 26.409a12.52 12.52 0 0 1-4 1.401z" fill="currentColor"></svg:path><svg:path d="M10 26.409L9 28.14a14.14 14.14 0 0 0 4.587 1.638l.347-1.967A12.152 12.152 0 0 1 10 26.409z" fill="currentColor"></svg:path><svg:path d="M4.765 20.184l-1.878.683a13.976 13.976 0 0 0 2.44 4.182l1.532-1.285a11.973 11.973 0 0 1-2.094-3.58z" fill="currentColor"></svg:path><svg:path d="M16 22a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 16 22z" fill="currentColor"></svg:path><svg:path d="M15 8h2v11h-2z" fill="currentColor"></svg:path><svg:path d="M30 16h-2a12 12 0 0 0-24 0H2a14 14 0 0 1 28 0z" fill="currentColor"></svg:path>`,
-})
-export class CarbonStatusPartialFailIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[carbonStatusResolvedIcon],svg[carbon-status-resolved-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M21 28.414l-5-5.001L17.413 22L21 25.586L28.585 18L30 19.415l-9 8.999z" fill="currentColor"></svg:path><svg:path d="M12 15.59L9.41 13L8 14.41l4 4l7-7L17.59 10L12 15.59z" fill="currentColor"></svg:path><svg:path d="M11.82 25.802a11.992 11.992 0 1 1 13.982-9.621l-1.967-.362a10.001 10.001 0 1 0-11.654 8.016z" fill="currentColor"></svg:path>`,
-})
-export class CarbonStatusResolvedIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

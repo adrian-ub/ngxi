@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsTableEyeOutlineRoundedIcon],svg[material-symbols-table-eye-outline-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v6.875q0 .425-.288.713t-.712.287t-.712-.288t-.288-.712V9h-6.25v3.5q0 .825-.587 1.413t-1.413.587H5V19h1.625q.425 0 .713.288t.287.712t-.288.713t-.712.287zm0-8.5h5.75V9H5zM5 7h14V5H5zm11 16q-1.975 0-3.687-.9T9.55 19.55q-.15-.225-.225-.488t-.075-.537t.075-.55t.225-.525q1.05-1.65 2.763-2.55T16 14t3.688.9t2.762 2.55q.15.25.225.513t.075.537t-.075.538t-.225.512q-1.05 1.65-2.762 2.55T16 23m0-2q1.425 0 2.688-.65t2.062-1.85q-.8-1.2-2.062-1.85T16 16t-2.687.65t-2.063 1.85q.8 1.2 2.063 1.85T16 21m0-1q-.625 0-1.062-.437T14.5 18.5t.438-1.062T16 17t1.063.438t.437 1.062t-.437 1.063T16 20"></svg:path>`,
-})
-export class MaterialSymbolsTableEyeOutlineRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsTableEyeOutlineSharpIcon],svg[material-symbols-table-eye-outline-sharp-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsTouchpadMouseOffRoundedIcon {
   template: `<svg:path fill="currentColor" d="M2 20V4h2.025l5.9 5.9q-.45.8-.687 1.713T9 13.5v3q0 .9.213 1.8T9.85 20zM6.875 4H22v4.4q-1.075-1.175-2.488-1.787T16.5 6q-1.575 0-2.95.613t-2.4 1.662zM17.5 13V8.075q1.875.325 3.15 1.688T22 13zm-2-4.925v4.55l-3-3q.6-.6 1.363-1t1.637-.55m6.05 10.6L17.875 15H22v1.5q0 .575-.125 1.125t-.325 1.05M16.5 22q-2.3 0-3.9-1.6T11 16.5V15h1.175L.675 3.5L2.1 2.075l19.8 19.8l-1.425 1.425l-1.75-1.75q-.5.225-1.062.338T16.5 22"></svg:path>`,
 })
 export class MaterialSymbolsTouchpadMouseOffSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsTouchpadMouseOutlineIcon],svg[material-symbols-touchpad-mouse-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.5 20q1.45 0 2.475-1.025T20 16.5V15h-7v1.5q0 1.45 1.025 2.475T16.5 20m-3.475-7H15.5v-2.85q-.95.275-1.638 1.05t-.837 1.8m4.475 0h2.475q-.15-1.025-.837-1.8T17.5 10.15zm-1 9q-2.3 0-3.9-1.6T11 16.5v-3q0-2.3 1.6-3.9T16.5 8t3.9 1.6t1.6 3.9v3q0 2.3-1.6 3.9T16.5 22M4 18V6zm0 2q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6H4v12h5.025v2z"></svg:path>`,
+})
+export class MaterialSymbolsTouchpadMouseOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

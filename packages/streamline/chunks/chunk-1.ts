@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[streamlineCloudGaming1Icon],svg[streamline-cloud-gaming-1-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M4.579 6.126v2.786M3.186 7.519h2.786M.5 7a4.643 4.643 0 0 0 4.643 4.643h4.643a3.714 3.714 0 1 0-.856-7.33A4.643 4.643 0 0 0 .5 7"></svg:path><svg:path d="M9.131 7.853a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m2.139.25a.125.125 0 1 1 0-.25m0 .25a.125.125 0 0 0 0-.25m-1.045-.797a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25m0 2.388a.125.125 0 0 1 0-.25m0 .25a.125.125 0 0 0 0-.25"></svg:path></svg:g>`,
-})
-export class StreamlineCloudGaming1Icon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[streamlineCloudGaming1SolidIcon],svg[streamline-cloud-gaming-1-solid-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class StreamlineForkSpoonSolidIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M3.67.5a1 1 0 0 0-1 .89C2.56 2.45 2.5 4.05 2.5 4.5c0 2.62 2 4 4.5 4s4.5-1.38 4.5-4c0-.45-.06-2-.17-3.11a1 1 0 0 0-1-.89zM7 8.5v5m-2 0h4"></svg:path><svg:path d="m7 .5l-1.5 2l2 1.5l-1 1.5"></svg:path></svg:g>`,
 })
 export class StreamlineFragileIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineFragileSolidIcon],svg[streamline-fragile-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M6.048 0H3.254a1.136 1.136 0 0 0-1.125 1.001L1.937 4.5c0 2.588 1.736 4.1 4.063 4.431v3.045H4.165a1 1 0 1 0 0 2h5.67a1 1 0 1 0 0-2H8V8.93c2.327-.33 4.063-1.843 4.063-4.431L11.871 1a1.136 1.136 0 0 0-1.125-1H7.534l-.009.014L6.318 1.89L7.91 3.282c.224.196.28.523.131.781l-1 1.747a.625.625 0 0 1-1.084-.62l.745-1.303l-1.614-1.41a.625.625 0 0 1-.115-.81z" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineFragileSolidIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsIntegrationInstructionsSharpIcon],svg[material-symbols-integration-instructions-sharp-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m9.6 15.6l1.4-1.45L8.85 12L11 9.85L9.6 8.4L6 12zm4.8 0L18 12l-3.6-3.6L13 9.85L15.15 12L13 14.15zM3 21V3h6.2q.325-.9 1.088-1.45T12 1t1.713.55T14.8 3H21v18zm9-16.75q.325 0 .538-.213t.212-.537t-.213-.537T12 2.75t-.537.213t-.213.537t.213.538t.537.212"></svg:path>`,
-})
-export class MaterialSymbolsIntegrationInstructionsSharpIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsInteractiveSpaceIcon],svg[material-symbols-interactive-space-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLineStartCircleIcon {
   template: `<svg:path fill="currentColor" d="M8 16q1.65 0 2.825-1.175T12 12t-1.175-2.825T8 8T5.175 9.175T4 12t1.175 2.825T8 16m0 2q-2.5 0-4.25-1.75T2 12t1.75-4.25T8 6q2.25 0 3.913 1.425T13.925 11H22v2h-8.075q-.35 2.15-2.013 3.575T8 18m0-6"></svg:path>`,
 })
 export class MaterialSymbolsLineStartCircleOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLineStartCircleOutlineRoundedIcon],svg[material-symbols-line-start-circle-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 16q1.65 0 2.825-1.175T12 12t-1.175-2.825T8 8T5.175 9.175T4 12t1.175 2.825T8 16m0 2q-2.5 0-4.25-1.75T2 12t1.75-4.25T8 6q2.25 0 3.913 1.425T13.925 11H21q.425 0 .713.288T22 12t-.288.713T21 13h-7.075q-.35 2.15-2.013 3.575T8 18m0-6"></svg:path>`,
+})
+export class MaterialSymbolsLineStartCircleOutlineRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

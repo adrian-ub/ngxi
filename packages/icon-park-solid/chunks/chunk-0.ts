@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[iconParkSolidAbnormalIcon],svg[icon-park-solid-abnormal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:mask id="ipSAbnormal0"><svg:g fill="none"><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M40 16.398V6a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v36a2 2 0 0 0 2 2h10"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-width="4" d="M16 14h13m-13 7h5"></svg:path><svg:circle cx="34" cy="34" r="10" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="rotate(90 34 34)"></svg:circle><svg:path stroke="#000" stroke-linecap="round" stroke-width="4" d="M34 36v3"></svg:path><svg:circle cx="34" cy="30" r="2" fill="#000"></svg:circle></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSAbnormal0)"></svg:path>`,
-})
-export class IconParkSolidAbnormalIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[iconParkSolidACaneIcon],svg[icon-park-solid-a-cane-icon]',
   host: {
     role: 'img',
@@ -36,6 +19,23 @@ export class IconParkSolidACaneIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkSolidAbnormalIcon],svg[icon-park-solid-abnormal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipSAbnormal0"><svg:g fill="none"><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M40 16.398V6a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v36a2 2 0 0 0 2 2h10"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-width="4" d="M16 14h13m-13 7h5"></svg:path><svg:circle cx="34" cy="34" r="10" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="rotate(90 34 34)"></svg:circle><svg:path stroke="#000" stroke-linecap="round" stroke-width="4" d="M34 36v3"></svg:path><svg:circle cx="34" cy="30" r="2" fill="#000"></svg:circle></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSAbnormal0)"></svg:path>`,
+})
+export class IconParkSolidAbnormalIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkSolidAccelerationIcon],svg[icon-park-solid-acceleration-icon]',
   host: {
     role: 'img',
@@ -46,23 +46,6 @@ export class IconParkSolidACaneIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"><svg:path d="M42 35h-8m-3 7h-4"></svg:path><svg:path fill="currentColor" stroke-linejoin="round" d="m14 22l-6-5H4s5.486 10 8 10h32l-6-5z"></svg:path><svg:path stroke-linejoin="round" d="m30 22l-11.34-8H16l3 8m11 5L17.2 39H14l4.267-12"></svg:path><svg:path fill="currentColor" stroke-linejoin="round" d="M32 11c0 1-3 2-3 2h10s2.886 0 3.745-2.286C43.63 8.36 42.045 5 39.022 5S36 8 36 8s-1.855-.571-3 0s-1 2-1 3"></svg:path></svg:g>`,
 })
 export class IconParkSolidAccelerationIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkSolidAddIcon],svg[icon-park-solid-add-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:mask id="ipSAdd0"><svg:g fill="none" stroke-linejoin="round" stroke-width="4"><svg:rect width="36" height="36" x="6" y="6" fill="#fff" stroke="#fff" rx="3"></svg:rect><svg:path stroke="#000" stroke-linecap="round" d="M24 16v16m-8-8h16"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSAdd0)"></svg:path>`,
-})
-export class IconParkSolidAddIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,6 +87,23 @@ export class IconParkSolidAdIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkSolidAddItemIcon],svg[icon-park-solid-add-item-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path d="M24 30v-6"></svg:path><svg:path fill="currentColor" d="M6 30h36v12H6z"></svg:path><svg:path d="M6 12.5v-1M6 18v-1M6 7V6m36 6.5v-1m0 6.5v-1m0-10V6m0 12h-1M7 18H6M7 6H6m8 0h-1m8 0h-1m1 12h-1m8-12h-1M14 18h-1m15 0h-1m8-12h-1m1 12h-1m8-12h-1"></svg:path></svg:g>`,
+})
+export class IconParkSolidAddItemIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkSolidAddMusicIcon],svg[icon-park-solid-add-music-icon]',
   host: {
     role: 'img',
@@ -114,6 +114,23 @@ export class IconParkSolidAdIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><svg:path stroke-linecap="round" d="M24 44C12.954 44 4 35.046 4 24S12.954 4 24 4s20 8.954 20 20"></svg:path><svg:path fill="currentColor" d="M20 24v-6.928l6 3.464L32 24l-6 3.464l-6 3.464z"></svg:path><svg:path stroke-linecap="round" d="M37.05 32v10M42 36.95H32"></svg:path></svg:g>`,
 })
 export class IconParkSolidAddMusicIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconParkSolidAddIcon],svg[icon-park-solid-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipSAdd0"><svg:g fill="none" stroke-linejoin="round" stroke-width="4"><svg:rect width="36" height="36" x="6" y="6" fill="#fff" stroke="#fff" rx="3"></svg:rect><svg:path stroke="#000" stroke-linecap="round" d="M24 16v16m-8-8h16"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSAdd0)"></svg:path>`,
+})
+export class IconParkSolidAddIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8478,23 +8495,6 @@ export class IconParkSolidDatabaseProportionIcon {
   template: `<svg:defs><svg:mask id="ipSDatabaseSearch0"><svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path stroke="#fff" d="M34 12v9a9.98 9.98 0 0 0-7.442 3.32A9.96 9.96 0 0 0 24 31q.002.87.144 1.698a10.01 10.01 0 0 0 4.93 7.007C26.412 40.51 22.878 41 19 41c-8.284 0-15-2.239-15-5V12"></svg:path><svg:path fill="#fff" stroke="#fff" d="M44 31c0 5.523-4.477 10-10 10c-1.79 0-3.472-.47-4.926-1.295A10.01 10.01 0 0 1 24 31c0-2.568.968-4.91 2.558-6.68A9.98 9.98 0 0 1 34 21c5.523 0 10 4.477 10 10M34 12c0 2.761-6.716 5-15 5S4 14.761 4 12s6.716-5 15-5s15 2.239 15 5"></svg:path><svg:path stroke="#fff" d="M4 28c0 2.761 6.716 5 15 5c1.807 0 3.54-.106 5.144-.302M4 20c0 2.761 6.716 5 15 5c2.756 0 5.339-.248 7.558-.68"></svg:path><svg:path stroke="#000" d="M36.828 33.828L41 38"></svg:path><svg:path fill="#fff" stroke="#000" d="M38 31a4 4 0 0 1-1.172 2.828A4 4 0 1 1 38 31"></svg:path><svg:path stroke="#fff" d="M44 31c0 5.523-4.477 10-10 10"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSDatabaseSearch0)"></svg:path>`,
 })
 export class IconParkSolidDatabaseSearchIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkSolidDatabaseSettingIcon],svg[icon-park-solid-database-setting-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:mask id="ipSDatabaseSetting0"><svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path stroke="#fff" d="M34 12v9a9.98 9.98 0 0 0-7.442 3.32A9.96 9.96 0 0 0 24 31q.002.87.144 1.698a10.01 10.01 0 0 0 4.93 7.007C26.412 40.51 22.878 41 19 41c-8.284 0-15-2.239-15-5V12"></svg:path><svg:path fill="#fff" stroke="#fff" d="M44 31c0 5.523-4.477 10-10 10c-1.79 0-3.472-.47-4.926-1.295A10.01 10.01 0 0 1 24 31c0-2.568.968-4.91 2.558-6.68A9.98 9.98 0 0 1 34 21c5.523 0 10 4.477 10 10M34 12c0 2.761-6.716 5-15 5S4 14.761 4 12s6.716-5 15-5s15 2.239 15 5"></svg:path><svg:path stroke="#fff" d="M4 28c0 2.761 6.716 5 15 5c1.807 0 3.54-.106 5.144-.302M4 20c0 2.761 6.716 5 15 5c2.756 0 5.339-.248 7.558-.68"></svg:path><svg:path fill="#fff" stroke="#000" d="m34 27l3.464 2v4L34 35l-3.464-2v-4z"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSDatabaseSetting0)"></svg:path>`,
-})
-export class IconParkSolidDatabaseSettingIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

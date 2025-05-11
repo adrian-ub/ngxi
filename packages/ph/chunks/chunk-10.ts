@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[phLassoFillIcon],svg[ph-lasso-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M93.43 136.11a17.14 17.14 0 0 0-15.35 6.1c9.31 6.56 22.51 11.33 37.43 13.07c-5.1-11.95-13.79-18.28-22.08-19.17"></svg:path><svg:path d="M224 48v160a16 16 0 0 1-16 16h-80.35a4 4 0 0 1-3.23-6.34c7.5-10.23 11.58-23.24 11.58-37.84c0-2.79-.13-5.46-.35-8.05C176.79 169.33 208 147.47 208 120c0-29.15-35.14-52-80-52s-80 22.84-80 52c0 27.31 30.82 49.07 71.58 51.73a77 77 0 0 1 .42 8.09c0 17.62-7.65 31.95-21 39.32A38.77 38.77 0 0 1 79.27 224H48a16 16 0 0 1-16-16V48a16 16 0 0 1 16-16h160a16 16 0 0 1 16 16m-32 72c0-19.51-29.31-36-64-36s-64 16.48-64 36a21.3 21.3 0 0 0 3 10.63a33.65 33.65 0 0 1 28.16-10.43c15 1.63 30.84 13.4 37.54 35.68c32.6-1.41 59.3-17.26 59.3-35.88"></svg:path></svg:g>`,
+})
+export class PhLassoFillIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phLassoLightIcon],svg[ph-lasso-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M204.68 61.63C184.11 49 156.88 42 128 42s-56.11 7-76.68 19.63C29.83 74.85 18 92.73 18 112s11.83 37.13 33.32 50.35C70.45 174.1 95.35 181 122 181.85v1.94c0 14.76-6.94 27.1-19.54 34.73c-15.22 9.22-36 9.9-51.68 1.71a6 6 0 1 0-5.56 10.63A64.45 64.45 0 0 0 75 238a65.24 65.24 0 0 0 33.7-9.22c16.34-9.89 25.33-25.87 25.33-45v-1.94c26.65-.89 51.57-7.74 70.72-19.52C226.17 149.11 238 131.23 238 112s-11.83-37.15-33.32-50.37m-140 94.46c5.32-12 17.2-15.07 26.48-13.87c12.28 1.6 24.64 10.67 29.08 27.55c-20.51-.96-39.76-5.69-55.52-13.68Zm133.67-4c-17.62 10.85-40.83 17.1-65.77 17.79a52.8 52.8 0 0 0-11.31-23.84a45.24 45.24 0 0 0-28.56-15.73c-16.89-2.2-31.49 5.54-38.41 19.68C38.61 139.37 30 126 30 112c0-14.93 9.8-29.18 27.61-40.13C76.32 60.34 101.32 54 128 54s51.68 6.34 70.39 17.85C216.2 82.8 226 97.05 226 112s-9.8 29.16-27.61 40.11Z"></svg:path>`,
+})
+export class PhLassoLightIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phLassoThinIcon],svg[ph-lasso-thin-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M203.64 63.34C183.37 50.87 156.51 44 128 44s-55.37 6.87-75.64 19.34C31.49 76.19 20 93.48 20 112s11.49 35.83 32.36 48.68c19.29 11.87 44.55 18.65 71.51 19.28c.08 1.27.13 2.56.13 3.9c0 15.49-7.28 28.44-20.51 36.46c-15.79 9.57-37.34 10.28-53.64 1.77a4 4 0 1 0-3.7 7.09A62.3 62.3 0 0 0 74.91 236a63.56 63.56 0 0 0 32.73-8.82c15.71-9.52 24.36-24.9 24.36-43.3c0-1.32-.05-2.61-.12-3.9c27.06-.59 52.41-7.38 71.76-19.28C224.51 147.85 236 130.56 236 112s-11.49-35.81-32.36-48.66M62.16 157.15c5.3-14.49 18.83-18.22 29.3-16.85c13.64 1.78 27.38 12.19 31.38 31.66c-23.18-.71-44.29-6.18-60.68-14.81M131 172a51.35 51.35 0 0 0-11.18-24.59a43.28 43.28 0 0 0-27.3-15.06c-16.82-2.19-31.24 6-37.33 20.74C38.33 142.35 28 127.9 28 112c0-33.09 44.86-60 100-60s100 26.93 100 60c0 32.52-43.26 59.06-97 60"></svg:path>`,
+})
+export class PhLassoThinIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phLastfmLogoIcon],svg[ph-lastfm-logo-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M248 160a40 40 0 0 1-40 40h-17.43a56.22 56.22 0 0 1-50.75-32.32l-30.14-64.6A40.15 40.15 0 0 0 73.43 80H64a40 40 0 0 0-40 40v24a40 40 0 0 0 40 40h8a32 32 0 0 0 29.34-19.2a8 8 0 1 1 14.66 6.4A48 48 0 0 1 72 200h-8a56.06 56.06 0 0 1-56-56v-24a56.06 56.06 0 0 1 56-56h9.43a56.22 56.22 0 0 1 50.75 32.32l30.14 64.6A40.15 40.15 0 0 0 190.57 184H208a24 24 0 0 0 0-48h-20a36 36 0 0 1 0-72h20a32 32 0 0 1 32 32a8 8 0 0 1-16 0a16 16 0 0 0-16-16h-20a20 20 0 0 0 0 40h20a40 40 0 0 1 40 40"></svg:path>`,
+})
+export class PhLastfmLogoIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[phLastfmLogoBoldIcon],svg[ph-lastfm-logo-bold-icon]',
   host: {
     role: 'img',
@@ -8427,74 +8495,6 @@ export class PhMetronomeFillIcon {
   template: `<svg:path fill="currentColor" d="m213.33 203.75l-28.45-89.41L212.43 84a6 6 0 0 0-8.88-8l-22.87 25.17l-18.26-57.42A13.94 13.94 0 0 0 149.08 34h-42.16a13.94 13.94 0 0 0-13.34 9.75l-50.91 160A14 14 0 0 0 56 222h144a14 14 0 0 0 13.34-18.25ZM187.45 162h-45.89l34-37.39ZM105 47.39a2 2 0 0 1 1.92-1.39h42.16a2 2 0 0 1 1.92 1.39l20.36 64l-46 50.61H68.55Zm96.6 161.79a1.94 1.94 0 0 1-1.6.82H56a2 2 0 0 1-1.9-2.61L64.73 174h126.54l10.62 33.39a1.94 1.94 0 0 1-.29 1.79"></svg:path>`,
 })
 export class PhMetronomeLightIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phMetronomeThinIcon],svg[ph-metronome-thin-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M182.63 113.85L211 82.69a4 4 0 1 0-6-5.38L179.82 105l-19.3-60.68A12 12 0 0 0 149.08 36h-42.16a12 12 0 0 0-11.44 8.36l-50.9 160A12 12 0 0 0 56 220h144a12 12 0 0 0 11.43-15.64Zm7.56 50.15H137l39.37-43.31ZM103.1 46.79a4 4 0 0 1 3.82-2.79h42.16a4 4 0 0 1 3.82 2.79l20.71 65.09L126.23 164H65.81Zm100.12 163.57A4 4 0 0 1 200 212H56a4 4 0 0 1-3.81-5.21L63.27 172h129.46l11.07 34.79a4 4 0 0 1-.58 3.57"></svg:path>`,
-})
-export class PhMetronomeThinIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phMicrophoneIcon],svg[ph-microphone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M128 176a48.05 48.05 0 0 0 48-48V64a48 48 0 0 0-96 0v64a48.05 48.05 0 0 0 48 48M96 64a32 32 0 0 1 64 0v64a32 32 0 0 1-64 0Zm40 143.6V240a8 8 0 0 1-16 0v-32.4A80.11 80.11 0 0 1 48 128a8 8 0 0 1 16 0a64 64 0 0 0 128 0a8 8 0 0 1 16 0a80.11 80.11 0 0 1-72 79.6"></svg:path>`,
-})
-export class PhMicrophoneIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phMicrophoneBoldIcon],svg[ph-microphone-bold-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M128 180a52.06 52.06 0 0 0 52-52V64a52 52 0 0 0-104 0v64a52.06 52.06 0 0 0 52 52M100 64a28 28 0 0 1 56 0v64a28 28 0 0 1-56 0Zm40 155.22V240a12 12 0 0 1-24 0v-20.78A92.14 92.14 0 0 1 36 128a12 12 0 0 1 24 0a68 68 0 0 0 136 0a12 12 0 0 1 24 0a92.14 92.14 0 0 1-80 91.22"></svg:path>`,
-})
-export class PhMicrophoneBoldIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phMicrophoneDuotoneIcon],svg[ph-microphone-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M168 64v64a40 40 0 0 1-40 40a40 40 0 0 1-40-40V64a40 40 0 0 1 40-40a40 40 0 0 1 40 40" opacity=".2"></svg:path><svg:path d="M128 176a48.05 48.05 0 0 0 48-48V64a48 48 0 0 0-96 0v64a48.05 48.05 0 0 0 48 48M96 64a32 32 0 0 1 64 0v64a32 32 0 0 1-64 0Zm40 143.6V240a8 8 0 0 1-16 0v-32.4A80.11 80.11 0 0 1 48 128a8 8 0 0 1 16 0a64 64 0 0 0 128 0a8 8 0 0 1 16 0a80.11 80.11 0 0 1-72 79.6"></svg:path></svg:g>`,
-})
-export class PhMicrophoneDuotoneIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")

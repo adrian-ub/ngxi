@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightDeployedCodeAccountIcon],svg[material-symbols-light-deployed-code-account-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16.557 19.948q-.16 0-.32-.037t-.3-.13l-2.347-1.365q-.285-.164-.437-.44Q13 17.698 13 17.37v-2.717q0-.328.153-.604q.152-.276.437-.44l2.346-1.366q.141-.093.301-.13q.161-.037.322-.037t.308.047t.287.12L19.5 13.61q.287.164.451.44t.165.604v2.717q0 .328-.165.604q-.164.277-.451.44l-2.346 1.368q-.137.079-.287.122t-.31.043M3 18.616v-1.647q0-.69.348-1.194t.983-.802q1.217-.592 2.51-.975q1.292-.382 3.159-.382h.235q.111 0 .223.011q-.437 1.108-.38 2.546q.059 1.439.634 2.443zm7-7.231q-1.237 0-2.119-.882T7 8.385t.881-2.12T10 5.386t2.119.88t.881 2.12t-.881 2.118t-2.119.882m4.342 2.773l2.216 1.279l2.215-1.28l-2.215-1.272zm2.658 4.7l2.23-1.288v-2.724L17 16.191zm-3.116-1.281l2.231 1.306v-2.667l-2.23-1.325z"></svg:path>`,
-})
-export class MaterialSymbolsLightDeployedCodeAccountIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightDeployedCodeAccountOutlineIcon],svg[material-symbols-light-deployed-code-account-outline-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightDomainVerificationOutlineSharpIcon {
   template: `<svg:path fill="currentColor" d="m10.95 14.38l-1.779-1.778q-.165-.165-.36-.165t-.359.165t-.156.37q.01.203.156.35l1.933 1.932q.242.242.565.242t.566-.242l4.032-4.033q.166-.165.166-.36t-.166-.359q-.165-.166-.37-.156q-.203.01-.35.156zM4 8h16V6.616q0-.231-.192-.424T19.385 6H4.615q-.23 0-.423.192T4 6.616zm.616 11q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v10.769q0 .69-.463 1.153T19.385 19z"></svg:path>`,
 })
 export class MaterialSymbolsLightDomainVerificationRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightDomainVerificationSharpIcon],svg[material-symbols-light-domain-verification-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m10.95 15.82l4.958-4.959l-.72-.719l-4.238 4.239l-2.138-2.139l-.72.72zM4 8h16V6H4zM3 19V5h18v14z"></svg:path>`,
+})
+export class MaterialSymbolsLightDomainVerificationSharpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

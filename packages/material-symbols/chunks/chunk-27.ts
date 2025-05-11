@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsTouchpadMouseOutlineIcon],svg[material-symbols-touchpad-mouse-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16.5 20q1.45 0 2.475-1.025T20 16.5V15h-7v1.5q0 1.45 1.025 2.475T16.5 20m-3.475-7H15.5v-2.85q-.95.275-1.638 1.05t-.837 1.8m4.475 0h2.475q-.15-1.025-.837-1.8T17.5 10.15zm-1 9q-2.3 0-3.9-1.6T11 16.5v-3q0-2.3 1.6-3.9T16.5 8t3.9 1.6t1.6 3.9v3q0 2.3-1.6 3.9T16.5 22M4 18V6zm0 2q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6H4v12h5.025v2z"></svg:path>`,
-})
-export class MaterialSymbolsTouchpadMouseOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsTouchpadMouseOutlineRoundedIcon],svg[material-symbols-touchpad-mouse-outline-rounded-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsVideoCameraBackAddOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="M2 20v-8h2v6h12V6h-6V4h8v6.5l4-4v11l-4-4V20zm3-4h10l-3.375-4.5L9 15l-1.625-2.175zm-1-6V8H2V6h2V4h2v2h2v2H6v2z"></svg:path>`,
 })
 export class MaterialSymbolsVideoCameraBackAddOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsVideoCameraBackAddRoundedIcon],svg[material-symbols-video-camera-back-add-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18v-5.45q0-.5.438-.763t.937-.062q.4.125.8.2T5 12q2.075 0 3.538-1.463T10 7q0-.425-.075-.825t-.2-.8q-.175-.5.075-.937T10.55 4H16q.825 0 1.413.588T18 6v4.5l3.15-3.15q.25-.25.55-.125t.3.475v8.6q0 .35-.3.475t-.55-.125L18 13.5V18q0 .825-.587 1.413T16 20zm1-10q-.425 0-.712-.288T4 9V8H3q-.425 0-.712-.288T2 7t.288-.712T3 6h1V5q0-.425.288-.712T5 4t.713.288T6 5v1h1q.425 0 .713.288T8 7t-.288.713T7 8H6v1q0 .425-.288.713T5 10m1 6h8q.3 0 .45-.275t-.05-.525l-2.375-3.175q-.15-.2-.4-.2t-.4.2L9 15l-1.225-1.625q-.15-.2-.4-.2t-.4.2L5.6 15.2q-.2.25-.05.525T6 16"></svg:path>`,
+})
+export class MaterialSymbolsVideoCameraBackAddRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

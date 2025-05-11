@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightPhotoCameraFrontSharpIcon],svg[material-symbols-light-photo-camera-front-sharp-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 20V6h4.573l1.85-2h5.154l1.85 2H21v14zm5.692-3.884h6.616v-.166q0-.875-.88-1.355q-.878-.48-2.428-.48t-2.429.48t-.879 1.355zM12 12.5q.633 0 1.066-.434q.434-.433.434-1.066t-.434-1.066T12 9.5t-1.066.434Q10.5 10.367 10.5 11t.434 1.066T12 12.5"></svg:path>`,
-})
-export class MaterialSymbolsLightPhotoCameraFrontSharpIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightPhotoCameraOutlineIcon],svg[material-symbols-light-photo-camera-outline-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightQrCodeRoundedIcon {
   template: `<svg:path fill="currentColor" d="M3 7.039V3h4.039v1H4v3.039zM3 21v-4.038h1V20h3.039v1zm13.962 0v-1H20v-3.038h1V21zM20 7.039V4h-3.038V3H21v4.039zm-3.058 9.903h1.212v1.212h-1.212zm0-2.423h1.212v1.212h-1.212zm-1.211 1.212h1.211v1.211h-1.211zm-1.212 1.211h1.212v1.212h-1.212zm-1.211-1.211h1.211v1.211h-1.211zm2.423-2.423h1.211v1.211h-1.211zm-1.212 1.211h1.212v1.212h-1.212zm-1.211-1.211h1.211v1.211h-1.211zm4.846-7.462v4.846h-4.846V5.846zm-7.462 7.462v4.846H5.846v-4.846zm0-7.462v4.846H5.846V5.846zM9.808 17.27v-3.077H6.73v3.077zm0-7.461V6.73H6.73v3.077zm7.461 0V6.73h-3.077v3.077z"></svg:path>`,
 })
 export class MaterialSymbolsLightQrCodeScannerIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightQrCodeScannerRoundedIcon],svg[material-symbols-light-qr-code-scanner-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.5 7.039q-.214 0-.357-.144T3 6.539V3.808q0-.343.232-.576T3.808 3h2.73q.213 0 .357.144t.144.357t-.144.356T6.539 4H4v2.539q0 .212-.144.356t-.357.144M3.808 21q-.343 0-.576-.232T3 20.192v-2.73q0-.213.144-.357t.357-.143t.356.143t.143.357V20h2.539q.212 0 .356.144t.144.357t-.144.356t-.356.143zm13.654 0q-.213 0-.357-.144t-.143-.357t.143-.356t.357-.143H20v-2.538q0-.213.144-.357t.357-.143t.356.143t.143.357v2.73q0 .344-.232.576t-.576.232zm3.037-13.961q-.212 0-.356-.144T20 6.539V4h-2.538q-.213 0-.357-.144t-.143-.357t.143-.356t.357-.143h2.73q.344 0 .576.232t.232.576v2.73q0 .213-.144.357t-.357.144m-3.557 11.115v-1.212h1.212v1.212zm0-2.423v-1.212h1.212v1.212zm-1.211 1.211v-1.211h1.211v1.211zm-1.212 1.212v-1.212h1.212v1.212zm-1.211-1.212v-1.211h1.211v1.211zm2.423-2.423v-1.211h1.211v1.211zm-1.212 1.212v-1.212h1.212v1.212zm-1.211-1.212v-1.211h1.211v1.211zm.803-3.827q-.344 0-.574-.232q-.23-.233-.23-.576V6.65q0-.344.233-.574q.232-.23.576-.23h3.234q.344 0 .574.233q.23.232.23.576v3.234q0 .344-.233.574q-.232.23-.576.23zM6.65 18.154q-.344 0-.574-.233q-.23-.232-.23-.576v-3.234q0-.344.233-.573q.232-.23.576-.23h3.234q.344 0 .574.232q.23.233.23.576v3.235q0 .343-.233.573t-.576.23zm0-7.462q-.344 0-.574-.232q-.23-.233-.23-.576V6.65q0-.344.233-.574q.232-.23.576-.23h3.234q.344 0 .574.233q.23.232.23.576v3.234q0 .344-.233.574t-.576.23zm.08 6.577h3.078v-3.077H6.73zm0-7.461h3.078V6.73H6.73zm7.462 0h3.077V6.73h-3.077z"></svg:path>`,
+})
+export class MaterialSymbolsLightQrCodeScannerRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

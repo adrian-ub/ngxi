@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[solarListHeartMinimalisticBoldIcon],svg[solar-list-heart-minimalistic-bold-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.25 6A.75.75 0 0 1 3 5.25h17a.75.75 0 0 1 0 1.5H3A.75.75 0 0 1 2.25 6m0 5a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75m0 5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M13 11.715c0 1.752 2.163 3.615 3.49 4.593c.454.335.681.502 1.01.502s.556-.167 1.01-.502c1.327-.978 3.49-2.84 3.49-4.593c0-2.677-2.475-3.677-4.5-1.609c-2.025-2.068-4.5-1.068-4.5 1.609"></svg:path>`,
+})
+export class SolarListHeartMinimalisticBoldIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[solarListHeartMinimalisticBoldDuotoneIcon],svg[solar-list-heart-minimalistic-bold-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.25 6A.75.75 0 0 1 3 5.25h17a.75.75 0 0 1 0 1.5H3A.75.75 0 0 1 2.25 6m0 5a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75m0 5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75" clip-rule="evenodd" opacity=".5"></svg:path><svg:path fill="currentColor" d="M13 11.715c0 1.752 2.163 3.615 3.49 4.593c.454.335.681.502 1.01.502s.556-.167 1.01-.502c1.327-.978 3.49-2.84 3.49-4.593c0-2.677-2.475-3.677-4.5-1.609c-2.025-2.068-4.5-1.068-4.5 1.609"></svg:path>`,
+})
+export class SolarListHeartMinimalisticBoldDuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[solarListHeartMinimalisticBrokenIcon],svg[solar-list-heart-minimalistic-broken-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class SolarMirrorRightBrokenIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:path d="M12 21h1c3.771 0 5.657 0 6.828-1.172S21 16.771 21 13v-2c0-3.771 0-5.657-1.172-6.828S16.771 3 13 3h-1"></svg:path><svg:path stroke-dasharray="2.5 3" stroke-linecap="round" d="M13 21H9c-2.828 0-4.243 0-5.121-.879C3 19.243 3 17.828 3 15V9c0-2.828 0-4.243.879-5.121C4.757 3 6.172 3 9 3h4" opacity=".5"></svg:path><svg:path stroke-linecap="round" d="M12 22V2"></svg:path></svg:g>`,
 })
 export class SolarMirrorRightLineDuotoneIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solarMirrorRightLinearIcon],svg[solar-mirror-right-linear-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:path d="M12 21h1c3.771 0 5.657 0 6.828-1.172S21 16.771 21 13v-2c0-3.771 0-5.657-1.172-6.828S16.771 3 13 3h-1"></svg:path><svg:path stroke-dasharray="2.5 3" stroke-linecap="round" d="M13 21H9c-2.828 0-4.243 0-5.121-.879C3 19.243 3 17.828 3 15V9c0-2.828 0-4.243.879-5.121C4.757 3 6.172 3 9 3h4"></svg:path><svg:path stroke-linecap="round" d="M12 22V2"></svg:path></svg:g>`,
-})
-export class SolarMirrorRightLinearIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solarMirrorRightOutlineIcon],svg[solar-mirror-right-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9 3.75q-.653 0-1.202.003a.75.75 0 0 1-.013-1.5q.561-.004 1.213-.003h.911a.75.75 0 0 1 0 1.5zm-3.371-.695a.75.75 0 0 1-.494.938c-.321.1-.545.235-.726.416s-.316.405-.416.726a.75.75 0 0 1-1.432-.445c.16-.515.408-.962.787-1.342s.827-.627 1.342-.787a.75.75 0 0 1 .939.494M3.009 7.04a.75.75 0 0 1 .744.757Q3.75 8.348 3.75 9v1.364a.75.75 0 1 1-1.5 0V8.998q0-.652.003-1.213a.75.75 0 0 1 .757-.744M3 12.886a.75.75 0 0 1 .75.75V15q0 .653.003 1.202a.75.75 0 0 1-1.5.013q-.004-.562-.003-1.213v-1.366a.75.75 0 0 1 .75-.75m.055 5.485a.75.75 0 0 1 .938.494c.1.321.235.545.416.726s.405.316.726.416a.75.75 0 1 1-.445 1.432a3.2 3.2 0 0 1-1.342-.787a3.2 3.2 0 0 1-.787-1.342a.75.75 0 0 1 .494-.939m3.986 2.62a.75.75 0 0 1 .757-.744q.55.004 1.202.003h.91a.75.75 0 0 1 0 1.5h-.912q-.652 0-1.213-.003a.75.75 0 0 1-.744-.757M12 1.25a.75.75 0 0 1 .75.75v.25h.306c1.838 0 3.294 0 4.433.153c1.172.158 2.121.49 2.87 1.238c.748.749 1.08 1.698 1.238 2.87c.153 1.14.153 2.595.153 4.433v2.112c0 1.838 0 3.294-.153 4.433c-.158 1.172-.49 2.121-1.238 2.87c-.749.748-1.698 1.08-2.87 1.238c-1.14.153-2.595.153-4.433.153h-.306V22a.75.75 0 0 1-1.5 0V2a.75.75 0 0 1 .75-.75m.75 2.5v16.5H13c1.907 0 3.262-.002 4.29-.14c1.005-.135 1.585-.389 2.008-.812s.677-1.003.812-2.009c.138-1.027.14-2.382.14-4.289v-2c0-1.907-.002-3.261-.14-4.29c-.135-1.005-.389-1.585-.812-2.008s-1.003-.677-2.009-.812c-1.027-.138-2.382-.14-4.289-.14z" clip-rule="evenodd"></svg:path>`,
-})
-export class SolarMirrorRightOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

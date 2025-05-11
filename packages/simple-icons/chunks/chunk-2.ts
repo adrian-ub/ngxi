@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[simpleIconsFfmpegIcon],svg[simple-icons-ffmpeg-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21.72 17.91V6.5l-.53-.49L9.05 18.52l-1.29-.06L24 1.53l-.33-.95l-11.93 1l-5.75 6.6v-.23l4.7-5.39l-1.38-.77l-9.11.77v2.85l1.91.46v.01l.19-.01l-.56.66v10.6c.609-.126 1.22-.241 1.83-.36L14.12 5.22l.83-.04L0 21.44l9.67.82l1.35-.77l6.82-6.74v2.15l-5.72 5.57l11.26.95l.35-.94v-3.16l-3.29-.18a65 65 0 0 0 1.28-1.23"></svg:path>`,
+})
+export class SimpleIconsFfmpegIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleIconsFiIcon],svg[simple-icons-fi-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.908 4.621c0-1.749 1.472-3.162 3.286-3.162c1.813 0 3.287 1.416 3.287 3.162s-1.472 3.162-3.287 3.162c-1.816 0-3.286-1.414-3.286-3.162M24 17.077h-.735c-1.507 0-2.267-1.069-2.267-2.753v-3.162h-5.569v4.482c0 4.869 3.228 6.913 6.353 6.913H24ZM5.578 18.581c0-1.628.901-2.369 2.731-2.369h4.541v-5.064H5.578V9.057c0-1.654 1.427-2.552 3.132-2.552h4.133V1.443H7.289C2.925 1.443 0 3.753 0 8.594v13.95h5.578Z"></svg:path>`,
+})
+export class SimpleIconsFiIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[simpleIconsFiatIcon],svg[simple-icons-fiat-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class SimpleIconsJasmineIcon {
   template: `<svg:path fill="currentColor" d="M0 0h24v24H0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873c-.736-.345-1.554-.585-1.797-1.14c-.091-.33-.105-.51-.046-.705c.15-.646.915-.84 1.515-.66c.39.12.75.42.976.9c1.034-.676 1.034-.676 1.755-1.125c-.27-.42-.404-.601-.586-.78c-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005c-1.14 1.291-.811 3.541.569 4.471c1.365 1.02 3.361 1.244 3.616 2.205c.24 1.17-.87 1.545-1.966 1.41c-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109c1.74 1.756 6.09 1.666 6.871-1.004c.029-.09.24-.705.074-1.65zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805c0 1.232.063 2.363-.138 2.711c-.33.689-1.18.601-1.566.48c-.396-.196-.597-.466-.83-.855c-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517c.855.51 2.004.675 3.207.405c.783-.226 1.458-.691 1.811-1.411c.51-.93.402-2.07.397-3.346c.012-2.054 0-4.109 0-6.179z"></svg:path>`,
 })
 export class SimpleIconsJavascriptIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[simpleIconsJblIcon],svg[simple-icons-jbl-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m0 5.265l2.022 4.589l2.022-4.59zm2.022 7.6c.698 0 1.266-.565 1.266-1.26c0-.699-.568-1.262-1.266-1.262a1.262 1.262 0 1 0 0 2.523M.928 16.228c0 .957.862 2.509 3.315 2.509s3.315-1.188 3.315-2.51V5.266H5.369l.001 11.342c0 .62-.503 1.14-1.126 1.14a1.127 1.127 0 0 1-1.128-1.124l-.001-2.311H.928zm8.289 2.311V5.265h4.374c.845 0 2.187.693 2.187 2.162v2.261c0 .662-.58 1.833-1.44 1.833c.86 0 1.44.742 1.44 1.305v3.979c0 .676-.546 1.733-2.187 1.733zm3.38-7.559c.796 0 .995-.134.995-2.214s-.2-2.246-.995-2.246h-1.195v4.457zm.995 3.811c0-2.081 0-2.69-.864-2.69h-1.326v5.348l1.326.003c.863 0 .863-.581.863-2.66m3.779 3.748H24v-4.226h-2.189l.002 2.31a1.126 1.126 0 0 1-2.255 0V5.265H17.37Z"></svg:path>`,
-})
-export class SimpleIconsJblIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[simpleIconsJcbIcon],svg[simple-icons-jcb-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13.05 9.864c.972.074 1.726.367 2.355.685v-1.31s-1.258-.317-2.441-.368C8.838 8.686 7.669 10.305 7.669 12s1.17 3.314 5.295 3.13c1.183-.054 2.44-.37 2.44-.37v-1.309c-.619.308-1.382.611-2.354.683c-1.68.128-2.69-.69-2.69-2.134c0-1.445 1.01-2.261 2.69-2.135m7.685 4.122a2 2 0 0 1-.215.02h-1.8v-1.631h1.8c.057 0 .164.01.215.02a.806.806 0 0 1 .632.795a.804.804 0 0 1-.632.796M18.72 9.95h1.632c.059 0 .145.007.177.013a.736.736 0 0 1 .626.74a.735.735 0 0 1-.626.739a2 2 0 0 1-.178.013h-1.63zm3.499 1.985V11.9c.913-.133 1.415-.726 1.415-1.42c0-.883-.734-1.392-1.73-1.442c-.077-.003-.202-.01-.304-.01h-5.332v5.946h5.755c1.13 0 1.977-.604 1.977-1.547c0-.87-.772-1.422-1.781-1.491zm-17.864.68c0 .878-.591 1.53-1.666 1.53c-.917 0-1.817-.272-2.689-.694v1.309s1.402.383 3.191.383c2.971 0 3.837-1.125 3.837-2.529V9.027H4.354z"></svg:path>`,
-})
-export class SimpleIconsJcbIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

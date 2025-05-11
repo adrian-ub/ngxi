@@ -2,33 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[wpfAddUserIcon],svg[wpf-add-user-icon]',
+  selector: 'svg[wpf2fSwipeRightIcon],svg[wpf-2f-swipe-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M10.5.156c-3.017 0-5.438 2.072-5.438 6.032c0 2.586 1.03 5.22 2.594 6.843c.61 1.623-.49 2.227-.718 2.313C3.781 16.502.093 18.602.093 20.688v.78c0 2.843 5.414 3.5 10.437 3.5a46 46 0 0 0 3.281-.124a7.75 7.75 0 0 1-2.124-5.344c0-1.791.61-3.432 1.624-4.75c-.15-.352-.21-.907.063-1.75c1.555-1.625 2.563-4.236 2.563-6.813c0-3.959-2.424-6.03-5.438-6.03zm9 13.031a6.312 6.312 0 1 0 0 12.625a6.312 6.312 0 0 0 0-12.625M18.625 16h1.75v2.594h2.594v1.812h-2.594V23h-1.75v-2.594H16v-1.812h2.625z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M15.906 3.969a1 1 0 0 0-.125.031a1 1 0 0 0-.5 1.719L16.562 7h-5.718C10.399 5.276 8.864 4 7 4a4 4 0 1 0 0 8c1.863 0 3.4-1.276 3.844-3h5.719l-1.282 1.281a1.016 1.016 0 1 0 1.438 1.438l3-3a1 1 0 0 0 0-1.438l-3-3a1 1 0 0 0-.813-.312m4 10a1 1 0 0 0-.125.031a1 1 0 0 0-.5 1.719L20.563 17h-5.72c-.444-1.724-1.98-3-3.843-3a4 4 0 1 0 0 8c1.863 0 3.4-1.276 3.844-3h5.719l-1.282 1.281a1.016 1.016 0 1 0 1.438 1.438l3-3a1 1 0 0 0 0-1.438l-3-3a1 1 0 0 0-.813-.312"></svg:path>`,
 })
-export class WpfAddUserIcon {
-  readonly viewBox = input("0 0 26 26")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[wpfAlignCenterIcon],svg[wpf-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M0 2v2h26V2zm4 5v2h18V7zm-4 5v2h26v-2zm4 5v2h18v-2zm-4 5v2h26v-2zm902 1447v2h26v-2zm4 5v2h18v-2zm-4 5v2h26v-2zm4 5v2h18v-2zm-4 5v2h26v-2z"></svg:path>`,
-})
-export class WpfAlignCenterIcon {
+export class Wpf2fSwipeRightIcon {
   readonly viewBox = input("0 0 26 26")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,33 +53,16 @@ export class WpfAddImageIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[wpfAdministratorIcon],svg[wpf-administrator-icon]',
+  selector: 'svg[wpfAlarmClockIcon],svg[wpf-alarm-clock-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M16.563 15.9c-.159-.052-1.164-.505-.536-2.414h-.009c1.637-1.686 2.888-4.399 2.888-7.07c0-4.107-2.731-6.26-5.905-6.26c-3.176 0-5.892 2.152-5.892 6.26c0 2.682 1.244 5.406 2.891 7.088c.642 1.684-.506 2.309-.746 2.396c-3.324 1.203-7.224 3.394-7.224 5.557v.811c0 2.947 5.714 3.617 11.002 3.617c5.296 0 10.938-.67 10.938-3.617v-.811c0-2.228-3.919-4.402-7.407-5.557m-5.516 8.709c0-2.549 1.623-5.99 1.623-5.99l-1.123-.881c0-.842 1.453-1.723 1.453-1.723s1.449.895 1.449 1.723l-1.119.881s1.623 3.428 1.623 6.018c0 .406-3.906.312-3.906-.028"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M13 .188c-1.104 0-2 .844-2 1.812h4c0-.908-.896-1.813-2-1.813zM4.969.5C3.916.582 2.867 1.07 2 1.938C.268 3.67-.077 6.173 1.656 7.905l6.282-6.281C7.072.758 6.021.418 4.967.5zM20.25.5c-.781.105-1.538.475-2.188 1.125l6.282 6.281c1.733-1.732 1.388-4.235-.344-5.968C22.917.853 21.552.325 20.25.5M13 3.188C7.028 3.188 2.187 8.027 2.187 14c0 3.581 1.756 6.751 4.438 8.719l-.781 2.312a.684.684 0 0 0 .406.844a.695.695 0 0 0 .906-.281l1.032-1.907A10.8 10.8 0 0 0 13 24.813c1.727 0 3.364-.405 4.813-1.125l1.03 1.907c.1.199.451.48.907.281a.684.684 0 0 0 .406-.844l-.781-2.312c2.682-1.968 4.438-5.138 4.438-8.719c0-5.972-4.841-10.813-10.813-10.813m-1 2.624V6.5a1 1 0 0 0 .469.844a.75.75 0 0 0-.125.343l-.25 5.032A1.57 1.57 0 0 0 11.438 14c0 .867.695 1.563 1.562 1.563c.055 0 .103-.026.156-.032l3.063 2.719c.172.154.604.27.968-.094c.365-.365.244-.794.094-.968l-2.718-3.125V14c0-.553-.287-1.033-.72-1.313l-.187-5a.75.75 0 0 0-.125-.343A1 1 0 0 0 14 6.5v-.688c3.706.452 6.682 3.374 7.188 7.063H20.5a1 1 0 0 0-.125 0a1.127 1.127 0 1 0 .125 2.25h.688c-.5 3.648-3.415 6.562-7.063 7.063V21.5a1.123 1.123 0 0 0-1.375-1.125a1.12 1.12 0 0 0-.875 1.125v.688c-3.648-.5-6.562-3.415-7.063-7.063H5.5a1.125 1.125 0 0 0 0-2.25h-.688C5.319 9.185 8.294 6.264 12 5.812"></svg:path>`,
 })
-export class WpfAdministratorIcon {
-  readonly viewBox = input("0 0 26 26")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[wpfAlignJustifyIcon],svg[wpf-align-justify-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M0 2v2h26V2zm0 5v2h26V7zm0 5v2h26v-2zm0 5v2h26v-2zm0 5v2h26v-2z"></svg:path>`,
-})
-export class WpfAlignJustifyIcon {
+export class WpfAlarmClockIcon {
   readonly viewBox = input("0 0 26 26")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,16 +87,16 @@ export class WpfAirplaneTakeoffIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[wpf2fSwipeRightIcon],svg[wpf-2f-swipe-right-icon]',
+  selector: 'svg[wpfAdministratorIcon],svg[wpf-administrator-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M15.906 3.969a1 1 0 0 0-.125.031a1 1 0 0 0-.5 1.719L16.562 7h-5.718C10.399 5.276 8.864 4 7 4a4 4 0 1 0 0 8c1.863 0 3.4-1.276 3.844-3h5.719l-1.282 1.281a1.016 1.016 0 1 0 1.438 1.438l3-3a1 1 0 0 0 0-1.438l-3-3a1 1 0 0 0-.813-.312m4 10a1 1 0 0 0-.125.031a1 1 0 0 0-.5 1.719L20.563 17h-5.72c-.444-1.724-1.98-3-3.843-3a4 4 0 1 0 0 8c1.863 0 3.4-1.276 3.844-3h5.719l-1.282 1.281a1.016 1.016 0 1 0 1.438 1.438l3-3a1 1 0 0 0 0-1.438l-3-3a1 1 0 0 0-.813-.312"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M16.563 15.9c-.159-.052-1.164-.505-.536-2.414h-.009c1.637-1.686 2.888-4.399 2.888-7.07c0-4.107-2.731-6.26-5.905-6.26c-3.176 0-5.892 2.152-5.892 6.26c0 2.682 1.244 5.406 2.891 7.088c.642 1.684-.506 2.309-.746 2.396c-3.324 1.203-7.224 3.394-7.224 5.557v.811c0 2.947 5.714 3.617 11.002 3.617c5.296 0 10.938-.67 10.938-3.617v-.811c0-2.228-3.919-4.402-7.407-5.557m-5.516 8.709c0-2.549 1.623-5.99 1.623-5.99l-1.123-.881c0-.842 1.453-1.723 1.453-1.723s1.449.895 1.449 1.723l-1.119.881s1.623 3.428 1.623 6.018c0 .406-3.906.312-3.906-.028"></svg:path>`,
 })
-export class Wpf2fSwipeRightIcon {
+export class WpfAdministratorIcon {
   readonly viewBox = input("0 0 26 26")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,16 +104,33 @@ export class Wpf2fSwipeRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[wpfAlarmClockIcon],svg[wpf-alarm-clock-icon]',
+  selector: 'svg[wpfAlignCenterIcon],svg[wpf-align-center-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 .188c-1.104 0-2 .844-2 1.812h4c0-.908-.896-1.813-2-1.813zM4.969.5C3.916.582 2.867 1.07 2 1.938C.268 3.67-.077 6.173 1.656 7.905l6.282-6.281C7.072.758 6.021.418 4.967.5zM20.25.5c-.781.105-1.538.475-2.188 1.125l6.282 6.281c1.733-1.732 1.388-4.235-.344-5.968C22.917.853 21.552.325 20.25.5M13 3.188C7.028 3.188 2.187 8.027 2.187 14c0 3.581 1.756 6.751 4.438 8.719l-.781 2.312a.684.684 0 0 0 .406.844a.695.695 0 0 0 .906-.281l1.032-1.907A10.8 10.8 0 0 0 13 24.813c1.727 0 3.364-.405 4.813-1.125l1.03 1.907c.1.199.451.48.907.281a.684.684 0 0 0 .406-.844l-.781-2.312c2.682-1.968 4.438-5.138 4.438-8.719c0-5.972-4.841-10.813-10.813-10.813m-1 2.624V6.5a1 1 0 0 0 .469.844a.75.75 0 0 0-.125.343l-.25 5.032A1.57 1.57 0 0 0 11.438 14c0 .867.695 1.563 1.562 1.563c.055 0 .103-.026.156-.032l3.063 2.719c.172.154.604.27.968-.094c.365-.365.244-.794.094-.968l-2.718-3.125V14c0-.553-.287-1.033-.72-1.313l-.187-5a.75.75 0 0 0-.125-.343A1 1 0 0 0 14 6.5v-.688c3.706.452 6.682 3.374 7.188 7.063H20.5a1 1 0 0 0-.125 0a1.127 1.127 0 1 0 .125 2.25h.688c-.5 3.648-3.415 6.562-7.063 7.063V21.5a1.123 1.123 0 0 0-1.375-1.125a1.12 1.12 0 0 0-.875 1.125v.688c-3.648-.5-6.562-3.415-7.063-7.063H5.5a1.125 1.125 0 0 0 0-2.25h-.688C5.319 9.185 8.294 6.264 12 5.812"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M0 2v2h26V2zm4 5v2h18V7zm-4 5v2h26v-2zm4 5v2h18v-2zm-4 5v2h26v-2zm902 1447v2h26v-2zm4 5v2h18v-2zm-4 5v2h26v-2zm4 5v2h18v-2zm-4 5v2h26v-2z"></svg:path>`,
 })
-export class WpfAlarmClockIcon {
+export class WpfAlignCenterIcon {
+  readonly viewBox = input("0 0 26 26")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[wpfAlignJustifyIcon],svg[wpf-align-justify-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 2v2h26V2zm0 5v2h26V7zm0 5v2h26v-2zm0 5v2h26v-2zm0 5v2h26v-2z"></svg:path>`,
+})
+export class WpfAlignJustifyIcon {
   readonly viewBox = input("0 0 26 26")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -3395,6 +3378,23 @@ export class WpfWindRoseIcon {
   template: `<svg:path fill="currentColor" d="M19 0c-2.209 0-4 1.793-4 4c0 2.665 3.5 6.306 3.5 9.969h1C19.501 10.306 23 6.77 23 4c0-2.207-1.791-4-4-4m0 1.938a2.063 2.063 0 1 1-.002 4.126A2.063 2.063 0 0 1 19 1.937zM13 2C6.383 2 1 7.383 1 14s5.383 12 12 12s12-5.383 12-12c0-2.01-.498-3.896-1.375-5.563c-.133.264-.267.515-.406.782c-.263.508-.54 1.021-.782 1.531c.25.715.422 1.471.5 2.25h-1.312c-.072.335-.125.65-.125.969V15h1.438a9.9 9.9 0 0 1-1.282 4H18.72c.22-.938.347-1.975.437-3.031h-1.97a19 19 0 0 1-.53 3.031H9.343a19.2 19.2 0 0 1-.594-4h7.75v-1.031a4.7 4.7 0 0 0-.125-.969H8.75a19.2 19.2 0 0 1 .594-4h5.344a31 31 0 0 1-.97-2h-3.687c.827-1.887 1.92-3 2.969-3c0-.695.125-1.348.344-1.969C13.229 2.027 13.116 2 13 2M8.875 4.906a12.4 12.4 0 0 0-1 2.094h-2a10 10 0 0 1 3-2.094M4.344 9H7.28a21.4 21.4 0 0 0-.531 4H3.062a9.9 9.9 0 0 1 1.282-4m-1.282 6H6.75c.059 1.425.243 2.77.531 4H4.344a9.9 9.9 0 0 1-1.282-4m2.813 6h2c.288.776.625 1.473 1 2.094a10 10 0 0 1-3-2.094m4.156 0h5.938c-.827 1.887-1.92 3-2.969 3s-2.143-1.113-2.969-3m8.094 0h2a10 10 0 0 1-3 2.094c.375-.62.712-1.317 1-2.094"></svg:path>`,
 })
 export class WpfWorldwideLocationIcon {
+  readonly viewBox = input("0 0 26 26")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[wpfAddUserIcon],svg[wpf-add-user-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.5.156c-3.017 0-5.438 2.072-5.438 6.032c0 2.586 1.03 5.22 2.594 6.843c.61 1.623-.49 2.227-.718 2.313C3.781 16.502.093 18.602.093 20.688v.78c0 2.843 5.414 3.5 10.437 3.5a46 46 0 0 0 3.281-.124a7.75 7.75 0 0 1-2.124-5.344c0-1.791.61-3.432 1.624-4.75c-.15-.352-.21-.907.063-1.75c1.555-1.625 2.563-4.236 2.563-6.813c0-3.959-2.424-6.03-5.438-6.03zm9 13.031a6.312 6.312 0 1 0 0 12.625a6.312 6.312 0 0 0 0-12.625M18.625 16h1.75v2.594h2.594v1.812h-2.594V23h-1.75v-2.594H16v-1.812h2.625z"></svg:path>`,
+})
+export class WpfAddUserIcon {
   readonly viewBox = input("0 0 26 26")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[mageAdobeIcon],svg[mage-adobe-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.443 3.104L2 20.897V3.104zm2.564 6.566l4.715 11.227h-3.084l-1.398-3.55H8.744zM22 3.104v17.793L14.653 3.104z"></svg:path>`,
+})
+export class MageAdobeIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mageAeroplaneFillIcon],svg[mage-aeroplane-fill-icon]',
   host: {
     role: 'img',
@@ -19,23 +36,6 @@ export class MageAeroplaneFillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[mageAfterEffectsIcon],svg[mage-after-effects-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.84 12.4c0 .09 0 .09-.07.09H8c.33-1 .68-2.06 1-3.1c0 .08 0 .16.07.24s.09.33.13.49l.18.56c0 .19.11.37.17.56l.19.57z"></svg:path><svg:path fill="currentColor" d="M17.08 11.77a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5m-4.27 14h-1.62a.14.14 0 0 1-.142-.068a.14.14 0 0 1-.018-.052c-.08-.25-.17-.49-.25-.74s-.2-.57-.29-.86c0-.16-.13-.18-.27-.18H7.62c-.11 0-.11 0-.15.12s-.1.33-.16.5l-.16.52l-.21.61a.2.2 0 0 1 0 .08c0 .13-.16.11-.26.11H5.39c-.15 0-.2-.07-.14-.21s.11-.3.16-.44l.21-.64l.39-1.1c.11-.3.21-.61.31-.92s.19-.53.29-.8l.21-.63l.37-1l.3-.88c.1-.28.2-.56.29-.85a2 2 0 0 0 0-.41c0-.21 0-.21.21-.21H9.8c.16 0 .15 0 .2.15s.18.49.26.73s.15.42.22.62l.24.65l.24.7c.1.27.2.53.29.8l.26.72c.08.24.17.48.26.73s.12.37.19.55s.14.4.22.6s.13.38.2.57l.29.81l.12.35c.04-.01.01.07-.06.07m6-3q.007.135 0 .27c0 .09-.15.12-.24.12h-3.53c.036.328.18.634.41.87a3 3 0 0 0 2.8.18c.08 0 .12 0 .12.08v1.13c0 .18-.07.2-.22.26l-.36.11a2 2 0 0 1-.35.07c-.25 0-.5.07-.75.08s-.34 0-.51 0H16c-.2 0-.41 0-.6-.07a2.7 2.7 0 0 1-1.44-.8a2.6 2.6 0 0 1-.56-.88a2.8 2.8 0 0 1-.2-.75a9 9 0 0 1 0-.88c.015-.361.083-.718.2-1.06a3.2 3.2 0 0 1 .41-.8a2.5 2.5 0 0 1 .9-.82q.235-.136.49-.23a5 5 0 0 1 .56-.1q.255-.015.51 0q.376.006.74.1q.33.093.63.26a2 2 0 0 1 .74.74c.1.18.18.36.26.54q.064.191.1.39a3 3 0 0 1 .03 1.19zm-2.45-1.85a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.06-.26a1 1 0 0 0-.74-.7zm.76.67a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29z"></svg:path>`,
-})
-export class MageAfterEffectsIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mageAeroplaneIcon],svg[mage-aeroplane-icon]',
   host: {
     role: 'img',
@@ -46,6 +46,23 @@ export class MageAfterEffectsIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M13.235 3.257a1.75 1.75 0 0 1 .508 1.24v5.388l5.917 2.541a.47.47 0 0 1 .274.295l.519 1.545a.508.508 0 0 1-.6.65l-6.1-1.534l-.294 5.245l1.169.875v1.748a338 338 0 0 1-2.633-.708s-1.073.295-2.623.708v-1.748l1.17-.875l-.296-5.245l-6.099 1.535a.509.509 0 0 1-.6-.65l.519-1.546a.47.47 0 0 1 .274-.295l5.917-2.541V4.497a1.75 1.75 0 0 1 .508-1.24a1.76 1.76 0 0 1 2.47 0"></svg:path>`,
 })
 export class MageAeroplaneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mageAfterEffectsIcon],svg[mage-after-effects-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.84 12.4c0 .09 0 .09-.07.09H8c.33-1 .68-2.06 1-3.1c0 .08 0 .16.07.24s.09.33.13.49l.18.56c0 .19.11.37.17.56l.19.57z"></svg:path><svg:path fill="currentColor" d="M17.08 11.77a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5m-4.27 14h-1.62a.14.14 0 0 1-.142-.068a.14.14 0 0 1-.018-.052c-.08-.25-.17-.49-.25-.74s-.2-.57-.29-.86c0-.16-.13-.18-.27-.18H7.62c-.11 0-.11 0-.15.12s-.1.33-.16.5l-.16.52l-.21.61a.2.2 0 0 1 0 .08c0 .13-.16.11-.26.11H5.39c-.15 0-.2-.07-.14-.21s.11-.3.16-.44l.21-.64l.39-1.1c.11-.3.21-.61.31-.92s.19-.53.29-.8l.21-.63l.37-1l.3-.88c.1-.28.2-.56.29-.85a2 2 0 0 0 0-.41c0-.21 0-.21.21-.21H9.8c.16 0 .15 0 .2.15s.18.49.26.73s.15.42.22.62l.24.65l.24.7c.1.27.2.53.29.8l.26.72c.08.24.17.48.26.73s.12.37.19.55s.14.4.22.6s.13.38.2.57l.29.81l.12.35c.04-.01.01.07-.06.07m6-3q.007.135 0 .27c0 .09-.15.12-.24.12h-3.53c.036.328.18.634.41.87a3 3 0 0 0 2.8.18c.08 0 .12 0 .12.08v1.13c0 .18-.07.2-.22.26l-.36.11a2 2 0 0 1-.35.07c-.25 0-.5.07-.75.08s-.34 0-.51 0H16c-.2 0-.41 0-.6-.07a2.7 2.7 0 0 1-1.44-.8a2.6 2.6 0 0 1-.56-.88a2.8 2.8 0 0 1-.2-.75a9 9 0 0 1 0-.88c.015-.361.083-.718.2-1.06a3.2 3.2 0 0 1 .41-.8a2.5 2.5 0 0 1 .9-.82q.235-.136.49-.23a5 5 0 0 1 .56-.1q.255-.015.51 0q.376.006.74.1q.33.093.63.26a2 2 0 0 1 .74.74c.1.18.18.36.26.54q.064.191.1.39a3 3 0 0 1 .03 1.19zm-2.45-1.85a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.06-.26a1 1 0 0 0-.74-.7zm.76.67a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29z"></svg:path>`,
+})
+export class MageAfterEffectsIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -80,6 +97,57 @@ export class MageAlarmClockIcon {
   template: `<svg:path fill="currentColor" d="M18.765 18.579a8.87 8.87 0 1 0-13.54 0l-1.88 1.88a.75.75 0 0 0 .53 1.28a.7.7 0 0 0 .53-.22l1.88-1.88a8.81 8.81 0 0 0 11.42 0l1.88 1.88a.7.7 0 0 0 .53.22a.74.74 0 0 0 .53-.22a.75.75 0 0 0 0-1.06zm-3.75-2.68a1 1 0 0 1-1.41 0l-2.61-2.61v-5.06a1 1 0 1 1 2 0v4.23l2 2a1 1 0 0 1 .02 1.44m5.67-9.8a.8.8 0 0 1-.53-.22l-2.31-2.32a.74.74 0 0 1 0-1.06a.75.75 0 0 1 1.06 0l2.36 2.28a.75.75 0 0 1 0 1.06a.8.8 0 0 1-.58.26m-17.42 0a.8.8 0 0 1-.53-.22a.75.75 0 0 1 0-1.06l2.32-2.32a.75.75 0 1 1 1.06 1.06l-2.32 2.32a.75.75 0 0 1-.53.22"></svg:path>`,
 })
 export class MageAlarmClockFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mageAlignCenterIcon],svg[mage-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M6.286 12h11.428m-8 5.714h4.572M4 6.286h16"></svg:path>`,
+})
+export class MageAlignCenterIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mageAlignRightIcon],svg[mage-align-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M19.5 12h-8m8-6.25h-15m15 12.5h-15"></svg:path>`,
+})
+export class MageAlignRightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mageAlignLeftIcon],svg[mage-align-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M4.5 12h8m-8 6.25h15m-15-12.5h15"></svg:path>`,
+})
+export class MageAlignLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8427,74 +8495,6 @@ export class MageHospitalPlusFillIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M16.045 10.45v1.797a.45.45 0 0 1-.45.45h-2.247v2.247a.45.45 0 0 1-.45.45h-1.797a.45.45 0 0 1-.45-.45v-2.247H8.406a.45.45 0 0 1-.45-.45V10.45a.45.45 0 0 1 .45-.45h2.247V7.753a.45.45 0 0 1 .45-.449H12.9a.45.45 0 0 1 .45.45V10h2.246a.45.45 0 0 1 .45.45"></svg:path><svg:path d="M20.672 11.89V6.61a1.93 1.93 0 0 0-1.32-1.831L14.438 3.14a7.8 7.8 0 0 0-4.876 0L4.648 4.778a1.93 1.93 0 0 0-1.32 1.83v5.28a7.71 7.71 0 0 0 3.603 6.524l4.048 2.544a1.93 1.93 0 0 0 2.042 0l4.047-2.544a7.71 7.71 0 0 0 3.604-6.523"></svg:path></svg:g>`,
 })
 export class MageHospitalShieldIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mageHospitalShieldFillIcon],svg[mage-hospital-shield-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20.945 5.069a2.75 2.75 0 0 0-1.33-1l-4.92-1.64a8.58 8.58 0 0 0-5.35 0l-4.91 1.64a2.67 2.67 0 0 0-1.83 2.54v5.28a8.44 8.44 0 0 0 4 7.16l4 2.55a2.72 2.72 0 0 0 2.84 0l4-2.55a8.54 8.54 0 0 0 2.9-3.07a8.44 8.44 0 0 0 1.05-4.09v-5.28a2.66 2.66 0 0 0-.45-1.54m-4.13 7.2a1.2 1.2 0 0 1-1.2 1.2h-1.49v1.5a1.2 1.2 0 0 1-1.2 1.2h-1.8a1.19 1.19 0 0 1-1.2-1.2v-1.53h-1.5a1.25 1.25 0 0 1-.85-.35a1.2 1.2 0 0 1-.35-.85v-1.8c0-.316.126-.618.35-.84a1.2 1.2 0 0 1 .85-.36h1.5v-1.49a1.2 1.2 0 0 1 1.2-1.2h1.8a1.15 1.15 0 0 1 .84.35a1.2 1.2 0 0 1 .36.85v1.49h1.49a1.18 1.18 0 0 1 .85.36a1.15 1.15 0 0 1 .35.84z"></svg:path><svg:path fill="currentColor" d="M15.315 10.769v1.2h-1.94a.75.75 0 0 0-.75.75v1.95h-1.2v-1.95a.76.76 0 0 0-.75-.75h-1.95v-1.2h1.95a.75.75 0 0 0 .75-.75v-1.94h1.2v1.94a.74.74 0 0 0 .75.75z"></svg:path>`,
-})
-export class MageHospitalShieldFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mageHospitalSquareIcon],svg[mage-hospital-square-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:rect width="18.5" height="18.5" x="2.75" y="2.75" rx="6"></svg:rect><svg:path stroke-linecap="round" stroke-linejoin="round" d="M16.763 10.942v2.116a.53.53 0 0 1-.53.53h-2.645v2.645a.53.53 0 0 1-.53.53h-2.116a.53.53 0 0 1-.53-.53v-2.645H7.768a.53.53 0 0 1-.53-.53v-2.116a.53.53 0 0 1 .53-.53h2.645V7.768a.53.53 0 0 1 .53-.53h2.116a.53.53 0 0 1 .53.53v2.645h2.645a.53.53 0 0 1 .53.53"></svg:path></svg:g>`,
-})
-export class MageHospitalSquareIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mageHospitalSquareFillIcon],svg[mage-hospital-square-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15.25 2h-6.5A6.76 6.76 0 0 0 2 8.75v6.5A6.75 6.75 0 0 0 8.75 22h6.5A6.75 6.75 0 0 0 22 15.25v-6.5A6.76 6.76 0 0 0 15.25 2m2.26 11.06a1.28 1.28 0 0 1-1.28 1.28h-1.89v1.9a1.3 1.3 0 0 1-1.28 1.28h-2.12a1.27 1.27 0 0 1-.9-.38a1.3 1.3 0 0 1-.38-.9v-1.9H7.77a1.27 1.27 0 0 1-.91-.37a1.3 1.3 0 0 1-.37-.91v-2.11a1.3 1.3 0 0 1 .37-.91a1.27 1.27 0 0 1 .91-.37h1.89v-1.9a1.32 1.32 0 0 1 .37-.9a1.27 1.27 0 0 1 .91-.38h2.1a1.26 1.26 0 0 1 .9.37c.24.242.377.569.38.91v1.9h1.89c.34 0 .667.132.91.37c.238.243.371.57.37.91z"></svg:path><svg:path fill="currentColor" d="M16.04 11.17v1.67h-2.42a.75.75 0 0 0-.75.75v2.43h-1.68v-2.43a.76.76 0 0 0-.75-.75h-2.4v-1.67h2.42a.76.76 0 0 0 .75-.75V7.99h1.68v2.43a.75.75 0 0 0 .75.75z"></svg:path>`,
-})
-export class MageHospitalSquareFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mageHourGlassIcon],svg[mage-hour-glass-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m18.77 19.071l-.113 1.696a.524.524 0 0 1-.473.483H5.852a.524.524 0 0 1-.514-.483l-.113-1.696a2.62 2.62 0 0 1 .442-1.655L9.336 12a.82.82 0 0 0 0-.946L5.943 6.553a2.7 2.7 0 0 1-.535-1.614V3.274a.524.524 0 0 1 .524-.524h12.17a.524.524 0 0 1 .523.524V4.94c0 .581-.188 1.147-.534 1.614l-3.371 4.42a.82.82 0 0 0 0 .945l3.628 5.457c.33.5.479 1.1.421 1.696m-9.393-.905h5.283"></svg:path>`,
-})
-export class MageHourGlassIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

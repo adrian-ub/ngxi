@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[openmojiPrincessIcon],svg[openmoji-princess-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#FFA7C0" d="M50.058 58.84c0-4.012 3.863-8.127 3.863-8.127l-2.108-3.357c-4.425-.48-6.06 8.766-6.06 8.766c-3.681-4.637-9.89.17-9.89.17s-6.37-4.807-10.053-.17c0 0-1.634-9.246-6.059-8.766l-2.108 3.357s3.863 4.115 3.863 8.127z"></svg:path><svg:path fill="#FCEA2B" d="m31.44 17.56l.002-9.743l3.115 2.652l1.415-3.546l1.469 3.409l2.844-2.515v9.743z"></svg:path><svg:g fill="#F4AA41"><svg:path d="M44.662 14.18q-2.052-1.32-4.104-2.015l-.273 5.395h-8.67l.032-5.473q-2.17.697-4.339 2.094c-15.312 15.276 6.616 9.822 8.677 4.545c2.06 5.277 23.989 10.731 8.677-4.545"></svg:path><svg:path d="M23.813 44.829a12 12 0 0 1 3.112-.389c3.17 2.105 5.89 3.56 8.937 3.574C38.91 48 41.63 46.544 44.8 44.44c1.24 0 2.324.16 3.283.437a34 34 0 0 0 2.15-1.7c3.197-3.58.302-14.826-.926-19.006q-13.324-12.474-26.65 0c-1.228 4.18-4.123 15.425-.925 19.006c.693.599 1.387 1.14 2.081 1.652"></svg:path></svg:g><svg:path fill="#FCEA2B" d="M17.7 50.775c-1.354 3.863-.775 8.062-.775 8.062h4.581c-.001-3.733-3.343-7.55-3.806-8.062m27.1-6.335c-3.17 2.105-5.89 3.56-8.937 3.574c-3.049-.014-5.768-1.47-8.938-3.574c-5.316 0-7.881 2.825-9.093 5.973l1.92-3.057c4.424-.48 6.058 8.766 6.058 8.766c3.682-4.637 10.052.17 10.052.17s6.21-4.807 9.892-.17c0 0 1.634-9.246 6.059-8.766l2.108 3.357s-3.862 4.114-3.863 8.124H54.8s2-14.397-10-14.397m-8.787-25.06s3.524 5.175 11.1 5.756c.157.938.239 1.91.239 2.907c0 7.827-5.077 14.173-11.339 14.173S24.675 35.87 24.675 28.043c0-1.011.084-1.997.245-2.948c7.065-1.269 11.093-5.715 11.093-5.715"></svg:path><svg:path d="M41.985 26.98a2 2 0 1 1-4.001 0a2 2 0 0 1 4.001 0m-8 0a2 2 0 1 1-4.001 0a2 2 0 0 1 4.001 0m2 10.003c-1.152 0-2.304-.286-3.447-.858a1 1 0 1 1 .894-1.789c1.718.86 3.388.86 5.106 0a1 1 0 0 1 .894 1.79c-1.143.571-2.295.857-3.447.857"></svg:path><svg:path fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M24.967 24.98a17.6 17.6 0 0 0-.32 3.362c0 7.827 5.076 14.173 11.338 14.173s11.338-6.346 11.338-14.173c0-1.159-.11-2.284-.32-3.362"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M16.925 57.834s-2-13 10-13c3.192 2.128 5.926 3.598 9 3.592H35.8c3.074.006 5.808-1.464 9-3.592c12 0 10 13 10 13M31.44 17.56l.002-9.743l3.115 2.652l1.415-3.546l1.469 3.409l2.844-2.515v9.743z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M17.643 50.713s3.863 3.115 3.863 7.127m30.307-10.484c-4.425-.48-6.06 8.766-6.06 8.766c-3.681-4.637-9.89.17-9.89.17s-6.37-4.807-10.053-.17c0 0-1.634-9.246-6.059-8.766m34.169 3.357s-3.862 3.125-3.862 7.137M44.27 15.055c14.568 14.536-6.296 9.346-8.257 4.325c-1.96 5.021-22.825 10.21-8.256-4.325"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M23.056 23.826c-1.19 4.054-3.998 14.961-.898 18.434m26.746-18.434c1.19 4.054 3.998 14.961.898 18.434"></svg:path>`,
-})
-export class OpenmojiPrincessIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[openmojiPrincessDarkSkinToneIcon],svg[openmoji-princess-dark-skin-tone-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class OpenmojiThumbsUpMediumLightSkinToneIcon {
   template: `<svg:path fill="#c19a65" stroke="#c19a65" d="m37.088 11.232l-2.922.645L19 29.21l-7.333 13.059l1.999 11.274l12.938 7.07l9.625-.041l14.042.208l2.395-1.57l.75-3.833l-.75-1.584l3.584-.083l1.333-1.667l.833-2.333l-1.583-3l1.583-.667l1.917-2.666l-.917-2.75l-2.5-1.167l1.167-2.167l.167-3.416l-2.584-1.5l-13.166-.5l-.834-.667l-.854-.597h-9.125l.063-1.736l3.916-9.584l1.667-4.583z"></svg:path><svg:g fill="none" stroke="#000" stroke-width="2"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M35.236 59.6h-9c-8.321 0-14-6.68-14-15a19.62 19.62 0 0 1 5-13m17.389 0h-4.389l7-18c.811-2.083-2.79-3.8-5-1l-15 19m20.212 3.5a3.786 3.786 0 0 0 4 3.5h13a3.531 3.531 0 1 0 0-7h-13a3.786 3.786 0 0 0-4 3.5m.857 21.337a3.786 3.786 0 0 0 4 3.5h7a3.531 3.531 0 1 0 0-7h-7a3.786 3.786 0 0 0-4 3.5m-5.069-14a3.786 3.786 0 0 0 4 3.5h19a3.531 3.531 0 1 0 0-7h-19a3.786 3.786 0 0 0-4 3.5"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M35.236 49.437a3.786 3.786 0 0 0 4 3.5h15a3.531 3.531 0 1 0 0-7h-15a3.786 3.786 0 0 0-4 3.5"></svg:path><svg:path stroke-miterlimit="10" d="M14.136 36.263a19.5 19.5 0 0 0-1.906 7.839c0 8.56 4.625 15.5 15.125 15.5"></svg:path></svg:g>`,
 })
 export class OpenmojiThumbsUpMediumSkinToneIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiTicketIcon],svg[openmoji-ticket-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FCEA2B" d="M48.713 23.515c-3.428-3.552-4.029-8.784-1.869-12.933l-3.6-3.732L6.886 41.936l3.801 3.94c4.073-1.574 8.868-.671 12.09 2.667s3.953 8.164 2.236 12.178l3.802 3.939l36.357-35.086l-3.6-3.732c-4.225 2.011-9.431 1.225-12.86-2.327"></svg:path><svg:path fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M48.155 23.505c-3.428-3.552-4.029-8.784-1.869-12.933l-3.6-3.732L6.328 41.926l3.801 3.94c4.072-1.574 8.868-.671 12.09 2.667s3.953 8.164 2.236 12.178l3.801 3.939l36.358-35.086l-3.6-3.732c-4.225 2.011-9.431 1.225-12.86-2.327z"></svg:path><svg:circle cx="37.122" cy="22.122" r="2" transform="rotate(-44.781 37.124 22.123)"></svg:circle><svg:circle cx="43.612" cy="28.661" r="2" transform="rotate(-44.781 43.614 28.661)"></svg:circle><svg:circle cx="50.101" cy="35.199" r="2" transform="rotate(-44.781 50.104 35.2)"></svg:circle>`,
+})
+export class OpenmojiTicketIcon {
   readonly viewBox = input("0 0 72 72")
   readonly width = input("1em")
   readonly height = input("1em")

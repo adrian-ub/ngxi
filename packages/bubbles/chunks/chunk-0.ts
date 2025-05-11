@@ -2,18 +2,52 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[bubblesAddOutlineIcon],svg[bubbles-add-outline-icon]',
+  selector: 'svg[bubblesAddCircleOutlineIcon],svg[bubbles-add-circle-outline-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 12h22.5M12 .75v22.5"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.5v9M7.5 12h9M.75 12a11.25 11.25 0 1 0 22.5 0a11.25 11.25 0 0 0-22.5 0"></svg:path>`,
 })
-export class BubblesAddOutlineIcon {
+export class BubblesAddCircleOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bubblesAddCircleSolidIcon],svg[bubbles-add-circle-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.176.004A9 9 0 0 0 .96 6.147A8.8 8.8 0 0 0 .503 9c0 .428.011.64.051 1.005a9 9 0 0 0 3.654 6.278c.726.53 1.567.963 2.437 1.255a8.8 8.8 0 0 0 2.855.458a8 8 0 0 0 1.004-.05a9 9 0 0 0 5.015-2.253c.126-.111.562-.548.674-.674a9 9 0 0 0 1.37-2.02a8.9 8.9 0 0 0 .93-3.652c0-.044.002-.073.007-.073c.004 0 .007-.098.007-.278a2 2 0 0 0-.007-.273q-.008.003-.008-.07a9 9 0 0 0-1.349-4.409a9 9 0 0 0-1.134-1.458A8.9 8.9 0 0 0 13.5.936a8.9 8.9 0 0 0-3.416-.919C9.94.007 9.31-.002 9.176.004m-.087.99a8 8 0 0 0-4.172 1.427a8.3 8.3 0 0 0-1.673 1.567a8 8 0 0 0-1.531 3.1a8.2 8.2 0 0 0-.18 2.808a8 8 0 0 0 3.175 5.531a8 8 0 0 0 2.581 1.28a8.1 8.1 0 0 0 3.136.256a7.9 7.9 0 0 0 2.635-.78a7.9 7.9 0 0 0 2.106-1.516a7.9 7.9 0 0 0 1.516-2.107A7.9 7.9 0 0 0 17.513 9a7.9 7.9 0 0 0-.831-3.56a7.8 7.8 0 0 0-1.515-2.107a7.8 7.8 0 0 0-2.107-1.515A7.9 7.9 0 0 0 9.885.994c-.173-.009-.62-.008-.796 0m.306 4.121a.5.5 0 0 0-.365.328l-.016.047l-.004 1.508l-.004 1.509l-1.508.003l-1.508.004l-.047.016a.52.52 0 0 0-.315.315a.4.4 0 0 0-.02.155a.4.4 0 0 0 .02.155c.047.142.17.266.315.315l.047.016l1.508.004l1.508.003l.004 1.509l.004 1.508l.016.047a.52.52 0 0 0 .315.315a.4.4 0 0 0 .155.019a.4.4 0 0 0 .154-.02a.52.52 0 0 0 .316-.314l.016-.047l.003-1.508l.004-1.509L11.5 9.49l1.509-.004l.046-.016a.52.52 0 0 0 .315-.315a.4.4 0 0 0 .02-.155a.4.4 0 0 0-.02-.155a.52.52 0 0 0-.315-.315l-.046-.016L11.5 8.51l-1.508-.003l-.004-1.509l-.003-1.508l-.016-.047a.51.51 0 0 0-.316-.314a.6.6 0 0 0-.259-.014M.503 9.004c0 .154 0 .216.002.138V8.86c-.001-.076-.002-.012-.002.143" clip-rule="evenodd"></svg:path>`,
+})
+export class BubblesAddCircleSolidIcon {
+  readonly viewBox = input("0 0 19 18")
+  readonly width = input("1.06em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bubblesAddCommentSolidIcon],svg[bubbles-add-comment-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:g clip-path="url(#bubblesAddCommentSolid0)"><svg:path fill="currentColor" fill-rule="evenodd" d="M1.386.527A1.74 1.74 0 0 0 .02 1.94C.004 2.04 0 3.53.004 7.898l.005 5.823l.05.162c.029.089.088.23.133.315c.273.515.776.86 1.336.917c.102.01.557.019 1.011.019h.826l.005 1.462l.005 1.463l.047.1c.1.212.25.319.475.336a.46.46 0 0 0 .22-.022q.087-.032 2.293-1.686l2.206-1.653h3.835c2.539 0 3.898-.007 4.022-.02c.36-.036.7-.191.97-.443c.172-.162.262-.278.366-.473c.082-.155.173-.43.173-.523c0-.028.008-.056.018-.062c.012-.008.018-1.969.018-5.825c0-3.311-.007-5.81-.016-5.805c-.008.006-.02-.03-.027-.08A1.735 1.735 0 0 0 16.599.525C16.41.489 1.567.49 1.386.527m.077 1.161a.6.6 0 0 0-.286.296l-.043.094l.005 5.75l.004 5.749l.04.082c.056.113.176.23.293.285l.1.047l1.26.009l1.26.009l.09.048a.6.6 0 0 1 .268.285l.046.099v2.367l1.832-1.374a88 88 0 0 1 1.895-1.4c.053-.022.662-.027 4.13-.034l4.068-.01l.1-.046a.7.7 0 0 0 .292-.286l.04-.081l.005-5.75l.004-5.749l-.043-.094a.6.6 0 0 0-.285-.296l-.11-.054H1.572zM.009 7.808c0 3.202.002 4.513.005 2.911c.002-1.601.002-4.221 0-5.823C.01 3.295.009 4.606.009 7.808m8.747-3.222a.65.65 0 0 0-.306.293l-.043.094v2.276l-1.112.005l-1.112.005l-.085.042a.57.57 0 0 0-.044.999c.133.078.226.084 1.32.084h1.032v2.118l.056.11a.6.6 0 0 0 .268.267c.096.051.378.048.478-.005a.8.8 0 0 0 .266-.266c.039-.072.04-.085.044-1.149l.005-1.075h1.021a19 19 0 0 0 1.134-.019a.557.557 0 0 0 .42-.782a.58.58 0 0 0-.29-.287l-.099-.046H9.523l-.005-1.148l-.005-1.147l-.04-.083a.67.67 0 0 0-.274-.273a.64.64 0 0 0-.443-.013" clip-rule="evenodd"></svg:path></svg:g><svg:defs><svg:clippath id="bubblesAddCommentSolid0"><svg:path fill="#fff" d="M0 .5h18v18H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
+})
+export class BubblesAddCommentSolidIcon {
+  readonly viewBox = input("0 0 18 19")
+  readonly width = input("0.95em")
   readonly height = input("1em")
 }
 
@@ -53,33 +87,16 @@ export class BubblesActivitiesSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bubblesAddCircleOutlineIcon],svg[bubbles-add-circle-outline-icon]',
+  selector: 'svg[bubblesAddOutlineIcon],svg[bubbles-add-outline-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.5v9M7.5 12h9M.75 12a11.25 11.25 0 1 0 22.5 0a11.25 11.25 0 0 0-22.5 0"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 12h22.5M12 .75v22.5"></svg:path>`,
 })
-export class BubblesAddCircleOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bubblesAlarmBellCheckOutlineIcon],svg[bubbles-alarm-bell-check-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M11.25 6.75a6 6 0 1 0 12 0a6 6 0 0 0-12 0"></svg:path><svg:path d="m15.129 7.5l1.5 1.5l3.75-3.75m-2.874 10.612a7.4 7.4 0 0 0 1.245 2.888h-18s1.5-2.329 1.5-8.25A7.5 7.5 0 0 1 9.75 3V.75m-2.002 21a2.087 2.087 0 0 0 4.005 0"></svg:path></svg:g>`,
-})
-export class BubblesAlarmBellCheckOutlineIcon {
+export class BubblesAddOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -97,6 +114,40 @@ export class BubblesAlarmBellCheckOutlineIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m22.501 2.25l-21 21M10 21.75a2.087 2.087 0 0 0 4.005 0M12.001 3V.75m-1.501 18H21s-1.5-1.2-1.5-8.25a7 7 0 0 0-.093-.915M16.212 4.3A7.5 7.5 0 0 0 4.5 10.5v5.25"></svg:path>`,
 })
 export class BubblesAlarmBellOffOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bubblesAlarmBellDisableOutlineIcon],svg[bubbles-alarm-bell-disable-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M11.25 6.75a6 6 0 1 0 12 0a6 6 0 0 0-12 0m4.125 1.875l3.75-3.75m0 3.75l-3.75-3.75M7.748 21.75a2.087 2.087 0 0 0 4.005 0"></svg:path><svg:path d="M17.505 15.862a7.4 7.4 0 0 0 1.245 2.888h-18s1.5-2.329 1.5-8.25A7.5 7.5 0 0 1 9.75 3V.75"></svg:path></svg:g>`,
+})
+export class BubblesAlarmBellDisableOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bubblesAlarmBellCheckOutlineIcon],svg[bubbles-alarm-bell-check-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M11.25 6.75a6 6 0 1 0 12 0a6 6 0 0 0-12 0"></svg:path><svg:path d="m15.129 7.5l1.5 1.5l3.75-3.75m-2.874 10.612a7.4 7.4 0 0 0 1.245 2.888h-18s1.5-2.329 1.5-8.25A7.5 7.5 0 0 1 9.75 3V.75m-2.002 21a2.087 2.087 0 0 0 4.005 0"></svg:path></svg:g>`,
+})
+export class BubblesAlarmBellCheckOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -6897,57 +6948,6 @@ export class BubblesZoomInOutlineIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.875 9.811a9.062 9.062 0 1 1-18.124.002a9.062 9.062 0 0 1 18.124-.002M5.25 9.749h9m1.971 6.47l7.03 7.03"></svg:path>`,
 })
 export class BubblesZoomOutOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bubblesAddCommentSolidIcon],svg[bubbles-add-comment-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:g clip-path="url(#bubblesAddCommentSolid0)"><svg:path fill="currentColor" fill-rule="evenodd" d="M1.386.527A1.74 1.74 0 0 0 .02 1.94C.004 2.04 0 3.53.004 7.898l.005 5.823l.05.162c.029.089.088.23.133.315c.273.515.776.86 1.336.917c.102.01.557.019 1.011.019h.826l.005 1.462l.005 1.463l.047.1c.1.212.25.319.475.336a.46.46 0 0 0 .22-.022q.087-.032 2.293-1.686l2.206-1.653h3.835c2.539 0 3.898-.007 4.022-.02c.36-.036.7-.191.97-.443c.172-.162.262-.278.366-.473c.082-.155.173-.43.173-.523c0-.028.008-.056.018-.062c.012-.008.018-1.969.018-5.825c0-3.311-.007-5.81-.016-5.805c-.008.006-.02-.03-.027-.08A1.735 1.735 0 0 0 16.599.525C16.41.489 1.567.49 1.386.527m.077 1.161a.6.6 0 0 0-.286.296l-.043.094l.005 5.75l.004 5.749l.04.082c.056.113.176.23.293.285l.1.047l1.26.009l1.26.009l.09.048a.6.6 0 0 1 .268.285l.046.099v2.367l1.832-1.374a88 88 0 0 1 1.895-1.4c.053-.022.662-.027 4.13-.034l4.068-.01l.1-.046a.7.7 0 0 0 .292-.286l.04-.081l.005-5.75l.004-5.749l-.043-.094a.6.6 0 0 0-.285-.296l-.11-.054H1.572zM.009 7.808c0 3.202.002 4.513.005 2.911c.002-1.601.002-4.221 0-5.823C.01 3.295.009 4.606.009 7.808m8.747-3.222a.65.65 0 0 0-.306.293l-.043.094v2.276l-1.112.005l-1.112.005l-.085.042a.57.57 0 0 0-.044.999c.133.078.226.084 1.32.084h1.032v2.118l.056.11a.6.6 0 0 0 .268.267c.096.051.378.048.478-.005a.8.8 0 0 0 .266-.266c.039-.072.04-.085.044-1.149l.005-1.075h1.021a19 19 0 0 0 1.134-.019a.557.557 0 0 0 .42-.782a.58.58 0 0 0-.29-.287l-.099-.046H9.523l-.005-1.148l-.005-1.147l-.04-.083a.67.67 0 0 0-.274-.273a.64.64 0 0 0-.443-.013" clip-rule="evenodd"></svg:path></svg:g><svg:defs><svg:clippath id="bubblesAddCommentSolid0"><svg:path fill="#fff" d="M0 .5h18v18H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
-})
-export class BubblesAddCommentSolidIcon {
-  readonly viewBox = input("0 0 18 19")
-  readonly width = input("0.95em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bubblesAddCircleSolidIcon],svg[bubbles-add-circle-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.176.004A9 9 0 0 0 .96 6.147A8.8 8.8 0 0 0 .503 9c0 .428.011.64.051 1.005a9 9 0 0 0 3.654 6.278c.726.53 1.567.963 2.437 1.255a8.8 8.8 0 0 0 2.855.458a8 8 0 0 0 1.004-.05a9 9 0 0 0 5.015-2.253c.126-.111.562-.548.674-.674a9 9 0 0 0 1.37-2.02a8.9 8.9 0 0 0 .93-3.652c0-.044.002-.073.007-.073c.004 0 .007-.098.007-.278a2 2 0 0 0-.007-.273q-.008.003-.008-.07a9 9 0 0 0-1.349-4.409a9 9 0 0 0-1.134-1.458A8.9 8.9 0 0 0 13.5.936a8.9 8.9 0 0 0-3.416-.919C9.94.007 9.31-.002 9.176.004m-.087.99a8 8 0 0 0-4.172 1.427a8.3 8.3 0 0 0-1.673 1.567a8 8 0 0 0-1.531 3.1a8.2 8.2 0 0 0-.18 2.808a8 8 0 0 0 3.175 5.531a8 8 0 0 0 2.581 1.28a8.1 8.1 0 0 0 3.136.256a7.9 7.9 0 0 0 2.635-.78a7.9 7.9 0 0 0 2.106-1.516a7.9 7.9 0 0 0 1.516-2.107A7.9 7.9 0 0 0 17.513 9a7.9 7.9 0 0 0-.831-3.56a7.8 7.8 0 0 0-1.515-2.107a7.8 7.8 0 0 0-2.107-1.515A7.9 7.9 0 0 0 9.885.994c-.173-.009-.62-.008-.796 0m.306 4.121a.5.5 0 0 0-.365.328l-.016.047l-.004 1.508l-.004 1.509l-1.508.003l-1.508.004l-.047.016a.52.52 0 0 0-.315.315a.4.4 0 0 0-.02.155a.4.4 0 0 0 .02.155c.047.142.17.266.315.315l.047.016l1.508.004l1.508.003l.004 1.509l.004 1.508l.016.047a.52.52 0 0 0 .315.315a.4.4 0 0 0 .155.019a.4.4 0 0 0 .154-.02a.52.52 0 0 0 .316-.314l.016-.047l.003-1.508l.004-1.509L11.5 9.49l1.509-.004l.046-.016a.52.52 0 0 0 .315-.315a.4.4 0 0 0 .02-.155a.4.4 0 0 0-.02-.155a.52.52 0 0 0-.315-.315l-.046-.016L11.5 8.51l-1.508-.003l-.004-1.509l-.003-1.508l-.016-.047a.51.51 0 0 0-.316-.314a.6.6 0 0 0-.259-.014M.503 9.004c0 .154 0 .216.002.138V8.86c-.001-.076-.002-.012-.002.143" clip-rule="evenodd"></svg:path>`,
-})
-export class BubblesAddCircleSolidIcon {
-  readonly viewBox = input("0 0 19 18")
-  readonly width = input("1.06em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bubblesAlarmBellDisableOutlineIcon],svg[bubbles-alarm-bell-disable-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M11.25 6.75a6 6 0 1 0 12 0a6 6 0 0 0-12 0m4.125 1.875l3.75-3.75m0 3.75l-3.75-3.75M7.748 21.75a2.087 2.087 0 0 0 4.005 0"></svg:path><svg:path d="M17.505 15.862a7.4 7.4 0 0 0 1.245 2.888h-18s1.5-2.329 1.5-8.25A7.5 7.5 0 0 1 9.75 3V.75"></svg:path></svg:g>`,
-})
-export class BubblesAlarmBellDisableOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsCardioLoadIcon],svg[material-symbols-cardio-load-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m12 21l-3.2-2.85q-1.8-1.625-3.088-2.9t-2.124-2.4t-1.225-2.175t-.388-2.2q0-2.35 1.575-3.912T7.475 3q1.3 0 2.475.55T12 5.1q.875-1 2.05-1.55T16.525 3q2.35 0 3.925 1.563t1.575 3.912q0 1.15-.387 2.2t-1.225 2.175t-2.125 2.4t-3.088 2.9zm-5.175-7.5h10.35q.4-.425.725-.788t.6-.712h-13q.275.35.6.713t.725.787M12 18.3q.9-.8 1.688-1.487t1.437-1.313h-6.25q.65.625 1.438 1.313T12 18.3"></svg:path>`,
-})
-export class MaterialSymbolsCardioLoadIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsCardioLoadOutlineIcon],svg[material-symbols-cardio-load-outline-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsCoffeeMakerSharpIcon {
   template: `<svg:path fill="currentColor" d="M11 18q-2.925 0-4.962-2.037T4 11V5q0-.825.588-1.412T6 3h12.5q1.45 0 2.475 1.025T22 6.5t-1.025 2.475T18.5 10H18v1q0 2.925-2.037 4.963T11 18M6 8h10V5H6zm5 8q2.075 0 3.538-1.463T16 11v-1H6v1q0 2.075 1.463 3.538T11 16m7-8h.5q.625 0 1.063-.437T20 6.5t-.437-1.062T18.5 5H18zM4 21v-2h16v2zm7-11"></svg:path>`,
 })
 export class MaterialSymbolsCoffeeOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsCoffeeOutlineRoundedIcon],svg[material-symbols-coffee-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 18q-2.925 0-4.962-2.037T4 11V5q0-.825.588-1.412T6 3h12.5q1.45 0 2.475 1.025T22 6.5t-1.025 2.475T18.5 10H18v1q0 2.925-2.037 4.963T11 18M6 8h10V5H6zm5 8q2.075 0 3.538-1.463T16 11v-1H6v1q0 2.075 1.463 3.538T11 16m7-8h.5q.625 0 1.063-.437T20 6.5t-.437-1.062T18.5 5H18zM5 21q-.425 0-.712-.288T4 20t.288-.712T5 19h14q.425 0 .713.288T20 20t-.288.713T19 21zm6-11"></svg:path>`,
+})
+export class MaterialSymbolsCoffeeOutlineRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

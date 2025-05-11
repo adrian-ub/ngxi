@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fontistoAdjustIcon],svg[fontisto-adjust-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 20.501V3.5h-.064a8.27 8.27 0 0 0-4.24 1.162l.038-.021c-2.554 1.5-4.242 4.233-4.242 7.36s1.688 5.86 4.202 7.339l.04.022a8.2 8.2 0 0 0 4.2 1.14h.07H12zM24.001 12v.09c0 2.187-.598 4.235-1.64 5.988l.03-.054a12.05 12.05 0 0 1-4.311 4.337l-.056.031c-1.729 1.012-3.807 1.609-6.024 1.609s-4.295-.597-6.081-1.64l.057.031a12.05 12.05 0 0 1-4.337-4.311l-.031-.056C.596 16.296-.001 14.218-.001 12.001s.597-4.295 1.64-6.081l-.031.057A12.05 12.05 0 0 1 5.919 1.64l.056-.031C7.704.597 9.782 0 11.999 0s4.295.597 6.081 1.64l-.057-.031A12.05 12.05 0 0 1 22.36 5.92l.031.056a11.6 11.6 0 0 1 1.61 5.934v.095z"></svg:path>`,
+})
+export class FontistoAdjustIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fontisto500pxIcon],svg[fontisto-500px-icon]',
   host: {
     role: 'img',
@@ -14,40 +31,6 @@ import { Component, input } from '@angular/core'
 export class Fontisto500pxIcon {
   readonly viewBox = input("0 0 19 24")
   readonly width = input("0.8em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fontistoAidsIcon],svg[fontisto-aids-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m10.47 13.321l-2.339 3.774l4.281 6.904l3.37-2.086zM13.555 0H2.225L-.001 3.97l5.313 8.58l2.339-3.781l-2.972-4.8h6.418L-.001 21.913l3.376 2.086L15.78 3.969z"></svg:path>`,
-})
-export class FontistoAidsIcon {
-  readonly viewBox = input("0 0 16 24")
-  readonly width = input("0.67em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fontistoAlgoliaIcon],svg[fontisto-algolia-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.267 8.09h.068a4.67 4.67 0 0 1 3.333 1.393a4.45 4.45 0 0 1 1.393 3.382v-.007v.013a4.68 4.68 0 0 1-1.419 3.361l-.001.001a4.58 4.58 0 0 1-3.296 1.393l-.083-.001h.004l-.079.001a4.58 4.58 0 0 1-3.295-1.392l-.001-.001a4.58 4.58 0 0 1-1.393-3.296l.001-.083v.004l-.001-.079c0-1.292.533-2.46 1.392-3.295l.001-.001a4.58 4.58 0 0 1 3.38-1.392h-.004zm3.375 2.999q.107-.054.054-.214a3.8 3.8 0 0 0-1.349-1.383l-.017-.01a4 4 0 0 0-1.891-.589h-.01l-.018-.001a.143.143 0 0 0-.142.162v-.001v3.589q0 .054.08.08a.4.4 0 0 0 .133.026h.001zM20.841.001h.027a3.03 3.03 0 0 1 2.195.937l.001.001c.576.554.934 1.331.934 2.192v.033v-.002v17.705a3.03 3.03 0 0 1-.937 2.195l-.001.001a3.03 3.03 0 0 1-2.196.938H3.133a3.03 3.03 0 0 1-2.195-.937l-.001-.001a3.03 3.03 0 0 1-.938-2.196v-.03v.001V3.133c0-.863.359-1.641.937-2.195L.937.937a3.03 3.03 0 0 1 2.196-.938h.029h-.001zM10.017 4.555v.858c0 .036.022.066.053.079h.001a.24.24 0 0 0 .107.026a6.8 6.8 0 0 1 2.076-.32h.014h-.001h.013c.742 0 1.456.117 2.125.334l-.049-.014a.16.16 0 0 0 .107-.053a.15.15 0 0 0 .054-.107v-.804c0-.293-.123-.558-.32-.745a1.03 1.03 0 0 0-.745-.32h-2.425a.94.94 0 0 0-.707.319l-.001.001a1.07 1.07 0 0 0-.298.743v.004zM5.463 6.536a.86.86 0 0 0-.32.671v.027v-.001v.005c0 .293.123.558.32.745l.429.429q.107.107.214-.054q.375-.48.777-.91a6 6 0 0 1 .918-.787l.02-.013q.16-.107.054-.214l-.429-.429a1.13 1.13 0 0 0-.733-.268h-.017h.001h-.017c-.28 0-.537.101-.735.269l.002-.001zm6.8 13.07h.068a6.6 6.6 0 0 0 3.391-.928l-.031.017a6.85 6.85 0 0 0 2.446-2.432l.017-.032a6.53 6.53 0 0 0 .914-3.353v-.101c0-1.234-.339-2.39-.928-3.378l.017.03a6.85 6.85 0 0 0-2.432-2.446l-.032-.017a6.54 6.54 0 0 0-3.346-.911h-.058h.003h-.055a6.6 6.6 0 0 0-3.377.927l.03-.017a6.8 6.8 0 0 0-2.446 2.458l-.017.033a6.63 6.63 0 0 0-.909 3.369v.034v-.002v.041c0 1.23.338 2.38.927 3.364l-.017-.03a6.85 6.85 0 0 0 2.432 2.446l.032.017a6.5 6.5 0 0 0 3.335.911h.04h-.002z"></svg:path>`,
-})
-export class FontistoAlgoliaIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
   readonly height = input("1em")
 }
 
@@ -70,6 +53,57 @@ export class FontistoAcrobatReaderIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[fontistoAdobeIcon],svg[fontisto-adobe-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.097 0h10.025v24zm-7.063 0H0v24zm-.853 19.171l4.384-10.329l6.386 15.156h-4.184l-1.91-4.827z"></svg:path>`,
+})
+export class FontistoAdobeIcon {
+  readonly viewBox = input("0 0 27 24")
+  readonly width = input("1.13em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fontistoAlgoliaIcon],svg[fontisto-algolia-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.267 8.09h.068a4.67 4.67 0 0 1 3.333 1.393a4.45 4.45 0 0 1 1.393 3.382v-.007v.013a4.68 4.68 0 0 1-1.419 3.361l-.001.001a4.58 4.58 0 0 1-3.296 1.393l-.083-.001h.004l-.079.001a4.58 4.58 0 0 1-3.295-1.392l-.001-.001a4.58 4.58 0 0 1-1.393-3.296l.001-.083v.004l-.001-.079c0-1.292.533-2.46 1.392-3.295l.001-.001a4.58 4.58 0 0 1 3.38-1.392h-.004zm3.375 2.999q.107-.054.054-.214a3.8 3.8 0 0 0-1.349-1.383l-.017-.01a4 4 0 0 0-1.891-.589h-.01l-.018-.001a.143.143 0 0 0-.142.162v-.001v3.589q0 .054.08.08a.4.4 0 0 0 .133.026h.001zM20.841.001h.027a3.03 3.03 0 0 1 2.195.937l.001.001c.576.554.934 1.331.934 2.192v.033v-.002v17.705a3.03 3.03 0 0 1-.937 2.195l-.001.001a3.03 3.03 0 0 1-2.196.938H3.133a3.03 3.03 0 0 1-2.195-.937l-.001-.001a3.03 3.03 0 0 1-.938-2.196v-.03v.001V3.133c0-.863.359-1.641.937-2.195L.937.937a3.03 3.03 0 0 1 2.196-.938h.029h-.001zM10.017 4.555v.858c0 .036.022.066.053.079h.001a.24.24 0 0 0 .107.026a6.8 6.8 0 0 1 2.076-.32h.014h-.001h.013c.742 0 1.456.117 2.125.334l-.049-.014a.16.16 0 0 0 .107-.053a.15.15 0 0 0 .054-.107v-.804c0-.293-.123-.558-.32-.745a1.03 1.03 0 0 0-.745-.32h-2.425a.94.94 0 0 0-.707.319l-.001.001a1.07 1.07 0 0 0-.298.743v.004zM5.463 6.536a.86.86 0 0 0-.32.671v.027v-.001v.005c0 .293.123.558.32.745l.429.429q.107.107.214-.054q.375-.48.777-.91a6 6 0 0 1 .918-.787l.02-.013q.16-.107.054-.214l-.429-.429a1.13 1.13 0 0 0-.733-.268h-.017h.001h-.017c-.28 0-.537.101-.735.269l.002-.001zm6.8 13.07h.068a6.6 6.6 0 0 0 3.391-.928l-.031.017a6.85 6.85 0 0 0 2.446-2.432l.017-.032a6.53 6.53 0 0 0 .914-3.353v-.101c0-1.234-.339-2.39-.928-3.378l.017.03a6.85 6.85 0 0 0-2.432-2.446l-.032-.017a6.54 6.54 0 0 0-3.346-.911h-.058h.003h-.055a6.6 6.6 0 0 0-3.377.927l.03-.017a6.8 6.8 0 0 0-2.446 2.458l-.017.033a6.63 6.63 0 0 0-.909 3.369v.034v-.002v.041c0 1.23.338 2.38.927 3.364l-.017-.03a6.85 6.85 0 0 0 2.432 2.446l.032.017a6.5 6.5 0 0 0 3.335.911h.04h-.002z"></svg:path>`,
+})
+export class FontistoAlgoliaIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fontistoAidsIcon],svg[fontisto-aids-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m10.47 13.321l-2.339 3.774l4.281 6.904l3.37-2.086zM13.555 0H2.225L-.001 3.97l5.313 8.58l2.339-3.781l-2.972-4.8h6.418L-.001 21.913l3.376 2.086L15.78 3.969z"></svg:path>`,
+})
+export class FontistoAidsIcon {
+  readonly viewBox = input("0 0 16 24")
+  readonly width = input("0.67em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fontistoAmazonIcon],svg[fontisto-amazon-icon]',
   host: {
     role: 'img',
@@ -87,40 +121,6 @@ export class FontistoAmazonIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fontistoAirplayIcon],svg[fontisto-airplay-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7.076 24v-.007a1.201 1.201 0 0 1-.701-2.066l.001-.001l7.076-8.262a1.2 1.2 0 0 1 1.896-.003l.002.003l7.076 8.261a1.2 1.2 0 0 1-.695 2.067h-.005v.007zm14.35-6l-2.057-2.4h7.025V2.4H2.4v13.2h7.024L7.367 18H2.4A2.4 2.4 0 0 1 0 15.6V2.401a2.4 2.4 0 0 1 2.4-2.4h23.999a2.4 2.4 0 0 1 2.4 2.4V15.6a2.4 2.4 0 0 1-2.4 2.4z"></svg:path>`,
-})
-export class FontistoAirplayIcon {
-  readonly viewBox = input("0 0 29 24")
-  readonly width = input("1.21em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fontistoAdjustIcon],svg[fontisto-adjust-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 20.501V3.5h-.064a8.27 8.27 0 0 0-4.24 1.162l.038-.021c-2.554 1.5-4.242 4.233-4.242 7.36s1.688 5.86 4.202 7.339l.04.022a8.2 8.2 0 0 0 4.2 1.14h.07H12zM24.001 12v.09c0 2.187-.598 4.235-1.64 5.988l.03-.054a12.05 12.05 0 0 1-4.311 4.337l-.056.031c-1.729 1.012-3.807 1.609-6.024 1.609s-4.295-.597-6.081-1.64l.057.031a12.05 12.05 0 0 1-4.337-4.311l-.031-.056C.596 16.296-.001 14.218-.001 12.001s.597-4.295 1.64-6.081l-.031.057A12.05 12.05 0 0 1 5.919 1.64l.056-.031C7.704.597 9.782 0 11.999 0s4.295.597 6.081 1.64l-.057-.031A12.05 12.05 0 0 1 22.36 5.92l.031.056a11.6 11.6 0 0 1 1.61 5.934v.095z"></svg:path>`,
-})
-export class FontistoAdjustIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fontistoAmbulanceIcon],svg[fontisto-ambulance-icon]',
   host: {
     role: 'img',
@@ -133,6 +133,23 @@ export class FontistoAdjustIcon {
 export class FontistoAmbulanceIcon {
   readonly viewBox = input("0 0 35 24")
   readonly width = input("1.46em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fontistoAirplayIcon],svg[fontisto-airplay-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.076 24v-.007a1.201 1.201 0 0 1-.701-2.066l.001-.001l7.076-8.262a1.2 1.2 0 0 1 1.896-.003l.002.003l7.076 8.261a1.2 1.2 0 0 1-.695 2.067h-.005v.007zm14.35-6l-2.057-2.4h7.025V2.4H2.4v13.2h7.024L7.367 18H2.4A2.4 2.4 0 0 1 0 15.6V2.401a2.4 2.4 0 0 1 2.4-2.4h23.999a2.4 2.4 0 0 1 2.4 2.4V15.6a2.4 2.4 0 0 1-2.4 2.4z"></svg:path>`,
+})
+export class FontistoAirplayIcon {
+  readonly viewBox = input("0 0 29 24")
+  readonly width = input("1.21em")
   readonly height = input("1em")
 }
 
@@ -8480,22 +8497,5 @@ export class FontistoStopwatchIcon {
 export class FontistoStrikethroughIcon {
   readonly viewBox = input("0 0 27 24")
   readonly width = input("1.13em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fontistoStuckOutTongueIcon],svg[fontisto-stuck-out-tongue-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 1.316C6.099 1.316 1.316 6.099 1.316 12S6.099 22.684 12 22.684S22.684 17.901 22.684 12c-.012-5.896-4.788-10.672-10.683-10.684zm0 22.297C5.586 23.613.387 18.414.387 12S5.586.387 12 .387S23.613 5.586 23.613 12v.015c0 6.405-5.192 11.597-11.597 11.597z"></svg:path><svg:path fill="currentColor" d="M12 24C5.386 23.966.034 18.614 0 12.003V12C0 5.373 5.373 0 12 0s12 5.373 12 12c-.034 6.614-5.386 11.966-11.997 12zM12 .774C5.8.774.774 5.8.774 12S5.8 23.226 12 23.226S23.226 18.2 23.226 12C23.222 5.802 18.198.779 12.001.774zm0 22.297C5.886 23.071.929 18.114.929 12S5.886.929 12 .929S23.071 5.886 23.071 12S18.114 23.071 12 23.071m0-21.368C6.313 1.703 1.703 6.313 1.703 12S6.313 22.297 12 22.297S22.297 17.687 22.297 12v-.005c0-5.684-4.608-10.292-10.292-10.292z"></svg:path><svg:path fill="currentColor" d="M9.677 9.91a2.09 2.09 0 1 1-2.09-2.09h.009c1.15 0 2.082.932 2.082 2.082v.009zm8.284.232h-1.703l.697-.542a.43.43 0 0 0 .232-.379v-.008a.57.57 0 0 0-.155-.465a.43.43 0 0 0-.379-.232h-.008a.57.57 0 0 0-.465.155l-2.013 1.548q-.136.17-.228.376l-.004.011v.155c.03.306.285.542.596.542h.025h-.001h3.419a.53.53 0 0 0 .53-.53v-.013v.001a.516.516 0 0 0-.505-.621l-.039.001h.002zm-.464 4.335a.23.23 0 0 0-.155-.059a.23.23 0 0 0-.155.059a.35.35 0 0 0-.232.23l-.001.002c-.697 1.394-2.71 2.323-4.877 2.323c-2.245 0-4.258-.929-4.877-2.323a.469.469 0 1 0-.851.39l-.001-.003a5.48 5.48 0 0 0 3.525 2.548l.036.007c.077 2.09 1.006 3.716 2.168 3.716s2.09-1.626 2.168-3.716a5.5 5.5 0 0 0 3.548-2.53l.014-.025c0-.232-.077-.542-.31-.619"></svg:path>`,
-})
-export class FontistoStuckOutTongueIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
   readonly height = input("1em")
 }

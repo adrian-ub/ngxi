@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialSymbolsLightBrushOutlineSharpIcon],svg[material-symbols-light-brush-outline-sharp-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6.385 19.616q-.592 0-1.17-.204t-1.023-.566q.497-.327.845-.878t.348-1.352q0-.847.577-1.424q.577-.576 1.423-.576t1.423.576t.577 1.424q0 1.237-.882 2.118t-2.118.881m0-1q.825 0 1.412-.587t.588-1.412q0-.425-.288-.713t-.712-.288t-.713.288t-.287.713q0 .575-.138 1.05t-.362.9q.125.05.25.05zM11.25 14.5l-1.711-1.711l8.88-8.881l1.712 1.711zm-3.866 2.116"></svg:path>`,
-})
-export class MaterialSymbolsLightBrushOutlineSharpIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialSymbolsLightBrushSharpIcon],svg[material-symbols-light-brush-sharp-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MaterialSymbolsLightChairSharpIcon {
   template: `<svg:path fill="currentColor" d="M17.616 10.885V9.53l-.866.865l-.546-.546l1.411-1.411V7.385h-1.053L15.15 8.796l-.546-.546l.865-.865h-1.354v-.77h1.354l-.865-.865l.546-.552l1.412 1.393h1.054V5.56l-1.412-1.41l.546-.546l.865.865V3.116h.77v1.353l.865-.865l.546.546l-1.411 1.412v1.054h1.053l1.412-1.412l.546.546l-.865.865h1.354v.77H20.53l.865.865l-.546.546l-1.412-1.411h-1.053v1.054l1.411 1.411l-.546.546l-.865-.865v1.354zM6 19v-4.7l-.946.946l-.689-.688L10 8.923l5.827 5.827l-.688.714L14 14.325V19h-3.5v-3.5h-1V19z"></svg:path>`,
 })
 export class MaterialSymbolsLightChaletIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsLightChaletOutlineIcon],svg[material-symbols-light-chalet-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.616 10.885V9.53l-.866.865l-.546-.546l1.411-1.411V7.385h-1.053L15.15 8.796l-.546-.546l.865-.865h-1.354v-.77h1.354l-.865-.865l.546-.546l1.412 1.392h1.054V5.562L16.204 4.15l.546-.546l.865.865V3.116h.77v1.353l.865-.865l.546.546l-1.411 1.412v1.054h1.053l1.412-1.412l.546.546l-.865.865h1.354v.77H20.53l.865.865l-.546.546l-1.412-1.411h-1.053v1.054l1.411 1.411l-.546.546l-.865-.865v1.354zm-2.477 4.579L14 14.325V19H6v-4.7l-.946.946l-.689-.688L10 8.923l5.827 5.827zM7 18h2.5v-2.5h1V18H13v-4.675l-3-3l-3 2.98zm0 0h6z"></svg:path>`,
+})
+export class MaterialSymbolsLightChaletOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

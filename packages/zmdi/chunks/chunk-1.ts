@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[zmdiNotificationsNoneIcon],svg[zmdi-notifications-none-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M181.5 429q-17.5 0-30-12.5T139 387h85q0 17-12.5 29.5t-30 12.5M320 301l43 43v21H0v-21l43-43V184q0-49 30-86.5T149 49V35q0-14 9.5-23t23-9t22.5 9t9 23v14q47 11 77 48.5t30 86.5zm-43 22V184q0-40-28-68t-68-28t-68 28t-28 68v139z"></svg:path>`,
+})
+export class ZmdiNotificationsNoneIcon {
+  readonly viewBox = input("0 0 368 432")
+  readonly width = input("0.86em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[zmdiNotificationsOffIcon],svg[zmdi-notifications-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M181.5 429q-17.5 0-30-12.5T139 387h85q0 17-12.5 29.5t-30 12.5M320 184v79L118 61q17-8 31-12V35q0-14 9.5-23t23-9t22.5 9t9 23v14q47 11 77 48.5t30 86.5m-6 181H0v-21l43-43V184q0-38 19-71L0 51l27-27l357 357l-27 27z"></svg:path>`,
+})
+export class ZmdiNotificationsOffIcon {
+  readonly viewBox = input("0 0 384 432")
+  readonly width = input("0.89em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[zmdiNotificationsPausedIcon],svg[zmdi-notifications-paused-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M181.5 429q-17.5 0-30-12.5T139 387h85q0 17-12.5 29.5t-30 12.5M320 301l43 43v21H0v-21l43-43V184q0-49 30-86.5T149 49V35q0-14 9.5-23t23-9t22.5 9t9 23v14q47 11 77 48.5t30 86.5zm-85-132v-38H128v38h60l-60 73v38h107v-38h-60z"></svg:path>`,
+})
+export class ZmdiNotificationsPausedIcon {
+  readonly viewBox = input("0 0 368 432")
+  readonly width = input("0.86em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[zmdiOdnoklassnikiIcon],svg[zmdi-odnoklassniki-icon]',
   host: {
     role: 'img',
@@ -4655,56 +4706,5 @@ export class ZmdiZoomInIcon {
 export class ZmdiZoomOutIcon {
   readonly viewBox = input("0 0 376 384")
   readonly width = input("0.98em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[zmdi500pxIcon],svg[zmdi-500px-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M281 247q-12 13-12 14q-14 13-21 17q-26 19-59 12q-30-6-45-36q-1-2-2-3q-8 12-8 13q-21 28-57 29q-23 1-40-6q-36-16-37-56h40l1 4q5 20 21 24q21 5 35-9q9-10 10.5-25t-6.5-26q-8-12-23-14.5T52 191q-4 3-6 5q-3 5-11 5H6q9-53 20-110h111v33H58q-3 0-4 3q-1 4-7 39v3q21-19 52-14q27 5 42 34q1-1 1-3q2-2 2-3q21-43 69-36q26 3 46 22q1 1 23 24l2-2q22-23 24-25q17-16 38-19q23-3 43 5.5t30 30.5q16 38-2 74q-16 33-55 35q-29 1-51-17q-3-2-25-22q0-1-5-6m-76 5q12 0 24-7q8-4 28-23q1-2 0-4q-2-1-9.5-8T236 199q-9-8-21-12q-14-4-25 2t-15 20q-1 4-1 8q-1 16 8 25.5t23 9.5m99-32q22 20 24 21q13 12 30 11q25 0 30-24q1-7 0-15q-2-13-11.5-21t-22.5-6q-15 1-28 13q-1 1-22 21"></svg:path>`,
-})
-export class Zmdi500pxIcon {
-  readonly viewBox = input("0 0 432 384")
-  readonly width = input("1.13em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[zmdiAccountIcon],svg[zmdi-account-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M170.5 192q-35.5 0-60.5-25t-25-60.5T110 46t60.5-25T231 46t25 60.5t-25 60.5t-60.5 25m0 43q31.5 0 69.5 9t69.5 29.5T341 320v43H0v-43q0-26 31.5-46.5T101 244t69.5-9"></svg:path>`,
-})
-export class ZmdiAccountIcon {
-  readonly viewBox = input("0 0 344 384")
-  readonly width = input("0.9em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[zmdiAccountBoxIcon],svg[zmdi-account-box-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M0 43q0-18 12.5-30.5T43 0h298q18 0 30.5 12.5T384 43v298q0 18-12.5 30.5T341 384H43q-18 0-30.5-12.5T0 341zm256 85q0-27-18.5-45.5T192 64t-45.5 18.5T128 128t18.5 45.5T192 192t45.5-18.5T256 128M64 299v21h256v-21q0-20-23.5-36T244 240t-52-7t-52 7t-52.5 23T64 299"></svg:path>`,
-})
-export class ZmdiAccountBoxIcon {
-  readonly viewBox = input("0 0 384 384")
-  readonly width = input("1em")
   readonly height = input("1em")
 }

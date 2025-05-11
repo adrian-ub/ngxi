@@ -19,33 +19,16 @@ export class CircumAirportSign1Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[circumAlignLeftIcon],svg[circum-align-left-icon]',
+  selector: 'svg[circumAlarmOffIcon],svg[circum-alarm-off-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M3.078 3.548v16.9a.5.5 0 0 0 1 0v-16.9a.5.5 0 0 0-1 0M18.422 11.5H7.582a2.5 2.5 0 0 1-2.5-2.5V6.565a2.5 2.5 0 0 1 2.5-2.5h10.84a2.5 2.5 0 0 1 2.5 2.5V9a2.5 2.5 0 0 1-2.5 2.5M7.582 5.065a1.5 1.5 0 0 0-1.5 1.5V9a1.5 1.5 0 0 0 1.5 1.5h10.84a1.5 1.5 0 0 0 1.5-1.5V6.565a1.5 1.5 0 0 0-1.5-1.5Zm5.869 14.873H7.582a2.5 2.5 0 0 1-2.5-2.5V15a2.5 2.5 0 0 1 2.5-2.5h5.869a2.5 2.5 0 0 1 2.5 2.5v2.436a2.5 2.5 0 0 1-2.5 2.502M7.582 13.5a1.5 1.5 0 0 0-1.5 1.5v2.436a1.5 1.5 0 0 0 1.5 1.5h5.869a1.5 1.5 0 0 0 1.5-1.5V15a1.5 1.5 0 0 0-1.5-1.5Z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M4.564 3.856a.5.5 0 0 0-.7.71l.29.29l-.5.5a2.02 2.02 0 0 0-.01 2.85l.65.67a8.3 8.3 0 0 0-.71 3.39A8.427 8.427 0 0 0 12 20.686a8.28 8.28 0 0 0 5.72-2.26c.57.57 1.14 1.15 1.71 1.71a.5.5 0 0 0 .71-.7Zm-.21 2.21l.51-.5c.32.33.65.65.98.98a6.4 6.4 0 0 0-1.06 1.4l-.43-.44a1.03 1.03 0 0 1 0-1.44M12 19.686a7.43 7.43 0 0 1-7.42-7.42a7.3 7.3 0 0 1 1.96-5.02l2.59 2.59l7.88 7.88a7.27 7.27 0 0 1-5.01 1.97m8.354-11.47a2.04 2.04 0 0 0 0-2.86l-1.46-1.45a2.01 2.01 0 0 0-2.85 0l-.68.67a8.53 8.53 0 0 0-6.38-.17c-.6.23-.34 1.19.27.97a7.419 7.419 0 0 1 9.64 9.64c-.22.6.74.86.97.26a8.5 8.5 0 0 0-.17-6.39Zm-2.4-1.9a8 8 0 0 0-1.65-1.27l.44-.43a1.026 1.026 0 0 1 1.45 0l1.45 1.45a1.014 1.014 0 0 1 0 1.44l-.43.44a8.3 8.3 0 0 0-1.26-1.63"></svg:path>`,
 })
-export class CircumAlignLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[circumAlignBottomIcon],svg[circum-align-bottom-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.548 20.922h16.9a.5.5 0 0 0 0-1h-16.9a.5.5 0 0 0 0 1M9 18.919H6.565a2.5 2.5 0 0 1-2.5-2.5V5.578a2.5 2.5 0 0 1 2.5-2.5H9a2.5 2.5 0 0 1 2.5 2.5v10.841a2.5 2.5 0 0 1-2.5 2.5M6.565 4.078a1.5 1.5 0 0 0-1.5 1.5v10.841a1.5 1.5 0 0 0 1.5 1.5H9a1.5 1.5 0 0 0 1.5-1.5V5.578a1.5 1.5 0 0 0-1.5-1.5Zm10.872 14.841H15a2.5 2.5 0 0 1-2.5-2.5V10.55a2.5 2.5 0 0 1 2.5-2.5h2.434a2.5 2.5 0 0 1 2.5 2.5v5.869a2.5 2.5 0 0 1-2.497 2.5M15 9.05a1.5 1.5 0 0 0-1.5 1.5v5.869a1.5 1.5 0 0 0 1.5 1.5h2.434a1.5 1.5 0 0 0 1.5-1.5V10.55a1.5 1.5 0 0 0-1.5-1.5Z"></svg:path>`,
-})
-export class CircumAlignBottomIcon {
+export class CircumAlarmOffIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,6 +53,40 @@ export class CircumAlarmOnIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[circumAlignBottomIcon],svg[circum-align-bottom-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.548 20.922h16.9a.5.5 0 0 0 0-1h-16.9a.5.5 0 0 0 0 1M9 18.919H6.565a2.5 2.5 0 0 1-2.5-2.5V5.578a2.5 2.5 0 0 1 2.5-2.5H9a2.5 2.5 0 0 1 2.5 2.5v10.841a2.5 2.5 0 0 1-2.5 2.5M6.565 4.078a1.5 1.5 0 0 0-1.5 1.5v10.841a1.5 1.5 0 0 0 1.5 1.5H9a1.5 1.5 0 0 0 1.5-1.5V5.578a1.5 1.5 0 0 0-1.5-1.5Zm10.872 14.841H15a2.5 2.5 0 0 1-2.5-2.5V10.55a2.5 2.5 0 0 1 2.5-2.5h2.434a2.5 2.5 0 0 1 2.5 2.5v5.869a2.5 2.5 0 0 1-2.497 2.5M15 9.05a1.5 1.5 0 0 0-1.5 1.5v5.869a1.5 1.5 0 0 0 1.5 1.5h2.434a1.5 1.5 0 0 0 1.5-1.5V10.55a1.5 1.5 0 0 0-1.5-1.5Z"></svg:path>`,
+})
+export class CircumAlignBottomIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[circumAlignCenterHIcon],svg[circum-align-center-h-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.42 4.062H12.5v-.51a.5.5 0 0 0-1 0v.51H6.58a2.507 2.507 0 0 0-2.5 2.5V9a2.5 2.5 0 0 0 2.5 2.5h4.92v1H9.06a2.507 2.507 0 0 0-2.5 2.5v2.44a2.507 2.507 0 0 0 2.5 2.5h2.44v.51a.5.5 0 0 0 1 0v-.51h2.43a2.5 2.5 0 0 0 2.5-2.5V15a2.5 2.5 0 0 0-2.5-2.5H12.5v-1h4.92a2.5 2.5 0 0 0 2.5-2.5V6.562a2.507 2.507 0 0 0-2.5-2.5m-5.92 14.88H9.06a1.51 1.51 0 0 1-1.5-1.5V15a1.5 1.5 0 0 1 1.5-1.5h2.44Zm0-8.44H6.58A1.5 1.5 0 0 1 5.08 9V6.562a1.5 1.5 0 0 1 1.5-1.5h4.92Zm3.43 3a1.5 1.5 0 0 1 1.5 1.5v2.44a1.5 1.5 0 0 1-1.5 1.5H12.5V13.5ZM18.92 9a1.5 1.5 0 0 1-1.5 1.5H12.5V5.062h4.92a1.5 1.5 0 0 1 1.5 1.5Z"></svg:path>`,
+})
+export class CircumAlignCenterHIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[circumAlignCenterVIcon],svg[circum-align-center-v-icon]',
   host: {
     role: 'img',
@@ -80,6 +97,40 @@ export class CircumAlarmOnIcon {
   template: `<svg:path fill="currentColor" d="M20.446 11.5h-.51V9.07a2.5 2.5 0 0 0-2.5-2.5h-2.43a2.5 2.5 0 0 0-2.5 2.5v2.43H11.5V6.58A2.5 2.5 0 0 0 9 4.08H6.566a2.5 2.5 0 0 0-2.5 2.5v4.92h-.52a.5.5 0 0 0 0 1h.52v4.92a2.5 2.5 0 0 0 2.5 2.5H9a2.5 2.5 0 0 0 2.5-2.5V12.5h1.01v2.43a2.5 2.5 0 0 0 2.5 2.5h2.43a2.5 2.5 0 0 0 2.5-2.5V12.5h.51a.5.5 0 0 0-.004-1M10.5 17.42a1.5 1.5 0 0 1-1.5 1.5H6.566a1.5 1.5 0 0 1-1.5-1.5V12.5H10.5Zm0-5.92H5.066V6.58a1.5 1.5 0 0 1 1.5-1.5H9a1.5 1.5 0 0 1 1.5 1.5Zm8.44 3.43a1.5 1.5 0 0 1-1.5 1.5h-2.43a1.5 1.5 0 0 1-1.5-1.5V12.5h5.43Zm0-3.43h-5.43V9.07a1.5 1.5 0 0 1 1.5-1.5h2.43a1.5 1.5 0 0 1 1.5 1.5Z"></svg:path>`,
 })
 export class CircumAlignCenterVIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[circumAlignLeftIcon],svg[circum-align-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.078 3.548v16.9a.5.5 0 0 0 1 0v-16.9a.5.5 0 0 0-1 0M18.422 11.5H7.582a2.5 2.5 0 0 1-2.5-2.5V6.565a2.5 2.5 0 0 1 2.5-2.5h10.84a2.5 2.5 0 0 1 2.5 2.5V9a2.5 2.5 0 0 1-2.5 2.5M7.582 5.065a1.5 1.5 0 0 0-1.5 1.5V9a1.5 1.5 0 0 0 1.5 1.5h10.84a1.5 1.5 0 0 0 1.5-1.5V6.565a1.5 1.5 0 0 0-1.5-1.5Zm5.869 14.873H7.582a2.5 2.5 0 0 1-2.5-2.5V15a2.5 2.5 0 0 1 2.5-2.5h5.869a2.5 2.5 0 0 1 2.5 2.5v2.436a2.5 2.5 0 0 1-2.5 2.502M7.582 13.5a1.5 1.5 0 0 0-1.5 1.5v2.436a1.5 1.5 0 0 0 1.5 1.5h5.869a1.5 1.5 0 0 0 1.5-1.5V15a1.5 1.5 0 0 0-1.5-1.5Z"></svg:path>`,
+})
+export class CircumAlignLeftIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[circumAlignTopIcon],svg[circum-align-top-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.548 4.078h16.9a.5.5 0 0 0 0-1h-16.9a.5.5 0 0 0 0 1M9 20.922H6.565a2.5 2.5 0 0 1-2.5-2.5V7.582a2.5 2.5 0 0 1 2.5-2.5H9a2.5 2.5 0 0 1 2.5 2.5v10.84a2.5 2.5 0 0 1-2.5 2.5M6.565 6.082a1.5 1.5 0 0 0-1.5 1.5v10.84a1.5 1.5 0 0 0 1.5 1.5H9a1.5 1.5 0 0 0 1.5-1.5V7.582a1.5 1.5 0 0 0-1.5-1.5Zm10.873 9.869H15a2.5 2.5 0 0 1-2.5-2.5V7.582a2.5 2.5 0 0 1 2.5-2.5h2.435a2.5 2.5 0 0 1 2.5 2.5v5.869a2.5 2.5 0 0 1-2.497 2.5M15 6.082a1.5 1.5 0 0 0-1.5 1.5v5.869a1.5 1.5 0 0 0 1.5 1.5h2.435a1.5 1.5 0 0 0 1.5-1.5V7.582a1.5 1.5 0 0 0-1.5-1.5Z"></svg:path>`,
+})
+export class CircumAlignTopIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -4840,57 +4891,6 @@ export class CircumZoomInIcon {
   template: `<svg:path fill="currentColor" d="M16.279 17.039a7.93 7.93 0 0 1-5.206 1.941a7.964 7.964 0 0 1-7.96-7.96a7.964 7.964 0 0 1 7.96-7.96a7.964 7.964 0 0 1 7.96 7.96a7.93 7.93 0 0 1-2.04 5.319l.165.165l3.583 3.582c.455.456-.252 1.163-.707.708zm1.754-6.019a6.964 6.964 0 0 0-6.96-6.96a6.963 6.963 0 0 0-6.96 6.96a6.963 6.963 0 0 0 6.96 6.96a6.964 6.964 0 0 0 6.96-6.96m-4.96-.5c.645 0 .643 1 0 1h-4c-.645 0-.643-1 0-1z"></svg:path>`,
 })
 export class CircumZoomOutIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[circumAlignTopIcon],svg[circum-align-top-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.548 4.078h16.9a.5.5 0 0 0 0-1h-16.9a.5.5 0 0 0 0 1M9 20.922H6.565a2.5 2.5 0 0 1-2.5-2.5V7.582a2.5 2.5 0 0 1 2.5-2.5H9a2.5 2.5 0 0 1 2.5 2.5v10.84a2.5 2.5 0 0 1-2.5 2.5M6.565 6.082a1.5 1.5 0 0 0-1.5 1.5v10.84a1.5 1.5 0 0 0 1.5 1.5H9a1.5 1.5 0 0 0 1.5-1.5V7.582a1.5 1.5 0 0 0-1.5-1.5Zm10.873 9.869H15a2.5 2.5 0 0 1-2.5-2.5V7.582a2.5 2.5 0 0 1 2.5-2.5h2.435a2.5 2.5 0 0 1 2.5 2.5v5.869a2.5 2.5 0 0 1-2.497 2.5M15 6.082a1.5 1.5 0 0 0-1.5 1.5v5.869a1.5 1.5 0 0 0 1.5 1.5h2.435a1.5 1.5 0 0 0 1.5-1.5V7.582a1.5 1.5 0 0 0-1.5-1.5Z"></svg:path>`,
-})
-export class CircumAlignTopIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[circumAlarmOffIcon],svg[circum-alarm-off-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.564 3.856a.5.5 0 0 0-.7.71l.29.29l-.5.5a2.02 2.02 0 0 0-.01 2.85l.65.67a8.3 8.3 0 0 0-.71 3.39A8.427 8.427 0 0 0 12 20.686a8.28 8.28 0 0 0 5.72-2.26c.57.57 1.14 1.15 1.71 1.71a.5.5 0 0 0 .71-.7Zm-.21 2.21l.51-.5c.32.33.65.65.98.98a6.4 6.4 0 0 0-1.06 1.4l-.43-.44a1.03 1.03 0 0 1 0-1.44M12 19.686a7.43 7.43 0 0 1-7.42-7.42a7.3 7.3 0 0 1 1.96-5.02l2.59 2.59l7.88 7.88a7.27 7.27 0 0 1-5.01 1.97m8.354-11.47a2.04 2.04 0 0 0 0-2.86l-1.46-1.45a2.01 2.01 0 0 0-2.85 0l-.68.67a8.53 8.53 0 0 0-6.38-.17c-.6.23-.34 1.19.27.97a7.419 7.419 0 0 1 9.64 9.64c-.22.6.74.86.97.26a8.5 8.5 0 0 0-.17-6.39Zm-2.4-1.9a8 8 0 0 0-1.65-1.27l.44-.43a1.026 1.026 0 0 1 1.45 0l1.45 1.45a1.014 1.014 0 0 1 0 1.44l-.43.44a8.3 8.3 0 0 0-1.26-1.63"></svg:path>`,
-})
-export class CircumAlarmOffIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[circumAlignCenterHIcon],svg[circum-align-center-h-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M17.42 4.062H12.5v-.51a.5.5 0 0 0-1 0v.51H6.58a2.507 2.507 0 0 0-2.5 2.5V9a2.5 2.5 0 0 0 2.5 2.5h4.92v1H9.06a2.507 2.507 0 0 0-2.5 2.5v2.44a2.507 2.507 0 0 0 2.5 2.5h2.44v.51a.5.5 0 0 0 1 0v-.51h2.43a2.5 2.5 0 0 0 2.5-2.5V15a2.5 2.5 0 0 0-2.5-2.5H12.5v-1h4.92a2.5 2.5 0 0 0 2.5-2.5V6.562a2.507 2.507 0 0 0-2.5-2.5m-5.92 14.88H9.06a1.51 1.51 0 0 1-1.5-1.5V15a1.5 1.5 0 0 1 1.5-1.5h2.44Zm0-8.44H6.58A1.5 1.5 0 0 1 5.08 9V6.562a1.5 1.5 0 0 1 1.5-1.5h4.92Zm3.43 3a1.5 1.5 0 0 1 1.5 1.5v2.44a1.5 1.5 0 0 1-1.5 1.5H12.5V13.5ZM18.92 9a1.5 1.5 0 0 1-1.5 1.5H12.5V5.062h4.92a1.5 1.5 0 0 1 1.5 1.5Z"></svg:path>`,
-})
-export class CircumAlignCenterHIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

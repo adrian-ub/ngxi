@@ -2,6 +2,74 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[phHandHeartFillIcon],svg[ph-hand-heart-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M230.33 141.06a24.34 24.34 0 0 0-18.61-4.77C230.5 117.33 240 98.48 240 80c0-26.47-21.29-48-47.46-48A47.58 47.58 0 0 0 156 48.75A47.58 47.58 0 0 0 119.46 32C93.29 32 72 53.53 72 80c0 11 3.24 21.69 10.06 33a31.87 31.87 0 0 0-14.75 8.4L44.69 144H16a16 16 0 0 0-16 16v40a16 16 0 0 0 16 16h104a8 8 0 0 0 1.94-.24l64-16a7 7 0 0 0 1.19-.4L226 182.82l.44-.2a24.6 24.6 0 0 0 3.93-41.56Zm-10.9 27.15l-38 16.18L119 200H56v-44.69l22.63-22.62A15.86 15.86 0 0 1 89.94 128H140a12 12 0 0 1 0 24h-28a8 8 0 0 0 0 16h32a8.3 8.3 0 0 0 1.79-.2l67-15.41l.31-.08a8.6 8.6 0 0 1 6.3 15.9Z"></svg:path>`,
+})
+export class PhHandHeartFillIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phHandHeartLightIcon],svg[ph-hand-heart-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M229.12 142.65a22.43 22.43 0 0 0-19.55-3.88l-4.32 1C227 119.55 238 99.51 238 80c0-25.36-20.39-46-45.46-46A45.51 45.51 0 0 0 156 52a45.51 45.51 0 0 0-36.54-18C94.39 34 74 54.64 74 80c0 11.38 3.63 22.49 11.29 34.36a29.73 29.73 0 0 0-16.56 8.43L45.52 146H16a14 14 0 0 0-14 14v40a14 14 0 0 0 14 14h104a6 6 0 0 0 1.46-.18l64-16a7 7 0 0 0 .89-.3L225.17 181l.33-.15a22.6 22.6 0 0 0 3.62-38.18ZM119.46 46a33.16 33.16 0 0 1 31 20.28a6 6 0 0 0 11.1 0a33.16 33.16 0 0 1 31-20.28C210.68 46 226 61.57 226 80c0 20.24-16.18 43-46.8 65.75l-14.87 3.42A26 26 0 0 0 140 114H99.67C90.36 101.67 86 90.81 86 80c0-18.43 15.32-34 33.46-34M14 200v-40a2 2 0 0 1 2-2h26v44H16a2 2 0 0 1-2-2m206.28-30l-38.2 16.27L119.26 202H54v-47.51l23.21-23.22A17.88 17.88 0 0 1 89.94 126H140a14 14 0 0 1 0 28h-28a6 6 0 0 0 0 12h32a6 6 0 0 0 1.34-.15l67-15.41l.24-.06a10.6 10.6 0 0 1 7.7 19.62"></svg:path>`,
+})
+export class PhHandHeartLightIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phHandHeartThinIcon],svg[ph-hand-heart-thin-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M227.9 144.24a20.45 20.45 0 0 0-17.84-3.53l-11.95 2.75C223.26 121.88 236 100.58 236 80c0-24.26-19.5-44-43.46-44A43.41 43.41 0 0 0 156 55.44A43.41 43.41 0 0 0 119.46 36C95.5 36 76 55.74 76 80c0 11.85 4.11 23.44 12.81 36a27.8 27.8 0 0 0-18.67 8.17L46.34 148H16a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h104a4 4 0 0 0 1-.12l64-16a5 5 0 0 0 .6-.2l38.82-16.54l.22-.1a20.6 20.6 0 0 0 3.29-34.8ZM119.46 44a35.15 35.15 0 0 1 32.84 21.52a4 4 0 0 0 7.4 0A35.15 35.15 0 0 1 192.54 44C211.76 44 228 60.49 228 80c0 21.27-16.13 44-47.94 67.61L160.75 152a23.76 23.76 0 0 0 3.25-12a24 24 0 0 0-24-24H98.69C88.69 103 84 91.5 84 80c0-19.51 16.24-36 35.46-36M12 200v-40a4 4 0 0 1 4-4h28v48H16a4 4 0 0 1-4-4m209.13-28.17l-38.41 16.37l-63.21 15.8H52v-50.34l23.8-23.8A19.86 19.86 0 0 1 89.94 124H140a16 16 0 0 1 0 32h-28a4 4 0 0 0 0 8h32a4 4 0 0 0 .9-.1l67-15.41h.16a12.6 12.6 0 0 1 9 23.38Z"></svg:path>`,
+})
+export class PhHandHeartThinIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phHandLightIcon],svg[ph-hand-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M188 50a25.8 25.8 0 0 0-14 4.11V44a26 26 0 0 0-51.41-5.51A26 26 0 0 0 82 60v71l-7.53-12.1a26 26 0 0 0-45.11 25.87C60.76 211 78.51 238 128 238a86.1 86.1 0 0 0 86-86V76a26 26 0 0 0-26-26m14 102a74.09 74.09 0 0 1-74 74c-21 0-34.51-5.05-46.75-17.45C67.81 195 55.54 172 40.1 139.43l-.23-.43a14 14 0 0 1 24.25-14l.1.17l18.68 30A6 6 0 0 0 94 152V60a14 14 0 0 1 28 0v60a6 6 0 0 0 12 0V44a14 14 0 0 1 28 0v76a6 6 0 0 0 12 0V76a14 14 0 0 1 28 0Z"></svg:path>`,
+})
+export class PhHandLightIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[phHandPalmIcon],svg[ph-hand-palm-icon]',
   host: {
     role: 'img',
@@ -8427,74 +8495,6 @@ export class PhLassoBoldIcon {
   template: `<svg:g fill="currentColor"><svg:path d="M232 112c0 35.35-46.56 64-104 64S24 147.35 24 112s46.56-64 104-64s104 28.65 104 64" opacity=".2"></svg:path><svg:path d="M205.73 59.93C184.85 47.08 157.24 40 128 40s-56.85 7.08-77.73 19.93C28.17 73.52 16 92 16 112s12.17 38.44 34.27 52c19 11.67 43.49 18.56 69.73 19.73a37.35 37.35 0 0 1-18.58 33c-14.64 8.86-34.62 9.52-49.72 1.64a8 8 0 1 0-7.4 14.18A66.4 66.4 0 0 0 75 240a67.3 67.3 0 0 0 34.74-9.5c17-10.27 26.29-26.86 26.29-46.7c26.24-1.17 50.76-8.06 69.73-19.73C227.83 150.44 240 132 240 112s-12.17-38.48-34.27-52.07M67.41 155.18c5.24-9.55 15.45-12 23.53-11c10.9 1.42 21.86 9.13 26.61 23.42c-18.44-1.15-35.7-5.44-50.14-12.42m129.94-4.77c-16.95 10.43-39.17 16.53-63.13 17.43a54.4 54.4 0 0 0-11.39-23.07A47.17 47.17 0 0 0 93 128.35c-17-2.2-31.72 5.11-39.38 18.7C39.64 137 32 124.73 32 112c0-14.21 9.47-27.86 26.65-38.43C77.05 62.23 101.68 56 128 56s51 6.23 69.35 17.55C214.53 84.12 224 97.77 224 112s-9.47 27.84-26.65 38.41"></svg:path></svg:g>`,
 })
 export class PhLassoDuotoneIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phLassoFillIcon],svg[ph-lasso-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M93.43 136.11a17.14 17.14 0 0 0-15.35 6.1c9.31 6.56 22.51 11.33 37.43 13.07c-5.1-11.95-13.79-18.28-22.08-19.17"></svg:path><svg:path d="M224 48v160a16 16 0 0 1-16 16h-80.35a4 4 0 0 1-3.23-6.34c7.5-10.23 11.58-23.24 11.58-37.84c0-2.79-.13-5.46-.35-8.05C176.79 169.33 208 147.47 208 120c0-29.15-35.14-52-80-52s-80 22.84-80 52c0 27.31 30.82 49.07 71.58 51.73a77 77 0 0 1 .42 8.09c0 17.62-7.65 31.95-21 39.32A38.77 38.77 0 0 1 79.27 224H48a16 16 0 0 1-16-16V48a16 16 0 0 1 16-16h160a16 16 0 0 1 16 16m-32 72c0-19.51-29.31-36-64-36s-64 16.48-64 36a21.3 21.3 0 0 0 3 10.63a33.65 33.65 0 0 1 28.16-10.43c15 1.63 30.84 13.4 37.54 35.68c32.6-1.41 59.3-17.26 59.3-35.88"></svg:path></svg:g>`,
-})
-export class PhLassoFillIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phLassoLightIcon],svg[ph-lasso-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M204.68 61.63C184.11 49 156.88 42 128 42s-56.11 7-76.68 19.63C29.83 74.85 18 92.73 18 112s11.83 37.13 33.32 50.35C70.45 174.1 95.35 181 122 181.85v1.94c0 14.76-6.94 27.1-19.54 34.73c-15.22 9.22-36 9.9-51.68 1.71a6 6 0 1 0-5.56 10.63A64.45 64.45 0 0 0 75 238a65.24 65.24 0 0 0 33.7-9.22c16.34-9.89 25.33-25.87 25.33-45v-1.94c26.65-.89 51.57-7.74 70.72-19.52C226.17 149.11 238 131.23 238 112s-11.83-37.15-33.32-50.37m-140 94.46c5.32-12 17.2-15.07 26.48-13.87c12.28 1.6 24.64 10.67 29.08 27.55c-20.51-.96-39.76-5.69-55.52-13.68Zm133.67-4c-17.62 10.85-40.83 17.1-65.77 17.79a52.8 52.8 0 0 0-11.31-23.84a45.24 45.24 0 0 0-28.56-15.73c-16.89-2.2-31.49 5.54-38.41 19.68C38.61 139.37 30 126 30 112c0-14.93 9.8-29.18 27.61-40.13C76.32 60.34 101.32 54 128 54s51.68 6.34 70.39 17.85C216.2 82.8 226 97.05 226 112s-9.8 29.16-27.61 40.11Z"></svg:path>`,
-})
-export class PhLassoLightIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phLassoThinIcon],svg[ph-lasso-thin-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M203.64 63.34C183.37 50.87 156.51 44 128 44s-55.37 6.87-75.64 19.34C31.49 76.19 20 93.48 20 112s11.49 35.83 32.36 48.68c19.29 11.87 44.55 18.65 71.51 19.28c.08 1.27.13 2.56.13 3.9c0 15.49-7.28 28.44-20.51 36.46c-15.79 9.57-37.34 10.28-53.64 1.77a4 4 0 1 0-3.7 7.09A62.3 62.3 0 0 0 74.91 236a63.56 63.56 0 0 0 32.73-8.82c15.71-9.52 24.36-24.9 24.36-43.3c0-1.32-.05-2.61-.12-3.9c27.06-.59 52.41-7.38 71.76-19.28C224.51 147.85 236 130.56 236 112s-11.49-35.81-32.36-48.66M62.16 157.15c5.3-14.49 18.83-18.22 29.3-16.85c13.64 1.78 27.38 12.19 31.38 31.66c-23.18-.71-44.29-6.18-60.68-14.81M131 172a51.35 51.35 0 0 0-11.18-24.59a43.28 43.28 0 0 0-27.3-15.06c-16.82-2.19-31.24 6-37.33 20.74C38.33 142.35 28 127.9 28 112c0-33.09 44.86-60 100-60s100 26.93 100 60c0 32.52-43.26 59.06-97 60"></svg:path>`,
-})
-export class PhLassoThinIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[phLastfmLogoIcon],svg[ph-lastfm-logo-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M248 160a40 40 0 0 1-40 40h-17.43a56.22 56.22 0 0 1-50.75-32.32l-30.14-64.6A40.15 40.15 0 0 0 73.43 80H64a40 40 0 0 0-40 40v24a40 40 0 0 0 40 40h8a32 32 0 0 0 29.34-19.2a8 8 0 1 1 14.66 6.4A48 48 0 0 1 72 200h-8a56.06 56.06 0 0 1-56-56v-24a56.06 56.06 0 0 1 56-56h9.43a56.22 56.22 0 0 1 50.75 32.32l30.14 64.6A40.15 40.15 0 0 0 190.57 184H208a24 24 0 0 0 0-48h-20a36 36 0 0 1 0-72h20a32 32 0 0 1 32 32a8 8 0 0 1-16 0a16 16 0 0 0-16-16h-20a20 20 0 0 0 0 40h20a40 40 0 0 1 40 40"></svg:path>`,
-})
-export class PhLastfmLogoIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")

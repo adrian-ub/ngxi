@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[lineiconsLineSpacingIcon],svg[lineicons-line-spacing-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M37.2 7.6h22.7c1.2 0 2.3-1 2.3-2.3S61.2 3 59.9 3H37.2c-1.2 0-2.3 1-2.3 2.3s1.1 2.3 2.3 2.3m22.7 13.2H37.2c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h22.7c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3m0 17.8H37.2c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h22.7c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3m0 17.8H37.2c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h22.7c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3M22.8 15.3c.4.4 1 .7 1.6.7s1.2-.2 1.6-.7c.9-.9.9-2.3 0-3.2l-9.4-9.4c-1.3-1.3-3.3-1.3-4.6 0l-9.5 9.4c-.9.9-.9 2.3 0 3.2s2.3.9 3.2 0L12 9v46l-6.3-6.4c-.9-.9-2.3-.9-3.2 0s-.9 2.3 0 3.2l9.4 9.5c.6.6 1.4 1 2.3 1s1.7-.3 2.3-.9l9.5-9.5c.9-.9.9-2.3 0-3.2s-2.3-.9-3.2 0L16.5 55V9z"></svg:path>`,
-})
-export class LineiconsLineSpacingIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[lineiconsLineiconsIcon],svg[lineicons-lineicons-icon]',
   host: {
     role: 'img',
@@ -7850,6 +7833,23 @@ export class LineiconsZoomInIcon {
 })
 export class LineiconsZoomOutIcon {
   readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsAdonisIcon],svg[lineicons-adonis-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 21c-7.259 0-9-1.741-9-9s1.741-9 9-9s9 1.741 9 9s-1.741 9-9 9M9.452 7.454L6.63 13.87c-.128.311-.238.715-.238 1.063c0 1.595 1.118 2.713 2.713 2.713c.522 0 .956-.138 1.398-.277c.456-.145.92-.292 1.498-.292c.584 0 1.037.146 1.485.29c.437.14.868.279 1.411.279c1.595 0 2.713-1.119 2.713-2.713c0-.348-.11-.752-.238-1.063l-2.823-6.416C14.07 6.373 13.155 5.786 12 5.786s-2.071.587-2.548 1.668m-.238 7.424L12 8.572l2.75 6.306c-.789-.385-1.778-.568-2.75-.568c-1.008 0-1.961.183-2.786.568"></svg:path>`,
+})
+export class LineiconsAdonisIcon {
+  readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
 }
