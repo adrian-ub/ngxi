@@ -10,6 +10,8 @@
     "module": "ES2022",
     "moduleResolution": "node",
     "paths": {
+      "@internal/collections": ["collections/src/index.ts"],
+      "@internal/scripts": ["scripts/src/index.ts"],
       "@ngxi/academicons": ["packages/academicons/src/index.ts"],
       "@ngxi/academicons/square": ["packages/academicons/square/src/index.ts"],
       "@ngxi/akar-icons": ["packages/akar-icons/src/index.ts"],
@@ -50,7 +52,6 @@
       "@ngxi/clarity": ["packages/clarity/src/index.ts"],
       "@ngxi/codex": ["packages/codex/src/index.ts"],
       "@ngxi/codicon": ["packages/codicon/src/index.ts"],
-      "@ngxi/collections": ["collections/src/index.ts"],
       "@ngxi/covid": ["packages/covid/src/index.ts"],
       "@ngxi/cryptocurrency": ["packages/cryptocurrency/src/index.ts"],
       "@ngxi/cryptocurrency-color": [
@@ -310,7 +311,6 @@
       "@ngxi/ri/fill": ["packages/ri/fill/src/index.ts"],
       "@ngxi/ri/line": ["packages/ri/line/src/index.ts"],
       "@ngxi/rivet-icons": ["packages/rivet-icons/src/index.ts"],
-      "@ngxi/scripts": ["scripts/src/index.ts"],
       "@ngxi/si": ["packages/si/src/index.ts"],
       "@ngxi/si-glyph": ["packages/si-glyph/src/index.ts"],
       "@ngxi/si/duotone": ["packages/si/duotone/src/index.ts"],

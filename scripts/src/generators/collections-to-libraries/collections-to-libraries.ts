@@ -1,6 +1,6 @@
 import type { Tree } from '@nx/devkit'
 
-import { collections } from '@ngxi/collections'
+import { collections } from '@internal/collections'
 import { readProjectConfiguration } from '@nx/devkit'
 import ora from 'ora'
 
@@ -26,7 +26,7 @@ export async function collectionsToLibrariesGenerator(tree: Tree) {
     const spinner = ora(`Generating ${collection} library...`).start()
 
     try {
-      await x('nx', ['g', '@ngxi/scripts:icon-library', collection], {
+      await x('nx', ['g', '@internal/scripts:icon-library', collection], {
         nodeOptions: {
           stdio: 'pipe',
         },
