@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Font Awesome Regular
+- **Prefix**: `fa6-regular`
+- **Icons**: 163
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Dave Gandy](https://github.com/FortAwesome/Font-Awesome)
+- **Website**: [https://github.com/FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fa6-regular
 
 ```ts
 import { Component } from '@angular/core'
-import { Fa6RegularAddressBookIcon } from '@ngxi/fa6-regular'
+import { Fa6RegularMessageIcon } from '@ngxi/fa6-regular'
 
 @Component({
-  imports: [Fa6RegularAddressBookIcon],
-  template: `<svg fa6RegularAddressBookIcon></svg>`
+  imports: [Fa6RegularMessageIcon],
+  template: `<svg fa6RegularMessageIcon></svg>`,
 })
 export class UsageIcon {}
 ```

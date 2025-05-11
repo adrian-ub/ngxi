@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Fluent Emoji High Contrast
+- **Prefix**: `fluent-emoji-high-contrast`
+- **Icons**: 1595
+- **License**: [MIT](https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE)
+- **Author**: [Microsoft Corporation](https://github.com/microsoft/fluentui-emoji)
+- **Website**: [https://github.com/microsoft/fluentui-emoji](https://github.com/microsoft/fluentui-emoji)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fluent-emoji-high-contrast
 
 ```ts
 import { Component } from '@angular/core'
-import { FluentEmojiHighContrast1stPlaceMedalIcon } from '@ngxi/fluent-emoji-high-contrast'
+import { FluentEmojiHighContrastAvocadoIcon } from '@ngxi/fluent-emoji-high-contrast'
 
 @Component({
-  imports: [FluentEmojiHighContrast1stPlaceMedalIcon],
-  template: `<svg fluentEmojiHighContrast1stPlaceMedalIcon></svg>`
+  imports: [FluentEmojiHighContrastAvocadoIcon],
+  template: `<svg fluentEmojiHighContrastAvocadoIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: IonIcons
+- **Prefix**: `ion`
+- **Icons**: 1357
+- **License**: [MIT](https://github.com/ionic-team/ionicons/blob/main/LICENSE)
+- **Author**: [Ben Sperry](https://github.com/ionic-team/ionicons)
+- **Website**: [https://github.com/ionic-team/ionicons](https://github.com/ionic-team/ionicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ion
 
 ```ts
 import { Component } from '@angular/core'
-import { IonAccessibilityIcon } from '@ngxi/ion'
+import { IonCodeDownloadSharpIcon } from '@ngxi/ion'
 
 @Component({
-  imports: [IonAccessibilityIcon],
-  template: `<svg ionAccessibilityIcon></svg>`
+  imports: [IonCodeDownloadSharpIcon],
+  template: `<svg ionCodeDownloadSharpIcon></svg>`,
 })
 export class UsageIcon {}
 ```

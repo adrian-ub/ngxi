@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Maki
+- **Prefix**: `maki`
+- **Icons**: 215
+- **License**: [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
+- **Author**: [Mapbox](https://github.com/mapbox/maki)
+- **Website**: [https://github.com/mapbox/maki](https://github.com/mapbox/maki)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/maki
 
 ```ts
 import { Component } from '@angular/core'
-import { MakiAerialwayIcon } from '@ngxi/maki'
+import { MakiEntranceAlt1Icon } from '@ngxi/maki'
 
 @Component({
-  imports: [MakiAerialwayIcon],
-  template: `<svg makiAerialwayIcon></svg>`
+  imports: [MakiEntranceAlt1Icon],
+  template: `<svg makiEntranceAlt1Icon></svg>`,
 })
 export class UsageIcon {}
 ```

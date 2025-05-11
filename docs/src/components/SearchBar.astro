@@ -1,0 +1,30 @@
+---
+export type Props = {
+  style?: boolean
+  placeholder?: string
+  border?: boolean
+  icon?: string
+}
+
+const { style = true, border = true, placeholder = 'Search...', icon = 'carbon:search' } = Astro.props
+---
+
+<div
+  class={`${style && 'md:flex md:shadow md:rounded outline-none md:py-1 py-3 px-4'} ${style && border && 'border-b border-x border-b md:border-t border-base'}`}
+>
+  <div class="icon-container m-auto flex-none opacity-60">
+    <iconify-icon icon={icon}></iconify-icon>
+  </div>
+
+  <form action="/collection/all" class="flex-auto" role="search" method="get">
+    <input type="text" class="text-base outline-none w-full py-1 px-4 m-0 bg-transparent" placeholder={placeholder} />
+  </form>
+
+  <button class="flex items-center opacity-60 hover:opacity-80">
+    <div class="icon-container m-auto text-lg -mr-1">
+      <iconify-icon icon="carbon:close"></iconify-icon>
+    </div>
+  </button>
+
+  <slot name="actions" />
+</div>

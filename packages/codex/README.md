@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: CodeX Icons
+- **Prefix**: `codex`
+- **Icons**: 78
+- **License**: [MIT](https://github.com/codex-team/icons/blob/master/LICENSE)
+- **Author**: [CodeX](https://github.com/codex-team/icons)
+- **Website**: [https://github.com/codex-team/icons](https://github.com/codex-team/icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/codex
 
 ```ts
 import { Component } from '@angular/core'
-import { CodexAddBackgroundIcon } from '@ngxi/codex'
+import { CodexAlignLeftIcon } from '@ngxi/codex'
 
 @Component({
-  imports: [CodexAddBackgroundIcon],
-  template: `<svg codexAddBackgroundIcon></svg>`
+  imports: [CodexAlignLeftIcon],
+  template: `<svg codexAlignLeftIcon></svg>`,
 })
 export class UsageIcon {}
 ```

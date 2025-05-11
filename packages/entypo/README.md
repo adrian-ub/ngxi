@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Entypo+
+- **Prefix**: `entypo`
+- **Icons**: 321
+- **License**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Author**: [Daniel Bruce](https://github.com/chancancode/entypo-plus)
+- **Website**: [https://github.com/chancancode/entypo-plus](https://github.com/chancancode/entypo-plus)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/entypo
 
 ```ts
 import { Component } from '@angular/core'
-import { EntypoAddToListIcon } from '@ngxi/entypo'
+import { EntypoBellIcon } from '@ngxi/entypo'
 
 @Component({
-  imports: [EntypoAddToListIcon],
-  template: `<svg entypoAddToListIcon></svg>`
+  imports: [EntypoBellIcon],
+  template: `<svg entypoBellIcon></svg>`,
 })
 export class UsageIcon {}
 ```

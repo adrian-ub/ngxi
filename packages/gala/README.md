@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Gala Icons
+- **Prefix**: `gala`
+- **Icons**: 51
+- **License**: [GPL](https://github.com/cyberalien/gala-icons/blob/main/LICENSE)
+- **Author**: [Jake Wells](https://github.com/cyberalien/gala-icons)
+- **Website**: [https://github.com/cyberalien/gala-icons](https://github.com/cyberalien/gala-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/gala
 
 ```ts
 import { Component } from '@angular/core'
-import { GalaAddIcon } from '@ngxi/gala'
+import { GalaBrochureIcon } from '@ngxi/gala'
 
 @Component({
-  imports: [GalaAddIcon],
-  template: `<svg galaAddIcon></svg>`
+  imports: [GalaBrochureIcon],
+  template: `<svg galaBrochureIcon></svg>`,
 })
 export class UsageIcon {}
 ```

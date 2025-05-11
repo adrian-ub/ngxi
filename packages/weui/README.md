@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: WeUI Icon
+- **Prefix**: `weui`
+- **Icons**: 162
+- **License**: [MIT]()
+- **Author**: [WeUI](https://github.com/weui/weui-icon)
+- **Website**: [https://github.com/weui/weui-icon](https://github.com/weui/weui-icon)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/weui
 
 ```ts
 import { Component } from '@angular/core'
-import { WeuiAddFilledIcon } from '@ngxi/weui'
+import { WeuiSearchOutlinedIcon } from '@ngxi/weui'
 
 @Component({
-  imports: [WeuiAddFilledIcon],
-  template: `<svg weuiAddFilledIcon></svg>`
+  imports: [WeuiSearchOutlinedIcon],
+  template: `<svg weuiSearchOutlinedIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Circum Icons
+- **Prefix**: `circum`
+- **Icons**: 288
+- **License**: [Mozilla Public License 2.0](https://github.com/Klarr-Agency/Circum-Icons/blob/main/LICENSE)
+- **Author**: [Klarr Agency](https://github.com/Klarr-Agency/Circum-Icons)
+- **Website**: [https://github.com/Klarr-Agency/Circum-Icons](https://github.com/Klarr-Agency/Circum-Icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/circum
 
 ```ts
 import { Component } from '@angular/core'
-import { CircumAirportSign1Icon } from '@ngxi/circum'
+import { CircumTextIcon } from '@ngxi/circum'
 
 @Component({
-  imports: [CircumAirportSign1Icon],
-  template: `<svg circumAirportSign1Icon></svg>`
+  imports: [CircumTextIcon],
+  template: `<svg circumTextIcon></svg>`,
 })
 export class UsageIcon {}
 ```

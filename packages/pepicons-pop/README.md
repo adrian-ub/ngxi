@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Pepicons Pop!
+- **Prefix**: `pepicons-pop`
+- **Icons**: 1275
+- **License**: [CC BY 4.0](https://github.com/CyCraft/pepicons/blob/dev/LICENSE)
+- **Author**: [CyCraft](https://github.com/CyCraft/pepicons)
+- **Website**: [https://github.com/CyCraft/pepicons](https://github.com/CyCraft/pepicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/pepicons-pop
 
 ```ts
 import { Component } from '@angular/core'
-import { PepiconsPopAirplaneIcon } from '@ngxi/pepicons-pop'
+import { PepiconsPopBookmarkIcon } from '@ngxi/pepicons-pop'
 
 @Component({
-  imports: [PepiconsPopAirplaneIcon],
-  template: `<svg pepiconsPopAirplaneIcon></svg>`
+  imports: [PepiconsPopBookmarkIcon],
+  template: `<svg pepiconsPopBookmarkIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Framework7 Icons
+- **Prefix**: `f7`
+- **Icons**: 1253
+- **License**: [MIT](https://github.com/framework7io/framework7-icons/blob/master/LICENSE)
+- **Author**: [Vladimir Kharlampidi](https://github.com/framework7io/framework7-icons)
+- **Website**: [https://github.com/framework7io/framework7-icons](https://github.com/framework7io/framework7-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/f7
 
 ```ts
 import { Component } from '@angular/core'
-import { F7AirplaneIcon } from '@ngxi/f7'
+import { F7HourglassBottomhalfFillIcon } from '@ngxi/f7'
 
 @Component({
-  imports: [F7AirplaneIcon],
-  template: `<svg f7AirplaneIcon></svg>`
+  imports: [F7HourglassBottomhalfFillIcon],
+  template: `<svg f7HourglassBottomhalfFillIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: IconPark
+- **Prefix**: `icon-park`
+- **Icons**: 2658
+- **License**: [Apache 2.0](https://github.com/bytedance/IconPark/blob/master/LICENSE)
+- **Author**: [ByteDance](https://github.com/bytedance/IconPark)
+- **Website**: [https://github.com/bytedance/IconPark](https://github.com/bytedance/IconPark)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/icon-park
 
 ```ts
 import { Component } from '@angular/core'
-import { IconParkACaneIcon } from '@ngxi/icon-park'
+import { IconParkAddOneIcon } from '@ngxi/icon-park'
 
 @Component({
-  imports: [IconParkACaneIcon],
-  template: `<svg iconParkACaneIcon></svg>`
+  imports: [IconParkAddOneIcon],
+  template: `<svg iconParkAddOneIcon></svg>`,
 })
 export class UsageIcon {}
 ```

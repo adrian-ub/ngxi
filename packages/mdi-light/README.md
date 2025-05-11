@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Material Design Light
+- **Prefix**: `mdi-light`
+- **Icons**: 284
+- **License**: [Open Font License](https://github.com/Templarian/MaterialDesignLight/blob/master/LICENSE.md)
+- **Author**: [Pictogrammers](https://github.com/Templarian/MaterialDesignLight)
+- **Website**: [https://github.com/Templarian/MaterialDesignLight](https://github.com/Templarian/MaterialDesignLight)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/mdi-light
 
 ```ts
 import { Component } from '@angular/core'
-import { MdiLightAccountIcon } from '@ngxi/mdi-light'
+import { MdiLightCartIcon } from '@ngxi/mdi-light'
 
 @Component({
-  imports: [MdiLightAccountIcon],
-  template: `<svg mdiLightAccountIcon></svg>`
+  imports: [MdiLightCartIcon],
+  template: `<svg mdiLightCartIcon></svg>`,
 })
 export class UsageIcon {}
 ```

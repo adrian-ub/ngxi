@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Raphael
+- **Prefix**: `raphael`
+- **Icons**: 266
+- **License**: [MIT]()
+- **Author**: [Dmitry Baranovskiy](https://github.com/dmitrybaranovskiy/raphael)
+- **Website**: [https://github.com/dmitrybaranovskiy/raphael](https://github.com/dmitrybaranovskiy/raphael)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/raphael
 
 ```ts
 import { Component } from '@angular/core'
-import { Raphael500pxIcon } from '@ngxi/raphael'
+import { RaphaelHomeIcon } from '@ngxi/raphael'
 
 @Component({
-  imports: [Raphael500pxIcon],
-  template: `<svg raphael500pxIcon></svg>`
+  imports: [RaphaelHomeIcon],
+  template: `<svg raphaelHomeIcon></svg>`,
 })
 export class UsageIcon {}
 ```

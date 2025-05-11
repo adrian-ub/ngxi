@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Unicons Solid
+- **Prefix**: `uis`
+- **Icons**: 190
+- **License**: [Apache 2.0](https://github.com/Iconscout/unicons/blob/master/LICENSE)
+- **Author**: [Iconscout](https://github.com/Iconscout/unicons)
+- **Website**: [https://github.com/Iconscout/unicons](https://github.com/Iconscout/unicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/uis
 
 ```ts
 import { Component } from '@angular/core'
-import { UisAirplayIcon } from '@ngxi/uis'
+import { UisAnalysisIcon } from '@ngxi/uis'
 
 @Component({
-  imports: [UisAirplayIcon],
-  template: `<svg uisAirplayIcon></svg>`
+  imports: [UisAnalysisIcon],
+  template: `<svg uisAnalysisIcon></svg>`,
 })
 export class UsageIcon {}
 ```

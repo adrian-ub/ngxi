@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Lineicons
+- **Prefix**: `lineicons`
+- **Icons**: 606
+- **License**: [MIT](https://github.com/LineiconsHQ/Lineicons/blob/main/LICENSE.md)
+- **Author**: [Lineicons](https://github.com/LineiconsHQ/Lineicons)
+- **Website**: [https://github.com/LineiconsHQ/Lineicons](https://github.com/LineiconsHQ/Lineicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/lineicons
 
 ```ts
 import { Component } from '@angular/core'
-import { Lineicons500pxIcon } from '@ngxi/lineicons'
+import { LineiconsCheckIcon } from '@ngxi/lineicons'
 
 @Component({
-  imports: [Lineicons500pxIcon],
-  template: `<svg lineicons500pxIcon></svg>`
+  imports: [LineiconsCheckIcon],
+  template: `<svg lineiconsCheckIcon></svg>`,
 })
 export class UsageIcon {}
 ```

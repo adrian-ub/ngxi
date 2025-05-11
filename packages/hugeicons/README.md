@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Huge Icons
+- **Prefix**: `hugeicons`
+- **Icons**: 4523
+- **License**: [MIT]()
+- **Author**: [Hugeicons](https://icon-sets.iconify.design/icon-sets/hugeicons/)
+- **Website**: [https://icon-sets.iconify.design/icon-sets/hugeicons/](https://icon-sets.iconify.design/icon-sets/hugeicons/)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/hugeicons
 
 ```ts
 import { Component } from '@angular/core'
-import { HugeiconsAbacusIcon } from '@ngxi/hugeicons'
+import { HugeiconsAnalyticsUpIcon } from '@ngxi/hugeicons'
 
 @Component({
-  imports: [HugeiconsAbacusIcon],
-  template: `<svg hugeiconsAbacusIcon></svg>`
+  imports: [HugeiconsAnalyticsUpIcon],
+  template: `<svg hugeiconsAnalyticsUpIcon></svg>`,
 })
 export class UsageIcon {}
 ```

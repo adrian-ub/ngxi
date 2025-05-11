@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Iconoir
+- **Prefix**: `iconoir`
+- **Icons**: 1671
+- **License**: [MIT](https://github.com/iconoir-icons/iconoir/blob/main/LICENSE)
+- **Author**: [Luca Burgio](https://github.com/iconoir-icons/iconoir)
+- **Website**: [https://github.com/iconoir-icons/iconoir](https://github.com/iconoir-icons/iconoir)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/iconoir
 
 ```ts
 import { Component } from '@angular/core'
-import { IconoirAccessibilityIcon } from '@ngxi/iconoir'
+import { IconoirChatBubbleCheckIcon } from '@ngxi/iconoir'
 
 @Component({
-  imports: [IconoirAccessibilityIcon],
-  template: `<svg iconoirAccessibilityIcon></svg>`
+  imports: [IconoirChatBubbleCheckIcon],
+  template: `<svg iconoirChatBubbleCheckIcon></svg>`,
 })
 export class UsageIcon {}
 ```

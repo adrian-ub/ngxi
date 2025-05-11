@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: HeroIcons v1 Outline
+- **Prefix**: `heroicons-outline`
+- **Icons**: 230
+- **License**: [MIT](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE)
+- **Author**: [Refactoring UI Inc](https://github.com/tailwindlabs/heroicons)
+- **Website**: [https://github.com/tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/heroicons-outline
 
 ```ts
 import { Component } from '@angular/core'
-import { HeroiconsOutlineAcademicCapIcon } from '@ngxi/heroicons-outline'
+import { HeroiconsOutlineColorSwatchIcon } from '@ngxi/heroicons-outline'
 
 @Component({
-  imports: [HeroiconsOutlineAcademicCapIcon],
-  template: `<svg heroiconsOutlineAcademicCapIcon></svg>`
+  imports: [HeroiconsOutlineColorSwatchIcon],
+  template: `<svg heroiconsOutlineColorSwatchIcon></svg>`,
 })
 export class UsageIcon {}
 ```

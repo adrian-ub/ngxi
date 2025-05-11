@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Bytesize Icons
+- **Prefix**: `bytesize`
+- **Icons**: 101
+- **License**: [MIT](https://github.com/danklammer/bytesize-icons/blob/master/LICENSE.md)
+- **Author**: [Dan Klammer](https://github.com/danklammer/bytesize-icons)
+- **Website**: [https://github.com/danklammer/bytesize-icons](https://github.com/danklammer/bytesize-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/bytesize
 
 ```ts
 import { Component } from '@angular/core'
-import { BytesizeActivityIcon } from '@ngxi/bytesize'
+import { BytesizeDesktopIcon } from '@ngxi/bytesize'
 
 @Component({
-  imports: [BytesizeActivityIcon],
-  template: `<svg bytesizeActivityIcon></svg>`
+  imports: [BytesizeDesktopIcon],
+  template: `<svg bytesizeDesktopIcon></svg>`,
 })
 export class UsageIcon {}
 ```

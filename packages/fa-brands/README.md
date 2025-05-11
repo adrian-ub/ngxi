@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Font Awesome 5 Brands
+- **Prefix**: `fa-brands`
+- **Icons**: 457
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Dave Gandy](https://github.com/FortAwesome/Font-Awesome)
+- **Website**: [https://github.com/FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fa-brands
 
 ```ts
 import { Component } from '@angular/core'
-import { FaBrands500pxIcon } from '@ngxi/fa-brands'
+import { FaBrandsAmazonIcon } from '@ngxi/fa-brands'
 
 @Component({
-  imports: [FaBrands500pxIcon],
-  template: `<svg faBrands500pxIcon></svg>`
+  imports: [FaBrandsAmazonIcon],
+  template: `<svg faBrandsAmazonIcon></svg>`,
 })
 export class UsageIcon {}
 ```

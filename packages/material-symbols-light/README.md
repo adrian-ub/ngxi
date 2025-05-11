@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Material Symbols Light
+- **Prefix**: `material-symbols-light`
+- **Icons**: 14197
+- **License**: [Apache 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE)
+- **Author**: [Google](https://github.com/google/material-design-icons)
+- **Website**: [https://github.com/google/material-design-icons](https://github.com/google/material-design-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/material-symbols-light
 
 ```ts
 import { Component } from '@angular/core'
-import { MaterialSymbolsLight123Icon } from '@ngxi/material-symbols-light'
+import { MaterialSymbolsLightDownloadingIcon } from '@ngxi/material-symbols-light'
 
 @Component({
-  imports: [MaterialSymbolsLight123Icon],
-  template: `<svg materialSymbolsLight123Icon></svg>`
+  imports: [MaterialSymbolsLightDownloadingIcon],
+  template: `<svg materialSymbolsLightDownloadingIcon></svg>`,
 })
 export class UsageIcon {}
 ```

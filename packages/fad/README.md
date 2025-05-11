@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: FontAudio
+- **Prefix**: `fad`
+- **Icons**: 155
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [@fefanto](https://github.com/fefanto/fontaudio)
+- **Website**: [https://github.com/fefanto/fontaudio](https://github.com/fefanto/fontaudio)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fad
 
 ```ts
 import { Component } from '@angular/core'
-import { FadAdrIcon } from '@ngxi/fad'
+import { FadShuffleIcon } from '@ngxi/fad'
 
 @Component({
-  imports: [FadAdrIcon],
-  template: `<svg fadAdrIcon></svg>`
+  imports: [FadShuffleIcon],
+  template: `<svg fadShuffleIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Arcticons
+- **Prefix**: `arcticons`
+- **Icons**: 12600
+- **License**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Author**: [Donnnno](https://github.com/Arcticons-Team/Arcticons)
+- **Website**: [https://github.com/Arcticons-Team/Arcticons](https://github.com/Arcticons-Team/Arcticons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/arcticons
 
 ```ts
 import { Component } from '@angular/core'
-import { Arcticons85Icon } from '@ngxi/arcticons'
+import { ArcticonsPaperlaunchIcon } from '@ngxi/arcticons'
 
 @Component({
-  imports: [Arcticons85Icon],
-  template: `<svg arcticons85Icon></svg>`
+  imports: [ArcticonsPaperlaunchIcon],
+  template: `<svg arcticonsPaperlaunchIcon></svg>`,
 })
 export class UsageIcon {}
 ```

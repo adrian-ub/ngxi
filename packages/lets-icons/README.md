@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Lets Icons
+- **Prefix**: `lets-icons`
+- **Icons**: 1528
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Leonid Tsvetkov](https://www.figma.com/community/file/886554014393250663)
+- **Website**: [https://www.figma.com/community/file/886554014393250663](https://www.figma.com/community/file/886554014393250663)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/lets-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { LetsIcons10Icon } from '@ngxi/lets-icons'
+import { LetsIconsSearchDuotoneLineIcon } from '@ngxi/lets-icons'
 
 @Component({
-  imports: [LetsIcons10Icon],
-  template: `<svg letsIcons10Icon></svg>`
+  imports: [LetsIconsSearchDuotoneLineIcon],
+  template: `<svg letsIconsSearchDuotoneLineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

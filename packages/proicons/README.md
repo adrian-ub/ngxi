@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: ProIcons
+- **Prefix**: `proicons`
+- **Icons**: 518
+- **License**: [MIT](https://github.com/ProCode-Software/proicons/blob/main/LICENSE)
+- **Author**: [ProCode](https://github.com/ProCode-Software/proicons)
+- **Website**: [https://github.com/ProCode-Software/proicons](https://github.com/ProCode-Software/proicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/proicons
 
 ```ts
 import { Component } from '@angular/core'
-import { ProiconsAccessibilityIcon } from '@ngxi/proicons'
+import { ProiconsCodeIcon } from '@ngxi/proicons'
 
 @Component({
-  imports: [ProiconsAccessibilityIcon],
-  template: `<svg proiconsAccessibilityIcon></svg>`
+  imports: [ProiconsCodeIcon],
+  template: `<svg proiconsCodeIcon></svg>`,
 })
 export class UsageIcon {}
 ```

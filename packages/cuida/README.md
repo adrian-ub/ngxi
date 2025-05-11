@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Cuida Icons
+- **Prefix**: `cuida`
+- **Icons**: 164
+- **License**: [Apache 2.0](https://github.com/Sysvale/cuida-icons/blob/main/LICENSE)
+- **Author**: [Sysvale](https://github.com/Sysvale/cuida-icons)
+- **Website**: [https://github.com/Sysvale/cuida-icons](https://github.com/Sysvale/cuida-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/cuida
 
 ```ts
 import { Component } from '@angular/core'
-import { CuidaAlertOutlineIcon } from '@ngxi/cuida'
+import { CuidaSidebarExpandOutlineIcon } from '@ngxi/cuida'
 
 @Component({
-  imports: [CuidaAlertOutlineIcon],
-  template: `<svg cuidaAlertOutlineIcon></svg>`
+  imports: [CuidaSidebarExpandOutlineIcon],
+  template: `<svg cuidaSidebarExpandOutlineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -1,0 +1,38 @@
+{
+  "name": "icon-park-twotone",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/icon-park-twotone/src",
+  "prefix": "icon-park-twotone",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/icon-park-twotone/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/icon-park-twotone/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/icon-park-twotone/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

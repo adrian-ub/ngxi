@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Map Icons
+- **Prefix**: `map`
+- **Icons**: 167
+- **License**: [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+- **Author**: [Scott de Jonge](https://github.com/scottdejonge/map-icons)
+- **Website**: [https://github.com/scottdejonge/map-icons](https://github.com/scottdejonge/map-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/map
 
 ```ts
 import { Component } from '@angular/core'
-import { MapAbseilingIcon } from '@ngxi/map'
+import { MapRestaurantIcon } from '@ngxi/map'
 
 @Component({
-  imports: [MapAbseilingIcon],
-  template: `<svg mapAbseilingIcon></svg>`
+  imports: [MapRestaurantIcon],
+  template: `<svg mapRestaurantIcon></svg>`,
 })
 export class UsageIcon {}
 ```

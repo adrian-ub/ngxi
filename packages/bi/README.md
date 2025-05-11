@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Bootstrap Icons
+- **Prefix**: `bi`
+- **Icons**: 2051
+- **License**: [MIT](https://github.com/twbs/icons/blob/main/LICENSE.md)
+- **Author**: [The Bootstrap Authors](https://github.com/twbs/icons)
+- **Website**: [https://github.com/twbs/icons](https://github.com/twbs/icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/bi
 
 ```ts
 import { Component } from '@angular/core'
-import { Bi123Icon } from '@ngxi/bi'
+import { BiGraphUpIcon } from '@ngxi/bi'
 
 @Component({
-  imports: [Bi123Icon],
-  template: `<svg bi123Icon></svg>`
+  imports: [BiGraphUpIcon],
+  template: `<svg biGraphUpIcon></svg>`,
 })
 export class UsageIcon {}
 ```

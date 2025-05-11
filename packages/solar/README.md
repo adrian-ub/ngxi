@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Solar
+- **Prefix**: `solar`
+- **Icons**: 7401
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [480 Design](https://www.figma.com/community/file/1166831539721848736)
+- **Website**: [https://www.figma.com/community/file/1166831539721848736](https://www.figma.com/community/file/1166831539721848736)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/solar
 
 ```ts
 import { Component } from '@angular/core'
-import { Solar4kBoldIcon } from '@ngxi/solar'
+import { SolarMagniferZoomOutBrokenIcon } from '@ngxi/solar'
 
 @Component({
-  imports: [Solar4kBoldIcon],
-  template: `<svg solar4kBoldIcon></svg>`
+  imports: [SolarMagniferZoomOutBrokenIcon],
+  template: `<svg solarMagniferZoomOutBrokenIcon></svg>`,
 })
 export class UsageIcon {}
 ```

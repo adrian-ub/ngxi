@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Mage Icons
+- **Prefix**: `mage`
+- **Icons**: 1042
+- **License**: [Apache 2.0](https://github.com/Mage-Icons/mage-icons/blob/main/License.txt)
+- **Author**: [MageIcons](https://github.com/Mage-Icons/mage-icons)
+- **Website**: [https://github.com/Mage-Icons/mage-icons](https://github.com/Mage-Icons/mage-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/mage
 
 ```ts
 import { Component } from '@angular/core'
-import { MageAdobeIcon } from '@ngxi/mage'
+import { MageChart25Icon } from '@ngxi/mage'
 
 @Component({
-  imports: [MageAdobeIcon],
-  template: `<svg mageAdobeIcon></svg>`
+  imports: [MageChart25Icon],
+  template: `<svg mageChart25Icon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -1,0 +1,38 @@
+{
+  "name": "simple-line-icons",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/simple-line-icons/src",
+  "prefix": "simple-line-icons",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/simple-line-icons/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/simple-line-icons/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/simple-line-icons/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

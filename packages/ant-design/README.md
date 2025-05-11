@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Ant Design Icons
+- **Prefix**: `ant-design`
+- **Icons**: 830
+- **License**: [MIT](https://github.com/ant-design/ant-design-icons/blob/master/LICENSE)
+- **Author**: [HeskeyBaozi](https://github.com/ant-design/ant-design-icons)
+- **Website**: [https://github.com/ant-design/ant-design-icons](https://github.com/ant-design/ant-design-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ant-design
 
 ```ts
 import { Component } from '@angular/core'
-import { AntDesignAccountBookFilledIcon } from '@ngxi/ant-design'
+import { AntDesignPushpinFilledIcon } from '@ngxi/ant-design'
 
 @Component({
-  imports: [AntDesignAccountBookFilledIcon],
-  template: `<svg antDesignAccountBookFilledIcon></svg>`
+  imports: [AntDesignPushpinFilledIcon],
+  template: `<svg antDesignPushpinFilledIcon></svg>`,
 })
 export class UsageIcon {}
 ```

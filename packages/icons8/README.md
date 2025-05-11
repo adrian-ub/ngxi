@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Icons8 Windows 10 Icons
+- **Prefix**: `icons8`
+- **Icons**: 234
+- **License**: [MIT]()
+- **Author**: [Icons8](https://github.com/icons8/windows-10-icons)
+- **Website**: [https://github.com/icons8/windows-10-icons](https://github.com/icons8/windows-10-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/icons8
 
 ```ts
 import { Component } from '@angular/core'
-import { Icons8AddShoppingCartIcon } from '@ngxi/icons8'
+import { Icons8CheckedIcon } from '@ngxi/icons8'
 
 @Component({
-  imports: [Icons8AddShoppingCartIcon],
-  template: `<svg icons8AddShoppingCartIcon></svg>`
+  imports: [Icons8CheckedIcon],
+  template: `<svg icons8CheckedIcon></svg>`,
 })
 export class UsageIcon {}
 ```

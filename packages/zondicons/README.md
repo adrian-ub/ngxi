@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Zondicons
+- **Prefix**: `zondicons`
+- **Icons**: 297
+- **License**: [MIT](https://github.com/dukestreetstudio/zondicons/blob/master/LICENSE)
+- **Author**: [Steve Schoger](https://github.com/dukestreetstudio/zondicons)
+- **Website**: [https://github.com/dukestreetstudio/zondicons](https://github.com/dukestreetstudio/zondicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/zondicons
 
 ```ts
 import { Component } from '@angular/core'
-import { ZondiconsAddOutlineIcon } from '@ngxi/zondicons'
+import { ZondiconsCopyIcon } from '@ngxi/zondicons'
 
 @Component({
-  imports: [ZondiconsAddOutlineIcon],
-  template: `<svg zondiconsAddOutlineIcon></svg>`
+  imports: [ZondiconsCopyIcon],
+  template: `<svg zondiconsCopyIcon></svg>`,
 })
 export class UsageIcon {}
 ```

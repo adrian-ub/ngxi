@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Pixel Icon
+- **Prefix**: `pixel`
+- **Icons**: 427
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [HackerNoon](https://github.com/hackernoon/pixel-icon-library)
+- **Website**: [https://github.com/hackernoon/pixel-icon-library](https://github.com/hackernoon/pixel-icon-library)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/pixel
 
 ```ts
 import { Component } from '@angular/core'
-import { PixelAdIcon } from '@ngxi/pixel'
+import { PixelFolderSolidIcon } from '@ngxi/pixel'
 
 @Component({
-  imports: [PixelAdIcon],
-  template: `<svg pixelAdIcon></svg>`
+  imports: [PixelFolderSolidIcon],
+  template: `<svg pixelFolderSolidIcon></svg>`,
 })
 export class UsageIcon {}
 ```

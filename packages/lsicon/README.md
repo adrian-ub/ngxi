@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Lsicon
+- **Prefix**: `lsicon`
+- **Icons**: 716
+- **License**: [MIT](https://github.com/wisdesignsystem/lsicon/blob/main/LICENSE)
+- **Author**: [Wis Design](https://www.lsicon.com/)
+- **Website**: [https://www.lsicon.com/](https://www.lsicon.com/)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/lsicon
 
 ```ts
 import { Component } from '@angular/core'
-import { LsiconAddChatFilledIcon } from '@ngxi/lsicon'
+import { LsiconPointerOutlineIcon } from '@ngxi/lsicon'
 
 @Component({
-  imports: [LsiconAddChatFilledIcon],
-  template: `<svg lsiconAddChatFilledIcon></svg>`
+  imports: [LsiconPointerOutlineIcon],
+  template: `<svg lsiconPointerOutlineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

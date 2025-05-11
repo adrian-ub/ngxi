@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Twitter Emoji
+- **Prefix**: `twemoji`
+- **Icons**: 3668
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Twitter](https://github.com/twitter/twemoji)
+- **Website**: [https://github.com/twitter/twemoji](https://github.com/twitter/twemoji)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/twemoji
 
 ```ts
 import { Component } from '@angular/core'
-import { Twemoji1stPlaceMedalIcon } from '@ngxi/twemoji'
+import { TwemojiAnguishedFaceIcon } from '@ngxi/twemoji'
 
 @Component({
-  imports: [Twemoji1stPlaceMedalIcon],
-  template: `<svg twemoji1stPlaceMedalIcon></svg>`
+  imports: [TwemojiAnguishedFaceIcon],
+  template: `<svg twemojiAnguishedFaceIcon></svg>`,
 })
 export class UsageIcon {}
 ```

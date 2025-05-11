@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Health Icons
+- **Prefix**: `healthicons`
+- **Icons**: 2000
+- **License**: [MIT](https://github.com/resolvetosavelives/healthicons/blob/main/LICENSE)
+- **Author**: [Resolve to Save Lives](https://github.com/resolvetosavelives/healthicons)
+- **Website**: [https://github.com/resolvetosavelives/healthicons](https://github.com/resolvetosavelives/healthicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/healthicons
 
 ```ts
 import { Component } from '@angular/core'
-import { Healthicons0Icon } from '@ngxi/healthicons'
+import { HealthiconsColdChainIcon } from '@ngxi/healthicons'
 
 @Component({
-  imports: [Healthicons0Icon],
-  template: `<svg healthicons0Icon></svg>`
+  imports: [HealthiconsColdChainIcon],
+  template: `<svg healthiconsColdChainIcon></svg>`,
 })
 export class UsageIcon {}
 ```

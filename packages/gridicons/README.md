@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Gridicons
+- **Prefix**: `gridicons`
+- **Icons**: 207
+- **License**: [GPL 2.0](https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md)
+- **Author**: [Automattic](https://github.com/Automattic/gridicons)
+- **Website**: [https://github.com/Automattic/gridicons](https://github.com/Automattic/gridicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/gridicons
 
 ```ts
 import { Component } from '@angular/core'
-import { GridiconsAddIcon } from '@ngxi/gridicons'
+import { GridiconsCodeIcon } from '@ngxi/gridicons'
 
 @Component({
-  imports: [GridiconsAddIcon],
-  template: `<svg gridiconsAddIcon></svg>`
+  imports: [GridiconsCodeIcon],
+  template: `<svg gridiconsCodeIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Remix Icon
+- **Prefix**: `ri`
+- **Icons**: 3058
+- **License**: [Apache 2.0](https://github.com/Remix-Design/RemixIcon/blob/master/License)
+- **Author**: [Remix Design](https://github.com/Remix-Design/RemixIcon)
+- **Website**: [https://github.com/Remix-Design/RemixIcon](https://github.com/Remix-Design/RemixIcon)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ri
 
 ```ts
 import { Component } from '@angular/core'
-import { Ri24HoursFillIcon } from '@ngxi/ri'
+import { RiLock2LineIcon } from '@ngxi/ri'
 
 @Component({
-  imports: [Ri24HoursFillIcon],
-  template: `<svg ri24HoursFillIcon></svg>`
+  imports: [RiLock2LineIcon],
+  template: `<svg riLock2LineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

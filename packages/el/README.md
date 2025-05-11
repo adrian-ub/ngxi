@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Elusive Icons
+- **Prefix**: `el`
+- **Icons**: 304
+- **License**: [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+- **Author**: [Team Redux](https://github.com/dovy/elusive-icons)
+- **Website**: [https://github.com/dovy/elusive-icons](https://github.com/dovy/elusive-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/el
 
 ```ts
 import { Component } from '@angular/core'
-import { ElAddressBookIcon } from '@ngxi/el'
+import { ElHeadphonesIcon } from '@ngxi/el'
 
 @Component({
-  imports: [ElAddressBookIcon],
-  template: `<svg elAddressBookIcon></svg>`
+  imports: [ElHeadphonesIcon],
+  template: `<svg elHeadphonesIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Flat UI Icons
+- **Prefix**: `flat-ui`
+- **Icons**: 100
+- **License**: [MIT](https://github.com/designmodo/Flat-UI/blob/master/LICENSE)
+- **Author**: [Designmodo, Inc.](https://github.com/designmodo/Flat-UI)
+- **Website**: [https://github.com/designmodo/Flat-UI](https://github.com/designmodo/Flat-UI)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/flat-ui
 
 ```ts
 import { Component } from '@angular/core'
-import { FlatUiAndroidIcon } from '@ngxi/flat-ui'
+import { FlatUiMapIcon } from '@ngxi/flat-ui'
 
 @Component({
-  imports: [FlatUiAndroidIcon],
-  template: `<svg flatUiAndroidIcon></svg>`
+  imports: [FlatUiMapIcon],
+  template: `<svg flatUiMapIcon></svg>`,
 })
 export class UsageIcon {}
 ```

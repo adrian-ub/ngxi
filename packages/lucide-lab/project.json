@@ -1,0 +1,38 @@
+{
+  "name": "lucide-lab",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/lucide-lab/src",
+  "prefix": "lucide-lab",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/lucide-lab/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/lucide-lab/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/lucide-lab/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

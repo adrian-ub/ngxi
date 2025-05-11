@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: VSCode Icons
+- **Prefix**: `vscode-icons`
+- **Icons**: 1377
+- **License**: [MIT](https://github.com/vscode-icons/vscode-icons/blob/master/LICENSE)
+- **Author**: [Roberto Huertas](https://github.com/vscode-icons/vscode-icons)
+- **Website**: [https://github.com/vscode-icons/vscode-icons](https://github.com/vscode-icons/vscode-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/vscode-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { VscodeIconsDefaultFileIcon } from '@ngxi/vscode-icons'
+import { VscodeIconsFileTypeActionscript2Icon } from '@ngxi/vscode-icons'
 
 @Component({
-  imports: [VscodeIconsDefaultFileIcon],
-  template: `<svg vscodeIconsDefaultFileIcon></svg>`
+  imports: [VscodeIconsFileTypeActionscript2Icon],
+  template: `<svg vscodeIconsFileTypeActionscript2Icon></svg>`,
 })
 export class UsageIcon {}
 ```

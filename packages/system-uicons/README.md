@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: System UIcons
+- **Prefix**: `system-uicons`
+- **Icons**: 430
+- **License**: [Unlicense](https://github.com/CoreyGinnivan/system-uicons/blob/master/LICENSE)
+- **Author**: [Corey Ginnivan](https://github.com/CoreyGinnivan/system-uicons)
+- **Website**: [https://github.com/CoreyGinnivan/system-uicons](https://github.com/CoreyGinnivan/system-uicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/system-uicons
 
 ```ts
 import { Component } from '@angular/core'
-import { SystemUiconsAirplayIcon } from '@ngxi/system-uicons'
+import { SystemUiconsBellIcon } from '@ngxi/system-uicons'
 
 @Component({
-  imports: [SystemUiconsAirplayIcon],
-  template: `<svg systemUiconsAirplayIcon></svg>`
+  imports: [SystemUiconsBellIcon],
+  template: `<svg systemUiconsBellIcon></svg>`,
 })
 export class UsageIcon {}
 ```

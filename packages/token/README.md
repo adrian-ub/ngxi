@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Web3 Icons
+- **Prefix**: `token`
+- **Icons**: 1728
+- **License**: [MIT](https://github.com/0xa3k5/web3icons/blob/main/LICENCE)
+- **Author**: [0xa3k5](https://github.com/0xa3k5/web3icons)
+- **Website**: [https://github.com/0xa3k5/web3icons](https://github.com/0xa3k5/web3icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/token
 
 ```ts
 import { Component } from '@angular/core'
-import { Token0x0Icon } from '@ngxi/token'
+import { TokenBitIcon } from '@ngxi/token'
 
 @Component({
-  imports: [Token0x0Icon],
-  template: `<svg token0x0Icon></svg>`
+  imports: [TokenBitIcon],
+  template: `<svg tokenBitIcon></svg>`,
 })
 export class UsageIcon {}
 ```

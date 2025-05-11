@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Humbleicons
+- **Prefix**: `humbleicons`
+- **Icons**: 252
+- **License**: [MIT](https://github.com/zraly/humbleicons/blob/master/license)
+- **Author**: [Jiří Zralý](https://github.com/zraly/humbleicons)
+- **Website**: [https://github.com/zraly/humbleicons](https://github.com/zraly/humbleicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/humbleicons
 
 ```ts
 import { Component } from '@angular/core'
-import { HumbleiconsActivityIcon } from '@ngxi/humbleicons'
+import { HumbleiconsAidIcon } from '@ngxi/humbleicons'
 
 @Component({
-  imports: [HumbleiconsActivityIcon],
-  template: `<svg humbleiconsActivityIcon></svg>`
+  imports: [HumbleiconsAidIcon],
+  template: `<svg humbleiconsAidIcon></svg>`,
 })
 export class UsageIcon {}
 ```

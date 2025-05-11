@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Typicons
+- **Prefix**: `typcn`
+- **Icons**: 336
+- **License**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Author**: [Stephen Hutchings](https://github.com/stephenhutchings/typicons.font)
+- **Website**: [https://github.com/stephenhutchings/typicons.font](https://github.com/stephenhutchings/typicons.font)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/typcn
 
 ```ts
 import { Component } from '@angular/core'
-import { TypcnAdjustBrightnessIcon } from '@ngxi/typcn'
+import { TypcnPinOutlineIcon } from '@ngxi/typcn'
 
 @Component({
-  imports: [TypcnAdjustBrightnessIcon],
-  template: `<svg typcnAdjustBrightnessIcon></svg>`
+  imports: [TypcnPinOutlineIcon],
+  template: `<svg typcnPinOutlineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

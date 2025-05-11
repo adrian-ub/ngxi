@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Nimbus
+- **Prefix**: `nimbus`
+- **Icons**: 140
+- **License**: [MIT](https://github.com/cyberalien/nimbus-icons/blob/main/LICENSE)
+- **Author**: [Linkedstore S.A.](https://github.com/cyberalien/nimbus-icons)
+- **Website**: [https://github.com/cyberalien/nimbus-icons](https://github.com/cyberalien/nimbus-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/nimbus
 
 ```ts
 import { Component } from '@angular/core'
-import { NimbusAccordionIcon } from '@ngxi/nimbus'
+import { NimbusBarcodeIcon } from '@ngxi/nimbus'
 
 @Component({
-  imports: [NimbusAccordionIcon],
-  template: `<svg nimbusAccordionIcon></svg>`
+  imports: [NimbusBarcodeIcon],
+  template: `<svg nimbusBarcodeIcon></svg>`,
 })
 export class UsageIcon {}
 ```

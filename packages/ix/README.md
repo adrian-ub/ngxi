@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Siemens Industrial Experience Icons
+- **Prefix**: `ix`
+- **Icons**: 1315
+- **License**: [MIT](https://github.com/siemens/ix-icons/blob/main/LICENSE.md)
+- **Author**: [Siemens AG](https://github.com/siemens/ix-icons)
+- **Website**: [https://github.com/siemens/ix-icons](https://github.com/siemens/ix-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ix
 
 ```ts
 import { Component } from '@angular/core'
-import { IxAboutIcon } from '@ngxi/ix'
+import { IxNotificationFilledIcon } from '@ngxi/ix'
 
 @Component({
-  imports: [IxAboutIcon],
-  template: `<svg ixAboutIcon></svg>`
+  imports: [IxNotificationFilledIcon],
+  template: `<svg ixNotificationFilledIcon></svg>`,
 })
 export class UsageIcon {}
 ```

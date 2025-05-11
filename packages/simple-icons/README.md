@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Simple Icons
+- **Prefix**: `simple-icons`
+- **Icons**: 3282
+- **License**: [CC0 1.0](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md)
+- **Author**: [Simple Icons Collaborators](https://github.com/simple-icons/simple-icons)
+- **Website**: [https://github.com/simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/simple-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { SimpleIcons42Icon } from '@ngxi/simple-icons'
+import { SimpleIconsWiseIcon } from '@ngxi/simple-icons'
 
 @Component({
-  imports: [SimpleIcons42Icon],
-  template: `<svg simpleIcons42Icon></svg>`
+  imports: [SimpleIconsWiseIcon],
+  template: `<svg simpleIconsWiseIcon></svg>`,
 })
 export class UsageIcon {}
 ```

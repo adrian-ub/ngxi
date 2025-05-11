@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Quill Icons
+- **Prefix**: `quill`
+- **Icons**: 140
+- **License**: [MIT](https://github.com/yourtempo/tempo-quill-icons/blob/main/LICENSE)
+- **Author**: [Casper Lourens](https://www.figma.com/community/file/1034432054377533052/Quill-Iconset)
+- **Website**: [https://www.figma.com/community/file/1034432054377533052/Quill-Iconset](https://www.figma.com/community/file/1034432054377533052/Quill-Iconset)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/quill
 
 ```ts
 import { Component } from '@angular/core'
-import { QuillActivityIcon } from '@ngxi/quill'
+import { QuillCollapseIcon } from '@ngxi/quill'
 
 @Component({
-  imports: [QuillActivityIcon],
-  template: `<svg quillActivityIcon></svg>`
+  imports: [QuillCollapseIcon],
+  template: `<svg quillCollapseIcon></svg>`,
 })
 export class UsageIcon {}
 ```

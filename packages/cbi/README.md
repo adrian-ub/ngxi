@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Custom Brand Icons
+- **Prefix**: `cbi`
+- **Icons**: 1384
+- **License**: [CC BY-NC-SA 4.0](https://github.com/elax46/custom-brand-icons/blob/main/LICENSE)
+- **Author**: [Emanuele &amp; rchiileea](https://github.com/elax46/custom-brand-icons)
+- **Website**: [https://github.com/elax46/custom-brand-icons](https://github.com/elax46/custom-brand-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/cbi
 
 ```ts
 import { Component } from '@angular/core'
-import { Cbi2WayUplighterIcon } from '@ngxi/cbi'
+import { CbiMitsubishiIcon } from '@ngxi/cbi'
 
 @Component({
-  imports: [Cbi2WayUplighterIcon],
-  template: `<svg cbi2WayUplighterIcon></svg>`
+  imports: [CbiMitsubishiIcon],
+  template: `<svg cbiMitsubishiIcon></svg>`,
 })
 export class UsageIcon {}
 ```

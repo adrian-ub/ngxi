@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: SVG Logos
+- **Prefix**: `logos`
+- **Icons**: 1838
+- **License**: [CC0](https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt)
+- **Author**: [Gil Barbara](https://github.com/gilbarbara/logos)
+- **Website**: [https://github.com/gilbarbara/logos](https://github.com/gilbarbara/logos)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/logos
 
 ```ts
 import { Component } from '@angular/core'
-import { Logos100tbIcon } from '@ngxi/logos'
+import { LogosNpmIconIcon } from '@ngxi/logos'
 
 @Component({
-  imports: [Logos100tbIcon],
-  template: `<svg logos100tbIcon></svg>`
+  imports: [LogosNpmIconIcon],
+  template: `<svg logosNpmIconIcon></svg>`,
 })
 export class UsageIcon {}
 ```

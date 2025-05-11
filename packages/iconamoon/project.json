@@ -1,0 +1,38 @@
+{
+  "name": "iconamoon",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/iconamoon/src",
+  "prefix": "iconamoon",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/iconamoon/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/iconamoon/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/iconamoon/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

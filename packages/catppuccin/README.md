@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Catppuccin Icons
+- **Prefix**: `catppuccin`
+- **Icons**: 560
+- **License**: [MIT](https://github.com/catppuccin/vscode-icons/blob/main/LICENSE)
+- **Author**: [Catppuccin](https://github.com/catppuccin/vscode-icons)
+- **Website**: [https://github.com/catppuccin/vscode-icons](https://github.com/catppuccin/vscode-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/catppuccin
 
 ```ts
 import { Component } from '@angular/core'
-import { CatppuccinAdobeAeIcon } from '@ngxi/catppuccin'
+import { CatppuccinFolderIcon } from '@ngxi/catppuccin'
 
 @Component({
-  imports: [CatppuccinAdobeAeIcon],
-  template: `<svg catppuccinAdobeAeIcon></svg>`
+  imports: [CatppuccinFolderIcon],
+  template: `<svg catppuccinFolderIcon></svg>`,
 })
 export class UsageIcon {}
 ```

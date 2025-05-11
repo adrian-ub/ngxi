@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Carbon
+- **Prefix**: `carbon`
+- **Icons**: 2299
+- **License**: [Apache 2.0]()
+- **Author**: [IBM](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
+- **Website**: [https://github.com/carbon-design-system/carbon/tree/main/packages/icons](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/carbon
 
 ```ts
 import { Component } from '@angular/core'
-import { Carbon3dCursorIcon } from '@ngxi/carbon'
+import { CarbonUserCertificationIcon } from '@ngxi/carbon'
 
 @Component({
-  imports: [Carbon3dCursorIcon],
-  template: `<svg carbon3dCursorIcon></svg>`
+  imports: [CarbonUserCertificationIcon],
+  template: `<svg carbonUserCertificationIcon></svg>`,
 })
 export class UsageIcon {}
 ```

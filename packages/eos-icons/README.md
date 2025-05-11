@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: EOS Icons
+- **Prefix**: `eos-icons`
+- **Icons**: 253
+- **License**: [MIT](https://gitlab.com/SUSE-UIUX/eos-icons/-/blob/master/LICENSE)
+- **Author**: [SUSE UX/UI team](https://gitlab.com/SUSE-UIUX/eos-icons)
+- **Website**: [https://gitlab.com/SUSE-UIUX/eos-icons](https://gitlab.com/SUSE-UIUX/eos-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/eos-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { EosIcons3dPrintIcon } from '@ngxi/eos-icons'
+import { EosIconsModifiedDateOutlinedIcon } from '@ngxi/eos-icons'
 
 @Component({
-  imports: [EosIcons3dPrintIcon],
-  template: `<svg eosIcons3dPrintIcon></svg>`
+  imports: [EosIconsModifiedDateOutlinedIcon],
+  template: `<svg eosIconsModifiedDateOutlinedIcon></svg>`,
 })
 export class UsageIcon {}
 ```

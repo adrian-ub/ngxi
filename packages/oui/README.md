@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: OpenSearch UI
+- **Prefix**: `oui`
+- **Icons**: 402
+- **License**: [Apache 2.0](https://github.com/opensearch-project/oui/blob/main/LICENSE.txt)
+- **Author**: [OpenSearch Contributors](https://github.com/opensearch-project/oui)
+- **Website**: [https://github.com/opensearch-project/oui](https://github.com/opensearch-project/oui)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/oui
 
 ```ts
 import { Component } from '@angular/core'
-import { OuiAccessibilityIcon } from '@ngxi/oui'
+import { OuiWordWrapDisabledIcon } from '@ngxi/oui'
 
 @Component({
-  imports: [OuiAccessibilityIcon],
-  template: `<svg ouiAccessibilityIcon></svg>`
+  imports: [OuiWordWrapDisabledIcon],
+  template: `<svg ouiWordWrapDisabledIcon></svg>`,
 })
 export class UsageIcon {}
 ```

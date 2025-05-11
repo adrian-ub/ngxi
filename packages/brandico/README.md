@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Brandico
+- **Prefix**: `brandico`
+- **Icons**: 45
+- **License**: [CC BY SA](https://creativecommons.org/licenses/by-sa/3.0/)
+- **Author**: [Fontello](https://github.com/fontello/brandico.font)
+- **Website**: [https://github.com/fontello/brandico.font](https://github.com/fontello/brandico.font)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/brandico
 
 ```ts
 import { Component } from '@angular/core'
-import { BrandicoAmexIcon } from '@ngxi/brandico'
+import { BrandicoVimeoIcon } from '@ngxi/brandico'
 
 @Component({
-  imports: [BrandicoAmexIcon],
-  template: `<svg brandicoAmexIcon></svg>`
+  imports: [BrandicoVimeoIcon],
+  template: `<svg brandicoVimeoIcon></svg>`,
 })
 export class UsageIcon {}
 ```

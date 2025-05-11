@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: TDesign Icons
+- **Prefix**: `tdesign`
+- **Icons**: 2124
+- **License**: [MIT](https://github.com/Tencent/tdesign-icons/blob/main/LICENSE)
+- **Author**: [TDesign](https://github.com/Tencent/tdesign-icons)
+- **Website**: [https://github.com/Tencent/tdesign-icons](https://github.com/Tencent/tdesign-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/tdesign
 
 ```ts
 import { Component } from '@angular/core'
-import { TdesignAccessibilityIcon } from '@ngxi/tdesign'
+import { TdesignActivityIcon } from '@ngxi/tdesign'
 
 @Component({
-  imports: [TdesignAccessibilityIcon],
-  template: `<svg tdesignAccessibilityIcon></svg>`
+  imports: [TdesignActivityIcon],
+  template: `<svg tdesignActivityIcon></svg>`,
 })
 export class UsageIcon {}
 ```

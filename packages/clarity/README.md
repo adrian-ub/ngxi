@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Clarity
+- **Prefix**: `clarity`
+- **Icons**: 1103
+- **License**: [MIT](https://github.com/vmware/clarity-assets/blob/master/LICENSE)
+- **Author**: [VMware](https://github.com/vmware/clarity)
+- **Website**: [https://github.com/vmware/clarity](https://github.com/vmware/clarity)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/clarity
 
 ```ts
 import { Component } from '@angular/core'
-import { ClarityAccessibility1LineIcon } from '@ngxi/clarity'
+import { ClarityHelpOutlineBadgedIcon } from '@ngxi/clarity'
 
 @Component({
-  imports: [ClarityAccessibility1LineIcon],
-  template: `<svg clarityAccessibility1LineIcon></svg>`
+  imports: [ClarityHelpOutlineBadgedIcon],
+  template: `<svg clarityHelpOutlineBadgedIcon></svg>`,
 })
 export class UsageIcon {}
 ```

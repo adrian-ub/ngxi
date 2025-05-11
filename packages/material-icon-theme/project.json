@@ -1,0 +1,38 @@
+{
+  "name": "material-icon-theme",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/material-icon-theme/src",
+  "prefix": "material-icon-theme",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/material-icon-theme/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/material-icon-theme/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/material-icon-theme/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

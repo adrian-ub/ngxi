@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: IconPark Solid
+- **Prefix**: `icon-park-solid`
+- **Icons**: 1947
+- **License**: [Apache 2.0](https://github.com/bytedance/IconPark/blob/master/LICENSE)
+- **Author**: [ByteDance](https://github.com/bytedance/IconPark)
+- **Website**: [https://github.com/bytedance/IconPark](https://github.com/bytedance/IconPark)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/icon-park-solid
 
 ```ts
 import { Component } from '@angular/core'
-import { IconParkSolidACaneIcon } from '@ngxi/icon-park-solid'
+import { IconParkSolidAddOneIcon } from '@ngxi/icon-park-solid'
 
 @Component({
-  imports: [IconParkSolidACaneIcon],
-  template: `<svg iconParkSolidACaneIcon></svg>`
+  imports: [IconParkSolidAddOneIcon],
+  template: `<svg iconParkSolidAddOneIcon></svg>`,
 })
 export class UsageIcon {}
 ```

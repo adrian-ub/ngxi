@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Memory Icons
+- **Prefix**: `memory`
+- **Icons**: 651
+- **License**: [Apache 2.0](https://github.com/Pictogrammers/Memory/blob/main/LICENSE)
+- **Author**: [Pictogrammers](https://github.com/Pictogrammers/Memory)
+- **Website**: [https://github.com/Pictogrammers/Memory](https://github.com/Pictogrammers/Memory)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/memory
 
 ```ts
 import { Component } from '@angular/core'
-import { MemoryAccountIcon } from '@ngxi/memory'
+import { MemoryChartBarIcon } from '@ngxi/memory'
 
 @Component({
-  imports: [MemoryAccountIcon],
-  template: `<svg memoryAccountIcon></svg>`
+  imports: [MemoryChartBarIcon],
+  template: `<svg memoryChartBarIcon></svg>`,
 })
 export class UsageIcon {}
 ```

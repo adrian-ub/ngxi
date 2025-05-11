@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Material Design Iconic Font
+- **Prefix**: `zmdi`
+- **Icons**: 777
+- **License**: [Open Font License]()
+- **Author**: [MDI Community](https://github.com/zavoloklom/material-design-iconic-font)
+- **Website**: [https://github.com/zavoloklom/material-design-iconic-font](https://github.com/zavoloklom/material-design-iconic-font)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/zmdi
 
 ```ts
 import { Component } from '@angular/core'
-import { Zmdi3dRotationIcon } from '@ngxi/zmdi'
+import { ZmdiAlarmSnoozeIcon } from '@ngxi/zmdi'
 
 @Component({
-  imports: [Zmdi3dRotationIcon],
-  template: `<svg zmdi3dRotationIcon></svg>`
+  imports: [ZmdiAlarmSnoozeIcon],
+  template: `<svg zmdiAlarmSnoozeIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Font Awesome 5 Regular
+- **Prefix**: `fa-regular`
+- **Icons**: 151
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Dave Gandy](https://github.com/FortAwesome/Font-Awesome)
+- **Website**: [https://github.com/FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fa-regular
 
 ```ts
 import { Component } from '@angular/core'
-import { FaRegularAddressBookIcon } from '@ngxi/fa-regular'
+import { FaRegularBellIcon } from '@ngxi/fa-regular'
 
 @Component({
-  imports: [FaRegularAddressBookIcon],
-  template: `<svg faRegularAddressBookIcon></svg>`
+  imports: [FaRegularBellIcon],
+  template: `<svg faRegularBellIcon></svg>`,
 })
 export class UsageIcon {}
 ```

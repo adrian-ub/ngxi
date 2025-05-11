@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Font Awesome 5 Solid
+- **Prefix**: `fa-solid`
+- **Icons**: 1001
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Dave Gandy](https://github.com/FortAwesome/Font-Awesome)
+- **Website**: [https://github.com/FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fa-solid
 
 ```ts
 import { Component } from '@angular/core'
-import { FaSolidAbacusIcon } from '@ngxi/fa-solid'
+import { FaSolidSearchPlusIcon } from '@ngxi/fa-solid'
 
 @Component({
-  imports: [FaSolidAbacusIcon],
-  template: `<svg faSolidAbacusIcon></svg>`
+  imports: [FaSolidSearchPlusIcon],
+  template: `<svg faSolidSearchPlusIcon></svg>`,
 })
 export class UsageIcon {}
 ```

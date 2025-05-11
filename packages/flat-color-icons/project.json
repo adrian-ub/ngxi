@@ -1,0 +1,38 @@
+{
+  "name": "flat-color-icons",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/flat-color-icons/src",
+  "prefix": "flat-color-icons",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/flat-color-icons/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/flat-color-icons/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/flat-color-icons/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

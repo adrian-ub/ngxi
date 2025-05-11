@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Duoicons
+- **Prefix**: `duo-icons`
+- **Icons**: 91
+- **License**: [MIT](https://github.com/fazdiu/duo-icons/blob/master/LICENSE)
+- **Author**: [fernandcf](https://github.com/fazdiu/duo-icons)
+- **Website**: [https://github.com/fazdiu/duo-icons](https://github.com/fazdiu/duo-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/duo-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { DuoIconsAddCircleIcon } from '@ngxi/duo-icons'
+import { DuoIconsCreditCardIcon } from '@ngxi/duo-icons'
 
 @Component({
-  imports: [DuoIconsAddCircleIcon],
-  template: `<svg duoIconsAddCircleIcon></svg>`
+  imports: [DuoIconsCreditCardIcon],
+  template: `<svg duoIconsCreditCardIcon></svg>`,
 })
 export class UsageIcon {}
 ```

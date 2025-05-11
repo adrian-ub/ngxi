@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Covid Icons
+- **Prefix**: `covid`
+- **Icons**: 142
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Streamline](https://github.com/webalys-hq/streamline-vectors)
+- **Website**: [https://github.com/webalys-hq/streamline-vectors](https://github.com/webalys-hq/streamline-vectors)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/covid
 
 ```ts
 import { Component } from '@angular/core'
-import { CovidCovid19Virus4Icon } from '@ngxi/covid'
+import { CovidSocialDistancingCorrect2Icon } from '@ngxi/covid'
 
 @Component({
-  imports: [CovidCovid19Virus4Icon],
-  template: `<svg covidCovid19Virus4Icon></svg>`
+  imports: [CovidSocialDistancingCorrect2Icon],
+  template: `<svg covidSocialDistancingCorrect2Icon></svg>`,
 })
 export class UsageIcon {}
 ```

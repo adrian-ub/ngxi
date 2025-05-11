@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Feather Icons
+- **Prefix**: `feather`
+- **Icons**: 286
+- **License**: [MIT](https://github.com/feathericons/feather/blob/master/LICENSE)
+- **Author**: [Cole Bemis](https://github.com/feathericons/feather)
+- **Website**: [https://github.com/feathericons/feather](https://github.com/feathericons/feather)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/feather
 
 ```ts
 import { Component } from '@angular/core'
-import { FeatherActivityIcon } from '@ngxi/feather'
+import { FeatherCheckCircleIcon } from '@ngxi/feather'
 
 @Component({
-  imports: [FeatherActivityIcon],
-  template: `<svg featherActivityIcon></svg>`
+  imports: [FeatherCheckCircleIcon],
+  template: `<svg featherCheckCircleIcon></svg>`,
 })
 export class UsageIcon {}
 ```

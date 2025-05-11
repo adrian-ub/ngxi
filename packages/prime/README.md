@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Prime Icons
+- **Prefix**: `prime`
+- **Icons**: 313
+- **License**: [MIT](https://github.com/primefaces/primeicons/blob/master/LICENSE)
+- **Author**: [PrimeTek](https://github.com/primefaces/primeicons)
+- **Website**: [https://github.com/primefaces/primeicons](https://github.com/primefaces/primeicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/prime
 
 ```ts
 import { Component } from '@angular/core'
-import { PrimeAddressBookIcon } from '@ngxi/prime'
+import { PrimeBookIcon } from '@ngxi/prime'
 
 @Component({
-  imports: [PrimeAddressBookIcon],
-  template: `<svg primeAddressBookIcon></svg>`
+  imports: [PrimeBookIcon],
+  template: `<svg primeBookIcon></svg>`,
 })
 export class UsageIcon {}
 ```

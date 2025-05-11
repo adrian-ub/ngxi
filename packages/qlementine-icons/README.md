@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Qlementine Icons
+- **Prefix**: `qlementine-icons`
+- **Icons**: 684
+- **License**: [MIT](https://github.com/oclero/qlementine-icons/blob/master/LICENSE)
+- **Author**: [Olivier Cléro](https://github.com/oclero/qlementine-icons)
+- **Website**: [https://github.com/oclero/qlementine-icons](https://github.com/oclero/qlementine-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/qlementine-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { QlementineIconsAccessibility16Icon } from '@ngxi/qlementine-icons'
+import { QlementineIconsWindows16Icon } from '@ngxi/qlementine-icons'
 
 @Component({
-  imports: [QlementineIconsAccessibility16Icon],
-  template: `<svg qlementineIconsAccessibility16Icon></svg>`
+  imports: [QlementineIconsWindows16Icon],
+  template: `<svg qlementineIconsWindows16Icon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Gitlab SVGs
+- **Prefix**: `pajamas`
+- **Icons**: 387
+- **License**: [MIT](https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/LICENSE)
+- **Author**: [GitLab B.V.](https://gitlab.com/gitlab-org/gitlab-svgs/-/tree/main)
+- **Website**: [https://gitlab.com/gitlab-org/gitlab-svgs/-/tree/main](https://gitlab.com/gitlab-org/gitlab-svgs/-/tree/main)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/pajamas
 
 ```ts
 import { Component } from '@angular/core'
-import { PajamasAbuseIcon } from '@ngxi/pajamas'
+import { PajamasPreferencesIcon } from '@ngxi/pajamas'
 
 @Component({
-  imports: [PajamasAbuseIcon],
-  template: `<svg pajamasAbuseIcon></svg>`
+  imports: [PajamasPreferencesIcon],
+  template: `<svg pajamasPreferencesIcon></svg>`,
 })
 export class UsageIcon {}
 ```

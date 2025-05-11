@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Akar Icons
+- **Prefix**: `akar-icons`
+- **Icons**: 454
+- **License**: [MIT](https://github.com/artcoholic/akar-icons/blob/master/LICENSE)
+- **Author**: [Arturo Wibawa](https://github.com/artcoholic/akar-icons)
+- **Website**: [https://github.com/artcoholic/akar-icons](https://github.com/artcoholic/akar-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/akar-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { AkarIconsAirIcon } from '@ngxi/akar-icons'
+import { AkarIconsPaperIcon } from '@ngxi/akar-icons'
 
 @Component({
-  imports: [AkarIconsAirIcon],
-  template: `<svg akarIconsAirIcon></svg>`
+  imports: [AkarIconsPaperIcon],
+  template: `<svg akarIconsPaperIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Innowatio Font
+- **Prefix**: `iwwa`
+- **Icons**: 105
+- **License**: [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+- **Author**: [Innowatio](https://github.com/innowatio/iwwa-icons)
+- **Website**: [https://github.com/innowatio/iwwa-icons](https://github.com/innowatio/iwwa-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/iwwa
 
 ```ts
 import { Component } from '@angular/core'
-import { IwwaAddIcon } from '@ngxi/iwwa'
+import { IwwaTagIcon } from '@ngxi/iwwa'
 
 @Component({
-  imports: [IwwaAddIcon],
-  template: `<svg iwwaAddIcon></svg>`
+  imports: [IwwaTagIcon],
+  template: `<svg iwwaTagIcon></svg>`,
 })
 export class UsageIcon {}
 ```

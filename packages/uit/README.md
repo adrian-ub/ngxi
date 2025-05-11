@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Unicons Thin Line
+- **Prefix**: `uit`
+- **Icons**: 216
+- **License**: [Apache 2.0](https://github.com/Iconscout/unicons/blob/master/LICENSE)
+- **Author**: [Iconscout](https://github.com/Iconscout/unicons)
+- **Website**: [https://github.com/Iconscout/unicons](https://github.com/Iconscout/unicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/uit
 
 ```ts
 import { Component } from '@angular/core'
-import { UitAdobeAltIcon } from '@ngxi/uit'
+import { UitCircuitIcon } from '@ngxi/uit'
 
 @Component({
-  imports: [UitAdobeAltIcon],
-  template: `<svg uitAdobeAltIcon></svg>`
+  imports: [UitCircuitIcon],
+  template: `<svg uitCircuitIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Cryptocurrency Icons
+- **Prefix**: `cryptocurrency`
+- **Icons**: 483
+- **License**: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- **Author**: [Christopher Downer](https://github.com/atomiclabs/cryptocurrency-icons)
+- **Website**: [https://github.com/atomiclabs/cryptocurrency-icons](https://github.com/atomiclabs/cryptocurrency-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/cryptocurrency
 
 ```ts
 import { Component } from '@angular/core'
-import { Cryptocurrency0xbtcIcon } from '@ngxi/cryptocurrency'
+import { CryptocurrencyBtcIcon } from '@ngxi/cryptocurrency'
 
 @Component({
-  imports: [Cryptocurrency0xbtcIcon],
-  template: `<svg cryptocurrency0xbtcIcon></svg>`
+  imports: [CryptocurrencyBtcIcon],
+  template: `<svg cryptocurrencyBtcIcon></svg>`,
 })
 export class UsageIcon {}
 ```

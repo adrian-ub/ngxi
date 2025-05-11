@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Guidance
+- **Prefix**: `guidance`
+- **Icons**: 360
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Streamline](https://github.com/webalys-hq/streamline-vectors)
+- **Website**: [https://github.com/webalys-hq/streamline-vectors](https://github.com/webalys-hq/streamline-vectors)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/guidance
 
 ```ts
 import { Component } from '@angular/core'
-import { Guidance24HoursIcon } from '@ngxi/guidance'
+import { GuidanceSmokingAreaIcon } from '@ngxi/guidance'
 
 @Component({
-  imports: [Guidance24HoursIcon],
-  template: `<svg guidance24HoursIcon></svg>`
+  imports: [GuidanceSmokingAreaIcon],
+  template: `<svg guidanceSmokingAreaIcon></svg>`,
 })
 export class UsageIcon {}
 ```

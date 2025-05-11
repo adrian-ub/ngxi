@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Fluent UI MDL2
+- **Prefix**: `fluent-mdl2`
+- **Icons**: 1735
+- **License**: [MIT](https://github.com/microsoft/fluentui/blob/master/packages/react-icons-mdl2/LICENSE)
+- **Author**: [Microsoft Corporation](https://github.com/microsoft/fluentui/tree/master/packages/react-icons-mdl2)
+- **Website**: [https://github.com/microsoft/fluentui/tree/master/packages/react-icons-mdl2](https://github.com/microsoft/fluentui/tree/master/packages/react-icons-mdl2)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fluent-mdl2
 
 ```ts
 import { Component } from '@angular/core'
-import { FluentMdl2AcceptIcon } from '@ngxi/fluent-mdl2'
+import { FluentMdl2FlowIcon } from '@ngxi/fluent-mdl2'
 
 @Component({
-  imports: [FluentMdl2AcceptIcon],
-  template: `<svg fluentMdl2AcceptIcon></svg>`
+  imports: [FluentMdl2FlowIcon],
+  template: `<svg fluentMdl2FlowIcon></svg>`,
 })
 export class UsageIcon {}
 ```

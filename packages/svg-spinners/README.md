@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: SVG Spinners
+- **Prefix**: `svg-spinners`
+- **Icons**: 46
+- **License**: [MIT](https://github.com/n3r4zzurr0/svg-spinners/blob/main/LICENSE)
+- **Author**: [Utkarsh Verma](https://github.com/n3r4zzurr0/svg-spinners)
+- **Website**: [https://github.com/n3r4zzurr0/svg-spinners](https://github.com/n3r4zzurr0/svg-spinners)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/svg-spinners
 
 ```ts
 import { Component } from '@angular/core'
-import { SvgSpinners12DotsScaleRotateIcon } from '@ngxi/svg-spinners'
+import { SvgSpinnersTadpoleIcon } from '@ngxi/svg-spinners'
 
 @Component({
-  imports: [SvgSpinners12DotsScaleRotateIcon],
-  template: `<svg svgSpinners12DotsScaleRotateIcon></svg>`
+  imports: [SvgSpinnersTadpoleIcon],
+  template: `<svg svgSpinnersTadpoleIcon></svg>`,
 })
 export class UsageIcon {}
 ```

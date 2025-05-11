@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Unicons Monochrome
+- **Prefix**: `uim`
+- **Icons**: 298
+- **License**: [Apache 2.0](https://github.com/Iconscout/unicons/blob/master/LICENSE)
+- **Author**: [Iconscout](https://github.com/Iconscout/unicons)
+- **Website**: [https://github.com/Iconscout/unicons](https://github.com/Iconscout/unicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/uim
 
 ```ts
 import { Component } from '@angular/core'
-import { Uim500pxIcon } from '@ngxi/uim'
+import { UimAirplayIcon } from '@ngxi/uim'
 
 @Component({
-  imports: [Uim500pxIcon],
-  template: `<svg uim500pxIcon></svg>`
+  imports: [UimAirplayIcon],
+  template: `<svg uimAirplayIcon></svg>`,
 })
 export class UsageIcon {}
 ```

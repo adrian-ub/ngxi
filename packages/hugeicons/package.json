@@ -12,17 +12,6 @@
   },
   "bugs": "https://github.com/adrian-ub/ngxi/issues",
   "sideEffects": false,
-  "scripts": {
-    "build": "ng-packagr -p ng-package.json -c tsconfig.lib.prod.json",
-    "typecheck": "tsc --noEmit",
-    "build:dev": "ng-packagr -p ng-package.json -c tsconfig.lib.json"
-  },
-  "peerDependencies": {
-    "@angular/core": "^17.0.0 || ^18.0.0 || ^19.0.0"
-  },
-  "dependencies": {
-    "tslib": "catalog:angular"
-  },
   "publishConfig": {
     "directory": "dist"
   }

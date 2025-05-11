@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Marketeq
+- **Prefix**: `marketeq`
+- **Icons**: 590
+- **License**: [MIT]()
+- **Author**: [Marketeq]()
+- **Website**: []()
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/marketeq
 
 ```ts
 import { Component } from '@angular/core'
-import { Marketeq1stPlaceIcon } from '@ngxi/marketeq'
+import { MarketeqMuteIcon } from '@ngxi/marketeq'
 
 @Component({
-  imports: [Marketeq1stPlaceIcon],
-  template: `<svg marketeq1stPlaceIcon></svg>`
+  imports: [MarketeqMuteIcon],
+  template: `<svg marketeqMuteIcon></svg>`,
 })
 export class UsageIcon {}
 ```

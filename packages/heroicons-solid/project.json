@@ -1,0 +1,38 @@
+{
+  "name": "heroicons-solid",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/heroicons-solid/src",
+  "prefix": "heroicons-solid",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/heroicons-solid/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/heroicons-solid/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/heroicons-solid/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

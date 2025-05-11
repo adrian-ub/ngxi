@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Foundation
+- **Prefix**: `foundation`
+- **Icons**: 283
+- **License**: [MIT]()
+- **Author**: [Zurb](https://github.com/zurb/foundation-icon-fonts)
+- **Website**: [https://github.com/zurb/foundation-icon-fonts](https://github.com/zurb/foundation-icon-fonts)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/foundation
 
 ```ts
 import { Component } from '@angular/core'
-import { FoundationAddressBookIcon } from '@ngxi/foundation'
+import { FoundationGraphTrendIcon } from '@ngxi/foundation'
 
 @Component({
-  imports: [FoundationAddressBookIcon],
-  template: `<svg foundationAddressBookIcon></svg>`
+  imports: [FoundationGraphTrendIcon],
+  template: `<svg foundationGraphTrendIcon></svg>`,
 })
 export class UsageIcon {}
 ```

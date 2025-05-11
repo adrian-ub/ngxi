@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Famicons
+- **Prefix**: `famicons`
+- **Icons**: 1342
+- **License**: [MIT](https://github.com/familyjs/famicons/blob/main/LICENSE)
+- **Author**: [Family](https://github.com/familyjs/famicons)
+- **Website**: [https://github.com/familyjs/famicons](https://github.com/familyjs/famicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/famicons
 
 ```ts
 import { Component } from '@angular/core'
-import { FamiconsAccessibilityIcon } from '@ngxi/famicons'
+import { FamiconsBackspaceOutlineIcon } from '@ngxi/famicons'
 
 @Component({
-  imports: [FamiconsAccessibilityIcon],
-  template: `<svg famiconsAccessibilityIcon></svg>`
+  imports: [FamiconsBackspaceOutlineIcon],
+  template: `<svg famiconsBackspaceOutlineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Emoji One (Monotone)
+- **Prefix**: `emojione-monotone`
+- **Icons**: 1403
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Emoji One](https://github.com/EmojiTwo/emojitwo)
+- **Website**: [https://github.com/EmojiTwo/emojitwo](https://github.com/EmojiTwo/emojitwo)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/emojione-monotone
 
 ```ts
 import { Component } from '@angular/core'
-import { EmojioneMonotone1stPlaceMedalIcon } from '@ngxi/emojione-monotone'
+import { EmojioneMonotoneFaceWithTongueIcon } from '@ngxi/emojione-monotone'
 
 @Component({
-  imports: [EmojioneMonotone1stPlaceMedalIcon],
-  template: `<svg emojioneMonotone1stPlaceMedalIcon></svg>`
+  imports: [EmojioneMonotoneFaceWithTongueIcon],
+  template: `<svg emojioneMonotoneFaceWithTongueIcon></svg>`,
 })
 export class UsageIcon {}
 ```

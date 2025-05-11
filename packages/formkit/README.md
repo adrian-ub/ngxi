@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: FormKit Icons
+- **Prefix**: `formkit`
+- **Icons**: 144
+- **License**: [MIT](https://github.com/formkit/formkit/blob/master/packages/icons/LICENSE)
+- **Author**: [FormKit, Inc](https://github.com/formkit/formkit/tree/master/packages/icons)
+- **Website**: [https://github.com/formkit/formkit/tree/master/packages/icons](https://github.com/formkit/formkit/tree/master/packages/icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/formkit
 
 ```ts
 import { Component } from '@angular/core'
-import { FormkitAddIcon } from '@ngxi/formkit'
+import { FormkitCheckboxIcon } from '@ngxi/formkit'
 
 @Component({
-  imports: [FormkitAddIcon],
-  template: `<svg formkitAddIcon></svg>`
+  imports: [FormkitCheckboxIcon],
+  template: `<svg formkitCheckboxIcon></svg>`,
 })
 export class UsageIcon {}
 ```

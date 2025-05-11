@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Streamline Emojis
+- **Prefix**: `streamline-emojis`
+- **Icons**: 787
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Streamline](https://github.com/webalys-hq/streamline-vectors)
+- **Website**: [https://github.com/webalys-hq/streamline-vectors](https://github.com/webalys-hq/streamline-vectors)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/streamline-emojis
 
 ```ts
 import { Component } from '@angular/core'
-import { StreamlineEmojis2Icon } from '@ngxi/streamline-emojis'
+import { StreamlineEmojisCrescentMoonIcon } from '@ngxi/streamline-emojis'
 
 @Component({
-  imports: [StreamlineEmojis2Icon],
-  template: `<svg streamlineEmojis2Icon></svg>`
+  imports: [StreamlineEmojisCrescentMoonIcon],
+  template: `<svg streamlineEmojisCrescentMoonIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Entypo+ Social
+- **Prefix**: `entypo-social`
+- **Icons**: 76
+- **License**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Author**: [Daniel Bruce](https://github.com/chancancode/entypo-plus)
+- **Website**: [https://github.com/chancancode/entypo-plus](https://github.com/chancancode/entypo-plus)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/entypo-social
 
 ```ts
 import { Component } from '@angular/core'
-import { EntypoSocial500pxIcon } from '@ngxi/entypo-social'
+import { EntypoSocialLinkedinWithCircleIcon } from '@ngxi/entypo-social'
 
 @Component({
-  imports: [EntypoSocial500pxIcon],
-  template: `<svg entypoSocial500pxIcon></svg>`
+  imports: [EntypoSocialLinkedinWithCircleIcon],
+  template: `<svg entypoSocialLinkedinWithCircleIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Web Symbols Liga
+- **Prefix**: `websymbol`
+- **Icons**: 85
+- **License**: [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+- **Author**: [Just Be Nice studio]()
+- **Website**: []()
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/websymbol
 
 ```ts
 import { Component } from '@angular/core'
-import { WebsymbolArchiveIcon } from '@ngxi/websymbol'
+import { WebsymbolClockIcon } from '@ngxi/websymbol'
 
 @Component({
-  imports: [WebsymbolArchiveIcon],
-  template: `<svg websymbolArchiveIcon></svg>`
+  imports: [WebsymbolClockIcon],
+  template: `<svg websymbolClockIcon></svg>`,
 })
 export class UsageIcon {}
 ```

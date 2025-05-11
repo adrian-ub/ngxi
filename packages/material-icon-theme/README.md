@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Material Icon Theme
+- **Prefix**: `material-icon-theme`
+- **Icons**: 1052
+- **License**: [MIT](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/LICENSE)
+- **Author**: [Material Extensions](https://github.com/material-extensions/vscode-material-icon-theme)
+- **Website**: [https://github.com/material-extensions/vscode-material-icon-theme](https://github.com/material-extensions/vscode-material-icon-theme)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/material-icon-theme
 
 ```ts
 import { Component } from '@angular/core'
-import { MaterialIconTheme3dIcon } from '@ngxi/material-icon-theme'
+import { MaterialIconThemeZipIcon } from '@ngxi/material-icon-theme'
 
 @Component({
-  imports: [MaterialIconTheme3dIcon],
-  template: `<svg materialIconTheme3dIcon></svg>`
+  imports: [MaterialIconThemeZipIcon],
+  template: `<svg materialIconThemeZipIcon></svg>`,
 })
 export class UsageIcon {}
 ```

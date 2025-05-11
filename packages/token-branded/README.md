@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Web3 Icons Branded
+- **Prefix**: `token-branded`
+- **Icons**: 1981
+- **License**: [MIT](https://github.com/0xa3k5/web3icons/blob/main/LICENCE)
+- **Author**: [0xa3k5](https://github.com/0xa3k5/web3icons)
+- **Website**: [https://github.com/0xa3k5/web3icons](https://github.com/0xa3k5/web3icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/token-branded
 
 ```ts
 import { Component } from '@angular/core'
-import { TokenBranded0x0Icon } from '@ngxi/token-branded'
+import { TokenBrandedBitIcon } from '@ngxi/token-branded'
 
 @Component({
-  imports: [TokenBranded0x0Icon],
-  template: `<svg tokenBranded0x0Icon></svg>`
+  imports: [TokenBrandedBitIcon],
+  template: `<svg tokenBrandedBitIcon></svg>`,
 })
 export class UsageIcon {}
 ```

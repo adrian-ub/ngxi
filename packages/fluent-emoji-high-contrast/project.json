@@ -1,0 +1,38 @@
+{
+  "name": "fluent-emoji-high-contrast",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/fluent-emoji-high-contrast/src",
+  "prefix": "fluent-emoji-high-contrast",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/fluent-emoji-high-contrast/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/fluent-emoji-high-contrast/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/fluent-emoji-high-contrast/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

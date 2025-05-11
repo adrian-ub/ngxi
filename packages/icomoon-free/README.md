@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: IcoMoon Free
+- **Prefix**: `icomoon-free`
+- **Icons**: 491
+- **License**: [GPL](https://www.gnu.org/licenses/gpl.html)
+- **Author**: [Keyamoon](https://github.com/Keyamoon/IcoMoon-Free)
+- **Website**: [https://github.com/Keyamoon/IcoMoon-Free](https://github.com/Keyamoon/IcoMoon-Free)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/icomoon-free
 
 ```ts
 import { Component } from '@angular/core'
-import { IcomoonFree500pxIcon } from '@ngxi/icomoon-free'
+import { IcomoonFreeBubbles3Icon } from '@ngxi/icomoon-free'
 
 @Component({
-  imports: [IcomoonFree500pxIcon],
-  template: `<svg icomoonFree500pxIcon></svg>`
+  imports: [IcomoonFreeBubbles3Icon],
+  template: `<svg icomoonFreeBubbles3Icon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Sargam Icons
+- **Prefix**: `si`
+- **Icons**: 924
+- **License**: [MIT](https://github.com/planetabhi/sargam-icons/blob/main/LICENSE.txt)
+- **Author**: [Abhimanyu Rana](https://github.com/planetabhi/sargam-icons)
+- **Website**: [https://github.com/planetabhi/sargam-icons](https://github.com/planetabhi/sargam-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/si
 
 ```ts
 import { Component } from '@angular/core'
-import { SiActionsDuotoneIcon } from '@ngxi/si'
+import { SiEjectDuotoneIcon } from '@ngxi/si'
 
 @Component({
-  imports: [SiActionsDuotoneIcon],
-  template: `<svg siActionsDuotoneIcon></svg>`
+  imports: [SiEjectDuotoneIcon],
+  template: `<svg siEjectDuotoneIcon></svg>`,
 })
 export class UsageIcon {}
 ```

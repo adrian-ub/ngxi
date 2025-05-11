@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: HeroIcons
+- **Prefix**: `heroicons`
+- **Icons**: 1288
+- **License**: [MIT](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE)
+- **Author**: [Refactoring UI Inc](https://github.com/tailwindlabs/heroicons)
+- **Website**: [https://github.com/tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/heroicons
 
 ```ts
 import { Component } from '@angular/core'
-import { HeroiconsAcademicCapIcon } from '@ngxi/heroicons'
+import { HeroiconsCameraIcon } from '@ngxi/heroicons'
 
 @Component({
-  imports: [HeroiconsAcademicCapIcon],
-  template: `<svg heroiconsAcademicCapIcon></svg>`
+  imports: [HeroiconsCameraIcon],
+  template: `<svg heroiconsCameraIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Vaadin Icons
+- **Prefix**: `vaadin`
+- **Icons**: 636
+- **License**: [Apache 2.0]()
+- **Author**: [Vaadin](https://github.com/vaadin/web-components)
+- **Website**: [https://github.com/vaadin/web-components](https://github.com/vaadin/web-components)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/vaadin
 
 ```ts
 import { Component } from '@angular/core'
-import { VaadinAbacusIcon } from '@ngxi/vaadin'
+import { VaadinAreaSelectIcon } from '@ngxi/vaadin'
 
 @Component({
-  imports: [VaadinAbacusIcon],
-  template: `<svg vaadinAbacusIcon></svg>`
+  imports: [VaadinAreaSelectIcon],
+  template: `<svg vaadinAreaSelectIcon></svg>`,
 })
 export class UsageIcon {}
 ```

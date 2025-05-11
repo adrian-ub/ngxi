@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Pixelarticons
+- **Prefix**: `pixelarticons`
+- **Icons**: 486
+- **License**: [MIT](https://github.com/halfmage/pixelarticons/blob/master/LICENSE)
+- **Author**: [Gerrit Halfmann](https://github.com/halfmage/pixelarticons)
+- **Website**: [https://github.com/halfmage/pixelarticons](https://github.com/halfmage/pixelarticons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/pixelarticons
 
 ```ts
 import { Component } from '@angular/core'
-import { Pixelarticons4gIcon } from '@ngxi/pixelarticons'
+import { PixelarticonsDragAndDropIcon } from '@ngxi/pixelarticons'
 
 @Component({
-  imports: [Pixelarticons4gIcon],
-  template: `<svg pixelarticons4gIcon></svg>`
+  imports: [PixelarticonsDragAndDropIcon],
+  template: `<svg pixelarticonsDragAndDropIcon></svg>`,
 })
 export class UsageIcon {}
 ```

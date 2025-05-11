@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: SmartIcons Glyph
+- **Prefix**: `si-glyph`
+- **Icons**: 799
+- **License**: [CC BY SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Author**: [SmartIcons]()
+- **Website**: []()
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/si-glyph
 
 ```ts
 import { Component } from '@angular/core'
-import { SiGlyphAbacusIcon } from '@ngxi/si-glyph'
+import { SiGlyphCircleLoadLeftIcon } from '@ngxi/si-glyph'
 
 @Component({
-  imports: [SiGlyphAbacusIcon],
-  template: `<svg siGlyphAbacusIcon></svg>`
+  imports: [SiGlyphCircleLoadLeftIcon],
+  template: `<svg siGlyphCircleLoadLeftIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Subway Icon Set
+- **Prefix**: `subway`
+- **Icons**: 306
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Mariusz Ostrowski](https://github.com/mariuszostrowski/subway)
+- **Website**: [https://github.com/mariuszostrowski/subway](https://github.com/mariuszostrowski/subway)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/subway
 
 ```ts
 import { Component } from '@angular/core'
-import { SubwayAddIcon } from '@ngxi/subway'
+import { SubwayCall2Icon } from '@ngxi/subway'
 
 @Component({
-  imports: [SubwayAddIcon],
-  template: `<svg subwayAddIcon></svg>`
+  imports: [SubwayCall2Icon],
+  template: `<svg subwayCall2Icon></svg>`,
 })
 export class UsageIcon {}
 ```

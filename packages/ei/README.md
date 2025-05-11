@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Evil Icons
+- **Prefix**: `ei`
+- **Icons**: 70
+- **License**: [MIT](https://github.com/evil-icons/evil-icons/blob/master/LICENSE.txt)
+- **Author**: [Alexander Madyankin and Roman Shamin](https://github.com/evil-icons/evil-icons)
+- **Website**: [https://github.com/evil-icons/evil-icons](https://github.com/evil-icons/evil-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ei
 
 ```ts
 import { Component } from '@angular/core'
-import { EiArchiveIcon } from '@ngxi/ei'
+import { EiPaperclipIcon } from '@ngxi/ei'
 
 @Component({
-  imports: [EiArchiveIcon],
-  template: `<svg eiArchiveIcon></svg>`
+  imports: [EiPaperclipIcon],
+  template: `<svg eiPaperclipIcon></svg>`,
 })
 export class UsageIcon {}
 ```

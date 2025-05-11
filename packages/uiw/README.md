@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: uiw icons
+- **Prefix**: `uiw`
+- **Icons**: 214
+- **License**: [MIT](https://github.com/uiwjs/icons/blob/master/LICENSE)
+- **Author**: [liwen0526](https://github.com/uiwjs/icons)
+- **Website**: [https://github.com/uiwjs/icons](https://github.com/uiwjs/icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/uiw
 
 ```ts
 import { Component } from '@angular/core'
-import { UiwAdobeIcon } from '@ngxi/uiw'
+import { UiwCutIcon } from '@ngxi/uiw'
 
 @Component({
-  imports: [UiwAdobeIcon],
-  template: `<svg uiwAdobeIcon></svg>`
+  imports: [UiwCutIcon],
+  template: `<svg uiwCutIcon></svg>`,
 })
 export class UsageIcon {}
 ```

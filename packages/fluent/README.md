@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Fluent UI System Icons
+- **Prefix**: `fluent`
+- **Icons**: 17903
+- **License**: [MIT](https://github.com/microsoft/fluentui-system-icons/blob/main/LICENSE)
+- **Author**: [Microsoft Corporation](https://github.com/microsoft/fluentui-system-icons)
+- **Website**: [https://github.com/microsoft/fluentui-system-icons](https://github.com/microsoft/fluentui-system-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fluent
 
 ```ts
 import { Component } from '@angular/core'
-import { FluentAccessTime20FilledIcon } from '@ngxi/fluent'
+import { FluentZoomOut24FilledIcon } from '@ngxi/fluent'
 
 @Component({
-  imports: [FluentAccessTime20FilledIcon],
-  template: `<svg fluentAccessTime20FilledIcon></svg>`
+  imports: [FluentZoomOut24FilledIcon],
+  template: `<svg fluentZoomOut24FilledIcon></svg>`,
 })
 export class UsageIcon {}
 ```

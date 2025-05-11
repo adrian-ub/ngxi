@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: CoreUI Free
+- **Prefix**: `cil`
+- **Icons**: 554
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [creativeLabs Łukasz Holeczek](https://github.com/coreui/coreui-icons)
+- **Website**: [https://github.com/coreui/coreui-icons](https://github.com/coreui/coreui-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/cil
 
 ```ts
 import { Component } from '@angular/core'
-import { Cil3dIcon } from '@ngxi/cil'
+import { CilAirplaneModeOffIcon } from '@ngxi/cil'
 
 @Component({
-  imports: [Cil3dIcon],
-  template: `<svg cil3dIcon></svg>`
+  imports: [CilAirplaneModeOffIcon],
+  template: `<svg cilAirplaneModeOffIcon></svg>`,
 })
 export class UsageIcon {}
 ```

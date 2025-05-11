@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Font-GIS
+- **Prefix**: `gis`
+- **Icons**: 367
+- **License**: [CC BY 4.0](https://github.com/Viglino/font-gis/blob/main/LICENSE-CC-BY.md)
+- **Author**: [Jean-Marc Viglino](https://github.com/viglino/font-gis)
+- **Website**: [https://github.com/viglino/font-gis](https://github.com/viglino/font-gis)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/gis
 
 ```ts
 import { Component } from '@angular/core'
-import { Gis360Icon } from '@ngxi/gis'
+import { GisLayerOIcon } from '@ngxi/gis'
 
 @Component({
-  imports: [Gis360Icon],
-  template: `<svg gis360Icon></svg>`
+  imports: [GisLayerOIcon],
+  template: `<svg gisLayerOIcon></svg>`,
 })
 export class UsageIcon {}
 ```

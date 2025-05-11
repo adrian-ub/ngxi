@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: MingCute Icon
+- **Prefix**: `mingcute`
+- **Icons**: 3098
+- **License**: [Apache 2.0](https://github.com/Richard9394/MingCute/blob/main/LICENSE)
+- **Author**: [MingCute Design](https://github.com/Richard9394/MingCute)
+- **Website**: [https://github.com/Richard9394/MingCute](https://github.com/Richard9394/MingCute)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/mingcute
 
 ```ts
 import { Component } from '@angular/core'
-import { MingcuteAbsFillIcon } from '@ngxi/mingcute'
+import { MingcuteEdit3LineIcon } from '@ngxi/mingcute'
 
 @Component({
-  imports: [MingcuteAbsFillIcon],
-  template: `<svg mingcuteAbsFillIcon></svg>`
+  imports: [MingcuteEdit3LineIcon],
+  template: `<svg mingcuteEdit3LineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

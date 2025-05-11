@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: OpenMoji
+- **Prefix**: `openmoji`
+- **Icons**: 4182
+- **License**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Author**: [OpenMoji](https://github.com/hfg-gmuend/openmoji)
+- **Website**: [https://github.com/hfg-gmuend/openmoji](https://github.com/hfg-gmuend/openmoji)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/openmoji
 
 ```ts
 import { Component } from '@angular/core'
-import { Openmoji1stPlaceMedalIcon } from '@ngxi/openmoji'
+import { OpenmojiBicycleIcon } from '@ngxi/openmoji'
 
 @Component({
-  imports: [Openmoji1stPlaceMedalIcon],
-  template: `<svg openmoji1stPlaceMedalIcon></svg>`
+  imports: [OpenmojiBicycleIcon],
+  template: `<svg openmojiBicycleIcon></svg>`,
 })
 export class UsageIcon {}
 ```

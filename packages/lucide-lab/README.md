@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Lucide Lab
+- **Prefix**: `lucide-lab`
+- **Icons**: 373
+- **License**: [ISC](https://github.com/lucide-icons/lucide-lab/blob/main/LICENSE)
+- **Author**: [Lucide Contributors](https://github.com/lucide-icons/lucide-lab)
+- **Website**: [https://github.com/lucide-icons/lucide-lab](https://github.com/lucide-icons/lucide-lab)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/lucide-lab
 
 ```ts
 import { Component } from '@angular/core'
-import { LucideLabAmpersandSquareIcon } from '@ngxi/lucide-lab'
+import { LucideLabVennIcon } from '@ngxi/lucide-lab'
 
 @Component({
-  imports: [LucideLabAmpersandSquareIcon],
-  template: `<svg lucideLabAmpersandSquareIcon></svg>`
+  imports: [LucideLabVennIcon],
+  template: `<svg lucideLabVennIcon></svg>`,
 })
 export class UsageIcon {}
 ```

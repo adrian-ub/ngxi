@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Majesticons
+- **Prefix**: `majesticons`
+- **Icons**: 760
+- **License**: [MIT](https://github.com/halfmage/majesticons/blob/main/LICENSE)
+- **Author**: [Gerrit Halfmann](https://github.com/halfmage/majesticons)
+- **Website**: [https://github.com/halfmage/majesticons](https://github.com/halfmage/majesticons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/majesticons
 
 ```ts
 import { Component } from '@angular/core'
-import { MajesticonsAcademicCapIcon } from '@ngxi/majesticons'
+import { MajesticonsChatsLineIcon } from '@ngxi/majesticons'
 
 @Component({
-  imports: [MajesticonsAcademicCapIcon],
-  template: `<svg majesticonsAcademicCapIcon></svg>`
+  imports: [MajesticonsChatsLineIcon],
+  template: `<svg majesticonsChatsLineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

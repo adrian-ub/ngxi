@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Mono Icons
+- **Prefix**: `mi`
+- **Icons**: 180
+- **License**: [MIT](https://github.com/mono-company/mono-icons/blob/master/LICENSE.md)
+- **Author**: [Mono](https://github.com/mono-company/mono-icons)
+- **Website**: [https://github.com/mono-company/mono-icons](https://github.com/mono-company/mono-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/mi
 
 ```ts
 import { Component } from '@angular/core'
-import { MiAddIcon } from '@ngxi/mi'
+import { MiBarChartIcon } from '@ngxi/mi'
 
 @Component({
-  imports: [MiAddIcon],
-  template: `<svg miAddIcon></svg>`
+  imports: [MiBarChartIcon],
+  template: `<svg miBarChartIcon></svg>`,
 })
 export class UsageIcon {}
 ```

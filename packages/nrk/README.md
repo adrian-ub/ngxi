@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: NRK Core Icons
+- **Prefix**: `nrk`
+- **Icons**: 230
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Norsk rikskringkasting](https://github.com/nrkno/core-icons)
+- **Website**: [https://github.com/nrkno/core-icons](https://github.com/nrkno/core-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/nrk
 
 ```ts
 import { Component } from '@angular/core'
-import { Nrk360Icon } from '@ngxi/nrk'
+import { NrkLynIcon } from '@ngxi/nrk'
 
 @Component({
-  imports: [Nrk360Icon],
-  template: `<svg nrk360Icon></svg>`
+  imports: [NrkLynIcon],
+  template: `<svg nrkLynIcon></svg>`,
 })
 export class UsageIcon {}
 ```

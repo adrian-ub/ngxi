@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Noto Emoji (v1)
+- **Prefix**: `noto-v1`
+- **Icons**: 2162
+- **License**: [Apache 2.0](https://github.com/googlefonts/noto-emoji/blob/main/svg/LICENSE)
+- **Author**: [Google Inc](https://github.com/googlefonts/noto-emoji)
+- **Website**: [https://github.com/googlefonts/noto-emoji](https://github.com/googlefonts/noto-emoji)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/noto-v1
 
 ```ts
 import { Component } from '@angular/core'
-import { NotoV11stPlaceMedalIcon } from '@ngxi/noto-v1'
+import { NotoV1FaceWithOpenMouthIcon } from '@ngxi/noto-v1'
 
 @Component({
-  imports: [NotoV11stPlaceMedalIcon],
-  template: `<svg notoV11stPlaceMedalIcon></svg>`
+  imports: [NotoV1FaceWithOpenMouthIcon],
+  template: `<svg notoV1FaceWithOpenMouthIcon></svg>`,
 })
 export class UsageIcon {}
 ```

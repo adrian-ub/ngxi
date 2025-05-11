@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: OOUI
+- **Prefix**: `ooui`
+- **Icons**: 361
+- **License**: [MIT](https://github.com/wikimedia/oojs-ui/blob/master/LICENSE-MIT)
+- **Author**: [OOUI Team](https://github.com/wikimedia/oojs-ui)
+- **Website**: [https://github.com/wikimedia/oojs-ui](https://github.com/wikimedia/oojs-ui)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ooui
 
 ```ts
 import { Component } from '@angular/core'
-import { OouiAddIcon } from '@ngxi/ooui'
+import { OouiSearchIcon } from '@ngxi/ooui'
 
 @Component({
-  imports: [OouiAddIcon],
-  template: `<svg oouiAddIcon></svg>`
+  imports: [OouiSearchIcon],
+  template: `<svg oouiSearchIcon></svg>`,
 })
 export class UsageIcon {}
 ```

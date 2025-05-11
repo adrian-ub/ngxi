@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: IconaMoon
+- **Prefix**: `iconamoon`
+- **Icons**: 1781
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Dariush Habibpour](https://github.com/dariushhpg1/IconaMoon)
+- **Website**: [https://github.com/dariushhpg1/IconaMoon](https://github.com/dariushhpg1/IconaMoon)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/iconamoon
 
 ```ts
 import { Component } from '@angular/core'
-import { Iconamoon3dIcon } from '@ngxi/iconamoon'
+import { IconamoonShieldOffThinIcon } from '@ngxi/iconamoon'
 
 @Component({
-  imports: [Iconamoon3dIcon],
-  template: `<svg iconamoon3dIcon></svg>`
+  imports: [IconamoonShieldOffThinIcon],
+  template: `<svg iconamoonShieldOffThinIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Unicons
+- **Prefix**: `uil`
+- **Icons**: 1215
+- **License**: [Apache 2.0](https://github.com/Iconscout/unicons/blob/master/LICENSE)
+- **Author**: [Iconscout](https://github.com/Iconscout/unicons)
+- **Website**: [https://github.com/Iconscout/unicons](https://github.com/Iconscout/unicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/uil
 
 ```ts
 import { Component } from '@angular/core'
-import { Uil0PlusIcon } from '@ngxi/uil'
+import { UilArrowCircleRightIcon } from '@ngxi/uil'
 
 @Component({
-  imports: [Uil0PlusIcon],
-  template: `<svg uil0PlusIcon></svg>`
+  imports: [UilArrowCircleRightIcon],
+  template: `<svg uilArrowCircleRightIcon></svg>`,
 })
 export class UsageIcon {}
 ```

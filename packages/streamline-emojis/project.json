@@ -1,0 +1,38 @@
+{
+  "name": "streamline-emojis",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/streamline-emojis/src",
+  "prefix": "streamline-emojis",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/streamline-emojis/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/streamline-emojis/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/streamline-emojis/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

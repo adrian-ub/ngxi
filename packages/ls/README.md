@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Ligature Symbols
+- **Prefix**: `ls`
+- **Icons**: 348
+- **License**: [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+- **Author**: [Kazuyuki Motoyama](https://github.com/kudakurage/LigatureSymbols)
+- **Website**: [https://github.com/kudakurage/LigatureSymbols](https://github.com/kudakurage/LigatureSymbols)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ls
 
 ```ts
 import { Component } from '@angular/core'
-import { Ls0Icon } from '@ngxi/ls'
+import { LsBadIcon } from '@ngxi/ls'
 
 @Component({
-  imports: [Ls0Icon],
-  template: `<svg ls0Icon></svg>`
+  imports: [LsBadIcon],
+  template: `<svg lsBadIcon></svg>`,
 })
 export class UsageIcon {}
 ```

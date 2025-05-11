@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Jam Icons
+- **Prefix**: `jam`
+- **Icons**: 940
+- **License**: [MIT](https://github.com/cyberalien/jam-backup/blob/main/LICENSE)
+- **Author**: [Michael Amprimo](https://github.com/michaelampr)
+- **Website**: [https://github.com/michaelampr](https://github.com/michaelampr)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/jam
 
 ```ts
 import { Component } from '@angular/core'
-import { Jam500pxIcon } from '@ngxi/jam'
+import { JamChevronsSquareUpRightIcon } from '@ngxi/jam'
 
 @Component({
-  imports: [Jam500pxIcon],
-  template: `<svg jam500pxIcon></svg>`
+  imports: [JamChevronsSquareUpRightIcon],
+  template: `<svg jamChevronsSquareUpRightIcon></svg>`,
 })
 export class UsageIcon {}
 ```

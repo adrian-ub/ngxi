@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: BPMN
+- **Prefix**: `bpmn`
+- **Icons**: 112
+- **License**: [Open Font License](https://github.com/bpmn-io/bpmn-font/blob/master/LICENSE)
+- **Author**: [Camunda Services GmbH](https://github.com/bpmn-io/bpmn-font)
+- **Website**: [https://github.com/bpmn-io/bpmn-font](https://github.com/bpmn-io/bpmn-font)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,13 @@ npm install @ngxi/bpmn
 
 ```ts
 import { Component } from '@angular/core'
-import { BpmnAdHocMarkerIcon } from '@ngxi/bpmn'
+import { BpmnIntermediateEventCatchNonInterruptingEscalationIcon } from '@ngxi/bpmn'
 
 @Component({
-  imports: [BpmnAdHocMarkerIcon],
-  template: `<svg bpmnAdHocMarkerIcon></svg>`
+  imports: [BpmnIntermediateEventCatchNonInterruptingEscalationIcon],
+  template: `<svg
+    bpmnIntermediateEventCatchNonInterruptingEscalationIcon
+  ></svg>`,
 })
 export class UsageIcon {}
 ```

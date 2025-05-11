@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Pepicons
+- **Prefix**: `pepicons`
+- **Icons**: 428
+- **License**: [CC BY 4.0](https://github.com/CyCraft/pepicons/blob/dev/LICENSE)
+- **Author**: [CyCraft](https://github.com/CyCraft/pepicons)
+- **Website**: [https://github.com/CyCraft/pepicons](https://github.com/CyCraft/pepicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/pepicons
 
 ```ts
 import { Component } from '@angular/core'
-import { PepiconsAirplaneIcon } from '@ngxi/pepicons'
+import { PepiconsBookmarkPrintIcon } from '@ngxi/pepicons'
 
 @Component({
-  imports: [PepiconsAirplaneIcon],
-  template: `<svg pepiconsAirplaneIcon></svg>`
+  imports: [PepiconsBookmarkPrintIcon],
+  template: `<svg pepiconsBookmarkPrintIcon></svg>`,
 })
 export class UsageIcon {}
 ```

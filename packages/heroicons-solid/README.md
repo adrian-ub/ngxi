@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: HeroIcons v1 Solid
+- **Prefix**: `heroicons-solid`
+- **Icons**: 230
+- **License**: [MIT](https://github.com/tailwindlabs/heroicons/blob/master/LICENSE)
+- **Author**: [Refactoring UI Inc](https://github.com/tailwindlabs/heroicons)
+- **Website**: [https://github.com/tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/heroicons-solid
 
 ```ts
 import { Component } from '@angular/core'
-import { HeroiconsSolidAcademicCapIcon } from '@ngxi/heroicons-solid'
+import { HeroiconsSolidColorSwatchIcon } from '@ngxi/heroicons-solid'
 
 @Component({
-  imports: [HeroiconsSolidAcademicCapIcon],
-  template: `<svg heroiconsSolidAcademicCapIcon></svg>`
+  imports: [HeroiconsSolidColorSwatchIcon],
+  template: `<svg heroiconsSolidColorSwatchIcon></svg>`,
 })
 export class UsageIcon {}
 ```

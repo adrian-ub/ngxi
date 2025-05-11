@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Fluent UI System Color Icons
+- **Prefix**: `fluent-color`
+- **Icons**: 857
+- **License**: [MIT](https://github.com/microsoft/fluentui-system-icons/blob/main/LICENSE)
+- **Author**: [Microsoft Corporation](https://github.com/microsoft/fluentui-system-icons)
+- **Website**: [https://github.com/microsoft/fluentui-system-icons](https://github.com/microsoft/fluentui-system-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fluent-color
 
 ```ts
 import { Component } from '@angular/core'
-import { FluentColorAddCircle16Icon } from '@ngxi/fluent-color'
+import { FluentColorMic20Icon } from '@ngxi/fluent-color'
 
 @Component({
-  imports: [FluentColorAddCircle16Icon],
-  template: `<svg fluentColorAddCircle16Icon></svg>`
+  imports: [FluentColorMic20Icon],
+  template: `<svg fluentColorMic20Icon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Devicon
+- **Prefix**: `devicon`
+- **Icons**: 916
+- **License**: [MIT](https://github.com/devicons/devicon/blob/master/LICENSE)
+- **Author**: [konpa](https://github.com/devicons/devicon/tree/master)
+- **Website**: [https://github.com/devicons/devicon/tree/master](https://github.com/devicons/devicon/tree/master)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/devicon
 
 ```ts
 import { Component } from '@angular/core'
-import { DeviconAarch64Icon } from '@ngxi/devicon'
+import { DeviconWindows8Icon } from '@ngxi/devicon'
 
 @Component({
-  imports: [DeviconAarch64Icon],
-  template: `<svg deviconAarch64Icon></svg>`
+  imports: [DeviconWindows8Icon],
+  template: `<svg deviconWindows8Icon></svg>`,
 })
 export class UsageIcon {}
 ```

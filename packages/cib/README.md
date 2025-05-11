@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: CoreUI Brands
+- **Prefix**: `cib`
+- **Icons**: 830
+- **License**: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- **Author**: [creativeLabs Łukasz Holeczek](https://github.com/coreui/coreui-icons)
+- **Website**: [https://github.com/coreui/coreui-icons](https://github.com/coreui/coreui-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/cib
 
 ```ts
 import { Component } from '@angular/core'
-import { Cib500pxIcon } from '@ngxi/cib'
+import { CibCcAmazonPayIcon } from '@ngxi/cib'
 
 @Component({
-  imports: [Cib500pxIcon],
-  template: `<svg cib500pxIcon></svg>`
+  imports: [CibCcAmazonPayIcon],
+  template: `<svg cibCcAmazonPayIcon></svg>`,
 })
 export class UsageIcon {}
 ```

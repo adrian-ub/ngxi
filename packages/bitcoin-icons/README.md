@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Bitcoin Icons
+- **Prefix**: `bitcoin-icons`
+- **Icons**: 250
+- **License**: [MIT](https://github.com/BitcoinDesign/Bitcoin-Icons/blob/main/LICENSE-MIT)
+- **Author**: [Bitcoin Design Community](https://github.com/BitcoinDesign/Bitcoin-Icons)
+- **Website**: [https://github.com/BitcoinDesign/Bitcoin-Icons](https://github.com/BitcoinDesign/Bitcoin-Icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/bitcoin-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { BitcoinIconsAddressBookFilledIcon } from '@ngxi/bitcoin-icons'
+import { BitcoinIconsExchangeOutlineIcon } from '@ngxi/bitcoin-icons'
 
 @Component({
-  imports: [BitcoinIconsAddressBookFilledIcon],
-  template: `<svg bitcoinIconsAddressBookFilledIcon></svg>`
+  imports: [BitcoinIconsExchangeOutlineIcon],
+  template: `<svg bitcoinIconsExchangeOutlineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

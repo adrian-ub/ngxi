@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Phosphor
+- **Prefix**: `ph`
+- **Icons**: 9072
+- **License**: [MIT](https://github.com/phosphor-icons/core/blob/main/LICENSE)
+- **Author**: [Phosphor Icons](https://github.com/phosphor-icons/core)
+- **Website**: [https://github.com/phosphor-icons/core](https://github.com/phosphor-icons/core)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ph
 
 ```ts
 import { Component } from '@angular/core'
-import { PhAcornIcon } from '@ngxi/ph'
+import { PhFolderOpenDuotoneIcon } from '@ngxi/ph'
 
 @Component({
-  imports: [PhAcornIcon],
-  template: `<svg phAcornIcon></svg>`
+  imports: [PhFolderOpenDuotoneIcon],
+  template: `<svg phFolderOpenDuotoneIcon></svg>`,
 })
 export class UsageIcon {}
 ```

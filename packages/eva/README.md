@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Eva Icons
+- **Prefix**: `eva`
+- **Icons**: 490
+- **License**: [MIT](https://github.com/akveo/eva-icons/blob/master/LICENSE.txt)
+- **Author**: [Akveo](https://github.com/akveo/eva-icons/)
+- **Website**: [https://github.com/akveo/eva-icons/](https://github.com/akveo/eva-icons/)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/eva
 
 ```ts
 import { Component } from '@angular/core'
-import { EvaActivityFillIcon } from '@ngxi/eva'
+import { EvaDropletOffOutlineIcon } from '@ngxi/eva'
 
 @Component({
-  imports: [EvaActivityFillIcon],
-  template: `<svg evaActivityFillIcon></svg>`
+  imports: [EvaDropletOffOutlineIcon],
+  template: `<svg evaDropletOffOutlineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

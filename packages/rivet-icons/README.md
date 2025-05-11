@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Rivet Icons
+- **Prefix**: `rivet-icons`
+- **Icons**: 210
+- **License**: [BSD 3-Clause](https://github.com/indiana-university/rivet-icons/blob/develop/LICENSE)
+- **Author**: [Indiana University](https://github.com/indiana-university/rivet-icons)
+- **Website**: [https://github.com/indiana-university/rivet-icons](https://github.com/indiana-university/rivet-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/rivet-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { RivetIconsAlarmIcon } from '@ngxi/rivet-icons'
+import { RivetIconsLightningIcon } from '@ngxi/rivet-icons'
 
 @Component({
-  imports: [RivetIconsAlarmIcon],
-  template: `<svg rivetIconsAlarmIcon></svg>`
+  imports: [RivetIconsLightningIcon],
+  template: `<svg rivetIconsLightningIcon></svg>`,
 })
 export class UsageIcon {}
 ```

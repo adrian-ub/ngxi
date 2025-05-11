@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Google Material Icons
+- **Prefix**: `ic`
+- **Icons**: 10955
+- **License**: [Apache 2.0](https://github.com/material-icons/material-icons/blob/master/LICENSE)
+- **Author**: [Material Design Authors](https://github.com/material-icons/material-icons)
+- **Website**: [https://github.com/material-icons/material-icons](https://github.com/material-icons/material-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ic
 
 ```ts
 import { Component } from '@angular/core'
-import { IcBaseline10kIcon } from '@ngxi/ic'
+import { IcBaselineNotificationsActiveIcon } from '@ngxi/ic'
 
 @Component({
-  imports: [IcBaseline10kIcon],
-  template: `<svg icBaseline10kIcon></svg>`
+  imports: [IcBaselineNotificationsActiveIcon],
+  template: `<svg icBaselineNotificationsActiveIcon></svg>`,
 })
 export class UsageIcon {}
 ```

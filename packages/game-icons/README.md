@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Game Icons
+- **Prefix**: `game-icons`
+- **Icons**: 4123
+- **License**: [CC BY 3.0](https://github.com/game-icons/icons/blob/master/license.txt)
+- **Author**: [GameIcons](https://github.com/game-icons/icons)
+- **Website**: [https://github.com/game-icons/icons](https://github.com/game-icons/icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/game-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { GameIcons3dGlassesIcon } from '@ngxi/game-icons'
+import { GameIconsDiamondTrophyIcon } from '@ngxi/game-icons'
 
 @Component({
-  imports: [GameIcons3dGlassesIcon],
-  template: `<svg gameIcons3dGlassesIcon></svg>`
+  imports: [GameIconsDiamondTrophyIcon],
+  template: `<svg gameIconsDiamondTrophyIcon></svg>`,
 })
 export class UsageIcon {}
 ```

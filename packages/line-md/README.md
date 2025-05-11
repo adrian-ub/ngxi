@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Material Line Icons
+- **Prefix**: `line-md`
+- **Icons**: 1091
+- **License**: [MIT](https://github.com/cyberalien/line-md/blob/master/license.txt)
+- **Author**: [Vjacheslav Trushkin](https://github.com/cyberalien/line-md)
+- **Website**: [https://github.com/cyberalien/line-md](https://github.com/cyberalien/line-md)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/line-md
 
 ```ts
 import { Component } from '@angular/core'
-import { LineMdAccountIcon } from '@ngxi/line-md'
+import { LineMdLoadingTwotoneLoopIcon } from '@ngxi/line-md'
 
 @Component({
-  imports: [LineMdAccountIcon],
-  template: `<svg lineMdAccountIcon></svg>`
+  imports: [LineMdLoadingTwotoneLoopIcon],
+  template: `<svg lineMdLoadingTwotoneLoopIcon></svg>`,
 })
 export class UsageIcon {}
 ```

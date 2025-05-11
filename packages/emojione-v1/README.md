@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Emoji One (v1)
+- **Prefix**: `emojione-v1`
+- **Icons**: 1262
+- **License**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Author**: [Emoji One](https://github.com/joypixels/emojione-legacy)
+- **Website**: [https://github.com/joypixels/emojione-legacy](https://github.com/joypixels/emojione-legacy)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/emojione-v1
 
 ```ts
 import { Component } from '@angular/core'
-import { EmojioneV1AButtonIcon } from '@ngxi/emojione-v1'
+import { EmojioneV1FaceSavoringFoodIcon } from '@ngxi/emojione-v1'
 
 @Component({
-  imports: [EmojioneV1AButtonIcon],
-  template: `<svg emojioneV1AButtonIcon></svg>`
+  imports: [EmojioneV1FaceSavoringFoodIcon],
+  template: `<svg emojioneV1FaceSavoringFoodIcon></svg>`,
 })
 export class UsageIcon {}
 ```

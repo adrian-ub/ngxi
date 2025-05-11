@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: TopCoat Icons
+- **Prefix**: `topcoat`
+- **Icons**: 89
+- **License**: [Apache 2.0](https://github.com/topcoat/icons/blob/master/LICENSE)
+- **Author**: [TopCoat](https://github.com/topcoat/icons)
+- **Website**: [https://github.com/topcoat/icons](https://github.com/topcoat/icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/topcoat
 
 ```ts
 import { Component } from '@angular/core'
-import { TopcoatAlertIcon } from '@ngxi/topcoat'
+import { TopcoatWifiIcon } from '@ngxi/topcoat'
 
 @Component({
-  imports: [TopcoatAlertIcon],
-  template: `<svg topcoatAlertIcon></svg>`
+  imports: [TopcoatWifiIcon],
+  template: `<svg topcoatWifiIcon></svg>`,
 })
 export class UsageIcon {}
 ```

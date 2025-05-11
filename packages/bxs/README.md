@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: BoxIcons Solid
+- **Prefix**: `bxs`
+- **Icons**: 665
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Atisa](https://github.com/atisawd/boxicons)
+- **Website**: [https://github.com/atisawd/boxicons](https://github.com/atisawd/boxicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/bxs
 
 ```ts
 import { Component } from '@angular/core'
-import { BxsAddToQueueIcon } from '@ngxi/bxs'
+import { BxsEditAltIcon } from '@ngxi/bxs'
 
 @Component({
-  imports: [BxsAddToQueueIcon],
-  template: `<svg bxsAddToQueueIcon></svg>`
+  imports: [BxsEditAltIcon],
+  template: `<svg bxsEditAltIcon></svg>`,
 })
 export class UsageIcon {}
 ```

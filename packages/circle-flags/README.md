@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Circle Flags
+- **Prefix**: `circle-flags`
+- **Icons**: 632
+- **License**: [MIT](https://github.com/HatScripts/circle-flags/blob/gh-pages/LICENSE)
+- **Author**: [HatScripts](https://github.com/HatScripts/circle-flags)
+- **Website**: [https://github.com/HatScripts/circle-flags](https://github.com/HatScripts/circle-flags)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/circle-flags
 
 ```ts
 import { Component } from '@angular/core'
-import { CircleFlagsAaIcon } from '@ngxi/circle-flags'
+import { CircleFlagsEeIcon } from '@ngxi/circle-flags'
 
 @Component({
-  imports: [CircleFlagsAaIcon],
-  template: `<svg circleFlagsAaIcon></svg>`
+  imports: [CircleFlagsEeIcon],
+  template: `<svg circleFlagsEeIcon></svg>`,
 })
 export class UsageIcon {}
 ```

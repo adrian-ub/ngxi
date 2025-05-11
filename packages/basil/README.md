@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Basil
+- **Prefix**: `basil`
+- **Icons**: 493
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Craftwork](https://www.figma.com/community/file/931906394678748246)
+- **Website**: [https://www.figma.com/community/file/931906394678748246](https://www.figma.com/community/file/931906394678748246)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/basil
 
 ```ts
 import { Component } from '@angular/core'
-import { BasilAddOutlineIcon } from '@ngxi/basil'
+import { BasilCommentSolidIcon } from '@ngxi/basil'
 
 @Component({
-  imports: [BasilAddOutlineIcon],
-  template: `<svg basilAddOutlineIcon></svg>`
+  imports: [BasilCommentSolidIcon],
+  template: `<svg basilCommentSolidIcon></svg>`,
 })
 export class UsageIcon {}
 ```

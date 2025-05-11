@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: BoxIcons Logo
+- **Prefix**: `bxl`
+- **Icons**: 155
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Atisa](https://github.com/atisawd/boxicons)
+- **Website**: [https://github.com/atisawd/boxicons](https://github.com/atisawd/boxicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/bxl
 
 ```ts
 import { Component } from '@angular/core'
-import { Bxl500pxIcon } from '@ngxi/bxl'
+import { BxlPatreonIcon } from '@ngxi/bxl'
 
 @Component({
-  imports: [Bxl500pxIcon],
-  template: `<svg bxl500pxIcon></svg>`
+  imports: [BxlPatreonIcon],
+  template: `<svg bxlPatreonIcon></svg>`,
 })
 export class UsageIcon {}
 ```

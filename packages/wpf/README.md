@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Icons8 Windows 8 Icons
+- **Prefix**: `wpf`
+- **Icons**: 200
+- **License**: [MIT]()
+- **Author**: [Icons8](https://github.com/icons8/WPF-UI-Framework)
+- **Website**: [https://github.com/icons8/WPF-UI-Framework](https://github.com/icons8/WPF-UI-Framework)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/wpf
 
 ```ts
 import { Component } from '@angular/core'
-import { Wpf2fSwipeDownIcon } from '@ngxi/wpf'
+import { WpfCheckFileIcon } from '@ngxi/wpf'
 
 @Component({
-  imports: [Wpf2fSwipeDownIcon],
-  template: `<svg wpf2fSwipeDownIcon></svg>`
+  imports: [WpfCheckFileIcon],
+  template: `<svg wpfCheckFileIcon></svg>`,
 })
 export class UsageIcon {}
 ```

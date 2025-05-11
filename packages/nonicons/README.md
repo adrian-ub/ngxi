@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Nonicons
+- **Prefix**: `nonicons`
+- **Icons**: 69
+- **License**: [MIT](https://github.com/yamatsum/nonicons/blob/master/LICENSE)
+- **Author**: [yamatsum](https://github.com/yamatsum/nonicons)
+- **Website**: [https://github.com/yamatsum/nonicons](https://github.com/yamatsum/nonicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/nonicons
 
 ```ts
 import { Component } from '@angular/core'
-import { NoniconsAngular16Icon } from '@ngxi/nonicons'
+import { NoniconsKotlin16Icon } from '@ngxi/nonicons'
 
 @Component({
-  imports: [NoniconsAngular16Icon],
-  template: `<svg noniconsAngular16Icon></svg>`
+  imports: [NoniconsKotlin16Icon],
+  template: `<svg noniconsKotlin16Icon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: coolicons
+- **Prefix**: `ci`
+- **Icons**: 442
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Kryston Schwarze](https://github.com/krystonschwarze/coolicons)
+- **Website**: [https://github.com/krystonschwarze/coolicons](https://github.com/krystonschwarze/coolicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ci
 
 ```ts
 import { Component } from '@angular/core'
-import { CiAddColumnIcon } from '@ngxi/ci'
+import { CiBulbIcon } from '@ngxi/ci'
 
 @Component({
-  imports: [CiAddColumnIcon],
-  template: `<svg ciAddColumnIcon></svg>`
+  imports: [CiBulbIcon],
+  template: `<svg ciBulbIcon></svg>`,
 })
 export class UsageIcon {}
 ```

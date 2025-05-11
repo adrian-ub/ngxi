@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Open Iconic
+- **Prefix**: `oi`
+- **Icons**: 223
+- **License**: [MIT](https://github.com/iconic/open-iconic/blob/master/ICON-LICENSE)
+- **Author**: [Iconic](https://github.com/iconic/open-iconic)
+- **Website**: [https://github.com/iconic/open-iconic](https://github.com/iconic/open-iconic)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/oi
 
 ```ts
 import { Component } from '@angular/core'
-import { OiAccountLoginIcon } from '@ngxi/oi'
+import { OiBugIcon } from '@ngxi/oi'
 
 @Component({
-  imports: [OiAccountLoginIcon],
-  template: `<svg oiAccountLoginIcon></svg>`
+  imports: [OiBugIcon],
+  template: `<svg oiBugIcon></svg>`,
 })
 export class UsageIcon {}
 ```

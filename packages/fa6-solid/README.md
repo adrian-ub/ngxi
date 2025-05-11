@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Font Awesome Solid
+- **Prefix**: `fa6-solid`
+- **Icons**: 1402
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Dave Gandy](https://github.com/FortAwesome/Font-Awesome)
+- **Website**: [https://github.com/FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fa6-solid
 
 ```ts
 import { Component } from '@angular/core'
-import { Fa6Solid0Icon } from '@ngxi/fa6-solid'
+import { Fa6SolidLocationPinIcon } from '@ngxi/fa6-solid'
 
 @Component({
-  imports: [Fa6Solid0Icon],
-  template: `<svg fa6Solid0Icon></svg>`
+  imports: [Fa6SolidLocationPinIcon],
+  template: `<svg fa6SolidLocationPinIcon></svg>`,
 })
 export class UsageIcon {}
 ```

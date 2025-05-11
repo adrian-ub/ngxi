@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Flowbite Icons
+- **Prefix**: `flowbite`
+- **Icons**: 751
+- **License**: [MIT](https://github.com/themesberg/flowbite-icons/blob/main/LICENSE)
+- **Author**: [Themesberg](https://github.com/themesberg/flowbite-icons)
+- **Website**: [https://github.com/themesberg/flowbite-icons](https://github.com/themesberg/flowbite-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/flowbite
 
 ```ts
 import { Component } from '@angular/core'
-import { FlowbiteAddColumnAfterOutlineIcon } from '@ngxi/flowbite'
+import { FlowbiteUserOutlineIcon } from '@ngxi/flowbite'
 
 @Component({
-  imports: [FlowbiteAddColumnAfterOutlineIcon],
-  template: `<svg flowbiteAddColumnAfterOutlineIcon></svg>`
+  imports: [FlowbiteUserOutlineIcon],
+  template: `<svg flowbiteUserOutlineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

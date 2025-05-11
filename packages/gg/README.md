@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: css.gg
+- **Prefix**: `gg`
+- **Icons**: 704
+- **License**: [MIT](https://github.com/astrit/css.gg/blob/master/LICENSE)
+- **Author**: [Astrit](https://github.com/astrit/css.gg)
+- **Website**: [https://github.com/astrit/css.gg](https://github.com/astrit/css.gg)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/gg
 
 ```ts
 import { Component } from '@angular/core'
-import { GgAbstractIcon } from '@ngxi/gg'
+import { GgAlignLeftIcon } from '@ngxi/gg'
 
 @Component({
-  imports: [GgAbstractIcon],
-  template: `<svg ggAbstractIcon></svg>`
+  imports: [GgAlignLeftIcon],
+  template: `<svg ggAlignLeftIcon></svg>`,
 })
 export class UsageIcon {}
 ```

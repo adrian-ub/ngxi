@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Fontisto
+- **Prefix**: `fontisto`
+- **Icons**: 615
+- **License**: [MIT](https://github.com/kenangundogan/fontisto/blob/master/LICENSE)
+- **Author**: [Kenan Gündoğan](https://github.com/kenangundogan/fontisto)
+- **Website**: [https://github.com/kenangundogan/fontisto](https://github.com/kenangundogan/fontisto)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fontisto
 
 ```ts
 import { Component } from '@angular/core'
-import { Fontisto500pxIcon } from '@ngxi/fontisto'
+import { FontistoPrescriptionIcon } from '@ngxi/fontisto'
 
 @Component({
-  imports: [Fontisto500pxIcon],
-  template: `<svg fontisto500pxIcon></svg>`
+  imports: [FontistoPrescriptionIcon],
+  template: `<svg fontistoPrescriptionIcon></svg>`,
 })
 export class UsageIcon {}
 ```

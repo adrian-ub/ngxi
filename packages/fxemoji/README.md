@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Firefox OS Emoji
+- **Prefix**: `fxemoji`
+- **Icons**: 1034
+- **License**: [Apache 2.0](https://mozilla.github.io/fxemoji/LICENSE.md)
+- **Author**: [Mozilla](https://github.com/mozilla/fxemoji)
+- **Website**: [https://github.com/mozilla/fxemoji](https://github.com/mozilla/fxemoji)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fxemoji
 
 ```ts
 import { Component } from '@angular/core'
-import { Fxemoji2heartsIcon } from '@ngxi/fxemoji'
+import { FxemojiFoxwearyIcon } from '@ngxi/fxemoji'
 
 @Component({
-  imports: [Fxemoji2heartsIcon],
-  template: `<svg fxemoji2heartsIcon></svg>`
+  imports: [FxemojiFoxwearyIcon],
+  template: `<svg fxemojiFoxwearyIcon></svg>`,
 })
 export class UsageIcon {}
 ```

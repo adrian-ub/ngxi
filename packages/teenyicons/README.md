@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Teenyicons
+- **Prefix**: `teenyicons`
+- **Icons**: 1200
+- **License**: [MIT](https://github.com/teenyicons/teenyicons/blob/master/LICENSE)
+- **Author**: [smhmd](https://github.com/teenyicons/teenyicons)
+- **Website**: [https://github.com/teenyicons/teenyicons](https://github.com/teenyicons/teenyicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/teenyicons
 
 ```ts
 import { Component } from '@angular/core'
-import { Teenyicons360OutlineIcon } from '@ngxi/teenyicons'
+import { TeenyiconsFaceIdSolidIcon } from '@ngxi/teenyicons'
 
 @Component({
-  imports: [Teenyicons360OutlineIcon],
-  template: `<svg teenyicons360OutlineIcon></svg>`
+  imports: [TeenyiconsFaceIdSolidIcon],
+  template: `<svg teenyiconsFaceIdSolidIcon></svg>`,
 })
 export class UsageIcon {}
 ```

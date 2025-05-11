@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Fluent Emoji
+- **Prefix**: `fluent-emoji`
+- **Icons**: 3126
+- **License**: [MIT](https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE)
+- **Author**: [Microsoft Corporation](https://github.com/microsoft/fluentui-emoji)
+- **Website**: [https://github.com/microsoft/fluentui-emoji](https://github.com/microsoft/fluentui-emoji)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fluent-emoji
 
 ```ts
 import { Component } from '@angular/core'
-import { FluentEmoji1stPlaceMedalIcon } from '@ngxi/fluent-emoji'
+import { FluentEmojiAvocadoIcon } from '@ngxi/fluent-emoji'
 
 @Component({
-  imports: [FluentEmoji1stPlaceMedalIcon],
-  template: `<svg fluentEmoji1stPlaceMedalIcon></svg>`
+  imports: [FluentEmojiAvocadoIcon],
+  template: `<svg fluentEmojiAvocadoIcon></svg>`,
 })
 export class UsageIcon {}
 ```

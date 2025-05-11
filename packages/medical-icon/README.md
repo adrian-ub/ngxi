@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Medical Icons
+- **Prefix**: `medical-icon`
+- **Icons**: 144
+- **License**: [MIT](https://github.com/samcome/webfont-medical-icons/blob/master/LICENSE)
+- **Author**: [Samuel Frémondière](https://github.com/samcome/webfont-medical-icons)
+- **Website**: [https://github.com/samcome/webfont-medical-icons](https://github.com/samcome/webfont-medical-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/medical-icon
 
 ```ts
 import { Component } from '@angular/core'
-import { MedicalIconAccessibilityIcon } from '@ngxi/medical-icon'
+import { MedicalIconICareStaffAreaIcon } from '@ngxi/medical-icon'
 
 @Component({
-  imports: [MedicalIconAccessibilityIcon],
-  template: `<svg medicalIconAccessibilityIcon></svg>`
+  imports: [MedicalIconICareStaffAreaIcon],
+  template: `<svg medicalIconICareStaffAreaIcon></svg>`,
 })
 export class UsageIcon {}
 ```

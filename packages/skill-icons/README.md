@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Skill Icons
+- **Prefix**: `skill-icons`
+- **Icons**: 397
+- **License**: [MIT](https://github.com/tandpfun/skill-icons/blob/main/LICENSE)
+- **Author**: [tandpfun](https://github.com/tandpfun/skill-icons)
+- **Website**: [https://github.com/tandpfun/skill-icons](https://github.com/tandpfun/skill-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/skill-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { SkillIconsAbletonDarkIcon } from '@ngxi/skill-icons'
+import { SkillIconsMarkdownLightIcon } from '@ngxi/skill-icons'
 
 @Component({
-  imports: [SkillIconsAbletonDarkIcon],
-  template: `<svg skillIconsAbletonDarkIcon></svg>`
+  imports: [SkillIconsMarkdownLightIcon],
+  template: `<svg skillIconsMarkdownLightIcon></svg>`,
 })
 export class UsageIcon {}
 ```

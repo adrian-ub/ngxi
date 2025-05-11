@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Feather Icon
+- **Prefix**: `fe`
+- **Icons**: 255
+- **License**: [MIT](https://github.com/feathericon/feathericon/blob/master/LICENSE)
+- **Author**: [Megumi Hano](https://github.com/feathericon/feathericon)
+- **Website**: [https://github.com/feathericon/feathericon](https://github.com/feathericon/feathericon)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fe
 
 ```ts
 import { Component } from '@angular/core'
-import { FeActivityIcon } from '@ngxi/fe'
+import { FeAddCartIcon } from '@ngxi/fe'
 
 @Component({
-  imports: [FeActivityIcon],
-  template: `<svg feActivityIcon></svg>`
+  imports: [FeAddCartIcon],
+  template: `<svg feAddCartIcon></svg>`,
 })
 export class UsageIcon {}
 ```

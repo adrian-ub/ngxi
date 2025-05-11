@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Simple line icons
+- **Prefix**: `simple-line-icons`
+- **Icons**: 189
+- **License**: [MIT](https://github.com/thesabbir/simple-line-icons/blob/master/LICENSE.md)
+- **Author**: [Sabbir Ahmed](https://github.com/thesabbir/simple-line-icons)
+- **Website**: [https://github.com/thesabbir/simple-line-icons](https://github.com/thesabbir/simple-line-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/simple-line-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { SimpleLineIconsActionRedoIcon } from '@ngxi/simple-line-icons'
+import { SimpleLineIconsBubblesIcon } from '@ngxi/simple-line-icons'
 
 @Component({
-  imports: [SimpleLineIconsActionRedoIcon],
-  template: `<svg simpleLineIconsActionRedoIcon></svg>`
+  imports: [SimpleLineIconsBubblesIcon],
+  template: `<svg simpleLineIconsBubblesIcon></svg>`,
 })
 export class UsageIcon {}
 ```

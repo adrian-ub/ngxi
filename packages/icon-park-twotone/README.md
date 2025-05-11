@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: IconPark TwoTone
+- **Prefix**: `icon-park-twotone`
+- **Icons**: 1944
+- **License**: [Apache 2.0](https://github.com/bytedance/IconPark/blob/master/LICENSE)
+- **Author**: [ByteDance](https://github.com/bytedance/IconPark)
+- **Website**: [https://github.com/bytedance/IconPark](https://github.com/bytedance/IconPark)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/icon-park-twotone
 
 ```ts
 import { Component } from '@angular/core'
-import { IconParkTwotoneAbnormalIcon } from '@ngxi/icon-park-twotone'
+import { IconParkTwotoneAddOneIcon } from '@ngxi/icon-park-twotone'
 
 @Component({
-  imports: [IconParkTwotoneAbnormalIcon],
-  template: `<svg iconParkTwotoneAbnormalIcon></svg>`
+  imports: [IconParkTwotoneAddOneIcon],
+  template: `<svg iconParkTwotoneAddOneIcon></svg>`,
 })
 export class UsageIcon {}
 ```

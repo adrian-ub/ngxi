@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Flat Color Icons
+- **Prefix**: `flat-color-icons`
+- **Icons**: 329
+- **License**: [MIT]()
+- **Author**: [Icons8](https://github.com/icons8/flat-Color-icons)
+- **Website**: [https://github.com/icons8/flat-Color-icons](https://github.com/icons8/flat-Color-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/flat-color-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { FlatColorIconsAboutIcon } from '@ngxi/flat-color-icons'
+import { FlatColorIconsEditImageIcon } from '@ngxi/flat-color-icons'
 
 @Component({
-  imports: [FlatColorIconsAboutIcon],
-  template: `<svg flatColorIconsAboutIcon></svg>`
+  imports: [FlatColorIconsEditImageIcon],
+  template: `<svg flatColorIconsEditImageIcon></svg>`,
 })
 export class UsageIcon {}
 ```

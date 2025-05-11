@@ -1,0 +1,28 @@
+{
+  "name": "@ngxi/source",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "targets": {
+    "local-registry": {
+      "executor": "@nx/js:verdaccio",
+      "options": {
+        "port": 4873,
+        "config": ".verdaccio/config.yml",
+        "storage": "tmp/local-registry/storage"
+      }
+    },
+    "update-icons": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "pnpm install -D @iconify/json@latest",
+          "pnpm exec nx g @ngxi/scripts:update-icon-sets",
+          "pnpm exec nx g @ngxi/scripts:collections-to-libraries",
+          "pnpm exec nx g @ngxi/scripts:svg-to-ts",
+          "NX_DAEMON=false pnpm exec nx g @ngxi/scripts:update-readme",
+          "pnpm install"
+        ],
+        "parallel": false
+      }
+    }
+  }
+}

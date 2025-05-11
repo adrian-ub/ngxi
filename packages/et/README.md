@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Elegant
+- **Prefix**: `et`
+- **Icons**: 100
+- **License**: [GPL 3.0](https://www.gnu.org/licenses/gpl.html)
+- **Author**: [Kenny Sing](https://github.com/pprince/etlinefont-bower)
+- **Website**: [https://github.com/pprince/etlinefont-bower](https://github.com/pprince/etlinefont-bower)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/et
 
 ```ts
 import { Component } from '@angular/core'
-import { EtAdjustmentsIcon } from '@ngxi/et'
+import { EtProfileFemaleIcon } from '@ngxi/et'
 
 @Component({
-  imports: [EtAdjustmentsIcon],
-  template: `<svg etAdjustmentsIcon></svg>`
+  imports: [EtProfileFemaleIcon],
+  template: `<svg etProfileFemaleIcon></svg>`,
 })
 export class UsageIcon {}
 ```

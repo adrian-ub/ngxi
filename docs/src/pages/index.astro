@@ -1,0 +1,16 @@
+---
+import Root from '../layouts/Root.astro'
+import WithNavbar from '../components/WithNavbar.astro'
+import SearchBar from '../components/SearchBar.astro'
+---
+
+<Root>
+  <WithNavbar>
+    <div of-hidden grid="~ rows-[max-content_1fr]">
+      <div md:mx-6 md:mt-6>
+        <SearchBar placeholder="Search category..." />
+      </div>
+      <div of-y-auto></div>
+    </div>
+  </WithNavbar>
+</Root>

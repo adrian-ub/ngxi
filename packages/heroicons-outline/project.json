@@ -1,0 +1,38 @@
+{
+  "name": "heroicons-outline",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/heroicons-outline/src",
+  "prefix": "heroicons-outline",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/heroicons-outline/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/heroicons-outline/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/heroicons-outline/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

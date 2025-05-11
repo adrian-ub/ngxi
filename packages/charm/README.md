@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Charm Icons
+- **Prefix**: `charm`
+- **Icons**: 261
+- **License**: [MIT](https://github.com/jaynewey/charm-icons/blob/main/LICENSE)
+- **Author**: [Jay Newey](https://github.com/jaynewey/charm-icons)
+- **Website**: [https://github.com/jaynewey/charm-icons](https://github.com/jaynewey/charm-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/charm
 
 ```ts
 import { Component } from '@angular/core'
-import { CharmAnchorIcon } from '@ngxi/charm'
+import { CharmChartLineIcon } from '@ngxi/charm'
 
 @Component({
-  imports: [CharmAnchorIcon],
-  template: `<svg charmAnchorIcon></svg>`
+  imports: [CharmChartLineIcon],
+  template: `<svg charmChartLineIcon></svg>`,
 })
 export class UsageIcon {}
 ```

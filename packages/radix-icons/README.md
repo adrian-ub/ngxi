@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Radix Icons
+- **Prefix**: `radix-icons`
+- **Icons**: 318
+- **License**: [MIT](https://github.com/radix-ui/icons/blob/master/LICENSE)
+- **Author**: [WorkOS](https://github.com/radix-ui/icons)
+- **Website**: [https://github.com/radix-ui/icons](https://github.com/radix-ui/icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/radix-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { RadixIconsAccessibilityIcon } from '@ngxi/radix-icons'
+import { RadixIconsWidthIcon } from '@ngxi/radix-icons'
 
 @Component({
-  imports: [RadixIconsAccessibilityIcon],
-  template: `<svg radixIconsAccessibilityIcon></svg>`
+  imports: [RadixIconsWidthIcon],
+  template: `<svg radixIconsWidthIcon></svg>`,
 })
 export class UsageIcon {}
 ```

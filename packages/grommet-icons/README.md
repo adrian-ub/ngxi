@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Grommet Icons
+- **Prefix**: `grommet-icons`
+- **Icons**: 634
+- **License**: [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+- **Author**: [Grommet](https://github.com/grommet/grommet-icons)
+- **Website**: [https://github.com/grommet/grommet-icons](https://github.com/grommet/grommet-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/grommet-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { GrommetIconsAccessibilityIcon } from '@ngxi/grommet-icons'
+import { GrommetIconsUserExpertIcon } from '@ngxi/grommet-icons'
 
 @Component({
-  imports: [GrommetIconsAccessibilityIcon],
-  template: `<svg grommetIconsAccessibilityIcon></svg>`
+  imports: [GrommetIconsUserExpertIcon],
+  template: `<svg grommetIconsUserExpertIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Flagpack
+- **Prefix**: `flagpack`
+- **Icons**: 255
+- **License**: [MIT](https://github.com/Yummygum/flagpack-core/blob/main/LICENSE)
+- **Author**: [Yummygum](https://github.com/Yummygum/flagpack-core)
+- **Website**: [https://github.com/Yummygum/flagpack-core](https://github.com/Yummygum/flagpack-core)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/flagpack
 
 ```ts
 import { Component } from '@angular/core'
-import { FlagpackAdIcon } from '@ngxi/flagpack'
+import { FlagpackCiIcon } from '@ngxi/flagpack'
 
 @Component({
-  imports: [FlagpackAdIcon],
-  template: `<svg flagpackAdIcon></svg>`
+  imports: [FlagpackCiIcon],
+  template: `<svg flagpackCiIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Vesper Icons
+- **Prefix**: `vs`
+- **Icons**: 159
+- **License**: [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+- **Author**: [TableCheck](https://github.com/kkvesper/vesper-icons)
+- **Website**: [https://github.com/kkvesper/vesper-icons](https://github.com/kkvesper/vesper-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/vs
 
 ```ts
 import { Component } from '@angular/core'
-import { Vs0SquareIcon } from '@ngxi/vs'
+import { VsEditPageIcon } from '@ngxi/vs'
 
 @Component({
-  imports: [Vs0SquareIcon],
-  template: `<svg vs0SquareIcon></svg>`
+  imports: [VsEditPageIcon],
+  template: `<svg vsEditPageIcon></svg>`,
 })
 export class UsageIcon {}
 ```

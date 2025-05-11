@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Line Awesome
+- **Prefix**: `la`
+- **Icons**: 1544
+- **License**: [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+- **Author**: [Icons8](https://github.com/icons8/line-awesome)
+- **Website**: [https://github.com/icons8/line-awesome](https://github.com/icons8/line-awesome)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/la
 
 ```ts
 import { Component } from '@angular/core'
-import { La500pxIcon } from '@ngxi/la'
+import { LaArchiveSolidIcon } from '@ngxi/la'
 
 @Component({
-  imports: [La500pxIcon],
-  template: `<svg la500pxIcon></svg>`
+  imports: [LaArchiveSolidIcon],
+  template: `<svg laArchiveSolidIcon></svg>`,
 })
 export class UsageIcon {}
 ```

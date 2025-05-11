@@ -1,0 +1,38 @@
+{
+  "name": "icon-park-outline",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/icon-park-outline/src",
+  "prefix": "icon-park-outline",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/icon-park-outline/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/icon-park-outline/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/icon-park-outline/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "fluent-mdl2",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/fluent-mdl2/src",
+  "prefix": "fluent-mdl2",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/fluent-mdl2/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/fluent-mdl2/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/fluent-mdl2/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

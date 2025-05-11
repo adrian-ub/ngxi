@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Flag Icons
+- **Prefix**: `flag`
+- **Icons**: 542
+- **License**: [MIT](https://github.com/lipis/flag-icons/blob/main/LICENSE)
+- **Author**: [Panayiotis Lipiridis](https://github.com/lipis/flag-icons)
+- **Website**: [https://github.com/lipis/flag-icons](https://github.com/lipis/flag-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/flag
 
 ```ts
 import { Component } from '@angular/core'
-import { FlagAd1x1Icon } from '@ngxi/flag'
+import { FlagFr1x1Icon } from '@ngxi/flag'
 
 @Component({
-  imports: [FlagAd1x1Icon],
-  template: `<svg flagAd1x1Icon></svg>`
+  imports: [FlagFr1x1Icon],
+  template: `<svg flagFr1x1Icon></svg>`,
 })
 export class UsageIcon {}
 ```

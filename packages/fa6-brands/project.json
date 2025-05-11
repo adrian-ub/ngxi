@@ -1,0 +1,38 @@
+{
+  "name": "fa6-brands",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/fa6-brands/src",
+  "prefix": "fa6-brands",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/fa6-brands/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/fa6-brands/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/fa6-brands/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

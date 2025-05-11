@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: File Icons
+- **Prefix**: `file-icons`
+- **Icons**: 930
+- **License**: [ISC](https://github.com/file-icons/icons/blob/master/LICENSE.md)
+- **Author**: [John Gardner](https://github.com/file-icons/icons)
+- **Website**: [https://github.com/file-icons/icons](https://github.com/file-icons/icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/file-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { FileIcons1cIcon } from '@ngxi/file-icons'
+import { FileIconsAdobeIcon } from '@ngxi/file-icons'
 
 @Component({
-  imports: [FileIcons1cIcon],
-  template: `<svg fileIcons1cIcon></svg>`
+  imports: [FileIconsAdobeIcon],
+  template: `<svg fileIconsAdobeIcon></svg>`,
 })
 export class UsageIcon {}
 ```

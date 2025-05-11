@@ -1,0 +1,54 @@
+---
+import DarkSwitcher from './DarkSwitcher.astro'
+
+const isHomePage = Astro.url.pathname === '/'
+const showNav = !Astro.url.pathname.startsWith('/collection')
+---
+
+<nav
+  class={`dragging ${showNav ? '' : 'md:hidden'}`}
+  flex="~ gap4 none"
+  p4
+  relative
+  bg-base
+  z-10
+  border="b base"
+  text-xl
+>
+  {!isHomePage && <a class="non-dragging" icon-button flex-none i-carbon:arrow-left href="/" />}
+  {
+    showNav && (
+      <>
+        <div flex-auto />
+        <h1
+          absolute
+          top-0
+          left-0
+          right-0
+          bottom-0
+          flex
+          items-center
+          justify-center
+          text-xl
+          font-light
+          tracking-2px
+          pointer-events-none
+        >
+          Ngxi
+        </h1>
+
+        <a
+          class="non-dragging"
+          i-carbon-logo-github
+          icon-button
+          flex-none
+          href="https://github.com/adrian-ub/ngxi"
+          target="_blank"
+          title="GitHub"
+        />
+        <a class="non-dragging" i-carbon-settings icon-button flex-none href="/settings" title="Settings" />
+        <DarkSwitcher />
+      </>
+    )
+  }
+</nav>

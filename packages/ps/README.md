@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: PrestaShop Icons
+- **Prefix**: `ps`
+- **Icons**: 479
+- **License**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+- **Author**: [PrestaShop](https://github.com/PrestaShop/prestashop-icon-font)
+- **Website**: [https://github.com/PrestaShop/prestashop-icon-font](https://github.com/PrestaShop/prestashop-icon-font)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ps
 
 ```ts
 import { Component } from '@angular/core'
-import { Ps3080Icon } from '@ngxi/ps'
+import { PsBellIcon } from '@ngxi/ps'
 
 @Component({
-  imports: [Ps3080Icon],
-  template: `<svg ps3080Icon></svg>`
+  imports: [PsBellIcon],
+  template: `<svg psBellIcon></svg>`,
 })
 export class UsageIcon {}
 ```

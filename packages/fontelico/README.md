@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Fontelico
+- **Prefix**: `fontelico`
+- **Icons**: 34
+- **License**: [CC BY SA](https://creativecommons.org/licenses/by-sa/3.0/)
+- **Author**: [Fontello](https://github.com/fontello/fontelico.font)
+- **Website**: [https://github.com/fontello/fontelico.font](https://github.com/fontello/fontelico.font)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fontelico
 
 ```ts
 import { Component } from '@angular/core'
-import { FontelicoChromeIcon } from '@ngxi/fontelico'
+import { FontelicoSpin5Icon } from '@ngxi/fontelico'
 
 @Component({
-  imports: [FontelicoChromeIcon],
-  template: `<svg fontelicoChromeIcon></svg>`
+  imports: [FontelicoSpin5Icon],
+  template: `<svg fontelicoSpin5Icon></svg>`,
 })
 export class UsageIcon {}
 ```

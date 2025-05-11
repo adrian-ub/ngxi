@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Font Awesome 4
+- **Prefix**: `fa`
+- **Icons**: 678
+- **License**: [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+- **Author**: [Dave Gandy](https://github.com/FortAwesome/Font-Awesome/tree/fa-4)
+- **Website**: [https://github.com/FortAwesome/Font-Awesome/tree/fa-4](https://github.com/FortAwesome/Font-Awesome/tree/fa-4)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fa
 
 ```ts
 import { Component } from '@angular/core'
-import { Fa500pxIcon } from '@ngxi/fa'
+import { FaWrenchIcon } from '@ngxi/fa'
 
 @Component({
-  imports: [Fa500pxIcon],
-  template: `<svg fa500pxIcon></svg>`
+  imports: [FaWrenchIcon],
+  template: `<svg faWrenchIcon></svg>`,
 })
 export class UsageIcon {}
 ```

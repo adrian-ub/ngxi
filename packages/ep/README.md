@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Element Plus
+- **Prefix**: `ep`
+- **Icons**: 293
+- **License**: [MIT](https://github.com/element-plus/element-plus-icons/blob/main/packages/svg/package.json)
+- **Author**: [Element Plus](https://github.com/element-plus/element-plus-icons)
+- **Website**: [https://github.com/element-plus/element-plus-icons](https://github.com/element-plus/element-plus-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/ep
 
 ```ts
 import { Component } from '@angular/core'
-import { EpAddLocationIcon } from '@ngxi/ep'
+import { EpHomeFilledIcon } from '@ngxi/ep'
 
 @Component({
-  imports: [EpAddLocationIcon],
-  template: `<svg epAddLocationIcon></svg>`
+  imports: [EpHomeFilledIcon],
+  template: `<svg epHomeFilledIcon></svg>`,
 })
 export class UsageIcon {}
 ```

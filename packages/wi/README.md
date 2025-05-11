@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Weather Icons
+- **Prefix**: `wi`
+- **Icons**: 219
+- **License**: [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+- **Author**: [Erik Flowers](https://github.com/erikflowers/weather-icons)
+- **Website**: [https://github.com/erikflowers/weather-icons](https://github.com/erikflowers/weather-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/wi
 
 ```ts
 import { Component } from '@angular/core'
-import { WiAlienIcon } from '@ngxi/wi'
+import { WiDayHailIcon } from '@ngxi/wi'
 
 @Component({
-  imports: [WiAlienIcon],
-  template: `<svg wiAlienIcon></svg>`
+  imports: [WiDayHailIcon],
+  template: `<svg wiDayHailIcon></svg>`,
 })
 export class UsageIcon {}
 ```

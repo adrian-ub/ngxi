@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Dashicons
+- **Prefix**: `dashicons`
+- **Icons**: 342
+- **License**: [GPL](https://github.com/WordPress/dashicons/blob/master/gpl.txt)
+- **Author**: [WordPress](https://github.com/WordPress/dashicons)
+- **Website**: [https://github.com/WordPress/dashicons](https://github.com/WordPress/dashicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/dashicons
 
 ```ts
 import { Component } from '@angular/core'
-import { DashiconsAdminAppearanceIcon } from '@ngxi/dashicons'
+import { DashiconsShortcodeIcon } from '@ngxi/dashicons'
 
 @Component({
-  imports: [DashiconsAdminAppearanceIcon],
-  template: `<svg dashiconsAdminAppearanceIcon></svg>`
+  imports: [DashiconsShortcodeIcon],
+  template: `<svg dashiconsShortcodeIcon></svg>`,
 })
 export class UsageIcon {}
 ```

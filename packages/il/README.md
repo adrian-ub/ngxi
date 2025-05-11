@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Icalicons
+- **Prefix**: `il`
+- **Icons**: 84
+- **License**: [MIT]()
+- **Author**: [Icalia Labs]()
+- **Website**: []()
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/il
 
 ```ts
 import { Component } from '@angular/core'
-import { IlAddUserIcon } from '@ngxi/il'
+import { IlCalendarIcon } from '@ngxi/il'
 
 @Component({
-  imports: [IlAddUserIcon],
-  template: `<svg ilAddUserIcon></svg>`
+  imports: [IlCalendarIcon],
+  template: `<svg ilCalendarIcon></svg>`,
 })
 export class UsageIcon {}
 ```

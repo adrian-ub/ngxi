@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Meteocons
+- **Prefix**: `meteocons`
+- **Icons**: 447
+- **License**: [MIT](https://github.com/basmilius/weather-icons/blob/dev/LICENSE)
+- **Author**: [Bas Milius](https://github.com/basmilius/weather-icons)
+- **Website**: [https://github.com/basmilius/weather-icons](https://github.com/basmilius/weather-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/meteocons
 
 ```ts
 import { Component } from '@angular/core'
-import { MeteoconsBarometerIcon } from '@ngxi/meteocons'
+import { MeteoconsHurricaneFillIcon } from '@ngxi/meteocons'
 
 @Component({
-  imports: [MeteoconsBarometerIcon],
-  template: `<svg meteoconsBarometerIcon></svg>`
+  imports: [MeteoconsHurricaneFillIcon],
+  template: `<svg meteoconsHurricaneFillIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Devicon Plain
+- **Prefix**: `devicon-plain`
+- **Icons**: 671
+- **License**: [MIT](https://github.com/devicons/devicon/blob/master/LICENSE)
+- **Author**: [konpa](https://github.com/devicons/devicon/tree/master)
+- **Website**: [https://github.com/devicons/devicon/tree/master](https://github.com/devicons/devicon/tree/master)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/devicon-plain
 
 ```ts
 import { Component } from '@angular/core'
-import { DeviconPlainAarch64Icon } from '@ngxi/devicon-plain'
+import { DeviconPlainKotlinIcon } from '@ngxi/devicon-plain'
 
 @Component({
-  imports: [DeviconPlainAarch64Icon],
-  template: `<svg deviconPlainAarch64Icon></svg>`
+  imports: [DeviconPlainKotlinIcon],
+  template: `<svg deviconPlainKotlinIcon></svg>`,
 })
 export class UsageIcon {}
 ```

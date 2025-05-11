@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Material Design Icons
+- **Prefix**: `mdi`
+- **Icons**: 7447
+- **License**: [Apache 2.0](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE)
+- **Author**: [Pictogrammers](https://github.com/Templarian/MaterialDesign)
+- **Website**: [https://github.com/Templarian/MaterialDesign](https://github.com/Templarian/MaterialDesign)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/mdi
 
 ```ts
 import { Component } from '@angular/core'
-import { MdiAbTestingIcon } from '@ngxi/mdi'
+import { MdiAccountCheckIcon } from '@ngxi/mdi'
 
 @Component({
-  imports: [MdiAbTestingIcon],
-  template: `<svg mdiAbTestingIcon></svg>`
+  imports: [MdiAccountCheckIcon],
+  template: `<svg mdiAccountCheckIcon></svg>`,
 })
 export class UsageIcon {}
 ```

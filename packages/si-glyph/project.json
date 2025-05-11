@@ -1,0 +1,38 @@
+{
+  "name": "si-glyph",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/si-glyph/src",
+  "prefix": "si-glyph",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/si-glyph/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/si-glyph/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/si-glyph/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}

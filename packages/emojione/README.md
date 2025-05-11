@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Emoji One (Colored)
+- **Prefix**: `emojione`
+- **Icons**: 1834
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Emoji One](https://github.com/EmojiTwo/emojitwo)
+- **Website**: [https://github.com/EmojiTwo/emojitwo](https://github.com/EmojiTwo/emojitwo)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/emojione
 
 ```ts
 import { Component } from '@angular/core'
-import { Emojione1stPlaceMedalIcon } from '@ngxi/emojione'
+import { EmojioneAnxiousFaceWithSweatIcon } from '@ngxi/emojione'
 
 @Component({
-  imports: [Emojione1stPlaceMedalIcon],
-  template: `<svg emojione1stPlaceMedalIcon></svg>`
+  imports: [EmojioneAnxiousFaceWithSweatIcon],
+  template: `<svg emojioneAnxiousFaceWithSweatIcon></svg>`,
 })
 export class UsageIcon {}
 ```

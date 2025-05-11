@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: IconPark Outline
+- **Prefix**: `icon-park-outline`
+- **Icons**: 2658
+- **License**: [Apache 2.0](https://github.com/bytedance/IconPark/blob/master/LICENSE)
+- **Author**: [ByteDance](https://github.com/bytedance/IconPark)
+- **Website**: [https://github.com/bytedance/IconPark](https://github.com/bytedance/IconPark)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/icon-park-outline
 
 ```ts
 import { Component } from '@angular/core'
-import { IconParkOutlineACaneIcon } from '@ngxi/icon-park-outline'
+import { IconParkOutlineAddOneIcon } from '@ngxi/icon-park-outline'
 
 @Component({
-  imports: [IconParkOutlineACaneIcon],
-  template: `<svg iconParkOutlineACaneIcon></svg>`
+  imports: [IconParkOutlineAddOneIcon],
+  template: `<svg iconParkOutlineAddOneIcon></svg>`,
 })
 export class UsageIcon {}
 ```

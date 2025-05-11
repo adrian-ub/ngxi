@@ -1,0 +1,14 @@
+<button id="dark-switcher" icon-button dark:i-carbon-moon i-carbon:sun></button>
+
+<script>
+  import { toggleWithTransition } from '../utils/toggle-with-transition'
+  import { useDark } from '../utils/use-dark'
+
+  const dark = useDark()
+
+  const button = document.getElementById('dark-switcher')!
+
+  button.addEventListener('click', (e) => {
+    toggleWithTransition(dark.toggle, dark.isDark, e)
+  })
+</script>

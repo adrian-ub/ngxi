@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Material Symbols
+- **Prefix**: `material-symbols`
+- **Icons**: 14129
+- **License**: [Apache 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE)
+- **Author**: [Google](https://github.com/google/material-design-icons)
+- **Website**: [https://github.com/google/material-design-icons](https://github.com/google/material-design-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/material-symbols
 
 ```ts
 import { Component } from '@angular/core'
-import { MaterialSymbols123Icon } from '@ngxi/material-symbols'
+import { MaterialSymbolsDownloadingIcon } from '@ngxi/material-symbols'
 
 @Component({
-  imports: [MaterialSymbols123Icon],
-  template: `<svg materialSymbols123Icon></svg>`
+  imports: [MaterialSymbolsDownloadingIcon],
+  template: `<svg materialSymbolsDownloadingIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Font Awesome Brands
+- **Prefix**: `fa6-brands`
+- **Icons**: 495
+- **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Author**: [Dave Gandy](https://github.com/FortAwesome/Font-Awesome)
+- **Website**: [https://github.com/FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/fa6-brands
 
 ```ts
 import { Component } from '@angular/core'
-import { Fa6Brands42GroupIcon } from '@ngxi/fa6-brands'
+import { Fa6BrandsStravaIcon } from '@ngxi/fa6-brands'
 
 @Component({
-  imports: [Fa6Brands42GroupIcon],
-  template: `<svg fa6Brands42GroupIcon></svg>`
+  imports: [Fa6BrandsStravaIcon],
+  template: `<svg fa6BrandsStravaIcon></svg>`,
 })
 export class UsageIcon {}
 ```

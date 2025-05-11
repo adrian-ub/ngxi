@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Tabler Icons
+- **Prefix**: `tabler`
+- **Icons**: 5880
+- **License**: [MIT](https://github.com/tabler/tabler-icons/blob/master/LICENSE)
+- **Author**: [Paweł Kuna](https://github.com/tabler/tabler-icons)
+- **Website**: [https://github.com/tabler/tabler-icons](https://github.com/tabler/tabler-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/tabler
 
 ```ts
 import { Component } from '@angular/core'
-import { TablerABIcon } from '@ngxi/tabler'
+import { TablerAlienIcon } from '@ngxi/tabler'
 
 @Component({
-  imports: [TablerABIcon],
-  template: `<svg tablerABIcon></svg>`
+  imports: [TablerAlienIcon],
+  template: `<svg tablerAlienIcon></svg>`,
 })
 export class UsageIcon {}
 ```

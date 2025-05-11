@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Meteor Icons
+- **Prefix**: `meteor-icons`
+- **Icons**: 321
+- **License**: [MIT](https://github.com/zkreations/icons/blob/main/LICENSE)
+- **Author**: [zkreations](https://github.com/zkreations/icons)
+- **Website**: [https://github.com/zkreations/icons](https://github.com/zkreations/icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/meteor-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { MeteorIconsAdobeIcon } from '@ngxi/meteor-icons'
+import { MeteorIconsDropletIcon } from '@ngxi/meteor-icons'
 
 @Component({
-  imports: [MeteorIconsAdobeIcon],
-  template: `<svg meteorIconsAdobeIcon></svg>`
+  imports: [MeteorIconsDropletIcon],
+  template: `<svg meteorIconsDropletIcon></svg>`,
 })
 export class UsageIcon {}
 ```

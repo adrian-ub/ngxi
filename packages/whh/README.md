@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: WebHostingHub Glyphs
+- **Prefix**: `whh`
+- **Icons**: 2125
+- **License**: [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+- **Author**: [WebHostingHub]()
+- **Website**: []()
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/whh
 
 ```ts
 import { Component } from '@angular/core'
-import { Whh0Icon } from '@ngxi/whh'
+import { WhhAddtagsIcon } from '@ngxi/whh'
 
 @Component({
-  imports: [Whh0Icon],
-  template: `<svg whh0Icon></svg>`
+  imports: [WhhAddtagsIcon],
+  template: `<svg whhAddtagsIcon></svg>`,
 })
 export class UsageIcon {}
 ```

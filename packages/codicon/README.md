@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Codicons
+- **Prefix**: `codicon`
+- **Icons**: 478
+- **License**: [CC BY 4.0](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE)
+- **Author**: [Microsoft Corporation](https://github.com/microsoft/vscode-codicons)
+- **Website**: [https://github.com/microsoft/vscode-codicons](https://github.com/microsoft/vscode-codicons)
+
 ## Installation
 
 ```sh
@@ -20,7 +29,7 @@ import { CodiconAccountIcon } from '@ngxi/codicon'
 
 @Component({
   imports: [CodiconAccountIcon],
-  template: `<svg codiconAccountIcon></svg>`
+  template: `<svg codiconAccountIcon></svg>`,
 })
 export class UsageIcon {}
 ```

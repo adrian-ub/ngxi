@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Stash Icons
+- **Prefix**: `stash`
+- **Icons**: 982
+- **License**: [MIT](https://github.com/stash-ui/icons/blob/master/LICENSE)
+- **Author**: [Pingback LLC](https://github.com/stash-ui/icons)
+- **Website**: [https://github.com/stash-ui/icons](https://github.com/stash-ui/icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/stash
 
 ```ts
 import { Component } from '@angular/core'
-import { StashAirplaneIcon } from '@ngxi/stash'
+import { StashCloudSolidIcon } from '@ngxi/stash'
 
 @Component({
-  imports: [StashAirplaneIcon],
-  template: `<svg stashAirplaneIcon></svg>`
+  imports: [StashCloudSolidIcon],
+  template: `<svg stashCloudSolidIcon></svg>`,
 })
 export class UsageIcon {}
 ```

@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Myna UI Icons
+- **Prefix**: `mynaui`
+- **Icons**: 2382
+- **License**: [MIT](https://github.com/praveenjuge/mynaui-icons/blob/main/LICENSE)
+- **Author**: [Praveen Juge](https://github.com/praveenjuge/mynaui-icons)
+- **Website**: [https://github.com/praveenjuge/mynaui-icons](https://github.com/praveenjuge/mynaui-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/mynaui
 
 ```ts
 import { Component } from '@angular/core'
-import { MynauiAArrowDownIcon } from '@ngxi/mynaui'
+import { MynauiSignalIcon } from '@ngxi/mynaui'
 
 @Component({
-  imports: [MynauiAArrowDownIcon],
-  template: `<svg mynauiAArrowDownIcon></svg>`
+  imports: [MynauiSignalIcon],
+  template: `<svg mynauiSignalIcon></svg>`,
 })
 export class UsageIcon {}
 ```

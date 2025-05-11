@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: GeoGlyphs
+- **Prefix**: `geo`
+- **Icons**: 30
+- **License**: [MIT](https://github.com/cugos/geoglyphs/blob/main/LICENSE.md)
+- **Author**: [Sam Matthews](https://github.com/cugos/geoglyphs)
+- **Website**: [https://github.com/cugos/geoglyphs](https://github.com/cugos/geoglyphs)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/geo
 
 ```ts
 import { Component } from '@angular/core'
-import { GeoTurfAlongIcon } from '@ngxi/geo'
+import { GeoTurfCenterIcon } from '@ngxi/geo'
 
 @Component({
-  imports: [GeoTurfAlongIcon],
-  template: `<svg geoTurfAlongIcon></svg>`
+  imports: [GeoTurfCenterIcon],
+  template: `<svg geoTurfCenterIcon></svg>`,
 })
 export class UsageIcon {}
 ```

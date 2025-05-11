@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: UnJS Logos
+- **Prefix**: `unjs`
+- **Icons**: 63
+- **License**: [Apache 2.0]()
+- **Author**: [UnJS](https://github.com/unjs)
+- **Website**: [https://github.com/unjs](https://github.com/unjs)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/unjs
 
 ```ts
 import { Component } from '@angular/core'
-import { UnjsAutomdIcon } from '@ngxi/unjs'
+import { UnjsNitroIcon } from '@ngxi/unjs'
 
 @Component({
-  imports: [UnjsAutomdIcon],
-  template: `<svg unjsAutomdIcon></svg>`
+  imports: [UnjsNitroIcon],
+  template: `<svg unjsNitroIcon></svg>`,
 })
 export class UsageIcon {}
 ```

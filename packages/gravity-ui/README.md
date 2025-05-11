@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Gravity UI Icons
+- **Prefix**: `gravity-ui`
+- **Icons**: 727
+- **License**: [MIT](https://github.com/gravity-ui/icons/blob/main/LICENSE)
+- **Author**: [YANDEX LLC](https://github.com/gravity-ui/icons/)
+- **Website**: [https://github.com/gravity-ui/icons/](https://github.com/gravity-ui/icons/)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/gravity-ui
 
 ```ts
 import { Component } from '@angular/core'
-import { GravityUiAbbrApiIcon } from '@ngxi/gravity-ui'
+import { GravityUiMagnifierIcon } from '@ngxi/gravity-ui'
 
 @Component({
-  imports: [GravityUiAbbrApiIcon],
-  template: `<svg gravityUiAbbrApiIcon></svg>`
+  imports: [GravityUiMagnifierIcon],
+  template: `<svg gravityUiMagnifierIcon></svg>`,
 })
 export class UsageIcon {}
 ```

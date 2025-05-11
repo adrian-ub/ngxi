@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Academicons
+- **Prefix**: `academicons`
+- **Icons**: 158
+- **License**: [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+- **Author**: [James Walsh](https://github.com/jpswalsh/academicons)
+- **Website**: [https://github.com/jpswalsh/academicons](https://github.com/jpswalsh/academicons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/academicons
 
 ```ts
 import { Component } from '@angular/core'
-import { AcademiconsAcademiaIcon } from '@ngxi/academicons'
+import { AcademiconsConversationIcon } from '@ngxi/academicons'
 
 @Component({
-  imports: [AcademiconsAcademiaIcon],
-  template: `<svg academiconsAcademiaIcon></svg>`
+  imports: [AcademiconsConversationIcon],
+  template: `<svg academiconsConversationIcon></svg>`,
 })
 export class UsageIcon {}
 ```

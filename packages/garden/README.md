@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Garden SVG Icons
+- **Prefix**: `garden`
+- **Icons**: 1003
+- **License**: [Apache 2.0](https://github.com/zendeskgarden/svg-icons/blob/main/LICENSE.md)
+- **Author**: [Zendesk](https://github.com/zendeskgarden/svg-icons)
+- **Website**: [https://github.com/zendeskgarden/svg-icons](https://github.com/zendeskgarden/svg-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/garden
 
 ```ts
 import { Component } from '@angular/core'
-import { Garden123Fill12Icon } from '@ngxi/garden'
+import { GardenRelationshapeSell26Icon } from '@ngxi/garden'
 
 @Component({
-  imports: [Garden123Fill12Icon],
-  template: `<svg garden123Fill12Icon></svg>`
+  imports: [GardenRelationshapeSell26Icon],
+  template: `<svg gardenRelationshapeSell26Icon></svg>`,
 })
 export class UsageIcon {}
 ```

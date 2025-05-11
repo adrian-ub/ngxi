@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Octicons
+- **Prefix**: `octicon`
+- **Icons**: 647
+- **License**: [MIT](https://github.com/primer/octicons/blob/main/LICENSE)
+- **Author**: [GitHub](https://github.com/primer/octicons/)
+- **Website**: [https://github.com/primer/octicons/](https://github.com/primer/octicons/)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/octicon
 
 ```ts
 import { Component } from '@angular/core'
-import { OcticonAccessibility16Icon } from '@ngxi/octicon'
+import { OcticonAlert24Icon } from '@ngxi/octicon'
 
 @Component({
-  imports: [OcticonAccessibility16Icon],
-  template: `<svg octiconAccessibility16Icon></svg>`
+  imports: [OcticonAlert24Icon],
+  template: `<svg octiconAlert24Icon></svg>`,
 })
 export class UsageIcon {}
 ```

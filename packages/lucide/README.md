@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Lucide
+- **Prefix**: `lucide`
+- **Icons**: 1591
+- **License**: [ISC](https://github.com/lucide-icons/lucide/blob/main/LICENSE)
+- **Author**: [Lucide Contributors](https://github.com/lucide-icons/lucide)
+- **Website**: [https://github.com/lucide-icons/lucide](https://github.com/lucide-icons/lucide)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/lucide
 
 ```ts
 import { Component } from '@angular/core'
-import { LucideAArrowDownIcon } from '@ngxi/lucide'
+import { LucideCheckCircleIcon } from '@ngxi/lucide'
 
 @Component({
-  imports: [LucideAArrowDownIcon],
-  template: `<svg lucideAArrowDownIcon></svg>`
+  imports: [LucideCheckCircleIcon],
+  template: `<svg lucideCheckCircleIcon></svg>`,
 })
 export class UsageIcon {}
 ```

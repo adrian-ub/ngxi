@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: Mono Icons
+- **Prefix**: `mono-icons`
+- **Icons**: 180
+- **License**: [MIT](https://github.com/mono-company/mono-icons/blob/master/LICENSE.md)
+- **Author**: [Mono](https://github.com/mono-company/mono-icons)
+- **Website**: [https://github.com/mono-company/mono-icons](https://github.com/mono-company/mono-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/mono-icons
 
 ```ts
 import { Component } from '@angular/core'
-import { MonoIconsAddIcon } from '@ngxi/mono-icons'
+import { MonoIconsUserIcon } from '@ngxi/mono-icons'
 
 @Component({
-  imports: [MonoIconsAddIcon],
-  template: `<svg monoIconsAddIcon></svg>`
+  imports: [MonoIconsUserIcon],
+  template: `<svg monoIconsUserIcon></svg>`,
 })
 export class UsageIcon {}
 ```

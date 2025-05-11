@@ -6,6 +6,15 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
+## Icon Set Info
+
+- **Name**: CoreUI Flags
+- **Prefix**: `cif`
+- **Icons**: 199
+- **License**: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- **Author**: [creativeLabs Łukasz Holeczek](https://github.com/coreui/coreui-icons)
+- **Website**: [https://github.com/coreui/coreui-icons](https://github.com/coreui/coreui-icons)
+
 ## Installation
 
 ```sh
@@ -16,11 +25,11 @@ npm install @ngxi/cif
 
 ```ts
 import { Component } from '@angular/core'
-import { CifAdIcon } from '@ngxi/cif'
+import { CifEeIcon } from '@ngxi/cif'
 
 @Component({
-  imports: [CifAdIcon],
-  template: `<svg cifAdIcon></svg>`
+  imports: [CifEeIcon],
+  template: `<svg cifEeIcon></svg>`,
 })
 export class UsageIcon {}
 ```

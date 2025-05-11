@@ -1,0 +1,38 @@
+{
+  "name": "material-symbols",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/material-symbols/src",
+  "prefix": "material-symbols",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/material-symbols/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/material-symbols/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/material-symbols/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}
