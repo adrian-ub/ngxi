@@ -1,9 +1,0 @@
-import antfu from '@antfu/eslint-config'
-
-export default antfu({
-  pnpm: true,
-  ignores: [
-    'packages/**/index.ts',
-    'packages/**/chunks/*.ts',
-  ],
-})
