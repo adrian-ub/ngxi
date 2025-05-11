@@ -1,7 +1,7 @@
 import type { Tree } from '@nx/devkit'
 import type { IconLibraryGeneratorSchema } from './schema'
 
-import { hasCollection } from '@ngxi/collections'
+import { hasCollection } from '@internal/collections'
 
 import { formatFiles, getProjects, logger } from '@nx/devkit'
 

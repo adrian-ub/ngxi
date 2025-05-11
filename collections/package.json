@@ -1,5 +1,5 @@
 {
-  "name": "@ngxi/collections",
+  "name": "@internal/collections",
   "type": "module",
   "version": "0.0.1",
   "private": true,

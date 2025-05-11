@@ -7,7 +7,7 @@ import path from 'node:path'
 
 import { lookupCollection } from '@iconify/json'
 import { loadNodeIcon } from '@iconify/utils/lib/loader/node-loader'
-import { collections } from '@ngxi/collections'
+import { collections } from '@internal/collections'
 import { formatFiles, names } from '@nx/devkit'
 import c from 'ansis'
 import * as cheerio from 'cheerio'

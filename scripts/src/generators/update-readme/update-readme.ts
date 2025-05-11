@@ -1,5 +1,5 @@
 import type { Tree } from '@nx/devkit'
-import { collections } from '@ngxi/collections'
+import { collections } from '@internal/collections'
 
 import { formatFiles } from '@nx/devkit'
 
