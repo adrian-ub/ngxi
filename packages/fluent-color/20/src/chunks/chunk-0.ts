@@ -53,6 +53,23 @@ export class FluentColorAgents20Icon {
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentColorAlert20Icon],svg[fluent-color-alert-20-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAlert200)" d="M12.99 15a3 3 0 1 1-6 0a3 3 0 0 1 6 0"></svg:path><svg:path fill="url(#fluentColorAlert201)" d="M9.988 2c3.15 0 5.744 2.335 5.985 5.356l.013.222l.005.224l-.001 3.606l.954 2.588l.025.084l.016.087l.005.088c0 .315-.196.59-.522.707l-.113.033l-.115.01H3.742a.8.8 0 0 1-.26-.046c-.286-.106-.475-.372-.482-.716l.005-.118l.033-.13l.951-2.584l.002-3.618l.004-.225C4.117 4.451 6.762 2 9.988 2"></svg:path><svg:defs><svg:lineargradient id="fluentColorAlert200" x1="10.01" x2="10.01" y1="14.5" y2="18" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#EB4824"></svg:stop><svg:stop offset="1" stop-color="#FFCD0F" stop-opacity=".988"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorAlert201" x1="17.01" x2="4.51" y1="15" y2="4" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF6F47"></svg:stop><svg:stop offset="1" stop-color="#FFCD0F"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class FluentColorAlert20Icon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentColorAlertBadge20Icon],svg[fluent-color-alert-badge-20-icon]',
   host: {
     role: 'img',
@@ -3208,23 +3225,6 @@ export class FluentColorWrench20Icon {
   template: `<svg:g fill="none"><svg:path fill="url(#fluentColorWrenchScrewdriver200)" d="M16 5.117V10.5h-3V5.117a20 20 0 0 1-.29-.554a8 8 0 0 1-.148-.313A.6.6 0 0 1 12.5 4q0-.086.07-.312q.071-.228.157-.493t.171-.5q.087-.234.125-.351a.46.46 0 0 1 .18-.242A.55.55 0 0 1 13.5 2h2q.164 0 .29.094a.57.57 0 0 1 .187.25q.03.109.117.344l.18.5q.093.265.156.492q.062.225.07.32a.7.7 0 0 1-.062.242q-.063.15-.141.32a3 3 0 0 1-.164.313a2 2 0 0 0-.133.242"></svg:path><svg:path fill="url(#fluentColorWrenchScrewdriver201)" d="M17 11.5h-5v4.055q0 .507.203.953t.547.781A2.5 2.5 0 0 0 14.5 18q.5 0 .953-.195a2.7 2.7 0 0 0 .797-.524q.345-.327.547-.773a2.3 2.3 0 0 0 .203-.953z"></svg:path><svg:path fill="url(#fluentColorWrenchScrewdriver202)" d="M17 12v-1.5a.6.6 0 0 0-.07-.273a.37.37 0 0 0-.172-.149a1 1 0 0 0-.235-.062a2 2 0 0 0-.257-.016h-3.532q-.14 0-.265.016a.7.7 0 0 0-.235.07a.44.44 0 0 0-.171.148a.5.5 0 0 0-.063.266V12z"></svg:path><svg:path fill="url(#fluentColorWrenchScrewdriver203)" d="M5.78 2.126a.5.5 0 0 1 .22.415v3.457a1 1 0 0 0 2 0V2.541a.5.5 0 0 1 .688-.463A4.501 4.501 0 0 1 9 10.282v5.716a2 2 0 1 1-4 0v-5.716a4.5 4.5 0 0 1 .312-8.204a.5.5 0 0 1 .467.048"></svg:path><svg:defs><svg:lineargradient id="fluentColorWrenchScrewdriver200" x1="15.833" x2="12.81" y1=".38" y2="16.965" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#2BDABE"></svg:stop><svg:stop offset=".853" stop-color="#0067BF"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorWrenchScrewdriver201" x1="16.999" x2="10.446" y1="18.145" y2="13.592" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF6F47"></svg:stop><svg:stop offset="1" stop-color="#FFCD0F"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorWrenchScrewdriver202" x1="13.376" x2="14.043" y1="10.484" y2="12.151" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFA43D"></svg:stop><svg:stop offset="1" stop-color="#FB5937"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorWrenchScrewdriver203" x1="10" x2="4.8" y1="-1" y2="18.48" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#2BDABE"></svg:stop><svg:stop offset="1" stop-color="#0067BF"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
 })
 export class FluentColorWrenchScrewdriver20Icon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentColorAlert20Icon],svg[fluent-color-alert-20-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAlert200)" d="M12.99 15a3 3 0 1 1-6 0a3 3 0 0 1 6 0"></svg:path><svg:path fill="url(#fluentColorAlert201)" d="M9.988 2c3.15 0 5.744 2.335 5.985 5.356l.013.222l.005.224l-.001 3.606l.954 2.588l.025.084l.016.087l.005.088c0 .315-.196.59-.522.707l-.113.033l-.115.01H3.742a.8.8 0 0 1-.26-.046c-.286-.106-.475-.372-.482-.716l.005-.118l.033-.13l.951-2.584l.002-3.618l.004-.225C4.117 4.451 6.762 2 9.988 2"></svg:path><svg:defs><svg:lineargradient id="fluentColorAlert200" x1="10.01" x2="10.01" y1="14.5" y2="18" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#EB4824"></svg:stop><svg:stop offset="1" stop-color="#FFCD0F" stop-opacity=".988"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorAlert201" x1="17.01" x2="4.51" y1="15" y2="4" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF6F47"></svg:stop><svg:stop offset="1" stop-color="#FFCD0F"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
-})
-export class FluentColorAlert20Icon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsSportsVolleyballOutlineIcon],svg[material-symbols-sports-volleyball-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.55 9.45q-.775-2.175-2.525-3.637T13 4.05v1.6zM8 13.15l3-1.75V4.05q-.8.075-1.55.363T8 5.1zM4.65 15.1L6 14.3V6.75q-.975 1.1-1.487 2.45T4 12q0 .8.163 1.588T4.65 15.1M8 18.9l7-4l-3-1.75l-6.35 3.7q.5.625 1.075 1.15T8 18.9m4 1.1q1.875 0 3.55-.85t2.8-2.35L17 16.05l-6.6 3.8q.4.075.8.112T12 20m7.35-4.9q.325-.725.488-1.513T20 12l-7-4.05v3.45zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"></svg:path>`,
+})
+export class MaterialSymbolsSportsVolleyballOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsSquareOutlineIcon],svg[material-symbols-square-outline-icon]',
   host: {
     role: 'img',
@@ -6999,23 +7016,6 @@ export class MaterialSymbolsYourTripsOutlineIcon {
   template: `<svg:path fill="currentColor" d="M6 20v-2h12v2Zm-2-3q-.825 0-1.412-.587Q2 15.825 2 15V6q0-.825.588-1.412Q3.175 4 4 4h16q.825 0 1.413.588Q22 5.175 22 6v9q0 .825-.587 1.413Q20.825 17 20 17Zm0-2h16V6H4v9Zm6-1l5.5-3.5L10 7Zm-6 1V6v9Z"></svg:path>`,
 })
 export class MaterialSymbolsYoutubeTvOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbols11mpOutlineIcon],svg[material-symbols-11mp-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.5 11.5H11v-6H8V7h1.5zm5 0H16v-6h-3V7h1.5zm-8.5 7h1.5V14h1v3H10v-3h1v4.5h1.5v-5q0-.425-.288-.712T11.5 12.5H7q-.425 0-.712.288T6 13.5zm7.5 0H15V17h2q.425 0 .713-.288T18 16v-2.5q0-.425-.288-.712T17 12.5h-3.5zm1.5-3V14h1.5v1.5zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"></svg:path>`,
-})
-export class MaterialSymbols11mpOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

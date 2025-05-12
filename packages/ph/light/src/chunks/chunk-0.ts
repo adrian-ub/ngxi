@@ -19,23 +19,6 @@ export class PhAcornLightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[phAddressBookLightIcon],svg[ph-address-book-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M159.11 142.13a38 38 0 1 0-46.22 0A65.75 65.75 0 0 0 83.2 164.4a6 6 0 0 0 9.6 7.2a54 54 0 0 1 86.4 0a6 6 0 0 0 9.6-7.2a65.75 65.75 0 0 0-29.69-22.27M110 112a26 26 0 1 1 26 26a26 26 0 0 1-26-26m98-86H64a14 14 0 0 0-14 14v26H32a6 6 0 0 0 0 12h18v44H32a6 6 0 0 0 0 12h18v44H32a6 6 0 0 0 0 12h18v26a14 14 0 0 0 14 14h144a14 14 0 0 0 14-14V40a14 14 0 0 0-14-14m2 190a2 2 0 0 1-2 2H64a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h144a2 2 0 0 1 2 2Z"></svg:path>`,
-})
-export class PhAddressBookLightIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[phActivityLightIcon],svg[ph-activity-light-icon]',
   host: {
     role: 'img',
@@ -46,6 +29,23 @@ export class PhAddressBookLightIcon {
   template: `<svg:path fill="currentColor" d="M160 214h-.3a5.8 5.8 0 0 1-5.3-3.9L95.5 55.6l-34 74.9A6.1 6.1 0 0 1 56 134H24a6 6 0 0 1 0-12h28.1l38.4-84.5a6 6 0 0 1 11.1.4l59.1 155.2l33.9-67.8a6 6 0 0 1 5.4-3.3h32a6 6 0 0 1 0 12h-28.3l-38.3 76.7a6.2 6.2 0 0 1-5.4 3.3Z"></svg:path>`,
 })
 export class PhActivityLightIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phAddressBookLightIcon],svg[ph-address-book-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M159.11 142.13a38 38 0 1 0-46.22 0A65.75 65.75 0 0 0 83.2 164.4a6 6 0 0 0 9.6 7.2a54 54 0 0 1 86.4 0a6 6 0 0 0 9.6-7.2a65.75 65.75 0 0 0-29.69-22.27M110 112a26 26 0 1 1 26 26a26 26 0 0 1-26-26m98-86H64a14 14 0 0 0-14 14v26H32a6 6 0 0 0 0 12h18v44H32a6 6 0 0 0 0 12h18v44H32a6 6 0 0 0 0 12h18v26a14 14 0 0 0 14 14h144a14 14 0 0 0 14-14V40a14 14 0 0 0-14-14m2 190a2 2 0 0 1-2 2H64a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h144a2 2 0 0 1 2 2Z"></svg:path>`,
+})
+export class PhAddressBookLightIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")

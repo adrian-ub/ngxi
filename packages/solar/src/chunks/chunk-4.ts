@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[solarSquareDoubleAltArrowLeftBoldDuotoneIcon],svg[solar-square-double-alt-arrow-left-bold-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.464 20.536C4.93 22 7.286 22 12 22s7.071 0 8.535-1.465C22 19.072 22 16.714 22 12s0-7.071-1.465-8.536C19.072 2 16.714 2 12 2S4.929 2 3.464 3.464C2 4.93 2 7.286 2 12s0 7.071 1.464 8.535" opacity=".5"></svg:path><svg:path fill="currentColor" d="M12.03 9.53a.75.75 0 0 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06L9.56 12z"></svg:path><svg:path fill="currentColor" d="M16.03 9.53a.75.75 0 0 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06L13.56 12z"></svg:path>`,
+})
+export class SolarSquareDoubleAltArrowLeftBoldDuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[solarSquareDoubleAltArrowLeftLineDuotoneIcon],svg[solar-square-double-alt-arrow-left-line-duotone-icon]',
   host: {
     role: 'img',
@@ -7934,23 +7951,6 @@ export class SolarZipFileBoldDuotoneIcon {
   template: `<svg:defs><svg:mask id="solarZipFileLineDuotone0"><svg:g fill="none" stroke-width="1.5"><svg:path stroke="gray" stroke-linecap="round" d="M9.5 15.5v-.125c0-.483.392-.875.875-.875h3.25c.483 0 .875.392.875.875v.125a2.5 2.5 0 0 1-5 0Z"></svg:path><svg:path stroke="gray" d="M9.5 3c0-.471 0-.707.146-.854C9.793 2 10.03 2 10.5 2h.5c.471 0 .707 0 .854.146C12 2.293 12 2.53 12 3v.5c0 .471 0 .707-.146.854c-.147.146-.383.146-.854.146h-.5c-.471 0-.707 0-.854-.146C9.5 4.207 9.5 3.97 9.5 3.5zm0 5c0-.471 0-.707.146-.854C9.793 7 10.03 7 10.5 7h.5c.471 0 .707 0 .854.146C12 7.293 12 7.53 12 8v.5c0 .471 0 .707-.146.854c-.147.146-.383.146-.854.146h-.5c-.471 0-.707 0-.854-.146C9.5 9.207 9.5 8.97 9.5 8.5zM12 5.5c0-.471 0-.707.146-.854c.147-.146.383-.146.854-.146h.5c.471 0 .707 0 .854.146c.146.147.146.383.146.854V6c0 .471 0 .707-.146.854C14.207 7 13.97 7 13.5 7H13c-.471 0-.707 0-.854-.146C12 6.707 12 6.47 12 6zm0 5c0-.471 0-.707.146-.854c.147-.146.383-.146.854-.146h.5c.471 0 .707 0 .854.146c.146.147.146.383.146.854v.5c0 .471 0 .707-.146.854c-.147.146-.383.146-.854.146H13c-.471 0-.707 0-.854-.146C12 11.707 12 11.47 12 11z"></svg:path><svg:path stroke="#fff" d="M3 10c0-3.771 0-5.657 1.172-6.828S7.229 2 11 2h2c3.771 0 5.657 0 6.828 1.172S21 6.229 21 10v4c0 3.771 0 5.657-1.172 6.828S16.771 22 13 22h-2c-3.771 0-5.657 0-6.828-1.172S3 17.771 3 14z"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h24v24H0z" mask="url(#solarZipFileLineDuotone0)"></svg:path>`,
 })
 export class SolarZipFileLineDuotoneIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solar4kBoldDuotoneIcon],svg[solar-4k-bold-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 22c-4.714 0-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12s0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22" opacity=".5"></svg:path><svg:path fill="currentColor" d="M19.02 7.46a.75.75 0 0 1 .02 1.06l-2.666 2.773l2.757 4.302a.75.75 0 1 1-1.262.81l-2.564-4l-1.055 1.097V16a.75.75 0 0 1-1.5 0V8a.75.75 0 0 1 1.5 0v3.338l3.71-3.858a.75.75 0 0 1 1.06-.02M5.5 7.25a.75.75 0 0 1 .75.75v2c0 .69.56 1.25 1.25 1.25h2.25V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-1.5 0v-3.25H7.5A2.75 2.75 0 0 1 4.75 10V8a.75.75 0 0 1 .75-.75"></svg:path>`,
-})
-export class Solar4kBoldDuotoneIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

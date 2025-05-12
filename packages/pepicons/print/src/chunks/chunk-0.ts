@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[pepiconsAlarmPrintIcon],svg[pepicons-alarm-print-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M18 11.25a6.5 6.5 0 1 1-13 0a6.5 6.5 0 0 1 13 0Z" opacity=".8"></svg:path><svg:path fill-rule="evenodd" d="M10 4.75a6 6 0 1 0 0 12a6 6 0 0 0 0-12Zm-7 6a7 7 0 1 1 14 0a7 7 0 0 1-14 0Z" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M3.146 17.604a.5.5 0 0 0 .708 0l1.5-1.5a.5.5 0 1 0-.708-.707l-1.5 1.5a.5.5 0 0 0 0 .707Zm11.5-2.208a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1-.708.708l-1.5-1.5a.5.5 0 0 1 0-.707ZM10 7.25a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5Z" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M13.5 10.75a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.5Z" clip-rule="evenodd"></svg:path><svg:path d="M2.381 2.546c2.023-1.931 3.951.376 3.951.376L2.574 6.51S.358 4.478 2.381 2.546Z"></svg:path><svg:path fill-rule="evenodd" d="M3.97 2.783c-.225.027-.53.135-.898.487c-.369.352-.49.651-.528.875c-.039.235.001.481.103.735c.017.043.036.084.055.125l2.12-2.025a2.148 2.148 0 0 0-.122-.06a1.364 1.364 0 0 0-.73-.137Zm1.602-.518c-.746-.494-1.95-.903-3.19.281c-1.24 1.185-.888 2.407-.43 3.175a4.047 4.047 0 0 0 .622.79l3.758-3.59s-.067-.08-.19-.198a4.047 4.047 0 0 0-.57-.458Z" clip-rule="evenodd"></svg:path><svg:path d="M17.619 2.546c-2.023-1.931-3.951.376-3.951.376l3.758 3.588s2.216-2.032.193-3.964Z"></svg:path><svg:path fill-rule="evenodd" d="M16.03 2.783c.225.027.53.135.898.487c.369.352.49.651.528.875c.039.235-.001.481-.103.735a2.132 2.132 0 0 1-.055.125l-2.12-2.025c.04-.021.08-.042.122-.06c.249-.114.493-.165.73-.137Zm-1.602-.518c.746-.494 1.95-.903 3.19.281c1.24 1.185.888 2.407.43 3.175c-.15.251-.312.454-.432.59c-.113.128-.19.2-.19.2l-3.758-3.59s.067-.08.19-.198c.131-.127.326-.297.57-.458Z" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class PepiconsAlarmPrintIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[pepiconsAirplanePrintIcon],svg[pepicons-airplane-print-icon]',
   host: {
     role: 'img',
@@ -29,6 +12,23 @@ export class PepiconsAlarmPrintIcon {
   template: `<svg:g fill="currentColor"><svg:path d="M11.224 13.805c.255 1.835.368 2.978.338 3.48c-.046.78-.569 1.602-1.534 2.497a.5.5 0 0 1-.822-.232l-1.335-4.78l-.6-.6l-4.78-1.335a.5.5 0 0 1-.232-.821c.896-.965 1.717-1.488 2.497-1.535c.503-.03 1.647.083 3.482.34l2.431-2.653l-6.053-1.692a.5.5 0 0 1-.232-.821c1.385-1.494 2.638-2.291 3.793-2.36c.885-.053 2.748.412 5.68 1.396l.445-.484c2.047-2.047 3.733-2.605 4.937-1.401c1.204 1.204.645 2.89-1.418 4.951l-.469.43c.985 2.931 1.45 4.794 1.397 5.68c-.069 1.155-.867 2.408-2.36 3.793a.5.5 0 0 1-.822-.232l-1.69-6.053l-2.653 2.432Z" opacity=".8"></svg:path><svg:path fill-rule="evenodd" d="M10.562 16.285c.03-.502-.083-1.645-.338-3.48l2.652-2.432l1.691 6.053a.5.5 0 0 0 .822.232c1.493-1.386 2.291-2.639 2.36-3.793c.052-.886-.412-2.749-1.397-5.68l.47-.43c2.062-2.062 2.62-3.747 1.417-4.951c-1.204-1.204-2.89-.646-4.937 1.4l-.445.485c-2.932-.984-4.795-1.449-5.68-1.396c-1.155.069-2.408.866-3.793 2.36a.5.5 0 0 0 .232.821l6.053 1.692l-2.431 2.652c-1.835-.256-2.979-.369-3.482-.339c-.78.047-1.6.57-2.497 1.535a.5.5 0 0 0 .232.822l4.78 1.335l.6.6l1.335 4.78a.5.5 0 0 0 .822.231c.965-.895 1.488-1.716 1.534-2.497Zm-1.365-3.6c.27 1.91.393 3.11.367 3.541c-.02.332-.225.742-.629 1.217L7.8 13.375a.5.5 0 0 0-.128-.219l-.786-.785a.5.5 0 0 0-.219-.128L2.6 11.107c.475-.404.884-.61 1.217-.63c.431-.025 1.631.097 3.543.368a.5.5 0 0 0 .438-.157l3.16-3.447a.5.5 0 0 0-.234-.82L4.7 4.74c.979-.93 1.83-1.406 2.535-1.448c.734-.043 2.637.44 5.608 1.45a.5.5 0 0 0 .53-.136l.65-.709c1.692-1.69 2.827-2.066 3.508-1.385c.68.681.305 1.815-1.402 3.522l-.693.635a.5.5 0 0 0-.136.53c1.009 2.97 1.493 4.874 1.45 5.608c-.042.704-.518 1.556-1.449 2.535L13.62 9.319a.5.5 0 0 0-.82-.234l-3.446 3.16a.5.5 0 0 0-.157.44Z" clip-rule="evenodd"></svg:path></svg:g>`,
 })
 export class PepiconsAirplanePrintIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsAlarmPrintIcon],svg[pepicons-alarm-print-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M18 11.25a6.5 6.5 0 1 1-13 0a6.5 6.5 0 0 1 13 0Z" opacity=".8"></svg:path><svg:path fill-rule="evenodd" d="M10 4.75a6 6 0 1 0 0 12a6 6 0 0 0 0-12Zm-7 6a7 7 0 1 1 14 0a7 7 0 0 1-14 0Z" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M3.146 17.604a.5.5 0 0 0 .708 0l1.5-1.5a.5.5 0 1 0-.708-.707l-1.5 1.5a.5.5 0 0 0 0 .707Zm11.5-2.208a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1-.708.708l-1.5-1.5a.5.5 0 0 1 0-.707ZM10 7.25a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5Z" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M13.5 10.75a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.5Z" clip-rule="evenodd"></svg:path><svg:path d="M2.381 2.546c2.023-1.931 3.951.376 3.951.376L2.574 6.51S.358 4.478 2.381 2.546Z"></svg:path><svg:path fill-rule="evenodd" d="M3.97 2.783c-.225.027-.53.135-.898.487c-.369.352-.49.651-.528.875c-.039.235.001.481.103.735c.017.043.036.084.055.125l2.12-2.025a2.148 2.148 0 0 0-.122-.06a1.364 1.364 0 0 0-.73-.137Zm1.602-.518c-.746-.494-1.95-.903-3.19.281c-1.24 1.185-.888 2.407-.43 3.175a4.047 4.047 0 0 0 .622.79l3.758-3.59s-.067-.08-.19-.198a4.047 4.047 0 0 0-.57-.458Z" clip-rule="evenodd"></svg:path><svg:path d="M17.619 2.546c-2.023-1.931-3.951.376-3.951.376l3.758 3.588s2.216-2.032.193-3.964Z"></svg:path><svg:path fill-rule="evenodd" d="M16.03 2.783c.225.027.53.135.898.487c.369.352.49.651.528.875c.039.235-.001.481-.103.735a2.132 2.132 0 0 1-.055.125l-2.12-2.025c.04-.021.08-.042.122-.06c.249-.114.493-.165.73-.137Zm-1.602-.518c.746-.494 1.95-.903 3.19.281c1.24 1.185.888 2.407.43 3.175c-.15.251-.312.454-.432.59c-.113.128-.19.2-.19.2l-3.758-3.59s.067-.08.19-.198c.131-.127.326-.297.57-.458Z" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class PepiconsAlarmPrintIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,23 +70,6 @@ export class PepiconsAngleLeftPrintIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pepiconsAngleUpPrintIcon],svg[pepicons-angle-up-print-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M10.988 7.391L5.04 12.348c-1.537 1.28.384 3.585 1.92 2.304l5.04-4.2l5.04 4.2c1.536 1.28 3.457-1.024 1.92-2.304L13.012 7.39A1.482 1.482 0 0 0 12 6.973a1.482 1.482 0 0 0-1.012.418Z" clip-rule="evenodd" opacity=".8"></svg:path><svg:path d="m16.32 12.116l-6-5l-.64.768l6 5l.64-.768Z"></svg:path><svg:path d="m15.68 12.884l-6-5c-.512-.427.128-1.195.64-.768l6 5c.512.427-.128 1.195-.64.768Z"></svg:path><svg:path d="m4.32 12.884l6-5l-.64-.768l-6 5l.64.768Z"></svg:path><svg:path d="m3.68 12.116l6-5c.512-.427 1.152.341.64.768l-6 5c-.512.427-1.152-.341-.64-.768Z"></svg:path></svg:g>`,
-})
-export class PepiconsAngleUpPrintIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[pepiconsAngleRightPrintIcon],svg[pepicons-angle-right-print-icon]',
   host: {
     role: 'img',
@@ -104,16 +87,16 @@ export class PepiconsAngleRightPrintIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pepiconsArrowDownPrintIcon],svg[pepicons-arrow-down-print-icon]',
+  selector: 'svg[pepiconsAngleUpPrintIcon],svg[pepicons-angle-up-print-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:g opacity=".8"><svg:path d="M17.152 11.206a1.5 1.5 0 0 1-.192 2.113l-4 3.333a1.5 1.5 0 1 1-1.92-2.304l4-3.334a1.5 1.5 0 0 1 2.112.192Z"></svg:path><svg:path d="M6.848 11.206a1.5 1.5 0 0 1 2.112-.192l4 3.334a1.5 1.5 0 1 1-1.92 2.304l-4-3.333a1.5 1.5 0 0 1-.192-2.113Z"></svg:path><svg:path d="M12 15a1.5 1.5 0 0 1-1.5-1.5v-8a1.5 1.5 0 0 1 3 0v8A1.5 1.5 0 0 1 12 15Z"></svg:path></svg:g><svg:path d="M14.384 11.347a.5.5 0 0 1-.064.704l-4 3.333a.5.5 0 0 1-.64-.768l4-3.333a.5.5 0 0 1 .704.064Z"></svg:path><svg:path d="M5.616 11.347a.5.5 0 0 1 .704-.064l4 3.333a.5.5 0 0 1-.64.768l-4-3.333a.5.5 0 0 1-.064-.704Z"></svg:path><svg:path d="M10 15a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 1 0v9.5a.5.5 0 0 1-.5.5Z"></svg:path></svg:g>`,
+  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M10.988 7.391L5.04 12.348c-1.537 1.28.384 3.585 1.92 2.304l5.04-4.2l5.04 4.2c1.536 1.28 3.457-1.024 1.92-2.304L13.012 7.39A1.482 1.482 0 0 0 12 6.973a1.482 1.482 0 0 0-1.012.418Z" clip-rule="evenodd" opacity=".8"></svg:path><svg:path d="m16.32 12.116l-6-5l-.64.768l6 5l.64-.768Z"></svg:path><svg:path d="m15.68 12.884l-6-5c-.512-.427.128-1.195.64-.768l6 5c.512.427-.128 1.195-.64.768Z"></svg:path><svg:path d="m4.32 12.884l6-5l-.64-.768l-6 5l.64.768Z"></svg:path><svg:path d="m3.68 12.116l6-5c.512-.427 1.152.341.64.768l-6 5c-.512.427-1.152-.341-.64-.768Z"></svg:path></svg:g>`,
 })
-export class PepiconsArrowDownPrintIcon {
+export class PepiconsAngleUpPrintIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -131,6 +114,23 @@ export class PepiconsArrowDownPrintIcon {
   template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:g opacity=".8"><svg:path d="M15.144 14.143a1.5 1.5 0 0 1-1.63 1.358l-5.185-.472a1.5 1.5 0 0 1 .271-2.987l5.186.471a1.5 1.5 0 0 1 1.358 1.63Z"></svg:path><svg:path d="M7.857 6.856a1.5 1.5 0 0 1 1.63 1.358l.471 5.186a1.5 1.5 0 1 1-2.987.271l-.472-5.185a1.5 1.5 0 0 1 1.358-1.63Z"></svg:path><svg:path d="M8.818 13.182a1.5 1.5 0 0 1 0-2.121l5.657-5.657a1.5 1.5 0 0 1 2.121 2.121l-5.657 5.657a1.5 1.5 0 0 1-2.12 0Z"></svg:path></svg:g><svg:path d="M12.148 14.052a.5.5 0 0 1-.543.453l-5.186-.472a.5.5 0 1 1 .09-.995l5.186.471a.5.5 0 0 1 .453.543Z"></svg:path><svg:path d="M5.948 7.852a.5.5 0 0 1 .543.453l.471 5.185a.5.5 0 1 1-.995.09l-.472-5.185a.5.5 0 0 1 .453-.543Z"></svg:path><svg:path d="M6.646 13.354a.5.5 0 0 1 0-.708l6.536-6.535a.5.5 0 0 1 .707.707l-6.535 6.536a.5.5 0 0 1-.708 0Z"></svg:path></svg:g>`,
 })
 export class PepiconsArrowDownLeftPrintIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsArrowDownPrintIcon],svg[pepicons-arrow-down-print-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:g opacity=".8"><svg:path d="M17.152 11.206a1.5 1.5 0 0 1-.192 2.113l-4 3.333a1.5 1.5 0 1 1-1.92-2.304l4-3.334a1.5 1.5 0 0 1 2.112.192Z"></svg:path><svg:path d="M6.848 11.206a1.5 1.5 0 0 1 2.112-.192l4 3.334a1.5 1.5 0 1 1-1.92 2.304l-4-3.333a1.5 1.5 0 0 1-.192-2.113Z"></svg:path><svg:path d="M12 15a1.5 1.5 0 0 1-1.5-1.5v-8a1.5 1.5 0 0 1 3 0v8A1.5 1.5 0 0 1 12 15Z"></svg:path></svg:g><svg:path d="M14.384 11.347a.5.5 0 0 1-.064.704l-4 3.333a.5.5 0 0 1-.64-.768l4-3.333a.5.5 0 0 1 .704.064Z"></svg:path><svg:path d="M5.616 11.347a.5.5 0 0 1 .704-.064l4 3.333a.5.5 0 0 1-.64.768l-4-3.333a.5.5 0 0 1-.064-.704Z"></svg:path><svg:path d="M10 15a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 1 0v9.5a.5.5 0 0 1-.5.5Z"></svg:path></svg:g>`,
+})
+export class PepiconsArrowDownPrintIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

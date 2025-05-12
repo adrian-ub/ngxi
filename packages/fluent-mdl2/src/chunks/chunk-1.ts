@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentMdl2DoubleChevronLeft12Icon],svg[fluent-mdl2-double-chevron-left-12-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m1170 146l-879 878l879 878l-121 121l-999-999l999-999zm853 0l-878 878l878 878l-121 121l-999-999l999-999z"></svg:path>`,
-})
-export class FluentMdl2DoubleChevronLeft12Icon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fluentMdl2DoubleChevronLeft8Icon],svg[fluent-mdl2-double-chevron-left-8-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class FluentMdl2NormalWeightIcon {
   template: `<svg:path fill="currentColor" d="m640 1674l388-271q-15 44-23 89t-11 91l-482 337V128l1278 897q-46-15-93-24t-97-9q-17 0-33 2t-34 5L640 374zm960-522q93 0 174 35t143 96t96 142t35 175q0 93-35 174t-96 143t-142 96t-175 35q-93 0-174-35t-143-96t-96-142t-35-175q0-93 35-174t96-143t142-96t175-35m-320 448q0 66 25 124t68 102t102 69t125 25q47 0 92-13t84-40l-443-443q-26 39-39 84t-14 92m587 176q26-39 39-84t14-92q0-66-25-124t-69-101t-102-69t-124-26q-47 0-92 13t-84 40z"></svg:path>`,
 })
 export class FluentMdl2NotExecutedIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2NotImpactedSolidIcon],svg[fluent-mdl2-not-impacted-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1600 992q-102 0-192 32t-167 88l-189-124l-660 1001q-20 29-54 29q-18 0-35-11q-28-19-28-53q0-19 10-35L946 917L619 702l-20 31q-19 28-47 42t-61 15q-38 0-69-21q-28-19-43-47t-15-61q0-37 21-69L738 57q19-28 47-42t60-15q37 0 70 21q28 19 43 47t15 61q0 38-21 69l-21 31l748 493l20-30q19-28 47-43t61-15q37 0 70 21q28 19 42 47t15 61q0 37-21 70l-126 191q-45-14-91-23t-96-9m317 291q63 64 97 145t34 172t-34 172t-97 144q-64 64-145 98t-172 34t-172-34t-144-97q-64-64-98-145t-34-172t34-172t97-144q64-64 145-98t172-34t172 34t145 97m-637 317q0 66 25 124t68 102t102 69t125 25q49 0 93-14t83-39l-443-443q-25 38-39 82t-14 94m587 176q25-38 39-82t14-94q0-66-25-124t-69-101t-102-69t-124-26q-49 0-93 14t-83 39z"></svg:path>`,
+})
+export class FluentMdl2NotImpactedSolidIcon {
   readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")

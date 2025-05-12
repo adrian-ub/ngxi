@@ -53,6 +53,23 @@ export class FluentColorAgents16Icon {
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentColorAlert16Icon],svg[fluent-color-alert-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAlert160)" d="M10 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path><svg:path fill="url(#fluentColorAlert161)" d="M8 2a4.5 4.5 0 0 0-4.5 4.5v2.401l-.964 2.414A.5.5 0 0 0 3 12h10a.5.5 0 0 0 .464-.685L12.5 8.9V6.5A4.5 4.5 0 0 0 8 2"></svg:path><svg:defs><svg:lineargradient id="fluentColorAlert160" x1="8.013" x2="8.013" y1="11.5" y2="14" gradientUnits="userSpaceOnUse"><svg:stop offset=".152" stop-color="#EB4824"></svg:stop><svg:stop offset="1" stop-color="#FFCD0F" stop-opacity=".988"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorAlert161" x1="13.516" x2="3.879" y1="11.996" y2="3.325" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF6F47"></svg:stop><svg:stop offset="1" stop-color="#FFCD0F"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class FluentColorAlert16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentColorAlertBadge16Icon],svg[fluent-color-alert-badge-16-icon]',
   host: {
     role: 'img',
@@ -2579,23 +2596,6 @@ export class FluentColorWarning16Icon {
   template: `<svg:g fill="none"><svg:path fill="url(#fluentColorWrench160)" d="M11 1a4 4 0 0 0-3.896 4.91l-5.05 5.235a1.986 1.986 0 0 0 2.842 2.774l5.006-5.072a4.003 4.003 0 0 0 5.062-4.382a.5.5 0 0 0-.849-.287L12 6.293L9.707 4l2.115-2.115a.5.5 0 0 0-.287-.85A4 4 0 0 0 11 1"></svg:path><svg:defs><svg:lineargradient id="fluentColorWrench160" x1="6.984" x2="9.394" y1="1.844" y2="14.986" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#2BDABE"></svg:stop><svg:stop offset="1" stop-color="#0067BF"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
 })
 export class FluentColorWrench16Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentColorAlert16Icon],svg[fluent-color-alert-16-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAlert160)" d="M10 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path><svg:path fill="url(#fluentColorAlert161)" d="M8 2a4.5 4.5 0 0 0-4.5 4.5v2.401l-.964 2.414A.5.5 0 0 0 3 12h10a.5.5 0 0 0 .464-.685L12.5 8.9V6.5A4.5 4.5 0 0 0 8 2"></svg:path><svg:defs><svg:lineargradient id="fluentColorAlert160" x1="8.013" x2="8.013" y1="11.5" y2="14" gradientUnits="userSpaceOnUse"><svg:stop offset=".152" stop-color="#EB4824"></svg:stop><svg:stop offset="1" stop-color="#FFCD0F" stop-opacity=".988"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorAlert161" x1="13.516" x2="3.879" y1="11.996" y2="3.325" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FF6F47"></svg:stop><svg:stop offset="1" stop-color="#FFCD0F"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
-})
-export class FluentColorAlert16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

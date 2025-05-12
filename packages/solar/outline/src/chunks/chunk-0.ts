@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[solarAccessibilityOutlineIcon],svg[solar-accessibility-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.25 7a2.75 2.75 0 1 1 5.5 0a2.75 2.75 0 0 1-5.5 0M12 5.75a1.25 1.25 0 1 0 0 2.5a1.25 1.25 0 0 0 0-2.5" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M5.31 9.707a.75.75 0 0 1 .983-.398l.001.001l.006.003l.027.011l.11.045q.149.061.42.164c.36.137.865.32 1.445.502c1.178.37 2.587.715 3.698.715s2.52-.345 3.698-.715a27 27 0 0 0 1.974-.711l.028-.011l.006-.003h.001a.75.75 0 0 1 .586 1.38l-.004.002l-.01.004l-.032.014l-.123.05a28 28 0 0 1-1.976.706c-.988.31-2.236.639-3.398.747v1.24c0 .43.124.853.357 1.216l2.524 3.925a.75.75 0 0 1-1.262.812L12 15.72l-2.37 3.686a.75.75 0 1 1-1.26-.812l2.523-3.925a2.25 2.25 0 0 0 .357-1.217v-1.239c-1.162-.108-2.41-.436-3.399-.747a28 28 0 0 1-2.098-.756l-.033-.014l-.009-.004l-.004-.001a.75.75 0 0 1-.397-.984"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12S17.937 22.75 12 22.75S1.25 17.937 1.25 12M12 2.75a9.25 9.25 0 1 0 0 18.5a9.25 9.25 0 0 0 0-18.5" clip-rule="evenodd"></svg:path>`,
-})
-export class SolarAccessibilityOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[solar4kOutlineIcon],svg[solar-4k-outline-icon]',
   host: {
     role: 'img',
@@ -29,6 +12,23 @@ export class SolarAccessibilityOutlineIcon {
   template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M11.943 1.25h.114c2.309 0 4.118 0 5.53.19c1.444.194 2.584.6 3.479 1.494c.895.895 1.3 2.035 1.494 3.48c.19 1.411.19 3.22.19 5.529v.114c0 2.309 0 4.118-.19 5.53c-.194 1.444-.6 2.584-1.494 3.479c-.895.895-2.035 1.3-3.48 1.494c-1.411.19-3.22.19-5.529.19h-.114c-2.309 0-4.118 0-5.53-.19c-1.444-.194-2.584-.6-3.479-1.494c-.895-.895-1.3-2.035-1.494-3.48c-.19-1.411-.19-3.22-.19-5.529v-.114c0-2.309 0-4.118.19-5.53c.194-1.444.6-2.584 1.494-3.479c.895-.895 2.035-1.3 3.48-1.494c1.411-.19 3.22-.19 5.529-.19m-5.33 1.676c-1.278.172-2.049.5-2.618 1.069c-.57.57-.897 1.34-1.069 2.619c-.174 1.3-.176 3.008-.176 5.386s.002 4.086.176 5.386c.172 1.279.5 2.05 1.069 2.62c.57.569 1.34.896 2.619 1.068c1.3.174 3.008.176 5.386.176s4.086-.002 5.386-.176c1.279-.172 2.05-.5 2.62-1.069c.569-.57.896-1.34 1.068-2.619c.174-1.3.176-3.008.176-5.386s-.002-4.086-.176-5.386c-.172-1.279-.5-2.05-1.069-2.62c-.57-.569-1.34-.896-2.619-1.068c-1.3-.174-3.008-.176-5.386-.176s-4.086.002-5.386.176"></svg:path><svg:path d="M19.02 7.46a.75.75 0 0 1 .02 1.06l-2.666 2.773l2.757 4.302a.75.75 0 1 1-1.262.81l-2.564-4l-1.055 1.097V16a.75.75 0 0 1-1.5 0V8a.75.75 0 0 1 1.5 0v3.338l3.71-3.858a.75.75 0 0 1 1.06-.02M5.5 7.25a.75.75 0 0 1 .75.75v2c0 .69.56 1.25 1.25 1.25h2.25V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-1.5 0v-3.25H7.5A2.75 2.75 0 0 1 4.75 10V8a.75.75 0 0 1 .75-.75"></svg:path></svg:g>`,
 })
 export class Solar4kOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[solarAccessibilityOutlineIcon],svg[solar-accessibility-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.25 7a2.75 2.75 0 1 1 5.5 0a2.75 2.75 0 0 1-5.5 0M12 5.75a1.25 1.25 0 1 0 0 2.5a1.25 1.25 0 0 0 0-2.5" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M5.31 9.707a.75.75 0 0 1 .983-.398l.001.001l.006.003l.027.011l.11.045q.149.061.42.164c.36.137.865.32 1.445.502c1.178.37 2.587.715 3.698.715s2.52-.345 3.698-.715a27 27 0 0 0 1.974-.711l.028-.011l.006-.003h.001a.75.75 0 0 1 .586 1.38l-.004.002l-.01.004l-.032.014l-.123.05a28 28 0 0 1-1.976.706c-.988.31-2.236.639-3.398.747v1.24c0 .43.124.853.357 1.216l2.524 3.925a.75.75 0 0 1-1.262.812L12 15.72l-2.37 3.686a.75.75 0 1 1-1.26-.812l2.523-3.925a2.25 2.25 0 0 0 .357-1.217v-1.239c-1.162-.108-2.41-.436-3.399-.747a28 28 0 0 1-2.098-.756l-.033-.014l-.009-.004l-.004-.001a.75.75 0 0 1-.397-.984"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12S17.937 22.75 12 22.75S1.25 17.937 1.25 12M12 2.75a9.25 9.25 0 1 0 0 18.5a9.25 9.25 0 0 0 0-18.5" clip-rule="evenodd"></svg:path>`,
+})
+export class SolarAccessibilityOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,91 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[faSolidWalkingIcon],svg[fa-solid-walking-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M208 96c26.5 0 48-21.5 48-48S234.5 0 208 0s-48 21.5-48 48s21.5 48 48 48m94.5 149.1l-23.3-11.8l-9.7-29.4c-14.7-44.6-55.7-75.8-102.2-75.9c-36-.1-55.9 10.1-93.3 25.2c-21.6 8.7-39.3 25.2-49.7 46.2L17.6 213c-7.8 15.8-1.5 35 14.2 42.9c15.6 7.9 34.6 1.5 42.5-14.3L81 228c3.5-7 9.3-12.5 16.5-15.4l26.8-10.8l-15.2 60.7c-5.2 20.8.4 42.9 14.9 58.8l59.9 65.4c7.2 7.9 12.3 17.4 14.9 27.7l18.3 73.3c4.3 17.1 21.7 27.6 38.8 23.3s27.6-21.7 23.3-38.8l-22.2-89c-2.6-10.3-7.7-19.9-14.9-27.7l-45.5-49.7l17.2-68.7l5.5 16.5c5.3 16.1 16.7 29.4 31.7 37l23.3 11.8c15.6 7.9 34.6 1.5 42.5-14.3c7.7-15.7 1.4-35.1-14.3-43M73.6 385.8c-3.2 8.1-8 15.4-14.2 21.5l-50 50.1c-12.5 12.5-12.5 32.8 0 45.3s32.7 12.5 45.2 0l59.4-59.4c6.1-6.1 10.9-13.4 14.2-21.5l13.5-33.8c-55.3-60.3-38.7-41.8-47.4-53.7z"></svg:path>`,
+})
+export class FaSolidWalkingIcon {
+  readonly viewBox = input("0 0 320 512")
+  readonly width = input("0.63em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[faSolidWalletIcon],svg[fa-solid-wallet-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M461.2 128H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h384c8.84 0 16-7.16 16-16c0-26.51-21.49-48-48-48H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h397.2c28.02 0 50.8-21.53 50.8-48V176c0-26.47-22.78-48-50.8-48M416 336c-17.67 0-32-14.33-32-32s14.33-32 32-32s32 14.33 32 32s-14.33 32-32 32"></svg:path>`,
+})
+export class FaSolidWalletIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[faSolidWarehouseIcon],svg[fa-solid-warehouse-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M504 352H136.4c-4.4 0-8 3.6-8 8l-.1 48c0 4.4 3.6 8 8 8H504c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8m0 96H136.1c-4.4 0-8 3.6-8 8l-.1 48c0 4.4 3.6 8 8 8h368c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8m0-192H136.6c-4.4 0-8 3.6-8 8l-.1 48c0 4.4 3.6 8 8 8H504c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8m106.5-139L338.4 3.7a48.15 48.15 0 0 0-36.9 0L29.5 117C11.7 124.5 0 141.9 0 161.3V504c0 4.4 3.6 8 8 8h80c4.4 0 8-3.6 8-8V256c0-17.6 14.6-32 32.6-32h382.8c18 0 32.6 14.4 32.6 32v248c0 4.4 3.6 8 8 8h80c4.4 0 8-3.6 8-8V161.3c0-19.4-11.7-36.8-29.5-44.3"></svg:path>`,
+})
+export class FaSolidWarehouseIcon {
+  readonly viewBox = input("0 0 640 512")
+  readonly width = input("1.25em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[faSolidWaterIcon],svg[fa-solid-water-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M562.1 383.9c-21.5-2.4-42.1-10.5-57.9-22.9c-14.1-11.1-34.2-11.3-48.2 0c-37.9 30.4-107.2 30.4-145.7-1.5c-13.5-11.2-33-9.1-46.7 1.8c-38 30.1-106.9 30-145.2-1.7c-13.5-11.2-33.3-8.9-47.1 2c-15.5 12.2-36 20.1-57.7 22.4c-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16c28.8-2.5 56.1-11.4 79.4-25.9c56.5 34.6 137 34.1 192 0c56.5 34.6 137 34.1 192 0c23.3 14.2 50.9 23.3 79.1 25.8c9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3m0-144c-21.5-2.4-42.1-10.5-57.9-22.9c-14.1-11.1-34.2-11.3-48.2 0c-37.9 30.4-107.2 30.4-145.7-1.5c-13.5-11.2-33-9.1-46.7 1.8c-38 30.1-106.9 30-145.2-1.7c-13.5-11.2-33.3-8.9-47.1 2c-15.5 12.2-36 20.1-57.7 22.4c-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16c28.8-2.5 56.1-11.4 79.4-25.9c56.5 34.6 137 34.1 192 0c56.5 34.6 137 34.1 192 0c23.3 14.2 50.9 23.3 79.1 25.8c9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3m0-144C540.6 93.4 520 85.4 504.2 73C490.1 61.9 470 61.7 456 73c-37.9 30.4-107.2 30.4-145.7-1.5c-13.5-11.2-33-9.1-46.7 1.8c-38 30.1-106.9 30-145.2-1.7c-13.5-11.2-33.3-8.9-47.1 2c-15.5 12.2-36 20.1-57.7 22.4c-7.9.8-13.6 7.8-13.6 15.7v32.2c0 9.1 7.6 16.8 16.7 16c28.8-2.5 56.1-11.4 79.4-25.9c56.5 34.6 137 34.1 192 0c56.5 34.6 137 34.1 192 0c23.3 14.2 50.9 23.3 79.1 25.8c9.1.8 16.7-6.9 16.7-16v-31.6c.1-8-5.7-15.4-13.8-16.3"></svg:path>`,
+})
+export class FaSolidWaterIcon {
+  readonly viewBox = input("0 0 576 512")
+  readonly width = input("1.13em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[faSolidWaveSquareIcon],svg[fa-solid-wave-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M476 480H324a36 36 0 0 1-36-36V96h-96v156a36 36 0 0 1-36 36H16a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h112V68a36 36 0 0 1 36-36h152a36 36 0 0 1 36 36v348h96V260a36 36 0 0 1 36-36h140a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16H512v156a36 36 0 0 1-36 36"></svg:path>`,
+})
+export class FaSolidWaveSquareIcon {
+  readonly viewBox = input("0 0 640 512")
+  readonly width = input("1.25em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[faSolidWeightIcon],svg[fa-solid-weight-icon]',
   host: {
     role: 'img',
@@ -303,90 +388,5 @@ export class FaSolidYenSignIcon {
 export class FaSolidYinYangIcon {
   readonly viewBox = input("0 0 496 512")
   readonly width = input("0.97em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[faSolidAlignLeftIcon],svg[fa-solid-align-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.83 352h262.34A12.82 12.82 0 0 0 288 339.17v-38.34A12.82 12.82 0 0 0 275.17 288H12.83A12.82 12.82 0 0 0 0 300.83v38.34A12.82 12.82 0 0 0 12.83 352m0-256h262.34A12.82 12.82 0 0 0 288 83.17V44.83A12.82 12.82 0 0 0 275.17 32H12.83A12.82 12.82 0 0 0 0 44.83v38.34A12.82 12.82 0 0 0 12.83 96M432 160H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16m0 256H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16"></svg:path>`,
-})
-export class FaSolidAlignLeftIcon {
-  readonly viewBox = input("0 0 448 512")
-  readonly width = input("0.88em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[faSolidAlignRightIcon],svg[fa-solid-align-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16 224h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16m416 192H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16m3.17-384H172.83A12.82 12.82 0 0 0 160 44.83v38.34A12.82 12.82 0 0 0 172.83 96h262.34A12.82 12.82 0 0 0 448 83.17V44.83A12.82 12.82 0 0 0 435.17 32m0 256H172.83A12.82 12.82 0 0 0 160 300.83v38.34A12.82 12.82 0 0 0 172.83 352h262.34A12.82 12.82 0 0 0 448 339.17v-38.34A12.82 12.82 0 0 0 435.17 288"></svg:path>`,
-})
-export class FaSolidAlignRightIcon {
-  readonly viewBox = input("0 0 448 512")
-  readonly width = input("0.88em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[faSolidAngleDoubleRightIcon],svg[fa-solid-angle-double-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4l-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34m192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4l-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8"></svg:path>`,
-})
-export class FaSolidAngleDoubleRightIcon {
-  readonly viewBox = input("0 0 448 512")
-  readonly width = input("0.88em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[faSolidAirFreshenerIcon],svg[fa-solid-air-freshener-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M224 160H96c-53 0-96 43-96 96v224c0 17.625 14.375 32 32 32h256c17.625 0 32-14.375 32-32V256c0-53-43-96-96-96m-64 256c-44.125 0-80-35.875-80-80s35.875-80 80-80s80 35.875 80 80s-35.875 80-80 80m64-384c0-17.625-14.375-32-32-32h-64c-17.625 0-32 14.375-32 32v96h128zm157.781 19.578C383 50.969 384 49.359 384 48c0-1.375-1-2.969-2.219-3.578L352 32L339.562 2.219C338.969 1 337.375 0 336 0s-2.969 1-3.594 2.219L320 32l-29.781 12.422C289 45.031 288 46.625 288 48c0 1.359 1 2.969 2.219 3.578L320 64l12.406 29.781C333.031 95 334.625 96 336 96s2.969-1 3.562-2.219L352 64zM448 64l12.406 29.781C461.031 95 462.625 96 464 96s2.969-1 3.562-2.219L480 64l29.781-12.422C511 50.969 512 49.359 512 48c0-1.375-1-2.969-2.219-3.578L480 32L467.562 2.219C466.969 1 465.375 0 464 0s-2.969 1-3.594 2.219L448 32l-29.781 12.422C417 45.031 416 46.625 416 48c0 1.359 1 2.969 2.219 3.578zm32 160l-12.438-29.781C466.969 193 465.375 192 464 192s-2.969 1-3.594 2.219L448 224l-29.781 12.422C417 237.031 416 238.625 416 240c0 1.359 1 2.969 2.219 3.578L448 256l12.406 29.781C461.031 287 462.625 288 464 288s2.969-1 3.562-2.219L480 256l29.781-12.422C511 242.969 512 241.359 512 240c0-1.375-1-2.969-2.219-3.578zm-34.219-76.422C447 146.969 448 145.359 448 144c0-1.375-1-2.969-2.219-3.578L416 128l-12.438-29.781C402.969 97 401.375 96 400 96s-2.969 1-3.594 2.219L384 128l-29.781 12.422C353 141.031 352 142.625 352 144c0 1.359 1 2.969 2.219 3.578L384 160l12.406 29.781C397.031 191 398.625 192 400 192s2.969-1 3.562-2.219L416 160z"></svg:path>`,
-})
-export class FaSolidAirFreshenerIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[faSolidAlignCenterIcon],svg[fa-solid-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M432 160H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16m0 256H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16M108.1 96h231.81A12.09 12.09 0 0 0 352 83.9V44.09A12.09 12.09 0 0 0 339.91 32H108.1A12.09 12.09 0 0 0 96 44.09V83.9A12.1 12.1 0 0 0 108.1 96m231.81 256A12.09 12.09 0 0 0 352 339.9v-39.81A12.09 12.09 0 0 0 339.91 288H108.1A12.09 12.09 0 0 0 96 300.09v39.81a12.1 12.1 0 0 0 12.1 12.1z"></svg:path>`,
-})
-export class FaSolidAlignCenterIcon {
-  readonly viewBox = input("0 0 448 512")
-  readonly width = input("0.88em")
   readonly height = input("1em")
 }

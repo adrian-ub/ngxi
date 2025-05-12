@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[mdiCloudUploadIcon],svg[mdi-cloud-upload-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 20H6.5q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48q1.18-1.53 3.08-1.95q.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5q1.14 1.28 1.14 3q0 1.88-1.31 3.19T18.5 20H13v-7.15l1.6 1.55L16 13l-4-4l-4 4l1.4 1.4l1.6-1.55Z"></svg:path>`,
+})
+export class MdiCloudUploadIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiCloudUploadOutlineIcon],svg[mdi-cloud-upload-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48q1.18-1.53 3.08-1.95q.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5q1.14 1.28 1.14 3q0 1.88-1.31 3.19T18.5 20H13q-.82 0-1.41-.59Q11 18.83 11 18v-5.15L9.4 14.4L8 13l4-4l4 4l-1.4 1.4l-1.6-1.55V18h5.5q1.05 0 1.77-.73q.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-2.07-1.46-3.54Q14.08 6 12 6Q9.93 6 8.46 7.46Q7 8.93 7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1H9v2m3-7"></svg:path>`,
+})
+export class MdiCloudUploadOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiCloudsIcon],svg[mdi-clouds-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.19 12.07c.5-.53.81-1.25.81-2.07c0-1.7-1.3-3.16-3-3.16h-2.8C14.2 4.17 12.03 2 9.36 2c-2.05 0-3.8 1.28-4.51 3.08A3.967 3.967 0 0 0 1 9.04A3.97 3.97 0 0 0 4.96 13H8.1c-.06.33-.1.66-.1 1h-.5C5.57 14 4 15.57 4 17.5S5.57 21 7.5 21h11c2.5 0 4.5-2 4.5-4.5c0-2.24-1.66-4.09-3.81-4.43M18.5 19h-11c-.83 0-1.5-.67-1.5-1.5S6.67 16 7.5 16H10v-2c0-1.93 1.57-3.5 3.5-3.5S17 12.07 17 14h1.5a2.5 2.5 0 0 1 0 5"></svg:path>`,
+})
+export class MdiCloudsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mdiCloverIcon],svg[mdi-clover-icon]',
   host: {
     role: 'img',
@@ -8444,57 +8495,6 @@ export class MdiDiskIcon {
   template: `<svg:path d="M10 13.998a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm0-10a8 8 0 1 0 0 16a8 8 0 0 0 0-16zm10 8h2v-5h-2m0 9h2v-2h-2v2z" fill="currentColor"></svg:path>`,
 })
 export class MdiDiskAlertIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiDiskPlayerIcon],svg[mdi-disk-player-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M14.499 10.374a1.876 1.876 0 0 0 1.876-1.876A1.873 1.873 0 0 0 14.5 6.626a1.872 1.872 0 0 0-1.873 1.872c0 1.034.838 1.876 1.873 1.876zm0-9.374a7.5 7.5 0 0 1 5.1 13H9.401A7.499 7.499 0 0 1 14.5 1zM6 21v1H4v-1H2v-6h20v6h-2v1h-2v-1H6zm-2-3v1h9v-1H4zm11-1v2h2v-2h-2zm4 0a1 1 0 1 0 0 2a1 1 0 0 0 0-2z" fill="currentColor"></svg:path>`,
-})
-export class MdiDiskPlayerIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiDisqusIcon],svg[mdi-disqus-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.08 22c-2.45 0-4.69-.89-6.42-2.37l-4.25.58l1.64-4.06c-.55-1.27-.89-2.65-.89-4.15c0-5.5 4.44-10 9.92-10S22 6.5 22 12s-4.44 10-9.92 10m5.42-10.03v-.03C17.5 9.06 15.46 7 11.95 7H8.16v10h3.74c3.53 0 5.6-2.14 5.6-5.03M12 14.54h-1.11V9.46H12c1.62 0 2.7.93 2.7 2.54c0 1.63-1.08 2.54-2.7 2.54"></svg:path>`,
-})
-export class MdiDisqusIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiDisqusOutlineIcon],svg[mdi-disqus-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M11.9 14.5h-1.1v-5h1.1c1.6 0 2.7.9 2.7 2.5s-1.1 2.5-2.7 2.5m0-7.5H8.1v10h3.7c3.5 0 5.6-2.1 5.6-5s-2-5-5.5-5m.1 13c-1.9 0-3.7-.7-5.1-1.9l-.7-.6l-1.7.2l.7-1.6l-.3-.8c-.5-1.1-.7-2.2-.7-3.4c0-4.4 3.6-8 7.9-8c4.3 0 7.8 3.7 7.8 8.1c0 4.4-3.6 8-7.9 8m0-18C6.5 2 2.1 6.5 2.1 12c0 1.5.3 2.9.9 4.2l-1.6 4.1l4.3-.6c1.7 1.5 4 2.4 6.4 2.4c5.5 0 9.9-4.5 9.9-10S17.5 2 12 2z" fill="currentColor"></svg:path>`,
-})
-export class MdiDisqusOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -53,23 +53,6 @@ export class GridiconsAddOutlineIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[gridiconsAlignImageNoneIcon],svg[gridicons-align-image-none-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21 7H3V5h18zm0 10H3v2h18zM11 9H3v6h8z"></svg:path>`,
-})
-export class GridiconsAlignImageNoneIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[gridiconsAlignCenterIcon],svg[gridicons-align-center-icon]',
   host: {
     role: 'img',
@@ -80,23 +63,6 @@ export class GridiconsAlignImageNoneIcon {
   template: `<svg:path fill="currentColor" d="M4 19h16v-2H4zm13-6H7v2h10zM4 9v2h16V9zm13-4H7v2h10z"></svg:path>`,
 })
 export class GridiconsAlignCenterIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[gridiconsAlignJustifyIcon],svg[gridicons-align-justify-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 19h16v-2H4zm16-6H4v2h16zM4 9v2h16V9zm16-4H4v2h16z"></svg:path>`,
-})
-export class GridiconsAlignJustifyIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,6 +87,74 @@ export class GridiconsAlignImageCenterIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[gridiconsAlignImageLeftIcon],svg[gridicons-align-image-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 5h18v2H3zm0 14h18v-2H3zm0-4h8V9H3zm10 0h8v-2h-8zm0-4h8V9h-8z"></svg:path>`,
+})
+export class GridiconsAlignImageLeftIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gridiconsAlignImageNoneIcon],svg[gridicons-align-image-none-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21 7H3V5h18zm0 10H3v2h18zM11 9H3v6h8z"></svg:path>`,
+})
+export class GridiconsAlignImageNoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gridiconsAlignJustifyIcon],svg[gridicons-align-justify-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 19h16v-2H4zm16-6H4v2h16zM4 9v2h16V9zm16-4H4v2h16z"></svg:path>`,
+})
+export class GridiconsAlignJustifyIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gridiconsAlignImageRightIcon],svg[gridicons-align-image-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21 7H3V5h18zm0 10H3v2h18zm0-8h-8v6h8zm-10 4H3v2h8zm0-4H3v2h8z"></svg:path>`,
+})
+export class GridiconsAlignImageRightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[gridiconsAlignLeftIcon],svg[gridicons-align-left-icon]',
   host: {
     role: 'img',
@@ -131,6 +165,23 @@ export class GridiconsAlignImageCenterIcon {
   template: `<svg:path fill="currentColor" d="M4 19h16v-2H4zm10-6H4v2h10zM4 9v2h16V9zm10-4H4v2h10z"></svg:path>`,
 })
 export class GridiconsAlignLeftIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gridiconsAlignRightIcon],svg[gridicons-align-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20 17H4v2h16zm-10-2h10v-2H10zM4 9v2h16V9zm6-2h10V5H10z"></svg:path>`,
+})
+export class GridiconsAlignRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,16 +223,16 @@ export class GridiconsArrowLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[gridiconsAlignRightIcon],svg[gridicons-align-right-icon]',
+  selector: 'svg[gridiconsArrowUpIcon],svg[gridicons-arrow-up-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M20 17H4v2h16zm-10-2h10v-2H10zM4 9v2h16V9zm6-2h10V5H10z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M13 20V7.83l5.59 5.59L20 12l-8-8l-8 8l1.41 1.41L11 7.83V20z"></svg:path>`,
 })
-export class GridiconsAlignRightIcon {
+export class GridiconsArrowUpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,16 +240,16 @@ export class GridiconsAlignRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[gridiconsAlignImageLeftIcon],svg[gridicons-align-image-left-icon]',
+  selector: 'svg[gridiconsArrowRightIcon],svg[gridicons-arrow-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M3 5h18v2H3zm0 14h18v-2H3zm0-4h8V9H3zm10 0h8v-2h-8zm0-4h8V9h-8z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></svg:path>`,
 })
-export class GridiconsAlignImageLeftIcon {
+export class GridiconsArrowRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,16 +291,16 @@ export class GridiconsAttachmentIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[gridiconsAlignImageRightIcon],svg[gridicons-align-image-right-icon]',
+  selector: 'svg[gridiconsAudioIcon],svg[gridicons-audio-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M21 7H3V5h18zm0 10H3v2h18zm0-8h-8v6h8zm-10 4H3v2h8zm0-4H3v2h8z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M8 4v10.184A3 3 0 0 0 7 14a3 3 0 1 0 3 3V7h7v4.184A3 3 0 0 0 16 11a3 3 0 1 0 3 3V4z"></svg:path>`,
 })
-export class GridiconsAlignImageRightIcon {
+export class GridiconsAudioIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -3463,57 +3514,6 @@ export class GridiconsZoomInIcon {
   template: `<svg:path fill="currentColor" d="M3 10c0 3.9 3.1 7 7 7c1.4 0 2.7-.5 3.8-1.2L19 21l2-2l-5.2-5.2c.8-1.1 1.2-2.4 1.2-3.8c0-3.9-3.1-7-7-7s-7 3.1-7 7m2 0c0-2.8 2.2-5 5-5s5 2.2 5 5s-2.2 5-5 5s-5-2.2-5-5"></svg:path><svg:path fill="currentColor" d="M7 9h6v2H7z"></svg:path>`,
 })
 export class GridiconsZoomOutIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[gridiconsArrowRightIcon],svg[gridicons-arrow-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></svg:path>`,
-})
-export class GridiconsArrowRightIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[gridiconsArrowUpIcon],svg[gridicons-arrow-up-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13 20V7.83l5.59 5.59L20 12l-8-8l-8 8l1.41 1.41L11 7.83V20z"></svg:path>`,
-})
-export class GridiconsArrowUpIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[gridiconsAudioIcon],svg[gridicons-audio-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 4v10.184A3 3 0 0 0 7 14a3 3 0 1 0 3 3V7h7v4.184A3 3 0 0 0 16 11a3 3 0 1 0 3 3V4z"></svg:path>`,
-})
-export class GridiconsAudioIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

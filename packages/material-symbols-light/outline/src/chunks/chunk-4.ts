@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsLightSwapDrivingAppsWheelOutlineIcon],svg[material-symbols-light-swap-driving-apps-wheel-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.994 21q-1.852 0-3.491-.707T5.639 18.36t-1.932-2.864T3 12.006q0-1.874.71-3.511q.711-1.637 1.93-2.855t2.862-1.93T11.994 3q1.87 0 3.509.71q1.64.711 2.858 1.93t1.929 2.855t.71 3.511q0 1.852-.71 3.494q-.711 1.642-1.93 2.86t-2.855 1.93t-3.511.71M12 16.5q1.385 0 2.723.39q1.339.389 2.493 1.156q1.342-1.13 2.063-2.71T20 12q0-3.35-2.325-5.675T12 4T6.325 6.325T4 12q0 1.76.718 3.34q.718 1.581 2.066 2.706q1.154-.767 2.493-1.156q1.339-.39 2.723-.39m.003 1q-1.144 0-2.234.308q-1.09.307-2.08.884q.951.635 2.053.971t2.26.337t2.257-.336t2.052-.972q-.99-.577-2.077-.884t-2.231-.308M7 10.808q.329 0 .568-.24t.24-.568t-.24-.568T7 9.192t-.568.24t-.24.568t.24.568t.568.24m3-3q.329 0 .568-.24t.24-.568t-.24-.568t-.568-.24t-.568.24t-.24.568t.24.568t.568.24m7 3q.329 0 .568-.24t.24-.568t-.24-.568t-.568-.24t-.568.24t-.24.568t.24.568t.568.24M12 13.5q.633 0 1.066-.434q.434-.433.434-1.066q0-.325-.129-.609q-.129-.283-.348-.514l1.58-3.977q.08-.188-.006-.384q-.085-.195-.277-.274q-.18-.078-.374.002t-.269.279l-1.62 3.977q-.634-.029-1.096.409T10.5 12q0 .633.434 1.066q.433.434 1.066.434m0 4"></svg:path>`,
+})
+export class MaterialSymbolsLightSwapDrivingAppsWheelOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsLightSwapHorizontalCircleOutlineIcon],svg[material-symbols-light-swap-horizontal-circle-outline-icon]',
   host: {
     role: 'img',
@@ -5826,23 +5843,6 @@ export class MaterialSymbolsLightYardOutlineIcon {
   template: `<svg:path fill="currentColor" d="M8.5 17.5h7v-1h-7zM7.615 21q-.69 0-1.153-.462T6 19.385V12q0-1.933 1.084-3.425q1.083-1.492 2.762-2.144V6q0-.904.625-1.529T12 3.846t1.529.625T14.154 6v.43q1.679.653 2.762 2.145Q18 10.067 18 12v7.385q0 .69-.462 1.152T16.384 21zm0-1h8.77q.23 0 .423-.192t.192-.424V12q0-2.075-1.463-3.537T12 7T8.463 8.463T7 12v7.385q0 .23.192.423t.423.192m3.231-13.862q.294-.069.577-.104T12 6t.577.034q.283.035.577.105V6q0-.483-.336-.818T12 4.846t-.818.336t-.336.818zM7.616 20H7h10zm2.823-5.962L12 12.85l1.562 1.189l-.585-1.93l1.562-1.113h-1.93L12 8.961l-.61 2.035H9.462l1.562 1.113z"></svg:path>`,
 })
 export class MaterialSymbolsLightYourTripsOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsLight11mpOutlineIcon],svg[material-symbols-light-11mp-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.616 11.192h.884V5.808H8.116v.884h1.5zm5 0h.884V5.808h-2.384v.884h1.5zm-8.308 7h.884v-4.5h1.616v3h.884v-3h1.616v4.5h.884V13.5q0-.31-.191-.501t-.501-.191H7q-.31 0-.501.191q-.191.192-.191.501zm7.5 0h.884v-1.5H17q.31 0 .501-.191t.191-.501v-2.5q0-.31-.191-.501q-.192-.191-.501-.191h-3.192zm.884-2.384v-2.116h2.116v2.116zM5.616 20q-.691 0-1.153-.462T4 18.384V5.616q0-.691.463-1.153T5.616 4h12.769q.69 0 1.153.463T20 5.616v12.769q0 .69-.462 1.153T18.384 20zm0-1h12.769q.23 0 .423-.192t.192-.424V5.616q0-.231-.192-.424T18.384 5H5.616q-.231 0-.424.192T5 5.616v12.769q0 .23.192.423t.423.192M5 5v14z"></svg:path>`,
-})
-export class MaterialSymbolsLight11mpOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

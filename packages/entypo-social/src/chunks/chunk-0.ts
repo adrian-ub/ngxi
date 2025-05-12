@@ -36,16 +36,33 @@ export class EntypoSocial500pxWithCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[entypoSocialDropboxIcon],svg[entypo-social-dropbox-icon]',
+  selector: 'svg[entypoSocialBasecampIcon],svg[entypo-social-basecamp-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M6.109.902L.4 4.457l3.911 3.279L10 4.043zm7.343 15.09a.44.44 0 0 1-.285-.102L10 13.262l-3.167 2.629a.45.45 0 0 1-.529.03l-2.346-1.533v.904L10 19.098l6.042-3.807v-.904l-2.346 1.533a.44.44 0 0 1-.244.072M19.6 4.457L13.89.902L10 4.043l5.688 3.693zM10 11.291l3.528 2.928l5.641-3.688l-3.481-2.795zm-3.528 2.928L10 11.291L4.311 7.736l-3.48 2.795z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M10 2C5.327 2 .7 8.481.7 14.422C.7 15.799 5.234 18 10 18s9.3-2.201 9.3-3.578C19.3 8.481 14.673 2 10 2m.006 13.615c-5.198 0-6.673-2.068-6.673-2.722c0-1.287 2.13-4.485 2.906-4.485c.719 0 1.542 1.811 2.314 1.811c1.241 0 2.567-3.954 3.579-3.954s4.601 5.178 4.601 6.749c0 .271-1.084 2.601-6.727 2.601"></svg:path>`,
 })
-export class EntypoSocialDropboxIcon {
+export class EntypoSocialBasecampIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoSocialBehanceIcon],svg[entypo-social-behance-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.072 9.301s1.892-.147 1.892-2.459c0-2.315-1.548-3.441-3.51-3.441H0v12.926h6.454s3.941.129 3.941-3.816c-.001-.001.171-3.21-2.323-3.21M2.844 5.697h3.61s.878 0 .878 1.344c0 1.346-.516 1.541-1.102 1.541H2.844zm3.427 8.332H2.844v-3.455h3.61s1.308-.018 1.308 1.775c0 1.512-.977 1.669-1.491 1.68m9.378-7.341c-4.771 0-4.767 4.967-4.767 4.967s-.326 4.941 4.767 4.941c0 0 4.243.254 4.243-3.437H17.71s.072 1.391-1.988 1.391c0 0-2.184.152-2.184-2.25h6.423c.001-.001.709-5.612-4.312-5.612m1.941 3.886h-4.074s.266-1.992 2.182-1.992s1.892 1.992 1.892 1.992m.507-6.414H12.98v1.594h5.117z"></svg:path>`,
+})
+export class EntypoSocialBehanceIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,6 +87,57 @@ export class EntypoSocialCreativeCloudIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[entypoSocialDropboxIcon],svg[entypo-social-dropbox-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.109.902L.4 4.457l3.911 3.279L10 4.043zm7.343 15.09a.44.44 0 0 1-.285-.102L10 13.262l-3.167 2.629a.45.45 0 0 1-.529.03l-2.346-1.533v.904L10 19.098l6.042-3.807v-.904l-2.346 1.533a.44.44 0 0 1-.244.072M19.6 4.457L13.89.902L10 4.043l5.688 3.693zM10 11.291l3.528 2.928l5.641-3.688l-3.481-2.795zm-3.528 2.928L10 11.291L4.311 7.736l-3.48 2.795z"></svg:path>`,
+})
+export class EntypoSocialDropboxIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoSocialDribbbleIcon],svg[entypo-social-dribbble-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.565 7.421C8.207 5.007 6.754 3.038 6.648 2.893A7.88 7.88 0 0 0 2.311 8.38c.206.004 3.482.043 7.254-.959m.978 2.64a11 11 0 0 1 .309-.094a26 26 0 0 0-.637-1.336C6.169 9.843 2.287 9.755 2.15 9.751q-.006.125-.007.25c0 2.019.763 3.861 2.016 5.252l-.005-.006s2.15-3.814 6.389-5.186m-5.372 6.133v-.004c-.058-.045-.12-.086-.178-.135c.106.085.178.139.178.139M8.118 2.372l-.015.004c.006-.002.014-.002.014-.002zm7.071 1.732A7.83 7.83 0 0 0 10 2.143c-.639 0-1.258.078-1.852.221c.12.16 1.595 2.119 2.938 4.584c2.962-1.109 4.081-2.812 4.103-2.844M10 19.2a9.2 9.2 0 0 1-9.199-9.199A9.2 9.2 0 0 1 10 .8a9.2 9.2 0 0 1 9.2 9.201A9.2 9.2 0 0 1 10 19.2m1.336-7.914c-4.611 1.607-6.134 4.838-6.165 4.904a7.82 7.82 0 0 0 4.828 1.666a7.8 7.8 0 0 0 3.067-.621c-.116-.689-.573-3.096-1.679-5.967zm.354-3.166q.276.56.523 1.139q.087.204.17.406c2.713-.342 5.385.238 5.473.256a7.84 7.84 0 0 0-1.787-4.912c-.018.023-1.279 1.843-4.379 3.111m1.171 2.785c1.031 2.836 1.449 5.142 1.529 5.611a7.86 7.86 0 0 0 3.367-5.27c-.156-.05-2.356-.747-4.896-.341"></svg:path>`,
+})
+export class EntypoSocialDribbbleIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoSocialDribbbleWithCircleIcon],svg[entypo-social-dribbble-with-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.26 9.982q.05-.017.103-.031a15 15 0 0 0-.279-.584c-1.88.557-3.68.562-4.001.557q-.004.038-.003.076c0 .945.34 1.853.958 2.566c.206-.332 1.298-1.961 3.222-2.584m-2.637 3.131a3.91 3.91 0 0 0 3.871.512a16.5 16.5 0 0 0-.822-2.922c-2.121.75-2.922 2.162-3.049 2.41m4.932-6.086a3.92 3.92 0 0 0-3.405-.853a20 20 0 0 1 1.421 2.223c1.283-.493 1.863-1.204 1.984-1.37m-2.85 1.637A24 24 0 0 0 8.29 6.473a3.94 3.94 0 0 0-2.113 2.658h.017c.406 0 1.849-.033 3.511-.467m1.809 1.832c.465 1.293.679 2.367.74 2.711a3.93 3.93 0 0 0 1.609-2.543a5.8 5.8 0 0 0-1.592-.221q-.389 0-.757.053M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m0 14.297A4.703 4.703 0 0 1 5.301 10A4.703 4.703 0 0 1 10 5.301A4.704 4.704 0 0 1 14.698 10A4.7 4.7 0 0 1 10 14.697m.922-5.623q.13.27.242.531l.071.17q.417-.05.882-.049a9.7 9.7 0 0 1 1.801.172a3.93 3.93 0 0 0-.852-2.34c-.16.206-.818.963-2.144 1.516"></svg:path>`,
+})
+export class EntypoSocialDribbbleWithCircleIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[entypoSocialEvernoteIcon],svg[entypo-social-evernote-icon]',
   host: {
     role: 'img',
@@ -80,23 +148,6 @@ export class EntypoSocialCreativeCloudIcon {
   template: `<svg:path fill="currentColor" d="M17.339 4.307c0-1.15-1.732-1.277-1.732-1.277l-4.069-.256s-.087-1.107-.909-1.492c-.822-.383-1.726-.266-2.376-.26s-.803.835-.803 1.617c0 .781.014 1.684.014 2.25c0 1.018-.447 1.449-1.566 1.449H3.591c-.645-.041-1.147.064-1.147.586c0 .523.759 4.973 1.801 6c.605.596 4.305 1.014 5.084 1.014s.519-2.301.736-2.301s.454 1.299 1.682 1.603c1.226.307 2.864.25 2.951 1.123c.113 1.152.217 2.642-.541 2.748l-1.716.068c-1.176-.084-.86-1.369-.341-1.369s.779-.019.779-.019l.065-1.406s-2.693-.318-2.807 1.498c-.105 1.66.18 2.443.389 2.613c.209.172.571.504 3.869.504c4.647 0 2.944-13.543 2.944-14.693M15.44 10.32c-.182.196-.842-.32-1.472-.32c-.631 0-1.311.334-1.471.113c-.16-.219.146-1.99 1.334-1.99s1.793 2.004 1.609 2.197"></svg:path><svg:path fill="currentColor" d="M5.804 4.166c0-.229.058-2.984.058-2.984l-3.505 3.44h2.898c.476-.001.549-.229.549-.456"></svg:path>`,
 })
 export class EntypoSocialEvernoteIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[entypoSocialFlattrIcon],svg[entypo-social-flattr-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5.598 8.541c0-1.637.434-2.678 1.889-2.912c.508-.1 1.566-.064 2.239-.064v2.5c0 .024.003.064.009.084a.236.236 0 0 0 .228.175q.09 0 .178-.09L16.377 2H7.548C3.874 2 2 4.115 2 8.066v8.287l3.598-3.602zM14.4 7.248v4.209c0 1.637-.434 2.68-1.889 2.912c-.508.1-1.566.065-2.238.065v-2.5l-.009-.084a.24.24 0 0 0-.228-.176c-.062 0-.118.033-.179.092l-6.235 6.232L7.809 18h4.643C16.125 18 18 15.885 18 11.934V3.647z"></svg:path>`,
-})
-export class EntypoSocialFlattrIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,33 +189,16 @@ export class EntypoSocialFacebookWithCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[entypoSocialBehanceIcon],svg[entypo-social-behance-icon]',
+  selector: 'svg[entypoSocialFlattrIcon],svg[entypo-social-flattr-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M8.072 9.301s1.892-.147 1.892-2.459c0-2.315-1.548-3.441-3.51-3.441H0v12.926h6.454s3.941.129 3.941-3.816c-.001-.001.171-3.21-2.323-3.21M2.844 5.697h3.61s.878 0 .878 1.344c0 1.346-.516 1.541-1.102 1.541H2.844zm3.427 8.332H2.844v-3.455h3.61s1.308-.018 1.308 1.775c0 1.512-.977 1.669-1.491 1.68m9.378-7.341c-4.771 0-4.767 4.967-4.767 4.967s-.326 4.941 4.767 4.941c0 0 4.243.254 4.243-3.437H17.71s.072 1.391-1.988 1.391c0 0-2.184.152-2.184-2.25h6.423c.001-.001.709-5.612-4.312-5.612m1.941 3.886h-4.074s.266-1.992 2.182-1.992s1.892 1.992 1.892 1.992m.507-6.414H12.98v1.594h5.117z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M5.598 8.541c0-1.637.434-2.678 1.889-2.912c.508-.1 1.566-.064 2.239-.064v2.5c0 .024.003.064.009.084a.236.236 0 0 0 .228.175q.09 0 .178-.09L16.377 2H7.548C3.874 2 2 4.115 2 8.066v8.287l3.598-3.602zM14.4 7.248v4.209c0 1.637-.434 2.68-1.889 2.912c-.508.1-1.566.065-2.238.065v-2.5l-.009-.084a.24.24 0 0 0-.228-.176c-.062 0-.118.033-.179.092l-6.235 6.232L7.809 18h4.643C16.125 18 18 15.885 18 11.934V3.647z"></svg:path>`,
 })
-export class EntypoSocialBehanceIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[entypoSocialFlickrWithCircleIcon],svg[entypo-social-flickr-with-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4M7.436 12a1.99 1.99 0 0 1-1.982-2c0-1.105.887-2 1.982-2s1.982.895 1.982 2s-.889 2-1.982 2m5.129 0a1.99 1.99 0 0 1-1.983-2c0-1.105.888-2 1.983-2a1.99 1.99 0 0 1 1.982 2c0 1.105-.887 2-1.982 2"></svg:path>`,
-})
-export class EntypoSocialFlickrWithCircleIcon {
+export class EntypoSocialFlattrIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,6 +223,57 @@ export class EntypoSocialFlickrIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[entypoSocialFlickrWithCircleIcon],svg[entypo-social-flickr-with-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4M7.436 12a1.99 1.99 0 0 1-1.982-2c0-1.105.887-2 1.982-2s1.982.895 1.982 2s-.889 2-1.982 2m5.129 0a1.99 1.99 0 0 1-1.983-2c0-1.105.888-2 1.983-2a1.99 1.99 0 0 1 1.982 2c0 1.105-.887 2-1.982 2"></svg:path>`,
+})
+export class EntypoSocialFlickrWithCircleIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoSocialGithubIcon],svg[entypo-social-github-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799m4.526-4.683c.149-.365.155-2.439-.635-4.426c0 0-1.811.199-4.551 2.08c-.575-.16-1.548-.238-2.519-.238c-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002l1.732-.002c1.506 0 7.467-.115 7.467-7.301c0-1.652-.566-2.863-1.494-3.871m-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115c0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531c.735.676 1.045 1.49 1.045 2.369c0 3.666-2.937 4.115-6.709 4.115m-3.207-5.606c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.301-.807 1.301-1.801c0-.992-.582-1.799-1.301-1.799"></svg:path>`,
+})
+export class EntypoSocialGithubIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoSocialFoursquareIcon],svg[entypo-social-foursquare-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.92 1a.92.92 0 0 0-.92.92v16.516c0 .625.765.926 1.192.47l4.471-4.79A.36.36 0 0 1 9.927 14h3.237c.486 0 .905-.343 1.001-.82l2.111-10.514A1.392 1.392 0 0 0 14.911 1zm3.918 11.19L6 15.527V3.343C6 3.154 6.154 3 6.343 3h7.14a.54.54 0 0 1 .53.648L13.6 5.703a.37.37 0 0 1-.362.297h-3.71A.527.527 0 0 0 9 6.528v1.22c0 .139.113.252.253.252h3.294c.306 0 .536.28.476.581l-.614 3.058a.45.45 0 0 1-.442.361H9.25a.54.54 0 0 0-.412.19"></svg:path>`,
+})
+export class EntypoSocialFoursquareIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[entypoSocialGithubWithCircleIcon],svg[entypo-social-github-with-circle-icon]',
   host: {
     role: 'img',
@@ -199,40 +284,6 @@ export class EntypoSocialFlickrIcon {
   template: `<svg:path fill="currentColor" d="M10.015 9.949h-.03c-1.191 0-2.24-.303-2.861.268a1.57 1.57 0 0 0-.527 1.197c0 1.852 1.483 2.08 3.389 2.08h.029c1.905 0 3.389-.229 3.389-2.08c0-.443-.156-.856-.527-1.197c-.622-.571-1.671-.268-2.862-.268M8.393 12.48c-.363 0-.656-.408-.656-.91s.293-.908.656-.908s.657.406.657.908c.001.502-.293.91-.657.91m3.213 0c-.363 0-.657-.408-.657-.91s.294-.908.657-.908c.362 0 .656.406.656.908c.001.502-.293.91-.656.91M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m.876 13.539c-.172 0-.514 0-.876.002c-.362-.002-.704-.002-.876-.002c-.76 0-3.772-.059-3.772-3.689c0-.834.286-1.445.755-1.955c-.074-.184-.078-1.232.32-2.236c0 0 .916.1 2.301 1.051c.289-.081.781-.122 1.272-.122s.982.041 1.273.121c1.385-.951 2.301-1.051 2.301-1.051c.398 1.004.395 2.053.32 2.236c.469.51.755 1.121.755 1.955c-.001 3.632-3.013 3.69-3.773 3.69"></svg:path>`,
 })
 export class EntypoSocialGithubWithCircleIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[entypoSocialBasecampIcon],svg[entypo-social-basecamp-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10 2C5.327 2 .7 8.481.7 14.422C.7 15.799 5.234 18 10 18s9.3-2.201 9.3-3.578C19.3 8.481 14.673 2 10 2m.006 13.615c-5.198 0-6.673-2.068-6.673-2.722c0-1.287 2.13-4.485 2.906-4.485c.719 0 1.542 1.811 2.314 1.811c1.241 0 2.567-3.954 3.579-3.954s4.601 5.178 4.601 6.749c0 .271-1.084 2.601-6.727 2.601"></svg:path>`,
-})
-export class EntypoSocialBasecampIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[entypoSocialDribbbleWithCircleIcon],svg[entypo-social-dribbble-with-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.26 9.982q.05-.017.103-.031a15 15 0 0 0-.279-.584c-1.88.557-3.68.562-4.001.557q-.004.038-.003.076c0 .945.34 1.853.958 2.566c.206-.332 1.298-1.961 3.222-2.584m-2.637 3.131a3.91 3.91 0 0 0 3.871.512a16.5 16.5 0 0 0-.822-2.922c-2.121.75-2.922 2.162-3.049 2.41m4.932-6.086a3.92 3.92 0 0 0-3.405-.853a20 20 0 0 1 1.421 2.223c1.283-.493 1.863-1.204 1.984-1.37m-2.85 1.637A24 24 0 0 0 8.29 6.473a3.94 3.94 0 0 0-2.113 2.658h.017c.406 0 1.849-.033 3.511-.467m1.809 1.832c.465 1.293.679 2.367.74 2.711a3.93 3.93 0 0 0 1.609-2.543a5.8 5.8 0 0 0-1.592-.221q-.389 0-.757.053M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m0 14.297A4.703 4.703 0 0 1 5.301 10A4.703 4.703 0 0 1 10 5.301A4.704 4.704 0 0 1 14.698 10A4.7 4.7 0 0 1 10 14.697m.922-5.623q.13.27.242.531l.071.17q.417-.05.882-.049a9.7 9.7 0 0 1 1.801.172a3.93 3.93 0 0 0-.852-2.34c-.16.206-.818.963-2.144 1.516"></svg:path>`,
-})
-export class EntypoSocialDribbbleWithCircleIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,16 +308,16 @@ export class EntypoSocialGoogleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[entypoSocialFoursquareIcon],svg[entypo-social-foursquare-icon]',
+  selector: 'svg[entypoSocialGoogleDriveIcon],svg[entypo-social-google-drive-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M4.92 1a.92.92 0 0 0-.92.92v16.516c0 .625.765.926 1.192.47l4.471-4.79A.36.36 0 0 1 9.927 14h3.237c.486 0 .905-.343 1.001-.82l2.111-10.514A1.392 1.392 0 0 0 14.911 1zm3.918 11.19L6 15.527V3.343C6 3.154 6.154 3 6.343 3h7.14a.54.54 0 0 1 .53.648L13.6 5.703a.37.37 0 0 1-.362.297h-3.71A.527.527 0 0 0 9 6.528v1.22c0 .139.113.252.253.252h3.294c.306 0 .536.28.476.581l-.614 3.058a.45.45 0 0 1-.442.361H9.25a.54.54 0 0 0-.412.19"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m8.175 13l-3.324 6h11.824L20 13zM5.865 2.299L0 12.914l3.372 6.084L9.238 8.383zM19.445 12L13.349 1H6.604l6.088 11z"></svg:path>`,
 })
-export class EntypoSocialFoursquareIcon {
+export class EntypoSocialGoogleDriveIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -1236,57 +1287,6 @@ export class EntypoSocialYoutubeIcon {
   template: `<svg:path fill="currentColor" d="M11.603 9.833L9.357 8.785C9.161 8.694 9 8.796 9 9.013v1.974c0 .217.161.319.357.228l2.245-1.048c.197-.092.197-.242.001-.334M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m0 13.5c-4.914 0-5-.443-5-3.9s.086-3.9 5-3.9s5 .443 5 3.9s-.086 3.9-5 3.9"></svg:path>`,
 })
 export class EntypoSocialYoutubeWithCircleIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[entypoSocialGithubIcon],svg[entypo-social-github-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799m4.526-4.683c.149-.365.155-2.439-.635-4.426c0 0-1.811.199-4.551 2.08c-.575-.16-1.548-.238-2.519-.238c-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002l1.732-.002c1.506 0 7.467-.115 7.467-7.301c0-1.652-.566-2.863-1.494-3.871m-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115c0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531c.735.676 1.045 1.49 1.045 2.369c0 3.666-2.937 4.115-6.709 4.115m-3.207-5.606c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.301-.807 1.301-1.801c0-.992-.582-1.799-1.301-1.799"></svg:path>`,
-})
-export class EntypoSocialGithubIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[entypoSocialGoogleDriveIcon],svg[entypo-social-google-drive-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m8.175 13l-3.324 6h11.824L20 13zM5.865 2.299L0 12.914l3.372 6.084L9.238 8.383zM19.445 12L13.349 1H6.604l6.088 11z"></svg:path>`,
-})
-export class EntypoSocialGoogleDriveIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[entypoSocialDribbbleIcon],svg[entypo-social-dribbble-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.565 7.421C8.207 5.007 6.754 3.038 6.648 2.893A7.88 7.88 0 0 0 2.311 8.38c.206.004 3.482.043 7.254-.959m.978 2.64a11 11 0 0 1 .309-.094a26 26 0 0 0-.637-1.336C6.169 9.843 2.287 9.755 2.15 9.751q-.006.125-.007.25c0 2.019.763 3.861 2.016 5.252l-.005-.006s2.15-3.814 6.389-5.186m-5.372 6.133v-.004c-.058-.045-.12-.086-.178-.135c.106.085.178.139.178.139M8.118 2.372l-.015.004c.006-.002.014-.002.014-.002zm7.071 1.732A7.83 7.83 0 0 0 10 2.143c-.639 0-1.258.078-1.852.221c.12.16 1.595 2.119 2.938 4.584c2.962-1.109 4.081-2.812 4.103-2.844M10 19.2a9.2 9.2 0 0 1-9.199-9.199A9.2 9.2 0 0 1 10 .8a9.2 9.2 0 0 1 9.2 9.201A9.2 9.2 0 0 1 10 19.2m1.336-7.914c-4.611 1.607-6.134 4.838-6.165 4.904a7.82 7.82 0 0 0 4.828 1.666a7.8 7.8 0 0 0 3.067-.621c-.116-.689-.573-3.096-1.679-5.967zm.354-3.166q.276.56.523 1.139q.087.204.17.406c2.713-.342 5.385.238 5.473.256a7.84 7.84 0 0 0-1.787-4.912c-.018.023-1.279 1.843-4.379 3.111m1.171 2.785c1.031 2.836 1.449 5.142 1.529 5.611a7.86 7.86 0 0 0 3.367-5.27c-.156-.05-2.356-.747-4.896-.341"></svg:path>`,
-})
-export class EntypoSocialDribbbleIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

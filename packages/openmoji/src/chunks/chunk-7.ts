@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[openmojiThumbsUpMediumSkinToneIcon],svg[openmoji-thumbs-up-medium-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#c19a65" stroke="#c19a65" d="m37.088 11.232l-2.922.645L19 29.21l-7.333 13.059l1.999 11.274l12.938 7.07l9.625-.041l14.042.208l2.395-1.57l.75-3.833l-.75-1.584l3.584-.083l1.333-1.667l.833-2.333l-1.583-3l1.583-.667l1.917-2.666l-.917-2.75l-2.5-1.167l1.167-2.167l.167-3.416l-2.584-1.5l-13.166-.5l-.834-.667l-.854-.597h-9.125l.063-1.736l3.916-9.584l1.667-4.583z"></svg:path><svg:g fill="none" stroke="#000" stroke-width="2"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M35.236 59.6h-9c-8.321 0-14-6.68-14-15a19.62 19.62 0 0 1 5-13m17.389 0h-4.389l7-18c.811-2.083-2.79-3.8-5-1l-15 19m20.212 3.5a3.786 3.786 0 0 0 4 3.5h13a3.531 3.531 0 1 0 0-7h-13a3.786 3.786 0 0 0-4 3.5m.857 21.337a3.786 3.786 0 0 0 4 3.5h7a3.531 3.531 0 1 0 0-7h-7a3.786 3.786 0 0 0-4 3.5m-5.069-14a3.786 3.786 0 0 0 4 3.5h19a3.531 3.531 0 1 0 0-7h-19a3.786 3.786 0 0 0-4 3.5"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M35.236 49.437a3.786 3.786 0 0 0 4 3.5h15a3.531 3.531 0 1 0 0-7h-15a3.786 3.786 0 0 0-4 3.5"></svg:path><svg:path stroke-miterlimit="10" d="M14.136 36.263a19.5 19.5 0 0 0-1.906 7.839c0 8.56 4.625 15.5 15.125 15.5"></svg:path></svg:g>`,
+})
+export class OpenmojiThumbsUpMediumSkinToneIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[openmojiTicketIcon],svg[openmoji-ticket-icon]',
   host: {
     role: 'img',
@@ -2967,7 +2984,7 @@ export class OpenmojiWindsurfingIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#ea5a47" d="M55 26H17V14h38z"></svg:path><svg:path fill="#ea5a47" d="M56 24c0 11.046-8.954 20-20 20s-20-8.954-20-20"></svg:path><svg:path fill="#d22f27" d="M55 24V14h-7.57c.597 6.335.293 21.204-13.788 29.849c.775.091 1.559.151 2.358.151c11.046 0 20-8.954 20-20z"></svg:path><svg:g fill="none" stroke="#000"><svg:path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 67h32M36 44v23m20-43c0 3.265-.782 6.347-2.17 9.07C50.524 39.557 43.78 44 36 44c-11.046 0-20-8.954-20-20m0-19v19M56 5v19"></svg:path><svg:path stroke-miterlimit="10" stroke-width="1.974" d="M16.539 14.5H55.5"></svg:path></svg:g>`,
+  template: `<svg:path fill="#ea5a47" d="M55 26H17V14h38z"></svg:path><svg:path fill="#ea5a47" d="M56 24c0 11.046-8.954 20-20 20s-20-8.954-20-20"></svg:path><svg:path fill="#d22f27" d="M55 24V14h-7.57c.597 6.335.293 21.204-13.788 29.849c.775.091 1.559.151 2.358.151c11.046 0 20-8.954 20-20z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 67h32M36 44v23m20-43c0 3.265-.782 6.347-2.17 9.07C50.524 39.557 43.78 44 36 44c-11.046 0-20-8.954-20-20m0-19v19M56 5v19"></svg:path>`,
 })
 export class OpenmojiWineGlassIcon {
   readonly viewBox = input("0 0 72 72")
@@ -8478,23 +8495,6 @@ export class OpenmojiWomanPlayingHandballMediumDarkSkinToneIcon {
   template: `<svg:g fill="#debb90"><svg:circle cx="35.795" cy="12.733" r="2.86"></svg:circle><svg:path d="m35.51 19.215l-13.92 1.049l-7.244-.953s-1.335.667.476 1.906a15.9 15.9 0 0 0 7.054 2.383c3.337 0 6.594-.772 7.354.963a14.3 14.3 0 0 0 1.058 3.185l.842 1.354l-.715 5.309l-2.317 5.186l-11.369 5.452l.381 2.86l12.726-2.953l3.861-4.006l-.116 1.46l-.268 3.136a13.3 13.3 0 0 1-2.098 6.106l-3.458 5.315l2.544 1.796l6.99-8.287a3.6 3.6 0 0 0 .76-1.522l1.808-7.88a4 4 0 0 0 .084-.53l.61-6.893s.641-5.615 1.335-10.353c.838-1.924 4.583-.079 7.824.874c1.812.477 4.29 1.526 7.15 2.098c2.098.476 2.67-1.812 2.67-1.812l-17.446-6.1Z"></svg:path></svg:g><svg:circle cx="11.963" cy="20.359" r="2.86" fill="#ea5a47"></svg:circle><svg:g fill="none" stroke="#000" stroke-width="2"><svg:circle cx="11.963" cy="20.358" r="2.86" stroke-miterlimit="10"></svg:circle><svg:circle cx="35.795" cy="12.733" r="3" stroke-miterlimit="10"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M35.89 37.423a91 91 0 0 1-5.922 6.864a3 3 0 0 1-1.263.696l-9.783 2.64a1.7 1.7 0 0 1-2.097-1.144a2.28 2.28 0 0 1 1.525-2.097s5.589-2.552 8.552-4.41a5.9 5.9 0 0 0 2.221-2.541a25 25 0 0 0 2.14-6.264c.283-2.277-1.075-6.735-1.075-6.735"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M33.478 40.913s.074 1.687.05 3.522a11.9 11.9 0 0 1-2.06 6.538l-3.3 4.848a1.78 1.78 0 0 0 .382 2.478a2.37 2.37 0 0 0 2.765-.476s3.795-4.72 5.648-7.3a7.9 7.9 0 0 0 1.28-2.827l1.094-4.719a20.6 20.6 0 0 0 .465-4.204c.067-1.515.145-3.468.141-4.777c0-.601.43-6.921.43-7.146m-27.552-9.446l6.96 3.05a6.37 6.37 0 0 0 3.526.19l2.098-.667a23.4 23.4 0 0 1 3.717-.762l10.486-.667a12.5 12.5 0 0 1 3.718.476l15.348 5.052M31.949 11.075s-.547-.366-.946-.128c-.469.279-.951 1.52-1.53 2a3.36 3.36 0 0 1-2.017.805"></svg:path></svg:g>`,
 })
 export class OpenmojiWomanPlayingHandballMediumLightSkinToneIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiWomanPlayingHandballMediumSkinToneIcon],svg[openmoji-woman-playing-handball-medium-skin-tone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="#c19a65"><svg:circle cx="35.795" cy="12.733" r="2.86"></svg:circle><svg:path d="m35.51 19.215l-13.92 1.049l-7.244-.953s-1.335.667.476 1.906a15.9 15.9 0 0 0 7.054 2.383c3.337 0 6.594-.772 7.354.963a14.3 14.3 0 0 0 1.058 3.185l.842 1.354l-.715 5.309l-2.317 5.186l-11.369 5.452l.381 2.86l12.726-2.953l3.861-4.006l-.116 1.46l-.268 3.136a13.3 13.3 0 0 1-2.098 6.106l-3.458 5.315l2.544 1.796l6.99-8.287a3.6 3.6 0 0 0 .76-1.522l1.808-7.88a4 4 0 0 0 .084-.53l.61-6.893s.641-5.615 1.335-10.353c.838-1.924 4.583-.079 7.824.874c1.812.477 4.29 1.526 7.15 2.098c2.098.476 2.67-1.812 2.67-1.812l-17.446-6.1Z"></svg:path></svg:g><svg:circle cx="11.963" cy="20.359" r="2.86" fill="#ea5a47"></svg:circle><svg:g fill="none" stroke="#000" stroke-width="2"><svg:circle cx="11.963" cy="20.358" r="2.86" stroke-miterlimit="10"></svg:circle><svg:circle cx="35.795" cy="12.733" r="3" stroke-miterlimit="10"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M35.89 37.423a91 91 0 0 1-5.922 6.864a3 3 0 0 1-1.263.696l-9.783 2.64a1.7 1.7 0 0 1-2.097-1.144a2.28 2.28 0 0 1 1.525-2.097s5.589-2.552 8.552-4.41a5.9 5.9 0 0 0 2.221-2.541a25 25 0 0 0 2.14-6.264c.283-2.277-1.075-6.735-1.075-6.735"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M33.478 40.913s.074 1.687.05 3.522a11.9 11.9 0 0 1-2.06 6.538l-3.3 4.848a1.78 1.78 0 0 0 .382 2.478a2.37 2.37 0 0 0 2.765-.476s3.795-4.72 5.648-7.3a7.9 7.9 0 0 0 1.28-2.827l1.094-4.719a20.6 20.6 0 0 0 .465-4.204c.067-1.515.145-3.468.141-4.777c0-.601.43-6.921.43-7.146m-27.552-9.446l6.96 3.05a6.37 6.37 0 0 0 3.526.19l2.098-.667a23.4 23.4 0 0 1 3.717-.762l10.486-.667a12.5 12.5 0 0 1 3.718.476l15.348 5.052M31.949 11.075s-.547-.366-.946-.128c-.469.279-.951 1.52-1.53 2a3.36 3.36 0 0 1-2.017.805"></svg:path></svg:g>`,
-})
-export class OpenmojiWomanPlayingHandballMediumSkinToneIcon {
   readonly viewBox = input("0 0 72 72")
   readonly width = input("1em")
   readonly height = input("1em")

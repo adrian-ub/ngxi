@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[covidCovid19Virus4Icon],svg[covid-covid-19-virus-4-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.25 19.651a3.714 3.714 0 1 0 0-7.428a3.714 3.714 0 0 0 0 7.428M6.631 9.437h1.238m-.619 0v2.786m4.158-1.32l.876.875m-.438-.437l-1.97 1.969m3.874 2.008v1.238m0-.619h-2.786m1.32 4.158l-.876.876m.438-.438l-1.97-1.97m-2.007 3.874H6.631m.619 0v-2.786m-4.158 1.32l-.876-.876m.438.438l1.97-1.97M.75 16.556v-1.238m0 .619h2.786m-1.32-4.159l.876-.875m-.438.438l1.97 1.969M18.5 9.027a2.714 2.714 0 1 0 0-5.428a2.714 2.714 0 0 0 0 5.428m-.452-7.464h.904m-.452 0v2.036m3.039-.964l.64.639m-.32-.32l-1.44 1.44m2.831 1.467v.905m0-.453h-2.036m.965 3.039l-.64.64m.32-.32l-1.44-1.44m-1.467 2.831h-.904m.452 0V9.027m-3.039.965l-.64-.64m.32.32l1.44-1.44M13.75 6.766v-.905m0 .452h2.036m-.965-3.039l.64-.639m-.32.319l1.44 1.44"></svg:path>`,
+})
+export class CovidCovid19Virus4Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[covidCovid19VirusPandemic2Icon],svg[covid-covid-19-virus-pandemic-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M13.885 6.648a5.352 5.352 0 0 1 0 10.7m-.892-14.713h1.784m-.892 0v4.013m5.991-1.901l1.262 1.261m-.631-.63l-2.838 2.838m5.581 2.892v1.784m0-.892h-4.014m1.902 5.992l-1.262 1.261m.631-.631l-2.838-2.838m-2.892 5.581h-1.784m.892 0v-4.013M10.25 21.5a9.5 9.5 0 0 1 0-19z"></svg:path><svg:path d="M10.25 2.5A10.92 10.92 0 0 0 5.5 12a10.92 10.92 0 0 0 4.75 9.5m0-12.571H1.665M10 15.071H1.415"></svg:path></svg:g>`,
+})
+export class CovidCovid19VirusPandemic2Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[covidCovid19VirusPandemic1Icon],svg[covid-covid-19-virus-pandemic-1-icon]',
   host: {
     role: 'img',
@@ -36,23 +70,6 @@ export class CovidCovid19VirusPandemic3Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[covidCovid19VirusPandemic2Icon],svg[covid-covid-19-virus-pandemic-2-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M13.885 6.648a5.352 5.352 0 0 1 0 10.7m-.892-14.713h1.784m-.892 0v4.013m5.991-1.901l1.262 1.261m-.631-.63l-2.838 2.838m5.581 2.892v1.784m0-.892h-4.014m1.902 5.992l-1.262 1.261m.631-.631l-2.838-2.838m-2.892 5.581h-1.784m.892 0v-4.013M10.25 21.5a9.5 9.5 0 0 1 0-19z"></svg:path><svg:path d="M10.25 2.5A10.92 10.92 0 0 0 5.5 12a10.92 10.92 0 0 0 4.75 9.5m0-12.571H1.665M10 15.071H1.415"></svg:path></svg:g>`,
-})
-export class CovidCovid19VirusPandemic2Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[covidCovidCarrierBlood1Icon],svg[covid-covid-carrier-blood-1-icon]',
   host: {
     role: 'img',
@@ -70,16 +87,33 @@ export class CovidCovidCarrierBlood1Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[covidCovid19Virus4Icon],svg[covid-covid-19-virus-4-icon]',
+  selector: 'svg[covidCovidCarrierHumanIcon],svg[covid-covid-carrier-human-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.25 19.651a3.714 3.714 0 1 0 0-7.428a3.714 3.714 0 0 0 0 7.428M6.631 9.437h1.238m-.619 0v2.786m4.158-1.32l.876.875m-.438-.437l-1.97 1.969m3.874 2.008v1.238m0-.619h-2.786m1.32 4.158l-.876.876m.438-.438l-1.97-1.97m-2.007 3.874H6.631m.619 0v-2.786m-4.158 1.32l-.876-.876m.438.438l1.97-1.97M.75 16.556v-1.238m0 .619h2.786m-1.32-4.159l.876-.875m-.438.438l1.97 1.969M18.5 9.027a2.714 2.714 0 1 0 0-5.428a2.714 2.714 0 0 0 0 5.428m-.452-7.464h.904m-.452 0v2.036m3.039-.964l.64.639m-.32-.32l-1.44 1.44m2.831 1.467v.905m0-.453h-2.036m.965 3.039l-.64.64m.32-.32l-1.44-1.44m-1.467 2.831h-.904m.452 0V9.027m-3.039.965l-.64-.64m.32.32l1.44-1.44M13.75 6.766v-.905m0 .452h2.036m-.965-3.039l.64-.639m-.32.319l1.44 1.44"></svg:path>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M11.857 20.628a3.163 3.163 0 1 0 0-6.326a3.163 3.163 0 0 0 0 6.326m-.527-8.698h1.054m-.527 0v2.372m3.541-1.124l.746.746m-.373-.373l-1.677 1.677m3.298 1.71v1.054m0-.527H15.02m1.124 3.541l-.746.746m.373-.373l-1.677-1.678M12.384 23H11.33m.527 0v-2.372m-3.541 1.124l-.745-.746m.372.373l1.678-1.678m-3.299-1.709v-1.054m0 .527h2.372m-1.123-3.541l.745-.746m-.373.373l1.678 1.677"></svg:path><svg:path d="M9.357 9.004a4.529 4.529 0 1 1 5.286 0a8.41 8.41 0 0 1 5.769 7.98v6.219"></svg:path><svg:path d="M3.588 23.203v-6.218a8.41 8.41 0 0 1 5.769-7.981"></svg:path></svg:g>`,
 })
-export class CovidCovid19Virus4Icon {
+export class CovidCovidCarrierHumanIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[covidCovidCarrierBlood2Icon],svg[covid-covid-carrier-blood-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M16.881 10.851a3.517 3.517 0 1 0 0-7.034a3.517 3.517 0 0 0 0 7.034m-.586-9.672h1.172m-.586 0v2.638m3.937-1.25l.829.829m-.414-.414l-1.865 1.865m3.668 1.901V7.92m0-.586h-2.638m1.249 3.937l-.829.829m.415-.414l-1.865-1.865m-1.901 3.667h-1.172m.586 0v-2.637M12.943 12.1l-.829-.829m.415.415l1.865-1.865M10.726 7.92V6.748m0 .586h2.638m-1.25-3.938l.829-.829m-.414.415l1.865 1.865m.442 11.467a6.936 6.936 0 1 1-13.872 0c0-5 4.571-12.548 6.292-15.211a.765.765 0 0 1 1.289 0l.761 1.288"></svg:path><svg:path d="M7.9 20.167a3.853 3.853 0 0 1-3.853-3.853"></svg:path></svg:g>`,
+})
+export class CovidCovidCarrierBlood2Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,40 +155,6 @@ export class CovidCovid19Virus1Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[covidCovid19Virus3Icon],svg[covid-covid19-virus-3-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M7.851 4.958L6.215 3.322a2.046 2.046 0 0 0-2.893 2.893l1.6 1.694m11.227 11.133l1.636 1.636a2.046 2.046 0 0 0 2.893-2.893l-1.636-1.636m-14.084 0l-1.636 1.636a2.046 2.046 0 0 0 2.893 2.893l1.636-1.637M19.075 7.909l1.589-1.694a2.047 2.047 0 1 0-2.893-2.893L16.14 4.953"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M21.205 9.955h-1.291a8.18 8.18 0 0 0-5.869-5.869V2.8a2.045 2.045 0 0 0-4.09 0v1.286a8.18 8.18 0 0 0-5.869 5.869H2.8a2.045 2.045 0 0 0 0 4.09h1.286a8.18 8.18 0 0 0 5.869 5.869v1.291a2.045 2.045 0 0 0 4.09 0v-1.291a8.18 8.18 0 0 0 5.869-5.869h1.291a2.045 2.045 0 1 0 0-4.09"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M13.534 13.023a2.557 2.557 0 1 0 0-5.114a2.557 2.557 0 0 0 0 5.114"></svg:path><svg:path d="M9.443 15.955a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75"></svg:path></svg:g>`,
-})
-export class CovidCovid19Virus3Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[covidCovidCarrierBlood2Icon],svg[covid-covid-carrier-blood-2-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M16.881 10.851a3.517 3.517 0 1 0 0-7.034a3.517 3.517 0 0 0 0 7.034m-.586-9.672h1.172m-.586 0v2.638m3.937-1.25l.829.829m-.414-.414l-1.865 1.865m3.668 1.901V7.92m0-.586h-2.638m1.249 3.937l-.829.829m.415-.414l-1.865-1.865m-1.901 3.667h-1.172m.586 0v-2.637M12.943 12.1l-.829-.829m.415.415l1.865-1.865M10.726 7.92V6.748m0 .586h2.638m-1.25-3.938l.829-.829m-.414.415l1.865 1.865m.442 11.467a6.936 6.936 0 1 1-13.872 0c0-5 4.571-12.548 6.292-15.211a.765.765 0 0 1 1.289 0l.761 1.288"></svg:path><svg:path d="M7.9 20.167a3.853 3.853 0 0 1-3.853-3.853"></svg:path></svg:g>`,
-})
-export class CovidCovidCarrierBlood2Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[covidCovid19Virus2Icon],svg[covid-covid19-virus-2-icon]',
   host: {
     role: 'img',
@@ -165,57 +165,6 @@ export class CovidCovidCarrierBlood2Icon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M4.934 7.263L3.269 5.6A1.648 1.648 0 1 1 5.6 3.269l1.663 1.665m0 14.132L5.6 20.731A1.647 1.647 0 1 1 3.269 18.4l1.665-1.666m14.132.003l1.665 1.663a1.648 1.648 0 0 1-2.331 2.331l-1.666-1.665m.003-14.132L18.4 3.269A1.648 1.648 0 0 1 20.731 5.6l-1.665 1.663"></svg:path><svg:path d="M20.347 10.354a8.51 8.51 0 0 0-6.7-6.7m-.001 16.693a8.515 8.515 0 0 0 6.7-6.7m-16.693-.001a8.51 8.51 0 0 0 6.7 6.7m.001-16.693a8.51 8.51 0 0 0-6.7 6.7"></svg:path><svg:path d="M9.805 6.787c.351-.352.549-.828.549-1.325V2.4a1.646 1.646 0 1 1 3.292 0v3.062c.002.498.201.974.554 1.325M6.787 14.2a1.88 1.88 0 0 0-1.325-.549H2.4a1.646 1.646 0 1 1 0-3.292h3.062c.497 0 .973-.198 1.325-.549m7.413 7.403a1.88 1.88 0 0 0-.549 1.325V21.6a1.646 1.646 0 1 1-3.292 0v-3.062c0-.497-.198-.973-.549-1.325m7.403-7.408c.352.351.828.549 1.325.549H21.6a1.646 1.646 0 0 1 0 3.292h-3.062c-.497 0-.973.198-1.325.549"></svg:path></svg:g>`,
 })
 export class CovidCovid19Virus2Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[covidCovid19VirusHeal2Icon],svg[covid-covid19-virus-heal-2-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M12.017.75H8.983m1.517 0v2.6m-5.822-.817L3.606 3.606L2.533 4.678m1.073-1.072l1.838 1.838M.75 8.983v3.034m0-1.517h2.6m-.817 5.822l1.073 1.072l1.072 1.073m-1.072-1.073l1.838-1.838M18.467 4.678l-1.073-1.072l-1.072-1.073m1.072 1.073l-1.838 1.838M8.983 9.85a1.517 1.517 0 1 0 0-3.034a1.517 1.517 0 0 0 0 3.034"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M17.61 9.75a7.15 7.15 0 1 0-7.982 7.842m13.622-.342a1 1 0 0 0-1-1h-2.5v-2.5a1 1 0 0 0-1-1h-1.5a1 1 0 0 0-1 1v2.5h-2.5a1 1 0 0 0-1 1v1.5a1 1 0 0 0 1 1h2.5v2.5a1 1 0 0 0 1 1h1.5a1 1 0 0 0 1-1v-2.5h2.5a1 1 0 0 0 1-1z"></svg:path><svg:path d="M10.208 14.434a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75"></svg:path></svg:g>`,
-})
-export class CovidCovid19VirusHeal2Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[covidCovidCarrierHumanIcon],svg[covid-covid-carrier-human-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M11.857 20.628a3.163 3.163 0 1 0 0-6.326a3.163 3.163 0 0 0 0 6.326m-.527-8.698h1.054m-.527 0v2.372m3.541-1.124l.746.746m-.373-.373l-1.677 1.677m3.298 1.71v1.054m0-.527H15.02m1.124 3.541l-.746.746m.373-.373l-1.677-1.678M12.384 23H11.33m.527 0v-2.372m-3.541 1.124l-.745-.746m.372.373l1.678-1.678m-3.299-1.709v-1.054m0 .527h2.372m-1.123-3.541l.745-.746m-.373.373l1.678 1.677"></svg:path><svg:path d="M9.357 9.004a4.529 4.529 0 1 1 5.286 0a8.41 8.41 0 0 1 5.769 7.98v6.219"></svg:path><svg:path d="M3.588 23.203v-6.218a8.41 8.41 0 0 1 5.769-7.981"></svg:path></svg:g>`,
-})
-export class CovidCovidCarrierHumanIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[covidCovid19VirusLifelong2Icon],svg[covid-covid19-virus-lifelong-2-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M12.017.767H8.983m1.517 0v2.6M4.678 2.55L3.606 3.622L2.533 4.695m1.073-1.073l1.838 1.839M.75 9v3.033m0-1.516h2.6m-.817 5.821l1.073 1.073l1.072 1.072m-1.072-1.072l1.838-1.839M18.467 4.695l-1.073-1.073l-1.072-1.072m1.072 1.072l-1.838 1.839M8.983 9.867a1.517 1.517 0 1 0 0-3.034a1.517 1.517 0 0 0 0 3.034"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M17.356 8.483a7.15 7.15 0 1 0-8.889 8.884"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M17.25 23.233a6 6 0 1 0 0-12a6 6 0 0 0 0 12"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M19.902 17.233H17.25v-2.651"></svg:path><svg:path d="M9.417 13.367a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75"></svg:path></svg:g>`,
-})
-export class CovidCovid19VirusLifelong2Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,6 +189,23 @@ export class CovidCovid19VirusBatIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[covidCovid19Virus3Icon],svg[covid-covid19-virus-3-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M7.851 4.958L6.215 3.322a2.046 2.046 0 0 0-2.893 2.893l1.6 1.694m11.227 11.133l1.636 1.636a2.046 2.046 0 0 0 2.893-2.893l-1.636-1.636m-14.084 0l-1.636 1.636a2.046 2.046 0 0 0 2.893 2.893l1.636-1.637M19.075 7.909l1.589-1.694a2.047 2.047 0 1 0-2.893-2.893L16.14 4.953"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M21.205 9.955h-1.291a8.18 8.18 0 0 0-5.869-5.869V2.8a2.045 2.045 0 0 0-4.09 0v1.286a8.18 8.18 0 0 0-5.869 5.869H2.8a2.045 2.045 0 0 0 0 4.09h1.286a8.18 8.18 0 0 0 5.869 5.869v1.291a2.045 2.045 0 0 0 4.09 0v-1.291a8.18 8.18 0 0 0 5.869-5.869h1.291a2.045 2.045 0 1 0 0-4.09"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M13.534 13.023a2.557 2.557 0 1 0 0-5.114a2.557 2.557 0 0 0 0 5.114"></svg:path><svg:path d="M9.443 15.955a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75"></svg:path></svg:g>`,
+})
+export class CovidCovid19Virus3Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[covidCovid19VirusHeal1Icon],svg[covid-covid19-virus-heal-1-icon]',
   host: {
     role: 'img',
@@ -250,6 +216,23 @@ export class CovidCovid19VirusBatIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M23.25 17.25a1 1 0 0 0-1-1h-2.5v-2.5a1 1 0 0 0-1-1h-1.5a1 1 0 0 0-1 1v2.5h-2.5a1 1 0 0 0-1 1v1.5a1 1 0 0 0 1 1h2.5v2.5a1 1 0 0 0 1 1h1.5a1 1 0 0 0 1-1v-2.5h2.5a1 1 0 0 0 1-1zM4.183 12.754H2.162a1.413 1.413 0 0 1 0-2.825h2.021m5.746-5.746V2.162a1.413 1.413 0 0 1 2.825 0v2.021"></svg:path><svg:path d="M15.405 5.28a7.3 7.3 0 0 0-8.128 0M18.5 9.929a7.25 7.25 0 0 0-1.1-2.652M7.277 17.4a7.3 7.3 0 0 0 2.478 1.061M5.28 7.277a7.3 7.3 0 0 0 0 8.128"></svg:path><svg:path d="M6.848 9.511c0-.426-.17-.835-.471-1.137L4.518 6.515a1.414 1.414 0 0 1 2-2l1.856 1.862c.302.301.71.47 1.137.471m0 8.987a1.6 1.6 0 0 0-1.137.471l-1.859 1.859a1.414 1.414 0 0 1-2-2l1.859-1.86c.301-.301.47-.71.471-1.136m6.327-6.321c.426 0 .835-.17 1.136-.471l1.86-1.859a1.414 1.414 0 1 1 2 2l-1.862 1.856a1.6 1.6 0 0 0-.471 1.137"></svg:path></svg:g>`,
 })
 export class CovidCovid19VirusHeal1Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[covidCovid19VirusHeal2Icon],svg[covid-covid19-virus-heal-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M12.017.75H8.983m1.517 0v2.6m-5.822-.817L3.606 3.606L2.533 4.678m1.073-1.072l1.838 1.838M.75 8.983v3.034m0-1.517h2.6m-.817 5.822l1.073 1.072l1.072 1.073m-1.072-1.073l1.838-1.838M18.467 4.678l-1.073-1.072l-1.072-1.073m1.072 1.073l-1.838 1.838M8.983 9.85a1.517 1.517 0 1 0 0-3.034a1.517 1.517 0 0 0 0 3.034"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M17.61 9.75a7.15 7.15 0 1 0-7.982 7.842m13.622-.342a1 1 0 0 0-1-1h-2.5v-2.5a1 1 0 0 0-1-1h-1.5a1 1 0 0 0-1 1v2.5h-2.5a1 1 0 0 0-1 1v1.5a1 1 0 0 0 1 1h2.5v2.5a1 1 0 0 0 1 1h1.5a1 1 0 0 0 1-1v-2.5h2.5a1 1 0 0 0 1-1z"></svg:path><svg:path d="M10.208 14.434a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75"></svg:path></svg:g>`,
+})
+export class CovidCovid19VirusHeal2Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,16 +257,16 @@ export class CovidCovid19VirusLifelong1Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[covidCovid19VirusPatient1Icon],svg[covid-covid19-virus-patient-1-icon]',
+  selector: 'svg[covidCovid19VirusLifelong2Icon],svg[covid-covid19-virus-lifelong-2-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 20.679a3.429 3.429 0 1 0 0-6.858a3.429 3.429 0 0 0 0 6.858m-.571-9.429h1.142m-.571 0v2.571m3.839-1.218l.808.808m-.404-.404l-1.819 1.819m3.576 1.853v1.142m0-.571h-2.571m1.218 3.839l-.808.808m.404-.404l-1.819-1.819m-1.853 3.576h-1.142m.571 0v-2.571m-3.839 1.218l-.808-.808m.404.404l1.819-1.819m-3.576-1.853v-1.142m0 .571h2.571m-1.218-3.839l.808-.808m-.404.404l1.819 1.819M7.5 9a4.125 4.125 0 1 0 0-8.25A4.125 4.125 0 0 0 7.5 9M.75 17.25a6.753 6.753 0 0 1 9.4-6.208"></svg:path>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M12.017.767H8.983m1.517 0v2.6M4.678 2.55L3.606 3.622L2.533 4.695m1.073-1.073l1.838 1.839M.75 9v3.033m0-1.516h2.6m-.817 5.821l1.073 1.073l1.072 1.072m-1.072-1.072l1.838-1.839M18.467 4.695l-1.073-1.073l-1.072-1.072m1.072 1.072l-1.838 1.839M8.983 9.867a1.517 1.517 0 1 0 0-3.034a1.517 1.517 0 0 0 0 3.034"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M17.356 8.483a7.15 7.15 0 1 0-8.889 8.884"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M17.25 23.233a6 6 0 1 0 0-12a6 6 0 0 0 0 12"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M19.902 17.233H17.25v-2.651"></svg:path><svg:path d="M9.417 13.367a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75"></svg:path></svg:g>`,
 })
-export class CovidCovid19VirusPatient1Icon {
+export class CovidCovid19VirusLifelong2Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -301,6 +284,23 @@ export class CovidCovid19VirusPatient1Icon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 20.679a3.429 3.429 0 1 0 0-6.858a3.429 3.429 0 0 0 0 6.858m-.571-9.429h1.142m-.571 0v2.571m3.839-1.218l.808.808m-.404-.404l-1.819 1.819m3.576 1.853v1.142m0-.571h-2.571m1.218 3.839l-.808.808m.404-.404l-1.819-1.819m-1.853 3.576h-1.142m.571 0v-2.571m-3.839 1.218l-.808-.808m.404.404l1.819-1.819m-3.576-1.853v-1.142m0 .571h2.571m-1.218-3.839l.808-.808m-.404.404l1.819 1.819M6 6.75a3 3 0 1 0 0-6a3 3 0 0 0 0 6m4.555 4.138A5.251 5.251 0 0 0 .75 13.5v2.25H3l.75 7.5h4.5l.323-3.232"></svg:path>`,
 })
 export class CovidCovid19VirusPatient2Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[covidCovid19VirusPatient1Icon],svg[covid-covid19-virus-patient-1-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 20.679a3.429 3.429 0 1 0 0-6.858a3.429 3.429 0 0 0 0 6.858m-.571-9.429h1.142m-.571 0v2.571m3.839-1.218l.808.808m-.404-.404l-1.819 1.819m3.576 1.853v1.142m0-.571h-2.571m1.218 3.839l-.808.808m.404-.404l-1.819-1.819m-1.853 3.576h-1.142m.571 0v-2.571m-3.839 1.218l-.808-.808m.404.404l1.819-1.819m-3.576-1.853v-1.142m0 .571h2.571m-1.218-3.839l.808-.808m-.404.404l1.819 1.819M7.5 9a4.125 4.125 0 1 0 0-8.25A4.125 4.125 0 0 0 7.5 9M.75 17.25a6.753 6.753 0 0 1 9.4-6.208"></svg:path>`,
+})
+export class CovidCovid19VirusPatient1Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

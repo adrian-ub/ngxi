@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialIconThemeFolderReduxReducerOpenIcon],svg[material-icon-theme-folder-redux-reducer-open-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#ef5350" d="M28.967 12H9.442a2 2 0 0 0-1.898 1.368L4 24V10h24a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h22l4.805-11.212A2 2 0 0 0 28.967 12"></svg:path><svg:path fill="#ffcdd2" stroke="#ffcdd2" stroke-linejoin="round" stroke-width=".293" d="M25.948 24.114a1.65 1.65 0 0 0 .97-.6a1.8 1.8 0 0 0 .381-1.274a1.72 1.72 0 0 0-1.69-1.596h-.06a1.724 1.724 0 0 0-1.61 1.814a1.85 1.85 0 0 0 .34.985a8.85 8.85 0 0 1-3.863 3.799a6.15 6.15 0 0 1-3.876.771a3.13 3.13 0 0 1-2.32-1.411a3.67 3.67 0 0 1-.18-3.738a5.8 5.8 0 0 1 1.605-1.986a.3.3 0 0 0 .098-.313a14 14 0 0 1-.315-1.298a.29.29 0 0 0-.172-.213a.28.28 0 0 0-.272.036c-3.731 2.836-3.326 6.763-2.188 8.579a5.36 5.36 0 0 0 4.294 2.229q.125 0 .24-.005h.04a6 6 0 0 0 1.5-.188a9.88 9.88 0 0 0 7.078-5.591Z"></svg:path><svg:path fill="#ffcdd2" stroke="#ffcdd2" stroke-linejoin="round" stroke-width=".293" d="M30.327 20.428a10.12 10.12 0 0 0-7.774-3.69q-.133 0-.265.003h-.234a1.61 1.61 0 0 0-1.377-.78h-.053a1.62 1.62 0 0 0-1.175.535a1.806 1.806 0 0 0 .039 2.466a1.67 1.67 0 0 0 1.19.494h.064a1.68 1.68 0 0 0 1.375-.886h.27a8.83 8.83 0 0 1 5.126 1.646a6.6 6.6 0 0 1 2.522 3.202a3.48 3.48 0 0 1-.046 2.831a3.39 3.39 0 0 1-3.137 1.97a5.8 5.8 0 0 1-2.32-.522a.27.27 0 0 0-.304.054a14 14 0 0 1-1.088.912a.294.294 0 0 0 .039.495a7.7 7.7 0 0 0 3.313.84l.192.002a5.66 5.66 0 0 0 4.886-2.948a6.39 6.39 0 0 0-1.243-6.624Z"></svg:path><svg:path fill="#ffcdd2" stroke="#ffcdd2" stroke-linejoin="round" stroke-width=".293" d="m17.249 24.295l.123-.01l-.123.02a1.705 1.705 0 0 0 1.67 1.682h.053a1.715 1.715 0 0 0 1.64-1.778a1.78 1.78 0 0 0-.507-1.224a1.6 1.6 0 0 0-1.187-.493h-.076a9.6 9.6 0 0 1-1.154-5.448a6.83 6.83 0 0 1 1.39-3.853a3.97 3.97 0 0 1 2.842-1.363h.055c2.438 0 3.415 3.34 3.477 4.491a.29.29 0 0 0 .216.265c.299.073.822.246 1.213.384a.27.27 0 0 0 .266-.048a.3.3 0 0 0 .105-.247C26.928 12.088 24.204 10 21.804 10a5.96 5.96 0 0 0-5.36 4.39a11.38 11.38 0 0 0 .936 9.155a1.5 1.5 0 0 0-.131.75Z"></svg:path>`,
+})
+export class MaterialIconThemeFolderReduxReducerOpenIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeFolderRepositoryIcon],svg[material-icon-theme-folder-repository-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#43a047" d="m13.844 7.536l-1.288-1.072A2 2 0 0 0 11.276 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2H15.124a2 2 0 0 1-1.28-.464"></svg:path><svg:path fill="#c8e6c9" d="M20 10a2 2 0 0 0-1.6.8l-1.6 2.134a4 4 0 0 0-.8 2.398V26a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V15.332a4 4 0 0 0-.8-2.398L29.6 10.8A2 2 0 0 0 28 10zm0 2h8l1.5 2h-11zm2 4h4v4h4l-6 6l-6-6h4z"></svg:path>`,
+})
+export class MaterialIconThemeFolderRepositoryIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialIconThemeFolderRepositoryOpenIcon],svg[material-icon-theme-folder-repository-open-icon]',
   host: {
     role: 'img',
@@ -8462,40 +8496,6 @@ export class MaterialIconThemeTypstIcon {
 })
 export class MaterialIconThemeUmiIcon {
   readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialIconThemeUmlIcon],svg[material-icon-theme-uml-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#b39ddb" d="M87 76.652L53.84 93.907l-.038-41.04l13.9-7.15v29.622l19.224-9.85z"></svg:path><svg:path fill="#fbc02d" d="m38.693 89.604l8.576 4.303V52.743l-13.027-6.29l-4.126 19.643l-4.16-23.69L13 36.077V77.28l8.54 4.378V56.826l4.669 26.817l7.599 3.863l4.885-22.293z"></svg:path><svg:path fill="#f06292" d="m45.237 6.093l-9.775 8.755s19.072 9.931 21.39 11.105c2.317 1.173 5.615 3.43 2.05 6.771s-7.487 2.89-10.16 1.535a21830 21830 0 0 1-22.458-11.466l-10.07 8.667S35.642 41.48 38.85 43.196c3.208 1.715 15.15 5.958 26.47-2.98c11.318-8.937 9.714-12.188 9.714-12.82s-.267-3.972-2.228-6.048c-1.96-2.077-7.664-5.056-10.07-6.32S45.239 6.092 45.239 6.092z"></svg:path>`,
-})
-export class MaterialIconThemeUmlIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialIconThemeUmlLightIcon],svg[material-icon-theme-uml-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#9575cd" d="M67.702 45.716V75.34l19.224-9.85L87 76.653L53.84 93.907l-.038-41.04z"></svg:path><svg:path fill="#f9a825" d="m30.116 66.096l-4.16-23.69L13 36.077V77.28l8.54 4.378V56.826l4.669 26.817l7.599 3.863l4.885-22.293v24.391l8.576 4.303V52.743l-13.027-6.29z"></svg:path><svg:path fill="#ec407a" d="m45.237 6.093l-9.775 8.755s19.072 9.931 21.39 11.105c2.317 1.174 5.615 3.43 2.05 6.772c-3.565 3.34-7.487 2.889-10.16 1.535a21830 21830 0 0 1-22.458-11.468l-10.07 8.667S35.641 41.482 38.85 43.196c3.208 1.716 15.15 5.959 26.47-2.979c11.318-8.938 9.714-12.188 9.714-12.82s-.267-3.972-2.228-6.049c-1.96-2.076-7.664-5.056-10.07-6.32S45.239 6.093 45.239 6.093z"></svg:path>`,
-})
-export class MaterialIconThemeUmlLightIcon {
-  readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
 }

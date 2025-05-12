@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsOutboundOutlineIcon],svg[material-symbols-outbound-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m8.9 16.5l5.1-5.1v2.25h2V8h-5.65v2h2.225L7.5 15.075zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"></svg:path>`,
+})
+export class MaterialSymbolsOutboundOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsOutboxAltOutlineIcon],svg[material-symbols-outbox-alt-outline-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsSportsRugbyOutlineIcon {
   template: `<svg:path fill="currentColor" d="M3.425 20L2 18.6l4.1-4.1q.775-.775 1.063-1.937T7.45 9q0-1.45.65-2.85t1.85-2.6q2.275-2.275 5.025-2.575T19.5 2.5q1.8 1.8 1.5 4.55t-2.55 5q-1.2 1.2-2.6 1.85t-2.85.65q-2.425 0-3.55.275T7.525 15.9zm6.875-8.35q1.175 1.15 3.175.85t3.575-1.875q1.6-1.6 1.913-3.588T18.1 3.925q-1.2-1.2-3.137-.9t-3.563 1.9Q9.825 6.5 9.488 8.488t.812 3.162M18 23q-1.65 0-2.825-1.175T14 19t1.175-2.825T18 15t2.825 1.175T22 19t-1.175 2.825T18 23m0-2q.825 0 1.413-.587T20 19t-.587-1.412T18 17t-1.412.588T16 19t.588 1.413T18 21m0-2"></svg:path>`,
 })
 export class MaterialSymbolsSportsTennisOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsSportsVolleyballOutlineIcon],svg[material-symbols-sports-volleyball-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M19.55 9.45q-.775-2.175-2.525-3.637T13 4.05v1.6zM8 13.15l3-1.75V4.05q-.8.075-1.55.363T8 5.1zM4.65 15.1L6 14.3V6.75q-.975 1.1-1.487 2.45T4 12q0 .8.163 1.588T4.65 15.1M8 18.9l7-4l-3-1.75l-6.35 3.7q.5.625 1.075 1.15T8 18.9m4 1.1q1.875 0 3.55-.85t2.8-2.35L17 16.05l-6.6 3.8q.4.075.8.112T12 20m7.35-4.9q.325-.725.488-1.513T20 12l-7-4.05v3.45zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"></svg:path>`,
-})
-export class MaterialSymbolsSportsVolleyballOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

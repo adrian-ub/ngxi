@@ -2,6 +2,1536 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentWeatherHaze48RegularIcon],svg[fluent-weather-haze-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m10 37.763l-.156.084a1.25 1.25 0 0 1-1.197-2.195c2.982-1.627 5.664-2.006 8.319-1.516c2.585.478 5.062 1.769 7.657 3.283c4.752 2.771 10.291 2.031 13.395-.186a1.25 1.25 0 1 1 1.453 2.034c-3.895 2.783-10.496 3.584-16.107.311c-2.587-1.509-4.734-2.592-6.852-2.983c-2.007-.37-4.064-.131-6.512 1.168m26-2.78q.298-.095.587-.203a12.4 12.4 0 0 0 2.887-1.513a1.25 1.25 0 1 0-1.453-2.034c-3.104 2.217-8.643 2.957-13.395.186c-2.595-1.514-5.072-2.805-7.658-3.283c-2.655-.49-5.336-.11-8.32 1.516a1.25 1.25 0 0 0 1.198 2.195c2.517-1.373 4.62-1.63 6.668-1.252c2.118.391 4.266 1.474 6.852 2.983c4.17 2.433 8.887 2.615 12.634 1.406m-22.903-10.37a8.7 8.7 0 0 1 2.496-.144q.464.041.924.126c2.118.391 4.265 1.475 6.852 2.983c5.611 3.273 12.212 2.472 16.108-.311a1.25 1.25 0 1 0-1.453-2.034c-3.105 2.217-8.644 2.957-13.396.186c-2.595-1.514-5.072-2.805-7.657-3.283c-2.655-.49-5.337-.11-8.32 1.516a1.25 1.25 0 0 0 1.198 2.195c1.159-.632 2.23-1.028 3.248-1.234M32.42 24q0 .331-.025.656a10 10 0 0 0 2.525-.589V24c0-6.03-4.888-10.92-10.92-10.92a10.92 10.92 0 0 0-9.932 6.379q1.386-.078 2.765.122A8.42 8.42 0 0 1 32.419 24m-8.345 20a1 1 0 0 1-.164 0zM11.607 9.895l-.101-.09a1.25 1.25 0 0 0-1.667 1.858l2.148 2.148l.102.09a1.25 1.25 0 0 0 1.666-1.858zm26.628 1.666a1.25 1.25 0 0 0-1.859-1.666l-2.148 2.148l-.09.102a1.25 1.25 0 0 0 1.858 1.666l2.148-2.148zM25.244 5.12a1.25 1.25 0 0 0-2.494.128v3.038l.007.127a1.25 1.25 0 0 0 2.493-.127V5.247z"></svg:path>`,
+})
+export class FluentWeatherHaze48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon16FilledIcon],svg[fluent-weather-moon-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.456 2a6 6 0 1 1-5.406 8.605a.5.5 0 0 1 .36-.71c1.276-.231 3.278-.937 4.078-3.07c.563-1.5.512-3.015.283-4.23a.5.5 0 0 1 .475-.591Q7.35 2 7.456 2"></svg:path>`,
+})
+export class FluentWeatherMoon16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon16RegularIcon],svg[fluent-weather-moon-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.85 3.015a5 5 0 1 1-4.585 7.712c1.403-.38 3.316-1.302 4.16-3.551c.552-1.474.584-2.938.425-4.16M13.456 8a6 6 0 0 0-6.21-5.996a.5.5 0 0 0-.475.592c.23 1.214.28 2.728-.283 4.228c-.8 2.134-2.802 2.84-4.077 3.071a.5.5 0 0 0-.361.71A6 6 0 0 0 13.456 8"></svg:path>`,
+})
+export class FluentWeatherMoon16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon20FilledIcon],svg[fluent-weather-moon-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.36 13.997a7.98 7.98 0 0 1-13.485.541a.6.6 0 0 1 .292-.903c3.006-1.076 4.616-2.323 5.55-4.107c.984-1.877 1.238-3.934.55-6.753a.6.6 0 0 1 .614-.74a7.98 7.98 0 0 1 6.478 11.962"></svg:path>`,
+})
+export class FluentWeatherMoon20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon20RegularIcon],svg[fluent-weather-moon-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15.493 13.497a6.98 6.98 0 0 1-11.483.892c2.831-1.087 4.558-2.42 5.593-4.397c1.048-2 1.337-4.16.76-6.909a6.98 6.98 0 0 1 5.13 10.414M5.457 16.918A7.981 7.981 0 1 0 9.88 2.035a.6.6 0 0 0-.614.74c.688 2.819.434 4.876-.55 6.753c-.934 1.784-2.544 3.031-5.55 4.107a.6.6 0 0 0-.292.903a7.95 7.95 0 0 0 2.582 2.38"></svg:path>`,
+})
+export class FluentWeatherMoon20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon24FilledIcon],svg[fluent-weather-moon-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.026 17.001c-2.762 4.784-8.879 6.423-13.663 3.661A10 10 0 0 1 3.13 17.68a.75.75 0 0 1 .365-1.132c3.767-1.348 5.785-2.91 6.956-5.146c1.233-2.353 1.551-4.93.689-8.463a.75.75 0 0 1 .769-.927a9.96 9.96 0 0 1 4.457 1.327c4.784 2.762 6.423 8.879 3.66 13.662"></svg:path>`,
+})
+export class FluentWeatherMoon24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon24RegularIcon],svg[fluent-weather-moon-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.026 17.001c-2.762 4.784-8.879 6.423-13.663 3.661A10 10 0 0 1 3.13 17.68a.75.75 0 0 1 .365-1.132c3.767-1.348 5.785-2.91 6.956-5.146c1.233-2.353 1.551-4.93.689-8.463a.75.75 0 0 1 .769-.927a9.96 9.96 0 0 1 4.457 1.327c4.784 2.762 6.423 8.879 3.66 13.662m-8.247-4.903c-1.252 2.389-3.312 4.1-6.818 5.499a8.5 8.5 0 0 0 2.152 1.766a8.502 8.502 0 0 0 8.502-14.725a8.5 8.5 0 0 0-2.792-1.015c.647 3.384.23 6.043-1.045 8.475"></svg:path>`,
+})
+export class FluentWeatherMoon24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon28FilledIcon],svg[fluent-weather-moon-28-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.668 2.97a.75.75 0 0 1 .788-.93C20.627 2.536 25.48 7.7 25.48 14c0 6.628-5.373 12-12 12A12 12 0 0 1 3.1 20.028a.75.75 0 0 1 .47-1.106c1.599-.393 3.55-1.024 5.32-2.004c1.773-.983 3.31-2.287 4.169-4.003c1.713-3.427 1.26-7.345.608-9.945"></svg:path>`,
+})
+export class FluentWeatherMoon28FilledIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon28RegularIcon],svg[fluent-weather-moon-28-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.823 2.302a.75.75 0 0 0-.155.668c.652 2.6 1.105 6.518-.608 9.945c-.859 1.716-2.396 3.02-4.17 4.003c-1.77.98-3.72 1.61-5.32 2.004a.75.75 0 0 0-.468 1.106A12 12 0 0 0 13.48 26c6.628 0 12-5.372 12-12c0-6.299-4.853-11.464-11.024-11.96a.75.75 0 0 0-.633.262m1.54 1.366c4.9.887 8.618 5.176 8.618 10.332c0 5.8-4.702 10.5-10.5 10.5a10.48 10.48 0 0 1-8.54-4.39c1.46-.416 3.121-1.018 4.676-1.88c1.924-1.066 3.742-2.56 4.784-4.644c1.717-3.433 1.501-7.207.961-9.917"></svg:path>`,
+})
+export class FluentWeatherMoon28RegularIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon32FilledIcon],svg[fluent-weather-moon-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.854 22.965c-.539-.938.21-1.965 1.15-1.965c6.627 0 12-5.373 12-12c0-1.43-.25-2.8-.708-4.07a2.12 2.12 0 0 1 .254-1.934a1.88 1.88 0 0 1 1.883-.785C24.006 3.363 29.001 9.097 29.001 16c0 7.732-6.268 14-14 14a14 14 0 0 1-12.147-7.035"></svg:path>`,
+})
+export class FluentWeatherMoon32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon32LightIcon],svg[fluent-weather-moon-32-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.229 3.286a.39.39 0 0 1 .39-.186C23.036 3.897 28 9.37 28 16c0 7.18-5.82 13-13 13c-5.01 0-9.36-2.835-11.53-6.99l.008-.005A.04.04 0 0 1 3.496 22c7.456 0 13.5-6.044 13.5-13.5c0-1.638-.292-3.208-.827-4.662a.62.62 0 0 1 .06-.552M3.496 21c-.705 0-1.293.744-.919 1.462C4.912 26.941 9.598 30 15 30c7.732 0 14-6.268 14-14c0-7.142-5.347-13.034-12.257-13.892a1.39 1.39 0 0 0-1.345.621a1.62 1.62 0 0 0-.167 1.454c.495 1.345.765 2.8.765 4.317c0 6.904-5.596 12.5-12.5 12.5"></svg:path>`,
+})
+export class FluentWeatherMoon32LightIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon32RegularIcon],svg[fluent-weather-moon-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.17 4.195C22.762 5.215 27 10.114 27 16c0 6.628-5.372 12-12 12a11.98 11.98 0 0 1-9.784-5.052C12.38 22.334 18.003 16.324 18.003 9c0-1.665-.29-3.264-.825-4.748a.13.13 0 0 1-.008-.057M4.004 21c-.94 0-1.689 1.027-1.15 1.965A14 14 0 0 0 15 30c7.732 0 14-6.268 14-14c0-6.903-4.995-12.637-11.568-13.79a1.88 1.88 0 0 0-1.883.786a2.12 2.12 0 0 0-.254 1.934c.458 1.27.707 2.64.707 4.07c0 6.627-5.372 12-12 12"></svg:path>`,
+})
+export class FluentWeatherMoon32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon48FilledIcon],svg[fluent-weather-moon-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M37.903 33.01c-4.971 8.609-15.98 11.558-24.589 6.588a17.9 17.9 0 0 1-5.821-5.368a1.35 1.35 0 0 1 .656-2.036c6.78-2.427 10.412-5.24 12.52-9.262c2.218-4.235 2.791-8.873 1.24-15.232a1.35 1.35 0 0 1 1.383-1.668c2.802.15 5.54.956 8.022 2.389c8.61 4.97 11.56 15.979 6.589 24.588"></svg:path>`,
+})
+export class FluentWeatherMoon48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoon48RegularIcon],svg[fluent-weather-moon-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M37.903 33.01c-4.971 8.609-15.98 11.558-24.589 6.588a17.9 17.9 0 0 1-5.821-5.368a1.35 1.35 0 0 1 .656-2.036c6.78-2.427 10.412-5.24 12.52-9.262c2.218-4.235 2.791-8.873 1.24-15.232a1.35 1.35 0 0 1 1.383-1.668c2.802.15 5.54.956 8.022 2.389c8.61 4.97 11.56 15.979 6.589 24.588m-15.02-8.918C20.58 28.49 16.771 31.523 10.457 34a15.5 15.5 0 0 0 4.107 3.434c7.414 4.28 16.893 1.74 21.173-5.674c4.28-7.413 1.74-16.893-5.673-21.173a15.5 15.5 0 0 0-4.907-1.818l-.468-.08c1.193 5.967.591 10.829-1.806 15.404"></svg:path>`,
+})
+export class FluentWeatherMoon48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoonOff16FilledIcon],svg[fluent-weather-moon-off-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m11.616 12.324l2.53 2.53a.5.5 0 0 0 .708-.708l-13-13a.5.5 0 1 0-.708.708L6.38 7.087c-.86 1.93-2.748 2.586-3.97 2.808a.5.5 0 0 0-.36.71a6 6 0 0 0 9.566 1.718M13.456 8c0 .97-.23 1.886-.638 2.696L6.916 4.795a8.8 8.8 0 0 0-.145-2.2a.5.5 0 0 1 .475-.591Q7.35 2 7.456 2a6 6 0 0 1 6 6"></svg:path>`,
+})
+export class FluentWeatherMoonOff16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoonOff16RegularIcon],svg[fluent-weather-moon-off-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m11.616 12.324l2.53 2.53a.5.5 0 0 0 .708-.708l-13-13a.5.5 0 1 0-.708.708L6.38 7.087c-.86 1.93-2.748 2.586-3.97 2.808a.5.5 0 0 0-.36.71a6 6 0 0 0 9.566 1.718m-.707-.708A4.98 4.98 0 0 1 7.456 13a5 5 0 0 1-4.191-2.273c1.257-.34 2.923-1.116 3.863-2.892zM12.456 8a5 5 0 0 1-.391 1.943l.753.753a6 6 0 0 0-5.572-8.693a.5.5 0 0 0-.475.593a8.8 8.8 0 0 1 .145 2.199l.902.902a9.2 9.2 0 0 0 .032-2.682A5 5 0 0 1 12.456 8"></svg:path>`,
+})
+export class FluentWeatherMoonOff16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoonOff20FilledIcon],svg[fluent-weather-moon-off-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.854 2.146a.5.5 0 1 0-.708.708L8.752 9.46l-.035.069c-.935 1.783-2.545 3.03-5.551 4.106a.598.598 0 0 0-.292.903a7.985 7.985 0 0 0 12.143 1.186l2.13 2.13a.5.5 0 0 0 .707-.708l-2.165-2.165l-6.507-6.506zm13.504 11.851l-.089.15l-6.777-6.776c.268-1.324.211-2.807-.226-4.596a.598.598 0 0 1 .614-.74a7.98 7.98 0 0 1 6.478 11.962"></svg:path>`,
+})
+export class FluentWeatherMoonOff20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoonOff20RegularIcon],svg[fluent-weather-moon-off-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.854 2.146a.5.5 0 1 0-.708.708L8.753 9.46l-.035.069c-.935 1.783-2.545 3.03-5.551 4.106a.598.598 0 0 0-.292.903a7.985 7.985 0 0 0 12.142 1.187l2.13 2.129a.5.5 0 0 0 .707-.708l-2.165-2.164l-.712-.712l-5.022-5.022l-.772-.772zM14.31 15.018a6.984 6.984 0 0 1-10.3-.63c2.732-1.048 4.436-2.326 5.482-4.19zM12.938 3.96a6.98 6.98 0 0 1 2.6 9.457l.732.731l.09-.151A7.98 7.98 0 0 0 9.88 2.035a.6.6 0 0 0-.613.74c.437 1.79.494 3.272.226 4.597l.828.828c.425-1.511.451-3.166.042-5.117c.898.119 1.77.413 2.575.877"></svg:path>`,
+})
+export class FluentWeatherMoonOff20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoonOff24FilledIcon],svg[fluent-weather-moon-off-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.28 2.22a.75.75 0 1 0-1.06 1.06l8.193 8.193c-1.177 2.197-3.192 3.741-6.919 5.075a.75.75 0 0 0-.365 1.132a10 10 0 0 0 3.235 2.982c3.917 2.262 8.728 1.572 11.859-1.378l2.496 2.497a.75.75 0 0 0 1.061-1.061zm13.085 1.119c4.75 2.743 6.4 8.794 3.718 13.562l-8.59-8.59c.251-1.561.151-3.303-.354-5.373a.75.75 0 0 1 .769-.926a9.96 9.96 0 0 1 4.457 1.327"></svg:path>`,
+})
+export class FluentWeatherMoonOff24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoonOff24RegularIcon],svg[fluent-weather-moon-off-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.28 2.22a.75.75 0 1 0-1.06 1.06l8.193 8.193c-1.177 2.197-3.192 3.741-6.919 5.075a.75.75 0 0 0-.365 1.132a10 10 0 0 0 3.235 2.982c3.917 2.262 8.728 1.572 11.859-1.378l2.496 2.497a.75.75 0 0 0 1.061-1.061zm13.881 16.002a8.505 8.505 0 0 1-12.2-.625c3.269-1.305 5.281-2.88 6.552-5.023zM15.615 4.638a8.5 8.5 0 0 1 3.359 11.154l1.11 1.11c2.681-4.77 1.032-10.82-3.719-13.563a9.96 9.96 0 0 0-4.457-1.327a.75.75 0 0 0-.769.926c.505 2.07.605 3.812.354 5.373l1.265 1.266c.455-1.76.497-3.696.065-5.955c.973.17 1.915.51 2.792 1.016"></svg:path>`,
+})
+export class FluentWeatherMoonOff24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoonOff28FilledIcon],svg[fluent-weather-moon-off-28-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.28 2.22a.75.75 0 1 0-1.06 1.06l10.397 10.398c-.894 1.346-2.226 2.408-3.727 3.24c-1.77.98-3.72 1.61-5.32 2.004a.75.75 0 0 0-.468 1.105A12 12 0 0 0 13.48 26c3.177 0 6.064-1.234 8.21-3.248l3.03 3.029a.75.75 0 0 0 1.06-1.061zm10.594 8.473l9.74 9.739A11.95 11.95 0 0 0 25.48 14c0-6.3-4.853-11.464-11.024-11.96a.75.75 0 0 0-.788.93c.514 2.05.905 4.92.206 7.723"></svg:path>`,
+})
+export class FluentWeatherMoonOff28FilledIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoonOff28RegularIcon],svg[fluent-weather-moon-off-28-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.28 2.22a.75.75 0 1 0-1.06 1.06l10.397 10.398c-.894 1.346-2.226 2.408-3.727 3.24c-1.77.98-3.72 1.61-5.32 2.004a.75.75 0 0 0-.468 1.105A12 12 0 0 0 13.48 26c3.177 0 6.064-1.234 8.21-3.248l3.03 3.029a.75.75 0 0 0 1.06-1.061zm17.35 19.47a10.46 10.46 0 0 1-7.15 2.81c-3.518 0-6.634-1.73-8.54-4.39c1.462-.417 3.122-1.019 4.677-1.88c1.543-.855 3.017-1.985 4.078-3.474zm-6.756-10.998l1.213 1.213c.953-2.94.728-5.963.275-8.237c4.901.887 8.619 5.176 8.619 10.332c0 1.95-.532 3.776-1.458 5.34l1.09 1.091A11.94 11.94 0 0 0 25.48 14c0-6.3-4.853-11.464-11.024-11.96a.75.75 0 0 0-.788.93c.514 2.05.905 4.92.206 7.722"></svg:path>`,
+})
+export class FluentWeatherMoonOff28RegularIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoonOff48FilledIcon],svg[fluent-weather-moon-off-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.384 4.616a1.25 1.25 0 1 0-1.768 1.768l16.22 16.22q-.081.165-.167.328c-2.108 4.022-5.739 6.835-12.52 9.261a1.35 1.35 0 0 0-.656 2.037a17.9 17.9 0 0 0 5.821 5.367c7.198 4.156 16.074 2.776 21.695-2.82l6.607 6.607a1.25 1.25 0 0 0 1.768-1.768zm24.93 3.805c8.523 4.92 11.5 15.757 6.737 24.327l-15.49-15.49c.432-2.78.245-5.882-.652-9.558a1.35 1.35 0 0 1 1.383-1.668c2.802.15 5.54.955 8.022 2.389"></svg:path>`,
+})
+export class FluentWeatherMoonOff48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherMoonOff48RegularIcon],svg[fluent-weather-moon-off-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.384 4.616a1.25 1.25 0 1 0-1.768 1.768l16.22 16.22q-.081.165-.167.328c-2.108 4.022-5.739 6.835-12.52 9.261a1.35 1.35 0 0 0-.656 2.037a17.9 17.9 0 0 0 5.821 5.367c7.198 4.156 16.074 2.776 21.695-2.82l6.607 6.607a1.25 1.25 0 0 0 1.768-1.768zM33.24 35.008c-4.841 4.815-12.48 6.002-18.677 2.424A15.5 15.5 0 0 1 10.457 34c6.139-2.408 9.91-5.342 12.23-9.544zm-3.177-24.422c7.13 4.116 9.752 13.04 6.136 20.311l1.85 1.85c4.763-8.569 1.787-19.406-6.736-24.326a17.9 17.9 0 0 0-8.022-2.389A1.35 1.35 0 0 0 21.91 7.7c.897 3.676 1.084 6.778.653 9.559l2.122 2.122c.798-3.235.8-6.72.005-10.694l.469.08c1.714.32 3.369.93 4.906 1.819"></svg:path>`,
+})
+export class FluentWeatherMoonOff48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyDay16FilledIcon],svg[fluent-weather-partly-cloudy-day-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.999 6a3.5 3.5 0 0 0-3.464 3H5.5a2.5 2.5 0 0 0 0 5h7a2.5 2.5 0 0 0 0-5h-.037A3.5 3.5 0 0 0 9 6m-.212-3.18a.5.5 0 1 0-.883-.47l-.426.803a.5.5 0 0 0 .883.47zm-3.772-.747a.5.5 0 1 0-.957.293l.267.87a.5.5 0 0 0 .956-.293zM3 7c0 .604.179 1.166.486 1.637c.367-.259.787-.45 1.24-.551a4.51 4.51 0 0 1 3.56-3.03A3 3 0 0 0 3 7M1.82 4.214a.5.5 0 1 0-.47.883l.803.426a.5.5 0 0 0 .47-.883zm.416 4.463a.5.5 0 0 0-.293-.956l-.87.266a.5.5 0 1 0 .293.956z"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyDay16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyDay16RegularIcon],svg[fluent-weather-partly-cloudy-day-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.999 7a2.5 2.5 0 0 0-2.5 2.5v.5H5.5a1.5 1.5 0 0 0 0 3h7a1.5 1.5 0 0 0 0-3h-1l-.001-.5a2.5 2.5 0 0 0-2.5-2.5M5.535 9a3.5 3.5 0 0 1 6.929 0h.036a2.5 2.5 0 0 1 0 5h-7a2.5 2.5 0 0 1 0-5zm3.252-6.18a.5.5 0 1 0-.883-.47l-.426.803a.5.5 0 0 0 .883.47zm-3.772-.747a.5.5 0 1 0-.957.293l.267.87a.5.5 0 0 0 .956-.293zM6 4c.916 0 1.735.41 2.285 1.056q-.584.094-1.107.328A2 2 0 0 0 4.386 8.18a3.5 3.5 0 0 0-.9.456A3 3 0 0 1 6 4m-4.18.214a.5.5 0 1 0-.47.883l.803.426a.5.5 0 0 0 .47-.883zm.416 4.463a.5.5 0 0 0-.293-.956l-.87.266a.5.5 0 1 0 .293.956z"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyDay16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyDay20FilledIcon],svg[fluent-weather-partly-cloudy-day-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 7c2.464 0 3.863 1.573 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S16.714 16 15.128 16H6.872C5.286 16 4 14.763 4 13.237s1.286-2.763 2.872-2.763h.062C7.138 8.56 8.535 7 11 7M3.803 9.7a.5.5 0 0 1-.228.6l-.082.036l-.801.276a.5.5 0 0 1-.408-.909l.082-.036l.802-.276a.5.5 0 0 1 .635.31M8.92 5.5c.332.162.625.373.873.62c-1.762.364-3.03 1.533-3.543 3.156l-.065.224l-.046.187l-.166.03a3.8 3.8 0 0 0-1.25.504A3.28 3.28 0 0 1 8.919 5.5m-6.003.17L3 5.702l.762.371a.5.5 0 0 1-.354.931l-.085-.032l-.761-.371a.5.5 0 0 1 .354-.931m7.073-2.375a.5.5 0 0 1 .262.585l-.032.084l-.371.762a.5.5 0 0 1-.931-.354l.032-.085l.371-.762a.5.5 0 0 1 .67-.23M6.2 3.263l.037.082l.276.802a.5.5 0 0 1-.909.407l-.037-.082l-.275-.801a.5.5 0 0 1 .908-.408"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyDay20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyDay20RegularIcon],svg[fluent-weather-partly-cloudy-day-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 7c2.464 0 3.863 1.573 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S16.714 16 15.128 16H6.872C5.286 16 4 14.763 4 13.237s1.286-2.763 2.872-2.763h.062C7.138 8.56 8.535 7 11 7m0 1c-1.65 0-3.087 1.27-3.087 3.025c0 .278-.254.496-.545.496h-.55C5.814 11.52 5 12.3 5 13.26S5.814 15 6.818 15h8.364C16.186 15 17 14.22 17 13.26s-.814-1.74-1.818-1.74h-.55c-.291.001-.545-.217-.545-.495C14.087 9.248 12.649 8 11 8M3.803 9.7a.5.5 0 0 1-.228.6l-.082.036l-.801.276a.5.5 0 0 1-.408-.909l.082-.036l.802-.276a.5.5 0 0 1 .635.31M8.92 5.5c.333.162.625.373.874.62q-.61.126-1.136.375A2.28 2.28 0 0 0 5.646 9.8c-.33.098-.64.241-.925.42A3.28 3.28 0 0 1 8.919 5.5m-6.003.17L3 5.702l.762.371a.5.5 0 0 1-.354.931l-.085-.032l-.761-.371a.5.5 0 0 1 .354-.931m7.073-2.375a.5.5 0 0 1 .262.585l-.032.084l-.371.762a.5.5 0 0 1-.931-.354l.032-.085l.371-.762a.5.5 0 0 1 .67-.23M6.2 3.263l.037.082l.276.802a.5.5 0 0 1-.909.407l-.037-.082l-.275-.801a.5.5 0 0 1 .908-.408"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyDay20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyDay24FilledIcon],svg[fluent-weather-partly-cloudy-day-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.002 8.007c3.169 0 4.966 2.097 5.227 4.63h.08a3.687 3.687 0 0 1 3.692 3.683a3.687 3.687 0 0 1-3.692 3.682H7.695a3.687 3.687 0 0 1-3.692-3.682a3.687 3.687 0 0 1 3.692-3.683h.08c.263-2.55 2.059-4.63 5.227-4.63m-8.634 4.155a.75.75 0 0 1-.315.935l-.091.045l-.927.384a.75.75 0 0 1-.665-1.34l.091-.046l.927-.383a.75.75 0 0 1 .98.405m6.487-4.833l-.172.058c-1.784.63-3.062 2.005-3.615 3.823l-.07.25l-.058.238l-.206.039a4.6 4.6 0 0 0-1.67.714a3.942 3.942 0 0 1 5.791-5.122M2.94 7.36l.105.035l.927.384a.75.75 0 0 1-.469 1.42L3.4 9.166l-.927-.384a.75.75 0 0 1 .469-1.42m3.815-2.986l.045.091l.384.927a.75.75 0 0 1-1.34.665L5.8 5.968l-.383-.927a.75.75 0 0 1 1.34-.665m4.354-.319a.75.75 0 0 1 .44.875l-.035.105l-.383.927a.75.75 0 0 1-1.421-.469l.035-.106l.384-.926a.75.75 0 0 1 .98-.406"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyDay24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyDay24RegularIcon],svg[fluent-weather-partly-cloudy-day-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.002 8.007c3.169 0 4.966 2.097 5.227 4.63h.08a3.687 3.687 0 0 1 3.692 3.683a3.687 3.687 0 0 1-3.692 3.682H7.695a3.687 3.687 0 0 1-3.692-3.682a3.687 3.687 0 0 1 3.692-3.683h.08c.263-2.55 2.059-4.63 5.227-4.63m0 1.498c-2.071 0-3.877 1.633-3.877 3.889c0 .357-.319.638-.684.638h-.69c-1.261 0-2.284 1.001-2.284 2.236s1.023 2.236 2.284 2.236h10.502c1.262 0 2.284-1 2.284-2.236c0-1.235-1.022-2.236-2.283-2.236h-.691c-.365 0-.684-.28-.684-.638c0-2.285-1.806-3.89-3.877-3.89m-8.634 2.657a.75.75 0 0 1-.315.935l-.091.045l-.927.384a.75.75 0 0 1-.665-1.34l.091-.046l.927-.383a.75.75 0 0 1 .98.405m6.487-4.833l-.172.058a5.8 5.8 0 0 0-1.46.758a2.442 2.442 0 0 0-2.793 3.667a4.6 4.6 0 0 0-1.367.64a3.942 3.942 0 0 1 5.791-5.122M2.94 7.36l.105.035l.927.384a.75.75 0 0 1-.469 1.42L3.4 9.166l-.927-.384a.75.75 0 0 1 .469-1.42m3.815-2.986l.045.091l.384.927a.75.75 0 0 1-1.34.665L5.8 5.968l-.383-.927a.75.75 0 0 1 1.34-.665m4.354-.319a.75.75 0 0 1 .44.875l-.035.105l-.383.927a.75.75 0 0 1-1.421-.469l.035-.106l.384-.926a.75.75 0 0 1 .98-.406"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyDay24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyDay48FilledIcon],svg[fluent-weather-partly-cloudy-day-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M25.996 15.998c6.337 0 9.932 4.194 10.454 9.26h.16c4.078 0 7.384 3.297 7.384 7.365s-3.306 7.365-7.384 7.365H15.38c-4.077 0-7.383-3.298-7.383-7.365s3.306-7.365 7.384-7.365h.16c.526-5.1 4.118-9.26 10.455-9.26M7.569 24.19a1.75 1.75 0 0 1-.499 2.3l-.142.09l-1.299.75a1.75 1.75 0 0 1-1.892-2.94l.142-.09l1.3-.75a1.75 1.75 0 0 1 2.39.64m14.136-9.54c-3.801 1.22-6.509 4.091-7.62 7.922l-.094.34l-.116.476l-.412.077a9.3 9.3 0 0 0-3.342 1.43A7.883 7.883 0 0 1 21.705 14.65m-16.2-.671l.132.055l1.36.634a1.75 1.75 0 0 1-1.347 3.227l-.132-.055l-1.36-.634a1.75 1.75 0 0 1 1.347-3.227m19.11-5.763a1.75 1.75 0 0 1 .508 2.317l-.078.12l-.86 1.23a1.75 1.75 0 0 1-2.945-1.887l.078-.121l.86-1.229a1.75 1.75 0 0 1 2.438-.43m-10.291-.419l.065.156l.513 1.41a1.75 1.75 0 0 1-3.224 1.352l-.065-.156l-.513-1.41a1.75 1.75 0 0 1 3.224-1.352"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyDay48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyDay48RegularIcon],svg[fluent-weather-partly-cloudy-day-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M25.995 15.998c6.337 0 9.932 4.195 10.455 9.26h.16c4.078 0 7.384 3.298 7.384 7.365s-3.306 7.365-7.385 7.365H15.38c-4.077 0-7.383-3.297-7.383-7.365s3.306-7.365 7.384-7.365h.16c.526-5.099 4.118-9.26 10.455-9.26m0 2.495c-4.261 0-7.975 3.448-7.975 8.21c0 .755-.657 1.348-1.408 1.348h-1.42c-2.594 0-4.697 2.113-4.697 4.72c0 2.608 2.103 4.722 4.697 4.722h21.606c2.594 0 4.697-2.114 4.697-4.721s-2.103-4.722-4.697-4.722h-1.42c-.752 0-1.408-.592-1.408-1.346c0-4.824-3.714-8.21-7.975-8.21m-17.29 5.799a1.244 1.244 0 0 1-.559 1.57l-.115.055l-2.311.961a1.243 1.243 0 0 1-1.067-2.243l.115-.055l2.311-.961a1.244 1.244 0 0 1 1.625.673m13-9.642l-.062.02a11.8 11.8 0 0 0-2.57 1.19a5.5 5.5 0 0 0-6.826 7.95a9.3 9.3 0 0 0-2.127 1.086A7.883 7.883 0 0 1 21.704 14.65m-16.129.18l.127.046l2.319.989c.63.266.932.995.675 1.629c-.24.591-.883.89-1.48.71l-.126-.045l-2.32-.989a1.26 1.26 0 0 1-.674-1.629c.24-.591.882-.89 1.479-.71m7.368-6.173l.055.115l.96 2.306a1.25 1.25 0 0 1-2.254 1.072l-.055-.115l-.96-2.306a1.25 1.25 0 0 1 2.254-1.072m9.049-.56c.601.249.908.91.73 1.52l-.046.13l-.992 2.276a1.264 1.264 0 0 1-2.38-.837l.046-.13l.99-2.276a1.264 1.264 0 0 1 1.652-.683"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyDay48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyNight20FilledIcon],svg[fluent-weather-partly-cloudy-night-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 7c2.465 0 3.863 1.574 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S16.714 16 15.128 16H6.872C5.286 16 4 14.763 4 13.237c0-1.47 1.192-2.671 2.697-2.758l.237-.005C7.139 8.561 8.535 7 11 7M5.843 3a4.24 4.24 0 0 1 1.895.565a4.24 4.24 0 0 1 1.979 2.573c-1.724.38-2.963 1.54-3.469 3.141l-.064.221l-.046.187l-.165.03a3.75 3.75 0 0 0-2.2 1.362a4.24 4.24 0 0 1-1.662-1.418a.63.63 0 0 1 .306-.948c1.376-.492 2.117-1.046 2.54-1.856c.463-.883.549-1.82.242-3.08a.628.628 0 0 1 .644-.776"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyNight20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyNight20RegularIcon],svg[fluent-weather-partly-cloudy-night-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 7c2.465 0 3.863 1.574 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S16.714 16 15.128 16H6.872C5.286 16 4 14.763 4 13.237c0-1.47 1.192-2.671 2.697-2.758l.237-.005C7.139 8.561 8.535 7 11 7m0 1c-1.65 0-3.087 1.27-3.087 3.025c0 .278-.254.496-.545.496h-.55C5.814 11.521 5 12.3 5 13.261C5 14.22 5.814 15 6.818 15h8.364C16.186 15 17 14.221 17 13.26c0-.96-.814-1.739-1.818-1.739h-.55c-.29 0-.545-.218-.545-.496C14.087 9.248 12.65 8 11 8M5.843 3a4.24 4.24 0 0 1 1.895.565a4.24 4.24 0 0 1 1.979 2.573a5 5 0 0 0-1.073.363A3.05 3.05 0 0 0 7 4.375a6 6 0 0 0-.535-.249c.086 1.228-.036 2.483-.626 3.445c-.58.853-1.328 1.423-2.558 1.898q.21.185.45.339q.466.297.92.46a3.7 3.7 0 0 0-.878.811a4.24 4.24 0 0 1-1.662-1.418a.63.63 0 0 1 .306-.948c1.376-.492 2.117-1.046 2.54-1.856c.463-.883.549-1.82.242-3.08a.628.628 0 0 1 .644-.776"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyNight20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyNight24FilledIcon],svg[fluent-weather-partly-cloudy-night-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.002 8.013c3.168 0 4.966 2.097 5.227 4.63h.08a3.687 3.687 0 0 1 3.692 3.683a3.687 3.687 0 0 1-3.692 3.682H7.694a3.687 3.687 0 0 1-3.692-3.682a3.687 3.687 0 0 1 3.692-3.683h.08c.263-2.55 2.06-4.63 5.228-4.63M6.589 4.005a5.06 5.06 0 0 1 2.263.674a5.06 5.06 0 0 1 2.208 2.595c-1.984.562-3.404 2.001-3.994 3.946l-.069.246l-.058.238l-.206.038a4.67 4.67 0 0 0-2.804 1.815a5.06 5.06 0 0 1-1.797-1.599a.75.75 0 0 1 .366-1.132c1.643-.588 2.527-1.25 3.034-2.216c.552-1.055.654-2.174.287-3.677a.75.75 0 0 1 .77-.928"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyNight24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyNight24RegularIcon],svg[fluent-weather-partly-cloudy-night-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.002 8.009c3.168 0 4.966 2.097 5.227 4.63h.08a3.687 3.687 0 0 1 3.692 3.683a3.687 3.687 0 0 1-3.692 3.682H7.694a3.687 3.687 0 0 1-3.692-3.682a3.687 3.687 0 0 1 3.692-3.683h.08c.263-2.55 2.06-4.63 5.228-4.63m0 1.497c-2.072 0-3.877 1.634-3.877 3.89c0 .357-.319.638-.684.638h-.69c-1.262 0-2.284 1-2.284 2.236c0 1.235 1.022 2.236 2.283 2.236h10.503c1.261 0 2.283-1 2.283-2.236c0-1.235-1.022-2.236-2.283-2.236h-.69c-.366 0-.685-.28-.685-.638c0-2.285-1.805-3.89-3.876-3.89M6.589 4.001a5.06 5.06 0 0 1 2.263.674A5.06 5.06 0 0 1 11.06 7.27c-.5.14-.963.338-1.386.584a3.56 3.56 0 0 0-2.19-2.162c.16 1.352-.047 2.513-.622 3.611l-.118.213c-.571.976-1.432 1.708-2.719 2.304a3.6 3.6 0 0 0 1.07.614a4.7 4.7 0 0 0-1.166 1.119a5.06 5.06 0 0 1-1.797-1.599a.75.75 0 0 1 .366-1.132c1.643-.588 2.527-1.25 3.034-2.216c.552-1.055.654-2.174.287-3.677A.75.75 0 0 1 6.59 4"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyNight24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyNight48FilledIcon],svg[fluent-weather-partly-cloudy-night-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M26.003 16.01c6.337 0 9.932 4.194 10.455 9.26h.16c4.078 0 7.384 3.297 7.384 7.365S40.696 40 36.617 40H15.389c-4.078 0-7.384-3.297-7.384-7.365s3.306-7.365 7.384-7.365h.16c.526-5.1 4.118-9.26 10.455-9.26M13.182 8.002c1.59.086 3.134.544 4.526 1.348a10.1 10.1 0 0 1 4.418 5.193c-4.016 1.144-6.877 4.083-8.027 8.049l-.092.332l-.115.476l-.413.077a9.35 9.35 0 0 0-5.617 3.632l-.308-.172a10.1 10.1 0 0 1-3.285-3.028A1.502 1.502 0 0 1 5 21.644c3.285-1.176 5.055-2.5 6.067-4.432c1.105-2.11 1.31-4.348.576-7.354a1.502 1.502 0 0 1 1.539-1.856"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyNight48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherPartlyCloudyNight48RegularIcon],svg[fluent-weather-partly-cloudy-night-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M26.001 16.01c6.337 0 9.932 4.194 10.455 9.26h.16c4.078 0 7.384 3.297 7.384 7.365S40.694 40 36.616 40h-21.23c-4.078 0-7.384-3.297-7.384-7.365s3.306-7.365 7.384-7.365h.16c.526-5.1 4.118-9.26 10.455-9.26m0 2.495c-4.261 0-7.975 3.448-7.975 8.21c0 .755-.656 1.347-1.407 1.347h-1.421c-2.594 0-4.697 2.114-4.697 4.721s2.103 4.722 4.697 4.722h21.606c2.594 0 4.697-2.114 4.697-4.722c0-2.607-2.103-4.72-4.697-4.72h-1.42c-.752 0-1.408-.593-1.408-1.348c0-4.823-3.714-8.21-7.975-8.21M13.181 8.002c1.59.086 3.133.544 4.525 1.348a10.1 10.1 0 0 1 4.418 5.193a12 12 0 0 0-2.189.855c-.64-1.741-2.06-3.156-3.991-4.262a6.4 6.4 0 0 0-1.426-.59c.364 3.04.247 5.108-1.057 7.578l-.268.479c-1.295 2.197-3.207 3.497-6.125 4.84c.322.318.813.692 1.212.974q.681.48 1.404.818a9.4 9.4 0 0 0-1.823 1.874l-.31-.172a10.1 10.1 0 0 1-3.283-3.028a1.502 1.502 0 0 1 .73-2.265c3.285-1.176 5.055-2.5 6.067-4.432c1.106-2.11 1.31-4.348.576-7.354a1.502 1.502 0 0 1 1.54-1.856"></svg:path>`,
+})
+export class FluentWeatherPartlyCloudyNight48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRain20FilledIcon],svg[fluent-weather-rain-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.015 4.018c2.465 0 3.863 1.573 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763s-1.286 2.763-2.872 2.763l-.716-.001l-.01.025l-1.483 2.704a.5.5 0 0 1-.914-.396l.036-.083l1.235-2.25h-1.853l-.01.025l-1.483 2.704a.5.5 0 0 1-.914-.396l.036-.083l1.235-2.25h-1.87l-1.487 2.729a.5.5 0 0 1-.596.235l-.082-.036a.5.5 0 0 1-.236-.595l.036-.083l1.225-2.25h-.405c-1.586 0-2.872-1.236-2.872-2.762c0-1.47 1.192-2.671 2.697-2.758l.237-.005c.205-1.913 1.602-3.474 4.066-3.474"></svg:path>`,
+})
+export class FluentWeatherRain20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRain20RegularIcon],svg[fluent-weather-rain-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 4c2.465 0 3.863 1.574 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S15.714 13 14.128 13l-.703-.001l-.013.034l-1.483 2.704a.5.5 0 0 1-.914-.396l.036-.083L12.29 13h-1.853l-.014.034l-1.483 2.704a.5.5 0 0 1-.914-.396l.036-.083L9.301 13H7.432L5.94 15.737a.5.5 0 0 1-.595.235l-.083-.036a.5.5 0 0 1-.236-.595l.036-.083L6.293 13h-.421C4.286 13 3 11.763 3 10.237c0-1.47 1.192-2.671 2.697-2.758l.237-.005C6.139 5.561 7.535 4 10 4m0 1C8.35 5 6.913 6.27 6.913 8.025c0 .278-.254.496-.545.496h-.55C4.814 8.521 4 9.3 4 10.261C4 11.22 4.814 12 5.818 12h8.364C15.186 12 16 11.221 16 10.26c0-.96-.814-1.739-1.818-1.739h-.55c-.29 0-.545-.218-.545-.496C13.087 6.248 11.65 5 10 5"></svg:path>`,
+})
+export class FluentWeatherRain20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRain24FilledIcon],svg[fluent-weather-rain-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 4.001c3.169 0 4.966 2.097 5.227 4.63h.08A3.687 3.687 0 0 1 21 12.314a3.687 3.687 0 0 1-3.692 3.682h-.582l-1.583 2.637a.75.75 0 0 1-1.344-.659l.045-.091l1.15-1.887h-2.136l-1.583 2.637a.75.75 0 0 1-1.344-.659l.045-.091l1.15-1.887H8.987l-1.581 2.637a.75.75 0 0 1-1.344-.659l.045-.091l1.148-1.887h-.562A3.687 3.687 0 0 1 3 12.314A3.687 3.687 0 0 1 6.693 8.63h.08C7.035 6.08 8.831 4 12 4"></svg:path>`,
+})
+export class FluentWeatherRain24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRain24RegularIcon],svg[fluent-weather-rain-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 4.001c3.169 0 4.966 2.097 5.227 4.63h.08A3.687 3.687 0 0 1 21 12.314a3.687 3.687 0 0 1-3.692 3.682h-.582l-1.582 2.635a.75.75 0 0 1-1.344-.659l.045-.091l1.149-1.885h-2.136l-1.582 2.635a.75.75 0 0 1-1.344-.659l.045-.091l1.148-1.885H8.987l-1.58 2.635a.75.75 0 0 1-1.345-.659l.045-.091l1.148-1.885h-.562A3.687 3.687 0 0 1 3 12.314A3.687 3.687 0 0 1 6.693 8.63h.08C7.035 6.08 8.831 4 12 4m0 1.498c-2.071 0-3.877 1.633-3.877 3.889c0 .357-.319.638-.684.638h-.69c-1.261 0-2.284 1.001-2.284 2.236S5.488 14.5 6.75 14.5h10.5c1.261 0 2.284-1.002 2.284-2.237s-1.023-2.236-2.284-2.236h-.69c-.365 0-.684-.28-.684-.638c0-2.285-1.806-3.89-3.877-3.89"></svg:path>`,
+})
+export class FluentWeatherRain24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRain48FilledIcon],svg[fluent-weather-rain-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M23.999 7c6.337 0 9.932 4.195 10.455 9.26h.16c4.078 0 7.384 3.298 7.384 7.365s-3.306 7.365-7.384 7.365h-.067l-4.3 7.159a1.75 1.75 0 0 1-3.075-1.662l.075-.14l3.217-5.357h-3.917l-4.3 7.159a1.75 1.75 0 0 1-3.075-1.662l.075-.14l3.217-5.357h-3.917l-4.3 7.159a1.75 1.75 0 0 1-3.075-1.662l.075-.14l3.217-5.357h-1.08C9.306 30.99 6 27.693 6 23.625s3.306-7.365 7.384-7.365h.16C14.07 11.161 17.662 7 24 7"></svg:path>`,
+})
+export class FluentWeatherRain48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRain48RegularIcon],svg[fluent-weather-rain-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M23.999 7c6.337 0 9.932 4.195 10.455 9.26h.16c4.078 0 7.384 3.298 7.384 7.365s-3.306 7.365-7.384 7.365l-1.723.001l-.04.094l-.066.128l-3.5 6.063a1.5 1.5 0 0 1-2.664-1.372l.066-.129l2.763-4.785l-4.296.001l-.039.094l-.066.128l-3.5 6.063a1.5 1.5 0 0 1-2.664-1.372l.066-.129l2.762-4.785l-4.295.001l-.04.094l-.065.128l-3.5 6.063a1.5 1.5 0 0 1-2.665-1.372l.066-.129l2.763-4.785h-.593C9.306 30.99 6 27.693 6 23.625s3.306-7.365 7.384-7.365h.16C14.07 11.161 17.662 7 24 7m0 2.495c-4.261 0-7.975 3.448-7.975 8.21c0 .755-.656 1.348-1.408 1.348h-1.42c-2.594 0-4.697 2.113-4.697 4.72c0 2.608 2.103 4.722 4.697 4.722h21.606c2.594 0 4.697-2.114 4.697-4.721s-2.103-4.722-4.697-4.722h-1.42c-.752 0-1.408-.592-1.408-1.346c0-4.824-3.714-8.21-7.975-8.21"></svg:path>`,
+})
+export class FluentWeatherRain48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersDay20FilledIcon],svg[fluent-weather-rain-showers-day-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 6c2.464 0 3.863 1.573 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S16.714 15 15.128 15h-.694l-.017.041l-1.487 2.704a.5.5 0 0 1-.914-.396l.036-.082L13.3 15h-1.854l-.018.041l-1.487 2.704a.5.5 0 0 1-.914-.396l.036-.082L10.312 15H8.44l-1.496 2.745a.5.5 0 0 1-.914-.396l.036-.082L7.302 15h-.43C5.286 15 4 13.763 4 12.237s1.286-2.763 2.872-2.763h.062C7.138 7.56 8.535 6 11 6M3.803 8.7a.5.5 0 0 1-.228.6l-.082.036l-.801.276a.5.5 0 0 1-.408-.909l.082-.036l.802-.276a.5.5 0 0 1 .635.31M8.92 4.5c.332.162.625.373.873.62c-1.762.364-3.03 1.533-3.543 3.156l-.065.224l-.046.187l-.166.03a3.8 3.8 0 0 0-1.25.504A3.28 3.28 0 0 1 8.919 4.5m-6.003.17L3 4.702l.762.371a.5.5 0 0 1-.354.931l-.085-.032l-.761-.371a.5.5 0 0 1 .354-.931m7.073-2.375a.5.5 0 0 1 .262.585l-.032.084l-.371.762a.5.5 0 0 1-.931-.354l.032-.085l.371-.762a.5.5 0 0 1 .67-.23M6.2 2.263l.037.082l.276.802a.5.5 0 0 1-.909.407l-.037-.082l-.275-.801a.5.5 0 0 1 .908-.408"></svg:path>`,
+})
+export class FluentWeatherRainShowersDay20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersDay20RegularIcon],svg[fluent-weather-rain-showers-day-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 6c2.464 0 3.863 1.573 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S16.714 15 15.128 15h-.694l-.017.041l-1.485 2.704a.5.5 0 0 1-.914-.396l.036-.082L13.3 15h-1.854l-.018.041l-1.485 2.704a.5.5 0 0 1-.914-.396l.036-.082L10.312 15H8.44l-1.496 2.745a.5.5 0 0 1-.914-.396l.036-.082L7.302 15h-.43C5.286 15 4 13.763 4 12.237s1.286-2.763 2.872-2.763h.062C7.138 7.56 8.535 6 11 6m0 1c-1.65 0-3.087 1.27-3.087 3.025c0 .278-.254.496-.545.496h-.55C5.814 10.52 5 11.3 5 12.26S5.814 14 6.818 14h8.364C16.186 14 17 13.22 17 12.26s-.814-1.74-1.818-1.74h-.55c-.291.001-.545-.217-.545-.495C14.087 8.248 12.649 7 11 7M3.803 8.7a.5.5 0 0 1-.228.6l-.082.036l-.801.276a.5.5 0 0 1-.408-.909l.082-.036l.802-.276a.5.5 0 0 1 .635.31M8.92 4.5c.333.162.625.373.874.62q-.61.126-1.136.375A2.28 2.28 0 0 0 5.646 8.8c-.33.098-.64.241-.925.42A3.28 3.28 0 0 1 8.919 4.5m-6.003.17L3 4.702l.762.371a.5.5 0 0 1-.354.931l-.085-.032l-.761-.371a.5.5 0 0 1 .354-.931m7.073-2.375a.5.5 0 0 1 .262.585l-.032.084l-.371.762a.5.5 0 0 1-.931-.354l.032-.085l.371-.762a.5.5 0 0 1 .67-.23M6.2 2.263l.037.082l.276.802a.5.5 0 0 1-.909.407l-.037-.082l-.275-.801a.5.5 0 0 1 .908-.408"></svg:path>`,
+})
+export class FluentWeatherRainShowersDay20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersDay24FilledIcon],svg[fluent-weather-rain-showers-day-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.002 6.01c3.169 0 4.966 2.097 5.228 4.63h.08a3.687 3.687 0 0 1 3.692 3.682a3.687 3.687 0 0 1-3.692 3.683h-.515l-1.646 2.627a.75.75 0 0 1-1.344-.659l.045-.091l1.213-1.877h-2.136l-1.646 2.627a.75.75 0 0 1-1.344-.659l.045-.091l1.213-1.877h-2.136l-1.646 2.627a.75.75 0 0 1-1.344-.659l.045-.091l1.213-1.877h-.632a3.687 3.687 0 0 1-3.692-3.682a3.687 3.687 0 0 1 3.692-3.683h.08c.263-2.55 2.059-4.63 5.227-4.63m-8.634 4.155a.75.75 0 0 1-.315.935l-.091.045l-.926.384a.75.75 0 0 1-.666-1.34l.092-.046l.926-.384a.75.75 0 0 1 .98.406m6.487-4.833l-.172.058C8.9 6.02 7.621 7.395 7.068 9.213l-.07.25l-.058.238l-.206.038a4.6 4.6 0 0 0-1.67.715a3.942 3.942 0 0 1 5.791-5.122m-7.914.031l.106.035l.926.384a.75.75 0 0 1-.469 1.42L3.4 7.168l-.926-.384a.75.75 0 0 1 .468-1.42m3.815-2.986l.046.091l.383.926a.75.75 0 0 1-1.34.666L5.8 3.968l-.384-.926a.75.75 0 0 1 1.34-.665m4.354-.319a.75.75 0 0 1 .44.875l-.034.105l-.384.926a.75.75 0 0 1-1.42-.468l.034-.106l.384-.926a.75.75 0 0 1 .98-.406"></svg:path>`,
+})
+export class FluentWeatherRainShowersDay24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersDay24RegularIcon],svg[fluent-weather-rain-showers-day-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.002 6.01c3.169 0 4.966 2.097 5.228 4.63h.08a3.687 3.687 0 0 1 3.692 3.682a3.687 3.687 0 0 1-3.692 3.683l-.619-.002l-1.55 2.625a.75.75 0 0 1-1.345-.658l.045-.092l1.118-1.875h-2.136l-1.551 2.625a.75.75 0 0 1-1.344-.658l.045-.092l1.118-1.875H9.955l-1.551 2.625a.75.75 0 0 1-1.344-.658l.045-.092l1.117-1.875l-.527.002a3.687 3.687 0 0 1-3.692-3.682a3.687 3.687 0 0 1 3.692-3.683h.08c.263-2.55 2.059-4.63 5.227-4.63m0 1.497c-2.071 0-3.876 1.634-3.876 3.89c0 .357-.32.638-.685.638h-.69c-1.261 0-2.283 1-2.283 2.236c0 1.235 1.022 2.236 2.283 2.236h10.503c1.26 0 2.283-1 2.283-2.236c0-1.235-1.022-2.236-2.283-2.236h-.69c-.366 0-.685-.28-.685-.638c0-2.285-1.805-3.89-3.877-3.89m-8.634 2.658a.75.75 0 0 1-.315.935l-.091.045l-.926.384a.75.75 0 0 1-.666-1.34l.092-.046l.926-.384a.75.75 0 0 1 .98.406m6.487-4.833l-.172.058a5.8 5.8 0 0 0-1.46.758A2.442 2.442 0 0 0 6.43 9.815a4.6 4.6 0 0 0-1.366.64a3.942 3.942 0 0 1 5.791-5.122m-7.914.031l.106.035l.926.384a.75.75 0 0 1-.469 1.42L3.4 7.168l-.926-.384a.75.75 0 0 1 .468-1.42m3.815-2.986l.046.091l.383.926a.75.75 0 0 1-1.34.666L5.8 3.968l-.384-.926a.75.75 0 0 1 1.34-.665m4.354-.319a.75.75 0 0 1 .44.875l-.034.105l-.384.926a.75.75 0 0 1-1.42-.468l.034-.106l.384-.926a.75.75 0 0 1 .98-.406"></svg:path>`,
+})
+export class FluentWeatherRainShowersDay24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersDay48FilledIcon],svg[fluent-weather-rain-showers-day-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M26.002 12c6.337 0 9.932 4.194 10.455 9.26h.16c4.078 0 7.384 3.297 7.384 7.365c0 3.986-3.175 7.233-7.14 7.36l-.313.005l-4.3 7.158a1.75 1.75 0 0 1-3.075-1.661l.075-.14l3.217-5.357h-3.917l-4.3 7.158a1.75 1.75 0 0 1-3.076-1.661l.076-.14l3.217-5.357h-3.917l-4.3 7.158a1.75 1.75 0 0 1-3.076-1.661l.076-.14l3.217-5.357h-1.078c-4.078 0-7.384-3.298-7.384-7.365s3.306-7.365 7.384-7.365h.16c.526-5.1 4.118-9.26 10.455-9.26M7.569 20.19a1.75 1.75 0 0 1-.499 2.3l-.142.09l-1.299.75a1.75 1.75 0 0 1-1.892-2.94l.142-.09l1.3-.75a1.75 1.75 0 0 1 2.39.64m14.14-9.528c-3.801 1.22-6.509 4.09-7.62 7.922l-.094.34l-.116.476l-.412.077a9.3 9.3 0 0 0-3.341 1.43A7.883 7.883 0 0 1 21.71 10.662M5.505 9.978l.132.056l1.36.634a1.75 1.75 0 0 1-1.347 3.227l-.132-.055l-1.36-.634a1.75 1.75 0 0 1 1.347-3.228m19.11-5.762a1.75 1.75 0 0 1 .508 2.317l-.078.12l-.86 1.23a1.75 1.75 0 0 1-2.945-1.887l.078-.121l.86-1.229a1.75 1.75 0 0 1 2.438-.43m-10.291-.419l.065.156l.513 1.41a1.75 1.75 0 0 1-3.224 1.352l-.065-.156l-.513-1.41a1.75 1.75 0 0 1 3.224-1.352"></svg:path>`,
+})
+export class FluentWeatherRainShowersDay48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersDay48RegularIcon],svg[fluent-weather-rain-showers-day-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M26.001 12c6.337 0 9.932 4.195 10.455 9.26h.16c4.078 0 7.384 3.298 7.384 7.365s-3.306 7.365-7.384 7.365h-1.722l-.04.095l-.066.128l-3.5 6.063a1.5 1.5 0 0 1-2.665-1.372l.067-.128l2.762-4.786h-4.295l-.04.095l-.066.128l-3.5 6.063a1.5 1.5 0 0 1-2.664-1.372l.066-.128l2.762-4.786h-4.294l-.04.095l-.066.128l-3.5 6.063a1.5 1.5 0 0 1-2.664-1.372l.066-.128l2.762-4.786h-.592c-4.079 0-7.385-3.297-7.385-7.365s3.306-7.365 7.385-7.365h.16C16.072 16.161 19.664 12 26 12m0 2.495c-4.26 0-7.975 3.448-7.975 8.21c0 .755-.656 1.348-1.407 1.348h-1.42c-2.595 0-4.698 2.113-4.698 4.72c0 2.608 2.103 4.722 4.697 4.722h21.606c2.594 0 4.697-2.114 4.697-4.721s-2.103-4.722-4.697-4.722h-1.42c-.752 0-1.408-.592-1.408-1.346c0-4.824-3.714-8.21-7.975-8.21M8.71 20.303a1.244 1.244 0 0 1-.558 1.57l-.115.055l-2.312.962a1.244 1.244 0 0 1-1.067-2.243l.115-.055l2.312-.962a1.244 1.244 0 0 1 1.625.673m13-9.64l-.061.019c-.925.302-1.785.702-2.571 1.19a5.5 5.5 0 0 0-6.826 7.95a9.3 9.3 0 0 0-2.126 1.086A7.883 7.883 0 0 1 21.71 10.662m-16.129.179l.127.046l2.32.989c.629.266.931.995.674 1.628c-.24.592-.882.89-1.48.711l-.126-.045l-2.319-.99a1.26 1.26 0 0 1-.675-1.628c.24-.591.883-.89 1.48-.711m7.369-6.174l.055.116l.96 2.306a1.25 1.25 0 0 1-2.255 1.072l-.055-.115l-.96-2.306a1.25 1.25 0 0 1 2.255-1.073m9.048-.56c.602.25.909.91.73 1.521l-.046.13l-.991 2.276a1.264 1.264 0 0 1-2.38-.837l.045-.13l.991-2.276a1.264 1.264 0 0 1 1.651-.684"></svg:path>`,
+})
+export class FluentWeatherRainShowersDay48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersNight20FilledIcon],svg[fluent-weather-rain-showers-night-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.015 6.018c2.465 0 3.863 1.573 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763s-1.286 2.763-2.872 2.763l-.716-.001l-.01.025l-1.487 2.704a.5.5 0 0 1-.915-.396l.036-.083l1.24-2.25h-1.853l-.01.025l-1.488 2.704a.5.5 0 0 1-.913-.396l.035-.083l1.24-2.25h-1.87l-1.487 2.729a.5.5 0 0 1-.596.235l-.082-.036a.5.5 0 0 1-.236-.595l.036-.083l1.225-2.25h-.405c-1.586 0-2.872-1.236-2.872-2.762c0-1.47 1.192-2.671 2.697-2.758l.237-.005c.205-1.913 1.602-3.474 4.066-3.474m-5.157-4a4.24 4.24 0 0 1 1.895.565a4.24 4.24 0 0 1 1.979 2.572c-1.724.38-2.963 1.54-3.468 3.142l-.065.22l-.046.188l-.165.03a3.75 3.75 0 0 0-2.2 1.362a4.24 4.24 0 0 1-1.662-1.418a.63.63 0 0 1 .306-.949c1.376-.492 2.117-1.046 2.54-1.855c.464-.884.549-1.82.242-3.08c-.1-.41.223-.8.644-.776"></svg:path>`,
+})
+export class FluentWeatherRainShowersNight20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersNight20RegularIcon],svg[fluent-weather-rain-showers-night-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.005 6.009c2.464 0 3.863 1.573 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763s-1.286 2.763-2.872 2.763l-.703-.001l-.013.034l-1.488 2.704a.5.5 0 0 1-.914-.396l.036-.083l1.244-2.26h-1.853l-.014.035l-1.488 2.704a.5.5 0 0 1-.914-.396l.036-.083l1.244-2.26h-1.87l-1.491 2.739a.5.5 0 0 1-.596.235l-.082-.036a.5.5 0 0 1-.236-.595l.036-.083l1.23-2.26l-.42.002c-1.586 0-2.872-1.237-2.872-2.763c0-1.47 1.192-2.671 2.697-2.758l.237-.005c.204-1.913 1.601-3.474 4.066-3.474m0 1c-1.65 0-3.087 1.27-3.087 3.025c0 .278-.254.496-.545.496h-.55c-1.004 0-1.818.779-1.818 1.74c0 .96.814 1.739 1.818 1.739h8.364c1.004 0 1.818-.779 1.818-1.74c0-.96-.814-1.74-1.818-1.74h-.55c-.291 0-.545-.217-.545-.495c0-1.777-1.438-3.025-3.087-3.025m-5.157-5a4.24 4.24 0 0 1 1.895.565a4.24 4.24 0 0 1 1.979 2.573a5 5 0 0 0-1.073.363a3.05 3.05 0 0 0-1.644-2.126a6 6 0 0 0-.535-.249c.086 1.227-.037 2.483-.626 3.445c-.58.853-1.328 1.423-2.558 1.898q.21.186.45.338q.466.298.92.461a3.7 3.7 0 0 0-.878.81A4.24 4.24 0 0 1 2.116 8.67a.63.63 0 0 1 .306-.947c1.375-.493 2.117-1.047 2.54-1.856c.463-.883.549-1.82.241-3.08a.628.628 0 0 1 .645-.776"></svg:path>`,
+})
+export class FluentWeatherRainShowersNight20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersNight24FilledIcon],svg[fluent-weather-rain-showers-night-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.001 6.01c3.169 0 4.966 2.097 5.228 4.63h.08A3.687 3.687 0 0 1 22 14.322a3.687 3.687 0 0 1-3.692 3.683L17.676 18l-1.542 2.63a.75.75 0 0 1-1.344-.658l.045-.091L15.944 18h-2.136l-1.543 2.63a.75.75 0 0 1-1.344-.658l.045-.091L12.076 18H9.939l-1.542 2.63a.75.75 0 0 1-1.344-.658l.045-.091L8.207 18H7.6c-2.039 0-3.598-1.644-3.598-3.677a3.687 3.687 0 0 1 3.692-3.683h.08C8.037 8.09 9.833 6.01 13 6.01M6.588 2.002a5.06 5.06 0 0 1 2.264.674A5.06 5.06 0 0 1 11.06 5.27c-1.985.563-3.405 2.002-3.994 3.946l-.07.246l-.057.238l-.206.038a4.67 4.67 0 0 0-2.804 1.815l-.155-.084a5.1 5.1 0 0 1-1.642-1.515a.75.75 0 0 1 .366-1.132c1.642-.588 2.527-1.25 3.033-2.216c.553-1.055.655-2.174.288-3.677a.75.75 0 0 1 .77-.928"></svg:path>`,
+})
+export class FluentWeatherRainShowersNight24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersNight24RegularIcon],svg[fluent-weather-rain-showers-night-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.001 6.018c3.169 0 4.966 2.097 5.228 4.63h.08A3.687 3.687 0 0 1 22 14.33a3.687 3.687 0 0 1-3.692 3.683h-.637l-1.536 2.612a.75.75 0 0 1-1.344-.658l.045-.092l1.103-1.862h-2.136l-1.536 2.612a.75.75 0 0 1-1.344-.658l.045-.092l1.103-1.862H9.935L8.4 20.625a.75.75 0 0 1-1.344-.658l.045-.092l1.102-1.862h-.51a3.687 3.687 0 0 1-3.691-3.683a3.687 3.687 0 0 1 3.692-3.682h.08c.263-2.55 2.059-4.63 5.227-4.63m0 1.497c-2.071 0-3.877 1.634-3.877 3.89c0 .357-.318.637-.684.637h-.69c-1.261 0-2.283 1.002-2.283 2.237s1.022 2.236 2.283 2.236h10.503c1.26 0 2.283-1.001 2.283-2.236s-1.022-2.237-2.283-2.237h-.69c-.366 0-.685-.28-.685-.637c0-2.285-1.806-3.89-3.877-3.89M6.588 2.01a5.06 5.06 0 0 1 2.264.674a5.06 5.06 0 0 1 2.208 2.595c-.5.14-.963.338-1.386.584A3.55 3.55 0 0 0 7.484 3.7c.16 1.352-.048 2.513-.623 3.61l-.118.214c-.57.976-1.432 1.708-2.718 2.304a3.6 3.6 0 0 0 1.07.614a4.6 4.6 0 0 0-1.166 1.119l-.155-.085a5.1 5.1 0 0 1-1.642-1.514a.75.75 0 0 1 .366-1.132C4.14 8.243 5.025 7.58 5.53 6.615c.553-1.055.655-2.174.288-3.677a.75.75 0 0 1 .77-.928"></svg:path>`,
+})
+export class FluentWeatherRainShowersNight24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersNight48FilledIcon],svg[fluent-weather-rain-showers-night-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M26.001 12c6.337 0 9.932 4.195 10.455 9.26h.16c4.078 0 7.384 3.298 7.384 7.365s-3.306 7.365-7.384 7.365h-.069l-4.3 7.159a1.75 1.75 0 0 1-3.075-1.662l.075-.14l3.217-5.357h-3.917l-4.3 7.159a1.75 1.75 0 0 1-3.075-1.662l.075-.14l3.217-5.357h-3.917l-4.3 7.159a1.75 1.75 0 0 1-3.075-1.662l.075-.14l3.217-5.357h-1.078c-4.078 0-7.384-3.297-7.384-7.365s3.306-7.365 7.384-7.365h.16c.526-5.099 4.118-9.26 10.455-9.26M13.178 4.002c1.59.086 3.134.544 4.526 1.348a10.1 10.1 0 0 1 4.418 5.193c-4.016 1.144-6.877 4.083-8.027 8.049l-.092.332l-.115.476l-.413.077a9.35 9.35 0 0 0-5.616 3.632l-.31-.172a10.1 10.1 0 0 1-3.284-3.028a1.5 1.5 0 0 1 .731-2.265c3.285-1.176 5.055-2.5 6.067-4.432c1.105-2.11 1.31-4.348.576-7.354a1.502 1.502 0 0 1 1.539-1.856"></svg:path>`,
+})
+export class FluentWeatherRainShowersNight48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainShowersNight48RegularIcon],svg[fluent-weather-rain-showers-night-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M26.001 12c6.337 0 9.932 4.195 10.455 9.26h.16c4.078 0 7.384 3.298 7.384 7.365s-3.306 7.365-7.384 7.365l-1.723.001l-.039.094l-.066.128l-3.5 6.063a1.5 1.5 0 0 1-2.665-1.372l.067-.129l2.762-4.785l-4.296.001l-.038.094l-.067.128l-3.5 6.063a1.5 1.5 0 0 1-2.664-1.372l.066-.129l2.763-4.785l-4.296.001l-.039.094l-.066.128l-3.5 6.063a1.5 1.5 0 0 1-2.665-1.372l.067-.129l2.762-4.785h-.593c-4.078 0-7.384-3.297-7.384-7.365s3.306-7.365 7.384-7.365h.16c.526-5.099 4.118-9.26 10.455-9.26m0 2.495c-4.26 0-7.975 3.448-7.975 8.21c0 .755-.656 1.348-1.407 1.348h-1.42c-2.595 0-4.698 2.113-4.698 4.72c0 2.608 2.103 4.722 4.697 4.722h21.606c2.594 0 4.697-2.114 4.697-4.721s-2.103-4.722-4.697-4.722h-1.42c-.752 0-1.408-.592-1.408-1.346c0-4.824-3.714-8.21-7.975-8.21M13.178 4.002c1.59.086 3.134.544 4.526 1.348a10.1 10.1 0 0 1 4.418 5.193a12 12 0 0 0-2.189.855c-.64-1.741-2.06-3.156-3.992-4.262a6.4 6.4 0 0 0-1.425-.59c.364 3.04.247 5.108-1.057 7.578l-.268.479c-1.295 2.197-3.207 3.497-6.125 4.84c.322.318.812.692 1.212.974q.681.48 1.403.818a9.4 9.4 0 0 0-1.822 1.874l-.31-.172a10.1 10.1 0 0 1-3.284-3.028a1.5 1.5 0 0 1 .731-2.265c3.285-1.176 5.055-2.5 6.067-4.432c1.105-2.11 1.31-4.348.576-7.354a1.502 1.502 0 0 1 1.539-1.856"></svg:path>`,
+})
+export class FluentWeatherRainShowersNight48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainSnow20FilledIcon],svg[fluent-weather-rain-snow-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 4c2.465 0 3.863 1.574 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S15.714 13 14.128 13h-1.502a.5.5 0 1 1-.948 0l-4.237-.001l-1.496 2.746a.5.5 0 0 1-.914-.395l.036-.083l1.235-2.268l-.43.001C4.286 13 3 11.763 3 10.237s1.286-2.763 2.872-2.763h.062C6.139 5.561 7.535 4 10 4m1.5 11a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m-2.198-.94a.49.49 0 0 1 .235.587l-.036.082l-.562 1.014a.504.504 0 0 1-.678.197a.49.49 0 0 1-.236-.587l.036-.082l.562-1.014a.504.504 0 0 1 .679-.197M13.5 14a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1"></svg:path>`,
+})
+export class FluentWeatherRainSnow20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainSnow20RegularIcon],svg[fluent-weather-rain-snow-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 4c2.465 0 3.863 1.574 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S15.714 13 14.128 13h-1.502a.5.5 0 1 1-.948 0l-4.237-.001l-1.496 2.746a.5.5 0 0 1-.914-.395l.036-.083l1.235-2.268l-.43.001C4.286 13 3 11.763 3 10.237s1.286-2.763 2.872-2.763h.062C6.139 5.561 7.535 4 10 4m1.5 11a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m-2.198-.94a.49.49 0 0 1 .235.587l-.036.082l-.562 1.014a.504.504 0 0 1-.678.197a.49.49 0 0 1-.236-.587l.036-.082l.562-1.014a.504.504 0 0 1 .679-.197M13.5 14a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M10 5C8.35 5 6.913 6.27 6.913 8.025c0 .278-.254.496-.545.496h-.55C4.814 8.521 4 9.3 4 10.261C4 11.22 4.814 12 5.818 12h8.364C15.186 12 16 11.221 16 10.26c0-.96-.814-1.739-1.818-1.739h-.55c-.29 0-.545-.218-.545-.496C13.087 6.248 11.65 5 10 5"></svg:path>`,
+})
+export class FluentWeatherRainSnow20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainSnow24FilledIcon],svg[fluent-weather-rain-snow-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.534 17.553a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5M12 4.001c3.169 0 4.966 2.097 5.227 4.63h.08A3.687 3.687 0 0 1 21 12.314a3.687 3.687 0 0 1-3.692 3.682L16 15.997a.75.75 0 0 1-1.433 0l-5.58-.001l-1.582 2.629a.75.75 0 0 1-1.344-.659l.045-.091l1.15-1.879h-.563A3.687 3.687 0 0 1 3 12.314A3.687 3.687 0 0 1 6.693 8.63h.08C7.035 6.08 8.831 4 12 4m-.422 12.704a.75.75 0 0 1 .32.933l-.046.091l-.556.896a.75.75 0 0 1-1.345-.658l.045-.092l.557-.896a.75.75 0 0 1 1.025-.274m5.455.098a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5"></svg:path>`,
+})
+export class FluentWeatherRainSnow24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainSnow24RegularIcon],svg[fluent-weather-rain-snow-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.498 17.5a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5M12 4.001c3.169 0 4.966 2.097 5.227 4.63h.08A3.687 3.687 0 0 1 21 12.314a3.687 3.687 0 0 1-3.692 3.682L16 15.997a.75.75 0 0 1-1.433 0l-5.58-.001l-1.578 2.627a.75.75 0 0 1-1.344-.658l.045-.092l1.145-1.877h-.562A3.687 3.687 0 0 1 3 12.314A3.687 3.687 0 0 1 6.693 8.63h.08C7.035 6.08 8.831 4 12 4m-.422 12.704a.75.75 0 0 1 .32.933l-.046.091l-.566.9a.75.75 0 0 1-1.345-.66l.045-.09l.567-.9a.75.75 0 0 1 1.025-.274M17.25 17a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5M12 5.5c-2.071 0-3.877 1.633-3.877 3.889c0 .357-.319.638-.684.638h-.69c-1.261 0-2.284 1.001-2.284 2.236S5.488 14.5 6.75 14.5h10.5c1.261 0 2.284-1.002 2.284-2.237s-1.023-2.236-2.284-2.236h-.69c-.365 0-.684-.28-.684-.638c0-2.285-1.806-3.89-3.877-3.89"></svg:path>`,
+})
+export class FluentWeatherRainSnow24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainSnow48FilledIcon],svg[fluent-weather-rain-snow-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M24.003 7c6.337 0 9.932 4.195 10.455 9.26h.16c4.078 0 7.384 3.298 7.384 7.365s-3.306 7.365-7.385 7.365h-2.704q.087.24.089.51a1.5 1.5 0 1 1-2.912-.51H18.557l-4.306 7.17a1.75 1.75 0 0 1-3.077-1.66l.076-.141l3.224-5.369h-1.085c-4.078 0-7.384-3.297-7.384-7.365s3.306-7.365 7.384-7.365h.16C14.074 11.161 17.666 7 24.003 7m-.416 27.27a1.75 1.75 0 0 1 .648 2.27l-.078.14l-.918 1.489a1.75 1.75 0 0 1-3.057-1.698l.078-.14l.918-1.49a1.75 1.75 0 0 1 2.409-.57m4.915.73a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m5-1a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3"></svg:path>`,
+})
+export class FluentWeatherRainSnow48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherRainSnow48RegularIcon],svg[fluent-weather-rain-snow-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M29.068 35.12a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3M24.001 7c6.337 0 9.932 4.195 10.455 9.26h.16c4.078 0 7.384 3.298 7.384 7.365s-3.306 7.365-7.384 7.365h-2.661q.111.267.113.573a1.5 1.5 0 1 1-2.887-.573l-11.76.001l-.04.094l-.066.128l-3.5 6.063a1.5 1.5 0 0 1-2.664-1.372l.066-.129l2.762-4.785h-.592c-4.079 0-7.385-3.297-7.385-7.365s3.306-7.365 7.385-7.365h.16C14.072 11.161 17.664 7 24 7m-.646 26.317a1.5 1.5 0 0 1 .615 1.92l-.066.129l-1.084 1.89a1.5 1.5 0 0 1-2.664-1.371l.066-.129l1.084-1.89a1.5 1.5 0 0 1 2.049-.55m10.712.303a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3M24 9.495c-4.26 0-7.975 3.448-7.975 8.21c0 .755-.656 1.348-1.407 1.348h-1.42c-2.595 0-4.698 2.113-4.698 4.72c0 2.608 2.103 4.722 4.697 4.722h21.606c2.594 0 4.697-2.114 4.697-4.721s-2.102-4.722-4.697-4.722h-1.42c-.751 0-1.408-.592-1.408-1.346c0-4.824-3.714-8.21-7.975-8.21"></svg:path>`,
+})
+export class FluentWeatherRainSnow48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnow20FilledIcon],svg[fluent-weather-snow-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.5 15a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M7 14a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M10 4c2.465 0 3.863 1.574 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S15.714 13 14.128 13H5.872C4.286 13 3 11.763 3 10.237c0-1.47 1.192-2.671 2.697-2.758l.237-.005C6.139 5.561 7.535 4 10 4"></svg:path>`,
+})
+export class FluentWeatherSnow20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnow20RegularIcon],svg[fluent-weather-snow-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.5 15a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M7 14a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M10 4c2.465 0 3.863 1.574 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S15.714 13 14.128 13H5.872C4.286 13 3 11.763 3 10.237c0-1.47 1.192-2.671 2.697-2.758l.237-.005C6.139 5.561 7.535 4 10 4m0 1C8.35 5 6.913 6.27 6.913 8.025c0 .278-.254.496-.545.496h-.55C4.814 8.521 4 9.3 4 10.261C4 11.22 4.814 12 5.818 12h8.364C15.186 12 16 11.221 16 10.26c0-.96-.814-1.739-1.818-1.739h-.55c-.29 0-.545-.218-.545-.496C13.087 6.248 11.65 5 10 5"></svg:path>`,
+})
+export class FluentWeatherSnow20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnow24FilledIcon],svg[fluent-weather-snow-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.75 18.152a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m-6.75-1a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5M12 4c3.169 0 4.966 2.097 5.227 4.63h.08A3.687 3.687 0 0 1 21 12.314a3.687 3.687 0 0 1-3.692 3.682H6.693A3.687 3.687 0 0 1 3 12.314A3.687 3.687 0 0 1 6.693 8.63h.08C7.035 6.08 8.831 4 12 4"></svg:path>`,
+})
+export class FluentWeatherSnow24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnow24RegularIcon],svg[fluent-weather-snow-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.75 18.152a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m-6.75-1a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5M12 4c3.169 0 4.966 2.097 5.227 4.63h.08A3.687 3.687 0 0 1 21 12.314a3.687 3.687 0 0 1-3.692 3.682H6.693A3.687 3.687 0 0 1 3 12.314A3.687 3.687 0 0 1 6.693 8.63h.08C7.035 6.08 8.831 4 12 4m0 1.498c-2.071 0-3.877 1.633-3.877 3.889c0 .357-.319.638-.684.638h-.69c-1.261 0-2.284 1.001-2.284 2.236S5.488 14.5 6.75 14.5h10.5c1.261 0 2.284-1.002 2.284-2.237s-1.023-2.236-2.284-2.236h-.69c-.365 0-.684-.28-.684-.638c0-2.285-1.806-3.89-3.877-3.89"></svg:path>`,
+})
+export class FluentWeatherSnow24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnow48FilledIcon],svg[fluent-weather-snow-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.502 36a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m-13.5-2a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m-9-26c6.338 0 9.933 4.195 10.456 9.26h.16c4.078 0 7.384 3.298 7.384 7.365s-3.306 7.365-7.385 7.365H13.389c-4.078 0-7.384-3.297-7.384-7.365s3.306-7.365 7.384-7.365h.16C14.074 12.161 17.666 8 24.003 8"></svg:path>`,
+})
+export class FluentWeatherSnow48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnow48RegularIcon],svg[fluent-weather-snow-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.5 36a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3M15 34a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3M24.001 8c6.337 0 9.932 4.195 10.455 9.26h.16c4.078 0 7.384 3.298 7.384 7.365s-3.306 7.365-7.384 7.365h-21.23c-4.078 0-7.384-3.297-7.384-7.365s3.306-7.365 7.385-7.365h.16C14.072 12.161 17.664 8 24 8m0 2.495c-4.26 0-7.975 3.448-7.975 8.21c0 .755-.656 1.348-1.407 1.348h-1.42c-2.595 0-4.698 2.113-4.698 4.72c0 2.608 2.103 4.722 4.697 4.722h21.606c2.594 0 4.697-2.114 4.697-4.721s-2.102-4.722-4.697-4.722h-1.42c-.751 0-1.408-.592-1.408-1.346c0-4.824-3.714-8.21-7.975-8.21"></svg:path>`,
+})
+export class FluentWeatherSnow48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerDay20FilledIcon],svg[fluent-weather-snow-shower-day-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.5 17a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M8 16a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M11 6c2.464 0 3.863 1.573 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S16.714 15 15.128 15H6.872C5.286 15 4 13.763 4 12.237s1.286-2.763 2.872-2.763h.062C7.138 7.56 8.535 6 11 6M3.803 8.7a.5.5 0 0 1-.228.6l-.082.036l-.801.276a.5.5 0 0 1-.408-.909l.082-.036l.802-.276a.5.5 0 0 1 .635.31M8.92 4.5c.332.162.625.373.873.62c-1.762.364-3.03 1.533-3.543 3.156l-.065.224l-.046.187l-.166.03a3.8 3.8 0 0 0-1.25.504A3.28 3.28 0 0 1 8.919 4.5m-6.003.17L3 4.702l.762.371a.5.5 0 0 1-.354.931l-.085-.032l-.761-.371a.5.5 0 0 1 .354-.931m7.073-2.375a.5.5 0 0 1 .262.585l-.032.084l-.371.762a.5.5 0 0 1-.931-.354l.032-.085l.371-.762a.5.5 0 0 1 .67-.23M6.2 2.263l.037.082l.276.802a.5.5 0 0 1-.909.407l-.037-.082l-.275-.801a.5.5 0 0 1 .908-.408"></svg:path>`,
+})
+export class FluentWeatherSnowShowerDay20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerDay20RegularIcon],svg[fluent-weather-snow-shower-day-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.5 17a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M8 16a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M11 6c2.464 0 3.863 1.573 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S16.714 15 15.128 15H6.872C5.286 15 4 13.763 4 12.237s1.286-2.763 2.872-2.763h.062C7.138 7.56 8.535 6 11 6m0 1c-1.65 0-3.087 1.27-3.087 3.025c0 .278-.254.496-.545.496h-.55C5.814 10.52 5 11.3 5 12.26S5.814 14 6.818 14h8.364C16.186 14 17 13.22 17 12.26s-.814-1.74-1.818-1.74h-.55c-.291.001-.545-.217-.545-.495C14.087 8.248 12.649 7 11 7M3.803 8.7a.5.5 0 0 1-.228.6l-.082.036l-.801.276a.5.5 0 0 1-.408-.909l.082-.036l.802-.276a.5.5 0 0 1 .635.31M8.92 4.5c.333.162.625.373.874.62q-.61.126-1.136.375A2.28 2.28 0 0 0 5.646 8.8c-.33.098-.64.241-.925.42A3.28 3.28 0 0 1 8.919 4.5m-6.003.17L3 4.702l.762.371a.5.5 0 0 1-.354.931l-.085-.032l-.761-.371a.5.5 0 0 1 .354-.931m7.073-2.375a.5.5 0 0 1 .262.585l-.032.084l-.371.762a.5.5 0 0 1-.931-.354l.032-.085l.371-.762a.5.5 0 0 1 .67-.23M6.2 2.263l.037.082l.276.802a.5.5 0 0 1-.909.407l-.037-.082l-.275-.801a.5.5 0 0 1 .908-.408"></svg:path>`,
+})
+export class FluentWeatherSnowShowerDay20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerDay24FilledIcon],svg[fluent-weather-snow-shower-day-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.752 20a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m-6.75-1a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m-4.5-12.99c3.169 0 4.966 2.097 5.228 4.63h.08a3.687 3.687 0 0 1 3.692 3.682a3.687 3.687 0 0 1-3.692 3.683H7.695a3.687 3.687 0 0 1-3.692-3.682a3.687 3.687 0 0 1 3.692-3.683h.08c.263-2.55 2.059-4.63 5.227-4.63m-8.634 4.155a.75.75 0 0 1-.315.935l-.091.045l-.926.384a.75.75 0 0 1-.666-1.34l.092-.046l.926-.384a.75.75 0 0 1 .98.406m6.487-4.833l-.172.058C8.9 6.02 7.621 7.395 7.068 9.213l-.07.25l-.058.238l-.206.038a4.6 4.6 0 0 0-1.67.715a3.942 3.942 0 0 1 5.791-5.122m-7.914.031l.106.035l.926.384a.75.75 0 0 1-.469 1.42L3.4 7.168l-.926-.384a.75.75 0 0 1 .468-1.42m3.815-2.986l.046.091l.383.926a.75.75 0 0 1-1.34.666L5.8 3.968l-.384-.926a.75.75 0 0 1 1.34-.665m4.354-.319a.75.75 0 0 1 .44.875l-.034.105l-.384.926a.75.75 0 0 1-1.42-.468l.034-.106l.384-.926a.75.75 0 0 1 .98-.406"></svg:path>`,
+})
+export class FluentWeatherSnowShowerDay24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerDay24RegularIcon],svg[fluent-weather-snow-shower-day-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.75 20a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5M8.5 19a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5M13.002 6.01c3.169 0 4.966 2.097 5.228 4.63h.08a3.687 3.687 0 0 1 3.692 3.682a3.687 3.687 0 0 1-3.692 3.683H7.695a3.687 3.687 0 0 1-3.692-3.682a3.687 3.687 0 0 1 3.692-3.683h.08c.263-2.55 2.059-4.63 5.227-4.63m0 1.497c-2.071 0-3.876 1.634-3.876 3.89c0 .357-.32.638-.685.638h-.69c-1.261 0-2.283 1-2.283 2.236c0 1.235 1.022 2.236 2.283 2.236h10.503c1.26 0 2.283-1 2.283-2.236c0-1.235-1.022-2.236-2.283-2.236h-.69c-.366 0-.685-.28-.685-.638c0-2.285-1.805-3.89-3.877-3.89m-8.634 2.658a.75.75 0 0 1-.315.935l-.091.045l-.926.384a.75.75 0 0 1-.666-1.34l.092-.046l.926-.384a.75.75 0 0 1 .98.406m6.487-4.833l-.172.058a5.8 5.8 0 0 0-1.46.758A2.442 2.442 0 0 0 6.43 9.815a4.6 4.6 0 0 0-1.366.64a3.942 3.942 0 0 1 5.791-5.122m-7.914.031l.106.035l.926.384a.75.75 0 0 1-.469 1.42L3.4 7.168l-.926-.384a.75.75 0 0 1 .468-1.42m3.815-2.986l.046.091l.383.926a.75.75 0 0 1-1.34.666L5.8 3.968l-.384-.926a.75.75 0 0 1 1.34-.665m4.354-.319a.75.75 0 0 1 .44.875l-.034.105l-.384.926a.75.75 0 0 1-1.42-.468l.034-.106l.384-.926a.75.75 0 0 1 .98-.406"></svg:path>`,
+})
+export class FluentWeatherSnowShowerDay24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerDay48FilledIcon],svg[fluent-weather-snow-shower-day-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21.503 40a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m-13.5-2a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3M26 12.01c6.337 0 9.932 4.194 10.455 9.26h.16c4.078 0 7.384 3.297 7.384 7.365s-3.306 7.364-7.385 7.364H15.386c-4.078 0-7.384-3.297-7.384-7.365s3.306-7.365 7.384-7.365h.16c.526-5.099 4.118-9.26 10.455-9.26M7.569 20.19a1.75 1.75 0 0 1-.499 2.3l-.142.09l-1.299.75a1.75 1.75 0 0 1-1.892-2.94l.142-.09l1.3-.75a1.75 1.75 0 0 1 2.39.64m14.14-9.528c-3.801 1.22-6.509 4.09-7.62 7.922l-.094.34l-.116.476l-.412.077a9.3 9.3 0 0 0-3.341 1.43A7.883 7.883 0 0 1 21.71 10.662M5.505 9.978l.132.056l1.36.634a1.75 1.75 0 0 1-1.347 3.227l-.132-.055l-1.36-.634a1.75 1.75 0 0 1 1.347-3.228m19.11-5.762a1.75 1.75 0 0 1 .508 2.317l-.078.12l-.86 1.23a1.75 1.75 0 0 1-2.945-1.887l.078-.121l.86-1.229a1.75 1.75 0 0 1 2.438-.43m-10.291-.419l.065.156l.513 1.41a1.75 1.75 0 0 1-3.224 1.352l-.065-.156l-.513-1.41a1.75 1.75 0 0 1 3.224-1.352"></svg:path>`,
+})
+export class FluentWeatherSnowShowerDay48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerDay48RegularIcon],svg[fluent-weather-snow-shower-day-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21.502 40.027a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m-13.5-2a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3M26 12.01c6.337 0 9.932 4.194 10.455 9.26h.16c4.078 0 7.384 3.297 7.384 7.365S40.692 36 36.614 36h-21.23C11.306 36 8 32.703 8 28.635s3.306-7.365 7.384-7.365h.16c.526-5.099 4.118-9.26 10.455-9.26m0 2.495c-4.261 0-7.975 3.448-7.975 8.21c0 .755-.656 1.347-1.407 1.347h-1.421c-2.594 0-4.697 2.114-4.697 4.721s2.103 4.722 4.697 4.722h21.606c2.594 0 4.697-2.114 4.697-4.722c0-2.607-2.103-4.72-4.697-4.72h-1.42c-.752 0-1.408-.593-1.408-1.348c0-4.823-3.714-8.21-7.975-8.21M8.71 20.303a1.244 1.244 0 0 1-.558 1.57l-.115.055l-2.312.962a1.244 1.244 0 0 1-1.067-2.243l.115-.055l2.312-.962a1.244 1.244 0 0 1 1.625.673m13-9.64l-.061.019c-.925.302-1.785.702-2.571 1.19a5.5 5.5 0 0 0-6.826 7.95a9.3 9.3 0 0 0-2.126 1.086A7.883 7.883 0 0 1 21.71 10.662m-16.129.179l.127.046l2.32.989c.629.266.931.995.674 1.628c-.24.592-.882.89-1.48.711l-.126-.045l-2.319-.99a1.26 1.26 0 0 1-.675-1.628c.24-.591.883-.89 1.48-.711m7.369-6.174l.055.116l.96 2.306a1.25 1.25 0 0 1-2.255 1.072l-.055-.115l-.96-2.306a1.25 1.25 0 0 1 2.255-1.073m9.048-.56c.602.25.909.91.73 1.521l-.046.13l-.991 2.276a1.264 1.264 0 0 1-2.38-.837l.045-.13l.991-2.276a1.264 1.264 0 0 1 1.651-.684"></svg:path>`,
+})
+export class FluentWeatherSnowShowerDay48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerNight20FilledIcon],svg[fluent-weather-snow-shower-night-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.5 17a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M8 16a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M11 6c2.465 0 3.863 1.574 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S16.714 15 15.128 15H6.872C5.286 15 4 13.763 4 12.237c0-1.47 1.192-2.671 2.697-2.758l.237-.005C7.139 7.561 8.535 6 11 6M5.843 2a4.24 4.24 0 0 1 1.895.565a4.24 4.24 0 0 1 1.979 2.573c-1.724.38-2.963 1.54-3.469 3.141l-.064.221l-.046.187l-.165.03a3.75 3.75 0 0 0-2.2 1.362a4.24 4.24 0 0 1-1.662-1.418a.63.63 0 0 1 .306-.948c1.376-.492 2.117-1.046 2.54-1.856c.463-.883.549-1.82.242-3.08a.628.628 0 0 1 .644-.776"></svg:path>`,
+})
+export class FluentWeatherSnowShowerNight20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerNight20RegularIcon],svg[fluent-weather-snow-shower-night-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.5 17a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M8 16a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1m3 0a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M11 6c2.465 0 3.863 1.574 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763S16.714 15 15.128 15H6.872C5.286 15 4 13.763 4 12.237s1.286-2.763 2.872-2.763h.062C7.139 7.561 8.535 6 11 6m0 1c-1.65 0-3.087 1.27-3.087 3.025c0 .278-.254.496-.545.496h-.55C5.814 10.521 5 11.3 5 12.261C5 13.22 5.814 14 6.818 14h8.364C16.186 14 17 13.221 17 12.26c0-.96-.814-1.739-1.818-1.739h-.55c-.29 0-.545-.218-.545-.496C14.087 8.248 12.65 7 11 7M5.843 2a4.24 4.24 0 0 1 1.895.565a4.24 4.24 0 0 1 1.979 2.573a5 5 0 0 0-1.073.363A3.05 3.05 0 0 0 7 3.375a6 6 0 0 0-.535-.249c.086 1.228-.036 2.483-.626 3.445c-.58.853-1.328 1.423-2.558 1.898q.21.185.45.339q.466.297.92.46a3.7 3.7 0 0 0-.878.811a4.24 4.24 0 0 1-1.662-1.418a.63.63 0 0 1 .306-.948c1.376-.492 2.117-1.046 2.54-1.856c.463-.883.549-1.82.242-3.08a.628.628 0 0 1 .644-.776"></svg:path>`,
+})
+export class FluentWeatherSnowShowerNight20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerNight24FilledIcon],svg[fluent-weather-snow-shower-night-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.75 20a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5M8.5 19a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5M13.001 6.018c3.169 0 4.966 2.097 5.228 4.63h.08A3.687 3.687 0 0 1 22 14.33a3.687 3.687 0 0 1-3.692 3.683H7.694a3.687 3.687 0 0 1-3.692-3.683a3.687 3.687 0 0 1 3.692-3.682h.08c.263-2.55 2.059-4.63 5.227-4.63M6.588 2.01a5.06 5.06 0 0 1 2.264.674a5.06 5.06 0 0 1 2.208 2.595C9.075 5.84 7.655 7.28 7.066 9.225l-.07.246l-.057.238l-.206.038a4.67 4.67 0 0 0-2.804 1.815l-.155-.085a5.1 5.1 0 0 1-1.642-1.514a.75.75 0 0 1 .366-1.132C4.14 8.243 5.025 7.58 5.53 6.615c.553-1.055.655-2.174.288-3.677a.75.75 0 0 1 .77-.928"></svg:path>`,
+})
+export class FluentWeatherSnowShowerNight24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerNight24RegularIcon],svg[fluent-weather-snow-shower-night-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.75 20.003a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m-6.75-1a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5m4.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5M13.001 6.018c3.169 0 4.966 2.097 5.228 4.63h.08A3.687 3.687 0 0 1 22 14.33a3.687 3.687 0 0 1-3.692 3.683H7.694a3.687 3.687 0 0 1-3.692-3.683a3.687 3.687 0 0 1 3.692-3.682h.08c.263-2.55 2.059-4.63 5.227-4.63m0 1.497c-2.071 0-3.877 1.634-3.877 3.89c0 .357-.318.637-.684.637h-.69c-1.261 0-2.283 1.002-2.283 2.237s1.022 2.236 2.283 2.236h10.503c1.26 0 2.283-1.001 2.283-2.236s-1.022-2.237-2.283-2.237h-.69c-.366 0-.685-.28-.685-.637c0-2.285-1.806-3.89-3.877-3.89M6.588 2.01a5.06 5.06 0 0 1 2.264.674a5.06 5.06 0 0 1 2.208 2.595c-.5.14-.963.338-1.386.584A3.55 3.55 0 0 0 7.484 3.7c.16 1.352-.048 2.513-.623 3.61l-.118.214c-.57.976-1.432 1.708-2.718 2.304a3.6 3.6 0 0 0 1.07.614a4.6 4.6 0 0 0-1.166 1.119l-.155-.085a5.1 5.1 0 0 1-1.642-1.514a.75.75 0 0 1 .366-1.132C4.14 8.243 5.025 7.58 5.53 6.615c.553-1.055.655-2.174.288-3.677a.75.75 0 0 1 .77-.928"></svg:path>`,
+})
+export class FluentWeatherSnowShowerNight24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerNight48FilledIcon],svg[fluent-weather-snow-shower-night-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21.499 40a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m-13.5-2a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m-9-25.99c6.337 0 9.932 4.194 10.455 9.26h.16c4.078 0 7.384 3.297 7.384 7.365S40.692 36 36.614 36h-21.23C11.306 36 8 32.703 8 28.635s3.306-7.365 7.384-7.365h.16c.526-5.1 4.118-9.26 10.455-9.26M13.178 4.002c1.59.086 3.134.544 4.526 1.348a10.1 10.1 0 0 1 4.418 5.193c-4.016 1.144-6.877 4.083-8.027 8.049l-.092.332l-.115.476l-.413.077a9.35 9.35 0 0 0-5.616 3.632l-.31-.172a10.1 10.1 0 0 1-3.284-3.028a1.5 1.5 0 0 1 .731-2.265c3.285-1.176 5.055-2.5 6.067-4.432c1.105-2.11 1.31-4.348.576-7.354a1.502 1.502 0 0 1 1.539-1.856"></svg:path>`,
+})
+export class FluentWeatherSnowShowerNight48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowShowerNight48RegularIcon],svg[fluent-weather-snow-shower-night-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21.499 40.009a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m-13.5-2a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m-9-26c6.337 0 9.932 4.195 10.455 9.26h.16c4.078 0 7.384 3.298 7.384 7.366S40.692 36 36.614 36h-21.23C11.306 36 8 32.703 8 28.635s3.306-7.365 7.384-7.365h.16c.526-5.1 4.118-9.26 10.455-9.26m0 2.496c-4.261 0-7.975 3.448-7.975 8.21c0 .755-.656 1.347-1.408 1.347h-1.42c-2.594 0-4.697 2.114-4.697 4.721s2.103 4.722 4.697 4.722h21.606c2.594 0 4.697-2.114 4.697-4.722c0-2.607-2.103-4.72-4.697-4.72h-1.42c-.752 0-1.408-.593-1.408-1.348c0-4.823-3.714-8.21-7.975-8.21M13.178 4.002c1.59.086 3.134.544 4.526 1.348a10.1 10.1 0 0 1 4.418 5.193a12 12 0 0 0-2.189.855c-.64-1.741-2.06-3.156-3.992-4.262a6.4 6.4 0 0 0-1.425-.59c.364 3.04.247 5.108-1.057 7.578l-.268.479c-1.295 2.197-3.207 3.497-6.125 4.84c.322.318.812.692 1.212.974q.681.48 1.403.818a9.4 9.4 0 0 0-1.822 1.874l-.31-.172a10.1 10.1 0 0 1-3.284-3.028a1.5 1.5 0 0 1 .731-2.265c3.285-1.176 5.055-2.5 6.067-4.432c1.105-2.11 1.31-4.348.576-7.354a1.502 1.502 0 0 1 1.539-1.856"></svg:path>`,
+})
+export class FluentWeatherSnowShowerNight48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowflake20FilledIcon],svg[fluent-weather-snowflake-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 2a.75.75 0 0 1 .75.75v2.19l1.47-1.47a.75.75 0 1 1 1.06 1.06l-2.53 2.53v2.19h2.19l2.53-2.53a.75.75 0 1 1 1.06 1.06l-1.47 1.47h2.19a.75.75 0 0 1 0 1.5h-2.19l1.47 1.47a.75.75 0 1 1-1.06 1.06l-2.53-2.53h-2.19v2.19l2.53 2.53a.75.75 0 1 1-1.06 1.06l-1.47-1.47v2.19a.75.75 0 0 1-1.5 0v-2.19l-1.47 1.47a.75.75 0 0 1-1.06-1.06l2.53-2.53v-2.19H7.06l-2.53 2.53a.75.75 0 0 1-1.06-1.06l1.47-1.47H2.75a.75.75 0 0 1 0-1.5h2.19L3.47 7.78a.75.75 0 0 1 1.06-1.06l2.53 2.53h2.19V7.06L6.72 4.53a.75.75 0 0 1 1.06-1.06l1.47 1.47V2.75A.75.75 0 0 1 10 2"></svg:path>`,
+})
+export class FluentWeatherSnowflake20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowflake20RegularIcon],svg[fluent-weather-snowflake-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 2a.5.5 0 0 1 .5.5v3.043l1.896-1.897a.5.5 0 0 1 .708.708L10.5 6.957V9.5h2.543l2.603-2.604a.5.5 0 0 1 .708.708L14.457 9.5H17.5a.5.5 0 0 1 0 1h-3.043l1.897 1.896a.5.5 0 0 1-.708.708L13.043 10.5H10.5v2.543l2.604 2.603a.5.5 0 0 1-.708.708L10.5 14.457V17.5a.5.5 0 0 1-1 0v-3.043l-1.896 1.897a.5.5 0 0 1-.708-.708L9.5 13.043V10.5H6.957l-2.603 2.604a.5.5 0 0 1-.708-.708L5.543 10.5H2.5a.5.5 0 0 1 0-1h3.043L3.646 7.604a.5.5 0 1 1 .708-.708L6.957 9.5H9.5V6.957L6.896 4.354a.5.5 0 1 1 .708-.708L9.5 5.543V2.5A.5.5 0 0 1 10 2"></svg:path>`,
+})
+export class FluentWeatherSnowflake20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowflake24FilledIcon],svg[fluent-weather-snowflake-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 2a1 1 0 0 1 1 1v2.551l1.707-1.706a1 1 0 1 1 1.414 1.414L13 8.379V11h2.62l3.121-3.12a1 1 0 1 1 1.414 1.413L18.45 11H21a1 1 0 1 1 0 2h-2.551l1.706 1.707a1 1 0 0 1-1.414 1.414L15.621 13H13v2.62l3.12 3.121a1 1 0 0 1-1.413 1.414L13 18.45V21a1 1 0 1 1-2 0v-2.551l-1.707 1.706a1 1 0 0 1-1.414-1.414L11 15.621V13H8.38l-3.121 3.12a1 1 0 0 1-1.414-1.413L5.55 13H3a1 1 0 1 1 0-2h2.551L3.845 9.293A1 1 0 1 1 5.259 7.88L8.379 11H11V8.38L7.88 5.259a1 1 0 0 1 1.413-1.414L11 5.55V3a1 1 0 0 1 1-1"></svg:path>`,
+})
+export class FluentWeatherSnowflake24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowflake24RegularIcon],svg[fluent-weather-snowflake-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.75 2a.75.75 0 0 1 .75.75v3.155l2.133-2.134a.75.75 0 1 1 1.061 1.061L12.5 8.026V11h2.974l3.194-3.194a.75.75 0 0 1 1.06 1.06L17.596 11h3.155a.75.75 0 0 1 0 1.5h-3.155l2.134 2.133a.75.75 0 1 1-1.061 1.061L15.474 12.5H12.5v2.974l3.194 3.194a.75.75 0 0 1-1.06 1.06L12.5 17.596v3.155a.75.75 0 0 1-1.5 0v-3.155L8.867 19.73a.75.75 0 1 1-1.061-1.061L11 15.474V12.5H8.026l-3.194 3.194a.75.75 0 0 1-1.06-1.06L5.904 12.5H2.75a.75.75 0 0 1 0-1.5h3.155L3.77 8.867a.75.75 0 0 1 1.061-1.061L8.026 11H11V8.026L7.806 4.832a.75.75 0 1 1 1.06-1.06L11 5.904V2.75a.75.75 0 0 1 .75-.75"></svg:path>`,
+})
+export class FluentWeatherSnowflake24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowflake32FilledIcon],svg[fluent-weather-snowflake-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16.25 2.5c.69 0 1.25.56 1.25 1.25v4.194l2.674-2.674a1.25 1.25 0 0 1 1.768 1.768L17.5 11.479V15h3.52l4.442-4.442a1.25 1.25 0 0 1 1.768 1.768L24.556 15h4.194a1.25 1.25 0 1 1 0 2.5h-4.194l2.674 2.674a1.25 1.25 0 1 1-1.768 1.768L21.021 17.5H17.5v3.52l4.442 4.442a1.25 1.25 0 0 1-1.768 1.768L17.5 24.556v4.194a1.25 1.25 0 1 1-2.5 0v-4.194l-2.674 2.674a1.25 1.25 0 1 1-1.768-1.768L15 21.021V17.5h-3.52l-4.442 4.442a1.25 1.25 0 0 1-1.768-1.768L7.944 17.5H3.75a1.25 1.25 0 1 1 0-2.5h4.194L5.27 12.326a1.25 1.25 0 0 1 1.768-1.768L11.479 15H15v-3.52l-4.442-4.442a1.25 1.25 0 0 1 1.768-1.768L15 7.944V3.75c0-.69.56-1.25 1.25-1.25"></svg:path>`,
+})
+export class FluentWeatherSnowflake32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowflake32RegularIcon],svg[fluent-weather-snowflake-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 2a1 1 0 0 1 1 1v5.086l3.293-3.293a1 1 0 1 1 1.414 1.414L17 10.914V15h4.086l4.707-4.707a1 1 0 1 1 1.414 1.414L23.914 15H29a1 1 0 1 1 0 2h-5.086l3.293 3.293a1 1 0 0 1-1.414 1.414L21.086 17H17v4.086l4.707 4.707a1 1 0 0 1-1.414 1.414L17 23.914V29a1 1 0 1 1-2 0v-5.086l-3.293 3.293a1 1 0 0 1-1.414-1.414L15 21.086V17h-4.086l-4.707 4.707a1 1 0 0 1-1.414-1.414L8.086 17H3a1 1 0 1 1 0-2h5.086l-3.293-3.293a1 1 0 1 1 1.414-1.414L10.914 15H15v-4.086l-4.707-4.707a1 1 0 1 1 1.414-1.414L15 8.086V3a1 1 0 0 1 1-1"></svg:path>`,
+})
+export class FluentWeatherSnowflake32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowflake48FilledIcon],svg[fluent-weather-snowflake-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M24.5 4A1.5 1.5 0 0 1 26 5.5v7.827l4.503-4.503a1.5 1.5 0 0 1 2.122 2.121L26 17.57V23h5.43l6.625-6.625a1.5 1.5 0 0 1 2.121 2.122L35.673 23H43.5a1.5 1.5 0 0 1 0 3h-7.827l4.26 4.26a1.5 1.5 0 0 1-2.122 2.121L31.43 26H26v5.43l6.381 6.381a1.5 1.5 0 0 1-2.121 2.121L26 35.673V43.5a1.5 1.5 0 0 1-3 0v-7.827l-4.503 4.503a1.5 1.5 0 0 1-2.122-2.121L23 31.43V26h-5.43l-6.625 6.625a1.5 1.5 0 0 1-2.121-2.122L13.327 26H5.5a1.5 1.5 0 0 1 0-3h7.827L8.58 18.253a1.5 1.5 0 0 1 2.122-2.121L17.57 23H23v-5.43l-6.868-6.868a1.5 1.5 0 0 1 2.121-2.122L23 13.327V5.5A1.5 1.5 0 0 1 24.5 4"></svg:path>`,
+})
+export class FluentWeatherSnowflake48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSnowflake48RegularIcon],svg[fluent-weather-snowflake-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M24.25 3.5c.69 0 1.25.56 1.25 1.25v8.732l5.116-5.116a1.25 1.25 0 0 1 1.768 1.768L25.5 17.018V23h5.982l6.884-6.884a1.25 1.25 0 0 1 1.768 1.768L35.018 23h8.732a1.25 1.25 0 1 1 0 2.5h-8.732l4.866 4.866a1.25 1.25 0 0 1-1.768 1.768L31.482 25.5H25.5v5.982l6.634 6.634a1.25 1.25 0 0 1-1.768 1.768L25.5 35.018v8.732a1.25 1.25 0 1 1-2.5 0v-8.732l-5.116 5.116a1.25 1.25 0 0 1-1.768-1.768L23 31.482V25.5h-5.982l-6.884 6.884a1.25 1.25 0 0 1-1.768-1.768l5.116-5.116H4.75a1.25 1.25 0 1 1 0-2.5h8.732l-5.366-5.366a1.25 1.25 0 0 1 1.768-1.768L17.018 23H23v-5.982l-7.134-7.134a1.25 1.25 0 0 1 1.768-1.768L23 13.482V4.75c0-.69.56-1.25 1.25-1.25"></svg:path>`,
+})
+export class FluentWeatherSnowflake48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSqualls20FilledIcon],svg[fluent-weather-squalls-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.073 5.812A3.498 3.498 0 0 1 13 6.499A3.5 3.5 0 0 1 9.5 10H2.75a.75.75 0 1 1 0-1.5H9.5a2.001 2.001 0 0 0 .002-4c-.952 0-1.772.672-1.958 1.606l-.059.291a.75.75 0 0 1-1.47-.294zm7.287 3.542A2.45 2.45 0 0 1 18 10.449v.051a2.5 2.5 0 0 1-2.5 2.5h-.916a2.378 2.378 0 0 1-2.212 3.25a2.38 2.38 0 0 1-1.98-1.056l-.015-.024a.75.75 0 1 1 1.246-.834l.016.024c.163.243.439.39.733.39a.875.875 0 1 0 .003-1.75H2.75a.75.75 0 0 1 0-1.5H15.5a1 1 0 0 0 1-1v-.05a.95.95 0 0 0-1.799-.425l-.03.06a.75.75 0 1 1-1.342-.67z"></svg:path>`,
+})
+export class FluentWeatherSqualls20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentWeatherSqualls20RegularIcon],svg[fluent-weather-squalls-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.568 6.11A3.248 3.248 0 0 1 13 6.75A3.25 3.25 0 0 1 9.75 10H2.5a.5.5 0 1 1 0-1h7.25a2.251 2.251 0 0 0 .002-4.5A2.25 2.25 0 0 0 7.55 6.307l-.059.291a.5.5 0 1 1-.98-.196zM13 10.5a2.5 2.5 0 1 1 2.5 2.5h-1.38c.24.357.379.787.379 1.25a2.254 2.254 0 0 1-2.255 2.25a2.264 2.264 0 0 1-2.233-1.888l-.005-.03a.5.5 0 1 1 .986-.164l.005.03c.101.605.63 1.052 1.247 1.052a1.25 1.25 0 1 0 .005-2.5H2.5a.5.5 0 0 1 0-1h13a1.5 1.5 0 1 0-1.5-1.5a.5.5 0 0 1-1 0"></svg:path>`,
+})
+export class FluentWeatherSqualls20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentWeatherSqualls24FilledIcon],svg[fluent-weather-squalls-24-filled-icon]',
   host: {
     role: 'img',
@@ -4949,17 +6479,17 @@ export class FluentZoomOut32LightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentAccessibilityCheckmark20RegularIcon],svg[fluent-accessibility-checkmark-20-regular-icon]',
+  selector: 'svg[fluentAccessibilityCheckmark24FilledIcon],svg[fluent-accessibility-checkmark-24-filled-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M8.5 4.498a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0m1.5-2.5a2.5 2.5 0 0 0-2.43 3.086L5.471 4.15a1.76 1.76 0 0 0-2.317.88c-.4.882-.008 1.917.877 2.31L7 8.662v2.287l-1.877 4.645a1.75 1.75 0 0 0 3.245 1.311l.086-.213a5.5 5.5 0 0 1-.424-1.618l-.589 1.457a.75.75 0 1 1-1.39-.562l1.876-4.645A1 1 0 0 0 8 10.949V8.662a1 1 0 0 0-.593-.914L4.438 6.427a.74.74 0 0 1-.373-.983a.76.76 0 0 1 1-.38l3.918 1.744a2.5 2.5 0 0 0 2.034 0l3.918-1.744a.76.76 0 0 1 1 .38a.74.74 0 0 1-.373.983l-2.969 1.321a1 1 0 0 0-.593.914v.545a5.5 5.5 0 0 1 1-.185v-.36l2.968-1.322a1.74 1.74 0 0 0 .877-2.31a1.76 1.76 0 0 0-2.317-.88l-2.097.934a2.5 2.5 0 0 0-2.43-3.086M18 14.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.146-1.854a.5.5 0 0 0-.708 0L12.5 15.293l-.646-.647a.5.5 0 0 0-.708.708l1 1a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0 0-.708"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M12 6.5A2.25 2.25 0 1 0 12 2a2.25 2.25 0 0 0 0 4.5M6.15 4.178a2.266 2.266 0 0 0-2.96 1.184a2.24 2.24 0 0 0 1.18 2.954L7.394 9.6a1 1 0 0 1 .61.92v3.04l-1.88 5.457a2.25 2.25 0 1 0 4.256 1.465l.145-.422a6.5 6.5 0 0 1 5.479-9.041v-.5a1 1 0 0 1 .609-.921l3.019-1.282a2.24 2.24 0 0 0 1.18-2.954a2.266 2.266 0 0 0-2.96-1.184l-1.607.682c-.34.144-.578.423-.694.73a3.794 3.794 0 0 1-7.099 0a1.28 1.28 0 0 0-.695-.73zM22 17.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-2.146-2.354a.5.5 0 0 0-.707 0L15.5 18.793l-1.646-1.647a.5.5 0 0 0-.707.708l2 2a.5.5 0 0 0 .707 0l4-4a.5.5 0 0 0 0-.708"></svg:path>`,
 })
-export class FluentAccessibilityCheckmark20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
+export class FluentAccessibilityCheckmark24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
 }

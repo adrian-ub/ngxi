@@ -2,101 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[hugeiconsAbsoluteIcon],svg[hugeicons-absolute-icon]',
+  selector: 'svg[hugeiconsAccelerationIcon],svg[hugeicons-acceleration-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M17.725 2.5c1.39.154 2.325.501 3.023 1.287C22 5.197 22 7.464 22 12s0 6.804-1.252 8.213c-.698.786-1.634 1.133-3.023 1.287m-11.45 0c-1.39-.154-2.325-.501-3.023-1.287C2 18.803 2 16.536 2 12s0-6.804 1.252-8.213C3.95 3.001 4.886 2.654 6.275 2.5M7.56 8.01c1.53-.06 2.49.03 3.09 1.08c.63 1.26 2.19 4.77 2.58 5.58c.42.87.96 1.47 3.18 1.32"></svg:path><svg:path d="M17 8c-2.2-.014-4 2.7-5 4c-1.1 1.5-2.99 4.1-4.99 4"></svg:path></svg:g>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.498 18.414V11.19c0-1.329 0-1.993.599-2.158c.598-.166 1.303.304 2.712 1.244l12.774 8.516c1.41.939 2.114 1.409 1.866 1.808s-1.244.4-3.237.4H6.377c-1.828 0-2.743 0-3.31-.379c-.569-.378-.569-.988-.569-2.207m6-7.414a4 4 0 1 0 0-8a4 4 0 0 0 0 8m7.004-1.004l5.903 3.384m0 0c.32-.34-.22-1.32-.677-2.652m.677 2.652c-.22.24-.941.3-2.641.618" color="currentColor"></svg:path>`,
 })
-export class HugeiconsAbsoluteIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsAccidentIcon],svg[hugeicons-accident-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.008 10L7.43 7.953c-.3-.252-.45-.377-.415-.507c.034-.13.227-.164.612-.23L8.8 7.01c.447-.078.503-.193.304-.6L7.86 3.87c-.246-.504-.37-.756-.257-.862c.113-.107.355.032.84.31l2.091 1.202c.36.207.396.197.582-.177l.844-1.697c.22-.442.33-.663.476-.645c.147.018.2.26.307.742l.68 3.08c.09.404.194.46.574.296l2.269-.978c.395-.17.592-.255.692-.157s.02.299-.14.7L15.006 10m-2.512 0l-.5-1.5M6.745 13H2m4.745 0c.768.501 1.412.57 2.23.986C9.99 14.58 10.473 15.5 10.468 17c0 1 .13 2.02-.186 2.57c-.362.63-2.585.428-2.785.428m-.752-6.999c-1.024-.668-1.585-1.912-2.213-2.92c-.872-1.5-2.066-1.98-2.52-2.075m5.485 11.994c0 1.102-.806 2.002-2 2.002c-1.096 0-1.991-.9-1.991-2.002m3.99 0c0-1.048-.806-1.998-2-1.998a2 2 0 0 0-1.99 1.998m0 0H2m15.256-7.001H22m-4.744 0c-.769.502-1.412.57-2.23.987c-1.016.594-1.498 1.514-1.494 3.015c0 1-.13 2.02.187 2.57c.362.63 2.585.428 2.785.428m.752-7c1.023-.669 1.585-1.913 2.212-2.92c.872-1.5 2.067-1.981 2.52-2.077m-5.484 11.997c0 1.103.806 2.003 2 2.003c1.095 0 1.99-.9 1.99-2.003m-3.99 0c0-1.048.806-1.998 2-1.998a2 2 0 0 1 1.99 1.998m0 0H22" color="currentColor"></svg:path>`,
-})
-export class HugeiconsAccidentIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsAccountSetting02Icon],svg[hugeicons-account-setting-02-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="m21.318 7.141l-.494-.856c-.373-.648-.56-.972-.878-1.101c-.317-.13-.676-.027-1.395.176l-1.22.344c-.459.106-.94.046-1.358-.17l-.337-.194a2 2 0 0 1-.788-.967l-.334-.998c-.22-.66-.33-.99-.591-1.178c-.261-.19-.609-.19-1.303-.19h-1.115c-.694 0-1.041 0-1.303.19c-.261.188-.37.518-.59 1.178l-.334.998a2 2 0 0 1-.789.967l-.337.195c-.418.215-.9.275-1.358.17l-1.22-.345c-.719-.203-1.078-.305-1.395-.176c-.318.129-.505.453-.878 1.1l-.493.857c-.35.608-.525.911-.491 1.234c.034.324.268.584.736 1.105l1.031 1.153c.252.319.431.875.431 1.375s-.179 1.056-.43 1.375l-1.032 1.152c-.468.521-.702.782-.736 1.105s.14.627.49 1.234l.494.857c.373.647.56.971.878 1.1s.676.028 1.395-.176l1.22-.344a2 2 0 0 1 1.359.17l.336.194c.36.23.636.57.788.968l.334.997c.22.66.33.99.591 1.18c.262.188.609.188 1.303.188h1.115c.694 0 1.042 0 1.303-.189s.371-.519.59-1.179l.335-.997c.152-.399.428-.738.788-.968l.336-.194c.42-.215.9-.276 1.36-.17l1.22.344c.718.204 1.077.306 1.394.177c.318-.13.505-.454.878-1.101l.493-.857c.35-.607.525-.91.491-1.234s-.268-.584-.736-1.105l-1.031-1.152c-.252-.32-.431-.875-.431-1.375s.179-1.056.43-1.375l1.032-1.153c.468-.52.702-.781.736-1.105s-.14-.626-.49-1.234"></svg:path><svg:path d="M8.5 16a4.04 4.04 0 0 1 3.5-2.02c1.496 0 2.801.812 3.5 2.02M14 9.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path></svg:g>`,
-})
-export class HugeiconsAccountSetting02Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsAccountSetting03Icon],svg[hugeicons-account-setting-03-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M16.308 4.384c-.59 0-.886 0-1.155-.1l-.111-.046c-.261-.12-.47-.328-.888-.746c-.962-.962-1.443-1.443-2.034-1.488a2 2 0 0 0-.24 0c-.591.045-1.072.526-2.034 1.488c-.418.418-.627.627-.888.746l-.11.046c-.27.1-.565.1-1.156.1h-.11c-1.507 0-2.261 0-2.73.468s-.468 1.223-.468 2.73v.11c0 .59 0 .886-.1 1.155q-.022.057-.046.111c-.12.261-.328.47-.746.888c-.962.962-1.443 1.443-1.488 2.034a2 2 0 0 0 0 .24c.045.591.526 1.072 1.488 2.034c.418.418.627.627.746.888q.025.054.046.11c.1.27.1.565.1 1.156v.11c0 1.507 0 2.261.468 2.73s1.223.468 2.73.468h.11c.59 0 .886 0 1.155.1q.057.021.111.046c.261.12.47.328.888.746c.962.962 1.443 1.443 2.034 1.488q.12.009.24 0c.591-.045 1.072-.526 2.034-1.488c.418-.418.627-.626.888-.746q.054-.025.11-.046c.27-.1.565-.1 1.156-.1h.11c1.507 0 2.261 0 2.73-.468s.468-1.223.468-2.73v-.11c0-.59 0-.886.1-1.155q.021-.057.046-.111c.12-.261.328-.47.746-.888c.962-.962 1.443-1.443 1.488-2.034q.009-.12 0-.24c-.045-.591-.526-1.072-1.488-2.034c-.418-.418-.626-.627-.746-.888l-.046-.11c-.1-.27-.1-.565-.1-1.156v-.11c0-1.507 0-2.261-.468-2.73s-1.223-.468-2.73-.468z"></svg:path><svg:path d="M8.5 16.5a4.04 4.04 0 0 1 3.5-2.02c1.496 0 2.801.812 3.5 2.02M14 10a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path></svg:g>`,
-})
-export class HugeiconsAccountSetting03Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsAccountSetting01Icon],svg[hugeicons-account-setting-01-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M8.5 16.5a4.04 4.04 0 0 1 3.5-2.02c1.496 0 2.801.812 3.5 2.02M14 10a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path><svg:path d="M22 13.967v-3.934c-2.857 0-4.714-3.103-3.268-5.566L15.268 2.5c-1.464 2.494-5.07 2.494-6.534 0L5.27 4.467C6.716 6.93 4.857 10.033 2 10.033v3.934c2.857 0 4.714 3.103 3.268 5.566L8.732 21.5c1.465-2.495 5.073-2.495 6.538 0l3.464-1.967c-1.447-2.463.41-5.566 3.266-5.566"></svg:path></svg:g>`,
-})
-export class HugeiconsAccountSetting01Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsActivity01Icon],svg[hugeicons-activity-01-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M4.318 19.682C3 18.364 3 16.242 3 12s0-6.364 1.318-7.682S7.758 3 12 3s6.364 0 7.682 1.318S21 7.758 21 12s0 6.364-1.318 7.682S16.242 21 12 21s-6.364 0-7.682-1.318"></svg:path><svg:path d="m7 14l2.793-2.793a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 0 1.414 0L17 10"></svg:path></svg:g>`,
-})
-export class HugeiconsActivity01Icon {
+export class HugeiconsAccelerationIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,16 +36,33 @@ export class HugeiconsAbacusIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[hugeiconsAccelerationIcon],svg[hugeicons-acceleration-icon]',
+  selector: 'svg[hugeiconsAbsoluteIcon],svg[hugeicons-absolute-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.498 18.414V11.19c0-1.329 0-1.993.599-2.158c.598-.166 1.303.304 2.712 1.244l12.774 8.516c1.41.939 2.114 1.409 1.866 1.808s-1.244.4-3.237.4H6.377c-1.828 0-2.743 0-3.31-.379c-.569-.378-.569-.988-.569-2.207m6-7.414a4 4 0 1 0 0-8a4 4 0 0 0 0 8m7.004-1.004l5.903 3.384m0 0c.32-.34-.22-1.32-.677-2.652m.677 2.652c-.22.24-.941.3-2.641.618" color="currentColor"></svg:path>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M17.725 2.5c1.39.154 2.325.501 3.023 1.287C22 5.197 22 7.464 22 12s0 6.804-1.252 8.213c-.698.786-1.634 1.133-3.023 1.287m-11.45 0c-1.39-.154-2.325-.501-3.023-1.287C2 18.803 2 16.536 2 12s0-6.804 1.252-8.213C3.95 3.001 4.886 2.654 6.275 2.5M7.56 8.01c1.53-.06 2.49.03 3.09 1.08c.63 1.26 2.19 4.77 2.58 5.58c.42.87.96 1.47 3.18 1.32"></svg:path><svg:path d="M17 8c-2.2-.014-4 2.7-5 4c-1.1 1.5-2.99 4.1-4.99 4"></svg:path></svg:g>`,
 })
-export class HugeiconsAccelerationIcon {
+export class HugeiconsAbsoluteIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsAccountSetting01Icon],svg[hugeicons-account-setting-01-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M8.5 16.5a4.04 4.04 0 0 1 3.5-2.02c1.496 0 2.801.812 3.5 2.02M14 10a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path><svg:path d="M22 13.967v-3.934c-2.857 0-4.714-3.103-3.268-5.566L15.268 2.5c-1.464 2.494-5.07 2.494-6.534 0L5.27 4.467C6.716 6.93 4.857 10.033 2 10.033v3.934c2.857 0 4.714 3.103 3.268 5.566L8.732 21.5c1.465-2.495 5.073-2.495 6.538 0l3.464-1.967c-1.447-2.463.41-5.566 3.266-5.566"></svg:path></svg:g>`,
+})
+export class HugeiconsAccountSetting01Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -155,16 +87,16 @@ export class HugeiconsAccessIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[hugeiconsActivity04Icon],svg[hugeicons-activity-04-icon]',
+  selector: 'svg[hugeiconsAccountSetting03Icon],svg[hugeicons-account-setting-03-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M21.5 4.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-1.029 4.906c.029.884.029 1.906.029 3.094c0 4.243 0 6.364-1.318 7.682S15.742 21.5 11.5 21.5s-6.364 0-7.682-1.318S2.5 16.742 2.5 12.5s0-6.364 1.318-7.682S7.258 3.5 11.5 3.5c1.188 0 2.21 0 3.094.029"></svg:path><svg:path d="M5.5 12.5H8l2-4l3 8l2-4h2.5"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M16.308 4.384c-.59 0-.886 0-1.155-.1l-.111-.046c-.261-.12-.47-.328-.888-.746c-.962-.962-1.443-1.443-2.034-1.488a2 2 0 0 0-.24 0c-.591.045-1.072.526-2.034 1.488c-.418.418-.627.627-.888.746l-.11.046c-.27.1-.565.1-1.156.1h-.11c-1.507 0-2.261 0-2.73.468s-.468 1.223-.468 2.73v.11c0 .59 0 .886-.1 1.155q-.022.057-.046.111c-.12.261-.328.47-.746.888c-.962.962-1.443 1.443-1.488 2.034a2 2 0 0 0 0 .24c.045.591.526 1.072 1.488 2.034c.418.418.627.627.746.888q.025.054.046.11c.1.27.1.565.1 1.156v.11c0 1.507 0 2.261.468 2.73s1.223.468 2.73.468h.11c.59 0 .886 0 1.155.1q.057.021.111.046c.261.12.47.328.888.746c.962.962 1.443 1.443 2.034 1.488q.12.009.24 0c.591-.045 1.072-.526 2.034-1.488c.418-.418.627-.626.888-.746q.054-.025.11-.046c.27-.1.565-.1 1.156-.1h.11c1.507 0 2.261 0 2.73-.468s.468-1.223.468-2.73v-.11c0-.59 0-.886.1-1.155q.021-.057.046-.111c.12-.261.328-.47.746-.888c.962-.962 1.443-1.443 1.488-2.034q.009-.12 0-.24c-.045-.591-.526-1.072-1.488-2.034c-.418-.418-.626-.627-.746-.888l-.046-.11c-.1-.27-.1-.565-.1-1.156v-.11c0-1.507 0-2.261-.468-2.73s-1.223-.468-2.73-.468z"></svg:path><svg:path d="M8.5 16.5a4.04 4.04 0 0 1 3.5-2.02c1.496 0 2.801.812 3.5 2.02M14 10a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path></svg:g>`,
 })
-export class HugeiconsActivity04Icon {
+export class HugeiconsAccountSetting03Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,16 +104,16 @@ export class HugeiconsActivity04Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[hugeiconsActivity02Icon],svg[hugeicons-activity-02-icon]',
+  selector: 'svg[hugeiconsAccountSetting02Icon],svg[hugeicons-account-setting-02-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M21.5 4.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-1.029 4.906c.029.884.029 1.906.029 3.094c0 4.243 0 6.364-1.318 7.682S15.742 21.5 11.5 21.5s-6.364 0-7.682-1.318S2.5 16.742 2.5 12.5s0-6.364 1.318-7.682S7.258 3.5 11.5 3.5c1.188 0 2.21 0 3.094.029"></svg:path><svg:path d="m6.5 14.5l2.793-2.793a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 0 1.414 0L16.5 10.5"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="m21.318 7.141l-.494-.856c-.373-.648-.56-.972-.878-1.101c-.317-.13-.676-.027-1.395.176l-1.22.344c-.459.106-.94.046-1.358-.17l-.337-.194a2 2 0 0 1-.788-.967l-.334-.998c-.22-.66-.33-.99-.591-1.178c-.261-.19-.609-.19-1.303-.19h-1.115c-.694 0-1.041 0-1.303.19c-.261.188-.37.518-.59 1.178l-.334.998a2 2 0 0 1-.789.967l-.337.195c-.418.215-.9.275-1.358.17l-1.22-.345c-.719-.203-1.078-.305-1.395-.176c-.318.129-.505.453-.878 1.1l-.493.857c-.35.608-.525.911-.491 1.234c.034.324.268.584.736 1.105l1.031 1.153c.252.319.431.875.431 1.375s-.179 1.056-.43 1.375l-1.032 1.152c-.468.521-.702.782-.736 1.105s.14.627.49 1.234l.494.857c.373.647.56.971.878 1.1s.676.028 1.395-.176l1.22-.344a2 2 0 0 1 1.359.17l.336.194c.36.23.636.57.788.968l.334.997c.22.66.33.99.591 1.18c.262.188.609.188 1.303.188h1.115c.694 0 1.042 0 1.303-.189s.371-.519.59-1.179l.335-.997c.152-.399.428-.738.788-.968l.336-.194c.42-.215.9-.276 1.36-.17l1.22.344c.718.204 1.077.306 1.394.177c.318-.13.505-.454.878-1.101l.493-.857c.35-.607.525-.91.491-1.234s-.268-.584-.736-1.105l-1.031-1.152c-.252-.32-.431-.875-.431-1.375s.179-1.056.43-1.375l1.032-1.153c.468-.52.702-.781.736-1.105s-.14-.626-.49-1.234"></svg:path><svg:path d="M8.5 16a4.04 4.04 0 0 1 3.5-2.02c1.496 0 2.801.812 3.5 2.02M14 9.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0"></svg:path></svg:g>`,
 })
-export class HugeiconsActivity02Icon {
+export class HugeiconsAccountSetting02Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,16 +121,16 @@ export class HugeiconsActivity02Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[hugeiconsAcuteIcon],svg[hugeicons-acute-icon]',
+  selector: 'svg[hugeiconsActivity01Icon],svg[hugeicons-activity-01-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M10.596 2.523c.8-.225 2.676-.7 3.176-.45m0 0c.525.325.625 2.075.775 2.8m-.775-2.8l-9.954 16.1s-.526.85-.225 1.325c.225.525 1.525.5 1.525.5H20.5m0 0c0-.6-1.8-1.8-1.976-2m1.976 2c0 .6-1.45 1.45-1.976 2"></svg:path><svg:path d="M7.494 12.498c1.876.325 3.31 1.225 4.161 2.55c.95 1.35 1.066 3.225.491 4.75"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M4.318 19.682C3 18.364 3 16.242 3 12s0-6.364 1.318-7.682S7.758 3 12 3s6.364 0 7.682 1.318S21 7.758 21 12s0 6.364-1.318 7.682S16.242 21 12 21s-6.364 0-7.682-1.318"></svg:path><svg:path d="m7 14l2.793-2.793a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 0 1.414 0L17 10"></svg:path></svg:g>`,
 })
-export class HugeiconsAcuteIcon {
+export class HugeiconsActivity01Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -223,6 +155,57 @@ export class HugeiconsActivity03Icon {
 
 @Component({
   standalone: true,
+  selector: 'svg[hugeiconsActivity02Icon],svg[hugeicons-activity-02-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M21.5 4.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-1.029 4.906c.029.884.029 1.906.029 3.094c0 4.243 0 6.364-1.318 7.682S15.742 21.5 11.5 21.5s-6.364 0-7.682-1.318S2.5 16.742 2.5 12.5s0-6.364 1.318-7.682S7.258 3.5 11.5 3.5c1.188 0 2.21 0 3.094.029"></svg:path><svg:path d="m6.5 14.5l2.793-2.793a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 0 1.414 0L16.5 10.5"></svg:path></svg:g>`,
+})
+export class HugeiconsActivity02Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsActivity04Icon],svg[hugeicons-activity-04-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M21.5 4.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-1.029 4.906c.029.884.029 1.906.029 3.094c0 4.243 0 6.364-1.318 7.682S15.742 21.5 11.5 21.5s-6.364 0-7.682-1.318S2.5 16.742 2.5 12.5s0-6.364 1.318-7.682S7.258 3.5 11.5 3.5c1.188 0 2.21 0 3.094.029"></svg:path><svg:path d="M5.5 12.5H8l2-4l3 8l2-4h2.5"></svg:path></svg:g>`,
+})
+export class HugeiconsActivity04Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsAcuteIcon],svg[hugeicons-acute-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M10.596 2.523c.8-.225 2.676-.7 3.176-.45m0 0c.525.325.625 2.075.775 2.8m-.775-2.8l-9.954 16.1s-.526.85-.225 1.325c.225.525 1.525.5 1.525.5H20.5m0 0c0-.6-1.8-1.8-1.976-2m1.976 2c0 .6-1.45 1.45-1.976 2"></svg:path><svg:path d="M7.494 12.498c1.876.325 3.31 1.225 4.161 2.55c.95 1.35 1.066 3.225.491 4.75"></svg:path></svg:g>`,
+})
+export class HugeiconsAcuteIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[hugeiconsAdd02Icon],svg[hugeicons-add-02-icon]',
   host: {
     role: 'img',
@@ -240,16 +223,16 @@ export class HugeiconsAdd02Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[hugeiconsAddFemaleIcon],svg[hugeicons-add-female-icon]',
+  selector: 'svg[hugeiconsAdd01Icon],svg[hugeicons-add-01-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.905 22.634h10.19l-.01.03c.41 0 .75-.34.75-.75s-.34-.75-.75-.75H2.895c-.09 0-.16-.05-.16-.06a3.33 3.33 0 0 1 2.25-2.36l3.72-1.12c.31-.1.53-.39.53-.72v-2.16c0-.37-.28-.69-.66-.74c-.91-.12-1.78-.29-2.57-.53c.4-1.06.73-2.64.73-5.46c0-2.18.84-3.67 2.35-4.18c1.32-.45 2.78 0 3.31.7c.17.23.44.33.72.29c.69-.11 1.18-.04 1.47.2c.66.56.66 2.13.66 3.98s.39 3.45.75 4.46c-.8.24-1.67.41-2.59.53c-.38.04-.66.36-.66.74v2.16c0 .41.34.75.75.75s.75-.34.75-.75v-1.51c1.08-.18 2.09-.43 3.01-.77a.746.746 0 0 0 .41-1.04c-.32-.63-.92-2.37-.92-4.58s0-4.12-1.19-5.13c-.56-.49-1.31-.68-2.26-.59c-1.09-1.06-3.01-1.44-4.68-.88c-1.01.34-3.37 1.57-3.37 5.6c0 3.3-.47 4.67-.92 5.57a.746.746 0 0 0 .41 1.04c.92.34 1.93.6 3.01.77v.95l-3.18.96a4.82 4.82 0 0 0-3.27 3.42c-.11.46-.02.92.27 1.29c.31.4.81.64 1.34.64m14.85.25c0 .41.34.75.75.75s.75-.34.75-.75v-2.75h2.75c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-2.75v-2.75c0-.41-.34-.75-.75-.75s-.75.34-.75.75v2.75h-2.75c-.41 0-.75.34-.75.75s.34.75.75.75h2.75z" color="currentColor"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m-8-8h16" color="currentColor"></svg:path>`,
 })
-export class HugeiconsAddFemaleIcon {
+export class HugeiconsAdd01Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,16 +257,67 @@ export class HugeiconsAddCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[hugeiconsAdd01Icon],svg[hugeicons-add-01-icon]',
+  selector: 'svg[hugeiconsAddCircleHalfDotIcon],svg[hugeicons-add-circle-half-dot-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m-8-8h16" color="currentColor"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2M4.649 5.079q.207-.22.427-.428M7.947 2.73q.273-.122.553-.229m-6 6q.108-.284.232-.558M12 8v8m4-4H8" color="currentColor"></svg:path>`,
 })
-export class HugeiconsAdd01Icon {
+export class HugeiconsAddCircleHalfDotIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsAddInvoiceIcon],svg[hugeicons-add-invoice-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" d="M12.06 21.512c-.516.325-.773.488-1.06.488s-.545-.163-1.06-.488l-1.91-1.205c-.486-.306-.728-.458-.997-.467c-.291-.01-.538.137-1.062.467c-.587.37-1.754 1.39-2.51.904C3 20.913 3 20.158 3 18.646V8c0-2.828 0-4.243.827-5.121S5.985 2 8.647 2h4.706c2.662 0 3.993 0 4.82.879C19 3.757 19 5.172 19 8v4m-8-1H7m10 3v8m4-4h-8m2-11H7" color="currentColor"></svg:path>`,
+})
+export class HugeiconsAddInvoiceIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsAccidentIcon],svg[hugeicons-accident-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.008 10L7.43 7.953c-.3-.252-.45-.377-.415-.507c.034-.13.227-.164.612-.23L8.8 7.01c.447-.078.503-.193.304-.6L7.86 3.87c-.246-.504-.37-.756-.257-.862c.113-.107.355.032.84.31l2.091 1.202c.36.207.396.197.582-.177l.844-1.697c.22-.442.33-.663.476-.645c.147.018.2.26.307.742l.68 3.08c.09.404.194.46.574.296l2.269-.978c.395-.17.592-.255.692-.157s.02.299-.14.7L15.006 10m-2.512 0l-.5-1.5M6.745 13H2m4.745 0c.768.501 1.412.57 2.23.986C9.99 14.58 10.473 15.5 10.468 17c0 1 .13 2.02-.186 2.57c-.362.63-2.585.428-2.785.428m-.752-6.999c-1.024-.668-1.585-1.912-2.213-2.92c-.872-1.5-2.066-1.98-2.52-2.075m5.485 11.994c0 1.102-.806 2.002-2 2.002c-1.096 0-1.991-.9-1.991-2.002m3.99 0c0-1.048-.806-1.998-2-1.998a2 2 0 0 0-1.99 1.998m0 0H2m15.256-7.001H22m-4.744 0c-.769.502-1.412.57-2.23.987c-1.016.594-1.498 1.514-1.494 3.015c0 1-.13 2.02.187 2.57c.362.63 2.585.428 2.785.428m.752-7c1.023-.669 1.585-1.913 2.212-2.92c.872-1.5 2.067-1.981 2.52-2.077m-5.484 11.997c0 1.103.806 2.003 2 2.003c1.095 0 1.99-.9 1.99-2.003m-3.99 0c0-1.048.806-1.998 2-1.998a2 2 0 0 1 1.99 1.998m0 0H22" color="currentColor"></svg:path>`,
+})
+export class HugeiconsAccidentIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsAddFemaleIcon],svg[hugeicons-add-female-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.905 22.634h10.19l-.01.03c.41 0 .75-.34.75-.75s-.34-.75-.75-.75H2.895c-.09 0-.16-.05-.16-.06a3.33 3.33 0 0 1 2.25-2.36l3.72-1.12c.31-.1.53-.39.53-.72v-2.16c0-.37-.28-.69-.66-.74c-.91-.12-1.78-.29-2.57-.53c.4-1.06.73-2.64.73-5.46c0-2.18.84-3.67 2.35-4.18c1.32-.45 2.78 0 3.31.7c.17.23.44.33.72.29c.69-.11 1.18-.04 1.47.2c.66.56.66 2.13.66 3.98s.39 3.45.75 4.46c-.8.24-1.67.41-2.59.53c-.38.04-.66.36-.66.74v2.16c0 .41.34.75.75.75s.75-.34.75-.75v-1.51c1.08-.18 2.09-.43 3.01-.77a.746.746 0 0 0 .41-1.04c-.32-.63-.92-2.37-.92-4.58s0-4.12-1.19-5.13c-.56-.49-1.31-.68-2.26-.59c-1.09-1.06-3.01-1.44-4.68-.88c-1.01.34-3.37 1.57-3.37 5.6c0 3.3-.47 4.67-.92 5.57a.746.746 0 0 0 .41 1.04c.92.34 1.93.6 3.01.77v.95l-3.18.96a4.82 4.82 0 0 0-3.27 3.42c-.11.46-.02.92.27 1.29c.31.4.81.64 1.34.64m14.85.25c0 .41.34.75.75.75s.75-.34.75-.75v-2.75h2.75c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-2.75v-2.75c0-.41-.34-.75-.75-.75s-.75.34-.75.75v2.75h-2.75c-.41 0-.75.34-.75.75s.34.75.75.75h2.75z" color="currentColor"></svg:path>`,
+})
+export class HugeiconsAddFemaleIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8461,40 +8495,6 @@ export class HugeiconsBone02Icon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 22H6.5A2.5 2.5 0 0 1 4 19.5m0 0v-8.816c0-2.985 0-4.477.757-5.525a4 4 0 0 1 .902-.903C6.707 3.5 8.199 3.5 11.184 3.5c.977 0 2.166.051 3.152.064c.899.013 1.349.019 2.186-.13c.838-.147.927-.181 1.106-.25c.77-.292 1.5-.748 2.372-1.184v9.5c0 1.864 0 2.796-.305 3.53a4 4 0 0 1-2.164 2.166c-.735.304-1.667.304-3.531.304H6a2 2 0 0 0-2 2M18 17v5M8 4v4" color="currentColor"></svg:path>`,
 })
 export class HugeiconsBook01Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsBook02Icon],svg[hugeicons-book-02-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M20.5 16.929V10c0-3.771 0-5.657-1.172-6.828S16.271 2 12.5 2h-1C7.729 2 5.843 2 4.672 3.172S3.5 6.229 3.5 10v9.5"></svg:path><svg:path d="M20.5 17H6a2.5 2.5 0 0 0 0 5h14.5"></svg:path><svg:path d="M20.5 22a2.5 2.5 0 0 1 0-5M15 7H9m3 4H9"></svg:path></svg:g>`,
-})
-export class HugeiconsBook02Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsBook03Icon],svg[hugeicons-book-03-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M7.506 4.945h8.5a1.5 1.5 0 0 1 1.5 1.5v1.5m-2.5 10l-.857-2m0 0l-1.55-3.617a.64.64 0 0 0-.593-.383a.64.64 0 0 0-.592.383l-1.551 3.617m4.286 0H9.863m-.857 2l.857-2"></svg:path><svg:path d="M18.497 2H6.307c-.496 0-1.005.073-1.406.368c-1.274.935-2.256 3.02-.273 4.903c.556.528 1.334.72 2.099.72h11.557c.793 0 2.216.113 2.216 2.536v7.454c0 2.22-1.79 4.019-3.997 4.019h-9.03c-2.204 0-3.807-1.557-3.933-3.929L3.506 5.166"></svg:path></svg:g>`,
-})
-export class HugeiconsBook03Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

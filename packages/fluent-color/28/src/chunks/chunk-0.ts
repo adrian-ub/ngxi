@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentColorAddCircle28Icon],svg[fluent-color-add-circle-28-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAddCircle280)" d="M14 2c6.627 0 12 5.373 12 12s-5.373 12-12 12S2 20.627 2 14S7.373 2 14 2"></svg:path><svg:path fill="url(#fluentColorAddCircle281)" d="M14 8a.75.75 0 0 1 .75.75v4.5h4.5a.75.75 0 0 1 0 1.5h-4.5v4.5a.75.75 0 0 1-1.5 0v-4.5h-4.5a.75.75 0 0 1 0-1.5h4.5v-4.5A.75.75 0 0 1 14 8"></svg:path><svg:defs><svg:lineargradient id="fluentColorAddCircle280" x1="2.857" x2="19.42" y1="6.5" y2="23.708" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#52D17C"></svg:stop><svg:stop offset="1" stop-color="#22918B"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorAddCircle281" x1="10.25" x2="13.932" y1="9.224" y2="22.222" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#fff"></svg:stop><svg:stop offset="1" stop-color="#E3FFD9"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class FluentColorAddCircle28Icon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentColorAddStarburst28Icon],svg[fluent-color-add-starburst-28-icon]',
   host: {
     role: 'img',
@@ -19,16 +36,16 @@ export class FluentColorAddStarburst28Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentColorAddCircle28Icon],svg[fluent-color-add-circle-28-icon]',
+  selector: 'svg[fluentColorAgents28Icon],svg[fluent-color-agents-28-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none"><svg:path fill="url(#fluentColorAddCircle280)" d="M14 2c6.627 0 12 5.373 12 12s-5.373 12-12 12S2 20.627 2 14S7.373 2 14 2"></svg:path><svg:path fill="url(#fluentColorAddCircle281)" d="M14 8a.75.75 0 0 1 .75.75v4.5h4.5a.75.75 0 0 1 0 1.5h-4.5v4.5a.75.75 0 0 1-1.5 0v-4.5h-4.5a.75.75 0 0 1 0-1.5h4.5v-4.5A.75.75 0 0 1 14 8"></svg:path><svg:defs><svg:lineargradient id="fluentColorAddCircle280" x1="2.857" x2="19.42" y1="6.5" y2="23.708" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#52D17C"></svg:stop><svg:stop offset="1" stop-color="#22918B"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorAddCircle281" x1="10.25" x2="13.932" y1="9.224" y2="22.222" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#fff"></svg:stop><svg:stop offset="1" stop-color="#E3FFD9"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+  template: `<svg:g fill="none"><svg:path fill="#D9D9D9" d="M8.31 24.596L14.357 3h3.761a3.25 3.25 0 0 1 2.815 1.625l4.763 8.25a2.25 2.25 0 0 1 0 2.25l-5.052 8.75A2.25 2.25 0 0 1 18.695 25H10v-.001L9.91 25h-.03a3.25 3.25 0 0 1-1.57-.404"></svg:path><svg:path fill="url(#fluentColorAgents280)" d="M8.31 24.596L14.357 3h3.761a3.25 3.25 0 0 1 2.815 1.625l4.763 8.25a2.25 2.25 0 0 1 0 2.25l-5.052 8.75A2.25 2.25 0 0 1 18.695 25H10v-.001L9.91 25h-.03a3.25 3.25 0 0 1-1.57-.404"></svg:path><svg:path fill="url(#fluentColorAgents281)" fill-opacity=".5" d="M8.31 24.596L14.357 3h3.761a3.25 3.25 0 0 1 2.815 1.625l4.763 8.25a2.25 2.25 0 0 1 0 2.25l-5.052 8.75A2.25 2.25 0 0 1 18.695 25H10v-.001L9.91 25h-.03a3.25 3.25 0 0 1-1.57-.404"></svg:path><svg:path fill="url(#fluentColorAgents282)" d="M16.017 5.208a2.5 2.5 0 0 1 2.304-2.202A3 3 0 0 0 18.118 3H9.302a2.25 2.25 0 0 0-1.949 1.125l-5.052 8.75a2.25 2.25 0 0 0 0 2.25l4.764 8.25q.142.246.32.46a2.5 2.5 0 0 0 4.595-1.02z"></svg:path><svg:path fill="url(#fluentColorAgents283)" fill-opacity=".4" d="M16.017 5.208a2.5 2.5 0 0 1 2.304-2.202A3 3 0 0 0 18.118 3H9.302a2.25 2.25 0 0 0-1.949 1.125l-5.052 8.75a2.25 2.25 0 0 0 0 2.25l4.764 8.25q.142.246.32.46a2.5 2.5 0 0 0 4.595-1.02z"></svg:path><svg:defs><svg:radialgradient id="fluentColorAgents280" cx="0" cy="0" r="1" gradientTransform="rotate(-87.776 24.195 7.07)scale(32.0813 26.9847)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFC470"></svg:stop><svg:stop offset=".251" stop-color="#FF835C"></svg:stop><svg:stop offset=".584" stop-color="#F24A9D"></svg:stop><svg:stop offset=".871" stop-color="#B339F0"></svg:stop><svg:stop offset="1" stop-color="#C354FF"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorAgents281" cx="0" cy="0" r="1" gradientTransform="matrix(-14.42336 -13.51699 13.65217 -14.56761 15.566 22.462)" gradientUnits="userSpaceOnUse"><svg:stop offset=".709" stop-color="#FFB357" stop-opacity="0"></svg:stop><svg:stop offset=".942" stop-color="#FFB357"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorAgents282" cx="0" cy="0" r="1" gradientTransform="rotate(-159.136 13.873 9.232)scale(30.0039 26.5412)" gradientUnits="userSpaceOnUse"><svg:stop offset=".222" stop-color="#4E46E2"></svg:stop><svg:stop offset=".578" stop-color="#625DF6"></svg:stop><svg:stop offset=".955" stop-color="#E37DFF"></svg:stop></svg:radialgradient><svg:lineargradient id="fluentColorAgents283" x1="6.955" x2="14.033" y1="12.114" y2="13.692" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#7563F7" stop-opacity="0"></svg:stop><svg:stop offset=".986" stop-color="#4916AE"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
 })
-export class FluentColorAddCircle28Icon {
+export class FluentColorAgents28Icon {
   readonly viewBox = input("0 0 28 28")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -1678,23 +1695,6 @@ export class FluentColorVideo28Icon {
   template: `<svg:g fill="none"><svg:path fill="#212121" d="M11.593 4.17c1.045-1.894 3.768-1.895 4.815 0l9.25 16.75c1.012 1.833-.314 4.08-2.407 4.08H4.757c-2.093 0-3.42-2.246-2.408-4.079z"></svg:path><svg:path fill="url(#fluentColorWarning280)" d="M11.593 4.17c1.045-1.894 3.768-1.895 4.815 0l9.25 16.75c1.012 1.833-.314 4.08-2.407 4.08H4.757c-2.093 0-3.42-2.246-2.408-4.079z"></svg:path><svg:path fill="url(#fluentColorWarning281)" d="M15 20a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-1.75-3.25a.75.75 0 0 0 1.5 0v-6.5a.75.75 0 0 0-1.5 0z"></svg:path><svg:defs><svg:lineargradient id="fluentColorWarning280" x1="5.753" x2="19.714" y1="-.728" y2="27.957" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFCD0F"></svg:stop><svg:stop offset="1" stop-color="#FE8401"></svg:stop></svg:lineargradient><svg:lineargradient id="fluentColorWarning281" x1="11.333" x2="17.338" y1="9.5" y2="20.638" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#4A4A4A"></svg:stop><svg:stop offset="1" stop-color="#242424"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
 })
 export class FluentColorWarning28Icon {
-  readonly viewBox = input("0 0 28 28")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentColorAgents28Icon],svg[fluent-color-agents-28-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="#D9D9D9" d="M8.31 24.596L14.357 3h3.761a3.25 3.25 0 0 1 2.815 1.625l4.763 8.25a2.25 2.25 0 0 1 0 2.25l-5.052 8.75A2.25 2.25 0 0 1 18.695 25H10v-.001L9.91 25h-.03a3.25 3.25 0 0 1-1.57-.404"></svg:path><svg:path fill="url(#fluentColorAgents280)" d="M8.31 24.596L14.357 3h3.761a3.25 3.25 0 0 1 2.815 1.625l4.763 8.25a2.25 2.25 0 0 1 0 2.25l-5.052 8.75A2.25 2.25 0 0 1 18.695 25H10v-.001L9.91 25h-.03a3.25 3.25 0 0 1-1.57-.404"></svg:path><svg:path fill="url(#fluentColorAgents281)" fill-opacity=".5" d="M8.31 24.596L14.357 3h3.761a3.25 3.25 0 0 1 2.815 1.625l4.763 8.25a2.25 2.25 0 0 1 0 2.25l-5.052 8.75A2.25 2.25 0 0 1 18.695 25H10v-.001L9.91 25h-.03a3.25 3.25 0 0 1-1.57-.404"></svg:path><svg:path fill="url(#fluentColorAgents282)" d="M16.017 5.208a2.5 2.5 0 0 1 2.304-2.202A3 3 0 0 0 18.118 3H9.302a2.25 2.25 0 0 0-1.949 1.125l-5.052 8.75a2.25 2.25 0 0 0 0 2.25l4.764 8.25q.142.246.32.46a2.5 2.5 0 0 0 4.595-1.02z"></svg:path><svg:path fill="url(#fluentColorAgents283)" fill-opacity=".4" d="M16.017 5.208a2.5 2.5 0 0 1 2.304-2.202A3 3 0 0 0 18.118 3H9.302a2.25 2.25 0 0 0-1.949 1.125l-5.052 8.75a2.25 2.25 0 0 0 0 2.25l4.764 8.25q.142.246.32.46a2.5 2.5 0 0 0 4.595-1.02z"></svg:path><svg:defs><svg:radialgradient id="fluentColorAgents280" cx="0" cy="0" r="1" gradientTransform="rotate(-87.776 24.195 7.07)scale(32.0813 26.9847)" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FFC470"></svg:stop><svg:stop offset=".251" stop-color="#FF835C"></svg:stop><svg:stop offset=".584" stop-color="#F24A9D"></svg:stop><svg:stop offset=".871" stop-color="#B339F0"></svg:stop><svg:stop offset="1" stop-color="#C354FF"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorAgents281" cx="0" cy="0" r="1" gradientTransform="matrix(-14.42336 -13.51699 13.65217 -14.56761 15.566 22.462)" gradientUnits="userSpaceOnUse"><svg:stop offset=".709" stop-color="#FFB357" stop-opacity="0"></svg:stop><svg:stop offset=".942" stop-color="#FFB357"></svg:stop></svg:radialgradient><svg:radialgradient id="fluentColorAgents282" cx="0" cy="0" r="1" gradientTransform="rotate(-159.136 13.873 9.232)scale(30.0039 26.5412)" gradientUnits="userSpaceOnUse"><svg:stop offset=".222" stop-color="#4E46E2"></svg:stop><svg:stop offset=".578" stop-color="#625DF6"></svg:stop><svg:stop offset=".955" stop-color="#E37DFF"></svg:stop></svg:radialgradient><svg:lineargradient id="fluentColorAgents283" x1="6.955" x2="14.033" y1="12.114" y2="13.692" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#7563F7" stop-opacity="0"></svg:stop><svg:stop offset=".986" stop-color="#4916AE"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
-})
-export class FluentColorAgents28Icon {
   readonly viewBox = input("0 0 28 28")
   readonly width = input("1em")
   readonly height = input("1em")

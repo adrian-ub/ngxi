@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[hugeiconsYenSquareIcon],svg[hugeicons-yen-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M2.5 12c0-4.23 0-6.345 1.198-7.747q.256-.3.555-.555C5.655 2.5 7.77 2.5 12 2.5s6.345 0 7.747 1.198q.3.256.555.555C21.5 5.655 21.5 7.77 21.5 12s0 6.345-1.198 7.747q-.256.3-.555.555C18.345 21.5 16.23 21.5 12 21.5s-6.345 0-7.747-1.198q-.3-.256-.555-.555C2.5 18.345 2.5 16.23 2.5 12"></svg:path><svg:path d="M9 7.5c.2.917 1.08 3 3 4m0 0c1.92-1 2.8-3.083 3-4m-3 4v5m2.5-3h-5"></svg:path></svg:g>`,
+})
+export class HugeiconsYenSquareIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsYoga01Icon],svg[hugeicons-yoga-01-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M9.092 16c-.31.682-1.022.986-1.653 1.316l-3.646 1.907C2.328 19.99 3.059 22 4.63 22c3.492 0 6.254-1.694 9.41-3c.795-.329 1.18-.259 1.96.091"></svg:path><svg:path d="M9 19.091c.78-.35 1.165-.42 1.96-.091c3.156 1.306 5.918 3 9.41 3c1.57 0 2.302-2.01.837-2.777l-3.646-1.907c-.631-.33-1.344-.634-1.653-1.316M10 4a2 2 0 1 0 4 0a2 2 0 0 0-4 0m2 4a6 6 0 0 0-6 6a6 6 0 0 0 6-6m0 0a6 6 0 0 1 6 6a6 6 0 0 1-6-6"></svg:path></svg:g>`,
+})
+export class HugeiconsYoga01Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[hugeiconsYoga02Icon],svg[hugeicons-yoga-02-icon]',
   host: {
     role: 'img',
@@ -352,40 +386,6 @@ export class HugeiconsZshIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10.977 13.072h-7c-.29 0-.56-.17-.68-.44a.73.73 0 0 1 .12-.8l5.91-6.76h-5.35c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h7c.29 0 .56.17.68.44s.08.58-.12.8l-5.91 6.76h5.35c.41 0 .75.34.75.75s-.34.75-.75.75m-1 8h-4a.74.74 0 0 1-.69-.46c-.12-.28-.05-.6.16-.82l2.72-2.72h-2.19c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h4c.3 0 .58.18.69.46c.12.28.05.6-.16.82l-2.72 2.72h2.19c.41 0 .75.34.75.75s-.34.75-.75.75m4-5h6c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-4.19l4.72-4.72c.21-.22.28-.54.16-.82a.74.74 0 0 0-.69-.46h-6c-.41 0-.75.34-.75.75s.34.75.75.75h4.19l-4.72 4.72c-.21.22-.28.54-.16.82c.11.28.39.46.69.46" color="currentColor"></svg:path>`,
 })
 export class HugeiconsZzzIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsAddCircleHalfDotIcon],svg[hugeicons-add-circle-half-dot-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2M4.649 5.079q.207-.22.427-.428M7.947 2.73q.273-.122.553-.229m-6 6q.108-.284.232-.558M12 8v8m4-4H8" color="currentColor"></svg:path>`,
-})
-export class HugeiconsAddCircleHalfDotIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsAddInvoiceIcon],svg[hugeicons-add-invoice-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" d="M12.06 21.512c-.516.325-.773.488-1.06.488s-.545-.163-1.06-.488l-1.91-1.205c-.486-.306-.728-.458-.997-.467c-.291-.01-.538.137-1.062.467c-.587.37-1.754 1.39-2.51.904C3 20.913 3 20.158 3 18.646V8c0-2.828 0-4.243.827-5.121S5.985 2 8.647 2h4.706c2.662 0 3.993 0 4.82.879C19 3.757 19 5.172 19 8v4m-8-1H7m10 3v8m4-4h-8m2-11H7" color="currentColor"></svg:path>`,
-})
-export class HugeiconsAddInvoiceIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

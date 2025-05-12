@@ -19,6 +19,23 @@ export class IcomoonFree500pxIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[icomoonFreeAidKitIcon],svg[icomoon-free-aid-kit-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14 4h-3V2c0-.55-.45-1-1-1H6c-.55 0-1 .45-1 1v2H2C.9 4 0 4.9 0 6v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2M6 2h4v2H6zm6 9H9v3H7v-3H4V9h3V6h2v3h3z"></svg:path>`,
+})
+export class IcomoonFreeAidKitIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[icomoonFreeAccessibilityIcon],svg[icomoon-free-accessibility-icon]',
   host: {
     role: 'img',
@@ -53,40 +70,6 @@ export class IcomoonFreeAddressBookIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[icomoonFreeAirplaneIcon],svg[icomoon-free-airplane-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 9.999L9.143 7.142L16 1.999l-2-2l-8.571 3.429L2.731.729C1.953-.049.867-.235.317.315s-.364 1.636.414 2.414l2.698 2.698L0 13.999l2 2l5.144-6.857l2.857 2.857v4h2l1-3l3-1v-2h-4z"></svg:path>`,
-})
-export class IcomoonFreeAirplaneIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icomoonFreeAndroidIcon],svg[icomoon-free-android-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14 6c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1M2 6c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1m1.5 5.5A1.5 1.5 0 0 0 5 13v2c0 .55.45 1 1 1s1-.45 1-1v-2h2v2c0 .55.45 1 1 1s1-.45 1-1v-2a1.5 1.5 0 0 0 1.5-1.5V6h-9zM12.472 5a4.5 4.5 0 0 0-2.025-3.276l.5-1.001a.5.5 0 0 0-.895-.447L9.55 1.28l-.13-.052a4.5 4.5 0 0 0-2.84 0l-.13.052L5.948.276a.5.5 0 0 0-.895.447l.5 1.001A4.5 4.5 0 0 0 3.528 5v.5H12.5V5zM6.5 4a.5.5 0 0 1-.001-1h.002A.5.5 0 0 1 6.5 4m3 0a.5.5 0 0 1-.001-1h.003a.5.5 0 0 1-.001 1z"></svg:path>`,
-})
-export class IcomoonFreeAndroidIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[icomoonFreeAlarmIcon],svg[icomoon-free-alarm-icon]',
   host: {
     role: 'img',
@@ -97,6 +80,23 @@ export class IcomoonFreeAndroidIcon {
   template: `<svg:path fill="currentColor" d="M8 2a7 7 0 1 0 0 14A7 7 0 0 0 8 2m0 12.625a5.624 5.624 0 1 1 0-11.25a5.624 5.624 0 1 1 0 11.25m6.606-10.138a3 3 0 0 0-4.98-3.321a8 8 0 0 1 4.98 3.322zM6.374 1.166a3 3 0 0 0-4.98 3.321a8 8 0 0 1 4.98-3.322z"></svg:path><svg:path fill="currentColor" d="M8 9V5H7v5h4V9z"></svg:path>`,
 })
 export class IcomoonFreeAlarmIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icomoonFreeAirplaneIcon],svg[icomoon-free-airplane-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 9.999L9.143 7.142L16 1.999l-2-2l-8.571 3.429L2.731.729C1.953-.049.867-.235.317.315s-.364 1.636.414 2.414l2.698 2.698L0 13.999l2 2l5.144-6.857l2.857 2.857v4h2l1-3l3-1v-2h-4z"></svg:path>`,
+})
+export class IcomoonFreeAirplaneIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,118 +121,16 @@ export class IcomoonFreeAmazonIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[icomoonFreeAngry2Icon],svg[icomoon-free-angry2-icon]',
+  selector: 'svg[icomoonFreeAndroidIcon],svg[icomoon-free-android-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m1.001 5.946c.032-.741.706-1.234 1.275-1.518c.543-.271 1.08-.407 1.102-.413a.5.5 0 1 1 .242.97c-.275.07-.602.189-.89.334A.998.998 0 0 1 9.998 7a1 1 0 0 1-1-1zM4.015 4.379a.5.5 0 0 1 .606-.364c.023.006.559.141 1.102.413c.568.284 1.243.776 1.275 1.518L7 6a1 1 0 1 1-1.732-.681a4.6 4.6 0 0 0-.89-.334a.5.5 0 0 1-.364-.606zm6.987 7.82C10.39 11.181 9.275 10.5 8 10.5s-2.389.681-3.002 1.699l-1.286-.772C4.586 9.973 6.179 9 8 9s3.414.973 4.288 2.427z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M14 6c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1M2 6c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1m1.5 5.5A1.5 1.5 0 0 0 5 13v2c0 .55.45 1 1 1s1-.45 1-1v-2h2v2c0 .55.45 1 1 1s1-.45 1-1v-2a1.5 1.5 0 0 0 1.5-1.5V6h-9zM12.472 5a4.5 4.5 0 0 0-2.025-3.276l.5-1.001a.5.5 0 0 0-.895-.447L9.55 1.28l-.13-.052a4.5 4.5 0 0 0-2.84 0l-.13.052L5.948.276a.5.5 0 0 0-.895.447l.5 1.001A4.5 4.5 0 0 0 3.528 5v.5H12.5V5zM6.5 4a.5.5 0 0 1-.001-1h.002A.5.5 0 0 1 6.5 4m3 0a.5.5 0 0 1-.001-1h.003a.5.5 0 0 1-.001 1z"></svg:path>`,
 })
-export class IcomoonFreeAngry2Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icomoonFreeArrowDownIcon],svg[icomoon-free-arrow-down-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 15.5L15.5 8H11V0H5v8H.5z"></svg:path>`,
-})
-export class IcomoonFreeArrowDownIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icomoonFreeAidKitIcon],svg[icomoon-free-aid-kit-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14 4h-3V2c0-.55-.45-1-1-1H6c-.55 0-1 .45-1 1v2H2C.9 4 0 4.9 0 6v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2M6 2h4v2H6zm6 9H9v3H7v-3H4V9h3V6h2v3h3z"></svg:path>`,
-})
-export class IcomoonFreeAidKitIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icomoonFreeArrowDownLeft2Icon],svg[icomoon-free-arrow-down-left2-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.293 2.293L4 10.586V7a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1v.001h6a1 1 0 0 0 0-2H5.414l8.293-8.293a.997.997 0 0 0 0-1.414a1 1 0 0 0-1.414 0z"></svg:path>`,
-})
-export class IcomoonFreeArrowDownLeft2Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icomoonFreeAppleincIcon],svg[icomoon-free-appleinc-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.367 8.501c-.02-2.026 1.652-2.998 1.727-3.046c-.94-1.375-2.404-1.564-2.926-1.585c-1.246-.126-2.431.734-3.064.734c-.631 0-1.607-.715-2.64-.696c-1.358.02-2.61.79-3.31 2.006c-1.411 2.448-.361 6.076 1.014 8.061c.672.972 1.473 2.064 2.525 2.025c1.013-.04 1.396-.656 2.621-.656s1.569.656 2.641.635c1.09-.02 1.781-.991 2.448-1.966c.772-1.128 1.089-2.219 1.108-2.275c-.024-.011-2.126-.816-2.147-3.236zm-2.014-5.946c.558-.677.935-1.617.832-2.555c-.804.033-1.779.536-2.356 1.212c-.518.6-.971 1.557-.85 2.476c.898.07 1.815-.456 2.373-1.132z"></svg:path>`,
-})
-export class IcomoonFreeAppleincIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icomoonFreeArrowDownLeftIcon],svg[icomoon-free-arrow-down-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m11.5 16l-4-4L16 3.5L12.5 0L4 8.5l-4-4V16z"></svg:path>`,
-})
-export class IcomoonFreeArrowDownLeftIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icomoonFreeArrowDown2Icon],svg[icomoon-free-arrow-down2-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m13.707 9.707l-5 5a1 1 0 0 1-1.414 0l-5-5a.999.999 0 1 1 1.414-1.414L7 11.586V2a1 1 0 0 1 2 0v9.586l3.293-3.293a.997.997 0 0 1 1.414 0a1 1 0 0 1 0 1.414"></svg:path>`,
-})
-export class IcomoonFreeArrowDown2Icon {
+export class IcomoonFreeAndroidIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,6 +155,108 @@ export class IcomoonFreeAngryIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[icomoonFreeArrowDownIcon],svg[icomoon-free-arrow-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 15.5L15.5 8H11V0H5v8H.5z"></svg:path>`,
+})
+export class IcomoonFreeArrowDownIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icomoonFreeAppleincIcon],svg[icomoon-free-appleinc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.367 8.501c-.02-2.026 1.652-2.998 1.727-3.046c-.94-1.375-2.404-1.564-2.926-1.585c-1.246-.126-2.431.734-3.064.734c-.631 0-1.607-.715-2.64-.696c-1.358.02-2.61.79-3.31 2.006c-1.411 2.448-.361 6.076 1.014 8.061c.672.972 1.473 2.064 2.525 2.025c1.013-.04 1.396-.656 2.621-.656s1.569.656 2.641.635c1.09-.02 1.781-.991 2.448-1.966c.772-1.128 1.089-2.219 1.108-2.275c-.024-.011-2.126-.816-2.147-3.236zm-2.014-5.946c.558-.677.935-1.617.832-2.555c-.804.033-1.779.536-2.356 1.212c-.518.6-.971 1.557-.85 2.476c.898.07 1.815-.456 2.373-1.132z"></svg:path>`,
+})
+export class IcomoonFreeAppleincIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icomoonFreeAngry2Icon],svg[icomoon-free-angry2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m1.001 5.946c.032-.741.706-1.234 1.275-1.518c.543-.271 1.08-.407 1.102-.413a.5.5 0 1 1 .242.97c-.275.07-.602.189-.89.334A.998.998 0 0 1 9.998 7a1 1 0 0 1-1-1zM4.015 4.379a.5.5 0 0 1 .606-.364c.023.006.559.141 1.102.413c.568.284 1.243.776 1.275 1.518L7 6a1 1 0 1 1-1.732-.681a4.6 4.6 0 0 0-.89-.334a.5.5 0 0 1-.364-.606zm6.987 7.82C10.39 11.181 9.275 10.5 8 10.5s-2.389.681-3.002 1.699l-1.286-.772C4.586 9.973 6.179 9 8 9s3.414.973 4.288 2.427z"></svg:path>`,
+})
+export class IcomoonFreeAngry2Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icomoonFreeArrowDownLeftIcon],svg[icomoon-free-arrow-down-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m11.5 16l-4-4L16 3.5L12.5 0L4 8.5l-4-4V16z"></svg:path>`,
+})
+export class IcomoonFreeArrowDownLeftIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icomoonFreeArrowDownLeft2Icon],svg[icomoon-free-arrow-down-left2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.293 2.293L4 10.586V7a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1v.001h6a1 1 0 0 0 0-2H5.414l8.293-8.293a.997.997 0 0 0 0-1.414a1 1 0 0 0-1.414 0z"></svg:path>`,
+})
+export class IcomoonFreeArrowDownLeft2Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icomoonFreeArrowDownRightIcon],svg[icomoon-free-arrow-down-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m16 4.5l-4 4L3.5 0L0 3.5L8.5 12l-4 4H16z"></svg:path>`,
+})
+export class IcomoonFreeArrowDownRightIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[icomoonFreeArrowDownRight2Icon],svg[icomoon-free-arrow-down-right2-icon]',
   host: {
     role: 'img',
@@ -274,16 +274,16 @@ export class IcomoonFreeArrowDownRight2Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[icomoonFreeArrowLeft2Icon],svg[icomoon-free-arrow-left2-icon]',
+  selector: 'svg[icomoonFreeArrowDown2Icon],svg[icomoon-free-arrow-down2-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m6.293 13.707l-5-5a1 1 0 0 1 0-1.414l5-5a.999.999 0 1 1 1.414 1.414L4.414 7H14a1 1 0 0 1 0 2H4.414l3.293 3.293a.997.997 0 0 1 0 1.414a1 1 0 0 1-1.414 0"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m13.707 9.707l-5 5a1 1 0 0 1-1.414 0l-5-5a.999.999 0 1 1 1.414-1.414L7 11.586V2a1 1 0 0 1 2 0v9.586l3.293-3.293a.997.997 0 0 1 1.414 0a1 1 0 0 1 0 1.414"></svg:path>`,
 })
-export class IcomoonFreeArrowLeft2Icon {
+export class IcomoonFreeArrowDown2Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -308,16 +308,16 @@ export class IcomoonFreeArrowLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[icomoonFreeArrowDownRightIcon],svg[icomoon-free-arrow-down-right-icon]',
+  selector: 'svg[icomoonFreeArrowLeft2Icon],svg[icomoon-free-arrow-left2-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m16 4.5l-4 4L3.5 0L0 3.5L8.5 12l-4 4H16z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m6.293 13.707l-5-5a1 1 0 0 1 0-1.414l5-5a.999.999 0 1 1 1.414 1.414L4.414 7H14a1 1 0 0 1 0 2H4.414l3.293 3.293a.997.997 0 0 1 0 1.414a1 1 0 0 1-1.414 0"></svg:path>`,
 })
-export class IcomoonFreeArrowDownRightIcon {
+export class IcomoonFreeArrowLeft2Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -19,23 +19,6 @@ export class PhAcornFillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[phAddressBookTabsFillIcon],svg[ph-address-book-tabs-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16m-24 16h24v40h-24Zm0 56h24v48h-24Zm-38 71.75a8 8 0 0 1-9.74-5.76c-2.63-10.26-13.06-18-24.25-18s-21.61 7.74-24.25 18a8 8 0 0 1-15.5-4a39.84 39.84 0 0 1 17.19-23.34a32 32 0 1 1 45.12 0A39.76 39.76 0 0 1 151.75 166a8 8 0 0 1-5.75 9.75M208 208h-24v-40h24zm-80-88a16 16 0 1 1-16-16a16 16 0 0 1 16 16"></svg:path>`,
-})
-export class PhAddressBookTabsFillIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[phAddressBookFillIcon],svg[ph-address-book-fill-icon]',
   host: {
     role: 'img',
@@ -46,6 +29,23 @@ export class PhAddressBookTabsFillIcon {
   template: `<svg:path fill="currentColor" d="M160 112a24 24 0 1 1-24-24a24 24 0 0 1 24 24m64-72v176a16 16 0 0 1-16 16H64a16 16 0 0 1-16-16v-24H32a8 8 0 0 1 0-16h16v-40H32a8 8 0 0 1 0-16h16V80H32a8 8 0 0 1 0-16h16V40a16 16 0 0 1 16-16h144a16 16 0 0 1 16 16m-33.6 123.2a67.9 67.9 0 0 0-27.4-21.69a40 40 0 1 0-53.94 0A67.9 67.9 0 0 0 81.6 163.2a8 8 0 1 0 12.8 9.6a52 52 0 0 1 83.2 0a8 8 0 1 0 12.8-9.6"></svg:path>`,
 })
 export class PhAddressBookFillIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[phAddressBookTabsFillIcon],svg[ph-address-book-tabs-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16m-24 16h24v40h-24Zm0 56h24v48h-24Zm-38 71.75a8 8 0 0 1-9.74-5.76c-2.63-10.26-13.06-18-24.25-18s-21.61 7.74-24.25 18a8 8 0 0 1-15.5-4a39.84 39.84 0 0 1 17.19-23.34a32 32 0 1 1 45.12 0A39.76 39.76 0 0 1 151.75 166a8 8 0 0 1-5.75 9.75M208 208h-24v-40h24zm-80-88a16 16 0 1 1-16-16a16 16 0 0 1 16 16"></svg:path>`,
+})
+export class PhAddressBookTabsFillIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")

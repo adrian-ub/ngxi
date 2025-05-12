@@ -2,6 +2,91 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[icOutlineBrightness2Icon],svg[ic-outline-brightness-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 4c4.41 0 8 3.59 8 8s-3.59 8-8 8c-.34 0-.68-.02-1.01-.07C10.9 17.77 12 14.95 12 12s-1.1-5.77-3.01-7.93C9.32 4.02 9.66 4 10 4m0-2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5 8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2"></svg:path>`,
+})
+export class IcOutlineBrightness2Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icOutlineBrightness3Icon],svg[ic-outline-brightness-3-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.7 4.91A8 8 0 0 1 17 12a8 8 0 0 1-4.3 7.09c1.46-2 2.3-4.46 2.3-7.09s-.84-5.09-2.3-7.09M9 2c-1.05 0-2.05.16-3 .46c4.06 1.27 7 5.06 7 9.54s-2.94 8.27-7 9.54c.95.3 1.95.46 3 .46c5.52 0 10-4.48 10-10S14.52 2 9 2"></svg:path>`,
+})
+export class IcOutlineBrightness3Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icOutlineBrightness4Icon],svg[ic-outline-brightness-4-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20 8.69V4h-4.69L12 .69L8.69 4H4v4.69L.69 12L4 15.31V20h4.69L12 23.31L15.31 20H20v-4.69L23.31 12zm-2 5.79V18h-3.52L12 20.48L9.52 18H6v-3.52L3.52 12L6 9.52V6h3.52L12 3.52L14.48 6H18v3.52L20.48 12zM12.29 7c-.74 0-1.45.17-2.08.46c1.72.79 2.92 2.53 2.92 4.54s-1.2 3.75-2.92 4.54c.63.29 1.34.46 2.08.46c2.76 0 5-2.24 5-5s-2.24-5-5-5"></svg:path>`,
+})
+export class IcOutlineBrightness4Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icOutlineBrightness5Icon],svg[ic-outline-brightness-5-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20 8.69V4h-4.69L12 .69L8.69 4H4v4.69L.69 12L4 15.31V20h4.69L12 23.31L15.31 20H20v-4.69L23.31 12zm-2 5.79V18h-3.52L12 20.48L9.52 18H6v-3.52L3.52 12L6 9.52V6h3.52L12 3.52L14.48 6H18v3.52L20.48 12zM12 6.5c-3.03 0-5.5 2.47-5.5 5.5s2.47 5.5 5.5 5.5s5.5-2.47 5.5-5.5s-2.47-5.5-5.5-5.5m0 9c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5s3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5"></svg:path>`,
+})
+export class IcOutlineBrightness5Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icOutlineBrightness6Icon],svg[ic-outline-brightness-6-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20 8.69V4h-4.69L12 .69L8.69 4H4v4.69L.69 12L4 15.31V20h4.69L12 23.31L15.31 20H20v-4.69L23.31 12zm-2 5.79V18h-3.52L12 20.48L9.52 18H6v-3.52L3.52 12L6 9.52V6h3.52L12 3.52L14.48 6H18v3.52L20.48 12zM12 6.5v11c3.03 0 5.5-2.47 5.5-5.5S15.03 6.5 12 6.5"></svg:path>`,
+})
+export class IcOutlineBrightness6Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[icOutlineBrightness7Icon],svg[ic-outline-brightness-7-icon]',
   host: {
     role: 'img',
@@ -8410,91 +8495,6 @@ export class IcOutlineFloodIcon {
   template: `<svg:path fill="currentColor" d="M5 15h14V9H5zm2-4h10v2H7zm4-9h2v3h-2zm6.286 4.399l1.79-1.803l1.42 1.41l-1.79 1.802zM11 19h2v3h-2zm6.29-1.29l1.79 1.8l1.42-1.42l-1.8-1.79zM3.495 6.01l1.407-1.408L6.69 6.391L5.284 7.798zm-.003 12.066l1.803-1.79l1.409 1.42l-1.803 1.79z"></svg:path>`,
 })
 export class IcOutlineFlourescentIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icOutlineFluorescentIcon],svg[ic-outline-fluorescent-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 15h14V9H5zm2-4h10v2H7zm4-9h2v3h-2zm6.286 4.399l1.79-1.803l1.42 1.41l-1.79 1.802zM11 19h2v3h-2zm6.29-1.29l1.79 1.8l1.42-1.42l-1.8-1.79zM3.495 6.01l1.407-1.408L6.69 6.391L5.284 7.798zm-.003 12.066l1.803-1.79l1.409 1.42l-1.803 1.79z"></svg:path>`,
-})
-export class IcOutlineFluorescentIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icOutlineFlutterDashIcon],svg[ic-outline-flutter-dash-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.07 11.7c.29-.39.81-.56 1.27-.37c.17.07.32.18.43.33c.22.28.25.59.22.85c-.05.33-.25.63-.54.79c0 0-4.87 2.95-5.07 2.69s3.69-4.29 3.69-4.29M22 10c0 2.5-1 3-1.5 3c-.23 0-.44-.1-.62-.26c-.48 3.32-2.36 5.31-5.33 5.99c.11.44.48.77.95.77h.58c.22 0 .41.15.48.36c.17.52.66 1.02 1.02 1.32c.25.21.24.59-.03.78c-.34.24-.9.49-1.79.53a.5.5 0 0 1-.45-.22c-.13-.2-.31-.56-.31-1.01c0-.3.04-.57.09-.8c-.78-.16-1.39-.78-1.55-1.56c-.49.06-1 .1-1.54.1c-.88 0-1.7-.09-2.45-.25c-.02.08-.05.16-.05.25c0 .55.45 1 1 1h.58c.22 0 .41.15.48.36c.17.52.66 1.02 1.02 1.32c.25.21.24.59-.03.78c-.34.24-.9.49-1.79.53a.5.5 0 0 1-.45-.22c-.13-.2-.31-.56-.31-1.01c0-.3.04-.57.09-.8c-.9-.19-1.59-1-1.59-1.96c0-.18.03-.36.08-.53c-2.46-.86-4.03-2.78-4.46-5.74c-.18.17-.38.27-.62.27C3 13 2 12.5 2 10c0-2.27 1.7-4.5 3-4.5c.43 0 .49.49.5.85a8 8 0 0 1 5.55-3.29c.2-.96 1.08-1.56 1.95-1.56v1s.33-.5 1-.5s1 .5 1 .5c-.49 0-.85.35-.96.77c1.82.48 3.39 1.59 4.46 3.08c.01-.36.07-.85.5-.85c1.3 0 3 2.23 3 4.5M5 11c0 .81.1 1.53.25 2.21c.18-.69.46-1.33.83-1.92a3.8 3.8 0 0 1-.34-1.54A3.766 3.766 0 0 1 9.5 6c.96 0 1.84.37 2.5.97c.66-.6 1.54-.97 2.5-.97c2.07 0 3.75 1.68 3.75 3.75c0 .55-.12 1.07-.34 1.54c.37.59.66 1.24.84 1.94c.15-.68.25-1.41.25-2.23c0-3.86-3.14-7-7-7s-7 3.14-7 7m12.98 4.29c0-.1.02-.19.02-.29c0-1.01-.26-1.95-.7-2.78c-.69.78-1.68 1.28-2.8 1.28c-.27 0-.54-.03-.79-.09c.14-.23.23-.49.27-.77c.01-.07.01-.13.02-.19c.17.03.33.05.5.05c1.52 0 2.75-1.23 2.75-2.75S16.02 7 14.5 7c-.67 0-1.32.25-1.83.72l-.67.6l-.67-.6C10.82 7.25 10.17 7 9.5 7C7.98 7 6.75 8.23 6.75 9.75c0 1.34.96 2.46 2.23 2.7l-.76.83c-.6-.22-1.12-.59-1.53-1.05A6 6 0 0 0 6 15c0 .08.01.15.01.24C7.13 17.06 9.14 18 12 18c2.88 0 4.88-.91 5.98-2.71M16 9.75c0 .97-.67 1.75-1.5 1.75S13 10.72 13 9.75S13.67 8 14.5 8s1.5.78 1.5 1.75m-.75-.87c0-.21-.17-.38-.38-.38s-.37.17-.37.38s.17.38.38.38s.37-.18.37-.38M11 9.75c0 .97-.67 1.75-1.5 1.75S8 10.72 8 9.75S8.67 8 9.5 8s1.5.78 1.5 1.75m-.75-.87c0-.21-.17-.38-.38-.38s-.37.17-.37.38s.17.38.38.38s.37-.18.37-.38"></svg:path>`,
-})
-export class IcOutlineFlutterDashIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icOutlineFmdBadIcon],svg[ic-outline-fmd-bad-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 2c-4.2 0-8 3.22-8 8.2c0 3.32 2.67 7.25 8 11.8c5.33-4.55 8-8.48 8-11.8C20 5.22 16.2 2 12 2m0 17.33c-4.05-3.7-6-6.79-6-9.14C6 6.57 8.65 4 12 4s6 2.57 6 6.2c0 2.34-1.95 5.44-6 9.13"></svg:path><svg:path fill="currentColor" d="M11 6h2v5h-2zm0 7h2v2h-2z"></svg:path>`,
-})
-export class IcOutlineFmdBadIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icOutlineFmdGoodIcon],svg[ic-outline-fmd-good-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2m6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14c4.05-3.7 6-6.8 6-9.14M12 2c4.2 0 8 3.22 8 8.2c0 3.32-2.67 7.25-8 11.8c-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2"></svg:path>`,
-})
-export class IcOutlineFmdGoodIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icOutlineFolderIcon],svg[ic-outline-folder-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m9.17 6l2 2H20v10H4V6zM10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8z"></svg:path>`,
-})
-export class IcOutlineFolderIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

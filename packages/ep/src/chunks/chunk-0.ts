@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[epAimIcon],svg[ep-aim-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M512 896a384 384 0 1 0 0-768a384 384 0 0 0 0 768m0 64a448 448 0 1 1 0-896a448 448 0 0 1 0 896"></svg:path><svg:path fill="currentColor" d="M512 96a32 32 0 0 1 32 32v192a32 32 0 0 1-64 0V128a32 32 0 0 1 32-32m0 576a32 32 0 0 1 32 32v192a32 32 0 1 1-64 0V704a32 32 0 0 1 32-32M96 512a32 32 0 0 1 32-32h192a32 32 0 0 1 0 64H128a32 32 0 0 1-32-32m576 0a32 32 0 0 1 32-32h192a32 32 0 1 1 0 64H704a32 32 0 0 1-32-32"></svg:path>`,
+})
+export class EpAimIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[epAppleIcon],svg[ep-apple-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M599.872 203.776a189.4 189.4 0 0 1 64.384-4.672l2.624.128c31.168 1.024 51.2 4.096 79.488 16.32c37.632 16.128 74.496 45.056 111.488 89.344c96.384 115.264 82.752 372.8-34.752 521.728c-7.68 9.728-32 41.6-30.72 39.936a427 427 0 0 1-30.08 35.776c-31.232 32.576-65.28 49.216-110.08 50.048c-31.36.64-53.568-5.312-84.288-18.752l-6.528-2.88c-20.992-9.216-30.592-11.904-47.296-11.904c-18.112 0-28.608 2.88-51.136 12.672l-6.464 2.816c-28.416 12.224-48.32 18.048-76.16 19.2c-74.112 2.752-116.928-38.08-180.672-132.16c-96.64-142.08-132.608-349.312-55.04-486.4c46.272-81.92 129.92-133.632 220.672-135.04c32.832-.576 60.288 6.848 99.648 22.72c27.136 10.88 34.752 13.76 37.376 14.272c16.256-20.16 27.776-36.992 34.56-50.24c13.568-26.304 27.2-59.968 40.704-100.8a32 32 0 1 1 60.8 20.224c-12.608 37.888-25.408 70.4-38.528 97.664m-51.52 78.08c-14.528 17.792-31.808 37.376-51.904 58.816a32 32 0 1 1-46.72-43.776l12.288-13.248c-28.032-11.2-61.248-26.688-95.68-26.112c-70.4 1.088-135.296 41.6-171.648 105.792C121.6 492.608 176 684.16 247.296 788.992c34.816 51.328 76.352 108.992 130.944 106.944c52.48-2.112 72.32-34.688 135.872-34.688s81.28 34.688 136.96 33.536c56.448-1.088 75.776-39.04 126.848-103.872c107.904-136.768 107.904-362.752 35.776-449.088c-72.192-86.272-124.672-84.096-151.68-85.12c-41.472-4.288-81.6 12.544-113.664 25.152"></svg:path>`,
+})
+export class EpAppleIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[epAlarmClockIcon],svg[ep-alarm-clock-icon]',
   host: {
     role: 'img',
@@ -12,6 +46,23 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M512 832a320 320 0 1 0 0-640a320 320 0 0 0 0 640m0 64a384 384 0 1 1 0-768a384 384 0 0 1 0 768"></svg:path><svg:path fill="currentColor" d="m292.288 824.576l55.424 32l-48 83.136a32 32 0 1 1-55.424-32zm439.424 0l-55.424 32l48 83.136a32 32 0 1 0 55.424-32zM512 512h160a32 32 0 1 1 0 64H480a32 32 0 0 1-32-32V320a32 32 0 0 1 64 0zM90.496 312.256A160 160 0 0 1 312.32 90.496l-46.848 46.848a96 96 0 0 0-128 128L90.56 312.256zm835.264 0A160 160 0 0 0 704 90.496l46.848 46.848a96 96 0 0 1 128 128z"></svg:path>`,
 })
 export class EpAlarmClockIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[epArrowDownIcon],svg[ep-arrow-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M831.872 340.864L512 652.672L192.128 340.864a30.59 30.59 0 0 0-42.752 0a29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728a30.59 30.59 0 0 0-42.752 0z"></svg:path>`,
+})
+export class EpArrowDownIcon {
   readonly viewBox = input("0 0 1024 1024")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,57 +104,6 @@ export class EpArrowLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[epAddLocationIcon],svg[ep-add-location-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M288 896h448q32 0 32 32t-32 32H288q-32 0-32-32t32-32"></svg:path><svg:path fill="currentColor" d="M800 416a288 288 0 1 0-576 0c0 118.144 94.528 272.128 288 456.576C705.472 688.128 800 534.144 800 416M512 960C277.312 746.688 160 565.312 160 416a352 352 0 0 1 704 0c0 149.312-117.312 330.688-352 544"></svg:path><svg:path fill="currentColor" d="M544 384h96a32 32 0 1 1 0 64h-96v96a32 32 0 0 1-64 0v-96h-96a32 32 0 0 1 0-64h96v-96a32 32 0 0 1 64 0z"></svg:path>`,
-})
-export class EpAddLocationIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[epArrowDownIcon],svg[ep-arrow-down-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M831.872 340.864L512 652.672L192.128 340.864a30.59 30.59 0 0 0-42.752 0a29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728a30.59 30.59 0 0 0-42.752 0z"></svg:path>`,
-})
-export class EpArrowDownIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[epAimIcon],svg[ep-aim-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M512 896a384 384 0 1 0 0-768a384 384 0 0 0 0 768m0 64a448 448 0 1 1 0-896a448 448 0 0 1 0 896"></svg:path><svg:path fill="currentColor" d="M512 96a32 32 0 0 1 32 32v192a32 32 0 0 1-64 0V128a32 32 0 0 1 32-32m0 576a32 32 0 0 1 32 32v192a32 32 0 1 1-64 0V704a32 32 0 0 1 32-32M96 512a32 32 0 0 1 32-32h192a32 32 0 0 1 0 64H128a32 32 0 0 1-32-32m576 0a32 32 0 0 1 32-32h192a32 32 0 1 1 0 64H704a32 32 0 0 1-32-32"></svg:path>`,
-})
-export class EpAimIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[epArrowLeftBoldIcon],svg[ep-arrow-left-bold-icon]',
   host: {
     role: 'img',
@@ -121,16 +121,16 @@ export class EpArrowLeftBoldIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[epAppleIcon],svg[ep-apple-icon]',
+  selector: 'svg[epArrowRightIcon],svg[ep-arrow-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M599.872 203.776a189.4 189.4 0 0 1 64.384-4.672l2.624.128c31.168 1.024 51.2 4.096 79.488 16.32c37.632 16.128 74.496 45.056 111.488 89.344c96.384 115.264 82.752 372.8-34.752 521.728c-7.68 9.728-32 41.6-30.72 39.936a427 427 0 0 1-30.08 35.776c-31.232 32.576-65.28 49.216-110.08 50.048c-31.36.64-53.568-5.312-84.288-18.752l-6.528-2.88c-20.992-9.216-30.592-11.904-47.296-11.904c-18.112 0-28.608 2.88-51.136 12.672l-6.464 2.816c-28.416 12.224-48.32 18.048-76.16 19.2c-74.112 2.752-116.928-38.08-180.672-132.16c-96.64-142.08-132.608-349.312-55.04-486.4c46.272-81.92 129.92-133.632 220.672-135.04c32.832-.576 60.288 6.848 99.648 22.72c27.136 10.88 34.752 13.76 37.376 14.272c16.256-20.16 27.776-36.992 34.56-50.24c13.568-26.304 27.2-59.968 40.704-100.8a32 32 0 1 1 60.8 20.224c-12.608 37.888-25.408 70.4-38.528 97.664m-51.52 78.08c-14.528 17.792-31.808 37.376-51.904 58.816a32 32 0 1 1-46.72-43.776l12.288-13.248c-28.032-11.2-61.248-26.688-95.68-26.112c-70.4 1.088-135.296 41.6-171.648 105.792C121.6 492.608 176 684.16 247.296 788.992c34.816 51.328 76.352 108.992 130.944 106.944c52.48-2.112 72.32-34.688 135.872-34.688s81.28 34.688 136.96 33.536c56.448-1.088 75.776-39.04 126.848-103.872c107.904-136.768 107.904-362.752 35.776-449.088c-72.192-86.272-124.672-84.096-151.68-85.12c-41.472-4.288-81.6 12.544-113.664 25.152"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M340.864 149.312a30.59 30.59 0 0 0 0 42.752L652.736 512L340.864 831.872a30.59 30.59 0 0 0 0 42.752a29.12 29.12 0 0 0 41.728 0L714.24 534.336a32 32 0 0 0 0-44.672L382.592 149.376a29.12 29.12 0 0 0-41.728 0z"></svg:path>`,
 })
-export class EpAppleIcon {
+export class EpArrowRightIcon {
   readonly viewBox = input("0 0 1024 1024")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,16 +138,16 @@ export class EpAppleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[epBackIcon],svg[ep-back-icon]',
+  selector: 'svg[epArrowRightBoldIcon],svg[ep-arrow-right-bold-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64"></svg:path><svg:path fill="currentColor" d="m237.248 512l265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8l-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0"></svg:path>`,
 })
-export class EpBackIcon {
+export class EpArrowRightBoldIcon {
   readonly viewBox = input("0 0 1024 1024")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -165,23 +165,6 @@ export class EpBackIcon {
   template: `<svg:path fill="currentColor" d="m488.832 344.32l-339.84 356.672a32 32 0 0 0 0 44.16l.384.384a29.44 29.44 0 0 0 42.688 0l320-335.872l319.872 335.872a29.44 29.44 0 0 0 42.688 0l.384-.384a32 32 0 0 0 0-44.16L535.168 344.32a32 32 0 0 0-46.336 0"></svg:path>`,
 })
 export class EpArrowUpIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[epBaseballIcon],svg[ep-baseball-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M195.2 828.8a448 448 0 1 1 633.6-633.6a448 448 0 0 1-633.6 633.6m45.248-45.248a384 384 0 1 0 543.104-543.104a384 384 0 0 0-543.104 543.104"></svg:path><svg:path fill="currentColor" d="M497.472 96.896c22.784 4.672 44.416 9.472 64.896 14.528a256.128 256.128 0 0 0 350.208 350.208c5.056 20.48 9.856 42.112 14.528 64.896A320.128 320.128 0 0 1 497.472 96.896M108.48 491.904a320.128 320.128 0 0 1 423.616 423.68c-23.04-3.648-44.992-7.424-65.728-11.52a256.128 256.128 0 0 0-346.496-346.432a1737 1737 0 0 1-11.392-65.728"></svg:path>`,
-})
-export class EpBaseballIcon {
   readonly viewBox = input("0 0 1024 1024")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -223,6 +206,91 @@ export class EpAvatarIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[epBackIcon],svg[ep-back-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64"></svg:path><svg:path fill="currentColor" d="m237.248 512l265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312z"></svg:path>`,
+})
+export class EpBackIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[epAddLocationIcon],svg[ep-add-location-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M288 896h448q32 0 32 32t-32 32H288q-32 0-32-32t32-32"></svg:path><svg:path fill="currentColor" d="M800 416a288 288 0 1 0-576 0c0 118.144 94.528 272.128 288 456.576C705.472 688.128 800 534.144 800 416M512 960C277.312 746.688 160 565.312 160 416a352 352 0 0 1 704 0c0 149.312-117.312 330.688-352 544"></svg:path><svg:path fill="currentColor" d="M544 384h96a32 32 0 1 1 0 64h-96v96a32 32 0 0 1-64 0v-96h-96a32 32 0 0 1 0-64h96v-96a32 32 0 0 1 64 0z"></svg:path>`,
+})
+export class EpAddLocationIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[epBaseballIcon],svg[ep-baseball-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M195.2 828.8a448 448 0 1 1 633.6-633.6a448 448 0 0 1-633.6 633.6m45.248-45.248a384 384 0 1 0 543.104-543.104a384 384 0 0 0-543.104 543.104"></svg:path><svg:path fill="currentColor" d="M497.472 96.896c22.784 4.672 44.416 9.472 64.896 14.528a256.128 256.128 0 0 0 350.208 350.208c5.056 20.48 9.856 42.112 14.528 64.896A320.128 320.128 0 0 1 497.472 96.896M108.48 491.904a320.128 320.128 0 0 1 423.616 423.68c-23.04-3.648-44.992-7.424-65.728-11.52a256.128 256.128 0 0 0-346.496-346.432a1737 1737 0 0 1-11.392-65.728"></svg:path>`,
+})
+export class EpBaseballIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[epBasketballIcon],svg[ep-basketball-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M778.752 788.224a382.46 382.46 0 0 0 116.032-245.632a256.51 256.51 0 0 0-241.728-13.952a762.9 762.9 0 0 1 125.696 259.584m-55.04 44.224a699.65 699.65 0 0 0-125.056-269.632a256.13 256.13 0 0 0-56.064 331.968a382.7 382.7 0 0 0 181.12-62.336m-254.08 61.248A320.13 320.13 0 0 1 557.76 513.6a716 716 0 0 0-48.192-48.128a320.13 320.13 0 0 1-379.264 88.384a382.4 382.4 0 0 0 110.144 229.696a382.4 382.4 0 0 0 229.184 110.08zM129.28 481.088a256.13 256.13 0 0 0 331.072-56.448a699.65 699.65 0 0 0-268.8-124.352a382.66 382.66 0 0 0-62.272 180.8m106.56-235.84a762.9 762.9 0 0 1 258.688 125.056a256.51 256.51 0 0 0-13.44-241.088A382.46 382.46 0 0 0 235.84 245.248m318.08-114.944c40.576 89.536 37.76 193.92-8.448 281.344a780 780 0 0 1 66.176 66.112a320.83 320.83 0 0 1 282.112-8.128a382.4 382.4 0 0 0-110.144-229.12a382.4 382.4 0 0 0-229.632-110.208zM828.8 828.8a448 448 0 1 1-633.6-633.6a448 448 0 0 1 633.6 633.6"></svg:path>`,
+})
+export class EpBasketballIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[epBellIcon],svg[ep-bell-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M512 64a64 64 0 0 1 64 64v64H448v-64a64 64 0 0 1 64-64"></svg:path><svg:path fill="currentColor" d="M256 768h512V448a256 256 0 1 0-512 0zm256-640a320 320 0 0 1 320 320v384H192V448a320 320 0 0 1 320-320"></svg:path><svg:path fill="currentColor" d="M96 768h832q32 0 32 32t-32 32H96q-32 0-32-32t32-32m352 128h128a64 64 0 0 1-128 0"></svg:path>`,
+})
+export class EpBellIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[epBicycleIcon],svg[ep-bicycle-icon]',
   host: {
     role: 'img',
@@ -250,23 +318,6 @@ export class EpBicycleIcon {
   template: `<svg:path fill="currentColor" d="M640 832a128 128 0 0 1-256 0zm192-64H134.4a38.4 38.4 0 0 1 0-76.8H192V448c0-154.88 110.08-284.16 256.32-313.6a64 64 0 1 1 127.36 0A320.13 320.13 0 0 1 832 448v243.2h57.6a38.4 38.4 0 0 1 0 76.8z"></svg:path>`,
 })
 export class EpBellFilledIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[epBasketballIcon],svg[ep-basketball-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M778.752 788.224a382.46 382.46 0 0 0 116.032-245.632a256.51 256.51 0 0 0-241.728-13.952a762.9 762.9 0 0 1 125.696 259.584m-55.04 44.224a699.65 699.65 0 0 0-125.056-269.632a256.13 256.13 0 0 0-56.064 331.968a382.7 382.7 0 0 0 181.12-62.336m-254.08 61.248A320.13 320.13 0 0 1 557.76 513.6a716 716 0 0 0-48.192-48.128a320.13 320.13 0 0 1-379.264 88.384a382.4 382.4 0 0 0 110.144 229.696a382.4 382.4 0 0 0 229.184 110.08zM129.28 481.088a256.13 256.13 0 0 0 331.072-56.448a699.65 699.65 0 0 0-268.8-124.352a382.66 382.66 0 0 0-62.272 180.8m106.56-235.84a762.9 762.9 0 0 1 258.688 125.056a256.51 256.51 0 0 0-13.44-241.088A382.46 382.46 0 0 0 235.84 245.248m318.08-114.944c40.576 89.536 37.76 193.92-8.448 281.344a780 780 0 0 1 66.176 66.112a320.83 320.83 0 0 1 282.112-8.128a382.4 382.4 0 0 0-110.144-229.12a382.4 382.4 0 0 0-229.632-110.208zM828.8 828.8a448 448 0 1 1-633.6-633.6a448 448 0 0 1 633.6 633.6"></svg:path>`,
-})
-export class EpBasketballIcon {
   readonly viewBox = input("0 0 1024 1024")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -4925,57 +4976,6 @@ export class EpZoomInIcon {
   template: `<svg:path fill="currentColor" d="m795.904 750.72l124.992 124.928a32 32 0 0 1-45.248 45.248L750.656 795.904a416 416 0 1 1 45.248-45.248zM480 832a352 352 0 1 0 0-704a352 352 0 0 0 0 704M352 448h256a32 32 0 0 1 0 64H352a32 32 0 0 1 0-64"></svg:path>`,
 })
 export class EpZoomOutIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[epBellIcon],svg[ep-bell-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M512 64a64 64 0 0 1 64 64v64H448v-64a64 64 0 0 1 64-64"></svg:path><svg:path fill="currentColor" d="M256 768h512V448a256 256 0 1 0-512 0zm256-640a320 320 0 0 1 320 320v384H192V448a320 320 0 0 1 320-320"></svg:path><svg:path fill="currentColor" d="M96 768h832q32 0 32 32t-32 32H96q-32 0-32-32t32-32m352 128h128a64 64 0 0 1-128 0"></svg:path>`,
-})
-export class EpBellIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[epArrowRightIcon],svg[ep-arrow-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M340.864 149.312a30.59 30.59 0 0 0 0 42.752L652.736 512L340.864 831.872a30.59 30.59 0 0 0 0 42.752a29.12 29.12 0 0 0 41.728 0L714.24 534.336a32 32 0 0 0 0-44.672L382.592 149.376a29.12 29.12 0 0 0-41.728 0z"></svg:path>`,
-})
-export class EpArrowRightIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[epArrowRightBoldIcon],svg[ep-arrow-right-bold-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8l-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0"></svg:path>`,
-})
-export class EpArrowRightBoldIcon {
   readonly viewBox = input("0 0 1024 1024")
   readonly width = input("1em")
   readonly height = input("1em")

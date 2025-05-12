@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsBuildCircleSharpIcon],svg[material-symbols-build-circle-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.2 13.7q.325 0 .613-.05t.562-.15l3.775 3.75l2.1-2.1l-3.75-3.775q.1-.275.15-.55t.05-.625q0-1.425-1.012-2.437T10.25 6.75q-.425 0-.85.113t-.825.312l2.35 2.35l-1.4 1.4l-2.35-2.35q-.2.4-.312.825t-.113.85q0 1.425 1.013 2.438T10.2 13.7M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"></svg:path>`,
+})
+export class MaterialSymbolsBuildCircleSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialSymbolsBuildOutlineSharpIcon],svg[material-symbols-build-outline-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.875 21.425L11.1 14.6q-.5.2-1.012.3T9 15q-2.5 0-4.25-1.75T3 9q0-.9.25-1.712t.7-1.538L7.6 9.4l1.8-1.8l-3.65-3.65q.725-.45 1.538-.7T9 3q2.5 0 4.25 1.75T15 9q0 .575-.1 1.088t-.3 1.012l6.825 6.775zm0-2.85l.675-.675l-6.4-6.4q.45-.5.65-1.163T13 9q0-1.5-.962-2.613T9.65 5.05L12.2 7.6l-4.6 4.6l-2.55-2.55q.225 1.425 1.338 2.388T9 13q.65 0 1.3-.2t1.175-.625zM11.8 11.8"></svg:path>`,
+})
+export class MaterialSymbolsBuildOutlineSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsBuildSharpIcon],svg[material-symbols-build-sharp-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class MaterialSymbolsDockToLeftOutlineSharpIcon {
   template: `<svg:path fill="currentColor" d="M5 19h9V5H5zm-2 2V3h18v18z"></svg:path>`,
 })
 export class MaterialSymbolsDockToLeftSharpIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsDockToRightOutlineSharpIcon],svg[material-symbols-dock-to-right-outline-sharp-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 19h3V5H5zm5 0h9V5h-9zm-2 0H5zm-5 2V3h18v18z"></svg:path>`,
-})
-export class MaterialSymbolsDockToRightOutlineSharpIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsDockToRightSharpIcon],svg[material-symbols-dock-to-right-sharp-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10 19h9V5h-9zm-7 2V3h18v18z"></svg:path>`,
-})
-export class MaterialSymbolsDockToRightSharpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

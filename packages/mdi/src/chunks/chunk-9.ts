@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[mdiMaceIcon],svg[mdi-mace-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.92 9.27c.05-.27.08-.51.08-.77s-.03-.5-.08-.77L23 8.5zm-5.23 3.65l.81 3.24l.81-3.24c-.26.05-.53.08-.81.08s-.55-.03-.81-.08m-2.99-2.03l-4.91 4.9l-.7-.7L1 20.17L3.83 23l5.08-5.09l-.7-.7l4.9-4.91c-.57-.36-1.05-.84-1.41-1.41m4.57-6.81L15.5 1l-.77 3.08c.27-.05.51-.08.77-.08s.5.03.77.08M8 8.5l3.08.77C11.03 9 11 8.76 11 8.5s.03-.5.08-.77zm10.63 1.54c.23-.46.37-.98.37-1.54s-.14-1.08-.37-1.54L21 3l-3.96 2.37c-.46-.23-.98-.37-1.54-.37s-1.08.14-1.54.37L10 3l2.37 3.96c-.23.46-.37.98-.37 1.54c0 1.93 1.57 3.5 3.5 3.5c.56 0 1.08-.14 1.54-.37L21 14z"></svg:path>`,
+})
+export class MdiMaceIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiMagazinePistolIcon],svg[mdi-magazine-pistol-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m14 1l-2 2H7l2 18H8v2h10v-2L16 1M9 5h3l.24 2h-3m.23 2h3l.24 2h-3m.23 2h3l.24 2h-3m.23 2h3l.24 2h-3Z"></svg:path>`,
+})
+export class MdiMagazinePistolIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiMagazineRifleIcon],svg[mdi-magazine-rifle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7 1v2h1v10l-3 6l9 4l4-10V3h1V1m-9 2h6v2h-4.12v8.45L9.6 18.14L8 17.5l2-4Z"></svg:path>`,
+})
+export class MdiMagazineRifleIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mdiMagicStaffIcon],svg[mdi-magic-staff-icon]',
   host: {
     role: 'img',
@@ -8444,57 +8495,6 @@ export class MdiNoteAlertOutlineIcon {
   template: `<svg:path fill="currentColor" d="M19 13c.7 0 1.37.13 2 .35V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h8.35c-.22-.63-.35-1.3-.35-2c0-3.31 2.69-6 6-6m-5-8.5l5.5 5.5H14zm8.5 12.75L17.75 22L15 19l1.16-1.16l1.59 1.59l3.59-3.59z"></svg:path>`,
 })
 export class MdiNoteCheckIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiNoteCheckOutlineIcon],svg[mdi-note-check-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 19V5h7v7h7v1c.7 0 1.37.13 2 .35V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h8.35c-.22-.63-.35-1.3-.35-2zm9-14.5l5.5 5.5H14zm8.5 12.75L17.75 22L15 19l1.16-1.16l1.59 1.59l3.59-3.59z"></svg:path>`,
-})
-export class MdiNoteCheckOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiNoteEditIcon],svg[mdi-note-edit-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21 10V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l8.39-8.39c.44-.44 1-.68 1.61-.74m-7-5.5l5.5 5.5H14zm8.85 9.69l-.98.98l-2.04-2.04l.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72m-3.72-.36l2.04 2.04L15.04 22H13v-2.04z"></svg:path>`,
-})
-export class MdiNoteEditIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiNoteEditOutlineIcon],svg[mdi-note-edit-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m18.13 12l1.26-1.26c.44-.44 1-.68 1.61-.74V9l-6-6H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h6v-1.87l.13-.13H5V5h7v7zM14 4.5l5.5 5.5H14zm5.13 9.33l2.04 2.04L15.04 22H13v-2.04zm3.72.36l-.98.98l-2.04-2.04l.98-.98c.19-.2.52-.2.72 0l1.32 1.32c.2.2.2.53 0 .72"></svg:path>`,
-})
-export class MdiNoteEditOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -19,6 +19,40 @@ export class OuiAccessibilityIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[ouiAggregateIcon],svg[oui-aggregate-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.5 2a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1m0-1a1.5 1.5 0 0 1 1.415 1h1.908a1.5 1.5 0 0 1 1.393.943L8.839 7H12.5a.5.5 0 0 1 0 1H8.839l-1.623 4.057A1.5 1.5 0 0 1 5.823 13H3.915a1.5 1.5 0 1 1 0-1h1.908a.5.5 0 0 0 .464-.314L7.761 8H3.915a1.5 1.5 0 1 1 0-1H7.76L6.287 3.314A.5.5 0 0 0 5.823 3H3.915A1.5 1.5 0 1 1 2.5 1m0 11a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M3 7.5a.5.5 0 1 0-1 0a.5.5 0 0 0 1 0m9.354-3.354a.5.5 0 0 0-.708.708L13.793 7a.707.707 0 0 1 0 1l-2.147 2.146a.5.5 0 0 0 .708.708L14.5 8.707a1.707 1.707 0 0 0 0-2.414z"></svg:path>`,
+})
+export class OuiAggregateIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ouiAnalyzeEventIcon],svg[oui-analyze-event-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M13.924 4.013a.6.6 0 0 0-.228-.236L7.304.082a.61.61 0 0 0-.608 0L.304 3.777A.62.62 0 0 0 0 4.304v7.392a.61.61 0 0 0 .304.527l6.392 3.695c.188.11.42.11.608 0l6.392-3.695a.61.61 0 0 0 .304-.527V4.304a.6.6 0 0 0-.076-.291M1 5.079v6.391l6 3.47l6-3.47V5.08L7.252 8.432L7 8.579l-.252-.147zm11.476-.852L7 1.06L1.524 4.227L7 7.42z"></svg:path>`,
+})
+export class OuiAnalyzeEventIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[ouiAnnotationIcon],svg[oui-annotation-icon]',
   host: {
     role: 'img',
@@ -36,6 +70,40 @@ export class OuiAnnotationIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[ouiAlertIcon],svg[oui-alert-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.59 10.059L7.35 5.18h1.3l-.25 4.88zm.394 1.901a.6.6 0 0 1-.448-.186a.6.6 0 0 1-.186-.444q0-.261.186-.446a.6.6 0 0 1 .448-.184q.253 0 .44.182q.186.182.186.448a.6.6 0 0 1-.189.446a.6.6 0 0 1-.437.184M2 14a1 1 0 0 1-.878-1.479l6-11a1 1 0 0 1 1.756 0l6 11A1 1 0 0 1 14 14zm0-1h12L8 2z"></svg:path>`,
+})
+export class OuiAlertIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ouiAnomalyDetectionIcon],svg[oui-anomaly-detection-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 1H2a1 1 0 0 0-1 1v2.5a.5.5 0 1 1-1 0V2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2.5a.5.5 0 1 1-1 0V2a1 1 0 0 0-1-1M.5 9a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9.5a.5.5 0 1 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V9.5A.5.5 0 0 1 .5 9"></svg:path><svg:path fill="currentColor" d="M9.482 3.968a.5.5 0 0 0-.964 0L7.362 8.606l-.915-1.83A.5.5 0 0 0 6 6.5H.5a.5.5 0 0 0 0 1h5.191l1.362 2.724a.5.5 0 0 0 .93-.092L9 6l1.018 4.132a.5.5 0 0 0 .93.092l1.36-2.724H13.5a.5.5 0 1 0 0-1H12a.5.5 0 0 0-.447.276l-.915 1.83z"></svg:path>`,
+})
+export class OuiAnomalyDetectionIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[ouiApmTraceIcon],svg[oui-apm-trace-icon]',
   host: {
     role: 'img',
@@ -46,23 +114,6 @@ export class OuiAnnotationIcon {
   template: `<svg:path fill="currentColor" d="M2 0h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm.5 2h10a.5.5 0 1 1 0 1h-10a.5.5 0 0 1 0-1m1 3h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1 0-1m2 3h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1m3 3h5a.5.5 0 1 1 0 1h-5a.5.5 0 1 1 0-1"></svg:path>`,
 })
 export class OuiApmTraceIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiAggregateIcon],svg[oui-aggregate-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.5 2a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1m0-1a1.5 1.5 0 0 1 1.415 1h1.908a1.5 1.5 0 0 1 1.393.943L8.839 7H12.5a.5.5 0 0 1 0 1H8.839l-1.623 4.057A1.5 1.5 0 0 1 5.823 13H3.915a1.5 1.5 0 1 1 0-1h1.908a.5.5 0 0 0 .464-.314L7.761 8H3.915a1.5 1.5 0 1 1 0-1H7.76L6.287 3.314A.5.5 0 0 0 5.823 3H3.915A1.5 1.5 0 1 1 2.5 1m0 11a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1M3 7.5a.5.5 0 1 0-1 0a.5.5 0 0 0 1 0m9.354-3.354a.5.5 0 0 0-.708.708L13.793 7a.707.707 0 0 1 0 1l-2.147 2.146a.5.5 0 0 0 .708.708L14.5 8.707a1.707 1.707 0 0 0 0-2.414z"></svg:path>`,
-})
-export class OuiAggregateIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,51 +138,17 @@ export class OuiAppAddDataIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ouiAlertIcon],svg[oui-alert-icon]',
+  selector: 'svg[ouiAppAdvancedSettingsIcon],svg[oui-app-advanced-settings-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.59 10.059L7.35 5.18h1.3l-.25 4.88zm.394 1.901a.6.6 0 0 1-.448-.186a.6.6 0 0 1-.186-.444q0-.261.186-.446a.6.6 0 0 1 .448-.184q.253 0 .44.182q.186.182.186.448a.6.6 0 0 1-.189.446a.6.6 0 0 1-.437.184M2 14a1 1 0 0 1-.878-1.479l6-11a1 1 0 0 1 1.756 0l6 11A1 1 0 0 1 14 14zm0-1h12L8 2z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M2.909 26.182h1.939v4.848H2.909z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M4.848 16.62V0H2.91v16.62a3.879 3.879 0 1 0 1.94 0m-.97 5.683a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.879"></svg:path><svg:path fill="currentColor" d="M14.545 16.485h1.939V31.03h-1.939z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M16.485 6.924V0h-1.94v6.924a3.879 3.879 0 1 0 1.94 0m-.97 5.682a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.88"></svg:path><svg:path fill="currentColor" d="M26.182 26.182h1.939v4.848h-1.939z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M28.121 16.62V0h-1.94v16.62a3.879 3.879 0 1 0 1.94 0m-.97 5.683a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.879"></svg:path>`,
 })
-export class OuiAlertIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiAppAppSearchIcon],svg[oui-app-app-search-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M15.5 11.916L27 5.278L19.5.938a7 7 0 0 0-7 0l-8 4.62A7 7 0 0 0 1 11.62v9.237a7 7 0 0 0 3.5 6.061l7.5 4.33V17.98a7 7 0 0 1 3.5-6.062zM10 27.786v-9.809a9 9 0 0 1 4.5-7.792l8.503-4.91L18.5 2.67a5 5 0 0 0-5 0l-8 4.619A5 5 0 0 0 3 11.62v9.238a5 5 0 0 0 2.5 4.33z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M18.409 13.55a7 7 0 0 1 1.035 1.711A6.9 6.9 0 0 1 20 17.98v13.27l7.5-4.33a7 7 0 0 0 3.5-6.061V11.62a7 7 0 0 0-1.587-4.422zm2.777.705A8.9 8.9 0 0 1 22 17.979v9.807l4.5-2.597a5 5 0 0 0 2.5-4.33V11.62c0-.588-.106-1.161-.303-1.7z" class="ouiIcon__fillSecondary"></svg:path>`,
-})
-export class OuiAppAppSearchIcon {
+export class OuiAppAdvancedSettingsIcon {
   readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiAnomalyDetectionIcon],svg[oui-anomaly-detection-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 1H2a1 1 0 0 0-1 1v2.5a.5.5 0 1 1-1 0V2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2.5a.5.5 0 1 1-1 0V2a1 1 0 0 0-1-1M.5 9a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9.5a.5.5 0 1 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V9.5A.5.5 0 0 1 .5 9"></svg:path><svg:path fill="currentColor" d="M9.482 3.968a.5.5 0 0 0-.964 0L7.362 8.606l-.915-1.83A.5.5 0 0 0 6 6.5H.5a.5.5 0 0 0 0 1h5.191l1.362 2.724a.5.5 0 0 0 .93-.092L9 6l1.018 4.132a.5.5 0 0 0 .93.092l1.36-2.724H13.5a.5.5 0 1 0 0-1H12a.5.5 0 0 0-.447.276l-.915 1.83z"></svg:path>`,
-})
-export class OuiAnomalyDetectionIcon {
-  readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -148,6 +165,40 @@ export class OuiAnomalyDetectionIcon {
   template: `<svg:path fill="currentColor" d="M3 10h4v2H1V1h30v6h-2V3H3zm26 19v-6h2v8H18v-8h2v6z"></svg:path><svg:path fill="currentColor" d="M31 10H9v11h12c5.523 0 10-4.477 10-10zm-10 9H11v-7h17.938A8 8 0 0 1 21 19" class="ouiIcon__fillSecondary"></svg:path>`,
 })
 export class OuiAppApmIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ouiAppAuditbeatIcon],svg[oui-app-auditbeat-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15 0h2v32h-2z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M0 32h13v-2H2V2h11V0H0zM19 0v2h11v28H19v2h13V0z"></svg:path>`,
+})
+export class OuiAppAuditbeatIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ouiAppAppSearchIcon],svg[oui-app-app-search-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M15.5 11.916L27 5.278L19.5.938a7 7 0 0 0-7 0l-8 4.62A7 7 0 0 0 1 11.62v9.237a7 7 0 0 0 3.5 6.061l7.5 4.33V17.98a7 7 0 0 1 3.5-6.062zM10 27.786v-9.809a9 9 0 0 1 4.5-7.792l8.503-4.91L18.5 2.67a5 5 0 0 0-5 0l-8 4.619A5 5 0 0 0 3 11.62v9.238a5 5 0 0 0 2.5 4.33z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M18.409 13.55a7 7 0 0 1 1.035 1.711A6.9 6.9 0 0 1 20 17.98v13.27l7.5-4.33a7 7 0 0 0 3.5-6.061V11.62a7 7 0 0 0-1.587-4.422zm2.777.705A8.9 8.9 0 0 1 22 17.979v9.807l4.5-2.597a5 5 0 0 0 2.5-4.33V11.62c0-.588-.106-1.161-.303-1.7z" class="ouiIcon__fillSecondary"></svg:path>`,
+})
+export class OuiAppAppSearchIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,33 +223,33 @@ export class OuiAppCodeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ouiAnalyzeEventIcon],svg[oui-analyze-event-icon]',
+  selector: 'svg[ouiAppCanvasIcon],svg[oui-app-canvas-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M13.924 4.013a.6.6 0 0 0-.228-.236L7.304.082a.61.61 0 0 0-.608 0L.304 3.777A.62.62 0 0 0 0 4.304v7.392a.61.61 0 0 0 .304.527l6.392 3.695c.188.11.42.11.608 0l6.392-3.695a.61.61 0 0 0 .304-.527V4.304a.6.6 0 0 0-.076-.291M1 5.079v6.391l6 3.47l6-3.47V5.08L7.252 8.432L7 8.579l-.252-.147zm11.476-.852L7 1.06L1.524 4.227L7 7.42z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M7 17h2v7H7zm5-3h2v10h-2zm5 2h2v8h-2zm5-2h3v2h-3zm0 4h3v2h-3zm0 4h3v2h-3z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M30.73 24a6.5 6.5 0 0 1 .45-2.19c.337-.9.52-1.85.54-2.81a8.6 8.6 0 0 0-.54-2.81a6.5 6.5 0 0 1-.45-2.19a9.2 9.2 0 0 1 .62-2.49c.53-1.57 1.08-3.19.08-4.2s-2.41-.44-3.52.05a5.6 5.6 0 0 1-2.09.64a5 5 0 0 1-.59 0L16 .28L6.77 8a5 5 0 0 1-.59 0a5.6 5.6 0 0 1-2.09-.65C3 6.87 1.6 6.25.57 7.31s-.45 2.63.08 4.2A9.2 9.2 0 0 1 1.27 14a6.5 6.5 0 0 1-.45 2.19A8.6 8.6 0 0 0 .28 19c.02.96.203 1.91.54 2.81A6.5 6.5 0 0 1 1.27 24a9.2 9.2 0 0 1-.62 2.49c-.53 1.57-1.08 3.19-.08 4.2c.353.38.852.59 1.37.58a5.7 5.7 0 0 0 2.15-.63A5.6 5.6 0 0 1 6.18 30a7.1 7.1 0 0 1 2.29.47a8 8 0 0 0 2.62.53a7.4 7.4 0 0 0 2.47-.51A7.1 7.1 0 0 1 16 30a6.2 6.2 0 0 1 2.14.45a8 8 0 0 0 2.77.55a8.1 8.1 0 0 0 2.77-.55a6.2 6.2 0 0 1 2.14-.45a5.6 5.6 0 0 1 2.09.65c1.11.49 2.49 1.11 3.52.05s.45-2.63-.08-4.2a9.2 9.2 0 0 1-.62-2.5M21.17 7h-.26a8 8 0 0 0-2.77.55A6.2 6.2 0 0 1 16 8a6.2 6.2 0 0 1-2.14-.45A8 8 0 0 0 11.09 7h-.26L16 2.72zm8.89 22.27a4.4 4.4 0 0 1-1.34-.46a7.1 7.1 0 0 0-2.9-.82a8.1 8.1 0 0 0-2.78.55a6.1 6.1 0 0 1-2.13.45a6.2 6.2 0 0 1-2.14-.45A8 8 0 0 0 16 28a9 9 0 0 0-3.08.6a5.7 5.7 0 0 1-1.83.4a6.4 6.4 0 0 1-2-.43A8.7 8.7 0 0 0 6.18 28a7.1 7.1 0 0 0-2.9.82a10 10 0 0 1-1.28.52a6.1 6.1 0 0 1 .52-2.21c.403-1 .65-2.055.73-3.13a8.6 8.6 0 0 0-.54-2.81A6.5 6.5 0 0 1 2.27 19a6.5 6.5 0 0 1 .44-2.19c.337-.9.52-1.85.54-2.81a10.5 10.5 0 0 0-.72-3.13a9 9 0 0 1-.59-2.16H2c.447.1.88.255 1.29.46a7.1 7.1 0 0 0 2.9.82A8.1 8.1 0 0 0 9 9.44A6.1 6.1 0 0 1 11.09 9a6.1 6.1 0 0 1 2.13.45A8.1 8.1 0 0 0 16 10a8.1 8.1 0 0 0 2.78-.55A6.1 6.1 0 0 1 20.91 9a6.1 6.1 0 0 1 2.09.44a8.1 8.1 0 0 0 2.78.55a7.1 7.1 0 0 0 2.9-.82A10 10 0 0 1 30 8.66a6.1 6.1 0 0 1-.52 2.21c-.403 1-.65 2.055-.73 3.13c.02.96.203 1.91.54 2.81a6.5 6.5 0 0 1 .44 2.19a6.5 6.5 0 0 1-.44 2.19a8.6 8.6 0 0 0-.54 2.81c.078 1.074.32 2.13.72 3.13a9 9 0 0 1 .59 2.16z"></svg:path>`,
 })
-export class OuiAnalyzeEventIcon {
-  readonly viewBox = input("0 0 16 16")
+export class OuiAppCanvasIcon {
+  readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
 }
 
 @Component({
   standalone: true,
-  selector: 'svg[ouiAppAuditbeatIcon],svg[oui-app-auditbeat-icon]',
+  selector: 'svg[ouiAppConsoleIcon],svg[oui-app-console-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M15 0h2v32h-2z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M0 32h13v-2H2V2h11V0H0zM19 0v2h11v28H19v2h13V0z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M29 9H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3M3 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"></svg:path><svg:path fill="currentColor" d="M29 32H3a3 3 0 0 1-3-3V14a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3M3 13a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1V14a1 1 0 0 0-1-1z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="m7.29 17.71l3.3 3.29l-3.3 3.29l1.42 1.42l4.7-4.71l-4.7-4.71zM15 24h9v2h-9z"></svg:path>`,
 })
-export class OuiAppAuditbeatIcon {
+export class OuiAppConsoleIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -216,6 +267,57 @@ export class OuiAppAuditbeatIcon {
   template: `<svg:path fill="currentColor" d="M0 0v16h8.7l5.3-6V0zm2 2h10v7H7v5H2zm8.45 9L9 12.64V11zM18 16v16h8.7l5.3-6V16zm2 2h10v7h-5v5h-5zm8.45 9L27 28.64V27z"></svg:path><svg:path fill="currentColor" d="M5 18H3c0 6.075 4.925 11 11 11h2v-2h-2a9 9 0 0 1-9-9M18 3h-2v2h2a9 9 0 0 1 9 9h2c0-6.075-4.925-11-11-11" class="ouiIcon__fillSecondary"></svg:path>`,
 })
 export class OuiAppCrossClusterReplicationIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ouiAppDevtoolsIcon],svg[oui-app-devtools-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M21 28h-2v-8.49l.6-.26A9 9 0 0 0 21 3.52V11H11V3.52a9 9 0 0 0 1.4 15.73l.6.26V28h-2v-7.21A11 11 0 0 1 11.6.92L13 .31V9h6V.31l1.4.61a11 11 0 0 1 .6 19.87z"></svg:path><svg:path d="M11 30h10v2H11z" class="ouiIcon__fillSecondary"></svg:path></svg:g>`,
+})
+export class OuiAppDevtoolsIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ouiAppDashboardIcon],svg[oui-app-dashboard-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M29 9H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3M3 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"></svg:path><svg:path fill="currentColor" d="M12 20H3a3 3 0 0 1-3-3v-3a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3m-9-7a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M12 31H3a3 3 0 0 1-3-3v-3a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3m-9-7a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></svg:path><svg:path fill="currentColor" d="M29 31h-9a3 3 0 0 1-3-3V14a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3m-9-18a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V14a1 1 0 0 0-1-1z" class="ouiIcon__fillSecondary"></svg:path>`,
+})
+export class OuiAppDashboardIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ouiAppDiscoverIcon],svg[oui-app-discover-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m8.33 23.67l4.79-10.55l10.55-4.79l-4.79 10.55zm6.3-9l-2.28 5l5-2.28l2.28-5z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M16 0C7.163 0 0 7.163 0 16s7.163 16 16 16s16-7.163 16-16A16 16 0 0 0 16 0m1 29.95V28h-2v1.95A14 14 0 0 1 2.05 17H4v-2H2.05A14 14 0 0 1 15 2.05V4h2V2.05A14 14 0 0 1 29.95 15H28v2h1.95A14 14 0 0 1 17 29.95"></svg:path>`,
+})
+export class OuiAppDiscoverIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -6847,108 +6949,6 @@ export class OuiWsSecurityAnalyticsIcon {
 })
 export class OuiWsSelectorIcon {
   readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiAppCanvasIcon],svg[oui-app-canvas-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7 17h2v7H7zm5-3h2v10h-2zm5 2h2v8h-2zm5-2h3v2h-3zm0 4h3v2h-3zm0 4h3v2h-3z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M30.73 24a6.5 6.5 0 0 1 .45-2.19c.337-.9.52-1.85.54-2.81a8.6 8.6 0 0 0-.54-2.81a6.5 6.5 0 0 1-.45-2.19a9.2 9.2 0 0 1 .62-2.49c.53-1.57 1.08-3.19.08-4.2s-2.41-.44-3.52.05a5.6 5.6 0 0 1-2.09.64a5 5 0 0 1-.59 0L16 .28L6.77 8a5 5 0 0 1-.59 0a5.6 5.6 0 0 1-2.09-.65C3 6.87 1.6 6.25.57 7.31s-.45 2.63.08 4.2A9.2 9.2 0 0 1 1.27 14a6.5 6.5 0 0 1-.45 2.19A8.6 8.6 0 0 0 .28 19c.02.96.203 1.91.54 2.81A6.5 6.5 0 0 1 1.27 24a9.2 9.2 0 0 1-.62 2.49c-.53 1.57-1.08 3.19-.08 4.2c.353.38.852.59 1.37.58a5.7 5.7 0 0 0 2.15-.63A5.6 5.6 0 0 1 6.18 30a7.1 7.1 0 0 1 2.29.47a8 8 0 0 0 2.62.53a7.4 7.4 0 0 0 2.47-.51A7.1 7.1 0 0 1 16 30a6.2 6.2 0 0 1 2.14.45a8 8 0 0 0 2.77.55a8.1 8.1 0 0 0 2.77-.55a6.2 6.2 0 0 1 2.14-.45a5.6 5.6 0 0 1 2.09.65c1.11.49 2.49 1.11 3.52.05s.45-2.63-.08-4.2a9.2 9.2 0 0 1-.62-2.5M21.17 7h-.26a8 8 0 0 0-2.77.55A6.2 6.2 0 0 1 16 8a6.2 6.2 0 0 1-2.14-.45A8 8 0 0 0 11.09 7h-.26L16 2.72zm8.89 22.27a4.4 4.4 0 0 1-1.34-.46a7.1 7.1 0 0 0-2.9-.82a8.1 8.1 0 0 0-2.78.55a6.1 6.1 0 0 1-2.13.45a6.2 6.2 0 0 1-2.14-.45A8 8 0 0 0 16 28a9 9 0 0 0-3.08.6a5.7 5.7 0 0 1-1.83.4a6.4 6.4 0 0 1-2-.43A8.7 8.7 0 0 0 6.18 28a7.1 7.1 0 0 0-2.9.82a10 10 0 0 1-1.28.52a6.1 6.1 0 0 1 .52-2.21c.403-1 .65-2.055.73-3.13a8.6 8.6 0 0 0-.54-2.81A6.5 6.5 0 0 1 2.27 19a6.5 6.5 0 0 1 .44-2.19c.337-.9.52-1.85.54-2.81a10.5 10.5 0 0 0-.72-3.13a9 9 0 0 1-.59-2.16H2c.447.1.88.255 1.29.46a7.1 7.1 0 0 0 2.9.82A8.1 8.1 0 0 0 9 9.44A6.1 6.1 0 0 1 11.09 9a6.1 6.1 0 0 1 2.13.45A8.1 8.1 0 0 0 16 10a8.1 8.1 0 0 0 2.78-.55A6.1 6.1 0 0 1 20.91 9a6.1 6.1 0 0 1 2.09.44a8.1 8.1 0 0 0 2.78.55a7.1 7.1 0 0 0 2.9-.82A10 10 0 0 1 30 8.66a6.1 6.1 0 0 1-.52 2.21c-.403 1-.65 2.055-.73 3.13c.02.96.203 1.91.54 2.81a6.5 6.5 0 0 1 .44 2.19a6.5 6.5 0 0 1-.44 2.19a8.6 8.6 0 0 0-.54 2.81c.078 1.074.32 2.13.72 3.13a9 9 0 0 1 .59 2.16z"></svg:path>`,
-})
-export class OuiAppCanvasIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiAppAdvancedSettingsIcon],svg[oui-app-advanced-settings-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2.909 26.182h1.939v4.848H2.909z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M4.848 16.62V0H2.91v16.62a3.879 3.879 0 1 0 1.94 0m-.97 5.683a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.879"></svg:path><svg:path fill="currentColor" d="M14.545 16.485h1.939V31.03h-1.939z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M16.485 6.924V0h-1.94v6.924a3.879 3.879 0 1 0 1.94 0m-.97 5.682a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.88"></svg:path><svg:path fill="currentColor" d="M26.182 26.182h1.939v4.848h-1.939z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M28.121 16.62V0h-1.94v16.62a3.879 3.879 0 1 0 1.94 0m-.97 5.683a1.94 1.94 0 1 1 0-3.879a1.94 1.94 0 0 1 0 3.879"></svg:path>`,
-})
-export class OuiAppAdvancedSettingsIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiAppDiscoverIcon],svg[oui-app-discover-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m8.33 23.67l4.79-10.55l10.55-4.79l-4.79 10.55zm6.3-9l-2.28 5l5-2.28l2.28-5z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M16 0C7.163 0 0 7.163 0 16s7.163 16 16 16s16-7.163 16-16A16 16 0 0 0 16 0m1 29.95V28h-2v1.95A14 14 0 0 1 2.05 17H4v-2H2.05A14 14 0 0 1 15 2.05V4h2V2.05A14 14 0 0 1 29.95 15H28v2h1.95A14 14 0 0 1 17 29.95"></svg:path>`,
-})
-export class OuiAppDiscoverIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiAppDashboardIcon],svg[oui-app-dashboard-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M29 9H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3M3 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"></svg:path><svg:path fill="currentColor" d="M12 20H3a3 3 0 0 1-3-3v-3a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3m-9-7a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="M12 31H3a3 3 0 0 1-3-3v-3a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3m-9-7a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></svg:path><svg:path fill="currentColor" d="M29 31h-9a3 3 0 0 1-3-3V14a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3m-9-18a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V14a1 1 0 0 0-1-1z" class="ouiIcon__fillSecondary"></svg:path>`,
-})
-export class OuiAppDashboardIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiAppDevtoolsIcon],svg[oui-app-devtools-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M21 28h-2v-8.49l.6-.26A9 9 0 0 0 21 3.52V11H11V3.52a9 9 0 0 0 1.4 15.73l.6.26V28h-2v-7.21A11 11 0 0 1 11.6.92L13 .31V9h6V.31l1.4.61a11 11 0 0 1 .6 19.87z"></svg:path><svg:path d="M11 30h10v2H11z" class="ouiIcon__fillSecondary"></svg:path></svg:g>`,
-})
-export class OuiAppDevtoolsIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ouiAppConsoleIcon],svg[oui-app-console-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M29 9H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3M3 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"></svg:path><svg:path fill="currentColor" d="M29 32H3a3 3 0 0 1-3-3V14a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3M3 13a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1V14a1 1 0 0 0-1-1z" class="ouiIcon__fillSecondary"></svg:path><svg:path fill="currentColor" d="m7.29 17.71l3.3 3.29l-3.3 3.29l1.42 1.42l4.7-4.71l-4.7-4.71zM15 24h9v2h-9z"></svg:path>`,
-})
-export class OuiAppConsoleIcon {
-  readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
 }

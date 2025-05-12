@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[quillAlarmIcon],svg[quill-alarm-icon]',
+  selector: 'svg[quillActivityIcon],svg[quill-activity-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.607 6.392a15 15 0 0 0-6.725-3.882m-7.764 0a15 15 0 0 0-6.725 3.882M16 9v8l-4 4m15-4c0 6.075-4.925 11-11 11S5 23.075 5 17S9.925 6 16 6s11 4.925 11 11"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16h6l4-11l6 22l4-11h6"></svg:path>`,
 })
-export class QuillAlarmIcon {
+export class QuillActivityIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,23 +53,6 @@ export class QuillAltIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[quillActivityIcon],svg[quill-activity-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16h6l4-11l6 22l4-11h6"></svg:path>`,
-})
-export class QuillActivityIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[quillArrowLeftIcon],svg[quill-arrow-left-icon]',
   host: {
     role: 'img',
@@ -87,33 +70,16 @@ export class QuillArrowLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[quillArrowUpIcon],svg[quill-arrow-up-icon]',
+  selector: 'svg[quillAlarmIcon],svg[quill-alarm-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 27V6m8 7l-8-8l-8 8"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.607 6.392a15 15 0 0 0-6.725-3.882m-7.764 0a15 15 0 0 0-6.725 3.882M16 9v8l-4 4m15-4c0 6.075-4.925 11-11 11S5 23.075 5 17S9.925 6 16 6s11 4.925 11 11"></svg:path>`,
 })
-export class QuillArrowUpIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[quillAttachmentIcon],svg[quill-attachment-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10.49 19.182l7.778-7.778c.976-.976 2.382-1.153 3.359-.177s.8 2.383-.177 3.359l-8.132 8.132c-1.414 1.414-4.243 1.414-6.01-.354c-1.768-1.768-1.768-4.596-.354-6.01l8.132-8.132a6.5 6.5 0 0 1 9.192 9.192l-4.596 4.596"></svg:path>`,
-})
-export class QuillAttachmentIcon {
+export class QuillAlarmIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,16 +104,16 @@ export class QuillArrowDownIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[quillCalendarIcon],svg[quill-calendar-icon]',
+  selector: 'svg[quillArrowUpIcon],svg[quill-arrow-up-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.5 16.5h2V23M5 12h22m-6-4V4M11 8V4M7 28h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 27V6m8 7l-8-8l-8 8"></svg:path>`,
 })
-export class QuillCalendarIcon {
+export class QuillArrowUpIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,6 +138,57 @@ export class QuillArrowRightIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[quillAtIcon],svg[quill-at-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m23.363 5.286l.567-.824zm-9.228-2.151l.143.99zM5.897 7.819l-.777-.63zm-2.87 9.031l-.997.066zm22.34 9.554a1 1 0 1 0-1.337-1.486zM22 10.5a1 1 0 1 0-2 0zm-.744 9.896l.8-.6zM24.5 22v1zM20 16a5 5 0 0 1-5 5v2a7 7 0 0 0 7-7zm-5 5a5 5 0 0 1-5-5H8a7 7 0 0 0 7 7zm-5-5a5 5 0 0 1 5-5V9a7 7 0 0 0-7 7zm5-5a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7zm14.657 1.919c-.735-3.386-2.827-6.463-5.727-8.457l-1.133 1.649c2.491 1.712 4.281 4.356 4.905 7.232zM23.93 4.462a14 14 0 0 0-9.939-2.317l.287 1.98a12 12 0 0 1 8.519 1.986zm-9.94-2.317A14 14 0 0 0 5.12 7.19l1.554 1.258a12 12 0 0 1 7.604-4.324zM5.12 7.19a14 14 0 0 0-3.09 9.726l1.996-.131a12 12 0 0 1 2.648-8.337zm-3.09 9.726a14 14 0 0 0 4.333 9.24l1.377-1.451a12 12 0 0 1-3.714-7.92zm4.333 9.24a14 14 0 0 0 9.454 3.843l.026-2a12 12 0 0 1-8.103-3.294zm9.454 3.843a14 14 0 0 0 9.55-3.595l-1.337-1.486a12 12 0 0 1-8.187 3.081zM20 10.5v9.028h2V10.5zm.456 10.496c.54.72 1.823 2.004 4.044 2.004v-2a2.97 2.97 0 0 1-2.444-1.204zM20 19.528c0 .449.1.992.456 1.468l1.6-1.2c-.016-.022-.056-.096-.056-.268zM24.5 23c1.357 0 2.465-.44 3.314-1.2c.83-.744 1.354-1.737 1.673-2.764c.632-2.034.535-4.434.17-6.117l-1.955.424c.314 1.447.378 3.482-.125 5.1c-.248.8-.616 1.436-1.097 1.866c-.462.414-1.087.691-1.98.691z"></svg:path>`,
+})
+export class QuillAtIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[quillAttachmentIcon],svg[quill-attachment-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10.49 19.182l7.778-7.778c.976-.976 2.382-1.153 3.359-.177s.8 2.383-.177 3.359l-8.132 8.132c-1.414 1.414-4.243 1.414-6.01-.354c-1.768-1.768-1.768-4.596-.354-6.01l8.132-8.132a6.5 6.5 0 0 1 9.192 9.192l-4.596 4.596"></svg:path>`,
+})
+export class QuillAttachmentIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[quillBreatherIcon],svg[quill-breather-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M25.192 25.192A13 13 0 1 0 6.808 6.808a13 13 0 0 0 18.384 18.384"></svg:path>`,
+})
+export class QuillBreatherIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[quillBroadcastIcon],svg[quill-broadcast-icon]',
   host: {
     role: 'img',
@@ -182,6 +199,91 @@ export class QuillArrowRightIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 20.66a10 10 0 0 0 0-17.32M11 20.66a10 10 0 0 1 0-17.32m8 13.856a6 6 0 0 0 0-10.392m-6 10.392a6 6 0 0 1 0-10.392M13.09 26L16 18l2.91 8m-5.82 0L12 29m1.09-3h5.82M20 29l-1.09-3M18 12a2 2 0 1 0-4 0a2 2 0 0 0 4 0"></svg:path>`,
 })
 export class QuillBroadcastIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[quillCalendarIcon],svg[quill-calendar-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.5 16.5h2V23M5 12h22m-6-4V4M11 8V4M7 28h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2"></svg:path>`,
+})
+export class QuillCalendarIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[quillCalendarAddIcon],svg[quill-calendar-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 23.5V20m0 0v-3.5m0 3.5h-3.5m3.5 0h3.5M5 12h22m-6-4V4M11 8V4M7 28h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2"></svg:path>`,
+})
+export class QuillCalendarAddIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[quillCalendarMoreIcon],svg[quill-calendar-more-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:mask id="quillCalendarMore0" fill="#fff"><svg:path fill-rule="evenodd" d="M12.5 19.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m5 0a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0M21 21a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" clip-rule="evenodd"></svg:path></svg:mask><svg:g fill="none"><svg:path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h22m-6-4V4M11 8V4M7 28h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M12.5 19.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m5 0a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0M21 21a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M11 22a2.5 2.5 0 0 0 2.5-2.5h-2a.5.5 0 0 1-.5.5zm-2.5-2.5A2.5 2.5 0 0 0 11 22v-2a.5.5 0 0 1-.5-.5zM11 17a2.5 2.5 0 0 0-2.5 2.5h2a.5.5 0 0 1 .5-.5zm2.5 2.5A2.5 2.5 0 0 0 11 17v2a.5.5 0 0 1 .5.5zM16 22a2.5 2.5 0 0 0 2.5-2.5h-2a.5.5 0 0 1-.5.5zm-2.5-2.5A2.5 2.5 0 0 0 16 22v-2a.5.5 0 0 1-.5-.5zM16 17a2.5 2.5 0 0 0-2.5 2.5h2a.5.5 0 0 1 .5-.5zm2.5 2.5A2.5 2.5 0 0 0 16 17v2a.5.5 0 0 1 .5.5zm3 0a.5.5 0 0 1-.5.5v2a2.5 2.5 0 0 0 2.5-2.5zM21 19a.5.5 0 0 1 .5.5h2A2.5 2.5 0 0 0 21 17zm-.5.5a.5.5 0 0 1 .5-.5v-2a2.5 2.5 0 0 0-2.5 2.5zm.5.5a.5.5 0 0 1-.5-.5h-2A2.5 2.5 0 0 0 21 22z" mask="url(#quillCalendarMore0)"></svg:path></svg:g>`,
+})
+export class QuillCalendarMoreIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[quillCalendarSomedayIcon],svg[quill-calendar-someday-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor"><svg:path fill="currentColor" d="M16.75 23.75a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0Z"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 17.462a2 2 0 1 1 2 2V20.5M5 12h22m-6-4V4M11 8V4M7 28h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2"></svg:path></svg:g>`,
+})
+export class QuillCalendarSomedayIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[quillCatchupIcon],svg[quill-catchup-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 27H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6m0 14h2a2 2 0 0 0 2-2V15a2 2 0 0 0-2-2h-2m0 14V13M9 10h4m-4 7h10M9 21h6"></svg:path>`,
+})
+export class QuillCatchupIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -2290,108 +2392,6 @@ export class QuillWarningIcon {
   template: `<svg:g fill="none" stroke="currentColor"><svg:path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17.5v-8M29 16a13 13 0 1 1-26 0a13 13 0 0 1 26 0"></svg:path><svg:path fill="currentColor" d="M17 22a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z"></svg:path></svg:g>`,
 })
 export class QuillWarningAltIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[quillBreatherIcon],svg[quill-breather-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M25.192 25.192A13 13 0 1 0 6.808 6.808a13 13 0 0 0 18.384 18.384"></svg:path>`,
-})
-export class QuillBreatherIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[quillAtIcon],svg[quill-at-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m23.363 5.286l.567-.824zm-9.228-2.151l.143.99zM5.897 7.819l-.777-.63zm-2.87 9.031l-.997.066zm22.34 9.554a1 1 0 1 0-1.337-1.486zM22 10.5a1 1 0 1 0-2 0zm-.744 9.896l.8-.6zM24.5 22v1zM20 16a5 5 0 0 1-5 5v2a7 7 0 0 0 7-7zm-5 5a5 5 0 0 1-5-5H8a7 7 0 0 0 7 7zm-5-5a5 5 0 0 1 5-5V9a7 7 0 0 0-7 7zm5-5a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7zm14.657 1.919c-.735-3.386-2.827-6.463-5.727-8.457l-1.133 1.649c2.491 1.712 4.281 4.356 4.905 7.232zM23.93 4.462a14 14 0 0 0-9.939-2.317l.287 1.98a12 12 0 0 1 8.519 1.986zm-9.94-2.317A14 14 0 0 0 5.12 7.19l1.554 1.258a12 12 0 0 1 7.604-4.324zM5.12 7.19a14 14 0 0 0-3.09 9.726l1.996-.131a12 12 0 0 1 2.648-8.337zm-3.09 9.726a14 14 0 0 0 4.333 9.24l1.377-1.451a12 12 0 0 1-3.714-7.92zm4.333 9.24a14 14 0 0 0 9.454 3.843l.026-2a12 12 0 0 1-8.103-3.294zm9.454 3.843a14 14 0 0 0 9.55-3.595l-1.337-1.486a12 12 0 0 1-8.187 3.081zM20 10.5v9.028h2V10.5zm.456 10.496c.54.72 1.823 2.004 4.044 2.004v-2a2.97 2.97 0 0 1-2.444-1.204zM20 19.528c0 .449.1.992.456 1.468l1.6-1.2c-.016-.022-.056-.096-.056-.268zM24.5 23c1.357 0 2.465-.44 3.314-1.2c.83-.744 1.354-1.737 1.673-2.764c.632-2.034.535-4.434.17-6.117l-1.955.424c.314 1.447.378 3.482-.125 5.1c-.248.8-.616 1.436-1.097 1.866c-.462.414-1.087.691-1.98.691z"></svg:path>`,
-})
-export class QuillAtIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[quillCalendarSomedayIcon],svg[quill-calendar-someday-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor"><svg:path fill="currentColor" d="M16.75 23.75a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0Z"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 17.462a2 2 0 1 1 2 2V20.5M5 12h22m-6-4V4M11 8V4M7 28h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2"></svg:path></svg:g>`,
-})
-export class QuillCalendarSomedayIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[quillCalendarAddIcon],svg[quill-calendar-add-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 23.5V20m0 0v-3.5m0 3.5h-3.5m3.5 0h3.5M5 12h22m-6-4V4M11 8V4M7 28h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2"></svg:path>`,
-})
-export class QuillCalendarAddIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[quillCatchupIcon],svg[quill-catchup-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 27H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6m0 14h2a2 2 0 0 0 2-2V15a2 2 0 0 0-2-2h-2m0 14V13M9 10h4m-4 7h10M9 21h6"></svg:path>`,
-})
-export class QuillCatchupIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[quillCalendarMoreIcon],svg[quill-calendar-more-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:mask id="quillCalendarMore0" fill="#fff"><svg:path fill-rule="evenodd" d="M12.5 19.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m5 0a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0M21 21a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" clip-rule="evenodd"></svg:path></svg:mask><svg:g fill="none"><svg:path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h22m-6-4V4M11 8V4M7 28h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M12.5 19.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m5 0a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0M21 21a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M11 22a2.5 2.5 0 0 0 2.5-2.5h-2a.5.5 0 0 1-.5.5zm-2.5-2.5A2.5 2.5 0 0 0 11 22v-2a.5.5 0 0 1-.5-.5zM11 17a2.5 2.5 0 0 0-2.5 2.5h2a.5.5 0 0 1 .5-.5zm2.5 2.5A2.5 2.5 0 0 0 11 17v2a.5.5 0 0 1 .5.5zM16 22a2.5 2.5 0 0 0 2.5-2.5h-2a.5.5 0 0 1-.5.5zm-2.5-2.5A2.5 2.5 0 0 0 16 22v-2a.5.5 0 0 1-.5-.5zM16 17a2.5 2.5 0 0 0-2.5 2.5h2a.5.5 0 0 1 .5-.5zm2.5 2.5A2.5 2.5 0 0 0 16 17v2a.5.5 0 0 1 .5.5zm3 0a.5.5 0 0 1-.5.5v2a2.5 2.5 0 0 0 2.5-2.5zM21 19a.5.5 0 0 1 .5.5h2A2.5 2.5 0 0 0 21 17zm-.5.5a.5.5 0 0 1 .5-.5v-2a2.5 2.5 0 0 0-2.5 2.5zm.5.5a.5.5 0 0 1-.5-.5h-2A2.5 2.5 0 0 0 21 22z" mask="url(#quillCalendarMore0)"></svg:path></svg:g>`,
-})
-export class QuillCalendarMoreIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

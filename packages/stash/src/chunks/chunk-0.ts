@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[stashAngleDownIcon],svg[stash-angle-down-icon]',
+  selector: 'svg[stashAirplaneIcon],svg[stash-airplane-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M8.964 10.164a.9.9 0 0 1 1.273 0L12 11.927l1.764-1.763a.9.9 0 0 1 1.273 1.272l-2.4 2.4a.9.9 0 0 1-1.273 0l-2.4-2.4a.9.9 0 0 1 0-1.272"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M20.633 2.276c.224.035.51.125.738.353c.229.229.318.514.353.738c.037.23.03.473.005.7c-.052.458-.195.976-.376 1.474c-.354.972-.93 2.07-1.506 2.646l-.015.015l-1.688 1.595l2.02 5.334a1.8 1.8 0 0 1-.354 1.93l-1.397 1.48a.757.757 0 0 1-1.16-.083l-3.303-4.696l-.912.863c-.52.519-1.028.995-1.522 1.354c-.224.163-.46.313-.707.433l.844 2.138c.26.66.07 1.393-.396 1.886l-1.022 1.08a.757.757 0 0 1-1.13-.047l-2.922-3.652l-3.651-2.922a.757.757 0 0 1-.047-1.13l1.08-1.021c.492-.466 1.226-.658 1.885-.397l2.139.845c.12-.248.27-.484.432-.708c.359-.494.835-1.002 1.355-1.522l.862-.912l-4.696-3.304a.757.757 0 0 1-.083-1.159l1.48-1.397a1.8 1.8 0 0 1 1.93-.353l5.334 2.019l1.595-1.688l.015-.015C16.39 3.576 17.487 3 18.46 2.647c.498-.181 1.016-.324 1.474-.376c.227-.025.47-.032.7.005M16.88 5.207l-1.93 2.042a.75.75 0 0 1-.811.187L8.325 5.235l-.03-.012a.3.3 0 0 0-.326.057l-.813.768l4.654 3.274c.368.26.423.801.113 1.129L10.458 12l-.014.014c-.513.513-.922.954-1.21 1.35c-.291.403-.406.688-.425.891a.757.757 0 0 1-1.022.627l-2.888-1.141c-.262-.104-.6.371-.757.52l3.043 2.436a1 1 0 0 1 .118.117l2.435 3.043c.149-.157.624-.495.52-.757l-1.14-2.887a.757.757 0 0 1 .626-1.023c.203-.019.488-.134.89-.426c.397-.287.838-.696 1.35-1.209l.016-.014l1.55-1.465a.758.758 0 0 1 1.128.113l3.274 4.654l.768-.813a.3.3 0 0 0 .058-.325l-.013-.03l-2.2-5.815a.75.75 0 0 1 .186-.81l2.042-1.931c.347-.351.826-1.2 1.15-2.092c.148-.405.292-.842.306-1.277c-.435.014-.872.158-1.277.306c-.891.324-1.74.803-2.092 1.15" clip-rule="evenodd"></svg:path>`,
 })
-export class StashAngleDownIcon {
+export class StashAirplaneIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,16 +36,16 @@ export class StashAirplaneDuotoneIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[stashAngleDownDuotoneIcon],svg[stash-angle-down-duotone-icon]',
+  selector: 'svg[stashAirplaneLightIcon],svg[stash-airplane-light-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M8.964 10.164a.9.9 0 0 1 1.273 0L12 11.927l1.764-1.763a.9.9 0 0 1 1.273 1.272l-2.4 2.4a.9.9 0 0 1-1.273 0l-2.4-2.4a.9.9 0 0 1 0-1.272"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M21.194 2.806c.319.318.334.814.286 1.233c-.049.431-.185.929-.362 1.417c-.35.96-.91 2.016-1.448 2.554l-.01.01l-1.809 1.71l2.08 5.494a1.55 1.55 0 0 1-.303 1.665l-1.397 1.48a.505.505 0 0 1-.773-.055l-3.47-4.932l-1.125 1.063c-.519.52-1.016.984-1.494 1.332a4 4 0 0 1-.882.503l.933 2.361c.221.56.062 1.193-.345 1.623l-1.022 1.08a.517.517 0 0 1-.753-.032L6.36 17.64L2.688 14.7a.516.516 0 0 1-.03-.753l1.079-1.022c.43-.407 1.063-.567 1.622-.346l2.362.933c.12-.303.297-.597.503-.881c.347-.478.813-.976 1.332-1.495l1.063-1.124l-4.932-3.47a.505.505 0 0 1-.056-.773l1.48-1.398c.447-.421 1.1-.54 1.666-.302l5.494 2.08l1.72-1.82c.538-.538 1.594-1.098 2.554-1.447c.488-.177.986-.313 1.416-.362c.42-.048.915-.033 1.234.286m-4.493 2.226l-1.934 2.046a.5.5 0 0 1-.54.124L8.413 5l-.02-.008a.55.55 0 0 0-.596.106l-1.035.977l4.904 3.45a.517.517 0 0 1 .075.753l-1.474 1.56c-.515.514-.935.967-1.235 1.38c-.303.416-.447.746-.472 1.014a.505.505 0 0 1-.682.417l-2.887-1.14c-.468-.185-.944.497-1.23.768l3.268 2.615q.044.035.078.078l2.615 3.268c.27-.287.953-.763.768-1.23l-1.14-2.887a.505.505 0 0 1 .417-.682c.268-.025.597-.17 1.015-.473c.412-.3.865-.72 1.38-1.234l.01-.01l1.549-1.465a.516.516 0 0 1 .752.076l3.45 4.904l.978-1.035a.55.55 0 0 0 .098-.616l-2.201-5.814a.5.5 0 0 1 .124-.54l2.046-1.935c.384-.387.88-1.279 1.21-2.184c.168-.462.393-1.044.312-1.55c-.006-.039-.016-.048-.055-.054c-.505-.081-1.087.144-1.549.312c-.906.33-1.797.826-2.185 1.21" clip-rule="evenodd"></svg:path>`,
 })
-export class StashAngleDownDuotoneIcon {
+export class StashAirplaneLightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,16 +70,16 @@ export class StashAirplaneSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[stashAngleLeftDuotoneIcon],svg[stash-angle-left-duotone-icon]',
+  selector: 'svg[stashAngleDownDuotoneIcon],svg[stash-angle-down-duotone-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13.836 8.964a.9.9 0 0 1 0 1.272L12.073 12l1.763 1.764a.9.9 0 1 1-1.273 1.272l-2.4-2.4a.9.9 0 0 1 0-1.272l2.4-2.4a.9.9 0 0 1 1.273 0"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M8.964 10.164a.9.9 0 0 1 1.273 0L12 11.927l1.764-1.763a.9.9 0 0 1 1.273 1.272l-2.4 2.4a.9.9 0 0 1-1.273 0l-2.4-2.4a.9.9 0 0 1 0-1.272"></svg:path>`,
 })
-export class StashAngleLeftDuotoneIcon {
+export class StashAngleDownDuotoneIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,33 +87,16 @@ export class StashAngleLeftDuotoneIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[stashAirplaneIcon],svg[stash-airplane-icon]',
+  selector: 'svg[stashAngleDownIcon],svg[stash-angle-down-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M20.633 2.276c.224.035.51.125.738.353c.229.229.318.514.353.738c.037.23.03.473.005.7c-.052.458-.195.976-.376 1.474c-.354.972-.93 2.07-1.506 2.646l-.015.015l-1.688 1.595l2.02 5.334a1.8 1.8 0 0 1-.354 1.93l-1.397 1.48a.757.757 0 0 1-1.16-.083l-3.303-4.696l-.912.863c-.52.519-1.028.995-1.522 1.354c-.224.163-.46.313-.707.433l.844 2.138c.26.66.07 1.393-.396 1.886l-1.022 1.08a.757.757 0 0 1-1.13-.047l-2.922-3.652l-3.651-2.922a.757.757 0 0 1-.047-1.13l1.08-1.021c.492-.466 1.226-.658 1.885-.397l2.139.845c.12-.248.27-.484.432-.708c.359-.494.835-1.002 1.355-1.522l.862-.912l-4.696-3.304a.757.757 0 0 1-.083-1.159l1.48-1.397a1.8 1.8 0 0 1 1.93-.353l5.334 2.019l1.595-1.688l.015-.015C16.39 3.576 17.487 3 18.46 2.647c.498-.181 1.016-.324 1.474-.376c.227-.025.47-.032.7.005M16.88 5.207l-1.93 2.042a.75.75 0 0 1-.811.187L8.325 5.235l-.03-.012a.3.3 0 0 0-.326.057l-.813.768l4.654 3.274c.368.26.423.801.113 1.129L10.458 12l-.014.014c-.513.513-.922.954-1.21 1.35c-.291.403-.406.688-.425.891a.757.757 0 0 1-1.022.627l-2.888-1.141c-.262-.104-.6.371-.757.52l3.043 2.436a1 1 0 0 1 .118.117l2.435 3.043c.149-.157.624-.495.52-.757l-1.14-2.887a.757.757 0 0 1 .626-1.023c.203-.019.488-.134.89-.426c.397-.287.838-.696 1.35-1.209l.016-.014l1.55-1.465a.758.758 0 0 1 1.128.113l3.274 4.654l.768-.813a.3.3 0 0 0 .058-.325l-.013-.03l-2.2-5.815a.75.75 0 0 1 .186-.81l2.042-1.931c.347-.351.826-1.2 1.15-2.092c.148-.405.292-.842.306-1.277c-.435.014-.872.158-1.277.306c-.891.324-1.74.803-2.092 1.15" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M8.964 10.164a.9.9 0 0 1 1.273 0L12 11.927l1.764-1.763a.9.9 0 0 1 1.273 1.272l-2.4 2.4a.9.9 0 0 1-1.273 0l-2.4-2.4a.9.9 0 0 1 0-1.272"></svg:path>`,
 })
-export class StashAirplaneIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[stashAirplaneLightIcon],svg[stash-airplane-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M21.194 2.806c.319.318.334.814.286 1.233c-.049.431-.185.929-.362 1.417c-.35.96-.91 2.016-1.448 2.554l-.01.01l-1.809 1.71l2.08 5.494a1.55 1.55 0 0 1-.303 1.665l-1.397 1.48a.505.505 0 0 1-.773-.055l-3.47-4.932l-1.125 1.063c-.519.52-1.016.984-1.494 1.332a4 4 0 0 1-.882.503l.933 2.361c.221.56.062 1.193-.345 1.623l-1.022 1.08a.517.517 0 0 1-.753-.032L6.36 17.64L2.688 14.7a.516.516 0 0 1-.03-.753l1.079-1.022c.43-.407 1.063-.567 1.622-.346l2.362.933c.12-.303.297-.597.503-.881c.347-.478.813-.976 1.332-1.495l1.063-1.124l-4.932-3.47a.505.505 0 0 1-.056-.773l1.48-1.398c.447-.421 1.1-.54 1.666-.302l5.494 2.08l1.72-1.82c.538-.538 1.594-1.098 2.554-1.447c.488-.177.986-.313 1.416-.362c.42-.048.915-.033 1.234.286m-4.493 2.226l-1.934 2.046a.5.5 0 0 1-.54.124L8.413 5l-.02-.008a.55.55 0 0 0-.596.106l-1.035.977l4.904 3.45a.517.517 0 0 1 .075.753l-1.474 1.56c-.515.514-.935.967-1.235 1.38c-.303.416-.447.746-.472 1.014a.505.505 0 0 1-.682.417l-2.887-1.14c-.468-.185-.944.497-1.23.768l3.268 2.615q.044.035.078.078l2.615 3.268c.27-.287.953-.763.768-1.23l-1.14-2.887a.505.505 0 0 1 .417-.682c.268-.025.597-.17 1.015-.473c.412-.3.865-.72 1.38-1.234l.01-.01l1.549-1.465a.516.516 0 0 1 .752.076l3.45 4.904l.978-1.035a.55.55 0 0 0 .098-.616l-2.201-5.814a.5.5 0 0 1 .124-.54l2.046-1.935c.384-.387.88-1.279 1.21-2.184c.168-.462.393-1.044.312-1.55c-.006-.039-.016-.048-.055-.054c-.505-.081-1.087.144-1.549.312c-.906.33-1.797.826-2.185 1.21" clip-rule="evenodd"></svg:path>`,
-})
-export class StashAirplaneLightIcon {
+export class StashAngleDownIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,40 +121,6 @@ export class StashAngleDownLightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[stashAngleRightDuotoneIcon],svg[stash-angle-right-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.164 8.964a.9.9 0 0 1 1.272 0l2.4 2.4a.9.9 0 0 1 0 1.272l-2.4 2.4a.9.9 0 1 1-1.272-1.272L11.927 12l-1.763-1.764a.9.9 0 0 1 0-1.272"></svg:path>`,
-})
-export class StashAngleRightDuotoneIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[stashAngleRightLightIcon],svg[stash-angle-right-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.376 9.176a.6.6 0 0 1 .849 0l2.4 2.4a.6.6 0 0 1 0 .848l-2.4 2.4a.6.6 0 0 1-.85-.848L12.353 12l-1.976-1.976a.6.6 0 0 1 0-.848"></svg:path>`,
-})
-export class StashAngleRightLightIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[stashAngleLeftIcon],svg[stash-angle-left-icon]',
   host: {
     role: 'img',
@@ -189,50 +138,16 @@ export class StashAngleLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[stashAngleRightIcon],svg[stash-angle-right-icon]',
+  selector: 'svg[stashAngleLeftDuotoneIcon],svg[stash-angle-left-duotone-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M10.164 8.964a.9.9 0 0 1 1.272 0l2.4 2.4a.9.9 0 0 1 0 1.272l-2.4 2.4a.9.9 0 1 1-1.272-1.272L11.927 12l-1.763-1.764a.9.9 0 0 1 0-1.272"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M13.836 8.964a.9.9 0 0 1 0 1.272L12.073 12l1.763 1.764a.9.9 0 1 1-1.273 1.272l-2.4-2.4a.9.9 0 0 1 0-1.272l2.4-2.4a.9.9 0 0 1 1.273 0"></svg:path>`,
 })
-export class StashAngleRightIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[stashArrowDownLargeIcon],svg[stash-arrow-down-large-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 1.25a.75.75 0 0 1 .75.75v18.25l5.733-5.46a.75.75 0 1 1 1.034 1.086l-7 6.667a.75.75 0 0 1-1.034 0l-7-6.667a.75.75 0 1 1 1.034-1.086l5.733 5.46V2a.75.75 0 0 1 .75-.75"></svg:path>`,
-})
-export class StashArrowDownLargeIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[stashAngleUpLightIcon],svg[stash-angle-up-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.576 10.376a.6.6 0 0 1 .848 0l2.4 2.4a.6.6 0 0 1-.848.848L12 11.648l-1.976 1.976a.6.6 0 0 1-.848-.848z"></svg:path>`,
-})
-export class StashAngleUpLightIcon {
+export class StashAngleLeftDuotoneIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,6 +172,40 @@ export class StashAngleLeftLightIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[stashAngleRightIcon],svg[stash-angle-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.164 8.964a.9.9 0 0 1 1.272 0l2.4 2.4a.9.9 0 0 1 0 1.272l-2.4 2.4a.9.9 0 1 1-1.272-1.272L11.927 12l-1.763-1.764a.9.9 0 0 1 0-1.272"></svg:path>`,
+})
+export class StashAngleRightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[stashAngleRightDuotoneIcon],svg[stash-angle-right-duotone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.164 8.964a.9.9 0 0 1 1.272 0l2.4 2.4a.9.9 0 0 1 0 1.272l-2.4 2.4a.9.9 0 1 1-1.272-1.272L11.927 12l-1.763-1.764a.9.9 0 0 1 0-1.272"></svg:path>`,
+})
+export class StashAngleRightDuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[stashAngleUpIcon],svg[stash-angle-up-icon]',
   host: {
     role: 'img',
@@ -267,6 +216,23 @@ export class StashAngleLeftLightIcon {
   template: `<svg:path fill="currentColor" d="M11.364 10.164a.9.9 0 0 1 1.273 0l2.4 2.4a.9.9 0 1 1-1.273 1.272L12 12.073l-1.763 1.763a.9.9 0 1 1-1.273-1.272z"></svg:path>`,
 })
 export class StashAngleUpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[stashAngleRightLightIcon],svg[stash-angle-right-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.376 9.176a.6.6 0 0 1 .849 0l2.4 2.4a.6.6 0 0 1 0 .848l-2.4 2.4a.6.6 0 0 1-.85-.848L12.353 12l-1.976-1.976a.6.6 0 0 1 0-.848"></svg:path>`,
+})
+export class StashAngleRightLightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -308,6 +274,23 @@ export class StashArrowDownIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[stashAngleUpLightIcon],svg[stash-angle-up-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.576 10.376a.6.6 0 0 1 .848 0l2.4 2.4a.6.6 0 0 1-.848.848L12 11.648l-1.976 1.976a.6.6 0 0 1-.848-.848z"></svg:path>`,
+})
+export class StashAngleUpLightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[stashArrowDownDuotoneIcon],svg[stash-arrow-down-duotone-icon]',
   host: {
     role: 'img',
@@ -318,6 +301,23 @@ export class StashArrowDownIcon {
   template: `<svg:path fill="currentColor" d="M12 5.25a.75.75 0 0 1 .75.75v10.19l3.72-3.72a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 1 1 1.06-1.06l3.72 3.72V6a.75.75 0 0 1 .75-.75"></svg:path>`,
 })
 export class StashArrowDownDuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[stashArrowDownLargeIcon],svg[stash-arrow-down-large-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 1.25a.75.75 0 0 1 .75.75v18.25l5.733-5.46a.75.75 0 1 1 1.034 1.086l-7 6.667a.75.75 0 0 1-1.034 0l-7-6.667a.75.75 0 1 1 1.034-1.086l5.733 5.46V2a.75.75 0 0 1 .75-.75"></svg:path>`,
+})
+export class StashArrowDownLargeIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

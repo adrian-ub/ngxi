@@ -36,6 +36,23 @@ export class MaterialSymbolsLight10mpOutlineIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsLight11mpOutlineIcon],svg[material-symbols-light-11mp-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.616 11.192h.884V5.808H8.116v.884h1.5zm5 0h.884V5.808h-2.384v.884h1.5zm-8.308 7h.884v-4.5h1.616v3h.884v-3h1.616v4.5h.884V13.5q0-.31-.191-.501t-.501-.191H7q-.31 0-.501.191q-.191.192-.191.501zm7.5 0h.884v-1.5H17q.31 0 .501-.191t.191-.501v-2.5q0-.31-.191-.501q-.192-.191-.501-.191h-3.192zm.884-2.384v-2.116h2.116v2.116zM5.616 20q-.691 0-1.153-.462T4 18.384V5.616q0-.691.463-1.153T5.616 4h12.769q.69 0 1.153.463T20 5.616v12.769q0 .69-.462 1.153T18.384 20zm0-1h12.769q.23 0 .423-.192t.192-.424V5.616q0-.231-.192-.424T18.384 5H5.616q-.231 0-.424.192T5 5.616v12.769q0 .23.192.423t.423.192M5 5v14z"></svg:path>`,
+})
+export class MaterialSymbolsLight11mpOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsLight12mpOutlineIcon],svg[material-symbols-light-12mp-outline-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsLightCreateNewFolderOutlineIcon {
   template: `<svg:path fill="currentColor" d="M4 18v-7.692v.479V6zm0-9.192h16V6.616q0-.231-.192-.424T19.385 6H4.615q-.23 0-.423.192T4 6.616zM11.29 19H4.617q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v4.653q-.785-.471-1.662-.716t-1.804-.245q-.83 0-1.628.227t-1.498.657H4v6.193q0 .23.192.423t.423.192h6.421q.056.275.11.516q.054.24.144.484m8.116.26l.546-.546l-1.894-1.895v-2.742h-.77v3.065zm-1.727 2.029q-1.812 0-3.072-1.248q-1.26-1.249-1.26-3.06t1.26-3.07t3.072-1.257q1.806 0 3.054 1.26t1.248 3.067t-1.248 3.057t-3.054 1.25"></svg:path>`,
 })
 export class MaterialSymbolsLightCreditCardClockOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsLightCreditCardGearOutlineIcon],svg[material-symbols-light-credit-card-gear-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 18v-7.692v.479V6zm0-9.192h16V6.616q0-.231-.192-.424T19.385 6H4.615q-.23 0-.423.192T4 6.616zM11.267 19H4.616q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v4.67q-.76-.47-1.634-.724t-1.832-.254q-.867 0-1.668.23t-1.482.654H4v6.193q0 .23.192.423t.423.192h6.398q.056.275.11.516q.054.24.144.484m5.768 1.808l-.108-.885q-.473-.106-.89-.32q-.416-.215-.748-.587l-.835.334l-.539-.815l.689-.577q-.165-.517-.165-1.035t.165-1.034l-.688-.577l.538-.816l.834.335q.314-.373.74-.588t.899-.32l.108-.884h1l.107.884q.474.106.9.32q.425.215.739.588l.835-.335l.538.816l-.688.577q.165.517.165 1.034q0 .518-.165 1.035l.688.577l-.538.815l-.835-.334q-.333.373-.75.587q-.415.214-.889.32l-.107.885zm.5-1.731q.902 0 1.528-.626t.626-1.528t-.626-1.528t-1.528-.626t-1.528.626t-.626 1.528t.626 1.528t1.527.626"></svg:path>`,
-})
-export class MaterialSymbolsLightCreditCardGearOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

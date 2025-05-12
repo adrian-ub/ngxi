@@ -19,16 +19,16 @@ export class CatppuccinAdobeAeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[catppuccinAdonisIcon],svg[catppuccin-adonis-icon]',
+  selector: 'svg[catppuccinAdobeXdIcon],svg[catppuccin-adobe-xd-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="#b7bdf8" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M8 1.5c5.2 0 6.5 1.3 6.5 6.5s-1.3 6.5-6.5 6.5S1.5 13.2 1.5 8S2.8 1.5 8 1.5"></svg:path><svg:path d="M8 10.89c1.08 0 1.44.36 2.27.66a1 1 0 0 0 1.28-.55a.87.87 0 0 0-.03-.71l-2.68-5.4a.96.96 0 0 0-1.68 0l-2.68 5.4c-.23.47-.01 1.02.5 1.24c.23.1.5.12.75.02c.83-.3 1.19-.66 2.27-.66"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="#f5bde6" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M14.5 4.389v7.222a2.89 2.89 0 0 1-2.889 2.889H4.39a2.89 2.89 0 0 1-2.89-2.889V4.39A2.89 2.89 0 0 1 4.389 1.5h7.222A2.89 2.89 0 0 1 14.5 4.389M4.483 5l3.024 6m-3.024 0l3.024-6"></svg:path><svg:path d="M11.501 8.143v2.428a.375.429 0 0 1-.375.429h-.875A1.25 1.429 0 0 1 9 9.571v0a1.25 1.429 0 0 1 1.25-1.428zm0 0V6"></svg:path></svg:g>`,
 })
-export class CatppuccinAdonisIcon {
+export class CatppuccinAdobeXdIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,16 +70,50 @@ export class CatppuccinAdobeAiIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[catppuccinAdobeXdIcon],svg[catppuccin-adobe-xd-icon]',
+  selector: 'svg[catppuccinAdobePsIcon],svg[catppuccin-adobe-ps-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="#f5bde6" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M14.5 4.389v7.222a2.89 2.89 0 0 1-2.889 2.889H4.39a2.89 2.89 0 0 1-2.89-2.889V4.39A2.89 2.89 0 0 1 4.389 1.5h7.222A2.89 2.89 0 0 1 14.5 4.389M4.483 5l3.024 6m-3.024 0l3.024-6"></svg:path><svg:path d="M11.501 8.143v2.428a.375.429 0 0 1-.375.429h-.875A1.25 1.429 0 0 1 9 9.571v0a1.25 1.429 0 0 1 1.25-1.428zm0 0V6"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="#8aadf4" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M14.5 4.389v7.222a2.89 2.89 0 0 1-2.889 2.889H4.39a2.89 2.89 0 0 1-2.89-2.889V4.39A2.89 2.89 0 0 1 4.389 1.5h7.222A2.89 2.89 0 0 1 14.5 4.389"></svg:path><svg:path d="M4.5 11V8m0 0V5h1.4a1.4 1.5 0 0 1 1.4 1.5v0A1.4 1.5 0 0 1 5.9 8Zm7-.75c-.214-.46-.653-.75-1.133-.75H10.1a1.05 1.125 0 0 0-1.05 1.125v0A1.05 1.125 0 0 0 10.1 8.75h.35a1.05 1.125 0 0 1 1.05 1.125v0A1.05 1.125 0 0 1 10.45 11h-.267a1.266 1.357 0 0 1-1.133-.75v0"></svg:path></svg:g>`,
 })
-export class CatppuccinAdobeXdIcon {
+export class CatppuccinAdobePsIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[catppuccinAdonisIcon],svg[catppuccin-adonis-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#b7bdf8" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M8 1.5c5.2 0 6.5 1.3 6.5 6.5s-1.3 6.5-6.5 6.5S1.5 13.2 1.5 8S2.8 1.5 8 1.5"></svg:path><svg:path d="M8 10.89c1.08 0 1.44.36 2.27.66a1 1 0 0 0 1.28-.55a.87.87 0 0 0-.03-.71l-2.68-5.4a.96.96 0 0 0-1.68 0l-2.68 5.4c-.23.47-.01 1.02.5 1.24c.23.1.5.12.75.02c.83-.3 1.19-.66 2.27-.66"></svg:path></svg:g>`,
+})
+export class CatppuccinAdonisIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[catppuccinAlexIcon],svg[catppuccin-alex-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#c6a0f6" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M3.5 1.5h9a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2"></svg:path><svg:path d="M5.5 12.5h5m-5-2h5m-3.75-7H8c.79 0 1.5.71 1.5 1.5v3.5h-2c-.79 0-1-1-1-1.5s.21-1.5 1-1.5h2"></svg:path></svg:g>`,
+})
+export class CatppuccinAlexIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,40 +155,6 @@ export class CatppuccinAndroidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[catppuccinAngularComponentIcon],svg[catppuccin-angular-component-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#8aadf4" d="m8 1l6.5 2l-1 9.5L8 15l-5.5-2.5l-1-9.5z"></svg:path><svg:path stroke="#cad3f5" d="m4.5 10.5l3.5-7l3.5 7m-5.796-2h4.635"></svg:path></svg:g>`,
-})
-export class CatppuccinAngularComponentIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[catppuccinAngularGuardIcon],svg[catppuccin-angular-guard-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#a6da95" d="m8 1l6.5 2l-1 9.5L8 15l-5.5-2.5l-1-9.5z"></svg:path><svg:path stroke="#cad3f5" d="m4.5 10.5l3.5-7l3.5 7m-5.796-2h4.635"></svg:path></svg:g>`,
-})
-export class CatppuccinAngularGuardIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[catppuccinAngularIcon],svg[catppuccin-angular-icon]',
   host: {
     role: 'img',
@@ -165,6 +165,23 @@ export class CatppuccinAngularGuardIcon {
   template: `<svg:g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#ed8796" d="m8 1l6.5 2l-1 9.5L8 15l-5.5-2.5l-1-9.5z"></svg:path><svg:path stroke="#cad3f5" d="m4.5 10.5l3.5-7l3.5 7m-5.796-2h4.635"></svg:path></svg:g>`,
 })
 export class CatppuccinAngularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[catppuccinAngularComponentIcon],svg[catppuccin-angular-component-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#8aadf4" d="m8 1l6.5 2l-1 9.5L8 15l-5.5-2.5l-1-9.5z"></svg:path><svg:path stroke="#cad3f5" d="m4.5 10.5l3.5-7l3.5 7m-5.796-2h4.635"></svg:path></svg:g>`,
+})
+export class CatppuccinAngularComponentIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,6 +206,23 @@ export class CatppuccinAngularDirectiveIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[catppuccinAngularGuardIcon],svg[catppuccin-angular-guard-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#a6da95" d="m8 1l6.5 2l-1 9.5L8 15l-5.5-2.5l-1-9.5z"></svg:path><svg:path stroke="#cad3f5" d="m4.5 10.5l3.5-7l3.5 7m-5.796-2h4.635"></svg:path></svg:g>`,
+})
+export class CatppuccinAngularGuardIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[catppuccinAngularPipeIcon],svg[catppuccin-angular-pipe-icon]',
   host: {
     role: 'img',
@@ -206,16 +240,33 @@ export class CatppuccinAngularPipeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[catppuccinAdobePsIcon],svg[catppuccin-adobe-ps-icon]',
+  selector: 'svg[catppuccinAngularServiceIcon],svg[catppuccin-angular-service-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="#8aadf4" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M14.5 4.389v7.222a2.89 2.89 0 0 1-2.889 2.889H4.39a2.89 2.89 0 0 1-2.89-2.889V4.39A2.89 2.89 0 0 1 4.389 1.5h7.222A2.89 2.89 0 0 1 14.5 4.389"></svg:path><svg:path d="M4.5 11V8m0 0V5h1.4a1.4 1.5 0 0 1 1.4 1.5v0A1.4 1.5 0 0 1 5.9 8Zm7-.75c-.214-.46-.653-.75-1.133-.75H10.1a1.05 1.125 0 0 0-1.05 1.125v0A1.05 1.125 0 0 0 10.1 8.75h.35a1.05 1.125 0 0 1 1.05 1.125v0A1.05 1.125 0 0 1 10.45 11h-.267a1.266 1.357 0 0 1-1.133-.75v0"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#eed49f" d="m8 1l6.5 2l-1 9.5L8 15l-5.5-2.5l-1-9.5z"></svg:path><svg:path stroke="#cad3f5" d="m4.5 10.5l3.5-7l3.5 7m-5.796-2h4.635"></svg:path></svg:g>`,
 })
-export class CatppuccinAdobePsIcon {
+export class CatppuccinAngularServiceIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[catppuccinAnsibleLintIcon],svg[catppuccin-ansible-lint-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="#cad3f5" stroke-linecap="round" stroke-linejoin="round" d="M3.75 10.25L7 2.75l3.25 7.5L5.5 6.5m7.868 1.81A6.5 6.5 0 1 0 7 13.5"></svg:path><svg:path fill="none" stroke="#a6da95" stroke-linecap="round" stroke-linejoin="round" d="m8 11.9l2.5 3.6l4.5-6"></svg:path>`,
+})
+export class CatppuccinAnsibleLintIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,16 +291,33 @@ export class CatppuccinAntlrIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[catppuccinAlexIcon],svg[catppuccin-alex-icon]',
+  selector: 'svg[catppuccinApacheIcon],svg[catppuccin-apache-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="#c6a0f6" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M3.5 1.5h9a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2"></svg:path><svg:path d="M5.5 12.5h5m-5-2h5m-3.75-7H8c.79 0 1.5.71 1.5 1.5v3.5h-2c-.79 0-1-1-1-1.5s.21-1.5 1-1.5h2"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#ed8796" d="M2.5 14.5a24.3 24.3 0 0 1 1.63-4.36c.21-.42.45-.84.7-1.26c2.75-4.61 6.63-6.8 8.67-7.38c-.8 3.52-3.91 10.46-10.15 10.4"></svg:path><svg:path stroke="#f5a97f" d="M6.14 6.96C8.7 3.64 11.76 1.99 13.5 1.5a18.5 18.5 0 0 1-2.27 5.46"></svg:path><svg:path stroke="#ed8796" d="M6.5 9.5h-2m1.25-2h2.71"></svg:path></svg:g>`,
 })
-export class CatppuccinAlexIcon {
+export class CatppuccinApacheIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[catppuccinApiBlueprintIcon],svg[catppuccin-api-blueprint-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="#8aadf4" stroke-linecap="round" stroke-linejoin="round" d="M5.5 12.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0m9 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-4.5-9a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-6.5 7l3-5.5m3 0l3 5.5"></svg:path>`,
+})
+export class CatppuccinApiBlueprintIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8427,74 +8495,6 @@ export class CatppuccinStorybookSvelteIcon {
   template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#cad3f5" d="M6.5 10.1c.45 1.05 1.23 1.4 2.46 1.4h-.21c1.35 0 2.25-.68 2.25-1.7c0-.84-.62-1.26-1.61-1.64L7.91 7.6c-.86-.33-1.41-1-1.41-1.73c0-.68.78-1.26 1.67-1.33l.36-.03c1.14-.1 2.24.53 2.47 1.39"></svg:path><svg:path stroke="#a6da95" d="M3.5 2.5L4 14l9.5.5v-13zm8-.75v1.5"></svg:path></svg:g>`,
 })
 export class CatppuccinStorybookVueIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[catppuccinStylelintIcon],svg[catppuccin-stylelint-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="#cad3f5" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M11.5 3.48L12 1.5h1.5l2 2l-1.5 1L15 6l-7 9.5l2.72-9.32M6.5 3.5l-2-1v4l2-1"></svg:path><svg:path d="m9.5 3.5l2-1v4l-2-1m-5-2.02L4 1.5H2.5l-2 2l1.5 1L1 6l7 9.5l-2.72-9.33M8.5 8a.5.5 0 0 1-.5.5a.5.5 0 0 1-.5-.5a.5.5 0 0 1 .5-.5a.5.5 0 0 1 .5.5"></svg:path><svg:path d="M6.5 3.5h3v2h-3z"></svg:path></svg:g>`,
-})
-export class CatppuccinStylelintIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[catppuccinStylelintIgnoreIcon],svg[catppuccin-stylelint-ignore-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="#8087a2" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M11.5 3.48L12 1.5h1.5l2 2l-1.5 1L15 6l-7 9.5l2.72-9.32M6.5 3.5l-2-1v4l2-1"></svg:path><svg:path d="m9.5 3.5l2-1v4l-2-1m-5-2.02L4 1.5H2.5l-2 2l1.5 1L1 6l7 9.5l-2.72-9.33M8.5 8a.5.5 0 0 1-.5.5a.5.5 0 0 1-.5-.5a.5.5 0 0 1 .5-.5a.5.5 0 0 1 .5.5"></svg:path><svg:path d="M6.5 3.5h3v2h-3z"></svg:path></svg:g>`,
-})
-export class CatppuccinStylelintIgnoreIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[catppuccinSublimeIcon],svg[catppuccin-sublime-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="#f5a97f" stroke-linecap="round" stroke-linejoin="round" d="m13.5 11.5l-11 3v-3l6.29-1.71M2.5 4.5l11-3v3L7.21 6.21m6.29 5.29v-3l-11-4v3z"></svg:path>`,
-})
-export class CatppuccinSublimeIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[catppuccinSuperColliderIcon],svg[catppuccin-super-collider-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="#cad3f5" stroke-linecap="round" stroke-linejoin="round" d="M1.5 4.616v6.952l5.116 2.781V7.481L3.138 5.638V9.91l1.89.971V9.122l-.455-.217m3.85 5.595V7.698L14.5 5.822v6.785l-4.086 1.24V9.524l2.161-.57v1.76l-.574.1m2.195-6.55L8.794 1.5L2.496 3.31l4.998 2.646l4.423-1.223l-3.275-1.759l-2.28.704l1.25.754l.692-.218"></svg:path>`,
-})
-export class CatppuccinSuperColliderIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

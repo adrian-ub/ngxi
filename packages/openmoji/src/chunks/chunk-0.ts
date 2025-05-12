@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[openmoji2ndPlaceMedalIcon],svg[openmoji-2nd-place-medal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#9b9b9a" d="M28.057 22.427V17h15.858v5.427"></svg:path><svg:path fill="#92d3f5" stroke="#92d3f5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.8" d="M54.999 4.022L43 16.021h-7l-5.042-5.042l6.963-6.962h17.078"></svg:path><svg:path fill="#ea5a47" stroke="#ea5a47" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.8" d="M23.983 4.004L36 16.021h-7L16.968 3.988h7.015"></svg:path><svg:circle cx="36" cy="44.975" r="23" fill="#9b9b9a"></svg:circle><svg:g fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"><svg:circle cx="36" cy="44.975" r="23"></svg:circle><svg:circle cx="36" cy="44.975" r="23" stroke-linecap="round" stroke-linejoin="round"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M29 19v-2.979M43 19v-2.979m-14 0h14M25.99 13.01l-9.022-9.022M31.99 12.01l-8.007-8.006M34 8l3.921-3.983M46 13l8.999-8.978m-38.031-.034h7.015m13.938.029h17.078m-26.677 34.36A7.99 7.99 0 0 1 36.146 32h0c2.205 0 4.202.894 5.647 2.34c2.248 2.248 2.04 5.983-.069 8.362L28.16 58h15.972"></svg:path></svg:g>`,
-})
-export class Openmoji2ndPlaceMedalIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[openmoji1stPlaceMedalIcon],svg[openmoji-1st-place-medal-icon]',
   host: {
     role: 'img',
@@ -36,16 +19,50 @@ export class Openmoji1stPlaceMedalIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[openmojiAddContactIcon],svg[openmoji-add-contact-icon]',
+  selector: 'svg[openmoji3rdPlaceMedalIcon],svg[openmoji-3rd-place-medal-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#D0CFCE" d="M32 50.08H21.92V40h-3.84v10.08H8v3.84h10.08V64h3.84V53.92H32z"></svg:path><svg:path fill="#92D3F5" d="M61.395 57a.96.96 0 0 1-.962-.962v-.885c0-4.282-4.324-7.512-8.321-7.687c-5.969 4.82-12.015 4.82-17.983 0c-3.997.175-8.321 3.405-8.321 7.687V57"></svg:path><svg:path fill="#F1B31C" d="M57.83 46.215a.96.96 0 0 1 0-1.36c1.762-1.763 3.411-6.224 1.557-10.624a116 116 0 0 0-1.114-2.532c-1.416-3.145-1.945-4.322-2.258-10.122c-.342-6.35-5.987-6.806-6.227-6.823a.96.96 0 0 1-.662-.33c-.09-.1-2.317-2.553-6.967-2.553c-5.965 0-11.005 3.253-12.257 7.912c-.675 2.512-.608 4.255-.543 5.94c.07 1.802.136 3.505-.732 5.733c-.289.744-.612 1.476-.933 2.206c-1.642 3.722-3.06 6.936-.124 11.34a.962.962 0 0 1-.8 1.495a1 1 0 0 1-.413-.102a29 29 0 0 0 3.275 2.523c1.371-.86 2.957-1.385 4.497-1.452c5.968 4.82 12.014 4.82 17.983 0c1.18.051 2.388.376 3.506.91a50 50 0 0 0 3.23-1.945a.96.96 0 0 1-1.018-.216"></svg:path><svg:path fill="#FCEA2B" d="M33.502 29.27v.876c0 7.01 4.225 12.503 9.618 12.503s9.619-5.492 9.619-12.503c0-4.265-1.63-6.888-4.843-10.205c-2.054 1.756-5.319 3.62-8.238 5.288c-2.426 1.384-5.733 3.273-6.156 4.04m-.02.039"></svg:path><svg:path d="M26.77 46.496a.96.96 0 0 1-.8-.428c-3.521-5.28-1.67-9.478-.036-13.182c.31-.705.622-1.41.9-2.128c.724-1.856.668-3.295.603-4.961c-.067-1.743-.144-3.719.607-6.514c1.478-5.497 7.282-9.336 14.115-9.336c4.65 0 7.325 2.15 8.149 2.938c1.555.246 7.253 1.623 7.628 8.588c.293 5.442.71 6.368 2.091 9.436c.325.72.699 1.551 1.132 2.573c2.325 5.517.026 10.738-1.97 12.733a.961.961 0 1 1-1.36-1.36c1.763-1.763 3.412-6.224 1.558-10.624a116 116 0 0 0-1.114-2.532c-1.416-3.145-1.945-4.321-2.258-10.122c-.341-6.35-5.987-6.806-6.227-6.823a.96.96 0 0 1-.662-.33c-.089-.1-2.317-2.553-6.967-2.553c-5.965 0-11.005 3.253-12.257 7.912c-.675 2.512-.608 4.255-.542 5.94c.07 1.802.135 3.505-.733 5.734a54 54 0 0 1-.933 2.205c-1.642 3.722-3.06 6.936-.124 11.34a.962.962 0 0 1-.8 1.494"></svg:path><svg:path d="M35.412 46.03c5.294 4.234 10.45 4.144 15.75-.272a.96.96 0 0 1 .615-.223c5.636.002 10.58 4.496 10.58 9.618v.885a.962.962 0 1 1-1.924 0v-.885c0-4.282-4.324-7.513-8.321-7.687c-5.968 4.82-12.014 4.82-17.983 0c0 0-.483-.55-.02-1.192c.465-.64 1.303-.245 1.303-.245m13.479-16.845a1.924 1.924 0 1 1-3.848-.002a1.924 1.924 0 0 1 3.848.002m-7.694 0a1.924 1.924 0 1 1-3.849-.002a1.924 1.924 0 0 1 3.849.002"></svg:path><svg:path d="M43.12 44.573c-6.472 0-11.541-6.337-11.541-14.427v-.962c0-1.494 2.184-2.804 7.125-5.626c3.181-1.816 6.787-3.875 8.545-5.634a.96.96 0 0 1 1.36 0c3.926 3.925 6.053 7.036 6.053 12.222c0 8.09-5.07 14.427-11.542 14.427m-9.618-15.304v.877c0 7.01 4.225 12.503 9.618 12.503s9.619-5.492 9.619-12.503c0-4.265-1.63-6.888-4.843-10.205c-2.054 1.756-5.319 3.62-8.238 5.288c-2.426 1.384-5.733 3.273-6.156 4.04m-.02.04"></svg:path><svg:path d="M43.12 38.804c-1.107 0-2.215-.275-3.315-.825a.962.962 0 1 1 .86-1.72c1.652.826 3.258.826 4.91 0a.962.962 0 0 1 .861 1.72q-1.652.825-3.316.825"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M32 50.08H21.92V40h-3.84v10.08H8v3.84h10.08V64h3.84V53.92H32z"></svg:path>`,
+  template: `<svg:path fill="#e27022" d="M28.028 22.427V17h15.944v5.427"></svg:path><svg:circle cx="36" cy="45.021" r="23" fill="#e27022"></svg:circle><svg:path fill="#92d3f5" stroke="#92d3f5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.8" d="M54.999 4.022L43 16.021h-7l-5.042-5.042l6.963-6.962h17.078"></svg:path><svg:path fill="#ea5a47" stroke="#ea5a47" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.8" d="M23.983 4.004L36 16.021h-7L16.968 3.988h7.015"></svg:path><svg:g fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"><svg:circle cx="36" cy="45.021" r="23"></svg:circle><svg:circle cx="36" cy="45.021" r="23" stroke-linecap="round" stroke-linejoin="round"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M29 19v-2.979M43 19v-2.979m-14 0h14M25.99 13.01l-9.022-9.022M31.99 12.01l-8.007-8.006M34 8l3.921-3.983M46 13l8.999-8.978m-38.031-.034h7.015m13.938.029h17.078M28.833 52.81c.684 2.962 3.64 5.19 7.182 5.19h0c4.05 0 7.332-2.91 7.332-6.5S40.065 45 36.015 45c4.05 0 7.332-2.91 7.332-6.5S40.065 32 36.015 32h0c-3.543 0-6.499 2.228-7.182 5.19"></svg:path></svg:g>`,
 })
-export class OpenmojiAddContactIcon {
+export class Openmoji3rdPlaceMedalIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmoji2ndPlaceMedalIcon],svg[openmoji-2nd-place-medal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#9b9b9a" d="M28.057 22.427V17h15.858v5.427"></svg:path><svg:path fill="#92d3f5" stroke="#92d3f5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.8" d="M54.999 4.022L43 16.021h-7l-5.042-5.042l6.963-6.962h17.078"></svg:path><svg:path fill="#ea5a47" stroke="#ea5a47" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.8" d="M23.983 4.004L36 16.021h-7L16.968 3.988h7.015"></svg:path><svg:circle cx="36" cy="44.975" r="23" fill="#9b9b9a"></svg:circle><svg:g fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"><svg:circle cx="36" cy="44.975" r="23"></svg:circle><svg:circle cx="36" cy="44.975" r="23" stroke-linecap="round" stroke-linejoin="round"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M29 19v-2.979M43 19v-2.979m-14 0h14M25.99 13.01l-9.022-9.022M31.99 12.01l-8.007-8.006M34 8l3.921-3.983M46 13l8.999-8.978m-38.031-.034h7.015m13.938.029h17.078m-26.677 34.36A7.99 7.99 0 0 1 36.146 32h0c2.205 0 4.202.894 5.647 2.34c2.248 2.248 2.04 5.983-.069 8.362L28.16 58h15.972"></svg:path></svg:g>`,
+})
+export class Openmoji2ndPlaceMedalIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiAButtonBloodTypeIcon],svg[openmoji-a-button-blood-type-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"><svg:path d="M59.035 60.137h-46.07a.97.97 0 0 1-.965-.965v-46.07a.97.97 0 0 1 .965-.965h46.07a.97.97 0 0 1 .965.965v46.07a.97.97 0 0 1-.965.965Z"></svg:path><svg:path stroke-linecap="round" d="m45.429 46.313l-9.429-22l-9.429 22m3.143-5.267h12.572"></svg:path></svg:g><svg:path fill="#d22f27" d="M59.035 60h-46.07a.97.97 0 0 1-.965-.965v-46.07a.97.97 0 0 1 .965-.965h46.07a.97.97 0 0 1 .965.965v46.07a.97.97 0 0 1-.965.965"></svg:path><svg:g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"><svg:path d="M59.035 60h-46.07a.97.97 0 0 1-.965-.965v-46.07a.97.97 0 0 1 .965-.965h46.07a.97.97 0 0 1 .965.965v46.07a.97.97 0 0 1-.965.965Z"></svg:path><svg:path stroke-linecap="round" d="m45.429 46.176l-9.429-22l-9.429 22m3.143-5.268h12.572"></svg:path></svg:g>`,
+})
+export class OpenmojiAButtonBloodTypeIcon {
   readonly viewBox = input("0 0 72 72")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,125 +104,6 @@ export class OpenmojiAbButtonBloodTypeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[openmojiAdhesiveBandageIcon],svg[openmoji-adhesive-bandage-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#e67a94" d="m21.504 37.56l15.557-15.556L50.496 35.44L34.939 50.996z"></svg:path><svg:path fill="#ffa7c0" d="m13.928 45.137l7.677-7.677L35.04 50.895l-7.677 7.677z"></svg:path><svg:rect width="19" height="19" x="12.105" y="41.395" fill="#ffa7c0" rx="8.821" ry="8.821" transform="rotate(-45 21.605 50.895)"></svg:rect><svg:path fill="#ffa7c0" d="m58.072 27.863l-7.677 7.677L36.96 22.105l7.677-7.677z"></svg:path><svg:rect width="19" height="19" x="40.895" y="12.605" fill="#ffa7c0" rx="9.5" ry="9.5" transform="rotate(135 50.395 22.105)"></svg:rect><svg:circle cx="19.974" cy="44.465" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="22.661" cy="47.152" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="25.348" cy="49.839" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="28.035" cy="52.526" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="17.095" cy="47.344" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="19.782" cy="50.031" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="22.469" cy="52.718" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="25.156" cy="55.405" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="46.844" cy="17.595" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="49.531" cy="20.282" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="52.218" cy="22.969" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="54.905" cy="25.656" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="43.965" cy="20.474" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="46.652" cy="23.161" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="49.339" cy="25.848" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="52.026" cy="28.535" r=".679" fill="#e67a94"></svg:circle><svg:path stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M43.677 15.388L14.888 44.177"></svg:path><svg:path fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M21.605 37.46L35.04 50.895m22.072-22.072a9.5 9.5 0 0 0-13.435-13.435M28.323 57.612a9.5 9.5 0 0 1-13.435-13.435M36.96 22.105L50.395 35.54M28.323 57.612l28.789-28.789"></svg:path><svg:circle cx="19.974" cy="44.465" r=".679"></svg:circle><svg:circle cx="22.661" cy="47.152" r=".679"></svg:circle><svg:circle cx="25.348" cy="49.839" r=".679"></svg:circle><svg:circle cx="28.035" cy="52.526" r=".679"></svg:circle><svg:circle cx="17.095" cy="47.344" r=".679"></svg:circle><svg:circle cx="19.782" cy="50.031" r=".679"></svg:circle><svg:circle cx="22.469" cy="52.718" r=".679"></svg:circle><svg:circle cx="25.156" cy="55.405" r=".679"></svg:circle><svg:circle cx="46.844" cy="17.595" r=".679"></svg:circle><svg:circle cx="49.531" cy="20.282" r=".679"></svg:circle><svg:circle cx="52.218" cy="22.969" r=".679"></svg:circle><svg:circle cx="54.905" cy="25.656" r=".679"></svg:circle><svg:circle cx="43.965" cy="20.474" r=".679"></svg:circle><svg:circle cx="46.652" cy="23.161" r=".679"></svg:circle><svg:circle cx="49.339" cy="25.848" r=".679"></svg:circle><svg:circle cx="52.026" cy="28.535" r=".679"></svg:circle>`,
-})
-export class OpenmojiAdhesiveBandageIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiAerialTramwayIcon],svg[openmoji-aerial-tramway-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#3f3f3f" d="M33.429 22.514c.056.261-.474.898-.165.593a1.54 1.54 0 0 0 .43-.945a1.6 1.6 0 0 0-.807-1.61a1.5 1.5 0 1 0-1.514 2.59l.064.037l-.689-.896l.026.078v-.798l-.017.084l.385-.662a2.56 2.56 0 0 0-.64 1.032a2.8 2.8 0 0 0 .034 1.294a1.5 1.5 0 1 0 2.893-.797m8.568 2.912a1.5 1.5 0 0 0 0-3a1.5 1.5 0 0 0 0 3m-4.801-1.004a1.5 1.5 0 0 0 0-3a1.5 1.5 0 0 0 0 3m-10.969-4.388a1.61 1.61 0 0 0 1.567 2.701a1.515 1.515 0 0 0 1.048-1.845a2.72 2.72 0 0 0-1.08-1.438a1.51 1.51 0 0 0-2.053.538a1.535 1.535 0 0 0 .538 2.052a.63.63 0 0 1-.298-.355l1.047-1.845l-.094.025l1.156.15l-.08-.053l.742 1.295l-.003-.097l-.439 1.06l.07-.067a1.5 1.5 0 1 0-2.12-2.12Z"></svg:path><svg:path fill="#fcea2b" stroke="#000" stroke-linejoin="round" stroke-width="2" d="M27 30h15v23H27z"></svg:path><svg:path fill="none" stroke="#61b2e4" stroke-linejoin="round" stroke-width="2" d="M28 50h14"></svg:path><svg:path fill="#d0cfce" stroke="#d0cfce" stroke-linejoin="round" stroke-width="1.633" d="M27 42h6v4h-6z"></svg:path><svg:path fill="#3f3f3f" stroke="#3f3f3f" stroke-linejoin="round" stroke-width="1.472" d="M27 34h6v6.5h-6z"></svg:path><svg:path fill="#d0cfce" stroke="#d0cfce" stroke-linejoin="round" stroke-width="2" d="M36 34h6v11h-6z"></svg:path><svg:g fill="none" stroke="#000" stroke-width="2"><svg:rect width="4" height="4" x="30" y="20" stroke-miterlimit="10" rx="1.732" transform="rotate(9.671 32 22)"></svg:rect><svg:rect width="4" height="4" x="35" y="21" stroke-miterlimit="10" rx="1.732" transform="rotate(9.671 37 23)"></svg:rect><svg:rect width="4" height="4" x="40" y="22" stroke-miterlimit="10" rx="1.732" transform="rotate(9.667 41.998 24.003)"></svg:rect><svg:rect width="4" height="4" x="25" y="19" stroke-miterlimit="10" rx="1.732" transform="rotate(9.667 26.998 21.002)"></svg:rect><svg:path stroke-miterlimit="10" d="m12 18l48 10m-25-5v8"></svg:path><svg:path stroke-linejoin="round" d="M36 34h6v11h-6zm-9 0h6v13h-6z"></svg:path><svg:path stroke-linejoin="round" d="M27 30h15v23H27z"></svg:path></svg:g>`,
-})
-export class OpenmojiAerialTramwayIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiAdmissionTicketsIcon],svg[openmoji-admission-tickets-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#D22F27" d="M57.6 35.9c0-4.9 3.9-9.1 9.4-10.6v-5.2H5v5.5c4.9 1.7 8.4 5.7 8.4 10.3S9.9 44.6 5 46.3v5.5h62v-5.2c-5.4-1.5-9.4-5.7-9.4-10.7"></svg:path><svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10"><svg:path stroke-width="2.216" d="M57.1 35.6c0-4.9 3.9-9.1 9.4-10.6v-5.2h-62v5.5c4.9 1.7 8.4 5.7 8.4 10.3s-3.5 8.6-8.4 10.3v5.5h62v-5.2c-5.4-1.5-9.4-5.7-9.4-10.6z"></svg:path><svg:path stroke-width="2.095" d="M18.5 25h34v20h-34z"></svg:path></svg:g><svg:path fill="none" stroke="#FFF" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.1" d="M18.5 25h34v20h-34z"></svg:path>`,
-})
-export class OpenmojiAdmissionTicketsIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmoji3rdPlaceMedalIcon],svg[openmoji-3rd-place-medal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#e27022" d="M28.028 22.427V17h15.944v5.427"></svg:path><svg:circle cx="36" cy="45.021" r="23" fill="#e27022"></svg:circle><svg:path fill="#92d3f5" stroke="#92d3f5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.8" d="M54.999 4.022L43 16.021h-7l-5.042-5.042l6.963-6.962h17.078"></svg:path><svg:path fill="#ea5a47" stroke="#ea5a47" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.8" d="M23.983 4.004L36 16.021h-7L16.968 3.988h7.015"></svg:path><svg:g fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"><svg:circle cx="36" cy="45.021" r="23"></svg:circle><svg:circle cx="36" cy="45.021" r="23" stroke-linecap="round" stroke-linejoin="round"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M29 19v-2.979M43 19v-2.979m-14 0h14M25.99 13.01l-9.022-9.022M31.99 12.01l-8.007-8.006M34 8l3.921-3.983M46 13l8.999-8.978m-38.031-.034h7.015m13.938.029h17.078M28.833 52.81c.684 2.962 3.64 5.19 7.182 5.19h0c4.05 0 7.332-2.91 7.332-6.5S40.065 45 36.015 45c4.05 0 7.332-2.91 7.332-6.5S40.065 32 36.015 32h0c-3.543 0-6.499 2.228-7.182 5.19"></svg:path></svg:g>`,
-})
-export class Openmoji3rdPlaceMedalIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiAButtonBloodTypeIcon],svg[openmoji-a-button-blood-type-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"><svg:path d="M59.035 60.137h-46.07a.97.97 0 0 1-.965-.965v-46.07a.97.97 0 0 1 .965-.965h46.07a.97.97 0 0 1 .965.965v46.07a.97.97 0 0 1-.965.965Z"></svg:path><svg:path stroke-linecap="round" d="m45.429 46.313l-9.429-22l-9.429 22m3.143-5.267h12.572"></svg:path></svg:g><svg:path fill="#d22f27" d="M59.035 60h-46.07a.97.97 0 0 1-.965-.965v-46.07a.97.97 0 0 1 .965-.965h46.07a.97.97 0 0 1 .965.965v46.07a.97.97 0 0 1-.965.965"></svg:path><svg:g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"><svg:path d="M59.035 60h-46.07a.97.97 0 0 1-.965-.965v-46.07a.97.97 0 0 1 .965-.965h46.07a.97.97 0 0 1 .965.965v46.07a.97.97 0 0 1-.965.965Z"></svg:path><svg:path stroke-linecap="round" d="m45.429 46.176l-9.429-22l-9.429 22m3.143-5.268h12.572"></svg:path></svg:g>`,
-})
-export class OpenmojiAButtonBloodTypeIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiAirplaneArrivalIcon],svg[openmoji-airplane-arrival-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#d0cfce" d="M43.137 33.3L55 37.424a10.8 10.8 0 0 1 3.315 1.854c2.806 2.31 8.067 7.07 4.57 7.67c-4.644.798-27.55-6.019-34.245-8.128c-6.696-2.109-13.908-6.09-18.41-9.464c-3.941-2.953 2.243-1.917 2.243-1.917s7.116 1.048 10.041 1.8l3.277.083"></svg:path><svg:path fill="#9b9b9a" d="m23.5 29.423l-8.81-13.314l-4.345-1.645L11.4 27.956M44 40.2L26.105 22.62l-2.57-.11L33.4 38.4"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="m20.382 26.398l-6.288-10.464l-3.078-1.041l1.131 10.145m32.098 14.333L26.105 22.62l-2.57-.11l9.535 15.019"></svg:path><svg:circle cx="32.453" cy="44.192" r="2"></svg:circle><svg:circle cx="37.772" cy="45.77" r="2"></svg:circle><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="m43.26 34.33l11.434 3.285a10.8 10.8 0 0 1 3.955 2.093c2.86 2.385 7.653 6.845 4.274 7.425c-4.642.798-27.549-6.019-34.244-8.128s-13.907-6.09-18.41-9.464c-3.941-2.953 2.243-1.917 2.243-1.917s7.116 1.048 10.042 1.8l2.941.755"></svg:path>`,
-})
-export class OpenmojiAirplaneArrivalIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiAirplaneIcon],svg[openmoji-airplane-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#9B9B9A" d="M43.224 23.599L37.7 22.78l-21.3-3.547a8.02 8.02 0 0 0-6.97 2.234L5.85 25.04a1 1 0 0 0 .408 1.661l20.93 6.568l3.811 1.156m5.152 3.499l2.394 6.663l6.575 20.954a1 1 0 0 0 1.661.408l3.578-3.578a8.01 8.01 0 0 0 2.235-6.971l-3.549-21.311l-.893-5.915z"></svg:path><svg:path fill="#D0CFCE" d="m9.341 49.6l8.62 3.716a1 1 0 0 1 .53.544l3.548 8.8L26 58.65l-.69-5.951a1 1 0 0 1 .285-.822l28.8-28.794a4.4 4.4 0 0 0 .782-4.352l-.157-.585a2.04 2.04 0 0 0-1.42-1.438l-.579-.159a4.22 4.22 0 0 0-4.265.813L19.9 46.174a1 1 0 0 1-.838.284l-5.846-.776z"></svg:path><svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"><svg:path stroke-linecap="round" d="m48.372 36.082l3.243 19.472a7 7 0 0 1-1.955 6.1l-3.578 3.578l-6.534-20.824M27.223 32.2L6.564 25.718l3.578-3.578a7 7 0 0 1 6.1-1.955l19.472 3.243"></svg:path><svg:path d="m56.142 18.469l-.158-.585a3.05 3.05 0 0 0-2.119-2.142l-.579-.159a5.14 5.14 0 0 0-5.24 1.074L19.191 45.465l-6.339-.842L7.6 49.935l9.964 4.3l4.117 10.206l5.371-5.428l-.747-6.428l28.8-28.795a5.31 5.31 0 0 0 1.037-5.321z"></svg:path></svg:g>`,
-})
-export class OpenmojiAirplaneIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[openmojiAddButtonIcon],svg[openmoji-add-button-icon]',
   host: {
     role: 'img',
@@ -240,16 +138,118 @@ export class OpenmojiAccordionIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[openmojiAlembicIcon],svg[openmoji-alembic-icon]',
+  selector: 'svg[openmojiAddContactIcon],svg[openmoji-add-contact-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:ellipse cx="32.369" cy="32.724" fill="#fff" rx="15.616" ry="15.304"></svg:ellipse><svg:path fill="#fff" d="M44.099 22.255s10.663 7.56 13.183 12.408l-.679.872l-7.852-5.525s-.369-1.357-.475 2.326s-4.178-10.081-4.178-10.081Z"></svg:path><svg:path fill="#92d3f5" d="M17.974 37.97c2.308 5.382 8.322 10.764 14.7 10.764s11.912-5.645 14.7-10.764z"></svg:path><svg:path fill="#61b2e4" d="M41.749 37.97c-2.46 4.516-6.972 9.914-12.4 10.618q1.104.144 2.217.146c6.379 0 14.129-5.645 16.917-10.764z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m49.302 32.588l7.673 5.465l2.303-2.236S46.837 16.442 32.675 16.442c-9.05-.131-16.493 7.097-16.627 16.146c.134 9.049 7.577 16.277 16.627 16.146c9.049.13 16.492-7.097 16.627-16.146"></svg:path><svg:path d="m12.722 55.558l5.543-10.764h28.82l5.542 10.764M32.675 44.794v10.764"></svg:path></svg:g>`,
+  template: `<svg:path fill="#D0CFCE" d="M32 50.08H21.92V40h-3.84v10.08H8v3.84h10.08V64h3.84V53.92H32z"></svg:path><svg:path fill="#92D3F5" d="M61.395 57a.96.96 0 0 1-.962-.962v-.885c0-4.282-4.324-7.512-8.321-7.687c-5.969 4.82-12.015 4.82-17.983 0c-3.997.175-8.321 3.405-8.321 7.687V57"></svg:path><svg:path fill="#F1B31C" d="M57.83 46.215a.96.96 0 0 1 0-1.36c1.762-1.763 3.411-6.224 1.557-10.624a116 116 0 0 0-1.114-2.532c-1.416-3.145-1.945-4.322-2.258-10.122c-.342-6.35-5.987-6.806-6.227-6.823a.96.96 0 0 1-.662-.33c-.09-.1-2.317-2.553-6.967-2.553c-5.965 0-11.005 3.253-12.257 7.912c-.675 2.512-.608 4.255-.543 5.94c.07 1.802.136 3.505-.732 5.733c-.289.744-.612 1.476-.933 2.206c-1.642 3.722-3.06 6.936-.124 11.34a.962.962 0 0 1-.8 1.495a1 1 0 0 1-.413-.102a29 29 0 0 0 3.275 2.523c1.371-.86 2.957-1.385 4.497-1.452c5.968 4.82 12.014 4.82 17.983 0c1.18.051 2.388.376 3.506.91a50 50 0 0 0 3.23-1.945a.96.96 0 0 1-1.018-.216"></svg:path><svg:path fill="#FCEA2B" d="M33.502 29.27v.876c0 7.01 4.225 12.503 9.618 12.503s9.619-5.492 9.619-12.503c0-4.265-1.63-6.888-4.843-10.205c-2.054 1.756-5.319 3.62-8.238 5.288c-2.426 1.384-5.733 3.273-6.156 4.04m-.02.039"></svg:path><svg:path d="M26.77 46.496a.96.96 0 0 1-.8-.428c-3.521-5.28-1.67-9.478-.036-13.182c.31-.705.622-1.41.9-2.128c.724-1.856.668-3.295.603-4.961c-.067-1.743-.144-3.719.607-6.514c1.478-5.497 7.282-9.336 14.115-9.336c4.65 0 7.325 2.15 8.149 2.938c1.555.246 7.253 1.623 7.628 8.588c.293 5.442.71 6.368 2.091 9.436c.325.72.699 1.551 1.132 2.573c2.325 5.517.026 10.738-1.97 12.733a.961.961 0 1 1-1.36-1.36c1.763-1.763 3.412-6.224 1.558-10.624a116 116 0 0 0-1.114-2.532c-1.416-3.145-1.945-4.321-2.258-10.122c-.341-6.35-5.987-6.806-6.227-6.823a.96.96 0 0 1-.662-.33c-.089-.1-2.317-2.553-6.967-2.553c-5.965 0-11.005 3.253-12.257 7.912c-.675 2.512-.608 4.255-.542 5.94c.07 1.802.135 3.505-.733 5.734a54 54 0 0 1-.933 2.205c-1.642 3.722-3.06 6.936-.124 11.34a.962.962 0 0 1-.8 1.494"></svg:path><svg:path d="M35.412 46.03c5.294 4.234 10.45 4.144 15.75-.272a.96.96 0 0 1 .615-.223c5.636.002 10.58 4.496 10.58 9.618v.885a.962.962 0 1 1-1.924 0v-.885c0-4.282-4.324-7.513-8.321-7.687c-5.968 4.82-12.014 4.82-17.983 0c0 0-.483-.55-.02-1.192c.465-.64 1.303-.245 1.303-.245m13.479-16.845a1.924 1.924 0 1 1-3.848-.002a1.924 1.924 0 0 1 3.848.002m-7.694 0a1.924 1.924 0 1 1-3.849-.002a1.924 1.924 0 0 1 3.849.002"></svg:path><svg:path d="M43.12 44.573c-6.472 0-11.541-6.337-11.541-14.427v-.962c0-1.494 2.184-2.804 7.125-5.626c3.181-1.816 6.787-3.875 8.545-5.634a.96.96 0 0 1 1.36 0c3.926 3.925 6.053 7.036 6.053 12.222c0 8.09-5.07 14.427-11.542 14.427m-9.618-15.304v.877c0 7.01 4.225 12.503 9.618 12.503s9.619-5.492 9.619-12.503c0-4.265-1.63-6.888-4.843-10.205c-2.054 1.756-5.319 3.62-8.238 5.288c-2.426 1.384-5.733 3.273-6.156 4.04m-.02.04"></svg:path><svg:path d="M43.12 38.804c-1.107 0-2.215-.275-3.315-.825a.962.962 0 1 1 .86-1.72c1.652.826 3.258.826 4.91 0a.962.962 0 0 1 .861 1.72q-1.652.825-3.316.825"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M32 50.08H21.92V40h-3.84v10.08H8v3.84h10.08V64h3.84V53.92H32z"></svg:path>`,
 })
-export class OpenmojiAlembicIcon {
+export class OpenmojiAddContactIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiAdhesiveBandageIcon],svg[openmoji-adhesive-bandage-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#e67a94" d="m21.504 37.56l15.557-15.556L50.496 35.44L34.939 50.996z"></svg:path><svg:path fill="#ffa7c0" d="m13.928 45.137l7.677-7.677L35.04 50.895l-7.677 7.677z"></svg:path><svg:rect width="19" height="19" x="12.105" y="41.395" fill="#ffa7c0" rx="8.821" ry="8.821" transform="rotate(-45 21.605 50.895)"></svg:rect><svg:path fill="#ffa7c0" d="m58.072 27.863l-7.677 7.677L36.96 22.105l7.677-7.677z"></svg:path><svg:rect width="19" height="19" x="40.895" y="12.605" fill="#ffa7c0" rx="9.5" ry="9.5" transform="rotate(135 50.395 22.105)"></svg:rect><svg:circle cx="19.974" cy="44.465" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="22.661" cy="47.152" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="25.348" cy="49.839" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="28.035" cy="52.526" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="17.095" cy="47.344" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="19.782" cy="50.031" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="22.469" cy="52.718" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="25.156" cy="55.405" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="46.844" cy="17.595" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="49.531" cy="20.282" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="52.218" cy="22.969" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="54.905" cy="25.656" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="43.965" cy="20.474" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="46.652" cy="23.161" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="49.339" cy="25.848" r=".679" fill="#e67a94"></svg:circle><svg:circle cx="52.026" cy="28.535" r=".679" fill="#e67a94"></svg:circle><svg:path stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M43.677 15.388L14.888 44.177"></svg:path><svg:path fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M21.605 37.46L35.04 50.895m22.072-22.072a9.5 9.5 0 0 0-13.435-13.435M28.323 57.612a9.5 9.5 0 0 1-13.435-13.435M36.96 22.105L50.395 35.54M28.323 57.612l28.789-28.789"></svg:path><svg:circle cx="19.974" cy="44.465" r=".679"></svg:circle><svg:circle cx="22.661" cy="47.152" r=".679"></svg:circle><svg:circle cx="25.348" cy="49.839" r=".679"></svg:circle><svg:circle cx="28.035" cy="52.526" r=".679"></svg:circle><svg:circle cx="17.095" cy="47.344" r=".679"></svg:circle><svg:circle cx="19.782" cy="50.031" r=".679"></svg:circle><svg:circle cx="22.469" cy="52.718" r=".679"></svg:circle><svg:circle cx="25.156" cy="55.405" r=".679"></svg:circle><svg:circle cx="46.844" cy="17.595" r=".679"></svg:circle><svg:circle cx="49.531" cy="20.282" r=".679"></svg:circle><svg:circle cx="52.218" cy="22.969" r=".679"></svg:circle><svg:circle cx="54.905" cy="25.656" r=".679"></svg:circle><svg:circle cx="43.965" cy="20.474" r=".679"></svg:circle><svg:circle cx="46.652" cy="23.161" r=".679"></svg:circle><svg:circle cx="49.339" cy="25.848" r=".679"></svg:circle><svg:circle cx="52.026" cy="28.535" r=".679"></svg:circle>`,
+})
+export class OpenmojiAdhesiveBandageIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiAdmissionTicketsIcon],svg[openmoji-admission-tickets-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#D22F27" d="M57.6 35.9c0-4.9 3.9-9.1 9.4-10.6v-5.2H5v5.5c4.9 1.7 8.4 5.7 8.4 10.3S9.9 44.6 5 46.3v5.5h62v-5.2c-5.4-1.5-9.4-5.7-9.4-10.7"></svg:path><svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10"><svg:path stroke-width="2.216" d="M57.1 35.6c0-4.9 3.9-9.1 9.4-10.6v-5.2h-62v5.5c4.9 1.7 8.4 5.7 8.4 10.3s-3.5 8.6-8.4 10.3v5.5h62v-5.2c-5.4-1.5-9.4-5.7-9.4-10.6z"></svg:path><svg:path stroke-width="2.095" d="M18.5 25h34v20h-34z"></svg:path></svg:g><svg:path fill="none" stroke="#FFF" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.1" d="M18.5 25h34v20h-34z"></svg:path>`,
+})
+export class OpenmojiAdmissionTicketsIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiAirplaneIcon],svg[openmoji-airplane-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#9B9B9A" d="M43.224 23.599L37.7 22.78l-21.3-3.547a8.02 8.02 0 0 0-6.97 2.234L5.85 25.04a1 1 0 0 0 .408 1.661l20.93 6.568l3.811 1.156m5.152 3.499l2.394 6.663l6.575 20.954a1 1 0 0 0 1.661.408l3.578-3.578a8.01 8.01 0 0 0 2.235-6.971l-3.549-21.311l-.893-5.915z"></svg:path><svg:path fill="#D0CFCE" d="m9.341 49.6l8.62 3.716a1 1 0 0 1 .53.544l3.548 8.8L26 58.65l-.69-5.951a1 1 0 0 1 .285-.822l28.8-28.794a4.4 4.4 0 0 0 .782-4.352l-.157-.585a2.04 2.04 0 0 0-1.42-1.438l-.579-.159a4.22 4.22 0 0 0-4.265.813L19.9 46.174a1 1 0 0 1-.838.284l-5.846-.776z"></svg:path><svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"><svg:path stroke-linecap="round" d="m48.372 36.082l3.243 19.472a7 7 0 0 1-1.955 6.1l-3.578 3.578l-6.534-20.824M27.223 32.2L6.564 25.718l3.578-3.578a7 7 0 0 1 6.1-1.955l19.472 3.243"></svg:path><svg:path d="m56.142 18.469l-.158-.585a3.05 3.05 0 0 0-2.119-2.142l-.579-.159a5.14 5.14 0 0 0-5.24 1.074L19.191 45.465l-6.339-.842L7.6 49.935l9.964 4.3l4.117 10.206l5.371-5.428l-.747-6.428l28.8-28.795a5.31 5.31 0 0 0 1.037-5.321z"></svg:path></svg:g>`,
+})
+export class OpenmojiAirplaneIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiAerialTramwayIcon],svg[openmoji-aerial-tramway-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#3f3f3f" d="M33.429 22.514c.056.261-.474.898-.165.593a1.54 1.54 0 0 0 .43-.945a1.6 1.6 0 0 0-.807-1.61a1.5 1.5 0 1 0-1.514 2.59l.064.037l-.689-.896l.026.078v-.798l-.017.084l.385-.662a2.56 2.56 0 0 0-.64 1.032a2.8 2.8 0 0 0 .034 1.294a1.5 1.5 0 1 0 2.893-.797m8.568 2.912a1.5 1.5 0 0 0 0-3a1.5 1.5 0 0 0 0 3m-4.801-1.004a1.5 1.5 0 0 0 0-3a1.5 1.5 0 0 0 0 3m-10.969-4.388a1.61 1.61 0 0 0 1.567 2.701a1.515 1.515 0 0 0 1.048-1.845a2.72 2.72 0 0 0-1.08-1.438a1.51 1.51 0 0 0-2.053.538a1.535 1.535 0 0 0 .538 2.052a.63.63 0 0 1-.298-.355l1.047-1.845l-.094.025l1.156.15l-.08-.053l.742 1.295l-.003-.097l-.439 1.06l.07-.067a1.5 1.5 0 1 0-2.12-2.12Z"></svg:path><svg:path fill="#fcea2b" stroke="#000" stroke-linejoin="round" stroke-width="2" d="M27 30h15v23H27z"></svg:path><svg:path fill="none" stroke="#61b2e4" stroke-linejoin="round" stroke-width="2" d="M28 50h14"></svg:path><svg:path fill="#d0cfce" stroke="#d0cfce" stroke-linejoin="round" stroke-width="1.633" d="M27 42h6v4h-6z"></svg:path><svg:path fill="#3f3f3f" stroke="#3f3f3f" stroke-linejoin="round" stroke-width="1.472" d="M27 34h6v6.5h-6z"></svg:path><svg:path fill="#d0cfce" stroke="#d0cfce" stroke-linejoin="round" stroke-width="2" d="M36 34h6v11h-6z"></svg:path><svg:g fill="none" stroke="#000" stroke-width="2"><svg:rect width="4" height="4" x="30" y="20" stroke-miterlimit="10" rx="1.732" transform="rotate(9.671 32 22)"></svg:rect><svg:rect width="4" height="4" x="35" y="21" stroke-miterlimit="10" rx="1.732" transform="rotate(9.671 37 23)"></svg:rect><svg:rect width="4" height="4" x="40" y="22" stroke-miterlimit="10" rx="1.732" transform="rotate(9.667 41.998 24.003)"></svg:rect><svg:rect width="4" height="4" x="25" y="19" stroke-miterlimit="10" rx="1.732" transform="rotate(9.667 26.998 21.002)"></svg:rect><svg:path stroke-miterlimit="10" d="m12 18l48 10m-25-5v8"></svg:path><svg:path stroke-linejoin="round" d="M36 34h6v11h-6zm-9 0h6v13h-6z"></svg:path><svg:path stroke-linejoin="round" d="M27 30h15v23H27z"></svg:path></svg:g>`,
+})
+export class OpenmojiAerialTramwayIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiAirplaneDepartureIcon],svg[openmoji-airplane-departure-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#9b9b9a" d="M24 39.5L8.119 34.508l-4.437 1.375L13.3 45"></svg:path><svg:path fill="#d0cfce" d="m42.589 30.5l13.635-4.637s13.5-.229 10.33 3.255S41.127 41.314 34.551 43.77s-14.712 3.75-20.337 3.86c-4.924.095.59-2.892.59-2.892s6.255-3.55 9.024-4.757l2.635-1.949"></svg:path><svg:path fill="#9b9b9a" d="m48.2 35l-25.755-2.359l-2.093 1.493L38 40.5"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><svg:path d="M19.974 39.139L7.542 34.736l-3.067 1.073l8.169 7.322m34.407-8.438l-24.606-2.052l-2.093 1.493l16.754 5.979"></svg:path><svg:path d="m43.174 31.323l11.15-4.486a10.3 10.3 0 0 1 4.172-.74c3.7.113 10.39.667 8.057 3.23c-3.17 3.484-25.425 12.196-32.001 14.651s-14.712 3.75-20.337 3.86c-4.924.094.59-2.892.59-2.892s6.255-3.55 9.024-4.757l2.784-1.213"></svg:path></svg:g>`,
+})
+export class OpenmojiAirplaneDepartureIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiAirplaneArrivalIcon],svg[openmoji-airplane-arrival-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#d0cfce" d="M43.137 33.3L55 37.424a10.8 10.8 0 0 1 3.315 1.854c2.806 2.31 8.067 7.07 4.57 7.67c-4.644.798-27.55-6.019-34.245-8.128c-6.696-2.109-13.908-6.09-18.41-9.464c-3.941-2.953 2.243-1.917 2.243-1.917s7.116 1.048 10.041 1.8l3.277.083"></svg:path><svg:path fill="#9b9b9a" d="m23.5 29.423l-8.81-13.314l-4.345-1.645L11.4 27.956M44 40.2L26.105 22.62l-2.57-.11L33.4 38.4"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="m20.382 26.398l-6.288-10.464l-3.078-1.041l1.131 10.145m32.098 14.333L26.105 22.62l-2.57-.11l9.535 15.019"></svg:path><svg:circle cx="32.453" cy="44.192" r="2"></svg:circle><svg:circle cx="37.772" cy="45.77" r="2"></svg:circle><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="m43.26 34.33l11.434 3.285a10.8 10.8 0 0 1 3.955 2.093c2.86 2.385 7.653 6.845 4.274 7.425c-4.642.798-27.549-6.019-34.244-8.128s-13.907-6.09-18.41-9.464c-3.941-2.953 2.243-1.917 2.243-1.917s7.116 1.048 10.042 1.8l2.941.755"></svg:path>`,
+})
+export class OpenmojiAirplaneArrivalIcon {
   readonly viewBox = input("0 0 72 72")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -291,16 +291,33 @@ export class OpenmojiAlabamaFlagIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[openmojiAirplaneDepartureIcon],svg[openmoji-airplane-departure-icon]',
+  selector: 'svg[openmojiAlienIcon],svg[openmoji-alien-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#9b9b9a" d="M24 39.5L8.119 34.508l-4.437 1.375L13.3 45"></svg:path><svg:path fill="#d0cfce" d="m42.589 30.5l13.635-4.637s13.5-.229 10.33 3.255S41.127 41.314 34.551 43.77s-14.712 3.75-20.337 3.86c-4.924.095.59-2.892.59-2.892s6.255-3.55 9.024-4.757l2.635-1.949"></svg:path><svg:path fill="#9b9b9a" d="m48.2 35l-25.755-2.359l-2.093 1.493L38 40.5"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><svg:path d="M19.974 39.139L7.542 34.736l-3.067 1.073l8.169 7.322m34.407-8.438l-24.606-2.052l-2.093 1.493l16.754 5.979"></svg:path><svg:path d="m43.174 31.323l11.15-4.486a10.3 10.3 0 0 1 4.172-.74c3.7.113 10.39.667 8.057 3.23c-3.17 3.484-25.425 12.196-32.001 14.651s-14.712 3.75-20.337 3.86c-4.924.094.59-2.892.59-2.892s6.255-3.55 9.024-4.757l2.784-1.213"></svg:path></svg:g>`,
+  template: `<svg:path fill="#d0cfce" d="M56.727 32.378c0 5.478-2.594 10.778-5.122 15.64c-.634 1.221-1.656 1.967-2.385 3.085c-.608.932-.985 2.24-1.642 3.084C43.585 59.321 39.81 63 35.943 63c-3.827 0-7.767-3.32-11.734-8.36c-.681-.867-1.146-2.458-1.776-3.418c-.532-.81-1.625-2.41-2.109-3.276c-2.852-5.109-5.166-9.677-5.166-15.568C15.158 17.417 25.55 10 35.943 10s20.784 7.417 20.784 22.378"></svg:path><svg:path fill="#9b9b9a" d="M36.943 62.25c6-5 11.853-46.357 11.926-47.304c3.109 2.542 7.1 8.926 7.725 13.032c1.165 7.657-2.396 17.783-7.374 23.125c-5.16 11.11-12.277 11.147-12.277 11.147"></svg:path><svg:path fill="#3f3f3f" d="M22.57 42.348c1.992 3.7 5.344 5.712 7.486 4.494s2.263-5.204.27-8.904s-5.344-5.712-7.486-4.494s-2.263 5.204-.27 8.904m26.462 0c-1.993 3.7-5.344 5.712-7.486 4.494s-2.263-5.204-.27-8.904s5.344-5.712 7.485-4.494s2.263 5.204.27 8.904"></svg:path><svg:g fill="none" stroke="#000" stroke-width="2"><svg:path stroke-linecap="round" stroke-linejoin="round" d="M30.747 53.669c.429.405 2.333 2.11 5.101 1.927c2.246-.148 3.752-1.452 4.251-1.927"></svg:path><svg:path stroke-miterlimit="10" d="M22.57 42.348c1.992 3.7 5.344 5.712 7.486 4.494s2.263-5.204.27-8.904s-5.344-5.712-7.486-4.494s-2.263 5.204-.27 8.904Z"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M35.943 63c-8.125 0-11.966-7.775-13.12-10.69a5.6 5.6 0 0 0-1.175-1.833c-1.88-1.951-6.49-7.786-6.49-18.1C15.158 17.418 25.55 10 35.943 10s20.784 7.417 20.784 22.378c0 10.372-4.173 15.69-6.23 17.819a9.1 9.1 0 0 0-1.655 2.347C44.814 60.867 40.109 63 35.942 63"></svg:path><svg:path stroke-miterlimit="10" d="M49.032 42.348c-1.993 3.7-5.344 5.712-7.486 4.494s-2.263-5.204-.27-8.904s5.344-5.712 7.485-4.494s2.263 5.204.27 8.904Z"></svg:path></svg:g>`,
 })
-export class OpenmojiAirplaneDepartureIcon {
+export class OpenmojiAlienIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiAlembicIcon],svg[openmoji-alembic-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:ellipse cx="32.369" cy="32.724" fill="#fff" rx="15.616" ry="15.304"></svg:ellipse><svg:path fill="#fff" d="M44.099 22.255s10.663 7.56 13.183 12.408l-.679.872l-7.852-5.525s-.369-1.357-.475 2.326s-4.178-10.081-4.178-10.081Z"></svg:path><svg:path fill="#92d3f5" d="M17.974 37.97c2.308 5.382 8.322 10.764 14.7 10.764s11.912-5.645 14.7-10.764z"></svg:path><svg:path fill="#61b2e4" d="M41.749 37.97c-2.46 4.516-6.972 9.914-12.4 10.618q1.104.144 2.217.146c6.379 0 14.129-5.645 16.917-10.764z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m49.302 32.588l7.673 5.465l2.303-2.236S46.837 16.442 32.675 16.442c-9.05-.131-16.493 7.097-16.627 16.146c.134 9.049 7.577 16.277 16.627 16.146c9.049.13 16.492-7.097 16.627-16.146"></svg:path><svg:path d="m12.722 55.558l5.543-10.764h28.82l5.542 10.764M32.675 44.794v10.764"></svg:path></svg:g>`,
+})
+export class OpenmojiAlembicIcon {
   readonly viewBox = input("0 0 72 72")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8478,23 +8495,6 @@ export class OpenmojiCoupleWithHeartWomanManMediumDarkSkinToneIcon {
   template: `<svg:path fill="#92D3F5" d="M38 61v-3.3c0-3.7 3.7-6.7 7.4-6.7c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V61M6 61v-3.3C6 54 9.7 51 13.4 51c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V61"></svg:path><svg:path fill="#EA5A47" d="M36 11.7c1.1-2.4 4-3.4 6.3-2.2s3.3 4 2.2 6.4c-.1.3-.3.5-.4.7L36 27l-8.1-10.4c-.2-.2-.3-.5-.4-.7c-1.1-2.4-.1-5.2 2.2-6.4s5.2-.2 6.3 2.2"></svg:path><svg:path fill="#A57939" d="M41.5 52.1c1.2-.7 2.5-1.1 3.9-1.1c4.4 3.7 8.8 3.7 13.3 0c1.4 0 2.8.4 4 1.2c.9-.6 1.7-1.3 2.3-2.2c1.5-2 2-6.7.7-9.8c-1.8-4.2-2.3-4.2-2.6-9.6c-.1-3.1-2.5-5.7-5.6-6c0 0-1.9-2.3-6-2.3c-4.8 0-9.2 2.6-10.3 6.7c-1.2 4.2.2 5.9-1 9.1c-1.4 3.6-3.6 8.4-1.4 11.9c.4.6 1.3 1.4 2.7 2.1M9.1 31.4c.6-8.7 7.2-8.8 10.5-8.3c.3.1 1.2 0 1.5 0c6-.8 9 6 9 9c0 1.1 0 3.8-1.5 5.3c0 0-3.4-4.2-3.6-6.6c0 0-11.4 4.3-12.2.6c0 0-.8 3-1.5 3.8v3s-2.5-3-2.2-6.8"></svg:path><svg:path fill="#6a462f" d="M43.7 37.5c0 6 3.8 10.5 8.3 10.5s8.3-4.5 8.3-10.5c0-3.8-1.5-6-4.5-9c-3 3-12 6.8-12 8.3z"></svg:path><svg:path fill="#a57939" d="M25 30.8s-11.4 4.3-12.2.6c0 0-.8 3-1.5 3.8v3c.6 5.5 4.2 9.8 8.6 9.8c4.6 0 8.4-4.7 8.7-10.6c-.3-.4-3.4-4.3-3.6-6.6"></svg:path><svg:path fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M28.6 36.1v.7c0 6.2-3.9 11.3-8.7 11.3s-8.7-5.1-8.7-11.3v-.7"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.1 31.4c.6-8.7 7.2-8.8 10.5-8.3c.3.1 1.2 0 1.5 0c6-.8 9 6 9 9c0 1.1 0 3.8-1.5 5.3c0 0-3.4-4.2-3.6-6.6c0 0-11.4 4.3-12.2.6c0 0-.8 3-1.5 3.8v3s-2.5-3-2.2-6.8M36 11.7c1.1-2.4 4-3.4 6.3-2.2s3.3 4 2.2 6.4c-.1.3-.3.5-.4.7L36 27l-8.1-10.4c-.2-.2-.3-.5-.4-.7c-1.1-2.4-.1-5.2 2.2-6.4s5.2-.2 6.3 2.2m3.4 37.7c-3-4.5-.6-7.7.8-11.3c1.2-3.2-.2-4.9 1-9.1c1.1-4.1 5.5-6.7 10.3-6.7c4.1 0 6 2.3 6 2.3c3.1.3 5.5 2.9 5.6 6c.3 5.4.8 5.4 2.6 9.6c1.3 3.1.8 6.6-1.4 9.1"></svg:path><svg:path fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M43.7 37.5c0 6 3.8 10.5 8.3 10.5s8.3-4.5 8.3-10.5c0-3.8-1.5-6-4.5-9c-3 3-12 6.8-12 8.3z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M38 60v-2.3c0-3.7 3.7-6.7 7.4-6.7c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V60M6 60v-2.3C6 54 9.7 51 13.4 51c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V60"></svg:path><svg:path d="M56.2 37.2c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.6 1.4 1.4m-5.6 0c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.6 1.4 1.4"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M49.9 42.9c1.3.7 2.9.7 4.2 0"></svg:path><svg:path d="M24.2 37.4c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.7 1.4 1.4m-5.6 0c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.7 1.4 1.4"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.9 43.2c1.3.7 2.9.7 4.2 0"></svg:path>`,
 })
 export class OpenmojiCoupleWithHeartWomanManMediumDarkSkinToneDarkSkinToneIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiCoupleWithHeartWomanManMediumDarkSkinToneLightSkinToneIcon],svg[openmoji-couple-with-heart-woman-man-medium-dark-skin-tone-light-skin-tone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#92D3F5" d="M38 61v-3.3c0-3.7 3.7-6.7 7.4-6.7c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V61M6 61v-3.3C6 54 9.7 51 13.4 51c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V61"></svg:path><svg:path fill="#EA5A47" d="M36 11.7c1.1-2.4 4-3.4 6.3-2.2s3.3 4 2.2 6.4c-.1.3-.3.5-.4.7L36 27l-8.1-10.4c-.2-.2-.3-.5-.4-.7c-1.1-2.4-.1-5.2 2.2-6.4s5.2-.2 6.3 2.2"></svg:path><svg:path fill="#A57939" d="M41.5 52.1c1.2-.7 2.5-1.1 3.9-1.1c4.4 3.7 8.8 3.7 13.3 0c1.4 0 2.8.4 4 1.2c.9-.6 1.7-1.3 2.3-2.2c1.5-2 2-6.7.7-9.8c-1.8-4.2-2.3-4.2-2.6-9.6c-.1-3.1-2.5-5.7-5.6-6c0 0-1.9-2.3-6-2.3c-4.8 0-9.2 2.6-10.3 6.7c-1.2 4.2.2 5.9-1 9.1c-1.4 3.6-3.6 8.4-1.4 11.9c.4.6 1.3 1.4 2.7 2.1M9.1 31.4c.6-8.7 7.2-8.8 10.5-8.3c.3.1 1.2 0 1.5 0c6-.8 9 6 9 9c0 1.1 0 3.8-1.5 5.3c0 0-3.4-4.2-3.6-6.6c0 0-11.4 4.3-12.2.6c0 0-.8 3-1.5 3.8v3s-2.5-3-2.2-6.8"></svg:path><svg:path fill="#fadcbc" d="M43.7 37.5c0 6 3.8 10.5 8.3 10.5s8.3-4.5 8.3-10.5c0-3.8-1.5-6-4.5-9c-3 3-12 6.8-12 8.3z"></svg:path><svg:path fill="#a57939" d="M25 30.8s-11.4 4.3-12.2.6c0 0-.8 3-1.5 3.8v3c.6 5.5 4.2 9.8 8.6 9.8c4.6 0 8.4-4.7 8.7-10.6c-.3-.4-3.4-4.3-3.6-6.6"></svg:path><svg:path fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" d="M28.6 36.1v.7c0 6.2-3.9 11.3-8.7 11.3s-8.7-5.1-8.7-11.3v-.7"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.1 31.4c.6-8.7 7.2-8.8 10.5-8.3c.3.1 1.2 0 1.5 0c6-.8 9 6 9 9c0 1.1 0 3.8-1.5 5.3c0 0-3.4-4.2-3.6-6.6c0 0-11.4 4.3-12.2.6c0 0-.8 3-1.5 3.8v3s-2.5-3-2.2-6.8M36 11.7c1.1-2.4 4-3.4 6.3-2.2s3.3 4 2.2 6.4c-.1.3-.3.5-.4.7L36 27l-8.1-10.4c-.2-.2-.3-.5-.4-.7c-1.1-2.4-.1-5.2 2.2-6.4s5.2-.2 6.3 2.2m3.4 37.7c-3-4.5-.6-7.7.8-11.3c1.2-3.2-.2-4.9 1-9.1c1.1-4.1 5.5-6.7 10.3-6.7c4.1 0 6 2.3 6 2.3c3.1.3 5.5 2.9 5.6 6c.3 5.4.8 5.4 2.6 9.6c1.3 3.1.8 6.6-1.4 9.1"></svg:path><svg:path fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M43.7 37.5c0 6 3.8 10.5 8.3 10.5s8.3-4.5 8.3-10.5c0-3.8-1.5-6-4.5-9c-3 3-12 6.8-12 8.3z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M38 60v-2.3c0-3.7 3.7-6.7 7.4-6.7c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V60M6 60v-2.3C6 54 9.7 51 13.4 51c4.4 3.7 8.8 3.7 13.3 0c3.7 0 7.4 3 7.4 6.7V60"></svg:path><svg:path d="M56.2 37.2c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.6 1.4 1.4m-5.6 0c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.6 1.4 1.4"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M49.9 42.9c1.3.7 2.9.7 4.2 0"></svg:path><svg:path d="M24.2 37.4c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.7 1.4 1.4m-5.6 0c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4s1.4.7 1.4 1.4"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.9 43.2c1.3.7 2.9.7 4.2 0"></svg:path>`,
-})
-export class OpenmojiCoupleWithHeartWomanManMediumDarkSkinToneLightSkinToneIcon {
   readonly viewBox = input("0 0 72 72")
   readonly width = input("1em")
   readonly height = input("1em")

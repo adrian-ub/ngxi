@@ -53,6 +53,57 @@ export class GuidanceAccessToLowVisionIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[guidanceAccessForHearingLossIcon],svg[guidance-access-for-hearing-loss-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M5.5 9a6.5 6.5 0 0 1 13 0c0 .662-.111 1.32-.328 1.944l-2.85 8.195A3.52 3.52 0 0 1 12 21.5c-.98 0-1.865-.352-2.5-1m6-11.5a3.5 3.5 0 1 0-7 0m15-8.5L18 6m-6 6L.5 23.5"></svg:path>`,
+})
+export class GuidanceAccessForHearingLossIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[guidanceAccessibleExitIcon],svg[guidance-accessible-exit-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M14.5 23.5h5V.5h-15V8m8 15.5c-.727 0-1.273-1.071-1.273-1.071c-.545-1.072-.545-1.786-.545-2.858V18.5H8.374M7.5 12l-1.836 3.672M3 14l1.5-3s.8-.5 2.6-.5c2.4 0 3.9 2 3.9 2l-1.875 3.75m-3.461-.578a4 4 0 1 0-2.328 7.656a4 4 0 0 0 2.328-7.656Zm6.141-5.172s1.81-.557 2.135-1.776a1.77 1.77 0 0 0-1.242-2.163a1.75 1.75 0 0 0-2.146 1.25c-.324 1.219.962 2.61.962 2.61z"></svg:path>`,
+})
+export class GuidanceAccessibleExitIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[guidanceAccessibleExit2Icon],svg[guidance-accessible-exit-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M21 23.5h2.5V.5h-15V4m-8 11.79a4 4 0 1 1 0 7.418m9.5.292c-.727 0-1.273-1.071-1.273-1.071c-.545-1.072-.545-1.786-.545-2.858V18.5H6M5 12l-2 4m3.5.5l2-4s-1.5-2-3.9-2c-1.8 0-2.6.5-2.6.5L.5 14M19 23.5c-1 0-1.75-1.5-1.75-1.5c-.75-1.5-.75-2.5-.75-4v-.5L12.75 15v-.25l1.908-3.642A3 3 0 0 1 17.315 9.5H18v2.264c0 .758.44 1.442 1.184 1.58A10 10 0 0 0 21 13.5M15 19c-1.65-.057-3.365.506-4 .895M9.305 10.5s1.81-.557 2.135-1.776a1.77 1.77 0 0 0-1.242-2.163a1.75 1.75 0 0 0-2.146 1.25c-.324 1.219.962 2.61.962 2.61zm8.955-2.972s-1.287-1.38-.963-2.588a1.75 1.75 0 0 1 2.143-1.237a1.746 1.746 0 0 1 1.234 2.142c-.324 1.208-2.124 1.76-2.124 1.76z"></svg:path>`,
+})
+export class GuidanceAccessibleExit2Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[guidanceAccessibleMenRestroomIcon],svg[guidance-accessible-men-restroom-icon]',
   host: {
     role: 'img',
@@ -63,6 +114,23 @@ export class GuidanceAccessToLowVisionIcon {
   template: `<svg:path fill="none" stroke="currentColor" d="M6.5 24v-6.5a2 2 0 0 1 2-2v-8s-1.5-1-4-1s-4 1-4 1v8a2 2 0 0 1 2 2V24M4.35 4.5s-1.6-1-1.6-2.25a1.747 1.747 0 1 1 3.496 0C6.246 3.5 4.65 4.5 4.65 4.5zM19 14V8.5h-1.158a3 3 0 0 0-2.91 2.272L14 14.527M24 23.5c-1 0-1.75-1.5-1.75-1.5c-.75-1.5-.75-2.5-.75-4v-1.5h-3.258m-3.742 7a4.5 4.5 0 1 1 0-9a4.5 4.5 0 0 1 0 9Zm4.35-17s-1.6-1-1.6-2.25a1.747 1.747 0 1 1 3.496 0c0 1.25-1.596 2.25-1.596 2.25z"></svg:path>`,
 })
 export class GuidanceAccessibleMenRestroomIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[guidanceAccessibleWomenRestroomIcon],svg[guidance-accessible-women-restroom-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M11.5 15.646a4.5 4.5 0 1 1-1.244 4.854M19 14V8.5h-1.158a3 3 0 0 0-2.91 2.272L14 14.527M24 23.5c-1 0-1.75-1.5-1.75-1.5c-.75-1.5-.75-2.5-.75-4v-1.5h-3.258m.608-10s-1.6-1-1.6-2.25a1.747 1.747 0 1 1 3.496 0c0 1.25-1.596 2.25-1.596 2.25zM3.5 24v-5.5h-3v-.25l.072-.15C2.17 14.742 2.5 11.07 2.5 7.352v-.329S4 6.5 5.5 6.5s3 .523 3 .523v.329c0 2.78.184 5.532.945 8.148c.257.884.58 1.752.983 2.6l.072.15v.25h-3V24M5.35 4.5s-1.6-1-1.6-2.25a1.747 1.747 0 1 1 3.496 0C7.246 3.5 5.65 4.5 5.65 4.5z"></svg:path>`,
+})
+export class GuidanceAccessibleWomenRestroomIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,23 +172,6 @@ export class GuidanceAirplaneModeOffIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[guidanceAlarmBellIcon],svg[guidance-alarm-bell-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" d="M21.753 11.48A12.56 12.56 0 0 1 15 20.228V23.5H4V20h9m-3.5-9.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3Zm12.5 1a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3Zm-12.5 6a8.5 8.5 0 1 1 0-17a8.5 8.5 0 0 1 0 17Z"></svg:path>`,
-})
-export class GuidanceAlarmBellIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[guidanceAlarmIcon],svg[guidance-alarm-icon]',
   host: {
     role: 'img',
@@ -138,16 +189,16 @@ export class GuidanceAlarmIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[guidanceAccessibleExit2Icon],svg[guidance-accessible-exit-2-icon]',
+  selector: 'svg[guidanceAlarmBellIcon],svg[guidance-alarm-bell-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" d="M21 23.5h2.5V.5h-15V4m-8 11.79a4 4 0 1 1 0 7.418m9.5.292c-.727 0-1.273-1.071-1.273-1.071c-.545-1.072-.545-1.786-.545-2.858V18.5H6M5 12l-2 4m3.5.5l2-4s-1.5-2-3.9-2c-1.8 0-2.6.5-2.6.5L.5 14M19 23.5c-1 0-1.75-1.5-1.75-1.5c-.75-1.5-.75-2.5-.75-4v-.5L12.75 15v-.25l1.908-3.642A3 3 0 0 1 17.315 9.5H18v2.264c0 .758.44 1.442 1.184 1.58A10 10 0 0 0 21 13.5M15 19c-1.65-.057-3.365.506-4 .895M9.305 10.5s1.81-.557 2.135-1.776a1.77 1.77 0 0 0-1.242-2.163a1.75 1.75 0 0 0-2.146 1.25c-.324 1.219.962 2.61.962 2.61zm8.955-2.972s-1.287-1.38-.963-2.588a1.75 1.75 0 0 1 2.143-1.237a1.746 1.746 0 0 1 1.234 2.142c-.324 1.208-2.124 1.76-2.124 1.76z"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" d="M21.753 11.48A12.56 12.56 0 0 1 15 20.228V23.5H4V20h9m-3.5-9.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3Zm12.5 1a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3Zm-12.5 6a8.5 8.5 0 1 1 0-17a8.5 8.5 0 0 1 0 17Z"></svg:path>`,
 })
-export class GuidanceAccessibleExit2Icon {
+export class GuidanceAlarmBellIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -165,6 +216,23 @@ export class GuidanceAccessibleExit2Icon {
   template: `<svg:path fill="none" stroke="currentColor" d="M12 6v8.5m0 1.5v2M7.444 1s1.774.25 4.556.25S16.556 1 16.556 1s1.078 1.431 3.045 3.399C21.57 6.366 23 7.444 23 7.444s-.25 1.774-.25 4.556s.25 4.556.25 4.556s-1.431 1.078-3.399 3.045C17.634 21.57 16.556 23 16.556 23s-1.774-.25-4.556-.25s-4.556.25-4.556.25s-1.078-1.431-3.045-3.399C2.43 17.634 1 16.556 1 16.556s.25-1.774.25-4.556S1 7.444 1 7.444s1.431-1.078 3.399-3.045C6.366 2.43 7.444 1 7.444 1Z"></svg:path>`,
 })
 export class GuidanceAlertOctagonIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[guidanceAlertTriangleIcon],svg[guidance-alert-triangle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M12 7v8.5m0 1.5v2m11 1.5L22 22s-5.7-.25-10-.25S2 22 2 22l-1-1.5C6 13 11 2 11 2h2s5 11 10 18.5Z"></svg:path>`,
+})
+export class GuidanceAlertTriangleIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -216,6 +284,23 @@ export class GuidanceAmusementParkIcon {
   template: `<svg:path fill="none" stroke="currentColor" d="M12.5 19.5c-4.97 0-9-4.253-9-9.5c0-1.294.245-2.527.689-3.65c0 0-.995-.85-3.189-.85L.75 5S2.5 1.5 7.705 1.959C9.093 1.035 11.238.5 13 .5c3.61 0 5.263 1.353 6.571 3.384c.664 1.03 1.446 1.989 2.441 2.706l.488.351V8.5H14c0 3-.877 5.393-2.5 6.33l-.5-.33s.5-3-.92-3.934c-.968.866-1.58 2.128-1.58 3.934c0 2.761 1.79 5 4 5Zm0 0c1.198-2.207 2.5-4 5-4v.286c-.74 1.025-1.5 2.37-1.5 3.714s.76 2.689 1.5 3.714v.286c-2.5 0-3.802-1.793-5-4Zm3.5-16v2"></svg:path>`,
 })
 export class GuidanceAquariumIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[guidanceArcadeIcon],svg[guidance-arcade-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" d="M12 15.5v-8m0 0a3.5 3.5 0 1 1 0-7a3.5 3.5 0 0 1 0 7Zm-9.5 11v.219a6 6 0 0 1-1.516 3.986L.5 23.25v.25h23v-.25l-.485-.545a6 6 0 0 1-1.515-3.986V18.5zm3 0v-3h13v3z"></svg:path>`,
+})
+export class GuidanceArcadeIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -6030,91 +6115,6 @@ export class GuidanceZooIcon {
   template: `<svg:path fill="none" stroke="currentColor" d="M0 20.5h24m-13.5-9.76L3 13.99c-.5-3-2.25-6.5-2.25-6.5L2 6.99s1.123.775 2.5 2.5l11.502-6.03a4.07 4.07 0 0 1 3.707-.025c1.054.525 2.346 1.152 3.291 1.556v.5l-7.85 3.59C14 13.49 12 16.49 12 16.49H9.8s.7-2.75.7-5.75Z"></svg:path>`,
 })
 export class GuidanceArrivalIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[guidanceAccessibleWomenRestroomIcon],svg[guidance-accessible-women-restroom-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" d="M11.5 15.646a4.5 4.5 0 1 1-1.244 4.854M19 14V8.5h-1.158a3 3 0 0 0-2.91 2.272L14 14.527M24 23.5c-1 0-1.75-1.5-1.75-1.5c-.75-1.5-.75-2.5-.75-4v-1.5h-3.258m.608-10s-1.6-1-1.6-2.25a1.747 1.747 0 1 1 3.496 0c0 1.25-1.596 2.25-1.596 2.25zM3.5 24v-5.5h-3v-.25l.072-.15C2.17 14.742 2.5 11.07 2.5 7.352v-.329S4 6.5 5.5 6.5s3 .523 3 .523v.329c0 2.78.184 5.532.945 8.148c.257.884.58 1.752.983 2.6l.072.15v.25h-3V24M5.35 4.5s-1.6-1-1.6-2.25a1.747 1.747 0 1 1 3.496 0C7.246 3.5 5.65 4.5 5.65 4.5z"></svg:path>`,
-})
-export class GuidanceAccessibleWomenRestroomIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[guidanceAccessibleExitIcon],svg[guidance-accessible-exit-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" d="M14.5 23.5h5V.5h-15V8m8 15.5c-.727 0-1.273-1.071-1.273-1.071c-.545-1.072-.545-1.786-.545-2.858V18.5H8.374M7.5 12l-1.836 3.672M3 14l1.5-3s.8-.5 2.6-.5c2.4 0 3.9 2 3.9 2l-1.875 3.75m-3.461-.578a4 4 0 1 0-2.328 7.656a4 4 0 0 0 2.328-7.656Zm6.141-5.172s1.81-.557 2.135-1.776a1.77 1.77 0 0 0-1.242-2.163a1.75 1.75 0 0 0-2.146 1.25c-.324 1.219.962 2.61.962 2.61z"></svg:path>`,
-})
-export class GuidanceAccessibleExitIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[guidanceAccessForHearingLossIcon],svg[guidance-access-for-hearing-loss-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" d="M5.5 9a6.5 6.5 0 0 1 13 0c0 .662-.111 1.32-.328 1.944l-2.85 8.195A3.52 3.52 0 0 1 12 21.5c-.98 0-1.865-.352-2.5-1m6-11.5a3.5 3.5 0 1 0-7 0m15-8.5L18 6m-6 6L.5 23.5"></svg:path>`,
-})
-export class GuidanceAccessForHearingLossIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[guidanceArcadeIcon],svg[guidance-arcade-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" d="M12 15.5v-8m0 0a3.5 3.5 0 1 1 0-7a3.5 3.5 0 0 1 0 7Zm-9.5 11v.219a6 6 0 0 1-1.516 3.986L.5 23.25v.25h23v-.25l-.485-.545a6 6 0 0 1-1.515-3.986V18.5zm3 0v-3h13v3z"></svg:path>`,
-})
-export class GuidanceArcadeIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[guidanceAlertTriangleIcon],svg[guidance-alert-triangle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" d="M12 7v8.5m0 1.5v2m11 1.5L22 22s-5.7-.25-10-.25S2 22 2 22l-1-1.5C6 13 11 2 11 2h2s5 11 10 18.5Z"></svg:path>`,
-})
-export class GuidanceAlertTriangleIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

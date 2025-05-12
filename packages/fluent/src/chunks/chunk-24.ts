@@ -2,6 +2,992 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentPersonSearch20FilledIcon],svg[fluent-person-search-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8m4.865 14.797c-1.071.683-2.454 1.064-3.962 1.171a1.5 1.5 0 0 0-.342-.529l-2-1.999A4.5 4.5 0 0 0 9 13.5a4.5 4.5 0 0 0-.758-2.5H15a2 2 0 0 1 2 2c0 1.691-.833 2.966-2.135 3.797M4.5 17c.786 0 1.512-.26 2.096-.697l2.55 2.55a.5.5 0 1 0 .708-.707l-2.55-2.55A3.5 3.5 0 1 0 4.5 17m0-1a2.5 2.5 0 1 1 0-5a2.5 2.5 0 0 1 0 5"></svg:path>`,
+})
+export class FluentPersonSearch20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSearch20RegularIcon],svg[fluent-person-search-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8M7 6a3 3 0 1 1 6 0a3 3 0 0 1-6 0m7.865 10.797c-1.071.683-2.454 1.064-3.962 1.171a1.5 1.5 0 0 0-.342-.529l-.44-.44c1.685-.016 3.16-.379 4.206-1.046C15.377 15.283 16 14.31 16 13a1 1 0 0 0-1-1H8.744a4.5 4.5 0 0 0-.502-1H15a2 2 0 0 1 2 2c0 1.691-.833 2.966-2.135 3.797M4.5 17c.786 0 1.512-.26 2.096-.697l2.55 2.55a.5.5 0 1 0 .708-.707l-2.55-2.55A3.5 3.5 0 1 0 4.5 17m0-1a2.5 2.5 0 1 1 0-5a2.5 2.5 0 0 1 0 5"></svg:path>`,
+})
+export class FluentPersonSearch20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSearch24FilledIcon],svg[fluent-person-search-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.91 14h7.843a2.25 2.25 0 0 1 2.25 2.25v.905A3.75 3.75 0 0 1 20.696 20C19.13 21.345 16.89 22.002 14 22.002h-.179a1.75 1.75 0 0 0-.221-1.897l-.111-.121l-2.23-2.224a5.48 5.48 0 0 0 .65-3.76M6.5 10.5a4.5 4.5 0 0 1 3.46 7.377l2.823 2.814a.75.75 0 0 1-.975 1.134l-.085-.072l-2.903-2.896A4.5 4.5 0 1 1 6.5 10.5m0 1.5a3 3 0 1 0 0 6a3 3 0 0 0 0-6M14 2.005a5 5 0 1 1 0 10a5 5 0 0 1 0-10"></svg:path>`,
+})
+export class FluentPersonSearch24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSearch24RegularIcon],svg[fluent-person-search-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m11.91 13.999l7.843.001a2.25 2.25 0 0 1 2.25 2.25v.905A3.75 3.75 0 0 1 20.696 20C19.13 21.345 16.89 22.002 14 22.002h-.179a1.76 1.76 0 0 0 .026-1.502l.153.002c2.56 0 4.458-.556 5.719-1.639a2.25 2.25 0 0 0 .784-1.707v-.905a.75.75 0 0 0-.75-.75h-7.776A5.6 5.6 0 0 0 11.91 14M6.5 10.5a4.5 4.5 0 0 1 3.46 7.377l2.823 2.814a.75.75 0 0 1-.975 1.134l-.085-.072l-2.903-2.896A4.5 4.5 0 1 1 6.5 10.5m0 1.5a3 3 0 1 0 0 6a3 3 0 0 0 0-6M14 2.005a5 5 0 1 1 0 10a5 5 0 0 1 0-10m0 1.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7"></svg:path>`,
+})
+export class FluentPersonSearch24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSearch32FilledIcon],svg[fluent-person-search-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18 16a7 7 0 1 0 0-14a7 7 0 0 0 0 14m0 14q-.505 0-1-.027a2.5 2.5 0 0 0-.732-1.74l-2.5-2.5c.47-.98.732-2.077.732-3.233A7.47 7.47 0 0 0 13 18h13.5a3.5 3.5 0 0 1 3.5 3.5v.5c0 2.393-1.523 4.417-3.685 5.793C24.141 29.177 21.198 30 18 30M7 28.5c1.296 0 2.496-.41 3.476-1.11l3.317 3.317a1 1 0 0 0 1.414-1.414l-3.316-3.316A6 6 0 1 0 7 28.5m0-2a4 4 0 1 1 0-8a4 4 0 0 1 0 8"></svg:path>`,
+})
+export class FluentPersonSearch32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSearch32RegularIcon],svg[fluent-person-search-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M25 9a7 7 0 1 1-14 0a7 7 0 0 1 14 0m-2 0a5 5 0 1 0-10 0a5 5 0 0 0 10 0m-5 21q-.505 0-1-.027a2.5 2.5 0 0 0-.732-1.74l-.368-.368c.675.088 1.378.135 2.1.135c2.877 0 5.434-.744 7.241-1.894C27.061 24.95 28 23.472 28 22v-.5a1.5 1.5 0 0 0-1.5-1.5H14.073a7.5 7.5 0 0 0-1.072-2H26.5a3.5 3.5 0 0 1 3.5 3.5v.5c0 2.393-1.523 4.417-3.685 5.793C24.141 29.177 21.198 30 18 30M7 28.5c1.296 0 2.496-.41 3.476-1.11l3.317 3.317a1 1 0 0 0 1.414-1.414l-3.316-3.316A6 6 0 1 0 7 28.5m0-2a4 4 0 1 1 0-8a4 4 0 0 1 0 8"></svg:path>`,
+})
+export class FluentPersonSearch32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSettings16FilledIcon],svg[fluent-person-settings-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.626 5.07a5.5 5.5 0 0 0-3.299 1.847A2.751 2.751 0 1 1 9.626 5.07M5.6 8c-.384.75-.6 1.6-.6 2.5c0 1.31.458 2.512 1.222 3.457C3.555 13.653 2 11.803 2 10v-.5A1.5 1.5 0 0 1 3.5 8zm1.035 1.92a2 2 0 0 0 1.43-2.478l-.156-.557q.383-.293.822-.497l.337.358a2 2 0 0 0 2.91.001l.325-.344q.447.212.834.518l-.126.423a2 2 0 0 0 1.456 2.519l.35.082a4.7 4.7 0 0 1 .01 1.017l-.461.118a2 2 0 0 0-1.43 2.477l.155.557q-.383.294-.822.498l-.337-.358a2 2 0 0 0-2.91-.002l-.324.344a4.3 4.3 0 0 1-.835-.518l.126-.422a2 2 0 0 0-1.456-2.52l-.35-.082a4.7 4.7 0 0 1-.01-1.016zm4.865.58a1 1 0 1 0-2 0a1 1 0 0 0 2 0"></svg:path>`,
+})
+export class FluentPersonSettings16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSettings16RegularIcon],svg[fluent-person-settings-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.222 13.957C3.555 13.653 2 11.803 2 10v-.5A1.5 1.5 0 0 1 3.5 8h2.1a5.5 5.5 0 0 0-.393 1H3.5a.5.5 0 0 0-.5.5v.5c0 1.128.882 2.333 2.502 2.8c.192.416.435.804.72 1.157m3.404-8.888a2.75 2.75 0 1 0-3.299 1.848a5.5 5.5 0 0 1 1.078-.964Q7.209 5.999 7 6a1.75 1.75 0 1 1 1.241-.516a5.5 5.5 0 0 1 1.385-.415M6.635 9.92a2 2 0 0 0 1.43-2.478l-.156-.557q.383-.293.822-.497l.337.358a2 2 0 0 0 2.91.001l.325-.344q.447.212.834.518l-.126.423a2 2 0 0 0 1.456 2.519l.35.082a4.7 4.7 0 0 1 .01 1.017l-.461.118a2 2 0 0 0-1.43 2.477l.155.557q-.383.294-.822.498l-.337-.358a2 2 0 0 0-2.91-.002l-.324.344a4.3 4.3 0 0 1-.835-.518l.126-.422a2 2 0 0 0-1.456-2.52l-.35-.082a4.7 4.7 0 0 1-.01-1.016zm4.865.58a1 1 0 1 0-2 0a1 1 0 0 0 2 0"></svg:path>`,
+})
+export class FluentPersonSettings16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSettings20FilledIcon],svg[fluent-person-settings-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8m-4.991 9A2 2 0 0 0 2 13c0 1.691.833 2.966 2.135 3.797C5.417 17.614 7.145 18 9 18q.617 0 1.21-.057A5.48 5.48 0 0 1 9 14.5c0-1.33.472-2.55 1.257-3.5zm6.626 2.92a2 2 0 0 0 1.43-2.478l-.155-.557q.382-.293.821-.497l.338.358a2 2 0 0 0 2.91.001l.324-.344q.448.212.835.518l-.126.423a2 2 0 0 0 1.456 2.519l.349.082a4.7 4.7 0 0 1 .01 1.017l-.46.117a2 2 0 0 0-1.431 2.479l.156.556q-.383.294-.822.498l-.338-.358a2 2 0 0 0-2.909-.002l-.325.344a4.3 4.3 0 0 1-.835-.518l.127-.422a2 2 0 0 0-1.456-2.52l-.35-.082a4.7 4.7 0 0 1-.01-1.016zm4.865.58a1 1 0 1 0-2 0a1 1 0 0 0 2 0"></svg:path>`,
+})
+export class FluentPersonSettings20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSettings20RegularIcon],svg[fluent-person-settings-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8M6 6a3 3 0 1 1 6 0a3 3 0 0 1-6 0m-1.991 5A2 2 0 0 0 2 13c0 1.691.833 2.966 2.135 3.797C5.417 17.614 7.145 18 9 18q.617 0 1.21-.057a5.5 5.5 0 0 1-.618-.958Q9.301 17 9 17c-1.735 0-3.257-.364-4.327-1.047C3.623 15.283 3 14.31 3 13c0-.553.448-1 1.009-1h5.59q.277-.538.658-1zm6.626 2.92a2 2 0 0 0 1.43-2.478l-.155-.557q.382-.293.821-.497l.338.358a2 2 0 0 0 2.91.001l.324-.344q.448.212.835.518l-.126.423a2 2 0 0 0 1.456 2.519l.349.082a4.7 4.7 0 0 1 .01 1.017l-.46.117a2 2 0 0 0-1.431 2.479l.156.556q-.383.294-.822.498l-.338-.358a2 2 0 0 0-2.909-.002l-.325.344a4.3 4.3 0 0 1-.835-.518l.127-.422a2 2 0 0 0-1.456-2.52l-.35-.082a4.7 4.7 0 0 1-.01-1.016zm4.865.58a1 1 0 1 0-2 0a1 1 0 0 0 2 0"></svg:path>`,
+})
+export class FluentPersonSettings20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial16FilledIcon],svg[fluent-person-sound-spatial-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.232 6.526c-.168.22-.17.535.025.73s.514.197.687-.018a4.73 4.73 0 0 0 1.057-2.987a4.73 4.73 0 0 0-1.057-2.988c-.173-.214-.492-.213-.687-.018c-.196.196-.193.51-.025.73c.483.631.77 1.42.77 2.276s-.287 1.644-.77 2.275m-1.39-.684c.196.195.517.197.674-.03C1.822 5.368 2 4.83 2 4.25s-.18-1.118-.485-1.561c-.157-.228-.478-.226-.674-.03c-.195.195-.187.51-.054.752c.136.249.213.535.213.839s-.077.59-.213.838c-.133.243-.141.557.054.753M11.5 8A1.5 1.5 0 0 1 13 9.5v.5c0 1.971-1.86 4-5 4s-5-2.029-5-4v-.5A1.5 1.5 0 0 1 4.5 8zM8 1.5A2.75 2.75 0 1 1 8 7a2.75 2.75 0 0 1 0-5.5m5.057 5.738c.174.215.492.213.688.018s.192-.51.024-.73A3.73 3.73 0 0 1 13 4.251c0-.856.287-1.645.77-2.276c.167-.22.17-.534-.025-.73s-.514-.196-.688.018A4.73 4.73 0 0 0 12 4.251a4.73 4.73 0 0 0 1.057 2.987m1.429-4.548c.157-.228.478-.226.673-.03c.195.195.187.51.055.752a1.74 1.74 0 0 0 0 1.677c.132.243.14.557-.055.753s-.516.197-.673-.03A2.74 2.74 0 0 1 14 4.25c0-.58.18-1.118.486-1.561"></svg:path>`,
+})
+export class FluentPersonSoundSpatial16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial16RegularIcon],svg[fluent-person-sound-spatial-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.232 6.525c-.168.22-.17.535.025.73s.514.197.687-.018A4.73 4.73 0 0 0 4.001 4.25a4.73 4.73 0 0 0-1.057-2.988c-.173-.214-.492-.213-.687-.018c-.196.196-.193.51-.025.73c.483.631.77 1.42.77 2.276s-.287 1.644-.77 2.275m-1.39-.684c.196.195.517.197.674-.03C1.822 5.367 2 4.829 2 4.25c0-.58-.18-1.118-.485-1.561c-.157-.228-.478-.226-.674-.03c-.195.195-.187.51-.054.752c.136.249.213.535.213.839s-.077.59-.213.838c-.133.243-.141.557.054.753M11.5 8A1.5 1.5 0 0 1 13 9.5v.5c0 1.971-1.86 4-5 4s-5-2.029-5-4v-.5A1.5 1.5 0 0 1 4.5 8zm-7 1a.5.5 0 0 0-.5.5v.5c0 1.438 1.432 3 4 3s4-1.562 4-3v-.5a.5.5 0 0 0-.5-.5zM8 1.5A2.75 2.75 0 1 1 8 7a2.75 2.75 0 0 1 0-5.5m0 1A1.75 1.75 0 1 0 8 6a1.75 1.75 0 0 0 0-3.5m5.057 4.737c.174.215.492.213.688.018s.192-.51.024-.73A3.73 3.73 0 0 1 13 4.25c0-.856.287-1.645.77-2.276c.167-.22.17-.534-.025-.73s-.514-.196-.688.018A4.73 4.73 0 0 0 12 4.25a4.73 4.73 0 0 0 1.057 2.987m1.429-4.548c.157-.228.478-.226.673-.03c.195.195.187.51.055.752a1.74 1.74 0 0 0 0 1.677c.132.243.14.557-.055.753s-.516.197-.673-.03A2.74 2.74 0 0 1 14 4.25c0-.58.18-1.118.486-1.561"></svg:path>`,
+})
+export class FluentPersonSoundSpatial16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial20FilledIcon],svg[fluent-person-sound-spatial-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.87 9.165a.54.54 0 0 0 .017.724a.47.47 0 0 0 .692-.014A5.98 5.98 0 0 0 5 6c0-1.477-.534-2.83-1.42-3.875a.47.47 0 0 0-.692-.014a.54.54 0 0 0-.018.724A4.98 4.98 0 0 1 4 6a4.98 4.98 0 0 1-1.13 3.165m-1.397-.69c.195.195.515.197.684-.021c.527-.678.841-1.53.841-2.454s-.314-1.776-.84-2.454c-.17-.218-.49-.216-.685-.02c-.195.194-.191.51-.03.734c.35.49.555 1.091.555 1.74s-.206 1.25-.556 1.74c-.16.225-.164.54.031.735M10 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8m-4.991 9A2 2 0 0 0 3 13c0 1.691.833 2.966 2.135 3.797C6.417 17.614 8.145 18 10 18s3.583-.386 4.865-1.203C16.167 15.967 17 14.69 17 13a2 2 0 0 0-2-2zm11.41-8.875A5.98 5.98 0 0 0 15 6c0 1.477.534 2.83 1.419 3.875a.47.47 0 0 0 .692.014a.54.54 0 0 0 .018-.724A4.98 4.98 0 0 1 16 6c0-1.2.423-2.303 1.129-3.165a.54.54 0 0 0-.018-.724a.47.47 0 0 0-.692.014m1.422 1.421c.17-.218.489-.216.684-.02c.195.194.191.51.031.734A3 3 0 0 0 18 6c0 .649.206 1.25.556 1.74c.16.225.164.54-.03.735c-.196.195-.516.197-.685-.021A4 4 0 0 1 17 6c0-.925.314-1.776.84-2.454"></svg:path>`,
+})
+export class FluentPersonSoundSpatial20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial20RegularIcon],svg[fluent-person-sound-spatial-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2.87 9.165a.54.54 0 0 0 .017.724a.47.47 0 0 0 .692-.014A5.98 5.98 0 0 0 5 6c0-1.477-.534-2.83-1.42-3.875a.47.47 0 0 0-.692-.014a.54.54 0 0 0-.018.724A4.98 4.98 0 0 1 4 6a4.98 4.98 0 0 1-1.13 3.165m-1.397-.69c.195.195.515.197.684-.021c.527-.678.841-1.53.841-2.454s-.314-1.776-.84-2.454c-.17-.218-.49-.216-.685-.02c-.195.194-.191.51-.03.734c.35.49.555 1.091.555 1.74s-.206 1.25-.556 1.74c-.16.225-.164.54.031.735M10 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8M7 6a3 3 0 1 1 6 0a3 3 0 0 1-6 0m-1.991 5A2 2 0 0 0 3 13c0 1.691.833 2.966 2.135 3.797C6.417 17.614 8.145 18 10 18s3.583-.386 4.865-1.203C16.167 15.967 17 14.69 17 13a2 2 0 0 0-2-2zM4 13c0-.553.448-1 1.009-1H15a1 1 0 0 1 1 1c0 1.309-.622 2.284-1.673 2.953C13.257 16.636 11.735 17 10 17s-3.257-.364-4.327-1.047C4.623 15.283 4 14.31 4 13M16.419 2.125A5.98 5.98 0 0 0 15 6c0 1.477.534 2.83 1.419 3.875a.47.47 0 0 0 .692.014a.54.54 0 0 0 .018-.724A4.98 4.98 0 0 1 16 6c0-1.2.423-2.303 1.129-3.165a.54.54 0 0 0-.018-.724a.47.47 0 0 0-.692.014m1.422 1.421c.17-.218.489-.216.684-.02c.195.194.191.51.031.734A3 3 0 0 0 18 6c0 .649.206 1.25.556 1.74c.16.225.164.54-.03.735c-.196.195-.516.197-.685-.021A4 4 0 0 1 17 6c0-.925.314-1.776.84-2.454"></svg:path>`,
+})
+export class FluentPersonSoundSpatial20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial24FilledIcon],svg[fluent-person-sound-spatial-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.842 12.102c.265.319.742.317 1.035.024s.29-.765.032-1.09a6.47 6.47 0 0 1-1.405-4.037c0-1.525.525-2.928 1.405-4.036c.257-.325.261-.797-.032-1.09s-.77-.295-1.035.024a7.97 7.97 0 0 0-1.838 5.102c0 1.94.69 3.718 1.838 5.103m2.138-8.07c.246-.334.726-.33 1.019-.038s.284.765.06 1.113A3.5 3.5 0 0 0 22.504 7c0 .697.204 1.347.555 1.893c.224.348.233.82-.06 1.113c-.293.292-.773.295-1.02-.038A4.98 4.98 0 0 1 21.004 7c0-1.11.362-2.137.976-2.967M3.1 11.036c-.258.325-.262.797.031 1.09s.77.295 1.035-.024A7.97 7.97 0 0 0 6.004 7c0-1.94-.69-3.717-1.838-5.102c-.264-.32-.742-.317-1.035-.024s-.289.765-.031 1.09A6.47 6.47 0 0 1 4.504 7A6.47 6.47 0 0 1 3.1 11.036m-2.09-1.031c.293.293.773.296 1.019-.038c.613-.83.975-1.856.975-2.967a4.98 4.98 0 0 0-.975-2.967c-.246-.334-.726-.33-1.02-.038c-.292.293-.284.765-.06 1.113c.352.546.555 1.195.555 1.892S1.301 8.347.95 8.892c-.224.348-.232.82.06 1.113M17.755 14a2.25 2.25 0 0 1 2.248 2.25v.918a2.75 2.75 0 0 1-.512 1.598c-1.546 2.164-4.07 3.235-7.49 3.235c-3.422 0-5.945-1.072-7.487-3.236a2.75 2.75 0 0 1-.51-1.596v-.92A2.25 2.25 0 0 1 6.253 14zM12 2.005a5 5 0 1 1 0 10a5 5 0 0 1 0-10"></svg:path>`,
+})
+export class FluentPersonSoundSpatial24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial24RegularIcon],svg[fluent-person-sound-spatial-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.1 11.036c-.258.325-.262.797.031 1.09s.77.295 1.035-.024A7.97 7.97 0 0 0 6.004 7c0-1.94-.69-3.717-1.838-5.102c-.264-.32-.742-.317-1.035-.024s-.289.765-.031 1.09A6.47 6.47 0 0 1 4.504 7A6.47 6.47 0 0 1 3.1 11.036m-2.09-1.031c.293.293.773.296 1.019-.038c.613-.83.975-1.856.975-2.967a4.98 4.98 0 0 0-.975-2.967c-.246-.334-.726-.33-1.02-.038c-.292.293-.284.765-.06 1.113c.352.546.555 1.195.555 1.892S1.301 8.347.95 8.892c-.224.348-.232.82.06 1.113M17.755 14a2.25 2.25 0 0 1 2.248 2.25v.575c0 .894-.32 1.759-.9 2.438c-1.57 1.833-3.957 2.738-7.103 2.738s-5.532-.905-7.098-2.74a3.75 3.75 0 0 1-.898-2.434v-.578A2.25 2.25 0 0 1 6.253 14zm0 1.5H6.252a.75.75 0 0 0-.75.75v.577c0 .535.192 1.053.54 1.46c1.253 1.469 3.22 2.214 5.957 2.214c2.739 0 4.706-.745 5.963-2.213a2.25 2.25 0 0 0 .54-1.463v-.576a.75.75 0 0 0-.748-.749M12 2.005a5 5 0 1 1 0 10a5 5 0 0 1 0-10m0 1.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m7.842 8.598c.265.319.742.317 1.035.024s.29-.766.032-1.09A6.47 6.47 0 0 1 19.504 7c0-1.525.525-2.928 1.405-4.036c.257-.325.261-.797-.032-1.09s-.77-.295-1.035.024A7.97 7.97 0 0 0 18.004 7c0 1.94.69 3.718 1.838 5.103m2.138-8.07c.246-.334.726-.33 1.019-.038s.284.765.06 1.113A3.5 3.5 0 0 0 22.504 7c0 .697.204 1.347.555 1.893c.224.348.233.82-.06 1.112s-.773.296-1.02-.037A4.98 4.98 0 0 1 21.005 7c0-1.11.362-2.137.976-2.967"></svg:path>`,
+})
+export class FluentPersonSoundSpatial24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial28FilledIcon],svg[fluent-person-sound-spatial-28-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M24.666 13.833c-.293.293-.77.295-1.038-.021A8.96 8.96 0 0 1 21.5 8c0-2.216.8-4.245 2.128-5.813c.268-.316.745-.314 1.038-.021s.29.766.028 1.086A7.47 7.47 0 0 0 23 8c0 1.801.635 3.454 1.694 4.747c.262.32.265.793-.028 1.086m2.122-9.546c-.293-.293-.772-.295-1.027.032a5.97 5.97 0 0 0-1.261 3.68a5.97 5.97 0 0 0 1.261 3.681c.255.327.734.325 1.027.032s.287-.765.046-1.102A4.48 4.48 0 0 1 26 8c0-.973.309-1.874.834-2.61c.24-.338.247-.81-.046-1.103M21 16a3 3 0 0 1 3 3v.715C24 23.292 19.79 26 14 26S4 23.433 4 19.715V19a3 3 0 0 1 3-3zM14 2a6 6 0 1 1 0 12a6 6 0 0 1 0-12M3.837 13.833c-.293-.293-.29-.765-.027-1.086A7.47 7.47 0 0 0 5.503 8A7.47 7.47 0 0 0 3.81 3.252c-.263-.32-.266-.793.027-1.086s.77-.295 1.038.021a8.96 8.96 0 0 1 2.128 5.81v.006a8.96 8.96 0 0 1-2.128 5.809c-.268.316-.745.314-1.038.021M2.742 11.68c-.254.327-.733.325-1.026.032s-.287-.765-.047-1.102A4.48 4.48 0 0 0 2.503 8a4.48 4.48 0 0 0-.834-2.61c-.24-.338-.246-.81.047-1.103s.772-.295 1.026.032a5.97 5.97 0 0 1 1.261 3.68a5.97 5.97 0 0 1-1.261 3.681"></svg:path>`,
+})
+export class FluentPersonSoundSpatial28FilledIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial28RegularIcon],svg[fluent-person-sound-spatial-28-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M24.666 13.833c-.293.293-.77.295-1.038-.021A8.96 8.96 0 0 1 21.5 8c0-2.216.8-4.245 2.128-5.813c.268-.316.745-.314 1.038-.021s.29.766.028 1.086A7.47 7.47 0 0 0 23 8c0 1.801.635 3.454 1.694 4.747c.262.32.265.793-.028 1.086m2.122-9.546c-.293-.293-.772-.295-1.027.032a5.97 5.97 0 0 0-1.261 3.68a5.97 5.97 0 0 0 1.261 3.681c.255.327.734.325 1.027.032s.287-.765.046-1.102A4.48 4.48 0 0 1 26 8c0-.973.309-1.874.834-2.61c.24-.338.247-.81-.046-1.103M21 16a3 3 0 0 1 3 3v.715C24 23.292 19.79 26 14 26S4 23.433 4 19.715V19a3 3 0 0 1 3-3zM7 17.5a1.5 1.5 0 0 0-1.493 1.355L5.5 19v.715c0 2.674 3.389 4.785 8.5 4.785c4.926 0 8.355-2.105 8.496-4.624l.004-.161V19a1.5 1.5 0 0 0-1.355-1.493L21 17.5zM14 2a6 6 0 1 1 0 12a6 6 0 0 1 0-12m0 1.5a4.5 4.5 0 1 0 0 9a4.5 4.5 0 0 0 0-9M3.837 13.833c-.293-.293-.29-.765-.027-1.086A7.47 7.47 0 0 0 5.503 8A7.47 7.47 0 0 0 3.81 3.252c-.263-.32-.266-.793.027-1.086s.77-.295 1.038.021a8.96 8.96 0 0 1 2.128 5.81v.006a8.96 8.96 0 0 1-2.128 5.809c-.268.316-.745.314-1.038.021M2.742 11.68c-.254.327-.733.325-1.026.032s-.287-.765-.047-1.102A4.48 4.48 0 0 0 2.503 8a4.48 4.48 0 0 0-.834-2.61c-.24-.338-.246-.81.047-1.103s.772-.295 1.026.032a5.97 5.97 0 0 1 1.261 3.68a5.97 5.97 0 0 1-1.261 3.681"></svg:path>`,
+})
+export class FluentPersonSoundSpatial28RegularIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial32FilledIcon],svg[fluent-person-sound-spatial-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.099 2.315c-.352-.426-.99-.423-1.38-.033s-.385 1.02-.043 1.454A8.46 8.46 0 0 1 5.502 9a8.46 8.46 0 0 1-1.826 5.263c-.342.434-.347 1.064.043 1.454s1.028.393 1.38-.032A10.46 10.46 0 0 0 7.502 9c0-2.54-.902-4.87-2.403-6.685M1.244 13.242c.39.39 1.03.394 1.362-.047A6.97 6.97 0 0 0 4.002 9c0-1.574-.52-3.026-1.396-4.195c-.331-.442-.971-.438-1.362-.048c-.39.39-.38 1.02-.074 1.48A5 5 0 0 1 2.002 9a5 5 0 0 1-.832 2.763c-.306.46-.316 1.089.074 1.48M16 16a7 7 0 1 0 0-14a7 7 0 0 0 0 14m-8.5 2A3.5 3.5 0 0 0 4 21.5v.5c0 2.393 1.523 4.417 3.685 5.793C9.859 29.177 12.802 30 16 30s6.14-.823 8.315-2.207C26.477 26.417 28 24.393 28 22v-.5a3.5 3.5 0 0 0-3.5-3.5zM26.903 2.315c.352-.426.989-.423 1.38-.033s.385 1.02.042 1.454A8.46 8.46 0 0 0 26.5 9c0 1.987.682 3.816 1.825 5.263c.343.434.348 1.064-.043 1.454s-1.027.393-1.38-.032A10.46 10.46 0 0 1 24.5 9c0-2.54.902-4.87 2.403-6.685m2.493 2.49c.33-.442.97-.438 1.361-.048c.39.39.38 1.02.075 1.48A5 5 0 0 0 30 9c0 1.021.306 1.971.832 2.763c.306.46.316 1.089-.075 1.48c-.39.39-1.03.393-1.361-.048A6.97 6.97 0 0 1 28 9a6.97 6.97 0 0 1 1.396-4.195"></svg:path>`,
+})
+export class FluentPersonSoundSpatial32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial32RegularIcon],svg[fluent-person-sound-spatial-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M26.903 2.315c.352-.426.989-.423 1.38-.033s.385 1.02.042 1.454A8.46 8.46 0 0 0 26.5 9c0 1.987.682 3.816 1.825 5.263c.343.434.348 1.064-.043 1.454s-1.027.393-1.38-.032A10.46 10.46 0 0 1 24.5 9c0-2.54.902-4.87 2.403-6.685m2.493 2.49c.33-.442.97-.438 1.361-.048c.39.39.38 1.02.075 1.48A5 5 0 0 0 30 9c0 1.021.306 1.971.832 2.763c.306.46.316 1.089-.075 1.48c-.39.39-1.03.393-1.361-.048A6.97 6.97 0 0 1 28 9a6.97 6.97 0 0 1 1.396-4.195M5.099 2.315c-.352-.426-.99-.423-1.38-.033s-.385 1.02-.043 1.454A8.46 8.46 0 0 1 5.502 9a8.46 8.46 0 0 1-1.826 5.263c-.342.434-.347 1.064.043 1.454s1.028.393 1.38-.032A10.46 10.46 0 0 0 7.502 9c0-2.54-.902-4.87-2.403-6.685M1.244 13.242c.39.39 1.03.394 1.362-.047A6.97 6.97 0 0 0 4.002 9c0-1.574-.52-3.026-1.396-4.195c-.331-.442-.971-.438-1.362-.048c-.39.39-.38 1.02-.074 1.48A5 5 0 0 1 2.002 9a5 5 0 0 1-.832 2.763c-.306.46-.316 1.089.074 1.48M23 9A7 7 0 1 1 9 9a7 7 0 0 1 14 0m-2 0a5 5 0 1 0-10 0a5 5 0 0 0 10 0M7.5 18A3.5 3.5 0 0 0 4 21.5v.5c0 2.393 1.523 4.417 3.685 5.793C9.859 29.177 12.802 30 16 30s6.14-.823 8.315-2.207C26.477 26.417 28 24.393 28 22v-.5a3.5 3.5 0 0 0-3.5-3.5zM6 21.5A1.5 1.5 0 0 1 7.5 20h17a1.5 1.5 0 0 1 1.5 1.5v.5c0 1.473-.94 2.949-2.759 4.106C21.434 27.256 18.877 28 16 28s-5.434-.744-7.241-1.894C6.939 24.95 6 23.472 6 22z"></svg:path>`,
+})
+export class FluentPersonSoundSpatial32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial48FilledIcon],svg[fluent-person-sound-spatial-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.679 21.912c-.437.534-.443 1.322.045 1.81c.489.489 1.284.492 1.73-.035A14.94 14.94 0 0 0 12.003 14a14.94 14.94 0 0 0-3.547-9.687c-.447-.527-1.242-.524-1.73-.036c-.489.488-.483 1.276-.046 1.81A12.45 12.45 0 0 1 9.502 14c0 3.002-1.059 5.757-2.823 7.912m-3.49-1.725c.488.488 1.287.492 1.71-.053A9.96 9.96 0 0 0 7.002 14a9.96 9.96 0 0 0-2.103-6.135c-.423-.545-1.222-.54-1.71-.052s-.478 1.274-.077 1.836A7.47 7.47 0 0 1 4.502 14a7.47 7.47 0 0 1-1.39 4.351c-.401.562-.411 1.349.077 1.837M24 4c-5.523 0-10 4.477-10 10s4.477 10 10 10s10-4.477 10-10S29.523 4 24 4M12.25 28A4.25 4.25 0 0 0 8 32.249V33c0 3.755 1.942 6.567 4.92 8.38C15.85 43.163 19.786 44 24 44s8.15-.837 11.08-2.62C38.058 39.567 40 36.755 40 33v-.751A4.25 4.25 0 0 0 35.75 28zm27.297-4.313c.446.527 1.242.524 1.73.035c.488-.488.483-1.276.046-1.81A12.45 12.45 0 0 1 38.5 14a12.45 12.45 0 0 1 2.823-7.913c.437-.534.442-1.322-.046-1.81s-1.284-.491-1.73.036A14.94 14.94 0 0 0 36 14a14.94 14.94 0 0 0 3.547 9.687m3.555-15.822c.424-.545 1.223-.54 1.71-.052c.489.488.479 1.274.078 1.836A7.47 7.47 0 0 0 43.5 14c0 1.623.515 3.124 1.39 4.351c.4.562.411 1.349-.077 1.837s-1.287.492-1.71-.053A9.96 9.96 0 0 1 41 14c0-2.312.785-4.441 2.102-6.135"></svg:path>`,
+})
+export class FluentPersonSoundSpatial48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSoundSpatial48RegularIcon],svg[fluent-person-sound-spatial-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.679 21.912c-.437.534-.443 1.322.045 1.81c.489.489 1.284.492 1.73-.035A14.94 14.94 0 0 0 12.003 14a14.94 14.94 0 0 0-3.547-9.687c-.447-.527-1.242-.524-1.73-.036c-.489.488-.483 1.276-.046 1.81A12.45 12.45 0 0 1 9.502 14c0 3.002-1.059 5.757-2.823 7.912m-3.49-1.725c.488.488 1.287.492 1.71-.053A9.96 9.96 0 0 0 7.002 14a9.96 9.96 0 0 0-2.103-6.135c-.423-.545-1.222-.54-1.71-.052s-.478 1.274-.077 1.836A7.47 7.47 0 0 1 4.502 14a7.47 7.47 0 0 1-1.39 4.351c-.401.562-.411 1.349.077 1.837M24 4c-5.523 0-10 4.477-10 10s4.477 10 10 10s10-4.477 10-10S29.523 4 24 4m-7.5 10a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0m-4.25 14A4.25 4.25 0 0 0 8 32.249V33c0 3.755 1.942 6.567 4.92 8.38C15.85 43.163 19.786 44 24 44s8.15-.837 11.08-2.62C38.058 39.567 40 36.755 40 33v-.751A4.25 4.25 0 0 0 35.75 28zm-1.75 4.249a1.75 1.75 0 0 1 1.75-1.749h23.5c.967 0 1.75.783 1.75 1.749V33c0 2.744-1.36 4.808-3.72 6.245C31.37 40.712 27.932 41.5 24 41.5s-7.37-.788-9.78-2.255c-2.36-1.437-3.72-3.5-3.72-6.245zm29.047-8.562c.446.527 1.242.524 1.73.035c.488-.488.483-1.276.046-1.81A12.45 12.45 0 0 1 38.5 14a12.45 12.45 0 0 1 2.823-7.913c.437-.534.442-1.322-.046-1.81s-1.284-.491-1.73.036A14.94 14.94 0 0 0 36 14a14.94 14.94 0 0 0 3.547 9.687m3.555-15.822c.424-.545 1.223-.54 1.71-.052c.489.488.479 1.274.078 1.836A7.47 7.47 0 0 0 43.5 14c0 1.623.515 3.124 1.39 4.351c.4.562.411 1.349-.077 1.837s-1.287.492-1.71-.053A9.96 9.96 0 0 1 41 14c0-2.312.785-4.441 2.102-6.135"></svg:path>`,
+})
+export class FluentPersonSoundSpatial48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquare16FilledIcon],svg[fluent-person-square-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.5 2h7A2.5 2.5 0 0 1 14 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5v-7A2.5 2.5 0 0 1 4.5 2m5.25 6h-3.5c-.69 0-1.288.565-1.17 1.246c.187 1.086.816 2.254 2.92 2.254s2.733-1.168 2.92-2.254C11.038 8.566 10.44 8 9.75 8M8 7a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"></svg:path>`,
+})
+export class FluentPersonSquare16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquare16RegularIcon],svg[fluent-person-square-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.75 8h-3.5c-.69 0-1.288.565-1.17 1.246c.187 1.086.816 2.254 2.92 2.254s2.733-1.168 2.92-2.254C11.038 8.566 10.44 8 9.75 8M8 7a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3M2 4.5A2.5 2.5 0 0 1 4.5 2h7A2.5 2.5 0 0 1 14 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5zM4.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3z"></svg:path>`,
+})
+export class FluentPersonSquare16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquare20FilledIcon],svg[fluent-person-square-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 6a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3zm7-1a2 2 0 1 0 0 4a2 2 0 0 0 0-4m2.5 5h-5A1.5 1.5 0 0 0 6 11.5c0 1.116.459 2.01 1.212 2.615C7.953 14.71 8.947 15 10 15s2.047-.29 2.788-.885C13.54 13.51 14 12.616 14 11.5a1.5 1.5 0 0 0-1.5-1.5"></svg:path>`,
+})
+export class FluentPersonSquare20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquare20RegularIcon],svg[fluent-person-square-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 5a2 2 0 1 0 0 4a2 2 0 0 0 0-4m2.5 5h-5A1.5 1.5 0 0 0 6 11.5c0 1.116.459 2.01 1.212 2.615C7.953 14.71 8.947 15 10 15s2.047-.29 2.788-.885C13.54 13.51 14 12.616 14 11.5a1.5 1.5 0 0 0-1.5-1.5M6 3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zM4 6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"></svg:path>`,
+})
+export class FluentPersonSquare20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquare24FilledIcon],svg[fluent-person-square-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 6.25v11.5A3.25 3.25 0 0 0 6.25 21h11.5A3.25 3.25 0 0 0 21 17.75V6.25A3.25 3.25 0 0 0 17.75 3H6.25A3.25 3.25 0 0 0 3 6.25M15.5 12a1.5 1.5 0 0 1 1.5 1.5v.5c0 1.971-1.86 4-5 4s-5-2.029-5-4v-.5A1.5 1.5 0 0 1 8.5 12zM12 5.5a2.75 2.75 0 1 1 0 5.5a2.75 2.75 0 0 1 0-5.5"></svg:path>`,
+})
+export class FluentPersonSquare24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquare24RegularIcon],svg[fluent-person-square-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15.5 12a1.5 1.5 0 0 1 1.5 1.5v.5c0 1.971-1.86 4-5 4s-5-2.029-5-4v-.5A1.5 1.5 0 0 1 8.5 12zM12 5.5a2.75 2.75 0 1 1 0 5.5a2.75 2.75 0 0 1 0-5.5M6.25 3A3.25 3.25 0 0 0 3 6.25v11.5A3.25 3.25 0 0 0 6.25 21h11.5A3.25 3.25 0 0 0 21 17.75V6.25A3.25 3.25 0 0 0 17.75 3zM4.5 6.25c0-.966.784-1.75 1.75-1.75h11.5c.966 0 1.75.784 1.75 1.75v11.5a1.75 1.75 0 0 1-1.75 1.75H6.25a1.75 1.75 0 0 1-1.75-1.75z"></svg:path>`,
+})
+export class FluentPersonSquare24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquare32FilledIcon],svg[fluent-person-square-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 7.5v17A4.5 4.5 0 0 0 7.5 29h17a4.5 4.5 0 0 0 4.5-4.5v-17A4.5 4.5 0 0 0 24.5 3h-17A4.5 4.5 0 0 0 3 7.5m20 10.929c0 3.642-3.134 6.071-7 6.071s-7-2.429-7-6.071A2.43 2.43 0 0 1 11.429 16h9.142A2.43 2.43 0 0 1 23 18.429m-3.25-7.679a3.75 3.75 0 1 1-7.5 0a3.75 3.75 0 0 1 7.5 0"></svg:path>`,
+})
+export class FluentPersonSquare32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquare32RegularIcon],svg[fluent-person-square-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M23 18.429c0 3.642-3.134 6.071-7 6.071s-7-2.429-7-6.071A2.43 2.43 0 0 1 11.429 16h9.142A2.43 2.43 0 0 1 23 18.429m-3.25-7.679a3.75 3.75 0 1 1-7.5 0a3.75 3.75 0 0 1 7.5 0M7.5 3A4.5 4.5 0 0 0 3 7.5v17A4.5 4.5 0 0 0 7.5 29h17a4.5 4.5 0 0 0 4.5-4.5v-17A4.5 4.5 0 0 0 24.5 3zM5 7.5A2.5 2.5 0 0 1 7.5 5h17A2.5 2.5 0 0 1 27 7.5v17a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 5 24.5z"></svg:path>`,
+})
+export class FluentPersonSquare32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareAdd16FilledIcon],svg[fluent-person-square-add-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 3.5A2.5 2.5 0 0 1 3.5 1h7A2.5 2.5 0 0 1 13 3.5v2.707A5.5 5.5 0 0 0 11.5 6c-1.177 0-2.268.37-3.163 1H5.25c-.69 0-1.288.565-1.17 1.246c.158.913.628 1.886 2.027 2.17a5.5 5.5 0 0 0 .1 2.584H3.5A2.5 2.5 0 0 1 1 10.5zm4.5 1a1.5 1.5 0 1 0 3 0a1.5 1.5 0 0 0-3 0m10.5 7a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-4-2a.5.5 0 0 0-1 0V11H9.5a.5.5 0 0 0 0 1H11v1.5a.5.5 0 0 0 1 0V12h1.5a.5.5 0 0 0 0-1H12z"></svg:path>`,
+})
+export class FluentPersonSquareAdd16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareAdd16RegularIcon],svg[fluent-person-square-add-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.5 1A2.5 2.5 0 0 0 1 3.5v7A2.5 2.5 0 0 0 3.5 13h2.707a5.5 5.5 0 0 1-.185-1H3.5A1.5 1.5 0 0 1 2 10.5v-7A1.5 1.5 0 0 1 3.5 2h7A1.5 1.5 0 0 1 12 3.5v2.522q.516.048 1 .185V3.5A2.5 2.5 0 0 0 10.5 1zm4.837 6H5.25c-.69 0-1.288.565-1.17 1.246c.158.913.628 1.886 2.027 2.17A5.5 5.5 0 0 1 8.337 7M8.5 4.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m7.5 7a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-4-2a.5.5 0 0 0-1 0V11H9.5a.5.5 0 0 0 0 1H11v1.5a.5.5 0 0 0 1 0V12h1.5a.5.5 0 0 0 0-1H12z"></svg:path>`,
+})
+export class FluentPersonSquareAdd16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareAdd20FilledIcon],svg[fluent-person-square-add-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h3.6a5.5 5.5 0 0 1-.585-2.09c-.677-.127-1.298-.39-1.803-.795C6.46 13.51 6 12.616 6 11.5A1.5 1.5 0 0 1 7.5 10h3.837c.895-.63 1.986-1 3.163-1c.9 0 1.75.216 2.5.6V6a3 3 0 0 0-3-3zm2 4a2 2 0 1 1 4 0a2 2 0 0 1-4 0m11 7.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-4-2a.5.5 0 0 0-1 0V14h-1.5a.5.5 0 0 0 0 1H14v1.5a.5.5 0 0 0 1 0V15h1.5a.5.5 0 0 0 0-1H15z"></svg:path>`,
+})
+export class FluentPersonSquareAdd20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareAdd20RegularIcon],svg[fluent-person-square-add-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0m1.015 7.91A5.49 5.49 0 0 1 11.337 10H7.5A1.5 1.5 0 0 0 6 11.5c0 1.116.459 2.01 1.212 2.615c.505.405 1.126.668 1.803.796M3 6a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3.6a5.5 5.5 0 0 0-1-.393V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3.207q.149.524.393 1H6a3 3 0 0 1-3-3zm16 8.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-4-2a.5.5 0 0 0-1 0V14h-1.5a.5.5 0 0 0 0 1H14v1.5a.5.5 0 0 0 1 0V15h1.5a.5.5 0 0 0 0-1H15z"></svg:path>`,
+})
+export class FluentPersonSquareAdd20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareAdd24FilledIcon],svg[fluent-person-square-add-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 6.25v11.5A3.25 3.25 0 0 0 6.25 21h5.772a6.46 6.46 0 0 1-1.008-3.07C8.474 17.556 7 15.755 7 14v-.5A1.5 1.5 0 0 1 8.5 12h5.534a6.47 6.47 0 0 1 3.466-1a6.47 6.47 0 0 1 3.5 1.022V6.25A3.25 3.25 0 0 0 17.75 3H6.25A3.25 3.25 0 0 0 3 6.25m9-.75a2.75 2.75 0 1 1 0 5.5a2.75 2.75 0 0 1 0-5.5m11 12a5.5 5.5 0 1 0-11 0a5.5 5.5 0 0 0 11 0m-5 .5l.001 2.503a.5.5 0 1 1-1 0V18h-2.505a.5.5 0 0 1 0-1H17v-2.5a.5.5 0 1 1 1 0V17h2.497a.5.5 0 0 1 0 1z"></svg:path>`,
+})
+export class FluentPersonSquareAdd24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareAdd24RegularIcon],svg[fluent-person-square-add-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.5 6.25v5.063a6.5 6.5 0 0 1 1.5.709V6.25A3.25 3.25 0 0 0 17.75 3H6.25A3.25 3.25 0 0 0 3 6.25v11.5A3.25 3.25 0 0 0 6.25 21h5.772a6.5 6.5 0 0 1-.709-1.5H6.25a1.75 1.75 0 0 1-1.75-1.75V6.25c0-.966.784-1.75 1.75-1.75h11.5c.966 0 1.75.784 1.75 1.75M8.5 12h5.534a6.5 6.5 0 0 0-3.02 5.93C8.474 17.556 7 15.755 7 14v-.5A1.5 1.5 0 0 1 8.5 12M12 5.5a2.75 2.75 0 1 1 0 5.5a2.75 2.75 0 0 1 0-5.5m11 12a5.5 5.5 0 1 0-11 0a5.5 5.5 0 0 0 11 0m-5 .5l.001 2.503a.5.5 0 1 1-1 0V18h-2.505a.5.5 0 0 1 0-1H17v-2.5a.5.5 0 1 1 1 0V17h2.497a.5.5 0 0 1 0 1z"></svg:path>`,
+})
+export class FluentPersonSquareAdd24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareCheckmark16FilledIcon],svg[fluent-person-square-checkmark-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.5 1A2.5 2.5 0 0 0 1 3.5v7A2.5 2.5 0 0 0 3.5 13h2.707a5.5 5.5 0 0 1-.1-2.583c-1.4-.285-1.87-1.258-2.027-2.171C3.962 7.566 4.56 7 5.25 7h3.087c.895-.63 1.986-1 3.163-1a5.5 5.5 0 0 1 1.5.207V3.5A2.5 2.5 0 0 0 10.5 1zM7 6a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3m9 5.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.146-1.854a.5.5 0 0 0-.708 0L10.5 12.293l-.646-.647a.5.5 0 0 0-.708.708l1 1a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0 0-.708"></svg:path>`,
+})
+export class FluentPersonSquareCheckmark16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareCheckmark16RegularIcon],svg[fluent-person-square-checkmark-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 3.5A2.5 2.5 0 0 1 3.5 1h7A2.5 2.5 0 0 1 13 3.5v2.707a5.5 5.5 0 0 0-1-.185V3.5A1.5 1.5 0 0 0 10.5 2h-7A1.5 1.5 0 0 0 2 3.5v7A1.5 1.5 0 0 0 3.5 12h2.522q.048.516.185 1H3.5A2.5 2.5 0 0 1 1 10.5zM5.25 7h3.087a5.5 5.5 0 0 0-2.23 3.417c-1.4-.285-1.87-1.258-2.027-2.171C3.962 7.566 4.56 7 5.25 7M7 6a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m9 5.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.146-1.854a.5.5 0 0 0-.708 0L10.5 12.293l-.646-.647a.5.5 0 0 0-.708.708l1 1a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0 0-.708"></svg:path>`,
+})
+export class FluentPersonSquareCheckmark16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareCheckmark20FilledIcon],svg[fluent-person-square-checkmark-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 6a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3.6a5.5 5.5 0 0 0-2.5-.6c-1.177 0-2.268.37-3.163 1H7.5A1.5 1.5 0 0 0 6 11.5c0 1.116.459 2.01 1.212 2.615c.505.405 1.126.668 1.803.796c.055.748.26 1.454.585 2.089H6a3 3 0 0 1-3-3zm7-1a2 2 0 1 0 0 4a2 2 0 0 0 0-4m9 9.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.146-1.854a.5.5 0 0 0-.708 0L13.5 15.293l-.646-.647a.5.5 0 0 0-.708.708l1 1a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0 0-.708"></svg:path>`,
+})
+export class FluentPersonSquareCheckmark20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareCheckmark20RegularIcon],svg[fluent-person-square-checkmark-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 5a2 2 0 1 0 0 4a2 2 0 0 0 0-4m-1 9.5q0 .207.015.41c-.677-.127-1.298-.39-1.803-.795C6.46 13.51 6 12.616 6 11.5A1.5 1.5 0 0 1 7.5 10h3.837A5.5 5.5 0 0 0 9 14.5M6 3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h3.6a5.5 5.5 0 0 1-.393-1H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3.207q.524.149 1 .393V6a3 3 0 0 0-3-3zm13 11.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.146-1.854a.5.5 0 0 0-.708 0L13.5 15.293l-.646-.647a.5.5 0 0 0-.708.708l1 1a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0 0-.708"></svg:path>`,
+})
+export class FluentPersonSquareCheckmark20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareCheckmark24FilledIcon],svg[fluent-person-square-checkmark-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 6.25v11.5A3.25 3.25 0 0 0 6.25 21h5.772a6.46 6.46 0 0 1-1.008-3.07C8.474 17.556 7 15.755 7 14v-.5A1.5 1.5 0 0 1 8.5 12h5.534a6.47 6.47 0 0 1 3.466-1a6.47 6.47 0 0 1 3.5 1.022V6.25A3.25 3.25 0 0 0 17.75 3H6.25A3.25 3.25 0 0 0 3 6.25m9-.75a2.75 2.75 0 1 1 0 5.5a2.75 2.75 0 0 1 0-5.5m11 12a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-2.146-2.354a.5.5 0 0 0-.708 0L16.5 18.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708"></svg:path>`,
+})
+export class FluentPersonSquareCheckmark24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareCheckmark24RegularIcon],svg[fluent-person-square-checkmark-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.5 6.25v5.063a6.5 6.5 0 0 1 1.5.709V6.25A3.25 3.25 0 0 0 17.75 3H6.25A3.25 3.25 0 0 0 3 6.25v11.5A3.25 3.25 0 0 0 6.25 21h5.772a6.5 6.5 0 0 1-.709-1.5H6.25a1.75 1.75 0 0 1-1.75-1.75V6.25c0-.966.784-1.75 1.75-1.75h11.5c.966 0 1.75.784 1.75 1.75M11 17.5q0 .216.014.43C8.474 17.556 7 15.755 7 14v-.5A1.5 1.5 0 0 1 8.5 12h5.534A6.5 6.5 0 0 0 11 17.5m1-12a2.75 2.75 0 1 1 0 5.5a2.75 2.75 0 0 1 0-5.5m11 12a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-2.146-2.354a.5.5 0 0 0-.708 0L16.5 18.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708"></svg:path>`,
+})
+export class FluentPersonSquareCheckmark24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareCheckmark32FilledIcon],svg[fluent-person-square-checkmark-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 7.5A4.5 4.5 0 0 1 7.5 3h17A4.5 4.5 0 0 1 29 7.5v8.792A8.97 8.97 0 0 0 23 14c-2.143 0-4.112.75-5.657 2h-5.914A2.43 2.43 0 0 0 9 18.429c0 3.02 2.153 5.205 5.092 5.864a8.97 8.97 0 0 0 2.2 4.707H7.5A4.5 4.5 0 0 1 3 24.5zm16.75 3.25a3.75 3.75 0 1 0-7.5 0a3.75 3.75 0 0 0 7.5 0M23 15.5a7.5 7.5 0 1 1 0 15a7.5 7.5 0 0 1 0-15m4.53 4.72a.75.75 0 0 0-1.06 0l-4.72 4.72l-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.25-5.25a.75.75 0 0 0 0-1.06"></svg:path>`,
+})
+export class FluentPersonSquareCheckmark32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonSquareCheckmark32RegularIcon],svg[fluent-person-square-checkmark-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.5 3A4.5 4.5 0 0 0 3 7.5v17A4.5 4.5 0 0 0 7.5 29h8.792a9 9 0 0 1-1.357-2H7.5A2.5 2.5 0 0 1 5 24.5v-17A2.5 2.5 0 0 1 7.5 5h17A2.5 2.5 0 0 1 27 7.5v7.435c.728.362 1.4.82 2 1.357V7.5A4.5 4.5 0 0 0 24.5 3zM14 23a8.98 8.98 0 0 1 3.343-7h-5.914A2.43 2.43 0 0 0 9 18.429c0 3.02 2.153 5.205 5.092 5.864A9 9 0 0 1 14 23m5.75-12.25a3.75 3.75 0 1 1-7.5 0a3.75 3.75 0 0 1 7.5 0M23 15.5a7.5 7.5 0 1 1 0 15a7.5 7.5 0 0 1 0-15m4.53 4.72a.75.75 0 0 0-1.06 0l-4.72 4.72l-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.25-5.25a.75.75 0 0 0 0-1.06"></svg:path>`,
+})
+export class FluentPersonSquareCheckmark32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStanding16FilledIcon],svg[fluent-person-standing-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.5 4.5a1.75 1.75 0 1 0 .001-3.499A1.75 1.75 0 0 0 7.5 4.5m3.5 2v3c0 .551-.448 1-1 1V14a1 1 0 0 1-2 0v-3a.5.5 0 0 0-1 0v3a1 1 0 0 1-2 0v-3.5c-.552 0-1-.449-1-1v-3c0-.916.623-1.682 1.464-1.918A2.74 2.74 0 0 0 7.5 5.5c.81 0 1.532-.359 2.036-.918A2 2 0 0 1 11 6.5"></svg:path>`,
+})
+export class FluentPersonStanding16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStanding16RegularIcon],svg[fluent-person-standing-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.342 4.535c.255-.365.408-.807.408-1.285C9.75 2.009 8.74 1 7.5 1a2.253 2.253 0 0 0-2.25 2.25c0 .478.152.92.408 1.285A2 2 0 0 0 4 6.5v3c0 .551.448 1 1 1v3c0 .827.673 1.5 1.5 1.5h2c.827 0 1.5-.673 1.5-1.5v-3c.552 0 1-.449 1-1v-3c0-.986-.718-1.802-1.658-1.965M7.5 2c.689 0 1.25.561 1.25 1.25S8.189 4.5 7.5 4.5s-1.25-.561-1.25-1.25S6.811 2 7.5 2M10 9.5H9v4a.5.5 0 0 1-.5.5H8v-3a.5.5 0 0 0-1 0v3h-.5a.5.5 0 0 1-.5-.5v-4H5v-3c0-.551.448-1 1-1h3c.552 0 1 .449 1 1z"></svg:path>`,
+})
+export class FluentPersonStanding16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar16FilledIcon],svg[fluent-person-star-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.327 6.917A5.5 5.5 0 0 1 9.626 5.07a2.75 2.75 0 1 0-3.299 1.848M5 10.5c0-.9.216-1.75.6-2.5H3.5A1.5 1.5 0 0 0 2 9.5v.5c0 1.803 1.555 3.653 4.222 3.957A5.48 5.48 0 0 1 5 10.5m10 0a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-4.024-2.64a.494.494 0 0 0-.952 0l-.477 1.532H8c-.484 0-.686.647-.294.944l1.25.947l-.477 1.532c-.15.48.378.88.77.583l1.25-.947l1.25.947c.392.297.92-.103.77-.583l-.477-1.532l1.25-.947c.392-.297.19-.944-.294-.944h-1.546z"></svg:path>`,
+})
+export class FluentPersonStar16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar16RegularIcon],svg[fluent-person-star-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 10c0 1.803 1.555 3.653 4.222 3.957a5.5 5.5 0 0 1-.72-1.157C3.882 12.333 3 11.128 3 10v-.5a.5.5 0 0 1 .5-.5h1.707q.149-.524.393-1H3.5A1.5 1.5 0 0 0 2 9.5zm7.75-5.75q-.001.429-.124.82a5.5 5.5 0 0 0-1.385.414a1.75 1.75 0 1 0-.836.47a5.5 5.5 0 0 0-1.078.963A2.751 2.751 0 1 1 9.75 4.25M15 10.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-4.024-2.64a.494.494 0 0 0-.952 0l-.477 1.532H8c-.484 0-.686.647-.294.944l1.25.947l-.477 1.532c-.15.48.378.88.77.583l1.25-.947l1.25.947c.392.297.92-.103.77-.583l-.477-1.532l1.25-.947c.392-.297.19-.944-.294-.944h-1.546z"></svg:path>`,
+})
+export class FluentPersonStar16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar20FilledIcon],svg[fluent-person-star-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8m-4.991 9A2 2 0 0 0 2 13c0 1.691.833 2.966 2.135 3.797C5.417 17.614 7.145 18 9 18q.617 0 1.21-.057A5.48 5.48 0 0 1 9 14.5c0-1.33.472-2.55 1.257-3.5zM19 14.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-4.024-2.64a.494.494 0 0 0-.952 0l-.477 1.532H12c-.484 0-.686.647-.294.944l1.25.947l-.477 1.532c-.15.48.378.88.77.583l1.25-.947l1.25.947c.392.297.92-.103.77-.583l-.477-1.532l1.25-.947c.392-.297.19-.944-.294-.944h-1.545z"></svg:path>`,
+})
+export class FluentPersonStar20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar20RegularIcon],svg[fluent-person-star-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8M6 6a3 3 0 1 1 6 0a3 3 0 0 1-6 0m-1.991 5A2 2 0 0 0 2 13c0 1.691.833 2.966 2.135 3.797C5.417 17.614 7.145 18 9 18q.617 0 1.21-.057a5.5 5.5 0 0 1-.618-.958Q9.301 17 9 17c-1.735 0-3.257-.364-4.327-1.047C3.623 15.283 3 14.31 3 13c0-.553.448-1 1.009-1h5.59q.277-.538.658-1zM19 14.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-4.024-2.64a.494.494 0 0 0-.952 0l-.477 1.532H12c-.484 0-.686.647-.294.944l1.25.947l-.477 1.532c-.15.48.378.88.77.583l1.25-.947l1.25.947c.392.297.92-.103.77-.583l-.477-1.532l1.25-.947c.392-.297.19-.944-.294-.944h-1.545z"></svg:path>`,
+})
+export class FluentPersonStar20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar24FilledIcon],svg[fluent-person-star-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 17.5a6.47 6.47 0 0 1 1.022-3.5h-6.77a2.25 2.25 0 0 0-2.248 2.248v.92c0 .572.178 1.13.51 1.596C5.056 20.928 7.58 22 11 22q.9 0 1.717-.099A6.48 6.48 0 0 1 11 17.5m0-15.496a5 5 0 1 1 0 10a5 5 0 0 1 0-10M23 17.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-4.945-3.08a.577.577 0 0 0-1.11 0l-.557 1.788h-1.803c-.566 0-.8.754-.343 1.1l1.458 1.105l-.557 1.787c-.175.561.441 1.028.899.681l1.458-1.104l1.458 1.104c.458.347 1.074-.12.899-.68l-.557-1.788l1.458-1.104c.458-.347.223-1.101-.343-1.101h-1.803z"></svg:path>`,
+})
+export class FluentPersonStar24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar24RegularIcon],svg[fluent-person-star-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.314 15.5a6.5 6.5 0 0 1 .708-1.5h-6.77a2.25 2.25 0 0 0-2.248 2.248v.578c0 .892.318 1.756.898 2.435C5.468 21.095 7.854 22 11 22q.9 0 1.717-.1a6.5 6.5 0 0 1-.994-1.419q-.352.018-.723.018c-2.738 0-4.704-.745-5.957-2.213a2.25 2.25 0 0 1-.54-1.461v-.578a.75.75 0 0 1 .75-.749zM11 2.003a5 5 0 1 1 0 10a5 5 0 0 1 0-10m0 1.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7M23 17.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-4.945-3.08a.577.577 0 0 0-1.11 0l-.557 1.788h-1.803c-.566 0-.8.754-.343 1.1l1.458 1.105l-.557 1.787c-.175.561.441 1.028.899.681l1.458-1.104l1.458 1.104c.458.347 1.074-.12.899-.68l-.557-1.788l1.458-1.104c.458-.347.223-1.101-.343-1.101h-1.803z"></svg:path>`,
+})
+export class FluentPersonStar24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar28FilledIcon],svg[fluent-person-star-28-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 20.5c0 2.098.862 3.995 2.25 5.357q-1.077.142-2.25.143c-5.79 0-10-2.567-10-6.285V19a3 3 0 0 1 3-3h8.5a7.47 7.47 0 0 0-1.5 4.5M13 2a6 6 0 1 1 0 12a6 6 0 0 1 0-12m14 18.5a6.5 6.5 0 1 1-13 0a6.5 6.5 0 0 1 13 0m-5.786-3.96a.742.742 0 0 0-1.428 0l-.716 2.298h-2.318c-.727 0-1.03.97-.441 1.416l1.875 1.42l-.716 2.298c-.225.721.567 1.32 1.155.875l1.875-1.42l1.875 1.42c.588.446 1.38-.154 1.155-.875l-.716-2.298l1.875-1.42c.588-.445.286-1.416-.441-1.416H21.93z"></svg:path>`,
+})
+export class FluentPersonStar28FilledIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar28RegularIcon],svg[fluent-person-star-28-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.13 24.462c.318.509.694.977 1.12 1.395q-1.077.142-2.25.143c-5.79 0-10-2.567-10-6.285V19a3 3 0 0 1 3-3h8.5a7.5 7.5 0 0 0-.876 1.5H6a1.5 1.5 0 0 0-1.493 1.355L4.5 19v.715c0 2.674 3.389 4.785 8.5 4.785q.58 0 1.13-.038M13 2a6 6 0 1 1 0 12a6 6 0 0 1 0-12m0 1.5a4.5 4.5 0 1 0 0 9a4.5 4.5 0 0 0 0-9m14 17a6.5 6.5 0 1 1-13 0a6.5 6.5 0 0 1 13 0m-5.786-3.96a.742.742 0 0 0-1.428 0l-.716 2.298h-2.318c-.727 0-1.03.97-.441 1.416l1.875 1.42l-.716 2.298c-.225.721.567 1.32 1.155.875l1.875-1.42l1.875 1.42c.588.446 1.38-.154 1.155-.875l-.716-2.298l1.875-1.42c.588-.445.286-1.416-.441-1.416H21.93z"></svg:path>`,
+})
+export class FluentPersonStar28RegularIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar32FilledIcon],svg[fluent-person-star-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15 16a7 7 0 1 0 0-14a7 7 0 0 0 0 14m-8.5 2A3.5 3.5 0 0 0 3 21.5v.5c0 2.393 1.523 4.417 3.685 5.793C8.859 29.177 11.802 30 15 30q1.118-.001 2.185-.13A8.98 8.98 0 0 1 14 23c0-1.85.558-3.57 1.516-5zm24 5a7.5 7.5 0 1 1-15 0a7.5 7.5 0 0 1 15 0m-8.212-4.862l-.94 2.828h-2.994c-.731 0-1.03.938-.434 1.361l2.406 1.707l-.929 2.792c-.228.687.555 1.267 1.146.848L23 25.931l2.457 1.743c.591.42 1.374-.16 1.146-.848l-.93-2.792l2.407-1.707c.597-.423.297-1.361-.434-1.361h-2.994l-.94-2.828c-.228-.684-1.196-.684-1.424 0"></svg:path>`,
+})
+export class FluentPersonStar32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar32RegularIcon],svg[fluent-person-star-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M22 9A7 7 0 1 1 8 9a7 7 0 0 1 14 0m-2 0a5 5 0 1 0-10 0a5 5 0 0 0 10 0M6.5 18A3.5 3.5 0 0 0 3 21.5v.5c0 2.393 1.523 4.417 3.685 5.793C8.859 29.177 11.802 30 15 30q1.118-.001 2.185-.13a9 9 0 0 1-1.675-1.878Q15.256 28 15 28c-2.877 0-5.434-.744-7.241-1.894C5.939 24.95 5 23.472 5 22v-.5A1.5 1.5 0 0 1 6.5 20h8.012a9 9 0 0 1 1.004-2zm24 5a7.5 7.5 0 1 1-15 0a7.5 7.5 0 0 1 15 0m-8.212-4.862l-.94 2.828h-2.994c-.731 0-1.03.938-.434 1.361l2.406 1.707l-.929 2.792c-.228.687.555 1.267 1.146.848L23 25.931l2.457 1.743c.591.42 1.374-.16 1.146-.848l-.93-2.792l2.407-1.707c.597-.423.297-1.361-.434-1.361h-2.994l-.94-2.828c-.228-.684-1.196-.684-1.424 0"></svg:path>`,
+})
+export class FluentPersonStar32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar48FilledIcon],svg[fluent-person-star-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M24 4c-5.523 0-10 4.477-10 10s4.477 10 10 10s10-4.477 10-10S29.523 4 24 4M12.25 28A4.25 4.25 0 0 0 8 32.249V33c0 3.755 1.942 6.567 4.92 8.38C15.85 43.163 19.786 44 24 44q.799 0 1.58-.04A12.96 12.96 0 0 1 22 35c0-2.577.75-4.98 2.044-7zM46 35c0 6.075-4.925 11-11 11s-11-4.925-11-11s4.925-11 11-11s11 4.925 11 11m-9.81-6.599a1.236 1.236 0 0 0-2.38 0l-1.194 3.83h-3.862c-1.213 0-1.716 1.617-.736 2.36l3.125 2.366l-1.194 3.83c-.374 1.201.945 2.2 1.926 1.458L35 39.878l3.125 2.367c.98.743 2.3-.257 1.925-1.458l-1.193-3.83l3.125-2.367c.98-.742.477-2.36-.736-2.36h-3.862z"></svg:path>`,
+})
+export class FluentPersonStar48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentPersonStar48RegularIcon],svg[fluent-person-star-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M24 4c-5.523 0-10 4.477-10 10s4.477 10 10 10s10-4.477 10-10S29.523 4 24 4m-7.5 10a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0m-4.25 14A4.25 4.25 0 0 0 8 32.249V33c0 3.755 1.942 6.567 4.92 8.38C15.85 43.163 19.786 44 24 44q.799 0 1.58-.04a13 13 0 0 1-1.841-2.461c-3.824-.034-7.163-.82-9.519-2.254c-2.36-1.437-3.72-3.5-3.72-6.245v-.751a1.75 1.75 0 0 1 1.75-1.749H22.8c.325-.882.744-1.72 1.244-2.5zM46 35c0 6.075-4.925 11-11 11s-11-4.925-11-11s4.925-11 11-11s11 4.925 11 11m-9.81-6.599a1.236 1.236 0 0 0-2.38 0l-1.194 3.83h-3.862c-1.213 0-1.716 1.617-.736 2.36l3.125 2.366l-1.194 3.83c-.374 1.201.945 2.2 1.926 1.458L35 39.878l3.125 2.367c.98.743 2.3-.257 1.925-1.458l-1.193-3.83l3.125-2.367c.98-.742.477-2.36-.736-2.36h-3.862z"></svg:path>`,
+})
+export class FluentPersonStar48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentPersonStarburst16FilledIcon],svg[fluent-person-starburst-16-filled-icon]',
   host: {
     role: 'img',
@@ -7510,992 +8496,6 @@ export class FluentPlugDisconnected20RegularIcon {
 })
 export class FluentPlugDisconnected24FilledIcon {
   readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPlugDisconnected24RegularIcon],svg[fluent-plug-disconnected-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21.78 3.28a.75.75 0 0 0-1.06-1.06l-2.012 2.012a4.25 4.25 0 0 0-5.463.462l-1.068 1.069a1.75 1.75 0 0 0 0 2.474l3.585 3.586a1.75 1.75 0 0 0 2.475 0l1.068-1.068a4.25 4.25 0 0 0 .463-5.463zm-3.585 2.475l.022.023l.003.002l.002.003l.023.022a2.75 2.75 0 0 1 0 3.89l-1.068 1.067a.25.25 0 0 1-.354 0l-3.586-3.585a.25.25 0 0 1 0-.354l1.068-1.068a2.75 2.75 0 0 1 3.89 0M10.78 11.28a.75.75 0 1 0-1.06-1.06L8 11.94l-.47-.47a.75.75 0 0 0-1.06 0l-1.775 1.775a4.25 4.25 0 0 0-.463 5.463L2.22 20.72a.75.75 0 1 0 1.06 1.06l2.012-2.012a4.25 4.25 0 0 0 5.463-.463l1.775-1.775a.75.75 0 0 0 0-1.06l-.47-.47l1.72-1.72a.75.75 0 1 0-1.06-1.06L11 14.94L9.06 13zm-3.314 2.247l.004.003l.003.004l2.993 2.993l.004.003l.003.004l.466.466l-1.244 1.245a2.75 2.75 0 0 1-3.89 0l-.05-.05a2.75 2.75 0 0 1 0-3.89L7 13.062z"></svg:path>`,
-})
-export class FluentPlugDisconnected24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPlugDisconnected28FilledIcon],svg[fluent-plug-disconnected-28-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M22.74 6.327a5.5 5.5 0 0 1-.495 7.212L20.3 15.483a.75.75 0 0 1-1.06 0l-6.718-6.717a.75.75 0 0 1 0-1.06l1.945-1.945a5.5 5.5 0 0 1 7.212-.495l3.044-3.044a.75.75 0 0 1 1.061 1.06zm-9.963 5.949a.75.75 0 0 0-1.06-1.061L9.59 13.341l-.822-.822a.75.75 0 0 0-1.06 0l-1.945 1.944a5.5 5.5 0 0 0-.495 7.212L2.224 24.72a.75.75 0 1 0 1.06 1.06l3.045-3.044a5.5 5.5 0 0 0 7.212-.494l1.944-1.945a.75.75 0 0 0 0-1.06l-.827-.828l2.126-2.125a.75.75 0 1 0-1.061-1.06l-2.125 2.125l-2.947-2.947z"></svg:path>`,
-})
-export class FluentPlugDisconnected28FilledIcon {
-  readonly viewBox = input("0 0 28 28")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPlugDisconnected28RegularIcon],svg[fluent-plug-disconnected-28-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M22.74 6.327a5.5 5.5 0 0 1-.495 7.212L20.3 15.483a.75.75 0 0 1-1.06 0l-6.718-6.717a.75.75 0 0 1 0-1.06l1.945-1.945a5.5 5.5 0 0 1 7.212-.495l3.044-3.044a.75.75 0 0 1 1.061 1.06zm-2.97 7.566l1.414-1.415a4 4 0 1 0-5.657-5.657l-1.414 1.415zm-6.993-2.678a.75.75 0 0 1 0 1.06l-2.126 2.127l2.947 2.947l2.125-2.126a.75.75 0 0 1 1.06 1.061l-2.125 2.126l.827.826a.75.75 0 0 1 0 1.061l-1.944 1.945a5.5 5.5 0 0 1-7.212.494l-3.045 3.045a.75.75 0 0 1-1.06-1.06l3.044-3.046a5.5 5.5 0 0 1 .495-7.212l1.944-1.944a.75.75 0 0 1 1.06 0l.823.822l2.127-2.126a.75.75 0 0 1 1.06 0M6.83 21.188a4 4 0 0 0 5.65-.007l1.414-1.414l-5.657-5.657l-1.414 1.414a4 4 0 0 0-.006 5.65l.006.007z"></svg:path>`,
-})
-export class FluentPlugDisconnected28RegularIcon {
-  readonly viewBox = input("0 0 28 28")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPlugDisconnected48FilledIcon],svg[fluent-plug-disconnected-48-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M43.634 4.366a1.25 1.25 0 0 1 0 1.768l-4.913 4.913a9.253 9.253 0 0 1-.744 12.244l-3.343 3.343a1.25 1.25 0 0 1-1.768 0l-11.5-11.5a1.25 1.25 0 0 1 0-1.768l3.343-3.343a9.25 9.25 0 0 1 12.244-.743l4.913-4.914a1.25 1.25 0 0 1 1.768 0M9.28 36.953l-4.914 4.913a1.25 1.25 0 0 0 1.768 1.768l4.913-4.913a9.253 9.253 0 0 0 12.244-.744l3.343-3.343a1.25 1.25 0 0 0 0-1.768L25.268 31.5l3.366-3.366a1.25 1.25 0 0 0-1.768-1.768L23.5 29.732L18.268 24.5l3.366-3.366a1.25 1.25 0 0 0-1.768-1.768L16.5 22.732l-1.366-1.366a1.25 1.25 0 0 0-1.768 0l-3.343 3.343a9.25 9.25 0 0 0-.743 12.244"></svg:path>`,
-})
-export class FluentPlugDisconnected48FilledIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPlugDisconnected48RegularIcon],svg[fluent-plug-disconnected-48-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M43.634 4.366a1.25 1.25 0 0 1 0 1.768l-4.913 4.913a9.253 9.253 0 0 1-.744 12.244l-3.343 3.343a1.25 1.25 0 0 1-1.768 0l-11.5-11.5a1.25 1.25 0 0 1 0-1.768l3.343-3.343a9.25 9.25 0 0 1 12.244-.743l4.913-4.914a1.25 1.25 0 0 1 1.768 0m-7.611 7.425a6.75 6.75 0 0 0-9.546 0l-2.46 2.459l9.733 9.732l2.46-2.459a6.75 6.75 0 0 0 0-9.546zM9.28 36.953l-4.914 4.913a1.25 1.25 0 0 0 1.768 1.768l4.913-4.913a9.253 9.253 0 0 0 12.244-.744l3.343-3.343a1.25 1.25 0 0 0 0-1.768L25.268 31.5l3.366-3.366a1.25 1.25 0 0 0-1.768-1.768L23.5 29.732L18.268 24.5l3.366-3.366a1.25 1.25 0 0 0-1.768-1.768L16.5 22.732l-1.366-1.366a1.25 1.25 0 0 0-1.768 0l-3.343 3.343a9.25 9.25 0 0 0-.743 12.244m2.51-10.476l2.46-2.46l9.732 9.733l-2.459 2.46a6.75 6.75 0 0 1-9.546 0l-.186-.187a6.75 6.75 0 0 1 0-9.546"></svg:path>`,
-})
-export class FluentPlugDisconnected48RegularIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPointScan20FilledIcon],svg[fluent-point-scan-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9 2.5a.5.5 0 0 0-1 0v4.025A5 5 0 0 0 3.525 11H8V6.525a5 5 0 0 1 1 0zM2.5 11h1.025a5 5 0 0 0 0 1H2.5a.5.5 0 0 1 0-1M8 17.5v-1.025a5 5 0 0 0 1 0V17.5a.5.5 0 0 1-1 0m5.476-5.5H17.5a.5.5 0 0 0 0-1h-4.025a5 5 0 0 1 0 1H9v4.475A5 5 0 0 0 13.476 12M8 16.475A5 5 0 0 1 3.525 12H8zM9 11h4.475A5 5 0 0 0 9 6.525z"></svg:path>`,
-})
-export class FluentPointScan20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPointScan20RegularIcon],svg[fluent-point-scan-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.5 2a.5.5 0 0 1 .5.5v4.025A5 5 0 0 1 13.475 11H17.5a.5.5 0 0 1 0 1h-4.025A5 5 0 0 1 9 16.475V17.5a.5.5 0 0 1-1 0v-1.025A5 5 0 0 1 3.525 12H2.5a.5.5 0 0 1 0-1h1.025A5 5 0 0 1 8 6.525V2.5a.5.5 0 0 1 .5-.5M4.531 12A4 4 0 0 0 8 15.47V12zM8 11V7.531A4 4 0 0 0 4.531 11zm1 1v3.47A4 4 0 0 0 12.47 12zm3.47-1A4 4 0 0 0 9 7.531V11z"></svg:path>`,
-})
-export class FluentPointScan20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPointScan24FilledIcon],svg[fluent-point-scan-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.25 2a.75.75 0 0 1 .743.648L11 2.75v4.794A6.25 6.25 0 0 1 16.457 13h4.794a.75.75 0 0 1 .102 1.493l-.102.007h-4.794A6.25 6.25 0 0 1 11 19.956v1.295a.75.75 0 0 1-1.494.102L9.5 21.25v-1.295a6.25 6.25 0 0 1-5.455-5.454H2.75a.75.75 0 0 1-.102-1.494L2.75 13h1.294A6.25 6.25 0 0 1 9.5 7.544V2.75a.75.75 0 0 1 .75-.75m0 5.5q-.381 0-.75.044V13H4.044a6.3 6.3 0 0 0 0 1.5H9.5v5.455a6.3 6.3 0 0 0 1.5 0V14.5h5.456a6.3 6.3 0 0 0 0-1.5H11V7.544a6 6 0 0 0-.75-.044"></svg:path>`,
-})
-export class FluentPointScan24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPointScan24RegularIcon],svg[fluent-point-scan-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.25 2a.75.75 0 0 1 .743.648L11 2.75v4.794A6.25 6.25 0 0 1 16.457 13h4.794a.75.75 0 0 1 .102 1.493l-.102.007h-4.794A6.25 6.25 0 0 1 11 19.956v1.295a.75.75 0 0 1-1.494.102L9.5 21.25v-1.295a6.25 6.25 0 0 1-5.455-5.454H2.75a.75.75 0 0 1-.102-1.494L2.75 13h1.294A6.25 6.25 0 0 1 9.5 7.544V2.75a.75.75 0 0 1 .75-.75M9.5 14.5H5.559A4.75 4.75 0 0 0 9.5 18.442zm5.442 0H11v3.941a4.75 4.75 0 0 0 3.941-3.94M9.5 9.059A4.75 4.75 0 0 0 5.56 13H9.5zm1.5 0V13h3.942a4.755 4.755 0 0 0-3.726-3.902z"></svg:path>`,
-})
-export class FluentPointScan24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPoll16FilledIcon],svg[fluent-poll-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 3a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0zM1 9a2 2 0 1 1 4 0v4a2 2 0 1 1-4 0zm10-2a2 2 0 1 1 4 0v6a2 2 0 1 1-4 0z"></svg:path>`,
-})
-export class FluentPoll16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPoll16RegularIcon],svg[fluent-poll-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 1a2 2 0 0 0-2 2v10a2 2 0 1 0 4 0V3a2 2 0 0 0-2-2m1 2v10a1 1 0 1 1-2 0V3a1 1 0 0 1 2 0M3 7a2 2 0 0 0-2 2v4a2 2 0 1 0 4 0V9a2 2 0 0 0-2-2m1 6a1 1 0 1 1-2 0V9a1 1 0 0 1 2 0zm7-6a2 2 0 1 1 4 0v6a2 2 0 1 1-4 0zm3 0a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0z"></svg:path>`,
-})
-export class FluentPoll16RegularIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPoll20FilledIcon],svg[fluent-poll-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10 2a2 2 0 0 0-2 2v12a2 2 0 1 0 4 0V4a2 2 0 0 0-2-2m-6 8a2 2 0 0 0-2 2v4a2 2 0 1 0 4 0v-4a2 2 0 0 0-2-2m12-4a2 2 0 0 0-2 2v8a2 2 0 1 0 4 0V8a2 2 0 0 0-2-2"></svg:path>`,
-})
-export class FluentPoll20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPoll20RegularIcon],svg[fluent-poll-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 4a2 2 0 1 1 4 0v12a2 2 0 1 1-4 0zm2-1a1 1 0 0 0-1 1v12a1 1 0 1 0 2 0V4a1 1 0 0 0-1-1m-8 9a2 2 0 1 1 4 0v4a2 2 0 1 1-4 0zm2-1a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0v-4a1 1 0 0 0-1-1m12-5a2 2 0 0 0-2 2v8a2 2 0 1 0 4 0V8a2 2 0 0 0-2-2m-1 2a1 1 0 1 1 2 0v8a1 1 0 1 1-2 0z"></svg:path>`,
-})
-export class FluentPoll20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPoll24FilledIcon],svg[fluent-poll-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.752 2a2.75 2.75 0 0 1 2.752 2.752V19.25a2.752 2.752 0 1 1-5.504 0V4.752A2.75 2.75 0 0 1 11.752 2m7 5a2.75 2.75 0 0 1 2.752 2.752v9.498a2.752 2.752 0 1 1-5.504 0V9.752A2.75 2.75 0 0 1 18.752 7m-14 5a2.75 2.75 0 0 1 2.752 2.752v4.498a2.752 2.752 0 0 1-5.504 0v-4.498A2.75 2.75 0 0 1 4.752 12"></svg:path>`,
-})
-export class FluentPoll24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPoll24RegularIcon],svg[fluent-poll-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.752 2a2.75 2.75 0 0 1 2.752 2.752V19.25a2.752 2.752 0 1 1-5.504 0V4.752A2.75 2.75 0 0 1 11.752 2m7 5a2.75 2.75 0 0 1 2.752 2.752v9.498a2.752 2.752 0 1 1-5.504 0V9.752A2.75 2.75 0 0 1 18.752 7m-14 5a2.75 2.75 0 0 1 2.752 2.752v4.498a2.752 2.752 0 0 1-5.504 0v-4.498A2.75 2.75 0 0 1 4.752 12m7-8.5c-.692 0-1.252.56-1.252 1.252V19.25a1.252 1.252 0 0 0 2.504 0V4.752c0-.692-.56-1.252-1.252-1.252m7 5c-.691 0-1.252.56-1.252 1.252v9.498a1.252 1.252 0 0 0 2.504 0V9.752c0-.692-.56-1.252-1.252-1.252m-14 5c-.692 0-1.252.56-1.252 1.252v4.498a1.252 1.252 0 1 0 2.504 0v-4.498c0-.692-.56-1.252-1.252-1.252"></svg:path>`,
-})
-export class FluentPoll24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPoll32FilledIcon],svg[fluent-poll-32-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 6.5a3.5 3.5 0 1 1 7 0v19a3.5 3.5 0 1 1-7 0zM25.5 9a3.5 3.5 0 0 0-3.5 3.5v13a3.5 3.5 0 1 0 7 0v-13A3.5 3.5 0 0 0 25.5 9M2 18.5a3.5 3.5 0 1 1 7 0v7a3.5 3.5 0 1 1-7 0z"></svg:path>`,
-})
-export class FluentPoll32FilledIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPoll32LightIcon],svg[fluent-poll-32-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15.5 3A3.5 3.5 0 0 1 19 6.5v19a3.5 3.5 0 1 1-7 0v-19A3.5 3.5 0 0 1 15.5 3m0 1A2.5 2.5 0 0 0 13 6.5v19a2.5 2.5 0 0 0 5 0v-19A2.5 2.5 0 0 0 15.5 4M29 12.5v13a3.5 3.5 0 1 1-7 0v-13a3.5 3.5 0 1 1 7 0M25.5 10a2.5 2.5 0 0 0-2.5 2.5v13a2.5 2.5 0 0 0 5 0v-13a2.5 2.5 0 0 0-2.5-2.5M9 25.5v-7a3.5 3.5 0 1 0-7 0v7a3.5 3.5 0 1 0 7 0m-6-7a2.5 2.5 0 0 1 5 0v7a2.5 2.5 0 0 1-5 0z"></svg:path>`,
-})
-export class FluentPoll32LightIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPoll32RegularIcon],svg[fluent-poll-32-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 6.5a3.5 3.5 0 1 1 7 0v19a3.5 3.5 0 1 1-7 0zM15.5 5A1.5 1.5 0 0 0 14 6.5v19a1.5 1.5 0 0 0 3 0v-19A1.5 1.5 0 0 0 15.5 5m6.5 7.5a3.5 3.5 0 1 1 7 0v13a3.5 3.5 0 1 1-7 0zm3.5-1.5a1.5 1.5 0 0 0-1.5 1.5v13a1.5 1.5 0 0 0 3 0v-13a1.5 1.5 0 0 0-1.5-1.5m-20 4A3.5 3.5 0 0 0 2 18.5v7a3.5 3.5 0 1 0 7 0v-7A3.5 3.5 0 0 0 5.5 15M4 18.5a1.5 1.5 0 0 1 3 0v7a1.5 1.5 0 0 1-3 0z"></svg:path>`,
-})
-export class FluentPoll32RegularIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollHorizontal16FilledIcon],svg[fluent-poll-horizontal-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13 6a2 2 0 1 1 0 4H3a2 2 0 1 1 0-4zM7 1a2 2 0 1 1 0 4H3a2 2 0 1 1 0-4zm2 10a2 2 0 1 1 0 4H3a2 2 0 1 1 0-4z"></svg:path>`,
-})
-export class FluentPollHorizontal16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollHorizontal16RegularIcon],svg[fluent-poll-horizontal-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15 8a2 2 0 0 0-2-2H3a2 2 0 1 0 0 4h10a2 2 0 0 0 2-2m-2 1H3a1 1 0 1 1 0-2h10a1 1 0 1 1 0 2M9 3a2 2 0 0 0-2-2H3a2 2 0 1 0 0 4h4a2 2 0 0 0 2-2M3 4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2zm6 7a2 2 0 1 1 0 4H3a2 2 0 1 1 0-4zm0 3a1 1 0 1 0 0-2H3a1 1 0 1 0 0 2z"></svg:path>`,
-})
-export class FluentPollHorizontal16RegularIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollHorizontal20FilledIcon],svg[fluent-poll-horizontal-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18 10a2 2 0 0 0-2-2H4a2 2 0 1 0 0 4h12a2 2 0 0 0 2-2m-8-6a2 2 0 0 0-2-2H4a2 2 0 1 0 0 4h4a2 2 0 0 0 2-2m4 12a2 2 0 0 0-2-2H4a2 2 0 1 0 0 4h8a2 2 0 0 0 2-2"></svg:path>`,
-})
-export class FluentPollHorizontal20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollHorizontal20RegularIcon],svg[fluent-poll-horizontal-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16 8a2 2 0 1 1 0 4H4a2 2 0 1 1 0-4zm1 2a1 1 0 0 0-1-1H4a1 1 0 0 0 0 2h12a1 1 0 0 0 1-1M8 2a2 2 0 1 1 0 4H4a2 2 0 1 1 0-4zm1 2a1 1 0 0 0-1-1H4a1 1 0 0 0 0 2h4a1 1 0 0 0 1-1m5 12a2 2 0 0 0-2-2H4a2 2 0 1 0 0 4h8a2 2 0 0 0 2-2m-2-1a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z"></svg:path>`,
-})
-export class FluentPollHorizontal20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollHorizontal24FilledIcon],svg[fluent-poll-horizontal-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M22 11.752a2.75 2.75 0 0 1-2.751 2.752h-14.5A2.752 2.752 0 1 1 4.75 9h14.5A2.75 2.75 0 0 1 22 11.752m-5 7a2.75 2.75 0 0 1-2.751 2.752h-9.5a2.752 2.752 0 1 1 0-5.504h9.5A2.75 2.75 0 0 1 17 18.752m-5-14a2.75 2.75 0 0 1-2.752 2.752H4.75A2.752 2.752 0 1 1 4.75 2h4.498A2.75 2.75 0 0 1 12 4.752"></svg:path>`,
-})
-export class FluentPollHorizontal24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollHorizontal24RegularIcon],svg[fluent-poll-horizontal-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M22 11.752a2.75 2.75 0 0 1-2.751 2.752h-14.5A2.752 2.752 0 1 1 4.75 9h14.5A2.75 2.75 0 0 1 22 11.752m-5 7a2.75 2.75 0 0 1-2.751 2.752h-9.5a2.752 2.752 0 1 1 0-5.504h9.5A2.75 2.75 0 0 1 17 18.752m-5-14a2.75 2.75 0 0 1-2.752 2.752H4.75A2.752 2.752 0 1 1 4.75 2h4.498A2.75 2.75 0 0 1 12 4.752m8.5 7c0-.692-.56-1.252-1.251-1.252h-14.5a1.252 1.252 0 0 0 0 2.504h14.5c.69 0 1.251-.56 1.251-1.252m-5 7c0-.691-.56-1.252-1.251-1.252h-9.5a1.252 1.252 0 0 0 0 2.504h9.5c.69 0 1.251-.56 1.251-1.252m-5-14c0-.692-.56-1.252-1.252-1.252H4.75a1.252 1.252 0 1 0 0 2.504h4.498c.692 0 1.252-.56 1.252-1.252"></svg:path>`,
-})
-export class FluentPollHorizontal24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollOff16FilledIcon],svg[fluent-poll-off-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 6.707V13a2 2 0 1 0 4 0v-2.293l1 1V13a2 2 0 0 0 3.016 1.723l.13.13a.5.5 0 0 0 .708-.707l-13-13a.5.5 0 1 0-.708.708zM11 7v1.879l4 4V7a2 2 0 1 0-4 0M6 3v.879l4 4V3a2 2 0 1 0-4 0M1 9a2 2 0 1 1 4 0v4a2 2 0 1 1-4 0z"></svg:path>`,
-})
-export class FluentPollOff16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollOff16RegularIcon],svg[fluent-poll-off-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 6.707L1.146 1.854a.5.5 0 1 1 .708-.708l13 13a.5.5 0 0 1-.708.708l-.13-.13A2 2 0 0 1 11 13v-1.294l-1-1V13a2 2 0 1 1-4 0zm3 3l-2-2V13a1 1 0 1 0 2 0zm3 3V13a1 1 0 0 0 1.259.966zM9 3v3.879l1 1V3a2 2 0 1 0-4 0v.879l1 1V3a1 1 0 0 1 2 0m2 5.879l1 1V7a1 1 0 1 1 2 0v4.879l1 1V7a2 2 0 1 0-4 0zM3 7a2 2 0 0 0-2 2v4a2 2 0 1 0 4 0V9a2 2 0 0 0-2-2m1 6a1 1 0 1 1-2 0V9a1 1 0 0 1 2 0z"></svg:path>`,
-})
-export class FluentPollOff16RegularIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollOff20FilledIcon],svg[fluent-poll-off-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 8.707V16a2 2 0 1 0 4 0v-3.293l2 2V16a2 2 0 0 0 3.016 1.723l.13.13a.5.5 0 0 0 .708-.707l-15-15a.5.5 0 1 0-.708.708zM14 8v3.879l4 4V8a2 2 0 1 0-4 0M8 5.879l4 4V4a2 2 0 1 0-4 0zM4 10a2 2 0 0 0-2 2v4a2 2 0 1 0 4 0v-4a2 2 0 0 0-2-2"></svg:path>`,
-})
-export class FluentPollOff20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollOff20RegularIcon],svg[fluent-poll-off-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 8.707L2.146 2.854a.5.5 0 1 1 .708-.708l15 15a.5.5 0 0 1-.708.708l-.13-.13A2 2 0 0 1 14 16v-1.294l-2-2V16a2 2 0 1 1-4 0zm3 3l-2-2V16a1 1 0 1 0 2 0zm4 4V16a1 1 0 0 0 1.259.966zM11 4v4.879l1 1V4a2 2 0 1 0-4 0v1.879l1 1V4a1 1 0 0 1 2 0m3 7.879l1 1V8a1 1 0 1 1 2 0v6.879l1 1V8a2 2 0 1 0-4 0zM2 12a2 2 0 1 1 4 0v4a2 2 0 1 1-4 0zm2-1a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0v-4a1 1 0 0 0-1-1"></svg:path>`,
-})
-export class FluentPollOff20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollOff24FilledIcon],svg[fluent-poll-off-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9 10.06v9.19a2.752 2.752 0 0 0 5.504 0v-3.685L16 17.06v2.189a2.752 2.752 0 0 0 4.396 2.207l.323.323a.75.75 0 0 0 1.061-1.06L3.28 2.22a.75.75 0 1 0-1.06 1.06zm7 2.758l5.504 5.504v-8.57a2.752 2.752 0 1 0-5.504 0zm-7-7l5.504 5.504v-6.57a2.752 2.752 0 1 0-5.504 0zM4.752 12a2.75 2.75 0 0 1 2.752 2.751v4.499a2.752 2.752 0 0 1-5.504 0v-4.5A2.75 2.75 0 0 1 4.752 12"></svg:path>`,
-})
-export class FluentPollOff24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollOff24RegularIcon],svg[fluent-poll-off-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9 10.06L2.22 3.28a.75.75 0 1 1 1.06-1.06l18.5 18.5a.75.75 0 0 1-1.06 1.06l-.324-.323A2.752 2.752 0 0 1 16 19.25v-2.19l-1.496-1.495v3.685a2.752 2.752 0 1 1-5.504 0zm4.004 4.005L10.5 11.56v7.689a1.252 1.252 0 0 0 2.504 0zM17.5 18.56v.689a1.252 1.252 0 0 0 1.81 1.12zM13.004 4.75v5.07l1.5 1.5V4.75A2.752 2.752 0 1 0 9 4.75v1.067l1.5 1.5V4.751a1.252 1.252 0 0 1 2.504 0M16 12.818l1.5 1.5V9.751a1.252 1.252 0 0 1 2.504 0v7.071l1.5 1.5v-8.57a2.752 2.752 0 1 0-5.504 0zM4.752 12a2.75 2.75 0 0 1 2.752 2.752v4.499a2.752 2.752 0 0 1-5.504 0V14.75A2.75 2.75 0 0 1 4.752 12m0 1.5c-.692 0-1.252.561-1.252 1.252v4.499a1.252 1.252 0 1 0 2.504 0V14.75c0-.691-.56-1.251-1.252-1.251"></svg:path>`,
-})
-export class FluentPollOff24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollOff32FilledIcon],svg[fluent-poll-off-32-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m27.165 28.58l1.128 1.127a1 1 0 0 0 1.414-1.414l-26-26a1 1 0 0 0-1.414 1.414L12 13.415V25.5a3.5 3.5 0 1 0 7 0v-5.086l3 3V25.5a3.5 3.5 0 0 0 5.165 3.08M22 18.464l7 7V12.5a3.5 3.5 0 1 0-7 0zm-10-10l7 7V6.5a3.5 3.5 0 1 0-7 0zM2 18.5a3.5 3.5 0 0 1 7 0v7a3.5 3.5 0 1 1-7 0z"></svg:path>`,
-})
-export class FluentPollOff32FilledIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPollOff32RegularIcon],svg[fluent-poll-off-32-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m27.165 28.58l1.128 1.127a1 1 0 0 0 1.414-1.414l-26-26a1 1 0 0 0-1.414 1.414L12 13.415V25.5a3.5 3.5 0 1 0 7 0v-5.086l3 3V25.5a3.5 3.5 0 0 0 5.165 3.08m-1.581-1.582L24 25.414v.086a1.5 1.5 0 0 0 1.584 1.498M17 18.415V25.5a1.5 1.5 0 0 1-3 0V15.415zM17 6.5v6.966l2 2V6.5a3.5 3.5 0 1 0-7 0v1.966l2 2V6.5a1.5 1.5 0 0 1 3 0m5 11.965l2 2V12.5a1.5 1.5 0 0 1 3 0v10.965l2 2V12.5a3.5 3.5 0 1 0-7 0zM5.5 15A3.5 3.5 0 0 0 2 18.5v7a3.5 3.5 0 0 0 7 0v-7A3.5 3.5 0 0 0 5.5 15M4 18.5a1.5 1.5 0 0 1 3 0v7a1.5 1.5 0 0 1-3 0z"></svg:path>`,
-})
-export class FluentPollOff32RegularIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortHdmi20FilledIcon],svg[fluent-port-hdmi-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.854 7.44A1.5 1.5 0 0 1 5.914 7h8.172a1.5 1.5 0 0 1 1.06.44l2.415 2.414a1.5 1.5 0 0 1 .439 1.06v.586a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 2 11.5v-.586c0-.398.158-.78.44-1.06zM6.5 9.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z"></svg:path>`,
-})
-export class FluentPortHdmi20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortHdmi20RegularIcon],svg[fluent-port-hdmi-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.854 7.44A1.5 1.5 0 0 1 5.914 7h8.172a1.5 1.5 0 0 1 1.06.44l2.415 2.414a1.5 1.5 0 0 1 .439 1.06v.586a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 2 11.5v-.586c0-.398.158-.78.44-1.06zm1.06.56a.5.5 0 0 0-.353.146l-2.415 2.415a.5.5 0 0 0-.146.353v.586a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-.586a.5.5 0 0 0-.146-.353l-2.415-2.415A.5.5 0 0 0 14.086 8zM6 10a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 6 10"></svg:path>`,
-})
-export class FluentPortHdmi20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortHdmi24FilledIcon],svg[fluent-port-hdmi-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m21.41 11.41l-2.82-2.82A2 2 0 0 0 17.17 8H6.83a2 2 0 0 0-1.42.59l-2.82 2.82A2 2 0 0 0 2 12.83V14a2.006 2.006 0 0 0 2 2h16a2.006 2.006 0 0 0 2-2v-1.17a2 2 0 0 0-.59-1.42M17 12a.755.755 0 0 1-.75.75h-8.5a.75.75 0 1 1 0-1.5h8.5A.756.756 0 0 1 17 12"></svg:path>`,
-})
-export class FluentPortHdmi24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortHdmi24RegularIcon],svg[fluent-port-hdmi-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m21.414 11.414l-2.828-2.828A2 2 0 0 0 17.172 8H6.828a2 2 0 0 0-1.414.586l-2.828 2.828A2 2 0 0 0 2 12.828V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-1.172a2 2 0 0 0-.586-1.414M20.5 14a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5v-1.172a.5.5 0 0 1 .146-.353l2.829-2.828a.5.5 0 0 1 .353-.147h10.344a.5.5 0 0 1 .353.146l2.829 2.829a.5.5 0 0 1 .146.354zm-4.25-2.75h-8.5a.75.75 0 1 0 0 1.5h8.5a.75.75 0 1 0 0-1.5"></svg:path>`,
-})
-export class FluentPortHdmi24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortMicroUsb20FilledIcon],svg[fluent-port-micro-usb-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6.433 8.3a1.5 1.5 0 0 1 .9-.3h5.334c.324 0 .64.105.9.3l1.333 1A1.5 1.5 0 0 1 14 12H6a1.5 1.5 0 0 1-.9-2.7z"></svg:path>`,
-})
-export class FluentPortMicroUsb20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortMicroUsb20RegularIcon],svg[fluent-port-micro-usb-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6.433 8.3a1.5 1.5 0 0 1 .9-.3h5.334c.324 0 .64.105.9.3l1.333 1A1.5 1.5 0 0 1 14 12H6a1.5 1.5 0 0 1-.9-2.7zm.9.7a.5.5 0 0 0-.3.1l-1.333 1a.5.5 0 0 0 .3.9h8a.5.5 0 0 0 .3-.9l-1.333-1a.5.5 0 0 0-.3-.1z"></svg:path>`,
-})
-export class FluentPortMicroUsb20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortMicroUsb24FilledIcon],svg[fluent-port-micro-usb-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M19 12.83V13a2.006 2.006 0 0 1-2 2H7a2.006 2.006 0 0 1-2-2v-.17a2 2 0 0 1 .59-1.42l1.82-1.82A2 2 0 0 1 8.83 9h6.34a2 2 0 0 1 1.42.59l1.82 1.82a2 2 0 0 1 .59 1.42"></svg:path>`,
-})
-export class FluentPortMicroUsb24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortMicroUsb24RegularIcon],svg[fluent-port-micro-usb-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15.172 10.5a.5.5 0 0 1 .353.146l1.829 1.829a.5.5 0 0 1 .146.353V13a.5.5 0 0 1-.5.5H7a.5.5 0 0 1-.5-.5v-.172a.5.5 0 0 1 .146-.353l1.829-1.828a.5.5 0 0 1 .353-.147zm0-1.5H8.828a2 2 0 0 0-1.414.586l-1.828 1.828A2 2 0 0 0 5 12.828V13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-.172a2 2 0 0 0-.586-1.414l-1.828-1.828A2 2 0 0 0 15.172 9"></svg:path>`,
-})
-export class FluentPortMicroUsb24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortUsbA20FilledIcon],svg[fluent-port-usb-a-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.5 7A1.5 1.5 0 0 0 3 8.5v3A1.5 1.5 0 0 0 4.5 13h11a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 15.5 7zm0 1.5h11V10h-11z"></svg:path>`,
-})
-export class FluentPortUsbA20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortUsbA20RegularIcon],svg[fluent-port-usb-a-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.5 7A1.5 1.5 0 0 0 3 8.5v3A1.5 1.5 0 0 0 4.5 13h11a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 15.5 7zM4 8.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5V10H4z"></svg:path>`,
-})
-export class FluentPortUsbA20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortUsbA24FilledIcon],svg[fluent-port-usb-a-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18 8H6a2.006 2.006 0 0 0-2 2v4a2.006 2.006 0 0 0 2 2h12a2.006 2.006 0 0 0 2-2v-4a2.006 2.006 0 0 0-2-2M6 10h12v2H6z"></svg:path>`,
-})
-export class FluentPortUsbA24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortUsbA24RegularIcon],svg[fluent-port-usb-a-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18 8H6a2.006 2.006 0 0 0-2 2v4a2.006 2.006 0 0 0 2 2h12a2.006 2.006 0 0 0 2-2v-4a2.006 2.006 0 0 0-2-2M5.5 10a.495.495 0 0 1 .5-.5h12a.495.495 0 0 1 .5.5v2h-13z"></svg:path>`,
-})
-export class FluentPortUsbA24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortUsbC20FilledIcon],svg[fluent-port-usb-c-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.5 10a2 2 0 0 1 2-2h7a2 2 0 1 1 0 4h-7a2 2 0 0 1-2-2"></svg:path>`,
-})
-export class FluentPortUsbC20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortUsbC20RegularIcon],svg[fluent-port-usb-c-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.5 10a2 2 0 0 1 2-2h7a2 2 0 1 1 0 4h-7a2 2 0 0 1-2-2m2-1a1 1 0 0 0 0 2h7a1 1 0 1 0 0-2z"></svg:path>`,
-})
-export class FluentPortUsbC20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortUsbC24FilledIcon],svg[fluent-port-usb-c-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M19 12a2.996 2.996 0 0 1-3 3H8a3 3 0 0 1 0-6h8a2.996 2.996 0 0 1 3 3"></svg:path>`,
-})
-export class FluentPortUsbC24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPortUsbC24RegularIcon],svg[fluent-port-usb-c-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16 10.5a1.5 1.5 0 1 1 0 3H8a1.5 1.5 0 1 1 0-3zM16 9H8a3 3 0 1 0 0 6h8a3 3 0 0 0 0-6"></svg:path>`,
-})
-export class FluentPortUsbC24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPositionBackward20FilledIcon],svg[fluent-position-backward-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2 4.5A2.5 2.5 0 0 1 4.5 2h6A2.5 2.5 0 0 1 13 4.5V6H9.5A3.5 3.5 0 0 0 6 9.5V13H4.5A2.5 2.5 0 0 1 2 10.5zM9.5 7A2.5 2.5 0 0 0 7 9.5v6A2.5 2.5 0 0 0 9.5 18h6a2.5 2.5 0 0 0 2.5-2.5v-6A2.5 2.5 0 0 0 15.5 7zM8 9.5A1.5 1.5 0 0 1 9.5 8h6A1.5 1.5 0 0 1 17 9.5v6a1.5 1.5 0 0 1-1.5 1.5h-6A1.5 1.5 0 0 1 8 15.5z"></svg:path>`,
-})
-export class FluentPositionBackward20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPositionBackward20RegularIcon],svg[fluent-position-backward-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.5 2A2.5 2.5 0 0 0 2 4.5v6A2.5 2.5 0 0 0 4.5 13H6v-1.707L5.293 12H4.5c-.232 0-.45-.053-.647-.146L6 9.707V9.5c0-.571.137-1.11.38-1.586l-3.234 3.233A1.5 1.5 0 0 1 3 10.5v-.94L9.56 3h.94c.232 0 .45.052.647.146L7.914 6.38A3.5 3.5 0 0 1 9.5 6h.207l2.147-2.147c.094.196.146.415.146.647v.793L11.293 6H13V4.5A2.5 2.5 0 0 0 10.5 2zM3 4.5A1.5 1.5 0 0 1 4.5 3h.647L3 5.147zm0 2.06L6.56 3h1.587L3 8.147zM7 9.5A2.5 2.5 0 0 1 9.5 7h6A2.5 2.5 0 0 1 18 9.5v6a2.5 2.5 0 0 1-2.5 2.5h-6A2.5 2.5 0 0 1 7 15.5zM9.5 8A1.5 1.5 0 0 0 8 9.5v6A1.5 1.5 0 0 0 9.5 17h6a1.5 1.5 0 0 0 1.5-1.5v-6A1.5 1.5 0 0 0 15.5 8z"></svg:path>`,
-})
-export class FluentPositionBackward20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPositionBackward24FilledIcon],svg[fluent-position-backward-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16.5 6.5h-5.75a4.25 4.25 0 0 0-4.25 4.25v5.75H5.25A3.25 3.25 0 0 1 2 13.25v-8A3.25 3.25 0 0 1 5.25 2h8a3.25 3.25 0 0 1 3.25 3.25zM22 18.75A3.25 3.25 0 0 1 18.75 22h-8a3.25 3.25 0 0 1-3.25-3.25v-8a3.25 3.25 0 0 1 3.25-3.25h8A3.25 3.25 0 0 1 22 10.75zm-3.25 1.75a1.75 1.75 0 0 0 1.75-1.75v-8A1.75 1.75 0 0 0 18.75 9h-8A1.75 1.75 0 0 0 9 10.75v8c0 .966.784 1.75 1.75 1.75z"></svg:path>`,
-})
-export class FluentPositionBackward24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPositionBackward24RegularIcon],svg[fluent-position-backward-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6.5 16.5H5.25A3.25 3.25 0 0 1 2 13.25v-8A3.25 3.25 0 0 1 5.25 2h8a3.25 3.25 0 0 1 3.25 3.25V6.5h-1.652L15 6.348V5.25c0-.231-.045-.452-.127-.655L12.97 6.5h-2.121l2.921-2.922a1.8 1.8 0 0 0-.519-.078H11.97L3.5 11.969v1.281q0 .271.078.52L6.5 10.847v2.121l-1.905 1.905c.203.081.424.126.655.126h1.098l.152-.152zm3.348-13H7.969L3.5 7.969v1.879zm-4 0H5.25A1.75 1.75 0 0 0 3.5 5.25v.598zM22 18.75A3.25 3.25 0 0 1 18.75 22h-8a3.25 3.25 0 0 1-3.25-3.25v-8a3.25 3.25 0 0 1 3.25-3.25h8A3.25 3.25 0 0 1 22 10.75zm-3.25 1.75a1.75 1.75 0 0 0 1.75-1.75v-8A1.75 1.75 0 0 0 18.75 9h-8A1.75 1.75 0 0 0 9 10.75v8c0 .966.784 1.75 1.75 1.75z"></svg:path>`,
-})
-export class FluentPositionBackward24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPositionForward20FilledIcon],svg[fluent-position-forward-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7 14v1.5A2.5 2.5 0 0 0 9.5 18h6a2.5 2.5 0 0 0 2.5-2.5v-6A2.5 2.5 0 0 0 15.5 7H14v1h1.5A1.5 1.5 0 0 1 17 9.5v6a1.5 1.5 0 0 1-1.5 1.5h-6A1.5 1.5 0 0 1 8 15.5V14zM2 4.5A2.5 2.5 0 0 1 4.5 2h6A2.5 2.5 0 0 1 13 4.5v6a2.5 2.5 0 0 1-2.5 2.5h-6A2.5 2.5 0 0 1 2 10.5z"></svg:path>`,
-})
-export class FluentPositionForward20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPositionForward20RegularIcon],svg[fluent-position-forward-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7 14v1.5A2.5 2.5 0 0 0 9.5 18h6a2.5 2.5 0 0 0 2.5-2.5v-6A2.5 2.5 0 0 0 15.5 7H14v1h1.5A1.5 1.5 0 0 1 17 9.5v6a1.5 1.5 0 0 1-1.5 1.5h-6A1.5 1.5 0 0 1 8 15.5V14zM2 4.5A2.5 2.5 0 0 1 4.5 2h6A2.5 2.5 0 0 1 13 4.5v6a2.5 2.5 0 0 1-2.5 2.5h-6A2.5 2.5 0 0 1 2 10.5zM4.5 3A1.5 1.5 0 0 0 3 4.5v.647L5.147 3zm2.06 0L3 6.56v1.587L8.147 3zM3 10.5c0 .232.052.45.146.647l8-8A1.5 1.5 0 0 0 10.5 3h-.94L3 9.56zM4.5 12h.793L12 5.293V4.5c0-.232-.053-.45-.146-.647l-8 8c.195.095.414.147.646.147m5.207 0h.793a1.5 1.5 0 0 0 1.5-1.5v-.793zm-1.414 0L12 8.293V6.707L6.707 12z"></svg:path>`,
-})
-export class FluentPositionForward20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPositionForward24FilledIcon],svg[fluent-position-forward-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13.25 16.5a3.25 3.25 0 0 0 3.25-3.25v-8A3.25 3.25 0 0 0 13.25 2h-8A3.25 3.25 0 0 0 2 5.25v8a3.25 3.25 0 0 0 3.25 3.25zm-5.75 1H9v1.25c0 .966.784 1.75 1.75 1.75h8a1.75 1.75 0 0 0 1.75-1.75v-8A1.75 1.75 0 0 0 18.75 9H17.5V7.5h1.25A3.25 3.25 0 0 1 22 10.75v8A3.25 3.25 0 0 1 18.75 22h-8a3.25 3.25 0 0 1-3.25-3.25z"></svg:path>`,
-})
-export class FluentPositionForward24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPositionForward24RegularIcon],svg[fluent-position-forward-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18.75 22A3.25 3.25 0 0 0 22 18.75v-8a3.25 3.25 0 0 0-3.25-3.25H17.5V9h1.25c.966 0 1.75.784 1.75 1.75v8a1.75 1.75 0 0 1-1.75 1.75h-8A1.75 1.75 0 0 1 9 18.75V17.5H7.5v1.25A3.25 3.25 0 0 0 10.75 22zm-5.5-5.5a3.25 3.25 0 0 0 3.25-3.25v-8A3.25 3.25 0 0 0 13.25 2h-8A3.25 3.25 0 0 0 2 5.25v8a3.25 3.25 0 0 0 3.25 3.25zM15 13.25A1.75 1.75 0 0 1 13.25 15h-.78L15 12.47zm0-2.781L10.469 15h-2L15 8.469zM6.348 15H5.25c-.231 0-.452-.045-.655-.127L14.873 4.595q.125.307.127.655v1.098zm-2.77-1.23a1.8 1.8 0 0 1-.078-.52v-1.281L11.969 3.5h1.281q.271 0 .52.078zM3.5 9.847V7.969L7.969 3.5h1.879zm0-4V5.25c0-.966.784-1.75 1.75-1.75h.598z"></svg:path>`,
-})
-export class FluentPositionForward24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPositionToBack20FilledIcon],svg[fluent-position-to-back-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 14a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM5 9h1.3A2.7 2.7 0 0 0 9 6.3V5h3.5A2.5 2.5 0 0 1 15 7.5V11h-1.3a2.7 2.7 0 0 0-2.7 2.7V15H7.5A2.5 2.5 0 0 1 5 12.5zM1 3a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"></svg:path>`,
-})
-export class FluentPositionToBack20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPositionToBack20RegularIcon],svg[fluent-position-to-back-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 14a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM5 9v3.5A2.5 2.5 0 0 0 7.5 15H11v-1H9.707l1.66-1.66c.235-.402.571-.738.973-.973L14 9.707V11h1V7.5A2.5 2.5 0 0 0 12.5 5H9v1h1.293l-1.66 1.66c-.235.402-.57.738-.973.973L6 10.293V9zm6.707-3h.793c.232 0 .45.052.647.146l-7 7A1.5 1.5 0 0 1 6 12.5v-.793zM7.5 14c-.232 0-.45-.053-.647-.146l7-7c.095.195.147.414.147.646v.794L8.293 14zM1 3a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"></svg:path>`,
-})
-export class FluentPositionToBack20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
 }

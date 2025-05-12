@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsLightPentagonOutlineIcon],svg[material-symbols-light-pentagon-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.085 19.5h9.83l3.306-9.917L12 3.835L3.779 9.583zm-.72 1L2.597 9.192L12 2.616l9.404 6.576l-3.77 11.308zM12 11.667"></svg:path>`,
+})
+export class MaterialSymbolsLightPentagonOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsLightPergolaOutlineIcon],svg[material-symbols-light-pergola-outline-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsLightSurroundSoundOutlineIcon {
   template: `<svg:path fill="currentColor" d="m16.154 7.346l-.72-.707l1.6-1.6H7.566v-1h9.468l-1.6-1.6l.708-.72l2.82 2.82zM5 19h14v-4.846H5zm2.419-1.308q.481 0 .8-.314t.32-.796t-.315-.801t-.796-.32t-.801.315t-.32.797q0 .48.315.8t.796.32m9.155 0q.48 0 .8-.316t.32-.795q0-.482-.316-.801t-.795-.32t-.801.315t-.32.797q0 .48.315.8t.797.32M4 13.152h14.585L17.112 9H5.946l1.6 1.6l-.708.72L4.02 8.5l2.82-2.82l.707.72l-1.6 1.6h11.4q.24 0 .419.138t.25.362L20 14.154V21.5q0 .213-.144.356T19.5 22h-.23q-.213 0-.357-.144t-.144-.356V20H5.231v1.5q0 .213-.144.356T4.731 22H4.5q-.213 0-.356-.144T4 21.5zm1 1V19z"></svg:path>`,
 })
 export class MaterialSymbolsLightSwapDrivingAppsOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsLightSwapDrivingAppsWheelOutlineIcon],svg[material-symbols-light-swap-driving-apps-wheel-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.994 21q-1.852 0-3.491-.707T5.639 18.36t-1.932-2.864T3 12.006q0-1.874.71-3.511q.711-1.637 1.93-2.855t2.862-1.93T11.994 3q1.87 0 3.509.71q1.64.711 2.858 1.93t1.929 2.855t.71 3.511q0 1.852-.71 3.494q-.711 1.642-1.93 2.86t-2.855 1.93t-3.511.71M12 16.5q1.385 0 2.723.39q1.339.389 2.493 1.156q1.342-1.13 2.063-2.71T20 12q0-3.35-2.325-5.675T12 4T6.325 6.325T4 12q0 1.76.718 3.34q.718 1.581 2.066 2.706q1.154-.767 2.493-1.156q1.339-.39 2.723-.39m.003 1q-1.144 0-2.234.308q-1.09.307-2.08.884q.951.635 2.053.971t2.26.337t2.257-.336t2.052-.972q-.99-.577-2.077-.884t-2.231-.308M7 10.808q.329 0 .568-.24t.24-.568t-.24-.568T7 9.192t-.568.24t-.24.568t.24.568t.568.24m3-3q.329 0 .568-.24t.24-.568t-.24-.568t-.568-.24t-.568.24t-.24.568t.24.568t.568.24m7 3q.329 0 .568-.24t.24-.568t-.24-.568t-.568-.24t-.568.24t-.24.568t.24.568t.568.24M12 13.5q.633 0 1.066-.434q.434-.433.434-1.066q0-.325-.129-.609q-.129-.283-.348-.514l1.58-3.977q.08-.188-.006-.384q-.085-.195-.277-.274q-.18-.078-.374.002t-.269.279l-1.62 3.977q-.634-.029-1.096.409T10.5 12q0 .633.434 1.066q.433.434 1.066.434m0 4"></svg:path>`,
-})
-export class MaterialSymbolsLightSwapDrivingAppsWheelOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

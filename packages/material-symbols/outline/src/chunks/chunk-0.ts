@@ -36,6 +36,23 @@ export class MaterialSymbols10mpOutlineIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbols11mpOutlineIcon],svg[material-symbols-11mp-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.5 11.5H11v-6H8V7h1.5zm5 0H16v-6h-3V7h1.5zm-8.5 7h1.5V14h1v3H10v-3h1v4.5h1.5v-5q0-.425-.288-.712T11.5 12.5H7q-.425 0-.712.288T6 13.5zm7.5 0H15V17h2q.425 0 .713-.288T18 16v-2.5q0-.425-.288-.712T17 12.5h-3.5zm1.5-3V14h1.5v1.5zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"></svg:path>`,
+})
+export class MaterialSymbols11mpOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbols12mpOutlineIcon],svg[material-symbols-12mp-outline-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsContentCopyOutlineIcon {
   template: `<svg:path fill="currentColor" d="M20 20H4q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h10v2H4v12h16v-7h2v7q0 .825-.587 1.413T20 20M6 16h7v-3H6zm0-5h7V8H6zm9 5h3v-5h-3zM4 18V6zm14-9V7h-2V5h2V3h2v2h2v2h-2v2z"></svg:path>`,
 })
 export class MaterialSymbolsContextualTokenAddOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsContextualTokenOutlineIcon],svg[material-symbols-contextual-token-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 16h7v-3H6zm9 0h3V8h-3zm-9-5h7V8H6zm-2 9q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h16V6H4zm0 0V6z"></svg:path>`,
-})
-export class MaterialSymbolsContextualTokenOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

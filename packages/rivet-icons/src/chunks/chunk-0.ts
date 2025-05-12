@@ -2,16 +2,33 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[rivetIconsArrowAnchorDownRightIcon],svg[rivet-icons-arrow-anchor-down-right-icon]',
+  selector: 'svg[rivetIconsAlarmIcon],svg[rivet-icons-alarm-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1 2h2v8h8.586L9.793 8.207l1.414-1.414L15.414 11l-4.207 4.207l-1.414-1.414L11.586 12H1z"></svg:path>`,
+  template: `<svg:g fill="currentColor"><svg:path d="M4.855.642A8.03 8.03 0 0 0 .642 4.855A3 3 0 0 1 4.855.642m10.503 4.213A3 3 0 0 0 11.145.642a8.03 8.03 0 0 1 4.213 4.213M9 7.586V5H7v3.414l2 2L10.414 9z"></svg:path><svg:path d="M1 8a7 7 0 1 1 12.606 4.192l2.308 2.308l-1.414 1.414l-2.308-2.308A6.97 6.97 0 0 1 8 15a6.97 6.97 0 0 1-4.192-1.394L1.5 15.914L.086 14.5l2.308-2.308A6.97 6.97 0 0 1 1 8m7-5a5 5 0 1 0 0 10A5 5 0 0 0 8 3"></svg:path></svg:g>`,
 })
-export class RivetIconsArrowAnchorDownRightIcon {
+export class RivetIconsAlarmIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[rivetIconsAlarmSolidIcon],svg[rivet-icons-alarm-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M.642 4.855A8.03 8.03 0 0 1 4.855.642A3 3 0 0 0 .642 4.855m14.716 0A3 3 0 0 0 11.145.642a8.03 8.03 0 0 1 4.213 4.213"></svg:path><svg:path d="M8 15a6.97 6.97 0 0 0 4.192-1.394l2.308 2.308l1.414-1.414l-2.308-2.308a7 7 0 1 0-11.213 0L.087 14.5L1.5 15.914l2.308-2.308A6.97 6.97 0 0 0 8 15m2.414-6L9 10.414l-2-2V5h2v2.586z"></svg:path></svg:g>`,
+})
+export class RivetIconsAlarmSolidIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,16 +53,16 @@ export class RivetIconsArrowAnchorDownLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[rivetIconsAlarmSolidIcon],svg[rivet-icons-alarm-solid-icon]',
+  selector: 'svg[rivetIconsArrowAnchorDownRightIcon],svg[rivet-icons-arrow-anchor-down-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="currentColor"><svg:path d="M.642 4.855A8.03 8.03 0 0 1 4.855.642A3 3 0 0 0 .642 4.855m14.716 0A3 3 0 0 0 11.145.642a8.03 8.03 0 0 1 4.213 4.213"></svg:path><svg:path d="M8 15a6.97 6.97 0 0 0 4.192-1.394l2.308 2.308l1.414-1.414l-2.308-2.308a7 7 0 1 0-11.213 0L.087 14.5L1.5 15.914l2.308-2.308A6.97 6.97 0 0 0 8 15m2.414-6L9 10.414l-2-2V5h2v2.586z"></svg:path></svg:g>`,
+  template: `<svg:path fill="currentColor" d="M1 2h2v8h8.586L9.793 8.207l1.414-1.414L15.414 11l-4.207 4.207l-1.414-1.414L11.586 12H1z"></svg:path>`,
 })
-export class RivetIconsAlarmSolidIcon {
+export class RivetIconsArrowAnchorDownRightIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,40 +104,6 @@ export class RivetIconsArrowAnchorUpRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[rivetIconsAlarmIcon],svg[rivet-icons-alarm-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M4.855.642A8.03 8.03 0 0 0 .642 4.855A3 3 0 0 1 4.855.642m10.503 4.213A3 3 0 0 0 11.145.642a8.03 8.03 0 0 1 4.213 4.213M9 7.586V5H7v3.414l2 2L10.414 9z"></svg:path><svg:path d="M1 8a7 7 0 1 1 12.606 4.192l2.308 2.308l-1.414 1.414l-2.308-2.308A6.97 6.97 0 0 1 8 15a6.97 6.97 0 0 1-4.192-1.394L1.5 15.914L.086 14.5l2.308-2.308A6.97 6.97 0 0 1 1 8m7-5a5 5 0 1 0 0 10A5 5 0 0 0 8 3"></svg:path></svg:g>`,
-})
-export class RivetIconsAlarmIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[rivetIconsArrowDownRightIcon],svg[rivet-icons-arrow-down-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.707 2.293L12 10.586V4h2v10H4v-2h6.586L2.293 3.707z"></svg:path>`,
-})
-export class RivetIconsArrowDownRightIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[rivetIconsArrowDownIcon],svg[rivet-icons-arrow-down-icon]',
   host: {
     role: 'img',
@@ -131,23 +114,6 @@ export class RivetIconsArrowDownRightIcon {
   template: `<svg:path fill="currentColor" d="M7 1v10.844L2.146 7.737L.854 9.263L8 15.31l7.146-6.047l-1.292-1.526L9 11.844V1z"></svg:path>`,
 })
 export class RivetIconsArrowDownIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[rivetIconsArrowLeftIcon],svg[rivet-icons-arrow-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15 7H4.156l4.107-4.854L6.737.854L.69 8l6.047 7.146l1.526-1.292L4.156 9H15z"></svg:path>`,
-})
-export class RivetIconsArrowLeftIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,16 +138,33 @@ export class RivetIconsArrowDownLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[rivetIconsArrowUpIcon],svg[rivet-icons-arrow-up-icon]',
+  selector: 'svg[rivetIconsArrowLeftIcon],svg[rivet-icons-arrow-left-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M9 15V4.156l4.854 4.107l1.292-1.526L8 .69L.854 6.737l1.292 1.526L7 4.156V15z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M15 7H4.156l4.107-4.854L6.737.854L.69 8l6.047 7.146l1.526-1.292L4.156 9H15z"></svg:path>`,
 })
-export class RivetIconsArrowUpIcon {
+export class RivetIconsArrowLeftIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[rivetIconsArrowDownRightIcon],svg[rivet-icons-arrow-down-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.707 2.293L12 10.586V4h2v10H4v-2h6.586L2.293 3.707z"></svg:path>`,
+})
+export class RivetIconsArrowDownRightIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,6 +189,23 @@ export class RivetIconsArrowRightIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[rivetIconsArrowUpIcon],svg[rivet-icons-arrow-up-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 15V4.156l4.854 4.107l1.292-1.526L8 .69L.854 6.737l1.292 1.526L7 4.156V15z"></svg:path>`,
+})
+export class RivetIconsArrowUpIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[rivetIconsArrowUpLeftIcon],svg[rivet-icons-arrow-up-left-icon]',
   host: {
     role: 'img',
@@ -216,6 +216,23 @@ export class RivetIconsArrowRightIcon {
   template: `<svg:path fill="currentColor" d="M2 2h10v2H5.414l8.293 8.293l-1.414 1.414L4 5.414V12H2z"></svg:path>`,
 })
 export class RivetIconsArrowUpLeftIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[rivetIconsArrowUpRightIcon],svg[rivet-icons-arrow-up-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.586 4H4V2h10v10h-2V5.414l-8.293 8.293l-1.414-1.414z"></svg:path>`,
+})
+export class RivetIconsArrowUpRightIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,57 +274,6 @@ export class RivetIconsAudioOffIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[rivetIconsAudioSolidIcon],svg[rivet-icons-audio-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M10 16v-5.401A2.999 2.999 0 0 0 10 5.4V0L4.667 4H0v8h4.667z"></svg:path><svg:path d="m13.6 3.2l-.799-.6L11.6 4.199l.8.6a4 4 0 0 1 .8.802c.503.668.8 1.497.8 2.399s-.297 1.73-.8 2.4a4 4 0 0 1-.8.8l-.8.601l1.201 1.6l.8-.601a6 6 0 0 0 1.198-1.2A5.98 5.98 0 0 0 16 8c0-1.35-.447-2.598-1.2-3.6a6 6 0 0 0-1.2-1.2"></svg:path></svg:g>`,
-})
-export class RivetIconsAudioSolidIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[rivetIconsArrowUpRightIcon],svg[rivet-icons-arrow-up-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.586 4H4V2h10v10h-2V5.414l-8.293 8.293l-1.414-1.414z"></svg:path>`,
-})
-export class RivetIconsArrowUpRightIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[rivetIconsBanIcon],svg[rivet-icons-ban-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.109 4.523a6.002 6.002 0 0 0 8.368 8.368zM4.523 3.11l8.368 8.368A6.002 6.002 0 0 0 4.523 3.11m-2.18 10.548A8 8 0 1 1 13.657 2.343A8 8 0 0 1 2.343 13.657Z"></svg:path>`,
-})
-export class RivetIconsBanIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[rivetIconsAudioOffSolidIcon],svg[rivet-icons-audio-off-solid-icon]',
   host: {
     role: 'img',
@@ -318,6 +284,23 @@ export class RivetIconsBanIcon {
   template: `<svg:path fill="currentColor" d="M9 0v16l-5.333-4H0V4h3.667zm2.586 8l-1.5 1.5l1.414 1.414l1.5-1.5l1.5 1.5L15.914 9.5l-1.5-1.5l1.5-1.5L14.5 5.086l-1.5 1.5l-1.5-1.5L10.086 6.5z"></svg:path>`,
 })
 export class RivetIconsAudioOffSolidIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[rivetIconsAudioSolidIcon],svg[rivet-icons-audio-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M10 16v-5.401A2.999 2.999 0 0 0 10 5.4V0L4.667 4H0v8h4.667z"></svg:path><svg:path d="m13.6 3.2l-.799-.6L11.6 4.199l.8.6a4 4 0 0 1 .8.802c.503.668.8 1.497.8 2.399s-.297 1.73-.8 2.4a4 4 0 0 1-.8.8l-.8.601l1.201 1.6l.8-.601a6 6 0 0 0 1.198-1.2A5.98 5.98 0 0 0 16 8c0-1.35-.447-2.598-1.2-3.6a6 6 0 0 0-1.2-1.2"></svg:path></svg:g>`,
+})
+export class RivetIconsAudioSolidIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -3565,6 +3548,23 @@ export class RivetIconsVideoOffSolidIcon {
   template: `<svg:path fill="currentColor" d="M12 2H0v12h12v-2.367l4 .5V3.867l-4 .5z"></svg:path>`,
 })
 export class RivetIconsVideoSolidIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[rivetIconsBanIcon],svg[rivet-icons-ban-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.109 4.523a6.002 6.002 0 0 0 8.368 8.368zM4.523 3.11l8.368 8.368A6.002 6.002 0 0 0 4.523 3.11m-2.18 10.548A8 8 0 1 1 13.657 2.343A8 8 0 0 1 2.343 13.657Z"></svg:path>`,
+})
+export class RivetIconsBanIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

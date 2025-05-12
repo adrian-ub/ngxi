@@ -196,7 +196,7 @@ export class FluentArrowLeft48RegularIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M8.477 2a.75.75 0 0 0 0 1.5h2.962L3.5 11.44V8.476a.75.75 0 0 0-1.5 0v4.673c0 .47.38.85.85.85h4.673a.75.75 0 0 0 0-1.5H4.56L12.5 4.56v2.963a.75.75 0 0 0 1.5 0V2.85a.85.85 0 0 0-.85-.85z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M12.75 2.5a.75.75 0 0 1 .75.75v5a.75.75 0 0 1-1.5 0V5.06L5.06 12h3.19a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75v-5a.75.75 0 0 1 1.5 0v3.19L10.94 4H7.75a.75.75 0 0 1 0-1.5z"></svg:path>`,
 })
 export class FluentArrowMaximize16FilledIcon {
   readonly viewBox = input("0 0 16 16")
@@ -213,7 +213,7 @@ export class FluentArrowMaximize16FilledIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M8.5 2a.5.5 0 0 0 0 1h3.793L3 12.293V8.5a.5.5 0 0 0-1 0v4.9a.6.6 0 0 0 .6.6h4.9a.5.5 0 0 0 0-1H3.707L13 3.707V7.5a.5.5 0 0 0 1 0V2.6a.6.6 0 0 0-.6-.6z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M12.4 3a.6.6 0 0 1 .6.6v4.9a.5.5 0 0 1-1 0V4.707L4.707 12H8.5a.5.5 0 0 1 0 1H3.6a.6.6 0 0 1-.6-.6V7.5a.5.5 0 0 1 1 0v3.793L11.293 4H7.5a.5.5 0 0 1 0-1z"></svg:path>`,
 })
 export class FluentArrowMaximize16RegularIcon {
   readonly viewBox = input("0 0 16 16")
@@ -230,7 +230,7 @@ export class FluentArrowMaximize16RegularIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M16 3a1 1 0 0 1 1 1v5.25a.75.75 0 0 1-1.5 0V5.559L5.559 15.5H9.25a.75.75 0 0 1 0 1.5H4a1 1 0 0 1-1-1v-5.25a.75.75 0 0 1 1.5 0v3.689L14.439 4.5H10.75a.75.75 0 0 1 0-1.5z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M15.75 3.5a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0V6.06L6.06 15h4.19a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75v-6a.75.75 0 0 1 1.5 0v4.19L13.94 5H9.75a.75.75 0 0 1 0-1.5z"></svg:path>`,
 })
 export class FluentArrowMaximize20FilledIcon {
   readonly viewBox = input("0 0 20 20")
@@ -247,7 +247,7 @@ export class FluentArrowMaximize20FilledIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m10.5 3l6.043.002l.085.015l.063.02l.076.04l.055.04l.06.06l.03.038l.041.074l.03.083l.015.082L17 3.5v6a.5.5 0 0 1-.992.09L16 9.5V4.706L4.706 16H9.5a.5.5 0 0 1 .492.41l.008.09a.5.5 0 0 1-.41.492L9.5 17H3.48l-.069-.008l-.102-.03l-.076-.04l-.055-.04l-.06-.06l-.03-.037l-.041-.074l-.03-.083l-.006-.023A.5.5 0 0 1 3 16.5l.005.074l-.003-.031L3 10.5a.5.5 0 0 1 .992-.09L4 10.5v4.792L15.292 4H10.5a.5.5 0 0 1-.492-.41L10 3.5a.5.5 0 0 1 .5-.5"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m15.543 4.002l.085.015l.063.021l.076.04l.055.04l.06.06l.03.038l.041.073l.03.083l.015.082L16 4.5v6a.5.5 0 0 1-.992.09L15 10.5V5.706L5.706 15H10.5a.5.5 0 0 1 .492.41l.008.09a.5.5 0 0 1-.41.492L10.5 16H4.48l-.069-.008l-.102-.03l-.076-.04l-.055-.04l-.06-.06l-.03-.038l-.041-.073l-.03-.083l-.006-.023L4 15.52V9.5a.5.5 0 0 1 .992-.09L5 9.5v4.792L14.292 5H9.5a.5.5 0 0 1-.492-.41L9 4.5a.5.5 0 0 1 .5-.5zM4.006 15.574l-.004-.031L4 15.524z"></svg:path>`,
 })
 export class FluentArrowMaximize20RegularIcon {
   readonly viewBox = input("0 0 20 20")
@@ -264,7 +264,7 @@ export class FluentArrowMaximize20RegularIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m12.496 3.002l7.556.001l.12.014l.088.02l.104.034l.09.04l.063.036l.063.042l.064.05l.063.058l.094.11l.072.11l.053.114l.036.105l.015.065l.01.053l.01.148v7.504a1 1 0 0 1-1.993.117l-.007-.117v-5.09L6.412 19H11.5a1 1 0 0 1 .993.884L12.5 20a1 1 0 0 1-.884.994L11.5 21H3.939l-.096-.01l-.077-.015l-.077-.022l-.07-.026l-.09-.042l-.089-.053l-.091-.07l.032.027a1 1 0 0 1-.166-.166l-.051-.07l-.04-.064l-.032-.064l-.034-.082l-.025-.08l-.024-.111l-.007-.061l-.004-.09v-7.503a1 1 0 0 1 1.993-.117l.007.117v5.088L17.582 5.002h-5.086a1 1 0 0 1-.994-.883l-.006-.117a1 1 0 0 1 1-1"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M19.5 3.5a1 1 0 0 1 1 1V12a1 1 0 1 1-2 0V6.914L6.914 18.5H12a1 1 0 1 1 0 2H4.5a1 1 0 0 1-1-1V12a1 1 0 1 1 2 0v5.086L17.086 5.5H12a1 1 0 1 1 0-2z"></svg:path>`,
 })
 export class FluentArrowMaximize24FilledIcon {
   readonly viewBox = input("0 0 24 24")
@@ -281,7 +281,7 @@ export class FluentArrowMaximize24FilledIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M12.748 3.002h7.554l.1.014l.099.028l.061.026a.7.7 0 0 1 .218.15l.04.044l.061.082l.037.065l.039.09l.02.064l.013.064l.009.093v7.534a.75.75 0 0 1-1.493.102l-.006-.102l-.001-5.696l-13.94 13.945h5.69a.75.75 0 0 1 .744.65l.007.1a.75.75 0 0 1-.649.744l-.101.007H3.714l-.03-.004a.7.7 0 0 1-.187-.04l-.09-.038l-.018-.01a.75.75 0 0 1-.384-.554l-.007-.104v-7.504a.75.75 0 0 1 1.493-.102l.007.102v5.692l13.94-13.943h-5.69a.75.75 0 0 1-.743-.647l-.007-.102a.75.75 0 0 1 .648-.743z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m19.304 4.002l.1.014l.099.027l.06.026a.7.7 0 0 1 .22.15l.04.045l.06.08l.037.066l.039.09l.02.064l.012.064l.01.094l.001 7.533a.75.75 0 0 1-1.493.101l-.007-.101l-.001-5.696l-11.94 11.945h5.691a.75.75 0 0 1 .743.65l.007.1a.75.75 0 0 1-.649.744l-.101.007l-7.536-.001l-.03-.003a.7.7 0 0 1-.187-.04l-.09-.038l-.017-.01a.75.75 0 0 1-.385-.554L4 19.255V11.75a.75.75 0 0 1 1.493-.102l.007.102v5.692L17.44 5.5l-5.69.001a.75.75 0 0 1-.743-.648L11 4.75a.75.75 0 0 1 .648-.743L11.75 4z"></svg:path>`,
 })
 export class FluentArrowMaximize24RegularIcon {
   readonly viewBox = input("0 0 24 24")
@@ -298,7 +298,7 @@ export class FluentArrowMaximize24RegularIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M16.5 3H24a1 1 0 0 1 .993.883L25 4v7.5a1 1 0 0 1-1.993.117L23 11.5V6.414L6.414 23H11.5a1 1 0 0 1 .993.883L12.5 24a1 1 0 0 1-.883.993L11.5 25H4a1 1 0 0 1-.993-.883L3 24v-7.5a1 1 0 0 1 1.993-.117L5 16.5v5.085L21.585 5H16.5a1 1 0 0 1-.993-.883L15.5 4a1 1 0 0 1 .883-.993zH24z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M23.5 3.5a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V6.914L6.914 22.5H12.5a1 1 0 1 1 0 2h-8a1 1 0 0 1-1-1v-8a1 1 0 1 1 2 0v5.586L21.086 5.5H15.5a1 1 0 1 1 0-2z"></svg:path>`,
 })
 export class FluentArrowMaximize28FilledIcon {
   readonly viewBox = input("0 0 28 28")
@@ -315,7 +315,7 @@ export class FluentArrowMaximize28FilledIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M16.25 3h8a.75.75 0 0 1 .743.648L25 3.75v8a.75.75 0 0 1-1.493.102l-.007-.102V5.56L5.56 23.5h6.19a.75.75 0 0 1 .743.648l.007.102a.75.75 0 0 1-.648.743L11.75 25h-8a.75.75 0 0 1-.743-.648L3 24.25v-8a.75.75 0 0 1 1.493-.102l.007.102v6.188L22.438 4.5H16.25a.75.75 0 0 1-.743-.648L15.5 3.75a.75.75 0 0 1 .648-.743zh8z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M23.25 4a.75.75 0 0 1 .743.648L24 4.75v8a.75.75 0 0 1-1.493.102l-.007-.102V6.56L6.56 22.5h6.19a.75.75 0 0 1 .743.648l.007.102a.75.75 0 0 1-.648.743L12.75 24h-8a.75.75 0 0 1-.743-.648L4 23.25v-8a.75.75 0 0 1 1.493-.102l.007.102v6.189L21.439 5.5H15.25a.75.75 0 0 1-.743-.648L14.5 4.75a.75.75 0 0 1 .648-.743L15.25 4z"></svg:path>`,
 })
 export class FluentArrowMaximize28RegularIcon {
   readonly viewBox = input("0 0 28 28")
@@ -332,7 +332,7 @@ export class FluentArrowMaximize28RegularIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M17 4.25c0-.69.56-1.25 1.25-1.25h9.5c.69 0 1.25.56 1.25 1.25v9.5a1.25 1.25 0 1 1-2.5 0V7.268L7.268 26.5h6.482a1.25 1.25 0 1 1 0 2.5h-9.5C3.56 29 3 28.44 3 27.75v-9.5a1.25 1.25 0 1 1 2.5 0v6.482L24.732 5.5H18.25c-.69 0-1.25-.56-1.25-1.25"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M27.25 3.5c.69 0 1.25.56 1.25 1.25v10a1.25 1.25 0 1 1-2.5 0V7.768L7.768 26h6.982a1.25 1.25 0 1 1 0 2.5h-10c-.69 0-1.25-.56-1.25-1.25v-10a1.25 1.25 0 1 1 2.5 0v6.982L24.232 6H17.25a1.25 1.25 0 1 1 0-2.5z"></svg:path>`,
 })
 export class FluentArrowMaximize32FilledIcon {
   readonly viewBox = input("0 0 32 32")
@@ -349,7 +349,7 @@ export class FluentArrowMaximize32FilledIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M28 3a1 1 0 0 1 1 1v10a1 1 0 1 1-2 0V6.414L6.414 27H14a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1V18a1 1 0 1 1 2 0v7.586L25.586 5H18a1 1 0 1 1 0-2z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M27 4a1 1 0 0 1 1 1v10a1 1 0 1 1-2 0V7.414L7.414 26H15a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1V17a1 1 0 1 1 2 0v7.586L24.586 6H17a1 1 0 1 1 0-2z"></svg:path>`,
 })
 export class FluentArrowMaximize32RegularIcon {
   readonly viewBox = input("0 0 32 32")
@@ -366,7 +366,7 @@ export class FluentArrowMaximize32RegularIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M40.5 24a1.5 1.5 0 0 1-1.5-1.5V11.121L11.121 39H22.5a1.5 1.5 0 0 1 0 3h-15A1.5 1.5 0 0 1 6 40.5v-15a1.5 1.5 0 0 1 3 0v11.379L36.879 9H25.5a1.5 1.5 0 0 1 0-3h15A1.5 1.5 0 0 1 42 7.5v15a1.5 1.5 0 0 1-1.5 1.5"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M39 7.5A1.5 1.5 0 0 1 40.5 9v15.5a1.5 1.5 0 0 1-3 0V12.621L12.621 37.5H24.5a1.5 1.5 0 0 1 0 3H9A1.5 1.5 0 0 1 7.5 39V23.5a1.5 1.5 0 0 1 3 0v11.879L35.379 10.5H23.5a1.5 1.5 0 0 1 0-3z"></svg:path>`,
 })
 export class FluentArrowMaximize48FilledIcon {
   readonly viewBox = input("0 0 48 48")
@@ -383,7 +383,7 @@ export class FluentArrowMaximize48FilledIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M40.75 24c-.69 0-1.25-.56-1.25-1.25V10.268L10.268 39.5H22.75a1.25 1.25 0 1 1 0 2.5H7.25C6.56 42 6 41.44 6 40.75v-15.5a1.25 1.25 0 1 1 2.5 0v12.482L37.732 8.5H25.25a1.25 1.25 0 1 1 0-2.5h15.5c.69 0 1.25.56 1.25 1.25v15.5c0 .69-.56 1.25-1.25 1.25"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M38.75 8c.69 0 1.25.56 1.25 1.25v15.5a1.25 1.25 0 1 1-2.5 0V12.268L12.268 37.5H24.75a1.25 1.25 0 1 1 0 2.5H9.25C8.56 40 8 39.44 8 38.75v-15.5a1.25 1.25 0 1 1 2.5 0v12.482L35.732 10.5H23.25a1.25 1.25 0 1 1 0-2.5z"></svg:path>`,
 })
 export class FluentArrowMaximize48RegularIcon {
   readonly viewBox = input("0 0 48 48")
