@@ -36,6 +36,23 @@ export class FlowbiteAdjustmentsHorizontalSolidIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[flowbiteAlignCenterSolidIcon],svg[flowbite-align-center-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7 6c0-.6.4-1 1-1h8a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1m-2 4c0-.6.4-1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1m2 4c0-.6.4-1 1-1h8a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1m-2 4c0-.6.4-1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1" clip-rule="evenodd"></svg:path>`,
+})
+export class FlowbiteAlignCenterSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[flowbiteAdjustmentsVerticalSolidIcon],svg[flowbite-adjustments-vertical-solid-icon]',
   host: {
     role: 'img',
@@ -53,16 +70,16 @@ export class FlowbiteAdjustmentsVerticalSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flowbiteAlignCenterSolidIcon],svg[flowbite-align-center-solid-icon]',
+  selector: 'svg[flowbiteAnnotationSolidIcon],svg[flowbite-annotation-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7 6c0-.6.4-1 1-1h8a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1m-2 4c0-.6.4-1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1m2 4c0-.6.4-1 1-1h8a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1m-2 4c0-.6.4-1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M3.559 4.544c.355-.35.834-.544 1.33-.544H19.11c.496 0 .975.194 1.33.544s.559.829.559 1.331v9.25c0 .502-.203.981-.559 1.331c-.355.35-.834.544-1.33.544H15.5l-2.7 3.6a1 1 0 0 1-1.6 0L8.5 17H4.889c-.496 0-.975-.194-1.33-.544A1.87 1.87 0 0 1 3 15.125v-9.25c0-.502.203-.981.559-1.331M7.556 7.5a1 1 0 1 0 0 2h8a1 1 0 0 0 0-2zm0 3.5a1 1 0 1 0 0 2H12a1 1 0 1 0 0-2z" clip-rule="evenodd"></svg:path>`,
 })
-export class FlowbiteAlignCenterSolidIcon {
+export class FlowbiteAnnotationSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -6557,23 +6574,6 @@ export class FlowbiteZoomInSolidIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M21.707 21.707a1 1 0 0 1-1.414 0l-3.5-3.5a1 1 0 0 1 1.414-1.414l3.5 3.5a1 1 0 0 1 0 1.414M2 10a8 8 0 1 1 16 0a8 8 0 0 1-16 0m4 0a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1" clip-rule="evenodd"></svg:path>`,
 })
 export class FlowbiteZoomOutSolidIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[flowbiteAnnotationSolidIcon],svg[flowbite-annotation-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M3.559 4.544c.355-.35.834-.544 1.33-.544H19.11c.496 0 .975.194 1.33.544s.559.829.559 1.331v9.25c0 .502-.203.981-.559 1.331c-.355.35-.834.544-1.33.544H15.5l-2.7 3.6a1 1 0 0 1-1.6 0L8.5 17H4.889c-.496 0-.975-.194-1.33-.544A1.87 1.87 0 0 1 3 15.125v-9.25c0-.502.203-.981.559-1.331M7.556 7.5a1 1 0 1 0 0 2h8a1 1 0 0 0 0-2zm0 3.5a1 1 0 1 0 0 2H12a1 1 0 1 0 0-2z" clip-rule="evenodd"></svg:path>`,
-})
-export class FlowbiteAnnotationSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[mynauiAArrowDownSolidIcon],svg[mynaui-a-arrow-down-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7 6.25a.75.75 0 0 1 .702.487l3.75 10a.75.75 0 0 1-1.404.526L8.98 14.417H5.02l-1.068 2.846a.75.75 0 1 1-1.404-.526l3.75-10A.75.75 0 0 1 7 6.25m1.418 6.667L7 9.136l-1.418 3.78zM17.25 6.75a.75.75 0 0 1 .75.75v4.97h3.28a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 0 1 0-1.06h3.28V7.5a.75.75 0 0 1 .75-.75"></svg:path>`,
+})
+export class MynauiAArrowDownSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mynauiAArrowUpSolidIcon],svg[mynaui-a-arrow-up-solid-icon]',
   host: {
     role: 'img',
@@ -12,23 +29,6 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M7 6.25a.75.75 0 0 1 .702.487l3.75 10a.75.75 0 0 1-1.404.526L8.98 14.417H5.02l-1.068 2.846a.75.75 0 1 1-1.404-.526l3.75-10A.75.75 0 0 1 7 6.25m1.418 6.667L7 9.136l-1.418 3.78zM16.72 6.47a.75.75 0 0 1 1.06 0l3.5 3.5a.75.75 0 0 1 0 1.06H18v5.47a.75.75 0 0 1-1.5 0v-5.47h-3.28a.75.75 0 0 1 0-1.06z"></svg:path>`,
 })
 export class MynauiAArrowUpSolidIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mynauiActivitySolidIcon],svg[mynaui-activity-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.292 2.396c.124.124.206.254.258.35c.079.145.138.3.185.44c.09.268.182.625.287 1.032l3.68 14.24L16.31 12.4l.013-.05l.003-.011c.044-.17.117-.454.283-.693a1.5 1.5 0 0 1 .599-.509c.191-.09.369-.117.5-.127c.105-.01.22-.009.308-.009H21a1 1 0 1 1 0 2h-2.78l-1.804 6.795c-.108.406-.202.762-.294 1.03a3 3 0 0 1-.188.44a1.4 1.4 0 0 1-.454.501a1.44 1.44 0 0 1-1.58-.006a1.4 1.4 0 0 1-.45-.505a3 3 0 0 1-.185-.441c-.09-.268-.182-.625-.287-1.032l-3.68-14.24L7.69 11.6l-.013.05l-.003.011c-.044.17-.118.454-.283.693a1.5 1.5 0 0 1-.599.509c-.191.09-.369.117-.5.127c-.105.01-.22.009-.308.009H3a1 1 0 1 1 0-2h2.78l1.804-6.796c.108-.405.202-.762.294-1.028c.048-.14.108-.295.188-.44a1.4 1.4 0 0 1 .454-.502a1.435 1.435 0 0 1 1.772.162"></svg:path>`,
-})
-export class MynauiActivitySolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -63,6 +63,23 @@ export class MynauiAcademicHatSolidIcon {
   template: `<svg:path fill="currentColor" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12m10.5-4.75a.75.75 0 0 0-1.5 0v.5a.75.75 0 0 0 1.5 0zM8.143 8.764a.75.75 0 0 0-.286 1.472l3.393.66v1.567l-1.544 3.752a.75.75 0 0 0 1.388.57L12 14.582l.906 2.203a.75.75 0 0 0 1.387-.57l-1.543-3.752v-1.567l3.393-.66a.75.75 0 1 0-.286-1.472L12 9.514z"></svg:path>`,
 })
 export class MynauiAccessibilitySolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiActivitySolidIcon],svg[mynaui-activity-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.292 2.396c.124.124.206.254.258.35c.079.145.138.3.185.44c.09.268.182.625.287 1.032l3.68 14.24L16.31 12.4l.013-.05l.003-.011c.044-.17.117-.454.283-.693a1.5 1.5 0 0 1 .599-.509c.191-.09.369-.117.5-.127c.105-.01.22-.009.308-.009H21a1 1 0 1 1 0 2h-2.78l-1.804 6.795c-.108.406-.202.762-.294 1.03a3 3 0 0 1-.188.44a1.4 1.4 0 0 1-.454.501a1.44 1.44 0 0 1-1.58-.006a1.4 1.4 0 0 1-.45-.505a3 3 0 0 1-.185-.441c-.09-.268-.182-.625-.287-1.032l-3.68-14.24L7.69 11.6l-.013.05l-.003.011c-.044.17-.118.454-.283.693a1.5 1.5 0 0 1-.599.509c-.191.09-.369.117-.5.127c-.105.01-.22.009-.308.009H3a1 1 0 1 1 0-2h2.78l1.804-6.796c.108-.405.202-.762.294-1.028c.048-.14.108-.295.188-.44a1.4 1.4 0 0 1 .454-.502a1.435 1.435 0 0 1 1.772.162"></svg:path>`,
+})
+export class MynauiActivitySolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -114,6 +131,23 @@ export class MynauiAddQueueSolidIcon {
   template: `<svg:path fill="currentColor" d="M20.935 3.065a2.783 2.783 0 0 0-3.935 0l-3.112 3.112l-8.75-1.758c-.554-.111-1.076.083-1.462.333a3.1 3.1 0 0 0-.979 1.027c-.23.393-.406.905-.321 1.431c.093.586.484 1.044 1.091 1.28l5.834 2.274L6.866 13.2c-.83-.067-1.541-.103-2.199.059c-.797.196-1.442.655-2.197 1.41a.75.75 0 0 0 .144 1.174L6.08 17.92l2.08 3.465a.75.75 0 0 0 1.173.144c.755-.755 1.214-1.4 1.41-2.197c.162-.658.126-1.368.059-2.199l2.435-2.435l2.274 5.835c.236.607.695.998 1.28 1.09c.527.085 1.038-.09 1.432-.321a3.1 3.1 0 0 0 1.026-.979c.25-.386.444-.908.333-1.461l-1.758-8.75L20.935 7a2.78 2.78 0 0 0 0-3.935"></svg:path>`,
 })
 export class MynauiAeroplaneSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiAirConditionerSolidIcon],svg[mynaui-air-conditioner-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.75 5.654c0-1.043.861-1.904 1.904-1.904h12.692c1.043 0 1.904.861 1.904 1.904v5.77a1.915 1.915 0 0 1-1.904 1.903H5.654a1.915 1.915 0 0 1-1.904-1.904zm12.115 6.173v-1.558a.416.416 0 0 0-.404-.404H8.539a.416.416 0 0 0-.403.404v1.558zM8.538 14.71a.75.75 0 0 1 .75.75c0 .625-.014 1.49-.305 2.205a2.27 2.27 0 0 1-.778 1.02c-.388.277-.86.41-1.397.41a.75.75 0 1 1 0-1.5c.283 0 .437-.067.527-.131c.094-.067.183-.177.258-.363c.165-.406.195-.984.195-1.64a.75.75 0 0 1 .75-.75m3.462 0a.75.75 0 0 1 .75.75V19.5a.75.75 0 0 1-1.5 0v-4.039a.75.75 0 0 1 .75-.75m3.461 0a.75.75 0 0 1 .75.75c0 .657.03 1.235.196 1.641c.075.186.164.296.258.363c.09.064.244.131.527.131a.75.75 0 0 1 0 1.5c-.537 0-1.01-.133-1.397-.41a2.27 2.27 0 0 1-.778-1.02c-.29-.715-.306-1.58-.306-2.205a.75.75 0 0 1 .75-.75"></svg:path>`,
+})
+export class MynauiAirConditionerSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8461,40 +8495,6 @@ export class MynauiGridSolidIcon {
   template: `<svg:path fill="currentColor" d="M14.594 4.44a2.8 2.8 0 0 1 1.063-.19c1.176.023 2.521.832 2.521 2.462v.323c.34-.133.701-.191 1.05-.184c1.177.022 2.522.83 2.522 2.46v4.4c0 3.843-2.761 6.463-5.977 7.509c-3.202 1.041-7.092.609-9.582-1.884l-.002-.002l-3.214-3.24l-.027-.028c-1.038-1.16-.82-2.85.009-3.828c.435-.515 1.078-.885 1.855-.875q.491.006.976.21V6.711c0-.81.332-1.458.864-1.887c.513-.413 1.162-.586 1.773-.574c.375.006.76.083 1.118.236c.053-.693.352-1.259.816-1.65c.495-.42 1.128-.598 1.726-.586c1.109.02 2.368.74 2.509 2.19"></svg:path>`,
 })
 export class MynauiHandSolidIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mynauiHardDriveSolidIcon],svg[mynaui-hard-drive-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M7.24 2.25h9.52a2.75 2.75 0 0 1 2.462 1.526a1 1 0 0 1 .051.135l2.163 7.846a8.8 8.8 0 0 1 .314 2.325V19A2.75 2.75 0 0 1 19 21.75H5A2.75 2.75 0 0 1 2.25 19v-4.918c0-.785.106-1.567.314-2.325l2.163-7.846a1 1 0 0 1 .051-.135A2.75 2.75 0 0 1 7.24 2.25m13.002 11.5H3.758q-.008.165-.008.332V19A1.25 1.25 0 0 0 5 20.25h14A1.25 1.25 0 0 0 20.25 19v-4.918q0-.165-.008-.332"></svg:path><svg:path d="M16.25 17a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75m-4 0a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75"></svg:path></svg:g>`,
-})
-export class MynauiHardDriveSolidIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mynauiHashCircleSolidIcon],svg[mynaui-hash-circle-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M10.769 13h1.976l.359-2h-1.976z"></svg:path><svg:path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75s9.75-4.365 9.75-9.75S17.385 2.25 12 2.25m-.963 5.012a.75.75 0 0 1 .606.87L11.397 9.5h1.976l.293-1.633a.75.75 0 0 1 1.477.266L14.897 9.5h1.385a.75.75 0 0 1 0 1.5h-1.654l-.36 2h2.014a.75.75 0 0 1 0 1.5H14l-.293 1.633a.75.75 0 0 1-1.477-.265l.246-1.368H10.5l-.293 1.633a.75.75 0 0 1-1.477-.265l.246-1.368H7.718a.75.75 0 0 1 0-1.5h1.527l.359-2H7.718a.75.75 0 0 1 0-1.5h2.155l.293-1.633a.75.75 0 0 1 .871-.605"></svg:path></svg:g>`,
-})
-export class MynauiHashCircleSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

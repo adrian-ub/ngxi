@@ -36,6 +36,23 @@ export class Cil4kIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[cilAccountLogoutIcon],svg[cil-account-logout-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M77.155 272.034H351.75v-32.001H77.155l75.053-75.053v-.001l-22.628-22.626l-113.681 113.68l.001.001h-.001L129.58 369.715l22.628-22.627v-.001z"></svg:path><svg:path fill="currentColor" d="M160 16v32h304v416H160v32h336V16z"></svg:path>`,
+})
+export class CilAccountLogoutIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[cilActionRedoIcon],svg[cil-action-redo-icon]',
   host: {
     role: 'img',
@@ -104,6 +121,23 @@ export class CilAirplaneModeIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[cilAirplaneModeOffIcon],svg[cil-airplane-mode-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M224 113.889a73.24 73.24 0 0 1 26.423-56.413a8.71 8.71 0 0 1 11.154 0A73.24 73.24 0 0 1 288 113.889v92l165.914 82.957l-2.671 13.354l-86.936-11.339l37.114 37.112l75.336 9.827l13.329-66.646L320 186.111v-72.222a105.16 105.16 0 0 0-37.937-81a40.705 40.705 0 0 0-52.126 0a105.16 105.16 0 0 0-37.937 81v4.675l32 32ZM38.517 16H16.029v22.655L173 195.613L21.914 271.154L35.243 337.8l157.189-20.5l7.735 81.224L128 429.45V496h256v-66.55l-72.167-30.929l5.571-58.507L473.4 496H496v-22.542ZM352 450.55V464H160v-13.45l74.238-31.817L224 311.24v-30.332L60.757 302.2l-2.671-13.354l138.762-69.381L288 310.611v.629l-10.238 107.493Z"></svg:path>`,
+})
+export class CilAirplaneModeOffIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[cilAirplayIcon],svg[cil-airplay-icon]',
   host: {
     role: 'img',
@@ -138,33 +172,16 @@ export class CilAlarmIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[cilAccountLogoutIcon],svg[cil-account-logout-icon]',
+  selector: 'svg[cilAlbumIcon],svg[cil-album-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M77.155 272.034H351.75v-32.001H77.155l75.053-75.053v-.001l-22.628-22.626l-113.681 113.68l.001.001h-.001L129.58 369.715l22.628-22.627v-.001z"></svg:path><svg:path fill="currentColor" d="M160 16v32h304v416H160v32h336V16z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M425.706 86.294A240 240 0 0 0 86.294 425.706A240 240 0 0 0 425.706 86.294M256 464c-114.691 0-208-93.309-208-208S141.309 48 256 48s208 93.309 208 208s-93.309 208-208 208"></svg:path><svg:path fill="currentColor" d="M256 152a104 104 0 1 0 104 104a104.12 104.12 0 0 0-104-104m0 176a72 72 0 1 1 72-72a72.08 72.08 0 0 1-72 72"></svg:path><svg:path fill="currentColor" d="M240 240h32v32h-32zm16-128V80a174.14 174.14 0 0 0-79.968 19.178A177.6 177.6 0 0 0 115.2 150.39l25.586 19.219A142.92 142.92 0 0 1 256 112"></svg:path>`,
 })
-export class CilAccountLogoutIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cilAirplaneModeOffIcon],svg[cil-airplane-mode-off-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M224 113.889a73.24 73.24 0 0 1 26.423-56.413a8.71 8.71 0 0 1 11.154 0A73.24 73.24 0 0 1 288 113.889v92l165.914 82.957l-2.671 13.354l-86.936-11.339l37.114 37.112l75.336 9.827l13.329-66.646L320 186.111v-72.222a105.16 105.16 0 0 0-37.937-81a40.705 40.705 0 0 0-52.126 0a105.16 105.16 0 0 0-37.937 81v4.675l32 32ZM38.517 16H16.029v22.655L173 195.613L21.914 271.154L35.243 337.8l157.189-20.5l7.735 81.224L128 429.45V496h256v-66.55l-72.167-30.929l5.571-58.507L473.4 496H496v-22.542ZM352 450.55V464H160v-13.45l74.238-31.817L224 311.24v-30.332L60.757 302.2l-2.671-13.354l138.762-69.381L288 310.611v.629l-10.238 107.493Z"></svg:path>`,
-})
-export class CilAirplaneModeOffIcon {
+export class CilAlbumIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,16 +206,33 @@ export class CilAlignCenterIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[cilAlbumIcon],svg[cil-album-icon]',
+  selector: 'svg[cilAlignLeftIcon],svg[cil-align-left-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M425.706 86.294A240 240 0 0 0 86.294 425.706A240 240 0 0 0 425.706 86.294M256 464c-114.691 0-208-93.309-208-208S141.309 48 256 48s208 93.309 208 208s-93.309 208-208 208"></svg:path><svg:path fill="currentColor" d="M256 152a104 104 0 1 0 104 104a104.12 104.12 0 0 0-104-104m0 176a72 72 0 1 1 72-72a72.08 72.08 0 0 1-72 72"></svg:path><svg:path fill="currentColor" d="M240 240h32v32h-32zm16-128V80a174.14 174.14 0 0 0-79.968 19.178A177.6 177.6 0 0 0 115.2 150.39l25.586 19.219A142.92 142.92 0 0 1 256 112"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M16 64h480v32H16zm0 88h328v32H16zm0 88h480v32H16zm0 88h328v32H16zm0 88h480v32H16z"></svg:path>`,
 })
-export class CilAlbumIcon {
+export class CilAlignLeftIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilAlignRightIcon],svg[cil-align-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 64h480v32H16zm152 88h328v32H168zM16 240h480v32H16zm152 88h328v32H168zM16 416h480v32H16z"></svg:path>`,
+})
+export class CilAlignRightIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -223,6 +257,23 @@ export class CilAmericanFootballIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[cilAnimalIcon],svg[cil-animal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M382.825 304.576a131.562 131.562 0 0 0-253.65 0l-18.248 66.15A80 80 0 0 0 188.046 472h135.908a80 80 0 0 0 77.119-101.274Zm-20.682 116.5A47.64 47.64 0 0 1 323.954 440H188.046a48 48 0 0 1-46.272-60.765l18.248-66.149a99.563 99.563 0 0 1 191.956 0l18.248 66.149a47.64 47.64 0 0 1-8.083 41.845ZM146.1 230.31c2.784-17.4-.908-36.027-10.4-52.463s-23.78-28.947-40.237-35.236c-17.624-6.731-35.6-5.659-50.634 3.017c-29.887 17.256-37.752 59.785-17.529 94.805c9.489 16.436 23.778 28.95 40.235 35.236a64 64 0 0 0 22.863 4.371a55.13 55.13 0 0 0 27.771-7.389c15.025-8.677 24.945-23.714 27.931-42.341m-31.6-5.058c-1.43 8.929-5.81 15.92-12.333 19.686S87.4 249 78.95 245.775c-9.613-3.671-18.115-11.251-23.941-21.342c-11.2-19.4-8.538-42.8 5.82-51.092a23.5 23.5 0 0 1 11.847-3.058a32 32 0 0 1 11.368 2.217c9.613 3.673 18.115 11.252 23.941 21.343s8.139 21.248 6.515 31.409m35.066-61.235c11.362 9.083 24.337 13.813 37.458 13.812a55 55 0 0 0 11.689-1.261c33.723-7.331 54.17-45.443 45.58-84.958c-4.03-18.546-13.828-34.817-27.588-45.818c-14.735-11.78-32.189-16.239-49.147-12.551c-33.722 7.33-54.169 45.442-45.58 84.957c4.031 18.547 13.829 34.818 27.588 45.819m24.788-99.506a22.3 22.3 0 0 1 4.732-.5c5.948 0 12.066 2.327 17.637 6.781c8.037 6.425 13.826 16.234 16.3 27.621c4.76 21.895-4.906 43.368-21.107 46.89c-7.361 1.6-15.305-.628-22.367-6.275c-8.037-6.426-13.826-16.235-16.3-27.621c-4.761-21.901 4.905-43.374 21.105-46.896m292.817 81.117c-15.028-8.676-33.013-9.748-50.634-3.017c-16.457 6.287-30.746 18.8-40.235 35.236s-13.182 35.067-10.4 52.463c2.982 18.627 12.9 33.664 27.931 42.341a55.1 55.1 0 0 0 27.771 7.389a64 64 0 0 0 22.863-4.371c16.457-6.286 30.746-18.8 40.235-35.236c20.221-35.02 12.356-77.549-17.531-94.805m-10.18 78.805c-5.826 10.091-14.328 17.671-23.941 21.342c-8.446 3.228-16.692 2.931-23.215-.837s-10.9-10.757-12.333-19.686c-1.626-10.161.686-21.314 6.513-31.4s14.328-17.67 23.941-21.343a32 32 0 0 1 11.368-2.221a23.5 23.5 0 0 1 11.847 3.058c14.358 8.285 17.023 31.682 5.82 51.087m-143.704-47.865a55 55 0 0 0 11.689 1.261c13.12 0 26.1-4.729 37.458-13.812c13.759-11 23.557-27.272 27.588-45.818c8.589-39.515-11.858-77.627-45.58-84.957c-16.957-3.686-34.412.77-49.147 12.551c-13.76 11-23.558 27.272-27.588 45.817c-8.59 39.515 11.857 77.627 45.58 84.958m-14.31-78.16c2.474-11.387 8.263-21.2 16.3-27.621c5.572-4.454 11.689-6.781 17.637-6.781a22.3 22.3 0 0 1 4.732.5c16.2 3.522 25.866 25 21.107 46.89c-2.476 11.387-8.265 21.2-16.3 27.622c-7.061 5.646-15 7.874-22.367 6.275c-16.203-3.517-25.869-24.993-21.109-46.885"></svg:path>`,
+})
+export class CilAnimalIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[cilApertureIcon],svg[cil-aperture-icon]',
   host: {
     role: 'img',
@@ -240,16 +291,33 @@ export class CilApertureIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[cilAlignRightIcon],svg[cil-align-right-icon]',
+  selector: 'svg[cilAppleIcon],svg[cil-apple-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M16 64h480v32H16zm152 88h328v32H168zM16 240h480v32H16zm152 88h328v32H168zM16 416h480v32H16z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M452.415 213.048c-10.609-27.192-27.511-48.256-48.92-61.078a157.7 157.7 0 0 1-17.583 26.757l.115.063c31.881 18.323 50.423 65.148 45.091 113.871c-8.833 80.721-33.35 136.043-69.036 155.775c-23.2 12.827-52.133 11-86-5.424l-3.308-1.6h-24.389l-3.307 1.6c-33.867 16.426-62.8 18.251-86 5.424c-35.685-19.732-60.2-75.054-69.036-155.775c-5.332-48.723 13.211-95.549 45.091-113.871a66.6 66.6 0 0 1 33.74-8.768c24.143 0 51.966 11.311 82.2 33.656l1.078.8s43.583-5.299 60.849-13.138c52.021-23.617 63.5-61.156 65.536-66.254a121.9 121.9 0 0 0-1.021-93.559l-4.073-10.169l-10.949.11A122.777 122.777 0 0 0 242.039 159.7c-18.9-10.59-37.278-17.343-54.884-20.14c-24.943-3.965-47.811-.1-67.968 11.486c-22.138 12.724-39.581 34.164-50.442 62c-9.874 25.307-13.608 54.817-10.514 83.094c10.142 92.681 39.659 155.027 85.361 180.3a99.9 99.9 0 0 0 49.1 12.543c19.585 0 40.629-5.194 62.975-15.575h9.83c42.394 19.693 80.085 20.718 112.071 3.032c45.7-25.271 75.221-87.617 85.363-180.3c3.092-28.275-.642-57.785-10.516-83.092M328.019 60.826a90.5 90.5 0 0 1 23.693-6.564a90.8 90.8 0 0 1-75.056 115.205a90.84 90.84 0 0 1 51.363-108.641"></svg:path>`,
 })
-export class CilAlignRightIcon {
+export class CilAppleIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilApplicationsIcon],svg[cil-applications-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M88 32a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168-96a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168 32a64 64 0 1 0-64-64a64.07 64.07 0 0 0 64 64m0-96a32 32 0 1 1-32 32a32.036 32.036 0 0 1 32-32M88 192a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168-96a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168-96a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32M88 352a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168-96a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168-96a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32"></svg:path>`,
+})
+export class CilApplicationsIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8427,74 +8495,6 @@ export class CilTextStrikeIcon {
   template: `<svg:path fill="currentColor" d="M127.475 104H51.428a24.086 24.086 0 0 0-23.511 19.176l-1.5 7.31a503.6 503.6 0 0 0 1.477 210.663A24.14 24.14 0 0 0 51.334 360h76.141a24.03 24.03 0 0 0 24-24V128a24.027 24.027 0 0 0-24-24m-8 224H57.811a471.5 471.5 0 0 1-.046-191.082l.188-.918h61.522Zm373.36-109.526L421.583 93.246a24.25 24.25 0 0 0-21.036-12.236h-131.6a24.2 24.2 0 0 0-12.246 3.327l-72.012 42.244v37.1l86.376-50.671h124.947L464 232.5v9.271L444.3 294.3H316l-16 16v48.979l1.418 6.585l10.991 24.341A56.14 56.14 0 0 1 290.7 461.09L207.981 280H184v24l81.007 177.854a24.31 24.31 0 0 0 22.1 14.126a23.9 23.9 0 0 0 9.663-2.034a88.117 88.117 0 0 0 44.8-116.911l-9.57-21.2V326.3h117.7a24.31 24.31 0 0 0 22.661-15.7l22.09-58.906a24.1 24.1 0 0 0 1.542-8.5V230.44a24.26 24.26 0 0 0-3.158-11.966"></svg:path>`,
 })
 export class CilThumbDownIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cilThumbUpIcon],svg[cil-thumb-up-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M126.638 202.672H51.986a24.69 24.69 0 0 0-24.242 19.434a487.1 487.1 0 0 0-1.466 206.535l1.5 7.189a24.94 24.94 0 0 0 24.318 19.78h74.547a24.866 24.866 0 0 0 24.837-24.838V227.509a24.865 24.865 0 0 0-24.842-24.837m-7.163 220.938H57.916l-.309-1.487a455.1 455.1 0 0 1 .158-187.451h61.71Zm374.984-146.326l-22.09-58.906a24.315 24.315 0 0 0-22.662-15.706H332v-29.535l9.573-21.2a88.117 88.117 0 0 0-44.801-116.912a24.3 24.3 0 0 0-31.767 12.1l-80.312 175.812V248h23.731L290.7 67.882a56.14 56.14 0 0 1 21.711 70.885l-10.991 24.341l-1.42 6.584v48.98l16 16h128.3L464 287.2v9.272l-67.988 119.49H271.07l-86.377-50.67v37.1l72.007 42.241a24.2 24.2 0 0 0 12.25 3.329h131.6a24.25 24.25 0 0 0 21.035-12.234l71.25-125.228A24.26 24.26 0 0 0 496 298.531v-12.748a24.1 24.1 0 0 0-1.541-8.499"></svg:path>`,
-})
-export class CilThumbUpIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cilToggleOffIcon],svg[cil-toggle-off-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M368 128H144a128 128 0 0 0 0 256h224a128 128 0 0 0 0-256m0 224H144a96 96 0 0 1 0-192h224a96 96 0 0 1 0 192"></svg:path><svg:path fill="currentColor" d="M144 192a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32"></svg:path>`,
-})
-export class CilToggleOffIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cilToggleOnIcon],svg[cil-toggle-on-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M368 128H144a128 128 0 0 0 0 256h224a128 128 0 0 0 0-256m0 224H144a96 96 0 0 1 0-192h224a96 96 0 0 1 0 192"></svg:path><svg:path fill="currentColor" d="M368 192a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32"></svg:path>`,
-})
-export class CilToggleOnIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cilToiletIcon],svg[cil-toilet-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M469.613 46.229A77.38 77.38 0 0 0 408 16h-12.381l-56 216H40v32c0 46.482 18.616 88.125 52.417 117.257C124.4 408.82 168.288 424 216 424h38.124l-8 72H448V250.04l35.411-136.585a77.38 77.38 0 0 0-13.798-67.226M416 464H281.876l8-72H216c-84.785 0-144-52.636-144-128h344Zm36.435-358.576L419.619 232h-46.942l47.3-182.436a45.95 45.95 0 0 1 32.46 55.86Z"></svg:path>`,
-})
-export class CilToiletIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")

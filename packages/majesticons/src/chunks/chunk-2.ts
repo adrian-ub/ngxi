@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[majesticonsUsbLineIcon],svg[majesticons-usb-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6v1m4-1v1m-6 4h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1m2 8H9a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4h-1m-4 0v2m0-2h4m0 0v2"></svg:path>`,
+})
+export class MajesticonsUsbLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[majesticonsUserIcon],svg[majesticons-user-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="8" r="5" fill="currentColor"></svg:circle><svg:path d="M20 21a8 8 0 1 0-16 0"></svg:path><svg:path fill="currentColor" d="M12 13a8 8 0 0 0-8 8h16a8 8 0 0 0-8-8"></svg:path></svg:g>`,
+})
+export class MajesticonsUserIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[majesticonsUserAddIcon],svg[majesticons-user-add-icon]',
   host: {
     role: 'img',
@@ -726,40 +760,6 @@ export class MajesticonsZoomOutIcon {
   template: `<svg:g fill="currentColor"><svg:path d="M4 11a7 7 0 1 1 14 0a7 7 0 0 1-14 0zm7-9a9 9 0 1 0 5.618 16.032l3.675 3.675a1 1 0 0 0 1.414-1.414l-3.675-3.675A9 9 0 0 0 11 2zm-3 8a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H8z"></svg:path></svg:g>`,
 })
 export class MajesticonsZoomOutLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[majesticonsAlertCircleIcon],svg[majesticons-alert-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m0 5a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1m1 9a1 1 0 1 0-2 0a1 1 0 1 0 2 0" clip-rule="evenodd"></svg:path>`,
-})
-export class MajesticonsAlertCircleIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[majesticonsAlignLeftIcon],svg[majesticons-align-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M4 3v18"></svg:path><svg:rect width="13" height="4" x="7" y="6" fill="currentColor" rx="2"></svg:rect><svg:rect width="9" height="4" x="7" y="14" fill="currentColor" rx="2"></svg:rect></svg:g>`,
-})
-export class MajesticonsAlignLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentMdl2NotImpactedSolidIcon],svg[fluent-mdl2-not-impacted-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1600 992q-102 0-192 32t-167 88l-189-124l-660 1001q-20 29-54 29q-18 0-35-11q-28-19-28-53q0-19 10-35L946 917L619 702l-20 31q-19 28-47 42t-61 15q-38 0-69-21q-28-19-43-47t-15-61q0-37 21-69L738 57q19-28 47-42t60-15q37 0 70 21q28 19 43 47t15 61q0 38-21 69l-21 31l748 493l20-30q19-28 47-43t61-15q37 0 70 21q28 19 42 47t15 61q0 37-21 70l-126 191q-45-14-91-23t-96-9m317 291q63 64 97 145t34 172t-34 172t-97 144q-64 64-145 98t-172 34t-172-34t-144-97q-64-64-98-145t-34-172t34-172t97-144q64-64 145-98t172-34t172 34t145 97m-637 317q0 66 25 124t68 102t102 69t125 25q49 0 93-14t83-39l-443-443q-25 38-39 82t-14 94m587 176q25-38 39-82t14-94q0-66-25-124t-69-101t-102-69t-124-26q-49 0-93 14t-83 39z"></svg:path>`,
-})
-export class FluentMdl2NotImpactedSolidIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fluentMdl2NoteForwardIcon],svg[fluent-mdl2-note-forward-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class FluentMdl2TableLastColumnIcon {
   template: `<svg:path fill="currentColor" d="M1024 1024V896H640v768H0V128h1664v896h-128V896h-384v128zm512-256V512h-384v256zM512 1536v-256H128v256zm0-384V896H128v256zm0-384V512H128v256zM128 384h1408V256H128zm512 384h384V512H640zm1408 960q0 66-25 124t-68 102t-102 69t-125 25h-256q-67 0-125-25t-101-68t-69-102t-25-125q0-57 19-109t53-93t81-71t103-41v133q-58 21-93 69t-35 112q0 40 15 75t41 61t61 41t75 15h256q40 0 75-15t61-41t41-61t15-75q0-65-37-113t-97-70q6-36 6-73q0-15-1-29t-3-29q57 12 104 40t82 70t54 93t20 111M896 1472q0 65 37 113t97 70q-6 36-6 73q0 15 1 29t3 29q-56-9-104-38t-82-71t-54-96t-20-109q0-66 25-124t68-102t102-69t125-25h256q66 0 124 25t101 69t69 102t26 124q0 54-20 105t-56 94t-81 72t-99 43v-133q42-9 67-23t38-36t18-52t5-70t-15-75t-41-61t-61-41t-75-15h-256q-40 0-75 15t-61 41t-41 61t-15 75"></svg:path>`,
 })
 export class FluentMdl2TableLinkIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2TableTotalRowIcon],svg[fluent-mdl2-table-total-row-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 128h2048v1664H0zm1920 512V256h-512v384zm-640 128H768v384h512zM768 640h512V256H768zm-128 512V768H128v384zm768 0h512V768h-512zM640 256H128v384h512z"></svg:path>`,
+})
+export class FluentMdl2TableTotalRowIcon {
   readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -53,23 +53,6 @@ export class WeuiAdd2OutlinedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[weuiArrowOutlinedIcon],svg[weui-arrow-outlined-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:path id="weuiArrowOutlined0" fill="currentColor" d="m7.588 12.43l-1.061 1.06L.748 7.713a.996.996 0 0 1 0-1.413L6.527.52l1.06 1.06l-5.424 5.425z"></svg:path></svg:defs><svg:use fill-rule="evenodd" href="#weuiArrowOutlined0" transform="rotate(-180 5.02 9.505)"></svg:use>`,
-})
-export class WeuiArrowOutlinedIcon {
-  readonly viewBox = input("0 0 12 24")
-  readonly width = input("0.5em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[weuiAlbumOutlinedIcon],svg[weui-album-outlined-icon]',
   host: {
     role: 'img',
@@ -87,16 +70,16 @@ export class WeuiAlbumOutlinedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[weuiBackOutlinedIcon],svg[weui-back-outlined-icon]',
+  selector: 'svg[weuiArrowOutlinedIcon],svg[weui-arrow-outlined-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5L10 4.563L2.682 12z"></svg:path>`,
+  template: `<svg:defs><svg:path id="weuiArrowOutlined0" fill="currentColor" d="m7.588 12.43l-1.061 1.06L.748 7.713a.996.996 0 0 1 0-1.413L6.527.52l1.06 1.06l-5.424 5.425z"></svg:path></svg:defs><svg:use fill-rule="evenodd" href="#weuiArrowOutlined0" transform="rotate(-180 5.02 9.505)"></svg:use>`,
 })
-export class WeuiBackOutlinedIcon {
+export class WeuiArrowOutlinedIcon {
   readonly viewBox = input("0 0 12 24")
   readonly width = input("0.5em")
   readonly height = input("1em")
@@ -121,18 +104,18 @@ export class WeuiAtOutlinedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[weuiBellringOffOutlinedIcon],svg[weui-bellring-off-outlined-icon]',
+  selector: 'svg[weuiBackOutlinedIcon],svg[weui-back-outlined-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m18.805 17.108l3.62 3.62l-.849.848L4.85 4.85L5.697 4L7.61 5.912a6 6 0 0 1 2.418-1.58a2 2 0 1 1 3.945 0A6 6 0 0 1 18 10v4q0 1.554.805 3.108M8.457 6.76l8.444 8.443A7 7 0 0 1 16.8 14v-4c0-2.06-1.309-3.87-3.222-4.535l-.956-.332l.167-.999a.8.8 0 1 0-1.578 0l.167.999l-.956.332A4.8 4.8 0 0 0 8.457 6.76M18.303 20H5.187a1 1 0 0 1-.806-1.592Q6 16.203 6 14v-4c0-.69.117-1.354.331-1.972l.973.974A4.8 4.8 0 0 0 7.2 10v4c0 1.63-.552 3.236-1.626 4.8h11.529zM11 20h2v.2a1 1 0 1 1-2 0z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5L10 4.563L2.682 12z"></svg:path>`,
 })
-export class WeuiBellringOffOutlinedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
+export class WeuiBackOutlinedIcon {
+  readonly viewBox = input("0 0 12 24")
+  readonly width = input("0.5em")
   readonly height = input("1em")
 }
 
@@ -148,6 +131,23 @@ export class WeuiBellringOffOutlinedIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-1.2a8.8 8.8 0 1 0 0-17.6a8.8 8.8 0 0 0 0 17.6m1.999-5.363L12.953 16.5L9.29 12.723a1.045 1.045 0 0 1 0-1.446L12.953 7.5L14 8.563L10.68 12L14 15.438z"></svg:path>`,
 })
 export class WeuiBack2OutlinedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[weuiBellringOffOutlinedIcon],svg[weui-bellring-off-outlined-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m18.805 17.108l3.62 3.62l-.849.848L4.85 4.85L5.697 4L7.61 5.912a6 6 0 0 1 2.418-1.58a2 2 0 1 1 3.945 0A6 6 0 0 1 18 10v4q0 1.554.805 3.108M8.457 6.76l8.444 8.443A7 7 0 0 1 16.8 14v-4c0-2.06-1.309-3.87-3.222-4.535l-.956-.332l.167-.999a.8.8 0 1 0-1.578 0l.167.999l-.956.332A4.8 4.8 0 0 0 8.457 6.76M18.303 20H5.187a1 1 0 0 1-.806-1.592Q6 16.203 6 14v-4c0-.69.117-1.354.331-1.972l.973.974A4.8 4.8 0 0 0 7.2 10v4c0 1.63-.552 3.236-1.626 4.8h11.529zM11 20h2v.2a1 1 0 1 1-2 0z"></svg:path>`,
+})
+export class WeuiBellringOffOutlinedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

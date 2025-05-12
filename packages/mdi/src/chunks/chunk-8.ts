@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[mdiHurricaneIcon],svg[mdi-hurricane-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M15 6.79A6 6 0 0 1 18 12C18 22 6 22 6 22a17.7 17.7 0 0 0 3.34-3.29a1 1 0 0 0-.34-1.5A6 6 0 0 1 6 12C6 2 18 2 18 2a17.699 17.699 0 0 0-3.34 3.29a1.002 1.002 0 0 0 .34 1.5zM12 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4z" fill="currentColor"></svg:path>`,
+})
+export class MdiHurricaneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiHvacIcon],svg[mdi-hvac-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.58 14c-.28-.45-.47-.97-.52-1.5h7.88c-.05.53-.24 1.05-.47 1.5zM12 16c-1.03 0-1.92-.39-2.62-1h5.25c-.71.61-1.6 1-2.63 1m0-8c1.03 0 1.92.39 2.63 1H9.38c.7-.61 1.59-1 2.62-1m-3.42 2h6.84c.28.45.47.97.52 1.5H8.06c.05-.53.24-1.05.52-1.5M3 3v18h18V3zm9 15c-3.33 0-6-2.67-6-6s2.67-6 6-6s6 2.67 6 6s-2.67 6-6 6"></svg:path>`,
+})
+export class MdiHvacIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiHvacOffIcon],svg[mdi-hvac-off-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M22.11 21.46L2.39 1.73L1.11 3L3 4.89V21h16.11l1.73 1.73zM12 18c-3.33 0-6-2.67-6-6c0-1.18.34-2.27.92-3.19l1.51 1.51c-.19.37-.33.77-.37 1.18h1.55l1 1H8.06c.05.53.24 1.05.52 1.5h3.53l1 1H9.38c.7.61 1.59 1 2.62 1c.63 0 1.19-.16 1.7-.41l1.49 1.49c-.92.58-2.01.92-3.19.92m0-10c1.03 0 1.92.39 2.63 1H12.2l-.93-.93c.23-.04.48-.07.73-.07M9.67 6.47L6.2 3H21v14.8l-3.47-3.47c.3-.71.47-1.5.47-2.33c0-3.33-2.67-6-6-6c-.83 0-1.62.17-2.33.47m6.27 5.03H14.7L13.2 10h2.22c.28.45.47.97.52 1.5"></svg:path>`,
+})
+export class MdiHvacOffIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mdiHydraulicOilLevelIcon],svg[mdi-hydraulic-oil-level-icon]',
   host: {
     role: 'img',
@@ -8444,57 +8495,6 @@ export class MdiLungsIcon {
   template: `<svg:path d="M9.56 12.5c0 .1-.06.22-.16.29a.49.49 0 0 1-.81-.38V8.5H5.66v4.89a2.44 2.44 0 0 0 2.44 2.44c.58 0 1.14-.21 1.58-.59c-.04.36-.25.69-.57.87c-.36.2-.76.31-1.17.3c-.48 0-.94-.11-1.38-.32L6.39 16v2.6c.65.26 1.35.4 2.05.4c1.03 0 2.02-.34 2.81-1c.83-.75 1.29-1.82 1.25-2.94V8.5H9.56v4m-4.63.89v-7.8H2v7.31c-.16 1.45.88 2.75 2.33 2.91c.08.01.17.02.23.02c.37 0 .73-.09 1.07-.24l.12-.09l-.1-.09c-.48-.56-.74-1.28-.72-2.02m17.07-2V8.5h-1c-.41-2.12-2.47-3.5-4.59-3.09c-.24.04-.47.09-.7.2a4.102 4.102 0 0 0-2.45 3.57v6.65h.13c1.56-.07 2.8-1.36 2.8-2.93h1.22V10h-1.26v-.83c0-.31.17-.6.44-.76a.998.998 0 0 1 1.51.83v2.69a3.84 3.84 0 0 0 3.77 3.9H22V12.9a1 1 0 0 1-1-1v-.49l1-.02z" fill="currentColor"></svg:path>`,
 })
 export class MdiLyftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiMaceIcon],svg[mdi-mace-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M19.92 9.27c.05-.27.08-.51.08-.77s-.03-.5-.08-.77L23 8.5zm-5.23 3.65l.81 3.24l.81-3.24c-.26.05-.53.08-.81.08s-.55-.03-.81-.08m-2.99-2.03l-4.91 4.9l-.7-.7L1 20.17L3.83 23l5.08-5.09l-.7-.7l4.9-4.91c-.57-.36-1.05-.84-1.41-1.41m4.57-6.81L15.5 1l-.77 3.08c.27-.05.51-.08.77-.08s.5.03.77.08M8 8.5l3.08.77C11.03 9 11 8.76 11 8.5s.03-.5.08-.77zm10.63 1.54c.23-.46.37-.98.37-1.54s-.14-1.08-.37-1.54L21 3l-3.96 2.37c-.46-.23-.98-.37-1.54-.37s-1.08.14-1.54.37L10 3l2.37 3.96c-.23.46-.37.98-.37 1.54c0 1.93 1.57 3.5 3.5 3.5c.56 0 1.08-.14 1.54-.37L21 14z"></svg:path>`,
-})
-export class MdiMaceIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiMagazinePistolIcon],svg[mdi-magazine-pistol-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m14 1l-2 2H7l2 18H8v2h10v-2L16 1M9 5h3l.24 2h-3m.23 2h3l.24 2h-3m.23 2h3l.24 2h-3m.23 2h3l.24 2h-3Z"></svg:path>`,
-})
-export class MdiMagazinePistolIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiMagazineRifleIcon],svg[mdi-magazine-rifle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7 1v2h1v10l-3 6l9 4l4-10V3h1V1m-9 2h6v2h-4.12v8.45L9.6 18.14L8 17.5l2-4Z"></svg:path>`,
-})
-export class MdiMagazineRifleIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

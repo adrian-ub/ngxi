@@ -19,23 +19,6 @@ export class WeuiAddFilledIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[weuiArrowFilledIcon],svg[weui-arrow-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"></svg:path>`,
-})
-export class WeuiArrowFilledIcon {
-  readonly viewBox = input("0 0 12 24")
-  readonly width = input("0.5em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[weuiAddFriendsFilledIcon],svg[weui-add-friends-filled-icon]',
   host: {
     role: 'img',
@@ -70,16 +53,50 @@ export class WeuiAdd2FilledIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[weuiBack2FilledIcon],svg[weui-back2-filled-icon]',
+  selector: 'svg[weuiAlbumFilledIcon],svg[weui-album-filled-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m1.999-6.563L10.68 12L14 8.562L12.953 7.5L9.29 11.277a1.045 1.045 0 0 0 0 1.446l3.663 3.777z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M20.5 14.136V5.5h-17v8.35l4.7-3.8c.462-.375 1.205-.357 1.65.035l4.477 3.933l2.282-1.94c.462-.394 1.198-.386 1.646.017zM2.992 4h18.016c.537 0 .992.481.992 1.075v13.85c0 .596-.444 1.075-.992 1.075H2.992C2.455 20 2 19.519 2 18.925V5.075C2 4.479 2.444 4 2.992 4"></svg:path>`,
 })
-export class WeuiBack2FilledIcon {
+export class WeuiAlbumFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[weuiArrowFilledIcon],svg[weui-arrow-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"></svg:path>`,
+})
+export class WeuiArrowFilledIcon {
+  readonly viewBox = input("0 0 12 24")
+  readonly width = input("0.5em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[weuiAtFilledIcon],svg[weui-at-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11.465 9.145c-1.242 0-1.98 1.02-1.98 2.73c0 1.7.738 2.73 1.968 2.73c1.266 0 2.05-1.043 2.05-2.73s-.784-2.73-2.038-2.73m.387-7.125c5.554 0 9.457 3.492 9.457 8.707c0 3.691-1.747 6.07-4.606 6.07c-1.453 0-2.566-.703-2.824-1.84h-.164c-.48 1.172-1.465 1.805-2.824 1.805c-2.438 0-4.067-1.98-4.067-4.957c0-2.848 1.606-4.793 3.95-4.793c1.265 0 2.32.633 2.777 1.664h.164V7.27h2.379v6.27c0 .808.375 1.323 1.113 1.323c1.148 0 1.945-1.465 1.945-3.96c0-4.266-2.941-7.02-7.382-7.02c-4.512 0-7.676 3.258-7.676 7.969c0 4.933 3.293 7.816 8.12 7.816c1.255 0 2.532-.164 3.2-.41v1.875c-.914.27-2.11.433-3.375.433c-5.93 0-10.101-3.714-10.101-9.773c0-5.813 4.066-9.773 9.914-9.773"></svg:path>`,
+})
+export class WeuiAtFilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,50 +121,16 @@ export class WeuiBackFilledIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[weuiBellringOnFilledIcon],svg[weui-bellring-on-filled-icon]',
+  selector: 'svg[weuiBack2FilledIcon],svg[weui-back2-filled-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11 20H5.187a1 1 0 0 1-.806-1.592Q6 16.203 6 14v-4a6 6 0 0 1 4.027-5.668a2 2 0 1 1 3.945 0A6 6 0 0 1 18 10v4q0 2.205 1.62 4.408A1 1 0 0 1 18.812 20H13v.2a1 1 0 1 1-2 0z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m1.999-6.563L10.68 12L14 8.562L12.953 7.5L9.29 11.277a1.045 1.045 0 0 0 0 1.446l3.663 3.777z"></svg:path>`,
 })
-export class WeuiBellringOnFilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[weuiAtFilledIcon],svg[weui-at-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11.465 9.145c-1.242 0-1.98 1.02-1.98 2.73c0 1.7.738 2.73 1.968 2.73c1.266 0 2.05-1.043 2.05-2.73s-.784-2.73-2.038-2.73m.387-7.125c5.554 0 9.457 3.492 9.457 8.707c0 3.691-1.747 6.07-4.606 6.07c-1.453 0-2.566-.703-2.824-1.84h-.164c-.48 1.172-1.465 1.805-2.824 1.805c-2.438 0-4.067-1.98-4.067-4.957c0-2.848 1.606-4.793 3.95-4.793c1.265 0 2.32.633 2.777 1.664h.164V7.27h2.379v6.27c0 .808.375 1.323 1.113 1.323c1.148 0 1.945-1.465 1.945-3.96c0-4.266-2.941-7.02-7.382-7.02c-4.512 0-7.676 3.258-7.676 7.969c0 4.933 3.293 7.816 8.12 7.816c1.255 0 2.532-.164 3.2-.41v1.875c-.914.27-2.11.433-3.375.433c-5.93 0-10.101-3.714-10.101-9.773c0-5.813 4.066-9.773 9.914-9.773"></svg:path>`,
-})
-export class WeuiAtFilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[weuiAlbumFilledIcon],svg[weui-album-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M20.5 14.136V5.5h-17v8.35l4.7-3.8c.462-.375 1.205-.357 1.65.035l4.477 3.933l2.282-1.94c.462-.394 1.198-.386 1.646.017zM2.992 4h18.016c.537 0 .992.481.992 1.075v13.85c0 .596-.444 1.075-.992 1.075H2.992C2.455 20 2 19.519 2 18.925V5.075C2 4.479 2.444 4 2.992 4"></svg:path>`,
-})
-export class WeuiAlbumFilledIcon {
+export class WeuiBack2FilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -165,6 +148,23 @@ export class WeuiAlbumFilledIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m18.453 16.332l3.639 3.639l-1.06 1.06L4.06 4.061L5.12 3l2.697 2.697a6 6 0 0 1 2.21-1.365a2 2 0 1 1 3.945 0A6 6 0 0 1 18 10v4q0 1.166.453 2.332M17.88 20H5.187a1 1 0 0 1-.806-1.592Q6 16.203 6 14v-4c0-.572.08-1.125.23-1.65L17.878 20zM11 20h2v.2a1 1 0 1 1-2 0z"></svg:path>`,
 })
 export class WeuiBellringOffFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[weuiBellringOnFilledIcon],svg[weui-bellring-on-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11 20H5.187a1 1 0 0 1-.806-1.592Q6 16.203 6 14v-4a6 6 0 0 1 4.027-5.668a2 2 0 1 1 3.945 0A6 6 0 0 1 18 10v4q0 2.205 1.62 4.408A1 1 0 0 1 18.812 20H13v.2a1 1 0 1 1-2 0z"></svg:path>`,
+})
+export class WeuiBellringOnFilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

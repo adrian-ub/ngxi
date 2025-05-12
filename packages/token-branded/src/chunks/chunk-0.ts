@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[tokenBranded1artIcon],svg[token-branded-1art-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBranded1art0)" d="M14.179 3.276c1.098-.696 2.592.006 2.622 1.212v14.988c0 .84-.876 1.524-1.8 1.524c-.912 0-1.782-.666-1.8-1.5V7.956s-2.442 1.518-3.618 2.124c-.138.072-.288.12-.462.126c-.204 0-.42-.036-.63-.114c-.69-.264-1.32-.93-1.29-1.692c.017-.444.216-.864.654-1.152l.024-.018l6.3-3.96z"></svg:path><svg:defs><svg:lineargradient id="tokenBranded1art0" x1="15.686" x2="5.921" y1="7.018" y2="10.375" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#836DF7"></svg:stop><svg:stop offset=".28" stop-color="#2E8ACA"></svg:stop><svg:stop offset=".5" stop-color="#4978D6"></svg:stop><svg:stop offset="1" stop-color="#A672DC"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBranded1artIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[tokenBranded0xgasIcon],svg[token-branded-0xgas-icon]',
   host: {
     role: 'img',
@@ -12,23 +29,6 @@ import { Component, input } from '@angular/core'
   template: `<svg:g fill="none"><svg:path fill="url(#tokenBranded0xgas0)" d="M15.448 3.855c.135 0 .276.017.422.028c.81.056 2.83.208 3.128 1.181c.067.214.123.422.168.636c.732 3.093 1.182 6.13 1.817 9.927c0 .068.017.14.017.214c-.169 1.777-2.149 2.036-3.544 2.036l-4.19.028c-2.171-.045-3.037-.011-5.895 0c-1.395 0-3.723-.011-4.303-1.535a7.5 7.5 0 0 1-.056-1.44c.534-3.578 1.249-6.412 1.772-9.523a1.3 1.3 0 0 1 .13-.394a.4.4 0 0 1 .112-.146c1.046-.9 2.852-1.001 4.15-1.012h.226c2.014.056 4.033-.045 6.046 0"></svg:path><svg:path fill="#080210" d="m15.386 4.666l-1.293-.006l-5.248.011a3.4 3.4 0 0 0-.585.034c-.422.073-.782.343-1.198.45c-.315.085-.568.152-.641.602a76 76 0 0 0-.36 2.66c-.26 2.15-.535 4.292-.81 6.435c0 .146-.023.304.028.45c.393.478.692.675 1 .821c.18.085.344.135.507.158a8 8 0 0 0 1.176.073c2.469.028 4.449.028 6.67.028c.8-.006 1.598.023 2.391-.05c.478-.04 1.553-.484 1.76-.974c.113-.264.034-.562-.022-.832a66 66 0 0 1-.888-5.878l-.338-2.694a15 15 0 0 0-.073-.428c-.101-.562-1.474-.855-2.076-.86"></svg:path><svg:path fill="url(#tokenBranded0xgas1)" d="M9.255 6.393a20 20 0 0 1 1.395-.006h2.458c.664 0 1.339-.039 2.003.017c.112.006.225.034.348.08c.214.083.422.185.625.297c.124.068.27.158.287.293q.069.465.078.939c0 .096-.737.135-.843.191l-.073-.815c-.09-.029-.197-.08-.282-.096c-.112-.017-.883-.09-.984-.22c-.09-.112-.112-.28-.169-.416H9.823c-.061.012-.106.276-.118.338a.07.07 0 0 1-.056.05l-1.243.35c-.073.241-.034.505-.056.747c-.276 0-.546-.073-.821-.084c0-.36.016-.68.067-.973c.045-.259.776-.546 1.001-.619a2 2 0 0 1 .658-.073m5.288.208c-.028.113-.017.298.123.332c.13.034.242 0 .338-.084c.056-.051.045-.113.017-.17a.45.45 0 0 0-.484-.078zM8.9 6.657c-.112.299.259.405.439.197c.236-.287-.36-.422-.439-.202z"></svg:path><svg:path fill="url(#tokenBranded0xgas2)" d="M14.576 7.37c.244.114.508.18.777.192c.016.174.151.72-.068.838l-.366.264l-1.715 1.283a.2.2 0 0 1-.023-.073a2.4 2.4 0 0 1 .006-.394l.208-.174c.101-.102.158-.242.253-.36q.314-.246.568-.54c.023.005.017.016 0 0c-.225-.057-.444-.17-.646-.164c-.293.473-.89.861-1.345 1.16l-.197.14c-.056.062-.118.017-.168-.028c-.456-.372-.945-.698-1.373-1.103l-.022-.09c-.017-.079-.17-.05-.226-.05q-.27.059-.522.05q.067.128.236.281c.034.034.349.394.41.507q.17.329.383.64c.056.096.067.17 0 .265q-.017-.033-.068-.056c-.73-.472-1.462-1.136-2.092-1.66l.017-.657c.298-.096.59-.175.894-.254c.056-.016.101-.028.169.023c.112.101.225.197.349.281l.995.754l1.001.748c.625-.467 1.907-1.53 2.565-1.822m-.433.479q-.027-.129.124-.13l.146.023c.04.011.304.056.281.112l-.005.012c-.034.028-.09.09-.13.09a1.2 1.2 0 0 1-.28 0c-.074 0-.119-.04-.136-.107"></svg:path><svg:path fill="#080210" d="m14.267 7.719l.147.022l.27.09a.02.02 0 0 1 .01.028l-.005.006l-.113.084a1.5 1.5 0 0 1-.292.012q-.117-.01-.14-.113c-.017-.084.022-.13.123-.13"></svg:path><svg:path fill="url(#tokenBranded0xgas3)" d="M16.697 7.658c.034.27.203 1.327.282 1.637c.196.028.511 0 .64.028l-.185-1.817"></svg:path><svg:path fill="url(#tokenBranded0xgas4)" d="M16.443 8.153c-.067-.096-.703-.05-.731.079c-.045.259.096 1.457.281 1.462c.073.006.726 0 .732-.101c-.096-.315-.068-1.153-.282-1.44"></svg:path><svg:path fill="url(#tokenBranded0xgas5)" d="M7.529 8.062c.084.13-.068 1.091-.107 1.372q.304-.027.607.056c.203-.95.298-1.124.298-1.344c-.213-.067-.528-.079-.798-.09z"></svg:path><svg:path fill="#fff" d="M10.2 8.9c.405.332.968.534 1.322.94c.09.106-.113.303-.203.382c-.59.54-1.203 1.035-1.743 1.637q-.255.286-.416.438c-.017.011-.034 0-.029-.022l.113-.152a16.4 16.4 0 0 0 1.502-2.11c.067-.09.056-.168 0-.264q-.274-.42-.546-.843z"></svg:path><svg:path fill="#B364B4" d="M9.132 12.277v.005c0 .006 0 .011.011.011h.017c-.113.113-.236.226-.191.36c.033.096.112.158.107.293c-.006.04-.17.461-.203.534c-.157.124-.23.068-.343-.337c-.006-.045.028-.101.05-.14c.096-.198.203-.383.276-.563a.2.2 0 0 0 .011-.113c-.01 0-.05-.017-.067 0c.062-.472.101-.945.163-1.417c.011-.13.028-.276.028-.405c.017.461.006.917-.028 1.378c-.011.135 0 .366 0 .546c0-.006-.017.01 0 0l.169-.158z"></svg:path><svg:path fill="#4B4450" d="M12.433 10.571a1.2 1.2 0 0 0-.427-.28c.09.112.084.218-.017.309c-.057.05-.22.151-.377.32l-.084.096c.376-.248.438-.259.787.034c.506.421 1.03.81 1.513 1.26c.18.01.371-.034.557-.017q.118.009.169-.057a7 7 0 0 0-.709-.59c-.484-.338-.9-.777-1.406-1.069z"></svg:path><svg:path fill="#030109" d="m16.489 11.578l.084.506c0 .096 0 .186.017.282c.045.275.073.562.112.82l.045.158c.062.276.135.546.208.816a.25.25 0 0 1 0 .13a.5.5 0 0 1-.084.129q-.026-.018-.011-.068v-.015l-.006-.013a4 4 0 0 1-.422-.383a2.7 2.7 0 0 0-.484-.466l-.129-.113c.152.017.27-.006.366-.084l.01-.017l-.005-.023a.5.5 0 0 0-.135-.13l-.14-.1a2.7 2.7 0 0 1-.433-.462q-.04-.057.028-.056c.01 0 .022.006.045.034q.353.298.697.607c.068.057.158.085.152.197q-.001.16.011.32l.017.024a.03.03 0 0 0 .04 0l.005-.018a5.6 5.6 0 0 0-.028-.922l-.062-.562a9 9 0 0 1-.006-.844c0-.028.006-.04.023-.045c.011 0 .023.006.023.017z"></svg:path><svg:path fill="url(#tokenBranded0xgas6)" d="M16.478 10.16c-.175 1.188.056 2.313 0 3.488c0 .045-.602-.573-.692-.652c-.011-.996-.146-2.284-.146-3.268l.843.433z"></svg:path><svg:path fill="url(#tokenBranded0xgas7)" d="M11.99 10.593q.15-.128.016-.298a.14.14 0 0 0-.113.005a3.6 3.6 0 0 0-.483.338c-.608.5-1.232 1.04-1.125.967l-.248.186c.085.101.237.202.371.202a119 119 0 0 0 1.581-1.394z"></svg:path><svg:path fill="url(#tokenBranded0xgas8)" d="M8.513 9.515c-.045.197-.18.349-.225.54c-.158.731-.102 1.547-.08 2.29a.37.37 0 0 1-.14.28a7 7 0 0 0-.365.338c-.09.084-.321.214-.62.928c-.005 0-.016 0-.027.011l-.034.04c.079-1.142.191-2.43.506-3.544c.034-.096.124-.174.225-.23c.445-.27.59-.468.776-.929a1 1 0 0 1-.01.281z"></svg:path><svg:path fill="#500770" d="m17.159 11.505l.028.118c.056.72.152 1.44.219 2.16a1 1 0 0 1-.005.191c-.096.023-.338.057-.327.18l-.388-2.278l-.011-.146c.124.253.506-.022.484-.225"></svg:path><svg:path fill="url(#tokenBranded0xgas9)" d="M16.815 9.705c.557 1.356.242 2.925.63 4.309c.08.034.636.197.861.253c-.169-1.198-.208-2.992-.748-4.112c-.079-.067-.563-.528-.743-.45"></svg:path><svg:path fill="url(#tokenBranded0xgasa)" d="M7.107 9.768c-.056.422-.574 4.286-.625 4.308c-.247.107-.444.316-.714.338c-.101.011-.101.011-.146-.079v-.01c.185-1.272.343-2.566.63-3.826c.011-.056.056-.146.112-.28c.085-.074.568-.535.748-.45z"></svg:path><svg:path fill="url(#tokenBranded0xgasb)" d="m13.648 8.946l-.107.157c-.045.073-.09.146-.146.203l-.208.18a1.8 1.8 0 0 0 0 .388c.45.753 1.423 2.16 2.025 2.7c-.034-.136-.04-.265-.045-.31c-.017-.36-.101-.731-.146-1.091l.01-.23v-.012c.012-.011.029-.005.035.006l.253 1.535c.022.152.05.265.073.338c.022.09.056.168.101.225c.09.118.197.213.31.315l.146.123a.5.5 0 0 1-.135.152a.4.4 0 0 1-.287.096l-2.453.022h-.72l-2.238-.017c-.473 0-1.03 0-1.665-.016c-.191-.006-.32-.113-.422-.242l.169-.163c.14-.113.31-.259.349-.45a.9.9 0 0 1 .18-.383c.005-.011.123-.242.14-.14a.24.24 0 0 1-.011.112c-.18.439-.495 1.069.292 1.125h.467q3.099-.016 4.399 0c.388.011.787.045 1.153-.09a.205.205 0 0 0 .152-.208c0-.236-.135-.58-.32-.76a30 30 0 0 1-.715-.747c-.338-.366-.664-.732-1.046-1.041a4.2 4.2 0 0 1-.827-.844c.32-.388.843-.63 1.237-.933"></svg:path><svg:path fill="#761594" d="M14.999 12.512c.197.186.32.5.32.76q0 .149-.152.208c.029-.034.034-.062.012-.074a.55.55 0 0 1-.304-.444c-.017-.14.073-.315.124-.45"></svg:path><svg:path fill="#7A4B90" d="M8.03 13.468c.039.056.05.073.033.062c.05.096.062.18.045.248c-.062.253-.174.776-.428.928a1.6 1.6 0 0 1-.568-.394zm7.919.006c.298.225.77.602.973.917c-.191.19-.326.393-.664.393a.35.35 0 0 0-.028-.157a4.6 4.6 0 0 1-.416-1.001a.44.44 0 0 0 .135-.152"></svg:path><svg:path fill="url(#tokenBranded0xgasc)" d="M16.444 10.556a2 2 0 0 0-.062-.186c-.023 0-.056-.011-.062.017v.017c.067.258.112.506.124.753l.045.422c.14.866.242 1.744.467 2.588a.23.23 0 0 1 0 .123c-.158.372-.675.518-1.035.524c-.4.005-.8.01-1.198.005a1216 1216 0 0 0-6.334-.017c-.287 0-.495-.011-.709-.095a1.6 1.6 0 0 1-.568-.394c-.056-.023-.078-.05-.056-.113l.056-.28c-.022-.057-.067 0-.09.022c-.073.748-.793 1.232-1.293 1.732a.07.07 0 0 0-.02.048a.07.07 0 0 0 .02.048l.258.236c.09.056.186.096.293.112L6.336 16c.26-.243.435-.565.495-.917q.017-.084.203-.067c3.087-.158 6.215-.017 9.303-.023l.731.012l.225-.012c.023.31.225.951.529 1.12c.011 0 .005.017-.011.034q.38-.11.658-.355l-.332-.304c-.326-.427-.495-.59-.866-.928a.64.64 0 0 1-.197-.405c-.203-1.186-.338-2.43-.63-3.6"></svg:path><svg:path fill="#0C0116" d="M20.983 15.897q-.008-.015-.017 0c-.028.299-.163.535-.31.793c-.443.771-1.726 1.075-2.575 1.165l-10.777.034c-1.508.005-3.679-.17-4.297-1.761c0 .366-.017 1.153.044 1.513l.017.248c-.005.72.293 1.18.675 1.743c.793-.236 1.71.9 2.464.394a.3.3 0 0 1 .157-.056c.405-.023.833 0 1.25.017c2.699.14 6.04-.012 8.7.017c.18.022.355.067.732.14c.652.023 1.93-.14 2.593-.422c.157-.067.259-.197.36-.32l.067-.08c.563-.674.8-1.788.912-2.699c.022-.23.033-.495 0-.726z"></svg:path><svg:path fill="#E788EF" d="M7.023 5.345c-.045 0-.085 0-.113-.022c.146-.085.45-.253.585-.169c.023.011.023.05 0 .056a1.4 1.4 0 0 1-.472.135"></svg:path><svg:path fill="#D55BE6" d="M16.444 5.205c-.04.011-.056-.079-.006-.084c.045 0 .09 0 .135.01q.336.086.647.231a2.3 2.3 0 0 1-.77-.157z"></svg:path><svg:path fill="url(#tokenBranded0xgasd)" d="M17.186 6.162c.197.247.417.956.237 1.293q-.036.059-.13.057a5 5 0 0 0-.714 0l-.05-.822a.11.11 0 0 0-.057-.09a8 8 0 0 1-.41-.236c-.197-.118-.209-.281-.226-.472c0-.028-.005 0-.01-.017c0-.05-.018-.073-.04-.085c-.073-.022-.208-.01-.287-.016l-1.159-.006q-2.192.018-4.376-.006c-.574.012-1.142.012-1.715-.01c-.028 0-.102.016-.113.055v.023c-.084.365-.163.652-.585.76c-.073.022-.107.044-.118.123q-.075.37-.118.776c0 .034-.023.056-.056.05l-.687-.055c-.095 0-.067-.192-.061-.242c.016-.225.05-.45.084-.675c.14-.799.979-.99 1.867-1.035h7.183c.535 0 1.21.225 1.541.63"></svg:path><svg:path fill="url(#tokenBranded0xgase)" d="M7.22 7.578a4 4 0 0 0-.704-.045c-.163.563-.225 1.165-.259 1.744c.124.05.62.084.748.084c.08-.168.22-1.563.22-1.783z"></svg:path><svg:path fill="#211427" d="M9.835 7.78c.016.018.033.04.033.063a.26.26 0 0 1-.011.146l-.022.022a.34.34 0 0 1-.18.057a.3.3 0 0 1-.18-.04a.6.6 0 0 1-.186-.168a.04.04 0 0 1 .022-.057c.119-.033.417-.095.524-.022"></svg:path><svg:path fill="url(#tokenBranded0xgasf)" d="M14.12 7.562c-.483-.118-.961-.326-1.462-.287c-.46.034-.928.006-1.383.012c-.518.005-1.07.326-1.356.337L12.006 9.2c.748-.49 1.417-1.08 2.115-1.637"></svg:path><svg:path fill="#F2BFED" d="M13.688 12.282a.3.3 0 0 1 .124.056c.017.017.006.05-.023.056l-3.656.011c-.017 0-.04-.073-.028-.09q.015-.026.056-.028z"></svg:path><svg:path fill="#202025" d="M6.797 18.26h1.294v1.558H6.797z"></svg:path><svg:path fill="#333237" d="M8.22 18.26h1.958v1.558H8.221z"></svg:path><svg:path fill="#D9D9D9" d="M10.308 18.26h1.76v1.558h-1.76z"></svg:path><svg:path fill="url(#tokenBranded0xgasg)" d="M10.308 18.26h1.76v1.558h-1.76z"></svg:path><svg:path fill="url(#tokenBranded0xgash)" d="M13.536 18.26h-1.31v1.558h1.31z"></svg:path><svg:path fill="#353438" d="M13.732 18.26h1.8v1.558h-1.8z"></svg:path><svg:path fill="#222224" d="M15.712 18.26h1.547l-.185 1.558h-1.362z"></svg:path><svg:path fill="url(#tokenBranded0xgasi)" d="m17.439 18.26l1.648-.151l-.147 1.378l-1.569.332z"></svg:path><svg:path fill="url(#tokenBranded0xgasj)" d="m19.206 18.012l1.046-.478l-.23 1.446l-.935.461z"></svg:path><svg:path fill="url(#tokenBranded0xgask)" d="m6.606 18.225l-1.293-.113l.151 1.547l1.142.158z"></svg:path><svg:path fill="#D9D9D9" d="m5.144 18.046l-.844-.281l.191 1.54l.838.333z"></svg:path><svg:path fill="url(#tokenBranded0xgasl)" d="m5.144 18.046l-.844-.281l.191 1.54l.838.333z"></svg:path><svg:path fill="url(#tokenBranded0xgasm)" d="m4.137 17.742l-.506-.394l.09 1.665l.573.197l-.157-1.463z"></svg:path><svg:path fill="url(#tokenBranded0xgasn)" d="m3.513 17.214l-.326-.45l.079 1.62l.247.422z"></svg:path><svg:path fill="url(#tokenBranded0xgaso)" d="m20.454 17.41l.433-.72l-.348 1.52l-.377.635z"></svg:path><svg:defs><svg:lineargradient id="tokenBranded0xgas0" x1="6.955" x2="21.557" y1="4.3" y2="17.724" gradientUnits="userSpaceOnUse"><svg:stop offset=".2" stop-color="#FEFFFF"></svg:stop><svg:stop offset="1" stop-color="#89888D"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgas1" x1="12" x2="12" y1="3.864" y2="20.159" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#A7A6AC"></svg:stop><svg:stop offset="1" stop-color="#6D7371"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgas2" x1="3.4" x2="21" y1="8.182" y2="8.119" gradientUnits="userSpaceOnUse"><svg:stop offset=".17" stop-color="#80788B"></svg:stop><svg:stop offset=".32" stop-color="#EDF1EE"></svg:stop><svg:stop offset=".58" stop-color="#F9FFF9"></svg:stop><svg:stop offset=".78" stop-color="#626260"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgas3" x1="12" x2="12" y1="3.844" y2="20.158" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#48494F"></svg:stop><svg:stop offset="1" stop-color="#84619A"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgas4" x1="11.975" x2="11.975" y1="3.85" y2="20.201" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#26272A"></svg:stop><svg:stop offset="1" stop-color="#82529C"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgas5" x1="12.056" x2="12.056" y1="3.843" y2="20.157" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#26272A"></svg:stop><svg:stop offset="1" stop-color="#82529C"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgas6" x1="11.963" x2="11.963" y1="3.844" y2="20.172" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#D8A6E4"></svg:stop><svg:stop offset="1" stop-color="#59305D"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgas7" x1="19.59" x2="1.825" y1="3.827" y2="18.824" gradientUnits="userSpaceOnUse"><svg:stop offset=".41" stop-color="#FBF5FA"></svg:stop><svg:stop offset=".87" stop-color="#451066"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgas8" x1="5.609" x2="6.15" y1="3.513" y2="20.344" gradientUnits="userSpaceOnUse"><svg:stop offset=".11" stop-color="#EDCFF5"></svg:stop><svg:stop offset=".41" stop-color="#29282B"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgas9" x1="12.034" x2="12.034" y1="3.856" y2="20.158" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#D8A6E4"></svg:stop><svg:stop offset="1" stop-color="#59305D"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgasa" x1="18.351" x2="17.808" y1="3.546" y2="20.349" gradientUnits="userSpaceOnUse"><svg:stop offset=".11" stop-color="#EDCFF5"></svg:stop><svg:stop offset=".41" stop-color="#29282B"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgasb" x1="13.316" x2="21.573" y1="5.985" y2="12.42" gradientUnits="userSpaceOnUse"><svg:stop offset=".08" stop-color="#fff"></svg:stop><svg:stop offset=".28" stop-color="#80748D"></svg:stop><svg:stop offset=".93" stop-color="#FAE7F9"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgasc" x1="11.994" x2="11.994" y1="3.835" y2="20.159" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#B594B5"></svg:stop><svg:stop offset=".75" stop-color="#F9FEFB"></svg:stop><svg:stop offset=".84" stop-color="#97729E"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgasd" x1="11.998" x2="11.998" y1="3.387" y2="20.151" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#A7A3A0"></svg:stop><svg:stop offset=".23" stop-color="#3A3B3D"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgase" x1="12" x2="14.48" y1="11.988" y2="21.805" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#26272A"></svg:stop><svg:stop offset="1" stop-color="#82529C"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgasf" x1="11.988" x2="11.988" y1="3.837" y2="20.206" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#020107"></svg:stop><svg:stop offset=".63" stop-color="#670680"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgasg" x1="18.412" x2="3" y1="11.971" y2="11.971" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#F2D9FD"></svg:stop><svg:stop offset=".26" stop-color="#6F5874"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgash" x1="5.549" x2="21" y1="11.971" y2="11.971" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#F2D9FD"></svg:stop><svg:stop offset=".26" stop-color="#6F5874"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgasi" x1="18.402" x2="2.999" y1="12.001" y2="12.001" gradientUnits="userSpaceOnUse"><svg:stop offset=".09" stop-color="#F2D9FD"></svg:stop><svg:stop offset=".6" stop-color="#A27DAA"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgasj" x1="12.043" x2="12.043" y1="3.843" y2="20.158" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FBEBFA"></svg:stop><svg:stop offset=".48" stop-color="#DC69EF"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgask" x1="5.661" x2="21" y1="12.026" y2="12.026" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#F2D9FD"></svg:stop><svg:stop offset=".81" stop-color="#A27DAA"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgasl" x1="12.049" x2="12.049" y1="3.794" y2="20.157" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FBEBFA"></svg:stop><svg:stop offset=".48" stop-color="#DC69EF"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgasm" x1="12" x2="12" y1="3.793" y2="20.157" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FBEBFA"></svg:stop><svg:stop offset=".71" stop-color="#DC69EF"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgasn" x1="12" x2="12" y1="3.843" y2="20.158" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FBEBFA"></svg:stop><svg:stop offset="1" stop-color="#DC69EF"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBranded0xgaso" x1="20.522" x2="20.522" y1="16.691" y2="18.845" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#FBEBFA"></svg:stop><svg:stop offset="1" stop-color="#DC69EF"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
 })
 export class TokenBranded0xgasIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tokenBranded10setIcon],svg[token-branded-10set-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="#FD62D5"><svg:path d="M15.175 11.187s.53-.487.53-.83a.58.58 0 0 0-.175-.413l-3.112-3.065a.6.6 0 0 0-.836 0L8.47 9.944a.56.56 0 0 0-.175.407c0 .35.53.836.53.836v5.34s-.53.482-.53.83c0 .154.064.303.175.408l3.112 3.064a.6.6 0 0 0 .836 0l3.112-3.064a.56.56 0 0 0 .174-.407c0-.35-.529-.83-.529-.83zm-2.117 4.927a.58.58 0 0 1-.175.413l-.883.979l-.884-.979a.58.58 0 0 1-.175-.413V11.6c0-.159.064-.302.175-.413l.884-.979l.883.98a.57.57 0 0 1 .175.412z"></svg:path><svg:path d="m18.71 5.826l-2.794-2.662A.6.6 0 0 0 15.503 3c-.402 0-.476.085-.772.37a.63.63 0 0 1-.413.16H9.682a.62.62 0 0 1-.413-.16C8.973 3.085 8.9 3 8.497 3a.62.62 0 0 0-.413.159L5.289 5.82a.55.55 0 0 0-.169.391c0 .149.064.286.17.392l.952.995a.6.6 0 0 0 .826 0L9.407 5.28a.6.6 0 0 1 .413-.164h4.36c.154 0 .302.058.408.159l2.344 2.328a.6.6 0 0 0 .826 0L18.71 6.6a.533.533 0 0 0 0-.778z"></svg:path></svg:g>`,
-})
-export class TokenBranded10setIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,16 +70,16 @@ export class TokenBranded2daiIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tokenBrandedAagIcon],svg[token-branded-aag-icon]',
+  selector: 'svg[tokenBrandedAaIcon],svg[token-branded-aa-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="#fff"><svg:path fill-rule="evenodd" d="M12 20.47a8.47 8.47 0 1 0 0-16.94a8.47 8.47 0 0 0 0 16.94m0 .53a9 9 0 1 0 0-17.999A9 9 0 0 0 12 21" clip-rule="evenodd"></svg:path><svg:path d="M12 5.647c-1.392 0-2.678.423-3.727 1.185l-.243.191l-.53-.318l.477-.285a6.882 6.882 0 0 1 9.53 9.709l-.408-.307A6.33 6.33 0 0 0 18.353 12A6.34 6.34 0 0 0 12 5.647M6.88 8.209a6.3 6.3 0 0 0-1.233 3.79A6.34 6.34 0 0 0 12 18.353a6.32 6.32 0 0 0 3.786-1.228l.307.413a6.881 6.881 0 0 1-9.62-9.635z"></svg:path><svg:path fill-rule="evenodd" d="M7.235 7.765a.53.53 0 1 0 0-1.059a.53.53 0 0 0 0 1.059m0 .53a1.059 1.059 0 1 0 0-2.119a1.059 1.059 0 0 0 0 2.118m9.53 9a.53.53 0 1 0 0-1.06a.53.53 0 0 0 0 1.06m0 .529a1.059 1.059 0 1 0 0-2.118a1.059 1.059 0 0 0 0 2.118" clip-rule="evenodd"></svg:path><svg:path d="M7.06 7.437L5.564 5.939l.37-.37L7.437 7.06l-.371.376zm11.002 11.001l-1.498-1.498l.37-.376l1.504 1.498zM13.588 7.342v1.89l2.118-1.139v5.983L13.059 12.8v-2.684l-2.118 1.138v4.87L8.294 14.85V9.904zm-.529 2.17V8.19l-4.235 2.049v4.277l1.588.768v-4.341zm.53.318v2.636l1.588.768V8.983l-1.589.852z"></svg:path></svg:g>`,
+  template: `<svg:path fill="#7AEEAD" d="m6.116 10.875l.964-1.5l.131.262l.195-.262l2.719 5.25H8.212c-.063.007-.217-.027-.284-.24c-.053-.165-.75-1.557-1.317-2.667a.6.6 0 0 0-.251-.255a.53.53 0 0 0-.398.207l-.675.96h.86c.6 0 1.124.408 1.124.997s-.525.998-1.125.998H3.461l1.253-1.876h-.69C3.46 12.75 3 12.375 3 11.813s.458-.937 1.024-.937zm.195 3.577c.394-.098.814-.405.814-.825s-.42-.728-.814-.825a.994.994 0 0 1 0 1.65M4.875 12.63h.184l.787-1.043a.7.7 0 0 1 .236-.195a.6.6 0 0 0-.494.236l-.402.529zm4.748 1.852h.273l-2.512-4.83l-.098.135zm1.627-3.022v1.08h2.025a.62.62 0 0 1 .431.585c0 .326-.277.585-.622.585H10.5v.915h2.903c.907 0 1.597-.563 1.597-1.425c0-.593-.394-.923-.668-1.2c.274-.278.668-.525.668-1.148c0-.862-.69-1.477-1.598-1.477H10.5v.915h2.584c.345 0 .622.318.622.645c0 .266-.18.45-.435.524zm2.842.54c.338.345.736.675.736 1.2c0 .787-.687 1.26-1.425 1.26h-2.73v-.585h2.41c.443 0 .8-.33.8-.75c0-.353-.195-.75-.582-.75h-1.864v-.75h1.864c.386 0 .582-.338.582-.69a.825.825 0 0 0-.8-.81h-2.41V9.54h2.73c.817 0 1.425.547 1.425 1.312c0 .525-.402.81-.735 1.147m1.658-1.065c0-.863.742-1.56 1.657-1.56h3.218v.937H17.88c-.349 0-.63.236-.63.563a.6.6 0 0 0 .439.562h1.654A1.666 1.666 0 0 1 21 13.065c0 .862-.742 1.56-1.657 1.56h-3.218v-.938h2.745c.349 0 .63-.236.63-.562a.6.6 0 0 0-.439-.563h-1.654a1.665 1.665 0 0 1-1.657-1.627"></svg:path>`,
 })
-export class TokenBrandedAagIcon {
+export class TokenBrandedAaIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,74 +104,6 @@ export class TokenBranded0x0Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tokenBrandedAaIcon],svg[token-branded-aa-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#7AEEAD" d="m6.116 10.875l.964-1.5l.131.262l.195-.262l2.719 5.25H8.212c-.063.007-.217-.027-.284-.24c-.053-.165-.75-1.557-1.317-2.667a.6.6 0 0 0-.251-.255a.53.53 0 0 0-.398.207l-.675.96h.86c.6 0 1.124.408 1.124.997s-.525.998-1.125.998H3.461l1.253-1.876h-.69C3.46 12.75 3 12.375 3 11.813s.458-.937 1.024-.937zm.195 3.577c.394-.098.814-.405.814-.825s-.42-.728-.814-.825a.994.994 0 0 1 0 1.65M4.875 12.63h.184l.787-1.043a.7.7 0 0 1 .236-.195a.6.6 0 0 0-.494.236l-.402.529zm4.748 1.852h.273l-2.512-4.83l-.098.135zm1.627-3.022v1.08h2.025a.62.62 0 0 1 .431.585c0 .326-.277.585-.622.585H10.5v.915h2.903c.907 0 1.597-.563 1.597-1.425c0-.593-.394-.923-.668-1.2c.274-.278.668-.525.668-1.148c0-.862-.69-1.477-1.598-1.477H10.5v.915h2.584c.345 0 .622.318.622.645c0 .266-.18.45-.435.524zm2.842.54c.338.345.736.675.736 1.2c0 .787-.687 1.26-1.425 1.26h-2.73v-.585h2.41c.443 0 .8-.33.8-.75c0-.353-.195-.75-.582-.75h-1.864v-.75h1.864c.386 0 .582-.338.582-.69a.825.825 0 0 0-.8-.81h-2.41V9.54h2.73c.817 0 1.425.547 1.425 1.312c0 .525-.402.81-.735 1.147m1.658-1.065c0-.863.742-1.56 1.657-1.56h3.218v.937H17.88c-.349 0-.63.236-.63.563a.6.6 0 0 0 .439.562h1.654A1.666 1.666 0 0 1 21 13.065c0 .862-.742 1.56-1.657 1.56h-3.218v-.938h2.745c.349 0 .63-.236.63-.562a.6.6 0 0 0-.439-.563h-1.654a1.665 1.665 0 0 1-1.657-1.627"></svg:path>`,
-})
-export class TokenBrandedAaIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tokenBrandedAbstractIcon],svg[token-branded-abstract-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#054729" d="m14.849 14.776l3.61 3.576l-1.695 1.677l-3.61-3.575a1.63 1.63 0 0 0-1.156-.474c-.44 0-.846.167-1.156.474l-3.61 3.576l-1.694-1.678l3.61-3.576zm.602-1.03l4.93 1.306l.619-2.294l-4.93-1.307a1.62 1.62 0 0 1-.993-.755a1.6 1.6 0 0 1-.163-1.23l1.32-4.882l-2.316-.614l-1.32 4.884l2.85 4.888zm-6.902 0l-4.93 1.306L3 12.758l4.93-1.307a1.62 1.62 0 0 0 .993-.755a1.6 1.6 0 0 0 .163-1.23l-1.32-4.882l2.316-.614l1.32 4.884l-2.85 4.888z"></svg:path>`,
-})
-export class TokenBrandedAbstractIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tokenBranded1artIcon],svg[token-branded-1art-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="url(#tokenBranded1art0)" d="M14.179 3.276c1.098-.696 2.592.006 2.622 1.212v14.988c0 .84-.876 1.524-1.8 1.524c-.912 0-1.782-.666-1.8-1.5V7.956s-2.442 1.518-3.618 2.124c-.138.072-.288.12-.462.126c-.204 0-.42-.036-.63-.114c-.69-.264-1.32-.93-1.29-1.692c.017-.444.216-.864.654-1.152l.024-.018l6.3-3.96z"></svg:path><svg:defs><svg:lineargradient id="tokenBranded1art0" x1="15.686" x2="5.921" y1="7.018" y2="10.375" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#836DF7"></svg:stop><svg:stop offset=".28" stop-color="#2E8ACA"></svg:stop><svg:stop offset=".5" stop-color="#4978D6"></svg:stop><svg:stop offset="1" stop-color="#A672DC"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
-})
-export class TokenBranded1artIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tokenBrandedAbrIcon],svg[token-branded-abr-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="#fff"><svg:path d="M10.886 4.125c0-.551.45-1.125 1.013-1.125c4.545 0 8.814 2.987 9.101 7.768v6.98c0 .552-.562 1.002-1.125 1.002s-1.125-.45-1.125-1.001v-6.92C18.502 7.085 15.656 5.25 12 5.25c-.563 0-1.114-.574-1.114-1.125m2.228 15.75c0 .551-.45 1.125-1.013 1.125C7.556 21 3.287 18.013 3 13.232v-6.98C3 5.7 3.563 5.25 4.125 5.25S5.25 5.7 5.25 6.251v6.919c.247 3.746 3.094 5.58 6.75 5.58c.563 0 1.114.574 1.114 1.125"></svg:path><svg:path d="M6.375 4.024C6.375 3.46 6.825 3 7.382 3c.551 0 1.001.456 1.001 1.024V7.69A5.625 5.625 0 0 1 17.625 12v7.976c0 .563-.45 1.024-1.007 1.024a1.01 1.01 0 0 1-1.001-1.024V16.31A5.626 5.626 0 0 1 6.375 12zM8.383 12a3.616 3.616 0 1 0 0-.023z"></svg:path></svg:g>`,
-})
-export class TokenBrandedAbrIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[tokenBranded3ullIcon],svg[token-branded-3ull-icon]',
   host: {
     role: 'img',
@@ -189,16 +121,16 @@ export class TokenBranded3ullIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tokenBrandedAblIcon],svg[token-branded-abl-icon]',
+  selector: 'svg[tokenBrandedAagIcon],svg[token-branded-aag-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="#fff"><svg:path d="M12.844 6.377h-1.688L6.375 17.624h1.687l1.308-2.811h5.214l1.353 2.811h1.688zm1.098 6.749h-3.928L12 8.626z"></svg:path><svg:path d="M20.438 17.96c-1.164.221-2.241 1.307-2.461 2.477H6.023c-.22-1.17-1.297-2.255-2.46-2.477V6.04c1.163-.221 2.24-1.307 2.46-2.477h11.954c.22 1.17 1.297 2.255 2.46 2.477zm.38-12.595a2.177 2.177 0 0 1-2.17-2.182a.183.183 0 0 0-.181-.183H5.534a.183.183 0 0 0-.183.183a2.18 2.18 0 0 1-2.168 2.182a.183.183 0 0 0-.183.183v12.904c0 .101.082.184.183.184c1.196 0 2.168.978 2.168 2.18c0 .102.082.184.183.184h12.932a.183.183 0 0 0 .183-.183c0-1.203.973-2.181 2.168-2.181a.183.183 0 0 0 .183-.184V5.548a.2.2 0 0 0-.053-.13a.18.18 0 0 0-.13-.053"></svg:path></svg:g>`,
+  template: `<svg:g fill="#fff"><svg:path fill-rule="evenodd" d="M12 20.47a8.47 8.47 0 1 0 0-16.94a8.47 8.47 0 0 0 0 16.94m0 .53a9 9 0 1 0 0-17.999A9 9 0 0 0 12 21" clip-rule="evenodd"></svg:path><svg:path d="M12 5.647c-1.392 0-2.678.423-3.727 1.185l-.243.191l-.53-.318l.477-.285a6.882 6.882 0 0 1 9.53 9.709l-.408-.307A6.33 6.33 0 0 0 18.353 12A6.34 6.34 0 0 0 12 5.647M6.88 8.209a6.3 6.3 0 0 0-1.233 3.79A6.34 6.34 0 0 0 12 18.353a6.32 6.32 0 0 0 3.786-1.228l.307.413a6.881 6.881 0 0 1-9.62-9.635z"></svg:path><svg:path fill-rule="evenodd" d="M7.235 7.765a.53.53 0 1 0 0-1.059a.53.53 0 0 0 0 1.059m0 .53a1.059 1.059 0 1 0 0-2.119a1.059 1.059 0 0 0 0 2.118m9.53 9a.53.53 0 1 0 0-1.06a.53.53 0 0 0 0 1.06m0 .529a1.059 1.059 0 1 0 0-2.118a1.059 1.059 0 0 0 0 2.118" clip-rule="evenodd"></svg:path><svg:path d="M7.06 7.437L5.564 5.939l.37-.37L7.437 7.06l-.371.376zm11.002 11.001l-1.498-1.498l.37-.376l1.504 1.498zM13.588 7.342v1.89l2.118-1.139v5.983L13.059 12.8v-2.684l-2.118 1.138v4.87L8.294 14.85V9.904zm-.529 2.17V8.19l-4.235 2.049v4.277l1.588.768v-4.341zm.53.318v2.636l1.588.768V8.983l-1.589.852z"></svg:path></svg:g>`,
 })
-export class TokenBrandedAblIcon {
+export class TokenBrandedAagIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,16 +138,16 @@ export class TokenBrandedAblIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tokenBrandedAbyssIcon],svg[token-branded-abyss-icon]',
+  selector: 'svg[tokenBrandedAartIcon],svg[token-branded-aart-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedAbyss0)" d="M12.01 8.685c-1.35 0-2.379.208-2.379.208v2.16h4.737V8.894c.022 0-1.007-.21-2.358-.21"></svg:path><svg:path fill="url(#tokenBrandedAbyss1)" d="M12 3C8.54 3 4.42 4.778 4.42 4.778V15.6L12 21l7.579-5.378V4.755c.022 0-4.1-1.755-7.58-1.755m4.263 11.436l-1.895 1.383v-2.872H9.631v2.871l-1.894-1.382V7.26s2.5-.57 4.285-.57c1.784-.001 4.241.57 4.241.57z"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedAbyss0" x1="6.496" x2="18.731" y1="6.106" y2="16.484" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#A025F3"></svg:stop><svg:stop offset="1" stop-color="#4212A0"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedAbyss1" x1="6.496" x2="18.731" y1="6.105" y2="16.483" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#A025F3"></svg:stop><svg:stop offset="1" stop-color="#4212A0"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedAart0)" d="M15.071 3.844H8.93L3 20.156h5.44l.747-2.081a3.376 3.376 0 0 1 1.8-5.074L12 10.144L13.012 13a3.375 3.375 0 0 1 1.806 5.074l.743 2.081H21z"></svg:path><svg:path fill="url(#tokenBrandedAart1)" d="M12 18.469a2.25 2.25 0 1 0 0-4.5a2.25 2.25 0 0 0 0 4.5"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedAart0" x1="7.018" x2="14.761" y1="5.009" y2="19.656" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#51A7DC"></svg:stop><svg:stop offset=".19" stop-color="#3B578E"></svg:stop><svg:stop offset=".45" stop-color="#67BBCE"></svg:stop><svg:stop offset=".69" stop-color="#382F4A"></svg:stop><svg:stop offset=".79" stop-color="#A22B2C"></svg:stop><svg:stop offset=".9" stop-color="#E08C94"></svg:stop><svg:stop offset="1" stop-color="#CE7782"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedAart1" x1="7.018" x2="14.761" y1="5.009" y2="19.656" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#51A7DC"></svg:stop><svg:stop offset=".19" stop-color="#3B578E"></svg:stop><svg:stop offset=".45" stop-color="#67BBCE"></svg:stop><svg:stop offset=".69" stop-color="#382F4A"></svg:stop><svg:stop offset=".79" stop-color="#A22B2C"></svg:stop><svg:stop offset=".9" stop-color="#E08C94"></svg:stop><svg:stop offset="1" stop-color="#CE7782"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
 })
-export class TokenBrandedAbyssIcon {
+export class TokenBrandedAartIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,16 +172,50 @@ export class TokenBrandedAaveIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tokenBrandedAcalaIcon],svg[token-branded-acala-icon]',
+  selector: 'svg[tokenBrandedAblIcon],svg[token-branded-abl-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedAcala0)" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m.037-.845a8.155 8.155 0 1 0 0-16.31a8.155 8.155 0 0 0 0 16.31M12 19.531a7.53 7.53 0 1 0 0-15.062a7.53 7.53 0 0 0 0 15.062m.018-.919a6.63 6.63 0 1 0 0-13.261a6.63 6.63 0 0 0 0 13.261m-.374-11.988l4.8 8.328l.515-.893l-4.285-7.435zm-4.603 7.42l4.108-7.128l.009.015l.008-.014l4.869 8.447h-1.03l-1.23-2.134a5.9 5.9 0 0 0-1.771-.272q-.478 0-.93.066l.592-1.027a7 7 0 0 1 1.445.081l-1.954-3.39l-3.601 6.249zm2.793-.108l1.846-3.203l-.515-.893l-3.184 5.524h1.03l.01-.017c.883-.532 1.896-.8 3.002-.8a5.9 5.9 0 0 1 2.011.353l-.69-1.195a6.9 6.9 0 0 0-3.51.23" clip-rule="evenodd"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedAcala0" x1="19.99" x2="6.71" y1="21" y2="4.598" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#5A81FF"></svg:stop><svg:stop offset=".524" stop-color="#E40C5B"></svg:stop><svg:stop offset="1" stop-color="#FF4C3B"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+  template: `<svg:g fill="#fff"><svg:path d="M12.844 6.377h-1.688L6.375 17.624h1.687l1.308-2.811h5.214l1.353 2.811h1.688zm1.098 6.749h-3.928L12 8.626z"></svg:path><svg:path d="M20.438 17.96c-1.164.221-2.241 1.307-2.461 2.477H6.023c-.22-1.17-1.297-2.255-2.46-2.477V6.04c1.163-.221 2.24-1.307 2.46-2.477h11.954c.22 1.17 1.297 2.255 2.46 2.477zm.38-12.595a2.177 2.177 0 0 1-2.17-2.182a.183.183 0 0 0-.181-.183H5.534a.183.183 0 0 0-.183.183a2.18 2.18 0 0 1-2.168 2.182a.183.183 0 0 0-.183.183v12.904c0 .101.082.184.183.184c1.196 0 2.168.978 2.168 2.18c0 .102.082.184.183.184h12.932a.183.183 0 0 0 .183-.183c0-1.203.973-2.181 2.168-2.181a.183.183 0 0 0 .183-.184V5.548a.2.2 0 0 0-.053-.13a.18.18 0 0 0-.13-.053"></svg:path></svg:g>`,
 })
-export class TokenBrandedAcalaIcon {
+export class TokenBrandedAblIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedAbrIcon],svg[token-branded-abr-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#fff"><svg:path d="M10.886 4.125c0-.551.45-1.125 1.013-1.125c4.545 0 8.814 2.987 9.101 7.768v6.98c0 .552-.562 1.002-1.125 1.002s-1.125-.45-1.125-1.001v-6.92C18.502 7.085 15.656 5.25 12 5.25c-.563 0-1.114-.574-1.114-1.125m2.228 15.75c0 .551-.45 1.125-1.013 1.125C7.556 21 3.287 18.013 3 13.232v-6.98C3 5.7 3.563 5.25 4.125 5.25S5.25 5.7 5.25 6.251v6.919c.247 3.746 3.094 5.58 6.75 5.58c.563 0 1.114.574 1.114 1.125"></svg:path><svg:path d="M6.375 4.024C6.375 3.46 6.825 3 7.382 3c.551 0 1.001.456 1.001 1.024V7.69A5.625 5.625 0 0 1 17.625 12v7.976c0 .563-.45 1.024-1.007 1.024a1.01 1.01 0 0 1-1.001-1.024V16.31A5.626 5.626 0 0 1 6.375 12zM8.383 12a3.616 3.616 0 1 0 0-.023z"></svg:path></svg:g>`,
+})
+export class TokenBrandedAbrIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedAbstractIcon],svg[token-branded-abstract-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#054729" d="m14.849 14.776l3.61 3.576l-1.695 1.677l-3.61-3.575a1.63 1.63 0 0 0-1.156-.474c-.44 0-.846.167-1.156.474l-3.61 3.576l-1.694-1.678l3.61-3.576zm.602-1.03l4.93 1.306l.619-2.294l-4.93-1.307a1.62 1.62 0 0 1-.993-.755a1.6 1.6 0 0 1-.163-1.23l1.32-4.882l-2.316-.614l-1.32 4.884l2.85 4.888zm-6.902 0l-4.93 1.306L3 12.758l4.93-1.307a1.62 1.62 0 0 0 .993-.755a1.6 1.6 0 0 0 .163-1.23l-1.32-4.882l2.316-.614l1.32 4.884l-2.85 4.888z"></svg:path>`,
+})
+export class TokenBrandedAbstractIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -267,6 +233,91 @@ export class TokenBrandedAcalaIcon {
   template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedAbt0)" fill-rule="evenodd" d="m12 3l8 4.5v9L12 21l-8-4.5v-9zm7.25 4.64l-7-3.936v7.874zm.25.423L12.5 12l7 3.937zm-.25 8.296l-7-3.937v7.875zm-7.5 3.938l-7-3.938l7-3.937zm0-8.72l-7-3.936l7-3.937zM4.5 8.064l7 3.937l-7 3.937z" clip-rule="evenodd"></svg:path><svg:path fill="url(#tokenBrandedAbt1)" d="m12 7.152l4.216 7.115L12 16.639l-4.216-2.371zm0 .975l-3.533 5.962L12 16.077l3.533-1.988z"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedAbt0" x1="4.001" x2="19.999" y1="12" y2="12" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#06EFA0"></svg:stop><svg:stop offset="1" stop-color="#01FAFC"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedAbt1" x1="4" x2="19.999" y1="11.999" y2="11.999" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#06EFA0"></svg:stop><svg:stop offset="1" stop-color="#01FAFC"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
 })
 export class TokenBrandedAbtIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedAbyssIcon],svg[token-branded-abyss-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedAbyss0)" d="M12.01 8.685c-1.35 0-2.379.208-2.379.208v2.16h4.737V8.894c.022 0-1.007-.21-2.358-.21"></svg:path><svg:path fill="url(#tokenBrandedAbyss1)" d="M12 3C8.54 3 4.42 4.778 4.42 4.778V15.6L12 21l7.579-5.378V4.755c.022 0-4.1-1.755-7.58-1.755m4.263 11.436l-1.895 1.383v-2.872H9.631v2.871l-1.894-1.382V7.26s2.5-.57 4.285-.57c1.784-.001 4.241.57 4.241.57z"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedAbyss0" x1="6.496" x2="18.731" y1="6.106" y2="16.484" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#A025F3"></svg:stop><svg:stop offset="1" stop-color="#4212A0"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedAbyss1" x1="6.496" x2="18.731" y1="6.105" y2="16.483" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#A025F3"></svg:stop><svg:stop offset="1" stop-color="#4212A0"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedAbyssIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedAchIcon],svg[token-branded-ach-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#020041" d="M14.647 8.728L12 4.058l-2.647 4.67v6.258a4.72 4.72 0 0 1 3.335-1.398c.694 0 1.36.159 1.959.44zm1.588 2.806v8.407H21zm-1.588 8.407h-5.03a3.441 3.441 0 0 1 5.03-4.225zm-6.882 0H3l4.765-8.407z"></svg:path>`,
+})
+export class TokenBrandedAchIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedAcalaIcon],svg[token-branded-acala-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedAcala0)" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m.037-.845a8.155 8.155 0 1 0 0-16.31a8.155 8.155 0 0 0 0 16.31M12 19.531a7.53 7.53 0 1 0 0-15.062a7.53 7.53 0 0 0 0 15.062m.018-.919a6.63 6.63 0 1 0 0-13.261a6.63 6.63 0 0 0 0 13.261m-.374-11.988l4.8 8.328l.515-.893l-4.285-7.435zm-4.603 7.42l4.108-7.128l.009.015l.008-.014l4.869 8.447h-1.03l-1.23-2.134a5.9 5.9 0 0 0-1.771-.272q-.478 0-.93.066l.592-1.027a7 7 0 0 1 1.445.081l-1.954-3.39l-3.601 6.249zm2.793-.108l1.846-3.203l-.515-.893l-3.184 5.524h1.03l.01-.017c.883-.532 1.896-.8 3.002-.8a5.9 5.9 0 0 1 2.011.353l-.69-1.195a6.9 6.9 0 0 0-3.51.23" clip-rule="evenodd"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedAcala0" x1="19.99" x2="6.71" y1="21" y2="4.598" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#5A81FF"></svg:stop><svg:stop offset=".524" stop-color="#E40C5B"></svg:stop><svg:stop offset="1" stop-color="#FF4C3B"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedAcalaIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBrandedAcqIcon],svg[token-branded-acq-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedAcq0)" fill-rule="evenodd" d="M12 19.941a7.942 7.942 0 1 0 0-15.883a7.942 7.942 0 0 0 0 15.883M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18" clip-rule="evenodd"></svg:path><svg:path fill="#44B4AC" d="M13.588 12.264v.794H6.706l3.97-6.352l2.118 3.44h-1.059l-1.059-1.852l-2.382 3.97z"></svg:path><svg:path fill="#44B4AC" d="M10.94 11.736v-.794h6.883l-3.97 6.353l-2.118-3.441h1.059l1.059 1.853l2.382-3.971z"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedAcq0" x1="15.971" x2="8.029" y1="4.059" y2="19.677" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#837DBA"></svg:stop><svg:stop offset=".5" stop-color="#0F67A3"></svg:stop><svg:stop offset="1" stop-color="#56BCAF"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
+})
+export class TokenBrandedAcqIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBranded10setIcon],svg[token-branded-10set-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#FD62D5"><svg:path d="M15.175 11.187s.53-.487.53-.83a.58.58 0 0 0-.175-.413l-3.112-3.065a.6.6 0 0 0-.836 0L8.47 9.944a.56.56 0 0 0-.175.407c0 .35.53.836.53.836v5.34s-.53.482-.53.83c0 .154.064.303.175.408l3.112 3.064a.6.6 0 0 0 .836 0l3.112-3.064a.56.56 0 0 0 .174-.407c0-.35-.529-.83-.529-.83zm-2.117 4.927a.58.58 0 0 1-.175.413l-.883.979l-.884-.979a.58.58 0 0 1-.175-.413V11.6c0-.159.064-.302.175-.413l.884-.979l.883.98a.57.57 0 0 1 .175.412z"></svg:path><svg:path d="m18.71 5.826l-2.794-2.662A.6.6 0 0 0 15.503 3c-.402 0-.476.085-.772.37a.63.63 0 0 1-.413.16H9.682a.62.62 0 0 1-.413-.16C8.973 3.085 8.9 3 8.497 3a.62.62 0 0 0-.413.159L5.289 5.82a.55.55 0 0 0-.169.391c0 .149.064.286.17.392l.952.995a.6.6 0 0 0 .826 0L9.407 5.28a.6.6 0 0 1 .413-.164h4.36c.154 0 .302.058.408.159l2.344 2.328a.6.6 0 0 0 .826 0L18.71 6.6a.533.533 0 0 0 0-.778z"></svg:path></svg:g>`,
+})
+export class TokenBranded10setIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8444,57 +8495,6 @@ export class TokenBrandedDnxcIcon {
   template: `<svg:g fill="none"><svg:path fill="#19130C" d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0"></svg:path><svg:path fill="#FBC933" d="M11.232 7.939a16 16 0 0 0-.884.095a.12.12 0 0 1-.106-.037a1.1 1.1 0 0 0-.725-.36q-.175-.016-.254.117a1.3 1.3 0 0 0-.148.815c.01.069-.032.137-.085.19c-.265.265-.477.498-.657.816c-.264.487-.529 1-.582 1.524a7 7 0 0 0-.032 1.112c0 .053.006.08-.042.122c-.582.476-1.398 1.657-.953 2.435c.069.106.175.217.334.328c.328.233.688.413 1.069.54c.302.101.36.816.36 1.07a29 29 0 0 1-.17 3.32a.02.02 0 0 1-.02 0a8.8 8.8 0 0 1-3.018-2.277q-.461-.55-.636-.789c-.042-.064-.037-.17-.01-.249c.09-.302.175-.62.265-.905c.46-1.43.92-2.859 1.302-4.315q.357-1.349.699-2.705c.074-.302.18-.64.264-.964c.037-.158.048-.28.022-.37c-.117-.408-.747-.482-1.096-.43c-.207.027-.37.567-.419.747c-.211.816-.386 1.657-.582 2.462c-.249 1.064-.519 2.134-.71 3.208l-.412 2.208c-.01.048-.027.053-.048 0a8.67 8.67 0 0 1-.725-4.68a8.66 8.66 0 0 1 3.616-6.136a8.43 8.43 0 0 1 4.235-1.61c.397-.042.815-.079 1.154-.052c.402.037.73.053 1.101.106a8.82 8.82 0 0 1 7.45 7.893c.01.26.047.54.052.768c0 .296-.026.598-.053.89a8.8 8.8 0 0 1-1.218 3.7q-.015.024-.031 0c-.212-.392-.387-.53-.673-.773a.14.14 0 0 1-.053-.106c.027-1.006-.635-1.943-1.318-2.615a2.4 2.4 0 0 0-.402-.307c-.175-.111-.26-.599-.318-.794a4 4 0 0 0-.206-.572c-.445-.927-.831-1.694-1.641-2.293c-.133-.095-.239-.503-.292-.661c-.127-.355-.772-.19-1.016-.07a.17.17 0 0 1-.143 0a5 5 0 0 0-2.25-.396z"></svg:path><svg:path fill="#EE9A1D" d="m13.848 5.113l-.013.008l-.008.013a.03.03 0 0 0 0 .018q.004.008.01.014l.117.106c.323.323.053.863-.36.91a1 1 0 0 1-.35-.015l-.836-.16c-.17-.026-.148-.311-.127-.417c.1-.472.196-.937.286-1.409c.032-.148.095-.296.264-.264l.636.127c.291.063.471.08.614.286c.212.286.1.646-.233.783m-1.943-.085a.96.96 0 0 1-.466.959a1 1 0 0 1-.354.121l-.186.027a.96.96 0 0 1-1.08-.826l-.037-.275a.956.956 0 0 1 .826-1.08l.185-.021a.96.96 0 0 1 1.075.82z"></svg:path><svg:path fill="#FBC933" d="M10.227 4.88a.58.58 0 0 1 .603-.598c.45 0 .583.413.635.794q.025.135-.052.318c-.101.248-.265.391-.546.386c-.519-.021-.635-.476-.64-.9m2.747-.513a.07.07 0 0 1 .057-.055q.015-.001.028.002l.455.084c.037.006.07.022.106.037a.28.28 0 0 1 .122.149c.01.031.01.058 0 .09l-.01.08a.21.21 0 0 1-.112.142a.32.32 0 0 1-.212.026l-.45-.084a.07.07 0 0 1-.044-.031a.07.07 0 0 1-.009-.054z"></svg:path><svg:path fill="#EE9A1D" d="M7.341 5.404a.21.21 0 0 1 .09-.286l.64-.329a.9.9 0 0 1 .69-.052a.98.98 0 0 1 .54.47l.12.244c.113.217.138.47.07.704a.9.9 0 0 1-.445.53l-.64.333a.21.21 0 0 1-.292-.095zm8.773-.392c.65.402.603 1.085.185 1.641c-.476.635-1.297.476-1.731-.1c-.212-.281-.164-.763-.021-1.044c.317-.619.91-.905 1.567-.502z"></svg:path><svg:path fill="#FBC933" d="M7.807 5.356a.037.037 0 0 1 .016-.053l.328-.17a.55.55 0 0 1 .73.244l.16.318a.55.55 0 0 1-.234.73l-.328.164a.037.037 0 0 1-.053-.016zm5.019-.164a.06.06 0 0 1 .02-.037a.06.06 0 0 1 .049-.011l.492.106c.085.016.162.06.217.127a.26.26 0 0 1 .058.217l-.005.037a.27.27 0 0 1-.138.18a.37.37 0 0 1-.254.032l-.492-.106a.06.06 0 0 1-.043-.021a.06.06 0 0 1-.005-.043zm2.033.815c.095-.466.534-1.048 1.064-.694c.254.17.317.419.201.747c-.085.233-.28.53-.535.587c-.413.106-.82-.2-.73-.64"></svg:path><svg:path fill="#EE9A1D" d="m17.665 7.907l-.667.662a.06.06 0 0 1-.07.016l-.02-.016l-.376-.392a.06.06 0 0 1-.019-.045a.06.06 0 0 1 .019-.045L17.68 6.94a.06.06 0 0 1 .069-.014l.02.014l1.144 1.148a.063.063 0 0 1 0 .09l-.392.387a.07.07 0 0 1-.045.019a.07.07 0 0 1-.045-.02l-.682-.656a.07.07 0 0 0-.07-.014l-.02.014zM6.17 7.193a.1.1 0 0 1 .048-.016c.317-.016.974.058.836.556a92 92 0 0 0-.82 3.155c-.466 1.948-1.15 3.828-1.72 5.744l-.004.01l-.007.006a.02.02 0 0 1-.013-.002l-.009-.009q-.131-.224-.259-.45c-.106-.185-.106-.286-.058-.487c.19-.9.37-2.09.62-3.192c.306-1.355.634-2.71.93-4.071q.121-.554.313-1.085a.28.28 0 0 1 .143-.16"></svg:path><svg:path fill="#B16C4F" d="M9.278 8.484a.95.95 0 0 1 .117-.603c.095-.191.566.084.667.169a.03.03 0 0 1 .009.018a.03.03 0 0 1-.004.019l-.01.01l-.747.403c-.021.01-.032 0-.032-.016m7.529 9.556a1.4 1.4 0 0 0-.477-.837c-.217-.174-.423-.195-.656-.031c-.334.238-.678.513-1.006.71c-.28.174-.662.38-.964.444a1.85 1.85 0 0 1-.953-.159c-.476-.164-.603-.614-.566-1.101c.021-.323.111-.477.37-.688c.636-.53 1.499-1.091 1.605-1.996q.017-.141-.037-.37a3.44 3.44 0 0 0-.747-1.467c-.243-.307-.36-.466-.609-.646c-.275-.196-.63-.254-.836-.535c-.106-.154-.19-.28-.339-.381a1.04 1.04 0 0 0-1.401.17c-.112.132-.19.29-.224.46a.4.4 0 0 0-.08.132q-.014.047.074.085a2.46 2.46 0 0 1-.81 1.244a2.8 2.8 0 0 1-.9.519c-.275-.201-.73-.413-1.064-.254q-.094.04-.053-.053a2.6 2.6 0 0 1 .726-.837c.053-.042.079-.095.068-.159c.149-.137.286-.28.419-.418a.7.7 0 0 0 .143-.185a.5.5 0 0 0 .095-.153c.053-.117.069-.218.032-.308a3.5 3.5 0 0 1-.19-.778a6 6 0 0 0-.09-.45A3.75 3.75 0 0 1 9.5 8.611c.688-.513 1.72-.556 2.541-.471c.464.062.919.18 1.355.35a.02.02 0 0 1-.005.015a1.6 1.6 0 0 0-.402.747a.05.05 0 0 0 .026.037h.042a.11.11 0 0 0 .09-.074a1.15 1.15 0 0 1 1.08-.847c.16 0 .26.063.302.211l.117.403c.233.783.185 1.43.026 2.26c-.01.053.01.1.058.127l.022.01a.05.05 0 0 0 .043.004l.018-.011l.013-.018c.053-.244.095-.477.106-.72c.015-.239.053-.498.042-.752c0-.16-.053-.355-.048-.535c0-.048.021-.053.053-.026c.384.324.702.72.937 1.164c.122.233.244.466.37.689c.218.402.345.825.435 1.244c.069.301-.016.603-.09.905c-.18.757-.694 1.397-1.138 2.012a5.9 5.9 0 0 1-1.641 1.524c-.053.032-.064.074-.043.127l.01.022l.014.023a.05.05 0 0 0 .049.014l.023-.01c.577-.372 1.037-.747 1.455-1.25c.165-.196.445-.572.837-1.139a4.1 4.1 0 0 0 .588-1.228c.047-.164.074-.376.121-.56c.006-.022.021-.027.037-.017c.111.053.212.122.313.212q.517.468.947 1.143c.307.488.487.975.424 1.552a.3.3 0 0 1-.043.106q-.31.501-.635.995c-.302.46-.71.836-1.149 1.191z"></svg:path><svg:path fill="#EE9A1D" d="m16.167 8.422l-.408.407a.06.06 0 0 0-.013.065l.013.02l.387.392c.026.026.063.026.084 0l.413-.408a.06.06 0 0 0 0-.08l-.391-.396a.06.06 0 0 0-.066-.014zm1.964.376l-.365-.36a.074.074 0 0 0-.106 0l-.36.37a.08.08 0 0 0-.017.082q.006.014.017.024l.365.36a.08.08 0 0 0 .106 0l.36-.37a.08.08 0 0 0 .022-.053a.07.07 0 0 0-.022-.053m1.122-.37l.403.396q.007.007.01.016a.05.05 0 0 1 0 .037a.04.04 0 0 1-.01.016l-.403.397a.05.05 0 0 1-.034.015a.05.05 0 0 1-.034-.015l-.413-.408a.05.05 0 0 1-.01-.053l.01-.015l.418-.387a.05.05 0 0 1 .063 0"></svg:path><svg:path fill="#D8CFC8" d="M13.382 9.062a1.28 1.28 0 0 1 .82-.53c.053-.016.09-.005.117.016c.09.08.212.392.249.545c.148.61.053 1.165-.011 1.748c-.005.053-.037.079-.09.068c-.471-.08-.964-.698-1.175-1.127c-.111-.239-.053-.509.09-.72"></svg:path><svg:path fill="#EE9A1D" d="M17.676 9.834h.042a.1.1 0 0 0 .032-.027l.645-.656a.05.05 0 0 1 .048-.01c.111.036.37.349.46.444c.011.005.011.016.011.026c0 .006 0 .016-.01.022l-1.117 1.133c-.048.042-.09.042-.138 0l-1.122-1.118a.06.06 0 0 1-.019-.042a.06.06 0 0 1 .019-.042l.386-.397a.064.064 0 0 1 .074-.016q.012.006.022.016q.327.339.666.667"></svg:path><svg:path fill="#D8CFC8" d="M8.336 9.998c.043.185.074.339.09.45c.037.28.106.54.19.778q.056.133-.03.307q-.066-.554-.52-.704a.05.05 0 0 1-.042-.053q0-.01.005-.021zm8.47 8.042c-.349.264-.74.513-1.18.73q-.509.255-1.202.524q-.071.025-.079.106c0 .016 0 .027.016.037a.1.1 0 0 0 .08.037c0 .069-.038.122-.032.18c.02.297.423.313.624.212a7 7 0 0 1 .726-.28a.48.48 0 0 1 .524.121a9 9 0 0 1-2.541.942c-.27.053-.61.085-.911.138c-.095.021-.249.005-.37.016c-.392.037-.795-.005-1.155-.01c-.08 0-.159-.016-.238-.022a8.2 8.2 0 0 1-2.515-.656q.018-.353.048-.704c.016-.228.021-.477.042-.715c.032-.307.021-.582.043-.873c.053-.678.095-1.483-.202-2.155c-.005-.021 0-.027.016-.027c.223-.005.461 0 .657-.026c.752-.106 1.307-.503 1.927-.91a.065.065 0 0 0 .026-.07l-.01-.02l-.016-.017q-.057-.071-.122-.016a4.2 4.2 0 0 1-1.869.848a2.32 2.32 0 0 1-1.667-.35v-.032q.014-.046.053-.02q.292.141.465.158c.382.016.758.016 1.139 0c.582-.027.916-.455 1.43-.651c.21-.08 0-.307-.128-.286c-.053.01-.095.048-.148.111c-.159.207-.413.37-.635.492c-.36.196-.784.17-1.17.175a3 3 0 0 1-.832-.132a.08.08 0 0 1-.026-.085c.026-.1.291-.201.381-.249c.095-.047.207-.153.323-.317a.5.5 0 0 0 .09-.392c-.021-.09-.08-.175-.116-.265c.333-.11.635-.286.9-.513c.39-.323.672-.757.81-1.245c.27.059.508.106.709.128c.418.052.725-.186 1-.466a.07.07 0 0 0 .02-.061a.07.07 0 0 0-.04-.05a1.8 1.8 0 0 0-.826-.106a1.5 1.5 0 0 0-.858.338a1.04 1.04 0 0 1 1.625-.635c.148.106.228.233.339.387c.212.28.561.338.836.534c.25.18.366.34.61.646c.361.422.615.925.74 1.467a1 1 0 0 1 .043.37c-.106.9-.969 1.467-1.604 1.996c-.26.212-.35.366-.37.688c-.038.487.094.938.56 1.107c.297.106.651.222.958.159c.342-.102.667-.253.964-.45c.328-.196.672-.477 1.006-.71c.228-.164.44-.143.651.032c.249.212.413.487.477.837zM8.13 11.099a1 1 0 0 0-.064.228c-.005.068-.026.074-.053.01c-.053-.085-.042-.19.016-.307l.01-.014a.04.04 0 0 1 .033-.01l.015.008l.022.016a.06.06 0 0 1 .02.074z"></svg:path><svg:path fill="#D8CFC8" d="m10.576 11.762l-.37-.08H10.2l-.004-.01q0-.006.004-.01v-.006l.307-.143l.006-.002l.005.002l.005.005l.069.228v.01l-.007.005zm-2.086-.08a.6.6 0 0 1-.143.19c-.132.139-.27.281-.423.425v-.71q.001-.031.026-.016c.18.069.328.17.54.117z"></svg:path><svg:path fill="#19130C" d="M9.877 13.769c0 .031.016.063.043.063c.02 0 .042-.026.047-.058c0-.032-.02-.058-.042-.058c-.026 0-.048.02-.053.053zm-.524.217a.02.02 0 0 1-.013.004a.02.02 0 0 1-.013-.004l-.005-.006a.2.2 0 0 1-.043-.053v-.042l.01-.01c.011-.011.022-.011.043 0c.016 0 .037.015.053.037l.01.005a.02.02 0 0 1 0 .026zm.82 0c.027 0 .054-.022.054-.048s-.032-.042-.058-.042a.053.053 0 0 0-.053.052c0 .022.026.038.053.038zm-1.095.132c.032.016.069.01.08-.016c.01-.021 0-.053-.032-.069s-.064-.01-.08.01q-.015.042.032.075m-.132.026l.01.032c.01.01.01.027 0 .037q-.024.03-.063.021a.04.04 0 0 1-.032-.037q0-.057.048-.09q.016-.014.026.011v.016zm.905.037c0 .027.01.053.032.053c.02 0 .042-.02.042-.053c0-.026-.016-.052-.037-.052s-.037.02-.037.053m-.46.043c.015.026.042.042.063.032s.026-.043.01-.07c-.015-.026-.042-.042-.063-.031c-.021.016-.027.042-.01.069"></svg:path><svg:path fill="#D8CFC8" d="M7.166 14.933a.74.74 0 0 1-.344-.72h.01c.154.185.313.365.477.53c.122.127-.042.248-.143.19"></svg:path><svg:path fill="#19130C" d="M9.13 14.33v-.027q0-.009.006-.015a.02.02 0 0 1 .015-.007l.01.006q.033.014.048.053v.016c0 .01 0 .015-.01.02l-.048.038a.02.02 0 0 1-.014.002a.02.02 0 0 1-.012-.007l-.006-.011v-.027l.01-.047zm.46.052c.027.016.059.01.075-.016c.01-.021 0-.053-.032-.069c-.032-.01-.064 0-.074.022c-.01.02 0 .052.032.068zm-1.053.1a.1.1 0 0 1-.027.032c-.01.011-.026.016-.042 0a.07.07 0 0 1-.026-.069q.001-.024.026-.026q.03 0 .058.016c.022.01.022.026.01.048m.99-.031l.01.01v.022a.16.16 0 0 1-.105.042c-.006 0-.016 0-.022-.01a.03.03 0 0 1-.01-.022c0-.032.005-.053.026-.063a.05.05 0 0 1 .037-.01zm-.837.227c.038 0 .07-.02.07-.052c0-.027-.032-.048-.07-.048c-.037 0-.068.026-.068.053c0 .026.031.047.068.047m.43-.026c-.006.037.015.074.052.08c.032.005.064-.022.07-.053c.004-.043-.017-.075-.054-.08c-.032-.01-.063.016-.069.053m-.297.111c.01.037.042.059.069.053c.031-.005.053-.042.042-.074c-.01-.037-.037-.064-.069-.053c-.032 0-.053.037-.042.074"></svg:path><svg:path fill="#B16C4F" d="M16.283 19.71q-.238-.226-.53-.123a7 7 0 0 0-.72.28c-.201.101-.603.086-.624-.21c0-.06.031-.112.031-.18a10 10 0 0 0 2.59-1.367q.19-.14.486-.466a9 9 0 0 0 1.234-1.704a.07.07 0 0 1 .08 0q.42.286.587.778a.1.1 0 0 1-.006.074a8.9 8.9 0 0 1-3.128 2.917"></svg:path></svg:g>`,
 })
 export class TokenBrandedDoboIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tokenBrandedDodoIcon],svg[token-branded-dodo-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill-rule="evenodd" d="M10.221 4.727c-.296.614-.005 1.286.413 1.832c-5.437.794-6.385 5.892-6.575 8.883h2.117c.128-2.647 1.377-6.633 5.813-6.633c4.437 0 5.692 3.986 5.813 6.633h2.118c.17-2.705-.773-7.91-6.03-8.841c.28-.667.476-1.599.164-1.874c-.37-.334-.794.053-.963.28c-.027-.603-.255-1.8-.916-1.741c-.667.063-.863 1.27-.874 1.874c-.54-.826-.942-.62-1.08-.413m-.339 7.539a.53.53 0 1 1 1.06 0v.53a.53.53 0 1 1-1.06 0zm3.706-.53c-.29 0-.53.201-.53.45v.688c0 .25.24.45.53.45s.53-.2.53-.45v-.688c0-.248-.239-.45-.53-.45m-8.93 4.765H3v4.235h1.657c1.133 0 2.049-.953 2.049-2.117S5.79 16.5 4.657 16.5m-.25 1.059h-.35v2.117h.35c.673 0 1.239-.365 1.239-1.058s-.566-1.06-1.239-1.06M12.53 16.5h1.658c1.132 0 2.048.953 2.048 2.118c0 1.164-.916 2.117-2.048 2.117H12.53zm1.06 1.059h.349c.672 0 1.239.365 1.239 1.059c0 .693-.567 1.058-1.24 1.058h-.349zm-4.236 3.176a2.118 2.118 0 1 0 0-4.235a2.118 2.118 0 0 0 0 4.235m0-1.059a1.058 1.058 0 1 0 0-2.116a1.058 1.058 0 0 0 0 2.116M21 18.62a2.118 2.118 0 1 1-4.235 0a2.118 2.118 0 0 1 4.235 0m-1.059 0a1.059 1.059 0 1 1-2.117 0a1.059 1.059 0 0 1 2.117 0" clip-rule="evenodd"></svg:path>`,
-})
-export class TokenBrandedDodoIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tokenBrandedDogIcon],svg[token-branded-dog-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#C3A634" d="M6.093 21v-7.875h-2.25v-2.25h2.25V3h6.184c5.398 0 8.059 3.98 7.87 9.042C19.96 17.057 17.832 21 12.277 21zM8.342 5.25v5.625h4.497v2.25H8.342v5.625h3.935c4.317 0 5.48-2.97 5.623-6.792c.142-3.81-1.499-6.708-5.623-6.708z"></svg:path>`,
-})
-export class TokenBrandedDogIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tokenBrandedDogaIcon],svg[token-branded-doga-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedDoga0)" fill-rule="evenodd" d="M10.138 6.725H3V21h7.138a7.136 7.136 0 0 0 5.047-12.185a7.14 7.14 0 0 0-5.047-2.09m0 1.862H4.862v10.551h5.276a5.276 5.276 0 0 0 0-10.551" clip-rule="evenodd"></svg:path><svg:path fill="url(#tokenBrandedDoga1)" d="m16.952 15.99l-2.333.664a6 6 0 0 1-.342.478l1.223 1.434a7.05 7.05 0 0 0 1.452-2.576"></svg:path><svg:path fill="url(#tokenBrandedDoga2)" fill-rule="evenodd" d="M13.862 3H6.724v14.275h7.138a7.137 7.137 0 1 0 0-14.275m0 1.862H8.587v10.551h5.275a5.276 5.276 0 0 0 0-10.551" clip-rule="evenodd"></svg:path><svg:path fill="url(#tokenBrandedDoga3)" d="M8.587 10.448L6.724 8.586h1.863z"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedDoga0" x1="5.732" x2="17.946" y1="6.215" y2="17.625" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#422C81"></svg:stop><svg:stop offset="1" stop-color="#7B368A"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedDoga1" x1="5.732" x2="17.945" y1="6.214" y2="17.624" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#422C81"></svg:stop><svg:stop offset="1" stop-color="#7B368A"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedDoga2" x1="5.733" x2="17.946" y1="6.214" y2="17.624" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#422C81"></svg:stop><svg:stop offset="1" stop-color="#7B368A"></svg:stop></svg:lineargradient><svg:lineargradient id="tokenBrandedDoga3" x1="5.733" x2="17.946" y1="6.214" y2="17.625" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#422C81"></svg:stop><svg:stop offset="1" stop-color="#7B368A"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
-})
-export class TokenBrandedDogaIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

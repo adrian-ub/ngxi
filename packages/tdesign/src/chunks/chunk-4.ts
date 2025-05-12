@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[tdesignUserClearIcon],svg[tdesign-user-clear-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.5 4a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7M6 7.5a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0m9.172 6.257L18 16.586l2.828-2.829l1.415 1.415L19.414 18l2.829 2.828l-1.415 1.415L18 19.414l-2.828 2.829l-1.415-1.415L16.586 18l-2.829-2.828zM8 16a4 4 0 0 0-4 4h8.05v2H2v-2a6 6 0 0 1 6-6h4v2z"></svg:path>`,
+})
+export class TdesignUserClearIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[tdesignUserClearFilledIcon],svg[tdesign-user-clear-filled-icon]',
   host: {
     role: 'img',
@@ -2205,23 +2222,6 @@ export class TdesignZoomOutIcon {
   template: `<svg:path fill="currentColor" d="M4.49 16.51a8.5 8.5 0 0 0 11.272.666l5.344 5.345l1.415-1.414l-5.345-5.345A8.501 8.501 0 0 0 4.49 4.49a8.5 8.5 0 0 0 0 12.02M6.5 9.5h8v2h-8z"></svg:path>`,
 })
 export class TdesignZoomOutFilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tdesignAirplayWaveFilledIcon],svg[tdesign-airplay-wave-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M23 3H1l.001 17h6.964L12 15.964L16.036 20H23zm-6.05 8.383a7 7 0 0 0-9.899 0l-.707.707l-1.414-1.414l.707-.707a9 9 0 0 1 12.728 0l.707.707l-1.414 1.414zm-2.828 2.828a3 3 0 0 0-4.243 0l-.707.707l-1.414-1.414l.707-.707a5 5 0 0 1 7.071 0l.707.707l-1.414 1.414z"></svg:path><svg:path fill="currentColor" d="M15.914 22L12 18.086L8.086 22z"></svg:path>`,
-})
-export class TdesignAirplayWaveFilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

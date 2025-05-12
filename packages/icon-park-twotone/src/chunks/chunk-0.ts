@@ -36,6 +36,23 @@ export class IconParkTwotoneAccelerationIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkTwotoneActivitySourceIcon],svg[icon-park-twotone-activity-source-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipTActivitySource0"><svg:path fill="#555" stroke="#fff" stroke-linejoin="round" stroke-width="4" d="M42 5H6v8h36zm0 15H6v8h36zm0 15H6v8h36z"></svg:path></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTActivitySource0)"></svg:path>`,
+})
+export class IconParkTwotoneActivitySourceIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkTwotoneAddIcon],svg[icon-park-twotone-add-icon]',
   host: {
     role: 'img',
@@ -87,6 +104,23 @@ export class IconParkTwotoneAddItemIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkTwotoneAddModeIcon],svg[icon-park-twotone-add-mode-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipTAddMode0"><svg:g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"><svg:path fill="#555" d="m24.003 4l5.27 5.27h9.457v9.456l5.27 5.27l-5.27 5.278v9.456h-9.456L24.004 44l-5.278-5.27H9.27v-9.456L4 23.997l5.27-5.27V9.27h9.456z"></svg:path><svg:path d="M17 23.997h14M24.004 17v14"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddMode0)"></svg:path>`,
+})
+export class IconParkTwotoneAddModeIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkTwotoneAddMusicIcon],svg[icon-park-twotone-add-music-icon]',
   host: {
     role: 'img',
@@ -97,23 +131,6 @@ export class IconParkTwotoneAddItemIcon {
   template: `<svg:defs><svg:mask id="ipTAddMusic0"><svg:g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><svg:path stroke-linecap="round" d="M24 44C12.954 44 4 35.046 4 24S12.954 4 24 4s20 8.954 20 20"></svg:path><svg:path fill="#555" d="M20 24v-6.928l6 3.464L32 24l-6 3.464l-6 3.464z"></svg:path><svg:path stroke-linecap="round" d="M37.05 32v10M42 36.95H32"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddMusic0)"></svg:path>`,
 })
 export class IconParkTwotoneAddMusicIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkTwotoneActivitySourceIcon],svg[icon-park-twotone-activity-source-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:mask id="ipTActivitySource0"><svg:path fill="#555" stroke="#fff" stroke-linejoin="round" stroke-width="4" d="M42 5H6v8h36zm0 15H6v8h36zm0 15H6v8h36z"></svg:path></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTActivitySource0)"></svg:path>`,
-})
-export class IconParkTwotoneActivitySourceIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,6 +155,23 @@ export class IconParkTwotoneAddOneIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkTwotoneAddPicIcon],svg[icon-park-twotone-add-pic-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:mask id="ipTAddPic0"><svg:g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"><svg:path d="M38 21v19a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V12a2 2 0 0 1 2-2h18.364"></svg:path><svg:path fill="#555" d="M12 31.03L18 23l3 3l3.5-5.5L32 31.03z"></svg:path><svg:path d="M34 10h8m-4.005-4.205v8"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddPic0)"></svg:path>`,
+})
+export class IconParkTwotoneAddPicIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkTwotoneAddPrintIcon],svg[icon-park-twotone-add-print-icon]',
   host: {
     role: 'img',
@@ -155,33 +189,16 @@ export class IconParkTwotoneAddPrintIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconParkTwotoneAddTextTwoIcon],svg[icon-park-twotone-add-text-two-icon]',
+  selector: 'svg[iconParkTwotoneAddSubtractIcon],svg[icon-park-twotone-add-subtract-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:defs><svg:mask id="ipTAddTextTwo0"><svg:g fill="none" stroke="#fff" stroke-width="4"><svg:circle cx="24" cy="24" r="20" fill="#555"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M32 16H16m8 18V16"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddTextTwo0)"></svg:path>`,
+  template: `<svg:defs><svg:mask id="ipTAddSubtract0"><svg:g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:rect width="36" height="36" x="6" y="6" fill="#555" rx="3"></svg:rect><svg:path d="M27 31h8M17 13v8m4-4h-8m21-3L14 34"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddSubtract0)"></svg:path>`,
 })
-export class IconParkTwotoneAddTextTwoIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkTwotoneAddPicIcon],svg[icon-park-twotone-add-pic-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:mask id="ipTAddPic0"><svg:g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"><svg:path d="M38 21v19a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V12a2 2 0 0 1 2-2h18.364"></svg:path><svg:path fill="#555" d="M12 31.03L18 23l3 3l3.5-5.5L32 31.03z"></svg:path><svg:path d="M34 10h8m-4.005-4.205v8"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddPic0)"></svg:path>`,
-})
-export class IconParkTwotoneAddPicIcon {
+export class IconParkTwotoneAddSubtractIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,16 +223,16 @@ export class IconParkTwotoneAddSubsetIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconParkTwotoneAddWebIcon],svg[icon-park-twotone-add-web-icon]',
+  selector: 'svg[iconParkTwotoneAddTextTwoIcon],svg[icon-park-twotone-add-text-two-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:defs><svg:mask id="ipTAddWeb0"><svg:g fill="none"><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M25 40H7a3 3 0 0 1-3-3V11a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v13.941"></svg:path><svg:path fill="#555" stroke="#fff" stroke-width="4" d="M4 11a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v9H4z"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M32 35h12m-6-6v12"></svg:path><svg:circle r="2" fill="#fff" transform="matrix(0 -1 -1 0 10 14)"></svg:circle><svg:circle r="2" fill="#fff" transform="matrix(0 -1 -1 0 16 14)"></svg:circle></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddWeb0)"></svg:path>`,
+  template: `<svg:defs><svg:mask id="ipTAddTextTwo0"><svg:g fill="none" stroke="#fff" stroke-width="4"><svg:circle cx="24" cy="24" r="20" fill="#555"></svg:circle><svg:path stroke-linecap="round" stroke-linejoin="round" d="M32 16H16m8 18V16"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddTextTwo0)"></svg:path>`,
 })
-export class IconParkTwotoneAddWebIcon {
+export class IconParkTwotoneAddTextTwoIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,33 +274,16 @@ export class IconParkTwotoneAddressBookIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconParkTwotoneAdjacentItemIcon],svg[icon-park-twotone-adjacent-item-icon]',
+  selector: 'svg[iconParkTwotoneAddWebIcon],svg[icon-park-twotone-add-web-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:defs><svg:mask id="ipTAdjacentItem0"><svg:g fill="none"><svg:path fill="#555" d="M14 29h28v12H14zm0-22h28v12H14z"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M14 13v6h28V7H14zm0 0H6v22h8m0 0v6h28V29H14z"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M14 13H6v22h8"></svg:path><svg:path fill="#555" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M14 29h28v12H14zm0-22h28v12H14z"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAdjacentItem0)"></svg:path>`,
+  template: `<svg:defs><svg:mask id="ipTAddWeb0"><svg:g fill="none"><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M25 40H7a3 3 0 0 1-3-3V11a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v13.941"></svg:path><svg:path fill="#555" stroke="#fff" stroke-width="4" d="M4 11a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v9H4z"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M32 35h12m-6-6v12"></svg:path><svg:circle r="2" fill="#fff" transform="matrix(0 -1 -1 0 10 14)"></svg:circle><svg:circle r="2" fill="#fff" transform="matrix(0 -1 -1 0 16 14)"></svg:circle></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddWeb0)"></svg:path>`,
 })
-export class IconParkTwotoneAdjacentItemIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkTwotoneAddModeIcon],svg[icon-park-twotone-add-mode-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:mask id="ipTAddMode0"><svg:g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"><svg:path fill="#555" d="m24.003 4l5.27 5.27h9.457v9.456l5.27 5.27l-5.27 5.278v9.456h-9.456L24.004 44l-5.278-5.27H9.27v-9.456L4 23.997l5.27-5.27V9.27h9.456z"></svg:path><svg:path d="M17 23.997h14M24.004 17v14"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddMode0)"></svg:path>`,
-})
-export class IconParkTwotoneAddModeIcon {
+export class IconParkTwotoneAddWebIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -308,16 +308,16 @@ export class IconParkTwotoneAdjustmentIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconParkTwotoneAddSubtractIcon],svg[icon-park-twotone-add-subtract-icon]',
+  selector: 'svg[iconParkTwotoneAdjacentItemIcon],svg[icon-park-twotone-adjacent-item-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:defs><svg:mask id="ipTAddSubtract0"><svg:g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:rect width="36" height="36" x="6" y="6" fill="#555" rx="3"></svg:rect><svg:path d="M27 31h8M17 13v8m4-4h-8m21-3L14 34"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAddSubtract0)"></svg:path>`,
+  template: `<svg:defs><svg:mask id="ipTAdjacentItem0"><svg:g fill="none"><svg:path fill="#555" d="M14 29h28v12H14zm0-22h28v12H14z"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M14 13v6h28V7H14zm0 0H6v22h8m0 0v6h28V29H14z"></svg:path><svg:path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M14 13H6v22h8"></svg:path><svg:path fill="#555" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M14 29h28v12H14zm0-22h28v12H14z"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTAdjacentItem0)"></svg:path>`,
 })
-export class IconParkTwotoneAddSubtractIcon {
+export class IconParkTwotoneAdjacentItemIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[clarityTickChartOutlineAlertedIcon],svg[clarity-tick-chart-outline-alerted-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M34 29a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h17.958l-1.172 2H4v22h28V15.357h2Z" class="clr-i-outline--alerted clr-i-outline-path-1--alerted"></svg:path><svg:path fill="currentColor" d="M6 25h2v-3h2v3h3v-3h2v3h3v-3h2v3h3v-3h2v3h2.723c.3.02.57.18.74.43c.44.63.02 1.5-.74 1.56L6 26.991Z" class="clr-i-outline--alerted clr-i-outline-path-2--alerted"></svg:path><svg:path fill="currentColor" d="m26.854 1.144l-5.72 9.86a1.28 1.28 0 0 0 1.1 2h11.45a1.28 1.28 0 0 0 1.1-2l-5.72-9.86a1.28 1.28 0 0 0-2.21 0" class="clr-i-outline--alerted clr-i-outline-path-3--alerted clr-i-alert"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
+})
+export class ClarityTickChartOutlineAlertedIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[clarityTickChartOutlineBadgedIcon],svg[clarity-tick-chart-outline-badged-icon]',
   host: {
     role: 'img',
@@ -1763,23 +1780,6 @@ export class ClarityZoomOutLineIcon {
   template: `<svg:path fill="currentColor" d="M18 2.5c-8.82 0-16 6.28-16 14s7.18 14 16 14a18 18 0 0 0 4.88-.68l5.53 3.52a1 1 0 0 0 1.54-.84v-6.73a13 13 0 0 0 4-9.27C34 8.78 26.82 2.5 18 2.5m10.29 22.11a1 1 0 0 0-.32.73v5.34l-4.38-2.79a1 1 0 0 0-.83-.11a16 16 0 0 1-4.76.72c-7.72 0-14-5.38-14-12s6.28-12 14-12s14 5.38 14 12a11.08 11.08 0 0 1-3.71 8.11" class="clr-i-outline clr-i-outline-path-1"></svg:path><svg:path fill="currentColor" d="M18 20.63a1 1 0 0 0 1-1V8.48a1 1 0 1 0-2 0v11.13a1 1 0 0 0 1 1.02" class="clr-i-outline clr-i-outline-path-2"></svg:path><svg:circle cx="18" cy="24.04" r="1.33" fill="currentColor" class="clr-i-outline clr-i-outline-path-3"></svg:circle><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
 })
 export class ClarityAlertLineIcon {
-  readonly viewBox = input("0 0 36 36")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[clarityAlarmOffLineIcon],svg[clarity-alarm-off-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M31.47 3.84a5.78 5.78 0 0 0-7.37-.63a16.08 16.08 0 0 1 8.2 7.65a5.73 5.73 0 0 0-.83-7.02" class="clr-i-outline clr-i-outline-path-1"></svg:path><svg:path fill="currentColor" d="M25.33 21.54a.9.9 0 0 0-.41-1.2l-3.2-1.56L24.89 22a.9.9 0 0 0 .44-.46" class="clr-i-outline clr-i-outline-path-2"></svg:path><svg:path fill="currentColor" d="M18 8.6a.9.9 0 0 0-.9.9v4.6l1.8 1.81V9.5a.9.9 0 0 0-.9-.9" class="clr-i-outline clr-i-outline-path-3"></svg:path><svg:path fill="currentColor" d="M11.42 3.43a5.8 5.8 0 0 0-5.81-.81l2.69 2.7a16 16 0 0 1 3.12-1.89" class="clr-i-outline clr-i-outline-path-4"></svg:path><svg:path fill="currentColor" d="M18 4a13.9 13.9 0 0 0-8.3 2.75l1.42 1.43a12 12 0 0 1 16.7 16.72l1.42 1.43A14 14 0 0 0 18 4" class="clr-i-outline clr-i-outline-path-5"></svg:path><svg:path fill="currentColor" d="m1.56 4.21l1.17 1.17a5.7 5.7 0 0 0 .67 6.1a15.8 15.8 0 0 1 2.06-3.36l1.42 1.43a13.94 13.94 0 0 0 1.23 18.33l-2.55 2.55A1 1 0 1 0 7 31.84l2.66-2.66a13.89 13.89 0 0 0 16.8 0l4.14 4.15L32 31.9L3 2.8ZM25 27.72A11.9 11.9 0 0 1 18 30A12 12 0 0 1 6 18a11.9 11.9 0 0 1 2.29-7Z" class="clr-i-outline clr-i-outline-path-6"></svg:path><svg:path fill="none" d="M0 0h36v36H0z"></svg:path>`,
-})
-export class ClarityAlarmOffLineIcon {
   readonly viewBox = input("0 0 36 36")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,91 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[icOutlineFluorescentIcon],svg[ic-outline-fluorescent-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 15h14V9H5zm2-4h10v2H7zm4-9h2v3h-2zm6.286 4.399l1.79-1.803l1.42 1.41l-1.79 1.802zM11 19h2v3h-2zm6.29-1.29l1.79 1.8l1.42-1.42l-1.8-1.79zM3.495 6.01l1.407-1.408L6.69 6.391L5.284 7.798zm-.003 12.066l1.803-1.79l1.409 1.42l-1.803 1.79z"></svg:path>`,
+})
+export class IcOutlineFluorescentIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icOutlineFlutterDashIcon],svg[ic-outline-flutter-dash-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.07 11.7c.29-.39.81-.56 1.27-.37c.17.07.32.18.43.33c.22.28.25.59.22.85c-.05.33-.25.63-.54.79c0 0-4.87 2.95-5.07 2.69s3.69-4.29 3.69-4.29M22 10c0 2.5-1 3-1.5 3c-.23 0-.44-.1-.62-.26c-.48 3.32-2.36 5.31-5.33 5.99c.11.44.48.77.95.77h.58c.22 0 .41.15.48.36c.17.52.66 1.02 1.02 1.32c.25.21.24.59-.03.78c-.34.24-.9.49-1.79.53a.5.5 0 0 1-.45-.22c-.13-.2-.31-.56-.31-1.01c0-.3.04-.57.09-.8c-.78-.16-1.39-.78-1.55-1.56c-.49.06-1 .1-1.54.1c-.88 0-1.7-.09-2.45-.25c-.02.08-.05.16-.05.25c0 .55.45 1 1 1h.58c.22 0 .41.15.48.36c.17.52.66 1.02 1.02 1.32c.25.21.24.59-.03.78c-.34.24-.9.49-1.79.53a.5.5 0 0 1-.45-.22c-.13-.2-.31-.56-.31-1.01c0-.3.04-.57.09-.8c-.9-.19-1.59-1-1.59-1.96c0-.18.03-.36.08-.53c-2.46-.86-4.03-2.78-4.46-5.74c-.18.17-.38.27-.62.27C3 13 2 12.5 2 10c0-2.27 1.7-4.5 3-4.5c.43 0 .49.49.5.85a8 8 0 0 1 5.55-3.29c.2-.96 1.08-1.56 1.95-1.56v1s.33-.5 1-.5s1 .5 1 .5c-.49 0-.85.35-.96.77c1.82.48 3.39 1.59 4.46 3.08c.01-.36.07-.85.5-.85c1.3 0 3 2.23 3 4.5M5 11c0 .81.1 1.53.25 2.21c.18-.69.46-1.33.83-1.92a3.8 3.8 0 0 1-.34-1.54A3.766 3.766 0 0 1 9.5 6c.96 0 1.84.37 2.5.97c.66-.6 1.54-.97 2.5-.97c2.07 0 3.75 1.68 3.75 3.75c0 .55-.12 1.07-.34 1.54c.37.59.66 1.24.84 1.94c.15-.68.25-1.41.25-2.23c0-3.86-3.14-7-7-7s-7 3.14-7 7m12.98 4.29c0-.1.02-.19.02-.29c0-1.01-.26-1.95-.7-2.78c-.69.78-1.68 1.28-2.8 1.28c-.27 0-.54-.03-.79-.09c.14-.23.23-.49.27-.77c.01-.07.01-.13.02-.19c.17.03.33.05.5.05c1.52 0 2.75-1.23 2.75-2.75S16.02 7 14.5 7c-.67 0-1.32.25-1.83.72l-.67.6l-.67-.6C10.82 7.25 10.17 7 9.5 7C7.98 7 6.75 8.23 6.75 9.75c0 1.34.96 2.46 2.23 2.7l-.76.83c-.6-.22-1.12-.59-1.53-1.05A6 6 0 0 0 6 15c0 .08.01.15.01.24C7.13 17.06 9.14 18 12 18c2.88 0 4.88-.91 5.98-2.71M16 9.75c0 .97-.67 1.75-1.5 1.75S13 10.72 13 9.75S13.67 8 14.5 8s1.5.78 1.5 1.75m-.75-.87c0-.21-.17-.38-.38-.38s-.37.17-.37.38s.17.38.38.38s.37-.18.37-.38M11 9.75c0 .97-.67 1.75-1.5 1.75S8 10.72 8 9.75S8.67 8 9.5 8s1.5.78 1.5 1.75m-.75-.87c0-.21-.17-.38-.38-.38s-.37.17-.37.38s.17.38.38.38s.37-.18.37-.38"></svg:path>`,
+})
+export class IcOutlineFlutterDashIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icOutlineFmdBadIcon],svg[ic-outline-fmd-bad-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 2c-4.2 0-8 3.22-8 8.2c0 3.32 2.67 7.25 8 11.8c5.33-4.55 8-8.48 8-11.8C20 5.22 16.2 2 12 2m0 17.33c-4.05-3.7-6-6.79-6-9.14C6 6.57 8.65 4 12 4s6 2.57 6 6.2c0 2.34-1.95 5.44-6 9.13"></svg:path><svg:path fill="currentColor" d="M11 6h2v5h-2zm0 7h2v2h-2z"></svg:path>`,
+})
+export class IcOutlineFmdBadIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icOutlineFmdGoodIcon],svg[ic-outline-fmd-good-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2m6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14c4.05-3.7 6-6.8 6-9.14M12 2c4.2 0 8 3.22 8 8.2c0 3.32-2.67 7.25-8 11.8c-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2"></svg:path>`,
+})
+export class IcOutlineFmdGoodIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icOutlineFolderIcon],svg[ic-outline-folder-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m9.17 6l2 2H20v10H4V6zM10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8z"></svg:path>`,
+})
+export class IcOutlineFolderIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[icOutlineFolderCopyIcon],svg[ic-outline-folder-copy-icon]',
   host: {
     role: 'img',
@@ -8410,91 +8495,6 @@ export class IcOutlineNoPhotographyIcon {
   template: `<svg:path fill="currentColor" d="M21.26 21.21L3.79 3.74L2.38 5.15l2.74 2.74l-.12.12V19c0 1.1.9 2 2 2h10c.35 0 .68-.1.97-.26l1.88 1.88zM7 19V9.77L16.23 19zm3.84-14H17v9.11l2 2V5c0-1.1-.9-2-2-2h-6.99L7.95 5.06l1.41 1.41z"></svg:path>`,
 })
 export class IcOutlineNoSimIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icOutlineNoStrollerIcon],svg[ic-outline-no-stroller-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 20c0 1.1-.9 2-2 2s-2-.9-2-2s.9-2 2-2s2 .9 2 2m7-11.34v3.51l2 2v-7.9c.58-.68.97-1.27 1.65-1.27c.77 0 1.35.66 1.35 1.48V7h2v-.52C22 4.56 20.52 3 18.65 3c-1.66 0-2.54 1.27-3.18 2.03l-3.5 4.11l1.42 1.42zm4.78 13.95l-1.91-1.91c-.29.76-1.01 1.3-1.87 1.3c-1.1 0-2-.9-2-2c0-.86.54-1.58 1.3-1.87L14.17 17H7.43c-.85 0-1.31-1-.76-1.65l2.69-3.16l-7.97-7.97L2.8 2.81l7.86 7.86l1.42 1.42l9.11 9.11zM12.17 15l-1.39-1.39L9.6 15zM10 5c.29 0 .58.02.86.05L9.49 6.67l1.42 1.42L14.3 4.1C13.03 3.4 11.56 3 10 3c-1.23 0-2.4.25-3.47.7L8.1 5.27A7 7 0 0 1 10 5"></svg:path>`,
-})
-export class IcOutlineNoStrollerIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icOutlineNoTransferIcon],svg[ic-outline-no-transfer-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.5 13c.83 0 1.5.67 1.5 1.5S9.33 16 8.5 16S7 15.33 7 14.5S7.67 13 8.5 13m11.28 9.61l-1.64-1.64c-.05.01-.09.03-.14.03h-1c-.55 0-1-.45-1-1v-1H8v1c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1v-1.78c-.61-.55-1-1.34-1-2.22V6.83L1.39 4.22L2.8 2.81l18.38 18.38zM6 8.83V10h1.17zM14.17 17l-5-5H6v4c0 .37.21.62.34.73l.29.27zM12 4c3.69 0 5.11.46 5.66.99H7.82l2 2H18V10h-5.17l2 2H18v3.17l1.81 1.81c.11-.31.19-.63.19-.98V6c0-3.5-3.58-4-8-4c-2.52 0-4.76.16-6.22.95l1.53 1.53C8.17 4.2 9.6 4 12 4"></svg:path>`,
-})
-export class IcOutlineNoTransferIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icOutlineNoiseAwareIcon],svg[ic-outline-noise-aware-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16 15h-2a1.003 1.003 0 0 1-1.95.32c-.15-.44-.4-1.08-.93-1.61l-1.36-1.36C9.28 11.87 9 11.19 9 10.5a2.5 2.5 0 0 1 4.95-.5h2.02c-.25-2.25-2.16-4-4.47-4C9.02 6 7 8.02 7 10.5c0 1.22.49 2.41 1.35 3.27l1.36 1.36c.17.17.31.44.44.82A3.01 3.01 0 0 0 13 18c1.65 0 3-1.35 3-3"></svg:path><svg:circle cx="13.5" cy="12.5" r="1.5" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="m3.6 6.58l1.58 1.26c.35-.57.77-1.1 1.24-1.57L4.85 5.02c-.47.47-.88 1-1.25 1.56m5.86-2.16l-.87-1.81c-.63.23-1.24.52-1.8.87l.87 1.81q.84-.54 1.8-.87M4.49 9.26l-1.96-.45c-.21.63-.36 1.28-.44 1.95l1.96.45a8 8 0 0 1 .44-1.95M20.4 6.58a9.4 9.4 0 0 0-1.25-1.56l-1.58 1.26c.48.47.89.99 1.24 1.57zM4.04 12.79l-1.96.45c.08.67.23 1.33.44 1.95l1.97-.45c-.22-.62-.38-1.27-.45-1.95m13.17-9.31q-.855-.525-1.8-.87l-.87 1.81q.96.33 1.8.87zM13 4.07V2.05c-.33-.03-.66-.05-1-.05s-.67.02-1 .05v2.02c.33-.04.66-.07 1-.07s.67.03 1 .07m-2 15.86v2.02c.33.03.66.05 1 .05s.67-.02 1-.05v-2.02c-.33.04-.66.07-1 .07s-.67-.03-1-.07m8.51-5.19l1.97.45c.21-.63.36-1.28.44-1.95l-1.96-.45c-.07.68-.23 1.33-.45 1.95m.45-3.53l1.96-.45a9.7 9.7 0 0 0-.44-1.95l-1.97.45c.22.62.38 1.27.45 1.95m-2.38 6.52l1.58 1.26c.47-.48.88-1 1.25-1.56l-1.58-1.26a9.4 9.4 0 0 1-1.25 1.56M6.79 20.52q.855.525 1.8.87l.87-1.81q-.96-.33-1.8-.87zm7.75-.94l.87 1.81c.63-.23 1.24-.52 1.8-.87l-.87-1.81q-.84.54-1.8.87M3.6 17.42a9.4 9.4 0 0 0 1.25 1.56l1.58-1.26a8 8 0 0 1-1.24-1.57z"></svg:path>`,
-})
-export class IcOutlineNoiseAwareIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icOutlineNoiseControlOffIcon],svg[ic-outline-noise-control-off-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 4c1.44 0 2.79.38 3.95 1.05L17.4 3.6C15.85 2.59 13.99 2 12 2s-3.85.59-5.41 1.59l1.45 1.45A8.03 8.03 0 0 1 12 4m8 8c0 1.44-.38 2.79-1.05 3.95l1.45 1.45c1.01-1.55 1.6-3.41 1.6-5.4s-.59-3.85-1.59-5.41l-1.45 1.45A8.03 8.03 0 0 1 20 12m-8 8c-1.44 0-2.79-.38-3.95-1.05L6.6 20.4C8.15 21.41 10.01 22 12 22s3.85-.59 5.41-1.59l-1.45-1.45A8.03 8.03 0 0 1 12 20m-8-8c0-1.44.38-2.79 1.05-3.95L3.59 6.59C2.59 8.15 2 10.01 2 12s.59 3.85 1.59 5.41l1.45-1.45A8.03 8.03 0 0 1 4 12m7.5-6C9.02 6 7 8.02 7 10.5c0 1.22.49 2.41 1.35 3.27l1.36 1.36c.17.17.31.44.44.82A3.01 3.01 0 0 0 13 18c1.65 0 3-1.35 3-3h-2a1.003 1.003 0 0 1-1.95.32c-.15-.44-.4-1.08-.93-1.61l-1.36-1.36C9.28 11.87 9 11.19 9 10.5a2.5 2.5 0 0 1 4.95-.5h2.02c-.25-2.25-2.16-4-4.47-4"></svg:path><svg:circle cx="13.5" cy="12.5" r="1.5" fill="currentColor"></svg:circle>`,
-})
-export class IcOutlineNoiseControlOffIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[icOutlineNordicWalkingIcon],svg[ic-outline-nordic-walking-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M19 23h-1.5v-9H19zM7.53 14H6l-2 9h1.53zm5.97-8.5c1.1 0 2-.9 2-2s-.9-2-2-2s-2 .9-2 2s.9 2 2 2M9.8 8.9L7 23h2.1l1.8-8l2.1 2v6h2v-7.5l-2.1-2l.6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6a2.145 2.145 0 0 0-2.65-.84L6 8.3V13h2V9.6z"></svg:path>`,
-})
-export class IcOutlineNordicWalkingIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

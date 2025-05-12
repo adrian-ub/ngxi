@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[streamlineInboxTray2SolidIcon],svg[streamline-inbox-tray-2-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10.193 3.546a.75.75 0 0 1-.693.463H7.75v2.75a.75.75 0 0 1-1.5 0V4.01H4.5a.75.75 0 0 1-.53-1.28l2.5-2.5a.75.75 0 0 1 1.06 0l2.5 2.5a.75.75 0 0 1 .163.817ZM.5 8.33a.5.5 0 0 0-.5.5v3.67A1.5 1.5 0 0 0 1.5 14h11a1.5 1.5 0 0 0 1.5-1.5V8.83a.5.5 0 0 0-.5-.5h-2.973a1.5 1.5 0 0 0-1.5 1.5c0 .974-.976 1.732-2.03 1.725c-1.024-.007-1.97-.768-1.97-1.725a1.5 1.5 0 0 0-1.5-1.5z" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineInboxTray2SolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[streamlineIncognitoModeSolidIcon],svg[streamline-incognito-mode-solid-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class StreamlineZodiac8SolidIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1.746.334A1 1 0 1 0 .254 1.666A8.2 8.2 0 0 0 3.29 3.787q.2.081.402.153v6.12a9 9 0 0 0-.402.153a8.2 8.2 0 0 0-3.036 2.121a1 1 0 0 0 1.492 1.332a6.2 6.2 0 0 1 2.3-1.602a7.1 7.1 0 0 1 2.92-.515h.067a7.1 7.1 0 0 1 2.92.515c.91.372 1.696.924 2.3 1.602a1 1 0 1 0 1.493-1.332a8.2 8.2 0 0 0-3.036-2.121a9 9 0 0 0-.402-.153V3.94a9 9 0 0 0 .402-.153a8.2 8.2 0 0 0 3.036-2.121A1 1 0 0 0 12.254.334a6.2 6.2 0 0 1-2.3 1.602c-.91.371-1.911.55-2.92.515h-.067a7.1 7.1 0 0 1-2.92-.515a6.2 6.2 0 0 1-2.3-1.602Zm6.562 4.064A9 9 0 0 1 7 4.45a9 9 0 0 1-1.308-.053v5.204q.65-.072 1.308-.053a9 9 0 0 1 1.308.053z" clip-rule="evenodd"></svg:path>`,
 })
 export class StreamlineZodiac9SolidIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineAiCloudSparkSolidIcon],svg[streamline-ai-cloud-spark-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.883.165a4.37 4.37 0 0 0-4.582 2.717a3.693 3.693 0 0 0-1.194 7c.131-.787.692-1.501 1.683-1.674a1.43 1.43 0 0 0 1.147-1.092l.023-.105c.475-2.173 3.57-2.186 4.064-.017l.01.044l.018.077c.132.563.587.993 1.157 1.092c1.051.183 1.62.976 1.704 1.817a3.23 3.23 0 0 0-.227-6.11A4.37 4.37 0 0 0 7.883.165M6.181 7.28c.19-.869 1.427-.874 1.624-.007l.01.043l.02.086a2.69 2.69 0 0 0 2.16 2.037c.905.158.905 1.457 0 1.614a2.69 2.69 0 0 0-2.164 2.055l-.026.112c-.197.867-1.434.862-1.624-.007l-.021-.097a2.68 2.68 0 0 0-2.156-2.064c-.903-.157-.903-1.454 0-1.611a2.68 2.68 0 0 0 2.153-2.054l.016-.071z" clip-rule="evenodd"></svg:path>`,
-})
-export class StreamlineAiCloudSparkSolidIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

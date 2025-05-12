@@ -274,23 +274,6 @@ export class WhhAcsourceIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[whhAddalarmIcon],svg[whh-addalarm-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M983.557 320h-3q-11 1-27-2q-85-145-238-211q-6-23-8.5-36.5t-2.5-28.5t7.5-23t22.5-13.5t40-5.5q104 0 177 73.5t73 176.5q0 67-41 70m-23 256q0 91-35.5 174t-95.5 143t-143 95.5t-174 35.5t-174-35.5t-143-95.5t-95.5-143t-35.5-174t35.5-174t95.5-143t143-95.5t174-35.5t174 35.5t143 95.5t95.5 143t35.5 174m-448-320q-87 0-160.5 43t-116.5 116.5t-43 160.5t43 160.5t116.5 116.5t160.5 43t160.5-43t116.5-116.5t43-160.5t-43-160.5t-116.5-116.5t-160.5-43m224 384h-160v160q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5V640h-160q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h160V352q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5v160h160q13 0 22.5 9.5t9.5 22.5v64q0 13-9.5 22.5t-22.5 9.5m-665-322q-15 3-27 2h-3q-41-3-41-70q0-103 73-176.5t177-73.5q25 0 40 5.5t22 13.5t7.5 23t-2 28.5t-8.5 36.5q-153 66-238 211"></svg:path>`,
-})
-export class WhhAddalarmIcon {
-  readonly viewBox = input("0 0 1025 1024")
-  readonly width = input("1.01em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[whhAcornIcon],svg[whh-acorn-icon]',
   host: {
     role: 'img',
@@ -301,6 +284,23 @@ export class WhhAddalarmIcon {
   template: `<svg:path fill="currentColor" d="M928 129q-35 0-65.5 46.5T826 272q122 132 173 254.5t2 171.5q-45 45-122 71q-15-63-85-163.5t-172.5-203t-203-172T255 145q26-76 72-121q46-44 152.5-5.5T708 160q2-2 16.5-13.5t19-14.5t19-13.5t22.5-14t22.5-12t26-11.5t27-7.5T892 67t33-2q14 0 24.5 9.5t10 23.5t-9 22.5T928 129M576 449q156 156 237 311q-36 49-80 93q-60 60-130.5 98.5t-132.5 54t-129 17.5t-114-4t-93-18t-61-17.5t-23-9.5q-4-8-9.5-22.5t-17.5-61t-18-93T1 684t17.5-129T73 422.5T171 292q45-44 93-80q156 81 312 237"></svg:path>`,
 })
 export class WhhAcornIcon {
+  readonly viewBox = input("0 0 1025 1024")
+  readonly width = input("1.01em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[whhAddalarmIcon],svg[whh-addalarm-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M983.557 320h-3q-11 1-27-2q-85-145-238-211q-6-23-8.5-36.5t-2.5-28.5t7.5-23t22.5-13.5t40-5.5q104 0 177 73.5t73 176.5q0 67-41 70m-23 256q0 91-35.5 174t-95.5 143t-143 95.5t-174 35.5t-174-35.5t-143-95.5t-95.5-143t-35.5-174t35.5-174t95.5-143t143-95.5t174-35.5t174 35.5t143 95.5t95.5 143t35.5 174m-448-320q-87 0-160.5 43t-116.5 116.5t-43 160.5t43 160.5t116.5 116.5t160.5 43t160.5-43t116.5-116.5t43-160.5t-43-160.5t-116.5-116.5t-160.5-43m224 384h-160v160q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5V640h-160q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h160V352q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5v160h160q13 0 22.5 9.5t9.5 22.5v64q0 13-9.5 22.5t-22.5 9.5m-665-322q-15 3-27 2h-3q-41-3-41-70q0-103 73-176.5t177-73.5q25 0 40 5.5t22 13.5t7.5 23t-2 28.5t-8.5 36.5q-153 66-238 211"></svg:path>`,
+})
+export class WhhAddalarmIcon {
   readonly viewBox = input("0 0 1025 1024")
   readonly width = input("1.01em")
   readonly height = input("1em")

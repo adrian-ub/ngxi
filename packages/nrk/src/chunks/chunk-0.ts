@@ -36,16 +36,16 @@ export class Nrk404Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[nrkArrangeListIcon],svg[nrk-arrange-list-icon]',
+  selector: 'svg[nrkArrowDownIcon],svg[nrk-arrow-down-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M2 8h20v2H2zm20 6H2v2h20z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m12 20l-7-4.9v-2.27l6 4.2V4l2 1v12.03l6-4.2v2.27z" clip-rule="evenodd"></svg:path>`,
 })
-export class NrkArrangeListIcon {
+export class NrkArrowDownIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,16 +70,50 @@ export class NrkAlarmClockIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[nrkArrowDownIcon],svg[nrk-arrow-down-icon]',
+  selector: 'svg[nrkArrangeListIcon],svg[nrk-arrange-list-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m12 20l-7-4.9v-2.27l6 4.2V4l2 1v12.03l6-4.2v2.27z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M2 8h20v2H2zm20 6H2v2h20z"></svg:path>`,
 })
-export class NrkArrowDownIcon {
+export class NrkArrangeListIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[nrkArrowDropdownIcon],svg[nrk-arrow-dropdown-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m12 15l5-5H7z"></svg:path>`,
+})
+export class NrkArrowDropdownIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[nrkArrowLeftIcon],svg[nrk-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m4 12l4.9-7h2.272l-4.2 6H20l-1 2H6.972l4.2 6H8.9z" clip-rule="evenodd"></svg:path>`,
+})
+export class NrkArrowLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,67 +172,33 @@ export class NrkArrowRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[nrkArrowLeftIcon],svg[nrk-arrow-left-icon]',
+  selector: 'svg[nrkArrowRightLongIcon],svg[nrk-arrow-right-long-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m4 12l4.9-7h2.272l-4.2 6H20l-1 2H6.972l4.2 6H8.9z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m36 12l-4.9-7h-2.272l4.2 6H4l1 2h28.028l-4.2 6H31.1z" clip-rule="evenodd"></svg:path>`,
 })
-export class NrkArrowLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
+export class NrkArrowRightLongIcon {
+  readonly viewBox = input("0 0 40 24")
+  readonly width = input("1.67em")
   readonly height = input("1em")
 }
 
 @Component({
   standalone: true,
-  selector: 'svg[nrkArrowDropdownIcon],svg[nrk-arrow-dropdown-icon]',
+  selector: 'svg[nrkArrowUpIcon],svg[nrk-arrow-up-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m12 15l5-5H7z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m12 4l7 4.9v2.27l-6-4.2V20l-2-1V6.97l-6 4.2V8.9z" clip-rule="evenodd"></svg:path>`,
 })
-export class NrkArrowDropdownIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[nrkBookmarkIcon],svg[nrk-bookmark-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m12 17.542l1.163.83L17 21.115V3H7v18.114l3.838-2.741zm-7 4.729l1.894 1.376l.106-.076L12 20l5 3.571l.108.078L19 22.274V1H5z" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M17 7H7V5h10z" clip-rule="evenodd"></svg:path>`,
-})
-export class NrkBookmarkIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[nrkBellIcon],svg[nrk-bell-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M13 1h-2v1.055C7.863 2.4 5 4.382 5 8v8.5L3 18v2h18v-2l-2-1.5V8c0-3.618-2.863-5.6-6-5.945zm1 20h-4a2 2 0 1 0 4 0M11.997 4h.006C13.4 4 14.7 4.405 15.6 5.09C16.445 5.736 17 6.66 17 8v9.5l.667.5H6.333L7 17.5V8c0-1.34.555-2.265 1.4-2.91C9.3 4.406 10.599 4 11.997 4" clip-rule="evenodd"></svg:path>`,
-})
-export class NrkBellIcon {
+export class NrkArrowUpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -223,16 +223,33 @@ export class NrkArticleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[nrkArrowUpIcon],svg[nrk-arrow-up-icon]',
+  selector: 'svg[nrkBackIcon],svg[nrk-back-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m12 4l7 4.9v2.27l-6-4.2V20l-2-1V6.97l-6 4.2V8.9z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M4.4 7.4L6.8 4h2.5L7.2 7h6.3a6.5 6.5 0 0 1 0 13H9l1-2h3.5a4.5 4.5 0 1 0 0-9H7.2l2.1 3H6.8L4.4 8.6L4 8z"></svg:path>`,
 })
-export class NrkArrowUpIcon {
+export class NrkBackIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[nrkBellIcon],svg[nrk-bell-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M13 1h-2v1.055C7.863 2.4 5 4.382 5 8v8.5L3 18v2h18v-2l-2-1.5V8c0-3.618-2.863-5.6-6-5.945zm1 20h-4a2 2 0 1 0 4 0M11.997 4h.006C13.4 4 14.7 4.405 15.6 5.09C16.445 5.736 17 6.66 17 8v9.5l.667.5H6.333L7 17.5V8c0-1.34.555-2.265 1.4-2.91C9.3 4.406 10.599 4 11.997 4" clip-rule="evenodd"></svg:path>`,
+})
+export class NrkBellIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,6 +274,23 @@ export class NrkBellActiveIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[nrkBookmarkIcon],svg[nrk-bookmark-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m12 17.542l1.163.83L17 21.115V3H7v18.114l3.838-2.741zm-7 4.729l1.894 1.376l.106-.076L12 20l5 3.571l.108.078L19 22.274V1H5z" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M17 7H7V5h10z" clip-rule="evenodd"></svg:path>`,
+})
+export class NrkBookmarkIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[nrkBookmarkActiveIcon],svg[nrk-bookmark-active-icon]',
   host: {
     role: 'img',
@@ -267,40 +301,6 @@ export class NrkBellActiveIcon {
   template: `<svg:path fill="currentColor" d="M6.894 23.647L5 22.271V1h14v21.275l-1.892 1.374L12 20zM7 5h10V3H7z"></svg:path>`,
 })
 export class NrkBookmarkActiveIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[nrkArrowRightLongIcon],svg[nrk-arrow-right-long-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m36 12l-4.9-7h-2.272l4.2 6H4l1 2h28.028l-4.2 6H31.1z" clip-rule="evenodd"></svg:path>`,
-})
-export class NrkArrowRightLongIcon {
-  readonly viewBox = input("0 0 40 24")
-  readonly width = input("1.67em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[nrkBackIcon],svg[nrk-back-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.4 7.4L6.8 4h2.5L7.2 7h6.3a6.5 6.5 0 0 1 0 13H9l1-2h3.5a4.5 4.5 0 1 0 0-9H7.2l2.1 3H6.8L4.4 8.6L4 8z"></svg:path>`,
-})
-export class NrkBackIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

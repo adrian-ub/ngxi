@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[octiconAiModel16Icon],svg[octicon-ai-model-16-icon]',
+  selector: 'svg[octiconAccessibility16Icon],svg[octicon-accessibility-16-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M10.628 7.25a2.25 2.25 0 1 1 0 1.5H8.622a2.25 2.25 0 0 1-2.513 1.466L5.03 12.124a2.25 2.25 0 1 1-1.262-.814l1.035-1.832A2.25 2.25 0 0 1 4.25 8c0-.566.209-1.082.553-1.478L3.768 4.69a2.25 2.25 0 1 1 1.262-.814l1.079 1.908A2.25 2.25 0 0 1 8.622 7.25ZM2.5 2.5a.75.75 0 1 0 1.5 0a.75.75 0 0 0-1.5 0m4 4.75a.75.75 0 1 0 0 1.5a.75.75 0 0 0 0-1.5m6.25 0a.75.75 0 1 0 0 1.5a.75.75 0 0 0 0-1.5m-9.5 5.5a.75.75 0 1 0 0 1.5a.75.75 0 0 0 0-1.5"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M9.923 5.302q.094.095.178.198H14A.75.75 0 0 1 14 7h-3.3l.578 5.163l.362 2.997a.75.75 0 0 1-1.49.18L9.868 13H6.132l-.282 2.34a.75.75 0 0 1-1.49-.18l.362-2.997L5.3 7H2a.75.75 0 0 1 0-1.5h3.9a3 3 0 0 1 .176-.198a3 3 0 1 1 3.847 0M9.2 7.073a1.206 1.206 0 0 0-2.398 0L6.305 11.5h3.39ZM9.5 3a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 3"></svg:path>`,
 })
-export class OcticonAiModel16Icon {
+export class OcticonAccessibility16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -29,6 +29,23 @@ export class OcticonAiModel16Icon {
   template: `<svg:path fill="currentColor" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M3.75 6a.75.75 0 0 0 0 1.5h2.409a2 2 0 0 0-.025.151l-.307 2.508l-.323 3.011a.75.75 0 0 0 1.492.16l.25-2.33h1.509l.25 2.33a.748.748 0 0 0 1.199.552a.75.75 0 0 0 .291-.712l-.32-3l-.309-2.519a2 2 0 0 0-.025-.151h2.409a.75.75 0 0 0 0-1.5zM8 6a2 2 0 1 0 .001-3.999A2 2 0 0 0 8 6"></svg:path>`,
 })
 export class OcticonAccessibilityInset16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[octiconAiModel16Icon],svg[octicon-ai-model-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.628 7.25a2.25 2.25 0 1 1 0 1.5H8.622a2.25 2.25 0 0 1-2.513 1.466L5.03 12.124a2.25 2.25 0 1 1-1.262-.814l1.035-1.832A2.25 2.25 0 0 1 4.25 8c0-.566.209-1.082.553-1.478L3.768 4.69a2.25 2.25 0 1 1 1.262-.814l1.079 1.908A2.25 2.25 0 0 1 8.622 7.25ZM2.5 2.5a.75.75 0 1 0 1.5 0a.75.75 0 0 0-1.5 0m4 4.75a.75.75 0 1 0 0 1.5a.75.75 0 0 0 0-1.5m6.25 0a.75.75 0 1 0 0 1.5a.75.75 0 0 0 0-1.5m-9.5 5.5a.75.75 0 1 0 0 1.5a.75.75 0 0 0 0-1.5"></svg:path>`,
+})
+export class OcticonAiModel16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,16 +121,16 @@ export class OcticonArchive16Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[octiconAccessibility16Icon],svg[octicon-accessibility-16-icon]',
+  selector: 'svg[octiconArrowBoth16Icon],svg[octicon-arrow-both-16-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M9.923 5.302q.094.095.178.198H14A.75.75 0 0 1 14 7h-3.3l.578 5.163l.362 2.997a.75.75 0 0 1-1.49.18L9.868 13H6.132l-.282 2.34a.75.75 0 0 1-1.49-.18l.362-2.997L5.3 7H2a.75.75 0 0 1 0-1.5h3.9a3 3 0 0 1 .176-.198a3 3 0 1 1 3.847 0M9.2 7.073a1.206 1.206 0 0 0-2.398 0L6.305 11.5h3.39ZM9.5 3a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 3"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M3.72 3.72a.75.75 0 0 1 1.042.018a.75.75 0 0 1 .018 1.042L2.56 7h10.88l-2.22-2.22a.75.75 0 0 1 .018-1.042a.75.75 0 0 1 1.042-.018l3.5 3.5a.75.75 0 0 1 0 1.06l-3.5 3.5a.749.749 0 0 1-1.275-.326a.75.75 0 0 1 .215-.734l2.22-2.22H2.56l2.22 2.22a.749.749 0 0 1-.326 1.275a.75.75 0 0 1-.734-.215l-3.5-3.5a.75.75 0 0 1 0-1.06Z"></svg:path>`,
 })
-export class OcticonAccessibility16Icon {
+export class OcticonArrowBoth16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5588,23 +5605,6 @@ export class OcticonZoomIn16Icon {
   template: `<svg:path fill="currentColor" d="M4.5 6.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1 0-1.5"></svg:path><svg:path fill="currentColor" d="M0 7.5a7.5 7.5 0 1 1 13.307 4.747l2.473 2.473a.749.749 0 1 1-1.06 1.06l-2.473-2.473A7.5 7.5 0 0 1 0 7.5m7.5-6a6 6 0 1 0 0 12a6 6 0 0 0 0-12"></svg:path>`,
 })
 export class OcticonZoomOut16Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[octiconArrowBoth16Icon],svg[octicon-arrow-both-16-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.72 3.72a.75.75 0 0 1 1.042.018a.75.75 0 0 1 .018 1.042L2.56 7h10.88l-2.22-2.22a.75.75 0 0 1 .018-1.042a.75.75 0 0 1 1.042-.018l3.5 3.5a.75.75 0 0 1 0 1.06l-3.5 3.5a.749.749 0 0 1-1.275-.326a.75.75 0 0 1 .215-.734l2.22-2.22H2.56l2.22 2.22a.749.749 0 0 1-.326 1.275a.75.75 0 0 1-.734-.215l-3.5-3.5a.75.75 0 0 1 0-1.06Z"></svg:path>`,
-})
-export class OcticonArrowBoth16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

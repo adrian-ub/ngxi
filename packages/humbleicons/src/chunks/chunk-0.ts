@@ -53,23 +53,6 @@ export class HumbleiconsAidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[humbleiconsAlignObjectsBottomIcon],svg[humbleicons-align-objects-bottom-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 20H4m8-3V6m0 11l3-3m-3 3l-3-3"></svg:path>`,
-})
-export class HumbleiconsAlignObjectsBottomIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[humbleiconsAlignObjectsCenterIcon],svg[humbleicons-align-objects-center-icon]',
   host: {
     role: 'img',
@@ -80,23 +63,6 @@ export class HumbleiconsAlignObjectsBottomIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m4-8h5m-3-3l-3 3l3 3M8 12H3m3-3l3 3l-3 3"></svg:path>`,
 })
 export class HumbleiconsAlignObjectsCenterIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[humbleiconsAlignObjectsMiddleIcon],svg[humbleicons-align-objects-middle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16m-8-4V3M9 6l3 3l3-3m-3 10v5m-3-3l3-3l3 3"></svg:path>`,
-})
-export class HumbleiconsAlignObjectsMiddleIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,6 +87,40 @@ export class HumbleiconsAlignObjectsLeftIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[humbleiconsAlignObjectsMiddleIcon],svg[humbleicons-align-objects-middle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16m-8-4V3M9 6l3 3l3-3m-3 10v5m-3-3l3-3l3 3"></svg:path>`,
+})
+export class HumbleiconsAlignObjectsMiddleIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[humbleiconsAlignObjectsBottomIcon],svg[humbleicons-align-objects-bottom-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 20H4m8-3V6m0 11l3-3m-3 3l-3-3"></svg:path>`,
+})
+export class HumbleiconsAlignObjectsBottomIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[humbleiconsAlignObjectsTopIcon],svg[humbleicons-align-objects-top-icon]',
   host: {
     role: 'img',
@@ -131,6 +131,23 @@ export class HumbleiconsAlignObjectsLeftIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 4H4m8 3v11m0-11l3 3m-3-3l-3 3"></svg:path>`,
 })
 export class HumbleiconsAlignObjectsTopIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[humbleiconsAlignObjectsRightIcon],svg[humbleicons-align-objects-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 4v16m-3-8H6m11 0l-3-3m3 3l-3 3"></svg:path>`,
+})
+export class HumbleiconsAlignObjectsRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,23 +223,6 @@ export class HumbleiconsAlignTextRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[humbleiconsAlignObjectsRightIcon],svg[humbleicons-align-objects-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 4v16m-3-8H6m11 0l-3-3m3 3l-3 3"></svg:path>`,
-})
-export class HumbleiconsAlignObjectsRightIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[humbleiconsArrowDownIcon],svg[humbleicons-arrow-down-icon]',
   host: {
     role: 'img',
@@ -291,23 +291,6 @@ export class HumbleiconsArrowGoForwardIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[humbleiconsArrowLeftIcon],svg[humbleicons-arrow-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4m0 0l6-6m-6 6l6 6"></svg:path>`,
-})
-export class HumbleiconsArrowLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[humbleiconsArrowJoinIcon],svg[humbleicons-arrow-join-icon]',
   host: {
     role: 'img',
@@ -318,6 +301,23 @@ export class HumbleiconsArrowLeftIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 12l-3-3m3 3l-3 3m3-3h-5.929a5 5 0 0 0-3.535 1.464l-1.072 1.072A5 5 0 0 1 6.93 16H3m0-8h4.343a4 4 0 0 1 2.829 1.172l1.656 1.656A4 4 0 0 0 14.657 12H18"></svg:path>`,
 })
 export class HumbleiconsArrowJoinIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[humbleiconsArrowLeftIcon],svg[humbleicons-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4m0 0l6-6m-6 6l6 6"></svg:path>`,
+})
+export class HumbleiconsArrowLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

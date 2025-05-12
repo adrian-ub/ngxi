@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[jamItalicIcon],svg[jam-italic-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m2.273 8l1.95-6H3a1 1 0 1 1 0-2h5a1 1 0 1 1 0 2H6.326l-1.95 6H6a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2z"></svg:path>`,
+})
+export class JamItalicIcon {
+  readonly viewBox = input("-7.5 -7 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[jamJoystickIcon],svg[jam-joystick-icon]',
   host: {
     role: 'img',
@@ -7458,23 +7475,6 @@ export class JamYoutubeCircleIcon {
   template: `<svg:g fill="currentColor"><svg:path d="M12.923 6.526H7.077C5.93 6.526 5 7.446 5 8.58v2.89c0 1.135.93 2.054 2.077 2.054h5.846c1.147 0 2.077-.92 2.077-2.054V8.58c0-1.135-.93-2.054-2.077-2.054m-1.404 3.64l-2.735 1.29a.11.11 0 0 1-.157-.099v-2.66a.11.11 0 0 1 .16-.097l2.734 1.37a.11.11 0 0 1-.002.196"></svg:path><svg:path d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4"></svg:path></svg:g>`,
 })
 export class JamYoutubeSquareIcon {
-  readonly viewBox = input("-2 -2 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[jamAndroidSquareIcon],svg[jam-android-square-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M6.39 8.248h-.026a.6.6 0 0 0-.596.596v2.594c0 .329.267.596.596.596h.026a.6.6 0 0 0 .596-.596V8.844a.6.6 0 0 0-.597-.596zm.88 4.192c0 .3.247.546.548.546h.586v1.402c0 .329.268.596.596.596h.025a.6.6 0 0 0 .597-.596v-1.402h.818v1.402c0 .329.27.596.596.596h.026a.6.6 0 0 0 .596-.596v-1.402h.586c.3 0 .547-.245.547-.547V8.343H7.27zm4.136-6.581l.465-.718a.099.099 0 1 0-.166-.108l-.482.743a3.1 3.1 0 0 0-1.192-.232c-.427 0-.83.084-1.192.232l-.481-.743a.1.1 0 0 0-.137-.029a.1.1 0 0 0-.03.137l.466.718c-.839.41-1.405 1.185-1.405 2.074q0 .082.009.162h5.541q.008-.08.008-.162c0-.889-.566-1.663-1.404-2.074m-2.66 1.284a.266.266 0 1 1 0-.532a.266.266 0 0 1 0 .532m2.57 0a.266.266 0 1 1-.001-.532a.266.266 0 0 1 0 .532zm2.382 1.105h-.025a.6.6 0 0 0-.597.596v2.594c0 .329.27.596.597.596h.025a.597.597 0 0 0 .596-.596V8.844a.6.6 0 0 0-.596-.596"></svg:path><svg:path d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4"></svg:path></svg:g>`,
-})
-export class JamAndroidSquareIcon {
   readonly viewBox = input("-2 -2 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

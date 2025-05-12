@@ -36,16 +36,33 @@ export class StreamlineAddBellNotificationSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[streamlineAdobeSolidIcon],svg[streamline-adobe-solid-icon]',
+  selector: 'svg[streamlineAddCircleSolidIcon],svg[streamline-add-circle-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M.316.816a.5.5 0 0 1 .5-.5h12.368a.5.5 0 0 1 .5.5v12.368a.5.5 0 0 1-.5.5H.816a.5.5 0 0 1-.5-.5zM1.37 12.63L5.391 1.37h3.217l4.022 11.26H9.71L7 5.147l-1.678 5.07h1.556l.805 2.413H1.369Z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M14 7A7 7 0 1 1 0 7a7 7 0 0 1 14 0M7 3.25a.75.75 0 0 1 .75.75v2.25H10a.75.75 0 0 1 0 1.5H7.75V10a.75.75 0 0 1-1.5 0V7.75H4a.75.75 0 0 1 0-1.5h2.25V4A.75.75 0 0 1 7 3.25" clip-rule="evenodd"></svg:path>`,
 })
-export class StreamlineAdobeSolidIcon {
+export class StreamlineAddCircleSolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineAddLayer2SolidIcon],svg[streamline-add-layer-2-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.25 0a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 0 1.5 0v-7.5A2.25 2.25 0 0 0 11.75 0zM9.5 3A1.5 1.5 0 0 1 11 4.5v8A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-8A1.5 1.5 0 0 1 1.5 3zM2.25 8.5A.75.75 0 0 1 3 7.75h1.75V6a.75.75 0 0 1 1.5 0v1.75H8a.75.75 0 0 1 0 1.5H6.25V11a.75.75 0 0 1-1.5 0V9.25H3a.75.75 0 0 1-.75-.75" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineAddLayer2SolidIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,6 +87,23 @@ export class StreamlineAddSquareSolidIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[streamlineAdobeSolidIcon],svg[streamline-adobe-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M.316.816a.5.5 0 0 1 .5-.5h12.368a.5.5 0 0 1 .5.5v12.368a.5.5 0 0 1-.5.5H.816a.5.5 0 0 1-.5-.5zM1.37 12.63L5.391 1.37h3.217l4.022 11.26H9.71L7 5.147l-1.678 5.07h1.556l.805 2.413H1.369Z" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineAdobeSolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[streamlineAffordableAndCleanEnergySolidIcon],svg[streamline-affordable-and-clean-energy-solid-icon]',
   host: {
     role: 'img',
@@ -80,23 +114,6 @@ export class StreamlineAddSquareSolidIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M6.862.014a.75.75 0 0 1 .75.75v.653a.75.75 0 1 1-1.5 0V.764a.75.75 0 0 1 .75-.75m4.288 6.848a4.289 4.289 0 1 1-8.578 0a4.289 4.289 0 0 1 8.578 0m-3.538 5.444a.75.75 0 0 0-1.5 0v.653a.75.75 0 0 0 1.5 0zM.015 6.862a.75.75 0 0 1 .75-.75h.652a.75.75 0 1 1 0 1.5H.765a.75.75 0 0 1-.75-.75m12.292-.75a.75.75 0 0 0 0 1.5h.652a.75.75 0 0 0 0-1.5zm-.56-4.136a.75.75 0 0 1 0 1.06l-.434.435a.75.75 0 1 1-1.061-1.06l.434-.435a.75.75 0 0 1 1.06 0ZM3.47 11.312a.75.75 0 1 0-1.06-1.06l-.434.433a.75.75 0 0 0 1.06 1.061zM1.977 1.976a.75.75 0 0 1 1.06 0l.434.434a.75.75 0 0 1-1.06 1.06l-.434-.433a.75.75 0 0 1 0-1.06Zm9.336 8.276a.75.75 0 1 0-1.061 1.06l.434.434a.75.75 0 0 0 1.06-1.06zm-4.45-6.706c.345 0 .625.28.625.625v1.766a.625.625 0 1 1-1.25 0V4.171c0-.345.28-.625.625-.625m-1.494 2.19a.625.625 0 1 0-1-.751a3.115 3.115 0 1 0 4.984 0a.625.625 0 0 0-1 .75a1.865 1.865 0 1 1-2.985 0Z" clip-rule="evenodd"></svg:path>`,
 })
 export class StreamlineAffordableAndCleanEnergySolidIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineAddCircleSolidIcon],svg[streamline-add-circle-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M14 7A7 7 0 1 1 0 7a7 7 0 0 1 14 0M7 3.25a.75.75 0 0 1 .75.75v2.25H10a.75.75 0 0 1 0 1.5H7.75V10a.75.75 0 0 1-1.5 0V7.75H4a.75.75 0 0 1 0-1.5h2.25V4A.75.75 0 0 1 7 3.25" clip-rule="evenodd"></svg:path>`,
-})
-export class StreamlineAddCircleSolidIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,16 +138,16 @@ export class StreamlineAiChipSparkSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[streamlineAddLayer2SolidIcon],svg[streamline-add-layer-2-solid-icon]',
+  selector: 'svg[streamlineAiCloudSparkSolidIcon],svg[streamline-ai-cloud-spark-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.25 0a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 0 1.5 0v-7.5A2.25 2.25 0 0 0 11.75 0zM9.5 3A1.5 1.5 0 0 1 11 4.5v8A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-8A1.5 1.5 0 0 1 1.5 3zM2.25 8.5A.75.75 0 0 1 3 7.75h1.75V6a.75.75 0 0 1 1.5 0v1.75H8a.75.75 0 0 1 0 1.5H6.25V11a.75.75 0 0 1-1.5 0V9.25H3a.75.75 0 0 1-.75-.75" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.883.165a4.37 4.37 0 0 0-4.582 2.717a3.693 3.693 0 0 0-1.194 7c.131-.787.692-1.501 1.683-1.674a1.43 1.43 0 0 0 1.147-1.092l.023-.105c.475-2.173 3.57-2.186 4.064-.017l.01.044l.018.077c.132.563.587.993 1.157 1.092c1.051.183 1.62.976 1.704 1.817a3.23 3.23 0 0 0-.227-6.11A4.37 4.37 0 0 0 7.883.165M6.181 7.28c.19-.869 1.427-.874 1.624-.007l.01.043l.02.086a2.69 2.69 0 0 0 2.16 2.037c.905.158.905 1.457 0 1.614a2.69 2.69 0 0 0-2.164 2.055l-.026.112c-.197.867-1.434.862-1.624-.007l-.021-.097a2.68 2.68 0 0 0-2.156-2.064c-.903-.157-.903-1.454 0-1.611a2.68 2.68 0 0 0 2.153-2.054l.016-.071z" clip-rule="evenodd"></svg:path>`,
 })
-export class StreamlineAddLayer2SolidIcon {
+export class StreamlineAiCloudSparkSolidIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8478,23 +8495,6 @@ export class StreamlineInboxLockSolidIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.75.76a.75.75 0 0 0-1.5 0v2.75H4.5a.75.75 0 0 0-.53 1.28l2.5 2.5a.75.75 0 0 0 1.06 0l2.5-2.5a.75.75 0 0 0-.53-1.28H7.75zM.5 8.33a.5.5 0 0 0-.5.5v3.67A1.5 1.5 0 0 0 1.5 14h11a1.5 1.5 0 0 0 1.5-1.5V8.83a.5.5 0 0 0-.5-.5h-2.973a1.5 1.5 0 0 0-1.5 1.5c0 .974-.976 1.732-2.03 1.725c-1.024-.007-1.97-.768-1.97-1.725a1.5 1.5 0 0 0-1.5-1.5z" clip-rule="evenodd"></svg:path>`,
 })
 export class StreamlineInboxTray1SolidIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineInboxTray2SolidIcon],svg[streamline-inbox-tray-2-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10.193 3.546a.75.75 0 0 1-.693.463H7.75v2.75a.75.75 0 0 1-1.5 0V4.01H4.5a.75.75 0 0 1-.53-1.28l2.5-2.5a.75.75 0 0 1 1.06 0l2.5 2.5a.75.75 0 0 1 .163.817ZM.5 8.33a.5.5 0 0 0-.5.5v3.67A1.5 1.5 0 0 0 1.5 14h11a1.5 1.5 0 0 0 1.5-1.5V8.83a.5.5 0 0 0-.5-.5h-2.973a1.5 1.5 0 0 0-1.5 1.5c0 .974-.976 1.732-2.03 1.725c-1.024-.007-1.97-.768-1.97-1.725a1.5 1.5 0 0 0-1.5-1.5z" clip-rule="evenodd"></svg:path>`,
-})
-export class StreamlineInboxTray2SolidIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

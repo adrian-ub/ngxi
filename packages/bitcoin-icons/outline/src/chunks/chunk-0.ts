@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[bitcoinIconsAlertCircleOutlineIcon],svg[bitcoin-icons-alert-circle-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor"><svg:circle cx="12" cy="12" r="8.5"></svg:circle><svg:path stroke-linecap="round" d="M12 7v7m0 3.5v-1"></svg:path></svg:g>`,
+})
+export class BitcoinIconsAlertCircleOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[bitcoinIconsAddressBookOutlineIcon],svg[bitcoin-icons-address-book-outline-icon]',
   host: {
     role: 'img',
@@ -19,16 +36,16 @@ export class BitcoinIconsAddressBookOutlineIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bitcoinIconsArrowRightOutlineIcon],svg[bitcoin-icons-arrow-right-outline-icon]',
+  selector: 'svg[bitcoinIconsAlertOutlineIcon],svg[bitcoin-icons-alert-outline-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M3 12.013L20.789 12m-6.776 7L21 12l-6.988-7"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" d="M12 7v7m0 3.5v-1"></svg:path>`,
 })
-export class BitcoinIconsArrowRightOutlineIcon {
+export class BitcoinIconsAlertOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,6 +70,40 @@ export class BitcoinIconsArrowDownOutlineIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[bitcoinIconsArrowLeftOutlineIcon],svg[bitcoin-icons-arrow-left-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M21 12.013L3.211 12m6.777 7L3 12l6.988-7"></svg:path>`,
+})
+export class BitcoinIconsArrowLeftOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bitcoinIconsArrowRightOutlineIcon],svg[bitcoin-icons-arrow-right-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M3 12.013L20.789 12m-6.776 7L21 12l-6.988-7"></svg:path>`,
+})
+export class BitcoinIconsArrowRightOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[bitcoinIconsArrowUpOutlineIcon],svg[bitcoin-icons-arrow-up-outline-icon]',
   host: {
     role: 'img',
@@ -63,23 +114,6 @@ export class BitcoinIconsArrowDownOutlineIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M12.013 21L12 3.211m7 6.777L12 3L5 9.988"></svg:path>`,
 })
 export class BitcoinIconsArrowUpOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bitcoinIconsBitcoinCircleOutlineIcon],svg[bitcoin-icons-bitcoin-circle-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor"><svg:path d="M20.247 14.052a8.5 8.5 0 0 1-10.302 6.194C5.394 19.11 2.62 14.5 3.754 9.95s5.74-7.33 10.288-6.195c4.562 1.12 7.337 5.744 6.205 10.298Z"></svg:path><svg:path stroke-linecap="square" stroke-linejoin="round" d="m9.4 14.912l1.693-6.792m-1.456-.363L13.818 8.8c2.728.68 2.12 3.877-.786 3.153c3.184.794 2.86 4.578-.907 3.639c-1.841-.46-3.813-.95-3.813-.95m1.994-3.368l2.669.665m-1.397-3.698l.363-1.455m-2.42 9.703l.363-1.456m3.634-6.308l.363-1.455m-2.419 9.703l.363-1.456"></svg:path></svg:g>`,
-})
-export class BitcoinIconsBitcoinCircleOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -2076,50 +2110,16 @@ export class BitcoinIconsWalletOutlineIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bitcoinIconsAlertCircleOutlineIcon],svg[bitcoin-icons-alert-circle-outline-icon]',
+  selector: 'svg[bitcoinIconsBitcoinCircleOutlineIcon],svg[bitcoin-icons-bitcoin-circle-outline-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor"><svg:circle cx="12" cy="12" r="8.5"></svg:circle><svg:path stroke-linecap="round" d="M12 7v7m0 3.5v-1"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="currentColor"><svg:path d="M20.247 14.052a8.5 8.5 0 0 1-10.302 6.194C5.394 19.11 2.62 14.5 3.754 9.95s5.74-7.33 10.288-6.195c4.562 1.12 7.337 5.744 6.205 10.298Z"></svg:path><svg:path stroke-linecap="square" stroke-linejoin="round" d="m9.4 14.912l1.693-6.792m-1.456-.363L13.818 8.8c2.728.68 2.12 3.877-.786 3.153c3.184.794 2.86 4.578-.907 3.639c-1.841-.46-3.813-.95-3.813-.95m1.994-3.368l2.669.665m-1.397-3.698l.363-1.455m-2.42 9.703l.363-1.456m3.634-6.308l.363-1.455m-2.419 9.703l.363-1.456"></svg:path></svg:g>`,
 })
-export class BitcoinIconsAlertCircleOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bitcoinIconsAlertOutlineIcon],svg[bitcoin-icons-alert-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" d="M12 7v7m0 3.5v-1"></svg:path>`,
-})
-export class BitcoinIconsAlertOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bitcoinIconsArrowLeftOutlineIcon],svg[bitcoin-icons-arrow-left-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M21 12.013L3.211 12m6.777 7L3 12l6.988-7"></svg:path>`,
-})
-export class BitcoinIconsArrowLeftOutlineIcon {
+export class BitcoinIconsBitcoinCircleOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

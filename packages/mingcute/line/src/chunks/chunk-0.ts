@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[mingcuteAbsLineIcon],svg[mingcute-abs-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M12 4a8 8 0 1 1 0 16a8 8 0 0 1 0-16M3.2 5.4a1 1 0 1 1 1.599 1.2A8.96 8.96 0 0 0 3 12c0 2.027.67 3.895 1.799 5.4a1 1 0 0 1-1.6 1.2A10.96 10.96 0 0 1 1 12c0-2.475.819-4.762 2.2-6.6m16.2-.2a1 1 0 0 1 1.4.2A10.96 10.96 0 0 1 23 12c0 2.475-.819 4.762-2.2 6.6a1 1 0 1 1-1.599-1.2A8.96 8.96 0 0 0 21 12c0-2.027-.67-3.895-1.799-5.4a1 1 0 0 1 .2-1.4ZM12 6a6 6 0 1 0 0 12a6 6 0 0 0 0-12m2 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2a1 1 0 0 1-1-1v-2h-1v2a1 1 0 1 1-2 0v-4a3 3 0 0 1 3-3zm0 5h-1v1h1zm-3-3a1 1 0 0 0-.993.883L10 11h1zm3 0h-1v1h1z"></svg:path></svg:g>`,
-})
-export class MingcuteAbsLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mingcuteAdCircleLineIcon],svg[mingcute-ad-circle-line-icon]',
   host: {
     role: 'img',
@@ -53,6 +36,57 @@ export class MingcuteAdCircleOffLineIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[mingcuteAbsLineIcon],svg[mingcute-abs-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M12 4a8 8 0 1 1 0 16a8 8 0 0 1 0-16M3.2 5.4a1 1 0 1 1 1.599 1.2A8.96 8.96 0 0 0 3 12c0 2.027.67 3.895 1.799 5.4a1 1 0 0 1-1.6 1.2A10.96 10.96 0 0 1 1 12c0-2.475.819-4.762 2.2-6.6m16.2-.2a1 1 0 0 1 1.4.2A10.96 10.96 0 0 1 23 12c0 2.475-.819 4.762-2.2 6.6a1 1 0 1 1-1.599-1.2A8.96 8.96 0 0 0 21 12c0-2.027-.67-3.895-1.799-5.4a1 1 0 0 1 .2-1.4ZM12 6a6 6 0 1 0 0 12a6 6 0 0 0 0-12m2 2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2a1 1 0 0 1-1-1v-2h-1v2a1 1 0 1 1-2 0v-4a3 3 0 0 1 3-3zm0 5h-1v1h1zm-3-3a1 1 0 0 0-.993.883L10 11h1zm3 0h-1v1h1z"></svg:path></svg:g>`,
+})
+export class MingcuteAbsLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mingcuteAdRectangleLineIcon],svg[mingcute-ad-rectangle-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M19 4a3 3 0 0 1 2.995 2.824L22 7v10a3 3 0 0 1-2.824 2.995L19 20H5a3 3 0 0 1-2.995-2.824L2 17V7a3 3 0 0 1 2.824-2.995L5 4zm0 2H5a1 1 0 0 0-.993.883L4 7v10a1 1 0 0 0 .883.993L5 18h14a1 1 0 0 0 .993-.883L20 17V7a1 1 0 0 0-1-1M9.22 8a2 2 0 0 1 1.894 1.36l.045.155l1.311 5.243a1 1 0 0 1-1.905.596l-.035-.111L10.22 14H7.78l-.31 1.242a1 1 0 0 1-1.962-.37l.022-.114l1.31-5.243a2 2 0 0 1 1.78-1.509L8.78 8zM18 8a1 1 0 0 1 .993.883L19 9v6a1 1 0 0 1-.883.993L18 16h-2a3 3 0 1 1 .81-5.89l.19.06V9a1 1 0 0 1 1-1m-2 4a1 1 0 0 0-.117 1.993L16 14h1v-1a1 1 0 0 0-1-1m-6.78-2h-.44l-.5 2h1.44z"></svg:path></svg:g>`,
+})
+export class MingcuteAdRectangleLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mingcuteAdRectangleOffLineIcon],svg[mingcute-ad-rectangle-off-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M3.293 3.293a1 1 0 0 1 1.32-.083l.094.083l.707.707H19a3 3 0 0 1 2.995 2.824L22 7v10c0 .91-.405 1.724-1.044 2.274l-.151.122l-.036-.036a1 1 0 0 1-1.382 1.43l-.094-.083l-16-16a1 1 0 0 1 0-1.414M2.076 6.325L4 8.248V17a1 1 0 0 0 1 1h8.752l2 2H5a3 3 0 0 1-3-3V7q0-.349.076-.675M19 6H7.414l2.01 2.01a2 2 0 0 1 1.736 1.505l.076.307l2.003 2.003A3 3 0 0 1 17 10.17V9a1 1 0 1 1 2 0v6a1 1 0 0 1-1 1h-.586l1.937 1.937A1 1 0 0 0 20 17V7a1 1 0 0 0-1-1M6.526 10.774L9.752 14H7.78l-.31 1.242a1 1 0 1 1-1.941-.485zm3.85 3.85l1.35 1.35a1 1 0 0 1-1.196-.732zM16 12a1 1 0 0 0-.117 1.993L16 14h1v-1a1 1 0 0 0-1-1"></svg:path></svg:g>`,
+})
+export class MingcuteAdRectangleOffLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mingcuteAddCircleLineIcon],svg[mingcute-add-circle-line-icon]',
   host: {
     role: 'img',
@@ -63,6 +97,23 @@ export class MingcuteAdCircleOffLineIcon {
   template: `<svg:g fill="none"><svg:path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 3a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 0 1 1-1"></svg:path></svg:g>`,
 })
 export class MingcuteAddCircleLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mingcuteAddLineIcon],svg[mingcute-add-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M11 20a1 1 0 1 0 2 0v-7h7a1 1 0 1 0 0-2h-7V4a1 1 0 1 0-2 0v7H4a1 1 0 1 0 0 2h7z"></svg:path></svg:g>`,
+})
+export class MingcuteAddLineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -97,23 +148,6 @@ export class MingcuteAddSquareLineIcon {
   template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M19.997 2.929a1 1 0 0 1-.926 1.069L13 4.43V7h3.382a2 2 0 0 1 1.789 1.106l2.027 4.055a5 5 0 0 1 .336 3.61l-1.365 4.778A2 2 0 0 1 17.246 22H6.754a2 2 0 0 1-1.923-1.45l-1.365-4.78a5 5 0 0 1 .335-3.609L5.83 8.106A2 2 0 0 1 7.618 7H11V4.574l-5.929.423a1 1 0 1 1-.142-1.994l14-1a1 1 0 0 1 1.068.926M12 9H7.618l-2 4h12.764l-2-4h-4.383Zm-6.664 6q.023.111.054.221L6.754 20h10.492l1.365-4.779q.03-.11.054-.221z"></svg:path></svg:g>`,
 })
 export class MingcuteAerialLiftLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mingcuteAdRectangleOffLineIcon],svg[mingcute-ad-rectangle-off-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M3.293 3.293a1 1 0 0 1 1.32-.083l.094.083l.707.707H19a3 3 0 0 1 2.995 2.824L22 7v10c0 .91-.405 1.724-1.044 2.274l-.151.122l-.036-.036a1 1 0 0 1-1.382 1.43l-.094-.083l-16-16a1 1 0 0 1 0-1.414M2.076 6.325L4 8.248V17a1 1 0 0 0 1 1h8.752l2 2H5a3 3 0 0 1-3-3V7q0-.349.076-.675M19 6H7.414l2.01 2.01a2 2 0 0 1 1.736 1.505l.076.307l2.003 2.003A3 3 0 0 1 17 10.17V9a1 1 0 1 1 2 0v6a1 1 0 0 1-1 1h-.586l1.937 1.937A1 1 0 0 0 20 17V7a1 1 0 0 0-1-1M6.526 10.774L9.752 14H7.78l-.31 1.242a1 1 0 1 1-1.941-.485zm3.85 3.85l1.35 1.35a1 1 0 0 1-1.196-.732zM16 12a1 1 0 0 0-.117 1.993L16 14h1v-1a1 1 0 0 0-1-1"></svg:path></svg:g>`,
-})
-export class MingcuteAdRectangleOffLineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8461,40 +8495,6 @@ export class MingcuteEasyInOutLineIcon {
   template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" fill-rule="nonzero" d="M14 3a2 2 0 0 1 2 2h3a2 2 0 0 1 2 2v2a2 2 0 0 1-1.51 1.94l2.142 4.996c.264.527.368.985.368 1.564a3.5 3.5 0 0 1-6.663 1.5H9.663a3.5 3.5 0 0 1-6.628-1H3a1 1 0 0 1-1-1V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2a2 2 0 1 0 4 0V5h-2a1 1 0 1 1 0-2zM6.5 16a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3m12 0a1.5 1.5 0 1 0 1.5 1.5c0-.811-.685-1.5-1.5-1.5m-1.16-5H16a4 4 0 0 1-7.465 2H4v2.05A3.5 3.5 0 0 1 9.965 17h5.07c.25-1.749 1.83-3.06 3.592-2.998L17.341 11ZM8 9H4v2h4zm11-2h-3v2h3z"></svg:path></svg:g>`,
 })
 export class MingcuteEbikeLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mingcuteEdgeLineIcon],svg[mingcute-edge-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M12 2c4.76 0 8.742 3.325 9.752 7.779c.36 1.585-.113 2.825-.827 3.688a5.03 5.03 0 0 1-2.09 1.476c-.965.341-2.05.327-2.912.176a5.6 5.6 0 0 1-1.213-.346c-.308-.132-.73-.354-.99-.726a1 1 0 0 1 .109-1.277c.485-.49.709-.995.742-1.447c.032-.44-.107-.936-.549-1.45c-.703-.813-1.887-.97-2.723-.374c-.804.577-1.188 1.457-1.104 2.454c.085 1.016.67 2.216 1.945 3.279C13.317 16.212 15.353 17 17 17a7 7 0 0 0 1.669-.2a1 1 0 0 1 1.004 1.613A9.98 9.98 0 0 1 12 22c-.77 0-1.52-.087-2.242-.252C5.315 20.73 2 16.753 2 12c0-.994.145-1.956.417-2.864C3.648 5.01 7.47 2 12 2M8.316 12.862A7.2 7.2 0 0 0 8 15c0 1.827.938 3.548 2.435 4.847a8.04 8.04 0 0 0 5.558-.913c-1.871-.238-3.847-1.094-5.133-2.166c-1.365-1.138-2.23-2.51-2.544-3.906M9.951 7.92a6 6 0 0 0-1.168.023c-1.475.17-3.007.873-4.532 2.06A8 8 0 0 0 4 12a7.98 7.98 0 0 0 2.574 5.88A7.6 7.6 0 0 1 6 15c0-3.298 1.717-5.976 3.553-6.894q.197-.1.398-.187ZM12 4a7.98 7.98 0 0 0-5.906 2.603a9.3 9.3 0 0 1 2.459-.648c2.067-.24 4.125.303 6.047 1.745c1.36 1.02 2.068 2.371 1.966 3.77a3.9 3.9 0 0 1-.503 1.638q.098.022.204.04c.651.114 1.363.1 1.899-.09a3.06 3.06 0 0 0 1.218-.865c.364-.44.625-1.057.418-1.972A8.004 8.004 0 0 0 12 4"></svg:path></svg:g>`,
-})
-export class MingcuteEdgeLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mingcuteEdit2LineIcon],svg[mingcute-edit-2-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M13.896 3.03a2 2 0 0 1 2.701-.117l.127.117l4.243 4.243a2 2 0 0 1 .117 2.7l-.117.128l-10.314 10.314a2 2 0 0 1-1.238.578L9.239 21H4.006a1.01 1.01 0 0 1-1.004-.9l-.006-.11v-5.233a2 2 0 0 1 .467-1.284l.12-.13L13.895 3.03ZM12.17 7.584l-7.174 7.174V19H9.24l7.174-7.174l-4.243-4.243Zm3.14-3.14L13.584 6.17l4.243 4.243l1.726-1.726z"></svg:path></svg:g>`,
-})
-export class MingcuteEdit2LineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

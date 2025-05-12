@@ -2,6 +2,652 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentLinkDismiss24FilledIcon],svg[fluent-link-dismiss-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 5a1 1 0 0 1 .117 1.993L9 7H7a3 3 0 0 0-.176 5.995L7 13h2a1 1 0 0 1 .117 1.993L9 15H7a5 5 0 0 1-.217-9.995L7 5zm8 0a5 5 0 0 1 4.43 7.322a6.5 6.5 0 0 0-1.76-.951a3 3 0 0 0-2.493-4.366L17 7h-2a1 1 0 0 1-.117-1.993L15 5zM7 9h10a1 1 0 0 1 .117 1.993L17 11H7a1 1 0 0 1-.117-1.993zm16 8.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-7.146-2.354a.5.5 0 0 0-.708.708l1.647 1.646l-1.647 1.646a.5.5 0 0 0 .708.708l1.646-1.647l1.646 1.647a.5.5 0 0 0 .708-.708L18.207 17.5l1.647-1.646a.5.5 0 0 0-.708-.708L17.5 16.793z"></svg:path>`,
+})
+export class FluentLinkDismiss24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkDismiss24RegularIcon],svg[fluent-link-dismiss-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.25 5a.75.75 0 0 1 .11 1.492l-.11.008H7a3.5 3.5 0 0 0-.206 6.994L7 13.5h2.25a.75.75 0 0 1 .11 1.492L9.25 15H7a5 5 0 0 1-.25-9.994L7 5zM17 5a5 5 0 0 1 4.43 7.322a6.5 6.5 0 0 0-1.294-.765a3.5 3.5 0 0 0-2.93-5.05L17 6.499h-2.25a.75.75 0 0 1-.11-1.492L14.75 5zM7 9.25h10a.75.75 0 0 1 .102 1.493L17 10.75H7a.75.75 0 0 1-.102-1.493zm16 8.25a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-7.146-2.354a.5.5 0 0 0-.708.708l1.647 1.646l-1.647 1.646a.5.5 0 0 0 .708.708l1.646-1.647l1.646 1.647a.5.5 0 0 0 .708-.708L18.207 17.5l1.647-1.646a.5.5 0 0 0-.708-.708L17.5 16.793z"></svg:path>`,
+})
+export class FluentLinkDismiss24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkEdit16FilledIcon],svg[fluent-link-edit-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.265 3h-.516l-.102.007A.75.75 0 0 0 9.749 4.5h.516l.153.005a2.22 2.22 0 0 1 1.637.899a2.55 2.55 0 0 1 1.513-.403A3.73 3.73 0 0 0 10.265 3m.668 3.443L9.877 7.5H5.75a.75.75 0 0 1-.101-1.493l.1-.007h4.5a.75.75 0 0 1 .684.444m2.261-.426c-.262.041-.515.15-.732.324a2 2 0 0 0-.126.113L9 9.79l-.951.952a2.8 2.8 0 0 0-.73 1.29l-.304 1.21a.61.61 0 0 0 .74.74l1.21-.303a2.8 2.8 0 0 0 1.29-.73l4.288-4.288a1.56 1.56 0 0 0-1.349-2.644M6.249 3h-.497l-.2.005a3.752 3.752 0 0 0 .2 7.498h.497l.102-.007a.75.75 0 0 0-.102-1.493h-.497l-.155-.005A2.252 2.252 0 0 1 5.752 4.5h.497l.102-.007A.75.75 0 0 0 6.249 3"></svg:path>`,
+})
+export class FluentLinkEdit16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkEdit16RegularIcon],svg[fluent-link-edit-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.499 3h-1l-.09.008a.5.5 0 0 0 .09.992h1l.164.005c.81.053 1.516.492 1.933 1.135a2.6 2.6 0 0 1 1.069-.133A3.5 3.5 0 0 0 10.499 3m.487 3.39l-.61.611L5.498 7a.5.5 0 0 1-.09-.992L5.5 6l5 .003a.5.5 0 0 1 .487.388m2.15-.363a1.55 1.55 0 0 0-.8.427l-3.28 3.28l-1.007 1.008a2.8 2.8 0 0 0-.73 1.29l-.304 1.21a.61.61 0 0 0 .74.74l1.21-.303a2.8 2.8 0 0 0 1.29-.73l4.288-4.288a1.56 1.56 0 0 0-1.407-2.634M6.499 3h-1l-.192.005A3.5 3.5 0 0 0 5.5 9.998h1l.09-.008A.5.5 0 0 0 6.5 9h-1l-.164-.006A2.5 2.5 0 0 1 5.5 4h1l.09-.008A.5.5 0 0 0 6.5 3"></svg:path>`,
+})
+export class FluentLinkEdit16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkEdit20FilledIcon],svg[fluent-link-edit-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.998 8a4 4 0 0 0-4-4h-2l-.1.007a.75.75 0 0 0 .1 1.493h2l.165.005A2.5 2.5 0 0 1 16.498 8v.023a2.86 2.86 0 0 1 1.448.624q.051-.316.052-.647M8.75 4.75A.75.75 0 0 0 8 4H6l-.2.005a4 4 0 0 0 .2 7.994h2l.102-.007A.75.75 0 0 0 8 10.5H6l-.164-.005A2.5 2.5 0 0 1 6 5.5h2l.101-.007a.75.75 0 0 0 .648-.743m5 2.5h-7.5l-.101.006A.75.75 0 0 0 6.25 8.75h7.499l.101-.006a.75.75 0 0 0-.101-1.493m-3.77 7.126l4.829-4.829a1.87 1.87 0 0 1 2.644 2.645l-4.829 4.828a2.2 2.2 0 0 1-1.02.578l-1.498.375a.89.89 0 0 1-1.078-1.079l.374-1.497c.097-.387.296-.74.578-1.021"></svg:path>`,
+})
+export class FluentLinkEdit20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkEdit20RegularIcon],svg[fluent-link-edit-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.5 4.5A.5.5 0 0 0 8 4H6l-.22.006A4 4 0 0 0 6 11.999h2l.09-.008a.5.5 0 0 0-.09-.992H6l-.198-.006A3 3 0 0 1 6 5h2l.09-.008A.5.5 0 0 0 8.5 4.5M17.997 8a4 4 0 0 0-4-4h-2l-.089.008a.5.5 0 0 0 .09.992h2l.197.006a3 3 0 0 1 2.8 3.126c.339.107.662.279.95.515q.051-.316.052-.647m-4-.5H6l-.09.008a.5.5 0 0 0 .09.991h7.999l.09-.008a.5.5 0 0 0-.09-.991m-4.02 6.876l4.83-4.829a1.87 1.87 0 0 1 2.644 2.645l-4.829 4.828a2.2 2.2 0 0 1-1.02.578l-1.498.375a.89.89 0 0 1-1.078-1.079l.374-1.497c.097-.387.296-.74.578-1.021"></svg:path>`,
+})
+export class FluentLinkEdit20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkEdit24FilledIcon],svg[fluent-link-edit-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 6a1 1 0 0 0-1-1H7l-.217.005A5 5 0 0 0 7 14.999h2l.116-.007A1 1 0 0 0 8.999 13H7l-.176-.005A3 3 0 0 1 7 7h2l.116-.007A1 1 0 0 0 9.999 6m11.998 4a5 5 0 0 0-5-5h-2l-.116.007A1 1 0 0 0 15 7h2l.176.005a3 3 0 0 1 2.823 2.994v.013c.696.06 1.377.34 1.927.843a5 5 0 0 0 .073-.856m-4.229.637q-.15.11-.289.239a1 1 0 0 1-.365.117l-.116.006H7a1 1 0 0 1-.116-1.993L7 9h9.999a1 1 0 0 1 .77 1.637m.33 1.032l-5.902 5.902a2.7 2.7 0 0 0-.707 1.247l-.457 1.83c-.2.797.522 1.518 1.318 1.319l1.83-.458a2.7 2.7 0 0 0 1.248-.706L21.33 14.9a2.285 2.285 0 0 0-3.233-3.232"></svg:path>`,
+})
+export class FluentLinkEdit24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkEdit24RegularIcon],svg[fluent-link-edit-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 5.75A.75.75 0 0 0 9.25 5H7l-.25.006A5 5 0 0 0 7 15h2.25l.11-.008a.75.75 0 0 0-.11-1.492H7l-.206-.006A3.5 3.5 0 0 1 7 6.5h2.25l.11-.008A.75.75 0 0 0 10 5.75M21.997 10a5 5 0 0 0-5-5h-2.25l-.11.008a.75.75 0 0 0 .11 1.492h2.25l.206.006a3.5 3.5 0 0 1 3.293 3.588c.518.126 1.01.38 1.428.76a5 5 0 0 0 .073-.855m-5-.75H7l-.102.006A.75.75 0 0 0 7 10.75h9.999l.101-.006A.75.75 0 0 0 17 9.25m1.1 2.419l-5.901 5.902a2.7 2.7 0 0 0-.707 1.247l-.457 1.83c-.2.797.522 1.518 1.318 1.319l1.83-.458a2.7 2.7 0 0 0 1.248-.706L21.33 14.9a2.285 2.285 0 0 0-3.233-3.232"></svg:path>`,
+})
+export class FluentLinkEdit24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkMultiple16FilledIcon],svg[fluent-link-multiple-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 6.5A3.5 3.5 0 0 1 4.5 3h4a3.5 3.5 0 0 1 3.469 3.031a3.5 3.5 0 0 1-.122 1.499A3.5 3.5 0 0 1 8.5 10h-.75a.75.75 0 0 1 0-1.5h.75a2 2 0 1 0 0-4h-4a2 2 0 0 0-1.262 3.552a4.5 4.5 0 0 0-.235 1.613A3.5 3.5 0 0 1 1 6.5m8 .25a.75.75 0 0 1-.75.75H7.5a2 2 0 1 0 0 4h4a2 2 0 0 0 1.263-3.551a4.5 4.5 0 0 0 .235-1.613A3.5 3.5 0 0 1 11.5 13h-4a3.5 3.5 0 1 1 0-7h.75a.75.75 0 0 1 .75.75"></svg:path>`,
+})
+export class FluentLinkMultiple16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkMultiple16RegularIcon],svg[fluent-link-multiple-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 6.5A3.5 3.5 0 0 0 8.5 3h-4l-.192.005a3.5 3.5 0 0 0-1.305 6.66a4.6 4.6 0 0 1 .093-1.096A2.5 2.5 0 0 1 4.5 4h4l.164.006A2.5 2.5 0 0 1 8.5 9l-1.002.005l-.09.008a.5.5 0 0 0 .094.992l1-.005l.192-.005A3.5 3.5 0 0 0 12 6.5m2 3c0-.86-.435-1.62-1.096-2.07a4.5 4.5 0 0 0 .093-1.095a3.5 3.5 0 0 1-1.303 6.66l-.192.005l-1 .005l-.07-.005H7.5a3.5 3.5 0 0 1-.192-6.995L7.5 6h1a.5.5 0 0 1 .09.992L8.5 7h-1a2.5 2.5 0 0 0-.164 4.995L7.5 12H11v.002l.5-.002A2.5 2.5 0 0 0 14 9.5"></svg:path>`,
+})
+export class FluentLinkMultiple16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkMultiple20FilledIcon],svg[fluent-link-multiple-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 8a4 4 0 0 1 4-4h6a4 4 0 0 1 0 8H9.75a.75.75 0 0 1 0-1.5H11a2.5 2.5 0 0 0 0-5H5a2.5 2.5 0 0 0-.735 4.89c-.16.468-.25.966-.263 1.484A4 4 0 0 1 1 8m14.998.126a5 5 0 0 1-.263 1.484A2.501 2.501 0 0 1 15 14.5H9a2.5 2.5 0 0 1 0-5h1.25a.75.75 0 0 0 0-1.5H9a4 4 0 1 0 0 8h6a4 4 0 0 0 .998-7.874"></svg:path>`,
+})
+export class FluentLinkMultiple20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkMultiple20RegularIcon],svg[fluent-link-multiple-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 8a4 4 0 0 1 4-4h6a4 4 0 0 1 0 8H9.5a.5.5 0 0 1 0-1H11a3 3 0 1 0 0-6H5a3 3 0 0 0-.872 5.871a5 5 0 0 0-.126 1.003A4 4 0 0 1 1 8m17 4a3 3 0 0 0-2.128-2.871q.113-.487.127-1.003A4.002 4.002 0 0 1 15 16H9a4 4 0 0 1 0-8h1.5a.5.5 0 0 1 0 1H9a3 3 0 1 0 0 6h6a3 3 0 0 0 3-3"></svg:path>`,
+})
+export class FluentLinkMultiple20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkMultiple24FilledIcon],svg[fluent-link-multiple-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.5 4a5.5 5.5 0 0 0-1.99 10.63c.04-.7.19-1.37.433-1.994A3.5 3.5 0 0 1 6.5 6h6a3.5 3.5 0 1 1 0 7H12a1 1 0 1 0 0 2h.5a5.5 5.5 0 1 0 0-11zm12.613 8.213A3.001 3.001 0 0 1 18 18h-7a3 3 0 1 1 0-6h1a1 1 0 0 0 0-2h-1a5 5 0 0 0 0 10h7a5 5 0 0 0 1.496-9.772a6.5 6.5 0 0 1-.383 1.985"></svg:path>`,
+})
+export class FluentLinkMultiple24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkMultiple24RegularIcon],svg[fluent-link-multiple-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.25 4a5.25 5.25 0 0 0-1.703 10.218c.06-.51.181-1.002.353-1.468A3.751 3.751 0 0 1 6.25 5.5h6.5a3.75 3.75 0 1 1 0 7.5h-1a.75.75 0 0 0 0 1.5h1a5.25 5.25 0 1 0 0-10.5zm13.14 6.196c-.092.5-.243.98-.443 1.434A3.502 3.502 0 0 1 18 18.5h-7a3.5 3.5 0 1 1 0-7h1.25a.75.75 0 0 0 0-1.5H11a5 5 0 0 0 0 10h7a5 5 0 0 0 1.39-9.804"></svg:path>`,
+})
+export class FluentLinkMultiple24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkPerson16FilledIcon],svg[fluent-link-person-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.75 3h.516a3.742 3.742 0 0 1 3.696 4.286a3 3 0 0 0-1.544-1.143a2.24 2.24 0 0 0-1.999-1.638l-.153-.005H9.75a.75.75 0 0 1-.102-1.493zm-.849 4.5a3 3 0 0 1 1.756-1.38a.75.75 0 0 0-.407-.12h-4.5l-.102.007A.75.75 0 0 0 5.75 7.5zM5.752 3h.498a.75.75 0 0 1 .102 1.493L6.25 4.5h-.498A2.252 2.252 0 0 0 5.598 9l.154.005h.498a.75.75 0 0 1 .102 1.493l-.102.007h-.498a3.752 3.752 0 0 1-.199-7.5zM13.5 9a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 4.5c0 1.245-1 2.5-3.5 2.5S8 14.75 8 13.5A1.5 1.5 0 0 1 9.5 12h4a1.5 1.5 0 0 1 1.5 1.5"></svg:path>`,
+})
+export class FluentLinkPerson16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkPerson16RegularIcon],svg[fluent-link-person-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.5 3h1a3.5 3.5 0 0 1 3.424 4.231a3 3 0 0 0-.926-.83a2.5 2.5 0 0 0-2.334-2.396L10.5 4h-1a.5.5 0 0 1-.09-.992zm-.238 4.002a3 3 0 0 1 1.517-.915a.5.5 0 0 0-.279-.085L5.5 6l-.09.008A.5.5 0 0 0 5.5 7zM5.5 3h1a.5.5 0 0 1 .09.992L6.5 4h-1a2.5 2.5 0 0 0-.164 4.995L5.5 9h1a.5.5 0 0 1 .09.992L6.5 10h-1a3.5 3.5 0 0 1-.192-6.995zm8 6a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 4.5c0 1.245-1 2.5-3.5 2.5S8 14.75 8 13.5A1.5 1.5 0 0 1 9.5 12h4a1.5 1.5 0 0 1 1.5 1.5"></svg:path>`,
+})
+export class FluentLinkPerson16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkPerson20FilledIcon],svg[fluent-link-person-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18 8a4 4 0 0 0-4-4h-2l-.102.007A.75.75 0 0 0 12 5.5h2l.164.005a2.5 2.5 0 0 1 1.886 3.926c.44.265.805.64 1.059 1.086A3.98 3.98 0 0 0 18 8M8.75 4.75A.75.75 0 0 0 8 4H6l-.2.005A4 4 0 0 0 6 12h2l.102-.007A.75.75 0 0 0 8 10.5H6l-.164-.005A2.5 2.5 0 0 1 6 5.5h2l.102-.007a.75.75 0 0 0 .648-.743m5 2.5h-7.5l-.102.007A.75.75 0 0 0 6.25 8.75h7.5l.102-.007a.75.75 0 0 0-.102-1.493M16.5 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 4.5c0 1.245-1 2.5-3.5 2.5S11 17.75 11 16.5a1.5 1.5 0 0 1 1.5-1.5h4a1.5 1.5 0 0 1 1.5 1.5"></svg:path>`,
+})
+export class FluentLinkPerson20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkPerson20RegularIcon],svg[fluent-link-person-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.5 4.5A.5.5 0 0 0 8 4H6l-.22.006A4 4 0 0 0 6 12h2l.09-.008A.5.5 0 0 0 8 11H6l-.197-.006A3 3 0 0 1 6 5h2l.09-.008A.5.5 0 0 0 8.5 4.5M18 8a4 4 0 0 0-4-4h-2l-.09.008A.5.5 0 0 0 12 5h2l.197.006a3 3 0 0 1 2.258 4.719c.26.224.482.492.654.792A3.98 3.98 0 0 0 18 8m-4-.5H6l-.09.008A.5.5 0 0 0 6 8.5h8l.09-.008A.5.5 0 0 0 14 7.5m2.5 4.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 4.5c0 1.245-1 2.5-3.5 2.5S11 17.75 11 16.5a1.5 1.5 0 0 1 1.5-1.5h4a1.5 1.5 0 0 1 1.5 1.5"></svg:path>`,
+})
+export class FluentLinkPerson20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkPerson24FilledIcon],svg[fluent-link-person-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 6a1 1 0 0 0-1-1H7l-.217.005A5 5 0 0 0 7 15h2l.117-.007A1 1 0 0 0 9 13H7l-.176-.005A3 3 0 0 1 7 7h2l.117-.007A1 1 0 0 0 10 6m12 4a5 5 0 0 0-5-5h-2l-.117.007A1 1 0 0 0 15 7h2l.176.005a3 3 0 0 1 2.338 4.632a3.5 3.5 0 0 1 1.265 1.637A4.98 4.98 0 0 0 22 10m-5-1H7l-.117.007A1 1 0 0 0 7 11h10l.117-.007A1 1 0 0 0 17 9m3 5.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m2 5.375C22 21.431 20.714 23 17.5 23S13 21.437 13 19.875v-.103c0-.98.794-1.772 1.773-1.772h5.454c.98 0 1.773.793 1.773 1.772z"></svg:path>`,
+})
+export class FluentLinkPerson24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkPerson24RegularIcon],svg[fluent-link-person-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 5.75A.75.75 0 0 0 9.25 5H7l-.25.006A5 5 0 0 0 7 15h2.25l.11-.008a.75.75 0 0 0-.11-1.492H7l-.206-.006A3.5 3.5 0 0 1 7 6.5h2.25l.11-.008A.75.75 0 0 0 10 5.75M22 10a5 5 0 0 0-5-5h-2.25l-.11.008a.75.75 0 0 0 .11 1.492H17l.206.006a3.5 3.5 0 0 1 2.697 5.45c.385.363.687.813.876 1.318A4.98 4.98 0 0 0 22 10m-5-.75H7l-.102.007A.75.75 0 0 0 7 10.75h10l.102-.007A.75.75 0 0 0 17 9.25m3 5.25a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m2 5.375C22 21.431 20.714 23 17.5 23S13 21.437 13 19.875v-.103c0-.98.794-1.772 1.773-1.772h5.454c.98 0 1.773.793 1.773 1.772z"></svg:path>`,
+})
+export class FluentLinkPerson24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkPerson32FilledIcon],svg[fluent-link-person-32-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.25 6a7.25 7.25 0 0 0 0 14.5h3.5a1.25 1.25 0 1 0 0-2.5h-3.5a4.75 4.75 0 1 1 0-9.5h3.5a1.25 1.25 0 1 0 0-2.5zm13.5 0a7.25 7.25 0 0 1 5.974 11.359a5 5 0 0 0-1.597-2.26A4.75 4.75 0 0 0 22.75 8.5h-3.5a1.25 1.25 0 1 1 0-2.501zm.449 8.064a5 5 0 0 0-1.381.436H9.75a1.25 1.25 0 1 1 0-2.5h12.5a1.25 1.25 0 0 1 .949 2.064M27.5 19a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0m2.5 7.438c0 2.023-1.714 4.062-6 4.062s-6-2.031-6-4.062C18 25.102 19.082 24 20.417 24h7.166C28.918 24 30 25.102 30 26.438"></svg:path>`,
+})
+export class FluentLinkPerson32FilledIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkPerson32RegularIcon],svg[fluent-link-person-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9 6a7 7 0 0 0 0 14h4a1 1 0 1 0 0-2H9A5 5 0 0 1 9 8h4a1 1 0 1 0 0-2zm14 0a7 7 0 0 1 5.643 11.142a5 5 0 0 0-1.228-1.794A5 5 0 0 0 23 8h-4a1 1 0 1 1 0-2zM8.5 13a1 1 0 0 1 1-1h13a1 1 0 1 1 0 2h-13a1 1 0 0 1-1-1m19 6a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0m2.5 7.438c0 2.023-1.714 4.062-6 4.062s-6-2.031-6-4.062C18 25.102 19.082 24 20.417 24h7.166C28.918 24 30 25.102 30 26.438"></svg:path>`,
+})
+export class FluentLinkPerson32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkPerson48FilledIcon],svg[fluent-link-person-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M43.996 19.464C43.844 13.659 39.091 9 33.25 9h-4.5l-.143.006a1.75 1.75 0 0 0 .143 3.494h4.5l.24.004a7.25 7.25 0 0 1 7.01 7.246v.5l-.004.24a7.2 7.2 0 0 1-.886 3.243a7 7 0 0 1 2.075 3.183A10.7 10.7 0 0 0 44 20.25v-.5zM21 10.75A1.75 1.75 0 0 0 19.25 9h-4.5l-.286.004C8.659 9.156 4 13.909 4 19.75v.5l.004.286C4.156 26.341 8.909 31 14.75 31h4.5l.143-.006a1.75 1.75 0 0 0-.143-3.494h-4.5l-.24-.004A7.25 7.25 0 0 1 7.5 20.25v-.5l.004-.24a7.25 7.25 0 0 1 7.246-7.01h4.5l.143-.006A1.75 1.75 0 0 0 21 10.75m13 7.5H14l-.143.006A1.75 1.75 0 0 0 14 21.75h20l.144-.006A1.75 1.75 0 0 0 34 18.25M40 29a5 5 0 1 1-10 0a5 5 0 0 1 10 0m4 10.5c0 3.5-3.15 6.5-9 6.5s-9-3-9-6.5v-.502A3 3 0 0 1 29 36h12c1.657 0 3 1.34 3 2.998z"></svg:path>`,
+})
+export class FluentLinkPerson48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkPerson48RegularIcon],svg[fluent-link-person-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M44 20c0-5.523-4.477-10-10-10h-5.75l-.128.007a1.25 1.25 0 0 0 .128 2.493H34l.243.004a7.5 7.5 0 0 1 5.92 11.77a7 7 0 0 1 1.395 2.274A9.96 9.96 0 0 0 44 20m-23-8.75c0-.69-.56-1.25-1.25-1.25H14l-.28.004C8.327 10.152 4 14.57 4 20c0 5.523 4.477 10 10 10h5.75l.128-.006a1.25 1.25 0 0 0-.128-2.494H14l-.243-.004A7.5 7.5 0 0 1 14 12.5h5.75l.128-.007A1.25 1.25 0 0 0 21 11.25m14 7.5H13l-.128.006A1.25 1.25 0 0 0 13 21.25h22l.128-.006A1.25 1.25 0 0 0 35 18.75M40 29a5 5 0 1 1-10 0a5 5 0 0 1 10 0m4 10.5c0 3.5-3.15 6.5-9 6.5s-9-3-9-6.5v-.502A3 3 0 0 1 29 36h12c1.657 0 3 1.34 3 2.998z"></svg:path>`,
+})
+export class FluentLinkPerson48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkRemove20FilledIcon],svg[fluent-link-remove-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M14.5 10a4.5 4.5 0 1 1 0 9a4.5 4.5 0 0 1 0-9zm-1.768 2.732a.5.5 0 0 0 0 .707l1.06 1.061l-1.06 1.06a.5.5 0 0 0 .707.708l1.061-1.06l1.06 1.06a.5.5 0 0 0 .708-.707l-1.06-1.061l1.06-1.06a.5.5 0 0 0-.707-.708l-1.061 1.06l-1.06-1.06a.5.5 0 0 0-.708 0zM8 4a.75.75 0 0 1 .102 1.493L8 5.5H6a2.5 2.5 0 0 0-.164 4.995L6 10.5h2a.75.75 0 0 1 .102 1.493L8 12H6a4 4 0 0 1-.2-7.995L6 4h2zm6 0a4 4 0 0 1 3.52 5.902a5.479 5.479 0 0 0-1.358-.646a2.5 2.5 0 0 0-1.998-3.75L14 5.5h-2a.75.75 0 0 1-.102-1.493L12 4h2zm-.25 3.25a.75.75 0 0 1 .102 1.493l-.102.007h-7.5a.75.75 0 0 1-.102-1.493l.102-.007h7.5z" fill="currentColor" fill-rule="nonzero"></svg:path>`,
+})
+export class FluentLinkRemove20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkRemove20RegularIcon],svg[fluent-link-remove-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M14.5 10a4.5 4.5 0 1 1 0 9a4.5 4.5 0 0 1 0-9zm-1.768 2.732a.5.5 0 0 0 0 .707l1.06 1.061l-1.06 1.06a.5.5 0 0 0 .707.708l1.061-1.06l1.06 1.06a.5.5 0 0 0 .708-.707l-1.06-1.061l1.06-1.06a.5.5 0 0 0-.707-.708l-1.061 1.06l-1.06-1.06a.5.5 0 0 0-.708 0zM8 4a.5.5 0 0 1 .09.992L8 5H6a3 3 0 0 0-.197 5.994L6 11h2a.5.5 0 0 1 .09.992L8 12H6a4 4 0 0 1-.22-7.994L6 4h2zm6 0a4 4 0 0 1 3.52 5.902a5.49 5.49 0 0 0-.883-.471a3 3 0 0 0-2.44-4.424L14 5h-2a.5.5 0 0 1-.09-.992L12 4h2zm0 3.5a.5.5 0 0 1 .09.992L14 8.5H6a.5.5 0 0 1-.09-.992L6 7.5h8z" fill="currentColor" fill-rule="nonzero"></svg:path>`,
+})
+export class FluentLinkRemove20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkSettings24FilledIcon],svg[fluent-link-settings-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10 6a1 1 0 0 0-1-1H7l-.217.005A5 5 0 0 0 7 15h2l.117-.007A1 1 0 0 0 9 13H7l-.176-.005A3 3 0 0 1 7 7h2l.117-.007A1 1 0 0 0 10 6m12 4a5 5 0 0 0-5-5h-2l-.117.007A1 1 0 0 0 15 7h2l.176.005a3 3 0 0 1 2.493 4.366a6.5 6.5 0 0 1 1.76.95A5 5 0 0 0 22 10m-5-1H7l-.117.007A1 1 0 0 0 7 11h10l.117-.007A1 1 0 0 0 17 9m-4.163 7.472a2 2 0 0 0 1.441-2.496l-.198-.687a5.3 5.3 0 0 1 1.483-.912l.499.525a2 2 0 0 0 2.899 0l.493-.518a5.3 5.3 0 0 1 1.484.921l-.186.631a2 2 0 0 0 1.45 2.51l.539.13a5.7 5.7 0 0 1 .006 1.808l-.584.144a2 2 0 0 0-1.44 2.496l.197.686a5.3 5.3 0 0 1-1.483.913l-.498-.524a2 2 0 0 0-2.9-.001l-.493.519a5.3 5.3 0 0 1-1.484-.922l.187-.631a2 2 0 0 0-1.45-2.51l-.54-.13a5.7 5.7 0 0 1-.006-1.808zM18.95 17.5c0-.828-.65-1.5-1.45-1.5s-1.45.672-1.45 1.5s.65 1.5 1.45 1.5s1.45-.672 1.45-1.5"></svg:path>`,
+})
+export class FluentLinkSettings24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkSettings24RegularIcon],svg[fluent-link-settings-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.25 5a.75.75 0 0 1 .11 1.492l-.11.008H7a3.5 3.5 0 0 0-.206 6.994L7 13.5h2.25a.75.75 0 0 1 .11 1.492L9.25 15H7a5 5 0 0 1-.25-9.994L7 5zM17 5a5 5 0 0 1 4.43 7.322a6.5 6.5 0 0 0-1.294-.765a3.5 3.5 0 0 0-2.93-5.05L17 6.499h-2.25a.75.75 0 0 1-.11-1.492L14.75 5zM7 9.25h10a.75.75 0 0 1 .102 1.493L17 10.75H7a.75.75 0 0 1-.102-1.493zm7.278 4.726a2 2 0 0 1-1.441 2.496l-.584.144a5.7 5.7 0 0 0 .006 1.808l.54.13a2 2 0 0 1 1.45 2.51l-.187.631c.44.386.94.699 1.484.922l.494-.519a2 2 0 0 1 2.899 0l.498.525a5.3 5.3 0 0 0 1.483-.913l-.198-.686a2 2 0 0 1 1.441-2.496l.584-.144a5.7 5.7 0 0 0-.006-1.808l-.54-.13a2 2 0 0 1-1.45-2.51l.187-.63a5.3 5.3 0 0 0-1.484-.922l-.493.518a2 2 0 0 1-2.9 0l-.498-.525a5.3 5.3 0 0 0-1.483.912zM17.5 19c-.8 0-1.45-.672-1.45-1.5S16.7 16 17.5 16s1.45.672 1.45 1.5S18.3 19 17.5 19"></svg:path>`,
+})
+export class FluentLinkSettings24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkSquare12FilledIcon],svg[fluent-link-square-12-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M.998 3.248a2.25 2.25 0 0 1 2.25-2.25h2.504A2.25 2.25 0 0 1 8 3.161v2.677a2.25 2.25 0 0 1-1.5 2.036l.002-4.626a.75.75 0 0 0-.75-.75H3.248a.75.75 0 0 0-.75.75v2.504c0 .327.21.605.502.708v1.528A2.25 2.25 0 0 1 .998 5.752zM4 8.75A2.25 2.25 0 0 0 6.25 11h2.5A2.25 2.25 0 0 0 11 8.75v-2.5a2.25 2.25 0 0 0-2-2.236v1.529c.291.103.5.38.5.707v2.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1-.75-.75V4.128A2.25 2.25 0 0 0 4 6.25z"></svg:path>`,
+})
+export class FluentLinkSquare12FilledIcon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkSquare12RegularIcon],svg[fluent-link-square-12-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 3a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2V7a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1v1a2 2 0 0 1-2-2zm3 6a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2v1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1V4a2 2 0 0 0-2 2z"></svg:path>`,
+})
+export class FluentLinkSquare12RegularIcon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkSquare16FilledIcon],svg[fluent-link-square-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 4.25A2.25 2.25 0 0 1 4.25 2h3.5A2.25 2.25 0 0 1 10 4.25v3.5a2.25 2.25 0 0 1-1.5 2.122V4.25a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75v3.5c0 .414.336.75.75.75H5V10h-.75A2.25 2.25 0 0 1 2 7.75zm4 7.5A2.25 2.25 0 0 0 8.25 14h3.5A2.25 2.25 0 0 0 14 11.75v-3.5A2.25 2.25 0 0 0 11.75 6H11v1.5h.75a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-.75.75h-3.5a.75.75 0 0 1-.75-.75V6.128A2.25 2.25 0 0 0 6 8.25z"></svg:path>`,
+})
+export class FluentLinkSquare16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkSquare16RegularIcon],svg[fluent-link-square-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1V9H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1v1a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm7 4v1h1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1V6a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2z"></svg:path>`,
+})
+export class FluentLinkSquare16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkSquare20FilledIcon],svg[fluent-link-square-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.75 3.5c-.69 0-1.25.56-1.25 1.25v5.5c0 .69.56 1.25 1.25 1.25H6V13H4.75A2.75 2.75 0 0 1 2 10.25v-5.5A2.75 2.75 0 0 1 4.75 2h5.5A2.75 2.75 0 0 1 13 4.75v5.5A2.75 2.75 0 0 1 10.25 13H9.5v-1.5h.75c.69 0 1.25-.56 1.25-1.25v-5.5c0-.69-.56-1.25-1.25-1.25zM7 9.75A2.75 2.75 0 0 1 9.75 7h1v1.5h-1c-.69 0-1.25.56-1.25 1.25v5.5c0 .69.56 1.25 1.25 1.25h5.5c.69 0 1.25-.56 1.25-1.25v-5.5c0-.69-.56-1.25-1.25-1.25h-1.5V7h1.5A2.75 2.75 0 0 1 18 9.75v5.5A2.75 2.75 0 0 1 15.25 18h-5.5A2.75 2.75 0 0 1 7 15.25z"></svg:path>`,
+})
+export class FluentLinkSquare20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkSquare20RegularIcon],svg[fluent-link-square-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.5 3A1.5 1.5 0 0 0 3 4.5v6A1.5 1.5 0 0 0 4.5 12H6v1H4.5A2.5 2.5 0 0 1 2 10.5v-6A2.5 2.5 0 0 1 4.5 2h6A2.5 2.5 0 0 1 13 4.5v6a2.5 2.5 0 0 1-2.5 2.5H9v-1h1.5a1.5 1.5 0 0 0 1.5-1.5v-6A1.5 1.5 0 0 0 10.5 3zm5 4H11v1H9.5A1.5 1.5 0 0 0 8 9.5v6A1.5 1.5 0 0 0 9.5 17h6a1.5 1.5 0 0 0 1.5-1.5v-6A1.5 1.5 0 0 0 15.5 8H14V7h1.5A2.5 2.5 0 0 1 18 9.5v6a2.5 2.5 0 0 1-2.5 2.5h-6A2.5 2.5 0 0 1 7 15.5v-6A2.5 2.5 0 0 1 9.5 7"></svg:path>`,
+})
+export class FluentLinkSquare20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkSquare24FilledIcon],svg[fluent-link-square-24-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.502 3.003a3.5 3.5 0 0 0-3.5 3.5v6a3.5 3.5 0 0 0 3.5 3.5H7v-2h-.497a1.5 1.5 0 0 1-1.5-1.5v-6a1.5 1.5 0 0 1 1.5-1.5h6a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-1.506v2h1.506a3.5 3.5 0 0 0 3.5-3.5v-6a3.5 3.5 0 0 0-3.5-3.5zM10 11.5a1.5 1.5 0 0 1 1.5-1.5h1.499V8H11.5A3.5 3.5 0 0 0 8 11.5v6a3.5 3.5 0 0 0 3.5 3.5h6a3.5 3.5 0 0 0 3.5-3.5v-6A3.5 3.5 0 0 0 17.5 8h-.495v2h.495a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5z"></svg:path>`,
+})
+export class FluentLinkSquare24FilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkSquare24RegularIcon],svg[fluent-link-square-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.25 3A3.25 3.25 0 0 0 3 6.25v6a3.25 3.25 0 0 0 3.25 3.25H7.5V14H6.25a1.75 1.75 0 0 1-1.75-1.75v-6c0-.966.784-1.75 1.75-1.75h6c.966 0 1.75.784 1.75 1.75v6A1.75 1.75 0 0 1 12.25 14H11v1.5h1.25a3.25 3.25 0 0 0 3.25-3.25v-6A3.25 3.25 0 0 0 12.25 3zM10 11.75c0-.966.784-1.75 1.75-1.75h1.248V8.5H11.75a3.25 3.25 0 0 0-3.25 3.25v6A3.25 3.25 0 0 0 11.75 21h6A3.25 3.25 0 0 0 21 17.75v-6a3.25 3.25 0 0 0-3.25-3.25H16.5V10h1.25c.966 0 1.75.784 1.75 1.75v6a1.75 1.75 0 0 1-1.75 1.75h-6A1.75 1.75 0 0 1 10 17.75z"></svg:path>`,
+})
+export class FluentLinkSquare24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkToolbox20FilledIcon],svg[fluent-link-toolbox-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.75 4.75A.75.75 0 0 0 8 4H6l-.2.005A4 4 0 0 0 6 12h2l.102-.007A.75.75 0 0 0 8 10.5H6l-.164-.005A2.5 2.5 0 0 1 6 5.5h2l.102-.007a.75.75 0 0 0 .648-.743M18 8a4 4 0 0 0-4-4h-2l-.102.007A.75.75 0 0 0 12 5.5h2l.164.005a2.5 2.5 0 0 1 2.076 3.606c.498.154.929.46 1.24.863C17.811 9.39 18 8.718 18 8M6.25 7.25h7.5a.75.75 0 0 1 .102 1.493l-.102.007h-7.5a.75.75 0 0 1-.102-1.493zM12 12v-.5a1.5 1.5 0 0 1 1.5-1.5h2a1.5 1.5 0 0 1 1.5 1.5v.5h.5a1.5 1.5 0 0 1 1.5 1.5V15h-2v-.5a.5.5 0 0 0-1 0v.5h-3v-.5a.5.5 0 0 0-1 0v.5h-2v-1.5a1.5 1.5 0 0 1 1.5-1.5zm1-.5v.5h3v-.5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5m4 5V16h2v1.5a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5V16h2v.5a.5.5 0 0 0 1 0V16h3v.5a.5.5 0 0 0 1 0"></svg:path>`,
+})
+export class FluentLinkToolbox20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentLinkToolbox20RegularIcon],svg[fluent-link-toolbox-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 4a.5.5 0 0 1 .09.992L8 5H6a3 3 0 0 0-.197 5.994L6 11h2a.5.5 0 0 1 .09.992L8 12H6a4 4 0 0 1-.22-7.994L6 4zm6 0a4 4 0 0 1 3.48 5.974c-.21-.273-.475-.5-.779-.667a3 3 0 0 0-2.504-4.3L14 5h-2a.5.5 0 0 1-.09-.992L12 4zM6 7.5h8a.5.5 0 0 1 .09.992L14 8.5H6a.5.5 0 0 1-.09-.992zm6 4.5v-.5a1.5 1.5 0 0 1 1.5-1.5h2a1.5 1.5 0 0 1 1.5 1.5v.5h.5a1.5 1.5 0 0 1 1.5 1.5V15h-2v-.5a.5.5 0 0 0-1 0v.5h-3v-.5a.5.5 0 0 0-1 0v.5h-2v-1.5a1.5 1.5 0 0 1 1.5-1.5zm1-.5v.5h3v-.5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5m4 5V16h2v1.5a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5V16h2v.5a.5.5 0 0 0 1 0V16h3v.5a.5.5 0 0 0 1 0"></svg:path>`,
+})
+export class FluentLinkToolbox20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentList16FilledIcon],svg[fluent-list-16-filled-icon]',
   host: {
     role: 'img',
@@ -7850,652 +8496,6 @@ export class FluentMailList24FilledIcon {
 })
 export class FluentMailList24RegularIcon {
   readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailList28FilledIcon],svg[fluent-mail-list-28-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15.083 6.283A1.75 1.75 0 0 1 15.168 5H6.25l-.184.005A3.25 3.25 0 0 0 3 8.25v.184l11 5.72l7.028-3.654H16.75a1.75 1.75 0 0 1-.902-3.25a1.76 1.76 0 0 1-.765-.967m9.196 4.217l-9.933 5.165a.75.75 0 0 1-.692 0L3 10.124v9.626l.005.184A3.25 3.25 0 0 0 6.25 23h15.5l.185-.005A3.25 3.25 0 0 0 25 19.75V10.5zM16 2.75a.75.75 0 0 1 .75-.75h8.5a.75.75 0 1 1 0 1.5h-8.5a.75.75 0 0 1-.75-.75M16.75 5a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5zM16 8.75a.75.75 0 0 1 .75-.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1-.75-.75"></svg:path>`,
-})
-export class FluentMailList28FilledIcon {
-  readonly viewBox = input("0 0 28 28")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailList28RegularIcon],svg[fluent-mail-list-28-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15.083 6.283A1.75 1.75 0 0 1 15.168 5H6.25l-.184.005A3.25 3.25 0 0 0 3 8.25v11.5l.005.184A3.25 3.25 0 0 0 6.25 23h15.5l.184-.005A3.25 3.25 0 0 0 25 19.75V10.5h-3.973L14 14.155L4.5 9.214V8.25l.006-.144A1.75 1.75 0 0 1 6.25 6.5h8.919a2 2 0 0 1-.086-.217m-.737 9.382l9.154-4.76v8.845l-.006.143A1.75 1.75 0 0 1 21.75 21.5H6.25l-.144-.006A1.75 1.75 0 0 1 4.5 19.75v-8.845l9.154 4.76l.111.047c.19.063.4.047.581-.047M16 2.75a.75.75 0 0 1 .75-.75h8.5a.75.75 0 1 1 0 1.5h-8.5a.75.75 0 0 1-.75-.75M16.75 5a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5zM16 8.75a.75.75 0 0 1 .75-.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1-.75-.75"></svg:path>`,
-})
-export class FluentMailList28RegularIcon {
-  readonly viewBox = input("0 0 28 28")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailList32LightIcon],svg[fluent-mail-list-32-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M17 2a1 1 0 1 0 0 2h13a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h13a1 1 0 1 0 0-2zm-1 5a1 1 0 0 1 1-1h13a1 1 0 1 1 0 2H17a1 1 0 0 1-1-1M6.5 5h9a2.5 2.5 0 0 0-.792 1H6.5A3.5 3.5 0 0 0 3 9.5v.706l13 7.222l7.07-3.928h2.06l-8.887 4.937a.5.5 0 0 1-.486 0L3 11.35V22.5A3.5 3.5 0 0 0 6.5 26h19a3.5 3.5 0 0 0 3.5-3.5v-9h1v9a4.5 4.5 0 0 1-4.5 4.5h-19A4.5 4.5 0 0 1 2 22.5v-13A4.5 4.5 0 0 1 6.5 5"></svg:path>`,
-})
-export class FluentMailList32LightIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMoveToFocussed24FilledIcon],svg[fluent-mail-move-to-focussed-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M10.499 4a6.453 6.453 0 0 0-.423 1.5H6.25A1.75 1.75 0 0 0 4.5 7.25V14H9a.75.75 0 0 1 .743.648l.007.102a2.25 2.25 0 1 0 4.5 0A.75.75 0 0 1 15 14h4.5l.001-1.733a6.518 6.518 0 0 0 1.5-1.077L21 18.75A3.25 3.25 0 0 1 17.75 22H6.25A3.25 3.25 0 0 1 3 18.75V7.25A3.25 3.25 0 0 1 6.25 4h4.249zM16.5 1a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11zm.216 2.589l-.07.057l-.057.07a.5.5 0 0 0 0 .568l.057.07L18.292 6H13l-.09.008a.5.5 0 0 0-.402.402l-.008.09l.008.09a.5.5 0 0 0 .402.402L13 7h5.292l-1.646 1.646l-.057.07a.5.5 0 0 0 .695.695l.07-.057l2.541-2.548l.033-.048l.034-.067l.021-.063l.015-.082L20 6.5l-.003-.053l-.014-.075l-.03-.083l-.042-.074l-.045-.056l-2.512-2.513l-.07-.057a.5.5 0 0 0-.568 0z" fill="currentColor" fill-rule="nonzero"></svg:path>`,
-})
-export class FluentMailMoveToFocussed24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMoveToFocussed24RegularIcon],svg[fluent-mail-move-to-focussed-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M10.499 4a6.453 6.453 0 0 0-.422 1.5H6.25a1.75 1.75 0 0 0-1.744 1.606L4.5 7.25V14H9a.75.75 0 0 1 .743.648l.007.102a2.25 2.25 0 0 0 4.495.154l.005-.154a.75.75 0 0 1 .648-.743L15 14h4.5l.001-1.733a6.518 6.518 0 0 0 1.5-1.077L21 18.75a3.25 3.25 0 0 1-3.066 3.245L17.75 22H6.25a3.25 3.25 0 0 1-3.245-3.066L3 18.75V7.25a3.25 3.25 0 0 1 3.066-3.245L6.25 4h4.249zM19.5 15.5h-3.825a3.752 3.752 0 0 1-3.475 2.995l-.2.005a3.751 3.751 0 0 1-3.675-3H4.5v3.25a1.75 1.75 0 0 0 1.606 1.744l.144.006h11.5a1.75 1.75 0 0 0 1.744-1.606l.006-.144V15.5zM16.5 1a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11zm.216 2.589l-.07.057l-.057.07a.5.5 0 0 0 0 .568l.057.07L18.292 6H13l-.09.008a.5.5 0 0 0-.402.402l-.008.09l.008.09a.5.5 0 0 0 .402.402L13 7h5.292l-1.646 1.646l-.057.07a.5.5 0 0 0 .695.695l.07-.057l2.541-2.548l.033-.048l.034-.067l.021-.063l.015-.082L20 6.5l-.003-.053l-.014-.075l-.03-.083l-.042-.074l-.045-.056l-2.512-2.513l-.07-.057a.5.5 0 0 0-.568 0z" fill="currentColor" fill-rule="nonzero"></svg:path>`,
-})
-export class FluentMailMoveToFocussed24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMultiple16FilledIcon],svg[fluent-mail-multiple-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v.201L7 7.432l-6-3.23zm6.237 4.44L13 5.337V10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5.337L6.763 8.44a.5.5 0 0 0 .474 0M5 14a2 2 0 0 1-1.732-1H11a3 3 0 0 0 3-3V4.268A2 2 0 0 1 15 6v4a4 4 0 0 1-4 4z"></svg:path>`,
-})
-export class FluentMailMultiple16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMultiple16RegularIcon],svg[fluent-mail-multiple-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1 10V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2m10-7H3a1 1 0 0 0-1 1v.74l5 2.692l5-2.692V4a1 1 0 0 0-1-1M6.763 8.44L2 5.876V10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5.876L7.237 8.44a.5.5 0 0 1-.474 0M5 14a2 2 0 0 1-1.732-1H11a3 3 0 0 0 3-3V4.268A2 2 0 0 1 15 6v4a4 4 0 0 1-4 4z"></svg:path>`,
-})
-export class FluentMailMultiple16RegularIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMultiple20FilledIcon],svg[fluent-mail-multiple-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16 12.5V6.373L9.254 9.931a.5.5 0 0 1-.507 0L2 6.373V12.5A2.5 2.5 0 0 0 4.5 15h9a2.5 2.5 0 0 0 2.5-2.5m-.015-7.277A2.5 2.5 0 0 0 13.5 3h-9a2.5 2.5 0 0 0-2.485 2.223L9 8.92zM6.5 17a2.5 2.5 0 0 1-2-1h9a3.5 3.5 0 0 0 3.5-3.5v-7c.607.456 1 1.182 1 2v5a4.5 4.5 0 0 1-4.5 4.5z"></svg:path>`,
-})
-export class FluentMailMultiple20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMultiple20RegularIcon],svg[fluent-mail-multiple-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16 5.5A2.5 2.5 0 0 0 13.5 3h-9A2.5 2.5 0 0 0 2 5.5v7A2.5 2.5 0 0 0 4.5 15h9a2.5 2.5 0 0 0 2.5-2.5zM9.254 9.931L15 6.961V12.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 3 12.5V6.963l5.746 2.968l.082.038a.5.5 0 0 0 .426-.038M4.5 4h9A1.5 1.5 0 0 1 15 5.5v.301L9 8.92L3 5.802V5.5A1.5 1.5 0 0 1 4.5 4m2 13a2.5 2.5 0 0 1-2-1h9a3.5 3.5 0 0 0 3.5-3.5v-7c.607.456 1 1.182 1 2v5a4.5 4.5 0 0 1-4.5 4.5z"></svg:path>`,
-})
-export class FluentMailMultiple20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMultiple24FilledIcon],svg[fluent-mail-multiple-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21 7.511a3.25 3.25 0 0 1 1.5 2.739v6c0 2.9-2.35 5.25-5.25 5.25h-9A3.25 3.25 0 0 1 5.511 20H17.25A3.75 3.75 0 0 0 21 16.25zm-1 .599v7.64a3.25 3.25 0 0 1-3.066 3.245L16.75 19H5.25a3.25 3.25 0 0 1-3.245-3.066L2 15.75V8.11l8.65 4.554a.75.75 0 0 0 .7 0zM5.25 4h11.5a3.25 3.25 0 0 1 3.155 2.466L11 11.153L2.095 6.466a3.25 3.25 0 0 1 2.966-2.46z"></svg:path>`,
-})
-export class FluentMailMultiple24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMultiple24RegularIcon],svg[fluent-mail-multiple-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21 7.511a3.25 3.25 0 0 1 1.5 2.739v6c0 2.9-2.35 5.25-5.25 5.25h-9A3.25 3.25 0 0 1 5.511 20H17.25A3.75 3.75 0 0 0 21 16.25zM5.25 4h11.5a3.25 3.25 0 0 1 3.245 3.066L20 7.25v8.5a3.25 3.25 0 0 1-3.066 3.245L16.75 19H5.25a3.25 3.25 0 0 1-3.245-3.066L2 15.75v-8.5a3.25 3.25 0 0 1 3.066-3.245zM18.5 8.899l-7.15 3.765a.75.75 0 0 1-.603.042l-.096-.042L3.5 8.9v6.85a1.75 1.75 0 0 0 1.606 1.744l.144.006h11.5a1.75 1.75 0 0 0 1.744-1.607l.006-.143zM16.75 5.5H5.25a1.75 1.75 0 0 0-1.744 1.606l-.004.1L11 11.152l7.5-3.947A1.75 1.75 0 0 0 16.75 5.5"></svg:path>`,
-})
-export class FluentMailMultiple24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMultiple28FilledIcon],svg[fluent-mail-multiple-28-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M23 9.608v8.142a3.25 3.25 0 0 1-3.066 3.245L19.75 21H6.25a3.25 3.25 0 0 1-3.245-3.066L3 17.75V9.608l9.652 5.056a.75.75 0 0 0 .696 0zM6.25 5h13.5a3.25 3.25 0 0 1 3.234 2.924L13 13.154l-9.984-5.23a3.25 3.25 0 0 1 3.048-2.919zm-.238 17a3.25 3.25 0 0 0 2.739 1.5h11.5c2.9 0 5.25-2.35 5.25-5.25v-7.5a3.25 3.25 0 0 0-1.5-2.74v10.24A3.75 3.75 0 0 1 20.25 22z"></svg:path>`,
-})
-export class FluentMailMultiple28FilledIcon {
-  readonly viewBox = input("0 0 28 28")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMultiple28RegularIcon],svg[fluent-mail-multiple-28-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6.25 5h13.5a3.25 3.25 0 0 1 3.245 3.066L23 8.25v9.5a3.25 3.25 0 0 1-3.066 3.245L19.75 21H6.25a3.25 3.25 0 0 1-3.245-3.066L3 17.75v-9.5a3.25 3.25 0 0 1 3.066-3.245zm15.25 5.373l-8.15 4.29a.75.75 0 0 1-.603.043l-.096-.042l-8.151-4.29v7.376a1.75 1.75 0 0 0 1.606 1.744l.144.006h13.5a1.75 1.75 0 0 0 1.744-1.607l.006-.143zM19.75 6.5H6.25a1.75 1.75 0 0 0-1.744 1.606L4.5 8.25v.429l8.5 4.474l8.5-4.475V8.25a1.75 1.75 0 0 0-1.607-1.744zM6.012 22a3.25 3.25 0 0 0 2.739 1.5h11.5c2.9 0 5.25-2.35 5.25-5.25v-7.5a3.25 3.25 0 0 0-1.5-2.74v10.24A3.75 3.75 0 0 1 20.25 22z"></svg:path>`,
-})
-export class FluentMailMultiple28RegularIcon {
-  readonly viewBox = input("0 0 28 28")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMultiple32FilledIcon],svg[fluent-mail-multiple-32-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7.5 5a4.5 4.5 0 0 0-4.358 3.376l11.357 6.473l11.354-6.496A4.5 4.5 0 0 0 21.5 5zM3 19.5v-8.903l11.005 6.272a1 1 0 0 0 .992 0L26 10.572V19.5a4.5 4.5 0 0 1-4.5 4.5h-14A4.5 4.5 0 0 1 3 19.5m8 8a4.5 4.5 0 0 1-3.742-2H22a5.5 5.5 0 0 0 5.5-5.5V9.258c1.206.807 2 2.182 2 3.742v7a7.5 7.5 0 0 1-7.5 7.5z"></svg:path>`,
-})
-export class FluentMailMultiple32FilledIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMultiple32LightIcon],svg[fluent-mail-multiple-32-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M26 20a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h15a4 4 0 0 1 4 4zM7 6a3 3 0 0 0-3 3v.715l10.5 6.204L25 9.715V9a3 3 0 0 0-3-3zm18 4.876L14.754 16.93a.5.5 0 0 1-.508 0L4 10.876V20a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3zM7.354 26c.705.622 1.631 1 2.646 1h12a7 7 0 0 0 7-7v-7a4 4 0 0 0-1-2.646V20a6 6 0 0 1-6 6z"></svg:path>`,
-})
-export class FluentMailMultiple32LightIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailMultiple32RegularIcon],svg[fluent-mail-multiple-32-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7.5 7a2.5 2.5 0 0 0-2.499 2.42l9.499 5.428l9.499-5.428A2.5 2.5 0 0 0 21.5 7zM3 9.5A4.5 4.5 0 0 1 7.5 5h14A4.5 4.5 0 0 1 26 9.5v10a4.5 4.5 0 0 1-4.5 4.5h-14A4.5 4.5 0 0 1 3 19.5zm21 10v-7.777l-9.004 5.145a1 1 0 0 1-.992 0L5 11.723V19.5A2.5 2.5 0 0 0 7.5 22h14a2.5 2.5 0 0 0 2.5-2.5m-13 8a4.5 4.5 0 0 1-3.742-2H22a5.5 5.5 0 0 0 5.5-5.5V9.258c1.206.807 2 2.182 2 3.742v7a7.5 7.5 0 0 1-7.5 7.5z"></svg:path>`,
-})
-export class FluentMailMultiple32RegularIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOff16FilledIcon],svg[fluent-mail-off-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m12.274 12.981l1.872 1.873a.5.5 0 0 0 .708-.708l-13-13a.5.5 0 1 0-.708.708L2.74 3.447C2.288 3.814 2 4.373 2 5v.201l5.404 2.91L8.56 9.267l-.323.173a.5.5 0 0 1-.474 0L2 6.337V11a2 2 0 0 0 2 2h8q.14 0 .274-.019m-1.876-4.704l3.461 3.461c.091-.228.141-.477.141-.738V6.337zM5.121 3L9.66 7.538L14 5.201V5a2 2 0 0 0-2-2z"></svg:path>`,
-})
-export class FluentMailOff16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOff16RegularIcon],svg[fluent-mail-off-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m12.274 12.981l1.872 1.873a.5.5 0 0 0 .708-.708l-13-13a.5.5 0 1 0-.708.708L2.74 3.447C2.288 3.814 2 4.373 2 5v6a2 2 0 0 0 2 2h8q.14 0 .274-.019M11.293 12H4a1 1 0 0 1-1-1V6.876L7.763 9.44a.5.5 0 0 0 .474 0l.323-.173zM7.404 8.111L3 5.74V5a1 1 0 0 1 .455-.838zM13 5.74L9.66 7.538l.738.739L13 6.876v4.003l.86.86c.09-.23.14-.478.14-.739V5a2 2 0 0 0-2-2H5.121l1 1H12a1 1 0 0 1 1 1z"></svg:path>`,
-})
-export class FluentMailOff16RegularIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOff20FilledIcon],svg[fluent-mail-off-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2.854 2.146a.5.5 0 1 0-.708.708l1.355 1.354a2.5 2.5 0 0 0-1.486 2.015L10 10.92l.134-.079l.73.73l-.61.36a.5.5 0 0 1-.507 0L2 7.373V14.5A2.5 2.5 0 0 0 4.5 17h11q.362-.001.695-.098l.951.952a.5.5 0 0 0 .708-.708zm9.791 8.378l5.093 5.092c.168-.336.262-.715.262-1.116V7.373zM6.121 4l5.794 5.794l6.07-3.571A2.5 2.5 0 0 0 15.5 4z"></svg:path>`,
-})
-export class FluentMailOff20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOff20RegularIcon],svg[fluent-mail-off-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2.854 2.146a.5.5 0 1 0-.708.708l1.355 1.354A2.5 2.5 0 0 0 2 6.5v8A2.5 2.5 0 0 0 4.5 17h11q.362-.001.695-.098l.951.952a.5.5 0 0 0 .708-.708zM15.293 16H4.5A1.5 1.5 0 0 1 3 14.5V7.963l6.746 3.968l.082.038a.5.5 0 0 0 .426-.038l.61-.36zm-5.159-5.159L10 10.92L3 6.802V6.5a1.5 1.5 0 0 1 1.305-1.487zM17 6.801l-5.085 2.992l.73.73L17 7.962V14.5q0 .175-.039.34l.777.776A2.5 2.5 0 0 0 18 14.5v-8A2.5 2.5 0 0 0 15.5 4H6.121l1 1H15.5A1.5 1.5 0 0 1 17 6.5z"></svg:path>`,
-})
-export class FluentMailOff20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOff24FilledIcon],svg[fluent-mail-off-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.28 2.22a.75.75 0 1 0-1.06 1.06l1.25 1.25a3.25 3.25 0 0 0-1.454 2.394l8.078 4.231l2.422 2.422l-.168.087a.75.75 0 0 1-.696 0L2 8.608v8.142l.005.184A3.25 3.25 0 0 0 5.25 20h13.5l.184-.005l1.785 1.785a.75.75 0 0 0 1.061-1.06zm12.02 9.898l6.262 6.262A3.24 3.24 0 0 0 22 16.75V8.608zM7.182 4l7.007 7.007l7.795-4.083A3.25 3.25 0 0 0 18.75 4z"></svg:path>`,
-})
-export class FluentMailOff24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOff24RegularIcon],svg[fluent-mail-off-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.28 2.22a.75.75 0 1 0-1.06 1.06l1.25 1.25A3.25 3.25 0 0 0 2 7.25v9.5l.005.184A3.25 3.25 0 0 0 5.25 20h13.5l.184-.005l1.785 1.785a.75.75 0 0 0 1.061-1.06zM17.44 18.5H5.25l-.144-.006A1.75 1.75 0 0 1 3.5 16.75V9.374l8.15 4.29l.097.042a.75.75 0 0 0 .602-.042l.166-.088zm-7.357-7.357L3.5 7.68v-.43l.006-.144a1.75 1.75 0 0 1 1.068-1.47zM20.5 7.678l-6.316 3.325l1.11 1.11l5.206-2.74v7.377l-.006.143q-.015.183-.066.354l1.134 1.133A3.24 3.24 0 0 0 22 16.75v-9.5l-.005-.184A3.25 3.25 0 0 0 18.75 4H7.182l1.5 1.5H18.75l.143.006A1.75 1.75 0 0 1 20.5 7.25z"></svg:path>`,
-})
-export class FluentMailOff24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOpenPerson16FilledIcon],svg[fluent-mail-open-person-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.237 1.56a.5.5 0 0 0-.474 0L1.789 4.777a1.5 1.5 0 0 0-.57.54l.022.012l.03.014l.278.15L8 8.933l.567-.302a3 3 0 0 1 5.091-2.715l1.123-.6a1.5 1.5 0 0 0-.57-.54zM1 6.333l.078.042l6.78 3.642a.305.305 0 0 1 .084.47l-.294.333l-.01.012A2.5 2.5 0 0 0 7 12.5c0 .512.118 1.027.367 1.5H3a2 2 0 0 1-2-2zM13.5 8a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 4.5c0 1.245-1 2.5-3.5 2.5S8 13.75 8 12.5A1.5 1.5 0 0 1 9.5 11h4a1.5 1.5 0 0 1 1.5 1.5"></svg:path>`,
-})
-export class FluentMailOpenPerson16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOpenPerson16RegularIcon],svg[fluent-mail-open-person-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2.49 6h.01l-.394-.21a.5.5 0 0 1 .157-.133L7.996 2.57l5.95 3.2l-.284.15c.232.242.425.522.567.831l.268-.143a.95.95 0 0 0 .003-1.676L8.235 1.564A.5.5 0 0 0 8 1.504V1.5a.5.5 0 0 0-.237.06L1.789 4.777A1.5 1.5 0 0 0 1 6.097V12a2 2 0 0 0 2 2h4.367a3.2 3.2 0 0 1-.329-1H3a1 1 0 0 1-1-1V6.872l5.53 2.944a1 1 0 0 0 .94 0l.47-.25a3 3 0 0 1-.373-.934l-.566.3zM13.5 8a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 4.5c0 1.245-1 2.5-3.5 2.5S8 13.75 8 12.5A1.5 1.5 0 0 1 9.5 11h4a1.5 1.5 0 0 1 1.5 1.5"></svg:path>`,
-})
-export class FluentMailOpenPerson16RegularIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOpenPerson20FilledIcon],svg[fluent-mail-open-person-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.743 2.071a.5.5 0 0 1 .514 0l6.772 4.063a2 2 0 0 1 .7.709L10 10.934L2.272 6.843c.167-.287.405-.532.699-.709zm3.134 8.472l-2.643 1.399a.5.5 0 0 1-.468 0L2 7.83v5.67A2.5 2.5 0 0 0 4.5 16h6.55a2.5 2.5 0 0 1 2.223-1.99A3 3 0 0 1 12.5 12c0-.529.137-1.026.377-1.457M17.5 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 4.5c0 1.245-1 2.5-3.5 2.5S12 17.75 12 16.5a1.5 1.5 0 0 1 1.5-1.5h4a1.5 1.5 0 0 1 1.5 1.5"></svg:path>`,
-})
-export class FluentMailOpenPerson20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOpenPerson20RegularIcon],svg[fluent-mail-open-person-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10 3.083L3.486 6.992L3.472 7L10 10.917L16.528 7zM9.977 12a.5.5 0 0 1-.234-.071L3 7.883V13.5A1.5 1.5 0 0 0 4.5 15h7c-.219.29-.375.63-.45 1H4.5A2.5 2.5 0 0 1 2 13.5V7.85a2 2 0 0 1 .971-1.716l6.762-4.057a.5.5 0 0 1 .524-.006l6.928 4.157a.9.9 0 0 1 0 1.544l-2.092 1.256a3 3 0 0 0-2.024 1.214l-2.811 1.687a.5.5 0 0 1-.28.07m7.523 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 4.5c0 1.245-1 2.5-3.5 2.5S12 17.75 12 16.5a1.5 1.5 0 0 1 1.5-1.5h4a1.5 1.5 0 0 1 1.5 1.5"></svg:path>`,
-})
-export class FluentMailOpenPerson20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOpenPerson24FilledIcon],svg[fluent-mail-open-person-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.653 14.165L2 9.127v7.623l.005.184A3.25 3.25 0 0 0 5.25 20h7.752L13 19.875v-.103A2.77 2.77 0 0 1 15.773 17h.277A3.5 3.5 0 0 1 15 14.5c0-.777.253-1.494.68-2.075l-3.333 1.74a.75.75 0 0 1-.694 0m-.036-12.06L3.1 7.17l-.17.112q-.247.18-.435.414L12 12.655l9.505-4.96a2.3 2.3 0 0 0-.605-.526l-8.516-5.064l-.105-.051a.75.75 0 0 0-.662.051M21 14.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m2 5.375C23 21.431 21.714 23 18.5 23S14 21.437 14 19.875v-.103c0-.98.794-1.772 1.773-1.772h5.454c.98 0 1.773.793 1.773 1.772z"></svg:path>`,
-})
-export class FluentMailOpenPerson24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOpenPerson24RegularIcon],svg[fluent-mail-open-person-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 3.619v.004l-8.092 4.81L12 12.654v.003l8.231-4.225zm-.168 10.612a.8.8 0 0 1-.188-.07L3.5 9.91v6.84a1.75 1.75 0 0 0 1.606 1.743l.144.006h8.058A2.76 2.76 0 0 0 13 19.772v.103q0 .063.002.125H5.25a3.25 3.25 0 0 1-3.245-3.065L2 16.75V9.103c0-.736.36-1.423.958-1.842L3.1 7.17l8.504-5.056a.75.75 0 0 1 .775-.01l9.003 5.265a1.25 1.25 0 0 1-.06 2.19L18.513 11H18.5c-1.176 0-2.217.58-2.852 1.47l-3.306 1.697a.75.75 0 0 1-.51.064m9.168.27a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m2 5.374C23 21.432 21.714 23 18.5 23S14 21.438 14 19.875v-.103c0-.979.794-1.772 1.773-1.772h5.454c.98 0 1.773.793 1.773 1.772z"></svg:path>`,
-})
-export class FluentMailOpenPerson24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOutbox24FilledIcon],svg[fluent-mail-outbox-24-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M10.499 4a6.453 6.453 0 0 0-.423 1.5H6.25A1.75 1.75 0 0 0 4.5 7.25V14H9a.75.75 0 0 1 .743.648l.007.102a2.25 2.25 0 1 0 4.5 0A.75.75 0 0 1 15 14h4.5l.001-1.733a6.518 6.518 0 0 0 1.5-1.077L21 18.75A3.25 3.25 0 0 1 17.75 22H6.25A3.25 3.25 0 0 1 3 18.75V7.25A3.25 3.25 0 0 1 6.25 4h4.249zM16.5 1a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11zm.128 2.017l-.086-.015L16.488 3l-.056.005l-.06.012l-.083.03l-.074.042l-.056.045l-2.513 2.512l-.057.07a.5.5 0 0 0 0 .568l.057.07l.07.057a.5.5 0 0 0 .568 0l.07-.057l1.645-1.646L16 10l.008.09a.5.5 0 0 0 .402.402l.09.008l.09-.008a.5.5 0 0 0 .402-.402L17 10l-.001-5.294l1.647 1.648l.07.057a.5.5 0 0 0 .695-.695l-.057-.07l-2.548-2.542l-.048-.032l-.067-.034l-.063-.021z" fill="currentColor" fill-rule="nonzero"></svg:path>`,
-})
-export class FluentMailOutbox24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailOutbox24RegularIcon],svg[fluent-mail-outbox-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M10.499 4a6.453 6.453 0 0 0-.423 1.5H6.25a1.75 1.75 0 0 0-1.744 1.606L4.5 7.25V14H9a.75.75 0 0 1 .743.648l.007.102a2.25 2.25 0 1 0 4.5 0a.75.75 0 0 1 .648-.743L15 14h4.5l.001-1.733a6.518 6.518 0 0 0 1.5-1.077L21 18.75a3.25 3.25 0 0 1-3.066 3.245L17.75 22H6.25a3.25 3.25 0 0 1-3.245-3.066L3 18.75V7.25a3.25 3.25 0 0 1 3.066-3.245L6.25 4h4.249zM8.325 15.5H4.5v3.25a1.75 1.75 0 0 0 1.606 1.744l.144.006h11.5a1.75 1.75 0 0 0 1.744-1.606l.006-.144V15.5h-3.825a3.752 3.752 0 0 1-3.475 2.995l-.2.005a3.752 3.752 0 0 1-3.632-2.812l-.043-.188zM16.5 1a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11zm.128 2.017l-.086-.015L16.488 3l-.056.005l-.06.012l-.083.03l-.074.042l-.056.045l-2.513 2.512l-.057.07a.5.5 0 0 0 0 .568l.057.07l.07.057a.5.5 0 0 0 .568 0l.07-.057l1.645-1.646L16 10l.008.09a.5.5 0 0 0 .402.402l.09.008l.09-.008a.5.5 0 0 0 .402-.402L17 10l-.001-5.294l1.647 1.648l.07.057a.5.5 0 0 0 .695-.695l-.057-.07l-2.548-2.542l-.048-.032l-.067-.034l-.063-.021z" fill="currentColor" fill-rule="nonzero"></svg:path>`,
-})
-export class FluentMailOutbox24RegularIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailPause16FilledIcon],svg[fluent-mail-pause-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13 10.4c-.75.384-1.6.6-2.5.6c-.65 0-1.273-.113-1.852-.32l-1.41.76a.5.5 0 0 1-.475 0L1 8.337V13a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM5.022 5H3a2 2 0 0 0-2 2v.201l6 3.231l.544-.293A5.5 5.5 0 0 1 5.022 5m5.478 5a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m-1-6.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 1 0m3 0v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 1 0"></svg:path>`,
-})
-export class FluentMailPause16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailPause16RegularIcon],svg[fluent-mail-pause-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 10.793V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8.876l4.763 2.564a.5.5 0 0 0 .474 0l1.411-.76q-.587-.21-1.104-.54L7 10.431L2 7.74V7a1 1 0 0 1 1-1h2.022a5.6 5.6 0 0 1 0-1H3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2.6a5.5 5.5 0 0 1-1 .393M10.5 10a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m-1-6.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 1 0m3 0v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 1 0"></svg:path>`,
-})
-export class FluentMailPause16RegularIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailPause20FilledIcon],svg[fluent-mail-pause-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.5 11c1.33 0 2.55-.472 3.5-1.257V14.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 2 14.5V7.373l7.747 4.558a.5.5 0 0 0 .507 0l2.23-1.312A5.5 5.5 0 0 0 14.5 11m-10-7h4.707a5.5 5.5 0 0 0 2.235 6.072L10 10.92L2.015 6.223A2.5 2.5 0 0 1 4.5 4m10 6a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m-1-6.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 1 0m3 0v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 1 0"></svg:path>`,
-})
-export class FluentMailPause20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailPause20RegularIcon],svg[fluent-mail-pause-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M17 14.5v-4.1a5.5 5.5 0 0 0 1-.657V14.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 2 14.5v-8A2.5 2.5 0 0 1 4.5 4h4.707a5.5 5.5 0 0 0-.185 1H4.5A1.5 1.5 0 0 0 3 6.5v.302l7 4.118l1.441-.848q.488.327 1.043.547l-2.23 1.312a.5.5 0 0 1-.426.038l-.082-.038L3 7.963V14.5A1.5 1.5 0 0 0 4.5 16h11a1.5 1.5 0 0 0 1.5-1.5M14.5 10a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9m-1-6.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 1 0m3 0v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 1 0"></svg:path>`,
-})
-export class FluentMailPause20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailProhibited16FilledIcon],svg[fluent-mail-prohibited-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 5.5a4.5 4.5 0 1 0 9 0a4.5 4.5 0 0 0-9 0m1 0a3.5 3.5 0 0 1 5.596-2.803l-4.9 4.9A3.5 3.5 0 0 1 7 5.5M10.5 9c-.786 0-1.512-.26-2.096-.697l4.9-4.9A3.5 3.5 0 0 1 10.5 9m0 2c.9 0 1.75-.216 2.5-.6V13a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8.337l5.763 3.103a.5.5 0 0 0 .474 0l1.411-.76c.579.207 1.202.32 1.852.32M3 5h2.022a5.5 5.5 0 0 0 2.522 5.14L7 10.431l-6-3.23V7a2 2 0 0 1 2-2"></svg:path>`,
-})
-export class FluentMailProhibited16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailProhibited16RegularIcon],svg[fluent-mail-prohibited-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 5.5a4.5 4.5 0 1 0 9 0a4.5 4.5 0 0 0-9 0m1 0a3.5 3.5 0 0 1 5.596-2.803l-4.9 4.9A3.5 3.5 0 0 1 7 5.5M10.5 9c-.786 0-1.512-.26-2.096-.697l4.9-4.9A3.5 3.5 0 0 1 10.5 9m1.5 4v-2.207q.524-.149 1-.393V13a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2.022a5.6 5.6 0 0 0 0 1H3a1 1 0 0 0-1 1v.74l5 2.692l.544-.293q.517.331 1.104.542l-1.41.76a.5.5 0 0 1-.475 0L2 8.875V13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1"></svg:path>`,
-})
-export class FluentMailProhibited16RegularIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailProhibited20FilledIcon],svg[fluent-mail-prohibited-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10 5.5a4.5 4.5 0 1 0 9 0a4.5 4.5 0 0 0-9 0m1 0a3.5 3.5 0 0 1 5.596-2.803l-4.9 4.9A3.5 3.5 0 0 1 11 5.5M14.5 9c-.786 0-1.512-.26-2.096-.697l4.9-4.9A3.5 3.5 0 0 1 14.5 9m0 2c1.33 0 2.55-.472 3.5-1.257V14.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 2 14.5V7.373l7.747 4.558a.5.5 0 0 0 .507 0l2.23-1.312A5.5 5.5 0 0 0 14.5 11m-10-7h4.707a5.5 5.5 0 0 0 2.235 6.072L10 10.92L2.015 6.223A2.5 2.5 0 0 1 4.5 4"></svg:path>`,
-})
-export class FluentMailProhibited20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailProhibited20RegularIcon],svg[fluent-mail-prohibited-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10 5.5a4.5 4.5 0 1 0 9 0a4.5 4.5 0 0 0-9 0m1 0a3.5 3.5 0 0 1 5.596-2.803l-4.9 4.9A3.5 3.5 0 0 1 11 5.5M14.5 9c-.786 0-1.512-.26-2.096-.697l4.9-4.9A3.5 3.5 0 0 1 14.5 9m2.5 5.5v-4.1a5.5 5.5 0 0 0 1-.657V14.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 2 14.5v-8A2.5 2.5 0 0 1 4.5 4h4.707a5.5 5.5 0 0 0-.185 1H4.5A1.5 1.5 0 0 0 3 6.5v.302l7 4.118l1.441-.848q.488.327 1.043.547l-2.23 1.312a.5.5 0 0 1-.426.038l-.082-.038L3 7.963V14.5A1.5 1.5 0 0 0 4.5 16h11a1.5 1.5 0 0 0 1.5-1.5"></svg:path>`,
-})
-export class FluentMailProhibited20RegularIcon {
-  readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
 }

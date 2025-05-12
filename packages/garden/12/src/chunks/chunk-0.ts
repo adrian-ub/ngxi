@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[gardenAdjustFill12Icon],svg[garden-adjust-fill-12-icon]',
+  selector: 'svg[garden123Fill12Icon],svg[garden-123-fill-12-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" stroke="currentColor" stroke-linecap="round" d="M3.5.5v1m0 7v3m5-11v3m0 7v1"></svg:path><svg:g fill="currentColor"><svg:circle cx="8.5" cy="7" r="2"></svg:circle><svg:circle cx="3.5" cy="5" r="2"></svg:circle></svg:g>`,
+  template: `<svg:path fill="currentColor" d="M11 0a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1zM5.926 3l-.17.006a1.39 1.39 0 0 0-1.25 1.25l-.006.133V4.5l.008.09a.5.5 0 0 0 .984 0L5.5 4.5v-.111l.008-.078a.39.39 0 0 1 .303-.303L5.889 4h.037l.091.007a.567.567 0 0 1 .426.79l-.096.201l-.223.43l-.394.73l-1.171 2.107a.5.5 0 0 0 .357.728L5 9h2l.09-.008a.5.5 0 0 0 .402-.402L7.5 8.5l-.008-.09a.5.5 0 0 0-.402-.402L7 8H5.85l.347-.621l.584-1.06l.39-.737l.138-.274l.048-.105a1.567 1.567 0 0 0-1.289-2.197zM2.502 3l-.044.002l-.032.003l-.054.012l-.063.02l-.059.03l-.062.042l-.042.037l-1 1l-.057.07a.5.5 0 0 0 .695.695l.07-.057L2 4.706V8h-.5l-.09.008a.5.5 0 0 0 0 .984L1.5 9h2l.09-.008a.5.5 0 0 0 0-.984L3.5 8H3V3.5l-.002-.046l-.015-.082l-.02-.063l-.03-.059l-.042-.062l-.037-.042l-.032-.028l-.055-.04l-.076-.04l-.063-.021l-.061-.012zM10.5 3h-2l-.09.008a.5.5 0 0 0-.402.402L8 3.5l.008.09a.5.5 0 0 0 .402.402L8.5 4l1-.001L8.6 5.2A.5.5 0 0 0 9 6c.645 0 .875.173.96.51c.019.078.03.153.035.252L10 7l-.004.253l-.014.189l-.012.087C9.912 7.875 9.8 8 9.5 8c-.39 0-.5-.11-.5-.5a.5.5 0 0 0-1 0C8 8.443 8.557 9 9.5 9c.86 0 1.326-.525 1.456-1.307c.03-.174.04-.318.043-.525v-.344a2.5 2.5 0 0 0-.04-.421l-.03-.135l-.042-.145a1.5 1.5 0 0 0-.695-.854l-.152-.076l-.143-.057L10.9 3.8a.5.5 0 0 0-.315-.793z"></svg:path>`,
 })
-export class GardenAdjustFill12Icon {
+export class Garden123Fill12Icon {
   readonly viewBox = input("0 0 12 12")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,50 +36,16 @@ export class Garden123Stroke12Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[gardenAlertErrorStroke12Icon],svg[garden-alert-error-stroke-12-icon]',
+  selector: 'svg[gardenAdjustFill12Icon],svg[garden-adjust-fill-12-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor"><svg:circle cx="5.5" cy="6.5" r="5"></svg:circle><svg:path stroke-linecap="round" d="M5.5 3.5v3"></svg:path></svg:g><svg:circle cx="5.5" cy="9" r="1" fill="currentColor"></svg:circle>`,
+  template: `<svg:path fill="currentColor" stroke="currentColor" stroke-linecap="round" d="M3.5.5v1m0 7v3m5-11v3m0 7v1"></svg:path><svg:g fill="currentColor"><svg:circle cx="8.5" cy="7" r="2"></svg:circle><svg:circle cx="3.5" cy="5" r="2"></svg:circle></svg:g>`,
 })
-export class GardenAlertErrorStroke12Icon {
-  readonly viewBox = input("0 0 12 12")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[gardenAlertErrorFill12Icon],svg[garden-alert-error-fill-12-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5.5 1C2.46 1 0 3.46 0 6.5S2.46 12 5.5 12S11 9.54 11 6.5S8.54 1 5.5 1M5 3.5c0-.28.22-.5.5-.5s.5.22.5.5v3c0 .28-.22.5-.5.5S5 6.78 5 6.5zm.5 6.5c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1"></svg:path>`,
-})
-export class GardenAlertErrorFill12Icon {
-  readonly viewBox = input("0 0 12 12")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[gardenAlertWarningStroke12Icon],svg[garden-alert-warning-stroke-12-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" d="m5.06 1.27l-4.5 8.5c-.18.33.06.73.44.73h9c.38 0 .62-.4.44-.73l-4.5-8.5a.494.494 0 0 0-.88 0zM5.5 4v2"></svg:path><svg:circle cx="5.5" cy="8" r=".8" fill="currentColor"></svg:circle>`,
-})
-export class GardenAlertWarningStroke12Icon {
+export class GardenAdjustFill12Icon {
   readonly viewBox = input("0 0 12 12")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,6 +70,40 @@ export class GardenAdjustStroke12Icon {
 
 @Component({
   standalone: true,
+  selector: 'svg[gardenAlertErrorFill12Icon],svg[garden-alert-error-fill-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.5 1C2.46 1 0 3.46 0 6.5S2.46 12 5.5 12S11 9.54 11 6.5S8.54 1 5.5 1M5 3.5c0-.28.22-.5.5-.5s.5.22.5.5v3c0 .28-.22.5-.5.5S5 6.78 5 6.5zm.5 6.5c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1"></svg:path>`,
+})
+export class GardenAlertErrorFill12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenAlertErrorStroke12Icon],svg[garden-alert-error-stroke-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor"><svg:circle cx="5.5" cy="6.5" r="5"></svg:circle><svg:path stroke-linecap="round" d="M5.5 3.5v3"></svg:path></svg:g><svg:circle cx="5.5" cy="9" r="1" fill="currentColor"></svg:circle>`,
+})
+export class GardenAlertErrorStroke12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[gardenAlertWarningFill12Icon],svg[garden-alert-warning-fill-12-icon]',
   host: {
     role: 'img',
@@ -114,6 +114,23 @@ export class GardenAdjustStroke12Icon {
   template: `<svg:path fill="currentColor" d="m10.88 9.53l-4.5-8.5c-.35-.66-1.42-.66-1.77 0l-4.5 8.5A1.006 1.006 0 0 0 1 11h9c.35 0 .67-.18.86-.48a1 1 0 0 0 .02-.99M5 4c0-.28.22-.5.5-.5s.5.22.5.5v2c0 .28-.22.5-.5.5S5 6.28 5 6zm.5 5.3c-.44 0-.8-.36-.8-.8s.36-.8.8-.8s.8.36.8.8s-.36.8-.8.8"></svg:path>`,
 })
 export class GardenAlertWarningFill12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenAlertWarningStroke12Icon],svg[garden-alert-warning-stroke-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" d="m5.06 1.27l-4.5 8.5c-.18.33.06.73.44.73h9c.38 0 .62-.4.44-.73l-4.5-8.5a.494.494 0 0 0-.88 0zM5.5 4v2"></svg:path><svg:circle cx="5.5" cy="8" r=".8" fill="currentColor"></svg:circle>`,
+})
+export class GardenAlertWarningStroke12Icon {
   readonly viewBox = input("0 0 12 12")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -148,23 +165,6 @@ export class GardenAlignCenterFill12Icon {
   template: `<svg:path fill="currentColor" stroke="currentColor" stroke-linecap="round" d="M1.5 1.5h9m-7 3h5m-7 3h9m-7 3h5"></svg:path>`,
 })
 export class GardenAlignCenterStroke12Icon {
-  readonly viewBox = input("0 0 12 12")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[garden123Fill12Icon],svg[garden-123-fill-12-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11 0a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1zM5.926 3l-.17.006a1.39 1.39 0 0 0-1.25 1.25l-.006.133V4.5l.008.09a.5.5 0 0 0 .984 0L5.5 4.5v-.111l.008-.078a.39.39 0 0 1 .303-.303L5.889 4h.037l.091.007a.567.567 0 0 1 .426.79l-.096.201l-.223.43l-.394.73l-1.171 2.107a.5.5 0 0 0 .357.728L5 9h2l.09-.008a.5.5 0 0 0 .402-.402L7.5 8.5l-.008-.09a.5.5 0 0 0-.402-.402L7 8H5.85l.347-.621l.584-1.06l.39-.737l.138-.274l.048-.105a1.567 1.567 0 0 0-1.289-2.197zM2.502 3l-.044.002l-.032.003l-.054.012l-.063.02l-.059.03l-.062.042l-.042.037l-1 1l-.057.07a.5.5 0 0 0 .695.695l.07-.057L2 4.706V8h-.5l-.09.008a.5.5 0 0 0 0 .984L1.5 9h2l.09-.008a.5.5 0 0 0 0-.984L3.5 8H3V3.5l-.002-.046l-.015-.082l-.02-.063l-.03-.059l-.042-.062l-.037-.042l-.032-.028l-.055-.04l-.076-.04l-.063-.021l-.061-.012zM10.5 3h-2l-.09.008a.5.5 0 0 0-.402.402L8 3.5l.008.09a.5.5 0 0 0 .402.402L8.5 4l1-.001L8.6 5.2A.5.5 0 0 0 9 6c.645 0 .875.173.96.51c.019.078.03.153.035.252L10 7l-.004.253l-.014.189l-.012.087C9.912 7.875 9.8 8 9.5 8c-.39 0-.5-.11-.5-.5a.5.5 0 0 0-1 0C8 8.443 8.557 9 9.5 9c.86 0 1.326-.525 1.456-1.307c.03-.174.04-.318.043-.525v-.344a2.5 2.5 0 0 0-.04-.421l-.03-.135l-.042-.145a1.5 1.5 0 0 0-.695-.854l-.152-.076l-.143-.057L10.9 3.8a.5.5 0 0 0-.315-.793z"></svg:path>`,
-})
-export class Garden123Fill12Icon {
   readonly viewBox = input("0 0 12 12")
   readonly width = input("1em")
   readonly height = input("1em")

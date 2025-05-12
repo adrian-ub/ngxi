@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[pepiconsAngleDownIcon],svg[pepicons-angle-down-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="m16.64 8.268l-6 5c-1.024.854-2.304-.683-1.28-1.536l6-5c1.024-.854 2.305.683 1.28 1.536Z"></svg:path><svg:path d="m4.64 6.732l6 5c1.024.853-.256 2.39-1.28 1.536l-6-5c-1.024-.853.256-2.39 1.28-1.536Z"></svg:path></svg:g>`,
-})
-export class PepiconsAngleDownIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[pepiconsAlarmIcon],svg[pepicons-alarm-icon]',
   host: {
     role: 'img',
@@ -46,6 +29,40 @@ export class PepiconsAlarmIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m10.755 12.996l1.859-1.704l1.472 5.269a1 1 0 0 0 1.643.464c1.579-1.465 2.44-2.82 2.519-4.13c.056-.941-.382-2.74-1.319-5.56l.23-.211c2.249-2.248 2.899-4.208 1.433-5.674c-1.465-1.465-3.426-.816-5.644 1.4l-.24.262c-2.821-.936-4.62-1.374-5.561-1.318c-1.311.078-2.665.94-4.13 2.519a1 1 0 0 0 .464 1.643l5.27 1.472l-1.704 1.859c-1.72-.236-2.798-.338-3.32-.307c-.937.056-1.859.643-2.834 1.694a1 1 0 0 0 .464 1.643l4.653 1.3l.415.414l1.3 4.654a1 1 0 0 0 1.643.464c1.05-.975 1.638-1.897 1.694-2.834c.03-.522-.072-1.6-.307-3.319Zm-1.739-1.119a1 1 0 0 0-.314.877c.239 1.687.36 2.816.366 3.304l-.788-2.817a1 1 0 0 0-.256-.438l-.785-.786a1 1 0 0 0-.438-.256l-2.818-.787c.488.005 1.619.127 3.305.366a1 1 0 0 0 .878-.314l3.16-3.447a1 1 0 0 0-.469-1.639L5.734 4.51c.599-.46 1.114-.694 1.532-.719c.642-.038 2.515.439 5.418 1.424a1 1 0 0 0 1.058-.271l.65-.709c1.507-1.505 2.366-1.79 2.786-1.37c.42.42.135 1.279-1.402 2.816l-.677.62a1 1 0 0 0-.271 1.058c.985 2.902 1.462 4.776 1.423 5.418c-.024.417-.259.933-.718 1.532l-1.431-5.123a1 1 0 0 0-1.64-.468l-3.446 3.16Z" clip-rule="evenodd"></svg:path>`,
 })
 export class PepiconsAirplaneIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsAngleDownIcon],svg[pepicons-angle-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="m16.64 8.268l-6 5c-1.024.854-2.304-.683-1.28-1.536l6-5c1.024-.854 2.305.683 1.28 1.536Z"></svg:path><svg:path d="m4.64 6.732l6 5c1.024.853-.256 2.39-1.28 1.536l-6-5c-1.024-.853.256-2.39 1.28-1.536Z"></svg:path></svg:g>`,
+})
+export class PepiconsAngleDownIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsAngleLeftIcon],svg[pepicons-angle-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M6.732 10.64a1 1 0 1 1 1.536-1.28l5 6a1 1 0 1 1-1.536 1.28l-5-6Z"></svg:path><svg:path d="M8.268 10.64a1 1 0 1 1-1.536-1.28l5-6a1 1 0 1 1 1.536 1.28l-5 6Z"></svg:path></svg:g>`,
+})
+export class PepiconsAngleLeftIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,16 +104,16 @@ export class PepiconsAngleUpIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pepiconsAngleLeftIcon],svg[pepicons-angle-left-icon]',
+  selector: 'svg[pepiconsArrowDownIcon],svg[pepicons-arrow-down-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="currentColor"><svg:path d="M6.732 10.64a1 1 0 1 1 1.536-1.28l5 6a1 1 0 1 1-1.536 1.28l-5-6Z"></svg:path><svg:path d="M8.268 10.64a1 1 0 1 1-1.536-1.28l5-6a1 1 0 1 1 1.536 1.28l-5 6Z"></svg:path></svg:g>`,
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M14.768 11.027a1 1 0 0 1-.128 1.408l-4 3.333a1 1 0 0 1-1.28-1.536l4-3.334a1 1 0 0 1 1.408.129Z"></svg:path><svg:path d="M5.232 11.027a1 1 0 0 1 1.408-.129l4 3.334a1 1 0 1 1-1.28 1.536l-4-3.333a1 1 0 0 1-.128-1.409Z"></svg:path><svg:path d="M10 14a1 1 0 0 1-1-1V5a1 1 0 1 1 2 0v8a1 1 0 0 1-1 1Z"></svg:path></svg:g>`,
 })
-export class PepiconsAngleLeftIcon {
+export class PepiconsArrowDownIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,23 +138,6 @@ export class PepiconsArrowDownLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pepiconsArrowDownIcon],svg[pepicons-arrow-down-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M14.768 11.027a1 1 0 0 1-.128 1.408l-4 3.333a1 1 0 0 1-1.28-1.536l4-3.334a1 1 0 0 1 1.408.129Z"></svg:path><svg:path d="M5.232 11.027a1 1 0 0 1 1.408-.129l4 3.334a1 1 0 1 1-1.28 1.536l-4-3.333a1 1 0 0 1-.128-1.409Z"></svg:path><svg:path d="M10 14a1 1 0 0 1-1-1V5a1 1 0 1 1 2 0v8a1 1 0 0 1-1 1Z"></svg:path></svg:g>`,
-})
-export class PepiconsArrowDownIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[pepiconsArrowDownRightIcon],svg[pepicons-arrow-down-right-icon]',
   host: {
     role: 'img',
@@ -148,6 +148,23 @@ export class PepiconsArrowDownIcon {
   template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M14.098 7.354a1 1 0 0 1 .905 1.087l-.472 5.185a1 1 0 1 1-1.991-.18l.471-5.186a1 1 0 0 1 1.087-.906Z"></svg:path><svg:path d="M7.354 14.098a1 1 0 0 1 .906-1.087l5.185-.471a1 1 0 1 1 .181 1.991l-5.185.472a1 1 0 0 1-1.087-.905Z"></svg:path><svg:path d="M12.828 12.829a1 1 0 0 1-1.414 0L5.757 7.171a1 1 0 1 1 1.415-1.415l5.656 5.657a1 1 0 0 1 0 1.415Z"></svg:path></svg:g>`,
 })
 export class PepiconsArrowDownRightIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsArrowLeftIcon],svg[pepicons-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M8.974 14.768a1 1 0 0 1-1.409-.128l-3.333-4a1 1 0 1 1 1.536-1.28l3.334 4a1 1 0 0 1-.128 1.408Z"></svg:path><svg:path d="M8.974 5.232a1 1 0 0 1 .128 1.408l-3.334 4a1 1 0 1 1-1.536-1.28l3.333-4a1 1 0 0 1 1.409-.128Z"></svg:path><svg:path d="M6 10a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z"></svg:path></svg:g>`,
+})
+export class PepiconsArrowLeftIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -3786,23 +3803,6 @@ export class PepiconsWaterDropIcon {
   template: `<svg:g fill="currentColor"><svg:path d="M13.696 11.282a1 1 0 1 1-1.392 1.436a1.46 1.46 0 0 0-.102-.09a2.43 2.43 0 0 0-.623-.348c-.453-.18-1-.28-1.579-.28c-.914 0-1.733.251-2.202.629c-.037.03-.071.059-.102.089a1 1 0 1 1-1.392-1.436c.076-.073.156-.144.24-.212C7.395 10.387 8.656 10 10 10c.827 0 1.624.146 2.316.42c.43.17.815.389 1.14.65c.084.068.164.139.24.212Z"></svg:path><svg:path d="M16.213 8.689a1 1 0 1 1-1.426 1.402a4.187 4.187 0 0 0-.312-.285a5.436 5.436 0 0 0-.767-.521a6.079 6.079 0 0 0-.932-.425a7.268 7.268 0 0 0-1.057-.298a8.19 8.19 0 0 0-1.137-.153a8.814 8.814 0 0 0-1.74.058a8.196 8.196 0 0 0-1.102.227a7.281 7.281 0 0 0-1 .364a6.093 6.093 0 0 0-.854.477a4.792 4.792 0 0 0-.361.27a4.171 4.171 0 0 0-.312.286A1 1 0 1 1 3.787 8.69c.145-.147.299-.288.462-.424a7.446 7.446 0 0 1 1.662-1.027a8.712 8.712 0 0 1 1.286-.469a9.777 9.777 0 0 1 1.379-.284A10.533 10.533 0 0 1 10 6.39a10.81 10.81 0 0 1 1.424.095a10.182 10.182 0 0 1 1.38.284a9.291 9.291 0 0 1 1.285.469a8.117 8.117 0 0 1 1.15.643a6.468 6.468 0 0 1 .974.808Z"></svg:path><svg:path d="M18.245 6.222a1 1 0 0 1-1.49 1.333a6.338 6.338 0 0 0-.456-.459a7.021 7.021 0 0 0-.52-.43a8.358 8.358 0 0 0-1.215-.747a8.983 8.983 0 0 0-1.408-.563a10.076 10.076 0 0 0-1.542-.35A10.86 10.86 0 0 0 10 4.89a11.178 11.178 0 0 0-1.614.117a10.5 10.5 0 0 0-1.542.35a9.572 9.572 0 0 0-1.407.564a8.37 8.37 0 0 0-.635.353a7.696 7.696 0 0 0-.58.393a7.01 7.01 0 0 0-.52.43a6.336 6.336 0 0 0-.457.46a1 1 0 0 1-1.49-1.334a8.832 8.832 0 0 1 1.268-1.157a10.368 10.368 0 0 1 2.352-1.309a11.566 11.566 0 0 1 1.785-.554a12.499 12.499 0 0 1 1.883-.279a13.173 13.173 0 0 1 2.864.105a12.498 12.498 0 0 1 1.842.418a11.558 11.558 0 0 1 1.71.686a10.355 10.355 0 0 1 1.518.933a8.542 8.542 0 0 1 1.269 1.157ZM12 15.25a2 2 0 1 1-4 0a2 2 0 0 1 4 0Z"></svg:path></svg:g>`,
 })
 export class PepiconsWifiIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pepiconsArrowLeftIcon],svg[pepicons-arrow-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M8.974 14.768a1 1 0 0 1-1.409-.128l-3.333-4a1 1 0 1 1 1.536-1.28l3.334 4a1 1 0 0 1-.128 1.408Z"></svg:path><svg:path d="M8.974 5.232a1 1 0 0 1 .128 1.408l-3.334 4a1 1 0 1 1-1.536-1.28l3.333-4a1 1 0 0 1 1.409-.128Z"></svg:path><svg:path d="M6 10a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z"></svg:path></svg:g>`,
-})
-export class PepiconsArrowLeftIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

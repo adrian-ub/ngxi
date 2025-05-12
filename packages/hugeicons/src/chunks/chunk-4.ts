@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[hugeiconsInsertColumnRightIcon],svg[hugeicons-insert-column-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M21.187 18c-.202.889-.533 1.564-1.078 2.109C18.717 21.5 16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391c.545.545.876 1.22 1.078 2.109"></svg:path><svg:path d="m18.5 9l3 3l-3 3m2-3h-7M9 2.498v19m-6.502-13h6.5m-6.5 7h6.5"></svg:path></svg:g>`,
+})
+export class HugeiconsInsertColumnRightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[hugeiconsInsertPiIcon],svg[hugeicons-insert-pi-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><svg:path d="M3 8.8C3 7 5.061 5.2 7.685 5.2h9.272C19.2 5.2 21 3.85 21 2.5m-4.5 3L16 11"></svg:path><svg:path d="M10 5.5c-.133 3.063-.4 8.75-.8 10.5S8 19.5 6 19.5m11-3.333V17.5m0 0v1.333m0-1.333h1.333M17 17.5h-1.333m5.333 0a4 4 0 1 1-8 0a4 4 0 0 1 8 0"></svg:path></svg:g>`,
+})
+export class HugeiconsInsertPiIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[hugeiconsInsertRowIcon],svg[hugeicons-insert-row-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class HugeiconsMicOff02Icon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M15.15 16.189c.14.25.39.38.65.38v-.01c.12 0 .25-.03.37-.1l2.2-1.27a.746.746 0 0 0-.75-1.29l-2.2 1.27c-.35.2-.48.66-.27 1.02m-2.09-2.19c.34.21.74.32 1.15.32l.01-.01c.61 0 1.11-.29 2.01-.82c.87-.49 1.4-.8 1.73-1.35c.19-.36.29-.74.29-1.13c0-.63-.32-1.18-.81-2.01l-3.04-5.29a3.3 3.3 0 0 0-4.5-1.2a3.31 3.31 0 0 0-1.2 4.51l.705 1.215a2.26 2.26 0 0 0-.54.873c-2.593.315-4.615 2.536-4.615 5.212c0 2.71 2.077 4.955 4.72 5.223l-.508 1.527H4c-.41 0-.75.34-.75.75s.34.75.75.75h4.896q.105.015.209 0h4.394l-.01.01a1 1 0 0 0 .128-.01H20c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-5.963l-.498-1.5H18c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-4.958l-.103-.31c-.25-.71-.92-1.18-1.72-1.18c-.74 0-1.41.47-1.66 1.19l-.1.3a3.751 3.751 0 0 1-.563-7.452a2.255 2.255 0 0 0 2.672 1.379l.172.293l.005.008c.497.875.797 1.402 1.315 1.702m-.246-2.85l.226.39l.008.013c.336.593.593 1.048.772 1.157c.13.08.25.11.39.11c.191 0 .548-.207 1.093-.523l.167-.097l.078-.045c.579-.336.987-.573 1.102-.755a.8.8 0 0 0 .09-.38c0-.21-.23-.62-.61-1.26l-3.04-5.3a1.784 1.784 0 0 0-2.45-.65c-.86.5-1.15 1.6-.65 2.46l.762 1.313a2.253 2.253 0 0 1 2.498 2.236c0 .497-.162.957-.436 1.33m-2.155-1.997a.74.74 0 0 1 .34-.083c.411 0 .751.34.751.75s-.34.75-.75.75s-.75-.34-.75-.75c0-.288.168-.542.41-.667m1.801 11.917h-2.413l.932-2.82c.03-.11.13-.18.3-.18c.11 0 .21.08.24.17l.254.763q.014.05.033.097z" color="currentColor"></svg:path>`,
 })
 export class HugeiconsMicroscopeIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsMicrosoftIcon],svg[hugeicons-microsoft-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 15.5c0-.943 0-1.414.293-1.707s.764-.293 1.707-.293H20c.943 0 1.414 0 1.707.293S22 14.557 22 15.5V20c0 .943 0 1.414-.293 1.707S20.943 22 20 22h-4.5c-.943 0-1.414 0-1.707-.293S13.5 20.943 13.5 20zM2 4c0-.943 0-1.414.293-1.707S3.057 2 4 2h4.5c.943 0 1.414 0 1.707.293S10.5 3.057 10.5 4v4.5c0 .943 0 1.414-.293 1.707s-.764.293-1.707.293H4c-.943 0-1.414 0-1.707-.293S2 9.443 2 8.5zm0 11.5c0-.943 0-1.414.293-1.707S3.057 13.5 4 13.5h4.5c.943 0 1.414 0 1.707.293s.293.764.293 1.707V20c0 .943 0 1.414-.293 1.707S9.443 22 8.5 22H4c-.943 0-1.414 0-1.707-.293S2 20.943 2 20zM13.5 4c0-.943 0-1.414.293-1.707S14.557 2 15.5 2H20c.943 0 1.414 0 1.707.293S22 3.057 22 4v4.5c0 .943 0 1.414-.293 1.707s-.764.293-1.707.293h-4.5c-.943 0-1.414 0-1.707-.293S13.5 9.443 13.5 8.5z" color="currentColor"></svg:path>`,
-})
-export class HugeiconsMicrosoftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[hugeiconsMicrosoftAdminIcon],svg[hugeicons-microsoft-admin-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.998 2C8.99 2 7.04 4.019 4.734 4.755c-.938.3-1.407.449-1.597.66c-.19.21-.245.519-.356 1.135c-1.19 6.596 1.41 12.694 7.61 15.068c.665.255.998.382 1.61.382s.946-.128 1.612-.383c6.199-2.373 8.796-8.471 7.606-15.067c-.111-.616-.167-.925-.357-1.136s-.658-.36-1.596-.659C16.959 4.019 15.006 2 11.998 2M12 2v20m9-10H3" color="currentColor"></svg:path>`,
-})
-export class HugeiconsMicrosoftAdminIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

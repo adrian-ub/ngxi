@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[mdiDiskPlayerIcon],svg[mdi-disk-player-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M14.499 10.374a1.876 1.876 0 0 0 1.876-1.876A1.873 1.873 0 0 0 14.5 6.626a1.872 1.872 0 0 0-1.873 1.872c0 1.034.838 1.876 1.873 1.876zm0-9.374a7.5 7.5 0 0 1 5.1 13H9.401A7.499 7.499 0 0 1 14.5 1zM6 21v1H4v-1H2v-6h20v6h-2v1h-2v-1H6zm-2-3v1h9v-1H4zm11-1v2h2v-2h-2zm4 0a1 1 0 1 0 0 2a1 1 0 0 0 0-2z" fill="currentColor"></svg:path>`,
+})
+export class MdiDiskPlayerIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiDisqusIcon],svg[mdi-disqus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.08 22c-2.45 0-4.69-.89-6.42-2.37l-4.25.58l1.64-4.06c-.55-1.27-.89-2.65-.89-4.15c0-5.5 4.44-10 9.92-10S22 6.5 22 12s-4.44 10-9.92 10m5.42-10.03v-.03C17.5 9.06 15.46 7 11.95 7H8.16v10h3.74c3.53 0 5.6-2.14 5.6-5.03M12 14.54h-1.11V9.46H12c1.62 0 2.7.93 2.7 2.54c0 1.63-1.08 2.54-2.7 2.54"></svg:path>`,
+})
+export class MdiDisqusIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiDisqusOutlineIcon],svg[mdi-disqus-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M11.9 14.5h-1.1v-5h1.1c1.6 0 2.7.9 2.7 2.5s-1.1 2.5-2.7 2.5m0-7.5H8.1v10h3.7c3.5 0 5.6-2.1 5.6-5s-2-5-5.5-5m.1 13c-1.9 0-3.7-.7-5.1-1.9l-.7-.6l-1.7.2l.7-1.6l-.3-.8c-.5-1.1-.7-2.2-.7-3.4c0-4.4 3.6-8 7.9-8c4.3 0 7.8 3.7 7.8 8.1c0 4.4-3.6 8-7.9 8m0-18C6.5 2 2.1 6.5 2.1 12c0 1.5.3 2.9.9 4.2l-1.6 4.1l4.3-.6c1.7 1.5 4 2.4 6.4 2.4c5.5 0 9.9-4.5 9.9-10S17.5 2 12 2z" fill="currentColor"></svg:path>`,
+})
+export class MdiDisqusOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mdiDistributeHorizontalCenterIcon],svg[mdi-distribute-horizontal-center-icon]',
   host: {
     role: 'img',
@@ -8444,57 +8495,6 @@ export class MdiFileReplaceIcon {
   template: `<svg:path fill="currentColor" d="m14 3l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7v2l4-3l-4-3v2H4V3zm7 7v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-2h2v2h11v-9h-5V7H8v6H6V7a2 2 0 0 1 2-2h8z"></svg:path>`,
 })
 export class MdiFileReplaceOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiFileRestoreIcon],svg[mdi-file-restore-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-2 16c-2.05 0-3.81-1.24-4.58-3h1.71c.63.9 1.68 1.5 2.87 1.5a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 12 9.5c-1.35 0-2.5.78-3.1 1.9l1.6 1.6h-4V9l1.3 1.3C8.69 8.92 10.23 8 12 8a5 5 0 0 1 5 5a5 5 0 0 1-5 5"></svg:path>`,
-})
-export class MdiFileRestoreIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiFileRestoreOutlineIcon],svg[mdi-file-restore-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8zm4 18H6V4h7l5 5zm-1-6.76c0 2.62-2.13 4.76-4.76 4.76c-1.95 0-3.63-1.18-4.36-2.86H9.5c.61.86 1.61 1.43 2.74 1.43c1.84 0 3.33-1.5 3.33-3.33S14.08 9.9 12.24 9.9c-1.29 0-2.38.75-2.95 1.81l1.52 1.53H7V9.43l1.24 1.24a4.71 4.71 0 0 1 4-2.17c2.63-.03 4.76 2.11 4.76 4.74"></svg:path>`,
-})
-export class MdiFileRestoreOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiFileRotateLeftIcon],svg[mdi-file-rotate-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M17 7h-4c-1.1 0-2 .9-2 2v9a2 2 0 0 0 2 2h6c1.11 0 2-.89 2-2v-7zm2 5h-3V9h.17L19 11.83zM4 11c0-4.42 3.58-8 8-8l1 .06v2.02L12 5c-3.31 0-6 2.69-6 6h3l-4 4l-4-4z"></svg:path>`,
-})
-export class MdiFileRotateLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

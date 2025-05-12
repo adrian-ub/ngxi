@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[emojioneFlagForCoteDivoireIcon],svg[emojione-flag-for-cote-divoire-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#f2b200" d="M2 32c0 13.1 8.4 24.2 20 28.3V3.7C10.4 7.8 2 18.9 2 32"></svg:path><svg:path fill="#83bf4f" d="M62 32c0-13.1-8.3-24.2-20-28.3v56.6C53.7 56.2 62 45.1 62 32"></svg:path><svg:path fill="#f9f9f9" d="M22 60.3c3.1 1.1 6.5 1.7 10 1.7s6.9-.6 10-1.7V3.7C38.9 2.6 35.5 2 32 2s-6.9.6-10 1.7z"></svg:path>`,
+})
+export class EmojioneFlagForCoteDivoireIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[emojioneFlagForCroatiaIcon],svg[emojione-flag-for-croatia-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class EmojioneMagnifyingGlassTiltedRightIcon {
   template: `<svg:path fill="#b69467" d="M64 30.8v-8.4h-5.7v3L40.4 11c-.9-.8-2.5-.8-3.4 0L5.7 36v-2.8H0v8.5c.1.4.3.8.7 1.2l22.9 18.4c.9.8 2.5.8 3.4 0l36.2-29.1c.5-.4.8-.9.8-1.4"></svg:path><svg:path fill="#efdec2" d="M27.1 53c-.9.8-2.5.8-3.4 0L.7 34.6c-.9-.8-.9-2 0-2.8L36.9 2.7c.9-.8 2.5-.8 3.4 0l22.9 18.4c.9.8.9 2 0 2.8z"></svg:path><svg:path fill="#b70000" d="M46.5 13.5c.8 2.1.3 4.2.3 6.3c-1.8 2.1-3.7 0-5.5 2.5c3.8 2 9.1 6.4 6.6 10.5c-4.1-.6-8.3-1.6-12.3.6c0-1.2-2-2.4-3.5-3.7C25.7 31.8 22.6 40 15.8 41c.3-4.6 11.3-9 13.4-13.6c-1.6-2-3-1.1-4.6-2.8C28.8 21 21.5 17 28 13.5c2.1 1.6.1 3 1.3 4.5c2.5 1.5 4.9 1.9 7.4 3.3c3.8-2.6 3.2-5.3 5.3-7.9c1.5-.3 3.1.6 4.5.1M38 24c-1.6 1.3-3.2 2.6-4.9 3.9c3.6 2.2 7.1 1.5 10.6-.2c-.2-2.1-3.8-3-5.7-3.7m-7.9-3.8c-.9 1.9-2.3 3.8.8 5.9c1.5-1.5 4.8-2.9 3.2-4.4c-1.4.2-2.7-.9-4-1.5"></svg:path>`,
 })
 export class EmojioneMahjongRedDragonIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[emojioneManIcon],svg[emojione-man-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#ffb300" d="M6 36h52C58 8 54 2 32 2S6 8 6 36"></svg:path><svg:path fill="#ffdd67" d="M55.8 29.9c-.2 1.1-.4 2.1-.7 2.7c-.6 1-1.7 1.6-1.7 1.6s.3-2.1.2-5C52.4 11.8 51.4 16.6 32 16.6s-20.4-4.8-21.6 12.5c-.1 2.9.2 5.1.2 5.1s-1.1-.6-1.7-1.6c-.3-.6-.5-1.6-.7-2.7C6.4 29.4 4 29.8 4 35c0 3.2 1.2 5.9 5.3 6.2c1.3 10.2 7.3 15.4 17.2 19.9c2.7 1.2 8.3 1.2 11 0c10-4.5 15.9-9.7 17.2-19.9c4.1-.3 5.3-2.9 5.3-6.2c0-5.2-2.4-5.6-4.2-5.1"></svg:path><svg:path fill="#937237" d="M41 48.9c0 3.4-4.5 5.1-9 5.1s-9-1.7-9-5.1c0 0 0-.9.9-.9h16.2c.9 0 .9.9.9.9"></svg:path><svg:path fill="#f5f5f5" d="M20 28.6c-5 0-7 1.8-7 3.6s0 4.4 6.6 4.4c6.4 0 7.4-.8 7.4-3.5c0-1.8-2-4.5-7-4.5"></svg:path><svg:circle cx="20.5" cy="31.6" r="4.5" fill="#664e27"></svg:circle><svg:path fill="#231f20" d="M22 31.6c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5s1.5.7 1.5 1.5"></svg:path><svg:path fill="#664e27" d="M13 32.1c0-7 14-7 14 1c-2-6-12-6-14-1"></svg:path><svg:path fill="#f5f5f5" d="M44 28.6c5 0 7 1.8 7 3.6s0 4.4-6.6 4.4c-6.4 0-7.4-.8-7.4-3.5c0-1.8 2-4.5 7-4.5"></svg:path><svg:circle cx="43.5" cy="31.6" r="4.5" fill="#664e27"></svg:circle><svg:path fill="#231f20" d="M42 31.6c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5"></svg:path><svg:path fill="#664e27" d="M51 32.1c0-7-14-7-14 1c2-6 12-6 14-1"></svg:path><svg:path fill="#eba352" d="M32 45c-4.2 0-6.3-3-4.2-3h8.4c2.1 0 0 3-4.2 3"></svg:path>`,
-})
-export class EmojioneManIcon {
   readonly viewBox = input("0 0 64 64")
   readonly width = input("1em")
   readonly height = input("1em")

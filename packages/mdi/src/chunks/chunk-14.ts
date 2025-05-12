@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[mdiToyBrickMinusIcon],svg[mdi-toy-brick-minus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M23 20h-8v-2h8zm-10-1c0-3.31 2.69-6 6-6c.7 0 1.37.13 2 .35V6h-2V5a2 2 0 0 0-2-2h-2c-1.1 0-2 .9-2 2v1h-2V5a2 2 0 0 0-2-2H7c-1.1 0-2 .9-2 2v1H3v14h10.09c-.05-.33-.09-.66-.09-1"></svg:path>`,
+})
+export class MdiToyBrickMinusIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiToyBrickMinusOutlineIcon],svg[mdi-toy-brick-minus-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.09 20H3V6h2V5c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v1h2V5c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v1h2v7.35c-.63-.22-1.3-.35-2-.35V8H5v10h8.09c-.05.33-.09.66-.09 1s.04.67.09 1M23 18h-8v2h8z"></svg:path>`,
+})
+export class MdiToyBrickMinusOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiToyBrickOutlineIcon],svg[mdi-toy-brick-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19 6V5a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v1h-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v1H3v14h18V6m-2 12H5V8h14Z"></svg:path>`,
+})
+export class MdiToyBrickOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mdiToyBrickPlusIcon],svg[mdi-toy-brick-plus-icon]',
   host: {
     role: 'img',
@@ -8444,57 +8495,6 @@ export class MdiWebhookIcon {
   template: `<svg:path fill="currentColor" d="m20.45 17.39l-8.09 4.58V18.4l5.04-2.77zm.55-.5V7.31L18.04 9v6.18zm-17.45.5l8.09 4.57V18.4L6.6 15.63zm-.55-.5V7.31L5.96 9v6.18zm.35-10.2L11.64 2v3.45L6.33 8.37l-.05.02zm17.3 0L12.36 2v3.45l5.31 2.93l.04.02zm-9.01 10.9l-4.97-2.74V9.44l4.97 2.87zm.72 0l4.97-2.73V9.44l-4.97 2.87zM7 8.81l5-2.75l5 2.75l-5 2.88z"></svg:path>`,
 })
 export class MdiWebpackIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiWebrtcIcon],svg[mdi-webrtc-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 2c2.44 0 4.5 1.75 4.91 4.07l.84-.07c2.75 0 5 2.24 5 5a5 5 0 0 1-2.59 4.38a5.015 5.015 0 0 1-4.41 7.37A5 5 0 0 1 12 21.06a5 5 0 0 1-3.75 1.69c-2.75 0-5-2.25-5-5c0-.86.22-1.66.59-2.37A5 5 0 0 1 1.25 11c0-2.76 2.25-5 5-5l.84.07C7.5 3.75 9.56 2 12 2M6.75 20.25L13.66 17H17c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v7c0 .55.45 1 1 1h.77z"></svg:path>`,
-})
-export class MdiWebrtcIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiWechatIcon],svg[mdi-wechat-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.5 4C5.36 4 2 6.69 2 10c0 1.89 1.08 3.56 2.78 4.66L4 17l2.5-1.5c.89.31 1.87.5 2.91.5A5.2 5.2 0 0 1 9 14c0-3.31 3.13-6 7-6c.19 0 .38 0 .56.03C15.54 5.69 12.78 4 9.5 4m-3 2.5a1 1 0 0 1 1 1a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1m5 0a1 1 0 0 1 1 1a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1M16 9c-3.31 0-6 2.24-6 5s2.69 5 6 5c.67 0 1.31-.08 1.91-.25L20 20l-.62-1.87C20.95 17.22 22 15.71 22 14c0-2.76-2.69-5-6-5m-2 2.5a1 1 0 0 1 1 1a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1m4 0a1 1 0 0 1 1 1a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1"></svg:path>`,
-})
-export class MdiWechatIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mdiWeightIcon],svg[mdi-weight-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 3a4 4 0 0 1 4 4c0 .73-.19 1.41-.54 2H18c.95 0 1.75.67 1.95 1.56C21.96 18.57 22 18.78 22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2c0-.22.04-.43 2.05-8.44C4.25 9.67 5.05 9 6 9h2.54A3.9 3.9 0 0 1 8 7a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2"></svg:path>`,
-})
-export class MdiWeightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

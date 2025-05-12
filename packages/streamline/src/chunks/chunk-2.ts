@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[streamlineInterfaceHome4DoorEntrnaceMapIcon],svg[streamline-interface-home-4-door-entrnace-map-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:rect width="9" height="13" x="2.5" y=".5" rx="1"></svg:rect><svg:path d="M8 7.5h1"></svg:path></svg:g>`,
+})
+export class StreamlineInterfaceHome4DoorEntrnaceMapIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineInterfaceHome5DoorEntranceHomeHouseMapRoofRoundWindowIcon],svg[streamline-interface-home-5-door-entrance-home-house-map-roof-round-window-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M.5 8.5L7 2l6.5 6.5"></svg:path><svg:path d="M2.5 6.5v7h9v-7m-4.5 7v-3"></svg:path><svg:circle cx="7" cy="6.75" r="1.25"></svg:circle></svg:g>`,
+})
+export class StreamlineInterfaceHome5DoorEntranceHomeHouseMapRoofRoundWindowIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[streamlineInterfaceIdFaceScan2IdentificationAngleSecureHumanIdPersonFaceSecurityBracketsIcon],svg[streamline-interface-id-face-scan-2-identification-angle-secure-human-id-person-face-security-brackets-icon]',
   host: {
     role: 'img',
@@ -8461,40 +8495,6 @@ export class StreamlineProgrammingBrowserAddAppCodeAppsAddProgrammingWindowPlusI
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M13.5 7.5v5a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1h4v7Zm-13-4h13m-3.5 4v-7"></svg:path>`,
 })
 export class StreamlineProgrammingBrowserBuildBuildWebsiteDevelopmentWindowCodeProgrammingWebBackendBrowserDevIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineProgrammingBrowserCheckCheckmarkPassWindowAppCodeProgrammingSuccessCheckAppsIcon],svg[streamline-programming-browser-check-checkmark-pass-window-app-code-programming-success-check-apps-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:rect width="13" height="13" x=".5" y=".5" rx="1"></svg:rect><svg:path d="M.5 3.5h13M4 9l2 1.5l3.5-4"></svg:path></svg:g>`,
-})
-export class StreamlineProgrammingBrowserCheckCheckmarkPassWindowAppCodeProgrammingSuccessCheckAppsIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineProgrammingBrowserCode1CodeBrowserLineShellProgrammingCommandTerminalIcon],svg[streamline-programming-browser-code-1-code-browser-line-shell-programming-command-terminal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:rect width="13" height="13" x=".5" y=".5" rx="1"></svg:rect><svg:path d="M.5 4h13M4 7l1.5 1.5L4 10m4.5-1.5h2"></svg:path></svg:g>`,
-})
-export class StreamlineProgrammingBrowserCode1CodeBrowserLineShellProgrammingCommandTerminalIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

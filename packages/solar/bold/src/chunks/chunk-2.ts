@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[solarSquareDoubleAltArrowLeftBoldIcon],svg[solar-square-double-alt-arrow-left-bold-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12m14.03-2.47a.75.75 0 0 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06L13.56 12zm-4-1.06a.75.75 0 0 1 0 1.06L9.56 12l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3-3a.75.75 0 0 1 0-1.06l3-3a.75.75 0 0 1 1.06 0" clip-rule="evenodd"></svg:path>`,
+})
+export class SolarSquareDoubleAltArrowLeftBoldIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[solarSquareDoubleAltArrowRightBoldIcon],svg[solar-square-double-alt-arrow-right-bold-icon]',
   host: {
     role: 'img',
@@ -3956,23 +3973,6 @@ export class SolarXxxBoldIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.172 3.172C3 4.343 3 6.229 3 10v4c0 3.771 0 5.657 1.172 6.828S7.229 22 11 22h2c3.771 0 5.657 0 6.828-1.172S21 17.771 21 14v-4c0-3.771 0-5.657-1.172-6.828S16.771 2 13 2h-1v2h1.5c.471 0 .707 0 .854.146c.146.147.146.383.146.854s0 .707-.146.854C14.207 6 13.97 6 13.5 6H12v2h1.5c.471 0 .707 0 .854.146c.146.147.146.383.146.854s0 .707-.146.854C14.207 10 13.97 10 13.5 10H13c-.471 0-.707 0-.854-.146C12 9.707 12 9.47 12 9V8h-1.5c-.471 0-.707 0-.854-.146C9.5 7.707 9.5 7.47 9.5 7s0-.707.146-.854C9.793 6 10.03 6 10.5 6H12V4h-1.5c-.471 0-.707 0-.854-.146C9.5 3.707 9.5 3.47 9.5 3v-.997c-2.794.02-4.324.164-5.328 1.169M9.5 12.875V13a2.5 2.5 0 0 0 5 0v-.125a.875.875 0 0 0-.875-.875h-3.25a.875.875 0 0 0-.875.875" clip-rule="evenodd"></svg:path>`,
 })
 export class SolarZipFileBoldIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[solarAccumulatorBoldIcon],svg[solar-accumulator-bold-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:mask id="solarAccumulatorBold0"><svg:g fill="none"><svg:path fill="#fff" d="M22 14v-2.025c0-1.846 0-2.768-.392-3.458a3 3 0 0 0-1.125-1.125C19.793 7 18.871 7 17.025 7h-.28c-.123 0-.184 0-.24-.006a1 1 0 0 1-.725-.448a2 2 0 0 1-.113-.213c-.11-.22-.165-.33-.228-.425a2 2 0 0 0-1.447-.895C13.878 5 13.755 5 13.509 5h-3.018c-.246 0-.37 0-.482.013a2 2 0 0 0-1.448.895c-.063.095-.118.205-.228.425c-.055.11-.082.165-.113.213a1 1 0 0 1-.724.447C7.439 7 7.378 7 7.255 7h-.28c-1.846 0-2.768 0-3.458.392a3 3 0 0 0-1.125 1.125C2 9.207 2 10.129 2 11.975V14c0 2.828 0 4.243.879 5.121C3.757 20 5.172 20 8 20h8c2.828 0 4.243 0 5.121-.879C22 18.243 22 16.828 22 14"></svg:path><svg:path fill="#fff" d="M5.045 3.25c.433 0 .83 0 1.152.043c.356.048.731.16 1.04.47s.422.684.47 1.04l.008.066c.034.299-.056.595-.197.86a.5.5 0 0 1-.443.27L6.93 6c-.885 0-1.614 0-2.207.053c-.616.055-1.18.174-1.7.47a4 4 0 0 0-.773.572v-1.14c0-.433 0-.83.043-1.152c.048-.356.16-.731.47-1.04s.684-.422 1.04-.47c.323-.043.72-.043 1.152-.043zm14 0c.433 0 .83 0 1.152.043c.356.048.731.16 1.04.47s.422.684.47 1.04c.043.323.043.72.043 1.152v1.14a4 4 0 0 0-.773-.572c-.52-.296-1.084-.415-1.7-.47C18.684 6 17.954 6 17.07 6l-.153-.001a.5.5 0 0 1-.437-.27c-.14-.265-.229-.56-.195-.858l.008-.068c.048-.356.16-.731.47-1.04s.684-.422 1.04-.47c.323-.043.72-.043 1.152-.043z"></svg:path><svg:path fill="#000" fill-rule="evenodd" d="M16.5 11.25a.75.75 0 0 1 .75.75v.75H18a.75.75 0 0 1 0 1.5h-.75V15a.75.75 0 0 1-1.5 0v-.75H15a.75.75 0 0 1 0-1.5h.75V12a.75.75 0 0 1 .75-.75M5.25 13.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75" clip-rule="evenodd"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h24v24H0z" mask="url(#solarAccumulatorBold0)"></svg:path>`,
-})
-export class SolarAccumulatorBoldIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

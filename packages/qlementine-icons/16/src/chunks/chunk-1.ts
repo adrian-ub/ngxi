@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[qlementineIconsWoodwind16Icon],svg[qlementine-icons-woodwind-16-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M15.5 3.86a1.63 1.63 0 0 1 0 2.3l-.001.002a1.63 1.63 0 0 1-2.3 0l-.001-.001c-.089-.089-.265-.163-.537-.157q-.031 0-.061.003a.68.68 0 0 0-.431.224c-1.04 1.05-6.3 6.4-7.81 7.8a1.4 1.4 0 0 1-.291 1.557a1.4 1.4 0 0 1-1.965.017l-.006-.006l-1.71-1.71a1.4 1.4 0 0 1 0-1.976l.006-.006a1.4 1.4 0 0 1 1.554-.288c1.68-1.7 6.81-6.82 7.82-7.83c.116-.116.206-.256.215-.42l.001-.052c.004-.257-.07-.436-.168-.535V2.78a1.63 1.63 0 0 1 0-2.3l.001-.002a1.63 1.63 0 0 1 2.3 0l.001.001l3.38 3.38zm-12.1 11a.4.4 0 0 0 .005-.562l-.177-.177a.25.25 0 0 1 0-.354l8.52-8.52c.245-.245 1.49-.512 2.19.189a.629.629 0 0 0 .89-.89l-3.38-3.38a.629.629 0 0 0-.89.89c.701.7.465 1.92.19 2.19l-8.52 8.52a.25.25 0 0 1-.213.07a.25.25 0 0 1-.142-.07l-.173-.172a.402.402 0 0 0-.568.568l1.7 1.7a.4.4 0 0 0 .562-.005z" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="m2.68 9.85l.9-.9a.506.506 0 0 0 0-.712l-.094-.094a.506.506 0 0 0-.712 0l-.9.9a.506.506 0 0 0 0 .712l.094.094a.506.506 0 0 0 .712 0m2.27-2.27l.9-.9a.506.506 0 0 0 0-.712l-.094-.094a.506.506 0 0 0-.712 0l-.9.9a.506.506 0 0 0 0 .712l.094.094a.506.506 0 0 0 .712 0M7.23 5.3l.9-.9a.506.506 0 0 0 0-.712l-.094-.093a.506.506 0 0 0-.712 0l-.9.9a.506.506 0 0 0 0 .712l.094.093a.506.506 0 0 0 .712 0"></svg:path>`,
+})
+export class QlementineIconsWoodwind16Icon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[qlementineIconsX16Icon],svg[qlementine-icons-x-16-icon]',
   host: {
     role: 'img',
@@ -233,23 +250,6 @@ export class QlementineIconsZoomOut16Icon {
   template: `<svg:path fill="currentColor" d="M.146 13.1a.5.5 0 0 1 .707 0l1.15 1.15V1.65L.853 2.8a.5.5 0 0 1-.707-.707l2-2a.5.5 0 0 1 .353-.147a.5.5 0 0 1 .353.147l2 2a.5.5 0 0 1-.707.707l-1.15-1.15v12.6l1.15-1.15a.5.5 0 0 1 .707.707l-2 2a.5.5 0 0 1-.353.146a.5.5 0 0 1-.353-.146l-2-2a.5.5 0 0 1 0-.707"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M13.1 11.2a4.5 4.5 0 0 1-2.61.832c-2.49 0-4.5-2.01-4.5-4.5s2.01-4.5 4.5-4.5s4.5 2.01 4.5 4.5c0 .972-.308 1.87-.832 2.61l1.61 1.61a.749.749 0 1 1-1.06 1.06l-1.61-1.61zm.893-3.67c0 1.93-1.57 3.5-3.5 3.5s-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5s3.5 1.57 3.5 3.5" clip-rule="evenodd"></svg:path>`,
 })
 export class QlementineIconsZoomVertical16Icon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[qlementineIconsAndroidFill16Icon],svg[qlementine-icons-android-fill-16-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11 .371a.25.25 0 0 0-.437-.243l-.643 1.16a3.5 3.5 0 0 0-.996-.265c-.195-.022-.428-.022-.892-.022s-.697 0-.892.022a3.5 3.5 0 0 0-.996.265L5.5.128a.25.25 0 1 0-.437.243L5.7 1.52a3.52 3.52 0 0 0-1.65 2.59c-.022.195-.022.428-.022.892h8c0-.464 0-.697-.022-.892a3.49 3.49 0 0 0-1.65-2.59l.637-1.15zm-4.97 3.13a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m4.5-.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M1 6a1 1 0 0 1 2 0v4a1 1 0 0 1-2 0zm12 0a1 1 0 0 1 2 0v4a1 1 0 0 1-2 0zM4 6v6a1 1 0 0 0 1 1v2a1 1 0 0 0 2 0v-2h2v2a1 1 0 0 0 2 0v-2a1 1 0 0 0 1-1V6z"></svg:path>`,
-})
-export class QlementineIconsAndroidFill16Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

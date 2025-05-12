@@ -2,6 +2,57 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[pepiconsPencilGiftIcon],svg[pepicons-pencil-gift-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M3 5h14a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1m14 12V6H3v11z" clip-rule="evenodd"></svg:path><svg:path d="M9.5 5.5h1v12h-1z"></svg:path><svg:path d="M2 10.5h16v1H2z"></svg:path><svg:path fill-rule="evenodd" d="M8.943 1.554c1.125.978 1.787 3.001 1.035 3.866c-.75.864-2.374.27-3.659-.847c-1.094-.951-1.469-2.399-.712-3.269c.756-.87 2.242-.701 3.336.25M6.975 3.82c.897.779 2.033 1.194 2.249.945c.3-.344-.174-1.792-.937-2.455c-.725-.63-1.595-.73-1.926-.349c-.33.38-.11 1.229.614 1.859" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M11.298 1.554c-1.124.978-1.787 3.001-1.035 3.866c.75.864 2.374.27 3.66-.847c1.094-.951 1.469-2.399.712-3.269c-.756-.87-2.242-.701-3.337.25m1.969 2.265c-.897.779-2.033 1.194-2.249.945c-.3-.344.174-1.792.936-2.455c.725-.63 1.596-.73 1.926-.349c.33.38.111 1.229-.613 1.859" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class PepiconsPencilGiftIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsPencilGiftCircleIcon],svg[pepicons-pencil-gift-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M6 8h14a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1m14 12V9H6v11z" clip-rule="evenodd"></svg:path><svg:path d="M12.5 8.5h1v12h-1z"></svg:path><svg:path d="M5 13.5h16v1H5z"></svg:path><svg:path fill-rule="evenodd" d="M11.943 4.554c1.125.978 1.787 3.001 1.035 3.866c-.75.864-2.374.27-3.659-.847c-1.094-.951-1.469-2.399-.712-3.269c.756-.87 2.242-.701 3.336.25M9.975 6.82c.897.779 2.033 1.194 2.249.945c.3-.344-.174-1.792-.937-2.455c-.725-.63-1.595-.73-1.926-.349c-.33.38-.11 1.229.614 1.859" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M14.298 4.554c-1.124.978-1.787 3.001-1.035 3.866c.75.864 2.374.27 3.66-.847c1.094-.951 1.469-2.399.712-3.269c-.756-.87-2.242-.701-3.337.25m1.969 2.265c-.897.779-2.033 1.194-2.249.945c-.3-.344.174-1.792.936-2.455c.725-.63 1.596-.73 1.926-.349c.33.38.111 1.229-.613 1.859" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M13 24.5c6.351 0 11.5-5.149 11.5-11.5S19.351 1.5 13 1.5S1.5 6.649 1.5 13S6.649 24.5 13 24.5m0 1c6.904 0 12.5-5.596 12.5-12.5S19.904.5 13 .5S.5 6.096.5 13S6.096 25.5 13 25.5" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class PepiconsPencilGiftCircleIcon {
+  readonly viewBox = input("0 0 26 26")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pepiconsPencilGiftCircleFilledIcon],svg[pepicons-pencil-gift-circle-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:defs><svg:mask id="pepiconsPencilGiftCircleFilled0"><svg:path fill="#fff" d="M0 0h26v26H0z"></svg:path><svg:g fill="#000"><svg:path fill-rule="evenodd" d="M6 8h14a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1m14 12V9H6v11z" clip-rule="evenodd"></svg:path><svg:path d="M12.5 8.5h1v12h-1z"></svg:path><svg:path d="M5 13.5h16v1H5z"></svg:path><svg:path fill-rule="evenodd" d="M11.943 4.554c1.125.978 1.787 3.001 1.035 3.866c-.75.864-2.374.27-3.659-.847c-1.094-.951-1.469-2.399-.712-3.269c.756-.87 2.242-.701 3.336.25M9.975 6.82c.897.779 2.033 1.194 2.249.945c.3-.344-.174-1.792-.937-2.455c-.725-.63-1.595-.73-1.926-.349c-.33.38-.11 1.229.614 1.859" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M14.298 4.554c-1.124.978-1.787 3.001-1.035 3.866c.75.864 2.374.27 3.66-.847c1.094-.951 1.469-2.399.712-3.269c-.756-.87-2.242-.701-3.337.25m1.969 2.265c-.897.779-2.033 1.194-2.249.945c-.3-.344.174-1.792.936-2.455c.725-.63 1.596-.73 1.926-.349c.33.38.111 1.229-.613 1.859" clip-rule="evenodd"></svg:path></svg:g></svg:mask></svg:defs><svg:circle cx="13" cy="13" r="13" fill="currentColor" mask="url(#pepiconsPencilGiftCircleFilled0)"></svg:circle></svg:g>`,
+})
+export class PepiconsPencilGiftCircleFilledIcon {
+  readonly viewBox = input("0 0 26 26")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[pepiconsPencilGiftCircleOffIcon],svg[pepicons-pencil-gift-circle-off-icon]',
   host: {
     role: 'img',
@@ -8444,57 +8495,6 @@ export class PepiconsPencilShieldCheckCircleFilledIcon {
   template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M14.558 5.332a3.5 3.5 0 0 0-3.115 0L7.807 7.14C6.707 7.686 5.99 8.75 6 9.935c.016 1.776.207 4.132.949 5.688c.824 1.728 2.8 3.456 4.368 4.625c1.007.75 2.357.75 3.364 0c1.567-1.169 3.544-2.897 4.368-4.626c.742-1.555.933-3.91.949-5.687c.01-1.184-.705-2.25-1.806-2.796zm-3.56-.895a4.5 4.5 0 0 1 4.005 0l3.635 1.806c1.402.697 2.375 2.09 2.36 3.7c-.015 1.783-.2 4.337-1.045 6.11c-.94 1.972-3.103 3.826-4.673 4.997a3.794 3.794 0 0 1-4.56 0c-1.57-1.171-3.733-3.025-4.673-4.997C5.2 14.28 5.017 11.726 5 9.943c-.014-1.61.96-3.003 2.361-3.7z" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M15.795 10.884c.212.178.24.494.065.707l-1.78 2.155a1.486 1.486 0 0 1-2.205.097l-1.208-1.22a.505.505 0 0 1-.001-.71a.495.495 0 0 1 .704.002l1.209 1.22c.207.21.548.194.735-.032l1.78-2.156a.495.495 0 0 1 .7-.063" clip-rule="evenodd"></svg:path><svg:path d="M4.15 4.878a.514.514 0 0 1 .728-.727l16.971 16.971a.514.514 0 0 1-.727.727z"></svg:path><svg:path fill-rule="evenodd" d="M13 24.5c6.351 0 11.5-5.149 11.5-11.5S19.351 1.5 13 1.5S1.5 6.649 1.5 13S6.649 24.5 13 24.5m0 1c6.904 0 12.5-5.596 12.5-12.5S19.904.5 13 .5S.5 6.096.5 13S6.096 25.5 13 25.5" clip-rule="evenodd"></svg:path></svg:g>`,
 })
 export class PepiconsPencilShieldCheckCircleOffIcon {
-  readonly viewBox = input("0 0 26 26")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pepiconsPencilShieldCheckOffIcon],svg[pepicons-pencil-shield-check-off-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M11.558 2.332a3.5 3.5 0 0 0-3.115 0L4.807 4.14C3.707 4.686 2.99 5.75 3 6.935c.016 1.776.207 4.132.949 5.688c.824 1.728 2.8 3.456 4.368 4.625c1.007.75 2.357.75 3.364 0c1.567-1.169 3.544-2.897 4.368-4.626c.742-1.555.933-3.91.949-5.687c.01-1.184-.705-2.25-1.806-2.796zm-3.56-.895a4.5 4.5 0 0 1 4.004 0l3.636 1.806c1.402.697 2.375 2.09 2.36 3.7c-.015 1.783-.2 4.337-1.045 6.11c-.94 1.972-3.103 3.826-4.673 4.997a3.794 3.794 0 0 1-4.56 0c-1.57-1.171-3.733-3.025-4.673-4.997C2.2 11.28 2.017 8.726 2 6.943c-.014-1.61.96-3.003 2.361-3.7z" clip-rule="evenodd"></svg:path><svg:path fill-rule="evenodd" d="M12.795 7.884c.212.178.24.494.065.707l-1.78 2.155a1.486 1.486 0 0 1-2.205.097l-1.208-1.22a.505.505 0 0 1-.001-.71a.495.495 0 0 1 .704.002l1.209 1.22c.207.21.548.194.735-.032l1.78-2.156a.495.495 0 0 1 .7-.063" clip-rule="evenodd"></svg:path><svg:path d="M1.15 1.878a.514.514 0 0 1 .728-.727l16.971 16.971a.514.514 0 0 1-.727.727z"></svg:path></svg:g>`,
-})
-export class PepiconsPencilShieldCheckOffIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pepiconsPencilShieldCheckeredIcon],svg[pepicons-pencil-shield-checkered-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M11.558 2.332a3.5 3.5 0 0 0-3.115 0L4.807 4.14C3.707 4.686 2.99 5.75 3 6.935c.016 1.776.207 4.132.949 5.688c.824 1.728 2.8 3.456 4.368 4.625c1.007.75 2.357.75 3.364 0c1.567-1.169 3.544-2.897 4.368-4.626c.742-1.555.933-3.91.949-5.687c.01-1.184-.705-2.25-1.806-2.796zm-3.56-.895a4.5 4.5 0 0 1 4.004 0l3.636 1.806c1.402.697 2.375 2.09 2.36 3.7c-.015 1.783-.2 4.337-1.045 6.11c-.94 1.972-3.103 3.826-4.673 4.997a3.794 3.794 0 0 1-4.56 0c-1.57-1.171-3.733-3.025-4.673-4.997C2.2 11.28 2.017 8.726 2 6.943c-.014-1.61.96-3.003 2.361-3.7z" clip-rule="evenodd"></svg:path><svg:path d="m9.505 1.5l3.467 1l3.963 2.368l.496 2.632l-.496 2.5h-6.93a.5.5 0 0 1-.5-.5z"></svg:path><svg:path d="M2.57 9.5H9.5a.5.5 0 0 1 .5.5v8.5L5.542 16L3.56 12.5z"></svg:path></svg:g>`,
-})
-export class PepiconsPencilShieldCheckeredIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pepiconsPencilShieldCheckeredCircleIcon],svg[pepicons-pencil-shield-checkered-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path fill-rule="evenodd" d="M14.558 5.332a3.5 3.5 0 0 0-3.115 0L7.807 7.14C6.707 7.686 5.99 8.75 6 9.935c.016 1.776.207 4.132.949 5.688c.824 1.728 2.8 3.456 4.368 4.625c1.007.75 2.357.75 3.364 0c1.567-1.169 3.544-2.897 4.368-4.626c.742-1.555.933-3.91.949-5.687c.01-1.184-.705-2.25-1.806-2.796zm-3.56-.895a4.5 4.5 0 0 1 4.005 0l3.635 1.806c1.402.697 2.375 2.09 2.36 3.7c-.015 1.783-.2 4.337-1.045 6.11c-.94 1.972-3.103 3.826-4.673 4.997a3.794 3.794 0 0 1-4.56 0c-1.57-1.171-3.733-3.025-4.673-4.997C5.2 14.28 5.017 11.726 5 9.943c-.014-1.61.96-3.003 2.361-3.7z" clip-rule="evenodd"></svg:path><svg:path d="m12.505 4.5l3.467 1l3.963 2.368l.496 2.632l-.496 2.5h-6.93a.5.5 0 0 1-.5-.5z"></svg:path><svg:path d="M5.57 12.5h6.93a.5.5 0 0 1 .5.5v8.5L8.542 19L6.56 15.5z"></svg:path><svg:path fill-rule="evenodd" d="M13 24.5c6.351 0 11.5-5.149 11.5-11.5S19.351 1.5 13 1.5S1.5 6.649 1.5 13S6.649 24.5 13 24.5m0 1c6.904 0 12.5-5.596 12.5-12.5S19.904.5 13 .5S.5 6.096.5 13S6.096 25.5 13 25.5" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class PepiconsPencilShieldCheckeredCircleIcon {
   readonly viewBox = input("0 0 26 26")
   readonly width = input("1em")
   readonly height = input("1em")

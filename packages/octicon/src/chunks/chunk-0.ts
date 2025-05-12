@@ -19,23 +19,6 @@ export class OcticonAlertIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[octiconArrowBothIcon],svg[octicon-arrow-both-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M0 8l6-5v3h8V3l6 5l-6 5v-3H6v3L0 8z" fill="currentColor"></svg:path>`,
-})
-export class OcticonArrowBothIcon {
-  readonly viewBox = input("0 0 20 16")
-  readonly width = input("1.25em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[octiconArchiveIcon],svg[octicon-archive-icon]',
   host: {
     role: 'img',
@@ -48,6 +31,23 @@ export class OcticonArrowBothIcon {
 export class OcticonArchiveIcon {
   readonly viewBox = input("0 0 14 16")
   readonly width = input("0.88em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[octiconArrowBothIcon],svg[octicon-arrow-both-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M0 8l6-5v3h8V3l6 5l-6 5v-3H6v3L0 8z" fill="currentColor"></svg:path>`,
+})
+export class OcticonArrowBothIcon {
+  readonly viewBox = input("0 0 20 16")
+  readonly width = input("1.25em")
   readonly height = input("1em")
 }
 

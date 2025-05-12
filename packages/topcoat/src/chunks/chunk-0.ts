@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[topcoatArrowLeftIcon],svg[topcoat-arrow-left-icon]',
+  selector: 'svg[topcoatAlertIcon],svg[topcoat-alert-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M39.5 26.5v-10c0-2.529-.508-3-2.979-3H21.5v-12l-20 20l20 20v-12h15.021c2.44 0 2.979-.5 2.979-3"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M18.295 3.895L1.203 34.555C-.219 37.146.385 39.5 4.228 39.5H36.77c3.854 0 4.447-2.354 3.025-4.945L22.35 3.914c-.354-.691-.868-1.424-1.957-1.414c-1.16.021-1.735.703-2.098 1.395M18.5 13.5h4v14h-4zm0 17h4v4h-4z"></svg:path>`,
 })
-export class TopcoatArrowLeftIcon {
+export class TopcoatAlertIcon {
   readonly viewBox = input("0 0 42 42")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,6 +36,40 @@ export class TopcoatArrowRightIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[topcoatArrowDownIcon],svg[topcoat-arrow-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M25.5 2.5h-10c-2.53 0-3 .529-3 3v15H.5l20 20l20-20h-12v-15c0-2.439-.5-3-3-3"></svg:path>`,
+})
+export class TopcoatArrowDownIcon {
+  readonly viewBox = input("0 0 42 42")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[topcoatArrowLeftIcon],svg[topcoat-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M39.5 26.5v-10c0-2.529-.508-3-2.979-3H21.5v-12l-20 20l20 20v-12h15.021c2.44 0 2.979-.5 2.979-3"></svg:path>`,
+})
+export class TopcoatArrowLeftIcon {
+  readonly viewBox = input("0 0 42 42")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[topcoatArrowUpIcon],svg[topcoat-arrow-up-icon]',
   host: {
     role: 'img',
@@ -53,16 +87,16 @@ export class TopcoatArrowUpIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[topcoatArrowDownIcon],svg[topcoat-arrow-down-icon]',
+  selector: 'svg[topcoatAudioIcon],svg[topcoat-audio-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M25.5 2.5h-10c-2.53 0-3 .529-3 3v15H.5l20 20l20-20h-12v-15c0-2.439-.5-3-3-3"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M27.5 9.045a13.39 13.39 0 0 1 8.37 12.425a13.39 13.39 0 0 1-8.37 12.424v2.795a16.01 16.01 0 0 0 11-15.219c0-7.099-4.609-13.125-11-15.228zm0 6.599a7.64 7.64 0 0 1 2.68 5.827a7.64 7.64 0 0 1-2.68 5.826v2.844c2.99-1.731 5-4.966 5-8.67a10.01 10.01 0 0 0-5-8.67zm-23 13.835h8l9 11.015c1 1.44 3.34 1.331 4-.302V2.83c-.811-1.632-2.939-1.763-4-.382l-9 11.053h-8c-2.561 0-3 .461-3 2.964v10.012c0 2.442.5 3.002 3 3.002"></svg:path>`,
 })
-export class TopcoatArrowDownIcon {
+export class TopcoatAudioIcon {
   readonly viewBox = input("0 0 42 42")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,16 +121,16 @@ export class TopcoatAttachmentIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[topcoatAudioIcon],svg[topcoat-audio-icon]',
+  selector: 'svg[topcoatAudiooffIcon],svg[topcoat-audiooff-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M27.5 9.045a13.39 13.39 0 0 1 8.37 12.425a13.39 13.39 0 0 1-8.37 12.424v2.795a16.01 16.01 0 0 0 11-15.219c0-7.099-4.609-13.125-11-15.228zm0 6.599a7.64 7.64 0 0 1 2.68 5.827a7.64 7.64 0 0 1-2.68 5.826v2.844c2.99-1.731 5-4.966 5-8.67a10.01 10.01 0 0 0-5-8.67zm-23 13.835h8l9 11.015c1 1.44 3.34 1.331 4-.302V2.83c-.811-1.632-2.939-1.763-4-.382l-9 11.053h-8c-2.561 0-3 .461-3 2.964v10.012c0 2.442.5 3.002 3 3.002"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M4.5 29.479h8l9 11.015c1 1.44 3.34 1.331 4-.302V2.83c-.811-1.632-2.939-1.763-4-.382l-9 11.053h-8c-2.561 0-3 .461-3 2.964v10.012c0 2.442.5 3.002 3 3.002"></svg:path>`,
 })
-export class TopcoatAudioIcon {
+export class TopcoatAudiooffIcon {
   readonly viewBox = input("0 0 42 42")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,57 +206,6 @@ export class TopcoatBookmarkIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[topcoatBrushIcon],svg[topcoat-brush-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21.049 14.741c3.58.43 8.219 4.52 8.6 8.28c0 0 9.449-9.471 9.439-9.5c1.939-1.94 1.87-2.75-.15-4.561l-4.08-3.68c-1.948-1.76-2.698-1.69-4.528.13zm4.95 8.321c-.3-1.351-2.929-4.512-5.759-4.98c-7.1-1.83-13.89 5.88-13.49 11.491c.641 4.581-5.35 5.22-6.25 5.43c5.92 2.062 8.439 2.541 13.919 1.38c4.78-1.009 14.03-5.71 11.58-13.321"></svg:path>`,
-})
-export class TopcoatBrushIcon {
-  readonly viewBox = input("0 0 42 42")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[topcoatCameraIcon],svg[topcoat-camera-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.41 22.58c0 3.359 2.73 6.09 6.09 6.09s6.09-2.73 6.09-6.09s-2.73-6.09-6.09-6.09a6.095 6.095 0 0 0-6.09 6.09M3.5 36.5h34c2.63 0 3-.37 3-3v-23c0-2.462-.38-3-3-3h-10c0-2.57-.42-3-3-3h-8c-2.55 0-3 .48-3 3h-10c-2.58 0-3 .692-3 3v23c0 2.6.38 3 3 3m7.64-13.92c0-5.17 4.19-9.359 9.36-9.359s9.359 4.189 9.359 9.359s-4.189 9.359-9.359 9.359s-9.36-4.189-9.36-9.359"></svg:path>`,
-})
-export class TopcoatCameraIcon {
-  readonly viewBox = input("0 0 42 42")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[topcoatCancelIcon],svg[topcoat-cancel-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m21.002 26.588l10.357 10.604c1.039 1.072 1.715 1.083 2.773 0l2.078-2.128c1.018-1.042 1.087-1.726 0-2.839L25.245 21L36.211 9.775c1.027-1.055 1.047-1.767 0-2.84l-2.078-2.127c-1.078-1.104-1.744-1.053-2.773 0L21.002 15.412L10.645 4.809c-1.029-1.053-1.695-1.104-2.773 0L5.794 6.936c-1.048 1.073-1.029 1.785 0 2.84L16.759 21L5.794 32.225c-1.087 1.113-1.029 1.797 0 2.839l2.077 2.128c1.049 1.083 1.725 1.072 2.773 0z"></svg:path>`,
-})
-export class TopcoatCancelIcon {
-  readonly viewBox = input("0 0 42 42")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[topcoatBuildIcon],svg[topcoat-build-icon]',
   host: {
     role: 'img',
@@ -240,50 +223,16 @@ export class TopcoatBuildIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[topcoatCallIcon],svg[topcoat-call-icon]',
+  selector: 'svg[topcoatBrushIcon],svg[topcoat-brush-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M15.562 20.766c-1.328-1.922-2.118-4.241-2.281-4.438c1.945-1.356 5.749-3.06 5.962-5.505c.271-3.159-5.081-9.763-6.107-9.823c-2.808.03-7.947 4.782-8.556 6.218c-1.132 2.969-.571 5.732 1.375 9.732c2.478 5.95 11.682 17.237 16.947 20.78c3.484 2.674 6.029 3.724 9.068 3.09c1.413-.268 6.516-4.455 7.027-7.286c.125-1.05-5.807-8.011-8.875-8.287c-2.382-.22-4.666 3.346-6.303 5.089c-.163-.208-1.559-1.297-3.057-3.021c-1.95-2.049-3.762-4.456-5.2-6.549"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M21.049 14.741c3.58.43 8.219 4.52 8.6 8.28c0 0 9.449-9.471 9.439-9.5c1.939-1.94 1.87-2.75-.15-4.561l-4.08-3.68c-1.948-1.76-2.698-1.69-4.528.13zm4.95 8.321c-.3-1.351-2.929-4.512-5.759-4.98c-7.1-1.83-13.89 5.88-13.49 11.491c.641 4.581-5.35 5.22-6.25 5.43c5.92 2.062 8.439 2.541 13.919 1.38c4.78-1.009 14.03-5.71 11.58-13.321"></svg:path>`,
 })
-export class TopcoatCallIcon {
-  readonly viewBox = input("0 0 42 42")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[topcoatAudiooffIcon],svg[topcoat-audiooff-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4.5 29.479h8l9 11.015c1 1.44 3.34 1.331 4-.302V2.83c-.811-1.632-2.939-1.763-4-.382l-9 11.053h-8c-2.561 0-3 .461-3 2.964v10.012c0 2.442.5 3.002 3 3.002"></svg:path>`,
-})
-export class TopcoatAudiooffIcon {
-  readonly viewBox = input("0 0 42 42")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[topcoatCartIcon],svg[topcoat-cart-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2zm-7.023 12H13.696l-1.471-9h22.951zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4m13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4"></svg:path>`,
-})
-export class TopcoatCartIcon {
+export class TopcoatBrushIcon {
   readonly viewBox = input("0 0 42 42")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -308,16 +257,50 @@ export class TopcoatCalendarIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[topcoatAlertIcon],svg[topcoat-alert-icon]',
+  selector: 'svg[topcoatCallIcon],svg[topcoat-call-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M18.295 3.895L1.203 34.555C-.219 37.146.385 39.5 4.228 39.5H36.77c3.854 0 4.447-2.354 3.025-4.945L22.35 3.914c-.354-.691-.868-1.424-1.957-1.414c-1.16.021-1.735.703-2.098 1.395M18.5 13.5h4v14h-4zm0 17h4v4h-4z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M15.562 20.766c-1.328-1.922-2.118-4.241-2.281-4.438c1.945-1.356 5.749-3.06 5.962-5.505c.271-3.159-5.081-9.763-6.107-9.823c-2.808.03-7.947 4.782-8.556 6.218c-1.132 2.969-.571 5.732 1.375 9.732c2.478 5.95 11.682 17.237 16.947 20.78c3.484 2.674 6.029 3.724 9.068 3.09c1.413-.268 6.516-4.455 7.027-7.286c.125-1.05-5.807-8.011-8.875-8.287c-2.382-.22-4.666 3.346-6.303 5.089c-.163-.208-1.559-1.297-3.057-3.021c-1.95-2.049-3.762-4.456-5.2-6.549"></svg:path>`,
 })
-export class TopcoatAlertIcon {
+export class TopcoatCallIcon {
+  readonly viewBox = input("0 0 42 42")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[topcoatCancelIcon],svg[topcoat-cancel-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m21.002 26.588l10.357 10.604c1.039 1.072 1.715 1.083 2.773 0l2.078-2.128c1.018-1.042 1.087-1.726 0-2.839L25.245 21L36.211 9.775c1.027-1.055 1.047-1.767 0-2.84l-2.078-2.127c-1.078-1.104-1.744-1.053-2.773 0L21.002 15.412L10.645 4.809c-1.029-1.053-1.695-1.104-2.773 0L5.794 6.936c-1.048 1.073-1.029 1.785 0 2.84L16.759 21L5.794 32.225c-1.087 1.113-1.029 1.797 0 2.839l2.077 2.128c1.049 1.083 1.725 1.072 2.773 0z"></svg:path>`,
+})
+export class TopcoatCancelIcon {
+  readonly viewBox = input("0 0 42 42")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[topcoatCameraIcon],svg[topcoat-camera-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.41 22.58c0 3.359 2.73 6.09 6.09 6.09s6.09-2.73 6.09-6.09s-2.73-6.09-6.09-6.09a6.095 6.095 0 0 0-6.09 6.09M3.5 36.5h34c2.63 0 3-.37 3-3v-23c0-2.462-.38-3-3-3h-10c0-2.57-.42-3-3-3h-8c-2.55 0-3 .48-3 3h-10c-2.58 0-3 .692-3 3v23c0 2.6.38 3 3 3m7.64-13.92c0-5.17 4.19-9.359 9.36-9.359s9.359 4.189 9.359 9.359s-4.189 9.359-9.359 9.359s-9.36-4.189-9.36-9.359"></svg:path>`,
+})
+export class TopcoatCameraIcon {
   readonly viewBox = input("0 0 42 42")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -1508,6 +1491,23 @@ export class TopcoatWifiIcon {
   template: `<svg:path fill="currentColor" d="M20.976 41C9.808 40.785 1.078 31.629 1 20.977C1.216 9.817 10.323 1.079 20.976 1C32.138 1.223 40.921 10.31 41 20.977C40.78 32.147 31.644 40.922 20.976 41m0-38.583c-10.37.204-18.533 8.657-18.605 18.56c.202 10.379 8.703 18.534 18.605 18.606c10.38-.202 18.534-8.704 18.606-18.606C39.387 10.6 30.865 2.49 20.976 2.417m-4.798 34.926l5.12-14.72l5.348 14.4c-3.603 1.206-7.01 1.28-10.468.32m-3.932-26.011a31.3 31.3 0 0 1-5.486.273c3.396-4.855 8.834-7.586 14.217-7.634c4.404.083 8.51 1.747 11.521 4.479c-1.396-.104-2.232.51-2.834 1.555c-.875 2.697.974 4.695 2.011 6.72c.982 1.85.904 3.954.366 5.76l-2.56 8.73l-6.172-18.33c.643-.06 1.29-.08 1.874-.183c.691-.154.843-.797.366-1.19c-.152-.12-.32.017-.503.017l-3.703.47h-2.812c-.793 0-3.035-.916-3.223.124c-.098.4.202.616.55.679c.61.079 1.311.12 1.873.179l2.697 7.198l-3.749 11.05l-6.217-18.337c.658-.058 1.324-.08 1.92-.186q.732-.093.641-.732a.824.824 0 0 0-.777-.642m-6.858 2.834l8.183 22.125a17.4 17.4 0 0 1-6.948-6.148c-3.04-4.851-3.36-11.006-1.235-15.977m31.977 11.36c-1.343 4.387-4.087 8.02-7.885 10.217q.274-.73.868-2.468l4.755-13.806q.685-2.012.96-4.48c.061-.673.063-1.352-.046-1.965c1.948 4.2 2.5 8.362 1.348 12.502"></svg:path>`,
 })
 export class TopcoatWordpressIcon {
+  readonly viewBox = input("0 0 42 42")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[topcoatCartIcon],svg[topcoat-cart-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M40.5 12.5c0-1.48-.311-2-1.872-2H11.726l-.801-5c-.109-1.46-.85-2-2.421-2H2.501C1.02 3.5.5 3.99.5 5.5v1c0 1.551.52 2 2.001 2h3.722l3.282 19c.35 1.04 1.311 1.95 3.001 2h22.012c1.75 0 2.57-.359 3.002-2zm-7.023 12H13.696l-1.471-9h22.951zm-19.97 12a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4m13.007 0a4 4 0 0 0 4.002 4a4 4 0 1 0 0-8a4 4 0 0 0-4.002 4"></svg:path>`,
+})
+export class TopcoatCartIcon {
   readonly viewBox = input("0 0 42 42")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -7856,23 +7856,6 @@ export class HeroiconsXMarkSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[heroiconsArchiveBox16SolidIcon],svg[heroicons-archive-box-16-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M3 2a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"></svg:path><svg:path fill-rule="evenodd" d="M3 6h10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm3 2.75A.75.75 0 0 1 6.75 8h2.5a.75.75 0 0 1 0 1.5h-2.5A.75.75 0 0 1 6 8.75" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class HeroiconsArchiveBox16SolidIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[heroiconsArchiveBoxArrowDown20SolidIcon],svg[heroicons-archive-box-arrow-down-20-solid-icon]',
   host: {
     role: 'img',
@@ -7884,6 +7867,23 @@ export class HeroiconsArchiveBox16SolidIcon {
 })
 export class HeroiconsArchiveBoxArrowDown20SolidIcon {
   readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[heroiconsArchiveBoxArrowDownSolidIcon],svg[heroicons-archive-box-arrow-down-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3z"></svg:path><svg:path fill-rule="evenodd" d="m3.087 9l.54 9.176A3 3 0 0 0 6.62 21h10.757a3 3 0 0 0 2.995-2.824L20.913 9zM12 10.5a.75.75 0 0 1 .75.75v4.94l1.72-1.72a.75.75 0 1 1 1.06 1.06l-3 3a.75.75 0 0 1-1.06 0l-3-3a.75.75 0 1 1 1.06-1.06l1.72 1.72v-4.94a.75.75 0 0 1 .75-.75" clip-rule="evenodd"></svg:path></svg:g>`,
+})
+export class HeroiconsArchiveBoxArrowDownSolidIcon {
+  readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
 }

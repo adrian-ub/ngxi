@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsLightCreditCardGearOutlineIcon],svg[material-symbols-light-credit-card-gear-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 18v-7.692v.479V6zm0-9.192h16V6.616q0-.231-.192-.424T19.385 6H4.615q-.23 0-.423.192T4 6.616zM11.267 19H4.616q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v4.67q-.76-.47-1.634-.724t-1.832-.254q-.867 0-1.668.23t-1.482.654H4v6.193q0 .23.192.423t.423.192h6.398q.056.275.11.516q.054.24.144.484m5.768 1.808l-.108-.885q-.473-.106-.89-.32q-.416-.215-.748-.587l-.835.334l-.539-.815l.689-.577q-.165-.517-.165-1.035t.165-1.034l-.688-.577l.538-.816l.834.335q.314-.373.74-.588t.899-.32l.108-.884h1l.107.884q.474.106.9.32q.425.215.739.588l.835-.335l.538.816l-.688.577q.165.517.165 1.034q0 .518-.165 1.035l.688.577l-.538.815l-.835-.334q-.333.373-.75.587q-.415.214-.889.32l-.107.885zm.5-1.731q.902 0 1.528-.626t.626-1.528t-.626-1.528t-1.528-.626t-1.528.626t-.626 1.528t.626 1.528t1.527.626"></svg:path>`,
+})
+export class MaterialSymbolsLightCreditCardGearOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsLightCreditCardHeartOutlineIcon],svg[material-symbols-light-credit-card-heart-outline-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsLightHelpCenterOutlineIcon {
   template: `<svg:path fill="currentColor" d="M11.5 16.692h1v-4h-1zm.5-6.153q.31 0 .54-.23t.23-.54t-.23-.54T12 9t-.54.23t-.23.54t.23.539t.54.23M5 20V9.5l7-5.27l7 5.27V20zm1-1h12v-9l-6-4.5L6 10zm6-6.75"></svg:path>`,
 })
 export class MaterialSymbolsLightHelpClinicOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsLightHelpOutlineIcon],svg[material-symbols-light-help-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.028 17.23q.332 0 .56-.228t.228-.56t-.23-.56q-.228-.228-.56-.228t-.56.229t-.227.56q0 .332.228.56q.23.228.561.228m-.517-3.312h.966q.038-.652.245-1.06q.207-.407.851-1.04q.67-.669.996-1.199t.327-1.226q0-1.182-.83-1.884q-.831-.702-1.966-.702q-1.079 0-1.832.586q-.753.587-1.103 1.348l.92.381q.24-.546.687-.965q.447-.42 1.29-.42q.972 0 1.42.534q.449.534.449 1.174q0 .52-.281.928q-.28.409-.73.822q-.87.802-1.14 1.36t-.269 1.363M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709M12 20q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"></svg:path>`,
-})
-export class MaterialSymbolsLightHelpOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

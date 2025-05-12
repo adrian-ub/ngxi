@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[laWhmcsIcon],svg[la-whmcs-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m14.8 4l-.6 2.8l-1.2.3L11 5L9.1 6.1L9.9 9l-.8.8L6.2 9l-1.1 1.9L7.2 13l-.3 1l-2.9.8V17l2.9.8l.3 1.2l-2 2l1 1.9l3-.8l.7.9l-.9 2.7l2 1.2l2-2.1l1.1.3l.7 2.9h2.3l.7-2.9l1.2-.3l2.1 2.1l2-1.2l-.9-2.8l.8-.8l2.9.8l1-2l-2.1-1.9l.2-1.2l3-.7V15l-2.6-.9l.4 1.1l.1.4l-.3.2l-1.1.6l-.3.2l-.3-.3l-.9-1h-.1l-.3 1.3l-.1.4h-1.1c-.5 2.5-2.8 4.4-5.5 4.4c-3.2 0-5.7-2.6-5.7-5.7c0-2.7 2-4.9 4.5-5.5v-1l.3-.1l1.3-.4l-.9-.9l-.2-.2l.2-.3l.6-1l.2-.3l.3.2l1.2.3l-.6-2.5zM21 4l-.3 1.4l-.7.2l-1-1.1l-1 .6l.4 1.5l-.5.4l-1.5-.4l-.6 1l1.1 1.1l-.1.5l-1.5.4v1.2l1.6.4l.1.7l-1.2 1.1l.6 1l1.6-.4l.4.5l-.4 1.4l1.1.6l1-1.1l.6.2l.4 1.5h1.2l.4-1.5l.6-.2l1.1 1.2l1.1-.7l-.6-1.5l.4-.4l1.5.5l.5-1.1l-1.1-1l.1-.7l1.7-.4V9.8l-1.5-.5l-.1-.6l1.1-1.1l-.5-1l-1.7.4l-.4-.4l.4-1.5l-1-.6l-1.1 1.1l-.6-.2l-.4-1.4zm.6 3.3c1.7 0 3 1.4 3 3c.1 1.7-1.3 3-3 3s-3-1.4-3-3c0-1.7 1.4-3 3-3"></svg:path>`,
+})
+export class LaWhmcsIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[laWifiIcon],svg[la-wifi-icon]',
   host: {
     role: 'img',
@@ -726,23 +743,6 @@ export class LaYoutubeSquareIcon {
   template: `<svg:path fill="currentColor" d="M30.629 8.988c-.366.042-.93.211-.93.211s-8.2.9-11.6 1c.1.5.401.9.801 1c.7.1 1.2 0 2.5 0c1.2-.1 2.2-.1 2.8-.1V16H18s.1 1.2 1.2 1.2h5v3.4c0 .7-.5 1.1-1.2 1.1s-1.2-.1-2-.1c.1.2.2.7.9 1.1c.5.2.8.3 1.3.3c1.5 0 2.3-.9 2.3-2.3v-3.5h6.1c.4 0 .4-1.2.3-1.1h-6.5v-4.9c.2 0 .6-.1 1.1-.1c2.1-.1 3.5-.4 4.4-.4c0 0 .6-1.4 0-1.7c-.05-.025-.15-.026-.271-.012M3.3 9s-1.202 0-1.602 1.1c-.1.4-.799 2-1.699 3.8c.3 0 1.2-.1 1.8-1.1c.1-.3.4-.5.5-.9h1.5c0 .5-.1 3.6-.1 3.9H1.1C.5 15.8.3 17 .3 17h3.2c-.2 2.4-1.4 4.1-3.5 5.8c1 .3 2 0 2.6-.4c0 0 1.2-.9 1.8-3.3L6.9 22s.4-1.4-.1-2c-.4-.5-1.2-1.4-1.7-1.8l-.7.6c.2-.7.4-1.1.4-1.8H8s0-1.2-.4-1.2H4.9c.1-1.3.1-2.8.1-3.9h2.4s.1-1.1-.4-1.1H2.6c.2-.7.4-1.1.7-1.8M9 11v11h1.2l.4 1.3l2.1-1.3H15V11zm20.287 1.178a.73.73 0 0 0-.486.222L27 14.8l1 .7c1.1-1.3 2.3-2.9 2.3-2.9s-.507-.45-1.013-.422m-19.088.021h3.5v8.602H12.5l-1.4.898l-.3-.898h-.6zm9.93.149c-.422-.028-.93.252-.93.252s2.002 2.8 2.102 2.9l1-.7S21 13 20.5 12.5a.56.56 0 0 0-.371-.152"></svg:path>`,
 })
 export class LaZhihuIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[laAlignJustifyIcon],svg[la-align-justify-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 7v2h26V7zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2z"></svg:path>`,
-})
-export class LaAlignJustifyIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -19,23 +19,6 @@ export class BasilAdobeAfterEffectsSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[basilAdobeExperinceDesignSolidIcon],svg[basil-adobe-experince-design-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16.032 13.575c.033-.121.044-.253.044-.396v-.803c0-.11-.011-.242-.033-.352c-.121-.528-.55-.957-1.166-.957c-.87 0-1.353.77-1.353 1.771c0 .979.484 1.694 1.342 1.694c.55 0 1.034-.374 1.166-.957"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082m9.306 7.644V7.69h1.353v6.303c0 .55.022 1.144.044 1.507h-1.21l-.055-.847h-.022c-.32.594-.968.968-1.75.968c-1.275 0-2.287-1.089-2.287-2.739c-.011-1.793 1.11-2.86 2.398-2.86c.737 0 1.265.308 1.507.704zm-6.172.979l2.255 3.795h-1.562l-.803-1.474a27 27 0 0 1-.737-1.397h-.033c-.176.429-.374.825-.671 1.397L7.616 15.5H6.065l2.2-3.751l-2.112-3.663h1.55l.804 1.529c.242.462.418.825.616 1.243h.022c.198-.462.352-.792.583-1.243l.792-1.529h1.55z" clip-rule="evenodd"></svg:path>`,
-})
-export class BasilAdobeExperinceDesignSolidIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[basilAddSolidIcon],svg[basil-add-solid-icon]',
   host: {
     role: 'img',
@@ -53,16 +36,16 @@ export class BasilAddSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[basilAdobeIndesignSolidIcon],svg[basil-adobe-indesign-solid-icon]',
+  selector: 'svg[basilAdobeExperinceDesignSolidIcon],svg[basil-adobe-experince-design-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M14.302 13.575c.033-.121.044-.253.044-.396v-.803c0-.11-.01-.242-.033-.352c-.12-.528-.55-.957-1.166-.957c-.869 0-1.353.77-1.353 1.771c0 .979.484 1.694 1.342 1.694c.55 0 1.034-.374 1.166-.957"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082m7.576 7.644V7.69H15.7v6.303c0 .55.022 1.144.044 1.507h-1.21l-.055-.847h-.022c-.319.594-.968.968-1.749.968c-1.276 0-2.288-1.089-2.288-2.739c-.01-1.793 1.111-2.86 2.398-2.86c.737 0 1.265.308 1.507.704zM8.355 15.5V8.086h1.353V15.5z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M16.032 13.575c.033-.121.044-.253.044-.396v-.803c0-.11-.011-.242-.033-.352c-.121-.528-.55-.957-1.166-.957c-.87 0-1.353.77-1.353 1.771c0 .979.484 1.694 1.342 1.694c.55 0 1.034-.374 1.166-.957"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082m9.306 7.644V7.69h1.353v6.303c0 .55.022 1.144.044 1.507h-1.21l-.055-.847h-.022c-.32.594-.968.968-1.75.968c-1.275 0-2.287-1.089-2.287-2.739c-.011-1.793 1.11-2.86 2.398-2.86c.737 0 1.265.308 1.507.704zm-6.172.979l2.255 3.795h-1.562l-.803-1.474a27 27 0 0 1-.737-1.397h-.033c-.176.429-.374.825-.671 1.397L7.616 15.5H6.065l2.2-3.751l-2.112-3.663h1.55l.804 1.529c.242.462.418.825.616 1.243h.022c.198-.462.352-.792.583-1.243l.792-1.529h1.55z" clip-rule="evenodd"></svg:path>`,
 })
-export class BasilAdobeIndesignSolidIcon {
+export class BasilAdobeExperinceDesignSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,16 +70,16 @@ export class BasilAdobeIllustratorSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[basilAdobePhotoshopSolidIcon],svg[basil-adobe-photoshop-solid-icon]',
+  selector: 'svg[basilAdobeIndesignSolidIcon],svg[basil-adobe-indesign-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M9.876 9.065c-.374 0-.638.033-.78.066v2.508c.164.044.384.055.66.055c1.011 0 1.627-.495 1.627-1.364c0-.825-.572-1.265-1.507-1.265"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082M9.095 15.5H7.753V8.185c.484-.088 1.155-.154 2.068-.154c.99 0 1.716.209 2.19.605c.44.363.725.946.725 1.639c0 .704-.22 1.287-.638 1.683c-.539.539-1.386.792-2.343.792c-.253 0-.484-.011-.66-.044zm5.37.121c-.65 0-1.232-.165-1.628-.385l.264-.979c.308.187.89.385 1.375.385c.594 0 .858-.242.858-.594c0-.363-.22-.55-.88-.781c-1.045-.363-1.485-.935-1.474-1.562c0-.946.78-1.683 2.024-1.683c.594 0 1.11.154 1.419.319l-.264.957a2.4 2.4 0 0 0-1.133-.308c-.484 0-.748.231-.748.561c0 .341.253.506.935.748c.968.352 1.419.847 1.43 1.639c0 .968-.76 1.683-2.178 1.683" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M14.302 13.575c.033-.121.044-.253.044-.396v-.803c0-.11-.01-.242-.033-.352c-.12-.528-.55-.957-1.166-.957c-.869 0-1.353.77-1.353 1.771c0 .979.484 1.694 1.342 1.694c.55 0 1.034-.374 1.166-.957"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082m7.576 7.644V7.69H15.7v6.303c0 .55.022 1.144.044 1.507h-1.21l-.055-.847h-.022c-.319.594-.968.968-1.749.968c-1.276 0-2.288-1.089-2.288-2.739c-.01-1.793 1.111-2.86 2.398-2.86c.737 0 1.265.308 1.507.704zM8.355 15.5V8.086h1.353V15.5z" clip-rule="evenodd"></svg:path>`,
 })
-export class BasilAdobePhotoshopSolidIcon {
+export class BasilAdobeIndesignSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -114,6 +97,23 @@ export class BasilAdobePhotoshopSolidIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082M12.728 15.5h-4.4V8.086h1.353v6.281h3.047zm1.883 0h-1.353v-3.63c0-.726-.011-1.243-.044-1.727h1.177l.044 1.023h.044c.264-.759.89-1.144 1.463-1.144c.132 0 .209.011.319.033v1.276a2 2 0 0 0-.396-.044c-.65 0-1.09.418-1.21 1.023a2.3 2.3 0 0 0-.044.418z" clip-rule="evenodd"></svg:path>`,
 })
 export class BasilAdobeLightroomSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[basilAdobePhotoshopSolidIcon],svg[basil-adobe-photoshop-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.876 9.065c-.374 0-.638.033-.78.066v2.508c.164.044.384.055.66.055c1.011 0 1.627-.495 1.627-1.364c0-.825-.572-1.265-1.507-1.265"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082M9.095 15.5H7.753V8.185c.484-.088 1.155-.154 2.068-.154c.99 0 1.716.209 2.19.605c.44.363.725.946.725 1.639c0 .704-.22 1.287-.638 1.683c-.539.539-1.386.792-2.343.792c-.253 0-.484-.011-.66-.044zm5.37.121c-.65 0-1.232-.165-1.628-.385l.264-.979c.308.187.89.385 1.375.385c.594 0 .858-.242.858-.594c0-.363-.22-.55-.88-.781c-1.045-.363-1.485-.935-1.474-1.562c0-.946.78-1.683 2.024-1.683c.594 0 1.11.154 1.419.319l-.264.957a2.4 2.4 0 0 0-1.133-.308c-.484 0-.748.231-.748.561c0 .341.253.506.935.748c.968.352 1.419.847 1.43 1.639c0 .968-.76 1.683-2.178 1.683" clip-rule="evenodd"></svg:path>`,
+})
+export class BasilAdobePhotoshopSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
