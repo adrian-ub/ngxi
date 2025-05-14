@@ -19,23 +19,6 @@ export class OouiAddIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oouiAlignCenterIcon],svg[ooui-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1 15h18v2H1zM1 3h18v2H1z"></svg:path><svg:rect width="8" height="6" x="6" y="7" fill="currentColor" rx="1"></svg:rect>`,
-})
-export class OouiAlignCenterIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[oouiAlertIcon],svg[ooui-alert-icon]',
   host: {
     role: 'img',
@@ -46,6 +29,23 @@ export class OouiAlignCenterIcon {
   template: `<svg:path fill="currentColor" d="M11.53 2.3A1.85 1.85 0 0 0 10 1.21A1.85 1.85 0 0 0 8.48 2.3L.36 16.36C-.48 17.81.21 19 1.88 19h16.24c1.67 0 2.36-1.19 1.52-2.64zM11 16H9v-2h2zm0-4H9V6h2z"></svg:path>`,
 })
 export class OouiAlertIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oouiAlignCenterIcon],svg[ooui-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 15h18v2H1zM1 3h18v2H1z"></svg:path><svg:rect width="8" height="6" x="6" y="7" fill="currentColor" rx="1"></svg:rect>`,
+})
+export class OouiAlignCenterIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,6 +138,23 @@ export class OouiArrowDownIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[oouiArrowNextRtlIcon],svg[ooui-arrow-next-rtl-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m2 10l8 8l1.4-1.4L5.8 11H18V9H5.8l5.6-5.6L10 2z"></svg:path>`,
+})
+export class OouiArrowNextRtlIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[oouiArrowPreviousLtrIcon],svg[ooui-arrow-previous-ltr-icon]',
   host: {
     role: 'img',
@@ -172,16 +189,16 @@ export class OouiArrowPreviousRtlIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oouiArrowNextRtlIcon],svg[ooui-arrow-next-rtl-icon]',
+  selector: 'svg[oouiArticleAddIcon],svg[ooui-article-add-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m2 10l8 8l1.4-1.4L5.8 11H18V9H5.8l5.6-5.6L10 2z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M5 1c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm10 10h-4v4H9v-4H5V9h4V5h2v4h4z"></svg:path>`,
 })
-export class OouiArrowNextRtlIcon {
+export class OouiArticleAddIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -199,23 +216,6 @@ export class OouiArrowNextRtlIcon {
   template: `<svg:path fill="currentColor" d="m2 10l1.42 1.41L9 5.83V18h2V5.83l5.59 5.58L18 10l-8-8z"></svg:path>`,
 })
 export class OouiArrowUpIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[oouiArticleAddIcon],svg[ooui-article-add-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 1c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm10 10h-4v4H9v-4H5V9h4V5h2v4h4z"></svg:path>`,
-})
-export class OouiArticleAddIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

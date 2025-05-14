@@ -36,6 +36,23 @@ export class LetsIcons10LightIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[letsIcons3dBoxFillIcon],svg[lets-icons-3d-box-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m9.675 19.34l-3-2.144c-.821-.586-1.232-.88-1.453-1.31S5 14.95 5 13.942v-3.883c0-.322 0-.592.007-.825L11 13.514v6.717c-.357-.2-.773-.498-1.325-.892M13 20.23c.357-.2.773-.498 1.325-.892l3-2.143c.821-.586 1.232-.88 1.453-1.31S19 14.95 19 13.942v-3.883c0-.322 0-.592-.007-.825L13 13.514zm5.128-12.837L12 11.771L5.872 7.394c.212-.168.475-.356.803-.59l3-2.143C10.798 3.859 11.36 3.458 12 3.458s1.202.4 2.325 1.203l3 2.143c.329.234.591.422.803.59" clip-rule="evenodd"></svg:path>`,
+})
+export class LetsIcons3dBoxFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[letsIcons3dBoxDuotoneIcon],svg[lets-icons-3d-box-duotone-icon]',
   host: {
     role: 'img',
@@ -70,40 +87,6 @@ export class LetsIcons3dBoxIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[letsIcons3dBoxFillIcon],svg[lets-icons-3d-box-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m9.675 19.34l-3-2.144c-.821-.586-1.232-.88-1.453-1.31S5 14.95 5 13.942v-3.883c0-.322 0-.592.007-.825L11 13.514v6.717c-.357-.2-.773-.498-1.325-.892M13 20.23c.357-.2.773-.498 1.325-.892l3-2.143c.821-.586 1.232-.88 1.453-1.31S19 14.95 19 13.942v-3.883c0-.322 0-.592-.007-.825L13 13.514zm5.128-12.837L12 11.771L5.872 7.394c.212-.168.475-.356.803-.59l3-2.143C10.798 3.859 11.36 3.458 12 3.458s1.202.4 2.325 1.203l3 2.143c.329.234.591.422.803.59" clip-rule="evenodd"></svg:path>`,
-})
-export class LetsIcons3dBoxFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[letsIconsAddIcon],svg[lets-icons-add-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"></svg:path>`,
-})
-export class LetsIconsAddIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[letsIcons3dBoxLightIcon],svg[lets-icons-3d-box-light-icon]',
   host: {
     role: 'img',
@@ -131,6 +114,23 @@ export class LetsIcons3dBoxLightIcon {
   template: `<svg:defs><svg:mask id="letsIconsAddDuotoneLine0"><svg:g fill="none" stroke-width="1.2"><svg:circle cx="12" cy="12" r="8.4" stroke="silver" stroke-opacity=".25"></svg:circle><svg:path stroke="#fff" stroke-linecap="square" d="M12 8v8m4-4H8"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h24v24H0z" mask="url(#letsIconsAddDuotoneLine0)"></svg:path>`,
 })
 export class LetsIconsAddDuotoneLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsAddIcon],svg[lets-icons-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"></svg:path>`,
+})
+export class LetsIconsAddIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,23 +189,6 @@ export class LetsIconsAddRingIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[letsIconsAddRingDuotoneLineIcon],svg[lets-icons-add-ring-duotone-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:mask id="letsIconsAddRingDuotoneLine0"><svg:g fill="none" stroke-width="1.2"><svg:circle cx="12" cy="12" r="8.4" stroke="silver" stroke-opacity=".25"></svg:circle><svg:path stroke="#fff" stroke-linecap="square" d="M12 15V9m3 3H9"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h24v24H0z" mask="url(#letsIconsAddRingDuotoneLine0)"></svg:path>`,
-})
-export class LetsIconsAddRingDuotoneLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[letsIconsAddRingDuotoneIcon],svg[lets-icons-add-ring-duotone-icon]',
   host: {
     role: 'img',
@@ -223,16 +206,16 @@ export class LetsIconsAddRingDuotoneIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[letsIconsAddRingFillIcon],svg[lets-icons-add-ring-fill-icon]',
+  selector: 'svg[letsIconsAddRingDuotoneLineIcon],svg[lets-icons-add-ring-duotone-line-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-8 1v4h-2v-4H7v-2h4V7h2v4h4v2z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:defs><svg:mask id="letsIconsAddRingDuotoneLine0"><svg:g fill="none" stroke-width="1.2"><svg:circle cx="12" cy="12" r="8.4" stroke="silver" stroke-opacity=".25"></svg:circle><svg:path stroke="#fff" stroke-linecap="square" d="M12 15V9m3 3H9"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h24v24H0z" mask="url(#letsIconsAddRingDuotoneLine0)"></svg:path>`,
 })
-export class LetsIconsAddRingFillIcon {
+export class LetsIconsAddRingDuotoneLineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -291,23 +274,6 @@ export class LetsIconsAddRoundDuotoneIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[letsIconsAddRoundFillIcon],svg[lets-icons-add-round-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9 6a1 1 0 0 1-1-1v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 1 1 2 0v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 0 1-1 1" clip-rule="evenodd"></svg:path>`,
-})
-export class LetsIconsAddRoundFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[letsIconsAddRoundDuotoneLineIcon],svg[lets-icons-add-round-duotone-line-icon]',
   host: {
     role: 'img',
@@ -318,6 +284,23 @@ export class LetsIconsAddRoundFillIcon {
   template: `<svg:defs><svg:mask id="letsIconsAddRoundDuotoneLine0"><svg:g fill="none" stroke-width="1.2"><svg:circle cx="12" cy="12" r="8.4" stroke="silver" stroke-opacity=".25"></svg:circle><svg:path stroke="#fff" stroke-linecap="round" d="M12 8v8m4-4H8"></svg:path></svg:g></svg:mask></svg:defs><svg:path fill="currentColor" d="M0 0h24v24H0z" mask="url(#letsIconsAddRoundDuotoneLine0)"></svg:path>`,
 })
 export class LetsIconsAddRoundDuotoneLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsAddRoundFillIcon],svg[lets-icons-add-round-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9 6a1 1 0 0 1-1-1v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 1 1 2 0v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 0 1-1 1" clip-rule="evenodd"></svg:path>`,
+})
+export class LetsIconsAddRoundFillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8495,6 +8478,23 @@ export class LetsIconsDoneRingRoundIcon {
   template: `<svg:g fill="none"><svg:circle cx="12" cy="12" r="8" fill="currentColor" fill-opacity=".25"></svg:circle><svg:path stroke="currentColor" stroke-width="1.2" d="m8.5 11l2.894 2.894a.15.15 0 0 0 .212 0L19.5 6"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" d="M19.358 10.547a7.5 7.5 0 1 1-3.608-5.042"></svg:path></svg:g>`,
 })
 export class LetsIconsDoneRingRoundDuotoneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsDoneRingRoundDuotoneLineIcon],svg[lets-icons-done-ring-round-duotone-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:circle cx="12" cy="12" r="9" fill="currentColor" fill-opacity=".25"></svg:circle><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="m9 10l3.258 2.444a1 1 0 0 0 1.353-.142L20 5"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="M21 12a9 9 0 1 1-6.67-8.693"></svg:path></svg:g>`,
+})
+export class LetsIconsDoneRingRoundDuotoneLineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

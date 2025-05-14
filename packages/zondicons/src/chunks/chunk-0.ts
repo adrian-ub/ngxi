@@ -36,40 +36,6 @@ export class ZondiconsAddSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zondiconsAlbumIcon],svg[zondicons-album-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M0 0h20v20H0zm10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16m0-5a3 3 0 1 1 0-6a3 3 0 0 1 0 6"></svg:path>`,
-})
-export class ZondiconsAlbumIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[zondiconsAlignCenterIcon],svg[zondicons-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM4 5h12v2H4zm0 8h12v2H4z"></svg:path>`,
-})
-export class ZondiconsAlignCenterIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[zondiconsAdjustIcon],svg[zondicons-adjust-icon]',
   host: {
     role: 'img',
@@ -121,16 +87,33 @@ export class ZondiconsAlignJustifiedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zondiconsAlignLeftIcon],svg[zondicons-align-left-icon]',
+  selector: 'svg[zondiconsAlbumIcon],svg[zondicons-album-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM1 5h12v2H1zm0 8h12v2H1z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M0 0h20v20H0zm10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16m0-5a3 3 0 1 1 0-6a3 3 0 0 1 0 6"></svg:path>`,
 })
-export class ZondiconsAlignLeftIcon {
+export class ZondiconsAlbumIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[zondiconsAlignCenterIcon],svg[zondicons-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM4 5h12v2H4zm0 8h12v2H4z"></svg:path>`,
+})
+export class ZondiconsAlignCenterIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -148,6 +131,40 @@ export class ZondiconsAlignLeftIcon {
   template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM7 5h12v2H7zm0 8h12v2H7z"></svg:path>`,
 })
 export class ZondiconsAlignRightIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[zondiconsAlignLeftIcon],svg[zondicons-align-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 1h18v2H1zm0 8h18v2H1zm0 8h18v2H1zM1 5h12v2H1zm0 8h12v2H1z"></svg:path>`,
+})
+export class ZondiconsAlignLeftIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[zondiconsAnnouncementIcon],svg[zondicons-announcement-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 6c0-1.1.9-2 2-2h8l4-4h2v16h-2l-4-4H5a2 2 0 0 1-2-2H1V6zm8 9v5H8l-1.67-5H5v-2h8v2z"></svg:path>`,
+})
+export class ZondiconsAnnouncementIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,6 +206,23 @@ export class ZondiconsApparelIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[zondiconsArrowLeftIcon],svg[zondicons-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m3.828 9l6.071-6.071l-1.414-1.414L0 10l.707.707l7.778 7.778l1.414-1.414L3.828 11H20V9z"></svg:path>`,
+})
+export class ZondiconsArrowLeftIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[zondiconsArrowDownIcon],svg[zondicons-arrow-down-icon]',
   host: {
     role: 'img',
@@ -206,16 +240,16 @@ export class ZondiconsArrowDownIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zondiconsAnnouncementIcon],svg[zondicons-announcement-icon]',
+  selector: 'svg[zondiconsArrowOutlineRightIcon],svg[zondicons-arrow-outline-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M3 6c0-1.1.9-2 2-2h8l4-4h2v16h-2l-4-4H5a2 2 0 0 1-2-2H1V6zm8 9v5H8l-1.67-5H5v-2h8v2z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M20 10a10 10 0 1 1-20 0a10 10 0 0 1 20 0m-2 0a8 8 0 1 0-16 0a8 8 0 0 0 16 0m-8 2H5V8h5V5l5 5l-5 5z"></svg:path>`,
 })
-export class ZondiconsAnnouncementIcon {
+export class ZondiconsArrowOutlineRightIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,23 +274,6 @@ export class ZondiconsArrowOutlineDownIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zondiconsArrowLeftIcon],svg[zondicons-arrow-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m3.828 9l6.071-6.071l-1.414-1.414L0 10l.707.707l7.778 7.778l1.414-1.414L3.828 11H20V9z"></svg:path>`,
-})
-export class ZondiconsArrowLeftIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[zondiconsArrowOutlineLeftIcon],svg[zondicons-arrow-outline-left-icon]',
   host: {
     role: 'img',
@@ -267,23 +284,6 @@ export class ZondiconsArrowLeftIcon {
   template: `<svg:path fill="currentColor" d="M0 10a10 10 0 1 1 20 0a10 10 0 0 1-20 0m2 0a8 8 0 1 0 16 0a8 8 0 0 0-16 0m8-2h5v4h-5v3l-5-5l5-5z"></svg:path>`,
 })
 export class ZondiconsArrowOutlineLeftIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[zondiconsArrowOutlineRightIcon],svg[zondicons-arrow-outline-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20 10a10 10 0 1 1-20 0a10 10 0 0 1 20 0m-2 0a8 8 0 1 0-16 0a8 8 0 0 0 16 0m-8 2H5V8h5V5l5 5l-5 5z"></svg:path>`,
-})
-export class ZondiconsArrowOutlineRightIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

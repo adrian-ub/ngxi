@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[icOutlineNoStrollerIcon],svg[ic-outline-no-stroller-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 20c0 1.1-.9 2-2 2s-2-.9-2-2s.9-2 2-2s2 .9 2 2m7-11.34v3.51l2 2v-7.9c.58-.68.97-1.27 1.65-1.27c.77 0 1.35.66 1.35 1.48V7h2v-.52C22 4.56 20.52 3 18.65 3c-1.66 0-2.54 1.27-3.18 2.03l-3.5 4.11l1.42 1.42zm4.78 13.95l-1.91-1.91c-.29.76-1.01 1.3-1.87 1.3c-1.1 0-2-.9-2-2c0-.86.54-1.58 1.3-1.87L14.17 17H7.43c-.85 0-1.31-1-.76-1.65l2.69-3.16l-7.97-7.97L2.8 2.81l7.86 7.86l1.42 1.42l9.11 9.11zM12.17 15l-1.39-1.39L9.6 15zM10 5c.29 0 .58.02.86.05L9.49 6.67l1.42 1.42L14.3 4.1C13.03 3.4 11.56 3 10 3c-1.23 0-2.4.25-3.47.7L8.1 5.27A7 7 0 0 1 10 5"></svg:path>`,
-})
-export class IcOutlineNoStrollerIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[icOutlineNoTransferIcon],svg[ic-outline-no-transfer-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class IcOutlineSouthWestIcon {
   template: `<svg:path fill="currentColor" d="M15.49 9.63c-.18-2.79-1.31-5.51-3.43-7.63a12.2 12.2 0 0 0-3.55 7.63c1.28.68 2.46 1.56 3.49 2.63c1.03-1.06 2.21-1.94 3.49-2.63m-3.44-4.44c.63 1.03 1.07 2.18 1.3 3.38c-.47.3-.91.63-1.34.98c-.42-.34-.87-.67-1.33-.97c.25-1.2.71-2.35 1.37-3.39M12 15.45a12.1 12.1 0 0 0-3.06-3.2c-.13-.09-.27-.16-.4-.26c.13.09.27.17.39.25A11.78 11.78 0 0 0 2 10c0 5.32 3.36 9.82 8.03 11.49c.63.23 1.29.4 1.97.51c.68-.12 1.33-.29 1.97-.51C18.64 19.82 22 15.32 22 10c-4.18 0-7.85 2.17-10 5.45m1.32 4.15c-.44.15-.88.27-1.33.37c-.44-.09-.87-.21-1.28-.36c-3.29-1.18-5.7-3.99-6.45-7.35c1.1.26 2.15.71 3.12 1.33l-.02.01c.13.09.26.18.39.25l.07.04c.99.72 1.84 1.61 2.51 2.65L12 19.1l1.67-2.55a10.2 10.2 0 0 1 2.53-2.66l.07-.05c.09-.05.18-.11.27-.17l-.01-.02c.98-.65 2.07-1.13 3.21-1.4c-.75 3.37-3.15 6.18-6.42 7.35m-4.33-7.32c-.02-.01-.04-.03-.05-.04c0 0 .01 0 .01.01c.01.01.02.02.04.03"></svg:path>`,
 })
 export class IcOutlineSpaIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icOutlineSpaceBarIcon],svg[ic-outline-space-bar-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18 9v4H6V9H4v6h16V9z"></svg:path>`,
+})
+export class IcOutlineSpaceBarIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

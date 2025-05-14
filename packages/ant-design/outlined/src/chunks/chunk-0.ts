@@ -19,23 +19,6 @@ export class AntDesignAimOutlinedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[antDesignAccountBookOutlinedIcon],svg[ant-design-account-book-outlined-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32m-40 656H184V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128zM639.5 414h-45c-3 0-5.8 1.7-7.1 4.4L514 563.8h-2.8l-73.4-145.4a8 8 0 0 0-7.1-4.4h-46c-1.3 0-2.7.3-3.8 1c-3.9 2.1-5.3 7-3.2 10.9l89.3 164h-48.6c-4.4 0-8 3.6-8 8v21.3c0 4.4 3.6 8 8 8h65.1v33.7h-65.1c-4.4 0-8 3.6-8 8v21.3c0 4.4 3.6 8 8 8h65.1V752c0 4.4 3.6 8 8 8h41.3c4.4 0 8-3.6 8-8v-53.8h65.4c4.4 0 8-3.6 8-8v-21.3c0-4.4-3.6-8-8-8h-65.4v-33.7h65.4c4.4 0 8-3.6 8-8v-21.3c0-4.4-3.6-8-8-8h-49.1l89.3-164.1c.6-1.2 1-2.5 1-3.8c.1-4.4-3.4-8-7.9-8"></svg:path>`,
-})
-export class AntDesignAccountBookOutlinedIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[antDesignAlertOutlinedIcon],svg[ant-design-alert-outlined-icon]',
   host: {
     role: 'img',
@@ -104,16 +87,16 @@ export class AntDesignAlignLeftOutlinedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[antDesignAlignRightOutlinedIcon],svg[ant-design-align-right-outlined-icon]',
+  selector: 'svg[antDesignAccountBookOutlinedIcon],svg[ant-design-account-book-outlined-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M904 158H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8m0 424H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8m0 212H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8m0-424H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32m-40 656H184V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128zM639.5 414h-45c-3 0-5.8 1.7-7.1 4.4L514 563.8h-2.8l-73.4-145.4a8 8 0 0 0-7.1-4.4h-46c-1.3 0-2.7.3-3.8 1c-3.9 2.1-5.3 7-3.2 10.9l89.3 164h-48.6c-4.4 0-8 3.6-8 8v21.3c0 4.4 3.6 8 8 8h65.1v33.7h-65.1c-4.4 0-8 3.6-8 8v21.3c0 4.4 3.6 8 8 8h65.1V752c0 4.4 3.6 8 8 8h41.3c4.4 0 8-3.6 8-8v-53.8h65.4c4.4 0 8-3.6 8-8v-21.3c0-4.4-3.6-8-8-8h-65.4v-33.7h65.4c4.4 0 8-3.6 8-8v-21.3c0-4.4-3.6-8-8-8h-49.1l89.3-164.1c.6-1.2 1-2.5 1-3.8c.1-4.4-3.4-8-7.9-8"></svg:path>`,
 })
-export class AntDesignAlignRightOutlinedIcon {
+export class AntDesignAccountBookOutlinedIcon {
   readonly viewBox = input("0 0 1024 1024")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -131,6 +114,23 @@ export class AntDesignAlignRightOutlinedIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M512 64c247.424 0 448 200.576 448 448S759.424 960 512 960S64 759.424 64 512S264.576 64 512 64m32.493 168c-69.66 0-86.056 16.843-86.709 39.079l-.02 1.426v46.623H291.45c-9.92 0-14.28 23.053-14.27 39.31c0 2.696 2.08 4.923 4.77 4.923h175.814v58.301h-116.5c-9.96 0-14.3 23.76-14.271 39.473a4.77 4.77 0 0 0 4.77 4.76l233.448.003c-4.527 41.056-15.432 77.58-30.716 109.315l-1.224 2.494l-.32-.275c-60.244-28.47-120.431-52.577-194.407-52.577l-2.61.017c-84.982 1.112-144.718 56.503-145.916 127.04l-.018 1.222l.019 2.123c1.238 70.399 63.566 126.452 148.525 126.452c61.245-.008 116.372-16.85 163.457-45.017a139 139 0 0 0 14.068-7.962c18.09-12.116 34.892-25.955 50.304-41.156l9.452 6.344l12.456 8.322c57.527 38.257 113.763 72.617 169.856 79.27a143 143 0 0 0 18.314 1.157c43.017 0 54.991-52.68 57.387-95.508l.145-2.84c.392-8.463-6.197-15.595-14.648-15.863c-75.468-2.365-136.452-22.043-192.008-46.11l-6.267-2.742c35.146-56.8 56.657-121.816 57.155-186.661l.082-1.083c.401-5.515-3.997-10.198-9.52-10.198H549.33v-58.301h165.732c9.92 0 14.28-22.117 14.27-39.311c-.01-2.686-2.089-4.922-4.779-4.922H549.32v-82.35c0-2.656-2.175-4.778-4.827-4.778m-216.5 351.847c54.627 0 107.073 22.417 158.09 52.19l5.77 3.402c-103.575 119.837-247.172 95.903-261.724 26.37a67 67 0 0 1-1.138-9.83l-.057-2.336l.013-.907c.969-40.113 45.337-68.89 99.045-68.89"></svg:path>`,
 })
 export class AntDesignAlipayCircleOutlinedIcon {
+  readonly viewBox = input("0 0 1024 1024")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[antDesignAlignRightOutlinedIcon],svg[ant-design-align-right-outlined-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M904 158H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8m0 424H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8m0 212H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8m0-424H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8"></svg:path>`,
+})
+export class AntDesignAlignRightOutlinedIcon {
   readonly viewBox = input("0 0 1024 1024")
   readonly width = input("1em")
   readonly height = input("1em")

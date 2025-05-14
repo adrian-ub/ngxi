@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[meteoconsBeanieFillIcon],svg[meteocons-beanie-fill-icon]',
+  selector: 'svg[meteoconsBarometerFillIcon],svg[meteocons-barometer-fill-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:defs><svg:lineargradient id="meteoconsBeanieFill0" x1="215.6" x2="285.3" y1="215.1" y2="335.7" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#f87171"></svg:stop><svg:stop offset=".5" stop-color="#f87171"></svg:stop><svg:stop offset="1" stop-color="#dc2626"></svg:stop></svg:lineargradient><svg:lineargradient id="meteoconsBeanieFill1" x1="222.2" x2="289.8" y1="276.1" y2="393.3" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#f3f7fe"></svg:stop><svg:stop offset=".5" stop-color="#f3f7fe"></svg:stop><svg:stop offset="1" stop-color="#deeafb"></svg:stop></svg:lineargradient><svg:lineargradient id="meteoconsBeanieFill2" x1="245" x2="267" y1="151.6" y2="189.7" href="#meteoconsBeanieFill1"></svg:lineargradient></svg:defs><svg:path fill="url(#meteoconsBeanieFill0)" stroke="#ef4444" stroke-miterlimit="10" stroke-width="4" d="M256 204.7a83 83 0 0 1 83 83v17H173v-17a83 83 0 0 1 83-83Z"></svg:path><svg:path fill="url(#meteoconsBeanieFill1)" stroke="#e6effc" stroke-miterlimit="10" stroke-width="4" d="M160 317.5v34.4c0 6.3 7.1 11.4 16 11.4h160c8.9 0 16-5.1 16-11.4v-34.4c0-6.3-7.1-11.4-16-11.4H176c-8.9 0-16 5-16 11.4Z"></svg:path><svg:circle cx="256" cy="170.7" r="22" fill="url(#meteoconsBeanieFill2)" stroke="#e6effc" stroke-miterlimit="10" stroke-width="4"><svg:animatetransform id="meteoconsBeanieFill3" fill="freeze" additive="sum" attributeName="transform" begin="0s; x.end+2.58s" calcMode="spline" dur=".42s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1" keyTimes="0; .4; .8; 1" type="translate" values="0 0; 0 -9; 0 3; 0 0"></svg:animatetransform><svg:animatetransform id="meteoconsBeanieFill4" fill="freeze" additive="sum" attributeName="transform" begin="1s; y.end+2.25s" calcMode="spline" dur=".75s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1" keyTimes="0; .22; .44; .67; .89; 1" type="rotate" values="0 256 256; -15 256 256; 9 256 256; -9 256 256; 6 256 256; 0 256 256"></svg:animatetransform></svg:circle>`,
+  template: `<svg:defs><svg:lineargradient id="meteoconsBarometerFill0" x1="184" x2="328" y1="131.3" y2="380.7" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#6b7280"></svg:stop><svg:stop offset=".5" stop-color="#6b7280"></svg:stop><svg:stop offset="1" stop-color="#374151"></svg:stop></svg:lineargradient></svg:defs><svg:circle cx="256" cy="256" r="144" fill="url(#meteoconsBarometerFill0)" stroke="#e5e7eb" stroke-miterlimit="10" stroke-width="12"></svg:circle><svg:path fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M256 200v-48m108 104h-48m-116 0h-48m180-68l-24 24m-104 0l-24-24m128 112l24 24m-152 0l24-24"></svg:path><svg:circle cx="256" cy="256" r="24" fill="#ef4444"></svg:circle><svg:path fill="none" stroke="#ef4444" stroke-linecap="round" stroke-miterlimit="10" stroke-width="12" d="M256 284V164"><svg:animatetransform attributeName="transform" calcMode="spline" dur="6s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1" keyTimes="0; .17; .25; .42; .5; .67; 1" repeatCount="indefinite" type="rotate" values="-54 256 256; -15 256 256; -36 256 256; 36 256 256; 10 256 256; 115 256 256; -54 256 256"></svg:animatetransform></svg:path>`,
 })
-export class MeteoconsBeanieFillIcon {
+export class MeteoconsBarometerFillIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,6 +36,23 @@ export class MeteoconsCelsiusFillIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[meteoconsBeanieFillIcon],svg[meteocons-beanie-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:lineargradient id="meteoconsBeanieFill0" x1="215.6" x2="285.3" y1="215.1" y2="335.7" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#f87171"></svg:stop><svg:stop offset=".5" stop-color="#f87171"></svg:stop><svg:stop offset="1" stop-color="#dc2626"></svg:stop></svg:lineargradient><svg:lineargradient id="meteoconsBeanieFill1" x1="222.2" x2="289.8" y1="276.1" y2="393.3" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#f3f7fe"></svg:stop><svg:stop offset=".5" stop-color="#f3f7fe"></svg:stop><svg:stop offset="1" stop-color="#deeafb"></svg:stop></svg:lineargradient><svg:lineargradient id="meteoconsBeanieFill2" x1="245" x2="267" y1="151.6" y2="189.7" href="#meteoconsBeanieFill1"></svg:lineargradient></svg:defs><svg:path fill="url(#meteoconsBeanieFill0)" stroke="#ef4444" stroke-miterlimit="10" stroke-width="4" d="M256 204.7a83 83 0 0 1 83 83v17H173v-17a83 83 0 0 1 83-83Z"></svg:path><svg:path fill="url(#meteoconsBeanieFill1)" stroke="#e6effc" stroke-miterlimit="10" stroke-width="4" d="M160 317.5v34.4c0 6.3 7.1 11.4 16 11.4h160c8.9 0 16-5.1 16-11.4v-34.4c0-6.3-7.1-11.4-16-11.4H176c-8.9 0-16 5-16 11.4Z"></svg:path><svg:circle cx="256" cy="170.7" r="22" fill="url(#meteoconsBeanieFill2)" stroke="#e6effc" stroke-miterlimit="10" stroke-width="4"><svg:animatetransform id="meteoconsBeanieFill3" fill="freeze" additive="sum" attributeName="transform" begin="0s; x.end+2.58s" calcMode="spline" dur=".42s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1" keyTimes="0; .4; .8; 1" type="translate" values="0 0; 0 -9; 0 3; 0 0"></svg:animatetransform><svg:animatetransform id="meteoconsBeanieFill4" fill="freeze" additive="sum" attributeName="transform" begin="1s; y.end+2.25s" calcMode="spline" dur=".75s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1" keyTimes="0; .22; .44; .67; .89; 1" type="rotate" values="0 256 256; -15 256 256; 9 256 256; -9 256 256; 6 256 256; 0 256 256"></svg:animatetransform></svg:circle>`,
+})
+export class MeteoconsBeanieFillIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[meteoconsClearDayFillIcon],svg[meteocons-clear-day-fill-icon]',
   host: {
     role: 'img',
@@ -46,23 +63,6 @@ export class MeteoconsCelsiusFillIcon {
   template: `<svg:defs><svg:lineargradient id="meteoconsClearDayFill0" x1="150" x2="234" y1="119.2" y2="264.8" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#fbbf24"></svg:stop><svg:stop offset=".5" stop-color="#fbbf24"></svg:stop><svg:stop offset="1" stop-color="#f59e0b"></svg:stop></svg:lineargradient><svg:symbol id="meteoconsClearDayFill1" viewBox="0 0 384 384"><svg:circle cx="192" cy="192" r="84" fill="url(#meteoconsClearDayFill0)" stroke="#f8af18" stroke-miterlimit="10" stroke-width="6"></svg:circle><svg:path fill="none" stroke="#fbbf24" stroke-linecap="round" stroke-miterlimit="10" stroke-width="24" d="M192 61.7V12m0 360v-49.7m92.2-222.5l35-35M64.8 319.2l35.1-35.1m0-184.4l-35-35m254.5 254.5l-35.1-35.1M61.7 192H12m360 0h-49.7"><svg:animatetransform additive="sum" attributeName="transform" dur="6s" repeatCount="indefinite" type="rotate" values="0 192 192; 45 192 192"></svg:animatetransform></svg:path></svg:symbol></svg:defs><svg:use width="384" height="384" href="#meteoconsClearDayFill1" transform="translate(64 64)"></svg:use>`,
 })
 export class MeteoconsClearDayFillIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[meteoconsBarometerFillIcon],svg[meteocons-barometer-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:lineargradient id="meteoconsBarometerFill0" x1="184" x2="328" y1="131.3" y2="380.7" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#6b7280"></svg:stop><svg:stop offset=".5" stop-color="#6b7280"></svg:stop><svg:stop offset="1" stop-color="#374151"></svg:stop></svg:lineargradient></svg:defs><svg:circle cx="256" cy="256" r="144" fill="url(#meteoconsBarometerFill0)" stroke="#e5e7eb" stroke-miterlimit="10" stroke-width="12"></svg:circle><svg:path fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" d="M256 200v-48m108 104h-48m-116 0h-48m180-68l-24 24m-104 0l-24-24m128 112l24 24m-152 0l24-24"></svg:path><svg:circle cx="256" cy="256" r="24" fill="#ef4444"></svg:circle><svg:path fill="none" stroke="#ef4444" stroke-linecap="round" stroke-miterlimit="10" stroke-width="12" d="M256 284V164"><svg:animatetransform attributeName="transform" calcMode="spline" dur="6s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1" keyTimes="0; .17; .25; .42; .5; .67; 1" repeatCount="indefinite" type="rotate" values="-54 256 256; -15 256 256; -36 256 256; 36 256 256; 10 256 256; 115 256 256; -54 256 256"></svg:animatetransform></svg:path>`,
-})
-export class MeteoconsBarometerFillIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")

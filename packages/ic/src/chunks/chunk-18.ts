@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[icTwotoneBattery3BarIcon],svg[ic-twotone-battery-3-bar-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9 6h6v8H9z" opacity=".3"></svg:path><svg:path fill="currentColor" d="M17 5v16c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1h2V2h4v2h2c.55 0 1 .45 1 1m-2 1H9v8h6z"></svg:path>`,
-})
-export class IcTwotoneBattery3BarIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[icTwotoneBattery30Icon],svg[ic-twotone-battery-30-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class IcTwotoneFaxIcon {
   template: `<svg:path fill="currentColor" d="M3 19h18V5H3zM5 7h9v2H5zm0 3h9v2H5z" opacity=".3"></svg:path><svg:path fill="currentColor" d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 16H3V5h18zM5 10h9v2H5zm0-3h9v2H5z"></svg:path>`,
 })
 export class IcTwotoneFeaturedPlayListIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icTwotoneFeaturedVideoIcon],svg[ic-twotone-featured-video-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 19h18V5H3zM4 6h9v7H4z" opacity=".3"></svg:path><svg:path fill="currentColor" d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 16H3V5h18zM4 6h9v7H4z"></svg:path>`,
+})
+export class IcTwotoneFeaturedVideoIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

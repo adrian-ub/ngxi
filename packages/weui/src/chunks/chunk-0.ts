@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[weuiAddFilledIcon],svg[weui-add-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2z"></svg:path>`,
-})
-export class WeuiAddFilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[weuiAddFriendsFilledIcon],svg[weui-add-friends-filled-icon]',
   host: {
     role: 'img',
@@ -29,6 +12,23 @@ export class WeuiAddFilledIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M18.75 10.75V8h1.5v2.75H23v1.5h-2.75V15h-1.5v-2.75H16v-1.5zm-10.918 1.6C7.096 11.478 6.5 9.85 6.5 8.71V7a4 4 0 0 1 8 0v1.71c0 1.14-.6 2.773-1.332 3.642l-.361.428c-.59.699-.406 1.588.419 1.99l5.66 2.762c.615.3 1.114 1.093 1.114 1.783v.687a1 1 0 0 1-1.001.998H2a1 1 0 0 1-1-.998v-.687c0-.685.498-1.483 1.114-1.784l5.66-2.762c.821-.4 1.012-1.288.42-1.99z"></svg:path>`,
 })
 export class WeuiAddFriendsFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[weuiAddFilledIcon],svg[weui-add-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2z"></svg:path>`,
+})
+export class WeuiAddFilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,23 +104,6 @@ export class WeuiAtFilledIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[weuiBackFilledIcon],svg[weui-back-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m3.343 12l7.071 7.071L9 20.485l-7.778-7.778a1 1 0 0 1 0-1.414L9 3.515l1.414 1.414z"></svg:path>`,
-})
-export class WeuiBackFilledIcon {
-  readonly viewBox = input("0 0 12 24")
-  readonly width = input("0.5em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[weuiBack2FilledIcon],svg[weui-back2-filled-icon]',
   host: {
     role: 'img',
@@ -133,6 +116,23 @@ export class WeuiBackFilledIcon {
 export class WeuiBack2FilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[weuiBackFilledIcon],svg[weui-back-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m3.343 12l7.071 7.071L9 20.485l-7.778-7.778a1 1 0 0 1 0-1.414L9 3.515l1.414 1.414z"></svg:path>`,
+})
+export class WeuiBackFilledIcon {
+  readonly viewBox = input("0 0 12 24")
+  readonly width = input("0.5em")
   readonly height = input("1em")
 }
 

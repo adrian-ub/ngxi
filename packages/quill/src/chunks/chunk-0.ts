@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[quillAlarmIcon],svg[quill-alarm-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.607 6.392a15 15 0 0 0-6.725-3.882m-7.764 0a15 15 0 0 0-6.725 3.882M16 9v8l-4 4m15-4c0 6.075-4.925 11-11 11S5 23.075 5 17S9.925 6 16 6s11 4.925 11 11"></svg:path>`,
+})
+export class QuillAlarmIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[quillActivityIcon],svg[quill-activity-icon]',
   host: {
     role: 'img',
@@ -29,6 +46,23 @@ export class QuillActivityIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 25V7m-9 9h18"></svg:path>`,
 })
 export class QuillAddIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[quillArrowDownIcon],svg[quill-arrow-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 26V5M8 19l8 8l8-8"></svg:path>`,
+})
+export class QuillArrowDownIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,33 +104,16 @@ export class QuillArrowLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[quillAlarmIcon],svg[quill-alarm-icon]',
+  selector: 'svg[quillArrowRightIcon],svg[quill-arrow-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.607 6.392a15 15 0 0 0-6.725-3.882m-7.764 0a15 15 0 0 0-6.725 3.882M16 9v8l-4 4m15-4c0 6.075-4.925 11-11 11S5 23.075 5 17S9.925 6 16 6s11 4.925 11 11"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 16h21m-7-8l8 8l-8 8"></svg:path>`,
 })
-export class QuillAlarmIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[quillArrowDownIcon],svg[quill-arrow-down-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 26V5M8 19l8 8l8-8"></svg:path>`,
-})
-export class QuillArrowDownIcon {
+export class QuillArrowRightIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -114,23 +131,6 @@ export class QuillArrowDownIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 27V6m8 7l-8-8l-8 8"></svg:path>`,
 })
 export class QuillArrowUpIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[quillArrowRightIcon],svg[quill-arrow-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 16h21m-7-8l8 8l-8 8"></svg:path>`,
-})
-export class QuillArrowRightIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,23 +172,6 @@ export class QuillAttachmentIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[quillBreatherIcon],svg[quill-breather-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M25.192 25.192A13 13 0 1 0 6.808 6.808a13 13 0 0 0 18.384 18.384"></svg:path>`,
-})
-export class QuillBreatherIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[quillBroadcastIcon],svg[quill-broadcast-icon]',
   host: {
     role: 'img',
@@ -199,6 +182,23 @@ export class QuillBreatherIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 20.66a10 10 0 0 0 0-17.32M11 20.66a10 10 0 0 1 0-17.32m8 13.856a6 6 0 0 0 0-10.392m-6 10.392a6 6 0 0 1 0-10.392M13.09 26L16 18l2.91 8m-5.82 0L12 29m1.09-3h5.82M20 29l-1.09-3M18 12a2 2 0 1 0-4 0a2 2 0 0 0 4 0"></svg:path>`,
 })
 export class QuillBroadcastIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[quillBreatherIcon],svg[quill-breather-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M25.192 25.192A13 13 0 1 0 6.808 6.808a13 13 0 0 0 18.384 18.384"></svg:path>`,
+})
+export class QuillBreatherIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[ixScreenPcTowerFilledIcon],svg[ix-screen-pc-tower-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M469.333 448.003V170.669H298.667v277.334zM362.667 149.336v-64h-320v234.667h138.666v42.666h-32v42.667H256v-42.667h-32v-42.666h53.333V149.336zm-21.334 64h85.334v42.667h-85.334zm0 64v128h85.334v-128zm64 85.333v-42.666h-42.666v42.666z" clip-rule="evenodd"></svg:path>`,
-})
-export class IxScreenPcTowerFilledIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ixScreenPcTowerSettingsIcon],svg[ix-screen-pc-tower-settings-icon]',
   host: {
     role: 'img',
@@ -5537,6 +5520,23 @@ export class IxZoomOutIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M266.667 170.667C331.468 170.667 384 223.199 384 288c0 24.693-7.628 47.605-20.656 66.507l81.218 81.218l-30.17 30.17l-81.218-81.218c-18.903 13.028-41.814 20.656-66.507 20.656c-64.802 0-117.334-52.532-117.334-117.333s52.532-117.333 117.334-117.333m0 42.666C225.429 213.333 192 246.763 192 288s33.43 74.667 74.667 74.667s74.666-33.43 74.666-74.667s-33.43-74.667-74.666-74.667m181.333 64v64h-42.667v-64zm-341.333 0v21.334H128v42.666H64v-64zm0-106.666v64H64v-64zm341.333 0v64h-42.667v-64zM448 64v64h-42.667v-21.333H384V64zm-320 0v42.667h-21.333V128H64V64zm213.333 0v42.667h-64V64zm-106.666 0v42.667h-64V64z"></svg:path>`,
 })
 export class IxZoomSelectionIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixAddFilterFilledIcon],svg[ix-add-filter-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M234.667 267.333L384 85.333H42.667l149.333 182v122h42.667zM426.666 320v64h64v42.667h-64v64H384v-64h-64V384h64v-64z" clip-rule="evenodd"></svg:path>`,
+})
+export class IxAddFilterFilledIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")

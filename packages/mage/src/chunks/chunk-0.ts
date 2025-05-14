@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[mageAeroplaneFillIcon],svg[mage-aeroplane-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20.72 14.621a.8.8 0 0 1-.19.35a.7.7 0 0 1-.33.21a.8.8 0 0 1-.4 0l-5.81-1.46l-.27 4.8l1.06.8a.22.22 0 0 1 .1.2v1.75a.27.27 0 0 1-.09.2a.3.3 0 0 1-.16 0h-.06l-2.57-.69l-2.56.69a.25.25 0 0 1-.31-.24v-1.75a.25.25 0 0 1 .1-.2l1.06-.8l-.27-4.8l-5.81 1.46a.73.73 0 0 1-.39 0a.75.75 0 0 1-.34-.21a.73.73 0 0 1-.18-.35a.65.65 0 0 1 0-.39l.52-1.55a.6.6 0 0 1 .15-.27a.8.8 0 0 1 .27-.18l5.75-2.47v-5.23a2 2 0 0 1 .58-1.41a2.06 2.06 0 0 1 2.83 0a2 2 0 0 1 .58 1.42v5.22l5.76 2.47a.74.74 0 0 1 .42.45l.52 1.54a.9.9 0 0 1 .04.44"></svg:path>`,
-})
-export class MageAeroplaneFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mageAdobeIcon],svg[mage-adobe-icon]',
   host: {
     role: 'img',
@@ -36,16 +19,16 @@ export class MageAdobeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[mageAfterEffectsIcon],svg[mage-after-effects-icon]',
+  selector: 'svg[mageAeroplaneFillIcon],svg[mage-aeroplane-fill-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M9.84 12.4c0 .09 0 .09-.07.09H8c.33-1 .68-2.06 1-3.1c0 .08 0 .16.07.24s.09.33.13.49l.18.56c0 .19.11.37.17.56l.19.57z"></svg:path><svg:path fill="currentColor" d="M17.08 11.77a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5m-4.27 14h-1.62a.14.14 0 0 1-.142-.068a.14.14 0 0 1-.018-.052c-.08-.25-.17-.49-.25-.74s-.2-.57-.29-.86c0-.16-.13-.18-.27-.18H7.62c-.11 0-.11 0-.15.12s-.1.33-.16.5l-.16.52l-.21.61a.2.2 0 0 1 0 .08c0 .13-.16.11-.26.11H5.39c-.15 0-.2-.07-.14-.21s.11-.3.16-.44l.21-.64l.39-1.1c.11-.3.21-.61.31-.92s.19-.53.29-.8l.21-.63l.37-1l.3-.88c.1-.28.2-.56.29-.85a2 2 0 0 0 0-.41c0-.21 0-.21.21-.21H9.8c.16 0 .15 0 .2.15s.18.49.26.73s.15.42.22.62l.24.65l.24.7c.1.27.2.53.29.8l.26.72c.08.24.17.48.26.73s.12.37.19.55s.14.4.22.6s.13.38.2.57l.29.81l.12.35c.04-.01.01.07-.06.07m6-3q.007.135 0 .27c0 .09-.15.12-.24.12h-3.53c.036.328.18.634.41.87a3 3 0 0 0 2.8.18c.08 0 .12 0 .12.08v1.13c0 .18-.07.2-.22.26l-.36.11a2 2 0 0 1-.35.07c-.25 0-.5.07-.75.08s-.34 0-.51 0H16c-.2 0-.41 0-.6-.07a2.7 2.7 0 0 1-1.44-.8a2.6 2.6 0 0 1-.56-.88a2.8 2.8 0 0 1-.2-.75a9 9 0 0 1 0-.88c.015-.361.083-.718.2-1.06a3.2 3.2 0 0 1 .41-.8a2.5 2.5 0 0 1 .9-.82q.235-.136.49-.23a5 5 0 0 1 .56-.1q.255-.015.51 0q.376.006.74.1q.33.093.63.26a2 2 0 0 1 .74.74c.1.18.18.36.26.54q.064.191.1.39a3 3 0 0 1 .03 1.19zm-2.45-1.85a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.06-.26a1 1 0 0 0-.74-.7zm.76.67a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M20.72 14.621a.8.8 0 0 1-.19.35a.7.7 0 0 1-.33.21a.8.8 0 0 1-.4 0l-5.81-1.46l-.27 4.8l1.06.8a.22.22 0 0 1 .1.2v1.75a.27.27 0 0 1-.09.2a.3.3 0 0 1-.16 0h-.06l-2.57-.69l-2.56.69a.25.25 0 0 1-.31-.24v-1.75a.25.25 0 0 1 .1-.2l1.06-.8l-.27-4.8l-5.81 1.46a.73.73 0 0 1-.39 0a.75.75 0 0 1-.34-.21a.73.73 0 0 1-.18-.35a.65.65 0 0 1 0-.39l.52-1.55a.6.6 0 0 1 .15-.27a.8.8 0 0 1 .27-.18l5.75-2.47v-5.23a2 2 0 0 1 .58-1.41a2.06 2.06 0 0 1 2.83 0a2 2 0 0 1 .58 1.42v5.22l5.76 2.47a.74.74 0 0 1 .42.45l.52 1.54a.9.9 0 0 1 .04.44"></svg:path>`,
 })
-export class MageAfterEffectsIcon {
+export class MageAeroplaneFillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -63,6 +46,23 @@ export class MageAfterEffectsIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M13.235 3.257a1.75 1.75 0 0 1 .508 1.24v5.388l5.917 2.541a.47.47 0 0 1 .274.295l.519 1.545a.508.508 0 0 1-.6.65l-6.1-1.534l-.294 5.245l1.169.875v1.748a338 338 0 0 1-2.633-.708s-1.073.295-2.623.708v-1.748l1.17-.875l-.296-5.245l-6.099 1.535a.509.509 0 0 1-.6-.65l.519-1.546a.47.47 0 0 1 .274-.295l5.917-2.541V4.497a1.75 1.75 0 0 1 .508-1.24a1.76 1.76 0 0 1 2.47 0"></svg:path>`,
 })
 export class MageAeroplaneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mageAfterEffectsIcon],svg[mage-after-effects-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.84 12.4c0 .09 0 .09-.07.09H8c.33-1 .68-2.06 1-3.1c0 .08 0 .16.07.24s.09.33.13.49l.18.56c0 .19.11.37.17.56l.19.57z"></svg:path><svg:path fill="currentColor" d="M17.08 11.77a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24m0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.04-.24M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5m-4.27 14h-1.62a.14.14 0 0 1-.142-.068a.14.14 0 0 1-.018-.052c-.08-.25-.17-.49-.25-.74s-.2-.57-.29-.86c0-.16-.13-.18-.27-.18H7.62c-.11 0-.11 0-.15.12s-.1.33-.16.5l-.16.52l-.21.61a.2.2 0 0 1 0 .08c0 .13-.16.11-.26.11H5.39c-.15 0-.2-.07-.14-.21s.11-.3.16-.44l.21-.64l.39-1.1c.11-.3.21-.61.31-.92s.19-.53.29-.8l.21-.63l.37-1l.3-.88c.1-.28.2-.56.29-.85a2 2 0 0 0 0-.41c0-.21 0-.21.21-.21H9.8c.16 0 .15 0 .2.15s.18.49.26.73s.15.42.22.62l.24.65l.24.7c.1.27.2.53.29.8l.26.72c.08.24.17.48.26.73s.12.37.19.55s.14.4.22.6s.13.38.2.57l.29.81l.12.35c.04-.01.01.07-.06.07m6-3q.007.135 0 .27c0 .09-.15.12-.24.12h-3.53c.036.328.18.634.41.87a3 3 0 0 0 2.8.18c.08 0 .12 0 .12.08v1.13c0 .18-.07.2-.22.26l-.36.11a2 2 0 0 1-.35.07c-.25 0-.5.07-.75.08s-.34 0-.51 0H16c-.2 0-.41 0-.6-.07a2.7 2.7 0 0 1-1.44-.8a2.6 2.6 0 0 1-.56-.88a2.8 2.8 0 0 1-.2-.75a9 9 0 0 1 0-.88c.015-.361.083-.718.2-1.06a3.2 3.2 0 0 1 .41-.8a2.5 2.5 0 0 1 .9-.82q.235-.136.49-.23a5 5 0 0 1 .56-.1q.255-.015.51 0q.376.006.74.1q.33.093.63.26a2 2 0 0 1 .74.74c.1.18.18.36.26.54q.064.191.1.39a3 3 0 0 1 .03 1.19zm-2.45-1.85a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14a1 1 0 0 0-.06-.26a1 1 0 0 0-.74-.7zm.76.67a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29zm0 0a1 1 0 0 0-.76-.67a1.7 1.7 0 0 0-.55 0a.93.93 0 0 0-.64.47a1.7 1.7 0 0 0-.2.58H17c.1 0 .13 0 .12-.14q0-.148-.04-.29z"></svg:path>`,
+})
+export class MageAfterEffectsIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,6 +104,23 @@ export class MageAlarmClockFillIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[mageAlignLeftIcon],svg[mage-align-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M4.5 12h8m-8 6.25h15m-15-12.5h15"></svg:path>`,
+})
+export class MageAlignLeftIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[mageAlignCenterIcon],svg[mage-align-center-icon]',
   host: {
     role: 'img',
@@ -131,40 +148,6 @@ export class MageAlignCenterIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M19.5 12h-8m8-6.25h-15m15 12.5h-15"></svg:path>`,
 })
 export class MageAlignRightIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mageArchiveIcon],svg[mage-archive-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><svg:path stroke-linejoin="round" d="M4.382 8.813v8.5c0 .845.344 1.656.957 2.253a3.3 3.3 0 0 0 2.308.934h8.706c.866 0 1.696-.336 2.308-.934a3.15 3.15 0 0 0 .957-2.253v-8.5m0-5.313H4.382c-.901 0-1.632.714-1.632 1.594v2.125c0 .88.73 1.593 1.632 1.593h15.236c.901 0 1.632-.713 1.632-1.593V5.094c0-.88-.73-1.594-1.632-1.594"></svg:path><svg:path stroke-miterlimit="10" d="M12 17v-5"></svg:path><svg:path stroke-linejoin="round" d="m9.707 14.895l1.967 1.967a.46.46 0 0 0 .652 0l1.967-1.967"></svg:path></svg:g>`,
-})
-export class MageArchiveIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mageAlignLeftIcon],svg[mage-align-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M4.5 12h8m-8 6.25h15m-15-12.5h15"></svg:path>`,
-})
-export class MageAlignLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,33 +189,16 @@ export class MageAppleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[mageArchiveDrawerFillIcon],svg[mage-archive-drawer-fill-icon]',
+  selector: 'svg[mageArchiveIcon],svg[mage-archive-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M19.97 8.685v-.8a2.74 2.74 0 0 0-.83-2a2.9 2.9 0 0 0-1.23-.71v-.37a2.77 2.77 0 0 0-.82-2a2.82 2.82 0 0 0-2-.8H8.92a2.8 2.8 0 0 0-2.81 2.77v.37a2.9 2.9 0 0 0-1.23.71a2.74 2.74 0 0 0-.82 2v.8a4 4 0 0 0-2.06 3.5v5.84a4.07 4.07 0 0 0 4.08 4h11.84a4.07 4.07 0 0 0 4.08-4v-5.84a4 4 0 0 0-2.03-3.47m-3.09 5.28a2.78 2.78 0 0 1-2.8 2.78H9.97a2.81 2.81 0 0 1-2.62-1.725a2.8 2.8 0 0 1-.21-1.085v-1a.75.75 0 0 1 1.5 0v1a1.27 1.27 0 0 0 .38.9c.248.244.582.381.93.38h4.11a1.32 1.32 0 0 0 .92-.38a1.22 1.22 0 0 0 .38-.9v-1a.75.75 0 1 1 1.5 0zm1.59-5.78a3 3 0 0 0-.53 0H6.1a3 3 0 0 0-.52 0v-.3a1.23 1.23 0 0 1 .38-.9a1.32 1.32 0 0 1 .92-.38h10.28c.348 0 .682.136.93.38a1.27 1.27 0 0 1 .38.9z"></svg:path>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><svg:path stroke-linejoin="round" d="M4.382 8.813v8.5c0 .845.344 1.656.957 2.253a3.3 3.3 0 0 0 2.308.934h8.706c.866 0 1.696-.336 2.308-.934a3.15 3.15 0 0 0 .957-2.253v-8.5m0-5.313H4.382c-.901 0-1.632.714-1.632 1.594v2.125c0 .88.73 1.593 1.632 1.593h15.236c.901 0 1.632-.713 1.632-1.593V5.094c0-.88-.73-1.594-1.632-1.594"></svg:path><svg:path stroke-miterlimit="10" d="M12 17v-5"></svg:path><svg:path stroke-linejoin="round" d="m9.707 14.895l1.967 1.967a.46.46 0 0 0 .652 0l1.967-1.967"></svg:path></svg:g>`,
 })
-export class MageArchiveDrawerFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[mageArchiveFillIcon],svg[mage-archive-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M19.62 2.725H4.39A2.37 2.37 0 0 0 2 5.065v2.12a2.38 2.38 0 0 0 1.64 2.29v7.86a3.9 3.9 0 0 0 1.18 2.79a4 4 0 0 0 2.83 1.15h8.71a4 4 0 0 0 2.83-1.15a3.9 3.9 0 0 0 1.18-2.79v-7.86A2.38 2.38 0 0 0 22 7.235v-2.12a2.36 2.36 0 0 0-2.38-2.39m-4.79 12.67l-2 2a1.3 1.3 0 0 1-.39.26a1.1 1.1 0 0 1-.31.08h-.3a1.4 1.4 0 0 1-.29-.08a1.2 1.2 0 0 1-.39-.26l-2-2a.75.75 0 0 1 1.06-1.06l1 1v-3.36a.75.75 0 1 1 1.5 0v3.37l1-1a.75.75 0 0 1 1.06 1.06zm5.67-8.21a.86.86 0 0 1-.88.85H4.39a.87.87 0 0 1-.89-.85v-2.12a.86.86 0 0 1 .89-.84h15.23a.85.85 0 0 1 .88.84z"></svg:path>`,
-})
-export class MageArchiveFillIcon {
+export class MageArchiveIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -267,6 +233,23 @@ export class MageArchiveDrawerIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><svg:path stroke-miterlimit="10" d="M12 20V4"></svg:path><svg:path stroke-linejoin="round" d="m4.34 12.968l6.572 6.572a1.53 1.53 0 0 0 2.176 0l6.573-6.572"></svg:path></svg:g>`,
 })
 export class MageArrowDownIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mageArchiveFillIcon],svg[mage-archive-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.62 2.725H4.39A2.37 2.37 0 0 0 2 5.065v2.12a2.38 2.38 0 0 0 1.64 2.29v7.86a3.9 3.9 0 0 0 1.18 2.79a4 4 0 0 0 2.83 1.15h8.71a4 4 0 0 0 2.83-1.15a3.9 3.9 0 0 0 1.18-2.79v-7.86A2.38 2.38 0 0 0 22 7.235v-2.12a2.36 2.36 0 0 0-2.38-2.39m-4.79 12.67l-2 2a1.3 1.3 0 0 1-.39.26a1.1 1.1 0 0 1-.31.08h-.3a1.4 1.4 0 0 1-.29-.08a1.2 1.2 0 0 1-.39-.26l-2-2a.75.75 0 0 1 1.06-1.06l1 1v-3.36a.75.75 0 1 1 1.5 0v3.37l1-1a.75.75 0 0 1 1.06 1.06zm5.67-8.21a.86.86 0 0 1-.88.85H4.39a.87.87 0 0 1-.89-.85v-2.12a.86.86 0 0 1 .89-.84h15.23a.85.85 0 0 1 .88.84z"></svg:path>`,
+})
+export class MageArchiveFillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -318,6 +301,23 @@ export class MageArrowDownCircleFillIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><svg:path stroke-miterlimit="10" d="M6.343 17.657L17.657 6.343"></svg:path><svg:path stroke-linejoin="round" d="M5.899 7.267v9.296A1.53 1.53 0 0 0 7.437 18.1h9.296"></svg:path></svg:g>`,
 })
 export class MageArrowDownLeftIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mageArchiveDrawerFillIcon],svg[mage-archive-drawer-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.97 8.685v-.8a2.74 2.74 0 0 0-.83-2a2.9 2.9 0 0 0-1.23-.71v-.37a2.77 2.77 0 0 0-.82-2a2.82 2.82 0 0 0-2-.8H8.92a2.8 2.8 0 0 0-2.81 2.77v.37a2.9 2.9 0 0 0-1.23.71a2.74 2.74 0 0 0-.82 2v.8a4 4 0 0 0-2.06 3.5v5.84a4.07 4.07 0 0 0 4.08 4h11.84a4.07 4.07 0 0 0 4.08-4v-5.84a4 4 0 0 0-2.03-3.47m-3.09 5.28a2.78 2.78 0 0 1-2.8 2.78H9.97a2.81 2.81 0 0 1-2.62-1.725a2.8 2.8 0 0 1-.21-1.085v-1a.75.75 0 0 1 1.5 0v1a1.27 1.27 0 0 0 .38.9c.248.244.582.381.93.38h4.11a1.32 1.32 0 0 0 .92-.38a1.22 1.22 0 0 0 .38-.9v-1a.75.75 0 1 1 1.5 0zm1.59-5.78a3 3 0 0 0-.53 0H6.1a3 3 0 0 0-.52 0v-.3a1.23 1.23 0 0 1 .38-.9a1.32 1.32 0 0 1 .92-.38h10.28c.348 0 .682.136.93.38a1.27 1.27 0 0 1 .38.9z"></svg:path>`,
+})
+export class MageArchiveDrawerFillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

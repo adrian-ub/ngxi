@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[bxClipboardIcon],svg[bx-clipboard-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19 3h-2.25a1 1 0 0 0-1-1h-7.5a1 1 0 0 0-1 1H5c-1.103 0-2 .897-2 2v15c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2m0 17H5V5h2v2h10V5h2z"></svg:path>`,
+})
+export class BxClipboardIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[bxClosetIcon],svg[bx-closet-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class BxStarIcon {
   template: `<svg:circle cx="12" cy="12" r="2" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="m7.758 16.243l1.414-1.415a3.97 3.97 0 0 1-1.173-2.831c0-1.068.417-2.071 1.173-2.825L7.758 7.756a5.96 5.96 0 0 0-1.76 4.24c0 1.604.625 3.112 1.76 4.247m8.484 0A5.96 5.96 0 0 0 18 12a5.96 5.96 0 0 0-1.758-4.243l-1.414 1.414C15.584 9.927 16 10.932 16 12s-.416 2.073-1.172 2.829z"></svg:path><svg:path fill="currentColor" d="M6.344 17.657a7.95 7.95 0 0 1-2.345-5.659c0-2.137.833-4.145 2.345-5.654L4.93 4.929c-1.89 1.886-2.931 4.397-2.931 7.069s1.041 5.183 2.931 7.073zM17.657 6.343A7.95 7.95 0 0 1 20 12a7.95 7.95 0 0 1-2.343 5.657l1.414 1.414A9.93 9.93 0 0 0 22 12a9.93 9.93 0 0 0-2.929-7.071z"></svg:path>`,
 })
 export class BxStationIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bxStatsIcon],svg[bx-stats-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20 12a2 2 0 0 0-.703.133l-2.398-1.963c.059-.214.101-.436.101-.67C17 8.114 15.886 7 14.5 7S12 8.114 12 9.5c0 .396.1.765.262 1.097l-2.909 3.438A2 2 0 0 0 9 14c-.179 0-.348.03-.512.074l-2.563-2.563C5.97 11.348 6 11.179 6 11c0-1.108-.892-2-2-2s-2 .892-2 2s.892 2 2 2c.179 0 .348-.03.512-.074l2.563 2.563A2 2 0 0 0 7 16c0 1.108.892 2 2 2s2-.892 2-2c0-.237-.048-.46-.123-.671l2.913-3.442c.227.066.462.113.71.113a2.5 2.5 0 0 0 1.133-.281l2.399 1.963A2 2 0 0 0 18 14c0 1.108.892 2 2 2s2-.892 2-2s-.892-2-2-2"></svg:path>`,
-})
-export class BxStatsIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

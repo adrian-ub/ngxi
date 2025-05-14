@@ -36,23 +36,6 @@ export class Ps50120Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ps60140Icon],svg[ps-60-140-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M164 92q-16 15-28 15t-28-15Q84 66 55 64l-4-26q-2-8-10-13t-16-4t-13.5 9.5T8 47l58 286q4 22 21.5 36.5T127 384h274q22 0 39.5-14.5T462 333l58-286q2-9-3-17t-14-9q-9-2-17 3t-9 14l-12 67q-5-3-15-13q-24-28-58-28t-58 28q-15 15-27 15q-11 0-28-15q-24-28-58-28q-35 0-57 28m143 57q35 0 57-27q15-15 28-15t28 15q19 19 36 25l-36 177q-3 17-22 17H127q-18 0-21-17L63 109q3 2 7.5 6.5T78 122q25 27 58 27t58-27q14-15 27-15t28 15q25 27 58 27m21 43q0 9-6.5 15t-14.5 6q-9 0-15.5-6t-6.5-15t6.5-15t15.5-6q8 0 14.5 6t6.5 15m-85 0q0 9-6.5 15t-15.5 6q-8 0-14.5-6t-6.5-15t6.5-15t14.5-6q9 0 15.5 6t6.5 15m85 85q0 9-6.5 15.5T307 299q-9 0-15.5-6.5T285 277q0-8 6.5-14.5T307 256q8 0 14.5 6.5T328 277m-85 0q0 9-6.5 15.5T221 299q-8 0-14.5-6.5T200 277q0-8 6.5-14.5T221 256q9 0 15.5 6.5T243 277"></svg:path>`,
-})
-export class Ps60140Icon {
-  readonly viewBox = input("0 0 528 448")
-  readonly width = input("1.18em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ps40105Icon],svg[ps-40-105-icon]',
   host: {
     role: 'img',
@@ -87,6 +70,23 @@ export class Ps70160Icon {
 
 @Component({
   standalone: true,
+  selector: 'svg[ps60140Icon],svg[ps-60-140-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M164 92q-16 15-28 15t-28-15Q84 66 55 64l-4-26q-2-8-10-13t-16-4t-13.5 9.5T8 47l58 286q4 22 21.5 36.5T127 384h274q22 0 39.5-14.5T462 333l58-286q2-9-3-17t-14-9q-9-2-17 3t-9 14l-12 67q-5-3-15-13q-24-28-58-28t-58 28q-15 15-27 15q-11 0-28-15q-24-28-58-28q-35 0-57 28m143 57q35 0 57-27q15-15 28-15t28 15q19 19 36 25l-36 177q-3 17-22 17H127q-18 0-21-17L63 109q3 2 7.5 6.5T78 122q25 27 58 27t58-27q14-15 27-15t28 15q25 27 58 27m21 43q0 9-6.5 15t-14.5 6q-9 0-15.5-6t-6.5-15t6.5-15t15.5-6q8 0 14.5 6t6.5 15m-85 0q0 9-6.5 15t-15.5 6q-8 0-14.5-6t-6.5-15t6.5-15t14.5-6q9 0 15.5 6t6.5 15m85 85q0 9-6.5 15.5T307 299q-9 0-15.5-6.5T285 277q0-8 6.5-14.5T307 256q8 0 14.5 6.5T328 277m-85 0q0 9-6.5 15.5T221 299q-8 0-14.5-6.5T200 277q0-8 6.5-14.5T221 256q9 0 15.5 6.5T243 277"></svg:path>`,
+})
+export class Ps60140Icon {
+  readonly viewBox = input("0 0 528 448")
+  readonly width = input("1.18em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[ps95200Icon],svg[ps-95-200-icon]',
   host: {
     role: 'img',
@@ -99,40 +99,6 @@ export class Ps70160Icon {
 export class Ps95200Icon {
   readonly viewBox = input("0 0 528 448")
   readonly width = input("1.18em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[psAimAltIcon],svg[ps-aim-alt-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M218 13q96 5 172 63.5T462 216q-3 64-63.5 109T242 371q-67 1-115-19q-3 0-3-2q1-1 4 0q29 7 46 3t22.5-12.5t.5-17.5q-4-8-27-14t-56-16t-55-26l1-1q3-8 4-10q2-3 4-3h64q2 0 4 3l7 16q4 11 15 12q12 0 15-11q1-4 0-7v-2l-1-1l-66-148q-2-5-6-5q-2 0-3 1t-1 2t-1 2t-57 126l-3 6l-9-12Q4 205 2 171q-5-69 57-115.5T218 13m4 253V127q0-16-17-16q-16 0-16 16v139q0 16 16 16q17 0 17-16m196 0V127q0-16-17-16q-9 0-12 4q-1 1-5 7l-48 108l-48-108q-1-2-2.5-4t-1.5-3q-4-4-13-4q-17 0-17 16v139q0 16 17 16t17-16v-65l33 67q4 10 14 10q11 0 17-11l32-66v65q0 16 17 16t17-16m-299-42H81q-2 0-2-3l19-44q0-1 1-1q0-1 1-1l2 1v1l19 44q1 3-2 3"></svg:path>`,
-})
-export class PsAimAltIcon {
-  readonly viewBox = input("0 0 464 448")
-  readonly width = input("1.04em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[psAlignCenteredIcon],svg[ps-align-centered-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M85 43q-21 0-21 21t21 21h214q21 0 21-21t-21-21zM21 149q0 22 22 22h298q22 0 22-22q0-9-6-15t-16-6H43q-10 0-16 6t-6 15m86 64q-22 0-22 22q0 9 6 15t16 6h170q10 0 16-6t6-15q0-22-22-22zM0 320q0 21 21 21h342q21 0 21-21t-21-21H21q-21 0-21 21"></svg:path>`,
-})
-export class PsAlignCenteredIcon {
-  readonly viewBox = input("0 0 384 448")
-  readonly width = input("0.86em")
   readonly height = input("1em")
 }
 
@@ -155,6 +121,23 @@ export class PsAimIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[psAimAltIcon],svg[ps-aim-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M218 13q96 5 172 63.5T462 216q-3 64-63.5 109T242 371q-67 1-115-19q-3 0-3-2q1-1 4 0q29 7 46 3t22.5-12.5t.5-17.5q-4-8-27-14t-56-16t-55-26l1-1q3-8 4-10q2-3 4-3h64q2 0 4 3l7 16q4 11 15 12q12 0 15-11q1-4 0-7v-2l-1-1l-66-148q-2-5-6-5q-2 0-3 1t-1 2t-1 2t-57 126l-3 6l-9-12Q4 205 2 171q-5-69 57-115.5T218 13m4 253V127q0-16-17-16q-16 0-16 16v139q0 16 16 16q17 0 17-16m196 0V127q0-16-17-16q-9 0-12 4q-1 1-5 7l-48 108l-48-108q-1-2-2.5-4t-1.5-3q-4-4-13-4q-17 0-17 16v139q0 16 17 16t17-16v-65l33 67q4 10 14 10q11 0 17-11l32-66v65q0 16 17 16t17-16m-299-42H81q-2 0-2-3l19-44q0-1 1-1q0-1 1-1l2 1v1l19 44q1 3-2 3"></svg:path>`,
+})
+export class PsAimAltIcon {
+  readonly viewBox = input("0 0 464 448")
+  readonly width = input("1.04em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[psAirplaneIcon],svg[ps-airplane-icon]',
   host: {
     role: 'img',
@@ -172,6 +155,23 @@ export class PsAirplaneIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[psAlignCenteredIcon],svg[ps-align-centered-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M85 43q-21 0-21 21t21 21h214q21 0 21-21t-21-21zM21 149q0 22 22 22h298q22 0 22-22q0-9-6-15t-16-6H43q-10 0-16 6t-6 15m86 64q-22 0-22 22q0 9 6 15t16 6h170q10 0 16-6t6-15q0-22-22-22zM0 320q0 21 21 21h342q21 0 21-21t-21-21H21q-21 0-21 21"></svg:path>`,
+})
+export class PsAlignCenteredIcon {
+  readonly viewBox = input("0 0 384 448")
+  readonly width = input("0.86em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[psAlignJustifiedIcon],svg[ps-align-justified-icon]',
   host: {
     role: 'img',
@@ -182,6 +182,23 @@ export class PsAirplaneIcon {
   template: `<svg:path fill="currentColor" d="M21 85h342q21 0 21-21t-21-21H21Q0 43 0 64t21 21m0 86h342q9 0 15-6t6-16q0-9-6-15t-15-6H21q-9 0-15 6t-6 15q0 10 6 16t15 6m0 85h342q9 0 15-6t6-15q0-10-6-16t-15-6H21q-9 0-15 6t-6 16q0 9 6 15t15 6m0 85h342q21 0 21-21t-21-21H21q-21 0-21 21t21 21"></svg:path>`,
 })
 export class PsAlignJustifiedIcon {
+  readonly viewBox = input("0 0 384 448")
+  readonly width = input("0.86em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[psAlignRightIcon],svg[ps-align-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M363 85q21 0 21-21t-21-21H149q-21 0-21 21t21 21zM43 149q0 22 21 22h299q9 0 15-6t6-16q0-9-6-15t-15-6H64q-21 0-21 21m320 64H107q-22 0-22 22q0 9 6 15t16 6h256q9 0 15-6t6-15q0-10-6-16t-15-6M0 320q0 21 21 21h342q21 0 21-21t-21-21H21q-21 0-21 21"></svg:path>`,
+})
+export class PsAlignRightIcon {
   readonly viewBox = input("0 0 384 448")
   readonly width = input("0.86em")
   readonly height = input("1em")
@@ -206,18 +223,18 @@ export class PsAlignLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[psAlignRightIcon],svg[ps-align-right-icon]',
+  selector: 'svg[psAmbulanceIcon],svg[ps-ambulance-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M363 85q21 0 21-21t-21-21H149q-21 0-21 21t21 21zM43 149q0 22 21 22h299q9 0 15-6t6-16q0-9-6-15t-15-6H64q-21 0-21 21m320 64H107q-22 0-22 22q0 9 6 15t16 6h256q9 0 15-6t6-15q0-10-6-16t-15-6M0 320q0 21 21 21h342q21 0 21-21t-21-21H21q-21 0-21 21"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M405 85h-42V43q0-18-13-30.5T320 0H43Q25 0 12.5 12.5T0 43v256q0 17 12.5 29.5T43 341h4q6 19 22.5 31t37.5 12q20 0 36.5-12t22.5-31h180q6 19 22.5 31t36.5 12q21 0 37.5-12t22.5-31h4q18 0 30.5-12.5T512 299v-77q0-17-13-30zM107 341q-8 0-15-6.5T85 320t7-14.5t15-6.5t14.5 6.5T128 320t-6.5 14.5T107 341m213-42H166q-6-19-22.5-31T107 256q-21 0-37.5 12T47 299h-4V43h277zm85 42q-8 0-14.5-6.5T384 320t6.5-14.5T405 299t15 6.5t7 14.5t-7 14.5t-15 6.5m64-42h-4q-6-19-22.5-31T405 256q-27 0-42 17V128h12l94 94zm-298-86h42v-42h43v-43h-43V85h-42v43h-43v43h43z"></svg:path>`,
 })
-export class PsAlignRightIcon {
-  readonly viewBox = input("0 0 384 448")
-  readonly width = input("0.86em")
+export class PsAmbulanceIcon {
+  readonly viewBox = input("0 0 512 448")
+  readonly width = input("1.15em")
   readonly height = input("1em")
 }
 
@@ -257,23 +274,6 @@ export class PsAnchorIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[psAmbulanceIcon],svg[ps-ambulance-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M405 85h-42V43q0-18-13-30.5T320 0H43Q25 0 12.5 12.5T0 43v256q0 17 12.5 29.5T43 341h4q6 19 22.5 31t37.5 12q20 0 36.5-12t22.5-31h180q6 19 22.5 31t36.5 12q21 0 37.5-12t22.5-31h4q18 0 30.5-12.5T512 299v-77q0-17-13-30zM107 341q-8 0-15-6.5T85 320t7-14.5t15-6.5t14.5 6.5T128 320t-6.5 14.5T107 341m213-42H166q-6-19-22.5-31T107 256q-21 0-37.5 12T47 299h-4V43h277zm85 42q-8 0-14.5-6.5T384 320t6.5-14.5T405 299t15 6.5t7 14.5t-7 14.5t-15 6.5m64-42h-4q-6-19-22.5-31T405 256q-27 0-42 17V128h12l94 94zm-298-86h42v-42h43v-43h-43V85h-42v43h-43v43h43z"></svg:path>`,
-})
-export class PsAmbulanceIcon {
-  readonly viewBox = input("0 0 512 448")
-  readonly width = input("1.15em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[psAnySolventIcon],svg[ps-any-solvent-icon]',
   host: {
     role: 'img',
@@ -285,6 +285,23 @@ export class PsAmbulanceIcon {
 })
 export class PsAnySolventIcon {
   readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[psAppStoreIcon],svg[ps-app-store-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 255v-63q0-10 10-10h111l-49 83H12q-10 0-10-10m78 128l-35 24q-3 1-4.5 1t-2-1.5t-.5-4.5l4-41q2-10 11-5l27 16q9 5 0 11m9-23l-28-16q-8-5-3-14l126-219q5-9 14-4l28 16q8 5 3 14L103 356q-5 9-14 4m96-95l48-83h28l39 83zm157 25q-13-6-80-163q-2-5-7.5-17T245 88.5t-9.5-23t-9-22.5t-6.5-19.5t-2.5-15T220 1q4-2 15 13.5T264 61t27 44q11 18 31 54.5t37 69t19 35.5q4 8-1.5 15T364 289q-12 7-22 1m35 58l-16-26q-5-10 4-15l16-8q10-6 15 5l13 25q6 10-5 16l-11 6q-8 7-16-3m61 67q-2-5-19-12t-23-16q-12-17 3-29q21-12 30.5 2.5T438 395zm24-160q0 10-10 10h-55q-2-6-4-9q-1-3-10-19q-4-8-14.5-28T354 182h98q10 0 10 10z"></svg:path>`,
+})
+export class PsAppStoreIcon {
+  readonly viewBox = input("0 0 464 464")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -8122,23 +8139,6 @@ export class PsZyngaIcon {
 })
 export class PsAnySolventWithoutTetrachlorethyleneIcon {
   readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[psAppStoreIcon],svg[ps-app-store-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2 255v-63q0-10 10-10h111l-49 83H12q-10 0-10-10m78 128l-35 24q-3 1-4.5 1t-2-1.5t-.5-4.5l4-41q2-10 11-5l27 16q9 5 0 11m9-23l-28-16q-8-5-3-14l126-219q5-9 14-4l28 16q8 5 3 14L103 356q-5 9-14 4m96-95l48-83h28l39 83zm157 25q-13-6-80-163q-2-5-7.5-17T245 88.5t-9.5-23t-9-22.5t-6.5-19.5t-2.5-15T220 1q4-2 15 13.5T264 61t27 44q11 18 31 54.5t37 69t19 35.5q4 8-1.5 15T364 289q-12 7-22 1m35 58l-16-26q-5-10 4-15l16-8q10-6 15 5l13 25q6 10-5 16l-11 6q-8 7-16-3m61 67q-2-5-19-12t-23-16q-12-17 3-29q21-12 30.5 2.5T438 395zm24-160q0 10-10 10h-55q-2-6-4-9q-1-3-10-19q-4-8-14.5-28T354 182h98q10 0 10 10z"></svg:path>`,
-})
-export class PsAppStoreIcon {
-  readonly viewBox = input("0 0 464 464")
   readonly width = input("1em")
   readonly height = input("1em")
 }

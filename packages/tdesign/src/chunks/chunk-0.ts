@@ -19,23 +19,6 @@ export class TdesignAccessibilityIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tdesignAccessibilityFilledIcon],svg[tdesign-accessibility-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 4.5A2.25 2.25 0 1 0 12 0a2.25 2.25 0 0 0 0 4.5M21.75 7V5.5H2.25V7l6.5 1.75L9 12L4.75 22.75l1.5.75l5.745-9h.01l5.745 9l1.5-.75L15 12l.25-3.25z"></svg:path>`,
-})
-export class TdesignAccessibilityFilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[tdesignActivityIcon],svg[tdesign-activity-icon]',
   host: {
     role: 'img',
@@ -53,16 +36,33 @@ export class TdesignActivityIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tdesignAddIcon],svg[tdesign-add-icon]',
+  selector: 'svg[tdesignAccessibilityFilledIcon],svg[tdesign-accessibility-filled-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M13 4v7h7v2h-7v7h-2v-7H4v-2h7V4z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M12 4.5A2.25 2.25 0 1 0 12 0a2.25 2.25 0 0 0 0 4.5M21.75 7V5.5H2.25V7l6.5 1.75L9 12L4.75 22.75l1.5.75l5.745-9h.01l5.745 9l1.5-.75L15 12l.25-3.25z"></svg:path>`,
 })
-export class TdesignAddIcon {
+export class TdesignAccessibilityFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tdesignActivityFilledIcon],svg[tdesign-activity-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 2h20v9h-4.554l-2.021 3.233l-5.865-7.82L5.546 11H2z"></svg:path><svg:path fill="currentColor" d="M2 13v9h20v-9h-3.446l-2.979 4.767l-6.135-8.18L6.454 13z"></svg:path>`,
+})
+export class TdesignActivityFilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,6 +87,23 @@ export class TdesignAddAndSubtractIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[tdesignAddIcon],svg[tdesign-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 4v7h7v2h-7v7h-2v-7H4v-2h7V4z"></svg:path>`,
+})
+export class TdesignAddIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[tdesignAddCircleIcon],svg[tdesign-add-circle-icon]',
   host: {
     role: 'img',
@@ -97,23 +114,6 @@ export class TdesignAddAndSubtractIcon {
   template: `<svg:path fill="currentColor" d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m12-5.5V11h4.5v2H13v4.5h-2V13H6.5v-2H11V6.5z"></svg:path>`,
 })
 export class TdesignAddCircleIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tdesignActivityFilledIcon],svg[tdesign-activity-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2 2h20v9h-4.554l-2.021 3.233l-5.865-7.82L5.546 11H2z"></svg:path><svg:path fill="currentColor" d="M2 13v9h20v-9h-3.446l-2.979 4.767l-6.135-8.18L6.454 13z"></svg:path>`,
-})
-export class TdesignActivityFilledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,23 +257,6 @@ export class TdesignAirplayWaveIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tdesignAlarmIcon],svg[tdesign-alarm-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6.914 2.5L1.5 7.914L.086 6.5L5.5 1.086zM18.5 1.086L23.914 6.5L22.5 7.914L17.086 2.5zM12 5a8 8 0 1 0 0 16a8 8 0 0 0 0-16M2 13C2 7.477 6.477 3 12 3s10 4.477 10 10s-4.477 10-10 10S2 18.523 2 13m11-5.5v5.086L16.414 16L15 17.414l-4-4V7.5z"></svg:path>`,
-})
-export class TdesignAlarmIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[tdesignAirplayWaveFilledIcon],svg[tdesign-airplay-wave-filled-icon]',
   host: {
     role: 'img',
@@ -284,6 +267,23 @@ export class TdesignAlarmIcon {
   template: `<svg:path fill="currentColor" d="M23 3H1l.001 17h6.964L12 15.964L16.036 20H23zm-6.05 8.383a7 7 0 0 0-9.899 0l-.707.707l-1.414-1.414l.707-.707a9 9 0 0 1 12.728 0l.707.707l-1.414 1.414zm-2.828 2.828a3 3 0 0 0-4.243 0l-.707.707l-1.414-1.414l.707-.707a5 5 0 0 1 7.071 0l.707.707l-1.414 1.414z"></svg:path><svg:path fill="currentColor" d="M15.914 22L12 18.086L8.086 22z"></svg:path>`,
 })
 export class TdesignAirplayWaveFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tdesignAlarmIcon],svg[tdesign-alarm-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.914 2.5L1.5 7.914L.086 6.5L5.5 1.086zM18.5 1.086L23.914 6.5L22.5 7.914L17.086 2.5zM12 5a8 8 0 1 0 0 16a8 8 0 0 0 0-16M2 13C2 7.477 6.477 3 12 3s10 4.477 10 10s-4.477 10-10 10S2 18.523 2 13m11-5.5v5.086L16.414 16L15 17.414l-4-4V7.5z"></svg:path>`,
+})
+export class TdesignAlarmIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

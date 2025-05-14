@@ -36,23 +36,6 @@ export class FaBrands500pxIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[faBrandsAcquisitionsIncorporatedIcon],svg[fa-brands-acquisitions-incorporated-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M357.45 468.2c-1.2-7.7-1.3-7.6-9.6-7.6c-99.8.2-111.8-2.4-112.7-2.6c-12.3-1.7-20.6-10.5-21-23.1c-.1-1.6-.2-71.6-1-129.1c-.1-4.7 1.6-6.4 5.9-7.5c12.5-3 24.9-6.1 37.3-9.7c4.3-1.3 6.8-.2 8.4 3.5c4.5 10.3 8.8 20.6 13.2 30.9c1.6 3.7.1 4.4-3.4 4.4c-10-.2-20-.1-30.4-.1v27h116c-1.4-9.5-2.7-18.1-4-27.5c-7 0-13.8.4-20.4-.1c-22.6-1.6-18.3-4.4-84-158.6c-8.8-20.1-27.9-62.1-36.5-89.2c-4.4-14 5.5-25.4 18.9-26.6c18.6-1.7 37.5-1.6 56.2-2c20.6-.4 41.2-.4 61.8-.5c3.1 0 4-1.4 4.3-4.3c1.2-9.8 2.7-19.5 4-29.2c.8-5.3 1.6-10.7 2.4-16.1L23.75 0c-3.6 0-5.3 1.1-4.6 5.3c2.2 13.2-.8.8 6.4 45.3c63.4 0 71.8.9 101.8.5c12.3-.2 37 3.5 37.7 22.1c.4 11.4-1.1 11.3-32.6 87.4c-53.8 129.8-50.7 120.3-67.3 161c-1.7 4.1-3.6 5.2-7.6 5.2c-8.5-.2-17-.3-25.4.1c-1.9.1-5.2 1.8-5.5 3.2c-1.5 8.1-2.2 16.3-3.2 24.9h114.3v-27.6c-6.9 0-33.5.4-35.3-2.9c5.3-12.3 10.4-24.4 15.7-36.7c16.3 4 31.9 7.8 47.6 11.7c3.4.9 4.6 3 4.6 6.8c-.1 42.9.1 85.9.2 128.8c0 10.2-5.5 19.1-14.9 23.1c-6.5 2.7-3.3 3.4-121.4 2.4c-5.3 0-7.1 2-7.6 6.8c-1.5 12.9-2.9 25.9-5 38.8c-.8 5 1.3 5.7 5.3 5.7c183.2.6-30.7 0 337.1 0c-2.5-15-4.4-29.4-6.6-43.7m-174.9-205.7c-13.3-4.2-26.6-8.2-39.9-12.5a44.5 44.5 0 0 1-5.8-2.9c17.2-44.3 34.2-88.1 51.3-132.1c7.5 2.4 7.9-.8 9.4 0c9.3 22.5 18.1 60.1 27 82.8c6.6 16.7 13 33.5 19.7 50.9a36 36 0 0 1-3.9 2.1c-13.1 3.9-26.4 7.5-39.4 11.7a27.66 27.66 0 0 1-18.4 0"></svg:path>`,
-})
-export class FaBrandsAcquisitionsIncorporatedIcon {
-  readonly viewBox = input("0 0 384 512")
-  readonly width = input("0.75em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[faBrandsAccusoftIcon],svg[fa-brands-accusoft-icon]',
   host: {
     role: 'img',
@@ -70,18 +53,18 @@ export class FaBrandsAccusoftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[faBrandsAdobeIcon],svg[fa-brands-adobe-icon]',
+  selector: 'svg[faBrandsAcquisitionsIncorporatedIcon],svg[fa-brands-acquisitions-incorporated-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path d="M315.5 64h170.9v384L315.5 64zm-119 0H25.6v384L196.5 64zM256 206.1L363.5 448h-73l-30.7-76.8h-78.7L256 206.1z" fill="currentColor"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M357.45 468.2c-1.2-7.7-1.3-7.6-9.6-7.6c-99.8.2-111.8-2.4-112.7-2.6c-12.3-1.7-20.6-10.5-21-23.1c-.1-1.6-.2-71.6-1-129.1c-.1-4.7 1.6-6.4 5.9-7.5c12.5-3 24.9-6.1 37.3-9.7c4.3-1.3 6.8-.2 8.4 3.5c4.5 10.3 8.8 20.6 13.2 30.9c1.6 3.7.1 4.4-3.4 4.4c-10-.2-20-.1-30.4-.1v27h116c-1.4-9.5-2.7-18.1-4-27.5c-7 0-13.8.4-20.4-.1c-22.6-1.6-18.3-4.4-84-158.6c-8.8-20.1-27.9-62.1-36.5-89.2c-4.4-14 5.5-25.4 18.9-26.6c18.6-1.7 37.5-1.6 56.2-2c20.6-.4 41.2-.4 61.8-.5c3.1 0 4-1.4 4.3-4.3c1.2-9.8 2.7-19.5 4-29.2c.8-5.3 1.6-10.7 2.4-16.1L23.75 0c-3.6 0-5.3 1.1-4.6 5.3c2.2 13.2-.8.8 6.4 45.3c63.4 0 71.8.9 101.8.5c12.3-.2 37 3.5 37.7 22.1c.4 11.4-1.1 11.3-32.6 87.4c-53.8 129.8-50.7 120.3-67.3 161c-1.7 4.1-3.6 5.2-7.6 5.2c-8.5-.2-17-.3-25.4.1c-1.9.1-5.2 1.8-5.5 3.2c-1.5 8.1-2.2 16.3-3.2 24.9h114.3v-27.6c-6.9 0-33.5.4-35.3-2.9c5.3-12.3 10.4-24.4 15.7-36.7c16.3 4 31.9 7.8 47.6 11.7c3.4.9 4.6 3 4.6 6.8c-.1 42.9.1 85.9.2 128.8c0 10.2-5.5 19.1-14.9 23.1c-6.5 2.7-3.3 3.4-121.4 2.4c-5.3 0-7.1 2-7.6 6.8c-1.5 12.9-2.9 25.9-5 38.8c-.8 5 1.3 5.7 5.3 5.7c183.2.6-30.7 0 337.1 0c-2.5-15-4.4-29.4-6.6-43.7m-174.9-205.7c-13.3-4.2-26.6-8.2-39.9-12.5a44.5 44.5 0 0 1-5.8-2.9c17.2-44.3 34.2-88.1 51.3-132.1c7.5 2.4 7.9-.8 9.4 0c9.3 22.5 18.1 60.1 27 82.8c6.6 16.7 13 33.5 19.7 50.9a36 36 0 0 1-3.9 2.1c-13.1 3.9-26.4 7.5-39.4 11.7a27.66 27.66 0 0 1-18.4 0"></svg:path>`,
 })
-export class FaBrandsAdobeIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
+export class FaBrandsAcquisitionsIncorporatedIcon {
+  readonly viewBox = input("0 0 384 512")
+  readonly width = input("0.75em")
   readonly height = input("1em")
 }
 
@@ -99,6 +82,23 @@ export class FaBrandsAdobeIcon {
 export class FaBrandsAdnIcon {
   readonly viewBox = input("0 0 496 512")
   readonly width = input("0.97em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[faBrandsAdobeIcon],svg[fa-brands-adobe-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M315.5 64h170.9v384L315.5 64zm-119 0H25.6v384L196.5 64zM256 206.1L363.5 448h-73l-30.7-76.8h-78.7L256 206.1z" fill="currentColor"></svg:path>`,
+})
+export class FaBrandsAdobeIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
   readonly height = input("1em")
 }
 
@@ -206,18 +206,18 @@ export class FaBrandsAmazonPayIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[faBrandsAndroidIcon],svg[fa-brands-android-icon]',
+  selector: 'svg[faBrandsAmazonIcon],svg[fa-brands-amazon-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M420.55 301.93a24 24 0 1 1 24-24a24 24 0 0 1-24 24m-265.1 0a24 24 0 1 1 24-24a24 24 0 0 1-24 24m273.7-144.48l47.94-83a10 10 0 1 0-17.27-10l-48.54 84.07a301.25 301.25 0 0 0-246.56 0l-48.54-84.07a10 10 0 1 0-17.27 10l47.94 83C64.53 202.22 8.24 285.55 0 384h576c-8.24-98.45-64.54-181.78-146.85-226.55"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5c0 109.5 138.3 114 183.5 43.2c6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32C140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5c40.7-.1 35.5 29.8 35.5 69.1m0 86.8c0 80-84.2 68-84.2 17.2c0-47.2 50.5-56.7 84.2-57.8zm136 163.5c-7.7 10-70 67-174.5 67S34.2 408.5 9.7 379c-6.8-7.7 1-11.3 5.5-8.3C88.5 415.2 203 488.5 387.7 401c7.5-3.7 13.3 2 5.5 12m39.8 2.2c-6.5 15.8-16 26.8-21.2 31c-5.5 4.5-9.5 2.7-6.5-3.8s19.3-46.5 12.7-55c-6.5-8.3-37-4.3-48-3.2c-10.8 1-13 2-14-.3c-2.3-5.7 21.7-15.5 37.5-17.5c15.7-1.8 41-.8 46 5.7c3.7 5.1 0 27.1-6.5 43.1"></svg:path>`,
 })
-export class FaBrandsAndroidIcon {
-  readonly viewBox = input("0 0 576 512")
-  readonly width = input("1.13em")
+export class FaBrandsAmazonIcon {
+  readonly viewBox = input("0 0 448 512")
+  readonly width = input("0.88em")
   readonly height = input("1em")
 }
 
@@ -240,18 +240,18 @@ export class FaBrandsAmiliaIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[faBrandsAmazonIcon],svg[fa-brands-amazon-icon]',
+  selector: 'svg[faBrandsAndroidIcon],svg[fa-brands-android-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5c0 109.5 138.3 114 183.5 43.2c6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32C140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5c40.7-.1 35.5 29.8 35.5 69.1m0 86.8c0 80-84.2 68-84.2 17.2c0-47.2 50.5-56.7 84.2-57.8zm136 163.5c-7.7 10-70 67-174.5 67S34.2 408.5 9.7 379c-6.8-7.7 1-11.3 5.5-8.3C88.5 415.2 203 488.5 387.7 401c7.5-3.7 13.3 2 5.5 12m39.8 2.2c-6.5 15.8-16 26.8-21.2 31c-5.5 4.5-9.5 2.7-6.5-3.8s19.3-46.5 12.7-55c-6.5-8.3-37-4.3-48-3.2c-10.8 1-13 2-14-.3c-2.3-5.7 21.7-15.5 37.5-17.5c15.7-1.8 41-.8 46 5.7c3.7 5.1 0 27.1-6.5 43.1"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M420.55 301.93a24 24 0 1 1 24-24a24 24 0 0 1-24 24m-265.1 0a24 24 0 1 1 24-24a24 24 0 0 1-24 24m273.7-144.48l47.94-83a10 10 0 1 0-17.27-10l-48.54 84.07a301.25 301.25 0 0 0-246.56 0l-48.54-84.07a10 10 0 1 0-17.27 10l47.94 83C64.53 202.22 8.24 285.55 0 384h576c-8.24-98.45-64.54-181.78-146.85-226.55"></svg:path>`,
 })
-export class FaBrandsAmazonIcon {
-  readonly viewBox = input("0 0 448 512")
-  readonly width = input("0.88em")
+export class FaBrandsAndroidIcon {
+  readonly viewBox = input("0 0 576 512")
+  readonly width = input("1.13em")
   readonly height = input("1em")
 }
 

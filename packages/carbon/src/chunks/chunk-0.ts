@@ -19,23 +19,6 @@ export class Carbon3dCursorIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[carbon3dCursorAltIcon],svg[carbon-3d-cursor-alt-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4z" fill="currentColor"></svg:path><svg:path d="M15 7h2v7h-2z" fill="currentColor"></svg:path><svg:path d="M7 15h7v2H7z" fill="currentColor"></svg:path><svg:path d="M15 18h2v7h-2z" fill="currentColor"></svg:path><svg:path d="M18 15h7v2h-7z" fill="currentColor"></svg:path>`,
-})
-export class Carbon3dCursorAltIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[carbon3dCurveAutoColonIcon],svg[carbon-3d-curve-auto-colon-icon]',
   host: {
     role: 'img',
@@ -87,6 +70,23 @@ export class Carbon3dCurveManualIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[carbon3dCursorAltIcon],svg[carbon-3d-cursor-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4z" fill="currentColor"></svg:path><svg:path d="M15 7h2v7h-2z" fill="currentColor"></svg:path><svg:path d="M7 15h7v2H7z" fill="currentColor"></svg:path><svg:path d="M15 18h2v7h-2z" fill="currentColor"></svg:path><svg:path d="M18 15h7v2h-7z" fill="currentColor"></svg:path>`,
+})
+export class Carbon3dCursorAltIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[carbon3dIcaIcon],svg[carbon-3d-ica-icon]',
   host: {
     role: 'img',
@@ -104,23 +104,6 @@ export class Carbon3dIcaIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[carbon3dMprToggleIcon],svg[carbon-3d-mpr-toggle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M11 2H2v9h2V4h7V2z" fill="currentColor"></svg:path><svg:path d="M2 21v9h9v-2H4v-7H2z" fill="currentColor"></svg:path><svg:path d="M30 11V2h-9v2h7v7h2z" fill="currentColor"></svg:path><svg:path d="M21 30h9v-9h-2v7h-7v2z" fill="currentColor"></svg:path><svg:path d="M25.49 10.13l-9-5a1 1 0 0 0-1 0l-9 5A1 1 0 0 0 6 11v10a1 1 0 0 0 .51.87l9 5a1 1 0 0 0 1 0l9-5A1 1 0 0 0 26 21V11a1 1 0 0 0-.51-.87zM16 7.14L22.94 11L16 14.86L9.06 11zM8 12.7l7 3.89v7.71l-7-3.89zm9 11.6v-7.71l7-3.89v7.71z" fill="currentColor"></svg:path>`,
-})
-export class Carbon3dMprToggleIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[carbon3dPrintMeshIcon],svg[carbon-3d-print-mesh-icon]',
   host: {
     role: 'img',
@@ -131,6 +114,23 @@ export class Carbon3dMprToggleIcon {
   template: `<svg:path d="M29.976 15.783l-2-9a1 1 0 0 0-.421-.615l-6-4A1 1 0 0 0 21 2H11a1 1 0 0 0-.555.168l-6 4a1 1 0 0 0-.421.615l-2 9a1.002 1.002 0 0 0 .018.504l3 10a1 1 0 0 0 .67.671l10 3h.006a.979.979 0 0 0 .564 0h.005l10-3a1 1 0 0 0 .671-.67l3-10a1.002 1.002 0 0 0 .018-.505zm-19.05.833l-3.91-7.819l7.282 2.648zM16 12.497L19.589 18H12.41zM19.382 20L16 26.764L12.618 20zm-1.68-8.555l7.281-2.648l-3.91 7.82zm.488-2.305l3.096-4.747l3.515 2.343zM16 8.836L12.846 4h6.308zm-2.19.304L7.2 6.736l3.514-2.343zm-4.844 8.03l-4.802-1.801l1.201-5.402zm5.104 10.207l-6.502-1.95l3.128-4.798zm7.233-6.748l3.129 4.797l-6.502 1.951zm5.332-10.662l1.2 5.402l-4.802 1.8zM4.537 17.645l4.595 1.722l-2.793 4.283zm21.124 6.005l-2.793-4.283l4.595-1.722z" fill="currentColor"></svg:path>`,
 })
 export class Carbon3dPrintMeshIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbon3dMprToggleIcon],svg[carbon-3d-mpr-toggle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M11 2H2v9h2V4h7V2z" fill="currentColor"></svg:path><svg:path d="M2 21v9h9v-2H4v-7H2z" fill="currentColor"></svg:path><svg:path d="M30 11V2h-9v2h7v7h2z" fill="currentColor"></svg:path><svg:path d="M21 30h9v-9h-2v7h-7v2z" fill="currentColor"></svg:path><svg:path d="M25.49 10.13l-9-5a1 1 0 0 0-1 0l-9 5A1 1 0 0 0 6 11v10a1 1 0 0 0 .51.87l9 5a1 1 0 0 0 1 0l9-5A1 1 0 0 0 26 21V11a1 1 0 0 0-.51-.87zM16 7.14L22.94 11L16 14.86L9.06 11zM8 12.7l7 3.89v7.71l-7-3.89zm9 11.6v-7.71l7-3.89v7.71z" fill="currentColor"></svg:path>`,
+})
+export class Carbon3dMprToggleIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,23 +240,6 @@ export class CarbonAccessibilityIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[carbonAccessibilityAltIcon],svg[carbon-accessibility-alt-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M23 14v-2H9v2h5v2.734l-3.868 6.77l1.736.992L15.58 18h.84l3.712 6.496l1.736-.992L18 16.734V14z"></svg:path><svg:circle cx="16" cy="9" r="2" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14m0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4"></svg:path>`,
-})
-export class CarbonAccessibilityAltIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[carbonAccessibilityColorIcon],svg[carbon-accessibility-color-icon]',
   host: {
     role: 'img',
@@ -267,6 +250,23 @@ export class CarbonAccessibilityAltIcon {
   template: `<svg:path fill="currentColor" d="M16 20a4 4 0 1 1 4-4a4.005 4.005 0 0 1-4 4m0-6a2 2 0 1 0 2 2a2 2 0 0 0-2-2"></svg:path><svg:path fill="currentColor" d="M16 24a10.655 10.655 0 0 1-9.97-7.758L5.97 16l.06-.242A10.655 10.655 0 0 1 16 8a10.655 10.655 0 0 1 9.97 7.758l.06.242l-.06.242A10.655 10.655 0 0 1 16 24m-7.965-8A8.6 8.6 0 0 0 16 22a8.6 8.6 0 0 0 7.965-6A8.6 8.6 0 0 0 16 10a8.6 8.6 0 0 0-7.965 6"></svg:path><svg:path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14m0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4"></svg:path>`,
 })
 export class CarbonAccessibilityColorIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[carbonAccessibilityAltIcon],svg[carbon-accessibility-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M23 14v-2H9v2h5v2.734l-3.868 6.77l1.736.992L15.58 18h.84l3.712 6.496l1.736-.992L18 16.734V14z"></svg:path><svg:circle cx="16" cy="9" r="2" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14m0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4"></svg:path>`,
+})
+export class CarbonAccessibilityAltIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -87,23 +87,6 @@ export class NimbusAlignRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[nimbusArrowLeftIcon],svg[nimbus-arrow-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m1.15 6.69l7.71-5.14l.7 1l-7.12 4.78H15.5v1.25H2.74l6.83 4.86l-.72 1L1.15 9A1.42 1.42 0 0 1 .5 7.83a1.4 1.4 0 0 1 .65-1.14"></svg:path>`,
-})
-export class NimbusArrowLeftIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[nimbusArchiveIcon],svg[nimbus-archive-icon]',
   host: {
     role: 'img',
@@ -114,6 +97,23 @@ export class NimbusArrowLeftIcon {
   template: `<svg:path fill="currentColor" d="M15.5 2.75a1.25 1.25 0 0 0-1.25-1.25H1.75A1.25 1.25 0 0 0 .5 2.75v2.5h1.25v8A1.25 1.25 0 0 0 3 14.5h10a1.25 1.25 0 0 0 1.25-1.25v-8h1.25zM13 5.25v8H3v-8zM14.25 4H1.75V2.75h12.5z"></svg:path><svg:path fill="currentColor" d="M7.38 8.38h1.24a.63.63 0 0 0 0-1.26H7.38a.63.63 0 0 0 0 1.26"></svg:path>`,
 })
 export class NimbusArchiveIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[nimbusArrowLeftIcon],svg[nimbus-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m1.15 6.69l7.71-5.14l.7 1l-7.12 4.78H15.5v1.25H2.74l6.83 4.86l-.72 1L1.15 9A1.42 1.42 0 0 1 .5 7.83a1.4 1.4 0 0 1 .65-1.14"></svg:path>`,
+})
+export class NimbusArrowLeftIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,23 +206,6 @@ export class NimbusBoxPackedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[nimbusBoldIcon],svg[nimbus-bold-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.19 7.45A3.49 3.49 0 0 0 13 4.32C13 1.65 10.93 0 7.91 0H2.06v16h6.19c3.5 0 5.69-1.76 5.69-4.69a4 4 0 0 0-2.75-3.86m-7.88-6.2h4.6a4.36 4.36 0 0 1 2.86.87a2.71 2.71 0 0 1 1 2.2c0 .94-.43 2.51-3.36 2.51h-5.1zm8.31 12.54a5.3 5.3 0 0 1-3.37 1H3.31V8.08h4.35a7.3 7.3 0 0 1 3.68.84a2.62 2.62 0 0 1 1.35 2.39a3.05 3.05 0 0 1-1.07 2.48"></svg:path>`,
-})
-export class NimbusBoldIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[nimbusBarcodeIcon],svg[nimbus-barcode-icon]',
   host: {
     role: 'img',
@@ -233,6 +216,23 @@ export class NimbusBoldIcon {
   template: `<svg:path fill="currentColor" d="M0 2.53h2.49v10.95H0zm11 0h2.49v10.95H11zm-6.02 0h1.24v10.95H4.98zm2.49 0h1.24v10.95H7.47zm7.29 0H16v10.95h-1.24z"></svg:path>`,
 })
 export class NimbusBarcodeIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[nimbusBoldIcon],svg[nimbus-bold-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.19 7.45A3.49 3.49 0 0 0 13 4.32C13 1.65 10.93 0 7.91 0H2.06v16h6.19c3.5 0 5.69-1.76 5.69-4.69a4 4 0 0 0-2.75-3.86m-7.88-6.2h4.6a4.36 4.36 0 0 1 2.86.87a2.71 2.71 0 0 1 1 2.2c0 .94-.43 2.51-3.36 2.51h-5.1zm8.31 12.54a5.3 5.3 0 0 1-3.37 1H3.31V8.08h4.35a7.3 7.3 0 0 1 3.68.84a2.62 2.62 0 0 1 1.35 2.39a3.05 3.05 0 0 1-1.07 2.48"></svg:path>`,
+})
+export class NimbusBoldIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -301,23 +301,6 @@ export class NimbusBriefcaseIcon {
   template: `<svg:path fill="currentColor" d="M14.24 13.25H1.75V6.5h4.13c-.07.27-.1.55-.1.84c0 2.04 1.77 3.7 3.94 3.7c.99 0 1.9-.35 2.59-.92l2.37 2.07l.82-.94l-2.37-2.07c.33-.54.53-1.17.53-1.84c0-2.04-1.77-3.7-3.94-3.7c-1.35 0-2.54.64-3.25 1.61H1.75v-2.5h12.49v.41h1.25v-.41c0-.69-.56-1.25-1.25-1.25H1.75C1.06 1.5.5 2.06.5 2.75v10.5c0 .69.56 1.25 1.25 1.25h12.49c.69 0 1.25-.56 1.25-1.25v-.41h-1.25zM9.72 4.89c1.48 0 2.69 1.1 2.69 2.45S11.2 9.79 9.72 9.79s-2.69-1.1-2.69-2.45s1.21-2.45 2.69-2.45"></svg:path>`,
 })
 export class NimbusBrowserSearchIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[nimbusCalendarIcon],svg[nimbus-calendar-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.25 2.5h-.77v-1h-1.25v1H3.68v-1H2.43v1h-.68A1.25 1.25 0 0 0 .5 3.75v9.5a1.25 1.25 0 0 0 1.25 1.25h12.5a1.25 1.25 0 0 0 1.25-1.25v-9.5a1.25 1.25 0 0 0-1.25-1.25M1.75 3.75h12.5V5H1.75zm0 9.5v-7h12.5v7z"></svg:path>`,
-})
-export class NimbusCalendarIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -2375,6 +2358,23 @@ export class NimbusWalletIcon {
   template: `<svg:path fill="currentColor" d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1s-.48.6-.59.73s-.21.14-.4 0a5.1 5.1 0 0 1-1.49-.92a5.3 5.3 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.4 1.4 0 0 0 .18-.31a.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23a2.1 2.1 0 0 0-.65 1.55A3.6 3.6 0 0 0 5 8.2A8.3 8.3 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.5 2.5 0 0 0 1.17.07a1.93 1.93 0 0 0 1.26-.88a1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21"></svg:path><svg:path fill="currentColor" d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85l3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72M8 14.12a6.1 6.1 0 0 1-3.15-.87l-.22-.13l-2.34.61l.62-2.28l-.14-.23a6.18 6.18 0 0 1 9.6-7.65a6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12"></svg:path>`,
 })
 export class NimbusWhatsappIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[nimbusCalendarIcon],svg[nimbus-calendar-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.25 2.5h-.77v-1h-1.25v1H3.68v-1H2.43v1h-.68A1.25 1.25 0 0 0 .5 3.75v9.5a1.25 1.25 0 0 0 1.25 1.25h12.5a1.25 1.25 0 0 0 1.25-1.25v-9.5a1.25 1.25 0 0 0-1.25-1.25M1.75 3.75h12.5V5H1.75zm0 9.5v-7h12.5v7z"></svg:path>`,
+})
+export class NimbusCalendarIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

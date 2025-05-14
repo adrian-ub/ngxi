@@ -36,6 +36,23 @@ export class GeoTurfAlongIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[geoTurfBezierIcon],svg[geo-turf-bezier-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="40.274" cy="39.666" r="4.763" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="m12.729 63.898l-5.714 5.6a1.999 1.999 0 0 0 1.4 3.429c.505 0 1.011-.19 1.4-.571l5.714-5.6a2 2 0 0 0-2.8-2.858m11.427-11.199l-5.714 5.6a1.999 1.999 0 0 0 1.4 3.429c.505 0 1.011-.19 1.4-.571l5.714-5.6a2 2 0 0 0-2.8-2.858m22.861-16.865l.145-.08l2.648-2.595a1.999 1.999 0 1 0-2.8-2.856l-2.762 2.707a7.8 7.8 0 0 1 2.769 2.824m7.107-7.703c.505 0 1.011-.19 1.399-.571l5.714-5.599a2 2 0 0 0-2.799-2.858l-5.714 5.599a2 2 0 0 0 1.4 3.429m11.428-11.199c.505 0 1.011-.19 1.399-.572l5.714-5.6a2 2 0 1 0-2.799-2.856l-5.714 5.6a2 2 0 0 0 1.4 3.428"></svg:path><svg:path fill="currentColor" d="M92.917 42.969C80.419 30.471 61.223 27.94 47.162 35.754l-.121.119a7.7 7.7 0 0 1 .997 3.793c0 .072-.009.142-.011.214c12.618-7.75 30.503-5.642 42.062 5.916a2 2 0 0 0 2.828-2.827"></svg:path><svg:path fill="currentColor" d="m47.041 35.873l.121-.119l-.145.08zM42.688 90.66c-6.166-6.166-9.561-14.437-9.561-23.29c0-7.347 2.346-14.29 6.666-19.965a7.7 7.7 0 0 1-3.445-1.053a8 8 0 0 1-.505-.32a7.8 7.8 0 0 1-2.307-2.525L29.87 47.1a2 2 0 0 0 2.8 2.858l1.672-1.638c-3.398 5.669-5.214 12.206-5.214 19.051c0 9.922 3.812 19.197 10.733 26.118c.39.391.902.586 1.414.586s1.024-.195 1.414-.586a2 2 0 0 0-.001-2.829m-.591-51.432c.196.062.397.102.6.102c.505 0 1.011-.19 1.4-.572l.659-.646a5 5 0 0 0-.296-.674a33 33 0 0 0-2.363 1.79"></svg:path>`,
+})
+export class GeoTurfBezierIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[geoTurfBufferIcon],svg[geo-turf-buffer-icon]',
   host: {
     role: 'img',
@@ -70,16 +87,16 @@ export class GeoTurfCenterIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[geoTurfBezierIcon],svg[geo-turf-bezier-icon]',
+  selector: 'svg[geoTurfCentroidIcon],svg[geo-turf-centroid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:circle cx="40.274" cy="39.666" r="4.763" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="m12.729 63.898l-5.714 5.6a1.999 1.999 0 0 0 1.4 3.429c.505 0 1.011-.19 1.4-.571l5.714-5.6a2 2 0 0 0-2.8-2.858m11.427-11.199l-5.714 5.6a1.999 1.999 0 0 0 1.4 3.429c.505 0 1.011-.19 1.4-.571l5.714-5.6a2 2 0 0 0-2.8-2.858m22.861-16.865l.145-.08l2.648-2.595a1.999 1.999 0 1 0-2.8-2.856l-2.762 2.707a7.8 7.8 0 0 1 2.769 2.824m7.107-7.703c.505 0 1.011-.19 1.399-.571l5.714-5.599a2 2 0 0 0-2.799-2.858l-5.714 5.599a2 2 0 0 0 1.4 3.429m11.428-11.199c.505 0 1.011-.19 1.399-.572l5.714-5.6a2 2 0 1 0-2.799-2.856l-5.714 5.6a2 2 0 0 0 1.4 3.428"></svg:path><svg:path fill="currentColor" d="M92.917 42.969C80.419 30.471 61.223 27.94 47.162 35.754l-.121.119a7.7 7.7 0 0 1 .997 3.793c0 .072-.009.142-.011.214c12.618-7.75 30.503-5.642 42.062 5.916a2 2 0 0 0 2.828-2.827"></svg:path><svg:path fill="currentColor" d="m47.041 35.873l.121-.119l-.145.08zM42.688 90.66c-6.166-6.166-9.561-14.437-9.561-23.29c0-7.347 2.346-14.29 6.666-19.965a7.7 7.7 0 0 1-3.445-1.053a8 8 0 0 1-.505-.32a7.8 7.8 0 0 1-2.307-2.525L29.87 47.1a2 2 0 0 0 2.8 2.858l1.672-1.638c-3.398 5.669-5.214 12.206-5.214 19.051c0 9.922 3.812 19.197 10.733 26.118c.39.391.902.586 1.414.586s1.024-.195 1.414-.586a2 2 0 0 0-.001-2.829m-.591-51.432c.196.062.397.102.6.102c.505 0 1.011-.19 1.4-.572l.659-.646a5 5 0 0 0-.296-.674a33 33 0 0 0-2.363 1.79"></svg:path>`,
+  template: `<svg:circle cx="50.178" cy="49.646" r="7.796" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M85.342 21.482a2 2 0 0 1-2-2v-3h-3a2 2 0 0 1 0-4h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2m-13.618-5h-8.618a2 2 0 0 1 0-4h8.618a2 2 0 0 1 0 4m-17.237 0H45.87a2 2 0 0 1 0-4h8.618a2 2 0 0 1-.001 4m-17.235 0h-8.618a2 2 0 0 1 0-4h8.618a2 2 0 0 1 0 4m-22.236 5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h5a2 2 0 0 1 0 4h-3v3a2 2 0 0 1-2 2m0 51.708a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2m0-17.236a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2m0-17.235a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2m5 48.09h-5a2 2 0 0 1-2-2v-5a2 2 0 0 1 4 0v3h3a2 2 0 0 1 0 4m51.707 0h-8.617a2 2 0 0 1 0-4h8.617a2 2 0 0 1 0 4m-17.236 0h-8.618a2 2 0 0 1 0-4h8.618a2 2 0 0 1 0 4m-17.236 0h-8.618a2 2 0 0 1 0-4h8.618a2 2 0 0 1 0 4m48.091 0h-5a2 2 0 0 1 0-4h3v-3a2 2 0 0 1 4 0v5a2 2 0 0 1-2 2m0-13.619a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2m0-17.236a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2m0-17.235a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2"></svg:path>`,
 })
-export class GeoTurfBezierIcon {
+export class GeoTurfCentroidIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -97,23 +114,6 @@ export class GeoTurfBezierIcon {
   template: `<svg:circle cx="13.162" cy="54.683" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="51.116" cy="15.612" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="87.954" cy="83.706" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="50" cy="50.218" r="5.824" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M73.939 80.269a2 2 0 0 1-.724-.137l-9.353-3.629a2 2 0 0 1 1.447-3.729l9.353 3.629a2 2 0 0 1-.723 3.866M55.234 73.01a2 2 0 0 1-.724-.137l-9.353-3.629a2 2 0 1 1 1.447-3.729l9.353 3.629a2 2 0 0 1-.723 3.866m-18.706-7.259a2 2 0 0 1-.723-.137l-9.353-3.629a2 2 0 1 1 1.447-3.729l9.353 3.629a2.001 2.001 0 0 1-.724 3.866M22.843 46.717a2 2 0 0 1-1.435-3.393l6.197-6.379a2 2 0 0 1 2.869 2.787l-6.197 6.379a2 2 0 0 1-1.434.606m12.395-12.759a2 2 0 0 1-1.435-3.393L40 24.185a2 2 0 0 1 2.869 2.787l-6.197 6.379a2 2 0 0 1-1.434.607m15.189 5.059l-.065-.001a2 2 0 0 1-1.935-2.063l.265-8.204a1.983 1.983 0 0 1 2.063-1.935a2 2 0 0 1 1.935 2.063l-.265 8.204a2 2 0 0 1-1.998 1.936m27.686 38.006c-.47 0-.941-.165-1.322-.5l-6.092-5.374a2.001 2.001 0 0 1 2.646-3l6.092 5.374a2.001 2.001 0 0 1-1.324 3.5M65.931 66.274c-.47 0-.942-.165-1.322-.5L58.518 60.4a2.001 2.001 0 0 1 2.646-3l6.091 5.374a2.001 2.001 0 0 1-1.324 3.5"></svg:path>`,
 })
 export class GeoTurfConcaveIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[geoTurfCentroidIcon],svg[geo-turf-centroid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:circle cx="50.178" cy="49.646" r="7.796" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M85.342 21.482a2 2 0 0 1-2-2v-3h-3a2 2 0 0 1 0-4h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2m-13.618-5h-8.618a2 2 0 0 1 0-4h8.618a2 2 0 0 1 0 4m-17.237 0H45.87a2 2 0 0 1 0-4h8.618a2 2 0 0 1-.001 4m-17.235 0h-8.618a2 2 0 0 1 0-4h8.618a2 2 0 0 1 0 4m-22.236 5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h5a2 2 0 0 1 0 4h-3v3a2 2 0 0 1-2 2m0 51.708a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2m0-17.236a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2m0-17.235a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2m5 48.09h-5a2 2 0 0 1-2-2v-5a2 2 0 0 1 4 0v3h3a2 2 0 0 1 0 4m51.707 0h-8.617a2 2 0 0 1 0-4h8.617a2 2 0 0 1 0 4m-17.236 0h-8.618a2 2 0 0 1 0-4h8.618a2 2 0 0 1 0 4m-17.236 0h-8.618a2 2 0 0 1 0-4h8.618a2 2 0 0 1 0 4m48.091 0h-5a2 2 0 0 1 0-4h3v-3a2 2 0 0 1 4 0v5a2 2 0 0 1-2 2m0-13.619a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2m0-17.236a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2m0-17.235a2 2 0 0 1-2-2v-8.618a2 2 0 0 1 4 0v8.618a2 2 0 0 1-2 2"></svg:path>`,
-})
-export class GeoTurfCentroidIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,16 +206,16 @@ export class GeoTurfExplodeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[geoTurfIntersectIcon],svg[geo-turf-intersect-icon]',
+  selector: 'svg[geoTurfKinksIcon],svg[geo-turf-kinks-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m76.107 36.425l3.842-16.958c.228-1-.34-2.01-1.312-2.337L38.462 3.613a2 2 0 0 0-1.946.382L8.109 28.552a2 2 0 0 0-.678 1.749l4.7 39.609a2 2 0 0 0 1.797 1.756l14.747 1.395C32.259 87.55 45.39 97.917 60.458 97.917c18.056 0 32.744-14.689 32.744-32.744c0-11.947-6.665-23.05-17.095-28.748M15.913 67.836l-4.385-36.952L38.269 7.769l37.38 12.577l-3.247 14.33c-.246-.097-.496-.182-.743-.272c-.171-.062-.34-.128-.512-.187a32 32 0 0 0-1.539-.492l-.075-.023a32 32 0 0 0-1.644-.425c-.167-.039-.335-.071-.502-.107a33 33 0 0 0-1.166-.231a34 34 0 0 0-1.709-.254q-.308-.038-.618-.072a35 35 0 0 0-1.173-.098c-.181-.012-.361-.028-.542-.037a34 34 0 0 0-1.721-.047c-18.056 0-32.745 14.689-32.745 32.745q.002.886.052 1.774c.01.188.028.375.042.562q.042.609.106 1.216c.009.083.012.166.022.249zm44.545 26.081c-12.75 0-23.921-8.453-27.528-20.453l32.304 3.056q.095.009.19.009c.034 0 .067-.007.102-.009a2 2 0 0 0 .369-.055l.096-.025q.131-.04.255-.096l.059-.026q.135-.067.258-.154l.036-.024q.124-.092.234-.202l.03-.029q.104-.11.191-.234l.033-.043q.079-.122.14-.256l.031-.06q.072-.164.113-.345l7.814-34.486C83.774 45.634 89.2 55.065 89.2 65.172c.002 15.85-12.892 28.745-28.742 28.745"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M12.711 16.536a2 2 0 0 1-1.45-.622l-3.36-3.536A2 2 0 0 1 9.351 9H14a2 2 0 0 1 .011 4l.15.158a2 2 0 0 1-1.45 3.378m27.038 26.862a2 2 0 0 1-1.414-.586l-6.715-6.716a2 2 0 1 1 2.828-2.828l6.715 6.716a2 2 0 0 1-1.414 3.414M26.317 29.967a2 2 0 0 1-1.414-.586l-6.715-6.716a2 2 0 1 1 2.828-2.828l6.715 6.716a2 2 0 0 1-1.414 3.414m33.934 13.431a2 2 0 0 1-1.414-3.414l6.716-6.715a2 2 0 1 1 2.828 2.828l-6.716 6.715a2 2 0 0 1-1.414.586m13.432-13.431a2 2 0 0 1-1.414-3.414l6.716-6.715a2 2 0 1 1 2.828 2.828l-6.716 6.715c-.391.39-.903.586-1.414.586m13.606-13.431a2 2 0 0 1-1.449-3.378l.149-.158A2 2 0 0 1 86 9h4.649a1.998 1.998 0 0 1 1.449 3.378l-3.36 3.536a2 2 0 0 1-1.449.622M75 13H65a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4m-20 0H45a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4m-20 0H25a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4M14 94H9.351a2 2 0 0 1-1.447-3.381l3.366-3.529a2.001 2.001 0 0 1 2.895 2.762l-.143.148A2 2 0 0 1 14 94m5.606-10.218a2.002 2.002 0 0 1-1.412-3.417l6.713-6.688a2.004 2.004 0 0 1 2.829.005a2 2 0 0 1-.005 2.829l-6.713 6.688a2 2 0 0 1-1.412.583m13.426-13.377a2.002 2.002 0 0 1-1.412-3.417l6.713-6.688a2.003 2.003 0 0 1 2.829.005a2 2 0 0 1-.005 2.829l-6.713 6.688c-.39.389-.901.583-1.412.583m47.363 13.377a2 2 0 0 1-1.411-.583l-6.714-6.688a2 2 0 1 1 2.822-2.834l6.714 6.688a2 2 0 0 1-1.411 3.417M66.968 70.406a2 2 0 0 1-1.412-.583l-6.713-6.688a2 2 0 0 1-.005-2.829a2 2 0 0 1 2.829-.005l6.713 6.688a2.002 2.002 0 0 1-1.412 3.417M90.649 94H86a2 2 0 0 1-.022-4l-.143-.148a2.001 2.001 0 0 1 2.894-2.762l3.367 3.529A2.002 2.002 0 0 1 90.649 94M75 94H65a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4m-20 0H45a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4m-20 0H25a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4"></svg:path><svg:circle cx="50.178" cy="51.646" r="7.796" fill="currentColor"></svg:circle>`,
 })
-export class GeoTurfIntersectIcon {
+export class GeoTurfKinksIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,23 +240,6 @@ export class GeoTurfExtentIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[geoTurfKinksIcon],svg[geo-turf-kinks-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.711 16.536a2 2 0 0 1-1.45-.622l-3.36-3.536A2 2 0 0 1 9.351 9H14a2 2 0 0 1 .011 4l.15.158a2 2 0 0 1-1.45 3.378m27.038 26.862a2 2 0 0 1-1.414-.586l-6.715-6.716a2 2 0 1 1 2.828-2.828l6.715 6.716a2 2 0 0 1-1.414 3.414M26.317 29.967a2 2 0 0 1-1.414-.586l-6.715-6.716a2 2 0 1 1 2.828-2.828l6.715 6.716a2 2 0 0 1-1.414 3.414m33.934 13.431a2 2 0 0 1-1.414-3.414l6.716-6.715a2 2 0 1 1 2.828 2.828l-6.716 6.715a2 2 0 0 1-1.414.586m13.432-13.431a2 2 0 0 1-1.414-3.414l6.716-6.715a2 2 0 1 1 2.828 2.828l-6.716 6.715c-.391.39-.903.586-1.414.586m13.606-13.431a2 2 0 0 1-1.449-3.378l.149-.158A2 2 0 0 1 86 9h4.649a1.998 1.998 0 0 1 1.449 3.378l-3.36 3.536a2 2 0 0 1-1.449.622M75 13H65a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4m-20 0H45a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4m-20 0H25a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4M14 94H9.351a2 2 0 0 1-1.447-3.381l3.366-3.529a2.001 2.001 0 0 1 2.895 2.762l-.143.148A2 2 0 0 1 14 94m5.606-10.218a2.002 2.002 0 0 1-1.412-3.417l6.713-6.688a2.004 2.004 0 0 1 2.829.005a2 2 0 0 1-.005 2.829l-6.713 6.688a2 2 0 0 1-1.412.583m13.426-13.377a2.002 2.002 0 0 1-1.412-3.417l6.713-6.688a2.003 2.003 0 0 1 2.829.005a2 2 0 0 1-.005 2.829l-6.713 6.688c-.39.389-.901.583-1.412.583m47.363 13.377a2 2 0 0 1-1.411-.583l-6.714-6.688a2 2 0 1 1 2.822-2.834l6.714 6.688a2 2 0 0 1-1.411 3.417M66.968 70.406a2 2 0 0 1-1.412-.583l-6.713-6.688a2 2 0 0 1-.005-2.829a2 2 0 0 1 2.829-.005l6.713 6.688a2.002 2.002 0 0 1-1.412 3.417M90.649 94H86a2 2 0 0 1-.022-4l-.143-.148a2.001 2.001 0 0 1 2.894-2.762l3.367 3.529A2.002 2.002 0 0 1 90.649 94M75 94H65a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4m-20 0H45a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4m-20 0H25a2 2 0 0 1 0-4h10a2 2 0 0 1 0 4"></svg:path><svg:circle cx="50.178" cy="51.646" r="7.796" fill="currentColor"></svg:circle>`,
-})
-export class GeoTurfKinksIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[geoTurfLineSliceIcon],svg[geo-turf-line-slice-icon]',
   host: {
     role: 'img',
@@ -267,6 +250,23 @@ export class GeoTurfKinksIcon {
   template: `<svg:path fill="currentColor" d="M22.977 90.884a2.003 2.003 0 0 1-1.881-2.681l1.699-4.702a2 2 0 0 1 2.561-1.201a2 2 0 0 1 1.201 2.561l-1.699 4.702a2 2 0 0 1-1.881 1.321m42.976-61.608a2 2 0 0 1-.984-3.743l9.304-5.249a2 2 0 0 1 1.965 3.484l-9.304 5.249a2 2 0 0 1-.981.259M84.56 18.779a2 2 0 0 1-.984-3.743l4.354-2.457a2 2 0 0 1 1.965 3.484L85.54 18.52a2 2 0 0 1-.98.259M57.687 31.938a2 2 0 0 0-2.725-.759l-16.009 9.032c-.417.235-.764.612-.926 1.062L30 63.408v.002l-3.603 10.046a2.007 2.007 0 0 0 1.902 2.681c.818 0 1.412-.507 1.706-1.321L32 68.808v-.002l9.385-25.476l15.452-8.667c.962-.542 1.392-1.762.85-2.725"></svg:path>`,
 })
 export class GeoTurfLineSliceIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[geoTurfIntersectIcon],svg[geo-turf-intersect-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m76.107 36.425l3.842-16.958c.228-1-.34-2.01-1.312-2.337L38.462 3.613a2 2 0 0 0-1.946.382L8.109 28.552a2 2 0 0 0-.678 1.749l4.7 39.609a2 2 0 0 0 1.797 1.756l14.747 1.395C32.259 87.55 45.39 97.917 60.458 97.917c18.056 0 32.744-14.689 32.744-32.744c0-11.947-6.665-23.05-17.095-28.748M15.913 67.836l-4.385-36.952L38.269 7.769l37.38 12.577l-3.247 14.33c-.246-.097-.496-.182-.743-.272c-.171-.062-.34-.128-.512-.187a32 32 0 0 0-1.539-.492l-.075-.023a32 32 0 0 0-1.644-.425c-.167-.039-.335-.071-.502-.107a33 33 0 0 0-1.166-.231a34 34 0 0 0-1.709-.254q-.308-.038-.618-.072a35 35 0 0 0-1.173-.098c-.181-.012-.361-.028-.542-.037a34 34 0 0 0-1.721-.047c-18.056 0-32.745 14.689-32.745 32.745q.002.886.052 1.774c.01.188.028.375.042.562q.042.609.106 1.216c.009.083.012.166.022.249zm44.545 26.081c-12.75 0-23.921-8.453-27.528-20.453l32.304 3.056q.095.009.19.009c.034 0 .067-.007.102-.009a2 2 0 0 0 .369-.055l.096-.025q.131-.04.255-.096l.059-.026q.135-.067.258-.154l.036-.024q.124-.092.234-.202l.03-.029q.104-.11.191-.234l.033-.043q.079-.122.14-.256l.031-.06q.072-.164.113-.345l7.814-34.486C83.774 45.634 89.2 55.065 89.2 65.172c.002 15.85-12.892 28.745-28.742 28.745"></svg:path>`,
+})
+export class GeoTurfIntersectIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -291,23 +291,6 @@ export class GeoTurfMergeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[geoTurfMidpointIcon],svg[geo-turf-midpoint-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:circle cx="49.331" cy="50.493" r="6.845" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M85.331 23.338c-4.877 0-8.845-3.968-8.845-8.845s3.968-8.845 8.845-8.845s8.845 3.968 8.845 8.845s-3.968 8.845-8.845 8.845m0-13.69a4.85 4.85 0 0 0-4.845 4.845c0 2.671 2.173 4.845 4.845 4.845s4.845-2.173 4.845-4.845a4.85 4.85 0 0 0-4.845-4.845m-71 84.69c-4.877 0-8.845-3.968-8.845-8.845s3.968-8.845 8.845-8.845s8.845 3.968 8.845 8.845s-3.968 8.845-8.845 8.845m0-13.69c-2.672 0-4.845 2.173-4.845 4.845s2.173 4.845 4.845 4.845s4.845-2.173 4.845-4.845s-2.174-4.845-4.845-4.845"></svg:path>`,
-})
-export class GeoTurfMidpointIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[geoTurfPointGridIcon],svg[geo-turf-point-grid-icon]',
   host: {
     role: 'img',
@@ -318,6 +301,23 @@ export class GeoTurfMidpointIcon {
   template: `<svg:circle cx="11.528" cy="88.472" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="88.472" cy="11.528" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="69.236" cy="11.528" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="50" cy="11.528" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="30.764" cy="11.528" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="11.528" cy="11.528" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="88.472" cy="88.472" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="88.472" cy="69.236" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="88.472" cy="50" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="88.472" cy="30.764" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="69.472" cy="88.472" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="69.472" cy="69.236" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="69.472" cy="50" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="69.472" cy="30.764" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="50.472" cy="88.472" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="50.472" cy="69.236" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="50.472" cy="50" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="50.472" cy="30.764" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="30.472" cy="88.472" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="30.472" cy="69.236" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="30.472" cy="50" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="30.472" cy="30.764" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="11.472" cy="69.236" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="11.472" cy="50" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="11.472" cy="30.764" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="88.472" cy="11.528" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="69.236" cy="11.528" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="50" cy="11.528" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="30.764" cy="11.528" r="5.824" fill="currentColor"></svg:circle><svg:circle cx="11.528" cy="11.528" r="5.824" fill="currentColor"></svg:circle>`,
 })
 export class GeoTurfPointGridIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[geoTurfMidpointIcon],svg[geo-turf-midpoint-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="49.331" cy="50.493" r="6.845" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M85.331 23.338c-4.877 0-8.845-3.968-8.845-8.845s3.968-8.845 8.845-8.845s8.845 3.968 8.845 8.845s-3.968 8.845-8.845 8.845m0-13.69a4.85 4.85 0 0 0-4.845 4.845c0 2.671 2.173 4.845 4.845 4.845s4.845-2.173 4.845-4.845a4.85 4.85 0 0 0-4.845-4.845m-71 84.69c-4.877 0-8.845-3.968-8.845-8.845s3.968-8.845 8.845-8.845s8.845 3.968 8.845 8.845s-3.968 8.845-8.845 8.845m0-13.69c-2.672 0-4.845 2.173-4.845 4.845s2.173 4.845 4.845 4.845s4.845-2.173 4.845-4.845s-2.174-4.845-4.845-4.845"></svg:path>`,
+})
+export class GeoTurfMidpointIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[proiconsTuneIcon],svg[proicons-tune-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 12h10.5m0 0a2.5 2.5 0 0 0 5 0m-5 0a2.5 2.5 0 0 1 5 0m0 0h3M7.75 5.25h13.5m-13.5 0a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m-5 13.5h3m0 0a2.5 2.5 0 0 0 5 0m-5 0a2.5 2.5 0 0 1 5 0m0 0h10.5"></svg:path>`,
+})
+export class ProiconsTuneIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[proiconsTvIcon],svg[proicons-tv-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:rect width="18.5" height="13" x="2.75" y="4" rx="3"></svg:rect><svg:path d="M7 20h10"></svg:path></svg:g>`,
+})
+export class ProiconsTvIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[proiconsTypescriptIcon],svg[proicons-typescript-icon]',
   host: {
     role: 'img',
@@ -403,40 +437,6 @@ export class ProiconsZoomInIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M7.56 10.56h6m1.993 4.993a7.06 7.06 0 1 0-9.985-9.985a7.06 7.06 0 0 0 9.985 9.985m0 0L20 20"></svg:path><svg:path d="M15.553 5.568a7.06 7.06 0 1 1-9.985 9.985a7.06 7.06 0 0 1 9.985-9.985"></svg:path></svg:g>`,
 })
 export class ProiconsZoomOutIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[proiconsAlignLeftIcon],svg[proicons-align-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M2.75 2.75v18.5"></svg:path><svg:rect width="6" height="10" rx="2" transform="matrix(0 -1 -1 0 16.25 19.75)"></svg:rect><svg:rect width="6" height="15" rx="2" transform="matrix(0 -1 -1 0 21.25 10.25)"></svg:rect></svg:g>`,
-})
-export class ProiconsAlignLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[proiconsAlignTopIcon],svg[proicons-align-top-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M2.75 2.75h18.5"></svg:path><svg:rect width="6" height="10" x="19.75" y="16.25" rx="2" transform="rotate(180 19.75 16.25)"></svg:rect><svg:rect width="6" height="15" x="10.25" y="21.25" rx="2" transform="rotate(180 10.25 21.25)"></svg:rect></svg:g>`,
-})
-export class ProiconsAlignTopIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[lineiconsLineSpacingIcon],svg[lineicons-line-spacing-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M37.2 7.6h22.7c1.2 0 2.3-1 2.3-2.3S61.2 3 59.9 3H37.2c-1.2 0-2.3 1-2.3 2.3s1.1 2.3 2.3 2.3m22.7 13.2H37.2c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h22.7c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3m0 17.8H37.2c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h22.7c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3m0 17.8H37.2c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h22.7c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3M22.8 15.3c.4.4 1 .7 1.6.7s1.2-.2 1.6-.7c.9-.9.9-2.3 0-3.2l-9.4-9.4c-1.3-1.3-3.3-1.3-4.6 0l-9.5 9.4c-.9.9-.9 2.3 0 3.2s2.3.9 3.2 0L12 9v46l-6.3-6.4c-.9-.9-2.3-.9-3.2 0s-.9 2.3 0 3.2l9.4 9.5c.6.6 1.4 1 2.3 1s1.7-.3 2.3-.9l9.5-9.5c.9-.9.9-2.3 0-3.2s-2.3-.9-3.2 0L16.5 55V9z"></svg:path>`,
-})
-export class LineiconsLineSpacingIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[lineiconsLineiconsIcon],svg[lineicons-lineicons-icon]',
   host: {
     role: 'img',
@@ -7849,6 +7832,23 @@ export class LineiconsZoomInIcon {
   template: `<svg:path fill="currentColor" d="M61 51L46.7 36.7c-1.6-1.6-4.3-1.6-5.9 0l-.4.4l-2.8-2.8c2.8-3.5 4.4-7.9 4.4-12.5c0-5.4-2.1-10.4-5.9-14.2c-7.8-7.8-20.6-7.8-28.4 0c-3.8 3.8-5.9 8.8-5.9 14.2S3.9 32.2 7.7 36c3.9 3.9 9.1 5.9 14.2 5.9c4.4 0 8.9-1.5 12.5-4.4l2.8 2.8l-.4.4q-1.2 1.2-1.2 3c0 1.1.4 2.2 1.2 3L51.1 61c.8.8 1.9 1.2 3 1.2s2.1-.4 3-1.2l4-4q1.2-1.2 1.2-3c0-1.1-.5-2.2-1.3-3M10.8 32.9c-2.9-2.9-4.6-6.8-4.6-11s1.6-8.1 4.6-11c3-3 7-4.6 11-4.6s8 1.5 11 4.6c2.9 2.9 4.6 6.8 4.6 11s-1.6 8.1-4.6 11c-6 6-15.9 6-22 0M54 57.6L40.1 43.7l3.6-3.6L57.6 54z"></svg:path><svg:path fill="currentColor" d="M26.9 19.6H16.7c-1.2 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3h10.2c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3"></svg:path>`,
 })
 export class LineiconsZoomOutIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lineiconsAmbulanceIcon],svg[lineicons-ambulance-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M57.1 9.8H25.9c-2.8 0-5.1 2.4-5.1 5.3v2.6h-3.4v-2c0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2v2H9.6c-1.4 0-2.7.9-3.2 2.3L1.9 32.3l-.4 1.1l.8 1.1V45c0 2 1.6 3.6 3.6 3.6h.5c1 3.3 4 5.7 7.6 5.7s6.6-2.4 7.6-5.7h20.9c1 3.3 4 5.7 7.6 5.7s6.6-2.4 7.6-5.7h1.7c1.6 0 3-1.4 3-3V15.1c-.2-2.9-2.4-5.3-5.3-5.3M10.4 22.2h10.4v8.7H7.2zM14 49.7c-1.9 0-3.4-1.6-3.4-3.5s1.5-3.5 3.4-3.5s3.4 1.6 3.4 3.5s-1.5 3.5-3.4 3.5m0-11.4c-3.2 0-6 2-7.2 4.8v-7.6h14v6.8c-1.4-2.5-3.9-4-6.8-4m36.1 11.4c-1.9 0-3.4-1.6-3.4-3.5s1.5-3.5 3.4-3.5s3.4 1.6 3.4 3.5s-1.6 3.5-3.4 3.5m0-11.4c-3.6 0-6.7 2.5-7.6 5.8H25.3v-29c0-.5.3-.8.6-.8h31.3c.3 0 .6.4.6.9v28.9h-.1c-1-3.4-4-5.8-7.6-5.8"></svg:path><svg:path fill="currentColor" d="M46.8 25.6h-3v-3c0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2v3h-3c-1.2 0-2.2 1-2.2 2.2s1 2.2 2.2 2.2h3v3c0 1.2 1 2.2 2.2 2.2s2.2-1 2.2-2.2v-3h3c1.2 0 2.2-1 2.2-2.2s-1-2.2-2.2-2.2"></svg:path>`,
+})
+export class LineiconsAmbulanceIcon {
   readonly viewBox = input("0 0 64 64")
   readonly width = input("1em")
   readonly height = input("1em")

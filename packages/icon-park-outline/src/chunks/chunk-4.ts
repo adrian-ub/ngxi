@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkOutlineRightIcon],svg[icon-park-outline-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m19 12l12 12l-12 12"></svg:path>`,
+})
+export class IconParkOutlineRightIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkOutlineRightAngleIcon],svg[icon-park-outline-right-angle-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class IconParkOutlineUnlikeIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m25.893 16.03l-7.779-7.778c-2.863-2.863-7.41-2.959-10.157-.213s-2.65 7.293.214 10.157l7.778 7.778m15.967-3.904l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.213l-7.779-7.779m-.734-10.938l-3.889-3.89M30.313 30.15l-3.889-3.889"></svg:path>`,
 })
 export class IconParkOutlineUnlinkIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkOutlineUnlockIcon],svg[icon-park-outline-unlock-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><svg:rect width="34" height="22" x="7" y="22.048" rx="2"></svg:rect><svg:path stroke-linecap="round" d="M14 22v-7.995c-.005-5.135 3.923-9.438 9.086-9.954S32.967 6.974 34 12.006M24 30v6"></svg:path></svg:g>`,
-})
-export class IconParkOutlineUnlockIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

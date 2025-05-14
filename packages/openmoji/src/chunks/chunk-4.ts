@@ -2,57 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[openmojiManMediumDarkSkinToneCurlyHairIcon],svg[openmoji-man-medium-dark-skin-tone-curly-hair-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M44.6 39.6c1.3.5 2.7.3 3.7-.5c.8-.6 1.3-1.5 1.5-2.5c.9-.5 1.6-1.3 1.9-2.4c.3-1.2 0-2.4-.7-3.4c1-1 1.5-2.3 1.3-3.7c-.2-1.1-.8-2.1-1.6-2.7c1-1.2 1.3-2.8.7-4.3q-.75-1.5-2.4-2.1c.1-1.3-.4-2.6-1.5-3.3c-1.3-.8-2.9-.7-4.1.3c-.5-1.3-1.6-2.2-3-2.4c-1.3-.1-2.5.4-3.3 1.4c0 0-3.2-3.5-7.1.1c0 0-5-2.1-6.5 2.9c0 0-4.2 1.1-2.2 5.9c0 0-2.9 3-.8 6.5c0 0-2.1 4.2 1.8 5.7c-.1 1 .2 1.9.7 2.7c.9 1.1 2.3 1.7 3.7 1.5"></svg:path><svg:path fill="#a57939" d="M44.5 21.8c1.7 2.7 2.7 5.9 2.6 9.1c0 7.7-4.9 14-11 14s-11-6.3-11-14c0-2.7.6-5.4 1.9-7.8l3.2 1.3c1.9-.9 3.9-1.2 6-1.1c1.9.2 3 .8 4.8.4c1.3-.3 2.5-.9 3.5-1.9"></svg:path><svg:path fill="#92D3F5" d="M17 61v-4c0-5 5-9 10-9q9 7.5 18 0c5 0 10 4 10 9v4"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 59.9v-3c0-5 5-9 10-9q9 7.5 18 0c5 0 10 4 10 9v3"></svg:path><svg:path d="M42 29.9c0 1.1-.9 2-2 2s-2-.9-2-2s.9-2 2-2s2 .9 2 2m-8 0c0 1.1-.9 2-2 2s-2-.9-2-2s.9-2 2-2s2 .9 2 2"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M33 38.1c1.9 1 4.1 1 6 0"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M28.8 41.5c-2.5-2.9-3.8-6.7-3.7-10.5c.1-2.8.8-5.5 2.1-8c.5.9 1.4 1.5 2.4 1.6c1.3 0 2.5-.9 2.8-2.1c1.1 1.4 3 1.7 4.4.6c.3-.2.5-.4.7-.7c1.5 1.8 4.1 2.1 5.9.6c.4-.4.8-.8 1.1-1.3c1.6 2.9 2.5 6.1 2.7 9.4c0 8-5.1 14-11.1 14c-2.8-.1-5.5-1.4-7.3-3.6"></svg:path><svg:path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2" d="M44.6 39.6c1.3.5 2.7.3 3.7-.5c.8-.6 1.3-1.5 1.5-2.5c.9-.5 1.6-1.3 1.9-2.4c.3-1.2 0-2.4-.7-3.4c1-1 1.5-2.3 1.3-3.7c-.2-1.1-.8-2.1-1.6-2.7c1-1.2 1.3-2.8.7-4.3q-.75-1.5-2.4-2.1c.1-1.3-.4-2.6-1.5-3.3c-1.3-.8-2.9-.7-4.1.3c-.5-1.3-1.6-2.2-3-2.4c-1.3-.1-2.5.4-3.3 1.4c0 0-3.2-3.5-7.1.1c0 0-4.7-3.1-6.1 2.6c0 0-5.4.8-2.6 6.2c0 0-2.9 3-.8 6.5c0 0-2.1 4.2 1.8 5.7c-.1 1 .2 1.9.7 2.7c.9 1.1 2.3 1.7 3.7 1.5"></svg:path>`,
-})
-export class OpenmojiManMediumDarkSkinToneCurlyHairIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiManMediumDarkSkinToneRedHairIcon],svg[openmoji-man-medium-dark-skin-tone-red-hair-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:path id="openmojiManMediumDarkSkinToneRedHair0" d="M41.9 30c0 1.1-.9 2-2 2s-2-.9-2-2s.9-2 2-2s2 .9 2 2m-8 0c0 1.1-.9 2-2 2s-2-.9-2-2s.9-2 2-2s2 .9 2 2"></svg:path></svg:defs><svg:path fill="#E27022" d="M26 38c-3 0-4-7-4-14c0-6 5-12 14-12s14 6 14 12c0 7-1 14-4 14"></svg:path><svg:path fill="#a57939" d="M24.9 30.5c-.1 8 4.1 14 11 14c7.1 0 11.1-6 11.1-14c0-5-3-10-3-10c-8 0-10 3-16 1c-1.9 2.6-2.9 5.8-3.1 9"></svg:path><svg:path fill="#92D3F5" d="M17 61v-4c0-5 5-9 10-9q9 7.5 18 0c5 0 10 4 10 9v4"></svg:path><svg:use href="#openmojiManMediumDarkSkinToneRedHair0"></svg:use><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M32.9 38.2c1.9.8 4.1.8 6 0M26 38c-3 0-4-7-4-14c0-6 5-12 14-12s14 6 14 12c0 7-1 14-4 14M17 60v-3c0-5 5-9 10-9q9 7.5 18 0c5 0 10 4 10 9v3"></svg:path><svg:use href="#openmojiManMediumDarkSkinToneRedHair0"></svg:use><svg:path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2" d="M24.9 31c-.1 8 4.9 14 11 14c6 0 11.1-6 11.1-14c0-5-3-11-3-11c-8 0-10 3-16 1c0 0-3 5-3.1 10z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M32.9 38.2c1.9.8 4.1.8 6 0"></svg:path>`,
-})
-export class OpenmojiManMediumDarkSkinToneRedHairIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiManMediumDarkSkinToneWhiteHairIcon],svg[openmoji-man-medium-dark-skin-tone-white-hair-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:path id="openmojiManMediumDarkSkinToneWhiteHair0" d="M41.9 30c0 1.1-.9 2-2 2s-2-.9-2-2s.9-2 2-2s2 .9 2 2m-8 0c0 1.1-.9 2-2 2s-2-.9-2-2s.9-2 2-2s2 .9 2 2"></svg:path></svg:defs><svg:path fill="#D0CFCE" d="M26 38c-3 0-4-7-4-14c0-6 5-12 14-12s14 6 14 12c0 7-1 14-4 14"></svg:path><svg:path fill="#a57939" d="M24.9 30.5c-.1 8 4.1 14 11 14c7.1 0 11.1-6 11.1-14c0-5-3-10-3-10c-8 0-10 3-16 1c-1.9 2.6-2.9 5.8-3.1 9"></svg:path><svg:path fill="#92D3F5" d="M17 61v-4c0-5 5-9 10-9q9 7.5 18 0c5 0 10 4 10 9v4"></svg:path><svg:use href="#openmojiManMediumDarkSkinToneWhiteHair0"></svg:use><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M32.9 38.2c1.9.8 4.1.8 6 0M26 38c-3 0-4-7-4-14c0-6 5-12 14-12s14 6 14 12c0 7-1 14-4 14M17 60v-3c0-5 5-9 10-9q9 7.5 18 0c5 0 10 4 10 9v3"></svg:path><svg:use href="#openmojiManMediumDarkSkinToneWhiteHair0"></svg:use><svg:path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2" d="M24.9 31c-.1 8 4.9 14 11 14c6 0 11.1-6 11.1-14c0-5-3-11-3-11c-8 0-10 3-16 1c0 0-3 5-3.1 10z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M32.9 38.2c1.9.8 4.1.8 6 0"></svg:path>`,
-})
-export class OpenmojiManMediumDarkSkinToneWhiteHairIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[openmojiManMediumLightSkinToneIcon],svg[openmoji-man-medium-light-skin-tone-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8444,57 @@ export class OpenmojiOysterIcon {
   template: `<svg:path fill="#d0cfce" d="M59.035 60h-46.07a.97.97 0 0 1-.965-.965v-46.07c0-.53.434-.965.965-.965h46.07c.53 0 .965.434.965.965v46.07c0 .53-.434.965-.965.965"></svg:path><svg:g fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><svg:path d="M59.035 60h-46.07a.97.97 0 0 1-.965-.965v-46.07c0-.53.434-.965.965-.965h46.07c.53 0 .965.434.965.965v46.07c0 .53-.434.965-.965.965z"></svg:path><svg:path stroke-linecap="round" d="M30.11 47.005v-22h8.389a5.48 5.48 0 0 1 5.479 5.48h0a5.48 5.48 0 0 1-5.48 5.479H30.11"></svg:path></svg:g>`,
 })
 export class OpenmojiPButtonIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiPackageIcon],svg[openmoji-package-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#f4aa41" d="M34.322 64.164a1 1 0 0 1-.5-.134l-22.69-13.332a1 1 0 0 1-.5-.866l-.25-27.414a1 1 0 0 1 .5-.866L35.072 7.22c.31-.178.69-.178 1 0l22.69 13.082a1 1 0 0 1 .003 1.731l-23.193 14l-.25 27.133a1 1 0 0 1-1 .998"></svg:path><svg:path fill="#f4aa41" d="m36 64.572l24.759-14.108l-.346-28.476l-24.841 14.045z"></svg:path><svg:path fill="#d0cfce" d="M44.442 37.978a2.47 2.47 0 0 1-1.25-2.163v-4.172l-22.88-15.53c.692-.456 6.218-3.632 6.56-3.722l26.15 13.002a1 1 0 0 1 .5.866v6.024a3.29 3.29 0 0 1-1.64 2.841l-4.945 2.854c-.77.45-1.725.45-2.496 0m.397 21.497v-3.336a2.98 2.98 0 0 1 1.485-2.572l6.073-3.507a1.847 1.847 0 0 1 2.77 1.6s-.022 1.605-.33 1.847c-2.04 1.61-9.998 6.279-9.998 5.968"></svg:path><svg:path fill="#3f3f3f" d="M44.427 45.946v.869a1.497 1.497 0 0 0 2.246 1.296l6.804-3.76a2.28 2.28 0 0 0 1.14-1.975v-1.118a1.444 1.444 0 0 0-2.166-1.25l-6.745 3.724a2.56 2.56 0 0 0-1.279 2.214"></svg:path><svg:path fill="#fff" d="m31.083 38.917l-8.298-4.653v7.442l8.298 4.653z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M61.262 21.168L35.572 6.336L9.882 21.168v29.664l25.69 14.832l25.69-14.832zm-25.69 14.865v29.631m.058-29.631L9.94 21.201m42.577 5.049l8.745-5.049m-25.69 14.832l8.616-4.974"></svg:path><svg:path d="m26.884 11.457l25.638 14.801v6.025a2.28 2.28 0 0 1-1.14 1.975l-4.944 2.854a1.497 1.497 0 0 1-2.246-1.296v-4.749L18.624 16.25m12.459 22.667l-8.298-4.653v7.442l8.298 4.653zm23.084 15.749V51.66a.847.847 0 0 0-1.271-.734l-6.073 3.506a1.97 1.97 0 0 0-.985 1.707v3.336m-1.411-13.529v.869a1.497 1.497 0 0 0 2.246 1.296l6.804-3.76a2.28 2.28 0 0 0 1.14-1.975v-1.118a1.444 1.444 0 0 0-2.166-1.25l-6.745 3.724a2.56 2.56 0 0 0-1.279 2.214"></svg:path></svg:g>`,
+})
+export class OpenmojiPackageIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiPageFacingUpIcon],svg[openmoji-page-facing-up-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#D0CFCE" d="m36 10.958l19.958 20.105v29.895H16.042v-50z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><svg:path d="m36 10.958l19.958 20.105v29.895H16.042v-50z"></svg:path><svg:path d="m36 10.958l-.042 20.105h13.188"></svg:path></svg:g>`,
+})
+export class OpenmojiPageFacingUpIcon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiPageMoveIcon],svg[openmoji-page-move-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#D0CFCE" d="m36 15.916l16 16.117v23.968H20V15.916z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><svg:path d="m36 15.916l16 16.117v23.968H20V15.916z"></svg:path><svg:path d="m36 15.916l-.034 16.117h10.573m12.947-.986l5.216 5.216m-5.216 5.258l5.216-5.216m-52 5.216l-5.215-5.216m5.215-5.258l-5.215 5.216"></svg:path></svg:g>`,
+})
+export class OpenmojiPageMoveIcon {
   readonly viewBox = input("0 0 72 72")
   readonly width = input("1em")
   readonly height = input("1em")

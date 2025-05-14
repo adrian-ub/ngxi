@@ -70,6 +70,23 @@ export class IconoirActivityIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[iconoirAdobeIllustratorIcon],svg[iconoir-adobe-illustrator-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4m-5 5v4m0-7v.01"></svg:path><svg:path d="m7 16l1.125-3M13 16l-1.125-3m-3.75 0L10 8l1.875 5m-3.75 0h3.75"></svg:path></svg:g>`,
+})
+export class IconoirAdobeIllustratorIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconoirAdobeAfterEffectsIcon],svg[iconoir-adobe-after-effects-icon]',
   host: {
     role: 'img',
@@ -80,6 +97,23 @@ export class IconoirActivityIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4"></svg:path><svg:path d="M14 13v-1a2 2 0 0 1 2-2v0a2 2 0 0 1 2 2v1zm0 0v1a2 2 0 0 0 2 2h1.5M6 16l1.125-3M12 16l-1.125-3m-3.75 0L9 8l1.875 5m-3.75 0h3.75"></svg:path></svg:g>`,
 })
 export class IconoirAdobeAfterEffectsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconoirAdobeIndesignIcon],svg[iconoir-adobe-indesign-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4M8.5 8v8"></svg:path><svg:path d="M15.5 12v3.4a.6.6 0 0 1-.6.6h-1.4a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2zm0 0V9"></svg:path></svg:g>`,
+})
+export class IconoirAdobeIndesignIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,40 +155,6 @@ export class IconoirAdobeIllustratorSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconoirAdobeIllustratorIcon],svg[iconoir-adobe-illustrator-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4m-5 5v4m0-7v.01"></svg:path><svg:path d="m7 16l1.125-3M13 16l-1.125-3m-3.75 0L10 8l1.875 5m-3.75 0h3.75"></svg:path></svg:g>`,
-})
-export class IconoirAdobeIllustratorIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconoirAdobeIndesignIcon],svg[iconoir-adobe-indesign-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4M8.5 8v8"></svg:path><svg:path d="M15.5 12v3.4a.6.6 0 0 1-.6.6h-1.4a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2zm0 0V9"></svg:path></svg:g>`,
-})
-export class IconoirAdobeIndesignIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[iconoirAdobeIndesignSolidIcon],svg[iconoir-adobe-indesign-solid-icon]',
   host: {
     role: 'img',
@@ -172,16 +172,16 @@ export class IconoirAdobeIndesignSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconoirAdobeLightroomSolidIcon],svg[iconoir-adobe-lightroom-solid-icon]',
+  selector: 'svg[iconoirAdobeLightroomIcon],svg[iconoir-adobe-lightroom-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M21.75 17A4.75 4.75 0 0 1 17 21.75H7A4.75 4.75 0 0 1 2.25 17V7A4.75 4.75 0 0 1 7 2.25h10A4.75 4.75 0 0 1 21.75 7zM7 16.75a.75.75 0 0 1-.75-.75V8a.75.75 0 0 1 1.5 0v7.25H11a.75.75 0 0 1 0 1.5zm6.25-.75a.75.75 0 0 0 1.5 0v-2.998l.003-.045a2 2 0 0 1 .265-.82c.235-.392.736-.887 1.982-.887a.75.75 0 0 0 0-1.5c-.973 0-1.713.232-2.268.586a.75.75 0 0 0-1.482.164z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4"></svg:path><svg:path d="M7 8v8h4m3-5.5V13m0 3v-3m0 0s0-2.5 3-2.5"></svg:path></svg:g>`,
 })
-export class IconoirAdobeLightroomSolidIcon {
+export class IconoirAdobeLightroomIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,16 +206,16 @@ export class IconoirAdobePhotoshopIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconoirAdobeLightroomIcon],svg[iconoir-adobe-lightroom-icon]',
+  selector: 'svg[iconoirAdobeLightroomSolidIcon],svg[iconoir-adobe-lightroom-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4"></svg:path><svg:path d="M7 8v8h4m3-5.5V13m0 3v-3m0 0s0-2.5 3-2.5"></svg:path></svg:g>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M21.75 17A4.75 4.75 0 0 1 17 21.75H7A4.75 4.75 0 0 1 2.25 17V7A4.75 4.75 0 0 1 7 2.25h10A4.75 4.75 0 0 1 21.75 7zM7 16.75a.75.75 0 0 1-.75-.75V8a.75.75 0 0 1 1.5 0v7.25H11a.75.75 0 0 1 0 1.5zm6.25-.75a.75.75 0 0 0 1.5 0v-2.998l.003-.045a2 2 0 0 1 .265-.82c.235-.392.736-.887 1.982-.887a.75.75 0 0 0 0-1.5c-.973 0-1.713.232-2.268.586a.75.75 0 0 0-1.482.164z" clip-rule="evenodd"></svg:path>`,
 })
-export class IconoirAdobeLightroomIcon {
+export class IconoirAdobeLightroomSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

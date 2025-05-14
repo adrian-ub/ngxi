@@ -19,6 +19,23 @@ export class WebsymbolArchiveIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[websymbolArrowsCwIcon],svg[websymbol-arrows-cw-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M707 150L857 0v405H452l153-153q-77-62-176-62q-111 0-193.5 76T144 452H1q9-170 133-287T429 48q157 0 278 102M429 810q111 0 193-76t91-186h143q-9 170-133 287T429 952q-158 0-279-102L0 1000V595h405L252 748q78 62 177 62"></svg:path>`,
+})
+export class WebsymbolArrowsCwIcon {
+  readonly viewBox = input("0 0 857 1000")
+  readonly width = input("0.86em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[websymbolAttachIcon],svg[websymbol-attach-icon]',
   host: {
     role: 'img',
@@ -48,23 +65,6 @@ export class WebsymbolAttachIcon {
 export class WebsymbolAttentionIcon {
   readonly viewBox = input("0 0 1113 1000")
   readonly width = input("1.12em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[websymbolArrowsCwIcon],svg[websymbol-arrows-cw-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M707 150L857 0v405H452l153-153q-77-62-176-62q-111 0-193.5 76T144 452H1q9-170 133-287T429 48q157 0 278 102M429 810q111 0 193-76t91-186h143q-9 170-133 287T429 952q-158 0-279-102L0 1000V595h405L252 748q78 62 177 62"></svg:path>`,
-})
-export class WebsymbolArrowsCwIcon {
-  readonly viewBox = input("0 0 857 1000")
-  readonly width = input("0.86em")
   readonly height = input("1em")
 }
 
@@ -104,6 +104,23 @@ export class WebsymbolCancelIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[websymbolChatIcon],svg[websymbol-chat-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1179 465q0 126-79 233.5T885 868t-296 62q-122 0-234-39l2 3L0 1001q44-59 70.5-126.5T102 769l4-38Q0 611 0 465q0-126 79-233T293.5 63T589 1t296 62t215 169t79 233m-250 0q0-29-21-50t-51-21q-29 0-50 21t-21 50q0 30 21 51t50 21q30 0 51-21t21-51m-250 0q0-29-21-50t-51-21q-29 0-50 21t-21 50q0 30 21 51t50 21q30 0 51-21t21-51m-250 0q0-29-21-50t-51-21q-29 0-50 21t-21 50q0 30 21 51t50 21q30 0 51-21t21-51"></svg:path>`,
+})
+export class WebsymbolChatIcon {
+  readonly viewBox = input("0 0 1179 1000")
+  readonly width = input("1.18em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[websymbolCancelCircleIcon],svg[websymbol-cancel-circle-icon]',
   host: {
     role: 'img',
@@ -133,23 +150,6 @@ export class WebsymbolCancelCircleIcon {
 export class WebsymbolCloudIcon {
   readonly viewBox = input("0 0 1435 1000")
   readonly width = input("1.44em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[websymbolChatIcon],svg[websymbol-chat-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1179 465q0 126-79 233.5T885 868t-296 62q-122 0-234-39l2 3L0 1001q44-59 70.5-126.5T102 769l4-38Q0 611 0 465q0-126 79-233T293.5 63T589 1t296 62t215 169t79 233m-250 0q0-29-21-50t-51-21q-29 0-50 21t-21 50q0 30 21 51t50 21q30 0 51-21t21-51m-250 0q0-29-21-50t-51-21q-29 0-50 21t-21 50q0 30 21 51t50 21q30 0 51-21t21-51m-250 0q0-29-21-50t-51-21q-29 0-50 21t-21 50q0 30 21 51t50 21q30 0 51-21t21-51"></svg:path>`,
-})
-export class WebsymbolChatIcon {
-  readonly viewBox = input("0 0 1179 1000")
-  readonly width = input("1.18em")
   readonly height = input("1em")
 }
 
@@ -189,23 +189,6 @@ export class WebsymbolCodeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[websymbolCogIcon],svg[websymbol-cog-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1000 429v142l-185 26q-10 27-21 50l120 157l-102 100l-159-118q-20 10-51 21l-30 194H429l-27-197q-21-7-43-18L198 905L97 805l121-160q-11-21-19-46L0 571V429l199-28q7-21 19-45L98 197L199 97l160 119q15-8 47-20L434 1h143l28 195q22 7 48 19L811 98l102 100l-119 156q13 27 20 48zm-348 72q0-60-43-102t-103-42t-102.5 42T361 501t42.5 102T506 645t103-42t43-102"></svg:path>`,
-})
-export class WebsymbolCogIcon {
-  readonly viewBox = input("0 0 1000 1000")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[websymbolCommentIcon],svg[websymbol-comment-icon]',
   host: {
     role: 'img',
@@ -223,6 +206,23 @@ export class WebsymbolCommentIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[websymbolCogIcon],svg[websymbol-cog-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1000 429v142l-185 26q-10 27-21 50l120 157l-102 100l-159-118q-20 10-51 21l-30 194H429l-27-197q-21-7-43-18L198 905L97 805l121-160q-11-21-19-46L0 571V429l199-28q7-21 19-45L98 197L199 97l160 119q15-8 47-20L434 1h143l28 195q22 7 48 19L811 98l102 100l-119 156q13 27 20 48zm-348 72q0-60-43-102t-103-42t-102.5 42T361 501t42.5 102T506 645t103-42t43-102"></svg:path>`,
+})
+export class WebsymbolCogIcon {
+  readonly viewBox = input("0 0 1000 1000")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[websymbolCommentAltIcon],svg[websymbol-comment-alt-icon]',
   host: {
     role: 'img',
@@ -235,6 +235,23 @@ export class WebsymbolCommentIcon {
 export class WebsymbolCommentAltIcon {
   readonly viewBox = input("0 0 1179 1000")
   readonly width = input("1.18em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[websymbolDocIcon],svg[websymbol-doc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m560 1l200 200l-1 800H0V1zM160 841h440V281H480V161H160z"></svg:path>`,
+})
+export class WebsymbolDocIcon {
+  readonly viewBox = input("0 0 760 1000")
+  readonly width = input("0.76em")
   readonly height = input("1em")
 }
 
@@ -269,23 +286,6 @@ export class WebsymbolCwCircleIcon {
 export class WebsymbolDocsLandscapeIcon {
   readonly viewBox = input("0 0 989 1000")
   readonly width = input("0.99em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[websymbolDocIcon],svg[websymbol-doc-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m560 1l200 200l-1 800H0V1zM160 841h440V281H480V161H160z"></svg:path>`,
-})
-export class WebsymbolDocIcon {
-  readonly viewBox = input("0 0 760 1000")
-  readonly width = input("0.76em")
   readonly height = input("1em")
 }
 

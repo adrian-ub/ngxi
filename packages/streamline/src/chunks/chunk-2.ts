@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[streamlineInterfaceHome3HomeHouseMapRoofIcon],svg[streamline-interface-home-3-home-house-map-roof-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M.5 7L7 .5L13.5 7m-11 1.5v5h9v-5"></svg:path>`,
+})
+export class StreamlineInterfaceHome3HomeHouseMapRoofIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[streamlineInterfaceHome4DoorEntrnaceMapIcon],svg[streamline-interface-home-4-door-entrnace-map-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class StreamlineProductionBeltIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:rect width="13" height="13" x=".5" y=".5" rx="1"></svg:rect><svg:path d="M.5 3.5h13m-4 5h-5M7 6v5"></svg:path></svg:g>`,
 })
 export class StreamlineProgrammingBrowserAddAppCodeAppsAddProgrammingWindowPlusIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineProgrammingBrowserBuildBuildWebsiteDevelopmentWindowCodeProgrammingWebBackendBrowserDevIcon],svg[streamline-programming-browser-build-build-website-development-window-code-programming-web-backend-browser-dev-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M13.5 7.5v5a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1h4v7Zm-13-4h13m-3.5 4v-7"></svg:path>`,
-})
-export class StreamlineProgrammingBrowserBuildBuildWebsiteDevelopmentWindowCodeProgrammingWebBackendBrowserDevIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

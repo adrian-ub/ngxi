@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[uil12PlusIcon],svg[uil-12-plus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 9a1 1 0 0 0 2 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a3 3 0 0 0-3 3v3a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2h-4v-2a1 1 0 0 1 1-1h1a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-1a3 3 0 0 0-3 3m7-4h1v1a1 1 0 0 0 2 0V5h1a1 1 0 0 0 0-2h-1V2a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2M7 7v10a1 1 0 0 0 2 0V7a1 1 0 0 0-2 0m14.6 2a1 1 0 0 0-.78 1.18a9 9 0 1 1-7-7a1 1 0 1 0 .4-2A10.8 10.8 0 0 0 12 1a11 11 0 1 0 11 11a10.8 10.8 0 0 0-.22-2.2A1 1 0 0 0 21.6 9"></svg:path>`,
+})
+export class Uil12PlusIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[uil0PlusIcon],svg[uil-0-plus-icon]',
   host: {
     role: 'img',
@@ -36,6 +53,23 @@ export class Uil17PlusIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[uil10PlusIcon],svg[uil-10-plus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18 5h1v1a1 1 0 0 0 2 0V5h1a1 1 0 0 0 0-2h-1V2a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2m-7 4v6a3 3 0 0 0 3 3h1a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-1a3 3 0 0 0-3 3m5 0v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1m5.6 0a1 1 0 0 0-.78 1.18a9 9 0 1 1-7-7a1 1 0 1 0 .4-2A10.8 10.8 0 0 0 12 1a11 11 0 1 0 11 11a10.8 10.8 0 0 0-.22-2.2A1 1 0 0 0 21.6 9M7 7v10a1 1 0 0 0 2 0V7a1 1 0 0 0-2 0"></svg:path>`,
+})
+export class Uil10PlusIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[uil16PlusIcon],svg[uil-16-plus-icon]',
   host: {
     role: 'img',
@@ -46,6 +80,23 @@ export class Uil17PlusIcon {
   template: `<svg:path fill="currentColor" d="M18 5h1v1a1 1 0 0 0 2 0V5h1a1 1 0 0 0 0-2h-1V2a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2m3.6 4a1 1 0 0 0-.78 1.18a9 9 0 1 1-7-7a1 1 0 1 0 .4-2A10.8 10.8 0 0 0 12 1a11 11 0 1 0 11 11a10.8 10.8 0 0 0-.22-2.2A1 1 0 0 0 21.6 9M7 7v10a1 1 0 0 0 2 0V7a1 1 0 0 0-2 0m4 2v6a3 3 0 0 0 3 3h1a3 3 0 0 0 3-3v-1a3 3 0 0 0-3-3h-2V9a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1a1 1 0 0 0 2 0a3 3 0 0 0-3-3h-1a3 3 0 0 0-3 3m4 4a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-2Z"></svg:path>`,
 })
 export class Uil16PlusIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uil18PlusIcon],svg[uil-18-plus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18 5h1v1a1 1 0 0 0 2 0V5h1a1 1 0 0 0 0-2h-1V2a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2M7 7v10a1 1 0 0 0 2 0V7a1 1 0 0 0-2 0m14.6 2a1 1 0 0 0-.78 1.18a9 9 0 1 1-7-7a1 1 0 1 0 .4-2A10.8 10.8 0 0 0 12 1a11 11 0 1 0 11 11a10.8 10.8 0 0 0-.22-2.2A1 1 0 0 0 21.6 9M11 9v1a3 3 0 0 0 .78 2a3 3 0 0 0-.78 2v1a3 3 0 0 0 3 3h1a3 3 0 0 0 3-3v-1a3 3 0 0 0-.78-2a3 3 0 0 0 .78-2V9a3 3 0 0 0-3-3h-1a3 3 0 0 0-3 3m5 6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1Zm0-6v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1"></svg:path>`,
+})
+export class Uil18PlusIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -80,23 +131,6 @@ export class Uil13PlusIcon {
   template: `<svg:path fill="currentColor" d="M17 18a1 1 0 0 0 1-1V7a1 1 0 0 0-2 0v10a1 1 0 0 0 1 1m1-13h1v1a1 1 0 0 0 2 0V5h1a1 1 0 0 0 0-2h-1V2a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2m3.6 4a1 1 0 0 0-.78 1.18a9 9 0 1 1-7-7a1 1 0 1 0 .4-2A10.8 10.8 0 0 0 12 1a11 11 0 1 0 11 11a10.8 10.8 0 0 0-.22-2.2A1 1 0 0 0 21.6 9M10 13h1a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-1a3 3 0 0 0-3 3a1 1 0 0 0 2 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a3 3 0 0 0-3 3v3a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2H9v-2a1 1 0 0 1 1-1"></svg:path>`,
 })
 export class Uil21PlusIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[uil18PlusIcon],svg[uil-18-plus-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18 5h1v1a1 1 0 0 0 2 0V5h1a1 1 0 0 0 0-2h-1V2a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2M7 7v10a1 1 0 0 0 2 0V7a1 1 0 0 0-2 0m14.6 2a1 1 0 0 0-.78 1.18a9 9 0 1 1-7-7a1 1 0 1 0 .4-2A10.8 10.8 0 0 0 12 1a11 11 0 1 0 11 11a10.8 10.8 0 0 0-.22-2.2A1 1 0 0 0 21.6 9M11 9v1a3 3 0 0 0 .78 2a3 3 0 0 0-.78 2v1a3 3 0 0 0 3 3h1a3 3 0 0 0 3-3v-1a3 3 0 0 0-.78-2a3 3 0 0 0 .78-2V9a3 3 0 0 0-3-3h-1a3 3 0 0 0-3 3m5 6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1Zm0-6v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1"></svg:path>`,
-})
-export class Uil18PlusIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -155,23 +189,6 @@ export class Uil6PlusIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uil12PlusIcon],svg[uil-12-plus-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11 9a1 1 0 0 0 2 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a3 3 0 0 0-3 3v3a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2h-4v-2a1 1 0 0 1 1-1h1a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-1a3 3 0 0 0-3 3m7-4h1v1a1 1 0 0 0 2 0V5h1a1 1 0 0 0 0-2h-1V2a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2M7 7v10a1 1 0 0 0 2 0V7a1 1 0 0 0-2 0m14.6 2a1 1 0 0 0-.78 1.18a9 9 0 1 1-7-7a1 1 0 1 0 .4-2A10.8 10.8 0 0 0 12 1a11 11 0 1 0 11 11a10.8 10.8 0 0 0-.22-2.2A1 1 0 0 0 21.6 9"></svg:path>`,
-})
-export class Uil12PlusIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[uilAbacusIcon],svg[uil-abacus-icon]',
   host: {
     role: 'img',
@@ -182,23 +199,6 @@ export class Uil12PlusIcon {
   template: `<svg:path fill="currentColor" d="M21 2a1 1 0 0 0-1 1v3h-4V5a1 1 0 0 0-2 0v1h-2V5a1 1 0 0 0-2 0v1H8V5a1 1 0 0 0-2 0v1H4V3a1 1 0 0 0-2 0v16a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V3a1 1 0 0 0-1-1m-1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3h2v1a1 1 0 0 0 2 0v-1h2v1a1 1 0 0 0 2 0v-1h4v1a1 1 0 0 0 2 0v-1h2Zm0-5h-2v-1a1 1 0 0 0-2 0v1h-4v-1a1 1 0 0 0-2 0v1H8v-1a1 1 0 0 0-2 0v1H4V8h2v1a1 1 0 0 0 2 0V8h2v1a1 1 0 0 0 2 0V8h2v1a1 1 0 0 0 2 0V8h4Z"></svg:path>`,
 })
 export class UilAbacusIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[uil10PlusIcon],svg[uil-10-plus-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18 5h1v1a1 1 0 0 0 2 0V5h1a1 1 0 0 0 0-2h-1V2a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2m-7 4v6a3 3 0 0 0 3 3h1a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-1a3 3 0 0 0-3 3m5 0v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1m5.6 0a1 1 0 0 0-.78 1.18a9 9 0 1 1-7-7a1 1 0 1 0 .4-2A10.8 10.8 0 0 0 12 1a11 11 0 1 0 11 11a10.8 10.8 0 0 0-.22-2.2A1 1 0 0 0 21.6 9M7 7v10a1 1 0 0 0 2 0V7a1 1 0 0 0-2 0"></svg:path>`,
-})
-export class Uil10PlusIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,23 +240,6 @@ export class UilAdjustIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uilAdjustAltIcon],svg[uil-adjust-alt-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20.83 7.32a.2.2 0 0 0 0-.08a10 10 0 0 0-3.38-3.65A9.9 9.9 0 0 0 12 2a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h.28a10 10 0 0 0 8.55-14.68M13 4.06a8 8 0 0 1 2.49.74L13 9.12Zm0 9.06l4.17-7.22a7.9 7.9 0 0 1 1.58 1.83L13 17.69Zm1.16 6.57L19.75 10a8.4 8.4 0 0 1 .25 2a7.94 7.94 0 0 1-5.84 7.69"></svg:path>`,
-})
-export class UilAdjustAltIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[uilAdjustCircleIcon],svg[uil-adjust-circle-icon]',
   host: {
     role: 'img',
@@ -274,23 +257,6 @@ export class UilAdjustCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uilAdjustHalfIcon],svg[uil-adjust-half-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20.83 7.32a10.1 10.1 0 0 0-3.44-3.73A10 10 0 1 0 12 22h.29a10 10 0 0 0 8.54-14.68M11 19.93a8 8 0 0 1 0-15.86Zm2-15.86a8 8 0 0 1 2.49.74L13 9.12Zm0 9l4.17-7.17a8.1 8.1 0 0 1 1.58 1.83L13 17.69Zm1.15 6.58L19.74 10a8.2 8.2 0 0 1 .26 2a8 8 0 0 1-5.85 7.7Z"></svg:path>`,
-})
-export class UilAdjustHalfIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[uilAdobeIcon],svg[uil-adobe-icon]',
   host: {
     role: 'img',
@@ -301,6 +267,40 @@ export class UilAdjustHalfIcon {
   template: `<svg:path fill="currentColor" d="M9.07 17.28h2.78l1.75 3.44h2.54L12 9.87ZM2 3v18L9.42 3Zm12.48 0L22 20.81V3Z"></svg:path>`,
 })
 export class UilAdobeIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uilAdjustAltIcon],svg[uil-adjust-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.83 7.32a.2.2 0 0 0 0-.08a10 10 0 0 0-3.38-3.65A9.9 9.9 0 0 0 12 2a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h.28a10 10 0 0 0 8.55-14.68M13 4.06a8 8 0 0 1 2.49.74L13 9.12Zm0 9.06l4.17-7.22a7.9 7.9 0 0 1 1.58 1.83L13 17.69Zm1.16 6.57L19.75 10a8.4 8.4 0 0 1 .25 2a7.94 7.94 0 0 1-5.84 7.69"></svg:path>`,
+})
+export class UilAdjustAltIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uilAdjustHalfIcon],svg[uil-adjust-half-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.83 7.32a10.1 10.1 0 0 0-3.44-3.73A10 10 0 1 0 12 22h.29a10 10 0 0 0 8.54-14.68M11 19.93a8 8 0 0 1 0-15.86Zm2-15.86a8 8 0 0 1 2.49.74L13 9.12Zm0 9l4.17-7.17a8.1 8.1 0 0 1 1.58 1.83L13 17.69Zm1.15 6.58L19.74 10a8.2 8.2 0 0 1 .26 2a8 8 0 0 1-5.85 7.7Z"></svg:path>`,
+})
+export class UilAdjustHalfIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

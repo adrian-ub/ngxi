@@ -206,23 +206,6 @@ export class LsAUpperCaseIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[lsAdjustIcon],svg[ls-adjust-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M358 0c198 0 359 161 359 359S556 717 358 717S0 557 0 359S160 0 358 0m0 63v592c164 0 296-132 296-296S522 63 358 63"></svg:path>`,
-})
-export class LsAdjustIcon {
-  readonly viewBox = input("0 0 717 717")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[lsAddstarIcon],svg[ls-addstar-icon]',
   host: {
     role: 'img',
@@ -240,18 +223,35 @@ export class LsAddstarIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[lsAimIcon],svg[ls-aim-icon]',
+  selector: 'svg[lsAdjustIcon],svg[ls-adjust-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M447 51c25 25 37 54 37 88c0 29-8 55-26 77c-17 22-40 37-67 44c33 4 64-2 93-17l21-13l58 133l-18 10c-45 25-85 40-119 45c57 45 103 104 136 178l7 16l-133 79l-11-19c-22-50-65-92-128-123c-25 34-50 61-74 78c-38 29-86 50-145 62l-19 5L0 533l45-7c12-4 24-8 37-15c38-18 65-46 83-83c2-3 3-12 4-24c7-89 38-152 91-190c-17-22-25-47-25-75c0-34 12-63 37-88c24-25 53-37 88-37c34 0 63 12 87 37m61 294l-24-55c-46 19-90 22-132 8l-9-3l-4-10q-1.5-6-3-18v-5c-17-4-30-9-43-18q-39 22.5-57 60c-13 25-21 60-25 104c-2 20-4 33-8 39c-29 61-77 101-145 119l28 78c47-11 87-30 117-55c19-15 39-38 63-69l10-13c3-4 8-6 14-6c3 0 7 1 9 3c72 31 124 73 154 128l62-36c-30-58-68-107-116-145c-15-11-30-22-46-30l-21-11c-7-3-10-9-9-18c2-14 8-21 20-21l13 2l62 3c26-3 56-13 90-31M360 60c-22 0-41 7-57 23s-24 34-24 56s8 41 24 56q24 24 57 24c33 0 40-8 56-24c16-15 24-34 24-56s-8-40-24-56s-34-23-56-23"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M358 0c198 0 359 161 359 359S556 717 358 717S0 557 0 359S160 0 358 0m0 63v592c164 0 296-132 296-296S522 63 358 63"></svg:path>`,
 })
-export class LsAimIcon {
-  readonly viewBox = input("0 0 569 694")
-  readonly width = input("0.82em")
+export class LsAdjustIcon {
+  readonly viewBox = input("0 0 717 717")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lsAlignadjustIcon],svg[ls-alignadjust-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M29 50h609c15 0 28 13 28 27v41c0 16-13 29-28 29H29c-16 0-29-13-29-29V77c0-15 13-27 29-27m0 166h609c15 0 28 12 28 26v42c0 15-13 28-28 28H29c-16 0-29-13-29-28v-42c0-14 13-26 29-26m0 166h609c15 0 28 12 28 26v42c0 15-13 28-28 28H29c-16 0-29-13-29-28v-42c0-14 13-26 29-26m0 164h609c15 0 28 14 28 28v41c0 16-13 29-28 29H29c-16 0-29-13-29-29v-41c0-15 13-28 29-28"></svg:path>`,
+})
+export class LsAlignadjustIcon {
+  readonly viewBox = input("0 0 666 644")
+  readonly width = input("1.04em")
   readonly height = input("1em")
 }
 
@@ -274,18 +274,18 @@ export class LsAlbumIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[lsAlignadjustIcon],svg[ls-alignadjust-icon]',
+  selector: 'svg[lsAimIcon],svg[ls-aim-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M29 50h609c15 0 28 13 28 27v41c0 16-13 29-28 29H29c-16 0-29-13-29-29V77c0-15 13-27 29-27m0 166h609c15 0 28 12 28 26v42c0 15-13 28-28 28H29c-16 0-29-13-29-28v-42c0-14 13-26 29-26m0 166h609c15 0 28 12 28 26v42c0 15-13 28-28 28H29c-16 0-29-13-29-28v-42c0-14 13-26 29-26m0 164h609c15 0 28 14 28 28v41c0 16-13 29-28 29H29c-16 0-29-13-29-29v-41c0-15 13-28 29-28"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M447 51c25 25 37 54 37 88c0 29-8 55-26 77c-17 22-40 37-67 44c33 4 64-2 93-17l21-13l58 133l-18 10c-45 25-85 40-119 45c57 45 103 104 136 178l7 16l-133 79l-11-19c-22-50-65-92-128-123c-25 34-50 61-74 78c-38 29-86 50-145 62l-19 5L0 533l45-7c12-4 24-8 37-15c38-18 65-46 83-83c2-3 3-12 4-24c7-89 38-152 91-190c-17-22-25-47-25-75c0-34 12-63 37-88c24-25 53-37 88-37c34 0 63 12 87 37m61 294l-24-55c-46 19-90 22-132 8l-9-3l-4-10q-1.5-6-3-18v-5c-17-4-30-9-43-18q-39 22.5-57 60c-13 25-21 60-25 104c-2 20-4 33-8 39c-29 61-77 101-145 119l28 78c47-11 87-30 117-55c19-15 39-38 63-69l10-13c3-4 8-6 14-6c3 0 7 1 9 3c72 31 124 73 154 128l62-36c-30-58-68-107-116-145c-15-11-30-22-46-30l-21-11c-7-3-10-9-9-18c2-14 8-21 20-21l13 2l62 3c26-3 56-13 90-31M360 60c-22 0-41 7-57 23s-24 34-24 56s8 41 24 56q24 24 57 24c33 0 40-8 56-24c16-15 24-34 24-56s-8-40-24-56s-34-23-56-23"></svg:path>`,
 })
-export class LsAlignadjustIcon {
-  readonly viewBox = input("0 0 666 644")
-  readonly width = input("1.04em")
+export class LsAimIcon {
+  readonly viewBox = input("0 0 569 694")
+  readonly width = input("0.82em")
   readonly height = input("1em")
 }
 

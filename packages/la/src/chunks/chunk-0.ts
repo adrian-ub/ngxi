@@ -53,16 +53,16 @@ export class La500pxIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[laAddressBookIcon],svg[la-address-book-icon]',
+  selector: 'svg[laAcquisitionsIncorporatedIcon],svg[la-acquisitions-incorporated-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M6 4v5H5v2h3V6h16v20H8v-3H6v5h20V4zm10 6c-2.2 0-4 1.8-4 4c0 1.113.477 2.117 1.219 2.844A5.04 5.04 0 0 0 11 21h2a3 3 0 0 1 6 0h2a5.04 5.04 0 0 0-2.219-4.156C19.523 16.117 20 15.114 20 14c0-2.2-1.8-4-4-4M6 12v2H5v2h3v-4zm10 0c1.117 0 2 .883 2 2s-.883 2-2 2s-2-.883-2-2s.883-2 2-2M6 17v2H5v2h3v-4z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M7.248 3c-.188 0-.276.057-.24.27c.115.67-.042.04.334 2.298c3.307 0 3.745.047 5.31.026c.642-.01 1.93.179 1.967 1.123c.021.579-.057.572-1.701 4.435c-2.807 6.59-2.646 6.108-3.512 8.174c-.088.208-.185.264-.394.264c-.443-.01-.888-.014-1.326.006c-.1.005-.272.09-.288.162c-.077.405-.113.813-.164 1.242H13v-1.38c-.36 0-1.552.02-1.646-.147c.276-.624.542-1.24.818-1.864c.85.203 1.78.396 2.6.594c.176.046.24.153.24.346c-.005 2.178.004 4.36.01 6.539c0 .518-.288.97-.778 1.174c-.339.137-.288.172-6.45.12c-.275 0-.37.104-.396.347c-.078.655-.15 1.313-.26 1.968c-.041.254.068.29.276.29c9.557.03-1.603 0 17.584 0c-.13-.762-.23-1.491-.344-2.217c-.062-.392-.067-.387-.5-.387c-5.206.01-6.03-.123-6.078-.133c-.642-.086-1.075-.534-1.096-1.174c-.005-.08-.01-3.634-.052-6.553c-.005-.239.083-.324.308-.38c.652-.152 1.5-.31 2.147-.493c.224-.066.354-.01.437.178c.235.523.46 1.045.69 1.568c.083.188.004.223-.178.223c-.522-.01-.788-.004-1.33-.004v1.371h5.797c-.073-.482-.141-.92-.21-1.396c-.364 0-.72.02-1.064-.004c-1.179-.081-.955-.225-4.382-8.053c-.46-1.02-1.456-3.151-1.905-4.527c-.229-.711.288-1.289.987-1.35c.97-.086 1.955-.08 2.931-.101c1.075-.02 2.15-.02 3.225-.026c.162 0 .21-.071.224-.218c.063-.497.141-.99.21-1.483l.124-.816zm8.576 5.838c.391.122.412-.041.49 0c.485 1.142.944 3.051 1.409 4.203c.344.848.679 1.701 1.029 2.584q-.098.06-.203.107c-.683.198-1.379.381-2.057.594c-.312.106-.65.106-.96 0c-.695-.213-1.388-.416-2.08-.635a2.4 2.4 0 0 1-.304-.146z"></svg:path>`,
 })
-export class LaAddressBookIcon {
+export class LaAcquisitionsIncorporatedIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,40 +87,6 @@ export class LaAdIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[laAddressCardIcon],svg[la-address-card-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 6v20h26V6zm2 2h22v16h-3.406c-.078-.137-.043-.324-.157-.438C23.06 23.184 22.523 23 22 23s-1.059.184-1.438.563c-.113.113-.078.3-.156.437h-8.812c-.078-.137-.043-.324-.156-.438c-.38-.378-.915-.562-1.438-.562s-1.059.184-1.438.563c-.113.113-.078.3-.156.437H5zm7 2c-2.2 0-4 1.8-4 4c0 1.113.477 2.117 1.219 2.844A5.04 5.04 0 0 0 7 21h2a3 3 0 0 1 6 0h2a5.04 5.04 0 0 0-2.219-4.156C15.523 16.117 16 15.114 16 14c0-2.2-1.8-4-4-4m0 2c1.117 0 2 .883 2 2s-.883 2-2 2s-2-.883-2-2s.883-2 2-2m7 1v2h6v-2zm0 4v2h6v-2z"></svg:path>`,
-})
-export class LaAddressCardIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[laAddressCardSolidIcon],svg[la-address-card-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 6v20h26V6zm2 2h22v16h-3.406c-.078-.137-.043-.324-.157-.438C23.06 23.184 22.523 23 22 23s-1.059.184-1.438.563c-.113.113-.078.3-.156.437h-8.812c-.078-.137-.043-.324-.156-.438c-.38-.378-.915-.562-1.438-.562s-1.059.184-1.438.563c-.113.113-.078.3-.156.437H5zm7 2c-2.2 0-4 1.8-4 4c0 1.113.477 2.117 1.219 2.844A5.04 5.04 0 0 0 7 21h2a3 3 0 0 1 6 0h2a5.04 5.04 0 0 0-2.219-4.156C15.523 16.117 16 15.114 16 14c0-2.2-1.8-4-4-4m0 2c1.117 0 2 .883 2 2s-.883 2-2 2s-2-.883-2-2s.883-2 2-2m7 1v2h6v-2zm0 4v2h6v-2z"></svg:path>`,
-})
-export class LaAddressCardSolidIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[laAddressBookSolidIcon],svg[la-address-book-solid-icon]',
   host: {
     role: 'img',
@@ -138,6 +104,40 @@ export class LaAddressBookSolidIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[laAddressBookIcon],svg[la-address-book-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 4v5H5v2h3V6h16v20H8v-3H6v5h20V4zm10 6c-2.2 0-4 1.8-4 4c0 1.113.477 2.117 1.219 2.844A5.04 5.04 0 0 0 11 21h2a3 3 0 0 1 6 0h2a5.04 5.04 0 0 0-2.219-4.156C19.523 16.117 20 15.114 20 14c0-2.2-1.8-4-4-4M6 12v2H5v2h3v-4zm10 0c1.117 0 2 .883 2 2s-.883 2-2 2s-2-.883-2-2s.883-2 2-2M6 17v2H5v2h3v-4z"></svg:path>`,
+})
+export class LaAddressBookIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[laAddressCardIcon],svg[la-address-card-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 6v20h26V6zm2 2h22v16h-3.406c-.078-.137-.043-.324-.157-.438C23.06 23.184 22.523 23 22 23s-1.059.184-1.438.563c-.113.113-.078.3-.156.437h-8.812c-.078-.137-.043-.324-.156-.438c-.38-.378-.915-.562-1.438-.562s-1.059.184-1.438.563c-.113.113-.078.3-.156.437H5zm7 2c-2.2 0-4 1.8-4 4c0 1.113.477 2.117 1.219 2.844A5.04 5.04 0 0 0 7 21h2a3 3 0 0 1 6 0h2a5.04 5.04 0 0 0-2.219-4.156C15.523 16.117 16 15.114 16 14c0-2.2-1.8-4-4-4m0 2c1.117 0 2 .883 2 2s-.883 2-2 2s-2-.883-2-2s.883-2 2-2m7 1v2h6v-2zm0 4v2h6v-2z"></svg:path>`,
+})
+export class LaAddressCardIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[laAdjustIcon],svg[la-adjust-icon]',
   host: {
     role: 'img',
@@ -148,6 +148,23 @@ export class LaAddressBookSolidIcon {
   template: `<svg:path fill="currentColor" d="M16 4C9.383 4 4 9.383 4 16s5.383 12 12 12s12-5.383 12-12S22.617 4 16 4m0 2v20c-5.535 0-10-4.465-10-10S10.465 6 16 6"></svg:path>`,
 })
 export class LaAdjustIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[laAddressCardSolidIcon],svg[la-address-card-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 6v20h26V6zm2 2h22v16h-3.406c-.078-.137-.043-.324-.157-.438C23.06 23.184 22.523 23 22 23s-1.059.184-1.438.563c-.113.113-.078.3-.156.437h-8.812c-.078-.137-.043-.324-.156-.438c-.38-.378-.915-.562-1.438-.562s-1.059.184-1.438.563c-.113.113-.078.3-.156.437H5zm7 2c-2.2 0-4 1.8-4 4c0 1.113.477 2.117 1.219 2.844A5.04 5.04 0 0 0 7 21h2a3 3 0 0 1 6 0h2a5.04 5.04 0 0 0-2.219-4.156C15.523 16.117 16 15.114 16 14c0-2.2-1.8-4-4-4m0 2c1.117 0 2 .883 2 2s-.883 2-2 2s-2-.883-2-2s.883-2 2-2m7 1v2h6v-2zm0 4v2h6v-2z"></svg:path>`,
+})
+export class LaAddressCardSolidIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,40 +223,6 @@ export class LaAdversalIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[laAcquisitionsIncorporatedIcon],svg[la-acquisitions-incorporated-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7.248 3c-.188 0-.276.057-.24.27c.115.67-.042.04.334 2.298c3.307 0 3.745.047 5.31.026c.642-.01 1.93.179 1.967 1.123c.021.579-.057.572-1.701 4.435c-2.807 6.59-2.646 6.108-3.512 8.174c-.088.208-.185.264-.394.264c-.443-.01-.888-.014-1.326.006c-.1.005-.272.09-.288.162c-.077.405-.113.813-.164 1.242H13v-1.38c-.36 0-1.552.02-1.646-.147c.276-.624.542-1.24.818-1.864c.85.203 1.78.396 2.6.594c.176.046.24.153.24.346c-.005 2.178.004 4.36.01 6.539c0 .518-.288.97-.778 1.174c-.339.137-.288.172-6.45.12c-.275 0-.37.104-.396.347c-.078.655-.15 1.313-.26 1.968c-.041.254.068.29.276.29c9.557.03-1.603 0 17.584 0c-.13-.762-.23-1.491-.344-2.217c-.062-.392-.067-.387-.5-.387c-5.206.01-6.03-.123-6.078-.133c-.642-.086-1.075-.534-1.096-1.174c-.005-.08-.01-3.634-.052-6.553c-.005-.239.083-.324.308-.38c.652-.152 1.5-.31 2.147-.493c.224-.066.354-.01.437.178c.235.523.46 1.045.69 1.568c.083.188.004.223-.178.223c-.522-.01-.788-.004-1.33-.004v1.371h5.797c-.073-.482-.141-.92-.21-1.396c-.364 0-.72.02-1.064-.004c-1.179-.081-.955-.225-4.382-8.053c-.46-1.02-1.456-3.151-1.905-4.527c-.229-.711.288-1.289.987-1.35c.97-.086 1.955-.08 2.931-.101c1.075-.02 2.15-.02 3.225-.026c.162 0 .21-.071.224-.218c.063-.497.141-.99.21-1.483l.124-.816zm8.576 5.838c.391.122.412-.041.49 0c.485 1.142.944 3.051 1.409 4.203c.344.848.679 1.701 1.029 2.584q-.098.06-.203.107c-.683.198-1.379.381-2.057.594c-.312.106-.65.106-.96 0c-.695-.213-1.388-.416-2.08-.635a2.4 2.4 0 0 1-.304-.146z"></svg:path>`,
-})
-export class LaAcquisitionsIncorporatedIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[laAffiliatethemeIcon],svg[la-affiliatetheme-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.104 5c-1.867.016-4.728 1.95-7.067 4.955c-2.879 3.7-3.89 7.604-2.256 8.74c1.634 1.126 5.303-.962 8.182-4.66s3.89-7.602 2.256-8.728c-.307-.211-.685-.31-1.115-.307m17.88 6c-3.8 6.359-9.896 9.542-13.625 7.266c-1.284-.786-2.074-2.451-2.365-4.266c-1.976 3.66-5.786 6.903-9.994 8c2.681 3.188 6.838 5 11.314 5c8.087 0 14.647-6.622 14.647-14.799c.01-.459.066-.764.023-1.201"></svg:path>`,
-})
-export class LaAffiliatethemeIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[laAirFreshenerIcon],svg[la-air-freshener-icon]',
   host: {
     role: 'img',
@@ -257,16 +240,16 @@ export class LaAirFreshenerIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[laAlgoliaIcon],svg[la-algolia-icon]',
+  selector: 'svg[laAffiliatethemeIcon],svg[la-affiliatetheme-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M5 5v22h22V5zm2 2h18v18H7zm8 1a1 1 0 0 0-1 1v1.295a6.96 6.96 0 0 1 4 0V9a1 1 0 0 0-1-1zm-4.293 2a1 1 0 0 0-.707.295L9.293 11a1 1 0 0 0 0 1.414l.816.818a7 7 0 0 1 2.121-2.12l-.816-.817a1 1 0 0 0-.707-.295M16 11a6 6 0 1 0 0 12a6 6 0 0 0 0-12m0 2c2.206 0 4 1.794 4 4s-1.794 4-4 4s-4-1.794-4-4s1.794-4 4-4m0 1v3l2.594-1.482A2.99 2.99 0 0 0 16 14"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M12.104 5c-1.867.016-4.728 1.95-7.067 4.955c-2.879 3.7-3.89 7.604-2.256 8.74c1.634 1.126 5.303-.962 8.182-4.66s3.89-7.602 2.256-8.728c-.307-.211-.685-.31-1.115-.307m17.88 6c-3.8 6.359-9.896 9.542-13.625 7.266c-1.284-.786-2.074-2.451-2.365-4.266c-1.976 3.66-5.786 6.903-9.994 8c2.681 3.188 6.838 5 11.314 5c8.087 0 14.647-6.622 14.647-14.799c.01-.459.066-.764.023-1.201"></svg:path>`,
 })
-export class LaAlgoliaIcon {
+export class LaAffiliatethemeIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -308,16 +291,16 @@ export class LaAirbnbIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[laAlignJustifyIcon],svg[la-align-justify-icon]',
+  selector: 'svg[laAlgoliaIcon],svg[la-algolia-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M3 7v2h26V7zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M5 5v22h22V5zm2 2h18v18H7zm8 1a1 1 0 0 0-1 1v1.295a6.96 6.96 0 0 1 4 0V9a1 1 0 0 0-1-1zm-4.293 2a1 1 0 0 0-.707.295L9.293 11a1 1 0 0 0 0 1.414l.816.818a7 7 0 0 1 2.121-2.12l-.816-.817a1 1 0 0 0-.707-.295M16 11a6 6 0 1 0 0 12a6 6 0 0 0 0-12m0 2c2.206 0 4 1.794 4 4s-1.794 4-4 4s-4-1.794-4-4s1.794-4 4-4m0 1v3l2.594-1.482A2.99 2.99 0 0 0 16 14"></svg:path>`,
 })
-export class LaAlignJustifyIcon {
+export class LaAlgoliaIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8495,6 +8478,23 @@ export class LaFileAudioSolidIcon {
   template: `<svg:path fill="currentColor" d="M6 3v26h20V9.594l-.281-.313l-6-6L19.406 3zm2 2h10v6h6v16H8zm12 1.438L22.563 9H20zM16 13l-2 12h2l2-12zm-3.781 2.375l-2.5 3l-.531.625l.53.625l2.5 3l1.563-1.25L11.812 19l1.97-2.375zm7.562 0l-1.562 1.25L20.187 19l-1.968 2.375l1.562 1.25l2.5-3l.532-.625l-.532-.625z"></svg:path>`,
 })
 export class LaFileCodeIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[laFileCodeSolidIcon],svg[la-file-code-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6 3v26h20V9.594l-.281-.313l-6-6L19.406 3zm2 2h10v6h6v16H8zm12 1.438L22.563 9H20zM16 13l-2 12h2l2-12zm-3.781 2.375l-2.5 3l-.531.625l.53.625l2.5 3l1.563-1.25L11.812 19l1.97-2.375zm7.562 0l-1.562 1.25L20.187 19l-1.968 2.375l1.562 1.25l2.5-3l.532-.625l-.532-.625z"></svg:path>`,
+})
+export class LaFileCodeSolidIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

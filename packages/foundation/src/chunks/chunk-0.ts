@@ -19,16 +19,16 @@ export class FoundationAlertIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[foundationAlignCenterIcon],svg[foundation-align-center-icon]',
+  selector: 'svg[foundationAddressBookIcon],svg[foundation-address-book-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M81.232 15.138H18.769a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407h62.463a3.407 3.407 0 0 0 3.407-3.407v-3.143a3.407 3.407 0 0 0-3.407-3.407m-5.008 26.473v-3.143a3.407 3.407 0 0 0-3.407-3.407H27.183a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407h45.634a3.41 3.41 0 0 0 3.407-3.407m1.586 33.294H22.176a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407H77.81a3.407 3.407 0 0 0 3.407-3.407h.015v-3.143h-.015a3.41 3.41 0 0 0-3.407-3.407M72.817 58.39a3.407 3.407 0 0 0-3.407-3.407H30.59a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407h38.82a3.407 3.407 0 0 0 3.407-3.407z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M81.195 31.517c1.128 0 2.042-.897 2.042-1.996V23.61c0-1.102-.914-2-2.042-2h-4.586v-1.603a3.207 3.207 0 0 0-3.206-3.207H19.97a3.206 3.206 0 0 0-3.206 3.207v59.986a3.21 3.21 0 0 0 3.206 3.206h53.432a3.21 3.21 0 0 0 3.206-3.206v-1.67h4.586c1.128 0 2.042-.894 2.042-1.996v-5.912c0-1.102-.914-2-2.042-2h-4.586v-5.699h4.586c1.128 0 2.042-.894 2.042-1.991v-5.912c0-1.102-.914-2-2.042-2h-4.586v-5.699h4.586c1.128 0 2.042-.897 2.042-1.996v-5.912c0-1.098-.914-1.996-2.042-1.996h-4.586v-5.695h4.587zM62.391 63.681c0 1.152-.804 2.088-1.795 2.088H32.75c-.992 0-1.795-.935-1.795-2.088v-8.604c0-.856.447-1.625 1.127-1.941l10.9-5.077c-2.583-1.557-4.351-4.689-4.351-8.304c0-5.168 3.599-9.356 8.041-9.356s8.042 4.188 8.042 9.356c0 3.562-1.708 6.655-4.226 8.238l10.789 5.148c.674.325 1.115 1.085 1.115 1.937v8.603z"></svg:path>`,
 })
-export class FoundationAlignCenterIcon {
+export class FoundationAddressBookIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,16 +53,16 @@ export class FoundationAlignJustifyIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[foundationAlignLeftIcon],svg[foundation-align-left-icon]',
+  selector: 'svg[foundationAlignCenterIcon],svg[foundation-align-center-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M81.232 15.138H18.769a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407h62.463a3.407 3.407 0 0 0 3.407-3.407v-3.143a3.407 3.407 0 0 0-3.407-3.407m-62.463 29.87h45.634a3.407 3.407 0 0 0 3.407-3.407v-3.143a3.407 3.407 0 0 0-3.407-3.407H18.769a3.407 3.407 0 0 0-3.407 3.407v3.143a3.406 3.406 0 0 0 3.407 3.407m55.634 29.897H18.769a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407h55.634a3.407 3.407 0 0 0 3.407-3.407h.015v-3.143h-.015a3.41 3.41 0 0 0-3.407-3.407M18.769 64.94h38.82a3.407 3.407 0 0 0 3.407-3.407V58.39a3.407 3.407 0 0 0-3.407-3.407h-38.82a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M81.232 15.138H18.769a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407h62.463a3.407 3.407 0 0 0 3.407-3.407v-3.143a3.407 3.407 0 0 0-3.407-3.407m-5.008 26.473v-3.143a3.407 3.407 0 0 0-3.407-3.407H27.183a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407h45.634a3.41 3.41 0 0 0 3.407-3.407m1.586 33.294H22.176a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407H77.81a3.407 3.407 0 0 0 3.407-3.407h.015v-3.143h-.015a3.41 3.41 0 0 0-3.407-3.407M72.817 58.39a3.407 3.407 0 0 0-3.407-3.407H30.59a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407h38.82a3.407 3.407 0 0 0 3.407-3.407z"></svg:path>`,
 })
-export class FoundationAlignLeftIcon {
+export class FoundationAlignCenterIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,50 +87,16 @@ export class FoundationAlignRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[foundationAddressBookIcon],svg[foundation-address-book-icon]',
+  selector: 'svg[foundationAlignLeftIcon],svg[foundation-align-left-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M81.195 31.517c1.128 0 2.042-.897 2.042-1.996V23.61c0-1.102-.914-2-2.042-2h-4.586v-1.603a3.207 3.207 0 0 0-3.206-3.207H19.97a3.206 3.206 0 0 0-3.206 3.207v59.986a3.21 3.21 0 0 0 3.206 3.206h53.432a3.21 3.21 0 0 0 3.206-3.206v-1.67h4.586c1.128 0 2.042-.894 2.042-1.996v-5.912c0-1.102-.914-2-2.042-2h-4.586v-5.699h4.586c1.128 0 2.042-.894 2.042-1.991v-5.912c0-1.102-.914-2-2.042-2h-4.586v-5.699h4.586c1.128 0 2.042-.897 2.042-1.996v-5.912c0-1.098-.914-1.996-2.042-1.996h-4.586v-5.695h4.587zM62.391 63.681c0 1.152-.804 2.088-1.795 2.088H32.75c-.992 0-1.795-.935-1.795-2.088v-8.604c0-.856.447-1.625 1.127-1.941l10.9-5.077c-2.583-1.557-4.351-4.689-4.351-8.304c0-5.168 3.599-9.356 8.041-9.356s8.042 4.188 8.042 9.356c0 3.562-1.708 6.655-4.226 8.238l10.789 5.148c.674.325 1.115 1.085 1.115 1.937v8.603z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M81.232 15.138H18.769a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407h62.463a3.407 3.407 0 0 0 3.407-3.407v-3.143a3.407 3.407 0 0 0-3.407-3.407m-62.463 29.87h45.634a3.407 3.407 0 0 0 3.407-3.407v-3.143a3.407 3.407 0 0 0-3.407-3.407H18.769a3.407 3.407 0 0 0-3.407 3.407v3.143a3.406 3.406 0 0 0 3.407 3.407m55.634 29.897H18.769a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407h55.634a3.407 3.407 0 0 0 3.407-3.407h.015v-3.143h-.015a3.41 3.41 0 0 0-3.407-3.407M18.769 64.94h38.82a3.407 3.407 0 0 0 3.407-3.407V58.39a3.407 3.407 0 0 0-3.407-3.407h-38.82a3.407 3.407 0 0 0-3.407 3.407v3.143a3.407 3.407 0 0 0 3.407 3.407"></svg:path>`,
 })
-export class FoundationAddressBookIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[foundationAnchorIcon],svg[foundation-anchor-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m88.189 67.115l.007-.004l-9.393-16.27l-.009.005a1.57 1.57 0 0 0-1.376-.822c-.677 0-1.25.429-1.474 1.027l-9.158 15.862a1.56 1.56 0 0 0-.356.987c0 .873.706 1.578 1.577 1.578h2.39a27.54 27.54 0 0 1-15.42 8.6v-29.2h9.079c.871 0 1.578-.705 1.578-1.578l-.001-.008v-6.793c0-.871-.706-1.577-1.577-1.577h-9.079v-5.36c3.905-1.864 6.611-5.838 6.611-10.454c0-6.401-5.189-11.589-11.589-11.589S38.41 16.707 38.41 23.108c0 4.617 2.705 8.59 6.611 10.454v5.36h-9.08c-.871 0-1.577.706-1.577 1.576h-.001v6.803h.001a1.576 1.576 0 0 0 1.576 1.577h9.08v29.2a27.53 27.53 0 0 1-15.42-8.6h2.389c.872 0 1.578-.705 1.578-1.578c0-.287-.083-.553-.217-.785l.007-.004l-9.393-16.27l-.009.005a1.57 1.57 0 0 0-1.377-.822c-.675 0-1.246.427-1.471 1.022l-9.162 15.869c-.218.271-.354.61-.354.985c0 .873.706 1.578 1.577 1.578h4.219C23.835 80.823 36.017 88.482 50 88.482s26.165-7.658 32.611-19.003h4.218c.872 0 1.577-.705 1.577-1.578a1.56 1.56 0 0 0-.217-.786M50 29.634a6.526 6.526 0 0 1 0-13.051a6.53 6.53 0 0 1 6.526 6.527c0 3.6-2.923 6.524-6.526 6.524"></svg:path>`,
-})
-export class FoundationAnchorIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[foundationArrowDownIcon],svg[foundation-arrow-down-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m21.984 50.868l26.055 36.418a2.52 2.52 0 0 0 2.043 1.051h.006a2.52 2.52 0 0 0 2.048-1.059l25.887-36.417a2.51 2.51 0 0 0 .183-2.612a2.51 2.51 0 0 0-2.236-1.361H63.787l.001-32.709a2.514 2.514 0 0 0-2.516-2.515l-22.541.001a2.515 2.515 0 0 0-2.516 2.516v32.705H24.029c-.94 0-1.803.53-2.237 1.367a2.51 2.51 0 0 0 .192 2.615"></svg:path>`,
-})
-export class FoundationArrowDownIcon {
+export class FoundationAlignLeftIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,6 +138,23 @@ export class FoundationArchiveIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[foundationAnchorIcon],svg[foundation-anchor-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m88.189 67.115l.007-.004l-9.393-16.27l-.009.005a1.57 1.57 0 0 0-1.376-.822c-.677 0-1.25.429-1.474 1.027l-9.158 15.862a1.56 1.56 0 0 0-.356.987c0 .873.706 1.578 1.577 1.578h2.39a27.54 27.54 0 0 1-15.42 8.6v-29.2h9.079c.871 0 1.578-.705 1.578-1.578l-.001-.008v-6.793c0-.871-.706-1.577-1.577-1.577h-9.079v-5.36c3.905-1.864 6.611-5.838 6.611-10.454c0-6.401-5.189-11.589-11.589-11.589S38.41 16.707 38.41 23.108c0 4.617 2.705 8.59 6.611 10.454v5.36h-9.08c-.871 0-1.577.706-1.577 1.576h-.001v6.803h.001a1.576 1.576 0 0 0 1.576 1.577h9.08v29.2a27.53 27.53 0 0 1-15.42-8.6h2.389c.872 0 1.578-.705 1.578-1.578c0-.287-.083-.553-.217-.785l.007-.004l-9.393-16.27l-.009.005a1.57 1.57 0 0 0-1.377-.822c-.675 0-1.246.427-1.471 1.022l-9.162 15.869c-.218.271-.354.61-.354.985c0 .873.706 1.578 1.577 1.578h4.219C23.835 80.823 36.017 88.482 50 88.482s26.165-7.658 32.611-19.003h4.218c.872 0 1.577-.705 1.577-1.578a1.56 1.56 0 0 0-.217-.786M50 29.634a6.526 6.526 0 0 1 0-13.051a6.53 6.53 0 0 1 6.526 6.527c0 3.6-2.923 6.524-6.526 6.524"></svg:path>`,
+})
+export class FoundationAnchorIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[foundationArrowLeftIcon],svg[foundation-arrow-left-icon]',
   host: {
     role: 'img',
@@ -182,6 +165,23 @@ export class FoundationArchiveIcon {
   template: `<svg:path fill="currentColor" d="M49.132 21.984L12.714 48.039a2.52 2.52 0 0 0-1.051 2.043v.006a2.52 2.52 0 0 0 1.059 2.048L49.14 78.023a2.51 2.51 0 0 0 2.612.183a2.51 2.51 0 0 0 1.361-2.236V63.787l32.709.001a2.514 2.514 0 0 0 2.515-2.516l-.001-22.541a2.515 2.515 0 0 0-2.516-2.516H53.114V24.029c0-.94-.53-1.803-1.367-2.237a2.51 2.51 0 0 0-2.615.192"></svg:path>`,
 })
 export class FoundationArrowLeftIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[foundationArrowDownIcon],svg[foundation-arrow-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m21.984 50.868l26.055 36.418a2.52 2.52 0 0 0 2.043 1.051h.006a2.52 2.52 0 0 0 2.048-1.059l25.887-36.417a2.51 2.51 0 0 0 .183-2.612a2.51 2.51 0 0 0-2.236-1.361H63.787l.001-32.709a2.514 2.514 0 0 0-2.516-2.515l-22.541.001a2.515 2.515 0 0 0-2.516 2.516v32.705H24.029c-.94 0-1.803.53-2.237 1.367a2.51 2.51 0 0 0 .192 2.615"></svg:path>`,
+})
+export class FoundationArrowDownIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,23 +206,6 @@ export class FoundationArrowRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[foundationArrowUpIcon],svg[foundation-arrow-up-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M78.016 49.132L51.961 12.714a2.52 2.52 0 0 0-2.043-1.051h-.006a2.52 2.52 0 0 0-2.048 1.059L21.977 49.14a2.51 2.51 0 0 0-.183 2.612a2.51 2.51 0 0 0 2.236 1.361h12.183l-.001 32.709a2.514 2.514 0 0 0 2.516 2.515l22.541-.001a2.515 2.515 0 0 0 2.516-2.517V53.114h12.187c.94 0 1.803-.53 2.237-1.367a2.51 2.51 0 0 0-.193-2.615"></svg:path>`,
-})
-export class FoundationArrowUpIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[foundationArrowsCompressIcon],svg[foundation-arrows-compress-icon]',
   host: {
     role: 'img',
@@ -240,16 +223,16 @@ export class FoundationArrowsCompressIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[foundationArrowsInIcon],svg[foundation-arrows-in-icon]',
+  selector: 'svg[foundationArrowUpIcon],svg[foundation-arrow-up-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m35.995 89.365l4.69-28.272a1.61 1.61 0 0 0-.449-1.401l-.002-.002a1.61 1.61 0 0 0-1.406-.447L10.63 64.007c-.594.1-1.081.525-1.264 1.1a1.61 1.61 0 0 0 .395 1.628l5.513 5.513L.473 87.05a1.61 1.61 0 0 0 0 2.277l10.2 10.201a1.61 1.61 0 0 0 2.278 0l14.802-14.802l5.515 5.515a1.61 1.61 0 0 0 1.63.394a1.61 1.61 0 0 0 1.097-1.27m28.011-78.73l-4.69 28.273a1.61 1.61 0 0 0 .449 1.4l.002.003c.37.367.893.534 1.406.447l28.196-4.766a1.61 1.61 0 0 0 .869-2.728l-5.513-5.513l14.802-14.802a1.61 1.61 0 0 0 0-2.278l-10.2-10.2a1.61 1.61 0 0 0-2.278 0L72.248 15.274l-5.515-5.515a1.61 1.61 0 0 0-2.727.876m25.359 53.371l-28.271-4.69a1.61 1.61 0 0 0-1.401.449l-.003.003a1.6 1.6 0 0 0-.447 1.406l4.765 28.196c.1.594.525 1.082 1.099 1.264a1.61 1.61 0 0 0 1.629-.395l5.513-5.513l14.803 14.803a1.61 1.61 0 0 0 2.277-.002l10.201-10.2a1.61 1.61 0 0 0 0-2.278L84.727 72.248l5.516-5.515a1.612 1.612 0 0 0-.878-2.727m-78.73-28.011l28.272 4.69a1.6 1.6 0 0 0 1.401-.449l.002-.003a1.61 1.61 0 0 0 .448-1.406L35.993 10.63a1.61 1.61 0 0 0-1.099-1.264a1.6 1.6 0 0 0-1.629.395l-5.513 5.513L12.951.473a1.61 1.61 0 0 0-2.278-.001L.472 10.673a1.61 1.61 0 0 0 0 2.278l14.801 14.802l-5.515 5.515a1.612 1.612 0 0 0 .877 2.727"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M78.016 49.132L51.961 12.714a2.52 2.52 0 0 0-2.043-1.051h-.006a2.52 2.52 0 0 0-2.048 1.059L21.977 49.14a2.51 2.51 0 0 0-.183 2.612a2.51 2.51 0 0 0 2.236 1.361h12.183l-.001 32.709a2.514 2.514 0 0 0 2.516 2.515l22.541-.001a2.515 2.515 0 0 0 2.516-2.517V53.114h12.187c.94 0 1.803-.53 2.237-1.367a2.51 2.51 0 0 0-.193-2.615"></svg:path>`,
 })
-export class FoundationArrowsInIcon {
+export class FoundationArrowUpIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -267,6 +250,23 @@ export class FoundationArrowsInIcon {
   template: `<svg:path fill="currentColor" d="M5.128 67.194L.024 97.962c-.093.558.09 1.125.489 1.524l.002.003c.403.4.972.581 1.531.486l30.685-5.186a1.75 1.75 0 0 0 1.376-1.197a1.75 1.75 0 0 0-.431-1.771l-6-5.999l16.109-16.108a1.75 1.75 0 0 0 0-2.478L32.684 56.134a1.75 1.75 0 0 0-2.479 0L14.098 72.242L8.096 66.24a1.752 1.752 0 0 0-2.968.954m89.744-34.388l5.104-30.768a1.75 1.75 0 0 0-.489-1.524l-.002-.003a1.76 1.76 0 0 0-1.531-.487L67.269 5.21a1.755 1.755 0 0 0-.946 2.969l6.001 5.998l-16.109 16.109a1.753 1.753 0 0 0 0 2.48l11.102 11.101a1.75 1.75 0 0 0 2.479 0l16.107-16.108l6.001 6.001a1.76 1.76 0 0 0 1.775.43a1.76 1.76 0 0 0 1.193-1.384"></svg:path>`,
 })
 export class FoundationArrowsExpandIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[foundationArrowsInIcon],svg[foundation-arrows-in-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m35.995 89.365l4.69-28.272a1.61 1.61 0 0 0-.449-1.401l-.002-.002a1.61 1.61 0 0 0-1.406-.447L10.63 64.007c-.594.1-1.081.525-1.264 1.1a1.61 1.61 0 0 0 .395 1.628l5.513 5.513L.473 87.05a1.61 1.61 0 0 0 0 2.277l10.2 10.201a1.61 1.61 0 0 0 2.278 0l14.802-14.802l5.515 5.515a1.61 1.61 0 0 0 1.63.394a1.61 1.61 0 0 0 1.097-1.27m28.011-78.73l-4.69 28.273a1.61 1.61 0 0 0 .449 1.4l.002.003c.37.367.893.534 1.406.447l28.196-4.766a1.61 1.61 0 0 0 .869-2.728l-5.513-5.513l14.802-14.802a1.61 1.61 0 0 0 0-2.278l-10.2-10.2a1.61 1.61 0 0 0-2.278 0L72.248 15.274l-5.515-5.515a1.61 1.61 0 0 0-2.727.876m25.359 53.371l-28.271-4.69a1.61 1.61 0 0 0-1.401.449l-.003.003a1.6 1.6 0 0 0-.447 1.406l4.765 28.196c.1.594.525 1.082 1.099 1.264a1.61 1.61 0 0 0 1.629-.395l5.513-5.513l14.803 14.803a1.61 1.61 0 0 0 2.277-.002l10.201-10.2a1.61 1.61 0 0 0 0-2.278L84.727 72.248l5.516-5.515a1.612 1.612 0 0 0-.878-2.727m-78.73-28.011l28.272 4.69a1.6 1.6 0 0 0 1.401-.449l.002-.003a1.61 1.61 0 0 0 .448-1.406L35.993 10.63a1.61 1.61 0 0 0-1.099-1.264a1.6 1.6 0 0 0-1.629.395l-5.513 5.513L12.951.473a1.61 1.61 0 0 0-2.278-.001L.472 10.673a1.61 1.61 0 0 0 0 2.278l14.801 14.802l-5.515 5.515a1.612 1.612 0 0 0 .877 2.727"></svg:path>`,
+})
+export class FoundationArrowsInIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")

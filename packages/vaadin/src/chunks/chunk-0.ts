@@ -19,16 +19,16 @@ export class VaadinAbacusIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vaadinAbsolutePositionIcon],svg[vaadin-absolute-position-icon]',
+  selector: 'svg[vaadinAccessibilityIcon],svg[vaadin-accessibility-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M0 0v16h16V0zm15 15H1V9h3v1l3-2l-3-2v1H1V1h6v3H6l2 3l2-3H9V1h6z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M10.4 10h-.5c.1.3.1.7.1 1c0 2.2-1.8 4-4 4s-4-1.8-4-4c0-2.1 1.6-3.8 3.7-4l-.2-1C2.9 6.4 1 8.4 1 11c0 2.8 2.2 5 5 5c2.4 0 4.4-1.7 4.9-3.9z"></svg:path><svg:path fill="currentColor" d="M13.1 13L12 8H7.9l-.2-1H11V6H7.5l-.6-2.5c.9-.1 1.6-.8 1.6-1.7C8.5.8 7.7 0 6.7 0S5 .8 5 1.8c0 .6.3 1.2.8 1.5L7.1 9h4.1l1.2 5H15v-1z"></svg:path>`,
 })
-export class VaadinAbsolutePositionIcon {
+export class VaadinAccessibilityIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,6 +53,23 @@ export class VaadinAcademyCapIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[vaadinAbsolutePositionIcon],svg[vaadin-absolute-position-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 0v16h16V0zm15 15H1V9h3v1l3-2l-3-2v1H1V1h6v3H6l2 3l2-3H9V1h6z"></svg:path>`,
+})
+export class VaadinAbsolutePositionIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vaadinAddDockIcon],svg[vaadin-add-dock-icon]',
   host: {
     role: 'img',
@@ -63,23 +80,6 @@ export class VaadinAcademyCapIcon {
   template: `<svg:path fill="currentColor" d="M0 11v5h16v-5zm12 4H9v-3h3zm0-8V5c0-5-8-5-8-5s5 0 5 5v2H7l3.5 3L14 7z"></svg:path>`,
 })
 export class VaadinAddDockIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vaadinAccessibilityIcon],svg[vaadin-accessibility-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.4 10h-.5c.1.3.1.7.1 1c0 2.2-1.8 4-4 4s-4-1.8-4-4c0-2.1 1.6-3.8 3.7-4l-.2-1C2.9 6.4 1 8.4 1 11c0 2.8 2.2 5 5 5c2.4 0 4.4-1.7 4.9-3.9z"></svg:path><svg:path fill="currentColor" d="M13.1 13L12 8H7.9l-.2-1H11V6H7.5l-.6-2.5c.9-.1 1.6-.8 1.6-1.7C8.5.8 7.7 0 6.7 0S5 .8 5 1.8c0 .6.3 1.2.8 1.5L7.1 9h4.1l1.2 5H15v-1z"></svg:path>`,
-})
-export class VaadinAccessibilityIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,6 +138,23 @@ export class VaadinAdobeFlashIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[vaadinAlarmIcon],svg[vaadin-alarm-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 5H7v5h4V9l-2.93.07zM5.46.87A2.1 2.1 0 0 0 2.651.335L1.66 1.1a2.095 2.095 0 0 0-.207 2.844zm8.88.23l-1-.77a2.097 2.097 0 0 0-2.796.534L14.54 3.94c.287-.356.46-.813.46-1.312c0-.602-.253-1.145-.659-1.528z"></svg:path><svg:path fill="currentColor" d="M12.87 14A6.98 6.98 0 0 0 15 9.002A7.05 7.05 0 0 0 8.003 2A7.05 7.05 0 0 0 1 8.997a6.98 6.98 0 0 0 2.128 5.001l-.938.942a.63.63 0 0 0 .882.878l.998-.999c1.092.758 2.446 1.211 3.905 1.211s2.813-.453 3.928-1.226l.977 1.015a.63.63 0 0 0 .878-.882zm-10-5a5.18 5.18 0 0 1 5.127-5.13a5.18 5.18 0 0 1 5.133 5.127a5.18 5.18 0 0 1-5.127 5.133A5.18 5.18 0 0 1 2.87 9.003z"></svg:path>`,
+})
+export class VaadinAlarmIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vaadinAirplaneIcon],svg[vaadin-airplane-icon]',
   host: {
     role: 'img',
@@ -172,40 +189,6 @@ export class VaadinAlignCenterIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vaadinAlignJustifyIcon],svg[vaadin-align-justify-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M0 0h16v3H0zm0 4h16v3H0zm0 8h16v3H0zm0-4h16v3H0z"></svg:path>`,
-})
-export class VaadinAlignJustifyIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vaadinAlarmIcon],svg[vaadin-alarm-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 5H7v5h4V9l-2.93.07zM5.46.87A2.1 2.1 0 0 0 2.651.335L1.66 1.1a2.095 2.095 0 0 0-.207 2.844zm8.88.23l-1-.77a2.097 2.097 0 0 0-2.796.534L14.54 3.94c.287-.356.46-.813.46-1.312c0-.602-.253-1.145-.659-1.528z"></svg:path><svg:path fill="currentColor" d="M12.87 14A6.98 6.98 0 0 0 15 9.002A7.05 7.05 0 0 0 8.003 2A7.05 7.05 0 0 0 1 8.997a6.98 6.98 0 0 0 2.128 5.001l-.938.942a.63.63 0 0 0 .882.878l.998-.999c1.092.758 2.446 1.211 3.905 1.211s2.813-.453 3.928-1.226l.977 1.015a.63.63 0 0 0 .878-.882zm-10-5a5.18 5.18 0 0 1 5.127-5.13a5.18 5.18 0 0 1 5.133 5.127a5.18 5.18 0 0 1-5.127 5.133A5.18 5.18 0 0 1 2.87 9.003z"></svg:path>`,
-})
-export class VaadinAlarmIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[vaadinAlignLeftIcon],svg[vaadin-align-left-icon]',
   host: {
     role: 'img',
@@ -216,6 +199,23 @@ export class VaadinAlarmIcon {
   template: `<svg:path fill="currentColor" d="M0 0h11v3H0zm0 4h15v3H0zm0 4h13v3H0zm0 4h16v3H0z"></svg:path>`,
 })
 export class VaadinAlignLeftIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vaadinAlignJustifyIcon],svg[vaadin-align-justify-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 0h16v3H0zm0 4h16v3H0zm0 8h16v3H0zm0-4h16v3H0z"></svg:path>`,
+})
+export class VaadinAlignJustifyIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

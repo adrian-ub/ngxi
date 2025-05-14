@@ -19,23 +19,6 @@ export class LsiconAddChatFilledIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[lsiconAddOneFilledIcon],svg[lsicon-add-one-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.5 7.5V3h1v4.5H13v1H8.5V13h-1V8.5H3v-1z" clip-rule="evenodd"></svg:path>`,
-})
-export class LsiconAddOneFilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[lsiconAddChatTwoFilledIcon],svg[lsicon-add-chat-two-filled-icon]',
   host: {
     role: 'img',
@@ -46,6 +29,23 @@ export class LsiconAddOneFilledIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.5 8a5.5 5.5 0 0 1 10.943-.794l.99-.143a6.501 6.501 0 1 0-12.279 3.782v3.03l3.04-.01a6.54 6.54 0 0 0 3.889.546l-.166-.987a5.54 5.54 0 0 1-3.383-.506l-.107-.054l-2.273.008v-2.265L3.1 10.5A5.5 5.5 0 0 1 2.5 8m9.5-.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m-.5 2v1h-1v1h1v1h1v-1h1v-1h-1v-1z" clip-rule="evenodd"></svg:path>`,
 })
 export class LsiconAddChatTwoFilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lsiconAddOneFilledIcon],svg[lsicon-add-one-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7.5 7.5V3h1v4.5H13v1H8.5V13h-1V8.5H3v-1z" clip-rule="evenodd"></svg:path>`,
+})
+export class LsiconAddOneFilledIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,23 +70,6 @@ export class LsiconAdjustHightFilledIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[lsiconAdjustWidthFilledIcon],svg[lsicon-adjust-width-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1 13V3h1v10zm14 0h-1V3h1zM4.207 8.5l1.147 1.146l-.708.708L2.293 8l2.353-2.354l.708.708L4.207 7.5H7v1zm7.147-2.854L13.707 8l-2.353 2.354l-.708-.708L11.793 8.5H9v-1h2.793l-1.147-1.146z" clip-rule="evenodd"></svg:path>`,
-})
-export class LsiconAdjustWidthFilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[lsiconAlignTxtBothFilledIcon],svg[lsicon-align-txt-both-filled-icon]',
   host: {
     role: 'img',
@@ -97,6 +80,23 @@ export class LsiconAdjustWidthFilledIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.5 2a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5zM12 6H4V5h8zm0 2.5H4v-1h8zM4 11h8v-1H4z" clip-rule="evenodd"></svg:path>`,
 })
 export class LsiconAlignTxtBothFilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[lsiconAdjustWidthFilledIcon],svg[lsicon-adjust-width-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1 13V3h1v10zm14 0h-1V3h1zM4.207 8.5l1.147 1.146l-.708.708L2.293 8l2.353-2.354l.708.708L4.207 7.5H7v1zm7.147-2.854L13.707 8l-2.353 2.354l-.708-.708L11.793 8.5H9v-1h2.793l-1.147-1.146z" clip-rule="evenodd"></svg:path>`,
+})
+export class LsiconAdjustWidthFilledIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

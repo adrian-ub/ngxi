@@ -53,23 +53,6 @@ export class FadAdsrIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fadArIcon],svg[fad-ar-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M25 184c-.47 2.68-.227 4.354 1 6s4.563 2.464 8 2s5.078-.958 6-4S80.911 82.783 80.911 82.783c.601-1.537 2.13-1.93 3.404-.886c0 0 134.305 110.087 136.602 110.103c1.194.008 3.15-.157 4.942-1.477c1.656-1.22 3.173-3.57 3.824-4.25c1.355-1.414 3.54-3.424.46-6.697C227.063 176.304 104.148 78.758 100 74S89.369 64 84 64s-13.914 2.695-16 8s-42.53 109.32-43 112"></svg:path>`,
-})
-export class FadArIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fadArmrecordingIcon],svg[fad-armrecording-icon]',
   host: {
     role: 'img',
@@ -80,6 +63,40 @@ export class FadArIcon {
   template: `<svg:circle cx="127" cy="129" r="81" fill="currentColor" fill-rule="evenodd"></svg:circle>`,
 })
 export class FadArmrecordingIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fadArpdownIcon],svg[fad-arpdown-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M80 52.004A4 4 0 0 0 75.996 48H52.004A4 4 0 0 0 48 52.004v23.992A4 4 0 0 0 52.004 80h23.992A4 4 0 0 0 80 75.996zm32 32A4 4 0 0 0 107.996 80H84.004A4 4 0 0 0 80 84.004v23.992A4 4 0 0 0 84.004 112h23.992a4 4 0 0 0 4.004-4.004zm32 32a4 4 0 0 0-4.004-4.004h-23.992a4 4 0 0 0-4.004 4.004v23.992a4 4 0 0 0 4.004 4.004h23.992a4 4 0 0 0 4.004-4.004zm32 32a4 4 0 0 0-4.004-4.004h-23.992a4 4 0 0 0-4.004 4.004v23.992a4 4 0 0 0 4.004 4.004h23.992a4 4 0 0 0 4.004-4.004zm32 32a4 4 0 0 0-4.004-4.004h-23.992a4 4 0 0 0-4.004 4.004v23.992a4 4 0 0 0 4.004 4.004h23.992a4 4 0 0 0 4.004-4.004z"></svg:path>`,
+})
+export class FadArpdownIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fadArIcon],svg[fad-ar-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M25 184c-.47 2.68-.227 4.354 1 6s4.563 2.464 8 2s5.078-.958 6-4S80.911 82.783 80.911 82.783c.601-1.537 2.13-1.93 3.404-.886c0 0 134.305 110.087 136.602 110.103c1.194.008 3.15-.157 4.942-1.477c1.656-1.22 3.173-3.57 3.824-4.25c1.355-1.414 3.54-3.424.46-6.697C227.063 176.304 104.148 78.758 100 74S89.369 64 84 64s-13.914 2.695-16 8s-42.53 109.32-43 112"></svg:path>`,
+})
+export class FadArIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -114,23 +131,6 @@ export class FadArpchordIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M80 75.996A4 4 0 0 1 75.996 80H52.004A4 4 0 0 1 48 75.996V52.004A4 4 0 0 1 52.004 48h23.992A4 4 0 0 1 80 52.004zm16 64A4 4 0 0 1 91.996 144H68.004A4 4 0 0 1 64 139.996v-23.992A4 4 0 0 1 68.004 112h23.992A4 4 0 0 1 96 116.004zm16 64a4 4 0 0 1-4.004 4.004H84.004A4 4 0 0 1 80 203.996v-23.992A4 4 0 0 1 84.004 176h23.992a4 4 0 0 1 4.004 4.004zm64 0a4 4 0 0 1-4.004 4.004h-23.992a4 4 0 0 1-4.004-4.004v-23.992a4 4 0 0 1 4.004-4.004h23.992a4 4 0 0 1 4.004 4.004zm16-64a4 4 0 0 1-4.004 4.004h-23.992a4 4 0 0 1-4.004-4.004v-23.992a4 4 0 0 1 4.004-4.004h23.992a4 4 0 0 1 4.004 4.004zm16-64A4 4 0 0 1 203.996 80h-23.992A4 4 0 0 1 176 75.996V52.004A4 4 0 0 1 180.004 48h23.992A4 4 0 0 1 208 52.004z"></svg:path>`,
 })
 export class FadArpdownandupIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fadArpdownIcon],svg[fad-arpdown-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M80 52.004A4 4 0 0 0 75.996 48H52.004A4 4 0 0 0 48 52.004v23.992A4 4 0 0 0 52.004 80h23.992A4 4 0 0 0 80 75.996zm32 32A4 4 0 0 0 107.996 80H84.004A4 4 0 0 0 80 84.004v23.992A4 4 0 0 0 84.004 112h23.992a4 4 0 0 0 4.004-4.004zm32 32a4 4 0 0 0-4.004-4.004h-23.992a4 4 0 0 0-4.004 4.004v23.992a4 4 0 0 0 4.004 4.004h23.992a4 4 0 0 0 4.004-4.004zm32 32a4 4 0 0 0-4.004-4.004h-23.992a4 4 0 0 0-4.004 4.004v23.992a4 4 0 0 0 4.004 4.004h23.992a4 4 0 0 0 4.004-4.004zm32 32a4 4 0 0 0-4.004-4.004h-23.992a4 4 0 0 0-4.004 4.004v23.992a4 4 0 0 0 4.004 4.004h23.992a4 4 0 0 0 4.004-4.004z"></svg:path>`,
-})
-export class FadArpdownIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -223,23 +223,6 @@ export class FadArpupandownIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fadArpupdownIcon],svg[fad-arpupdown-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M80 203.996A4 4 0 0 1 75.996 208H52.004A4 4 0 0 1 48 203.996v-23.992A4 4 0 0 1 52.004 176h23.992A4 4 0 0 1 80 180.004zm32-64a4 4 0 0 1-4.004 4.004H84.004A4 4 0 0 1 80 139.996v-23.992A4 4 0 0 1 84.004 112h23.992a4 4 0 0 1 4.004 4.004zm32-64A4 4 0 0 1 139.996 80h-23.992A4 4 0 0 1 112 75.996V52.004A4 4 0 0 1 116.004 48h23.992A4 4 0 0 1 144 52.004zm32 64a4 4 0 0 1-4.004 4.004h-23.992a4 4 0 0 1-4.004-4.004v-23.992a4 4 0 0 1 4.004-4.004h23.992a4 4 0 0 1 4.004 4.004zm32 64a4 4 0 0 1-4.004 4.004h-23.992a4 4 0 0 1-4.004-4.004v-23.992a4 4 0 0 1 4.004-4.004h23.992a4 4 0 0 1 4.004 4.004z"></svg:path>`,
-})
-export class FadArpupdownIcon {
-  readonly viewBox = input("0 0 256 256")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fadArrowsHorzIcon],svg[fad-arrows-horz-icon]',
   host: {
     role: 'img',
@@ -257,16 +240,16 @@ export class FadArrowsHorzIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fadArrowsVertIcon],svg[fad-arrows-vert-icon]',
+  selector: 'svg[fadArpupdownIcon],svg[fad-arpupdown-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M175.863 100.122c0-2.205 1.293-2.747 2.883-1.214l30.096 28.996l-30.11 29.24c-1.585 1.538-2.87 1-2.87-1.209v-19.24l-95.811.637v18.596c0 2.21-1.28 2.746-2.854 1.201l-29.788-29.225l29.774-28.982c1.584-1.542 2.868-1.004 2.868 1.2v19.54h95.812z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M80 203.996A4 4 0 0 1 75.996 208H52.004A4 4 0 0 1 48 203.996v-23.992A4 4 0 0 1 52.004 176h23.992A4 4 0 0 1 80 180.004zm32-64a4 4 0 0 1-4.004 4.004H84.004A4 4 0 0 1 80 139.996v-23.992A4 4 0 0 1 84.004 112h23.992a4 4 0 0 1 4.004 4.004zm32-64A4 4 0 0 1 139.996 80h-23.992A4 4 0 0 1 112 75.996V52.004A4 4 0 0 1 116.004 48h23.992A4 4 0 0 1 144 52.004zm32 64a4 4 0 0 1-4.004 4.004h-23.992a4 4 0 0 1-4.004-4.004v-23.992a4 4 0 0 1 4.004-4.004h23.992a4 4 0 0 1 4.004 4.004zm32 64a4 4 0 0 1-4.004 4.004h-23.992a4 4 0 0 1-4.004-4.004v-23.992a4 4 0 0 1 4.004-4.004h23.992a4 4 0 0 1 4.004 4.004z"></svg:path>`,
 })
-export class FadArrowsVertIcon {
+export class FadArpupdownIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -291,16 +274,16 @@ export class FadAutomation2pIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fadAutomation4pIcon],svg[fad-automation-4p-icon]',
+  selector: 'svg[fadArrowsVertIcon],svg[fad-arrows-vert-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M144.282 145.51A32 32 0 0 1 150 145c4.032 0 7.89.746 11.444 2.107L175.584 127l.54.306A31.88 31.88 0 0 1 168 106c0-17.673 14.327-32 32-32s32 14.327 32 32s-14.327 32-32 32c-3.672 0-7.2-.619-10.485-1.757l-14.31 21.038A31.86 31.86 0 0 1 182 177c0 17.673-14.327 32-32 32s-32-14.327-32-32c0-9.767 4.376-18.512 11.274-24.382l-20.764-41.28A32 32 0 0 1 102 112a32 32 0 0 1-8.16-1.05l-14.716 25.93C85.21 142.705 89 150.91 89 160c0 17.673-14.327 32-32 32s-32-14.327-32-32s14.327-32 32-32c2.655 0 5.234.323 7.7.932l14.809-26.17C73.638 96.963 70 88.907 70 80c0-17.673 14.327-32 32-32s32 14.327 32 32c0 9.563-4.195 18.146-10.844 24.01zM200 122c8.837 0 16-7.163 16-16s-7.163-16-16-16s-16 7.163-16 16s7.163 16 16 16M57 176c8.837 0 16-7.163 16-16s-7.163-16-16-16s-16 7.163-16 16s7.163 16 16 16m45-80c8.837 0 16-7.163 16-16s-7.163-16-16-16s-16 7.163-16 16s7.163 16 16 16m48 97c8.837 0 16-7.163 16-16s-7.163-16-16-16s-16 7.163-16 16s7.163 16 16 16"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M175.863 100.122c0-2.205 1.293-2.747 2.883-1.214l30.096 28.996l-30.11 29.24c-1.585 1.538-2.87 1-2.87-1.209v-19.24l-95.811.637v18.596c0 2.21-1.28 2.746-2.854 1.201l-29.788-29.225l29.774-28.982c1.584-1.542 2.868-1.004 2.868 1.2v19.54h95.812z"></svg:path>`,
 })
-export class FadAutomation4pIcon {
+export class FadArrowsVertIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -2630,6 +2613,23 @@ export class FadZoominIcon {
   template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="M120.46 158.29c-30.166 8.65-61.631-8.792-70.281-38.957s8.792-61.63 38.957-70.28s61.63 8.792 70.28 38.957c4.417 15.403-1.937 38.002-9.347 50.872c-.614 1.067 59.212 53.064 59.212 53.064l-17.427 17.63l-53.514-56.72s-10.233 3.241-17.88 5.434M104 144c22.091 0 40-17.909 40-40s-17.909-40-40-40s-40 17.909-40 40s17.909 40 40 40"></svg:path><svg:path d="M80 96.084v15.992h48V96.084z"></svg:path></svg:g>`,
 })
 export class FadZoomoutIcon {
+  readonly viewBox = input("0 0 256 256")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fadAutomation4pIcon],svg[fad-automation-4p-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M144.282 145.51A32 32 0 0 1 150 145c4.032 0 7.89.746 11.444 2.107L175.584 127l.54.306A31.88 31.88 0 0 1 168 106c0-17.673 14.327-32 32-32s32 14.327 32 32s-14.327 32-32 32c-3.672 0-7.2-.619-10.485-1.757l-14.31 21.038A31.86 31.86 0 0 1 182 177c0 17.673-14.327 32-32 32s-32-14.327-32-32c0-9.767 4.376-18.512 11.274-24.382l-20.764-41.28A32 32 0 0 1 102 112a32 32 0 0 1-8.16-1.05l-14.716 25.93C85.21 142.705 89 150.91 89 160c0 17.673-14.327 32-32 32s-32-14.327-32-32s14.327-32 32-32c2.655 0 5.234.323 7.7.932l14.809-26.17C73.638 96.963 70 88.907 70 80c0-17.673 14.327-32 32-32s32 14.327 32 32c0 9.563-4.195 18.146-10.844 24.01zM200 122c8.837 0 16-7.163 16-16s-7.163-16-16-16s-16 7.163-16 16s7.163 16 16 16M57 176c8.837 0 16-7.163 16-16s-7.163-16-16-16s-16 7.163-16 16s7.163 16 16 16m45-80c8.837 0 16-7.163 16-16s-7.163-16-16-16s-16 7.163-16 16s7.163 16 16 16m48 97c8.837 0 16-7.163 16-16s-7.163-16-16-16s-16 7.163-16 16s7.163 16 16 16"></svg:path>`,
+})
+export class FadAutomation4pIcon {
   readonly viewBox = input("0 0 256 256")
   readonly width = input("1em")
   readonly height = input("1em")

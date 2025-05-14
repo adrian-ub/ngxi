@@ -19,23 +19,6 @@ export class MonoIconsAddIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[monoIconsArchiveIcon],svg[mono-icons-archive-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2a2 2 0 0 1-1.017 1.742Q21 8.868 21 9v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9q0-.131.017-.258A2 2 0 0 1 2 7zm18 2V5H4v2zM5 9v10h14V9zm3 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1"></svg:path>`,
-})
-export class MonoIconsArchiveIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[monoIconsArrowDownIcon],svg[mono-icons-arrow-down-icon]',
   host: {
     role: 'img',
@@ -46,6 +29,23 @@ export class MonoIconsArchiveIcon {
   template: `<svg:path fill="currentColor" d="M12 4a1 1 0 0 1 1 1v11.586l4.293-4.293a1 1 0 0 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 1 1 1.414-1.414L11 16.586V5a1 1 0 0 1 1-1"></svg:path>`,
 })
 export class MonoIconsArrowDownIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[monoIconsArchiveIcon],svg[mono-icons-archive-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2a2 2 0 0 1-1.017 1.742Q21 8.868 21 9v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9q0-.131.017-.258A2 2 0 0 1 2 7zm18 2V5H4v2zM5 9v10h14V9zm3 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1"></svg:path>`,
+})
+export class MonoIconsArchiveIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,6 +87,23 @@ export class MonoIconsArrowLeftDownIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[monoIconsArrowRightIcon],svg[mono-icons-arrow-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"></svg:path>`,
+})
+export class MonoIconsArrowRightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[monoIconsArrowLeftUpIcon],svg[mono-icons-arrow-left-up-icon]',
   host: {
     role: 'img',
@@ -114,23 +131,6 @@ export class MonoIconsArrowLeftUpIcon {
   template: `<svg:path fill="currentColor" d="M6.293 6.293a1 1 0 0 1 1.414 0L16 14.586V9a1 1 0 1 1 2 0v8a1 1 0 0 1-1 1H9a1 1 0 1 1 0-2h5.586L6.293 7.707a1 1 0 0 1 0-1.414"></svg:path>`,
 })
 export class MonoIconsArrowRightDownIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[monoIconsArrowRightIcon],svg[mono-icons-arrow-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.293 5.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L16.586 13H5a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414"></svg:path>`,
-})
-export class MonoIconsArrowRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,23 +172,6 @@ export class MonoIconsArrowUpIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[monoIconsAttachmentIcon],svg[mono-icons-attachment-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M19.463 5.576c-.688-.75-1.929-.796-2.756.031l-8.1 8.1c-.21.21-.21.476 0 .686s.476.21.686 0l6.7-6.7a1 1 0 0 1 1.414 1.414l-6.7 6.7a2.45 2.45 0 0 1-3.514 0a2.45 2.45 0 0 1 0-3.514l8.1-8.1c1.567-1.568 4.115-1.619 5.63.015c1.552 1.569 1.597 4.104-.03 5.613l-9.486 9.486c-2.19 2.19-5.624 2.19-7.814 0s-2.19-5.624 0-7.814l8.1-8.1a1 1 0 0 1 1.414 1.414l-8.1 8.1c-1.41 1.41-1.41 3.576 0 4.986s3.576 1.41 4.986 0l9.5-9.5l.031-.03c.75-.687.796-1.929-.031-2.756z"></svg:path>`,
-})
-export class MonoIconsAttachmentIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[monoIconsBackspaceIcon],svg[mono-icons-backspace-icon]',
   host: {
     role: 'img',
@@ -199,6 +182,23 @@ export class MonoIconsAttachmentIcon {
   template: `<svg:g fill="currentColor"><svg:path d="M17.707 8.293a1 1 0 0 1 0 1.414L15.414 12l2.293 2.293a1 1 0 0 1-1.414 1.414L14 13.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L12.586 12l-2.293-2.293a1 1 0 1 1 1.414-1.414L14 10.586l2.293-2.293a1 1 0 0 1 1.414 0"></svg:path><svg:path fill-rule="evenodd" d="M22 5a1 1 0 0 0-1-1H9.46a2 2 0 0 0-1.519.698l-5.142 6a2 2 0 0 0 0 2.604l5.142 6A2 2 0 0 0 9.46 20H21a1 1 0 0 0 1-1zm-2 13H9.46l-5.143-6L9.46 6H20z" clip-rule="evenodd"></svg:path></svg:g>`,
 })
 export class MonoIconsBackspaceIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[monoIconsAttachmentIcon],svg[mono-icons-attachment-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19.463 5.576c-.688-.75-1.929-.796-2.756.031l-8.1 8.1c-.21.21-.21.476 0 .686s.476.21.686 0l6.7-6.7a1 1 0 0 1 1.414 1.414l-6.7 6.7a2.45 2.45 0 0 1-3.514 0a2.45 2.45 0 0 1 0-3.514l8.1-8.1c1.567-1.568 4.115-1.619 5.63.015c1.552 1.569 1.597 4.104-.03 5.613l-9.486 9.486c-2.19 2.19-5.624 2.19-7.814 0s-2.19-5.624 0-7.814l8.1-8.1a1 1 0 0 1 1.414 1.414l-8.1 8.1c-1.41 1.41-1.41 3.576 0 4.986s3.576 1.41 4.986 0l9.5-9.5l.031-.03c.75-.687.796-1.929-.031-2.756z"></svg:path>`,
+})
+export class MonoIconsAttachmentIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -301,6 +301,23 @@ export class MonoIconsBoardIcon {
   template: `<svg:path fill="currentColor" d="M4 6.633q.21-.085.503-.181A9.8 9.8 0 0 1 7.5 6a9.8 9.8 0 0 1 2.997.452q.293.096.503.181v10.88A11.8 11.8 0 0 0 7.5 17c-1.46 0-2.649.248-3.5.513zm8-1.748a9 9 0 0 0-.888-.337A11.8 11.8 0 0 0 7.5 4c-1.526 0-2.755.271-3.612.548a9 9 0 0 0-1.001.389a6 6 0 0 0-.357.18l-.025.014l-.009.005l-.003.002h-.001c-.002.002-.247.147-.002.002A1 1 0 0 0 2 6v13a1 1 0 0 0 1.51.86l-.005.003h.001l.002-.001l.001-.001l.037-.02q.056-.03.182-.09c.17-.078.43-.188.775-.3A9.8 9.8 0 0 1 7.5 19a9.8 9.8 0 0 1 2.997.451a7 7 0 0 1 .775.3a4 4 0 0 1 .223.112m0 0l-.002-.001l-.001-.001c.314.185.704.185 1.018 0l.037-.02q.056-.03.182-.09a7 7 0 0 1 .775-.3A9.8 9.8 0 0 1 16.5 19a9.8 9.8 0 0 1 2.997.451a7 7 0 0 1 .775.3a4 4 0 0 1 .219.11A1 1 0 0 0 22 19V6a1 1 0 0 0-.49-.86l-.002-.001h-.001l-.003-.003l-.01-.005l-.024-.014a6 6 0 0 0-.357-.18a9 9 0 0 0-1-.389A11.8 11.8 0 0 0 16.5 4c-1.525 0-2.755.271-3.612.548a9 9 0 0 0-.888.337m8 1.748v10.88A11.8 11.8 0 0 0 16.5 17c-1.46 0-2.649.248-3.5.513V6.633q.21-.085.503-.181A9.8 9.8 0 0 1 16.5 6a9.8 9.8 0 0 1 2.997.452q.293.096.503.181m.49.228l.005.002h-.001zm0 13l.004.002l-.002-.002"></svg:path>`,
 })
 export class MonoIconsBookIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[monoIconsBookmarkIcon],svg[mono-icons-bookmark-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v17a1 1 0 0 1-1.581.814L12 17.229l-6.419 4.585A1 1 0 0 1 4 21zm14 0H6v15.057l5.419-3.87a1 1 0 0 1 1.162 0L18 19.056z"></svg:path>`,
+})
+export class MonoIconsBookmarkIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -3038,23 +3055,6 @@ export class MonoIconsZoomInIcon {
   template: `<svg:path fill="currentColor" d="M10 4a6 6 0 1 0 0 12a6 6 0 0 0 0-12m-8 6a8 8 0 1 1 14.32 4.906l5.387 5.387a1 1 0 0 1-1.414 1.414l-5.387-5.387A8 8 0 0 1 2 10m5 0a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1"></svg:path>`,
 })
 export class MonoIconsZoomOutIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[monoIconsBookmarkIcon],svg[mono-icons-bookmark-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v17a1 1 0 0 1-1.581.814L12 17.229l-6.419 4.585A1 1 0 0 1 4 21zm14 0H6v15.057l5.419-3.87a1 1 0 0 1 1.162 0L18 19.056z"></svg:path>`,
-})
-export class MonoIconsBookmarkIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -19,16 +19,16 @@ export class FeatherActivityIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[featherAlertOctagonIcon],svg[feather-alert-octagon-icon]',
+  selector: 'svg[featherAirplayIcon],svg[feather-airplay-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.86 2h8.28L22 7.86v8.28L16.14 22H7.86L2 16.14V7.86zM12 8v4m0 4h.01"></svg:path>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></svg:path><svg:path d="m12 15l5 6H7z"></svg:path></svg:g>`,
 })
-export class FeatherAlertOctagonIcon {
+export class FeatherAirplayIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,23 +53,6 @@ export class FeatherAlertCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[featherAirplayIcon],svg[feather-airplay-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></svg:path><svg:path d="m12 15l5 6H7z"></svg:path></svg:g>`,
-})
-export class FeatherAirplayIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[featherAlertTriangleIcon],svg[feather-alert-triangle-icon]',
   host: {
     role: 'img',
@@ -80,6 +63,23 @@ export class FeatherAirplayIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0M12 9v4m0 4h.01"></svg:path>`,
 })
 export class FeatherAlertTriangleIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[featherAlertOctagonIcon],svg[feather-alert-octagon-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.86 2h8.28L22 7.86v8.28L16.14 22H7.86L2 16.14V7.86zM12 8v4m0 4h.01"></svg:path>`,
+})
+export class FeatherAlertOctagonIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -155,23 +155,6 @@ export class FeatherAlignRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[featherApertureIcon],svg[feather-aperture-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="12" r="10"></svg:circle><svg:path d="m14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></svg:path></svg:g>`,
-})
-export class FeatherApertureIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[featherAnchorIcon],svg[feather-anchor-icon]',
   host: {
     role: 'img',
@@ -182,6 +165,23 @@ export class FeatherApertureIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="5" r="3"></svg:circle><svg:path d="M12 22V8m-7 4H2a10 10 0 0 0 20 0h-3"></svg:path></svg:g>`,
 })
 export class FeatherAnchorIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[featherApertureIcon],svg[feather-aperture-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="12" r="10"></svg:circle><svg:path d="m14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></svg:path></svg:g>`,
+})
+export class FeatherApertureIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,23 +240,6 @@ export class FeatherArrowDownCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[featherArrowDownRightIcon],svg[feather-arrow-down-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 7l10 10m0-10v10H7"></svg:path>`,
-})
-export class FeatherArrowDownRightIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[featherArrowDownLeftIcon],svg[feather-arrow-down-left-icon]',
   host: {
     role: 'img',
@@ -274,16 +257,16 @@ export class FeatherArrowDownLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[featherArrowLeftCircleIcon],svg[feather-arrow-left-circle-icon]',
+  selector: 'svg[featherArrowDownRightIcon],svg[feather-arrow-down-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="12" r="10"></svg:circle><svg:path d="m12 8l-4 4l4 4m4-4H8"></svg:path></svg:g>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 7l10 10m0-10v10H7"></svg:path>`,
 })
-export class FeatherArrowLeftCircleIcon {
+export class FeatherArrowDownRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -301,6 +284,23 @@ export class FeatherArrowLeftCircleIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m7 7l-7-7l7-7"></svg:path>`,
 })
 export class FeatherArrowLeftIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[featherArrowLeftCircleIcon],svg[feather-arrow-left-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="12" r="10"></svg:circle><svg:path d="m12 8l-4 4l4 4m4-4H8"></svg:path></svg:g>`,
+})
+export class FeatherArrowLeftCircleIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

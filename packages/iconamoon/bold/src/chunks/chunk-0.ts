@@ -53,23 +53,6 @@ export class IconamoonArrowBottomLeft1BoldIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconamoonArrowBottomLeft2BoldIcon],svg[iconamoon-arrow-bottom-left-2-bold-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 8v8h8"></svg:path>`,
-})
-export class IconamoonArrowBottomLeft2BoldIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[iconamoonArrowBottomLeft3SquareBoldIcon],svg[iconamoon-arrow-bottom-left-3-square-bold-icon]',
   host: {
     role: 'img',
@@ -5146,6 +5129,23 @@ export class IconamoonZoomInBoldIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314M8 11h6"></svg:path>`,
 })
 export class IconamoonZoomOutBoldIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconamoonArrowBottomLeft2BoldIcon],svg[iconamoon-arrow-bottom-left-2-bold-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 8v8h8"></svg:path>`,
+})
+export class IconamoonArrowBottomLeft2BoldIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

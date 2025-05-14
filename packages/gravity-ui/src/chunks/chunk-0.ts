@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[gravityUiAbbrMlIcon],svg[gravity-ui-abbr-ml-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.5 11.25V6.672l1.436 3.39a1.129 1.129 0 0 0 2.076.008l1.513-3.492v4.672a.75.75 0 0 0 1.5 0V5.218a1.218 1.218 0 0 0-2.335-.484L4.98 8.679L3.307 4.732A1.201 1.201 0 0 0 1 5.202v6.048a.75.75 0 1 0 1.5 0m9.5-6.5a.75.75 0 0 0-1.5 0v6.5c0 .414.336.75.75.75h3.5a.75.75 0 0 0 0-1.5H12z" clip-rule="evenodd"></svg:path>`,
-})
-export class GravityUiAbbrMlIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[gravityUiAbbrApiIcon],svg[gravity-ui-abbr-api-icon]',
   host: {
     role: 'img',
@@ -29,6 +12,23 @@ export class GravityUiAbbrMlIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M5.02 11.419L4.691 10H2.808l-.327 1.419a.75.75 0 1 1-1.462-.338L2.407 5.07a1.379 1.379 0 0 1 2.686 0l1.388 6.012a.75.75 0 1 1-1.462.338m-1.27-5.5l.597 2.58H3.155zM14.5 4.75a.75.75 0 0 0-1.5 0v6.5a.75.75 0 0 0 1.5 0zM8.25 4a.75.75 0 0 0-.75.75v6.5a.75.75 0 0 0 1.5 0V9.5h.5a2.75 2.75 0 0 0 0-5.5zM9.5 8H9V5.5h.5a1.25 1.25 0 0 1 0 2.5" clip-rule="evenodd"></svg:path>`,
 })
 export class GravityUiAbbrApiIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gravityUiAbbrMlIcon],svg[gravity-ui-abbr-ml-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2.5 11.25V6.672l1.436 3.39a1.129 1.129 0 0 0 2.076.008l1.513-3.492v4.672a.75.75 0 0 0 1.5 0V5.218a1.218 1.218 0 0 0-2.335-.484L4.98 8.679L3.307 4.732A1.201 1.201 0 0 0 1 5.202v6.048a.75.75 0 1 0 1.5 0m9.5-6.5a.75.75 0 0 0-1.5 0v6.5c0 .414.336.75.75.75h3.5a.75.75 0 0 0 0-1.5H12z" clip-rule="evenodd"></svg:path>`,
+})
+export class GravityUiAbbrMlIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,23 +70,6 @@ export class GravityUiAbbrQlIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[gravityUiAbbrZipIcon],svg[gravity-ui-abbr-zip-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1 4.75A.75.75 0 0 1 1.75 4h3.113a1.137 1.137 0 0 1 .96 1.748L2.797 10.5H5.25a.75.75 0 0 1 0 1.5H2.137a1.137 1.137 0 0 1-.96-1.748L4.203 5.5H1.75A.75.75 0 0 1 1 4.75M7.75 4a.75.75 0 0 1 .75.75v6.5a.75.75 0 0 1-1.5 0v-6.5A.75.75 0 0 1 7.75 4m3 0a.75.75 0 0 0-.75.75v6.5a.75.75 0 0 0 1.5 0V9.5h.5A2.75 2.75 0 1 0 12 4zM12 8h-.5V5.5h.5A1.25 1.25 0 1 1 12 8" clip-rule="evenodd"></svg:path>`,
-})
-export class GravityUiAbbrZipIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[gravityUiAntennaSignalIcon],svg[gravity-ui-antenna-signal-icon]',
   host: {
     role: 'img',
@@ -97,6 +80,23 @@ export class GravityUiAbbrZipIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M5.56 4.403c.27.314.223.784-.015 1.123A3 3 0 0 0 5 7.25c0 .642.202 1.237.545 1.724c.238.339.284.809.015 1.123c-.27.315-.75.354-1.015.036A4.48 4.48 0 0 1 3.5 7.25c0-1.097.393-2.102 1.045-2.883c.266-.318.745-.279 1.015.036m4.88 0c-.27.314-.223.784.015 1.123c.344.487.545 1.082.545 1.724s-.201 1.237-.545 1.724c-.238.339-.284.809-.015 1.123c.27.315.75.354 1.015.036A4.48 4.48 0 0 0 12.5 7.25a4.48 4.48 0 0 0-1.045-2.883c-.265-.318-.745-.279-1.015.036m1.953-2.278c-.27.315-.23.785.05 1.092A5.98 5.98 0 0 1 14 7.25c0 1.553-.59 2.968-1.558 4.033c-.278.307-.319.777-.05 1.092c.27.314.747.353 1.033.053A7.47 7.47 0 0 0 15.5 7.25c0-2.008-.79-3.832-2.075-5.178c-.286-.3-.763-.261-1.032.053m-8.786 0c-.27-.314-.746-.353-1.032-.053A7.48 7.48 0 0 0 .5 7.25c0 2.008.79 3.832 2.075 5.178c.286.3.763.261 1.032-.053c.27-.315.23-.785-.05-1.092A5.98 5.98 0 0 1 2 7.25c0-1.553.59-2.968 1.558-4.033c.278-.307.319-.777.05-1.092M8.75 8.55a1.5 1.5 0 1 0-1.5 0v5.701a.75.75 0 0 0 1.5 0z" clip-rule="evenodd"></svg:path>`,
 })
 export class GravityUiAntennaSignalIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gravityUiAbbrZipIcon],svg[gravity-ui-abbr-zip-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1 4.75A.75.75 0 0 1 1.75 4h3.113a1.137 1.137 0 0 1 .96 1.748L2.797 10.5H5.25a.75.75 0 0 1 0 1.5H2.137a1.137 1.137 0 0 1-.96-1.748L4.203 5.5H1.75A.75.75 0 0 1 1 4.75M7.75 4a.75.75 0 0 1 .75.75v6.5a.75.75 0 0 1-1.5 0v-6.5A.75.75 0 0 1 7.75 4m3 0a.75.75 0 0 0-.75.75v6.5a.75.75 0 0 0 1.5 0V9.5h.5A2.75 2.75 0 1 0 12 4zM12 8h-.5V5.5h.5A1.25 1.25 0 1 1 12 8" clip-rule="evenodd"></svg:path>`,
+})
+export class GravityUiAbbrZipIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,23 +257,6 @@ export class GravityUiArrowDownToLineIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[gravityUiArrowLeftIcon],svg[gravity-ui-arrow-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M14.75 8a.75.75 0 0 1-.75.75H3.81l2.72 2.72a.75.75 0 1 1-1.06 1.06l-4-4a.75.75 0 0 1 0-1.06l4-4a.75.75 0 0 1 1.06 1.06L3.81 7.25H14a.75.75 0 0 1 .75.75" clip-rule="evenodd"></svg:path>`,
-})
-export class GravityUiArrowLeftIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[gravityUiArrowDownToSquareIcon],svg[gravity-ui-arrow-down-to-square-icon]',
   host: {
     role: 'img',
@@ -284,6 +267,23 @@ export class GravityUiArrowLeftIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8.53 11.78a.75.75 0 0 1-1.06 0l-2.5-2.5a.75.75 0 0 1 1.06-1.06l1.22 1.22V1.75a.75.75 0 0 1 1.5 0v7.69l1.22-1.22a.75.75 0 1 1 1.06 1.06zM4.25 4a.75.75 0 1 1 0 1.5H4A1.5 1.5 0 0 0 2.5 7v5A1.5 1.5 0 0 0 4 13.5h8a1.5 1.5 0 0 0 1.5-1.5V7A1.5 1.5 0 0 0 12 5.5h-.25a.75.75 0 0 1 0-1.5H12a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3z" clip-rule="evenodd"></svg:path>`,
 })
 export class GravityUiArrowDownToSquareIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gravityUiArrowLeftIcon],svg[gravity-ui-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M14.75 8a.75.75 0 0 1-.75.75H3.81l2.72 2.72a.75.75 0 1 1-1.06 1.06l-4-4a.75.75 0 0 1 0-1.06l4-4a.75.75 0 0 1 1.06 1.06L3.81 7.25H14a.75.75 0 0 1 .75.75" clip-rule="evenodd"></svg:path>`,
+})
+export class GravityUiArrowLeftIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
