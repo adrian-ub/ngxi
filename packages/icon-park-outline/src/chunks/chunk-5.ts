@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkOutlineUnlockIcon],svg[icon-park-outline-unlock-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><svg:rect width="34" height="22" x="7" y="22.048" rx="2"></svg:rect><svg:path stroke-linecap="round" d="M14 22v-7.995c-.005-5.135 3.923-9.438 9.086-9.954S32.967 6.974 34 12.006M24 30v6"></svg:path></svg:g>`,
+})
+export class IconParkOutlineUnlockIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkOutlineUnlockOneIcon],svg[icon-park-outline-unlock-one-icon]',
   host: {
     role: 'img',
@@ -2664,23 +2681,6 @@ export class IconParkOutlineZoomInternalIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><svg:path d="M21 38c9.389 0 17-7.611 17-17S30.389 4 21 4S4 11.611 4 21s7.611 17 17 17Z"></svg:path><svg:path stroke-linecap="round" d="M15 21h12m6.222 12.222l8.485 8.485"></svg:path></svg:g>`,
 })
 export class IconParkOutlineZoomOutIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkOutlineAddPrintIcon],svg[icon-park-outline-add-print-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"><svg:path stroke-linejoin="round" d="M12 19H6V6h36v13h-6"></svg:path><svg:path stroke-linejoin="round" d="M12 12h24v32l-6-4.444L24 44l-6-4.444L12 44z"></svg:path><svg:path d="M20 26h8m-4-4v8"></svg:path></svg:g>`,
-})
-export class IconParkOutlineAddPrintIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

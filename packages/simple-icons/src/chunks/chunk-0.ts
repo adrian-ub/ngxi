@@ -19,23 +19,6 @@ export class SimpleIcons42Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[simpleIcons1001tracklistsIcon],svg[simple-icons-1001tracklists-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.096 1.334V2.68h-1.35v1.345H5.398v1.346h-1.35v1.346H2.7v6.681H1.35v1.348H0v2.451h1.35v1.346H2.7v1.346h2.456v-7.836h-1.35v-4.23h1.35V6.476h1.35V5.13h1.35V3.785h8.289v1.346h1.35v1.346h1.349v1.345h1.35v4.23h-1.35v7.837H21.3v-1.346h1.35v-1.346H24v-2.451h-1.35v-1.348H21.3V6.717h-1.349V5.37h-1.35V4.025h-1.347V2.68h-1.35V1.334Zm1.37 8v1.352H8.112v3.816h2.47v-4.057h2.95v4.348h-1.355v1.352h-1.354v2.464h2.467v-2.705H16v-5.218h-1.355V9.334Zm1.356 10.87v2.462h2.467v-2.463z"></svg:path>`,
-})
-export class SimpleIcons1001tracklistsIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[simpleIcons1and1Icon],svg[simple-icons-1and1-icon]',
   host: {
     role: 'img',
@@ -46,6 +29,23 @@ export class SimpleIcons1001tracklistsIcon {
   template: `<svg:path fill="currentColor" d="M0 0v24h24V0zm11.717 5.792c1.564 0 2.671 1.04 2.671 2.468c0 1.044-.428 1.819-1.746 2.915l1.952 2.648c.163-.147.303-1.046.274-1.777c-.003-.087-.022-.341-.04-.62h1.814c0 .244.024.595.024.683c0 1.426-.224 2.327-.909 3.198L17.2 17.22h-2.232l-.503-.678c-.823.659-1.546.905-2.713.898c-2.284-.013-3.857-1.173-4.005-3.239c-.089-1.235.737-2.506 2.32-3.42C9.049 9.477 8.84 9.025 8.84 8.207c0-1.392 1.191-2.415 2.878-2.415zm-9.424.134h4.064v11.296H4.1V7.735H2.293zm14.45 0h4.065v11.296H18.55V7.735h-1.807zm-5.036 1.49c-.545 0-.931.358-.931.845c0 .47.14.726.79 1.562c.772-.557 1.058-1.075 1.058-1.58c0-.504-.354-.828-.917-.828zm-.517 4.811c-1.002.663-1.404 1.31-1.386 1.919c.03.928.806 1.522 1.948 1.522c.703 0 1.174-.257 1.579-.594z"></svg:path>`,
 })
 export class SimpleIcons1and1Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleIcons1001tracklistsIcon],svg[simple-icons-1001tracklists-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.096 1.334V2.68h-1.35v1.345H5.398v1.346h-1.35v1.346H2.7v6.681H1.35v1.348H0v2.451h1.35v1.346H2.7v1.346h2.456v-7.836h-1.35v-4.23h1.35V6.476h1.35V5.13h1.35V3.785h8.289v1.346h1.35v1.346h1.349v1.345h1.35v4.23h-1.35v7.837H21.3v-1.346h1.35v-1.346H24v-2.451h-1.35v-1.348H21.3V6.717h-1.349V5.37h-1.35V4.025h-1.347V2.68h-1.35V1.334Zm1.37 8v1.352H8.112v3.816h2.47v-4.057h2.95v4.348h-1.355v1.352h-1.354v2.464h2.467v-2.705H16v-5.218h-1.355V9.334Zm1.356 10.87v2.462h2.467v-2.463z"></svg:path>`,
+})
+export class SimpleIcons1001tracklistsIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -155,23 +155,6 @@ export class SimpleIcons30secondsofcodeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[simpleIcons3mIcon],svg[simple-icons-3m-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18.903 5.954L17.17 13.03l-1.739-7.076h-5.099v2.613C9.72 6.28 7.56 5.706 5.558 5.674C3.12 5.641.563 6.701.469 9.936h3.373c0-.977.747-1.536 1.588-1.523c1.032-.008 1.508.434 1.533 1.124c-.036.597-.387 1.014-1.525 1.014H4.303V12.9h1.03c.584 0 1.399.319 1.431 1.155c.04.995-.652 1.435-1.501 1.443c-1.517-.053-1.763-1.225-1.763-2.23H0c.015.677-.151 5.091 5.337 5.059c2.629.025 4.464-1.085 5.003-2.613v2.342h3.455v-7.632l1.867 7.634h3.018l1.875-7.626v7.634H24V5.954zm-8.561 7.06c-.429-.893-1.034-1.284-1.376-1.407c.714-.319 1.09-.751 1.376-1.614z"></svg:path>`,
-})
-export class SimpleIcons3mIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[simpleIcons365datascienceIcon],svg[simple-icons-365datascience-icon]',
   host: {
     role: 'img',
@@ -189,6 +172,40 @@ export class SimpleIcons365datascienceIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[simpleIcons3mIcon],svg[simple-icons-3m-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M18.903 5.954L17.17 13.03l-1.739-7.076h-5.099v2.613C9.72 6.28 7.56 5.706 5.558 5.674C3.12 5.641.563 6.701.469 9.936h3.373c0-.977.747-1.536 1.588-1.523c1.032-.008 1.508.434 1.533 1.124c-.036.597-.387 1.014-1.525 1.014H4.303V12.9h1.03c.584 0 1.399.319 1.431 1.155c.04.995-.652 1.435-1.501 1.443c-1.517-.053-1.763-1.225-1.763-2.23H0c.015.677-.151 5.091 5.337 5.059c2.629.025 4.464-1.085 5.003-2.613v2.342h3.455v-7.632l1.867 7.634h3.018l1.875-7.626v7.634H24V5.954zm-8.561 7.06c-.429-.893-1.034-1.284-1.376-1.407c.714-.319 1.09-.751 1.376-1.614z"></svg:path>`,
+})
+export class SimpleIcons3mIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleIcons4dIcon],svg[simple-icons-4d-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.64 0v24H3.36V0zM10.49 11.827c-.115.138-5.882 6.789-5.983 6.9c-.058.07-.187.194-.187.36c0 .153.187.208.36.208h4.4v-1.067H5.83c.49-.61 3.38-3.824 3.696-4.226v5.34c0 .194-.005.965-.043 1.602c-.029.43-.13.637-.661.693c-.23.027-.533.041-.662.041c-.072 0-.115.083-.115.18s.072.167.23.167c.777 0 1.539-.042 1.942-.042c1.236 0 2.646.097 3.178.097c2.618 0 4.099-.97 4.746-1.607c.791-.776 1.539-2.093 1.539-3.81c0-1.622-.662-2.758-1.38-3.465c-1.54-1.565-3.913-1.565-5.682-1.565c-.56 0-1.035.027-1.064.027c-.388.042-.345-.124-.59-.138c-.158-.014-.258.055-.474.305m1.898.443c1.108 0 2.719.166 4.027 1.372c.604.554 1.367 1.676 1.367 3.408c0 1.414-.288 2.66-1.194 3.409c-.849.706-1.812.984-3.265.984c-1.122 0-1.683-.291-1.87-.54c-.115-.153-.172-.694-.186-1.04c0-.097-.015-.29-.015-.568h1.021c.245 0 .317-.055.389-.18c.1-.18.244-.735.244-.86c0-.11-.057-.166-.13-.166c-.086 0-.273.139-.647.139h-.877v-5.584c0-.152.058-.222.173-.277s.676-.097.963-.097"></svg:path>`,
+})
+export class SimpleIcons4dIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[simpleIcons4chanIcon],svg[simple-icons-4chan-icon]',
   host: {
     role: 'img',
@@ -199,6 +216,23 @@ export class SimpleIcons365datascienceIcon {
   template: `<svg:path fill="currentColor" d="M11.07 8.82S9.803 1.079 5.145 1.097C2.006 1.109.78 4.124 3.055 4.802c0 0-2.698.973-2.698 2.697s4.274 3.54 10.713 1.32zm1.931 5.924s.904 7.791 5.558 7.991c3.136.135 4.503-2.82 2.262-3.604c0 0 2.74-.845 2.82-2.567s-4.105-3.737-10.64-1.82m-3.672-1.55s-7.532 2.19-6.952 6.813c.39 3.114 3.53 3.969 3.93 1.63c0 0 1.29 2.559 3.002 2.351s3-4.67.02-10.794m5.623-2.467s7.727-1.35 7.66-6.008c-.046-3.138-3.074-4.333-3.728-2.051c0 0-1-2.686-2.726-2.668c-1.724.018-3.494 4.312-1.206 10.727"></svg:path>`,
 })
 export class SimpleIcons4chanIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[simpleIcons7zipIcon],svg[simple-icons-7zip-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 18.858h24V8.181H10.717V5.142H0ZM2.021 7.271h6.657v1.994c-1.74 2.09-2.84 4.502-2.948 7.404H3.477c.09-2.501.353-4.954 2.283-6.994l.033-.033H2.021Zm8.45 1.253h13.215v10.143H10.47Zm6.01 1.213v6.871h1.482v-6.87Zm2.755.043v6.912h1.616v-2.42h1.029c.43-.001.754-.29.969-.716c.427-.848.429-2.257-.024-3.092c-.227-.419-.571-.697-1.033-.684zm-7.924.002v1.596h2.217l-2.304 3.736v1.54h4.287V15.1h-2.698l2.786-3.909v-1.41Zm9.452 1.512h.595c.164-.006.287.081.371.217c.17.273.172.736.004.99a.36.36 0 0 1-.373.176l-.55.047z"></svg:path>`,
+})
+export class SimpleIcons7zipIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -233,40 +267,6 @@ export class SimpleIcons500pxIcon {
   template: `<svg:path fill="currentColor" d="M21.65 13.779a2.106 2.106 0 1 1-4.212 0a2.106 2.106 0 0 1 4.212 0m-7.557-3.572a2.023 2.023 0 1 1-4.045 0a2.023 2.023 0 0 1 4.046 0m-7.66 0a2.023 2.023 0 1 1-4.046 0a2.023 2.023 0 0 1 4.046 0M17.44 17.87c.917.398 2.243.466 3.122.058q.588-.274 1.085-.886v.877H24V6.062h-2.485v4.272c-.707-.685-1.449-.977-2.45-.977c-1.06 0-1.925.352-2.585.916v-.066A4.41 4.41 0 0 0 8.24 8.02a4.41 4.41 0 1 0-4.14 6.585l-1.912 3.313h2.869l3.183-5.526a4.41 4.41 0 0 0 3.522 2.213l-1.913 3.313h2.868l2.238-3.884c.066 1.584.868 3.13 2.486 3.835"></svg:path>`,
 })
 export class SimpleIcons99designsIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[simpleIcons4dIcon],svg[simple-icons-4d-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20.64 0v24H3.36V0zM10.49 11.827c-.115.138-5.882 6.789-5.983 6.9c-.058.07-.187.194-.187.36c0 .153.187.208.36.208h4.4v-1.067H5.83c.49-.61 3.38-3.824 3.696-4.226v5.34c0 .194-.005.965-.043 1.602c-.029.43-.13.637-.661.693c-.23.027-.533.041-.662.041c-.072 0-.115.083-.115.18s.072.167.23.167c.777 0 1.539-.042 1.942-.042c1.236 0 2.646.097 3.178.097c2.618 0 4.099-.97 4.746-1.607c.791-.776 1.539-2.093 1.539-3.81c0-1.622-.662-2.758-1.38-3.465c-1.54-1.565-3.913-1.565-5.682-1.565c-.56 0-1.035.027-1.064.027c-.388.042-.345-.124-.59-.138c-.158-.014-.258.055-.474.305m1.898.443c1.108 0 2.719.166 4.027 1.372c.604.554 1.367 1.676 1.367 3.408c0 1.414-.288 2.66-1.194 3.409c-.849.706-1.812.984-3.265.984c-1.122 0-1.683-.291-1.87-.54c-.115-.153-.172-.694-.186-1.04c0-.097-.015-.29-.015-.568h1.021c.245 0 .317-.055.389-.18c.1-.18.244-.735.244-.86c0-.11-.057-.166-.13-.166c-.086 0-.273.139-.647.139h-.877v-5.584c0-.152.058-.222.173-.277s.676-.097.963-.097"></svg:path>`,
-})
-export class SimpleIcons4dIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[simpleIcons7zipIcon],svg[simple-icons-7zip-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M0 18.858h24V8.181H10.717V5.142H0ZM2.021 7.271h6.657v1.994c-1.74 2.09-2.84 4.502-2.948 7.404H3.477c.09-2.501.353-4.954 2.283-6.994l.033-.033H2.021Zm8.45 1.253h13.215v10.143H10.47Zm6.01 1.213v6.871h1.482v-6.87Zm2.755.043v6.912h1.616v-2.42h1.029c.43-.001.754-.29.969-.716c.427-.848.429-2.257-.024-3.092c-.227-.419-.571-.697-1.033-.684zm-7.924.002v1.596h2.217l-2.304 3.736v1.54h4.287V15.1h-2.698l2.786-3.909v-1.41Zm9.452 1.512h.595c.164-.006.287.081.371.217c.17.273.172.736.004.99a.36.36 0 0 1-.373.176l-.55.047z"></svg:path>`,
-})
-export class SimpleIcons7zipIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

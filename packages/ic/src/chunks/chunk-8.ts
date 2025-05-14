@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[icOutlineSpaceBarIcon],svg[ic-outline-space-bar-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M18 9v4H6V9H4v6h16V9z"></svg:path>`,
-})
-export class IcOutlineSpaceBarIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[icOutlineSpaceDashboardIcon],svg[ic-outline-space-dashboard-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class IcRoundAirlineSeatReclineExtraIcon {
   template: `<svg:path fill="currentColor" d="M7.59 5.41c-.78-.78-.78-2.05 0-2.83s2.05-.78 2.83 0s.78 2.05 0 2.83c-.79.79-2.05.79-2.83 0M6 16V8c0-.55-.45-1-1-1s-1 .45-1 1v8c0 2.76 2.24 5 5 5h5c.55 0 1-.45 1-1s-.45-1-1-1H9c-1.66 0-3-1.34-3-3m13.28 3.35l-3.77-3.77c-.37-.37-.88-.58-1.41-.58h-2.6v-3.68c1.09.89 2.66 1.7 4.2 2.02c.67.14 1.3-.36 1.3-1.04c0-.53-.39-.96-.92-1.05c-1.42-.24-2.88-1.01-3.75-1.97l-1.4-1.55c-.19-.21-.43-.38-.69-.5c-.29-.14-.62-.23-.96-.23h-.03C8.01 7 7 8.01 7 9.25V15c0 1.66 1.34 3 3 3h5.07l2.78 2.78c.39.39 1.04.39 1.43 0c.4-.39.4-1.03 0-1.43"></svg:path>`,
 })
 export class IcRoundAirlineSeatReclineNormalIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icRoundAirlineStopsIcon],svg[ic-round-airline-stops-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15 18c0 .55-.45 1-1 1h-4c-.55 0-1-.45-1-1s.45-1 1-1h1c-.47-4.21-3.89-7.55-8.12-7.96A.98.98 0 0 1 2 8.05c0-.59.52-1.06 1.11-1c3.92.39 7.26 2.82 8.89 6.25c1.13-2.43 2.99-4.25 4.78-5.52l-1.92-1.92c-.32-.32-.1-.86.35-.86h5.29c.28 0 .5.22.5.5v5.29c0 .45-.54.67-.85.35L18.21 9.2c-2.28 1.58-4.76 4.1-5.21 7.8h1c.55 0 1 .45 1 1"></svg:path>`,
+})
+export class IcRoundAirlineStopsIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

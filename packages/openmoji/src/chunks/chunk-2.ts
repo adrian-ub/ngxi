@@ -2,57 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[openmojiFlagJordanIcon],svg[openmoji-flag-jordan-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#5c9e31" d="M5 17h62v38H5z"></svg:path><svg:path fill="#fff" d="M5 30h62v12H5z"></svg:path><svg:path d="M5 17h62v13H5z"></svg:path><svg:path fill="#d22f27" d="M26 36L5 55V17z"></svg:path><svg:path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="m13 33.5l.556 1.445l1.449-.455l-.755 1.348l1.25.878l-1.498.234l.111 1.55L13 37.445L11.887 38.5l.111-1.55l-1.498-.234l1.25-.878l-.755-1.348l1.449.455z"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z"></svg:path>`,
-})
-export class OpenmojiFlagJordanIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiFlagKazakhstanIcon],svg[openmoji-flag-kazakhstan-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#61b2e4" d="M5 17h62v38H5z"></svg:path><svg:path fill="#fcea2b" stroke="#fcea2b" stroke-linecap="round" stroke-linejoin="round" stroke-width=".685" d="m44.889 28.387l-2.253 2.657l3.287-1.165l-2.828 2.041l3.471-.342l-3.232 1.308l3.452.493l-3.452.493l3.232 1.308l-3.471-.343l2.828 2.041l-3.287-1.164l2.253 2.657l-2.91-1.917l1.554 3.122l-2.37-2.56l.76 3.403l-1.684-3.048l-.075 3.486l-.911-3.37l-.911 3.37l-.075-3.486l-1.685 3.048l.76-3.404l-2.37 2.561l1.555-3.122l-2.91 1.917l2.253-2.657l-3.287 1.164l2.828-2.04l-3.472.342l3.232-1.308l-3.451-.493l3.451-.493l-3.232-1.308l3.472.342l-2.828-2.04l3.287 1.164l-2.253-2.657l2.91 1.917l-1.554-3.123l2.37 2.562l-.76-3.404l1.684 3.047l.075-3.485l.91 3.369l.912-3.37l.075 3.486l1.685-3.047l-.76 3.404l2.369-2.562l-1.555 3.123z"></svg:path><svg:path fill="none" stroke="#fcea2b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M31.09 39.13s2.312 4.125 6.688 4.688c2.768.356 1.376.65-.042 1.065c-.824.241-1.676.563-1.676.563s1.315-.52 3.443-.616c2.104-.094 1.47-.069.834-.21c-.456-.101-1.57-.196-1.263-.268c4.083-.956 7.427-2.98 8.33-5.222"></svg:path><svg:path fill="none" stroke="#fcea2b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.995" d="M10.5 22.02v27.95"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z"></svg:path>`,
-})
-export class OpenmojiFlagKazakhstanIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[openmojiFlagKenyaIcon],svg[openmoji-flag-kenya-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#5c9e31" d="M5 17h62v38H5z"></svg:path><svg:path d="M5 17h62v13H5z"></svg:path><svg:path fill="#d22f27" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M5 30.5h62v11H5z"></svg:path><svg:path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="m29.25 47.691l13.5-23.382m-13.5 0l13.5 23.382"></svg:path><svg:path fill="#d22f27" d="M36.231 25.057a.5.5 0 0 0-.462 0A12.3 12.3 0 0 0 29.5 36a12.3 12.3 0 0 0 6.267 10.943a.5.5 0 0 0 .231.057h.004a.5.5 0 0 0 .23-.057A12.3 12.3 0 0 0 42.5 36a12.3 12.3 0 0 0-6.269-10.943"></svg:path><svg:path d="M41.703 31.501A6.3 6.3 0 0 0 40 36a6.3 6.3 0 0 0 1.704 4.5a13.1 13.1 0 0 0 0-8.999Zm-11.407 8.998A6.3 6.3 0 0 0 32 36a6.3 6.3 0 0 0-1.703-4.499a13.1 13.1 0 0 0 0 8.998Z"></svg:path><svg:path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M36 27v18"></svg:path><svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z"></svg:path>`,
-})
-export class OpenmojiFlagKenyaIcon {
-  readonly viewBox = input("0 0 72 72")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[openmojiFlagKiribatiIcon],svg[openmoji-flag-kiribati-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8444,57 @@ export class OpenmojiKeyboardIcon {
   template: `<svg:path fill="#d0cfce" d="M11.875 12.166h48V60h-48z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M12.125 11.916h48v48h-48z"></svg:path><svg:path d="M35.875 44.78a4.76 4.76 0 0 1-4.76-4.76v-7.874a4.76 4.76 0 0 1 4.76-4.76h0a4.76 4.76 0 0 1 4.76 4.76v7.874a4.76 4.76 0 0 1-4.76 4.76"></svg:path></svg:g>`,
 })
 export class OpenmojiKeycap0Icon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiKeycap1Icon],svg[openmoji-keycap-1-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#d0cfce" d="M11.875 12.291h48v47.834h-48z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M12.125 12.041h48v48h-48z"></svg:path><svg:path d="m31.664 30.895l4.8-3.59l.122 17.472"></svg:path></svg:g>`,
+})
+export class OpenmojiKeycap1Icon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiKeycap10Icon],svg[openmoji-keycap-10-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#d0cfce" d="M11.875 12.166h48V60h-48z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M12.125 11.916h48v48h-48z"></svg:path><svg:path d="M39.822 44.442a4.643 4.643 0 0 1-4.643-4.643v-7.681a4.643 4.643 0 0 1 4.643-4.643h0a4.643 4.643 0 0 1 4.643 4.643v7.681a4.643 4.643 0 0 1-4.643 4.643M25.535 31.05l4.644-3.48v16.776"></svg:path></svg:g>`,
+})
+export class OpenmojiKeycap10Icon {
+  readonly viewBox = input("0 0 72 72")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[openmojiKeycap2Icon],svg[openmoji-keycap-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#d0cfce" d="M12 12.166h48V60H12z"></svg:path><svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M12.25 11.916h48v48h-48z"></svg:path><svg:path d="M31.03 31.498a5.33 5.33 0 0 1 5.22-4.255h0a5.3 5.3 0 0 1 3.768 1.561a4.115 4.115 0 0 1-.046 5.58l-9.05 10.205h10.656"></svg:path></svg:g>`,
+})
+export class OpenmojiKeycap2Icon {
   readonly viewBox = input("0 0 72 72")
   readonly width = input("1em")
   readonly height = input("1em")

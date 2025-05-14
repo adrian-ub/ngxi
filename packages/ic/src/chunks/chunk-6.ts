@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[icOutlineFluorescentIcon],svg[ic-outline-fluorescent-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 15h14V9H5zm2-4h10v2H7zm4-9h2v3h-2zm6.286 4.399l1.79-1.803l1.42 1.41l-1.79 1.802zM11 19h2v3h-2zm6.29-1.29l1.79 1.8l1.42-1.42l-1.8-1.79zM3.495 6.01l1.407-1.408L6.69 6.391L5.284 7.798zm-.003 12.066l1.803-1.79l1.409 1.42l-1.803 1.79z"></svg:path>`,
-})
-export class IcOutlineFluorescentIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[icOutlineFlutterDashIcon],svg[ic-outline-flutter-dash-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class IcOutlineNoPhotographyIcon {
   template: `<svg:path fill="currentColor" d="M21.26 21.21L3.79 3.74L2.38 5.15l2.74 2.74l-.12.12V19c0 1.1.9 2 2 2h10c.35 0 .68-.1.97-.26l1.88 1.88zM7 19V9.77L16.23 19zm3.84-14H17v9.11l2 2V5c0-1.1-.9-2-2-2h-6.99L7.95 5.06l1.41 1.41z"></svg:path>`,
 })
 export class IcOutlineNoSimIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icOutlineNoStrollerIcon],svg[ic-outline-no-stroller-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 20c0 1.1-.9 2-2 2s-2-.9-2-2s.9-2 2-2s2 .9 2 2m7-11.34v3.51l2 2v-7.9c.58-.68.97-1.27 1.65-1.27c.77 0 1.35.66 1.35 1.48V7h2v-.52C22 4.56 20.52 3 18.65 3c-1.66 0-2.54 1.27-3.18 2.03l-3.5 4.11l1.42 1.42zm4.78 13.95l-1.91-1.91c-.29.76-1.01 1.3-1.87 1.3c-1.1 0-2-.9-2-2c0-.86.54-1.58 1.3-1.87L14.17 17H7.43c-.85 0-1.31-1-.76-1.65l2.69-3.16l-7.97-7.97L2.8 2.81l7.86 7.86l1.42 1.42l9.11 9.11zM12.17 15l-1.39-1.39L9.6 15zM10 5c.29 0 .58.02.86.05L9.49 6.67l1.42 1.42L14.3 4.1C13.03 3.4 11.56 3 10 3c-1.23 0-2.4.25-3.47.7L8.1 5.27A7 7 0 0 1 10 5"></svg:path>`,
+})
+export class IcOutlineNoStrollerIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

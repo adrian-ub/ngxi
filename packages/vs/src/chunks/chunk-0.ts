@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[vs2SquareIcon],svg[vs-2-square-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1455 0H336Q197 0 98.5 98.5T0 336v1119q0 139 98 237.5t238 98.5h1119q139 0 237.5-98.5T1791 1455V336q0-139-98.5-237.5T1455 0M346 1437v-11q0-70 59.5-155.5T557 1108t200.5-144T967 857q86-35 126.5-71t41.5-80q1-67-77-119t-157-52q-46 0-104 25t-107 66.5t-68 84.5q-3 6-6.5 14.5T611 736t-3.5 6t-3.5 4t-5 1t-7 0t-10.5-1H404q-30 0-48-26t-10-51q55-168 212-269t354-101q87 0 173.5 26t156.5 73t113.5 119.5T1399 674q0 81-24 145t-65.5 106.5t-92 75.5t-109 60t-112 52.5t-106.5 61t-86 76.5h595q19 0 33.5 16.5t14.5 39.5v130q0 23-14.5 39.5T1399 1493H394q-19 0-33.5-16.5T346 1437"></svg:path>`,
-})
-export class Vs2SquareIcon {
-  readonly viewBox = input("0 0 1792 1792")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[vs0SquareIcon],svg[vs-0-square-icon]',
   host: {
     role: 'img',
@@ -29,6 +12,23 @@ export class Vs2SquareIcon {
   template: `<svg:path fill="currentColor" d="M336 0h1120q139 0 237.5 98.5T1792 336v1120q0 139-98.5 237.5T1456 1792H336q-139 0-237.5-98.5T0 1456V336Q0 197 98.5 98.5T336 0m560 1493q150 0 276.5-80t200.5-217.5t74-299.5t-74-299.5T1172.5 379T896 299t-276.5 80T419 596.5T345 896t74 299.5T619.5 1413t276.5 80m-77-271q40 10 75 10q127 0 216.5-97t89.5-239q0-107-56-195zm154-652q-40-10-75-10q-128 1-217 97.5T592 896q0 107 56 195z"></svg:path>`,
 })
 export class Vs0SquareIcon {
+  readonly viewBox = input("0 0 1792 1792")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vs2SquareIcon],svg[vs-2-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1455 0H336Q197 0 98.5 98.5T0 336v1119q0 139 98 237.5t238 98.5h1119q139 0 237.5-98.5T1791 1455V336q0-139-98.5-237.5T1455 0M346 1437v-11q0-70 59.5-155.5T557 1108t200.5-144T967 857q86-35 126.5-71t41.5-80q1-67-77-119t-157-52q-46 0-104 25t-107 66.5t-68 84.5q-3 6-6.5 14.5T611 736t-3.5 6t-3.5 4t-5 1t-7 0t-10.5-1H404q-30 0-48-26t-10-51q55-168 212-269t354-101q87 0 173.5 26t156.5 73t113.5 119.5T1399 674q0 81-24 145t-65.5 106.5t-92 75.5t-109 60t-112 52.5t-106.5 61t-86 76.5h595q19 0 33.5 16.5t14.5 39.5v130q0 23-14.5 39.5T1399 1493H394q-19 0-33.5-16.5T346 1437"></svg:path>`,
+})
+export class Vs2SquareIcon {
   readonly viewBox = input("0 0 1792 1792")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,23 +172,6 @@ export class Vs9SquareIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vsASquareIcon],svg[vs-a-square-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M336 0h1120q139 0 237.5 98.5T1792 336v1120q0 139-98.5 237.5T1456 1792H336q-139 0-237.5-98.5T0 1456V336Q0 197 98.5 98.5T336 0m331 1188h458l85 251q11 36 24 45t44 9h157q53 0 35-69l-333-964q-17-64-57.5-112.5T982 299H810q-57 0-97.5 48.5T655 460l-333 964q-18 69 35 69h157q31 0 44-9t24-45zm391-225H734l130-385q8-26 32-26t32 26z"></svg:path>`,
-})
-export class VsASquareIcon {
-  readonly viewBox = input("0 0 1792 1792")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[vsBSquareIcon],svg[vs-b-square-icon]',
   host: {
     role: 'img',
@@ -199,6 +182,23 @@ export class VsASquareIcon {
   template: `<svg:path fill="currentColor" d="M336 0h1120q139 0 237.5 98.5T1792 336v1120q0 139-98.5 237.5T1456 1792H336q-139 0-237.5-98.5T0 1456V336Q0 197 98.5 98.5T336 0m339 507v285h334q49 0 84.5-41.5T1129 650t-35-101t-85-42zM428 374v1044q0 31 21.5 53t52.5 22h507q147 0 251-103t104-248q0-144-102-246q102-102 102-246q0-145-104-248t-251-103H502q-31 0-52.5 22T428 374m581 911H675v-285h334q49 0 84.5 41.5T1129 1142t-35 101t-85 42"></svg:path>`,
 })
 export class VsBSquareIcon {
+  readonly viewBox = input("0 0 1792 1792")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vsASquareIcon],svg[vs-a-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M336 0h1120q139 0 237.5 98.5T1792 336v1120q0 139-98.5 237.5T1456 1792H336q-139 0-237.5-98.5T0 1456V336Q0 197 98.5 98.5T336 0m331 1188h458l85 251q11 36 24 45t44 9h157q53 0 35-69l-333-964q-17-64-57.5-112.5T982 299H810q-57 0-97.5 48.5T655 460l-333 964q-18 69 35 69h157q31 0 44-9t24-45zm391-225H734l130-385q8-26 32-26t32 26z"></svg:path>`,
+})
+export class VsASquareIcon {
   readonly viewBox = input("0 0 1792 1792")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,23 +274,6 @@ export class VsCSquareIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vsCalendarAltIcon],svg[vs-calendar-alt-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M561 561v224h224V561zm320 0v224h224V561zm320 0v224h224V561zm0 320v224h224V881zm-320 0v224h224V881zm0 320v224h224v-224zm-320 0v224h224v-224zm0-320v224h224V881zm-320 320v224h224v-224zm0-320v224h224V881zm271-634V41q0-16-9.5-28.5T480 0h-64q-13 0-22.5 12.5T384 41v206q0 17 9.5 28.5T416 288h64q14-1 23-12.5t9-28.5M128 1664h1408q52 0 89-36t39-88V252q0-51-38-87.5t-90-36.5h-192v96q0 63-21 95.5t-75 32.5h-64q-96-1-96-127v-97H576v97q0 126-96 127h-64q-54 0-75-32.5T320 224v-96H128q-52 0-90 36.5T0 252v1288q0 51 37.5 87t90.5 37m0-1216h1408v1088H128zm1152-201V41q0-16-9.5-28.5T1248 0h-64q-13 0-22.5 12.5T1152 41v206q0 17 9.5 28.5T1184 288h64q14-1 23-12.5t9-28.5"></svg:path>`,
-})
-export class VsCalendarAltIcon {
-  readonly viewBox = input("0 0 1664 1664")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[vsCalendarIcon],svg[vs-calendar-icon]',
   host: {
     role: 'img',
@@ -301,6 +284,23 @@ export class VsCalendarAltIcon {
   template: `<svg:path fill="currentColor" d="M56 333h1553q55 0 55-56V111q0-47-32-79t-79-32H111Q64 0 32 32T0 111v166q0 56 56 56m221 998H56q-56 0-56 56v166q0 47 32 79t79 32h166q56 0 56-56v-221q0-56-56-56m1110 0q-56 0-56 56v221q0 56 56 56h166q47 0 79-32t32-79v-166q0-56-55-56zm-444 0q-56 0-56 56v221q0 56 56 56h222q55 0 55-56v-221q0-56-55-56zm-444 0q-55 0-55 56v221q0 56 55 56h222q56 0 56-56v-221q0-56-56-56zm888-444q-56 0-56 56v222q0 55 56 55h222q55 0 55-55V943q0-56-55-56zm-444 0q-56 0-56 56v222q0 55 56 55h222q55 0 55-55V943q0-56-55-56zm-887 0q-56 0-56 56v222q0 55 56 55h221q56 0 56-55V943q0-56-56-56zm443 0q-55 0-55 56v222q0 55 55 55h222q56 0 56-55V943q0-56-56-56zm888-443q-56 0-56 55v222q0 56 56 56h222q55 0 55-56V499q0-55-55-55zm-444 0q-56 0-56 55v222q0 56 56 56h222q55 0 55-56V499q0-55-55-55zm-887 0q-56 0-56 55v222q0 56 56 56h221q56 0 56-56V499q0-55-56-55zm443 0q-55 0-55 55v222q0 56 55 56h222q56 0 56-56V499q0-55-56-55z"></svg:path>`,
 })
 export class VsCalendarIcon {
+  readonly viewBox = input("0 0 1664 1664")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vsCalendarAltIcon],svg[vs-calendar-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M561 561v224h224V561zm320 0v224h224V561zm320 0v224h224V561zm0 320v224h224V881zm-320 0v224h224V881zm0 320v224h224v-224zm-320 0v224h224v-224zm0-320v224h224V881zm-320 320v224h224v-224zm0-320v224h224V881zm271-634V41q0-16-9.5-28.5T480 0h-64q-13 0-22.5 12.5T384 41v206q0 17 9.5 28.5T416 288h64q14-1 23-12.5t9-28.5M128 1664h1408q52 0 89-36t39-88V252q0-51-38-87.5t-90-36.5h-192v96q0 63-21 95.5t-75 32.5h-64q-96-1-96-127v-97H576v97q0 126-96 127h-64q-54 0-75-32.5T320 224v-96H128q-52 0-90 36.5T0 252v1288q0 51 37.5 87t90.5 37m0-1216h1408v1088H128zm1152-201V41q0-16-9.5-28.5T1248 0h-64q-13 0-22.5 12.5T1152 41v206q0 17 9.5 28.5T1184 288h64q14-1 23-12.5t9-28.5"></svg:path>`,
+})
+export class VsCalendarAltIcon {
   readonly viewBox = input("0 0 1664 1664")
   readonly width = input("1em")
   readonly height = input("1em")

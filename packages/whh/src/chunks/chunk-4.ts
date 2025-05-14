@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[whhUseraltIcon],svg[whh-useralt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1024 958q0 12-13.5 22T969 996.5t-57.5 12t-75.5 8.5t-80 4.5t-87.5 2.5t-81 1h-151l-81-1l-87.5-2.5l-80-4.5l-75.5-8.5l-57.5-12L13.5 980L0 958q2-88 110-155.5T384 713v-33q-52-23-90-65t-59.5-98.5t-32-121T192 257q0-65 25-115t69-80.5t101-46T512 0t125 15.5t101 46t69 80.5t25 115q0 349-192 426v30q166 22 274 89.5T1024 958M768 274q0-104-71.5-157T512 64t-184.5 53T256 274q0 68 10 125t32 106.5t60 82.5t90 46v138q-60 5-117 20.5t-98 34t-73 38t-48 34.5t-16 22q0 14 38 23t114 12t127 4t137 1t137-1t127-4t114-12t38-23q0-7-16-22t-48-34.5t-72.5-38t-98-34T576 772V634q192-41 192-360"></svg:path>`,
+})
+export class WhhUseraltIcon {
+  readonly viewBox = input("0 0 1024 1025")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[whhUserfilterIcon],svg[whh-userfilter-icon]',
   host: {
     role: 'img',
@@ -2105,22 +2122,5 @@ export class WhhZoomoutIcon {
 export class WhhZurmoIcon {
   readonly viewBox = input("0 0 640 1024")
   readonly width = input("0.63em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[whhAddcommentIcon],svg[whh-addcomment-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M512 896q-66 0-134-16q-34 40-69.5 69.5t-60 43.5t-47.5 21.5t-30.5 8.5t-10.5 1q26-57 30-124.5T177 786Q94 723 47 635T0 448q0-91 40.5-174t109-143T313 35.5T512 0t199 35.5T874.5 131t109 143t40.5 174t-40.5 174t-109 143T711 860.5T512 896m256-480q0-13-9.5-22.5T736 384H576V224q0-13-9.5-22.5T544 192h-64q-13 0-22.5 9.5T448 224v160H288q-13 0-22.5 9.5T256 416v64q0 13 9.5 22.5T288 512h160v160q0 13 9.5 22.5T480 704h64q13 0 22.5-9.5T576 672V512h160q13 0 22.5-9.5T768 480z"></svg:path>`,
-})
-export class WhhAddcommentIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
   readonly height = input("1em")
 }

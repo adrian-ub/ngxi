@@ -19,23 +19,6 @@ export class BrandicoAmexIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[brandicoBloggerIcon],svg[brandico-blogger-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M550.422 0L249.556 1.285C122.233 18.801 13.145 97.717 3.51 232.349c-3.046 12.359-1.544 24.907-1.975 36.389C.147 327.571.48 390.867 1.379 451.439c.24 95.584-2.583 172.602-.783 243.664c1.153 208.816 124.429 306.403 348.288 302.339c55.46-1.007 118.876-1.368 191.602.533c72.331.488 128.091 5.253 177.78-1.818c220.679-31.402 263.696-179.41 272.657-299.236V559.699c-6.44-139.393-107.508-177.77-193.922-180.601c9.288-34.845 11.521-82.219 3.385-146.029c-10.471-123.99-98.471-220.938-249.964-233.07zM298.828 187.246h244.761c135.326 18.024 128.953 163.934 0 184.864H298.828c-135.326-18.024-128.953-163.934 0-184.864m-55.572 403.798l449.653 1.536c135.976 17.536 136.359 183.07 4.733 203.325l-449.653-1.568c-139.444-17.144-137.487-182.865-4.733-203.294z"></svg:path>`,
-})
-export class BrandicoBloggerIcon {
-  readonly viewBox = input("0 0 990.933 1000")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[brandicoBandcampIcon],svg[brandico-bandcamp-icon]',
   host: {
     role: 'img',
@@ -47,6 +30,23 @@ export class BrandicoBloggerIcon {
 })
 export class BrandicoBandcampIcon {
   readonly viewBox = input("0 0 1000 1000")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[brandicoBloggerIcon],svg[brandico-blogger-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M550.422 0L249.556 1.285C122.233 18.801 13.145 97.717 3.51 232.349c-3.046 12.359-1.544 24.907-1.975 36.389C.147 327.571.48 390.867 1.379 451.439c.24 95.584-2.583 172.602-.783 243.664c1.153 208.816 124.429 306.403 348.288 302.339c55.46-1.007 118.876-1.368 191.602.533c72.331.488 128.091 5.253 177.78-1.818c220.679-31.402 263.696-179.41 272.657-299.236V559.699c-6.44-139.393-107.508-177.77-193.922-180.601c9.288-34.845 11.521-82.219 3.385-146.029c-10.471-123.99-98.471-220.938-249.964-233.07zM298.828 187.246h244.761c135.326 18.024 128.953 163.934 0 184.864H298.828c-135.326-18.024-128.953-163.934 0-184.864m-55.572 403.798l449.653 1.536c135.976 17.536 136.359 183.07 4.733 203.325l-449.653-1.568c-139.444-17.144-137.487-182.865-4.733-203.294z"></svg:path>`,
+})
+export class BrandicoBloggerIcon {
+  readonly viewBox = input("0 0 990.933 1000")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -121,23 +121,6 @@ export class BrandicoCodepenIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[brandicoDiigoIcon],svg[brandico-diigo-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M250.64 393.24c112.01-1.75 173.43-61.25 230.68-116.99v672.38H368.5c-1.02-27.07-1.59-54.49-2.01-82.03V678.46c.76-71.14 1.91-142.32 2.17-212.16c-15.86 4.21-33.75 12.58-53.92 17.89c-60.61 15.99-140.37 7.62-186.5-19.38c.15 33.14.37 66.55.63 100.07v351.6c-.19 10.72-.31 21.48-.54 32.17H15.07V274.5C72.96 335.79 137.09 395 250.64 393.24m176.8-196.08c40.09 0 72.57-33.26 72.57-74.27s-32.48-74.26-72.57-74.26c-40.08 0-72.58 33.24-72.58 74.26s32.5 74.27 72.58 74.27m-354.85 0c40.08 0 72.56-33.26 72.56-74.27s-32.48-74.26-72.56-74.26C32.5 48.63 0 81.87 0 122.89s32.5 74.27 72.59 74.27"></svg:path>`,
-})
-export class BrandicoDiigoIcon {
-  readonly viewBox = input("0 0 500 1000")
-  readonly width = input("0.5em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[brandicoDeviantartIcon],svg[brandico-deviantart-icon]',
   host: {
     role: 'img',
@@ -155,6 +138,23 @@ export class BrandicoDeviantartIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[brandicoDiigoIcon],svg[brandico-diigo-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M250.64 393.24c112.01-1.75 173.43-61.25 230.68-116.99v672.38H368.5c-1.02-27.07-1.59-54.49-2.01-82.03V678.46c.76-71.14 1.91-142.32 2.17-212.16c-15.86 4.21-33.75 12.58-53.92 17.89c-60.61 15.99-140.37 7.62-186.5-19.38c.15 33.14.37 66.55.63 100.07v351.6c-.19 10.72-.31 21.48-.54 32.17H15.07V274.5C72.96 335.79 137.09 395 250.64 393.24m176.8-196.08c40.09 0 72.57-33.26 72.57-74.27s-32.48-74.26-72.57-74.26c-40.08 0-72.58 33.24-72.58 74.26s32.5 74.27 72.58 74.27m-354.85 0c40.08 0 72.56-33.26 72.56-74.27s-32.48-74.26-72.56-74.26C32.5 48.63 0 81.87 0 122.89s32.5 74.27 72.59 74.27"></svg:path>`,
+})
+export class BrandicoDiigoIcon {
+  readonly viewBox = input("0 0 500 1000")
+  readonly width = input("0.5em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[brandicoDiscoverIcon],svg[brandico-discover-icon]',
   host: {
     role: 'img',
@@ -165,6 +165,23 @@ export class BrandicoDeviantartIcon {
   template: `<svg:path fill="currentColor" d="M45.938 186c-25.69 0-46.532 20.814-46.532 46.5v535c0 25.689 20.844 46.5 46.532 46.5h906.968c25.69 0 46.5-20.814 46.5-46.5v-535c0-25.689-20.812-46.5-46.5-46.5zm479.937 176.781c.678-.017 1.349 0 2.031 0c43.67 0 79.063 35.387 79.063 79.063c0 43.675-35.394 79.094-79.063 79.094s-79.062-35.419-79.062-79.094c0-42.993 34.305-77.98 77.031-79.063m-249.563 3.469c15.675 0 30.042 5.38 42.032 15.875L303.75 401.25c-7.27-8.152-14.146-11.594-22.5-11.594c-12.028 0-20.781 6.835-20.781 15.844c0 7.726 4.915 11.836 21.656 18.031c31.73 11.607 41.125 21.899 41.125 44.625c0 27.695-20.323 46.969-49.313 46.969c-21.221 0-36.68-8.381-49.53-27.25l18.03-17.344c6.42 12.425 17.134 19.063 30.438 19.063c12.442 0 21.656-8.567 21.656-20.156c0-6.008-2.769-11.17-8.344-14.813c-2.806-1.724-8.363-4.304-19.28-8.156c-26.2-9.435-35.188-19.51-35.188-39.219c0-23.412 19.289-41 44.594-41zm131.22 0c12 0 22.094 2.565 34.343 8.75v32.688c-11.603-11.298-21.69-16.032-35-16.032c-26.162 0-46.719 21.595-46.719 48.938c0 28.845 19.936 49.125 48.031 49.125c12.648 0 22.533-4.479 33.688-15.594v32.688c-12.686 5.948-22.988 8.312-35 8.312c-42.478 0-75.469-32.48-75.469-74.344c0-41.413 33.863-74.531 76.125-74.531zm-352.876 2.344h41.25c45.578 0 77.344 29.158 77.344 71.031c0 20.879-9.724 41.072-26.156 54.469c-13.833 11.308-29.586 16.375-51.406 16.375H54.656zm131.375 0h26.75v141.875h-26.75zm409.313 0h30.406l38.063 95.969l38.562-95.97h30.188l-61.657 146.532h-15zm148.843 0h79.063v24.031h-51.219v31.5h49.344v24.031h-49.344v38.281h51.219v24.032h-79.063zm98.844 0h41.438c32.246 0 50.75 15.312 50.75 41.875c0 21.723-11.597 35.976-32.657 40.219l45.125 59.78h-34.406l-38.687-57h-3.657v57h-27.906V368.595zm28.094 22.344v43.187h8.094c17.681 0 27.062-7.7 27.062-22.031c0-13.874-9.382-21.156-26.625-21.156zM82.75 392.5v94.063h7.531c18.18 0 29.693-3.437 38.531-11.313c9.737-8.541 15.563-22.186 15.563-35.844c0-13.625-5.826-26.86-15.563-35.406c-9.29-8.3-20.352-11.5-38.53-11.5zm904.469 134.188s.28 152.372-.344 232.468c-.055 7.01-2.621 18.107-10.594 27.344s-20.373 13.558-27.781 13.531s-724.094 0-724.094 0C716.298 715.174 987.22 526.688 987.22 526.688z"></svg:path>`,
 })
 export class BrandicoDiscoverIcon {
+  readonly viewBox = input("0 0 1000 1000")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[brandicoFacebookRectIcon],svg[brandico-facebook-rect-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M182.594 0C81.445 0 0 81.445 0 182.594v634.813c0 101.149 81.445 182.594 182.594 182.594h344.063V609.063H423.282v-140.75h103.375v-120.25c0-94.475 61.079-181.219 201.781-181.219c56.968 0 99.094 5.469 99.094 5.469l-3.313 131.438s-42.963-.406-89.844-.406c-50.739 0-58.875 23.378-58.875 62.188v102.781h152.75l-6.656 140.75H675.5v390.938h141.906c101.149 0 182.594-81.445 182.594-182.594V182.595C1000 81.446 918.555.001 817.406.001H182.593z"></svg:path>`,
+})
+export class BrandicoFacebookRectIcon {
   readonly viewBox = input("0 0 1000 1000")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -201,23 +218,6 @@ export class BrandicoFacebookIcon {
 export class BrandicoFriendfeedIcon {
   readonly viewBox = input("0 0 957.348 1000")
   readonly width = input("0.96em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[brandicoFacebookRectIcon],svg[brandico-facebook-rect-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M182.594 0C81.445 0 0 81.445 0 182.594v634.813c0 101.149 81.445 182.594 182.594 182.594h344.063V609.063H423.282v-140.75h103.375v-120.25c0-94.475 61.079-181.219 201.781-181.219c56.968 0 99.094 5.469 99.094 5.469l-3.313 131.438s-42.963-.406-89.844-.406c-50.739 0-58.875 23.378-58.875 62.188v102.781h152.75l-6.656 140.75H675.5v390.938h141.906c101.149 0 182.594-81.445 182.594-182.594V182.595C1000 81.446 918.555.001 817.406.001H182.593z"></svg:path>`,
-})
-export class BrandicoFacebookRectIcon {
-  readonly viewBox = input("0 0 1000 1000")
-  readonly width = input("1em")
   readonly height = input("1em")
 }
 

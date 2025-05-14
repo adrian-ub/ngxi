@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[feAddCartIcon],svg[fe-add-cart-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8 16h8a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1V4H5a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1v9h8.775L18 7V5.001c1.145 0 2 .894 2 1.999q0 .22-.05.434l-1.151 5c-.21.915-1.052 1.566-2.024 1.566H8.073L8 13.999zm-.5 6a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3m9 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3M14 5h1a1 1 0 0 1 0 2h-1v1a1 1 0 0 1-2 0V7h-1a1 1 0 0 1 0-2h1V4a1 1 0 0 1 2 0z"></svg:path>`,
+})
+export class FeAddCartIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[feActivityIcon],svg[fe-activity-icon]',
   host: {
     role: 'img',
@@ -53,6 +70,23 @@ export class FeAlignCenterIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[feAlignTopIcon],svg[fe-align-top-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.8 3h14.4c.442 0 .8.448.8 1s-.358 1-.8 1H4.8C4.358 5 4 4.552 4 4s.358-1 .8-1M7 9a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0zm6 0a2 2 0 1 1 4 0v6a2 2 0 1 1-4 0z"></svg:path>`,
+})
+export class FeAlignTopIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[feAlignLeftIcon],svg[fe-align-left-icon]',
   host: {
     role: 'img',
@@ -63,23 +97,6 @@ export class FeAlignCenterIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7 21a1 1 0 0 1-2 0V3a1 1 0 1 1 2 0zm4-12a2 2 0 1 1 0-4h6a2 2 0 1 1 0 4zm0 3h4a2 2 0 1 1 0 4h-4a2 2 0 1 1 0-4"></svg:path>`,
 })
 export class FeAlignLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[feAddCartIcon],svg[fe-add-cart-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8 16h8a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1V4H5a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1v9h8.775L18 7V5.001c1.145 0 2 .894 2 1.999q0 .22-.05.434l-1.151 5c-.21.915-1.052 1.566-2.024 1.566H8.073L8 13.999zm-.5 6a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3m9 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3M14 5h1a1 1 0 0 1 0 2h-1v1a1 1 0 0 1-2 0V7h-1a1 1 0 0 1 0-2h1V4a1 1 0 0 1 2 0z"></svg:path>`,
-})
-export class FeAddCartIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,23 +121,6 @@ export class FeAlignRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[feAlignTopIcon],svg[fe-align-top-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.8 3h14.4c.442 0 .8.448.8 1s-.358 1-.8 1H4.8C4.358 5 4 4.552 4 4s.358-1 .8-1M7 9a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0zm6 0a2 2 0 1 1 4 0v6a2 2 0 1 1-4 0z"></svg:path>`,
-})
-export class FeAlignTopIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[feAlignVerticallyIcon],svg[fe-align-vertically-icon]',
   host: {
     role: 'img',
@@ -131,6 +131,23 @@ export class FeAlignTopIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M17 13v2a2 2 0 1 1-4 0v-2h-2v4.714C11 18.977 10.105 20 9 20s-2-1.023-2-2.286V13H3a1 1 0 0 1 0-2h4V6.286C7 5.023 7.895 4 9 4s2 1.023 2 2.286V11h2V9a2 2 0 1 1 4 0v2h4a1 1 0 0 1 0 2z"></svg:path>`,
 })
 export class FeAlignVerticallyIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[feAngryIcon],svg[fe-angry-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m4-3h-1.339s-.417-2.667-2.661-2.667S9.333 17 9.333 17H8a4 4 0 1 1 8 0m-5.494-8.01a1.5 1.5 0 1 1-1.52-.416L7.33 7.97a.5.5 0 0 1 .342-.94l2.82 1.026a.5.5 0 0 1 .015.934m2.897 0a.499.499 0 0 1 .016-.934l2.82-1.026a.5.5 0 1 1 .342.94l-1.659.603a1.5 1.5 0 1 1-1.519.417"></svg:path>`,
+})
+export class FeAngryIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -165,23 +182,6 @@ export class FeAppMenuIcon {
   template: `<svg:path fill="currentColor" d="m9.694 8l-1 6H6v6h12v-6h-2.694l-1-6zM10 3v3h4V3a1 1 0 0 1 2 0v3l1 6h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h1l1-6V3a1 1 0 1 1 2 0M8 16h8v2H8z"></svg:path>`,
 })
 export class FeApronIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[feAngryIcon],svg[fe-angry-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m4-3h-1.339s-.417-2.667-2.661-2.667S9.333 17 9.333 17H8a4 4 0 1 1 8 0m-5.494-8.01a1.5 1.5 0 1 1-1.52-.416L7.33 7.97a.5.5 0 0 1 .342-.94l2.82 1.026a.5.5 0 0 1 .015.934m2.897 0a.499.499 0 0 1 .016-.934l2.82-1.026a.5.5 0 1 1 .342.94l-1.659.603a1.5 1.5 0 1 1-1.519.417"></svg:path>`,
-})
-export class FeAngryIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

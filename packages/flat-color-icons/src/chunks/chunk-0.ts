@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[flatColorIconsAddColumnIcon],svg[flat-color-icons-add-column-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#90CAF9" d="M30 5H18c-2.2 0-4 1.8-4 4v30c0 2.2 1.8 4 4 4h12c2.2 0 4-1.8 4-4V9c0-2.2-1.8-4-4-4M18 39V9h12v30z"></svg:path><svg:circle cx="38" cy="38" r="10" fill="#43A047"></svg:circle><svg:g fill="#fff"><svg:path d="M36 32h4v12h-4z"></svg:path><svg:path d="M32 36h12v4H32z"></svg:path></svg:g>`,
-})
-export class FlatColorIconsAddColumnIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[flatColorIconsAboutIcon],svg[flat-color-icons-about-icon]',
   host: {
     role: 'img',
@@ -53,16 +36,16 @@ export class FlatColorIconsAcceptDatabaseIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flatColorIconsAddDatabaseIcon],svg[flat-color-icons-add-database-icon]',
+  selector: 'svg[flatColorIconsAddColumnIcon],svg[flat-color-icons-add-column-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#D1C4E9" d="M38 7H10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2m0 12H10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2m0 12H10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2"></svg:path><svg:circle cx="38" cy="38" r="10" fill="#43A047"></svg:circle><svg:g fill="#fff"><svg:path d="M36 32h4v12h-4z"></svg:path><svg:path d="M32 36h12v4H32z"></svg:path></svg:g>`,
+  template: `<svg:path fill="#90CAF9" d="M30 5H18c-2.2 0-4 1.8-4 4v30c0 2.2 1.8 4 4 4h12c2.2 0 4-1.8 4-4V9c0-2.2-1.8-4-4-4M18 39V9h12v30z"></svg:path><svg:circle cx="38" cy="38" r="10" fill="#43A047"></svg:circle><svg:g fill="#fff"><svg:path d="M36 32h4v12h-4z"></svg:path><svg:path d="M32 36h12v4H32z"></svg:path></svg:g>`,
 })
-export class FlatColorIconsAddDatabaseIcon {
+export class FlatColorIconsAddColumnIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,6 +70,23 @@ export class FlatColorIconsAddImageIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[flatColorIconsAddDatabaseIcon],svg[flat-color-icons-add-database-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#D1C4E9" d="M38 7H10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2m0 12H10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2m0 12H10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2"></svg:path><svg:circle cx="38" cy="38" r="10" fill="#43A047"></svg:circle><svg:g fill="#fff"><svg:path d="M36 32h4v12h-4z"></svg:path><svg:path d="M32 36h12v4H32z"></svg:path></svg:g>`,
+})
+export class FlatColorIconsAddDatabaseIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[flatColorIconsAddRowIcon],svg[flat-color-icons-add-row-icon]',
   host: {
     role: 'img',
@@ -104,23 +104,6 @@ export class FlatColorIconsAddRowIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flatColorIconsAdvanceIcon],svg[flat-color-icons-advance-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="#1565C0"><svg:path d="M46.1 24L33 35V13zM10 20h4v8h-4zm-6 0h4v8H4zm12 0h4v8h-4z"></svg:path><svg:path d="M22 20h14v8H22z"></svg:path></svg:g>`,
-})
-export class FlatColorIconsAdvanceIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[flatColorIconsAddressBookIcon],svg[flat-color-icons-address-book-icon]',
   host: {
     role: 'img',
@@ -131,6 +114,23 @@ export class FlatColorIconsAdvanceIcon {
   template: `<svg:path fill="#673AB7" d="M38 44H12V4h26c2.2 0 4 1.8 4 4v32c0 2.2-1.8 4-4 4"></svg:path><svg:path fill="#311B92" d="M10 4h2v40h-2c-2.2 0-4-1.8-4-4V8c0-2.2 1.8-4 4-4"></svg:path><svg:path fill="#fff" d="M36 24.2c-.1 4.8-3.1 6.9-5.3 6.7c-.6-.1-2.1-.1-2.9-1.6c-.8 1-1.8 1.6-3.1 1.6c-2.6 0-3.3-2.5-3.4-3.1c-.1-.7-.2-1.4-.1-2.2c.1-1 1.1-6.5 5.7-6.5c2.2 0 3.5 1.1 3.7 1.3l-.6 6.8c0 .3-.2 1.6 1.1 1.6c2.1 0 2.4-3.9 2.4-4.6c.1-1.2.3-8.2-7-8.2c-6.9 0-7.9 7.4-8 9.2c-.5 8.5 6 8.5 7.2 8.5c1.7 0 3.7-.7 3.9-.8l.4 2c-.3.2-2 1.1-4.4 1.1c-2.2 0-10.1-.4-9.8-10.8c.3-2.1 1.6-11.2 10.8-11.2S36 22.1 36 24.2m-11.9 1.3c-.1 1 0 1.8.2 2.3s.6.8 1.2.8c.1 0 .3 0 .4-.1c.2-.1.3-.1.5-.3c.2-.1.3-.3.5-.6c.2-.2.3-.6.4-1l.5-5.4c-.2-.1-.5-.1-.7-.1q-.75 0-1.2.3c-.3.2-.6.5-.9.8c-.2.4-.4.8-.6 1.3s-.2 1.3-.3 2"></svg:path>`,
 })
 export class FlatColorIconsAddressBookIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatColorIconsAdvanceIcon],svg[flat-color-icons-advance-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#1565C0"><svg:path d="M46.1 24L33 35V13zM10 20h4v8h-4zm-6 0h4v8H4zm12 0h4v8h-4z"></svg:path><svg:path d="M22 20h14v8H22z"></svg:path></svg:g>`,
+})
+export class FlatColorIconsAdvanceIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,23 +172,6 @@ export class FlatColorIconsAlarmClockIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flatColorIconsAlphabeticalSortingZaIcon],svg[flat-color-icons-alphabetical-sorting-za-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#2196F3" d="M16.8 40h-5.3l-1.1 3H6.9l5.7-15.2h2.9L21.1 43h-3.2zm-4.6-2.7H16l-1.9-5.7zm.2-19.6H20v2.5H8.4v-1.9L16 7.5H8.4V5h11.4v1.7z"></svg:path><svg:path fill="#546E7A" d="M38 33V5h-4v28h-6l8 10l8-10z"></svg:path>`,
-})
-export class FlatColorIconsAlphabeticalSortingZaIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[flatColorIconsAlphabeticalSortingAzIcon],svg[flat-color-icons-alphabetical-sorting-az-icon]',
   host: {
     role: 'img',
@@ -199,6 +182,23 @@ export class FlatColorIconsAlphabeticalSortingZaIcon {
   template: `<svg:path fill="#546E7A" d="M38 33V5h-4v28h-6l8 10l8-10z"></svg:path><svg:path fill="#2196F3" d="M16.8 17.2h-5.3l-1.1 3H6.9L12.6 5h2.9l5.7 15.2H18zm-4.6-2.7H16l-1.9-5.7zm.2 26H20V43H8.4v-1.9L16 30.3H8.4v-2.5h11.4v1.7z"></svg:path>`,
 })
 export class FlatColorIconsAlphabeticalSortingAzIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatColorIconsAlphabeticalSortingZaIcon],svg[flat-color-icons-alphabetical-sorting-za-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#2196F3" d="M16.8 40h-5.3l-1.1 3H6.9l5.7-15.2h2.9L21.1 43h-3.2zm-4.6-2.7H16l-1.9-5.7zm.2-19.6H20v2.5H8.4v-1.9L16 7.5H8.4V5h11.4v1.7z"></svg:path><svg:path fill="#546E7A" d="M38 33V5h-4v28h-6l8 10l8-10z"></svg:path>`,
+})
+export class FlatColorIconsAlphabeticalSortingZaIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -301,23 +301,6 @@ export class FlatColorIconsAreaChartIcon {
   template: `<svg:g fill="#FFA726"><svg:circle cx="10" cy="26" r="4"></svg:circle><svg:circle cx="38" cy="26" r="4"></svg:circle></svg:g><svg:path fill="#FFB74D" d="M39 19c0-12.7-30-8.3-30 0v10c0 8.3 6.7 15 15 15s15-6.7 15-15z"></svg:path><svg:path fill="#FF5722" d="M24 3C14.6 3 7 10.6 7 20v3.4L9 25v-3l21-9.8l9 9.8v3l2-1.6V20c0-8-5.7-17-17-17"></svg:path><svg:g fill="#784719"><svg:circle cx="31" cy="26" r="2"></svg:circle><svg:circle cx="17" cy="26" r="2"></svg:circle></svg:g><svg:path fill="#757575" d="M43 24c-.6 0-1 .4-1 1v-7c0-8.8-7.2-16-16-16h-7c-.6 0-1 .4-1 1s.4 1 1 1h7c7.7 0 14 6.3 14 14v10c0 .6.4 1 1 1s1-.4 1-1v2c0 3.9-3.1 7-7 7H24c-.6 0-1 .4-1 1s.4 1 1 1h11c5 0 9-4 9-9v-5c0-.6-.4-1-1-1"></svg:path><svg:g fill="#37474F"><svg:path d="M43 22h-1c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h1c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2"></svg:path><svg:circle cx="24" cy="38" r="2"></svg:circle></svg:g>`,
 })
 export class FlatColorIconsAssistantIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[flatColorIconsAudioFileIcon],svg[flat-color-icons-audio-file-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" d="M204 0h48v48h-48z"></svg:path><svg:path fill="#90CAF9" d="M244 45h-32V3h22l10 10z"></svg:path><svg:path fill="#E1F5FE" d="M242.5 14H233V4.5z"></svg:path><svg:g fill="#1976D2"><svg:circle cx="227" cy="30" r="4"></svg:circle><svg:path d="m234 21l-5-2v11h2v-7.1l3 1.1z"></svg:path></svg:g><svg:path fill="#90CAF9" d="M40 45H8V3h22l10 10z"></svg:path><svg:path fill="#E1F5FE" d="M38.5 14H29V4.5z"></svg:path><svg:g fill="#1976D2"><svg:circle cx="23" cy="30" r="4"></svg:circle><svg:path d="m30 21l-5-2v11h2v-7.1l3 1.1z"></svg:path></svg:g>`,
-})
-export class FlatColorIconsAudioFileIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5588,6 +5571,23 @@ export class FlatColorIconsWikipediaIcon {
   template: `<svg:path fill="#00BCD4" d="M7 31h10v10H7zm28.3-11.7l-5.6-5.6c-.4-.4-.4-1 0-1.4l5.6-5.6c.4-.4 1-.4 1.4 0l5.6 5.6c.4.4.4 1 0 1.4l-5.6 5.6c-.4.4-1 .4-1.4 0"></svg:path><svg:circle cx="12" cy="13" r="6" fill="#3F51B5"></svg:circle><svg:circle cx="36" cy="36" r="6" fill="#448AFF"></svg:circle><svg:g fill="#90A4AE"><svg:path d="M11 24h2v5h-2z"></svg:path><svg:path d="m12 21l-3 4h6z"></svg:path></svg:g><svg:g fill="#90A4AE"><svg:path d="M20 12h5v2h-5z"></svg:path><svg:path d="m28 13l-4-3v6z"></svg:path></svg:g><svg:g fill="#90A4AE"><svg:path d="M35 21h2v5h-2z"></svg:path><svg:path d="m36 29l3-4h-6z"></svg:path></svg:g>`,
 })
 export class FlatColorIconsWorkflowIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatColorIconsAudioFileIcon],svg[flat-color-icons-audio-file-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" d="M204 0h48v48h-48z"></svg:path><svg:path fill="#90CAF9" d="M244 45h-32V3h22l10 10z"></svg:path><svg:path fill="#E1F5FE" d="M242.5 14H233V4.5z"></svg:path><svg:g fill="#1976D2"><svg:circle cx="227" cy="30" r="4"></svg:circle><svg:path d="m234 21l-5-2v11h2v-7.1l3 1.1z"></svg:path></svg:g><svg:path fill="#90CAF9" d="M40 45H8V3h22l10 10z"></svg:path><svg:path fill="#E1F5FE" d="M38.5 14H29V4.5z"></svg:path><svg:g fill="#1976D2"><svg:circle cx="23" cy="30" r="4"></svg:circle><svg:path d="m30 21l-5-2v11h2v-7.1l3 1.1z"></svg:path></svg:g>`,
+})
+export class FlatColorIconsAudioFileIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

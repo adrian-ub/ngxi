@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkOutlineFlightAirflowIcon],svg[icon-park-outline-flight-airflow-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"><svg:path d="M6 25c0-9.941 8.283-18 18.5-18S43 15.059 43 25"></svg:path><svg:path stroke-linejoin="round" d="m10 35l-1.064-5s-3.435 3.109-4.58 5.74C3.211 38.37 4.852 41 8 41h36l-8-5.978z"></svg:path><svg:path stroke-linejoin="round" d="M29 35L18 25h-3l2 10"></svg:path></svg:g>`,
+})
+export class IconParkOutlineFlightAirflowIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkOutlineFlightSafetyIcon],svg[icon-park-outline-flight-safety-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class IconParkOutlineMagicHatIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M7.58 35.42A19.9 19.9 0 0 1 4 24C4 12.954 12.954 4 24 4s20 8.954 20 20s-8.954 20-20 20a19.9 19.9 0 0 1-11.42-3.58m-5-5a20.1 20.1 0 0 0 5 5m-5-5L16 27m-3.42 13.42L21 32m-5-5l4-4l5 5l-4 4m-5-5l5 5m-4-18h4m-2-2v4m9 1h6m-3-3v6m1 9h4m-2-2v4"></svg:path>`,
 })
 export class IconParkOutlineMagicWandIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkOutlineMagnetIcon],svg[icon-park-outline-magnet-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M6 10v16c0 9.941 8.059 18 18 18s18-8.059 18-18V10m-28 0v16c0 5.523 4.477 10 10 10s10-4.477 10-10V10M14 4H6v6h8zm20 0h8v6h-8z"></svg:path>`,
-})
-export class IconParkOutlineMagnetIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

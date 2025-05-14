@@ -36,23 +36,6 @@ export class WeuiAddOutlinedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[weuiAdd2OutlinedIcon],svg[weui-add2-outlined-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11.4 11.4V7h1.2v4.4H17v1.2h-4.4V17h-1.2v-4.4H7v-1.2zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-1.2a8.8 8.8 0 1 0 0-17.6a8.8 8.8 0 0 0 0 17.6"></svg:path>`,
-})
-export class WeuiAdd2OutlinedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[weuiAlbumOutlinedIcon],svg[weui-album-outlined-icon]',
   host: {
     role: 'img',
@@ -63,6 +46,23 @@ export class WeuiAdd2OutlinedIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M20.8 14.409V5.2H3.2v8.892l5-4.043c.462-.374 1.205-.356 1.65.036l4.477 3.933l2.282-1.94c.462-.394 1.198-.386 1.646.017zm0 1.585l-3.374-3.036l-2.188 1.86L16.582 16h-1.77l-5.806-5.06L3.2 15.636V18.8h17.6zM2.992 4h18.016c.537 0 .992.481.992 1.075v13.85c0 .596-.444 1.075-.992 1.075H2.992C2.455 20 2 19.519 2 18.925V5.075C2 4.479 2.444 4 2.992 4"></svg:path>`,
 })
 export class WeuiAlbumOutlinedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[weuiAdd2OutlinedIcon],svg[weui-add2-outlined-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11.4 11.4V7h1.2v4.4H17v1.2h-4.4V17h-1.2v-4.4H7v-1.2zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-1.2a8.8 8.8 0 1 0 0-17.6a8.8 8.8 0 0 0 0 17.6"></svg:path>`,
+})
+export class WeuiAdd2OutlinedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

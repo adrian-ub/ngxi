@@ -19,40 +19,6 @@ export class Marketeq1stPlaceIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[marketeq2ndPlaceIcon],svg[marketeq-2nd-place-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path stroke="#344054" d="M29.167 33.333h-8.334A8.33 8.33 0 0 1 25 26.208L27.083 25a4.17 4.17 0 0 0 2.084-3.604v-.563A4.167 4.167 0 0 0 25 16.667v0a4.167 4.167 0 0 0-4.167 4.166"></svg:path><svg:path stroke="#306CFE" d="M25 43.75c10.355 0 18.75-8.395 18.75-18.75S35.355 6.25 25 6.25S6.25 14.645 6.25 25S14.645 43.75 25 43.75"></svg:path></svg:g>`,
-})
-export class Marketeq2ndPlaceIcon {
-  readonly viewBox = input("0 0 50 50")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[marketeq4k2Icon],svg[marketeq-4k-2-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path stroke="#344054" d="m33.708 23.313l10.042 16.27M29.167 10.417v29.166zm0 18.75l14.583-18.75z"></svg:path><svg:path stroke="#306CFE" d="M20.833 10.417L6.25 29.167h14.583m0 10.416V10.417z"></svg:path></svg:g>`,
-})
-export class Marketeq4k2Icon {
-  readonly viewBox = input("0 0 50 50")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[marketeq2kIcon],svg[marketeq-2k-icon]',
   host: {
     role: 'img',
@@ -70,16 +36,16 @@ export class Marketeq2kIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[marketeqAcornIcon],svg[marketeq-acorn-icon]',
+  selector: 'svg[marketeq2ndPlaceIcon],svg[marketeq-2nd-place-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path stroke="#306CFE" d="m37.5 20.833l-.937 8.542a17.42 17.42 0 0 1-10.792 14.23v0a2.08 2.08 0 0 1-1.542 0v0a17.42 17.42 0 0 1-10.791-14.23l-.938-8.542zM27.083 6.25A10.2 10.2 0 0 0 25 12.5"></svg:path><svg:path stroke="#344054" d="M16.667 12.5h16.666a6.25 6.25 0 0 1 6.25 6.25a2.083 2.083 0 0 1-2.083 2.083h-25a2.083 2.083 0 0 1-2.083-2.083a6.25 6.25 0 0 1 6.25-6.25"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path stroke="#344054" d="M29.167 33.333h-8.334A8.33 8.33 0 0 1 25 26.208L27.083 25a4.17 4.17 0 0 0 2.084-3.604v-.563A4.167 4.167 0 0 0 25 16.667v0a4.167 4.167 0 0 0-4.167 4.166"></svg:path><svg:path stroke="#306CFE" d="M25 43.75c10.355 0 18.75-8.395 18.75-18.75S35.355 6.25 25 6.25S6.25 14.645 6.25 25S14.645 43.75 25 43.75"></svg:path></svg:g>`,
 })
-export class MarketeqAcornIcon {
+export class Marketeq2ndPlaceIcon {
   readonly viewBox = input("0 0 50 50")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,16 +70,33 @@ export class Marketeq3rdPlaceIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[marketeqAcrobatic2Icon],svg[marketeq-acrobatic-2-icon]',
+  selector: 'svg[marketeq4k2Icon],svg[marketeq-4k-2-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#306CFE" stroke-width="2" d="m22.5 6.25l13.646 5.104a2.082 2.082 0 0 1 .75 3.438l-3.98 3.958l-5.833-1.98a2.4 2.4 0 0 0-.75-.103h-8.458a2.08 2.08 0 0 0-1.396.541L12.5 20.833"></svg:path><svg:path stroke="#344054" stroke-width="3" d="m33.125 19.458l.375 1.375a8.77 8.77 0 0 1-5.958 10.771v0"></svg:path><svg:path stroke="#306CFE" stroke-width="2" d="M22.917 43.75H25a2.083 2.083 0 0 0 2.083-2.083v-12.5"></svg:path><svg:path stroke="#306CFE" stroke-width="2" d="M22.917 33.333a4.167 4.167 0 1 0 0-8.333a4.167 4.167 0 0 0 0 8.333"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path stroke="#344054" d="m33.708 23.313l10.042 16.27M29.167 10.417v29.166zm0 18.75l14.583-18.75z"></svg:path><svg:path stroke="#306CFE" d="M20.833 10.417L6.25 29.167h14.583m0 10.416V10.417z"></svg:path></svg:g>`,
 })
-export class MarketeqAcrobatic2Icon {
+export class Marketeq4k2Icon {
+  readonly viewBox = input("0 0 50 50")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[marketeqAcornIcon],svg[marketeq-acorn-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path stroke="#306CFE" d="m37.5 20.833l-.937 8.542a17.42 17.42 0 0 1-10.792 14.23v0a2.08 2.08 0 0 1-1.542 0v0a17.42 17.42 0 0 1-10.791-14.23l-.938-8.542zM27.083 6.25A10.2 10.2 0 0 0 25 12.5"></svg:path><svg:path stroke="#344054" d="M16.667 12.5h16.666a6.25 6.25 0 0 1 6.25 6.25a2.083 2.083 0 0 1-2.083 2.083h-25a2.083 2.083 0 0 1-2.083-2.083a6.25 6.25 0 0 1 6.25-6.25"></svg:path></svg:g>`,
+})
+export class MarketeqAcornIcon {
   readonly viewBox = input("0 0 50 50")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -131,6 +114,23 @@ export class MarketeqAcrobatic2Icon {
   template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#344054" stroke-width="3" d="M34.27 14.583h.21"></svg:path><svg:path stroke="#344054" stroke-width="2" d="M14.583 16.667h2.084"></svg:path><svg:path stroke="#306CFE" stroke-width="2" d="M29.167 31.25h-8.334v12.5h8.334z"></svg:path><svg:path stroke="#306CFE" stroke-width="2" d="M41.667 22.917v6.25a2.083 2.083 0 0 1-2.084 2.083H8.333a2.083 2.083 0 0 1-2.083-2.083v-18.75a2.083 2.083 0 0 1 2.083-2.084H25"></svg:path><svg:path stroke="#344054" stroke-width="2" d="M43.75 20.833v-12.5c0-1.15-.933-2.083-2.083-2.083H27.083c-1.15 0-2.083.933-2.083 2.083v12.5c0 1.15.933 2.084 2.083 2.084h14.584c1.15 0 2.083-.933 2.083-2.084"></svg:path></svg:g>`,
 })
 export class MarketeqActionCamIcon {
+  readonly viewBox = input("0 0 50 50")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[marketeqAcrobatic2Icon],svg[marketeq-acrobatic-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round"><svg:path stroke="#306CFE" stroke-width="2" d="m22.5 6.25l13.646 5.104a2.082 2.082 0 0 1 .75 3.438l-3.98 3.958l-5.833-1.98a2.4 2.4 0 0 0-.75-.103h-8.458a2.08 2.08 0 0 0-1.396.541L12.5 20.833"></svg:path><svg:path stroke="#344054" stroke-width="3" d="m33.125 19.458l.375 1.375a8.77 8.77 0 0 1-5.958 10.771v0"></svg:path><svg:path stroke="#306CFE" stroke-width="2" d="M22.917 43.75H25a2.083 2.083 0 0 0 2.083-2.083v-12.5"></svg:path><svg:path stroke="#306CFE" stroke-width="2" d="M22.917 33.333a4.167 4.167 0 1 0 0-8.333a4.167 4.167 0 0 0 0 8.333"></svg:path></svg:g>`,
+})
+export class MarketeqAcrobatic2Icon {
   readonly viewBox = input("0 0 50 50")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,23 +206,6 @@ export class MarketeqAddPlaylistIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[marketeqAgendaIcon],svg[marketeq-agenda-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path stroke="#344054" d="M25 6.25v12.5l-4.167-2.083l-4.166 2.083V6.25zm18.75 8.333h-4.167v4.167h4.167zm0 12.5h-4.167v4.167h4.167z"></svg:path><svg:path stroke="#306CFE" d="M39.583 41.667V8.333c0-1.15-.932-2.083-2.083-2.083H10.417c-1.15 0-2.084.933-2.084 2.083v33.334c0 1.15.933 2.083 2.084 2.083H37.5c1.15 0 2.083-.933 2.083-2.083"></svg:path></svg:g>`,
-})
-export class MarketeqAgendaIcon {
-  readonly viewBox = input("0 0 50 50")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[marketeqAddPlaylist2Icon],svg[marketeq-add-playlist-2-icon]',
   host: {
     role: 'img',
@@ -233,6 +216,23 @@ export class MarketeqAgendaIcon {
   template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path stroke="#344054" d="M29.167 39.583H43.75M29.167 31.25H43.75zm6.25-20.833h8.333zm4.166-4.167v8.333z"></svg:path><svg:path stroke="#306CFE" d="M20.833 36.458V6.25zm-7.291-7.291a7.292 7.292 0 1 0 0 14.583a7.292 7.292 0 0 0 0-14.583"></svg:path></svg:g>`,
 })
 export class MarketeqAddPlaylist2Icon {
+  readonly viewBox = input("0 0 50 50")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[marketeqAgendaIcon],svg[marketeq-agenda-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path stroke="#344054" d="M25 6.25v12.5l-4.167-2.083l-4.166 2.083V6.25zm18.75 8.333h-4.167v4.167h4.167zm0 12.5h-4.167v4.167h4.167z"></svg:path><svg:path stroke="#306CFE" d="M39.583 41.667V8.333c0-1.15-.932-2.083-2.083-2.083H10.417c-1.15 0-2.084.933-2.084 2.083v33.334c0 1.15.933 2.083 2.084 2.083H37.5c1.15 0 2.083-.933 2.083-2.083"></svg:path></svg:g>`,
+})
+export class MarketeqAgendaIcon {
   readonly viewBox = input("0 0 50 50")
   readonly width = input("1em")
   readonly height = input("1em")

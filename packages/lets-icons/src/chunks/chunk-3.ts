@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[letsIconsViewHorizontFillIcon],svg[lets-icons-view-horizont-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path stroke="currentColor" stroke-width="2" d="M11.725 7.382a9 9 0 0 1 .364 8.563"></svg:path><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M14 5c-2.814 2.814-10.029 6.509-10.911 6.955a.05.05 0 0 0 0 .09C3.97 12.49 11.186 16.185 14 19m2-7h5m-5-3l5-2m-5 8l5 2"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M13.687 9.519a10 10 0 0 0-.823-2.148L4 12l8.721 4.893a10 10 0 0 0 .966-2.413a3 3 0 1 1 0-4.962" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class LetsIconsViewHorizontFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[letsIconsViewLightIcon],svg[lets-icons-view-light-icon]',
   host: {
     role: 'img',
@@ -743,6 +726,23 @@ export class LetsIconsWowIcon {
   template: `<svg:g fill="none"><svg:circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-linecap="round"></svg:circle><svg:circle cx="9" cy="9" r="1" fill="currentColor" stroke="currentColor" stroke-linecap="round"></svg:circle><svg:circle cx="15" cy="9" r="1" fill="currentColor" stroke="currentColor" stroke-linecap="round"></svg:circle><svg:path fill="currentColor" d="M15 15.5c0 1.38-1.343 2.5-3 2.5s-3-1.12-3-2.5s1.343-2.5 3-2.5s3 1.12 3 2.5"></svg:path></svg:g>`,
 })
 export class LetsIconsWowLightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[letsIconsAddRingFillIcon],svg[lets-icons-add-ring-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-8 1v4h-2v-4H7v-2h4V7h2v4h4v2z" clip-rule="evenodd"></svg:path>`,
+})
+export class LetsIconsAddRingFillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

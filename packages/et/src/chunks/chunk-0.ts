@@ -70,6 +70,23 @@ export class EtApertureIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[etBasketIcon],svg[et-basket-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M39.5 14h-37a.503.503 0 0 0-.486.621L6.02 30.638C6.116 30.975 6.411 32 7.5 32h27c1.093 0 1.385-1.026 1.485-1.379l4-16A.5.5 0 0 0 39.5 14m-4.48 16.363c-.182.637-.37.637-.52.637h-27c-.149 0-.336 0-.515-.621L3.141 15H38.86z"></svg:path><svg:path d="M18.5 28a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-1 0v9a.5.5 0 0 0 .5.5m-7.001 0a.5.5 0 0 0 .498-.555l-1-9a.5.5 0 1 0-.994.11l1 9a.5.5 0 0 0 .496.445M24.5 28a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-1 0v9a.5.5 0 0 0 .5.5m5.944-.003l.057.003a.5.5 0 0 0 .496-.445l1-9a.5.5 0 0 0-.994-.11l-1 9a.5.5 0 0 0 .441.552M34.5 12a.5.5 0 0 0 .378-.827l-9.5-11a.5.5 0 0 0-.756.653l9.5 11A.5.5 0 0 0 34.5 12M17.816.113a.5.5 0 0 0-.703.071l-9 11a.5.5 0 1 0 .774.632l9-11a.5.5 0 0 0-.071-.703M41.5 10h-4a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1m-28 1h16a.5.5 0 0 0 0-1h-16a.5.5 0 0 0 0 1m-13 0h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0 0 1"></svg:path></svg:g>`,
+})
+export class EtBasketIcon {
+  readonly viewBox = input("0 0 42 32")
+  readonly width = input("1.32em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[etAttachmentsIcon],svg[et-attachments-icon]',
   host: {
     role: 'img',
@@ -116,23 +133,6 @@ export class EtBargraphIcon {
 export class EtBeakerIcon {
   readonly viewBox = input("0 0 27 32")
   readonly width = input("0.85em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[etBasketIcon],svg[et-basket-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M39.5 14h-37a.503.503 0 0 0-.486.621L6.02 30.638C6.116 30.975 6.411 32 7.5 32h27c1.093 0 1.385-1.026 1.485-1.379l4-16A.5.5 0 0 0 39.5 14m-4.48 16.363c-.182.637-.37.637-.52.637h-27c-.149 0-.336 0-.515-.621L3.141 15H38.86z"></svg:path><svg:path d="M18.5 28a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-1 0v9a.5.5 0 0 0 .5.5m-7.001 0a.5.5 0 0 0 .498-.555l-1-9a.5.5 0 1 0-.994.11l1 9a.5.5 0 0 0 .496.445M24.5 28a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-1 0v9a.5.5 0 0 0 .5.5m5.944-.003l.057.003a.5.5 0 0 0 .496-.445l1-9a.5.5 0 0 0-.994-.11l-1 9a.5.5 0 0 0 .441.552M34.5 12a.5.5 0 0 0 .378-.827l-9.5-11a.5.5 0 0 0-.756.653l9.5 11A.5.5 0 0 0 34.5 12M17.816.113a.5.5 0 0 0-.703.071l-9 11a.5.5 0 1 0 .774.632l9-11a.5.5 0 0 0-.071-.703M41.5 10h-4a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1m-28 1h16a.5.5 0 0 0 0-1h-16a.5.5 0 0 0 0 1m-13 0h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0 0 1"></svg:path></svg:g>`,
-})
-export class EtBasketIcon {
-  readonly viewBox = input("0 0 42 32")
-  readonly width = input("1.32em")
   readonly height = input("1em")
 }
 
@@ -189,23 +189,6 @@ export class EtBriefcaseIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[etCalendarIcon],svg[et-calendar-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M34 30.5v-19a.5.5 0 0 0-1 0v19a.5.5 0 0 1-.5.5h-31a.5.5 0 0 1-.5-.5v-19a.5.5 0 0 0-1 0v19c0 .827.673 1.5 1.5 1.5h31c.827 0 1.5-.673 1.5-1.5"></svg:path><svg:path d="M4.5 23a.5.5 0 0 0 0 1H6v3.5a.5.5 0 0 0 1 0V24h6v3.5a.5.5 0 0 0 1 0V24h6v3.5a.5.5 0 0 0 1 0V24h6v3.5a.5.5 0 0 0 1 0V24h1.5a.5.5 0 0 0 0-1H28v-5h1.5a.5.5 0 0 0 0-1H28v-4.5a.5.5 0 0 0-1 0V17h-6v-4.5a.5.5 0 0 0-1 0V17h-6v-4.5a.5.5 0 0 0-1 0V17H7v-4.5a.5.5 0 0 0-1 0V17H4.5a.5.5 0 0 0 0 1H6v5zM27 18v5h-6v-5zm-7 0v5h-6v-5zM7 18h6v5H7zM28.5 3h4.25c.087 0 .25 0 .25.5V8H1V3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 0 0-1h-4C.673 2 0 2.673 0 3.5v5a.5.5 0 0 0 .5.5h33a.5.5 0 0 0 .5-.5v-5c0-1.106-.646-1.5-1.25-1.5H28.5a.5.5 0 0 0 0 1"></svg:path><svg:path d="M22.5 3a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1zM9 4.5v-4a.5.5 0 0 0-1 0v4a.5.5 0 0 0 1 0m16.5.5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v4a.5.5 0 0 0 .5.5"></svg:path></svg:g>`,
-})
-export class EtCalendarIcon {
-  readonly viewBox = input("0 0 34 32")
-  readonly width = input("1.07em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[etBrowserIcon],svg[et-browser-icon]',
   host: {
     role: 'img',
@@ -235,6 +218,23 @@ export class EtBrowserIcon {
 export class EtCameraIcon {
   readonly viewBox = input("0 0 42 32")
   readonly width = input("1.32em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[etCalendarIcon],svg[et-calendar-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M34 30.5v-19a.5.5 0 0 0-1 0v19a.5.5 0 0 1-.5.5h-31a.5.5 0 0 1-.5-.5v-19a.5.5 0 0 0-1 0v19c0 .827.673 1.5 1.5 1.5h31c.827 0 1.5-.673 1.5-1.5"></svg:path><svg:path d="M4.5 23a.5.5 0 0 0 0 1H6v3.5a.5.5 0 0 0 1 0V24h6v3.5a.5.5 0 0 0 1 0V24h6v3.5a.5.5 0 0 0 1 0V24h6v3.5a.5.5 0 0 0 1 0V24h1.5a.5.5 0 0 0 0-1H28v-5h1.5a.5.5 0 0 0 0-1H28v-4.5a.5.5 0 0 0-1 0V17h-6v-4.5a.5.5 0 0 0-1 0V17h-6v-4.5a.5.5 0 0 0-1 0V17H7v-4.5a.5.5 0 0 0-1 0V17H4.5a.5.5 0 0 0 0 1H6v5zM27 18v5h-6v-5zm-7 0v5h-6v-5zM7 18h6v5H7zM28.5 3h4.25c.087 0 .25 0 .25.5V8H1V3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 0 0-1h-4C.673 2 0 2.673 0 3.5v5a.5.5 0 0 0 .5.5h33a.5.5 0 0 0 .5-.5v-5c0-1.106-.646-1.5-1.25-1.5H28.5a.5.5 0 0 0 0 1"></svg:path><svg:path d="M22.5 3a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1zM9 4.5v-4a.5.5 0 0 0-1 0v4a.5.5 0 0 0 1 0m16.5.5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v4a.5.5 0 0 0 .5.5"></svg:path></svg:g>`,
+})
+export class EtCalendarIcon {
+  readonly viewBox = input("0 0 34 32")
+  readonly width = input("1.07em")
   readonly height = input("1em")
 }
 

@@ -53,23 +53,6 @@ export class IconamoonArrowBottomLeft1FillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconamoonArrowBottomLeft2FillIcon],svg[iconamoon-arrow-bottom-left-2-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7 8v8a1 1 0 0 0 1 1h8a1 1 0 0 0 .707-1.707l-8-8A1 1 0 0 0 7 8" clip-rule="evenodd"></svg:path>`,
-})
-export class IconamoonArrowBottomLeft2FillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[iconamoonArrowBottomLeft3SquareFillIcon],svg[iconamoon-arrow-bottom-left-3-square-fill-icon]',
   host: {
     role: 'img',
@@ -5146,6 +5129,23 @@ export class IconamoonZoomInFillIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2 11a9 9 0 1 1 16.032 5.618l3.675 3.675a1 1 0 0 1-1.414 1.414l-3.675-3.675A9 9 0 0 1 2 11m6-1a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2z" clip-rule="evenodd"></svg:path>`,
 })
 export class IconamoonZoomOutFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconamoonArrowBottomLeft2FillIcon],svg[iconamoon-arrow-bottom-left-2-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M7 8v8a1 1 0 0 0 1 1h8a1 1 0 0 0 .707-1.707l-8-8A1 1 0 0 0 7 8" clip-rule="evenodd"></svg:path>`,
+})
+export class IconamoonArrowBottomLeft2FillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

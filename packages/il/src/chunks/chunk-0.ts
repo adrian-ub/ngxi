@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[ilAddUserIcon],svg[il-add-user-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M535 518q27 13 42 34t21 44t8 43t0 31t-8 16q-14 12-34 21t-44 16t-49 11l-49 8q-56 7-118 8q-63-1-119-8q-24-3-49-8t-48-11t-44-16t-35-21q-6-5-7.5-15.5T1 639t8-43t21-44t42-34l62-28q29-13 52-28t35-35t13-48v-6q-17-14-25-33l-23-54q-18-20-27-37q-8-14-8-26t17-12q-6-38-3-68q2-25 12-46t36-21q5-19 17-34q11-13 31-24t53-10q30 0 49 13t33 30t23 33t20 23q4 2 7 5t0 8q-4 14-8 41t1 50q18 1 17 12t-10 26q-10 17-28 37q-7 18-11 31t-9 24t-10 17t-15 15v6q0 29 13 48t36 35t51 28t62 28M663 78q11 0 11 11v23q0 12-11 12h-58v58q0 5-3 8t-9 4h-23q-5 0-8-4t-4-8v-58h-57q-12 0-12-12V89q0-11 12-11h57V20q0-5 4-9t8-3h23q12 0 12 12v58z"></svg:path>`,
-})
-export class IlAddUserIcon {
-  readonly viewBox = input("0 0 680 850")
-  readonly width = input("0.8em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ilArrowLeftIcon],svg[il-arrow-left-icon]',
   host: {
     role: 'img',
@@ -31,23 +14,6 @@ export class IlAddUserIcon {
 export class IlArrowLeftIcon {
   readonly viewBox = input("0 0 380 790")
   readonly width = input("0.49em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ilArrowDownIcon],svg[il-arrow-down-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M622 106L311 417L0 106l65-65l246 245L556 41z"></svg:path>`,
-})
-export class IlArrowDownIcon {
-  readonly viewBox = input("0 0 630 700")
-  readonly width = input("0.9em")
   readonly height = input("1em")
 }
 
@@ -87,18 +53,35 @@ export class IlArrowUpIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ilBehanceIcon],svg[il-behance-icon]',
+  selector: 'svg[ilArrowDownIcon],svg[il-arrow-down-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M333 250q38 0 58 20t28 46q10 29 9 66q0 31-7 54t-18 39t-26 28t-30 19q-36 17-81 18H0V7h266q30 0 57 8t46 27t30 44t11 63t-12 56t-27 30q-17 11-38 15m-216-30h140q18 0 32-11t13-52q0-20-5-32t-13-17t-18-6H117zm141 225q8 0 19-3t20-9t17-21t6-36q0-28-8-43t-19-21q-12-8-27-9H117v142zm387-303q39 0 67 10t48 26t32 37t19 43q16 51 11 116H558q0 38 14 56t31 27q19 10 45 9q32 0 49-9t24-19q9-12 9-29h90q0 29-7 50t-20 36t-29 26t-32 16q-39 15-87 14q-39 0-68-9t-51-23t-35-33t-23-37q-20-45-20-102q3-57 25-102q9-19 24-38t35-33t48-23t65-9m80 161q0-23-9-41q-8-16-24-29t-45.5-13t-46.5 13t-28 30t-15 40zm21-199H535V38h211z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M622 106L311 417L0 106l65-65l246 245L556 41z"></svg:path>`,
 })
-export class IlBehanceIcon {
-  readonly viewBox = input("0 0 830 750")
-  readonly width = input("1.11em")
+export class IlArrowDownIcon {
+  readonly viewBox = input("0 0 630 700")
+  readonly width = input("0.9em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ilAttachmentIcon],svg[il-attachment-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M440 240q10 0 17 6t6 17v255q0 50-19 93t-54 75t-78 49t-96 14q-46-3-85-24t-69-53t-45-74t-17-88V186q0-79 34-125t87-52q31-4 60 5t50 29t35 46t12 58v348q0 10-6 16t-17 7h-47q-9 0-16-7t-7-16V150q0-17-10-32t-28-17q-22-3-38 11t-16 35v366q0 27 9 51t25 43t38 33t48 16q32 4 61-6t50-28t35-46t12-58V263q0-10 7-17t16-6z"></svg:path>`,
+})
+export class IlAttachmentIcon {
+  readonly viewBox = input("0 0 470 850")
+  readonly width = input("0.56em")
   readonly height = input("1em")
 }
 
@@ -121,18 +104,35 @@ export class IlBasketIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ilAttachmentIcon],svg[il-attachment-icon]',
+  selector: 'svg[ilAddUserIcon],svg[il-add-user-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M440 240q10 0 17 6t6 17v255q0 50-19 93t-54 75t-78 49t-96 14q-46-3-85-24t-69-53t-45-74t-17-88V186q0-79 34-125t87-52q31-4 60 5t50 29t35 46t12 58v348q0 10-6 16t-17 7h-47q-9 0-16-7t-7-16V150q0-17-10-32t-28-17q-22-3-38 11t-16 35v366q0 27 9 51t25 43t38 33t48 16q32 4 61-6t50-28t35-46t12-58V263q0-10 7-17t16-6z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M535 518q27 13 42 34t21 44t8 43t0 31t-8 16q-14 12-34 21t-44 16t-49 11l-49 8q-56 7-118 8q-63-1-119-8q-24-3-49-8t-48-11t-44-16t-35-21q-6-5-7.5-15.5T1 639t8-43t21-44t42-34l62-28q29-13 52-28t35-35t13-48v-6q-17-14-25-33l-23-54q-18-20-27-37q-8-14-8-26t17-12q-6-38-3-68q2-25 12-46t36-21q5-19 17-34q11-13 31-24t53-10q30 0 49 13t33 30t23 33t20 23q4 2 7 5t0 8q-4 14-8 41t1 50q18 1 17 12t-10 26q-10 17-28 37q-7 18-11 31t-9 24t-10 17t-15 15v6q0 29 13 48t36 35t51 28t62 28M663 78q11 0 11 11v23q0 12-11 12h-58v58q0 5-3 8t-9 4h-23q-5 0-8-4t-4-8v-58h-57q-12 0-12-12V89q0-11 12-11h57V20q0-5 4-9t8-3h23q12 0 12 12v58z"></svg:path>`,
 })
-export class IlAttachmentIcon {
-  readonly viewBox = input("0 0 470 850")
-  readonly width = input("0.56em")
+export class IlAddUserIcon {
+  readonly viewBox = input("0 0 680 850")
+  readonly width = input("0.8em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ilBehanceIcon],svg[il-behance-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M333 250q38 0 58 20t28 46q10 29 9 66q0 31-7 54t-18 39t-26 28t-30 19q-36 17-81 18H0V7h266q30 0 57 8t46 27t30 44t11 63t-12 56t-27 30q-17 11-38 15m-216-30h140q18 0 32-11t13-52q0-20-5-32t-13-17t-18-6H117zm141 225q8 0 19-3t20-9t17-21t6-36q0-28-8-43t-19-21q-12-8-27-9H117v142zm387-303q39 0 67 10t48 26t32 37t19 43q16 51 11 116H558q0 38 14 56t31 27q19 10 45 9q32 0 49-9t24-19q9-12 9-29h90q0 29-7 50t-20 36t-29 26t-32 16q-39 15-87 14q-39 0-68-9t-51-23t-35-33t-23-37q-20-45-20-102q3-57 25-102q9-19 24-38t35-33t48-23t65-9m80 161q0-23-9-41q-8-16-24-29t-45.5-13t-46.5 13t-28 30t-15 40zm21-199H535V38h211z"></svg:path>`,
+})
+export class IlBehanceIcon {
+  readonly viewBox = input("0 0 830 750")
+  readonly width = input("1.11em")
   readonly height = input("1em")
 }
 
@@ -167,6 +167,23 @@ export class IlBellIcon {
 export class IlBookIcon {
   readonly viewBox = input("0 0 560 850")
   readonly width = input("0.66em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ilBrightnessIcon],svg[il-brightness-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M46 333q20 0 34 13t13.5 32.5T80 411t-34 14q-19 0-32-14T0 379q0-20 14-33t32-13m63 242q14-14 33-14t32 14t14 33t-14 33t-32 14t-33-14t-14-33t14-33m65-393q-14 14-32 14t-33-14t-14-33t14-32t33-14t32 14t14 32t-14 33m197-81q-20 0-33-14t-14-32q0-20 14-34t33-13.5T404 21t13 34q0 19-13 32t-33 14m324 232q20 0 33 13t13 32.5t-13 32.5t-33 14t-33-14t-13-32q0-20 13-33t33-13M371 657q19 0 33 13t13.5 33t-13.5 33t-33 13.5t-33-13.5t-13.5-33t13.5-33t33-13m0-463q38 0 72 14t59 40t40 59t14 72t-14 72t-40 59t-59 39t-72 15q-39 0-72-15t-59-39t-40-59t-15-72t15-72t40-59t59-40t72-14m0 278q19 0 36-8t30-20t19-29t7-36t-7-36t-19-30t-30-20t-36-7t-36 7t-29 20t-20 30t-8 36t8 36t20 29t29 20t36 8m196 103q14-14 33-14t33 14t14 33t-14 33t-33 14t-33-14t-14-33t14-33m0-458q14-14 33-14t33 14t14 32t-14 33t-33 14t-33-14t-14-33t14-32"></svg:path>`,
+})
+export class IlBrightnessIcon {
+  readonly viewBox = input("0 0 750 850")
+  readonly width = input("0.89em")
   readonly height = input("1em")
 }
 
@@ -223,23 +240,6 @@ export class IlCalendarIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ilBrightnessIcon],svg[il-brightness-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M46 333q20 0 34 13t13.5 32.5T80 411t-34 14q-19 0-32-14T0 379q0-20 14-33t32-13m63 242q14-14 33-14t32 14t14 33t-14 33t-32 14t-33-14t-14-33t14-33m65-393q-14 14-32 14t-33-14t-14-33t14-32t33-14t32 14t14 32t-14 33m197-81q-20 0-33-14t-14-32q0-20 14-34t33-13.5T404 21t13 34q0 19-13 32t-33 14m324 232q20 0 33 13t13 32.5t-13 32.5t-33 14t-33-14t-13-32q0-20 13-33t33-13M371 657q19 0 33 13t13.5 33t-13.5 33t-33 13.5t-33-13.5t-13.5-33t13.5-33t33-13m0-463q38 0 72 14t59 40t40 59t14 72t-14 72t-40 59t-59 39t-72 15q-39 0-72-15t-59-39t-40-59t-15-72t15-72t40-59t59-40t72-14m0 278q19 0 36-8t30-20t19-29t7-36t-7-36t-19-30t-30-20t-36-7t-36 7t-29 20t-20 30t-8 36t8 36t20 29t29 20t36 8m196 103q14-14 33-14t33 14t14 33t-14 33t-33 14t-33-14t-14-33t14-33m0-458q14-14 33-14t33 14t14 32t-14 33t-33 14t-33-14t-14-33t14-32"></svg:path>`,
-})
-export class IlBrightnessIcon {
-  readonly viewBox = input("0 0 750 850")
-  readonly width = input("0.89em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ilCameraIcon],svg[il-camera-icon]',
   host: {
     role: 'img',
@@ -286,40 +286,6 @@ export class IlCardIcon {
 export class IlCartIcon {
   readonly viewBox = input("0 0 720 820")
   readonly width = input("0.88em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ilCloudIcon],svg[il-cloud-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M556 123q36 0 68 13t55 38t38 55t13 68t-13 67t-38 56t-55 37t-68 14H139q-29 0-54-11t-44-30t-30-44t-11-54t11-55t30-44t44-29t54-11h12l11 2v-2q0-39 15-73t39-59t59-40t72-14q60 0 107 33t67 87q15-4 35-4"></svg:path>`,
-})
-export class IlCloudIcon {
-  readonly viewBox = input("0 0 730 710")
-  readonly width = input("1.03em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ilClockIcon],svg[il-clock-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M465 424q10 10 10 24t-10 24.5t-25 10.5t-24-10l-70-70q-10-10-10-24V194q0-15 10-25t24.5-10t24.5 10t10 25v170zM371 8q76 0 144 29t118 79t79 118t29 145t-29 144t-79 118t-118 80t-144.5 29T227 721t-118-80t-80-118T0 379t29-145t80-118t118-79T371 8m0 649q57 0 108-22t89-60t59-88t21.5-108T627 270t-59-88t-89-59t-109-22t-107 22t-88 59t-60 88t-22 108.5T115 487t60 88t88 60t108 22"></svg:path>`,
-})
-export class IlClockIcon {
-  readonly viewBox = input("0 0 750 850")
-  readonly width = input("0.89em")
   readonly height = input("1em")
 }
 
@@ -1425,5 +1391,39 @@ export class IlWorldIcon {
 export class IlYoutubeIcon {
   readonly viewBox = input("0 0 840 790")
   readonly width = input("1.07em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ilClockIcon],svg[il-clock-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M465 424q10 10 10 24t-10 24.5t-25 10.5t-24-10l-70-70q-10-10-10-24V194q0-15 10-25t24.5-10t24.5 10t10 25v170zM371 8q76 0 144 29t118 79t79 118t29 145t-29 144t-79 118t-118 80t-144.5 29T227 721t-118-80t-80-118T0 379t29-145t80-118t118-79T371 8m0 649q57 0 108-22t89-60t59-88t21.5-108T627 270t-59-88t-89-59t-109-22t-107 22t-88 59t-60 88t-22 108.5T115 487t60 88t88 60t108 22"></svg:path>`,
+})
+export class IlClockIcon {
+  readonly viewBox = input("0 0 750 850")
+  readonly width = input("0.89em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ilCloudIcon],svg[il-cloud-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M556 123q36 0 68 13t55 38t38 55t13 68t-13 67t-38 56t-55 37t-68 14H139q-29 0-54-11t-44-30t-30-44t-11-54t11-55t30-44t44-29t54-11h12l11 2v-2q0-39 15-73t39-59t59-40t72-14q60 0 107 33t67 87q15-4 35-4"></svg:path>`,
+})
+export class IlCloudIcon {
+  readonly viewBox = input("0 0 730 710")
+  readonly width = input("1.03em")
   readonly height = input("1em")
 }

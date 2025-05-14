@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[ggAddIcon],svg[gg-add-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16"></svg:path><svg:path d="M13 7a1 1 0 1 0-2 0v4H7a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4z"></svg:path></svg:g>`,
-})
-export class GgAddIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ggAbstractIcon],svg[gg-abstract-icon]',
   host: {
     role: 'img',
@@ -29,6 +12,23 @@ export class GgAddIcon {
   template: `<svg:g fill="currentColor"><svg:path d="M5 5h14v14h-3V8H5z"></svg:path><svg:path fill-rule="evenodd" d="M10 19a5 5 0 1 0 0-10a5 5 0 0 0 0 10m0-3a2 2 0 1 0 0-4a2 2 0 0 0 0 4" clip-rule="evenodd"></svg:path></svg:g>`,
 })
 export class GgAbstractIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ggAddIcon],svg[gg-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><svg:path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16"></svg:path><svg:path d="M13 7a1 1 0 1 0-2 0v4H7a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4z"></svg:path></svg:g>`,
+})
+export class GgAddIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -53,6 +53,23 @@ export class GgAddRIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[ggAdidasIcon],svg[gg-adidas-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m1.33 19l-.6-1.036l4.33-2.5L7.103 19zm13.856 0H9.412l-3.619-6.268l4.33-2.5zm8.083 0h-5.774l-6.64-11.5l4.33-2.5z"></svg:path>`,
+})
+export class GgAdidasIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[ggAirplaneIcon],svg[gg-airplane-icon]',
   host: {
     role: 'img',
@@ -63,23 +80,6 @@ export class GgAddRIcon {
   template: `<svg:path fill="currentColor" d="M9.01 5.128h2c1.104 0 2.458.769 3.024 1.718L16.509 11h4.5a1 1 0 1 1 0 2h-4.595l-2.476 4.154c-.565.95-1.919 1.718-3.024 1.718h-2l3.5-5.872h-6.99L3.99 15.453h-2L4.01 12v-.033l-2-3.42h2L5.444 11h7.065z"></svg:path>`,
 })
 export class GgAirplaneIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ggAlarmIcon],svg[gg-alarm-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M5.459 2L1 6.015L2.338 7.5l4.46-4.015zM11 8h2v4h3v2h-5z"></svg:path><svg:path fill-rule="evenodd" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0m2 0a7 7 0 1 1 14 0a7 7 0 0 1-14 0" clip-rule="evenodd"></svg:path><svg:path d="M18.541 2L23 6.015L21.662 7.5l-4.46-4.015z"></svg:path></svg:g>`,
-})
-export class GgAlarmIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,33 +104,16 @@ export class GgAlbumIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ggAdidasIcon],svg[gg-adidas-icon]',
+  selector: 'svg[ggAlarmIcon],svg[gg-alarm-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m1.33 19l-.6-1.036l4.33-2.5L7.103 19zm13.856 0H9.412l-3.619-6.268l4.33-2.5zm8.083 0h-5.774l-6.64-11.5l4.33-2.5z"></svg:path>`,
+  template: `<svg:g fill="currentColor"><svg:path d="M5.459 2L1 6.015L2.338 7.5l4.46-4.015zM11 8h2v4h3v2h-5z"></svg:path><svg:path fill-rule="evenodd" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0m2 0a7 7 0 1 1 14 0a7 7 0 0 1-14 0" clip-rule="evenodd"></svg:path><svg:path d="M18.541 2L23 6.015L21.662 7.5l-4.46-4.015z"></svg:path></svg:g>`,
 })
-export class GgAdidasIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ggAlignBottomIcon],svg[gg-align-bottom-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path fill-opacity=".5" d="M13 10h4v6h-4z"></svg:path><svg:path d="M11 4H7v12h4zm7 14H6v2h12z"></svg:path></svg:g>`,
-})
-export class GgAlignBottomIcon {
+export class GgAlarmIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -148,6 +131,23 @@ export class GgAlignBottomIcon {
   template: `<svg:g fill="currentColor"><svg:path fill-opacity=".5" d="M9 13h6v4H9z"></svg:path><svg:path d="M6 7h12v4H6z"></svg:path></svg:g>`,
 })
 export class GgAlignCenterIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ggAlignBottomIcon],svg[gg-align-bottom-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path fill-opacity=".5" d="M13 10h4v6h-4z"></svg:path><svg:path d="M11 4H7v12h4zm7 14H6v2h12z"></svg:path></svg:g>`,
+})
+export class GgAlignBottomIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -291,23 +291,6 @@ export class GgArrangeFrontIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ggArrowAlignVIcon],svg[gg-arrow-align-v-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7 11v2h10v-2zm.757 7l1.415-1.414L11 18.414V14h2v4.414l1.828-1.828L16.243 18L12 22.243zm8.486-12l-1.414 1.414L13 5.586V10h-2V5.586L9.172 7.414L7.757 6L12 1.757z"></svg:path>`,
-})
-export class GgArrowAlignVIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ggArrowAlignHIcon],svg[gg-arrow-align-h-icon]',
   host: {
     role: 'img',
@@ -318,6 +301,23 @@ export class GgArrowAlignVIcon {
   template: `<svg:path fill="currentColor" d="M13 7h-2v10h2zm-7 .757l1.414 1.415L5.586 11H10v2H5.586l1.828 1.828L6 16.243L1.757 12zm12 8.486l-1.414-1.414L18.414 13H14v-2h4.414l-1.828-1.828L18 7.757L22.243 12z"></svg:path>`,
 })
 export class GgArrowAlignHIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ggArrowAlignVIcon],svg[gg-arrow-align-v-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7 11v2h10v-2zm.757 7l1.415-1.414L11 18.414V14h2v4.414l1.828-1.828L16.243 18L12 22.243zm8.486-12l-1.414 1.414L13 5.586V10h-2V5.586L9.172 7.414L7.757 6L12 1.757z"></svg:path>`,
+})
+export class GgArrowAlignVIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

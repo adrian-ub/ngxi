@@ -70,17 +70,17 @@ export class BpmnBusinessRuleTaskIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bpmnCompensationMarkerIcon],svg[bpmn-compensation-marker-icon]',
+  selector: 'svg[bpmnConnectionIcon],svg[bpmn-connection-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1003.172 520.096c-39.608 5.794-68.129 38.56-102.145 57.516C714.65 703.11 527.81 827.956 341.723 953.864c-35.933 27.596-23.849 86.431 16.076 103.582c206.325 138.424 412.22 277.524 618.813 415.525c41.832 24.813 96.658-16.181 88.33-63.076V1092.45c188.963 126.755 377.496 254.187 566.729 380.518c41.831 24.813 96.657-16.18 88.329-63.076c-.2-278.603.401-557.227-.3-835.817c-2.729-48.532-67.376-71.266-101.622-38.127L1064.94 907.693c-.788-113.158 1.585-226.516-1.198-339.55c-5.204-28.017-32.096-49.355-60.571-48.047zm-58.23 172.584v614.785L487.56 1000.072L944.94 692.68zm655.058.002v614.78l-457.38-307.39z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M1866.407 206.692s-585.454 298.724-882.844 438.406c63.707 58.178 122.963 120.927 184.437 181.407c-302.353 306.387-604.71 612.769-907.062 919.156c22.172 21.16 44.327 42.309 66.5 63.469c302.352-306.388 604.71-612.738 907.062-919.125c61.588 61.37 122.828 123.086 184.438 184.437c158.845-312.83 447.469-867.75 447.469-867.75"></svg:path>`,
 })
-export class BpmnCompensationMarkerIcon {
-  readonly viewBox = input("0 0 2000 2000")
+export class BpmnConnectionIcon {
+  readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -104,34 +104,17 @@ export class BpmnConditionalFlowIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bpmnConnectionIcon],svg[bpmn-connection-icon]',
+  selector: 'svg[bpmnCompensationMarkerIcon],svg[bpmn-compensation-marker-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1866.407 206.692s-585.454 298.724-882.844 438.406c63.707 58.178 122.963 120.927 184.437 181.407c-302.353 306.387-604.71 612.769-907.062 919.156c22.172 21.16 44.327 42.309 66.5 63.469c302.352-306.388 604.71-612.738 907.062-919.125c61.588 61.37 122.828 123.086 184.438 184.437c158.845-312.83 447.469-867.75 447.469-867.75"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M1003.172 520.096c-39.608 5.794-68.129 38.56-102.145 57.516C714.65 703.11 527.81 827.956 341.723 953.864c-35.933 27.596-23.849 86.431 16.076 103.582c206.325 138.424 412.22 277.524 618.813 415.525c41.832 24.813 96.658-16.181 88.33-63.076V1092.45c188.963 126.755 377.496 254.187 566.729 380.518c41.831 24.813 96.657-16.18 88.329-63.076c-.2-278.603.401-557.227-.3-835.817c-2.729-48.532-67.376-71.266-101.622-38.127L1064.94 907.693c-.788-113.158 1.585-226.516-1.198-339.55c-5.204-28.017-32.096-49.355-60.571-48.047zm-58.23 172.584v614.785L487.56 1000.072L944.94 692.68zm655.058.002v614.78l-457.38-307.39z"></svg:path>`,
 })
-export class BpmnConnectionIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bpmnConnectionMultiIcon],svg[bpmn-connection-multi-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m1876.66 106.365l-840.543 224.07l130.275 193.138l-995.052 671.175l51.399 76.183l995.051-671.175l126.692 187.846l532.162-681.227zM250.133 1812.293l-78.793 53.156l51.398 76.193l78.792-53.147zm1092.706-352.887L1875 778.188l.016-.01l-840.542 224.06zm-304.962-178.451l-128.523 86.69l51.398 76.193l128.523-86.68zm-257.055 173.381l-128.53 86.69l51.395 76.213l128.533-86.7zm-273.634 184.576l-128.532 86.7l51.397 76.202l128.533-86.72z"></svg:path>`,
-})
-export class BpmnConnectionMultiIcon {
-  readonly viewBox = input("0 0 2048 2048")
+export class BpmnCompensationMarkerIcon {
+  readonly viewBox = input("0 0 2000 2000")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -155,23 +138,6 @@ export class BpmnDataInputIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bpmnDataObjectIcon],svg[bpmn-data-object-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="90" d="M438.243 252.897h794.703l328.81 337.647v1156.564H438.244V252.897h754.486v371.647h369.028"></svg:path>`,
-})
-export class BpmnDataObjectIcon {
-  readonly viewBox = input("0 0 2000 2000")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[bpmnDataOutputIcon],svg[bpmn-data-output-icon]',
   host: {
     role: 'img',
@@ -182,6 +148,40 @@ export class BpmnDataObjectIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="90" d="M438.243 252.897h794.702l328.812 337.647v1156.564H438.243V252.897h754.486v371.647h369.028"></svg:path><svg:path fill="currentColor" d="M789.963 367.952v185.303H577.928V712.8h212.035v185.305l282.15-265.078z"></svg:path>`,
 })
 export class BpmnDataOutputIcon {
+  readonly viewBox = input("0 0 2000 2000")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bpmnConnectionMultiIcon],svg[bpmn-connection-multi-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m1876.66 106.365l-840.543 224.07l130.275 193.138l-995.052 671.175l51.399 76.183l995.051-671.175l126.692 187.846l532.162-681.227zM250.133 1812.293l-78.793 53.156l51.398 76.193l78.792-53.147zm1092.706-352.887L1875 778.188l.016-.01l-840.542 224.06zm-304.962-178.451l-128.523 86.69l51.398 76.193l128.523-86.68zm-257.055 173.381l-128.53 86.69l51.395 76.213l128.533-86.7zm-273.634 184.576l-128.532 86.7l51.397 76.202l128.533-86.72z"></svg:path>`,
+})
+export class BpmnConnectionMultiIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bpmnDataObjectIcon],svg[bpmn-data-object-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="90" d="M438.243 252.897h794.703l328.81 337.647v1156.564H438.244V252.897h754.486v371.647h369.028"></svg:path>`,
+})
+export class BpmnDataObjectIcon {
   readonly viewBox = input("0 0 2000 2000")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,23 +274,6 @@ export class BpmnEndEventCompensationIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bpmnEndEventEscalationIcon],svg[bpmn-end-event-escalation-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1005.303 98.988c-447.59.377-859.063 373.342-901.291 819.483c-45.314 379.987 168.535 777.154 517.567 938.558c324.137 158.423 740.176 108.288 1009.01-135.647c273.526-236.69 393.041-640.13 272.893-984.32c-114.258-351.15-451.46-619.981-822.842-636.252c-25.079-1.64-50.213-1.947-75.337-1.822m18.334 289.733c329.628-9.588 631.825 281.137 635.693 610.898c14.255 301.673-212.385 597.907-513.018 648.484c-290.913 58.275-613.563-109.854-715.39-392.282c-109.622-279.29 2.217-632.478 269.045-779.065c97.56-57.284 210.508-88.176 323.67-88.035m.363 225.681c-96.784 269.33-158.215 549.865-255 819.196c88.794-88.272 166.21-187.16 255-275.436l255 275.436c-86.618-272.56-168.383-546.636-255-819.196"></svg:path>`,
-})
-export class BpmnEndEventEscalationIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[bpmnEndEventErrorIcon],svg[bpmn-end-event-error-icon]',
   host: {
     role: 'img',
@@ -301,6 +284,23 @@ export class BpmnEndEventEscalationIcon {
   template: `<svg:path fill="currentColor" d="M1005.303 98.988c-447.59.377-859.063 373.342-901.291 819.483c-45.314 379.987 168.535 777.154 517.567 938.558c324.137 158.423 740.176 108.288 1009.01-135.647c273.526-236.69 393.041-640.13 272.893-984.32c-114.258-351.15-451.46-619.981-822.842-636.252c-25.079-1.64-50.213-1.947-75.337-1.822m18.334 289.733c329.628-9.588 631.825 281.137 635.693 610.898c14.255 301.673-212.385 597.907-513.018 648.484c-290.913 58.275-613.563-109.854-715.39-392.282c-109.622-279.29 2.217-632.478 269.045-779.065c97.56-57.284 210.508-88.176 323.67-88.035m354.892 241.117l-210.236 426.178L906.887 716L669.47 1418.162l266.174-342.127l274.562 314.172z"></svg:path>`,
 })
 export class BpmnEndEventErrorIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bpmnEndEventEscalationIcon],svg[bpmn-end-event-escalation-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1005.303 98.988c-447.59.377-859.063 373.342-901.291 819.483c-45.314 379.987 168.535 777.154 517.567 938.558c324.137 158.423 740.176 108.288 1009.01-135.647c273.526-236.69 393.041-640.13 272.893-984.32c-114.258-351.15-451.46-619.981-822.842-636.252c-25.079-1.64-50.213-1.947-75.337-1.822m18.334 289.733c329.628-9.588 631.825 281.137 635.693 610.898c14.255 301.673-212.385 597.907-513.018 648.484c-290.913 58.275-613.563-109.854-715.39-392.282c-109.622-279.29 2.217-632.478 269.045-779.065c97.56-57.284 210.508-88.176 323.67-88.035m.363 225.681c-96.784 269.33-158.215 549.865-255 819.196c88.794-88.272 166.21-187.16 255-275.436l255 275.436c-86.618-272.56-168.383-546.636-255-819.196"></svg:path>`,
+})
+export class BpmnEndEventEscalationIcon {
   readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")

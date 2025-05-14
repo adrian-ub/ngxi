@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[cilThumbUpIcon],svg[cil-thumb-up-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M126.638 202.672H51.986a24.69 24.69 0 0 0-24.242 19.434a487.1 487.1 0 0 0-1.466 206.535l1.5 7.189a24.94 24.94 0 0 0 24.318 19.78h74.547a24.866 24.866 0 0 0 24.837-24.838V227.509a24.865 24.865 0 0 0-24.842-24.837m-7.163 220.938H57.916l-.309-1.487a455.1 455.1 0 0 1 .158-187.451h61.71Zm374.984-146.326l-22.09-58.906a24.315 24.315 0 0 0-22.662-15.706H332v-29.535l9.573-21.2a88.117 88.117 0 0 0-44.801-116.912a24.3 24.3 0 0 0-31.767 12.1l-80.312 175.812V248h23.731L290.7 67.882a56.14 56.14 0 0 1 21.711 70.885l-10.991 24.341l-1.42 6.584v48.98l16 16h128.3L464 287.2v9.272l-67.988 119.49H271.07l-86.377-50.67v37.1l72.007 42.241a24.2 24.2 0 0 0 12.25 3.329h131.6a24.25 24.25 0 0 0 21.035-12.234l71.25-125.228A24.26 24.26 0 0 0 496 298.531v-12.748a24.1 24.1 0 0 0-1.541-8.499"></svg:path>`,
-})
-export class CilThumbUpIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[cilToggleOffIcon],svg[cil-toggle-off-icon]',
   host: {
     role: 'img',
@@ -1049,6 +1032,23 @@ export class CilZoomInIcon {
   template: `<svg:path fill="currentColor" d="M96.344 175.313h192v32h-192z"></svg:path><svg:path fill="currentColor" d="m479.6 399.716l-81.084-81.084l-62.368-25.767A175 175 0 0 0 368 192c0-97.047-78.953-176-176-176S16 94.953 16 192s78.953 176 176 176a175.03 175.03 0 0 0 101.619-32.377l25.7 62.2l81.081 81.088a56 56 0 1 0 79.2-79.195M48 192c0-79.4 64.6-144 144-144s144 64.6 144 144s-64.6 144-144 144S48 271.4 48 192m408.971 264.284a24.03 24.03 0 0 1-33.942 0l-76.572-76.572l-23.894-57.835l57.837 23.894l76.573 76.572a24.03 24.03 0 0 1-.002 33.941"></svg:path>`,
 })
 export class CilZoomOutIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[cilApplicationsIcon],svg[cil-applications-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M88 32a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168-96a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168 32a64 64 0 1 0-64-64a64.07 64.07 0 0 0 64 64m0-96a32 32 0 1 1-32 32a32.036 32.036 0 0 1 32-32M88 192a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168-96a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168-96a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32M88 352a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168-96a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32m168-96a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 96a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32"></svg:path>`,
+})
+export class CilApplicationsIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")

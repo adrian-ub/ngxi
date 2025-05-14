@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[icSharpPhoneDisabledIcon],svg[ic-sharp-phone-disabled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.52 17.35C11.39 19.83 7.36 21.22 3 20.97v-5.51l5.27-.61l2.52 2.52c.81-.41 1.58-.9 2.3-1.45L1.39 4.22l1.42-1.41L21.19 21.2l-1.41 1.41zm1.39-4.24c.56-.73 1.05-1.51 1.47-2.33l-2.53-2.53l.61-5.25h5.51c.25 4.37-1.15 8.4-3.63 11.54z"></svg:path>`,
-})
-export class IcSharpPhoneDisabledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[icSharpPhoneEnabledIcon],svg[ic-sharp-phone-enabled-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class IcSharpSystemSecurityUpdateWarningIcon {
   template: `<svg:path fill="currentColor" d="M5 1v22h14V1zm12 18H7V5h10zm-1-6h-3V8h-2v5H8l4 4z"></svg:path>`,
 })
 export class IcSharpSystemUpdateIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icSharpSystemUpdateAltIcon],svg[ic-sharp-system-update-alt-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m12 16l4-4h-3V3h-2v9H8zm9-13h-6v1.99h6v14.03H3V4.99h6V3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9 13l4-4h-3V3h-2v9H8zM23 3h-8v1.99h6v14.03H3V4.99h6V3H1v18h22z"></svg:path>`,
+})
+export class IcSharpSystemUpdateAltIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

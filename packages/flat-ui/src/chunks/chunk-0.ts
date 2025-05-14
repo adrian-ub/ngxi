@@ -70,23 +70,6 @@ export class FlatUiArrowIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flatUiArtIcon],svg[flat-ui-art-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#17A085" d="M50 0c27.613 0 50 22.386 50 50s-22.387 50-50 50C22.386 100 0 77.614 0 50S22.386 0 50 0"></svg:path><svg:defs><svg:circle id="flatUiArt0" cx="50" cy="50" r="50"></svg:circle></svg:defs><svg:clippath id="flatUiArt1"><svg:use href="#flatUiArt0"></svg:use></svg:clippath><svg:g clip-path="url(#flatUiArt1)"><svg:path fill="#107864" d="m17 34l-33 33v51h31l21-21V43z"></svg:path><svg:path fill="#EBEDEE" d="M76 31.051V31H26v.051c-.33-.028-.662-.051-1-.051c-6.627 0-12 5.373-12 12c0 6.628 5.373 12 12 12c2.45 0 4.725-.738 6.621-2H32l-4 4v49h44V57l-4-4h.379c1.896 1.262 4.171 2 6.621 2c6.628 0 12-5.372 12-12c0-6.289-4.841-11.44-11-11.949"></svg:path><svg:path fill="#D3D5D6" d="M26 31v.051c-.33-.028-.662-.051-1-.051c-6.627 0-12 5.373-12 12c0 6.628 5.373 12 12 12a11 11 0 0 0 1.519-.104l.016-.002a12 12 0 0 0 1.466-.289v.006A12 12 0 0 0 31.622 53H32l-4 4v49h22V31z"></svg:path><svg:path fill="#BDC3C7" d="M76 36H23c-2.891.861-5 3.83-5 7a7 7 0 1 0 14 0c0-1.075-.25-2.09-.683-3h37.365A7 7 0 0 0 68 43a7 7 0 1 0 14 0c0-3.524-2.609-6.513-6-7M25 46a3 3 0 1 1 0-6a3 3 0 0 1 0 6m50 0a3 3 0 1 1 0-6a3 3 0 0 1 0 6"></svg:path><svg:circle cx="41" cy="51" r="2" fill="#AAAFB3"></svg:circle><svg:circle cx="50" cy="51" r="2" fill="#BDC3C7"></svg:circle><svg:circle cx="59" cy="51" r="2" fill="#BDC3C7"></svg:circle><svg:path fill="#AAAFB3" d="M18 43a7 7 0 1 0 14 0c0-1.075-.25-2.09-.683-3H50v-4H23c-2.891.861-5 3.83-5 7m10 0a3 3 0 1 1-6 0a3 3 0 0 1 6 0m20 8a2 2 0 0 0 2 2v-4a2 2 0 0 0-2 2m-2 13v41c0 .348.059.68.142 1H50V60a4 4 0 0 0-4 4"></svg:path><svg:path fill="#BDC3C7" d="M53.857 106a4 4 0 0 0 .143-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.142 1zm13 0a4 4 0 0 0 .143-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.143 1z"></svg:path><svg:path fill="#AAAFB3" d="M40.858 106c.083-.32.142-.652.142-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.142 1z"></svg:path></svg:g>`,
-})
-export class FlatUiArtIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[flatUiBagIcon],svg[flat-ui-bag-icon]',
   host: {
     role: 'img',
@@ -121,50 +104,16 @@ export class FlatUiBasketIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flatUiBoxIcon],svg[flat-ui-box-icon]',
+  selector: 'svg[flatUiArtIcon],svg[flat-ui-art-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#FBF063" fill-rule="evenodd" d="M7 22L50 0l43 22l-43 21.001z" clip-rule="evenodd"></svg:path><svg:path fill="#F29C1F" fill-rule="evenodd" d="M50.003 42.997L7 22v54.28l43.006 21.714z" clip-rule="evenodd"></svg:path><svg:path fill="#F0C419" fill-rule="evenodd" d="M50 97.994L93.006 76.28V22L50.003 42.997z" clip-rule="evenodd"></svg:path><svg:path fill="#F29C1F" fill-rule="evenodd" d="m27.036 11.705l42.995 21.498l2.263-1.105l-43.047-21.524z" clip-rule="evenodd" opacity=".5"></svg:path><svg:path fill="#fff" fill-rule="evenodd" d="M21.318 14.674L63.3 36.505l15.99-7.809L35.788 7.271z" clip-rule="evenodd" opacity=".5"></svg:path><svg:path fill="#fff" fill-rule="evenodd" d="m63.312 36.505l15.978-7.818v11l-15.978 8.817z" clip-rule="evenodd" opacity=".5"></svg:path>`,
+  template: `<svg:path fill="#17A085" d="M50 0c27.613 0 50 22.386 50 50s-22.387 50-50 50C22.386 100 0 77.614 0 50S22.386 0 50 0"></svg:path><svg:defs><svg:circle id="flatUiArt0" cx="50" cy="50" r="50"></svg:circle></svg:defs><svg:clippath id="flatUiArt1"><svg:use href="#flatUiArt0"></svg:use></svg:clippath><svg:g clip-path="url(#flatUiArt1)"><svg:path fill="#107864" d="m17 34l-33 33v51h31l21-21V43z"></svg:path><svg:path fill="#EBEDEE" d="M76 31.051V31H26v.051c-.33-.028-.662-.051-1-.051c-6.627 0-12 5.373-12 12c0 6.628 5.373 12 12 12c2.45 0 4.725-.738 6.621-2H32l-4 4v49h44V57l-4-4h.379c1.896 1.262 4.171 2 6.621 2c6.628 0 12-5.372 12-12c0-6.289-4.841-11.44-11-11.949"></svg:path><svg:path fill="#D3D5D6" d="M26 31v.051c-.33-.028-.662-.051-1-.051c-6.627 0-12 5.373-12 12c0 6.628 5.373 12 12 12a11 11 0 0 0 1.519-.104l.016-.002a12 12 0 0 0 1.466-.289v.006A12 12 0 0 0 31.622 53H32l-4 4v49h22V31z"></svg:path><svg:path fill="#BDC3C7" d="M76 36H23c-2.891.861-5 3.83-5 7a7 7 0 1 0 14 0c0-1.075-.25-2.09-.683-3h37.365A7 7 0 0 0 68 43a7 7 0 1 0 14 0c0-3.524-2.609-6.513-6-7M25 46a3 3 0 1 1 0-6a3 3 0 0 1 0 6m50 0a3 3 0 1 1 0-6a3 3 0 0 1 0 6"></svg:path><svg:circle cx="41" cy="51" r="2" fill="#AAAFB3"></svg:circle><svg:circle cx="50" cy="51" r="2" fill="#BDC3C7"></svg:circle><svg:circle cx="59" cy="51" r="2" fill="#BDC3C7"></svg:circle><svg:path fill="#AAAFB3" d="M18 43a7 7 0 1 0 14 0c0-1.075-.25-2.09-.683-3H50v-4H23c-2.891.861-5 3.83-5 7m10 0a3 3 0 1 1-6 0a3 3 0 0 1 6 0m20 8a2 2 0 0 0 2 2v-4a2 2 0 0 0-2 2m-2 13v41c0 .348.059.68.142 1H50V60a4 4 0 0 0-4 4"></svg:path><svg:path fill="#BDC3C7" d="M53.857 106a4 4 0 0 0 .143-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.142 1zm13 0a4 4 0 0 0 .143-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.143 1z"></svg:path><svg:path fill="#AAAFB3" d="M40.858 106c.083-.32.142-.652.142-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.142 1z"></svg:path></svg:g>`,
 })
-export class FlatUiBoxIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[flatUiBuildingIcon],svg[flat-ui-building-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#34495E" d="M40.972 72.92s-38.986.031-38.944.041c.017.865 0 4.022 0 4.022l38.943 23.052l38.944-23.052s-.035-3.198-.008-3.987c-.092-.194-38.935-.076-38.935-.076"></svg:path><svg:path fill="#ECF0F1" d="M40.972 25.95s-38.986.031-38.944.041c.017.865 0 46.996 0 46.996l38.944 23.051l38.944-23.051s-.004-46.171.022-46.96c-.089-.196-38.966-.077-38.966-.077"></svg:path><svg:path fill="#2C3E50" d="M2.028 72.961c.017.865 0 4.022 0 4.022l38.943 23.052V72.92c.001 0-38.986.032-38.943.041"></svg:path><svg:path fill="#BDC3C7" d="M2.028 25.991c.017.865 0 46.996 0 46.996l38.944 23.051V25.95s-38.987.031-38.944.041"></svg:path><svg:path fill="#BDC3C7" d="M40.972 23.986s-40.983.031-40.941.041c.018.865 0 4.022 0 4.022L40.971 52.1l40.94-24.051s-.033-3.198-.008-3.987c-.09-.195-40.931-.076-40.931-.076"></svg:path><svg:path fill="#95A5A6" d="m46.994 54.967l7.004-3.998v12.992l-7.004 3.996zm10.007-5.997l7.005-3.998v12.993l-7.005 3.996zM.034 28.05L40.86 52.034h.111V24.051H.034v.217c.008.758.003 2.276 0 3.141zm66.974 14.924l7.007-3.997v12.991l-7.007 3.997zM46.994 71.967l7.004-3.998v12.992l-7.004 3.998zm20.014-11.994l7.007-3.997v12.992l-7.007 3.997z"></svg:path><svg:path fill="#2C3E50" d="m57.008 72.973l7.005-3.997v17.421l-7.005 4.146z"></svg:path><svg:path fill="#C0392C" d="m57.008 65.973l7.005-3.997v3.992l-7.005 3.997z"></svg:path><svg:path fill="#ECF0F1" d="M40.972 0L0 24.051l40.972 24.051l41.034-24.051z"></svg:path><svg:path fill="#D48A6D" d="M40.972 4.029L5.991 24.051l34.981 20.022l34.981-20.022z"></svg:path><svg:path fill="#7F8C8D" d="M34.981 54.998L27.992 51v12.992l6.989 3.996zm-9.985-5.997l-6.989-3.998v12.994l6.989 3.996zm-9.985-5.996l-6.989-3.998v12.991l6.989 3.998zm19.97 28.982l-6.989-3.996v12.99l6.989 3.998zm-9.985-5.996l-6.989-3.996v12.99l6.989 3.998zm-9.985-5.996l-6.989-3.998v12.992l6.989 3.998z"></svg:path><svg:path fill="#BDC3C7" d="m74.015 44.598l-7.007 4.372v1.999l7.007-4.372zm0 17l-7.007 4.372v1.999l7.007-4.373zM64.006 50.594l-7.005 4.373v1.998l7.005-4.373zM53.998 56.59l-7.004 4.373v1.998l7.004-4.371zm0 17l-7.004 4.373v1.998l7.004-4.371z"></svg:path><svg:path fill="#95A5A6" d="M27.992 56.622v2l6.989 4.371v-1.998zm0 16.99v1.998l6.989 4.373v-2zm-9.985-5.996v1.998l6.989 4.373v-2zm0-16.991v1.998l6.989 4.374v-1.999zM8.019 61.618v1.998l6.992 4.375v-2zm0-16.991v1.999L15.011 51v-1.999z"></svg:path><svg:path fill="#AA6F57" d="m40.972 6.029l33.234 19.022l1.747-1L40.972 4.029L5.991 24.051l1.747 1z"></svg:path>`,
-})
-export class FlatUiBuildingIcon {
-  readonly viewBox = input("0 0 82.006 100.036")
-  readonly width = input("0.82em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[flatUiBrushIcon],svg[flat-ui-brush-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#ECF0F1" d="M50 0c27.613 0 50 22.386 50 50s-22.387 50-50 50C22.386 100 0 77.614 0 50S22.386 0 50 0"></svg:path><svg:path fill="#DF9274" d="M21.99 66.896A5 5 0 0 1 18 62c0-.717.004-1.373.01-2H18V41a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v19h-.01c.006.627.01 1.283.01 2a5 5 0 0 1-3.99 4.896C1.658 67.35 0 69.539 0 72v2a5 5 0 0 0 5 5h16a5 5 0 0 0 5-5v-2c0-2.461-1.658-4.65-4.01-5.104M13 45a2 2 0 1 1 .001-4.001A2 2 0 0 1 13 45"></svg:path><svg:path fill="#C88368" d="M4 66.9c-2.297.447-3.919 2.553-3.987 4.947c.068 3.49 1.751 6.378 3.987 7.051z"></svg:path><svg:path fill="#2C3E50" d="M0 83h26v17H0z"></svg:path><svg:path fill="#283848" d="M2 100h2V83H2zm4 0h2V83H6zm4 0h2V83h-2zm4 0h2V83h-2zm4 0h2V83h-2zm4-17v17h2V83z"></svg:path><svg:path fill="#95A5A6" d="M0 71h26v11H0z"></svg:path><svg:path fill="#BDC3C7" d="M0 81h26v2H0zm0-10h26v2H0z"></svg:path><svg:path fill="#C0392C" d="M8 41v7h10v-7a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3m5 0a2 2 0 1 1-.001 4.001A2 2 0 0 1 13 41"></svg:path><svg:path fill="#869495" d="M0 71h4v11H0z"></svg:path><svg:path fill="#AAAFB3" d="M0 71h4v2H0zm0 10h4v2H0z"></svg:path><svg:defs><svg:circle id="flatUiBrush0" cx="50" cy="50" r="50"></svg:circle></svg:defs><svg:clippath id="flatUiBrush1"><svg:use href="#flatUiBrush0"></svg:use></svg:clippath><svg:g clip-path="url(#flatUiBrush1)"><svg:path fill="#7F8C8D" d="M120 44h-3.447c0-19.578-15.725-36.007-35.053-36.007S45.948 24.422 45.948 44H43C43 22.495 60.271 5 81.5 5S120 22.495 120 44"></svg:path><svg:path fill="#2C3E50" d="M39 44h79v82H39z"></svg:path><svg:path fill="#F1C40E" d="M39 68h79v20H39z"></svg:path><svg:path fill="#253544" d="M77 44H57v14.5a5.5 5.5 0 0 0 11 0v-4c0-2.484 2.016-4.5 4.5-4.5s4.5 2.016 4.5 4.5V54a4 4 0 0 0 8 0V44z"></svg:path><svg:path fill="#F1C40E" d="M79 44H59v12.5a5.5 5.5 0 0 0 11 0v-4a4.501 4.501 0 0 1 9 0V52a4 4 0 0 0 8 0v-8z"></svg:path><svg:path fill="#283848" d="M39 44h10v68H39z"></svg:path><svg:path fill="#D8B00C" d="M39 68h10v20H39z"></svg:path></svg:g>`,
-})
-export class FlatUiBrushIcon {
+export class FlatUiArtIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,6 +155,57 @@ export class FlatUiBowlingIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[flatUiBoxIcon],svg[flat-ui-box-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#FBF063" fill-rule="evenodd" d="M7 22L50 0l43 22l-43 21.001z" clip-rule="evenodd"></svg:path><svg:path fill="#F29C1F" fill-rule="evenodd" d="M50.003 42.997L7 22v54.28l43.006 21.714z" clip-rule="evenodd"></svg:path><svg:path fill="#F0C419" fill-rule="evenodd" d="M50 97.994L93.006 76.28V22L50.003 42.997z" clip-rule="evenodd"></svg:path><svg:path fill="#F29C1F" fill-rule="evenodd" d="m27.036 11.705l42.995 21.498l2.263-1.105l-43.047-21.524z" clip-rule="evenodd" opacity=".5"></svg:path><svg:path fill="#fff" fill-rule="evenodd" d="M21.318 14.674L63.3 36.505l15.99-7.809L35.788 7.271z" clip-rule="evenodd" opacity=".5"></svg:path><svg:path fill="#fff" fill-rule="evenodd" d="m63.312 36.505l15.978-7.818v11l-15.978 8.817z" clip-rule="evenodd" opacity=".5"></svg:path>`,
+})
+export class FlatUiBoxIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatUiBrushIcon],svg[flat-ui-brush-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#ECF0F1" d="M50 0c27.613 0 50 22.386 50 50s-22.387 50-50 50C22.386 100 0 77.614 0 50S22.386 0 50 0"></svg:path><svg:path fill="#DF9274" d="M21.99 66.896A5 5 0 0 1 18 62c0-.717.004-1.373.01-2H18V41a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v19h-.01c.006.627.01 1.283.01 2a5 5 0 0 1-3.99 4.896C1.658 67.35 0 69.539 0 72v2a5 5 0 0 0 5 5h16a5 5 0 0 0 5-5v-2c0-2.461-1.658-4.65-4.01-5.104M13 45a2 2 0 1 1 .001-4.001A2 2 0 0 1 13 45"></svg:path><svg:path fill="#C88368" d="M4 66.9c-2.297.447-3.919 2.553-3.987 4.947c.068 3.49 1.751 6.378 3.987 7.051z"></svg:path><svg:path fill="#2C3E50" d="M0 83h26v17H0z"></svg:path><svg:path fill="#283848" d="M2 100h2V83H2zm4 0h2V83H6zm4 0h2V83h-2zm4 0h2V83h-2zm4 0h2V83h-2zm4-17v17h2V83z"></svg:path><svg:path fill="#95A5A6" d="M0 71h26v11H0z"></svg:path><svg:path fill="#BDC3C7" d="M0 81h26v2H0zm0-10h26v2H0z"></svg:path><svg:path fill="#C0392C" d="M8 41v7h10v-7a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3m5 0a2 2 0 1 1-.001 4.001A2 2 0 0 1 13 41"></svg:path><svg:path fill="#869495" d="M0 71h4v11H0z"></svg:path><svg:path fill="#AAAFB3" d="M0 71h4v2H0zm0 10h4v2H0z"></svg:path><svg:defs><svg:circle id="flatUiBrush0" cx="50" cy="50" r="50"></svg:circle></svg:defs><svg:clippath id="flatUiBrush1"><svg:use href="#flatUiBrush0"></svg:use></svg:clippath><svg:g clip-path="url(#flatUiBrush1)"><svg:path fill="#7F8C8D" d="M120 44h-3.447c0-19.578-15.725-36.007-35.053-36.007S45.948 24.422 45.948 44H43C43 22.495 60.271 5 81.5 5S120 22.495 120 44"></svg:path><svg:path fill="#2C3E50" d="M39 44h79v82H39z"></svg:path><svg:path fill="#F1C40E" d="M39 68h79v20H39z"></svg:path><svg:path fill="#253544" d="M77 44H57v14.5a5.5 5.5 0 0 0 11 0v-4c0-2.484 2.016-4.5 4.5-4.5s4.5 2.016 4.5 4.5V54a4 4 0 0 0 8 0V44z"></svg:path><svg:path fill="#F1C40E" d="M79 44H59v12.5a5.5 5.5 0 0 0 11 0v-4a4.501 4.501 0 0 1 9 0V52a4 4 0 0 0 8 0v-8z"></svg:path><svg:path fill="#283848" d="M39 44h10v68H39z"></svg:path><svg:path fill="#D8B00C" d="M39 68h10v20H39z"></svg:path></svg:g>`,
+})
+export class FlatUiBrushIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatUiBuildingIcon],svg[flat-ui-building-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#34495E" d="M40.972 72.92s-38.986.031-38.944.041c.017.865 0 4.022 0 4.022l38.943 23.052l38.944-23.052s-.035-3.198-.008-3.987c-.092-.194-38.935-.076-38.935-.076"></svg:path><svg:path fill="#ECF0F1" d="M40.972 25.95s-38.986.031-38.944.041c.017.865 0 46.996 0 46.996l38.944 23.051l38.944-23.051s-.004-46.171.022-46.96c-.089-.196-38.966-.077-38.966-.077"></svg:path><svg:path fill="#2C3E50" d="M2.028 72.961c.017.865 0 4.022 0 4.022l38.943 23.052V72.92c.001 0-38.986.032-38.943.041"></svg:path><svg:path fill="#BDC3C7" d="M2.028 25.991c.017.865 0 46.996 0 46.996l38.944 23.051V25.95s-38.987.031-38.944.041"></svg:path><svg:path fill="#BDC3C7" d="M40.972 23.986s-40.983.031-40.941.041c.018.865 0 4.022 0 4.022L40.971 52.1l40.94-24.051s-.033-3.198-.008-3.987c-.09-.195-40.931-.076-40.931-.076"></svg:path><svg:path fill="#95A5A6" d="m46.994 54.967l7.004-3.998v12.992l-7.004 3.996zm10.007-5.997l7.005-3.998v12.993l-7.005 3.996zM.034 28.05L40.86 52.034h.111V24.051H.034v.217c.008.758.003 2.276 0 3.141zm66.974 14.924l7.007-3.997v12.991l-7.007 3.997zM46.994 71.967l7.004-3.998v12.992l-7.004 3.998zm20.014-11.994l7.007-3.997v12.992l-7.007 3.997z"></svg:path><svg:path fill="#2C3E50" d="m57.008 72.973l7.005-3.997v17.421l-7.005 4.146z"></svg:path><svg:path fill="#C0392C" d="m57.008 65.973l7.005-3.997v3.992l-7.005 3.997z"></svg:path><svg:path fill="#ECF0F1" d="M40.972 0L0 24.051l40.972 24.051l41.034-24.051z"></svg:path><svg:path fill="#D48A6D" d="M40.972 4.029L5.991 24.051l34.981 20.022l34.981-20.022z"></svg:path><svg:path fill="#7F8C8D" d="M34.981 54.998L27.992 51v12.992l6.989 3.996zm-9.985-5.997l-6.989-3.998v12.994l6.989 3.996zm-9.985-5.996l-6.989-3.998v12.991l6.989 3.998zm19.97 28.982l-6.989-3.996v12.99l6.989 3.998zm-9.985-5.996l-6.989-3.996v12.99l6.989 3.998zm-9.985-5.996l-6.989-3.998v12.992l6.989 3.998z"></svg:path><svg:path fill="#BDC3C7" d="m74.015 44.598l-7.007 4.372v1.999l7.007-4.372zm0 17l-7.007 4.372v1.999l7.007-4.373zM64.006 50.594l-7.005 4.373v1.998l7.005-4.373zM53.998 56.59l-7.004 4.373v1.998l7.004-4.371zm0 17l-7.004 4.373v1.998l7.004-4.371z"></svg:path><svg:path fill="#95A5A6" d="M27.992 56.622v2l6.989 4.371v-1.998zm0 16.99v1.998l6.989 4.373v-2zm-9.985-5.996v1.998l6.989 4.373v-2zm0-16.991v1.998l6.989 4.374v-1.999zM8.019 61.618v1.998l6.992 4.375v-2zm0-16.991v1.999L15.011 51v-1.999z"></svg:path><svg:path fill="#AA6F57" d="m40.972 6.029l33.234 19.022l1.747-1L40.972 4.029L5.991 24.051l1.747 1z"></svg:path>`,
+})
+export class FlatUiBuildingIcon {
+  readonly viewBox = input("0 0 82.006 100.036")
+  readonly width = input("0.82em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[flatUiBulbIcon],svg[flat-ui-bulb-icon]',
   host: {
     role: 'img',
@@ -216,6 +216,23 @@ export class FlatUiBowlingIcon {
   template: `<svg:circle cx="50" cy="50" r="50" fill="#F0C419"></svg:circle><svg:clippath id="flatUiBulb0"><svg:circle cx="50" cy="50" r="50"></svg:circle></svg:clippath><svg:g fill-rule="evenodd" clip-path="url(#flatUiBulb0)" clip-rule="evenodd"><svg:path fill="#FCF062" d="M7.619 21.663L49.999 50L21.689 7.594zm84.775.019L78.329 7.607L50 50L.005 40.039L0 59.94L50 50L7.606 78.319l14.065 14.075L50 50.001l-9.958 50.01l19.895.004L50 50.001l28.31 42.406l14.071-14.07L50 50zM100 40.061L50 50l49.996 9.962zM40.063-.014L50 49.999L59.958-.01z"></svg:path><svg:path fill="#FCF062" stroke="#F29C1F" stroke-miterlimit="10" stroke-width="4" d="M60 93H40c0-7.575-3.487-17.565-7.99-21.324A28.11 28.11 0 0 1 22 50.125C22 34.592 34.536 22 50 22s28 12.592 28 28.125c0 8.667-4.156 16.13-10.04 21.576C63.191 76.47 60 85.466 60 93z"></svg:path><svg:path fill="#F29C1F" d="M53 95a1 1 0 0 1-1-1V61h-4v33a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V61h-2.5c-3.584 0-6.5-2.916-6.5-6.5s2.916-6.5 6.5-6.5a6.46 6.46 0 0 1 6.446 5.684A1 1 0 0 1 48 54v3h4v-3q.001-.173.056-.329A6.46 6.46 0 0 1 58.5 48c3.584 0 6.5 2.916 6.5 6.5S62.084 61 58.5 61H56v33a1 1 0 0 1-1 1zm5.5-38c1.379 0 2.5-1.121 2.5-2.5s-1.121-2.501-2.5-2.501a2.504 2.504 0 0 0-2.459 2.144l-.041.173V57zm-17-5.001c-1.378 0-2.5 1.122-2.5 2.501s1.122 2.5 2.5 2.5H44v-2.692l-.04-.165a2.505 2.505 0 0 0-2.46-2.144"></svg:path><svg:path fill="#E57E25" d="M38 91h24v9H38zm6-27h4v-3h-4zm8-3v3h4v-3z"></svg:path></svg:g>`,
 })
 export class FlatUiBulbIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatUiButtonIcon],svg[flat-ui-button-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:clippath id="flatUiButton0"><svg:circle cx="50" cy="50" r="50"></svg:circle></svg:clippath><svg:g fill-rule="evenodd" clip-path="url(#flatUiButton0)" clip-rule="evenodd"><svg:circle cx="50" cy="50" r="50" fill="#D7DBDE"></svg:circle><svg:path fill="#BDC3C7" d="M10.167 147.834L79 79L21 21l-73 73z"></svg:path><svg:path fill="#ECF0F1" d="M-47.5 80a5.506 5.506 0 0 1-5.5-5.5v-49c0-3.033 2.467-5.5 5.5-5.5h49C4.533 20 7 22.467 7 25.5v49C7 77.532 4.533 80 1.5 80z"></svg:path><svg:path fill="#8B9298" d="M1.25 21C3.735 21 6 23.015 6 25.5v49A4.5 4.5 0 0 1 1.5 79h-49a4.5 4.5 0 0 1-4.5-4.5v-49a4.5 4.5 0 0 1 4.5-4.5H1m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49C5.084 81 8 78.084 8 74.5v-49C8 21.916 5.084 19 1.5 19"></svg:path><svg:path fill="#ECF0F1" d="M62.5 8A5.506 5.506 0 0 1 57 2.5v-49c0-3.033 2.468-5.5 5.5-5.5h49c3.032 0 5.5 2.467 5.5 5.5v49c0 3.033-2.468 5.5-5.5 5.5z"></svg:path><svg:path fill="#8B9298" d="M111.25-51c2.485 0 4.75 2.015 4.75 4.5v49a4.5 4.5 0 0 1-4.5 4.5h-49A4.5 4.5 0 0 1 58 2.5v-49a4.5 4.5 0 0 1 4.5-4.5H111m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49C56 6.084 58.916 9 62.5 9h49c3.584 0 6.5-2.916 6.5-6.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#ECF0F1" d="M-11.5 8A5.506 5.506 0 0 1-17 2.5v-49c0-3.033 2.467-5.5 5.5-5.5h49c3.033 0 5.5 2.467 5.5 5.5v49C43 5.533 40.533 8 37.5 8z"></svg:path><svg:path fill="#8B9298" d="M37.25-51c2.485 0 4.75 2.015 4.75 4.5v49A4.5 4.5 0 0 1 37.5 7h-49A4.5 4.5 0 0 1-16 2.5v-49a4.5 4.5 0 0 1 4.5-4.5H37m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49C41.084 9 44 6.084 44 2.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#ECF0F1" d="M62.5 152a5.507 5.507 0 0 1-5.5-5.5v-49c0-3.032 2.468-5.5 5.5-5.5h49c3.032 0 5.5 2.468 5.5 5.5v49c0 3.032-2.468 5.5-5.5 5.5z"></svg:path><svg:path fill="#8B9298" d="M111.25 93c2.485 0 4.75 2.015 4.75 4.5v49a4.5 4.5 0 0 1-4.5 4.5h-49a4.5 4.5 0 0 1-4.5-4.5v-49a4.5 4.5 0 0 1 4.5-4.5H111m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49c3.584 0 6.5-2.916 6.5-6.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#ECF0F1" d="M-11.5 152a5.506 5.506 0 0 1-5.5-5.5v-49c0-3.032 2.467-5.5 5.5-5.5h49c3.033 0 5.5 2.468 5.5 5.5v49c0 3.032-2.467 5.5-5.5 5.5z"></svg:path><svg:path fill="#8B9298" d="M37.25 93c2.485 0 4.75 2.015 4.75 4.5v49a4.5 4.5 0 0 1-4.5 4.5h-49a4.5 4.5 0 0 1-4.5-4.5v-49a4.5 4.5 0 0 1 4.5-4.5H37m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49c3.584 0 6.5-2.916 6.5-6.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#ECF0F1" d="M98.5 80a5.507 5.507 0 0 1-5.5-5.5v-49c0-3.033 2.468-5.5 5.5-5.5h49c3.032 0 5.5 2.467 5.5 5.5v49c0 3.032-2.468 5.5-5.5 5.5z"></svg:path><svg:path fill="#8B9298" d="M147.25 21c2.485 0 4.75 2.015 4.75 4.5v49a4.5 4.5 0 0 1-4.5 4.5h-49a4.5 4.5 0 0 1-4.5-4.5v-49a4.5 4.5 0 0 1 4.5-4.5H147m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49c3.584 0 6.5-2.916 6.5-6.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#ECF0F1" d="M25.5 80a5.506 5.506 0 0 1-5.5-5.5v-49c0-3.033 2.467-5.5 5.5-5.5h49c3.032 0 5.5 2.467 5.5 5.5v49c0 3.032-2.468 5.5-5.5 5.5z"></svg:path><svg:path fill="#8B9298" d="M74.25 21c2.485 0 4.75 2.015 4.75 4.5v49a4.5 4.5 0 0 1-4.5 4.5h-49a4.5 4.5 0 0 1-4.5-4.5v-49a4.5 4.5 0 0 1 4.5-4.5H74m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49c3.584 0 6.5-2.916 6.5-6.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#E1E5E6" d="M59 69a2 2 0 0 1-2 2H43a2 2 0 0 1 0-4h14a2 2 0 0 1 2 2"></svg:path><svg:path fill="#fff" d="M59 69H41a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2"></svg:path><svg:path fill="#00A184" d="M54.5 42a1.5 1.5 0 1 0 0-3h-7a1.5 1.5 0 0 0-1.5 1.5v18a1.5 1.5 0 1 0 3 0V51h4.5a1.5 1.5 0 0 0 0-3H49v-6z"></svg:path><svg:path fill="#fff" d="M74.5 21h-49c-1.76 0-3.268 1.02-4.007 2.493A4.44 4.44 0 0 1 23.5 23h49a4.5 4.5 0 0 1 4.5 4.5v49c0 .726-.188 1.4-.492 2.008C77.979 77.768 79 76.26 79 74.5v-49a4.5 4.5 0 0 0-4.5-4.5"></svg:path></svg:g><svg:path d="M50 0C22.386 0 0 22.386 0 50l.025 1C.56 24.955 21.827 4 48 4c26.509 0 48 21.491 48 48c0 26.172-20.954 47.44-47 47.975l1 .025c27.614 0 50-22.387 50-50c0-27.614-22.386-50-50-50" opacity=".15"></svg:path>`,
+})
+export class FlatUiButtonIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,23 +257,6 @@ export class FlatUiCalculatorIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flatUiCalendarIcon],svg[flat-ui-calendar-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#EBEDED" d="M100 95a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h90a5 5 0 0 1 5 5z"></svg:path><svg:path fill="#D4D7DA" d="M95 97H5a5 5 0 0 1-5-5v3a5 5 0 0 0 5 5h90a5 5 0 0 0 5-5v-3a5 5 0 0 1-5 5"></svg:path><svg:path fill="#E64C3C" d="M0 31V5a5 5 0 0 1 5-5h90a5 5 0 0 1 5 5v26z"></svg:path><svg:path fill="#C03A2B" d="M0 28h100v2.75H0z"></svg:path><svg:path fill="#fff" d="m30.344 8.576l2.672 7.855h.032l2.528-7.855h3.536V20H36.76v-8.096h-.032L33.928 20h-1.936l-2.8-8.016h-.032V20h-2.352V8.576zm11.04 4.368q.351-.529.896-.849a3.9 3.9 0 0 1 1.224-.456q.68-.135 1.368-.136q.624 0 1.264.088c.64.088.816.174 1.168.344q.528.256.864.713t.336 1.208v4.304q0 .56.064 1.072q.063.512.224.768h-2.304l-.104-.392l-.056-.408q-.545.56-1.28.784a5.2 5.2 0 0 1-1.504.224a4 4 0 0 1-1.104-.144a2.6 2.6 0 0 1-.896-.448a2.1 2.1 0 0 1-.6-.769q-.216-.463-.216-1.104q0-.704.248-1.16a2.1 2.1 0 0 1 .64-.728q.392-.272.896-.408a7.5 7.5 0 0 1 1.016-.216q.511-.081 1.008-.129q.496-.047.88-.144a1.5 1.5 0 0 0 .608-.28q.223-.183.208-.536q0-.367-.12-.584a.9.9 0 0 0-.32-.336a1.3 1.3 0 0 0-.464-.159a4 4 0 0 0-.568-.04q-.672 0-1.056.287q-.384.288-.448.961h-2.272q.048-.8.4-1.327m4.488 3.208a4 4 0 0 1-.464.12l-.52.079l-.544.08a4 4 0 0 0-.504.128q-.249.08-.432.217c-.183.137-.221.205-.296.344s-.112.315-.112.528q0 .303.112.512c.112.209.176.248.304.328q.192.12.448.168t.528.048q.672 0 1.04-.224q.369-.224.544-.536t.216-.633q.04-.32.04-.512v-.848a1 1 0 0 1-.36.201m6.552-4.424v1.536h.032q.159-.384.432-.712t.624-.56c.351-.233.485-.274.752-.36q.4-.128.832-.128q.223 0 .496.08v2.112l-.384-.057l-.433-.023q-.624 0-1.056.208c-.432.208-.521.328-.696.567q-.264.36-.376.841a4.6 4.6 0 0 0-.111 1.04V20h-2.272v-8.272zm7.727 1.488q-.543 0-.912.248a2 2 0 0 0-.6.64q-.232.393-.328.864a4.5 4.5 0 0 0 0 1.849q.096.464.312.84c.216.376.338.456.584.616q.368.239.896.239q.816 0 1.256-.456t.553-1.224h2.191q-.224 1.648-1.28 2.512q-1.055.864-2.703.864a4.5 4.5 0 0 1-1.704-.312a3.8 3.8 0 0 1-1.32-.872a4 4 0 0 1-.848-1.336a4.6 4.6 0 0 1-.305-1.704q0-.961.28-1.784q.28-.825.824-1.424q.543-.6 1.328-.937q.783-.336 1.792-.336q.735 0 1.416.192q.68.191 1.216.584t.872.976q.336.585.384 1.384h-2.224q-.223-1.423-1.68-1.423m7.504-4.64v4.304h.048q.432-.719 1.104-1.048a3 3 0 0 1 1.312-.328q.912 0 1.496.248q.585.249.92.688q.337.44.472 1.071q.137.633.137 1.4V20h-2.272v-4.672q0-1.024-.319-1.528q-.321-.504-1.137-.504q-.927 0-1.344.552q-.416.552-.416 1.816V20h-2.272V8.576z"></svg:path><svg:path fill="#35495E" d="M26.77 55.045q.735-2.369 2.208-4.14q1.471-1.771 3.703-2.761q2.23-.988 5.129-.988q2.208 0 4.209.689c2.001.689 2.507 1.12 3.519 1.979q1.518 1.288 2.415 3.174q.897 1.887.897 4.232q0 2.438-.782 4.186a11 11 0 0 1-2.07 3.105a17.7 17.7 0 0 1-2.921 2.461a250 250 0 0 1-3.289 2.185a43 43 0 0 0-3.22 2.323a14.6 14.6 0 0 0-2.76 2.897h15.226V80H25.39q0-2.805.805-4.876a13 13 0 0 1 2.185-3.703a19 19 0 0 1 3.243-3.013a144 144 0 0 1 3.933-2.807q1.058-.735 2.254-1.494a15 15 0 0 0 2.185-1.68a9 9 0 0 0 1.656-2.069q.666-1.15.667-2.622q0-2.346-1.357-3.657q-1.358-1.312-3.473-1.312q-1.427.001-2.415.667a5 5 0 0 0-1.587 1.748a8 8 0 0 0-.851 2.393a13.7 13.7 0 0 0-.253 2.599h-6.256q-.093-2.76.644-5.129m23.966 17.503v-5.979L64.721 47.8h5.842v19.366h4.277v5.382h-4.277V80h-6.21v-7.452zm13.478-16.56l-8.325 11.178h8.464V55.988z"></svg:path>`,
-})
-export class FlatUiCalendarIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[flatUiCameraIcon],svg[flat-ui-camera-icon]',
   host: {
     role: 'img',
@@ -267,6 +267,23 @@ export class FlatUiCalendarIcon {
   template: `<svg:path fill="#3B97D3" d="M100 85c0 8.284-6.716 15-15 15H15c-8.284 0-15-6.716-15-15V15C0 6.716 6.716 0 15 0h70c8.284 0 15 6.716 15 15z"></svg:path><svg:path fill="#fff" stroke="#2980BA" stroke-miterlimit="10" stroke-width="2" d="M90 15a5 5 0 1 1-10.001-.001A5 5 0 0 1 90 15z"></svg:path><svg:circle cx="49" cy="52" r="37" fill="#324559" opacity=".5"></svg:circle><svg:circle cx="50" cy="50" r="37" fill="#fff"></svg:circle><svg:circle cx="50" cy="50" r="34" fill="#202D3C"></svg:circle><svg:circle cx="50" cy="50" r="22" fill="#35495E"></svg:circle><svg:circle cx="50" cy="50" r="13" fill="#202D3C"></svg:circle><svg:circle cx="50" cy="50" r="4" fill="#C03A2B"></svg:circle><svg:path fill="none" stroke="#35495E" stroke-miterlimit="10" stroke-width="2" d="M50 59a9 9 0 0 1-9-9.001" clip-rule="evenodd"></svg:path><svg:path d="M23.625 23.873c14.498-14.498 38.004-14.498 52.502 0s14.498 38.004 0 52.502" opacity=".15"></svg:path>`,
 })
 export class FlatUiCameraIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatUiCalendarIcon],svg[flat-ui-calendar-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#EBEDED" d="M100 95a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h90a5 5 0 0 1 5 5z"></svg:path><svg:path fill="#D4D7DA" d="M95 97H5a5 5 0 0 1-5-5v3a5 5 0 0 0 5 5h90a5 5 0 0 0 5-5v-3a5 5 0 0 1-5 5"></svg:path><svg:path fill="#E64C3C" d="M0 31V5a5 5 0 0 1 5-5h90a5 5 0 0 1 5 5v26z"></svg:path><svg:path fill="#C03A2B" d="M0 28h100v2.75H0z"></svg:path><svg:path fill="#fff" d="m30.344 8.576l2.672 7.855h.032l2.528-7.855h3.536V20H36.76v-8.096h-.032L33.928 20h-1.936l-2.8-8.016h-.032V20h-2.352V8.576zm11.04 4.368q.351-.529.896-.849a3.9 3.9 0 0 1 1.224-.456q.68-.135 1.368-.136q.624 0 1.264.088c.64.088.816.174 1.168.344q.528.256.864.713t.336 1.208v4.304q0 .56.064 1.072q.063.512.224.768h-2.304l-.104-.392l-.056-.408q-.545.56-1.28.784a5.2 5.2 0 0 1-1.504.224a4 4 0 0 1-1.104-.144a2.6 2.6 0 0 1-.896-.448a2.1 2.1 0 0 1-.6-.769q-.216-.463-.216-1.104q0-.704.248-1.16a2.1 2.1 0 0 1 .64-.728q.392-.272.896-.408a7.5 7.5 0 0 1 1.016-.216q.511-.081 1.008-.129q.496-.047.88-.144a1.5 1.5 0 0 0 .608-.28q.223-.183.208-.536q0-.367-.12-.584a.9.9 0 0 0-.32-.336a1.3 1.3 0 0 0-.464-.159a4 4 0 0 0-.568-.04q-.672 0-1.056.287q-.384.288-.448.961h-2.272q.048-.8.4-1.327m4.488 3.208a4 4 0 0 1-.464.12l-.52.079l-.544.08a4 4 0 0 0-.504.128q-.249.08-.432.217c-.183.137-.221.205-.296.344s-.112.315-.112.528q0 .303.112.512c.112.209.176.248.304.328q.192.12.448.168t.528.048q.672 0 1.04-.224q.369-.224.544-.536t.216-.633q.04-.32.04-.512v-.848a1 1 0 0 1-.36.201m6.552-4.424v1.536h.032q.159-.384.432-.712t.624-.56c.351-.233.485-.274.752-.36q.4-.128.832-.128q.223 0 .496.08v2.112l-.384-.057l-.433-.023q-.624 0-1.056.208c-.432.208-.521.328-.696.567q-.264.36-.376.841a4.6 4.6 0 0 0-.111 1.04V20h-2.272v-8.272zm7.727 1.488q-.543 0-.912.248a2 2 0 0 0-.6.64q-.232.393-.328.864a4.5 4.5 0 0 0 0 1.849q.096.464.312.84c.216.376.338.456.584.616q.368.239.896.239q.816 0 1.256-.456t.553-1.224h2.191q-.224 1.648-1.28 2.512q-1.055.864-2.703.864a4.5 4.5 0 0 1-1.704-.312a3.8 3.8 0 0 1-1.32-.872a4 4 0 0 1-.848-1.336a4.6 4.6 0 0 1-.305-1.704q0-.961.28-1.784q.28-.825.824-1.424q.543-.6 1.328-.937q.783-.336 1.792-.336q.735 0 1.416.192q.68.191 1.216.584t.872.976q.336.585.384 1.384h-2.224q-.223-1.423-1.68-1.423m7.504-4.64v4.304h.048q.432-.719 1.104-1.048a3 3 0 0 1 1.312-.328q.912 0 1.496.248q.585.249.92.688q.337.44.472 1.071q.137.633.137 1.4V20h-2.272v-4.672q0-1.024-.319-1.528q-.321-.504-1.137-.504q-.927 0-1.344.552q-.416.552-.416 1.816V20h-2.272V8.576z"></svg:path><svg:path fill="#35495E" d="M26.77 55.045q.735-2.369 2.208-4.14q1.471-1.771 3.703-2.761q2.23-.988 5.129-.988q2.208 0 4.209.689c2.001.689 2.507 1.12 3.519 1.979q1.518 1.288 2.415 3.174q.897 1.887.897 4.232q0 2.438-.782 4.186a11 11 0 0 1-2.07 3.105a17.7 17.7 0 0 1-2.921 2.461a250 250 0 0 1-3.289 2.185a43 43 0 0 0-3.22 2.323a14.6 14.6 0 0 0-2.76 2.897h15.226V80H25.39q0-2.805.805-4.876a13 13 0 0 1 2.185-3.703a19 19 0 0 1 3.243-3.013a144 144 0 0 1 3.933-2.807q1.058-.735 2.254-1.494a15 15 0 0 0 2.185-1.68a9 9 0 0 0 1.656-2.069q.666-1.15.667-2.622q0-2.346-1.357-3.657q-1.358-1.312-3.473-1.312q-1.427.001-2.415.667a5 5 0 0 0-1.587 1.748a8 8 0 0 0-.851 2.393a13.7 13.7 0 0 0-.253 2.599h-6.256q-.093-2.76.644-5.129m23.966 17.503v-5.979L64.721 47.8h5.842v19.366h4.277v5.382h-4.277V80h-6.21v-7.452zm13.478-16.56l-8.325 11.178h8.464V55.988z"></svg:path>`,
+})
+export class FlatUiCalendarIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -286,23 +303,6 @@ export class FlatUiCameraIcon {
 export class FlatUiCarIcon {
   readonly viewBox = input("0 0 100 99")
   readonly width = input("1.02em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[flatUiButtonIcon],svg[flat-ui-button-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:clippath id="flatUiButton0"><svg:circle cx="50" cy="50" r="50"></svg:circle></svg:clippath><svg:g fill-rule="evenodd" clip-path="url(#flatUiButton0)" clip-rule="evenodd"><svg:circle cx="50" cy="50" r="50" fill="#D7DBDE"></svg:circle><svg:path fill="#BDC3C7" d="M10.167 147.834L79 79L21 21l-73 73z"></svg:path><svg:path fill="#ECF0F1" d="M-47.5 80a5.506 5.506 0 0 1-5.5-5.5v-49c0-3.033 2.467-5.5 5.5-5.5h49C4.533 20 7 22.467 7 25.5v49C7 77.532 4.533 80 1.5 80z"></svg:path><svg:path fill="#8B9298" d="M1.25 21C3.735 21 6 23.015 6 25.5v49A4.5 4.5 0 0 1 1.5 79h-49a4.5 4.5 0 0 1-4.5-4.5v-49a4.5 4.5 0 0 1 4.5-4.5H1m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49C5.084 81 8 78.084 8 74.5v-49C8 21.916 5.084 19 1.5 19"></svg:path><svg:path fill="#ECF0F1" d="M62.5 8A5.506 5.506 0 0 1 57 2.5v-49c0-3.033 2.468-5.5 5.5-5.5h49c3.032 0 5.5 2.467 5.5 5.5v49c0 3.033-2.468 5.5-5.5 5.5z"></svg:path><svg:path fill="#8B9298" d="M111.25-51c2.485 0 4.75 2.015 4.75 4.5v49a4.5 4.5 0 0 1-4.5 4.5h-49A4.5 4.5 0 0 1 58 2.5v-49a4.5 4.5 0 0 1 4.5-4.5H111m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49C56 6.084 58.916 9 62.5 9h49c3.584 0 6.5-2.916 6.5-6.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#ECF0F1" d="M-11.5 8A5.506 5.506 0 0 1-17 2.5v-49c0-3.033 2.467-5.5 5.5-5.5h49c3.033 0 5.5 2.467 5.5 5.5v49C43 5.533 40.533 8 37.5 8z"></svg:path><svg:path fill="#8B9298" d="M37.25-51c2.485 0 4.75 2.015 4.75 4.5v49A4.5 4.5 0 0 1 37.5 7h-49A4.5 4.5 0 0 1-16 2.5v-49a4.5 4.5 0 0 1 4.5-4.5H37m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49C41.084 9 44 6.084 44 2.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#ECF0F1" d="M62.5 152a5.507 5.507 0 0 1-5.5-5.5v-49c0-3.032 2.468-5.5 5.5-5.5h49c3.032 0 5.5 2.468 5.5 5.5v49c0 3.032-2.468 5.5-5.5 5.5z"></svg:path><svg:path fill="#8B9298" d="M111.25 93c2.485 0 4.75 2.015 4.75 4.5v49a4.5 4.5 0 0 1-4.5 4.5h-49a4.5 4.5 0 0 1-4.5-4.5v-49a4.5 4.5 0 0 1 4.5-4.5H111m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49c3.584 0 6.5-2.916 6.5-6.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#ECF0F1" d="M-11.5 152a5.506 5.506 0 0 1-5.5-5.5v-49c0-3.032 2.467-5.5 5.5-5.5h49c3.033 0 5.5 2.468 5.5 5.5v49c0 3.032-2.467 5.5-5.5 5.5z"></svg:path><svg:path fill="#8B9298" d="M37.25 93c2.485 0 4.75 2.015 4.75 4.5v49a4.5 4.5 0 0 1-4.5 4.5h-49a4.5 4.5 0 0 1-4.5-4.5v-49a4.5 4.5 0 0 1 4.5-4.5H37m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49c3.584 0 6.5-2.916 6.5-6.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#ECF0F1" d="M98.5 80a5.507 5.507 0 0 1-5.5-5.5v-49c0-3.033 2.468-5.5 5.5-5.5h49c3.032 0 5.5 2.467 5.5 5.5v49c0 3.032-2.468 5.5-5.5 5.5z"></svg:path><svg:path fill="#8B9298" d="M147.25 21c2.485 0 4.75 2.015 4.75 4.5v49a4.5 4.5 0 0 1-4.5 4.5h-49a4.5 4.5 0 0 1-4.5-4.5v-49a4.5 4.5 0 0 1 4.5-4.5H147m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49c3.584 0 6.5-2.916 6.5-6.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#ECF0F1" d="M25.5 80a5.506 5.506 0 0 1-5.5-5.5v-49c0-3.033 2.467-5.5 5.5-5.5h49c3.032 0 5.5 2.467 5.5 5.5v49c0 3.032-2.468 5.5-5.5 5.5z"></svg:path><svg:path fill="#8B9298" d="M74.25 21c2.485 0 4.75 2.015 4.75 4.5v49a4.5 4.5 0 0 1-4.5 4.5h-49a4.5 4.5 0 0 1-4.5-4.5v-49a4.5 4.5 0 0 1 4.5-4.5H74m.5-2h-49a6.51 6.51 0 0 0-6.5 6.5v49c0 3.584 2.916 6.5 6.5 6.5h49c3.584 0 6.5-2.916 6.5-6.5v-49c0-3.584-2.916-6.5-6.5-6.5"></svg:path><svg:path fill="#E1E5E6" d="M59 69a2 2 0 0 1-2 2H43a2 2 0 0 1 0-4h14a2 2 0 0 1 2 2"></svg:path><svg:path fill="#fff" d="M59 69H41a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2"></svg:path><svg:path fill="#00A184" d="M54.5 42a1.5 1.5 0 1 0 0-3h-7a1.5 1.5 0 0 0-1.5 1.5v18a1.5 1.5 0 1 0 3 0V51h4.5a1.5 1.5 0 0 0 0-3H49v-6z"></svg:path><svg:path fill="#fff" d="M74.5 21h-49c-1.76 0-3.268 1.02-4.007 2.493A4.44 4.44 0 0 1 23.5 23h49a4.5 4.5 0 0 1 4.5 4.5v49c0 .726-.188 1.4-.492 2.008C77.979 77.768 79 76.26 79 74.5v-49a4.5 4.5 0 0 0-4.5-4.5"></svg:path></svg:g><svg:path d="M50 0C22.386 0 0 22.386 0 50l.025 1C.56 24.955 21.827 4 48 4c26.509 0 48 21.491 48 48c0 26.172-20.954 47.44-47 47.975l1 .025c27.614 0 50-22.387 50-50c0-27.614-22.386-50-50-50" opacity=".15"></svg:path>`,
-})
-export class FlatUiButtonIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
   readonly height = input("1em")
 }
 

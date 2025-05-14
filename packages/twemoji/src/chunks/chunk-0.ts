@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[twemoji1stPlaceMedalIcon],svg[twemoji-1st-place-medal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#55ACEE" d="m18 8l-7-8H0l14 17l11.521-4.75z"></svg:path><svg:path fill="#3B88C3" d="m25 0l-7 8l5.39 7.312l1.227-1.489L36 0z"></svg:path><svg:path fill="#FFAC33" d="M23.205 16.026c.08-.217.131-.448.131-.693a2 2 0 0 0-2-2h-6.667a2 2 0 0 0-2 2c0 .245.05.476.131.693c-3.258 1.826-5.464 5.307-5.464 9.307C7.335 31.224 12.111 36 18.002 36s10.667-4.776 10.667-10.667c0-4-2.206-7.481-5.464-9.307"></svg:path><svg:path fill="#9E5200" d="M19.404 18.6h-1.721l-2.73 2.132a.53.53 0 0 0-.112.28v1.178c0 .186.15.354.337.354h1.795v8.414c0 .188.15.355.355.355h2.076c.186 0 .336-.168.336-.355V18.954c0-.186-.149-.354-.336-.354"></svg:path>`,
+})
+export class Twemoji1stPlaceMedalIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[twemoji2ndPlaceMedalIcon],svg[twemoji-2nd-place-medal-icon]',
   host: {
     role: 'img',
@@ -12,6 +29,23 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="#55ACEE" d="m18 8l-7-8H0l14 17l11.521-4.75z"></svg:path><svg:path fill="#3B88C3" d="m25 0l-7 8l5.39 7.312l1.227-1.489L36 0z"></svg:path><svg:path fill="#CCD6DD" d="M23.205 16.026c.08-.217.131-.448.131-.693a2 2 0 0 0-2-2h-6.667a2 2 0 0 0-2 2c0 .245.05.476.131.693c-3.258 1.826-5.464 5.307-5.464 9.307C7.335 31.224 12.111 36 18.002 36s10.667-4.776 10.667-10.667c0-4-2.206-7.481-5.464-9.307"></svg:path><svg:path fill="#627077" d="M22.002 28.921h-3.543c.878-1.234 2.412-3.234 3.01-4.301c.449-.879.729-1.439.729-2.43c0-2.076-1.57-3.777-4.244-3.777c-2.225 0-3.74 1.832-3.74 1.832c-.131.15-.112.374.019.487l1.141 1.159a.36.36 0 0 0 .523 0c.355-.393 1.047-.935 1.813-.935c1.047 0 1.646.635 1.646 1.346c0 .523-.243 1.047-.486 1.421c-1.104 1.682-3.871 5.441-4.955 6.862v.374c0 .188.149.355.355.355h7.732a.37.37 0 0 0 .355-.355v-1.682a.367.367 0 0 0-.355-.356"></svg:path>`,
 })
 export class Twemoji2ndPlaceMedalIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemoji3rdPlaceMedalIcon],svg[twemoji-3rd-place-medal-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#55ACEE" d="m18 8l-7-8H0l14 17l11.521-4.75z"></svg:path><svg:path fill="#3B88C3" d="m25 0l-7 8l5.39 7.312l1.227-1.489L36 0z"></svg:path><svg:path fill="#FF8A3B" d="M23.205 16.026c.08-.217.131-.448.131-.693a2 2 0 0 0-2-2h-6.667a2 2 0 0 0-2 2c0 .245.05.476.131.693c-3.258 1.826-5.464 5.307-5.464 9.307C7.335 31.224 12.111 36 18.002 36s10.667-4.776 10.667-10.667c0-4-2.206-7.481-5.464-9.307"></svg:path><svg:path fill="#7C4119" d="m14.121 29.35l1.178-1.178a.345.345 0 0 1 .467-.038s1.159.861 2.056.861c.805 0 1.628-.673 1.628-1.496s-.842-1.514-2.225-1.514h-.639a.367.367 0 0 1-.354-.355v-1.552c0-.206.168-.355.354-.355h.639c1.309 0 2-.635 2-1.439c0-.805-.691-1.402-1.496-1.402c-.823 0-1.346.43-1.626.747c-.132.15-.355.15-.504.02l-1.141-1.122c-.151-.132-.132-.355 0-.486c0 0 1.533-1.646 3.57-1.646c2.169 0 4.039 1.328 4.039 3.422c0 1.439-1.085 2.505-1.926 2.897v.057c.879.374 2.262 1.533 2.262 3.141c0 2.038-1.776 3.572-4.357 3.572c-2.354 0-3.552-1.16-3.944-1.664c-.113-.134-.093-.34.019-.47"></svg:path>`,
+})
+export class Twemoji3rdPlaceMedalIcon {
   readonly viewBox = input("0 0 36 36")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,33 +104,16 @@ export class TwemojiAbacusIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[twemoji1stPlaceMedalIcon],svg[twemoji-1st-place-medal-icon]',
+  selector: 'svg[twemojiAdhesiveBandageIcon],svg[twemoji-adhesive-bandage-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#55ACEE" d="m18 8l-7-8H0l14 17l11.521-4.75z"></svg:path><svg:path fill="#3B88C3" d="m25 0l-7 8l5.39 7.312l1.227-1.489L36 0z"></svg:path><svg:path fill="#FFAC33" d="M23.205 16.026c.08-.217.131-.448.131-.693a2 2 0 0 0-2-2h-6.667a2 2 0 0 0-2 2c0 .245.05.476.131.693c-3.258 1.826-5.464 5.307-5.464 9.307C7.335 31.224 12.111 36 18.002 36s10.667-4.776 10.667-10.667c0-4-2.206-7.481-5.464-9.307"></svg:path><svg:path fill="#9E5200" d="M19.404 18.6h-1.721l-2.73 2.132a.53.53 0 0 0-.112.28v1.178c0 .186.15.354.337.354h1.795v8.414c0 .188.15.355.355.355h2.076c.186 0 .336-.168.336-.355V18.954c0-.186-.149-.354-.336-.354"></svg:path>`,
+  template: `<svg:path fill="#D99E82" d="M2.92 21.393L21.393 2.92A8.264 8.264 0 0 1 33.08 14.607L14.607 33.08A8.264 8.264 0 0 1 2.92 21.393"></svg:path><svg:g fill="#C1694F"><svg:circle cx="4.389" cy="25.778" r=".972"></svg:circle><svg:circle cx="7.306" cy="28.694" r=".972"></svg:circle><svg:circle cx="10.222" cy="31.611" r=".972"></svg:circle><svg:circle cx="7.306" cy="22.861" r=".972"></svg:circle><svg:circle cx="10.222" cy="25.778" r=".972"></svg:circle><svg:circle cx="13.139" cy="28.694" r=".972"></svg:circle><svg:path d="M21.896 7.189a.972.972 0 1 1 1.93.232a.972.972 0 0 1-1.93-.232"></svg:path><svg:circle cx="25.778" cy="10.222" r=".972"></svg:circle><svg:circle cx="28.694" cy="13.139" r=".972"></svg:circle><svg:circle cx="25.778" cy="4.389" r=".972"></svg:circle><svg:circle cx="28.694" cy="7.306" r=".972"></svg:circle><svg:circle cx="31.611" cy="10.222" r=".972"></svg:circle></svg:g><svg:path fill="#EABAA7" d="M6.82 17.514L17.512 6.819L29.18 18.486L18.486 29.18z"></svg:path><svg:path fill="#F7DED5" d="M9.799 18.423a.972.972 0 0 1-.687-1.66l7.715-7.715a.972.972 0 1 1 1.375 1.375l-7.715 7.715a.97.97 0 0 1-.688.285"></svg:path>`,
 })
-export class Twemoji1stPlaceMedalIcon {
-  readonly viewBox = input("0 0 36 36")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[twemojiAdmissionTicketsIcon],svg[twemoji-admission-tickets-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#EA596E" d="M26.751 8.007a4.67 4.67 0 0 0 5.046 1.032l3.613 3.611c.737.74.738 1.938-.004 2.68L15.319 35.405a1.9 1.9 0 0 1-2.681 0l-3.606-3.612A4.69 4.69 0 0 0 8 26.746a4.68 4.68 0 0 0-5.047-1.032l-2.359-2.36a1.893 1.893 0 0 1 0-2.68L20.678.596a1.89 1.89 0 0 1 2.679.002l2.361 2.361a4.68 4.68 0 0 0 1.033 5.048"></svg:path><svg:path fill="#BE1931" d="m5.42 18.527l-2.149 2.148a1.9 1.9 0 0 0-.003 2.68l.542.541a5.67 5.67 0 0 1 5.482 1.468a5.67 5.67 0 0 1 1.467 5.481l1.878 1.883a1.9 1.9 0 0 0 2.682-.002l2.189-2.187zm13.521 10.58l10.158-10.152L17.008 6.943L6.854 17.095zm1.99-13.993c2.245 2.228 2.745 5.356 1.121 6.989c-1.627 1.635-4.762 1.151-7.001-1.075c-2.239-2.228-2.738-5.358-1.114-6.991c1.625-1.63 4.755-1.15 6.994 1.077m11.8-2.464l-1.881-1.881a5.67 5.67 0 0 1-5.483-1.468a5.67 5.67 0 0 1-1.47-5.484l-.541-.546a1.9 1.9 0 0 0-2.678.003L18.442 5.51l12.092 12.011l2.196-2.195c.74-.737.74-1.936.001-2.676"></svg:path>`,
-})
-export class TwemojiAdmissionTicketsIcon {
+export class TwemojiAdhesiveBandageIcon {
   readonly viewBox = input("0 0 36 36")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,16 +138,33 @@ export class TwemojiAccordionIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[twemojiAdhesiveBandageIcon],svg[twemoji-adhesive-bandage-icon]',
+  selector: 'svg[twemojiAdultIcon],svg[twemoji-adult-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#D99E82" d="M2.92 21.393L21.393 2.92A8.264 8.264 0 0 1 33.08 14.607L14.607 33.08A8.264 8.264 0 0 1 2.92 21.393"></svg:path><svg:g fill="#C1694F"><svg:circle cx="4.389" cy="25.778" r=".972"></svg:circle><svg:circle cx="7.306" cy="28.694" r=".972"></svg:circle><svg:circle cx="10.222" cy="31.611" r=".972"></svg:circle><svg:circle cx="7.306" cy="22.861" r=".972"></svg:circle><svg:circle cx="10.222" cy="25.778" r=".972"></svg:circle><svg:circle cx="13.139" cy="28.694" r=".972"></svg:circle><svg:path d="M21.896 7.189a.972.972 0 1 1 1.93.232a.972.972 0 0 1-1.93-.232"></svg:path><svg:circle cx="25.778" cy="10.222" r=".972"></svg:circle><svg:circle cx="28.694" cy="13.139" r=".972"></svg:circle><svg:circle cx="25.778" cy="4.389" r=".972"></svg:circle><svg:circle cx="28.694" cy="7.306" r=".972"></svg:circle><svg:circle cx="31.611" cy="10.222" r=".972"></svg:circle></svg:g><svg:path fill="#EABAA7" d="M6.82 17.514L17.512 6.819L29.18 18.486L18.486 29.18z"></svg:path><svg:path fill="#F7DED5" d="M9.799 18.423a.972.972 0 0 1-.687-1.66l7.715-7.715a.972.972 0 1 1 1.375 1.375l-7.715 7.715a.97.97 0 0 1-.688.285"></svg:path>`,
+  template: `<svg:path fill="#FFDC5D" d="M23.359 11.288c-4 0-12.652-1.04-12.652-1.04s-1.73 1.903-2.73 2.903c-1.863 1.863-1.701 4.221-1.948 7.162C6.336 28.487 11.569 35 18 35c6.394 0 11.606-6.44 11.965-14.551c-.352-3.63-2.796-9.161-6.606-9.161z"></svg:path><svg:path d="M18 31c-2.347 0-3.575-1.16-3.707-1.293a.999.999 0 0 1 1.404-1.424c.051.047.806.717 2.303.717c1.519 0 2.273-.69 2.305-.719a1.008 1.008 0 0 1 1.408.029a.994.994 0 0 1-.006 1.397C21.575 29.84 20.347 31 18 31zm1-5h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2z" fill="#C1694F"></svg:path><svg:path d="M13 22a1 1 0 0 1-1-1v-2a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1zm10 0a1 1 0 0 1-1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1z" fill="#662113"></svg:path><svg:path fill="#FFAC33" d="M17.998 3.083c8.205 0 13.331 6.054 13.331 11.099c0 5.044-1.026 7.064-2.051 5.044c-1.026-2.017-2.051-5.035-2.051-5.035s-3.478 2.253-6.203-1.019c0 0 1.077 6.054-5.077 0c0 0 1.026 4.037-5.127-1.008c0 0-3.077 2.018-4.102 7.062c-.284 1.401-2.051 0-2.051-5.044C4.666 9.137 8.768 3.083 17.998 3.083"></svg:path>`,
 })
-export class TwemojiAdhesiveBandageIcon {
+export class TwemojiAdultIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiAdmissionTicketsIcon],svg[twemoji-admission-tickets-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#EA596E" d="M26.751 8.007a4.67 4.67 0 0 0 5.046 1.032l3.613 3.611c.737.74.738 1.938-.004 2.68L15.319 35.405a1.9 1.9 0 0 1-2.681 0l-3.606-3.612A4.69 4.69 0 0 0 8 26.746a4.68 4.68 0 0 0-5.047-1.032l-2.359-2.36a1.893 1.893 0 0 1 0-2.68L20.678.596a1.89 1.89 0 0 1 2.679.002l2.361 2.361a4.68 4.68 0 0 0 1.033 5.048"></svg:path><svg:path fill="#BE1931" d="m5.42 18.527l-2.149 2.148a1.9 1.9 0 0 0-.003 2.68l.542.541a5.67 5.67 0 0 1 5.482 1.468a5.67 5.67 0 0 1 1.467 5.481l1.878 1.883a1.9 1.9 0 0 0 2.682-.002l2.189-2.187zm13.521 10.58l10.158-10.152L17.008 6.943L6.854 17.095zm1.99-13.993c2.245 2.228 2.745 5.356 1.121 6.989c-1.627 1.635-4.762 1.151-7.001-1.075c-2.239-2.228-2.738-5.358-1.114-6.991c1.625-1.63 4.755-1.15 6.994 1.077m11.8-2.464l-1.881-1.881a5.67 5.67 0 0 1-5.483-1.468a5.67 5.67 0 0 1-1.47-5.484l-.541-.546a1.9 1.9 0 0 0-2.678.003L18.442 5.51l12.092 12.011l2.196-2.195c.74-.737.74-1.936.001-2.676"></svg:path>`,
+})
+export class TwemojiAdmissionTicketsIcon {
   readonly viewBox = input("0 0 36 36")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -155,40 +189,6 @@ export class TwemojiAdultDarkSkinToneIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[twemojiAdultIcon],svg[twemoji-adult-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#FFDC5D" d="M23.359 11.288c-4 0-12.652-1.04-12.652-1.04s-1.73 1.903-2.73 2.903c-1.863 1.863-1.701 4.221-1.948 7.162C6.336 28.487 11.569 35 18 35c6.394 0 11.606-6.44 11.965-14.551c-.352-3.63-2.796-9.161-6.606-9.161z"></svg:path><svg:path d="M18 31c-2.347 0-3.575-1.16-3.707-1.293a.999.999 0 0 1 1.404-1.424c.051.047.806.717 2.303.717c1.519 0 2.273-.69 2.305-.719a1.008 1.008 0 0 1 1.408.029a.994.994 0 0 1-.006 1.397C21.575 29.84 20.347 31 18 31zm1-5h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2z" fill="#C1694F"></svg:path><svg:path d="M13 22a1 1 0 0 1-1-1v-2a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1zm10 0a1 1 0 0 1-1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1z" fill="#662113"></svg:path><svg:path fill="#FFAC33" d="M17.998 3.083c8.205 0 13.331 6.054 13.331 11.099c0 5.044-1.026 7.064-2.051 5.044c-1.026-2.017-2.051-5.035-2.051-5.035s-3.478 2.253-6.203-1.019c0 0 1.077 6.054-5.077 0c0 0 1.026 4.037-5.127-1.008c0 0-3.077 2.018-4.102 7.062c-.284 1.401-2.051 0-2.051-5.044C4.666 9.137 8.768 3.083 17.998 3.083"></svg:path>`,
-})
-export class TwemojiAdultIcon {
-  readonly viewBox = input("0 0 36 36")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[twemoji3rdPlaceMedalIcon],svg[twemoji-3rd-place-medal-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#55ACEE" d="m18 8l-7-8H0l14 17l11.521-4.75z"></svg:path><svg:path fill="#3B88C3" d="m25 0l-7 8l5.39 7.312l1.227-1.489L36 0z"></svg:path><svg:path fill="#FF8A3B" d="M23.205 16.026c.08-.217.131-.448.131-.693a2 2 0 0 0-2-2h-6.667a2 2 0 0 0-2 2c0 .245.05.476.131.693c-3.258 1.826-5.464 5.307-5.464 9.307C7.335 31.224 12.111 36 18.002 36s10.667-4.776 10.667-10.667c0-4-2.206-7.481-5.464-9.307"></svg:path><svg:path fill="#7C4119" d="m14.121 29.35l1.178-1.178a.345.345 0 0 1 .467-.038s1.159.861 2.056.861c.805 0 1.628-.673 1.628-1.496s-.842-1.514-2.225-1.514h-.639a.367.367 0 0 1-.354-.355v-1.552c0-.206.168-.355.354-.355h.639c1.309 0 2-.635 2-1.439c0-.805-.691-1.402-1.496-1.402c-.823 0-1.346.43-1.626.747c-.132.15-.355.15-.504.02l-1.141-1.122c-.151-.132-.132-.355 0-.486c0 0 1.533-1.646 3.57-1.646c2.169 0 4.039 1.328 4.039 3.422c0 1.439-1.085 2.505-1.926 2.897v.057c.879.374 2.262 1.533 2.262 3.141c0 2.038-1.776 3.572-4.357 3.572c-2.354 0-3.552-1.16-3.944-1.664c-.113-.134-.093-.34.019-.47"></svg:path>`,
-})
-export class Twemoji3rdPlaceMedalIcon {
-  readonly viewBox = input("0 0 36 36")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[twemojiAdultLightSkinToneIcon],svg[twemoji-adult-light-skin-tone-icon]',
   host: {
     role: 'img',
@@ -199,23 +199,6 @@ export class Twemoji3rdPlaceMedalIcon {
   template: `<svg:path fill="#F7DECE" d="M23.359 11.288c-4 0-12.652-1.04-12.652-1.04s-1.73 1.903-2.73 2.903c-1.863 1.863-1.701 4.221-1.948 7.162C6.336 28.487 11.569 35 18 35c6.394 0 11.606-6.44 11.965-14.551c-.352-3.63-2.796-9.161-6.606-9.161z"></svg:path><svg:path d="M18 31c-2.347 0-3.575-1.16-3.707-1.293a.999.999 0 0 1 1.404-1.424c.051.047.806.717 2.303.717c1.519 0 2.273-.69 2.305-.719a1.008 1.008 0 0 1 1.408.029a.994.994 0 0 1-.006 1.397C21.575 29.84 20.347 31 18 31zm1-5h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2z" fill="#C1694F"></svg:path><svg:path d="M13 22a1 1 0 0 1-1-1v-2a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1zm10 0a1 1 0 0 1-1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1z" fill="#662113"></svg:path><svg:path fill="#292F33" d="M17.998 3.083c8.205 0 13.331 6.054 13.331 11.099c0 5.044-1.026 7.064-2.051 5.044c-1.026-2.017-2.051-5.035-2.051-5.035s-3.478 2.253-6.203-1.019c0 0 1.077 6.054-5.077 0c0 0 1.026 4.037-5.127-1.008c0 0-3.077 2.018-4.102 7.062c-.284 1.401-2.051 0-2.051-5.044C4.666 9.137 8.768 3.083 17.998 3.083"></svg:path>`,
 })
 export class TwemojiAdultLightSkinToneIcon {
-  readonly viewBox = input("0 0 36 36")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[twemojiAdultMediumSkinToneIcon],svg[twemoji-adult-medium-skin-tone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#D5AB88" d="M23.359 11.288c-4 0-12.652-1.04-12.652-1.04s-1.73 1.903-2.73 2.903c-1.863 1.863-1.701 4.221-1.948 7.162C6.336 28.487 11.569 35 18 35c6.394 0 11.606-6.44 11.965-14.551c-.352-3.63-2.796-9.161-6.606-9.161z"></svg:path><svg:path d="M18 31c-2.347 0-3.575-1.16-3.707-1.293a.999.999 0 0 1 1.404-1.424c.051.047.806.717 2.303.717c1.519 0 2.273-.69 2.305-.719a1.008 1.008 0 0 1 1.408.029a.994.994 0 0 1-.006 1.397C21.575 29.84 20.347 31 18 31zm1-5h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2z" fill="#C1694F"></svg:path><svg:path d="M13 22a1 1 0 0 1-1-1v-2a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1zm10 0a1 1 0 0 1-1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1z" fill="#662113"></svg:path><svg:path fill="#963B22" d="M17.998 3.083c8.205 0 13.331 6.054 13.331 11.099c0 5.044-1.026 7.064-2.051 5.044c-1.026-2.017-2.051-5.035-2.051-5.035s-3.478 2.253-6.203-1.019c0 0 1.077 6.054-5.077 0c0 0 1.026 4.037-5.127-1.008c0 0-3.077 2.018-4.102 7.062c-.284 1.401-2.051 0-2.051-5.044C4.666 9.137 8.768 3.083 17.998 3.083"></svg:path>`,
-})
-export class TwemojiAdultMediumSkinToneIcon {
   readonly viewBox = input("0 0 36 36")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -267,6 +250,23 @@ export class TwemojiAdultMediumLightSkinToneIcon {
   template: `<svg:path fill="#58595B" d="M19 12V5h-2v7h-3v3h8v-3z"></svg:path><svg:path fill="#6D6E71" d="M33.213 10.977L3.27 2.954a1.001 1.001 0 0 1 .518-1.933L33.73 9.045a1 1 0 1 1-.517 1.932"></svg:path><svg:path fill="#A7A9AC" d="m23.348 4.361l-1.933-.518l.259-.965l-5.795-1.553l-.259.966l-1.932-.518a2 2 0 0 0-1.036 3.864l9.66 2.588a2 2 0 0 0 1.036-3.864"></svg:path><svg:path fill="#808285" d="M13.877 4.931a2.001 2.001 0 0 1-3.864-1.035a2.001 2.001 0 0 1 3.864 1.035m11.592 3.105a2 2 0 1 1-3.863-1.035a2 2 0 0 1 3.863 1.035"></svg:path><svg:path fill="#DD2E44" d="M6 32a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4v-5H6zm20-18H10c-1.477 0-2.752.809-3.445 2h22.89c-.693-1.191-1.968-2-3.445-2"></svg:path><svg:path fill="#88C9F9" d="M6 18h24v9H6z"></svg:path><svg:path fill="#55ACEE" d="M6.555 16A3.96 3.96 0 0 0 6 18h24c0-.732-.211-1.41-.555-2z"></svg:path><svg:path fill="#231F20" d="M12 16h2v11h-2zm9 0h2v11h-2z"></svg:path>`,
 })
 export class TwemojiAerialTramwayIcon {
+  readonly viewBox = input("0 0 36 36")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[twemojiAdultMediumSkinToneIcon],svg[twemoji-adult-medium-skin-tone-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#D5AB88" d="M23.359 11.288c-4 0-12.652-1.04-12.652-1.04s-1.73 1.903-2.73 2.903c-1.863 1.863-1.701 4.221-1.948 7.162C6.336 28.487 11.569 35 18 35c6.394 0 11.606-6.44 11.965-14.551c-.352-3.63-2.796-9.161-6.606-9.161z"></svg:path><svg:path d="M18 31c-2.347 0-3.575-1.16-3.707-1.293a.999.999 0 0 1 1.404-1.424c.051.047.806.717 2.303.717c1.519 0 2.273-.69 2.305-.719a1.008 1.008 0 0 1 1.408.029a.994.994 0 0 1-.006 1.397C21.575 29.84 20.347 31 18 31zm1-5h-2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2z" fill="#C1694F"></svg:path><svg:path d="M13 22a1 1 0 0 1-1-1v-2a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1zm10 0a1 1 0 0 1-1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1z" fill="#662113"></svg:path><svg:path fill="#963B22" d="M17.998 3.083c8.205 0 13.331 6.054 13.331 11.099c0 5.044-1.026 7.064-2.051 5.044c-1.026-2.017-2.051-5.035-2.051-5.035s-3.478 2.253-6.203-1.019c0 0 1.077 6.054-5.077 0c0 0 1.026 4.037-5.127-1.008c0 0-3.077 2.018-4.102 7.062c-.284 1.401-2.051 0-2.051-5.044C4.666 9.137 8.768 3.083 17.998 3.083"></svg:path>`,
+})
+export class TwemojiAdultMediumSkinToneIcon {
   readonly viewBox = input("0 0 36 36")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[tokenBrandedXnoIcon],svg[token-branded-xno-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="#092049"><svg:path fill-opacity=".4" d="M16.01 3.908L3.982 15.984l3.61 4.491l12.534-12.53z"></svg:path><svg:path fill-rule="evenodd" d="M18.102 8.781a2.89 2.89 0 1 0 0-5.78a2.89 2.89 0 0 0 0 5.78m-12.204.014a2.89 2.89 0 1 0 0-5.78a2.89 2.89 0 0 0 0 5.78m0 12.205a2.89 2.89 0 1 0 0-5.78a2.89 2.89 0 0 0 0 5.78m15.095-2.89a2.892 2.892 0 1 1-5.784-.001a2.892 2.892 0 0 1 5.784 0" clip-rule="evenodd"></svg:path></svg:g>`,
-})
-export class TokenBrandedXnoIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[tokenBrandedXorIcon],svg[token-branded-xor-icon]',
   host: {
     role: 'img',
@@ -1117,6 +1100,23 @@ export class TokenBrandedZyxIcon {
   template: `<svg:g fill="none"><svg:path fill="url(#tokenBrandedZz0)" d="M8.29 3.1a.79.79 0 0 0-.914.105l-.965.87c-.425.385-.35 1.1.16 1.37l7.79 4.2l-5.45 4a.63.63 0 0 0 .08 1.07l8.99 4.545l-1.25.905L5.996 14.14l5.065-3.6a.636.636 0 0 0-.035-1.055l-3.11-1.91l-.46.69l2.885 1.77l-5.08 3.615c-.37.265-.34.84.055 1.065L16.34 20.9c.27.15.6.13.85-.05l1.255-.91a.85.85 0 0 0-.105-1.43l-8.69-4.39l5.45-3.99c.37-.27.33-.85-.07-1.065L6.946 4.7l.96-.87l10.105 5.6l-5.475 4.005A.64.64 0 0 0 12.6 14.5l4.975 2.76l.435-.765l-4.74-2.575l5.475-4.005a.64.64 0 0 0-.065-1.065zM7.03 8l.46-.685l-.92-.565l-.414.715l.875.54z"></svg:path><svg:defs><svg:lineargradient id="tokenBrandedZz0" x1="5.501" x2="17.251" y1="5.25" y2="20.25" gradientUnits="userSpaceOnUse"><svg:stop stop-color="#02EEE4"></svg:stop><svg:stop offset="1" stop-color="#07A9FC"></svg:stop></svg:lineargradient></svg:defs></svg:g>`,
 })
 export class TokenBrandedZzIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenBranded10setIcon],svg[token-branded-10set-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#FD62D5"><svg:path d="M15.175 11.187s.53-.487.53-.83a.58.58 0 0 0-.175-.413l-3.112-3.065a.6.6 0 0 0-.836 0L8.47 9.944a.56.56 0 0 0-.175.407c0 .35.53.836.53.836v5.34s-.53.482-.53.83c0 .154.064.303.175.408l3.112 3.064a.6.6 0 0 0 .836 0l3.112-3.064a.56.56 0 0 0 .174-.407c0-.35-.529-.83-.529-.83zm-2.117 4.927a.58.58 0 0 1-.175.413l-.883.979l-.884-.979a.58.58 0 0 1-.175-.413V11.6c0-.159.064-.302.175-.413l.884-.979l.883.98a.57.57 0 0 1 .175.412z"></svg:path><svg:path d="m18.71 5.826l-2.794-2.662A.6.6 0 0 0 15.503 3c-.402 0-.476.085-.772.37a.63.63 0 0 1-.413.16H9.682a.62.62 0 0 1-.413-.16C8.973 3.085 8.9 3 8.497 3a.62.62 0 0 0-.413.159L5.289 5.82a.55.55 0 0 0-.169.391c0 .149.064.286.17.392l.952.995a.6.6 0 0 0 .826 0L9.407 5.28a.6.6 0 0 1 .413-.164h4.36c.154 0 .302.058.408.159l2.344 2.328a.6.6 0 0 0 .826 0L18.71 6.6a.533.533 0 0 0 0-.778z"></svg:path></svg:g>`,
+})
+export class TokenBranded10setIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

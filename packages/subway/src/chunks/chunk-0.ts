@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[subwayAddPlaylistIcon],svg[subway-add-playlist-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M93.1 325.8V139.6H46.5C20.9 139.6 0 160.5 0 186.2v279.3C0 491.1 20.9 512 46.5 512h279.3c25.7 0 46.5-20.9 46.5-46.5V419H186.2c-51.4-.1-93.1-41.8-93.1-93.2M465.5 0H186.2c-25.7 0-46.5 20.9-46.5 46.5v279.3c0 25.7 20.9 46.5 46.5 46.5h279.3c25.7 0 46.5-20.9 46.5-46.5V46.5C512 20.9 491.1 0 465.5 0m-23.3 209.5h-93.1v93.1h-46.5v-93.1h-93.1V163h93.1V69.8h46.5v93.1h93.1z"></svg:path>`,
-})
-export class SubwayAddPlaylistIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[subwayAddIcon],svg[subway-add-icon]',
   host: {
     role: 'img',
@@ -29,6 +12,23 @@ export class SubwayAddPlaylistIcon {
   template: `<svg:path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0m149.3 277.3c0 11.8-9.5 21.3-21.3 21.3h-85.3V384c0 11.8-9.5 21.3-21.3 21.3h-42.7c-11.8 0-21.3-9.6-21.3-21.3v-85.3H128c-11.8 0-21.3-9.6-21.3-21.3v-42.7c0-11.8 9.5-21.3 21.3-21.3h85.3V128c0-11.8 9.5-21.3 21.3-21.3h42.7c11.8 0 21.3 9.6 21.3 21.3v85.3H384c11.8 0 21.3 9.6 21.3 21.3z"></svg:path>`,
 })
 export class SubwayAddIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[subwayAddPlaylistIcon],svg[subway-add-playlist-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M93.1 325.8V139.6H46.5C20.9 139.6 0 160.5 0 186.2v279.3C0 491.1 20.9 512 46.5 512h279.3c25.7 0 46.5-20.9 46.5-46.5V419H186.2c-51.4-.1-93.1-41.8-93.1-93.2M465.5 0H186.2c-25.7 0-46.5 20.9-46.5 46.5v279.3c0 25.7 20.9 46.5 46.5 46.5h279.3c25.7 0 46.5-20.9 46.5-46.5V46.5C512 20.9 491.1 0 465.5 0m-23.3 209.5h-93.1v93.1h-46.5v-93.1h-93.1V163h93.1V69.8h46.5v93.1h93.1z"></svg:path>`,
+})
+export class SubwayAddPlaylistIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,6 +87,23 @@ export class SubwayAdminIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[subwayAirplaneModeIcon],svg[subway-airplane-mode-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M490.7 0c-21.3 0-42.7 0-53.3 10.7l-85.3 96H21.3L0 138.7l234.7 74.7l-64 85.3h-96l-32 32l64 21.3v32c.7 11.5 10.7 21.3 21.3 21.3h32l21.3 64l32-32v-96l85.3-64L373.3 512l32-21.3V160l96-85.3C512 64 512 42.7 512 21.3C512 10.7 501.3 0 490.7 0"></svg:path>`,
+})
+export class SubwayAirplaneModeIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[subwayAdmin2Icon],svg[subway-admin-2-icon]',
   host: {
     role: 'img',
@@ -121,23 +138,6 @@ export class SubwayAlamIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[subwayAirplaneModeIcon],svg[subway-airplane-mode-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M490.7 0c-21.3 0-42.7 0-53.3 10.7l-85.3 96H21.3L0 138.7l234.7 74.7l-64 85.3h-96l-32 32l64 21.3v32c.7 11.5 10.7 21.3 21.3 21.3h32l21.3 64l32-32v-96l85.3-64L373.3 512l32-21.3V160l96-85.3C512 64 512 42.7 512 21.3C512 10.7 501.3 0 490.7 0"></svg:path>`,
-})
-export class SubwayAirplaneModeIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[subwayAtIcon],svg[subway-at-icon]',
   host: {
     role: 'img',
@@ -148,6 +148,23 @@ export class SubwayAirplaneModeIcon {
   template: `<svg:path fill="currentColor" d="M444.4 60.1C399.4 20 340.6 0 267.8 0C189.2 0 125 25.8 75.1 77.4C25.1 129.1.2 192.7.2 268.5C.2 342.8 23.6 402 70.4 446s107.5 66 182 66c54.4 0 98.8-7.6 133.3-22.8v-59.6c-37.8 17.9-79.4 26.8-124.9 26.8c-59.6 0-106.3-16.6-140.2-50c-33.8-33.3-50.8-78.9-50.8-136.7c0-59.7 19.1-110.4 57.4-151.9s86.3-62.3 144.1-62.3c54 0 96 15.6 126.1 46.7s45.2 71 45.2 119.7c0 35.6-5.2 64.4-15.8 86.5c-10.5 22.1-23.8 33.1-40 33.1c-15.3 0-23.1-14.6-23.1-43.7c0-27.3 4.5-85.2 13.7-173.9h-68.2l-3 30.9H305c-7.7-24.4-26.6-36.5-56.7-36.5c-33.3 0-61.8 14.9-85.5 44.8c-23.6 29.9-35.5 68.7-35.5 116.3c0 36.9 8.5 65.7 25.6 86.5s39.5 31.2 67.4 31.2c37.2 0 62.8-19.9 77-59.6h1.8c1 17.7 7.8 32.1 20.3 43.1c12.5 11.1 28.8 16.6 48.8 16.6c40.6 0 74.7-16.3 102.1-48.9c27.5-32.6 41.2-75.8 41.2-129.7c.3-65.6-22.2-118.5-67.1-158.5M284.2 310.6c-10.9 21-25.9 31.6-44.9 31.6c-12.3 0-22.4-5.6-30.2-16.7s-11.7-26.7-11.7-46.6c0-28.1 5.7-52.8 17.1-74.2c11.4-21.3 26.2-32 44.4-32c12.5 0 22.6 4.8 30.2 14.4s11.4 22.7 11.4 39.4c.1 35-5.4 63.1-16.3 84.1"></svg:path>`,
 })
 export class SubwayAtIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[subwayBackward1Icon],svg[subway-backward-1-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M472.8 90L298.5 192.5v-74c0-28.4-17.6-41.2-39.2-28.5L16.2 232.9c-21.6 12.7-21.6 33.4 0 46.1l243.1 143c21.6 12.7 39.2-.2 39.2-28.5v-74L472.8 422c21.6 12.7 39.2-.2 39.2-28.5v-275c0-28.4-17.6-41.2-39.2-28.5"></svg:path>`,
+})
+export class SubwayBackward1Icon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,23 +206,6 @@ export class SubwayBagIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[subwayBackward1Icon],svg[subway-backward-1-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M472.8 90L298.5 192.5v-74c0-28.4-17.6-41.2-39.2-28.5L16.2 232.9c-21.6 12.7-21.6 33.4 0 46.1l243.1 143c21.6 12.7 39.2-.2 39.2-28.5v-74L472.8 422c21.6 12.7 39.2-.2 39.2-28.5v-275c0-28.4-17.6-41.2-39.2-28.5"></svg:path>`,
-})
-export class SubwayBackward1Icon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[subwayBasketIcon],svg[subway-basket-icon]',
   host: {
     role: 'img',
@@ -240,23 +240,6 @@ export class SubwayBellIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[subwayBluetoothIcon],svg[subway-bluetooth-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M375.4 157.5L217.8 0v196.9L139 118.1l-39.4 39.4l98.5 98.5l-98.5 98.5l39.4 39.4l78.8-78.8V512l157.5-157.5l-98.4-98.5zm-118.2-59l59.1 59.1l-59.1 59.1zm59.1 256l-59.1 59.1V295.4z"></svg:path>`,
-})
-export class SubwayBluetoothIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[subwayBlackWhiteIcon],svg[subway-black-white-icon]',
   host: {
     role: 'img',
@@ -267,6 +250,23 @@ export class SubwayBluetoothIcon {
   template: `<svg:path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0m0 469.3V42.7c117.8 0 213.3 95.5 213.3 213.3S373.8 469.3 256 469.3"></svg:path>`,
 })
 export class SubwayBlackWhiteIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[subwayBluetoothIcon],svg[subway-bluetooth-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M375.4 157.5L217.8 0v196.9L139 118.1l-39.4 39.4l98.5 98.5l-98.5 98.5l39.4 39.4l78.8-78.8V512l157.5-157.5l-98.4-98.5zm-118.2-59l59.1 59.1l-59.1 59.1zm59.1 256l-59.1 59.1V295.4z"></svg:path>`,
+})
+export class SubwayBluetoothIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -291,23 +291,6 @@ export class SubwayBlurIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[subwayBook1Icon],svg[subway-book-1-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M277.3 50.2v426.7c64-53.3 170.7-53.3 234.7 0V50.2c-64-53.3-170.7-53.3-234.7 0M0 50.2v426.7c64-53.3 170.7-53.3 234.7 0V50.2C170.7-3.1 64-3.1 0 50.2"></svg:path>`,
-})
-export class SubwayBook1Icon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[subwayBookIcon],svg[subway-book-icon]',
   host: {
     role: 'img',
@@ -318,6 +301,23 @@ export class SubwayBook1Icon {
   template: `<svg:path fill="currentColor" d="M512 124.7L256 18L0 124.7l256 106.7zM256 274l-144.9-67.6L0 252.7l256 106.7l256-106.7l-111.1-46.3zm0 128l-139.6-69.8L0 380.7l256 106.7l256-106.7l-116.4-48.5z"></svg:path>`,
 })
 export class SubwayBookIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[subwayBook1Icon],svg[subway-book-1-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M277.3 50.2v426.7c64-53.3 170.7-53.3 234.7 0V50.2c-64-53.3-170.7-53.3-234.7 0M0 50.2v426.7c64-53.3 170.7-53.3 234.7 0V50.2C170.7-3.1 64-3.1 0 50.2"></svg:path>`,
+})
+export class SubwayBook1Icon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")

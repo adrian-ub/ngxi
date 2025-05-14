@@ -36,23 +36,6 @@ export class Garden123Stroke12Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[gardenAdjustFill12Icon],svg[garden-adjust-fill-12-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" stroke="currentColor" stroke-linecap="round" d="M3.5.5v1m0 7v3m5-11v3m0 7v1"></svg:path><svg:g fill="currentColor"><svg:circle cx="8.5" cy="7" r="2"></svg:circle><svg:circle cx="3.5" cy="5" r="2"></svg:circle></svg:g>`,
-})
-export class GardenAdjustFill12Icon {
-  readonly viewBox = input("0 0 12 12")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[gardenAdjustStroke12Icon],svg[garden-adjust-stroke-12-icon]',
   host: {
     role: 'img',
@@ -63,6 +46,23 @@ export class GardenAdjustFill12Icon {
   template: `<svg:g fill="none" stroke="currentColor"><svg:circle cx="8.5" cy="7" r="1.5"></svg:circle><svg:circle cx="3.5" cy="5" r="1.5"></svg:circle><svg:path stroke-linecap="round" d="M3.5.5v1m0 7v3m5-11v3m0 7v1"></svg:path></svg:g>`,
 })
 export class GardenAdjustStroke12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenAdjustFill12Icon],svg[garden-adjust-fill-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" stroke="currentColor" stroke-linecap="round" d="M3.5.5v1m0 7v3m5-11v3m0 7v1"></svg:path><svg:g fill="currentColor"><svg:circle cx="8.5" cy="7" r="2"></svg:circle><svg:circle cx="3.5" cy="5" r="2"></svg:circle></svg:g>`,
+})
+export class GardenAdjustFill12Icon {
   readonly viewBox = input("0 0 12 12")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,23 +87,6 @@ export class GardenAlertErrorFill12Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[gardenAlertErrorStroke12Icon],svg[garden-alert-error-stroke-12-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor"><svg:circle cx="5.5" cy="6.5" r="5"></svg:circle><svg:path stroke-linecap="round" d="M5.5 3.5v3"></svg:path></svg:g><svg:circle cx="5.5" cy="9" r="1" fill="currentColor"></svg:circle>`,
-})
-export class GardenAlertErrorStroke12Icon {
-  readonly viewBox = input("0 0 12 12")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[gardenAlertWarningFill12Icon],svg[garden-alert-warning-fill-12-icon]',
   host: {
     role: 'img',
@@ -114,6 +97,23 @@ export class GardenAlertErrorStroke12Icon {
   template: `<svg:path fill="currentColor" d="m10.88 9.53l-4.5-8.5c-.35-.66-1.42-.66-1.77 0l-4.5 8.5A1.006 1.006 0 0 0 1 11h9c.35 0 .67-.18.86-.48a1 1 0 0 0 .02-.99M5 4c0-.28.22-.5.5-.5s.5.22.5.5v2c0 .28-.22.5-.5.5S5 6.28 5 6zm.5 5.3c-.44 0-.8-.36-.8-.8s.36-.8.8-.8s.8.36.8.8s-.36.8-.8.8"></svg:path>`,
 })
 export class GardenAlertWarningFill12Icon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[gardenAlignCenterFill12Icon],svg[garden-align-center-fill-12-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M2 1h8M4 4h4M2 7h8m-6 3h4"></svg:path>`,
+})
+export class GardenAlignCenterFill12Icon {
   readonly viewBox = input("0 0 12 12")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,16 +138,16 @@ export class GardenAlertWarningStroke12Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[gardenAlignCenterFill12Icon],svg[garden-align-center-fill-12-icon]',
+  selector: 'svg[gardenAlertErrorStroke12Icon],svg[garden-alert-error-stroke-12-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M2 1h8M4 4h4M2 7h8m-6 3h4"></svg:path>`,
+  template: `<svg:g fill="none" stroke="currentColor"><svg:circle cx="5.5" cy="6.5" r="5"></svg:circle><svg:path stroke-linecap="round" d="M5.5 3.5v3"></svg:path></svg:g><svg:circle cx="5.5" cy="9" r="1" fill="currentColor"></svg:circle>`,
 })
-export class GardenAlignCenterFill12Icon {
+export class GardenAlertErrorStroke12Icon {
   readonly viewBox = input("0 0 12 12")
   readonly width = input("1em")
   readonly height = input("1em")

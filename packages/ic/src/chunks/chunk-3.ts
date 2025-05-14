@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[icBaselinePowerSettingsNewIcon],svg[ic-baseline-power-settings-new-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13 3h-2v10h2zm4.83 2.17l-1.42 1.42A6.92 6.92 0 0 1 19 12c0 3.87-3.13 7-7 7A6.995 6.995 0 0 1 7.58 6.58L6.17 5.17A8.93 8.93 0 0 0 3 12a9 9 0 0 0 18 0c0-2.74-1.23-5.18-3.17-6.83"></svg:path>`,
-})
-export class IcBaselinePowerSettingsNewIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[icBaselinePrecisionManufacturingIcon],svg[ic-baseline-precision-manufacturing-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class IcBaselineTourIcon {
   template: `<svg:path fill="currentColor" d="M22 14c0-1.95-1.4-3.57-3.25-3.92L17.4 6.05A2.98 2.98 0 0 0 14.56 4H9.44C8.15 4 7 4.82 6.6 6.05L5.81 8.4L4.41 7l.29-.29A.996.996 0 1 0 3.29 5.3l-2 2A.996.996 0 1 0 2.7 8.71l.3-.3l1.79 1.79C3.18 10.72 2 12.22 2 14c0 1.5.83 2.79 2.05 3.48A3 3 0 0 0 7 20c1.3 0 2.4-.84 2.82-2h4.37c.41 1.16 1.51 2 2.82 2a3 3 0 0 0 2.95-2.52C21.17 16.79 22 15.5 22 14M7 18c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1m4-8H7.41l-.02-.02l1.1-3.3A1 1 0 0 1 9.44 6H11zm2-4h1.56a1 1 0 0 1 .95.68l1.1 3.32H13zm4 12c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1"></svg:path>`,
 })
 export class IcBaselineToysIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[icBaselineTrackChangesIcon],svg[ic-baseline-track-changes-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m19.07 4.93l-1.41 1.41A8 8 0 0 1 20 12c0 4.42-3.58 8-8 8s-8-3.58-8-8c0-4.08 3.05-7.44 7-7.93v2.02C8.16 6.57 6 9.03 6 12c0 3.31 2.69 6 6 6s6-2.69 6-6c0-1.66-.67-3.16-1.76-4.24l-1.41 1.41C15.55 9.9 16 10.9 16 12c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-1.86 1.28-3.41 3-3.86v2.14c-.6.35-1 .98-1 1.72c0 1.1.9 2 2 2s2-.9 2-2c0-.74-.4-1.38-1-1.72V2h-1C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10c0-2.76-1.12-5.26-2.93-7.07"></svg:path>`,
+})
+export class IcBaselineTrackChangesIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

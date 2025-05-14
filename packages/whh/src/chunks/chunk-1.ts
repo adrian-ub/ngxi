@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[whhControllerpsIcon],svg[whh-controllerps-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1024 512q0 50-5 94t-16 81.5t-30.5 59T928 768q-51 0-97-38t-63-90q-43-128-256-128T256 640q-17 52-63 90t-97 38q-25 0-44.5-21.5t-30.5-59T5 606t-5-94q0-46 9.5-101.5t30-118.5t60-116.5T192 96V64q0-27 18.5-45.5T256 0h64q26 0 45 18.5T384 64h256q0-27 19-45.5T704 0h64q26 0 45 18.5T832 64v32q53 26 92.5 79.5t60 116.5t30 118.5T1024 512M288 256h-32v-32q0-13-9.5-22.5T224 192t-22.5 9.5T192 224v32h-32q-13 0-22.5 9.5T128 288t9.5 22.5T160 320h32v32q0 13 9.5 22.5T224 384t22.5-9.5T256 352v-32h32q13 0 22.5-9.5T320 288t-9.5-22.5T288 256m416 64q-26 0-45 18.5t-19 45t19 45.5t45.5 19t45-19t18.5-45.5t-19-45t-45-18.5m64-64.5q0 26.5 18.5 45.5t45 19t45.5-19t19-45.5t-19-45t-45.5-18.5t-45 18.5t-18.5 45"></svg:path>`,
+})
+export class WhhControllerpsIcon {
+  readonly viewBox = input("0 0 1024 768")
+  readonly width = input("1.34em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[whhControllersnesIcon],svg[whh-controllersnes-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class WhhJoomlaIcon {
   template: `<svg:path fill="currentColor" d="M960 1024H64q-26 0-45-19T0 960V832q0-26 19-45t45-19h256q0-26 18.5-45t45.5-19h64V372q-57-20-92.5-69T320 192q0-79 56-135.5T512 0t136 56t56 136q0 62-35.5 111T576 372v332h64q27 0 45.5 19t18.5 45h256q26 0 45 19t19 45v128q0 27-19 45.5t-45 18.5M128 640h64q26 0 45 19t19 45H64q0-26 18.5-45t45.5-19"></svg:path>`,
 })
 export class WhhJoystickarcadeIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[whhJoystickatariIcon],svg[whh-joystickatari-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M960 1024H64q-26 0-45-19T0 960V832q0-26 19-45t45-19h256q0-26 18.5-45t45.5-19V192q0-20 20.5-42t43.5-22h192q27 0 45.5 19t18.5 45l-64 128v384q27 0 45.5 19t18.5 45h256q26 0 45 19t19 45v128q0 27-18.5 45.5T960 1024M511.5 0Q538 0 557 19t19 45H448q0-26 18.5-45t45-19M128 640h64q26 0 45 19t19 45H64q0-26 18.5-45t45.5-19"></svg:path>`,
-})
-export class WhhJoystickatariIcon {
   readonly viewBox = input("0 0 1024 1024")
   readonly width = input("1em")
   readonly height = input("1em")

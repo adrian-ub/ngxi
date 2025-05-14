@@ -104,23 +104,6 @@ export class StreamlineAdobeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[streamlineAffordableAndCleanEnergyIcon],svg[streamline-affordable-and-clean-energy-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M6.862.858v.644m0 3.194v1.535m0 5.991v.644M.859 6.862h.643m10.721 0h.643M11.15 2.574l-.428.428m-7.72 7.719l-.428.428m0-8.575l.428.428m7.72 7.719l.428.428M3 6.862a3.861 3.861 0 1 0 7.722 0a3.861 3.861 0 1 0-7.722 0"></svg:path><svg:path d="M5.45 5.779a1.764 1.764 0 1 0 2.823 0"></svg:path></svg:g>`,
-})
-export class StreamlineAffordableAndCleanEnergyIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[streamlineAiChipSparkIcon],svg[streamline-ai-chip-spark-icon]',
   host: {
     role: 'img',
@@ -138,6 +121,23 @@ export class StreamlineAiChipSparkIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[streamlineAffordableAndCleanEnergyIcon],svg[streamline-affordable-and-clean-energy-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M6.862.858v.644m0 3.194v1.535m0 5.991v.644M.859 6.862h.643m10.721 0h.643M11.15 2.574l-.428.428m-7.72 7.719l-.428.428m0-8.575l.428.428m7.72 7.719l.428.428M3 6.862a3.861 3.861 0 1 0 7.722 0a3.861 3.861 0 1 0-7.722 0"></svg:path><svg:path d="M5.45 5.779a1.764 1.764 0 1 0 2.823 0"></svg:path></svg:g>`,
+})
+export class StreamlineAffordableAndCleanEnergyIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[streamlineAiCloudSparkIcon],svg[streamline-ai-cloud-spark-icon]',
   host: {
     role: 'img',
@@ -148,6 +148,23 @@ export class StreamlineAiChipSparkIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M3 9.534a3 3 0 0 1-1.395-.692a3.193 3.193 0 0 1 1.887-5.59a.23.23 0 0 0 .21-.127a3.868 3.868 0 0 1 7.508.91a.25.25 0 0 0 .173.2a2.73 2.73 0 0 1-.173 5.35"></svg:path><svg:path d="M4.528 11.096c-.298-.052-.298-.48 0-.532A2.7 2.7 0 0 0 6.7 8.483l.02-.083c.065-.295.484-.297.551-.003l.022.096a2.71 2.71 0 0 0 2.18 2.069c.299.052.299.482 0 .534a2.71 2.71 0 0 0-2.18 2.069l-.022.096c-.067.294-.486.292-.55-.003l-.019-.082a2.7 2.7 0 0 0-2.173-2.081Z"></svg:path></svg:g>`,
 })
 export class StreamlineAiCloudSparkIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineAiEditSparkIcon],svg[streamline-ai-edit-spark-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m6.926 13.202l-3 .26l.26-3l6.24-6.2a1 1 0 0 1 1.43 0l1.27 1.28a1 1 0 0 1 0 1.42zM.842 3.972c-.351-.061-.351-.565 0-.626A3.18 3.18 0 0 0 3.4.896l.021-.097c.076-.346.57-.349.65-.002l.025.112A3.19 3.19 0 0 0 6.66 3.345c.353.06.353.567 0 .629a3.19 3.19 0 0 0-2.565 2.435l-.026.113c-.079.346-.573.344-.649-.003l-.02-.097a3.18 3.18 0 0 0-2.56-2.45Z"></svg:path>`,
+})
+export class StreamlineAiEditSparkIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8478,23 +8495,6 @@ export class StreamlineEthereumIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M7 13.5a6.5 6.5 0 1 0 0-13a6.5 6.5 0 0 0 0 13"></svg:path><svg:path d="M7 3L4.5 6L7 8l2.5-2zM4.5 9L7 11l2.5-2"></svg:path></svg:g>`,
 })
 export class StreamlineEthereumCircleIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[streamlineEuroIcon],svg[streamline-euro-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M12 12.59a5 5 0 0 1-2 .41a5.77 5.77 0 0 1-5.5-6A5.77 5.77 0 0 1 10 1a4.9 4.9 0 0 1 1.63.27M2 5.5h6m-6 3h6"></svg:path>`,
-})
-export class StreamlineEuroIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

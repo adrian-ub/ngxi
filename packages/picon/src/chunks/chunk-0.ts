@@ -36,23 +36,6 @@ export class Picon3gIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[picon4gIcon],svg[picon-4g-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 2H5v3h2V4H6V3h2v3H4V1h4M2 4H0V1h1v2h1V2h1v4H2"></svg:path>`,
-})
-export class Picon4gIcon {
-  readonly viewBox = input("0 0 8 8")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[picon4chanIcon],svg[picon-4chan-icon]',
   host: {
     role: 'img',
@@ -63,6 +46,23 @@ export class Picon4gIcon {
   template: `<svg:path fill="currentColor" d="M5 3V1l3-1l-1 2l1 1M6 7L5 8V5h2l1 3M2 7L0 8l1-3h2v3M0 3l1-1l-1-2l3 1v2"></svg:path>`,
 })
 export class Picon4chanIcon {
+  readonly viewBox = input("0 0 8 8")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[picon4gIcon],svg[picon-4g-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 2H5v3h2V4H6V3h2v3H4V1h4M2 4H0V1h1v2h1V2h1v4H2"></svg:path>`,
+})
+export class Picon4gIcon {
   readonly viewBox = input("0 0 8 8")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,23 +172,6 @@ export class PiconAdIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[piconAddressIcon],svg[picon-address-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1 7V1h5v6M0 0v8h7V6l1-1l-1-1l1-1l-1-1l1-1l-1-1M3 3L2 4l1 1.5h1L5 4L4 3m1 0L4 5H3L2 3l1-1h2"></svg:path>`,
-})
-export class PiconAddressIcon {
-  readonly viewBox = input("0 0 8 8")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[piconAflatIcon],svg[picon-aflat-icon]',
   host: {
     role: 'img',
@@ -240,16 +223,16 @@ export class PiconAfricaIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[piconAirconditionerIcon],svg[picon-airconditioner-icon]',
+  selector: 'svg[piconAddressIcon],svg[picon-address-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M0 0h8v4H0m1-1h6V2H1m2 2v2c0 4-5 1-2 0v1h1V5m4 0L5 6c0 4 5 1 2 0v1H6"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M1 7V1h5v6M0 0v8h7V6l1-1l-1-1l1-1l-1-1l1-1l-1-1M3 3L2 4l1 1.5h1L5 4L4 3m1 0L4 5H3L2 3l1-1h2"></svg:path>`,
 })
-export class PiconAirconditionerIcon {
+export class PiconAddressIcon {
   readonly viewBox = input("0 0 8 8")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -267,6 +250,23 @@ export class PiconAirconditionerIcon {
   template: `<svg:path fill="currentColor" d="M2 4C-.5 4-.5 0 2 0s2.5 4 0 4m0 3L1 8L0 7l2-2l2 2m2 1L3 5h1l3 3M5 5V3q1-2 2 0v4M6 2L5 1l1-1l1 1"></svg:path>`,
 })
 export class PiconAirbagIcon {
+  readonly viewBox = input("0 0 8 8")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[piconAirconditionerIcon],svg[picon-airconditioner-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 0h8v4H0m1-1h6V2H1m2 2v2c0 4-5 1-2 0v1h1V5m4 0L5 6c0 4 5 1 2 0v1H6"></svg:path>`,
+})
+export class PiconAirconditionerIcon {
   readonly viewBox = input("0 0 8 8")
   readonly width = input("1em")
   readonly height = input("1em")

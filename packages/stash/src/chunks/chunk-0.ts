@@ -70,6 +70,23 @@ export class StashAirplaneSolidIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[stashAngleDownIcon],svg[stash-angle-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.964 10.164a.9.9 0 0 1 1.273 0L12 11.927l1.764-1.763a.9.9 0 0 1 1.273 1.272l-2.4 2.4a.9.9 0 0 1-1.273 0l-2.4-2.4a.9.9 0 0 1 0-1.272"></svg:path>`,
+})
+export class StashAngleDownIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[stashAngleDownDuotoneIcon],svg[stash-angle-down-duotone-icon]',
   host: {
     role: 'img',
@@ -87,16 +104,16 @@ export class StashAngleDownDuotoneIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[stashAngleDownIcon],svg[stash-angle-down-icon]',
+  selector: 'svg[stashAngleLeftDuotoneIcon],svg[stash-angle-left-duotone-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M8.964 10.164a.9.9 0 0 1 1.273 0L12 11.927l1.764-1.763a.9.9 0 0 1 1.273 1.272l-2.4 2.4a.9.9 0 0 1-1.273 0l-2.4-2.4a.9.9 0 0 1 0-1.272"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M13.836 8.964a.9.9 0 0 1 0 1.272L12.073 12l1.763 1.764a.9.9 0 1 1-1.273 1.272l-2.4-2.4a.9.9 0 0 1 0-1.272l2.4-2.4a.9.9 0 0 1 1.273 0"></svg:path>`,
 })
-export class StashAngleDownIcon {
+export class StashAngleLeftDuotoneIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -131,23 +148,6 @@ export class StashAngleDownLightIcon {
   template: `<svg:path fill="currentColor" d="M13.836 8.964a.9.9 0 0 1 0 1.272L12.073 12l1.763 1.764a.9.9 0 1 1-1.273 1.272l-2.4-2.4a.9.9 0 0 1 0-1.272l2.4-2.4a.9.9 0 0 1 1.273 0"></svg:path>`,
 })
 export class StashAngleLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[stashAngleLeftDuotoneIcon],svg[stash-angle-left-duotone-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13.836 8.964a.9.9 0 0 1 0 1.272L12.073 12l1.763 1.764a.9.9 0 1 1-1.273 1.272l-2.4-2.4a.9.9 0 0 1 0-1.272l2.4-2.4a.9.9 0 0 1 1.273 0"></svg:path>`,
-})
-export class StashAngleLeftDuotoneIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -223,6 +223,23 @@ export class StashAngleUpIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[stashAngleUpLightIcon],svg[stash-angle-up-light-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.576 10.376a.6.6 0 0 1 .848 0l2.4 2.4a.6.6 0 0 1-.848.848L12 11.648l-1.976 1.976a.6.6 0 0 1-.848-.848z"></svg:path>`,
+})
+export class StashAngleUpLightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[stashAngleRightLightIcon],svg[stash-angle-right-light-icon]',
   host: {
     role: 'img',
@@ -267,23 +284,6 @@ export class StashAngleUpDuotoneIcon {
   template: `<svg:path fill="currentColor" d="M12 5.25a.75.75 0 0 1 .75.75v10.19l3.72-3.72a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 1 1 1.06-1.06l3.72 3.72V6a.75.75 0 0 1 .75-.75"></svg:path>`,
 })
 export class StashArrowDownIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[stashAngleUpLightIcon],svg[stash-angle-up-light-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.576 10.376a.6.6 0 0 1 .848 0l2.4 2.4a.6.6 0 0 1-.848.848L12 11.648l-1.976 1.976a.6.6 0 0 1-.848-.848z"></svg:path>`,
-})
-export class StashAngleUpLightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

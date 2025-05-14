@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[token0x0Icon],svg[token-0x0-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11.47 3.641a2.353 2.353 0 0 0-3.884 2.332A2.506 2.506 0 0 0 4.481 9.48a2.793 2.793 0 0 0 .043 4.949a2.506 2.506 0 0 0 3.062 3.576A2.332 2.332 0 0 0 9.833 21a2.32 2.32 0 0 0 1.637-.652v-2.527h-.673a1.06 1.06 0 1 1 0-1.06H11a.47.47 0 0 0 .471-.472v-3.237a.53.53 0 0 0-1.06 0v1.06a.53.53 0 0 1-.53.53H8.679a1.06 1.06 0 1 1 0-1.06h.143a.53.53 0 0 0 .53-.53v-2.12a.53.53 0 0 0-.53-.53h-.143a1.06 1.06 0 1 1 0-1.06H9.88a.53.53 0 0 1 .53.53v1.06a.53.53 0 1 0 1.06 0V7.695a.47.47 0 0 0-.472-.472h-.202a1.06 1.06 0 1 1 0-1.06h.673zm1.06 0a2.353 2.353 0 0 1 3.883 2.332a2.507 2.507 0 0 1 3.105 3.508a2.794 2.794 0 0 1-.042 4.949a2.505 2.505 0 0 1-3.063 3.576A2.332 2.332 0 0 1 14.167 21a2.32 2.32 0 0 1-1.637-.652v-2.527h.673a1.06 1.06 0 1 0 0-1.06H13a.47.47 0 0 1-.471-.472v-3.237a.53.53 0 0 1 1.06 0v1.06a.53.53 0 0 0 .53.53h1.202a1.059 1.059 0 1 0 0-1.06h-.143a.53.53 0 0 1-.53-.53v-2.12a.53.53 0 0 1 .53-.53h.143a1.06 1.06 0 1 0 0-1.06h-1.203a.53.53 0 0 0-.53.53v1.06a.53.53 0 1 1-1.06 0V7.695A.47.47 0 0 1 13 7.223h.202a1.06 1.06 0 1 0 0-1.06h-.673z"></svg:path>`,
-})
-export class Token0x0Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[token10setIcon],svg[token-10set-icon]',
   host: {
     role: 'img',
@@ -36,16 +19,16 @@ export class Token10setIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[token1artIcon],svg[token-1art-icon]',
+  selector: 'svg[token0x0Icon],svg[token-0x0-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M14.178 3.276c1.098-.696 2.592.006 2.622 1.212v14.988c0 .84-.876 1.524-1.8 1.524c-.912 0-1.782-.666-1.8-1.5V7.956s-2.442 1.518-3.618 2.124c-.138.072-.288.12-.462.126c-.204 0-.42-.036-.63-.114c-.69-.264-1.32-.93-1.29-1.692c.018-.444.216-.864.654-1.152l.024-.018l6.3-3.96z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M11.47 3.641a2.353 2.353 0 0 0-3.884 2.332A2.506 2.506 0 0 0 4.481 9.48a2.793 2.793 0 0 0 .043 4.949a2.506 2.506 0 0 0 3.062 3.576A2.332 2.332 0 0 0 9.833 21a2.32 2.32 0 0 0 1.637-.652v-2.527h-.673a1.06 1.06 0 1 1 0-1.06H11a.47.47 0 0 0 .471-.472v-3.237a.53.53 0 0 0-1.06 0v1.06a.53.53 0 0 1-.53.53H8.679a1.06 1.06 0 1 1 0-1.06h.143a.53.53 0 0 0 .53-.53v-2.12a.53.53 0 0 0-.53-.53h-.143a1.06 1.06 0 1 1 0-1.06H9.88a.53.53 0 0 1 .53.53v1.06a.53.53 0 1 0 1.06 0V7.695a.47.47 0 0 0-.472-.472h-.202a1.06 1.06 0 1 1 0-1.06h.673zm1.06 0a2.353 2.353 0 0 1 3.883 2.332a2.507 2.507 0 0 1 3.105 3.508a2.794 2.794 0 0 1-.042 4.949a2.505 2.505 0 0 1-3.063 3.576A2.332 2.332 0 0 1 14.167 21a2.32 2.32 0 0 1-1.637-.652v-2.527h.673a1.06 1.06 0 1 0 0-1.06H13a.47.47 0 0 1-.471-.472v-3.237a.53.53 0 0 1 1.06 0v1.06a.53.53 0 0 0 .53.53h1.202a1.059 1.059 0 1 0 0-1.06h-.143a.53.53 0 0 1-.53-.53v-2.12a.53.53 0 0 1 .53-.53h.143a1.06 1.06 0 1 0 0-1.06h-1.203a.53.53 0 0 0-.53.53v1.06a.53.53 0 1 1-1.06 0V7.695A.47.47 0 0 1 13 7.223h.202a1.06 1.06 0 1 0 0-1.06h-.673z"></svg:path>`,
 })
-export class Token1artIcon {
+export class Token0x0Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,16 +87,16 @@ export class Token3ullIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tokenAagIcon],svg[token-aag-icon]',
+  selector: 'svg[token1artIcon],svg[token-1art-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 20.47a8.47 8.47 0 1 0 0-16.94a8.47 8.47 0 0 0 0 16.94m0 .53a9 9 0 1 0 0-17.999A9 9 0 0 0 12 21" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M12 5.647c-1.392 0-2.678.423-3.727 1.185l-.243.191l-.53-.318l.477-.285a6.882 6.882 0 0 1 9.53 9.709l-.408-.307A6.33 6.33 0 0 0 18.353 12A6.34 6.34 0 0 0 12 5.647M6.88 8.209a6.3 6.3 0 0 0-1.233 3.79A6.34 6.34 0 0 0 12 18.353a6.32 6.32 0 0 0 3.786-1.228l.307.413a6.881 6.881 0 0 1-9.62-9.635z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M7.235 7.765a.53.53 0 1 0 0-1.059a.53.53 0 0 0 0 1.059m0 .53a1.059 1.059 0 1 0 0-2.119a1.059 1.059 0 0 0 0 2.118m9.53 9a.53.53 0 1 0 0-1.06a.53.53 0 0 0 0 1.06m0 .529a1.059 1.059 0 1 0 0-2.118a1.059 1.059 0 0 0 0 2.118" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M7.06 7.437L5.564 5.939l.37-.37L7.437 7.06l-.371.376zm11.002 11.001l-1.498-1.498l.37-.376l1.504 1.498zM13.588 7.342v1.89l2.118-1.139v5.983L13.059 12.8v-2.684l-2.118 1.138v4.87L8.294 14.85V9.904zm-.529 2.17V8.19l-4.235 2.049v4.277l1.588.768v-4.341zm.53.318v2.636l1.588.768V8.983l-1.589.852z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M14.178 3.276c1.098-.696 2.592.006 2.622 1.212v14.988c0 .84-.876 1.524-1.8 1.524c-.912 0-1.782-.666-1.8-1.5V7.956s-2.442 1.518-3.618 2.124c-.138.072-.288.12-.462.126c-.204 0-.42-.036-.63-.114c-.69-.264-1.32-.93-1.29-1.692c.018-.444.216-.864.654-1.152l.024-.018l6.3-3.96z"></svg:path>`,
 })
-export class TokenAagIcon {
+export class Token1artIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -131,6 +114,23 @@ export class TokenAagIcon {
   template: `<svg:path fill="currentColor" d="m6.116 10.875l.964-1.5l.131.262l.195-.262l2.719 5.25H8.212c-.063.007-.217-.027-.285-.24c-.052-.165-.75-1.557-1.316-2.667a.6.6 0 0 0-.251-.255a.53.53 0 0 0-.398.207l-.675.96h.86c.6 0 1.124.408 1.124.997s-.525.997-1.125.997H3.461l1.253-1.875h-.69C3.46 12.75 3 12.375 3 11.813s.458-.937 1.024-.937zm.195 3.577c.394-.098.814-.405.814-.825s-.42-.727-.814-.825a.995.995 0 0 1 0 1.65M4.875 12.63h.184l.787-1.043a.7.7 0 0 1 .236-.195a.6.6 0 0 0-.494.236l-.402.529zm4.748 1.852h.273l-2.512-4.83l-.098.135zm1.627-3.022v1.08h2.025a.62.62 0 0 1 .431.585c0 .326-.277.585-.622.585H10.5v.914h2.903c.907 0 1.597-.562 1.597-1.424c0-.593-.394-.923-.668-1.2c.274-.278.668-.525.668-1.148c0-.862-.69-1.477-1.598-1.477H10.5v.915h2.584c.345 0 .622.318.622.645c0 .266-.18.45-.435.525zm2.842.54c.338.345.736.675.736 1.2c0 .787-.687 1.26-1.425 1.26h-2.73v-.586h2.41c.443 0 .8-.33.8-.75c0-.352-.196-.75-.582-.75h-1.864v-.75h1.864c.386 0 .582-.337.582-.69a.824.824 0 0 0-.8-.81h-2.41V9.54h2.73c.817 0 1.425.547 1.425 1.312c0 .525-.402.81-.735 1.147m1.658-1.065c0-.863.742-1.56 1.657-1.56h3.218v.937H17.88c-.349 0-.63.236-.63.563a.6.6 0 0 0 .439.562h1.654A1.666 1.666 0 0 1 21 13.065c0 .862-.742 1.56-1.657 1.56h-3.218v-.938h2.745c.349 0 .63-.236.63-.562a.6.6 0 0 0-.439-.563h-1.654a1.665 1.665 0 0 1-1.657-1.627"></svg:path>`,
 })
 export class TokenAaIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenAagIcon],svg[token-aag-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 20.47a8.47 8.47 0 1 0 0-16.94a8.47 8.47 0 0 0 0 16.94m0 .53a9 9 0 1 0 0-17.999A9 9 0 0 0 12 21" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M12 5.647c-1.392 0-2.678.423-3.727 1.185l-.243.191l-.53-.318l.477-.285a6.882 6.882 0 0 1 9.53 9.709l-.408-.307A6.33 6.33 0 0 0 18.353 12A6.34 6.34 0 0 0 12 5.647M6.88 8.209a6.3 6.3 0 0 0-1.233 3.79A6.34 6.34 0 0 0 12 18.353a6.32 6.32 0 0 0 3.786-1.228l.307.413a6.881 6.881 0 0 1-9.62-9.635z"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M7.235 7.765a.53.53 0 1 0 0-1.059a.53.53 0 0 0 0 1.059m0 .53a1.059 1.059 0 1 0 0-2.119a1.059 1.059 0 0 0 0 2.118m9.53 9a.53.53 0 1 0 0-1.06a.53.53 0 0 0 0 1.06m0 .529a1.059 1.059 0 1 0 0-2.118a1.059 1.059 0 0 0 0 2.118" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M7.06 7.437L5.564 5.939l.37-.37L7.437 7.06l-.371.376zm11.002 11.001l-1.498-1.498l.37-.376l1.504 1.498zM13.588 7.342v1.89l2.118-1.139v5.983L13.059 12.8v-2.684l-2.118 1.138v4.87L8.294 14.85V9.904zm-.529 2.17V8.19l-4.235 2.049v4.277l1.588.768v-4.341zm.53.318v2.636l1.588.768V8.983l-1.589.852z"></svg:path>`,
+})
+export class TokenAagIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -165,6 +165,23 @@ export class TokenAartIcon {
   template: `<svg:path fill="currentColor" d="M9.61 16.5c1.012 0 1.831-.786 1.831-1.755c0-.97-.82-1.755-1.83-1.755c-1.012 0-1.831.786-1.831 1.755c0 .97.82 1.755 1.83 1.755m4.786 0c1.01 0 1.83-.786 1.83-1.755c0-.97-.82-1.755-1.83-1.755s-1.831.786-1.831 1.755c0 .97.82 1.755 1.83 1.755"></svg:path><svg:path fill="currentColor" d="M12 7.5c-4.971 0-9.001 3.937-9 8.792h2.3c0-3.638 2.976-6.588 6.7-6.588s6.7 2.95 6.7 6.588H21c0-4.855-4.03-8.792-9-8.792"></svg:path>`,
 })
 export class TokenAaveIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenAblIcon],svg[token-abl-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.844 6.377h-1.688L6.375 17.624h1.687l1.308-2.811h5.214l1.353 2.811h1.688zm1.098 6.749h-3.928L12 8.626z"></svg:path><svg:path fill="currentColor" d="M20.438 17.96c-1.164.221-2.241 1.307-2.461 2.477H6.023c-.22-1.17-1.297-2.255-2.46-2.477V6.04c1.163-.221 2.24-1.307 2.46-2.477h11.954c.22 1.17 1.297 2.255 2.46 2.477zm.38-12.595a2.177 2.177 0 0 1-2.17-2.182a.183.183 0 0 0-.181-.183H5.534a.183.183 0 0 0-.183.183a2.18 2.18 0 0 1-2.168 2.182a.183.183 0 0 0-.183.183v12.904c0 .101.082.184.183.184c1.196 0 2.168.978 2.168 2.18c0 .102.082.184.183.184h12.932a.183.183 0 0 0 .183-.183c0-1.203.973-2.181 2.168-2.181a.183.183 0 0 0 .183-.184V5.548a.2.2 0 0 0-.053-.13a.18.18 0 0 0-.13-.053"></svg:path>`,
+})
+export class TokenAblIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,40 +291,6 @@ export class TokenAchIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[tokenAcqIcon],svg[token-acq-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 19.941a7.942 7.942 0 1 0 0-15.883a7.942 7.942 0 0 0 0 15.883M12 21a9 9 0 1 0 0-17.999A9 9 0 0 0 12 21" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M13.588 12.264v.794H6.706l3.97-6.352l2.118 3.44h-1.059l-1.059-1.852l-2.382 3.97z"></svg:path><svg:path fill="currentColor" d="M10.94 11.736v-.794h6.883l-3.97 6.353l-2.118-3.441h1.059l1.059 1.853l2.382-3.971z"></svg:path>`,
-})
-export class TokenAcqIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tokenAblIcon],svg[token-abl-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.844 6.377h-1.688L6.375 17.624h1.687l1.308-2.811h5.214l1.353 2.811h1.688zm1.098 6.749h-3.928L12 8.626z"></svg:path><svg:path fill="currentColor" d="M20.438 17.96c-1.164.221-2.241 1.307-2.461 2.477H6.023c-.22-1.17-1.297-2.255-2.46-2.477V6.04c1.163-.221 2.24-1.307 2.46-2.477h11.954c.22 1.17 1.297 2.255 2.46 2.477zm.38-12.595a2.177 2.177 0 0 1-2.17-2.182a.183.183 0 0 0-.181-.183H5.534a.183.183 0 0 0-.183.183a2.18 2.18 0 0 1-2.168 2.182a.183.183 0 0 0-.183.183v12.904c0 .101.082.184.183.184c1.196 0 2.168.978 2.168 2.18c0 .102.082.184.183.184h12.932a.183.183 0 0 0 .183-.183c0-1.203.973-2.181 2.168-2.181a.183.183 0 0 0 .183-.184V5.548a.2.2 0 0 0-.053-.13a.18.18 0 0 0-.13-.053"></svg:path>`,
-})
-export class TokenAblIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[tokenAcriaIcon],svg[token-acria-icon]',
   host: {
     role: 'img',
@@ -318,6 +301,23 @@ export class TokenAblIcon {
   template: `<svg:path fill="currentColor" d="M10.313 11.156H7.78L12 4.406l5.344 9.563H8.906l-1.969 3.375h1.97l1.687-2.813h2.812l1.688 2.813h2.25l-1.688-2.813h2.25L21 19.594h-7.313L12 16.219l-1.687 3.375H3l4.5-7.875h6.187L12 8.344z"></svg:path>`,
 })
 export class TokenAcriaIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tokenAcqIcon],svg[token-acq-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12 19.941a7.942 7.942 0 1 0 0-15.883a7.942 7.942 0 0 0 0 15.883M12 21a9 9 0 1 0 0-17.999A9 9 0 0 0 12 21" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M13.588 12.264v.794H6.706l3.97-6.352l2.118 3.44h-1.059l-1.059-1.852l-2.382 3.97z"></svg:path><svg:path fill="currentColor" d="M10.94 11.736v-.794h6.883l-3.97 6.353l-2.118-3.441h1.059l1.059 1.853l2.382-3.971z"></svg:path>`,
+})
+export class TokenAcqIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

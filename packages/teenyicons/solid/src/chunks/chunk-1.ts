@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[teenyiconsSortAlphabeticallySolidIcon],svg[teenyicons-sort-alphabetically-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M3 13.293V0h1v13.293l2.146-2.147l.708.708l-3 3a.5.5 0 0 1-.708 0l-3-3l.708-.708zM11.5 1A1.5 1.5 0 0 0 10 2.5V4h3V2.5A1.5 1.5 0 0 0 11.5 1M13 5v2h1V2.5a2.5 2.5 0 0 0-5 0V7h1V5zM9 8h3a2 2 0 0 1 1.323 3.5A2 2 0 0 1 12 15H9zm3 3a1 1 0 1 0 0-2h-2v2zm-2 1h2a1 1 0 1 1 0 2h-2z" clip-rule="evenodd"></svg:path>`,
-})
-export class TeenyiconsSortAlphabeticallySolidIcon {
-  readonly viewBox = input("0 0 15 15")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[teenyiconsSortDownSolidIcon],svg[teenyicons-sort-down-solid-icon]',
   host: {
     role: 'img',
@@ -1695,6 +1678,23 @@ export class TeenyiconsZoomInSolidIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M0 6.5a6.5 6.5 0 1 1 11.436 4.23l3.418 3.416l-.707.708l-3.418-3.418A6.5 6.5 0 0 1 0 6.5M4 7h5V6H4z" clip-rule="evenodd"></svg:path>`,
 })
 export class TeenyiconsZoomOutSolidIcon {
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[teenyiconsAdjustVerticalSolidIcon],svg[teenyicons-adjust-vertical-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 0v6H0v3h2v6h1V9h2V6H3V0zm3 10h2V0h1v10h2v3H8v2H7v-2H5zm7-10v2h-2v3h2v10h1V5h2V2h-2V0z"></svg:path>`,
+})
+export class TeenyiconsAdjustVerticalSolidIcon {
   readonly viewBox = input("0 0 15 15")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -36,6 +36,23 @@ export class QlementineIconsAndroid24Icon {
 
 @Component({
   standalone: true,
+  selector: 'svg[qlementineIconsAndroidFill24Icon],svg[qlementine-icons-android-fill-24-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M16.3.047a.376.376 0 0 1 .146.51l-.955 1.72a5.28 5.28 0 0 1 2.47 3.89c.025.225.031.778.033 1.34a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5c.001-.56.007-1.11.032-1.34a5.27 5.27 0 0 1 2.47-3.89L7.541.557a.375.375 0 1 1 .656-.364l.965 1.74a5.2 5.2 0 0 1 1.494-.396c.293-.033.641-.033 1.34-.033c.696 0 1.04 0 1.34.033c.526.059 1.03.195 1.49.397l.965-1.74a.376.376 0 0 1 .51-.146zm-6.56 4.45a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0m5.25.75a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M6.5 9a.5.5 0 0 0-.5.5V17c0 1.1.895 2 2 2v3.5a1.5 1.5 0 0 0 3 0V19h2v3.5a1.5 1.5 0 0 0 3 0V19c1.1 0 2-.895 2-2V9.5a.5.5 0 0 0-.5-.5zm-3-2A1.5 1.5 0 0 0 2 8.5v6a1.5 1.5 0 0 0 3 0v-6A1.5 1.5 0 0 0 3.5 7M19 8.5a1.5 1.5 0 0 1 3 0v6a1.5 1.5 0 0 1-3 0z"></svg:path>`,
+})
+export class QlementineIconsAndroidFill24Icon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[qlementineIconsArrowDown24Icon],svg[qlementine-icons-arrow-down-24-icon]',
   host: {
     role: 'img',
@@ -2528,23 +2545,6 @@ export class QlementineIconsYoutube24Icon {
   template: `<svg:path fill="currentColor" d="m11.7 3.6l.365-.002l.653.004c.872.006 2.46.026 4.06.086l.257.01c1.8.071 3.57.195 4.36.409c.509.138.972.406 1.35.778c.373.372.641.836.779 1.34c.793 3.19.61 8.23.015 11.5c-.138.508-.406.972-.779 1.34s-.836.64-1.35.778c-1.75.477-8.48.506-9.28.508l-.807-.004c-.817-.006-2.22-.024-3.68-.074l-.465-.017l-.444-.018c-1.69-.073-3.3-.195-4.04-.396a3.02 3.02 0 0 1-2.129-2.118c-.797-3.18-.579-8.22-.015-11.5a3.02 3.02 0 0 1 2.129-2.119c1.63-.444 7.56-.51 9.03-.522zM9.04 8v8l7-4z"></svg:path>`,
 })
 export class QlementineIconsYoutubeFill24Icon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[qlementineIconsAndroidFill24Icon],svg[qlementine-icons-android-fill-24-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M16.3.047a.376.376 0 0 1 .146.51l-.955 1.72a5.28 5.28 0 0 1 2.47 3.89c.025.225.031.778.033 1.34a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5c.001-.56.007-1.11.032-1.34a5.27 5.27 0 0 1 2.47-3.89L7.541.557a.375.375 0 1 1 .656-.364l.965 1.74a5.2 5.2 0 0 1 1.494-.396c.293-.033.641-.033 1.34-.033c.696 0 1.04 0 1.34.033c.526.059 1.03.195 1.49.397l.965-1.74a.376.376 0 0 1 .51-.146zm-6.56 4.45a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0m5.25.75a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5" clip-rule="evenodd"></svg:path><svg:path fill="currentColor" d="M6.5 9a.5.5 0 0 0-.5.5V17c0 1.1.895 2 2 2v3.5a1.5 1.5 0 0 0 3 0V19h2v3.5a1.5 1.5 0 0 0 3 0V19c1.1 0 2-.895 2-2V9.5a.5.5 0 0 0-.5-.5zm-3-2A1.5 1.5 0 0 0 2 8.5v6a1.5 1.5 0 0 0 3 0v-6A1.5 1.5 0 0 0 3.5 7M19 8.5a1.5 1.5 0 0 1 3 0v6a1.5 1.5 0 0 1-3 0z"></svg:path>`,
-})
-export class QlementineIconsAndroidFill24Icon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

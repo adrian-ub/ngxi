@@ -2,40 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsDefaultFolderOpenedIcon],svg[vscode-icons-default-folder-opened-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#dcb67a" d="M27.4 5.5h-9.2l-2.1 4.2H4.3v16.8h25.2v-21Zm0 18.7H6.6V11.8h20.8Zm0-14.5h-8.2l1-2.1h7.1v2.1Z"></svg:path><svg:path fill="#dcb67a" d="M25.7 13.7H.5l3.8 12.8h25.2z"></svg:path>`,
-})
-export class VscodeIconsDefaultFolderOpenedIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsDefaultFileIcon],svg[vscode-icons-default-file-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#c5c5c5" d="M20.414 2H5v28h22V8.586ZM7 28V4h12v6h6v18Z"></svg:path>`,
-})
-export class VscodeIconsDefaultFileIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[vscodeIconsDefaultFolderIcon],svg[vscode-icons-default-folder-icon]',
   host: {
     role: 'img',
@@ -46,6 +12,23 @@ export class VscodeIconsDefaultFileIcon {
   template: `<svg:path fill="#c09553" d="M27.5 5.5h-9.3l-2.1 4.2H4.4v16.8h25.2v-21Zm0 4.2h-8.2l1.1-2.1h7.1Z"></svg:path>`,
 })
 export class VscodeIconsDefaultFolderIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsDefaultFolderOpenedIcon],svg[vscode-icons-default-folder-opened-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#dcb67a" d="M27.4 5.5h-9.2l-2.1 4.2H4.3v16.8h25.2v-21Zm0 18.7H6.6V11.8h20.8Zm0-14.5h-8.2l1-2.1h7.1v2.1Z"></svg:path><svg:path fill="#dcb67a" d="M25.7 13.7H.5l3.8 12.8h25.2z"></svg:path>`,
+})
+export class VscodeIconsDefaultFolderOpenedIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,16 +70,16 @@ export class VscodeIconsFileTypeAccessIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsFileTypeActionscriptIcon],svg[vscode-icons-file-type-actionscript-icon]',
+  selector: 'svg[vscodeIconsDefaultRootFolderOpenedIcon],svg[vscode-icons-default-root-folder-opened-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#c41718" d="M2 15.281c1.918 0 2.11-1.055 2.11-1.918a17 17 0 0 0-.192-2.205a19 19 0 0 1-.192-2.205c0-2.4 1.63-3.452 3.836-3.452h.575v1.437h-.479c-1.534 0-2.11.767-2.11 2.205a14 14 0 0 0 .192 1.918a14 14 0 0 1 .192 2.014c0 1.726-.671 2.493-1.918 2.877v.1c1.151.288 1.918 1.151 1.918 2.877a14 14 0 0 1-.192 2.014a13 13 0 0 0-.192 1.918c0 1.438.575 2.3 2.11 2.3h.479V26.6h-.575c-2.205 0-3.836-.959-3.836-3.644a19 19 0 0 1 .192-2.205a16 16 0 0 0 .192-2.11c0-.863-.288-1.918-2.11-1.918Z"></svg:path><svg:path fill="#c41718" d="M9.479 18.062L8.233 21.8H6.6l4.03-11.889h1.822L16.479 21.8h-1.534L13.7 18.062Zm3.932-1.151l-1.151-3.452a9.4 9.4 0 0 1-.575-2.205c-.192.671-.384 1.438-.575 2.11l-1.151 3.451h3.452Zm4.507 3.068a5.94 5.94 0 0 0 2.781.767c1.534 0 2.493-.863 2.493-2.014s-.671-1.726-2.205-2.4c-1.918-.671-3.164-1.726-3.164-3.356c0-1.822 1.534-3.26 3.836-3.26a5.14 5.14 0 0 1 2.589.575l-.384 1.247a5.5 5.5 0 0 0-2.3-.479c-1.63 0-2.205.959-2.205 1.822c0 1.151.767 1.63 2.4 2.3c2.014.767 3.068 1.726 3.068 3.452c0 1.822-1.342 3.452-4.123 3.452a5.8 5.8 0 0 1-3.068-.767Z"></svg:path><svg:path fill="#c41718" d="M30 16.623c-1.918 0-2.11 1.151-2.11 1.918a16 16 0 0 0 .192 2.11a16 16 0 0 1 .192 2.205c0 2.685-1.63 3.644-3.836 3.644h-.575v-1.438h.479c1.438 0 2.11-.863 2.11-2.3a13 13 0 0 0-.192-1.918a14 14 0 0 1-.192-2.014c0-1.726.767-2.589 1.918-2.877v-.1c-1.151-.288-1.918-1.151-1.918-2.877a14 14 0 0 1 .192-2.014a13 13 0 0 0 .192-1.918c0-1.438-.575-2.205-2.11-2.3h-.479V5.4h.575c2.205 0 3.836 1.055 3.836 3.452a17 17 0 0 1-.192 2.205a17 17 0 0 0-.192 2.205c0 .959.288 1.918 2.11 1.918Z"></svg:path>`,
+  template: `<svg:path fill="#dcb67a" d="M27.4 5.5h-9.2l-2.1 4.2H4.3v16.8h25.2v-21Zm0 18.7H6.6V11.8h20.8Zm0-14.5h-8.2l1-2.1h7.1v2.1Z"></svg:path><svg:path fill="#dcb67a" d="M25.7 13.7H.5l3.8 12.8h25.2z"></svg:path><svg:path fill="#dcb67a" d="M19.635 31.25h-5.924l9.794-21.5h5.985z"></svg:path><svg:path fill="#ffeebe" d="M23.666 10H29.1l-9.625 21H14.1Z"></svg:path>`,
 })
-export class VscodeIconsFileTypeActionscriptIcon {
+export class VscodeIconsDefaultRootFolderOpenedIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,16 +104,16 @@ export class VscodeIconsFileTypeAccess2Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsDefaultRootFolderOpenedIcon],svg[vscode-icons-default-root-folder-opened-icon]',
+  selector: 'svg[vscodeIconsDefaultFileIcon],svg[vscode-icons-default-file-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#dcb67a" d="M27.4 5.5h-9.2l-2.1 4.2H4.3v16.8h25.2v-21Zm0 18.7H6.6V11.8h20.8Zm0-14.5h-8.2l1-2.1h7.1v2.1Z"></svg:path><svg:path fill="#dcb67a" d="M25.7 13.7H.5l3.8 12.8h25.2z"></svg:path><svg:path fill="#dcb67a" d="M19.635 31.25h-5.924l9.794-21.5h5.985z"></svg:path><svg:path fill="#ffeebe" d="M23.666 10H29.1l-9.625 21H14.1Z"></svg:path>`,
+  template: `<svg:path fill="#c5c5c5" d="M20.414 2H5v28h22V8.586ZM7 28V4h12v6h6v18Z"></svg:path>`,
 })
-export class VscodeIconsDefaultRootFolderOpenedIcon {
+export class VscodeIconsDefaultFileIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,16 +121,16 @@ export class VscodeIconsDefaultRootFolderOpenedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsFileTypeActionscript2Icon],svg[vscode-icons-file-type-actionscript2-icon]',
+  selector: 'svg[vscodeIconsFileTypeActionscriptIcon],svg[vscode-icons-file-type-actionscript-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#c7d7d8" d="M24.099 2H8.837v2.493H2.253v7.844h6.584V30h20.91V7.888zm4.648 27H9.837V12.337H21.56V4.493H9.837V3h13.679v5.415h5.231z"></svg:path><svg:path fill="#fd3316" d="M9.728 5.336H8.243a.064.064 0 0 0-.064.062l-.015.466l-.002.012l-1.232 5.355a.064.064 0 0 0 .062.078h1.056c.03 0 .056-.021.062-.051l.258-1.236a.06.06 0 0 1 .062-.051h1.16c.029 0 .055.02.062.048l.313 1.242a.064.064 0 0 0 .062.048h1.151a.064.064 0 0 0 .062-.079L9.79 5.384a.06.06 0 0 0-.062-.048M8.617 8.81l.401-2.243l.423 2.243zm6.29-3.381v1.063a.045.045 0 0 1-.065.04c-.173-.087-.659-.311-1.076-.32c-.517-.012-.771.276-.771.57c0 .888 2.187 1.004 2.187 2.799c0 1.576-1.282 1.727-1.893 1.727c-.983 0-1.424-.304-1.512-.373a.04.04 0 0 1-.017-.035V9.737c0-.036.039-.057.069-.038c.205.133.829.506 1.389.506c.621 0 .633-.285.633-.496c0-.872-2.091-1-2.091-2.879c0-1.67 1.635-1.67 1.929-1.67c.7 0 1.096.179 1.194.229a.05.05 0 0 1 .024.04"></svg:path><svg:path fill="#c7d7d8" d="M20.821 14.233c2.727 0 3.056 1.412 3.056 2.156c0 1.018-.227 1.857-.227 2.494c0 .862 1.151.664 1.151.664v1.547c-.824 0-1.131.221-1.131.841c0 .319.213 1.789.213 2.426c0 1.877-1.443 2.267-2.351 2.267h-.717l-.004-1.497c1.364 0 1.319-.558 1.319-1.001c0-.567-.159-1.293-.159-2.285s.832-1.505.832-1.505s-.868-.549-.868-1.399s.213-1.665.213-2.479c0-.939-1.324-.742-1.324-.742zm-3.127 0c-2.727 0-3.056 1.412-3.056 2.156c0 1.018.227 1.857.227 2.494c0 .862-1.151.664-1.151.664v1.547c.824 0 1.131.221 1.131.841c0 .319-.213 1.789-.213 2.426c0 1.877 1.443 2.267 2.351 2.267h.717l.004-1.497c-1.364 0-1.319-.558-1.319-1.001c0-.567.159-1.293.159-2.285s-.832-1.505-.832-1.505s.868-.549.868-1.399s-.213-1.665-.213-2.479c0-.939 1.324-.742 1.324-.742z"></svg:path>`,
+  template: `<svg:path fill="#c41718" d="M2 15.281c1.918 0 2.11-1.055 2.11-1.918a17 17 0 0 0-.192-2.205a19 19 0 0 1-.192-2.205c0-2.4 1.63-3.452 3.836-3.452h.575v1.437h-.479c-1.534 0-2.11.767-2.11 2.205a14 14 0 0 0 .192 1.918a14 14 0 0 1 .192 2.014c0 1.726-.671 2.493-1.918 2.877v.1c1.151.288 1.918 1.151 1.918 2.877a14 14 0 0 1-.192 2.014a13 13 0 0 0-.192 1.918c0 1.438.575 2.3 2.11 2.3h.479V26.6h-.575c-2.205 0-3.836-.959-3.836-3.644a19 19 0 0 1 .192-2.205a16 16 0 0 0 .192-2.11c0-.863-.288-1.918-2.11-1.918Z"></svg:path><svg:path fill="#c41718" d="M9.479 18.062L8.233 21.8H6.6l4.03-11.889h1.822L16.479 21.8h-1.534L13.7 18.062Zm3.932-1.151l-1.151-3.452a9.4 9.4 0 0 1-.575-2.205c-.192.671-.384 1.438-.575 2.11l-1.151 3.451h3.452Zm4.507 3.068a5.94 5.94 0 0 0 2.781.767c1.534 0 2.493-.863 2.493-2.014s-.671-1.726-2.205-2.4c-1.918-.671-3.164-1.726-3.164-3.356c0-1.822 1.534-3.26 3.836-3.26a5.14 5.14 0 0 1 2.589.575l-.384 1.247a5.5 5.5 0 0 0-2.3-.479c-1.63 0-2.205.959-2.205 1.822c0 1.151.767 1.63 2.4 2.3c2.014.767 3.068 1.726 3.068 3.452c0 1.822-1.342 3.452-4.123 3.452a5.8 5.8 0 0 1-3.068-.767Z"></svg:path><svg:path fill="#c41718" d="M30 16.623c-1.918 0-2.11 1.151-2.11 1.918a16 16 0 0 0 .192 2.11a16 16 0 0 1 .192 2.205c0 2.685-1.63 3.644-3.836 3.644h-.575v-1.438h.479c1.438 0 2.11-.863 2.11-2.3a13 13 0 0 0-.192-1.918a14 14 0 0 1-.192-2.014c0-1.726.767-2.589 1.918-2.877v-.1c-1.151-.288-1.918-1.151-1.918-2.877a14 14 0 0 1 .192-2.014a13 13 0 0 0 .192-1.918c0-1.438-.575-2.205-2.11-2.3h-.479V5.4h.575c2.205 0 3.836 1.055 3.836 3.452a17 17 0 0 1-.192 2.205a17 17 0 0 0-.192 2.205c0 .959.288 1.918 2.11 1.918Z"></svg:path>`,
 })
-export class VscodeIconsFileTypeActionscript2Icon {
+export class VscodeIconsFileTypeActionscriptIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,16 +155,16 @@ export class VscodeIconsFileTypeAdaIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsFileTypeAffinitydesignerIcon],svg[vscode-icons-file-type-affinitydesigner-icon]',
+  selector: 'svg[vscodeIconsFileTypeActionscript2Icon],svg[vscode-icons-file-type-actionscript2-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#00636b" d="m23.307 11.572l-4.41-7.667h-1.212l-.386-.609h-.574l-4.779 8.276z"></svg:path><svg:path fill="#013e80" d="m9.861 11.572l-2.408 4.209l-2.638 1.522L2 22.178l1.927 3.279l8.019-13.885z"></svg:path><svg:path fill="#00414f" d="M16.725 3.296h-3.82l-2.077 3.596l.852 1.5l-1.819 3.18h2.085z"></svg:path><svg:path fill="#00225c" d="m4.995 25.954l.644 1.072h11.149l.618-1.072z"></svg:path><svg:path fill="#005392" d="m24.507 13.659l-1.2-2.087H11.946L3.927 25.457l.292.497h13.187z"></svg:path><svg:path fill="#000c3d" d="M16.788 27.026h.711l.927 1.642h.605l-.92-1.642h9.395l.633-1.072H17.406z"></svg:path><svg:path fill="#000f60" d="m24.507 13.659l-7.101 12.295h10.733l1.743-2.949z"></svg:path><svg:radialgradient id="vscodeIconsFileTypeAffinitydesigner0" cx="13.769" cy="17.09" r="11.945" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#06dbe0"></svg:stop><svg:stop offset="1" stop-color="#3b63ff"></svg:stop></svg:radialgradient><svg:path fill="url(#vscodeIconsFileTypeAffinitydesigner0)" d="m12.4 18.381l6.542-11.326l-1.298-2.257L5.868 25.187h10.447z"></svg:path><svg:path fill="url(#vscodeIconsFileTypeAffinitydesigner0)" d="M25.61 18.649H13.226l2.487 4.324h12.384z"></svg:path><svg:lineargradient id="vscodeIconsFileTypeAffinitydesigner1" x1="15.5" x2="22.3" y1="16.5" y2="13" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#1dffb8"></svg:stop><svg:stop offset="1" stop-color="#00d2f8"></svg:stop></svg:lineargradient><svg:path fill="url(#vscodeIconsFileTypeAffinitydesigner1)" d="M14.378 18.085h2.682l-1.948-3.387l-1.345 2.328a.706.706 0 0 0 .611 1.059m4.855-10.523l-3.8 6.581l2.267 3.942h7.585z"></svg:path>`,
+  template: `<svg:path fill="#c7d7d8" d="M24.099 2H8.837v2.493H2.253v7.844h6.584V30h20.91V7.888zm4.648 27H9.837V12.337H21.56V4.493H9.837V3h13.679v5.415h5.231z"></svg:path><svg:path fill="#fd3316" d="M9.728 5.336H8.243a.064.064 0 0 0-.064.062l-.015.466l-.002.012l-1.232 5.355a.064.064 0 0 0 .062.078h1.056c.03 0 .056-.021.062-.051l.258-1.236a.06.06 0 0 1 .062-.051h1.16c.029 0 .055.02.062.048l.313 1.242a.064.064 0 0 0 .062.048h1.151a.064.064 0 0 0 .062-.079L9.79 5.384a.06.06 0 0 0-.062-.048M8.617 8.81l.401-2.243l.423 2.243zm6.29-3.381v1.063a.045.045 0 0 1-.065.04c-.173-.087-.659-.311-1.076-.32c-.517-.012-.771.276-.771.57c0 .888 2.187 1.004 2.187 2.799c0 1.576-1.282 1.727-1.893 1.727c-.983 0-1.424-.304-1.512-.373a.04.04 0 0 1-.017-.035V9.737c0-.036.039-.057.069-.038c.205.133.829.506 1.389.506c.621 0 .633-.285.633-.496c0-.872-2.091-1-2.091-2.879c0-1.67 1.635-1.67 1.929-1.67c.7 0 1.096.179 1.194.229a.05.05 0 0 1 .024.04"></svg:path><svg:path fill="#c7d7d8" d="M20.821 14.233c2.727 0 3.056 1.412 3.056 2.156c0 1.018-.227 1.857-.227 2.494c0 .862 1.151.664 1.151.664v1.547c-.824 0-1.131.221-1.131.841c0 .319.213 1.789.213 2.426c0 1.877-1.443 2.267-2.351 2.267h-.717l-.004-1.497c1.364 0 1.319-.558 1.319-1.001c0-.567-.159-1.293-.159-2.285s.832-1.505.832-1.505s-.868-.549-.868-1.399s.213-1.665.213-2.479c0-.939-1.324-.742-1.324-.742zm-3.127 0c-2.727 0-3.056 1.412-3.056 2.156c0 1.018.227 1.857.227 2.494c0 .862-1.151.664-1.151.664v1.547c.824 0 1.131.221 1.131.841c0 .319-.213 1.789-.213 2.426c0 1.877 1.443 2.267 2.351 2.267h.717l.004-1.497c-1.364 0-1.319-.558-1.319-1.001c0-.567.159-1.293.159-2.285s-.832-1.505-.832-1.505s.868-.549.868-1.399s-.213-1.665-.213-2.479c0-.939 1.324-.742 1.324-.742z"></svg:path>`,
 })
-export class VscodeIconsFileTypeAffinitydesignerIcon {
+export class VscodeIconsFileTypeActionscript2Icon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,6 +189,23 @@ export class VscodeIconsFileTypeAdvplIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[vscodeIconsFileTypeAffinitydesignerIcon],svg[vscode-icons-file-type-affinitydesigner-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#00636b" d="m23.307 11.572l-4.41-7.667h-1.212l-.386-.609h-.574l-4.779 8.276z"></svg:path><svg:path fill="#013e80" d="m9.861 11.572l-2.408 4.209l-2.638 1.522L2 22.178l1.927 3.279l8.019-13.885z"></svg:path><svg:path fill="#00414f" d="M16.725 3.296h-3.82l-2.077 3.596l.852 1.5l-1.819 3.18h2.085z"></svg:path><svg:path fill="#00225c" d="m4.995 25.954l.644 1.072h11.149l.618-1.072z"></svg:path><svg:path fill="#005392" d="m24.507 13.659l-1.2-2.087H11.946L3.927 25.457l.292.497h13.187z"></svg:path><svg:path fill="#000c3d" d="M16.788 27.026h.711l.927 1.642h.605l-.92-1.642h9.395l.633-1.072H17.406z"></svg:path><svg:path fill="#000f60" d="m24.507 13.659l-7.101 12.295h10.733l1.743-2.949z"></svg:path><svg:radialgradient id="vscodeIconsFileTypeAffinitydesigner0" cx="13.769" cy="17.09" r="11.945" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#06dbe0"></svg:stop><svg:stop offset="1" stop-color="#3b63ff"></svg:stop></svg:radialgradient><svg:path fill="url(#vscodeIconsFileTypeAffinitydesigner0)" d="m12.4 18.381l6.542-11.326l-1.298-2.257L5.868 25.187h10.447z"></svg:path><svg:path fill="url(#vscodeIconsFileTypeAffinitydesigner0)" d="M25.61 18.649H13.226l2.487 4.324h12.384z"></svg:path><svg:lineargradient id="vscodeIconsFileTypeAffinitydesigner1" x1="15.5" x2="22.3" y1="16.5" y2="13" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#1dffb8"></svg:stop><svg:stop offset="1" stop-color="#00d2f8"></svg:stop></svg:lineargradient><svg:path fill="url(#vscodeIconsFileTypeAffinitydesigner1)" d="M14.378 18.085h2.682l-1.948-3.387l-1.345 2.328a.706.706 0 0 0 .611 1.059m4.855-10.523l-3.8 6.581l2.267 3.942h7.585z"></svg:path>`,
+})
+export class VscodeIconsFileTypeAffinitydesignerIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vscodeIconsFileTypeAffinityphotoIcon],svg[vscode-icons-file-type-affinityphoto-icon]',
   host: {
     role: 'img',
@@ -223,16 +223,16 @@ export class VscodeIconsFileTypeAffinityphotoIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsFileTypeAgdaIcon],svg[vscode-icons-file-type-agda-icon]',
+  selector: 'svg[vscodeIconsFileTypeAiIcon],svg[vscode-icons-file-type-ai-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#d2d2d2" d="M8.46 10.79a.61.61 0 0 1-.62.61a.61.61 0 0 1-.6-.61a.61.61 0 0 1 .6-.61a.61.61 0 0 1 .62.61m2.26 0a.61.61 0 0 1-.61.61a.61.61 0 0 1-.61-.61a.61.61 0 0 1 .61-.61a.61.61 0 0 1 .61.61"></svg:path><svg:path fill="none" stroke="#d2d2d2" stroke-linecap="round" stroke-linejoin="round" stroke-width=".82" d="M25.06 4.67L16 13.73m13.6-6.8l-4.54 4.54m4.53-6.8L25.06 9.2M13.73 4.67L9.2 9.2M16 4.67L11.47 9.2m0-4.53L2.4 13.73h4.53v4.54c0 4.98 4.08 9.06 9.06 9.06s9.06-4.08 9.06-9.06v-4.54l4.53-4.53"></svg:path>`,
+  template: `<svg:path fill="#1c0a00" d="M3.169 3.517h25.666v24.966H3.169Z"></svg:path><svg:path fill="#ff7f18" d="M3.169 3.517h25.666v24.966H3.169ZM2 29.65h28V2.35H2Zm18.34-17.57c0-.093.035-.14.14-.14h1.832c.093 0 .14.035.14.14v9.205c0 .093-.023.14-.14.14h-1.807c-.117 0-.152-.058-.152-.152V12.08zm-.128-2.648a1.19 1.19 0 0 1 2.38 0a1.115 1.115 0 0 1-1.213 1.19a1.1 1.1 0 0 1-1.165-1.19Zm-5.25 6.487c-.327-1.3-1.1-4.118-1.388-5.483h-.023c-.245 1.365-.863 3.675-1.353 5.483Zm-3.243 1.89l-.922 3.5c-.023.093-.058.117-.175.117H8.909c-.117 0-.14-.035-.117-.175l3.313-11.6a3.8 3.8 0 0 0 .117-.968c0-.082.035-.117.093-.117h2.45c.082 0 .117.023.14.117l3.71 12.588c.023.093 0 .152-.093.152h-1.937c-.093 0-.152-.023-.175-.1l-.957-3.512H11.72Z"></svg:path>`,
 })
-export class VscodeIconsFileTypeAgdaIcon {
+export class VscodeIconsFileTypeAiIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,6 +257,23 @@ export class VscodeIconsFileTypeAffinitypublisherIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[vscodeIconsFileTypeAgdaIcon],svg[vscode-icons-file-type-agda-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#d2d2d2" d="M8.46 10.79a.61.61 0 0 1-.62.61a.61.61 0 0 1-.6-.61a.61.61 0 0 1 .6-.61a.61.61 0 0 1 .62.61m2.26 0a.61.61 0 0 1-.61.61a.61.61 0 0 1-.61-.61a.61.61 0 0 1 .61-.61a.61.61 0 0 1 .61.61"></svg:path><svg:path fill="none" stroke="#d2d2d2" stroke-linecap="round" stroke-linejoin="round" stroke-width=".82" d="M25.06 4.67L16 13.73m13.6-6.8l-4.54 4.54m4.53-6.8L25.06 9.2M13.73 4.67L9.2 9.2M16 4.67L11.47 9.2m0-4.53L2.4 13.73h4.53v4.54c0 4.98 4.08 9.06 9.06 9.06s9.06-4.08 9.06-9.06v-4.54l4.53-4.53"></svg:path>`,
+})
+export class VscodeIconsFileTypeAgdaIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vscodeIconsFileTypeAi2Icon],svg[vscode-icons-file-type-ai2-icon]',
   host: {
     role: 'img',
@@ -267,23 +284,6 @@ export class VscodeIconsFileTypeAffinitypublisherIcon {
   template: `<svg:path fill="#909090" d="m24.037 2.072l5.564 5.8v22.056H8.814V30H29.67V7.945z"></svg:path><svg:path fill="#231612" d="M23.965 2H8.742v27.928H29.6V7.873z"></svg:path><svg:path fill="#4c4442" d="M23.893 2.072v5.874h5.633z"></svg:path><svg:path fill="#f36617" d="M23.965 2v5.873H29.6z"></svg:path><svg:path fill="#909090" d="M2.384 10.264h6.359V3.432H2.384z"></svg:path><svg:path fill="#4c4442" d="M8.743 10.264h13.718V3.432H8.743z"></svg:path><svg:path fill="#f36617" d="M22.407 10.211H2.33V3.379h20.077z"></svg:path><svg:path fill="#f46c25" d="M18.1 20.619c-.275-1.07-.948-3.226-1.223-4.344h-.014c-.206 1.054-.769 2.859-1.181 4.344zm-2.775 1.566l-.838 2.779c-.014.1-.055.128-.137.128h-1.4c-.1 0-.124-.048-.1-.16a859 859 0 0 1 2.871-9.279a3.7 3.7 0 0 0 .11-.878a.086.086 0 0 1 .082-.1h1.9c.069 0 .082.016.11.08c1.016 3.274 2.129 6.884 3.173 10.19q.041.144-.082.144h-1.542c-.069 0-.1-.032-.124-.1l-.879-2.811h-3.146m6.967-4.631c0-.1.027-.128.094-.128h1.431c.081 0 .108.016.108.128v7.506c0 .08-.027.128-.108.128h-1.4c-.081 0-.121-.032-.121-.144v-7.49Zm-.09-2.173a.92.92 0 0 1 .918-.99a.884.884 0 0 1 .891.99a.908.908 0 1 1-1.809 0"></svg:path><svg:path fill="#231612" d="M11.238 5.279h-.013L10.9 7.352h.652ZM9.5 9.3l1.06-4.86h1.355l1.033 4.86H11.81l-.15-1.133h-.882L10.634 9.3zm3.938 0V4.44h1.086V9.3z"></svg:path>`,
 })
 export class VscodeIconsFileTypeAi2Icon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeAiIcon],svg[vscode-icons-file-type-ai-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#1c0a00" d="M3.169 3.517h25.666v24.966H3.169Z"></svg:path><svg:path fill="#ff7f18" d="M3.169 3.517h25.666v24.966H3.169ZM2 29.65h28V2.35H2Zm18.34-17.57c0-.093.035-.14.14-.14h1.832c.093 0 .14.035.14.14v9.205c0 .093-.023.14-.14.14h-1.807c-.117 0-.152-.058-.152-.152V12.08zm-.128-2.648a1.19 1.19 0 0 1 2.38 0a1.115 1.115 0 0 1-1.213 1.19a1.1 1.1 0 0 1-1.165-1.19Zm-5.25 6.487c-.327-1.3-1.1-4.118-1.388-5.483h-.023c-.245 1.365-.863 3.675-1.353 5.483Zm-3.243 1.89l-.922 3.5c-.023.093-.058.117-.175.117H8.909c-.117 0-.14-.035-.117-.175l3.313-11.6a3.8 3.8 0 0 0 .117-.968c0-.082.035-.117.093-.117h2.45c.082 0 .117.023.14.117l3.71 12.588c.023.093 0 .152-.093.152h-1.937c-.093 0-.152-.023-.175-.1l-.957-3.512H11.72Z"></svg:path>`,
-})
-export class VscodeIconsFileTypeAiIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

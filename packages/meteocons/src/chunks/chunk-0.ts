@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[meteoconsBeanieIcon],svg[meteocons-beanie-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="#ef4444" stroke-miterlimit="10" stroke-width="9" d="M173 304.7v-17a83 83 0 0 1 83-83a83 83 0 0 1 83 83v17"></svg:path><svg:path fill="none" stroke="#e2e8f0" stroke-miterlimit="10" stroke-width="9" d="M160 317.5v34.4c0 6.3 7.1 11.4 16 11.4h160c8.9 0 16-5.1 16-11.4v-34.4c0-6.3-7.1-11.4-16-11.4H176c-8.9 0-16 5-16 11.4Z"></svg:path><svg:circle cx="256" cy="170.7" r="22" fill="none" stroke="#e2e8f0" stroke-miterlimit="10" stroke-width="9"><svg:animatetransform id="meteoconsBeanie0" fill="freeze" additive="sum" attributeName="transform" begin="0s; x.end+2.58s" calcMode="spline" dur=".42s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1" keyTimes="0; .4; .8; 1" type="translate" values="0 0; 0 -9; 0 3; 0 0"></svg:animatetransform><svg:animatetransform id="meteoconsBeanie1" fill="freeze" additive="sum" attributeName="transform" begin="1s; y.end+2.25s" calcMode="spline" dur=".75s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1" keyTimes="0; .22; .44; .67; .89; 1" type="rotate" values="0 256 256; -15 256 256; 9 256 256; -9 256 256; 6 256 256; 0 256 256"></svg:animatetransform></svg:circle>`,
+})
+export class MeteoconsBeanieIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[meteoconsBarometerIcon],svg[meteocons-barometer-icon]',
   host: {
     role: 'img',
@@ -29,23 +46,6 @@ export class MeteoconsBarometerIcon {
   template: `<svg:defs><svg:symbol id="meteoconsCelsius0" viewBox="0 0 109.1 73.2"><svg:path fill="#374151" d="M19.4 0A18.7 18.7 0 0 0 0 19.3a18.9 18.9 0 0 0 19.4 19.5a18.7 18.7 0 0 0 14-5.6a18.8 18.8 0 0 0 5.4-14A18.7 18.7 0 0 0 19.4 0m6.3 25.7a8.6 8.6 0 0 1-6.3 2.5a8.5 8.5 0 0 1-6.2-2.5a8.7 8.7 0 0 1-2.4-6.4A8.6 8.6 0 0 1 13 13a8.4 8.4 0 0 1 6.3-2.5a8.4 8.4 0 0 1 8.7 8.8a8.7 8.7 0 0 1-2.4 6.4Zm53.1 32.8a13.4 13.4 0 0 1-11.5-5.6q-4-5.7-4-16q0-10 4-15.6a13.4 13.4 0 0 1 11.5-5.6a12.6 12.6 0 0 1 8.6 3a13.3 13.3 0 0 1 4.2 8.2H109q-1.4-12-9.5-19T78.3 1q-14.5 0-23.7 9.8T45.3 37q0 16.4 9.2 26.3t23.7 9.9q13.2 0 21.6-7.1q8.3-7 9.3-19.6H91.6q-1.6 12-12.8 12"></svg:path></svg:symbol></svg:defs><svg:use width="109.1" height="73.2" href="#meteoconsCelsius0" transform="matrix(1.46 0 0 1.47 176.26 202.35)"></svg:use>`,
 })
 export class MeteoconsCelsiusIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[meteoconsBeanieIcon],svg[meteocons-beanie-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="#ef4444" stroke-miterlimit="10" stroke-width="9" d="M173 304.7v-17a83 83 0 0 1 83-83a83 83 0 0 1 83 83v17"></svg:path><svg:path fill="none" stroke="#e2e8f0" stroke-miterlimit="10" stroke-width="9" d="M160 317.5v34.4c0 6.3 7.1 11.4 16 11.4h160c8.9 0 16-5.1 16-11.4v-34.4c0-6.3-7.1-11.4-16-11.4H176c-8.9 0-16 5-16 11.4Z"></svg:path><svg:circle cx="256" cy="170.7" r="22" fill="none" stroke="#e2e8f0" stroke-miterlimit="10" stroke-width="9"><svg:animatetransform id="meteoconsBeanie0" fill="freeze" additive="sum" attributeName="transform" begin="0s; x.end+2.58s" calcMode="spline" dur=".42s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1" keyTimes="0; .4; .8; 1" type="translate" values="0 0; 0 -9; 0 3; 0 0"></svg:animatetransform><svg:animatetransform id="meteoconsBeanie1" fill="freeze" additive="sum" attributeName="transform" begin="1s; y.end+2.25s" calcMode="spline" dur=".75s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1; .42, 0, .58, 1" keyTimes="0; .22; .44; .67; .89; 1" type="rotate" values="0 256 256; -15 256 256; 9 256 256; -9 256 256; 6 256 256; 0 256 256"></svg:animatetransform></svg:circle>`,
-})
-export class MeteoconsBeanieIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
