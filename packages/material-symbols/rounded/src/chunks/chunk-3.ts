@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsDragClickRoundedIcon],svg[material-symbols-drag-click-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 18q-1.775 0-3.262-.937T6.525 14.5q-.15-.35 0-.7t.525-.5q.375-.175.788-.012t.612.587q.525.975 1.475 1.55T12 16q1.65 0 2.825-1.175T16 12q0-1.125-.587-2.062T13.85 8.474q-.4-.2-.55-.612t.025-.788t.513-.525t.687 0q1.575.725 2.525 2.212T18 12q0 2.5-1.75 4.25T12 18m0 4q-3.95 0-6.85-2.675T1.975 12.75q-.025-.4.238-.7t.687-.325t.763.263t.387.737q.4 3.1 2.688 5.188T12 20q3.35 0 5.675-2.325T20 12q0-3.125-2.075-5.387T12.7 4.05q-.45-.05-.737-.375t-.263-.75t.325-.7t.7-.25q1.95.125 3.638.975T19.3 5.163t1.975 3.125T22 12q0 2.075-.788 3.9t-2.137 3.175t-3.175 2.138T12 22M9.55 11.5l-3.3-3.275L5.5 10.5q-.125.35-.475.338t-.475-.363L2.275 2.9q-.1-.3.113-.512t.512-.113l7.575 2.275q.35.125.363.475T10.5 5.5l-2.275.75l3.3 3.3q.425.425.425.975t-.425.975t-.987.425t-.988-.425"></svg:path>`,
+})
+export class MaterialSymbolsDragClickRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsDragHandleRoundedIcon],svg[material-symbols-drag-handle-rounded-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsFolderZipOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h5.175q.4 0 .763.15t.637.425L12 6h8q.825 0 1.413.588T22 8v10q0 .825-.587 1.413T20 20zm10-2h2v-2h2v-2h-2v-2h2v-2h-2V8h-2v2h2v2h-2v2h2v2h-2z"></svg:path>`,
 })
 export class MaterialSymbolsFolderZipRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsFollowTheSignsRoundedIcon],svg[material-symbols-follow-the-signs-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.5 5.5q-.825 0-1.412-.587T7.5 3.5t.588-1.412T9.5 1.5t1.413.588T11.5 3.5t-.587 1.413T9.5 5.5M6.85 15l-1.575 7.2q-.075.35-.363.575T4.25 23q-.5 0-.8-.375t-.2-.85L5.75 8.9L4 9.65V12q0 .425-.288.712T3 13t-.712-.288T2 12V8.975q0-.3.175-.55t.45-.375l4.625-1.9q.675-.275 1.375-.063T9.7 6.95l.95 1.6q.55.875 1.412 1.512T14 10.9q.425.1.713.388T15 12t-.288.7t-.712.225q-1.35-.2-2.488-.85T9.55 10.4l-.6 3l1.475 1.475q.275.275.425.638t.15.762V22q0 .425-.287.713T10 23t-.712-.288T9 22v-5zm9.9-6H14q-.425 0-.712-.288T13 8V3q0-.425.288-.712T14 2h7q.425 0 .713.288T22 3v5q0 .425-.288.713T21 9h-2.75v13.25q0 .325-.213.538T17.5 23t-.537-.213t-.213-.537zm.85-2.75l-.125.125q-.225.225-.225.525t.225.525t.538.225t.537-.225L19.8 6.2q.15-.15.213-.325t.062-.375t-.062-.375T19.8 4.8l-1.25-1.25q-.225-.225-.525-.225t-.525.225t-.225.538t.225.537l.1.125h-2.35q-.325 0-.537.213T14.5 5.5t.213.538t.537.212z"></svg:path>`,
-})
-export class MaterialSymbolsFollowTheSignsRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

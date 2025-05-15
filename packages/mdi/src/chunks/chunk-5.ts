@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[mdiDiskPlayerIcon],svg[mdi-disk-player-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M14.499 10.374a1.876 1.876 0 0 0 1.876-1.876A1.873 1.873 0 0 0 14.5 6.626a1.872 1.872 0 0 0-1.873 1.872c0 1.034.838 1.876 1.873 1.876zm0-9.374a7.5 7.5 0 0 1 5.1 13H9.401A7.499 7.499 0 0 1 14.5 1zM6 21v1H4v-1H2v-6h20v6h-2v1h-2v-1H6zm-2-3v1h9v-1H4zm11-1v2h2v-2h-2zm4 0a1 1 0 1 0 0 2a1 1 0 0 0 0-2z" fill="currentColor"></svg:path>`,
-})
-export class MdiDiskPlayerIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mdiDisqusIcon],svg[mdi-disqus-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MdiFileReplaceIcon {
   template: `<svg:path fill="currentColor" d="m14 3l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7v2l4-3l-4-3v2H4V3zm7 7v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-2h2v2h11v-9h-5V7H8v6H6V7a2 2 0 0 1 2-2h8z"></svg:path>`,
 })
 export class MdiFileReplaceOutlineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiFileRestoreIcon],svg[mdi-file-restore-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-2 16c-2.05 0-3.81-1.24-4.58-3h1.71c.63.9 1.68 1.5 2.87 1.5a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 12 9.5c-1.35 0-2.5.78-3.1 1.9l1.6 1.6h-4V9l1.3 1.3C8.69 8.92 10.23 8 12 8a5 5 0 0 1 5 5a5 5 0 0 1-5 5"></svg:path>`,
+})
+export class MdiFileRestoreIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

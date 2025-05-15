@@ -2,40 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[cibNintendo3dsIcon],svg[cib-nintendo-3ds-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M23.536 22.172c0 .525.428.953.948.953a.953.953 0 0 0 .953-.953a.95.95 0 0 0-.953-.948a.95.95 0 0 0-.948.948m-12.599 5.651h10.099c.401 0 .699-.296.724-.697v-6.901c-.025-.375-.348-.697-.724-.677H10.937a.726.726 0 0 0-.724.704v6.875c0 .401.323.697.724.697zm17.402-4.698a.975.975 0 0 0 .973-.975c0-.864-1.047-1.301-1.661-.687c-.615.609-.181 1.661.688 1.661zm-1.923-.026a.951.951 0 1 0 0 1.901c1.22-.047 1.22-1.855 0-1.901m-.952-2.848c0 .525.427.947.948.947a.948.948 0 1 0 0-1.895a.947.947 0 0 0-.948.948m-22.079 1.9a2.2 2.2 0 0 0 4.402 0c0-2.937-4.401-2.937-4.401 0zM28.364 0H3.636A3.65 3.65 0 0 0-.016 3.625v24.724C.011 30.374 1.636 32 3.636 32h24.703a3.676 3.676 0 0 0 3.677-3.625V3.651C31.989 1.626 30.364 0 28.364 0m2.548 28.375a2.553 2.553 0 0 1-2.548 2.547H3.636a2.553 2.553 0 0 1-2.548-2.547V17.099h29.824zm0-12.927H1.088V3.651a2.56 2.56 0 0 1 2.548-2.552h24.728a2.563 2.563 0 0 1 2.548 2.552zM23.213 4.151h-14.5c-.401 0-.729.349-.729.751v7.296c0 .401.303.756.729.756h14.5a.735.735 0 0 0 .724-.756V4.875a.723.723 0 0 0-.724-.724"></svg:path>`,
-})
-export class CibNintendo3dsIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[cibNintendoGamecubeIcon],svg[cib-nintendo-gamecube-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m9.088 20.172l6.272 3.62v-7.245l-6.277-3.62v7.245zm-2.703 1.557l8.975 5.177v5.093L1.973 24.275V8.822l4.412 2.547zM16 8.193l-6.271 3.624L16 15.437l6.271-3.62L16 8.197zm0-3.11l7.547 4.371l4.412-2.547L16 0L2.631 7.719l4.411 2.541zm9.609 16.646v-5.265l-2.697 1.557v2.151l-6.272 3.625v-7.245l13.387-7.724v15.448L16.64 32.005v-5.088z"></svg:path>`,
-})
-export class CibNintendoGamecubeIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[cibNintendoSwitchIcon],svg[cib-nintendo-switch-icon]',
   host: {
     role: 'img',
@@ -5605,6 +5571,40 @@ export class CibZorinIcon {
   template: `<svg:path fill="currentColor" d="M32 16c0 8.839-7.161 16-16 16S0 24.839 0 16S7.161 0 16 0s16 7.161 16 16M21.292 8H9.36l1.333 2.708h8.078l-9.411 10l1.333 3.276h11.948l-1.333-2.693h-8.094l9.411-10l-1.333-3.276z"></svg:path>`,
 })
 export class CibZulipIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[cibAdobeLightroomClassicIcon],svg[cib-adobe-lightroom-classic-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 .401v31.197h32V.401zm1.333 1.334h29.333v28.531H1.333zm7.531 20.432c-.156 0-.197-.068-.197-.197V7.646c0-.115.041-.176.156-.176h2.109c.115 0 .136.047.136.161v12.343h5.5c.109 0 .14.048.12.157l-.333 1.891c-.021.109-.089.156-.199.156H8.864zm9.871-8.636c0-.161 0-.552-.068-1.301c0-.109.027-.136.115-.177c.812-.328 2.74-.921 4.896-.921c.109 0 .151.02.151.135v1.932c0 .115-.041.136-.156.136c-.833-.041-2.084.068-2.547.265v8.412c0 .109-.043.151-.152.151h-2.093c-.109 0-.151-.041-.151-.151v-8.48z"></svg:path>`,
+})
+export class CibAdobeLightroomClassicIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[cibAdobePremiereIcon],svg[cib-adobe-premiere-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 .401v31.198h32V.401zm1.333 1.333h29.333v28.531H1.333zm7.063 5.969c0-.089.021-.156.135-.156a77 77 0 0 1 3.427-.063c3.698 0 5.302 2.026 5.302 4.62c0 3.385-2.448 4.839-5.464 4.839c-.505 0-.682-.021-1.036-.021v5.125c0 .109-.042.151-.151.151H8.552c-.115 0-.156-.042-.156-.151zm2.364 7.083c.313.021.552.021 1.083.021c1.557 0 3.021-.547 3.021-2.661c0-1.693-1.042-2.552-2.828-2.552c-.526 0-1.031.026-1.276.047zm8.537-1.208c0-.156 0-.552-.068-1.297c0-.109.016-.135.104-.177a13.8 13.8 0 0 1 4.875-.922c.109 0 .156.021.156.13v1.938c0 .109-.036.13-.146.13a7.6 7.6 0 0 0-2.521.266v8.401c0 .109-.047.151-.156.151h-2.094c-.109 0-.151-.042-.151-.151z"></svg:path>`,
+})
+export class CibAdobePremiereIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

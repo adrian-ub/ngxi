@@ -36,23 +36,6 @@ export class Ri4kLineIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[riAccessibilityLineIcon],svg[ri-accessibility-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 12a8 8 0 1 1 16 0a8 8 0 0 1-16 0m8-10C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m0 6.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m0 1c-1.557 0-3.178-.357-4.629-.929L6.63 10.43c1.076.429 2.228.718 3.37.901c0 .87.086 1.764-.316 2.567l-1.578 3.156l1.79.894l1.552-3.105a.618.618 0 0 1 1.106 0l1.552 3.105l1.79-.894l-1.578-3.156C13.915 13.094 14 12.2 14 11.33a16.5 16.5 0 0 0 3.359-.897c.025-.01-.73-1.862-.733-1.86c-1.453.566-3.067.927-4.626.927"></svg:path>`,
-})
-export class RiAccessibilityLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[riAccountBox2LineIcon],svg[ri-account-box-2-line-icon]',
   host: {
     role: 'img',
@@ -104,6 +87,23 @@ export class RiAccountCircle2LineIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[riAccountPinCircleLineIcon],svg[ri-account-pin-circle-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.745 21.745C5.308 20.722 2 16.747 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 4.747-3.308 8.722-7.745 9.745L12 24zm-2.733-3.488a7.95 7.95 0 0 0 3.182 1.539l.56.129L12 21.172l1.247-1.247l.56-.13a7.96 7.96 0 0 0 3.36-1.686A6.98 6.98 0 0 0 12.16 16c-2.036 0-3.87.87-5.148 2.257M5.616 16.82A8.98 8.98 0 0 1 12.16 14a8.97 8.97 0 0 1 6.362 2.634a8 8 0 1 0-12.906.187M12 13a4 4 0 1 1 0-8a4 4 0 0 1 0 8m0-2a2 2 0 1 0 0-4a2 2 0 0 0 0 4"></svg:path>`,
+})
+export class RiAccountPinCircleLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[riAccountCircleLineIcon],svg[ri-account-circle-line-icon]',
   host: {
     role: 'img',
@@ -131,23 +131,6 @@ export class RiAccountCircleLineIcon {
   template: `<svg:path fill="currentColor" d="m14 21l-2 2l-2-2H4.995A1.995 1.995 0 0 1 3 19.005V4.995C3 3.893 3.893 3 4.995 3h14.01C20.107 3 21 3.893 21 4.995v14.01A1.995 1.995 0 0 1 19.005 21zm5-2V5H5v14h5.828L12 20.172L13.172 19zm-11.028-.82a10 10 0 0 1-1.751-.978A7 7 0 0 1 12.102 14c2.4 0 4.517 1.207 5.778 3.047a10 10 0 0 1-1.724 1.025A5 5 0 0 0 12.102 16c-1.716 0-3.23.864-4.13 2.18M12 13a3.5 3.5 0 1 1 0-7a3.5 3.5 0 0 1 0 7m0-2a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"></svg:path>`,
 })
 export class RiAccountPinBoxLineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[riAccountPinCircleLineIcon],svg[ri-account-pin-circle-line-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9.745 21.745C5.308 20.722 2 16.747 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 4.747-3.308 8.722-7.745 9.745L12 24zm-2.733-3.488a7.95 7.95 0 0 0 3.182 1.539l.56.129L12 21.172l1.247-1.247l.56-.13a7.96 7.96 0 0 0 3.36-1.686A6.98 6.98 0 0 0 12.16 16c-2.036 0-3.87.87-5.148 2.257M5.616 16.82A8.98 8.98 0 0 1 12.16 14a8.97 8.97 0 0 1 6.362 2.634a8 8 0 1 0-12.906.187M12 13a4 4 0 1 1 0-8a4 4 0 0 1 0 8m0-2a2 2 0 1 0 0-4a2 2 0 0 0 0 4"></svg:path>`,
-})
-export class RiAccountPinCircleLineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8495,6 +8478,23 @@ export class RiFileCheckLineIcon {
   template: `<svg:path fill="currentColor" d="M12 22v-2H5V4h10v4h4v5h2V7l-5-5H3.999A.995.995 0 0 0 3 2.992v18.016a1 1 0 0 0 .993.992zm9.536-.879L19.414 19l2.122-2.121l-1.415-1.415l-2.12 2.122l-2.122-2.122l-1.414 1.415l2.12 2.12l-2.12 2.122l1.414 1.414L18 20.415l2.121 2.12z"></svg:path>`,
 })
 export class RiFileCloseLineIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[riFileCloudLineIcon],svg[ri-file-cloud-line-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.997 2L21 8l.001 4.26a5.5 5.5 0 0 0-2-1.053L19 9h-5V4H5v16h5.06a4.7 4.7 0 0 0 .817 2H3.993a.993.993 0 0 1-.986-.876L3 21.008V2.992c0-.498.387-.927.885-.985L4.002 2zM17.5 13a3.5 3.5 0 0 1 3.5 3.5l-.002.103a2.75 2.75 0 0 1-.58 5.392L20.25 22h-5.5l-.168-.005a2.75 2.75 0 0 1-.579-5.393L14 16.5a3.5 3.5 0 0 1 3.5-3.5m0 2a1.5 1.5 0 0 0-1.473 1.215l-.02.14L16 16.5v1.62l-1.444.406a.75.75 0 0 0 .08 1.465l.109.01h5.51a.75.75 0 0 0 .19-1.475l-1.013-.283L19 18.12V16.5l-.007-.145A1.5 1.5 0 0 0 17.5 15"></svg:path>`,
+})
+export class RiFileCloudLineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

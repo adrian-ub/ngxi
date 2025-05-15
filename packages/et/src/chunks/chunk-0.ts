@@ -53,23 +53,6 @@ export class EtAnchorIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[etApertureIcon],svg[et-aperture-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16 32c8.822 0 16-7.178 16-16S24.822 0 16 0S0 7.178 0 16s7.178 16 16 16M7.71 3.51c-.877 2.364-1.313 4.809-1.246 7.287c.05 1.798.357 3.599.917 5.355a19.8 19.8 0 0 0 2.032 4.416a.5.5 0 0 0 .85-.527q-.165-.267-.325-.541a18.8 18.8 0 0 1-1.604-3.651a18.4 18.4 0 0 1-.87-5.079c-.071-2.608.416-5.183 1.473-7.714q.074-.18.153-.356C11.16 1.62 13.507 1 16 1c2.393 0 4.648.577 6.657 1.578c-2.48.423-4.809 1.267-6.919 2.563a19.3 19.3 0 0 0-4.179 3.471a19.6 19.6 0 0 0-2.809 3.969a.5.5 0 1 0 .882.469a18.6 18.6 0 0 1 2.665-3.765a18.4 18.4 0 0 1 3.964-3.293a18.45 18.45 0 0 1 7.354-2.572q.22-.029.44-.053c3.917 2.507 6.588 6.776 6.897 11.686c-1.606-1.935-3.501-3.53-5.678-4.709a19.4 19.4 0 0 0-5.097-1.884a19.4 19.4 0 0 0-4.843-.448a.501.501 0 0 0 .019 1h.019a18.4 18.4 0 0 1 4.593.425c1.707.373 3.334.975 4.833 1.786c2.295 1.244 4.281 2.953 5.958 5.151q.107.14.211.282A14.99 14.99 0 0 1 24.29 28.49c.877-2.364 1.313-4.809 1.246-7.287a19.4 19.4 0 0 0-.917-5.355a19.8 19.8 0 0 0-2.032-4.416a.5.5 0 0 0-.849.527q.165.267.325.541a18.8 18.8 0 0 1 1.604 3.651a18.4 18.4 0 0 1 .87 5.079c.071 2.607-.416 5.183-1.473 7.714q-.075.179-.153.356A14.9 14.9 0 0 1 16 31c-2.393 0-4.648-.577-6.657-1.578c2.479-.423 4.809-1.267 6.919-2.563a19.3 19.3 0 0 0 4.179-3.471a19.5 19.5 0 0 0 2.809-3.97a.5.5 0 1 0-.883-.469a18.5 18.5 0 0 1-2.666 3.765a18.4 18.4 0 0 1-3.963 3.293a18.45 18.45 0 0 1-7.354 2.572q-.22.029-.44.053c-3.917-2.507-6.588-6.776-6.897-11.686c1.606 1.935 3.501 3.53 5.678 4.709a19.4 19.4 0 0 0 5.097 1.884a19.5 19.5 0 0 0 4.843.449a.5.5 0 0 0 .481-.519c-.01-.275-.205-.505-.519-.481a18.3 18.3 0 0 1-4.593-.425a18.4 18.4 0 0 1-4.833-1.786c-2.295-1.244-4.281-2.953-5.958-5.151q-.107-.14-.211-.282A15 15 0 0 1 7.71 3.51"></svg:path>`,
-})
-export class EtApertureIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[etBasketIcon],svg[et-basket-icon]',
   host: {
     role: 'img',
@@ -82,6 +65,23 @@ export class EtApertureIcon {
 export class EtBasketIcon {
   readonly viewBox = input("0 0 42 32")
   readonly width = input("1.32em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[etApertureIcon],svg[et-aperture-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 32c8.822 0 16-7.178 16-16S24.822 0 16 0S0 7.178 0 16s7.178 16 16 16M7.71 3.51c-.877 2.364-1.313 4.809-1.246 7.287c.05 1.798.357 3.599.917 5.355a19.8 19.8 0 0 0 2.032 4.416a.5.5 0 0 0 .85-.527q-.165-.267-.325-.541a18.8 18.8 0 0 1-1.604-3.651a18.4 18.4 0 0 1-.87-5.079c-.071-2.608.416-5.183 1.473-7.714q.074-.18.153-.356C11.16 1.62 13.507 1 16 1c2.393 0 4.648.577 6.657 1.578c-2.48.423-4.809 1.267-6.919 2.563a19.3 19.3 0 0 0-4.179 3.471a19.6 19.6 0 0 0-2.809 3.969a.5.5 0 1 0 .882.469a18.6 18.6 0 0 1 2.665-3.765a18.4 18.4 0 0 1 3.964-3.293a18.45 18.45 0 0 1 7.354-2.572q.22-.029.44-.053c3.917 2.507 6.588 6.776 6.897 11.686c-1.606-1.935-3.501-3.53-5.678-4.709a19.4 19.4 0 0 0-5.097-1.884a19.4 19.4 0 0 0-4.843-.448a.501.501 0 0 0 .019 1h.019a18.4 18.4 0 0 1 4.593.425c1.707.373 3.334.975 4.833 1.786c2.295 1.244 4.281 2.953 5.958 5.151q.107.14.211.282A14.99 14.99 0 0 1 24.29 28.49c.877-2.364 1.313-4.809 1.246-7.287a19.4 19.4 0 0 0-.917-5.355a19.8 19.8 0 0 0-2.032-4.416a.5.5 0 0 0-.849.527q.165.267.325.541a18.8 18.8 0 0 1 1.604 3.651a18.4 18.4 0 0 1 .87 5.079c.071 2.607-.416 5.183-1.473 7.714q-.075.179-.153.356A14.9 14.9 0 0 1 16 31c-2.393 0-4.648-.577-6.657-1.578c2.479-.423 4.809-1.267 6.919-2.563a19.3 19.3 0 0 0 4.179-3.471a19.5 19.5 0 0 0 2.809-3.97a.5.5 0 1 0-.883-.469a18.5 18.5 0 0 1-2.666 3.765a18.4 18.4 0 0 1-3.963 3.293a18.45 18.45 0 0 1-7.354 2.572q-.22.029-.44.053c-3.917-2.507-6.588-6.776-6.897-11.686c1.606 1.935 3.501 3.53 5.678 4.709a19.4 19.4 0 0 0 5.097 1.884a19.5 19.5 0 0 0 4.843.449a.5.5 0 0 0 .481-.519c-.01-.275-.205-.505-.519-.481a18.3 18.3 0 0 1-4.593-.425a18.4 18.4 0 0 1-4.833-1.786c-2.295-1.244-4.281-2.953-5.958-5.151q-.107-.14-.211-.282A15 15 0 0 1 7.71 3.51"></svg:path>`,
+})
+export class EtApertureIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
   readonly height = input("1em")
 }
 
@@ -138,23 +138,6 @@ export class EtBeakerIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[etBookOpenIcon],svg[et-book-open-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M37.5 1h-16c-.397 0-.74.136-1 .362a1.5 1.5 0 0 0-1-.362h-16C2.631 1 2 1.631 2 2.5v28c0 .869.631 1.5 1.5 1.5h16c.397 0 .74-.136 1-.362c.26.226.603.362 1 .362h16c.869 0 1.5-.631 1.5-1.5v-28c0-.869-.631-1.5-1.5-1.5m-18 30h-16c-.313 0-.5-.187-.5-.5v-28c0-.313.187-.5.5-.5h16c.313 0 .5.187.5.5v28c0 .313-.187.5-.5.5m18.5-.5c0 .313-.187.5-.5.5h-16c-.313 0-.5-.187-.5-.5v-28c0-.313.187-.5.5-.5h16c.313 0 .5.187.5.5zM40.5 3a.5.5 0 0 0-.5.5v26a.5.5 0 0 0 1 0v-26a.5.5 0 0 0-.5-.5M.5 30a.5.5 0 0 0 .5-.5v-26a.5.5 0 0 0-1 0v26a.5.5 0 0 0 .5.5"></svg:path><svg:path d="M17.5 10h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0-8h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 12h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m18-16h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0-8h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 12h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1"></svg:path></svg:g>`,
-})
-export class EtBookOpenIcon {
-  readonly viewBox = input("0 0 42 32")
-  readonly width = input("1.32em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[etBikeIcon],svg[et-bike-icon]',
   host: {
     role: 'img',
@@ -189,6 +172,23 @@ export class EtBriefcaseIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[etBookOpenIcon],svg[et-book-open-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M37.5 1h-16c-.397 0-.74.136-1 .362a1.5 1.5 0 0 0-1-.362h-16C2.631 1 2 1.631 2 2.5v28c0 .869.631 1.5 1.5 1.5h16c.397 0 .74-.136 1-.362c.26.226.603.362 1 .362h16c.869 0 1.5-.631 1.5-1.5v-28c0-.869-.631-1.5-1.5-1.5m-18 30h-16c-.313 0-.5-.187-.5-.5v-28c0-.313.187-.5.5-.5h16c.313 0 .5.187.5.5v28c0 .313-.187.5-.5.5m18.5-.5c0 .313-.187.5-.5.5h-16c-.313 0-.5-.187-.5-.5v-28c0-.313.187-.5.5-.5h16c.313 0 .5.187.5.5zM40.5 3a.5.5 0 0 0-.5.5v26a.5.5 0 0 0 1 0v-26a.5.5 0 0 0-.5-.5M.5 30a.5.5 0 0 0 .5-.5v-26a.5.5 0 0 0-1 0v26a.5.5 0 0 0 .5.5"></svg:path><svg:path d="M17.5 10h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0-8h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 12h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m18-16h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0-8h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 12h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1m0 4h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1"></svg:path></svg:g>`,
+})
+export class EtBookOpenIcon {
+  readonly viewBox = input("0 0 42 32")
+  readonly width = input("1.32em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[etBrowserIcon],svg[et-browser-icon]',
   host: {
     role: 'img',
@@ -199,23 +199,6 @@ export class EtBriefcaseIcon {
   template: `<svg:g fill="currentColor"><svg:path d="M41.5 10a.5.5 0 0 0-.5.5v20a.5.5 0 0 1-.5.5h-39a.5.5 0 0 1-.5-.5v-20a.5.5 0 0 0-1 0v20c0 .827.673 1.5 1.5 1.5h39c.827 0 1.5-.673 1.5-1.5v-20a.5.5 0 0 0-.5-.5m-1-10h-39C.673 0 0 .673 0 1.5v6a.5.5 0 0 0 .5.5h41a.5.5 0 0 0 .5-.5v-6c0-.827-.673-1.5-1.5-1.5m.5 7H1V1.5a.5.5 0 0 1 .5-.5h39a.5.5 0 0 1 .5.5z"></svg:path><svg:path d="M17.5 28a.5.5 0 0 0 .5-.5v-16a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v16a.5.5 0 0 0 .5.5zM5 12h12v15H5zm17.5 3h15a.5.5 0 0 0 0-1h-15a.5.5 0 0 0 0 1m0 5h15a.5.5 0 0 0 0-1h-15a.5.5 0 0 0 0 1m0 5h15a.5.5 0 0 0 0-1h-15a.5.5 0 0 0 0 1"></svg:path><svg:circle cx="4" cy="4" r="1"></svg:circle><svg:circle cx="8" cy="4" r="1"></svg:circle><svg:circle cx="12" cy="4" r="1"></svg:circle></svg:g>`,
 })
 export class EtBrowserIcon {
-  readonly viewBox = input("0 0 42 32")
-  readonly width = input("1.32em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[etCameraIcon],svg[et-camera-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M39.5 6H32c-1.927 0-1.998-1.797-2-2V3c0-1.258-1.39-3-4-3h-9.969c-2.935 0-4 1.794-4 3v.994C12.03 4.076 11.983 6 10 6H2.5A2.503 2.503 0 0 0 0 8.5v18C0 27.878 1.121 29 2.5 29h6a.5.5 0 0 0 0-1h-6c-.827 0-1.5-.673-1.5-1.5V14h8a12.9 12.9 0 0 0-1 5c0 7.168 5.832 13 13 13s13-5.832 13-13c0-1.771-.359-3.46-1.003-5H41v12.5c0 .827-.673 1.5-1.5 1.5h-7a.5.5 0 0 0 0 1h7c1.379 0 2.5-1.122 2.5-2.5v-18C42 7.122 40.879 6 39.5 6M21 31c-6.617 0-12-5.383-12-12S14.383 7 21 7s12 5.383 12 12s-5.383 12-12 12m11.75-18a.5.5 0 0 0-.206.047C30.38 8.868 26.022 6 21 6s-9.38 2.868-11.544 7.047A.5.5 0 0 0 9.25 13H1V8.5C1 7.673 1.673 7 2.5 7H10c2.368 0 3.019-1.958 3.031-3V3c0-.804.799-2 3-2H26c2.094 0 3 1.324 3 2v1c0 1.038.627 3 3 3h7.5c.827 0 1.5.673 1.5 1.5V13z"></svg:path><svg:path d="M9.5 5a.5.5 0 0 0 .5-.5v-1C10 2.673 9.327 2 8.5 2h-4C3.673 2 3 2.673 3 3.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 0 .5.5M21 10c-4.963 0-9 4.038-9 9s4.037 9 9 9s9-4.038 9-9s-4.037-9-9-9m0 17c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8"></svg:path></svg:g>`,
-})
-export class EtCameraIcon {
   readonly viewBox = input("0 0 42 32")
   readonly width = input("1.32em")
   readonly height = input("1em")
@@ -235,6 +218,23 @@ export class EtCameraIcon {
 export class EtCalendarIcon {
   readonly viewBox = input("0 0 34 32")
   readonly width = input("1.07em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[etCameraIcon],svg[et-camera-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M39.5 6H32c-1.927 0-1.998-1.797-2-2V3c0-1.258-1.39-3-4-3h-9.969c-2.935 0-4 1.794-4 3v.994C12.03 4.076 11.983 6 10 6H2.5A2.503 2.503 0 0 0 0 8.5v18C0 27.878 1.121 29 2.5 29h6a.5.5 0 0 0 0-1h-6c-.827 0-1.5-.673-1.5-1.5V14h8a12.9 12.9 0 0 0-1 5c0 7.168 5.832 13 13 13s13-5.832 13-13c0-1.771-.359-3.46-1.003-5H41v12.5c0 .827-.673 1.5-1.5 1.5h-7a.5.5 0 0 0 0 1h7c1.379 0 2.5-1.122 2.5-2.5v-18C42 7.122 40.879 6 39.5 6M21 31c-6.617 0-12-5.383-12-12S14.383 7 21 7s12 5.383 12 12s-5.383 12-12 12m11.75-18a.5.5 0 0 0-.206.047C30.38 8.868 26.022 6 21 6s-9.38 2.868-11.544 7.047A.5.5 0 0 0 9.25 13H1V8.5C1 7.673 1.673 7 2.5 7H10c2.368 0 3.019-1.958 3.031-3V3c0-.804.799-2 3-2H26c2.094 0 3 1.324 3 2v1c0 1.038.627 3 3 3h7.5c.827 0 1.5.673 1.5 1.5V13z"></svg:path><svg:path d="M9.5 5a.5.5 0 0 0 .5-.5v-1C10 2.673 9.327 2 8.5 2h-4C3.673 2 3 2.673 3 3.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 0 .5.5M21 10c-4.963 0-9 4.038-9 9s4.037 9 9 9s9-4.038 9-9s-4.037-9-9-9m0 17c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8"></svg:path></svg:g>`,
+})
+export class EtCameraIcon {
+  readonly viewBox = input("0 0 42 32")
+  readonly width = input("1.32em")
   readonly height = input("1em")
 }
 
@@ -291,23 +291,6 @@ export class EtCircleCompassIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[etClipboardIcon],svg[et-clipboard-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M1.5 32h25c.869 0 1.5-.631 1.5-1.5v-28c0-.869-.631-1.5-1.5-1.5h-4a.5.5 0 0 0 0 1h4c.313 0 .5.187.5.5v28c0 .313-.187.5-.5.5h-25c-.313 0-.5-.187-.5-.5v-28c0-.313.187-.5.5-.5h4a.5.5 0 0 0 0-1h-4C.631 1 0 1.631 0 2.5v28c0 .869.631 1.5 1.5 1.5"></svg:path><svg:path d="M5.5 5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0-.5.5v24a.5.5 0 0 0 .5.5h21a.5.5 0 0 0 .5-.5v-24a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0 0 1H24v23H4V5z"></svg:path><svg:path d="M9 7h10c1.215 0 2-.785 2-2V.5a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5V5c0 1.215.785 2 2 2M8 1h12v4c0 .664-.337 1-1 1H9c-.663 0-1-.336-1-1zm.5 15h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1m0-4h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1m0 8h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1m0 4h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1"></svg:path></svg:g>`,
-})
-export class EtClipboardIcon {
-  readonly viewBox = input("0 0 28 32")
-  readonly width = input("0.88em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[etClockIcon],svg[et-clock-icon]',
   host: {
     role: 'img',
@@ -320,6 +303,23 @@ export class EtClipboardIcon {
 export class EtClockIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[etClipboardIcon],svg[et-clipboard-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M1.5 32h25c.869 0 1.5-.631 1.5-1.5v-28c0-.869-.631-1.5-1.5-1.5h-4a.5.5 0 0 0 0 1h4c.313 0 .5.187.5.5v28c0 .313-.187.5-.5.5h-25c-.313 0-.5-.187-.5-.5v-28c0-.313.187-.5.5-.5h4a.5.5 0 0 0 0-1h-4C.631 1 0 1.631 0 2.5v28c0 .869.631 1.5 1.5 1.5"></svg:path><svg:path d="M5.5 5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0-.5.5v24a.5.5 0 0 0 .5.5h21a.5.5 0 0 0 .5-.5v-24a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0 0 1H24v23H4V5z"></svg:path><svg:path d="M9 7h10c1.215 0 2-.785 2-2V.5a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5V5c0 1.215.785 2 2 2M8 1h12v4c0 .664-.337 1-1 1H9c-.663 0-1-.336-1-1zm.5 15h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1m0-4h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1m0 8h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1m0 4h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1"></svg:path></svg:g>`,
+})
+export class EtClipboardIcon {
+  readonly viewBox = input("0 0 28 32")
+  readonly width = input("0.88em")
   readonly height = input("1em")
 }
 

@@ -70,23 +70,6 @@ export class ElAdjustAltIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[elAlignCenterIcon],svg[el-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M290.625 99.202v178.006h618.75V99.202zm-164.063 274.53v178.006h946.875V373.732zm107.813 274.53v178.006h731.25V648.262zM0 922.792v178.006h1200V922.792z"></svg:path>`,
-})
-export class ElAlignCenterIcon {
-  readonly viewBox = input("0 0 1200 1200")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[elAdultIcon],svg[el-adult-icon]',
   host: {
     role: 'img',
@@ -121,6 +104,23 @@ export class ElAlignJustifyIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[elAlignCenterIcon],svg[el-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M290.625 99.202v178.006h618.75V99.202zm-164.063 274.53v178.006h946.875V373.732zm107.813 274.53v178.006h731.25V648.262zM0 922.792v178.006h1200V922.792z"></svg:path>`,
+})
+export class ElAlignCenterIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[elAlignLeftIcon],svg[el-align-left-icon]',
   host: {
     role: 'img',
@@ -131,40 +131,6 @@ export class ElAlignJustifyIcon {
   template: `<svg:path fill="currentColor" d="M618.75 99.202v178.006H0V99.202zm328.125 274.53v178.006H0V373.732zM731.25 648.262v178.006H0V648.262zM1200 922.792v178.006H0V922.792z"></svg:path>`,
 })
 export class ElAlignLeftIcon {
-  readonly viewBox = input("0 0 1200 1200")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[elAlignRightIcon],svg[el-align-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M581.25 99.202v178.006H1200V99.202zm-328.125 274.53v178.006H1200V373.732zm215.625 274.53v178.006H1200V648.262zM0 922.792v178.006h1200V922.792z"></svg:path>`,
-})
-export class ElAlignRightIcon {
-  readonly viewBox = input("0 0 1200 1200")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[elArrowDownIcon],svg[el-arrow-down-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M600 1200L131.25 496.875h252.539V0h432.422v496.875h252.539z"></svg:path>`,
-})
-export class ElArrowDownIcon {
   readonly viewBox = input("0 0 1200 1200")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,6 +155,40 @@ export class ElArrowLeftIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[elArrowDownIcon],svg[el-arrow-down-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M600 1200L131.25 496.875h252.539V0h432.422v496.875h252.539z"></svg:path>`,
+})
+export class ElArrowDownIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[elAlignRightIcon],svg[el-align-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M581.25 99.202v178.006H1200V99.202zm-328.125 274.53v178.006H1200V373.732zm215.625 274.53v178.006H1200V648.262zM0 922.792v178.006h1200V922.792z"></svg:path>`,
+})
+export class ElAlignRightIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[elArrowRightIcon],svg[el-arrow-right-icon]',
   host: {
     role: 'img',
@@ -206,23 +206,6 @@ export class ElArrowRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[elArrowUpIcon],svg[el-arrow-up-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M599.992 0L131.243 703.131h252.546V1200h432.422V703.131h252.546z"></svg:path>`,
-})
-export class ElArrowUpIcon {
-  readonly viewBox = input("0 0 1200 1200")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[elAslIcon],svg[el-asl-icon]',
   host: {
     role: 'img',
@@ -233,6 +216,23 @@ export class ElArrowUpIcon {
   template: `<svg:path fill="currentColor" d="M709.516.007c-.548.012-1.095.039-1.638.063c-32.364 1.444-64.713 31.739-70.976 91.666l-7.872 697.99c-5.189 125.227-142.08 167.029-205.81 97.117c-75.037 97.223-204.71 19.813-213.776-91.321c-14.126-83.898-28.781-167.831-41.943-251.815c-2.542-26.818 2.412-54.485 15.744-79.604l-65.591-225.719c-23.02-68.161-128.592-72.87-116.729 24.78l141.636 793.291c12.173 65.205 48.563 138.618 129.828 143.546h434.102c35.847 0 63.164-6.978 81.965-20.896c161.439-121.679 132.631-373.002 353.995-468.794c51.953-31.315 83.29-129 29.631-168.546c-88.635-79.617-317.355 62.572-357.144 205.92l-35.11-653.348C777.494 32.268 744.809.52 711.151.008a47 47 0 0 0-1.635-.001M490.48 388.319a89 89 0 0 0-7.872.438c-34.677 3.444-65.704 27.55-65.969 76.66l27.553 309.24c2.335 52.705 43.063 90.059 80.453 89.817c32.66-.21 62.783-29.105 62.505-101.565L576.632 458.9c-4.699-45.34-46.471-70.979-86.152-70.581m-198.41 68.452c-4.699.062-9.36.59-13.949 1.566c-33.287 7.082-61.577 38.259-54.255 94.517l44.588 266.164c11.993 43.965 41.719 60.28 69.023 54.637c30.867-6.381 58.643-40.821 54.255-95.081l-26.23-257.048c-6.894-43.325-40.535-65.194-73.432-64.755"></svg:path>`,
 })
 export class ElAslIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[elArrowUpIcon],svg[el-arrow-up-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M599.992 0L131.243 703.131h252.546V1200h432.422V703.131h252.546z"></svg:path>`,
+})
+export class ElArrowUpIcon {
   readonly viewBox = input("0 0 1200 1200")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,40 +274,6 @@ export class ElBackwardIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[elBarcodeIcon],svg[el-barcode-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M0 99.87v1000.26h100.26V99.87zm186.135 0v1000.26h24.089V99.87zm57.883 0v1000.26h76.219V99.87zm153.658 0v1000.26h32.525V99.87zm118.449 0v1000.26h24.041V99.87zm34.379 0v1000.26h99.626V99.87zm159.411 0v1000.26h50.18V99.87zm149.025 0v1000.26h11.118V99.87zm87.63 0v1000.26h33.501V99.87zm119.376 0v1000.26h24.09V99.87zm34.428 0v1000.26H1200V99.87z"></svg:path>`,
-})
-export class ElBarcodeIcon {
-  readonly viewBox = input("0 0 1200 1200")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[elBehanceIcon],svg[el-behance-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M0 0v1200h1200V0zm186.476 495.854H491.75c31.229.219 64.056 12.23 89.209 35.376c23.154 22.86 36.754 55.645 37.427 90.747c-.116 26.956-5.251 58.017-23.146 82.765c-12.504 16.834-32.084 29.562-53.686 36.841v2.856c22.748 5.689 45.174 17.843 61.157 37.939c19.012 24.585 25.514 57.747 26.074 90.381c-.228 34.622-12.213 71.699-39.038 99.169c-23.845 23.426-58.079 36.835-94.117 37.573H186.47V495.858zm534.96 1.026h227.048v84.228H721.436zm108.691 109.423c31.679.001 59.783 4.115 84.301 12.378c24.735 8.021 45.552 20.562 62.476 37.573c16.923 16.771 29.698 38.155 38.378 64.16c11.447 34.042 13.618 77.622 13.403 117.408H764.716c0 27.221 5.411 48.359 16.26 63.427c11.065 14.826 29.176 22.193 54.345 22.193c23.913-.112 51.923-7.78 61.158-34.645c2.387-7.048 3.588-14.538 3.589-22.558h128.613c-.267 40.87-13.426 81.462-47.899 111.548c-38.084 30.978-91.314 39.815-142.53 40.796c-31.68 0-60.311-3.991-85.913-12.012c-25.386-8.264-46.955-20.926-64.747-37.939s-31.469-38.397-41.016-64.16c-9.547-26.006-14.355-56.729-14.355-92.212c0-34.511 4.659-64.617 13.989-90.381c9.33-25.762 22.557-47.146 39.697-64.16c17.358-17.255 38.174-30.165 62.475-38.671c24.519-8.507 51.795-12.744 81.739-12.744zm-496.51 2.197v87.452h101.222c9.124-.07 17.806-4.249 24.39-11.646c6.394-7.785 9.528-18.041 9.741-28.784v-7.324c-.066-9.694-3.792-19.708-10.107-28.052c-5.739-6.779-14.348-11.156-24.023-11.646zm501.706 92.578c-22.349 0-39.032 5.962-50.097 17.87c-10.85 11.909-17.462 28.071-19.85 48.487h129.492c0-20.659-5.186-36.821-15.601-48.487c-10.413-11.908-25.068-17.87-43.944-17.87M333.617 802.079v87.817h111.914c9.021-.07 17.658-4.211 24.39-11.279c6.363-7.75 9.653-18.055 9.814-28.785v-7.69c-.058-9.781-3.229-19.984-9.814-28.417c-5.78-6.818-14.729-11.093-24.39-11.646z"></svg:path>`,
-})
-export class ElBehanceIcon {
-  readonly viewBox = input("0 0 1200 1200")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[elBanCircleIcon],svg[el-ban-circle-icon]',
   host: {
     role: 'img',
@@ -318,6 +284,23 @@ export class ElBehanceIcon {
   template: `<svg:path fill="currentColor" d="M1024.263 175.738c-234.317-234.317-614.192-234.317-848.525 0c-234.317 234.317-234.317 614.192 0 848.525c234.317 234.316 614.192 234.316 848.525 0c234.316-234.318 234.316-614.193 0-848.525m-163.489 57.44L233.193 860.743c-125.257-175.737-109.044-421.274 48.624-578.942s403.219-173.881 578.942-48.624zm106.064 106.048c125.248 175.738 109.031 421.29-48.654 578.942c-157.652 157.683-403.205 173.911-578.942 48.639l627.581-627.581z"></svg:path>`,
 })
 export class ElBanCircleIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[elBarcodeIcon],svg[el-barcode-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 99.87v1000.26h100.26V99.87zm186.135 0v1000.26h24.089V99.87zm57.883 0v1000.26h76.219V99.87zm153.658 0v1000.26h32.525V99.87zm118.449 0v1000.26h24.041V99.87zm34.379 0v1000.26h99.626V99.87zm159.411 0v1000.26h50.18V99.87zm149.025 0v1000.26h11.118V99.87zm87.63 0v1000.26h33.501V99.87zm119.376 0v1000.26h24.09V99.87zm34.428 0v1000.26H1200V99.87z"></svg:path>`,
+})
+export class ElBarcodeIcon {
   readonly viewBox = input("0 0 1200 1200")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5163,6 +5146,23 @@ export class ElZoomInIcon {
   template: `<svg:path fill="currentColor" d="M1200 1066.325L978.182 844.507c60.81-87.068 96.743-192.795 96.743-307.044C1074.925 240.629 834.219 0 537.463 0S0 240.629 0 537.463c0 296.832 240.629 537.462 537.463 537.462c114.249 0 220.052-35.933 307.121-96.743L1066.402 1200zM537.386 921.44c-211.99 0-383.902-171.834-383.902-383.901s171.912-383.901 383.902-383.901c212.067 0 383.901 171.834 383.901 383.901c.078 212.067-171.757 383.901-383.901 383.901M307.045 614.243h460.682V460.682H307.045z"></svg:path>`,
 })
 export class ElZoomOutIcon {
+  readonly viewBox = input("0 0 1200 1200")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[elBehanceIcon],svg[el-behance-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 0v1200h1200V0zm186.476 495.854H491.75c31.229.219 64.056 12.23 89.209 35.376c23.154 22.86 36.754 55.645 37.427 90.747c-.116 26.956-5.251 58.017-23.146 82.765c-12.504 16.834-32.084 29.562-53.686 36.841v2.856c22.748 5.689 45.174 17.843 61.157 37.939c19.012 24.585 25.514 57.747 26.074 90.381c-.228 34.622-12.213 71.699-39.038 99.169c-23.845 23.426-58.079 36.835-94.117 37.573H186.47V495.858zm534.96 1.026h227.048v84.228H721.436zm108.691 109.423c31.679.001 59.783 4.115 84.301 12.378c24.735 8.021 45.552 20.562 62.476 37.573c16.923 16.771 29.698 38.155 38.378 64.16c11.447 34.042 13.618 77.622 13.403 117.408H764.716c0 27.221 5.411 48.359 16.26 63.427c11.065 14.826 29.176 22.193 54.345 22.193c23.913-.112 51.923-7.78 61.158-34.645c2.387-7.048 3.588-14.538 3.589-22.558h128.613c-.267 40.87-13.426 81.462-47.899 111.548c-38.084 30.978-91.314 39.815-142.53 40.796c-31.68 0-60.311-3.991-85.913-12.012c-25.386-8.264-46.955-20.926-64.747-37.939s-31.469-38.397-41.016-64.16c-9.547-26.006-14.355-56.729-14.355-92.212c0-34.511 4.659-64.617 13.989-90.381c9.33-25.762 22.557-47.146 39.697-64.16c17.358-17.255 38.174-30.165 62.475-38.671c24.519-8.507 51.795-12.744 81.739-12.744zm-496.51 2.197v87.452h101.222c9.124-.07 17.806-4.249 24.39-11.646c6.394-7.785 9.528-18.041 9.741-28.784v-7.324c-.066-9.694-3.792-19.708-10.107-28.052c-5.739-6.779-14.348-11.156-24.023-11.646zm501.706 92.578c-22.349 0-39.032 5.962-50.097 17.87c-10.85 11.909-17.462 28.071-19.85 48.487h129.492c0-20.659-5.186-36.821-15.601-48.487c-10.413-11.908-25.068-17.87-43.944-17.87M333.617 802.079v87.817h111.914c9.021-.07 17.658-4.211 24.39-11.279c6.363-7.75 9.653-18.055 9.814-28.785v-7.69c-.058-9.781-3.229-19.984-9.814-28.417c-5.78-6.818-14.729-11.093-24.39-11.646z"></svg:path>`,
+})
+export class ElBehanceIcon {
   readonly viewBox = input("0 0 1200 1200")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -19,23 +19,6 @@ export class OiAccountLoginIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oiAccountLogoutIcon],svg[oi-account-logout-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 0v1h4v5H3v1h5V0zM2 2L0 3.5L2 5V4h4V3H2z"></svg:path>`,
-})
-export class OiAccountLogoutIcon {
-  readonly viewBox = input("0 0 8 8")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[oiActionRedoIcon],svg[oi-action-redo-icon]',
   host: {
     role: 'img',
@@ -46,6 +29,23 @@ export class OiAccountLogoutIcon {
   template: `<svg:path fill="currentColor" d="M3.5 1C1.57 1 0 2.57 0 4.5a2.5 2.5 0 0 1 5 0V5H4l2 2l2-2H7v-.5C7 2.57 5.43 1 3.5 1"></svg:path>`,
 })
 export class OiActionRedoIcon {
+  readonly viewBox = input("0 0 8 8")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oiAccountLogoutIcon],svg[oi-account-logout-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 0v1h4v5H3v1h5V0zM2 2L0 3.5L2 5V4h4V3H2z"></svg:path>`,
+})
+export class OiAccountLogoutIcon {
   readonly viewBox = input("0 0 8 8")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,23 +104,6 @@ export class OiAlignLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oiAlignRightIcon],svg[oi-align-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M0 0v1h8V0zm2 2v1h6V2zM0 4v1h8V4zm2 2v1h6V6z"></svg:path>`,
-})
-export class OiAlignRightIcon {
-  readonly viewBox = input("0 0 8 8")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[oiApertureIcon],svg[oi-aperture-icon]',
   host: {
     role: 'img',
@@ -138,23 +121,6 @@ export class OiApertureIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oiArrowBottomIcon],svg[oi-arrow-bottom-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 0v5H1l2.53 3L6 5H4V0z"></svg:path>`,
-})
-export class OiArrowBottomIcon {
-  readonly viewBox = input("0 0 8 8")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[oiArrowCircleBottomIcon],svg[oi-arrow-circle-bottom-icon]',
   host: {
     role: 'img',
@@ -165,6 +131,40 @@ export class OiArrowBottomIcon {
   template: `<svg:path fill="currentColor" d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4M3 1h2v3h2L4 7L1 4h2z"></svg:path>`,
 })
 export class OiArrowCircleBottomIcon {
+  readonly viewBox = input("0 0 8 8")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oiAlignRightIcon],svg[oi-align-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 0v1h8V0zm2 2v1h6V2zM0 4v1h8V4zm2 2v1h6V6z"></svg:path>`,
+})
+export class OiAlignRightIcon {
+  readonly viewBox = input("0 0 8 8")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oiArrowBottomIcon],svg[oi-arrow-bottom-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 0v5H1l2.53 3L6 5H4V0z"></svg:path>`,
+})
+export class OiArrowBottomIcon {
   readonly viewBox = input("0 0 8 8")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,23 +206,6 @@ export class OiArrowCircleRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oiArrowLeftIcon],svg[oi-arrow-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 1L0 3.53L3 6V4h5V3H3z"></svg:path>`,
-})
-export class OiArrowLeftIcon {
-  readonly viewBox = input("0 0 8 8")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[oiArrowCircleTopIcon],svg[oi-arrow-circle-top-icon]',
   host: {
     role: 'img',
@@ -233,6 +216,23 @@ export class OiArrowLeftIcon {
   template: `<svg:path fill="currentColor" d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4m0 1l3 3H5v3H3V4H1z"></svg:path>`,
 })
 export class OiArrowCircleTopIcon {
+  readonly viewBox = input("0 0 8 8")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oiArrowLeftIcon],svg[oi-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 1L0 3.53L3 6V4h5V3H3z"></svg:path>`,
+})
+export class OiArrowLeftIcon {
   readonly viewBox = input("0 0 8 8")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,6 +257,23 @@ export class OiArrowRightIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[oiArrowThickLeftIcon],svg[oi-arrow-thick-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 1L0 4.03L3 7V5h5V3H3z"></svg:path>`,
+})
+export class OiArrowThickLeftIcon {
+  readonly viewBox = input("0 0 8 8")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[oiArrowThickBottomIcon],svg[oi-arrow-thick-bottom-icon]',
   host: {
     role: 'img',
@@ -274,16 +291,16 @@ export class OiArrowThickBottomIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oiArrowThickLeftIcon],svg[oi-arrow-thick-left-icon]',
+  selector: 'svg[oiArrowThickTopIcon],svg[oi-arrow-thick-top-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M3 1L0 4.03L3 7V5h5V3H3z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M3.97 0L1 3h2v5h2V3h2z"></svg:path>`,
 })
-export class OiArrowThickLeftIcon {
+export class OiArrowThickTopIcon {
   readonly viewBox = input("0 0 8 8")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -3769,23 +3786,6 @@ export class OiZoomInIcon {
   template: `<svg:path fill="currentColor" d="M3.5 0C1.57 0 0 1.57 0 3.5S1.57 7 3.5 7c.61 0 1.19-.16 1.69-.44a1 1 0 0 0 .09.13l1 1.03a1.02 1.02 0 1 0 1.44-1.44l-1.03-1a1 1 0 0 0-.13-.09c.27-.5.44-1.08.44-1.69C7 1.57 5.43 0 3.5 0m0 1C4.89 1 6 2.11 6 3.5c0 .59-.2 1.14-.53 1.56l-.03.03l-.06.03a1 1 0 0 0-.25.28c-.44.37-1.01.59-1.63.59c-1.39 0-2.5-1.11-2.5-2.5S2.11.99 3.5.99zM2 3v1h3V3z"></svg:path>`,
 })
 export class OiZoomOutIcon {
-  readonly viewBox = input("0 0 8 8")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[oiArrowThickTopIcon],svg[oi-arrow-thick-top-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.97 0L1 3h2v5h2V3h2z"></svg:path>`,
-})
-export class OiArrowThickTopIcon {
   readonly viewBox = input("0 0 8 8")
   readonly width = input("1em")
   readonly height = input("1em")

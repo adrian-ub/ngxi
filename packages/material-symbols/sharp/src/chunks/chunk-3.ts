@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsHdrOffSelectSharpIcon],svg[material-symbols-hdr-off-select-sharp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20.5 22v-2h-2v-1.5h2v-2H22v2h2V20h-2v2zM13 22v-6h5v3.9h-.9L18 22h-1.5l-.9-2h-1.1v2zm1.5-3.5h2v-1h-2zM0 22v-6h1.5v2h2v-2H5v6H3.5v-2.5h-2V22zm6.5 0v-6h4.25l.75.75v4.5l-.75.75zM8 20.5h2v-3H8zm9.4-9.9l-8-8.05q.65-.3 1.3-.425T12 2q2.5 0 4.25 1.75T18 8q0 .65-.15 1.3t-.45 1.3m-1.15 4.45L14.6 13.4q-.575.3-1.262.45T12 14q-2.5 0-4.25-1.75T6 8q0-.725.15-1.375T6.6 5.4L4.95 3.75l1.4-1.4l11.3 11.3z"></svg:path>`,
+})
+export class MaterialSymbolsHdrOffSelectSharpIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsHdrOffSharpIcon],svg[material-symbols-hdr-off-sharp-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsMovieInfoSharpIcon {
   template: `<svg:path fill="currentColor" d="M2 20V4h2l6 6H4v8h14l2 2zm20-.875l-2-2V10h-7.15l-6-6H8.5l1.675 3.325l.675.675h2.65l-2-4H14l2 4h3l-2-4h5zm-2.225 3.5l-18.4-18.4L2.8 2.8l18.4 18.4zm-3.35-9.075"></svg:path>`,
 })
 export class MaterialSymbolsMovieOffOutlineSharpIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsMovieOffSharpIcon],svg[material-symbols-movie-off-sharp-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2 20V4h2l16 16zm20-.875L6.85 4H8.5l1.675 3.325l.675.675h2.65l-2-4H14l2 4h3l-2-4h5zm-2.225 3.5l-18.4-18.4L2.8 2.8l18.4 18.4z"></svg:path>`,
-})
-export class MaterialSymbolsMovieOffSharpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

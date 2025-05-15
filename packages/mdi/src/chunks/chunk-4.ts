@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[mdiCloudUploadIcon],svg[mdi-cloud-upload-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11 20H6.5q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48q1.18-1.53 3.08-1.95q.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5q1.14 1.28 1.14 3q0 1.88-1.31 3.19T18.5 20H13v-7.15l1.6 1.55L16 13l-4-4l-4 4l1.4 1.4l1.6-1.55Z"></svg:path>`,
-})
-export class MdiCloudUploadIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mdiCloudUploadOutlineIcon],svg[mdi-cloud-upload-outline-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MdiDiskIcon {
   template: `<svg:path d="M10 13.998a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm0-10a8 8 0 1 0 0 16a8 8 0 0 0 0-16zm10 8h2v-5h-2m0 9h2v-2h-2v2z" fill="currentColor"></svg:path>`,
 })
 export class MdiDiskAlertIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiDiskPlayerIcon],svg[mdi-disk-player-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M14.499 10.374a1.876 1.876 0 0 0 1.876-1.876A1.873 1.873 0 0 0 14.5 6.626a1.872 1.872 0 0 0-1.873 1.872c0 1.034.838 1.876 1.873 1.876zm0-9.374a7.5 7.5 0 0 1 5.1 13H9.401A7.499 7.499 0 0 1 14.5 1zM6 21v1H4v-1H2v-6h20v6h-2v1h-2v-1H6zm-2-3v1h9v-1H4zm11-1v2h2v-2h-2zm4 0a1 1 0 1 0 0 2a1 1 0 0 0 0-2z" fill="currentColor"></svg:path>`,
+})
+export class MdiDiskPlayerIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

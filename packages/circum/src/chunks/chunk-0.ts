@@ -70,16 +70,16 @@ export class CircumAlignBottomIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[circumAlignCenterVIcon],svg[circum-align-center-v-icon]',
+  selector: 'svg[circumAlignCenterHIcon],svg[circum-align-center-h-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M20.446 11.5h-.51V9.07a2.5 2.5 0 0 0-2.5-2.5h-2.43a2.5 2.5 0 0 0-2.5 2.5v2.43H11.5V6.58A2.5 2.5 0 0 0 9 4.08H6.566a2.5 2.5 0 0 0-2.5 2.5v4.92h-.52a.5.5 0 0 0 0 1h.52v4.92a2.5 2.5 0 0 0 2.5 2.5H9a2.5 2.5 0 0 0 2.5-2.5V12.5h1.01v2.43a2.5 2.5 0 0 0 2.5 2.5h2.43a2.5 2.5 0 0 0 2.5-2.5V12.5h.51a.5.5 0 0 0-.004-1M10.5 17.42a1.5 1.5 0 0 1-1.5 1.5H6.566a1.5 1.5 0 0 1-1.5-1.5V12.5H10.5Zm0-5.92H5.066V6.58a1.5 1.5 0 0 1 1.5-1.5H9a1.5 1.5 0 0 1 1.5 1.5Zm8.44 3.43a1.5 1.5 0 0 1-1.5 1.5h-2.43a1.5 1.5 0 0 1-1.5-1.5V12.5h5.43Zm0-3.43h-5.43V9.07a1.5 1.5 0 0 1 1.5-1.5h2.43a1.5 1.5 0 0 1 1.5 1.5Z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M17.42 4.062H12.5v-.51a.5.5 0 0 0-1 0v.51H6.58a2.507 2.507 0 0 0-2.5 2.5V9a2.5 2.5 0 0 0 2.5 2.5h4.92v1H9.06a2.507 2.507 0 0 0-2.5 2.5v2.44a2.507 2.507 0 0 0 2.5 2.5h2.44v.51a.5.5 0 0 0 1 0v-.51h2.43a2.5 2.5 0 0 0 2.5-2.5V15a2.5 2.5 0 0 0-2.5-2.5H12.5v-1h4.92a2.5 2.5 0 0 0 2.5-2.5V6.562a2.507 2.507 0 0 0-2.5-2.5m-5.92 14.88H9.06a1.51 1.51 0 0 1-1.5-1.5V15a1.5 1.5 0 0 1 1.5-1.5h2.44Zm0-8.44H6.58A1.5 1.5 0 0 1 5.08 9V6.562a1.5 1.5 0 0 1 1.5-1.5h4.92Zm3.43 3a1.5 1.5 0 0 1 1.5 1.5v2.44a1.5 1.5 0 0 1-1.5 1.5H12.5V13.5ZM18.92 9a1.5 1.5 0 0 1-1.5 1.5H12.5V5.062h4.92a1.5 1.5 0 0 1 1.5 1.5Z"></svg:path>`,
 })
-export class CircumAlignCenterVIcon {
+export class CircumAlignCenterHIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,16 +104,16 @@ export class CircumAlignLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[circumAlignCenterHIcon],svg[circum-align-center-h-icon]',
+  selector: 'svg[circumAlignCenterVIcon],svg[circum-align-center-v-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M17.42 4.062H12.5v-.51a.5.5 0 0 0-1 0v.51H6.58a2.507 2.507 0 0 0-2.5 2.5V9a2.5 2.5 0 0 0 2.5 2.5h4.92v1H9.06a2.507 2.507 0 0 0-2.5 2.5v2.44a2.507 2.507 0 0 0 2.5 2.5h2.44v.51a.5.5 0 0 0 1 0v-.51h2.43a2.5 2.5 0 0 0 2.5-2.5V15a2.5 2.5 0 0 0-2.5-2.5H12.5v-1h4.92a2.5 2.5 0 0 0 2.5-2.5V6.562a2.507 2.507 0 0 0-2.5-2.5m-5.92 14.88H9.06a1.51 1.51 0 0 1-1.5-1.5V15a1.5 1.5 0 0 1 1.5-1.5h2.44Zm0-8.44H6.58A1.5 1.5 0 0 1 5.08 9V6.562a1.5 1.5 0 0 1 1.5-1.5h4.92Zm3.43 3a1.5 1.5 0 0 1 1.5 1.5v2.44a1.5 1.5 0 0 1-1.5 1.5H12.5V13.5ZM18.92 9a1.5 1.5 0 0 1-1.5 1.5H12.5V5.062h4.92a1.5 1.5 0 0 1 1.5 1.5Z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M20.446 11.5h-.51V9.07a2.5 2.5 0 0 0-2.5-2.5h-2.43a2.5 2.5 0 0 0-2.5 2.5v2.43H11.5V6.58A2.5 2.5 0 0 0 9 4.08H6.566a2.5 2.5 0 0 0-2.5 2.5v4.92h-.52a.5.5 0 0 0 0 1h.52v4.92a2.5 2.5 0 0 0 2.5 2.5H9a2.5 2.5 0 0 0 2.5-2.5V12.5h1.01v2.43a2.5 2.5 0 0 0 2.5 2.5h2.43a2.5 2.5 0 0 0 2.5-2.5V12.5h.51a.5.5 0 0 0-.004-1M10.5 17.42a1.5 1.5 0 0 1-1.5 1.5H6.566a1.5 1.5 0 0 1-1.5-1.5V12.5H10.5Zm0-5.92H5.066V6.58a1.5 1.5 0 0 1 1.5-1.5H9a1.5 1.5 0 0 1 1.5 1.5Zm8.44 3.43a1.5 1.5 0 0 1-1.5 1.5h-2.43a1.5 1.5 0 0 1-1.5-1.5V12.5h5.43Zm0-3.43h-5.43V9.07a1.5 1.5 0 0 1 1.5-1.5h2.43a1.5 1.5 0 0 1 1.5 1.5Z"></svg:path>`,
 })
-export class CircumAlignCenterHIcon {
+export class CircumAlignCenterVIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,23 +274,6 @@ export class CircumBandageIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[circumBarcodeIcon],svg[circum-barcode-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.066 4.065H3.648a1.73 1.73 0 0 0-.963.189a1.37 1.37 0 0 0-.619 1.226v4.585a.5.5 0 0 0 1 0v-4.28a1.8 1.8 0 0 1 .014-.518c.077-.236.319-.2.514-.2h4.472a.5.5 0 0 0 0-1Zm-6.003 9.872v4.418a1.73 1.73 0 0 0 .189.963a1.37 1.37 0 0 0 1.227.619h4.584a.5.5 0 0 0 0-1h-4.28a1.8 1.8 0 0 1-.518-.014c-.236-.077-.2-.319-.2-.514v-4.472a.5.5 0 0 0-1 0Zm13.871 5.998h4.418a1.73 1.73 0 0 0 .963-.189a1.37 1.37 0 0 0 .619-1.226v-4.585a.5.5 0 0 0-1 0v4.28a1.8 1.8 0 0 1-.014.518c-.077.236-.319.2-.514.2h-4.472a.5.5 0 0 0 0 1Zm6.003-9.872V5.645a1.73 1.73 0 0 0-.189-.963a1.37 1.37 0 0 0-1.227-.619h-4.584a.5.5 0 0 0 0 1h4.28a1.8 1.8 0 0 1 .518.014c.236.077.2.319.2.514v4.472a.5.5 0 0 0 1 0Z"></svg:path><svg:rect width="1" height="8.709" x="10.999" y="7.643" fill="currentColor" rx=".5"></svg:rect><svg:rect width="1" height="8.709" x="14.249" y="7.643" fill="currentColor" rx=".5"></svg:rect><svg:rect width="1" height="8.709" x="16.499" y="7.643" fill="currentColor" rx=".5"></svg:rect><svg:rect width="1" height="8.709" x="6.499" y="7.643" fill="currentColor" rx=".5"></svg:rect><svg:rect width="1.5" height="8.709" x="8.499" y="7.643" fill="currentColor" rx=".75"></svg:rect>`,
-})
-export class CircumBarcodeIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[circumBankIcon],svg[circum-bank-icon]',
   host: {
     role: 'img',
@@ -301,6 +284,23 @@ export class CircumBarcodeIcon {
   template: `<svg:path fill="currentColor" d="M19.505 17.943v-7.581a1.49 1.49 0 0 0 1.39-1.12a1.47 1.47 0 0 0-.7-1.68l-7.45-4.3a1.52 1.52 0 0 0-1.49 0l-7.45 4.3a1.47 1.47 0 0 0-.7 1.68a1.49 1.49 0 0 0 1.45 1.12h.13v7.57h-.12a1.5 1.5 0 0 0 0 3h14.87a1.5 1.5 0 0 0 .07-2.989M4.555 9.362a.505.505 0 0 1-.25-.94l7.45-4.289a.47.47 0 0 1 .49 0L19.7 8.422a.5.5 0 0 1-.25.94Zm13.95 1v7.57H14.9v-7.57Zm-4.61 0v7.57h-3.61v-7.57Zm-4.61 0v7.57h-3.6v-7.57Zm10.15 9.57H4.565a.5.5 0 0 1-.5-.5a.5.5 0 0 1 .5-.5h14.87a.5.5 0 0 1 .5.5a.5.5 0 0 1-.5.5"></svg:path>`,
 })
 export class CircumBankIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[circumBarcodeIcon],svg[circum-barcode-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.066 4.065H3.648a1.73 1.73 0 0 0-.963.189a1.37 1.37 0 0 0-.619 1.226v4.585a.5.5 0 0 0 1 0v-4.28a1.8 1.8 0 0 1 .014-.518c.077-.236.319-.2.514-.2h4.472a.5.5 0 0 0 0-1Zm-6.003 9.872v4.418a1.73 1.73 0 0 0 .189.963a1.37 1.37 0 0 0 1.227.619h4.584a.5.5 0 0 0 0-1h-4.28a1.8 1.8 0 0 1-.518-.014c-.236-.077-.2-.319-.2-.514v-4.472a.5.5 0 0 0-1 0Zm13.871 5.998h4.418a1.73 1.73 0 0 0 .963-.189a1.37 1.37 0 0 0 .619-1.226v-4.585a.5.5 0 0 0-1 0v4.28a1.8 1.8 0 0 1-.014.518c-.077.236-.319.2-.514.2h-4.472a.5.5 0 0 0 0 1Zm6.003-9.872V5.645a1.73 1.73 0 0 0-.189-.963a1.37 1.37 0 0 0-1.227-.619h-4.584a.5.5 0 0 0 0 1h4.28a1.8 1.8 0 0 1 .518.014c.236.077.2.319.2.514v4.472a.5.5 0 0 0 1 0Z"></svg:path><svg:rect width="1" height="8.709" x="10.999" y="7.643" fill="currentColor" rx=".5"></svg:rect><svg:rect width="1" height="8.709" x="14.249" y="7.643" fill="currentColor" rx=".5"></svg:rect><svg:rect width="1" height="8.709" x="16.499" y="7.643" fill="currentColor" rx=".5"></svg:rect><svg:rect width="1" height="8.709" x="6.499" y="7.643" fill="currentColor" rx=".5"></svg:rect><svg:rect width="1.5" height="8.709" x="8.499" y="7.643" fill="currentColor" rx=".75"></svg:rect>`,
+})
+export class CircumBarcodeIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

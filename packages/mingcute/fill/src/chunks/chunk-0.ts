@@ -19,23 +19,6 @@ export class MingcuteAbsFillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[mingcuteAdCircleOffFillIcon],svg[mingcute-ad-circle-off-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="m3.13 7.378l3.396 3.396l-.996 3.984a1 1 0 0 0 1.905.596l.035-.111L7.78 14h1.972l.623.624l.155.618a1 1 0 0 0 1.082.752l.114-.02l4.896 4.896A9.96 9.96 0 0 1 12 22C6.477 22 2 17.523 2 12c0-1.54.348-2.997.969-4.3zM12 2c5.523 0 10 4.477 10 10a9.96 9.96 0 0 1-2.05 6.067l-.207.262l.964.964a1 1 0 0 1-1.32 1.497l-.094-.083l-16-16a1 1 0 0 1 1.32-1.497l.094.083l.964.964A9.96 9.96 0 0 1 12 2m4 6h-2a1 1 0 0 0-1 1v2.586l2 2V10h1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-.586l1.761 1.761A3 3 0 0 0 19 13v-2a3 3 0 0 0-3-3m-6.575.01l1.811 1.812l-.077-.307A2 2 0 0 0 9.426 8.01"></svg:path></svg:g>`,
-})
-export class MingcuteAdCircleOffFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mingcuteAdCircleFillIcon],svg[mingcute-ad-circle-fill-icon]',
   host: {
     role: 'img',
@@ -46,6 +29,23 @@ export class MingcuteAdCircleOffFillIcon {
   template: `<svg:g fill="none"><svg:path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2M9.22 8h-.44a2 2 0 0 0-1.94 1.515l-1.31 5.243a1 1 0 1 0 1.94.485L7.78 14h2.44l.31 1.242a1 1 0 1 0 1.94-.485l-1.31-5.242A2 2 0 0 0 9.22 8M16 8h-2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2a3 3 0 0 0 3-3v-2a3 3 0 0 0-3-3m0 2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-1v-4zm-6.78 0l.5 2H8.28l.5-2z"></svg:path></svg:g>`,
 })
 export class MingcuteAdCircleFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mingcuteAdCircleOffFillIcon],svg[mingcute-ad-circle-off-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none"><svg:path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="m3.13 7.378l3.396 3.396l-.996 3.984a1 1 0 0 0 1.905.596l.035-.111L7.78 14h1.972l.623.624l.155.618a1 1 0 0 0 1.082.752l.114-.02l4.896 4.896A9.96 9.96 0 0 1 12 22C6.477 22 2 17.523 2 12c0-1.54.348-2.997.969-4.3zM12 2c5.523 0 10 4.477 10 10a9.96 9.96 0 0 1-2.05 6.067l-.207.262l.964.964a1 1 0 0 1-1.32 1.497l-.094-.083l-16-16a1 1 0 0 1 1.32-1.497l.094.083l.964.964A9.96 9.96 0 0 1 12 2m4 6h-2a1 1 0 0 0-1 1v2.586l2 2V10h1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-.586l1.761 1.761A3 3 0 0 0 19 13v-2a3 3 0 0 0-3-3m-6.575.01l1.811 1.812l-.077-.307A2 2 0 0 0 9.426 8.01"></svg:path></svg:g>`,
+})
+export class MingcuteAdCircleOffFillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,23 +121,6 @@ export class MingcuteAddFillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[mingcuteAerialLiftFillIcon],svg[mingcute-aerial-lift-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M19.997 2.929a1 1 0 0 1-.926 1.069L13 4.43V7h3.382a2 2 0 0 1 1.789 1.106l2.027 4.055a5 5 0 0 1 .336 3.61l-1.365 4.778A2 2 0 0 1 17.246 22H6.754a2 2 0 0 1-1.923-1.45l-1.365-4.78a5 5 0 0 1 .335-3.609L5.83 8.106A2 2 0 0 1 7.618 7H11V4.574l-5.929.423a1 1 0 1 1-.142-1.994l14-1a1 1 0 0 1 1.068.926M7.617 9l-2 4h12.765l-2-4H7.618Z"></svg:path></svg:g>`,
-})
-export class MingcuteAerialLiftFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mingcuteAddSquareFillIcon],svg[mingcute-add-square-fill-icon]',
   host: {
     role: 'img',
@@ -148,6 +131,23 @@ export class MingcuteAerialLiftFillIcon {
   template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm4 7a1 1 0 0 1 1-1h3V8a1 1 0 1 1 2 0v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H8a1 1 0 0 1-1-1"></svg:path></svg:g>`,
 })
 export class MingcuteAddSquareFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mingcuteAerialLiftFillIcon],svg[mingcute-aerial-lift-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" fill-rule="evenodd"><svg:path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></svg:path><svg:path fill="currentColor" d="M19.997 2.929a1 1 0 0 1-.926 1.069L13 4.43V7h3.382a2 2 0 0 1 1.789 1.106l2.027 4.055a5 5 0 0 1 .336 3.61l-1.365 4.778A2 2 0 0 1 17.246 22H6.754a2 2 0 0 1-1.923-1.45l-1.365-4.78a5 5 0 0 1 .335-3.609L5.83 8.106A2 2 0 0 1 7.618 7H11V4.574l-5.929.423a1 1 0 1 1-.142-1.994l14-1a1 1 0 0 1 1.068.926M7.617 9l-2 4h12.765l-2-4H7.618Z"></svg:path></svg:g>`,
+})
+export class MingcuteAerialLiftFillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

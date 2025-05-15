@@ -36,23 +36,6 @@ export class OouiAlertIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oouiAlignCenterIcon],svg[ooui-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1 15h18v2H1zM1 3h18v2H1z"></svg:path><svg:rect width="8" height="6" x="6" y="7" fill="currentColor" rx="1"></svg:rect>`,
-})
-export class OouiAlignCenterIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[oouiAlignLeftIcon],svg[ooui-align-left-icon]',
   host: {
     role: 'img',
@@ -63,6 +46,23 @@ export class OouiAlignCenterIcon {
   template: `<svg:path fill="currentColor" d="M12 7h7v2h-7zm0 4h7v2h-7zM1 15h18v2H1zM1 3h18v2H1z"></svg:path><svg:rect width="8" height="6" x="1" y="7" fill="currentColor" rx="1"></svg:rect>`,
 })
 export class OouiAlignLeftIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oouiAlignCenterIcon],svg[ooui-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 15h18v2H1zM1 3h18v2H1z"></svg:path><svg:rect width="8" height="6" x="6" y="7" fill="currentColor" rx="1"></svg:rect>`,
+})
+export class OouiAlignCenterIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,23 +104,6 @@ export class OouiAppearanceIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oouiArrowNextLtrIcon],svg[ooui-arrow-next-ltr-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.6 3.4L14.2 9H2v2h12.2l-5.6 5.6L10 18l8-8l-8-8z"></svg:path>`,
-})
-export class OouiArrowNextLtrIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[oouiArrowDownIcon],svg[ooui-arrow-down-icon]',
   host: {
     role: 'img',
@@ -131,6 +114,23 @@ export class OouiArrowNextLtrIcon {
   template: `<svg:path fill="currentColor" d="m2 10l1.42-1.41L9 14.17V2h2v12.17l5.59-5.58L18 10l-8 8z"></svg:path>`,
 })
 export class OouiArrowDownIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oouiArrowNextLtrIcon],svg[ooui-arrow-next-ltr-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.6 3.4L14.2 9H2v2h12.2l-5.6 5.6L10 18l8-8l-8-8z"></svg:path>`,
+})
+export class OouiArrowNextLtrIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,23 +189,6 @@ export class OouiArrowPreviousRtlIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oouiArticleAddIcon],svg[ooui-article-add-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 1c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm10 10h-4v4H9v-4H5V9h4V5h2v4h4z"></svg:path>`,
-})
-export class OouiArticleAddIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[oouiArrowUpIcon],svg[ooui-arrow-up-icon]',
   host: {
     role: 'img',
@@ -216,6 +199,23 @@ export class OouiArticleAddIcon {
   template: `<svg:path fill="currentColor" d="m2 10l1.42 1.41L9 5.83V18h2V5.83l5.59 5.58L18 10l-8-8z"></svg:path>`,
 })
 export class OouiArrowUpIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oouiArticleAddIcon],svg[ooui-article-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 1c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm10 10h-4v4H9v-4H5V9h4V5h2v4h4z"></svg:path>`,
+})
+export class OouiArticleAddIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,23 +274,6 @@ export class OouiArticleDisambiguationRtlIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[oouiArticleLtrIcon],svg[ooui-article-ltr-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 1a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm0 3h5v1H5zm0 2h5v1H5zm0 2h5v1H5zm10 7H5v-1h10zm0-2H5v-1h10zm0-2H5v-1h10zm0-2h-4V4h4z"></svg:path>`,
-})
-export class OouiArticleLtrIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[oouiArticleNotFoundLtrIcon],svg[ooui-article-not-found-ltr-icon]',
   host: {
     role: 'img',
@@ -301,6 +284,23 @@ export class OouiArticleLtrIcon {
   template: `<svg:path fill="currentColor" d="M15 1H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2m-4 15H9v-2h2zm2.7-7.6a5 5 0 0 1-.3.7a2.7 2.7 0 0 1-.5.6l-.5.5a2.7 2.7 0 0 1-.6.5c-.2.2-.3.4-.5.6a1.9 1.9 0 0 0-.3.8a3.4 3.4 0 0 0-.1 1H9.1a5 5 0 0 1 .1-1.2a3 3 0 0 1 .2-.9a2.5 2.5 0 0 1 .4-.7l.6-.6a1.8 1.8 0 0 1 .5-.4c.2-.1.3-.3.4-.4l.3-.6a1.7 1.7 0 0 0 .1-.7a3 3 0 0 0-.2-.9a2.2 2.2 0 0 0-1-.9a.9.9 0 0 0-.5-.1a1.68 1.68 0 0 0-1.5.7A2.86 2.86 0 0 0 8 8.1H6.2a5.1 5.1 0 0 1 .3-1.7a3.5 3.5 0 0 1 .8-1.3a3.6 3.6 0 0 1 1.2-.8a5.1 5.1 0 0 1 1.7-.3a6 6 0 0 1 1.4.2a2.6 2.6 0 0 1 1.1.7a4.4 4.4 0 0 1 .8 1.1a4 4 0 0 1 .3 1.5a3 3 0 0 1-.1.9"></svg:path>`,
 })
 export class OouiArticleNotFoundLtrIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oouiArticleLtrIcon],svg[ooui-article-ltr-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 1a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm0 3h5v1H5zm0 2h5v1H5zm0 2h5v1H5zm10 7H5v-1h10zm0-2H5v-1h10zm0-2H5v-1h10zm0-2h-4V4h4z"></svg:path>`,
+})
+export class OouiArticleLtrIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -2919,6 +2919,23 @@ export class OouiLogOutRtlIcon {
   template: `<svg:path fill="currentColor" d="M10 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m0-18A9.94 9.94 0 0 0 0 10a9.94 9.94 0 0 0 10 10a9.94 9.94 0 0 0 10-10A9.94 9.94 0 0 0 10 0"></svg:path><svg:path fill="currentColor" d="M13.49 11.67c-1 0-1.43-.57-1.43-1.71s.43-1.71 1.43-1.71c.57 0 .86.29 1.14.86l1.29-.71A2.8 2.8 0 0 0 13.2 7a2.9 2.9 0 0 0-2.14.86A2.7 2.7 0 0 0 10.2 10a3 3 0 0 0 .86 2.29a2.9 2.9 0 0 0 2.14.86a3.24 3.24 0 0 0 2.71-1.57L14.63 11a1.46 1.46 0 0 1-1.14.71zm-6 0c-1 0-1.43-.57-1.43-1.71s.43-1.71 1.43-1.71c.57 0 .86.29 1.14.86l1.29-.71A2.8 2.8 0 0 0 7.2 7a2.9 2.9 0 0 0-2.14.86A2.7 2.7 0 0 0 4.2 10a3 3 0 0 0 .86 2.29a2.9 2.9 0 0 0 2.14.86a3.24 3.24 0 0 0 2.71-1.57L8.63 11a1.46 1.46 0 0 1-1.14.71z"></svg:path>`,
 })
 export class OouiLogoCcIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[oouiLogoCodexIcon],svg[ooui-logo-codex-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.83 1.725a.46.46 0 0 1 .4-.225h3.213c.248 0 .476.13.6.338l.535.903c.32.539 1.096.975 1.734.975s.897-.436.578-.975l-.535-.903c-.09-.15.022-.337.2-.337h3.213c.165 0 .318.086.4.225l1.607 2.712a.225.225 0 0 1-.2.338h-1.086c-.638 0-.897.436-.578.975s1.096.975 1.734.975h1.086c.248 0 .476.13.6.338l1.607 2.712a.44.44 0 0 1 0 .45l-1.607 2.712a.7.7 0 0 1-.6.337h-1.085c-.639 0-1.415.437-1.734.975c-.319.539-.06.976.578.976h1.086c.178 0 .289.187.2.337l-1.606 2.712a.46.46 0 0 1-.4.225h-3.214a.225.225 0 0 1-.2-.338l.523-.881c.319-.54.06-.976-.578-.976c-.639 0-1.415.437-1.734.975l-.522.882a.7.7 0 0 1-.6.337H5.232a.46.46 0 0 1-.4-.225l-1.607-2.712a.66.66 0 0 1 0-.675l.522-.882c.32-.538.32-1.412 0-1.95c-.32-.54-.837-.54-1.156 0l-.522.881a.234.234 0 0 1-.4 0L.062 10.224a.44.44 0 0 1 0-.45l1.606-2.712a.234.234 0 0 1 .4 0l.535.903c.32.539.837.539 1.156 0c.319-.538.319-1.412 0-1.95l-.535-.903a.66.66 0 0 1 0-.675zm2.474 3.05a.7.7 0 0 0-.6.337l-.535.903c-.32.539-.319 1.412 0 1.95c.32.54.837.54 1.156 0l.535-.902a.7.7 0 0 1 .6-.337h1.07c.638 0 .896-.437.577-.976s-1.095-.975-1.734-.975zm6.376 4.888a.66.66 0 0 1 0 .675l-.535.903c-.32.538-.06.975.578.975s1.414-.436 1.733-.975l.535-.903a.66.66 0 0 0 0-.675l-.522-.881c-.32-.54-1.095-.976-1.734-.976c-.638 0-.897.437-.577.975zm-5.306 5.562h-1.07a.7.7 0 0 1-.6-.338l-.542-.916c-.32-.539-.32-1.412 0-1.95c.319-.54.836-.54 1.155 0l.543.916a.7.7 0 0 0 .6.337h1.07c.638 0 .897.437.578.976s-1.095.975-1.734.975"></svg:path>`,
+})
+export class OouiLogoCodexIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5823,7 +5840,7 @@ export class OouiUserTalkRtlIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M9.577 8.284a6.1 6.1 0 0 0-1.192 1.662l-.183-.032l.392-1.962A2.6 2.6 0 0 0 9.09 8V3q-.257 0-.496.048l-.392-1.962A4.6 4.6 0 0 1 9.09 1c2.513 0 4.55 2.015 4.55 4.5q-.001.523-.115 1.013a6.18 6.18 0 0 0-3.948 1.77ZM9.09 16.34c.342.475.688.86.953 1.122c.2.199.738.827 1.33 1.538H9.09zM7.067 17H5.045v2h2.022zM4.27 11.88a9.5 9.5 0 0 1 1.854-.59l.44 1.942a7.5 7.5 0 0 0-1.232.361zM3.022 19v-2H1v2zm.393-4H1.162c.229-.718.707-1.474 1.496-2.134l1.253 1.577a3.2 3.2 0 0 0-.496.557M6.562 1.758L7.687 3.42a2.5 2.5 0 0 0-.7.693L5.305 3c.332-.49.76-.913 1.256-1.242ZM6.61 5.01l-1.984-.388a4.5 4.5 0 0 0 0 1.756L6.61 5.99a2.5 2.5 0 0 1 0-.98M5.306 8l1.68-1.113c.186.274.424.51.7.693L6.563 9.242A4.6 4.6 0 0 1 5.306 8"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M10.399 9.462A4.92 4.92 0 0 1 14 8.138a4.92 4.92 0 0 1 3.601 1.324a4.42 4.42 0 0 1 1.394 3.421c0 1.495-1.249 2.965-1.873 3.559C16.497 17.035 14 20 14 20s-2.497-2.965-3.122-3.558c-.624-.594-1.873-2.064-1.873-3.559a4.42 4.42 0 0 1 1.394-3.42Zm1.572 3.421c0 1.065.908 1.928 2.029 1.928s2.03-.863 2.03-1.928s-.91-1.927-2.03-1.927s-2.03.863-2.03 1.927Z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M9.577 8.284a6.1 6.1 0 0 0-1.192 1.662l-.183-.032l.392-1.962A2.6 2.6 0 0 0 9.09 8V3q-.257 0-.496.048l-.392-1.962A4.6 4.6 0 0 1 9.09 1c2.513 0 4.55 2.015 4.55 4.5q-.001.523-.115 1.013a6.18 6.18 0 0 0-3.948 1.77ZM9.09 16.34c.342.475.688.86.953 1.122c.2.199.738.827 1.33 1.538H9.09zM7.067 17H5.045v2h2.022zM4.27 11.88a9.5 9.5 0 0 1 1.854-.59l.44 1.942a7.5 7.5 0 0 0-1.232.361zM3.022 19v-2H1v2zm.393-4H1.162c.229-.718.707-1.474 1.496-2.134l1.253 1.577a3.2 3.2 0 0 0-.496.557M6.562 1.758L7.687 3.42a2.5 2.5 0 0 0-.7.693L5.305 3c.332-.49.76-.913 1.256-1.242ZM6.61 5.01l-1.984-.388a4.5 4.5 0 0 0 0 1.756L6.61 5.99a2.5 2.5 0 0 1 0-.98M5.306 8l1.68-1.113c.186.274.424.51.7.693L6.563 9.242A4.6 4.6 0 0 1 5.306 8m5.093 1.462A4.92 4.92 0 0 1 14 8.138a4.92 4.92 0 0 1 3.601 1.324a4.42 4.42 0 0 1 1.394 3.421c0 1.495-1.249 2.965-1.873 3.559C16.497 17.035 14 20 14 20s-2.497-2.965-3.122-3.558c-.624-.594-1.873-2.064-1.873-3.559a4.42 4.42 0 0 1 1.394-3.42Zm1.572 3.421c0 1.065.908 1.928 2.029 1.928s2.03-.863 2.03-1.928s-.91-1.927-2.03-1.927s-2.03.863-2.03 1.927Z"></svg:path>`,
 })
 export class OouiUserTemporaryLocationLtrIcon {
   readonly viewBox = input("0 0 20 20")
@@ -5840,7 +5857,7 @@ export class OouiUserTemporaryLocationLtrIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M10.423 8.284a6.1 6.1 0 0 1 1.192 1.662q.093-.014.183-.032l-.392-1.962A2.6 2.6 0 0 1 10.91 8V3q.257 0 .496.048l.392-1.962A4.6 4.6 0 0 0 10.91 1C8.397 1 6.36 3.015 6.36 5.5q.001.523.115 1.013a6.18 6.18 0 0 1 3.948 1.77Zm.487 8.056a9 9 0 0 1-.953 1.122c-.2.199-.737.827-1.33 1.538h2.283zm2.023.66h2.022v2h-2.022zm2.797-5.12a9.5 9.5 0 0 0-1.854-.59l-.44 1.942q.702.148 1.232.361l1.063-1.713ZM16.977 19v-2H19v2zm-.392-4h2.252c-.228-.718-.706-1.474-1.495-2.134l-1.253 1.577c.209.187.371.377.496.557M13.438 1.758L12.313 3.42c.277.183.515.419.7.693L14.695 3a4.6 4.6 0 0 0-1.256-1.242ZM13.39 5.01l1.984-.388a4.5 4.5 0 0 1 0 1.756L13.39 5.99a2.5 2.5 0 0 0 0-.98M14.694 8l-1.68-1.113a2.5 2.5 0 0 1-.7.693l1.124 1.662A4.6 4.6 0 0 0 14.694 8"></svg:path><svg:path fill="currentColor" fill-rule="evenodd" d="M9.601 9.462A4.92 4.92 0 0 0 6 8.138a4.92 4.92 0 0 0-3.601 1.324a4.42 4.42 0 0 0-1.394 3.421c0 1.495 1.249 2.965 1.873 3.559C3.503 17.035 6 20 6 20s2.497-2.965 3.122-3.558c.624-.594 1.873-2.064 1.873-3.559A4.42 4.42 0 0 0 9.6 9.463ZM8.03 12.883c0 1.065-.908 1.928-2.029 1.928s-2.03-.863-2.03-1.928s.91-1.927 2.03-1.927s2.03.863 2.03 1.927Z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M10.423 8.284a6.1 6.1 0 0 1 1.192 1.662q.093-.014.183-.032l-.392-1.962A2.6 2.6 0 0 1 10.91 8V3q.257 0 .496.048l.392-1.962A4.6 4.6 0 0 0 10.91 1C8.397 1 6.36 3.015 6.36 5.5q.001.523.115 1.013a6.18 6.18 0 0 1 3.948 1.77Zm.487 8.056a9 9 0 0 1-.953 1.122c-.2.199-.737.827-1.33 1.538h2.283zm2.023.66h2.022v2h-2.022zm2.797-5.12a9.5 9.5 0 0 0-1.854-.59l-.44 1.942q.702.148 1.232.361l1.063-1.713ZM16.977 19v-2H19v2zm-.392-4h2.252c-.228-.718-.706-1.474-1.495-2.134l-1.253 1.577c.209.187.371.377.496.557M13.438 1.758L12.313 3.42c.277.183.515.419.7.693L14.695 3a4.6 4.6 0 0 0-1.256-1.242ZM13.39 5.01l1.984-.388a4.5 4.5 0 0 1 0 1.756L13.39 5.99a2.5 2.5 0 0 0 0-.98M14.694 8l-1.68-1.113a2.5 2.5 0 0 1-.7.693l1.124 1.662A4.6 4.6 0 0 0 14.694 8M9.601 9.462A4.92 4.92 0 0 0 6 8.138a4.92 4.92 0 0 0-3.601 1.324a4.42 4.42 0 0 0-1.394 3.421c0 1.495 1.249 2.965 1.873 3.559C3.503 17.035 6 20 6 20s2.497-2.965 3.122-3.558c.624-.594 1.873-2.064 1.873-3.559A4.42 4.42 0 0 0 9.6 9.463ZM8.03 12.883c0 1.065-.908 1.928-2.029 1.928s-2.03-.863-2.03-1.928s.91-1.927 2.03-1.927s2.03.863 2.03 1.927Z"></svg:path>`,
 })
 export class OouiUserTemporaryLocationRtlIcon {
   readonly viewBox = input("0 0 20 20")

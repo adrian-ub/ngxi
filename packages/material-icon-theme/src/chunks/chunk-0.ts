@@ -2,40 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[materialIconThemeAbapIcon],svg[material-icon-theme-abap-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#0288d1" d="M2 10v12h14l14-12"></svg:path>`,
-})
-export class MaterialIconThemeAbapIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialIconTheme3dIcon],svg[material-icon-theme-3d-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#29b6f6" d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15L6.04 7.5L12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"></svg:path>`,
-})
-export class MaterialIconTheme3dIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialIconThemeAbcIcon],svg[material-icon-theme-abc-icon]',
   host: {
     role: 'img',
@@ -47,6 +13,23 @@ export class MaterialIconTheme3dIcon {
 })
 export class MaterialIconThemeAbcIcon {
   readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeAbapIcon],svg[material-icon-theme-abap-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#0288d1" d="M2 10v12h14l14-12"></svg:path>`,
+})
+export class MaterialIconThemeAbapIcon {
+  readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -87,6 +70,23 @@ export class MaterialIconThemeAdaIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[materialIconThemeAdobeIllustratorIcon],svg[material-icon-theme-adobe-illustrator-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:rect width="28" height="28" x="2" y="2" fill="#5d4037" rx="4"></svg:rect><svg:path fill="#ffb74d" d="M20.988 9.999a.96.96 0 0 1-.687-.269a1 1 0 0 1-.263-.704a.9.9 0 0 1 .278-.681a1 1 0 0 1 .687-.268a.93.93 0 0 1 .703.268a1.046 1.046 0 0 1-.015 1.385a.9.9 0 0 1-.703.268M20 12h2v10h-2zm-5.63-1.98l-.01-.02h-2.08a.12.12 0 0 0-.1.13a4.5 4.5 0 0 1-.06.74c-.05.13-.08.26-.12.37l-.27.78L8 22h2.14l.75-2h5.24l.79 2h2.16zM11.64 18l1.8-4.84l.01.04l.02.04L14.95 17l.39 1z"></svg:path>`,
+})
+export class MaterialIconThemeAdobeIllustratorIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialIconThemeAdobeIllustratorLightIcon],svg[material-icon-theme-adobe-illustrator-light-icon]',
   host: {
     role: 'img',
@@ -104,17 +104,17 @@ export class MaterialIconThemeAdobeIllustratorLightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[materialIconThemeAdobeIllustratorIcon],svg[material-icon-theme-adobe-illustrator-icon]',
+  selector: 'svg[materialIconTheme3dIcon],svg[material-icon-theme-3d-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:rect width="28" height="28" x="2" y="2" fill="#5d4037" rx="4"></svg:rect><svg:path fill="#ffb74d" d="M20.988 9.999a.96.96 0 0 1-.687-.269a1 1 0 0 1-.263-.704a.9.9 0 0 1 .278-.681a1 1 0 0 1 .687-.268a.93.93 0 0 1 .703.268a1.046 1.046 0 0 1-.015 1.385a.9.9 0 0 1-.703.268M20 12h2v10h-2zm-5.63-1.98l-.01-.02h-2.08a.12.12 0 0 0-.1.13a4.5 4.5 0 0 1-.06.74c-.05.13-.08.26-.12.37l-.27.78L8 22h2.14l.75-2h5.24l.79 2h2.16zM11.64 18l1.8-4.84l.01.04l.02.04L14.95 17l.39 1z"></svg:path>`,
+  template: `<svg:path fill="#29b6f6" d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15L6.04 7.5L12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"></svg:path>`,
 })
-export class MaterialIconThemeAdobeIllustratorIcon {
-  readonly viewBox = input("0 0 32 32")
+export class MaterialIconTheme3dIcon {
+  readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -155,40 +155,6 @@ export class MaterialIconThemeAdobePhotoshopLightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[materialIconThemeAdonisIcon],svg[material-icon-theme-adonis-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#7c4dff" d="m79.579 25.741l-66.481 115.15h63.305l11.218-19.433H47.613L79.804 65.7l20.005 34.649l11.423-19.783zm42.118 50.221l-45.203 78.297h90.408z" paint-order="fill markers stroke"></svg:path>`,
-})
-export class MaterialIconThemeAdonisIcon {
-  readonly viewBox = input("0 0 180 180")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialIconThemeAmplifyIcon],svg[material-icon-theme-amplify-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#ff9800" d="M14 10L5 28h12l-2-4h-4l3-6l5 10h4zm1-2l2-4l12 24h-4l-8-16z"></svg:path>`,
-})
-export class MaterialIconThemeAmplifyIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[materialIconThemeAdobeSwcIcon],svg[material-icon-theme-adobe-swc-icon]',
   host: {
     role: 'img',
@@ -200,6 +166,23 @@ export class MaterialIconThemeAmplifyIcon {
 })
 export class MaterialIconThemeAdobeSwcIcon {
   readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeAdonisIcon],svg[material-icon-theme-adonis-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#7c4dff" d="m79.579 25.741l-66.481 115.15h63.305l11.218-19.433H47.613L79.804 65.7l20.005 34.649l11.423-19.783zm42.118 50.221l-45.203 78.297h90.408z" paint-order="fill markers stroke"></svg:path>`,
+})
+export class MaterialIconThemeAdonisIcon {
+  readonly viewBox = input("0 0 180 180")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -223,16 +206,16 @@ export class MaterialIconThemeAdvplIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[materialIconThemeAndroidIcon],svg[material-icon-theme-android-icon]',
+  selector: 'svg[materialIconThemeAmplifyIcon],svg[material-icon-theme-amplify-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:rect width="4" height="10" x="2" y="12" fill="#8bc34a" rx="2"></svg:rect><svg:rect width="4" height="10" x="26" y="12" fill="#8bc34a" rx="2"></svg:rect><svg:path fill="#8bc34a" d="M8 12h16v12H8zm2 12h4v4a2 2 0 0 1-2 2a2 2 0 0 1-2-2zm8 0h4v4a2 2 0 0 1-2 2a2 2 0 0 1-2-2zm3.545-19.759l2.12-2.12A1 1 0 0 0 22.251.707l-2.326 2.326a7.97 7.97 0 0 0-7.85 0L9.75.707a1 1 0 1 0-1.414 1.414l2.12 2.12A7.97 7.97 0 0 0 8 10h16a7.97 7.97 0 0 0-2.455-5.759M14 8h-2V6h2Zm6 0h-2V6h2Z"></svg:path>`,
+  template: `<svg:path fill="#ff9800" d="M14 10L5 28h12l-2-4h-4l3-6l5 10h4zm1-2l2-4l12 24h-4l-8-16z"></svg:path>`,
 })
-export class MaterialIconThemeAndroidIcon {
+export class MaterialIconThemeAmplifyIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,16 +240,16 @@ export class MaterialIconThemeAngularIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[materialIconThemeApiblueprintIcon],svg[material-icon-theme-apiblueprint-icon]',
+  selector: 'svg[materialIconThemeAndroidIcon],svg[material-icon-theme-android-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:rect width="12" height="12" x="10" y="2" fill="#42a5f5" rx="6"></svg:rect><svg:rect width="12" height="12" x="18" y="18" fill="#42a5f5" rx="6"></svg:rect><svg:rect width="12" height="12" x="2" y="18" fill="#42a5f5" rx="6"></svg:rect><svg:path fill="none" stroke="#42a5f5" stroke-miterlimit="10" stroke-width="3" d="m16 8l8 16M16 8L8 24"></svg:path>`,
+  template: `<svg:rect width="4" height="10" x="2" y="12" fill="#8bc34a" rx="2"></svg:rect><svg:rect width="4" height="10" x="26" y="12" fill="#8bc34a" rx="2"></svg:rect><svg:path fill="#8bc34a" d="M8 12h16v12H8zm2 12h4v4a2 2 0 0 1-2 2a2 2 0 0 1-2-2zm8 0h4v4a2 2 0 0 1-2 2a2 2 0 0 1-2-2zm3.545-19.759l2.12-2.12A1 1 0 0 0 22.251.707l-2.326 2.326a7.97 7.97 0 0 0-7.85 0L9.75.707a1 1 0 1 0-1.414 1.414l2.12 2.12A7.97 7.97 0 0 0 8 10h16a7.97 7.97 0 0 0-2.455-5.759M14 8h-2V6h2Zm6 0h-2V6h2Z"></svg:path>`,
 })
-export class MaterialIconThemeApiblueprintIcon {
+export class MaterialIconThemeAndroidIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -301,6 +284,23 @@ export class MaterialIconThemeAntlrIcon {
   template: `<svg:path fill="#7e57c2" d="M31.93 14.457a.51.51 0 0 0-.506-.457h-2.01a.497.497 0 0 0-.491.559l.014.134c.616 6.284-4.097 12.817-10.29 14.044A13.009 13.009 0 1 1 24.3 6h4.19a16.013 16.013 0 1 0 3.44 8.457"></svg:path><svg:circle cx="24.533" cy="4.267" r="4.267" fill="#7e57c2"></svg:circle><svg:path fill="#7e57c2" d="M17 8h-3L8 24h3z"></svg:path><svg:path fill="#7e57c2" d="M15 8h3l6 16h-3zm2.88 13H12v-3h4.75z"></svg:path>`,
 })
 export class MaterialIconThemeApolloIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[materialIconThemeApiblueprintIcon],svg[material-icon-theme-apiblueprint-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:rect width="12" height="12" x="10" y="2" fill="#42a5f5" rx="6"></svg:rect><svg:rect width="12" height="12" x="18" y="18" fill="#42a5f5" rx="6"></svg:rect><svg:rect width="12" height="12" x="2" y="18" fill="#42a5f5" rx="6"></svg:rect><svg:path fill="none" stroke="#42a5f5" stroke-miterlimit="10" stroke-width="3" d="m16 8l8 16M16 8L8 24"></svg:path>`,
+})
+export class MaterialIconThemeApiblueprintIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsDefaultFolderIcon],svg[vscode-icons-default-folder-icon]',
+  selector: 'svg[vscodeIconsDefaultFileIcon],svg[vscode-icons-default-file-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#c09553" d="M27.5 5.5h-9.3l-2.1 4.2H4.4v16.8h25.2v-21Zm0 4.2h-8.2l1.1-2.1h7.1Z"></svg:path>`,
+  template: `<svg:path fill="#c5c5c5" d="M20.414 2H5v28h22V8.586ZM7 28V4h12v6h6v18Z"></svg:path>`,
 })
-export class VscodeIconsDefaultFolderIcon {
+export class VscodeIconsDefaultFileIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,33 +36,16 @@ export class VscodeIconsDefaultFolderOpenedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsDefaultRootFolderIcon],svg[vscode-icons-default-root-folder-icon]',
+  selector: 'svg[vscodeIconsDefaultFolderIcon],svg[vscode-icons-default-folder-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#c09553" d="M27.5 5.5h-9.3l-2.1 4.2H4.4v16.8h25.2v-21Zm0 4.2h-8.2l1.1-2.1h7.1Z"></svg:path><svg:path fill="#c09553" d="M19.735 31.25h-5.924l9.794-21.5h5.985z"></svg:path><svg:path fill="#ffeebe" d="M23.766 10H29.2l-9.625 21H14.2Z"></svg:path>`,
+  template: `<svg:path fill="#c09553" d="M27.5 5.5h-9.3l-2.1 4.2H4.4v16.8h25.2v-21Zm0 4.2h-8.2l1.1-2.1h7.1Z"></svg:path>`,
 })
-export class VscodeIconsDefaultRootFolderIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeAccessIcon],svg[vscode-icons-file-type-access-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:lineargradient id="vscodeIconsFileTypeAccess0" x1="4.416" x2="13.909" y1="-1909.341" y2="-1892.9" gradientTransform="translate(0 1917.121)" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#b72c3f"></svg:stop><svg:stop offset=".5" stop-color="#b12334"></svg:stop><svg:stop offset="1" stop-color="#9d1623"></svg:stop></svg:lineargradient></svg:defs><svg:path fill="#881421" d="M8.512 20v6.667c0 1.84 4.81 3.333 10.744 3.333S30 28.507 30 26.667V20Z"></svg:path><svg:path fill="#af2031" d="M8.512 12.667V20c0 1.841 4.81 3.333 10.744 3.333S30 21.841 30 20v-7.333Z"></svg:path><svg:path fill="#c94f60" d="M8.512 5.333v7.334c0 1.84 4.81 3.333 10.744 3.333S30 14.507 30 12.667V5.333Z"></svg:path><svg:ellipse cx="19.256" cy="5.333" fill="#e08095" rx="10.744" ry="3.333"></svg:ellipse><svg:path d="M16.434 8H8.512v16.667h7.922a1.21 1.21 0 0 0 1.194-1.222V9.222A1.21 1.21 0 0 0 16.434 8" opacity=".1"></svg:path><svg:path d="M15.783 8.667H8.512v16.666h7.271a1.21 1.21 0 0 0 1.194-1.222V9.889a1.21 1.21 0 0 0-1.194-1.222" opacity=".2"></svg:path><svg:path d="M15.783 8.667H8.512V24h7.271a1.21 1.21 0 0 0 1.194-1.222V9.889a1.21 1.21 0 0 0-1.194-1.222" opacity=".2"></svg:path><svg:path d="M15.132 8.667h-6.62V24h6.62a1.213 1.213 0 0 0 1.194-1.222V9.889a1.213 1.213 0 0 0-1.194-1.222" opacity=".2"></svg:path><svg:path fill="url(#vscodeIconsFileTypeAccess0)" d="M3.194 8.667h11.938a1.21 1.21 0 0 1 1.194 1.222v12.222a1.21 1.21 0 0 1-1.194 1.222H3.194A1.21 1.21 0 0 1 2 22.111V9.889a1.21 1.21 0 0 1 1.194-1.222"></svg:path><svg:path fill="#fff" d="M8.305 12.027h1.758l2.825 7.945h-1.66l-.623-1.895H7.7l-.611 1.895H5.437Zm1.926 4.826l-.9-2.875a4 4 0 0 1-.165-.649H9.13a3.7 3.7 0 0 1-.162.671l-.912 2.859Z"></svg:path>`,
-})
-export class VscodeIconsFileTypeAccessIcon {
+export class VscodeIconsDefaultFolderIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,6 +70,23 @@ export class VscodeIconsDefaultRootFolderOpenedIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[vscodeIconsDefaultRootFolderIcon],svg[vscode-icons-default-root-folder-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#c09553" d="M27.5 5.5h-9.3l-2.1 4.2H4.4v16.8h25.2v-21Zm0 4.2h-8.2l1.1-2.1h7.1Z"></svg:path><svg:path fill="#c09553" d="M19.735 31.25h-5.924l9.794-21.5h5.985z"></svg:path><svg:path fill="#ffeebe" d="M23.766 10H29.2l-9.625 21H14.2Z"></svg:path>`,
+})
+export class VscodeIconsDefaultRootFolderIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vscodeIconsFileTypeAccess2Icon],svg[vscode-icons-file-type-access2-icon]',
   host: {
     role: 'img',
@@ -104,16 +104,16 @@ export class VscodeIconsFileTypeAccess2Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsDefaultFileIcon],svg[vscode-icons-default-file-icon]',
+  selector: 'svg[vscodeIconsFileTypeAccessIcon],svg[vscode-icons-file-type-access-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#c5c5c5" d="M20.414 2H5v28h22V8.586ZM7 28V4h12v6h6v18Z"></svg:path>`,
+  template: `<svg:defs><svg:lineargradient id="vscodeIconsFileTypeAccess0" x1="4.416" x2="13.909" y1="-1909.341" y2="-1892.9" gradientTransform="translate(0 1917.121)" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#b72c3f"></svg:stop><svg:stop offset=".5" stop-color="#b12334"></svg:stop><svg:stop offset="1" stop-color="#9d1623"></svg:stop></svg:lineargradient></svg:defs><svg:path fill="#881421" d="M8.512 20v6.667c0 1.84 4.81 3.333 10.744 3.333S30 28.507 30 26.667V20Z"></svg:path><svg:path fill="#af2031" d="M8.512 12.667V20c0 1.841 4.81 3.333 10.744 3.333S30 21.841 30 20v-7.333Z"></svg:path><svg:path fill="#c94f60" d="M8.512 5.333v7.334c0 1.84 4.81 3.333 10.744 3.333S30 14.507 30 12.667V5.333Z"></svg:path><svg:ellipse cx="19.256" cy="5.333" fill="#e08095" rx="10.744" ry="3.333"></svg:ellipse><svg:path d="M16.434 8H8.512v16.667h7.922a1.21 1.21 0 0 0 1.194-1.222V9.222A1.21 1.21 0 0 0 16.434 8" opacity=".1"></svg:path><svg:path d="M15.783 8.667H8.512v16.666h7.271a1.21 1.21 0 0 0 1.194-1.222V9.889a1.21 1.21 0 0 0-1.194-1.222" opacity=".2"></svg:path><svg:path d="M15.783 8.667H8.512V24h7.271a1.21 1.21 0 0 0 1.194-1.222V9.889a1.21 1.21 0 0 0-1.194-1.222" opacity=".2"></svg:path><svg:path d="M15.132 8.667h-6.62V24h6.62a1.213 1.213 0 0 0 1.194-1.222V9.889a1.213 1.213 0 0 0-1.194-1.222" opacity=".2"></svg:path><svg:path fill="url(#vscodeIconsFileTypeAccess0)" d="M3.194 8.667h11.938a1.21 1.21 0 0 1 1.194 1.222v12.222a1.21 1.21 0 0 1-1.194 1.222H3.194A1.21 1.21 0 0 1 2 22.111V9.889a1.21 1.21 0 0 1 1.194-1.222"></svg:path><svg:path fill="#fff" d="M8.305 12.027h1.758l2.825 7.945h-1.66l-.623-1.895H7.7l-.611 1.895H5.437Zm1.926 4.826l-.9-2.875a4 4 0 0 1-.165-.649H9.13a3.7 3.7 0 0 1-.162.671l-.912 2.859Z"></svg:path>`,
 })
-export class VscodeIconsDefaultFileIcon {
+export class VscodeIconsFileTypeAccessIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,23 +138,6 @@ export class VscodeIconsFileTypeActionscriptIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsFileTypeAdaIcon],svg[vscode-icons-file-type-ada-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#0f23c3" d="M24.554 20.075c.209.27 1.356.961 1.37 1.246a7 7 0 0 0-1.4-.324a17 17 0 0 1-1.412-.48a9.2 9.2 0 0 1-2.375-1.3A3.15 3.15 0 0 1 19.3 16.75a1.72 1.72 0 0 1 1.767-1.822a3.6 3.6 0 0 1 1.593.321c.146.066 1.31.606 1.256.809a5.5 5.5 0 0 0-1.41-.112c-.649.244-.4.828-.168 1.311a8 8 0 0 0 1.078 1.554c.164.194.884 1.271 1.138 1.264"></svg:path><svg:path fill="#1a1978" d="M24.141 16.276c.128-.59.819-1.384 1.344-.773a4.2 4.2 0 0 1 .578 1.918c.12.656.2 1.327.261 1.982c.038.379.34 1.794.123 2.075a23 23 0 0 1-2.922-2.838a3.76 3.76 0 0 1-.925-1.7c-.1-1.073.879-.73 1.541-.664"></svg:path><svg:path fill="#0f23c3" d="M26.3 17.781c.141-.732-.406-2.592-1.067-2.949a.06.06 0 0 0 .044-.007c-.156-.444-1.359 1.116-1.228 1.174c-.316-.138.774-1.984.988-2.16c.7-.578 1.372-.086 1.845.543a6.04 6.04 0 0 1 .733 4.434a4.5 4.5 0 0 1-.421 1.312c-.1.22-.45 1.1-.682 1.174a14.8 14.8 0 0 0-.212-3.521"></svg:path><svg:path fill="#d2d2d2" d="M3.687 8.4c.179-.188-.041-1.527.324-1.548c.262-.015.553 1.741.627 1.968a9.2 9.2 0 0 0 1.127 2.329a7.53 7.53 0 0 0 4.016 2.978a4.55 4.55 0 0 0 2.366.2c.931-.208 1.82-.577 2.757-.765c1.35-.27 3.342-.352 4.438.647c.7.641.376.76.043 1.421a2.44 2.44 0 0 0 .178 2.562c.235.342 1.033.827.675 1.094c-.567.424-1.277-.452-1.636-.776c-1.4-1.264-2.711-1.313-4.492-1.074a9 9 0 0 1-4.883-.708A9.47 9.47 0 0 1 3.687 8.4M19.941 30a3.6 3.6 0 0 1-2.325-.817c.469-.092 1.021.025 1.508-.044a9.7 9.7 0 0 0 1.754-.43a10.5 10.5 0 0 0 3.022-1.554a6.55 6.55 0 0 0 2.757-5.214c.149-.088.316 1.034.319 1.091a5.8 5.8 0 0 1-.19 1.727a6.9 6.9 0 0 1-1.423 2.774A7.3 7.3 0 0 1 19.941 30"></svg:path><svg:path fill="#d2d2d2" d="M18.962 19.109a5.8 5.8 0 0 1-2.05.859a13.4 13.4 0 0 1-2.224.549a8.86 8.86 0 0 1-4.435-.51a9.94 9.94 0 0 1-3.849-2.4c-.352-.367-2.104-2.417-1.548-3.05c.248-.282.875.846 1 .992a5 5 0 0 0 1.357 1.11a10.9 10.9 0 0 0 4.035 1.456a6.7 6.7 0 0 0 2.34-.094a13 13 0 0 1 1.694-.485a4 4 0 0 1 2.113.457c.344.17 1.523.743 1.567 1.116m9.351-4.031a19.3 19.3 0 0 1-.453 3.774c-.176-.242.016-1.47 0-1.792a6 6 0 0 0-.384-2.087a4.9 4.9 0 0 0-1.376-1.661a15 15 0 0 1-1.27-1.536c-1.837-2.382-3.245-5.211-2.9-8.3c.034-.308.069-1.448.411-1.445c.152 0 .266 1.561.29 1.718a12.5 12.5 0 0 0 1.224 4.116c.67 1.222 1.947 2.023 2.825 3.1a6.58 6.58 0 0 1 1.633 4.113M15.7 26.935a10.85 10.85 0 0 0 6.436-.687a6.94 6.94 0 0 0 4.278-4.418c.319.2-.048 1.529-.128 1.781a5.7 5.7 0 0 1-1.01 1.813a8.9 8.9 0 0 1-3.257 2.514c-1.703.772-5.662 1.652-6.319-1.003"></svg:path><svg:path fill="#d2d2d2" d="M19.151 19.376c.367 2.107-2.957 3.124-4.478 3.213c-1.859.11-4.929-.292-6.06-2.031c-.673-1.035.781-.09 1.188.058a8.7 8.7 0 0 0 3.06.5a11.6 11.6 0 0 0 3.305-.5a14 14 0 0 0 1.533-.576c.301-.132 1.124-.691 1.452-.664m4.991 4.084c.4-.945-1.883-1.578-2.445-1.858a4.9 4.9 0 0 1-1.315-.867c-.181-.181-.872-.92-.807-1.219a5 5 0 0 1 1.087-.175a6 6 0 0 1 .855.588a10 10 0 0 0 .964.5a16 16 0 0 0 2.119.771c.308.09 1.549.208 1.727.428c-.04.296-1.97 2.021-2.185 1.832"></svg:path><svg:path fill="#d2d2d2" d="M26.1 22.172c.265.43-1.08 1.831-1.363 2.105a9.3 9.3 0 0 1-2.566 1.728a7.8 7.8 0 0 1-2.56.753c-.679.058-1.966-.124-2.141-.979a7 7 0 0 1 1.177-.086c.462-.059.921-.149 1.376-.246a13 13 0 0 0 2.184-.645a11.5 11.5 0 0 0 2.084-1.11a11 11 0 0 0 1.078-.822c.105-.089.617-.702.731-.698m-7.342-10.207c-.1-1.308 2.612-1.3 3.271-1.092a5.98 5.98 0 0 1 2.982 2.475c-1.082.8-2.449.094-3.3-.654a4.3 4.3 0 0 0-1.481-1.029c-.809-.265-.818.094-1.472.3"></svg:path><svg:path fill="#d2d2d2" d="M25.783 13.341c-.444-.029-.316.071-.647-.212c-.358-.307-.614-.795-.945-1.141c-.534-.558-1.242-.895-1.723-1.485a7.27 7.27 0 0 1-1.624-4.848c.018-1.489.407.187.551.675a12.3 12.3 0 0 0 1.126 2.708a46 46 0 0 0 3.4 4.321c-.039.002-.097-.021-.138-.018m-5.715 1.415c.033-.625-.911-.792-1.211-1.42c-.164-.343-.211-.569.029-.7c.082-.045.383.012.5-.02c.271-.076.335-.273.581-.4a1.193 1.193 0 0 1 1.633 1.021a1.82 1.82 0 0 1-1.532 1.519"></svg:path><svg:path fill="#d2d2d2" d="M20.5 14.745a1.93 1.93 0 0 0 1.323-1.7c.524.139.928.658 1.521.771a2.6 2.6 0 0 0 1.029-.017c.207-.045.54-.274.721-.259c-.033.163-.464.546-.565.717a4.2 4.2 0 0 0-.388.9c-.229.741-.061.739-.709.311a4.3 4.3 0 0 0-1.957-.72c-.266-.026-.881.019-.975-.003m-.595 5.989a2.01 2.01 0 0 1-1.4 1.712c-.205.091-2.018.733-2.032.348c-.007-.2 1.624-.954 1.809-1.11a3.4 3.4 0 0 0 .867-1.071c.055-.112.232-.925.271-.943c.224-.106.488.93.485 1.064m-8.532-8.202a10.6 10.6 0 0 1 3.71-.914a10.3 10.3 0 0 1 1.865.024c.366.039 1.469.054 1.74.343a.255.255 0 0 1-.273.173c-.037.077.251.371.3.425c-.034.034-1.445-.4-1.572-.424a10.6 10.6 0 0 0-2.282-.134a16 16 0 0 0-1.841.194a6.2 6.2 0 0 1-1.647.313m11.139-1.801a1.89 1.89 0 0 1-1.517-.6c-.247-.349-.737-1.692-.385-2.021c.209-.2.384.662.484.846a11 11 0 0 0 1.418 1.775m5.276 8.469a19 19 0 0 1-.749 3.313c-.173-.077-.275-.778-.562-.95a4.1 4.1 0 0 0 .76-1.154c.152-.302.303-1.046.551-1.209m-7.807-7.357c-.132.268-.932 1.1-1.118.481c-.107-.356.876-.841 1.118-.481m-.747.45c.228.006.012-.248.012-.266c-.001-.043-.368.266-.012.266"></svg:path>`,
-})
-export class VscodeIconsFileTypeAdaIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[vscodeIconsFileTypeActionscript2Icon],svg[vscode-icons-file-type-actionscript2-icon]',
   host: {
     role: 'img',
@@ -165,23 +148,6 @@ export class VscodeIconsFileTypeAdaIcon {
   template: `<svg:path fill="#c7d7d8" d="M24.099 2H8.837v2.493H2.253v7.844h6.584V30h20.91V7.888zm4.648 27H9.837V12.337H21.56V4.493H9.837V3h13.679v5.415h5.231z"></svg:path><svg:path fill="#fd3316" d="M9.728 5.336H8.243a.064.064 0 0 0-.064.062l-.015.466l-.002.012l-1.232 5.355a.064.064 0 0 0 .062.078h1.056c.03 0 .056-.021.062-.051l.258-1.236a.06.06 0 0 1 .062-.051h1.16c.029 0 .055.02.062.048l.313 1.242a.064.064 0 0 0 .062.048h1.151a.064.064 0 0 0 .062-.079L9.79 5.384a.06.06 0 0 0-.062-.048M8.617 8.81l.401-2.243l.423 2.243zm6.29-3.381v1.063a.045.045 0 0 1-.065.04c-.173-.087-.659-.311-1.076-.32c-.517-.012-.771.276-.771.57c0 .888 2.187 1.004 2.187 2.799c0 1.576-1.282 1.727-1.893 1.727c-.983 0-1.424-.304-1.512-.373a.04.04 0 0 1-.017-.035V9.737c0-.036.039-.057.069-.038c.205.133.829.506 1.389.506c.621 0 .633-.285.633-.496c0-.872-2.091-1-2.091-2.879c0-1.67 1.635-1.67 1.929-1.67c.7 0 1.096.179 1.194.229a.05.05 0 0 1 .024.04"></svg:path><svg:path fill="#c7d7d8" d="M20.821 14.233c2.727 0 3.056 1.412 3.056 2.156c0 1.018-.227 1.857-.227 2.494c0 .862 1.151.664 1.151.664v1.547c-.824 0-1.131.221-1.131.841c0 .319.213 1.789.213 2.426c0 1.877-1.443 2.267-2.351 2.267h-.717l-.004-1.497c1.364 0 1.319-.558 1.319-1.001c0-.567-.159-1.293-.159-2.285s.832-1.505.832-1.505s-.868-.549-.868-1.399s.213-1.665.213-2.479c0-.939-1.324-.742-1.324-.742zm-3.127 0c-2.727 0-3.056 1.412-3.056 2.156c0 1.018.227 1.857.227 2.494c0 .862-1.151.664-1.151.664v1.547c.824 0 1.131.221 1.131.841c0 .319-.213 1.789-.213 2.426c0 1.877 1.443 2.267 2.351 2.267h.717l.004-1.497c-1.364 0-1.319-.558-1.319-1.001c0-.567.159-1.293.159-2.285s-.832-1.505-.832-1.505s.868-.549.868-1.399s-.213-1.665-.213-2.479c0-.939 1.324-.742 1.324-.742z"></svg:path>`,
 })
 export class VscodeIconsFileTypeActionscript2Icon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeAdvplIcon],svg[vscode-icons-file-type-advpl-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#337ab7" fill-rule="evenodd" d="M13.489 2.225a14.055 14.055 0 0 0-10.055 20c5.108 10.438 20.228 10.353 25.191-.142A14.058 14.058 0 0 0 13.489 2.225m1.69 4.175C20.365 7.437 25.715 9.06 25.9 9.649c.522 1.627.515 9.762-.009 10.752c-.132.249-2.433-.025-4.189-.5l-.7-.19v-.878c-.008-2.635-.276-5.13-.584-5.438c-.353-.354-2.64-1.1-6.143-1.993l-2.229-.571l-.029-.538a14.8 14.8 0 0 1 .467-4.213c.128-.159.635-.1 2.7.315m-7.53 5.155a25 25 0 0 1 3 .581l.36.1l.061 1.982c.115 3.712.234 4.287.954 4.609a69 69 0 0 0 7.29 2.137l.682.169l-.02 1.314a12.4 12.4 0 0 1-.352 3.257L19.5 26l-.524-.061A90.5 90.5 0 0 1 7.77 23.2c-1.23-.412-1.528-.571-1.634-.874c-.463-1.332-.461-9.877 0-10.746c.107-.2.16-.2 1.51-.024"></svg:path>`,
-})
-export class VscodeIconsFileTypeAdvplIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -206,6 +172,23 @@ export class VscodeIconsFileTypeAffinitydesignerIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[vscodeIconsFileTypeAdaIcon],svg[vscode-icons-file-type-ada-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#0f23c3" d="M24.554 20.075c.209.27 1.356.961 1.37 1.246a7 7 0 0 0-1.4-.324a17 17 0 0 1-1.412-.48a9.2 9.2 0 0 1-2.375-1.3A3.15 3.15 0 0 1 19.3 16.75a1.72 1.72 0 0 1 1.767-1.822a3.6 3.6 0 0 1 1.593.321c.146.066 1.31.606 1.256.809a5.5 5.5 0 0 0-1.41-.112c-.649.244-.4.828-.168 1.311a8 8 0 0 0 1.078 1.554c.164.194.884 1.271 1.138 1.264"></svg:path><svg:path fill="#1a1978" d="M24.141 16.276c.128-.59.819-1.384 1.344-.773a4.2 4.2 0 0 1 .578 1.918c.12.656.2 1.327.261 1.982c.038.379.34 1.794.123 2.075a23 23 0 0 1-2.922-2.838a3.76 3.76 0 0 1-.925-1.7c-.1-1.073.879-.73 1.541-.664"></svg:path><svg:path fill="#0f23c3" d="M26.3 17.781c.141-.732-.406-2.592-1.067-2.949a.06.06 0 0 0 .044-.007c-.156-.444-1.359 1.116-1.228 1.174c-.316-.138.774-1.984.988-2.16c.7-.578 1.372-.086 1.845.543a6.04 6.04 0 0 1 .733 4.434a4.5 4.5 0 0 1-.421 1.312c-.1.22-.45 1.1-.682 1.174a14.8 14.8 0 0 0-.212-3.521"></svg:path><svg:path fill="#d2d2d2" d="M3.687 8.4c.179-.188-.041-1.527.324-1.548c.262-.015.553 1.741.627 1.968a9.2 9.2 0 0 0 1.127 2.329a7.53 7.53 0 0 0 4.016 2.978a4.55 4.55 0 0 0 2.366.2c.931-.208 1.82-.577 2.757-.765c1.35-.27 3.342-.352 4.438.647c.7.641.376.76.043 1.421a2.44 2.44 0 0 0 .178 2.562c.235.342 1.033.827.675 1.094c-.567.424-1.277-.452-1.636-.776c-1.4-1.264-2.711-1.313-4.492-1.074a9 9 0 0 1-4.883-.708A9.47 9.47 0 0 1 3.687 8.4M19.941 30a3.6 3.6 0 0 1-2.325-.817c.469-.092 1.021.025 1.508-.044a9.7 9.7 0 0 0 1.754-.43a10.5 10.5 0 0 0 3.022-1.554a6.55 6.55 0 0 0 2.757-5.214c.149-.088.316 1.034.319 1.091a5.8 5.8 0 0 1-.19 1.727a6.9 6.9 0 0 1-1.423 2.774A7.3 7.3 0 0 1 19.941 30"></svg:path><svg:path fill="#d2d2d2" d="M18.962 19.109a5.8 5.8 0 0 1-2.05.859a13.4 13.4 0 0 1-2.224.549a8.86 8.86 0 0 1-4.435-.51a9.94 9.94 0 0 1-3.849-2.4c-.352-.367-2.104-2.417-1.548-3.05c.248-.282.875.846 1 .992a5 5 0 0 0 1.357 1.11a10.9 10.9 0 0 0 4.035 1.456a6.7 6.7 0 0 0 2.34-.094a13 13 0 0 1 1.694-.485a4 4 0 0 1 2.113.457c.344.17 1.523.743 1.567 1.116m9.351-4.031a19.3 19.3 0 0 1-.453 3.774c-.176-.242.016-1.47 0-1.792a6 6 0 0 0-.384-2.087a4.9 4.9 0 0 0-1.376-1.661a15 15 0 0 1-1.27-1.536c-1.837-2.382-3.245-5.211-2.9-8.3c.034-.308.069-1.448.411-1.445c.152 0 .266 1.561.29 1.718a12.5 12.5 0 0 0 1.224 4.116c.67 1.222 1.947 2.023 2.825 3.1a6.58 6.58 0 0 1 1.633 4.113M15.7 26.935a10.85 10.85 0 0 0 6.436-.687a6.94 6.94 0 0 0 4.278-4.418c.319.2-.048 1.529-.128 1.781a5.7 5.7 0 0 1-1.01 1.813a8.9 8.9 0 0 1-3.257 2.514c-1.703.772-5.662 1.652-6.319-1.003"></svg:path><svg:path fill="#d2d2d2" d="M19.151 19.376c.367 2.107-2.957 3.124-4.478 3.213c-1.859.11-4.929-.292-6.06-2.031c-.673-1.035.781-.09 1.188.058a8.7 8.7 0 0 0 3.06.5a11.6 11.6 0 0 0 3.305-.5a14 14 0 0 0 1.533-.576c.301-.132 1.124-.691 1.452-.664m4.991 4.084c.4-.945-1.883-1.578-2.445-1.858a4.9 4.9 0 0 1-1.315-.867c-.181-.181-.872-.92-.807-1.219a5 5 0 0 1 1.087-.175a6 6 0 0 1 .855.588a10 10 0 0 0 .964.5a16 16 0 0 0 2.119.771c.308.09 1.549.208 1.727.428c-.04.296-1.97 2.021-2.185 1.832"></svg:path><svg:path fill="#d2d2d2" d="M26.1 22.172c.265.43-1.08 1.831-1.363 2.105a9.3 9.3 0 0 1-2.566 1.728a7.8 7.8 0 0 1-2.56.753c-.679.058-1.966-.124-2.141-.979a7 7 0 0 1 1.177-.086c.462-.059.921-.149 1.376-.246a13 13 0 0 0 2.184-.645a11.5 11.5 0 0 0 2.084-1.11a11 11 0 0 0 1.078-.822c.105-.089.617-.702.731-.698m-7.342-10.207c-.1-1.308 2.612-1.3 3.271-1.092a5.98 5.98 0 0 1 2.982 2.475c-1.082.8-2.449.094-3.3-.654a4.3 4.3 0 0 0-1.481-1.029c-.809-.265-.818.094-1.472.3"></svg:path><svg:path fill="#d2d2d2" d="M25.783 13.341c-.444-.029-.316.071-.647-.212c-.358-.307-.614-.795-.945-1.141c-.534-.558-1.242-.895-1.723-1.485a7.27 7.27 0 0 1-1.624-4.848c.018-1.489.407.187.551.675a12.3 12.3 0 0 0 1.126 2.708a46 46 0 0 0 3.4 4.321c-.039.002-.097-.021-.138-.018m-5.715 1.415c.033-.625-.911-.792-1.211-1.42c-.164-.343-.211-.569.029-.7c.082-.045.383.012.5-.02c.271-.076.335-.273.581-.4a1.193 1.193 0 0 1 1.633 1.021a1.82 1.82 0 0 1-1.532 1.519"></svg:path><svg:path fill="#d2d2d2" d="M20.5 14.745a1.93 1.93 0 0 0 1.323-1.7c.524.139.928.658 1.521.771a2.6 2.6 0 0 0 1.029-.017c.207-.045.54-.274.721-.259c-.033.163-.464.546-.565.717a4.2 4.2 0 0 0-.388.9c-.229.741-.061.739-.709.311a4.3 4.3 0 0 0-1.957-.72c-.266-.026-.881.019-.975-.003m-.595 5.989a2.01 2.01 0 0 1-1.4 1.712c-.205.091-2.018.733-2.032.348c-.007-.2 1.624-.954 1.809-1.11a3.4 3.4 0 0 0 .867-1.071c.055-.112.232-.925.271-.943c.224-.106.488.93.485 1.064m-8.532-8.202a10.6 10.6 0 0 1 3.71-.914a10.3 10.3 0 0 1 1.865.024c.366.039 1.469.054 1.74.343a.255.255 0 0 1-.273.173c-.037.077.251.371.3.425c-.034.034-1.445-.4-1.572-.424a10.6 10.6 0 0 0-2.282-.134a16 16 0 0 0-1.841.194a6.2 6.2 0 0 1-1.647.313m11.139-1.801a1.89 1.89 0 0 1-1.517-.6c-.247-.349-.737-1.692-.385-2.021c.209-.2.384.662.484.846a11 11 0 0 0 1.418 1.775m5.276 8.469a19 19 0 0 1-.749 3.313c-.173-.077-.275-.778-.562-.95a4.1 4.1 0 0 0 .76-1.154c.152-.302.303-1.046.551-1.209m-7.807-7.357c-.132.268-.932 1.1-1.118.481c-.107-.356.876-.841 1.118-.481m-.747.45c.228.006.012-.248.012-.266c-.001-.043-.368.266-.012.266"></svg:path>`,
+})
+export class VscodeIconsFileTypeAdaIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vscodeIconsFileTypeAffinityphotoIcon],svg[vscode-icons-file-type-affinityphoto-icon]',
   host: {
     role: 'img',
@@ -223,16 +206,16 @@ export class VscodeIconsFileTypeAffinityphotoIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsFileTypeAiIcon],svg[vscode-icons-file-type-ai-icon]',
+  selector: 'svg[vscodeIconsFileTypeAdvplIcon],svg[vscode-icons-file-type-advpl-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#1c0a00" d="M3.169 3.517h25.666v24.966H3.169Z"></svg:path><svg:path fill="#ff7f18" d="M3.169 3.517h25.666v24.966H3.169ZM2 29.65h28V2.35H2Zm18.34-17.57c0-.093.035-.14.14-.14h1.832c.093 0 .14.035.14.14v9.205c0 .093-.023.14-.14.14h-1.807c-.117 0-.152-.058-.152-.152V12.08zm-.128-2.648a1.19 1.19 0 0 1 2.38 0a1.115 1.115 0 0 1-1.213 1.19a1.1 1.1 0 0 1-1.165-1.19Zm-5.25 6.487c-.327-1.3-1.1-4.118-1.388-5.483h-.023c-.245 1.365-.863 3.675-1.353 5.483Zm-3.243 1.89l-.922 3.5c-.023.093-.058.117-.175.117H8.909c-.117 0-.14-.035-.117-.175l3.313-11.6a3.8 3.8 0 0 0 .117-.968c0-.082.035-.117.093-.117h2.45c.082 0 .117.023.14.117l3.71 12.588c.023.093 0 .152-.093.152h-1.937c-.093 0-.152-.023-.175-.1l-.957-3.512H11.72Z"></svg:path>`,
+  template: `<svg:path fill="#337ab7" fill-rule="evenodd" d="M13.489 2.225a14.055 14.055 0 0 0-10.055 20c5.108 10.438 20.228 10.353 25.191-.142A14.058 14.058 0 0 0 13.489 2.225m1.69 4.175C20.365 7.437 25.715 9.06 25.9 9.649c.522 1.627.515 9.762-.009 10.752c-.132.249-2.433-.025-4.189-.5l-.7-.19v-.878c-.008-2.635-.276-5.13-.584-5.438c-.353-.354-2.64-1.1-6.143-1.993l-2.229-.571l-.029-.538a14.8 14.8 0 0 1 .467-4.213c.128-.159.635-.1 2.7.315m-7.53 5.155a25 25 0 0 1 3 .581l.36.1l.061 1.982c.115 3.712.234 4.287.954 4.609a69 69 0 0 0 7.29 2.137l.682.169l-.02 1.314a12.4 12.4 0 0 1-.352 3.257L19.5 26l-.524-.061A90.5 90.5 0 0 1 7.77 23.2c-1.23-.412-1.528-.571-1.634-.874c-.463-1.332-.461-9.877 0-10.746c.107-.2.16-.2 1.51-.024"></svg:path>`,
 })
-export class VscodeIconsFileTypeAiIcon {
+export class VscodeIconsFileTypeAdvplIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,6 +257,23 @@ export class VscodeIconsFileTypeAgdaIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[vscodeIconsFileTypeAiIcon],svg[vscode-icons-file-type-ai-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#1c0a00" d="M3.169 3.517h25.666v24.966H3.169Z"></svg:path><svg:path fill="#ff7f18" d="M3.169 3.517h25.666v24.966H3.169ZM2 29.65h28V2.35H2Zm18.34-17.57c0-.093.035-.14.14-.14h1.832c.093 0 .14.035.14.14v9.205c0 .093-.023.14-.14.14h-1.807c-.117 0-.152-.058-.152-.152V12.08zm-.128-2.648a1.19 1.19 0 0 1 2.38 0a1.115 1.115 0 0 1-1.213 1.19a1.1 1.1 0 0 1-1.165-1.19Zm-5.25 6.487c-.327-1.3-1.1-4.118-1.388-5.483h-.023c-.245 1.365-.863 3.675-1.353 5.483Zm-3.243 1.89l-.922 3.5c-.023.093-.058.117-.175.117H8.909c-.117 0-.14-.035-.117-.175l3.313-11.6a3.8 3.8 0 0 0 .117-.968c0-.082.035-.117.093-.117h2.45c.082 0 .117.023.14.117l3.71 12.588c.023.093 0 .152-.093.152h-1.937c-.093 0-.152-.023-.175-.1l-.957-3.512H11.72Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeAiIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vscodeIconsFileTypeAi2Icon],svg[vscode-icons-file-type-ai2-icon]',
   host: {
     role: 'img',
@@ -291,23 +291,6 @@ export class VscodeIconsFileTypeAi2Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[vscodeIconsFileTypeAlIcon],svg[vscode-icons-file-type-al-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#2ea98e" d="M11.616 7.986A1.56 1.56 0 0 0 10.16 7h-.06a1.56 1.56 0 0 0-1.456.986L2 25h3.806l1.015-2.834h6.621L14.457 25h3.8Zm-3.672 10.97l2.188-6.111l2.188 6.116Zm15.885 2.715V7.129H20.3v15.618A2.346 2.346 0 0 0 22.57 25H30v-3.328Z"></svg:path>`,
-})
-export class VscodeIconsFileTypeAlIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[vscodeIconsFileTypeAlDalIcon],svg[vscode-icons-file-type-al-dal-icon]',
   host: {
     role: 'img',
@@ -318,6 +301,23 @@ export class VscodeIconsFileTypeAlIcon {
   template: `<svg:path fill="#9F4246" d="M11.6 8c-.2-.6-.8-1-1.5-1H10c-.5 0-1.1.4-1.4 1L2 25h3.8l1-2.8h6.6l1 2.8h3.8zM7.9 19l2.2-6.1l2.2 6.1zm15.9 2.7V7.1h-3.5v15.6c0 1.2 1 2.2 2.3 2.3H30v-3.3z"></svg:path>`,
 })
 export class VscodeIconsFileTypeAlDalIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeAlIcon],svg[vscode-icons-file-type-al-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#2ea98e" d="M11.616 7.986A1.56 1.56 0 0 0 10.16 7h-.06a1.56 1.56 0 0 0-1.456.986L2 25h3.806l1.015-2.834h6.621L14.457 25h3.8Zm-3.672 10.97l2.188-6.111l2.188 6.116Zm15.885 2.715V7.129H20.3v15.618A2.346 2.346 0 0 0 22.57 25H30v-3.328Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeAlIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -624,6 +624,23 @@ export class VscodeIconsFileTypeArduinoIcon {
   template: `<svg:path fill="#e40046" d="M30 30H2V2h28Z"></svg:path><svg:path fill="#fff" d="M23.731 24.83a.59.59 0 0 1-.763-.337L16.724 9.269L13.93 15.99h1.833a.59.59 0 0 1-.024 1.18H8.9a.59.59 0 0 1 .024-1.18h3.727v-.013L16.184 7.5a.59.59 0 0 1 .533-.363a.59.59 0 0 1 .557.366l6.785 16.546l.009.021a.59.59 0 0 1-.337.76"></svg:path><svg:path fill="#fff" d="M14.516 18.791H7.679a.59.59 0 0 0-.024 1.18H11l-1.691 4.072a.59.59 0 0 0 1.085.464v-.011l1.875-4.509l.005-.016h2.215a.59.59 0 0 0 .023-1.18Z"></svg:path>`,
 })
 export class VscodeIconsFileTypeAsciidocIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeAsepriteIcon],svg[vscode-icons-file-type-aseprite-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#6d6a76" d="M4.8 2h22.4v28H4.8M2.93 3.87h26.14v24.26H2.93"></svg:path><svg:path fill="#655561" d="M6.67 2h18.66v28H6.67M4.8 3.87h22.4v24.26H4.8M2.93 5.73h26.14v20.54H2.93"></svg:path><svg:path fill="#7d929e" d="M6.67 3.87h18.66v24.26H6.67M4.8 5.73h22.4v20.54H4.8z"></svg:path><svg:path fill="#fff" d="M6.67 3.87h18.66V24.4H6.67M4.8 5.73h22.4v16.8H4.8z"></svg:path><svg:path fill="#655561" d="M10.4 9.47h1.87v7.46H10.4zm9.33 0h1.87v7.46h-1.87z"></svg:path>`,
+})
+export class VscodeIconsFileTypeAsepriteIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -4099,6 +4116,23 @@ export class VscodeIconsFileTypeFirebasehostingIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[vscodeIconsFileTypeFirebasestorageIcon],svg[vscode-icons-file-type-firebasestorage-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#ff9100" d="M11.84 29.2c1.17.47 2.44.75 3.78.8c1.81.06 3.52-.31 5.06-1.02c-1.84-.72-3.51-1.78-4.93-3.1a8.5 8.5 0 0 1-3.9 3.32z"></svg:path><svg:path fill="#ffc400" d="M15.74 25.88c-3.25-3-5.22-7.35-5.05-12.12c0-.15.01-.31.02-.46a8.5 8.5 0 0 0-4.39.05c-.87 1.52-1.39 3.26-1.46 5.13c-.17 4.82 2.75 9.03 6.98 10.73a8.37 8.37 0 0 0 3.9-3.32z"></svg:path><svg:path fill="#ff9100" d="M15.74 25.88a8.4 8.4 0 0 0 1.27-4.15c.14-4.02-2.56-7.47-6.3-8.44c0 .15-.02.31-.02.46a15.69 15.69 0 0 0 5.05 12.12z"></svg:path><svg:path fill="#dd2c00" d="M16.59 2c-2.13 1.7-3.81 3.95-4.83 6.54a15.6 15.6 0 0 0-1.05 4.75a8.41 8.41 0 0 1 6.3 8.44a8.27 8.27 0 0 1-1.27 4.15a15.8 15.8 0 0 0 4.93 3.1c3.7-1.71 6.32-5.38 6.47-9.73c.1-2.82-.98-5.33-2.51-7.45c-1.62-2.24-8.04-9.79-8.04-9.79z"></svg:path><svg:circle cx="23" cy="23" r="7" fill="#fff"></svg:circle><svg:path fill="#5e5e5e" d="M19.466 20.886q0-.325.227-.553q.228-.227.553-.227h1.951l.781.78h2.732q.325 0 .553.228q.227.228.227.553v3.122q0 .325-.227.553q-.228.227-.553.227h-5.464q-.325 0-.553-.227q-.227-.228-.227-.553zm3.138 3.008l-.797-1.056l-1.17 1.56h4.682l-1.56-1.95z"></svg:path>`,
+})
+export class VscodeIconsFileTypeFirebasestorageIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vscodeIconsFileTypeFirestoreIcon],svg[vscode-icons-file-type-firestore-icon]',
   host: {
     role: 'img',
@@ -4653,6 +4687,23 @@ export class VscodeIconsFileTypeGdscriptIcon {
   template: `<svg:path fill="#e2e2e2" d="M2 5.861h28v20H2z"></svg:path><svg:path fill="#6cc1ee" d="M2 2h28v21.613c-9.333.915-12.5-17.32-17.956-17.32C7.455 6.293 5.7 16.57 2 17.787Z"></svg:path><svg:path fill="#46b270" d="M2 30h28v-4.639C20.382 26.388 15.526 8.083 11.959 8.042c-3.167 0-4.9 10.382-9.959 11.494Z"></svg:path>`,
 })
 export class VscodeIconsFileTypeGenstatIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeGeojsonIcon],svg[vscode-icons-file-type-geojson-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#58a0ff"><svg:path d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14m0-26.824A12.824 12.824 0 1 0 28.824 16A12.84 12.84 0 0 0 16 3.176m.317 7.298A44.8 44.8 0 0 1 4.42 8.92l.34-1.126c.111.034 11.277 3.32 22.427 0l.335 1.127a39.4 39.4 0 0 1-11.205 1.553M4.785 23.907l-.335-1.126c11.5-3.422 22.634-.14 23.1 0l-.34 1.126c-.11-.034-11.274-3.319-22.425 0m6.683 4.857a35.45 35.45 0 0 1-.742-25.71l1.082.461A34.23 34.23 0 0 0 12.55 28.3Zm8.973 0L19.36 28.3a34.23 34.23 0 0 0 .74-24.785l1.082-.461a35.46 35.46 0 0 1-.741 25.71"></svg:path><svg:path d="M3 15.412v1.176h26v-1.176Z"></svg:path><svg:path d="M15.412 3h1.176v26h-1.176Z"></svg:path></svg:g>`,
+})
+export class VscodeIconsFileTypeGeojsonIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -6887,6 +6938,40 @@ export class VscodeIconsFileTypeLayoutIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[vscodeIconsFileTypeLeanIcon],svg[vscode-icons-file-type-lean-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="#dedede" stroke-width="2" d="m3 3l13 25L29 3M10 16h12"></svg:path>`,
+})
+export class VscodeIconsFileTypeLeanIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeLeanconfigIcon],svg[vscode-icons-file-type-leanconfig-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="#dedede" stroke-width="2" d="m3 3l13 25L29 3M10 16h12"></svg:path><svg:path fill="#99b8c4" d="m27.075 25.107l.363-.361c1.68.055 1.706 0 1.78-.177l.462-1.124l.034-.107l-.038-.093c-.02-.049-.081-.2-1.13-1.2v-.526c1.211-1.166 1.185-1.226 1.116-1.4l-.46-1.136c-.069-.17-.1-.237-1.763-.191l-.364-.367a8 8 0 0 0-.057-1.657l-.047-.106l-1.2-.525c-.177-.081-.239-.11-1.372 1.124l-.509-.008c-1.167-1.245-1.222-1.223-1.4-1.152l-1.115.452c-.175.071-.236.1-.169 1.79l-.36.359c-1.68-.055-1.7 0-1.778.177L18.606 20l-.036.108l.038.094c.02.048.078.194 1.13 1.2v.525c-1.211 1.166-1.184 1.226-1.115 1.4l.459 1.137c.07.174.1.236 1.763.192l.363.377a8 8 0 0 0 .055 1.654l.047.107l1.208.528c.176.073.236.1 1.366-1.13l.509.006c1.168 1.247 1.228 1.223 1.4 1.154l1.113-.45c.176-.075.237-.102.169-1.795m-4.788-2.632a2 2 0 1 1 2.618 1.14a2.023 2.023 0 0 1-2.618-1.14"></svg:path>`,
+})
+export class VscodeIconsFileTypeLeanconfigIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vscodeIconsFileTypeLefthookIcon],svg[vscode-icons-file-type-lefthook-icon]',
   host: {
     role: 'img',
@@ -7907,6 +7992,40 @@ export class VscodeIconsFileTypeLightLarkIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[vscodeIconsFileTypeLightLeanIcon],svg[vscode-icons-file-type-light-lean-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="#000" stroke-width="2" d="m3 3l13 25L29 3M10 16h12"></svg:path>`,
+})
+export class VscodeIconsFileTypeLightLeanIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeLightLeanconfigIcon],svg[vscode-icons-file-type-light-leanconfig-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="#000" stroke-width="2" d="m3 3l13 25L29 3M10 16h12"></svg:path><svg:path fill="#99b8c4" d="m27.075 25.107l.363-.361c1.68.055 1.706 0 1.78-.177l.462-1.124l.034-.107l-.038-.093c-.02-.049-.081-.2-1.13-1.2v-.526c1.211-1.166 1.185-1.226 1.116-1.4l-.46-1.136c-.069-.17-.1-.237-1.763-.191l-.364-.367a8 8 0 0 0-.057-1.657l-.047-.106l-1.2-.525c-.177-.081-.239-.11-1.372 1.124l-.509-.008c-1.167-1.245-1.222-1.223-1.4-1.152l-1.115.452c-.175.071-.236.1-.169 1.79l-.36.359c-1.68-.055-1.7 0-1.778.177L18.606 20l-.036.108l.038.094c.02.048.078.194 1.13 1.2v.525c-1.211 1.166-1.184 1.226-1.115 1.4l.459 1.137c.07.174.1.236 1.763.192l.363.377a8 8 0 0 0 .055 1.654l.047.107l1.208.528c.176.073.236.1 1.366-1.13l.509.006c1.168 1.247 1.228 1.223 1.4 1.154l1.113-.45c.176-.075.237-.102.169-1.795m-4.788-2.632a2 2 0 1 1 2.618 1.14a2.023 2.023 0 0 1-2.618-1.14"></svg:path>`,
+})
+export class VscodeIconsFileTypeLightLeanconfigIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vscodeIconsFileTypeLightLernaIcon],svg[vscode-icons-file-type-light-lerna-icon]',
   host: {
     role: 'img',
@@ -7951,6 +8070,23 @@ export class VscodeIconsFileTypeLightMailingIcon {
   template: `<svg:path fill="#333" d="M4.193 26.809c-1.49 0-2.544-1.478-2.084-2.919L5.94 11.888a2.195 2.195 0 0 1 2.084-1.541c1.489 0 2.544 1.478 2.084 2.919L6.277 25.268a2.195 2.195 0 0 1-2.084 1.541"></svg:path><svg:path fill="#1572eb" d="M21.548 4c-.973 0-1.855.583-2.25 1.487l-5.653 12.921l-2.04-4.663l-.004.014l-2.271 7.112l1.971 4.506a2.46 2.46 0 0 0 2.25 1.487l.093-.003l.092.003c.973 0 1.855-.583 2.25-1.487l7.812-17.85C24.523 5.867 23.331 4 21.548 4"></svg:path><svg:path fill="#333" d="M29.891 23.89L25.024 8.647l-2.664 6.09l3.363 10.531a2.195 2.195 0 0 0 2.084 1.541c1.489 0 2.544-1.478 2.084-2.919"></svg:path>`,
 })
 export class VscodeIconsFileTypeLightMarkuplintIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeLightMcpIcon],svg[vscode-icons-file-type-light-mcp-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.7" d="m4.4 15l11-11c1.5-1.5 4-1.5 5.5 0v0c1.5 1.5 1.5 4 0 5.5l-8.3 8.3m0 0l8.3-8.3c1.5-1.5 4-1.5 5.5 0l.057.057c1.5 1.5 1.5 4 0 5.5l-10 10c-.51.51-.51 1.3 0 1.8l2 2m-.4-22l-8.1 8.1c-1.5 1.5-1.5 4 0 5.5v0c1.5 1.5 4 1.5 5.5 0l8.1-8.1"></svg:path>`,
+})
+export class VscodeIconsFileTypeLightMcpIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8220,7 +8356,7 @@ export class VscodeIconsFileTypeLightPnpmIcon {
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="#56b3b4" d="M21.714 8.571h1.143a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-1.143a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571"></svg:path><svg:path fill="#ea5e5e" d="M4.571 26.857h5.714a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H4.571a.57.57 0 0 1-.571-.57a.57.57 0 0 1 .571-.572"></svg:path><svg:path fill="#bf85bf" d="M18.286 17.714h3.429a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-3.429a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571"></svg:path><svg:path fill="#ea5e5e" d="M11.429 17.714H16a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-4.571a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571"></svg:path><svg:path fill="#56b3b4" d="M4.571 17.714h4.572a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H4.571a.57.57 0 0 1-.571-.57a.57.57 0 0 1 .571-.572"></svg:path><svg:path fill="#bf85bf" d="M4.571 22.286h5.714a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H4.571A.57.57 0 0 1 4 22.857a.57.57 0 0 1 .571-.571m0-9.143h5.714a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H4.571A.57.57 0 0 1 4 13.714a.57.57 0 0 1 .571-.571"></svg:path><svg:path fill="#f7ba3e" d="M10.286 6.286h11.428a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H10.286a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571"></svg:path><svg:path fill="#ea5e5e" d="M4.571 6.286H8a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.572H4.571A.57.57 0 0 1 4 6.857a.57.57 0 0 1 .571-.571"></svg:path><svg:path fill="#f7ba3e" d="M9.143 24.571h1.143a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H9.143a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571"></svg:path><svg:path fill="#56b3b4" d="M9.143 10.857h1.143a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H9.143a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571M4.571 24.571h2.286a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H4.571a.57.57 0 0 1-.571-.57a.57.57 0 0 1 .571-.572"></svg:path><svg:path fill="#f7ba3e" d="M4.571 10.857h2.286a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.572H4.571A.57.57 0 0 1 4 11.429a.57.57 0 0 1 .571-.572"></svg:path><svg:path fill="#d0d4d8" d="M19.429 24.571h1.143a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-1.143a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571m-6.858 0h4.571a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-4.571a.57.57 0 0 1-.571-.57a.57.57 0 0 1 .571-.572m10.286 0h4.571a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-4.571a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571" opacity=".5"></svg:path><svg:path fill="#56b3b4" d="M13.714 15.429h9.143a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-9.143a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571"></svg:path><svg:path fill="#f7ba3e" d="M8 15.429h3.429A.57.57 0 0 1 12 16a.57.57 0 0 1-.571.571H8A.57.57 0 0 1 7.429 16A.57.57 0 0 1 8 15.429"></svg:path><svg:path fill="#ea5e5e" d="M4.571 15.429h1.143a.57.57 0 0 1 .572.571a.57.57 0 0 1-.571.571H4.571A.57.57 0 0 1 4 16a.57.57 0 0 1 .571-.571"></svg:path><svg:path fill="#bf85bf" d="M14.857 8.571h4.571a.57.57 0 0 1 .572.572a.57.57 0 0 1-.571.571h-4.572a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.572"></svg:path><svg:path fill="#56b3b4" d="M4.571 8.571h8a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-8A.57.57 0 0 1 4 9.143a.57.57 0 0 1 .571-.572"></svg:path><svg:path fill="#f7ba3e" d="M8 20h10.286a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H8a.57.57 0 0 1-.571-.571A.57.57 0 0 1 8 20"></svg:path><svg:path fill="#bf85bf" d="M4.571 20h1.143a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H4.571A.57.57 0 0 1 4 20.571A.57.57 0 0 1 4.571 20"></svg:path><svg:path fill="#ea5e5e" d="M18.286 10.857H24a.57.57 0 0 1 .571.571A.57.57 0 0 1 24 12h-5.714a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.572"></svg:path><svg:path fill="#f7ba3e" d="M18.286 13.143H24a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-5.714a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571"></svg:path><svg:path fill="#56b3b4" d="M4.571 4h13.715a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H4.571A.57.57 0 0 1 4 4.571A.57.57 0 0 1 4.571 4"></svg:path><svg:path fill="#d0d4d8" d="M20.571 4h6.857a.57.57 0 0 1 .572.571a.57.57 0 0 1-.571.571h-6.858A.57.57 0 0 1 20 4.571A.57.57 0 0 1 20.571 4m0 16h2.286a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-2.286a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571m4.572 0h2.286a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-2.286a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571M24 17.714h3.429a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H24a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571m0-11.428h3.429a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H24a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571m1.143 9.143h2.286A.57.57 0 0 1 28 16a.57.57 0 0 1-.571.571h-2.286a.57.57 0 0 1-.572-.571a.57.57 0 0 1 .572-.571m0-6.858h2.286a.57.57 0 0 1 .571.572a.57.57 0 0 1-.571.571h-2.286a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.572m1.143 2.286h1.143a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-1.143a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571m0 2.286h1.143a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-1.143a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571m-9.143 9.143h10.286a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571H17.143a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571m-4.572 0h2.286a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-2.286a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571m9.143 4.571h5.714a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-5.714a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571m-9.143 0h6.857a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-6.857a.57.57 0 0 1-.571-.57a.57.57 0 0 1 .571-.572m0-16H16a.57.57 0 0 1 .571.571A.57.57 0 0 1 16 12h-3.429a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.572m0 2.286H16a.57.57 0 0 1 .571.571a.57.57 0 0 1-.571.571h-3.429a.57.57 0 0 1-.571-.571a.57.57 0 0 1 .571-.571" opacity=".5"></svg:path>`,
+  template: `<svg:g stroke-linecap="round" stroke-width="1.33"><svg:path stroke="#56b3b4" d="M2.45 2.45h16.3M2.45 7.87h9.48m10.8 0h1.35m-16.3 2.71h1.35M13.19 16h10.8m-21.7 2.71h5.42m-5.42 8.13H5"></svg:path><svg:path stroke="#ea5e5e" d="M2.45 5.16h4.06m12.2 5.42h6.77M2.48 16h1.35m6.77 2.71h5.42m-13.5 10.8h6.77"></svg:path><svg:path stroke="#f7b93e" d="M9.23 5.16h13.5m-20.3 5.42h2.71m13.5 2.71h6.77M6.41 16h4.06m-4.06 5.42h12.2m-10.8 5.42h1.35"></svg:path><svg:path stroke="#bf85bf" d="M14.6 7.87h5.42m-17.6 5.42h6.77m9.48 5.42h4.06m-20.3 2.71h1.35m-1.35 2.71H9.2"></svg:path><svg:path stroke="#d0d4d8" d="M21.4 2.45h8.13m-4.06 2.71h4.06m-2.71 2.71h2.71m-17.6 2.71h4.06m12.2 0h1.35m-17.6 2.71H16m12.2 0h1.35M26.84 16h2.71m-4.06 2.71h4.06m-8.13 2.71h2.71m2.71 0h2.71m-17.6 2.71h2.71m2.71 0h12.2m-17.6 2.71h5.42m2.71 0h1.35m2.71 0h5.42m-17.6 2.71h8.13m2.71 0h6.77" opacity=".5"></svg:path></svg:g>`,
 })
 export class VscodeIconsFileTypeLightPrettierIcon {
   readonly viewBox = input("0 0 32 32")
@@ -8359,142 +8495,6 @@ export class VscodeIconsFileTypeLightRehypeIcon {
   template: `<svg:path fill="#d80303" d="M9.966 13.338a2 2 0 0 0-1.215-.315a2.11 2.11 0 0 0-1.728.887a3.83 3.83 0 0 0-.693 2.414V21H4v-9.771h2.33v2.013h.04a3.4 3.4 0 0 1 1.05-1.607A2.44 2.44 0 0 1 9 11.057a2.05 2.05 0 0 1 .964.182Z"></svg:path><svg:path d="M28 21h-2.33v-5.324a4.14 4.14 0 0 0-.457-2.224a1.71 1.71 0 0 0-1.542-.687a1.88 1.88 0 0 0-1.552.869a3.4 3.4 0 0 0-.638 2.08V21h-2.34v-5.506q0-2.728-2.029-2.729a1.86 1.86 0 0 0-1.552.821a3.5 3.5 0 0 0-.608 2.128V21h-2.33v-9.771h2.33v1.546h.04A3.6 3.6 0 0 1 18.237 11a3.17 3.17 0 0 1 1.863.558a2.78 2.78 0 0 1 1.09 1.465A3.69 3.69 0 0 1 24.605 11Q28 11 28 14.979Z"></svg:path>`,
 })
 export class VscodeIconsFileTypeLightRemarkIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeLightReplitIcon],svg[vscode-icons-file-type-light-replit-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="#3d4047"><svg:path d="M1024.5 534.05c1.23 13.58 2.08 27.28 2.08 41.19c0-13.91-.85-27.6-2.08-41.19" class="prefix__cls-2"></svg:path><svg:path d="M359 531.68S234.25 991.32 734.26 995.32c156.88-58.4 272.48-201.58 290-374.2c1.21-11.94 1.57-24.12 1.84-36.32c.05-3.21.48-6.33.48-9.56c0-13.9-.85-27.61-2.08-41.19C892.4 1054.08 308 850.39 359 531.68" class="prefix__cls-2"></svg:path><svg:path d="M617.54 361.07S152 231.06 159.16 738.68a449.9 449.9 0 0 0 108.49 162.17c2 1.89 4.07 3.68 6.09 5.54a450 450 0 0 0 42.54 34.67c2.31 1.65 4.48 3.47 6.8 5.08a447 447 0 0 0 49.11 29.16c4.93 2.54 10 4.86 15 7.23a444 444 0 0 0 44.85 18.2c3.75 1.28 7.33 2.88 11.13 4.07A445 445 0 0 0 499 1018c5.71 1 11.48 1.84 17.26 2.64a450 450 0 0 0 59.11 4.59c.76 0 1.49.12 2.25.12c14.92 0 29.65-.8 44.18-2.23C99.46 898.55 298 314.47 617.54 361.07" class="prefix__cls-2"></svg:path><svg:path d="M799 601.8s110.14-464.34-385.64-443.6c-166.25 65.67-283.94 227.43-283.94 417a451 451 0 0 0 4.61 61C238.37 110.86 832.8 281 799 601.8" class="prefix__cls-2"></svg:path><svg:path d="M560.95 801.62s466.35 60.88 437.16-382.51C934.64 248.44 770.76 126.62 578 126.62a450 450 0 0 0-81.35 7.73c519.64 63.79 384.58 671.81 64.3 667.27" class="prefix__cls-2"></svg:path><svg:path d="M707.46 575.25A125.65 125.65 0 1 1 581.85 449.6a125.64 125.64 0 0 1 125.61 125.65" class="prefix__cls-3"></svg:path></svg:g>`,
-})
-export class VscodeIconsFileTypeLightReplitIcon {
-  readonly viewBox = input("0 0 1156 1156")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeLightRetextIcon],svg[vscode-icons-file-type-light-retext-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#03d803" d="M14.721 14.546a1.85 1.85 0 0 0-1.165-.318a2 2 0 0 0-1.657.9a4 4 0 0 0-.664 2.436v4.719H9v-9.865h2.235v2.032h.038a3.43 3.43 0 0 1 1.007-1.623a2.27 2.27 0 0 1 1.517-.583a1.9 1.9 0 0 1 .924.183Z"></svg:path><svg:path d="M23 22.173a3.9 3.9 0 0 1-1.724.327q-2.871 0-2.87-2.754V14.17h-1.647v-1.752h1.647v-2.282L20.64 9.5v2.918H23v1.752h-2.36v4.93a1.94 1.94 0 0 0 .318 1.252a1.32 1.32 0 0 0 1.06.375A1.54 1.54 0 0 0 23 20.4Z"></svg:path>`,
-})
-export class VscodeIconsFileTypeLightRetextIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeLightRomeIcon],svg[vscode-icons-file-type-light-rome-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#27272a" d="M12.84 6.865a.727.727 0 0 1-.414 1c-3.692 1.31-6.325 4.7-6.325 8.675v.728H1.935v-.728c0-5.63 3.694-10.437 8.898-12.342a.727.727 0 0 1 .908.37zM1.934 18.656H6.1v11.108H1.935zm27.77-2.116v.728H25.54v-.728c0-3.975-2.63-7.363-6.325-8.676a.727.727 0 0 1-.415-.999l1.098-2.3a.727.727 0 0 1 .907-.37c5.207 1.908 8.9 6.716 8.9 12.345m-4.165 2.116h4.166v11.108H25.54z" class="cls-1"></svg:path><svg:path fill="#ffc905" d="M18.463 2.173a.73.73 0 0 1 .56 1.035l-.2.418l-1.547 3.24a.73.73 0 0 1-.703.413q-.374-.02-.752-.02t-.753.02a.73.73 0 0 1-.703-.413l-1.548-3.24l-.2-.418a.73.73 0 0 1 .56-1.035a19.6 19.6 0 0 1 5.286 0m5.689 14.367v13.224h-4.166V16.54c0-2.191-1.865-3.967-4.165-3.967s-4.166 1.774-4.166 3.967v13.224H7.489V16.54c0-4.382 3.73-7.934 8.332-7.934s8.33 3.552 8.33 7.934" class="cls-2"></svg:path>`,
-})
-export class VscodeIconsFileTypeLightRomeIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeLightRubocopIcon],svg[vscode-icons-file-type-light-rubocop-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="M27.05 13.9V13a1.793 1.793 0 0 0-1.8-1.8H6.65a1.793 1.793 0 0 0-1.8 1.8v.9a1.53 1.53 0 0 0-.7 1.2v2.4a1.39 1.39 0 0 0 .7 1.2v.9a1.793 1.793 0 0 0 1.8 1.8h18.7a1.793 1.793 0 0 0 1.8-1.8v-.9a1.53 1.53 0 0 0 .7-1.2v-2.4a1.74 1.74 0 0 0-.8-1.2M15.95 2a9.925 9.925 0 0 0-9.8 8.6h19.6a9.925 9.925 0 0 0-9.8-8.6m-2.9 22h5.8l.6.7l.9-.7l-.9-1.1h-7l-.9 1.1l.9.7z"></svg:path><svg:path fill="#ec1c24" d="M23.55 17.6H8.35a1.3 1.3 0 1 1 0-2.6h15.3a1.324 1.324 0 0 1 1.3 1.3a1.49 1.49 0 0 1-1.4 1.3"></svg:path><svg:path d="M23.05 22v3.8a1.967 1.967 0 0 1-1.9 1.9h-1a.86.86 0 0 1-.6-.3l-1.2-1.6a.6.6 0 0 0-.6-.3h-3.6a.76.76 0 0 0-.5.2l-1.3 1.6a.6.6 0 0 1-.6.3h-1a1.967 1.967 0 0 1-1.9-1.9V22h-2.3v3.8a4.225 4.225 0 0 0 4.2 4.2h10.4a4.225 4.225 0 0 0 4.2-4.2V22Z"></svg:path>`,
-})
-export class VscodeIconsFileTypeLightRubocopIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeLightRustIcon],svg[vscode-icons-file-type-light-rust-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#050505" d="M15.124 5.3a.832.832 0 1 1 .832.832a.83.83 0 0 1-.832-.832M5.2 12.834a.832.832 0 1 1 .832.832a.83.83 0 0 1-.832-.832m19.856.039a.832.832 0 1 1 .832.832a.83.83 0 0 1-.832-.832m-17.451 1.14a.76.76 0 0 0 .386-1l-.369-.835h1.452v6.545h-2.93a10.3 10.3 0 0 1-.332-3.911Zm6.074.161v-1.929h3.458c.179 0 1.261.206 1.261 1.016c0 .672-.83.913-1.513.913ZM8.958 24.561a.832.832 0 1 1 .832.832a.83.83 0 0 1-.832-.832m12.331.039a.832.832 0 1 1 .832.832a.83.83 0 0 1-.832-.832m.257-1.887a.76.76 0 0 0-.9.584l-.418 1.949a10.25 10.25 0 0 1-8.545-.041l-.417-1.949a.76.76 0 0 0-.9-.583l-1.721.37a10 10 0 0 1-.89-1.049h8.374c.095 0 .158-.017.158-.1v-2.966c0-.086-.063-.1-.158-.1h-2.45v-1.881h2.649a1.665 1.665 0 0 1 1.629 1.412c.105.413.336 1.757.494 2.187c.157.483.8 1.447 1.482 1.447h4.323a10 10 0 0 1-.949 1.1Zm4.65-7.821a10.3 10.3 0 0 1 .022 1.779h-1.051c-.105 0-.148.069-.148.172v.483c0 1.136-.641 1.384-1.2 1.447c-.535.06-1.128-.224-1.2-.551a3.62 3.62 0 0 0-1.671-2.808c1.03-.654 2.1-1.619 2.1-2.911A3.29 3.29 0 0 0 21.44 9.8a4.56 4.56 0 0 0-2.2-.724H8.367A10.25 10.25 0 0 1 14.1 5.84l1.282 1.344a.76.76 0 0 0 1.072.026l1.434-1.372a10.25 10.25 0 0 1 7.015 5l-.982 2.217a.76.76 0 0 0 .386 1Zm2.448.036l-.033-.343l1.011-.943a.42.42 0 0 0-.013-.595a.4.4 0 0 0-.121-.081l-1.288-.483l-.1-.334l.806-1.12a.42.42 0 0 0-.13-.581a.4.4 0 0 0-.133-.055l-1.363-.222l-.164-.306l.573-1.257a.42.42 0 0 0-.236-.544a.4.4 0 0 0-.146-.029l-1.383.048l-.224-.264l.318-1.347a.42.42 0 0 0-.343-.487a.4.4 0 0 0-.144 0l-1.348.315l-.266-.219l.049-1.381a.42.42 0 0 0-.431-.411a.4.4 0 0 0-.141.028l-1.257.573l-.306-.164l-.222-1.363a.42.42 0 0 0-.5-.318a.4.4 0 0 0-.133.055l-1.121.806l-.333-.1l-.483-1.293a.42.42 0 0 0-.555-.215a.4.4 0 0 0-.12.08l-.946 1.012l-.343-.033l-.728-1.177a.42.42 0 0 0-.688 0l-.728 1.177l-.343.033l-.943-1.012a.42.42 0 0 0-.595.015a.4.4 0 0 0-.08.12L12.483 3.8l-.333.1l-1.12-.8a.42.42 0 0 0-.581.13a.4.4 0 0 0-.055.133l-.222 1.363l-.306.164l-1.258-.573a.42.42 0 0 0-.544.239a.4.4 0 0 0-.028.144l.048 1.383l-.266.217l-1.347-.316a.42.42 0 0 0-.487.343a.4.4 0 0 0 0 .144L6.3 7.819l-.218.265L4.7 8.036a.422.422 0 0 0-.383.573l.573 1.257l-.164.306l-1.363.222a.42.42 0 0 0-.318.5a.4.4 0 0 0 .055.133l.806 1.12l-.1.334l-1.293.483a.42.42 0 0 0-.215.555a.4.4 0 0 0 .081.121l1.011.943l-.033.343l-1.177.728a.42.42 0 0 0 0 .688l1.177.728l.033.343l-1.011.943a.42.42 0 0 0 .015.595a.4.4 0 0 0 .119.08l1.293.483l.1.334l-.806 1.124a.42.42 0 0 0 .131.581a.4.4 0 0 0 .133.055l1.363.222l.164.307l-.573 1.257a.42.42 0 0 0 .24.545a.4.4 0 0 0 .143.028l1.383-.048l.219.266l-.317 1.348a.42.42 0 0 0 .341.486a.4.4 0 0 0 .146 0l1.345-.319l.266.218l-.049 1.382a.42.42 0 0 0 .429.41a.4.4 0 0 0 .143-.028l1.257-.573l.306.164l.222 1.362a.42.42 0 0 0 .5.319a.4.4 0 0 0 .133-.055l1.12-.807l.334.1l.483 1.292a.42.42 0 0 0 .556.214a.4.4 0 0 0 .119-.08l.943-1.011l.343.034l.728 1.177a.42.42 0 0 0 .588.1a.4.4 0 0 0 .1-.1l.728-1.177l.343-.034l.943 1.011a.42.42 0 0 0 .595-.015a.4.4 0 0 0 .08-.119l.483-1.292l.334-.1l1.12.807a.42.42 0 0 0 .581-.131a.4.4 0 0 0 .055-.133l.222-1.362l.306-.164l1.257.573a.42.42 0 0 0 .544-.239a.4.4 0 0 0 .028-.143l-.048-1.384l.265-.218l1.347.317a.42.42 0 0 0 .487-.34a.5.5 0 0 0 0-.146l-.309-1.346l.218-.266l1.383.048a.42.42 0 0 0 .41-.431a.4.4 0 0 0-.028-.142l-.573-1.257l.164-.307l1.363-.222a.42.42 0 0 0 .319-.5a.4.4 0 0 0-.056-.135l-.806-1.12l.1-.334l1.293-.483a.42.42 0 0 0 .215-.554a.4.4 0 0 0-.081-.121l-1.011-.943l.033-.343l1.177-.728a.42.42 0 0 0 0-.688Z"></svg:path>`,
-})
-export class VscodeIconsFileTypeLightRustIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeLightRustToolchainIcon],svg[vscode-icons-file-type-light-rust-toolchain-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="m62.1 50l4.5-4.5a13.1 13.1 0 0 0 10.1-.2a1.245 1.245 0 0 0 .638-1.642a1.2 1.2 0 0 0-.238-.358l-8-8a2.416 2.416 0 0 1-.084-3.416q.04-.043.084-.084l8-8a1.238 1.238 0 0 0-.4-2a12.944 12.944 0 0 0-17.5 16.3l-4.6 4.6Zm-8.6-6.3l-6.2-6.2l-7.4 7.4l6.2 6.2l7.4 7.4l22.8 22.8a1.69 1.69 0 0 0 2.39.01l.01-.01l5.1-5.1a1.634 1.634 0 0 0 .091-2.309a1 1 0 0 0-.091-.091L60.9 51.2Z"></svg:path><svg:path d="m80.5 27.8l-6.7 6.7a1.39 1.39 0 0 0 0 1.9l5.1 5.1a1.335 1.335 0 0 0 1.889.022a1 1 0 0 0 .111-.122a12.91 12.91 0 0 0 1.7-13.2a1.333 1.333 0 0 0-2.1-.4M29.4 59.4l8 8a2.416 2.416 0 0 1 .084 3.416l-.084.084l-8 8a1.238 1.238 0 0 0 .4 2a12.916 12.916 0 0 0 17.5-16.2l5-5l-7.4-7.4l-4.9 4.9a13.35 13.35 0 0 0-10.2.2a1.245 1.245 0 0 0-.638 1.642a1.2 1.2 0 0 0 .238.358"></svg:path><svg:path d="M25.6 61.3a12.91 12.91 0 0 0-1.7 13.2a1.33 1.33 0 0 0 2.2.4l6.7-6.7a1.39 1.39 0 0 0 0-1.9l-5.1-5.1a1.444 1.444 0 0 0-2.042.036zM27.3 39h.5l-.5-.5Z"></svg:path><svg:path d="m31.9 46l1.5-1.5l-5.5-5.5h-.5a.9.9 0 0 1 .1-.5l-1.1-1.1l-1.5 1.5l-.9-.8a2.05 2.05 0 0 0-2.9 0l-.4.4a2.05 2.05 0 0 0 0 2.9l8.7 8.7a2.05 2.05 0 0 0 2.9 0l.4-.4a2.05 2.05 0 0 0 0-2.9Zm8.5-22.3l7 7c8.1-5.4 12.6-.9 6.4-7.1c-4.3-4.3-9.7-2.3-13.4.1m6.5 8.9l-.8-.8l-7.1-7.2l-.8-.8a1.933 1.933 0 0 0-2.733-.067l-.067.067l-8.7 8.7a2.05 2.05 0 0 0 0 2.9l.6.6l.1.1l.7.7c1.6-2.4 4.7-4.8 2.3-7.1c2.4 2.4-.7 4.8-2.3 7.1l2.1 2.1l4.4 4.4l.8.8a1.98 1.98 0 0 0 1.4.6h.4a2 2 0 0 0 .8-.4c.1-.1.2-.1.2-.2l.4-.4l7.4-7.4l.6-.6l.3-.3a1.4 1.4 0 0 0 .3-.4a1.846 1.846 0 0 0-.3-2.4"></svg:path><svg:path d="M52.5.3a1.46 1.46 0 0 0-1.3.7l-2.7 4.4l-1.3.1l-3.5-3.8a1.52 1.52 0 0 0-2.151-.024a1.5 1.5 0 0 0-.349.524L39.4 7l-1.2.4l-4.2-3a1.64 1.64 0 0 0-2.4 1l-.8 5.1l-1.2.5l-4.7-2.1a1.528 1.528 0 0 0-2.1 1.4l.2 5.2l-1 .8l-5-1.2a1.553 1.553 0 0 0-1.8 1.8l1.2 5l-.8 1l-5.2-.2a1.54 1.54 0 0 0-1.5 1.579a1.5 1.5 0 0 0 .1.521l2.1 4.7l-.6 1.1l-5.1.8a1.62 1.62 0 0 0-1.181 1.96a1.6 1.6 0 0 0 .181.44l3 4.2l-.4 1.4l-4.8 1.8a1.53 1.53 0 0 0-.5 2.5l3.8 3.5l-.1 1.3L1 51.2a1.59 1.59 0 0 0-.386 2.214A1.6 1.6 0 0 0 1 53.8l4.4 2.7l.1 1.3l-3.8 3.5a1.52 1.52 0 0 0-.024 2.151a1.5 1.5 0 0 0 .524.349L7 65.7l.4 1.2l-3 4.2a1.62 1.62 0 0 0 .56 2.219a1.6 1.6 0 0 0 .44.181l5.1.8l.6 1.1L9 80.1a1.528 1.528 0 0 0 1.4 2.1l5.2-.2l.8 1l-1.2 5a1.553 1.553 0 0 0 1.8 1.8l5-1.2l1 .8l-.2 5.2a1.54 1.54 0 0 0 1.579 1.5a1.5 1.5 0 0 0 .521-.1l4.7-2.1l1.1.6l.8 5.1a1.62 1.62 0 0 0 1.96 1.181a1.6 1.6 0 0 0 .44-.181l4.2-3l1.2.4l1.8 4.8a1.53 1.53 0 0 0 2.5.5l3.5-3.8l1.3.1l2.7 4.4a1.59 1.59 0 0 0 2.214.386A1.6 1.6 0 0 0 53.7 104l2.7-4.4l1.3-.1l3.5 3.8a1.52 1.52 0 0 0 2.151.024a1.5 1.5 0 0 0 .349-.524l1.8-4.8l1.2-.4l4.2 3a1.64 1.64 0 0 0 2.4-1l.8-5.1l1.1-.6l4.7 2.1a1.528 1.528 0 0 0 2.1-1.4l-.2-5.2l1-.8l5 1.2a1.553 1.553 0 0 0 1.8-1.8l-1.2-5l.8-1l5.2.2a1.54 1.54 0 0 0 1.5-1.579a1.5 1.5 0 0 0-.1-.521L94 75.4l.6-1.1l5.1-.8a1.62 1.62 0 0 0 1.181-1.96a1.6 1.6 0 0 0-.181-.44l-3-4.2l.4-1.2l4.8-1.8a1.53 1.53 0 0 0 .5-2.5l-3.8-3.5l.1-1.3l4.4-2.7a1.59 1.59 0 0 0 .386-2.214a1.6 1.6 0 0 0-.386-.386l-4.4-2.7l-.1-1.3l3.8-3.5a1.52 1.52 0 0 0 .024-2.151a1.5 1.5 0 0 0-.524-.349l-4.8-1.8l-.4-1.2l3-4.2a1.64 1.64 0 0 0-1-2.4l-5.1-.8l-.6-1.3l2.1-4.7a1.528 1.528 0 0 0-1.4-2.1l-5.1.2l-.8-1l1.2-5a1.553 1.553 0 0 0-1.8-1.8l-5 1.2l-1-.8l.2-5.2a1.54 1.54 0 0 0-1.579-1.5a1.5 1.5 0 0 0-.521.1l-4.8 2l-1.1-.6l-.8-5.1a1.62 1.62 0 0 0-1.96-1.181a1.6 1.6 0 0 0-.44.181l-4.2 3l-1.3-.3l-1.8-4.8a1.53 1.53 0 0 0-2.5-.5l-3.5 3.8l-1.3-.1L53.9 1a1.51 1.51 0 0 0-1.4-.7m0 9.2a3.03 3.03 0 0 1 3 3.061v.039c0 4.1-6.2 4.1-6.2 0a3.02 3.02 0 0 1 2.931-3.1q.135-.009.269 0m7.1 5.1a38.49 38.49 0 0 1 26.2 18.7l-3.7 8.3a2.826 2.826 0 0 0 1.4 3.7l7.1 3.1c.2 2.2 0 6.6 0 6.6a38.73 38.73 0 0 1-7.4 19.9a52 52 0 0 1-3.4 4.1l-6.6-1.4a2.9 2.9 0 0 0-3.4 2.2l-1.6 7.3a38.21 38.21 0 0 1-31.9-.2l-1.6-7.3a2.88 2.88 0 0 0-3.4-2.2l-6.4 1.4c-1.2-1.2-3.3-3.9-3.3-3.9a37.6 37.6 0 0 1-6-12.2s-.4-1.5-.6-2.2c-.1-.3-.1-.6-.2-.9a23 23 0 0 1-.4-2.6c-.1-.4-.1-.8-.2-1.3c-.1-.7-.2-3.1-.2-3.5v-1.3c0-.5.1-1 .1-1.5c0-.4.1-.9.1-1.3l6.7-3a2.823 2.823 0 0 0 1.434-3.726L22.3 41.3l-3.4-7.7a37.4 37.4 0 0 1 4.9-6.9s.9-1 1.2-1.3c.6-.6 1.2-1.2 1.9-1.8l.2-.2a38.1 38.1 0 0 1 18-8.8l4.8 5a2.84 2.84 0 0 0 4 .1Zm-44.2 23a3 3 0 0 1 1.6.5a3.106 3.106 0 0 1-1.8 5.7a3.1 3.1 0 0 1-3-3.1a3.137 3.137 0 0 1 3.175-3.1Zm74.1.1a3.03 3.03 0 0 1 3 3.061v.039c0 4.1-6.2 4.1-6.2 0a3.2 3.2 0 0 1 3.2-3.1M29.4 81.4a3.03 3.03 0 0 1 3 3.061v.039c0 4.1-6.2 4.1-6.2 0a3.2 3.2 0 0 1 3.2-3.1m46.1.1a3.03 3.03 0 0 1 3 3.061v.039c0 4.1-6.2 4.1-6.2 0a3.137 3.137 0 0 1 3.175-3.1Z"></svg:path>`,
-})
-export class VscodeIconsFileTypeLightRustToolchainIcon {
-  readonly viewBox = input("0 0 105.1 105.1")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeLightSafetensorsIcon],svg[vscode-icons-file-type-light-safetensors-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path d="m19.901 15.342l9.013 3.58c.26.103.481.28.638.509a1.38 1.38 0 0 1 .009 1.55c-.155.231-.375.41-.633.516l-12.43 5.094a1.42 1.42 0 0 1-1.075 0L2.99 21.498a1.4 1.4 0 0 1-.633-.515a1.38 1.38 0 0 1 .647-2.06l9.172-3.642c.525-.209 2.185.403 3.782.409c1.707.005 3.353-.581 3.942-.348zM7.25 20.233l8.71 3.57l8.711-3.57l-8.711-3.46zm9.234-14.59l12.43 4.937c.26.103.482.28.64.509a1.37 1.37 0 0 1 .008 1.551a1.4 1.4 0 0 1-.633.515L16.498 18.25c-.344.14-.73.14-1.075 0L2.991 13.157a1.4 1.4 0 0 1-.632-.515a1.38 1.38 0 0 1 .008-1.552a1.4 1.4 0 0 1 .638-.508l12.431-4.939a1.42 1.42 0 0 1 1.048 0M7.25 11.892l8.71 3.569l8.711-3.57l-8.711-3.46z"></svg:path>`,
-})
-export class VscodeIconsFileTypeLightSafetensorsIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[vscodeIconsFileTypeLightShaderlabIcon],svg[vscode-icons-file-type-light-shaderlab-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#222c37" d="m20.152 16l4.9-8.461L27.42 16l-2.368 8.46zm-2.388 1.374l4.9 8.46l-8.534-2.186l-6.166-6.273Zm4.9-11.21l-4.9 8.461h-9.8l6.166-6.273zm7 6.957L26.669 2L15.511 4.98l-1.652 2.9l-3.351-.02L2.341 16l8.167 8.139l3.35-.025l1.654 2.9L26.669 30l2.989-11.119L27.961 16l1.7-2.879Z"></svg:path>`,
-})
-export class VscodeIconsFileTypeLightShaderlabIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

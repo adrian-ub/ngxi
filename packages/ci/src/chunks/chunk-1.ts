@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[ciOctagonIcon],svg[ci-octagon-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.405 21H9.594c-.49 0-.734 0-.964-.056a2 2 0 0 1-.578-.239c-.202-.123-.374-.296-.72-.642L3.938 16.67c-.346-.346-.52-.519-.643-.72a2 2 0 0 1-.24-.579C3 15.14 3 14.895 3 14.405V9.594c0-.49 0-.734.055-.964q.075-.308.24-.578c.122-.2.293-.37.633-.71l.01-.01l3.394-3.394l.01-.01c.34-.34.51-.51.71-.633q.27-.165.578-.24C8.86 3 9.105 3 9.594 3h4.811c.49 0 .735 0 .965.055c.204.05.4.13.578.24c.202.124.375.297.72.643l3.395 3.394c.346.346.519.518.642.72q.165.27.24.578c.055.23.055.475.055.964v4.811m0 .001c0 .49 0 .734-.056.964a2 2 0 0 1-.239.578c-.123.202-.296.375-.642.72l-3.394 3.395c-.346.346-.519.519-.72.642q-.271.165-.579.24c-.23.055-.475.055-.964.055"></svg:path>`,
+})
+export class CiOctagonIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[ciOctagonCheckIcon],svg[ci-octagon-check-icon]',
   host: {
     role: 'img',
@@ -3633,23 +3650,6 @@ export class CiWindowTerminalIcon {
   template: `<svg:path fill="currentColor" d="M12.006 19.012h-.02c-.062 0-6.265-.012-7.83-.437a2.5 2.5 0 0 1-1.764-1.765A26.494 26.494 0 0 1 1.986 12a26.646 26.646 0 0 1 .417-4.817A2.564 2.564 0 0 1 4.169 5.4c1.522-.4 7.554-.4 7.81-.4H12c.063 0 6.282.012 7.831.437c.859.233 1.53.904 1.762 1.763c.29 1.594.427 3.211.407 4.831a26.568 26.568 0 0 1-.418 4.811a2.51 2.51 0 0 1-1.767 1.763c-1.52.403-7.553.407-7.809.407Zm-2-10.007l-.005 6l5.212-3l-5.207-3Z"></svg:path>`,
 })
 export class CiYoutubeIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ciArrowCircleLeftIcon],svg[ci-arrow-circle-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m11 9l-3 3m0 0l3 3m-3-3h8m5 0a9 9 0 1 0-18 0a9 9 0 0 0 18 0"></svg:path>`,
-})
-export class CiArrowCircleLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

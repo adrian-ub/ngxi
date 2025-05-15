@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[teenyiconsSortAlphabeticallyOutlineIcon],svg[teenyicons-sort-alphabetically-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m3.5 14.5l-.354.354a.5.5 0 0 0 .708 0zm6-6V8H9v.5zm0 6H9v.5h.5zm-5.646.354l3-3l-.708-.708l-3 3zm0-.708l-3-3l-.708.708l3 3zM3 0v14.5h1V0zm6.5 9H12V8H9.5zm2.5 2H9.5v1H12zm-2 .5v-3H9v3zm3-1.5a1 1 0 0 1-1 1v1a2 2 0 0 0 2-2zm-1-1a1 1 0 0 1 1 1h1a2 2 0 0 0-2-2zm0 5H9.5v1H12zm-2 .5v-3H9v3zm3-1.5a1 1 0 0 1-1 1v1a2 2 0 0 0 2-2zm-1-1a1 1 0 0 1 1 1h1a2 2 0 0 0-2-2zm-2-5V2.5H9V7zm3-4.5V7h1V2.5zM11.5 1A1.5 1.5 0 0 1 13 2.5h1A2.5 2.5 0 0 0 11.5 0zM10 2.5A1.5 1.5 0 0 1 11.5 1V0A2.5 2.5 0 0 0 9 2.5zM9.5 5h4V4h-4z"></svg:path>`,
+})
+export class TeenyiconsSortAlphabeticallyOutlineIcon {
+  readonly viewBox = input("0 0 15 15")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[teenyiconsSortDownOutlineIcon],svg[teenyicons-sort-down-outline-icon]',
   host: {
     role: 'img',
@@ -1678,23 +1695,6 @@ export class TeenyiconsZoomInOutlineIcon {
   template: `<svg:path fill="none" stroke="currentColor" d="m14.5 14.5l-4-4M4 6.5h5m-2.5 6a6 6 0 1 1 0-12a6 6 0 0 1 0 12Z"></svg:path>`,
 })
 export class TeenyiconsZoomOutOutlineIcon {
-  readonly viewBox = input("0 0 15 15")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[teenyiconsAirplayOutlineIcon],svg[teenyicons-airplay-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linejoin="round" d="M3 11.5H.5v-10h14v10H12m-4.5-2l-4 4h8z"></svg:path>`,
-})
-export class TeenyiconsAirplayOutlineIcon {
   readonly viewBox = input("0 0 15 15")
   readonly width = input("1em")
   readonly height = input("1em")

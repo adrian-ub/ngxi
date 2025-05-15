@@ -2,6 +2,159 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[vscodeIconsFileTypeVscode2Icon],svg[vscode-icons-file-type-vscode2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#007acc" d="m11.72 18.685l-6.883 5.184L2 22.922L9 16L2 9.077l2.837-.947l6.883 5.184l11.433-11.3L30 4.922v22.155l-6.847 2.909ZM15.287 16l7.865 5.923V10.076Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeVscode2Icon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeVscode3Icon],svg[vscode-icons-file-type-vscode3-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#007acc" d="M29.821 4.321L24.023 2l-12.53 12.212l-7.66-5.827l-1.654.837V22.8l1.644.827l7.65-5.827L24.023 30l5.8-2.321V4.321ZM4.65 19.192v-6.374l3.55 3.167zM16 15.985l7.082-5.3v10.639l-7.092-5.339z"></svg:path>`,
+})
+export class VscodeIconsFileTypeVscode3Icon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeVsixIcon],svg[vscode-icons-file-type-vsix-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#cfcfcf" d="M2 16v14h13v-6H8V8h7V2H2ZM17 5v3h4V6h5v5h-2v4h6V2H17Z"></svg:path><svg:path fill="#cfcfcf" d="M10 16v6h12V10H10Z"></svg:path><svg:path fill="#cfcfcf" d="M24 20.5V24h-7v6h13V17h-6Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeVsixIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeVsixmanifestIcon],svg[vscode-icons-file-type-vsixmanifest-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#cfcfcf" d="M2 16v14h13v-6H8V8h7V2H2ZM17 5v3h4V6h5v5h-2v4h6V2H17Z"></svg:path><svg:path fill="#cfcfcf" d="M10 16v6h12V10H10Z"></svg:path><svg:path fill="#cfcfcf" d="M24 20.5V24h-7v6h13V17h-6Z"></svg:path><svg:path fill="#40535b" d="m26.078 26.787l.675-.67c3.123.1 3.17-.008 3.308-.329l.858-2.089l.064-.2l-.071-.173c-.036-.092-.149-.365-2.1-2.224v-.978c2.25-2.167 2.2-2.278 2.071-2.595l-.855-2.111c-.128-.316-.177-.44-3.277-.355l-.675-.7a15 15 0 0 0-.106-3.079l-.088-.2l-2.23-.976c-.329-.149-.444-.2-2.55 2.089l-.947-.013c-2.162-2.315-2.266-2.276-2.59-2.142l-2.071.838c-.324.131-.439.179-.314 3.328l-.669.667c-3.121-.1-3.169.009-3.3.329l-.866 2.096l-.068.2l.071.174c.036.09.144.36 2.1 2.221v.976c-2.25 2.167-2.2 2.278-2.071 2.6l.854 2.113c.13.323.177.438 3.276.357l.675.7a15.2 15.2 0 0 0 .1 3.075l.088.2l2.244.981c.327.137.439.185 2.539-2.1l.946.011c2.171 2.317 2.283 2.272 2.6 2.145l2.071-.837c.33-.132.439-.184.308-3.329M17.18 21.9a3.718 3.718 0 1 1 4.866 2.118a3.76 3.76 0 0 1-4.866-2.119Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeVsixmanifestIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeVueIcon],svg[vscode-icons-file-type-vue-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#41b883" d="M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6l3.22-5.6Z"></svg:path><svg:path fill="#41b883" d="m2 3.925l14 24.15l14-24.15h-5.6L16 18.415L7.53 3.925Z"></svg:path><svg:path fill="#35495e" d="M7.53 3.925L16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeVueIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeVueconfigIcon],svg[vscode-icons-file-type-vueconfig-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#41b883" d="M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6l3.22-5.6Z"></svg:path><svg:path fill="#41b883" d="m2 3.925l14 24.15l14-24.15h-5.6L16 18.415L7.53 3.925Z"></svg:path><svg:path fill="#35495e" d="M7.53 3.925L16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z"></svg:path><svg:path fill="#99b8c4" d="m26.684 27.192l.456-.447c2.112.068 2.144-.005 2.237-.219l.58-1.393L30 25l-.047-.115c-.025-.061-.1-.243-1.42-1.483v-.652c1.521-1.445 1.489-1.519 1.4-1.73l-.577-1.407c-.087-.211-.12-.294-2.216-.237l-.457-.465a10 10 0 0 0-.071-2.053l-.059-.132l-1.508-.65c-.222-.1-.3-.136-1.724 1.393l-.64-.009c-1.466-1.543-1.535-1.515-1.755-1.428l-1.4.559c-.219.088-.3.119-.212 2.219l-.453.445c-2.11-.068-2.142.006-2.234.219l-.581 1.393L16 21l.048.116c.025.06.1.24 1.419 1.481v.65c-1.521 1.445-1.488 1.519-1.4 1.731l.577 1.409c.089.215.12.292 2.216.238l.456.467a10 10 0 0 0 .07 2.05l.058.133l1.518.654c.221.091.3.124 1.717-1.4l.64.008c1.468 1.545 1.543 1.515 1.757 1.43l1.4-.558c.224-.086.297-.116.208-2.217m-6.013-3.262a2.47 2.47 0 0 1 1.449-3.2a2.525 2.525 0 0 1 3.246 1.429a2.467 2.467 0 0 1-1.405 3.184a2.554 2.554 0 0 1-3.29-1.413"></svg:path>`,
+})
+export class VscodeIconsFileTypeVueconfigIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeVyperIcon],svg[vscode-icons-file-type-vyper-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><svg:path fill="none" d="M0 0h32v32H0z"></svg:path><svg:path fill="#9f4cf2" fill-rule="nonzero" d="m17.96 25.22l-8.421-8.419a1.96 1.96 0 0 1-.532-1.378V3.407c0-.7-.7-1.4-1.4-1.4H4.799c-.7 0-1.4.7-1.4 1.4v13.996c0 .742.273 1.456.799 1.981l9.8 9.797c.546.546 1.26.819 1.981.819h1.4a1.4 1.4 0 0 0 1.4-1.4v-1.392c0-.721-.273-1.435-.819-1.981zM28.601 3.4c0-.707-.693-1.4-1.4-1.4h-2.808c-.7 0-1.4.7-1.4 1.4v12.009a1.98 1.98 0 0 1-.56 1.385l-2.821 2.821a2.8 2.8 0 0 0-.819 1.98v1.4c0 .777.63 1.399 1.4 1.399h1.4c.714 0 1.435-.273 1.981-.818l4.2-4.199c.525-.526.82-1.238.82-1.981V3.4z"></svg:path></svg:g>`,
+})
+export class VscodeIconsFileTypeVyperIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeWallabyIcon],svg[vscode-icons-file-type-wallaby-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#5fb050" d="M2 16h14V2h14v28H2Z"></svg:path>`,
+})
+export class VscodeIconsFileTypeWallabyIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[vscodeIconsFileTypeWallyIcon],svg[vscode-icons-file-type-wally-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#F2C57E" d="m12.8 25.2l-.9 3.8s8.5.2 12-2.7s2.7-2.7 2.7-2.7L22.9 20z"></svg:path><svg:path fill="#BD704B" d="M15.3 25.7s.3 2.8 1.2 3.3c0 0-4.5.4-4.4-.9l.7-2.9z"></svg:path><svg:path fill="#F2C57E" d="M12.2 18.8s.8 1.1 1 2.9s-1.9 3.3 2 3.9c3.4.6 10.6-2.6 8.3-4.9c-1.5-1.5-2.5-2.7-1.9-5.6c.7-2.9-3.3-4.7-3.3-4.7z"></svg:path><svg:path fill="#BD704B" d="M21 17.9s1.3 3.3 5.4 5.8l.4-.7s-3.5-1-5.3-5.1s-.5.1-.5 0M13.7 6.2s-2.4 1-1.3 8.4c.4 4-1.3 3.7-1.7 3.3s1.1-2.4.3-3.1s-1.9-.1-2.9-2.1c-1.3-2.6.2-1.5 1.4-3.8c.8-1.7 1.5-2.6 2.2-2.5c.8.2 1.3-.8 2-.2"></svg:path><svg:g fill="#F2C57E"><svg:path d="M8.9 14.7s.1 1.8-.2 2.7c-.6 1.4.8 3.4 2.7 1.3s-2.4-4-2.5-4"></svg:path><svg:path d="M18.7 6.7s-3.6-1.9-6.6.2s-.6 1.8-2.4 4.5s-.4 8.6 5.4 8.8s5.6-10.8 5.6-10.8s-.7-2.5-2-2.7"></svg:path></svg:g><svg:path fill="#BD704B" d="M17.4 18.8s-1.8 1.6-1.7 2.7c.1 1 4.4.8.6 1.9c-1 .3-1 2.1-.2 2.3c.8.3-3.2-.4-3.2-1.7c.1-1.3.6-3.7-.7-4.6c-.1.1 3.3 1.2 5.2-.6"></svg:path><svg:path fill="#AE4747" d="M12.8 23.9s3.5 1.7 7.1-.3c2.7-1.4 3.5-3 3.3-3.4c0 0 .7 0 1.3.9c.5.7-.3 2.8-4.2 4.5c-3.7 1.5-7 .6-7.7-.1c-.6-.4.2-1.6.2-1.6"></svg:path><svg:path fill="#3F2419" d="M11.4 10.8c-.2 0-.4-.2-.4-.4v-1c0-.2.2-.4.4-.4s.4.2.4.4v1c0 .2-.2.4-.4.4"></svg:path><svg:path fill="#F2C57E" d="M12.5 9.7s-3.1 2.2-4.3 2.7s-1 1.8.6 3.1s6.2-2.2 3.7-5.8"></svg:path><svg:path fill="#BD704B" d="M8 14.7s1.1 1.3.5 2.6c-.5.9 0 2.7 1.8 2.2c0 0-2.1.1-1.2-2.1c.2-.8.2-2.1-1.1-2.7m9.9-8.3s3.4 1.3 2.1 8.8c-.5 4 1.5 3.6 2 3.4c.5-.4.5-1.7 1.4-2.2c.9-.7 3.3-2.8 2.1-4.9s-2.3-1.7-3.2-3c-.7-1.2-1.1-1.4-2-1.4c-.6-.2-1.5-1.2-2.4-.7"></svg:path><svg:path fill="#3F2419" d="M16.9 11.2c-.2 0-.5-.2-.5-.5v-1c0-.2.2-.5.5-.5c.2 0 .5.2.5.5v1.1c0 .3-.2.4-.5.4"></svg:path><svg:g fill="#BD704B"><svg:path d="M16.2 8.9s-1-.6-.2-1c1.1-.7 2.3.4 2.5.9c0 0-1.3-1.2-2.3-.7c-.5.4 0 .8 0 .8m-4.4-.8c0-.1-.1-.2-.2-.2c-.1-.1-.4-.1-.6-.1s-.3.2-.4.3c.1-.2.2-.4.5-.6c.1-.1.2-.1.4-.1s.5.1.7.2s.3.4.3.7c-.1.3-.2.5-.4.6c-.1 0-.1.1-.1 0v-.2q.15-.15 0-.3c-.1-.1-.1-.2-.2-.3m-1.6 8.8s1 3.5 4.9 2.6c3.5-.8 4-3.8 4-3.8c.2.7-.7 4.8-5.5 4.4c-3.5-.3-3.4-3.2-3.4-3.2"></svg:path><svg:path d="M10.9 18.6s-.1 1.4-2.1.7c0 0 1 1.1 2.2-.1c.5-.6-.1-.6-.1-.6m-3.1-5c-.2-.1-.2-.5-.1-.7c.2-.2.6-.4.8-.6c1.5-.7 3-1.5 4.1-2.8c0 0-3.3 2.2-4.9 2.9c-.9.3.1 1.2.1 1.2"></svg:path></svg:g><svg:path fill="#AE4747" d="M7.4 12.9c-.6.6.3 2.1 1.3 2.5c1.1.6 2.9-1.5 2.5-2.1c-.2-.7-2.7-1.4-3.8-.4"></svg:path><svg:path fill="#6A2525" d="M9.6 14.7c-.1-.1-.1-.4 0-.5l.1-.1c0-.1.1-.1.1-.1c.4-.1.8.1 1.1.5c.2.2.1.5-.1.6c-.3.1-.7.2-1 .1c0-.1-.1-.3-.2-.5m-1.2 0c.1-.1.1-.4 0-.5l-.1-.1c0-.1-.1-.1-.1-.1c-.3-.1-.7.1-.9.5c-.3.2-.2.5 0 .6s.6.2.7.1c.3 0 .4-.3.4-.5"></svg:path><svg:path fill="#AE4747" d="M16 30C8.3 30 2 23.7 2 16S8.3 2 16 2s14 6.3 14 14s-6.3 14-14 14m0-26.1C9.4 3.9 3.9 9.4 3.9 16S9.4 28.1 16 28.1S28.1 22.6 28.1 16S22.7 3.9 16 3.9"></svg:path><svg:g fill="#BD704B"><svg:path d="M12.1 6.6s4.2-1.8 7.4.9c0 0-.1-1.2-2.4-1.8c-1.5-.2-4.3-.2-5 .9"></svg:path><svg:ellipse cx="11.6" cy="17.2" rx=".3" ry=".2"></svg:ellipse><svg:ellipse cx="13.5" cy="18.1" rx=".3" ry=".2"></svg:ellipse><svg:ellipse cx="15.1" cy="18.1" rx=".3" ry=".2"></svg:ellipse><svg:ellipse cx="14.3" cy="18.9" rx=".3" ry=".2"></svg:ellipse><svg:ellipse cx="12.3" cy="18.4" rx=".3" ry=".2"></svg:ellipse></svg:g>`,
+})
+export class VscodeIconsFileTypeWallyIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[vscodeIconsFileTypeWasmIcon],svg[vscode-icons-file-type-wasm-icon]',
   host: {
     role: 'img',

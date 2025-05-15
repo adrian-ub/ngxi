@@ -19,23 +19,6 @@ export class ProiconsAccessibilityIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[proiconsAddIcon],svg[proicons-add-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h8m0 0h8m-8 0V4m0 8v8"></svg:path>`,
-})
-export class ProiconsAddIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[proiconsAddCircleIcon],svg[proicons-add-circle-icon]',
   host: {
     role: 'img',
@@ -46,6 +29,23 @@ export class ProiconsAddIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:circle cx="12" cy="12" r="9.25"></svg:circle><svg:path d="M12 8.5v7M8.5 12h7"></svg:path></svg:g>`,
 })
 export class ProiconsAddCircleIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[proiconsAddIcon],svg[proicons-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h8m0 0h8m-8 0V4m0 8v8"></svg:path>`,
+})
+export class ProiconsAddIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,23 +70,6 @@ export class ProiconsAddRhombusIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[proiconsAddSquareIcon],svg[proicons-add-square-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M12 8.5v7M8.5 12h7"></svg:path><svg:rect width="16.5" height="16.5" x="3.75" y="3.75" rx="4"></svg:rect></svg:g>`,
-})
-export class ProiconsAddSquareIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[proiconsAddSquareMultipleIcon],svg[proicons-add-square-multiple-icon]',
   host: {
     role: 'img',
@@ -97,6 +80,23 @@ export class ProiconsAddSquareIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M10.63 7.66v5.94m-2.97-2.97h5.94"></svg:path><svg:rect width="14" height="14" x="3.63" y="3.63" rx="3"></svg:rect><svg:path d="M20.63 7.63v7a6 6 0 0 1-6 6h-7"></svg:path></svg:g>`,
 })
 export class ProiconsAddSquareMultipleIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[proiconsAddSquareIcon],svg[proicons-add-square-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M12 8.5v7M8.5 12h7"></svg:path><svg:rect width="16.5" height="16.5" x="3.75" y="3.75" rx="4"></svg:rect></svg:g>`,
+})
+export class ProiconsAddSquareIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,6 +121,23 @@ export class ProiconsAirplaneIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[proiconsAirplaneLandingIcon],svg[proicons-airplane-landing-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 20.75h18.5m-2.05-7.453a1.783 1.783 0 1 1-.923 3.445L8.185 14.04a4 4 0 0 1-1.32-.628l-2.14-1.543A3.04 3.04 0 0 1 3.47 9.271l.11-2.508a.607.607 0 0 1 .765-.56l.436.117a1.52 1.52 0 0 1 1.086 1.121l.486 2.082c.051.218.218.39.434.448l4.015 1.076l.506-6.735a.607.607 0 0 1 .763-.541l.422.113c.363.097.643.388.725.755l1.692 7.509z"></svg:path>`,
+})
+export class ProiconsAirplaneLandingIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[proiconsAirplaneTakeoffIcon],svg[proicons-airplane-takeoff-icon]',
   host: {
     role: 'img',
@@ -138,16 +155,16 @@ export class ProiconsAirplaneTakeoffIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[proiconsAirplaneLandingIcon],svg[proicons-airplane-landing-icon]',
+  selector: 'svg[proiconsAlarmClockIcon],svg[proicons-alarm-clock-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 20.75h18.5m-2.05-7.453a1.783 1.783 0 1 1-.923 3.445L8.185 14.04a4 4 0 0 1-1.32-.628l-2.14-1.543A3.04 3.04 0 0 1 3.47 9.271l.11-2.508a.607.607 0 0 1 .765-.56l.436.117a1.52 1.52 0 0 1 1.086 1.121l.486 2.082c.051.218.218.39.434.448l4.015 1.076l.506-6.735a.607.607 0 0 1 .763-.541l.422.113c.363.097.643.388.725.755l1.692 7.509z"></svg:path>`,
+  template: `<svg:g fill="none" stroke="currentColor"><svg:path stroke-linecap="round" stroke-width="1.5" d="m21.25 7.072l-3.574-3.574M2.75 7.072l3.574-3.574"></svg:path><svg:circle cx="12" cy="12.753" r="7.75" stroke-width="1.503"></svg:circle><svg:path stroke-linecap="round" stroke-width="1.503" d="m17.514 18.267l2.236 2.235M6.486 18.267L4.25 20.502"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.9 8.353v4.25l3.685 2.117"></svg:path></svg:g>`,
 })
-export class ProiconsAirplaneLandingIcon {
+export class ProiconsAlarmClockIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,16 +189,16 @@ export class ProiconsAlbumIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[proiconsAlarmClockIcon],svg[proicons-alarm-clock-icon]',
+  selector: 'svg[proiconsAlertCircleIcon],svg[proicons-alert-circle-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor"><svg:path stroke-linecap="round" stroke-width="1.5" d="m21.25 7.072l-3.574-3.574M2.75 7.072l3.574-3.574"></svg:path><svg:circle cx="12" cy="12.753" r="7.75" stroke-width="1.503"></svg:circle><svg:path stroke-linecap="round" stroke-width="1.503" d="m17.514 18.267l2.236 2.235M6.486 18.267L4.25 20.502"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.9 8.353v4.25l3.685 2.117"></svg:path></svg:g>`,
+  template: `<svg:g fill="none"><svg:circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.5"></svg:circle><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M12 12.438v-5"></svg:path><svg:circle cx="1.25" cy="1.25" r="1.25" fill="currentColor" transform="matrix(1 0 0 -1 10.75 17.063)"></svg:circle></svg:g>`,
 })
-export class ProiconsAlarmClockIcon {
+export class ProiconsAlertCircleIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -223,23 +240,6 @@ export class ProiconsAlertTriangleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[proiconsAlertCircleIcon],svg[proicons-alert-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:circle cx="12" cy="12" r="9.25" stroke="currentColor" stroke-width="1.5"></svg:circle><svg:path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M12 12.438v-5"></svg:path><svg:circle cx="1.25" cy="1.25" r="1.25" fill="currentColor" transform="matrix(1 0 0 -1 10.75 17.063)"></svg:circle></svg:g>`,
-})
-export class ProiconsAlertCircleIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[proiconsAlignBottomIcon],svg[proicons-align-bottom-icon]',
   host: {
     role: 'img',
@@ -274,16 +274,16 @@ export class ProiconsAlignHorizontalCentersIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[proiconsAlignLeftIcon],svg[proicons-align-left-icon]',
+  selector: 'svg[proiconsAlignRightIcon],svg[proicons-align-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M2.75 2.75v18.5"></svg:path><svg:rect width="6" height="10" rx="2" transform="matrix(0 -1 -1 0 16.25 19.75)"></svg:rect><svg:rect width="6" height="15" rx="2" transform="matrix(0 -1 -1 0 21.25 10.25)"></svg:rect></svg:g>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21.25 2.75v18.5"></svg:path><svg:rect width="6" height="10" x="7.75" y="19.75" rx="2" transform="rotate(-90 7.75 19.75)"></svg:rect><svg:rect width="6" height="15" x="2.75" y="10.25" rx="2" transform="rotate(-90 2.75 10.25)"></svg:rect></svg:g>`,
 })
-export class ProiconsAlignLeftIcon {
+export class ProiconsAlignRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -301,23 +301,6 @@ export class ProiconsAlignLeftIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M2.75 2.75h18.5"></svg:path><svg:rect width="6" height="10" x="19.75" y="16.25" rx="2" transform="rotate(180 19.75 16.25)"></svg:rect><svg:rect width="6" height="15" x="10.25" y="21.25" rx="2" transform="rotate(180 10.25 21.25)"></svg:rect></svg:g>`,
 })
 export class ProiconsAlignTopIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[proiconsAlignRightIcon],svg[proicons-align-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21.25 2.75v18.5"></svg:path><svg:rect width="6" height="10" x="7.75" y="19.75" rx="2" transform="rotate(-90 7.75 19.75)"></svg:rect><svg:rect width="6" height="15" x="2.75" y="10.25" rx="2" transform="rotate(-90 2.75 10.25)"></svg:rect></svg:g>`,
-})
-export class ProiconsAlignRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8495,6 +8478,23 @@ export class ProiconsToolboxIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-width="1.5" d="M5.732 20.5c-2.29 0-3.723-2.498-2.581-4.5L9.419 5.006c1.144-2.008 4.018-2.008 5.163 0L20.849 16c1.142 2.002-.291 4.5-2.581 4.5z"></svg:path>`,
 })
 export class ProiconsTriangleIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[proiconsTuneIcon],svg[proicons-tune-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 12h10.5m0 0a2.5 2.5 0 0 0 5 0m-5 0a2.5 2.5 0 0 1 5 0m0 0h3M7.75 5.25h13.5m-13.5 0a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m-5 13.5h3m0 0a2.5 2.5 0 0 0 5 0m-5 0a2.5 2.5 0 0 1 5 0m0 0h10.5"></svg:path>`,
+})
+export class ProiconsTuneIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

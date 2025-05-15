@@ -53,23 +53,6 @@ export class Emojione3rdPlaceMedalIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[emojioneAbButtonIcon],svg[emojione-ab-button-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#ff5a79" d="M62 52c0 5.5-4.5 10-10 10H12C6.5 62 2 57.5 2 52V12C2 6.5 6.5 2 12 2h40c5.5 0 10 4.5 10 10z"></svg:path><svg:path fill="#fff" d="M28.1 45H32l-8.8-26h-4.4L10 45h3.9l3.1-9.1h8.1zm-9.8-13l2.7-8.1l2.7 8.1zM52 26.5c0-4.1-2.2-7.5-6-7.5H36v26h9.2c3.8 0 6.8-3.4 6.8-7.5c0-2.2-.8-4.1-2.2-5.5c1.4-1.4 2.2-3.3 2.2-5.5m-6.8 14.4h-5.6v-6.8h5.6c1.7 0 3.1 1.5 3.1 3.4c0 1.8-1.4 3.4-3.1 3.4m0-10.9h-5.6v-6.8h5.6c1.7 0 3.1 1.5 3.1 3.4S46.9 30 45.2 30"></svg:path>`,
-})
-export class EmojioneAbButtonIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[emojioneAButtonIcon],svg[emojione-a-button-icon]',
   host: {
     role: 'img',
@@ -87,16 +70,16 @@ export class EmojioneAButtonIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[emojioneAerialTramwayIcon],svg[emojione-aerial-tramway-icon]',
+  selector: 'svg[emojioneAbButtonIcon],svg[emojione-ab-button-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="#94989b"><svg:path d="M30 11.5h4v12h-4z"></svg:path><svg:path d="M39.6 13L23.9 9.9l.5-2.9l3.5.7l3-2.5l3.9.7l2.1 3.5l3.2.6z"></svg:path></svg:g><svg:path fill="#3e4347" d="M62 19.1L2 7V5l60 12z"></svg:path><svg:path fill="#ed4c5c" d="M55 49H9V31.5c0-5.5 4.5-10 10-10h26c5.5 0 10 4.5 10 10z"></svg:path><svg:path fill="#3e4347" d="M51 44.9H13V33.4c0-4.6 3.7-8.3 8.3-8.3h21.4c4.6 0 8.3 3.7 8.3 8.3z"></svg:path><svg:path fill="#dae3ea" d="M55 49c0 5.5-4.5 10-10 10H19c-5.5 0-10-4.5-10-10z"></svg:path><svg:path fill="#ed4c5c" d="M24.8 46.9h-2.7c0-11.8 4-24 4-24h2.7c0-.1-4 12.2-4 24m14.4 0h2.7c0-11.8-4-24-4-24h-2.7c0-.1 4 12.2 4 24M54.1 53c.3-.6.5-1.3.6-2H9.2c.1.7.4 1.4.6 2z"></svg:path>`,
+  template: `<svg:path fill="#ff5a79" d="M62 52c0 5.5-4.5 10-10 10H12C6.5 62 2 57.5 2 52V12C2 6.5 6.5 2 12 2h40c5.5 0 10 4.5 10 10z"></svg:path><svg:path fill="#fff" d="M28.1 45H32l-8.8-26h-4.4L10 45h3.9l3.1-9.1h8.1zm-9.8-13l2.7-8.1l2.7 8.1zM52 26.5c0-4.1-2.2-7.5-6-7.5H36v26h9.2c3.8 0 6.8-3.4 6.8-7.5c0-2.2-.8-4.1-2.2-5.5c1.4-1.4 2.2-3.3 2.2-5.5m-6.8 14.4h-5.6v-6.8h5.6c1.7 0 3.1 1.5 3.1 3.4c0 1.8-1.4 3.4-3.1 3.4m0-10.9h-5.6v-6.8h5.6c1.7 0 3.1 1.5 3.1 3.4S46.9 30 45.2 30"></svg:path>`,
 })
-export class EmojioneAerialTramwayIcon {
+export class EmojioneAbButtonIcon {
   readonly viewBox = input("0 0 64 64")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -114,6 +97,23 @@ export class EmojioneAerialTramwayIcon {
   template: `<svg:defs><svg:path id="emojioneAdmissionTickets0" d="m25.4 54.8l30.4-25.5c-1.5-1.8-1.7-4.1-.9-6.1c-2.4-.1-4.5-1.6-5.4-3.9L12.2 32.8c1.1 3.1-.5 6.5-3.6 7.7l2.3 6.4l6 7.2c2.6-2.2 6.3-1.8 8.5.7"></svg:path></svg:defs><svg:path fill="#fbbf67" d="m64 41.7l-.9-2.5c-.7.3-1.5-.1-1.7-.8c-.3-.7.1-1.5.8-1.7l-1-2.7c-.7.3-1.5-.1-1.7-.8c-.3-.7.1-1.5.8-1.7l-.9-2.5c-.7.3-1.5-.1-1.7-.8c-.3-.7.1-1.5.8-1.7l-.9-2.5c-.7.2-1.4-.1-1.7-.7c-2.7.3-5.4-1.2-6.3-3.9L12.2 32.8c1.1 3.1-.5 6.5-3.6 7.7l7.3 19.9c3.1-1.1 6.5.5 7.7 3.6l37.3-13.6c-1-2.7.1-5.6 2.4-7.1c-.3-.6 0-1.4.7-1.6"></svg:path><svg:path fill="#f55" d="M56.6 46.7L24.4 58.4c-1.7.6-3.6-.3-4.3-2l-5.7-15.7c-.6-1.7.3-3.6 2-4.3l32.2-11.7c1.7-.6 3.6.3 4.3 2l5.7 15.7c.6 1.8-.3 3.7-2 4.3M17 38.1c-.9.3-1.3 1.3-1 2.1l5.7 15.7c.3.9 1.3 1.3 2.1 1L56 45.2c.9-.3 1.3-1.3 1-2.1l-5.7-15.7c-.3-.9-1.3-1.3-2.1-1z"></svg:path><svg:path fill="#89664c" d="m30.9 43.1l-.9.3c-.1 0-.2 0-.2-.1l-.5-1l-.6.2l.3 1.1c0 .1 0 .2-.1.2l-.9.3c-.1 0-.1 0-.2-.1l-1.7-6.9c0-.1 0-.2.1-.2l1.3-.5c.1 0 .2 0 .2.1l3.2 6.4c.1.1.1.2 0 .2m-2.1-1.9l-1.2-2.6h-.1l.8 2.7zm4-4.1l1.2 3.4c.2.7-.1 1.4-.8 1.7l-1.5.5c-.1 0-.2 0-.2-.1l-2-5.6c0-.1 0-.2.1-.2l1.5-.5c.7-.2 1.5.1 1.7.8m-1.1.5c0-.1-.2-.2-.3-.2l-.4.1l1.4 3.8l.3-.1c.1 0 .2-.2.1-.3zm5.3-3.3l2.1 5.6c0 .1 0 .2-.1.2l-.9.3c-.1 0-.2 0-.2-.1l-1-2.6l.2 2.6c0 .1-.1.1-.1 0l-1.5-2.1l1 2.6c0 .1 0 .2-.1.2l-.9.3c-.1 0-.2 0-.2-.1l-2.1-5.6c0-.1 0-.2.1-.2l.8-.3c.1 0 .2 0 .2.1l1.9 2.8l-.3-3.3c0-.1 0-.2.1-.2l.8-.3c.1 0 .2 0 .2.1m4.1 4.9c0 .1 0 .2-.1.2l-.9.3c-.1 0-.2 0-.2-.1l-2-5.6c0-.1 0-.2.1-.2l.9-.3c.1 0 .2 0 .2.1zm1.5-6.9l.3.9c0 .1 0 .2-.1.2l-.7.3l1.7 4.6c0 .1 0 .2-.1.2l-.9.3c-.1 0-.2 0-.2-.1L41 34l-.7.3c-.1 0-.2 0-.2-.1l-.3-.9c0-.1 0-.2.1-.2l2.5-.9c.1 0 .2 0 .2.1m-6.9 18l-.4.1c-.7.2-1.4-.1-1.7-.8L32 45c-.2-.7.1-1.4.8-1.7l.4-.1c.7-.2 1.4.1 1.7.8l1.7 4.6c.2.6-.2 1.4-.9 1.7m-2.3-6c-.2.1-.3.2-.2.4l1.6 4.5c0 .1.2.2.3.1h.1c.1 0 .2-.2.2-.3l-1.6-4.5c-.1-.2-.3-.2-.4-.2m5.4-1.8l2.1 5.6c0 .1 0 .2-.1.2l-.6.2c-.1 0-.2 0-.2-.1l-2-2.2l.9 2.6c0 .1 0 .2-.1.2l-.9.3c-.1 0-.2 0-.2-.1l-2.1-5.6c0-.1 0-.2.1-.2l.7-.2c.1 0 .2 0 .2.1l2.1 2.5l-1-2.9c0-.1 0-.2.1-.2l.9-.3s.1 0 .1.1m5 3.6l.3.9c0 .1 0 .2-.1.2l-2.1.8c-.1 0-.2 0-.2-.1l-2.1-5.6c0-.1 0-.2.1-.2l2.1-.8c.1 0 .2 0 .2.1l.3.9c0 .1 0 .2-.1.2l-1.1.4l.4 1.1l1-.4c.1 0 .2 0 .2.1l.3.9c0 .1 0 .2-.1.2l-1 .4l.5 1.3l1.1-.4q.3-.15.3 0"></svg:path><svg:g fill="#947151" opacity=".5"><svg:use href="#emojioneAdmissionTickets0"></svg:use><svg:use href="#emojioneAdmissionTickets0" opacity=".5"></svg:use></svg:g><svg:path fill="#fbbf67" d="M52.5 16.1L50.8 14c-.6.5-1.4.4-1.9-.2s-.4-1.4.2-1.9l-1.7-2.1c-.6.5-1.4.4-1.9-.2s-.4-1.4.2-1.9L44 5.6c-.6.5-1.4.4-1.9-.2c-.7-.4-.6-1.2-.1-1.7l-1.7-2.1c-.6.5-1.4.4-1.9-.1C36 2.7 33 2.2 31.1 0L.7 25.5c2.2 2.6 1.8 6.4-.7 8.5l13.6 16.3c2.5-2.1 6.3-1.8 8.4.7l30.4-25.5c-1.8-2.2-1.8-5.3-.2-7.5c-.3-.6-.2-1.4.3-1.9"></svg:path><svg:path fill="#f55" d="M47.2 23.4L21 45.4c-1.4 1.2-3.5 1-4.7-.4L5.6 32.2c-1.2-1.4-1-3.5.4-4.7l26.2-22c1.4-1.2 3.5-1 4.7.4l10.7 12.8c1.2 1.4 1 3.5-.4 4.7M7.1 28.8c-.7.6-.8 1.6-.2 2.3L17.6 44c.6.7 1.6.8 2.3.2l26.2-22c.7-.6.8-1.6.2-2.3L35.6 7c-.6-.7-1.6-.8-2.3-.2z"></svg:path><svg:path fill="#89664c" d="m21.9 28.8l-.7.6c-.1.1-.2 0-.2 0l-.8-.8l-.6.4l.7.9v.2l-.7.6c-.1.1-.1 0-.2 0l-3.9-5.9v-.2l1.1-.9c.1-.1.2-.1.2 0l5.1 4.9zm-2.6-1.1l-2-2.1l-.1.1l1.7 2.3zm2.3-5.2l2.3 2.8c.5.6.4 1.4-.2 1.9l-1.2 1c-.1.1-.2 0-.2 0l-3.9-4.6c-.1-.1 0-.2 0-.2l1.2-1c.7-.5 1.5-.5 2 .1m-.9.8c-.1-.1-.3-.1-.4 0l-.3.2l2.6 3.1l.3-.2c.1-.1.1-.2 0-.4zm3.9-4.9l3.9 4.6c.1.1 0 .2 0 .2l-.8.6c-.1.1-.2 0-.2 0l-1.8-2.1l1.1 2.4c0 .1 0 .1-.1.1l-2.1-1.5l1.8 2.1c.1.1 0 .2 0 .2l-.8.6c-.1.1-.2 0-.2 0L21.5 21c-.1-.1 0-.2 0-.2l.7-.6c.1-.1.2 0 .2 0l2.7 1.9l-1.4-3v-.2l.7-.6c.1.1.2.1.2.1m5.6 3.2c.1.1 0 .2 0 .2l-.7.6c-.1.1-.2 0-.2 0l-3.9-4.6c-.1-.1 0-.2 0-.2l.7-.6c.1-.1.2 0 .2 0zm-1-7l.6.7c.1.1 0 .2 0 .2l-.6.5l3.2 3.8c.1.1 0 .2 0 .2l-.7.6h-.2l-3.2-3.8l-.6.5c-.1.1-.2 0-.2 0l-.6-.7c-.1-.1 0-.2 0-.2l2.1-1.7c0-.1.1-.1.2-.1m-.3 19.3l-.3.3c-.6.5-1.4.4-1.9-.2l-3.1-3.7c-.5-.6-.4-1.4.2-1.9l.3-.3c.6-.5 1.4-.4 1.9.2l3 3.7c.5.6.4 1.4-.1 1.9m-4.3-4.8c-.2.1-.2.3-.1.4l3.1 3.6c.1.1.2.1.4 0l.1-.1c.1-.1.1-.3 0-.4L25 29.1c-.1-.1-.3-.1-.4 0m4.5-3.6l3.9 4.6c.1.1 0 .2 0 .2l-.5.4c-.1.1-.2.1-.2 0l-2.6-1.4l1.8 2.1c.1.1 0 .2 0 .2l-.7.6c-.1.1-.2 0-.2 0l-3.9-4.6c-.1-.1 0-.2 0-.2l.5-.4c.1-.1.2-.1.2 0l2.8 1.6l-2-2.3c-.1-.1 0-.2 0-.2l.7-.6zm5.9 1.7l.6.7c.1.1 0 .2 0 .2l-1.7 1.5c-.1.1-.2 0-.2 0L29.8 25c-.1-.1 0-.2 0-.2l1.7-1.5c.1-.1.2 0 .2 0l.6.7c.1.1 0 .2 0 .2l-.9.8l.8.9l.8-.7c.1-.1.2 0 .2 0l.6.7c.1.1 0 .2 0 .2l-.8.7l.9 1.1l.9-.8c.1 0 .2 0 .2.1"></svg:path>`,
 })
 export class EmojioneAdmissionTicketsIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneAerialTramwayIcon],svg[emojione-aerial-tramway-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="#94989b"><svg:path d="M30 11.5h4v12h-4z"></svg:path><svg:path d="M39.6 13L23.9 9.9l.5-2.9l3.5.7l3-2.5l3.9.7l2.1 3.5l3.2.6z"></svg:path></svg:g><svg:path fill="#3e4347" d="M62 19.1L2 7V5l60 12z"></svg:path><svg:path fill="#ed4c5c" d="M55 49H9V31.5c0-5.5 4.5-10 10-10h26c5.5 0 10 4.5 10 10z"></svg:path><svg:path fill="#3e4347" d="M51 44.9H13V33.4c0-4.6 3.7-8.3 8.3-8.3h21.4c4.6 0 8.3 3.7 8.3 8.3z"></svg:path><svg:path fill="#dae3ea" d="M55 49c0 5.5-4.5 10-10 10H19c-5.5 0-10-4.5-10-10z"></svg:path><svg:path fill="#ed4c5c" d="M24.8 46.9h-2.7c0-11.8 4-24 4-24h2.7c0-.1-4 12.2-4 24m14.4 0h2.7c0-11.8-4-24-4-24h-2.7c0-.1 4 12.2 4 24M54.1 53c.3-.6.5-1.3.6-2H9.2c.1.7.4 1.4.6 2z"></svg:path>`,
+})
+export class EmojioneAerialTramwayIcon {
   readonly viewBox = input("0 0 64 64")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,6 +172,23 @@ export class EmojioneAirplaneArrivalIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[emojioneAlarmClockIcon],svg[emojione-alarm-clock-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:ellipse cx="32.1" cy="35.8" fill="#428bc1" rx="25.2" ry="25.3"></svg:ellipse><svg:ellipse cx="32.1" cy="35.8" fill="#fff" rx="19.6" ry="19.7"></svg:ellipse><svg:path fill="#428bc1" d="M11 48.3L8.8 62h1.9c1.2 0 1.6-1.4 2.4-3.1c1-2.2 3.4-7.9 3.4-7.9zm42.1 0L55.4 62h-1.9c-1.2 0-1.6-1.4-2.4-3.1c-1-2.2-3.4-7.9-3.4-7.9zM13.3 10.2l5.9 5.9l-3.1 3.2l-5.9-6zm37.6 0L45 16.1l3.1 3.2l5.9-6z"></svg:path><svg:path fill="#b0b8b8" d="M5.7 23.6L23.3 5.7C21.1 3.4 18 2 14.5 2C7.6 2 2 7.7 2 14.6c0 3.5 1.4 6.7 3.7 9M40.5 5.8l17.8 17.7c2.3-2.3 3.7-5.4 3.7-8.9C62 7.7 56.4 2 49.4 2c-3.5.1-6.6 1.5-8.9 3.8"></svg:path><svg:path fill="#ed4c5c" d="m20.6 46.6l10.3-10.5l1.2 1.2l-10.3 10.4z"></svg:path><svg:g fill="#428bc1"><svg:circle cx="32.1" cy="35.8" r="3.7"></svg:circle><svg:path d="M30.2 21.7h3.7v15h-3.7zm3.7 12.2h7.5v3.7h-7.5z"></svg:path></svg:g>`,
+})
+export class EmojioneAlarmClockIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[emojioneAlembicIcon],svg[emojione-alembic-icon]',
   host: {
     role: 'img',
@@ -199,6 +216,23 @@ export class EmojioneAlembicIcon {
   template: `<svg:path fill="#c7e755" d="M59.5 30.6C59.5 54.1 32 62 32 62S4.5 54.1 4.5 30.6C4.5 13.1 15.5 2 32 2s27.5 11.1 27.5 28.6"></svg:path><svg:g fill="#454749"><svg:path d="M23.4 26.4c4 3.8 5.1 8.9 2.6 11.4c-2.5 2.4-7.8 1.3-11.7-2.5c-4-3.8-5.1-8.9-2.6-11.4s7.7-1.4 11.7 2.5"></svg:path><svg:path d="M26.4 30.6c-2.6-2.3-5.2-4.1-8-5.7c-1.4-.8-2.9-1.5-4.4-2.1s-3.1-1.2-4.7-1.8c1.7-.2 3.5-.1 5.2.3s3.4 1 4.9 1.8s2.9 1.9 4.2 3.2c1.1 1.2 2.2 2.6 2.8 4.3"></svg:path></svg:g><svg:path fill="#fff" d="M20.4 25c2 1.2 3.1 3.1 2.5 4.1c-.7 1-2.9.8-4.9-.4s-3.1-3.1-2.5-4.1c.7-1 2.8-.8 4.9.4"></svg:path><svg:g fill="#454749"><svg:path d="M40.6 26.4c-4 3.8-5.1 8.9-2.6 11.4c2.5 2.4 7.8 1.3 11.7-2.5c4-3.8 5.1-8.9 2.6-11.4s-7.7-1.4-11.7 2.5"></svg:path><svg:path d="M37.6 30.6c.6-1.6 1.7-3 2.9-4.3c1.2-1.2 2.6-2.3 4.2-3.2c1.5-.9 3.2-1.5 4.9-1.8c1.7-.4 3.4-.5 5.2-.3c-1.6.6-3.2 1.1-4.7 1.8c-1.5.6-3 1.3-4.4 2.1c-2.9 1.5-5.5 3.4-8.1 5.7"></svg:path></svg:g><svg:path fill="#fff" d="M43.6 25c-2 1.2-3.1 3.1-2.5 4.1c.7 1 2.9.8 4.9-.4s3.1-3.1 2.5-4.1c-.7-1-2.8-.8-4.9.4"></svg:path><svg:path fill="#454749" stroke="#454749" stroke-miterlimit="10" d="M32 48.6c-7.6 0-10.7-3.7-10.7-2.4c0 1.9 4.8 4.4 10.7 4.4s10.7-2.5 10.7-4.4c0-1.3-3.1 2.4-10.7 2.4z"></svg:path>`,
 })
 export class EmojioneAlienIcon {
+  readonly viewBox = input("0 0 64 64")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[emojioneAmericanFootballIcon],svg[emojione-american-football-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#89664c" d="M2.8 40.3C.7 52 3.2 57 5.1 58.9s7 4.4 18.6 2.3c-4.3-2.3-8.3-5.3-12-8.9c-3.6-3.6-6.6-7.7-8.9-12m58.3-16.5c2.1-11.6.3-17.4-1.6-19.3S51.8.9 40.2 2.9c4.3 2.3 8.3 5.3 12 8.9c3.6 3.7 6.6 7.7 8.9 12M30.8 5.4c-5.6 2-11.2 5.1-15.9 9.7c-4.6 4.7-7.7 10.3-9.7 15.9c1.9 6.1 5.6 12 10.7 17.1s11 8.8 17.1 10.7c5.6-2 11.2-5.1 15.9-9.7c4.7-4.7 7.7-10.2 9.7-15.9c-1.9-6.1-5.6-12-10.7-17.1c-5-5.2-11-8.8-17.1-10.7"></svg:path><svg:g fill="#fff"><svg:path d="M5.2 31c-1.1 3.1-1.9 6.3-2.5 9.4c2.3 4.3 5.3 8.3 8.9 12c3.6 3.6 7.7 6.6 12 8.9c3-.5 6.2-1.3 9.4-2.5c-6.1-1.9-12.1-5.6-17.1-10.7C10.8 43 7.1 37.1 5.2 31m47-19.2c-3.6-3.6-7.7-6.6-12-8.9c-3 .5-6.2 1.3-9.4 2.5C36.9 7.3 42.9 10.9 48 16s8.8 11 10.7 17.1c1.1-3.1 1.9-6.3 2.5-9.4c-2.4-4.2-5.4-8.2-9-11.9m-14.4 8l6.3 6.3c1 1 2.6-.6 1.6-1.6l-6.3-6.3c-1-1-2.6.6-1.6 1.6m-4.7 4.8l6.3 6.3c1 1 2.6-.6 1.6-1.6L34.7 23c-1.1-1-2.6.6-1.6 1.6m-4.8 4.7l6.3 6.3c1 1 2.6-.6 1.6-1.6l-6.3-6.3c-1-1-2.6.6-1.6 1.6m-4.7 4.8l6.3 6.3c1 1 2.6-.6 1.6-1.6l-6.3-6.3c-1.1-1-2.7.6-1.6 1.6m-4.8 4.7l6.3 6.3c1 1 2.6-.6 1.6-1.6l-6.3-6.3c-1-1-2.6.6-1.6 1.6"></svg:path><svg:path d="m21.4 44.2l23.4-23.4c1-1-.6-2.6-1.6-1.6L19.8 42.6c-1 1.1.5 2.7 1.6 1.6"></svg:path></svg:g>`,
+})
+export class EmojioneAmericanFootballIcon {
   readonly viewBox = input("0 0 64 64")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,23 +291,6 @@ export class EmojioneAnchorIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[emojioneAmericanFootballIcon],svg[emojione-american-football-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#89664c" d="M2.8 40.3C.7 52 3.2 57 5.1 58.9s7 4.4 18.6 2.3c-4.3-2.3-8.3-5.3-12-8.9c-3.6-3.6-6.6-7.7-8.9-12m58.3-16.5c2.1-11.6.3-17.4-1.6-19.3S51.8.9 40.2 2.9c4.3 2.3 8.3 5.3 12 8.9c3.6 3.7 6.6 7.7 8.9 12M30.8 5.4c-5.6 2-11.2 5.1-15.9 9.7c-4.6 4.7-7.7 10.3-9.7 15.9c1.9 6.1 5.6 12 10.7 17.1s11 8.8 17.1 10.7c5.6-2 11.2-5.1 15.9-9.7c4.7-4.7 7.7-10.2 9.7-15.9c-1.9-6.1-5.6-12-10.7-17.1c-5-5.2-11-8.8-17.1-10.7"></svg:path><svg:g fill="#fff"><svg:path d="M5.2 31c-1.1 3.1-1.9 6.3-2.5 9.4c2.3 4.3 5.3 8.3 8.9 12c3.6 3.6 7.7 6.6 12 8.9c3-.5 6.2-1.3 9.4-2.5c-6.1-1.9-12.1-5.6-17.1-10.7C10.8 43 7.1 37.1 5.2 31m47-19.2c-3.6-3.6-7.7-6.6-12-8.9c-3 .5-6.2 1.3-9.4 2.5C36.9 7.3 42.9 10.9 48 16s8.8 11 10.7 17.1c1.1-3.1 1.9-6.3 2.5-9.4c-2.4-4.2-5.4-8.2-9-11.9m-14.4 8l6.3 6.3c1 1 2.6-.6 1.6-1.6l-6.3-6.3c-1-1-2.6.6-1.6 1.6m-4.7 4.8l6.3 6.3c1 1 2.6-.6 1.6-1.6L34.7 23c-1.1-1-2.6.6-1.6 1.6m-4.8 4.7l6.3 6.3c1 1 2.6-.6 1.6-1.6l-6.3-6.3c-1-1-2.6.6-1.6 1.6m-4.7 4.8l6.3 6.3c1 1 2.6-.6 1.6-1.6l-6.3-6.3c-1.1-1-2.7.6-1.6 1.6m-4.8 4.7l6.3 6.3c1 1 2.6-.6 1.6-1.6l-6.3-6.3c-1-1-2.6.6-1.6 1.6"></svg:path><svg:path d="m21.4 44.2l23.4-23.4c1-1-.6-2.6-1.6-1.6L19.8 42.6c-1 1.1.5 2.7 1.6 1.6"></svg:path></svg:g>`,
-})
-export class EmojioneAmericanFootballIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[emojioneAmphoraIcon],svg[emojione-amphora-icon]',
   host: {
     role: 'img',
@@ -301,23 +318,6 @@ export class EmojioneAmphoraIcon {
   template: `<svg:path fill="#ff5a79" d="M55.6 12.7c-.5-.7-1.4-1.1-2.3-.9c-2.8.7-5.2 1-7.5 1s-4.5-.4-6.4-1.1c-3.8-1.4-7.3-4.3-10.7-8.9c-.1-.1-.2-.3-.3-.4l-.1-.1c-.8-.7-2.2-.6-2.8.2c-.5.6-.6 1.2-.5 1.8c.6 6.2 5.4 12 11.9 14.3c2.1.8 4.4 1.2 6.6 1.2c4.6 0 8.9-1.7 11.8-4.6c.7-.7.8-1.7.3-2.5M27.1 45.4c-2.1-.8-4.4-1.2-6.6-1.2c-4.6 0-8.9 1.7-11.8 4.6c-.7.7-.8 1.7-.3 2.5c.5.7 1.4 1.1 2.3.9c2.8-.7 5.2-1 7.5-1s4.5.4 6.4 1.1c3.8 1.4 7.3 4.3 10.7 8.9c.1.1.2.3.4.4c.4.3.8.5 1.3.5c.6 0 1.1-.2 1.5-.7s.5-1.1.4-1.6c-.5-6.3-5.3-12-11.8-14.4m34.2-20c-.3-.3-.8-.5-1.3-.5h-.3c-6.2.6-12 5.4-14.3 11.9c-2.4 6.5-1.1 13.9 3.4 18.4c.4.4.9.6 1.4.6c.4 0 .7-.1 1.1-.3c.8-.5 1.1-1.4.9-2.3c-1.4-5.5-1.4-10.1 0-13.9s4.3-7.3 8.9-10.7c.1-.1.3-.2.4-.4c.7-.8.6-2.1-.2-2.8m-42.7 1.7c2.4-6.5 1.1-13.9-3.4-18.4c-.6-.7-1.7-.8-2.5-.3s-1.1 1.4-.9 2.3c1.4 5.5 1.4 10.1 0 13.9s-4.3 7.3-8.9 10.7c-.1.1-.3.2-.4.4c-.7.9-.6 2.1.2 2.8c.3.4.8.5 1.2.5h.3c6.3-.6 12-5.4 14.4-11.9"></svg:path>`,
 })
 export class EmojioneAngerSymbolIcon {
-  readonly viewBox = input("0 0 64 64")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[emojioneAlarmClockIcon],svg[emojione-alarm-clock-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:ellipse cx="32.1" cy="35.8" fill="#428bc1" rx="25.2" ry="25.3"></svg:ellipse><svg:ellipse cx="32.1" cy="35.8" fill="#fff" rx="19.6" ry="19.7"></svg:ellipse><svg:path fill="#428bc1" d="M11 48.3L8.8 62h1.9c1.2 0 1.6-1.4 2.4-3.1c1-2.2 3.4-7.9 3.4-7.9zm42.1 0L55.4 62h-1.9c-1.2 0-1.6-1.4-2.4-3.1c-1-2.2-3.4-7.9-3.4-7.9zM13.3 10.2l5.9 5.9l-3.1 3.2l-5.9-6zm37.6 0L45 16.1l3.1 3.2l5.9-6z"></svg:path><svg:path fill="#b0b8b8" d="M5.7 23.6L23.3 5.7C21.1 3.4 18 2 14.5 2C7.6 2 2 7.7 2 14.6c0 3.5 1.4 6.7 3.7 9M40.5 5.8l17.8 17.7c2.3-2.3 3.7-5.4 3.7-8.9C62 7.7 56.4 2 49.4 2c-3.5.1-6.6 1.5-8.9 3.8"></svg:path><svg:path fill="#ed4c5c" d="m20.6 46.6l10.3-10.5l1.2 1.2l-10.3 10.4z"></svg:path><svg:g fill="#428bc1"><svg:circle cx="32.1" cy="35.8" r="3.7"></svg:circle><svg:path d="M30.2 21.7h3.7v15h-3.7zm3.7 12.2h7.5v3.7h-7.5z"></svg:path></svg:g>`,
-})
-export class EmojioneAlarmClockIcon {
   readonly viewBox = input("0 0 64 64")
   readonly width = input("1em")
   readonly height = input("1em")

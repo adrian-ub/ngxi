@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[streamlineAdd1SolidIcon],svg[streamline-add-1-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8 1a1 1 0 0 0-2 0v5H1a1 1 0 0 0 0 2h5v5a1 1 0 1 0 2 0V8h5a1 1 0 1 0 0-2H8z" clip-rule="evenodd"></svg:path>`,
-})
-export class StreamlineAdd1SolidIcon {
-  readonly viewBox = input("0 0 14 14")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[streamlineAddBellNotificationSolidIcon],svg[streamline-add-bell-notification-solid-icon]',
   host: {
     role: 'img',
@@ -29,6 +12,23 @@ export class StreamlineAdd1SolidIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11.5.75a.75.75 0 0 0-1.5 0V2.5H8.25a.75.75 0 0 0 0 1.5H10v1.75a.75.75 0 0 0 1.5 0V4h1.75a.75.75 0 0 0 0-1.5H11.5zM6 1.5q.555 0 1.086.123A2 2 0 0 0 8.25 5.25h.5v.5a2 2 0 0 0 1.822 1.992v1.833c0 .234.1.466.289.642c.219.204.391.283.639.283a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1c.248 0 .42-.079.64-.283a.88.88 0 0 0 .288-.642V5.8c0-1.152.49-2.25 1.351-3.053A4.72 4.72 0 0 1 6 1.5M4.25 13.25A.75.75 0 0 1 5 12.5h2A.75.75 0 0 1 7 14H5a.75.75 0 0 1-.75-.75" clip-rule="evenodd"></svg:path>`,
 })
 export class StreamlineAddBellNotificationSolidIcon {
+  readonly viewBox = input("0 0 14 14")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[streamlineAdd1SolidIcon],svg[streamline-add-1-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8 1a1 1 0 0 0-2 0v5H1a1 1 0 0 0 0 2h5v5a1 1 0 1 0 2 0V8h5a1 1 0 1 0 0-2H8z" clip-rule="evenodd"></svg:path>`,
+})
+export class StreamlineAdd1SolidIcon {
   readonly viewBox = input("0 0 14 14")
   readonly width = input("1em")
   readonly height = input("1em")

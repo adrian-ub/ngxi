@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentConnected48RegularIcon],svg[fluent-connected-48-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M38 4a6 6 0 1 1-3.266 11.032l-5.702 5.702c.611.94.968 2.061.968 3.266a5.97 5.97 0 0 1-.968 3.265l5.702 5.702a6 6 0 1 1-1.768 1.768l-5.701-5.703A5.97 5.97 0 0 1 24 30a5.97 5.97 0 0 1-3.266-.968l-5.702 5.702a6 6 0 1 1-1.768-1.768l5.703-5.701A5.97 5.97 0 0 1 18 24a5.97 5.97 0 0 1 .967-3.266l-5.702-5.702a6 6 0 1 1 1.768-1.768l5.701 5.703A5.97 5.97 0 0 1 24 18a5.97 5.97 0 0 1 3.265.967l5.702-5.702A6 6 0 0 1 38 4M10 34.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m28 0a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m-14-14a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m-14-14a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m28 0a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7"></svg:path>`,
+})
+export class FluentConnected48RegularIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentConnector16FilledIcon],svg[fluent-connector-16-filled-icon]',
   host: {
     role: 'img',
@@ -8479,23 +8496,6 @@ export class FluentDatabase16FilledIcon {
 })
 export class FluentDatabase16RegularIcon {
   readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentDatabase20FilledIcon],svg[fluent-database-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10 8c3.314 0 6-1.343 6-3s-2.686-3-6-3s-6 1.343-6 3s2.686 3 6 3m4.69.016c.47-.235.927-.534 1.31-.896V15c0 1.657-2.686 3-6 3s-6-1.343-6-3V7.12c.383.362.84.661 1.31.896C6.562 8.642 8.222 9 10 9s3.438-.358 4.69-.984"></svg:path>`,
-})
-export class FluentDatabase20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
 }

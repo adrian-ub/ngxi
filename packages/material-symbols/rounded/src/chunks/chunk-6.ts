@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsMonitoringRoundedIcon],svg[material-symbols-monitoring-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 21q-.425 0-.712-.288T3 20v-1q0-.425.288-.712T4 18t.713.288T5 19v1q0 .425-.288.713T4 21m4 0q-.425 0-.712-.288T7 20v-5.5q0-.425.288-.712T8 13.5t.713.288T9 14.5V20q0 .425-.288.713T8 21m4 0q-.425 0-.712-.288T11 20v-3.5q0-.425.288-.712T12 15.5t.713.288t.287.712V20q0 .425-.288.713T12 21m4 0q-.425 0-.712-.288T15 20v-5q0-.425.288-.712T16 14t.713.288T17 15v5q0 .425-.288.713T16 21m4 0q-.425 0-.712-.288T19 20v-9q0-.425.288-.712T20 10t.713.288T21 11v9q0 .425-.288.713T20 21m-6-9.025q-.4 0-.763-.15t-.662-.425L10 8.825l-5.3 5.3q-.3.3-.712.288t-.713-.313q-.275-.3-.262-.712T3.3 12.7l5.275-5.275q.3-.3.663-.437T10 6.85t.775.138t.65.437L14 10l5.3-5.3q.3-.3.713-.288t.712.313q.275.3.263.713t-.288.687L15.425 11.4q-.275.275-.65.425t-.775.15"></svg:path>`,
+})
+export class MaterialSymbolsMonitoringRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsMonochromePhotosOutlineRoundedIcon],svg[material-symbols-monochrome-photos-outline-rounded-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsPhotoCameraFrontOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="M8 17h8v-.55q0-1.125-1.1-1.788T12 14q-1.8 0-2.9.663T8 16.45V17Zm4-4q.825 0 1.413-.588T14 11q0-.825-.588-1.413T12 9q-.825 0-1.413.588T10 11q0 .825.588 1.413T12 13Zm-8 8q-.825 0-1.413-.588T2 19V7q0-.825.588-1.413T4 5h3.15L8.4 3.65q.275-.325.663-.488T9.874 3h4.25q.425 0 .813.163t.662.487L16.85 5H20q.825 0 1.413.588T22 7v12q0 .825-.588 1.413T20 21H4Z"></svg:path>`,
 })
 export class MaterialSymbolsPhotoCameraFrontRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsPhotoCameraOutlineRoundedIcon],svg[material-symbols-photo-camera-outline-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 17.5q1.875 0 3.188-1.312T16.5 13t-1.312-3.187T12 8.5T8.813 9.813T7.5 13t1.313 3.188T12 17.5m0-2q-1.05 0-1.775-.725T9.5 13t.725-1.775T12 10.5t1.775.725T14.5 13t-.725 1.775T12 15.5M4 21q-.825 0-1.412-.587T2 19V7q0-.825.588-1.412T4 5h3.15L8.4 3.65q.275-.3.663-.475T9.875 3h4.25q.425 0 .813.175t.662.475L16.85 5H20q.825 0 1.413.588T22 7v12q0 .825-.587 1.413T20 21zm0-2h16V7h-4.05l-1.825-2h-4.25L8.05 7H4zm8-6"></svg:path>`,
-})
-export class MaterialSymbolsPhotoCameraOutlineRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

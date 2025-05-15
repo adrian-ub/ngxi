@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentMdl2AccountBrowserIcon],svg[fluent-mdl2-account-browser-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2048 128v1664H0V128zM128 256v256h1792V256zm1792 1408V640H128v1024zm-710-464q46 26 82 62t62 79t40 93t14 102h-128q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100H640q0-52 14-101t39-93t62-80t83-62q-33-35-51-81t-19-95q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100q0 49-18 95t-52 81m-314-176q0 27 10 50t27 40t41 28t50 10q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50"></svg:path>`,
+})
+export class FluentMdl2AccountBrowserIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentMdl2AcceptIcon],svg[fluent-mdl2-accept-icon]',
   host: {
     role: 'img',
@@ -12,57 +29,6 @@ import { Component, input } from '@angular/core'
   template: `<svg:path fill="currentColor" d="M640 1755L19 1133l90-90l531 530L1939 275l90 90z"></svg:path>`,
 })
 export class FluentMdl2AcceptIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMdl2AcceptMediumIcon],svg[fluent-mdl2-accept-medium-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m1902 196l121 120L683 1657L25 999l121-121l537 537z"></svg:path>`,
-})
-export class FluentMdl2AcceptMediumIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMdl2AccessLogoIcon],svg[fluent-mdl2-access-logo-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1280 64q137 0 274 15q24 3 69 9t101 18t112 28t105 39t77 51t30 64v1472q0 35-30 63t-77 51t-104 39t-113 28t-100 19t-70 9q-137 15-274 15q-138 0-274-15q-24-2-69-9t-101-18t-112-28t-105-39t-77-51t-30-64v-224H85q-35 0-60-25t-25-60V597q0-35 25-60t60-25h427V288q0-35 30-63t77-51t104-39t113-28t100-18t70-10q136-15 274-15m0 128q-65 0-145 4t-162 16t-161 29t-138 47q62 29 139 47t159 29t161 15t147 5q67 0 146-4t161-15t159-29t140-48q-60-28-138-46t-160-30t-163-15t-145-5M403 1207h217l51 153h171L597 688H430l-248 672h170zm1517 532v-303q-66 29-147 48t-168 30t-170 17t-155 5q-73 0-145-4t-145-13q-23 17-51 17H640v203q29 23 78 41t108 31t125 21t126 14t115 8t88 2q35 0 88-2t114-7t127-14t124-22t109-31t78-41m0-446V924q-66 29-147 48t-168 30t-170 17t-155 5q-64 0-128-3t-128-10v384q64 7 128 10t128 3q37 0 90-2t113-7t125-14t123-22t108-30t81-40m0-512V412q-66 29-147 48t-168 30t-170 17t-155 5q-71 0-155-5t-170-16t-167-31t-148-48v100h299q35 0 60 25t25 60v286q64 7 128 10t128 3q37 0 90-2t113-7t125-14t123-22t108-30t81-40M442 1077l69-209l67 209z"></svg:path>`,
-})
-export class FluentMdl2AccessLogoIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMdl2AccessibiltyCheckerIcon],svg[fluent-mdl2-accessibilty-checker-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M128 128v1792h384v128H0V0h1115l549 549v91h-640V128zm1024 91v293h293zm384 1061l-192 256l-192-256h128V768h128v512zm512 64l-256 192v-128h-192l96-128h96v-128zm-1401 64q9-81 39-155t82-139l91 91q-69 90-84 203zm128 128q15 113 84 203l-91 91q-51-64-81-138t-40-156zm377-505q-113 15-203 84l-91-91q64-51 138-81t156-40zm421 708q69-90 84-203h128q-9 81-39 155t-82 139zm-293 174q113-15 203-84l91 91q-64 51-138 81t-156 40zm-422 7l91-91q90 69 203 84v128q-81-9-155-39t-139-82"></svg:path>`,
-})
-export class FluentMdl2AccessibiltyCheckerIcon {
   readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,16 +53,16 @@ export class FluentMdl2AccountActivityIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentMdl2AccountBrowserIcon],svg[fluent-mdl2-account-browser-icon]',
+  selector: 'svg[fluentMdl2AccessibiltyCheckerIcon],svg[fluent-mdl2-accessibilty-checker-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M2048 128v1664H0V128zM128 256v256h1792V256zm1792 1408V640H128v1024zm-710-464q46 26 82 62t62 79t40 93t14 102h-128q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100H640q0-52 14-101t39-93t62-80t83-62q-33-35-51-81t-19-95q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100q0 49-18 95t-52 81m-314-176q0 27 10 50t27 40t41 28t50 10q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M128 128v1792h384v128H0V0h1115l549 549v91h-640V128zm1024 91v293h293zm384 1061l-192 256l-192-256h128V768h128v512zm512 64l-256 192v-128h-192l96-128h96v-128zm-1401 64q9-81 39-155t82-139l91 91q-69 90-84 203zm128 128q15 113 84 203l-91 91q-51-64-81-138t-40-156zm377-505q-113 15-203 84l-91-91q64-51 138-81t156-40zm421 708q69-90 84-203h128q-9 81-39 155t-82 139zm-293 174q113-15 203-84l91 91q-64 51-138 81t-156 40zm-422 7l91-91q90 69 203 84v128q-81-9-155-39t-139-82"></svg:path>`,
 })
-export class FluentMdl2AccountBrowserIcon {
+export class FluentMdl2AccessibiltyCheckerIcon {
   readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,16 +70,16 @@ export class FluentMdl2AccountBrowserIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentMdl2AccountManagementIcon],svg[fluent-mdl2-account-management-icon]',
+  selector: 'svg[fluentMdl2AcceptMediumIcon],svg[fluent-mdl2-accept-medium-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1148 1152q-83-62-179-95t-201-33q-88 0-170 23t-153 64t-129 100t-100 130t-65 153t-23 170H0q0-120 35-231t101-205t156-167t204-115q-56-35-100-82t-76-104t-47-119t-17-129q0-106 40-199t110-162T569 41T768 0t199 40t162 110t110 163t41 199q0 66-16 129t-48 119t-76 103t-101 83q60 23 113 54v152zM384 512q0 80 30 149t82 122t122 83t150 30q79 0 149-30t122-82t83-122t30-150q0-79-30-149t-82-122t-123-83t-149-30q-80 0-149 30t-122 82t-83 123t-30 149m1664 768v768H1024v-768h256v-256h512v256zm-640 0h256v-128h-256zm512 384h-128v128h-128v-128h-256v128h-128v-128h-128v256h768zm0-256h-768v128h768z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m1902 196l121 120L683 1657L25 999l121-121l537 537z"></svg:path>`,
 })
-export class FluentMdl2AccountManagementIcon {
+export class FluentMdl2AcceptMediumIcon {
   readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -131,6 +97,23 @@ export class FluentMdl2AccountManagementIcon {
   template: `<svg:path fill="currentColor" d="M1024 0q141 0 272 36t245 103t207 160t160 208t103 245t37 272q0 55-10 114t-32 117t-53 108t-74 89t-97 61t-118 23q-54 0-105-14t-96-42t-80-66t-61-88q-30 47-69 85t-85 67t-98 43t-110 15q-102 0-185-44t-141-117t-90-164t-32-187q0-95 31-187t90-164t142-116t185-45q95 0 176 41t144 112V512h128v640q0 53 20 99t55 82t81 55t100 20q44 0 80-18t65-49t50-70t34-83t20-85t7-79q0-123-32-237t-90-214t-141-182t-181-140t-214-91t-238-32q-123 0-237 32t-214 90t-182 141t-140 181t-91 214t-32 238q0 123 32 237t90 214t141 182t181 140t214 91t238 32q178 0 343-68l49 118q-94 39-192 58t-200 20q-141 0-272-36t-245-103t-207-160t-160-208t-103-244t-37-273q0-141 36-272t103-245t160-207t208-160T751 37t273-37m-64 1408q75 0 134-34t101-90t63-123t22-137q0-68-22-136t-63-124t-100-89t-135-35q-75 0-134 34t-101 90t-63 123t-22 137q0 68 22 136t63 124t100 89t135 35"></svg:path>`,
 })
 export class FluentMdl2AccountsIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2AccountManagementIcon],svg[fluent-mdl2-account-management-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1148 1152q-83-62-179-95t-201-33q-88 0-170 23t-153 64t-129 100t-100 130t-65 153t-23 170H0q0-120 35-231t101-205t156-167t204-115q-56-35-100-82t-76-104t-47-119t-17-129q0-106 40-199t110-162T569 41T768 0t199 40t162 110t110 163t41 199q0 66-16 129t-48 119t-76 103t-101 83q60 23 113 54v152zM384 512q0 80 30 149t82 122t122 83t150 30q79 0 149-30t122-82t83-122t30-150q0-79-30-149t-82-122t-123-83t-149-30q-80 0-149 30t-122 82t-83 123t-30 149m1664 768v768H1024v-768h256v-256h512v256zm-640 0h256v-128h-256zm512 384h-128v128h-128v-128h-256v128h-128v-128h-128v256h768zm0-256h-768v128h768z"></svg:path>`,
+})
+export class FluentMdl2AccountManagementIcon {
   readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,6 +155,23 @@ export class FluentMdl2ActivateOrdersIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentMdl2AccessLogoIcon],svg[fluent-mdl2-access-logo-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1280 64q137 0 274 15q24 3 69 9t101 18t112 28t105 39t77 51t30 64v1472q0 35-30 63t-77 51t-104 39t-113 28t-100 19t-70 9q-137 15-274 15q-138 0-274-15q-24-2-69-9t-101-18t-112-28t-105-39t-77-51t-30-64v-224H85q-35 0-60-25t-25-60V597q0-35 25-60t60-25h427V288q0-35 30-63t77-51t104-39t113-28t100-18t70-10q136-15 274-15m0 128q-65 0-145 4t-162 16t-161 29t-138 47q62 29 139 47t159 29t161 15t147 5q67 0 146-4t161-15t159-29t140-48q-60-28-138-46t-160-30t-163-15t-145-5M403 1207h217l51 153h171L597 688H430l-248 672h170zm1517 532v-303q-66 29-147 48t-168 30t-170 17t-155 5q-73 0-145-4t-145-13q-23 17-51 17H640v203q29 23 78 41t108 31t125 21t126 14t115 8t88 2q35 0 88-2t114-7t127-14t124-22t109-31t78-41m0-446V924q-66 29-147 48t-168 30t-170 17t-155 5q-64 0-128-3t-128-10v384q64 7 128 10t128 3q37 0 90-2t113-7t125-14t123-22t108-30t81-40m0-512V412q-66 29-147 48t-168 30t-170 17t-155 5q-71 0-155-5t-170-16t-167-31t-148-48v100h299q35 0 60 25t25 60v286q64 7 128 10t128 3q37 0 90-2t113-7t125-14t123-22t108-30t81-40M442 1077l69-209l67 209z"></svg:path>`,
+})
+export class FluentMdl2AccessLogoIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentMdl2ActivityFeedIcon],svg[fluent-mdl2-activity-feed-icon]',
   host: {
     role: 'img',
@@ -189,23 +189,6 @@ export class FluentMdl2ActivityFeedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentMdl2AddIcon],svg[fluent-mdl2-add-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2048 960v128h-960v960H960v-960H0V960h960V0h128v960z"></svg:path>`,
-})
-export class FluentMdl2AddIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fluentMdl2AddBookmarkIcon],svg[fluent-mdl2-add-bookmark-icon]',
   host: {
     role: 'img',
@@ -216,6 +199,23 @@ export class FluentMdl2AddIcon {
   template: `<svg:path fill="currentColor" d="m1024 1581l64 32q32 16 64 33v143l-128-64l-640 323V0h1280v1280h-128V128H512v1712q129-65 256-130t256-129m896 83v128h-256v256h-128v-256h-256v-128h256v-256h128v256z"></svg:path>`,
 })
 export class FluentMdl2AddBookmarkIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2AddIcon],svg[fluent-mdl2-add-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2048 960v128h-960v960H960v-960H0V960h960V0h128v960z"></svg:path>`,
+})
+export class FluentMdl2AddIcon {
   readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,23 +274,6 @@ export class FluentMdl2AddFavoriteFillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentMdl2AddGroupIcon],svg[fluent-mdl2-add-group-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1250 1333q68 34 123 85t93 118h-157q-54-61-128-94t-157-34q-80 0-149 30t-122 82t-83 123t-30 149H512q0-73 20-141t57-129t91-108t118-81q-75-54-116-135t-42-174q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100H0q0-52 14-102t39-93t63-80t83-61q-34-35-52-81t-19-95q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100q0 49-18 95t-53 81q42 23 75 55t60 70q27-40 62-72t76-54t87-35t95-12q48 0 94 12t87 34t77 55t62 72q26-38 59-70t76-55q-34-35-52-81t-19-95q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100q0 49-18 95t-53 81q46 25 83 61t62 79t40 94t14 102h-128q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100q0 92-41 173t-117 136m414-949q-27 0-50 10t-40 27t-28 41t-10 50q0 27 10 50t27 40t41 28t50 10q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10M384 640q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50q0 27 10 50t27 40t41 28t50 10m640 640q53 0 99-20t82-55t55-81t20-100q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100q0 53 20 99t55 82t81 55t100 20m768 384h256v128h-256v256h-128v-256h-256v-128h256v-256h128z"></svg:path>`,
-})
-export class FluentMdl2AddGroupIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fluentMdl2AddFriendIcon],svg[fluent-mdl2-add-friend-icon]',
   host: {
     role: 'img',
@@ -301,6 +284,23 @@ export class FluentMdl2AddGroupIcon {
   template: `<svg:path fill="currentColor" d="M1536 1536h-13q-23-112-81-206t-141-162t-187-106t-218-38q-88 0-170 23t-153 64t-129 100t-100 130t-65 153t-23 170H128q0-120 35-231t101-205t156-167t204-115q-113-74-176-186t-64-248q0-106 40-199t109-163T696 40T896 0t199 40t163 109t110 163t40 200q0 66-16 129t-48 119t-75 103t-101 83q112 43 206 118t162 176zM512 512q0 80 30 149t82 122t122 83t150 30q79 0 149-30t122-82t83-122t30-150q0-79-30-149t-82-122t-123-83t-149-30q-80 0-149 30t-122 82t-83 123t-30 149m1280 1152h256v128h-256v256h-128v-256h-256v-128h256v-256h128z"></svg:path>`,
 })
 export class FluentMdl2AddFriendIcon {
+  readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentMdl2AddGroupIcon],svg[fluent-mdl2-add-group-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1250 1333q68 34 123 85t93 118h-157q-54-61-128-94t-157-34q-80 0-149 30t-122 82t-83 123t-30 149H512q0-73 20-141t57-129t91-108t118-81q-75-54-116-135t-42-174q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100H0q0-52 14-102t39-93t63-80t83-61q-34-35-52-81t-19-95q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100q0 49-18 95t-53 81q42 23 75 55t60 70q27-40 62-72t76-54t87-35t95-12q48 0 94 12t87 34t77 55t62 72q26-38 59-70t76-55q-34-35-52-81t-19-95q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100q0 49-18 95t-53 81q46 25 83 61t62 79t40 94t14 102h-128q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100q0 92-41 173t-117 136m414-949q-27 0-50 10t-40 27t-28 41t-10 50q0 27 10 50t27 40t41 28t50 10q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10M384 640q27 0 50-10t40-27t28-41t10-50q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50q0 27 10 50t27 40t41 28t50 10m640 640q53 0 99-20t82-55t55-81t20-100q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100q0 53 20 99t55 82t81 55t100 20m768 384h256v128h-256v256h-128v-256h-256v-128h256v-256h128z"></svg:path>`,
+})
+export class FluentMdl2AddGroupIcon {
   readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentCloudDismiss28FilledIcon],svg[fluent-cloud-dismiss-28-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14 3a7 7 0 0 0-6.931 6.017A5.5 5.5 0 0 0 7.5 20h4.516a7.5 7.5 0 0 1 13.878-4.422Q26 15.055 26 14.5a5.5 5.5 0 0 0-5.069-5.483A7 7 0 0 0 14 3m12 16.5a6.5 6.5 0 1 1-13 0a6.5 6.5 0 0 1 13 0m-9.146-3.354a.5.5 0 0 0-.708.708l2.647 2.646l-2.647 2.646a.5.5 0 0 0 .708.708l2.646-2.647l2.646 2.647a.5.5 0 0 0 .708-.708L20.207 19.5l2.647-2.646a.5.5 0 0 0-.708-.708L19.5 18.793z"></svg:path>`,
+})
+export class FluentCloudDismiss28FilledIcon {
+  readonly viewBox = input("0 0 28 28")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentCloudDismiss28RegularIcon],svg[fluent-cloud-dismiss-28-regular-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class FluentConnected32RegularIcon {
   template: `<svg:path fill="currentColor" d="M38 4a6 6 0 1 1-3.266 11.032l-5.702 5.702c.611.94.968 2.061.968 3.266a5.97 5.97 0 0 1-.968 3.265l5.702 5.702a6 6 0 1 1-1.768 1.768l-5.701-5.703A5.97 5.97 0 0 1 24 30a5.97 5.97 0 0 1-3.266-.968l-5.702 5.702a6 6 0 1 1-1.768-1.768l5.703-5.701A5.97 5.97 0 0 1 18 24a5.97 5.97 0 0 1 .967-3.266l-5.702-5.702a6 6 0 1 1 1.768-1.768l5.701 5.703A5.97 5.97 0 0 1 24 18a5.97 5.97 0 0 1 3.265.967l5.702-5.702A6 6 0 0 1 38 4"></svg:path>`,
 })
 export class FluentConnected48FilledIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentConnected48RegularIcon],svg[fluent-connected-48-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M38 4a6 6 0 1 1-3.266 11.032l-5.702 5.702c.611.94.968 2.061.968 3.266a5.97 5.97 0 0 1-.968 3.265l5.702 5.702a6 6 0 1 1-1.768 1.768l-5.701-5.703A5.97 5.97 0 0 1 24 30a5.97 5.97 0 0 1-3.266-.968l-5.702 5.702a6 6 0 1 1-1.768-1.768l5.703-5.701A5.97 5.97 0 0 1 18 24a5.97 5.97 0 0 1 .967-3.266l-5.702-5.702a6 6 0 1 1 1.768-1.768l5.701 5.703A5.97 5.97 0 0 1 24 18a5.97 5.97 0 0 1 3.265.967l5.702-5.702A6 6 0 0 1 38 4M10 34.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m28 0a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m-14-14a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m-14-14a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7m28 0a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7"></svg:path>`,
-})
-export class FluentConnected48RegularIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

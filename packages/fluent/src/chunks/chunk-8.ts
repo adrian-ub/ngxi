@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentCircleImage16RegularIcon],svg[fluent-circle-image-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.5 3A3.5 3.5 0 0 0 5 9.663v1.08A4.502 4.502 0 0 1 6.5 2a4.5 4.5 0 0 1 4.244 3h-1.08A3.5 3.5 0 0 0 6.5 3M8 6a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zM7 8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-.034.259l-1.729-1.729a1.75 1.75 0 0 0-2.474 0l-1.73 1.729A1 1 0 0 1 7 12zm.741 4.966l1.729-1.729a.75.75 0 0 1 1.06 0l1.729 1.73A1 1 0 0 1 12 13H8q-.135 0-.259-.034M12.25 8.5a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0"></svg:path>`,
+})
+export class FluentCircleImage16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentCircleImage20FilledIcon],svg[fluent-circle-image-20-filled-icon]',
   host: {
     role: 'img',
@@ -8479,23 +8496,6 @@ export class FluentCloudDismiss24FilledIcon {
 })
 export class FluentCloudDismiss24RegularIcon {
   readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentCloudDismiss28FilledIcon],svg[fluent-cloud-dismiss-28-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14 3a7 7 0 0 0-6.931 6.017A5.5 5.5 0 0 0 7.5 20h4.516a7.5 7.5 0 0 1 13.878-4.422Q26 15.055 26 14.5a5.5 5.5 0 0 0-5.069-5.483A7 7 0 0 0 14 3m12 16.5a6.5 6.5 0 1 1-13 0a6.5 6.5 0 0 1 13 0m-9.146-3.354a.5.5 0 0 0-.708.708l2.647 2.646l-2.647 2.646a.5.5 0 0 0 .708.708l2.646-2.647l2.646 2.647a.5.5 0 0 0 .708-.708L20.207 19.5l2.647-2.646a.5.5 0 0 0-.708-.708L19.5 18.793z"></svg:path>`,
-})
-export class FluentCloudDismiss28FilledIcon {
-  readonly viewBox = input("0 0 28 28")
   readonly width = input("1em")
   readonly height = input("1em")
 }

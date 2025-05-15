@@ -19,23 +19,6 @@ export class UiwAdobeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uiwAlipayIcon],svg[uiw-alipay-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M20 13.692V3.846A3.845 3.845 0 0 0 16.154 0H3.846A3.845 3.845 0 0 0 0 3.846v12.308A3.845 3.845 0 0 0 3.846 20h12.308a3.85 3.85 0 0 0 3.787-3.167c-1.02-.439-5.44-2.347-7.742-3.45c-1.755 2.122-3.589 3.396-6.356 3.396s-4.613-1.703-4.388-3.79c.145-1.368 1.084-3.605 5.161-3.22c2.148.201 3.132.604 4.886 1.182c.45-.83.83-1.745 1.114-2.72H4.847v-.77H8.69V6.077H4V5.23h4.69V3.236s.045-.315.389-.315H11V5.23h5.002v.847H11v1.384h4.078a15.7 15.7 0 0 1-1.654 4.154c1.182.43 6.575 2.077 6.575 2.077M5.538 15.46c-2.925 0-3.384-1.846-3.23-2.617s1.002-1.768 2.625-1.768c1.87 0 3.541.477 5.547 1.454c-1.407 1.837-3.144 2.93-4.942 2.93"></svg:path>`,
-})
-export class UiwAlipayIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[uiwAliwangwangIcon],svg[uiw-aliwangwang-icon]',
   host: {
     role: 'img',
@@ -104,6 +87,23 @@ export class UiwAppleIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[uiwAlipayIcon],svg[uiw-alipay-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M20 13.692V3.846A3.845 3.845 0 0 0 16.154 0H3.846A3.845 3.845 0 0 0 0 3.846v12.308A3.845 3.845 0 0 0 3.846 20h12.308a3.85 3.85 0 0 0 3.787-3.167c-1.02-.439-5.44-2.347-7.742-3.45c-1.755 2.122-3.589 3.396-6.356 3.396s-4.613-1.703-4.388-3.79c.145-1.368 1.084-3.605 5.161-3.22c2.148.201 3.132.604 4.886 1.182c.45-.83.83-1.745 1.114-2.72H4.847v-.77H8.69V6.077H4V5.23h4.69V3.236s.045-.315.389-.315H11V5.23h5.002v.847H11v1.384h4.078a15.7 15.7 0 0 1-1.654 4.154c1.182.43 6.575 2.077 6.575 2.077M5.538 15.46c-2.925 0-3.384-1.846-3.23-2.617s1.002-1.768 2.625-1.768c1.87 0 3.541.477 5.547 1.454c-1.407 1.837-3.144 2.93-4.942 2.93"></svg:path>`,
+})
+export class UiwAlipayIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[uiwAppstoreIcon],svg[uiw-appstore-icon]',
   host: {
     role: 'img',
@@ -155,23 +155,6 @@ export class UiwAreaChartIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uiwArrowLeftIcon],svg[uiw-arrow-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M7.397 2.21A.726.726 0 0 1 8.41 2.2a.69.69 0 0 1 .012.99L2.373 9.243l16.931.105a.7.7 0 0 1-.008 1.4l-16.809-.104l6.303 6.16a.69.69 0 0 1 .076.903l-.075.087a.727.727 0 0 1-1.012 0L.21 10.4a.69.69 0 0 1-.005-.985Z"></svg:path>`,
-})
-export class UiwArrowLeftIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[uiwArrowDownIcon],svg[uiw-arrow-down-icon]',
   host: {
     role: 'img',
@@ -182,6 +165,23 @@ export class UiwArrowLeftIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M9.364.765q-.056 8.128-.12 16.553L2.79 10.957c-.385-.312-.802-.221-1.067.035c-.248.24-.353.7.007 1.09q3.552 3.49 7.82 7.697a.8.8 0 0 0 .554.222a.75.75 0 0 0 .539-.222q4.089-4.125 7.683-7.755a.754.754 0 0 0-.055-1.032c-.371-.374-.885-.229-1.093 0a3546 3546 0 0 1-6.386 6.437q.061-8.413.117-16.664c0-.26-.212-.765-.767-.765s-.778.469-.778.765"></svg:path>`,
 })
 export class UiwArrowDownIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uiwArrowLeftIcon],svg[uiw-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M7.397 2.21A.726.726 0 0 1 8.41 2.2a.69.69 0 0 1 .012.99L2.373 9.243l16.931.105a.7.7 0 0 1-.008 1.4l-16.809-.104l6.303 6.16a.69.69 0 0 1 .076.903l-.075.087a.727.727 0 0 1-1.012 0L.21 10.4a.69.69 0 0 1-.005-.985Z"></svg:path>`,
+})
+export class UiwArrowLeftIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,23 +257,6 @@ export class UiwAsteriskIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uiwBaiduIcon],svg[uiw-baidu-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3.723 10.54c2.132-.47 1.838-3.07 1.777-3.639c-.104-.875-1.115-2.406-2.486-2.283c-1.723.155-1.974 2.7-1.974 2.7c-.235 1.174.557 3.687 2.683 3.22M7.68 6.172c1.176 0 2.127-1.383 2.127-3.09C9.807 1.382 8.859 0 7.683 0S5.551 1.375 5.551 3.083s.956 3.09 2.132 3.09m5.069.205c1.576.217 2.582-1.5 2.786-2.8c.204-1.29-.817-2.798-1.927-3.056c-1.12-.264-2.5 1.56-2.638 2.749c-.147 1.458.204 2.907 1.772 3.113m6.24 2.184c0-.621-.5-2.493-2.376-2.493S14.477 7.84 14.477 9.09c0 1.192.097 2.85 2.438 2.8c2.332-.059 2.077-2.7 2.077-3.324m-2.375 5.447s-2.438-1.924-3.86-3.999c-1.927-3.063-4.667-1.816-5.58-.263c-.915 1.569-2.336 2.551-2.537 2.813c-.204.259-2.94 1.766-2.33 4.516c.612 2.749 2.744 2.699 2.744 2.699s1.568.158 3.397-.258c1.83-.417 3.397.1 3.397.1s4.253 1.457 5.43-1.342c1.163-2.807-.662-4.257-.662-4.257"></svg:path>`,
-})
-export class UiwBaiduIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[uiwBackwardIcon],svg[uiw-backward-icon]',
   host: {
     role: 'img',
@@ -284,6 +267,23 @@ export class UiwBaiduIcon {
   template: `<svg:path fill="currentColor" d="m10.903 2.931l-.001 5.108l6.615-5.593c.62-.526 1.58-.323 1.58.485v14.14c0 .805-.96 1.009-1.58.483l-6.615-5.593v5.11c0 .805-.96 1.009-1.58.483l-8.085-6.836a.936.936 0 0 1 0-1.434l8.086-6.838c.62-.526 1.58-.323 1.58.485"></svg:path>`,
 })
 export class UiwBackwardIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uiwBaiduIcon],svg[uiw-baidu-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3.723 10.54c2.132-.47 1.838-3.07 1.777-3.639c-.104-.875-1.115-2.406-2.486-2.283c-1.723.155-1.974 2.7-1.974 2.7c-.235 1.174.557 3.687 2.683 3.22M7.68 6.172c1.176 0 2.127-1.383 2.127-3.09C9.807 1.382 8.859 0 7.683 0S5.551 1.375 5.551 3.083s.956 3.09 2.132 3.09m5.069.205c1.576.217 2.582-1.5 2.786-2.8c.204-1.29-.817-2.798-1.927-3.056c-1.12-.264-2.5 1.56-2.638 2.749c-.147 1.458.204 2.907 1.772 3.113m6.24 2.184c0-.621-.5-2.493-2.376-2.493S14.477 7.84 14.477 9.09c0 1.192.097 2.85 2.438 2.8c2.332-.059 2.077-2.7 2.077-3.324m-2.375 5.447s-2.438-1.924-3.86-3.999c-1.927-3.063-4.667-1.816-5.58-.263c-.915 1.569-2.336 2.551-2.537 2.813c-.204.259-2.94 1.766-2.33 4.516c.612 2.749 2.744 2.699 2.744 2.699s1.568.158 3.397-.258c1.83-.417 3.397.1 3.397.1s4.253 1.457 5.43-1.342c1.163-2.807-.662-4.257-.662-4.257"></svg:path>`,
+})
+export class UiwBaiduIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

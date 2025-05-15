@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentEmojiHand32RegularIcon],svg[fluent-emoji-hand-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.388 3.162a2.498 2.498 0 0 1 4.224 0A2.5 2.5 0 0 1 16 5.5v4.907c.89-.298 1.69-.305 2.395-.03c1.053.412 1.57 1.331 1.812 1.94c.45 1.132-.347 2.079-1.103 2.402c-1.114.476-3.283 1.618-4.997 3.81C13.055 19.876 11.45 21 9.527 21H8.266a5 5 0 0 1-4.288-2.427l-1.122-1.87A6 6 0 0 1 2 13.614V6.5a2.5 2.5 0 0 1 3.388-2.338a2.5 2.5 0 0 1 3-1M14 5.5a.5.5 0 0 0-1 0V10a1 1 0 1 1-2 0V4.5a.5.5 0 0 0-1 0V10a1 1 0 1 1-2 0V5.5a.5.5 0 0 0-1 0V11a1 1 0 1 1-2 0V6.5a.5.5 0 0 0-1 0v7.115a4 4 0 0 0 .57 2.058l1.122 1.87A3 3 0 0 0 8.265 19h1.263c1.108 0 2.19-.66 3.004-1.702c1.979-2.531 4.452-3.843 5.746-4.401c-.155-.325-.36-.559-.61-.656c-.254-.1-.878-.18-2.138.607A1 1 0 0 1 14 12zm-2.832 16.788C12.004 26.68 15.865 30 20.5 30a9.5 9.5 0 0 0 9.5-9.5c0-4.995-3.855-9.09-8.752-9.471a6 6 0 0 1 .353.735c.19.478.261.933.243 1.356a7.5 7.5 0 1 1-8.782 8.348a7 7 0 0 1-1.894.82m5.203.263a1 1 0 0 1 1.406.149A3.5 3.5 0 0 0 20.5 24c1.099 0 2.08-.505 2.723-1.3a1 1 0 0 1 1.554 1.258A5.5 5.5 0 0 1 20.5 26a5.5 5.5 0 0 1-4.277-2.042a1 1 0 0 1 .148-1.407M18 20.25a1.25 1.25 0 1 0 0-2.5a1.25 1.25 0 0 0 0 2.5M24.25 19a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0"></svg:path>`,
+})
+export class FluentEmojiHand32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentEmojiHand48FilledIcon],svg[fluent-emoji-hand-48-filled-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class FluentFlowchartCircle24RegularIcon {
   template: `<svg:path fill="currentColor" d="M10.724 2.053a.5.5 0 0 0-.448 0l-5 2.5A.5.5 0 0 0 5 5v9.5a.5.5 0 0 0 .243.429l5 3A.5.5 0 0 0 11 17.5v-4.691l4.724-2.362a.5.5 0 0 0 0-.894L11.618 7.5l4.106-2.053a.5.5 0 0 0 0-.894z"></svg:path>`,
 })
 export class FluentFluent20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentFluent20RegularIcon],svg[fluent-fluent-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.276 2.053a.5.5 0 0 1 .448 0l5 2.5a.5.5 0 0 1 0 .894L11.618 7.5l4.106 2.053a.5.5 0 0 1 0 .894L11 12.81v4.69a.5.5 0 0 1-.757.429l-5-3A.5.5 0 0 1 5 14.5V5a.5.5 0 0 1 .276-.447zM6 5.309v8.908l4 2.4v-3.808a1 1 0 0 1 .553-.894L14.382 10l-4.106-2.053a.5.5 0 0 1 0-.894L14.382 5L10.5 3.059z"></svg:path>`,
-})
-export class FluentFluent20RegularIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

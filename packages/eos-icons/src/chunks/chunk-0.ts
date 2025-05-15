@@ -70,23 +70,6 @@ export class EosIconsAbstractInstanceIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[eosIconsAbstractOutlinedIcon],svg[eos-icons-abstract-outlined-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m21.732 11l-4.003-7a1.97 1.97 0 0 0-1.72-1H8.005a2.04 2.04 0 0 0-1.733 1l-4.003 7a2 2 0 0 0 0 2l4.003 7a2.04 2.04 0 0 0 1.733 1h8.006a1.97 1.97 0 0 0 1.719-1l4.003-7a2 2 0 0 0 0-2M16 19H8l-4-7l4-7h8l4 7Z"></svg:path>`,
-})
-export class EosIconsAbstractOutlinedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[eosIconsAbstractInstanceOutlinedIcon],svg[eos-icons-abstract-instance-outlined-icon]',
   host: {
     role: 'img',
@@ -104,16 +87,16 @@ export class EosIconsAbstractInstanceOutlinedIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[eosIconsActionChainsOutlinedIcon],svg[eos-icons-action-chains-outlined-icon]',
+  selector: 'svg[eosIconsAbstractOutlinedIcon],svg[eos-icons-abstract-outlined-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M18 3H6.834a3 3 0 1 0 0 2H18a3 3 0 0 1 0 6h-3.168a3 3 0 0 0-5.639 0H6a5 5 0 0 0 0 10h6v3l4-4l-4-4v3H6a3 3 0 0 1 0-6h3.203a3 3 0 0 0 5.629 0H18a5 5 0 0 0 0-10M4 5a1 1 0 1 1 1-1a1 1 0 0 1-1 1m8 8a1 1 0 1 1 1-1a1 1 0 0 1-1 1"></svg:path><svg:path fill="currentColor" d="M20 17a3 3 0 1 0 3 3a3 3 0 0 0-3-3m0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m21.732 11l-4.003-7a1.97 1.97 0 0 0-1.72-1H8.005a2.04 2.04 0 0 0-1.733 1l-4.003 7a2 2 0 0 0 0 2l4.003 7a2.04 2.04 0 0 0 1.733 1h8.006a1.97 1.97 0 0 0 1.719-1l4.003-7a2 2 0 0 0 0-2M16 19H8l-4-7l4-7h8l4 7Z"></svg:path>`,
 })
-export class EosIconsActionChainsOutlinedIcon {
+export class EosIconsAbstractOutlinedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,16 +121,16 @@ export class EosIconsActionChainsIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[eosIconsActivateSubscriptionsOutlinedIcon],svg[eos-icons-activate-subscriptions-outlined-icon]',
+  selector: 'svg[eosIconsActionChainsOutlinedIcon],svg[eos-icons-action-chains-outlined-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M5.004 5.999h16v2h-16zm2-3.999h12v2h-12zm13.993 7.991H5.003A2.01 2.01 0 0 0 3 12.004v7.974a2.01 2.01 0 0 0 2.003 2.013h15.994A2.01 2.01 0 0 0 23 19.978v-7.974a2.01 2.01 0 0 0-2.003-2.013M21 20H5v-8h16Z"></svg:path><svg:path fill="currentColor" d="M12.004 18.991h2v-1.989h2v-2.004h-2v-2.007h-2v2.01h-2v2.001h2z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M18 3H6.834a3 3 0 1 0 0 2H18a3 3 0 0 1 0 6h-3.168a3 3 0 0 0-5.639 0H6a5 5 0 0 0 0 10h6v3l4-4l-4-4v3H6a3 3 0 0 1 0-6h3.203a3 3 0 0 0 5.629 0H18a5 5 0 0 0 0-10M4 5a1 1 0 1 1 1-1a1 1 0 0 1-1 1m8 8a1 1 0 1 1 1-1a1 1 0 0 1-1 1"></svg:path><svg:path fill="currentColor" d="M20 17a3 3 0 1 0 3 3a3 3 0 0 0-3-3m0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1"></svg:path>`,
 })
-export class EosIconsActivateSubscriptionsOutlinedIcon {
+export class EosIconsActionChainsOutlinedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -165,6 +148,23 @@ export class EosIconsActivateSubscriptionsOutlinedIcon {
   template: `<svg:path fill="currentColor" d="M4 6h16v2H4zm2-4h12v2H6zm14 8H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2m-5 7h-2v2h-2v-2H9v-2h2v-2h2v2h2Z"></svg:path>`,
 })
 export class EosIconsActivateSubscriptionsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[eosIconsActivateSubscriptionsOutlinedIcon],svg[eos-icons-activate-subscriptions-outlined-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.004 5.999h16v2h-16zm2-3.999h12v2h-12zm13.993 7.991H5.003A2.01 2.01 0 0 0 3 12.004v7.974a2.01 2.01 0 0 0 2.003 2.013h15.994A2.01 2.01 0 0 0 23 19.978v-7.974a2.01 2.01 0 0 0-2.003-2.013M21 20H5v-8h16Z"></svg:path><svg:path fill="currentColor" d="M12.004 18.991h2v-1.989h2v-2.004h-2v-2.007h-2v2.01h-2v2.001h2z"></svg:path>`,
+})
+export class EosIconsActivateSubscriptionsOutlinedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,6 +240,23 @@ export class EosIconsAiHealingIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[eosIconsApiIcon],svg[eos-icons-api-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.26 10.5h2v1h-2z"></svg:path><svg:path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2M8.4 15L8 13.77H6.06L5.62 15H4l2.2-6h1.62L10 15Zm8.36-3.5a1.47 1.47 0 0 1-1.5 1.5h-2v2h-1.5V9h3.5a1.47 1.47 0 0 1 1.5 1.5ZM20 15h-1.5V9H20Z"></svg:path><svg:path fill="currentColor" d="M6.43 12.77h1.16l-.58-1.59z"></svg:path>`,
+})
+export class EosIconsApiIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[eosIconsAiOperatorIcon],svg[eos-icons-ai-operator-icon]',
   host: {
     role: 'img',
@@ -267,23 +284,6 @@ export class EosIconsAiOperatorIcon {
   template: `<svg:path fill="currentColor" d="m12 20.5l-.435-.432C10.02 18.541 9 17.534 9 16.298a1.71 1.71 0 0 1 1.65-1.798a1.74 1.74 0 0 1 1.35.683a1.74 1.74 0 0 1 1.35-.683A1.71 1.71 0 0 1 15 16.298c0 1.236-1.02 2.243-2.565 3.774ZM11 4h2v1h-2z"></svg:path><svg:circle cx="9" cy="4" r="1" fill="currentColor"></svg:circle><svg:circle cx="15" cy="4" r="1" fill="currentColor"></svg:circle><svg:path fill="currentColor" d="M18 10h-5V8l3-.008A3 3 0 0 0 19 5V3a3.004 3.004 0 0 0-3-3H8a3.004 3.004 0 0 0-3 3v2a3.004 3.004 0 0 0 3 3h3v2H6a3.005 3.005 0 0 0-3 3v8a3.004 3.004 0 0 0 3 3h12a3.004 3.004 0 0 0 3-3v-8a3.005 3.005 0 0 0-3-3M8 6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1l7.992.002A1.006 1.006 0 0 1 17 3v2a1.01 1.01 0 0 1-1.008 1Zm11 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"></svg:path>`,
 })
 export class EosIconsAiHealingOutlinedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[eosIconsApiIcon],svg[eos-icons-api-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13.26 10.5h2v1h-2z"></svg:path><svg:path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2M8.4 15L8 13.77H6.06L5.62 15H4l2.2-6h1.62L10 15Zm8.36-3.5a1.47 1.47 0 0 1-1.5 1.5h-2v2h-1.5V9h3.5a1.47 1.47 0 0 1 1.5 1.5ZM20 15h-1.5V9H20Z"></svg:path><svg:path fill="currentColor" d="M6.43 12.77h1.16l-.58-1.59z"></svg:path>`,
-})
-export class EosIconsApiIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

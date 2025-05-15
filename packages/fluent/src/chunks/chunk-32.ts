@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentText12FilledIcon],svg[fluent-text-12-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 2.75A.75.75 0 0 1 2.75 2h6a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V3.5H6.5v5h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5H5v-5H3.5v.75a.75.75 0 0 1-1.5 0z"></svg:path>`,
+})
+export class FluentText12FilledIcon {
+  readonly viewBox = input("0 0 12 12")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentText12RegularIcon],svg[fluent-text-12-regular-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class FluentTextFontSize20RegularIcon {
   template: `<svg:path fill="currentColor" d="m9.97 16.168l4.59-12.511c.306-.835 1.446-.873 1.829-.114l.049.114l5.501 14.996a1 1 0 0 1-1.83.796l-.047-.107L18.65 15.5h-6.305l-1.442 3.92l-.04.079l-.073.108l-.077.09l-.085.077l-.083.06l-.05.032l-.084.043l-.104.04l-.105.028l-.133.02l-.107.001l-.071-.005l-.103-.016l-.15-.044l-.069-.03l-.1-.055l-.111-.08l-.092-.086l-.064-.076l-.061-.09l-.054-.102l-.746-1.913H4.655l-.723 1.86a1 1 0 0 1-1.183.606l-.111-.036a1 1 0 0 1-.606-1.184l.036-.11L5.567 9.64c.315-.81 1.42-.848 1.81-.116l.054.116zl4.59-12.511zm-3.471-3.407L5.433 15.5h2.131zm9-5.856l-2.42 6.594h4.838z"></svg:path>`,
 })
 export class FluentTextFontSize24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentTextFontSize24RegularIcon],svg[fluent-text-font-size-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.212 17.11L15.043 3.5c.223-.627 1.07-.664 1.365-.111l.049.11l5.5 15.5a.75.75 0 0 1-1.373.596l-.04-.094L18.945 15h-6.394l-1.58 4.452a.75.75 0 0 1-.354.452l-.093.044a.75.75 0 0 1-.929-.33l-.044-.092L8.556 17H4.443l-.995 2.52a.75.75 0 0 1-.876.454l-.098-.031a.75.75 0 0 1-.452-.876l.03-.098l3.754-9.495a.75.75 0 0 1 1.345-.104l.05.105zL15.043 3.5zm-3.71-5.318L5.037 15.5h2.928zm9.248-5.8L13.084 13.5h5.33z"></svg:path>`,
-})
-export class FluentTextFontSize24RegularIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

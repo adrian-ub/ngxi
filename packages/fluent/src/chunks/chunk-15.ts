@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentFluent20RegularIcon],svg[fluent-fluent-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.276 2.053a.5.5 0 0 1 .448 0l5 2.5a.5.5 0 0 1 0 .894L11.618 7.5l4.106 2.053a.5.5 0 0 1 0 .894L11 12.81v4.69a.5.5 0 0 1-.757.429l-5-3A.5.5 0 0 1 5 14.5V5a.5.5 0 0 1 .276-.447zM6 5.309v8.908l4 2.4v-3.808a1 1 0 0 1 .553-.894L14.382 10l-4.106-2.053a.5.5 0 0 1 0-.894L14.382 5L10.5 3.059z"></svg:path>`,
+})
+export class FluentFluent20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentFluent24FilledIcon],svg[fluent-fluent-24-filled-icon]',
   host: {
     role: 'img',
@@ -8479,23 +8496,6 @@ export class FluentGlanceHorizontal16FilledIcon {
 })
 export class FluentGlanceHorizontal16RegularIcon {
   readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentGlanceHorizontal20FilledIcon],svg[fluent-glance-horizontal-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.5 3h1A1.5 1.5 0 0 1 17 4.5v3A1.5 1.5 0 0 1 15.5 9h-1A1.5 1.5 0 0 1 13 7.5v-3A1.5 1.5 0 0 1 14.5 3m-10 0h5A1.5 1.5 0 0 1 11 4.5v3A1.5 1.5 0 0 1 9.5 9h-5A1.5 1.5 0 0 1 3 7.5v-3A1.5 1.5 0 0 1 4.5 3m0 8h1A1.5 1.5 0 0 1 7 12.5v3A1.5 1.5 0 0 1 5.5 17h-1A1.5 1.5 0 0 1 3 15.5v-3A1.5 1.5 0 0 1 4.5 11M9 12.5a1.5 1.5 0 0 1 1.5-1.5h5a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 9 15.5z"></svg:path>`,
-})
-export class FluentGlanceHorizontal20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
 }

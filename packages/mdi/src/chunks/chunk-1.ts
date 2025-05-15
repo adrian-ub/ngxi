@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[mdiArrowBottomRightBoldBoxOutlineIcon],svg[mdi-arrow-bottom-right-bold-box-outline-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M16 16H8.9l2.1-2.1L7 10l2.8-2.8l4.1 3.9L16 8.9zM5 21h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2M5 5h14v14H5z"></svg:path>`,
-})
-export class MdiArrowBottomRightBoldBoxOutlineIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mdiArrowBottomRightBoldOutlineIcon],svg[mdi-arrow-bottom-right-bold-outline-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MdiBluetoothOffIcon {
   template: `<svg:path fill="currentColor" d="M14.88 14.29L13 16.17v-3.76zM13 3.83l1.88 1.88L13 7.59m4.71-1.88L12 0h-1v7.59L6.41 3L5 4.41L10.59 10L5 15.59L6.41 17L11 12.41V20h1l5.71-5.71l-4.3-4.29zM15 24h2v-2h-2m-8 2h2v-2H7m4 2h2v-2h-2z"></svg:path>`,
 })
 export class MdiBluetoothSettingsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiBluetoothTransferIcon],svg[mdi-bluetooth-transfer-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.71 7.71L10.41 12l4.3 4.29L9 22H8v-7.59L3.41 19L2 17.59L7.59 12L2 6.41L3.41 5L8 9.59V2h1zM10 5.83v3.76l1.88-1.88zm1.88 10.46L10 14.41v3.76zM22 8h-2v3h-2V8h-2l3-4zm0 8l-3 4l-3-4h2v-3h2v3z"></svg:path>`,
+})
+export class MdiBluetoothTransferIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

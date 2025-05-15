@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[mdiFullscreenIcon],svg[mdi-fullscreen-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 5h5v2H7v3H5zm9 0h5v5h-2V7h-3zm3 9h2v5h-5v-2h3zm-7 3v2H5v-5h2v3z"></svg:path>`,
-})
-export class MdiFullscreenIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mdiFullscreenExitIcon],svg[mdi-fullscreen-exit-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MdiHumanWhiteCaneIcon {
   template: `<svg:path fill="currentColor" d="M16.91 18.12c-2.82 0 1.52-15.99 1.52-15.99h-2.9s-1.19 3.76-1.98 7.94h-2.5c.06-.86.1-1.73.08-2.57C11 .59 7 1.87 5.18 3.45C3.47 4.95 2.03 7.8 2 10h1.35s.9-4.12 3.72-4.12s-1.53 15.99-1.53 15.99h2.91s1.5-4.28 2.25-9.06l2.39-.01c-.14 1.24-.18 2.6-.16 3.87c.11 6.89 4.13 5.41 5.93 3.83C20.67 18.92 22 15.58 22 14h-1.39c.01.12-.88 4.12-3.7 4.12"></svg:path>`,
 })
 export class MdiHumbleBundleIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiHurricaneIcon],svg[mdi-hurricane-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path d="M15 6.79A6 6 0 0 1 18 12C18 22 6 22 6 22a17.7 17.7 0 0 0 3.34-3.29a1 1 0 0 0-.34-1.5A6 6 0 0 1 6 12C6 2 18 2 18 2a17.699 17.699 0 0 0-3.34 3.29a1.002 1.002 0 0 0 .34 1.5zM12 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4z" fill="currentColor"></svg:path>`,
+})
+export class MdiHurricaneIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

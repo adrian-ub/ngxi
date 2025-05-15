@@ -19,23 +19,6 @@ export class FeAddCartIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[feActivityIcon],svg[fe-activity-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11 19a1 1 0 0 1-2 0V8a1 1 0 1 1 2 0zm-4 0a1 1 0 0 1-2 0v-7a1 1 0 0 1 2 0zm6 0v-9a1 1 0 0 1 2 0v9a1 1 0 0 1-2 0m4-14a1 1 0 0 1 2 0v14a1 1 0 0 1-2 0z"></svg:path>`,
-})
-export class FeActivityIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[feAlignBottomIcon],svg[fe-align-bottom-icon]',
   host: {
     role: 'img',
@@ -53,33 +36,16 @@ export class FeAlignBottomIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[feAlignCenterIcon],svg[fe-align-center-icon]',
+  selector: 'svg[feActivityIcon],svg[fe-activity-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11 13v-2H6.286C5.023 11 4 10.105 4 9s1.023-2 2.286-2H11V3a1 1 0 0 1 2 0v4h4.714C18.977 7 20 7.895 20 9s-1.023 2-2.286 2H13v2h3a2 2 0 1 1 0 4h-3v4a1 1 0 0 1-2 0v-4H8a2 2 0 1 1 0-4z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11 19a1 1 0 0 1-2 0V8a1 1 0 1 1 2 0zm-4 0a1 1 0 0 1-2 0v-7a1 1 0 0 1 2 0zm6 0v-9a1 1 0 0 1 2 0v9a1 1 0 0 1-2 0m4-14a1 1 0 0 1 2 0v14a1 1 0 0 1-2 0z"></svg:path>`,
 })
-export class FeAlignCenterIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[feAlignTopIcon],svg[fe-align-top-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.8 3h14.4c.442 0 .8.448.8 1s-.358 1-.8 1H4.8C4.358 5 4 4.552 4 4s.358-1 .8-1M7 9a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0zm6 0a2 2 0 1 1 4 0v6a2 2 0 1 1-4 0z"></svg:path>`,
-})
-export class FeAlignTopIcon {
+export class FeActivityIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,6 +70,23 @@ export class FeAlignLeftIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[feAlignCenterIcon],svg[fe-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11 13v-2H6.286C5.023 11 4 10.105 4 9s1.023-2 2.286-2H11V3a1 1 0 0 1 2 0v4h4.714C18.977 7 20 7.895 20 9s-1.023 2-2.286 2H13v2h3a2 2 0 1 1 0 4h-3v4a1 1 0 0 1-2 0v-4H8a2 2 0 1 1 0-4z"></svg:path>`,
+})
+export class FeAlignCenterIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[feAlignRightIcon],svg[fe-align-right-icon]',
   host: {
     role: 'img',
@@ -114,6 +97,23 @@ export class FeAlignLeftIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M17 21a1 1 0 0 1-2 0V3a1 1 0 0 1 2 0zM11 5a2 2 0 1 1 0 4H5a2 2 0 1 1 0-4zm0 7a2 2 0 1 1 0 4H7a2 2 0 1 1 0-4z"></svg:path>`,
 })
 export class FeAlignRightIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[feAlignTopIcon],svg[fe-align-top-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.8 3h14.4c.442 0 .8.448.8 1s-.358 1-.8 1H4.8C4.358 5 4 4.552 4 4s.358-1 .8-1M7 9a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0zm6 0a2 2 0 1 1 4 0v6a2 2 0 1 1-4 0z"></svg:path>`,
+})
+export class FeAlignTopIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -155,23 +155,6 @@ export class FeAngryIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[feAppMenuIcon],svg[fe-app-menu-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M16 16h4v4h-4zm-6 0h4v4h-4zm-6 0h4v4H4zm12-6h4v4h-4zm-6 0h4v4h-4zm-6 0h4v4H4zm12-6h4v4h-4zm-6 0h4v4h-4zM4 4h4v4H4z"></svg:path>`,
-})
-export class FeAppMenuIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[feApronIcon],svg[fe-apron-icon]',
   host: {
     role: 'img',
@@ -182,6 +165,23 @@ export class FeAppMenuIcon {
   template: `<svg:path fill="currentColor" d="m9.694 8l-1 6H6v6h12v-6h-2.694l-1-6zM10 3v3h4V3a1 1 0 0 1 2 0v3l1 6h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h1l1-6V3a1 1 0 1 1 2 0M8 16h8v2H8z"></svg:path>`,
 })
 export class FeApronIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[feAppMenuIcon],svg[fe-app-menu-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M16 16h4v4h-4zm-6 0h4v4h-4zm-6 0h4v4H4zm12-6h4v4h-4zm-6 0h4v4h-4zm-6 0h4v4H4zm12-6h4v4h-4zm-6 0h4v4h-4zM4 4h4v4H4z"></svg:path>`,
+})
+export class FeAppMenuIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,23 +240,6 @@ export class FeArrowRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[feArrowUpIcon],svg[fe-arrow-up-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m4 15l8-8l8 8l-2 2l-6-6l-6 6z"></svg:path>`,
-})
-export class FeArrowUpIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[feArtboardIcon],svg[fe-artboard-icon]',
   host: {
     role: 'img',
@@ -267,6 +250,23 @@ export class FeArrowUpIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M6 16V8H4a1 1 0 1 1 0-2h2V4a1 1 0 1 1 2 0v2h8V4a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2h-2v8h2a1 1 0 0 1 0 2h-2v2a1 1 0 0 1-2 0v-2H8v2a1 1 0 0 1-2 0v-2H4a1 1 0 0 1 0-2zm2 0h8V8H8z"></svg:path>`,
 })
 export class FeArtboardIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[feArrowUpIcon],svg[fe-arrow-up-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m4 15l8-8l8 8l-2 2l-6-6l-6 6z"></svg:path>`,
+})
+export class FeArrowUpIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

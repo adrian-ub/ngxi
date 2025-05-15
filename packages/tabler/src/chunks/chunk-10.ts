@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[tablerSliceIcon],svg[tabler-slice-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19L18 4l3 3l-6 6l2 2a14 14 0 0 1-14 4"></svg:path>`,
+})
+export class TablerSliceIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[tablerSlideshowIcon],svg[tabler-slideshow-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class TablerTextWrapIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 9h7a3 3 0 0 1 0 6h-4l2-2m0 4l-2-2M3 3v18M21 3v18"></svg:path>`,
 })
 export class TablerTextWrapColumnIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tablerTextWrapDisabledIcon],svg[tabler-text-wrap-disabled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h10M4 18h10M4 12h17l-3-3m0 6l3-3"></svg:path>`,
-})
-export class TablerTextWrapDisabledIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

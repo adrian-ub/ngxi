@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentMailList24RegularIcon],svg[fluent-mail-list-24-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.525 4H5.25l-.184.005A3.25 3.25 0 0 0 2 7.25v9.5l.005.184A3.25 3.25 0 0 0 5.25 20h13.5l.184-.005A3.25 3.25 0 0 0 22 16.75V9.332a1.74 1.74 0 0 1-.75.168h-.75v7.25l-.006.143A1.75 1.75 0 0 1 18.75 18.5H5.25l-.144-.006A1.75 1.75 0 0 1 3.5 16.75V9.374l8.15 4.29l.097.042a.75.75 0 0 0 .602-.042L20.26 9.5h-3.22L12 12.153L3.5 7.679V7.25l.006-.144A1.75 1.75 0 0 1 5.25 5.5h6.768a1.75 1.75 0 0 1 .508-1.5m8.725-2a.75.75 0 1 1 0 1.5h-7.5a.747.747 0 0 1-.75-.75a.75.75 0 0 1 .75-.75zm0 2.5a.75.75 0 1 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5zM13 7.75a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1-.75-.75"></svg:path>`,
+})
+export class FluentMailList24RegularIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentMailList28FilledIcon],svg[fluent-mail-list-28-filled-icon]',
   host: {
     role: 'img',
@@ -8479,23 +8496,6 @@ export class FluentMoviesAndTv24FilledIcon {
 })
 export class FluentMoviesAndTv24RegularIcon {
   readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMultiplier12x20FilledIcon],svg[fluent-multiplier-1-2x-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.7 8.748a.75.75 0 0 0 .8-.701a1 1 0 0 1 .148-.388c.109-.168.338-.409.952-.409c.58 0 .862.186 1.004.38c.158.216.266.61.157 1.243a.78.78 0 0 1-.403.597c-.204.126-.423.206-.719.314q-.19.069-.43.162c-.474.185-1.057.456-1.505.997c-.46.558-.704 1.308-.704 2.307a.75.75 0 0 0 .75.75h3.75a.75.75 0 0 0 0-1.5H9.578c.069-.285.175-.47.282-.6c.196-.238.48-.395.895-.557q.121-.047.271-.101c.343-.125.776-.282 1.122-.497a2.27 2.27 0 0 0 1.091-1.618c.15-.867.057-1.723-.424-2.382c-.497-.68-1.295-.995-2.215-.995c-1.136 0-1.832.51-2.21 1.091a2.5 2.5 0 0 0-.387 1.09v.011l-.001.004v.002c0 .003-.024.353 0 .002a.75.75 0 0 0 .698.798m6.58 1.472a.75.75 0 1 0-1.06 1.06l.72.72l-.72.72a.75.75 0 1 0 1.06 1.06l.72-.72l.72.72a.75.75 0 1 0 1.06-1.06l-.72-.72l.72-.72a.75.75 0 1 0-1.06-1.06l-.72.72zM7 13.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0M4.457 6.03A.75.75 0 0 1 5 6.75v6.5a.75.75 0 0 1-1.5 0V8.805c-.241.19-.524.384-.864.588a.75.75 0 0 1-.772-1.286c.58-.349.903-.621 1.128-.868c.216-.237.361-.47.575-.812l.048-.075a.75.75 0 0 1 .842-.323"></svg:path>`,
-})
-export class FluentMultiplier12x20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
 }
