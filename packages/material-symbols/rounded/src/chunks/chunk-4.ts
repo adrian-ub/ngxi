@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsFollowTheSignsRoundedIcon],svg[material-symbols-follow-the-signs-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M9.5 5.5q-.825 0-1.412-.587T7.5 3.5t.588-1.412T9.5 1.5t1.413.588T11.5 3.5t-.587 1.413T9.5 5.5M6.85 15l-1.575 7.2q-.075.35-.363.575T4.25 23q-.5 0-.8-.375t-.2-.85L5.75 8.9L4 9.65V12q0 .425-.288.712T3 13t-.712-.288T2 12V8.975q0-.3.175-.55t.45-.375l4.625-1.9q.675-.275 1.375-.063T9.7 6.95l.95 1.6q.55.875 1.412 1.512T14 10.9q.425.1.713.388T15 12t-.288.7t-.712.225q-1.35-.2-2.488-.85T9.55 10.4l-.6 3l1.475 1.475q.275.275.425.638t.15.762V22q0 .425-.287.713T10 23t-.712-.288T9 22v-5zm9.9-6H14q-.425 0-.712-.288T13 8V3q0-.425.288-.712T14 2h7q.425 0 .713.288T22 3v5q0 .425-.288.713T21 9h-2.75v13.25q0 .325-.213.538T17.5 23t-.537-.213t-.213-.537zm.85-2.75l-.125.125q-.225.225-.225.525t.225.525t.538.225t.537-.225L19.8 6.2q.15-.15.213-.325t.062-.375t-.062-.375T19.8 4.8l-1.25-1.25q-.225-.225-.525-.225t-.525.225t-.225.538t.225.537l.1.125h-2.35q-.325 0-.537.213T14.5 5.5t.213.538t.537.212z"></svg:path>`,
+})
+export class MaterialSymbolsFollowTheSignsRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsFontDownloadOffOutlineRoundedIcon],svg[material-symbols-font-download-off-outline-rounded-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsInvertColorsOffRoundedIcon {
   template: `<svg:path fill="currentColor" d="M12 21q-3.325 0-5.663-2.312T4 13.1q0-1.65.625-3.05t1.725-2.5l4.6-4.525q.225-.2.5-.312T12 2.6t.55.113t.5.312l4.6 4.525q1.1 1.1 1.725 2.5T20 13.1q0 3.275-2.337 5.588T12 21m0-2V4.8L7.75 9q-.875.825-1.312 1.863T6 13.1q0 2.425 1.75 4.163T12 19"></svg:path>`,
 })
 export class MaterialSymbolsInvertColorsOutlineRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsInvertColorsRoundedIcon],svg[material-symbols-invert-colors-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 21q-3.325 0-5.663-2.3T4 13.125q0-1.65.625-3.062T6.35 7.55l4.6-4.525q.225-.2.5-.312T12 2.6t.55.113t.5.312l4.6 4.525q1.1 1.1 1.725 2.513T20 13.125q0 3.275-2.337 5.575T12 21m0-2V4.8L7.75 9q-.875.825-1.312 1.875T6 13.125q0 2.425 1.75 4.15T12 19"></svg:path>`,
-})
-export class MaterialSymbolsInvertColorsRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

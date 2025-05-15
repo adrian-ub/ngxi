@@ -19,23 +19,6 @@ export class AkarIconsAirIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[akarIconsAirplayAudioIcon],svg[akar-icons-airplay-audio-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m12 16l6 5H6z"></svg:path><svg:path d="M4 18a9.96 9.96 0 0 1-2-6C2 6.477 6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6"></svg:path><svg:path d="M17.123 15.125a6 6 0 1 0-10.247-.002"></svg:path><svg:path d="M14 12a2 2 0 1 0-4 0"></svg:path></svg:g>`,
-})
-export class AkarIconsAirplayAudioIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[akarIconsAirplayVideoIcon],svg[akar-icons-airplay-video-icon]',
   host: {
     role: 'img',
@@ -53,6 +36,23 @@ export class AkarIconsAirplayVideoIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[akarIconsAirplayAudioIcon],svg[akar-icons-airplay-audio-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m12 16l6 5H6z"></svg:path><svg:path d="M4 18a9.96 9.96 0 0 1-2-6C2 6.477 6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2 6"></svg:path><svg:path d="M17.123 15.125a6 6 0 1 0-10.247-.002"></svg:path><svg:path d="M14 12a2 2 0 1 0-4 0"></svg:path></svg:g>`,
+})
+export class AkarIconsAirplayAudioIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[akarIconsAirpodsIcon],svg[akar-icons-airpods-icon]',
   host: {
     role: 'img',
@@ -63,23 +63,6 @@ export class AkarIconsAirplayVideoIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-width="2"><svg:path d="M14 7c0 2.21 1.644 4 4 4s4-1.79 4-4s-1.644-4-4-4s-4 1.79-4 4Zm-4 0c0 2.21-1.644 4-4 4S2 9.21 2 7s1.644-4 4-4s4 1.79 4 4Z"></svg:path><svg:path stroke-linecap="round" d="M14 7v12a2 2 0 0 0 2 2v0a2 2 0 0 0 2-2v-8"></svg:path><svg:path d="M14 17h4M6 17h4"></svg:path><svg:path stroke-linecap="round" d="M10 7v12a2 2 0 0 1-2 2v0a2 2 0 0 1-2-2v-8"></svg:path><svg:path d="M20 4a5.41 5.41 0 0 0 0 6M4 4a5.41 5.41 0 0 1 0 6"></svg:path></svg:g>`,
 })
 export class AkarIconsAirpodsIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[akarIconsAlignHorizontalCenterIcon],svg[akar-icons-align-horizontal-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2"><svg:path d="M12 3v18"></svg:path><svg:path stroke-linejoin="round" d="M16 6h4v4h-4m-8 0H4V6h4m8 8h2v4h-2m-8-4H6v4h2"></svg:path></svg:g>`,
-})
-export class AkarIconsAlignHorizontalCenterIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -114,6 +97,23 @@ export class AkarIconsAlarmIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2"><svg:path d="M21 22H3"></svg:path><svg:path stroke-linejoin="round" d="M6 18V2h4v16zm8 0V8h4v10z"></svg:path></svg:g>`,
 })
 export class AkarIconsAlignBottomIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[akarIconsAlignHorizontalCenterIcon],svg[akar-icons-align-horizontal-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2"><svg:path d="M12 3v18"></svg:path><svg:path stroke-linejoin="round" d="M16 6h4v4h-4m-8 0H4V6h4m8 8h2v4h-2m-8-4H6v4h2"></svg:path></svg:g>`,
+})
+export class AkarIconsAlignHorizontalCenterIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,23 +240,6 @@ export class AkarIconsAlignVerticalCenterIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[akarIconsAndroidFillIcon],svg[akar-icons-android-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M17.532 15.106a1.003 1.003 0 1 1 .001-2.007a1.003 1.003 0 0 1 0 2.007m-11.044 0a1.003 1.003 0 1 1 .001-2.007a1.003 1.003 0 0 1 0 2.007m11.4-6.018l2.006-3.459a.413.413 0 1 0-.721-.407l-2.027 3.5a12.2 12.2 0 0 0-5.13-1.108c-1.85 0-3.595.398-5.141 1.098l-2.027-3.5a.413.413 0 1 0-.72.407l1.995 3.458C2.696 10.947.345 14.417 0 18.523h24c-.334-4.096-2.675-7.565-6.112-9.435"></svg:path>`,
-})
-export class AkarIconsAndroidFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[akarIconsAngularFillIcon],svg[akar-icons-angular-fill-icon]',
   host: {
     role: 'img',
@@ -284,6 +267,40 @@ export class AkarIconsAngularFillIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="m8 5l-5 5l5 5"></svg:path><svg:path d="M3 10h8c5.523 0 10 4.477 10 10v1"></svg:path></svg:g>`,
 })
 export class AkarIconsArrowBackIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[akarIconsAndroidFillIcon],svg[akar-icons-android-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17.532 15.106a1.003 1.003 0 1 1 .001-2.007a1.003 1.003 0 0 1 0 2.007m-11.044 0a1.003 1.003 0 1 1 .001-2.007a1.003 1.003 0 0 1 0 2.007m11.4-6.018l2.006-3.459a.413.413 0 1 0-.721-.407l-2.027 3.5a12.2 12.2 0 0 0-5.13-1.108c-1.85 0-3.595.398-5.141 1.098l-2.027-3.5a.413.413 0 1 0-.72.407l1.995 3.458C2.696 10.947.345 14.417 0 18.523h24c-.334-4.096-2.675-7.565-6.112-9.435"></svg:path>`,
+})
+export class AkarIconsAndroidFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[akarIconsArrowBackThickFillIcon],svg[akar-icons-arrow-back-thick-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10 2a1 1 0 0 0-1.79-.614l-7 9a1 1 0 0 0 0 1.228l7 9A1 1 0 0 0 10 20v-3.99c5.379.112 7.963 1.133 9.261 2.243c1.234 1.055 1.46 2.296 1.695 3.596l.061.335a1 1 0 0 0 1.981-.122c.171-2.748-.086-6.73-2.027-10.061C19.087 8.768 15.695 6.282 10 6.022z" clip-rule="evenodd"></svg:path>`,
+})
+export class AkarIconsArrowBackThickFillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -7764,23 +7781,6 @@ export class AkarIconsZoomInIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0Zm-6 0H8"></svg:path>`,
 })
 export class AkarIconsZoomOutIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[akarIconsArrowBackThickFillIcon],svg[akar-icons-arrow-back-thick-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10 2a1 1 0 0 0-1.79-.614l-7 9a1 1 0 0 0 0 1.228l7 9A1 1 0 0 0 10 20v-3.99c5.379.112 7.963 1.133 9.261 2.243c1.234 1.055 1.46 2.296 1.695 3.596l.061.335a1 1 0 0 0 1.981-.122c.171-2.748-.086-6.73-2.027-10.061C19.087 8.768 15.695 6.282 10 6.022z" clip-rule="evenodd"></svg:path>`,
-})
-export class AkarIconsArrowBackThickFillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

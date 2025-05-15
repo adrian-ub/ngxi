@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentSpeakerEdit16RegularIcon],svg[fluent-speaker-edit-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.999 2.5a.5.5 0 0 0-.85-.358l-2.925 2.85H3.5a1.5 1.5 0 0 0-1.5 1.5V9.48a1.5 1.5 0 0 0 1.5 1.5h1.722l1.302 1.278a3.8 3.8 0 0 1 .52-.89l-1.267-1.245a.5.5 0 0 0-.35-.143H3.5a.5.5 0 0 1-.5-.5V6.492a.5.5 0 0 1 .5-.5h1.927a.5.5 0 0 0 .349-.142l2.223-2.165v6.693l1-1zm-.95 9.242a2.8 2.8 0 0 0-.73 1.29l-.303 1.21a.61.61 0 0 0 .739.74l1.21-.303a2.8 2.8 0 0 0 1.29-.73l4.288-4.288a1.56 1.56 0 0 0-1.617-2.578a1.56 1.56 0 0 0-.59.371l-.338.339l-1.115 1.114zm5.645-5.732a6.6 6.6 0 0 0-1.522-2.563a5 5 0 0 0-.327-.31l-.023-.02l-.007-.005l-.002-.002l-.002-.001a.5.5 0 1 0-.623.782l.012.01l.051.044q.072.063.201.196a5.6 5.6 0 0 1 1.221 1.973a2.6 2.6 0 0 1 1.02-.104m-1.914.597a3.8 3.8 0 0 0-.351-.756a3.4 3.4 0 0 0-.405-.54a3 3 0 0 0-.188-.183l-.015-.012l-.005-.005l-.002-.001l-.001-.001h-.001a.5.5 0 0 0-.623.78h-.001l.018.016q.028.025.085.085c.074.08.178.207.283.38c.151.248.307.596.382 1.05l.673-.673q.075-.074.152-.14"></svg:path>`,
+})
+export class FluentSpeakerEdit16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentSpeakerEdit20FilledIcon],svg[fluent-speaker-edit-20-filled-icon]',
   host: {
     role: 'img',
@@ -8479,23 +8496,6 @@ export class FluentStyleGuide24FilledIcon {
 })
 export class FluentStyleGuide24RegularIcon {
   readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentSubGrid20FilledIcon],svg[fluent-sub-grid-20-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6 10.5v2A1.5 1.5 0 0 0 7.5 14h2v-3.5zm0-1v-2A1.5 1.5 0 0 1 7.5 6h2v3.5zM10.5 6v3.5H14v-2A1.5 1.5 0 0 0 12.5 6zm3.5 4.5h-3.5V14h2a1.5 1.5 0 0 0 1.5-1.5zM6 3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm-2 7.5h2v-1H4V6a2 2 0 0 1 2-2h3.5v2h1V4H14a2 2 0 0 1 2 2v3.5h-2v1h2V14a2 2 0 0 1-2 2h-3.5v-2h-1v2H6a2 2 0 0 1-2-2z"></svg:path>`,
-})
-export class FluentSubGrid20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
 }

@@ -87,23 +87,6 @@ export class CodiconArrowBothIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[codiconArrowCircleLeftIcon],svg[codicon-arrow-circle-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="m7.92 10.631l-2.14-2.14h5.752v-1h-5.68L7.92 5.426l-.707-.707l-2.956 2.957v.707l2.956 2.956z"></svg:path><svg:path d="M8 2a6 6 0 1 1 0 12A6 6 0 0 1 8 2m0 1a5 5 0 1 0 0 10A5 5 0 0 0 8 3"></svg:path></svg:g>`,
-})
-export class CodiconArrowCircleLeftIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[codiconArrowCircleDownIcon],svg[codicon-arrow-circle-down-icon]',
   host: {
     role: 'img',
@@ -121,6 +104,23 @@ export class CodiconArrowCircleDownIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[codiconArrowCircleLeftIcon],svg[codicon-arrow-circle-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="m7.92 10.631l-2.14-2.14h5.752v-1h-5.68L7.92 5.426l-.707-.707l-2.956 2.957v.707l2.956 2.956z"></svg:path><svg:path d="M8 2a6 6 0 1 1 0 12A6 6 0 0 1 8 2m0 1a5 5 0 1 0 0 10A5 5 0 0 0 8 3"></svg:path></svg:g>`,
+})
+export class CodiconArrowCircleLeftIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[codiconArrowCircleUpIcon],svg[codicon-arrow-circle-up-icon]',
   host: {
     role: 'img',
@@ -131,23 +131,6 @@ export class CodiconArrowCircleDownIcon {
   template: `<svg:g fill="currentColor"><svg:path d="m5.369 7.92l2.14-2.14v5.752h1v-5.68l2.066 2.067l.707-.707l-2.957-2.956h-.707L4.662 7.212z"></svg:path><svg:path d="M14 8A6 6 0 1 1 2 8a6 6 0 0 1 12 0m-1 0A5 5 0 1 0 3 8a5 5 0 0 0 10 0"></svg:path></svg:g>`,
 })
 export class CodiconArrowCircleUpIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[codiconArrowCircleRightIcon],svg[codicon-arrow-circle-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="m8.08 5.369l2.14 2.14H4.468v1h5.68L8.08 10.574l.707.707l2.956-2.957v-.707L8.788 4.662z"></svg:path><svg:path d="M8 14A6 6 0 1 1 8 2a6 6 0 0 1 0 12m0-1A5 5 0 1 0 8 3a5 5 0 0 0 0 10"></svg:path></svg:g>`,
-})
-export class CodiconArrowCircleRightIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -182,6 +165,23 @@ export class CodiconArrowLeftIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m3.147 9l5 5h.707l5-5l-.707-.707L9 12.439V2H8v10.44L3.854 8.292z" clip-rule="evenodd"></svg:path>`,
 })
 export class CodiconArrowDownIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[codiconArrowCircleRightIcon],svg[codicon-arrow-circle-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="m8.08 5.369l2.14 2.14H4.468v1h5.68L8.08 10.574l.707.707l2.956-2.957v-.707L8.788 4.662z"></svg:path><svg:path d="M8 14A6 6 0 1 1 8 2a6 6 0 0 1 0 12m0-1A5 5 0 1 0 8 3a5 5 0 0 0 0 10"></svg:path></svg:g>`,
+})
+export class CodiconArrowCircleRightIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,23 +240,6 @@ export class CodiconArrowSmallLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[codiconArrowSmallRightIcon],svg[codicon-arrow-small-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m8.64 5l2.5 2.5v.7l-2.5 2.5l-.71-.7l1.64-1.65H4v-1h5.57L7.92 5.7z"></svg:path>`,
-})
-export class CodiconArrowSmallRightIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[codiconArrowSmallUpIcon],svg[codicon-arrow-small-up-icon]',
   host: {
     role: 'img',
@@ -274,6 +257,23 @@ export class CodiconArrowSmallUpIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[codiconArrowSmallRightIcon],svg[codicon-arrow-small-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m8.64 5l2.5 2.5v.7l-2.5 2.5l-.71-.7l1.64-1.65H4v-1h5.57L7.92 5.7z"></svg:path>`,
+})
+export class CodiconArrowSmallRightIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[codiconArrowSwapIcon],svg[codicon-arrow-swap-icon]',
   host: {
     role: 'img',
@@ -284,6 +284,23 @@ export class CodiconArrowSmallUpIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4.207 15.061L1 11.854v-.707L4.207 7.94l.707.707l-2.353 2.354H15v1H2.56l2.354 2.353zm7.586-7L15 4.854v-.707L11.793.94l-.707.707L13.439 4H1v1h12.44l-2.354 2.354z" clip-rule="evenodd"></svg:path>`,
 })
 export class CodiconArrowSwapIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[codiconAttachIcon],svg[codicon-attach-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.252 15h-.5a3.386 3.386 0 0 1-3.25-3.5V3.682A2.6 2.6 0 0 1 7.002 1a2.6 2.6 0 0 1 2.5 2.682v7.167a1.55 1.55 0 0 1-1.5 1.591a1.55 1.55 0 0 1-1.5-1.568V7h1v3.849a.55.55 0 0 0 .5.591a.55.55 0 0 0 .5-.591V3.682A1.6 1.6 0 0 0 7.002 2a1.6 1.6 0 0 0-1.5 1.682V11.5a2.39 2.39 0 0 0 2.25 2.5h.5a2.39 2.39 0 0 0 2.25-2.5V5h1v6.5a3.386 3.386 0 0 1-3.25 3.5"></svg:path>`,
+})
+export class CodiconAttachIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -8172,23 +8189,6 @@ export class CodiconZoomInIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M12.027 6.149a5.52 5.52 0 0 1-1.27 3.908l4.26 4.26l-.7.71l-4.26-4.27a5.52 5.52 0 1 1 1.97-4.608m-5.45 4.888a4.5 4.5 0 0 0 3.18-1.32l-.04.02a4.5 4.5 0 0 0 1.36-3.2a4.5 4.5 0 1 0-4.5 4.5m-2.54-4.98h5v1h-5z" clip-rule="evenodd"></svg:path>`,
 })
 export class CodiconZoomOutIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[codiconAttachIcon],svg[codicon-attach-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.252 15h-.5a3.386 3.386 0 0 1-3.25-3.5V3.682A2.6 2.6 0 0 1 7.002 1a2.6 2.6 0 0 1 2.5 2.682v7.167a1.55 1.55 0 0 1-1.5 1.591a1.55 1.55 0 0 1-1.5-1.568V7h1v3.849a.55.55 0 0 0 .5.591a.55.55 0 0 0 .5-.591V3.682A1.6 1.6 0 0 0 7.002 2a1.6 1.6 0 0 0-1.5 1.682V11.5a2.39 2.39 0 0 0 2.25 2.5h.5a2.39 2.39 0 0 0 2.25-2.5V5h1v6.5a3.386 3.386 0 0 1-3.25 3.5"></svg:path>`,
-})
-export class CodiconAttachIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

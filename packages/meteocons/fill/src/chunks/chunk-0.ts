@@ -19,23 +19,6 @@ export class MeteoconsBarometerFillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[meteoconsCelsiusFillIcon],svg[meteocons-celsius-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:symbol id="meteoconsCelsiusFill0" viewBox="0 0 109.1 73.2"><svg:path fill="#374151" d="M19.4 0A18.7 18.7 0 0 0 0 19.3a18.9 18.9 0 0 0 19.4 19.5a18.7 18.7 0 0 0 14-5.6a18.8 18.8 0 0 0 5.4-14A18.7 18.7 0 0 0 19.4 0m6.3 25.7a8.6 8.6 0 0 1-6.3 2.5a8.5 8.5 0 0 1-6.2-2.5a8.7 8.7 0 0 1-2.4-6.4A8.6 8.6 0 0 1 13 13a8.4 8.4 0 0 1 6.3-2.5a8.4 8.4 0 0 1 8.7 8.8a8.7 8.7 0 0 1-2.4 6.4Zm53.1 32.8a13.4 13.4 0 0 1-11.5-5.6q-4-5.7-4-16q0-10 4-15.6a13.4 13.4 0 0 1 11.5-5.6a12.6 12.6 0 0 1 8.6 3a13.3 13.3 0 0 1 4.2 8.2H109q-1.4-12-9.5-19T78.3 1q-14.5 0-23.7 9.8T45.3 37q0 16.4 9.2 26.3t23.7 9.9q13.2 0 21.6-7.1q8.3-7 9.3-19.6H91.6q-1.6 12-12.8 12"></svg:path></svg:symbol></svg:defs><svg:use width="109.1" height="73.2" href="#meteoconsCelsiusFill0" transform="matrix(1.46 0 0 1.47 176.26 202.35)"></svg:use>`,
-})
-export class MeteoconsCelsiusFillIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[meteoconsBeanieFillIcon],svg[meteocons-beanie-fill-icon]',
   host: {
     role: 'img',
@@ -53,16 +36,16 @@ export class MeteoconsBeanieFillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[meteoconsClearDayFillIcon],svg[meteocons-clear-day-fill-icon]',
+  selector: 'svg[meteoconsCelsiusFillIcon],svg[meteocons-celsius-fill-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:defs><svg:lineargradient id="meteoconsClearDayFill0" x1="150" x2="234" y1="119.2" y2="264.8" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#fbbf24"></svg:stop><svg:stop offset=".5" stop-color="#fbbf24"></svg:stop><svg:stop offset="1" stop-color="#f59e0b"></svg:stop></svg:lineargradient><svg:symbol id="meteoconsClearDayFill1" viewBox="0 0 384 384"><svg:circle cx="192" cy="192" r="84" fill="url(#meteoconsClearDayFill0)" stroke="#f8af18" stroke-miterlimit="10" stroke-width="6"></svg:circle><svg:path fill="none" stroke="#fbbf24" stroke-linecap="round" stroke-miterlimit="10" stroke-width="24" d="M192 61.7V12m0 360v-49.7m92.2-222.5l35-35M64.8 319.2l35.1-35.1m0-184.4l-35-35m254.5 254.5l-35.1-35.1M61.7 192H12m360 0h-49.7"><svg:animatetransform additive="sum" attributeName="transform" dur="6s" repeatCount="indefinite" type="rotate" values="0 192 192; 45 192 192"></svg:animatetransform></svg:path></svg:symbol></svg:defs><svg:use width="384" height="384" href="#meteoconsClearDayFill1" transform="translate(64 64)"></svg:use>`,
+  template: `<svg:defs><svg:symbol id="meteoconsCelsiusFill0" viewBox="0 0 109.1 73.2"><svg:path fill="#374151" d="M19.4 0A18.7 18.7 0 0 0 0 19.3a18.9 18.9 0 0 0 19.4 19.5a18.7 18.7 0 0 0 14-5.6a18.8 18.8 0 0 0 5.4-14A18.7 18.7 0 0 0 19.4 0m6.3 25.7a8.6 8.6 0 0 1-6.3 2.5a8.5 8.5 0 0 1-6.2-2.5a8.7 8.7 0 0 1-2.4-6.4A8.6 8.6 0 0 1 13 13a8.4 8.4 0 0 1 6.3-2.5a8.4 8.4 0 0 1 8.7 8.8a8.7 8.7 0 0 1-2.4 6.4Zm53.1 32.8a13.4 13.4 0 0 1-11.5-5.6q-4-5.7-4-16q0-10 4-15.6a13.4 13.4 0 0 1 11.5-5.6a12.6 12.6 0 0 1 8.6 3a13.3 13.3 0 0 1 4.2 8.2H109q-1.4-12-9.5-19T78.3 1q-14.5 0-23.7 9.8T45.3 37q0 16.4 9.2 26.3t23.7 9.9q13.2 0 21.6-7.1q8.3-7 9.3-19.6H91.6q-1.6 12-12.8 12"></svg:path></svg:symbol></svg:defs><svg:use width="109.1" height="73.2" href="#meteoconsCelsiusFill0" transform="matrix(1.46 0 0 1.47 176.26 202.35)"></svg:use>`,
 })
-export class MeteoconsClearDayFillIcon {
+export class MeteoconsCelsiusFillIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,33 +70,16 @@ export class MeteoconsClearNightFillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[meteoconsCloudDownFillIcon],svg[meteocons-cloud-down-fill-icon]',
+  selector: 'svg[meteoconsClearDayFillIcon],svg[meteocons-clear-day-fill-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:defs><svg:lineargradient id="meteoconsCloudDownFill0" x1="99.5" x2="232.6" y1="30.7" y2="261.4" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#f3f7fe"></svg:stop><svg:stop offset=".5" stop-color="#f3f7fe"></svg:stop><svg:stop offset="1" stop-color="#deeafb"></svg:stop></svg:lineargradient><svg:symbol id="meteoconsCloudDownFill1" viewBox="0 0 350 222"><svg:path fill="url(#meteoconsCloudDownFill0)" stroke="#e6effc" stroke-miterlimit="10" stroke-width="6" d="m291 107l-2.5.1A83.9 83.9 0 0 0 135.6 43A56 56 0 0 0 51 91a56.6 56.6 0 0 0 .8 9A60 60 0 0 0 63 219l4-.2v.2h224a56 56 0 0 0 0-112Z"></svg:path></svg:symbol></svg:defs><svg:use width="350" height="222" href="#meteoconsCloudDownFill1" transform="translate(81 145)"></svg:use><svg:path fill="#374151" d="M372.5 271a4.6 4.6 0 0 0-3.2 1.3L350 290.7l-19.3-18.4a4.6 4.6 0 0 0-6.4 0a4.1 4.1 0 0 0 0 6l22.5 21.4a4.6 4.6 0 0 0 6.4 0l22.5-21.4a4.1 4.1 0 0 0 0-6a4.6 4.6 0 0 0-3.2-1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1.2s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 -30; 0 0; 0 30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1.2s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path><svg:path fill="#374151" d="M372.5 244a4.6 4.6 0 0 0-3.2 1.3L350 263.7l-19.3-18.4a4.6 4.6 0 0 0-6.4 0a4.1 4.1 0 0 0 0 6l22.5 21.4a4.6 4.6 0 0 0 6.4 0l22.5-21.4a4.1 4.1 0 0 0 0-6a4.6 4.6 0 0 0-3.2-1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1.1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 -30; 0 0; 0 30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1.1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path><svg:path fill="#374151" d="M372.5 217a4.6 4.6 0 0 0-3.2 1.3L350 236.7l-19.3-18.4a4.6 4.6 0 0 0-6.4 0a4.1 4.1 0 0 0 0 6l22.5 21.4a4.6 4.6 0 0 0 6.4 0l22.5-21.4a4.1 4.1 0 0 0 0-6a4.6 4.6 0 0 0-3.2-1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 -30; 0 0; 0 30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path>`,
+  template: `<svg:defs><svg:lineargradient id="meteoconsClearDayFill0" x1="150" x2="234" y1="119.2" y2="264.8" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#fbbf24"></svg:stop><svg:stop offset=".5" stop-color="#fbbf24"></svg:stop><svg:stop offset="1" stop-color="#f59e0b"></svg:stop></svg:lineargradient><svg:symbol id="meteoconsClearDayFill1" viewBox="0 0 384 384"><svg:circle cx="192" cy="192" r="84" fill="url(#meteoconsClearDayFill0)" stroke="#f8af18" stroke-miterlimit="10" stroke-width="6"></svg:circle><svg:path fill="none" stroke="#fbbf24" stroke-linecap="round" stroke-miterlimit="10" stroke-width="24" d="M192 61.7V12m0 360v-49.7m92.2-222.5l35-35M64.8 319.2l35.1-35.1m0-184.4l-35-35m254.5 254.5l-35.1-35.1M61.7 192H12m360 0h-49.7"><svg:animatetransform additive="sum" attributeName="transform" dur="6s" repeatCount="indefinite" type="rotate" values="0 192 192; 45 192 192"></svg:animatetransform></svg:path></svg:symbol></svg:defs><svg:use width="384" height="384" href="#meteoconsClearDayFill1" transform="translate(64 64)"></svg:use>`,
 })
-export class MeteoconsCloudDownFillIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[meteoconsCloudUpFillIcon],svg[meteocons-cloud-up-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:defs><svg:lineargradient id="meteoconsCloudUpFill0" x1="99.5" x2="232.6" y1="30.7" y2="261.4" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#f3f7fe"></svg:stop><svg:stop offset=".5" stop-color="#f3f7fe"></svg:stop><svg:stop offset="1" stop-color="#deeafb"></svg:stop></svg:lineargradient><svg:symbol id="meteoconsCloudUpFill1" viewBox="0 0 350 222"><svg:path fill="url(#meteoconsCloudUpFill0)" stroke="#e6effc" stroke-miterlimit="10" stroke-width="6" d="m291 107l-2.5.1A83.9 83.9 0 0 0 135.6 43A56 56 0 0 0 51 91a56.6 56.6 0 0 0 .8 9A60 60 0 0 0 63 219l4-.2v.2h224a56 56 0 0 0 0-112Z"></svg:path></svg:symbol></svg:defs><svg:use width="350" height="222" href="#meteoconsCloudUpFill1" transform="translate(81 145)"></svg:use><svg:path fill="#374151" d="M372.5 247a4.6 4.6 0 0 1-3.2-1.3L350 227.3l-19.3 18.4a4.6 4.6 0 0 1-6.4 0a4.1 4.1 0 0 1 0-6l22.5-21.4a4.6 4.6 0 0 1 6.4 0l22.5 21.4a4.1 4.1 0 0 1 0 6a4.6 4.6 0 0 1-3.2 1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1.2s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 30; 0 0; 0 -30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1.2s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path><svg:path fill="#374151" d="M372.5 274a4.6 4.6 0 0 1-3.2-1.3L350 254.3l-19.3 18.4a4.6 4.6 0 0 1-6.4 0a4.1 4.1 0 0 1 0-6l22.5-21.4a4.6 4.6 0 0 1 6.4 0l22.5 21.4a4.1 4.1 0 0 1 0 6a4.6 4.6 0 0 1-3.2 1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1.1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 30; 0 0; 0 -30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1.1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path><svg:path fill="#374151" d="M372.5 301a4.6 4.6 0 0 1-3.2-1.3L350 281.3l-19.3 18.4a4.6 4.6 0 0 1-6.4 0a4.1 4.1 0 0 1 0-6l22.5-21.4a4.6 4.6 0 0 1 6.4 0l22.5 21.4a4.1 4.1 0 0 1 0 6a4.6 4.6 0 0 1-3.2 1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 30; 0 0; 0 -30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path>`,
-})
-export class MeteoconsCloudUpFillIcon {
+export class MeteoconsClearDayFillIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -131,6 +97,23 @@ export class MeteoconsCloudUpFillIcon {
   template: `<svg:defs><svg:lineargradient id="meteoconsCloudyFill0" x1="99.5" x2="232.6" y1="30.7" y2="261.4" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#f3f7fe"></svg:stop><svg:stop offset=".5" stop-color="#f3f7fe"></svg:stop><svg:stop offset="1" stop-color="#deeafb"></svg:stop></svg:lineargradient><svg:symbol id="meteoconsCloudyFill1" viewBox="0 0 350 222"><svg:path fill="url(#meteoconsCloudyFill0)" stroke="#e6effc" stroke-miterlimit="10" stroke-width="6" d="m291 107l-2.5.1A83.9 83.9 0 0 0 135.6 43A56 56 0 0 0 51 91a56.6 56.6 0 0 0 .8 9A60 60 0 0 0 63 219l4-.2v.2h224a56 56 0 0 0 0-112Z"></svg:path></svg:symbol></svg:defs><svg:use width="350" height="222" href="#meteoconsCloudyFill1" transform="translate(81 145)"><svg:animatetransform additive="sum" attributeName="transform" dur="6s" repeatCount="indefinite" type="translate" values="-18 0; 18 0; -18 0"></svg:animatetransform></svg:use>`,
 })
 export class MeteoconsCloudyFillIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[meteoconsCloudUpFillIcon],svg[meteocons-cloud-up-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:lineargradient id="meteoconsCloudUpFill0" x1="99.5" x2="232.6" y1="30.7" y2="261.4" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#f3f7fe"></svg:stop><svg:stop offset=".5" stop-color="#f3f7fe"></svg:stop><svg:stop offset="1" stop-color="#deeafb"></svg:stop></svg:lineargradient><svg:symbol id="meteoconsCloudUpFill1" viewBox="0 0 350 222"><svg:path fill="url(#meteoconsCloudUpFill0)" stroke="#e6effc" stroke-miterlimit="10" stroke-width="6" d="m291 107l-2.5.1A83.9 83.9 0 0 0 135.6 43A56 56 0 0 0 51 91a56.6 56.6 0 0 0 .8 9A60 60 0 0 0 63 219l4-.2v.2h224a56 56 0 0 0 0-112Z"></svg:path></svg:symbol></svg:defs><svg:use width="350" height="222" href="#meteoconsCloudUpFill1" transform="translate(81 145)"></svg:use><svg:path fill="#374151" d="M372.5 247a4.6 4.6 0 0 1-3.2-1.3L350 227.3l-19.3 18.4a4.6 4.6 0 0 1-6.4 0a4.1 4.1 0 0 1 0-6l22.5-21.4a4.6 4.6 0 0 1 6.4 0l22.5 21.4a4.1 4.1 0 0 1 0 6a4.6 4.6 0 0 1-3.2 1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1.2s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 30; 0 0; 0 -30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1.2s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path><svg:path fill="#374151" d="M372.5 274a4.6 4.6 0 0 1-3.2-1.3L350 254.3l-19.3 18.4a4.6 4.6 0 0 1-6.4 0a4.1 4.1 0 0 1 0-6l22.5-21.4a4.6 4.6 0 0 1 6.4 0l22.5 21.4a4.1 4.1 0 0 1 0 6a4.6 4.6 0 0 1-3.2 1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1.1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 30; 0 0; 0 -30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1.1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path><svg:path fill="#374151" d="M372.5 301a4.6 4.6 0 0 1-3.2-1.3L350 281.3l-19.3 18.4a4.6 4.6 0 0 1-6.4 0a4.1 4.1 0 0 1 0-6l22.5-21.4a4.6 4.6 0 0 1 6.4 0l22.5 21.4a4.1 4.1 0 0 1 0 6a4.6 4.6 0 0 1-3.2 1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 30; 0 0; 0 -30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path>`,
+})
+export class MeteoconsCloudUpFillIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -3820,6 +3803,23 @@ export class MeteoconsWindsockFillIcon {
   template: `<svg:defs><svg:lineargradient id="meteoconsWindsockWeakFill0" x1="90" x2="206" y1="155.6" y2="356.4" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#d4d7dd"></svg:stop><svg:stop offset=".5" stop-color="#d4d7dd"></svg:stop><svg:stop offset="1" stop-color="#bec1c6"></svg:stop></svg:lineargradient><svg:lineargradient id="meteoconsWindsockWeakFill1" x1="183.6" x2="221.9" y1="151.2" y2="217.6" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#f87171"></svg:stop><svg:stop offset=".5" stop-color="#f87171"></svg:stop><svg:stop offset="1" stop-color="#dc2626"></svg:stop></svg:lineargradient><svg:lineargradient id="meteoconsWindsockWeakFill2" x1="234.2" x2="262.2" y1="200.2" y2="248.7" href="#meteoconsWindsockWeakFill1"></svg:lineargradient><svg:lineargradient id="meteoconsWindsockWeakFill3" x1="270.9" x2="291.6" y1="252.4" y2="288.4" href="#meteoconsWindsockWeakFill1"></svg:lineargradient></svg:defs><svg:path fill="none" stroke="url(#meteoconsWindsockWeakFill0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" d="M148 376V136"></svg:path><svg:path fill="url(#meteoconsWindsockWeakFill1)" stroke="#ef4444" stroke-miterlimit="10" stroke-width="2" d="m239.7 154.7l-22.8-18a6.4 6.4 0 0 0-9.5 1.8l-41 71a6.4 6.4 0 0 0 3.2 9.2l27 10.7a6.4 6.4 0 0 0 7.9-2.7l36.8-63.8a6.4 6.4 0 0 0-1.6-8.2Z"><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="rotate" values="0 204 183; -3 204 183; 0 204 183"></svg:animatetransform><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="translate" values="0 0; 1 -2; 0 0"></svg:animatetransform></svg:path><svg:path fill="url(#meteoconsWindsockWeakFill2)" stroke="#ef4444" stroke-miterlimit="10" stroke-width="2" d="m285.2 210.6l-17.4-23.3a6.4 6.4 0 0 0-9.6-.7L213 231.8a6.4 6.4 0 0 0 .7 9.7l23.3 17.3a6.4 6.4 0 0 0 8.3-.6l39.3-39.2a6.4 6.4 0 0 0 .6-8.4Z"><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="rotate" values="0 249 222; -6 249 222; 0 249 222"></svg:animatetransform><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="translate" values="0 0; 5 -7; 0 0"></svg:animatetransform></svg:path><svg:path fill="url(#meteoconsWindsockWeakFill3)" stroke="#ef4444" stroke-miterlimit="10" stroke-width="2" d="m310.5 271.2l-10.7-27a6.4 6.4 0 0 0-9.1-3.2L251 263.9a6.4 6.4 0 0 0-1.9 9.5l18 22.8a6.4 6.4 0 0 0 8.2 1.5l32.4-18.7a6.4 6.4 0 0 0 2.7-7.8Z"><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="rotate" values="0 279 269; -9 279 269; 0 279 269"></svg:animatetransform><svg:animatetransform additive="sum" attributeName="transform" calcMode="spline" dur="3s" keySplines=".42, 0, .58, 1; .42, 0, .58, 1" repeatCount="indefinite" type="translate" values="0 0; 17 -12; 0 0"></svg:animatetransform></svg:path>`,
 })
 export class MeteoconsWindsockWeakFillIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[meteoconsCloudDownFillIcon],svg[meteocons-cloud-down-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:defs><svg:lineargradient id="meteoconsCloudDownFill0" x1="99.5" x2="232.6" y1="30.7" y2="261.4" gradientUnits="userSpaceOnUse"><svg:stop offset="0" stop-color="#f3f7fe"></svg:stop><svg:stop offset=".5" stop-color="#f3f7fe"></svg:stop><svg:stop offset="1" stop-color="#deeafb"></svg:stop></svg:lineargradient><svg:symbol id="meteoconsCloudDownFill1" viewBox="0 0 350 222"><svg:path fill="url(#meteoconsCloudDownFill0)" stroke="#e6effc" stroke-miterlimit="10" stroke-width="6" d="m291 107l-2.5.1A83.9 83.9 0 0 0 135.6 43A56 56 0 0 0 51 91a56.6 56.6 0 0 0 .8 9A60 60 0 0 0 63 219l4-.2v.2h224a56 56 0 0 0 0-112Z"></svg:path></svg:symbol></svg:defs><svg:use width="350" height="222" href="#meteoconsCloudDownFill1" transform="translate(81 145)"></svg:use><svg:path fill="#374151" d="M372.5 271a4.6 4.6 0 0 0-3.2 1.3L350 290.7l-19.3-18.4a4.6 4.6 0 0 0-6.4 0a4.1 4.1 0 0 0 0 6l22.5 21.4a4.6 4.6 0 0 0 6.4 0l22.5-21.4a4.1 4.1 0 0 0 0-6a4.6 4.6 0 0 0-3.2-1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1.2s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 -30; 0 0; 0 30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1.2s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path><svg:path fill="#374151" d="M372.5 244a4.6 4.6 0 0 0-3.2 1.3L350 263.7l-19.3-18.4a4.6 4.6 0 0 0-6.4 0a4.1 4.1 0 0 0 0 6l22.5 21.4a4.6 4.6 0 0 0 6.4 0l22.5-21.4a4.1 4.1 0 0 0 0-6a4.6 4.6 0 0 0-3.2-1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1.1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 -30; 0 0; 0 30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1.1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path><svg:path fill="#374151" d="M372.5 217a4.6 4.6 0 0 0-3.2 1.3L350 236.7l-19.3-18.4a4.6 4.6 0 0 0-6.4 0a4.1 4.1 0 0 0 0 6l22.5 21.4a4.6 4.6 0 0 0 6.4 0l22.5-21.4a4.1 4.1 0 0 0 0-6a4.6 4.6 0 0 0-3.2-1.3Z" opacity="0"><svg:animatetransform attributeName="transform" begin="-1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" type="translate" values="0 -30; 0 0; 0 30"></svg:animatetransform><svg:animate attributeName="opacity" begin="-1s" calcMode="spline" dur="3s" keySplines=".55, 0, .1, 1; .55, 0, .1, 1" repeatCount="indefinite" values="0; 1; 0"></svg:animate></svg:path>`,
+})
+export class MeteoconsCloudDownFillIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")

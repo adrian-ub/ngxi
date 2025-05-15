@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentLinkDismiss20RegularIcon],svg[fluent-link-dismiss-20-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 4a.5.5 0 0 1 .09.992L8 5H6a3 3 0 0 0-.197 5.994L6 11h2a.5.5 0 0 1 .09.992L8 12H6a4 4 0 0 1-.22-7.994L6 4zm6 0a4 4 0 0 1 3.52 5.902a5.5 5.5 0 0 0-.883-.471a3 3 0 0 0-2.44-4.424L14 5h-2a.5.5 0 0 1-.09-.992L12 4zM6 7.5h8a.5.5 0 0 1 .09.992L14 8.5H6a.5.5 0 0 1-.09-.992zm13 7a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.732-1.06a.5.5 0 0 0-.707-.708l-1.061 1.06l-1.06-1.06a.5.5 0 0 0-.708.707l1.06 1.061l-1.06 1.06a.5.5 0 0 0 .707.708l1.061-1.06l1.06 1.06a.5.5 0 0 0 .708-.707l-1.06-1.061z"></svg:path>`,
+})
+export class FluentLinkDismiss20RegularIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentLinkDismiss24FilledIcon],svg[fluent-link-dismiss-24-filled-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class FluentMailList20RegularIcon {
   template: `<svg:path fill="currentColor" d="M20.297 9.5h.953c.268 0 .523-.06.75-.168v7.418a3.25 3.25 0 0 1-3.066 3.245L18.75 20H5.25a3.25 3.25 0 0 1-3.245-3.066L2 16.75V8.608l9.652 5.056a.75.75 0 0 0 .696 0zM12.525 4H5.25l-.186.005a3.25 3.25 0 0 0-3.048 2.919L12 12.154L17.065 9.5H13.75a1.75 1.75 0 0 1-1.225-3A1.74 1.74 0 0 1 12 5.25c0-.49.201-.932.525-1.25m8.725-2a.75.75 0 1 1 0 1.5h-7.5a.747.747 0 0 1-.75-.75a.75.75 0 0 1 .75-.75zm0 2.5a.75.75 0 1 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5zM13 7.75a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1-.75-.75"></svg:path>`,
 })
 export class FluentMailList24FilledIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentMailList24RegularIcon],svg[fluent-mail-list-24-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.525 4H5.25l-.184.005A3.25 3.25 0 0 0 2 7.25v9.5l.005.184A3.25 3.25 0 0 0 5.25 20h13.5l.184-.005A3.25 3.25 0 0 0 22 16.75V9.332a1.74 1.74 0 0 1-.75.168h-.75v7.25l-.006.143A1.75 1.75 0 0 1 18.75 18.5H5.25l-.144-.006A1.75 1.75 0 0 1 3.5 16.75V9.374l8.15 4.29l.097.042a.75.75 0 0 0 .602-.042L20.26 9.5h-3.22L12 12.153L3.5 7.679V7.25l.006-.144A1.75 1.75 0 0 1 5.25 5.5h6.768a1.75 1.75 0 0 1 .508-1.5m8.725-2a.75.75 0 1 1 0 1.5h-7.5a.747.747 0 0 1-.75-.75a.75.75 0 0 1 .75-.75zm0 2.5a.75.75 0 1 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5zM13 7.75a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1-.75-.75"></svg:path>`,
-})
-export class FluentMailList24RegularIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

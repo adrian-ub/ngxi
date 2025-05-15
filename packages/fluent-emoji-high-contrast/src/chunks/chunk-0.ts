@@ -53,23 +53,6 @@ export class FluentEmojiHighContrast3rdPlaceMedalIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentEmojiHighContrastAButtonBloodTypeIcon],svg[fluent-emoji-high-contrast-a-button-blood-type-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M15.907 7.689a1.75 1.75 0 0 1 1.63 1.09L22.886 21.9a1.75 1.75 0 1 1-3.241 1.322l-.734-1.801a.13.13 0 0 0-.116-.078h-5.613a.13.13 0 0 0-.116.079l-.704 1.782a1.75 1.75 0 0 1-3.255-1.286l5.182-13.122a1.75 1.75 0 0 1 1.618-1.107m1.475 9.982l-1.322-3.244a.125.125 0 0 0-.232 0l-1.281 3.245a.125.125 0 0 0 .116.17h2.603c.09 0 .15-.09.116-.171"></svg:path><svg:path d="M6 1a5 5 0 0 0-5 5v20a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5V6a5 5 0 0 0-5-5zM3 6a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"></svg:path></svg:g>`,
-})
-export class FluentEmojiHighContrastAButtonBloodTypeIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fluentEmojiHighContrastAbButtonBloodTypeIcon],svg[fluent-emoji-high-contrast-ab-button-blood-type-icon]',
   host: {
     role: 'img',
@@ -87,16 +70,16 @@ export class FluentEmojiHighContrastAbButtonBloodTypeIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentEmojiHighContrastAbacusIcon],svg[fluent-emoji-high-contrast-abacus-icon]',
+  selector: 'svg[fluentEmojiHighContrastAButtonBloodTypeIcon],svg[fluent-emoji-high-contrast-a-button-blood-type-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M2 8a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6H8a6 6 0 0 1-6-6zm2 0h2a1.5 1.5 0 1 1 3 0a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0h5a1.5 1.5 0 0 1 3 0h2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4m20.5 2.5A1.5 1.5 0 0 1 23 9h-5a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 1 1-3 0H4v4h2a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0h5a1.5 1.5 0 0 1 3 0h2V9h-2a1.5 1.5 0 0 1-1.5 1.5M23 14h-5a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0H4v4h2a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0h5a1.5 1.5 0 0 1 3 0h2v-4h-2a1.5 1.5 0 0 1-3 0m1.5 6.5A1.5 1.5 0 0 1 23 19h-5a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0H4v4h2a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0h5a1.5 1.5 0 0 1 3 0h2v-4h-2a1.5 1.5 0 0 1-1.5 1.5M23 24h-5a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0H4a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4h-2a1.5 1.5 0 0 1-3 0"></svg:path>`,
+  template: `<svg:g fill="currentColor"><svg:path d="M15.907 7.689a1.75 1.75 0 0 1 1.63 1.09L22.886 21.9a1.75 1.75 0 1 1-3.241 1.322l-.734-1.801a.13.13 0 0 0-.116-.078h-5.613a.13.13 0 0 0-.116.079l-.704 1.782a1.75 1.75 0 0 1-3.255-1.286l5.182-13.122a1.75 1.75 0 0 1 1.618-1.107m1.475 9.982l-1.322-3.244a.125.125 0 0 0-.232 0l-1.281 3.245a.125.125 0 0 0 .116.17h2.603c.09 0 .15-.09.116-.171"></svg:path><svg:path d="M6 1a5 5 0 0 0-5 5v20a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5V6a5 5 0 0 0-5-5zM3 6a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"></svg:path></svg:g>`,
 })
-export class FluentEmojiHighContrastAbacusIcon {
+export class FluentEmojiHighContrastAButtonBloodTypeIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,23 +104,6 @@ export class FluentEmojiHighContrastAccordionIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentEmojiHighContrastAdmissionTicketsIcon],svg[fluent-emoji-high-contrast-admission-tickets-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none"><svg:g fill="currentColor" clip-path="url(#fluentEmojiHighContrastAdmissionTickets0)"><svg:path d="M23 12c-.548 0-1 .448-1 .992v6.016a1.001 1.001 0 0 0 2 0v-6.016A.994.994 0 0 0 23 12m-4.995 4a2 2 0 1 1-4 0a2 2 0 0 1 4 0M8 12.992c0-.544.456-.992 1.01-.992a1 1 0 0 1 1.01.992v6.016c0 .544-.456.992-1.01.992S8 19.552 8 19.008z"></svg:path><svg:path d="M6.05 12.2c0-1.344 1.136-2.403 2.5-2.403h14.91c1.364 0 2.5 1.059 2.5 2.403v7.631c0 1.345-1.136 2.403-2.5 2.403H8.55c-1.35 0-2.5-1.046-2.5-2.403zm17.41 9.034c.856 0 1.5-.654 1.5-1.403V12.2c0-.75-.644-1.403-1.5-1.403h-2.61v10.437zm-3.61 0V10.797h-7.69v10.437zm-8.69-10.437H8.55c-.856 0-1.5.654-1.5 1.403v7.631c0 .756.65 1.403 1.5 1.403h2.61z"></svg:path><svg:path d="M26.24 5H5.75a2.574 2.574 0 0 0-2.539 2.188a1.24 1.24 0 0 1-1.067.992A2.47 2.47 0 0 0 0 10.626v1.551c0 .587.209 1.154.59 1.6a2.46 2.46 0 0 0-.59 1.6v1.254c0 .587.209 1.154.59 1.6a2.46 2.46 0 0 0-.59 1.6v1.561a2.476 2.476 0 0 0 2.174 2.449a1.22 1.22 0 0 1 1.04 1A2.57 2.57 0 0 0 5.75 27h20.51a2.574 2.574 0 0 0 2.54-2.168a1.22 1.22 0 0 1 1.046-.991A2.47 2.47 0 0 0 32 21.394v-1.561a2.46 2.46 0 0 0-.585-1.594a2.46 2.46 0 0 0 .595-1.607v-1.254a2.46 2.46 0 0 0-.59-1.6a2.46 2.46 0 0 0 .59-1.6v-1.542a2.48 2.48 0 0 0-2.174-2.45a1.24 1.24 0 0 1-1.06-1.022A2.575 2.575 0 0 0 26.24 5m0 2a.57.57 0 0 1 .56.474a3.25 3.25 0 0 0 2.79 2.7a.47.47 0 0 1 .42.465v1.541a.476.476 0 0 1-.48.474h-.22a1.13 1.13 0 0 0-1.14 1.146a1.16 1.16 0 0 0 1.18 1.1h.18a.48.48 0 0 1 .48.475v1.254a.476.476 0 0 1-.48.474h-.22a1.127 1.127 0 1 0 0 2.253h.21a.48.48 0 0 1 .48.474v1.561a.47.47 0 0 1-.42.464a3.23 3.23 0 0 0-2.76 2.678a.56.56 0 0 1-.56.464H5.75a.56.56 0 0 1-.56-.464a3.23 3.23 0 0 0-2.77-2.678a.47.47 0 0 1-.42-.461v-1.561a.477.477 0 0 1 .48-.474h.22a1.127 1.127 0 1 0 0-2.253h-.22a.477.477 0 0 1-.48-.474v-1.254a.48.48 0 0 1 .48-.475h.22a1.13 1.13 0 0 0 1.14-1.146a1.16 1.16 0 0 0-1.18-1.106h-.18a.477.477 0 0 1-.48-.474v-1.551a.47.47 0 0 1 .42-.465a3.25 3.25 0 0 0 2.77-2.687A.56.56 0 0 1 5.75 7z"></svg:path></svg:g><svg:defs><svg:clippath id="fluentEmojiHighContrastAdmissionTickets0"><svg:path fill="#fff" d="M0 0h32v32H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
-})
-export class FluentEmojiHighContrastAdmissionTicketsIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fluentEmojiHighContrastAdhesiveBandageIcon],svg[fluent-emoji-high-contrast-adhesive-bandage-icon]',
   host: {
     role: 'img',
@@ -148,6 +114,23 @@ export class FluentEmojiHighContrastAdmissionTicketsIcon {
   template: `<svg:path fill="currentColor" d="M19.14 4.641c2.188-2.187 5.78-2.19 7.979.001l.24.24c2.187 2.187 2.19 5.779 0 7.978l-.002.001l-2.312 2.313l-8.219-8.219zm-3.02 3.021l8.218 8.219l-8.42 8.419L7.7 16.08zm-.908 17.345l-2.352 2.352c-2.189 2.188-5.79 2.188-7.978 0l-.24-.241c-2.188-2.187-2.19-5.779 0-7.978v-.001l2.351-2.35zM28.53 3.226c-2.978-2.967-7.835-2.97-10.805.001l-14.499 14.5h-.001c-2.967 2.979-2.97 7.835.001 10.805l.24.241c2.97 2.97 7.838 2.97 10.807 0l14.499-14.5h.001c2.967-2.979 2.97-7.835-.001-10.805l-.24-.241zM21 7.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0m1.5 2.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m2.5 1.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0M22.5 6a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1M25 7.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0m1.5 2.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1M6 22.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0M7.5 25a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m2.5 1.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0M7.5 21a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m2.5 1.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0m1.5 2.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1"></svg:path>`,
 })
 export class FluentEmojiHighContrastAdhesiveBandageIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastAbacusIcon],svg[fluent-emoji-high-contrast-abacus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M2 8a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6H8a6 6 0 0 1-6-6zm2 0h2a1.5 1.5 0 1 1 3 0a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0h5a1.5 1.5 0 0 1 3 0h2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4m20.5 2.5A1.5 1.5 0 0 1 23 9h-5a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 1 1-3 0H4v4h2a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0h5a1.5 1.5 0 0 1 3 0h2V9h-2a1.5 1.5 0 0 1-1.5 1.5M23 14h-5a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0H4v4h2a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0h5a1.5 1.5 0 0 1 3 0h2v-4h-2a1.5 1.5 0 0 1-3 0m1.5 6.5A1.5 1.5 0 0 1 23 19h-5a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0H4v4h2a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1 3 0h5a1.5 1.5 0 0 1 3 0h2v-4h-2a1.5 1.5 0 0 1-1.5 1.5M23 24h-5a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0a1.5 1.5 0 0 1-3 0H4a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4h-2a1.5 1.5 0 0 1-3 0"></svg:path>`,
+})
+export class FluentEmojiHighContrastAbacusIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,16 +155,16 @@ export class FluentEmojiHighContrastAerialTramwayIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentEmojiHighContrastAirplaneIcon],svg[fluent-emoji-high-contrast-airplane-icon]',
+  selector: 'svg[fluentEmojiHighContrastAdmissionTicketsIcon],svg[fluent-emoji-high-contrast-admission-tickets-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m12.772 23.32l1.349 5.555a.9.9 0 0 1-.25.872c-.44.442-.959.271-1.448-.25l-4.167-4.224l-1.416 1.412a1.07 1.07 0 0 1-1.526-.01a1.08 1.08 0 0 1 .01-1.533l1.412-1.41l-4.263-4.321c-.44-.462-.68-1.013-.24-1.454c.23-.22.55-.311.86-.23l5.524 1.403a26.2 26.2 0 0 1 3.646-4.813l2.953-3.072l-8.25-4.684c-1.29-.73-1.29-2.59.01-3.32c.42-.23.91-.3 1.37-.19l5.676 1.33l1.062-1.056a1.126 1.126 0 0 1 1.593.01a1.14 1.14 0 0 1-.01 1.601l-.052.052l3.767.882l2.5-2.602a4.14 4.14 0 0 1 5.924-.04a4.163 4.163 0 0 1-.1 5.936l-2.277 2.161l1.014 4.76c.41-.169.9-.087 1.227.25a1.123 1.123 0 0 1-.01 1.601l-.68.676L29 23.4c.1.47.02.95-.22 1.36c-.75 1.28-2.62 1.25-3.32-.06l-4.451-8.228l-3.412 3.24a26 26 0 0 1-4.825 3.609M26.253 4.219a.73.73 0 0 0-1.032-.01a.713.713 0 0 0-.01 1.022l1.54 1.552a.73.73 0 0 0 1.032.01a.72.72 0 0 0 .01-1.022z"></svg:path>`,
+  template: `<svg:g fill="none"><svg:g fill="currentColor" clip-path="url(#fluentEmojiHighContrastAdmissionTickets0)"><svg:path d="M23 12c-.548 0-1 .448-1 .992v6.016a1.001 1.001 0 0 0 2 0v-6.016A.994.994 0 0 0 23 12m-4.995 4a2 2 0 1 1-4 0a2 2 0 0 1 4 0M8 12.992c0-.544.456-.992 1.01-.992a1 1 0 0 1 1.01.992v6.016c0 .544-.456.992-1.01.992S8 19.552 8 19.008z"></svg:path><svg:path d="M6.05 12.2c0-1.344 1.136-2.403 2.5-2.403h14.91c1.364 0 2.5 1.059 2.5 2.403v7.631c0 1.345-1.136 2.403-2.5 2.403H8.55c-1.35 0-2.5-1.046-2.5-2.403zm17.41 9.034c.856 0 1.5-.654 1.5-1.403V12.2c0-.75-.644-1.403-1.5-1.403h-2.61v10.437zm-3.61 0V10.797h-7.69v10.437zm-8.69-10.437H8.55c-.856 0-1.5.654-1.5 1.403v7.631c0 .756.65 1.403 1.5 1.403h2.61z"></svg:path><svg:path d="M26.24 5H5.75a2.574 2.574 0 0 0-2.539 2.188a1.24 1.24 0 0 1-1.067.992A2.47 2.47 0 0 0 0 10.626v1.551c0 .587.209 1.154.59 1.6a2.46 2.46 0 0 0-.59 1.6v1.254c0 .587.209 1.154.59 1.6a2.46 2.46 0 0 0-.59 1.6v1.561a2.476 2.476 0 0 0 2.174 2.449a1.22 1.22 0 0 1 1.04 1A2.57 2.57 0 0 0 5.75 27h20.51a2.574 2.574 0 0 0 2.54-2.168a1.22 1.22 0 0 1 1.046-.991A2.47 2.47 0 0 0 32 21.394v-1.561a2.46 2.46 0 0 0-.585-1.594a2.46 2.46 0 0 0 .595-1.607v-1.254a2.46 2.46 0 0 0-.59-1.6a2.46 2.46 0 0 0 .59-1.6v-1.542a2.48 2.48 0 0 0-2.174-2.45a1.24 1.24 0 0 1-1.06-1.022A2.575 2.575 0 0 0 26.24 5m0 2a.57.57 0 0 1 .56.474a3.25 3.25 0 0 0 2.79 2.7a.47.47 0 0 1 .42.465v1.541a.476.476 0 0 1-.48.474h-.22a1.13 1.13 0 0 0-1.14 1.146a1.16 1.16 0 0 0 1.18 1.1h.18a.48.48 0 0 1 .48.475v1.254a.476.476 0 0 1-.48.474h-.22a1.127 1.127 0 1 0 0 2.253h.21a.48.48 0 0 1 .48.474v1.561a.47.47 0 0 1-.42.464a3.23 3.23 0 0 0-2.76 2.678a.56.56 0 0 1-.56.464H5.75a.56.56 0 0 1-.56-.464a3.23 3.23 0 0 0-2.77-2.678a.47.47 0 0 1-.42-.461v-1.561a.477.477 0 0 1 .48-.474h.22a1.127 1.127 0 1 0 0-2.253h-.22a.477.477 0 0 1-.48-.474v-1.254a.48.48 0 0 1 .48-.475h.22a1.13 1.13 0 0 0 1.14-1.146a1.16 1.16 0 0 0-1.18-1.106h-.18a.477.477 0 0 1-.48-.474v-1.551a.47.47 0 0 1 .42-.465a3.25 3.25 0 0 0 2.77-2.687A.56.56 0 0 1 5.75 7z"></svg:path></svg:g><svg:defs><svg:clippath id="fluentEmojiHighContrastAdmissionTickets0"><svg:path fill="#fff" d="M0 0h32v32H0z"></svg:path></svg:clippath></svg:defs></svg:g>`,
 })
-export class FluentEmojiHighContrastAirplaneIcon {
+export class FluentEmojiHighContrastAdmissionTicketsIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,16 +240,16 @@ export class FluentEmojiHighContrastAlienIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentEmojiHighContrastAlienMonsterIcon],svg[fluent-emoji-high-contrast-alien-monster-icon]',
+  selector: 'svg[fluentEmojiHighContrastAirplaneIcon],svg[fluent-emoji-high-contrast-airplane-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M9 3h1c.55 0 1 .45 1 1v1.43c0 .31-.26.57-.57.57H9c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1m2.99 26.03H13c.55 0 1-.45 1-1v-1c0-.55-.45-1-1-1h-2.43c-.31 0-.57.26-.57.57v.44c0 1.1.89 1.99 1.99 1.99m6.01-2v1c0 .55.45 1 1 1h1.03c1.09 0 1.97-.88 1.97-1.97v-.46a.57.57 0 0 0-.57-.57H19c-.55 0-1 .45-1 1M24 5V4c0-.55-.45-1-1-1h-1c-.55 0-1 .45-1 1v1.43c0 .31.26.57.57.57H23c.55 0 1-.45 1-1m4 6.03c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1h-.43a.57.57 0 0 0-.57.57v.46c0 1.09-.88 1.97-1.97 1.97h-.46a.57.57 0 0 0-.57.57v4.44c0 1.1-.89 1.99-1.99 1.99h-.44a.57.57 0 0 1-.57-.57V22.6a.57.57 0 0 0-.57-.57H10.57a.57.57 0 0 0-.57.57v2.86c0 .31-.25.57-.57.57H9c-1.1 0-2-.9-2-2V19.6c0-.31-.26-.57-.57-.57H6c-1.1 0-2-.9-2-2v-.43c0-.31-.26-.57-.57-.57H3c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h.03c.55 0 1 .45 1 1v1.43c0 .32.25.57.57.57l1.8-.01c.3-.01.56-.22.6-.51c.24-1.81 1.71-3.22 3.53-3.45c.27-.03.47-.28.47-.56V6.57c0-.31.26-.57.58-.57h.3C13.05 6 14 6.95 14 8.12v.34c0 .32.26.57.57.57h2.86c.31 0 .57-.25.57-.57v-.39C18 6.93 18.93 6 20.07 6h.36c.31 0 .57.26.57.57V8.5c0 .28.2.53.47.56c1.82.22 3.27 1.64 3.5 3.46c.04.3.3.51.6.51h1.86c.31 0 .57-.25.57-.57zM11 17a1 1 0 0 0 1-1.018v-1.964c0-.565-.446-1.018-1-1.018c-.555 0-1 .453-1 1.018v1.964c0 .565.445 1.018 1 1.018m9-1.018c0 .565.445 1.018 1 1.018s1-.463 1-1.018v-1.964c0-.565-.445-1.018-1-1.018s-1 .453-1 1.018z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m12.772 23.32l1.349 5.555a.9.9 0 0 1-.25.872c-.44.442-.959.271-1.448-.25l-4.167-4.224l-1.416 1.412a1.07 1.07 0 0 1-1.526-.01a1.08 1.08 0 0 1 .01-1.533l1.412-1.41l-4.263-4.321c-.44-.462-.68-1.013-.24-1.454c.23-.22.55-.311.86-.23l5.524 1.403a26.2 26.2 0 0 1 3.646-4.813l2.953-3.072l-8.25-4.684c-1.29-.73-1.29-2.59.01-3.32c.42-.23.91-.3 1.37-.19l5.676 1.33l1.062-1.056a1.126 1.126 0 0 1 1.593.01a1.14 1.14 0 0 1-.01 1.601l-.052.052l3.767.882l2.5-2.602a4.14 4.14 0 0 1 5.924-.04a4.163 4.163 0 0 1-.1 5.936l-2.277 2.161l1.014 4.76c.41-.169.9-.087 1.227.25a1.123 1.123 0 0 1-.01 1.601l-.68.676L29 23.4c.1.47.02.95-.22 1.36c-.75 1.28-2.62 1.25-3.32-.06l-4.451-8.228l-3.412 3.24a26 26 0 0 1-4.825 3.609M26.253 4.219a.73.73 0 0 0-1.032-.01a.713.713 0 0 0-.01 1.022l1.54 1.552a.73.73 0 0 0 1.032.01a.72.72 0 0 0 .01-1.022z"></svg:path>`,
 })
-export class FluentEmojiHighContrastAlienMonsterIcon {
+export class FluentEmojiHighContrastAirplaneIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -291,16 +274,16 @@ export class FluentEmojiHighContrastAlembicIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[fluentEmojiHighContrastAmbulanceIcon],svg[fluent-emoji-high-contrast-ambulance-icon]',
+  selector: 'svg[fluentEmojiHighContrastAlienMonsterIcon],svg[fluent-emoji-high-contrast-alien-monster-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m2.264 18.689l5.557-7.145A4 4 0 0 1 10 10.121V10a1 1 0 0 1 1-1a1 1 0 1 1 2 0q.205.001.383.076A5 5 0 0 1 18 6h9a4 4 0 0 1 4 4v13a4 4 0 0 1-4 4h-.035a3.501 3.501 0 0 1-6.93 0h-8.07a3.501 3.501 0 0 1-6.93 0H5a4 4 0 0 1-4-4v-.628a6 6 0 0 1 1.264-3.683M27 25a2 2 0 0 0 1.732-1H28a1 1 0 1 1 0-2h1v-1H15v4h5.337a3.5 3.5 0 0 1 6.326 0zm-13 0V12h-3.022a2 2 0 0 0-1.579.772L9.222 13H12a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2H5.333l-1.49 1.917a4 4 0 0 0-.6 1.083H4a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-.732A2 2 0 0 0 5 25h.337a3.5 3.5 0 0 1 6.326 0zM28.732 9A2 2 0 0 0 27 8h-9a3 3 0 0 0-2.236 1zM22 12a1 1 0 0 0-1 1v1h-1a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2h-1v-1a1 1 0 0 0-1-1M10 26.5a1.5 1.5 0 1 0-3 0a1.5 1.5 0 0 0 3 0m15 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 0 0 3 0"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M9 3h1c.55 0 1 .45 1 1v1.43c0 .31-.26.57-.57.57H9c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1m2.99 26.03H13c.55 0 1-.45 1-1v-1c0-.55-.45-1-1-1h-2.43c-.31 0-.57.26-.57.57v.44c0 1.1.89 1.99 1.99 1.99m6.01-2v1c0 .55.45 1 1 1h1.03c1.09 0 1.97-.88 1.97-1.97v-.46a.57.57 0 0 0-.57-.57H19c-.55 0-1 .45-1 1M24 5V4c0-.55-.45-1-1-1h-1c-.55 0-1 .45-1 1v1.43c0 .31.26.57.57.57H23c.55 0 1-.45 1-1m4 6.03c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1h-.43a.57.57 0 0 0-.57.57v.46c0 1.09-.88 1.97-1.97 1.97h-.46a.57.57 0 0 0-.57.57v4.44c0 1.1-.89 1.99-1.99 1.99h-.44a.57.57 0 0 1-.57-.57V22.6a.57.57 0 0 0-.57-.57H10.57a.57.57 0 0 0-.57.57v2.86c0 .31-.25.57-.57.57H9c-1.1 0-2-.9-2-2V19.6c0-.31-.26-.57-.57-.57H6c-1.1 0-2-.9-2-2v-.43c0-.31-.26-.57-.57-.57H3c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h.03c.55 0 1 .45 1 1v1.43c0 .32.25.57.57.57l1.8-.01c.3-.01.56-.22.6-.51c.24-1.81 1.71-3.22 3.53-3.45c.27-.03.47-.28.47-.56V6.57c0-.31.26-.57.58-.57h.3C13.05 6 14 6.95 14 8.12v.34c0 .32.26.57.57.57h2.86c.31 0 .57-.25.57-.57v-.39C18 6.93 18.93 6 20.07 6h.36c.31 0 .57.26.57.57V8.5c0 .28.2.53.47.56c1.82.22 3.27 1.64 3.5 3.46c.04.3.3.51.6.51h1.86c.31 0 .57-.25.57-.57zM11 17a1 1 0 0 0 1-1.018v-1.964c0-.565-.446-1.018-1-1.018c-.555 0-1 .453-1 1.018v1.964c0 .565.445 1.018 1 1.018m9-1.018c0 .565.445 1.018 1 1.018s1-.463 1-1.018v-1.964c0-.565-.445-1.018-1-1.018s-1 .453-1 1.018z"></svg:path>`,
 })
-export class FluentEmojiHighContrastAmbulanceIcon {
+export class FluentEmojiHighContrastAlienMonsterIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -318,6 +301,23 @@ export class FluentEmojiHighContrastAmbulanceIcon {
   template: `<svg:path fill="currentColor" d="M5.87 30.711a5.52 5.52 0 0 1-4.58-4.578A21.66 21.66 0 0 1 26.142 1.287h.003a5.545 5.545 0 0 1 4.57 4.575v.002A21.66 21.66 0 0 1 5.87 30.711M19.55 3.257a19.7 19.7 0 0 0-3.385.858l11.721 11.72q.08-.23.157-.464q.464-1.438.701-2.92zm-3.463 24.537l-11.88-11.88a19.7 19.7 0 0 0-.898 3.344l9.434 9.434a19.7 19.7 0 0 0 3.344-.898M12.88 15.38a.875.875 0 0 0 0 1.238l2 2a.875.875 0 1 0 1.238-1.238l-2-2a.875.875 0 0 0-1.238 0m-1.262 2.5a.875.875 0 1 0-1.238 1.238l2 2a.875.875 0 1 0 1.238-1.238zm3.762-5a.875.875 0 0 0 0 1.238l2 2a.875.875 0 1 0 1.238-1.238l-2-2a.875.875 0 0 0-1.238 0m3.738-2.5a.875.875 0 1 0-1.238 1.238l2 2a.875.875 0 1 0 1.238-1.238z"></svg:path>`,
 })
 export class FluentEmojiHighContrastAmericanFootballIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fluentEmojiHighContrastAmbulanceIcon],svg[fluent-emoji-high-contrast-ambulance-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m2.264 18.689l5.557-7.145A4 4 0 0 1 10 10.121V10a1 1 0 0 1 1-1a1 1 0 1 1 2 0q.205.001.383.076A5 5 0 0 1 18 6h9a4 4 0 0 1 4 4v13a4 4 0 0 1-4 4h-.035a3.501 3.501 0 0 1-6.93 0h-8.07a3.501 3.501 0 0 1-6.93 0H5a4 4 0 0 1-4-4v-.628a6 6 0 0 1 1.264-3.683M27 25a2 2 0 0 0 1.732-1H28a1 1 0 1 1 0-2h1v-1H15v4h5.337a3.5 3.5 0 0 1 6.326 0zm-13 0V12h-3.022a2 2 0 0 0-1.579.772L9.222 13H12a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2H5.333l-1.49 1.917a4 4 0 0 0-.6 1.083H4a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-.732A2 2 0 0 0 5 25h.337a3.5 3.5 0 0 1 6.326 0zM28.732 9A2 2 0 0 0 27 8h-9a3 3 0 0 0-2.236 1zM22 12a1 1 0 0 0-1 1v1h-1a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2h-1v-1a1 1 0 0 0-1-1M10 26.5a1.5 1.5 0 1 0-3 0a1.5 1.5 0 0 0 3 0m15 0a1.5 1.5 0 1 0-3 0a1.5 1.5 0 0 0 3 0"></svg:path>`,
+})
+export class FluentEmojiHighContrastAmbulanceIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[tablerPlayCardStarFilledIcon],svg[tabler-play-card-star-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M17 2a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3zm.01 16H17a1 1 0 0 0-.117 1.993l.127.007a1 1 0 0 0 0-2m-4.98-9.5l-.115.005c-.384.04-.724.273-.898.623l-.51 1.027l-1.138.166c-.423.059-.78.357-.914.768l-.033.125a1.13 1.13 0 0 0 .322 1.039l.82.797l-.194 1.127c-.07.432.107.857.454 1.108l.107.068a1.13 1.13 0 0 0 1.078.018l1.022-.536l1.019.535c.377.2.84.168 1.19-.086l.1-.08c.281-.259.416-.645.35-1.028l-.194-1.126l.823-.799c.31-.302.42-.752.287-1.161l-.042-.11a1.13 1.13 0 0 0-.873-.659l-1.138-.166l-.508-1.026a1.13 1.13 0 0 0-1.014-.63M7.01 4H7a1 1 0 0 0-.117 1.993L7.01 6a1 1 0 1 0 0-2"></svg:path>`,
+})
+export class TablerPlayCardStarFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[tablerPlayFootballIcon],svg[tabler-play-football-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class TablerSlashesIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19h15a4 4 0 0 0 4-4m-6 0H7a4 4 0 0 1-4-4V5l1.243 1.243A6 6 0 0 0 8.485 8H12v2a2 2 0 0 0 2 2h.5a1.5 1.5 0 0 0 1.5-1.5a1.5 1.5 0 0 1 3 0V12a3 3 0 0 1-3 3m-1 0v4m-8-4v4"></svg:path>`,
 })
 export class TablerSleighIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[tablerSliceIcon],svg[tabler-slice-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19L18 4l3 3l-6 6l2 2a14 14 0 0 1-14 4"></svg:path>`,
-})
-export class TablerSliceIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[systemUiconsAirplayIcon],svg[system-uicons-airplay-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="m6.5 14.5l-1-.035c-1.102-.003-2-.932-2-2.034V6.465a2 2 0 0 1 2-2l10-.002a2 2 0 0 1 2 2v6.002a2 2 0 0 1-2 2l-1 .037"></svg:path><svg:path d="m10.5 13.5l-3 3h6z"></svg:path></svg:g>`,
-})
-export class SystemUiconsAirplayIcon {
-  readonly viewBox = input("0 0 21 21")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[systemUiconsAlarmClockIcon],svg[system-uicons-alarm-clock-icon]',
   host: {
     role: 'img',
@@ -29,23 +12,6 @@ export class SystemUiconsAirplayIcon {
   template: `<svg:g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M11.5 4.565h-2a6 6 0 0 0-6 6V12.5a6 6 0 0 0 6 6h2a6 6 0 0 0 6-6v-1.935a6 6 0 0 0-6-6m3.032-1.068c.884-.639 2.089-.71 2.968.003c.906.734 1.258 1.96.822 2.969M6.532 3.544C5.642 2.862 4.4 2.77 3.5 3.5c-.906.734-1.258 1.96-.822 2.97"></svg:path><svg:path d="M10.5 7.5v4H14M5 17l-2 2m13-2l2 2"></svg:path></svg:g>`,
 })
 export class SystemUiconsAlarmClockIcon {
-  readonly viewBox = input("0 0 21 21")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[systemUiconsAlignVerticalIcon],svg[system-uicons-align-vertical-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m15.5 7.5l-3 3l3 3m4-3h-7m-7-3l3 3l-3 3m3-3h-7m9-7v14"></svg:path>`,
-})
-export class SystemUiconsAlignVerticalIcon {
   readonly viewBox = input("0 0 21 21")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,6 +36,23 @@ export class SystemUiconsAlignHorizontalIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[systemUiconsAlignVerticalIcon],svg[system-uicons-align-vertical-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m15.5 7.5l-3 3l3 3m4-3h-7m-7-3l3 3l-3 3m3-3h-7m9-7v14"></svg:path>`,
+})
+export class SystemUiconsAlignVerticalIcon {
+  readonly viewBox = input("0 0 21 21")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[systemUiconsAngleIcon],svg[system-uicons-angle-icon]',
   host: {
     role: 'img',
@@ -80,6 +63,23 @@ export class SystemUiconsAlignHorizontalIcon {
   template: `<svg:g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M10.5 16.5a5 5 0 0 0-5-5"></svg:path><svg:path d="M5.5 5.5v11h11"></svg:path></svg:g>`,
 })
 export class SystemUiconsAngleIcon {
+  readonly viewBox = input("0 0 21 21")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[systemUiconsArrowBottomLeftIcon],svg[system-uicons-arrow-bottom-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M6.5 7.5v7h7m1-8l-8 8"></svg:path>`,
+})
+export class SystemUiconsArrowBottomLeftIcon {
   readonly viewBox = input("0 0 21 21")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,16 +104,16 @@ export class SystemUiconsArchiveIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[systemUiconsArrowBottomLeftIcon],svg[system-uicons-arrow-bottom-left-icon]',
+  selector: 'svg[systemUiconsAirplayIcon],svg[system-uicons-airplay-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M6.5 7.5v7h7m1-8l-8 8"></svg:path>`,
+  template: `<svg:g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="m6.5 14.5l-1-.035c-1.102-.003-2-.932-2-2.034V6.465a2 2 0 0 1 2-2l10-.002a2 2 0 0 1 2 2v6.002a2 2 0 0 1-2 2l-1 .037"></svg:path><svg:path d="m10.5 13.5l-3 3h6z"></svg:path></svg:g>`,
 })
-export class SystemUiconsArrowBottomLeftIcon {
+export class SystemUiconsAirplayIcon {
   readonly viewBox = input("0 0 21 21")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -284,23 +284,6 @@ export class SystemUiconsArrowTopRightIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m14.5 7.5l-4-4l-4.029 4m4.029-4v13"></svg:path>`,
 })
 export class SystemUiconsArrowUpIcon {
-  readonly viewBox = input("0 0 21 21")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[systemUiconsArrowUpCircleIcon],svg[system-uicons-arrow-up-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><svg:circle cx="8.5" cy="8.5" r="8"></svg:circle><svg:path d="m11.5 7.5l-3-3l-3 3m3-3v8"></svg:path></svg:g>`,
-})
-export class SystemUiconsArrowUpCircleIcon {
   readonly viewBox = input("0 0 21 21")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -7305,6 +7288,23 @@ export class SystemUiconsZoomOutIcon {
   template: `<svg:g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><svg:path d="M3.5 8.5a5 5 0 1 0 1.057-3.074"></svg:path><svg:path d="M4.5 1.5v4h4m9 12l-5.379-5.379"></svg:path></svg:g>`,
 })
 export class SystemUiconsZoomResetIcon {
+  readonly viewBox = input("0 0 21 21")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[systemUiconsArrowUpCircleIcon],svg[system-uicons-arrow-up-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><svg:circle cx="8.5" cy="8.5" r="8"></svg:circle><svg:path d="m11.5 7.5l-3-3l-3 3m3-3v8"></svg:path></svg:g>`,
+})
+export class SystemUiconsArrowUpCircleIcon {
   readonly viewBox = input("0 0 21 21")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -19,18 +19,18 @@ export class Jam500pxIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[jamAirbnbIcon],svg[jam-airbnb-icon]',
+  selector: 'svg[jamAccessibilityIcon],svg[jam-accessibility-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M17.497 13.278c1.017 2.29.441 4.676-1.433 5.938c-.774.522-1.592.783-2.431.783c-.848 0-1.716-.266-2.583-.797c-.512-.314-.966-.72-1.405-1.112q-.21-.189-.422-.371a1 1 0 0 1-.171-.192q-.183.162-.353.318c-.432.392-.841.762-1.286 1.078c-1.643 1.167-3.276 1.38-4.856.635a4.446 4.446 0 0 1-2.3-5.5c.493-1.414 1.135-2.79 1.757-4.12l.02-.043c.883-1.89 1.806-3.797 2.698-5.641l.793-1.641c.34-.706.795-1.498 1.595-2.026c.823-.543 1.783-.717 2.703-.49c.937.233 1.735.86 2.248 1.764c.763 1.346 1.44 2.762 2.015 3.984a375 375 0 0 1 3.411 7.433M11.62 3.97l-.555-1.165c-.412-.869-1.167-1.392-2.02-1.4c-.873.004-1.65.512-2.09 1.394q-.199.397-.404.79c-.226.439-.46.892-.674 1.35c-1.5 3.224-2.883 6.218-4.227 9.152c-.396.863-.41 1.772-.043 2.627c.35.814.974 1.422 1.757 1.711c.324.12.66.179.999.179c.483 0 .971-.12 1.432-.36c.585-.304 1.097-.738 1.593-1.157c.216-.183.432-.366.653-.537c.579-.448.26-.959.136-1.158c-.572-.915-1.164-1.862-1.624-2.842c-.444-.948-.538-1.903-.278-2.837c.413-1.482 1.952-2.33 3.503-1.93c1.456.374 2.341 1.873 2.058 3.486c-.194 1.107-.66 2.178-1.51 3.475c-.055.082-.12.168-.186.255c-.24.317-.511.677-.451 1.064c.064.41.426.705.745.965q.108.088.206.172c.805.711 1.719 1.371 2.951 1.388h.026l.025-.003q.117-.015.235-.027c.19-.02.389-.04.589-.097a3.06 3.06 0 0 0 1.953-1.692c.37-.83.356-1.766-.038-2.634c-1.547-3.41-3.18-6.846-4.761-10.169m-1.162 7.32c.183-.907.054-1.46-.43-1.85q-.468-.372-.988-.373q-.384 0-.793.204c-.545.274-.78.748-.737 1.495c.076 1.313.747 2.383 1.504 3.483c.633-.89 1.221-1.854 1.444-2.96z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="m5.9 10.016l-.324 3.087a1 1 0 1 1-1.989-.21L4.31 6.01H1a1 1 0 0 1 0-2.003h10a1 1 0 0 1 0 2.003H7.69l.723 6.885a1.001 1.001 0 1 1-1.99.209L6.1 10.016zm.1-6.01c-1.105 0-2-.897-2-2.003S4.895 0 6 0s2 .897 2 2.003a2 2 0 0 1-2 2.003"></svg:path>`,
 })
-export class JamAirbnbIcon {
-  readonly viewBox = input("-3 -2 24 24")
-  readonly width = input("1em")
+export class JamAccessibilityIcon {
+  readonly viewBox = input("0 0 12 14")
+  readonly width = input("0.86em")
   readonly height = input("1em")
 }
 
@@ -53,34 +53,17 @@ export class JamActivityIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[jamAccessibilityIcon],svg[jam-accessibility-icon]',
+  selector: 'svg[jamAirbnbIcon],svg[jam-airbnb-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m5.9 10.016l-.324 3.087a1 1 0 1 1-1.989-.21L4.31 6.01H1a1 1 0 0 1 0-2.003h10a1 1 0 0 1 0 2.003H7.69l.723 6.885a1.001 1.001 0 1 1-1.99.209L6.1 10.016zm.1-6.01c-1.105 0-2-.897-2-2.003S4.895 0 6 0s2 .897 2 2.003a2 2 0 0 1-2 2.003"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M17.497 13.278c1.017 2.29.441 4.676-1.433 5.938c-.774.522-1.592.783-2.431.783c-.848 0-1.716-.266-2.583-.797c-.512-.314-.966-.72-1.405-1.112q-.21-.189-.422-.371a1 1 0 0 1-.171-.192q-.183.162-.353.318c-.432.392-.841.762-1.286 1.078c-1.643 1.167-3.276 1.38-4.856.635a4.446 4.446 0 0 1-2.3-5.5c.493-1.414 1.135-2.79 1.757-4.12l.02-.043c.883-1.89 1.806-3.797 2.698-5.641l.793-1.641c.34-.706.795-1.498 1.595-2.026c.823-.543 1.783-.717 2.703-.49c.937.233 1.735.86 2.248 1.764c.763 1.346 1.44 2.762 2.015 3.984a375 375 0 0 1 3.411 7.433M11.62 3.97l-.555-1.165c-.412-.869-1.167-1.392-2.02-1.4c-.873.004-1.65.512-2.09 1.394q-.199.397-.404.79c-.226.439-.46.892-.674 1.35c-1.5 3.224-2.883 6.218-4.227 9.152c-.396.863-.41 1.772-.043 2.627c.35.814.974 1.422 1.757 1.711c.324.12.66.179.999.179c.483 0 .971-.12 1.432-.36c.585-.304 1.097-.738 1.593-1.157c.216-.183.432-.366.653-.537c.579-.448.26-.959.136-1.158c-.572-.915-1.164-1.862-1.624-2.842c-.444-.948-.538-1.903-.278-2.837c.413-1.482 1.952-2.33 3.503-1.93c1.456.374 2.341 1.873 2.058 3.486c-.194 1.107-.66 2.178-1.51 3.475c-.055.082-.12.168-.186.255c-.24.317-.511.677-.451 1.064c.064.41.426.705.745.965q.108.088.206.172c.805.711 1.719 1.371 2.951 1.388h.026l.025-.003q.117-.015.235-.027c.19-.02.389-.04.589-.097a3.06 3.06 0 0 0 1.953-1.692c.37-.83.356-1.766-.038-2.634c-1.547-3.41-3.18-6.846-4.761-10.169m-1.162 7.32c.183-.907.054-1.46-.43-1.85q-.468-.372-.988-.373q-.384 0-.793.204c-.545.274-.78.748-.737 1.495c.076 1.313.747 2.383 1.504 3.483c.633-.89 1.221-1.854 1.444-2.96z"></svg:path>`,
 })
-export class JamAccessibilityIcon {
-  readonly viewBox = input("0 0 12 14")
-  readonly width = input("0.86em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[jamAlarmClockFIcon],svg[jam-alarm-clock-f-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M10.962 2.05a5 5 0 1 1 7.668 6.387a9.01 9.01 0 0 0-7.668-6.386zM1.37 8.439a5 5 0 1 1 7.668-6.387A9.01 9.01 0 0 0 1.37 8.438zM10 18a7 7 0 1 1 0-14a7 7 0 0 1 0 14m1-8V6a1 1 0 0 0-2 0v5a1 1 0 0 0 1 1h3a1 1 0 0 0 0-2z"></svg:path>`,
-})
-export class JamAlarmClockFIcon {
-  readonly viewBox = input("-2 -3 24 24")
+export class JamAirbnbIcon {
+  readonly viewBox = input("-3 -2 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -115,6 +98,23 @@ export class JamAlarmClockIcon {
 })
 export class JamAlertFIcon {
   readonly viewBox = input("-2 -1.5 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamAlarmClockFIcon],svg[jam-alarm-clock-f-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M10.962 2.05a5 5 0 1 1 7.668 6.387a9.01 9.01 0 0 0-7.668-6.386zM1.37 8.439a5 5 0 1 1 7.668-6.387A9.01 9.01 0 0 0 1.37 8.438zM10 18a7 7 0 1 1 0-14a7 7 0 0 1 0 14m1-8V6a1 1 0 0 0-2 0v5a1 1 0 0 0 1 1h3a1 1 0 0 0 0-2z"></svg:path>`,
+})
+export class JamAlarmClockFIcon {
+  readonly viewBox = input("-2 -3 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -274,23 +274,6 @@ export class JamAnchorIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[jamAndroidCircleIcon],svg[jam-android-circle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor"><svg:path d="M6.39 8.248h-.026a.6.6 0 0 0-.596.596v2.594c0 .329.267.596.596.596h.026a.6.6 0 0 0 .596-.596V8.844a.6.6 0 0 0-.597-.596zm.88 4.192c0 .3.247.546.548.546h.586v1.402c0 .329.268.596.596.596h.025a.6.6 0 0 0 .597-.596v-1.402h.818v1.402c0 .329.27.596.596.596h.026a.6.6 0 0 0 .596-.596v-1.402h.586c.3 0 .547-.245.547-.547V8.343H7.27zm4.136-6.581l.465-.718a.099.099 0 1 0-.166-.108l-.482.743a3.1 3.1 0 0 0-1.192-.232c-.427 0-.83.084-1.192.232l-.481-.743a.1.1 0 0 0-.137-.029a.1.1 0 0 0-.03.137l.466.718c-.839.41-1.405 1.185-1.405 2.074q0 .082.009.162h5.541q.008-.08.008-.162c0-.889-.566-1.663-1.404-2.074m-2.66 1.284a.266.266 0 1 1 0-.532a.266.266 0 0 1 0 .532m2.57 0a.266.266 0 1 1-.001-.532a.266.266 0 0 1 0 .532zm2.382 1.105h-.025a.6.6 0 0 0-.597.596v2.594c0 .329.27.596.597.596h.025a.597.597 0 0 0 .596-.596V8.844a.6.6 0 0 0-.596-.596"></svg:path><svg:path d="M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16m0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10s-4.477 10-10 10"></svg:path></svg:g>`,
-})
-export class JamAndroidCircleIcon {
-  readonly viewBox = input("-2 -2 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[jamAndroidIcon],svg[jam-android-icon]',
   host: {
     role: 'img',
@@ -302,6 +285,23 @@ export class JamAndroidCircleIcon {
 })
 export class JamAndroidIcon {
   readonly viewBox = input("-3 -2 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[jamAndroidCircleIcon],svg[jam-android-circle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor"><svg:path d="M6.39 8.248h-.026a.6.6 0 0 0-.596.596v2.594c0 .329.267.596.596.596h.026a.6.6 0 0 0 .596-.596V8.844a.6.6 0 0 0-.597-.596zm.88 4.192c0 .3.247.546.548.546h.586v1.402c0 .329.268.596.596.596h.025a.6.6 0 0 0 .597-.596v-1.402h.818v1.402c0 .329.27.596.596.596h.026a.6.6 0 0 0 .596-.596v-1.402h.586c.3 0 .547-.245.547-.547V8.343H7.27zm4.136-6.581l.465-.718a.099.099 0 1 0-.166-.108l-.482.743a3.1 3.1 0 0 0-1.192-.232c-.427 0-.83.084-1.192.232l-.481-.743a.1.1 0 0 0-.137-.029a.1.1 0 0 0-.03.137l.466.718c-.839.41-1.405 1.185-1.405 2.074q0 .082.009.162h5.541q.008-.08.008-.162c0-.889-.566-1.663-1.404-2.074m-2.66 1.284a.266.266 0 1 1 0-.532a.266.266 0 0 1 0 .532m2.57 0a.266.266 0 1 1-.001-.532a.266.266 0 0 1 0 .532zm2.382 1.105h-.025a.6.6 0 0 0-.597.596v2.594c0 .329.27.596.597.596h.025a.597.597 0 0 0 .596-.596V8.844a.6.6 0 0 0-.596-.596"></svg:path><svg:path d="M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16m0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10s-4.477 10-10 10"></svg:path></svg:g>`,
+})
+export class JamAndroidCircleIcon {
+  readonly viewBox = input("-2 -2 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
 }

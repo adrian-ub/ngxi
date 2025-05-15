@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentLaptop48FilledIcon],svg[fluent-laptop-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 12.25A4.25 4.25 0 0 1 12.25 8h23.5A4.25 4.25 0 0 1 40 12.25v15.5A4.25 4.25 0 0 1 35.75 32h-23.5A4.25 4.25 0 0 1 8 27.75zM5.25 35.5a1.25 1.25 0 1 0 0 2.5h37.5a1.25 1.25 0 1 0 0-2.5z"></svg:path>`,
+})
+export class FluentLaptop48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentLaptop48RegularIcon],svg[fluent-laptop-48-regular-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class FluentLinkDismiss16RegularIcon {
   template: `<svg:path fill="currentColor" d="M14 4a4 4 0 0 1 3.52 5.902a5.5 5.5 0 0 0-1.358-.646a2.5 2.5 0 0 0-1.998-3.75L14 5.5h-2a.75.75 0 0 1-.102-1.493L12 4zM8 4a.75.75 0 0 1 .102 1.493L8 5.5H6a2.5 2.5 0 0 0-.164 4.995L6 10.5h2a.75.75 0 0 1 .102 1.493L8 12H6a4 4 0 0 1-.2-7.995L6 4zM6.25 7.25h7.5a.75.75 0 0 1 .102 1.493l-.102.007h-7.5a.75.75 0 0 1-.102-1.493zM19 14.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.732-1.06a.5.5 0 0 0-.707-.708l-1.061 1.06l-1.06-1.06a.5.5 0 0 0-.708.707l1.06 1.061l-1.06 1.06a.5.5 0 0 0 .707.708l1.061-1.06l1.06 1.06a.5.5 0 0 0 .708-.707l-1.06-1.061z"></svg:path>`,
 })
 export class FluentLinkDismiss20FilledIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentLinkDismiss20RegularIcon],svg[fluent-link-dismiss-20-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8 4a.5.5 0 0 1 .09.992L8 5H6a3 3 0 0 0-.197 5.994L6 11h2a.5.5 0 0 1 .09.992L8 12H6a4 4 0 0 1-.22-7.994L6 4zm6 0a4 4 0 0 1 3.52 5.902a5.5 5.5 0 0 0-.883-.471a3 3 0 0 0-2.44-4.424L14 5h-2a.5.5 0 0 1-.09-.992L12 4zM6 7.5h8a.5.5 0 0 1 .09.992L14 8.5H6a.5.5 0 0 1-.09-.992zm13 7a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.732-1.06a.5.5 0 0 0-.707-.708l-1.061 1.06l-1.06-1.06a.5.5 0 0 0-.708.707l1.06 1.061l-1.06 1.06a.5.5 0 0 0 .707.708l1.061-1.06l1.06 1.06a.5.5 0 0 0 .708-.707l-1.06-1.061z"></svg:path>`,
-})
-export class FluentLinkDismiss20RegularIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

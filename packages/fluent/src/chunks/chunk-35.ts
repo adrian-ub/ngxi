@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentVehicleMotorcycle48FilledIcon],svg[fluent-vehicle-motorcycle-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M22.25 8a1.25 1.25 0 1 0 0 2.5h3.35c.677 0 1.293.39 1.582 1.002l3.213 6.79A4.7 4.7 0 0 0 28.75 18h-3.174a8.25 8.25 0 0 0-7.379 4.56L16.977 25H9.5a7.5 7.5 0 1 0 7.23 9.5h4.43a6.25 6.25 0 0 0 5.59-3.455l.773-1.545h-2.796l-.006.014a2 2 0 0 0-.221-.014h-8q-.062 0-.122.004A7.5 7.5 0 0 0 15.09 27.5h13.66a4.75 4.75 0 0 0 4.49-3.195l.967 2.044a7.5 7.5 0 1 0 2.26-1.07l-1.097-2.318q.309.039.63.039h3.75c.69 0 1.25-.56 1.25-1.25v-7.5c0-.69-.56-1.25-1.25-1.25H36c-1.784 0-3.35.935-4.235 2.341l-2.323-4.909A4.25 4.25 0 0 0 25.601 8zM4.5 32.5a5 5 0 1 1 10 0a5 5 0 0 1-10 0m30.8-3.842l2.07 4.377a1.25 1.25 0 1 0 2.26-1.07l-2.07-4.377q.457-.087.94-.088a5 5 0 1 1-3.2 1.158M33.5 18a2.5 2.5 0 0 1 2.5-2.5h2.5v5H36a2.5 2.5 0 0 1-2.5-2.5"></svg:path>`,
+})
+export class FluentVehicleMotorcycle48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentVehicleMotorcycle48RegularIcon],svg[fluent-vehicle-motorcycle-48-regular-icon]',
   host: {
     role: 'img',
@@ -8479,23 +8496,6 @@ export class FluentWeatherHaze24FilledIcon {
 })
 export class FluentWeatherHaze24RegularIcon {
   readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentWeatherHaze48FilledIcon],svg[fluent-weather-haze-48-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m10 37.763l-.156.084a1.25 1.25 0 0 1-1.197-2.195c2.982-1.627 5.664-2.006 8.319-1.516c2.585.478 5.062 1.769 7.657 3.283c4.752 2.771 10.291 2.031 13.395-.186a1.25 1.25 0 1 1 1.453 2.034c-3.895 2.783-10.496 3.584-16.107.311c-2.587-1.509-4.734-2.592-6.852-2.983c-2.007-.37-4.064-.131-6.512 1.168m26-2.78q.298-.095.587-.203a12.4 12.4 0 0 0 2.887-1.513a1.25 1.25 0 1 0-1.453-2.034c-3.104 2.217-8.643 2.957-13.395.186c-2.595-1.514-5.072-2.805-7.658-3.283c-2.655-.49-5.336-.11-8.32 1.516a1.25 1.25 0 0 0 1.198 2.195c2.517-1.373 4.62-1.63 6.668-1.252c2.118.391 4.266 1.474 6.852 2.983c4.17 2.433 8.887 2.615 12.634 1.406M24 13.08a10.92 10.92 0 0 0-9.933 6.379a14 14 0 0 1 3.358.219c3.052.564 5.858 2.062 8.463 3.581c3.103 1.81 6.578 1.745 9.031.808V24c0-6.03-4.888-10.92-10.92-10.92M13.097 24.613a8.8 8.8 0 0 1 3.42-.018q.606.112 1.218.297c1.735.523 3.54 1.465 5.634 2.686c5.611 3.273 12.212 2.472 16.108-.311a1.25 1.25 0 1 0-1.453-2.034C35.826 26.802 32.41 27.63 28.915 27a13 13 0 0 1-2.475-.703a13 13 0 0 1-1.812-.878c-2.27-1.324-4.45-2.479-6.693-3.067a14 14 0 0 0-1.326-.277c-2.538-.392-5.11.024-7.959 1.577a1.25 1.25 0 0 0 1.198 2.195c1.159-.632 2.23-1.028 3.248-1.234M24.074 44a1 1 0 0 1-.164 0zM11.607 9.895l-.101-.09a1.25 1.25 0 0 0-1.667 1.858l2.148 2.148l.102.09a1.25 1.25 0 0 0 1.666-1.858zm26.628 1.666a1.25 1.25 0 0 0-1.859-1.666l-2.148 2.148l-.09.102a1.25 1.25 0 0 0 1.858 1.666l2.148-2.148zM25.244 5.12a1.25 1.25 0 0 0-2.494.128v3.038l.007.127a1.25 1.25 0 0 0 2.493-.127V5.247z"></svg:path>`,
-})
-export class FluentWeatherHaze48FilledIcon {
-  readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
 }

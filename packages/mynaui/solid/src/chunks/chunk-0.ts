@@ -36,23 +36,6 @@ export class MynauiAArrowUpSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[mynauiAcademicHatSolidIcon],svg[mynaui-academic-hat-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M22.75 8.5v5a.75.75 0 0 1-1.5 0v-2.469l-.023.011l-1.477.693v4.89c0 1.909-1.527 3.193-3.05 3.953c-1.564.78-3.428 1.172-4.7 1.172s-3.136-.392-4.7-1.172c-1.523-.76-3.05-2.044-3.05-3.953v-4.89l-1.477-.692C1.721 10.549 1.25 9.478 1.25 8.5s.47-2.05 1.523-2.542L9.464 2.82a5.92 5.92 0 0 1 5.072 0l6.69 3.137C22.28 6.45 22.75 7.522 22.75 8.5m-8.214 5.68a5.92 5.92 0 0 1-5.072 0L5.75 12.437v4.187c0 1.01.82 1.913 2.22 2.61c1.36.679 2.996 1.015 4.03 1.015s2.67-.336 4.03-1.014c1.4-.698 2.22-1.601 2.22-2.61v-4.188z"></svg:path>`,
-})
-export class MynauiAcademicHatSolidIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mynauiAccessibilitySolidIcon],svg[mynaui-accessibility-solid-icon]',
   host: {
     role: 'img',
@@ -63,6 +46,23 @@ export class MynauiAcademicHatSolidIcon {
   template: `<svg:path fill="currentColor" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12m10.5-4.75a.75.75 0 0 0-1.5 0v.5a.75.75 0 0 0 1.5 0zM8.143 8.764a.75.75 0 0 0-.286 1.472l3.393.66v1.567l-1.544 3.752a.75.75 0 0 0 1.388.57L12 14.582l.906 2.203a.75.75 0 0 0 1.387-.57l-1.543-3.752v-1.567l3.393-.66a.75.75 0 1 0-.286-1.472L12 9.514z"></svg:path>`,
 })
 export class MynauiAccessibilitySolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mynauiAcademicHatSolidIcon],svg[mynaui-academic-hat-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M22.75 8.5v5a.75.75 0 0 1-1.5 0v-2.469l-.023.011l-1.477.693v4.89c0 1.909-1.527 3.193-3.05 3.953c-1.564.78-3.428 1.172-4.7 1.172s-3.136-.392-4.7-1.172c-1.523-.76-3.05-2.044-3.05-3.953v-4.89l-1.477-.692C1.721 10.549 1.25 9.478 1.25 8.5s.47-2.05 1.523-2.542L9.464 2.82a5.92 5.92 0 0 1 5.072 0l6.69 3.137C22.28 6.45 22.75 7.522 22.75 8.5m-8.214 5.68a5.92 5.92 0 0 1-5.072 0L5.75 12.437v4.187c0 1.01.82 1.913 2.22 2.61c1.36.679 2.996 1.015 4.03 1.015s2.67-.336 4.03-1.014c1.4-.698 2.22-1.601 2.22-2.61v-4.188z"></svg:path>`,
+})
+export class MynauiAcademicHatSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

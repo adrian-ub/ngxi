@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentShoppingBag32RegularIcon],svg[fluent-shopping-bag-32-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13.5 2A4.5 4.5 0 0 0 9 6.5V10H7a2 2 0 0 0-2 2v13.5A4.5 4.5 0 0 0 9.5 30h13a4.5 4.5 0 0 0 4.5-4.5V12a2 2 0 0 0-2-2h-2.002V6.5A4.5 4.5 0 0 0 16 2.757A4.5 4.5 0 0 0 13.5 2M25 12v13.5a2.5 2.5 0 0 1-5 0V12zm-6.242 16H9.5A2.5 2.5 0 0 1 7 25.5V12h11v13.5c0 .925.28 1.785.758 2.5m2.24-18H18V6.5a4.5 4.5 0 0 0-.6-2.246A2.5 2.5 0 0 1 20.998 6.5zM11 6.5a2.5 2.5 0 0 1 5 0V10h-5z"></svg:path>`,
+})
+export class FluentShoppingBag32RegularIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentShoppingBag48FilledIcon],svg[fluent-shopping-bag-48-filled-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class FluentSpeakerBox24RegularIcon {
   template: `<svg:path fill="currentColor" d="M8.693 2.04a.5.5 0 0 1 .306.46v6.878l-1.657 1.656a3.8 3.8 0 0 0-.818 1.224L5.222 10.98H3.5A1.5 1.5 0 0 1 2 9.48V6.492a1.5 1.5 0 0 1 1.5-1.5h1.724l2.926-2.85a.5.5 0 0 1 .543-.103m-.644 9.702a2.8 2.8 0 0 0-.73 1.29l-.303 1.21a.61.61 0 0 0 .739.74l1.21-.303a2.8 2.8 0 0 0 1.29-.73l4.288-4.288a1.56 1.56 0 0 0-1.617-2.578a1.56 1.56 0 0 0-.59.371l-.338.339l-1.115 1.114zm5.645-5.732a6.6 6.6 0 0 0-1.522-2.563a5 5 0 0 0-.327-.31l-.023-.02l-.007-.005l-.002-.002l-.002-.001a.5.5 0 1 0-.623.782l.012.01l.051.044q.072.063.201.196a5.6 5.6 0 0 1 1.221 1.973a2.6 2.6 0 0 1 1.02-.104m-1.914.597a3.8 3.8 0 0 0-.351-.756a3.4 3.4 0 0 0-.405-.54a3 3 0 0 0-.188-.183l-.015-.012l-.005-.005l-.002-.001l-.001-.001h-.001a.5.5 0 0 0-.623.78h-.001l.018.016q.028.025.085.085c.074.08.178.207.283.38c.151.248.307.596.382 1.05l.673-.673q.075-.074.152-.14"></svg:path>`,
 })
 export class FluentSpeakerEdit16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentSpeakerEdit16RegularIcon],svg[fluent-speaker-edit-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M8.999 2.5a.5.5 0 0 0-.85-.358l-2.925 2.85H3.5a1.5 1.5 0 0 0-1.5 1.5V9.48a1.5 1.5 0 0 0 1.5 1.5h1.722l1.302 1.278a3.8 3.8 0 0 1 .52-.89l-1.267-1.245a.5.5 0 0 0-.35-.143H3.5a.5.5 0 0 1-.5-.5V6.492a.5.5 0 0 1 .5-.5h1.927a.5.5 0 0 0 .349-.142l2.223-2.165v6.693l1-1zm-.95 9.242a2.8 2.8 0 0 0-.73 1.29l-.303 1.21a.61.61 0 0 0 .739.74l1.21-.303a2.8 2.8 0 0 0 1.29-.73l4.288-4.288a1.56 1.56 0 0 0-1.617-2.578a1.56 1.56 0 0 0-.59.371l-.338.339l-1.115 1.114zm5.645-5.732a6.6 6.6 0 0 0-1.522-2.563a5 5 0 0 0-.327-.31l-.023-.02l-.007-.005l-.002-.002l-.002-.001a.5.5 0 1 0-.623.782l.012.01l.051.044q.072.063.201.196a5.6 5.6 0 0 1 1.221 1.973a2.6 2.6 0 0 1 1.02-.104m-1.914.597a3.8 3.8 0 0 0-.351-.756a3.4 3.4 0 0 0-.405-.54a3 3 0 0 0-.188-.183l-.015-.012l-.005-.005l-.002-.001l-.001-.001h-.001a.5.5 0 0 0-.623.78h-.001l.018.016q.028.025.085.085c.074.08.178.207.283.38c.151.248.307.596.382 1.05l.673-.673q.075-.074.152-.14"></svg:path>`,
-})
-export class FluentSpeakerEdit16RegularIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

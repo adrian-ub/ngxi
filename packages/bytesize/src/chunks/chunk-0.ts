@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[bytesizeActivityIcon],svg[bytesize-activity-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16h7l3 13l4-26l3 13h7"></svg:path>`,
-})
-export class BytesizeActivityIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[bytesizeAlertIcon],svg[bytesize-alert-icon]',
   host: {
     role: 'img',
@@ -53,6 +36,23 @@ export class BytesizeArchiveIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[bytesizeActivityIcon],svg[bytesize-activity-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16h7l3 13l4-26l3 13h7"></svg:path>`,
+})
+export class BytesizeActivityIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[bytesizeArrowBottomIcon],svg[bytesize-arrow-bottom-icon]',
   host: {
     role: 'img',
@@ -63,23 +63,6 @@ export class BytesizeArchiveIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 22l10 8l10-8m-10 8V2"></svg:path>`,
 })
 export class BytesizeArrowBottomIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bytesizeArrowLeftIcon],svg[bytesize-arrow-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6L2 16l8 10M2 16h28"></svg:path>`,
-})
-export class BytesizeArrowLeftIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -121,6 +104,23 @@ export class BytesizeArrowTopIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[bytesizeArrowLeftIcon],svg[bytesize-arrow-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6L2 16l8 10M2 16h28"></svg:path>`,
+})
+export class BytesizeArrowLeftIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[bytesizeBackwardsIcon],svg[bytesize-backwards-icon]',
   host: {
     role: 'img',
@@ -155,23 +155,6 @@ export class BytesizeBagIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bytesizeBellIcon],svg[bytesize-bell-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17c0-5 1-11 8-11s8 6 8 11s3 8 3 8H5s3-3 3-8m12 8s0 4-4 4s-4-4-4-4m4-22v3"></svg:path>`,
-})
-export class BytesizeBellIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[bytesizeBanIcon],svg[bytesize-ban-icon]',
   host: {
     role: 'img',
@@ -189,16 +172,16 @@ export class BytesizeBanIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bytesizeBookmarkIcon],svg[bytesize-bookmark-icon]',
+  selector: 'svg[bytesizeBellIcon],svg[bytesize-bell-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 2h20v28L16 20L6 30Z"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17c0-5 1-11 8-11s8 6 8 11s3 8 3 8H5s3-3 3-8m12 8s0 4-4 4s-4-4-4-4m4-22v3"></svg:path>`,
 })
-export class BytesizeBookmarkIcon {
+export class BytesizeBellIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -216,6 +199,23 @@ export class BytesizeBookmarkIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7S9 1 2 6v22c7-5 14 0 14 0s7-5 14 0V6c-7-5-14 1-14 1m0 0v21"></svg:path>`,
 })
 export class BytesizeBookIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bytesizeBookmarkIcon],svg[bytesize-bookmark-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 2h20v28L16 20L6 30Z"></svg:path>`,
+})
+export class BytesizeBookmarkIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,23 +257,6 @@ export class BytesizeCameraIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bytesizeCaretLeftIcon],svg[bytesize-caret-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 30L6 16L22 2Z"></svg:path>`,
-})
-export class BytesizeCaretLeftIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[bytesizeCaretBottomIcon],svg[bytesize-caret-bottom-icon]',
   host: {
     role: 'img',
@@ -291,23 +274,6 @@ export class BytesizeCaretBottomIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bytesizeCaretTopIcon],svg[bytesize-caret-top-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M30 22L16 6L2 22Z"></svg:path>`,
-})
-export class BytesizeCaretTopIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[bytesizeCaretRightIcon],svg[bytesize-caret-right-icon]',
   host: {
     role: 'img',
@@ -318,6 +284,23 @@ export class BytesizeCaretTopIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 30l16-14L10 2Z"></svg:path>`,
 })
 export class BytesizeCaretRightIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bytesizeCaretLeftIcon],svg[bytesize-caret-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 30L6 16L22 2Z"></svg:path>`,
+})
+export class BytesizeCaretLeftIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -1729,6 +1712,23 @@ export class BytesizeZoomOutIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="14" cy="14" r="12"></svg:circle><svg:path d="m23 23l7 7M9 12V9h3m4 0h3v3M9 16v3h3m7-3v3h-3"></svg:path></svg:g>`,
 })
 export class BytesizeZoomResetIcon {
+  readonly viewBox = input("0 0 32 32")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bytesizeCaretTopIcon],svg[bytesize-caret-top-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M30 22L16 6L2 22Z"></svg:path>`,
+})
+export class BytesizeCaretTopIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

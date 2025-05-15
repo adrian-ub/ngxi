@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[uim500pxIcon],svg[uim-500px-icon]',
+  selector: 'svg[uimAdobeIcon],svg[uim-adobe-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="m19.705 19.266l-.067.067a8.8 8.8 0 0 1-2.89 1.953a9.1 9.1 0 0 1-3.539.714a9.04 9.04 0 0 1-6.428-2.667a8.97 8.97 0 0 1-2.556-4.99q-.045-.312.536-.401q.569-.09.625.223a.07.07 0 0 1 .01.045a10 10 0 0 0 .514 1.774a7.5 7.5 0 0 0 1.697 2.523a7.92 7.92 0 0 0 8.683 1.696a8 8 0 0 0 2.51-1.696l.068-.067a.27.27 0 0 1 .279-.067a1 1 0 0 1 .368.245q.402.413.19.648m-5.268-6.864l-.737.736l.704.704q.234.234-.079.546a.53.53 0 0 1-.357.19a.3.3 0 0 1-.212-.111l-.692-.681l-.736.736a.23.23 0 0 1-.168.056a.5.5 0 0 1-.346-.178l-.022-.023a.45.45 0 0 1-.201-.323a.33.33 0 0 1 .09-.19l.736-.726l-.737-.736q-.178-.179.157-.502a.55.55 0 0 1 .346-.201a.26.26 0 0 1 .145.055l.725.737l.726-.725q.2-.19.535.145q.302.301.123.49Zm5.257.636a6.48 6.48 0 0 1-1.92 4.62a6.6 6.6 0 0 1-2.087 1.407a6.56 6.56 0 0 1-5.09 0a6.6 6.6 0 0 1-2.086-1.407a6.3 6.3 0 0 1-1.395-2.075a1.6 1.6 0 0 1-.168-.447h-.01q-.101-.301.479-.49q.558-.18.67.133a5.9 5.9 0 0 0 1.082 1.864h.011v-3.806a3.6 3.6 0 0 1 1.139-2.59a3.9 3.9 0 0 1 2.823-1.149a3.84 3.84 0 0 1 2.802 1.15a3.77 3.77 0 0 1 1.16 2.779a3.973 3.973 0 0 1-3.962 3.962a4.4 4.4 0 0 1-1.25-.179q-.312-.123-.145-.68q.179-.57.491-.48l.157.033q.156.033.362.067a2 2 0 0 0 .34.033a2.68 2.68 0 0 0 1.965-.798a2.64 2.64 0 0 0 .804-1.947a2.56 2.56 0 0 0-.804-1.909a2.65 2.65 0 0 0-1.953-.792a2.55 2.55 0 0 0-1.987.893a2.63 2.63 0 0 0-.714 1.786v4.609a5.1 5.1 0 0 0 2.7.748a5.4 5.4 0 0 0 2.066-.408a5.33 5.33 0 0 0 3.303-4.927a5.354 5.354 0 0 0-5.357-5.346a5.17 5.17 0 0 0-3.795 1.563a8 8 0 0 0-.859.97l-.022.023a1 1 0 0 1-.145.173a.7.7 0 0 1-.24.106a.68.68 0 0 1-.43-.034a1.1 1.1 0 0 1-.407-.184a.37.37 0 0 1-.173-.296V2.424a.43.43 0 0 1 .117-.296A.4.4 0 0 1 7.473 2h9.788q.335 0 .335.614t-.335.614H8.209v5.39h.012a7 7 0 0 1 1.138-.937A7 7 0 0 1 10.564 7a6.6 6.6 0 0 1 2.578-.513A6.4 6.4 0 0 1 15.687 7a6.52 6.52 0 0 1 4.007 6.038m-.346-6.484a.26.26 0 0 1 .1.2a.35.35 0 0 1-.061.201q-.062.09-.184.235q-.29.29-.436.29a.25.25 0 0 1-.178-.078a8.8 8.8 0 0 0-2.31-1.485a7.6 7.6 0 0 0-3.08-.625a8.2 8.2 0 0 0-2.925.547q-.301.112-.502-.413a1.1 1.1 0 0 1-.09-.424a.26.26 0 0 1 .18-.223a8.2 8.2 0 0 1 3.336-.636a9 9 0 0 1 3.527.714a8.6 8.6 0 0 1 2.623 1.697"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M2 22.041a1 1 0 0 1-1-1V2.959a1 1 0 0 1 1-1h7.425a1 1 0 0 1 .925 1.38L2.925 21.42a1 1 0 0 1-.925.62Zm14.244 0H13.63a1 1 0 0 1-.891-.546l-1.522-2.99H8.963a1 1 0 0 1-.928-1.372L11.094 9.5a1 1 0 0 1 .928-.628h.01a1 1 0 0 1 .926.646l4.221 11.168a1 1 0 0 1-.935 1.354ZM22 21.809a1 1 0 0 1-.921-.613L13.56 3.346a1 1 0 0 1 .921-1.387H22a1 1 0 0 1 1 1v17.85a1 1 0 0 1-.802.98a1 1 0 0 1-.198.02"></svg:path>`,
 })
-export class Uim500pxIcon {
+export class UimAdobeIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -29,23 +29,6 @@ export class Uim500pxIcon {
   template: `<svg:path fill="currentColor" d="M14.483 2.959L22 20.809V2.959ZM2 2.959V21.04L9.425 2.96Zm7.069 14.324h2.784l1.748 3.433h2.537l-4.1-10.843Z"></svg:path>`,
 })
 export class UimAdobeAltIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[uimAdobeIcon],svg[uim-adobe-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M2 22.041a1 1 0 0 1-1-1V2.959a1 1 0 0 1 1-1h7.425a1 1 0 0 1 .925 1.38L2.925 21.42a1 1 0 0 1-.925.62Zm14.244 0H13.63a1 1 0 0 1-.891-.546l-1.522-2.99H8.963a1 1 0 0 1-.928-1.372L11.094 9.5a1 1 0 0 1 .928-.628h.01a1 1 0 0 1 .926.646l4.221 11.168a1 1 0 0 1-.935 1.354ZM22 21.809a1 1 0 0 1-.921-.613L13.56 3.346a1 1 0 0 1 .921-1.387H22a1 1 0 0 1 1 1v17.85a1 1 0 0 1-.802.98a1 1 0 0 1-.198.02"></svg:path>`,
-})
-export class UimAdobeIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,23 +70,6 @@ export class UimAlignAltIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uimAlignCenterIcon],svg[uim-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21 7H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m-4 4H7a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2m4 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m-4 4H7a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2"></svg:path>`,
-})
-export class UimAlignCenterIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[uimAlignIcon],svg[uim-align-icon]',
   host: {
     role: 'img',
@@ -138,6 +104,23 @@ export class UimAlignCenterJustifyIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[uimAlignCenterIcon],svg[uim-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21 7H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m-4 4H7a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2m4 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m-4 4H7a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2"></svg:path>`,
+})
+export class UimAlignCenterIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[uimAlignLeftIcon],svg[uim-align-left-icon]',
   host: {
     role: 'img',
@@ -165,6 +148,23 @@ export class UimAlignLeftIcon {
   template: `<svg:path fill="currentColor" d="M21 7H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m0 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m0 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m0 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2"></svg:path>`,
 })
 export class UimAlignJustifyIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uim500pxIcon],svg[uim-500px-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m19.705 19.266l-.067.067a8.8 8.8 0 0 1-2.89 1.953a9.1 9.1 0 0 1-3.539.714a9.04 9.04 0 0 1-6.428-2.667a8.97 8.97 0 0 1-2.556-4.99q-.045-.312.536-.401q.569-.09.625.223a.07.07 0 0 1 .01.045a10 10 0 0 0 .514 1.774a7.5 7.5 0 0 0 1.697 2.523a7.92 7.92 0 0 0 8.683 1.696a8 8 0 0 0 2.51-1.696l.068-.067a.27.27 0 0 1 .279-.067a1 1 0 0 1 .368.245q.402.413.19.648m-5.268-6.864l-.737.736l.704.704q.234.234-.079.546a.53.53 0 0 1-.357.19a.3.3 0 0 1-.212-.111l-.692-.681l-.736.736a.23.23 0 0 1-.168.056a.5.5 0 0 1-.346-.178l-.022-.023a.45.45 0 0 1-.201-.323a.33.33 0 0 1 .09-.19l.736-.726l-.737-.736q-.178-.179.157-.502a.55.55 0 0 1 .346-.201a.26.26 0 0 1 .145.055l.725.737l.726-.725q.2-.19.535.145q.302.301.123.49Zm5.257.636a6.48 6.48 0 0 1-1.92 4.62a6.6 6.6 0 0 1-2.087 1.407a6.56 6.56 0 0 1-5.09 0a6.6 6.6 0 0 1-2.086-1.407a6.3 6.3 0 0 1-1.395-2.075a1.6 1.6 0 0 1-.168-.447h-.01q-.101-.301.479-.49q.558-.18.67.133a5.9 5.9 0 0 0 1.082 1.864h.011v-3.806a3.6 3.6 0 0 1 1.139-2.59a3.9 3.9 0 0 1 2.823-1.149a3.84 3.84 0 0 1 2.802 1.15a3.77 3.77 0 0 1 1.16 2.779a3.973 3.973 0 0 1-3.962 3.962a4.4 4.4 0 0 1-1.25-.179q-.312-.123-.145-.68q.179-.57.491-.48l.157.033q.156.033.362.067a2 2 0 0 0 .34.033a2.68 2.68 0 0 0 1.965-.798a2.64 2.64 0 0 0 .804-1.947a2.56 2.56 0 0 0-.804-1.909a2.65 2.65 0 0 0-1.953-.792a2.55 2.55 0 0 0-1.987.893a2.63 2.63 0 0 0-.714 1.786v4.609a5.1 5.1 0 0 0 2.7.748a5.4 5.4 0 0 0 2.066-.408a5.33 5.33 0 0 0 3.303-4.927a5.354 5.354 0 0 0-5.357-5.346a5.17 5.17 0 0 0-3.795 1.563a8 8 0 0 0-.859.97l-.022.023a1 1 0 0 1-.145.173a.7.7 0 0 1-.24.106a.68.68 0 0 1-.43-.034a1.1 1.1 0 0 1-.407-.184a.37.37 0 0 1-.173-.296V2.424a.43.43 0 0 1 .117-.296A.4.4 0 0 1 7.473 2h9.788q.335 0 .335.614t-.335.614H8.209v5.39h.012a7 7 0 0 1 1.138-.937A7 7 0 0 1 10.564 7a6.6 6.6 0 0 1 2.578-.513A6.4 6.4 0 0 1 15.687 7a6.52 6.52 0 0 1 4.007 6.038m-.346-6.484a.26.26 0 0 1 .1.2a.35.35 0 0 1-.061.201q-.062.09-.184.235q-.29.29-.436.29a.25.25 0 0 1-.178-.078a8.8 8.8 0 0 0-2.31-1.485a7.6 7.6 0 0 0-3.08-.625a8.2 8.2 0 0 0-2.925.547q-.301.112-.502-.413a1.1 1.1 0 0 1-.09-.424a.26.26 0 0 1 .18-.223a8.2 8.2 0 0 1 3.336-.636a9 9 0 0 1 3.527.714a8.6 8.6 0 0 1 2.623 1.697"></svg:path>`,
+})
+export class Uim500pxIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -223,23 +223,6 @@ export class UimAlignRightIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[uimAlignRightJustifyIcon],svg[uim-align-right-justify-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21 5H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m0 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m0 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m0 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m0 4H11a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2"></svg:path>`,
-})
-export class UimAlignRightJustifyIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[uimAmazonIcon],svg[uim-amazon-icon]',
   host: {
     role: 'img',
@@ -250,6 +233,23 @@ export class UimAlignRightJustifyIcon {
   template: `<svg:path fill="currentColor" d="M1.04 17.52q.1-.16.32-.02a21.3 21.3 0 0 0 10.88 2.9a21.5 21.5 0 0 0 7.74-1.46q.1-.04.29-.12t.27-.12a.356.356 0 0 1 .47.12q.17.24-.11.44q-.36.26-.92.6a15 15 0 0 1-3.84 1.58A16.2 16.2 0 0 1 12 22a16 16 0 0 1-5.9-1.09a16.3 16.3 0 0 1-4.98-3.07a.27.27 0 0 1-.12-.2a.2.2 0 0 1 .04-.12m6.02-5.7a4.04 4.04 0 0 1 .68-2.36A4.2 4.2 0 0 1 9.6 7.98a10 10 0 0 1 2.66-.66q.54-.06 1.76-.16v-.34a3.56 3.56 0 0 0-.28-1.72a1.5 1.5 0 0 0-1.32-.6h-.16a2.2 2.2 0 0 0-1.14.42a1.64 1.64 0 0 0-.62 1a.51.51 0 0 1-.4.46L7.8 6.1q-.34-.08-.34-.36a.6.6 0 0 1 .02-.14a3.83 3.83 0 0 1 1.67-2.64A6.27 6.27 0 0 1 12.26 2h.5a5.05 5.05 0 0 1 3.56 1.18a4 4 0 0 1 .37.43a4 4 0 0 1 .27.41a2 2 0 0 1 .18.52q.08.34.12.47a3 3 0 0 1 .06.56q.02.43.02.51v4.84a2.9 2.9 0 0 0 .15.95a2.5 2.5 0 0 0 .29.62q.14.19.46.61a.6.6 0 0 1 .12.32a.35.35 0 0 1-.16.28q-1.66 1.44-1.8 1.56a.56.56 0 0 1-.58.04q-.28-.24-.49-.46t-.3-.32a5 5 0 0 1-.29-.39q-.2-.29-.28-.39a4.9 4.9 0 0 1-2.2 1.52a6 6 0 0 1-1.68.2a3.5 3.5 0 0 1-2.53-.95a3.55 3.55 0 0 1-.99-2.69m3.44-.4a1.9 1.9 0 0 0 .39 1.25a1.3 1.3 0 0 0 1.05.47a1 1 0 0 0 .17-.02a1 1 0 0 1 .15-.02a2.03 2.03 0 0 0 1.3-1.08a3.1 3.1 0 0 0 .33-.83a4 4 0 0 0 .12-.73q.01-.28.01-.92v-.5a7.3 7.3 0 0 0-1.76.16a2.144 2.144 0 0 0-1.76 2.22m8.4 6.44a.6.6 0 0 1 .12-.16a3.1 3.1 0 0 1 .96-.46a6.5 6.5 0 0 1 1.48-.22a1.2 1.2 0 0 1 .38.02q.9.08 1.08.3a.66.66 0 0 1 .08.36v.14a4.6 4.6 0 0 1-.38 1.65a3.84 3.84 0 0 1-1.06 1.53a.3.3 0 0 1-.18.08a.2.2 0 0 1-.08-.02q-.12-.06-.06-.22a7.6 7.6 0 0 0 .74-2.42a.5.5 0 0 0-.08-.32q-.2-.24-1.12-.24q-.34 0-.8.04q-.5.06-.92.12a.23.23 0 0 1-.16-.04a.065.065 0 0 1-.02-.08a.2.2 0 0 1 .02-.06"></svg:path>`,
 })
 export class UimAmazonIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[uimAlignRightJustifyIcon],svg[uim-align-right-justify-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21 5H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m0 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m0 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m0 4H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2m0 4H11a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2"></svg:path>`,
+})
+export class UimAlignRightJustifyIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

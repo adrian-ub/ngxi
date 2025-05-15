@@ -36,23 +36,6 @@ export class PixelAnalyticsSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pixelAdSolidIcon],svg[pixel-ad-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M22 5V4H2v1H1v14h1v1h20v-1h1V5zM9 8v1h1v1h1v7H9v-2H6v2H4v-7h1V9h1V8h1V7h1v1zm4 8v-5h1v-1h4V7h2v9h-1v1h-5v-1z"></svg:path><svg:path fill="currentColor" d="M9 11v2H6v-2h1v-1h1v1zm6 1h3v3h-3z"></svg:path>`,
-})
-export class PixelAdSolidIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[pixelAnalyticsIcon],svg[pixel-analytics-icon]',
   host: {
     role: 'img',
@@ -63,6 +46,23 @@ export class PixelAdSolidIcon {
   template: `<svg:path fill="currentColor" d="M2 15h2v7H2zm6-5h2v12H8zm6 4h2v8h-2zm6-4h2v12h-2zm-2-5h1v1h-1zm-1 1h1v1h-1zm-3 1h2v1h-2zm0 3h2v1h-2zm-1-2h1v2h-1zm3 0h1v2h-1zm-4-2h1v1h-1zm-1-1h1v1h-1zM8 4h2v1H8zm0-3h2v1H8zm2 1h1v2h-1zM7 2h1v2H7zm13 2h2v1h-2zm-1-2h1v2h-1zm1-1h2v1h-2zm2 1h1v2h-1zM6 6h1v1H6zM5 7h1v1H5zM4 9h1v2H4zM1 9h1v2H1zm1-1h2v1H2zm0 3h2v1H2z"></svg:path>`,
 })
 export class PixelAnalyticsIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pixelAdSolidIcon],svg[pixel-ad-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M22 5V4H2v1H1v14h1v1h20v-1h1V5zM9 8v1h1v1h1v7H9v-2H6v2H4v-7h1V9h1V8h1V7h1v1zm4 8v-5h1v-1h4V7h2v9h-1v1h-5v-1z"></svg:path><svg:path fill="currentColor" d="M9 11v2H6v-2h1v-1h1v1zm6 1h3v3h-3z"></svg:path>`,
+})
+export class PixelAdSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -138,23 +138,6 @@ export class PixelAngleDownSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pixelAngleLeftIcon],svg[pixel-angle-left-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M11 13h1v1h1v1h1v1h1v1h1v1h1v1h-1v1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1H9v-1H8v-2h1v-1h1V9h1V8h1V7h1V6h1V5h1V4h1v1h1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1z"></svg:path>`,
-})
-export class PixelAngleLeftIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[pixelAngleLeftSolidIcon],svg[pixel-angle-left-solid-icon]',
   host: {
     role: 'img',
@@ -172,16 +155,16 @@ export class PixelAngleLeftSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pixelAngleRightIcon],svg[pixel-angle-right-icon]',
+  selector: 'svg[pixelAngleLeftIcon],svg[pixel-angle-left-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M16 11v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1H9v1H8v-1H7v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-2h-1v-1h-1V9h-1V8H9V7H8V6H7V5h1V4h1v1h1v1h1v1h1v1h1v1h1v1h1v1z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M11 13h1v1h1v1h1v1h1v1h1v1h1v1h-1v1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1H9v-1H8v-2h1v-1h1V9h1V8h1V7h1V6h1V5h1V4h1v1h1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1z"></svg:path>`,
 })
-export class PixelAngleRightIcon {
+export class PixelAngleLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -199,6 +182,23 @@ export class PixelAngleRightIcon {
   template: `<svg:path fill="currentColor" d="M7 19v-2h1v-1h1v-1h1v-1h1v-1h1v-2h-1v-1h-1V9H9V8H8V7H7V5h1V4h2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1H8v-1z"></svg:path>`,
 })
 export class PixelAngleRightSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pixelAngleRightIcon],svg[pixel-angle-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M16 11v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1H9v1H8v-1H7v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-2h-1v-1h-1V9h-1V8H9V7H8V6H7V5h1V4h1v1h1v1h1v1h1v1h1v1h1v1h1v1z"></svg:path>`,
+})
+export class PixelAngleRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -291,23 +291,6 @@ export class PixelArrowAltCircleLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pixelArrowAltCircleDownSolidIcon],svg[pixel-arrow-alt-circle-down-solid-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M15 22h2v-1h2v-1h1v-1h1v-2h1v-2h1V9h-1V7h-1V5h-1V4h-1V3h-2V2h-2V1H9v1H7v1H5v1H4v1H3v2H2v2H1v6h1v2h1v2h1v1h1v1h2v1h2v1h6zm-5-6v-1H9v-1H8v-1H7v-1h4V6h2v6h4v1h-1v1h-1v1h-1v1h-1v1h-2v-1z"></svg:path>`,
-})
-export class PixelArrowAltCircleDownSolidIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[pixelArrowAltCircleLeftSolidIcon],svg[pixel-arrow-alt-circle-left-solid-icon]',
   host: {
     role: 'img',
@@ -318,6 +301,23 @@ export class PixelArrowAltCircleDownSolidIcon {
   template: `<svg:path fill="currentColor" d="M22 9V7h-1V5h-1V4h-1V3h-2V2h-2V1H9v1H7v1H5v1H4v1H3v2H2v2H1v6h1v2h1v2h1v1h1v1h2v1h2v1h6v-1h2v-1h2v-1h1v-1h1v-2h1v-2h1V9zm-10 4v4h-1v-1h-1v-1H9v-1H8v-1H7v-2h1v-1h1V9h1V8h1V7h1v4h6v2z"></svg:path>`,
 })
 export class PixelArrowAltCircleLeftSolidIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pixelArrowAltCircleDownSolidIcon],svg[pixel-arrow-alt-circle-down-solid-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15 22h2v-1h2v-1h1v-1h1v-2h1v-2h1V9h-1V7h-1V5h-1V4h-1V3h-2V2h-2V1H9v1H7v1H5v1H4v1H3v2H2v2H1v6h1v2h1v2h1v1h1v1h2v1h2v1h6zm-5-6v-1H9v-1H8v-1H7v-1h4V6h2v6h4v1h-1v1h-1v1h-1v1h-1v1h-2v-1z"></svg:path>`,
+})
+export class PixelArrowAltCircleDownSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

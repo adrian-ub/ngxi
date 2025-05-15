@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[iconParkFlightAirflowIcon],svg[icon-park-flight-airflow-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-width="4"><svg:path d="M6 25C6 15.0589 14.2827 7 24.5 7C34.7173 7 43 15.0589 43 25"></svg:path><svg:path fill="#2F88FF" stroke-linejoin="round" d="M10.0002 35L8.93573 30C8.93573 30 5.501 33.1087 4.35611 35.7391C3.21121 38.3696 4.85151 41 8 41H44.0002L36.0002 35.0217L10.0002 35Z"></svg:path><svg:path stroke-linejoin="round" d="M29 35L18 25L15 25L17 35"></svg:path></svg:g>`,
+})
+export class IconParkFlightAirflowIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconParkFlightSafetyIcon],svg[icon-park-flight-safety-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class IconParkMagicHatIcon {
   template: `<svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path d="M7.57932 35.4207C5.32303 32.1826 4 28.2458 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24C44 35.0457 35.0457 44 24 44C19.7542 44 15.8174 42.677 12.5793 40.4207M7.57932 35.4207C8.93657 37.3685 10.6315 39.0634 12.5793 40.4207M7.57932 35.4207L16 27M12.5793 40.4207L21 32M16 27L20 23L25 28L21 32M16 27L21 32"></svg:path><svg:path d="M17 14H21M19 12V16"></svg:path><svg:path d="M28 17H34M31 14V20"></svg:path><svg:path d="M32 29H36M34 27V31"></svg:path></svg:g>`,
 })
 export class IconParkMagicWandIcon {
-  readonly viewBox = input("0 0 48 48")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconParkMagnetIcon],svg[icon-park-magnet-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><svg:path d="M6 10V26C6 35.9411 14.0589 44 24 44C33.9411 44 42 35.9411 42 26V10M14 10V26C14 31.5228 18.4772 36 24 36C29.5228 36 34 31.5228 34 26V10"></svg:path><svg:path fill="#2F88FF" d="M14 4H6V10H14V4Z"></svg:path><svg:path fill="#2F88FF" d="M34 4H42V10H34V4Z"></svg:path></svg:g>`,
-})
-export class IconParkMagnetIcon {
   readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")

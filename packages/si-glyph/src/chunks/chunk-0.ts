@@ -2,6 +2,40 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[siGlyphAdjustmentHorizonIcon],svg[si-glyph-adjustment-horizon-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8 1v1.956h7.928V1zM0 1h1.975v1.975H0zm0 6v1.988h5.011V7zm11 0v1.979h4.987V7zM0 13h8.019v1.962H0zm14 0h2v1.961h-2zm-3.032 3.04c1.087 0 2.008-.822 2.008-1.88c0-1.06-.921-2.16-2.008-2.16s-1.924.961-1.924 2.02s.837 2.02 1.924 2.02M7.906 9.993c1.053 0 2.103-1.017 2.103-2.076S8.959 6 7.906 6A1.91 1.91 0 0 0 6 7.917c0 1.059.853 2.076 1.906 2.076m-2.85-6.012c1.059 0 1.966-1.005 1.966-2.064S5.976 0 4.917 0A1.917 1.917 0 0 0 3 1.917c0 1.059.997 2.064 2.056 2.064"></svg:path>`,
+})
+export class SiGlyphAdjustmentHorizonIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphAdjustmentVerticalIcon],svg[si-glyph-adjustment-vertical-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2 0v5.007h1.95V0zm0 11v4.958h2.01V11zm6 3v1.976h1.966V14zM8 0v8h2V0zm6 9v6.942h1.977V9zm0-9v2.933h2.009V0zm.917 8.049c1.059 0 2.094-.994 2.094-2.081S15.976 4 14.917 4S13 4.881 13 5.968s.858 2.081 1.917 2.081m-6 4.961c1.059 0 2.04-1.051 2.04-2.104C10.958 9.853 9.977 9 8.918 9A1.91 1.91 0 0 0 7 10.906c0 1.053.858 2.103 1.917 2.103zm-6-3.021c1.059 0 2.057-1.013 2.057-2.072S3.976 6 2.917 6A1.917 1.917 0 0 0 1 7.917c0 1.059.858 2.072 1.917 2.072"></svg:path>`,
+})
+export class SiGlyphAdjustmentVerticalIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[siGlyphAbacusIcon],svg[si-glyph-abacus-icon]',
   host: {
     role: 'img',
@@ -70,23 +104,6 @@ export class SiGlyphAirplane2Icon {
 
 @Component({
   standalone: true,
-  selector: 'svg[siGlyphAdjustmentVerticalIcon],svg[si-glyph-adjustment-vertical-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M2 0v5.007h1.95V0zm0 11v4.958h2.01V11zm6 3v1.976h1.966V14zM8 0v8h2V0zm6 9v6.942h1.977V9zm0-9v2.933h2.009V0zm.917 8.049c1.059 0 2.094-.994 2.094-2.081S15.976 4 14.917 4S13 4.881 13 5.968s.858 2.081 1.917 2.081m-6 4.961c1.059 0 2.04-1.051 2.04-2.104C10.958 9.853 9.977 9 8.918 9A1.91 1.91 0 0 0 7 10.906c0 1.053.858 2.103 1.917 2.103zm-6-3.021c1.059 0 2.057-1.013 2.057-2.072S3.976 6 2.917 6A1.917 1.917 0 0 0 1 7.917c0 1.059.858 2.072 1.917 2.072"></svg:path>`,
-})
-export class SiGlyphAdjustmentVerticalIcon {
-  readonly viewBox = input("0 0 17 16")
-  readonly width = input("1.07em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[siGlyphAlarmClockIcon],svg[si-glyph-alarm-clock-icon]',
   host: {
     role: 'img',
@@ -99,6 +116,23 @@ export class SiGlyphAdjustmentVerticalIcon {
 export class SiGlyphAlarmClockIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphAlignCenterIcon],svg[si-glyph-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M17 1.938c0 .518-.42.938-.938.938H1.98A.938.938 0 0 1 1.98 1h14.082c.518 0 .938.42.938.938m0 12c0 .518-.42.938-.938.938H1.98a.938.938 0 0 1 0-1.876h14.082c.518 0 .938.42.938.938m0-6c0 .518-.42.938-.938.938H1.98A.938.938 0 0 1 1.98 7h14.082c.518 0 .938.42.938.938m-3 3c0 .518-.42.938-.938.938H4.98a.938.938 0 0 1 0-1.876h8.082c.518 0 .938.42.938.938m0-6c0 .518-.42.938-.938.938H4.98A.938.938 0 0 1 4.98 4h8.082c.518 0 .938.42.938.938"></svg:path>`,
+})
+export class SiGlyphAlignCenterIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
   readonly height = input("1em")
 }
 
@@ -131,23 +165,6 @@ export class SiGlyphAlienIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1.043 1.938c0 .518.42.938.938.938h14.082a.938.938 0 0 0 0-1.876H1.981a.94.94 0 0 0-.938.938m0 12c0 .518.42.938.938.938h14.082a.938.938 0 0 0 0-1.876H1.981a.94.94 0 0 0-.938.938m0-6c0 .518.42.938.938.938h10.082a.938.938 0 0 0 0-1.876H1.981a.94.94 0 0 0-.938.938m0 3c0 .518.42.938.938.938h8.082a.938.938 0 0 0 0-1.876H1.981a.94.94 0 0 0-.938.938m0-6c0 .518.42.938.938.938h6.082a.938.938 0 0 0 0-1.876H1.981a.94.94 0 0 0-.938.938"></svg:path>`,
 })
 export class SiGlyphAlighLeftIcon {
-  readonly viewBox = input("0 0 17 16")
-  readonly width = input("1.07em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[siGlyphAlignCenterIcon],svg[si-glyph-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M17 1.938c0 .518-.42.938-.938.938H1.98A.938.938 0 0 1 1.98 1h14.082c.518 0 .938.42.938.938m0 12c0 .518-.42.938-.938.938H1.98a.938.938 0 0 1 0-1.876h14.082c.518 0 .938.42.938.938m0-6c0 .518-.42.938-.938.938H1.98A.938.938 0 0 1 1.98 7h14.082c.518 0 .938.42.938.938m-3 3c0 .518-.42.938-.938.938H4.98a.938.938 0 0 1 0-1.876h8.082c.518 0 .938.42.938.938m0-6c0 .518-.42.938-.938.938H4.98A.938.938 0 0 1 4.98 4h8.082c.518 0 .938.42.938.938"></svg:path>`,
-})
-export class SiGlyphAlignCenterIcon {
   readonly viewBox = input("0 0 17 16")
   readonly width = input("1.07em")
   readonly height = input("1em")
@@ -223,16 +240,16 @@ export class SiGlyphAnchorIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[siGlyphAdjustmentHorizonIcon],svg[si-glyph-adjustment-horizon-icon]',
+  selector: 'svg[siGlyphAngle1Icon],svg[si-glyph-angle-1-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M8 1v1.956h7.928V1zM0 1h1.975v1.975H0zm0 6v1.988h5.011V7zm11 0v1.979h4.987V7zM0 13h8.019v1.962H0zm14 0h2v1.961h-2zm-3.032 3.04c1.087 0 2.008-.822 2.008-1.88c0-1.06-.921-2.16-2.008-2.16s-1.924.961-1.924 2.02s.837 2.02 1.924 2.02M7.906 9.993c1.053 0 2.103-1.017 2.103-2.076S8.959 6 7.906 6A1.91 1.91 0 0 0 6 7.917c0 1.059.853 2.076 1.906 2.076m-2.85-6.012c1.059 0 1.966-1.005 1.966-2.064S5.976 0 4.917 0A1.917 1.917 0 0 0 3 1.917c0 1.059.997 2.064 2.056 2.064"></svg:path>`,
+  template: `<svg:g fill="currentColor" fill-rule="evenodd" transform="translate(2 1)"><svg:ellipse cx="13.479" cy="13.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="13.479" cy="9.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="9.479" cy="13.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="5.479" cy="13.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="9.479" cy="9.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="13.479" cy="5.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="13.479" cy="1.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="9.479" cy="5.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="5.479" cy="9.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="1.479" cy="13.458" rx="1.479" ry="1.458"></svg:ellipse></svg:g>`,
 })
-export class SiGlyphAdjustmentHorizonIcon {
+export class SiGlyphAngle1Icon {
   readonly viewBox = input("0 0 17 16")
   readonly width = input("1.07em")
   readonly height = input("1em")
@@ -257,40 +274,6 @@ export class SiGlyphAndroidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[siGlyphAngle1Icon],svg[si-glyph-angle-1-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="currentColor" fill-rule="evenodd" transform="translate(2 1)"><svg:ellipse cx="13.479" cy="13.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="13.479" cy="9.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="9.479" cy="13.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="5.479" cy="13.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="9.479" cy="9.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="13.479" cy="5.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="13.479" cy="1.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="9.479" cy="5.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="5.479" cy="9.458" rx="1.479" ry="1.458"></svg:ellipse><svg:ellipse cx="1.479" cy="13.458" rx="1.479" ry="1.458"></svg:ellipse></svg:g>`,
-})
-export class SiGlyphAngle1Icon {
-  readonly viewBox = input("0 0 17 16")
-  readonly width = input("1.07em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[siGlyphAntenna1Icon],svg[si-glyph-antenna-1-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M14.987 0H3.112c-2.127 0-.266 1.982-.266 1.982l5.234 6.08v7.854h1.875V8.077l5.232-6.064c.001 0 1.955-2.013-.2-2.013M7.64 5.582L4.204 1.52S3.526.97 4.35.97s3.668.014 3.668.014v4.531c0 .673-.378.067-.378.067m2.302-.066V.985s2.909-.014 3.752-.014c.844 0 .15.55.15.55L10.33 5.583c.001-.001-.388.605-.388-.067"></svg:path>`,
-})
-export class SiGlyphAntenna1Icon {
-  readonly viewBox = input("0 0 17 16")
-  readonly width = input("1.07em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[siGlyphAngle2Icon],svg[si-glyph-angle-2-icon]',
   host: {
     role: 'img',
@@ -303,23 +286,6 @@ export class SiGlyphAntenna1Icon {
 export class SiGlyphAngle2Icon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[siGlyphApronIcon],svg[si-glyph-apron-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M15.75 6.318c-1.443-.513-2.355 1.072-3.107 1.651c0 0-.888.224-.888.05c0-3.217 2.703-4.856.015-4.856v-.004l-.108-.438C11.208 1.06 10.457.046 9.485.046c-.962 0-1.754.996-2.209 2.631c0 0-.092.354-.111.441c-2.519 0 .021 1.759.021 4.936c0 .164-.89-.085-.89-.085c-.752-.579-1.598-2.208-3.041-1.695c-.178.062-.262.238-.188.39s.28.224.458.16c.906-.32 1.354.859 2.298 1.587c0 0 .79.614 1.291.781c-.351 3.169-1.957 6.78-1.957 6.78l8.695.024s-1.648-3.646-2.02-6.808c.498-.168 1.283-.778 1.283-.778c.944-.728 1.458-1.863 2.364-1.543c.178.063.384-.008.458-.16c.075-.15-.009-.326-.187-.389M9.48 5.055c-.792 0-1.377-.888-1.502-1.569c.334-1.713.979-2.579 1.577-2.579h-.133c.599 0 1.243.866 1.577 2.579c-.125.682-.71 1.569-1.502 1.569z"></svg:path>`,
-})
-export class SiGlyphApronIcon {
-  readonly viewBox = input("0 0 17 16")
-  readonly width = input("1.07em")
   readonly height = input("1em")
 }
 
@@ -8495,6 +8461,40 @@ export class SiGlyphMagnetIcon {
   template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="M17 5.954C17 2.665 14.317 0 11.009 0C7.698 0 5.016 2.665 5.016 5.954c0 3.287 2.683 5.952 5.993 5.952c3.308 0 5.991-2.665 5.991-5.952m-11.066.065A5.08 5.08 0 0 1 11.026.943a5.08 5.08 0 0 1 5.088 5.076a5.08 5.08 0 0 1-5.088 5.075c-2.813 0-5.092-2.272-5.092-5.075m-3.112 9.945L1 14.142l4.037-4.038s.096.765.58 1.247c.482.484 1.242.576 1.242.576z"></svg:path><svg:path d="M14.398 5.073c0 .572.44.356.44-.439c0-1.37-1.109-2.48-2.479-2.48c-.797 0-1.012.439-.439.439a2.48 2.48 0 0 1 2.478 2.48"></svg:path></svg:g>`,
 })
 export class SiGlyphMagnifierIcon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphMagnifier2Icon],svg[si-glyph-magnifier-2-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="currentColor" fill-rule="evenodd"><svg:path d="M16.025 7.5c0-4.143-3.356-7.5-7.499-7.5a7.5 7.5 0 0 0-7.499 7.5a7.5 7.5 0 0 0 7.5 7.5c2.219 0 7.5-.052 7.5-.052zm-7.553 5.529a5.506 5.506 0 1 1 .002-11.012a5.506 5.506 0 0 1-.002 11.012m6.487.929h-1v-1h1z"></svg:path><svg:path d="M7.844 3.044c-2.119 0-3.839 1.616-3.839 3.608c0 .25.026.496.077.73c.186.84.529.691.529-.158c0-1.998 1.719-3.609 3.84-3.609c.905 0 .608-.571-.607-.571"></svg:path></svg:g>`,
+})
+export class SiGlyphMagnifier2Icon {
+  readonly viewBox = input("0 0 17 16")
+  readonly width = input("1.07em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[siGlyphMailIcon],svg[si-glyph-mail-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M16.304 3.059H1.701a.65.65 0 0 0-.648.648v8.617a.65.65 0 0 0 .648.648h14.603a.65.65 0 0 0 .649-.648V3.707a.65.65 0 0 0-.649-.648m-1.398 8.987l-2.884-3.403l-3.009 2.545L5.955 8.57l-2.862 3.477H1.847l3.189-4.353l-3.07-2.6l-.029-1.281l7.076 5.531l7.049-5.62v1.37l-3.017 2.6l3.124 4.338z"></svg:path>`,
+})
+export class SiGlyphMailIcon {
   readonly viewBox = input("0 0 17 16")
   readonly width = input("1.07em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[tdesignCloudyNightRainIcon],svg[tdesign-cloudy-night-rain-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m17.131.901l-.102 1.185q-.017.194-.017.394a4.505 4.505 0 0 0 4.899 4.488l1.185-.102l-.103 1.184a6.5 6.5 0 0 1-2.162 4.3a5.2 5.2 0 0 1 1.186 3.309c0 2.212-1.383 4.085-3.316 4.898l-.921.388l-.776-1.844l.922-.387c1.25-.526 2.09-1.71 2.09-3.055c0-1.052-.51-2-1.332-2.62a3.6 3.6 0 0 0-2.172-.718h-.059l-.854.014l-.146-.842C15.17 9.87 13.9 8.535 12.215 8.118a4.6 4.6 0 0 0-1.172-.134c-2.438.034-4.34 1.938-4.34 4.205q0 .393.072.766l.184.956l-.95.21C4.833 14.38 4 15.38 4 16.526c0 .948.567 1.793 1.434 2.207l.902.432l-.864 1.804l-.902-.431C3.064 19.817 2 18.303 2 16.526c0-1.831 1.126-3.378 2.708-4.074a6 6 0 0 1-.005-.263c0-3.146 2.398-5.699 5.463-6.138a6.51 6.51 0 0 1 5.78-5.047zm-4.9 5.178q.234.041.463.097c2.15.531 3.883 2.122 4.538 4.19a5.6 5.6 0 0 1 2.045.676a4.5 4.5 0 0 0 1.5-2.099a6.51 6.51 0 0 1-5.723-5.722a4.52 4.52 0 0 0-2.823 2.858m.765 7.897H15v2.003h-2.004zm-4.996 2h2.004v2.003H8zm5 3h2.004v2.003H13zm-5 2h2.004v2.003H8z"></svg:path>`,
-})
-export class TdesignCloudyNightRainIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[tdesignCloudyNightRainFilledIcon],svg[tdesign-cloudy-night-rain-filled-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class TdesignGuitarIcon {
   template: `<svg:path fill="currentColor" d="M6.5 16a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0"></svg:path><svg:path fill="currentColor" d="M22.414 5L21 6.414l-1-1l-.586.586l.5.5L18.5 7.914l-.5-.5l-.828.829a5 5 0 0 1-2.183 7.346q.01.204.011.411a7 7 0 1 1-6.589-6.988a5 5 0 0 1 7.346-2.183L16.586 6l-.5-.5L17.5 4.086l.5.5l.586-.586l-1-1L19 1.586zM8 12.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7"></svg:path>`,
 })
 export class TdesignGuitarFilledIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[tdesignHamburgerIcon],svg[tdesign-hamburger-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.706 4.073C7.366 2.7 9.605 2 12 2c2.396 0 4.635.7 6.294 2.073C19.974 5.462 21 7.495 21 10v1H3v-1c0-2.505 1.027-4.538 2.706-5.927M5.074 9h13.852c-.219-1.432-.911-2.563-1.907-3.386C15.784 4.59 14.023 4 12 4s-3.784.591-5.02 1.614C5.986 6.437 5.294 7.568 5.075 9M6 11.798l3 2l3-2l3 2l3-2l4.387 2.925l-1.11 1.664L18 14.202l-3 2l-3-2l-3 2l-3-2l-3.277 2.185l-1.11-1.664zM3 17h18v1a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5zm2.17 2A3 3 0 0 0 8 21h8a3 3 0 0 0 2.83-2z"></svg:path>`,
+})
+export class TdesignHamburgerIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

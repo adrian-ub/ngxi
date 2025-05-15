@@ -189,23 +189,6 @@ export class WhhAIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[whhAUpperCaseIcon],svg[whh-a-upper-case-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M703.5 1024q-26.5 0-45-18.5T640 960V672q0-13-9.5-22.5T608 640H160q-13 0-22.5 9.5T128 672v288q0 27-19 45.5T64 1024t-45-18.5T0 960V256Q0 150 75 75T256 0h256q106 0 181 75t75 181v704q0 27-19 45.5t-45.5 18.5M640 256q0-53-37.5-90.5T512 128H256q-53 0-90.5 37.5T128 256v224q0 13 9.5 22.5T160 512h448q13 0 22.5-9.5T640 480z"></svg:path>`,
-})
-export class WhhAUpperCaseIcon {
-  readonly viewBox = input("0 0 768 1024")
-  readonly width = input("0.75em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[whhAaabatteryIcon],svg[whh-aaabattery-icon]',
   host: {
     role: 'img',
@@ -218,6 +201,23 @@ export class WhhAUpperCaseIcon {
 export class WhhAaabatteryIcon {
   readonly viewBox = input("0 0 1025 1024")
   readonly width = input("1.01em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[whhAUpperCaseIcon],svg[whh-a-upper-case-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M703.5 1024q-26.5 0-45-18.5T640 960V672q0-13-9.5-22.5T608 640H160q-13 0-22.5 9.5T128 672v288q0 27-19 45.5T64 1024t-45-18.5T0 960V256Q0 150 75 75T256 0h256q106 0 181 75t75 181v704q0 27-19 45.5t-45.5 18.5M640 256q0-53-37.5-90.5T512 128H256q-53 0-90.5 37.5T128 256v224q0 13 9.5 22.5T160 512h448q13 0 22.5-9.5T640 480z"></svg:path>`,
+})
+export class WhhAUpperCaseIcon {
+  readonly viewBox = input("0 0 768 1024")
+  readonly width = input("0.75em")
   readonly height = input("1em")
 }
 
@@ -257,16 +257,16 @@ export class WhhAccountfilterIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[whhAcornIcon],svg[whh-acorn-icon]',
+  selector: 'svg[whhAddalarmIcon],svg[whh-addalarm-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M928 129q-35 0-65.5 46.5T826 272q122 132 173 254.5t2 171.5q-45 45-122 71q-15-63-85-163.5t-172.5-203t-203-172T255 145q26-76 72-121q46-44 152.5-5.5T708 160q2-2 16.5-13.5t19-14.5t19-13.5t22.5-14t22.5-12t26-11.5t27-7.5T892 67t33-2q14 0 24.5 9.5t10 23.5t-9 22.5T928 129M576 449q156 156 237 311q-36 49-80 93q-60 60-130.5 98.5t-132.5 54t-129 17.5t-114-4t-93-18t-61-17.5t-23-9.5q-4-8-9.5-22.5t-17.5-61t-18-93T1 684t17.5-129T73 422.5T171 292q45-44 93-80q156 81 312 237"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M983.557 320h-3q-11 1-27-2q-85-145-238-211q-6-23-8.5-36.5t-2.5-28.5t7.5-23t22.5-13.5t40-5.5q104 0 177 73.5t73 176.5q0 67-41 70m-23 256q0 91-35.5 174t-95.5 143t-143 95.5t-174 35.5t-174-35.5t-143-95.5t-95.5-143t-35.5-174t35.5-174t95.5-143t143-95.5t174-35.5t174 35.5t143 95.5t95.5 143t35.5 174m-448-320q-87 0-160.5 43t-116.5 116.5t-43 160.5t43 160.5t116.5 116.5t160.5 43t160.5-43t116.5-116.5t43-160.5t-43-160.5t-116.5-116.5t-160.5-43m224 384h-160v160q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5V640h-160q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h160V352q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5v160h160q13 0 22.5 9.5t9.5 22.5v64q0 13-9.5 22.5t-22.5 9.5m-665-322q-15 3-27 2h-3q-41-3-41-70q0-103 73-176.5t177-73.5q25 0 40 5.5t22 13.5t7.5 23t-2 28.5t-8.5 36.5q-153 66-238 211"></svg:path>`,
 })
-export class WhhAcornIcon {
+export class WhhAddalarmIcon {
   readonly viewBox = input("0 0 1025 1024")
   readonly width = input("1.01em")
   readonly height = input("1em")
@@ -291,33 +291,16 @@ export class WhhAcsourceIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[whhAddcommentIcon],svg[whh-addcomment-icon]',
+  selector: 'svg[whhAcornIcon],svg[whh-acorn-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M512 896q-66 0-134-16q-34 40-69.5 69.5t-60 43.5t-47.5 21.5t-30.5 8.5t-10.5 1q26-57 30-124.5T177 786Q94 723 47 635T0 448q0-91 40.5-174t109-143T313 35.5T512 0t199 35.5T874.5 131t109 143t40.5 174t-40.5 174t-109 143T711 860.5T512 896m256-480q0-13-9.5-22.5T736 384H576V224q0-13-9.5-22.5T544 192h-64q-13 0-22.5 9.5T448 224v160H288q-13 0-22.5 9.5T256 416v64q0 13 9.5 22.5T288 512h160v160q0 13 9.5 22.5T480 704h64q13 0 22.5-9.5T576 672V512h160q13 0 22.5-9.5T768 480z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M928 129q-35 0-65.5 46.5T826 272q122 132 173 254.5t2 171.5q-45 45-122 71q-15-63-85-163.5t-172.5-203t-203-172T255 145q26-76 72-121q46-44 152.5-5.5T708 160q2-2 16.5-13.5t19-14.5t19-13.5t22.5-14t22.5-12t26-11.5t27-7.5T892 67t33-2q14 0 24.5 9.5t10 23.5t-9 22.5T928 129M576 449q156 156 237 311q-36 49-80 93q-60 60-130.5 98.5t-132.5 54t-129 17.5t-114-4t-93-18t-61-17.5t-23-9.5q-4-8-9.5-22.5t-17.5-61t-18-93T1 684t17.5-129T73 422.5T171 292q45-44 93-80q156 81 312 237"></svg:path>`,
 })
-export class WhhAddcommentIcon {
-  readonly viewBox = input("0 0 1024 1024")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[whhAddalarmIcon],svg[whh-addalarm-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M983.557 320h-3q-11 1-27-2q-85-145-238-211q-6-23-8.5-36.5t-2.5-28.5t7.5-23t22.5-13.5t40-5.5q104 0 177 73.5t73 176.5q0 67-41 70m-23 256q0 91-35.5 174t-95.5 143t-143 95.5t-174 35.5t-174-35.5t-143-95.5t-95.5-143t-35.5-174t35.5-174t95.5-143t143-95.5t174-35.5t174 35.5t143 95.5t95.5 143t35.5 174m-448-320q-87 0-160.5 43t-116.5 116.5t-43 160.5t43 160.5t116.5 116.5t160.5 43t160.5-43t116.5-116.5t43-160.5t-43-160.5t-116.5-116.5t-160.5-43m224 384h-160v160q0 13-9.5 22.5t-22.5 9.5h-64q-13 0-22.5-9.5t-9.5-22.5V640h-160q-13 0-22.5-9.5t-9.5-22.5v-64q0-13 9.5-22.5t22.5-9.5h160V352q0-13 9.5-22.5t22.5-9.5h64q13 0 22.5 9.5t9.5 22.5v160h160q13 0 22.5 9.5t9.5 22.5v64q0 13-9.5 22.5t-22.5 9.5m-665-322q-15 3-27 2h-3q-41-3-41-70q0-103 73-176.5t177-73.5q25 0 40 5.5t22 13.5t7.5 23t-2 28.5t-8.5 36.5q-153 66-238 211"></svg:path>`,
-})
-export class WhhAddalarmIcon {
+export class WhhAcornIcon {
   readonly viewBox = input("0 0 1025 1024")
   readonly width = input("1.01em")
   readonly height = input("1em")
@@ -8497,5 +8480,22 @@ export class WhhContaoIcon {
 export class WhhControllernesIcon {
   readonly viewBox = input("0 0 1024 614")
   readonly width = input("1.67em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[whhControllerpsIcon],svg[whh-controllerps-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1024 512q0 50-5 94t-16 81.5t-30.5 59T928 768q-51 0-97-38t-63-90q-43-128-256-128T256 640q-17 52-63 90t-97 38q-25 0-44.5-21.5t-30.5-59T5 606t-5-94q0-46 9.5-101.5t30-118.5t60-116.5T192 96V64q0-27 18.5-45.5T256 0h64q26 0 45 18.5T384 64h256q0-27 19-45.5T704 0h64q26 0 45 18.5T832 64v32q53 26 92.5 79.5t60 116.5t30 118.5T1024 512M288 256h-32v-32q0-13-9.5-22.5T224 192t-22.5 9.5T192 224v32h-32q-13 0-22.5 9.5T128 288t9.5 22.5T160 320h32v32q0 13 9.5 22.5T224 384t22.5-9.5T256 352v-32h32q13 0 22.5-9.5T320 288t-9.5-22.5T288 256m416 64q-26 0-45 18.5t-19 45t19 45.5t45.5 19t45-19t18.5-45.5t-19-45t-45-18.5m64-64.5q0 26.5 18.5 45.5t45 19t45.5-19t19-45.5t-19-45t-45.5-18.5t-45 18.5t-18.5 45"></svg:path>`,
+})
+export class WhhControllerpsIcon {
+  readonly viewBox = input("0 0 1024 768")
+  readonly width = input("1.34em")
   readonly height = input("1em")
 }

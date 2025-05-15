@@ -138,23 +138,6 @@ export class RiAccountPinBoxFillIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[riAccountPinCircleFillIcon],svg[ri-account-pin-circle-fill-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M14.256 21.744L12 24l-2.256-2.256C5.31 20.72 2 16.744 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10c0 4.744-3.31 8.72-7.744 9.744m-8.233-6.328C7.491 17.606 9.695 19 12.16 19s4.669-1.393 6.136-3.584A8.97 8.97 0 0 0 12.16 13a8.97 8.97 0 0 0-6.137 2.416M12 11a3 3 0 1 0 0-6a3 3 0 0 0 0 6"></svg:path>`,
-})
-export class RiAccountPinCircleFillIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[riAddBoxFillIcon],svg[ri-add-box-fill-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class RiFileCheckFillIcon {
   template: `<svg:path fill="currentColor" d="M18 13c1.093 0 2.117.292 3 .803V7l-5-5H3.999A.995.995 0 0 0 3 2.992v18.016a1 1 0 0 0 .993.992h8.81A6 6 0 0 1 18 13m3.536 8.121L19.414 19l2.122-2.121l-1.415-1.415l-2.12 2.122l-2.122-2.122l-1.414 1.415l2.12 2.12l-2.12 2.122l1.414 1.414L18 20.415l2.121 2.12z"></svg:path>`,
 })
 export class RiFileCloseFillIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[riFileCloudFillIcon],svg[ri-file-cloud-fill-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.997 2L21 8l.001 4.26A5.47 5.47 0 0 0 17.5 11l-.221.004a5.5 5.5 0 0 0-5.127 4.205l-.016.074l-.03.02A4.75 4.75 0 0 0 10.878 22H3.993a.993.993 0 0 1-.986-.876L3 21.008V2.992c0-.498.387-.927.885-.985L4.002 2zM17.5 13a3.5 3.5 0 0 1 3.5 3.5l-.002.103a2.75 2.75 0 0 1-.58 5.392L20.25 22h-5.5l-.168-.005a2.75 2.75 0 0 1-.579-5.393L14 16.5a3.5 3.5 0 0 1 3.5-3.5"></svg:path>`,
+})
+export class RiFileCloudFillIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

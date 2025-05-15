@@ -36,23 +36,6 @@ export class BpmnBusinessRuleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bpmnCallActivityIcon],svg[bpmn-call-activity-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:rect width="1700" height="1360" x="150" y="-627.638" fill="transparent" stroke="currentColor" stroke-linecap="round" stroke-width="220" rx="311.337" ry="306" transform="translate(0 947.638)"></svg:rect>`,
-})
-export class BpmnCallActivityIcon {
-  readonly viewBox = input("0 0 2000 2000")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[bpmnBusinessRuleTaskIcon],svg[bpmn-business-rule-task-icon]',
   host: {
     role: 'img',
@@ -70,34 +53,17 @@ export class BpmnBusinessRuleTaskIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bpmnConnectionIcon],svg[bpmn-connection-icon]',
+  selector: 'svg[bpmnCallActivityIcon],svg[bpmn-call-activity-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M1866.407 206.692s-585.454 298.724-882.844 438.406c63.707 58.178 122.963 120.927 184.437 181.407c-302.353 306.387-604.71 612.769-907.062 919.156c22.172 21.16 44.327 42.309 66.5 63.469c302.352-306.388 604.71-612.738 907.062-919.125c61.588 61.37 122.828 123.086 184.438 184.437c158.845-312.83 447.469-867.75 447.469-867.75"></svg:path>`,
+  template: `<svg:rect width="1700" height="1360" x="150" y="-627.638" fill="transparent" stroke="currentColor" stroke-linecap="round" stroke-width="220" rx="311.337" ry="306" transform="translate(0 947.638)"></svg:rect>`,
 })
-export class BpmnConnectionIcon {
-  readonly viewBox = input("0 0 2048 2048")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[bpmnConditionalFlowIcon],svg[bpmn-conditional-flow-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M1866.407 206.692s-585.454 298.724-882.844 438.406c63.707 58.178 122.963 120.927 184.437 181.407c-302.353 306.387-144.71 152.769-447.062 459.156c22.172 21.16 44.327 42.309 66.5 63.469c302.352-306.388 144.71-152.738 447.062-459.125c61.588 61.37 122.828 123.086 184.438 184.437c158.845-312.83 447.469-867.75 447.469-867.75"></svg:path><svg:path fill="transparent" stroke="currentColor" stroke-linecap="square" stroke-width="84.852" d="m717.5 1703.126l-417.555 67.921l67.91-417.576l417.557-67.891z"></svg:path>`,
-})
-export class BpmnConditionalFlowIcon {
-  readonly viewBox = input("0 0 2048 2048")
+export class BpmnCallActivityIcon {
+  readonly viewBox = input("0 0 2000 2000")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -121,34 +87,34 @@ export class BpmnCompensationMarkerIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bpmnDataInputIcon],svg[bpmn-data-input-icon]',
+  selector: 'svg[bpmnConditionalFlowIcon],svg[bpmn-conditional-flow-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round"><svg:path stroke-dashoffset="200" stroke-width="40" d="M799.876 406.976v159.072H587.842v119.547h212.034v159.073l232.942-218.846z"></svg:path><svg:path stroke-width="90" d="M438.243 252.897h794.702l328.812 337.647v1156.564H438.243V252.897h754.486v371.647h369.028"></svg:path></svg:g>`,
+  template: `<svg:path fill="currentColor" d="M1866.407 206.692s-585.454 298.724-882.844 438.406c63.707 58.178 122.963 120.927 184.437 181.407c-302.353 306.387-144.71 152.769-447.062 459.156c22.172 21.16 44.327 42.309 66.5 63.469c302.352-306.388 144.71-152.738 447.062-459.125c61.588 61.37 122.828 123.086 184.438 184.437c158.845-312.83 447.469-867.75 447.469-867.75"></svg:path><svg:path fill="transparent" stroke="currentColor" stroke-linecap="square" stroke-width="84.852" d="m717.5 1703.126l-417.555 67.921l67.91-417.576l417.557-67.891z"></svg:path>`,
 })
-export class BpmnDataInputIcon {
-  readonly viewBox = input("0 0 2000 2000")
+export class BpmnConditionalFlowIcon {
+  readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")
 }
 
 @Component({
   standalone: true,
-  selector: 'svg[bpmnDataOutputIcon],svg[bpmn-data-output-icon]',
+  selector: 'svg[bpmnConnectionIcon],svg[bpmn-connection-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="90" d="M438.243 252.897h794.702l328.812 337.647v1156.564H438.243V252.897h754.486v371.647h369.028"></svg:path><svg:path fill="currentColor" d="M789.963 367.952v185.303H577.928V712.8h212.035v185.305l282.15-265.078z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M1866.407 206.692s-585.454 298.724-882.844 438.406c63.707 58.178 122.963 120.927 184.437 181.407c-302.353 306.387-604.71 612.769-907.062 919.156c22.172 21.16 44.327 42.309 66.5 63.469c302.352-306.388 604.71-612.738 907.062-919.125c61.588 61.37 122.828 123.086 184.438 184.437c158.845-312.83 447.469-867.75 447.469-867.75"></svg:path>`,
 })
-export class BpmnDataOutputIcon {
-  readonly viewBox = input("0 0 2000 2000")
+export class BpmnConnectionIcon {
+  readonly viewBox = input("0 0 2048 2048")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -166,6 +132,23 @@ export class BpmnDataOutputIcon {
 })
 export class BpmnConnectionMultiIcon {
   readonly viewBox = input("0 0 2048 2048")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bpmnDataInputIcon],svg[bpmn-data-input-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round"><svg:path stroke-dashoffset="200" stroke-width="40" d="M799.876 406.976v159.072H587.842v119.547h212.034v159.073l232.942-218.846z"></svg:path><svg:path stroke-width="90" d="M438.243 252.897h794.702l328.812 337.647v1156.564H438.243V252.897h754.486v371.647h369.028"></svg:path></svg:g>`,
+})
+export class BpmnDataInputIcon {
+  readonly viewBox = input("0 0 2000 2000")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -199,6 +182,23 @@ export class BpmnDataObjectIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="70" d="M355.105 530.563v938.874c42.996 208.638 1246.884 208.638 1289.88 0V530.563c-42.996-208.638-1246.884-208.638-1289.88 0c42.996 208.639 1246.884 208.639 1289.88 0M355.105 708.61c42.996 208.639 1246.884 208.639 1289.88 0M355.105 886.657c42.996 208.639 1246.884 208.639 1289.88 0"></svg:path>`,
 })
 export class BpmnDataStoreIcon {
+  readonly viewBox = input("0 0 2000 2000")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bpmnDataOutputIcon],svg[bpmn-data-output-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="90" d="M438.243 252.897h794.702l328.812 337.647v1156.564H438.243V252.897h754.486v371.647h369.028"></svg:path><svg:path fill="currentColor" d="M789.963 367.952v185.303H577.928V712.8h212.035v185.305l282.15-265.078z"></svg:path>`,
+})
+export class BpmnDataOutputIcon {
   readonly viewBox = input("0 0 2000 2000")
   readonly width = input("1em")
   readonly height = input("1em")

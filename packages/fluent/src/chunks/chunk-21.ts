@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentMultiplier12x20FilledIcon],svg[fluent-multiplier-1-2x-20-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.7 8.748a.75.75 0 0 0 .8-.701a1 1 0 0 1 .148-.388c.109-.168.338-.409.952-.409c.58 0 .862.186 1.004.38c.158.216.266.61.157 1.243a.78.78 0 0 1-.403.597c-.204.126-.423.206-.719.314q-.19.069-.43.162c-.474.185-1.057.456-1.505.997c-.46.558-.704 1.308-.704 2.307a.75.75 0 0 0 .75.75h3.75a.75.75 0 0 0 0-1.5H9.578c.069-.285.175-.47.282-.6c.196-.238.48-.395.895-.557q.121-.047.271-.101c.343-.125.776-.282 1.122-.497a2.27 2.27 0 0 0 1.091-1.618c.15-.867.057-1.723-.424-2.382c-.497-.68-1.295-.995-2.215-.995c-1.136 0-1.832.51-2.21 1.091a2.5 2.5 0 0 0-.387 1.09v.011l-.001.004v.002c0 .003-.024.353 0 .002a.75.75 0 0 0 .698.798m6.58 1.472a.75.75 0 1 0-1.06 1.06l.72.72l-.72.72a.75.75 0 1 0 1.06 1.06l.72-.72l.72.72a.75.75 0 1 0 1.06-1.06l-.72-.72l.72-.72a.75.75 0 1 0-1.06-1.06l-.72.72zM7 13.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0M4.457 6.03A.75.75 0 0 1 5 6.75v6.5a.75.75 0 0 1-1.5 0V8.805c-.241.19-.524.384-.864.588a.75.75 0 0 1-.772-1.286c.58-.349.903-.621 1.128-.868c.216-.237.361-.47.575-.812l.048-.075a.75.75 0 0 1 .842-.323"></svg:path>`,
+})
+export class FluentMultiplier12x20FilledIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentMultiplier12x20RegularIcon],svg[fluent-multiplier-1-2x-20-regular-icon]',
   host: {
     role: 'img',
@@ -8479,23 +8496,6 @@ export class FluentOrganization12FilledIcon {
 })
 export class FluentOrganization12RegularIcon {
   readonly viewBox = input("0 0 12 12")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentOrganization16FilledIcon],svg[fluent-organization-16-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5.5 3.5a2.5 2.5 0 1 1 3 2.45V7h2.134C11.388 7 12 7.612 12 8.367v1.683a2.5 2.5 0 1 1-1 0V8.367A.367.367 0 0 0 10.634 8H5.367A.367.367 0 0 0 5 8.367v1.683a2.5 2.5 0 1 1-1 0V8.367C4 7.612 4.612 7 5.367 7H7.5V5.95a2.5 2.5 0 0 1-2-2.45"></svg:path>`,
-})
-export class FluentOrganization16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
 }

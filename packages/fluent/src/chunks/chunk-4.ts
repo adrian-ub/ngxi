@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentBookDismiss16FilledIcon],svg[fluent-book-dismiss-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2.257a5.5 5.5 0 0 1-.657-1H5a1 1 0 0 1-1-1v-.003h2.206A5.5 5.5 0 0 1 13 6.207V3a2 2 0 0 0-2-2M5.75 3h4.5a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 4.25v-.5A.75.75 0 0 1 5.75 3M16 11.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m-2.646-1.146a.5.5 0 0 0-.708-.708L11.5 10.793l-1.146-1.147a.5.5 0 0 0-.708.708l1.147 1.146l-1.147 1.146a.5.5 0 0 0 .708.708l1.146-1.147l1.146 1.147a.5.5 0 0 0 .708-.708L12.207 11.5z"></svg:path>`,
+})
+export class FluentBookDismiss16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentBookDismiss16RegularIcon],svg[fluent-book-dismiss-16-regular-icon]',
   host: {
     role: 'img',
@@ -8479,23 +8496,6 @@ export class FluentBuildingBank28FilledIcon {
 })
 export class FluentBuildingBank28RegularIcon {
   readonly viewBox = input("0 0 28 28")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentBuildingBank48FilledIcon],svg[fluent-building-bank-48-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M25.346 4.447a2.25 2.25 0 0 0-2.692 0L6.71 16.349c-1.35 1.007-.637 3.152 1.046 3.152h32.489c1.684 0 2.396-2.145 1.047-3.152zM24 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4M6 38.251A5.25 5.25 0 0 1 11.25 33h25.5c2.9 0 5.25 2.35 5.25 5.25v1.5c0 .69-.56 1.249-1.25 1.249H7.25A1.25 1.25 0 0 1 6 39.75zM14 31h-4v-9.5h4zm4-9.5V31h4v-9.5zm8 0V31h4v-9.5zm8 0V31h4v-9.5z"></svg:path>`,
-})
-export class FluentBuildingBank48FilledIcon {
-  readonly viewBox = input("0 0 48 48")
   readonly width = input("1em")
   readonly height = input("1em")
 }

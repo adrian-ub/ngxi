@@ -70,23 +70,6 @@ export class CodexAlignCenterIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[codexAlignRightIcon],svg[codex-align-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M19 7H7m12 10H7m12-5h-8"></svg:path>`,
-})
-export class CodexAlignRightIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[codexAlignLeftIcon],svg[codex-align-left-icon]',
   host: {
     role: 'img',
@@ -114,6 +97,23 @@ export class CodexAlignLeftIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9 12V7.1a.1.1 0 0 1 .1-.1h1.3c1.1 0 3.6.1 3.6 2.5c0 0 0 2.5-3 2.5m-2 0v4.8c0 .11.09.2.2.2h3.3c1.5 0 2.5-1 2.5-2.5c0-2.795-4-2.5-4-2.5m-2 0h2"></svg:path>`,
 })
 export class CodexBoldIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[codexAlignRightIcon],svg[codex-align-right-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M19 7H7m12 10H7m12-5h-8"></svg:path>`,
+})
+export class CodexAlignRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -155,23 +155,6 @@ export class CodexBracketsVerticalIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[codexChecklistIcon],svg[codex-checklist-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-width="2"><svg:path stroke-linecap="round" d="m9.2 12l1.859 1.859a.2.2 0 0 0 .282 0L14.7 10.5"></svg:path><svg:rect width="14" height="14" x="5" y="5" rx="4"></svg:rect></svg:g>`,
-})
-export class CodexChecklistIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[codexCheckIcon],svg[codex-check-icon]',
   host: {
     role: 'img',
@@ -189,16 +172,16 @@ export class CodexCheckIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[codexChevronLeftIcon],svg[codex-chevron-left-icon]',
+  selector: 'svg[codexChecklistIcon],svg[codex-checklist-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m14.5 17.5l-4.859-4.859a.2.2 0 0 1 0-.282L14.5 7.5"></svg:path>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="2"><svg:path stroke-linecap="round" d="m9.2 12l1.859 1.859a.2.2 0 0 0 .282 0L14.7 10.5"></svg:path><svg:rect width="14" height="14" x="5" y="5" rx="4"></svg:rect></svg:g>`,
 })
-export class CodexChevronLeftIcon {
+export class CodexChecklistIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -216,6 +199,23 @@ export class CodexChevronLeftIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m7 10l4.859 4.859a.2.2 0 0 0 .282 0L17 10"></svg:path>`,
 })
 export class CodexChevronDownIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[codexChevronLeftIcon],svg[codex-chevron-left-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m14.5 17.5l-4.859-4.859a.2.2 0 0 1 0-.282L14.5 7.5"></svg:path>`,
+})
+export class CodexChevronLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,23 +257,6 @@ export class CodexChevronUpIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[codexCollapseIcon],svg[codex-collapse-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9l3 3m0 0l-3 3m3-3H4m13-3l-3 3m0 0l3 3m-3-3h6"></svg:path>`,
-})
-export class CodexCollapseIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[codexClipboardIcon],svg[codex-clipboard-icon]',
   host: {
     role: 'img',
@@ -291,16 +274,16 @@ export class CodexClipboardIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[codexCopyIcon],svg[codex-copy-icon]',
+  selector: 'svg[codexCollapseIcon],svg[codex-collapse-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M17.25 8.5h-7a1.75 1.75 0 0 0-1.75 1.75v7c0 .966.784 1.75 1.75 1.75h7A1.75 1.75 0 0 0 19 17.25v-7a1.75 1.75 0 0 0-1.75-1.75"></svg:path><svg:path d="M15.5 8.5V6.75A1.75 1.75 0 0 0 13.75 5h-7A1.75 1.75 0 0 0 5 6.75v7a1.75 1.75 0 0 0 1.75 1.75H8.5M12 12h3.5M12 15.5h3.5"></svg:path></svg:g>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9l3 3m0 0l-3 3m3-3H4m13-3l-3 3m0 0l3 3m-3-3h6"></svg:path>`,
 })
-export class CodexCopyIcon {
+export class CodexCollapseIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -318,6 +301,23 @@ export class CodexCopyIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-width="2" d="M5.243 11.408a3 3 0 0 1 .878-2.165l3.536-3.536a1 1 0 0 1 1.414 0l4.95 4.95a1 1 0 0 1 .292.75m-11.07 0a3 3 0 0 0 .878 2.078L8 15.364m-2.757-3.956h6.714m4.356 0a1 1 0 0 1-.292.663l-3.536 3.536a3 3 0 0 1-4.242 0L8 15.364m8.313-3.956h-4.356M8 15.364l3.957-3.956M20 17.462c0 .85-.672 1.538-1.5 1.538s-1.5-.689-1.5-1.538s.9-1.847 1.5-2.462c.6.615 1.5 1.612 1.5 2.462Z"></svg:path>`,
 })
 export class CodexColorIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[codexCopyIcon],svg[codex-copy-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:path d="M17.25 8.5h-7a1.75 1.75 0 0 0-1.75 1.75v7c0 .966.784 1.75 1.75 1.75h7A1.75 1.75 0 0 0 19 17.25v-7a1.75 1.75 0 0 0-1.75-1.75"></svg:path><svg:path d="M15.5 8.5V6.75A1.75 1.75 0 0 0 13.75 5h-7A1.75 1.75 0 0 0 5 6.75v7a1.75 1.75 0 0 0 1.75 1.75H8.5M12 12h3.5M12 15.5h3.5"></svg:path></svg:g>`,
+})
+export class CodexCopyIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

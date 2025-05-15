@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[mdiToyBrickMinusIcon],svg[mdi-toy-brick-minus-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M23 20h-8v-2h8zm-10-1c0-3.31 2.69-6 6-6c.7 0 1.37.13 2 .35V6h-2V5a2 2 0 0 0-2-2h-2c-1.1 0-2 .9-2 2v1h-2V5a2 2 0 0 0-2-2H7c-1.1 0-2 .9-2 2v1H3v14h10.09c-.05-.33-.09-.66-.09-1"></svg:path>`,
-})
-export class MdiToyBrickMinusIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mdiToyBrickMinusOutlineIcon],svg[mdi-toy-brick-minus-outline-icon]',
   host: {
     role: 'img',
@@ -8495,6 +8478,23 @@ export class MdiWebhookIcon {
   template: `<svg:path fill="currentColor" d="m20.45 17.39l-8.09 4.58V18.4l5.04-2.77zm.55-.5V7.31L18.04 9v6.18zm-17.45.5l8.09 4.57V18.4L6.6 15.63zm-.55-.5V7.31L5.96 9v6.18zm.35-10.2L11.64 2v3.45L6.33 8.37l-.05.02zm17.3 0L12.36 2v3.45l5.31 2.93l.04.02zm-9.01 10.9l-4.97-2.74V9.44l4.97 2.87zm.72 0l4.97-2.73V9.44l-4.97 2.87zM7 8.81l5-2.75l5 2.75l-5 2.88z"></svg:path>`,
 })
 export class MdiWebpackIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiWebrtcIcon],svg[mdi-webrtc-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 2c2.44 0 4.5 1.75 4.91 4.07l.84-.07c2.75 0 5 2.24 5 5a5 5 0 0 1-2.59 4.38a5.015 5.015 0 0 1-4.41 7.37A5 5 0 0 1 12 21.06a5 5 0 0 1-3.75 1.69c-2.75 0-5-2.25-5-5c0-.86.22-1.66.59-2.37A5 5 0 0 1 1.25 11c0-2.76 2.25-5 5-5l.84.07C7.5 3.75 9.56 2 12 2M6.75 20.25L13.66 17H17c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v7c0 .55.45 1 1 1h.77z"></svg:path>`,
+})
+export class MdiWebrtcIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

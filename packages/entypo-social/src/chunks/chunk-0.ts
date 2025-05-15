@@ -104,23 +104,6 @@ export class EntypoSocialDribbbleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[entypoSocialDropboxIcon],svg[entypo-social-dropbox-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M6.109.902L.4 4.457l3.911 3.279L10 4.043zm7.343 15.09a.44.44 0 0 1-.285-.102L10 13.262l-3.167 2.629a.45.45 0 0 1-.529.03l-2.346-1.533v.904L10 19.098l6.042-3.807v-.904l-2.346 1.533a.44.44 0 0 1-.244.072M19.6 4.457L13.89.902L10 4.043l5.688 3.693zM10 11.291l3.528 2.928l5.641-3.688l-3.481-2.795zm-3.528 2.928L10 11.291L4.311 7.736l-3.48 2.795z"></svg:path>`,
-})
-export class EntypoSocialDropboxIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[entypoSocialDribbbleWithCircleIcon],svg[entypo-social-dribbble-with-circle-icon]',
   host: {
     role: 'img',
@@ -131,6 +114,23 @@ export class EntypoSocialDropboxIcon {
   template: `<svg:path fill="currentColor" d="M10.26 9.982q.05-.017.103-.031a15 15 0 0 0-.279-.584c-1.88.557-3.68.562-4.001.557q-.004.038-.003.076c0 .945.34 1.853.958 2.566c.206-.332 1.298-1.961 3.222-2.584m-2.637 3.131a3.91 3.91 0 0 0 3.871.512a16.5 16.5 0 0 0-.822-2.922c-2.121.75-2.922 2.162-3.049 2.41m4.932-6.086a3.92 3.92 0 0 0-3.405-.853a20 20 0 0 1 1.421 2.223c1.283-.493 1.863-1.204 1.984-1.37m-2.85 1.637A24 24 0 0 0 8.29 6.473a3.94 3.94 0 0 0-2.113 2.658h.017c.406 0 1.849-.033 3.511-.467m1.809 1.832c.465 1.293.679 2.367.74 2.711a3.93 3.93 0 0 0 1.609-2.543a5.8 5.8 0 0 0-1.592-.221q-.389 0-.757.053M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m0 14.297A4.703 4.703 0 0 1 5.301 10A4.703 4.703 0 0 1 10 5.301A4.704 4.704 0 0 1 14.698 10A4.7 4.7 0 0 1 10 14.697m.922-5.623q.13.27.242.531l.071.17q.417-.05.882-.049a9.7 9.7 0 0 1 1.801.172a3.93 3.93 0 0 0-.852-2.34c-.16.206-.818.963-2.144 1.516"></svg:path>`,
 })
 export class EntypoSocialDribbbleWithCircleIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoSocialDropboxIcon],svg[entypo-social-dropbox-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M6.109.902L.4 4.457l3.911 3.279L10 4.043zm7.343 15.09a.44.44 0 0 1-.285-.102L10 13.262l-3.167 2.629a.45.45 0 0 1-.529.03l-2.346-1.533v.904L10 19.098l6.042-3.807v-.904l-2.346 1.533a.44.44 0 0 1-.244.072M19.6 4.457L13.89.902L10 4.043l5.688 3.693zM10 11.291l3.528 2.928l5.641-3.688l-3.481-2.795zm-3.528 2.928L10 11.291L4.311 7.736l-3.48 2.795z"></svg:path>`,
+})
+export class EntypoSocialDropboxIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,23 +189,6 @@ export class EntypoSocialFacebookWithCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[entypoSocialFlickrIcon],svg[entypo-social-flickr-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M5 14c-2.188 0-3.96-1.789-3.96-4S2.812 6 5 6s3.96 1.789 3.96 4S7.187 14 5 14m10 0c-2.188 0-3.96-1.789-3.96-4S12.812 6 15 6s3.96 1.789 3.96 4s-1.773 4-3.96 4"></svg:path>`,
-})
-export class EntypoSocialFlickrIcon {
-  readonly viewBox = input("0 0 20 20")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[entypoSocialFlattrIcon],svg[entypo-social-flattr-icon]',
   host: {
     role: 'img',
@@ -216,6 +199,23 @@ export class EntypoSocialFlickrIcon {
   template: `<svg:path fill="currentColor" d="M5.598 8.541c0-1.637.434-2.678 1.889-2.912c.508-.1 1.566-.064 2.239-.064v2.5c0 .024.003.064.009.084a.236.236 0 0 0 .228.175q.09 0 .178-.09L16.377 2H7.548C3.874 2 2 4.115 2 8.066v8.287l3.598-3.602zM14.4 7.248v4.209c0 1.637-.434 2.68-1.889 2.912c-.508.1-1.566.065-2.238.065v-2.5l-.009-.084a.24.24 0 0 0-.228-.176c-.062 0-.118.033-.179.092l-6.235 6.232L7.809 18h4.643C16.125 18 18 15.885 18 11.934V3.647z"></svg:path>`,
 })
 export class EntypoSocialFlattrIcon {
+  readonly viewBox = input("0 0 20 20")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[entypoSocialFlickrIcon],svg[entypo-social-flickr-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5 14c-2.188 0-3.96-1.789-3.96-4S2.812 6 5 6s3.96 1.789 3.96 4S7.187 14 5 14m10 0c-2.188 0-3.96-1.789-3.96-4S12.812 6 15 6s3.96 1.789 3.96 4s-1.773 4-3.96 4"></svg:path>`,
+})
+export class EntypoSocialFlickrIcon {
   readonly viewBox = input("0 0 20 20")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[fa6SolidFeatherPointedIcon],svg[fa6-solid-feather-pointed-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M278.5 215.6L23 471c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l74.8-74.8c7.4 4.6 15.3 8.2 23.8 10.5c44.8 12.2 114.5 13.9 182.5-31.2c12.2-8.1 5.8-25.4-8.8-25.4h-16.1c-5.1 0-9.2-4.1-9.2-9.2c0-4.1 2.7-7.6 6.5-8.8l97.7-29.3c3.4-1 6.4-3.1 8.4-6.1c4.4-6.4 8.6-12.9 12.6-19.6c6.2-10.3-1.5-23-13.5-23H377c-5.1 0-9.2-4.1-9.2-9.2c0-4.1 2.7-7.6 6.5-8.8l80.9-24.3c4.6-1.4 8.4-4.8 10.2-9.3c29.1-73.4 42.4-150.3 46.5-199.6c.8-9.9-3-19.6-10-26.6S485.2-.6 475.3.2C391.5 7 228.5 40.5 137.4 131.6c-80.1 80.1-80.7 170.7-66.1 224.8c2.1 7.9 12 9.6 17.8 3.8l164.5-164.4c6.2-6.2 16.4-6.2 22.6 0c5.4 5.4 6.1 13.6 2.2 19.8z"></svg:path>`,
-})
-export class Fa6SolidFeatherPointedIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[fa6SolidFerryIcon],svg[fa6-solid-ferry-icon]',
   host: {
     role: 'img',
@@ -8497,5 +8480,22 @@ export class Fa6SolidPowerOffIcon {
 export class Fa6SolidPrescriptionIcon {
   readonly viewBox = input("0 0 448 512")
   readonly width = input("0.88em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[fa6SolidPrescriptionBottleIcon],svg[fa6-solid-prescription-bottle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 32C0 14.3 14.3 0 32 0h320c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H32C14.3 96 0 81.7 0 64zm32 96h320v320c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64v-32h112c8.8 0 16-7.2 16-16s-7.2-16-16-16H32v-64h112c8.8 0 16-7.2 16-16s-7.2-16-16-16H32v-64h112c8.8 0 16-7.2 16-16s-7.2-16-16-16H32z"></svg:path>`,
+})
+export class Fa6SolidPrescriptionBottleIcon {
+  readonly viewBox = input("0 0 384 512")
+  readonly width = input("0.75em")
   readonly height = input("1em")
 }

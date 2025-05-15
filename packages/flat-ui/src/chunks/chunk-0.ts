@@ -19,23 +19,6 @@ export class FlatUiAndroidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flatUiAndroid1Icon],svg[flat-ui-android1-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#EBEEEF" d="M6 0h42c3.312 0 6 2.688 6 6v88c0 3.312-2.688 6-6 6H6c-3.312 0-6-2.688-6-6V6a6 6 0 0 1 6-6"></svg:path><svg:path fill="#1C3C50" d="M0 10h54v80H0z"></svg:path><svg:path fill="#24485F" d="M4 14h46v72H4z"></svg:path><svg:path fill="#BCC3C8" d="M13 93h28v4H13zm0-90h28v4H13z"></svg:path><svg:path fill="#1C3C50" d="M46 3a2 2 0 1 0 .001 4.001A2 2 0 0 0 46 3M9 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2M6 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2"></svg:path>`,
-})
-export class FlatUiAndroid1Icon {
-  readonly viewBox = input("0 0 54 100")
-  readonly width = input("0.54em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[flatUiAppStoreIcon],svg[flat-ui-app-store-icon]',
   host: {
     role: 'img',
@@ -53,16 +36,33 @@ export class FlatUiAppStoreIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flatUiArrowIcon],svg[flat-ui-arrow-icon]',
+  selector: 'svg[flatUiAndroid1Icon],svg[flat-ui-android1-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:clippath id="flatUiArrow0"><svg:circle cx="50" cy="50" r="50"></svg:circle></svg:clippath><svg:g fill-rule="evenodd" clip-path="url(#flatUiArrow0)" clip-rule="evenodd"><svg:circle cx="50" cy="50" r="50" fill="#24AE5F"></svg:circle><svg:path fill="#E57D25" d="M34 50.5a2.5 2.5 0 0 0 2.5 2.5h66a2.5 2.5 0 1 0 0-5h-66a2.5 2.5 0 0 0-2.5 2.5"></svg:path><svg:path fill="#FBF063" d="m23 31l16 17h44L67 31z"></svg:path><svg:path fill="#F0C419" d="m67 70l16-17H39L23 70z"></svg:path></svg:g>`,
+  template: `<svg:path fill="#EBEEEF" d="M6 0h42c3.312 0 6 2.688 6 6v88c0 3.312-2.688 6-6 6H6c-3.312 0-6-2.688-6-6V6a6 6 0 0 1 6-6"></svg:path><svg:path fill="#1C3C50" d="M0 10h54v80H0z"></svg:path><svg:path fill="#24485F" d="M4 14h46v72H4z"></svg:path><svg:path fill="#BCC3C8" d="M13 93h28v4H13zm0-90h28v4H13z"></svg:path><svg:path fill="#1C3C50" d="M46 3a2 2 0 1 0 .001 4.001A2 2 0 0 0 46 3M9 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2M6 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2"></svg:path>`,
 })
-export class FlatUiArrowIcon {
+export class FlatUiAndroid1Icon {
+  readonly viewBox = input("0 0 54 100")
+  readonly width = input("0.54em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatUiArtIcon],svg[flat-ui-art-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#17A085" d="M50 0c27.613 0 50 22.386 50 50s-22.387 50-50 50C22.386 100 0 77.614 0 50S22.386 0 50 0"></svg:path><svg:defs><svg:circle id="flatUiArt0" cx="50" cy="50" r="50"></svg:circle></svg:defs><svg:clippath id="flatUiArt1"><svg:use href="#flatUiArt0"></svg:use></svg:clippath><svg:g clip-path="url(#flatUiArt1)"><svg:path fill="#107864" d="m17 34l-33 33v51h31l21-21V43z"></svg:path><svg:path fill="#EBEDEE" d="M76 31.051V31H26v.051c-.33-.028-.662-.051-1-.051c-6.627 0-12 5.373-12 12c0 6.628 5.373 12 12 12c2.45 0 4.725-.738 6.621-2H32l-4 4v49h44V57l-4-4h.379c1.896 1.262 4.171 2 6.621 2c6.628 0 12-5.372 12-12c0-6.289-4.841-11.44-11-11.949"></svg:path><svg:path fill="#D3D5D6" d="M26 31v.051c-.33-.028-.662-.051-1-.051c-6.627 0-12 5.373-12 12c0 6.628 5.373 12 12 12a11 11 0 0 0 1.519-.104l.016-.002a12 12 0 0 0 1.466-.289v.006A12 12 0 0 0 31.622 53H32l-4 4v49h22V31z"></svg:path><svg:path fill="#BDC3C7" d="M76 36H23c-2.891.861-5 3.83-5 7a7 7 0 1 0 14 0c0-1.075-.25-2.09-.683-3h37.365A7 7 0 0 0 68 43a7 7 0 1 0 14 0c0-3.524-2.609-6.513-6-7M25 46a3 3 0 1 1 0-6a3 3 0 0 1 0 6m50 0a3 3 0 1 1 0-6a3 3 0 0 1 0 6"></svg:path><svg:circle cx="41" cy="51" r="2" fill="#AAAFB3"></svg:circle><svg:circle cx="50" cy="51" r="2" fill="#BDC3C7"></svg:circle><svg:circle cx="59" cy="51" r="2" fill="#BDC3C7"></svg:circle><svg:path fill="#AAAFB3" d="M18 43a7 7 0 1 0 14 0c0-1.075-.25-2.09-.683-3H50v-4H23c-2.891.861-5 3.83-5 7m10 0a3 3 0 1 1-6 0a3 3 0 0 1 6 0m20 8a2 2 0 0 0 2 2v-4a2 2 0 0 0-2 2m-2 13v41c0 .348.059.68.142 1H50V60a4 4 0 0 0-4 4"></svg:path><svg:path fill="#BDC3C7" d="M53.857 106a4 4 0 0 0 .143-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.142 1zm13 0a4 4 0 0 0 .143-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.143 1z"></svg:path><svg:path fill="#AAAFB3" d="M40.858 106c.083-.32.142-.652.142-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.142 1z"></svg:path></svg:g>`,
+})
+export class FlatUiArtIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -87,6 +87,23 @@ export class FlatUiBagIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[flatUiArrowIcon],svg[flat-ui-arrow-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:clippath id="flatUiArrow0"><svg:circle cx="50" cy="50" r="50"></svg:circle></svg:clippath><svg:g fill-rule="evenodd" clip-path="url(#flatUiArrow0)" clip-rule="evenodd"><svg:circle cx="50" cy="50" r="50" fill="#24AE5F"></svg:circle><svg:path fill="#E57D25" d="M34 50.5a2.5 2.5 0 0 0 2.5 2.5h66a2.5 2.5 0 1 0 0-5h-66a2.5 2.5 0 0 0-2.5 2.5"></svg:path><svg:path fill="#FBF063" d="m23 31l16 17h44L67 31z"></svg:path><svg:path fill="#F0C419" d="m67 70l16-17H39L23 70z"></svg:path></svg:g>`,
+})
+export class FlatUiArrowIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[flatUiBasketIcon],svg[flat-ui-basket-icon]',
   host: {
     role: 'img',
@@ -99,23 +116,6 @@ export class FlatUiBagIcon {
 export class FlatUiBasketIcon {
   readonly viewBox = input("0 0 100 92.027")
   readonly width = input("1.09em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[flatUiArtIcon],svg[flat-ui-art-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#17A085" d="M50 0c27.613 0 50 22.386 50 50s-22.387 50-50 50C22.386 100 0 77.614 0 50S22.386 0 50 0"></svg:path><svg:defs><svg:circle id="flatUiArt0" cx="50" cy="50" r="50"></svg:circle></svg:defs><svg:clippath id="flatUiArt1"><svg:use href="#flatUiArt0"></svg:use></svg:clippath><svg:g clip-path="url(#flatUiArt1)"><svg:path fill="#107864" d="m17 34l-33 33v51h31l21-21V43z"></svg:path><svg:path fill="#EBEDEE" d="M76 31.051V31H26v.051c-.33-.028-.662-.051-1-.051c-6.627 0-12 5.373-12 12c0 6.628 5.373 12 12 12c2.45 0 4.725-.738 6.621-2H32l-4 4v49h44V57l-4-4h.379c1.896 1.262 4.171 2 6.621 2c6.628 0 12-5.372 12-12c0-6.289-4.841-11.44-11-11.949"></svg:path><svg:path fill="#D3D5D6" d="M26 31v.051c-.33-.028-.662-.051-1-.051c-6.627 0-12 5.373-12 12c0 6.628 5.373 12 12 12a11 11 0 0 0 1.519-.104l.016-.002a12 12 0 0 0 1.466-.289v.006A12 12 0 0 0 31.622 53H32l-4 4v49h22V31z"></svg:path><svg:path fill="#BDC3C7" d="M76 36H23c-2.891.861-5 3.83-5 7a7 7 0 1 0 14 0c0-1.075-.25-2.09-.683-3h37.365A7 7 0 0 0 68 43a7 7 0 1 0 14 0c0-3.524-2.609-6.513-6-7M25 46a3 3 0 1 1 0-6a3 3 0 0 1 0 6m50 0a3 3 0 1 1 0-6a3 3 0 0 1 0 6"></svg:path><svg:circle cx="41" cy="51" r="2" fill="#AAAFB3"></svg:circle><svg:circle cx="50" cy="51" r="2" fill="#BDC3C7"></svg:circle><svg:circle cx="59" cy="51" r="2" fill="#BDC3C7"></svg:circle><svg:path fill="#AAAFB3" d="M18 43a7 7 0 1 0 14 0c0-1.075-.25-2.09-.683-3H50v-4H23c-2.891.861-5 3.83-5 7m10 0a3 3 0 1 1-6 0a3 3 0 0 1 6 0m20 8a2 2 0 0 0 2 2v-4a2 2 0 0 0-2 2m-2 13v41c0 .348.059.68.142 1H50V60a4 4 0 0 0-4 4"></svg:path><svg:path fill="#BDC3C7" d="M53.857 106a4 4 0 0 0 .143-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.142 1zm13 0a4 4 0 0 0 .143-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.143 1z"></svg:path><svg:path fill="#AAAFB3" d="M40.858 106c.083-.32.142-.652.142-1V64a4 4 0 0 0-8 0v41c0 .348.059.68.142 1z"></svg:path></svg:g>`,
-})
-export class FlatUiArtIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
   readonly height = input("1em")
 }
 
@@ -257,23 +257,6 @@ export class FlatUiCalculatorIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[flatUiCameraIcon],svg[flat-ui-camera-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="#3B97D3" d="M100 85c0 8.284-6.716 15-15 15H15c-8.284 0-15-6.716-15-15V15C0 6.716 6.716 0 15 0h70c8.284 0 15 6.716 15 15z"></svg:path><svg:path fill="#fff" stroke="#2980BA" stroke-miterlimit="10" stroke-width="2" d="M90 15a5 5 0 1 1-10.001-.001A5 5 0 0 1 90 15z"></svg:path><svg:circle cx="49" cy="52" r="37" fill="#324559" opacity=".5"></svg:circle><svg:circle cx="50" cy="50" r="37" fill="#fff"></svg:circle><svg:circle cx="50" cy="50" r="34" fill="#202D3C"></svg:circle><svg:circle cx="50" cy="50" r="22" fill="#35495E"></svg:circle><svg:circle cx="50" cy="50" r="13" fill="#202D3C"></svg:circle><svg:circle cx="50" cy="50" r="4" fill="#C03A2B"></svg:circle><svg:path fill="none" stroke="#35495E" stroke-miterlimit="10" stroke-width="2" d="M50 59a9 9 0 0 1-9-9.001" clip-rule="evenodd"></svg:path><svg:path d="M23.625 23.873c14.498-14.498 38.004-14.498 52.502 0s14.498 38.004 0 52.502" opacity=".15"></svg:path>`,
-})
-export class FlatUiCameraIcon {
-  readonly viewBox = input("0 0 100 100")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[flatUiCalendarIcon],svg[flat-ui-calendar-icon]',
   host: {
     role: 'img',
@@ -284,6 +267,23 @@ export class FlatUiCameraIcon {
   template: `<svg:path fill="#EBEDED" d="M100 95a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h90a5 5 0 0 1 5 5z"></svg:path><svg:path fill="#D4D7DA" d="M95 97H5a5 5 0 0 1-5-5v3a5 5 0 0 0 5 5h90a5 5 0 0 0 5-5v-3a5 5 0 0 1-5 5"></svg:path><svg:path fill="#E64C3C" d="M0 31V5a5 5 0 0 1 5-5h90a5 5 0 0 1 5 5v26z"></svg:path><svg:path fill="#C03A2B" d="M0 28h100v2.75H0z"></svg:path><svg:path fill="#fff" d="m30.344 8.576l2.672 7.855h.032l2.528-7.855h3.536V20H36.76v-8.096h-.032L33.928 20h-1.936l-2.8-8.016h-.032V20h-2.352V8.576zm11.04 4.368q.351-.529.896-.849a3.9 3.9 0 0 1 1.224-.456q.68-.135 1.368-.136q.624 0 1.264.088c.64.088.816.174 1.168.344q.528.256.864.713t.336 1.208v4.304q0 .56.064 1.072q.063.512.224.768h-2.304l-.104-.392l-.056-.408q-.545.56-1.28.784a5.2 5.2 0 0 1-1.504.224a4 4 0 0 1-1.104-.144a2.6 2.6 0 0 1-.896-.448a2.1 2.1 0 0 1-.6-.769q-.216-.463-.216-1.104q0-.704.248-1.16a2.1 2.1 0 0 1 .64-.728q.392-.272.896-.408a7.5 7.5 0 0 1 1.016-.216q.511-.081 1.008-.129q.496-.047.88-.144a1.5 1.5 0 0 0 .608-.28q.223-.183.208-.536q0-.367-.12-.584a.9.9 0 0 0-.32-.336a1.3 1.3 0 0 0-.464-.159a4 4 0 0 0-.568-.04q-.672 0-1.056.287q-.384.288-.448.961h-2.272q.048-.8.4-1.327m4.488 3.208a4 4 0 0 1-.464.12l-.52.079l-.544.08a4 4 0 0 0-.504.128q-.249.08-.432.217c-.183.137-.221.205-.296.344s-.112.315-.112.528q0 .303.112.512c.112.209.176.248.304.328q.192.12.448.168t.528.048q.672 0 1.04-.224q.369-.224.544-.536t.216-.633q.04-.32.04-.512v-.848a1 1 0 0 1-.36.201m6.552-4.424v1.536h.032q.159-.384.432-.712t.624-.56c.351-.233.485-.274.752-.36q.4-.128.832-.128q.223 0 .496.08v2.112l-.384-.057l-.433-.023q-.624 0-1.056.208c-.432.208-.521.328-.696.567q-.264.36-.376.841a4.6 4.6 0 0 0-.111 1.04V20h-2.272v-8.272zm7.727 1.488q-.543 0-.912.248a2 2 0 0 0-.6.64q-.232.393-.328.864a4.5 4.5 0 0 0 0 1.849q.096.464.312.84c.216.376.338.456.584.616q.368.239.896.239q.816 0 1.256-.456t.553-1.224h2.191q-.224 1.648-1.28 2.512q-1.055.864-2.703.864a4.5 4.5 0 0 1-1.704-.312a3.8 3.8 0 0 1-1.32-.872a4 4 0 0 1-.848-1.336a4.6 4.6 0 0 1-.305-1.704q0-.961.28-1.784q.28-.825.824-1.424q.543-.6 1.328-.937q.783-.336 1.792-.336q.735 0 1.416.192q.68.191 1.216.584t.872.976q.336.585.384 1.384h-2.224q-.223-1.423-1.68-1.423m7.504-4.64v4.304h.048q.432-.719 1.104-1.048a3 3 0 0 1 1.312-.328q.912 0 1.496.248q.585.249.92.688q.337.44.472 1.071q.137.633.137 1.4V20h-2.272v-4.672q0-1.024-.319-1.528q-.321-.504-1.137-.504q-.927 0-1.344.552q-.416.552-.416 1.816V20h-2.272V8.576z"></svg:path><svg:path fill="#35495E" d="M26.77 55.045q.735-2.369 2.208-4.14q1.471-1.771 3.703-2.761q2.23-.988 5.129-.988q2.208 0 4.209.689c2.001.689 2.507 1.12 3.519 1.979q1.518 1.288 2.415 3.174q.897 1.887.897 4.232q0 2.438-.782 4.186a11 11 0 0 1-2.07 3.105a17.7 17.7 0 0 1-2.921 2.461a250 250 0 0 1-3.289 2.185a43 43 0 0 0-3.22 2.323a14.6 14.6 0 0 0-2.76 2.897h15.226V80H25.39q0-2.805.805-4.876a13 13 0 0 1 2.185-3.703a19 19 0 0 1 3.243-3.013a144 144 0 0 1 3.933-2.807q1.058-.735 2.254-1.494a15 15 0 0 0 2.185-1.68a9 9 0 0 0 1.656-2.069q.666-1.15.667-2.622q0-2.346-1.357-3.657q-1.358-1.312-3.473-1.312q-1.427.001-2.415.667a5 5 0 0 0-1.587 1.748a8 8 0 0 0-.851 2.393a13.7 13.7 0 0 0-.253 2.599h-6.256q-.093-2.76.644-5.129m23.966 17.503v-5.979L64.721 47.8h5.842v19.366h4.277v5.382h-4.277V80h-6.21v-7.452zm13.478-16.56l-8.325 11.178h8.464V55.988z"></svg:path>`,
 })
 export class FlatUiCalendarIcon {
+  readonly viewBox = input("0 0 100 100")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[flatUiCameraIcon],svg[flat-ui-camera-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="#3B97D3" d="M100 85c0 8.284-6.716 15-15 15H15c-8.284 0-15-6.716-15-15V15C0 6.716 6.716 0 15 0h70c8.284 0 15 6.716 15 15z"></svg:path><svg:path fill="#fff" stroke="#2980BA" stroke-miterlimit="10" stroke-width="2" d="M90 15a5 5 0 1 1-10.001-.001A5 5 0 0 1 90 15z"></svg:path><svg:circle cx="49" cy="52" r="37" fill="#324559" opacity=".5"></svg:circle><svg:circle cx="50" cy="50" r="37" fill="#fff"></svg:circle><svg:circle cx="50" cy="50" r="34" fill="#202D3C"></svg:circle><svg:circle cx="50" cy="50" r="22" fill="#35495E"></svg:circle><svg:circle cx="50" cy="50" r="13" fill="#202D3C"></svg:circle><svg:circle cx="50" cy="50" r="4" fill="#C03A2B"></svg:circle><svg:path fill="none" stroke="#35495E" stroke-miterlimit="10" stroke-width="2" d="M50 59a9 9 0 0 1-9-9.001" clip-rule="evenodd"></svg:path><svg:path d="M23.625 23.873c14.498-14.498 38.004-14.498 52.502 0s14.498 38.004 0 52.502" opacity=".15"></svg:path>`,
+})
+export class FlatUiCameraIcon {
   readonly viewBox = input("0 0 100 100")
   readonly width = input("1em")
   readonly height = input("1em")

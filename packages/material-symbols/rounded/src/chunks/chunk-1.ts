@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsBackgroundReplaceOutlineRoundedIcon],svg[material-symbols-background-replace-outline-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 9.65V7.525L7.525 3H9.65zm0-4.9V3h1.75zm13.175 1.675q-.25-.275-.537-.537t-.588-.463L17.475 3H19.6zM5.5 14.975l1.925-1.925q.175.275.363.5t.412.425q-.7.175-1.412.438t-1.288.562m12-4.925V10q0-.475-.075-.925T17.2 8.2L21 4.4v2.15zM10.9 4.6L12.525 3h2.125l-1.6 1.6q-.275-.05-.525-.075T12 4.5t-.55.025t-.55.075M3 14.625V12.5l3.6-3.6q-.05.275-.075.55T6.5 10t.025.525t.075.5zM20.725 16.7q-.2-.3-.462-.575t-.563-.5l1.3-1.3v2.125zm-2.9-2.05q-.175-.075-.35-.138t-.35-.112q-.225-.075-.437-.15t-.438-.125L21 9.35v2.15zM12 14q-1.65 0-2.825-1.175T8 10t1.175-2.825T12 6t2.825 1.175T16 10t-1.175 2.825T12 14m0-2q.825 0 1.413-.588T14 10t-.587-1.412T12 8t-1.412.588T10 10t.588 1.413T12 12m-8 8v-.775q0-.85.425-1.575t1.175-1.1q1.275-.65 2.888-1.1T12 15t3.513.45t2.887 1.1q.75.375 1.175 1.1T20 19.225V20q0 .425-.287.713T19 21H5q-.425 0-.712-.288T4 20m2.025-1h11.95q-.05-.225-.175-.387t-.325-.263q-.9-.45-2.287-.9T12 17t-3.187.45t-2.288.9q-.2.1-.325.275T6.025 19M12 10"></svg:path>`,
+})
+export class MaterialSymbolsBackgroundReplaceOutlineRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsBackgroundReplaceRoundedIcon],svg[material-symbols-background-replace-rounded-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsChromecast2RoundedIcon {
   template: `<svg:path fill="currentColor" d="M21 14.5q-.425 0-.712-.288T20 13.5v-3q0-.425.288-.712T21 9.5h1q.425 0 .713.288T23 10.5v3q0 .425-.288.713T22 14.5zM17 16h-6q-.4 0-.812.113T9.15 16.5q-.975.425-1.675.588T6 17.25q-1.95 0-3.475-1.15T1 13.5v-3q0-1.475 1.525-2.613T6 6.75q.775 0 1.475.163T9.15 7.5q.625.275 1.038.388T11 8h6q.825 0 1.413.588T19 10v4q0 .825-.587 1.413T17 16m-11-.75q.55 0 1.075-.125t1.275-.45q.875-.375 1.475-.525T11 14h6v-4h-6q-.575 0-1.175-.15T8.35 9.325Q7.6 9 7.075 8.875T6 8.75q-1.175 0-2.088.538T3 10.5v1h.5q.2 0 .35.15T4 12t-.15.35t-.35.15H3v1q0 .675.913 1.213T6 15.25M3 12"></svg:path>`,
 })
 export class MaterialSymbolsChromecastDeviceOutlineRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsChromecastDeviceRoundedIcon],svg[material-symbols-chromecast-device-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M21 14.5q-.425 0-.712-.288T20 13.5v-3q0-.425.288-.712T21 9.5h1q.425 0 .713.288T23 10.5v3q0 .425-.288.713T22 14.5zM17 16h-6q-.4 0-.812.113T9.15 16.5q-.975.425-1.675.588T6 17.25q-1.95 0-3.475-1.15T1 13.5v-3q0-1.475 1.525-2.613T6 6.75q.775 0 1.475.163T9.15 7.5q.625.275 1.038.388T11 8h6q.825 0 1.413.588T19 10v4q0 .825-.587 1.413T17 16M2.5 12.5h1q.2 0 .35-.15T4 12t-.15-.35t-.35-.15h-1q-.2 0-.35.15T2 12t.15.35t.35.15"></svg:path>`,
-})
-export class MaterialSymbolsChromecastDeviceRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

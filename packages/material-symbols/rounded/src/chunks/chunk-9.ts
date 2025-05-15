@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsSubdirectoryArrowLeftRoundedIcon],svg[material-symbols-subdirectory-arrow-left-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m7.825 16l2.875 2.875q.3.3.313.7t-.288.7t-.712.3t-.713-.3L4.7 15.7q-.15-.15-.213-.325T4.426 15t.063-.375t.212-.325l4.625-4.625q.3-.3.7-.287t.7.312q.275.3.287.7t-.287.7l-2.9 2.9H17V5q0-.425.288-.712T18 4t.713.288T19 5v9q0 .825-.587 1.413T17 16z"></svg:path>`,
+})
+export class MaterialSymbolsSubdirectoryArrowLeftRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsSubdirectoryArrowRightRoundedIcon],svg[material-symbols-subdirectory-arrow-right-rounded-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsVibrationOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="M1 9q.425 0 .713.288T2 10v4q0 .425-.288.713T1 15t-.712-.288T0 14v-4q0-.425.288-.712T1 9m3-2q.425 0 .713.288T5 8v8q0 .425-.288.713T4 17t-.712-.288T3 16V8q0-.425.288-.712T4 7m19 2q.425 0 .713.288T24 10v4q0 .425-.288.713T23 15t-.712-.288T22 14v-4q0-.425.288-.712T23 9m-3-2q.425 0 .713.288T21 8v8q0 .425-.288.713T20 17t-.712-.288T19 16V8q0-.425.288-.712T20 7M8 21q-.825 0-1.412-.587T6 19V5q0-.825.588-1.412T8 3h8q.825 0 1.413.588T18 5v14q0 .825-.587 1.413T16 21z"></svg:path>`,
 })
 export class MaterialSymbolsVibrationRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsVideoCallOutlineRoundedIcon],svg[material-symbols-video-call-outline-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M9 13v2q0 .425.288.713T10 16t.713-.288T11 15v-2h2q.425 0 .713-.288T14 12t-.288-.712T13 11h-2V9q0-.425-.288-.712T10 8t-.712.288T9 9v2H7q-.425 0-.712.288T6 12t.288.713T7 13zm-5 7q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h12q.825 0 1.413.588T18 6v4.5l3.15-3.15q.25-.25.55-.125t.3.475v8.6q0 .35-.3.475t-.55-.125L18 13.5V18q0 .825-.587 1.413T16 20zm0-2h12V6H4zm0 0V6z"></svg:path>`,
-})
-export class MaterialSymbolsVideoCallOutlineRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentBuildingBank48FilledIcon],svg[fluent-building-bank-48-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M25.346 4.447a2.25 2.25 0 0 0-2.692 0L6.71 16.349c-1.35 1.007-.637 3.152 1.046 3.152h32.489c1.684 0 2.396-2.145 1.047-3.152zM24 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4M6 38.251A5.25 5.25 0 0 1 11.25 33h25.5c2.9 0 5.25 2.35 5.25 5.25v1.5c0 .69-.56 1.249-1.25 1.249H7.25A1.25 1.25 0 0 1 6 39.75zM14 31h-4v-9.5h4zm4-9.5V31h4v-9.5zm8 0V31h4v-9.5zm8 0V31h4v-9.5z"></svg:path>`,
+})
+export class FluentBuildingBank48FilledIcon {
+  readonly viewBox = input("0 0 48 48")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentBuildingBank48RegularIcon],svg[fluent-building-bank-48-regular-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class FluentCalendarShield48RegularIcon {
   template: `<svg:path fill="currentColor" d="m10.878.282l.348 1.071a2.2 2.2 0 0 0 1.398 1.397l1.072.348l.021.006a.423.423 0 0 1 0 .798l-1.071.348a2.2 2.2 0 0 0-1.399 1.397l-.348 1.07a.423.423 0 0 1-.798 0l-.348-1.07a2.2 2.2 0 0 0-1.399-1.403l-1.072-.348a.423.423 0 0 1 0-.798l1.072-.348a2.2 2.2 0 0 0 1.377-1.397l.348-1.07a.423.423 0 0 1 .799 0m4.905 7.931l-.765-.248a1.58 1.58 0 0 1-1-.999l-.248-.764a.302.302 0 0 0-.57 0l-.25.764a1.58 1.58 0 0 1-.983.999l-.765.248a.303.303 0 0 0 0 .57l.765.249a1.58 1.58 0 0 1 1 1.002l.248.764a.302.302 0 0 0 .57 0l.249-.764a1.58 1.58 0 0 1 .999-.999l.765-.248a.303.303 0 0 0 0-.57zm-3.027 3.557c.219.149.477.229.746.23c.159 0 .314-.018.46-.066A2.5 2.5 0 0 1 11.5 14h-7A2.5 2.5 0 0 1 2 11.5V6h6.806l.347 1.052c.09.25.25.48.52.691q.21.15.45.21c-.08.17-.12.361-.12.551c0 .27.08.531.24.752c.161.22.381.38.651.48l.761.25c.08.03.16.08.22.14c.07.061.11.141.14.221l.26.802c.1.25.26.46.481.62M7.43 5l-.46-.152c-.3-.1-.54-.29-.71-.53S6 3.796 6 3.495s.09-.58.26-.821c.17-.24.41-.42.69-.521L7.43 2H4.5A2.5 2.5 0 0 0 2 4.5V5z"></svg:path>`,
 })
 export class FluentCalendarSparkle16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentCalendarSparkle16RegularIcon],svg[fluent-calendar-sparkle-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="m10.878.282l.348 1.071a2.2 2.2 0 0 0 1.398 1.397l1.072.348l.021.006a.423.423 0 0 1 0 .798l-1.071.348a2.2 2.2 0 0 0-1.399 1.397l-.348 1.07a.423.423 0 0 1-.798 0l-.348-1.07a2.2 2.2 0 0 0-1.399-1.403l-1.072-.348a.423.423 0 0 1 0-.798l1.072-.348a2.2 2.2 0 0 0 1.377-1.397l.348-1.07a.423.423 0 0 1 .799 0m4.905 7.931l-.765-.248a1.58 1.58 0 0 1-1-.999l-.248-.764a.302.302 0 0 0-.57 0l-.25.764a1.58 1.58 0 0 1-.983.999l-.765.248a.303.303 0 0 0 0 .57l.765.249a1.58 1.58 0 0 1 1 1.002l.248.764a.302.302 0 0 0 .57 0l.249-.764a1.58 1.58 0 0 1 .999-.999l.765-.248a.303.303 0 0 0 0-.57zm-2.831 3.667c.17.078.358.12.55.12c.159 0 .314-.018.46-.066A2.5 2.5 0 0 1 11.5 14h-7A2.5 2.5 0 0 1 2 11.5v-7A2.5 2.5 0 0 1 4.5 2h2.93l-.48.154A1.43 1.43 0 0 0 6.089 3H4.5A1.5 1.5 0 0 0 3 4.5V5h4.43l.602.199c.15.05.29.13.47.29c.11.11.2.24.29.471l.014.04H3v5.5A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.451-1.12"></svg:path>`,
-})
-export class FluentCalendarSparkle16RegularIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

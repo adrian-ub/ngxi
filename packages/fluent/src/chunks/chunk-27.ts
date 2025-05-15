@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentSearchSparkle16RegularIcon],svg[fluent-search-sparkle-16-regular-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="m10.878.282l.348 1.071a2.2 2.2 0 0 0 1.398 1.397l1.072.348l.021.006a.423.423 0 0 1 0 .798l-1.071.348a2.2 2.2 0 0 0-1.399 1.397l-.348 1.07a.423.423 0 0 1-.798 0l-.348-1.07a2.2 2.2 0 0 0-1.399-1.403l-1.072-.348a.423.423 0 0 1 0-.798l1.072-.348a2.2 2.2 0 0 0 1.377-1.397l.348-1.07a.423.423 0 0 1 .799 0m4.905 7.931l-.765-.248a1.58 1.58 0 0 1-1-.999l-.248-.764a.302.302 0 0 0-.57 0l-.25.764a1.58 1.58 0 0 1-.983.999l-.765.248a.303.303 0 0 0 0 .57l.765.249a1.58 1.58 0 0 1 1 1.002l.248.764a.302.302 0 0 0 .57 0l.249-.764a1.58 1.58 0 0 1 .999-.999l.765-.248a.303.303 0 0 0 0-.57zM6.5 1c.738 0 1.442.145 2.085.409q-.044.054-.093.104c-.13.13-.29.24-.45.29l-.801.258a4.5 4.5 0 1 0 2.918 7.06q.037.069.085.135c.16.22.38.38.65.48l.043.014a6 6 0 0 1-.21.27l3.127 3.126a.5.5 0 0 1-.708.708l-3.126-3.127A5.5 5.5 0 1 1 6.5 1"></svg:path>`,
+})
+export class FluentSearchSparkle16RegularIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentSearchSparkle20FilledIcon],svg[fluent-search-sparkle-20-filled-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class FluentShoppingBag28RegularIcon {
   template: `<svg:path fill="currentColor" d="M9 6.5a4.5 4.5 0 0 1 7-3.743A4.5 4.5 0 0 1 23 6.5V10h2a2 2 0 0 1 2 2v14.5a3.5 3.5 0 1 1-7 0V10h.998V6.5A2.5 2.5 0 0 0 17.4 4.254c.382.66.6 1.428.6 2.246v20c0 1.33.472 2.55 1.257 3.5H9.5A4.5 4.5 0 0 1 5 25.5V12a2 2 0 0 1 2-2h2zm2 3.5h5V6.5a2.5 2.5 0 0 0-5 0z"></svg:path>`,
 })
 export class FluentShoppingBag32FilledIcon {
-  readonly viewBox = input("0 0 32 32")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentShoppingBag32RegularIcon],svg[fluent-shopping-bag-32-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M13.5 2A4.5 4.5 0 0 0 9 6.5V10H7a2 2 0 0 0-2 2v13.5A4.5 4.5 0 0 0 9.5 30h13a4.5 4.5 0 0 0 4.5-4.5V12a2 2 0 0 0-2-2h-2.002V6.5A4.5 4.5 0 0 0 16 2.757A4.5 4.5 0 0 0 13.5 2M25 12v13.5a2.5 2.5 0 0 1-5 0V12zm-6.242 16H9.5A2.5 2.5 0 0 1 7 25.5V12h11v13.5c0 .925.28 1.785.758 2.5m2.24-18H18V6.5a4.5 4.5 0 0 0-.6-2.246A2.5 2.5 0 0 1 20.998 6.5zM11 6.5a2.5 2.5 0 0 1 5 0V10h-5z"></svg:path>`,
-})
-export class FluentShoppingBag32RegularIcon {
   readonly viewBox = input("0 0 32 32")
   readonly width = input("1em")
   readonly height = input("1em")

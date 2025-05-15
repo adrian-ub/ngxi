@@ -2,16 +2,16 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[iconoirAccessibilityIcon],svg[iconoir-accessibility-icon]',
+  selector: 'svg[iconoirAccessibilityTechIcon],svg[iconoir-accessibility-tech-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10M7 9l5 1m5-1l-5 1m0 0v3m0 0l-2 5m2-5l2 5"></svg:path><svg:path fill="currentColor" d="M12 7a.5.5 0 1 1 0-1a.5.5 0 0 1 0 1"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:path d="M3 19V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m12.5 12.16l4-.16l-.5 4.5M11.833 12L13.5 9.538L10.833 8L9.5 9.846"></svg:path><svg:path fill="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M15.5 7.5a.5.5 0 1 1 0-1a.5.5 0 0 1 0 1"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M10.5 18a3 3 0 1 1 0-6a3 3 0 0 1 0 6"></svg:path></svg:g>`,
 })
-export class IconoirAccessibilityIcon {
+export class IconoirAccessibilityTechIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -36,23 +36,6 @@ export class IconoirAccessibilitySignIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconoirAccessibilityTechIcon],svg[iconoir-accessibility-tech-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-width="1.5"><svg:path d="M3 19V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="m12.5 12.16l4-.16l-.5 4.5M11.833 12L13.5 9.538L10.833 8L9.5 9.846"></svg:path><svg:path fill="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M15.5 7.5a.5.5 0 1 1 0-1a.5.5 0 0 1 0 1"></svg:path><svg:path stroke-linecap="round" stroke-linejoin="round" d="M10.5 18a3 3 0 1 1 0-6a3 3 0 0 1 0 6"></svg:path></svg:g>`,
-})
-export class IconoirAccessibilityTechIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[iconoirActivityIcon],svg[iconoir-activity-icon]',
   host: {
     role: 'img',
@@ -63,23 +46,6 @@ export class IconoirAccessibilityTechIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12h3l3-9l6 18l3-9h3"></svg:path>`,
 })
 export class IconoirActivityIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[iconoirAdobeIllustratorIcon],svg[iconoir-adobe-illustrator-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4m-5 5v4m0-7v.01"></svg:path><svg:path d="m7 16l1.125-3M13 16l-1.125-3m-3.75 0L10 8l1.875 5m-3.75 0h3.75"></svg:path></svg:g>`,
-})
-export class IconoirAdobeIllustratorIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -104,23 +70,6 @@ export class IconoirAdobeAfterEffectsIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconoirAdobeIndesignIcon],svg[iconoir-adobe-indesign-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4M8.5 8v8"></svg:path><svg:path d="M15.5 12v3.4a.6.6 0 0 1-.6.6h-1.4a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2zm0 0V9"></svg:path></svg:g>`,
-})
-export class IconoirAdobeIndesignIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[iconoirAdobeAfterEffectsSolidIcon],svg[iconoir-adobe-after-effects-solid-icon]',
   host: {
     role: 'img',
@@ -138,16 +87,33 @@ export class IconoirAdobeAfterEffectsSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconoirAdobeIllustratorSolidIcon],svg[iconoir-adobe-illustrator-solid-icon]',
+  selector: 'svg[iconoirAccessibilityIcon],svg[iconoir-accessibility-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M17 21.75A4.75 4.75 0 0 0 21.75 17V7A4.75 4.75 0 0 0 17 2.25H7A4.75 4.75 0 0 0 2.25 7v10A4.75 4.75 0 0 0 7 21.75zM15.25 16a.75.75 0 0 0 1.5 0v-4a.75.75 0 0 0-1.5 0zM16 9.76a.75.75 0 0 1-.75-.75V9a.75.75 0 0 1 1.5 0v.01a.75.75 0 0 1-.75.75m-9.702 5.977a.75.75 0 1 0 1.404.526l.943-2.513h2.71l.943 2.513a.75.75 0 1 0 1.404-.527l-3-8a.75.75 0 0 0-1.404 0zM10 10.136l.793 2.114H9.207z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10M7 9l5 1m5-1l-5 1m0 0v3m0 0l-2 5m2-5l2 5"></svg:path><svg:path fill="currentColor" d="M12 7a.5.5 0 1 1 0-1a.5.5 0 0 1 0 1"></svg:path></svg:g>`,
 })
-export class IconoirAdobeIllustratorSolidIcon {
+export class IconoirAccessibilityIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconoirAdobeIllustratorIcon],svg[iconoir-adobe-illustrator-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4m-5 5v4m0-7v.01"></svg:path><svg:path d="m7 16l1.125-3M13 16l-1.125-3m-3.75 0L10 8l1.875 5m-3.75 0h3.75"></svg:path></svg:g>`,
+})
+export class IconoirAdobeIllustratorIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,6 +138,23 @@ export class IconoirAdobeIndesignSolidIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[iconoirAdobeIndesignIcon],svg[iconoir-adobe-indesign-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4M8.5 8v8"></svg:path><svg:path d="M15.5 12v3.4a.6.6 0 0 1-.6.6h-1.4a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2zm0 0V9"></svg:path></svg:g>`,
+})
+export class IconoirAdobeIndesignIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconoirAdobeLightroomIcon],svg[iconoir-adobe-lightroom-icon]',
   host: {
     role: 'img',
@@ -189,16 +172,16 @@ export class IconoirAdobeLightroomIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconoirAdobePhotoshopIcon],svg[iconoir-adobe-photoshop-icon]',
+  selector: 'svg[iconoirAdobeIllustratorSolidIcon],svg[iconoir-adobe-illustrator-solid-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4"></svg:path><svg:path d="M7 16v-4m0 0V8h2a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2zm10-1c-.306-.613-.933-1-1.618-1H15a1.5 1.5 0 0 0-1.5 1.5v0A1.5 1.5 0 0 0 15 13h.5a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1-1.5 1.5h-.382a1.81 1.81 0 0 1-1.618-1v0"></svg:path></svg:g>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M17 21.75A4.75 4.75 0 0 0 21.75 17V7A4.75 4.75 0 0 0 17 2.25H7A4.75 4.75 0 0 0 2.25 7v10A4.75 4.75 0 0 0 7 21.75zM15.25 16a.75.75 0 0 0 1.5 0v-4a.75.75 0 0 0-1.5 0zM16 9.76a.75.75 0 0 1-.75-.75V9a.75.75 0 0 1 1.5 0v.01a.75.75 0 0 1-.75.75m-9.702 5.977a.75.75 0 1 0 1.404.526l.943-2.513h2.71l.943 2.513a.75.75 0 1 0 1.404-.527l-3-8a.75.75 0 0 0-1.404 0zM10 10.136l.793 2.114H9.207z" clip-rule="evenodd"></svg:path>`,
 })
-export class IconoirAdobePhotoshopIcon {
+export class IconoirAdobeIllustratorSolidIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -223,16 +206,16 @@ export class IconoirAdobeLightroomSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconoirAdobeXdIcon],svg[iconoir-adobe-xd-icon]',
+  selector: 'svg[iconoirAdobePhotoshopIcon],svg[iconoir-adobe-photoshop-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4M7 8l4 8m-4 0l4-8"></svg:path><svg:path d="M17 12v3.4a.6.6 0 0 1-.6.6H15a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2zm0 0V9"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4"></svg:path><svg:path d="M7 16v-4m0 0V8h2a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2zm10-1c-.306-.613-.933-1-1.618-1H15a1.5 1.5 0 0 0-1.5 1.5v0A1.5 1.5 0 0 0 15 13h.5a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1-1.5 1.5h-.382a1.81 1.81 0 0 1-1.618-1v0"></svg:path></svg:g>`,
 })
-export class IconoirAdobeXdIcon {
+export class IconoirAdobePhotoshopIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -257,6 +240,23 @@ export class IconoirAdobePhotoshopSolidIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[iconoirAdobeXdIcon],svg[iconoir-adobe-xd-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M21 7v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4M7 8l4 8m-4 0l4-8"></svg:path><svg:path d="M17 12v3.4a.6.6 0 0 1-.6.6H15a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2zm0 0V9"></svg:path></svg:g>`,
+})
+export class IconoirAdobeXdIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[iconoirAdobeXdSolidIcon],svg[iconoir-adobe-xd-solid-icon]',
   host: {
     role: 'img',
@@ -274,23 +274,6 @@ export class IconoirAdobeXdSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[iconoirAfricanTreeIcon],svg[iconoir-african-tree-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 22V12m0-4v4m0 0l3-3m-2.576 9.576l6.169-6.169a5.502 5.502 0 0 0-.513-8.234a9.904 9.904 0 0 0-12.16 0a5.502 5.502 0 0 0-.513 8.234l6.169 6.169a.6.6 0 0 0 .848 0"></svg:path>`,
-})
-export class IconoirAfricanTreeIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[iconoirAgileIcon],svg[iconoir-agile-icon]',
   host: {
     role: 'img',
@@ -301,6 +284,23 @@ export class IconoirAfricanTreeIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><svg:path d="M17.5 19H22m0 0l-2.5-2.5M22 19l-2.5 2.5M12 2L9.5 4.5L12 7"></svg:path><svg:path d="M10.5 4.5a7.5 7.5 0 0 1 0 15H2"></svg:path><svg:path d="M6.756 5.5A7.5 7.5 0 0 0 3 12c0 1.688.558 3.246 1.5 4.5"></svg:path></svg:g>`,
 })
 export class IconoirAgileIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[iconoirAfricanTreeIcon],svg[iconoir-african-tree-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 22V12m0-4v4m0 0l3-3m-2.576 9.576l6.169-6.169a5.502 5.502 0 0 0-.513-8.234a9.904 9.904 0 0 0-12.16 0a5.502 5.502 0 0 0-.513 8.234l6.169 6.169a.6.6 0 0 0 .848 0"></svg:path>`,
+})
+export class IconoirAfricanTreeIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

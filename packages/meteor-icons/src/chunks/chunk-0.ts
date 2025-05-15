@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[meteorIconsAdobeIcon],svg[meteor-icons-adobe-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 18a2 2 0 0 0 1.7 3h9.7l-2.7-4.5h-2L12 11l6 10h2.3a2 2 0 0 0 1.7-3L13.8 4a2 2 0 0 0-3.6 0Z"></svg:path>`,
-})
-export class MeteorIconsAdobeIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[meteorIconsAirplayIcon],svg[meteor-icons-airplay-icon]',
   host: {
     role: 'img',
@@ -29,23 +12,6 @@ export class MeteorIconsAdobeIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 14l5 6H7Zm-7 3H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></svg:path>`,
 })
 export class MeteorIconsAirplayIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[meteorIconsAlarmClockIcon],svg[meteor-icons-alarm-clock-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="12" r="10"></svg:circle><svg:path d="M12 7v5l3 3M1 4l3-3m16 0l3 3"></svg:path></svg:g>`,
-})
-export class MeteorIconsAlarmClockIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,16 +36,33 @@ export class MeteorIconsAlarmExclamationIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[meteorIconsAlarmPlusIcon],svg[meteor-icons-alarm-plus-icon]',
+  selector: 'svg[meteorIconsAlarmClockIcon],svg[meteor-icons-alarm-clock-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="12" r="10"></svg:circle><svg:path d="m1 4l3-3m16 0l3 3M9 12h6m-3-3v6"></svg:path></svg:g>`,
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="12" r="10"></svg:circle><svg:path d="M12 7v5l3 3M1 4l3-3m16 0l3 3"></svg:path></svg:g>`,
 })
-export class MeteorIconsAlarmPlusIcon {
+export class MeteorIconsAlarmClockIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[meteorIconsAdobeIcon],svg[meteor-icons-adobe-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 18a2 2 0 0 0 1.7 3h9.7l-2.7-4.5h-2L12 11l6 10h2.3a2 2 0 0 0 1.7-3L13.8 4a2 2 0 0 0-3.6 0Z"></svg:path>`,
+})
+export class MeteorIconsAdobeIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -97,6 +80,23 @@ export class MeteorIconsAlarmPlusIcon {
   template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="12" r="10"></svg:circle><svg:path d="m1 4l3-3m16 0l3 3M9 12h6"></svg:path></svg:g>`,
 })
 export class MeteorIconsAlarmMinusIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[meteorIconsAlarmPlusIcon],svg[meteor-icons-alarm-plus-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><svg:circle cx="12" cy="12" r="10"></svg:circle><svg:path d="m1 4l3-3m16 0l3 3M9 12h6m-3-3v6"></svg:path></svg:g>`,
+})
+export class MeteorIconsAlarmPlusIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -155,23 +155,6 @@ export class MeteorIconsAlgoliaIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[meteorIconsAlignCenterIcon],svg[meteor-icons-align-center-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h8M3 12h18M8 18h8"></svg:path>`,
-})
-export class MeteorIconsAlignCenterIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[meteorIconsAlienIcon],svg[meteor-icons-alien-icon]',
   host: {
     role: 'img',
@@ -182,6 +165,23 @@ export class MeteorIconsAlignCenterIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 14C24-2 0-2 4 14q2 6 8 8q6-2 8-8M8 11l2 2m6-2l-2 2"></svg:path>`,
 })
 export class MeteorIconsAlienIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[meteorIconsAlignCenterIcon],svg[meteor-icons-align-center-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h8M3 12h18M8 18h8"></svg:path>`,
+})
+export class MeteorIconsAlignCenterIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -223,6 +223,23 @@ export class MeteorIconsAlignRightIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[meteorIconsAmazonIcon],svg[meteor-icons-amazon-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9q8-2 3 7M2 11q8 5 16 1.5"></svg:path>`,
+})
+export class MeteorIconsAmazonIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[meteorIconsAnchorIcon],svg[meteor-icons-anchor-icon]',
   host: {
     role: 'img',
@@ -257,16 +274,16 @@ export class MeteorIconsAndroidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[meteorIconsAmazonIcon],svg[meteor-icons-amazon-icon]',
+  selector: 'svg[meteorIconsAngleLeftIcon],svg[meteor-icons-angle-left-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9q8-2 3 7M2 11q8 5 16 1.5"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 18l-6-6l6-6"></svg:path>`,
 })
-export class MeteorIconsAmazonIcon {
+export class MeteorIconsAngleLeftIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -291,16 +308,16 @@ export class MeteorIconsAngleDownIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[meteorIconsAngleLeftIcon],svg[meteor-icons-angle-left-icon]',
+  selector: 'svg[meteorIconsAngleRightIcon],svg[meteor-icons-angle-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 18l-6-6l6-6"></svg:path>`,
+  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18l6-6l-6-6"></svg:path>`,
 })
-export class MeteorIconsAngleLeftIcon {
+export class MeteorIconsAngleRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -5435,23 +5452,6 @@ export class MeteorIconsXmarkIcon {
   template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1.5 17q-1-5.5 0-10Q1.9 4.8 4 4.5q8-1 16 0q2.1.3 2.5 2.5q1 4.5 0 10q-.4 2.2-2.5 2.5q-8 1-16 0q-2.1-.3-2.5-2.5m8-8.5v7l6-3.5Z"></svg:path>`,
 })
 export class MeteorIconsYoutubeIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[meteorIconsAngleRightIcon],svg[meteor-icons-angle-right-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18l6-6l-6-6"></svg:path>`,
-})
-export class MeteorIconsAngleRightIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

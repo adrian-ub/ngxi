@@ -19,33 +19,16 @@ export class PajamasAccountIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pajamasAbuseIcon],svg[pajamas-abuse-icon]',
+  selector: 'svg[pajamasAccessibilityIcon],svg[pajamas-accessibility-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M5.308 1.5L1.5 5.308v5.384L5.308 14.5h5.384l3.808-3.808V5.308L10.692 1.5zM11.314 0H4.686L0 4.686v6.628L4.686 16h6.628L16 11.314V4.686zM9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-.25-6.25a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 1.5 0z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M13.434 4.187a.874.874 0 0 1-.67 1.04l-2.718.587a1 1 0 0 0-.79.977v.88a8 8 0 0 0 .507 2.8l1.624 4.349a.874.874 0 1 1-1.638.611l-1.554-4.16a.5.5 0 0 0-.937 0l-1.554 4.16a.874.874 0 0 1-1.638-.611l1.625-4.35a8 8 0 0 0 .506-2.8v-.879a1 1 0 0 0-.789-.977L2.69 5.226a.874.874 0 0 1 .37-1.709l3.822.826a4 4 0 0 0 1.69 0l3.822-.826a.874.874 0 0 1 1.04.67M7.684 0a1.749 1.749 0 1 1 0 3.497a1.749 1.749 0 0 1 0-3.497"></svg:path>`,
 })
-export class PajamasAbuseIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[pajamasApiIcon],svg[pajamas-api-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11.876.165a.25.25 0 0 1 .296-.146l1.022.279a.25.25 0 0 1 .181.276l-.127.893c.551.317.995.774 1.299 1.31l.895-.12a.25.25 0 0 1 .275.185l.27 1.024a.25.25 0 0 1-.15.295l-.836.336a3.5 3.5 0 0 1-.485 1.781l.55.715a.25.25 0 0 1-.022.33l-.751.745a.25.25 0 0 1-.33.02l-.711-.558a3.5 3.5 0 0 1-1.784.47l-.344.835a.25.25 0 0 1-.296.146l-1.022-.278a.25.25 0 0 1-.182-.277l.128-.893a3.5 3.5 0 0 1-1.299-1.31l-.895.12a.25.25 0 0 1-.275-.185l-.27-1.024a.25.25 0 0 1 .15-.295l.836-.336a3.5 3.5 0 0 1 .485-1.781l-.55-.715a.25.25 0 0 1 .022-.33l.751-.745a.25.25 0 0 1 .33-.02l.711.558A3.5 3.5 0 0 1 11.532 1zm1.554 4.86a2 2 0 1 1-3.86-1.05a2 2 0 0 1 3.86 1.05M5.777 6.22A.25.25 0 0 0 5.53 6H4.471a.25.25 0 0 0-.248.219l-.11.88a4 4 0 0 0-1.244.515l-.7-.544a.25.25 0 0 0-.33.02l-.749.749a.25.25 0 0 0-.02.33l.544.7a4 4 0 0 0-.515 1.244l-.88.11A.25.25 0 0 0 0 10.47v1.058a.25.25 0 0 0 .219.248l.88.11c.101.448.278.867.515 1.244l-.544.7a.25.25 0 0 0 .02.33l.749.749a.25.25 0 0 0 .33.02l.7-.544c.377.237.796.414 1.244.515l.11.88a.25.25 0 0 0 .247.22h1.058a.25.25 0 0 0 .248-.219l.11-.88a4 4 0 0 0 1.244-.515l.7.544a.25.25 0 0 0 .33-.02l.749-.749a.25.25 0 0 0 .02-.33l-.544-.7c.237-.377.414-.796.515-1.244l.88-.11a.25.25 0 0 0 .22-.247v-1.058a.25.25 0 0 0-.219-.248l-.88-.11a4 4 0 0 0-.515-1.244l.544-.7a.25.25 0 0 0-.02-.33l-.75-.75a.25.25 0 0 0-.33-.02l-.7.544A4 4 0 0 0 5.887 7.1zM7.5 11a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0" clip-rule="evenodd"></svg:path>`,
-})
-export class PajamasApiIcon {
+export class PajamasAccessibilityIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -70,16 +53,33 @@ export class PajamasAdminIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pajamasAccessibilityIcon],svg[pajamas-accessibility-icon]',
+  selector: 'svg[pajamasApiIcon],svg[pajamas-api-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M13.434 4.187a.874.874 0 0 1-.67 1.04l-2.718.587a1 1 0 0 0-.79.977v.88a8 8 0 0 0 .507 2.8l1.624 4.349a.874.874 0 1 1-1.638.611l-1.554-4.16a.5.5 0 0 0-.937 0l-1.554 4.16a.874.874 0 0 1-1.638-.611l1.625-4.35a8 8 0 0 0 .506-2.8v-.879a1 1 0 0 0-.789-.977L2.69 5.226a.874.874 0 0 1 .37-1.709l3.822.826a4 4 0 0 0 1.69 0l3.822-.826a.874.874 0 0 1 1.04.67M7.684 0a1.749 1.749 0 1 1 0 3.497a1.749 1.749 0 0 1 0-3.497"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M11.876.165a.25.25 0 0 1 .296-.146l1.022.279a.25.25 0 0 1 .181.276l-.127.893c.551.317.995.774 1.299 1.31l.895-.12a.25.25 0 0 1 .275.185l.27 1.024a.25.25 0 0 1-.15.295l-.836.336a3.5 3.5 0 0 1-.485 1.781l.55.715a.25.25 0 0 1-.022.33l-.751.745a.25.25 0 0 1-.33.02l-.711-.558a3.5 3.5 0 0 1-1.784.47l-.344.835a.25.25 0 0 1-.296.146l-1.022-.278a.25.25 0 0 1-.182-.277l.128-.893a3.5 3.5 0 0 1-1.299-1.31l-.895.12a.25.25 0 0 1-.275-.185l-.27-1.024a.25.25 0 0 1 .15-.295l.836-.336a3.5 3.5 0 0 1 .485-1.781l-.55-.715a.25.25 0 0 1 .022-.33l.751-.745a.25.25 0 0 1 .33-.02l.711.558A3.5 3.5 0 0 1 11.532 1zm1.554 4.86a2 2 0 1 1-3.86-1.05a2 2 0 0 1 3.86 1.05M5.777 6.22A.25.25 0 0 0 5.53 6H4.471a.25.25 0 0 0-.248.219l-.11.88a4 4 0 0 0-1.244.515l-.7-.544a.25.25 0 0 0-.33.02l-.749.749a.25.25 0 0 0-.02.33l.544.7a4 4 0 0 0-.515 1.244l-.88.11A.25.25 0 0 0 0 10.47v1.058a.25.25 0 0 0 .219.248l.88.11c.101.448.278.867.515 1.244l-.544.7a.25.25 0 0 0 .02.33l.749.749a.25.25 0 0 0 .33.02l.7-.544c.377.237.796.414 1.244.515l.11.88a.25.25 0 0 0 .247.22h1.058a.25.25 0 0 0 .248-.219l.11-.88a4 4 0 0 0 1.244-.515l.7.544a.25.25 0 0 0 .33-.02l.749-.749a.25.25 0 0 0 .02-.33l-.544-.7c.237-.377.414-.796.515-1.244l.88-.11a.25.25 0 0 0 .22-.247v-1.058a.25.25 0 0 0-.219-.248l-.88-.11a4 4 0 0 0-.515-1.244l.544-.7a.25.25 0 0 0-.02-.33l-.75-.75a.25.25 0 0 0-.33-.02l-.7.544A4 4 0 0 0 5.887 7.1zM7.5 11a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0" clip-rule="evenodd"></svg:path>`,
 })
-export class PajamasAccessibilityIcon {
+export class PajamasApiIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasAbuseIcon],svg[pajamas-abuse-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M5.308 1.5L1.5 5.308v5.384L5.308 14.5h5.384l3.808-3.808V5.308L10.692 1.5zM11.314 0H4.686L0 4.686v6.628L4.686 16h6.628L16 11.314V4.686zM9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-.25-6.25a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 1.5 0z" clip-rule="evenodd"></svg:path>`,
+})
+export class PajamasAbuseIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -155,23 +155,6 @@ export class PajamasApprovalIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pajamasArchiveIcon],svg[pajamas-archive-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1.5 4.5v-2h13v2zM1 6a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm1.5 0v7.5h11V6zM4 8.75A.75.75 0 0 1 4.75 8h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 4 8.75" clip-rule="evenodd"></svg:path>`,
-})
-export class PajamasArchiveIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[pajamasArrowDownIcon],svg[pajamas-arrow-down-icon]',
   host: {
     role: 'img',
@@ -206,16 +189,16 @@ export class PajamasArrowLeftIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pajamasArrowRightIcon],svg[pajamas-arrow-right-icon]',
+  selector: 'svg[pajamasArchiveIcon],svg[pajamas-archive-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10.159 10.72a.75.75 0 1 0 1.06 1.06l3.25-3.25L15 8l-.53-.53l-3.25-3.25a.75.75 0 0 0-1.061 1.06l1.97 1.97H1.75a.75.75 0 1 0 0 1.5h10.379z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M1.5 4.5v-2h13v2zM1 6a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm1.5 0v7.5h11V6zM4 8.75A.75.75 0 0 1 4.75 8h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 4 8.75" clip-rule="evenodd"></svg:path>`,
 })
-export class PajamasArrowRightIcon {
+export class PajamasArchiveIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -240,16 +223,16 @@ export class PajamasArrowUpIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pajamasAssigneeIcon],svg[pajamas-assignee-icon]',
+  selector: 'svg[pajamasArrowRightIcon],svg[pajamas-arrow-right-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4 6.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3M7 5a3 3 0 0 1-.87 2.113A4 4 0 0 1 8 10.5V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-1.5c0-1.427.747-2.679 1.87-3.387A3 3 0 1 1 7 5m-5.5 5.5a2.5 2.5 0 0 1 5 0V12a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM13 10a.75.75 0 0 1-.75-.75v-1.5h-1.5a.75.75 0 0 1 0-1.5h1.5v-1.5a.75.75 0 0 1 1.5 0v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5v1.5A.75.75 0 0 1 13 10" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M10.159 10.72a.75.75 0 1 0 1.06 1.06l3.25-3.25L15 8l-.53-.53l-3.25-3.25a.75.75 0 0 0-1.061 1.06l1.97 1.97H1.75a.75.75 0 1 0 0 1.5h10.379z" clip-rule="evenodd"></svg:path>`,
 })
-export class PajamasAssigneeIcon {
+export class PajamasArrowRightIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,16 +257,16 @@ export class PajamasAtIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pajamasAttentionIcon],svg[pajamas-attention-icon]',
+  selector: 'svg[pajamasAssigneeIcon],svg[pajamas-assignee-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m6.04 8l-3.174 5.5a1 1 0 0 0 .866 1.5h2.173a1 1 0 0 0 .724-.31L13 8L6.629 1.31A1 1 0 0 0 5.905 1H3.732a1 1 0 0 0-.866 1.5zm4.889 0L5.69 13.5H4.598L7.34 8.75L7.773 8l-.433-.75L4.598 2.5H5.69z" clip-rule="evenodd"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M4 6.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3M7 5a3 3 0 0 1-.87 2.113A4 4 0 0 1 8 10.5V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-1.5c0-1.427.747-2.679 1.87-3.387A3 3 0 1 1 7 5m-5.5 5.5a2.5 2.5 0 0 1 5 0V12a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM13 10a.75.75 0 0 1-.75-.75v-1.5h-1.5a.75.75 0 0 1 0-1.5h1.5v-1.5a.75.75 0 0 1 1.5 0v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5v1.5A.75.75 0 0 1 13 10" clip-rule="evenodd"></svg:path>`,
 })
-export class PajamasAttentionIcon {
+export class PajamasAssigneeIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -308,16 +291,16 @@ export class PajamasAttentionSolidIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[pajamasAttentionSolidSmIcon],svg[pajamas-attention-solid-sm-icon]',
+  selector: 'svg[pajamasAttentionIcon],svg[pajamas-attention-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M12.004 8L7.538 3.31A1 1 0 0 0 6.813 3H5.732a1 1 0 0 0-.866 1.5L6.886 8l-2.02 3.5a1 1 0 0 0 .866 1.5h1.081a1 1 0 0 0 .725-.31z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m6.04 8l-3.174 5.5a1 1 0 0 0 .866 1.5h2.173a1 1 0 0 0 .724-.31L13 8L6.629 1.31A1 1 0 0 0 5.905 1H3.732a1 1 0 0 0-.866 1.5zm4.889 0L5.69 13.5H4.598L7.34 8.75L7.773 8l-.433-.75L4.598 2.5H5.69z" clip-rule="evenodd"></svg:path>`,
 })
-export class PajamasAttentionSolidSmIcon {
+export class PajamasAttentionIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -6615,6 +6598,244 @@ export class PajamasWorkIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[pajamasWorkItemEnhancementIcon],svg[pajamas-work-item-enhancement-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8.37 4.578a1 1 0 0 1 1.26 0l.077.068l1.646 1.647l.069.076a1 1 0 0 1 0 1.262l-.069.076l-7.99 7.99a1 1 0 0 1-1.338.069l-.076-.069l-1.646-1.646a1 1 0 0 1 0-1.414l7.99-7.99l.076-.069Zm-6.653 8.766l.94.94L6.938 10L6 9.06zM11.22 9.22a.75.75 0 0 1 1.06 0l1.5 1.5a.75.75 0 0 1-1.06 1.06l-1.5-1.5a.75.75 0 0 1 0-1.06M7.06 8l.94.94L9.94 7L9 6.06zm8.19-1.75a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1 0-1.5zM4.22 2.22a.75.75 0 0 1 1.06 0l1.5 1.5a.75.75 0 1 1-1.06 1.06l-1.5-1.5a.75.75 0 0 1 0-1.06m8.5 0a.75.75 0 0 1 1.06 1.06l-1.5 1.5a.75.75 0 0 1-1.06-1.06zM9 0a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 9 0"></svg:path>`,
+})
+export class PajamasWorkItemEnhancementIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemEpicIcon],svg[pajamas-work-item-epic-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.482 1.01c.343.052.639.28.775.605l2.628 6.308a1.5 1.5 0 0 1-1.189 2.064L14.5 10h-13v.75c0 .138.112.25.25.25h12l.077.004a.75.75 0 0 1 0 1.492l-.077.004H3.5v.75c0 .138.112.25.25.25h8.5a.75.75 0 0 1 0 1.5h-8.5A1.75 1.75 0 0 1 2 13.25v-.75h-.25A1.75 1.75 0 0 1 0 10.75V8.436q.007-.163.052-.327l.063-.186l2.628-6.308a1 1 0 0 1 .775-.604L3.667 1h8.666l.15.01zM1.5 8.5h13l-2.5-6H4z"></svg:path>`,
+})
+export class PajamasWorkItemEpicIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemFeatureIcon],svg[pajamas-work-item-feature-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0m0 1.5a6.5 6.5 0 1 0 0 13a6.5 6.5 0 0 0 0-13m0 1.25a.75.75 0 0 1 .688.451l1.045 2.412l2.618.25a.75.75 0 0 1 .425 1.309l-1.971 1.74l.572 2.565a.75.75 0 0 1-1.113.81L8 10.948l-2.264 1.337a.75.75 0 0 1-1.113-.809l.571-2.565l-1.97-1.74a.75.75 0 0 1 .425-1.309l2.617-.25L7.312 3.2l.051-.097A.75.75 0 0 1 8 2.75m-.534 3.866a.75.75 0 0 1-.616.448l-1.336.127l1.006.89a.75.75 0 0 1 .235.725l-.292 1.31l1.156-.682l.09-.046a.75.75 0 0 1 .672.046l1.155.681l-.29-1.31a.75.75 0 0 1 .234-.725l1.005-.889l-1.335-.127a.75.75 0 0 1-.616-.448L8 5.385z"></svg:path>`,
+})
+export class PajamasWorkItemFeatureIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemFeatureFlagIcon],svg[pajamas-work-item-feature-flag-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M1 2c4.7-3.6 9.3 3.6 14 0v9c-4.199 3.216-8.318-2.187-12.5-.809v4.06a.75.75 0 0 1-1.5 0zm6.459 1.4C5.311 2.568 3.893 2.094 2.5 2.814v5.819c2.265-.546 4.413.338 6.041.969c2.148.831 3.566 1.304 4.959.584v-5.82c-2.265.546-4.413-.336-6.041-.966"></svg:path>`,
+})
+export class PajamasWorkItemFeatureFlagIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemIncidentIcon],svg[pajamas-work-item-incident-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.154 1.254A3 3 0 0 1 15 4.25v8a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3v-8a3 3 0 0 1 3-3h8zM4 2.75a1.5 1.5 0 0 0-1.5 1.5v8a1.5 1.5 0 0 0 1.5 1.5h8a1.5 1.5 0 0 0 1.5-1.5v-8a1.5 1.5 0 0 0-1.347-1.492L12 2.75zM8 10a1 1 0 1 1 0 2a1 1 0 0 1 0-2m0-5.5a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3A.75.75 0 0 1 8 4.5"></svg:path>`,
+})
+export class PajamasWorkItemIncidentIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemIssueIcon],svg[pajamas-work-item-issue-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.204 1.01A2 2 0 0 1 13 3v10l-.01.204a2 2 0 0 1-1.786 1.785L11 15H5l-.204-.01a2 2 0 0 1-1.785-1.786L3 13V3a2 2 0 0 1 1.796-1.99L5 1h6zM5 2.5a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM9.5 4a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5z"></svg:path>`,
+})
+export class PajamasWorkItemIssueIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemKeyresultIcon],svg[pajamas-work-item-keyresult-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M15 5.25a.75.75 0 0 1-1.5 0V3.56L9 8.06v3.19a.75.75 0 0 1-.22.53l-3 3a.75.75 0 0 1-1.28-.53V11.5H1.75a.75.75 0 0 1-.53-1.28l3-3A.75.75 0 0 1 4.75 7h3.19l4.5-4.5h-1.69a.75.75 0 0 1 0-1.5H15zM3.56 10H6v2.44l1.5-1.5V8.558l-.03-.028l-.027-.03H5.06z"></svg:path>`,
+})
+export class PajamasWorkItemKeyresultIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemMaintenanceIcon],svg[pajamas-work-item-maintenance-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.443 1.005a3.75 3.75 0 0 1 0 7.49l-.193.005q-.326-.001-.635-.057L10.06 9l.941.94l1-1l2.405 2.406l.149.164a2.165 2.165 0 0 1-3.045 3.045l-.164-.149L8.939 12l1-1l-.94-.94l-4.344 4.345a2.164 2.164 0 0 1-2.896.149l-.164-.149a2.164 2.164 0 0 1 0-3.06l4.343-4.346L3.5 4.561l-.616.616l-.508-.761l-1-1.5l-.34-.512l1.368-1.369l.512.341l1.5 1l.76.508l-.615.616l2.438 2.438l.557-.556A3.75 3.75 0 0 1 11.25 1zM11.25 2.5a2.25 2.25 0 0 0-2.153 2.903l.13.43l-.318.317l-6.254 6.255a.666.666 0 0 0 0 .94l.105.085c.257.17.608.142.835-.085L9.849 7.09l.317-.318l.43.13q.314.096.654.098l.23-.012a2.25 2.25 0 0 0 1.798-3.207l-1.498 1.5a.75.75 0 0 1-1.06-1.061l1.498-1.5a2.2 2.2 0 0 0-.738-.208zm-.19 9.5l1.345 1.345l.105.085a.664.664 0 0 0 .92-.92l-.085-.105L12 11.06z"></svg:path>`,
+})
+export class PajamasWorkItemMaintenanceIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemNewIcon],svg[pajamas-work-item-new-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11 0a2 2 0 0 1 2 2v3.25a.75.75 0 0 1-1.5 0V2a.5.5 0 0 0-.5-.5H6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h1.25a.75.75 0 0 1 0 1.5H6a2 2 0 0 1-2-2V5.5H3a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-.25a.75.75 0 0 1 1.5 0V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V2a2 2 0 0 1 2-2zm2 8a.75.75 0 0 1 .75.75v1.5h1.5a.75.75 0 0 1 0 1.5h-1.5v1.5a.75.75 0 0 1-1.5 0v-1.5h-1.5a.75.75 0 0 1 0-1.5h1.5v-1.5A.75.75 0 0 1 13 8M9.75 3a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1 0-1.5z"></svg:path>`,
+})
+export class PajamasWorkItemNewIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemObjectiveIcon],svg[pajamas-work-item-objective-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4.358.877a8 8 0 0 1 4.47-.834a.75.75 0 0 1-.155 1.492a6.5 6.5 0 0 0-3.632.678l-.222.118A6.5 6.5 0 0 0 2.244 4.98l-.112.225a6.5 6.5 0 0 0 1.272 7.392l.18.174a6.5 6.5 0 0 0 3.314 1.636l.248.037a6.5 6.5 0 0 0 3.65-.576l.224-.112a6.5 6.5 0 0 0 3.445-6.43l.746-.077l.746-.078a8 8 0 0 1-4.24 7.913l-.276.138a8 8 0 0 1-4.492.709l-.306-.047a8 8 0 0 1-4.077-2.012l-.222-.214A8 8 0 0 1 .777 4.56l.139-.276a8 8 0 0 1 3.17-3.26zM12.22.22a.75.75 0 0 1 1.28.53V2.5h1.75l.112.01a.75.75 0 0 1 .491 1.186l-.073.085l-3 3a.75.75 0 0 1-.53.22h-.38a4 4 0 0 1 .11 1.404l-.044.305a4 4 0 0 1-2.982 3.175l-.303.062a4 4 0 0 1-2.111-.223l-.283-.123a4 4 0 0 1-1.597-1.4l-.16-.264a4 4 0 0 1-.477-2.371l.046-.306a4 4 0 0 1 .933-1.907l.213-.224a4 4 0 0 1 1.861-1.02l.076-.015a.75.75 0 0 1 .27 1.474l-.185.051a2.5 2.5 0 0 0-.978.587l-.133.139c-.3.338-.5.751-.583 1.192l-.029.192a2.5 2.5 0 0 0 .298 1.482l.1.165a2.5 2.5 0 0 0 .998.874l.177.078a2.5 2.5 0 0 0 1.32.14l.189-.04a2.5 2.5 0 0 0 1.864-1.984l.027-.19A2.5 2.5 0 0 0 10.29 7h-.23L8.53 8.53a.75.75 0 1 1-1.06-1.06L9 5.94V3.75c0-.199.079-.39.22-.53zm2.913 6.283a.75.75 0 0 1 .824.668l-1.492.155a.75.75 0 0 1 .668-.823M10.5 4.061V5.5h1.44l1.5-1.5H12V2.56z"></svg:path>`,
+})
+export class PajamasWorkItemObjectiveIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemRequirementIcon],svg[pajamas-work-item-requirement-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M13 1a2 2 0 0 1 2 2v6.25a.75.75 0 0 1-1.5 0V3a.5.5 0 0 0-.5-.5H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h5.25a.75.75 0 0 1 0 1.5H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm1.22 10.22a.75.75 0 1 1 1.06 1.06l-2.5 2.5a.75.75 0 0 1-.946.094l-.114-.094l-1-1l-.052-.056a.75.75 0 0 1 1.056-1.056l.056.052l.47.47zm-5.893-.716a.75.75 0 0 1 0 1.492L8.25 12h-3.5a.75.75 0 0 1 0-1.5h3.5zM11.25 7.25a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5zm0-3.25a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5z"></svg:path>`,
+})
+export class PajamasWorkItemRequirementIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemTaskIcon],svg[pajamas-work-item-task-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M14.25 9a.75.75 0 0 1 .75.75V12a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V9.75a.75.75 0 0 1 1.5 0V12A1.5 1.5 0 0 0 4 13.5h8a1.5 1.5 0 0 0 1.5-1.5V9.75a.75.75 0 0 1 .75-.75m-1.474-6.682a.75.75 0 0 1 1.056 1.056l-.052.057l-6.096 6.096a.75.75 0 0 1-.955.088l-.115-.096l-2.403-2.484l-.05-.057A.75.75 0 0 1 5.232 5.94l.056.052l1.873 1.935L12.72 2.37z"></svg:path>`,
+})
+export class PajamasWorkItemTaskIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemTestCaseIcon],svg[pajamas-work-item-test-case-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.327.004a.75.75 0 0 1 0 1.492l-.077.004H12V12a4 4 0 0 1-7.995.206L4 12V1.5h-.25a.75.75 0 0 1 0-1.5h8.5zM5.5 12l.013.256A2.5 2.5 0 0 0 10.5 12v-.5H8.75a.75.75 0 0 1 0-1.5h1.75V8.5H8.75a.75.75 0 0 1 0-1.5h1.75V5.5h-5zm0-8h5V1.5h-5z"></svg:path>`,
+})
+export class PajamasWorkItemTestCaseIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasWorkItemTicketIcon],svg[pajamas-work-item-ticket-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M11.94 1.94a1.5 1.5 0 0 0 2.12 2.12L16 6L6 16l-1.94-1.94a1.5 1.5 0 0 0-2.12-2.12L0 10L10 0zM2.12 10l.105.104A3 3 0 0 1 6 13c0 .268-.04.526-.105.773L6 13.88l4.41-4.41l-3.88-3.878zm5.47-5.47l3.879 3.88L13.879 6l-.106-.105A3 3 0 0 1 13 6a3 3 0 0 1-3-3c0-.268.038-.527.104-.774L10 2.12z"></svg:path>`,
+})
+export class PajamasWorkItemTicketIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[pajamasWorkItemsIcon],svg[pajamas-work-items-icon]',
   host: {
     role: 'img',
@@ -6642,6 +6863,23 @@ export class PajamasWorkItemsIcon {
   template: `<svg:path fill="currentColor" d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z"></svg:path>`,
 })
 export class PajamasXIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[pajamasAttentionSolidSmIcon],svg[pajamas-attention-solid-sm-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12.004 8L7.538 3.31A1 1 0 0 0 6.813 3H5.732a1 1 0 0 0-.866 1.5L6.886 8l-2.02 3.5a1 1 0 0 0 .866 1.5h1.081a1 1 0 0 0 .725-.31z"></svg:path>`,
+})
+export class PajamasAttentionSolidSmIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

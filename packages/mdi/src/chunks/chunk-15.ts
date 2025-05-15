@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[mdiWebrtcIcon],svg[mdi-webrtc-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 2c2.44 0 4.5 1.75 4.91 4.07l.84-.07c2.75 0 5 2.24 5 5a5 5 0 0 1-2.59 4.38a5.015 5.015 0 0 1-4.41 7.37A5 5 0 0 1 12 21.06a5 5 0 0 1-3.75 1.69c-2.75 0-5-2.25-5-5c0-.86.22-1.66.59-2.37A5 5 0 0 1 1.25 11c0-2.76 2.25-5 5-5l.84.07C7.5 3.75 9.56 2 12 2M6.75 20.25L13.66 17H17c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v7c0 .55.45 1 1 1h.77z"></svg:path>`,
-})
-export class MdiWebrtcIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[mdiWechatIcon],svg[mdi-wechat-icon]',
   host: {
     role: 'img',
@@ -2341,6 +2324,23 @@ export class MdiZodiacTaurusIcon {
   template: `<svg:path fill="currentColor" d="M18.5 19.13C20 17.77 20 15.18 20 14a4 4 0 0 0-4-4c-.7 0-1.4.2-2 .56V6a3 3 0 0 0-3-3c-.75 0-1.45.29-2 .78a2.997 2.997 0 0 0-4 0C4.45 3.28 3.74 3 3 3v2a1 1 0 0 1 1 1v10h2V6a1 1 0 0 1 1-1a1 1 0 0 1 1 1v10h2V6a1 1 0 0 1 1-1a1 1 0 0 1 1 1v8c0 1.18 0 3.77 1.5 5.13c-.78.41-1.62.71-2.5.87v2c1.29 0 3.84-1.26 5-1.87c1.16.61 3.71 1.87 5 1.87v-2c-.88-.16-1.72-.46-2.5-.87M16 12a2 2 0 0 1 2 2c0 2.92-.54 4-2 4s-2-1.08-2-4a2 2 0 0 1 2-2"></svg:path>`,
 })
 export class MdiZodiacVirgoIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[mdiAccountArrowDownOutlineIcon],svg[mdi-account-arrow-down-outline-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M19 18v-4h-2v4h-2l3 3l3-3zM11 4C8.8 4 7 5.8 7 8s1.8 4 4 4s4-1.8 4-4s-1.8-4-4-4m0 2c1.1 0 2 .9 2 2s-.9 2-2 2s-2-.9-2-2s.9-2 2-2m0 7c-2.7 0-8 1.3-8 4v3h9.5c-.3-.6-.4-1.2-.5-1.9H4.9V17c0-.6 3.1-2.1 6.1-2.1c.5 0 1 .1 1.5.1c.3-.6.6-1.2 1.1-1.7c-1-.2-1.9-.3-2.6-.3"></svg:path>`,
+})
+export class MdiAccountArrowDownOutlineIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

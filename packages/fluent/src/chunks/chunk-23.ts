@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[fluentPeopleChat16FilledIcon],svg[fluent-people-chat-16-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M5.5 7a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m4.422-.77A5.5 5.5 0 0 1 11.5 6a5.5 5.5 0 0 1 1.578.23a2 2 0 1 0-3.155 0M7.257 8H3a1.5 1.5 0 0 0-1.5 1.5v.075s0 2.925 4 2.925q.309 0 .587-.023A5.5 5.5 0 0 1 6 11.5c0-1.33.472-2.55 1.257-3.5m4.243 8a4.5 4.5 0 1 0-3.936-2.318l-.545 1.789a.41.41 0 0 0 .51.51l1.79-.544A4.5 4.5 0 0 0 11.5 16M9 10.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h2a.5.5 0 0 1 0 1z"></svg:path>`,
+})
+export class FluentPeopleChat16FilledIcon {
+  readonly viewBox = input("0 0 16 16")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[fluentPeopleChat16RegularIcon],svg[fluent-people-chat-16-regular-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class FluentPersonRunning20RegularIcon {
   template: `<svg:path fill="currentColor" d="M12.5 8A1.5 1.5 0 0 1 14 9.5v.5c0 1.742-1.452 3.53-3.958 3.921l-1.48-1.48A4.5 4.5 0 0 0 9 10.5A4.5 4.5 0 0 0 8.242 8zM9 1.5A2.75 2.75 0 1 1 9 7a2.75 2.75 0 0 1 0-5.5M4.5 14c.786 0 1.512-.26 2.096-.697l2.55 2.55a.5.5 0 1 0 .708-.707l-2.55-2.55A3.5 3.5 0 1 0 4.5 14m0-1a2.5 2.5 0 1 1 0-5a2.5 2.5 0 0 1 0 5"></svg:path>`,
 })
 export class FluentPersonSearch16FilledIcon {
-  readonly viewBox = input("0 0 16 16")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[fluentPersonSearch16RegularIcon],svg[fluent-person-search-16-regular-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12.5 8A1.5 1.5 0 0 1 14 9.5v.5c0 1.742-1.452 3.53-3.958 3.921l-.922-.922C11.613 12.95 13 11.415 13 10v-.5a.5.5 0 0 0-.5-.5H8.744a4.5 4.5 0 0 0-.502-1zM9 1.5A2.75 2.75 0 1 1 9 7a2.75 2.75 0 0 1 0-5.5m0 1A1.75 1.75 0 1 0 9 6a1.75 1.75 0 0 0 0-3.5M4.5 14c.786 0 1.512-.26 2.096-.697l2.55 2.55a.5.5 0 1 0 .708-.707l-2.55-2.55A3.5 3.5 0 1 0 4.5 14m0-1a2.5 2.5 0 1 1 0-5a2.5 2.5 0 0 1 0 5"></svg:path>`,
-})
-export class FluentPersonSearch16RegularIcon {
   readonly viewBox = input("0 0 16 16")
   readonly width = input("1em")
   readonly height = input("1em")

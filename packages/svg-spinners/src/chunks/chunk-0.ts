@@ -36,40 +36,6 @@ export class SvgSpinners180RingWithBgIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[svgSpinners180RingIcon],svg[svg-spinners-180-ring-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><svg:animatetransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"></svg:animatetransform></svg:path>`,
-})
-export class SvgSpinners180RingIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[svgSpinners270RingWithBgIcon],svg[svg-spinners-270-ring-with-bg-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"></svg:path><svg:path fill="currentColor" d="M10.72,19.9a8,8,0,0,1-6.5-9.79A7.77,7.77,0,0,1,10.4,4.16a8,8,0,0,1,9.49,6.52A1.54,1.54,0,0,0,21.38,12h.13a1.37,1.37,0,0,0,1.38-1.54,11,11,0,1,0-12.7,12.39A1.54,1.54,0,0,0,12,21.34h0A1.47,1.47,0,0,0,10.72,19.9Z"><svg:animatetransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"></svg:animatetransform></svg:path>`,
-})
-export class SvgSpinners270RingWithBgIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[svgSpinners270RingIcon],svg[svg-spinners-270-ring-icon]',
   host: {
     role: 'img',
@@ -97,6 +63,40 @@ export class SvgSpinners270RingIcon {
   template: `<svg:circle cx="4" cy="12" r="3" fill="currentColor"><svg:animate id="svgSpinners3DotsBounce0" attributeName="cy" begin="0;svgSpinners3DotsBounce1.end+0.25s" calcMode="spline" dur="0.6s" keySplines=".33,.66,.66,1;.33,0,.66,.33" values="12;6;12"></svg:animate></svg:circle><svg:circle cx="12" cy="12" r="3" fill="currentColor"><svg:animate attributeName="cy" begin="svgSpinners3DotsBounce0.begin+0.1s" calcMode="spline" dur="0.6s" keySplines=".33,.66,.66,1;.33,0,.66,.33" values="12;6;12"></svg:animate></svg:circle><svg:circle cx="20" cy="12" r="3" fill="currentColor"><svg:animate id="svgSpinners3DotsBounce1" attributeName="cy" begin="svgSpinners3DotsBounce0.begin+0.2s" calcMode="spline" dur="0.6s" keySplines=".33,.66,.66,1;.33,0,.66,.33" values="12;6;12"></svg:animate></svg:circle>`,
 })
 export class SvgSpinners3DotsBounceIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[svgSpinners180RingIcon],svg[svg-spinners-180-ring-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"><svg:animatetransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"></svg:animatetransform></svg:path>`,
+})
+export class SvgSpinners180RingIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[svgSpinners270RingWithBgIcon],svg[svg-spinners-270-ring-with-bg-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"></svg:path><svg:path fill="currentColor" d="M10.72,19.9a8,8,0,0,1-6.5-9.79A7.77,7.77,0,0,1,10.4,4.16a8,8,0,0,1,9.49,6.52A1.54,1.54,0,0,0,21.38,12h.13a1.37,1.37,0,0,0,1.38-1.54,11,11,0,1,0-12.7,12.39A1.54,1.54,0,0,0,12,21.34h0A1.47,1.47,0,0,0,10.72,19.9Z"><svg:animatetransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"></svg:animatetransform></svg:path>`,
+})
+export class SvgSpinners270RingWithBgIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -172,6 +172,23 @@ export class SvgSpinners3DotsRotateIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[svgSpinners3DotsScaleMiddleIcon],svg[svg-spinners-3-dots-scale-middle-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:circle cx="4" cy="12" r="1.5" fill="currentColor"><svg:animate attributeName="r" dur="0.75s" repeatCount="indefinite" values="1.5;3;1.5"></svg:animate></svg:circle><svg:circle cx="12" cy="12" r="3" fill="currentColor"><svg:animate attributeName="r" dur="0.75s" repeatCount="indefinite" values="3;1.5;3"></svg:animate></svg:circle><svg:circle cx="20" cy="12" r="1.5" fill="currentColor"><svg:animate attributeName="r" dur="0.75s" repeatCount="indefinite" values="1.5;3;1.5"></svg:animate></svg:circle>`,
+})
+export class SvgSpinners3DotsScaleMiddleIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[svgSpinners6DotsScaleIcon],svg[svg-spinners-6-dots-scale-icon]',
   host: {
     role: 'img',
@@ -199,23 +216,6 @@ export class SvgSpinners6DotsScaleIcon {
   template: `<svg:g><svg:circle cx="12" cy="2.5" r="1.5" fill="currentColor" opacity=".14"></svg:circle><svg:circle cx="16.75" cy="3.77" r="1.5" fill="currentColor" opacity=".29"></svg:circle><svg:circle cx="20.23" cy="7.25" r="1.5" fill="currentColor" opacity=".43"></svg:circle><svg:circle cx="21.5" cy="12" r="1.5" fill="currentColor" opacity=".57"></svg:circle><svg:circle cx="20.23" cy="16.75" r="1.5" fill="currentColor" opacity=".71"></svg:circle><svg:circle cx="16.75" cy="20.23" r="1.5" fill="currentColor" opacity=".86"></svg:circle><svg:circle cx="12" cy="21.5" r="1.5" fill="currentColor"></svg:circle><svg:animatetransform attributeName="transform" calcMode="discrete" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;30 12 12;60 12 12;90 12 12;120 12 12;150 12 12;180 12 12;210 12 12;240 12 12;270 12 12;300 12 12;330 12 12;360 12 12"></svg:animatetransform></svg:g>`,
 })
 export class SvgSpinners6DotsRotateIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[svgSpinners3DotsScaleMiddleIcon],svg[svg-spinners-3-dots-scale-middle-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:circle cx="4" cy="12" r="1.5" fill="currentColor"><svg:animate attributeName="r" dur="0.75s" repeatCount="indefinite" values="1.5;3;1.5"></svg:animate></svg:circle><svg:circle cx="12" cy="12" r="3" fill="currentColor"><svg:animate attributeName="r" dur="0.75s" repeatCount="indefinite" values="3;1.5;3"></svg:animate></svg:circle><svg:circle cx="20" cy="12" r="1.5" fill="currentColor"><svg:animate attributeName="r" dur="0.75s" repeatCount="indefinite" values="1.5;3;1.5"></svg:animate></svg:circle>`,
-})
-export class SvgSpinners3DotsScaleMiddleIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,23 +274,6 @@ export class SvgSpinners90RingIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[svgSpinners90RingWithBgIcon],svg[svg-spinners-90-ring-with-bg-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"></svg:path><svg:path fill="currentColor" d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"><svg:animatetransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"></svg:animatetransform></svg:path>`,
-})
-export class SvgSpinners90RingWithBgIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[svgSpinnersBarsFadeIcon],svg[svg-spinners-bars-fade-icon]',
   host: {
     role: 'img',
@@ -301,6 +284,23 @@ export class SvgSpinners90RingWithBgIcon {
   template: `<svg:rect width="6" height="14" x="1" y="4" fill="currentColor"><svg:animate id="svgSpinnersBarsFade0" fill="freeze" attributeName="opacity" begin="0;svgSpinnersBarsFade1.end-0.25s" dur="0.75s" values="1;.2"></svg:animate></svg:rect><svg:rect width="6" height="14" x="9" y="4" fill="currentColor" opacity=".4"><svg:animate fill="freeze" attributeName="opacity" begin="svgSpinnersBarsFade0.begin+0.15s" dur="0.75s" values="1;.2"></svg:animate></svg:rect><svg:rect width="6" height="14" x="17" y="4" fill="currentColor" opacity=".3"><svg:animate id="svgSpinnersBarsFade1" fill="freeze" attributeName="opacity" begin="svgSpinnersBarsFade0.begin+0.3s" dur="0.75s" values="1;.2"></svg:animate></svg:rect>`,
 })
 export class SvgSpinnersBarsFadeIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[svgSpinners90RingWithBgIcon],svg[svg-spinners-90-ring-with-bg-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"></svg:path><svg:path fill="currentColor" d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"><svg:animatetransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"></svg:animatetransform></svg:path>`,
+})
+export class SvgSpinners90RingWithBgIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

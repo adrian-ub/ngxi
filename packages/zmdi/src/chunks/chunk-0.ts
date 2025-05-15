@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[zmdi500pxIcon],svg[zmdi-500px-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M281 247q-12 13-12 14q-14 13-21 17q-26 19-59 12q-30-6-45-36q-1-2-2-3q-8 12-8 13q-21 28-57 29q-23 1-40-6q-36-16-37-56h40l1 4q5 20 21 24q21 5 35-9q9-10 10.5-25t-6.5-26q-8-12-23-14.5T52 191q-4 3-6 5q-3 5-11 5H6q9-53 20-110h111v33H58q-3 0-4 3q-1 4-7 39v3q21-19 52-14q27 5 42 34q1-1 1-3q2-2 2-3q21-43 69-36q26 3 46 22q1 1 23 24l2-2q22-23 24-25q17-16 38-19q23-3 43 5.5t30 30.5q16 38-2 74q-16 33-55 35q-29 1-51-17q-3-2-25-22q0-1-5-6m-76 5q12 0 24-7q8-4 28-23q1-2 0-4q-2-1-9.5-8T236 199q-9-8-21-12q-14-4-25 2t-15 20q-1 4-1 8q-1 16 8 25.5t23 9.5m99-32q22 20 24 21q13 12 30 11q25 0 30-24q1-7 0-15q-2-13-11.5-21t-22.5-6q-15 1-28 13q-1 1-22 21"></svg:path>`,
-})
-export class Zmdi500pxIcon {
-  readonly viewBox = input("0 0 432 384")
-  readonly width = input("1.13em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[zmdi3dRotationIcon],svg[zmdi-3d-rotation-icon]',
   host: {
     role: 'img',
@@ -31,6 +14,23 @@ export class Zmdi500pxIcon {
 export class Zmdi3dRotationIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[zmdi500pxIcon],svg[zmdi-500px-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M281 247q-12 13-12 14q-14 13-21 17q-26 19-59 12q-30-6-45-36q-1-2-2-3q-8 12-8 13q-21 28-57 29q-23 1-40-6q-36-16-37-56h40l1 4q5 20 21 24q21 5 35-9q9-10 10.5-25t-6.5-26q-8-12-23-14.5T52 191q-4 3-6 5q-3 5-11 5H6q9-53 20-110h111v33H58q-3 0-4 3q-1 4-7 39v3q21-19 52-14q27 5 42 34q1-1 1-3q2-2 2-3q21-43 69-36q26 3 46 22q1 1 23 24l2-2q22-23 24-25q17-16 38-19q23-3 43 5.5t30 30.5q16 38-2 74q-16 33-55 35q-29 1-51-17q-3-2-25-22q0-1-5-6m-76 5q12 0 24-7q8-4 28-23q1-2 0-4q-2-1-9.5-8T236 199q-9-8-21-12q-14-4-25 2t-15 20q-1 4-1 8q-1 16 8 25.5t23 9.5m99-32q22 20 24 21q13 12 30 11q25 0 30-24q1-7 0-15q-2-13-11.5-21t-22.5-6q-15 1-28 13q-1 1-22 21"></svg:path>`,
+})
+export class Zmdi500pxIcon {
+  readonly viewBox = input("0 0 432 384")
+  readonly width = input("1.13em")
   readonly height = input("1em")
 }
 
@@ -53,23 +53,6 @@ export class ZmdiAccountIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zmdi8tracksIcon],svg[zmdi-8tracks-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M117 195h193q31 0 53-22t22-53t-22-53.5T309.5 44T256 66.5T234 120v33h-42v-33q0-49 34.5-83.5t83-34.5t83 34.5t34.5 83t-34.5 83T310 237H117q-31 0-53 22t-22 53t22 53t53 22t53-22t22-53v-34h42v34q0 48-34 82.5T117.5 429t-83-34.5t-34.5-83T34.5 229t82.5-34"></svg:path>`,
-})
-export class Zmdi8tracksIcon {
-  readonly viewBox = input("0 0 432 432")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[zmdiAccountAddIcon],svg[zmdi-account-add-icon]',
   host: {
     role: 'img',
@@ -87,34 +70,17 @@ export class ZmdiAccountAddIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zmdiAccountBoxOIcon],svg[zmdi-account-box-o-icon]',
+  selector: 'svg[zmdi8tracksIcon],svg[zmdi-8tracks-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" d="M192 197q-20 0-34-14t-14-34t14-34t34-14t34 14t14 34t-14 34t-34 14m96 86v16H96v-16q0-22 33-35t63-13t63 13t33 35M341 0q18 0 30.5 12.5T384 43v298q0 18-12.5 30.5T341 384H43q-18 0-30.5-12.5T0 341V43q0-18 12.5-30.5T43 0zm0 341V43H43v298z"></svg:path>`,
+  template: `<svg:path fill="currentColor" d="M117 195h193q31 0 53-22t22-53t-22-53.5T309.5 44T256 66.5T234 120v33h-42v-33q0-49 34.5-83.5t83-34.5t83 34.5t34.5 83t-34.5 83T310 237H117q-31 0-53 22t-22 53t22 53t53 22t53-22t22-53v-34h42v34q0 48-34 82.5T117.5 429t-83-34.5t-34.5-83T34.5 229t82.5-34"></svg:path>`,
 })
-export class ZmdiAccountBoxOIcon {
-  readonly viewBox = input("0 0 384 384")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[zmdiAccountBoxIcon],svg[zmdi-account-box-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M0 43q0-18 12.5-30.5T43 0h298q18 0 30.5 12.5T384 43v298q0 18-12.5 30.5T341 384H43q-18 0-30.5-12.5T0 341zm256 85q0-27-18.5-45.5T192 64t-45.5 18.5T128 128t18.5 45.5T192 192t45.5-18.5T256 128M64 299v21h256v-21q0-20-23.5-36T244 240t-52-7t-52 7t-52.5 23T64 299"></svg:path>`,
-})
-export class ZmdiAccountBoxIcon {
-  readonly viewBox = input("0 0 384 384")
+export class Zmdi8tracksIcon {
+  readonly viewBox = input("0 0 432 432")
   readonly width = input("1em")
   readonly height = input("1em")
 }
@@ -138,6 +104,23 @@ export class ZmdiAccountBoxMailIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[zmdiAccountBoxIcon],svg[zmdi-account-box-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M0 43q0-18 12.5-30.5T43 0h298q18 0 30.5 12.5T384 43v298q0 18-12.5 30.5T341 384H43q-18 0-30.5-12.5T0 341zm256 85q0-27-18.5-45.5T192 64t-45.5 18.5T128 128t18.5 45.5T192 192t45.5-18.5T256 128M64 299v21h256v-21q0-20-23.5-36T244 240t-52-7t-52 7t-52.5 23T64 299"></svg:path>`,
+})
+export class ZmdiAccountBoxIcon {
+  readonly viewBox = input("0 0 384 384")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[zmdiAccountBoxPhoneIcon],svg[zmdi-account-box-phone-icon]',
   host: {
     role: 'img',
@@ -150,6 +133,23 @@ export class ZmdiAccountBoxMailIcon {
 export class ZmdiAccountBoxPhoneIcon {
   readonly viewBox = input("0 0 512 384")
   readonly width = input("1.34em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[zmdiAccountBoxOIcon],svg[zmdi-account-box-o-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M192 197q-20 0-34-14t-14-34t14-34t34-14t34 14t14 34t-14 34t-34 14m96 86v16H96v-16q0-22 33-35t63-13t63 13t33 35M341 0q18 0 30.5 12.5T384 43v298q0 18-12.5 30.5T341 384H43q-18 0-30.5-12.5T0 341V43q0-18 12.5-30.5T43 0zm0 341V43H43v298z"></svg:path>`,
+})
+export class ZmdiAccountBoxOIcon {
+  readonly viewBox = input("0 0 384 384")
+  readonly width = input("1em")
   readonly height = input("1em")
 }
 
@@ -291,23 +291,6 @@ export class ZmdiAccountsListIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[zmdiAirlineSeatFlatIcon],svg[zmdi-airline-seat-flat-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M427 171v42H149V85h192q36 0 61 25t25 61M0 235h427v42H299v43H128v-43H0zm109.5-41q-18.5 19-45 19.5T19 195T0 150t18.5-45t45-19.5t45.5 18t19 45t-18.5 45.5"></svg:path>`,
-})
-export class ZmdiAirlineSeatFlatIcon {
-  readonly viewBox = input("0 0 432 384")
-  readonly width = input("1.13em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[zmdiAccountsOutlineIcon],svg[zmdi-accounts-outline-icon]',
   host: {
     role: 'img',
@@ -320,6 +303,23 @@ export class ZmdiAirlineSeatFlatIcon {
 export class ZmdiAccountsOutlineIcon {
   readonly viewBox = input("0 0 472 384")
   readonly width = input("1.23em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[zmdiAirlineSeatFlatIcon],svg[zmdi-airline-seat-flat-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M427 171v42H149V85h192q36 0 61 25t25 61M0 235h427v42H299v43H128v-43H0zm109.5-41q-18.5 19-45 19.5T19 195T0 150t18.5-45t45-19.5t45.5 18t19 45t-18.5 45.5"></svg:path>`,
+})
+export class ZmdiAirlineSeatFlatIcon {
+  readonly viewBox = input("0 0 432 384")
+  readonly width = input("1.13em")
   readonly height = input("1em")
 }
 

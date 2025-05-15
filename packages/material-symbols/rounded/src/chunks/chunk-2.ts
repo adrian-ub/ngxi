@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsChromecastDeviceRoundedIcon],svg[material-symbols-chromecast-device-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M21 14.5q-.425 0-.712-.288T20 13.5v-3q0-.425.288-.712T21 9.5h1q.425 0 .713.288T23 10.5v3q0 .425-.288.713T22 14.5zM17 16h-6q-.4 0-.812.113T9.15 16.5q-.975.425-1.675.588T6 17.25q-1.95 0-3.475-1.15T1 13.5v-3q0-1.475 1.525-2.613T6 6.75q.775 0 1.475.163T9.15 7.5q.625.275 1.038.388T11 8h6q.825 0 1.413.588T19 10v4q0 .825-.587 1.413T17 16M2.5 12.5h1q.2 0 .35-.15T4 12t-.15-.35t-.35-.15h-1q-.2 0-.35.15T2 12t.15.35t.35.15"></svg:path>`,
+})
+export class MaterialSymbolsChromecastDeviceRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsChronicOutlineRoundedIcon],svg[material-symbols-chronic-outline-rounded-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsDraftsOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="m13.025 1.6l8.025 4.8q.45.275.7.75t.25 1V19q0 .825-.587 1.413T20 21H4q-.825 0-1.412-.587T2 19V8.15q0-.525.25-1t.7-.75l8.025-4.8q.475-.275 1.025-.275t1.025.275M12 12.65L19.8 8L12 3.35L4.2 8z"></svg:path>`,
 })
 export class MaterialSymbolsDraftsRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsDragClickRoundedIcon],svg[material-symbols-drag-click-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M12 18q-1.775 0-3.262-.937T6.525 14.5q-.15-.35 0-.7t.525-.5q.375-.175.788-.012t.612.587q.525.975 1.475 1.55T12 16q1.65 0 2.825-1.175T16 12q0-1.125-.587-2.062T13.85 8.474q-.4-.2-.55-.612t.025-.788t.513-.525t.687 0q1.575.725 2.525 2.212T18 12q0 2.5-1.75 4.25T12 18m0 4q-3.95 0-6.85-2.675T1.975 12.75q-.025-.4.238-.7t.687-.325t.763.263t.387.737q.4 3.1 2.688 5.188T12 20q3.35 0 5.675-2.325T20 12q0-3.125-2.075-5.387T12.7 4.05q-.45-.05-.737-.375t-.263-.75t.325-.7t.7-.25q1.95.125 3.638.975T19.3 5.163t1.975 3.125T22 12q0 2.075-.788 3.9t-2.137 3.175t-3.175 2.138T12 22M9.55 11.5l-3.3-3.275L5.5 10.5q-.125.35-.475.338t-.475-.363L2.275 2.9q-.1-.3.113-.512t.512-.113l7.575 2.275q.35.125.363.475T10.5 5.5l-2.275.75l3.3 3.3q.425.425.425.975t-.425.975t-.987.425t-.988-.425"></svg:path>`,
-})
-export class MaterialSymbolsDragClickRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

@@ -104,23 +104,6 @@ export class IxAddCircleIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ixAddCircleSmallIcon],svg[ix-add-circle-small-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M85.333 256c0-94.257 76.41-170.667 170.667-170.667S426.667 161.743 426.667 256S350.257 426.667 256 426.667S85.333 350.257 85.333 256M128 256c0-70.692 57.308-128 128-128s128 57.308 128 128s-57.308 128-128 128s-128-57.308-128-128m106.667-21.333v-64h42.666v64h64v42.666h-64v64h-42.666v-64h-64v-42.666z" clip-rule="evenodd"></svg:path>`,
-})
-export class IxAddCircleSmallIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ixAddCircleSmallFilledIcon],svg[ix-add-circle-small-filled-icon]',
   host: {
     role: 'img',
@@ -138,33 +121,16 @@ export class IxAddCircleSmallFilledIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ixAddDocumentNoteIcon],svg[ix-add-document-note-icon]',
+  selector: 'svg[ixAddCircleSmallIcon],svg[ix-add-circle-small-icon]',
   host: {
     role: 'img',
     '[attr.viewBox]': 'viewBox()',
     '[attr.width]': 'width()',
     '[attr.height]': 'height()',
   },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M426.666 320v64h64v42.667h-64v64H384v-64h-64V384h64v-64zM320 42.667l106.666 106.667v149.333h-42.667v-131.66l-81.672-81.673H128v341.333l170.666-.001V448h64v21.333H85.333V42.668zm-21.334 298.667V384H149.333v-42.666zM281.333 128l60 60l-132 132h-60v-60zm-38.696 83.932l-61.304 61.306V288h14.72l61.326-61.326zm38.685-38.684l-16.057 16.056l14.742 14.742l16.057-16.056z"></svg:path>`,
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M85.333 256c0-94.257 76.41-170.667 170.667-170.667S426.667 161.743 426.667 256S350.257 426.667 256 426.667S85.333 350.257 85.333 256M128 256c0-70.692 57.308-128 128-128s128 57.308 128 128s-57.308 128-128 128s-128-57.308-128-128m106.667-21.333v-64h42.666v64h64v42.666h-64v64h-42.666v-64h-64v-42.666z" clip-rule="evenodd"></svg:path>`,
 })
-export class IxAddDocumentNoteIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[ixAddEyeIcon],svg[ix-add-eye-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M426.667 320v64h64v42.666h-64v64H384v-64h-64V384h64v-64zM256 85.333C405.334 85.333 469.334 256 469.334 256s-6.86 18.294-21.33 42.902l-.004-.236h-50.682c11.606-16.455 20.01-31.9 25.303-42.674C404.597 219.303 350.262 128 256.001 128c-94.22 0-148.549 91.222-166.62 128.006C107.404 292.696 161.739 384 256 384c15.264 0 29.481-2.395 42.668-6.564v44.357c-13.367 3.131-27.582 4.873-42.669 4.873C106.667 426.666 42.667 256 42.667 256S106.667 85.333 256 85.333m0 96c41.237 0 74.667 33.43 74.667 74.667s-33.43 74.666-74.667 74.666s-74.666-33.43-74.666-74.666c0-41.237 33.43-74.667 74.666-74.667M256 224c-17.644 0-32 14.355-32 32c0 17.644 14.356 32 32 32c17.645 0 32-14.356 32-32c0-17.645-14.355-32-32-32"></svg:path>`,
-})
-export class IxAddEyeIcon {
+export class IxAddCircleSmallIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -189,6 +155,23 @@ export class IxAddEyeFilledIcon {
 
 @Component({
   standalone: true,
+  selector: 'svg[ixAddEyeIcon],svg[ix-add-eye-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M426.667 320v64h64v42.666h-64v64H384v-64h-64V384h64v-64zM256 85.333C405.334 85.333 469.334 256 469.334 256s-6.86 18.294-21.33 42.902l-.004-.236h-50.682c11.606-16.455 20.01-31.9 25.303-42.674C404.597 219.303 350.262 128 256.001 128c-94.22 0-148.549 91.222-166.62 128.006C107.404 292.696 161.739 384 256 384c15.264 0 29.481-2.395 42.668-6.564v44.357c-13.367 3.131-27.582 4.873-42.669 4.873C106.667 426.666 42.667 256 42.667 256S106.667 85.333 256 85.333m0 96c41.237 0 74.667 33.43 74.667 74.667s-33.43 74.666-74.667 74.666s-74.666-33.43-74.666-74.666c0-41.237 33.43-74.667 74.666-74.667M256 224c-17.644 0-32 14.355-32 32c0 17.644 14.356 32 32 32c17.645 0 32-14.356 32-32c0-17.645-14.355-32-32-32"></svg:path>`,
+})
+export class IxAddEyeIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[ixAddFilterIcon],svg[ix-add-filter-icon]',
   host: {
     role: 'img',
@@ -199,6 +182,23 @@ export class IxAddEyeFilledIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M192 267.333v122h42.667v-122L384 85.333H42.667zM293.781 128H132.864l80.469 98.048zm132.885 192v64h64v42.667h-64v64H384v-64h-64V384h64v-64z" clip-rule="evenodd"></svg:path>`,
 })
 export class IxAddFilterIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixAddFilterFilledIcon],svg[ix-add-filter-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M234.667 267.333L384 85.333H42.667l149.333 182v122h42.667zM426.666 320v64h64v42.667h-64v64H384v-64h-64V384h64v-64z" clip-rule="evenodd"></svg:path>`,
+})
+export class IxAddFilterFilledIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -223,23 +223,6 @@ export class IxAddSelectionIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ixAddShieldHalfIcon],svg[ix-add-shield-half-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M426.667 120.242L256 42.667L85.333 120.242v116.364c0 107.637 72.818 208.29 170.667 232.727l5.617-1.493c12.843-3.627 25.231-8.567 37.05-14.664v-90.509h64v-64h55.942c5.252-20.069 8.058-40.93 8.058-62.061zM128 147.712l128-58.197v335.424l-4.661-1.598C180.854 397.666 128 319.868 128 236.606zm256 342.955v-64h-64V384h64v-64h42.667v64h64v42.667h-64v64z" clip-rule="evenodd"></svg:path>`,
-})
-export class IxAddShieldHalfIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ixAddTaskIcon],svg[ix-add-task-icon]',
   host: {
     role: 'img',
@@ -250,6 +233,23 @@ export class IxAddShieldHalfIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="m426.667 320l-.001 64h64.001v42.667l-64.001-.001l.001 64H384v-64h-64V384h64v-64zM192 128v149.333H42.667V128zm-42.666 42.667h-64v64h64zM256 192h213.334v42.667H256z"></svg:path>`,
 })
 export class IxAddTaskIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixAddShieldHalfIcon],svg[ix-add-shield-half-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M426.667 120.242L256 42.667L85.333 120.242v116.364c0 107.637 72.818 208.29 170.667 232.727l5.617-1.493c12.843-3.627 25.231-8.567 37.05-14.664v-90.509h64v-64h55.942c5.252-20.069 8.058-40.93 8.058-62.061zM128 147.712l128-58.197v335.424l-4.661-1.598C180.854 397.666 128 319.868 128 236.606zm256 342.955v-64h-64V384h64v-64h42.667v64h64v42.667h-64v64z" clip-rule="evenodd"></svg:path>`,
+})
+export class IxAddShieldHalfIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,23 +274,6 @@ export class IxAddTaskListIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[ixAddUserFilledIcon],svg[ix-add-user-filled-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M426.667 320v64h64v42.667h-64v64H384v-64h-64V384h64v-64zm-176-85.333c60.31 0 109.485 49.03 111.906 110.451l.094 4.749v12.8h-64v64H64v-76.8c0-62.033 47.668-112.614 107.383-115.104l4.617-.096zm-37.334-192c41.238 0 74.667 33.43 74.667 74.667c0 39.862-31.238 72.429-70.57 74.556l-4.097.11c-41.237 0-74.666-33.43-74.666-74.666c0-39.863 31.238-72.43 70.57-74.557z"></svg:path>`,
-})
-export class IxAddUserFilledIcon {
-  readonly viewBox = input("0 0 512 512")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[ixAddUserIcon],svg[ix-add-user-icon]',
   host: {
     role: 'img',
@@ -301,6 +284,23 @@ export class IxAddUserFilledIcon {
   template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M426.667 320v64h64v42.667h-64v64H384v-64h-64V384h64v-64zm-176-85.333c60.31 0 109.485 49.03 111.906 110.451l.094 4.749v12.8H320v-12.8c0-38.933-29.192-70.302-65.425-72.42l-3.908-.113H176c-36.708 0-67.166 30.026-69.223 68.392l-.11 4.141V384h192v42.667H64v-76.8c0-62.033 47.668-112.614 107.383-115.104l4.617-.096zm-37.334-192c41.238 0 74.667 33.43 74.667 74.667c0 39.862-31.238 72.429-70.57 74.556l-4.097.11c-41.237 0-74.666-33.43-74.666-74.666c0-39.863 31.238-72.43 70.57-74.557zm0 42.667c-17.673 0-32 14.327-32 32s14.327 32 32 32s32-14.327 32-32s-14.327-32-32-32"></svg:path>`,
 })
 export class IxAddUserIcon {
+  readonly viewBox = input("0 0 512 512")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[ixAddUserFilledIcon],svg[ix-add-user-filled-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" fill-rule="evenodd" d="M426.667 320v64h64v42.667h-64v64H384v-64h-64V384h64v-64zm-176-85.333c60.31 0 109.485 49.03 111.906 110.451l.094 4.749v12.8h-64v64H64v-76.8c0-62.033 47.668-112.614 107.383-115.104l4.617-.096zm-37.334-192c41.238 0 74.667 33.43 74.667 74.667c0 39.862-31.238 72.429-70.57 74.556l-4.097.11c-41.237 0-74.666-33.43-74.666-74.666c0-39.863 31.238-72.43 70.57-74.557z"></svg:path>`,
+})
+export class IxAddUserFilledIcon {
   readonly viewBox = input("0 0 512 512")
   readonly width = input("1em")
   readonly height = input("1em")

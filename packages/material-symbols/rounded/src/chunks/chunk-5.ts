@@ -2,6 +2,23 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
+  selector: 'svg[materialSymbolsInvertColorsRoundedIcon],svg[material-symbols-invert-colors-rounded-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M12 21q-3.325 0-5.663-2.3T4 13.125q0-1.65.625-3.062T6.35 7.55l4.6-4.525q.225-.2.5-.312T12 2.6t.55.113t.5.312l4.6 4.525q1.1 1.1 1.725 2.513T20 13.125q0 3.275-2.337 5.575T12 21m0-2V4.8L7.75 9q-.875.825-1.312 1.875T6 13.125q0 2.425 1.75 4.15T12 19"></svg:path>`,
+})
+export class MaterialSymbolsInvertColorsRoundedIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
   selector: 'svg[materialSymbolsIosRoundedIcon],svg[material-symbols-ios-rounded-icon]',
   host: {
     role: 'img',
@@ -8478,23 +8495,6 @@ export class MaterialSymbolsMonitorWeightLossOutlineRoundedIcon {
   template: `<svg:path fill="currentColor" d="M16 20q-.425 0-.712-.288T15 19t.288-.712T16 18h6q.425 0 .713.288T23 19t-.288.713T22 20zm-4-8q1.25 0 2.125-.875T15 9t-.875-2.125T12 6t-2.125.875T9 9t.875 2.125T12 12m-1.5-2.5q-.2 0-.35-.15T10 9t.15-.35t.35-.15t.35.15T11 9t-.15.35t-.35.15m1.5 0q-.2 0-.35-.15T11.5 9t.15-.35t.35-.15t.35.15t.15.35t-.15.35t-.35.15m1.5 0q-.2 0-.35-.15T13 9t.15-.35t.35-.15t.35.15T14 9t-.15.35t-.35.15M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v8.35q-.5-.175-1-.262T19 13q-2.5 0-4.25 1.75T13 19q0 .5.088 1t.262 1z"></svg:path>`,
 })
 export class MaterialSymbolsMonitorWeightLossRoundedIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
-  selector: 'svg[materialSymbolsMonitoringRoundedIcon],svg[material-symbols-monitoring-rounded-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 21q-.425 0-.712-.288T3 20v-1q0-.425.288-.712T4 18t.713.288T5 19v1q0 .425-.288.713T4 21m4 0q-.425 0-.712-.288T7 20v-5.5q0-.425.288-.712T8 13.5t.713.288T9 14.5V20q0 .425-.288.713T8 21m4 0q-.425 0-.712-.288T11 20v-3.5q0-.425.288-.712T12 15.5t.713.288t.287.712V20q0 .425-.288.713T12 21m4 0q-.425 0-.712-.288T15 20v-5q0-.425.288-.712T16 14t.713.288T17 15v5q0 .425-.288.713T16 21m4 0q-.425 0-.712-.288T19 20v-9q0-.425.288-.712T20 10t.713.288T21 11v9q0 .425-.288.713T20 21m-6-9.025q-.4 0-.763-.15t-.662-.425L10 8.825l-5.3 5.3q-.3.3-.712.288t-.713-.313q-.275-.3-.262-.712T3.3 12.7l5.275-5.275q.3-.3.663-.437T10 6.85t.775.138t.65.437L14 10l5.3-5.3q.3-.3.713-.288t.712.313q.275.3.263.713t-.288.687L15.425 11.4q-.275.275-.65.425t-.775.15"></svg:path>`,
-})
-export class MaterialSymbolsMonitoringRoundedIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")

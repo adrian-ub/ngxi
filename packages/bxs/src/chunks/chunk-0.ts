@@ -2,23 +2,6 @@ import { Component, input } from '@angular/core'
 
 @Component({
   standalone: true,
-  selector: 'svg[bxsAddToQueueIcon],svg[bxs-add-to-queue-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M4 22h12v-2H4V8H2v12c0 1.103.897 2 2 2"></svg:path><svg:path fill="currentColor" d="M20 2H8c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2m-2 9h-3v3h-2v-3h-3V9h3V6h2v3h3z"></svg:path>`,
-})
-export class BxsAddToQueueIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[bxsAdjustIcon],svg[bxs-adjust-icon]',
   host: {
     role: 'img',
@@ -114,6 +97,23 @@ export class BxsAlarmExclamationIcon {
   template: `<svg:path fill="currentColor" d="m20.292 6.708l-3.01-3l1.412-1.417l3.01 3zm1.415 13.585l-2.287-2.288C20.409 16.563 21 14.837 21 13c0-4.878-4.121-9-9-9c-1.838 0-3.563.59-5.006 1.581L5.91 4.496l.788-.79l-1.416-1.412l-.786.788l-.789-.789l-1.414 1.414l18 18zM17 14h-1.586l-2-2H17zm-6-6h2v3.586l-2-2zm1 14c1.658 0 3.224-.485 4.574-1.305L4.305 8.426A8.8 8.8 0 0 0 3 13c0 4.878 4.122 9 9 9"></svg:path>`,
 })
 export class BxsAlarmOffIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bxsAddToQueueIcon],svg[bxs-add-to-queue-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M4 22h12v-2H4V8H2v12c0 1.103.897 2 2 2"></svg:path><svg:path fill="currentColor" d="M20 2H8c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2m-2 9h-3v3h-2v-3h-3V9h3V6h2v3h3z"></svg:path>`,
+})
+export class BxsAddToQueueIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
@@ -274,23 +274,6 @@ export class BxsArchiveOutIcon {
 
 @Component({
   standalone: true,
-  selector: 'svg[bxsAreaIcon],svg[bxs-area-icon]',
-  host: {
-    role: 'img',
-    '[attr.viewBox]': 'viewBox()',
-    '[attr.width]': 'width()',
-    '[attr.height]': 'height()',
-  },
-  template: `<svg:path fill="currentColor" d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm9-13h6v6h-2V8h-4zm-6 6h2v4h4v2H6z"></svg:path>`,
-})
-export class BxsAreaIcon {
-  readonly viewBox = input("0 0 24 24")
-  readonly width = input("1em")
-  readonly height = input("1em")
-}
-
-@Component({
-  standalone: true,
   selector: 'svg[bxsArrowFromBottomIcon],svg[bxs-arrow-from-bottom-icon]',
   host: {
     role: 'img',
@@ -301,6 +284,23 @@ export class BxsAreaIcon {
   template: `<svg:path fill="currentColor" d="M6 18h12v2H6zm6-14l-6 6h5v6h2v-6h5z"></svg:path>`,
 })
 export class BxsArrowFromBottomIcon {
+  readonly viewBox = input("0 0 24 24")
+  readonly width = input("1em")
+  readonly height = input("1em")
+}
+
+@Component({
+  standalone: true,
+  selector: 'svg[bxsAreaIcon],svg[bxs-area-icon]',
+  host: {
+    role: 'img',
+    '[attr.viewBox]': 'viewBox()',
+    '[attr.width]': 'width()',
+    '[attr.height]': 'height()',
+  },
+  template: `<svg:path fill="currentColor" d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm9-13h6v6h-2V8h-4zm-6 6h2v4h4v2H6z"></svg:path>`,
+})
+export class BxsAreaIcon {
   readonly viewBox = input("0 0 24 24")
   readonly width = input("1em")
   readonly height = input("1em")
