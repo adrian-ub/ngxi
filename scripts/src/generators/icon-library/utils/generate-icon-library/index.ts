@@ -61,11 +61,10 @@ export const ɵɵtsModuleIndicatorApiExtractorWorkaround = true
       author: optionsPkg.author,
       license: iconifyJSON.info?.license.spdx,
       funding: optionsPkg.funding,
-      homepage: `${optionsPkg.githubRepo}/tree/main/${projectRoot}#readme`,
+      homepage: `${optionsPkg.githubRepo}#readme`,
       repository: {
         type: 'git',
-        url: optionsPkg.githubRepo,
-        directory: `${projectRoot}`,
+        url: `${optionsPkg.githubRepo}.git`,
       },
       bugs: `${optionsPkg.githubRepo}/issues`,
       sideEffects: false,
