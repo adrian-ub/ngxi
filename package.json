@@ -10,7 +10,7 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks",
-    "release": "bumpp -r --excute=\"pnpm i\""
+    "release": "bumpp"
   },
   "dependencies": {
     "@angular/common": "~19.2.0",
