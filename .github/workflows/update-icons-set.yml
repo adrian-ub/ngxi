@@ -26,16 +26,16 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
-      - run: pnpm exec nx run @ngxi/source:update-icons
+      - run: pnpm exec nx run @ngxi/source:update-icons-set
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.PAT_GITHUB }}
-          commit-message: 'feat: update generated icons'
-          title: 'feat: update generated icons'
-          body: This PR updates the generated icons.
-          branch: update-icons
+          commit-message: 'feat: update icons-set'
+          title: 'feat: update icons-set'
+          body: This PR updates the icons-set
+          branch: update-icons-set
           base: main
           delete-branch: true
           committer: Adrián UB <22903142+adrian-ub@users.noreply.github.com>

@@ -33,6 +33,8 @@ jobs:
       - name: Install
         run: pnpm install
 
+      - run: pnpm exec nx run @ngxi/source:generate-icons
+
       - name: Build
         run: pnpm build
 

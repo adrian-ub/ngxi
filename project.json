@@ -10,15 +10,21 @@
         "storage": "tmp/local-registry/storage"
       }
     },
-    "update-icons": {
+    "update-icons-set": {
       "executor": "nx:run-commands",
       "options": {
         "commands": [
           "pnpm install -D @iconify/json@latest",
-          "pnpm exec nx g @internal/scripts:update-icon-sets",
+          "pnpm exec nx g @internal/scripts:update-icon-sets"
+        ]
+      }
+    },
+    "generate-icons": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
           "pnpm exec nx g @internal/scripts:collections-to-libraries",
           "pnpm exec nx g @internal/scripts:svg-to-ts",
-          "NX_DAEMON=false pnpm exec nx g @internal/scripts:update-readme",
           "pnpm install"
         ],
         "parallel": false
