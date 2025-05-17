@@ -29,7 +29,7 @@ export async function svgToTsGenerator(tree: Tree) {
     if (!iconifyJSON?.icons || !Object.keys(iconifyJSON.icons).length)
       continue
 
-    await cleanIconsetDirs(collection, iconifyJSON.suffixes)
+    await cleanIconsetDirs(collection)
     await createIconset(iconifyJSON)
   }
 
