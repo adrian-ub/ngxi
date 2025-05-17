@@ -23,6 +23,7 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
+          "sed -i '' '/packages/d' .gitignore",
           "pnpm exec nx g @internal/scripts:collections-to-libraries",
           "pnpm exec nx g @internal/scripts:svg-to-ts",
           "pnpm install --no-frozen-lockfile"
