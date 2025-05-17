@@ -38,128 +38,92 @@ export async function svgToTsGenerator(tree: Tree) {
 
 async function createIconset(collection: IconifyJSON) {
   const libraryDir = path.resolve(`packages/${collection.prefix}`)
+  const outputDir = path.join(libraryDir, 'src')
+  const chunksDir = path.join(outputDir, 'chunks')
+  await fs.mkdir(chunksDir, { recursive: true })
+
   const icons = await loadIconset(collection)
-  const suffixes = (collection as any).suffixes as Record<string, string> | undefined
-  const groupedIcons: Record<string, [string, string][]> = {}
-  const allExports: string[] = []
+  const componentSnippets: string[] = []
+  const progressBar = ora(`${c.green(collection.prefix)} 0/${Object.keys(icons).length}`).start()
 
-  for (const [name, svg] of Object.entries(icons)) {
-    const parts = name.split('-')
-    const maybeSuffix = parts.at(-1) ?? ''
-    const suffixKey = suffixes && maybeSuffix in suffixes ? maybeSuffix : ''
-    if (!groupedIcons[suffixKey])
-      groupedIcons[suffixKey] = []
-    groupedIcons[suffixKey].push([name, svg])
-  }
+  const renderTasks = Object.entries(icons).map(([iconName, svg], index) =>
+    limit(async () => {
+      const iconNames = names(`${collection.prefix}-${iconName}`)
+      const $ = cheerio.load(svg)
+      const svgElement = $('svg')
+      if (!svgElement)
+        return
 
-  for (const [suffixKey, iconEntries] of Object.entries(groupedIcons)) {
-    const outputDir = suffixKey === '' ? path.join(libraryDir, 'src') : path.join(libraryDir, suffixKey, 'src')
-    const chunksDir = path.join(outputDir, 'chunks')
-    await fs.mkdir(chunksDir, { recursive: true })
+      const svgAttributes = Object.entries(svgElement[0].attribs || {}).map(
+        ([name, value]) => ({
+          originalName: name,
+          transformedName: names(name).propertyName,
+          value,
+        }),
+      )
 
-    await ensureNgPackageJson(suffixKey === '' ? libraryDir : path.join(libraryDir, suffixKey))
+      const substitutions = {
+        svgFileName: iconName,
+        svgContent: svgElement.html(),
+        propertyName: iconNames.propertyName,
+        name: iconNames.name,
+        className: iconNames.className,
+        svgAttributes,
+      }
 
-    const componentSnippets: string[] = []
-    const progressBar = ora(`${c.green(collection.prefix)}${suffixKey ? `:${suffixKey}` : ''} 0/${iconEntries.length}`).start()
+      const generatedComponent = ejs.render(templateIcon, {
+        names,
+        ...substitutions,
+      })
 
-    const renderTasks = iconEntries.map(([iconName, svg], index) =>
-      limit(async () => {
-        const iconNames = names(`${collection.prefix}-${iconName}`)
-        const $ = cheerio.load(svg)
-        const svgElement = $('svg')
-        if (!svgElement)
-          return
+      componentSnippets[index] = generatedComponent
+      progressBar.text = `${c.green(collection.prefix)} ${index + 1}/${Object.keys(icons).length} ${c.gray(iconName)}`
+    }),
+  )
 
-        const svgAttributes = Object.entries(svgElement[0].attribs || {}).map(
-          ([name, value]) => ({
-            originalName: name,
-            transformedName: names(name).propertyName,
-            value,
-          }),
-        )
+  await Promise.all(renderTasks)
+  progressBar.succeed(`${c.green(collection.prefix)} completed with ${Object.keys(icons).length} icons.`)
 
-        const substitutions = {
-          svgFileName: iconName,
-          svgContent: svgElement.html(),
-          propertyName: iconNames.propertyName,
-          name: iconNames.name,
-          className: iconNames.className,
-          svgAttributes,
-        }
-
-        const generatedComponent = ejs.render(templateIcon, {
-          names,
-          ...substitutions,
-        })
-
-        componentSnippets[index] = generatedComponent
-        progressBar.text = `${c.green(collection.prefix)}${suffixKey ? `:${suffixKey}` : ''} ${index + 1}/${iconEntries.length} ${c.gray(iconName)}`
-      }),
-    )
-
-    await Promise.all(renderTasks)
-    progressBar.succeed(`${c.green(collection.prefix)}${suffixKey ? `:${suffixKey}` : ''} completed with ${iconEntries.length} icons.`)
-
-    if (!componentSnippets.length) {
-      await limit(() => fs.writeFile(path.join(outputDir, 'index.ts'), `
+  if (!componentSnippets.length) {
+    await fs.writeFile(path.join(outputDir, 'index.ts'), `
 // Workaround for: https://github.com/microsoft/rushstack/issues/2806.
 // This is a private export that can be removed at any time.
 export const ɵɵtsModuleIndicatorApiExtractorWorkaround = true
-      `.trimStart()))
-      continue
-    }
-
-    const chunkSize = 500
-    const chunkCount = Math.ceil(componentSnippets.length / chunkSize)
-    const chunkFilenames: string[] = []
-
-    const writeChunkTasks = Array.from({ length: chunkCount }).map((_, i) =>
-      limit(async () => {
-        const start = i * chunkSize
-        const end = start + chunkSize
-        const chunk = componentSnippets.slice(start, end)
-        const chunkFilename = `chunk-${i}.ts`
-        chunkFilenames.push(`./chunks/${chunkFilename}`)
-
-        await fs.writeFile(path.join(chunksDir, chunkFilename), [
-          `import { Component, input } from '@angular/core'`,
-          '',
-          ...chunk,
-        ].join('\n'))
-      }),
-    )
-
-    await Promise.all(writeChunkTasks)
-
-    const indexTsContent = [
-      `// Auto-generated entry point for ${collection.prefix}${suffixKey ? ` (${suffixKey})` : ''}`,
-      ...chunkFilenames.map(f => `export * from '${f.replace('.ts', '')}'`),
-      '',
-    ].join('\n')
-
-    await limit(() => fs.writeFile(path.join(outputDir, 'index.ts'), indexTsContent))
-
-    if (suffixKey !== '') {
-      allExports.push(`export * from './${suffixKey}';`)
-    }
+    `.trimStart())
+    return
   }
 
-  if (groupedIcons['']) {
-    const outputDir = path.join(libraryDir, 'src')
-    const chunksDir = path.join(outputDir, 'chunks')
-    const chunkFiles = await fs.readdir(chunksDir)
-    const chunkFilenames = chunkFiles
-      .filter(f => f.endsWith('.ts'))
-      .map(f => `./chunks/${f.replace('.ts', '')}`)
+  const chunkSize = 500
+  const chunkCount = Math.ceil(componentSnippets.length / chunkSize)
+  const chunkFilenames: string[] = []
 
-    const indexTsContent = [
-      `// Auto-generated entry point for ${collection.prefix}`,
-      ...chunkFilenames.map(f => `export * from '${f}'`),
-      '',
-    ].join('\n')
+  const writeChunkTasks = Array.from({ length: chunkCount }).map((_, i) =>
+    limit(async () => {
+      const start = i * chunkSize
+      const end = start + chunkSize
+      const chunk = componentSnippets.slice(start, end)
+      const chunkFilename = `chunk-${i}.ts`
+      chunkFilenames.push(`./chunks/${chunkFilename}`)
 
-    await limit(() => fs.writeFile(path.join(outputDir, 'index.ts'), indexTsContent))
-  }
+      await fs.writeFile(path.join(chunksDir, chunkFilename), [
+        `import { Component, input } from '@angular/core'`,
+        '',
+        ...chunk,
+      ].join('\n'))
+    }),
+  )
+
+  await Promise.all(writeChunkTasks)
+
+  const indexTsContent = [
+    `// Auto-generated entry point for ${collection.prefix}`,
+    ...chunkFilenames.map(f => `export * from '${f.replace('.ts', '')}'`),
+    '',
+  ].join('\n')
+
+  await fs.writeFile(path.join(outputDir, 'index.ts'), indexTsContent)
+
+  await ensureNgPackageJson(libraryDir)
 }
 
 async function ensureNgPackageJson(directory: string) {
@@ -201,29 +165,20 @@ async function loadIconset(iconset: IconifyJSON) {
   return result
 }
 
-async function cleanIconsetDirs(baseDir: string, suffixes?: Record<string, string>) {
-  const cleanChunkDir = async (dir: string) => {
-    const chunks = path.resolve(dir, 'chunks')
-    try {
-      await fs.rm(chunks, { recursive: true, force: true })
-    }
-    catch { }
+async function cleanIconsetDirs(baseDir: string) {
+  const dir = path.resolve('packages', baseDir, 'src')
 
-    const indexTs = path.resolve(dir, 'index.ts')
-    try {
-      await limit(() => fs.writeFile(indexTs, `// Workaround for: https://github.com/microsoft/rushstack/issues/2806.\n// This is a private export that can be removed at any time.\nexport const ɵɵtsModuleIndicatorApiExtractorWorkaround = true\n`))
-    }
-    catch { }
+  const chunks = path.resolve(dir, 'chunks')
+  try {
+    await fs.rm(chunks, { recursive: true, force: true })
   }
+  catch {}
 
-  await cleanChunkDir(path.resolve('packages', baseDir, 'src'))
-
-  if (suffixes) {
-    for (const suffix of Object.keys(suffixes).filter(Boolean)) {
-      const dir = path.resolve('packages', baseDir, suffix, 'src')
-      await cleanChunkDir(dir)
-    }
+  const indexTs = path.resolve(dir, 'index.ts')
+  try {
+    await fs.writeFile(indexTs, `// Workaround for: https://github.com/microsoft/rushstack/issues/2806.\n// This is a private export that can be removed at any time.\nexport const ɵɵtsModuleIndicatorApiExtractorWorkaround = true\n`)
   }
+  catch {}
 }
 
 export default svgToTsGenerator
