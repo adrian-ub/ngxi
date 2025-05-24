@@ -47,7 +47,7 @@
     "@angular/compiler-cli": "~19.2.0",
     "@angular/language-service": "~19.2.0",
     "@antfu/eslint-config": "^4.13.0",
-    "@iconify/json": "2.2.340",
+    "@iconify/json": "2.2.341",
     "@iconify/types": "^2.0.0",
     "@iconify/utils": "^2.3.0",
     "@nx/angular": "21.0.3",
