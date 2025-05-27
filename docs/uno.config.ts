@@ -1,6 +1,17 @@
 import { defineConfig, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
 
 export default defineConfig({
+  content: {
+    pipeline: {
+      include: [
+        // the default
+        /\.(vue|svelte|[jt]sx|vine.ts|mdx?|astro|elm|php|phtml|html)($|\?)/,
+        'src/**/*.{js,ts,html,ag}',
+      ],
+      // exclude files
+      // exclude: []
+    },
+  },
   shortcuts: {
     'border-base': 'border-hex-888/15',
     'border-dark-only': 'border-transparent dark:border-dark-100',

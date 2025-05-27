@@ -2,6 +2,7 @@
 
 import analog from '@analogjs/platform'
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin'
+import dayjs from 'dayjs'
 import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vite'
 
@@ -20,7 +21,17 @@ export default defineConfig(({ mode }) => {
         allow: ['.'],
       },
     },
-    plugins: [UnoCSS(), analog(), nxViteTsPaths()],
+    plugins: [
+      UnoCSS(),
+      analog({
+        vite: {
+          experimental: {
+            supportAnalogFormat: true,
+          },
+        },
+      }),
+      nxViteTsPaths(),
+    ],
     test: {
       globals: true,
       environment: 'jsdom',
@@ -30,6 +41,7 @@ export default defineConfig(({ mode }) => {
     },
     define: {
       'import.meta.vitest': mode !== 'production',
+      '__BUILD_TIME__': JSON.stringify(dayjs().format('YYYY/MM/DD HH:mm')),
     },
   }
 })

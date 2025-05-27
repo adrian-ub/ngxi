@@ -41,6 +41,12 @@ importers:
       '@nx/devkit':
         specifier: 21.0.3
         version: 21.0.3(nx@21.0.3(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.21)(typescript@5.7.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))
+      '@unocss/reset':
+        specifier: ^66.1.2
+        version: 66.1.2
+      dayjs:
+        specifier: ^1.11.13
+        version: 1.11.13
       front-matter:
         specifier: ^4.0.2
         version: 4.0.2
