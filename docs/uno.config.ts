@@ -4,12 +4,8 @@ export default defineConfig({
   content: {
     pipeline: {
       include: [
-        // the default
-        /\.(vue|svelte|[jt]sx|vine.ts|mdx?|astro|elm|php|phtml|html)($|\?)/,
-        'src/**/*.{js,ts,html,ag}',
+        /\.(vue|svelte|[jt]sx?|vine.ts|mdx?|astro|elm|php|phtml|html)($|\?)/,
       ],
-      // exclude files
-      // exclude: []
     },
   },
   shortcuts: {
