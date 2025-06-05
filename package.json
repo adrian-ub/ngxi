@@ -1,7 +1,7 @@
 {
   "name": "@ngxi/source",
   "type": "module",
-  "version": "0.11.15",
+  "version": "0.11.16",
   "private": true,
   "packageManager": "pnpm@10.8.0",
   "scripts": {
