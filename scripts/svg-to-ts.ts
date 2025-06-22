@@ -18,6 +18,7 @@ export async function svgToTs(name: string) {
   const iconSet = JSON.parse(iconSetRaw)
 
   const iconEntries: string[] = []
+  const usedNames = new Set<string>()
 
   parseIconSet(iconSet, (iconName, iconData) => {
     if (!iconData)
@@ -28,7 +29,16 @@ export async function svgToTs(name: string) {
       height: 'auto',
     })
 
-    const iconNames = names(`${name}-${iconName}`)
+    // Generate base name and avoid duplicates
+    const baseName = `${name}-${iconName}`
+    let iconNames = names(baseName)
+    let suffix = 1
+    while (usedNames.has(iconNames.propertyName)) {
+      iconNames = names(`${baseName}-${suffix}`)
+      suffix++
+    }
+
+    usedNames.add(iconNames.propertyName)
 
     const iconConst = `export const ${iconNames.propertyName}: Icon = ${JSON.stringify({
       body: render.body,
@@ -44,9 +54,7 @@ export async function svgToTs(name: string) {
   await fs.mkdir(outputPath, { recursive: true })
 
   const iconFilePath = path.join(outputPath, ICON_FILE)
-  const iconFileContent = `import type { Icon } from 'ngxi'
-
-${iconEntries.join('\n\n')}`
+  const iconFileContent = `import type { Icon } from 'ngxi'\n\n${iconEntries.join('\n\n')}`
   await fs.writeFile(iconFilePath, iconFileContent, 'utf8')
 
   const exports = [

@@ -2415,7 +2415,7 @@ export const dashiconsYoutube: Icon = {
   "viewBox": "0 0 20 20"
 }
 
-export const dashiconsMenuAlt2: Icon = {
+export const dashiconsMenuAlt21: Icon = {
   "body": "<path fill=\"currentColor\" d=\"M20 5V2H0v3zm0 6V8H0v3zm0 6v-3H0v3z\"/>",
   "width": 20,
   "height": 20,

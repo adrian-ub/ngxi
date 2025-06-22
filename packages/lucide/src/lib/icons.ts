@@ -11403,14 +11403,14 @@ export const lucideAlignHorizonalDistributeStart: Icon = {
   "viewBox": "0 0 24 24"
 }
 
-export const lucideArrowDown01: Icon = {
+export const lucideArrowDown011: Icon = {
   "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"m3 16l4 4l4-4m-4 4V4\"/><rect width=\"4\" height=\"6\" x=\"15\" y=\"4\" ry=\"2\"/><path d=\"M17 20v-6h-2m0 6h4\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
 }
 
-export const lucideArrowDown10: Icon = {
+export const lucideArrowDown101: Icon = {
   "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"m3 16l4 4l4-4m-4 4V4m10 6V4h-2m0 6h4\"/><rect width=\"4\" height=\"6\" x=\"15\" y=\"14\" ry=\"2\"/></g>",
   "width": 24,
   "height": 24,
@@ -11515,14 +11515,14 @@ export const lucideArrowRightSquare: Icon = {
   "viewBox": "0 0 24 24"
 }
 
-export const lucideArrowUp01: Icon = {
+export const lucideArrowUp011: Icon = {
   "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"m3 8l4-4l4 4M7 4v16\"/><rect width=\"4\" height=\"6\" x=\"15\" y=\"4\" ry=\"2\"/><path d=\"M17 20v-6h-2m0 6h4\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
 }
 
-export const lucideArrowUp10: Icon = {
+export const lucideArrowUp101: Icon = {
   "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"m3 8l4-4l4 4M7 4v16m10-10V4h-2m0 6h4\"/><rect width=\"4\" height=\"6\" x=\"15\" y=\"14\" ry=\"2\"/></g>",
   "width": 24,
   "height": 24,
