@@ -1,7 +1,7 @@
 {
   "name": "@ngxi/proicons",
   "type": "module",
-  "version": "0.11.26",
+  "version": "0.12.0-beta.1",
   "sideEffects": false,
   "exports": {
     "./package.json": {
