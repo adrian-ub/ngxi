@@ -1,0 +1,56 @@
+{
+  "name": "@ngxi/pepicons-pencil",
+  "type": "module",
+  "version": "0.11.26",
+  "sideEffects": false,
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "ngxi": "workspace:*"
+  },
+  "devDependencies": {
+    "@analogjs/vite-plugin-angular": "^1.18.0",
+    "@angular/build": "^20.0.3",
+    "@angular/compiler-cli": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "rxjs": "~7.8.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.0.0"
+  },
+  "description": "Icon set Pepicons Pencil for Angular applications",
+  "keywords": [
+    "icon",
+    "iconify",
+    "icons",
+    "ngxi",
+    "pepicons-pencil",
+    "angular"
+  ],
+  "author": "Adrián UB",
+  "license": "CC-BY-4.0",
+  "funding": "https://github.com/sponsors/adrian-ub",
+  "homepage": "https://github.com/adrian-ub/ngxi#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrian-ub/ngxi.git",
+    "directory": "packages/pepicons-pencil"
+  },
+  "bugs": "https://github.com/adrian-ub/ngxi/issues"
+}
