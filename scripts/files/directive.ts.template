@@ -1,0 +1,19 @@
+import type { Icon } from 'ngxi'
+
+import { Directive, input } from '@angular/core'
+
+import { Ngxi } from 'ngxi'
+
+@Directive({
+  standalone: true,
+  selector: 'svg[<%= propertyName %>]',
+  hostDirectives: [
+    {
+      directive: Ngxi,
+      inputs: ['icon:<%= propertyName %>', 'width', 'height', 'viewBox'],
+    },
+  ],
+})
+export class <%= className %> {
+  readonly <%= propertyName %> = input.required<Icon>()
+}
