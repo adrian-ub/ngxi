@@ -1,7 +1,7 @@
 {
   "name": "@ngxi/wpf",
   "type": "module",
-  "version": "0.12.0-beta.2",
+  "version": "0.12.0-beta.3",
   "sideEffects": false,
   "exports": {
     "./package.json": {
