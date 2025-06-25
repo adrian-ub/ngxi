@@ -53,5 +53,6 @@
     "url": "https://github.com/adrian-ub/ngxi.git",
     "directory": "packages/academicons"
   },
-  "bugs": "https://github.com/adrian-ub/ngxi/issues"
+  "bugs": "https://github.com/adrian-ub/ngxi/issues",
+  "types": "./dist/index.d.ts"
 }

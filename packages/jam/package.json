@@ -52,5 +52,7 @@
     "url": "https://github.com/adrian-ub/ngxi.git",
     "directory": "packages/jam"
   },
-  "bugs": "https://github.com/adrian-ub/ngxi/issues"
+  "bugs": "https://github.com/adrian-ub/ngxi/issues",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts"
 }
