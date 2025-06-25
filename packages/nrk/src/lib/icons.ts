@@ -637,6 +637,20 @@ export const nrkListActive: Icon = {
   "viewBox": "0 0 24 24"
 }
 
+export const nrkLiveActivity: Icon = {
+  "body": "<g fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M14.9 1.39A11.01 11.01 0 0 0 1 12a11 11 0 1 0 21.6-2.93c-.54.4-1.16.71-1.83.9A9.02 9.02 0 0 1 12 21a9 9 0 1 1 2-17.78c.19-.67.5-1.29.9-1.83\" clip-rule=\"evenodd\"/><path d=\"M23 4.67a3.67 3.67 0 1 1-7.34 0a3.67 3.67 0 0 1 7.34 0m-10 6.92V6h-2v6.41l4.3 4.3l1.41-1.42l-3.7-3.7Z\"/></g>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
+export const nrkLiveActivityActive: Icon = {
+  "body": "<g fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M19.333 10.167a5.48 5.48 0 0 0 3.277-1.082c.254.928.39 1.906.39 2.915c0 6.075-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1c1.01 0 1.987.136 2.915.39a5.48 5.48 0 0 0-1.082 3.277a5.5 5.5 0 0 0 5.5 5.5m-6.33-4.172v5.586l3.707 3.707l-1.414 1.414l-4.293-4.293V5.995z\" clip-rule=\"evenodd\"/><path d=\"M23 4.667a3.667 3.667 0 1 1-7.333 0a3.667 3.667 0 0 1 7.333 0\"/></g>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
 export const nrkLock: Icon = {
   "body": "<g fill=\"currentColor\"><path d=\"M12 3a4 4 0 0 0-4 4v1H6V7a6 6 0 1 1 12 0v1h-2V7a4 4 0 0 0-4-4m1 15v-4h-2v4z\"/><path fill-rule=\"evenodd\" d=\"M21 10v12H3V10zM5 12v8h14v-8z\" clip-rule=\"evenodd\"/></g>",
   "width": 24,
@@ -834,7 +848,7 @@ export const nrkMediaDirektetvActive: Icon = {
 }
 
 export const nrkMediaFfw: Icon = {
-  "body": "<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"m14.331 7l3.5 5l-3.5 5h-3.052l3.5-5l-3.5-5z\" clip-rule=\"evenodd\"/><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"m8.331 7l3.5 5l-3.5 5H5.279l3.5-5l-3.5-5z\" clip-rule=\"evenodd\"/>",
+  "body": "<g fill=\"currentColor\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"><path d=\"m15.33 7l3.5 5l-3.5 5h-3.05l3.5-5l-3.5-5z\"/><path d=\"m9.33 7l3.5 5l-3.5 5H6.28l3.5-5l-3.5-5z\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -1310,14 +1324,28 @@ export const nrkRadioActive: Icon = {
 }
 
 export const nrkRefresh: Icon = {
-  "body": "<path fill=\"currentColor\" d=\"M11.48 0h2.44l2.8 4l-2.8 4h-2.44l2.1-3H12a7 7 0 1 0 5.563 2.75l1.235-1.648A9 9 0 1 1 12 3h1.58z\"/>",
+  "body": "<path fill=\"currentColor\" d=\"M11.48 1.5h2.44l2.8 4l-2.8 4h-2.44l2.1-3H12a7 7 0 1 0 5.563 2.75l1.235-1.648A9 9 0 1 1 12 4.5h1.58z\"/>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
+export const nrkRefreshExpressive: Icon = {
+  "body": "<path fill=\"currentColor\" d=\"M13.985 1.586a1 1 0 0 0-1.638 1.147L13.584 4.5c-2.05-.085-3.958.23-5.594.999c-2.061.97-3.632 2.633-4.465 4.966a9 9 0 1 0 15.88-2.088l-.063-.081a1 1 0 0 0-1.584 1.217a7 7 0 1 1-12.35 1.625c.654-1.828 1.85-3.084 3.433-3.828c1.305-.614 2.908-.895 4.733-.809l-1.227 1.753l-.055.087a1 1 0 0 0 1.63 1.14l.063-.08l2.735-3.907z\"/>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
 }
 
 export const nrkReload: Icon = {
-  "body": "<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M12.52 0h-2.44l-2.8 4l2.8 4h2.44l-2.1-3H12a7 7 0 1 1-5.563 2.75L5.202 6.102A9 9 0 1 0 12 3h-1.58z\" clip-rule=\"evenodd\"/>",
+  "body": "<path fill=\"currentColor\" d=\"M12.52 1.5h-2.44l-2.8 4l2.8 4h2.44l-2.1-3H12a7 7 0 1 1-5.563 2.75L5.202 7.602A9 9 0 1 0 12 4.5h-1.58z\"/>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
+export const nrkReloadExpressive: Icon = {
+  "body": "<path fill=\"currentColor\" d=\"M10.015 1.586a1 1 0 0 1 1.637 1.147L10.415 4.5c2.05-.086 3.959.23 5.594.999c2.061.969 3.632 2.633 4.466 4.966a9 9 0 1 1-15.88-2.088l.062-.081A1 1 0 0 1 6.241 9.51a7 7 0 1 0 12.35 1.625c-.653-1.827-1.85-3.083-3.433-3.828c-1.304-.613-2.908-.894-4.733-.808l1.227 1.753l.055.087a1 1 0 0 1-1.63 1.14l-.062-.08l-2.736-3.907z\"/>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -1373,7 +1401,14 @@ export const nrkSleep: Icon = {
 }
 
 export const nrkSomeEmail: Icon = {
-  "body": "<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M4.72 6h14.56L12 12.188zM3 18V7.162l6.135 5.215L6.05 15h1.544l2.313-1.966L12 14.812l2.093-1.778L16.406 15h1.544l-3.085-2.623L21 7.162V18zM1 4v16h22V4z\" clip-rule=\"evenodd\"/>",
+  "body": "<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M4.72 6h14.56L12 12.188zM3 18V7.162l9 7.65l9-7.65V18zM1 4v16h22V4z\" clip-rule=\"evenodd\"/>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
+export const nrkSomeEmailExpressive: Icon = {
+  "body": "<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zM3 7.302V17a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7.302l-7.72 6.433a2 2 0 0 1-2.56 0zM19.438 6H4.562L12 12.198z\" clip-rule=\"evenodd\"/>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -1570,6 +1605,20 @@ export const nrkUnlockActive: Icon = {
 
 export const nrkUpload: Icon = {
   "body": "<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"m12 .999l-6 3.9V7.17l5-3.25V16h2V3.921l5 3.25V4.9zm11 20v-2H1v2z\" clip-rule=\"evenodd\"/>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
+export const nrkUserAvatar: Icon = {
+  "body": "<g fill=\"currentColor\"><path d=\"m15.011 8.248l.739 1.715l1.86.172l-1.404 1.232l.41 1.822l-1.605-.953l-1.605.953l.41-1.822l-1.402-1.232l1.859-.172zm-4.019 2.732a1.987 1.987 0 1 1-3.974 0a1.987 1.987 0 0 1 3.974 0\"/><path fill-rule=\"evenodd\" d=\"M12 2a9 9 0 0 0-9 9v4H1v2h2v5h18v-5h2v-2h-2v-4a9 9 0 0 0-9-9m-7 9a7 7 0 0 1 14 0v9H5z\" clip-rule=\"evenodd\"/></g>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
+export const nrkUserAvatarExpressive: Icon = {
+  "body": "<g fill=\"currentColor\"><path d=\"m15.011 8.248l.74 1.715l1.858.172l-1.403 1.232l.411 1.822l-1.606-.953l-1.605.953l.41-1.822l-1.402-1.232l1.859-.172l.739-1.715Zm-4.019 2.732a1.987 1.987 0 1 1-3.974 0a1.987 1.987 0 0 1 3.974 0\"/><path fill-rule=\"evenodd\" d=\"M12 2a9 9 0 0 0-9 9v4H2a1 1 0 1 0 0 2h1v2a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-2h1a1 1 0 1 0 0-2h-1v-4a9 9 0 0 0-9-9m-7 9a7 7 0 0 1 14 0v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z\" clip-rule=\"evenodd\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"

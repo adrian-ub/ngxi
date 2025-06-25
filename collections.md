@@ -1,7 +1,7 @@
 # List of icon sets
 
 ## Material Symbols
-* Number of icons: 14217
+* Number of icons: 14404
 * Author: Google
 * URL: https://github.com/google/material-design-icons
 * License: Apache 2.0
@@ -10,7 +10,7 @@
 * Icon set prefix: `material-symbols`
 
 ## Material Symbols Light
-* Number of icons: 14285
+* Number of icons: 14472
 * Author: Google
 * URL: https://github.com/google/material-design-icons
 * License: Apache 2.0
@@ -131,7 +131,7 @@
 * Icon set prefix: `iconoir`
 
 ## Lucide
-* Number of icons: 1604
+* Number of icons: 1608
 * Author: Lucide Contributors
 * URL: https://github.com/lucide-icons/lucide
 * License: ISC
@@ -1010,7 +1010,7 @@
 * Icon set prefix: `oui`
 
 ## NRK Core Icons
-* Number of icons: 230
+* Number of icons: 236
 * Author: Norsk rikskringkasting
 * URL: https://github.com/nrkno/core-icons
 * License: CC BY 4.0
@@ -1028,7 +1028,7 @@
 * Icon set prefix: `dinkie-icons`
 
 ## Qlementine Icons
-* Number of icons: 732
+* Number of icons: 738
 * Author: Olivier Cléro
 * URL: https://github.com/oclero/qlementine-icons
 * License: MIT
@@ -1165,7 +1165,7 @@
 * Icon set prefix: `codicon`
 
 ## Material Icon Theme
-* Number of icons: 1058
+* Number of icons: 1061
 * Author: Material Extensions
 * URL: https://github.com/material-extensions/vscode-material-icon-theme
 * License: MIT
@@ -1227,12 +1227,12 @@
 * Icon set prefix: `unjs`
 
 ## Simple Icons
-* Number of icons: 3308
+* Number of icons: 3320
 * Author: Simple Icons Collaborators
 * URL: https://github.com/simple-icons/simple-icons
 * License: CC0 1.0
 * License URL: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-* Version: 15.2.0
+* Version: 15.3.0
 * Palette: Colorless
 * Icon set prefix: `simple-icons`
 
@@ -1331,22 +1331,22 @@
 * Icon set prefix: `entypo-social`
 
 ## Web3 Icons
-* Number of icons: 1729
+* Number of icons: 1731
 * Author: 0xa3k5
 * URL: https://github.com/0xa3k5/web3icons
 * License: MIT
 * License URL: https://github.com/0xa3k5/web3icons/blob/main/LICENCE
-* Version: 4.0.15
+* Version: 4.0.16
 * Palette: Colorless
 * Icon set prefix: `token`
 
 ## Web3 Icons Branded
-* Number of icons: 1982
+* Number of icons: 1984
 * Author: 0xa3k5
 * URL: https://github.com/0xa3k5/web3icons
 * License: MIT
 * License URL: https://github.com/0xa3k5/web3icons/blob/main/LICENCE
-* Version: 4.0.15
+* Version: 4.0.16
 * Palette: Colorful
 * Icon set prefix: `token-branded`
 

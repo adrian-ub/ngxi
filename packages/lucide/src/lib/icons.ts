@@ -1268,7 +1268,7 @@ export const lucideBlinds: Icon = {
 }
 
 export const lucideBlocks: Icon = {
-  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><rect width=\"7\" height=\"7\" x=\"14\" y=\"3\" rx=\"1\"/><path d=\"M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3\"/></g>",
+  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2\"/><rect width=\"8\" height=\"8\" x=\"14\" y=\"2\" rx=\"1\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -2437,7 +2437,7 @@ export const lucideCircleArrowDown: Icon = {
 }
 
 export const lucideCircleArrowLeft: Icon = {
-  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M16 12H8m4-4l-4 4l4 4\"/></g>",
+  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m12 8l-4 4l4 4m4-4H8\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -2472,7 +2472,7 @@ export const lucideCircleArrowOutUpRight: Icon = {
 }
 
 export const lucideCircleArrowRight: Icon = {
-  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M8 12h8m-4 4l4-4l-4-4\"/></g>",
+  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m12 16l4-4l-4-4m-4 4h8\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -4991,6 +4991,13 @@ export const lucideGem: Icon = {
   "viewBox": "0 0 24 24"
 }
 
+export const lucideGeorgianLari: Icon = {
+  "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M11.5 21a7.5 7.5 0 1 1 7.35-9M13 12V3M4 21h16M9 12V3\"/>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
 export const lucideGhost: Icon = {
   "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 10h.01M15 10h.01M12 2a8 8 0 0 0-8 8v12l3-3l2.5 2.5L12 19l2.5 2.5L17 19l3 3V10a8 8 0 0 0-8-8\"/>",
   "width": 24,
@@ -6071,6 +6078,13 @@ export const lucideLightbulbOff: Icon = {
 
 export const lucideLineChart: Icon = {
   "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M3 3v18h18\"/><path d=\"m19 9l-5 5l-4-4l-3 3\"/></g>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
+export const lucideLineSquiggle: Icon = {
+  "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M7 3.5c5-2 7 2.5 3 4C1.5 10 2 15 5 16c5 2 9-10 14-7s.5 13.5-4 12c-5-2.5.5-11 6-2\"/>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -8982,7 +8996,7 @@ export const lucideShirt: Icon = {
 }
 
 export const lucideShoppingBag: Icon = {
-  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4ZM3 6h18\"/><path d=\"M16 10a4 4 0 0 1-8 0\"/></g>",
+  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M16 10a4 4 0 0 1-8 0M3.103 6.034h17.794\"/><path d=\"M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -9319,6 +9333,13 @@ export const lucideSplinePointer: Icon = {
 
 export const lucideSplit: Icon = {
   "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M16 3h5v5M8 3H3v5\"/><path d=\"M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3m12 6l6-6\"/></g>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
+export const lucideSpool: Icon = {
+  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M17 13.44L4.442 17.082A2 2 0 0 0 4.982 21H19a2 2 0 0 0 .558-3.921l-1.115-.32A2 2 0 0 1 17 14.837V7.66\"/><path d=\"m7 10.56l12.558-3.642A2 2 0 0 0 19.018 3H5a2 2 0 0 0-.558 3.921l1.115.32A2 2 0 0 1 7 9.163v7.178\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -9802,6 +9823,13 @@ export const lucideSquaresUnite: Icon = {
 
 export const lucideSquircle: Icon = {
   "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 3c7.2 0 9 1.8 9 9s-1.8 9-9 9s-9-1.8-9-9s1.8-9 9-9\"/>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
+export const lucideSquircleDashed: Icon = {
+  "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M13.77 3.043a34 34 0 0 0-3.54 0m3.541 17.913a33 33 0 0 1-3.541.001m9.95-3.217c-.51 1.15-1.29 1.93-2.439 2.44M20.18 6.259c-.51-1.148-1.291-1.929-2.44-2.438m3.217 6.409a33 33 0 0 1 0 3.54M3.043 10.23a34 34 0 0 0 .001 3.541m3.216 6.408c-1.15-.508-1.93-1.29-2.44-2.438M6.26 3.82c-1.149.51-1.93 1.291-2.44 2.44\"/>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -11488,7 +11516,7 @@ export const lucideArrowDownZa: Icon = {
 }
 
 export const lucideArrowLeftCircle: Icon = {
-  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M16 12H8m4-4l-4 4l4 4\"/></g>",
+  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m12 8l-4 4l4 4m4-4H8\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -11502,7 +11530,7 @@ export const lucideArrowLeftSquare: Icon = {
 }
 
 export const lucideArrowRightCircle: Icon = {
-  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M8 12h8m-4 4l4-4l-4-4\"/></g>",
+  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m12 16l4-4l-4-4m-4 4h8\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
