@@ -52,4 +52,4 @@ jobs:
 
       - name: Bump version
         if: steps.git-check.outputs.has_changes == 'true'
-        run: pnpm bumpp next -y
+        run: pnpm bumpp next -r -y
