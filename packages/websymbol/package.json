@@ -1,7 +1,7 @@
 {
   "name": "@ngxi/websymbol",
   "type": "module",
-  "version": "0.12.0-beta.7",
+  "version": "0.12.0-beta.8",
   "sideEffects": false,
   "exports": {
     "./package.json": {
