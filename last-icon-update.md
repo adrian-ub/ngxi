@@ -1,38 +1,19 @@
-## material-symbols
-📦 MODIFIED
-🆕 Added: bath-bedrock, bath-bedrock-outline, bath-bedrock-outline-rounded, bath-bedrock-outline-sharp, bath-bedrock-rounded, bath-bedrock-sharp, bath-soak, bath-soak-outline, bath-soak-outline-rounded, bath-soak-outline-sharp, bath-soak-rounded, bath-soak-sharp, beer-meal, beer-meal-outline, beer-meal-outline-rounded, beer-meal-outline-sharp, beer-meal-rounded, beer-meal-sharp, calendar-meal, calendar-meal-outline, calendar-meal-outline-rounded, calendar-meal-outline-sharp, calendar-meal-rounded, calendar-meal-sharp, chair-counter, chair-counter-outline, chair-counter-outline-rounded, chair-counter-outline-sharp, chair-counter-rounded, chair-counter-sharp, chair-fireplace, chair-fireplace-outline, chair-fireplace-outline-rounded, chair-fireplace-outline-sharp, chair-fireplace-rounded, chair-fireplace-sharp, chair-umbrella, chair-umbrella-outline, chair-umbrella-outline-rounded, chair-umbrella-outline-sharp, chair-umbrella-rounded, chair-umbrella-sharp, dine-heart, dine-heart-outline, dine-heart-outline-rounded, dine-heart-outline-sharp, dine-heart-rounded, dine-heart-sharp, dine-in, dine-in-rounded, dine-in-sharp, dine-lamp, dine-lamp-outline, dine-lamp-outline-rounded, dine-lamp-outline-sharp, dine-lamp-rounded, dine-lamp-sharp, garage-check, garage-check-outline, garage-check-outline-rounded, garage-check-outline-sharp, garage-check-rounded, garage-check-sharp, garage-money, garage-money-outline, garage-money-outline-rounded, garage-money-outline-sharp, garage-money-rounded, garage-money-sharp, hand-meal, hand-meal-outline, hand-meal-outline-rounded, hand-meal-outline-sharp, hand-meal-rounded, hand-meal-sharp, hand-package, hand-package-outline, hand-package-outline-rounded, hand-package-outline-sharp, hand-package-rounded, hand-package-sharp, heart-smile, heart-smile-outline, heart-smile-outline-rounded, heart-smile-rounded, high-chair, high-chair-outline, high-chair-outline-rounded, high-chair-outline-sharp, high-chair-rounded, high-chair-sharp, japanese-curry, japanese-curry-outline, japanese-curry-outline-rounded, japanese-curry-rounded, japanese-flag, japanese-flag-outline, japanese-flag-outline-rounded, japanese-flag-rounded, map-pin-heart, map-pin-heart-outline, map-pin-heart-outline-rounded, map-pin-heart-outline-sharp, map-pin-heart-rounded, map-pin-heart-sharp, map-pin-review, map-pin-review-outline, map-pin-review-outline-rounded, map-pin-review-outline-sharp, map-pin-review-rounded, map-pin-review-sharp, menu-book-2, menu-book-2-outline, menu-book-2-outline-rounded, menu-book-2-outline-sharp, menu-book-2-rounded, menu-book-2-sharp, moped-package, moped-package-outline, moped-package-outline-rounded, moped-package-outline-sharp, moped-package-rounded, moped-package-sharp, mountain-steam, mountain-steam-outline, mountain-steam-outline-rounded, mountain-steam-rounded, okonomiyaki, okonomiyaki-outline, okonomiyaki-outline-rounded, okonomiyaki-rounded, parking-meter, parking-meter-outline, parking-meter-outline-rounded, parking-meter-outline-sharp, parking-meter-rounded, parking-meter-sharp, parking-sign, parking-sign-outline, parking-sign-outline-rounded, parking-sign-outline-sharp, parking-sign-rounded, parking-sign-sharp, parking-valet, parking-valet-outline, parking-valet-outline-rounded, parking-valet-outline-sharp, parking-valet-rounded, parking-valet-sharp, payment-card, payment-card-outline, payment-card-outline-rounded, payment-card-outline-sharp, person-heart, person-heart-outline, person-heart-outline-rounded, person-heart-rounded, playground, playground-2, playground-2-outline, playground-2-outline-rounded, playground-2-outline-sharp, playground-2-rounded, playground-2-sharp, playground-outline, playground-outline-rounded, playground-outline-sharp, playground-rounded, playground-sharp, subway-walk, subway-walk-outline, subway-walk-outline-rounded, subway-walk-rounded, table-large, table-large-outline, table-large-outline-rounded, table-large-rounded, washoku, washoku-outline, washoku-outline-rounded, washoku-rounded, yoshoku, yoshoku-outline, yoshoku-outline-rounded, yoshoku-outline-sharp, yoshoku-rounded, yoshoku-sharp
-
-## material-symbols-light
-📦 MODIFIED
-🆕 Added: bath-bedrock, bath-bedrock-outline, bath-bedrock-outline-rounded, bath-bedrock-outline-sharp, bath-bedrock-rounded, bath-bedrock-sharp, bath-soak, bath-soak-outline, bath-soak-outline-rounded, bath-soak-outline-sharp, bath-soak-rounded, bath-soak-sharp, beer-meal, beer-meal-outline, beer-meal-outline-rounded, beer-meal-outline-sharp, beer-meal-rounded, beer-meal-sharp, calendar-meal, calendar-meal-outline, calendar-meal-outline-rounded, calendar-meal-outline-sharp, calendar-meal-rounded, calendar-meal-sharp, chair-counter, chair-counter-outline, chair-counter-outline-rounded, chair-counter-outline-sharp, chair-counter-rounded, chair-counter-sharp, chair-fireplace, chair-fireplace-outline, chair-fireplace-outline-rounded, chair-fireplace-outline-sharp, chair-fireplace-rounded, chair-fireplace-sharp, chair-umbrella, chair-umbrella-outline, chair-umbrella-outline-rounded, chair-umbrella-outline-sharp, chair-umbrella-rounded, chair-umbrella-sharp, dine-heart, dine-heart-outline, dine-heart-outline-rounded, dine-heart-outline-sharp, dine-heart-rounded, dine-heart-sharp, dine-in, dine-in-rounded, dine-in-sharp, dine-lamp, dine-lamp-outline, dine-lamp-outline-rounded, dine-lamp-outline-sharp, dine-lamp-rounded, dine-lamp-sharp, garage-check, garage-check-outline, garage-check-outline-rounded, garage-check-outline-sharp, garage-check-rounded, garage-check-sharp, garage-money, garage-money-outline, garage-money-outline-rounded, garage-money-outline-sharp, garage-money-rounded, garage-money-sharp, hand-meal, hand-meal-outline, hand-meal-outline-rounded, hand-meal-outline-sharp, hand-meal-rounded, hand-meal-sharp, hand-package, hand-package-outline, hand-package-outline-rounded, hand-package-outline-sharp, hand-package-rounded, hand-package-sharp, heart-smile, heart-smile-outline, heart-smile-outline-rounded, heart-smile-rounded, high-chair, high-chair-outline, high-chair-outline-rounded, high-chair-outline-sharp, high-chair-rounded, high-chair-sharp, japanese-curry, japanese-curry-outline, japanese-curry-outline-rounded, japanese-curry-rounded, japanese-flag, japanese-flag-outline, japanese-flag-outline-rounded, japanese-flag-rounded, map-pin-heart, map-pin-heart-outline, map-pin-heart-outline-rounded, map-pin-heart-outline-sharp, map-pin-heart-rounded, map-pin-heart-sharp, map-pin-review, map-pin-review-outline, map-pin-review-outline-rounded, map-pin-review-outline-sharp, map-pin-review-rounded, map-pin-review-sharp, menu-book-2, menu-book-2-outline, menu-book-2-outline-rounded, menu-book-2-outline-sharp, menu-book-2-rounded, menu-book-2-sharp, moped-package, moped-package-outline, moped-package-outline-rounded, moped-package-outline-sharp, moped-package-rounded, moped-package-sharp, mountain-steam, mountain-steam-outline, mountain-steam-outline-rounded, mountain-steam-rounded, okonomiyaki, okonomiyaki-outline, okonomiyaki-outline-rounded, okonomiyaki-rounded, parking-meter, parking-meter-outline, parking-meter-outline-rounded, parking-meter-outline-sharp, parking-meter-rounded, parking-meter-sharp, parking-sign, parking-sign-outline, parking-sign-outline-rounded, parking-sign-outline-sharp, parking-sign-rounded, parking-sign-sharp, parking-valet, parking-valet-outline, parking-valet-outline-rounded, parking-valet-outline-sharp, parking-valet-rounded, parking-valet-sharp, payment-card, payment-card-outline, payment-card-outline-rounded, payment-card-outline-sharp, person-heart, person-heart-outline, person-heart-outline-rounded, person-heart-rounded, playground, playground-2, playground-2-outline, playground-2-outline-rounded, playground-2-outline-sharp, playground-2-rounded, playground-2-sharp, playground-outline, playground-outline-rounded, playground-outline-sharp, playground-rounded, playground-sharp, subway-walk, subway-walk-outline, subway-walk-outline-rounded, subway-walk-rounded, table-large, table-large-outline, table-large-outline-rounded, table-large-rounded, washoku, washoku-outline, washoku-outline-rounded, washoku-rounded, yoshoku, yoshoku-outline, yoshoku-outline-rounded, yoshoku-outline-sharp, yoshoku-rounded, yoshoku-sharp
-
 ## lucide
 📦 MODIFIED
-🆕 Added: georgian-lari, line-squiggle, spool, squircle-dashed
-✏️ Modified: blocks, circle-arrow-left, circle-arrow-right, shopping-bag
+🆕 Added: bottle-wine
 
-## nrk
+## octicon
 📦 MODIFIED
-🆕 Added: live-activity, live-activity-active, refresh-expressive, reload-expressive, some-email-expressive, user-avatar, user-avatar-expressive
-✏️ Modified: media-direkte, media-ffw, refresh, reload, some-email
+🆕 Added: sparkle-16, sparkle-24
 
-## qlementine-icons
+## pajamas
 📦 MODIFIED
-🆕 Added: gauge-high-16, gauge-low-16, gauge-middle-16, meter-high-16, meter-low-16, meter-middle-16
+✏️ Modified: duo-agentic-chat
+
+## codicon
+📦 MODIFIED
+🆕 Added: copilot-error, copilot-in-progress, copilot-success
 
 ## material-icon-theme
 📦 MODIFIED
-🆕 Added: blender, folder-blender, folder-blender-open
-
-## simple-icons
-📦 MODIFIED
-🆕 Added: activeloop, adaway, apachedoris, betterauth, bookingdotcom, bunnydotnet, cloudnativebuild, haystack, kenmei, mistralai, myshows, vanillaextract
-✏️ Modified: iconify, jinja, launchpad, materialdesign, plotly
-
-## token
-📦 MODIFIED
-🆕 Added: ozean, status
-
-## token-branded
-📦 MODIFIED
-🆕 Added: ozean, status
+🆕 Added: tsdoc
