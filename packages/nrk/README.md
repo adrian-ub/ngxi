@@ -10,7 +10,7 @@
 
 - **Name**: NRK Core Icons
 - **Prefix**: `nrk`
-- **Icons**: 230
+- **Icons**: 236
 - **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 - **Author**: [Norsk rikskringkasting](https://github.com/nrkno/core-icons)
 - **Website**: [https://github.com/nrkno/core-icons](https://github.com/nrkno/core-icons)

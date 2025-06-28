@@ -3,12 +3,12 @@ import fsp from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 
-import { locate } from '@iconify/json'
+import { locate, lookupCollection } from '@iconify/json'
 import jc from '@iconify/json/collections.json'
 import { x } from 'tinyexec'
 
 import localJc from '../collections.json'
-import { generateLibraryIcon } from './generate-library-icon'
+import { createReadme, generateLibraryIcon } from './generate-library-icon'
 import { svgToTs } from './svg-to-ts'
 
 const JSON_DIR = path.resolve('json')
@@ -43,14 +43,14 @@ async function main() {
 
     const diff = diffIconSet(oldSet, newSet)
 
-    const log: string[] = [`## ${key}`, `📦 ${type.toUpperCase()}`]
+    const log: string[] = [`## ${key} 📦 ${type.toUpperCase()}`]
 
     if (diff.added.length)
-      log.push(`🆕 Added: ${diff.added.join(', ')}`)
+      log.push(`🆕 Added: ${diff.added.join(', ')}\n`)
     if (diff.modified.length)
-      log.push(`✏️ Modified: ${diff.modified.join(', ')}`)
+      log.push(`✏️ Modified: ${diff.modified.join(', ')}\n`)
     if (diff.removed.length)
-      log.push(`🗑️ Removed: ${diff.removed.join(', ')}`)
+      log.push(`🗑️ Removed: ${diff.removed.join(', ')}\n`)
 
     changesMd.push(log.join('\n'))
 
@@ -59,7 +59,10 @@ async function main() {
       await generateLibraryIcon(key)
     }
     else {
-      console.log(`ℹ️ Skipped library creation for "${key}" (already exists)`)
+      console.log(`ℹ️ Skipped library creation for "${key}" (already exists), updating instead...`)
+      const importPath = `@ngxi/${key}`
+      const iconifyJSON = await lookupCollection(key)
+      createReadme(pkgPath, key, importPath, iconifyJSON)
     }
 
     await svgToTs(key)

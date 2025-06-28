@@ -2,6 +2,26 @@
   "name": "@ngxi/ooui",
   "type": "module",
   "version": "0.12.0-beta.9",
+  "packageManager": "pnpm@10.6.2",
+  "description": "Icon set OOUI for Angular applications",
+  "author": "Adrián UB",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/adrian-ub",
+  "homepage": "https://github.com/adrian-ub/ngxi#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrian-ub/ngxi.git",
+    "directory": "packages/ooui"
+  },
+  "bugs": "https://github.com/adrian-ub/ngxi/issues",
+  "keywords": [
+    "icon",
+    "iconify",
+    "icons",
+    "ngxi",
+    "ooui",
+    "angular"
+  ],
   "sideEffects": false,
   "exports": {
     "./package.json": {
@@ -14,6 +34,8 @@
       "default": "./dist/index.js"
     }
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -21,46 +43,16 @@
     "build": "vite build",
     "prepublishOnly": "nr build"
   },
-  "dependencies": {
-    "tslib": "^2.3.0",
-    "ngxi": "workspace:*"
-  },
-  "devDependencies": {
-    "@analogjs/vite-plugin-angular": "^1.18.0",
-    "@angular/build": "^18.2.0",
-    "@angular/compiler-cli": "^18.2.0",
-    "@angular/core": "^18.2.0",
-    "rxjs": "~7.8.0",
-    "typescript": "~5.5.0",
-    "vite": "^6.0.0"
-  },
-  "description": "Icon set OOUI for Angular applications",
-  "keywords": [
-    "icon",
-    "iconify",
-    "icons",
-    "ngxi",
-    "ooui",
-    "angular"
-  ],
-  "author": "Adrián UB",
-  "license": "MIT",
-  "funding": "https://github.com/sponsors/adrian-ub",
-  "homepage": "https://github.com/adrian-ub/ngxi#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/adrian-ub/ngxi.git",
-    "directory": "packages/ooui"
-  },
-  "bugs": "https://github.com/adrian-ub/ngxi/issues",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "peerDependencies": {
-    "@angular/core": ">=18.0.0 <21.0.0"
+    "@angular/core": "^18.0.0 || ^19.0.0 || ^20.0.0"
   },
   "peerDependenciesMeta": {
     "@angular/core": {
       "optional": false
     }
+  },
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "ngxi": "workspace:*"
   }
 }

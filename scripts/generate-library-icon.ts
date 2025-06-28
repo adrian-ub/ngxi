@@ -17,6 +17,7 @@ const VERSION = pkgInfo.version
 const templates = {
   readme: fs.readFileSync(path.join(TEMPLATE_DIR, 'README.md.template'), 'utf-8'),
   directive: fs.readFileSync(path.join(TEMPLATE_DIR, 'directive.ts.template'), 'utf-8'),
+  packageJSON: fs.readFileSync(path.join(TEMPLATE_DIR, 'package.json.template'), 'utf-8'),
 }
 
 const pkgOptions = {
@@ -44,10 +45,7 @@ export async function generateLibraryIcon(name: string) {
 
 function updatePackageJson(packageDir: string, name: string, importPath: string, iconifyJSON: any) {
   const pkgPath = path.join(packageDir, 'package.json')
-  const raw = fs.readFileSync(pkgPath, 'utf-8')
-  const original = JSON.parse(raw)
-
-  delete original.peerDependencies
+  const original = JSON.parse(templates.packageJSON)
 
   const updated = {
     ...original,
@@ -78,7 +76,7 @@ function updatePackageJson(packageDir: string, name: string, importPath: string,
   fs.writeFileSync(pkgPath, `${JSON.stringify(updated, null, 2)}\n`, 'utf-8')
 }
 
-function createReadme(packageDir: string, name: string, importPath: string, iconifyJSON: any) {
+export function createReadme(packageDir: string, name: string, importPath: string, iconifyJSON: any) {
   const firstIcon = jc[name as keyof typeof jc]?.samples?.[0] ?? Object.keys(iconifyJSON.icons)[0]
   const { propertyName: propertyIconName } = names(`${iconifyJSON.prefix}-${firstIcon}`)
   const { propertyName, className } = names(`ngxi-${name}`)

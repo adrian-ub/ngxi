@@ -10,7 +10,7 @@
 
 - **Name**: Material Icon Theme
 - **Prefix**: `material-icon-theme`
-- **Icons**: 1058
+- **Icons**: 1062
 - **License**: [MIT](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/LICENSE)
 - **Author**: [Material Extensions](https://github.com/material-extensions/vscode-material-icon-theme)
 - **Website**: [https://github.com/material-extensions/vscode-material-icon-theme](https://github.com/material-extensions/vscode-material-icon-theme)

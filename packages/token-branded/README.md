@@ -10,7 +10,7 @@
 
 - **Name**: Web3 Icons Branded
 - **Prefix**: `token-branded`
-- **Icons**: 1982
+- **Icons**: 1984
 - **License**: [MIT](https://github.com/0xa3k5/web3icons/blob/main/LICENCE)
 - **Author**: [0xa3k5](https://github.com/0xa3k5/web3icons)
 - **Website**: [https://github.com/0xa3k5/web3icons](https://github.com/0xa3k5/web3icons)

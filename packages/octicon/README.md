@@ -10,7 +10,7 @@
 
 - **Name**: Octicons
 - **Prefix**: `octicon`
-- **Icons**: 649
+- **Icons**: 651
 - **License**: [MIT](https://github.com/primer/octicons/blob/main/LICENSE)
 - **Author**: [GitHub](https://github.com/primer/octicons/)
 - **Website**: [https://github.com/primer/octicons/](https://github.com/primer/octicons/)

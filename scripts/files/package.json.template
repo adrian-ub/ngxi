@@ -1,27 +1,19 @@
 {
-  "name": "@ngxi/eos-icons",
+  "name": "ngxi",
   "type": "module",
-  "version": "0.12.0-beta.9",
+  "version": "0.0.0",
   "packageManager": "pnpm@10.6.2",
-  "description": "Icon set EOS Icons for Angular applications",
+  "description": "Icon set for Angular applications",
   "author": "Adrián UB",
   "license": "MIT",
   "funding": "https://github.com/sponsors/adrian-ub",
   "homepage": "https://github.com/adrian-ub/ngxi#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adrian-ub/ngxi.git",
-    "directory": "packages/eos-icons"
+    "url": "https://github.com/adrian-ub/ngxi.git"
   },
   "bugs": "https://github.com/adrian-ub/ngxi/issues",
-  "keywords": [
-    "icon",
-    "iconify",
-    "icons",
-    "ngxi",
-    "eos-icons",
-    "angular"
-  ],
+  "keywords": [],
   "sideEffects": false,
   "exports": {
     "./package.json": {
@@ -41,7 +33,9 @@
   ],
   "scripts": {
     "build": "vite build",
-    "prepublishOnly": "nr build"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
   },
   "peerDependencies": {
     "@angular/core": "^18.0.0 || ^19.0.0 || ^20.0.0"
@@ -52,7 +46,6 @@
     }
   },
   "dependencies": {
-    "tslib": "^2.3.0",
-    "ngxi": "workspace:*"
+    "tslib": "^2.3.0"
   }
 }

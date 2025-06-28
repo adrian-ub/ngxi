@@ -10,7 +10,7 @@
 
 - **Name**: Lucide
 - **Prefix**: `lucide`
-- **Icons**: 1604
+- **Icons**: 1609
 - **License**: [ISC](https://github.com/lucide-icons/lucide/blob/main/LICENSE)
 - **Author**: [Lucide Contributors](https://github.com/lucide-icons/lucide)
 - **Website**: [https://github.com/lucide-icons/lucide](https://github.com/lucide-icons/lucide)

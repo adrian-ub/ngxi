@@ -10,7 +10,7 @@
 
 - **Name**: Qlementine Icons
 - **Prefix**: `qlementine-icons`
-- **Icons**: 732
+- **Icons**: 738
 - **License**: [MIT](https://github.com/oclero/qlementine-icons/blob/master/LICENSE)
 - **Author**: [Olivier Cléro](https://github.com/oclero/qlementine-icons)
 - **Website**: [https://github.com/oclero/qlementine-icons](https://github.com/oclero/qlementine-icons)
