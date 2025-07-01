@@ -131,7 +131,7 @@
 * Icon set prefix: `iconoir`
 
 ## Lucide
-* Number of icons: 1609
+* Number of icons: 1611
 * Author: Lucide Contributors
 * URL: https://github.com/lucide-icons/lucide
 * License: ISC
@@ -730,12 +730,12 @@
 * Icon set prefix: `formkit`
 
 ## Fluent UI System Icons
-* Number of icons: 18144
+* Number of icons: 18212
 * Author: Microsoft Corporation
 * URL: https://github.com/microsoft/fluentui-system-icons
 * License: MIT
 * License URL: https://github.com/microsoft/fluentui-system-icons/blob/main/LICENSE
-* Version: 1.1.304
+* Version: 1.1.305
 * Palette: Colorless
 * Icon set prefix: `fluent`
 
@@ -1087,7 +1087,7 @@
 * URL: https://github.com/microsoft/fluentui-system-icons
 * License: MIT
 * License URL: https://github.com/microsoft/fluentui-system-icons/blob/main/LICENSE
-* Version: 1.1.304
+* Version: 1.1.305
 * Palette: Colorful
 * Icon set prefix: `fluent-color`
 
@@ -1155,7 +1155,7 @@
 * Icon set prefix: `vscode-icons`
 
 ## Codicons
-* Number of icons: 486
+* Number of icons: 489
 * Author: Microsoft Corporation
 * URL: https://github.com/microsoft/vscode-codicons
 * License: CC BY 4.0
@@ -1227,12 +1227,12 @@
 * Icon set prefix: `unjs`
 
 ## Simple Icons
-* Number of icons: 3320
+* Number of icons: 3327
 * Author: Simple Icons Collaborators
 * URL: https://github.com/simple-icons/simple-icons
 * License: CC0 1.0
 * License URL: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-* Version: 15.3.0
+* Version: 15.4.0
 * Palette: Colorless
 * Icon set prefix: `simple-icons`
 

@@ -10,7 +10,7 @@
 
 - **Name**: Fluent UI System Icons
 - **Prefix**: `fluent`
-- **Icons**: 18144
+- **Icons**: 18212
 - **License**: [MIT](https://github.com/microsoft/fluentui-system-icons/blob/main/LICENSE)
 - **Author**: [Microsoft Corporation](https://github.com/microsoft/fluentui-system-icons)
 - **Website**: [https://github.com/microsoft/fluentui-system-icons](https://github.com/microsoft/fluentui-system-icons)

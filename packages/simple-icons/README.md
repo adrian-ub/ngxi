@@ -10,7 +10,7 @@
 
 - **Name**: Simple Icons
 - **Prefix**: `simple-icons`
-- **Icons**: 3320
+- **Icons**: 3327
 - **License**: [CC0 1.0](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md)
 - **Author**: [Simple Icons Collaborators](https://github.com/simple-icons/simple-icons)
 - **Website**: [https://github.com/simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
