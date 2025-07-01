@@ -1,7 +1,7 @@
 {
   "name": "@ngxi/ps",
   "type": "module",
-  "version": "0.12.0-beta.10",
+  "version": "0.12.0-beta.11",
   "packageManager": "pnpm@10.6.2",
   "description": "Icon set PrestaShop Icons for Angular applications",
   "author": "Adrián UB",
