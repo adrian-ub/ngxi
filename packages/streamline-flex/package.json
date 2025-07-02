@@ -1,7 +1,7 @@
 {
   "name": "@ngxi/streamline-flex",
   "type": "module",
-  "version": "0.12.0-beta.11",
+  "version": "0.12.0",
   "packageManager": "pnpm@10.6.2",
   "description": "Icon set Flex free icons for Angular applications",
   "author": "Adrián UB",
