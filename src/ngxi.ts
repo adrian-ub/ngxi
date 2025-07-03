@@ -1,6 +1,7 @@
 import type { Icon } from './icon'
 
-import { computed, Directive, effect, ElementRef, inject, input, Renderer2 } from '@angular/core'
+import { isPlatformServer } from '@angular/common'
+import { computed, Directive, effect, ElementRef, inject, input, PLATFORM_ID, Renderer2 } from '@angular/core'
 
 @Directive({
   standalone: true,
@@ -13,8 +14,9 @@ import { computed, Directive, effect, ElementRef, inject, input, Renderer2 } fro
   },
 })
 export class Ngxi {
-  private el = inject(ElementRef<SVGElement>)
-  private renderer = inject(Renderer2)
+  private readonly platform = inject(PLATFORM_ID)
+  private readonly el = inject(ElementRef<SVGElement>)
+  private readonly renderer = inject(Renderer2)
 
   readonly icon = input<Icon | null>(null)
   readonly width = input<number | undefined>()
@@ -26,6 +28,26 @@ export class Ngxi {
   protected readonly resolvedViewBox = computed(() => this.viewBox() ?? this.icon()?.viewBox)
   protected readonly setBody = effect(() => {
     const icon = this.icon()
-    this.renderer.setProperty(this.el.nativeElement, 'innerHTML', icon?.body ?? '')
+
+    if (!icon) {
+      this.renderer.setProperty(this.el.nativeElement, 'innerHTML', '')
+      return
+    }
+
+    if (isPlatformServer(this.platform)) {
+      this.el.nativeElement.innerHTML = icon.body
+      this.el.nativeElement.setAttribute('data-ngxi-ssr', '')
+      return
+    }
+
+    if (this.el.nativeElement.hasAttribute('data-ngxi-ssr')) {
+      this.el.nativeElement.removeAttribute('data-ngxi-ssr')
+
+      if (this.el.nativeElement.innerHTML === icon.body) {
+        return
+      }
+    }
+
+    this.renderer.setProperty(this.el.nativeElement, 'innerHTML', icon.body)
   })
 }

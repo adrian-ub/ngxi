@@ -18,6 +18,9 @@ importers:
       '@angular/build':
         specifier: ^18.2.0
         version: 18.2.20(@angular/compiler-cli@18.2.13(@angular/compiler@18.2.13(@angular/core@18.2.13(rxjs@7.8.2)(zone.js@0.14.10)))(typescript@5.5.4))(@types/node@24.0.7)(chokidar@3.6.0)(postcss@8.5.6)(typescript@5.5.4)
+      '@angular/common':
+        specifier: ^18.2.0
+        version: 18.2.13(@angular/core@18.2.13(rxjs@7.8.2)(zone.js@0.14.10))(rxjs@7.8.2)
       '@angular/compiler-cli':
         specifier: ^18.2.0
         version: 18.2.13(@angular/compiler@18.2.13(@angular/core@18.2.13(rxjs@7.8.2)(zone.js@0.14.10)))(typescript@5.5.4)
@@ -2699,6 +2702,13 @@ packages:
         optional: true
       tailwindcss:
         optional: true
+
+  '@angular/common@18.2.13':
+    resolution: {integrity: sha512-4ZqrNp1PoZo7VNvW+sbSc2CB2axP1sCH2wXl8B0wdjsj8JY1hF1OhuugwhpAHtGxqewed2kCXayE+ZJqSTV4jw==}
+    engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0}
+    peerDependencies:
+      '@angular/core': 18.2.13
+      rxjs: ^6.5.3 || ^7.4.0
 
   '@angular/compiler-cli@18.2.13':
     resolution: {integrity: sha512-DBSh4AQwkiJDSiVvJATRmjxf6wyUs9pwQLgaFdSlfuTRO+sdb0J2z1r3BYm8t0IqdoyXzdZq2YCH43EmyvD71g==}
@@ -5571,6 +5581,12 @@ snapshots:
       - sugarss
       - supports-color
       - terser
+
+  '@angular/common@18.2.13(@angular/core@18.2.13(rxjs@7.8.2)(zone.js@0.14.10))(rxjs@7.8.2)':
+    dependencies:
+      '@angular/core': 18.2.13(rxjs@7.8.2)(zone.js@0.14.10)
+      rxjs: 7.8.2
+      tslib: 2.8.1
 
   '@angular/compiler-cli@18.2.13(@angular/compiler@18.2.13(@angular/core@18.2.13(rxjs@7.8.2)(zone.js@0.14.10)))(typescript@5.5.4)':
     dependencies:

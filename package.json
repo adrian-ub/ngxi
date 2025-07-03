@@ -57,6 +57,7 @@
   "devDependencies": {
     "@analogjs/vite-plugin-angular": "^1.18.0",
     "@angular/build": "^18.2.0",
+    "@angular/common": "^18.2.0",
     "@angular/compiler-cli": "^18.2.0",
     "@angular/core": "^18.2.0",
     "@antfu/eslint-config": "^4.15.0",
