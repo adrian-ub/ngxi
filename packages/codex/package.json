@@ -1,7 +1,7 @@
 {
   "name": "@ngxi/codex",
   "type": "module",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "packageManager": "pnpm@10.6.2",
   "description": "Icon set CodeX Icons for Angular applications",
   "author": "Adrián UB",
