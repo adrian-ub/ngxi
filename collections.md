@@ -1,7 +1,7 @@
 # List of icon sets
 
 ## Material Symbols
-* Number of icons: 14404
+* Number of icons: 14413
 * Author: Google
 * URL: https://github.com/google/material-design-icons
 * License: Apache 2.0
@@ -10,7 +10,7 @@
 * Icon set prefix: `material-symbols`
 
 ## Material Symbols Light
-* Number of icons: 14472
+* Number of icons: 14481
 * Author: Google
 * URL: https://github.com/google/material-design-icons
 * License: Apache 2.0
@@ -131,7 +131,7 @@
 * Icon set prefix: `iconoir`
 
 ## Lucide
-* Number of icons: 1611
+* Number of icons: 1614
 * Author: Lucide Contributors
 * URL: https://github.com/lucide-icons/lucide
 * License: ISC
@@ -582,7 +582,7 @@
 * URL: https://github.com/ionic-team/ionicons
 * License: MIT
 * License URL: https://github.com/ionic-team/ionicons/blob/main/LICENSE
-* Version: 8.0.9
+* Version: 8.0.10
 * Palette: Colorless
 * Icon set prefix: `ion`
 
@@ -1155,7 +1155,7 @@
 * Icon set prefix: `vscode-icons`
 
 ## Codicons
-* Number of icons: 489
+* Number of icons: 490
 * Author: Microsoft Corporation
 * URL: https://github.com/microsoft/vscode-codicons
 * License: CC BY 4.0
@@ -1336,7 +1336,7 @@
 * URL: https://github.com/0xa3k5/web3icons
 * License: MIT
 * License URL: https://github.com/0xa3k5/web3icons/blob/main/LICENCE
-* Version: 4.0.16
+* Version: 4.0.17
 * Palette: Colorless
 * Icon set prefix: `token`
 
@@ -1346,7 +1346,7 @@
 * URL: https://github.com/0xa3k5/web3icons
 * License: MIT
 * License URL: https://github.com/0xa3k5/web3icons/blob/main/LICENCE
-* Version: 4.0.16
+* Version: 4.0.17
 * Palette: Colorful
 * Icon set prefix: `token-branded`
 

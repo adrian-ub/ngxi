@@ -10,7 +10,7 @@
 
 - **Name**: Codicons
 - **Prefix**: `codicon`
-- **Icons**: 489
+- **Icons**: 490
 - **License**: [CC BY 4.0](https://github.com/microsoft/vscode-codicons/blob/main/LICENSE)
 - **Author**: [Microsoft Corporation](https://github.com/microsoft/vscode-codicons)
 - **Website**: [https://github.com/microsoft/vscode-codicons](https://github.com/microsoft/vscode-codicons)

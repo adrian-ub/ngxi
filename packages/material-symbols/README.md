@@ -10,7 +10,7 @@
 
 - **Name**: Material Symbols
 - **Prefix**: `material-symbols`
-- **Icons**: 14404
+- **Icons**: 14413
 - **License**: [Apache 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE)
 - **Author**: [Google](https://github.com/google/material-design-icons)
 - **Website**: [https://github.com/google/material-design-icons](https://github.com/google/material-design-icons)

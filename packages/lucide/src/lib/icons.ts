@@ -889,6 +889,13 @@ export const lucideBadgeSwissFranc: Icon = {
   "viewBox": "0 0 24 24"
 }
 
+export const lucideBadgeTurkishLira: Icon = {
+  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M11 7v10a5 5 0 0 0 5-5m-1-4l-6 3\"/><path d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77a4 4 0 0 1 6.74 0a4 4 0 0 1 4.78 4.78a4 4 0 0 1 0 6.74a4 4 0 0 1-4.77 4.78a4 4 0 0 1-6.75 0a4 4 0 0 1-4.78-4.77a4 4 0 0 1 0-6.76\"/></g>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
 export const lucideBadgeX: Icon = {
   "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77a4 4 0 0 1 6.74 0a4 4 0 0 1 4.78 4.78a4 4 0 0 1 0 6.74a4 4 0 0 1-4.77 4.78a4 4 0 0 1-6.75 0a4 4 0 0 1-4.78-4.77a4 4 0 0 1 0-6.76M15 9l-6 6m0-6l6 6\"/>",
   "width": 24,
@@ -2626,7 +2633,7 @@ export const lucideCircleParking: Icon = {
 }
 
 export const lucideCircleParkingOff: Icon = {
-  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m5 5l14 14m-6-6a3 3 0 1 0 0-6H9v2m0 8v-2.34\"/></g>",
+  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M12.656 7H13a3 3 0 0 1 2.984 3.307M13 13H9m10.071 6.071A1 1 0 0 1 4.93 4.93M2 2l20 20\"/><path d=\"M8.357 2.687a10 10 0 0 1 12.956 12.956M9 17V9\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
@@ -8225,6 +8232,13 @@ export const lucideReceiptText: Icon = {
   "viewBox": "0 0 24 24"
 }
 
+export const lucideReceiptTurkishLira: Icon = {
+  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M10 6.5v11a5.5 5.5 0 0 0 5.5-5.5M14 8l-6 3\"/><path d=\"M4 2v20l2-1l2 1l2-1l2 1l2-1l2 1l2-1l2 1V2l-2 1l-2-1l-2 1l-2-1l-2 1l-2-1l-2 1z\"/></g>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
 export const lucideRectangleCircle: Icon = {
   "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M14 4v16H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z\"/><circle cx=\"14\" cy=\"12\" r=\"8\"/></g>",
   "width": 24,
@@ -10640,6 +10654,13 @@ export const lucideTruckElectric: Icon = {
   "viewBox": "0 0 24 24"
 }
 
+export const lucideTurkishLira: Icon = {
+  "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M15 4L5 9m10-.5l-10 5M18 12a9 9 0 0 1-9 9V3\"/>",
+  "width": 24,
+  "height": 24,
+  "viewBox": "0 0 24 24"
+}
+
 export const lucideTurtle: Icon = {
   "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"m12 10l2 4v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a8 8 0 1 0-16 0v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3l2-4zM4.82 7.9L8 10m7.18-2.1L12 10\"/><path d=\"M16.93 10H20a2 2 0 0 1 0 4H2\"/></g>",
   "width": 24,
@@ -12349,7 +12370,7 @@ export const lucideParkingCircle: Icon = {
 }
 
 export const lucideParkingCircleOff: Icon = {
-  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m5 5l14 14m-6-6a3 3 0 1 0 0-6H9v2m0 8v-2.34\"/></g>",
+  "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M12.656 7H13a3 3 0 0 1 2.984 3.307M13 13H9m10.071 6.071A1 1 0 0 1 4.93 4.93M2 2l20 20\"/><path d=\"M8.357 2.687a10 10 0 0 1 12.956 12.956M9 17V9\"/></g>",
   "width": 24,
   "height": 24,
   "viewBox": "0 0 24 24"
