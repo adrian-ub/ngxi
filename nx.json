@@ -42,10 +42,7 @@
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     },
-    "@nx/vitest:test": {
-      "cache": true,
-      "inputs": ["default", "^production"]
-    },
+    "@nx/vitest:test": { "cache": true, "inputs": ["default", "^production"] },
     "@nx/angular:package": {
       "cache": true,
       "dependsOn": ["^build"],
@@ -57,18 +54,8 @@
     }
   },
   "plugins": [
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    }
+    { "plugin": "@nx/playwright/plugin", "options": { "targetName": "e2e" } },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } }
   ],
   "generators": {
     "@nx/angular:application": {
@@ -81,13 +68,10 @@
       "linter": "eslint",
       "unitTestRunner": "vitest-angular"
     },
-    "@nx/angular:component": {
-      "style": "css"
-    }
+    "@nx/angular:component": { "style": "css" }
   },
   "release": {
-    "version": {
-      "preVersionCommand": "pnpm dlx nx run-many -t build"
-    }
-  }
+    "version": { "preVersionCommand": "pnpm dlx nx run-many -t build" }
+  },
+  "nxCloudId": "6a7404888ef2901433ecf9cb"
 }
