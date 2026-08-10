@@ -209,7 +209,9 @@ describe('icon-library generator', () => {
     expect(tree.exists('packages/fluent/src/lib/types.ts')).toBe(false);
     // ...and the primary barrel is empty for a split set (the icons live in
     // the secondary entries).
-    expect(tree.read('packages/fluent/src/index.ts', 'utf-8')).toBe('');
+    expect(tree.read('packages/fluent/src/index.ts', 'utf-8')).toBe(
+      'export {};\n',
+    );
 
     // Each secondary entry gets its icons-only barrel; nothing is duplicated
     // into it, and no icon component is generated at scaffold time.

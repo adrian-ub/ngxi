@@ -95,7 +95,8 @@
       "executor": "@angular/build:unit-test",
       "options": {
         "watch": false
-      }
+      },
+      "dependsOn": ["lucide:generate-icons"]
     },
     "serve-static": {
       "continuous": true,
