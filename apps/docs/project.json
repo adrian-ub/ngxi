@@ -78,6 +78,7 @@
     "serve": {
       "continuous": true,
       "executor": "@angular/build:dev-server",
+      "dependsOn": ["generate-docs-manifest"],
       "defaultConfiguration": "development",
       "configurations": {
         "production": {
@@ -96,7 +97,7 @@
       "options": {
         "watch": false
       },
-      "dependsOn": ["lucide:generate-icons"]
+      "dependsOn": ["lucide:generate-icons", "generate-docs-manifest"]
     },
     "serve-static": {
       "continuous": true,
