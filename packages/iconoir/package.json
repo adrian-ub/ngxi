@@ -1,0 +1,22 @@
+{
+  "name": "@ngxi/iconoir",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^22.0.0",
+    "@angular/core": "^22.0.0"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "license": "MIT",
+  "author": "Adrián UB",
+  "funding": "https://github.com/sponsors/adrian-ub",
+  "homepage": "https://github.com/adrian-ub/ngxi#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrian-ub/ngxi.git",
+    "directory": "packages/iconoir"
+  },
+  "bugs": "https://github.com/adrian-ub/ngxi/issues"
+}

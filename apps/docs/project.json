@@ -1,0 +1,111 @@
+{
+  "name": "internal-docs",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/docs/src",
+  "tags": [],
+  "targets": {
+    "generate-docs-manifest": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "inputs": [
+        "{workspaceRoot}/tools/generate-docs-manifest/**/*",
+        "{workspaceRoot}/tools/workspace-plugin/generators/icon-library/lib/**/*",
+        "{workspaceRoot}/node_modules/@iconify/json/package.json",
+        "{workspaceRoot}/node_modules/@iconify/json/json/**/*.json",
+        "{workspaceRoot}/packages/**/icon-set.json",
+        "{workspaceRoot}/packages/**/icon-entries.json",
+        "sharedGlobals"
+      ],
+      "outputs": [
+        "{projectRoot}/public/icons",
+        "{projectRoot}/public/sitemap.xml",
+        "{projectRoot}/public/robots.txt",
+        "{projectRoot}/public/llms.txt",
+        "{projectRoot}/public/llms-full.txt"
+      ],
+      "options": {
+        "command": "tsx tools/generate-docs-manifest/index.ts",
+        "cwd": "{workspaceRoot}"
+      }
+    },
+    "build": {
+      "executor": "@angular/build:application",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "dependsOn": ["^build", "generate-docs-manifest"],
+      "options": {
+        "outputPath": "dist/apps/docs",
+        "browser": "apps/docs/src/main.ts",
+        "tsConfig": "apps/docs/tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/docs/public"
+          }
+        ],
+        "styles": ["apps/docs/src/styles.css"],
+        "server": "apps/docs/src/main.server.ts",
+        "ssr": {
+          "entry": "apps/docs/src/server.ts"
+        },
+        "outputMode": "server"
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "500kb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      }
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@angular/build:dev-server",
+      "defaultConfiguration": "development",
+      "configurations": {
+        "production": {
+          "buildTarget": "internal-docs:build:production"
+        },
+        "development": {
+          "buildTarget": "internal-docs:build:development"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@angular/build:unit-test",
+      "options": {
+        "watch": false
+      }
+    },
+    "serve-static": {
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "internal-docs:build",
+        "port": 4200,
+        "staticFilePath": "dist/apps/docs/browser",
+        "spa": true
+      }
+    }
+  }
+}

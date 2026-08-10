@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "IconLibrary",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Iconify collection id in @iconify/json (e.g. `fluent`, `ei`). The generator scaffolds one publishable library `@ngxi/<name>` and derives its secondary entry points from the collection's icon names automatically.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "Which Iconify collection should the library use?"
+    }
+  },
+  "required": ["name"]
+}

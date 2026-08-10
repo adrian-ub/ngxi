@@ -1,0 +1,16 @@
+{
+  "name": "@ngxi/workspace-plugin",
+  "version": "0.0.1",
+  "private": true,
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "dependencies": {
+    "@iconify/json": "^2.2.508",
+    "@iconify/types": "^2.0.0",
+    "@nx/angular": "23.1.1",
+    "@nx/devkit": "23.1.1",
+    "tslib": "^2.3.0"
+  },
+  "generators": "./generators.json"
+}

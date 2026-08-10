@@ -1,0 +1,387 @@
+<div
+  class="mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-8 sm:px-6 lg:px-8"
+>
+  <!-- Header -->
+  <header class="mb-10">
+    <div class="flex items-center justify-between">
+      <h1
+        class="text-lg font-bold leading-none tracking-tighter text-foreground"
+      >
+        <button
+          type="button"
+          (click)="goHome()"
+          aria-label="ngxi docs home"
+          class="group flex items-baseline cursor-pointer"
+        >
+          <pre
+            class="text-lg font-bold leading-none tracking-tighter text-foreground"
+          >
+ngxi</pre
+          >
+          <span
+            class="text-sm font-normal leading-none tracking-tighter text-muted-foreground/40 transition-colors group-hover:text-muted-foreground"
+            >alpha</span
+          >
+        </button>
+      </h1>
+      <div class="flex items-center gap-2">
+        <button
+          type="button"
+          (click)="toggleTheme()"
+          class="font-mono text-[10px] text-muted-foreground transition-colors hover:text-foreground"
+        >
+          <span class="inline-block size-1.5 rounded-full bg-foreground"></span>
+          {{ isDarkMode() ? '[light]' : '[dark]' }}
+        </button>
+        <a
+          href="https://github.com/adrian-ub/ngxi"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-mono text-[10px] text-muted-foreground transition-colors hover:text-foreground"
+          >[github]</a
+        >
+      </div>
+    </div>
+
+    <div
+      class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-4"
+    >
+      <div class="flex flex-col gap-1">
+        <p class="font-mono text-sm text-foreground">
+          angular icon components — built on iconify data
+        </p>
+        <p class="font-mono text-xs text-muted-foreground">
+          {{ totalIconsInWorkspace().toLocaleString() }} icons · {{
+          sets().length }} collections
+        </p>
+      </div>
+      <button
+        type="button"
+        cdkCopyToClipboard
+        [cdkCopyToClipboard]="installCommand()"
+        (cdkCopyToClipboardCopied)="onInstallCopied()"
+        class="group flex w-full max-w-full items-center gap-3 overflow-hidden border border-border bg-card px-4 py-3 font-mono text-sm text-muted-foreground transition-colors hover:border-foreground/20 hover:text-foreground sm:w-auto"
+      >
+        <span class="select-none text-muted-foreground/50">$</span>
+        <span class="min-w-0 overflow-hidden text-ellipsis whitespace-nowrap"
+          >{{ installCommand() }}</span
+        >
+        <span
+          class="ml-auto text-muted-foreground/40 transition-colors group-hover:text-foreground/60"
+        >
+          @if (installCopied()) {
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="14"
+            height="14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          } @else {
+          <svg
+            class="h-3.5 w-3.5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect width="14" height="14" x="8" y="8"></rect>
+            <path
+              d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"
+            ></path>
+          </svg>
+          }
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sticky search bar -->
+  <div
+    class="sticky top-0 z-50 py-3 transition-[background-color,border-color] duration-200 border-b border-transparent"
+  >
+    <div class="flex w-full flex-col gap-3 sm:flex-row sm:items-end">
+      <div class="relative flex-1">
+        <span
+          class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground select-none"
+          >&gt;</span
+        ><input
+          id="search-input"
+          type="search"
+          spellcheck="false"
+          placeholder="search icons or collections..."
+          [ngModel]="query()"
+          (ngModelChange)="query.set($event)"
+          [disabled]="sets().length === 0"
+          class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input w-full min-w-0 rounded-md border px-3 py-1 shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-10 pl-7 font-mono text-base sm:text-sm bg-background"
+        />
+      </div>
+      <div class="flex flex-wrap items-end gap-3 sm:flex-nowrap">
+        <div
+          class="flex min-w-0 flex-1 basis-[120px] flex-col gap-1 sm:flex-initial sm:basis-auto"
+        >
+          <label class="font-mono text-[10px] text-muted-foreground/60"
+            >collection</label
+          >
+
+          <select
+            id="collection-select"
+            aria-label="collection"
+            [ngModel]="selectedSet()?.collection ?? ''"
+            (ngModelChange)="onSetChange($event)"
+            [disabled]="sets().length === 0"
+            class="inline-flex items-center whitespace-nowrap font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5 h-10 w-full justify-between font-mono text-xs sm:w-[180px]"
+          >
+            <option value="">all collections</option>
+            @for (set of sets(); track set.collection) {
+            <option [value]="set.collection">
+              {{ set.name }} · {{ set.iconCount }}
+            </option>
+            }
+          </select>
+        </div>
+        <div
+          class="flex min-w-0 flex-1 basis-[120px] flex-col gap-1 sm:flex-initial sm:basis-auto"
+        >
+          <label class="font-mono text-[10px] text-muted-foreground/60"
+            >category</label
+          >
+
+          <select
+            id="category-select"
+            aria-label="category"
+            [ngModel]="category()"
+            (ngModelChange)="onCategoryChange($event)"
+            [disabled]="sets().length === 0"
+            class="inline-flex items-center whitespace-nowrap font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5 h-10 w-full justify-between font-mono text-xs sm:w-[160px]"
+          >
+            <option value="">all categories</option>
+            @for (cat of availableCategories(); track cat) {
+            <option [value]="cat">{{ cat }}</option>
+            }
+          </select>
+        </div>
+        <div
+          class="flex min-w-0 flex-1 basis-[120px] flex-col gap-1 sm:flex-initial sm:basis-auto"
+        >
+          <label class="font-mono text-[10px] text-muted-foreground/60"
+            >license</label
+          >
+
+          <select
+            id="license-select"
+            aria-label="license"
+            [ngModel]="license()"
+            (ngModelChange)="onLicenseChange($event)"
+            [disabled]="sets().length === 0"
+            class="inline-flex items-center whitespace-nowrap font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5 h-10 w-full justify-between font-mono text-xs sm:w-[140px]"
+          >
+            <option value="">all licenses</option>
+            @for (lic of availableLicenses(); track lic) {
+            <option [value]="lic">{{ lic }}</option>
+            }
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main area: landing, search, browse grid, or detail dialog -->
+  <main class="mt-6 flex-1">
+    @if (sets().length === 0) {
+    <div class="flex flex-col items-center gap-4 py-20 text-center">
+      <p class="font-mono text-sm text-muted-foreground">
+        No icon manifest available
+      </p>
+      <p class="max-w-md font-mono text-[10px] text-muted-foreground/60">
+        run the manifest generator to create the icon set assets in public/icons
+      </p>
+      <button
+        type="button"
+        class="flex max-w-full items-center gap-3 overflow-hidden border border-border bg-card px-4 py-2 font-mono text-xs text-muted-foreground transition-colors hover:border-foreground/20 hover:text-foreground"
+      >
+        <span class="select-none text-muted-foreground/50">$</span>
+        <code class="truncate"
+          >pnpm tsx tools/generate-docs-manifest/index.ts</code
+        >
+      </button>
+    </div>
+    } @else if (selectedEntry(); as entry) {
+    <app-icon-detail-dialog
+      [entry]="entry"
+      [bundle]="dialogBundle()"
+      (closeDialog)="onDialogClose()"
+    ></app-icon-detail-dialog>
+    } @else if (browsing()) {
+    <!-- Browse mode -->
+    <button
+      type="button"
+      (click)="backToCollections()"
+      class="border border-border bg-background px-2.5 py-1 font-mono text-xs text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+    >
+      [&larr; collections]
+    </button>
+    <div class="mt-4">
+      <app-icon-grid
+        [entries]="filteredIndex()"
+        [bundle]="currentBundle()"
+        [cols]="8"
+        (iconSelect)="onIconSelect($event)"
+        (clearSearch)="query.set('')"
+      ></app-icon-grid>
+    </div>
+    } @else if (query().trim()) {
+    <!-- Search mode: matching collections + per-set icon groups -->
+    @if (searchCollectionGroups().length > 0) {
+    <section aria-label="matching collections" class="mb-8">
+      <div class="flex flex-wrap gap-3">
+        @for (set of searchCollectionGroups(); track set.collection) {
+        <button
+          type="button"
+          (click)="openSet(set)"
+          class="collection-card group flex items-center gap-3 border border-border bg-background px-4 py-3 text-left transition-colors hover:bg-accent active:scale-[0.92] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+        >
+          <span
+            class="collection-card-name truncate font-mono text-xs text-foreground"
+            >{{ set.name }}</span
+          >
+          <span
+            class="collection-card-meta shrink-0 font-mono text-[10px] text-muted-foreground"
+            >{{ set.iconCount }} icons · {{ set.license }}</span
+          >
+        </button>
+        }
+      </div>
+    </section>
+    } @for (group of globalGroups(); track group.set.collection) {
+    <section class="icon-group mb-10">
+      <header class="mb-3 flex flex-wrap items-baseline justify-between gap-4">
+        <h2 class="font-mono text-xs text-foreground">
+          &#64;ngxi/{{ group.set.collection }} · {{ group.set.collection }} · {{
+          group.entries.length }}
+        </h2>
+        <button
+          type="button"
+          (click)="openSet(group.set)"
+          class="font-mono text-[10px] text-muted-foreground transition-colors hover:text-foreground"
+        >
+          [open collection]
+        </button>
+      </header>
+      <app-icon-grid
+        [entries]="group.entries"
+        [bundle]="bundleOf(group.set)"
+        [cols]="8"
+        (iconSelect)="onIconSelect($event)"
+        (clearSearch)="query.set('')"
+      ></app-icon-grid>
+    </section>
+    } @if (searchCollectionGroups().length === 0) {
+    <div class="flex flex-col items-center gap-4 py-20 text-center">
+      <p class="font-mono text-sm text-muted-foreground">
+        no icons found for "{{ query().trim() }}"
+      </p>
+      <button
+        type="button"
+        (click)="query.set('')"
+        class="border border-border bg-background px-2.5 py-1 font-mono text-xs text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+      >
+        [clear search]
+      </button>
+    </div>
+    } } @else {
+    <!-- Landing: full collections grid -->
+    @if (filteredSets().length > 0) {
+    <section aria-label="collections">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+      >
+        @for (set of filteredSets(); track set.collection) { @let samples =
+        samplesOf(set.collection);
+        <button
+          type="button"
+          (click)="openSet(set)"
+          class="group flex items-center gap-4 border border-border bg-background p-4 transition-colors hover:bg-accent -mb-px -mr-px text-left cursor-pointer"
+        >
+          <div class="grid grid-cols-3 items-center gap-1.5 shrink-0">
+            @if (samples; as s) { @for (sampleName of set.samples.slice(0, 6);
+            track sampleName) { @if (s.samples.get(sampleName); as body) {
+            <app-sample-icon
+              class="size-4 text-muted-foreground transition-colors group-hover:text-foreground"
+              [body]="body"
+              [viewBox]="s.viewBox"
+            ></app-sample-icon>
+            } } } @else { @for (i of sampleSkeleton; track i) {
+            <div class="h-4 w-4 animate-pulse bg-muted-foreground/10"></div>
+            } }
+          </div>
+          <div class="min-w-0 flex-1">
+            <p
+              class="truncate font-mono text-xs font-medium text-foreground group-hover:text-foreground"
+            >
+              {{set.collection}}
+            </p>
+            <p class="truncate font-mono text-[10px] text-muted-foreground">
+              {{set.name}}
+            </p>
+          </div>
+          <span
+            class="font-mono text-[10px] text-muted-foreground/60 shrink-0 tabular-nums"
+            >{{set.iconCount}}</span
+          >
+        </button>
+        }
+      </div>
+    </section>
+    } @else {
+    <div
+      class="collection-empty flex flex-col items-center gap-4 py-20 text-center"
+    >
+      <p class="font-mono text-sm text-muted-foreground">
+        no collections found
+      </p>
+      <button
+        type="button"
+        (click)="clearFilters()"
+        class="border border-border bg-background px-2.5 py-1 font-mono text-xs text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+      >
+        [clear filters]
+      </button>
+    </div>
+    } }
+  </main>
+
+  <!-- Footer -->
+  <footer
+    class="mt-12 flex flex-col items-center gap-4 border-t border-border pb-8 pt-6"
+  >
+    <p class="text-center font-mono text-[10px] text-muted-foreground/40">
+      powered by
+      <a
+        href="https://iconify.design"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-muted-foreground/60 transition-colors hover:text-muted-foreground"
+        >iconify</a
+      >
+      ·
+      <a
+        href="https://github.com/adrian-ub/ngxi"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-muted-foreground/60 transition-colors hover:text-muted-foreground"
+        >github</a
+      >
+      · MIT license
+    </p>
+  </footer>
+</div>

@@ -1,0 +1,2 @@
+<% if (exportIcons) { %>export * from './lib/icons';
+<% } %>
