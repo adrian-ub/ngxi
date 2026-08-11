@@ -1,0 +1,87 @@
+# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# compiled output
+dist
+tmp
+out-tsc
+
+# dependencies
+node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+.nx/cache
+.nx/workspace-data
+.nx/migrate-runs
+.claude/worktrees
+.claude/settings.local.json
+
+.angular
+
+__screenshots__/
+
+vitest.config.*.timestamp*
+
+.atl
+.nx/polygraph
+
+# Generated icon library sources — written by the `generate-icons` target
+# (nx run <set>:generate-icons) at build time from packages/<set>/icon-set.json.
+# Covers the primary entry (src/lib/icons/) and any secondary entry points
+# (src/<entry>/lib/icons/).
+packages/**/icons/
+
+# Heavy per-set icon reference JSON — written by the `update-reference` target
+# (nx run <set>:update-reference) from node_modules/@iconify/json on demand.
+# No set ships its JSON in git (lucide included): every set regenerates it
+# locally, so a fresh clone stays light. `icon-entries.json` (the split plan)
+# IS tracked: it is small and part of the package config.
+packages/*/icon-set.json
+packages/**/README.md
+
+# Generated docs manifest assets — written by the `generate-docs-manifest`
+# target (nx run internal-docs:generate-docs-manifest) at build time from
+# packages/*/icon-set.json into apps/docs/public/icons/.
+apps/docs/public/icons/
+
+# The static lazy-import map MUST stay committed: Nx derives internal-docs'
+# dependency graph from it (231 library imports). A fresh CI runner computes
+# the graph before the generate-docs-manifest target runs, so an ignored map
+# leaves internal-docs with zero dependencies and its build cannot chain the
+# generate-icons tasks that produce src/lib/icons. Regeneration is
+# deterministic, so the committed file stays in sync with the packages.
+
+# Generated SEO / AI-discovery files — emitted by the same target into
+# apps/docs/public/ (sitemap.xml, robots.txt, llms.txt, llms-full.txt).
+apps/docs/public/sitemap.xml
+apps/docs/public/robots.txt
+apps/docs/public/llms.txt
+apps/docs/public/llms-full.txt

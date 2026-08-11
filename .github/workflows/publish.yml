@@ -1,0 +1,87 @@
+name: Publish
+
+# Publish every package to npm. Runs automatically when a new v* tag is pushed
+# (from the Iconify icon sets update workflow or a manual release). The npm
+# dist-tag is derived from the tag: alpha -> alpha, beta -> beta, rc -> next,
+# stable -> latest. No manual inputs.
+#
+# All libraries live in one FIXED release group (__default__ in nx.json), so
+# `nx release publish` must run over the whole group: Nx rejects --projects
+# subset filtering on fixed groups (filtering would require independent
+# groups, which breaks the single shared workspace version). Nx checks the
+# registry before publishing and skips versions that already exist, so a
+# failed run is safe to re-run — only the unpublished libraries are pushed on
+# retry.
+#
+# Auth: npm Trusted Publisher (OIDC) — no NODE_AUTH_TOKEN here. Each package on
+# npmjs.com must point its Trusted Publisher at
+#   https://github.com/adrian-ub/ngxi/.github/workflows/publish.yml
+# (npm configures trusted publishers per package, not per org/scope — 236
+# packages, one entry each.) The publish job needs id-token: write for both
+# the OIDC login and npm provenance signing.
+#
+# Fallback if OIDC is not configured everywhere: restore setup-node's
+# registry-url and set NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} (already
+# present in the repo secrets).
+on:
+  push:
+    tags:
+      - 'v*'
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # OIDC trusted publisher + npm provenance
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v6
+        name: Install pnpm
+        with:
+          version: 11.20.0
+          run_install: false
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Derive dist-tag from pushed tag
+        id: tag
+        run: |
+          case "$GITHUB_REF_NAME" in
+            *-alpha.*) DIST_TAG="alpha" ;;
+            *-beta.*) DIST_TAG="beta" ;;
+            *-rc.*) DIST_TAG="next" ;;
+            *) DIST_TAG="latest" ;;
+          esac
+          echo "tag=$GITHUB_REF_NAME dist_tag=$DIST_TAG"
+          echo "dist_tag=$DIST_TAG" >> "$GITHUB_OUTPUT"
+
+      # nx-release-publish publishes from dist/{projectRoot}, so every library
+      # must be built first. The Release workflow already built everything, but
+      # dist is not persisted across workflow runs, so rebuild here. The 12GB
+      # heap cap matches the largest icon sets; parallel=2 keeps two heavy
+      # builds from exceeding the runner's RAM (standard runner: 2 vCPU/7GB).
+      - name: Build all libraries
+        env:
+          NODE_OPTIONS: --max-old-space-size=12288
+        run: pnpm exec nx run-many -t build --parallel=2
+
+      # Publish the whole fixed group with the dist-tag derived above. Nx
+      # checks the registry first and skips versions that are already there.
+      - name: Publish all libraries
+        env:
+          NPM_CONFIG_PROVENANCE: true
+          TAG: ${{ steps.tag.outputs.dist_tag }}
+        run: pnpm exec nx release publish --tag "$TAG" --outputStyle=static

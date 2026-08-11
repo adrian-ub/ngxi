@@ -1,0 +1,79 @@
+{
+  "name": "fluent",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/fluent/src",
+  "prefix": "fluent",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "project": "packages/fluent/ng-package.json",
+        "tsConfig": "packages/fluent/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/fluent/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "dependsOn": ["generate-icons"]
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    },
+    "update-reference": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "inputs": [
+        "{workspaceRoot}/node_modules/@iconify/json/package.json",
+        "{workspaceRoot}/node_modules/@iconify/json/json/fluent.json"
+      ],
+      "outputs": ["{projectRoot}/icon-set.json"],
+      "options": {
+        "command": "tsx tools/generate-icons/index.ts fluent --reference-only",
+        "cwd": "{workspaceRoot}"
+      }
+    },
+    "generate-icons": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "dependsOn": ["update-reference"],
+      "inputs": [
+        "{projectRoot}/icon-set.json",
+        "{workspaceRoot}/tools/generate-icons/**/*",
+        "{workspaceRoot}/tools/workspace-plugin/generators/icon-library/lib/**/*",
+        "{projectRoot}/icon-entries.json"
+      ],
+      "outputs": [
+        "{projectRoot}/10-filled/src/lib/icons",
+        "{projectRoot}/12-filled/src/lib/icons",
+        "{projectRoot}/16-filled/src/lib/icons",
+        "{projectRoot}/20-filled/src/lib/icons",
+        "{projectRoot}/24-filled/src/lib/icons",
+        "{projectRoot}/28-filled/src/lib/icons",
+        "{projectRoot}/32-filled/src/lib/icons",
+        "{projectRoot}/48-filled/src/lib/icons",
+        "{projectRoot}/light/src/lib/icons",
+        "{projectRoot}/10-regular/src/lib/icons",
+        "{projectRoot}/12-regular/src/lib/icons",
+        "{projectRoot}/16-regular/src/lib/icons",
+        "{projectRoot}/20-regular/src/lib/icons",
+        "{projectRoot}/24-regular/src/lib/icons",
+        "{projectRoot}/28-regular/src/lib/icons",
+        "{projectRoot}/32-regular/src/lib/icons",
+        "{projectRoot}/48-regular/src/lib/icons",
+        "{projectRoot}/README.md"
+      ],
+      "options": {
+        "command": "ulimit -n 65536 && NODE_OPTIONS=\"--max-old-space-size=8192\" tsx tools/generate-icons/index.ts fluent",
+        "cwd": "{workspaceRoot}"
+      }
+    }
+  }
+}

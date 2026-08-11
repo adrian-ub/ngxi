@@ -1,0 +1,59 @@
+{
+  "name": "cuida",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/cuida/src",
+  "prefix": "cuida",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "project": "packages/cuida/ng-package.json",
+        "tsConfig": "packages/cuida/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/cuida/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "dependsOn": ["generate-icons"]
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    },
+    "update-reference": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "inputs": [
+        "{workspaceRoot}/node_modules/@iconify/json/package.json",
+        "{workspaceRoot}/node_modules/@iconify/json/json/cuida.json"
+      ],
+      "outputs": ["{projectRoot}/icon-set.json"],
+      "options": {
+        "command": "tsx tools/generate-icons/index.ts cuida --reference-only",
+        "cwd": "{workspaceRoot}"
+      }
+    },
+    "generate-icons": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "dependsOn": ["update-reference"],
+      "inputs": [
+        "{projectRoot}/icon-set.json",
+        "{workspaceRoot}/tools/generate-icons/**/*",
+        "{workspaceRoot}/tools/workspace-plugin/generators/icon-library/lib/**/*"
+      ],
+      "outputs": ["{projectRoot}/src/lib/icons", "{projectRoot}/README.md"],
+      "options": {
+        "command": "ulimit -n 65536 && NODE_OPTIONS=\"--max-old-space-size=8192\" tsx tools/generate-icons/index.ts cuida",
+        "cwd": "{workspaceRoot}"
+      }
+    }
+  }
+}

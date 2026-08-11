@@ -1,0 +1,59 @@
+{
+  "name": "k8s",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/k8s/src",
+  "prefix": "k8s",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/k8s/ng-package.json",
+        "tsConfig": "packages/k8s/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/k8s/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production",
+      "dependsOn": ["generate-icons"]
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    },
+    "update-reference": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "inputs": [
+        "{workspaceRoot}/node_modules/@iconify/json/package.json",
+        "{workspaceRoot}/node_modules/@iconify/json/json/k8s.json"
+      ],
+      "outputs": ["{projectRoot}/icon-set.json"],
+      "options": {
+        "command": "tsx tools/generate-icons/index.ts k8s --reference-only",
+        "cwd": "{workspaceRoot}"
+      }
+    },
+    "generate-icons": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "dependsOn": ["update-reference"],
+      "inputs": [
+        "{projectRoot}/icon-set.json",
+        "{workspaceRoot}/tools/generate-icons/**/*",
+        "{workspaceRoot}/tools/workspace-plugin/generators/icon-library/lib/**/*"
+      ],
+      "outputs": ["{projectRoot}/src/lib/icons", "{projectRoot}/README.md"],
+      "options": {
+        "command": "ulimit -n 65536 && NODE_OPTIONS=\"--max-old-space-size=8192\" tsx tools/generate-icons/index.ts k8s",
+        "cwd": "{workspaceRoot}"
+      }
+    }
+  }
+}

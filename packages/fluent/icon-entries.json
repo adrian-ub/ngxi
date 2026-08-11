@@ -1,0 +1,73 @@
+{
+  "collection": "fluent",
+  "entries": [
+    {
+      "name": "10-filled",
+      "filter": "*-10-filled"
+    },
+    {
+      "name": "12-filled",
+      "filter": "*-12-filled"
+    },
+    {
+      "name": "16-filled",
+      "filter": "*-16-filled"
+    },
+    {
+      "name": "20-filled",
+      "filter": "*-20-filled"
+    },
+    {
+      "name": "24-filled",
+      "filter": "*-24-filled"
+    },
+    {
+      "name": "28-filled",
+      "filter": "*-28-filled"
+    },
+    {
+      "name": "32-filled",
+      "filter": "*-32-filled"
+    },
+    {
+      "name": "48-filled",
+      "filter": "*-48-filled"
+    },
+    {
+      "name": "light",
+      "filter": "*-light"
+    },
+    {
+      "name": "10-regular",
+      "filter": "*-10-regular"
+    },
+    {
+      "name": "12-regular",
+      "filter": "*-12-regular"
+    },
+    {
+      "name": "16-regular",
+      "filter": "*-16-regular"
+    },
+    {
+      "name": "20-regular",
+      "filter": "*-20-regular"
+    },
+    {
+      "name": "24-regular",
+      "filter": "*-24-regular"
+    },
+    {
+      "name": "28-regular",
+      "filter": "*-28-regular"
+    },
+    {
+      "name": "32-regular",
+      "filter": "*-32-regular"
+    },
+    {
+      "name": "48-regular",
+      "filter": "*-48-regular"
+    }
+  ]
+}

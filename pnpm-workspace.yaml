@@ -1,0 +1,15 @@
+packages:
+  - 'tools/workspace-plugin'
+
+allowBuilds:
+  '@parcel/watcher': false
+  '@swc/core': false
+  esbuild: false
+  less: false
+  lmdb: false
+  msgpackr-extract: false
+  nx: true
+  unrs-resolver: false
+
+autoInstallPeers: true
+strictPeerDependencies: false

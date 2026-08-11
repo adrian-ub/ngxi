@@ -1,0 +1,52 @@
+name: Iconify sets tracker
+
+on:
+  schedule:
+    - cron: '0 9 * * 1' # every Monday 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          filter: tree:0
+
+      - uses: pnpm/action-setup@v6
+        name: Install pnpm
+        with:
+          version: 11.20.0
+          run_install: false
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Compute missing icon sets
+        run: node tools/scripts/missing-icon-sets.mjs > /tmp/tracker-body.md
+
+      - name: Create or update tracker issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          LABEL='icon-sets'
+          TITLE='Icon sets missing in ngxi'
+          gh label create "$LABEL" \
+            --description 'Tracker of Iconify icon sets not yet scaffolded as ngxi icon libraries' \
+            --force
+          ISSUE="$(gh issue list --label "$LABEL" --state open --json number --jq '.[0].number // empty')"
+          if [ -n "$ISSUE" ]; then
+            gh issue edit "$ISSUE" --title "$TITLE" --body-file /tmp/tracker-body.md
+            echo "Updated tracker issue #$ISSUE"
+          else
+            gh issue create --title "$TITLE" --label "$LABEL" --body-file /tmp/tracker-body.md
+          fi

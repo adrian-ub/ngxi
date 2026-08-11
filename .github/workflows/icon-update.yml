@@ -1,0 +1,174 @@
+name: Iconify icon sets update
+
+# Keep @iconify/json up to date with iconify/icon-sets (publishes several times
+# a week). Runs DAILY; the first step compares the pinned version with the npm
+# registry BEFORE installing anything, so a no-change day costs ~1 minute.
+#
+# When a newer version exists, this workflow runs the FULL pipeline with NO
+# pull request:
+#   1. bump @iconify/json and refresh the lockfile.
+#      packages/*/icon-set.json + src/lib/icons are generated at BUILD time by
+#      generate-icons and are gitignored, so the bot commit only carries the
+#      dependency bump and the refreshed lockfile.
+#   2. commit and push directly to main with PAT_GITHUB — a personal token,
+#      NOT the built-in GITHUB_TOKEN: pushes made with GITHUB_TOKEN do not
+#      trigger other workflows, so ci.yml would never run. With PAT_GITHUB the
+#      push fires ci.yml (lint/test/e2e + build matrix on main).
+#   3. release in place with nx release: build everything, bump all packages to
+#      the next version (computed from the last git tag), commit, tag vX.Y.Z,
+#      push and create the GitHub release. The push fires ci.yml; the tag push
+#      fires publish.yml (both because the checkout uses PAT_GITHUB).
+#      The next version follows the prerelease branch of the last tag
+#      (alpha -> alpha.1, beta -> beta.1, rc -> next, stable -> patch-alpha.0)
+#      and the very first release is 1.0.0-alpha.0.
+#      The explicit NEXT specifier is REQUIRED: Nx cannot read a prerelease git
+#      tag as the current version ("No git tags matching pattern"), so nx.json
+#      falls back to the versions in the package.json manifests
+#      (fallbackCurrentVersionResolver: disk).
+# Manual releases always win: running `nx release --skip-publish 1.0.0-beta.0`
+# locally (or any tag push) switches the branch, and the next automatic update
+# continues from there.
+#
+# WARNING: this publishes to npm with no human review — intentional. The
+# safety net is npm versioning: a wrong publish can always be followed by a
+# corrected one, and both Release and Publish are idempotent on re-run.
+on:
+  schedule:
+    - cron: '0 6 * * *' # every day 06:00 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: icon-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          # Personal token: enables the push below to trigger ci.yml and the
+          # whole chain. The built-in GITHUB_TOKEN cannot do this.
+          token: ${{ secrets.PAT_GITHUB }}
+
+      - name: Check for newer @iconify/json
+        id: check
+        run: |
+          CURRENT="$(node -p "const p=require('./package.json'); ((p.devDependencies||{})['@iconify/json']||'').replace(/^[^0-9]*/,'')")"
+          LATEST="$(npm view @iconify/json version)"
+          echo "current=$CURRENT latest=$LATEST"
+          if [ "$CURRENT" = "$LATEST" ]; then
+            echo "already up to date"
+            echo "updated=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "updated=true" >> "$GITHUB_OUTPUT"
+            echo "latest=$LATEST" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up pnpm
+        if: steps.check.outputs.updated == 'true'
+        uses: pnpm/action-setup@v6
+        with:
+          version: 11.20.0
+          run_install: false
+
+      - name: Set up Node
+        if: steps.check.outputs.updated == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        if: steps.check.outputs.updated == 'true'
+        run: pnpm install --frozen-lockfile
+
+      - name: Bump @iconify/json
+        if: steps.check.outputs.updated == 'true'
+        env:
+          LATEST: ${{ steps.check.outputs.latest }}
+        run: |
+          node -e '
+            const fs = require("fs");
+            const files = ["package.json", "tools/workspace-plugin/package.json"];
+            for (const f of files) {
+              const pkg = JSON.parse(fs.readFileSync(f, "utf8"));
+              let touched = false;
+              for (const section of ["dependencies", "devDependencies"]) {
+                if (pkg[section] && pkg[section]["@iconify/json"]) {
+                  pkg[section]["@iconify/json"] = "^" + process.env.LATEST;
+                  touched = true;
+                }
+              }
+              if (touched) fs.writeFileSync(f, JSON.stringify(pkg, null, 2) + "\n");
+            }
+          '
+          # The manifest was just bumped above, so the lockfile must be
+          # refreshed here (CI defaults to frozen-lockfile and would fail).
+          pnpm install --no-frozen-lockfile
+
+      - name: Commit and push to main
+        id: commit
+        if: steps.check.outputs.updated == 'true'
+        env:
+          LATEST: ${{ steps.check.outputs.latest }}
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No generated content changed; nothing to release."
+            echo "release=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name 'UbLabs[bot]'
+          git config user.email '92824821+ublabs[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m "feat: update @iconify/json to v$LATEST"
+          git pull --rebase origin main
+          git push origin main
+          echo "release=true" >> "$GITHUB_OUTPUT"
+
+      - name: Compute next version
+        id: version
+        if: steps.commit.outputs.release == 'true'
+        run: |
+          LAST_TAG="$(git describe --tags --abbrev=0 2>/dev/null || true)"
+          if [ -z "$LAST_TAG" ]; then
+            NEXT="1.0.0-alpha.0"
+            echo "first release -> $NEXT"
+          else
+            NEXT="$(node -e '
+              const v = process.argv[1].replace(/^v/, "");
+              const m = v.match(/^(\d+)\.(\d+)\.(\d+)(?:-([a-zA-Z0-9]+)\.(\d+))?$/);
+              if (m[4]) {
+                console.log(m[1] + "." + m[2] + "." + m[3] + "-" + m[4] + "." + (Number(m[5]) + 1));
+              } else {
+                console.log(m[1] + "." + m[2] + "." + (Number(m[3]) + 1) + "-alpha.0");
+              }
+            ' "$LAST_TAG")"
+            echo "last_tag=$LAST_TAG next=$NEXT"
+          fi
+          echo "next=$NEXT" >> "$GITHUB_OUTPUT"
+
+      - name: Configure Git user for the release commit
+        if: steps.commit.outputs.release == 'true'
+        run: |
+          git config user.name 'UbLabs[bot]'
+          git config user.email '92824821+ublabs[bot]@users.noreply.github.com'
+
+      # nx release does version -> changelog -> commit -> tag -> push -> GitHub
+      # release. --skip-publish stops before npm (publish.yml runs on the tag
+      # push). The push uses the PAT_GITHUB remote from checkout, so the tag
+      # push fires publish.yml and the main push fires ci.yml.
+      # The explicit NEXT specifier is required: Nx cannot read a prerelease
+      # git tag as the current version, so it falls back to the manifest
+      # versions on disk (which the previous release left at the last version).
+      - name: Release (bump all packages, tag, GitHub release)
+        if: steps.commit.outputs.release == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEXT: ${{ steps.version.outputs.next }}
+        run: pnpm exec nx release --skip-publish "$NEXT"

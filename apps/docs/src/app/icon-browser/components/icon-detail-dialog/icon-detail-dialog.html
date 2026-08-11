@@ -1,0 +1,320 @@
+<div
+  class="relative flex max-h-[90vh] w-full max-w-3xl flex-col overflow-hidden border border-border bg-background shadow-2xl"
+  role="dialog"
+  aria-labelledby="icon-dialog-title"
+>
+  <!-- Dialog Header -->
+  <header
+    class="sticky top-0 z-10 flex items-center justify-between border-b border-border bg-background px-6 py-4"
+  >
+    <div class="flex items-center gap-3">
+      <div class="border border-border bg-background p-2">
+        <div class="flex h-6 w-6 items-center justify-center text-foreground">
+          <div
+            class="flex h-4 w-4 items-center justify-center [&>svg]:h-full [&>svg]:w-full"
+            [innerHTML]="safePreview()"
+          ></div>
+        </div>
+      </div>
+      <div>
+        <h2
+          id="icon-dialog-title"
+          class="icon-name text-lg font-bold tracking-tight"
+        >
+          {{ entry().name }} @if (entry().aliasOf) {
+          <span
+            class="ml-2 align-middle font-mono text-[10px] text-muted-foreground/60"
+            >Alias of {{ entry().aliasOf }}</span
+          >
+          }
+        </h2>
+        <p class="mt-0.5 font-mono text-[10px] text-muted-foreground">
+          {{ entry().importFrom }} · {{ entry().className }}
+        </p>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      (click)="onClose()"
+      aria-label="Close dialog"
+      class="border border-border bg-background p-2 font-mono text-[10px] text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+    >
+      [close]
+    </button>
+  </header>
+
+  <!-- Dialog Body (Scrollable) -->
+  <div class="custom-scrollbar space-y-6 overflow-y-auto p-6">
+    <!-- Preview + Metadata -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
+      <!-- Preview Canvas -->
+      <div
+        class="relative flex min-h-[220px] flex-col items-center justify-center border border-border bg-background p-6 md:col-span-5"
+      >
+        <div class="pixel-dots"></div>
+
+        <div
+          class="relative z-10 flex items-center justify-center transition-all duration-200"
+          [style.width.px]="previewSize()"
+          [style.height.px]="previewSize()"
+          [style.color]="previewColor()"
+        >
+          <div
+            class="flex h-full w-full items-center justify-center [&>svg]:h-full [&>svg]:w-full"
+            [innerHTML]="safePreview()"
+          ></div>
+        </div>
+
+        <div
+          class="relative z-10 mt-6 flex w-full flex-wrap items-center justify-center gap-4 border-t border-border/60 pt-4"
+        >
+          <div class="flex items-center gap-2">
+            <span class="font-mono text-[10px] text-muted-foreground/60"
+              >size</span
+            >
+            <div
+              class="flex items-center gap-0.5 border border-border bg-background p-0.5"
+            >
+              @for (sz of availableSizes; track sz) {
+              <button
+                type="button"
+                (click)="previewSize.set(sz)"
+                [class.bg-foreground]="previewSize() === sz"
+                [class.text-background]="previewSize() === sz"
+                [class.text-muted-foreground]="previewSize() !== sz"
+                class="px-2 py-0.5 font-mono text-[10px] transition-colors"
+              >
+                {{ sz }}px
+              </button>
+              }
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <span class="font-mono text-[10px] text-muted-foreground/60"
+              >color</span
+            >
+            <div
+              class="flex items-center gap-1 border border-border bg-background p-1"
+            >
+              @for (c of availableColors; track c.value) {
+              <button
+                type="button"
+                (click)="previewColor.set(c.value)"
+                [title]="c.label"
+                [style.backgroundColor]="c.value === 'currentColor' ? '#737373' : c.value"
+                [class.ring-1]="previewColor() === c.value"
+                [class.ring-ring]="previewColor() === c.value"
+                class="h-4 w-4 border border-border transition-all duration-150"
+              ></button>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metadata + Quick Copy -->
+      <div class="flex flex-col justify-between space-y-4 md:col-span-7">
+        <dl class="icon-meta border border-border bg-background">
+          <div
+            class="flex items-center justify-between gap-4 border-b border-border/60 px-4 py-3"
+          >
+            <dt class="font-mono text-[10px] text-muted-foreground/60">
+              directive class
+            </dt>
+            <dd>
+              <code class="font-mono text-xs">{{ entry().className }}</code>
+            </dd>
+          </div>
+          <div
+            class="flex items-center justify-between gap-4 border-b border-border/60 px-4 py-3"
+          >
+            <dt class="font-mono text-[10px] text-muted-foreground/60">
+              selector attribute
+            </dt>
+            <dd>
+              <code class="font-mono text-xs">{{ entry().selectorAttr }}</code>
+            </dd>
+          </div>
+          <div
+            class="flex items-center justify-between gap-4 border-b border-border/60 px-4 py-3"
+          >
+            <dt class="font-mono text-[10px] text-muted-foreground/60">
+              import package
+            </dt>
+            <dd>
+              <code class="font-mono text-xs">{{ entry().importFrom }}</code>
+            </dd>
+          </div>
+          @if (entry().aliasOf) {
+          <div class="flex items-center justify-between gap-4 px-4 py-3">
+            <dt class="font-mono text-[10px] text-muted-foreground/60">
+              canonical name
+            </dt>
+            <dd>
+              <code class="font-mono text-xs">{{ entry().aliasOf }}</code>
+            </dd>
+          </div>
+          } @if (entry().categories; as categories) {
+          <div
+            class="flex items-center justify-between gap-4 border-b border-border/60 px-4 py-3"
+          >
+            <dt class="font-mono text-[10px] text-muted-foreground/60">
+              categories
+            </dt>
+            <dd class="flex flex-wrap justify-end gap-1.5">
+              @for (category of categories; track category) {
+              <span
+                class="border border-border bg-background px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground"
+                >{{ category }}</span
+              >
+              }
+            </dd>
+          </div>
+          }
+        </dl>
+
+        <div class="flex gap-2">
+          <button
+            type="button"
+            cdkCopyToClipboard
+            [cdkCopyToClipboard]="rawSvgSnippet()"
+            (cdkCopyToClipboardCopied)="onCopy('svg')"
+            class="copy-btn flex flex-1 items-center justify-center gap-2 border border-border bg-background px-3 py-2 font-mono text-xs text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+          >
+            @if (copiedField() === 'svg') {
+            <span>svg copied!</span>
+            } @else {
+            <span>Copy Raw SVG</span>
+            }
+          </button>
+
+          <button
+            type="button"
+            cdkCopyToClipboard
+            [cdkCopyToClipboard]="templateSnippet()"
+            (cdkCopyToClipboardCopied)="onCopy('template')"
+            class="copy-btn flex flex-1 items-center justify-center gap-2 bg-foreground px-3 py-2 font-mono text-xs text-background transition-opacity hover:opacity-80"
+          >
+            @if (copiedField() === 'template') {
+            <span>template copied!</span>
+            } @else {
+            <span>Copy Template Tag</span>
+            }
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Code Snippets Section -->
+    <div class="space-y-4 border-t border-border pt-5">
+      <!-- Installation -->
+      <section class="snippet border border-border bg-background">
+        <div
+          class="flex items-center justify-between border-b border-border px-4 py-2"
+        >
+          <h3 class="font-mono text-xs text-muted-foreground">Installation</h3>
+          <div
+            class="flex items-center gap-0.5 border border-border bg-background p-0.5"
+          >
+            @for (pm of ['pnpm', 'npm', 'yarn', 'bun']; track pm) {
+            <button
+              type="button"
+              (click)="packageManager.set($any(pm))"
+              [class.bg-foreground]="packageManager() === pm"
+              [class.text-background]="packageManager() === pm"
+              [class.text-muted-foreground]="packageManager() !== pm"
+              class="px-2 py-0.5 font-mono text-[10px] transition-colors"
+            >
+              {{ pm }}
+            </button>
+            }
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-between gap-4 px-4 py-3 font-mono text-xs"
+        >
+          <span class="select-none text-muted-foreground/50">$</span>
+          <code class="min-w-0 flex-1 overflow-x-auto whitespace-pre"
+            >{{ installSnippet() }}</code
+          >
+          <button
+            type="button"
+            cdkCopyToClipboard
+            [cdkCopyToClipboard]="installSnippet()"
+            (cdkCopyToClipboardCopied)="onCopy('install')"
+            title="Copy install command"
+            class="copy-btn border border-border bg-background px-2 py-1 font-mono text-[10px] text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+          >
+            @if (copiedField() === 'install') {
+            <span>copied!</span>
+            } @else {
+            <span>copy</span>
+            }
+          </button>
+        </div>
+      </section>
+
+      <!-- Angular Import -->
+      <section class="snippet border border-border bg-background">
+        <div
+          class="flex items-center justify-between border-b border-border px-4 py-2"
+        >
+          <h3 class="font-mono text-xs text-muted-foreground">
+            Angular Import
+          </h3>
+          <button
+            type="button"
+            cdkCopyToClipboard
+            [cdkCopyToClipboard]="importSnippet()"
+            (cdkCopyToClipboardCopied)="onCopy('import')"
+            title="Copy import statement"
+            class="copy-btn border border-border bg-background px-2 py-1 font-mono text-[10px] text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+          >
+            @if (copiedField() === 'import') {
+            <span>copied!</span>
+            } @else {
+            <span>copy</span>
+            }
+          </button>
+        </div>
+        <div
+          class="flex items-center justify-between gap-4 px-4 py-3 font-mono text-xs"
+        >
+          <code class="min-w-0 flex-1 overflow-x-auto whitespace-pre"
+            >{{ importSnippet() }}</code
+          >
+        </div>
+      </section>
+
+      <!-- Component Integration -->
+      <section class="snippet border border-border bg-background">
+        <div
+          class="flex items-center justify-between border-b border-border px-4 py-2"
+        >
+          <h3 class="font-mono text-xs text-muted-foreground">
+            Component Integration
+          </h3>
+          <button
+            type="button"
+            cdkCopyToClipboard
+            [cdkCopyToClipboard]="componentImportSnippet()"
+            (cdkCopyToClipboardCopied)="onCopy('component')"
+            title="Copy component code"
+            class="copy-btn border border-border bg-background px-2 py-1 font-mono text-[10px] text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+          >
+            @if (copiedField() === 'component') {
+            <span>copied!</span>
+            } @else {
+            <span>copy</span>
+            }
+          </button>
+        </div>
+        <pre
+          class="overflow-x-auto p-4 font-mono text-xs"
+        ><code>{{ componentImportSnippet() }}</code></pre>
+      </section>
+    </div>
+  </div>
+</div>

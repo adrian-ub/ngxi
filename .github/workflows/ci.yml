@@ -1,0 +1,148 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  # ── Dynamic build matrix ──────────────────────────────────────────────────
+  # Derives the icon-library build matrix from the workspace via Nx. On main
+  # it covers every library; on PRs only the affected ones.
+  prepare-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          filter: tree:0
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v6
+        name: Install pnpm
+        with:
+          version: 11.20.0
+          run_install: false
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+
+      - uses: nrwl/nx-set-shas@v5
+
+      - name: Compute build matrix
+        id: matrix
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            MATRIX="$(node tools/scripts/build-matrix.mjs --affected)"
+          else
+            MATRIX="$(node tools/scripts/build-matrix.mjs)"
+          fi
+          echo "matrix=$MATRIX" >> "$GITHUB_OUTPUT"
+          echo "Build matrix computed: $(echo "$MATRIX" | python3 -c 'import json,sys; print(len(json.load(sys.stdin)["include"]), "entries")')"
+
+  # ── Icon library builds (matrix) ──────────────────────────────────────────
+  # Each entry builds a chunk of libraries sequentially with the Node heap
+  # that matches the biggest set in the chunk (see tools/scripts/build-matrix.mjs).
+  build-libraries:
+    needs: prepare-matrix
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.prepare-matrix.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          filter: tree:0
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v6
+        name: Install pnpm
+        with:
+          version: 11.20.0
+          run_install: false
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+
+      - uses: nrwl/nx-set-shas@v5
+
+      # NODE_OPTIONS is inherited by the Angular ng-packagr build process.
+      # The generate-icons targets set their own higher heap inline.
+      - name: Build ${{ matrix.name }}
+        env:
+          NODE_OPTIONS: ${{ matrix.node_options }}
+        run: |
+          pnpm exec nx run-many \
+            --target=build \
+            --projects="${{ matrix.projects }}" \
+            --parallel=${{ matrix.parallel }}
+
+  # ── Lint, test, e2e (affected only) ───────────────────────────────────────
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          filter: tree:0
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v6
+        name: Install pnpm
+        with:
+          version: 11.20.0
+          run_install: false
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps
+      - uses: nrwl/nx-set-shas@v5
+      - run: pnpm exec nx affected -t lint test e2e
+
+  # ── Docs site build ────────────────────────────────────────────────────────
+  build-docs:
+    needs: prepare-matrix
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          filter: tree:0
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v6
+        name: Install pnpm
+        with:
+          version: 11.20.0
+          run_install: false
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+      - uses: nrwl/nx-set-shas@v5
+
+      - name: Build docs site
+        env:
+          NODE_OPTIONS: --max-old-space-size=12288
+          NX_PARALLEL: 1
+        run: |
+          pnpm exec nx build internal-docs

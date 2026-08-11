@@ -1,0 +1,25 @@
+import { defineConfig } from 'vitest/config';
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import { nxCopyAssetsPlugin } from '@nx/vite/plugins/nx-copy-assets.plugin';
+
+export default defineConfig(() => ({
+  root: __dirname,
+  cacheDir: '../../node_modules/.vite/tools/workspace-plugin',
+  plugins: [nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
+  test: {
+    name: 'workspace-plugin',
+    watch: false,
+    globals: true,
+    environment: 'jsdom',
+    include: [
+      '{src,generators,tests}/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
+      '../../tools/generate-icons/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
+      '../../tools/generate-docs-manifest/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
+    ],
+    reporters: ['default'],
+    coverage: {
+      reportsDirectory: '../../coverage/tools/workspace-plugin',
+      provider: 'v8' as const,
+    },
+  },
+}));
