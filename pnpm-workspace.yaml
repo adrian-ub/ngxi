@@ -12,4 +12,6 @@ allowBuilds:
   unrs-resolver: false
 
 autoInstallPeers: true
+minimumReleaseAgeExclude:
+  - '@iconify/json@2.2.515'
 strictPeerDependencies: false
