@@ -211,7 +211,10 @@ async function scaffoldLib(
     return json;
   });
 
+  const iconSetName = iconSet.info?.name ?? collection;
+
   updateJson(tree, joinPathFragments(packageDir, 'package.json'), (json) => {
+    json.description = `${iconSetName} for Angular applications`;
     json.dependencies = { ...(json.dependencies ?? {}), tslib: '^2.3.0' };
     // The icons only rely on signals and control flow, both stable since
     // Angular 17. Override the peer range the @nx/angular:library generator

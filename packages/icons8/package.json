@@ -21,5 +21,6 @@
   "bugs": "https://github.com/adrian-ub/ngxi/issues",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "Icons8 Windows 10 Icons for Angular applications"
 }

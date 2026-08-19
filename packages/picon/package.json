@@ -21,5 +21,6 @@
   "bugs": "https://github.com/adrian-ub/ngxi/issues",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "Pico-icon for Angular applications"
 }
