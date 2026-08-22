@@ -13,5 +13,5 @@ allowBuilds:
 
 autoInstallPeers: true
 minimumReleaseAgeExclude:
-  - '@iconify/json@2.2.515 || 2.2.516 || 2.2.517 || 2.2.518'
+  - '@iconify/json@2.2.515 || 2.2.516 || 2.2.517 || 2.2.518 || 2.2.519'
 strictPeerDependencies: false
