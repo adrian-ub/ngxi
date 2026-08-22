@@ -1,6 +1,6 @@
 {
   "name": "@ngxi/guidance",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "peerDependencies": {
     "@angular/common": ">=17.0.0",
     "@angular/core": ">=17.0.0"
