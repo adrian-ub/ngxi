@@ -76,8 +76,8 @@ importers:
         specifier: ^9.8.0
         version: 9.39.5
       '@iconify/json':
-        specifier: ^2.2.519
-        version: 2.2.519
+        specifier: ^2.2.520
+        version: 2.2.520
       '@iconify/tools':
         specifier: ^5.0.12
         version: 5.0.12
@@ -217,8 +217,8 @@ importers:
   tools/workspace-plugin:
     dependencies:
       '@iconify/json':
-        specifier: ^2.2.519
-        version: 2.2.519
+        specifier: ^2.2.520
+        version: 2.2.520
       '@iconify/types':
         specifier: ^2.0.0
         version: 2.0.0
@@ -1554,8 +1554,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify/json@2.2.519':
-    resolution: {integrity: sha512-zwjQIYYLnT8b2SUELffIDzsfftTjdYTUfE+iaZGUg8jEckx69CU/tWqt65GZt7B3D2pKk7f651lbY9QYWIKOYA==}
+  '@iconify/json@2.2.520':
+    resolution: {integrity: sha512-WySQx8JrnDXmrEc5nhbnXAQU1T5Xjyhz+ZdB0kW1Lufp/GcDT2lLKHSYm3bvwPRbd/GL1ZFaKI/M65g4Z/uUTQ==}
 
   '@iconify/tools@5.0.12':
     resolution: {integrity: sha512-aFPwSFmFphUPVjNLUkgxgUPSPVgTEEjv0mE7NgvfoQBuE5TtsMrKa4HTY65cM5oXZ2a1xKQcW/RKhiOKEiAarw==}
@@ -11800,7 +11800,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@iconify/json@2.2.519':
+  '@iconify/json@2.2.520':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 2.0.3
