@@ -6,7 +6,7 @@
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
   "dependencies": {
-    "@iconify/json": "^2.2.520",
+    "@iconify/json": "^2.2.521",
     "@iconify/types": "^2.0.0",
     "@nx/angular": "23.1.1",
     "@nx/devkit": "23.1.1",

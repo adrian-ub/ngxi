@@ -39,7 +39,7 @@
     "@angular/compiler-cli": "~22.0.4",
     "@angular/language-service": "~22.0.4",
     "@eslint/js": "^9.8.0",
-    "@iconify/json": "^2.2.520",
+    "@iconify/json": "^2.2.521",
     "@iconify/tools": "^5.0.12",
     "@iconify/types": "^2.0.0",
     "@iconify/utils": "^3.1.4",
