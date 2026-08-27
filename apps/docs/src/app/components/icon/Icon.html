@@ -1,0 +1,9 @@
+@if (iconResource(); as icon) {
+  <div
+    class="size-16 shrink-0 [&>svg]:size-full"
+    [innerHTML]="icon.body"
+    aria-hidden="true"
+  ></div>
+} @else {
+  <div class="size-16 animate-pulse bg-muted-foreground/10"></div>
+}

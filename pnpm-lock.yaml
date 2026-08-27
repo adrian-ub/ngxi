@@ -50,6 +50,12 @@ importers:
       express:
         specifier: ^4.21.2
         version: 4.22.2(supports-color@7.2.0)
+      fzf:
+        specifier: ^0.5.2
+        version: 0.5.2
+      lru-cache:
+        specifier: ^11.5.2
+        version: 11.5.2
       rxjs:
         specifier: ~7.8.0
         version: 7.8.2
@@ -5537,6 +5543,9 @@ packages:
   fuse.js@7.3.0:
     resolution: {integrity: sha512-plz8RVjfcDedTGfVngWH1jmJvBvAwi1v2jecfDerbEnMcmOYUEEwKFTHbNoCiYyzaK2Ws8lABkTCcRSqCY1q4w==}
     engines: {node: '>=10'}
+
+  fzf@0.5.2:
+    resolution: {integrity: sha512-Tt4kuxLXFKHy8KT40zwsUPUkg1CrsgY25FxA2U/j/0WgEDCk3ddc/zLTCCcbSHX9FcKtLuVaDGtGE/STWC+j3Q==}
 
   gensync@1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
@@ -17387,6 +17396,8 @@ snapshots:
   function-timeout@1.0.2: {}
 
   fuse.js@7.3.0: {}
+
+  fzf@0.5.2: {}
 
   gensync@1.0.0-beta.2: {}
 

@@ -1,0 +1,40 @@
+<header class="mb-10">
+  <div class="flex items-center justify-between">
+    <h1 class="text-lg font-bold leading-none tracking-tighter text-foreground">
+      <a
+        type="button"
+        routerLink="/"
+        aria-label="ngxi docs home"
+        class="group flex items-baseline cursor-pointer"
+      >
+        <pre
+          class="text-lg font-bold leading-none tracking-tighter text-foreground"
+        >
+ngxi</pre
+        >
+        <span
+          class="text-sm font-normal leading-none tracking-tighter text-muted-foreground/40 transition-colors group-hover:text-muted-foreground"
+          >alpha</span
+        >
+      </a>
+    </h1>
+    <div class="flex items-center gap-2">
+      <button
+        type="button"
+        (click)="theme.toggle()"
+        class="font-mono text-[10px] text-muted-foreground transition-colors hover:text-foreground"
+      >
+        <span class="inline-block size-1.5 rounded-full bg-foreground"></span>
+        {{ theme.isDarkMode() ? '[light]' : '[dark]' }}
+      </button>
+      <a
+        href="https://github.com/adrian-ub/ngxi"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-mono text-[10px] text-muted-foreground transition-colors hover:text-foreground"
+      >
+        [github]
+      </a>
+    </div>
+  </div>
+</header>

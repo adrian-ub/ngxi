@@ -3,14 +3,14 @@ import { join } from 'node:path';
 import { RenderMode, ServerRoute } from '@angular/ssr';
 
 /**
- * The docs manifest on disk. It is emitted by the cacheable
- * `generate-docs-manifest` target (which the build depends on) before this
- * file is evaluated during prerendering, so it is always current at build
- * time. Resolved relative to the nx workspace root (the process cwd).
+ * The collections info on disk. It is emitted by the `prepare` target (which
+ * the build depends on) before this file is evaluated during prerendering,
+ * so it is always current at build time. Resolved relative to the nx
+ * workspace root (the process cwd).
  */
-const manifestPath = join(
+const collectionsInfoPath = join(
   process.cwd(),
-  'apps/docs/public/icons/manifest.json',
+  'apps/docs/src/app/data/collections-info.json',
 );
 
 export const serverRoutes: ServerRoute[] = [
@@ -23,13 +23,15 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender,
     getPrerenderParams: async () => {
       try {
-        const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8')) as {
-          sets: { collection: string }[];
-        };
-        return manifest.sets.map((set) => ({ collection: set.collection }));
+        const collections = JSON.parse(
+          readFileSync(collectionsInfoPath, 'utf-8'),
+        ) as { id: string }[];
+        return collections
+          .filter((c) => !c.id.startsWith('_'))
+          .map((c) => ({ collection: c.id }));
       } catch {
-        // Missing/unparseable manifest: prerender nothing here and let the
-        // build fail naturally elsewhere (the generate target runs first).
+        // Missing/unparseable data: prerender nothing here and let the
+        // build fail naturally elsewhere (the prepare target runs first).
         return [];
       }
     },

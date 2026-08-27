@@ -6,36 +6,32 @@
   "sourceRoot": "apps/docs/src",
   "tags": [],
   "targets": {
-    "generate-docs-manifest": {
+    "prepare": {
       "executor": "nx:run-commands",
       "cache": true,
       "inputs": [
-        "{workspaceRoot}/tools/generate-docs-manifest/**/*",
-        "{workspaceRoot}/tools/workspace-plugin/generators/icon-library/lib/**/*",
+        "{workspaceRoot}/apps/docs/scripts/**/*",
         "{workspaceRoot}/node_modules/@iconify/json/package.json",
-        "{workspaceRoot}/node_modules/@iconify/utils/package.json",
-        "{workspaceRoot}/node_modules/@iconify/json/json/**/*.json",
-        "{workspaceRoot}/packages/**/icon-set.json",
-        "{workspaceRoot}/packages/**/icon-entries.json",
-        "sharedGlobals"
+        "{workspaceRoot}/node_modules/@iconify/json/json/**/*.json"
       ],
       "outputs": [
+        "{projectRoot}/public/collections",
         "{projectRoot}/public/icons",
         "{projectRoot}/public/sitemap.xml",
         "{projectRoot}/public/robots.txt",
         "{projectRoot}/public/llms.txt",
-        "{projectRoot}/public/llms-full.txt"
+        "{projectRoot}/public/llms-full.txt",
+        "{projectRoot}/src/app/data/collections-info.json"
       ],
       "options": {
-        "command": "tsx tools/generate-docs-manifest/index.ts",
-        "cwd": "{workspaceRoot}"
+        "command": "tsx apps/docs/scripts/prepare.ts"
       }
     },
     "build": {
       "executor": "@angular/build:application",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
-      "dependsOn": ["^build", "generate-docs-manifest"],
+      "dependsOn": ["^build", "prepare"],
       "options": {
         "outputPath": "dist/apps/docs",
         "browser": "apps/docs/src/main.ts",
@@ -52,7 +48,7 @@
           "entry": "apps/docs/src/server.ts"
         },
         "outputMode": "server",
-        "externalDependencies": ["@iconify/json"]
+        "externalDependencies": []
       },
       "configurations": {
         "production": {
@@ -80,7 +76,7 @@
     "serve": {
       "continuous": true,
       "executor": "@angular/build:dev-server",
-      "dependsOn": ["generate-docs-manifest"],
+      "dependsOn": ["prepare"],
       "defaultConfiguration": "development",
       "configurations": {
         "production": {
@@ -99,7 +95,7 @@
       "options": {
         "watch": false
       },
-      "dependsOn": ["generate-docs-manifest"]
+      "dependsOn": ["prepare"]
     },
     "serve-static": {
       "continuous": true,

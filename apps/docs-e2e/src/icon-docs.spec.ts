@@ -2,11 +2,12 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { test, expect, type Locator, type Page } from '@playwright/test';
 import { workspaceRoot } from '@nx/devkit';
+import { version as iconifyVersion } from '@iconify/json/package.json';
 
 /**
- * The e2e server starts `internal-docs:serve`, whose `generate-docs-manifest`
- * dependency materializes the real manifest before tests run. Derive expected
- * card counts from it instead of hardcoding, so adding/removing collections
+ * The e2e server starts `internal-docs:serve`, whose `prepare` dependency
+ * materializes the real manifest before tests run. Derive expected card
+ * counts from it instead of hardcoding, so adding/removing collections
  * keeps these tests correct.
  */
 const manifest = JSON.parse(
@@ -15,7 +16,13 @@ const manifest = JSON.parse(
     'utf-8',
   ),
 ) as {
-  sets: Array<{ collection: string; name: string; license: string; categories: string[] }>;
+  sets: Array<{
+    collection: string;
+    name: string;
+    license: string;
+    categories: string[];
+    category: string;
+  }>;
 };
 const totalSets = manifest.sets.length;
 const ui24Count = manifest.sets.filter((s) =>
@@ -76,7 +83,7 @@ test.describe('Icon Docs Site', () => {
     page,
   }) => {
     await page.goto('/');
-    await expect(page.locator('app-icon-browser')).toBeVisible();
+    await expect(page.locator('app-icon-browser-home')).toBeVisible();
     // No set auto-selected: the select shows the "all collections" empty option.
     await expect(page.locator('#collection-select')).toHaveValue('');
     // The full collections landing grid renders every manifest set.
@@ -98,7 +105,7 @@ test.describe('Icon Docs Site', () => {
     await expect(page.locator('.grid-viewport')).toBeVisible();
     await expect(page.locator('.icon-cell').first()).toBeVisible();
     // Meta line shows the active set.
-    await expect(page.locator('app-icon-browser')).toContainText('Lucide');
+    await expect(page.locator('app-icon-browser-collection')).toContainText('Lucide');
     await expect(
       page.getByRole('button', { name: /collections/ }),
     ).toBeVisible();
@@ -117,7 +124,7 @@ test.describe('Icon Docs Site', () => {
 
   test('deep link to a collection renders its grid', async ({ page }) => {
     await page.goto('/collection/lucide');
-    await expect(page.locator('app-icon-browser')).toBeVisible();
+    await expect(page.locator('app-icon-browser-collection')).toBeVisible();
     await expect(page.locator('.grid-viewport')).toBeVisible();
     await expect(page.locator('.icon-cell').first()).toBeVisible();
   });
@@ -323,5 +330,44 @@ test.describe('Icon Docs Site', () => {
 
     await expect(page).toHaveURL(/\/$/);
     await expect(page.locator('.collection-card').first()).toBeVisible();
+  });
+
+  test('browse mode shows the sidebar with the active collection flagged', async ({
+    page,
+  }) => {
+    await page.goto('/collection/lucide');
+    await expect(page.locator('.grid-viewport')).toBeVisible();
+    await waitForClient(page);
+
+    const sidebar = page.locator('app-collection-sidebar');
+    await expect(sidebar).toBeVisible();
+    // The active set's row carries the highlighted state.
+    await expect(
+      sidebar.locator('[data-set-row][data-active="true"]'),
+    ).toContainText('Lucide');
+  });
+
+  test('sidebar switches collections preserving the query', async ({
+    page,
+  }) => {
+    await page.goto('/collection/lucide?q=circle-check');
+    await expect(page.locator('.grid-viewport')).toBeVisible();
+    await waitForClient(page);
+
+    // Sidebar rows are named by display name + icon count (e.g. "Carbon 2733");
+    // the regex must match the exact casing of the accessible name.
+    await page
+      .locator('app-collection-sidebar')
+      .getByRole('button', { name: /^Carbon / })
+      .click();
+
+    // The query parameter survives the collection switch.
+    await expect(page).toHaveURL(/\/collection\/carbon\?q=circle-check$/);
+    await expect(page.locator('#search-input')).toHaveValue('circle-check');
+  });
+
+  test('footer credits the installed iconify version', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('footer')).toContainText(`v${iconifyVersion}`);
   });
 });
