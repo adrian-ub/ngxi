@@ -1,0 +1,7 @@
+@for (collection of collections(); track collection.id) {
+  @defer (on viewport) {
+    <CollectionEntry [collection]="collection" />
+  } @placeholder {
+    <div class="h-16"></div>
+  }
+}

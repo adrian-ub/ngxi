@@ -15,8 +15,7 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay()),
     provideBrowserGlobalErrorListeners(),
     provideRouter(appRoutes, withComponentInputBinding()),
-    // Manifests flow through HttpClient so the SSR renderer awaits the
-    // manifest resource before painting the shell.
+    // HttpClient for loading collection data and SSR prerendering.
     provideHttpClient(withFetch()),
   ],
 };

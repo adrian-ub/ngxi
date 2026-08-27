@@ -7,6 +7,4 @@ import { RouterModule } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App {
-  protected title = 'internal-docs';
-}
+export class App {}

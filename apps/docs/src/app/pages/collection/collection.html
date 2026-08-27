@@ -1,0 +1,86 @@
+<div class="flex h-screen flex-col overflow-hidden">
+  <Navbar />
+
+  <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-4 px-4">
+    <div class="flex flex-col gap-1">
+      <p class="font-mono text-sm text-foreground">
+        {{ collectionInfo()?.name }}
+      </p>
+      <p class="font-mono text-xs text-muted-foreground">
+        {{ collectionInfo()?.author?.name }} ·
+        <a [href]="collectionInfo()?.license?.url" target="_blank" rel="noopener noreferrer">
+          {{ collectionInfo()?.license?.title }}
+        </a>
+      </p>
+    </div>
+    <app-install-pill [packageName]="
+        collectionInfo()?.id ? '@ngxi/' + collectionInfo()?.id : ''
+      " class="w-full sm:w-auto"></app-install-pill>
+  </div>
+
+  <div class="flex-auto flex flex-col overflow-hidden">
+    <div class="mx-4 my-6">
+      <Searchbar [formField]="searchField" [placeholder]="'Search '+ collectionInfo()?.name + ' icons...'" />
+    </div>
+
+    <div class="flex flex-auto h-full overflow-hidden">
+      <aside
+        class="w-[250px] overflow-y-auto scrollbar-gutter-stable shrink-0 bg-background h-full px-4 border-r hidden md:block">
+        <div class="sticky top-0 z-1 mb-4 pt-1">
+          <div class="relative">
+            <span
+              class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-sm text-muted-foreground select-none">&gt;</span>
+            <input type="search" placeholder="filter collections..."
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input w-full min-w-0 rounded-md border px-3 py-1 shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-10 pl-7 font-mono text-base sm:text-sm bg-background"
+              [formField]="searchCategory" />
+          </div>
+        </div>
+        @for (c of filteredCollections(); track c.id) {
+        <a [routerLink]="['/collection', c.id]"
+          class="flex items-center justify-between px-3 py-1 font-mono text-xs text-muted-foreground transition-colors hover:text-foreground border-b"
+          [class.bg-accent]="c.id === collection()" [class.text-foreground]="c.id === collection()"
+          [class.sticky]="c.id === collection()" [class.top-15]="c.id === collection()"
+          [class.bottom-0]="c.id === collection()" [class.z-10]="c.id === collection()">
+          <span class="truncate">{{ c.name }}</span>
+          <span>{{ c.total }}</span>
+        </a>
+        }
+      </aside>
+
+      <main class="flex-1 overflow-y-auto px-2">
+        @if (iconData.isLoading()) {
+        <div class="flex items-center justify-center py-20">
+          <span class="text-sm text-muted-foreground">Loading icons…</span>
+        </div>
+        } @else {
+        <div
+          class="grid grid-cols-[repeat(auto-fill,minmax(160px,1fr))] overflow-hidden divide-x divide-y *:border-r *:border-b border-t border-l border-border">
+          @for (iconName of filteredIcons(); track iconName) {
+          <button (click)="openDialog(iconName)"
+            class="group flex flex-col items-center gap-2.5 bg-background p-4 overflow-hidden transition-transform duration-100 hover:bg-accent active:scale-[0.92]">
+            <div class="flex size-16 items-center justify-center text-foreground">
+              <Icon [collection]="collectionInfo()!" [icon]="iconName" />
+            </div>
+            <span class="truncate font-mono text-[10px] text-muted-foreground group-hover:text-foreground">{{
+              iconName }}</span>
+          </button>
+          } @empty {
+          <div class="col-span-full flex flex-col items-center gap-4 py-20 text-center">
+            <p class="font-mono text-sm text-muted-foreground">
+              no icons found
+            </p>
+          </div>
+          }
+        </div>
+        }
+      </main>
+    </div>
+  </div>
+  <Footer></Footer>
+</div>
+
+@defer (when selectedIcon()) {
+  @if(selectedIcon()) {
+    <app-icon-detail-dialog [iconName]="selectedIcon()!" [collection]="collection()" (closeDialog)="selectedIcon.set(null)" />
+  }
+}

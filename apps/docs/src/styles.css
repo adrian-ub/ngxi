@@ -83,29 +83,40 @@
   * {
     @apply border-border outline-ring/50;
   }
-  html {
-    scrollbar-gutter: stable both-edges;
-  }
+
   body {
     @apply bg-background text-foreground;
   }
+
   input[type='search']::-webkit-search-cancel-button {
     -webkit-appearance: none;
     appearance: none;
   }
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    opacity: 0.035;
-    background-image:
-      radial-gradient(circle, var(--foreground) 1px, transparent 1px),
-      radial-gradient(circle, var(--foreground) 1px, transparent 1px);
-    background-size: 4px 4px;
-    background-position:
-      0 0,
-      2px 2px;
+
+  /* Scrollbar */
+  * {
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: 6px;
+    scrollbar-color: transparent;
+  }
+
+  ::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.2);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 3px;
   }
 }

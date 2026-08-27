@@ -71,6 +71,9 @@ packages/**/README.md
 # target (nx run internal-docs:generate-docs-manifest) at build time from
 # packages/*/icon-set.json into apps/docs/public/icons/.
 apps/docs/public/icons/
+apps/docs/public/collections/
+apps/docs/public/collections-meta.json
+apps/docs/src/app/data/collections-info.json
 
 # The static lazy-import map MUST stay committed: Nx derives internal-docs'
 # dependency graph from it (231 library imports). A fresh CI runner computes

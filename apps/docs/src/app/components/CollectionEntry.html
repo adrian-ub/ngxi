@@ -1,0 +1,47 @@
+<a
+  class="collection-card group flex items-center gap-4 bg-background p-4 transition-colors hover:bg-accent text-left cursor-pointer"
+  [routerLink]="['/collection', collection().id]"
+>
+  <div class="grid grid-cols-3 items-center gap-1.5 shrink-0">
+    @for (sampleIcon of collection().sampleIcons; track sampleIcon) {
+      @defer (on viewport) {
+        @let prepacked = collection().prepacked;
+        @let icon = prepacked?.icons?.[sampleIcon];
+
+        @if (icon) {
+          <svg
+            [attr.viewBox]="
+              '0 0 ' +
+              (icon.width ?? prepacked?.width ?? 24) +
+              ' ' +
+              (icon.height ?? prepacked?.height ?? 24)
+            "
+            [innerHTML]="icon.body | safeHtml"
+            class="w-6 h-6 shrink-0"
+            aria-hidden="true"
+          ></svg>
+        }
+      } @placeholder {
+        <div class="size-6 animate-pulse"></div>
+      }
+    }
+  </div>
+
+  <div class="min-w-0 flex-1">
+    <p
+      class="truncate font-mono text-xs font-medium text-foreground group-hover:text-foreground"
+    >
+      {{ collection().name }}
+    </p>
+    <p class="truncate font-mono text-[10px] text-muted-foreground">
+      {{ collection().author?.name }}
+    </p>
+    <p class="truncate font-mono text-[10px] text-muted-foreground">
+      {{ collection().license?.title }}
+    </p>
+  </div>
+  <span
+    class="font-mono text-[10px] text-muted-foreground/60 shrink-0 tabular-nums"
+    >{{ collection().total }}</span
+  >
+</a>

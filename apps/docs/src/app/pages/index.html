@@ -1,0 +1,56 @@
+<div class="flex h-screen flex-col overflow-hidden">
+  <Navbar />
+  <div
+    class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-4 px-4"
+  >
+    <div class="flex flex-col gap-1">
+      <p class="font-mono text-sm text-foreground">
+        angular icon components — built on iconify data
+      </p>
+      <p class="font-mono text-xs text-muted-foreground">
+        {{ totalIcons().toLocaleString() }} icons · {{ setCount() }} collections
+      </p>
+    </div>
+    <app-install-pill class="w-full sm:w-auto"></app-install-pill>
+  </div>
+  <div class="flex-auto flex flex-col overflow-hidden">
+    <div class="overflow-hidden grid grid-rows-[max-content_1fr]">
+      <div class="mx-4 my-6">
+        <Searchbar [formField]="searchCategory" />
+      </div>
+
+      <div class="overflow-y-auto relative space-y-6 scrollbar-gutter-stable">
+        @for (c of availableCategories(); track c.name) {
+          @defer (on viewport) {
+            <div class="pl-4 pr-2">
+              <div
+                class="text-lg sticky top-0 bg-background z-1 text-muted-foreground/70"
+              >
+                {{ c.name }}
+              </div>
+              <CollectionEntries [collections]="c.collections" />
+            </div>
+          } @placeholder {
+            <div class="pl-4 pr-2 py-4">
+              <div class="h-6 w-32 bg-muted animate-pulse rounded mb-3"></div>
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                @for (i of [1, 2, 3, 4]; track i) {
+                  <div class="h-20 bg-muted animate-pulse rounded"></div>
+                }
+              </div>
+            </div>
+          }
+        } @empty {
+          <div
+            class="flex flex-col grow w-full py-6 justify-center items-center"
+          >
+            <span class="text-lg opacity-60"
+              >There is no result corresponding to your search query.</span
+            >
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+  <Footer></Footer>
+</div>
