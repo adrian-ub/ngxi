@@ -90,29 +90,63 @@ function iconComponentSelector(
   return className.charAt(0).toLowerCase() + className.slice(1);
 }
 
+
 /**
- * Loads a collection's IconifyJSON data via fetch.
- * Collection pages use `RenderMode.ClientOnly`, so this always runs in a
- * browser context with a valid base URL.
+ * Loads a collection's IconifyJSON data from its gzip-compressed bundle.
+ *
+ * Collection pages use `RenderMode.Server` (SSR), so this runs on both the
+ * server (during SSR) and the browser (during client navigation).
+ *
+ * The bundle is stored as `<id>.json.gz`; it is decompressed in memory with
+ * `DecompressionStream` (available in Node 18+ and browsers).
  */
-export function loadCollection(id: string): Promise<IconifyJSON> {
+export function loadCollection(
+  id: string,
+): Promise<IconifyJSON> {
   const cached = collectionCache.get(id);
   if (cached) {
     return cached;
   }
 
-  const promise = fetch(`/collections/${id}.json`).then((res) => {
-    if (!res.ok) {
+  const promise = fetch(`/collections/${id}.json.gz`)
+    .then(async (response) => {
+      if (!response.ok) {
+        throw new Error(
+          `HTTP ${response.status} ${response.statusText}`,
+        );
+      }
+
+      if (!response.body) {
+        throw new Error(`Failed to read collection "${id}" body`);
+      }
+
+      // Some dev servers and static hosts add `Content-Encoding: gzip` for
+      // `.gz` files, in which case the browser already transparently
+      // decompressed the body. Only run `DecompressionStream` when that header
+      // is absent and the raw gzip bytes are still on the wire; decompressing
+      // an already-decoded body throws.
+      const encoding = response.headers.get('content-encoding') ?? '';
+      const text = encoding.includes('gzip')
+        ? await response.text()
+        : await new Response(
+            response.body.pipeThrough(new DecompressionStream('gzip')),
+          ).text();
+
+      return JSON.parse(text) as IconifyJSON;
+    })
+    .catch((error: unknown) => {
+      collectionCache.delete(id); // don't cache a failed load
+
       throw new Error(
-        `Failed to load collection "${id}": ${res.status} ${res.statusText}`,
+        `Failed to load collection "${id}": ${error instanceof Error ? error.message : error
+        }`,
       );
-    }
-    return res.json() as Promise<IconifyJSON>;
-  });
+    });
 
   collectionCache.set(id, promise);
   return promise;
 }
+
 
 /**
  * Derives an `IconIndexEntry` for a single icon from the collection's

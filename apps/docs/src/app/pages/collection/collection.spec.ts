@@ -1,13 +1,32 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { provideLocationMocks } from '@angular/common/testing';
-import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import CollectionPage from './collection';
-import { collections } from '../../data';
+import { collections, type CollectionInfo } from '../../data';
 
 const testCollection = collections.find(
-  (c) => !c.hidden && c.icons && c.icons.length > 10,
+  (c) => !c.hidden && (c.total ?? 0) > 10,
 )!;
+
+/**
+ * Exposes CollectionPage's protected members for white-box assertions without
+ * weakening the component's encapsulation. Angular signals make a
+ * `WritableSignal` both callable (`selectedIcon()`) and settable
+ * (`selectedIcon.set(...)`), so the shape below mirrors exactly that.
+ */
+type CollectionPageHarness = {
+  collectionInfo: () => CollectionInfo | null;
+  selectedIcon: {
+    (): string | null;
+    set: (value: string | null) => void;
+  };
+  openDialog: (iconName: string) => void;
+};
+
+function harness(fixture: ComponentFixture<CollectionPage>): CollectionPageHarness {
+  return fixture.componentInstance as unknown as CollectionPageHarness;
+}
 
 function configureTestBed() {
   TestBed.configureTestingModule({
@@ -38,7 +57,7 @@ describe('CollectionPage', () => {
     fixture.componentRef.setInput('collection', testCollection.id);
     fixture.detectChanges();
 
-    const info = fixture.componentInstance.collectionInfo();
+    const info = harness(fixture).collectionInfo();
     expect(info).toBeTruthy();
     expect(info!.id).toBe(testCollection.id);
     expect(info!.name).toBe(testCollection.name);
@@ -50,7 +69,7 @@ describe('CollectionPage', () => {
     fixture.componentRef.setInput('collection', 'nonexistent-collection');
     fixture.detectChanges();
 
-    expect(fixture.componentInstance.collectionInfo()).toBeNull();
+    expect(harness(fixture).collectionInfo()).toBeNull();
   });
 
   it('should open and close the icon dialog', () => {
@@ -59,13 +78,14 @@ describe('CollectionPage', () => {
     fixture.componentRef.setInput('collection', testCollection.id);
     fixture.detectChanges();
 
-    expect(fixture.componentInstance.selectedIcon()).toBeNull();
+    const instance = harness(fixture);
+    expect(instance.selectedIcon()).toBeNull();
 
-    fixture.componentInstance.openDialog('home');
-    expect(fixture.componentInstance.selectedIcon()).toBe('home');
+    instance.openDialog('home');
+    expect(instance.selectedIcon()).toBe('home');
 
-    fixture.componentInstance.selectedIcon.set(null);
-    expect(fixture.componentInstance.selectedIcon()).toBeNull();
+    instance.selectedIcon.set(null);
+    expect(instance.selectedIcon()).toBeNull();
   });
 
   it('should render the collection name', () => {

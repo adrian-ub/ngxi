@@ -1,22 +1,25 @@
 import { TestBed } from '@angular/core/testing';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { IconDetailDialog } from './icon-detail-dialog';
-import * as loadCollectionModule from '../../data/load-collection';
+
+// `loadCollection` is a plain ESM export: Angular's unit-test system blocks
+// `vi.mock` for relative imports and `vi.spyOn` cannot redefine ESM exports.
+// The component loads data through `loadCollection`, which fetches
+// `/collections/{id}.json.gz`. Stubbing the global `fetch` is the supported
+// way to control that data without mocking the module.
+const mockCollectionData = {
+  prefix: 'test',
+  icons: {
+    'test-icon': {
+      body: '<path d="M1 2"/>',
+      width: 24,
+      height: 24,
+    },
+  },
+};
 
 describe('IconDetailDialog', () => {
-  const mockCollectionData = {
-    prefix: 'test',
-    icons: {
-      'test-icon': {
-        body: '<path d="M1 2"/>',
-        width: 24,
-        height: 24,
-      },
-    },
-  };
-
   const createFixture = (iconName = 'test-icon') => {
-    jest.spyOn(loadCollectionModule, 'loadCollection').mockResolvedValue(mockCollectionData as any);
-
     const fixture = TestBed.createComponent(IconDetailDialog);
     fixture.componentRef.setInput('iconName', iconName);
     fixture.componentRef.setInput('collection', 'test-set');
@@ -24,13 +27,24 @@ describe('IconDetailDialog', () => {
   };
 
   beforeEach(async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => ({
+      ok: true,
+      // `loadCollection` checks `response.body` before the content-encoding
+      // branch; with `gzip` it reads `response.text()` and never touches body.
+      body: new ReadableStream(),
+      headers: {
+        get: (name: string) => (name === 'content-encoding' ? 'gzip' : ''),
+      },
+      text: async () => JSON.stringify(mockCollectionData),
+    })));
+
     await TestBed.configureTestingModule({
       imports: [IconDetailDialog],
     }).compileComponents();
   });
 
   afterEach(() => {
-    jest.restoreAllMocks();
+    vi.unstubAllGlobals();
   });
 
   it('creates the component', () => {
@@ -60,7 +74,7 @@ describe('IconDetailDialog', () => {
     await fixture.whenStable();
     fixture.detectChanges();
     expect(fixture.componentInstance.importSnippet()).toBe(
-      "import { TestTestIcon } from '@ngxi/test-set';",
+      "import { TestSetTestIcon } from '@ngxi/test-set';",
     );
   });
 
@@ -69,7 +83,7 @@ describe('IconDetailDialog', () => {
     await fixture.whenStable();
     fixture.detectChanges();
     expect(fixture.componentInstance.templateSnippet()).toContain('<svg');
-    expect(fixture.componentInstance.templateSnippet()).toContain('testTestIcon');
+    expect(fixture.componentInstance.templateSnippet()).toContain('testSetTestIcon');
   });
 
   it('injects the canonical svg resolved from the collection', async () => {
@@ -81,11 +95,6 @@ describe('IconDetailDialog', () => {
   });
 
   it('fails closed to an empty preview when the icon is missing', async () => {
-    jest.spyOn(loadCollectionModule, 'loadCollection').mockResolvedValue({
-      prefix: 'test',
-      icons: {},
-    } as any);
-
     const fixture = createFixture('missing-icon');
     await fixture.whenStable();
     fixture.detectChanges();

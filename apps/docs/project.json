@@ -16,7 +16,6 @@
       ],
       "outputs": [
         "{projectRoot}/public/collections",
-        "{projectRoot}/public/icons",
         "{projectRoot}/public/sitemap.xml",
         "{projectRoot}/public/robots.txt",
         "{projectRoot}/public/llms.txt",
