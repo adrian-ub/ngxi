@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { test, expect, type Locator, type Page } from '@playwright/test';
 import { workspaceRoot } from '@nx/devkit';
@@ -6,29 +6,33 @@ import { version as iconifyVersion } from '@iconify/json/package.json';
 
 /**
  * The e2e server starts `internal-docs:serve`, whose `prepare` dependency
- * materializes the real manifest before tests run. Derive expected card
- * counts from it instead of hardcoding, so adding/removing collections
- * keeps these tests correct.
+ * materializes the real per-collection meta JSONs before tests run. Derive
+ * expected card counts from them instead of hardcoding, so adding/removing
+ * collections keeps these tests correct.
  */
-const manifest = JSON.parse(
-  readFileSync(
-    join(workspaceRoot, 'apps/docs/public/icons/manifest.json'),
-    'utf-8',
-  ),
-) as {
-  sets: Array<{
-    collection: string;
-    name: string;
-    license: string;
-    categories: string[];
-    category: string;
-  }>;
+type CollectionMeta = {
+  id: string;
+  name: string;
+  license?: { title?: string };
+  categories?: Record<string, unknown> | string[];
 };
-const totalSets = manifest.sets.length;
-const ui24Count = manifest.sets.filter((s) =>
-  s.categories.includes('UI 24px'),
+const collectionsDir = join(workspaceRoot, 'apps/docs/public/collections');
+const metas = readdirSync(collectionsDir)
+  .filter((f) => f.endsWith('-meta.json'))
+  .map((f) =>
+    JSON.parse(readFileSync(join(collectionsDir, f), 'utf-8')),
+  ) as CollectionMeta[];
+const categoriesOf = (m: CollectionMeta): string[] =>
+  Array.isArray(m.categories)
+    ? m.categories
+    : m.categories
+      ? Object.keys(m.categories)
+      : [];
+const totalSets = metas.length;
+const ui24Count = metas.filter((m) =>
+  categoriesOf(m).includes('UI 24px'),
 ).length;
-const iscCount = manifest.sets.filter((s) => s.license === 'ISC').length;
+const iscCount = metas.filter((m) => m.license?.title === 'ISC').length;
 
 /**
  * The landing card for the exact `lucide` collection. A plain
