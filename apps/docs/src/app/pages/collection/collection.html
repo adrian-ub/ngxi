@@ -49,18 +49,18 @@
 
       <main class="flex-1 overflow-y-auto px-2">
         @defer (on immediate) {
-          @if (iconData.isLoading()) {
+          @if (iconData.isLoading() || isGridLoading()) {
           <div class="flex items-center justify-center py-20">
             <span class="text-sm text-muted-foreground">Loading icons…</span>
           </div>
           } @else {
           <div
             class="grid grid-cols-[repeat(auto-fill,minmax(160px,1fr))] overflow-hidden divide-x divide-y *:border-r *:border-b border-t border-l border-border">
-            @for (iconName of filteredIcons(); track iconName) {
+            @for (iconName of visibleIcons(); track iconName) {
             <button (click)="openDialog(iconName)"
               class="group flex flex-col items-center gap-2.5 bg-background p-4 overflow-hidden transition-transform duration-100 hover:bg-accent active:scale-[0.92]">
               <div class="flex size-16 items-center justify-center text-foreground">
-                <Icon [collection]="collectionInfo()!" [icon]="iconName" />
+                <Icon [collection]="collectionInfo()!" [icon]="iconName" [data]="iconBodies().get(iconName)" />
               </div>
               <span class="truncate font-mono text-[10px] text-muted-foreground group-hover:text-foreground">{{
                 iconName }}</span>
@@ -73,6 +73,12 @@
             </div>
             }
           </div>
+          <!-- Infinite scroll sentinel: pulls the next chunk as it approaches. -->
+          <div
+            appInfiniteScroll
+            class="h-px"
+            [disabled]="!hasMore()"
+            (sentinelVisible)="loadMore()"></div>
           }
         } @placeholder (minimum 300ms) {
           <div class="flex items-center justify-center py-20">

@@ -28,6 +28,9 @@ function humanFileSize(size: number) {
   return `${v.toFixed(2)} ${['B', 'kB', 'MB', 'GB', 'TB'][i]}`;
 }
 
+/** Icon bodies per chunk for the collection grid's progressive loading. */
+const CHUNK_SIZE = 500;
+
 async function prepareJSON() {
   const dir = path.resolve(__dirname, '../../../node_modules/@iconify/json');
   const collectionsDir = path.resolve(__dirname, '../public/collections');
@@ -63,6 +66,34 @@ async function prepareJSON() {
       rawFilePath,
       gzipSync(JSON.stringify(setData), { level: 9 }),
     );
+
+    // Emit paginated gzip chunks of icon bodies (no aliases/metadata) so the
+    // grid can render the first viewport almost instantly — a ~40KB chunk
+    // instead of a multi-MB full bundle — and pull more on demand. Names are
+    // indexed in the same order as `icons` in the meta file, so the client can
+    // request exactly the chunk covering its visible range.
+    for (let start = 0; start < icons.length; start += CHUNK_SIZE) {
+      const slice = icons.slice(start, start + CHUNK_SIZE);
+      const chunkIcons: Record<string, unknown> = {};
+      for (const name of slice) {
+        const ic = setData.icons[name];
+        chunkIcons[name] = { body: ic.body, width: ic.width, height: ic.height };
+      }
+      const chunk = {
+        prefix: setData.prefix,
+        width: setData.width,
+        height: setData.height,
+        icons: chunkIcons,
+      };
+      const chunkFile = path.join(
+        collectionsDir,
+        `${info.id}.icons.${start / CHUNK_SIZE}.json.gz`,
+      );
+      await fsp.writeFile(
+        chunkFile,
+        gzipSync(JSON.stringify(chunk), { level: 9 }),
+      );
+    }
 
     collectionsMeta.push(meta);
 

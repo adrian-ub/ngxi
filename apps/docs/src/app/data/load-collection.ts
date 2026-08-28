@@ -19,8 +19,29 @@ export interface IconIndexEntry {
   categories?: string[];
 }
 
+/** A single icon's raw SVG body plus its viewBox, as stored in grid chunks. */
+export interface IconBody {
+  body: string;
+  /** Optional per-icon width override; falls back to the set default. */
+  width?: number;
+  /** Optional per-icon height override; falls back to the set default. */
+  height?: number;
+}
+
+/** A paginated grid chunk: a slice of a collection's icon bodies. */
+export interface IconChunk {
+  prefix: string;
+  width: number;
+  height: number;
+  icons: Record<string, IconBody>;
+}
+
 const collectionCache = new LRUCache<string, Promise<IconifyJSON>>({
   max: 100,
+});
+
+const chunkCache = new LRUCache<string, Promise<IconChunk>>({
+  max: 400,
 });
 
 // ---------------------------------------------------------------------------
@@ -147,6 +168,60 @@ export function loadCollection(
   return promise;
 }
 
+/**
+ * Loads one paginated grid chunk (`{id}.icons.{n}.json.gz`) of icon bodies.
+ *
+ * Chunks let the collection grid render the first viewport from a ~40KB
+ * download instead of a multi-MB full bundle, then pull more pages on demand.
+ * Each chunk is gzip-compressed exactly like the full bundle.
+ */
+export function loadCollectionChunk(
+  id: string,
+  chunkIndex: number,
+): Promise<IconChunk> {
+  const key = `${id}:${chunkIndex}`;
+  const cached = chunkCache.get(key);
+  if (cached) {
+    return cached;
+  }
+
+  const promise = fetch(`/collections/${id}.icons.${chunkIndex}.json.gz`)
+    .then(async (response) => {
+      if (!response.ok) {
+        throw new Error(
+          `HTTP ${response.status} ${response.statusText} for chunk ${chunkIndex}`,
+        );
+      }
+
+      if (!response.body) {
+        throw new Error(
+          `Failed to read collection "${id}" chunk ${chunkIndex} body`,
+        );
+      }
+
+      const encoding = response.headers.get('content-encoding') ?? '';
+      const text = encoding.includes('gzip')
+        ? await response.text()
+        : await new Response(
+            response.body.pipeThrough(new DecompressionStream('gzip')),
+          ).text();
+
+      return JSON.parse(text) as IconChunk;
+    })
+    .catch((error: unknown) => {
+      chunkCache.delete(key); // don't cache a failed load
+
+      throw new Error(
+        `Failed to load collection "${id}" chunk ${chunkIndex}: ${
+          error instanceof Error ? error.message : error
+        }`,
+      );
+    });
+
+  chunkCache.set(key, promise);
+  return promise;
+}
+
 
 /**
  * Derives an `IconIndexEntry` for a single icon from the collection's
@@ -191,4 +266,13 @@ export function deriveIconEntry(
   }
 
   return null;
+}
+
+/**
+ * Clears the in-memory load caches. Unit tests call this between cases so a
+ * cached chunk/collection from one test cannot leak into the next.
+ */
+export function clearLoadCaches(): void {
+  collectionCache.clear();
+  chunkCache.clear();
 }

@@ -2,7 +2,7 @@ import { Component, computed, inject, input, resource } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { _IdGenerator } from '@angular/cdk/a11y';
 import { CollectionInfo } from '../../data';
-import { loadCollection } from '../../data/load-collection';
+import { IconBody, loadCollection } from '../../data/load-collection';
 
 @Component({
   selector: 'Icon',
@@ -15,12 +15,26 @@ export class Icon {
   readonly collection = input.required<CollectionInfo>();
   readonly icon = input.required<string>();
 
+  /**
+   * Optional pre-resolved icon body (from a loaded grid chunk). When provided,
+   * the grid renders without triggering a full `loadCollection` fetch per cell.
+   */
+  readonly iconDataInput = input<IconBody | undefined>(undefined, {
+    alias: 'data',
+  });
+
   /** Raw SVG string from the collection data (plain string, safe to serialize). */
   private readonly iconData = resource({
-    params: () => ({
-      collection: this.collection(),
-      icon: this.icon(),
-    }),
+    params: () => {
+      // When a chunk-provided body is already available, skip the fetch entirely.
+      if (this.iconDataInput()) {
+        return undefined;
+      }
+      return {
+        collection: this.collection(),
+        icon: this.icon(),
+      };
+    },
 
     loader: async ({ params }) => {
       const collectionData = await loadCollection(params.collection.id);
@@ -51,7 +65,7 @@ export class Icon {
 
   /** Sanitized HTML for innerHTML binding — computed runs client-side, SafeHtml never serialized. */
   protected readonly iconResource = computed(() => {
-    const data = this.iconData.value();
+    const data = this.iconData.value() ?? this.iconDataInput();
     if (!data) return undefined;
 
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${data.width}" height="${data.height}" viewBox="0 0 ${data.width} ${data.height}">${data.body}</svg>`;
