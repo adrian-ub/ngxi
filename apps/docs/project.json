@@ -12,7 +12,8 @@
       "inputs": [
         "{workspaceRoot}/apps/docs/scripts/**/*",
         "{workspaceRoot}/node_modules/@iconify/json/package.json",
-        "{workspaceRoot}/node_modules/@iconify/json/json/**/*.json"
+        "{workspaceRoot}/node_modules/@iconify/json/json/**/*.json",
+        "{workspaceRoot}/packages/**/project.json"
       ],
       "outputs": [
         "{projectRoot}/public/collections",

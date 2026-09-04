@@ -33,18 +33,36 @@ const CHUNK_SIZE = 500;
 
 async function prepareJSON() {
   const dir = path.resolve(__dirname, '../../../node_modules/@iconify/json');
+  const packagesDir = path.resolve(__dirname, '../../../packages');
   const collectionsDir = path.resolve(__dirname, '../public/collections');
 
   const raw = await readJSON(path.join(dir, 'collections.json'));
   await fsp.mkdir(collectionsDir, { recursive: true });
 
-  const collections = Object.entries(raw).map(([id, v]) => ({
+  // Only document iconsets that are actually scaffolded as an @ngxi package,
+  // so the docs never advertise an icon library we don't ship. A collection
+  // present in @iconify/json but missing a packages/<id> folder is skipped
+  // with a warning (scaffold it with `nx g icon-library <id>`).
+  const packaged = new Set(
+    (await fsp.readdir(packagesDir, { withFileTypes: true }))
+      .filter((e) => e.isDirectory())
+      .map((e) => e.name),
+  );
+  const all = Object.entries(raw).map(([id, v]) => ({
     ...(v as any),
     id,
     category: (v as any).hidden
       ? 'Deprecated / Unavailable'
       : (v as any).category,
   }));
+  const skipped = all.filter((c) => !packaged.has(c.id));
+  if (skipped.length > 0) {
+    console.warn(
+      `[prepare] Skipping ${skipped.length} Iconify collection(s) without a ` +
+        `packages/<id> package: ${skipped.map((c) => c.id).sort().join(', ')}`,
+    );
+  }
+  const collections = all.filter((c) => packaged.has(c.id));
 
   const collectionsMeta = [];
 
