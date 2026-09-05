@@ -1,12 +1,23 @@
 name: Iconify icon sets update
 
 # Keep @iconify/json up to date with iconify/icon-sets (publishes several times
-# a week). Runs DAILY; the first step compares the pinned version with the npm
-# registry BEFORE installing anything, so a no-change day costs ~1 minute.
+# a week). Runs DAILY; the first step checks the registry with taze BEFORE
+# installing anything, so a no-change day costs ~1 minute.
 #
-# When a newer version exists, this workflow runs the FULL pipeline with NO
+# Only PATCH releases are auto-applied: @iconify/json ships icon-set updates as
+# patch bumps on the same major.minor (2.2.525 -> 2.2.526). taze runs in 'patch'
+# mode (stay on the current major AND minor); a minor/major bump is skipped so
+# breaking changes never reach main without manual review.
+#
+# Releases are patch-only too: the bot commit uses `fix:` (the conventional
+# commits type that bumps patch), and the explicit NEXT version only ever
+# advances the prerelease counter (1.0.0-alpha.9 -> 1.0.0-alpha.10) or bumps
+# patch when coming from a stable tag (1.0.0 -> 1.0.1-alpha.0).
+#
+# When a newer patch version exists, this workflow runs the FULL pipeline with NO
 # pull request:
-#   1. bump @iconify/json and refresh the lockfile.
+#   1. bump @iconify/json with taze (all workspace manifests) and refresh the
+#      lockfile.
 #      packages/*/icon-set.json + src/lib/icons are generated at BUILD time by
 #      generate-icons and are gitignored, so the bot commit only carries the
 #      dependency bump and the refreshed lockfile.
@@ -55,18 +66,33 @@ jobs:
           # whole chain. The built-in GITHUB_TOKEN cannot do this.
           token: ${{ secrets.PAT_GITHUB }}
 
-      - name: Check for newer @iconify/json
+      - name: Check for newer @iconify/json (patch only)
         id: check
         run: |
-          CURRENT="$(node -p "const p=require('./package.json'); ((p.devDependencies||{})['@iconify/json']||'').replace(/^[^0-9]*/,'')")"
-          LATEST="$(npm view @iconify/json version)"
-          echo "current=$CURRENT latest=$LATEST"
-          if [ "$CURRENT" = "$LATEST" ]; then
-            echo "already up to date"
-            echo "updated=false" >> "$GITHUB_OUTPUT"
-          else
+          # taze 'patch' mode only considers updates within the same major.minor
+          # (2.2.525 -> 2.2.526): @iconify/json ships icon-set updates as patch
+          # releases. Minor/major bumps never surface as an update here, so a
+          # breaking change cannot reach main without manual review.
+          JSON="$(npx --yes taze@21 --include @iconify/json patch --recursive --json --no-github-actions --no-node-version)"
+          # Pipe the JSON through stdin: with --recursive the payload covers
+          # every workspace manifest and can exceed the argv size limit.
+          LATEST="$(printf '%s' "$JSON" | node -e '
+            let input = "";
+            process.stdin.on("data", (d) => (input += d));
+            process.stdin.on("end", () => {
+              const j = JSON.parse(input);
+              const ups = (j.packages || []).flatMap((p) => p.resolved || []).filter((r) => r.update);
+              if (ups.length === 0) process.exit(1);
+              process.stdout.write(ups.map((u) => u.targetVersion.replace(/^[^0-9]*/, "")).sort().pop());
+            });
+          ' || true)"
+          if [ -n "$LATEST" ]; then
+            echo "patch update available: $LATEST"
             echo "updated=true" >> "$GITHUB_OUTPUT"
             echo "latest=$LATEST" >> "$GITHUB_OUTPUT"
+          else
+            echo "already up to date (no patch update)"
+            echo "updated=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Set up pnpm
@@ -87,28 +113,15 @@ jobs:
         if: steps.check.outputs.updated == 'true'
         run: pnpm install --frozen-lockfile
 
-      - name: Bump @iconify/json
+      - name: Bump @iconify/json (patch only)
         if: steps.check.outputs.updated == 'true'
-        env:
-          LATEST: ${{ steps.check.outputs.latest }}
         run: |
-          node -e '
-            const fs = require("fs");
-            const files = ["package.json", "tools/workspace-plugin/package.json"];
-            for (const f of files) {
-              const pkg = JSON.parse(fs.readFileSync(f, "utf8"));
-              let touched = false;
-              for (const section of ["dependencies", "devDependencies"]) {
-                if (pkg[section] && pkg[section]["@iconify/json"]) {
-                  pkg[section]["@iconify/json"] = "^" + process.env.LATEST;
-                  touched = true;
-                }
-              }
-              if (touched) fs.writeFileSync(f, JSON.stringify(pkg, null, 2) + "\n");
-            }
-          '
-          # The manifest was just bumped above, so the lockfile must be
-          # refreshed here (CI defaults to frozen-lockfile and would fail).
+          # taze writes the patch update to every workspace manifest that pins
+          # @iconify/json (root devDependencies + tools/workspace-plugin
+          # dependencies), preserving the existing range (^2.2.525).
+          pnpm dlx taze@21 --include @iconify/json patch --recursive --write --no-github-actions --no-node-version
+          # The manifest was just bumped, so the lockfile must be refreshed here
+          # (CI defaults to frozen-lockfile and would fail).
           pnpm install --no-frozen-lockfile
 
       - name: Commit and push to main
@@ -126,7 +139,9 @@ jobs:
           git config user.name 'UbLabs[bot]'
           git config user.email '92824821+ublabs[bot]@users.noreply.github.com'
           git add -A
-          git commit -m "feat: update @iconify/json to v$LATEST"
+          # fix: -> patch-level conventional commit, matching the patch-only
+          # release policy in the header comment.
+          git commit -m "fix: update @iconify/json to v$LATEST"
           git pull --rebase origin main
           git push origin main
           echo "release=true" >> "$GITHUB_OUTPUT"
@@ -135,6 +150,10 @@ jobs:
         id: version
         if: steps.commit.outputs.release == 'true'
         run: |
+          # Deliberately patch-only: a prerelease tag only advances the
+          # prerelease counter (1.0.0-alpha.9 -> 1.0.0-alpha.10); a stable tag
+          # opens a new prerelease with a patch bump (1.0.0 -> 1.0.1-alpha.0).
+          # Icon-set updates never bump minor/major.
           LAST_TAG="$(git describe --tags --abbrev=0 2>/dev/null || true)"
           if [ -z "$LAST_TAG" ]; then
             NEXT="1.0.0-alpha.0"
