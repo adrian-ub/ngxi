@@ -137,6 +137,16 @@ export function buildLibPlan(
   return { collection, entries };
 }
 
+/** `1.0.10` -> `1.0.0`, `2.3.4-beta.5` -> `2.3.0-beta.0`. */
+function normalizeBaselineVersion(version: string): string {
+  const match = version.match(/^(\d+)\.(\d+)\.(\d+)(?:-([a-zA-Z0-9]+)\.\d+)?/);
+  if (!match) {
+    return '0.0.1';
+  }
+  const [, major, minor, , preid] = match;
+  return `${major}.${minor}.0${preid ? `-${preid}.0` : ''}`;
+}
+
 async function scaffoldLib(
   tree: Tree,
   collection: string,
@@ -145,6 +155,23 @@ async function scaffoldLib(
   plan: IconLibraryPlan,
 ): Promise<void> {
   const packageDir = `packages/${collection}`;
+  // A new library joins the workspace at the release baseline held by the ROOT
+  // package.json (the single source of truth for the whole-library version:
+  // 1.0.0 now, bumped to 1.1.0 when every package moves to a new minor/major).
+  // It must NOT inherit any individual package's current version — lucide may
+  // be at 1.0.10 while a brand new library must still start at 1.0.0.
+  const referenceVersion = (() => {
+    try {
+      const ref = JSON.parse(
+        tree.read(joinPathFragments('package.json'), 'utf-8') ?? '{}',
+      );
+      return typeof ref.version === 'string'
+        ? normalizeBaselineVersion(ref.version)
+        : '0.0.1';
+    } catch {
+      return '0.0.1';
+    }
+  })();
   await libraryGenerator(tree, {
     name: collection,
     directory: packageDir,
@@ -165,6 +192,20 @@ async function scaffoldLib(
   // Drop the default `src/lib/<name>` component scaffold; the templates fill
   // `src/lib` (primary entry) or `<entry>/src/lib` afterwards.
   tree.delete(joinPathFragments(packageDir, 'src/lib', collection));
+
+  // @nx/angular:library (via @nx/js's add-release-config) always writes a
+  // default `version.preVersionCommand: "<pm> dlx nx run-many -t build"` into
+  // nx.json when scaffolding a publishable library — even when the project is
+  // already covered by the existing release config. We don't want a
+  // workspace-wide pre-build: publishing builds only the targeted projects
+  // (nx-release-publish depends on build). Undo that default so nx.json keeps
+  // our release configuration untouched.
+  updateJson(tree, 'nx.json', (json) => {
+    if (json.release?.version?.preVersionCommand !== undefined) {
+      delete json.release.version.preVersionCommand;
+    }
+    return json;
+  });
 
   // Drop Nx's generic scaffold README: the library ships a data-driven README
   // rendered from the @iconify/json reference (iconLibraryGenerator writes it
@@ -214,6 +255,10 @@ async function scaffoldLib(
   const iconSetName = iconSet.info?.name ?? collection;
 
   updateJson(tree, joinPathFragments(packageDir, 'package.json'), (json) => {
+    // New libraries join the workspace at the version every existing package
+    // is on (they are all released together as a library), not at the
+    // generator default 0.0.1.
+    json.version = referenceVersion;
     json.description = `${iconSetName} for Angular applications`;
     json.dependencies = { ...(json.dependencies ?? {}), tslib: '^2.3.0' };
     // The icons only rely on signals and control flow, both stable since
@@ -235,6 +280,15 @@ async function scaffoldLib(
     };
     json.bugs = 'https://github.com/adrian-ub/ngxi/issues';
     return json;
+  });
+
+  // Persist a per-package metadata snapshot. `lastModified` is the change
+  // signal tools/scripts/detect-changed-sets.mjs compares against the installed
+  // @iconify/json to decide which libraries need a version bump + republish
+  // when Iconify publishes updated sets. Keep future metadata here instead of
+  // adding sibling files (JSON.stringify drops a missing property cleanly).
+  writeJson(tree, joinPathFragments(packageDir, 'meta.json'), {
+    lastModified: iconSet.lastModified,
   });
 
   wireIconTargets(tree, collection, plan);
@@ -390,6 +444,16 @@ export function wireIconTargets(
       'generate-icons',
       ...(json.targets.build.dependsOn ?? []),
     ];
+    // Publishing requires the built dist output. Wire the dependency so
+    // `nx release publish --projects=<set>` builds only the packages it is
+    // about to publish instead of relying on an all-workspace pre-version
+    // build command.
+    if (json.targets['nx-release-publish']) {
+      json.targets['nx-release-publish'].dependsOn = [
+        'build',
+        ...(json.targets['nx-release-publish'].dependsOn ?? []),
+      ];
+    }
     return json;
   });
 }

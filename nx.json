@@ -87,10 +87,13 @@
   },
   "release": {
     "projects": ["packages/*"],
+    "projectsRelationship": "independent",
     "version": {
       "conventionalCommits": true,
-      "fallbackCurrentVersionResolver": "disk",
-      "preVersionCommand": "pnpm dlx nx run-many -t build"
+      "fallbackCurrentVersionResolver": "disk"
+    },
+    "releaseTag": {
+      "pattern": "{projectName}@{version}"
     },
     "changelog": {
       "automaticFromRef": true,

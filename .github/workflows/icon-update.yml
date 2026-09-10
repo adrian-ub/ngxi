@@ -9,40 +9,40 @@ name: Iconify icon sets update
 # mode (stay on the current major AND minor); a minor/major bump is skipped so
 # breaking changes never reach main without manual review.
 #
-# Releases are patch-only too: the bot commit uses `fix:` (the conventional
-# commits type that bumps patch), and the explicit NEXT version only ever
-# advances the prerelease counter (1.0.0-alpha.9 -> 1.0.0-alpha.10) or bumps
-# patch when coming from a stable tag (1.0.0 -> 1.0.1-alpha.0).
+# When a newer patch version exists and at least one icon set changed, this
+# workflow releases ONLY the changed libraries (projectsRelationship:
+# independent on every "@ngxi/<set>" package):
+#   1. bump @iconify/json with taze and refresh the lockfile.
+#   2. detect-changed-sets.mjs compares the per-package meta.json snapshot
+#      (committed) against the installed @iconify/json and lists the sets whose
+#      lastModified changed. packages/*/icon-set.json + src/lib/icons are
+#      generated at BUILD time and are gitignored, so meta.json is the only
+#      committed change signal.
+#   3. refresh meta.json for the changed sets and commit that with the
+#      dependency bump (`fix:` conventional commit, patch-level release).
+#   4. nx release version --projects=<changed> --specifier prerelease --preid beta
+#      bumps ONLY those packages (1.0.0-beta.0 -> 1.0.0-beta.1), commits with
+#      per-package tags (@ngxi/<set>@<version>) and creates the GitHub releases.
+#      An explicit prerelease specifier is required: a plain patch bump on a
+#      prerelease version (1.0.0-beta.0) would resolve to 1.0.0 (stable).
+#   5. nx release publish --projects=<changed> publishes ONLY those packages.
+#      nx-release-publish depends on build (-> generate-icons -> update-reference),
+#      so publishing compiles exactly the packages it ships; no workspace-wide
+#      pre-build runs.
+#   6. push to main with PAT_GITHUB — a personal token, NOT the built-in
+#      GITHUB_TOKEN: pushes made with GITHUB_TOKEN do not trigger other
+#      workflows, so ci.yml would never run. With PAT_GITHUB the push fires
+#      ci.yml (lint/test/e2e + build matrix on main). The per-package tags are
+#      pushed along (the 3-tags-per-push GitHub Actions trigger limit does not
+#      apply: nothing listens to package tags; publish happens in-process).
 #
-# When a newer patch version exists, this workflow runs the FULL pipeline with NO
-# pull request:
-#   1. bump @iconify/json with taze (all workspace manifests) and refresh the
-#      lockfile.
-#      packages/*/icon-set.json + src/lib/icons are generated at BUILD time by
-#      generate-icons and are gitignored, so the bot commit only carries the
-#      dependency bump and the refreshed lockfile.
-#   2. commit and push directly to main with PAT_GITHUB — a personal token,
-#      NOT the built-in GITHUB_TOKEN: pushes made with GITHUB_TOKEN do not
-#      trigger other workflows, so ci.yml would never run. With PAT_GITHUB the
-#      push fires ci.yml (lint/test/e2e + build matrix on main).
-#   3. release in place with nx release: build everything, bump all packages to
-#      the next version (computed from the last git tag), commit, tag vX.Y.Z,
-#      push and create the GitHub release. The push fires ci.yml; the tag push
-#      fires publish.yml (both because the checkout uses PAT_GITHUB).
-#      The next version follows the prerelease branch of the last tag
-#      (alpha -> alpha.1, beta -> beta.1, rc -> next, stable -> patch-alpha.0)
-#      and the very first release is 1.0.0-alpha.0.
-#      The explicit NEXT specifier is REQUIRED: Nx cannot read a prerelease git
-#      tag as the current version ("No git tags matching pattern"), so nx.json
-#      falls back to the versions in the package.json manifests
-#      (fallbackCurrentVersionResolver: disk).
-# Manual releases always win: running `nx release --skip-publish 1.0.0-beta.0`
-# locally (or any tag push) switches the branch, and the next automatic update
-# continues from there.
+# Manual releases always win: running `nx release` locally (or the Publish
+# workflow) switches any package to whatever version/tag you choose, and the
+# next automatic update continues from there.
 #
 # WARNING: this publishes to npm with no human review — intentional. The
 # safety net is npm versioning: a wrong publish can always be followed by a
-# corrected one, and both Release and Publish are idempotent on re-run.
+# corrected one, and both Nx version and publish are idempotent on re-run.
 on:
   schedule:
     - cron: '0 6 * * *' # every day 06:00 UTC
@@ -54,6 +54,7 @@ concurrency:
 
 permissions:
   contents: write
+  id-token: write # OIDC trusted publisher + npm provenance
 
 jobs:
   update:
@@ -124,70 +125,87 @@ jobs:
           # (CI defaults to frozen-lockfile and would fail).
           pnpm install --no-frozen-lockfile
 
-      - name: Commit and push to main
-        id: commit
+      - name: Detect changed icon sets
+        id: detect
         if: steps.check.outputs.updated == 'true'
+        run: |
+          node tools/scripts/detect-changed-sets.mjs /tmp/changed-sets.txt
+          if [ -s /tmp/changed-sets.txt ]; then
+            CHANGED="$(paste -sd, /tmp/changed-sets.txt)"
+            echo "Changed sets: $CHANGED"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "projects=$CHANGED" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Refresh meta.json snapshots
+        if: steps.detect.outputs.changed == 'true'
+        env:
+          CHANGED: ${{ steps.detect.outputs.projects }}
+        run: |
+          node -e '
+            const fs = require("fs");
+            const path = require("path");
+            const changed = (process.env.CHANGED || "").split(",").filter(Boolean);
+            for (const prefix of changed) {
+              const data = JSON.parse(fs.readFileSync(`node_modules/@iconify/json/json/${prefix}.json`, "utf8"));
+              const dest = path.join("packages", prefix, "meta.json");
+              const meta = JSON.parse(fs.readFileSync(dest, "utf8"));
+              meta.lastModified = data.lastModified;
+              fs.writeFileSync(dest, JSON.stringify(meta, null, 2) + "\n");
+            }
+          '
+
+      - name: Commit dependency bump + meta snapshots
+        if: steps.detect.outputs.changed == 'true'
         env:
           LATEST: ${{ steps.check.outputs.latest }}
         run: |
           set -euo pipefail
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "No generated content changed; nothing to release."
-            echo "release=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
           git config user.name 'UbLabs[bot]'
           git config user.email '92824821+ublabs[bot]@users.noreply.github.com'
           git add -A
-          # fix: -> patch-level conventional commit, matching the patch-only
+          # fix: -> patch-level conventional commit, matching the prerelease
           # release policy in the header comment.
           git commit -m "fix: update @iconify/json to v$LATEST"
-          git pull --rebase origin main
-          git push origin main
-          echo "release=true" >> "$GITHUB_OUTPUT"
 
-      - name: Compute next version
-        id: version
-        if: steps.commit.outputs.release == 'true'
-        run: |
-          # Deliberately patch-only: a prerelease tag only advances the
-          # prerelease counter (1.0.0-alpha.9 -> 1.0.0-alpha.10); a stable tag
-          # opens a new prerelease with a patch bump (1.0.0 -> 1.0.1-alpha.0).
-          # Icon-set updates never bump minor/major.
-          LAST_TAG="$(git describe --tags --abbrev=0 2>/dev/null || true)"
-          if [ -z "$LAST_TAG" ]; then
-            NEXT="1.0.0-alpha.0"
-            echo "first release -> $NEXT"
-          else
-            NEXT="$(node -e '
-              const v = process.argv[1].replace(/^v/, "");
-              const m = v.match(/^(\d+)\.(\d+)\.(\d+)(?:-([a-zA-Z0-9]+)\.(\d+))?$/);
-              if (m[4]) {
-                console.log(m[1] + "." + m[2] + "." + m[3] + "-" + m[4] + "." + (Number(m[5]) + 1));
-              } else {
-                console.log(m[1] + "." + m[2] + "." + (Number(m[3]) + 1) + "-alpha.0");
-              }
-            ' "$LAST_TAG")"
-            echo "last_tag=$LAST_TAG next=$NEXT"
-          fi
-          echo "next=$NEXT" >> "$GITHUB_OUTPUT"
-
-      - name: Configure Git user for the release commit
-        if: steps.commit.outputs.release == 'true'
-        run: |
-          git config user.name 'UbLabs[bot]'
-          git config user.email '92824821+ublabs[bot]@users.noreply.github.com'
-
-      # nx release does version -> changelog -> commit -> tag -> push -> GitHub
-      # release. --skip-publish stops before npm (publish.yml runs on the tag
-      # push). The push uses the PAT_GITHUB remote from checkout, so the tag
-      # push fires publish.yml and the main push fires ci.yml.
-      # The explicit NEXT specifier is required: Nx cannot read a prerelease
-      # git tag as the current version, so it falls back to the manifest
-      # versions on disk (which the previous release left at the last version).
-      - name: Release (bump all packages, tag, GitHub release)
-        if: steps.commit.outputs.release == 'true'
+      - name: Version changed packages
+        if: steps.detect.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-          NEXT: ${{ steps.version.outputs.next }}
-        run: pnpm exec nx release --skip-publish "$NEXT"
+        run: >
+          pnpm exec nx release version
+          --projects="${{ steps.detect.outputs.projects }}"
+          --specifier prerelease --preid beta
+
+      - name: Derive npm dist-tag
+        id: disttag
+        if: steps.detect.outputs.changed == 'true'
+        run: |
+          FIRST="$(cut -d, -f1 <<< "${{ steps.detect.outputs.projects }}")"
+          VER="$(node -e "process.stdout.write(require('./packages/' + process.argv[1] + '/package.json').version)" "$FIRST")"
+          case "$VER" in
+            *-alpha.*) TAG="alpha" ;;
+            *-beta.*) TAG="beta" ;;
+            *-rc.*) TAG="next" ;;
+            *) TAG="latest" ;;
+          esac
+          echo "version=$VER dist_tag=$TAG"
+          echo "dist_tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Publish changed packages
+        if: steps.detect.outputs.changed == 'true'
+        env:
+          NPM_CONFIG_PROVENANCE: true
+          TAG: ${{ steps.disttag.outputs.dist_tag }}
+        run: >
+          pnpm exec nx release publish
+          --projects="${{ steps.detect.outputs.projects }}"
+          --tag "$TAG"
+          --outputStyle=static
+
+      - name: Push to main
+        if: steps.detect.outputs.changed == 'true'
+        run: |
+          git push origin main --follow-tags

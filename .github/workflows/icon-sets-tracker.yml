@@ -52,7 +52,7 @@ jobs:
             git add .
             git config user.name 'UbLabs[bot]'
             git config user.email '92824821+ublabs[bot]@users.noreply.github.com'
-            git commit -m "chore: scaffold missing Iconify icon sets"
+            git commit -m "feat: scaffold missing Iconify icon sets"
             git fetch origin "$BRANCH" 2>/dev/null || true
             git push origin "$BRANCH" --force-with-lease
 
@@ -63,7 +63,7 @@ jobs:
               echo "Updated PR: $PR_URL"
             else
               gh pr create \
-                --title "chore: scaffold missing Iconify icon sets" \
+                --title "feat: scaffold missing Iconify icon sets" \
                 --body-file /tmp/tracker-body.md \
                 --fill
             fi

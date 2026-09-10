@@ -8,7 +8,9 @@
   "targets": {
     "build": {
       "executor": "@nx/angular:package",
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/dist/{projectRoot}"
+      ],
       "defaultConfiguration": "production",
       "options": {
         "project": "packages/weui/ng-package.json",
@@ -20,12 +22,17 @@
         },
         "development": {}
       },
-      "dependsOn": ["generate-icons"]
+      "dependsOn": [
+        "generate-icons"
+      ]
     },
     "nx-release-publish": {
       "options": {
         "packageRoot": "dist/{projectRoot}"
-      }
+      },
+      "dependsOn": [
+        "build"
+      ]
     },
     "update-reference": {
       "executor": "nx:run-commands",
@@ -34,7 +41,9 @@
         "{workspaceRoot}/node_modules/@iconify/json/package.json",
         "{workspaceRoot}/node_modules/@iconify/json/json/weui.json"
       ],
-      "outputs": ["{projectRoot}/icon-set.json"],
+      "outputs": [
+        "{projectRoot}/icon-set.json"
+      ],
       "options": {
         "command": "tsx tools/generate-icons/index.ts weui --reference-only",
         "cwd": "{workspaceRoot}"
@@ -43,13 +52,18 @@
     "generate-icons": {
       "executor": "nx:run-commands",
       "cache": true,
-      "dependsOn": ["update-reference"],
+      "dependsOn": [
+        "update-reference"
+      ],
       "inputs": [
         "{projectRoot}/icon-set.json",
         "{workspaceRoot}/tools/generate-icons/**/*",
         "{workspaceRoot}/tools/workspace-plugin/generators/icon-library/lib/**/*"
       ],
-      "outputs": ["{projectRoot}/src/lib/icons", "{projectRoot}/README.md"],
+      "outputs": [
+        "{projectRoot}/src/lib/icons",
+        "{projectRoot}/README.md"
+      ],
       "options": {
         "command": "ulimit -n 65536 && NODE_OPTIONS=\"--max-old-space-size=8192\" tsx tools/generate-icons/index.ts weui",
         "cwd": "{workspaceRoot}"
