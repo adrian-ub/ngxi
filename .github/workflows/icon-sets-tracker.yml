@@ -59,13 +59,22 @@ jobs:
             # Create or update PR
             PR_URL="$(gh pr list --head "$BRANCH" --state open --json url --jq '.[0].url // empty')"
             if [ -n "$PR_URL" ]; then
-              gh pr edit "$PR_URL" --body-file /tmp/tracker-body.md
+              PR_NUMBER="$(echo "$PR_URL" | sed -E 's#.*/pull/([0-9]+).*#\1#')"
+              # REST PATCH: gh pr edit resolves the repo owner via GraphQL, which
+              # requires read:org — PAT_GITHUB only has repo + workflow.
+              gh api --method PATCH "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" \
+                -F "body=$(cat /tmp/tracker-body.md)" >/dev/null
               echo "Updated PR: $PR_URL"
             else
-              gh pr create \
-                --title "feat: scaffold missing Iconify icon sets" \
-                --body-file /tmp/tracker-body.md \
-                --fill
+              # REST POST: gh pr create uses the same owner GraphQL fragment and
+              # fails with limited-scope tokens; the REST API only needs `repo`.
+              PR_URL="$(gh api --method POST "repos/${GITHUB_REPOSITORY}/pulls" \
+                -f title="feat: scaffold missing Iconify icon sets" \
+                -f head="$BRANCH" \
+                -f base="main" \
+                -F "body=$(cat /tmp/tracker-body.md)" \
+                --jq '.html_url')"
+              echo "Created PR: $PR_URL"
             fi
           else
             echo "No missing icon sets to scaffold"
