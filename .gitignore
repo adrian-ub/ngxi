@@ -65,7 +65,6 @@ packages/**/icons/
 # locally, so a fresh clone stays light. `icon-entries.json` (the split plan)
 # IS tracked: it is small and part of the package config.
 packages/*/icon-set.json
-packages/**/README.md
 
 # Generated docs manifest assets — written by the `generate-docs-manifest`
 # target (nx run internal-docs:generate-docs-manifest) at build time from
