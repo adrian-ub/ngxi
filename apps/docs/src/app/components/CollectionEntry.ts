@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 import { SafeHtml } from '../utils/safe-html';
 
 @Component({
-  selector: 'CollectionEntry',
+  selector: 'app-collection-entry',
   imports: [RouterLink, SafeHtml],
   templateUrl: './CollectionEntry.html',
 })

@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 import { version } from '@iconify/json/package.json'
 
 @Component({
-  selector: 'Footer',
+  selector: 'app-footer',
   host: {
     class: 'text-center text-sm py-4'
   },
@@ -12,4 +12,3 @@ import { version } from '@iconify/json/package.json'
 export class Footer {
   protected readonly iconifyVersion = version;
 }
-3

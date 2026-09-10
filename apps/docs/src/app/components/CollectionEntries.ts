@@ -3,7 +3,7 @@ import { CollectionInfo } from '../data';
 import { CollectionEntry } from './CollectionEntry';
 
 @Component({
-  selector: 'CollectionEntries',
+  selector: 'app-collection-entries',
   imports: [CollectionEntry],
   host: {
     class:

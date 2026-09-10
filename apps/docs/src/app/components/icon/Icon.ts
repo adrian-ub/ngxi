@@ -5,7 +5,7 @@ import { CollectionInfo } from '../../data';
 import { IconBody, loadCollection } from '../../data/load-collection';
 
 @Component({
-  selector: 'Icon',
+  selector: 'app-icon',
   templateUrl: './Icon.html',
 })
 export class Icon {
@@ -19,15 +19,13 @@ export class Icon {
    * Optional pre-resolved icon body (from a loaded grid chunk). When provided,
    * the grid renders without triggering a full `loadCollection` fetch per cell.
    */
-  readonly iconDataInput = input<IconBody | undefined>(undefined, {
-    alias: 'data',
-  });
+  readonly data = input<IconBody | undefined>(undefined);
 
   /** Raw SVG string from the collection data (plain string, safe to serialize). */
   private readonly iconData = resource({
     params: () => {
       // When a chunk-provided body is already available, skip the fetch entirely.
-      if (this.iconDataInput()) {
+      if (this.data()) {
         return undefined;
       }
       return {
@@ -65,7 +63,7 @@ export class Icon {
 
   /** Sanitized HTML for innerHTML binding — computed runs client-side, SafeHtml never serialized. */
   protected readonly iconResource = computed(() => {
-    const data = this.iconData.value() ?? this.iconDataInput();
+    const data = this.iconData.value() ?? this.data();
     if (!data) return undefined;
 
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${data.width}" height="${data.height}" viewBox="0 0 ${data.width} ${data.height}">${data.body}</svg>`;

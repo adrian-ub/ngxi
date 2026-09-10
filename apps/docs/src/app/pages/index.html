@@ -1,5 +1,5 @@
 <div class="flex h-screen flex-col overflow-hidden">
-  <Navbar />
+  <app-navbar />
   <div
     class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-4 px-4"
   >
@@ -16,7 +16,7 @@
   <div class="flex-auto flex flex-col overflow-hidden">
     <div class="overflow-hidden grid grid-rows-[max-content_1fr]">
       <div class="mx-4 my-6">
-        <Searchbar [formField]="searchCategory" />
+        <app-searchbar [formField]="searchCategory" />
       </div>
 
       <div class="overflow-y-auto relative space-y-6 scrollbar-gutter-stable">
@@ -28,7 +28,7 @@
               >
                 {{ c.name }}
               </div>
-              <CollectionEntries [collections]="c.collections" />
+              <app-collection-entries [collections]="c.collections" />
             </div>
           } @placeholder {
             <div class="pl-4 pr-2 py-4">
@@ -52,5 +52,5 @@
       </div>
     </div>
   </div>
-  <Footer></Footer>
+  <app-footer></app-footer>
 </div>

@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 import { Theme } from '../state/theme';
 
 @Component({
-  selector: 'Navbar',
+  selector: 'app-navbar',
   imports: [RouterLink],
   host: {
     class: 'px-4 py-2',

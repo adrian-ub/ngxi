@@ -1,5 +1,5 @@
 <div class="flex h-screen flex-col overflow-hidden">
-  <Navbar />
+  <app-navbar />
 
   <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-4 px-4">
     <div class="flex flex-col gap-1">
@@ -20,7 +20,7 @@
 
   <div class="flex-auto flex flex-col overflow-hidden">
     <div class="mx-4 my-6">
-      <Searchbar [formField]="searchField" [placeholder]="'Search '+ collectionInfo()?.name + ' icons...'" />
+      <app-searchbar [formField]="searchField" [placeholder]="'Search '+ collectionInfo()?.name + ' icons...'" />
     </div>
 
     <div class="flex flex-auto h-full overflow-hidden">
@@ -60,7 +60,7 @@
             <button (click)="openDialog(iconName)"
               class="group flex flex-col items-center gap-2.5 bg-background p-4 overflow-hidden transition-transform duration-100 hover:bg-accent active:scale-[0.92]">
               <div class="flex size-16 items-center justify-center text-foreground">
-                <Icon [collection]="collectionInfo()!" [icon]="iconName" [data]="iconBodies().get(iconName)" />
+                <app-icon [collection]="collectionInfo()!" [icon]="iconName" [data]="iconBodies().get(iconName)" />
               </div>
               <span class="truncate font-mono text-[10px] text-muted-foreground group-hover:text-foreground">{{
                 iconName }}</span>
@@ -88,7 +88,7 @@
       </main>
     </div>
   </div>
-  <Footer></Footer>
+  <app-footer></app-footer>
 </div>
 
 @defer (when selectedIcon()) {
