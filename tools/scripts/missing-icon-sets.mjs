@@ -1,22 +1,29 @@
 #!/usr/bin/env node
 /**
  * Computes the Iconify icon sets not yet scaffolded as ngxi icon libraries
- * and prints a GitHub issue body tracking them.
+ * and prints the PR body tracking them. Optionally writes the plain list of
+ * missing prefixes to the path given as the first argument, so the CI
+ * workflow can scaffold each one.
  *
  * Existing icon libraries are discovered through Nx: every scaffolded icon
  * library owns a `generate-icons` target, so `nx show projects --with-target
  * generate-icons` is the authoritative list of sets already in the workspace.
  *
- * Usage: node tools/scripts/missing-icon-sets.mjs > /tmp/tracker-body.md
+ * Usage: node tools/scripts/missing-icon-sets.mjs [prefixes-file] > body.md
  */
 import { execSync } from 'node:child_process';
 
-const existingProjects = JSON.parse(
-  execSync('pnpm nx show projects --with-target generate-icons --json', {
-    encoding: 'utf-8',
-    stdio: ['ignore', 'pipe', 'inherit'],
-  }),
+const rawProjects = execSync(
+  'pnpm nx show projects --with-target generate-icons --json',
+  { encoding: 'utf-8', stdio: ['ignore', 'pipe', 'inherit'] },
 );
+// pnpm occasionally prefixes its "Scope: ..." banner to stdout; extract the
+// JSON array so the parse never depends on the leading bytes.
+const json = rawProjects.slice(
+  rawProjects.indexOf('['),
+  rawProjects.lastIndexOf(']') + 1,
+);
+const existingProjects = JSON.parse(json);
 const existing = new Set(existingProjects);
 
 const response = await fetch(
@@ -63,3 +70,10 @@ ${rows || '_All Iconify icon sets are already scaffolded._'}
 `;
 
 process.stdout.write(body);
+
+// Also write a simple newline-separated list of prefixes for automation
+const prefixFile = process.argv[2];
+if (prefixFile) {
+  const { writeFileSync } = await import('node:fs');
+  writeFileSync(prefixFile, missing.map((s) => s.prefix).join('\n') + '\n');
+}

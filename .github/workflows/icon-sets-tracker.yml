@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  issues: write
-  contents: read
+  contents: write
+  pull-requests: write
 
 jobs:
   track:
@@ -31,22 +31,42 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Compute missing icon sets
-        run: node tools/scripts/missing-icon-sets.mjs > /tmp/tracker-body.md
+        run: node tools/scripts/missing-icon-sets.mjs /tmp/missing-prefixes.txt > /tmp/tracker-body.md
 
-      - name: Create or update tracker issue
+      - name: Scaffold missing icon sets and create PR
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.PAT_GITHUB }}
         run: |
           set -euo pipefail
-          LABEL='icon-sets'
-          TITLE='Icon sets missing in ngxi'
-          gh label create "$LABEL" \
-            --description 'Tracker of Iconify icon sets not yet scaffolded as ngxi icon libraries' \
-            --force
-          ISSUE="$(gh issue list --label "$LABEL" --state open --json number --jq '.[0].number // empty')"
-          if [ -n "$ISSUE" ]; then
-            gh issue edit "$ISSUE" --title "$TITLE" --body-file /tmp/tracker-body.md
-            echo "Updated tracker issue #$ISSUE"
+
+          # Scaffold all missing icon sets
+          while IFS= read -r prefix; do
+            echo "Scaffolding icon library: $prefix"
+            pnpm nx g icon-library "$prefix" --no-interactive
+          done < /tmp/missing-prefixes.txt
+
+          # Exit early if nothing was generated
+          if ! git diff --quiet HEAD; then
+            BRANCH="chore/iconify-sets-update"
+            git checkout -b "$BRANCH"
+            git add .
+            git config user.name 'UbLabs[bot]'
+            git config user.email '92824821+ublabs[bot]@users.noreply.github.com'
+            git commit -m "chore: scaffold missing Iconify icon sets"
+            git fetch origin "$BRANCH" 2>/dev/null || true
+            git push origin "$BRANCH" --force-with-lease
+
+            # Create or update PR
+            PR_URL="$(gh pr list --head "$BRANCH" --state open --json url --jq '.[0].url // empty')"
+            if [ -n "$PR_URL" ]; then
+              gh pr edit "$PR_URL" --body-file /tmp/tracker-body.md
+              echo "Updated PR: $PR_URL"
+            else
+              gh pr create \
+                --title "chore: scaffold missing Iconify icon sets" \
+                --body-file /tmp/tracker-body.md \
+                --fill
+            fi
           else
-            gh issue create --title "$TITLE" --label "$LABEL" --body-file /tmp/tracker-body.md
+            echo "No missing icon sets to scaffold"
           fi
