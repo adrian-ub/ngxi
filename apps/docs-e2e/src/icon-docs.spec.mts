@@ -434,6 +434,6 @@ test.describe('Icon Docs Site', () => {
 
   test('footer credits the installed iconify version', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('footer')).toContainText(`v${iconifyVersion}`);
+    await expect(page.locator('app-footer')).toContainText(`v${iconifyVersion}`);
   });
 });
