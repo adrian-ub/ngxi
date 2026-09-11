@@ -7,6 +7,11 @@
     "inlineSources": true,
     "types": []
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts"]
+  "include": ["src/**/*.ts", "square/src/**/*.ts"],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "square/src/**/*.spec.ts",
+    "square/src/**/*.test.ts"
+  ]
 }

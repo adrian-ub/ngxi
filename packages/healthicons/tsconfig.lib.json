@@ -7,6 +7,20 @@
     "inlineSources": true,
     "types": []
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts"]
+  "include": [
+    "src/**/*.ts",
+    "24px/src/**/*.ts",
+    "outline/src/**/*.ts",
+    "outline-24px/src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "24px/src/**/*.spec.ts",
+    "24px/src/**/*.test.ts",
+    "outline/src/**/*.spec.ts",
+    "outline/src/**/*.test.ts",
+    "outline-24px/src/**/*.spec.ts",
+    "outline-24px/src/**/*.test.ts"
+  ]
 }

@@ -8,6 +8,7 @@ import {
 } from './generate';
 import {
   filterIconifyJSON,
+  filterIconifyJSONBySuffix,
   readIconEntries,
   updateReference,
 } from '../workspace-plugin/generators/icon-library/lib/reference';
@@ -35,7 +36,7 @@ function printUsage(): void {
   console.log('`pnpm nx g @ngxi/workspace-plugin:icon-library <set>`).');
   console.log('');
   console.log(
-    'When the set is split into secondary entry points (icon-entries.json',
+    'When the set is split into secondary entry points (meta.json `split`',
   );
   console.log(
     'present), each entry under <entry>/src/ gets its own self-contained',
@@ -145,14 +146,45 @@ async function main(): Promise<void> {
     // Split collection: the primary barrel was written by the icon-library
     // generator; each secondary entry only gets its self-contained icon
     // components here (the SVG body is inline in each component's template,
-    // so entries do not import anything from the primary).
+    // so entries do not import anything from the primary). Split sets whose
+    // `""` suffix variant holds base icons additionally render those into the
+    // primary entry.
+    const suffixes = entries
+      .map((entry) => entry.suffix)
+      .filter((suffix): suffix is string => suffix !== undefined);
+    if (plan?.hasBaseIcons) {
+      const baseData = filterIconifyJSONBySuffix(data, null, suffixes);
+      const result = await generateIcons(
+        join(projectRoot, 'src'),
+        baseData,
+        plan.collection,
+      );
+      totalWritten += result.written;
+      totalUnchanged += result.unchanged;
+      console.log(
+        `Generated ${result.iconCount} base icon components for ` +
+          `@ngxi/${plan.collection}: ${result.written} written, ` +
+          `${result.unchanged} unchanged.`,
+      );
+      for (const file of result.files) {
+        console.log(
+          `  ${relative(process.cwd(), join(projectRoot, 'src', file))}`,
+        );
+      }
+    }
     for (const entry of entries) {
-      const entryData = filterIconifyJSON(data, entry.filter);
+      const entryData =
+        entry.suffix !== undefined
+          ? filterIconifyJSONBySuffix(data, entry.suffix, suffixes)
+          : // Legacy glob plan: only sets scaffolded before the suffix-based
+            // matcher reach here, and those always carry `filter`.
+            filterIconifyJSON(data, entry.filter!);
       const entryRoot = join(projectRoot, entry.name, 'src');
       // The component prefix is the collection, not the entry: the icon name
       // itself carries the entry suffix (e.g. `access-time-20-filled`), so
       // `fluent-20-filled` would duplicate it (`Fluent20FilledAccessTime20Filled`
-      // instead of `FluentAccessTime20Filled`).
+      // instead of `FluentAccessTime20Filled`). Entries only ever receive
+      // suffixed icons, so each entry's collision scope is its own icon set.
       const entrySetName = plan.collection;
       const result = await generateSecondaryEntry(
         entryRoot,

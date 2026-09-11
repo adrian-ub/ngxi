@@ -15,7 +15,7 @@ import {
 import { lookupCollection, lookupCollections } from '@iconify/json';
 import type { IconifyJSON } from '@iconify/types';
 import type { IconLibraryGeneratorSchema } from './schema';
-import type { IconEntriesFile } from './lib/reference';
+import { matchLongestSuffix } from './lib/reference';
 import {
   kebabToCamelCase,
   kebabToPascalCase,
@@ -24,139 +24,81 @@ import {
 import { buildReadme } from './lib/generate-readme';
 
 /**
- * `accessibility-20-filled` -> base `accessibility`, size `20`, family `filled`;
- * `archive-duotone-bold` -> base `archive`, style `duotone`, weight `bold`.
- * The middle segment may be a size (`-[0-9]+`, fluent) or a style word
- * (`-duotone`, iconmind); the trailing segment is the family/weight. Both
- * shapes split the same way, so fluent-like and iconmind-like sets get their
- * own secondary entries instead of one oversized primary entry.
- */
-const FAMILY_SIZE_PATTERN = /^(.+)-([a-z0-9]+)-([a-z][a-z0-9]*)$/;
-
-/** A family needs at least this many size-suffixed icons to be recognized. */
-const MIN_FAMILY_ICONS = 200;
-
-/** Families below this total collapse to one `<family>` secondary entry. */
-const FAMILY_COLLAPSE_THRESHOLD = 1000;
-
-/**
- * Orders variant keys numerically when both are numbers (`20`, `24`, `48`),
- * lexicographically otherwise (`duotone`, `outline`). Keeps `20-filled`-style
- * entries in size order while `duotone-bold`-style entries stay stable alpha.
- */
-function compareVariantKeys(a: string, b: string): number {
-  const na = Number(a);
-  const nb = Number(b);
-  const bothNumeric = Number.isInteger(na) && Number.isInteger(nb);
-  return bothNumeric ? na - nb : a.localeCompare(b);
-}
-
-/**
  * A secondary entry point of an icon library. Each entry is a self-contained
  * module under `src/<name>/` (its own `ng-package.json`, barrel and icon
- * components) holding the icons whose name matches `filter`, importable as
+ * components) holding the icons of ONE suffix variant, importable as
  * `@ngxi/<collection>/<name>`.
  */
 export interface IconEntryPlan {
-  /** Entry name, e.g. `20-filled` or `filled`. */
+  /** Entry name, e.g. `duotone-bold` or `20-filled` (the Iconify suffix). */
   name: string;
-  /** Icon-name glob restricting the icons in this entry, e.g. `*-20-filled`. */
-  filter: string;
+  /**
+   * Exact Iconify suffix this entry covers (source of truth). Icons are
+   * assigned by longest-suffix match, which resolves collisions such as
+   * `sharp-duotone` vs `duotone`.
+   */
+  suffix?: string;
+  /**
+   * Legacy icon-name glob fallback (e.g. `*-20-filled`) kept for plans
+   * scaffolded before the suffix-based matcher.
+   */
+  filter?: string;
 }
 
 /**
  * The library plan for one Iconify collection: a single publishable package
- * (`@ngxi/<collection>`) plus, when the set has a `-<variant>-<family>`
- * structure (size or style variant), secondary entry points that split it into
- * modules small enough to fit ngc's memory budget.
+ * (`@ngxi/<collection>`) plus — when the set declares `suffixes` — one
+ * secondary entry point per non-empty suffix. Sets without suffixes (e.g.
+ * `ei`, `lucide`) stay in the library's primary entry (`src/`).
  */
 export interface IconLibraryPlan {
   /** Iconify collection id, e.g. `fluent` (also the library name). */
   collection: string;
   /**
-   * Secondary entry points. Empty means the whole collection lives in the
-   * library's primary entry (`src/`) and nothing is split.
+   * Secondary entry points, one per non-empty Iconify suffix. Empty means the
+   * whole collection lives in the library's primary entry and nothing is
+   * split.
    */
   entries: IconEntryPlan[];
+  /**
+   * Whether the primary entry holds base icons — the icons that match NO
+   * non-empty suffix (the collection's `""` suffix variant, e.g. the Regular
+   * weights of `ph`). When true the generate-icons script renders components
+   * into `src/lib/icons` too; when false the primary barrel stays empty.
+   * Always true for unsplit sets.
+   */
+  hasBaseIcons: boolean;
 }
 
 /**
- * Derives the library plan for a collection from its icon names.
+ * Derives the library plan for a collection from its Iconify `suffixes`
+ * metadata (the authoritative split, e.g. `{"": "Regular", "20-filled":
+ * "20 Filled", ...}`).
  *
- * - Sets whose icons carry a `-<variant>-<family>` suffix are split into one
- *   secondary entry per variant/family (or one per family when the family is
- *   small), each with its own filter. The variant is either a size (`-20-`,
- *   fluent: `accessibility-20-filled`) or a style word (`-duotone-`,
- *   iconmind: `archive-duotone-bold`).
- * - Sets without that structure (e.g. `ei`, `lucide`) stay in the primary
- *   entry.
- * - Mixed sets (some structured families plus leftovers without a suffix) stay
- *   in the primary entry: an include-only filter cannot represent the leftover
- *   subset without duplicating the structured icons.
+ * - Every non-empty suffix becomes its own secondary entry point. There are
+ *   NO size thresholds: tiny variants (fluent `24-light`, 2 icons) and giant
+ *   variants (solar, ~1,300 icons) split the same way.
+ * - Icons that match no suffix (the `""` variant) stay in the primary entry;
+ *   that primary entry renders components only when such base icons exist.
+ * - Sets without `suffixes` metadata stay entirely in the primary entry.
  */
 export function buildLibPlan(
   collection: string,
   iconNames: string[],
+  suffixes: Record<string, string> | undefined,
 ): IconLibraryPlan {
-  const familySizes = new Map<string, Map<string, number>>();
-  for (const iconName of iconNames) {
-    const match = FAMILY_SIZE_PATTERN.exec(iconName);
-    if (match) {
-      const [, , size, family] = match;
-      let sizes = familySizes.get(family);
-      if (!sizes) {
-        sizes = new Map();
-        familySizes.set(family, sizes);
-      }
-      sizes.set(size, (sizes.get(size) ?? 0) + 1);
-    }
-  }
-
-  const qualifiedFamilies = [...familySizes.entries()]
-    .filter(
-      ([, sizes]) =>
-        [...sizes.values()].reduce((a, b) => a + b, 0) >= MIN_FAMILY_ICONS,
-    )
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([family, sizes]) => ({
-      family,
-      sizes: new Map(
-        [...sizes.entries()].sort(([a], [b]) =>
-          compareVariantKeys(a, b),
-        ),
-      ),
-    }));
-
-  if (qualifiedFamilies.length === 0) {
-    return { collection, entries: [] };
-  }
-
-  const qualified = new Set(qualifiedFamilies.map(({ family }) => family));
-  const leftover = iconNames.filter((iconName) => {
-    const match = FAMILY_SIZE_PATTERN.exec(iconName);
-    return !match || !qualified.has(match[3]);
-  });
-  if (leftover.length > 0) {
-    // Cannot express "everything except the split families" with an include
-    // glob without duplicating the structured icons. Stay in the primary entry.
-    return { collection, entries: [] };
-  }
-
-  const entries: IconEntryPlan[] = [];
-  for (const { family, sizes } of qualifiedFamilies) {
-    const total = [...sizes.values()].reduce((a, b) => a + b, 0);
-    if (total < FAMILY_COLLAPSE_THRESHOLD || sizes.size === 1) {
-      entries.push({ name: family, filter: `*-${family}` });
-    } else {
-      for (const size of sizes.keys()) {
-        entries.push({
-          name: `${size}-${family}`,
-          filter: `*-${size}-${family}`,
-        });
-      }
-    }
-  }
-  return { collection, entries };
+  const entries: IconEntryPlan[] = Object.keys(suffixes ?? {})
+    .filter((suffix) => suffix !== '')
+    .sort((a, b) => a.localeCompare(b))
+    .map((suffix) => ({ name: suffix, suffix }));
+  const hasBaseIcons = iconNames.some(
+    (name) =>
+      matchLongestSuffix(
+        name,
+        entries.map((entry) => entry.suffix!),
+      ) === null,
+  );
+  return { collection, entries, hasBaseIcons };
 }
 
 /** `1.0.10` -> `1.0.0`, `2.3.4-beta.5` -> `2.3.0-beta.0`. */
@@ -248,19 +190,26 @@ async function scaffoldLib(
   // No static base files: every icon component is data-driven and
   // self-contained (SVG body inline in its template). The icon components in
   // `src/lib/icons` are generated later by the cacheable `generate-icons`
-  // target from icon-set.json.
+  // target from icon-set.json. Secondary entries are scaffolded AFTER
+  // meta.json exists: scaffoldSecondaryEntries persists the split plan inside
+  // meta.json (`split` key) and requires the file to already be present.
   if (plan.entries.length > 0) {
     scaffoldSecondaryEntries(tree, collection, plan);
   }
 
-  // Primary barrel: split sets (secondary entries exist) must NOT export icons
-  // — each secondary entry exports its own icon components; single-entry sets
-  // export `./lib/icons` directly.
+  // Primary barrel: split sets whose base variant has NO icons (e.g. all of
+  // iconmind lives in suffixed entries) must NOT export icons — every icon
+  // lives in a secondary entry. When the set's `""` suffix holds base icons
+  // (ph, material-symbols) or the set is unsplit, the primary exports
+  // `./lib/icons` and the generate-icons script renders those components.
   generateFiles(
     tree,
     joinPathFragments(__dirname, 'files', 'primary'),
     joinPathFragments(packageDir, 'src'),
-    { ...substitutions, exportIcons: plan.entries.length === 0 },
+    {
+      ...substitutions,
+      exportIcons: plan.entries.length === 0 || plan.hasBaseIcons,
+    },
   );
 
   // The Iconify reference JSON is NOT written here. The `update-reference`
@@ -313,6 +262,12 @@ async function scaffoldLib(
     lastModified: iconSet.lastModified,
   });
 
+  // Split sets persist their secondary-entry plan inside meta.json (`split`),
+  // so generate-icons knows which icons land in which entry.
+  if (plan.entries.length > 0) {
+    scaffoldSecondaryEntries(tree, collection, plan);
+  }
+
   wireIconTargets(tree, collection, plan);
 }
 
@@ -322,10 +277,12 @@ async function scaffoldLib(
  * `<entry>/ng-package.json` + `<entry>/src/index.ts` per entry and wires the
  * `@ngxi/<collection>/<entry>` path mapping in tsconfig.base.json.
  *
- * Additionally persists `icon-entries.json` (the plan the generate-icons
- * script reads: which icons land in which entry). The primary `src/index.ts`
- * comes from the generator template; each entry gets its own self-contained
- * icon components later, importing nothing from the primary.
+ * Additionally persists the split plan inside the package's `meta.json`
+ * (`split` key — the same file that carries the release `lastModified`
+ * snapshot), which the generate-icons script reads to decide which icons land
+ * in which entry. The primary `src/index.ts` comes from the generator
+ * template; each entry gets its own self-contained icon components later,
+ * importing nothing from the primary.
  */
 async function scaffoldSecondaryEntries(
   tree: Tree,
@@ -341,13 +298,45 @@ async function scaffoldSecondaryEntries(
     upper: kebabToUpperSnakeCase(setName),
   };
 
-  for (const entry of plan.entries) {
-    await librarySecondaryEntryPointGenerator(tree, {
-      name: entry.name,
-      library: collection,
-      skipModule: true,
-      skipFormat: true,
+  // During a REPLAN (the package already exists) the secondary entries from
+  // the previous plan that are absent from the new suffix-based plan must
+  // disappear: drop their scaffold (the generated icon components live under a
+  // git-ignored path and are cleaned up by the caller) and their
+  // tsconfig.base.json path mapping. New entries are added via the Nx
+  // generator; entries that already exist are kept as-is.
+  const previousEntries = readPreviousIconEntries(tree, collection);
+  const keptNames = new Set(plan.entries.map((entry) => entry.name));
+  const staleNames = previousEntries
+    .map((entry) => entry.name)
+    .filter((name) => !keptNames.has(name));
+
+  if (staleNames.length > 0) {
+    for (const name of staleNames) {
+      tree.delete(joinPathFragments('packages', collection, name));
+    }
+    updateJson(tree, 'tsconfig.base.json', (json) => {
+      for (const name of staleNames) {
+        delete json.compilerOptions?.paths?.[`@ngxi/${collection}/${name}`];
+      }
+      return json;
     });
+  }
+
+  for (const entry of plan.entries) {
+    const entryScaffold = joinPathFragments(
+      'packages',
+      collection,
+      entry.name,
+      'ng-package.json',
+    );
+    if (!tree.exists(entryScaffold)) {
+      await librarySecondaryEntryPointGenerator(tree, {
+        name: entry.name,
+        library: collection,
+        skipModule: true,
+        skipFormat: true,
+      });
+    }
 
     // Overwrite the Nx-scaffolded barrel with the entry's icons barrel. The
     // entry's icon components are self-contained; nothing is shared with the
@@ -386,14 +375,20 @@ async function scaffoldSecondaryEntries(
     },
   );
 
-  const iconEntries: IconEntriesFile = {
-    collection,
-    entries: plan.entries.map((entry) => ({ ...entry })),
-  };
-  writeJson(
+  // Persist the split plan inside the package's meta.json (`split` key) — the
+  // same file that already carries the `lastModified` release snapshot, so the
+  // package metadata stays in one place. generate-icons reads it to decide
+  // which icons land in which entry.
+  updateJson(
     tree,
-    joinPathFragments('packages', collection, 'icon-entries.json'),
-    iconEntries,
+    joinPathFragments('packages', collection, 'meta.json'),
+    (json) => {
+      json.split = {
+        hasBaseIcons: plan.hasBaseIcons,
+        entries: plan.entries.map((entry) => ({ ...entry })),
+      };
+      return json;
+    },
   );
 }
 
@@ -401,7 +396,7 @@ async function scaffoldSecondaryEntries(
  * Wires the per-library icon targets in project.json:
  * - `update-reference` refreshes packages/<collection>/icon-set.json from
  *   @iconify/json (always the full collection; splitting happens at generation
- *   time via icon-entries.json).
+ *   time via the meta.json `split` plan).
  * - `generate-icons` turns icon-set.json into the Angular icon components and
  *   depends on `update-reference` so the reference is always current.
  * - `build` depends on `generate-icons` so `nx build <lib>` always regenerates
@@ -435,7 +430,9 @@ export function wireIconTargets(
       '{workspaceRoot}/tools/workspace-plugin/generators/icon-library/lib/**/*',
     ];
     if (plan.entries.length > 0) {
-      generateInputs.push('{projectRoot}/icon-entries.json');
+      // meta.json carries both the release snapshot (lastModified) and the
+      // split plan; a plan change must invalidate the generated icons.
+      generateInputs.push('{projectRoot}/meta.json');
     }
 
     const generateOutputs =
@@ -444,6 +441,9 @@ export function wireIconTargets(
             ...plan.entries.map(
               (entry) => `{projectRoot}/${entry.name}/src/lib/icons`,
             ),
+            // Split sets with base icons (the `""` suffix variant) render
+            // components into the primary too.
+            ...(plan.hasBaseIcons ? ['{projectRoot}/src/lib/icons'] : []),
             '{projectRoot}/README.md',
           ]
         : ['{projectRoot}/src/lib/icons', '{projectRoot}/README.md'];
@@ -480,6 +480,34 @@ export function wireIconTargets(
   });
 }
 
+/**
+ * Reads the previously persisted split plan (packages/<collection>/meta.json,
+ * `split` key) when it exists, so a replan can detect secondary entries that
+ * disappear (e.g. the old fluent `light` family entry) and remove their
+ * scaffolds and path mappings.
+ */
+export function readPreviousIconEntries(
+  tree: Tree,
+  collection: string,
+): IconEntryPlan[] {
+  const path = joinPathFragments('packages', collection, 'meta.json');
+  if (!tree.exists(path)) {
+    return [];
+  }
+  try {
+    const raw = tree.read(path, 'utf-8');
+    if (!raw) {
+      return [];
+    }
+    return (
+      (JSON.parse(raw) as { split?: { entries?: IconEntryPlan[] } }).split
+        ?.entries ?? []
+    );
+  } catch {
+    return [];
+  }
+}
+
 export async function iconLibraryGenerator(
   tree: Tree,
   options: IconLibraryGeneratorSchema,
@@ -499,10 +527,17 @@ export async function iconLibraryGenerator(
 
   const iconSet = await lookupCollection(options.name);
   const license = iconSet.info?.license?.spdx ?? 'UNLICENSED';
-  const plan = buildLibPlan(options.name, Object.keys(iconSet.icons));
+  const plan = buildLibPlan(
+    options.name,
+    Object.keys(iconSet.icons),
+    iconSet.suffixes,
+  );
+
+  const packageDir = joinPathFragments('packages', options.name);
+  const isReplan = tree.exists(joinPathFragments(packageDir, 'project.json'));
 
   logger.info(
-    `Creating @ngxi/${options.name} from "${
+    `${isReplan ? 'Replanning' : 'Creating'} @ngxi/${options.name} from "${
       iconSet.info?.name ?? options.name
     }" (${iconSet.info?.author?.name ?? 'unknown author'}, license: ${license}):`,
   );
@@ -512,9 +547,18 @@ export async function iconLibraryGenerator(
     for (const entry of plan.entries) {
       logger.info(`  secondary entry @ngxi/${options.name}/${entry.name}`);
     }
+    logger.info(
+      plan.hasBaseIcons
+        ? `  primary entry holds ${'the base (unsuffixed) icons'}.`
+        : '  primary entry stays empty (every icon lives in a secondary entry).',
+    );
   }
 
-  await scaffoldLib(tree, options.name, iconSet, license, plan);
+  if (isReplan) {
+    await replanLib(tree, options.name, plan);
+  } else {
+    await scaffoldLib(tree, options.name, iconSet, license, plan);
+  }
 
   await formatFiles(tree);
 
@@ -529,14 +573,95 @@ export async function iconLibraryGenerator(
 
   if (plan.entries.length === 0) {
     logger.info(
-      `Scaffolded @ngxi/${options.name}. Run \`pnpm nx run ${options.name}:generate-icons\` to generate the icon components.`,
+      `${isReplan ? 'Replanned' : 'Scaffolded'} @ngxi/${
+        options.name
+      }. Run \`pnpm nx run ${options.name}:generate-icons\` to generate the icon components.`,
     );
   } else {
     logger.info(
-      `Scaffolded @ngxi/${options.name} with ${plan.entries.length} secondary entry point(s). ` +
+      `${isReplan ? 'Replanned' : 'Scaffolded'} @ngxi/${
+        options.name
+      } with ${plan.entries.length} secondary entry point(s). ` +
         `Run \`pnpm nx run ${options.name}:generate-icons\` to generate the icon components.`,
     );
   }
+}
+
+/**
+ * Re-applies the split plan to an already-scaffolded icon library without
+ * touching the base package scaffold (project.json, package.json, tsconfigs,
+ * meta.json — those already exist). It keeps the primary barrel in sync,
+ * scaffolds/removes secondary entries and the meta.json `split` plan from the
+ * current
+ * plan, and rewires the icon targets.
+ */
+async function replanLib(
+  tree: Tree,
+  collection: string,
+  plan: IconLibraryPlan,
+): Promise<void> {
+  const packageDir = joinPathFragments('packages', collection);
+  const substitutions = {
+    tmpl: '',
+    setName: collection,
+    camel: kebabToCamelCase(collection),
+    pascal: kebabToPascalCase(collection),
+    upper: kebabToUpperSnakeCase(collection),
+  };
+
+  if (plan.entries.length > 0) {
+    await scaffoldSecondaryEntries(tree, collection, plan);
+  } else {
+    // A replan collapsed the set back to a single primary entry: drop any
+    // previously scaffolded entries and their path mappings.
+    const previousEntries = readPreviousIconEntries(tree, collection);
+    for (const entry of previousEntries) {
+      tree.delete(joinPathFragments(packageDir, entry.name));
+    }
+    if (previousEntries.length > 0) {
+      updateJson(tree, 'tsconfig.base.json', (json) => {
+        for (const entry of previousEntries) {
+          delete json.compilerOptions?.paths?.[
+            `@ngxi/${collection}/${entry.name}`
+          ];
+        }
+        return json;
+      });
+    }
+    updateJson(
+      tree,
+      joinPathFragments(packageDir, 'tsconfig.lib.json'),
+      (json) => {
+        json.include = ['src/**/*.ts'];
+        json.exclude = ['src/**/*.spec.ts', 'src/**/*.test.ts'];
+        return json;
+      },
+    );
+    // No split anymore: drop the stale split plan so generate-icons renders
+    // the whole collection into the primary entry again. meta.json keeps its
+    // release snapshot (lastModified); only the `split` plan goes away.
+    if (tree.exists(joinPathFragments(packageDir, 'meta.json'))) {
+      updateJson(tree, joinPathFragments(packageDir, 'meta.json'), (json) => {
+        delete json.split;
+        return json;
+      });
+    }
+  }
+
+  // Primary barrel: split sets whose base variant has NO icons must NOT export
+  // icons; when the `""` suffix holds base icons or the set is unsplit, the
+  // primary exports `./lib/icons` and generate-icons renders those components.
+  generateFiles(
+    tree,
+    joinPathFragments(__dirname, 'files', 'primary'),
+    joinPathFragments(packageDir, 'src'),
+    {
+      ...substitutions,
+      exportIcons: plan.entries.length === 0 || plan.hasBaseIcons,
+    },
+  );
+
+  wireIconTargets(tree, collection, plan);
 }
 
 export default iconLibraryGenerator;

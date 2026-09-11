@@ -7,6 +7,29 @@
     "inlineSources": true,
     "types": []
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts"]
+  "include": [
+    "src/**/*.ts",
+    "16/src/**/*.ts",
+    "20/src/**/*.ts",
+    "24/src/**/*.ts",
+    "28/src/**/*.ts",
+    "32/src/**/*.ts",
+    "48/src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "16/src/**/*.spec.ts",
+    "16/src/**/*.test.ts",
+    "20/src/**/*.spec.ts",
+    "20/src/**/*.test.ts",
+    "24/src/**/*.spec.ts",
+    "24/src/**/*.test.ts",
+    "28/src/**/*.spec.ts",
+    "28/src/**/*.test.ts",
+    "32/src/**/*.spec.ts",
+    "32/src/**/*.test.ts",
+    "48/src/**/*.spec.ts",
+    "48/src/**/*.test.ts"
+  ]
 }

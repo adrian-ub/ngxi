@@ -1,3 +1,12 @@
 {
-  "lastModified": 1754901223
+  "lastModified": 1754901223,
+  "split": {
+    "hasBaseIcons": true,
+    "entries": [
+      {
+        "name": "flat",
+        "suffix": "flat"
+      }
+    ]
+  }
 }

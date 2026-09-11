@@ -99,7 +99,6 @@
       "@ngxi/fluent/28-filled": ["./packages/fluent/28-filled/src/index.ts"],
       "@ngxi/fluent/32-filled": ["./packages/fluent/32-filled/src/index.ts"],
       "@ngxi/fluent/48-filled": ["./packages/fluent/48-filled/src/index.ts"],
-      "@ngxi/fluent/light": ["./packages/fluent/light/src/index.ts"],
       "@ngxi/fluent/10-regular": ["./packages/fluent/10-regular/src/index.ts"],
       "@ngxi/fluent/12-regular": ["./packages/fluent/12-regular/src/index.ts"],
       "@ngxi/fluent/16-regular": ["./packages/fluent/16-regular/src/index.ts"],
@@ -296,7 +295,216 @@
       "@ngxi/reicon": ["./packages/reicon/src/index.ts"],
       "@ngxi/thesvg": ["./packages/thesvg/src/index.ts"],
       "@ngxi/thesvg-color": ["./packages/thesvg-color/src/index.ts"],
-      "@ngxi/vadivam": ["./packages/vadivam/src/index.ts"]
+      "@ngxi/vadivam": ["./packages/vadivam/src/index.ts"],
+      "@ngxi/fluent/24-light": ["./packages/fluent/24-light/src/index.ts"],
+      "@ngxi/fluent/28-light": ["./packages/fluent/28-light/src/index.ts"],
+      "@ngxi/fluent/32-light": ["./packages/fluent/32-light/src/index.ts"],
+      "@ngxi/fluent/48-light": ["./packages/fluent/48-light/src/index.ts"],
+      "@ngxi/academicons/square": [
+        "./packages/academicons/square/src/index.ts"
+      ],
+      "@ngxi/ant-design/filled": ["./packages/ant-design/filled/src/index.ts"],
+      "@ngxi/ant-design/outlined": [
+        "./packages/ant-design/outlined/src/index.ts"
+      ],
+      "@ngxi/ant-design/twotone": [
+        "./packages/ant-design/twotone/src/index.ts"
+      ],
+      "@ngxi/basil/outline": ["./packages/basil/outline/src/index.ts"],
+      "@ngxi/basil/solid": ["./packages/basil/solid/src/index.ts"],
+      "@ngxi/bitcoin-icons/filled": [
+        "./packages/bitcoin-icons/filled/src/index.ts"
+      ],
+      "@ngxi/bitcoin-icons/outline": [
+        "./packages/bitcoin-icons/outline/src/index.ts"
+      ],
+      "@ngxi/boxicons/filled": ["./packages/boxicons/filled/src/index.ts"],
+      "@ngxi/eva/fill": ["./packages/eva/fill/src/index.ts"],
+      "@ngxi/eva/outline": ["./packages/eva/outline/src/index.ts"],
+      "@ngxi/famicons/outline": ["./packages/famicons/outline/src/index.ts"],
+      "@ngxi/famicons/sharp": ["./packages/famicons/sharp/src/index.ts"],
+      "@ngxi/flag/1x1": ["./packages/flag/1x1/src/index.ts"],
+      "@ngxi/flag/4x3": ["./packages/flag/4x3/src/index.ts"],
+      "@ngxi/flowbite/outline": ["./packages/flowbite/outline/src/index.ts"],
+      "@ngxi/flowbite/solid": ["./packages/flowbite/solid/src/index.ts"],
+      "@ngxi/fluent-color/16": ["./packages/fluent-color/16/src/index.ts"],
+      "@ngxi/fluent-color/20": ["./packages/fluent-color/20/src/index.ts"],
+      "@ngxi/fluent-color/24": ["./packages/fluent-color/24/src/index.ts"],
+      "@ngxi/fluent-color/28": ["./packages/fluent-color/28/src/index.ts"],
+      "@ngxi/fluent-color/32": ["./packages/fluent-color/32/src/index.ts"],
+      "@ngxi/fluent-color/48": ["./packages/fluent-color/48/src/index.ts"],
+      "@ngxi/garden/12": ["./packages/garden/12/src/index.ts"],
+      "@ngxi/garden/16": ["./packages/garden/16/src/index.ts"],
+      "@ngxi/glyphs/bold": ["./packages/glyphs/bold/src/index.ts"],
+      "@ngxi/glyphs/duo": ["./packages/glyphs/duo/src/index.ts"],
+      "@ngxi/glyphs/outline": ["./packages/glyphs/outline/src/index.ts"],
+      "@ngxi/griddy-icons/filled": [
+        "./packages/griddy-icons/filled/src/index.ts"
+      ],
+      "@ngxi/healthicons/24px": ["./packages/healthicons/24px/src/index.ts"],
+      "@ngxi/healthicons/outline": [
+        "./packages/healthicons/outline/src/index.ts"
+      ],
+      "@ngxi/healthicons/outline-24px": [
+        "./packages/healthicons/outline-24px/src/index.ts"
+      ],
+      "@ngxi/heroicons/16-solid": [
+        "./packages/heroicons/16-solid/src/index.ts"
+      ],
+      "@ngxi/heroicons/20-solid": [
+        "./packages/heroicons/20-solid/src/index.ts"
+      ],
+      "@ngxi/heroicons/solid": ["./packages/heroicons/solid/src/index.ts"],
+      "@ngxi/iconamoon/bold": ["./packages/iconamoon/bold/src/index.ts"],
+      "@ngxi/iconamoon/duotone": ["./packages/iconamoon/duotone/src/index.ts"],
+      "@ngxi/iconamoon/fill": ["./packages/iconamoon/fill/src/index.ts"],
+      "@ngxi/iconamoon/light": ["./packages/iconamoon/light/src/index.ts"],
+      "@ngxi/iconamoon/thin": ["./packages/iconamoon/thin/src/index.ts"],
+      "@ngxi/ion/outline": ["./packages/ion/outline/src/index.ts"],
+      "@ngxi/ion/sharp": ["./packages/ion/sharp/src/index.ts"],
+      "@ngxi/lsicon/filled": ["./packages/lsicon/filled/src/index.ts"],
+      "@ngxi/lsicon/outline": ["./packages/lsicon/outline/src/index.ts"],
+      "@ngxi/material-symbols/outline": [
+        "./packages/material-symbols/outline/src/index.ts"
+      ],
+      "@ngxi/material-symbols/outline-rounded": [
+        "./packages/material-symbols/outline-rounded/src/index.ts"
+      ],
+      "@ngxi/material-symbols/outline-sharp": [
+        "./packages/material-symbols/outline-sharp/src/index.ts"
+      ],
+      "@ngxi/material-symbols/rounded": [
+        "./packages/material-symbols/rounded/src/index.ts"
+      ],
+      "@ngxi/material-symbols/sharp": [
+        "./packages/material-symbols/sharp/src/index.ts"
+      ],
+      "@ngxi/material-symbols-light/outline": [
+        "./packages/material-symbols-light/outline/src/index.ts"
+      ],
+      "@ngxi/material-symbols-light/outline-rounded": [
+        "./packages/material-symbols-light/outline-rounded/src/index.ts"
+      ],
+      "@ngxi/material-symbols-light/outline-sharp": [
+        "./packages/material-symbols-light/outline-sharp/src/index.ts"
+      ],
+      "@ngxi/material-symbols-light/rounded": [
+        "./packages/material-symbols-light/rounded/src/index.ts"
+      ],
+      "@ngxi/material-symbols-light/sharp": [
+        "./packages/material-symbols-light/sharp/src/index.ts"
+      ],
+      "@ngxi/meteocons/fill": ["./packages/meteocons/fill/src/index.ts"],
+      "@ngxi/mingcute/fill": ["./packages/mingcute/fill/src/index.ts"],
+      "@ngxi/mingcute/line": ["./packages/mingcute/line/src/index.ts"],
+      "@ngxi/mynaui/solid": ["./packages/mynaui/solid/src/index.ts"],
+      "@ngxi/nonicons/16": ["./packages/nonicons/16/src/index.ts"],
+      "@ngxi/octicon/12": ["./packages/octicon/12/src/index.ts"],
+      "@ngxi/octicon/16": ["./packages/octicon/16/src/index.ts"],
+      "@ngxi/octicon/24": ["./packages/octicon/24/src/index.ts"],
+      "@ngxi/octicon/48": ["./packages/octicon/48/src/index.ts"],
+      "@ngxi/octicon/96": ["./packages/octicon/96/src/index.ts"],
+      "@ngxi/pepicons/print": ["./packages/pepicons/print/src/index.ts"],
+      "@ngxi/ph/bold": ["./packages/ph/bold/src/index.ts"],
+      "@ngxi/ph/duotone": ["./packages/ph/duotone/src/index.ts"],
+      "@ngxi/ph/fill": ["./packages/ph/fill/src/index.ts"],
+      "@ngxi/ph/light": ["./packages/ph/light/src/index.ts"],
+      "@ngxi/ph/thin": ["./packages/ph/thin/src/index.ts"],
+      "@ngxi/qlementine-icons/12": [
+        "./packages/qlementine-icons/12/src/index.ts"
+      ],
+      "@ngxi/qlementine-icons/16": [
+        "./packages/qlementine-icons/16/src/index.ts"
+      ],
+      "@ngxi/qlementine-icons/24": [
+        "./packages/qlementine-icons/24/src/index.ts"
+      ],
+      "@ngxi/qlementine-icons/32": [
+        "./packages/qlementine-icons/32/src/index.ts"
+      ],
+      "@ngxi/reicon/duotone": ["./packages/reicon/duotone/src/index.ts"],
+      "@ngxi/reicon/filled": ["./packages/reicon/filled/src/index.ts"],
+      "@ngxi/ri/fill": ["./packages/ri/fill/src/index.ts"],
+      "@ngxi/ri/line": ["./packages/ri/line/src/index.ts"],
+      "@ngxi/selfhst/dark": ["./packages/selfhst/dark/src/index.ts"],
+      "@ngxi/selfhst/light": ["./packages/selfhst/light/src/index.ts"],
+      "@ngxi/si/duotone": ["./packages/si/duotone/src/index.ts"],
+      "@ngxi/si/fill": ["./packages/si/fill/src/index.ts"],
+      "@ngxi/si/line": ["./packages/si/line/src/index.ts"],
+      "@ngxi/sidekickicons/16-solid": [
+        "./packages/sidekickicons/16-solid/src/index.ts"
+      ],
+      "@ngxi/sidekickicons/20-solid": [
+        "./packages/sidekickicons/20-solid/src/index.ts"
+      ],
+      "@ngxi/sidekickicons/solid": [
+        "./packages/sidekickicons/solid/src/index.ts"
+      ],
+      "@ngxi/solar/bold": ["./packages/solar/bold/src/index.ts"],
+      "@ngxi/solar/bold-duotone": [
+        "./packages/solar/bold-duotone/src/index.ts"
+      ],
+      "@ngxi/solar/broken": ["./packages/solar/broken/src/index.ts"],
+      "@ngxi/solar/line-duotone": [
+        "./packages/solar/line-duotone/src/index.ts"
+      ],
+      "@ngxi/solar/linear": ["./packages/solar/linear/src/index.ts"],
+      "@ngxi/solar/outline": ["./packages/solar/outline/src/index.ts"],
+      "@ngxi/streamline/remix": ["./packages/streamline/remix/src/index.ts"],
+      "@ngxi/streamline/solid": ["./packages/streamline/solid/src/index.ts"],
+      "@ngxi/streamline-color/flat": [
+        "./packages/streamline-color/flat/src/index.ts"
+      ],
+      "@ngxi/streamline-flex/remix": [
+        "./packages/streamline-flex/remix/src/index.ts"
+      ],
+      "@ngxi/streamline-flex/solid": [
+        "./packages/streamline-flex/solid/src/index.ts"
+      ],
+      "@ngxi/streamline-flex-color/flat": [
+        "./packages/streamline-flex-color/flat/src/index.ts"
+      ],
+      "@ngxi/streamline-kameleon-color/duo": [
+        "./packages/streamline-kameleon-color/duo/src/index.ts"
+      ],
+      "@ngxi/streamline-logos/block": [
+        "./packages/streamline-logos/block/src/index.ts"
+      ],
+      "@ngxi/streamline-logos/solid": [
+        "./packages/streamline-logos/solid/src/index.ts"
+      ],
+      "@ngxi/streamline-plump/remix": [
+        "./packages/streamline-plump/remix/src/index.ts"
+      ],
+      "@ngxi/streamline-plump/solid": [
+        "./packages/streamline-plump/solid/src/index.ts"
+      ],
+      "@ngxi/streamline-plump-color/flat": [
+        "./packages/streamline-plump-color/flat/src/index.ts"
+      ],
+      "@ngxi/streamline-sharp/remix": [
+        "./packages/streamline-sharp/remix/src/index.ts"
+      ],
+      "@ngxi/streamline-sharp/solid": [
+        "./packages/streamline-sharp/solid/src/index.ts"
+      ],
+      "@ngxi/streamline-sharp-color/flat": [
+        "./packages/streamline-sharp-color/flat/src/index.ts"
+      ],
+      "@ngxi/streamline-stickies-color/duo": [
+        "./packages/streamline-stickies-color/duo/src/index.ts"
+      ],
+      "@ngxi/streamline-ultimate/bold": [
+        "./packages/streamline-ultimate/bold/src/index.ts"
+      ],
+      "@ngxi/teenyicons/outline": [
+        "./packages/teenyicons/outline/src/index.ts"
+      ],
+      "@ngxi/teenyicons/solid": ["./packages/teenyicons/solid/src/index.ts"],
+      "@ngxi/token-branded/background": [
+        "./packages/token-branded/background/src/index.ts"
+      ],
+      "@ngxi/weui/outlined": ["./packages/weui/outlined/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

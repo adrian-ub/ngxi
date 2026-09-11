@@ -7,6 +7,13 @@
     "inlineSources": true,
     "types": []
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts"]
+  "include": ["src/**/*.ts", "dark/src/**/*.ts", "light/src/**/*.ts"],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "dark/src/**/*.spec.ts",
+    "dark/src/**/*.test.ts",
+    "light/src/**/*.spec.ts",
+    "light/src/**/*.test.ts"
+  ]
 }

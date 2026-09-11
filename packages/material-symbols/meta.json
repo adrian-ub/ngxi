@@ -1,3 +1,28 @@
 {
-  "lastModified": 1788788335
+  "lastModified": 1788788335,
+  "split": {
+    "hasBaseIcons": true,
+    "entries": [
+      {
+        "name": "outline",
+        "suffix": "outline"
+      },
+      {
+        "name": "outline-rounded",
+        "suffix": "outline-rounded"
+      },
+      {
+        "name": "outline-sharp",
+        "suffix": "outline-sharp"
+      },
+      {
+        "name": "rounded",
+        "suffix": "rounded"
+      },
+      {
+        "name": "sharp",
+        "suffix": "sharp"
+      }
+    ]
+  }
 }

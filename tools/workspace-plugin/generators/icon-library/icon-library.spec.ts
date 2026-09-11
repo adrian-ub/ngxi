@@ -1,5 +1,10 @@
 import { createTreeWithEmptyWorkspace } from '@nx/devkit/testing';
-import { readJson, readProjectConfiguration, type Tree } from '@nx/devkit';
+import {
+  readJson,
+  readProjectConfiguration,
+  updateJson,
+  type Tree,
+} from '@nx/devkit';
 import { mkdirSync, readFileSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
@@ -13,7 +18,11 @@ import {
   hoistPresentationAttributes,
   prefixSvgTags,
 } from './lib/svg-component';
-import { updateReference } from './lib/reference';
+import {
+  updateReference,
+  filterIconifyJSONBySuffix,
+  matchLongestSuffix,
+} from './lib/reference';
 import { iconComponentName, iconComponentSelector } from './lib/naming';
 
 describe('icon-library generator', () => {
@@ -137,13 +146,19 @@ describe('icon-library generator', () => {
     const config = readProjectConfiguration(tree, 'fluent');
     expect(config.root).toBe('packages/fluent');
 
-    const entriesPlan = readJson(tree, 'packages/fluent/icon-entries.json');
-    expect(entriesPlan.collection).toBe('fluent');
-    expect(entriesPlan.entries.length).toBeGreaterThanOrEqual(5);
+    // The split plan lives inside meta.json (`split` key), next to the
+    // release `lastModified` snapshot — package metadata stays in one file.
+    const meta = readJson(tree, 'packages/fluent/meta.json');
+    expect(typeof meta.lastModified).toBe('number');
+    const entriesPlan = meta.split;
+    // Every one of the 20 fluent suffix variants becomes an entry — tiny
+    // variants (24-light has 2 icons) included; there are NO size thresholds.
+    expect(entriesPlan.entries.length).toBe(20);
+    expect(entriesPlan.hasBaseIcons).toBe(false);
     const twentyFilled = entriesPlan.entries.find(
       (entry: { name: string }) => entry.name === '20-filled',
     );
-    expect(twentyFilled).toEqual({ name: '20-filled', filter: '*-20-filled' });
+    expect(twentyFilled).toEqual({ name: '20-filled', suffix: '20-filled' });
 
     // Secondary entries scaffolded by @nx/angular:library-secondary-entry-point:
     // <entry>/ng-package.json + <entry>/src/index.ts (Nx template), NOT manual files.
@@ -160,9 +175,7 @@ describe('icon-library generator', () => {
     expect(readme).toContain(
       "import { FluentZoomOut24Filled } from '@ngxi/fluent/24-filled'",
     );
-    expect(readme).toContain(
-      'template: `<svg fluentZoomOut24Filled></svg>`',
-    );
+    expect(readme).toContain('template: `<svg fluentZoomOut24Filled></svg>`');
     expect(readme).toContain('color=black');
 
     // Workspace subpath resolution wired by the Nx generator.
@@ -173,7 +186,7 @@ describe('icon-library generator', () => {
 
     const projectJson = readJson(tree, 'packages/fluent/project.json');
     // The reference target always copies the FULL collection; splitting happens
-    // at generation time via icon-entries.json.
+    // at generation time via the meta.json `split` plan.
     expect(projectJson.targets['update-reference']).toEqual({
       executor: 'nx:run-commands',
       cache: true,
@@ -191,7 +204,7 @@ describe('icon-library generator', () => {
       'update-reference',
     );
     expect(projectJson.targets['generate-icons'].inputs).toContain(
-      '{projectRoot}/icon-entries.json',
+      '{projectRoot}/meta.json',
     );
     expect(projectJson.targets['generate-icons'].outputs).toEqual([
       ...entriesPlan.entries.map(
@@ -232,15 +245,16 @@ describe('icon-library generator', () => {
 
     // The whole iconmind collection (22,7k icons) is split into six
     // style/weight secondary entries instead of one oversized primary entry.
-    const entriesPlan = readJson(tree, 'packages/iconmind/icon-entries.json');
-    expect(entriesPlan.collection).toBe('iconmind');
+    const entriesPlan = readJson(tree, 'packages/iconmind/meta.json').split;
+    // Every non-empty Iconify suffix becomes an entry, sorted alpha.
+    expect(entriesPlan.hasBaseIcons).toBe(false);
     expect(entriesPlan.entries).toEqual([
-      { name: 'duotone-bold', filter: '*-duotone-bold' },
-      { name: 'outline-bold', filter: '*-outline-bold' },
-      { name: 'duotone-regular', filter: '*-duotone-regular' },
-      { name: 'outline-regular', filter: '*-outline-regular' },
-      { name: 'duotone-thin', filter: '*-duotone-thin' },
-      { name: 'outline-thin', filter: '*-outline-thin' },
+      { name: 'duotone-bold', suffix: 'duotone-bold' },
+      { name: 'duotone-regular', suffix: 'duotone-regular' },
+      { name: 'duotone-thin', suffix: 'duotone-thin' },
+      { name: 'outline-bold', suffix: 'outline-bold' },
+      { name: 'outline-regular', suffix: 'outline-regular' },
+      { name: 'outline-thin', suffix: 'outline-thin' },
     ]);
 
     // Secondary entry files exist per entry.
@@ -262,6 +276,39 @@ describe('icon-library generator', () => {
     expect(
       baseTsconfig.compilerOptions.paths['@ngxi/iconmind/duotone-bold'],
     ).toEqual(['./packages/iconmind/duotone-bold/src/index.ts']);
+  });
+
+  it('splits a suffixed collection and keeps a base variant in the primary', async () => {
+    await iconLibraryGenerator(tree, { name: 'material-symbols' });
+
+    // material-symbols declares `suffixes` AND a `""` (Regular) base variant:
+    // the 5 non-empty suffixes become secondary entries and the 4k Regular
+    // icons stay in the primary entry, which now renders components.
+    const entriesPlan = readJson(
+      tree,
+      'packages/material-symbols/meta.json',
+    ).split;
+    expect(entriesPlan.hasBaseIcons).toBe(true);
+    expect(entriesPlan.entries).toEqual([
+      { name: 'outline', suffix: 'outline' },
+      { name: 'outline-rounded', suffix: 'outline-rounded' },
+      { name: 'outline-sharp', suffix: 'outline-sharp' },
+      { name: 'rounded', suffix: 'rounded' },
+      { name: 'sharp', suffix: 'sharp' },
+    ]);
+    // Primary barrel exports the base icons' components.
+    expect(tree.read('packages/material-symbols/src/index.ts', 'utf-8')).toBe(
+      "export * from './lib/icons';\n",
+    );
+    // Subpath resolution wired for every suffix entry.
+    const baseTsconfig = readJson(tree, 'tsconfig.base.json');
+    for (const entry of entriesPlan.entries) {
+      expect(
+        baseTsconfig.compilerOptions.paths[
+          `@ngxi/material-symbols/${entry.name}`
+        ],
+      ).toEqual([`./packages/material-symbols/${entry.name}/src/index.ts`]);
+    }
   });
 
   it('applies the reference filter to the written icon-set.json', async () => {
@@ -297,79 +344,216 @@ describe('icon-library generator', () => {
   });
 
   describe('buildLibPlan', () => {
-    function suffixed(size: number, family: string, count: number): string[] {
-      return Array.from(
-        { length: count },
-        (_, i) => `icon-${i}-${size}-${family}`,
-      );
-    }
-
-    it('splits a fluent-like set into per-size/family secondary entries', () => {
+    it('splits every non-empty suffix into a secondary entry, no thresholds', () => {
       const names = [
-        ...suffixed(20, 'filled', 400),
-        ...suffixed(24, 'filled', 400),
-        ...suffixed(48, 'filled', 400),
-        ...suffixed(20, 'regular', 300),
+        ...Array.from({ length: 400 }, (_, i) => `icon-${i}-20-filled`),
+        'plain-base-icon',
       ];
-      const plan = buildLibPlan('fluent', names);
+      const plan = buildLibPlan('fluent', names, {
+        '10-filled': '10 Filled',
+        '20-filled': '20 Filled',
+        '24-light': '24 Light',
+      });
       expect(plan.collection).toBe('fluent');
+      // Tiny and big variants split the same way; entries sorted alpha.
       expect(plan.entries).toEqual([
-        { name: '20-filled', filter: '*-20-filled' },
-        { name: '24-filled', filter: '*-24-filled' },
-        { name: '48-filled', filter: '*-48-filled' },
-        { name: 'regular', filter: '*-regular' },
+        { name: '10-filled', suffix: '10-filled' },
+        { name: '20-filled', suffix: '20-filled' },
+        { name: '24-light', suffix: '24-light' },
       ]);
+      expect(plan.hasBaseIcons).toBe(true);
     });
 
-    it('splits an iconmind-like set into per-style/weight secondary entries', () => {
-      function styled(
-        style: string,
-        weight: string,
-        count: number,
-      ): string[] {
-        return Array.from(
-          { length: count },
-          (_, i) => `icon-${i}-${style}-${weight}`,
+    it('iconmind-like: style/weight suffixes become flat secondary entries', () => {
+      const names = [
+        ...Array.from({ length: 600 }, (_, i) => `icon-${i}-duotone-bold`),
+        ...Array.from({ length: 600 }, (_, i) => `icon-${i}-outline-thin`),
+      ];
+      const plan = buildLibPlan('iconmind', names, {
+        'duotone-bold': 'Duotone Bold',
+        'outline-thin': 'Outline Thin',
+      });
+      expect(plan.entries).toEqual([
+        { name: 'duotone-bold', suffix: 'duotone-bold' },
+        { name: 'outline-thin', suffix: 'outline-thin' },
+      ]);
+      expect(plan.hasBaseIcons).toBe(false);
+    });
+
+    it('keeps a set without suffixes in the primary entry', () => {
+      const plan = buildLibPlan(
+        'ei',
+        ['arrow-down', 'circle', 'layers', 'accessibility'],
+        undefined,
+      );
+      expect(plan).toEqual({
+        collection: 'ei',
+        entries: [],
+        hasBaseIcons: true,
+      });
+    });
+
+    it('keeps base icons (no matching suffix) in the primary alongside the split', () => {
+      const names = [
+        ...Array.from({ length: 400 }, (_, i) => `icon-${i}-filled`),
+        'plain-icon-without-suffix',
+        'also-plain',
+      ];
+      const plan = buildLibPlan('mixed', names, { filled: 'Filled' });
+      expect(plan.entries).toEqual([{ name: 'filled', suffix: 'filled' }]);
+      expect(plan.hasBaseIcons).toBe(true);
+    });
+  });
+
+  describe('suffix matching (lib/reference)', () => {
+    const sharpDuotoneCase = {
+      collection: 'keyline-icons',
+      type: 'icon',
+      icons: {
+        'home-duotone': { body: '<path d="d0"/>' },
+        'home-fill': { body: '<path d="df"/>' },
+        'home-sharp-duotone': { body: '<path d="dsd"/>' },
+        'home-sharp-fill': { body: '<path d="dsf"/>' },
+        'home-sharp': { body: '<path d="ds"/>' },
+        home: { body: '<path d="db"/>' },
+      },
+    } as IconifyJSON;
+
+    it('matches the LONGEST suffix, never a shorter one that is its tail', () => {
+      const suffixes = [
+        'duotone',
+        'fill',
+        'sharp-duotone',
+        'sharp-fill',
+        'sharp',
+      ];
+      expect(matchLongestSuffix('home-sharp-duotone', suffixes)).toBe(
+        'sharp-duotone',
+      );
+      expect(matchLongestSuffix('home-duotone', suffixes)).toBe('duotone');
+      expect(matchLongestSuffix('home-sharp', suffixes)).toBe('sharp');
+      expect(matchLongestSuffix('home', suffixes)).toBeNull();
+    });
+
+    it('filterIconifyJSONBySuffix keeps only the icons of one suffix variant', () => {
+      const suffixes = [
+        'duotone',
+        'fill',
+        'sharp-duotone',
+        'sharp-fill',
+        'sharp',
+      ];
+      const sharpDuotone = filterIconifyJSONBySuffix(
+        sharpDuotoneCase,
+        'sharp-duotone',
+        suffixes,
+      );
+      expect(Object.keys(sharpDuotone.icons)).toEqual(['home-sharp-duotone']);
+
+      const base = filterIconifyJSONBySuffix(sharpDuotoneCase, null, suffixes);
+      expect(Object.keys(base.icons)).toEqual(['home']);
+    });
+  });
+
+  describe('replan', () => {
+    it('drops stale secondary entries and keeps current ones', async () => {
+      await iconLibraryGenerator(tree, { name: 'fluent' });
+
+      // Simulate the OLD split plan still on disk: the `light` family entry
+      // (pre-suffix format) with its scaffold and a path mapping. A replan
+      // must remove it and clean its mapping, while the 20 suffix-based
+      // entries must survive.
+      tree.write(
+        'packages/fluent/light/ng-package.json',
+        JSON.stringify({ lib: { entryFile: 'src/index.ts' } }),
+      );
+      tree.write(
+        'packages/fluent/light/src/index.ts',
+        "export * from './lib/icons';\n",
+      );
+      updateJson(tree, 'tsconfig.base.json', (json) => {
+        json.compilerOptions.paths['@ngxi/fluent/light'] = [
+          'packages/fluent/light/src/index.ts',
+        ];
+        return json;
+      });
+      updateJson(tree, 'packages/fluent/meta.json', (json) => {
+        json.split.entries.push({ name: 'light', suffix: 'light' });
+        return json;
+      });
+
+      // Re-run the generator: this is the replan.
+      await iconLibraryGenerator(tree, { name: 'fluent' });
+
+      // Stale entry scaffold and mapping removed by the replan.
+      expect(tree.exists('packages/fluent/light/ng-package.json')).toBe(false);
+      expect(
+        readJson(tree, 'tsconfig.base.json').compilerOptions.paths[
+          '@ngxi/fluent/light'
+        ],
+      ).toBeUndefined();
+
+      // Current 20 suffix entries intact, plan still written.
+      const entriesPlan = readJson(tree, 'packages/fluent/meta.json').split;
+      expect(entriesPlan.entries.length).toBe(20);
+      expect(entriesPlan.hasBaseIcons).toBe(false);
+      for (const name of ['20-filled', '24-light', '32-light', '48-filled']) {
+        expect(tree.exists(`packages/fluent/${name}/ng-package.json`)).toBe(
+          true,
         );
       }
-
-      const names = [
-        ...styled('duotone', 'bold', 600),
-        ...styled('outline', 'bold', 600),
-        ...styled('duotone', 'regular', 600),
-        ...styled('outline', 'regular', 600),
-        ...styled('duotone', 'thin', 600),
-        ...styled('outline', 'thin', 600),
-      ];
-      const plan = buildLibPlan('iconmind', names);
-      expect(plan.collection).toBe('iconmind');
-      expect(plan.entries).toEqual([
-        { name: 'duotone-bold', filter: '*-duotone-bold' },
-        { name: 'outline-bold', filter: '*-outline-bold' },
-        { name: 'duotone-regular', filter: '*-duotone-regular' },
-        { name: 'outline-regular', filter: '*-outline-regular' },
-        { name: 'duotone-thin', filter: '*-duotone-thin' },
-        { name: 'outline-thin', filter: '*-outline-thin' },
-      ]);
+      // The Nx generator is not re-invoked for existing entries on replan
+      // (idempotent), and the primary barrel stays empty for a split set.
+      expect(tree.read('packages/fluent/src/index.ts', 'utf-8')).toBe(
+        'export {};\n',
+      );
     });
 
-    it('keeps a set without size/family suffixes in the primary entry', () => {
-      const plan = buildLibPlan('ei', [
-        'arrow-down',
-        'circle',
-        'layers',
-        'accessibility',
-      ]);
-      expect(plan).toEqual({ collection: 'ei', entries: [] });
-    });
+    it('collapses a replanned set back to a single primary entry', async () => {
+      // Build a plan without entries by asking for a set that is unsplit
+      // (lucide), then replay the generator: no secondary scaffold exists, so
+      // the replan path must keep only the primary barrel.
+      await iconLibraryGenerator(tree, { name: 'lucide' });
 
-    it('keeps a mixed set in the primary entry (leftovers cannot be filtered)', () => {
-      const names = [
-        ...suffixed(20, 'filled', 400),
-        'plain-icon-without-suffix',
-      ];
-      const plan = buildLibPlan('mixed', names);
-      expect(plan.entries).toEqual([]);
+      // Force the old split plan to linger (e.g. an entry no longer in the
+      // suffix plan) so the replan cleanup branch runs.
+      tree.write(
+        'packages/lucide/light/ng-package.json',
+        JSON.stringify({ lib: { entryFile: 'src/index.ts' } }),
+      );
+      tree.write(
+        'packages/lucide/light/src/index.ts',
+        "export * from './lib/icons';\n",
+      );
+      updateJson(tree, 'tsconfig.base.json', (json) => {
+        json.compilerOptions.paths['@ngxi/lucide/light'] = [
+          'packages/lucide/light/src/index.ts',
+        ];
+        return json;
+      });
+      // The old split plan must be present for the collapse branch to find
+      // stale entries (lucide has no suffixes, so a replan collapses it).
+      updateJson(tree, 'packages/lucide/meta.json', (json) => {
+        json.split = {
+          hasBaseIcons: true,
+          entries: [{ name: 'light', suffix: 'light' }],
+        };
+        return json;
+      });
+
+      await iconLibraryGenerator(tree, { name: 'lucide' });
+
+      expect(tree.exists('packages/lucide/light/ng-package.json')).toBe(false);
+      expect(
+        readJson(tree, 'tsconfig.base.json').compilerOptions.paths[
+          '@ngxi/lucide/light'
+        ],
+      ).toBeUndefined();
+      // Unsplit set: no split plan in meta.json, primary barrel exports icons.
+      expect(readJson(tree, 'packages/lucide/meta.json').split).toBeUndefined();
+      expect(tree.read('packages/lucide/src/index.ts', 'utf-8')).toBe(
+        "export * from './lib/icons';\n",
+      );
     });
   });
 

@@ -1,15 +1,17 @@
 import type { IconifyJSON } from '@iconify/types';
 import { globToRegExp } from './glob';
+import { matchLongestSuffix } from './reference';
 import {
   iconCollidingNames,
   iconComponentName,
   iconComponentSelector,
 } from './naming';
 
-/** Secondary entry point of a split collection (name + icon-name glob). */
+/** Secondary entry point of a split collection (suffix-first, glob fallback). */
 export interface ReadmeEntry {
   name: string;
-  filter: string;
+  filter?: string;
+  suffix?: string;
 }
 
 /** The generated-code example rendered in the README usage section. */
@@ -48,19 +50,39 @@ function usageFor(
   };
 }
 
+/** The suffix list of a split plan (the entry suffixes themselves). */
+function suffixesOf(entries: ReadmeEntry[]): string[] {
+  return entries
+    .map((entry) => entry.suffix)
+    .filter((suffix): suffix is string => suffix !== undefined);
+}
+
+/** Whether `name` belongs to `entry`, by suffix when available, glob else. */
+function entryMatches(
+  entry: ReadmeEntry,
+  name: string,
+  suffixes: string[],
+): boolean {
+  return entry.suffix !== undefined
+    ? matchLongestSuffix(name, suffixes) === entry.suffix
+    : globToRegExp(entry.filter ?? '').test(name);
+}
+
 /**
  * The colliding icon names of one scope: for a split collection, only the
- * icons matching the entry's filter (mirroring `filterIconifyJSON` used by the
+ * icons belonging to the matching entry (mirroring the filter used by the
  * generate-icons script); otherwise every icon of the set.
  */
 function scopeCollidingNames(
   data: IconifyJSON,
   setName: string,
   entry?: ReadmeEntry,
+  entries: ReadmeEntry[] = [],
 ): Set<string> {
+  const suffixes = suffixesOf(entries);
   const all = Object.keys(data.icons);
   const names = entry
-    ? all.filter((name) => globToRegExp(entry.filter).test(name))
+    ? all.filter((name) => entryMatches(entry, name, suffixes))
     : all;
   return iconCollidingNames(setName, names);
 }
@@ -94,27 +116,26 @@ export function pickReadmeUsage(
       scopeCollidingNames(data, collection),
     );
   }
+  const suffixes = suffixesOf(entries);
   for (const candidate of candidates) {
     for (const entry of entries) {
-      if (globToRegExp(entry.filter).test(candidate)) {
+      if (entryMatches(entry, candidate, suffixes)) {
         return usageFor(
           collection,
           candidate,
           `@ngxi/${collection}/${entry.name}`,
-          scopeCollidingNames(data, collection, entry),
+          scopeCollidingNames(data, collection, entry, entries),
         );
       }
     }
   }
   const first = entries[0];
-  const fallback = iconKeys.find((name) =>
-    globToRegExp(first.filter).test(name),
-  );
+  const fallback = iconKeys.find((name) => entryMatches(first, name, suffixes));
   return usageFor(
     collection,
     fallback ?? iconKeys[0],
     `@ngxi/${collection}/${first.name}`,
-    scopeCollidingNames(data, collection, first),
+    scopeCollidingNames(data, collection, first, entries),
   );
 }
 

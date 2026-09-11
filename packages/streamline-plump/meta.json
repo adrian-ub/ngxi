@@ -1,3 +1,16 @@
 {
-  "lastModified": 1748851497
+  "lastModified": 1748851497,
+  "split": {
+    "hasBaseIcons": true,
+    "entries": [
+      {
+        "name": "remix",
+        "suffix": "remix"
+      },
+      {
+        "name": "solid",
+        "suffix": "solid"
+      }
+    ]
+  }
 }

@@ -1,3 +1,12 @@
 {
-  "lastModified": 1784352017
+  "lastModified": 1784352017,
+  "split": {
+    "hasBaseIcons": true,
+    "entries": [
+      {
+        "name": "solid",
+        "suffix": "solid"
+      }
+    ]
+  }
 }

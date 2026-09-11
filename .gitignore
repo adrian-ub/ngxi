@@ -62,8 +62,9 @@ packages/**/icons/
 # Heavy per-set icon reference JSON — written by the `update-reference` target
 # (nx run <set>:update-reference) from node_modules/@iconify/json on demand.
 # No set ships its JSON in git (lucide included): every set regenerates it
-# locally, so a fresh clone stays light. `icon-entries.json` (the split plan)
-# IS tracked: it is small and part of the package config.
+# locally, so a fresh clone stays light. The split plan is NOT a sibling file:
+# it lives inside the committed `meta.json` (`split` key), which already
+# carries the release `lastModified` snapshot.
 packages/*/icon-set.json
 
 # Generated docs manifest assets — written by the `generate-docs-manifest`
@@ -80,6 +81,15 @@ apps/docs/src/app/data/collections-info.json
 # leaves internal-docs with zero dependencies and its build cannot chain the
 # generate-icons tasks that produce src/lib/icons. Regeneration is
 # deterministic, so the committed file stays in sync with the packages.
+
+# Generated README files — rendered by the `generate-icons` target from
+# packages/<set>/icon-set.json (set info, icon count, sample icon) on every
+# build. ng-packagr copies the library README into the published npm package,
+# so the documentation is visible on the registry; there is no need to track
+# it in git. A fresh clone regenerates it via `nx run <set>:generate-icons`
+# before any build/publish.
+packages/*/README.md
+packages/*/*/README.md
 
 # Generated SEO / AI-discovery files — emitted by the same target into
 # apps/docs/public/ (sitemap.xml, robots.txt, llms.txt, llms-full.txt).

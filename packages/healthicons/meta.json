@@ -1,3 +1,20 @@
 {
-  "lastModified": 1785257486
+  "lastModified": 1785257486,
+  "split": {
+    "hasBaseIcons": true,
+    "entries": [
+      {
+        "name": "24px",
+        "suffix": "24px"
+      },
+      {
+        "name": "outline",
+        "suffix": "outline"
+      },
+      {
+        "name": "outline-24px",
+        "suffix": "outline-24px"
+      }
+    ]
+  }
 }

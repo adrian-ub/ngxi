@@ -7,6 +7,29 @@
     "inlineSources": true,
     "types": []
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts"]
+  "include": [
+    "src/**/*.ts",
+    "bold/src/**/*.ts",
+    "bold-duotone/src/**/*.ts",
+    "broken/src/**/*.ts",
+    "line-duotone/src/**/*.ts",
+    "linear/src/**/*.ts",
+    "outline/src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "bold/src/**/*.spec.ts",
+    "bold/src/**/*.test.ts",
+    "bold-duotone/src/**/*.spec.ts",
+    "bold-duotone/src/**/*.test.ts",
+    "broken/src/**/*.spec.ts",
+    "broken/src/**/*.test.ts",
+    "line-duotone/src/**/*.spec.ts",
+    "line-duotone/src/**/*.test.ts",
+    "linear/src/**/*.spec.ts",
+    "linear/src/**/*.test.ts",
+    "outline/src/**/*.spec.ts",
+    "outline/src/**/*.test.ts"
+  ]
 }

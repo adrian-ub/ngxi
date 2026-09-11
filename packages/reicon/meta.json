@@ -1,3 +1,16 @@
 {
-  "lastModified": 1788788423
+  "lastModified": 1788788423,
+  "split": {
+    "hasBaseIcons": true,
+    "entries": [
+      {
+        "name": "duotone",
+        "suffix": "duotone"
+      },
+      {
+        "name": "filled",
+        "suffix": "filled"
+      }
+    ]
+  }
 }

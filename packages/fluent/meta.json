@@ -1,3 +1,88 @@
 {
-  "lastModified": 1787372620
+  "lastModified": 1787372620,
+  "split": {
+    "hasBaseIcons": false,
+    "entries": [
+      {
+        "name": "10-filled",
+        "suffix": "10-filled"
+      },
+      {
+        "name": "10-regular",
+        "suffix": "10-regular"
+      },
+      {
+        "name": "12-filled",
+        "suffix": "12-filled"
+      },
+      {
+        "name": "12-regular",
+        "suffix": "12-regular"
+      },
+      {
+        "name": "16-filled",
+        "suffix": "16-filled"
+      },
+      {
+        "name": "16-regular",
+        "suffix": "16-regular"
+      },
+      {
+        "name": "20-filled",
+        "suffix": "20-filled"
+      },
+      {
+        "name": "20-regular",
+        "suffix": "20-regular"
+      },
+      {
+        "name": "24-filled",
+        "suffix": "24-filled"
+      },
+      {
+        "name": "24-light",
+        "suffix": "24-light"
+      },
+      {
+        "name": "24-regular",
+        "suffix": "24-regular"
+      },
+      {
+        "name": "28-filled",
+        "suffix": "28-filled"
+      },
+      {
+        "name": "28-light",
+        "suffix": "28-light"
+      },
+      {
+        "name": "28-regular",
+        "suffix": "28-regular"
+      },
+      {
+        "name": "32-filled",
+        "suffix": "32-filled"
+      },
+      {
+        "name": "32-light",
+        "suffix": "32-light"
+      },
+      {
+        "name": "32-regular",
+        "suffix": "32-regular"
+      },
+      {
+        "name": "48-filled",
+        "suffix": "48-filled"
+      },
+      {
+        "name": "48-light",
+        "suffix": "48-light"
+      },
+      {
+        "name": "48-regular",
+        "suffix": "48-regular"
+      }
+    ]
+  }
 }

@@ -45,7 +45,9 @@ function writeIfChanged(
   mkdirSync(dirname(filePath), { recursive: true });
   writeFileSync(filePath, content);
   result.written += 1;
-  result.files.push(relative(projectRoot, filePath));
+  // Normalize to forward slashes so the reported paths are stable across
+  // platforms (path.relative uses backslashes on Windows).
+  result.files.push(relative(projectRoot, filePath).replace(/\\/g, '/'));
 }
 
 /**
@@ -53,9 +55,9 @@ function writeIfChanged(
  * count and a sample icon for the usage example) into `projectRoot`, using the
  * real filesystem with write-if-changed semantics.
  *
- * `entries` is the split plan of the collection (from icon-entries.json); for
- * split collections the usage example imports from the matching secondary
- * entry point.
+ * `entries` is the split plan of the collection (from the meta.json `split`
+ * key); for split collections the usage example imports from the matching
+ * secondary entry point.
  */
 export async function generateReadme(
   projectRoot: string,
