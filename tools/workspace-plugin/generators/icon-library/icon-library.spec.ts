@@ -222,6 +222,48 @@ describe('icon-library generator', () => {
     expect(tree.exists('packages/fluent/src/lib/icons')).toBe(false);
   });
 
+  it('splits an iconmind-like set into style/weight secondary entries', async () => {
+    await iconLibraryGenerator(tree, {
+      name: 'iconmind',
+    });
+
+    const config = readProjectConfiguration(tree, 'iconmind');
+    expect(config.root).toBe('packages/iconmind');
+
+    // The whole iconmind collection (22,7k icons) is split into six
+    // style/weight secondary entries instead of one oversized primary entry.
+    const entriesPlan = readJson(tree, 'packages/iconmind/icon-entries.json');
+    expect(entriesPlan.collection).toBe('iconmind');
+    expect(entriesPlan.entries).toEqual([
+      { name: 'duotone-bold', filter: '*-duotone-bold' },
+      { name: 'outline-bold', filter: '*-outline-bold' },
+      { name: 'duotone-regular', filter: '*-duotone-regular' },
+      { name: 'outline-regular', filter: '*-outline-regular' },
+      { name: 'duotone-thin', filter: '*-duotone-thin' },
+      { name: 'outline-thin', filter: '*-outline-thin' },
+    ]);
+
+    // Secondary entry files exist per entry.
+    for (const entry of entriesPlan.entries) {
+      const entryRoot = `packages/iconmind/${entry.name}`;
+      expect(readJson(tree, `${entryRoot}/ng-package.json`)).toEqual({
+        lib: { entryFile: 'src/index.ts' },
+      });
+      expect(tree.exists(`${entryRoot}/src/index.ts`)).toBe(true);
+    }
+
+    // Primary barrel is empty for a split set; icons live in the entries.
+    expect(tree.read('packages/iconmind/src/index.ts', 'utf-8')).toBe(
+      'export {};\n',
+    );
+
+    // Workspace subpath resolution wired by the Nx generator.
+    const baseTsconfig = readJson(tree, 'tsconfig.base.json');
+    expect(
+      baseTsconfig.compilerOptions.paths['@ngxi/iconmind/duotone-bold'],
+    ).toEqual(['./packages/iconmind/duotone-bold/src/index.ts']);
+  });
+
   it('applies the reference filter to the written icon-set.json', async () => {
     const tempRoot = join(tmpdir(), 'icon-library-filter');
     rmSync(tempRoot, { recursive: true, force: true });
@@ -276,6 +318,38 @@ describe('icon-library generator', () => {
         { name: '24-filled', filter: '*-24-filled' },
         { name: '48-filled', filter: '*-48-filled' },
         { name: 'regular', filter: '*-regular' },
+      ]);
+    });
+
+    it('splits an iconmind-like set into per-style/weight secondary entries', () => {
+      function styled(
+        style: string,
+        weight: string,
+        count: number,
+      ): string[] {
+        return Array.from(
+          { length: count },
+          (_, i) => `icon-${i}-${style}-${weight}`,
+        );
+      }
+
+      const names = [
+        ...styled('duotone', 'bold', 600),
+        ...styled('outline', 'bold', 600),
+        ...styled('duotone', 'regular', 600),
+        ...styled('outline', 'regular', 600),
+        ...styled('duotone', 'thin', 600),
+        ...styled('outline', 'thin', 600),
+      ];
+      const plan = buildLibPlan('iconmind', names);
+      expect(plan.collection).toBe('iconmind');
+      expect(plan.entries).toEqual([
+        { name: 'duotone-bold', filter: '*-duotone-bold' },
+        { name: 'outline-bold', filter: '*-outline-bold' },
+        { name: 'duotone-regular', filter: '*-duotone-regular' },
+        { name: 'outline-regular', filter: '*-outline-regular' },
+        { name: 'duotone-thin', filter: '*-duotone-thin' },
+        { name: 'outline-thin', filter: '*-outline-thin' },
       ]);
     });
 

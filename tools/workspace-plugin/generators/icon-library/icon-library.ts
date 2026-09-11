@@ -23,14 +23,33 @@ import {
 } from './lib/naming';
 import { buildReadme } from './lib/generate-readme';
 
-/** `accessibility-20-filled` -> base `accessibility`, size `20`, family `filled`. */
-const FAMILY_SIZE_PATTERN = /^(.+)-(\d+)-([a-z][a-z0-9]*)$/;
+/**
+ * `accessibility-20-filled` -> base `accessibility`, size `20`, family `filled`;
+ * `archive-duotone-bold` -> base `archive`, style `duotone`, weight `bold`.
+ * The middle segment may be a size (`-[0-9]+`, fluent) or a style word
+ * (`-duotone`, iconmind); the trailing segment is the family/weight. Both
+ * shapes split the same way, so fluent-like and iconmind-like sets get their
+ * own secondary entries instead of one oversized primary entry.
+ */
+const FAMILY_SIZE_PATTERN = /^(.+)-([a-z0-9]+)-([a-z][a-z0-9]*)$/;
 
 /** A family needs at least this many size-suffixed icons to be recognized. */
 const MIN_FAMILY_ICONS = 200;
 
 /** Families below this total collapse to one `<family>` secondary entry. */
 const FAMILY_COLLAPSE_THRESHOLD = 1000;
+
+/**
+ * Orders variant keys numerically when both are numbers (`20`, `24`, `48`),
+ * lexicographically otherwise (`duotone`, `outline`). Keeps `20-filled`-style
+ * entries in size order while `duotone-bold`-style entries stay stable alpha.
+ */
+function compareVariantKeys(a: string, b: string): number {
+  const na = Number(a);
+  const nb = Number(b);
+  const bothNumeric = Number.isInteger(na) && Number.isInteger(nb);
+  return bothNumeric ? na - nb : a.localeCompare(b);
+}
 
 /**
  * A secondary entry point of an icon library. Each entry is a self-contained
@@ -47,9 +66,9 @@ export interface IconEntryPlan {
 
 /**
  * The library plan for one Iconify collection: a single publishable package
- * (`@ngxi/<collection>`) plus, when the set has a `-<size>-<family>` structure,
- * secondary entry points that split it into modules small enough to fit ngc's
- * memory budget.
+ * (`@ngxi/<collection>`) plus, when the set has a `-<variant>-<family>`
+ * structure (size or style variant), secondary entry points that split it into
+ * modules small enough to fit ngc's memory budget.
  */
 export interface IconLibraryPlan {
   /** Iconify collection id, e.g. `fluent` (also the library name). */
@@ -64,10 +83,11 @@ export interface IconLibraryPlan {
 /**
  * Derives the library plan for a collection from its icon names.
  *
- * - Sets whose icons carry `-<size>-<family>` suffixes (e.g. fluent:
- *   `accessibility-20-filled`) are split into one secondary entry per
- *   size/family (or one per family when the family is small), each with its
- *   own filter.
+ * - Sets whose icons carry a `-<variant>-<family>` suffix are split into one
+ *   secondary entry per variant/family (or one per family when the family is
+ *   small), each with its own filter. The variant is either a size (`-20-`,
+ *   fluent: `accessibility-20-filled`) or a style word (`-duotone-`,
+ *   iconmind: `archive-duotone-bold`).
  * - Sets without that structure (e.g. `ei`, `lucide`) stay in the primary
  *   entry.
  * - Mixed sets (some structured families plus leftovers without a suffix) stay
@@ -101,7 +121,9 @@ export function buildLibPlan(
     .map(([family, sizes]) => ({
       family,
       sizes: new Map(
-        [...sizes.entries()].sort(([a], [b]) => Number(a) - Number(b)),
+        [...sizes.entries()].sort(([a], [b]) =>
+          compareVariantKeys(a, b),
+        ),
       ),
     }));
 
