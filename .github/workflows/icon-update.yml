@@ -25,11 +25,16 @@ name: Iconify icon sets update
 #      per-package tags (@ngxi/<set>@<version>) and creates the GitHub releases.
 #      An explicit prerelease specifier is required: a plain patch bump on a
 #      prerelease version (1.0.0-beta.0) would resolve to 1.0.0 (stable).
-#   5. nx release publish --projects=<changed> publishes ONLY those packages.
-#      nx-release-publish depends on build (-> generate-icons -> update-reference),
-#      so publishing compiles exactly the packages it ships; no workspace-wide
-#      pre-build runs.
-#   6. push to main with PAT_GITHUB — a personal token, NOT the built-in
+#   5. build the changed packages FIRST with nx run-many --target=build.
+#      `nx release publish` does NOT expand the nx-release-publish target's
+#      dependsOn: it reads dist/<projectRoot>/package.json before publishing
+#      and fails with ENOENT if the build has not run (verified: 10 publish
+#      tasks failed in 0s because dist/packages/<set>/package.json was
+#      missing). build depends on generate-icons -> update-reference, so the
+#      icon sources are regenerated as part of this step.
+#   6. nx release publish --projects=<changed> publishes ONLY those packages.
+#      The dist output produced in step 5 is what gets shipped to npm.
+#   7. push to main with PAT_GITHUB — a personal token, NOT the built-in
 #      GITHUB_TOKEN: pushes made with GITHUB_TOKEN do not trigger other
 #      workflows, so ci.yml would never run. With PAT_GITHUB the push fires
 #      ci.yml (lint/test/e2e + build matrix on main). The per-package tags are
@@ -200,6 +205,13 @@ jobs:
           esac
           echo "version=$VER dist_tag=$TAG"
           echo "dist_tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Build changed packages
+        if: steps.detect.outputs.changed == 'true'
+        run: >
+          pnpm exec nx run-many
+          --target=build
+          --projects="${{ steps.detect.outputs.projects }}"
 
       - name: Publish changed packages
         if: steps.detect.outputs.changed == 'true'
