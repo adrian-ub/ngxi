@@ -65,6 +65,7 @@ env:
 
 permissions:
   contents: write
+  actions: write # required to dispatch publish.yml via gh workflow run
 
 jobs:
   update:
@@ -188,6 +189,7 @@ jobs:
           pnpm exec nx release version
           --projects="${{ steps.detect.outputs.projects }}"
           --specifier prerelease --preid beta
+          --git-commit --git-tag
 
       - name: Derive npm dist-tag
         id: disttag
