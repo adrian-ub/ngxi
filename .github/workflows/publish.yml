@@ -1,11 +1,18 @@
 name: Publish
 
 # Manual publish of every package to npm (workflow_dispatch). The daily
-# Iconify icon sets update workflow already publishes only the changed
-# libraries in-process; this job is the safety net / manual full release:
-# it builds every library and publishes every version currently in the
-# manifests that does not exist on the registry yet (e.g. the 1.0.0-beta.0
-# transition), skipping versions that are already published.
+# Iconify icon sets update workflow versions the changed libraries and then
+# triggers this workflow (same release, no duplicate tags); this job is also
+# the safety net / manual full release: it publishes every version currently
+# in the manifests that does not exist on the registry yet (e.g. the
+# 1.0.0-beta.0 transition), skipping versions that are already published.
+#
+# `projects` filters to a subset (the daily workflow passes the changed sets).
+# Empty = all packages. When filtering, the build must run explicitly: Nx
+# does not expand nx-release-publish's `dependsOn: ["build"]` when
+# `--projects` limits the command (verified: publish tasks fail with ENOENT
+# on dist/packages/<set>/package.json). With no filter, `nx release publish`
+# expands the full task graph and builds+publishes everything.
 #
 # The npm dist-tag is chosen from the input (default beta). Trusted Publisher
 # (OIDC) is used — no NODE_AUTH_TOKEN needed. Each package on npmjs.com must
@@ -13,7 +20,9 @@ name: Publish
 #   https://github.com/adrian-ub/ngxi/.github/workflows/publish.yml
 # (npm configures trusted publishers per package, not per org/scope — 236
 # packages, one entry each.) The publish job needs id-token: write for both
-# the OIDC login and npm provenance signing.
+# the OIDC login and npm provenance signing. This is also why the Iconify
+# workflow must NOT publish itself: its OIDC identity is not authorized on
+# npmjs.com, so no token/NPM_CONFIG_PROVENANCE can make it publish.
 #
 # Fallback if OIDC is not configured everywhere: restore setup-node's
 # registry-url and set NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} (already
@@ -31,6 +40,10 @@ on:
           - beta
           - next
           - latest
+      projects:
+        description: Comma-separated package list (empty = all packages)
+        required: false
+        default: ''
 
 concurrency:
   group: publish
@@ -66,14 +79,30 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      # nx-release-publish publishes from dist/{projectRoot} and depends on
-      # build (-> generate-icons -> update-reference), so running every
-      # nx-release-publish target builds and publishes each library. The 12GB
-      # heap cap matches the largest icon sets; parallel=2 keeps two heavy
-      # builds from exceeding the runner's RAM (standard runner: 2 vCPU/7GB).
-      - name: Publish all libraries
+      # When projects are filtered, build them explicitly: `nx release publish
+      # --projects=...` does NOT expand the nx-release-publish target's
+      # dependsOn (build -> generate-icons -> update-reference), so without
+      # this step dist/packages/<set>/package.json is missing and publish
+      # fails with ENOENT. With an empty filter, `nx release publish` expands
+      # the full task graph itself and builds everything. The 12GB heap cap
+      # matches the largest icon sets; parallel=2 keeps two heavy builds from
+      # exceeding the runner's RAM (standard runner: 2 vCPU/7GB).
+      - name: Build libraries (filtered publish)
+        if: github.event.inputs.projects != ''
+        env:
+          NODE_OPTIONS: --max-old-space-size=12288
+          NX_PROJECTS: ${{ github.event.inputs.projects }}
+        run: pnpm exec nx run-many --target=build --projects="$NX_PROJECTS"
+
+      - name: Publish libraries
         env:
           NODE_OPTIONS: --max-old-space-size=12288
           NPM_CONFIG_PROVENANCE: true
           TAG: ${{ github.event.inputs.dist-tag }}
-        run: pnpm exec nx release publish --tag "$TAG" --outputStyle=static
+          NX_PROJECTS: ${{ github.event.inputs.projects }}
+        run: |
+          if [ -n "$NX_PROJECTS" ]; then
+            pnpm exec nx release publish --projects="$NX_PROJECTS" --tag "$TAG" --outputStyle=static
+          else
+            pnpm exec nx release publish --tag "$TAG" --outputStyle=static
+          fi

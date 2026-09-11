@@ -25,21 +25,20 @@ name: Iconify icon sets update
 #      per-package tags (@ngxi/<set>@<version>) and creates the GitHub releases.
 #      An explicit prerelease specifier is required: a plain patch bump on a
 #      prerelease version (1.0.0-beta.0) would resolve to 1.0.0 (stable).
-#   5. build the changed packages FIRST with nx run-many --target=build.
-#      `nx release publish` does NOT expand the nx-release-publish target's
-#      dependsOn: it reads dist/<projectRoot>/package.json before publishing
-#      and fails with ENOENT if the build has not run (verified: 10 publish
-#      tasks failed in 0s because dist/packages/<set>/package.json was
-#      missing). build depends on generate-icons -> update-reference, so the
-#      icon sources are regenerated as part of this step.
-#   6. nx release publish --projects=<changed> publishes ONLY those packages.
-#      The dist output produced in step 5 is what gets shipped to npm.
-#   7. push to main with PAT_GITHUB — a personal token, NOT the built-in
+#   5. derive the npm dist-tag (alpha/beta/next/latest) from the new version.
+#   6. push to main with PAT_GITHUB — a personal token, NOT the built-in
 #      GITHUB_TOKEN: pushes made with GITHUB_TOKEN do not trigger other
 #      workflows, so ci.yml would never run. With PAT_GITHUB the push fires
 #      ci.yml (lint/test/e2e + build matrix on main). The per-package tags are
 #      pushed along (the 3-tags-per-push GitHub Actions trigger limit does not
-#      apply: nothing listens to package tags; publish happens in-process).
+#      apply: nothing listens to package tags; publishing happens later).
+#   7. trigger the Publish workflow (publish.yml) via workflow_dispatch with
+#      the changed projects and the derived dist-tag. THIS is the workflow
+#      that publishes to npm: npmjs.com Trusted Publishers are configured per
+#      package and only authorize publish.yml's OIDC identity, so the daily
+#      workflow must never publish itself (npm rejects its OIDC request with
+#      E404). publish.yml builds the filtered projects itself — `nx release
+#      publish --projects=...` does not expand the build dependency.
 #
 # Manual releases always win: running `nx release` locally (or the Publish
 # workflow) switches any package to whatever version/tag you choose, and the
@@ -66,7 +65,6 @@ env:
 
 permissions:
   contents: write
-  id-token: write # OIDC trusted publisher + npm provenance
 
 jobs:
   update:
@@ -206,25 +204,16 @@ jobs:
           echo "version=$VER dist_tag=$TAG"
           echo "dist_tag=$TAG" >> "$GITHUB_OUTPUT"
 
-      - name: Build changed packages
-        if: steps.detect.outputs.changed == 'true'
-        run: >
-          pnpm exec nx run-many
-          --target=build
-          --projects="${{ steps.detect.outputs.projects }}"
-
-      - name: Publish changed packages
-        if: steps.detect.outputs.changed == 'true'
-        env:
-          NPM_CONFIG_PROVENANCE: true
-          TAG: ${{ steps.disttag.outputs.dist_tag }}
-        run: >
-          pnpm exec nx release publish
-          --projects="${{ steps.detect.outputs.projects }}"
-          --tag "$TAG"
-          --outputStyle=static
-
       - name: Push to main
         if: steps.detect.outputs.changed == 'true'
         run: |
           git push origin main --follow-tags
+
+      - name: Trigger publish workflow
+        if: steps.detect.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DIST_TAG: ${{ steps.disttag.outputs.dist_tag }}
+          PROJECTS: ${{ steps.detect.outputs.projects }}
+        run: |
+          gh workflow run publish.yml -f dist-tag="$DIST_TAG" -f projects="$PROJECTS"
