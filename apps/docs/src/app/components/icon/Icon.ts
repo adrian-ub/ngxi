@@ -45,8 +45,10 @@ export class Icon {
         );
       }
 
-      const width = iconData.width ?? collectionData.width ?? 24;
-      const height = iconData.height ?? collectionData.height ?? 24;
+      const width =
+        iconData.width ?? collectionData.width ?? collectionData.height ?? 24;
+      const height =
+        iconData.height ?? collectionData.height ?? collectionData.width ?? 24;
 
       const body = makeIdsUnique(
         iconData.body,
@@ -66,12 +68,18 @@ export class Icon {
     const data = this.iconData.value() ?? this.data();
     if (!data) return undefined;
 
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${data.width}" height="${data.height}" viewBox="0 0 ${data.width} ${data.height}">${data.body}</svg>`;
+    // Chunks carry resolved dimensions (prepare.ts normalizes sets that omit
+    // `height`, e.g. si-glyph has root width 17 but no height), but guard
+    // against any undefined leaking through: fall back to a square box.
+    const width = data.width ?? 24;
+    const height = data.height ?? data.width ?? 24;
+
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">${data.body}</svg>`;
 
     return {
       body: this.sanitizer.bypassSecurityTrustHtml(svg),
-      width: data.width,
-      height: data.height,
+      width,
+      height,
     };
   });
 }

@@ -19,6 +19,15 @@ export interface CollectionInfo {
    */
   hidden?: boolean;
   icons: string[];
+  /**
+   * Split plan from the package's meta.json (`split` key): the collection is
+   * published as a primary entry plus secondary entry points, each covering one
+   * suffix variant (e.g. `20-filled`). Absent for non-split collections.
+   */
+  split?: {
+    hasBaseIcons: boolean;
+    entries: { name: string; suffix?: string; filter?: string }[];
+  };
 }
 
 export const collections = infoJSON.map((c) =>

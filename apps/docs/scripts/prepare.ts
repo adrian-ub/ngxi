@@ -69,9 +69,20 @@ async function prepareJSON() {
   for (const info of collections) {
     const setData = await readJSON(path.join(dir, 'json', `${info.id}.json`));
 
+    // The split plan (secondary entry points) lives in the package's committed
+    // meta.json (`split` key). Surface it to the docs so icon detail snippets
+    // can import from the exact secondary entry point instead of the package root.
+    let split: unknown;
+    try {
+      const pkgMeta = await readJSON(path.join(packagesDir, info.id, 'meta.json'));
+      split = pkgMeta.split;
+    } catch {
+      split = undefined;
+    }
+
     const icons = Object.keys(setData.icons);
     const categories = setData.categories;
-    const meta = { ...info, icons, categories };
+    const meta = { ...info, icons, categories, split };
     const metaFilePath = path.join(collectionsDir, `${info.id}-meta.json`);
 
     await writeJSON(metaFilePath, meta);
@@ -90,17 +101,26 @@ async function prepareJSON() {
     // instead of a multi-MB full bundle — and pull more on demand. Names are
     // indexed in the same order as `icons` in the meta file, so the client can
     // request exactly the chunk covering its visible range.
+    // Dimensions are resolved up front (Iconify omits `height` when it equals
+    // the set `width`; e.g. si-glyph has root width 17 but no height) so the
+    // client never renders `height="undefined"`.
+    const defaultWidth = setData.width ?? setData.height ?? 24;
+    const defaultHeight = setData.height ?? setData.width ?? 24;
     for (let start = 0; start < icons.length; start += CHUNK_SIZE) {
       const slice = icons.slice(start, start + CHUNK_SIZE);
       const chunkIcons: Record<string, unknown> = {};
       for (const name of slice) {
         const ic = setData.icons[name];
-        chunkIcons[name] = { body: ic.body, width: ic.width, height: ic.height };
+        chunkIcons[name] = {
+          body: ic.body,
+          width: ic.width ?? defaultWidth,
+          height: ic.height ?? defaultHeight,
+        };
       }
       const chunk = {
         prefix: setData.prefix,
-        width: setData.width,
-        height: setData.height,
+        width: defaultWidth,
+        height: defaultHeight,
         icons: chunkIcons,
       };
       const chunkFile = path.join(
@@ -115,10 +135,11 @@ async function prepareJSON() {
 
     collectionsMeta.push(meta);
 
+    info.split = split;
     info.sampleIcons = icons.slice(0, 6);
     if (info.id === 'logos') {
       info.sampleIcons = [
-        'angular',
+        'angular-icon',
         'vitejs',
         'vitest',
         'analog',

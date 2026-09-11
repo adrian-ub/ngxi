@@ -228,12 +228,21 @@ export function loadCollectionChunk(
  * `IconifyJSON` data. Handles aliases (Iconify's `aliases` map) by setting
  * `aliasOf` to the canonical parent name.
  *
+ * When `split` is provided (the package's split plan from meta.json), icons
+ * whose name carries one of the entry suffixes are imported from the matching
+ * secondary entry point (`@ngxi/<collection>/<entry>`); icons without a match
+ * (the base icon set) import from the package root.
+ *
  * Returns `null` when the icon name is not found in the collection.
  */
 export function deriveIconEntry(
   collection: string,
   iconName: string,
   data: IconifyJSON,
+  split?: {
+    hasBaseIcons: boolean;
+    entries: { name: string; suffix?: string; filter?: string }[];
+  },
 ): IconIndexEntry | null {
   // Check if the icon exists directly
   if (data.icons[iconName]) {
@@ -244,7 +253,8 @@ export function deriveIconEntry(
       name: iconName,
       className,
       selectorAttr: iconComponentSelector(collection, iconName, colliding),
-      importFrom: `@ngxi/${collection}`,
+      importFrom: importFromFor(collection, iconName, split),
+      entry: entryFor(iconName, split),
     };
   }
 
@@ -254,7 +264,7 @@ export function deriveIconEntry(
     if (alias && typeof alias === 'object' && 'parent' in alias) {
       const parentName = (alias as { parent: string }).parent;
       // Recurse to get the parent's entry, then set aliasOf
-      const parentEntry = deriveIconEntry(collection, parentName, data);
+      const parentEntry = deriveIconEntry(collection, parentName, data, split);
       if (parentEntry) {
         return {
           ...parentEntry,
@@ -266,6 +276,56 @@ export function deriveIconEntry(
   }
 
   return null;
+}
+
+/**
+ * The longest split-plan suffix that `iconName` ends with (e.g. for a plan
+ * with suffixes `20-filled` and `filled`, `x-20-filled` matches `20-filled`).
+ */
+function matchedSuffix(
+  iconName: string,
+  entries: { name: string; suffix?: string; filter?: string }[],
+): string | undefined {
+  let best: string | undefined;
+  for (const entry of entries) {
+    const suffix = entry.suffix;
+    if (
+      suffix &&
+      iconName.endsWith(`-${suffix}`) &&
+      (best === undefined || suffix.length > best.length)
+    ) {
+      best = suffix;
+    }
+  }
+  return best;
+}
+
+/** The secondary entry point name an icon belongs to, or undefined for base icons. */
+function entryFor(
+  iconName: string,
+  split?: {
+    hasBaseIcons: boolean;
+    entries: { name: string; suffix?: string; filter?: string }[];
+  },
+): string | undefined {
+  if (!split?.entries.length) {
+    return undefined;
+  }
+  const suffix = matchedSuffix(iconName, split.entries);
+  return split.entries.find((e) => e.suffix === suffix)?.name;
+}
+
+/** The package import path: the matching entry point, else the package root. */
+function importFromFor(
+  collection: string,
+  iconName: string,
+  split?: {
+    hasBaseIcons: boolean;
+    entries: { name: string; suffix?: string; filter?: string }[];
+  },
+): string {
+  const entry = entryFor(iconName, split);
+  return entry ? `@ngxi/${collection}/${entry}` : `@ngxi/${collection}`;
 }
 
 /**

@@ -18,6 +18,22 @@ const mockCollectionData = {
   },
 };
 
+const mockSplitCollectionData = {
+  prefix: 'fluent',
+  icons: {
+    'accessibility-20-filled': {
+      body: '<path d="M1 2"/>',
+      width: 24,
+      height: 24,
+    },
+  },
+};
+
+const mockSplitPlan = {
+  hasBaseIcons: false,
+  entries: [{ name: '20-filled', suffix: '20-filled' }],
+};
+
 describe('IconDetailDialog', () => {
   const createFixture = (iconName = 'test-icon') => {
     const fixture = TestBed.createComponent(IconDetailDialog);
@@ -27,16 +43,25 @@ describe('IconDetailDialog', () => {
   };
 
   beforeEach(async () => {
-    vi.stubGlobal('fetch', vi.fn(async () => ({
-      ok: true,
-      // `loadCollection` checks `response.body` before the content-encoding
-      // branch; with `gzip` it reads `response.text()` and never touches body.
-      body: new ReadableStream(),
-      headers: {
-        get: (name: string) => (name === 'content-encoding' ? 'gzip' : ''),
-      },
-      text: async () => JSON.stringify(mockCollectionData),
-    })));
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (url: string | URL | Request) => {
+        const resolved = typeof url === 'string' ? url : url instanceof URL ? url.pathname : url.url;
+        const data = resolved.includes('fluent')
+          ? mockSplitCollectionData
+          : mockCollectionData;
+        return {
+          ok: true,
+          // `loadCollection` checks `response.body` before the content-encoding
+          // branch; with `gzip` it reads `response.text()` and never touches body.
+          body: new ReadableStream(),
+          headers: {
+            get: (name: string) => (name === 'content-encoding' ? 'gzip' : ''),
+          },
+          text: async () => JSON.stringify(data),
+        };
+      }),
+    );
 
     await TestBed.configureTestingModule({
       imports: [IconDetailDialog],
@@ -75,6 +100,18 @@ describe('IconDetailDialog', () => {
     fixture.detectChanges();
     expect(fixture.componentInstance.importSnippet()).toBe(
       "import { TestSetTestIcon } from '@ngxi/test-set';",
+    );
+  });
+
+  it('computes import snippet from the secondary entry point when the collection is split', async () => {
+    const fixture = TestBed.createComponent(IconDetailDialog);
+    fixture.componentRef.setInput('iconName', 'accessibility-20-filled');
+    fixture.componentRef.setInput('collection', 'fluent');
+    fixture.componentRef.setInput('split', mockSplitPlan);
+    await fixture.whenStable();
+    fixture.detectChanges();
+    expect(fixture.componentInstance.importSnippet()).toBe(
+      "import { FluentAccessibility20Filled } from '@ngxi/fluent/20-filled';",
     );
   });
 

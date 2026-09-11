@@ -20,8 +20,10 @@ import type { IconifyJSON } from '@iconify/types';
 function extractSvg(data: IconifyJSON, iconName: string): string | undefined {
   const icon = data.icons[iconName];
   if (!icon) return undefined;
-  const width = icon.width ?? data.width ?? 24;
-  const height = icon.height ?? data.height ?? 24;
+  // Iconify omits `height` when it equals the set `width` (e.g. si-glyph has
+  // root width 17 but no height); fall back to a square box for those sets.
+  const width = icon.width ?? data.width ?? data.height ?? 24;
+  const height = icon.height ?? data.height ?? data.width ?? 24;
   const iconViewBox = (icon as { viewBox?: [number, number, number, number] })
     .viewBox;
   const viewBox = iconViewBox?.join(' ') ?? `0 0 ${width} ${height}`;
@@ -46,6 +48,15 @@ export class IconDetailDialog {
    * IconifyJSON data the SVG is resolved from.
    */
   readonly collection = input.required<string>();
+  /**
+   * The collection's split plan (from meta.json), so the snippets import from
+   * the exact secondary entry point (e.g. `@ngxi/fluent/20-filled`) instead of
+   * the package root. Absent for non-split collections.
+   */
+  readonly split = input<
+    | { hasBaseIcons: boolean; entries: { name: string; suffix?: string; filter?: string }[] }
+    | undefined
+  >();
   readonly closeDialog = output<void>();
 
   private readonly sanitizer = inject(DomSanitizer);
@@ -116,7 +127,7 @@ export class IconDetailDialog {
     const iconName = this.iconName();
     const data = this.collectionData.value();
     if (!iconName || !data) return null;
-    return deriveIconEntry(this.collection(), iconName, data);
+    return deriveIconEntry(this.collection(), iconName, data, this.split());
   });
 
   /**

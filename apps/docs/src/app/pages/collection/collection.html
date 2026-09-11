@@ -93,6 +93,6 @@
 
 @defer (when selectedIcon()) {
   @if(selectedIcon()) {
-    <app-icon-detail-dialog [iconName]="selectedIcon()!" [collection]="collection()" (closeDialog)="selectedIcon.set(null)" />
+    <app-icon-detail-dialog [iconName]="selectedIcon()!" [collection]="collection()" [split]="collectionInfo()?.split" (closeDialog)="selectedIcon.set(null)" />
   }
 }
