@@ -10,6 +10,12 @@ permissions:
   actions: read
   contents: read
 
+# Nx Cloud reads the access token from the runner env. The workspace uses
+# nxCloudId (not nxCloudAccessToken), so without this env var Nx falls back to
+# the implicit GitHub-bound login, which returns 401 and blocks every nx command.
+env:
+  NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
+
 jobs:
   # ── Dynamic build matrix ──────────────────────────────────────────────────
   # Derives the icon-library build matrix from the workspace via Nx. On main

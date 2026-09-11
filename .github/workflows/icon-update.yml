@@ -52,6 +52,13 @@ concurrency:
   group: icon-update
   cancel-in-progress: false
 
+# Nx Cloud reads the access token from the runner env. The workspace uses
+# nxCloudId (not nxCloudAccessToken), so without this env var Nx falls back to
+# the implicit GitHub-bound login, which returns 401 ("You do not have
+# sufficient access to this workspace") and blocks every nx command.
+env:
+  NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
+
 permissions:
   contents: write
   id-token: write # OIDC trusted publisher + npm provenance
