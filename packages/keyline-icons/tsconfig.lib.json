@@ -1,0 +1,32 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "types": []
+  },
+  "include": [
+    "src/**/*.ts",
+    "duotone/src/**/*.ts",
+    "fill/src/**/*.ts",
+    "sharp/src/**/*.ts",
+    "sharp-duotone/src/**/*.ts",
+    "sharp-fill/src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "duotone/src/**/*.spec.ts",
+    "duotone/src/**/*.test.ts",
+    "fill/src/**/*.spec.ts",
+    "fill/src/**/*.test.ts",
+    "sharp/src/**/*.spec.ts",
+    "sharp/src/**/*.test.ts",
+    "sharp-duotone/src/**/*.spec.ts",
+    "sharp-duotone/src/**/*.test.ts",
+    "sharp-fill/src/**/*.spec.ts",
+    "sharp-fill/src/**/*.test.ts"
+  ]
+}

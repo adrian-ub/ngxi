@@ -1,0 +1,23 @@
+{
+  "name": "@ngxi/iconmind",
+  "version": "1.0.0-beta.0",
+  "peerDependencies": {
+    "@angular/common": ">=17.0.0",
+    "@angular/core": ">=17.0.0"
+  },
+  "sideEffects": false,
+  "description": "IconMind for Angular applications",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "license": "MIT",
+  "author": "Adrián UB",
+  "funding": "https://github.com/sponsors/adrian-ub",
+  "homepage": "https://github.com/adrian-ub/ngxi#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrian-ub/ngxi.git",
+    "directory": "packages/iconmind"
+  },
+  "bugs": "https://github.com/adrian-ub/ngxi/issues"
+}

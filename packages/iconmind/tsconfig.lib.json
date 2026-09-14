@@ -1,0 +1,35 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "types": []
+  },
+  "include": [
+    "src/**/*.ts",
+    "duotone-bold/src/**/*.ts",
+    "duotone-regular/src/**/*.ts",
+    "duotone-thin/src/**/*.ts",
+    "outline-bold/src/**/*.ts",
+    "outline-regular/src/**/*.ts",
+    "outline-thin/src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "duotone-bold/src/**/*.spec.ts",
+    "duotone-bold/src/**/*.test.ts",
+    "duotone-regular/src/**/*.spec.ts",
+    "duotone-regular/src/**/*.test.ts",
+    "duotone-thin/src/**/*.spec.ts",
+    "duotone-thin/src/**/*.test.ts",
+    "outline-bold/src/**/*.spec.ts",
+    "outline-bold/src/**/*.test.ts",
+    "outline-regular/src/**/*.spec.ts",
+    "outline-regular/src/**/*.test.ts",
+    "outline-thin/src/**/*.spec.ts",
+    "outline-thin/src/**/*.test.ts"
+  ]
+}

@@ -504,7 +504,42 @@
       "@ngxi/token-branded/background": [
         "./packages/token-branded/background/src/index.ts"
       ],
-      "@ngxi/weui/outlined": ["./packages/weui/outlined/src/index.ts"]
+      "@ngxi/weui/outlined": ["./packages/weui/outlined/src/index.ts"],
+      "@ngxi/iconmind": ["./packages/iconmind/src/index.ts"],
+      "@ngxi/iconmind/duotone-bold": [
+        "./packages/iconmind/duotone-bold/src/index.ts"
+      ],
+      "@ngxi/iconmind/duotone-regular": [
+        "./packages/iconmind/duotone-regular/src/index.ts"
+      ],
+      "@ngxi/iconmind/duotone-thin": [
+        "./packages/iconmind/duotone-thin/src/index.ts"
+      ],
+      "@ngxi/iconmind/outline-bold": [
+        "./packages/iconmind/outline-bold/src/index.ts"
+      ],
+      "@ngxi/iconmind/outline-regular": [
+        "./packages/iconmind/outline-regular/src/index.ts"
+      ],
+      "@ngxi/iconmind/outline-thin": [
+        "./packages/iconmind/outline-thin/src/index.ts"
+      ],
+      "@ngxi/keyline-icons": ["./packages/keyline-icons/src/index.ts"],
+      "@ngxi/keyline-icons/duotone": [
+        "./packages/keyline-icons/duotone/src/index.ts"
+      ],
+      "@ngxi/keyline-icons/fill": [
+        "./packages/keyline-icons/fill/src/index.ts"
+      ],
+      "@ngxi/keyline-icons/sharp": [
+        "./packages/keyline-icons/sharp/src/index.ts"
+      ],
+      "@ngxi/keyline-icons/sharp-duotone": [
+        "./packages/keyline-icons/sharp-duotone/src/index.ts"
+      ],
+      "@ngxi/keyline-icons/sharp-fill": [
+        "./packages/keyline-icons/sharp-fill/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
