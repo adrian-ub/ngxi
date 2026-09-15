@@ -1,0 +1,32 @@
+{
+  "lastModified": 1789034249,
+  "split": {
+    "hasBaseIcons": false,
+    "entries": [
+      {
+        "name": "duotone-bold",
+        "suffix": "duotone-bold"
+      },
+      {
+        "name": "duotone-regular",
+        "suffix": "duotone-regular"
+      },
+      {
+        "name": "duotone-thin",
+        "suffix": "duotone-thin"
+      },
+      {
+        "name": "outline-bold",
+        "suffix": "outline-bold"
+      },
+      {
+        "name": "outline-regular",
+        "suffix": "outline-regular"
+      },
+      {
+        "name": "outline-thin",
+        "suffix": "outline-thin"
+      }
+    ]
+  }
+}

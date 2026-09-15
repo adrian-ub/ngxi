@@ -1,0 +1,28 @@
+{
+  "lastModified": 1789279451,
+  "split": {
+    "hasBaseIcons": true,
+    "entries": [
+      {
+        "name": "duotone",
+        "suffix": "duotone"
+      },
+      {
+        "name": "fill",
+        "suffix": "fill"
+      },
+      {
+        "name": "sharp",
+        "suffix": "sharp"
+      },
+      {
+        "name": "sharp-duotone",
+        "suffix": "sharp-duotone"
+      },
+      {
+        "name": "sharp-fill",
+        "suffix": "sharp-fill"
+      }
+    ]
+  }
+}

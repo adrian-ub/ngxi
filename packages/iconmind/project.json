@@ -1,0 +1,76 @@
+{
+  "name": "iconmind",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/iconmind/src",
+  "prefix": "iconmind",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/iconmind/ng-package.json",
+        "tsConfig": "packages/iconmind/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/iconmind/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production",
+      "dependsOn": ["generate-icons"]
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      },
+      "dependsOn": ["build"]
+    },
+    "update-reference": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "inputs": [
+        "{workspaceRoot}/node_modules/@iconify/json/package.json",
+        "{workspaceRoot}/node_modules/@iconify/json/json/iconmind.json"
+      ],
+      "outputs": ["{projectRoot}/icon-set.json"],
+      "options": {
+        "command": "tsx tools/generate-icons/index.ts iconmind --reference-only",
+        "cwd": "{workspaceRoot}"
+      }
+    },
+    "generate-icons": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "dependsOn": ["update-reference"],
+      "inputs": [
+        "{projectRoot}/icon-set.json",
+        "{workspaceRoot}/tools/generate-icons/**/*",
+        "{workspaceRoot}/tools/workspace-plugin/generators/icon-library/lib/**/*",
+        "{projectRoot}/meta.json"
+      ],
+      "outputs": [
+        "{projectRoot}/duotone-bold/src/lib/icons",
+        "{projectRoot}/duotone-regular/src/lib/icons",
+        "{projectRoot}/duotone-thin/src/lib/icons",
+        "{projectRoot}/outline-bold/src/lib/icons",
+        "{projectRoot}/outline-regular/src/lib/icons",
+        "{projectRoot}/outline-thin/src/lib/icons",
+        "{projectRoot}/README.md"
+      ],
+      "options": {
+        "command": "ulimit -n 65536 && NODE_OPTIONS=\"--max-old-space-size=8192\" tsx tools/generate-icons/index.ts iconmind",
+        "cwd": "{workspaceRoot}"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "manifestRootsToUpdate": ["dist/{projectRoot}"],
+      "currentVersionResolver": "git-tag",
+      "fallbackCurrentVersionResolver": "disk"
+    }
+  }
+}
