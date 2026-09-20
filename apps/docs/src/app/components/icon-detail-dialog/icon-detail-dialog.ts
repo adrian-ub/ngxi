@@ -14,6 +14,15 @@ import { loadCollection, deriveIconEntry } from '../../data/load-collection';
 import type { IconifyJSON } from '@iconify/types';
 
 /**
+ * The npm package root for an import path, e.g. `@ngxi/keyline-icons/sharp`
+ * -> `@ngxi/keyline-icons`. Installing targets the whole package while the
+ * import snippet can use a secondary entry point.
+ */
+function packageNameFrom(importFrom: string): string {
+  return importFrom.split('/').slice(0, 2).join('/');
+}
+
+/**
  * Extracts the full SVG string for a single icon from IconifyJSON data.
  * Returns `undefined` when the icon is not found.
  */
@@ -79,9 +88,7 @@ export class IconDetailDialog {
   readonly installSnippet = computed(() => {
     const entry = this.entry();
     if (!entry) return '';
-    const pkgName = entry.importFrom.startsWith('@')
-      ? entry.importFrom
-      : entry.importFrom.replace('/icons/', '@');
+    const pkgName = packageNameFrom(entry.importFrom);
     const pm = this.packageManager();
     switch (pm) {
       case 'npm':

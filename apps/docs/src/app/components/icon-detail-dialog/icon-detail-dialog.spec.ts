@@ -115,6 +115,18 @@ describe('IconDetailDialog', () => {
     );
   });
 
+  it('installs the package root, not the secondary entry point, when the collection is split', async () => {
+    const fixture = TestBed.createComponent(IconDetailDialog);
+    fixture.componentRef.setInput('iconName', 'accessibility-20-filled');
+    fixture.componentRef.setInput('collection', 'fluent');
+    fixture.componentRef.setInput('split', mockSplitPlan);
+    await fixture.whenStable();
+    fixture.detectChanges();
+    expect(fixture.componentInstance.installSnippet()).toBe(
+      'pnpm add @ngxi/fluent',
+    );
+  });
+
   it('computes template snippet correctly', async () => {
     const fixture = createFixture();
     await fixture.whenStable();
