@@ -101,6 +101,11 @@ describe('icon-library generator', () => {
     });
     expect(projectJson.targets.build.dependsOn).toContain('generate-icons');
 
+    // The library versions against its SOURCE package.json (global nx.json
+    // release config); the upstream-default `release` block pointing
+    // manifestRootsToUpdate at dist/ must not be carried into project.json.
+    expect(projectJson.release).toBeUndefined();
+
     // The generator renders no static base files: every icon component is
     // self-contained and generated later by the `generate-icons` target.
     for (const baseFile of [

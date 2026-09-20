@@ -476,6 +476,14 @@ export function wireIconTargets(
         ...(json.targets['nx-release-publish'].dependsOn ?? []),
       ];
     }
+    // @nx/angular:library (via @nx/js's add-release-config) also writes a
+    // project-level `release.version.manifestRootsToUpdate: ["dist/{projectRoot}"]`
+    // into project.json. That forces `nx release version` to read/write the
+    // version in the built dist output, which does not exist at version time
+    // (versioning runs before publishing builds). The workspace versions the
+    // SOURCE package.json under the global nx.json release config, so drop the
+    // upstream-default release block like the rest of the library packages.
+    delete json.release;
     return json;
   });
 }

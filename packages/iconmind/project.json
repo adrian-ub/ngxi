@@ -65,12 +65,5 @@
         "cwd": "{workspaceRoot}"
       }
     }
-  },
-  "release": {
-    "version": {
-      "manifestRootsToUpdate": ["dist/{projectRoot}"],
-      "currentVersionResolver": "git-tag",
-      "fallbackCurrentVersionResolver": "disk"
-    }
   }
 }
