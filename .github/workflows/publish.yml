@@ -84,25 +84,30 @@ jobs:
       # dependsOn (build -> generate-icons -> update-reference), so without
       # this step dist/packages/<set>/package.json is missing and publish
       # fails with ENOENT. With an empty filter, `nx release publish` expands
-      # the full task graph itself and builds everything. The 12GB heap cap
-      # matches the largest icon sets; parallel=2 keeps two heavy builds from
-      # exceeding the runner's RAM (standard runner: 2 vCPU/7GB).
+      # the full task graph itself and builds everything.
+      #
+      # Memory: the standard runner has 2 vCPU/7GB RAM and the 3 largest icon
+      # sets (arcticons, mingcute, openmoji) exceed it. NODE_OPTIONS heap is
+      # capped at 6GB (headroom under the 7GB box) and parallelism is forced
+      # to 1 so a single heavy build gets the whole box; the previous 12GB cap
+      # with 3 parallel builds caused the kernel OOM-killer to SIGKILL the
+      # biggest builds mid-compilation (no JS error, just cancelled).
       - name: Build libraries (filtered publish)
         if: github.event.inputs.projects != ''
         env:
-          NODE_OPTIONS: --max-old-space-size=12288
+          NODE_OPTIONS: --max-old-space-size=6144
           NX_PROJECTS: ${{ github.event.inputs.projects }}
-        run: pnpm exec nx run-many --target=build --projects="$NX_PROJECTS"
+        run: pnpm exec nx run-many --target=build --projects="$NX_PROJECTS" --parallel=1
 
       - name: Publish libraries
         env:
-          NODE_OPTIONS: --max-old-space-size=12288
+          NODE_OPTIONS: --max-old-space-size=6144
           NPM_CONFIG_PROVENANCE: true
           TAG: ${{ github.event.inputs.dist-tag }}
           NX_PROJECTS: ${{ github.event.inputs.projects }}
         run: |
           if [ -n "$NX_PROJECTS" ]; then
-            pnpm exec nx release publish --projects="$NX_PROJECTS" --tag "$TAG" --outputStyle=static
+            pnpm exec nx release publish --projects="$NX_PROJECTS" --tag "$TAG" --outputStyle=static --parallel=1
           else
-            pnpm exec nx release publish --tag "$TAG" --outputStyle=static
+            pnpm exec nx release publish --tag "$TAG" --outputStyle=static --parallel=1
           fi
