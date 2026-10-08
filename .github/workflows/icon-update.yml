@@ -20,12 +20,13 @@ name: Iconify icon sets update
 #      committed change signal.
 #   3. refresh meta.json for the changed sets and commit that with the
 #      dependency bump (`fix:` conventional commit, patch-level release).
-#   4. nx release version --projects=<changed> --specifier prerelease --preid beta
-#      bumps ONLY those packages (1.0.0-beta.0 -> 1.0.0-beta.1), commits with
-#      per-package tags (@ngxi/<set>@<version>) and creates the GitHub releases.
-#      An explicit prerelease specifier is required: a plain patch bump on a
-#      prerelease version (1.0.0-beta.0) would resolve to 1.0.0 (stable).
-#   5. derive the npm dist-tag (alpha/beta/next/latest) from the new version.
+#   4. nx release version --projects=<changed> --specifier patch bumps ONLY
+#      those packages (1.0.0 -> 1.0.1), commits with per-package tags
+#      (@ngxi/<set>@<version>) and creates the GitHub releases. Once a set
+#      reaches a stable release (e.g. 1.0.0), every auto-update is a stable
+#      patch bump in the same minor line — no prereleases are produced here
+#      (prerelease versions are only created by manual `nx release` runs).
+#   5. derive the npm dist-tag (latest) from the new stable version.
 #   6. push to main with PAT_GITHUB — a personal token, NOT the built-in
 #      GITHUB_TOKEN: pushes made with GITHUB_TOKEN do not trigger other
 #      workflows, so ci.yml would never run. With PAT_GITHUB the push fires
@@ -177,7 +178,7 @@ jobs:
           git config user.name 'UbLabs[bot]'
           git config user.email '92824821+ublabs[bot]@users.noreply.github.com'
           git add -A
-          # fix: -> patch-level conventional commit, matching the prerelease
+          # fix: -> patch-level conventional commit, matching the patch
           # release policy in the header comment.
           git commit -m "fix: update @iconify/json to v$LATEST"
 
@@ -188,7 +189,7 @@ jobs:
         run: >
           pnpm exec nx release version
           --projects="${{ steps.detect.outputs.projects }}"
-          --specifier prerelease --preid beta
+          --specifier patch
           --git-commit --git-tag
 
       - name: Derive npm dist-tag
