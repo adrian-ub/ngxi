@@ -539,7 +539,27 @@
       ],
       "@ngxi/keyline-icons/sharp-fill": [
         "./packages/keyline-icons/sharp-fill/src/index.ts"
-      ]
+      ],
+      "@ngxi/andrsrxn": ["./packages/andrsrxn/src/index.ts"],
+      "@ngxi/energy-icons": ["./packages/energy-icons/src/index.ts"],
+      "@ngxi/energy-icons/20": ["./packages/energy-icons/20/src/index.ts"],
+      "@ngxi/energy-icons/20-bold": [
+        "./packages/energy-icons/20-bold/src/index.ts"
+      ],
+      "@ngxi/energy-icons/48": ["./packages/energy-icons/48/src/index.ts"],
+      "@ngxi/energy-icons/48-bold": [
+        "./packages/energy-icons/48-bold/src/index.ts"
+      ],
+      "@ngxi/iconoven": ["./packages/iconoven/src/index.ts"],
+      "@ngxi/iconoven/sharp": ["./packages/iconoven/sharp/src/index.ts"],
+      "@ngxi/lucide-extended": ["./packages/lucide-extended/src/index.ts"],
+      "@ngxi/lucide-extended/duotone": [
+        "./packages/lucide-extended/duotone/src/index.ts"
+      ],
+      "@ngxi/lucide-extended/filled": [
+        "./packages/lucide-extended/filled/src/index.ts"
+      ],
+      "@ngxi/matita": ["./packages/matita/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

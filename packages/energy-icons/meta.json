@@ -1,0 +1,24 @@
+{
+  "lastModified": 1792130862,
+  "split": {
+    "hasBaseIcons": false,
+    "entries": [
+      {
+        "name": "20",
+        "suffix": "20"
+      },
+      {
+        "name": "20-bold",
+        "suffix": "20-bold"
+      },
+      {
+        "name": "48",
+        "suffix": "48"
+      },
+      {
+        "name": "48-bold",
+        "suffix": "48-bold"
+      }
+    ]
+  }
+}
