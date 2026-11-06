@@ -1,0 +1,32 @@
+{
+  "lastModified": 1793290390,
+  "split": {
+    "hasBaseIcons": true,
+    "entries": [
+      {
+        "name": "blueprint",
+        "suffix": "blueprint"
+      },
+      {
+        "name": "duo",
+        "suffix": "duo"
+      },
+      {
+        "name": "engrave",
+        "suffix": "engrave"
+      },
+      {
+        "name": "gloss",
+        "suffix": "gloss"
+      },
+      {
+        "name": "sketch",
+        "suffix": "sketch"
+      },
+      {
+        "name": "solid",
+        "suffix": "solid"
+      }
+    ]
+  }
+}

@@ -539,6 +539,107 @@
       ],
       "@ngxi/keyline-icons/sharp-fill": [
         "./packages/keyline-icons/sharp-fill/src/index.ts"
+      ],
+      "@ngxi/andrsrxn": ["./packages/andrsrxn/src/index.ts"],
+      "@ngxi/coolicons": ["./packages/coolicons/src/index.ts"],
+      "@ngxi/coolicons/bulk": ["./packages/coolicons/bulk/src/index.ts"],
+      "@ngxi/coolicons/bulk-round": [
+        "./packages/coolicons/bulk-round/src/index.ts"
+      ],
+      "@ngxi/coolicons/bulk-sharp": [
+        "./packages/coolicons/bulk-sharp/src/index.ts"
+      ],
+      "@ngxi/coolicons/duocolor": [
+        "./packages/coolicons/duocolor/src/index.ts"
+      ],
+      "@ngxi/coolicons/duocolor-round": [
+        "./packages/coolicons/duocolor-round/src/index.ts"
+      ],
+      "@ngxi/coolicons/duocolor-sharp": [
+        "./packages/coolicons/duocolor-sharp/src/index.ts"
+      ],
+      "@ngxi/coolicons/duotone": ["./packages/coolicons/duotone/src/index.ts"],
+      "@ngxi/coolicons/duotone-round": [
+        "./packages/coolicons/duotone-round/src/index.ts"
+      ],
+      "@ngxi/coolicons/duotone-sharp": [
+        "./packages/coolicons/duotone-sharp/src/index.ts"
+      ],
+      "@ngxi/coolicons/fill": ["./packages/coolicons/fill/src/index.ts"],
+      "@ngxi/coolicons/fill-round": [
+        "./packages/coolicons/fill-round/src/index.ts"
+      ],
+      "@ngxi/coolicons/fill-sharp": [
+        "./packages/coolicons/fill-sharp/src/index.ts"
+      ],
+      "@ngxi/coolicons/round": ["./packages/coolicons/round/src/index.ts"],
+      "@ngxi/coolicons/sharp": ["./packages/coolicons/sharp/src/index.ts"],
+      "@ngxi/doodle-icons": ["./packages/doodle-icons/src/index.ts"],
+      "@ngxi/energy-icons": ["./packages/energy-icons/src/index.ts"],
+      "@ngxi/energy-icons/20": ["./packages/energy-icons/20/src/index.ts"],
+      "@ngxi/energy-icons/20-bold": [
+        "./packages/energy-icons/20-bold/src/index.ts"
+      ],
+      "@ngxi/energy-icons/48": ["./packages/energy-icons/48/src/index.ts"],
+      "@ngxi/energy-icons/48-bold": [
+        "./packages/energy-icons/48-bold/src/index.ts"
+      ],
+      "@ngxi/iconito": ["./packages/iconito/src/index.ts"],
+      "@ngxi/iconoven": ["./packages/iconoven/src/index.ts"],
+      "@ngxi/iconoven/sharp": ["./packages/iconoven/sharp/src/index.ts"],
+      "@ngxi/lucide-extended": ["./packages/lucide-extended/src/index.ts"],
+      "@ngxi/lucide-extended/duotone": [
+        "./packages/lucide-extended/duotone/src/index.ts"
+      ],
+      "@ngxi/lucide-extended/filled": [
+        "./packages/lucide-extended/filled/src/index.ts"
+      ],
+      "@ngxi/matita": ["./packages/matita/src/index.ts"],
+      "@ngxi/streamline-memes": ["./packages/streamline-memes/src/index.ts"],
+      "@ngxi/struq": ["./packages/struq/src/index.ts"],
+      "@ngxi/tabler-flags": ["./packages/tabler-flags/src/index.ts"],
+      "@ngxi/withicons": ["./packages/withicons/src/index.ts"],
+      "@ngxi/withicons/blueprint": [
+        "./packages/withicons/blueprint/src/index.ts"
+      ],
+      "@ngxi/withicons/duo": ["./packages/withicons/duo/src/index.ts"],
+      "@ngxi/withicons/engrave": ["./packages/withicons/engrave/src/index.ts"],
+      "@ngxi/withicons/gloss": ["./packages/withicons/gloss/src/index.ts"],
+      "@ngxi/withicons/sketch": ["./packages/withicons/sketch/src/index.ts"],
+      "@ngxi/withicons/solid": ["./packages/withicons/solid/src/index.ts"],
+      "@ngxi/withicons-anime": ["./packages/withicons-anime/src/index.ts"],
+      "@ngxi/withicons-bauhaus": ["./packages/withicons-bauhaus/src/index.ts"],
+      "@ngxi/withicons-bento": ["./packages/withicons-bento/src/index.ts"],
+      "@ngxi/withicons-brutal": ["./packages/withicons-brutal/src/index.ts"],
+      "@ngxi/withicons-christmas": [
+        "./packages/withicons-christmas/src/index.ts"
+      ],
+      "@ngxi/withicons-chrome": ["./packages/withicons-chrome/src/index.ts"],
+      "@ngxi/withicons-clay": ["./packages/withicons-clay/src/index.ts"],
+      "@ngxi/withicons-coquette": [
+        "./packages/withicons-coquette/src/index.ts"
+      ],
+      "@ngxi/withicons-dock": ["./packages/withicons-dock/src/index.ts"],
+      "@ngxi/withicons-glass": ["./packages/withicons-glass/src/index.ts"],
+      "@ngxi/withicons-gothic": ["./packages/withicons-gothic/src/index.ts"],
+      "@ngxi/withicons-halloween": [
+        "./packages/withicons-halloween/src/index.ts"
+      ],
+      "@ngxi/withicons-kawaii": ["./packages/withicons-kawaii/src/index.ts"],
+      "@ngxi/withicons-liquid": ["./packages/withicons-liquid/src/index.ts"],
+      "@ngxi/withicons-lunar": ["./packages/withicons-lunar/src/index.ts"],
+      "@ngxi/withicons-luxe": ["./packages/withicons-luxe/src/index.ts"],
+      "@ngxi/withicons-pastel": ["./packages/withicons-pastel/src/index.ts"],
+      "@ngxi/withicons-plush": ["./packages/withicons-plush/src/index.ts"],
+      "@ngxi/withicons-rangoli": ["./packages/withicons-rangoli/src/index.ts"],
+      "@ngxi/withicons-retro": ["./packages/withicons-retro/src/index.ts"],
+      "@ngxi/withicons-skeuo": ["./packages/withicons-skeuo/src/index.ts"],
+      "@ngxi/withicons-soft3d": ["./packages/withicons-soft3d/src/index.ts"],
+      "@ngxi/withicons-sticker": ["./packages/withicons-sticker/src/index.ts"],
+      "@ngxi/withicons-suite": ["./packages/withicons-suite/src/index.ts"],
+      "@ngxi/withicons-utsav": ["./packages/withicons-utsav/src/index.ts"],
+      "@ngxi/withicons-valentine": [
+        "./packages/withicons-valentine/src/index.ts"
       ]
     }
   },

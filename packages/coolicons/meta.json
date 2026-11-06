@@ -1,0 +1,64 @@
+{
+  "lastModified": 1793600095,
+  "split": {
+    "hasBaseIcons": true,
+    "entries": [
+      {
+        "name": "bulk",
+        "suffix": "bulk"
+      },
+      {
+        "name": "bulk-round",
+        "suffix": "bulk-round"
+      },
+      {
+        "name": "bulk-sharp",
+        "suffix": "bulk-sharp"
+      },
+      {
+        "name": "duocolor",
+        "suffix": "duocolor"
+      },
+      {
+        "name": "duocolor-round",
+        "suffix": "duocolor-round"
+      },
+      {
+        "name": "duocolor-sharp",
+        "suffix": "duocolor-sharp"
+      },
+      {
+        "name": "duotone",
+        "suffix": "duotone"
+      },
+      {
+        "name": "duotone-round",
+        "suffix": "duotone-round"
+      },
+      {
+        "name": "duotone-sharp",
+        "suffix": "duotone-sharp"
+      },
+      {
+        "name": "fill",
+        "suffix": "fill"
+      },
+      {
+        "name": "fill-round",
+        "suffix": "fill-round"
+      },
+      {
+        "name": "fill-sharp",
+        "suffix": "fill-sharp"
+      },
+      {
+        "name": "round",
+        "suffix": "round"
+      },
+      {
+        "name": "sharp",
+        "suffix": "sharp"
+      }
+    ]
+  }
+}

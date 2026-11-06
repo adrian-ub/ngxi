@@ -1,0 +1,35 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "types": []
+  },
+  "include": [
+    "src/**/*.ts",
+    "blueprint/src/**/*.ts",
+    "duo/src/**/*.ts",
+    "engrave/src/**/*.ts",
+    "gloss/src/**/*.ts",
+    "sketch/src/**/*.ts",
+    "solid/src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "blueprint/src/**/*.spec.ts",
+    "blueprint/src/**/*.test.ts",
+    "duo/src/**/*.spec.ts",
+    "duo/src/**/*.test.ts",
+    "engrave/src/**/*.spec.ts",
+    "engrave/src/**/*.test.ts",
+    "gloss/src/**/*.spec.ts",
+    "gloss/src/**/*.test.ts",
+    "sketch/src/**/*.spec.ts",
+    "sketch/src/**/*.test.ts",
+    "solid/src/**/*.spec.ts",
+    "solid/src/**/*.test.ts"
+  ]
+}
