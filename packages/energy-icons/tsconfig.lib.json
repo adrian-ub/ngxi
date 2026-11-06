@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "types": []
+  },
+  "include": [
+    "src/**/*.ts",
+    "20/src/**/*.ts",
+    "20-bold/src/**/*.ts",
+    "48/src/**/*.ts",
+    "48-bold/src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "20/src/**/*.spec.ts",
+    "20/src/**/*.test.ts",
+    "20-bold/src/**/*.spec.ts",
+    "20-bold/src/**/*.test.ts",
+    "48/src/**/*.spec.ts",
+    "48/src/**/*.test.ts",
+    "48-bold/src/**/*.spec.ts",
+    "48-bold/src/**/*.test.ts"
+  ]
+}

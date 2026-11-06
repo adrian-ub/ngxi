@@ -1,0 +1,67 @@
+{
+  "name": "energy-icons",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/energy-icons/src",
+  "prefix": "energy-icons",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/energy-icons/ng-package.json",
+        "tsConfig": "packages/energy-icons/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/energy-icons/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production",
+      "dependsOn": ["generate-icons"]
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      },
+      "dependsOn": ["build"]
+    },
+    "update-reference": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "inputs": [
+        "{workspaceRoot}/node_modules/@iconify/json/package.json",
+        "{workspaceRoot}/node_modules/@iconify/json/json/energy-icons.json"
+      ],
+      "outputs": ["{projectRoot}/icon-set.json"],
+      "options": {
+        "command": "tsx tools/generate-icons/index.ts energy-icons --reference-only",
+        "cwd": "{workspaceRoot}"
+      }
+    },
+    "generate-icons": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "dependsOn": ["update-reference"],
+      "inputs": [
+        "{projectRoot}/icon-set.json",
+        "{workspaceRoot}/tools/generate-icons/**/*",
+        "{workspaceRoot}/tools/workspace-plugin/generators/icon-library/lib/**/*",
+        "{projectRoot}/meta.json"
+      ],
+      "outputs": [
+        "{projectRoot}/20/src/lib/icons",
+        "{projectRoot}/20-bold/src/lib/icons",
+        "{projectRoot}/48/src/lib/icons",
+        "{projectRoot}/48-bold/src/lib/icons",
+        "{projectRoot}/README.md"
+      ],
+      "options": {
+        "command": "ulimit -n 65536 && NODE_OPTIONS=\"--max-old-space-size=8192\" tsx tools/generate-icons/index.ts energy-icons",
+        "cwd": "{workspaceRoot}"
+      }
+    }
+  }
+}
