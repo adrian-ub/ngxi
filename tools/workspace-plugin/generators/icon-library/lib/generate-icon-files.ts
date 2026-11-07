@@ -67,22 +67,41 @@ function splitAttrs(attrs: string): string[] {
 }
 
 /**
+ * Angular parses `@` in template text as the start of a control-flow block.
+ * Escape it in plain text, but never inside `<style>`, whose contents Angular
+ * treats as raw text (entities would not be decoded and would reach the CSS).
+ */
+function escapeAngularBlocks(text: string): string {
+  return text.replace('@', '&#64;');
+}
+
+/**
  * Renders a prefixed SVG body into template lines indented 4 spaces under the
  * template literal line. Short elements stay on one line; longer ones break
  * each attribute onto its own line (2 extra spaces).
+ *
+ * `<style>` is rendered without the `svg:` prefix: Angular rejects
+ * `<svg:style>` with NG5002 and only parses the plain tag as raw text.
  */
 function renderTemplateBody(body: string): string {
   const lines: string[] = [];
   const tokenRe = /<[^>]*>|[^<]+/g;
+  let inStyle = false;
   let match: RegExpExecArray | null;
   while ((match = tokenRe.exec(body)) !== null) {
     const token = match[0];
     if (token[0] !== '<') {
       const text = token.trim();
       if (text) {
-        lines.push(`${TEMPLATE_INDENT}${text}`);
+        lines.push(
+          `${TEMPLATE_INDENT}${inStyle ? text : escapeAngularBlocks(text)}`,
+        );
       }
       continue;
+    }
+    const styleTag = /^<(\/?)(style)\b/i.test(token);
+    if (styleTag) {
+      inStyle = !token.startsWith('</') && !token.endsWith('/>');
     }
     if (token.startsWith('</')) {
       lines.push(`${TEMPLATE_INDENT}${token}`);

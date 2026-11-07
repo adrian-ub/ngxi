@@ -115,6 +115,13 @@ describe('svg-component helpers', () => {
     );
   });
 
+  it('leaves <style> unprefixed because Angular rejects <svg:style>', () => {
+    const body = '<style>.a{fill:red}</style><path d="M1 2"/>';
+    expect(prefixSvgTags(body)).toBe(
+      '<style>.a{fill:red}</style><svg:path d="M1 2"/>',
+    );
+  });
+
   it('hasRenderableElements reports whether elements survive hoisting', () => {
     expect(hasRenderableElements('<path d="M1 2"/>')).toBe(true);
     expect(hasRenderableElements('<g></g>')).toBe(true);
@@ -174,6 +181,33 @@ describe('generateIconFileContent', () => {
       '@preview ![img](data:image/svg+xml;base64,BASE64)',
     );
     expect(content).toContain('https://icon-sets.iconify.design/ei/archive');
+  });
+
+  it('escapes @ in text so Angular does not parse it as a control-flow block', () => {
+    const svg =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><text>@</text></svg>';
+    const content = generateIconFileContent(setInfo, 'at', svg, 'BASE64', 'ei');
+
+    expect(content).toContain('&#64;');
+    expect(content).not.toContain('<svg:text>@');
+  });
+
+  it('keeps embedded <style> unprefixed and preserves its raw CSS', () => {
+    const svg =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><style>.a{fill:red}@keyframes p{to{opacity:1}}</style><path class="a" fill="currentColor" d="M0 0h1"/></svg>';
+    const content = generateIconFileContent(
+      setInfo,
+      'css',
+      svg,
+      'BASE64',
+      'ei',
+    );
+
+    expect(content).not.toContain('<svg:style>');
+    expect(content).toContain('<style>');
+    expect(content).toContain('@keyframes p{to{opacity:1}}');
+    expect(content).not.toContain('&#64;');
+    expect(content).toContain('class="a"');
   });
 
   it('emits stroke inputs with kebab aliases when the stroke attributes are uniform', () => {

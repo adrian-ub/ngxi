@@ -123,7 +123,6 @@ const SVG_TAGS = [
   'a',
   'image',
   'foreignObject',
-  'style',
   'script',
 ].join('|');
 
@@ -198,7 +197,8 @@ export function hoistPresentationAttributes(body: string): HoistResult {
 /**
  * Qualifies every known element tag (and its closing tag) with the `svg:`
  * namespace. `<g>` nesting is kept as-is with its remaining attributes; it is
- * not flattened.
+ * not flattened. `<style>` is intentionally excluded: Angular rejects
+ * `<svg:style>` (NG5002) and only the plain tag is parsed as raw text.
  */
 export function prefixSvgTags(body: string): string {
   return body.replace(SVG_TAG_RE, '<$1svg:$2');
