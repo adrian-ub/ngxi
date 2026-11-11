@@ -145,10 +145,9 @@ describe('icon-library generator', () => {
     'splits a large collection into secondary entry points via the Nx generator',
     { timeout: 15_000 },
     async () => {
-    await iconLibraryGenerator(tree, {
-      name: 'fluent',
-      },
-    );
+      await iconLibraryGenerator(tree, {
+        name: 'fluent',
+      });
 
     // ONE library for the whole collection, with the split expressed as
     // secondary entry points instead of separate packages.
@@ -469,7 +468,7 @@ describe('icon-library generator', () => {
       'drops stale secondary entries and keeps current ones',
       { timeout: 15_000 },
       async () => {
-      await iconLibraryGenerator(tree, { name: 'fluent' });
+        await iconLibraryGenerator(tree, { name: 'fluent' });
 
       // Simulate the OLD split plan still on disk: the `light` family entry
       // (pre-suffix format) with its scaffold and a path mapping. A replan
@@ -488,8 +487,7 @@ describe('icon-library generator', () => {
           'packages/fluent/light/src/index.ts',
         ];
         return json;
-        },
-      );
+      });
       updateJson(tree, 'packages/fluent/meta.json', (json) => {
         json.split.entries.push({ name: 'light', suffix: 'light' });
         return json;
