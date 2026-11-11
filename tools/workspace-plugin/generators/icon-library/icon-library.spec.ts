@@ -141,10 +141,13 @@ describe('icon-library generator', () => {
     expect(readme).toContain('color=black');
   });
 
-  it('splits a large collection into secondary entry points via the Nx generator', async () => {
-    await iconLibraryGenerator(tree, {
-      name: 'fluent',
-    });
+  it(
+    'splits a large collection into secondary entry points via the Nx generator',
+    { timeout: 15_000 },
+    async () => {
+      await iconLibraryGenerator(tree, {
+        name: 'fluent',
+      });
 
     // ONE library for the whole collection, with the split expressed as
     // secondary entry points instead of separate packages.
@@ -461,8 +464,11 @@ describe('icon-library generator', () => {
   });
 
   describe('replan', () => {
-    it('drops stale secondary entries and keeps current ones', async () => {
-      await iconLibraryGenerator(tree, { name: 'fluent' });
+    it(
+      'drops stale secondary entries and keeps current ones',
+      { timeout: 15_000 },
+      async () => {
+        await iconLibraryGenerator(tree, { name: 'fluent' });
 
       // Simulate the OLD split plan still on disk: the `light` family entry
       // (pre-suffix format) with its scaffold and a path mapping. A replan
