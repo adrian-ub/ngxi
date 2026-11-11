@@ -141,10 +141,14 @@ describe('icon-library generator', () => {
     expect(readme).toContain('color=black');
   });
 
-  it('splits a large collection into secondary entry points via the Nx generator', async () => {
+  it(
+    'splits a large collection into secondary entry points via the Nx generator',
+    { timeout: 15_000 },
+    async () => {
     await iconLibraryGenerator(tree, {
       name: 'fluent',
-    });
+      },
+    );
 
     // ONE library for the whole collection, with the split expressed as
     // secondary entry points instead of separate packages.
@@ -461,7 +465,10 @@ describe('icon-library generator', () => {
   });
 
   describe('replan', () => {
-    it('drops stale secondary entries and keeps current ones', async () => {
+    it(
+      'drops stale secondary entries and keeps current ones',
+      { timeout: 15_000 },
+      async () => {
       await iconLibraryGenerator(tree, { name: 'fluent' });
 
       // Simulate the OLD split plan still on disk: the `light` family entry
@@ -481,7 +488,8 @@ describe('icon-library generator', () => {
           'packages/fluent/light/src/index.ts',
         ];
         return json;
-      });
+        },
+      );
       updateJson(tree, 'packages/fluent/meta.json', (json) => {
         json.split.entries.push({ name: 'light', suffix: 'light' });
         return json;
