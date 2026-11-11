@@ -51,7 +51,7 @@ const BUCKETS = [
 
 const affected = process.argv.includes('--affected');
 
-function projectsWithGenerateIcons() {
+function projectsWithGenerateIcons({ affectedOnly = affected } = {}) {
   const args = [
     'nx',
     'show',
@@ -60,7 +60,7 @@ function projectsWithGenerateIcons() {
     'generate-icons',
     '--json',
   ];
-  if (affected) {
+  if (affectedOnly) {
     args.push('--affected', '--target', 'build');
   }
   return JSON.parse(
@@ -84,7 +84,10 @@ function iconCounts() {
 }
 
 function main() {
-  const projects = projectsWithGenerateIcons();
+  let projects = projectsWithGenerateIcons();
+  if (affected && projects.length === 0) {
+    projects = projectsWithGenerateIcons({ affectedOnly: false });
+  }
   if (projects.length === 0) {
     throw new Error(
       'No icon library projects found via Nx (generate-icons target).',
