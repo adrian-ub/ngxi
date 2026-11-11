@@ -82,8 +82,8 @@ importers:
         specifier: ^9.8.0
         version: 9.39.5
       '@iconify/json':
-        specifier: ^2.2.554
-        version: 2.2.554
+        specifier: ^2.2.555
+        version: 2.2.555
       '@iconify/tools':
         specifier: ^5.0.12
         version: 5.0.12
@@ -223,8 +223,8 @@ importers:
   tools/workspace-plugin:
     dependencies:
       '@iconify/json':
-        specifier: ^2.2.554
-        version: 2.2.554
+        specifier: ^2.2.555
+        version: 2.2.555
       '@iconify/types':
         specifier: ^2.0.0
         version: 2.0.0
@@ -1560,8 +1560,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify/json@2.2.554':
-    resolution: {integrity: sha512-HAiIOhC5LT1zCT3OXASrkISRGaWAECply3G8vFn6IycY3mUIDLlUXOI4JU7CBzQpr++yuM53aUyz9xjs/1WjiA==}
+  '@iconify/json@2.2.555':
+    resolution: {integrity: sha512-ZUDnGWRayaBwXW8YuzxWFrvbBy620zjWqMAp4aPwb3mwsjO9gyWiTX0knK3spKZCFOpOfuWc8KXlCmU27LogNw==}
 
   '@iconify/tools@5.0.12':
     resolution: {integrity: sha512-aFPwSFmFphUPVjNLUkgxgUPSPVgTEEjv0mE7NgvfoQBuE5TtsMrKa4HTY65cM5oXZ2a1xKQcW/RKhiOKEiAarw==}
@@ -6858,6 +6858,7 @@ packages:
 
   node-abort-controller@3.1.1:
     resolution: {integrity: sha512-AGK2yQKIjRuqnc6VkX2Xj5d+QW8xZ87pa1UK6yA6ouUyuxfHuMP6umE5QK7UmTeOAymo+Zx1Fxiuw9rVx8taHQ==}
+    deprecated: This package is no longer needed on supported Node.js versions. Node.js 16+ includes AbortController and AbortSignal as built-in globals. All Node.js versions requiring this polyfill are end-of-life. Use the built-in globals instead.
 
   node-addon-api@6.1.0:
     resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
@@ -11810,7 +11811,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@iconify/json@2.2.554':
+  '@iconify/json@2.2.555':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 2.0.3
