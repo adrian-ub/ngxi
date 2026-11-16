@@ -640,7 +640,11 @@
       "@ngxi/withicons-utsav": ["./packages/withicons-utsav/src/index.ts"],
       "@ngxi/withicons-valentine": [
         "./packages/withicons-valentine/src/index.ts"
-      ]
+      ],
+      "@ngxi/evicons": ["./packages/evicons/src/index.ts"],
+      "@ngxi/uix": ["./packages/uix/src/index.ts"],
+      "@ngxi/uix-sharp": ["./packages/uix-sharp/src/index.ts"],
+      "@ngxi/uix-solid": ["./packages/uix-solid/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
