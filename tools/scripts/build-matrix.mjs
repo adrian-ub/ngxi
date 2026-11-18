@@ -22,14 +22,14 @@ import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 
 // Bucket thresholds (icon count) -> how to run them.
-// GitHub ubuntu-latest runners have 4 vCPU / 16 GB RAM; the heap limit is
-// not a reservation, so parallel workers only allocate what they actually
-// use. Big sets still get one dedicated job and the most heap.
+// Public ubuntu-latest runners have 4 vCPU / 16 GB RAM. The 14 GB heap leaves
+// about 2 GB for the runner and system processes. uix and uix-sharp exhausted
+// 12 GB inside ng-packagr, so the xl bucket needs the larger limit.
 const BUCKETS = [
   {
     min: 5000,
     name: 'xl',
-    nodeOptions: '--max-old-space-size=12288',
+    nodeOptions: '--max-old-space-size=14336',
     parallel: 1,
     chunk: 1,
   },
