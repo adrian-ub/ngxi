@@ -86,16 +86,13 @@ jobs:
       # fails with ENOENT. With an empty filter, `nx release publish` expands
       # the full task graph itself and builds everything.
       #
-      # Memory: the standard runner has 2 vCPU/7GB RAM and the 3 largest icon
-      # sets (arcticons, mingcute, openmoji) exceed it. NODE_OPTIONS heap is
-      # capped at 6GB (headroom under the 7GB box) and parallelism is forced
-      # to 1 so a single heavy build gets the whole box; the previous 12GB cap
-      # with 3 parallel builds caused the kernel OOM-killer to SIGKILL the
-      # biggest builds mid-compilation (no JS error, just cancelled).
+      # Memory: public ubuntu-latest runners have 4 vCPU/16GB RAM. The 23k-icon
+      # uix and uix-sharp sets exhaust 12GB inside ng-packagr, so filtered
+      # builds use the same 14GB heap as the xl CI bucket and parallelism 1.
       - name: Build libraries (filtered publish)
         if: github.event.inputs.projects != ''
         env:
-          NODE_OPTIONS: --max-old-space-size=6144
+          NODE_OPTIONS: --max-old-space-size=14336
           NX_PROJECTS: ${{ github.event.inputs.projects }}
         run: pnpm exec nx run-many --target=build --projects="$NX_PROJECTS" --parallel=1
 
