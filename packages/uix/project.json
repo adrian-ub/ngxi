@@ -20,13 +20,13 @@
         "development": {}
       },
       "defaultConfiguration": "production",
-      "dependsOn": ["generate-icons"]
+      "dependsOn": ["generate-icons", "generate-icons"]
     },
     "nx-release-publish": {
       "options": {
         "packageRoot": "dist/{projectRoot}"
       },
-      "dependsOn": ["build"]
+      "dependsOn": ["build", "build"]
     },
     "update-reference": {
       "executor": "nx:run-commands",
@@ -48,9 +48,39 @@
       "inputs": [
         "{projectRoot}/icon-set.json",
         "{workspaceRoot}/tools/generate-icons/**/*",
-        "{workspaceRoot}/tools/workspace-plugin/generators/icon-library/lib/**/*"
+        "{workspaceRoot}/tools/workspace-plugin/generators/icon-library/lib/**/*",
+        "{projectRoot}/meta.json"
       ],
-      "outputs": ["{projectRoot}/src/lib/icons", "{projectRoot}/README.md"],
+      "outputs": [
+        "{projectRoot}/n3/src/lib/icons",
+        "{projectRoot}/a/src/lib/icons",
+        "{projectRoot}/b/src/lib/icons",
+        "{projectRoot}/c/src/lib/icons",
+        "{projectRoot}/d/src/lib/icons",
+        "{projectRoot}/e/src/lib/icons",
+        "{projectRoot}/f/src/lib/icons",
+        "{projectRoot}/g/src/lib/icons",
+        "{projectRoot}/h/src/lib/icons",
+        "{projectRoot}/i/src/lib/icons",
+        "{projectRoot}/j/src/lib/icons",
+        "{projectRoot}/k/src/lib/icons",
+        "{projectRoot}/l/src/lib/icons",
+        "{projectRoot}/m/src/lib/icons",
+        "{projectRoot}/n/src/lib/icons",
+        "{projectRoot}/o/src/lib/icons",
+        "{projectRoot}/p/src/lib/icons",
+        "{projectRoot}/q/src/lib/icons",
+        "{projectRoot}/r/src/lib/icons",
+        "{projectRoot}/s/src/lib/icons",
+        "{projectRoot}/t/src/lib/icons",
+        "{projectRoot}/u/src/lib/icons",
+        "{projectRoot}/v/src/lib/icons",
+        "{projectRoot}/w/src/lib/icons",
+        "{projectRoot}/x/src/lib/icons",
+        "{projectRoot}/y/src/lib/icons",
+        "{projectRoot}/z/src/lib/icons",
+        "{projectRoot}/README.md"
+      ],
       "options": {
         "command": "ulimit -n 65536 && NODE_OPTIONS=\"--max-old-space-size=8192\" tsx tools/generate-icons/index.ts uix",
         "cwd": "{workspaceRoot}"

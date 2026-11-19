@@ -1,3 +1,116 @@
 {
-  "lastModified": 1794673443
+  "lastModified": 1794673443,
+  "split": {
+    "hasBaseIcons": false,
+    "entries": [
+      {
+        "name": "n3",
+        "filter": "3*"
+      },
+      {
+        "name": "a",
+        "filter": "a*"
+      },
+      {
+        "name": "b",
+        "filter": "b*"
+      },
+      {
+        "name": "c",
+        "filter": "c*"
+      },
+      {
+        "name": "d",
+        "filter": "d*"
+      },
+      {
+        "name": "e",
+        "filter": "e*"
+      },
+      {
+        "name": "f",
+        "filter": "f*"
+      },
+      {
+        "name": "g",
+        "filter": "g*"
+      },
+      {
+        "name": "h",
+        "filter": "h*"
+      },
+      {
+        "name": "i",
+        "filter": "i*"
+      },
+      {
+        "name": "j",
+        "filter": "j*"
+      },
+      {
+        "name": "k",
+        "filter": "k*"
+      },
+      {
+        "name": "l",
+        "filter": "l*"
+      },
+      {
+        "name": "m",
+        "filter": "m*"
+      },
+      {
+        "name": "n",
+        "filter": "n*"
+      },
+      {
+        "name": "o",
+        "filter": "o*"
+      },
+      {
+        "name": "p",
+        "filter": "p*"
+      },
+      {
+        "name": "q",
+        "filter": "q*"
+      },
+      {
+        "name": "r",
+        "filter": "r*"
+      },
+      {
+        "name": "s",
+        "filter": "s*"
+      },
+      {
+        "name": "t",
+        "filter": "t*"
+      },
+      {
+        "name": "u",
+        "filter": "u*"
+      },
+      {
+        "name": "v",
+        "filter": "v*"
+      },
+      {
+        "name": "w",
+        "filter": "w*"
+      },
+      {
+        "name": "x",
+        "filter": "x*"
+      },
+      {
+        "name": "y",
+        "filter": "y*"
+      },
+      {
+        "name": "z",
+        "filter": "z*"
+      }
+    ]
+  }
 }

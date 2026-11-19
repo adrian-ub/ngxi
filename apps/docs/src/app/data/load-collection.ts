@@ -300,6 +300,15 @@ function matchedSuffix(
   return best;
 }
 
+/** Matches the simple `*` globs used by prefix-split plans in meta.json. */
+function globMatches(glob: string, value: string): boolean {
+  const pattern = glob
+    .split('*')
+    .map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    .join('.*');
+  return new RegExp(`^${pattern}$`).test(value);
+}
+
 /** The secondary entry point name an icon belongs to, or undefined for base icons. */
 function entryFor(
   iconName: string,
@@ -312,7 +321,12 @@ function entryFor(
     return undefined;
   }
   const suffix = matchedSuffix(iconName, split.entries);
-  return split.entries.find((e) => e.suffix === suffix)?.name;
+  if (suffix !== undefined) {
+    return split.entries.find((e) => e.suffix === suffix)?.name;
+  }
+  return split.entries.find(
+    (e) => e.filter !== undefined && globMatches(e.filter, iconName),
+  )?.name;
 }
 
 /** The package import path: the matching entry point, else the package root. */

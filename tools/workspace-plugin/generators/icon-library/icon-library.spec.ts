@@ -401,6 +401,28 @@ describe('icon-library generator', () => {
       });
     });
 
+    it('keeps an explicit prefix-split plan on replan of a suffixless set', () => {
+      const existingPlan = {
+        collection: 'uix',
+        hasBaseIcons: false,
+        entries: [
+          { name: 'n3', filter: '3*' },
+          { name: 'a', filter: 'a*' },
+        ],
+      };
+      const plan = buildLibPlan(
+        'uix',
+        ['3d-printer', 'airplane', 'arrow'],
+        undefined,
+        existingPlan,
+      );
+      expect(plan).toEqual({
+        collection: 'uix',
+        entries: existingPlan.entries,
+        hasBaseIcons: false,
+      });
+    });
+
     it('keeps base icons (no matching suffix) in the primary alongside the split', () => {
       const names = [
         ...Array.from({ length: 400 }, (_, i) => `icon-${i}-filled`),
