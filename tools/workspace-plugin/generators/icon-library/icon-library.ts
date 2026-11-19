@@ -15,7 +15,11 @@ import {
 import { lookupCollection, lookupCollections } from '@iconify/json';
 import type { IconifyJSON } from '@iconify/types';
 import type { IconLibraryGeneratorSchema } from './schema';
-import { matchLongestSuffix } from './lib/reference';
+import {
+  matchLongestSuffix,
+  readIconEntries,
+  type IconEntriesFile,
+} from './lib/reference';
 import {
   kebabToCamelCase,
   kebabToPascalCase,
@@ -86,19 +90,34 @@ export function buildLibPlan(
   collection: string,
   iconNames: string[],
   suffixes: Record<string, string> | undefined,
+  existingPlan?: IconEntriesFile | null,
 ): IconLibraryPlan {
-  const entries: IconEntryPlan[] = Object.keys(suffixes ?? {})
+  const suffixEntries: IconEntryPlan[] = Object.keys(suffixes ?? {})
     .filter((suffix) => suffix !== '')
     .sort((a, b) => a.localeCompare(b))
     .map((suffix) => ({ name: suffix, suffix }));
+
+  // Collections with no Iconify suffixes can still carry an explicit
+  // prefix-split plan in meta.json (used by the largest sets, whose single
+  // ng-packagr program exhausts the runner heap). Reuse it on replan so a
+  // refresh does not collapse those secondary entry points back into one.
+  if (suffixEntries.length === 0 && existingPlan?.entries.length) {
+    const prefixEntries = existingPlan.entries.filter(
+      (entry) => entry.filter !== undefined && entry.suffix === undefined,
+    );
+    if (prefixEntries.length === existingPlan.entries.length) {
+      return { collection, entries: prefixEntries, hasBaseIcons: false };
+    }
+  }
+
   const hasBaseIcons = iconNames.some(
     (name) =>
       matchLongestSuffix(
         name,
-        entries.map((entry) => entry.suffix!),
+        suffixEntries.map((entry) => entry.suffix!),
       ) === null,
   );
-  return { collection, entries, hasBaseIcons };
+  return { collection, entries: suffixEntries, hasBaseIcons };
 }
 
 /** `1.0.10` -> `1.0.0`, `2.3.4-beta.5` -> `2.3.0-beta.0`. */
@@ -190,12 +209,7 @@ async function scaffoldLib(
   // No static base files: every icon component is data-driven and
   // self-contained (SVG body inline in its template). The icon components in
   // `src/lib/icons` are generated later by the cacheable `generate-icons`
-  // target from icon-set.json. Secondary entries are scaffolded AFTER
-  // meta.json exists: scaffoldSecondaryEntries persists the split plan inside
-  // meta.json (`split` key) and requires the file to already be present.
-  if (plan.entries.length > 0) {
-    scaffoldSecondaryEntries(tree, collection, plan);
-  }
+  // target from icon-set.json.
 
   // Primary barrel: split sets whose base variant has NO icons (e.g. all of
   // iconmind lives in suffixed entries) must NOT export icons — every icon
@@ -263,17 +277,17 @@ async function scaffoldLib(
   });
 
   // Split sets persist their secondary-entry plan inside meta.json (`split`),
-  // so generate-icons knows which icons land in which entry.
+  // so generate-icons knows which icons land in which entry. Scaffold only after
+  // meta.json exists: the helper writes the split plan into that file.
   if (plan.entries.length > 0) {
-    scaffoldSecondaryEntries(tree, collection, plan);
+    await scaffoldSecondaryEntries(tree, collection, plan);
   }
 
   wireIconTargets(tree, collection, plan);
 }
 
 /**
- * Creates the secondary entry points for a split collection using the native
- * Nx generator (`@nx/angular:library-secondary-entry-point`), which scaffolds
+ * Creates the secondary entry points for a split collection: writes
  * `<entry>/ng-package.json` + `<entry>/src/index.ts` per entry and wires the
  * `@ngxi/<collection>/<entry>` path mapping in tsconfig.base.json.
  *
@@ -302,8 +316,8 @@ async function scaffoldSecondaryEntries(
   // the previous plan that are absent from the new suffix-based plan must
   // disappear: drop their scaffold (the generated icon components live under a
   // git-ignored path and are cleaned up by the caller) and their
-  // tsconfig.base.json path mapping. New entries are added via the Nx
-  // generator; entries that already exist are kept as-is.
+  // tsconfig.base.json path mapping. New entries are scaffolded directly;
+  // entries that already exist are kept as-is.
   const previousEntries = readPreviousIconEntries(tree, collection);
   const keptNames = new Set(plan.entries.map((entry) => entry.name));
   const staleNames = previousEntries
@@ -322,38 +336,47 @@ async function scaffoldSecondaryEntries(
     });
   }
 
+  // Above ~20 entries the Nx secondary-entry generator builds a factorial
+  // include/exclude list and throws `RangeError: Invalid string length` before
+  // normalization. Large prefix-split sets scaffold the minimal files directly.
+  const scaffoldDirectly = plan.entries.length > 20;
+
   for (const entry of plan.entries) {
-    const entryScaffold = joinPathFragments(
-      'packages',
-      collection,
-      entry.name,
-      'ng-package.json',
-    );
-    if (!tree.exists(entryScaffold)) {
-      await librarySecondaryEntryPointGenerator(tree, {
-        name: entry.name,
-        library: collection,
-        skipModule: true,
-        skipFormat: true,
-      });
+    const entryRoot = joinPathFragments('packages', collection, entry.name);
+    if (!tree.exists(joinPathFragments(entryRoot, 'ng-package.json'))) {
+      if (scaffoldDirectly) {
+        writeJson(tree, joinPathFragments(entryRoot, 'ng-package.json'), {
+          lib: { entryFile: 'src/index.ts' },
+        });
+        updateJson(tree, 'tsconfig.base.json', (json) => {
+          json.compilerOptions ??= {};
+          json.compilerOptions.paths ??= {};
+          json.compilerOptions.paths[`@ngxi/${collection}/${entry.name}`] = [
+            `./packages/${collection}/${entry.name}/src/index.ts`,
+          ];
+          return json;
+        });
+      } else {
+        await librarySecondaryEntryPointGenerator(tree, {
+          name: entry.name,
+          library: collection,
+          skipModule: true,
+          skipFormat: true,
+        });
+      }
     }
 
-    // Overwrite the Nx-scaffolded barrel with the entry's icons barrel. The
-    // entry's icon components are self-contained; nothing is shared with the
-    // primary entry.
+    // Each entry's icon components are self-contained; nothing is shared with
+    // the primary entry.
     generateFiles(
       tree,
       joinPathFragments(__dirname, 'files', 'entry'),
-      joinPathFragments('packages', collection, entry.name, 'src'),
+      joinPathFragments(entryRoot, 'src'),
       substitutions,
     );
   }
 
-  // The Nx secondary-entry generator accumulates a factorial `include` AND
-  // `exclude` list in the package tsconfig.lib.json (every combination of
-  // entry paths), which breaks ngc: the include with an invalid regular
-  // expression, and the exclude with tens of thousands of entries that break
-  // entrypoint symbol resolution. Normalize both to the primary `src` plus the
+  // Keep the package tsconfig.lib.json limited to the primary `src` plus the
   // first-level entry sources, which is all ng-packagr needs.
   updateJson(
     tree,
@@ -535,13 +558,16 @@ export async function iconLibraryGenerator(
 
   const iconSet = await lookupCollection(options.name);
   const license = iconSet.info?.license?.spdx ?? 'UNLICENSED';
+
+  const packageDir = joinPathFragments('packages', options.name);
+  const existingPlan = readIconEntries(packageDir);
   const plan = buildLibPlan(
     options.name,
     Object.keys(iconSet.icons),
     iconSet.suffixes,
+    existingPlan,
   );
 
-  const packageDir = joinPathFragments('packages', options.name);
   const isReplan = tree.exists(joinPathFragments(packageDir, 'project.json'));
 
   logger.info(
